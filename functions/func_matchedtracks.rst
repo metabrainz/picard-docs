@@ -1,0 +1,19 @@
+.. Picard Function
+
+$matchedtracks
+==============
+
+| Usage: **$matchedtracks()**
+| Category: information
+| Implemented: Picard 0.12
+
+**Description:**
+
+Returns the number of matched tracks within a release.  Note that this only works in File Naming scripts.
+
+
+**Example:**
+
+The following statements will return the values indicated::
+
+    $matchedtracks()  ==>  "3" (if three of the tracks were matched)
