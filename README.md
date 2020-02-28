@@ -9,4 +9,4 @@ it with additional detail and a structured approach.
 
 The project currently produces the on-line documentation in [ReadTheDocs](https://readthedocs.org)
 format theme using [Sphinx](https://www.sphinx-doc.org/).  The latest official build
-of the Picard documentation can be viewed on the [web page](https://htmlpreview.github.com/?https://github.com/rdswift/picard-docs/blob/master/docs/index.html).
+of the Picard documentation can be viewed on the [web page](https://rdswift.github.io/picard-docs/index.html).
