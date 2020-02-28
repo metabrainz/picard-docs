@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balises de base &mdash; Documentation MusicBrainz Picard v2.7.3</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Balises avancées" href="tags_advanced.html" />
+    <link rel="prev" title="Balises &amp; Variables" href="variables.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.7.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="variables.html">Balises &amp; Variables</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Balises de base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags_advanced.html">Balises avancées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_basic.html">Variables de base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_file.html">Variables de fichier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_advanced.html">Variables avancées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_classical.html">Balises de musique classique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_plugins.html">Balises des plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_other_information.html">Autres informations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="variables.html">Balises &amp; Variables</a> &raquo;</li>
+      <li>Balises de base</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="basic-tags">
+<h1><span class="target" id="index-1"></span>Balises de base<a class="headerlink" href="#basic-tags" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Les balises suivantes sont remplies à partir des données MusicBrainz pour la plupart des versions, sans aucun paramètre Picard spécial.</p>
+<p>Tous ces éléments sont également disponibles en tant que variables à utiliser dans les scripts Picard (pour le balisage, pour le changement de nom de fichier et dans plusieurs autres paramètres plus mineurs) en les enveloppant entre des symboles de pourcentage “%” (par exemple, <code class="docutils literal notranslate"><span class="pre">%title%</span></code>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les balises ne seront pas créées et ne seront pas disponibles en tant que variables si aucune valeur n’a été récupérée pour la balise dans la base de données MusicBrainz.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Certaines de ces balises ne sont prises en charge que pour certains types de fichiers ou formats de balises. Veuillez consulter la section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Picard Tag Mapping</span></a> pour plus de détails.</p>
+</div>
+<p><strong>acoustid_fingerprint</strong></p>
+<blockquote>
+<div><p>AcoustID Fingerprint pour la piste.</p>
+</div></blockquote>
+<p><strong>acoustid_id</strong></p>
+<blockquote>
+<div><p>AcoustID associé à la piste.</p>
+</div></blockquote>
+<p><strong>album</strong></p>
+<blockquote>
+<div><p>Titre du communiqué.</p>
+</div></blockquote>
+<p><strong>albumartist</strong></p>
+<blockquote>
+<div><p>Artiste ou artistes principalement crédités sur la sortie.</p>
+</div></blockquote>
+<p><strong>albumartistsort</strong></p>
+<blockquote>
+<div><p>Libérez le nom de tri de l’artiste (par exemple : « Beatles, The »).</p>
+</div></blockquote>
+<p><strong>albumsort</strong></p>
+<blockquote>
+<div><p>Nom de tri du titre de publication.</p>
+</div></blockquote>
+<p><strong>artist</strong></p>
+<blockquote>
+<div><p>Suivre les noms des artistes. (chaîne)</p>
+</div></blockquote>
+<p><strong>artists</strong></p>
+<blockquote>
+<div><p>Suivre les noms des artistes. (multi-valeur) (<em>depuis Picard 1.3</em>)</p>
+</div></blockquote>
+<p><strong>artistsort</strong></p>
+<blockquote>
+<div><p>Nom de tri de l’artiste de piste.</p>
+</div></blockquote>
+<p><strong>asin</strong></p>
+<blockquote>
+<div><p>Numéro d’identification standard d’Amazon - le numéro identifiant l’article sur Amazon.</p>
+</div></blockquote>
+<p><strong>barcode</strong></p>
+<blockquote>
+<div><p>Le code-barres attribué à la version.</p>
+</div></blockquote>
+<p><strong>bpm</strong></p>
+<blockquote>
+<div><p>Battements par minute de la piste. Uniquement disponible pour le script de dénomination de fichier.</p>
+</div></blockquote>
+<p><strong>catalognumber</strong></p>
+<blockquote>
+<div><p>Les numéros attribués à la version par les étiquettes, qui se trouvent souvent sur le dos ou près du code-barres Il peut y en avoir plusieurs, en particulier lorsque plusieurs étiquettes sont impliquées.</p>
+</div></blockquote>
+<p><strong>comment</strong></p>
+<blockquote>
+<div><p>Le commentaire entré pour aider à distinguer une version d’une autre (par exemple : version Deluxe avec 2 pistes bonus).</p>
+</div></blockquote>
+<p><strong>compilation</strong></p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">(<em>depuis Picard 1.3, compatible avec iTunes</em>) 1 pour les albums Various Artist, sinon 0.</div>
+<div class="line">(<em>Picard 1.2 ou précédent</em>) 1 si plusieurs artistes de piste (y compris les artistes en vedette), sinon 0.</div>
+</div>
+</div></blockquote>
+<p><strong>copyright</strong></p>
+<blockquote>
+<div><p>Contenir un message de copyright pour le détenteur du copyright du son original, commencer par un an et un espace.</p>
+</div></blockquote>
+<p><strong>date</strong></p>
+<blockquote>
+<div><p>Date de sortie (AAAA-MM-JJ) - la date à laquelle la version a été publiée.</p>
+</div></blockquote>
+<p><strong>director</strong></p>
+<blockquote>
+<div><p>Le réalisateur d’une piste vidéo tel que fourni par la relation Video Director dans MusicBrainz. (<em>Depuis Picard 2.6</em>)</p>
+</div></blockquote>
+<p><strong>discnumber</strong></p>
+<blockquote>
+<div><p>Numéro du disque de cette version contenant cette piste.</p>
+</div></blockquote>
+<p><strong>discsubtitle</strong></p>
+<blockquote>
+<div><p>Le titre multimédia attribué à un disque spécifique.</p>
+</div></blockquote>
+<p><strong>encodedby</strong></p>
+<blockquote>
+<div><p>Encodé par (personne ou organisation). Uniquement disponible pour le script de dénomination de fichier.</p>
+</div></blockquote>
+<p><strong>encodersettings</strong></p>
+<blockquote>
+<div><p>Paramètres d’encodeur utilisés. Uniquement disponible pour le script de dénomination de fichier.</p>
+</div></blockquote>
+<p><strong>isrc</strong></p>
+<blockquote>
+<div><p>Un code standard international pour identifier de manière unique les enregistrements sonores et les enregistrements vidéo de musique. Voir <a class="reference external" href="https://en.wikipedia.org/wiki/International_Standard_Recording_Code">Wikipedia</a> pour plus d’informations. (<em>depuis Picard 0,12</em>)</p>
+</div></blockquote>
+<p><strong>key</strong></p>
+<blockquote>
+<div><p>Clé de la musique.</p>
+</div></blockquote>
+<p><strong>label</strong></p>
+<blockquote>
+<div><p>Libérez les noms d’étiquette.</p>
+</div></blockquote>
+<p><strong>language</strong></p>
+<blockquote>
+<div><p>Travaillez la langue des paroles selon <a class="reference external" href="https://fr.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a> si les relations de piste sont activées dans Options et qu’un travail connexe existe. (<em>depuis Picard 0,10</em>)</p>
+</div></blockquote>
+<p><strong>lyrics</strong></p>
+<blockquote>
+<div><p>Paroles du titre.</p>
+</div></blockquote>
+<p><strong>media</strong></p>
+<blockquote>
+<div><p>Format de sortie (par exemple : CD). Consultez la page <a class="reference external" href="https://musicbrainz.org/doc/Release/Format">Format de publication</a> sur le site Web MusicBrainz pour plus d’informations.</p>
+</div></blockquote>
+<p><strong>musicbrainz_albumartistid</strong></p>
+<blockquote>
+<div><p>Libérez l’identifiant MusicBrainz de l’artiste.</p>
+</div></blockquote>
+<p><strong>musicbrainz_albumid</strong></p>
+<blockquote>
+<div><p>L’identifiant MusicBrainz de la version.</p>
+</div></blockquote>
+<p><strong>musicbrainz_artistid</strong></p>
+<blockquote>
+<div><p>L’identifiant MusicBrainz de l’artiste de la piste.</p>
+</div></blockquote>
+<p><strong>musicbrainz_discid</strong></p>
+<blockquote>
+<div><p>L’ID du disque est le numéro de code que MusicBrainz utilise pour relier un CD physique à une liste de diffusion.  Ce lien est basé sur les informations de la table des matières (TOC) lues sur le disque. Cette balise contient le Disc ID si les informations sur l’album ont été récupérées en utilisant <span class="menuselection">« Outils ‣ CD de recherche »</span>. (<em>depuis Picard 0.12</em>)</p>
+</div></blockquote>
+<p><strong>musicbrainz_originalalbumid</strong></p>
+<blockquote>
+<div><p>L’identifiant MusicBrainz original de la version.</p>
+</div></blockquote>
+<p><strong>musicbrainz_originalartistid</strong></p>
+<blockquote>
+<div><p>L’identifiant MusicBrainz original de l’artiste du morceau.</p>
+</div></blockquote>
+<p><strong>musicbrainz_recordingid</strong></p>
+<blockquote>
+<div><p>L’identifiant MusicBrainz pour l’enregistrement.</p>
+</div></blockquote>
+<p><strong>musicbrainz_releasegroupid</strong></p>
+<blockquote>
+<div><p>Identifiant MusicBrainz pour le groupe de versions.</p>
+</div></blockquote>
+<p><strong>musicbrainz_trackid</strong></p>
+<blockquote>
+<div><p>L’identifiant MusicBrainz de la version.</p>
+</div></blockquote>
+<p><strong>musicbrainz_workid</strong></p>
+<blockquote>
+<div><p>L’identifiant MusicBrainz pour l’œuvre.</p>
+</div></blockquote>
+<p><strong>originalalbum</strong></p>
+<blockquote>
+<div><p>Le titre de la version la plus ancienne du groupe de publication destiné au titre de l’enregistrement original.</p>
+</div></blockquote>
+<p><strong>originalartist</strong></p>
+<blockquote>
+<div><p>L’artiste de la piste de la version la plus ancienne du groupe de publication destiné aux interprètes de l’enregistrement original.</p>
+</div></blockquote>
+<p><strong>originaldate</strong></p>
+<blockquote>
+<div><p>La date de sortie d’origine au format AAAA-MM-JJ. Par défaut, il s’agit de la version la plus ancienne du groupe de versions. Cela peut fournir, par exemple, la date de sortie de la version vinyle de ce que vous avez sur CD. (<em>Inclus en standard à partir de Picard 0.15, et en utilisant le plugin Original Release Date si vous utilisez toujours une version non-NGS antérieure à Picard 0.15</em>)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il s’agit des mêmes informations fournies dans la variable <code class="docutils literal notranslate"><span class="pre">_releasegroup_firstreleasedate</span></code>, et elles sont cohérentes sur toutes les pistes de la version. Si vous préférez que cette balise soit renseignée avec la date du premier enregistrement de la piste dans la base de données, qui sera probablement différente pour chaque piste de la version, cela peut être réalisé en activant un script de marquage sur une ligne comme <code class="docutils literal notranslate"><span class="pre">$set(originaldate,%_recording_firstreleasedate%)</span></code>. Sachez que définir cela peut entraîner la dispersion d’une version dans plusieurs répertoires si vous utilisez <code class="docutils literal notranslate"><span class="pre">%originaldate%</span></code> dans le cadre de la partie chemin de votre script de nommage de fichier.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si vous stockez des balises dans des fichiers MP3 en tant que ID3v2.3 (qui est la version compatible Windows et iTunes), la date d’origine ne peut être stockée que comme une année.</p>
+</div>
+</div></blockquote>
+<p><strong>originalyear</strong></p>
+<blockquote>
+<div><p>L’année de la date de sortie d’origine au format AAAA. Par défaut, il s’agit de la version la plus ancienne du groupe de versions. Cela peut fournir, par exemple, l’année de sortie de la version vinyle de ce que vous avez sur CD.</p>
+</div></blockquote>
+<p><strong>releasecountry</strong></p>
+<blockquote>
+<div><p>Le pays dans lequel la libération a été publiée.</p>
+</div></blockquote>
+<p><strong>releasestatus</strong></p>
+<blockquote>
+<div><p>Le statut de la version indiquant le statut « officiel » de la version. Les valeurs possibles incluent officiel, promotionnel, bootleg et pseudo-release.</p>
+</div></blockquote>
+<p><strong>releasetype</strong></p>
+<blockquote>
+<div><p>Le type de groupe de version (voir aussi <a class="reference internal" href="variables_basic.html#ref-primaryreleasetype"><span class="std std-ref">_primaryreleasetype</span></a> et <a class="reference internal" href="variables_basic.html#ref-secondaryreleasetype"><span class="std std-ref">_secondaryreleasetype</span></a>).</p>
+</div></blockquote>
+<p><strong>script</strong></p>
+<blockquote>
+<div><p>Le script utilisé pour écrire la liste des morceaux de la sortie. Les valeurs possibles sont tirées du standard <a class="reference external" href="https://fr.wikipedia.org/wiki/ISO_15924">ISO 15924</a>. (<em>depuis Picard 0,10</em>)</p>
+</div></blockquote>
+<p><strong>subtitle</strong></p>
+<blockquote>
+<div><p>Utilisé pour les informations directement liées au titre du contenu.</p>
+</div></blockquote>
+<p><strong>title</strong></p>
+<blockquote>
+<div><p>Le titre de la piste.</p>
+</div></blockquote>
+<p><strong>titlesort</strong></p>
+<blockquote>
+<div><p>Le nom de tri du titre de la piste.</p>
+</div></blockquote>
+<p><strong>totaldiscs</strong></p>
+<blockquote>
+<div><p>Le nombre total de disques dans cette version</p>
+</div></blockquote>
+<p><strong>totaltracks</strong></p>
+<blockquote>
+<div><p>Le nombre total de pistes sur ce disque.</p>
+</div></blockquote>
+<p><strong>tracknumber</strong></p>
+<blockquote>
+<div><p>Le numéro de la piste sur ce disque.</p>
+</div></blockquote>
+<p><strong>website</strong></p>
+<blockquote>
+<div><p>Utilisé pour le site officiel de l’artiste.</p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tags_advanced.html" class="btn btn-neutral float-right" title="Balises avancées" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="variables.html" class="btn btn-neutral float-left" title="Balises &amp; Variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'variables/tags_basic');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/variables/tags_basic.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/variables/tags_basic.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

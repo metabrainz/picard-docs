@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; Documentation MusicBrainz Picard v2.6.4</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Contribuer au projet" href="contributing.html" />
+    <link rel="prev" title="MusicBrainz Picard" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.6.4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#picard-can">Picard peut…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#picard-cannot">Picard ne peut pas …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Compréhension Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers ce titre">¶</a></h1>
+<p>MusicBrainz Picard est un tagueur de fichiers musicaux multiplateforme. Pour toutes les personnes qui ne savent pas ce que cela signifie, voici une explication rapide qui peut être ignorée par les personnes qui le savent déjà.</p>
+<p>Vos fichiers musicaux ne contiennent pas que de la musique. Ils contiennent également des « métadonnées », constituées de « tags » qui se composent d’un nom ou d’un type de tag et des données associées, par exemple le nom de l’album ou de la piste, le nom de l’artiste, le label, l’année d’émission, etc. Sauf si vous extrayez vous-même les fichiers musicaux avec un outil très basique, vos fichiers musicaux contiennent probablement déjà des métadonnées de base, mais il y a littéralement des centaines de balises qui peuvent être appliquées à votre musique si vous êtes intéressé.</p>
+<p>Évidemment, si vous le souhaitez, vous pouvez rechercher minutieusement toutes ces informations pour chaque album et suivre vous-même, et saisir les données dans un outil de marquage. Cependant, à l’ère de la connexion Internet, il est clairement plus logique qu’une personne fasse cela pour chaque album et piste, puis télécharge ces données dans une base de données partagée. L’outil de marquage peut alors accéder à cette base de données et utiliser les données pour marquer les fichiers musicaux. Et <strong>c’est</strong> ce que fait MusicBrainz Picard.</p>
+<p><strong>MusicBrainz</strong> est la base de données et <strong>Picard</strong> est l’outil qui balise les fichiers musicaux.</p>
+<p>Ce guide de l’utilisateur a pour but de fournir des informations complètes sur l’utilisation de <a class="reference external" href="https://picard.musicbrainz.org/">MusicBrainz Picard</a> et de le rendre également disponible dans d’autres formats, y compris une version PDF adaptée à l’impression. Des liens vers des informations supplémentaires telles que des scripts, des plugins et des didacticiels sont fournis lorsqu’ils sont disponibles plutôt que d’essayer de reproduire les informations de ce document.</p>
+<p>Afin d’utiliser efficacement Picard, il est important de comprendre ce que le programme peut faire et, tout aussi important, ce qu’il ne peut pas faire. Picard est principalement destiné à étiqueter et organiser les albums contenant des pistes, guidé par l’utilisateur vers la sortie spécifique de l’album dont il dispose, puis à maintenir les métadonnées de ces pistes à jour à mesure que les utilisateurs du monde entier améliorent la qualité de MusicBrainz. les données associées à cette version et à cette piste particulières ; Picard le fait très bien en effet. Cependant, il n’est pas destiné à organiser automatiquement votre collection de milliers de fichiers musicaux aléatoires, et si c’est ce que vous espérez, vous serez probablement déçu. Pour citer le site Web de Picard, <em>« Picard n’est pas conçu pour être un fixateur d’étiquettes à piste unique de masse. Picard croit en la qualité plutôt que la quantité et propose une pléthore de personnalisations pour adapter les collections de musique à vos besoins. »</em></p>
+<div class="section" id="picard-can">
+<h2>Picard peut…<a class="headerlink" href="#picard-can" title="Lien permanent vers ce titre">¶</a></h2>
+<p>… ajouter des balises de métadonnées à vos fichiers musicaux, en fonction des informations disponibles sur le <a class="reference external" href="https://musicbrainz.org/">site Web MusicBrainz</a>.</p>
+<p>… recherchez les métadonnées manuellement ou automatiquement en fonction des informations existantes, notamment le nom de l’artiste et du morceau, l’identifiant du disque (pour les CD) et l’empreinte digitale AcoustID d’une piste.</p>
+<p>… récupérez et intégrez des images de pochettes à partir d’une variété de sources.</p>
+<p>… renommez et placez les fichiers musicaux dans des répertoires en fonction des instructions de modèle de dénomination fournies dans un script de dénomination.</p>
+<p>… calculer et soumettre un identifiant de disque à la base de données MusicBrainz, en le joignant à une version spécifiée.</p>
+<p>… calculer et soumettre l’empreinte digitale AcoustID d’un fichier musical à la <a class="reference external" href="https://acoustid.org/">base de données AcoustID</a>.</p>
+</div>
+<div class="section" id="picard-cannot">
+<h2>Picard ne peut pas …<a class="headerlink" href="#picard-cannot" title="Lien permanent vers ce titre">¶</a></h2>
+<p>… identifier et supprimer automatiquement tous les fichiers musicaux en double de votre collection.</p>
+<p>… fournir des métadonnées qui n’existent pas déjà dans la base de données MusicBrainz.</p>
+</div>
+<div class="section" id="limitations">
+<h2><span class="target" id="index-2"></span>Limites<a class="headerlink" href="#limitations" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Formats de fichier</strong></p>
+<p>Picard prend actuellement en charge la plupart des formats de fichiers musicaux, Matroska (.mka) étant une exception notable. Les fichiers Microsoft WAVE (.wav) peuvent être empreintes digitales et renommés et peuvent être marqués à l’aide de balises ID3v2, mais cela n’est pas pris en charge par tous les logiciels de lecture. De plus, Picard ne prend pas en charge l’écriture de balises personnalisées pour tous les formats.</p>
+<p>La section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Picard Tag Mappings</span></a> fournit plus d’informations concernant le mappage entre les noms de balises internes Picard et divers formats de balisage.</p>
+<p><strong>Demande de limitation de débit</strong></p>
+<p>La récupération des métadonnées de Picard est limitée à la limitation de débit standard <strong>une demande par seconde</strong> pour l’API MusicBrainz. Cela devient tout à fait visible lorsque vous essayez de traiter une grande liste de fichiers, et est exacerbé par les extensions qui effectuent des demandes d’informations supplémentaires à partir de la base de données.</p>
+<p><strong>Traitement de fichiers réseau</strong></p>
+<p>Parfois, Picard doit réécrire l’intégralité du fichier de musique afin d’ajouter ou de mettre à jour les balises. Cela peut prendre quelques secondes et le délai devient encore plus long si le fichier est accédé via un réseau (par exemple : le fichier est lu ou écrit sur un périphérique NAS). La « meilleure pratique » recommandée consiste à traiter tous les fichiers sur un lecteur local, puis à les déplacer vers le répertoire distant souhaité une fois le traitement terminé.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contribuer au projet" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="MusicBrainz Picard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'about_picard/introduction');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/about_picard/introduction.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/about_picard/introduction.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

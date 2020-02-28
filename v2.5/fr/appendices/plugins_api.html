@@ -1,0 +1,531 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.5.6</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="/version_links.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Annexe B: Mappage de balises" href="tag_mapping.html" />
+    <link rel="prev" title="Compréhension Empreintes acoustiques et AcoustIDs" href="../tutorials/acoustid.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.5.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Compréhension Empreintes acoustiques et AcoustIDs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_line.html">Annexe C: Options de ligne de commande</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Annexe A: API des plugins</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="appendix-a-plugins-api">
+<h1><span class="target" id="index-8"></span>Annexe A: <span class="target" id="index-9"></span>API des plugins<a class="headerlink" href="#appendix-a-plugins-api" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="plugin-metadata">
+<h2><span class="target" id="index-10"></span>Métadonnées du plugin<a class="headerlink" href="#plugin-metadata" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Chaque plugin doit fournir des métadonnées sous forme de variables. Ces variables doivent être placées en haut du fichier.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;This plugin is an example&quot;</span>
+<span class="n">PLUGIN_VERSION</span> <span class="o">=</span> <span class="s1">&#39;0.1&#39;</span>
+<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.1&#39;</span><span class="p">,</span> <span class="s1">&#39;2.2&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0-or-later&quot;</span>
+<span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.html&quot;</span>
+</pre></div>
+</div>
+<p>Explication des variables:</p>
+<ul class="simple">
+<li><p><strong>PLUGIN_DESCRIPTION</strong> doit être aussi simple que possible, tout en décrivant toujours la fonction principale.</p></li>
+<li><p><strong>PLUGIN_VERSION</strong> doit être rempli avec la version de le Plug-in. Les versions de plug-in doivent être au format <code class="docutils literal notranslate"><span class="pre">x.y.z</span></code> (par exemple: « 1.0 » ou « 2.12.4 »). Il est recommandé d’utiliser <a class="reference external" href="https://semver.org/">Semantic Versioning</a>.</p></li>
+<li><p><strong>PLUGIN_API_VERSIONS</strong> doit être défini sur les versions de Picard avec lesquelles s’exécuter ce plugin. Les nouvelles versions de Picard prendront généralement en charge les anciennes versions de l’API de plug-in, mais en cas de modification, la prise en charge des anciennes versions de plug-in peut être abandonnée. Les versions disponibles pour Picard 2 sont « 2.0 », « 2.1 » et « 2.2 ».</p></li>
+<li><p><strong>PLUGIN_LICENSE</strong> doit être défini avec le nom de licence du plugin. Si possible, utilisez l’un des noms de licence de la <a class="reference external" href="https://spdx.org/licenses/">Liste des licences SPDX</a>, mais vous êtes invités à utiliser une autre licence si celle que vous avez choisie n’est pas disponible dans la liste.</p></li>
+<li><p><strong>PLUGIN_LICENSE_URL</strong> doit être défini sur une URL pointant vers le texte complet de la licence.</p></li>
+</ul>
+</div>
+<div class="section" id="metadata-processors">
+<h2><span class="target" id="index-11"></span>Processeurs de métadonnées<a class="headerlink" href="#metadata-processors" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les métadonnées MusicBrainz peuvent être post-traitées à deux niveaux, album et piste. Les types d’arguments passés aux fonctions de processeur dans les exemples suivants sont les suivants:</p>
+<ul class="simple">
+<li><p><strong>album</strong>: <code class="docutils literal notranslate"><span class="pre">picard.album.Album</span></code></p></li>
+<li><p><strong>metadata</strong>: <code class="docutils literal notranslate"><span class="pre">picard.metadata.Metadata</span></code></p></li>
+<li><p><strong>release</strong>: <code class="docutils literal notranslate"><span class="pre">dict</span></code> avec les données de version du service Web MusicBrainz JSON</p></li>
+<li><p><strong>track</strong>: <code class="docutils literal notranslate"><span class="pre">dict</span></code> avec les données de piste du service Web MusicBrainz JSON</p></li>
+</ul>
+<div class="section" id="album-metadata-example">
+<h3>Exemple de métadonnées d’album:<a class="headerlink" href="#album-metadata-example" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Disc Numbers&quot;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;Lukas Lalinsky&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;Moves disc numbers from album titles to tags.&quot;</span>
+
+<span class="kn">from</span> <span class="nn">picard.metadata</span> <span class="kn">import</span> <span class="n">register_album_metadata_processor</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">def</span> <span class="nf">remove_discnumbers</span><span class="p">(</span><span class="n">tagger</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">release</span><span class="p">):</span>
+    <span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\(disc (\d+)\)&quot;</span><span class="p">,</span> <span class="n">metadata</span><span class="p">[</span><span class="s2">&quot;album&quot;</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">matches</span><span class="p">:</span>
+        <span class="n">metadata</span><span class="p">[</span><span class="s2">&quot;discnumber&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">matches</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">metadata</span><span class="p">[</span><span class="s2">&quot;album&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\(disc \d+\)&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">metadata</span><span class="p">[</span><span class="s2">&quot;album&quot;</span><span class="p">])</span>
+
+<span class="n">register_album_metadata_processor</span><span class="p">(</span><span class="n">remove_discnumbers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="track-metadata-example">
+<h3>Exemple de Suivre les métadonnées:<a class="headerlink" href="#track-metadata-example" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Feat. Artists&quot;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;Lukas Lalinsky&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;Removes feat. artists from track titles.&quot;</span>
+
+<span class="kn">from</span> <span class="nn">picard.metadata</span> <span class="kn">import</span> <span class="n">register_track_metadata_processor</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">def</span> <span class="nf">remove_featartists</span><span class="p">(</span><span class="n">tagger</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">release</span><span class="p">):</span>
+    <span class="n">metadata</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\(feat. [^)]*\)&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">metadata</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">])</span>
+
+<span class="n">register_track_metadata_processor</span><span class="p">(</span><span class="n">remove_featartists</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="event-hooks">
+<h2><span class="target" id="index-12"></span>Crochets d’événement<a class="headerlink" href="#event-hooks" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les plugins peuvent s’enregistrer pour écouter différents événements. Actuellement, les hooks d’événement suivants sont disponibles:</p>
+<div class="section" id="file-post-load-processor-file">
+<h3>file_post_load_processor(file)<a class="headerlink" href="#file-post-load-processor-file" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ce hook est appelé après le chargement d’un fichier dans Picard. Cela pourrait par exemple être utilisé pour charger des données supplémentaires pour un fichier. Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_load_processor</span>
+
+<span class="k">def</span> <span class="nf">file_post_load_processor</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+  <span class="k">pass</span>
+
+<span class="n">register_file_post_load_processor</span><span class="p">(</span><span class="n">file_post_load_processor</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="file-post-save-processor-file">
+<h3>file_post_save_processor(file)<a class="headerlink" href="#file-post-save-processor-file" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ce hook est appelé après l’enregistrement d’un fichier. Cela peut par exemple être utilisé pour exécuter un post-traitement supplémentaire sur le fichier ou écrire des données supplémentaires. Notez que les métadonnées du fichier sont déjà les métadonnées nouvellement enregistrées. Usage:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_save_processor</span>
+
+<span class="k">def</span> <span class="nf">file_post_save_processor</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+  <span class="k">pass</span>
+
+<span class="n">register_file_post_save_processor</span><span class="p">(</span><span class="n">file_post_save_processor</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="file-post-addition-to-track-processor-track-file">
+<h3>file_post_addition_to_track_processor(track, file)<a class="headerlink" href="#file-post-addition-to-track-processor-track-file" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ce hook est appelé après qu’un fichier a été ajouté à une piste (dans le volet de droite de Picard).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_addition_to_track_processor</span>
+
+<span class="k">def</span> <span class="nf">file_post_addition_to_track_processor</span><span class="p">(</span><span class="n">track</span><span class="p">,</span> <span class="n">file</span><span class="p">):</span>
+  <span class="k">pass</span>
+
+<span class="n">register_file_post_addition_to_track_processor</span><span class="p">(</span><span class="n">file_post_addition_to_track_processor</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="file-post-removal-from-track-processor-track-file">
+<h3>file_post_removal_from_track_processor(track, file)<a class="headerlink" href="#file-post-removal-from-track-processor-track-file" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ce hook est appelé après qu’un fichier a été supprimé d’une piste (dans le volet droit de Picard).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_removal_from_track_processor</span>
+
+<span class="k">def</span> <span class="nf">file_post_removal_from_track_processor</span><span class="p">(</span><span class="n">track</span><span class="p">,</span> <span class="n">file</span><span class="p">):</span>
+  <span class="k">pass</span>
+
+<span class="n">register_file_post_removal_from_track_processor</span><span class="p">(</span><span class="n">file_post_removal_from_track_processor</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="album-post-removal-processor-album">
+<h3>album_post_removal_processor(album)<a class="headerlink" href="#album-post-removal-processor-album" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ce hook est appelé après qu’un album a été supprimé de Picard.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.album</span> <span class="kn">import</span> <span class="n">register_album_post_removal_processor</span>
+
+<span class="k">def</span> <span class="nf">album_post_removal_processor</span><span class="p">(</span><span class="n">album</span><span class="p">):</span>
+  <span class="k">pass</span>
+
+<span class="n">register_album_post_removal_processor</span><span class="p">(</span><span class="n">album_post_removal_processor</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les hooks d’événement sont disponibles depuis la version 2.2 de l’API.</p>
+</div>
+</div>
+</div>
+<div class="section" id="file-formats">
+<h2><span class="target" id="index-13"></span>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les plugins peuvent étendre Picard avec la prise en charge de formats de fichiers supplémentaires. Voir les <a class="reference external" href="https://github.com/metabrainz/picard/tree/master/picard/formats">implémentations de format de fichier existantes</a> pour plus de détails sur la façon d’implémenter les méthodes « _load » et « _save ». Exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
+<span class="n">PLUGIN_VERSION</span> <span class="o">=</span> <span class="s1">&#39;...&#39;</span>
+<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;...&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
+<span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
+
+<span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">File</span>
+<span class="kn">from</span> <span class="nn">picard.formats</span> <span class="kn">import</span> <span class="n">register_format</span>
+<span class="kn">from</span> <span class="nn">picard.metadata</span> <span class="kn">import</span> <span class="n">Metadata</span>
+
+<span class="k">class</span> <span class="nc">MyFile</span><span class="p">(</span><span class="n">File</span><span class="p">):</span>
+    <span class="n">EXTENSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;.foo&quot;</span><span class="p">]</span>
+    <span class="n">NAME</span> <span class="o">=</span> <span class="s2">&quot;Foo Audio&quot;</span>
+
+    <span class="k">def</span> <span class="nf">_load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="n">metadata</span> <span class="o">=</span> <span class="n">Metadata</span><span class="p">()</span>
+        <span class="c1"># Implement loading and parsing the file here.</span>
+        <span class="c1"># This method is supposed to return a Metadata instance filled</span>
+        <span class="c1"># with all the metadata read from the file.</span>
+        <span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;~format&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">NAME</span>
+        <span class="k">return</span> <span class="n">metadata</span>
+
+    <span class="k">def</span> <span class="nf">_save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">metadata</span><span class="p">):</span>
+        <span class="c1"># Implement saving the metadata to the file here.</span>
+        <span class="k">pass</span>
+
+<span class="n">register_format</span><span class="p">(</span><span class="n">MyFile</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tagger-script-functions">
+<h2><span class="target" id="index-14"></span>Fonctions de script de tagger<a class="headerlink" href="#tagger-script-functions" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour définir de nouvelles fonctions de script de tagger, utilisez <code class="docutils literal notranslate"><span class="pre">register_script_function</span> <span class="pre">(function,</span> <span class="pre">name</span> <span class="pre">=</span> <span class="pre">None)</span></code> du module <code class="docutils literal notranslate"><span class="pre">picard.script</span></code>. <code class="docutils literal notranslate"><span class="pre">parser</span></code> est une instance de <code class="docutils literal notranslate"><span class="pre">picard.script.ScriptParser</span></code>, et le reste des arguments qui lui sont passés sont les arguments de l’appel de fonction dans le script du tagger. Exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Initials&quot;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;Lukas Lalinsky&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;Provides tagger script function $initials(text).&quot;</span>
+<span class="n">PLUGIN_VERSION</span> <span class="o">=</span> <span class="s1">&#39;0.1&#39;</span>
+<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.0&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0&quot;</span>
+<span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.txt&quot;</span>
+
+<span class="kn">from</span> <span class="nn">picard.script</span> <span class="kn">import</span> <span class="n">register_script_function</span>
+
+<span class="k">def</span> <span class="nf">initials</span><span class="p">(</span><span class="n">parser</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">a</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isalpha</span><span class="p">())</span>
+
+<span class="n">register_script_function</span><span class="p">(</span><span class="n">initials</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">register_script_function</span></code> prend en charge deux arguments optionnels:</p>
+<ul class="simple">
+<li><p><strong>eval_args</strong>: Si c’est <strong>False</strong>, les arguments ne seront pas évalués avant d’être passés à <strong>function</strong>.</p></li>
+<li><p><strong>check_argcount</strong>: Si c’est <strong>False</strong>, le nombre d’arguments passés à la fonction ne sera pas vérifié.</p></li>
+</ul>
+<p>La valeur par défaut des deux arguments est <strong>True</strong>.</p>
+</div>
+<div class="section" id="context-menu-actions">
+<h2><span class="target" id="index-15"></span>Actions du menu contextuel<a class="headerlink" href="#context-menu-actions" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les actions du menu contextuel du clic droit peuvent être ajoutées aux albums, pistes et fichiers dans « Fichiers sans correspondance », « Clusters » et « ClusterList » (dossier parent des clusters). Exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Remove Perfect Albums&#39;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;ichneumon, hrglgrmpf&#39;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;&#39;&#39;Remove all perfectly matched albums from the selection.&#39;&#39;&#39;</span>
+<span class="n">PLUGIN_VERSION</span> <span class="o">=</span> <span class="s1">&#39;0.2&#39;</span>
+<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0.15.1&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0&quot;</span>
+<span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.txt&quot;</span>
+
+<span class="kn">from</span> <span class="nn">picard.album</span> <span class="kn">import</span> <span class="n">Album</span>
+<span class="kn">from</span> <span class="nn">picard.ui.itemviews</span> <span class="kn">import</span> <span class="n">BaseAction</span><span class="p">,</span> <span class="n">register_album_action</span>
+
+<span class="k">class</span> <span class="nc">RemovePerfectAlbums</span><span class="p">(</span><span class="n">BaseAction</span><span class="p">):</span>
+    <span class="n">NAME</span> <span class="o">=</span> <span class="s1">&#39;Remove perfect albums&#39;</span>
+
+    <span class="k">def</span> <span class="nf">callback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">objs</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">album</span> <span class="ow">in</span> <span class="n">objs</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">Album</span><span class="p">)</span> <span class="ow">and</span> <span class="n">album</span><span class="o">.</span><span class="n">is_complete</span><span class="p">()</span>\
+               <span class="ow">and</span> <span class="n">album</span><span class="o">.</span><span class="n">get_num_unmatched_files</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span>\
+               <span class="ow">and</span> <span class="n">album</span><span class="o">.</span><span class="n">get_num_matched_tracks</span><span class="p">()</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">album</span><span class="o">.</span><span class="n">iterfiles</span><span class="p">()))</span>\
+               <span class="ow">and</span> <span class="n">album</span><span class="o">.</span><span class="n">get_num_unsaved_files</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">album</span><span class="o">.</span><span class="n">loaded</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tagger</span><span class="o">.</span><span class="n">remove_album</span><span class="p">(</span><span class="n">album</span><span class="p">)</span>
+
+<span class="n">register_album_action</span><span class="p">(</span><span class="n">RemovePerfectAlbums</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Utilisez <code class="docutils literal notranslate"><span class="pre">register_x_action</span></code> où “x” est « <em>album</em> », « <em>track</em> », « <em>file</em> », « <em>cluster</em> » ou « <em>clusterlist</em> ».</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tag_mapping.html" class="btn btn-neutral float-right" title="Annexe B: Mappage de balises" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../tutorials/acoustid.html" class="btn btn-neutral float-left" title="Compréhension Empreintes acoustiques et AcoustIDs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'appendices/plugins_api');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/appendices/plugins_api.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/appendices/plugins_api.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.5_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.5_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.5_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Writing a File Naming Script &mdash; MusicBrainz Picard v2.5.6 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="/version_links.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Understanding Acoustic Fingerprinting and AcoustIDs" href="acoustid.html" />
+    <link rel="prev" title="macOS shows the app is damaged" href="../troubleshooting/macos_startup_error.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.5.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Writing a File Naming Script</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="writing-a-file-naming-script">
+<h1>Writing a <span class="target" id="index-0"></span>File Naming Script<a class="headerlink" href="#writing-a-file-naming-script" title="Permalink to this headline">¶</a></h1>
+<p>Writing a script to organize and name your files is actually not that hard – just don’t get intimidated by all the
+‘$’, ‘%’ and parentheses. If you can write down a pattern like “<strong>ARTIST - (YEAR) ALBUM NAME/TRACK - SONG TITLE</strong>”
+of how you want the files and folders named, you can quite easily translate this to the proper script.</p>
+<p>Note that the use of a ‘/’ in the formatting string separates the output directory from the file name. The formatting
+string is allowed to contain any number of ‘/’ characters. Everything before the last ‘/’ is the directory location,
+and everything after the last ‘/’ becomes the file’s name.  In our example, we only have one ‘/’ character, meaning
+that we will have one directory level for the album which will contain the songs for that album.</p>
+<p>First, let’s have a look at what we need. You see a list of the available tags in the <a class="reference internal" href="../variables/tags_basic.html"><span class="doc">Basic Tags</span></a> section.
+We want the <strong>ARTIST</strong> name, so available tags for this could be <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> or <code class="docutils literal notranslate"><span class="pre">artist</span></code>. This should be the
+name for an album folder, so <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> sounds like what we need. To get the actual value for a tag you need to enclose
+its name in percent signs. So let’s start:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>Now we want the <strong>YEAR</strong>. There is no <code class="docutils literal notranslate"><span class="pre">year</span></code> tag, but there is <code class="docutils literal notranslate"><span class="pre">date</span></code>. Let’s use this for now. If we want to add
+extra text like the “<strong>-</strong>” just write it down. We need to be careful with the parentheses, because those are special
+variables in scripting. We need to prefix them with a backslash. Let’s add this all:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> \<span class="p">(</span><span class="o">%</span><span class="n">date</span><span class="o">%</span>\<span class="p">)</span>
+</pre></div>
+</div>
+<p>Now we want the <strong>ALBUM NAME</strong>. That’s simple, just use <code class="docutils literal notranslate"><span class="pre">album</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> \<span class="p">(</span><span class="o">%</span><span class="n">date</span><span class="o">%</span>\<span class="p">)</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>That takes care of the directory portion of the renaming.  The next part is the <strong>TRACK</strong> number and <strong>SONG TITLE</strong>.  The
+track number is available as <code class="docutils literal notranslate"><span class="pre">tracknumber</span></code> and the title of the track is simply <code class="docutils literal notranslate"><span class="pre">title</span></code>.  Adding these to our script
+we get:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> \<span class="p">(</span><span class="o">%</span><span class="n">date</span><span class="o">%</span>\<span class="p">)</span> <span class="o">%</span><span class="n">album</span><span class="o">%/%</span><span class="n">tracknumber</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">title</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>You can see that this looks nearly like the pattern that we said we wanted at the start. It’s not perfect yet for a few
+reasons.  What if there are 10 or more tracks on the album and they don’t sort properly in the directory listing?  Also,
+we get a full date instead of just the year. Finally, sometimes if you tag existing files they might not have the
+<code class="docutils literal notranslate"><span class="pre">albumartist</span></code> set, just <code class="docutils literal notranslate"><span class="pre">artist</span></code>.</p>
+<p>Let’s fix the track number first. We can take care of that by using the <code class="docutils literal notranslate"><span class="pre">$num()</span></code> function to add a leading zero to the
+number shown for tracks 1 through 9:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%albumartist% - \(%date%\) %album%/$num(%tracknumber%,2) - %title%
+</pre></div>
+</div>
+<p>Now let’s fix the <strong>ARTIST</strong>. We can fallback to using <code class="docutils literal notranslate"><span class="pre">artist</span></code> if <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> is not available by using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - \(%date%\) %album%/$num(%tracknumber%,2) - %title%
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">$if2()</span></code> function uses the first value that is not empty, so if <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> is empty it uses <code class="docutils literal notranslate"><span class="pre">artist</span></code> instead.</p>
+<p>For the <code class="docutils literal notranslate"><span class="pre">date</span></code> tag the dates from MusicBrainz are always formatted as YYYY-MM-DD. We only need the year, so let’s get
+just the first 4 characters with the <code class="docutils literal notranslate"><span class="pre">$left()</span></code> function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - \($left(%date%,4)\) %album%/$num(%tracknumber%,2) - %title%
+</pre></div>
+</div>
+<p>What happens if there is no <code class="docutils literal notranslate"><span class="pre">date</span></code> tag information? Sometimes MusicBrainz does not have the release date of an album
+set as it is not yet known or hasn’t been entered into the database. It would be great to omit the entire date with the
+parentheses in this case. Let’s use the <code class="docutils literal notranslate"><span class="pre">$if()</span></code> function to check whether the date is set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - $if(%date%,\($left(%date%,4)\) )%album%/$num(%tracknumber%,2) - %title%
+</pre></div>
+</div>
+<p>Alternately, we can enter a placeholder such a “<strong>0000</strong>” if the date is missing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - \($if(%date%,$left(%date%,4),0000)\) %album%/$num(%tracknumber%,2) - %title%
+</pre></div>
+</div>
+<p>And there you have it – the final script for naming your files developed from the pattern that we used as our starting point.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For additional information about the available tags and variables please see the <a class="reference internal" href="../variables/variables.html"><span class="doc">Tags &amp; Variables</span></a> section.
+For information about the script functions available please see the <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">Scripting Functions</span></a> section.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="acoustid.html" class="btn btn-neutral float-right" title="Understanding Acoustic Fingerprinting and AcoustIDs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../troubleshooting/macos_startup_error.html" class="btn btn-neutral float-left" title="macOS shows the app is damaged" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'tutorials/naming_script');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/tutorials/naming_script.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/tutorials/naming_script.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.5_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.5_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.5_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

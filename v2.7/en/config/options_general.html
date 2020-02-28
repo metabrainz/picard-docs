@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General Options &mdash; MusicBrainz Picard v2.7.3 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Profile Options" href="options_profiles.html" />
+    <link rel="prev" title="Configuration" href="configuration.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.7.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#screen-setup">Screen Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#action-options">Action Options</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="configuration.html#option-settings">Option Settings</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">General Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_profiles.html">Profile Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_metadata.html">Metadata Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_tags.html">Tag Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cover.html">Cover Art Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_filerenaming.html">File Naming Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_acousticbrainz.html">AcousticBrainz Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Fingerprinting Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cdlookup.html">CD Lookup Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_plugins.html">Plugins Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_interface.html">User Interface Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Scripting Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_advanced.html">Advanced Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Option Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Handling of multiple release countries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="configuration.html">Configuration</a> &raquo;</li>
+      <li>General Options</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="general-options">
+<h1><span class="target" id="index-0"></span>General Options<a class="headerlink" href="#general-options" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/options-general.png"><img alt="../_images/options-general.png" src="../_images/options-general.png" style="width: 100%;" /></a>
+<p><strong>Server address</strong></p>
+<blockquote>
+<div><p>The domain name for the MusicBrainz database server used by Picard to get details of your music.
+Default value: musicbrainz.org (for the main MusicBrainz server).</p>
+<p>In addition to the standard MusicBrainz servers provided in the drop down list, you can manually
+enter an alternate address, such as “localhost” if you are running a local copy of the server.
+When an alternate server host name is entered, a warning will be displayed and you will be asked
+to confirm that you want to submit all data to this alternate server.</p>
+<a class="reference internal image-reference" href="../_images/options-alternate-server-confirmation.png"><img alt="../_images/options-alternate-server-confirmation.png" src="../_images/options-alternate-server-confirmation.png" style="width: 100%;" /></a>
+</div></blockquote>
+<p><strong>Port</strong></p>
+<blockquote>
+<div><p>The port number for the server. Default value: 443 (for the main MusicBrainz server).</p>
+</div></blockquote>
+<p><strong>Username</strong></p>
+<blockquote>
+<div><p>Your MusicBrainz website username, used to submit acoustic fingerprints, retrieve and save items
+to your collections, and retrieve personal folksonomy tags.</p>
+</div></blockquote>
+<p><strong>Password</strong></p>
+<blockquote>
+<div><p>Your MusicBrainz website password.</p>
+</div></blockquote>
+<p><strong>Automatically scan all new files</strong></p>
+<blockquote>
+<div><p>Check this box if you want Picard to scan each music file you add and look for an
+<span class="target" id="index-1"></span>AcoustID fingerprint. This takes time, but may be helpful for
+you and MusicBrainz. Leave it unchecked if you don’t want Picard to do this scan automatically. In any
+case, you can direct Picard to scan a particular music file at any time using
+<span class="menuselection">“Tools ‣ Scan”</span>. See also <a class="reference internal" href="../usage/retrieve_scan.html#ref-scan-files"><span class="std std-ref">Scan Files</span></a> and <a class="reference internal" href="../tutorials/acoustid.html#ref-tutorial-acoustid"><span class="std std-ref">Understanding Acoustic Fingerprinting and AcoustIDs</span></a>.</p>
+</div></blockquote>
+<p><strong>Automatically cluster all new files</strong></p>
+<blockquote>
+<div><p>Check this box if you want Picard to automatically group all loaded files into
+album <span class="target" id="index-2"></span>clusters. Leave it unchecked if you don’t want
+Picard to do this automatically. In any case, you can direct Picard to cluster files any time using
+<span class="menuselection">“Tools ‣ Cluster”</span>. See also <a class="reference internal" href="../usage/retrieve_lookup.html#ref-lookup-files"><span class="std std-ref">Lookup Files</span></a>.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can either enable “Automatically scan all new files” or “Automatically cluster all new files”,
+but not both.</p>
+</div>
+<p><strong>Ignore MBIDs when loading new files</strong></p>
+<blockquote>
+<div><p>If you disable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the
+files to automatically load the corresponding MusicBrainz release and match the loaded file to
+the correct track.  This is useful when re-processing files that have been previously tagged
+with incorrect information.</p>
+</div></blockquote>
+<p><strong>Check for updates during start-up</strong></p>
+<blockquote>
+<div><p>This option determines whether or not Picard will automatically check for <span class="target" id="index-3"></span>program updates during
+startup.  In any case, you can have Picard check for program updates at any time using <span class="menuselection">“Help
+‣ Check for update”</span>.</p>
+</div></blockquote>
+<p><strong>Days between checks</strong></p>
+<blockquote>
+<div><p>This option allows you to limit the automatic update checking by selecting the interval, in days,
+between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that
+this only applies if the “Check for updates during start-up” option is enabled.</p>
+</div></blockquote>
+<p><strong>Updates to check</strong></p>
+<blockquote>
+<div><p>This option allows you to select which levels of update to check. Your options are:</p>
+<ul class="simple">
+<li><p>Stable releases only</p></li>
+<li><p>Stable and Beta releases</p></li>
+<li><p>Stable, Beta and Dev releases</p></li>
+</ul>
+<p>For example, if you subscribe to “Stable releases only” you will not be notified if a new Beta or
+Dev release is issued.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The update checking related settings and <span class="menuselection">“Help ‣ Check for update…”</span> command may
+not be available when Picard is distributed as a package. In that case, the user should check with the
+maintainer of the package to determine when an update is available.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="options_profiles.html" class="btn btn-neutral float-right" title="Profile Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="configuration.html" class="btn btn-neutral float-left" title="Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'config/options_general');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/config/options_general.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/config/options_general.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

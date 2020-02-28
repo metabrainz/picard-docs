@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Formats &mdash; MusicBrainz Picard v2.7.3 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Configuration" href="faq_config.html" />
+    <link rel="prev" title="Using Picard" href="faq_usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.7.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Option Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="faq_usage.html">Using Picard</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">File Formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-formats-does-picard-support">What formats does Picard support?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-formats-will-picard-support">What formats will Picard support?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#which-tags-can-picard-write-to-my-files">Which tags can Picard write to my files?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-i-edit-tags-in-several-files-at-once">How to I edit tags in several files at once?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster">Why is saving files sometimes slow, but saving a second time much faster?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default">Why does Picard not use Vinyl style track numbers (e.g. A1, A2, …) by default?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">The built-in audio player cannot play my file. Which formats does it support?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">I am using Fedora. Why doesn’t acoustic fingerprinting work?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="faq_config.html">Configuration</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Handling of multiple release countries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="faq.html">Frequently Asked Questions</a> &raquo;</li>
+      <li>File Formats</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="file-formats">
+<h1><span class="target" id="index-0"></span>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-formats-does-picard-support">
+<h2>What formats does Picard support?<a class="headerlink" href="#what-formats-does-picard-support" title="Permalink to this headline">¶</a></h2>
+<p>Picard supports the following file formats:</p>
+<ul class="simple">
+<li><p>MPEG-1 Audio (.mp3, .mp2, .m2a)</p></li>
+<li><p>MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .m4r, .mp4)</p></li>
+<li><p>Windows Media Audio (.wma, .wmv, .asf)</p></li>
+<li><p>Microsoft WAVE (.wav)</p></li>
+<li><p>The True Audio (.tta)</p></li>
+<li><p>FLAC (.flac)</p></li>
+<li><p>Audio Interchange File Format (.aiff, .aif, .aifc)</p></li>
+<li><p>Musepack (.mpc, .mp+)</p></li>
+<li><p>WavPack (.wv)</p></li>
+<li><p>OptimFROG (.ofr, .ofs)</p></li>
+<li><p>Monkey’s Audio (.ape)</p></li>
+<li><p>Tom’s lossless Audio Kompressor (.tak)</p></li>
+<li><p>Speex (.spx)</p></li>
+<li><p>Generic Ogg files (.ogg)</p></li>
+<li><p>Ogg FLAC (.ogg, .ogv)</p></li>
+<li><p>Ogg Theora (.ogg, .oga)</p></li>
+<li><p>Ogg Opus (.opus)</p></li>
+<li><p>Ogg Audio (.oga)</p></li>
+<li><p>Ogg Video (.ogv)</p></li>
+<li><p>ADTS stream / AAC (.aac)</p></li>
+<li><p>AC-3 (.ac3, .eac3)</p></li>
+<li><p>Direct Stream Digital (.dff, .dsf)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>WAVE files lack a standard for proper tagging. Picard uses ID3v2 tags to tag WAVE files, but this is
+not supported by all software. For compatibility with software which does not support ID3v2 tags in
+WAVE files additional RIFF INFO tags can be written to the files. RIFF INFO has only limited support
+for tags and character encodings.</p>
+</div>
+</div>
+<div class="section" id="what-formats-will-picard-support">
+<h2>What formats will Picard support?<a class="headerlink" href="#what-formats-will-picard-support" title="Permalink to this headline">¶</a></h2>
+<p>Picard is intended to eventually support all formats (including fingerprinting), but this is a complex (arguably never-ending) process,
+and will take some time.</p>
+</div>
+<div class="section" id="which-tags-can-picard-write-to-my-files">
+<h2>Which tags can Picard write to my files?<a class="headerlink" href="#which-tags-can-picard-write-to-my-files" title="Permalink to this headline">¶</a></h2>
+<p>See the <a class="reference internal" href="../variables/variables.html"><span class="doc">Tags &amp; Variables</span></a> section for information on which MusicBrainz fields that Picard writes to tags. <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mapping</a> contains more technical information on how these are further mapped into each tag format.</p>
+</div>
+<div class="section" id="how-to-i-edit-tags-in-several-files-at-once">
+<h2>How to I edit tags in several files at once?<a class="headerlink" href="#how-to-i-edit-tags-in-several-files-at-once" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Click and select several files with <kbd class="kbd docutils literal notranslate">Ctrl</kbd> or <kbd class="kbd docutils literal notranslate">Shift</kbd></p></li>
+<li><p>The metadata view at the bottom will show which tags are present in the selected files
+and whether they are the same across all files or different.</p></li>
+<li><p>If you edit any value in the “New values” column you will change this tag for all selected files.</p></li>
+<li><p>You need to click Save in order to persist these changes to your files.</p></li>
+</ol>
+<p>This process does work in both panes.</p>
+<p>Please understand that Picard is not designed as a general purpose <span class="target" id="index-1"></span>tag editor. Its primary goal is to retrieve community-maintained MusicBrainz
+data to write into your tags. Some secondary goals include:</p>
+<ul class="simple">
+<li><p>allowing rule-based customization of that data using scripts and plugins</p></li>
+<li><p>encouraging users to create an account and fix and update data via the MusicBrainz website, thus sharing their work with the rest of the community rather than simply fixing their tags locally.</p></li>
+</ul>
+<p>To that end, Picard is likely to never have as much development focus on manual bulk editing of tags as other general purpose editors (e.g.:
+<a class="reference external" href="https://www.mp3tag.de/en/">Mp3tag</a>, <a class="reference external" href="https://www.foobar2000.org/">foobar2000</a>, or even many library managers such as iTunes, Windows
+Media Player, and MediaMonkey). That doesn’t mean that the team won’t welcome patches in this area!</p>
+</div>
+<div class="section" id="why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster">
+<h2>Why is saving files sometimes slow, but saving a second time much faster?<a class="headerlink" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster" title="Permalink to this headline">¶</a></h2>
+<p>In most file formats the tags are near the beginning of the file, before the actual music data.  If changed
+tags get written to the file and the newly written tags take more space then before the entire file needs
+to be rewritten. This is usually much slower than just rewriting part of the file containing the tags,
+especially for larger files and/or if the files are on a slow storage (e.g. a network share or slow external drive).</p>
+<p>To mitigate the issue most tagging software (including Picard) leaves some free space (the so called padding)
+after the tags and before the actual music data. If the newly written are only a bit larger than before this free space
+can be used instead of rewriting the entire files. Likewise if the newly written tags take less space than before this
+only leads to an increase in padding, avoiding rewriting the file.</p>
+<p>This all means that when you add many tags to the files (or if there is no or only small padding) you experience
+slow writing speed. If you do only small changes or just remove and later re-add tags the writing is much faster.</p>
+</div>
+<div class="section" id="why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default">
+<h2>Why does Picard not use Vinyl style track numbers (e.g. A1, A2, …) by default?<a class="headerlink" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default" title="Permalink to this headline">¶</a></h2>
+<p>For Vinyl releases the track numbers on MusicBrainz are usually entered as A1, A2, …, B1, B2, … and so on.
+Other releases might use even different more uncommon numbering schemes.  Yet Picard will by default always write
+decimal track numbers, starting with 1 for the first track on a medium.</p>
+<p>The main reason for this is that this is how track numbers are defined for most file formats.  The formats expect
+decimal numbers, and likewise music players might only expect decimal numbers when reading the files.</p>
+<p>If you really want to you can use the scripting variable <code class="docutils literal notranslate"><span class="pre">%_musicbrainz_tracknumber%</span></code> which always holds the
+track number as it was entered in the MusicBrainz database.  The following script will set the tracknumber tag
+to the value as displayed in the MusicBrainz database:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>tracknumber,<span class="n">%_musicbrainz_tracknumber%</span><span class="k">)</span>
+</pre></div>
+</div>
+<p>Please be aware that for MP4 files this will result in the track number not beings saved, as the MP4 format
+does not allow for non integer values in this tag.  For other formats it depends on the playback software and
+devices you use if they can handle these non-standard track numbers.</p>
+</div>
+<div class="section" id="the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">
+<h2>The built-in audio player cannot play my file. Which formats does it support?<a class="headerlink" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support" title="Permalink to this headline">¶</a></h2>
+<p>The formats supported by the built-in <span class="target" id="index-2"></span>audio player depend on the formats supported by your operating system.</p>
+<p><strong>Windows:</strong></p>
+<blockquote>
+<div><p>The supported formats depend on the installed codecs. Depending on the Windows version certain codecs are pre-installed, but you can install
+additional codecs.</p>
+<p>You might want to install the <a class="reference external" href="https://xiph.org/dshow/downloads/">Directshow Filters for Ogg</a> to add support for Ogg Vorbis, Ogg Speex, Ogg
+Theora, Ogg FLAC, native FLAC, and WebM files.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Additional information is available from  <a class="reference external" href="https://support.microsoft.com/en-us/help/15070/windows-media-player-codecs-frequently-asked-questions">Microsoft’s Codecs FAQ</a>.</p>
+</div>
+</div></blockquote>
+<p><strong>Linux:</strong></p>
+<blockquote>
+<div><p>On Linux systems the player uses GStreamer which supports most common audio formats, although some distributions might exclude some codecs due to
+licensing issues. For the widest format support make sure you install all of the GStreamer plugins available for your distribution.</p>
+</div></blockquote>
+</div>
+<div class="section" id="i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">
+<h2>I am using Fedora. Why doesn’t <span class="target" id="index-3"></span>acoustic fingerprinting work?<a class="headerlink" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work" title="Permalink to this headline">¶</a></h2>
+<p>Acoustic fingerprinting in Picard uses a tool called <strong class="program">fpcalc</strong>, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
+from the <a class="reference external" href="https://rpmfusion.org/">RPM Fusion repository</a>. This functionality is not contained in the main Fedora <code class="docutils literal notranslate"><span class="pre">picard</span></code> package because it requires
+the <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> package which <a class="reference external" href="https://fedoraproject.org/wiki/Forbidden_items">cannot be distributed by Fedora</a>. After <a class="reference external" href="https://rpmfusion.org/Configuration">enabling the “rpmfusion-free” RPM
+Fusion repository</a>, install the package (as root) using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="n">install</span> <span class="n">chromaprint</span><span class="o">-</span><span class="n">tools</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="faq_config.html" class="btn btn-neutral float-right" title="Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="faq_usage.html" class="btn btn-neutral float-left" title="Using Picard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'faq/faq_file_formats');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/faq/faq_file_formats.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/faq/faq_file_formats.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

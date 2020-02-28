@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picard ne démarre pas &mdash; Documentation MusicBrainz Picard v2.6.4</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Il n’y a pas de pochette" href="no_coverart.html" />
+    <link rel="prev" title="Dépannage général" href="troubleshooting.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.6.4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Compréhension Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Picard ne démarre pas</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="picard-won-t-start">
+<h1><span class="target" id="index-1"></span>Picard ne démarre pas<a class="headerlink" href="#picard-won-t-start" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Si vous constatez que Picard ne démarre pas, il y a quelques raisons possibles courantes et des choses à essayer pour corriger le problème. Avant de faire quelque chose de radical, il est recommandé d’essayer de démarrer Picard à partir de la ligne de commande avec l’option <a class="reference internal" href="../appendices/command_line.html#cmdoption-d"><code class="xref std std-option docutils literal notranslate"><span class="pre">-d</span></code></a> pour générer la journalisation du débogage. Ce processus est décrit dans la section <a class="reference internal" href="troubleshooting.html"><span class="doc">Dépannage général</span></a>. Si les journaux résultants ne fournissent aucun indice sur le problème, il peut s’agir de l’un des éléments suivants:</p>
+<p><strong>Les fichiers du programme sont corrompus</strong></p>
+<blockquote>
+<div><p>Si vous pensez que cela peut être le problème, la première chose (et la plus simple) à essayer est de réinstaller le programme. Cela devrait résoudre tous les problèmes potentiels de corruption de fichiers. Si Picard ne démarre toujours pas, il est peu probable que ce soit le problème.</p>
+</div></blockquote>
+<p><strong>Un fichier de plugin est corrompu ou est incompatible</strong></p>
+<blockquote>
+<div><p>Pour vérifier si l’un des fichiers du plugin est corrompu ou, dans le cas d’une mise à jour récente vers un plugin ou Picard, un plugin n’est pas compatible, vous devriez essayer de supprimer tous les plugins puis démarrer Picard. Étant donné que vous ne pourrez pas désactiver ou supprimer les plugins en utilisant les paramètres “Option” de Picard, vous devrez les supprimer manuellement. Les plugins peuvent être situés dans un sous-répertoire <code class="docutils literal notranslate"><span class="pre">plugins</span></code> du répertoire où est stocké le fichier programme Picard, ou dans un répertoire spécifique à l’utilisateur:</p>
+<ul class="simple">
+<li><p><em>Windows</em>: <code class="file docutils literal notranslate"><span class="pre">C:\Users\</span><em><span class="pre">user</span></em><span class="pre">\AppData\Local\MusicBrainz\Picard\plugins</span></code></p></li>
+<li><p><em>macOS</em>: <code class="file docutils literal notranslate"><span class="pre">~/Library/Preferences/MusicBrainz/Picard/plugins</span></code></p></li>
+<li><p><em>Linux</em>: <code class="file docutils literal notranslate"><span class="pre">~/.config/MusicBrainz/Picard/plugins</span></code></p></li>
+</ul>
+<p>Une fois que vous avez localisé les fichiers du plugin, ils doivent être supprimés du répertoire <code class="docutils literal notranslate"><span class="pre">plugins</span></code> et déplacés vers un répertoire temporaire. Alors essayez de démarrer Picard. Si le programme démarre, vous devriez essayer de restaurer les fichiers du plugin à partir de votre répertoire temporaire un par un, et vérifier si Picard va démarrer. Cela aidera à identifier le plugin à l’origine du problème.</p>
+</div></blockquote>
+<p><strong>Le fichier de paramètres d’options est corrompu ou est incompatible</strong></p>
+<blockquote>
+<div><p>Pour vérifier si le fichier de paramètres d’options de Picard est corrompu ou, dans le cas d’une mise à niveau récente vers Picard, il n’est pas compatible, vous devez essayer de supprimer le fichier de paramètres, puis démarrer Picard. Si Picard est démarré sans trouver son fichier de paramètres de configuration, il en créera un nouveau en utilisant les paramètres par défaut. Le fichier de paramètres s’appelle <code class="file docutils literal notranslate"><span class="pre">Picard.ini</span></code> et se trouve dans un répertoire spécifique à l’utilisateur:</p>
+<ul class="simple">
+<li><p><em>Windows</em>: <code class="file docutils literal notranslate"><span class="pre">C:\Users\</span><em><span class="pre">user</span></em><span class="pre">\AppData\Roaming\MusicBrainz</span></code></p></li>
+<li><p><em>macOS</em>: <code class="file docutils literal notranslate"><span class="pre">~/Library/Preferences/MusicBrainz</span></code></p></li>
+<li><p><em>Linux</em>: <code class="file docutils literal notranslate"><span class="pre">~/.config/MusicBrainz</span></code></p></li>
+</ul>
+<p>Encore une fois, il est recommandé de déplacer le fichier vers un répertoire temporaire afin qu’il puisse être récupéré si cela ne s’avère pas être la cause du problème.</p>
+</div></blockquote>
+<p><strong>Il y a vraiment un bug en Picard</strong></p>
+<blockquote>
+<div><p>Si ce problème a commencé juste après la mise à jour de Picard, malgré tous les tests effectués avant la sortie d’une nouvelle version, il se peut qu’il s’agisse bien d’un bogue. Dans ce cas, vous devez d’abord essayer de réinstaller la version précédente pour vous assurer qu’elle fonctionne et que le problème ne se produit qu’avec la nouvelle version. Ensuite, vous devez signaler le problème, en suivant les étapes décrites dans la rubrique « Signaler un bogue » de la section <a class="reference internal" href="troubleshooting.html"><span class="doc">Dépannage général</span></a>. Veillez à inclure autant d’informations que possible, ce qui aidera les développeurs à localiser et à résoudre le problème.</p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="no_coverart.html" class="btn btn-neutral float-right" title="Il n’y a pas de pochette" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="troubleshooting.html" class="btn btn-neutral float-left" title="Dépannage général" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'troubleshooting/does_not_start');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/troubleshooting/does_not_start.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/troubleshooting/does_not_start.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

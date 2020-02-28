@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecriture d’un script de nommage de fichier &mdash; Documentation MusicBrainz Picard v2.8.0rc1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Comprendre Empreintes acoustiques et AcoustIDs" href="acoustid.html" />
+    <link rel="prev" title="macOS montre que l’application est endommagée" href="../troubleshooting/macos_startup_error.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.8.0rc1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">Lorsque le fichier journal du ripper est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Ecriture d’un script de nommage de fichier</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="writing-a-file-naming-script">
+<span id="tutorial-naming-script"></span><h1>Ecriture d’un <span class="target" id="index-1"></span>script de nommage de fichier<a class="headerlink" href="#writing-a-file-naming-script" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Ecrire un script pour organiser et nommer vos fichiers n’est en fait pas si difficile - ne vous laissez pas intimider par tous les “$”, “%” et les parenthèses. Si vous pouvez écrire un modèle comme « <strong>ARTISTE - (ANNÉE) NOM/PISTE DE L’ALBUM - TITRE DE LA CHANSON</strong> » de la façon dont vous voulez que les fichiers et dossiers soient nommés, vous pouvez facilement traduire cela dans le script approprié.</p>
+<p>Pour commencer, ouvrez d’abord le <a class="reference internal" href="../config/options_filerenaming_editor.html"><span class="doc">Nom de fichier Editeur de script</span></a>, soit en sélectionnant <span class="menuselection">« Options ‣ Ouvrir l’éditeur de script de nommage de fichier… »</span> dans la barre de menu principale de Picard ou en cliquant sur le :guilabel : bouton <cite>Modifier le script…</cite> sur la page de configuration <a class="reference internal" href="../config/options_filerenaming.html"><span class="doc">Options de nom de fichier</span></a>. À partir de cet écran, vous pouvez démarrer un nouveau script pour votre travail.</p>
+<p>Notez que l’utilisation d’un “/” dans la chaîne de formatage sépare le répertoire de sortie du nom de fichier. La chaîne de mise en forme peut contenir n’importe quel nombre de caractères “/”. Tout ce qui précède le dernier “/” est l’emplacement du répertoire, et tout ce qui se trouve après le dernier “/” devient le nom du fichier. Dans notre exemple, nous n’avons qu’un seul caractère “/”, ce qui signifie que nous aurons un niveau de répertoire pour l’album qui contiendra les chansons de cet album.</p>
+<p>Voyons d’abord ce dont nous avons besoin. Vous voyez une liste des balises disponibles dans la section <a class="reference internal" href="../variables/tags_basic.html"><span class="doc">Balises de base</span></a>. Nous voulons le nom <strong>ARTISTE</strong>, donc les balises disponibles pour cela pourraient être <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> ou <code class="docutils literal notranslate"><span class="pre">artist</span></code>. Cela devrait être le nom d’un dossier d’album, donc <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> ressemble à ce dont nous avons besoin. Pour obtenir la valeur réelle d’une balise, vous devez mettre son nom entre des signes de pourcentage. Alors commençons:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span>
+</pre></div>
+</div>
+<p>Maintenant, nous voulons le <strong>ANNÉE</strong>. Il n’y a pas de balise <code class="docutils literal notranslate"><span class="pre">année</span></code>, mais il y a <code class="docutils literal notranslate"><span class="pre">date</span></code>. Utilisons ceci pour le moment. Si nous voulons ajouter du texte supplémentaire comme le « <strong>-</strong>« , écrivez-le simplement. Nous devons faire attention aux parenthèses, car ce sont des variables spéciales dans les scripts. Nous devons les préfixer avec une barre oblique inverse. Ajoutons tout cela:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span>
+</pre></div>
+</div>
+<p>Nous voulons maintenant le <strong>NOM DE L’ALBUM</strong>. C’est simple, utilisez simplement <code class="docutils literal notranslate"><span class="pre">album</span></code>:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>
+</pre></div>
+</div>
+<p>Cela prend en charge la partie répertoire du changement de nom. La partie suivante est le numéro <strong>PISTE DE L’ALBUM</strong> et <strong>TITRE DE LA CHANSON</strong>. Le numéro de piste est disponible sous forme de <code class="docutils literal notranslate"><span class="pre">tracknumber</span></code> et le titre de la piste est simplement <code class="docutils literal notranslate"><span class="pre">title</span></code>. En les ajoutant à notre script, nous obtenons:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="n">%tracknumber%</span> - <span class="n">%title%</span>
+</pre></div>
+</div>
+<p>Vous pouvez voir que cela ressemble presque au modèle que nous avons dit que nous voulions au début. Ce n’est pas encore parfait pour plusieurs raisons. Que faire s’il y a 10 pistes ou plus sur l’album et qu’elles ne sont pas triées correctement dans la liste du répertoire? De plus, nous obtenons une date complète au lieu de seulement l’année. Enfin, parfois, si vous marquez des fichiers existants, ils peuvent ne pas avoir le jeu <code class="docutils literal notranslate"><span class="pre">albumartist</span></code>, juste <code class="docutils literal notranslate"><span class="pre">artiste</span></code>.</p>
+<p>Fixons d’abord le numéro de la piste. Nous pouvons nous en occuper en utilisant la fonction <a class="reference internal" href="../functions/func_num.html#func-num"><span class="std std-ref">$num</span></a> pour ajouter un zéro non significatif au numéro affiché pour les pistes 1 à 9:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
+</pre></div>
+</div>
+<p>Maintenant, corrigeons le <strong>ARTISTE</strong>. Nous pouvons revenir à l’utilisation de <code class="docutils literal notranslate"><span class="pre">artist</span></code> si <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> n’est pas disponible en utilisant:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
+</pre></div>
+</div>
+<p>La fonction <a class="reference internal" href="../functions/func_if2.html#func-if2"><span class="std std-ref">$if2</span></a> utilise la première valeur qui n’est pas vide, donc si <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> est vide, il utilise <code class="docutils literal notranslate"><span class="pre">artist</span></code> à la place.</p>
+<p>Pour la balise <code class="docutils literal notranslate"><span class="pre">date</span></code>, les dates de MusicBrainz sont toujours au format AAAA-MM-JJ. Nous n’avons besoin que de l’année, donc n’obtenons que les 4 premiers caractères avec la fonction <a class="reference internal" href="../functions/func_left.html#func-left"><span class="std std-ref">$left</span></a>:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
+</pre></div>
+</div>
+<p>Que se passe-t-il s’il n’y a pas d’informations d’étiquette <code class="docutils literal notranslate"><span class="pre">date</span></code>? Parfois, MusicBrainz n’a pas la date de sortie d’un album, car elle n’est pas encore connue ou n’a pas été entrée dans la base de données. Ce serait bien d’omettre la date entière avec les parenthèses dans ce cas. Utilisons la fonction <a class="reference internal" href="../functions/func_if.html#func-if"><span class="std std-ref">$if</span></a> pour vérifier si la date est définie:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="k">$if(</span><span class="n">%date%</span>,<span class="se">\(</span><span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span><span class="se">\)</span> <span class="k">)</span><span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
+</pre></div>
+</div>
+<p>Alternativement, nous pouvons entrer un espace réservé tel que « <strong>0000</strong> » si la date est manquante:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="k">$if(</span><span class="n">%date%</span>,<span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span>,0000<span class="k">)</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
+</pre></div>
+</div>
+<p>Et là vous l’avez - le script final pour nommer vos fichiers développé à partir du modèle que nous avons utilisé comme point de départ.</p>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
+<p>Pour plus d’informations sur les balises et variables disponibles, veuillez consulter la section <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a>. Pour plus d’informations sur les fonctions de script disponibles, veuillez consulter la section <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">Fonctions de script</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="acoustid.html" class="btn btn-neutral float-right" title="Comprendre Empreintes acoustiques et AcoustIDs" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../troubleshooting/macos_startup_error.html" class="btn btn-neutral float-left" title="macOS montre que l’application est endommagée" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'tutorials/naming_script');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/tutorials/naming_script.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/tutorials/naming_script.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

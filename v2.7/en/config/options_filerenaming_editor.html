@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Naming Script Editor &mdash; MusicBrainz Picard v2.7.3 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AcousticBrainz Options" href="options_acousticbrainz.html" />
+    <link rel="prev" title="File Naming Options" href="options_filerenaming.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.7.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#screen-setup">Screen Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#action-options">Action Options</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="configuration.html#option-settings">Option Settings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="options_general.html">General Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_profiles.html">Profile Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_metadata.html">Metadata Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_tags.html">Tag Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cover.html">Cover Art Options</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="options_filerenaming.html">File Naming Options</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">File Naming Script Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="options_acousticbrainz.html">AcousticBrainz Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Fingerprinting Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cdlookup.html">CD Lookup Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_plugins.html">Plugins Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_interface.html">User Interface Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Scripting Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_advanced.html">Advanced Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Option Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Handling of multiple release countries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="configuration.html">Configuration</a> &raquo;</li>
+          <li><a href="options_filerenaming.html">File Naming Options</a> &raquo;</li>
+      <li>File Naming Script Editor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="file-naming-script-editor">
+<span id="opt-naming-script-editor"></span><h1><span class="target" id="index-0"></span>File Naming Script Editor<a class="headerlink" href="#file-naming-script-editor" title="Permalink to this headline">¶</a></h1>
+<p>The file naming script editor is used to manage the file naming scripts available for use by Picard.
+Each script has a title that will show up in the script selection box.  There are two types of scripts
+available:</p>
+<ul class="simple">
+<li><p>Preset Scripts - These are basic default scripts provided by Picard.</p></li>
+<li><p>User-Defined Scripts - These are scripts that have been defined or customized by the user.</p></li>
+</ul>
+<p>Preset scripts cannot be modified, but you can make a copy of the script and the copy can be edited.</p>
+<a class="reference internal image-reference" href="../_images/options-filenaming-editor-1.png"><img alt="../_images/options-filenaming-editor-1.png" src="../_images/options-filenaming-editor-1.png" style="width: 100%;" /></a>
+<p>The editor screen has the following sections:</p>
+<p><strong>Select the file naming script to use</strong></p>
+<blockquote>
+<div><p>This option allows the user to select the file naming script to use from the list of scripts available.
+The selected script will show up in the editing section, where it can be modified if it is a user-defined
+script.</p>
+</div></blockquote>
+<p><strong>Title</strong></p>
+<blockquote>
+<div><p>The title assigned to the currently selected script. This can be modified if the script is a user-defined script.</p>
+</div></blockquote>
+<p><strong>Script</strong></p>
+<blockquote>
+<div><p>Below the title is an edit box section containing the <span class="target" id="index-1"></span>formatting string of the
+selected script. This tells Picard what the new name of the file and its containing directories should be in
+terms of various metadata values. The formatting string is generally referred to as a “file naming script”, and
+is in <a class="reference internal" href="../extending/scripting.html"><span class="doc">Picard’s scripting language</span></a>.</p>
+<p>The script editor automatically highlights the elements of the script, including
+<a class="reference internal" href="../functions/list_by_type.html"><span class="doc">function names</span></a> and <a class="reference internal" href="../variables/variables.html"><span class="doc">tag and variable names</span></a>.
+Hovering your mouse pointer over one of the highlighted entries will display help information about the
+entry if available.</p>
+<p>Unicode characters can be entered into the script using the format <code class="docutils literal notranslate"><span class="pre">\uXXXX</span></code> where “XXXX” is the hexadecimal
+value of the unicode character.  It is not recommended to include unicode characters in the directory or filename.</p>
+<p>The use of a ‘/’ in the formatting string separates the output directory from the file name. The formatting string
+is allowed to contain any number of ‘/’ characters. Everything before the last ‘/’ is the directory location, and
+everything after the last ‘/’ becomes the file’s name.</p>
+<p>Each file naming script can vary from a simple one-line script such as <code class="docutils literal notranslate"><span class="pre">%album%/%title%</span></code> to a very complex script
+using different file naming formats based on different criteria. In all cases, the files will be saved using the text
+output by the script.</p>
+<p>Scripts are often discussed in the <a class="reference external" href="https://community.metabrainz.org/">MetaBrainz Community Forum</a>,
+and there is a thread specific to <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">file naming and script snippets</a>.
+There is also a tutorial on <a class="reference internal" href="../tutorials/naming_script.html"><span class="doc">Writing a File Naming Script</span></a> available.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Any new tags set or tags modified by the file naming script will not be written to the output files’ metadata.</p>
+</div>
+</div></blockquote>
+<p><strong>Files will be named like this</strong></p>
+<blockquote>
+<div><p>Below the file naming script is a section showing examples of the output of the script in two columns: Before
+and After.  If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files
+will be randomly chosen from your selection as file naming examples.  If you have not selected any files, then some default
+examples will be provided.</p>
+</div></blockquote>
+<p><strong>Menu bar</strong></p>
+<blockquote>
+<div><p>At the top of the screen is a menu bar that provides script management functions as well as display settings options. The
+display settings include:</p>
+<ul class="simple">
+<li><p>Word wrap script - This will toggle word wrap on and off in the script edit box.</p></li>
+<li><p>Show help tooltips - This will determine whether or not the information is displayed when hovering over a highlighted item.</p></li>
+<li><p>Show documentation - This will toggle displaying the scripting documentation in a sidebar on the screen.</p></li>
+</ul>
+<p>There is also an option to update the randomly selected example files from your selected files list.</p>
+<p>The script management functionality includes:</p>
+<ul class="simple">
+<li><p>Import a new script from a file, either as a plain-text script or a Picard Naming Script Package.</p></li>
+<li><p>Export the current script to a file, either as a plain-text script or a Picard Naming Script Package.</p></li>
+<li><p>Add a new (default) script.</p></li>
+<li><p>Copy the current script as a new script.</p></li>
+<li><p>Delete the current script.</p></li>
+<li><p>Reset all scripts, also available via the <span class="guilabel">Reset</span> button.</p></li>
+<li><p>Save all changes, also available via the <span class="guilabel">Make It So!</span> button.</p></li>
+<li><p>Exit without saving changes, also available via the <span class="guilabel">Cancel</span> button.</p></li>
+</ul>
+<p>There is also an option to view/edit the metadata details for the current script. These details include such things as title,
+author, version, license, description, and date and time of the last update. It is recommended that the description include
+things such as any required plugins, settings, or tagging scripts.  This can also be triggered by double clicking the script
+title text box.</p>
+<a class="reference internal image-reference" href="../_images/options-filenaming-editor-metadata.png"><img alt="../_images/options-filenaming-editor-metadata.png" src="../_images/options-filenaming-editor-metadata.png" style="width: 100%;" /></a>
+<p>This information is saved in the Picard Naming Script Package file, and is included when a script package file is imported.</p>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="options_acousticbrainz.html" class="btn btn-neutral float-right" title="AcousticBrainz Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="options_filerenaming.html" class="btn btn-neutral float-left" title="File Naming Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'config/options_filerenaming_editor');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/config/options_filerenaming_editor.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/config/options_filerenaming_editor.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

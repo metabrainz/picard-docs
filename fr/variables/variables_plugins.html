@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balises des plugins &mdash; Documentation MusicBrainz Picard v2.8.0rc1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Autres informations" href="variables_other_information.html" />
+    <link rel="prev" title="Balises de musique classique" href="variables_classical.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.8.0rc1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="variables.html">Balises &amp; Variables</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tags_basic.html">Balises de base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags_advanced.html">Balises avancées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_basic.html">Variables de base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_file.html">Variables de fichier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_advanced.html">Variables avancées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_classical.html">Balises de musique classique</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Balises des plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#last-fm-plugin">Plugin Last.fm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-artists-variables-plugin">Plugin de variables d’artistes supplémentaires</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="variables_other_information.html">Autres informations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">Lorsque le fichier journal du ripper est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="variables.html">Balises &amp; Variables</a> &raquo;</li>
+      <li>Balises des plugins</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="tags-from-plugins">
+<h1><span class="target" id="index-1"></span>Balises des plugins<a class="headerlink" href="#tags-from-plugins" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Plugins de Picard <a class="reference internal" href="../config/options_plugins.html"><span class="doc">Les plugins</span></a> peuvent ajouter plus de balises. Voici quelques exemples.</p>
+<div class="section" id="last-fm-plugin">
+<h2>Plugin Last.fm<a class="headerlink" href="#last-fm-plugin" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>genre</strong></p>
+<blockquote>
+<div><p>Pseudo-genre basé sur des balises de folksonomie.</p>
+</div></blockquote>
+</div>
+<div class="section" id="additional-artists-variables-plugin">
+<h2>Plugin de variables d’artistes supplémentaires<a class="headerlink" href="#additional-artists-variables-plugin" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Album Variables</strong></p>
+<blockquote>
+<div><p><strong>_artists_album_primary_id</strong></p>
+<blockquote>
+<div><p>L’ID de l’artiste principal / premier album répertorié</p>
+</div></blockquote>
+<p><strong>_artists_album_primary_std</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier album répertorié (standardisé)</p>
+</div></blockquote>
+<p><strong>_artists_album_primary_cred</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier album répertorié (comme crédité)</p>
+</div></blockquote>
+<p><strong>_artists_album_primary_sort</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier album répertorié (nom de tri)</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_id</strong></p>
+<blockquote>
+<div><p>Les identifiants de tous les artistes de l’album répertoriés, à l’exception de l’artiste principal / premier, sous forme de valeurs multiples</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_std</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (standardisés) à l’exception de l’artiste principal / premier, séparés par des chaînes fournies à partir de l’entrée de version</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_cred</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (comme crédités) à l’exception de l’artiste principal / premier, séparés par des chaînes fournies à partir de l’entrée de version</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_sort</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (trier les noms) à l’exception de l’artiste principal / premier, séparés par des chaînes fournies à partir de l’entrée de version</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_std_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (standardisés) à l’exception du premier / du premier artiste, en tant que valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_cred_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (comme crédités), à l’exception de l’artiste principal / premier, en tant que valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_album_all_std</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (standardisés), séparés par des chaînes fournies à partir de l’entrée de version</p>
+</div></blockquote>
+<p><strong>_artists_album_all_cred</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (comme crédités), séparés par des chaînes fournies à partir de l’entrée de version</p>
+</div></blockquote>
+<p><strong>_artists_album_all_sort</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (noms de tri), séparés par des chaînes fournies à partir de l’entrée de version</p>
+</div></blockquote>
+<p><strong>_artists_album_all_std_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes d’album répertoriés (standardisés), en tant que valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_album_all_cred_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes de l’album répertoriés (comme crédités), comme valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_album_all_sort_primary</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier album répertorié (nom de tri) suivi de tous les artistes d’album supplémentaires (standardisés), séparés par des chaînes fournies à partir de l’entrée de version</p>
+</div></blockquote>
+<p><strong>_artists_album_all_count</strong></p>
+<blockquote>
+<div><p>Le nombre d’artistes répertoriés comme artistes d’album</p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Variables de suivi</strong></p>
+<blockquote>
+<div><p><strong>_artists_track_primary_id</strong></p>
+<blockquote>
+<div><p>L’ID de l’artiste principal / premier morceau répertorié</p>
+</div></blockquote>
+<p><strong>_artists_track_primary_std</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier morceau répertorié (standardisé)</p>
+</div></blockquote>
+<p><strong>_artists_track_primary_cred</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier morceau répertorié (comme crédité)</p>
+</div></blockquote>
+<p><strong>_artists_track_primary_sort</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier morceau répertorié (nom de tri)</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_id</strong></p>
+<blockquote>
+<div><p>Les identifiants de tous les artistes de piste répertoriés à l’exception de l’artiste principal / premier, sous forme de valeurs multiples</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_std</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (standardisés) à l’exception de l’artiste principal / premier, séparés par des chaînes fournies à partir de l’entrée de piste</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_cred</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (comme crédités) à l’exception de l’artiste principal / premier, séparés par des chaînes fournies à partir de l’entrée de piste</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_sort</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (trier les noms) à l’exception de l’artiste principal / premier, séparés par des chaînes fournies à partir de l’entrée de piste</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_std_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (standardisés) à l’exception de l’artiste principal / premier, en tant que valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_cred_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (comme crédités) à l’exception du premier / principal artiste, en tant que valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_track_all_std</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (standardisés), séparés par des chaînes fournies à partir de l’entrée de piste</p>
+</div></blockquote>
+<p><strong>_artists_track_all_cred</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (comme crédités), séparés par des chaînes fournies à partir de l’entrée de piste</p>
+</div></blockquote>
+<p><strong>_artists_track_all_sort</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (nom de tri), séparés par des chaînes fournies à partir de l’entrée de piste</p>
+</div></blockquote>
+<p><strong>_artists_track_all_std_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (standardisés), en tant que valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_track_all_cred_multi</strong></p>
+<blockquote>
+<div><p>Tous les artistes de piste répertoriés (comme crédités), en tant que valeur multiple</p>
+</div></blockquote>
+<p><strong>_artists_track_all_sort_primary</strong></p>
+<blockquote>
+<div><p>L’artiste principal / premier de la piste répertorié (nom de tri) suivi de tous les artistes de piste supplémentaires (standardisés), séparés par des chaînes fournies à partir de l’entrée de piste</p>
+</div></blockquote>
+<p><strong>_artists_track_all_count</strong></p>
+<blockquote>
+<div><p>Le nombre d’artistes répertoriés comme artistes de piste</p>
+</div></blockquote>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Certains plugins effectuent un grand nombre d’appels au service Web pour obtenir des données supplémentaires spécifiques à la piste, telles que l’interprète et les relations de travail, de sorte que le chargement d’un grand nombre d’albums et de pistes peut prendre beaucoup de temps. Le problème de temps peut être partiellement résolu en exploitant un serveur MusicBrainz local avec la limitation de débit désactivée. Veuillez consulter le projet <a class="reference external" href="https://github.com/metabrainz/musicbrainz-server">MusicBrainz Server</a> sur GitHub pour plus d’informations.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="variables_other_information.html" class="btn btn-neutral float-right" title="Autres informations" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="variables_classical.html" class="btn btn-neutral float-left" title="Balises de musique classique" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'variables/variables_plugins');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/variables/variables_plugins.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/variables/variables_plugins.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

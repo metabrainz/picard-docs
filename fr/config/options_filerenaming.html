@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Options de nom de fichier &mdash; Documentation MusicBrainz Picard v2.8.0rc1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Nom de fichier Editeur de script" href="options_filerenaming_editor.html" />
+    <link rel="prev" title="Fichiers locaux" href="options_local_files.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.8.0rc1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#screen-setup">Configuration de l’écran</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#action-options">Options d’action</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="configuration.html#option-settings">Paramètres des options</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="options_general.html">Options générales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_profiles.html">Options de profil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_metadata.html">Options de métadonnées</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_tags.html">Options de balise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cover.html">Options de la pochette</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Options de nom de fichier</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="options_filerenaming_editor.html">Nom de fichier Editeur de script</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Options d’empreintes digitales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cdlookup.html">Options de recherche de CD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_plugins.html">Options des plugins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_interface.html">Options de l’interface utilisateur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Options de script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_advanced.html">Options avancées</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">Lorsque le fichier journal du ripper est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="configuration.html">Configuration</a> &raquo;</li>
+      <li>Options de nom de fichier</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="file-naming-options">
+<span id="opt-file-naming"></span><h1><span class="target" id="index-1"></span>Options de nom de fichier<a class="headerlink" href="#file-naming-options" title="Lien permanent vers ce titre">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/options-filenaming.png"><img alt="../_images/options-filenaming.png" src="../_images/options-filenaming.png" style="width: 100%;" /></a>
+<p>Ces options déterminent la manière dont Picard gère les fichiers lorsqu’ils sont enregistrés avec des métadonnées mises à jour.</p>
+<p><strong>Déplacer les fichiers lors de l’enregistrement</strong></p>
+<blockquote>
+<div><p>Si elle est sélectionnée, cette option indique à Picard de déplacer vos fichiers audio vers un nouveau répertoire lorsqu’il les enregistre. Une utilisation pour cela est de garder votre travail organisé : tous les fichiers non étiquetés sont sous « Répertoire A », et lorsque Picard les marque, il les déplace vers « Répertoire B ». Lorsque « Répertoire A » est vide, votre travail de marquage est terminé.</p>
+<p>Si cette option n’est pas cochée, Picard laissera les fichiers dans le même répertoire lorsqu’ils seront enregistrés.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notez que les options « Renommer les fichiers » et « Déplacer les fichiers » sont indépendantes les unes des autres. «Renommer les fichiers» fait référence à Picard changeant les noms de fichiers, généralement en fonction des noms d’artiste et de piste. « Déplacer les fichiers » fait référence au déplacement de fichiers Picard vers de nouveaux répertoires, en fonction d’un répertoire parent et de sous-répertoires spécifiés, généralement basés sur le nom de l’artiste de l’album et le titre de la sortie. Cependant, ils utilisent tous les deux la même «chaîne de dénomination de fichier». « Déplacer les fichiers » utilise la partie vers le haut jusqu’au dernier “/”. « Renommer les fichiers » utilise la partie après le dernier “/”.</p>
+</div>
+</div></blockquote>
+<p><strong>Répertoire de destination</strong></p>
+<blockquote>
+<div><p>Cela spécifie le répertoire parent de destination vers lequel les fichiers sont déplacés lorsqu’ils sont enregistrés, si l’option « Déplacer les fichiers lors de l’enregistrement » est sélectionnée. Si vous utilisez le répertoire « . » les fichiers seront déplacés par rapport à leur emplacement actuel. S’ils sont déjà dans une sorte de structure de répertoires, cela ne fera probablement pas ce que vous voulez !</p>
+</div></blockquote>
+<p><strong>Déplacer des fichiers supplémentaires</strong></p>
+<blockquote>
+<div><p>Entrez des motifs correspondant à tout autre fichier que vous souhaitez que Picard déplace lors de l’enregistrement des fichiers musicaux (par exemple : « Dossier.jpg », « *.png », « *.cue », « *.log »). Les modèles prennent en charge les caractères génériques de style shell Unix et sont séparés par des espaces. Les modèles de caractères génériques disponibles sont les suivants :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 76%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Modèle</strong></p></th>
+<th class="head"><p><strong>Signification</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>*</p></td>
+<td><p>correspond à tout</p></td>
+</tr>
+<tr class="row-odd"><td><p>?</p></td>
+<td><p>correspond à tout caractère unique</p></td>
+</tr>
+<tr class="row-even"><td><p>[seq]</p></td>
+<td><p>correspond à n’importe quel caractère de <em>seq</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>[!seq]</p></td>
+<td><p>correspond à tout caractère ne figurant pas dans <em>seq</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Pour une correspondance littérale, mettez les métacaractères entre parenthèses. Par exemple, « [?] » correspond au caractère « ? ».</p>
+<p>Lorsque ces fichiers supplémentaires sont déplacés, ils se retrouvent dans le répertoire de sortie avec vos fichiers musicaux. Dans un modèle, le caractère « * » correspond à zéro ou plusieurs caractères. Un autre texte, comme « .jpg », correspond à ces caractères exacts. Ainsi, « *.jpg » correspond à « cover.jpg », « liner.jpg », « a.jpg » et « .jpg », mais pas à « nomatch.jpg2 ».</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cette option peut également être utilisée pour déplacer des sous-répertoires vers le nouveau répertoire de la version.  Cela se fait en spécifiant le nom du sous-répertoire dans la liste des fichiers à déplacer. Par exemple, si vos dossiers d’albums ont un sous-dossier appelé « Artwork », « covers » ou « scans » qui contient des fichiers images supplémentaires que vous souhaitez également déplacer vers le nouveau répertoire de sortie, il suffit d’ajouter « artwork », « covers » et « scans » à la liste des modèles de correspondance des fichiers supplémentaires.</p>
+</div>
+</div></blockquote>
+<p><strong>Supprimer les répertoires vides</strong></p>
+<blockquote>
+<div><p>Lorsqu’il est sélectionné, Picard supprimera les répertoires devenus vides une fois le déplacement terminé. Laissez cette case non cochée si vous voulez que Picard laisse la structure du répertoire source inchangée. Cochez cette case peut être pratique si vous utilisez l’option « déplacer les fichiers » pour organiser votre travail. Un répertoire vide n’a plus de travail à faire, et la suppression du répertoire le clarifie.</p>
+</div></blockquote>
+<p><strong>Renommer les fichiers lors de l’enregistrement</strong></p>
+<blockquote>
+<div><p>Sélectionnez cette option pour permettre à Picard de modifier les noms de fichier et de répertoire de vos fichiers lorsqu’il les enregistre, afin de rendre les noms de fichier et de répertoire cohérents avec les nouvelles métadonnées.</p>
+</div></blockquote>
+<p><strong>Remplacer les caractères non ASCII</strong></p>
+<blockquote>
+<div><p>Sélectionnez cette option pour remplacer les caractères non ASCII par leur équivalent ASCII (par exemple : “á”, “ä” et “ǎ” par “a” ; “é”, “ě” et “ë” par “e” ; “æ” avec « ae »). Plus d’informations sur les caractères ASCII peuvent être trouvées sur <a class="reference external" href="https://en.wikipedia.org/wiki/ASCII">Wikipedia</a>.</p>
+</div></blockquote>
+<p><strong>Compatibilité Windows</strong></p>
+<blockquote>
+<div><p>Cette option indique à Picard de remplacer tous les caractères incompatibles avec Windows par un trait de soulignement. Ceci est activé par défaut sur les systèmes Windows, sans option de désactivation.</p>
+</div></blockquote>
+<p><strong>Autoriser les chemins d’accès de plus de 259 caractères</strong></p>
+<blockquote>
+<div><p>Cette option permet à l’utilisateur de désactiver la limite du chemin d’accès de 259 caractères que Picard applique habituellement en mode de compatibilité Windows lors du renommage et/ou du déplacement de fichiers. Ceci est possible à la fois sous Windows et sur d’autres plateformes avec la compatibilité Windows activée.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>L’activation des chemins d’accès longs sous Windows peut entraîner l’enregistrement de fichiers dont les noms de chemin d’accès dépassent la limite de 259 caractères traditionnellement imposée par l’API Windows. Certains logiciels pourraient ne pas être en mesure d’accéder correctement à ces fichiers. En particulier, l’Explorateur Windows ne peut pas renommer les fichiers avec des noms de chemin longs ou créer de nouveaux fichiers à l’intérieur des dossiers si la longueur du chemin résultant dépasse la limite de longueur.</p>
+</div>
+</div></blockquote>
+<p><strong>Système de dénomination des fichiers sélectionnés</strong></p>
+<blockquote>
+<div><p>Depuis la version 2.7 de Picard, plusieurs scripts de nommage de fichiers sont supportés.  Cette option permet à l’utilisateur de sélectionner le script de nom de fichier à utiliser à partir de la liste des scripts disponibles. Les scripts peuvent être des scripts prédéfinis par le système ou des scripts définis par l’utilisateur. Les scripts disponibles sont gérés dans l’écran <a class="reference internal" href="options_filerenaming_editor.html"><span class="doc">Éditer le script…</span></a>, qui s’affiche lorsque le bouton « Ouvrir l’éditeur de script de nommage de fichier » est sélectionné.</p>
+</div></blockquote>
+<p><strong>Les fichiers seront nommés comme ceci</strong></p>
+<blockquote>
+<div><p>Sous le sélecteur de script de nom de fichier se trouve une section montrant des exemples de sortie du script en deux colonnes : Avant et Après.  Si vous sélectionnez des fichiers dans le volet Cluster ou Album avant d’ouvrir l’écran Options, jusqu’à 10 fichiers seront choisis au hasard parmi votre sélection comme exemples de noms de fichiers.  Si vous n’avez sélectionné aucun fichier, des exemples par défaut seront fournis.</p>
+<p>Les scripts sont souvent abordés dans le <a class="reference external" href="https://community.metabrainz.org/">MetaBrainz Community Forum</a>, et il existe un fil de discussion spécifique à <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">la dénomination de fichier et les extraits de script</a>.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les nouvelles balises définies ou les balises modifiées par le script de dénomination des fichiers ne seront pas écrites dans les métadonnées des fichiers de sortie.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
+<p><a class="reference internal" href="options_filerenaming_editor.html"><span class="doc">Nom de fichier Editeur de script</span></a></p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="options_filerenaming_editor.html" class="btn btn-neutral float-right" title="Nom de fichier Editeur de script" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="options_local_files.html" class="btn btn-neutral float-left" title="Fichiers locaux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'config/options_filerenaming');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/config/options_filerenaming.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/config/options_filerenaming.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

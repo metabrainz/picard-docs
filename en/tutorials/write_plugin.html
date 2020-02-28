@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing a Plugin &mdash; MusicBrainz Picard v2.8.0rc1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Loading releases with MusicBrainz for Android" href="android_app.html" />
+    <link rel="prev" title="Handling of multiple release countries" href="multiple_release_countries.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.8.0rc1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Option Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">When the ripper log file is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="naming_script.html">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multiple_release_countries.html">Handling of multiple release countries</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Writing a Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android_app.html">Loading releases with MusicBrainz for Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Writing a Plugin</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="writing-a-plugin">
+<h1>Writing a <span class="target" id="index-0"></span>Plugin<a class="headerlink" href="#writing-a-plugin" title="Permalink to this headline">¶</a></h1>
+<p>You have a great idea for extending Picard with a plugin but don’t know where to start.  Unfortunately, this is a
+common problem and prevents far too many of those great ideas from ever seeing the light of day.  Perhaps this tutorial
+will help get you started in turning your great idea a reality.</p>
+<p>Picard plugins are written in Python, so that’s the programming language you’ll be using.  Please check the <a class="reference external" href="https://github.com/metabrainz/picard/blob/master/INSTALL.md">INSTALL.md</a> file in the Picard repository on GitHub to see the minimum
+version requirements. This is Python 3.6 as of the time this tutorial was written.  Also refer to the
+<a class="reference internal" href="../appendices/plugins_api.html"><span class="doc">Plugins API</span></a> for additional information, including the parameters passed to each of the
+function types.</p>
+<p>For the purpose of this tutorial, we’re going to develop a simple plugin to save the argument information provided by Picard
+to <code class="docutils literal notranslate"><span class="pre">track</span></code> and <code class="docutils literal notranslate"><span class="pre">release</span></code> processing plugins.  This will demonstrate how the information is accessed, and will provide a
+utility that you might find useful when developing your own plugins.</p>
+<p>The first thing that we’ll need to include is the header information that describes the plugin.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;This plugin is an example&quot;</span>
+<span class="n">PLUGIN_VERSION</span> <span class="o">=</span> <span class="s1">&#39;0.1&#39;</span>
+<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.2&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0-or-later&quot;</span>
+<span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.html&quot;</span>
+</pre></div>
+</div>
+<p>Next we list the modules that will be referenced in our code.  In this case, we will be using the <code class="docutils literal notranslate"><span class="pre">os</span></code> module to build the
+output file path, and the <code class="docutils literal notranslate"><span class="pre">json</span></code> module to format the argument dictionary text for readability. We will be saving our output
+file to the base directory used for file naming so we import the <code class="docutils literal notranslate"><span class="pre">config</span></code> module from Picard, as well as the <code class="docutils literal notranslate"><span class="pre">log</span></code> module
+so that we can write debug or error messages to Picard’s log.  Finally, we import the appropriate processing hooks and plugin
+priority settings.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">from</span> <span class="nn">picard</span> <span class="kn">import</span> <span class="n">config</span><span class="p">,</span> <span class="n">log</span>
+<span class="kn">from</span> <span class="nn">picard.metadata</span> <span class="kn">import</span> <span class="p">(</span><span class="n">register_album_metadata_processor</span><span class="p">,</span>
+                           <span class="n">register_track_metadata_processor</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">picard.plugin</span> <span class="kn">import</span> <span class="n">PluginPriority</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To ensure maximum compatibility, you should only use standard Python modules, or third-party modules that are already
+included in Picard.  If you use other modules, then the plugin will not function properly if used on a system that
+doesn’t have the proper version of the module installed or if someone is using an executable version of Picard.</p>
+</div>
+<p>Now we can start adding the code that we want Picard to execute. First we’ll identify the output file to store the parameter
+information provided by Picard. This is a file named <code class="docutils literal notranslate"><span class="pre">data_dump.txt</span></code> to be stored in the file naming output directory. We find
+the name of the configuration setting we need, <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code>, by examining the Picard source code for the corresponding
+option setting screen. In this case it is a TextOption in the <code class="docutils literal notranslate"><span class="pre">RenamingOptionsPage</span></code> class found in the file
+<a class="reference external" href="https://github.com/metabrainz/picard/blob/master/picard/ui/options/renaming.py">picard/ui/options/renaming.py</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">file_to_write</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">setting</span><span class="p">[</span><span class="s2">&quot;move_files_to&quot;</span><span class="p">],</span> <span class="s2">&quot;data_dump.txt&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The next part is a function to write a Python object to our output file.  To allow the same function to be used for different
+situations, we include parameters to identify the type of line (input type), the object to write, and options for writing to JSON
+format and appending or overwriting an existing output file. In our case, we want to overwrite the file each time a new release
+is processed, but always append the track information to the file.</p>
+<p>We also include error checking to write an entry to the Picard log in the event of an exception.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">write_line</span><span class="p">(</span><span class="n">line_type</span><span class="p">,</span> <span class="n">object_to_write</span><span class="p">,</span> <span class="n">dump_json</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">file_mode</span> <span class="o">=</span> <span class="s1">&#39;a&#39;</span> <span class="k">if</span> <span class="n">append</span> <span class="k">else</span> <span class="s1">&#39;w&#39;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_to_write</span><span class="p">,</span> <span class="n">file_mode</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">dump_json</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> JSON dump follows:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line_type</span><span class="p">,))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">object_to_write</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0:s}</span><span class="s2">: </span><span class="si">{1:s}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line_type</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">object_to_write</span><span class="p">),))</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">: Error: </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">PLUGIN_NAME</span><span class="p">,</span> <span class="n">ex</span><span class="p">,))</span>
+</pre></div>
+</div>
+<p>Now we include the functions to be called when releases and tracks are retrieved by Picard. The release function hook provides
+three arguments, and the track function hook provides four arguments. The argument types are described in the <a class="reference internal" href="../appendices/plugins_api.html"><span class="doc">Plugins API</span></a> section. The first argument, <code class="docutils literal notranslate"><span class="pre">album</span></code>, is an object that holds information about the selected album.
+See the <code class="docutils literal notranslate"><span class="pre">Album</span></code> class in the <a class="reference external" href="https://github.com/metabrainz/picard/blob/master/picard/album.py">picard/album.py</a> file in
+Picard’s source code for more information.</p>
+<p>The second argument, <code class="docutils literal notranslate"><span class="pre">metadata</span></code>, is an object that holds the tags and variables that Picard has assigned for the current release
+and track. This is where you can add or edit the tags and variables that Picard makes available to the user for scripts. See the
+<code class="docutils literal notranslate"><span class="pre">Metadata</span></code> class in the <a class="reference external" href="https://github.com/metabrainz/picard/blob/master/picard/metadata.py">picard/metadata.py</a> file in
+Picard’s source code for more information.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">track</span></code> and <code class="docutils literal notranslate"><span class="pre">release</span></code> arguments are Python dictionaries containing the information provided in response to Picard’s calls to
+the MusicBrainz API. The information may differ, depending on the user’s <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Metadata Options</span></a> settings for things like
+“<em>Use release relationships</em>” or “<em>Use track relationships</em>”.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dump_release_info</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">release</span><span class="p">):</span>
+    <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Release Argument 1 (album)&#39;</span><span class="p">,</span> <span class="n">album</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Release Argument 3 (release)&#39;</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">dump_json</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">dump_track_info</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">release</span><span class="p">):</span>
+    <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Track Argument 1 (album)&#39;</span><span class="p">,</span> <span class="n">album</span><span class="p">)</span>
+    <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Track Argument 3 (track)&#39;</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">dump_json</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># write_line(&#39;Track Argument 4 (release)&#39;, release, dump_json=True)</span>
+</pre></div>
+</div>
+<p>Finally, we need to register our functions so that they are processed with the appropriate events.  In our case, we set the priority
+to <code class="docutils literal notranslate"><span class="pre">HIGH</span></code> so that we output the parameter information as it is received by Picard before any other plugins have an opportunity to
+modify it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Register the plugin to run at a HIGH priority so that other plugins will</span>
+<span class="c1"># not have an opportunity to modify the contents of the metadata provided.</span>
+<span class="n">register_album_metadata_processor</span><span class="p">(</span><span class="n">dump_release_info</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="n">PluginPriority</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
+<span class="n">register_track_metadata_processor</span><span class="p">(</span><span class="n">dump_track_info</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="n">PluginPriority</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The complete plugin code file looks something like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
+<span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;This plugin is an example&quot;</span>
+<span class="n">PLUGIN_VERSION</span> <span class="o">=</span> <span class="s1">&#39;0.1&#39;</span>
+<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.2&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0-or-later&quot;</span>
+<span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.html&quot;</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">from</span> <span class="nn">picard</span> <span class="kn">import</span> <span class="n">config</span><span class="p">,</span> <span class="n">log</span>
+<span class="kn">from</span> <span class="nn">picard.metadata</span> <span class="kn">import</span> <span class="p">(</span><span class="n">register_album_metadata_processor</span><span class="p">,</span>
+                           <span class="n">register_track_metadata_processor</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">picard.plugin</span> <span class="kn">import</span> <span class="n">PluginPriority</span>
+
+<span class="n">file_to_write</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">setting</span><span class="p">[</span><span class="s2">&quot;move_files_to&quot;</span><span class="p">],</span> <span class="s2">&quot;data_dump.txt&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">write_line</span><span class="p">(</span><span class="n">line_type</span><span class="p">,</span> <span class="n">object_to_write</span><span class="p">,</span> <span class="n">dump_json</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">file_mode</span> <span class="o">=</span> <span class="s1">&#39;a&#39;</span> <span class="k">if</span> <span class="n">append</span> <span class="k">else</span> <span class="s1">&#39;w&#39;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_to_write</span><span class="p">,</span> <span class="n">file_mode</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">dump_json</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> JSON dump follows:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line_type</span><span class="p">,))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">object_to_write</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0:s}</span><span class="s2">: </span><span class="si">{1:s}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line_type</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">object_to_write</span><span class="p">),))</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">: Error: </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">PLUGIN_NAME</span><span class="p">,</span> <span class="n">ex</span><span class="p">,))</span>
+
+<span class="k">def</span> <span class="nf">dump_release_info</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">release</span><span class="p">):</span>
+    <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Release Argument 1 (album)&#39;</span><span class="p">,</span> <span class="n">album</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Release Argument 3 (release)&#39;</span><span class="p">,</span> <span class="n">release</span><span class="p">,</span> <span class="n">dump_json</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">dump_track_info</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">metadata</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">release</span><span class="p">):</span>
+   <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Track Argument 1 (album)&#39;</span><span class="p">,</span> <span class="n">album</span><span class="p">)</span>
+   <span class="n">write_line</span><span class="p">(</span><span class="s1">&#39;Track Argument 3 (track)&#39;</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">dump_json</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+   <span class="c1"># write_line(&#39;Track Argument 4 (release)&#39;, release, dump_json=True)</span>
+
+<span class="c1"># Register the plugin to run at a HIGH priority so that other plugins will</span>
+<span class="c1"># not have an opportunity to modify the contents of the metadata provided.</span>
+<span class="n">register_album_metadata_processor</span><span class="p">(</span><span class="n">dump_release_info</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="n">PluginPriority</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
+<span class="n">register_track_metadata_processor</span><span class="p">(</span><span class="n">dump_track_info</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="n">PluginPriority</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>That’s it for our plugin code. Now we need to package it so that we can install it into Picard.  If we’re going to just use it locally
+for ourself, the easiest way is to just name the file something like <code class="file docutils literal notranslate"><span class="pre">my_plugin.py</span></code>.  If there are multiple files, such as plugins that
+include additional settings screens, then the files should be saved in a directory such as <code class="file docutils literal notranslate"><span class="pre">my_plugin</span></code> with the main file named
+<code class="file docutils literal notranslate"><span class="pre">__init__.py</span></code>.  The directory is then archived into a <code class="file docutils literal notranslate"><span class="pre">my_plugin.zip</span></code> file, with the file name the same as the included directory name.
+The the contents of the archive would show as something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_plugin</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+<span class="n">my_plugin</span><span class="o">/</span><span class="n">another_file</span><span class="o">.</span><span class="n">py</span>
+<span class="n">my_plugin</span><span class="o">/</span><span class="n">etc</span>
+</pre></div>
+</div>
+<p>If you’ve made it this far, congratulations! You’ve just created your first Picard plugin. Now you have a starting point for turning that
+great idea into reality.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Relevant portions of Picard’s source code including:</p>
+<ul class="simple">
+<li><p>Option settings modules in <a class="reference external" href="https://github.com/metabrainz/picard/tree/master/picard/ui/options">picard/ui/options/</a> for names used to access the settings.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Album</span></code> class in the <a class="reference external" href="https://github.com/metabrainz/picard/blob/master/picard/album.py">picard/album.py</a> file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Metadata</span></code> class and metadata processing plugin registration functions in the <a class="reference external" href="https://github.com/metabrainz/picard/blob/master/picard/metadata.py">picard/metadata.py</a> file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PluginPriority</span></code> class in the <a class="reference external" href="https://github.com/metabrainz/picard/blob/master/picard/plugin.py">picard/plugin.py</a> file.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="android_app.html" class="btn btn-neutral float-right" title="Loading releases with MusicBrainz for Android" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="multiple_release_countries.html" class="btn btn-neutral float-left" title="Handling of multiple release countries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'tutorials/write_plugin');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/tutorials/write_plugin.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/tutorials/write_plugin.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.8_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

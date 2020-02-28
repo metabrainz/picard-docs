@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion de plusieurs pays de sortie. &mdash; Documentation MusicBrainz Picard v2.6.4</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Écriture d’un Plugin" href="write_plugin.html" />
+    <link rel="prev" title="Compréhension Empreintes acoustiques et AcoustIDs" href="acoustid.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.6.4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acoustid.html">Compréhension Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gestion de plusieurs pays de sortie.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Gestion de plusieurs pays de sortie.</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="handling-of-multiple-release-countries">
+<h1>Gestion de <span class="target" id="index-1"></span>plusieurs pays de sortie.<a class="headerlink" href="#handling-of-multiple-release-countries" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Certaines sorties, en particulier les sorties numériques, peuvent avoir une très longue liste de pays de sortie, listant parfois tous les pays du monde sauf quelques-uns où la sortie n’est pas officiellement disponible. Picard propose quelques outils pour gérer cela.</p>
+<p>Prenons l’exemple de <strong>Bleach</strong>, de Nirvana (MusicBrainz release <a class="reference external" href="https://musicbrainz.org/release/adab3feb-1822-4d27-a997-db7d6c9688c0">adab3feb-1822-4d27-a997-db7d6c9688c0</a>).</p>
+<p>Par défaut, Picard écrit une seule balise <code class="docutils literal notranslate"><span class="pre">releasecountry</span></code> dans les fichiers. Avant la v2.3.1, Picard remplissait cette balise avec ce que le serveur MusicBrainz retournait comme pays pour la sortie. S’il y avait plusieurs sorties, ce champ pays était simplement rempli avec le premier par ordre alphabétique (Afghanistan dans notre exemple). Picard v2.3.1 a introduit quelques options pour mieux gérer ce problème.</p>
+<div class="section" id="using-preferred-release-countries">
+<h2>Utilisation des pays de diffusion préférés<a class="headerlink" href="#using-preferred-release-countries" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Si vous configurez les pays de publication préférés dans <span class="menuselection">« Options ‣ Metadata ‣ Preferred Releases »</span>. Picard utilisera le premier pays de la liste des pays de diffusion préférés qui se trouve également dans la liste des événements de diffusion. Ainsi, si vous avez configuré les pays de diffusion préférés comme étant l’Europe, le Canada, l’Allemagne et le Royaume-Uni, dans notre exemple, cela signifie que la balise <code class="docutils literal notranslate"><span class="pre">releasecountry</span></code> sera définie sur le Canada.</p>
+</div>
+<div class="section" id="using-scripting-to-set-a-different-country">
+<h2>Utilisation de scripts pour définir un pays différent<a class="headerlink" href="#using-scripting-to-set-a-different-country" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Picard v2.3.1 a également ajouté une nouvelle variable <code class="docutils literal notranslate"><span class="pre">%_releasecountries%</span></code>, qui fournit la liste complète des pays de diffusion d’une version sous la forme d’une variable à plusieurs valeurs. Vous pouvez l’utiliser pour définir différentes valeurs pour la balise <code class="docutils literal notranslate"><span class="pre">releasecountry</span></code>.</p>
+<p>Par exemple, le script suivant lui attribue la valeur « [International] » s’il y a 10 pays de diffusion ou plus:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if($gte($lenmulti(</span><span class="n">%_releasecountries%</span><span class="k">)</span>,10<span class="k">)</span>,<span class="k">$set(</span>releasecountry,[International]<span class="k">))</span>
+</pre></div>
+</div>
+<p>Bien entendu, vous pouvez ajuster le nombre de pays et le texte de remplacement à votre convenance. Vous pouvez également choisir d’enregistrer la liste entière au lieu d’un seul pays dans cette balise en utilisant le script:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>releasecountry,<span class="n">%_releasecountries%</span><span class="k">)</span>
+</pre></div>
+</div>
+<p>Vous préférez peut-être limiter cette liste aux premières entrées. L’exemple suivant utilise uniquement les 6 premiers pays:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>releasecountry,<span class="k">$slice(</span><span class="n">%_releasecountries%</span>,0,6<span class="k">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="whats-missing">
+<h2>Qu’est-ce qui manque?<a class="headerlink" href="#whats-missing" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les pays sont actuellement inscrits dans les balises sous leur code pays ISO 3166-1, avec quelques valeurs spéciales ajoutées pour les pays historiques et des choses comme [Europe] ou [Worldwide]. Ces codes ne sont pas toujours facilement reconnaissables ou évidents, comme « DZ » pour l’Algérie ou « DE » pour l’Allemagne. Vous pouvez bien sûr utiliser des scripts pour les rendre plus lisibles.  Par exemple, si vous voulez voir « United Kingdom » au lieu de « GB » dans cette balise, utilisez:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if($eq(</span><span class="n">%releasecountry%</span>,GB<span class="k">)</span>,<span class="k">$set(</span>releasecountry,United Kingdom<span class="k">))</span>
+</pre></div>
+</div>
+<p>Cela peut fonctionner si vous ne traitez que quelques pays dans votre collection, ou si vous voulez simplement gérer certains cas particuliers comme l’utilisation de « Europe » au lieu de « XE », comme dans le script suivant:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if($eq(</span><span class="n">%releasecountry%</span>,XE<span class="k">)</span>,<span class="k">$set(</span>releasecountry,Europe<span class="k">))</span>
+<span class="k">$if($eq(</span><span class="n">%releasecountry%</span>,XU<span class="k">)</span>,<span class="k">$set(</span>releasecountry,[Unknown]<span class="k">))</span>
+<span class="k">$if($eq(</span><span class="n">%releasecountry%</span>,XW<span class="k">)</span>,<span class="k">$set(</span>releasecountry,[Worldwide]<span class="k">))</span>
+<span class="k">$if($eq(</span><span class="n">%releasecountry%</span>,XG<span class="k">)</span>,<span class="k">$set(</span>releasecountry,DDR<span class="k">))</span>
+</pre></div>
+</div>
+<p>Un changement a été soumis à Picard pour ajouter une fonction <code class="docutils literal notranslate"><span class="pre">$countryname()</span></code> afin de convertir facilement le code en un nom lisible ; cependant, cette fonction n’est pas prévue avant la version 2.7 de Picard.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="write_plugin.html" class="btn btn-neutral float-right" title="Écriture d’un Plugin" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="acoustid.html" class="btn btn-neutral float-left" title="Compréhension Empreintes acoustiques et AcoustIDs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'tutorials/multiple_release_countries');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/tutorials/multiple_release_countries.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/tutorials/multiple_release_countries.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

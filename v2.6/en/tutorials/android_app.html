@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading releases with MusicBrainz for Android &mdash; MusicBrainz Picard v2.6.4 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Appendix A: Plugins API" href="../appendices/plugins_api.html" />
+    <link rel="prev" title="Writing a Plugin" href="write_plugin.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.6.4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="naming_script.html">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multiple_release_countries.html">Handling of multiple release countries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="write_plugin.html">Writing a Plugin</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Loading releases with MusicBrainz for Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Loading releases with MusicBrainz for Android</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="loading-releases-with-musicbrainz-for-android">
+<h1>Loading releases with MusicBrainz for <span class="target" id="index-0"></span>Android<a class="headerlink" href="#loading-releases-with-musicbrainz-for-android" title="Permalink to this headline">¶</a></h1>
+<p>If you have an Android phone you can use the MusicBrainz for Android app to
+search for releases by text search or by barcode and load them into Picard
+running on your computer.</p>
+<p>This is useful for example if you have previously ripped your CDs and now you
+want to tag your ripped files with Picard using exactly the data for your the
+releases you own.  You can then use your phone to scan the barcodes of your
+CDs and have their data loaded into Picard, then use this data to tag your
+local files.</p>
+<p>For this to work you need both your phone and computer to be connected to the
+same network.</p>
+<div class="section" id="configuring-picard">
+<h2>Configuring Picard<a class="headerlink" href="#configuring-picard" title="Permalink to this headline">¶</a></h2>
+<p>In <span class="menuselection">Options ‣ Options… ‣ Advanced ‣ Network</span> enable
+“Browser Integration” and disable “Listen only on localhost”.  It is recommended
+that you keep the listening port on the default value 8000, but you can change
+that as well.</p>
+<p>Once you have saved the options, check whether Picard is showing a message
+“Listening on port 8000” in the status bar on the lower right of the main
+window.</p>
+<img alt="Picard status bar showing the listening port number" src="../_images/picard-status-bar.png" />
+<p>The actual port number can vary, but the default is 8000.  Note the
+port number, you will need it to configure the Android app in the next step.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../config/options_network.html"><span class="doc">Network options</span></a></p>
+</div>
+</div>
+<div class="section" id="installing-and-configuring-the-musicbrainz-android-app">
+<h2>Installing and configuring the MusicBrainz Android app<a class="headerlink" href="#installing-and-configuring-the-musicbrainz-android-app" title="Permalink to this headline">¶</a></h2>
+<p>Install <a class="reference external" href="https://github.com/metabrainz/musicbrainz-android">MusicBrainz for Android</a>
+on your phone.  You can download the latest version of the app either from the
+<a class="reference external" href="https://play.google.com/store/apps/details?id=org.metabrainz.android">Google Play Store</a>
+or <a class="reference external" href="https://f-droid.org/packages/org.metabrainz.android/">F-Droid</a>.</p>
+<p>Once installed, launch the app and tap on the settings icon on the upper right.
+Scroll down to the Picard settings.  For the IP Address enter the IP address of
+your computer on which Picard is running.  Depending on your local network
+setup you might also be able to enter the hostname of your computer instead of
+the IP address.</p>
+<a class="reference internal image-reference" href="../_images/android-settings.png"><img alt="MusicBrainz for Android settings screen" src="../_images/android-settings.png" style="width: 50%;" /></a>
+<p>For the Port enter Picard’s listening port as displayed in Picard’s main screen
+(see the previous section).  The default is 8000.</p>
+<p>Before you continue make sure Picard is running and the “Listening on port…”
+status message is shown.  Also make sure your phone is connected to your local
+network.</p>
+</div>
+<div class="section" id="loading-releases-by-barcode">
+<h2>Loading releases by barcode<a class="headerlink" href="#loading-releases-by-barcode" title="Permalink to this headline">¶</a></h2>
+<p>You can use your phone as a barcode scanner to load the metadata for your physical
+media:</p>
+<ol class="arabic">
+<li><p>On the main screen of the Android app tap on “Scan”.</p>
+<a class="reference internal image-reference" href="../_images/android-main.png"><img alt="MusicBrainz for Android main screen" src="../_images/android-main.png" style="width: 50%;" /></a>
+</li>
+<li><p>Scan the barcode of a CD, LP or other music media.</p>
+<a class="reference internal image-reference" href="../_images/android-scan.png"><img alt="MusicBrainz for Android barcode scanner" src="../_images/android-scan.png" style="width: 50%;" /></a>
+</li>
+<li><p>If a release with the scanned barcode is found on MusicBrainz the app
+will load and show the release details.</p>
+<a class="reference internal image-reference" href="../_images/android-release-details.png"><img alt="MusicBrainz for Android release details" src="../_images/android-release-details.png" style="width: 50%;" /></a>
+</li>
+<li><p>Tap on “Send to Picard”.  If everything was configured correctly the release
+will be loaded into Picard running on your computer.</p>
+<img alt="Release loaded into Picard" src="../_images/picard-result.png" />
+</li>
+</ol>
+<p>You can now continue tagging your local files by matching them to the loaded
+tracks as described in <a class="reference internal" href="../usage/match.html#ref-match-files"><span class="std std-ref">Matching Files to Tracks</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you only want to use the barcode scanner functionality to find and load
+releases for your physical CDs, LPs or other music media, you can also use
+the <a class="reference external" href="https://github.com/phw/PicardBarcodeScanner">Picard Barcode Scanner</a>
+app.  The functionality and setup is similar to what is described above,
+but the app is focused on the barcode scanning and sending the results
+to Picard.</p>
+</div>
+</div>
+<div class="section" id="loading-releases-by-search">
+<h2>Loading releases by search<a class="headerlink" href="#loading-releases-by-search" title="Permalink to this headline">¶</a></h2>
+<p>Instead of searching by barcode you can also do a text search on your phone:</p>
+<ol class="arabic">
+<li><p>On the main screen of the Android app tap on “Search”.</p>
+<a class="reference internal image-reference" href="../_images/android-main.png"><img alt="MusicBrainz for Android main screen" src="../_images/android-main.png" style="width: 50%;" /></a>
+</li>
+<li><p>On the search page select “Release” and enter a search term, e.g. an
+album title or artist name.</p>
+<a class="reference internal image-reference" href="../_images/android-search.png"><img alt="MusicBrainz for Android release search" src="../_images/android-search.png" style="width: 50%;" /></a>
+</li>
+<li><p>The search results will show a list of matching releases.  Tap on one
+to show the release details.</p>
+<a class="reference internal image-reference" href="../_images/android-release-details.png"><img alt="MusicBrainz for Android release details" src="../_images/android-release-details.png" style="width: 50%;" /></a>
+</li>
+<li><p>Tap on “Send to Picard”.  If everything was configured correctly the release
+will be loaded into Picard running on your computer.</p>
+<img alt="Release loaded into Picard" src="../_images/picard-result.png" />
+</li>
+</ol>
+</div>
+<div class="section" id="loading-releases-from-the-tagger">
+<h2>Loading releases from the Tagger<a class="headerlink" href="#loading-releases-from-the-tagger" title="Permalink to this headline">¶</a></h2>
+<p>Instead of finding a release by barcode or a search to send to Picard, you can also send a release from a tagged audio file currently stored on your device:</p>
+<ol class="arabic">
+<li><p>On the main screen of the Android app tap on “Tagger”.</p>
+<a class="reference internal image-reference" href="../_images/android-main.png"><img alt="MusicBrainz for Android main screen" src="../_images/android-main.png" style="width: 50%;" /></a>
+</li>
+<li><p>On the tagger, select your release and tap the MusicBrainz icon near the bottom of the screen.</p>
+<a class="reference internal image-reference" href="../_images/android-tagger.png"><img alt="MusicBrainz for Android tagger" src="../_images/android-tagger.png" style="width: 50%;" /></a>
+</li>
+<li><p>If everything was configured correctly, the release
+will be loaded into Picard running on your computer.</p>
+<img alt="Release loaded into Picard" src="../_images/picard-result.png" />
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../appendices/plugins_api.html" class="btn btn-neutral float-right" title="Appendix A: Plugins API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="write_plugin.html" class="btn btn-neutral float-left" title="Writing a Plugin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'tutorials/android_app');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/tutorials/android_app.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/tutorials/android_app.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.6_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
