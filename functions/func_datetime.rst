@@ -15,6 +15,11 @@ the date/time will be returned in the form '2020-02-05 14:26:32'.  Note that any
 characters such as '%', '$', '(', ')' and '\' will need to be escaped as shown in the
 examples below.
 
+**Note:** Platform-specific formatting codes should be avoided to help ensure the portability
+of scripts across the different platforms.  These codes include: remove zero-padding (e.g.
+``%-d`` and ``%-m`` on Linux or OSX, and their equivalent ``%#d`` and ``%#m`` on Windows);
+element length specifiers (e.g. ``%3Y``); and hanging '%' at the end of the format string.
+
 
 **Example:**
 
