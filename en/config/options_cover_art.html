@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cover Art Options &mdash; MusicBrainz Picard v2.3.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="File Naming Options" href="options_filenaming.html" />
+    <link rel="prev" title="Tag Options" href="options_tags.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../download.html">Download &amp; Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../screen_main.html">Main Screen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#screen-setup">Screen Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#action-options">Action Options</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="configuration.html#option-settings">Option Settings</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="options_general.html">General Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_metadata.html">Metadata Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_tags.html">Tag Options</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Cover Art Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#location">Location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cover-art-providers">Cover Art Providers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cover-art-archive">Cover Art Archive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#local-files">Local Files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="options_filenaming.html">File Naming Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Fingerprinting Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cdlookup.html">CD Lookup Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_plugins.html">Plugins Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_ui.html">User Interface Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Scripting Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_advanced.html">Advanced Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_about.html">About</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting.html">Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="configuration.html">Configuration</a> &raquo;</li>
+        
+      <li>Cover Art Options</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/config/options_cover_art.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cover-art-options">
+<h1>Cover Art Options<a class="headerlink" href="#cover-art-options" title="Permalink to this headline">¶</a></h1>
+<p>Note that you must enable <span class="menuselection">“Options ‣ Metadata ‣ Use release relationships”</span> for Picard to be able
+to download cover art from MusicBrainz cover art relationships.</p>
+<div class="section" id="location">
+<h2>Location<a class="headerlink" href="#location" title="Permalink to this headline">¶</a></h2>
+<p><strong>Embed cover images into tags</strong></p>
+<blockquote>
+<div><p>Enables images to be embedded directly into your music files. While this will use more storage space
+than storing it as a separate image file in the same directory, some music players will only display
+embedded images and don’t find the separate files.</p>
+</div></blockquote>
+<p><strong>Only embed a front image</strong></p>
+<blockquote>
+<div><p>Embeds only a front image into your music files. Many music players will only display a single embedded
+image, so embedding additional images may not add any functionality.</p>
+</div></blockquote>
+<p id="ref-local-images"><strong>Save cover images as separate files</strong></p>
+<blockquote>
+<div><p>In the file name mask you can use any variable or function from <a class="reference internal" href="../variables/variables.html"><span class="doc">Picard Tags</span></a>
+and <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">Picard Scripting Functions</span></a>. The mask should not contain a file extension; this is
+added automatically based on the actual image type. The default value is “cover”. If you change this to
+“folder”, Windows will use it to preview the containing directory.</p>
+<p>In addition to scripting variables already available for a track you can use the following cover art
+specific variables:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">coverart_maintype</span></code>: The primary type (e.g.: front, medium, booklet). For front images this will always be “front”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">coverart_types</span></code>: Full list of all types assigned to this image.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">coverart_comment</span></code>: The cover art comment.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Overwrite the file if it already exists</strong></p>
+<blockquote>
+<div><p>Check this to replace existing files. This is especially recommended if trying to write “folder” previews
+for Windows.</p>
+</div></blockquote>
+</div>
+<div class="section" id="cover-art-providers">
+<h2>Cover Art Providers<a class="headerlink" href="#cover-art-providers" title="Permalink to this headline">¶</a></h2>
+<p>Picard can download Cover Art from a number of sources, and you can choose which sources you want Picard to
+use. You can activate more than one provider and choose the order in which the providers
+are queried. Picard will try the providers from top to bottom until an image is returned.</p>
+<p><strong>Cover Art Archive</strong></p>
+<blockquote>
+<div><p>The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in cooperation with the <a class="reference external" href="https://archive.org">Internet
+Archive</a>. The Cover Art Archive is the most comprehensive database of cover art
+(e.g.: front covers, back covers, booklets, CDs).</p>
+</div></blockquote>
+<p><strong>CAA Release Group</strong></p>
+<blockquote>
+<div><p>This provider uses the Cover Art Archive cover image assigned to the release group. This is usually the
+image that best describes the release group as a whole or the image with the best visual quality, but is
+not necessarily the exact cover of the release you are tagging. This provider is a good choice if you
+care more about visual quality then having an exact representation of your release. It is also a good
+fallback for the Cover Art Archive provider.</p>
+</div></blockquote>
+<p><strong>Sites on the whitelist</strong></p>
+<blockquote>
+<div><p>This will use images provided from whitelisted sites. See <a class="reference external" href="https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist">Cover art whitelist</a> in the Style Guide
+for more information.</p>
+<p>Note: CD Baby and other whitelist sites are no longer being used by MusicBrainz for new Cover Art.</p>
+</div></blockquote>
+<p><strong>Local Files</strong></p>
+<blockquote>
+<div><p>Load cover art from local files. The file names to load can be configured in the <a class="reference internal" href="#ref-local-files"><span class="std std-ref">Local Files</span></a> provider options.</p>
+</div></blockquote>
+<p>In addition to the built-in cover art providers described above, additional cover art providers can be installed as <a class="reference external" href="https://picard.musicbrainz.org/plugins/">plugins</a>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Amazon</strong>: Amazon often has cover art when other sites don’t, however while this art is almost always for the correct
+Artist and Album, it may not be the absolute correct cover art for the specific Release with which you have tagged your music.
+<em>Note: The Amazon cover art provider was built-in in Picard 2.1.3 and earlier versions. For later versions it needs to be
+installed as a separate plugin.</em></p></li>
+<li><p><strong>fanart.tv</strong>: Uses cover art from <a class="reference external" href="https://fanart.tv/">fanart.tv</a>, which focuses on cover art with high visual quality.
+This provider provides cover art representative for the release group and not the individual release.</p></li>
+<li><p><strong>TheAudioDB</strong>: Uses cover art from <a class="reference external" href="https://www.theaudiodb.com/">TheAudioDB</a>, which focuses on cover art with high visual
+quality. This provider provides cover art representative for the release group and not the individual release.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="cover-art-archive">
+<h2>Cover Art Archive<a class="headerlink" href="#cover-art-archive" title="Permalink to this headline">¶</a></h2>
+<p>In this section you can decide which types of cover art you would like to download from the Cover Art Archive,
+and what quality (size) you want to download. Obviously, the better the quality, the larger the size of the files.</p>
+<p><strong>Download Types</strong></p>
+<blockquote>
+<div><p>When selecting the cover art image types, you can select the types to both include and exclude from the download list.
+CAA images with an image type found in the “Include” list will be downloaded and used unless they also have an image type
+found in the “Exclude” list. Images with types found in the “Exclude” list will never be used. Image types not appearing
+in either the “Include” or “Exclude” lists will not be considered when determining whether or not to download and use a
+CAA image.</p>
+<p>Most music players will display only one piece of cover art for the album, and most people select Front (cover) for that.</p>
+</div></blockquote>
+<p><strong>Image Size</strong></p>
+<blockquote>
+<div><p>This identifies what size of image to download from the CAA.  The options are 250px, 500px, 1200px amd full size.  The
+fixed sizes are generated automatically from the full size image, provided that it is greater than or equal to the fixed
+size being generated.  The generated images are square and padded as required if the original image is not square.</p>
+</div></blockquote>
+<p><strong>Save only one front image</strong></p>
+<blockquote>
+<div><p>This tells Picard to only save the first “front” image to a separate file with the release.  If left unchecked, all “front”
+images will be saved as separate files.</p>
+</div></blockquote>
+<p><strong>Download only approved images</strong></p>
+<blockquote>
+<div><p>When checked, Picard will only download images that have been approved (i.e.: the edit to add the image has been accepted
+and applied).  To allow using images from pending edits, leave this option unchecked.</p>
+</div></blockquote>
+<p><strong>Use the first image type as the filename</strong></p>
+<blockquote>
+<div><p>When checked, Picard will use the type of the first image retrieved as the filename when saving all images.  If left
+unchecked, each file will be named according to its image type.</p>
+<p>Note that this will not change the name used for “front” images that has been specified in the <a class="reference internal" href="#ref-local-images"><span class="std std-ref">Save cover images</span></a> section of the general <span class="menuselection">“Cover Art Options”</span>.</p>
+</div></blockquote>
+<p>Since Picard 1.3, you can also decide whether or not to use the image from the release group (if any) if no front image is
+found for the release. In this case, the cover may not match the exact release you are tagging (eg.: a 1979 vinyl front cover
+may be used in place of the Deluxe 2010 CD reissue).</p>
+</div>
+<div class="section" id="local-files">
+<span id="ref-local-files"></span><h2>Local Files<a class="headerlink" href="#local-files" title="Permalink to this headline">¶</a></h2>
+<p>In this section you can configure the file names to be used by the Local Files cover art provider. The file names are defined
+using a regular expression. The default is to load files with the name “cover”, “folder” or “albumart” and the file extension
+“jpg”, “png”, “gif” or “tiff” (e.g.: “folder.jpg” or “cover.png”).</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="options_filenaming.html" class="btn btn-neutral float-right" title="File Naming Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="options_tags.html" class="btn btn-neutral float-left" title="Tag Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, MetaBrainz Foundation
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Select Language</dt>
+        <dd><a href="../../en/config/options_cover_art.html" class="__ptNoRemap">English</a></dd>
+<!--
+        <dd><a href="../../de/config/options_cover_art.html" class="__ptNoRemap">Deutsche</a></dd>
+        <dd><a href="../../fr/config/options_cover_art.html" class="__ptNoRemap">Française</a></dd>
+        <dd><a href="../../es/config/options_cover_art.html" class="__ptNoRemap">Española</a></dd>
+-->
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+<!--
+        <dd><a href="../../MusicBrainz_Picard[en].pdf" target="_blank" class="__ptNoRemap">PDF Documentation</a></dd>
+-->
+        <dd><a href="../../MusicBrainz_Picard_HTML[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

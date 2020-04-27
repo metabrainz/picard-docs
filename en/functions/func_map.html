@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>$map &mdash; MusicBrainz Picard v2.3.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="$performer" href="func_performer.html" />
+    <link rel="prev" title="$lenmulti" href="func_lenmulti.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../download.html">Download &amp; Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting.html">Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="list_by_type.html">Scripting Functions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#assignment-functions">Assignment Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#text-functions">Text Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="list_by_type.html#multi-value-functions">Multi-Value Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="func_getmulti.html">$getmulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_join.html">$join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_lenmulti.html">$lenmulti</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">$map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_performer.html">$performer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_reversemulti.html">$reversemulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_slice.html">$slice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_sortmulti.html">$sortmulti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#mathematical-functions">Mathematical Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#conditional-functions">Conditional Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#information-functions">Information Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#loop-functions">Loop Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#miscellaneous-functions">Miscellaneous Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="list_by_type.html">Scripting Functions</a> &raquo;</li>
+        
+      <li>$map</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/functions/func_map.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="map">
+<h1>$map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Usage: <strong>$map(name,code[,separator])</strong></div>
+<div class="line">Category: multi-value</div>
+<div class="line">Implemented: Picard 2.3</div>
+</div>
+<p><strong>Description:</strong></p>
+<p>Iterates over each element found in the multi-value variable <code class="docutils literal notranslate"><span class="pre">name</span></code> and updates the value
+of the element to the value returned by <code class="docutils literal notranslate"><span class="pre">code</span></code>, returning the updated multi-value variable.
+A literal value representing a multi-value can be substituted for <code class="docutils literal notranslate"><span class="pre">name</span></code>, using the
+<code class="docutils literal notranslate"><span class="pre">separator</span></code> (or a semicolon followed by a space “; ” if not passed) to coerce the value
+into a proper multi-valued variable.</p>
+<p>For each loop, the element value is first stored in the variable <code class="docutils literal notranslate"><span class="pre">_loop_value</span></code> and the count
+is stored in the variable <code class="docutils literal notranslate"><span class="pre">_loop_count</span></code>. This allows the element or count value to be
+accessed within the code script.</p>
+<p>Note that you cannot save the <code class="docutils literal notranslate"><span class="pre">code</span></code> to a variable and then pass the variable to the function
+as <code class="docutils literal notranslate"><span class="pre">%code%</span></code> because it will be evaluated when it is assigned to the variable rather than
+during the loop.</p>
+<p><strong>Example:</strong></p>
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,First:A; Second:B)
+$map(%foo%,$upper(%_loop_count%=%_loop_value%))    ==&gt;  &quot;1=FIRST:A; SECOND:B&quot;
+$map(%foo%,$upper(%_loop_count%=%_loop_value%),:)  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
+
+$setmulti(bar,First:A; Second:B)
+$map(%bar%,$upper(%_loop_count%=%_loop_value%))    ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
+$map(%bar%,$upper(%_loop_count%=%_loop_value%),:)  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
+
+$map(First:A; Second:B,
+    $upper(%_loop_count%=%_loop_value%))           ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
+
+$map(First:A; Second:B,
+    $upper(%_loop_count%=%_loop_value%),:)         ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="func_performer.html" class="btn btn-neutral float-right" title="$performer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="func_lenmulti.html" class="btn btn-neutral float-left" title="$lenmulti" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, MetaBrainz Foundation
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Select Language</dt>
+        <dd><a href="../../en/functions/func_map.html" class="__ptNoRemap">English</a></dd>
+<!--
+        <dd><a href="../../de/functions/func_map.html" class="__ptNoRemap">Deutsche</a></dd>
+        <dd><a href="../../fr/functions/func_map.html" class="__ptNoRemap">Française</a></dd>
+        <dd><a href="../../es/functions/func_map.html" class="__ptNoRemap">Española</a></dd>
+-->
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+<!--
+        <dd><a href="../../MusicBrainz_Picard[en].pdf" target="_blank" class="__ptNoRemap">PDF Documentation</a></dd>
+-->
+        <dd><a href="../../MusicBrainz_Picard_HTML[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
