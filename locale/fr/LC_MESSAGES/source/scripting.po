@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, MetaBrainz Foundation
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-27 22:50+0100\n"
+"PO-Revision-Date: 2020-03-20 12:10-0600\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/scripting.rst:11
+msgid "Scripting"
+msgstr "Scripting"
+
+#: ../../source/scripting.rst:14
+msgid "Syntax"
+msgstr "Syntaxe"
+
+#: ../../source/scripting.rst:16
+msgid ""
+"The syntax is derived from Foobar2000's titleformat. There are three base"
+" elements: text, variable and function. Variables consist of alphanumeric"
+" characters enclosed in percent signs (e.g. ``%artist%``). Functions "
+"start with a dollar sign and end with an argument list enclosed in "
+"parentheses (e.g. ``$lower(...)``)."
+msgstr ""
+"La syntaxe est dérivée de Foobar2000's titleformat. Il y a trois éléments"
+" de base: texte, variable et fonction. Les variables sont constituées de "
+"caractères alphanumériques entourés de signes de pourcentage (e.g. "
+"``%artist%``). Les fonctions commencent par un signe dollar et se "
+"terminent par une liste d'arguments entre parenthèses (e.g. "
+"``$lower(...)``)."
+
+#: ../../source/scripting.rst:21
+msgid ""
+"To use parentheses or commas as-is inside a function call, you must "
+"escape them with a backslash."
+msgstr ""
+"Pour utiliser des parenthèses ou des virgules telles quelles dans un "
+"appel de fonction, vous devez les échapper avec une barre oblique "
+"inverse."
+
+#: ../../source/scripting.rst:25
+msgid "Metadata Variables"
+msgstr "Variables de métadonnées"
+
+#: ../../source/scripting.rst:27
+msgid ""
+"See :doc:`variables/variables` for the list of standard variables "
+"provided by Picard."
+msgstr ""
+"Voir :doc:`variables/variables` pour la liste des variables standard "
+"fournies par Picard."
+
+#: ../../source/scripting.rst:29
+msgid ""
+"Picard's standard variables can be either simple variables containing a "
+"single text string, or multi-value variables containing multiple text "
+"strings. In scripts, multi-value variables are automatically converted to"
+" a single text string by joining the values with a semicolon \";\", "
+"except when used with special multi-value functions."
+msgstr ""
+"Les variables standard de Picard peuvent être soit des variables simples "
+"contenant une seule chaîne de texte, soit des variables à valeurs "
+"multiples contenant plusieurs chaînes de texte. Dans les scripts, les "
+"variables à valeurs multiples sont automatiquement converties en une "
+"seule chaîne de texte en joignant les valeurs par un point-virgule ';', "
+"sauf lorsqu'il est utilisé avec des fonctions spéciales à valeurs "
+"multiples."
+
+#: ../../source/scripting.rst:35
+msgid "Scripting Functions"
+msgstr "Fonctions de script"
+
+#: ../../source/scripting.rst:37
+msgid ""
+"The full list of available scripting functions is available, either "
+":doc:`sorted alphabetically <functions/_list_by_name>` or :doc:`grouped "
+"by function type <functions/_list_by_type>`."
+msgstr ""
+"La liste complète des fonctions de script disponibles est disponible, "
+"soit :doc:`trié par ordre alphabétique <functions/_list_by_name>` ou "
+":doc:`regroupés par type de fonction <functions/_list_by_type>`."
+
+#~ msgid ""
+#~ "This page describes the simple scripting"
+#~ " language implemented in MusicBrainz "
+#~ "Picard."
+#~ msgstr ""
+#~ "Cette page décrit le langage de "
+#~ "script simple implémenté dans MusicBrainz "
+#~ "Picard."
+

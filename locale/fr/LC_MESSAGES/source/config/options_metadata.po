@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, MetaBrainz Foundation
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-27 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/config/options_metadata.rst:11
+msgid "Metadata Options"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:13
+msgid "**Translate artist names to this locale where possible**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:15
+msgid ""
+"When checked, Picard will see whether an artist has an alias for the "
+"selected locale. If it does, Picard will use that alias instead of the "
+"artist name when tagging. When 'English' is the selected locale, the "
+"artist sort name (which is, by Style Guideline, stored in Latin script) "
+"is used as a fallback if there is no English alias."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:19
+msgid "**Use standardized artist names**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:21
+msgid ""
+"Check to only use standard Artist names, rather than Artist Credits which"
+" may differ slightly across tracks and releases."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:23
+msgid ""
+"Note: If the 'Translate artist names' option above is also checked, it "
+"will override this option if a suitable alias is found."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:25
+msgid "**Use standardized instrument and vocal credits**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:27
+msgid ""
+"Check to only use standard names for instruments and vocals in performer "
+"relationships. Uncheck to use the instruments / vocals as credited in the"
+" relationship."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:30
+msgid "**Convert Unicode punctuation characters to ASCII**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:32
+msgid ""
+"Converts Unicode punctuation characters in MusicBrainz data to ASCII for "
+"consistent use of punctuation in tags. For example, right single "
+"quotation marks are converted to ASCII apostrophes ('), and horizontal "
+"ellipses are converted to three full stops (...)."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:36
+msgid "**Use release relationships**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:38
+msgid ""
+"Check to retrieve and write release-level relationships (e.g.: URLs, "
+"composer, lyricist, performer, conductor, or DJ mixer) to your files. You"
+" must have this enabled to use Picard to retrieve cover art."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:41
+msgid "**Use track relationships**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:43
+msgid ""
+"Check to write track-level relationships (e.g.: composer, lyricist, "
+"performer, or remixer) to your files."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:45
+msgid "**Various artists**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:47
+msgid "Choose how you want the 'Various Artists' artist spelled."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:49
+msgid "**Non-album tracks**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:51
+msgid "Choose how you want 'non-album tracks' to be grouped."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:55
+msgid "Preferred Releases"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:57
+msgid "**Preferred release types**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:59
+msgid ""
+"Adjust the sliders for various release types to tweak how likely Picard "
+"is to match a file or cluster to releases of various types. For example, "
+"you can use this to decrease the likelihood of Picard matching a file or "
+"album to a Compilation or Live version."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:63
+msgid "**Preferred release countries**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:65
+msgid ""
+"Add one or more countries into the list to make Picard prefer matching "
+"clusters / files to releases from the chosen countries. This list is also"
+" used to priorize files in the 'Other Releases' context menu."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:68
+msgid "**Preferred release formats**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:70
+msgid ""
+"Add one or more formats into the list to make Picard prefer matching "
+"clusters / files to releases of the specified format. This list is also "
+"used to priorize files in the 'Other Releases' context menu."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:75
+msgid "Genres"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:77
+msgid "**Use genres from MusicBrainz**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:79
+msgid "Use genres provided by MusicBrainz and save them to the genre tag."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:81
+msgid ""
+"**Fall back on album's artists genres if no genres are found for the "
+"release or release group**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:83
+msgid ""
+"If there is no genre set for the release or release group on MusicBrainz "
+"use the genre of the album artist instead."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:85
+msgid "**Only use my genres**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:87
+msgid ""
+"Check to only write genres you personally have submitted to MusicBrainz. "
+"You'll need to set your username and password to use this feature."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:90
+msgid "**Use folksonomy tags as genres**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:92
+msgid ""
+"Check to use all folksonomy tags to set the genre. Otherwise only the "
+"tags considered by MusicBrainz to be proper genres will be used."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:95
+msgid "**Minimal genre usage**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:97
+msgid ""
+"Choose how popular the genre must be before it is written by Picard. "
+"Default: 90%. Lowering the value here will lead to more, but possibly "
+"less relevant, genres in your files."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:100
+msgid "**Maximum number of genres**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:102
+msgid ""
+"Choose how many genres to use. Default: 5. If you only want a single "
+"genre, set this to 1."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:104
+msgid "**Join multiple genres with**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:106
+msgid "Select which character should be used to separate multiple genres."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:108
+msgid "**Genres or folksonomy tags to include or exclude**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:110
+msgid ""
+"One expression per line, case-insensitive. You can use the 'Playground' "
+"text field to enter some genres and test the rules you have setup. Genres"
+" that will be excluded will be marked red, included genres will be marked"
+" green."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:113
+msgid ""
+"**Comments**: Lines not starting with '-' or '+' are ignored. (e.g.: "
+"``#comment``, ``!comment`` or ``comment``)"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:115
+msgid ""
+"**Strict filtering**: Exclude exact word by prefixing it with '-' (e.g.: "
+"``-word``).  Include exact word, even if another rule would exclude it, "
+"by prefixing it with '+' (e.g.: ``+word``)."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:118
+msgid ""
+"**Wildcard filtering**: Exclude all genres ending with 'word' (e.g.: "
+"``-*word``).  Include all genres starting with 'word' (e.g.: ``+word*``)."
+"  Exclude all genres starting with 'w' and ending with 'rd' (e.g.: "
+"``-w*rd``)."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:121
+msgid ""
+"**Regular expressions filtering (Python 're' syntax)**: Exclude genres "
+"starting with 'w' followed by any character, then 'r' followed by at "
+"least one 'd' (e.g.: ``-/^w.rd+/``)."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:126
+msgid "Ratings"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:128
+msgid "**Enable track ratings**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:130
+msgid "Check to write track ratings to your files."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:132
+msgid "**E-mail**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:134
+msgid ""
+"The email address used when submitting ratings to MusicBrainz.  This "
+"identifies the user that provided the rating."
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:136
+msgid "**Submit ratings to MusicBrainz**"
+msgstr ""
+
+#: ../../source/config/options_metadata.rst:138
+msgid ""
+"Check to submit ratings to MusicBrainz. The tracks will be rated with "
+"your account."
+msgstr ""
+

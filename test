@@ -1,0 +1,19 @@
+#!/bin/bash
+SAVED_SPHINXOPTS=$SPHINXOPTS
+# echo "'$SPHINXOPTS'"
+for lang in en de es fr
+do
+SPHINXOPTS="-D language=$lang"
+# echo "'$SPHINXOPTS'  '${lang}'  '$lang'"
+if [ "$lang" != "en" ]; then
+# echo "$lang is not en"
+sphinx-intl update -p _build/gettext -l $lang
+fi
+rm -f -r _build/latex
+make latexpdf
+cp _build/latex/*.pdf ./MusicBrainz_Picard_User_Guide_[$lang].pdf
+done
+SPHINXOPTS=$SAVED_SPHINXOPTS
+SAVED_SPHINXOPTS=
+# echo "'$SPHINXOPTS'"
+exit 0
