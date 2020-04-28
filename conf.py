@@ -93,7 +93,7 @@ my_year = str(datetime.datetime.now().year)
 my_notice = r'''\vspace*{\fill}
 Copyright © ''' + my_year + r''' Bob Swift (rdswift)\\
 Copyright © ''' + my_year + r''' MetaBrainz Foundation\\
-# \\
+\\
 Permission is granted to copy, distribute and/or modify this document under the
 terms of the GNU Free Documentation License, Version 1.3 or any later version
 published by the Free Software Foundation; with no Invariant Sections, no Front-
