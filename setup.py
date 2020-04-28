@@ -47,6 +47,7 @@ SPHINX_BUILD = 'sphinx-build'
 SPHINX_INTL = 'sphinx-intl'
 SPHINX_BUILD_DIR = '_build'
 SPHINX_SOURCE_DIR = 'source'
+SPHINX_LOCALE_DIR = 'locale'
 SPHINX_BUILD_TIMEOUT = 300
 OUTPUT_DIR = 'docs'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
@@ -480,6 +481,7 @@ def remove_file(file_path):
 
 
 def build_html(language=''):
+    check_sphinx_build()
     if not (language and language in LANGUAGES):
         language = DEFAULT_LANGUAGE
     if language == DEFAULT_LANGUAGE:
@@ -546,6 +548,7 @@ def build_html(language=''):
 
 
 def build_pdf(language=''):
+    check_sphinx_build()
     if not (language and language in LANGUAGES):
         language = DEFAULT_LANGUAGE
     if language == DEFAULT_LANGUAGE:
@@ -576,6 +579,27 @@ def build_pdf(language=''):
     except Exception as ex:
         print('Error copying PDF file.  Error: {0}'.format(ex))
         exit_with_code(1)
+
+
+def build_pot():
+    check_sphinx_build()
+    command = ' '.join([SPHINX_BUILD, '-M', 'gettext', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_LOCALE_DIR + '"', '-c', '.', '-D', 'language={0}'.format(DEFAULT_LANGUAGE)])
+    print('\nExtracting POT files with command: {0}\n'.format(command))
+    exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+    if exit_code:
+        exit_with_code(exit_code)
+
+    check_sphinx_intl()
+    print('\nUpdating PO files for other languages.')
+    gettext_dir = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
+    for lang in LANGUAGE_LIST.keys():
+        if lang != DEFAULT_LANGUAGE:
+            print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
+            command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + gettext_dir + '"', '-l', lang])
+            # print('\nUpdating PO files with command: {0}\n'.format(command))
+            exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+            if exit_code:
+                exit_with_code(exit_code)
 
 
 def list_languages():
@@ -633,34 +657,15 @@ def main():
 
     elif 'build_target' in vars(args):
         if args.build_target == 'html':
-            check_sphinx_build()
             for lang in process_languages:
                 build_html(language=lang)
 
         elif args.build_target == 'pdf':
-            check_sphinx_build()
             for lang in process_languages:
                 build_pdf(language=lang)
 
         elif args.build_target == 'pot':
-            check_sphinx_build()
-            command = ' '.join([SPHINX_BUILD, '-M', 'gettext', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', '-D', 'language={0}'.format(DEFAULT_LANGUAGE)])
-            print('\nExtracting POT files with command: {0}\n'.format(command))
-            exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
-            if exit_code:
-                exit_with_code(exit_code)
-
-            check_sphinx_intl()
-            print('\nUpdating PO files for other languages.')
-            gettext_dir = os.path.join(SPHINX_BUILD_DIR, 'gettext')
-            for lang in LANGUAGE_LIST.keys():
-                if lang != DEFAULT_LANGUAGE:
-                    print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-                    command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + gettext_dir + '"', '-l', lang])
-                    # print('\nUpdating PO files with command: {0}\n'.format(command))
-                    exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
-                    if exit_code:
-                        exit_with_code(exit_code)
+            build_pot()
 
         elif args.build_target == 'clean':
             for target, target_dir in [('html', 'html'), ('pdf', 'latex')]:

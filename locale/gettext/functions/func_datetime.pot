@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, MetaBrainz Foundation
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-28 14:16-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/functions/func_datetime.rst:10
+msgid "$datetime"
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:12
+msgid "Usage: **$datetime([format])**"
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:13
+msgid "Category: information"
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:14
+msgid "Implemented: Picard 2.3"
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:16
+msgid "**Description:**"
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:18
+msgid "Returns the current date and time in the specified format, which is based on the standard Python ``strftime`` `format codes <https://strftime.org>`_. If no format is specified the date and time will be returned in the form '2020-02-05 14:26:32'.  Note that any special characters such as '%', '$', '(', ')' and '\\\\' will need to be escaped as shown in the examples below."
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:24
+msgid "**Note:** Platform-specific formatting codes should be avoided to help ensure the portability of scripts across the different platforms.  These codes include: remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or macOS, and their equivalent ``%#d`` and ``%#m`` on Windows); element length specifiers (e.g.: ``%3Y``); and hanging '%' at the end of the format string."
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:30
+msgid "**Example:**"
+msgstr ""
+
+#: ../../source/functions/func_datetime.rst:32
+msgid "The following statements will return the values indicated::"
+msgstr ""

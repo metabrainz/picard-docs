@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, MetaBrainz Foundation
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-28 14:16-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/functions/func_firstwords.rst:10
+msgid "$firstwords"
+msgstr ""
+
+#: ../../source/functions/func_firstwords.rst:12
+msgid "Usage: **$firstwords(text,length)**"
+msgstr ""
+
+#: ../../source/functions/func_firstwords.rst:13
+msgid "Category: text"
+msgstr ""
+
+#: ../../source/functions/func_firstwords.rst:14
+msgid "Implemented: Picard 0.12"
+msgstr ""
+
+#: ../../source/functions/func_firstwords.rst:16
+msgid "**Description:**"
+msgstr ""
+
+#: ../../source/functions/func_firstwords.rst:18
+msgid "Truncate ``text`` to ``length``, only returning the complete words from ``text`` which fit within ``length`` characters.  If ``length`` is less than 0, then the value used is the number of characters in ``text`` plus ``length`` (e.g.: ``$firstwords(one two three,-3)`` is the same as ``$firstwords(one two three,10)``).  If ``length`` is missing or a negative number greater than the number of characters in ``text``, the function will return an empty string."
+msgstr ""
+
+#: ../../source/functions/func_firstwords.rst:25
+msgid "**Example:**"
+msgstr ""
+
+#: ../../source/functions/func_firstwords.rst:27
+msgid "The following statements will return the values indicated::"
+msgstr ""
