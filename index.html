@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MusicBrainz Picard Documentation</title>
+   <script>
+      const supported_languages = ['en'];
+      var short_language = "";
+      function getDefaultLanguage() {
+         let lg = {
+            a: window.navigator.language,
+            b: window.navigator.languages,
+            c: window.navigator.userLanguage,
+            d: window.navigator.browserLanguage,
+            e: window.navigator.systemLanguage
+            };
+         let language =  {
+            detected: lg.a || lg.c || lg.d || lg.e || lg.b[0],
+            available: lg.b || [lg.a] || [lg.c] || [lg.d] || [lg.e]
+         };
+         short_language = language.detected.substring(0, 2);
+         if ( supported_languages.includes(short_language) ) {
+            return short_language;
+         }
+         short_language = "";
+         supported_languages.forEach(languageSub);
+         if (short_language == "") {
+            short_language = "en";
+         };
+         return short_language;
+      };
+      function languageSub(item) {
+         if ((short_language == "") && (supported_languages.includes(item.substring(0, 2)))) {
+            short_language = item.substring(0, 2);
+         }
+      };
+   </script>
+</head>
+<body onload="window.location.replace('/picard-docs/' + getDefaultLanguage() + '/index.html');">
+</body>
+</html>
