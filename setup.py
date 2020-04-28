@@ -278,8 +278,9 @@ def parse_command_line():
 # # ---------------------------------------------------------------------
 
 class LintRST():
-    DIRECTIVES = ['toctree']
-    ROLES = ['doc', 'ref']
+    # Directives and Roles to ignore
+    DIRECTIVES = ['toctree', 'only']
+    ROLES = ['doc', 'ref', 'menuselection']
 
     def __init__(self):
         self.checked_count = 0
