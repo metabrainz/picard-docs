@@ -5,8 +5,9 @@
    <title>MusicBrainz Picard Documentation</title>
    <script>
       const supported_languages = ['en'];
-      var short_language = "";
-      function getDefaultLanguage() {
+      const default_language = 'en';
+      var language_code = "";
+      function getLanguage() {
          let lg = {
             a: window.navigator.language,
             b: window.navigator.languages,
@@ -18,24 +19,37 @@
             detected: lg.a || lg.c || lg.d || lg.e || lg.b[0],
             available: lg.b || [lg.a] || [lg.c] || [lg.d] || [lg.e]
          };
-         short_language = language.detected.substring(0, 2);
-         if ( supported_languages.includes(short_language) ) {
-            return short_language;
+         if ( supported_languages.includes(language.detected) ) {
+            return language.detected;
          }
-         short_language = "";
-         supported_languages.forEach(languageSub);
-         if (short_language == "") {
-            short_language = "en";
+         language_code = "";
+         supported_languages.forEach(languageFull);
+         if (language_code != "") {
+            return language_code;
          };
-         return short_language;
+         if (supported_languages.includes(language.detected.substring(0, 2))) {
+            return language.detected.substring(0, 2);
+         }
+         supported_languages.forEach(languageSub);
+         if (language_code != "") {
+            return language_code;
+         };
+         return default_language;
       };
+
+      function languageFull(item) {
+         if ((language_code == "") && (supported_languages.includes(item))) {
+            language_code = item;
+         }
+      };
+
       function languageSub(item) {
-         if ((short_language == "") && (supported_languages.includes(item.substring(0, 2)))) {
-            short_language = item.substring(0, 2);
+         if ((language_code == "") && (supported_languages.includes(item.substring(0, 2)))) {
+            language_code = item.substring(0, 2);
          }
       };
    </script>
 </head>
-<body onload="window.location.replace('/picard-docs/' + getDefaultLanguage() + '/index.html');">
+<body onload="window.location.replace('/picard-docs/' + getLanguage() + '/index.html');">
 </body>
 </html>
