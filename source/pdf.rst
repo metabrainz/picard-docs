@@ -18,14 +18,6 @@ MusicBrainz Picard
    config/configuration
    variables/variables
 
-..   .. toctree::
-..      :hidden:
-..
-..      variables/tags_basic
-..      variables/tags_advanced
-..      variables/variables_basic
-..      variables/variables_advanced
-
 .. toctree::
 
    scripting
@@ -34,16 +26,6 @@ MusicBrainz Picard
    extending/extending
    examples/examples
    pdf_appendices
-
-
-.. .. toctree::
-..    :caption: Tags & Variables:
-
-..    variables/variables
-..    variables/tags_basic
-..    variables/tags_advanced
-..    variables/variables_basic
-..    variables/variables_advanced
 
 
 .. .. toctree::
