@@ -21,7 +21,13 @@ name: RST Test
 on:
   # Trigger the workflow on push or pull request,
   # but only for the master and development branches
-  [push, pull_request]:
+  push:
+    branches-ignore:
+      - 'gh-pages'
+    paths:
+      - 'source/**.rst'
+      - 'source/**.txt'
+  pull_request:
     branches-ignore:
       - 'gh-pages'
     paths:
