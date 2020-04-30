@@ -6,22 +6,7 @@
 ..  with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
-Using Picard
+Lookup Files
 ============
 
-There are three stages to using Picard to process your audio files:
-
-1. Retrieving album information from MusicBrainz
-
-2. Matching audio files to tracks
-
-3. Saving the updated audio files
-
-These are described in detail in the following sections.
-
-.. toctree::
-   :hidden:
-
-   retrieve
-   match
-   save
+.. include:: retrieve_lookup_steps.txt
