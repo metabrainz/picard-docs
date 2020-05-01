@@ -6,6 +6,7 @@ Python script used to provide development support functions.
 
 import argparse
 import os
+import re
 import shutil
 import sys
 import subprocess
@@ -51,6 +52,100 @@ SPHINX_LOCALE_DIR = 'locale'
 SPHINX_BUILD_TIMEOUT = 300
 OUTPUT_DIR = 'docs'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
+
+#################################################################
+#   Sphinx Directives and Roles to ignore while lint checking   #
+#################################################################
+
+IGNORE_DIRECTIVES = [
+    # Table of Contents
+    'toctree',
+
+    # Paragraph Level Markup
+    'note',
+    'warning',
+    'versionadded',
+    'versionchanged',
+    'deprecated',
+    'seealso',
+    'rubic',
+    'centered',
+    'hlist',
+
+    # Showing Code Examples
+    'highlight',
+    'code-block',
+    'literalinclude',
+
+    # Glossary
+    'glossary',
+
+    #Meta-information Markup
+    'sectionauthor',
+    'codeauthor',
+
+    # Index-generating Markup
+    'index',
+
+    # Including content based on tags
+    'only',
+
+    # Tables
+    'tabularcolumns',
+
+    # Math
+    'math',
+
+    # Grammar production displays
+    'productionlist',
+]
+
+IGNORE_ROLES = [
+    # Cross-referencing
+    'any',
+    'ref',
+    'doc',
+    'download',
+    'numref',
+    'envar',
+    'token',
+    'keyword',
+    'option',
+    'term',
+
+    # Math
+    'math',
+    'eq',
+
+    # Semantic Markup
+    'abbr',
+    'command',
+    'dfn',
+    'file',
+    'guilabel',
+    'kbd',
+    'mailheader',
+    'makevar',
+    'manpage',
+    'menuselection',
+    'mimetype',
+    'newsgroup',
+    'program',
+    'regexp',
+    'samp',
+    'pep',
+    'rfc',
+]
+
+################################################
+#   RE Tests for Sphinx Roles and Directives   #
+################################################
+
+RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
+RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)"\.$')
+
+RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
+RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)"\.$')
 
 
 ##################################################
@@ -279,10 +374,6 @@ def parse_command_line():
 # # ---------------------------------------------------------------------
 
 class LintRST():
-    # Directives and Roles to ignore
-    DIRECTIVES = ['toctree', 'only']
-    ROLES = ['doc', 'ref', 'menuselection']
-
     def __init__(self):
         self.checked_count = 0
         self.warning_count = 0
@@ -303,19 +394,15 @@ class LintRST():
                             if ignore_info:
                                 err_process = False
                             else:
-                                for temp in self.DIRECTIVES:
-                                    if err.message.startswith('No directive entry for "{0}"'.format(temp,)):
-                                        err_process = False
-                                for temp in self.ROLES:
-                                    if err.message.startswith('No role entry for "{0}"'.format(temp,)):
-                                        err_process = False
+                                m = RE_TEST_DIRECTIVE_1.match(err.message)
+                                err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
+                                m = RE_TEST_ROLE_1.match(err.message)
+                                err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
                         if (err.type == 'ERROR' or err.type == 'SEVERE') and err.message.startswith('Unknown'):
-                            for temp in self.DIRECTIVES:
-                                if err.message.endswith('directive type "{0}".'.format(temp,)):
-                                    err_process = False
-                            for temp in self.ROLES:
-                                if err.message.endswith('role "{0}".'.format(temp,)):
-                                    err_process = False
+                            m = RE_TEST_DIRECTIVE_2.match(err.message)
+                            err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
+                            m = RE_TEST_ROLE_2.match(err.message)
+                            err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
                         if err_process:
                             err_processed = True
                             # print('\n   [{0}] {1} Line {2}: {3}'.format(err.type, err.source, err.line, err.message), end='', flush=True)
