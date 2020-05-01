@@ -24,21 +24,26 @@ PACKAGE_TITLE = 'Picard Docs'
 
 # VENV_LOCATION = os.path.join(os.path.expanduser('~'), '.venv', PACKAGE_NAME)
 
-# Linter Options
-IGNORE_INFO_MESSAGES = False
-FAIL_ON_WARNINGS = False
 
-# Documentation Languages
+########################################
+#   Documentation Languages to Build   #
+########################################
+
 LANGUAGE_LIST = {
     'en': 'English',
-    'fr': 'French',
-    'de': 'German',
-    'es': 'Spanish',
+    # 'fr': 'French',
+    # 'de': 'German',
+    # 'es': 'Spanish',
 }
+
 DEFAULT_LANGUAGE = 'en'
 LANGUAGES = LANGUAGE_LIST.keys()
 
-# Sphinx Constants
+
+########################
+#   Sphinx Constants   #
+########################
+
 # SPHINX_OPTS = os.getenv('SPHINXOPTS', '')
 # SPHINX_BUILD = os.getenv('SPHINXBUILD', 'sphinx-build')
 # SPHINX_BUILD_DIR = os.getenv('SPHINXBUILDDIR', '_build')
@@ -53,6 +58,15 @@ SPHINX_BUILD_TIMEOUT = 300
 OUTPUT_DIR = 'docs'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
 
+
+######################
+#   Linter Options   #
+######################
+
+IGNORE_INFO_MESSAGES = False
+FAIL_ON_WARNINGS = False
+
+
 #################################################################
 #   Sphinx Directives and Roles to ignore while lint checking   #
 #################################################################
@@ -62,27 +76,17 @@ IGNORE_DIRECTIVES = [
     'toctree',
 
     # Paragraph Level Markup
-    'note',
-    'warning',
-    'versionadded',
-    'versionchanged',
-    'deprecated',
-    'seealso',
-    'rubic',
-    'centered',
-    'hlist',
+    'note', 'warning', 'versionadded', 'versionchanged', 'deprecated',
+    'seealso', 'rubic', 'centered', 'hlist',
 
     # Showing Code Examples
-    'highlight',
-    'code-block',
-    'literalinclude',
+    'highlight', 'code-block', 'literalinclude',
 
     # Glossary
     'glossary',
 
     #Meta-information Markup
-    'sectionauthor',
-    'codeauthor',
+    'sectionauthor', 'codeauthor',
 
     # Index-generating Markup
     'index',
@@ -102,39 +106,16 @@ IGNORE_DIRECTIVES = [
 
 IGNORE_ROLES = [
     # Cross-referencing
-    'any',
-    'ref',
-    'doc',
-    'download',
-    'numref',
-    'envar',
-    'token',
-    'keyword',
-    'option',
-    'term',
+    'any', 'ref', 'doc', 'download', 'numref', 'envar', 'token',
+    'keyword', 'option', 'term',
 
     # Math
-    'math',
-    'eq',
+    'math', 'eq',
 
     # Semantic Markup
-    'abbr',
-    'command',
-    'dfn',
-    'file',
-    'guilabel',
-    'kbd',
-    'mailheader',
-    'makevar',
-    'manpage',
-    'menuselection',
-    'mimetype',
-    'newsgroup',
-    'program',
-    'regexp',
-    'samp',
-    'pep',
-    'rfc',
+    'abbr', 'command', 'dfn', 'file', 'guilabel', 'kbd', 'mailheader',
+    'makevar', 'manpage', 'menuselection', 'mimetype', 'newsgroup',
+    'program', 'regexp', 'samp', 'pep', 'rfc',
 ]
 
 ################################################
@@ -225,6 +206,96 @@ Optional Arguments:
   -l LANGUAGE          Specify language for processing
   -h, --help           Show this help message and exit
 """.format(os.path.basename(os.path.realpath(__file__)))
+
+##############################################################################
+
+
+class LintRST():
+    def __init__(self):
+        """Provides an instance of the "restructuredtext-lint" linter.
+        """
+        self.checked_count = 0
+        self.warning_count = 0
+        self.error_count = 0
+        self.info_count = 0
+
+    def check_file(self, file_name, ignore_info=True):
+        """Lint check the specified file, printing the findings to the console.
+
+        Arguments:
+            file_name {str} -- Path and name of the file to check
+
+        Keyword Arguments:
+            ignore_info {bool} -- Determines whether INFO notices should be ignored (default: {True})
+        """
+        print('Checking {0}'.format(file_name), end='', flush=True)
+        self.checked_count += 1
+        if os.path.isfile(file_name):
+            try:
+                err_processed = False
+                errs = restructuredtext_lint.lint_file(file_name)
+                if errs:
+                    for err in errs:
+                        err_process = True
+                        if err.type == 'INFO':
+                            if ignore_info:
+                                err_process = False
+                            else:
+                                m = RE_TEST_DIRECTIVE_1.match(err.message)
+                                err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
+                                m = RE_TEST_ROLE_1.match(err.message)
+                                err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
+                        if (err.type == 'ERROR' or err.type == 'SEVERE') and err.message.startswith('Unknown'):
+                            m = RE_TEST_DIRECTIVE_2.match(err.message)
+                            err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
+                            m = RE_TEST_ROLE_2.match(err.message)
+                            err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
+                        if err_process:
+                            err_processed = True
+                            # print('\n   [{0}] {1} Line {2}: {3}'.format(err.type, err.source, err.line, err.message), end='', flush=True)
+                            print('\n   [{0}] Line {1}: {2}'.format(err.type, err.line, err.message), end='', flush=True)
+                            if err.type == 'WARNING':
+                                self.warning_count += 1
+                            elif err.type == 'INFO':
+                                self.info_count += 1
+                            else:
+                                # Includes 'ERROR' and 'SEVERE'
+                                self.error_count += 1
+                print('' if err_processed else ' [OK]')
+            except Exception as ex:
+                print('\n   [ERROR] Line 0: Error reading file. ({0})'.format(ex,))
+                self.error_count += 1
+        else:
+            print('\n   [ERROR] Line 0: File not found.')
+            self.error_count += 1
+
+    def check(self, root_dir, ignore_info=False, fail_on_warnings=False):
+        """Check all files in the specified directory, including files in subdirectories.
+
+        Arguments:
+            root_dir {str} -- Path to the root directory to check
+
+        Keyword Arguments:
+            ignore_info {bool} -- Determines whether INFO notices should be ignored (default: {False})
+            fail_on_warnings {bool} -- Determines whether warnings will cause the check to return a failed status (default: {False})
+
+        Returns:
+            {int} -- Error code 1 if check failed, otherwise 0.
+        """
+        for dir_name, subdir_list, file_list in os.walk(root_dir):
+            # print('Found directory: %s' % dir_name)
+            for fname in file_list:
+                # print('\t%s' % fname)
+                if str(fname).lower().endswith('.rst'):
+                    self.check_file(os.path.join(dir_name, fname), ignore_info)
+
+        if ignore_info:
+            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.\n'.format(self.checked_count, self.error_count, self.warning_count))
+        else:
+            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.  Info: {3}\n'.format(self.checked_count, self.error_count, self.warning_count, self.info_count))
+
+        err = self.error_count + (self.warning_count if fail_on_warnings else 0)
+        return 1 if err > 0 else 0
 
 
 def show_help():
@@ -358,91 +429,33 @@ def parse_command_line():
     return args
 
 
-# # ---------------------------------------------------------------------
-# # Example code from https://pypi.org/project/restructuredtext-lint/
-# # Load in our dependencies
-# from docutils.parsers.rst.directives import register_directive
-# from sphinx.directives.code import Highlight
-# import restructuredtext_lint
-#
-# # Load our new directive
-# register_directive('highlight', Highlight)
-#
-# # Lint our README
-# errors = restructuredtext_lint.lint_file('docs/sphinx/README.rst')
-# print errors[0].message # Error in "highlight" directive: no content permitted.
-# # ---------------------------------------------------------------------
+def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
+    """Check the RST files in the specified directory and subdirectories.
 
-class LintRST():
-    def __init__(self):
-        self.checked_count = 0
-        self.warning_count = 0
-        self.error_count = 0
-        self.info_count = 0
+    Arguments:
+        root_dir {str} -- Path to the root directory to check
 
-    def check_file(self, file_name, ignore_info=True):
-        print('Checking {0}'.format(file_name), end='', flush=True)
-        self.checked_count += 1
-        if os.path.isfile(file_name):
-            try:
-                err_processed = False
-                errs = restructuredtext_lint.lint_file(file_name)
-                if errs:
-                    for err in errs:
-                        err_process = True
-                        if err.type == 'INFO':
-                            if ignore_info:
-                                err_process = False
-                            else:
-                                m = RE_TEST_DIRECTIVE_1.match(err.message)
-                                err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
-                                m = RE_TEST_ROLE_1.match(err.message)
-                                err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
-                        if (err.type == 'ERROR' or err.type == 'SEVERE') and err.message.startswith('Unknown'):
-                            m = RE_TEST_DIRECTIVE_2.match(err.message)
-                            err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
-                            m = RE_TEST_ROLE_2.match(err.message)
-                            err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
-                        if err_process:
-                            err_processed = True
-                            # print('\n   [{0}] {1} Line {2}: {3}'.format(err.type, err.source, err.line, err.message), end='', flush=True)
-                            print('\n   [{0}] Line {1}: {2}'.format(err.type, err.line, err.message), end='', flush=True)
-                            if err.type == 'WARNING':
-                                self.warning_count += 1
-                            elif err.type == 'INFO':
-                                self.info_count += 1
-                            else:
-                                # Includes 'ERROR' and 'SEVERE'
-                                self.error_count += 1
-                print('' if err_processed else ' [OK]')
-            except Exception as ex:
-                print('\n   [ERROR] Line 0: Error reading file. ({0})'.format(ex,))
-                self.error_count += 1
-        else:
-            print('\n   [ERROR] Line 0: File not found.')
-            self.error_count += 1
+    Keyword Arguments:
+        ignore_info {bool} -- Determines whether INFO notices should be ignored (default: {False})
+        fail_on_warnings {bool} -- Determines whether warnings will cause the check to return a failed status (default: {False})
+    """
+    # # ---------------------------------------------------------------------
+    # # Example code from https://pypi.org/project/restructuredtext-lint/
+    # # Load in our dependencies
+    # from docutils.parsers.rst.directives import register_directive
+    # from sphinx.directives.code import Highlight
+    # import restructuredtext_lint
+    #
+    # # Load our new directive
+    # register_directive('highlight', Highlight)
+    #
+    # # Lint our README
+    # errors = restructuredtext_lint.lint_file('docs/sphinx/README.rst')
+    # print errors[0].message # Error in "highlight" directive: no content permitted.
+    # # ---------------------------------------------------------------------
 
-    def check(self, root_dir, ignore_info=True, fail_on_warnings=False):
-        for dir_name, subdir_list, file_list in os.walk(root_dir):
-            # print('Found directory: %s' % dir_name)
-            for fname in file_list:
-                # print('\t%s' % fname)
-                if str(fname).lower().endswith('.rst'):
-                    self.check_file(os.path.join(dir_name, fname), ignore_info)
-
-        if ignore_info:
-            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.\n'.format(self.checked_count, self.error_count, self.warning_count))
-        else:
-            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.  Info: {3}\n'.format(self.checked_count, self.error_count, self.warning_count, self.info_count))
-
-        err = self.error_count + (self.warning_count if fail_on_warnings else 0)
-        return 1 if err > 0 else 0
-
-
-def run_lint(root_dir, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS):
     print('\nLint Dir: {0}\n'.format(root_dir))
     linter = LintRST()
-    # linter.check_file('index.rst', ignore_info)
     err = linter.check(root_dir, ignore_info, fail_on_warnings)
     exit_code = 1 if err > 0 else 0
     exit_with_code(exit_code)
@@ -489,6 +502,18 @@ def check_sphinx_intl():
 
 
 def clean_directory(dir_path, dir_name):
+    """Removes all files and subdirectories for the specified directory.  If the specified
+    directory does not exist, it will be created.  Includes multiple checks for success to
+    accommodate race condition in Windows.
+
+    Arguments:
+        dir_path {str} -- Path to the directory to clean
+        dir_name {str} -- Name of the directory type (e.g.: 'html')
+
+    Raises:
+        Exception: Unable to clean directory
+        Exception: Unable to create directory
+    """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
             try:
@@ -497,12 +522,12 @@ def clean_directory(dir_path, dir_name):
                     return
                 shutil.rmtree(dir_path)
                 counter = 10
-                # while counter and os.listdir(dir_path):
+                # Multiple checks for success to accommodate race condition in Windows
                 while counter and os.path.exists(dir_path):
                     counter -= 1
                     time.sleep(1)
                 if not counter:
-                    raise Exception('Directory not empty.')
+                    raise Exception('Unable to clean directory.')
             except Exception:
                 print("\nError removing the {0} directory: {1}\n".format(dir_name, dir_path))
                 exit_with_code(1)
@@ -514,27 +539,43 @@ def clean_directory(dir_path, dir_name):
             print('Creating the {0} directory: {1}'.format(dir_name, dir_path))
             os.makedirs(dir_path)
             counter = 10
+            # Multiple checks for success to accommodate race condition in Windows
             while counter and not os.path.exists(dir_path):
                 counter -= 1
                 time.sleep(1)
             if not counter:
-                raise Exception('Directory does not exist.')
+                raise Exception('Unable to create directory.')
         except Exception:
             print("\nError creating the {0} directory: {1}\n".format(dir_name, dir_path))
             exit_with_code(1)
 
 
 def exit_with_code(exit_code=0):
+    """Print and exit with the specified exit code.
+
+    Keyword Arguments:
+        exit_code {int} -- Exit code to use (default: 0)
+    """
     print('Exit Code: {0}\n'.format(exit_code))
     sys.exit(exit_code)
 
 
 def remove_dir(dir_path):
+    """Remove the specified directory.  Includes multiple checks for success to accommodate race
+    condition in Windows.
+
+    Arguments:
+        dir_path {str} -- Path of directory to remove
+
+    Raises:
+        Exception: Directory not removed
+    """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
             try:
                 os.rmdir(dir_path)
                 counter = 10
+                # Multiple checks for success to accommodate race condition in Windows
                 while counter and os.path.exists(dir_path):
                     counter -= 1
                     time.sleep(1)
@@ -549,11 +590,21 @@ def remove_dir(dir_path):
 
 
 def remove_file(file_path):
+    """Removes the specified file.  Includes multiple checks for success to accommodate race
+    condition in Windows.
+
+    Arguments:
+        file_path {str} -- File to remove.
+
+    Raises:
+        Exception: File not removed
+    """
     if os.path.exists(file_path):
         if os.path.isfile(file_path):
             try:
                 os.remove(file_path)
                 counter = 10
+                # Multiple checks for success to accommodate race condition in Windows
                 while counter and os.path.exists(file_path):
                     counter -= 1
                     time.sleep(1)
@@ -568,6 +619,15 @@ def remove_file(file_path):
 
 
 def build_html(language=''):
+    """Build the HTML files.  Includes multiple checks for success to accommodate race
+    condition in Windows.
+
+    Keyword Arguments:
+        language {str} -- Language to use for the build (default: {''})
+
+    Raises:
+        Exception: Files not copied
+    """
     check_sphinx_build()
     if not (language and language in LANGUAGES):
         language = DEFAULT_LANGUAGE
@@ -599,6 +659,7 @@ def build_html(language=''):
         remove_dir(output_dir)
         shutil.copytree(html_dir, output_dir)
         counter = 10
+        # Multiple checks for success to accommodate race condition in Windows
         while counter and not os.path.exists(output_dir):
             counter -= 1
             time.sleep(1)
@@ -618,14 +679,8 @@ def build_html(language=''):
         with zipfile.ZipFile(zip_file, 'w') as myzip:
             os.chdir(output_dir)
             for dirName, subdirList, fileList in os.walk('.'):
-                # if dirName == '.':
-                #     src_dir = ''
-                # else:
-                #     src_dir = dirName[2:] + os.pathsep
                 for fname in fileList:
-                    # z_name = src_dir + fname
                     f_name = os.path.join(dirName, fname)
-                    # myzip.write(f_name, z_name)
                     myzip.write(f_name)
     except Exception as ex:
         print('Error creating ZIP file.  Error: {0}'.format(ex))
@@ -635,6 +690,11 @@ def build_html(language=''):
 
 
 def build_pdf(language=''):
+    """Build the PDF file.
+
+    Keyword Arguments:
+        language {str} -- Language to use for the build (default: {''})
+    """
     check_sphinx_build()
     if not (language and language in LANGUAGES):
         language = DEFAULT_LANGUAGE
@@ -669,6 +729,9 @@ def build_pdf(language=''):
 
 
 def build_pot():
+    """Build the current 'gettext' language translation files and updates the *.po files for
+    the supported languages.
+    """
     check_sphinx_build()
     command = ' '.join([SPHINX_BUILD, '-M', 'gettext', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_LOCALE_DIR + '"', '-c', '.', '-D', 'language={0}'.format(DEFAULT_LANGUAGE)])
     print('\nExtracting POT files with command: {0}\n'.format(command))
@@ -683,25 +746,19 @@ def build_pot():
         if lang != DEFAULT_LANGUAGE:
             print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
             command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + gettext_dir + '"', '-l', lang])
-            # print('\nUpdating PO files with command: {0}\n'.format(command))
+            print('Updating PO files with command: {0}\n'.format(command))
             exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
             if exit_code:
                 exit_with_code(exit_code)
 
 
 def list_languages():
+    """List the supported language options.
+    """
     for lang in LANGUAGE_LIST.keys():
         print('   {0} - {1}'.format(lang, LANGUAGE_LIST[lang]))
     print("or 'all' to process all supported languages.\n")
 
-
-# check_sphinx_build()
-
-# language = 'fr'
-# language = 'en'
-# build_html(language)
-
-# exit_with_code(0)
 
 def main():
     """Main part of script to execute.
@@ -778,7 +835,7 @@ def main():
 
     elif 'test_target' in vars(args):
         if args.test_target == 'rst':
-            run_lint(SPHINX_SOURCE_DIR)
+            run_lint(SPHINX_SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
 
         elif args.test_target == 'html':
             print('\nThat function is still under development.\n')
@@ -809,27 +866,6 @@ def main():
     #     else:
     #         print('Error: Invalid option selected.')
 
-    # elif 'ui_compile' in vars(args):
-    #     # 'ui' option selected
-    #     if args.ui_clean:
-    #         ui_clean()
-    #     elif args.ui_compile is not None:
-    #         ui_compile(args.ui_compile)
-    #     else:
-    #         print('Error: Invalid option selected.')
-
-    # elif 'tests_run' in vars(args):
-    #     # 'tests' option selected
-    #     if args.tests_run:
-    #         tests_run()
-    #     elif args.tests_flake8:
-    #         tests_flake8()
-    #     elif args.tests_pylint:
-    #         tests_pylint()
-    #     else:
-    #         print('Error: Invalid option selected.')
-
-    # elif len(vars(args)) < 3:
     else:
         # show help information
         show_help()
