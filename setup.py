@@ -647,7 +647,11 @@ def build_html(language=''):
     # command = ' '.join([SPHINX_BUILD, '-M', 'html', '"' + SPHINX_SOURCE_DIR + '"', '"' + build_dir + '"', '-c', '.', language_option])
     command = ' '.join([SPHINX_BUILD, '-M', 'html', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
     print('\nBuilding with command: {0}\n'.format(command))
-    exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+    try:
+        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
+    except Exception as ex:
+        print("ERROR executing process: {0}".format(ex))
+        exit_code = 1
     if exit_code:
         exit_with_code(exit_code)
 
@@ -714,7 +718,11 @@ def build_pdf(language=''):
     clean_directory(pdf_dir, 'pdf')
     command = ' '.join([SPHINX_BUILD, '-M', 'latexpdf', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
     print('\nBuilding with command: {0}\n'.format(command))
-    exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+    try:
+        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
+    except Exception as ex:
+        print("ERROR executing process: {0}".format(ex))
+        exit_code = 1
     if exit_code:
         exit_with_code(exit_code)
 
