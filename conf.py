@@ -19,11 +19,14 @@ import datetime
 # import sphinx_rtd_theme
 # import picard_theme
 
+this_year = datetime.datetime.now().year
+copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this_year)
 
 # -- Project information -----------------------------------------------------
 
 project = 'MusicBrainz Picard'
-copyright = '2020, MetaBrainz Foundation'
+# copyright = '{0}, MetaBrainz Foundation'.format(copyright_year)
+copyright = '{0}, Bob Swift'.format(copyright_year)
 author = 'Bob Swift'
 # author = ''
 
@@ -89,10 +92,19 @@ release = 'v2.3.1'
 # https://www.gnu.org/licenses/fdl-1.3.html.
 # """.format(datetime.datetime.now().year,) + r'\vspace{0.1\textheight}'
 
-my_year = str(datetime.datetime.now().year)
+# my_notice = r'''\vspace*{\fill}
+# Copyright © 2020-''' + this_year + r''' Bob Swift\\
+# Copyright © 2020-''' + this_year + r''' MetaBrainz Foundation\\
+# \\
+# Permission is granted to copy, distribute and/or modify this document under the
+# terms of the GNU Free Documentation License, Version 1.3 or any later version
+# published by the Free Software Foundation; with no Invariant Sections, no Front-
+# Cover Texts, and no Back-Cover Texts. A copy of the license is available at
+# https://www.gnu.org/licenses/fdl-1.3.html.
+# \vspace{0.1\textheight}'''
+
 my_notice = r'''\vspace*{\fill}
-Copyright © ''' + my_year + r''' Bob Swift (rdswift)\\
-Copyright © ''' + my_year + r''' MetaBrainz Foundation\\
+Copyright © ''' + copyright_year + r''' Bob Swift\\
 \\
 Permission is granted to copy, distribute and/or modify this document under the
 terms of the GNU Free Documentation License, Version 1.3 or any later version
@@ -119,7 +131,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', 'html', 'docs', 'locale', '.git', 'images', 'testing', '*.md']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', 'html', 'docs', 'locale', '.git', '.github', 'images', 'testing', 'README.md']
 
 
 # -- Options for Internationalization ----------------------------------------
@@ -127,6 +139,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', 'html', 'do
 language = 'en'
 locale_dirs = ['locale']
 gettext_compact = False
+# gettext_compact = True
 
 
 # -- Options for HTML output -------------------------------------------------
