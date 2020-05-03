@@ -7,7 +7,7 @@ on:
     branches:
       - 'master'
     paths-ignore:
-      - '.github/**'
+      - '.github/test.yml'
 
 jobs:
   lint_rst:
@@ -17,7 +17,7 @@ jobs:
       matrix:
         python-version: [3.7]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
@@ -37,7 +37,7 @@ jobs:
       matrix:
         python-version: [3.7]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
@@ -63,9 +63,13 @@ jobs:
         python ./setup.py -l all build pdf
     - name: Update gh-pages branch
       run: |
+        git config --global user.name 'Bob Swift'
+        git config --global user.email 'rdswift@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git checkout gh-pages
         python publish.py
         git add -A
         if grep -q "Changes to be committed:" <<< `git status`; then
           git status && git commit -m "Based on '$GITHUB_EVENT_NAME' to '$GITHUB_REF' by '$GITHUB_ACTOR'" && git push origin gh-pages
         fi
+        git checkout master
