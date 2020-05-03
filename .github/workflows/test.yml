@@ -6,6 +6,7 @@ on:
   push:
     branches-ignore:
       - 'gh-pages'
+      - 'master'
     paths:
       - 'source/**.rst'
       - 'source/**.txt'
@@ -14,6 +15,7 @@ on:
   pull_request:
     branches-ignore:
       - 'gh-pages'
+      - 'master'
     paths:
       - 'source/**.rst'
       - 'source/**.txt'
@@ -39,38 +41,6 @@ jobs:
         pip install -r requirements.txt
     - name: Test RST Files
       run: python ./setup.py test rst
-    - name: Script Testing
-      run: |
-        echo ID: $GITHUB_SHA
-        echo Status check #1
-        echo ---------------
-        if grep -q "Changes to be committed:" <<< `git status`; then echo "Changes = True"; else echo "Changes = False"; fi
-        echo ---------------
-        git status
-        echo ---------------
-        git add -A
-        echo Status check #2
-        echo ---------------
-        if grep -q "Changes to be committed:" <<< `git status`; then
-          echo "Changes = True";
-        else
-          echo "Changes = False";
-        fi
-        echo ---------------
-        git status
-        echo ---------------
-        touch junk.txt
-        git add -A
-        echo Status check #3
-        echo ---------------
-        if grep -q "Changes to be committed:" <<< `git status`; then
-          echo "Changes = True";
-        else
-          echo "Changes = False";
-        fi
-        echo ---------------
-        git status
-        echo ---------------
 
   # build_files:
   #   name: Build output files
@@ -111,6 +81,6 @@ jobs:
   #       cp -v -f -r * ..
   #       cd ..
   #       git add -A
-  #       git status
-  #       git commit -m "Based on '$GITHUB_EVENT_NAME' to '$GITHUB_REF' by '$GITHUB_ACTOR'"
-  #       git push origin gh-pages
+  #       if grep -q "Changes to be committed:" <<< `git status`; then
+  #         git status && git commit -m "Based on '$GITHUB_EVENT_NAME' to '$GITHUB_REF' by '$GITHUB_ACTOR'" && git push origin gh-pages
+  #       fi
