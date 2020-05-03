@@ -54,6 +54,7 @@ Network
     settings are **Server Address**, **Port**, **Username** and **Password**.
 
 .. |lookup_tagger| image:: ../images/mblookup-tagger.png
+   :height: 1em
 
 **Browser Integration**
 
