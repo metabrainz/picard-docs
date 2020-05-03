@@ -42,8 +42,35 @@ jobs:
     - name: Script Testing
       run: |
         echo ID: $GITHUB_SHA
-        git show $GITHUB_SHA
-        echo ID: $GITHUB_SHA
+        echo Status check #1
+        echo ---------------
+        if grep -q "Changes to be committed:" <<< `git status`; then echo "Changes = True"; else echo "Changes = False"; fi
+        echo ---------------
+        git status
+        echo ---------------
+        git add -A
+        echo Status check #2
+        echo ---------------
+        if grep -q "Changes to be committed:" <<< `git status`; then
+          echo "Changes = True";
+        else
+          echo "Changes = False";
+        fi
+        echo ---------------
+        git status
+        echo ---------------
+        touch junk.txt
+        git add -A
+        echo Status check #3
+        echo ---------------
+        if grep -q "Changes to be committed:" <<< `git status`; then
+          echo "Changes = True";
+        else
+          echo "Changes = False";
+        fi
+        echo ---------------
+        git status
+        echo ---------------
 
   # build_files:
   #   name: Build output files

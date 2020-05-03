@@ -6,6 +6,9 @@
     are not relevant to your change.
 
     Also, please ensure that you've reviewed the guidelines in CONTRIBUTING.md.
+
+    Note that all pull requests should be against the 'development' branch, and
+    not the 'master' branch.
 -->
 
 # Summary
