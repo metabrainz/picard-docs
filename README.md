@@ -23,4 +23,5 @@ This documentation project only exists because of the volunteer effort that goes
 If you notice an error in the documentation or have additional or updated material to contribute,
 please raise an issue in the [issue tracker](https://github.com/rdswift/picard-docs/issues).
 [Pull Requests](https://github.com/rdswift/picard-docs/pulls) to address outstanding issues are also
-appreciated.  Please see [CONTRIBUTING.md] for more information and additional ways to contribute.
+appreciated.  Please see [CONTRIBUTING.md](https://github.com/rdswift/picard-docs/blob/master/.github/CONTRIBUTING.md)
+for more information and additional ways to contribute.
