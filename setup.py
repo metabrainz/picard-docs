@@ -53,6 +53,7 @@ SPHINX_BUILD = 'sphinx-build'
 SPHINX_INTL = 'sphinx-intl'
 SPHINX_BUILD_DIR = '_build'
 SPHINX_SOURCE_DIR = 'source'
+SPHINX_GETTEXT_DIR = 'gettext'
 SPHINX_LOCALE_DIR = 'locale'
 SPHINX_BUILD_TIMEOUT = 300
 OUTPUT_DIR = 'docs'
@@ -128,6 +129,7 @@ RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)"\.$')
 RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
 RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)"\.$')
 
+RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 
 ##################################################
 #   Text to display when the script is started   #
@@ -192,6 +194,7 @@ Commands:
 
    build html          Build HTML files
    build pdf           Build PDF files
+   build po            Build the specified language
    build pot           Build translation template files
 
    test rst            Lint the rst files
@@ -371,8 +374,8 @@ def parse_command_line():
     parser02.add_argument(
         'build_target',
         action='store',
-        choices=['html', 'pdf', 'pot', 'clean'],
-        help="html = build html files, pdf = build pdf file, pot = build translation template files"
+        choices=['html', 'pdf', 'po', 'pot'],
+        help="html = build html files, pdf = build pdf file, po = build translation files, pot = build translation template files"
     )
 
     parser03 = subparsers.add_parser(
@@ -383,8 +386,8 @@ def parse_command_line():
     parser03.add_argument(
         'clean_target',
         action='store',
-        choices=['html', 'pdf'],
-        help="html = clean html build directory, pdf = clean pdf build directory"
+        choices=['html', 'pdf', 'po'],
+        help="html = clean html build directory, pdf = clean pdf build directory, po = clean language directory"
     )
 
     parser04 = subparsers.add_parser(
@@ -636,8 +639,7 @@ def build_html(language=''):
     else:
         language_option = '-D language=' + language
         check_sphinx_intl()
-        gettext_dir = os.path.join(SPHINX_BUILD_DIR, 'gettext')
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + gettext_dir + '"', '-l', language])
+        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
         print('\nUpdating PO files with command: {0}\n'.format(command))
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
         if exit_code:
@@ -706,8 +708,7 @@ def build_pdf(language=''):
         language_option = ''
     else:
         language_option = '-D language=' + language
-        gettext_dir = os.path.join(SPHINX_BUILD_DIR, 'gettext')
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + gettext_dir + '"', '-l', language])
+        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
         print('\nUpdating PO files with command: {0}\n'.format(command))
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
         if exit_code:
@@ -749,15 +750,33 @@ def build_pot():
 
     check_sphinx_intl()
     print('\nUpdating PO files for other languages.')
-    gettext_dir = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
     for lang in LANGUAGE_LIST.keys():
         if lang != DEFAULT_LANGUAGE:
             print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-            command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + gettext_dir + '"', '-l', lang])
-            print('Updating PO files with command: {0}\n'.format(command))
-            exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
-            if exit_code:
-                exit_with_code(exit_code)
+            update_po(lang)
+
+
+def update_po(language):
+    """Update the translation *.po files for the specified language.  Creates the files if
+    don't exist.
+
+    Arguments:
+        language {str} -- Language code to update
+    """
+    check_sphinx_intl()
+    command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_LOCALE_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+    print('Updating PO files with command: {0}\n'.format(command))
+    exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+    if exit_code:
+        exit_with_code(exit_code)
+
+
+def check_language(language, supported_only=False):
+    if language and isinstance(language, str):
+        if RE_TEST_LANGUAGE.match(language):
+            if (not supported_only) or language in LANGUAGE_LIST.keys():
+                return True
+    return False
 
 
 def list_languages():
@@ -776,15 +795,29 @@ def main():
     # return
     # print('User VENV Location = {0}\nExists: {1}\n'.format(VENV_LOCATION, check_venv()))
 
+    # if 'language' in vars(args):
+    #     if args.language == 'all':
+    #         process_languages = LANGUAGES
+    #     elif args.language in LANGUAGES:
+    #         process_languages = [args.language]
+    #     else:
+    #         print('\nInvalid language selected: {0}'.format(args.language))
+    #         print('\nPlease select from:')
+    #         list_languages()
+    #         exit_with_code(1)
+    # else:
+    #     process_languages = [DEFAULT_LANGUAGE]
+
     if 'language' in vars(args):
         if args.language == 'all':
             process_languages = LANGUAGES
-        elif args.language in LANGUAGES:
+        elif check_language(args.language):
             process_languages = [args.language]
         else:
             print('\nInvalid language selected: {0}'.format(args.language))
-            print('\nPlease select from:')
-            list_languages()
+            if not ('build_target' in vars(args) and (args.build_target == 'po')):
+                print('\nPlease select from:')
+                list_languages()
             exit_with_code(1)
     else:
         process_languages = [DEFAULT_LANGUAGE]
@@ -816,8 +849,20 @@ def main():
             for lang in process_languages:
                 build_pdf(language=lang)
 
+        elif args.build_target == 'po':
+            build_pot()
+            for lang in process_languages:
+                if lang != DEFAULT_LANGUAGE:
+                    update_po(lang)
+
         elif args.build_target == 'pot':
             build_pot()
+            check_sphinx_intl()
+            print('\nUpdating PO files for other languages.')
+            for lang in LANGUAGE_LIST.keys():
+                if lang != DEFAULT_LANGUAGE:
+                    print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
+                    update_po(lang)
 
         elif args.build_target == 'clean':
             for target, target_dir in [('html', 'html'), ('pdf', 'latex')]:

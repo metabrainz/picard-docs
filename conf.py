@@ -31,7 +31,7 @@ author = 'Bob Swift'
 # author = ''
 
 # The full version, including alpha/beta/rc tags
-release = 'v2.3.1'
+release = 'v2.3.2'
 
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------

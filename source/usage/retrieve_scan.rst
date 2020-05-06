@@ -9,4 +9,4 @@
 Scan Files
 ==========
 
-This section is still under development.
+.. include:: retrieve_scan_steps.txt

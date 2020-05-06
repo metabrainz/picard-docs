@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2020, Bob Swift
+# Copyright (C) 2020, Bob Swift
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-02 13:08-0600\n"
+"POT-Creation-Date: 2020-05-06 14:33-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,22 +24,26 @@ msgstr ""
 msgid "The steps to follow to lookup files are:"
 msgstr ""
 
-#: ../../source/usage/retrieve_lookup_steps.txt:16
-msgid "Make sure the CD is inserted in the drive, and select :menuselection:`\"Tools --> Lookup CD... --> (drive to use)\"`. The CD toc will be calculated and sent to MusicBrainz, and a list of matching releases will be displayed."
+#: ../../source/usage/retrieve_lookup_steps.txt:11
+msgid "Add your files using :menuselection:`\"Files --> Add Files...\"` or :menuselection:`\"Files --> Add Folder...\"`. For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is enabled from :menuselection:`\"View --> File Browser\"`."
 msgstr ""
 
-#: ../../source/usage/retrieve_lookup_steps.txt:22
-msgid "Select the correct release from the list.  This will load the information for the release into Picard."
+#: ../../source/usage/retrieve_lookup_steps.txt:20
+msgid "Drag the selected directory or files to the \"Unclustered Files\" folder, and wait for Picard to process the files - the names will turn from grey to black."
 msgstr ""
 
-#: ../../source/usage/retrieve_lookup_steps.txt:24
-msgid "If there are no matches or none of the matches are correct, use the :menuselection:`\"Lookup in Browser\"` option to locate the correct release.  Enter the release title or artist and initiate the search.  You will be provided with a list of the releases that match your search criterion and have the same number of tracks as your CD toc."
+#: ../../source/usage/retrieve_lookup_steps.txt:28
+msgid "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album clusters."
 msgstr ""
 
-#: ../../source/usage/retrieve_lookup_steps.txt:31
-msgid "Use the green arrow |lookup_tagger| to load the information for a release into Picard.  In addition, you can select the release and attach the toc."
+#: ../../source/usage/retrieve_lookup_steps.txt:35
+msgid "Select a clustered album and use :menuselection:`\"Tools --> Lookup\"` to lookup the cluster. Depending on your previous metadata, the album will show up in the right-hand pane."
 msgstr ""
 
-#: ../../source/usage/retrieve_lookup_steps.txt:34
-msgid "If none of the releases displayed are correct, you have the option to add a new release (with some information automatically included)."
+#: ../../source/usage/retrieve_lookup_steps.txt:38
+msgid "A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track."
+msgstr ""
+
+#: ../../source/usage/retrieve_lookup_steps.txt:45
+msgid "If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as scanning the files or a manual lookup."
 msgstr ""

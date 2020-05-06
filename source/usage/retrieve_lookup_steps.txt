@@ -8,28 +8,39 @@
 
 The steps to follow to lookup files are:
 
+1. Add your files using :menuselection:`"Files --> Add Files..."` or :menuselection:`"Files --> Add Folder..."`.
+   For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is
+   enabled from :menuselection:`"View --> File Browser"`.
 
-
-
-
-
-1. Make sure the CD is inserted in the drive, and select :menuselection:`"Tools --> Lookup CD... --> (drive to use)"`.
-   The CD toc will be calculated and sent to MusicBrainz, and a list of matching releases will be displayed.
-
-   .. image:: ../images/cd_lookup_1.png
+   .. image:: ../images/lookup_1.png
       :width: 100%
 
-2. Select the correct release from the list.  This will load the information for the release into Picard.
+   |
 
-3. If there are no matches or none of the matches are correct, use the :menuselection:`"Lookup in Browser"` option to
-   locate the correct release.  Enter the release title or artist and initiate the search.  You will be provided with
-   a list of the releases that match your search criterion and have the same number of tracks as your CD toc.
+2. Drag the selected directory or files to the "Unclustered Files" folder, and wait for Picard to process the files -
+   the names will turn from grey to black.
 
-.. |lookup_tagger| image:: ../images/mblookup-tagger.png
-   :height: 1em
+   .. image:: ../images/lookup_2.png
+      :width: 100%
 
-4. Use the green arrow |lookup_tagger| to load the information for a release into Picard.  In addition, you can select the release and
-   attach the toc.
+   |
 
-5. If none of the releases displayed are correct, you have the option to add a new release (with some information
-   automatically included).
+3. Use :menuselection:`"Tools --> Cluster"` to group the files into album clusters.
+
+   .. image:: ../images/lookup_3.png
+      :width: 100%
+
+   |
+
+4. Select a clustered album and use :menuselection:`"Tools --> Lookup"` to lookup the cluster. Depending on your previous
+   metadata, the album will show up in the right-hand pane.
+
+   A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.
+
+   .. image:: ../images/lookup_5.png
+      :width: 100%
+
+   |
+
+   If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as scanning
+   the files or a manual lookup.
