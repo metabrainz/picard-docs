@@ -6,7 +6,7 @@
 ..  with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
-Scan Files
-==========
+Manual Lookup
+=============
 
-.. include:: retrieve_scan_steps.txt
+.. include:: retrieve_manual_steps.txt

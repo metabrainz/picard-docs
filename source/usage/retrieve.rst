@@ -18,7 +18,7 @@ There are basically four methods used to retrieve album information from the Mus
 
 .. only:: html
 
-   **Lookup CD**
+   :doc:`Lookup CD <retrieve_lookup_cd>`
 
 This is the preferred method of automatically identifying the album to retrieve, and
 should be used when you have the CD available.  Typically this would be used right after ripping the
@@ -40,9 +40,16 @@ option of attaching the toc from your CD to the selected release for future look
 
 .. only:: html
 
-   **Lookup Files**
+   :doc:`Lookup Files <retrieve_lookup>`
 
-Need to add details here.
+If you don't have the CD available, and your files are grouped by album, this is the preferred method of
+automatically identifying the album to retrieve.  This is done by grouping the files into album clusters in
+Picard and then perform the lookup.  Picard will try to match the entire set of clustered files to the same
+release.
+
+.. only:: latex
+
+   .. include:: retrieve_lookup_steps.txt
 
 
 .. only:: latex
@@ -52,9 +59,34 @@ Need to add details here.
 
 .. only:: html
 
-   **Scan Files**
+   :doc:`Scan Files <retrieve_scan>`
 
-Need to add details here.
+If your files are not grouped into albums and you don't have the CD available, this is the only remaining method of
+automatically identifying the album to retrieve.  This is done by scanning the files to obtain their AcoustID
+fingerprints and then perform the lookup for the individual files by fingerprint.  The album(s) matching the files
+will show up in the right-hand pane based on a "best match" using the Preferred Releases settings in the Metadata options.
+
+.. only:: latex
+
+   .. include:: retrieve_lookup_steps.txt
+
+
+.. only:: latex
+
+   Lookup in Browser
+   -----------------
+
+.. only:: html
+
+   :doc:`Lookup in Browser <retrieve_browser>`
+
+If none of the automated methods are available, or don't produce the desired results, you have the option of retrieving
+the album information by having Picard initiate a search on the MusicBrainz website using your web browser.  There are two
+methods of initiating this search. The first method searches based on the tag information from the selected files.
+
+.. only:: latex
+
+   .. include:: retrieve_browser_steps.txt
 
 
 .. only:: latex
@@ -64,9 +96,13 @@ Need to add details here.
 
 .. only:: html
 
-   **Manual Lookup**
+   :doc:`Manual Lookup <retrieve_manual>`
 
-Need to include details here.
+The second browser search method uses manually entered information as the search criterion.
+
+.. only:: latex
+
+   .. include:: retrieve_manual_steps.txt
 
 
 .. only:: html
@@ -78,3 +114,4 @@ Need to include details here.
       retrieve_lookup
       retrieve_scan
       retrieve_browser
+      retrieve_manual
