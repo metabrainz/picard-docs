@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lookup CD &mdash; MusicBrainz Picard v2.3.1 documentation</title>
+  <title>Lookup CD &mdash; MusicBrainz Picard v2.3.2 documentation</title>
   
 
   
@@ -81,6 +81,7 @@
             
             
               <ul>
+<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
 </ul>
@@ -100,6 +101,7 @@
 <li class="toctree-l3"><a class="reference internal" href="retrieve_lookup.html">Lookup Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_scan.html">Scan Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_browser.html">Lookup in Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retrieve_manual.html">Manual Lookup</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="match.html">Matching Files to Tracks</a></li>
@@ -110,7 +112,6 @@
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -190,18 +191,33 @@
 <li><p>Make sure the CD is inserted in the drive, and select <span class="menuselection">“Tools ‣ Lookup CD… ‣ (drive to use)”</span>.
 The CD toc will be calculated and sent to MusicBrainz, and a list of matching releases will be displayed.</p>
 <a class="reference internal image-reference" href="../_images/cd_lookup_1.png"><img alt="../_images/cd_lookup_1.png" src="../_images/cd_lookup_1.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </li>
-<li><p>Select the correct release from the list.  This will load the information for the release into Picard.</p></li>
+<li><p>Select the correct release from the list.  This will load the information for the release into Picard.</p>
+<p>A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.</p>
+<a class="reference internal image-reference" href="../_images/lookup_5.png"><img alt="../_images/lookup_5.png" src="../_images/lookup_5.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
 <li><p>If there are no matches or none of the matches are correct, use the <span class="menuselection">“Lookup in Browser”</span> option to
 locate the correct release.  Enter the release title or artist and initiate the search.  You will be provided with
 a list of the releases that match your search criterion and have the same number of tracks as your CD toc.</p>
 <a class="reference internal image-reference" href="../_images/cd_lookup_2.png"><img alt="../_images/cd_lookup_2.png" src="../_images/cd_lookup_2.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </li>
 </ol>
 <ol class="arabic" start="4">
 <li><p>Use the green arrow <a class="reference internal" href="../_images/mblookup-tagger1.png"><img alt="lookup_tagger" src="../_images/mblookup-tagger1.png" style="height: 1em;" /></a> to load the information for a release into Picard.  In addition, you can select the release and
 attach the toc.</p>
 <a class="reference internal image-reference" href="../_images/cd_lookup_3.png"><img alt="../_images/cd_lookup_3.png" src="../_images/cd_lookup_3.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </li>
 <li><p>If none of the releases displayed are correct, you have the option to add a new release (with some information
 automatically included).</p>

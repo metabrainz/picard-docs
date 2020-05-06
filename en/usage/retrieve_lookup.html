@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lookup Files &mdash; MusicBrainz Picard v2.3.1 documentation</title>
+  <title>Lookup Files &mdash; MusicBrainz Picard v2.3.2 documentation</title>
   
 
   
@@ -81,6 +81,7 @@
             
             
               <ul>
+<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
 </ul>
@@ -100,6 +101,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Lookup Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_scan.html">Scan Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_browser.html">Lookup in Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retrieve_manual.html">Manual Lookup</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="match.html">Matching Files to Tracks</a></li>
@@ -110,7 +112,6 @@
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -187,20 +188,37 @@
 <h1>Lookup Files<a class="headerlink" href="#lookup-files" title="Permalink to this headline">¶</a></h1>
 <p>The steps to follow to lookup files are:</p>
 <ol class="arabic">
-<li><p>Make sure the CD is inserted in the drive, and select <span class="menuselection">“Tools ‣ Lookup CD… ‣ (drive to use)”</span>.
-The CD toc will be calculated and sent to MusicBrainz, and a list of matching releases will be displayed.</p>
-<a class="reference internal image-reference" href="../_images/cd_lookup_1.png"><img alt="../_images/cd_lookup_1.png" src="../_images/cd_lookup_1.png" style="width: 100%;" /></a>
+<li><p>Add your files using <span class="menuselection">“Files ‣ Add Files…”</span> or <span class="menuselection">“Files ‣ Add Folder…”</span>.
+For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is
+enabled from <span class="menuselection">“View ‣ File Browser”</span>.</p>
+<a class="reference internal image-reference" href="../_images/lookup_1.png"><img alt="../_images/lookup_1.png" src="../_images/lookup_1.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </li>
-<li><p>Select the correct release from the list.  This will load the information for the release into Picard.</p></li>
-<li><p>If there are no matches or none of the matches are correct, use the <span class="menuselection">“Lookup in Browser”</span> option to
-locate the correct release.  Enter the release title or artist and initiate the search.  You will be provided with
-a list of the releases that match your search criterion and have the same number of tracks as your CD toc.</p></li>
-</ol>
-<ol class="arabic simple" start="4">
-<li><p>Use the green arrow <a class="reference internal" href="../_images/mblookup-tagger1.png"><img alt="lookup_tagger" src="../_images/mblookup-tagger1.png" style="height: 1em;" /></a> to load the information for a release into Picard.  In addition, you can select the release and
-attach the toc.</p></li>
-<li><p>If none of the releases displayed are correct, you have the option to add a new release (with some information
-automatically included).</p></li>
+<li><p>Drag the selected directory or files to the “Unclustered Files” folder, and wait for Picard to process the files -
+the names will turn from grey to black.</p>
+<a class="reference internal image-reference" href="../_images/lookup_2.png"><img alt="../_images/lookup_2.png" src="../_images/lookup_2.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Use <span class="menuselection">“Tools ‣ Cluster”</span> to group the files into album clusters.</p>
+<a class="reference internal image-reference" href="../_images/lookup_3.png"><img alt="../_images/lookup_3.png" src="../_images/lookup_3.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Select a clustered album and use <span class="menuselection">“Tools ‣ Lookup”</span> to lookup the cluster. Depending on your previous
+metadata, the album will show up in the right-hand pane.</p>
+<p>A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.</p>
+<a class="reference internal image-reference" href="../_images/lookup_5.png"><img alt="../_images/lookup_5.png" src="../_images/lookup_5.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as scanning
+the files or a manual lookup.</p>
+</li>
 </ol>
 </div>
 

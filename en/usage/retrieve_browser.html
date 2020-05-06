@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lookup in Browser &mdash; MusicBrainz Picard v2.3.1 documentation</title>
+  <title>Lookup in Browser &mdash; MusicBrainz Picard v2.3.2 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Matching Files to Tracks" href="match.html" />
+    <link rel="next" title="Manual Lookup" href="retrieve_manual.html" />
     <link rel="prev" title="Scan Files" href="retrieve_scan.html" /> 
 </head>
 
@@ -81,6 +81,7 @@
             
             
               <ul>
+<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
 </ul>
@@ -100,6 +101,7 @@
 <li class="toctree-l3"><a class="reference internal" href="retrieve_lookup.html">Lookup Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_scan.html">Scan Files</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Lookup in Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retrieve_manual.html">Manual Lookup</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="match.html">Matching Files to Tracks</a></li>
@@ -110,7 +112,6 @@
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -185,7 +186,55 @@
             
   <div class="section" id="lookup-in-browser">
 <h1>Lookup in Browser<a class="headerlink" href="#lookup-in-browser" title="Permalink to this headline">¶</a></h1>
-<p>This section is still under development.</p>
+<p>The steps to follow to manually lookup an album on MusicBrainz are:</p>
+<ol class="arabic">
+<li><p>Add your files using <span class="menuselection">“Files ‣ Add Files…”</span> or <span class="menuselection">“Files ‣ Add Folder…”</span>.
+For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is
+enabled from <span class="menuselection">“View ‣ File Browser”</span>.</p>
+<a class="reference internal image-reference" href="../_images/lookup_1.png"><img alt="../_images/lookup_1.png" src="../_images/lookup_1.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Drag the selected directory or files to the “Unclustered Files” folder, and wait for Picard to process the files -
+the names will turn from grey to black.</p>
+<a class="reference internal image-reference" href="../_images/lookup_2.png"><img alt="../_images/lookup_2.png" src="../_images/lookup_2.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Use <span class="menuselection">“Tools ‣ Cluster”</span> to group the files into album clusters if you want lookup a cluster.</p>
+<a class="reference internal image-reference" href="../_images/lookup_3.png"><img alt="../_images/lookup_3.png" src="../_images/lookup_3.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>Select a file or clustered album and use <span class="menuselection">“Tools ‣ Lookup in Browser”</span> to initiate the search in your
+browser using the currently available metadata.</p>
+<a class="reference internal image-reference" href="../_images/browser_1.png"><img alt="../_images/browser_1.png" src="../_images/browser_1.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>If you want to revise or refine your search criteria, make the desired changes at the bottom of the web page and click
+the “Search” button to re-initiate the search.</p>
+<a class="reference internal image-reference" href="../_images/browser_2.png"><img alt="../_images/browser_2.png" src="../_images/browser_2.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+</ol>
+<ol class="arabic" start="6">
+<li><p>Use the green arrow <a class="reference internal" href="../_images/mblookup-tagger1.png"><img alt="retrieve_browser_steps_lookup_tagger" src="../_images/mblookup-tagger1.png" style="height: 1em;" /></a> to load the information for a release into Picard.</p>
+<a class="reference internal image-reference" href="../_images/browser_3.png"><img alt="../_images/browser_3.png" src="../_images/browser_3.png" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</li>
+<li><p>A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.</p>
+<a class="reference internal image-reference" href="../_images/lookup_5.png"><img alt="../_images/lookup_5.png" src="../_images/lookup_5.png" style="width: 100%;" /></a>
+</li>
+</ol>
 </div>
 
 
@@ -196,7 +245,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="match.html" class="btn btn-neutral float-right" title="Matching Files to Tracks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="retrieve_manual.html" class="btn btn-neutral float-right" title="Manual Lookup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="retrieve_scan.html" class="btn btn-neutral float-left" title="Scan Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

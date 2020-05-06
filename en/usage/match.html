@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Matching Files to Tracks &mdash; MusicBrainz Picard v2.3.1 documentation</title>
+  <title>Matching Files to Tracks &mdash; MusicBrainz Picard v2.3.2 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Saving Updated Files" href="save.html" />
-    <link rel="prev" title="Lookup in Browser" href="retrieve_browser.html" /> 
+    <link rel="prev" title="Manual Lookup" href="retrieve_manual.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,6 +81,7 @@
             
             
               <ul>
+<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
 </ul>
@@ -104,7 +105,6 @@
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -177,7 +177,17 @@
             
   <div class="section" id="matching-files-to-tracks">
 <h1>Matching Files to Tracks<a class="headerlink" href="#matching-files-to-tracks" title="Permalink to this headline">¶</a></h1>
-<p>This section is still under development.</p>
+<p>Once you have retrieved the desired album information into the right-hand pane, the next step is to match the files from the
+left-hand pane to the corresponding track in the right-hand pane.  A music symbol in front of a track number in the right-hand
+pane indicates that there has been no file assigned to the track.  In some cases, Picard may have already tried to do the
+matching for you.  If the matching wasn’t done automatically, drag the appropriate files onto the appropriate album and track.</p>
+<a class="reference internal image-reference" href="../_images/lookup_4.png"><img alt="../_images/lookup_4.png" src="../_images/lookup_4.png" style="width: 100%;" /></a>
+<p>Depending on your previous metadata, Picard will try to guess the matching tracks. The order is green &gt; yellow &gt; orange &gt; red,
+where green is the best match. If you are seeing a lot of red and orange, it could mean that Picard has guessed incorrectly, or that
+your files didn’t have a lot of previous metadata to work with.  If this is the case, it’s recommended to select a track and
+compare the “Original Values” and “New Values” in the metadata pane. If there is an incorrect match, simply drag the track to its
+correct spot in the right-hand pane.</p>
+<a class="reference internal image-reference" href="../_images/matching_1.png"><img alt="../_images/matching_1.png" src="../_images/matching_1.png" style="width: 100%;" /></a>
 </div>
 
 
@@ -191,7 +201,7 @@
         <a href="save.html" class="btn btn-neutral float-right" title="Saving Updated Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="retrieve_browser.html" class="btn btn-neutral float-left" title="Lookup in Browser" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="retrieve_manual.html" class="btn btn-neutral float-left" title="Manual Lookup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -9,4 +9,4 @@
 Lookup in Browser
 =================
 
-This section is still under development.
+.. include:: retrieve_browser_steps.txt

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Retrieving Album information &mdash; MusicBrainz Picard v2.3.1 documentation</title>
+  <title>Retrieving Album information &mdash; MusicBrainz Picard v2.3.2 documentation</title>
   
 
   
@@ -81,6 +81,7 @@
             
             
               <ul>
+<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
 </ul>
@@ -100,6 +101,7 @@
 <li class="toctree-l3"><a class="reference internal" href="retrieve_lookup.html">Lookup Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_scan.html">Scan Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_browser.html">Lookup in Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retrieve_manual.html">Manual Lookup</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="match.html">Matching Files to Tracks</a></li>
@@ -110,7 +112,6 @@
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -184,7 +185,7 @@
   <div class="section" id="retrieving-album-information">
 <h1>Retrieving Album information<a class="headerlink" href="#retrieving-album-information" title="Permalink to this headline">¶</a></h1>
 <p>There are basically four methods used to retrieve album information from the MusicBrainz database.</p>
-<p><strong>Lookup CD</strong></p>
+<p><a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">Lookup CD</span></a></p>
 <p>This is the preferred method of automatically identifying the album to retrieve, and
 should be used when you have the CD available.  Typically this would be used right after ripping the
 audio files from the CD.  When initiated, the table of contents (toc) is read from the CD and a request
@@ -192,12 +193,22 @@ is sent to MusicBrainz to return a list of the releases that match the toc.  If 
 then they will be listed for you to select the one to use.  If there are no matches or none of the
 matches are correct, you can search the database manually for the matching album, and are given the
 option of attaching the toc from your CD to the selected release for future lookup.</p>
-<p><strong>Lookup Files</strong></p>
-<p>Need to add details here.</p>
-<p><strong>Scan Files</strong></p>
-<p>Need to add details here.</p>
-<p><strong>Manual Lookup</strong></p>
-<p>Need to include details here.</p>
+<p><a class="reference internal" href="retrieve_lookup.html"><span class="doc">Lookup Files</span></a></p>
+<p>If you don’t have the CD available, and your files are grouped by album, this is the preferred method of
+automatically identifying the album to retrieve.  This is done by grouping the files into album clusters in
+Picard and then perform the lookup.  Picard will try to match the entire set of clustered files to the same
+release.</p>
+<p><a class="reference internal" href="retrieve_scan.html"><span class="doc">Scan Files</span></a></p>
+<p>If your files are not grouped into albums and you don’t have the CD available, this is the only remaining method of
+automatically identifying the album to retrieve.  This is done by scanning the files to obtain their AcoustID
+fingerprints and then perform the lookup for the individual files by fingerprint.  The album(s) matching the files
+will show up in the right-hand pane based on a “best match” using the Preferred Releases settings in the Metadata options.</p>
+<p><a class="reference internal" href="retrieve_browser.html"><span class="doc">Lookup in Browser</span></a></p>
+<p>If none of the automated methods are available, or don’t produce the desired results, you have the option of retrieving
+the album information by having Picard initiate a search on the MusicBrainz website using your web browser.  There are two
+methods of initiating this search. The first method searches based on the tag information from the selected files.</p>
+<p><a class="reference internal" href="retrieve_manual.html"><span class="doc">Manual Lookup</span></a></p>
+<p>The second browser search method uses manually entered information as the search criterion.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>

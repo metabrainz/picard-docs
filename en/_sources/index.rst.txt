@@ -19,6 +19,7 @@ MusicBrainz Picard
 
 .. toctree::
 
+   notices
    introduction
    glossary
 
@@ -98,7 +99,6 @@ MusicBrainz Picard
    :caption: Appendices:
 
    acknowledgements
-   notices
    functions/list_by_type
    extending/extending
    technical/plugins_api
