@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2020, Bob Swift
+# Copyright (C) 2020, Bob Swift
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-02 13:08-0600\n"
+"POT-Creation-Date: 2020-05-06 14:33-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,5 +21,9 @@ msgid "Matching Files to Tracks"
 msgstr ""
 
 #: ../../source/usage/match.rst:12
-msgid "This section is still under development."
+msgid "Once you have retrieved the desired album information into the right-hand pane, the next step is to match the files from the left-hand pane to the corresponding track in the right-hand pane.  A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.  In some cases, Picard may have already tried to do the matching for you.  If the matching wasn't done automatically, drag the appropriate files onto the appropriate album and track."
+msgstr ""
+
+#: ../../source/usage/match.rst:20
+msgid "Depending on your previous metadata, Picard will try to guess the matching tracks. The order is green > yellow > orange > red, where green is the best match. If you are seeing a lot of red and orange, it could mean that Picard has guessed incorrectly, or that your files didn't have a lot of previous metadata to work with.  If this is the case, it's recommended to select a track and compare the \"Original Values\" and \"New Values\" in the metadata pane. If there is an incorrect match, simply drag the track to its correct spot in the right-hand pane."
 msgstr ""

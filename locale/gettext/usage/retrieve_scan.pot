@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020-2020, Bob Swift
+# Copyright (C) 2020, Bob Swift
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-02 13:08-0600\n"
+"POT-Creation-Date: 2020-05-06 14:33-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,26 @@ msgstr ""
 msgid "Scan Files"
 msgstr ""
 
-#: ../../source/usage/retrieve_scan.rst:12
-msgid "This section is still under development."
+#: ../../source/usage/retrieve_scan_steps.txt:9
+msgid "The steps to follow to scan and lookup files are:"
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:11
+msgid "Add your files using :menuselection:`\"Files --> Add Files...\"` or :menuselection:`\"Files --> Add Folder...\"`. For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is enabled from :menuselection:`\"View --> File Browser\"`."
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:20
+msgid "Drag the selected directory or files to the \"Unclustered Files\" folder, and wait for Picard to process the files - the names will turn from grey to black."
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:28
+msgid "Select the desired files and use :menuselection:`\"Tools --> Scan\"` to scan the files to determine their AcoustID fingerprints and lookup using this information. The album(s) matching the files will show up in the right-hand pane based on a \"best match\" using the Preferred Releases settings in the Metadata options."
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:32
+msgid "A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track."
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:39
+msgid "If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as clustering the files or a browser lookup."
 msgstr ""
