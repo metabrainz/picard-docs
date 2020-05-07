@@ -21,7 +21,7 @@ Returns an empty string if an argument is missing or not an integer.
 
 The following statements will return the values indicated::
 
-    $add(20,15)      ==>  "45"
+    $add(20,15)      ==>  "35"
     $add(20,-15)     ==>  "5"
     $add(20,14,1)    ==>  "35"
     $add(20,10,3,2)  ==>  "35"
