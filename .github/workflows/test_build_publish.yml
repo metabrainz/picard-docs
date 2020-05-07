@@ -61,6 +61,9 @@ jobs:
     - name: Build PDF Files
       run: |
         python ./setup.py -l all build pdf
+    - name: Build EPUB Files
+      run: |
+        python ./setup.py -l all build epub
     - name: Update gh-pages branch
       run: |
         git config --global user.name 'Bob Swift'

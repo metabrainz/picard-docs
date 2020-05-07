@@ -374,8 +374,8 @@ def parse_command_line():
     parser02.add_argument(
         'build_target',
         action='store',
-        choices=['html', 'pdf', 'po', 'pot'],
-        help="html = build html files, pdf = build pdf file, po = build translation files, pot = build translation template files"
+        choices=['html', 'pdf', 'epub', 'po', 'pot'],
+        help="html = build html files, pdf = build pdf file, epub = build epub file, po = build translation files, pot = build translation template files"
     )
 
     parser03 = subparsers.add_parser(
@@ -386,7 +386,7 @@ def parse_command_line():
     parser03.add_argument(
         'clean_target',
         action='store',
-        choices=['html', 'pdf', 'po'],
+        choices=['html', 'pdf', 'epub', 'po'],
         help="html = clean html build directory, pdf = clean pdf build directory, po = clean language directory"
     )
 
@@ -737,6 +737,48 @@ def build_pdf(language=''):
         exit_with_code(1)
 
 
+def build_epub(language=''):
+    """Build the epub file.
+
+    Keyword Arguments:
+        language {str} -- Language to use for the build (default: {''})
+    """
+    check_sphinx_build()
+    if not (language and language in LANGUAGES):
+        language = DEFAULT_LANGUAGE
+    if language == DEFAULT_LANGUAGE:
+        language_option = ''
+    else:
+        language_option = '-D language=' + language
+        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+        print('\nUpdating PO files with command: {0}\n'.format(command))
+        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+        if exit_code:
+            exit_with_code(exit_code)
+
+    epub_dir = os.path.join(SPHINX_BUILD_DIR, 'epub')
+    print('\nCleaning build directory: {0}'.format(epub_dir))
+    clean_directory(epub_dir, 'epub')
+    command = ' '.join([SPHINX_BUILD, '-M', 'epub', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
+    print('\nBuilding with command: {0}\n'.format(command))
+    try:
+        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
+    except Exception as ex:
+        print("ERROR executing process: {0}".format(ex))
+        exit_code = 1
+    if exit_code:
+        exit_with_code(exit_code)
+
+    epub_file = os.path.join(epub_dir, 'MusicBrainzPicard.epub')
+    target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_[{0}].epub'.format(language))
+    print('Copying output to: {0}\n'.format(target_file))
+    try:
+        shutil.copyfile(epub_file, target_file)
+    except Exception as ex:
+        print('Error copying epub file.  Error: {0}'.format(ex))
+        exit_with_code(1)
+
+
 def build_pot():
     """Build the current 'gettext' language translation files and updates the *.po files for
     the supported languages.
@@ -849,6 +891,10 @@ def main():
             for lang in process_languages:
                 build_pdf(language=lang)
 
+        elif args.build_target == 'epub':
+            for lang in process_languages:
+                build_epub(language=lang)
+
         elif args.build_target == 'po':
             build_pot()
             for lang in process_languages:
@@ -881,6 +927,10 @@ def main():
         elif args.clean_target == 'pdf':
             clean_dir = os.path.join(SPHINX_BUILD_DIR, 'latex')
             clean_directory(clean_dir, 'pdf')
+
+        elif args.clean_target == 'epub':
+            clean_dir = os.path.join(SPHINX_BUILD_DIR, 'epub')
+            clean_directory(clean_dir, 'epub')
 
         else:
             print("\nUnknown clean target: '{0}'\n".format(args.clean_target))

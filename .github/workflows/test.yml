@@ -64,7 +64,7 @@ jobs:
         mkdir docs
     - name: Build HTML Files
       run: |
-        python ./setup.py -l all build html
+        python ./setup.py build html
     - name: Install LaTex dependencies
       run: |
         sudo apt-get install latexmk
@@ -73,7 +73,10 @@ jobs:
         sudo apt-get install texlive-latex-extra
     - name: Build PDF Files
       run: |
-        python ./setup.py -l all build pdf
+        python ./setup.py build pdf
+    - name: Build EPUB Files
+      run: |
+        python ./setup.py build epub
 
   #   - name: Update gh-pages branch
   #     run: |

@@ -32,7 +32,7 @@ author = 'Bob Swift'
 
 # The full version, including alpha/beta/rc tags
 release = 'v2.3.2'
-
+version = release
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
@@ -187,3 +187,27 @@ latex_elements = {
 }
 
 latex_domain_indices = True
+
+
+# -- Options for epub output ------------------------------------------
+
+# epub_baseneme = 'musicbrainzpicard'
+
+epub_theme = 'epub'
+
+epub_description = 'A User Guide for MusicBrainz Picard.'
+
+epub_author = 'Bob Swift'
+
+epub_contributor = 'Members of the MusicBrainz Community'
+
+epub_uid = 'MusicBrainzPicardUserGuide'
+
+epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
+# epub_cover = ('_static/epub_cover.png', '')
+
+# epub_show_urls = 'inline'
+epub_show_urls = 'footnote'
+# epub_show_urls = 'no'
+
+epub_use_index = True
