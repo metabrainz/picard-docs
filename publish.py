@@ -225,6 +225,7 @@ def main():
 
     print('\nDeleting current files:')
     delete_files('*.pdf')
+    delete_files('*.epub')
     delete_files('*.zip')
 
     print('\nDeleting current directories:')
@@ -235,6 +236,7 @@ def main():
 
     print('\nCopying new files and directories.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.pdf'), '.')
+    copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.epub'), '.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.zip'), '.')
     copy_directories(DOCUMENT_DIRECTORY, '.')
 
