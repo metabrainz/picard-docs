@@ -9,7 +9,7 @@
 Retrieving Album information
 ============================
 
-There are basically four methods used to retrieve album information from the MusicBrainz database.
+There are basically four main methods used to retrieve album information from the MusicBrainz database.
 
 .. only:: latex
 
@@ -106,6 +106,15 @@ The second browser search method uses manually entered information as the search
 
 
 .. only:: html
+
+   .. seealso::
+
+      Step-by-step instructions:
+      :doc:`retrieve_lookup_cd` /
+      :doc:`retrieve_lookup` /
+      :doc:`retrieve_scan` /
+      :doc:`retrieve_browser` /
+      :doc:`retrieve_manual`
 
    .. toctree::
       :hidden:
