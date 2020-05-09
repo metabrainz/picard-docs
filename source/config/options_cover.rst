@@ -7,27 +7,25 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
-CD Lookup Options
+Cover Art Options
 =================
 
-This section allows you to select which CD ROM device to use by default for looking up a CD.
-
-On Windows and Linux systems, you can override this setting by clicking on :menuselection:`"Tools -->
-Lookup CD..."` and selecting the desired device from the list of available devices.
+Note that you must enable :menuselection:`"Options --> Metadata --> Use release relationships"` for Picard to be able
+to download cover art from MusicBrainz cover art relationships.
 
 .. only:: html
 
    .. seealso::
 
-      :doc:`options_windows` /
-      :doc:`options_os_x` /
-      :doc:`options_linux` /
-      :doc:`options_other_platforms`
+      :doc:`options_location` /
+      :doc:`options_cover_art_providers` /
+      :doc:`options_cover_art_archive` /
+      :doc:`options_local_files`
 
 .. toctree::
    :hidden:
 
-   options_windows
-   options_os_x
-   options_linux
-   options_other_platforms
+   options_location
+   options_cover_art_providers
+   options_cover_art_archive
+   options_local_files

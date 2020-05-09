@@ -46,38 +46,15 @@ User Interface Options
 
     This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.
 
-Colors
-------
+.. only:: html
 
-This section allows you to customize the various colors used in the Picard user interface.  To change a
-color, simply click on the color block currently displayed for the desired text condition to bring up a
-selection dialog, then pick your desired color.  The colors can be changed for the following text
-conditions:
+   .. seealso::
 
-* **Errored entity**: files and other elements with errors on loading or saving
+      :doc:`options_interface_colors` /
+      :doc:`options_interface_top_tags`
 
-* **Pending entity**: files and other elements queued up for processing
+.. toctree::
+   :hidden:
 
-* **Saved entity**: successfully saved files
-
-* **Log view text (debug)**: debug messages in the Error/Debug Log
-
-* **Log view text (error)**: error messages in the Error/Debug Log
-
-* **Log view text (info)**: informational messages in the Error/Debug Log
-
-* **Log view text (warning)**: warning messages in the Error/Debug Log
-
-* **Tag added**: newly added tags in the metadata pane
-
-* **Tag changed**: changed tags in the metadata pane
-
-* **Tag removed**: removed tags in the metadata pane
-
-Top Tags
---------
-
-The tags specified in this option setting will always be shown in the specified order at the top of the
-metadata pane (which shows the metadata of selected files or tracks).
-This allows you to have the most important tags always on top of the list. Tags not listed here will be shown
-in alphabetical order below the top tags.
+   options_interface_colors
+   options_interface_top_tags
