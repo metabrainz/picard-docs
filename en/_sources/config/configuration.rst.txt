@@ -73,17 +73,35 @@ The option settings are found under the :menuselection:`"Options --> Options..."
 a new window with the option groups listed in a tree format on the left hand side, and the individual
 settings on the right hand side.  This is where the majority of Picard's customization is performed.
 
+.. only:: html
+
+   .. seealso::
+
+      :doc:`options_general` /
+      :doc:`options_metadata` /
+      :doc:`options_tags` /
+      :doc:`options_cover` /
+      :doc:`options_filerenaming` /
+      :doc:`options_fingerprinting` /
+      :doc:`options_cdlookup` /
+      :doc:`options_plugins` /
+      :doc:`options_interface` /
+      :doc:`options_scripting` /
+      :doc:`options_advanced` /
+      :doc:`options_about`
+
 .. toctree::
+   :hidden:
 
    options_general.rst
    options_metadata.rst
    options_tags.rst
-   options_cover_art.rst
-   options_filenaming.rst
+   options_cover.rst
+   options_filerenaming.rst
    options_fingerprinting
    options_cdlookup.rst
    options_plugins.rst
-   options_ui.rst
+   options_interface.rst
    options_scripting.rst
    options_advanced.rst
    options_about.rst

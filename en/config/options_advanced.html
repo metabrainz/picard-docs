@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="About" href="options_about.html" />
+    <link rel="next" title="Network" href="options_network.html" />
     <link rel="prev" title="Scripting Options" href="options_scripting.html" /> 
 </head>
 
@@ -100,16 +100,16 @@
 <li class="toctree-l3"><a class="reference internal" href="options_general.html">General Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_metadata.html">Metadata Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_tags.html">Tag Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="options_cover_art.html">Cover Art Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="options_filenaming.html">File Naming Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cover.html">Cover Art Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_filerenaming.html">File Naming Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Fingerprinting Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_cdlookup.html">CD Lookup Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_plugins.html">Plugins Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="options_ui.html">User Interface Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_interface.html">User Interface Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Scripting Options</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Advanced Options</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#network">Network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#matching">Matching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options_network.html">Network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options_matching.html">Matching</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="options_about.html">About</a></li>
@@ -234,64 +234,12 @@ retrieved from MusicBrainz. If the only difference between the file’s metadata
 retrieved from MusicBrainz is a tag listed in this ignore list then the file will be
 considered unmodified.</p>
 </div></blockquote>
-<div class="section" id="network">
-<h2>Network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h2>
-<p><strong>Web Proxy</strong></p>
-<blockquote>
-<div><p>If you need a proxy to make an outside network connection you may specify one here.  The required
-settings are <strong>Server Address</strong>, <strong>Port</strong>, <strong>Username</strong> and <strong>Password</strong>.</p>
-</div></blockquote>
-<p><strong>Browser Integration</strong></p>
-<blockquote>
-<div><p>The browser integration allows you to load releases and recordings into Picard directly from the
-MusicBrainz website. Once you have opened musicbrainz.org in your browser from Picard, the website
-will show the green tagger button <a class="reference internal" href="../_images/mblookup-tagger.png"><img alt="lookup_tagger" src="../_images/mblookup-tagger.png" style="height: 1em;" /></a> next to releases and recordings.  Clicking on
-this button will load the corresponding release or recording into Picard.</p>
-</div></blockquote>
-<p><strong>Default listening port</strong></p>
-<blockquote>
-<div><p>This identifies the default port Picard will listen on for the browser integration. If the port
-is not available Picard will try to increase the port number by one until it finds a free port.</p>
-</div></blockquote>
-<p><strong>Listen only on localhost</strong></p>
-<blockquote>
-<div><p>By default Picard will limit access to the browser integration port to your local machine.
-Deactivating this option will expose the port on your network, allowing you to request Picard to
-load a specific release or recording via the network. For example, this would be used for the
-<a class="reference external" href="https://play.google.com/store/apps/details?id=org.musicbrainz.picard.barcodescanner">Picard Barcode Scanner</a>
-Android app.</p>
-<p><strong>Warning</strong>: <em>Only enable this option when you actually need it and only on networks you trust.
-Exposing application ports via the network can open potential security holes on your system.</em></p>
-</div></blockquote>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="options_network.html"><span class="doc">Network</span></a> /
+<a class="reference internal" href="options_matching.html"><span class="doc">Matching</span></a></p>
 </div>
-<div class="section" id="matching">
-<h2>Matching<a class="headerlink" href="#matching" title="Permalink to this headline">¶</a></h2>
-<p>It is recommended for most users to leave these settings at their default values. For advanced users,
-these allow you to tune the way Picard matches your files and clusters to MusicBrainz releases
-and tracks.</p>
-<p><strong>Minimal similarity for file lookups</strong></p>
-<blockquote>
-<div><p>The higher the percentage value, the more similar an individual file’s metadata must be to the
-metadata from MusicBrainz for it to be matched to a release on the right-hand side.</p>
-</div></blockquote>
-<p><strong>Minimal similarity for cluster lookups</strong></p>
-<blockquote>
-<div><p>The higher the percentage value, the more similar a cluster of files from the left-hand pane must
-be to a MusicBrainz release for the entire cluster to be matched to a release on the right-hand
-side.</p>
-</div></blockquote>
-<p><strong>Minimal similarity for matching files to tracks</strong></p>
-<blockquote>
-<div><p>The higher the percentage value, the more similar an individual file’s metadata must be to the
-metadata from MusicBrainz for it to be matched to a release on the right-hand side.</p>
-</div></blockquote>
-<p>If you have absolutely no metadata in your current files, and you are using “Scan” to match tracks,
-you may find that you need to lower the value of “Minimal similarity for matching files to tracks”
-in order for Picard to match the files within a release. Otherwise you may find that Picard matches
-the track to a release but then is not sure which track is correct; and leaves it in an “unmatched
-files” group within that release.</p>
-<p>As a general rule, lowering the percentages may increase the chance of finding a match at the risk of
-false positives and incorrect matches.</p>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -303,7 +251,7 @@ false positives and incorrect matches.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="options_about.html" class="btn btn-neutral float-right" title="About" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="options_network.html" class="btn btn-neutral float-right" title="Network" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="options_scripting.html" class="btn btn-neutral float-left" title="Scripting Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

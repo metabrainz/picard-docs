@@ -65,6 +65,8 @@ General Options
    For example, if you subscribe to "Stable releases only" you will not be notified if a new Beta or
    Dev release is issued.
 
-**Note**: The update settings and "Check for update" function may not be available when Picard is
-distributed as a package. In that case, the user should check with the maintainer of the package to
-determine when an update is available.
+.. note::
+
+   The update checking related settings and :menuselection:`"Help --> Check for update..."` command may
+   not be available when Picard is distributed as a package. In that case, the user should check with the
+   maintainer of the package to determine when an update is available.

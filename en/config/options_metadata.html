@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Tag Options" href="options_tags.html" />
+    <link rel="next" title="Preferred Releases" href="options_releases.html" />
     <link rel="prev" title="General Options" href="options_general.html" /> 
 </head>
 
@@ -99,18 +99,18 @@
 <li class="toctree-l2 current"><a class="reference internal" href="configuration.html#option-settings">Option Settings</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="options_general.html">General Options</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Metadata Options</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#preferred-releases">Preferred Releases</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#genres">Genres</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ratings">Ratings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options_releases.html">Preferred Releases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options_genres.html">Genres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options_ratings.html">Ratings</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="options_tags.html">Tag Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="options_cover_art.html">Cover Art Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="options_filenaming.html">File Naming Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_cover.html">Cover Art Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_filerenaming.html">File Naming Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Fingerprinting Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_cdlookup.html">CD Lookup Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_plugins.html">Plugins Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="options_ui.html">User Interface Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options_interface.html">User Interface Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Scripting Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_advanced.html">Advanced Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_about.html">About</a></li>
@@ -239,87 +239,13 @@ to your files. You must have this enabled to use Picard to retrieve cover art.</
 <blockquote>
 <div><p>Choose how you want “non-album tracks” to be grouped.</p>
 </div></blockquote>
-<div class="section" id="preferred-releases">
-<h2>Preferred Releases<a class="headerlink" href="#preferred-releases" title="Permalink to this headline">¶</a></h2>
-<p><strong>Preferred release types</strong></p>
-<blockquote>
-<div><p>Adjust the sliders for various release types to tweak how likely Picard is to match a file or cluster to releases of various
-types. For example, you can use this to decrease the likelihood of Picard matching a file or album to a Compilation or Live
-version.</p>
-</div></blockquote>
-<p><strong>Preferred release countries</strong></p>
-<blockquote>
-<div><p>Add one or more countries into the list to make Picard prefer matching clusters or files to releases from the chosen countries.
-This list is also used to prioritize files in the “Other Releases” context menu.</p>
-</div></blockquote>
-<p><strong>Preferred release formats</strong></p>
-<blockquote>
-<div><p>Add one or more formats into the list to make Picard prefer matching clusters or files to releases of the specified format.
-This list is also used to prioritize files in the “Other Releases” context menu.</p>
-</div></blockquote>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="options_releases.html"><span class="doc">Preferred Releases</span></a> /
+<a class="reference internal" href="options_genres.html"><span class="doc">Genres</span></a> /
+<a class="reference internal" href="options_ratings.html"><span class="doc">Ratings</span></a></p>
 </div>
-<div class="section" id="genres">
-<h2>Genres<a class="headerlink" href="#genres" title="Permalink to this headline">¶</a></h2>
-<p><strong>Use genres from MusicBrainz</strong></p>
-<blockquote>
-<div><p>Use genres provided by MusicBrainz and save them to the genre tag.</p>
-</div></blockquote>
-<p><strong>Fall back on album’s artists genres if no genres are found for the release or release group</strong></p>
-<blockquote>
-<div><p>If there is no genre set for the release or release group on MusicBrainz, use the genre of the album artist instead.</p>
-</div></blockquote>
-<p><strong>Only use my genres</strong></p>
-<blockquote>
-<div><p>When enabled, Picard will only write genres you personally have submitted to MusicBrainz. You’ll need to set your username
-and password to use this feature.</p>
-</div></blockquote>
-<p><strong>Use folksonomy tags as genres</strong></p>
-<blockquote>
-<div><p>Check to use all folksonomy tags to set the genre. Otherwise only the tags considered by MusicBrainz to be proper genres
-will be used.</p>
-</div></blockquote>
-<p><strong>Minimal genre usage</strong></p>
-<blockquote>
-<div><p>Choose how popular the genre must be before it is written by Picard. Default: 90%. Lowering the value here will lead to
-more, but possibly less relevant, genres in your files.</p>
-</div></blockquote>
-<p><strong>Maximum number of genres</strong></p>
-<blockquote>
-<div><p>Choose how many genres to use. Default: 5. If you only want a single genre, set this to 1.</p>
-</div></blockquote>
-<p><strong>Join multiple genres with</strong></p>
-<blockquote>
-<div><p>Select which character should be used to separate multiple genres.</p>
-</div></blockquote>
-<p><strong>Genres or folksonomy tags to include or exclude</strong></p>
-<blockquote>
-<div><p>One expression per line, case-insensitive. You can use the “Playground” text field to enter some genres and test the rules
-you have setup. Genres that will be excluded will be marked red, included genres will be marked green.</p>
-<ul class="simple">
-<li><p><strong>Comments</strong>: Lines not starting with ‘-‘ or ‘+’ are ignored. (e.g.: <code class="docutils literal notranslate"><span class="pre">#comment</span></code>, <code class="docutils literal notranslate"><span class="pre">!comment</span></code> or <code class="docutils literal notranslate"><span class="pre">comment</span></code>)</p></li>
-<li><p><strong>Strict filtering</strong>: Exclude exact word by prefixing it with ‘-‘ (e.g.: <code class="docutils literal notranslate"><span class="pre">-word</span></code>).  Include exact word, even if another
-rule would exclude it, by prefixing it with ‘+’ (e.g.: <code class="docutils literal notranslate"><span class="pre">+word</span></code>).</p></li>
-<li><p><strong>Wildcard filtering</strong>: Exclude all genres ending with “word” (e.g.: <code class="docutils literal notranslate"><span class="pre">-*word</span></code>).  Include all genres starting with “word”
-(e.g.: <code class="docutils literal notranslate"><span class="pre">+word*</span></code>).  Exclude all genres starting with ‘w’ and ending with “rd” (e.g.: <code class="docutils literal notranslate"><span class="pre">-w*rd</span></code>).</p></li>
-<li><p><strong>Regular expressions filtering (Python “re” syntax)</strong>: Exclude genres starting with ‘w’ followed by any character, then
-‘r’ followed by at least one ‘d’ (e.g.: <code class="docutils literal notranslate"><span class="pre">-/^w.rd+/</span></code>).</p></li>
-</ul>
-</div></blockquote>
-</div>
-<div class="section" id="ratings">
-<h2>Ratings<a class="headerlink" href="#ratings" title="Permalink to this headline">¶</a></h2>
-<p><strong>Enable track ratings</strong></p>
-<blockquote>
-<div><p>Check to write track ratings to your files.</p>
-</div></blockquote>
-<p><strong>E-mail</strong></p>
-<blockquote>
-<div><p>The email address used when submitting ratings to MusicBrainz.  This identifies the user that provided the rating.</p>
-</div></blockquote>
-<p><strong>Submit ratings to MusicBrainz</strong></p>
-<blockquote>
-<div><p>Check to submit ratings to MusicBrainz. The tracks will be rated with your account.</p>
-</div></blockquote>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -331,7 +257,7 @@ rule would exclude it, by prefixing it with ‘+’ (e.g.: <code class="docutils
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="options_tags.html" class="btn btn-neutral float-right" title="Tag Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="options_releases.html" class="btn btn-neutral float-right" title="Preferred Releases" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="options_general.html" class="btn btn-neutral float-left" title="General Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
