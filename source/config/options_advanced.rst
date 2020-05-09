@@ -45,69 +45,15 @@ Advanced Options
     retrieved from MusicBrainz is a tag listed in this ignore list then the file will be
     considered unmodified.
 
-Network
--------
+.. only:: html
 
-**Web Proxy**
+   .. seealso::
 
-    If you need a proxy to make an outside network connection you may specify one here.  The required
-    settings are **Server Address**, **Port**, **Username** and **Password**.
+      :doc:`options_network` /
+      :doc:`options_matching`
 
-.. |lookup_tagger| image:: ../images/mblookup-tagger.png
-   :height: 1em
+.. toctree::
+   :hidden:
 
-**Browser Integration**
-
-    The browser integration allows you to load releases and recordings into Picard directly from the
-    MusicBrainz website. Once you have opened musicbrainz.org in your browser from Picard, the website
-    will show the green tagger button |lookup_tagger| next to releases and recordings.  Clicking on
-    this button will load the corresponding release or recording into Picard.
-
-**Default listening port**
-
-    This identifies the default port Picard will listen on for the browser integration. If the port
-    is not available Picard will try to increase the port number by one until it finds a free port.
-
-**Listen only on localhost**
-
-    By default Picard will limit access to the browser integration port to your local machine.
-    Deactivating this option will expose the port on your network, allowing you to request Picard to
-    load a specific release or recording via the network. For example, this would be used for the
-    `Picard Barcode Scanner <https://play.google.com/store/apps/details?id=org.musicbrainz.picard.barcodescanner>`_
-    Android app.
-
-    **Warning**: *Only enable this option when you actually need it and only on networks you trust.
-    Exposing application ports via the network can open potential security holes on your system.*
-
-
-Matching
---------
-
-It is recommended for most users to leave these settings at their default values. For advanced users,
-these allow you to tune the way Picard matches your files and clusters to MusicBrainz releases
-and tracks.
-
-**Minimal similarity for file lookups**
-
-    The higher the percentage value, the more similar an individual file's metadata must be to the
-    metadata from MusicBrainz for it to be matched to a release on the right-hand side.
-
-**Minimal similarity for cluster lookups**
-
-    The higher the percentage value, the more similar a cluster of files from the left-hand pane must
-    be to a MusicBrainz release for the entire cluster to be matched to a release on the right-hand
-    side.
-
-**Minimal similarity for matching files to tracks**
-
-    The higher the percentage value, the more similar an individual file's metadata must be to the
-    metadata from MusicBrainz for it to be matched to a release on the right-hand side.
-
-If you have absolutely no metadata in your current files, and you are using "Scan" to match tracks,
-you may find that you need to lower the value of "Minimal similarity for matching files to tracks"
-in order for Picard to match the files within a release. Otherwise you may find that Picard matches
-the track to a release but then is not sure which track is correct; and leaves it in an "unmatched
-files" group within that release.
-
-As a general rule, lowering the percentages may increase the chance of finding a match at the risk of
-false positives and incorrect matches.
+   options_network
+   options_matching

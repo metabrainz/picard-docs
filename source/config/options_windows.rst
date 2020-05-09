@@ -7,27 +7,11 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
-CD Lookup Options
-=================
+Windows
+=======
 
-This section allows you to select which CD ROM device to use by default for looking up a CD.
+On Windows, Picard has a pulldown menu listing the various CD drives it has found. Pull down the
+menu and select the drive you want to use by default.
 
-On Windows and Linux systems, you can override this setting by clicking on :menuselection:`"Tools -->
+You can override this setting by clicking on :menuselection:`"Tools -->
 Lookup CD..."` and selecting the desired device from the list of available devices.
-
-.. only:: html
-
-   .. seealso::
-
-      :doc:`options_windows` /
-      :doc:`options_os_x` /
-      :doc:`options_linux` /
-      :doc:`options_other_platforms`
-
-.. toctree::
-   :hidden:
-
-   options_windows
-   options_os_x
-   options_linux
-   options_other_platforms
