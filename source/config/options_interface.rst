@@ -50,6 +50,7 @@ User Interface Options
 
    .. seealso::
 
+      Details:
       :doc:`options_interface_colors` /
       :doc:`options_interface_top_tags`
 

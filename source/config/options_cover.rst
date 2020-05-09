@@ -17,6 +17,7 @@ to download cover art from MusicBrainz cover art relationships.
 
    .. seealso::
 
+      Details:
       :doc:`options_location` /
       :doc:`options_cover_art_providers` /
       :doc:`options_cover_art_archive` /

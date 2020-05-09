@@ -33,6 +33,7 @@ release. A description of how to gain access to these beta versions for testing 
 
    .. seealso::
 
+      Details:
       :doc:`tags_basic` /
       :doc:`tags_advanced` /
       :doc:`variables_basic` /

@@ -49,6 +49,7 @@ Advanced Options
 
    .. seealso::
 
+      Details:
       :doc:`options_network` /
       :doc:`options_matching`
 

@@ -24,6 +24,7 @@ Tag Options
 
    .. seealso::
 
+      Details:
       :doc:`options_before_tagging` /
       :doc:`options_tag_compatibility`
 

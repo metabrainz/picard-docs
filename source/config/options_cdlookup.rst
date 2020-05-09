@@ -19,6 +19,7 @@ Lookup CD..."` and selecting the desired device from the list of available devic
 
    .. seealso::
 
+      Platform-specific details:
       :doc:`options_windows` /
       :doc:`options_os_x` /
       :doc:`options_linux` /

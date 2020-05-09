@@ -54,6 +54,7 @@ Metadata Options
 
    .. seealso::
 
+      Details:
       :doc:`options_releases` /
       :doc:`options_genres` /
       :doc:`options_ratings`
