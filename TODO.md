@@ -33,3 +33,5 @@
 - Add instructions for installing / enabling / disabling plugins in config/options_plugins
 
 - Add other sections from Tags page and restructure (using see also) to match original website
+
+- Use common index.rst file for html and pdf outputs

@@ -194,6 +194,7 @@ Commands:
 
    build html          Build HTML files
    build pdf           Build PDF files
+   build epub          Build epub files
    build po            Build the specified language
    build pot           Build translation template files
 
