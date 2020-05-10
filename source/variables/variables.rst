@@ -37,7 +37,10 @@ release. A description of how to gain access to these beta versions for testing 
       :doc:`tags_basic` /
       :doc:`tags_advanced` /
       :doc:`variables_basic` /
-      :doc:`variables_advanced`
+      :doc:`variables_advanced` /
+      :doc:`variables_classical` /
+      :doc:`variables_plugins` /
+      :doc:`variables_other_information`
 
    .. toctree::
       :hidden:
@@ -46,6 +49,9 @@ release. A description of how to gain access to these beta versions for testing 
       tags_advanced
       variables_basic
       variables_advanced
+      variables_classical
+      variables_plugins
+      variables_other_information
 
 .. only:: latex
 
@@ -55,3 +61,6 @@ release. A description of how to gain access to these beta versions for testing 
       tags_advanced
       variables_basic
       variables_advanced
+      variables_classical
+      variables_plugins
+      variables_other_information

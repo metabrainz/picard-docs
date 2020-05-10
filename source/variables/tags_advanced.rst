@@ -8,6 +8,8 @@
 
 .. TODO: Expand definitions
 
+.. TODO: Note which tags are not provided by Picard
+
 Advanced Tags
 =============
 You can make additional tags available by enabling the :ref:`Advanced Relationships <advanced_relationships>` and the
