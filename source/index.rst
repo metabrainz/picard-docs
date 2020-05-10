@@ -102,6 +102,7 @@ MusicBrainz Picard
    functions/list_by_type
    extending/extending
    technical/plugins_api
+   faq/faq
    examples/examples
 
 

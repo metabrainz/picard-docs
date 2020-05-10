@@ -25,9 +25,6 @@
   - videos
   - scripts
 
-- Add FAQ section
-  - copy from existing site
-
 - Add flatpack installation instructions from existing site
 
 - Add instructions for installing / enabling / disabling plugins in config/options_plugins
