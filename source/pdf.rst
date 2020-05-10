@@ -24,6 +24,7 @@ MusicBrainz Picard
    functions/list_by_type
    usage/using
    extending/extending
+   troubleshooting
    faq/faq
    examples/examples
    pdf_appendices

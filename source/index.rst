@@ -67,6 +67,11 @@ MusicBrainz Picard
    usage/using
 
 
+.. toctree::
+   :caption: Troubleshooting
+
+   troubleshooting
+
 .. .. toctree::
 ..    :caption: Functions:
 
