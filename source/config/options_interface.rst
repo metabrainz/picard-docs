@@ -10,6 +10,9 @@
 User Interface Options
 ======================
 
+.. image:: ../images/options-interface.png
+   :width: 100 %
+
 **Show text labels under icon**
 
     If this option is disabled, the text labels under the icons in the toolbar will not be displayed,

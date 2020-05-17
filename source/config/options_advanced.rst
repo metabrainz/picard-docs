@@ -10,6 +10,9 @@
 Advanced Options
 ================
 
+.. image:: ../images/options-advanced.png
+   :width: 100 %
+
 **Ignore file paths matching the following regular expression**
 
     You can specify patterns for files and directories that Picard should never load.

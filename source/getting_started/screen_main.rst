@@ -12,7 +12,7 @@ Main Screen
 
 .. Picard's main screen is comprised of a number of sections, as described below:
 
-.. image:: images/screen_main.png
+.. image:: ../images/screen_main.png
    :width: 100 %
 
 1. **Menu Bar**: This provides the pull-down menu of actions that Picard can perform.

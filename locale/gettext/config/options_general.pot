@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard \n"
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-05 11:48-0600\n"
+"POT-Creation-Date: 2020-05-16 18:24-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,94 +20,94 @@ msgstr ""
 msgid "General Options"
 msgstr ""
 
-#: ../../source/config/options_general.rst:13
+#: ../../source/config/options_general.rst:16
 msgid "**Server address**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:15
+#: ../../source/config/options_general.rst:18
 msgid "The domain name for the MusicBrainz database server used by Picard to get details of your music. Default value: musicbrainz.org (for the main MusicBrainz server)."
 msgstr ""
 
-#: ../../source/config/options_general.rst:18
+#: ../../source/config/options_general.rst:21
 msgid "**Port**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:20
+#: ../../source/config/options_general.rst:23
 msgid "The port number for the server. Default value: 80 (for the main MusicBrainz server)."
 msgstr ""
 
-#: ../../source/config/options_general.rst:22
+#: ../../source/config/options_general.rst:25
 msgid "**Username**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:24
+#: ../../source/config/options_general.rst:27
 msgid "Your MusicBrainz website username, used to submit acoustic fingerprints, retrieve and save items to your collections, and retrieve personal folksonomy tags."
 msgstr ""
 
-#: ../../source/config/options_general.rst:27
+#: ../../source/config/options_general.rst:30
 msgid "**Password**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:29
+#: ../../source/config/options_general.rst:32
 msgid "Your MusicBrainz website password."
 msgstr ""
 
-#: ../../source/config/options_general.rst:31
+#: ../../source/config/options_general.rst:34
 msgid "**Automatically scan all new files**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:33
+#: ../../source/config/options_general.rst:36
 msgid "Check this box if you want Picard to scan each music file you add and look for an AcoustID fingerprint. This takes time, but may be helpful for you and MusicBrainz. Leave it unchecked if you don't want Picard to do this scan automatically. In any case, you can direct Picard to scan a particular music file at any time using :menuselection:`\"Tools --> Scan\"`."
 msgstr ""
 
-#: ../../source/config/options_general.rst:38
+#: ../../source/config/options_general.rst:41
 msgid "**Ignore MBIDs when loading new files**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:40
+#: ../../source/config/options_general.rst:43
 msgid "If you disable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track.  This is useful when re-processing files that have been previously tagged with incorrect information."
 msgstr ""
 
-#: ../../source/config/options_general.rst:45
+#: ../../source/config/options_general.rst:48
 msgid "**Check for updates during start-up**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:47
+#: ../../source/config/options_general.rst:50
 msgid "This option determines whether or not Picard will automatically check for program updates during startup.  In any case, you can have Picard check for program updates at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
 
-#: ../../source/config/options_general.rst:51
+#: ../../source/config/options_general.rst:54
 msgid "**Days between checks**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:53
+#: ../../source/config/options_general.rst:56
 msgid "This option allows you to limit the automatic update checking by selecting the interval, in days, between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that this only applies if the \"Check for updates during start-up\" option is enabled."
 msgstr ""
 
-#: ../../source/config/options_general.rst:57
+#: ../../source/config/options_general.rst:60
 msgid "**Updates to check**"
 msgstr ""
 
-#: ../../source/config/options_general.rst:59
+#: ../../source/config/options_general.rst:62
 msgid "This option allows you to select which levels of update to check. Your options are:"
 msgstr ""
 
-#: ../../source/config/options_general.rst:61
+#: ../../source/config/options_general.rst:64
 msgid "Stable releases only"
 msgstr ""
 
-#: ../../source/config/options_general.rst:62
+#: ../../source/config/options_general.rst:65
 msgid "Stable and Beta releases"
 msgstr ""
 
-#: ../../source/config/options_general.rst:63
+#: ../../source/config/options_general.rst:66
 msgid "Stable, Beta and Dev releases"
 msgstr ""
 
-#: ../../source/config/options_general.rst:65
+#: ../../source/config/options_general.rst:68
 msgid "For example, if you subscribe to \"Stable releases only\" you will not be notified if a new Beta or Dev release is issued."
 msgstr ""
 
-#: ../../source/config/options_general.rst:68
-msgid "**Note**: The update settings and \"Check for update\" function may not be available when Picard is distributed as a package. In that case, the user should check with the maintainer of the package to determine when an update is available."
+#: ../../source/config/options_general.rst:73
+msgid "The update checking related settings and :menuselection:`\"Help --> Check for update...\"` command may not be available when Picard is distributed as a package. In that case, the user should check with the maintainer of the package to determine when an update is available."
 msgstr ""

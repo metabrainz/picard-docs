@@ -10,6 +10,9 @@
 Tag Options
 ===========
 
+.. image:: ../images/options-tags.png
+   :width: 100 %
+
 **Write tags to files**
 
    Uncheck to disable Picard from writing metadata to your files. Picard may still move or rename your files according

@@ -10,6 +10,9 @@
 Cover Art Archive
 =================
 
+.. image:: ../images/options-cover-caa.png
+   :width: 100 %
+
 In this section you can decide which types of cover art you would like to download from the Cover Art Archive,
 and what quality (size) you want to download. Obviously, the better the quality, the larger the size of the files.
 

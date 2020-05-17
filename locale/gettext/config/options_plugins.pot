@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard \n"
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-05 11:48-0600\n"
+"POT-Creation-Date: 2020-05-16 18:24-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,14 +20,58 @@ msgstr ""
 msgid "Plugins Options"
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:13
+#: ../../source/config/options_plugins.rst:16
 msgid "This section allows you to manage the plugins used by Picard.  You can install new plugins or enable, disable or uninstall plugins that are currently installed.  Picard provides a list of plugins that have been submitted to the project.  A list of the standard plugins is available on the `plugins page <https://picard.musicbrainz.org/plugins/>`_ on the Picard website."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:18
+#: ../../source/config/options_plugins.rst:21
 msgid "There are also a number of plugins available by third-party developers.  Often these are discussed on the `Community Discussion Forum <https://community.metabrainz.org/>`_ so if you're looking for a particular enhancement or functionality, a search there might be useful.  In addition, one of the MusicBrainz editors, `Colby Dray <https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list of available plugins on a `wiki page <https://wiki.musicbrainz.org/User:Colbydray/PicardPlugins>`_."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:24
-msgid "Note that some plugins have their own option page which will appear under the \"Plugins\" section of the Options."
+#: ../../source/config/options_plugins.rst:27
+msgid "The screen displays a list of the standard plugins and any others that have been installed.  Each plugin is displayed on a separate line showing the version number and one or more status / action icons.  The icons are:"
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:34
+msgid "|img-plugin-download|"
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:0
+msgid "This icon indicates that the plugin is not installed.  Clicking the icon will download and install the plugin."
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:43
+msgid "|img-plugin-reload|"
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:0
+msgid "This icon indicates that a newer version of the plugin is available.  Clicking the icon will download and install the updated version."
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:52
+msgid "|img-plugin-enabled|"
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:0
+msgid "This icon indicates that the plugin is installed and currently enabled.  Clicking the icon will disable the plugin, but it will still be installed."
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:61
+msgid "|img-plugin-disabled|"
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:0
+msgid "This icon indicates that the plugin is installed but currently disabled.  Clicking the icon will enable the plugin."
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:70
+msgid "|img-plugin-trash|"
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:0
+msgid "This icon indicates that the plugin is currently installed.  Clicking the icon will uninstall the plugin."
+msgstr ""
+
+#: ../../source/config/options_plugins.rst:77
+msgid "Some plugins have their own option page which will typically appear under the \"Plugins\" section of the Options."
 msgstr ""

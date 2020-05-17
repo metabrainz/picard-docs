@@ -10,6 +10,9 @@
 Tag Compatibility
 =================
 
+.. image:: ../images/options-tags-compatibility.png
+   :width: 100 %
+
 **ID3v2 version**
 
    Although ID3v2.4 is the latest version, its support in music players is still lacking. While software such as
@@ -25,7 +28,7 @@ Tag Compatibility
    The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16. Use ISO-8859-1 only if you face
    compatibility issues with your player.
 
-**Join id3v23 tags with**
+**Join ID3v23 tags with**
 
    As mentioned above, ID3v2.3 does not support multi-value tags, and so Picard flattens these to strings before
    saving them to ID3v2.3 tags. This setting defines the string used to separate the values when flattened. Use

@@ -10,6 +10,9 @@
 Metadata Options
 ================
 
+.. image:: ../images/options-metadata.png
+   :width: 100 %
+
 **Translate artist names to this locale where possible**
 
    When checked, Picard will see whether an artist has an alias for the selected locale. If it does, Picard will use that

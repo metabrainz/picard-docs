@@ -7,101 +7,61 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
+.. Master File for Building HTML Documents
+
 MusicBrainz Picard
 ==================
 
-.. .. toctree::
-..    :caption: Introduction:
+**User Guide for MusicBrainz Picard, the next generation tagger.**
 
-..    introduction
-..    glossary
+MusicBrainz Picard is a cross-platform music file tagger. This User Guide is intended to augment the information
+provided on the `Picard website <https://picard.musicbrainz.org/>`_ and to provide an alternate format for the
+documentation, including a PDF document suitable for printing. Links to additional information such as scripts,
+plugins and tutorials are provided when available rather than trying to reproduce the information in this document.
+
+.. include:: copyright_notice.txt
 
 
 .. toctree::
+   :caption: About Picard
+   :hidden:
 
-   notices
    introduction
    glossary
 
 
-.. .. toctree::
-
-..    starting
-
 .. toctree::
    :caption: Getting Started:
+   :hidden:
 
-   download
-   screen_main
+   getting_started/download
+   getting_started/screen_main
+   getting_started/status_icons
    config/configuration
    variables/variables
    scripting
 
-
-.. .. toctree::
-..    :caption: Overview:
-..
-..    scripting
-.. ..   variables/variables
-
-.. .. toctree::
-..    :caption: Tags & Variables:
-
-..    variables/variables
-
-..   variables/tags_basic
-..   variables/tags_advanced
-..   variables/variables_basic
-..   variables/variables_advanced
-
-
-.. .. toctree::
-..    :caption: Scripting
-
-..    scripting
-
-
 .. toctree::
    :caption: Using Picard
+   :hidden:
 
    usage/using
 
 
 .. toctree::
    :caption: Troubleshooting
+   :hidden:
 
-   troubleshooting
-
-.. .. toctree::
-..    :caption: Functions:
-
-..    source/functions/_list_by_type
-..    source/functions/_list_by_name
-
-
-.. .. toctree::
-..    :caption: Extending Picard:
-
-..    extending/extending
-
-
-.. .. toctree::
-..    :caption: Extending Picard:
-..
-..    source/extending/extending
-..    source/extending/plugins
-..    source/extending/scripts
-..    source/extending/processing
-
-.. .. toctree::
-..    :maxdepth: 2
-..    :caption: Examples:
-
-..    examples/examples
+   troubleshooting/troubleshooting
+   troubleshooting/no_coverart
+   troubleshooting/missing_tags
+   troubleshooting/not_saving
+   troubleshooting/stopped_working
 
 
 .. toctree::
    :caption: Appendices:
+   :hidden:
 
    acknowledgements
    functions/list_by_type
@@ -111,11 +71,10 @@ MusicBrainz Picard
    examples/examples
 
 
-.. Indices and tables
-.. ==================
+..    Indices and tables
+..    ==================
+..
+..    * :ref:`genindex`
+..    * :ref:`modindex`
+..    * :ref:`search`
 
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
-.. * :doc:`scripting`
-.. * :doc:`variables/variables`

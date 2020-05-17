@@ -45,6 +45,7 @@ item, simply check the box for the screen option.  The items are:
 
    This displays the built-in player for playing selected audio files.
 
+.. _action_options:
 
 Action Options
 --------------

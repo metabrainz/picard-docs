@@ -36,7 +36,9 @@ File Formats
    * ADTS stream / AAC (.aac)
    * AC-3 (.ac3, .eac3)
 
-   WAVs cannot be tagged due to the lack of a standard for doing so, however, they can be fingerprinted and renamed.
+   .. note::
+
+      WAV files cannot be tagged due to the lack of a standard for doing so, however, they can be fingerprinted and renamed.
 
 **What formats will Picard support?**
 
@@ -70,7 +72,7 @@ File Formats
 
    This process should work in both panes.
 
-**The built-in audio player cannot playback my file. Which formats does it support?**
+**The built-in audio player cannot play my file. Which formats does it support?**
 
    The formats supported by the built-in audio player depend on the formats supported by your operating system.
 
@@ -91,7 +93,7 @@ File Formats
       On Linux systems the player uses GStreamer which supports most common audio formats, although some distributions might exclude some codecs due to
       licensing issues. For the widest format support make sure you install all of the GStreamer plugins available for your distribution.
 
-**I am using Fedora, why doesn't acoustic fingerprinting work?**
+**I am using Fedora. Why doesn't acoustic fingerprinting work?**
 
    Acoustic fingerprinting in Picard uses a tool called ``fpcalc``, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
    from the `RPM Fusion repository <https://rpmfusion.org/>`_. This functionality is not contained in the main Fedora ``picard`` package because it requires

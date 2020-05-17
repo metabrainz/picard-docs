@@ -32,10 +32,11 @@ string, or multi-value variables containing multiple text strings. In scripts, m
 variables are automatically converted to a single text string by joining the values with a
 semicolon ";", except when used with special multi-value functions.
 
-Scripting Functions
--------------------
 
 .. only:: html
+
+   Scripting Functions
+   -------------------
 
    The full list of available scripting functions is available, either
    :doc:`sorted alphabetically <functions/list_by_name>` or
@@ -43,4 +44,6 @@ Scripting Functions
 
 .. only:: latex
 
-    The full list of available scripting functions is covered in the following chapter.
+   .. note::
+
+      The full list of available scripting functions is covered in the following chapter.

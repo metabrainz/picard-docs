@@ -10,6 +10,9 @@
 Network
 =======
 
+.. image:: ../images/options-network.png
+   :width: 100 %
+
 **Web Proxy**
 
     If you need a proxy to make an outside network connection you may specify one here.  The required

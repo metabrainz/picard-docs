@@ -44,8 +44,8 @@ Configuration
 
 **How do I tell Picard which browser to use?**
 
-   On Windows, macOS, GNOME and KDE, Picard uses the standard browser for these systems. On other systems, you can use the ``BROWSER``
-   environment variable.
+   On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can
+   use the ``BROWSER`` environment variable.
 
    For example::
 

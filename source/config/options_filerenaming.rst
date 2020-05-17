@@ -10,6 +10,9 @@
 File Naming Options
 ===================
 
+.. image:: ../images/options-filenaming.png
+   :width: 100 %
+
 These options determine how Picard handles files when they are saved with updated metadata.
 
 **Move files when saving**

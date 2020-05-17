@@ -10,6 +10,11 @@
 Before Tagging
 ==============
 
+.. only:: html
+
+   .. image:: ../images/options-tags.png
+      :width: 100 %
+
 **Clear existing tags**
 
    Checking this will remove all existing metadata and leave your files with only MusicBrainz metadata. Information you

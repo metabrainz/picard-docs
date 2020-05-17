@@ -53,8 +53,8 @@ SPHINX_BUILD = 'sphinx-build'
 SPHINX_INTL = 'sphinx-intl'
 SPHINX_BUILD_DIR = '_build'
 SPHINX_SOURCE_DIR = 'source'
-SPHINX_GETTEXT_DIR = 'gettext'
 SPHINX_LOCALE_DIR = 'locale'
+SPHINX_GETTEXT_DIR = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
 SPHINX_BUILD_TIMEOUT = 300
 OUTPUT_DIR = 'docs'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
@@ -640,7 +640,7 @@ def build_html(language=''):
     else:
         language_option = '-D language=' + language
         check_sphinx_intl()
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
         print('\nUpdating PO files with command: {0}\n'.format(command))
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
         if exit_code:
@@ -709,7 +709,8 @@ def build_pdf(language=''):
         language_option = ''
     else:
         language_option = '-D language=' + language
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+        # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
         print('\nUpdating PO files with command: {0}\n'.format(command))
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
         if exit_code:
@@ -751,7 +752,8 @@ def build_epub(language=''):
         language_option = ''
     else:
         language_option = '-D language=' + language
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+        # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
         print('\nUpdating PO files with command: {0}\n'.format(command))
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
         if exit_code:
@@ -760,7 +762,8 @@ def build_epub(language=''):
     epub_dir = os.path.join(SPHINX_BUILD_DIR, 'epub')
     print('\nCleaning build directory: {0}'.format(epub_dir))
     clean_directory(epub_dir, 'epub')
-    command = ' '.join([SPHINX_BUILD, '-M', 'epub', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
+    # command = ' '.join([SPHINX_BUILD, '-M', 'epub', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
+    command = ' '.join([SPHINX_BUILD, '-M', 'epub', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', '-D', 'master_doc="epub"', language_option])
     print('\nBuilding with command: {0}\n'.format(command))
     try:
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)

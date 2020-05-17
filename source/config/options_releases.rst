@@ -10,6 +10,9 @@
 Preferred Releases
 ==================
 
+.. image:: ../images/options-metadata-releases.png
+   :width: 100 %
+
 **Preferred release types**
 
    Adjust the sliders for various release types to tweak how likely Picard is to match a file or cluster to releases of various

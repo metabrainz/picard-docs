@@ -10,6 +10,11 @@
 Location
 ========
 
+.. only:: html
+
+   .. image:: ../images/options-cover.png
+      :width: 100 %
+
 **Embed cover images into tags**
 
    Enables images to be embedded directly into your music files. While this will use more storage space

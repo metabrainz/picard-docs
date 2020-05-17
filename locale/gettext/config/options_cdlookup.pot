@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard \n"
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-05 11:48-0600\n"
+"POT-Creation-Date: 2020-05-11 22:06-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,45 +25,9 @@ msgid "This section allows you to select which CD ROM device to use by default f
 msgstr ""
 
 #: ../../source/config/options_cdlookup.rst:15
-msgid "**Windows**"
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:17
-msgid "On Windows, Picard has a pulldown menu listing the various CD drives it has found. Pull down the menu and select the drive you want to use by default."
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:20
-msgid "**macOS**"
+msgid "On Windows and Linux systems, you can override this setting by clicking on :menuselection:`\"Tools --> Lookup CD...\"` and selecting the desired device from the list of available devices."
 msgstr ""
 
 #: ../../source/config/options_cdlookup.rst:22
-msgid "In macOS, this option is currently a text field. The device is usually ``/dev/rdisk1``."
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:24
-msgid "If that doesn't work, one way is to simply keep increasing the number (e.g. ``/dev/rdisk2``) until it does work. A less trial and error method is to open \"Terminal\" and type ``mount``. The output should include a line such as::"
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:30
-msgid "You need to replace ``/dev/disk`` with ``/dev/rdisk``, so if, for example, it says ``/dev/disk2``, you should enter ``/dev/rdisk2`` in Picard's preferences."
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:33
-msgid "**Linux**"
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:35
-msgid "In Linux, Picard has a pulldown menu like in Windows. If you're using an older version of Picard with a text field, you should enter the device name (typically ``/dev/cdrom``)."
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:38
-msgid "**Other platforms**"
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:40
-msgid "On other platforms, the CD Lookup option is a text field and you should enter the path to the CD drive here."
-msgstr ""
-
-#: ../../source/config/options_cdlookup.rst:43
-msgid "On Windows and Linux systems, you can override this setting by clicking on :menuselection:`\"Tools --> Lookup CD...\"` and selecting the desired device from the list of available devices."
+msgid "Platform-specific details: :doc:`options_windows` / :doc:`options_os_x` / :doc:`options_linux` / :doc:`options_other_platforms`"
 msgstr ""
