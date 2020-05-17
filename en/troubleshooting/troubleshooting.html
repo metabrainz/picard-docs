@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>General Troubleshooting &mdash; MusicBrainz Picard v2.3.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="There is no coverart" href="no_coverart.html" />
+    <link rel="prev" title="Saving Updated Files" href="../usage/save.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.3.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting.html">Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">General Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-help">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reporting-a-bug">Reporting a Bug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-logs">Getting Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stopped_working.html">Picard just stopped working</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>General Troubleshooting</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/troubleshooting/troubleshooting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="general-troubleshooting">
+<h1>General Troubleshooting<a class="headerlink" href="#general-troubleshooting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-help">
+<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
+<p>If you have problems using Picard, please first check the following resources:</p>
+<ul class="simple">
+<li><p>For general usage information see the <a class="reference internal" href="../usage/using.html"><span class="doc">Using Picard</span></a> documentation and the <a class="reference external" href="https://picard.musicbrainz.org/docs/guide/">illustrated quick start guide</a>.</p></li>
+<li><p>Read the <a class="reference internal" href="../faq/faq.html"><span class="doc">FAQ section</span></a> for common questions and problems.</p></li>
+<li><p>Consult the <a class="reference external" href="https://community.metabrainz.org/c/picard">community forums</a>.</p></li>
+<li><p>Check the <a class="reference external" href="https://picard.musicbrainz.org/downloads/">download page</a> for a newer version of Picard which might
+solve your problem.</p></li>
+<li><p>If the problem is to do with a plugin, check the <a class="reference external" href="https://picard.musicbrainz.org/plugins/">Picard Plugins</a> for
+updated plugin versions.</p></li>
+</ul>
+</div>
+<div class="section" id="reporting-a-bug">
+<h2>Reporting a Bug<a class="headerlink" href="#reporting-a-bug" title="Permalink to this headline">¶</a></h2>
+<p>If you think you have found a bug please check whether you are using the latest version of Picard and whether the
+bug has already been reported in the <a class="reference external" href="https://tickets.musicbrainz.org/browse/PICARD">bug tracker</a>. If you’re not
+sure or don’t want to look through the existing tickets, ask on the community forums first.</p>
+<p>If you’re still convinced you have found a new bug, open a <a class="reference external" href="https://tickets.musicbrainz.org/secure/CreateIssue.jspa?pid=10042&amp;issuetype=1">new ticket</a> providing the following information:</p>
+<ul class="simple">
+<li><p>Which version of Picard do you use? (“Affects Version” in the form)</p></li>
+<li><p>Which operating system do you use? (“Environment” in the form)</p></li>
+<li><p>What did you do when the bug occurred?</p></li>
+<li><p>What actually happened and what did you expect to happen?</p></li>
+<li><p>If you’re using plugins, which plugins do you have enabled?</p></li>
+</ul>
+</div>
+<div class="section" id="getting-logs">
+<h2>Getting Logs<a class="headerlink" href="#getting-logs" title="Permalink to this headline">¶</a></h2>
+<p>For many bugs, it helps developers to have a log from Picard. You can see the log by going to <span class="menuselection">“Help ‣ View Log”</span>.
+You can also get a full debug log (better because it contains more detailed information) by starting Picard with <cite>-d</cite> as a
+command-line argument. If you’re using Windows, you can change your shortcut’s Target (<span class="menuselection">right click shortcut ‣
+Properties</span>) to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C:\Program Files\MusicBrainz Picard\picard.exe&quot;</span> <span class="o">-</span><span class="n">d</span>
+</pre></div>
+</div>
+<p>Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please remember to first remove any personal and confidential information like user id, passwords or authorization tokens
+before posting or submitting any log output.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Specific situations:
+<a class="reference internal" href="no_coverart.html"><span class="doc">There is no coverart</span></a> /
+<a class="reference internal" href="missing_tags.html"><span class="doc">Tags are not updated or saved</span></a> /
+<a class="reference internal" href="not_saving.html"><span class="doc">Files are not being saved</span></a> /
+<a class="reference internal" href="stopped_working.html"><span class="doc">Picard just stopped working</span></a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="no_coverart.html" class="btn btn-neutral float-right" title="There is no coverart" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../usage/save.html" class="btn btn-neutral float-left" title="Saving Updated Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bob Swift
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Select Language</dt>
+        <dd><a href="../../en/troubleshooting/troubleshooting.html" class="__ptNoRemap">English</a></dd>
+<!--
+        <dd><a href="../../de/troubleshooting/troubleshooting.html" class="__ptNoRemap">Deutsche</a></dd>
+        <dd><a href="../../fr/troubleshooting/troubleshooting.html" class="__ptNoRemap">Française</a></dd>
+        <dd><a href="../../es/troubleshooting/troubleshooting.html" class="__ptNoRemap">Española</a></dd>
+-->
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+<!--
+        <dd><a href="../../MusicBrainz_Picard_[en].pdf" target="_blank" class="__ptNoRemap">PDF</a></dd>
+-->
+        <dd><a href="../../MusicBrainz_Picard_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="../../MusicBrainz_Picard_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="../../MusicBrainz_Picard_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

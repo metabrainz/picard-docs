@@ -10,6 +10,9 @@
 Scripting Options
 =================
 
+.. image:: ../images/options-scripting.png
+   :width: 100 %
+
 This section allows for the management of user-defined tagging scripts.
 
 The "Tagger Script(s)" checkbox at the top of the page allows you to completely disable all

@@ -10,6 +10,11 @@
 Cover Art Providers
 ===================
 
+.. only:: html
+
+   .. image:: ../images/options-cover.png
+      :width: 100 %
+
 Picard can download Cover Art from a number of sources, and you can choose which sources you want Picard to
 use. You can activate more than one provider and choose the order in which the providers
 are queried. Picard will try the providers from top to bottom until an image is returned.

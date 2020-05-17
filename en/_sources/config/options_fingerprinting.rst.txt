@@ -10,6 +10,9 @@
 Fingerprinting Options
 ======================
 
+.. image:: ../images/options-fingerprinting.png
+   :width: 100 %
+
 If you select a file or cluster in the left-hand side of the Picard screen and select :menuselection:`"Tools
 --> Scan"`, Picard will invoke a program to scan the files and produce a fingerprint for each that can then
 be used to look up the file on MusicBrainz.

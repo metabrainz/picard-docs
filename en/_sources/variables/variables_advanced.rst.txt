@@ -8,6 +8,8 @@
 
 .. TODO: Expand definitions
 
+.. TODO: Note which tags are not provided by Picard
+
 Advanced Variables
 ==================
 

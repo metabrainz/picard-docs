@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tags from Plugins &mdash; MusicBrainz Picard v2.3.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Other Information" href="variables_other_information.html" />
+    <link rel="prev" title="Classical Music Tags" href="variables_classical.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.3.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="variables.html">Tags &amp; Variables</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tags_basic.html">Basic Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tags_advanced.html">Advanced Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_basic.html">Basic Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_advanced.html">Advanced Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables_classical.html">Classical Music Tags</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tags from Plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#last-fm">Last.fm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#last-fm-plus">Last.fm Plus</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="variables_other_information.html">Other Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting.html">Scripting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="variables.html">Tags &amp; Variables</a> &raquo;</li>
+        
+      <li>Tags from Plugins</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/variables/variables_plugins.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tags-from-plugins">
+<h1>Tags from Plugins<a class="headerlink" href="#tags-from-plugins" title="Permalink to this headline">¶</a></h1>
+<p>Plugins from Picard <a class="reference internal" href="../config/options_plugins.html"><span class="doc">Plugins</span></a> can add more tags.  Following are two popular examples.</p>
+<div class="section" id="last-fm">
+<h2>Last.fm<a class="headerlink" href="#last-fm" title="Permalink to this headline">¶</a></h2>
+<p><strong>genre</strong></p>
+<blockquote>
+<div><p>Pseudo-genre based on folksonomy tags.</p>
+</div></blockquote>
+</div>
+<div class="section" id="last-fm-plus">
+<h2>Last.fm Plus<a class="headerlink" href="#last-fm-plus" title="Permalink to this headline">¶</a></h2>
+<p>The LastFMPlus plugin is a sophisticated plugin that tries to provide stable and meaningful genre selections from the ever-changing and
+idiosyncratic list provided by lastFM.</p>
+<p>The LastFMPlus plugin is very configurable and examples provided here are based on the default lists provided on the Tag Filter List tab
+of the LastFMPlus options page.</p>
+<p><strong>Comment:songs-db_Custom1</strong></p>
+<blockquote>
+<div><p>The decade (e.g.: 1970s).</p>
+</div></blockquote>
+<p><strong>Comment:songs-db_Custom2</strong></p>
+<blockquote>
+<div><p>Category (e.g.: Female Vocalist, Singer-Songwriter).</p>
+</div></blockquote>
+<p><strong>Comment:songs-db_Custom3</strong></p>
+<blockquote>
+<div><p>Country (e.g.: British).</p>
+</div></blockquote>
+<p><strong>Comment:songs-db_Occassion</strong></p>
+<blockquote>
+<div><p>Good situations to play a track (e.g.: Driving, Love, Party).</p>
+</div></blockquote>
+<p><strong>genre</strong></p>
+<blockquote>
+<div><p>Specific detailed genres. For example, if the group is Rock the genre could be one of Acid rock, Acoustic rock, Alternative metal,
+Alternative rock, Art rock, Blues rock, Boogie rock, Brit rock, Christian rock, College rock, Country rock, etc.</p>
+</div></blockquote>
+<p><strong>grouping</strong></p>
+<blockquote>
+<div><p>Top-level genres - default list: Audiobooks, Blues, Classic rock, Classical, Country, Dance, Electronica, Folk, Hip-hop, Indie, Jazz,
+Kids, Metal, Pop, Punk, Reggae, Rock, Soul, Trance</p>
+</div></blockquote>
+<p><strong>mood</strong></p>
+<blockquote>
+<div><p>How a track “feels” (e.g.: Happy, Introspective, Drunk).</p>
+</div></blockquote>
+<p><strong>Original Year</strong></p>
+<blockquote>
+<div><p>The original year that the track was released, as opposed to <strong>Original Release Date</strong> (the earliest release date of the entire Album).</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This plugin makes a large number of web services calls to get track-specific data, so loading a large number of albums and tracks could take a significant amount of time.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="variables_other_information.html" class="btn btn-neutral float-right" title="Other Information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="variables_classical.html" class="btn btn-neutral float-left" title="Classical Music Tags" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bob Swift
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Select Language</dt>
+        <dd><a href="../../en/variables/variables_plugins.html" class="__ptNoRemap">English</a></dd>
+<!--
+        <dd><a href="../../de/variables/variables_plugins.html" class="__ptNoRemap">Deutsche</a></dd>
+        <dd><a href="../../fr/variables/variables_plugins.html" class="__ptNoRemap">Française</a></dd>
+        <dd><a href="../../es/variables/variables_plugins.html" class="__ptNoRemap">Española</a></dd>
+-->
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+<!--
+        <dd><a href="../../MusicBrainz_Picard_[en].pdf" target="_blank" class="__ptNoRemap">PDF</a></dd>
+-->
+        <dd><a href="../../MusicBrainz_Picard_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="../../MusicBrainz_Picard_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="../../MusicBrainz_Picard_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

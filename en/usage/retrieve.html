@@ -84,15 +84,16 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../notices.html">Notices</a></li>
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../download.html">Download &amp; Install</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../scripting.html">Scripting</a></li>
@@ -113,12 +114,21 @@
 </ul>
 </li>
 </ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+</ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
 </ul>
 
@@ -188,7 +198,7 @@
             
   <div class="section" id="retrieving-album-information">
 <h1>Retrieving Album information<a class="headerlink" href="#retrieving-album-information" title="Permalink to this headline">¶</a></h1>
-<p>There are basically four methods used to retrieve album information from the MusicBrainz database.</p>
+<p>There are basically four main methods used to retrieve album information from the MusicBrainz database.</p>
 <p><a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">Lookup CD</span></a></p>
 <p>This is the preferred method of automatically identifying the album to retrieve, and
 should be used when you have the CD available.  Typically this would be used right after ripping the
@@ -213,6 +223,15 @@ the album information by having Picard initiate a search on the MusicBrainz webs
 methods of initiating this search. The first method searches based on the tag information from the selected files.</p>
 <p><a class="reference internal" href="retrieve_manual.html"><span class="doc">Manual Lookup</span></a></p>
 <p>The second browser search method uses manually entered information as the search criterion.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Step-by-step instructions:
+<a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">Lookup CD</span></a> /
+<a class="reference internal" href="retrieve_lookup.html"><span class="doc">Lookup Files</span></a> /
+<a class="reference internal" href="retrieve_scan.html"><span class="doc">Scan Files</span></a> /
+<a class="reference internal" href="retrieve_browser.html"><span class="doc">Lookup in Browser</span></a> /
+<a class="reference internal" href="retrieve_manual.html"><span class="doc">Manual Lookup</span></a></p>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>

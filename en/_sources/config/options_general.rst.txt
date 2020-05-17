@@ -10,6 +10,9 @@
 General Options
 ===============
 
+.. image:: ../images/options-general.png
+   :width: 100 %
+
 **Server address**
 
    The domain name for the MusicBrainz database server used by Picard to get details of your music.

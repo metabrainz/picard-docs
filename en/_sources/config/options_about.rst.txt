@@ -10,6 +10,9 @@
 About
 =====
 
+.. image:: ../images/options-about.png
+   :width: 100 %
+
 This section displays information about the currently installed version of Picard.  This includes
 the version number of Picard and the libraries included, a list of the file types supported, key
 developer credits, and a link to the official website.  This can also be displayed using

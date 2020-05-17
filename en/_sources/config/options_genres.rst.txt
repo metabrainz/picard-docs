@@ -10,6 +10,9 @@
 Genres
 ======
 
+.. image:: ../images/options-metadata-genres.png
+   :width: 100 %
+
 **Use genres from MusicBrainz**
 
    Use genres provided by MusicBrainz and save them to the genre tag.
@@ -56,3 +59,12 @@ Genres
 
    * **Regular expressions filtering (Python "re" syntax)**: Exclude genres starting with 'w' followed by any character, then
      'r' followed by at least one 'd' (e.g.: ``-/^w.rd+/``).
+
+**Playground for genres or folksonomy tags filters:**
+
+   This area allows you to enter genre tags, one per line, to test your filters.  If a tag is marked in red, it will be filtered
+   out.  A tag marked green will be allowed.
+
+   .. note::
+
+      This list of test tags will be cleared when you exit the configuration section.

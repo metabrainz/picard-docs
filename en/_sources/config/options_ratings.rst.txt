@@ -10,6 +10,9 @@
 Ratings
 =======
 
+.. image:: ../images/options-metadata-ratings.png
+   :width: 100 %
+
 **Enable track ratings**
 
    Check to write track ratings to your files.

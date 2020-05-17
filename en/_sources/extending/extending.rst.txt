@@ -19,9 +19,18 @@ program.
 
 Scripts are stored within the user settings, and are managed from the :menuselection:`"Options --> Options..."` menu.
 
-.. toctree::
-    :hidden:
+.. only:: html
 
-    plugins
-    scripts
-    processing
+   .. seealso::
+
+      Details:
+      :doc:`plugins` /
+      :doc:`scripts` /
+      :doc:`processing`
+
+.. toctree::
+   :hidden:
+
+   plugins
+   scripts
+   processing

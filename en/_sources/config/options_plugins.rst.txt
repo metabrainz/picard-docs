@@ -10,6 +10,9 @@
 Plugins Options
 ===============
 
+.. image:: ../images/options-plugins.png
+   :width: 100 %
+
 This section allows you to manage the plugins used by Picard.  You can install new plugins or enable,
 disable or uninstall plugins that are currently installed.  Picard provides a list of plugins that have
 been submitted to the project.  A list of the standard plugins is available on the `plugins page
@@ -21,5 +24,55 @@ enhancement or functionality, a search there might be useful.  In addition, one 
 `Colby Dray <https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list of available
 plugins on a `wiki page <https://wiki.musicbrainz.org/User:Colbydray/PicardPlugins>`_.
 
-Note that some plugins have their own option page which will appear under the "Plugins" section of the
-Options.
+The screen displays a list of the standard plugins and any others that have been installed.  Each plugin is
+displayed on a separate line showing the version number and one or more status / action icons.  The icons are:
+
+.. |img-plugin-download| image:: ../images/options-plugin-download.png
+   :width: 18pt
+   :height: 18pt
+
+|img-plugin-download|
+
+   | This icon indicates that the plugin is not installed.  Clicking the icon will download and install the plugin.
+   |
+
+.. |img-plugin-reload| image:: ../images/options-plugin-reload.png
+   :width: 18pt
+   :height: 18pt
+
+|img-plugin-reload|
+
+   | This icon indicates that a newer version of the plugin is available.  Clicking the icon will download and install the updated version.
+   |
+
+.. |img-plugin-enabled| image:: ../images/options-plugin-enabled.png
+   :width: 24pt
+   :height: 24pt
+
+|img-plugin-enabled|
+
+   | This icon indicates that the plugin is installed and currently enabled.  Clicking the icon will disable the plugin, but it will still be installed.
+   |
+
+.. |img-plugin-disabled| image:: ../images/options-plugin-disabled.png
+   :width: 24pt
+   :height: 24pt
+
+|img-plugin-disabled|
+
+   | This icon indicates that the plugin is installed but currently disabled.  Clicking the icon will enable the plugin.
+   |
+
+.. |img-plugin-trash| image:: ../images/options-plugin-trash.png
+   :width: 24pt
+   :height: 24pt
+
+|img-plugin-trash|
+
+   | This icon indicates that the plugin is currently installed.  Clicking the icon will uninstall the plugin.
+   |
+
+.. note::
+
+   Some plugins have their own option page which will typically appear under the "Plugins" section of the
+   Options.

@@ -10,6 +10,9 @@
 Colors
 ======
 
+.. image:: ../images/options-interface-colors.png
+   :width: 100 %
+
 This section allows you to customize the various colors used in the Picard user interface.  To change a
 color, simply click on the color block currently displayed for the desired text condition to bring up a
 selection dialog, then pick your desired color.  The colors can be changed for the following text

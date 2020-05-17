@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notices" href="notices.html" /> 
+    <link rel="next" title="Introduction" href="introduction.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,15 +83,16 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="notices.html">Notices</a></li>
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="download.html">Download &amp; Install</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/download.html">Download &amp; Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/status_icons.html">Status Icons</a></li>
 <li class="toctree-l1"><a class="reference internal" href="config/configuration.html">Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="variables/variables.html">Tags &amp; Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scripting.html">Scripting</a></li>
@@ -100,12 +101,21 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="usage/using.html">Using Picard</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+</ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="technical/plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq/faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
 </ul>
 
@@ -173,169 +183,25 @@
             
   <div class="section" id="musicbrainz-picard">
 <h1>MusicBrainz Picard<a class="headerlink" href="#musicbrainz-picard" title="Permalink to this headline">¶</a></h1>
+<p><strong>User Guide for MusicBrainz Picard, the next generation tagger.</strong></p>
+<p>MusicBrainz Picard is a cross-platform music file tagger. This User Guide is intended to augment the information
+provided on the <a class="reference external" href="https://picard.musicbrainz.org/">Picard website</a> and to provide an alternate format for the
+documentation, including a PDF document suitable for printing. Links to additional information such as scripts,
+plugins and tutorials are provided when available rather than trying to reproduce the information in this document.</p>
+<p>Permission is granted to copy, distribute and/or modify this document under
+the terms of the GNU Free Documentation License, Version 1.3
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+A copy of the license is available at <a class="reference external" href="https://www.gnu.org/licenses/fdl-1.3.html">https://www.gnu.org/licenses/fdl-1.3.html</a>.</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="notices.html">Notices</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#picard-can">Picard Can…</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#picard-cannot">Picard Cannot…</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html#limitations">Limitations</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms</a></li>
-</ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Getting Started:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="download.html">Download &amp; Install</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screen_main.html">Main Screen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config/configuration.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="config/configuration.html#screen-setup">Screen Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="config/configuration.html#action-options">Action Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="config/configuration.html#option-settings">Option Settings</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="variables/variables.html">Tags &amp; Variables</a><ul>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="scripting.html">Scripting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="scripting.html#syntax">Syntax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scripting.html#metadata-variables">Metadata Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scripting.html#scripting-functions">Scripting Functions</a></li>
-</ul>
-</li>
-</ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Using Picard</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usage/using.html">Using Picard</a></li>
-</ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Appendices:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Documentation Credits &amp; Updates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions/list_by_type.html">Scripting Functions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#assignment-functions">Assignment Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_copy.html">$copy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_copymerge.html">$copymerge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_delete.html">$delete</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_set.html">$set</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_setmulti.html">$setmulti</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_unset.html">$unset</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#text-functions">Text Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_delprefix.html">$delprefix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_find.html">$find</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_firstalphachar.html">$firstalphachar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_firstwords.html">$firstwords</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_get.html">$get</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_initials.html">$initials</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_left.html">$left</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_len.html">$len</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_lower.html">$lower</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_num.html">$num</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_pad.html">$pad</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_replace.html">$replace</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_reverse.html">$reverse</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_right.html">$right</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_rreplace.html">$rreplace</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_rsearch.html">$rsearch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_strip.html">$strip</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_substr.html">$substr</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_swapprefix.html">$swapprefix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_title.html">$title</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_trim.html">$trim</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_truncate.html">$truncate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_upper.html">$upper</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#multi-value-functions">Multi-Value Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_getmulti.html">$getmulti</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_join.html">$join</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_lenmulti.html">$lenmulti</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_map.html">$map</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_performer.html">$performer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_reversemulti.html">$reversemulti</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_slice.html">$slice</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_sortmulti.html">$sortmulti</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#mathematical-functions">Mathematical Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_add.html">$add</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_div.html">$div</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_mod.html">$mod</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_mul.html">$mul</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_sub.html">$sub</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#conditional-functions">Conditional Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_and.html">$and</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_endswith.html">$endswith</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_eq.html">$eq</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_eq_all.html">$eq_all</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_eq_any.html">$eq_any</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_gt.html">$gt</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_gte.html">$gte</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_if.html">$if</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_if2.html">$if2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_in.html">$in</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_inmulti.html">$inmulti</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_is_audio.html">$is_audio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_is_complete.html">$is_complete</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_is_video.html">$is_video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_lt.html">$lt</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_lte.html">$lte</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_ne.html">$ne</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_ne_all.html">$ne_all</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_ne_any.html">$ne_any</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_not.html">$not</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_or.html">$or</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_startswith.html">$startswith</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#information-functions">Information Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_datetime.html">$datetime</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_matchedtracks.html">$matchedtracks</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#loop-functions">Loop Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_foreach.html">$foreach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_while.html">$while</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#miscellaneous-functions">Miscellaneous Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="functions/func_noop.html">$noop</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extending/extending.html">Extending Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="technical/plugins_api.html">Plugins API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api.html#plugin-metadata">Plugin Metadata</a></li>
-<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api.html#metadata-processors">Metadata Processors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api.html#album-metadata-example">Album metadata example:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api.html#track-metadata-example">Track metadata example:</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api.html#event-hooks">Event Hooks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api.html#file-post-load-processor-file">file_post_load_processor(file)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api.html#file-post-save-processor-file">file_post_save_processor(file)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api.html#file-post-addition-to-track-processor-track-file">file_post_addition_to_track_processor(track, file)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api.html#file-post-removal-from-track-processor-track-file">file_post_removal_from_track_processor(track, file)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api.html#album-post-removal-processor-album">album_post_removal_processor(album)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api.html#file-formats">File Formats</a></li>
-<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api.html#tagger-script-functions">Tagger Script Functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api.html#context-menu-actions">Context Menu Actions</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
-</ul>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -347,7 +213,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="notices.html" class="btn btn-neutral float-right" title="Notices" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
