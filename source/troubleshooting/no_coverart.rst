@@ -12,12 +12,6 @@ There is no coverart
 
 There are two different problems that often fall under this topic:
 
-1. Picard isn't finding and downloading any cover art.
-2. Coverart that is saved with the files isn't displayed.
-
-Each of these is addressed below.
-
-
 Picard isn't finding and downloading any cover art
 --------------------------------------------------
 

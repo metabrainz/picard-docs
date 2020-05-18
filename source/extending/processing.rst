@@ -40,9 +40,11 @@ in the order of priority set when the plugin was registered.
 
 Scripts are processed in the order set in the Options menu.
 
-Note that tagging scripts are always run against metadata loaded from MusicBrainz, and exactly after
-the data gets loaded and before files get matched. They are one of the last steps in the loading
-process. Tagging scripts do not have access to metadata stored in existing files.
+.. note::
+
+   Tagging scripts are always run against metadata loaded from MusicBrainz, and exactly after
+   the data gets loaded and before files get matched. They are one of the last steps in the loading
+   process. Tagging scripts do not have access to metadata stored in existing files.
 
 Loading Music Files
 -------------------

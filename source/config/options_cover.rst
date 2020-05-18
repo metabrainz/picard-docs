@@ -13,8 +13,10 @@ Cover Art Options
 .. image:: ../images/options-cover.png
    :width: 100 %
 
-Note that you must enable :menuselection:`"Options --> Metadata --> Use release relationships"` for Picard to be able
-to download cover art from MusicBrainz cover art relationships.
+.. note::
+
+   You must enable :menuselection:`"Options --> Metadata --> Use release relationships"` for Picard to be able
+   to download cover art from MusicBrainz cover art relationships.
 
 .. only:: html
 

@@ -31,7 +31,7 @@ Using Picard
       Try waiting a minute or two, or even a bit longer and then try again with a right-click, "Refresh". Sometimes
       the servers are just overloaded and temporarily reject requests.
 
-   **2. Has the release been deleted/removed from MusicBrainz?**
+   **2. Has the release been deleted from MusicBrainz?**
 
       If you are re-tagging files previously tagged with Picard, and get this error, the release has possibly been
       deleted. Try to right-click and use the "Lookup in browser" option to view the release on the website. If you can't

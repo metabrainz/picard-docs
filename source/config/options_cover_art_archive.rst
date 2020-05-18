@@ -47,8 +47,10 @@ and what quality (size) you want to download. Obviously, the better the quality,
    When checked, Picard will use the type of the first image retrieved as the filename when saving all images.  If left
    unchecked, each file will be named according to its image type.
 
-   Note that this will not change the name used for "front" images that has been specified in the :ref:`Save cover images
-   <ref-local-images>` section of the general :menuselection:`"Cover Art Options"`.
+   .. note::
+
+      This will not change the name used for "front" images that has been specified in the :ref:`Save cover images
+      <ref-local-images>` section of the general :menuselection:`"Cover Art Options"`.
 
 Since Picard 1.3, you can also decide whether or not to use the image from the release group (if any) if no front image is
 found for the release. In this case, the cover may not match the exact release you are tagging (eg.: a 1979 vinyl front cover

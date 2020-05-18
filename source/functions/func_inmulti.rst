@@ -16,7 +16,6 @@ $inmulti
 **Description:**
 
 Returns true if multi-value variable ``x`` contains exactly ``y`` as one of its values.
-
 Note that comparisons are case-sensitive.
 
 

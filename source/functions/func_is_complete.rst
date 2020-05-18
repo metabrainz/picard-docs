@@ -16,7 +16,9 @@ $is_complete
 
 Returns true if every track in the album is matched to a single file.
 
-Note that this only works in File Naming scripts.
+.. note::
+
+    This function only works in File Naming scripts.
 
 
 **Example:**

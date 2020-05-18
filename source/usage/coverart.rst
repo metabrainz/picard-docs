@@ -1,0 +1,32 @@
+..  MusicBrainz Picard Documentation Project
+..  Copyright (C) 2020  Bob Swift (rdswift).
+..  Permission is granted to copy, distribute and/or modify this document
+..  under the terms of the GNU Free Documentation License, Version 1.3
+..  or any later version published by the Free Software Foundation;
+..  with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
+
+Setting the Cover Art
+=====================
+
+.. only:: latex
+
+   Depending on the option settings, you can change or confirm the cover art to save with a
+   track or album.
+
+Once the release information has been downloaded, selecting an album or track in the right-hand pane will
+display both the original and new coverart for the selected item.  You can easily replace the coverart
+image used for the selected item by dragging the image from the file browser and dropping it on the New
+Cover Art image.
+
+.. image:: ../images/drop-cover-art.png
+   :width: 100 %
+
+Right-clicking on the images brings up a menu of options including "Show more details", "Keep original cover
+art", and options for the way that images dropped onto the selection are processed.  Selecting "Show more
+details" will bring up a new window as:
+
+.. image:: ../images/coverart_info.png
+   :width: 100 %
+
+Double-clicking an image will open the image file in the system default program for the image type.

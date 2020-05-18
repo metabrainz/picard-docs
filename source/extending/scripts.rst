@@ -22,8 +22,10 @@ There is only one file naming script defined in a user’s settings, although it
 one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats
 based on different criteria. In all cases, the files will be saved using the text output by the script.
 
-Note that any new tags set or tags modified by the file naming script will not be written to the output
-files' metadata.
+.. note::
+
+   Any new tags set or tags modified by the file naming script will not be written to the output
+   files' metadata.
 
 Tagging Scripts
 ---------------

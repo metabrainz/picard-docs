@@ -23,7 +23,7 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 
 **arranger**
 
-    Arranger Relationship Type (releases, recordings, works), Instrumentator Relationship Type, Orchestrator Relationship Type (since Picard 0.10)
+    Arranger Relationship Type (releases, recordings, works), Instrumentator Relationship Type, Orchestrator Relationship Type (*since Picard 0.10*)
 
 **composer**
 
@@ -39,7 +39,7 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 
 **djmixer**
 
-    Mix-DJ Relationship Type (since Picard 0.9)
+    Mix-DJ Relationship Type (*since Picard 0.9*)
 
 **engineer**
 
@@ -47,7 +47,7 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 
 **license**
 
-    License Relationship Type (releases, recordings) (since Picard 1.0)
+    License Relationship Type (releases, recordings) (*since Picard 1.0*)
 
 **lyricist**
 
@@ -55,7 +55,7 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 
 **mixer**
 
-    Engineer Relationship Type ("Mixed By") (since Picard 0.9)
+    Engineer Relationship Type ("Mixed By") (*since Picard 0.9*)
 
 **performer:<type>**
 
@@ -75,11 +75,11 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 
 **work**
 
-    Work Name (since Picard 1.3)
+    Work Name (*since Picard 1.3*)
 
 **writer**
 
-    Writer Relationship Type (since Picard 1.0). Not written to most file formats automatically.
+    Writer Relationship Type (*since Picard 1.0*). Not written to most file formats automatically.
     You can merge this with composers with a script like::
 
         $copymerge(composer, writer)
@@ -92,4 +92,4 @@ If you enable Use genres from MusicBrainz, you get:
 
 **genre**
 
-    Genre information from MusicBrainz (since Picard 2.1, earlier versions used folksonomy tags)
+    Genre information from MusicBrainz (*since Picard 2.1, earlier versions used folksonomy tags*)

@@ -19,8 +19,10 @@ Executes ``code`` repeatedly until ``condition`` no longer evaluates to True. Fo
 the count is stored in the variable ``_loop_count``. This allows the count value to be accessed
 within the ``code`` script.
 
-Note that the function limits the maximum number of iterations to 1000 as a safeguard against
-accidentally creating an infinite loop.
+.. note::
+
+    The function limits the maximum number of iterations to 1000 as a safeguard against
+    accidentally creating an infinite loop.
 
 
 **Example:**

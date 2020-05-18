@@ -23,7 +23,9 @@ Metadata Options
 
    Check to only use standard Artist names, rather than Artist Credits which may differ slightly across tracks and releases.
 
-   Note: If the "Translate artist names" option above is also checked, it will override this option if a suitable alias is found.
+   .. note::
+
+      If the "Translate artist names" option above is also checked, it will override this option if a suitable alias is found.
 
 **Use standardized instrument and vocal credits**
 

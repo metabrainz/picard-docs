@@ -174,7 +174,9 @@ This hook is called after an album has been removed from Picard.
    register_album_post_removal_processor(album_post_removal_processor)
 
 
-**Note**: *Event hooks are available since API version 2.2*
+.. note::
+
+   Event hooks have been available since API version 2.2.
 
 
 File Formats
