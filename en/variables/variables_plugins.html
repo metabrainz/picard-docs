@@ -102,8 +102,8 @@
 <li class="toctree-l2"><a class="reference internal" href="variables_advanced.html">Advanced Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_classical.html">Classical Music Tags</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Tags from Plugins</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#last-fm">Last.fm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#last-fm-plus">Last.fm Plus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#last-fm-plugin">Last.fm Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-artists-variables-plugin">Additional Artists Variables Plugin</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="variables_other_information.html">Other Information</a></li>
@@ -199,57 +199,164 @@
             
   <div class="section" id="tags-from-plugins">
 <h1>Tags from Plugins<a class="headerlink" href="#tags-from-plugins" title="Permalink to this headline">¶</a></h1>
-<p>Plugins from Picard <a class="reference internal" href="../config/options_plugins.html"><span class="doc">Plugins</span></a> can add more tags.  Following are two popular examples.</p>
-<div class="section" id="last-fm">
-<h2>Last.fm<a class="headerlink" href="#last-fm" title="Permalink to this headline">¶</a></h2>
+<p>Plugins from Picard <a class="reference internal" href="../config/options_plugins.html"><span class="doc">Plugins</span></a> can add more tags.  Following are some examples.</p>
+<div class="section" id="last-fm-plugin">
+<h2>Last.fm Plugin<a class="headerlink" href="#last-fm-plugin" title="Permalink to this headline">¶</a></h2>
 <p><strong>genre</strong></p>
 <blockquote>
 <div><p>Pseudo-genre based on folksonomy tags.</p>
 </div></blockquote>
 </div>
-<div class="section" id="last-fm-plus">
-<h2>Last.fm Plus<a class="headerlink" href="#last-fm-plus" title="Permalink to this headline">¶</a></h2>
-<p>The LastFMPlus plugin is a sophisticated plugin that tries to provide stable and meaningful genre selections from the ever-changing and
-idiosyncratic list provided by lastFM.</p>
-<p>The LastFMPlus plugin is very configurable and examples provided here are based on the default lists provided on the Tag Filter List tab
-of the LastFMPlus options page.</p>
-<p><strong>Comment:songs-db_Custom1</strong></p>
+<div class="section" id="additional-artists-variables-plugin">
+<h2>Additional Artists Variables Plugin<a class="headerlink" href="#additional-artists-variables-plugin" title="Permalink to this headline">¶</a></h2>
+<p><strong>Album Variables</strong></p>
 <blockquote>
-<div><p>The decade (e.g.: 1970s).</p>
+<div><p><strong>_artists_album_primary_id</strong></p>
+<blockquote>
+<div><p>The ID of the primary / first album artist listed</p>
 </div></blockquote>
-<p><strong>Comment:songs-db_Custom2</strong></p>
+<p><strong>_artists_album_primary_std</strong></p>
 <blockquote>
-<div><p>Category (e.g.: Female Vocalist, Singer-Songwriter).</p>
+<div><p>The primary / first album artist listed (standardized)</p>
 </div></blockquote>
-<p><strong>Comment:songs-db_Custom3</strong></p>
+<p><strong>_artists_album_primary_cred</strong></p>
 <blockquote>
-<div><p>Country (e.g.: British).</p>
+<div><p>The primary / first album artist listed (as credited)</p>
 </div></blockquote>
-<p><strong>Comment:songs-db_Occassion</strong></p>
+<p><strong>_artists_album_primary_sort</strong></p>
 <blockquote>
-<div><p>Good situations to play a track (e.g.: Driving, Love, Party).</p>
+<div><p>The primary / first album artist listed (sort name)</p>
 </div></blockquote>
-<p><strong>genre</strong></p>
+<p><strong>_artists_album_additional_id</strong></p>
 <blockquote>
-<div><p>Specific detailed genres. For example, if the group is Rock the genre could be one of Acid rock, Acoustic rock, Alternative metal,
-Alternative rock, Art rock, Blues rock, Boogie rock, Brit rock, Christian rock, College rock, Country rock, etc.</p>
+<div><p>The IDs of all album artists listed except for the primary / first artist, as a multi-value</p>
 </div></blockquote>
-<p><strong>grouping</strong></p>
+<p><strong>_artists_album_additional_std</strong></p>
 <blockquote>
-<div><p>Top-level genres - default list: Audiobooks, Blues, Classic rock, Classical, Country, Dance, Electronica, Folk, Hip-hop, Indie, Jazz,
-Kids, Metal, Pop, Punk, Reggae, Rock, Soul, Trance</p>
+<div><p>All album artists listed (standardized) except for the primary / first artist, separated by strings provided from the release entry</p>
 </div></blockquote>
-<p><strong>mood</strong></p>
+<p><strong>_artists_album_additional_cred</strong></p>
 <blockquote>
-<div><p>How a track “feels” (e.g.: Happy, Introspective, Drunk).</p>
+<div><p>All album artists listed (as credited) except for the primary / first artist, separated by strings provided from the release entry</p>
 </div></blockquote>
-<p><strong>Original Year</strong></p>
+<p><strong>_artists_album_additional_sort</strong></p>
 <blockquote>
-<div><p>The original year that the track was released, as opposed to <strong>Original Release Date</strong> (the earliest release date of the entire Album).</p>
+<div><p>All album artists listed (sort names) except for the primary / first artist, separated by strings provided from the release entry</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_std_multi</strong></p>
+<blockquote>
+<div><p>All album artists listed (standardized) except for the primary / first artist, as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_album_additional_cred_multi</strong></p>
+<blockquote>
+<div><p>All album artists listed (as credited) except for the primary / first artist, as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_album_all_std</strong></p>
+<blockquote>
+<div><p>All album artists listed (standardized), separated by strings provided from the release entry</p>
+</div></blockquote>
+<p><strong>_artists_album_all_cred</strong></p>
+<blockquote>
+<div><p>All album artists listed (as credited), separated by strings provided from the release entry</p>
+</div></blockquote>
+<p><strong>_artists_album_all_sort</strong></p>
+<blockquote>
+<div><p>All album artists listed (sort names), separated by strings provided from the release entry</p>
+</div></blockquote>
+<p><strong>_artists_album_all_std_multi</strong></p>
+<blockquote>
+<div><p>All album artists listed (standardized), as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_album_all_cred_multi</strong></p>
+<blockquote>
+<div><p>All album artists listed (as credited), as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_album_all_sort_primary</strong></p>
+<blockquote>
+<div><p>The primary / first album artist listed (sort name) followed by all additional album artists (standardized), separated by strings provided from the release entry</p>
+</div></blockquote>
+<p><strong>_artists_album_all_count</strong></p>
+<blockquote>
+<div><p>The number of artists listed as album artists</p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Track Variables</strong></p>
+<blockquote>
+<div><p><strong>_artists_track_primary_id</strong></p>
+<blockquote>
+<div><p>The ID of the primary / first track artist listed</p>
+</div></blockquote>
+<p><strong>_artists_track_primary_std</strong></p>
+<blockquote>
+<div><p>The primary / first track artist listed (standardized)</p>
+</div></blockquote>
+<p><strong>_artists_track_primary_cred</strong></p>
+<blockquote>
+<div><p>The primary / first track artist listed (as credited)</p>
+</div></blockquote>
+<p><strong>_artists_track_primary_sort</strong></p>
+<blockquote>
+<div><p>The primary / first track artist listed (sort name)</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_id</strong></p>
+<blockquote>
+<div><p>The IDs of all track artists listed except for the primary / first artist, as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_std</strong></p>
+<blockquote>
+<div><p>All track artists listed (standardized) except for the primary / first artist, separated by strings provided from the track entry</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_cred</strong></p>
+<blockquote>
+<div><p>All track artists listed (as credited) except for the primary / first artist, separated by strings provided from the track entry</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_sort</strong></p>
+<blockquote>
+<div><p>All track artists listed (sort names) except for the primary / first artist, separated by strings provided from the track entry</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_std_multi</strong></p>
+<blockquote>
+<div><p>All track artists listed (standardized) except for the primary / first artist, as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_track_additional_cred_multi</strong></p>
+<blockquote>
+<div><p>All track artists listed (as credited) except for the primary / first artist, as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_track_all_std</strong></p>
+<blockquote>
+<div><p>All track artists listed (standardized), separated by strings provided from the track entry</p>
+</div></blockquote>
+<p><strong>_artists_track_all_cred</strong></p>
+<blockquote>
+<div><p>All track artists listed (as credited), separated by strings provided from the track entry</p>
+</div></blockquote>
+<p><strong>_artists_track_all_sort</strong></p>
+<blockquote>
+<div><p>All track artists listed (sort names), separated by strings provided from the track entry</p>
+</div></blockquote>
+<p><strong>_artists_track_all_std_multi</strong></p>
+<blockquote>
+<div><p>All track artists listed (standardized), as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_track_all_cred_multi</strong></p>
+<blockquote>
+<div><p>All track artists listed (as credited), as a multi-value</p>
+</div></blockquote>
+<p><strong>_artists_track_all_sort_primary</strong></p>
+<blockquote>
+<div><p>The primary / first track artist listed (sort name) followed by all additional track artists (standardized), separated by strings provided from the track entry</p>
+</div></blockquote>
+<p><strong>_artists_track_all_count</strong></p>
+<blockquote>
+<div><p>The number of artists listed as track artists</p>
+</div></blockquote>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This plugin makes a large number of web services calls to get track-specific data, so loading a large number of albums and tracks could take a significant amount of time.</p>
+<p>Some plugins make a large number of web service calls to get additional track-specific data such as performer and work relationships,
+so loading a large number of albums and tracks could take a significant amount of time.  The time concern can be partially addressed by
+operating a local MusicBrainz server with the rate limiting disabled.  Please see the <a class="reference external" href="https://github.com/metabrainz/musicbrainz-server">MusicBrainz Server</a>
+project on GitHub for additional information.</p>
 </div>
 </div>
 </div>

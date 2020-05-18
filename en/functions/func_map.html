@@ -220,9 +220,12 @@ into a proper multi-valued variable.</p>
 <p>For each loop, the element value is first stored in the variable <code class="docutils literal notranslate"><span class="pre">_loop_value</span></code> and the count
 is stored in the variable <code class="docutils literal notranslate"><span class="pre">_loop_count</span></code>. This allows the element or count value to be
 accessed within the code script.</p>
-<p>Note that you cannot save the <code class="docutils literal notranslate"><span class="pre">code</span></code> to a variable and then pass the variable to the function
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You cannot save the <code class="docutils literal notranslate"><span class="pre">code</span></code> to a variable and then pass the variable to the function
 as <code class="docutils literal notranslate"><span class="pre">%code%</span></code> because it will be evaluated when it is assigned to the variable rather than
 during the loop.</p>
+</div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,First:A; Second:B)

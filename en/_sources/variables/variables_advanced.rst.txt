@@ -18,11 +18,11 @@ If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>
 **_performance_attributes**
 
     List of performance attributes for the work (e.g.: "live", "cover", "medley"). Use ``$inmulti`` to check for
-    a specific type (i.e.: ``$if($inmulti(%_performance_attributes%,medley), (Medley),)``). (since Picard 1.3)
+    a specific type (i.e.: ``$if($inmulti(%_performance_attributes%,medley), (Medley),)``). (*since Picard 1.3*)
 
 **_recordingcomment**
 
-    Recording disambiguation comment. (since Picard 0.15)
+    Recording disambiguation comment. (*since Picard 0.15*)
 
 **_recordingtitle**
 

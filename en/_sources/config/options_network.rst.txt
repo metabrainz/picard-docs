@@ -41,5 +41,7 @@ Network
     `Picard Barcode Scanner <https://play.google.com/store/apps/details?id=org.musicbrainz.picard.barcodescanner>`_
     Android app.
 
-    **Warning**: *Only expose the port externally when you actually need it and only on networks you trust.
-    Exposing application ports via the network can open potential security holes on your system.*
+    .. warning::
+
+        Only expose the port externally when you actually need it and only on networks you trust.
+        Exposing application ports via the network can open potential security holes on your system.

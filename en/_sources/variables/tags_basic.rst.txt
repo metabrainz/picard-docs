@@ -47,7 +47,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **artists**
 
-    Track Artist Name(s) (multi-value) (since Picard 1.3)
+    Track Artist Name(s) (multi-value) (*since Picard 1.3*)
 
 **artistsort**
 
@@ -75,8 +75,8 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **compilation**
 
-    | (since Picard 1.3, compatible with iTunes) 1 for Various Artist albums, otherwise 0.
-    | (Picard 1.2 or previous) 1 if multiple track artists (including featured artists), otherwise 0.
+    | (*since Picard 1.3, compatible with iTunes*) 1 for Various Artist albums, otherwise 0.
+    | (*Picard 1.2 or previous*) 1 if multiple track artists (including featured artists), otherwise 0.
 
 **copyright**
 
@@ -108,7 +108,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **isrc**
 
-    International Standard Recording Code (since Picard 0.12)
+    International Standard Recording Code (*since Picard 0.12*)
 
 **key**
 
@@ -120,7 +120,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **language**
 
-    Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if track relationships are enabled in Options and a related work exists. (since Picard 0.10)
+    Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if track relationships are enabled in Options and a related work exists. (*since Picard 0.10*)
 
 **lyrics**
 
@@ -144,7 +144,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **musicbrainz_discid**
 
-    Disc ID if the album was added using CD Lookup (since Picard 0.12)
+    Disc ID if the album was added using CD Lookup (*since Picard 0.12*)
 
 **musicbrainz_originalalbumid**
 
@@ -164,7 +164,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **musicbrainz_releasetrackid**
 
-    Release Track MusicBrainz Identifier (since Picard 1.3)
+    Release Track MusicBrainz Identifier (*since Picard 1.3*)
 
 **musicbrainz_trackid**
 
@@ -192,9 +192,11 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **originaldate**
 
-    Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended to provide, for example, the release date of the vinyl version of what you have on CD. (Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15)
+    Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended to provide, for example, the release date of the vinyl version of what you have on CD. (*Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)
 
-    Note: If you are storing tags in mp3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.
+    .. note::
+
+        If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.
 
 **originalyear**
 
@@ -214,7 +216,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **script**
 
-    The script used to write the release's track list. The possible values are taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard. (since Picard 0.10)
+    The script used to write the release's track list. The possible values are taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard. (*since Picard 0.10*)
 
 **subtitle**
 

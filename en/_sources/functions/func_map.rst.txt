@@ -25,9 +25,11 @@ For each loop, the element value is first stored in the variable ``_loop_value``
 is stored in the variable ``_loop_count``. This allows the element or count value to be
 accessed within the code script.
 
-Note that you cannot save the ``code`` to a variable and then pass the variable to the function
-as ``%code%`` because it will be evaluated when it is assigned to the variable rather than
-during the loop.
+.. note::
+
+    You cannot save the ``code`` to a variable and then pass the variable to the function
+    as ``%code%`` because it will be evaluated when it is assigned to the variable rather than
+    during the loop.
 
 
 **Example:**

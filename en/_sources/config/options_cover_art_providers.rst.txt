@@ -39,7 +39,9 @@ are queried. Picard will try the providers from top to bottom until an image is 
    <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide
    for more information.
 
-   Note: CD Baby and other whitelist sites are no longer being used by MusicBrainz for new Cover Art.
+   .. note::
+
+      CD Baby and other whitelist sites are no longer being used by MusicBrainz for new Cover Art.
 
 **Local Files**
 

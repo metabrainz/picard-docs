@@ -89,5 +89,6 @@ These options determine how Picard handles files when they are saved with update
    and there is a thread specific to `file naming and script snippets
    <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_.
 
-   Note that any new tags set or tags modified by the file naming script will not be written to the output
-   files' metadata.
+   .. note::
+
+      Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.

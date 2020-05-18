@@ -213,10 +213,13 @@
 other script functions if it is enclosed between ‘%’ characters (e.g.: <code class="docutils literal notranslate"><span class="pre">%name%</span></code>).
 If <code class="docutils literal notranslate"><span class="pre">name</span></code> is another variable (e.g.: <code class="docutils literal notranslate"><span class="pre">%indirect%</span></code>) the value of the variable
 will be used as <code class="docutils literal notranslate"><span class="pre">name</span></code>.  This allows the creation of dynamically named variables.</p>
-<p>Note: To create a variable which can be used for the file naming string, but
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a variable which can be used for the file naming string, but
 which will not be written as a tag in the file, prefix the variable name with
 an underscore. <code class="docutils literal notranslate"><span class="pre">%something%</span></code> will create a “something” tag; <code class="docutils literal notranslate"><span class="pre">%_something%</span></code>
 will not.</p>
+</div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(comment,Testing)  ==&gt;  &quot;Testing&quot; will be written to the &quot;comment&quot; tag

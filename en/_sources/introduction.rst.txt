@@ -57,7 +57,7 @@ Limitations
 **File Formats**
 
 Picard currently supports most music file formats, with two notable exceptions: Matroska (.mka) and Windows
-WAVE (.wav).  WAVs cannot be tagged due to the lack of a standard for doing so, however, they can be
+WAVE (.wav).  WAV files cannot be tagged due to the lack of a standard for doing so, however, they can be
 fingerprinted and renamed.  In addition, Picard does not support writing custom tags for all formats.  The
 `Picard Tag Mappings <https://picard.musicbrainz.org/docs/mappings/>`_ webpage provides more information
 regarding the mapping between Picard internal tag names and various tagging formats.

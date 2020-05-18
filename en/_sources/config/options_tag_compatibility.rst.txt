@@ -41,8 +41,10 @@ Tag Compatibility
    grouping will be displayed in iTunes as "work name" and work will not be available. See the
    `Picard Tag Mapping page <https://picard.musicbrainz.org/docs/mappings/>`_ for details.
 
-   Note: For other players supporting grouping and work you might need to disable this option.
-   `MusicBee <https://getmusicbee.com/>`_ is one example of this.
+   .. note::
+
+      For other players supporting grouping and work you might need to disable this option.
+      `MusicBee <https://getmusicbee.com/>`_ is one example of this.
 
 **Also include ID3v1 tags in the files**
 

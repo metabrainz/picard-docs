@@ -211,10 +211,13 @@ standard Python <code class="docutils literal notranslate"><span class="pre">str
 the date and time will be returned in the form ‘2020-02-05 14:26:32’.  Note that any special
 characters such as ‘%’, ‘$’, ‘(‘, ‘)’ and ‘' will need to be escaped as shown in the
 examples below.</p>
-<p><strong>Note:</strong> Platform-specific formatting codes should be avoided to help ensure the portability
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Platform-specific formatting codes should be avoided to help ensure the portability
 of scripts across the different platforms.  These codes include: remove zero-padding (e.g.:
 <code class="docutils literal notranslate"><span class="pre">%-d</span></code> and <code class="docutils literal notranslate"><span class="pre">%-m</span></code> on Linux or macOS, and their equivalent <code class="docutils literal notranslate"><span class="pre">%#d</span></code> and <code class="docutils literal notranslate"><span class="pre">%#m</span></code> on Windows);
 element length specifiers (e.g.: <code class="docutils literal notranslate"><span class="pre">%3Y</span></code>); and hanging ‘%’ at the end of the format string.</p>
+</div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$datetime()                         ==&gt;  &quot;2020-02-05 14:26:32&quot;

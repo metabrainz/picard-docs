@@ -231,7 +231,10 @@
 an empty string if <code class="docutils literal notranslate"><span class="pre">needle</span></code> was not found.  The comparisons are case-sensitive. If <code class="docutils literal notranslate"><span class="pre">needle</span></code> is
 blank, it will match the begging of <code class="docutils literal notranslate"><span class="pre">haystack</span></code> and return “0”. The function does not
 support wildcards.</p>
-<p>Note that prior to Picard 2.3.2 <code class="docutils literal notranslate"><span class="pre">$find</span></code> returned “-1” if <code class="docutils literal notranslate"><span class="pre">needle</span></code> was not found.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Prior to Picard 2.3.2 <code class="docutils literal notranslate"><span class="pre">$find</span></code> returned “-1” if <code class="docutils literal notranslate"><span class="pre">needle</span></code> was not found.</p>
+</div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$find(abcdef,a)     ==&gt;  &quot;0&quot;

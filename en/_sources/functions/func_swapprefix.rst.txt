@@ -11,7 +11,7 @@ $swapprefix
 
 | Usage: **$swapprefix(text[,prefixes])**
 | Category: text
-| Implemented: Picard 1.3 (previously as a plugin since Picard 0.13)
+| Implemented: Picard 1.3 (*previously as a plugin since Picard 0.13*)
 
 **Description:**
 

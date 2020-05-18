@@ -9,6 +9,11 @@
 Matching Files to Tracks
 ========================
 
+.. only:: latex
+
+   This stage is where individual files are matched to specific tracks in the information
+   retrieved from the MusicBrainz database.
+
 Once you have retrieved the desired album information into the right-hand pane, the next step is to match the files from the
 left-hand pane to the corresponding track in the right-hand pane.  A music symbol in front of a track number in the right-hand
 pane indicates that there has been no file assigned to the track.  In some cases, Picard may have already tried to do the
@@ -25,3 +30,12 @@ correct spot in the right-hand pane.
 
 .. image:: ../images/matching_1.png
    :width: 100%
+
+Right-clicking an item in the track list brings up a menu of commands, including "Info", "Open in Player", "Open Containing Folder",
+"Search for similar tracks", "Looup in Browser", "Generate AcoustID Fingerprints", "Save" and "Remove".  In addition, you can
+re-run any associated plugins or scripts against only the selected item.  Right-clicking an items in the left-hand pane will bring
+up a similar menu of commands.
+
+When you select an item in the right-hand pane, the original and new metadata for the item is displayed.  Right-clicking a line in
+the tag list brings up a menu of commands, including "Edit", "Add to 'Preserved Tags' List", "Remove" and "Add New Tag", along with
+an option to display the changed tags first.

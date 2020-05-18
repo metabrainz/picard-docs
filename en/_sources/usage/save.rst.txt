@@ -9,6 +9,12 @@
 Saving Updated Files
 ====================
 
+.. only:: latex
+
+   This stage is where Picard updates the matched files with the metadata retrieved in the
+   first stage, based on the settings configured in the Options.  This may also include
+   renaming the files and placing them in a different directory.
+
 When you are satisfied that your files have been properly matched to tracks in the right-hand pane, select the album you
 want to save in the right-hand pane and use :menuselection:`"File --> Save"` to save the files. A green check mark means
 the file was saved to its proper location.
