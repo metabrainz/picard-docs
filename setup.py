@@ -15,7 +15,7 @@ import restructuredtext_lint
 import time
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.01'
+SCRIPT_VERS = '0.02'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -56,6 +56,11 @@ SPHINX_SOURCE_DIR = 'source'
 SPHINX_LOCALE_DIR = 'locale'
 SPHINX_GETTEXT_DIR = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
 SPHINX_BUILD_TIMEOUT = 300
+SPHINX_BUILD_TARGETS = {
+    'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
+    'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
+    'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc="epub"'},
+}
 OUTPUT_DIR = 'docs'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
 
@@ -86,7 +91,7 @@ IGNORE_DIRECTIVES = [
     # Glossary
     'glossary',
 
-    #Meta-information Markup
+    # Meta-information Markup
     'sectionauthor', 'codeauthor',
 
     # Index-generating Markup
@@ -622,16 +627,11 @@ def remove_file(file_path):
             exit_with_code(1)
 
 
-def build_html(language=''):
-    """Build the HTML files.  Includes multiple checks for success to accommodate race
-    condition in Windows.
-
-    Keyword Arguments:
-        language {str} -- Language to use for the build (default: {''})
-
-    Raises:
-        Exception: Files not copied
-    """
+def do_build(target=None, language='', clean=False):
+    if not (target and target in SPHINX_BUILD_TARGETS.keys()):
+        print("\nUnknown build target: {0}".format(target))
+        exit_with_code(1)
+    print("\nBuilding target: {0}".format(target))
     check_sphinx_build()
     if not (language and language in LANGUAGES):
         language = DEFAULT_LANGUAGE
@@ -646,9 +646,14 @@ def build_html(language=''):
         if exit_code:
             exit_with_code(exit_code)
 
+    if clean:
+        clean_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[target]['dir'])
+        print('\nCleaning build directory: {0}'.format(clean_dir))
+        clean_directory(clean_dir, target)
+
     # command = ' '.join([SPHINXBUILD, '-M', 'html', SPHINXSOURCEDIR, SPHINXBUILDDIR, language_option])
     # command = ' '.join([SPHINX_BUILD, '-M', 'html', '"' + SPHINX_SOURCE_DIR + '"', '"' + build_dir + '"', '-c', '.', language_option])
-    command = ' '.join([SPHINX_BUILD, '-M', 'html', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
+    command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
     print('\nBuilding with command: {0}\n'.format(command))
     try:
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
@@ -658,6 +663,24 @@ def build_html(language=''):
     if exit_code:
         exit_with_code(exit_code)
 
+    if target == 'html':
+        build_html(language=language)
+    elif target == 'pdf':
+        build_pdf(language=language)
+    elif target == 'epub':
+        build_epub(language=language)
+
+
+def build_html(language=''):
+    """Build the HTML files.  Includes multiple checks for success to accommodate race
+    condition in Windows.
+
+    Keyword Arguments:
+        language {str} -- Language to use for the build (default: {''})
+
+    Raises:
+        Exception: Files not copied
+    """
     output_dir = os.path.join(OUTPUT_DIR, language)
     html_dir = os.path.join(SPHINX_BUILD_DIR, 'html')
     clean_directory(output_dir, 'html')
@@ -702,34 +725,7 @@ def build_pdf(language=''):
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
     """
-    check_sphinx_build()
-    if not (language and language in LANGUAGES):
-        language = DEFAULT_LANGUAGE
-    if language == DEFAULT_LANGUAGE:
-        language_option = ''
-    else:
-        language_option = '-D language=' + language
-        # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
-        print('\nUpdating PO files with command: {0}\n'.format(command))
-        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
-        if exit_code:
-            exit_with_code(exit_code)
-
-    pdf_dir = os.path.join(SPHINX_BUILD_DIR, 'latex')
-    print('\nCleaning build directory: {0}'.format(pdf_dir))
-    clean_directory(pdf_dir, 'pdf')
-    command = ' '.join([SPHINX_BUILD, '-M', 'latexpdf', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
-    print('\nBuilding with command: {0}\n'.format(command))
-    try:
-        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
-    except Exception as ex:
-        print("ERROR executing process: {0}".format(ex))
-        exit_code = 1
-    if exit_code:
-        exit_with_code(exit_code)
-
-    pdf_file = os.path.join(pdf_dir, 'musicbrainzpicard.pdf')
+    pdf_file = os.path.join(SPHINX_BUILD_DIR, 'latex', 'musicbrainzpicard.pdf')
     target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_[{0}].pdf'.format(language))
     print('Copying output to: {0}\n'.format(target_file))
     try:
@@ -745,35 +741,7 @@ def build_epub(language=''):
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
     """
-    check_sphinx_build()
-    if not (language and language in LANGUAGES):
-        language = DEFAULT_LANGUAGE
-    if language == DEFAULT_LANGUAGE:
-        language_option = ''
-    else:
-        language_option = '-D language=' + language
-        # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_BUILD_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
-        print('\nUpdating PO files with command: {0}\n'.format(command))
-        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
-        if exit_code:
-            exit_with_code(exit_code)
-
-    epub_dir = os.path.join(SPHINX_BUILD_DIR, 'epub')
-    print('\nCleaning build directory: {0}'.format(epub_dir))
-    clean_directory(epub_dir, 'epub')
-    # command = ' '.join([SPHINX_BUILD, '-M', 'epub', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', language_option])
-    command = ' '.join([SPHINX_BUILD, '-M', 'epub', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', '-D', 'master_doc="epub"', language_option])
-    print('\nBuilding with command: {0}\n'.format(command))
-    try:
-        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
-    except Exception as ex:
-        print("ERROR executing process: {0}".format(ex))
-        exit_code = 1
-    if exit_code:
-        exit_with_code(exit_code)
-
-    epub_file = os.path.join(epub_dir, 'MusicBrainzPicard.epub')
+    epub_file = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['epub']['dir'], 'MusicBrainzPicard.epub')
     target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_[{0}].epub'.format(language))
     print('Copying output to: {0}\n'.format(target_file))
     try:
@@ -887,17 +855,9 @@ def main():
             exit_with_code(1)
 
     elif 'build_target' in vars(args):
-        if args.build_target == 'html':
+        if args.build_target in SPHINX_BUILD_TARGETS.keys():
             for lang in process_languages:
-                build_html(language=lang)
-
-        elif args.build_target == 'pdf':
-            for lang in process_languages:
-                build_pdf(language=lang)
-
-        elif args.build_target == 'epub':
-            for lang in process_languages:
-                build_epub(language=lang)
+                do_build(target=args.build_target, language=lang)
 
         elif args.build_target == 'po':
             build_pot()
@@ -924,17 +884,9 @@ def main():
             exit_with_code(1)
 
     elif 'clean_target' in vars(args):
-        if args.clean_target == 'html':
-            clean_dir = os.path.join(SPHINX_BUILD_DIR, 'html')
-            clean_directory(clean_dir, 'html')
-
-        elif args.clean_target == 'pdf':
-            clean_dir = os.path.join(SPHINX_BUILD_DIR, 'latex')
-            clean_directory(clean_dir, 'pdf')
-
-        elif args.clean_target == 'epub':
-            clean_dir = os.path.join(SPHINX_BUILD_DIR, 'epub')
-            clean_directory(clean_dir, 'epub')
+        if args.clean_target in SPHINX_BUILD_TARGETS.keys():
+            clean_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[args.clean_target]['dir'])
+            clean_directory(clean_dir, args.clean_target)
 
         else:
             print("\nUnknown clean target: '{0}'\n".format(args.clean_target))
