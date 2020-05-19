@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 22:06-0600\n"
+"POT-Creation-Date: 2020-05-19 17:28-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid "**artists**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:50
-msgid "Track Artist Name(s) (multi-value) (since Picard 1.3)"
+msgid "Track Artist Name(s) (multi-value) (*since Picard 1.3*)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:52
@@ -145,11 +145,11 @@ msgid "**compilation**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:0
-msgid "(since Picard 1.3, compatible with iTunes) 1 for Various Artist albums, otherwise 0."
+msgid "(*since Picard 1.3, compatible with iTunes*) 1 for Various Artist albums, otherwise 0."
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:0
-msgid "(Picard 1.2 or previous) 1 if multiple track artists (including featured artists), otherwise 0."
+msgid "(*Picard 1.2 or previous*) 1 if multiple track artists (including featured artists), otherwise 0."
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:81
@@ -213,7 +213,7 @@ msgid "**isrc**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:111
-msgid "International Standard Recording Code (since Picard 0.12)"
+msgid "International Standard Recording Code (*since Picard 0.12*)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:113
@@ -237,7 +237,7 @@ msgid "**language**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:123
-msgid "Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if track relationships are enabled in Options and a related work exists. (since Picard 0.10)"
+msgid "Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if track relationships are enabled in Options and a related work exists. (*since Picard 0.10*)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:125
@@ -285,7 +285,7 @@ msgid "**musicbrainz_discid**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:147
-msgid "Disc ID if the album was added using CD Lookup (since Picard 0.12)"
+msgid "Disc ID if the album was added using CD Lookup (*since Picard 0.12*)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:149
@@ -325,7 +325,7 @@ msgid "**musicbrainz_releasetrackid**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:167
-msgid "Release Track MusicBrainz Identifier (since Picard 1.3)"
+msgid "Release Track MusicBrainz Identifier (*since Picard 1.3*)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:169
@@ -381,105 +381,105 @@ msgid "**originaldate**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:195
-msgid "Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended to provide, for example, the release date of the vinyl version of what you have on CD. (Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15)"
-msgstr ""
-
-#: ../../source/variables/tags_basic.rst:197
-msgid "Note: If you are storing tags in mp3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year."
+msgid "Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended to provide, for example, the release date of the vinyl version of what you have on CD. (*Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:199
-msgid "**originalyear**"
+msgid "If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year."
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:201
-msgid "Year of the original Release Date intended for release year of the original recording."
+msgid "**originalyear**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:203
-msgid "**releasecountry**"
+msgid "Year of the original Release Date intended for release year of the original recording."
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:205
-msgid "Country in which the release was issued."
+msgid "**releasecountry**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:207
-msgid "**releasestatus**"
+msgid "Country in which the release was issued."
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:209
-msgid "Release Status indicating the \"official\" status of the release.  Possible values include official, promotional, bootleg, and pseudo-release."
+msgid "**releasestatus**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:211
-msgid "**releasetype**"
+msgid "Release Status indicating the \"official\" status of the release.  Possible values include official, promotional, bootleg, and pseudo-release."
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:213
-msgid "Release Group Type (see also :ref:`_primaryreleasetype <ref_primaryreleasetype>` and :ref:`_secondaryreleasetype <ref_secondaryreleasetype>`)"
+msgid "**releasetype**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:215
-msgid "**script**"
+msgid "Release Group Type (see also :ref:`_primaryreleasetype <ref_primaryreleasetype>` and :ref:`_secondaryreleasetype <ref_secondaryreleasetype>`)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:217
-msgid "The script used to write the release's track list. The possible values are taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard. (since Picard 0.10)"
+msgid "**script**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:219
-msgid "**subtitle**"
+msgid "The script used to write the release's track list. The possible values are taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard. (*since Picard 0.10*)"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:221
-msgid "Used for information directly related to the contents title"
+msgid "**subtitle**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:223
-msgid "**title**"
+msgid "Used for information directly related to the contents title"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:225
-msgid "Track Title"
+msgid "**title**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:227
-msgid "**titlesort**"
+msgid "Track Title"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:229
-msgid "Track Title's Sort Name"
+msgid "**titlesort**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:231
-msgid "**totaldiscs**"
+msgid "Track Title's Sort Name"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:233
-msgid "Total number of discs in this release"
+msgid "**totaldiscs**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:235
-msgid "**totaltracks**"
+msgid "Total number of discs in this release"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:237
-msgid "Total tracks on this disc"
+msgid "**totaltracks**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:239
-msgid "**tracknumber**"
+msgid "Total tracks on this disc"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:241
-msgid "Track number on the disc"
+msgid "**tracknumber**"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:243
-msgid "**website**"
+msgid "Track number on the disc"
 msgstr ""
 
 #: ../../source/variables/tags_basic.rst:245
+msgid "**website**"
+msgstr ""
+
+#: ../../source/variables/tags_basic.rst:247
 msgid "Used for official artist website."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 22:06-0600\n"
+"POT-Creation-Date: 2020-05-19 17:28-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,50 +32,50 @@ msgstr ""
 msgid "There is only one file naming script defined in a user’s settings, although it can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script."
 msgstr ""
 
-#: ../../source/extending/scripts.rst:25
-msgid "Note that any new tags set or tags modified by the file naming script will not be written to the output files' metadata."
-msgstr ""
-
-#: ../../source/extending/scripts.rst:29
-msgid "Tagging Scripts"
+#: ../../source/extending/scripts.rst:27
+msgid "Any new tags set or tags modified by the file naming script will not be written to the output files' metadata."
 msgstr ""
 
 #: ../../source/extending/scripts.rst:31
+msgid "Tagging Scripts"
+msgstr ""
+
+#: ../../source/extending/scripts.rst:33
 msgid "There can be multiple tagging scripts defined in a user’s settings. Individual scripts can be enabled or disabled, and the order of execution of the scripts can be set. Whenever a script is run automatically (i.e.: when an album is loaded), it is processed once for each track in the album that triggered the run. For example, if there are two tagging scripts enabled (A and B) and an album with three tracks is loaded, the scripts will be processed in the following order:"
 msgstr ""
 
-#: ../../source/extending/scripts.rst:37
+#: ../../source/extending/scripts.rst:39
 msgid "Script A Track 1;"
 msgstr ""
 
-#: ../../source/extending/scripts.rst:38
+#: ../../source/extending/scripts.rst:40
 msgid "Script A Track 2;"
 msgstr ""
 
-#: ../../source/extending/scripts.rst:39
+#: ../../source/extending/scripts.rst:41
 msgid "Script A Track 3;"
 msgstr ""
 
-#: ../../source/extending/scripts.rst:40
+#: ../../source/extending/scripts.rst:42
 msgid "Script B Track 1;"
 msgstr ""
 
-#: ../../source/extending/scripts.rst:41
+#: ../../source/extending/scripts.rst:43
 msgid "Script B Track 2;"
 msgstr ""
 
-#: ../../source/extending/scripts.rst:42
+#: ../../source/extending/scripts.rst:44
 msgid "Script B Track 3."
 msgstr ""
 
-#: ../../source/extending/scripts.rst:44
+#: ../../source/extending/scripts.rst:46
 msgid "Metadata updates are not shared between tracks, so you cannot append data from one track to a tag in another track."
 msgstr ""
 
-#: ../../source/extending/scripts.rst:47
+#: ../../source/extending/scripts.rst:49
 msgid "Any new tags set or tags modified by the tagging scripts will be written to the output files' metadata, unless the tag name begins with an underscore. These \"hidden\" tags are typically used as variables to hold temporary values that are used later in either the tagging or file naming scripts. Tagging scripts are run once for each track in the data, using the metadata for that track."
 msgstr ""
 
-#: ../../source/extending/scripts.rst:52
+#: ../../source/extending/scripts.rst:54
 msgid "Tagging scripts can also be run manually by right-clicking either an album or a track in the right-hand pane in Picard. If run from the album entry, the script is run for each track in the album. If run from an individual track, the script is only run for that track."
 msgstr ""

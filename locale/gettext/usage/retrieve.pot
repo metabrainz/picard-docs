@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 22:06-0600\n"
+"POT-Creation-Date: 2020-05-19 17:28-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,19 +20,23 @@ msgstr ""
 msgid "Retrieving Album information"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:12
+#: ../../source/usage/retrieve.rst:14
+msgid "This stage identifies the album on MusicBrainz that will provide the information used for tagging the files, and retrieves the metadata from the MusicBrainz database.  There are a few different methods available, depending on the information currently available on your system (e.g.: metadata exising in the files, or having the source CD available)."
+msgstr ""
+
+#: ../../source/usage/retrieve.rst:19
 msgid "There are basically four main methods used to retrieve album information from the MusicBrainz database."
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:17
+#: ../../source/usage/retrieve.rst:24
 msgid "Lookup CD"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:21
+#: ../../source/usage/retrieve.rst:28
 msgid ":doc:`Lookup CD <retrieve_lookup_cd>`"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:23
+#: ../../source/usage/retrieve.rst:30
 msgid "This is the preferred method of automatically identifying the album to retrieve, and should be used when you have the CD available.  Typically this would be used right after ripping the audio files from the CD.  When initiated, the table of contents (toc) is read from the CD and a request is sent to MusicBrainz to return a list of the releases that match the toc.  If there are any matches, then they will be listed for you to select the one to use.  If there are no matches or none of the matches are correct, you can search the database manually for the matching album, and are given the option of attaching the toc from your CD to the selected release for future lookup."
 msgstr ""
 
@@ -51,7 +55,7 @@ msgstr ""
 #: ../../source/usage/retrieve_lookup_cd_steps.txt:21
 #: ../../source/usage/retrieve_lookup_steps.txt:38
 #: ../../source/usage/retrieve_lookup_steps.txt:38
-#: ../../source/usage/retrieve_browser_steps.txt:61
+#: ../../source/usage/retrieve_browser_steps.txt:62
 #: ../../source/usage/retrieve_manual_steps.txt:53
 msgid "A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track."
 msgstr ""
@@ -68,15 +72,15 @@ msgstr ""
 msgid "If none of the releases displayed are correct, you have the option to add a new release (with some information automatically included)."
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:39
+#: ../../source/usage/retrieve.rst:46
 msgid "Lookup Files"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:43
+#: ../../source/usage/retrieve.rst:50
 msgid ":doc:`Lookup Files <retrieve_lookup>`"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:45
+#: ../../source/usage/retrieve.rst:52
 msgid "If you don't have the CD available, and your files are grouped by album, this is the preferred method of automatically identifying the album to retrieve.  This is done by grouping the files into album clusters in Picard and then perform the lookup.  Picard will try to match the entire set of clustered files to the same release."
 msgstr ""
 
@@ -87,14 +91,14 @@ msgstr ""
 
 #: ../../source/usage/retrieve_lookup_steps.txt:11
 #: ../../source/usage/retrieve_lookup_steps.txt:11
-#: ../../source/usage/retrieve_browser_steps.txt:11
+#: ../../source/usage/retrieve_browser_steps.txt:15
 #: ../../source/usage/retrieve_manual_steps.txt:11
 msgid "Add your files using :menuselection:`\"Files --> Add Files...\"` or :menuselection:`\"Files --> Add Folder...\"`. For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is enabled from :menuselection:`\"View --> File Browser\"`."
 msgstr ""
 
 #: ../../source/usage/retrieve_lookup_steps.txt:20
 #: ../../source/usage/retrieve_lookup_steps.txt:20
-#: ../../source/usage/retrieve_browser_steps.txt:20
+#: ../../source/usage/retrieve_browser_steps.txt:24
 #: ../../source/usage/retrieve_manual_steps.txt:20
 msgid "Drag the selected directory or files to the \"Unclustered Files\" folder, and wait for Picard to process the files - the names will turn from grey to black."
 msgstr ""
@@ -114,60 +118,60 @@ msgstr ""
 msgid "If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as scanning the files or a manual lookup."
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:58
+#: ../../source/usage/retrieve.rst:65
 msgid "Scan Files"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:62
+#: ../../source/usage/retrieve.rst:69
 msgid ":doc:`Scan Files <retrieve_scan>`"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:64
+#: ../../source/usage/retrieve.rst:71
 msgid "If your files are not grouped into albums and you don't have the CD available, this is the only remaining method of automatically identifying the album to retrieve.  This is done by scanning the files to obtain their AcoustID fingerprints and then perform the lookup for the individual files by fingerprint.  The album(s) matching the files will show up in the right-hand pane based on a \"best match\" using the Preferred Releases settings in the Metadata options."
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:77
+#: ../../source/usage/retrieve.rst:84
 msgid "Lookup in Browser"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:81
+#: ../../source/usage/retrieve.rst:88
 msgid ":doc:`Lookup in Browser <retrieve_browser>`"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:83
+#: ../../source/usage/retrieve.rst:90
 msgid "If none of the automated methods are available, or don't produce the desired results, you have the option of retrieving the album information by having Picard initiate a search on the MusicBrainz website using your web browser.  There are two methods of initiating this search. The first method searches based on the tag information from the selected files."
 msgstr ""
 
-#: ../../source/usage/retrieve_browser_steps.txt:9
+#: ../../source/usage/retrieve_browser_steps.txt:13
 #: ../../source/usage/retrieve_manual_steps.txt:9
 msgid "The steps to follow to manually lookup an album on MusicBrainz are:"
 msgstr ""
 
-#: ../../source/usage/retrieve_browser_steps.txt:28
+#: ../../source/usage/retrieve_browser_steps.txt:32
 msgid "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album clusters if you want lookup a cluster."
 msgstr ""
 
-#: ../../source/usage/retrieve_browser_steps.txt:35
+#: ../../source/usage/retrieve_browser_steps.txt:39
 msgid "Select a file or clustered album and use :menuselection:`\"Tools --> Lookup in Browser\"` to initiate the search in your browser using the currently available metadata."
 msgstr ""
 
-#: ../../source/usage/retrieve_browser_steps.txt:43
+#: ../../source/usage/retrieve_browser_steps.txt:47
 msgid "If you want to revise or refine your search criteria, make the desired changes at the bottom of the web page and click the \"Search\" button to re-initiate the search."
 msgstr ""
 
-#: ../../source/usage/retrieve_browser_steps.txt:54
+#: ../../source/usage/retrieve_browser_steps.txt:55
 msgid "Use the green arrow |retrieve_browser_steps_lookup_tagger| to load the information for a release into Picard."
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:95
+#: ../../source/usage/retrieve.rst:102
 msgid "Manual Lookup"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:99
+#: ../../source/usage/retrieve.rst:106
 msgid ":doc:`Manual Lookup <retrieve_manual>`"
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:101
+#: ../../source/usage/retrieve.rst:108
 msgid "The second browser search method uses manually entered information as the search criterion."
 msgstr ""
 
@@ -183,10 +187,10 @@ msgstr ""
 msgid "Use the green arrow |retrieve_manual_steps_lookup_tagger| to load the information for a release into Picard."
 msgstr ""
 
-#: ../../source/usage/retrieve_manual_steps.txt:60
-msgid "**Note:** If you enter a link to the desired entry (e.g.: ``https://musicbrainz.org/release/9383a6f5-9607-4a36-9c68-8663aad3592b``) in the search box in Picard, the entry will be loaded directly without opening a browser window."
+#: ../../source/usage/retrieve_manual_steps.txt:62
+msgid "If you enter a link to the desired entry (e.g.: ``https://musicbrainz.org/release/9383a6f5-9607-4a36-9c68-8663aad3592b``) in the search box in Picard, the entry will be loaded directly without opening a browser window."
 msgstr ""
 
-#: ../../source/usage/retrieve.rst:112
+#: ../../source/usage/retrieve.rst:119
 msgid "Step-by-step instructions: :doc:`retrieve_lookup_cd` / :doc:`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / :doc:`retrieve_manual`"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 22:06-0600\n"
+"POT-Creation-Date: 2020-05-19 17:28-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,15 +21,14 @@ msgid "Tags from Plugins"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:14
-msgid "Plugins from Picard :doc:`Plugins <../config/options_plugins>` can add more tags.  Following are two popular examples."
+msgid "Plugins from Picard :doc:`Plugins <../config/options_plugins>` can add more tags.  Following are some examples."
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:17
-msgid "Last.fm"
+msgid "Last.fm Plugin"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:19
-#: ../../source/variables/variables_plugins.rst:49
 msgid "**genre**"
 msgstr ""
 
@@ -38,77 +37,289 @@ msgid "Pseudo-genre based on folksonomy tags."
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:25
-msgid "Last.fm Plus"
+msgid "Additional Artists Variables Plugin"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:27
-msgid "The LastFMPlus plugin is a sophisticated plugin that tries to provide stable and meaningful genre selections from the ever-changing and idiosyncratic list provided by lastFM."
+msgid "**Album Variables**"
 msgstr ""
 
-#: ../../source/variables/variables_plugins.rst:30
-msgid "The LastFMPlus plugin is very configurable and examples provided here are based on the default lists provided on the Tag Filter List tab of the LastFMPlus options page."
+#: ../../source/variables/variables_plugins.rst:29
+msgid "**_artists_album_primary_id**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:31
+msgid "The ID of the primary / first album artist listed"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:33
-msgid "**Comment:songs-db_Custom1**"
+msgid "**_artists_album_primary_std**"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:35
-msgid "The decade (e.g.: 1970s)."
+msgid "The primary / first album artist listed (standardized)"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:37
-msgid "**Comment:songs-db_Custom2**"
+msgid "**_artists_album_primary_cred**"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:39
-msgid "Category (e.g.: Female Vocalist, Singer-Songwriter)."
+msgid "The primary / first album artist listed (as credited)"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:41
-msgid "**Comment:songs-db_Custom3**"
+msgid "**_artists_album_primary_sort**"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:43
-msgid "Country (e.g.: British)."
+msgid "The primary / first album artist listed (sort name)"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:45
-msgid "**Comment:songs-db_Occassion**"
+msgid "**_artists_album_additional_id**"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:47
-msgid "Good situations to play a track (e.g.: Driving, Love, Party)."
+msgid "The IDs of all album artists listed except for the primary / first artist, as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:49
+msgid "**_artists_album_additional_std**"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:51
-msgid "Specific detailed genres. For example, if the group is Rock the genre could be one of Acid rock, Acoustic rock, Alternative metal, Alternative rock, Art rock, Blues rock, Boogie rock, Brit rock, Christian rock, College rock, Country rock, etc."
+msgid "All album artists listed (standardized) except for the primary / first artist, separated by strings provided from the release entry"
 msgstr ""
 
-#: ../../source/variables/variables_plugins.rst:54
-msgid "**grouping**"
+#: ../../source/variables/variables_plugins.rst:53
+msgid "**_artists_album_additional_cred**"
 msgstr ""
 
-#: ../../source/variables/variables_plugins.rst:56
-msgid "Top-level genres - default list: Audiobooks, Blues, Classic rock, Classical, Country, Dance, Electronica, Folk, Hip-hop, Indie, Jazz, Kids, Metal, Pop, Punk, Reggae, Rock, Soul, Trance"
+#: ../../source/variables/variables_plugins.rst:55
+msgid "All album artists listed (as credited) except for the primary / first artist, separated by strings provided from the release entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:57
+msgid "**_artists_album_additional_sort**"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:59
-msgid "**mood**"
+msgid "All album artists listed (sort names) except for the primary / first artist, separated by strings provided from the release entry"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:61
-msgid "How a track \"feels\" (e.g.: Happy, Introspective, Drunk)."
+msgid "**_artists_album_additional_std_multi**"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:63
-msgid "**Original Year**"
+msgid "All album artists listed (standardized) except for the primary / first artist, as a multi-value"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:65
-msgid "The original year that the track was released, as opposed to **Original Release Date** (the earliest release date of the entire Album)."
+msgid "**_artists_album_additional_cred_multi**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:67
+msgid "All album artists listed (as credited) except for the primary / first artist, as a multi-value"
 msgstr ""
 
 #: ../../source/variables/variables_plugins.rst:69
-msgid "This plugin makes a large number of web services calls to get track-specific data, so loading a large number of albums and tracks could take a significant amount of time."
+msgid "**_artists_album_all_std**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:71
+msgid "All album artists listed (standardized), separated by strings provided from the release entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:73
+msgid "**_artists_album_all_cred**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:75
+msgid "All album artists listed (as credited), separated by strings provided from the release entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:77
+msgid "**_artists_album_all_sort**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:79
+msgid "All album artists listed (sort names), separated by strings provided from the release entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:81
+msgid "**_artists_album_all_std_multi**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:83
+msgid "All album artists listed (standardized), as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:85
+msgid "**_artists_album_all_cred_multi**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:87
+msgid "All album artists listed (as credited), as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:89
+msgid "**_artists_album_all_sort_primary**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:91
+msgid "The primary / first album artist listed (sort name) followed by all additional album artists (standardized), separated by strings provided from the release entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:93
+msgid "**_artists_album_all_count**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:95
+msgid "The number of artists listed as album artists"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:98
+msgid "**Track Variables**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:100
+msgid "**_artists_track_primary_id**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:102
+msgid "The ID of the primary / first track artist listed"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:104
+msgid "**_artists_track_primary_std**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:106
+msgid "The primary / first track artist listed (standardized)"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:108
+msgid "**_artists_track_primary_cred**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:110
+msgid "The primary / first track artist listed (as credited)"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:112
+msgid "**_artists_track_primary_sort**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:114
+msgid "The primary / first track artist listed (sort name)"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:116
+msgid "**_artists_track_additional_id**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:118
+msgid "The IDs of all track artists listed except for the primary / first artist, as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:120
+msgid "**_artists_track_additional_std**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:122
+msgid "All track artists listed (standardized) except for the primary / first artist, separated by strings provided from the track entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:124
+msgid "**_artists_track_additional_cred**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:126
+msgid "All track artists listed (as credited) except for the primary / first artist, separated by strings provided from the track entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:128
+msgid "**_artists_track_additional_sort**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:130
+msgid "All track artists listed (sort names) except for the primary / first artist, separated by strings provided from the track entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:132
+msgid "**_artists_track_additional_std_multi**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:134
+msgid "All track artists listed (standardized) except for the primary / first artist, as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:136
+msgid "**_artists_track_additional_cred_multi**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:138
+msgid "All track artists listed (as credited) except for the primary / first artist, as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:140
+msgid "**_artists_track_all_std**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:142
+msgid "All track artists listed (standardized), separated by strings provided from the track entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:144
+msgid "**_artists_track_all_cred**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:146
+msgid "All track artists listed (as credited), separated by strings provided from the track entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:148
+msgid "**_artists_track_all_sort**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:150
+msgid "All track artists listed (sort names), separated by strings provided from the track entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:152
+msgid "**_artists_track_all_std_multi**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:154
+msgid "All track artists listed (standardized), as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:156
+msgid "**_artists_track_all_cred_multi**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:158
+msgid "All track artists listed (as credited), as a multi-value"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:160
+msgid "**_artists_track_all_sort_primary**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:162
+msgid "The primary / first track artist listed (sort name) followed by all additional track artists (standardized), separated by strings provided from the track entry"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:164
+msgid "**_artists_track_all_count**"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:166
+msgid "The number of artists listed as track artists"
+msgstr ""
+
+#: ../../source/variables/variables_plugins.rst:170
+msgid "Some plugins make a large number of web service calls to get additional track-specific data such as performer and work relationships, so loading a large number of albums and tracks could take a significant amount of time.  The time concern can be partially addressed by operating a local MusicBrainz server with the rate limiting disabled.  Please see the `MusicBrainz Server <https://github.com/metabrainz/musicbrainz-server>`_ project on GitHub for additional information."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-16 18:24-0600\n"
+"POT-Creation-Date: 2020-05-19 17:28-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,38 +52,38 @@ msgstr ""
 msgid "Save the tags grouping and work so that they are compatible with current iTunes versions. Without this option grouping will be displayed in iTunes as \"work name\" and work will not be available. See the `Picard Tag Mapping page <https://picard.musicbrainz.org/docs/mappings/>`_ for details."
 msgstr ""
 
-#: ../../source/config/options_tag_compatibility.rst:44
-msgid "Note: For other players supporting grouping and work you might need to disable this option. `MusicBee <https://getmusicbee.com/>`_ is one example of this."
-msgstr ""
-
-#: ../../source/config/options_tag_compatibility.rst:47
-msgid "**Also include ID3v1 tags in the files**"
+#: ../../source/config/options_tag_compatibility.rst:46
+msgid "For other players supporting grouping and work you might need to disable this option. `MusicBee <https://getmusicbee.com/>`_ is one example of this."
 msgstr ""
 
 #: ../../source/config/options_tag_compatibility.rst:49
-msgid "This is not recommended at all. ID3v1.1 tags are obsolete and may not work with non-latin scripts."
+msgid "**Also include ID3v1 tags in the files**"
 msgstr ""
 
 #: ../../source/config/options_tag_compatibility.rst:51
-msgid "**AAC / AC3 files**"
+msgid "This is not recommended at all. ID3v1.1 tags are obsolete and may not work with non-latin scripts."
 msgstr ""
 
 #: ../../source/config/options_tag_compatibility.rst:53
+msgid "**AAC / AC3 files**"
+msgstr ""
+
+#: ../../source/config/options_tag_compatibility.rst:55
 msgid "Picard can save APEv2 tags to pure AAC or AC3 files, which by default do not support tagging. APEv2 tags in AAC or AC3 are supported by some players (e.g.: foobar2000 or MusicBee), but players not supporting AAC or AC3 files with APEv2 tags can have issues loading and playing those files. Most often they display a wrong duration, causing issues on track change. To deal with this you can choose whether to save tags to those files:"
 msgstr ""
 
-#: ../../source/config/options_tag_compatibility.rst:58
+#: ../../source/config/options_tag_compatibility.rst:60
 msgid "**Save APEv2 tags**: Picard will save APEv2 tags to the files."
 msgstr ""
 
-#: ../../source/config/options_tag_compatibility.rst:60
+#: ../../source/config/options_tag_compatibility.rst:62
 msgid "**Do not save tags**: Picard will not save any tags to the files, but you can still use Picard to rename them. By default existing APEv2 tags will be kept in the file."
 msgstr ""
 
-#: ../../source/config/options_tag_compatibility.rst:63
+#: ../../source/config/options_tag_compatibility.rst:65
 msgid "**Remove APEv2 tags**: If you have \"Do not save tags\" enabled checking this option will cause Picard to remove existing APEv2 tags from the file on saving."
 msgstr ""
 
-#: ../../source/config/options_tag_compatibility.rst:66
+#: ../../source/config/options_tag_compatibility.rst:68
 msgid "Regardless of how you have configured saving tags Picard will always read existing APEv2 tags in AAC or AC3 files."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 22:06-0600\n"
+"POT-Creation-Date: 2020-05-19 17:28-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,50 +132,50 @@ msgstr ""
 msgid "This hook is called after an album has been removed from Picard."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:177
-msgid "**Note**: *Event hooks are available since API version 2.2*"
-msgstr ""
-
-#: ../../source/technical/plugins_api.rst:181
-msgid "File Formats"
+#: ../../source/technical/plugins_api.rst:179
+msgid "Event hooks have been available since API version 2.2."
 msgstr ""
 
 #: ../../source/technical/plugins_api.rst:183
+msgid "File Formats"
+msgstr ""
+
+#: ../../source/technical/plugins_api.rst:185
 msgid "Plugins can extend Picard with support for additional file formats. See the existing `file format implementations <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for details on how to implement the ``_load`` and ``_save`` methods. Example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:221
+#: ../../source/technical/plugins_api.rst:223
 msgid "Tagger Script Functions"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:223
+#: ../../source/technical/plugins_api.rst:225
 msgid "To define new tagger script functions use ``register_script_function(function, name=None)`` from the ``picard.script`` module. ``parser`` is an instance of ``picard.script.ScriptParser``, and the rest of the arguments passed to it are the arguments from the function call in the tagger script. Example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:245
+#: ../../source/technical/plugins_api.rst:247
 msgid "``register_script_function`` supports two optional arguments:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:247
+#: ../../source/technical/plugins_api.rst:249
 msgid "**eval_args**: If this is **False**, the arguments will not be evaluated before being passed to **function**."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:248
+#: ../../source/technical/plugins_api.rst:250
 msgid "**check_argcount**: If this is **False** the number of arguments passed to the function will not be verified."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:250
+#: ../../source/technical/plugins_api.rst:252
 msgid "The default value for both arguments is **True**."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:254
+#: ../../source/technical/plugins_api.rst:256
 msgid "Context Menu Actions"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:256
+#: ../../source/technical/plugins_api.rst:258
 msgid "Right-click context menu actions can be added to albums, tracks and files in \"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of Clusters). Example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:285
+#: ../../source/technical/plugins_api.rst:287
 msgid "Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", \"*cluster*\" or \"*clusterlist*\"."
 msgstr ""
