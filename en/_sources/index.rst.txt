@@ -49,6 +49,17 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 
 .. toctree::
+   :caption: Recommended Work Flows
+   :hidden:
+
+   workflows/workflows
+   workflows/workflow_cd
+   workflows/workflow_album
+   workflows/workflow_metadata
+   workflows/workflow_no_info
+
+
+.. toctree::
    :caption: Troubleshooting
    :hidden:
 
