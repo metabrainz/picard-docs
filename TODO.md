@@ -9,7 +9,8 @@
 
 - Add "How do I..." section (step-by-step instructions)
   - Submit AcoustID fingerprints
+  - Install plugins from files
 
-- Add "Useful links" section
+- Add "Useful links" section?
   - videos
   - scripts

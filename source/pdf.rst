@@ -22,6 +22,7 @@ MusicBrainz Picard
    scripting
    functions/list_by_type
    usage/using
+   workflows/pdf_workflows
    extending/extending
    pdf_troubleshooting
    faq/faq
