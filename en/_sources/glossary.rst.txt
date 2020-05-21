@@ -15,102 +15,156 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
 **acoustic fingerprint**
 
-    An acoustic fingerprint is a digital summary of an audio signal, that can be used to
-    quickly identify the audio.
-    Please see `Wikipedia <https://wikipedia.org/wiki/Acoustic_fingerprint>`_ for a full
-    explanation of acoustic fingerprinting.
+   An acoustic fingerprint is a digital summary of an audio signal, that can be used to
+   quickly identify the audio.
+
+   Please see `Wikipedia <https://wikipedia.org/wiki/Acoustic_fingerprint>`_ for a full
+   explanation of acoustic fingerprinting.
 
 **AcoustID**
 
-    AcoustID is an acoustic fingerprint system built entirely on open-source technology.  See
-    the `AcoustID website <https://acoustid.org/>`_ for additional information.
+   AcoustID is an acoustic fingerprint system built entirely on open-source technology.  See
+   the `AcoustID website <https://acoustid.org/>`_ for additional information.
 
 **albumartist**
 
-    The musician or group of musicians performing on a release.  Note that this
-    is different for Classical Music releases, which follow the MusicBrainz `Classical Style Guide
-    <https://musicbrainz.org/doc/Style/Classical>`_, listing the composer(s) first, followed by the
-    performers.
+   The musician or group of musicians performing on a release.  For example, "The Beatles" is the
+   albumartist for the album "`Past Masters, Volume One
+   <https://musicbrainz.org/release/9383a6f5-9607-4a36-9c68-8663aad3592b>`_", while the albumartist
+   for "`No Boundaries: A Benefit for the Kosovar Refugees
+   <https://musicbrainz.org/release/65536c6a-9219-4c41-9829-781eab7cdb50>`_" is "Various Artists".
+
+   .. note::
+
+      The albumartist usage is different for Classical Music releases, which follow the MusicBrainz
+      `Classical Style Guide <https://musicbrainz.org/doc/Style/Classical>`_, listing the composer(s)
+      first, followed by the performers.
 
 **artist**
 
-    The musician or group of musicians performing on a track.  Note that this
-    is different for Classical Music releases, which follow the MusicBrainz Classical Style Guide,
-    showing only the composer and not the performers.
-    Please see the `Artist <https://musicbrainz.org/doc/Artist>`_ page on the MusicBrainz website
-    for additional information.
+   The musician or group of musicians performing on a track.  For example, "Jeen" is the artist on
+   the track "`Be (One in a Million) <https://musicbrainz.org/track/5acda7a7-697c-4614-8467-7c48b3d946a6>`_"
+   on the album "`Tourist <https://musicbrainz.org/release/472f4da8-c7dd-4e4a-8aae-9e7824f85afc>`_".
+
+   Please see the `Artist <https://musicbrainz.org/doc/Artist>`_ page on the MusicBrainz website
+   for additional information.
+
+   .. note::
+
+      The artist usage is different for Classical Music releases, which follow the MusicBrainz
+      Classical Style Guide, showing only the composer and not the performers.
 
 **artist credit**
 
-    Artist credits indicate who is the main credited artist (or artists) for releases, release
-    groups, tracks and recordings, and how they are credited. They consist of artists, with
-    (optionally) their names as credited in the specific release, track, etc., and join phrases
-    between them.  Please see the `Artist Credits <https://musicbrainz.org/doc/Artist_Credits>`_
-    page on the MusicBrainz website for additional information.
+   Artist credits indicate who is the main credited artist (or artists) for releases, release
+   groups, tracks and recordings, and how they are credited. They consist of artists, with
+   (optionally) their names as credited in the specific release, track, etc., and join phrases
+   between them.  For example, on the release "`Love Sponge
+   <https://musicbrainz.org/release/6ca797fd-8f3a-4326-bdc7-f805cb2de088>`_" the artist is
+   "`Walk off the Earth <https://musicbrainz.org/artist/e2a5eaeb-7de7-4ffe-a519-e18e427a5060>`_"
+   but is credited as "Gianni and Sarah".
+
+   Please see the `Artist Credits <https://musicbrainz.org/doc/Artist_Credits>`_ page on the MusicBrainz
+   website for additional information.
 
 **caa**
 
-    The `Cover Art Archive <https://coverartarchive.org/>`_ which is a joint project between the
-    `Internet Archive <https://archive.org/>`_ and `MusicBrainz <https://musicbrainz.org/>`_, whose
-    goal is to make cover art images available to everyone on the Internet in an organised and
-    convenient way.
-    Please see the `Cover Art Archive page <https://musicbrainz.org/doc/Cover_Art_Archive>`_ on the
-    MusicBrainz website for additional information.
+   The `Cover Art Archive <https://coverartarchive.org/>`_ which is a joint project between the
+   `Internet Archive <https://archive.org/>`_ and `MusicBrainz <https://musicbrainz.org/>`_, whose
+   goal is to make cover art images available to everyone on the Internet in an organised and
+   convenient way.
+
+   Please see the `Cover Art Archive page <https://musicbrainz.org/doc/Cover_Art_Archive>`_ on the
+   MusicBrainz website for additional information.
 
 **mbid**
 
-    The MusicBrainz Identifier, which is a unique code used to identify each element in the MusicBrainz
-    database.
+   The MusicBrainz Identifier, which is a unique code used to identify each element in the MusicBrainz
+   database.  These are 128-bit Universally Unique Identifiers (UUID) represented as 32 hexadecimal digits,
+   displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a total of 36 characters.
+
+   Please see the UUID page on `Wikipedia <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_
+   for more information.
 
 **non-album track**
 
-    This term is obsolete and has been replaced with 'standalone recording'.
+   This term is obsolete and has been replaced with 'standalone recording'.
 
 **recording**
 
-    An entity in MusicBrainz which can be linked to tracks on releases. Each track must always be
-    associated with a single recording, but a recording can be linked to any number of tracks.
-    Please see the `Recording <https://musicbrainz.org/doc/Recording>`_ page on the MusicBrainz
-    website for additional information.
+   An entity in MusicBrainz which can be linked to tracks on releases. For example "`Be (One in a Million)
+   <https://musicbrainz.org/recording/fbd0e1a0-b6c5-4926-b89d-3922e4144da9>`_" (recording id:
+   fbd0e1a0-b6c5-4926-b89d-3922e4144da9) is the recording linked to track 14 on the album "`Tourist
+   <https://musicbrainz.org/release/1fa3b874-dbef-4c86-9681-3f6d6877ddba>`_". Each track must always be
+   associated with a single recording, but a recording can be linked to any number of tracks.
+
+   Please see the `Recording <https://musicbrainz.org/doc/Recording>`_ page on the MusicBrainz
+   website for additional information.
 
 **release**
 
-    Represents the unique issuing of a product on a specific date with specific
-    release information such as the country, label, barcode and packaging.
-    Please see the `Release <https://musicbrainz.org/doc/Release>`_ page on the MusicBrainz
-    website for additional information.
+   Represents the unique issuing of a product on a specific date with specific
+   release information such as the country, label, barcode and packaging.  For example "`Sea of No Cares
+   <https://musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483>`_" (release id:
+   4e4ba41e-24ae-3f57-87f6-3d8f19ae9483) is one version of the album released by Great Big Sea.
+
+   Please see the `Release <https://musicbrainz.org/doc/Release>`_ page on the MusicBrainz
+   website for additional information.
 
 **release group**
 
-    Groups several different releases into a single logical entity. Every release
-    belongs to one, and only one release group.  Both release groups and releases are "albums" in a
-    general sense, but with an important difference: a release is something you can buy as media such
-    as a CD or a vinyl record, while a release group embraces the overall concept of an album — it
-    doesn't matter how many CDs or editions / versions it had.
-    Please see the `Release Group <https://musicbrainz.org/doc/Release_Group>`_ page on the MusicBrainz
-    website for additional information.
+   Groups several different releases into a single logical entity. Every release
+   belongs to one, and only one release group.  Both release groups and releases are "albums" in a
+   general sense, but with an important difference: a release is something you can buy as media such
+   as a CD or a vinyl record, while a release group embraces the overall concept of an album — it
+   doesn't matter how many CDs or editions / versions it had.  For example "`Sea of No Cares
+   <https://musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483>`_" (release id:
+   4e4ba41e-24ae-3f57-87f6-3d8f19ae9483) is one version of the album in the `release group
+   <https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca>`_ (release group id:
+   7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca) by Great Big Sea.
+
+   Please see the `Release Group <https://musicbrainz.org/doc/Release_Group>`_ page on the MusicBrainz
+   website for additional information.
 
 **standalone recording**
 
-    A recording that is not linked to any release.
-    Please see the `Standalone Recording <https://musicbrainz.org/doc/Standalone_Recording>`_ page on
-    the MusicBrainz website for additional information.
+   A recording that is not linked to any release.  An example is "`Sea of No Cares (live)
+   <https://musicbrainz.org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8>`_" (recording id:
+   0198c132-ed38-430c-92bd-d3c7e9ff25b8) by Great Big Sea.
+
+   Please see the `Standalone Recording <https://musicbrainz.org/doc/Standalone_Recording>`_ page on
+   the MusicBrainz website for additional information.
 
 **track**
 
-    A track is the way a recording is represented on a particular release (or, more precisely, on a
-    particular medium). Every track has a title and is credited to one or more artists.
-    Please see the `Track <https://musicbrainz.org/doc/Track>`_ page on
-    the MusicBrainz website for additional information.
+   A track is the way a recording is represented on a particular release (or, more precisely, on a
+   particular medium). Every track has a title and is credited to one or more artists.  For example,
+   track 7 of the album "`Back to Boston <https://musicbrainz.org/release/9780e88d-a9e2-4e99-87c4-e54b65e7e49b>`_"
+   by Jason Anderson is "`Driving Home <https://musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94>`_" (track id:
+   bf8ecb3c-6fe6-41b7-a078-5748265a9f94).
+
+   Please see the `Track <https://musicbrainz.org/doc/Track>`_ page on
+   the MusicBrainz website for additional information.
 
 **work**
 
-    A distinct intellectual or artistic creation, which can be expressed in the form of
-    one or more audio recordings. While a 'Work' in MusicBrainz is usually musical in nature, it is
-    not necessarily so. For example, a work could be a novel, play, poem or essay, later recorded as
-    an oratory or audiobook.
-    Please see the `Work <https://musicbrainz.org/doc/Work>`_ page on the MusicBrainz website for
-    additional information.
+   A distinct intellectual or artistic creation, which can be expressed in the form of
+   one or more audio recordings. While a 'Work' in MusicBrainz is usually musical in nature, it is
+   not necessarily so. For example, a work could be a novel, play, poem or essay, later recorded as
+   an oratory or audiobook.  "`Blinded by the Light
+   <https://musicbrainz.org/recording/431b3d53-2783-46fd-9bb4-e1410f2941b6>`_" by "Manfred Mann's Earth Band"
+   is a recording of the work "`Blinded by the Light <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_"
+   (work id: 7a757d97-da2a-3751-8d32-94d471de2eeb) written by Bruce Springsteen.
 
-For more information on these and other terms used, please refer to the
-`Terminology <https://musicbrainz.org/doc/Terminology>`_ page on the MusicBrainz website.
+   Please see the `Work <https://musicbrainz.org/doc/Work>`_ page on the MusicBrainz website for
+   additional information.
+
+.. seealso::
+
+   For more information on these and other terms used, please refer to the
+   `Terminology <https://musicbrainz.org/doc/Terminology>`_ page on the MusicBrainz website.
+
+.. seealso::
+
+   For a detailed explanation of how all the elements are related within the MusicBrainz environment, please refer
+   to the `MusicBrainz Database / Schema <https://musicbrainz.org/doc/MusicBrainz_Database/Schema>`_ webpage.
