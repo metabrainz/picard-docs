@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 17:28-0600\n"
+"POT-Creation-Date: 2020-05-23 12:10-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,178 +24,182 @@ msgstr ""
 msgid "These variables are populated from MusicBrainz data for most releases, without any special Picard settings."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:18
-msgid "**_absolutetracknumber**"
-msgstr ""
-
 #: ../../source/variables/variables_basic.rst:20
-msgid "The absolute number of this track disregarding the disc number (i.e.: ``%_absolutetracknumber%`` of ``%_totalalbumtracks%``). (*since Picard 1.3*)"
+msgid "Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database."
 msgstr ""
 
 #: ../../source/variables/variables_basic.rst:22
-msgid "**_albumartists**"
+msgid "**_absolutetracknumber**"
 msgstr ""
 
 #: ../../source/variables/variables_basic.rst:24
+msgid "The absolute number of this track disregarding the disc number (i.e.: ``%_absolutetracknumber%`` of ``%_totalalbumtracks%``). For example, this value would be 11 for the second track on disc 2 where disc 1 has 9 tracks. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../source/variables/variables_basic.rst:27
+msgid "**_albumartists**"
+msgstr ""
+
+#: ../../source/variables/variables_basic.rst:29
 msgid "The Album's Artists' Name(s) (multi-value). (*since Picard 1.3*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:26
+#: ../../source/variables/variables_basic.rst:31
 msgid "**_albumartists_sort**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:28
+#: ../../source/variables/variables_basic.rst:33
 msgid "The Album Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:30
+#: ../../source/variables/variables_basic.rst:35
 msgid "**_artists_sort**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:32
+#: ../../source/variables/variables_basic.rst:37
 msgid "The Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:34
+#: ../../source/variables/variables_basic.rst:39
 msgid "**_bitrate**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:36
+#: ../../source/variables/variables_basic.rst:41
 msgid "Approximate bitrate in kbps."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:38
+#: ../../source/variables/variables_basic.rst:43
 msgid "**_bits_per_sample**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:40
+#: ../../source/variables/variables_basic.rst:45
 msgid "Bits of data per sample."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:42
+#: ../../source/variables/variables_basic.rst:47
 msgid "**_channels**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:44
+#: ../../source/variables/variables_basic.rst:49
 msgid "Number of audio channels in the file."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:46
+#: ../../source/variables/variables_basic.rst:51
 msgid "**_dirname**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:48
+#: ../../source/variables/variables_basic.rst:53
 msgid "The name of the directory containing the file at the point of being loaded into Picard. (*since Picard 1.1*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:50
+#: ../../source/variables/variables_basic.rst:55
 msgid "**_extension**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:52
+#: ../../source/variables/variables_basic.rst:57
 msgid "The file's extension. (*since Picard 0.9*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:54
+#: ../../source/variables/variables_basic.rst:59
 msgid "**_filename**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:56
+#: ../../source/variables/variables_basic.rst:61
 msgid "The name of the file without extension (*since Picard 1.1*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:58
+#: ../../source/variables/variables_basic.rst:63
 msgid "**_format**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:60
+#: ../../source/variables/variables_basic.rst:65
 msgid "Media format of the file (e.g.: MPEG-1 Audio)."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:62
+#: ../../source/variables/variables_basic.rst:67
 msgid "**_length**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:64
+#: ../../source/variables/variables_basic.rst:69
 msgid "The length of the track in format mins:secs."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:66
+#: ../../source/variables/variables_basic.rst:71
 msgid "**_multiartist**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:68
+#: ../../source/variables/variables_basic.rst:73
 msgid "0 if tracks on the album all have the same primary artist, 1 otherwise. (*since Picard 1.3*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:72
+#: ../../source/variables/variables_basic.rst:77
 msgid "**_primaryreleasetype**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:74
+#: ../../source/variables/variables_basic.rst:79
 msgid "Release Group Primary type (i.e.: album, single, ep, broadcast, or other)."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:76
+#: ../../source/variables/variables_basic.rst:81
 msgid "**_rating**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:78
+#: ../../source/variables/variables_basic.rst:83
 msgid "Rating 0-5 by Musicbrainz users."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:80
+#: ../../source/variables/variables_basic.rst:85
 msgid "**_releasecomment**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:82
+#: ../../source/variables/variables_basic.rst:87
 msgid "Release disambiguation comment. (*since Picard 0.15*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:84
+#: ../../source/variables/variables_basic.rst:89
 msgid "**_releasegroup**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:86
+#: ../../source/variables/variables_basic.rst:91
 msgid "Release Group Title which is typically the same as the Album Title, but can be different."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:88
+#: ../../source/variables/variables_basic.rst:93
 msgid "**_releasegroupcomment**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:90
+#: ../../source/variables/variables_basic.rst:95
 msgid "Release Group disambiguation comment."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:92
+#: ../../source/variables/variables_basic.rst:97
 msgid "**_releaselanguage**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:94
+#: ../../source/variables/variables_basic.rst:99
 msgid "Release Language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:96
+#: ../../source/variables/variables_basic.rst:101
 msgid "**_sample_rate**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:98
+#: ../../source/variables/variables_basic.rst:103
 msgid "Number of digitizing samples per second (Hz)."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:102
+#: ../../source/variables/variables_basic.rst:107
 msgid "**_secondaryreleasetype**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:104
+#: ../../source/variables/variables_basic.rst:109
 msgid "Zero or more Release Group Secondary types (i.e.: audiobook, compilation, dj-mix, interview, live, mixtape/street, remix, soundtrack, or spokenword)."
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:106
+#: ../../source/variables/variables_basic.rst:111
 msgid "**_totalalbumtracks**"
 msgstr ""
 
-#: ../../source/variables/variables_basic.rst:108
+#: ../../source/variables/variables_basic.rst:113
 msgid "The total number of tracks across all discs of this release."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 17:28-0600\n"
+"POT-Creation-Date: 2020-05-23 12:10-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,150 +20,158 @@ msgstr ""
 msgid "Advanced Tags"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:15
+#: ../../source/variables/tags_advanced.rst:16
 msgid "You can make additional tags available by enabling the :ref:`Advanced Relationships <advanced_relationships>` and the :ref:`Use genres from MusicBrainz <genre_settings>` settings in Picard."
 msgstr ""
 
 #: ../../source/variables/tags_advanced.rst:21
-msgid "Advanced Relationship Tags"
-msgstr ""
-
-#: ../../source/variables/tags_advanced.rst:22
-msgid "If you enable tagging with Advanced Relationships, you get these extra tags:"
-msgstr ""
-
-#: ../../source/variables/tags_advanced.rst:24
-msgid "**arranger**"
+msgid "Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database."
 msgstr ""
 
 #: ../../source/variables/tags_advanced.rst:26
-msgid "Arranger Relationship Type (releases, recordings, works), Instrumentator Relationship Type, Orchestrator Relationship Type (*since Picard 0.10*)"
-msgstr ""
-
-#: ../../source/variables/tags_advanced.rst:28
-msgid "**composer**"
-msgstr ""
-
-#: ../../source/variables/tags_advanced.rst:30
-msgid "Composer Relationship Type"
+msgid "Some of these tags are only supported for certain file types or tag formats.  Please see the `Picard Tag Mapping <https://picard.musicbrainz.org/docs/mappings/>`_ webpage for details."
 msgstr ""
 
 #: ../../source/variables/tags_advanced.rst:32
+msgid "Advanced Relationship Tags"
+msgstr ""
+
+#: ../../source/variables/tags_advanced.rst:33
+msgid "If you enable tagging with Advanced Relationships, you get these extra tags:"
+msgstr ""
+
+#: ../../source/variables/tags_advanced.rst:35
+msgid "**arranger**"
+msgstr ""
+
+#: ../../source/variables/tags_advanced.rst:37
+msgid "Arranger Relationship Type (releases, recordings, works), Instrumentator Relationship Type, Orchestrator Relationship Type (*since Picard 0.10*)"
+msgstr ""
+
+#: ../../source/variables/tags_advanced.rst:39
+msgid "**composer**"
+msgstr ""
+
+#: ../../source/variables/tags_advanced.rst:41
+msgid "Composer Relationship Type"
+msgstr ""
+
+#: ../../source/variables/tags_advanced.rst:43
 msgid "**composersort**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:34
+#: ../../source/variables/tags_advanced.rst:45
 msgid "Composer Relationship Type's Sort Name"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:36
+#: ../../source/variables/tags_advanced.rst:47
 msgid "**conductor**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:38
+#: ../../source/variables/tags_advanced.rst:49
 msgid "Conductor Relationship Type (releases, recordings), Chorus Master Relationship Type (releases, recordings)"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:40
+#: ../../source/variables/tags_advanced.rst:51
 msgid "**djmixer**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:42
+#: ../../source/variables/tags_advanced.rst:53
 msgid "Mix-DJ Relationship Type (*since Picard 0.9*)"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:44
+#: ../../source/variables/tags_advanced.rst:55
 msgid "**engineer**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:46
+#: ../../source/variables/tags_advanced.rst:57
 msgid "Engineer Relationship Type"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:48
+#: ../../source/variables/tags_advanced.rst:59
 msgid "**license**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:50
+#: ../../source/variables/tags_advanced.rst:61
 msgid "License Relationship Type (releases, recordings) (*since Picard 1.0*)"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:52
+#: ../../source/variables/tags_advanced.rst:63
 msgid "**lyricist**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:54
+#: ../../source/variables/tags_advanced.rst:65
 msgid "Lyricist Relationship Type"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:56
+#: ../../source/variables/tags_advanced.rst:67
 msgid "**mixer**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:58
+#: ../../source/variables/tags_advanced.rst:69
 msgid "Engineer Relationship Type (\"Mixed By\") (*since Picard 0.9*)"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:60
+#: ../../source/variables/tags_advanced.rst:71
 msgid "**performer:<type>**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:62
+#: ../../source/variables/tags_advanced.rst:73
 msgid "Performer Relationship Type (releases - vocals/instruments, recordings - vocals/instruments), <type> can be \"vocal\", \"guest guitar\", \"solo violin\", …"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:64
+#: ../../source/variables/tags_advanced.rst:75
 msgid "Orchestra Relationship Type (releases, recordings), <type> is \"orchestra\""
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:66
+#: ../../source/variables/tags_advanced.rst:77
 msgid "Concertmaster Relationship Type (releases, recordings), <type> is \"concertmaster\""
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:68
+#: ../../source/variables/tags_advanced.rst:79
 msgid "**producer**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:70
+#: ../../source/variables/tags_advanced.rst:81
 msgid "Producer Relationship Type"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:72
+#: ../../source/variables/tags_advanced.rst:83
 msgid "**remixer**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:74
+#: ../../source/variables/tags_advanced.rst:85
 msgid "Remixer Relationship Type"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:76
+#: ../../source/variables/tags_advanced.rst:87
 msgid "**work**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:78
+#: ../../source/variables/tags_advanced.rst:89
 msgid "Work Name (*since Picard 1.3*)"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:80
+#: ../../source/variables/tags_advanced.rst:91
 msgid "**writer**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:82
+#: ../../source/variables/tags_advanced.rst:93
 msgid "Writer Relationship Type (*since Picard 1.0*). Not written to most file formats automatically. You can merge this with composers with a script like::"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:90
+#: ../../source/variables/tags_advanced.rst:101
 msgid "Genre Tags"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:91
+#: ../../source/variables/tags_advanced.rst:102
 msgid "If you enable Use genres from MusicBrainz, you get:"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:93
+#: ../../source/variables/tags_advanced.rst:104
 msgid "**genre**"
 msgstr ""
 
-#: ../../source/variables/tags_advanced.rst:95
+#: ../../source/variables/tags_advanced.rst:106
 msgid "Genre information from MusicBrainz (*since Picard 2.1, earlier versions used folksonomy tags*)"
 msgstr ""
