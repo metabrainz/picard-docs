@@ -10,12 +10,38 @@
 
 .. TODO: Note which tags are not provided by Picard
 
+.. #metabrainz [May 22, 16:54:30] <rdswift> zas: The Picard docs refer to the following as basic tags, but I haven't yet
+..                                found a release that will produce them.  Do you know if they are still valid, or have
+..                                they been deprecated?  musicbrainz_originalalbumid, musicbrainz_originalartistid,
+..                                musicbrainz_releasetrackid, originalalbum, originalartist
+.. #metabrainz [May 23, 02:50:44] <zas> rdswift: dunno, perhaps outsidecontext could tell
+.. #metabrainz [May 23, 02:52:20] <zas> but there were relatively recent changes regarding few of them, see PICARD-1426
+.. #metabrainz [May 23, 02:52:21] <+BrainzBot> PICARD-1426: Map musicbrainz_originalalbumid and musicbrainz_originalartistid
+..                                to MP4 and WMA https://tickets.metabrainz.org/browse/PICARD-1426
+.. #metabrainz [May 23, 02:53:34] <zas> PICARD-720
+.. #metabrainz [May 23, 02:53:35] <+BrainzBot> PICARD-720: Files are immediately recognized as "non-album tracks" if
+..                                MUSICBRAINZ_ALBUMID is missing https://tickets.metabrainz.org/browse/PICARD-720
+.. #metabrainz [May 23, 03:50:42] <Mineo> rdswift: musicbrainz_releasetrackid is only written for some formats (ape and vorbis)
+.. #metabrainz [May 23, 03:51:53] <Mineo> rdswift: for the original... tags, see https://tickets.metabrainz.org/browse/PICARD-1034
+.. #metabrainz [May 23, 03:51:54] <+BrainzBot> PICARD-1034: Picard not seeing TOPE and TOAL
+
+
 Basic Tags
 ==========
 The following tags are populated from MusicBrainz data for most releases, without any special Picard settings.
 
 All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in
 several other more minor settings) by wrapping them between percent '%' symbols (e.g. ``%title%``).
+
+.. note::
+
+   Tags will not be created and will not be available as variables if there was no value retrieved for the tag
+   from the MusicBrainz database.
+
+.. note::
+
+   Some of these tags are only supported for certain file types or tag formats.  Please see the `Picard Tag Mapping
+   <https://picard.musicbrainz.org/docs/mappings/>`_ webpage for details.
 
 **acoustid_fingerprint**
 
@@ -35,31 +61,31 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **albumartistsort**
 
-    Release Artist's Sort Name
+    Release Artist's Sort Name (e.g.: "Beatles, The").
 
 **albumsort**
 
-    Release Title's Sort Name
+    Release Title's Sort Name.
 
 **artist**
 
-    Track Artist Name(s) (string)
+    Track Artist Name(s). (string)
 
 **artists**
 
-    Track Artist Name(s) (multi-value) (*since Picard 1.3*)
+    Track Artist Name(s). (multi-value) (*since Picard 1.3*)
 
 **artistsort**
 
-    Track Artist Sort Name
+    Track Artist Sort Name.
 
 **asin**
 
-    Amazon Standard Identification Number
+    Amazon Standard Identification Number - the number identifying the item on Amazon.
 
 **barcode**
 
-    Release Barcode
+    Release Barcode - the barcode assigned to the release.
 
 **bpm**
 
@@ -67,11 +93,12 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **catalognumber**
 
-    The number(s) assigned to the release by the label(s) which can often be found on the spine or near the barcode. There may be more than one, especially when multiple labels are involved.
+    The number(s) assigned to the release by the label(s), which can often be found on the spine or near the barcode.
+    There may be more than one, especially when multiple labels are involved.
 
 **comment**
 
-    Disambiguation Comment
+    Disambiguation Comment - the comment entered to help distinguish one release from another (e.g.: Deluxe version with 2 bonus tracks).
 
 **compilation**
 
@@ -84,11 +111,12 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **date**
 
-    Release Date (YYYY-MM-DD)
+    Release Date (YYYY-MM-DD) - the date that the release was issued.
 
 **discid**
 
-    Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.
+    Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of
+    contents (TOC) information read from the disc.
 
 **discnumber**
 
@@ -100,23 +128,24 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **encodedby**
 
-    Encoded by (person or organization)
+    Encoded by (person or organization).
 
 **encodersettings**
 
-    Encoder Settings
+    Encoder Settings used.
 
 **isrc**
 
-    International Standard Recording Code (*since Picard 0.12*)
+    International Standard Recording Code - an international standard code for uniquely identifying sound recordings and music video recordings.
+    See `Wikipedia <https://en.wikipedia.org/wiki/International_Standard_Recording_Code>`_ for more information. (*since Picard 0.12*)
 
 **key**
 
-    Key of the music
+    Key of the music.
 
 **label**
 
-    Release Label Name(s)
+    Release Label Name(s).
 
 **language**
 
@@ -132,51 +161,51 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **musicbrainz_albumartistid**
 
-    Release Artist's MusicBrainz Identifier
+    Release Artist's MusicBrainz Identifier.
 
 **musicbrainz_albumid**
 
-    Release MusicBrainz Identifier
+    Release MusicBrainz Identifier.
 
 **musicbrainz_artistid**
 
-    Track Artist's MusicBrainz Identifier
+    Track Artist's MusicBrainz Identifier.
 
 **musicbrainz_discid**
 
-    Disc ID if the album was added using CD Lookup (*since Picard 0.12*)
+    Disc ID if the album was added using :menuselection:`"Tools --> Lookup CD"`. (*since Picard 0.12*)
 
 **musicbrainz_originalalbumid**
 
-    Original Release's MusicBrainz Identifier
+    Original Release's MusicBrainz Identifier.
 
 **musicbrainz_originalartistid**
 
-    Original Track Artist's MusicBrainz Identifier
+    Original Track Artist's MusicBrainz Identifier.
 
 **musicbrainz_recordingid**
 
-    Recording's MusicBrainz Identifier
+    Recording's MusicBrainz Identifier.
 
 **musicbrainz_releasegroupid**
 
-    Release Group's MusicBrainz Identifier
+    Release Group's MusicBrainz Identifier.
 
 **musicbrainz_releasetrackid**
 
-    Release Track MusicBrainz Identifier (*since Picard 1.3*)
+    Release Track MusicBrainz Identifier. (*since Picard 1.3*)
 
 **musicbrainz_trackid**
 
-    Recording MusicBrainz Identifier
+    MusicBrainz Identifier for the track.
 
 **musicbrainz_workid**
 
-    Work Name MusicBrainz Identifier
+    MusicBrainz Identifier for the work.
 
 **musicip_fingerprint**
 
-    MusicIP's Fingerprint
+    MusicIP's Fingerprint.
 
 **musicip_puid**
 
@@ -220,15 +249,15 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **subtitle**
 
-    Used for information directly related to the contents title
+    Used for information directly related to the contents title.
 
 **title**
 
-    Track Title
+    Track Title.
 
 **titlesort**
 
-    Track Title's Sort Name
+    Track Title's Sort Name.
 
 **totaldiscs**
 
@@ -236,13 +265,12 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **totaltracks**
 
-    Total tracks on this disc
+    Total tracks on this disc.
 
 **tracknumber**
 
-    Track number on the disc
+    Track number on the disc.
 
 **website**
 
     Used for official artist website.
-

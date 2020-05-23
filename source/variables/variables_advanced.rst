@@ -15,6 +15,10 @@ Advanced Variables
 
 If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>`, you get these extra variables:
 
+.. note::
+
+   Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.
+
 **_performance_attributes**
 
     List of performance attributes for the work (e.g.: "live", "cover", "medley"). Use ``$inmulti`` to check for
