@@ -105,7 +105,11 @@
 <li class="toctree-l3"><a class="reference internal" href="options_filerenaming.html">File Naming Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Fingerprinting Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_cdlookup.html">CD Lookup Options</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Plugins Options</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Plugins Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#plugins-list">Plugins List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installing-third-party-plugins">Installing Third-Party Plugins</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="options_interface.html">User Interface Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Scripting Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_advanced.html">Advanced Options</a></li>
@@ -221,7 +225,11 @@ been submitted to the project.  A list of the standard plugins is available on t
 the <a class="reference external" href="https://community.metabrainz.org/">Community Discussion Forum</a> so if you’re looking for a particular
 enhancement or functionality, a search there might be useful.  In addition, one of the MusicBrainz editors,
 <a class="reference external" href="https://wiki.musicbrainz.org/User:Colbydray">Colby Dray</a> maintains an unofficial list of available
-plugins on a <a class="reference external" href="https://wiki.musicbrainz.org/User:Colbydray/PicardPlugins">wiki page</a>.</p>
+plugins on a <a class="reference external" href="https://wiki.musicbrainz.org/User:Colbydray/PicardPlugins">wiki page</a>.  Instructions regarding
+installation of third-party plugins are included in the <a class="reference internal" href="#ref-installingplugins"><span class="std std-ref">“Installing Third-Party Plugins”</span></a>
+section below.</p>
+<div class="section" id="plugins-list">
+<h2>Plugins List<a class="headerlink" href="#plugins-list" title="Permalink to this headline">¶</a></h2>
 <p>The screen displays a list of the standard plugins and any others that have been installed.  Each plugin is
 displayed on a separate line showing the version number and one or more status / action icons.  The icons are:</p>
 <p><a class="reference internal" href="../_images/options-plugin-download.png"><img alt="img-plugin-download" src="../_images/options-plugin-download.png" style="width: 18pt; height: 18pt;" /></a></p>
@@ -259,10 +267,27 @@ displayed on a separate line showing the version number and one or more status /
 <div class="line"><br /></div>
 </div>
 </div></blockquote>
+<p>When a plugin in the list is selected (i.e.: highlighted), a brief description of the plugin will be shown in  the “Details”
+section below the list.</p>
+<a class="reference internal image-reference" href="../_images/plugin-details.png"><img alt="../_images/plugin-details.png" src="../_images/plugin-details.png" style="width: 100%;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Some plugins have their own option page which will typically appear under the “Plugins” section of the
 Options.</p>
+</div>
+</div>
+<div class="section" id="installing-third-party-plugins">
+<span id="ref-installingplugins"></span><h2>Installing Third-Party Plugins<a class="headerlink" href="#installing-third-party-plugins" title="Permalink to this headline">¶</a></h2>
+<p>You can install a third-party plugin that does not appear in the plugins list, using the following steps:</p>
+<ol class="arabic">
+<li><p>Download the plugin and save it to a local drive.</p></li>
+<li><p>Select the “Install plugin…” action, located just below the list of plugins.</p>
+<a class="reference internal image-reference" href="../_images/install-plugin.png"><img alt="../_images/install-plugin.png" src="../_images/install-plugin.png" style="width: 100%;" /></a>
+</li>
+<li><p>Navigate to the file you downloaded in Step 1 and select it.  The file will be copied to the plugin folder,
+and will appear in the list of plugins.</p></li>
+<li><p>Enable the plugin if desired, and select the “Make It So!” action button at the bottom of the window.</p></li>
+</ol>
 </div>
 </div>
 

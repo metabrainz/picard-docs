@@ -12,8 +12,19 @@
 
 Advanced Tags
 =============
+
 You can make additional tags available by enabling the :ref:`Advanced Relationships <advanced_relationships>` and the
 :ref:`Use genres from MusicBrainz <genre_settings>` settings in Picard.
+
+.. note::
+
+   Tags will not be created and will not be available as variables if there was no value retrieved for the tag
+   from the MusicBrainz database.
+
+.. note::
+
+   Some of these tags are only supported for certain file types or tag formats.  Please see the `Picard Tag Mapping
+   <https://picard.musicbrainz.org/docs/mappings/>`_ webpage for details.
 
 .. _advanced_relationships:
 

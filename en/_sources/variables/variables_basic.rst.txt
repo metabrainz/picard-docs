@@ -15,9 +15,14 @@ Basic Variables
 
 These variables are populated from MusicBrainz data for most releases, without any special Picard settings.
 
+.. note::
+
+   Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.
+
 **_absolutetracknumber**
 
-    The absolute number of this track disregarding the disc number (i.e.: ``%_absolutetracknumber%`` of ``%_totalalbumtracks%``). (*since Picard 1.3*)
+    The absolute number of this track disregarding the disc number (i.e.: ``%_absolutetracknumber%`` of ``%_totalalbumtracks%``).
+    For example, this value would be 11 for the second track on disc 2 where disc 1 has 9 tracks. (*since Picard 1.3*)
 
 **_albumartists**
 

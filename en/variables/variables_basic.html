@@ -204,9 +204,14 @@
   <div class="section" id="basic-variables">
 <h1>Basic Variables<a class="headerlink" href="#basic-variables" title="Permalink to this headline">¶</a></h1>
 <p>These variables are populated from MusicBrainz data for most releases, without any special Picard settings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.</p>
+</div>
 <p><strong>_absolutetracknumber</strong></p>
 <blockquote>
-<div><p>The absolute number of this track disregarding the disc number (i.e.: <code class="docutils literal notranslate"><span class="pre">%_absolutetracknumber%</span></code> of <code class="docutils literal notranslate"><span class="pre">%_totalalbumtracks%</span></code>). (<em>since Picard 1.3</em>)</p>
+<div><p>The absolute number of this track disregarding the disc number (i.e.: <code class="docutils literal notranslate"><span class="pre">%_absolutetracknumber%</span></code> of <code class="docutils literal notranslate"><span class="pre">%_totalalbumtracks%</span></code>).
+For example, this value would be 11 for the second track on disc 2 where disc 1 has 9 tracks. (<em>since Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>_albumartists</strong></p>
 <blockquote>
