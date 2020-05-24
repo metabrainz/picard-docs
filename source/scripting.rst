@@ -9,6 +9,22 @@
 Scripting
 =========
 
+Scripts are used to control some aspects of the operation of Picard.
+
+There are two types of scripts used in Picard: the file naming script and tagging scripts.
+These are managed from the "File Naming" and "Scripting" sections of the
+:menuselection:`"Options --> Options..."` menu.
+
+Scripts are often discussed in the `MetaBrainz Community Forum <https://community.metabrainz.org/>`_,
+and there is a thread specific to `file naming and script snippets
+<https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_.
+
+.. seealso::
+
+   Please refer to the section on :doc:`Scripts <extending/scripts>` in :doc:`Extending Picard <extending/extending>`
+   for additional details about the two types of scripts, including how and when each of the scripts are executed.
+
+
 Syntax
 ------
 
@@ -21,6 +37,7 @@ start with a dollar sign and end with an argument list enclosed in parentheses (
 
 To use parentheses or commas as-is inside a function call, you must escape them with
 a backslash.
+
 
 Metadata Variables
 ------------------
