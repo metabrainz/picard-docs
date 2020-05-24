@@ -7,7 +7,7 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
-Files are not grouped and have little or no existing metadata
+When files are not grouped and have little or no existing metadata
 ==================================================================
 
 This is perhaps the worst case scenario, because it provides the greatest chance of tagging your music files

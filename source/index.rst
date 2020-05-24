@@ -49,10 +49,10 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 
 .. toctree::
-   :caption: Recommended Work Flows
+   :caption: Work Flow Recommendations
    :hidden:
 
-   workflows/workflows
+   General Recommendations <workflows/workflows>
    workflows/workflow_cd
    workflows/workflow_album
    workflows/workflow_metadata

@@ -7,8 +7,8 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
-Files are grouped in album folders
-==================================
+When files are grouped by album
+===============================
 
 If the music files to be processed are already grouped into folders by album, then the process of looking up
 the release in the MusicBrainz database is greatly simplified because Picard works best when processing one

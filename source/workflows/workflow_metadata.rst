@@ -7,8 +7,8 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
-Files are not grouped in folders but have some metadata
-=======================================================
+When files are not grouped but have some metadata
+=================================================
 
 In this situation, you will need to feed batches of files to Picard to process.  In order to minimize the
 performance impact, it is recommended to keep the batches relatively small (i.e.: approximately 200 files at

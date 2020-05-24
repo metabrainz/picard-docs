@@ -7,8 +7,8 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
-The CD is available
-===================
+When the CD is available
+========================
 
 This is perhaps the best case scenario, because it provides the greatest chance of tagging your music files
 with the most accurate match from the MusicBrainz database.  It is also one of the easier methods for looking
