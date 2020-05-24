@@ -19,6 +19,7 @@ DEFAULT_LANGUAGE = 'en'
 LANGUAGE_TEST_1 = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 LANGUAGE_TEST_2 = re.compile(r'^.*MusicBrainz_Picard_\[([a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?)\].pdf$')
 
+
 def exit_with_code(exit_code=0):
     """Print and exit with the specified exit code.
 
@@ -27,6 +28,7 @@ def exit_with_code(exit_code=0):
     """
     print('Exit Code: {0}\n'.format(exit_code))
     sys.exit(exit_code)
+
 
 def clean_directory(dir_path, dir_name):
     """Removes all files and subdirectories for the specified directory.  If the specified
@@ -76,6 +78,7 @@ def clean_directory(dir_path, dir_name):
             print("\nError creating the {0} directory: {1}\n".format(dir_name, dir_path))
             exit_with_code(1)
 
+
 def remove_dir(dir_path):
     """Remove the specified directory.  Includes multiple checks for success to accommodate race
     condition in Windows.
@@ -103,6 +106,7 @@ def remove_dir(dir_path):
         else:
             print('\nUnable to remove (not a directory): {0}\n'.format(dir_path))
             exit_with_code(1)
+
 
 def remove_file(file_path):
     """Removes the specified file.  Includes multiple checks for success to accommodate race
@@ -132,6 +136,7 @@ def remove_file(file_path):
             print('\nUnable to remove (not a file): {0}\n'.format(file_path))
             exit_with_code(1)
 
+
 def get_subdir_list(root_dir):
     """Get list of subdirectories in the specified directory.
 
@@ -147,6 +152,7 @@ def get_subdir_list(root_dir):
     except Exception:
         return []
 
+
 def get_file_list(root_dir):
     """Get list of files in the specified directory.
 
@@ -161,6 +167,7 @@ def get_file_list(root_dir):
             return file_list
     except Exception:
         return []
+
 
 def languages_from_dir_list(dir_list):
     """Extract a list of valid language codes from a directory list.
@@ -178,6 +185,7 @@ def languages_from_dir_list(dir_list):
             languages.append(temp)
     return languages
 
+
 def copy_files(mask, target):
     """Copy files using wildcards.
 
@@ -189,6 +197,7 @@ def copy_files(mask, target):
         print(" - {0}".format(file))
         shutil.copy(file, target)
 
+
 def delete_files(mask):
     """Delete files using wildcards.
 
@@ -198,6 +207,7 @@ def delete_files(mask):
     for file in glob.glob(mask):
         print(" - {0}".format(file))
         os.remove(file)
+
 
 def copy_directories(source, target):
     """Copy directory to target recursively.
@@ -215,6 +225,7 @@ def copy_directories(source, target):
         except OSError as e:
             print('Copy unsuccessful. Error: {0}'.format(e))
             exit_with_code(1)
+
 
 def main():
     """Main body of the script.
@@ -252,7 +263,7 @@ def main():
         with open('index.html', 'w', encoding='utf8') as f:
             f.write(temp)
     except Exception as e:
-        print('Error writing index.html file.\n')
+        print('Error writing index.html file: {0}\n'.format(e))
         exit_with_code(1)
 
     exit_with_code(0)
