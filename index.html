@@ -51,8 +51,15 @@
             language_code = item.substring(0, 2);
          }
       };
+
+      function makeURL() {
+         if (window.location.hostname.endsWith(".github.io")) {
+            return '/picard-docs/' + getLanguage() + '/index.html';
+         }
+         return '/' + getLanguage() + '/index.html';
+      }
    </script>
 </head>
-<body onload="window.location.replace('/picard-docs/' + getLanguage() + '/index.html');">
+<body onload="window.location.replace(makeURL());">
 </body>
 </html>

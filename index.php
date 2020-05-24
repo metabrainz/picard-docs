@@ -47,10 +47,28 @@ function parseDefaultLanguage($http_accept, $deflang = "en") {
    return strtolower($deflang);
 }
 
+function endsWith($haystack, $needle)
+{
+    $length = strlen($needle);
+    if ($length == 0) {
+        return true;
+    }
+
+    return (substr($haystack, -$length) === $needle);
+}
+
+function getNewUrl() {
+   if (endsWith($_SERVER["SERVER_NAME"], ".github.io")) {
+      return "/" . getDefaultLanguage() . "/html/index.html";
+   }
+   else {
+      return "/../" . getDefaultLanguage() . "/html/index.html";
+   }
+}
 $junk = isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ? $_SERVER["HTTP_ACCEPT_LANGUAGE"] : 'none';
 // echo "<p>HTTP_ACCEPT_LANGUAGE = '" . $junk . "'</p>\n";
 // echo "<p>Preferred Language = '" . getDefaultLanguage() . "'</p>\n";
 ?>
-<body onload="window.location.replace('/<?php echo getDefaultLanguage(); ?>/html/index.html');">
+<body onload="window.location.replace('<?php echo getNewUrl(); ?>');">
 </body>
 </html>
