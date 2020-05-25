@@ -15,7 +15,7 @@ import restructuredtext_lint
 import time
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.02'
+SCRIPT_VERS = '0.03'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -778,7 +778,8 @@ def update_po(language):
         language {str} -- Language code to update
     """
     check_sphinx_intl()
-    command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_LOCALE_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+    # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_LOCALE_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
+    command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
     print('Updating PO files with command: {0}\n'.format(command))
     exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
     if exit_code:
