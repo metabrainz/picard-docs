@@ -11,7 +11,7 @@ When files are not grouped but have some metadata
 =================================================
 
 .. index::
-   single: work flows; files not grouped
+   single: workflows; files not grouped
 
 In this situation, you will need to feed batches of files to Picard to process.  In order to minimize the
 performance impact, it is recommended to keep the batches relatively small (i.e.: approximately 200 files at
@@ -20,7 +20,7 @@ existing in the files.
 
 .. note::
 
-   This work flow will likely only partially match the files to a release in each batch processed.  This means
+   This workflow will likely only partially match the files to a release in each batch processed.  This means
    that an album may not be fully matched, tagged and renamed until multiple batches have been processed.
 
 **1. Load the files**

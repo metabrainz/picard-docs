@@ -11,7 +11,7 @@ When the CD is available
 ========================
 
 .. index::
-   single: work flows; cd
+   single: workflows; cd
 
 This is perhaps the best case scenario, because it provides the greatest chance of tagging your music files
 with the most accurate match from the MusicBrainz database.  It is also one of the easier methods for looking

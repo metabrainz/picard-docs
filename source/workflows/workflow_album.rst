@@ -11,7 +11,7 @@ When files are grouped by album
 ===============================
 
 .. index::
-   single: work flows; files grouped by album
+   single: workflows; files grouped by album
 
 If the music files to be processed are already grouped into folders by album, then the process of looking up
 the release in the MusicBrainz database is greatly simplified because Picard works best when processing one

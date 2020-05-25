@@ -35,7 +35,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 
 .. toctree::
-   :caption: Getting Started:
+   :caption: Getting Started
    :hidden:
 
    getting_started/download
@@ -53,7 +53,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 
 .. toctree::
-   :caption: Recommended Work Flows
+   :caption: Workflow Recommendations
    :hidden:
 
    workflows/workflows
@@ -75,7 +75,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 
 .. toctree::
-   :caption: Appendices:
+   :caption: Appendices
    :hidden:
 
    functions/list_by_type
