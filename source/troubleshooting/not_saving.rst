@@ -10,6 +10,9 @@
 
 .. TODO: Note which tags are not provided by Picard
 
+.. index::
+   single: troubleshooting; files not saved
+
 Files are not being saved
 =========================
 

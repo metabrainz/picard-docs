@@ -9,6 +9,9 @@
 Plugins
 =======
 
+.. index::
+   single: plugins
+
 Plugins are written in Python, and are registered to the appropriate hooks.  Each plugin
 has its own version identifier, but also lists the plugin API versions that it supports.
 When loading a plugin, Picard first compares its list of API versions to the plugin’s
@@ -22,6 +25,9 @@ list of all plugins registered for that specific hook, and then execute them seq
 in order based upon the priority specified when the plugin was registered to the hook.
 
 There are a few different types of plugins, including:
+
+.. index::
+   single: plugins; types
 
 **Metadata processors**: These plugins can access and modify the metadata when it is loaded
 from MusicBrainz. They are registered with ``register_album_metadata_processor()`` or

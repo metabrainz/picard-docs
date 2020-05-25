@@ -23,6 +23,12 @@ be disappointed.  To quote from the Picard website, *"Picard is not built to be 
 tag fixer. Picard believes in quality over quantity and provides a plethora of customizations to
 tweak music collections to your needs."*
 
+.. only:: latex
+
+   .. toctree::
+
+      acknowledgements
+
 
 Picard Can...
 -------------
@@ -50,6 +56,10 @@ Picard Cannot...
 
 ...provide metadata not already existing in the MusicBrainz database.
 
+
+.. index::
+   single: limitations
+   single: rate limiting
 
 Limitations
 -----------

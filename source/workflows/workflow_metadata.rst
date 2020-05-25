@@ -10,6 +10,9 @@
 When files are not grouped but have some metadata
 =================================================
 
+.. index::
+   single: work flows; files not grouped
+
 In this situation, you will need to feed batches of files to Picard to process.  In order to minimize the
 performance impact, it is recommended to keep the batches relatively small (i.e.: approximately 200 files at
 most in a single batch).  Picard will try to group them into clusters based on the metadata currently

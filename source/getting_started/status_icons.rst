@@ -10,8 +10,15 @@
 Status Icons
 ============
 
+.. index::
+   single: icons; status
+
 When albums and tracks are displayed in the right-hand pane, each line begins with an icon
 to indicate the status of the item.
+
+.. index::
+   single: icons; album
+   single: icons; release
 
 Album / Release Icons
 ---------------------
@@ -61,6 +68,9 @@ Album / Release Icons
    | This icon indicates that Picard has encountered an error with the release, typically while retrieving the information from the MusicBrainz database.
    |
 
+
+.. index::
+   single: icons; track
 
 Track Icons
 -----------

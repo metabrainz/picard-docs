@@ -7,6 +7,9 @@
 ..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
 
 
+.. index::
+   single: troubleshooting; tags not saved
+
 Tags are not updated or saved
 =============================
 

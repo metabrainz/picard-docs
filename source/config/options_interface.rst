@@ -10,6 +10,9 @@
 User Interface Options
 ======================
 
+.. index::
+   pair: configuration; user interface
+
 .. image:: ../images/options-interface.png
    :width: 100 %
 

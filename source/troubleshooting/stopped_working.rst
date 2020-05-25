@@ -8,6 +8,9 @@
 
 .. TODO: Expand definitions
 
+.. index::
+   single: troubleshooting; program freezes
+
 Picard just stopped working
 ===========================
 

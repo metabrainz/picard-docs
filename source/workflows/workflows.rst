@@ -10,6 +10,9 @@
 Work Flow Recommendations
 =========================
 
+.. index::
+   single: work flows; general
+
 This section provides some recommended work flows for various tagging scenarios.  These work flows are
 based on what are believed to be best practices.
 

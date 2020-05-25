@@ -10,8 +10,15 @@
 Glossary of Terms
 =================
 
+.. index::
+   single: glossary
+
 Many of the terms used in this documentation and within Picard itself have specific meaning
 in the MusicBrainz environment.  Specific terms are defined as follows:
+
+.. index::
+   single: acoustic fingerprint
+   single: fingerprint; acoustic
 
 **acoustic fingerprint**
 
@@ -21,10 +28,16 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    Please see `Wikipedia <https://wikipedia.org/wiki/Acoustic_fingerprint>`_ for a full
    explanation of acoustic fingerprinting.
 
+.. index::
+   single: AcoustID
+
 **AcoustID**
 
    AcoustID is an acoustic fingerprint system built entirely on open-source technology.  See
    the `AcoustID website <https://acoustid.org/>`_ for additional information.
+
+.. index::
+   single: albumartist
 
 **albumartist**
 
@@ -40,6 +53,9 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
       `Classical Style Guide <https://musicbrainz.org/doc/Style/Classical>`_, listing the composer(s)
       first, followed by the performers.
 
+.. index::
+   single: artist
+
 **artist**
 
    The musician or group of musicians performing on a track.  For example, "Jeen" is the artist on
@@ -54,6 +70,9 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
       The artist usage is different for Classical Music releases, which follow the MusicBrainz
       Classical Style Guide, showing only the composer and not the performers.
 
+.. index::
+   single: artist credit
+
 **artist credit**
 
    Artist credits indicate who is the main credited artist (or artists) for releases, release
@@ -67,6 +86,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    Please see the `Artist Credits <https://musicbrainz.org/doc/Artist_Credits>`_ page on the MusicBrainz
    website for additional information.
 
+.. index::
+   single: cover art archive
+   see: CAA; cover art archive
+
 **caa**
 
    The `Cover Art Archive <https://coverartarchive.org/>`_ which is a joint project between the
@@ -77,6 +100,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    Please see the `Cover Art Archive page <https://musicbrainz.org/doc/Cover_Art_Archive>`_ on the
    MusicBrainz website for additional information.
 
+.. index::
+   single: MusicBrainz Identifier
+   see: mbid; MusicBrainz Identifier
+
 **mbid**
 
    The MusicBrainz Identifier, which is a unique code used to identify each element in the MusicBrainz
@@ -86,9 +113,15 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    Please see the UUID page on `Wikipedia <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_
    for more information.
 
+.. index::
+   see: non-album track; standalone recording
+
 **non-album track**
 
    This term is obsolete and has been replaced with 'standalone recording'.
+
+.. index::
+   single: recording
 
 **recording**
 
@@ -101,6 +134,9 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    Please see the `Recording <https://musicbrainz.org/doc/Recording>`_ page on the MusicBrainz
    website for additional information.
 
+.. index::
+   single: release
+
 **release**
 
    Represents the unique issuing of a product on a specific date with specific
@@ -110,6 +146,9 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
    Please see the `Release <https://musicbrainz.org/doc/Release>`_ page on the MusicBrainz
    website for additional information.
+
+.. index::
+   single: release group
 
 **release group**
 
@@ -126,6 +165,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    Please see the `Release Group <https://musicbrainz.org/doc/Release_Group>`_ page on the MusicBrainz
    website for additional information.
 
+.. index::
+   single: recording; standalone
+   single: standalone recording
+
 **standalone recording**
 
    A recording that is not linked to any release.  An example is "`Sea of No Cares (live)
@@ -134,6 +177,9 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
    Please see the `Standalone Recording <https://musicbrainz.org/doc/Standalone_Recording>`_ page on
    the MusicBrainz website for additional information.
+
+.. index::
+   single: track
 
 **track**
 
@@ -145,6 +191,9 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
    Please see the `Track <https://musicbrainz.org/doc/Track>`_ page on
    the MusicBrainz website for additional information.
+
+.. index::
+   single: work
 
 **work**
 

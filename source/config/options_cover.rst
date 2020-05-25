@@ -10,6 +10,9 @@
 Cover Art Options
 =================
 
+.. index::
+   pair: configuration; cover art
+
 .. image:: ../images/options-cover.png
    :width: 100 %
 

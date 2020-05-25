@@ -12,6 +12,9 @@
 Local Files
 ===========
 
+.. index::
+   single: configuration; local files
+
 .. image:: ../images/options-cover-local.png
    :width: 100 %
 

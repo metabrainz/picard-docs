@@ -10,6 +10,9 @@
 Main Screen
 ===========
 
+.. index::
+   single: user interface; main screen
+
 .. Picard's main screen is comprised of a number of sections, as described below:
 
 .. image:: ../images/screen_main.png

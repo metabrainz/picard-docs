@@ -10,6 +10,10 @@
 Tags & Variables
 ================
 
+.. index::
+   single: scripts; tags
+   single: scripts; variables
+
 This describes both Tags which are saved inside your music files and can be read by your
 music player, and Picard variables which can be used in Picard scripts for tagging, file
 renaming, and in several other more minor settings.

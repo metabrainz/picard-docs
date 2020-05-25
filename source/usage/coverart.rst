@@ -9,6 +9,9 @@
 Setting the Cover Art
 =====================
 
+.. index::
+   single: cover art; setting
+
 .. only:: latex
 
    Depending on the option settings, you can change or confirm the cover art to save with a

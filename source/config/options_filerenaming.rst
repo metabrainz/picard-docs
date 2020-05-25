@@ -10,6 +10,9 @@
 File Naming Options
 ===================
 
+.. index::
+   pair: configuration; file naming
+
 .. image:: ../images/options-filenaming.png
    :width: 100 %
 
@@ -69,6 +72,9 @@ These options determine how Picard handles files when they are saved with update
 
    This option tells Picard to replace all Windows-incompatible characters with an underscore. This is
    enabled by default on Windows systems, with no option to disable.
+
+.. index::
+   single: scripts; file naming
 
 **Name files like this**
 

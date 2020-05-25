@@ -10,6 +10,9 @@
 When the CD is available
 ========================
 
+.. index::
+   single: work flows; cd
+
 This is perhaps the best case scenario, because it provides the greatest chance of tagging your music files
 with the most accurate match from the MusicBrainz database.  It is also one of the easier methods for looking
 up the release.
@@ -59,6 +62,9 @@ up the release.
 
    Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`../usage/save` section for details.
 
+
+.. index::
+   single: acoustic fingerprint; submitting
 
 **8. Calculate and submit AcoustID fingerprints**
 

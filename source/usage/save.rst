@@ -9,6 +9,10 @@
 Saving Updated Files
 ====================
 
+.. index::
+   single: files; saving
+   single: saving files
+
 .. only:: latex
 
    This stage is where Picard updates the matched files with the metadata retrieved in the

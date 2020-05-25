@@ -14,6 +14,8 @@ Once Picard has been installed on your system, the next step is to configure it 
 preferences.  The configuration consists of enabling the desired screen sections for display,
 selecting the desired actions, and setting the various options.
 
+.. index::
+   single: configuration; screen setup
 
 Screen Setup
 ------------
@@ -45,6 +47,9 @@ item, simply check the box for the screen option.  The items are:
 
    This displays the built-in player for playing selected audio files.
 
+.. index::
+   single: configuration; action options
+
 .. _action_options:
 
 Action Options
@@ -66,6 +71,8 @@ actions that Picard can perform when saving selected music files:
    Picard will update the metadata tags in the files in accordance with the specified
    option settings and tagging scripts.
 
+.. index::
+   see: option settings; configuration
 
 Option Settings
 ---------------

@@ -10,6 +10,9 @@
 Configuration
 =============
 
+.. index::
+   single: configuration; config file location
+
 **Where is the Picard configuration saved?**
 
    Picard saves the configuration in the file ``Picard.ini``. Its location depends on the operating system:
@@ -25,6 +28,9 @@ Configuration
 
       ``$HOME/.config/MusicBrainz/Picard.ini``
 
+
+.. index::
+   single: itunes
 
 **I tagged a file in Picard, but iTunes is not seeing the tags!**
 
@@ -43,6 +49,9 @@ Configuration
    Starting with version 0.14, the default settings have been changed to ID3v2.3 and this should no longer be an issue.
 
 **How do I tell Picard which browser to use?**
+
+.. index::
+   pair: configuration; browser
 
    On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can
    use the ``BROWSER`` environment variable.

@@ -10,6 +10,9 @@
 Metadata Options
 ================
 
+.. index::
+   single: configuration; metadata options
+
 .. image:: ../images/options-metadata.png
    :width: 100 %
 

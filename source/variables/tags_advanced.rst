@@ -13,6 +13,9 @@
 Advanced Tags
 =============
 
+.. index::
+   single: tags; advanced
+
 You can make additional tags available by enabling the :ref:`Advanced Relationships <advanced_relationships>` and the
 :ref:`Use genres from MusicBrainz <genre_settings>` settings in Picard.
 
@@ -96,6 +99,9 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
         $copymerge(composer, writer)
 
 .. _genre_settings:
+
+.. index::
+   single: tags; genre
 
 Genre Tags
 ----------

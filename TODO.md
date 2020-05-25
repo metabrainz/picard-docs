@@ -12,3 +12,5 @@
 - Add "Useful links" section?
   - videos
   - scripts
+
+- Add more index items to tags and variables

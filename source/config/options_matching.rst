@@ -10,6 +10,9 @@
 Matching
 ========
 
+.. index::
+   single: configuration; matching preferences
+
 .. image:: ../images/options-matching.png
    :width: 100 %
 

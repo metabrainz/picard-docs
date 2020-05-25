@@ -21,6 +21,9 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 .. include:: copyright_notice.txt
 
+.. .. seealso::
+
+..    For quick access to a particular topic, please use the search box or the :ref:`topic index <genindex>`.
 
 .. toctree::
    :caption: About Picard
@@ -28,6 +31,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
    introduction
    glossary
+   acknowledgements
 
 
 .. toctree::
@@ -74,7 +78,6 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :caption: Appendices:
    :hidden:
 
-   acknowledgements
    functions/list_by_type
    extending/extending
    technical/plugins_api

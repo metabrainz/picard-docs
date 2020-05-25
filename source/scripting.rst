@@ -9,6 +9,9 @@
 Scripting
 =========
 
+.. index::
+   single: scripts
+
 Scripts are used to control some aspects of the operation of Picard.
 
 There are two types of scripts used in Picard: the file naming script and tagging scripts.
@@ -24,6 +27,8 @@ and there is a thread specific to `file naming and script snippets
    Please refer to the section on :doc:`Scripts <extending/scripts>` in :doc:`Extending Picard <extending/extending>`
    for additional details about the two types of scripts, including how and when each of the scripts are executed.
 
+.. index::
+   single: scripts; syntax
 
 Syntax
 ------
@@ -38,7 +43,6 @@ start with a dollar sign and end with an argument list enclosed in parentheses (
 To use parentheses or commas as-is inside a function call, you must escape them with
 a backslash.
 
-
 Metadata Variables
 ------------------
 
@@ -48,7 +52,6 @@ Picard's variables can be either simple variables containing a single text
 string, or multi-value variables containing multiple text strings. In scripts, multi-value
 variables are automatically converted to a single text string by joining the values with a
 semicolon ";", except when used with special multi-value functions.
-
 
 .. only:: html
 

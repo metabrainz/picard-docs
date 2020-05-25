@@ -10,6 +10,9 @@
 Download & Install
 ==================
 
+.. index::
+   single: install; download
+
 The latest version of MusicBraiz Picard is always available for download from the `Picard
 Website <https://picard.musicbrainz.org/downloads/>`_.  This includes installers for all
 major operating systems (e.g.: Linux, macOS and Windows) as well as the `source code
@@ -19,6 +22,9 @@ available at the `project repository <https://github.com/musicbrainz/picard>`_ o
 
 Installing Using Flatpak
 ------------------------
+
+.. index::
+   pair: install; flatpak
 
 Picard is also available on Flathub. This version should work on all modern Linux distributions,
 as long Flatpak is installed.

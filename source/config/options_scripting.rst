@@ -10,6 +10,10 @@
 Scripting Options
 =================
 
+.. index::
+   single: configuration; scripting
+   single: scripts; tagging
+
 .. image:: ../images/options-scripting.png
    :width: 100 %
 

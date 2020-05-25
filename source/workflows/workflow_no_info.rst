@@ -10,6 +10,9 @@
 When files are not grouped and have little or no existing metadata
 ==================================================================
 
+.. index::
+   single: work flows; no metadata
+
 This is perhaps the worst case scenario, because it provides the greatest chance of tagging your music files
 with an incorrect match from the MusicBrainz database.
 

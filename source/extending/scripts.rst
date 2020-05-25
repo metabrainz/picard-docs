@@ -9,6 +9,9 @@
 Scripts
 =======
 
+.. index::
+   single: scripts
+
 There are two types of scripts used in Picard: the file naming script and tagging scripts. These are
 managed from the "File Naming" and "Scripting" sections of the :menuselection:`"Options --> Options..."` menu. All scripts are written
 using the :doc:`Picard scripting language <../scripting>`. Scripts are often discussed in the
@@ -17,6 +20,9 @@ using the :doc:`Picard scripting language <../scripting>`. Scripts are often dis
 
 File Naming Script
 ------------------
+
+.. index::
+   pair: file naming; scripts
 
 There is only one file naming script defined in a user’s settings, although it can vary from a simple
 one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats
@@ -29,6 +35,9 @@ based on different criteria. In all cases, the files will be saved using the tex
 
 Tagging Scripts
 ---------------
+
+.. index::
+   pair: tagging; scripts
 
 There can be multiple tagging scripts defined in a user’s settings. Individual scripts can be enabled or
 disabled, and the order of execution of the scripts can be set. Whenever a script is run automatically (i.e.:

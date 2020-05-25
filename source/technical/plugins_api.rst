@@ -9,6 +9,11 @@
 Plugins API
 ===========
 
+.. index::
+   pair: plugins; api
+   pair: plugins; programming
+   single: plugins; metadata
+
 Plugin Metadata
 ---------------
 
@@ -40,6 +45,9 @@ Variables explanation:
 
 * **PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text.
 
+
+.. index::
+   single: plugins; metadata processors
 
 Metadata Processors
 -------------------
@@ -91,6 +99,9 @@ Track metadata example:
 
    register_track_metadata_processor(remove_featartists)
 
+
+.. index::
+   pair: plugins; event hooks
 
 Event Hooks
 -----------
@@ -179,6 +190,9 @@ This hook is called after an album has been removed from Picard.
    Event hooks have been available since API version 2.2.
 
 
+.. index::
+   pair: plugins; file format
+
 File Formats
 ------------
 
@@ -219,6 +233,9 @@ and ``_save`` methods. Example:
    register_format(MyFile)
 
 
+.. index::
+   pair: scripting functions; plugins
+
 Tagger Script Functions
 -----------------------
 
@@ -251,6 +268,9 @@ the function call in the tagger script. Example:
 
 The default value for both arguments is **True**.
 
+
+.. index::
+   pair: plugins; context menu actions
 
 Context Menu Actions
 --------------------

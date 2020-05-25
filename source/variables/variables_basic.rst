@@ -13,6 +13,9 @@
 Basic Variables
 ===============
 
+.. index::
+   single: variables; basic
+
 These variables are populated from MusicBrainz data for most releases, without any special Picard settings.
 
 .. note::

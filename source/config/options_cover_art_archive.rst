@@ -10,6 +10,9 @@
 Cover Art Archive
 =================
 
+.. index::
+   pair: configuration; cover art archive
+
 .. image:: ../images/options-cover-caa.png
    :width: 100 %
 
