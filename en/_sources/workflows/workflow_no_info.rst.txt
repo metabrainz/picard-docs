@@ -11,7 +11,7 @@ When files are not grouped and have little or no existing metadata
 ==================================================================
 
 .. index::
-   single: work flows; no metadata
+   single: workflows; no metadata
 
 This is perhaps the worst case scenario, because it provides the greatest chance of tagging your music files
 with an incorrect match from the MusicBrainz database.
@@ -22,7 +22,7 @@ most in a single batch).  Picard will try to group them into clusters based on t
 
 .. note::
 
-   This work flow will likely only partially match the files to a release in each batch processed.  This means
+   This workflow will likely only partially match the files to a release in each batch processed.  This means
    that an album may not be fully matched, tagged and renamed until multiple batches have been processed.
 
 **1. Load the files**
