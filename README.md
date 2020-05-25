@@ -7,14 +7,13 @@ cross-platform music file tagging system using metadata from [MusicBrainz](https
 This project is not intended to replace the documentation on the Picard website, but to augment
 it with additional detail and a structured approach.
 
-This documentation project is open source and provided under the GNU GENERAL PUBLIC LICENSE, Version
-3 (GPLv3).  The documentation produced by the project is provided under the GNU Free Documentation
-License, Version 1.3 (GFDLv1.3).
+This documentation project is open source and provided under CC0 1.0. To view a copy of this license,
+visit [https://creativecommons.org/publicdomain/zero/1.0](https://creativecommons.org/publicdomain/zero/1.0).
 
 The project currently produces the on-line documentation in [ReadTheDocs](https://readthedocs.org)
 format theme using [Sphinx](https://www.sphinx-doc.org/). A stand-alone PDF document is also being
 produced.  The latest build of the documentation produced by this initiative can be viewed on the
-[web page](https://rdswift.github.io/picard-docs/index.html).
+[web page](https://picard-docs.musicbrainz.org/index.html).
 
 ## Contributing to the Documentation
 

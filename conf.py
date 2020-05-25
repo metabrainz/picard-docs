@@ -26,7 +26,9 @@ copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this
 
 project = 'MusicBrainz Picard'
 # copyright = '{0}, MetaBrainz Foundation'.format(copyright_year)
-copyright = '{0}, Bob Swift'.format(copyright_year)
+# copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
+copyright = 'This documentation is licensed under CC0 1.0.'
+# copyright = '{0}, Bob Swift'.format(copyright_year)
 author = 'Bob Swift'
 # author = ''
 
@@ -103,14 +105,20 @@ version = release
 # https://www.gnu.org/licenses/fdl-1.3.html.
 # \vspace{0.1\textheight}'''
 
+# my_notice = r'''\vspace*{\fill}
+# Copyright © ''' + copyright_year + r''' Bob Swift\\
+# \\
+# Permission is granted to copy, distribute and/or modify this document under the
+# terms of the GNU Free Documentation License, Version 1.3 or any later version
+# published by the Free Software Foundation; with no Invariant Sections, no Front-
+# Cover Texts, and no Back-Cover Texts. A copy of the license is available at
+# https://www.gnu.org/licenses/fdl-1.3.html.
+# \vspace{0.1\textheight}'''
+
+
 my_notice = r'''\vspace*{\fill}
-Copyright © ''' + copyright_year + r''' Bob Swift\\
-\\
-Permission is granted to copy, distribute and/or modify this document under the
-terms of the GNU Free Documentation License, Version 1.3 or any later version
-published by the Free Software Foundation; with no Invariant Sections, no Front-
-Cover Texts, and no Back-Cover Texts. A copy of the license is available at
-https://www.gnu.org/licenses/fdl-1.3.html.
+MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a
+copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0
 \vspace{0.1\textheight}'''
 
 
