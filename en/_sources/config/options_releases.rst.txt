@@ -10,6 +10,9 @@
 Preferred Releases
 ==================
 
+.. index::
+   single: configuration; release preferences
+
 .. image:: ../images/options-metadata-releases.png
    :width: 100 %
 

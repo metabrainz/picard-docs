@@ -9,11 +9,18 @@
 Scripting Functions
 ===================
 
+.. index::
+   single: scripting; functions
+
 The following is a list of the Picard scripting functions grouped by function type.
 
 
 Assignment Functions
 --------------------
+
+.. index::
+   single: scripting functions; assignment
+
 These functions are used to assign (or unassign) a value to a tag or variable. The assignment
 scripting functions are:
 
@@ -30,6 +37,10 @@ scripting functions are:
 
 Text Functions
 --------------
+
+.. index::
+   single: scripting functions; text
+
 These functions are used to manage text (e.g.: extract, replace or format) in tags or variables.
 The text scripting functions are:
 
@@ -63,6 +74,10 @@ The text scripting functions are:
 
 Multi-Value Functions
 ---------------------
+
+.. index::
+   single: scripting functions; multi-value
+
 These functions are used to manage multi-value tags or variables.  The multi-value scripting
 functions are:
 
@@ -81,6 +96,10 @@ functions are:
 
 Mathematical Functions
 ----------------------
+
+.. index::
+   single: scripting functions; mathematical
+
 These functions are used to perform arithmetic operations on tags or variables.  The mathematical
 scripting functions are:
 
@@ -96,6 +115,10 @@ scripting functions are:
 
 Conditional Functions
 ---------------------
+
+.. index::
+   single: scripting functions; conditional
+
 These functions are used to test for various conditions and take appropriate actions depending on
 the results of the test. The conditional scripting functions are:
 
@@ -128,6 +151,10 @@ the results of the test. The conditional scripting functions are:
 
 Information Functions
 ---------------------
+
+.. index::
+   single: scripting functions; information
+
 These functions provide additional system or data information. The information scripting functions are:
 
 .. toctree::
@@ -139,6 +166,10 @@ These functions provide additional system or data information. The information s
 
 Loop Functions
 --------------
+
+.. index::
+   single: scripting functions; loop
+
 These functions provide the ability to repeat actions based on the contents of a multi-value variable or
 the result of a conditional test.  The loop scripting functions are:
 
@@ -151,6 +182,10 @@ the result of a conditional test.  The loop scripting functions are:
 
 Miscellaneous Functions
 -----------------------
+
+.. index::
+   single: scripting functions; miscellaneous
+
 The miscellaneous scripting functions are:
 
 .. toctree::

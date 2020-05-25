@@ -10,6 +10,10 @@
 Location
 ========
 
+.. index::
+   single: configuration; cover art location
+   single: cover art; location to save
+
 .. only:: html
 
    .. image:: ../images/options-cover.png

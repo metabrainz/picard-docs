@@ -88,6 +88,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
@@ -102,13 +103,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Recommended Work Flows</span></p>
+<p class="caption"><span class="caption-text">Work Flow Recommendations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">The CD is available</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Files are grouped in album folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Files are not grouped in folders but have some metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Files are not grouped and have little or no existing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Troubleshooting</span></p>
 <ul>
@@ -120,7 +121,6 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -199,7 +199,7 @@
             
   <div class="section" id="file-formats">
 <h1>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline">¶</a></h1>
-<p><strong>What formats does Picard support?</strong></p>
+<p id="index-0"><strong>What formats does Picard support?</strong></p>
 <blockquote>
 <div><p>Picard supports the following file formats:</p>
 <ul class="simple">
@@ -239,7 +239,7 @@ and will take some time.</p>
 <blockquote>
 <div><p>See the <a class="reference internal" href="../variables/variables.html"><span class="doc">Tags &amp; Variables</span></a> section for information on which MusicBrainz fields that Picard writes to tags. <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mapping</a> contains more technical information on how these are further mapped into each tag format.</p>
 </div></blockquote>
-<p><strong>How to I edit several tags at once? Why is it not easier do so?</strong></p>
+<p id="index-1"><strong>How to I edit several tags at once? Why is it not easier do so?</strong></p>
 <blockquote>
 <div><p>Please understand that Picard is not designed as a general purpose tag editor. Its primary goal is to retrieve community-maintained MusicBrainz
 data to write into your tags. Some secondary goals include:</p>
@@ -260,7 +260,7 @@ Media Player, and MediaMonkey). That doesn’t mean that the team won’t welcom
 </ol>
 <p>This process should work in both panes.</p>
 </div></blockquote>
-<p><strong>The built-in audio player cannot play my file. Which formats does it support?</strong></p>
+<p id="index-2"><strong>The built-in audio player cannot play my file. Which formats does it support?</strong></p>
 <blockquote>
 <div><p>The formats supported by the built-in audio player depend on the formats supported by your operating system.</p>
 <p><strong>Windows:</strong></p>
@@ -280,7 +280,7 @@ Theora, Ogg FLAC, native FLAC, and WebM files.</p>
 licensing issues. For the widest format support make sure you install all of the GStreamer plugins available for your distribution.</p>
 </div></blockquote>
 </div></blockquote>
-<p><strong>I am using Fedora. Why doesn’t acoustic fingerprinting work?</strong></p>
+<p id="index-3"><strong>I am using Fedora. Why doesn’t acoustic fingerprinting work?</strong></p>
 <blockquote>
 <div><p>Acoustic fingerprinting in Picard uses a tool called <code class="docutils literal notranslate"><span class="pre">fpcalc</span></code>, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
 from the <a class="reference external" href="https://rpmfusion.org/">RPM Fusion repository</a>. This functionality is not contained in the main Fedora <code class="docutils literal notranslate"><span class="pre">picard</span></code> package because it requires

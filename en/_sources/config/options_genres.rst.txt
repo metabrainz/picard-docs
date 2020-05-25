@@ -10,6 +10,9 @@
 Genres
 ======
 
+.. index::
+   single: configuration; genres
+
 .. image:: ../images/options-metadata-genres.png
    :width: 100 %
 

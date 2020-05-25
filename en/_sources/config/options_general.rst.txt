@@ -10,6 +10,9 @@
 General Options
 ===============
 
+.. index::
+   single: configuration; general options
+
 .. image:: ../images/options-general.png
    :width: 100 %
 
@@ -44,6 +47,9 @@ General Options
    files to automatically load the corresponding MusicBrainz release and match the loaded file to
    the correct track.  This is useful when re-processing files that have been previously tagged
    with incorrect information.
+
+.. index::
+   pair: configuration; update checking
 
 **Check for updates during start-up**
 

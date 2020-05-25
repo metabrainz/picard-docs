@@ -9,6 +9,9 @@
 Matching Files to Tracks
 ========================
 
+.. index::
+   single: matching files to tracks
+
 .. only:: latex
 
    This stage is where individual files are matched to specific tracks in the information

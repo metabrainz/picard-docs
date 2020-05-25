@@ -9,6 +9,9 @@
 Other Information
 =================
 
+.. index::
+   single: tags; writing
+
 For technical details on how tags are written into files, see `Picard Tag Mapping <https://picard.musicbrainz.org/docs/mappings/>`_.
 
 If you set new variables, these will be saved as new tags in ID3, APEv2 and VORBIS based files. For ID3 based files these will be

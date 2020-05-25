@@ -88,6 +88,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
@@ -102,13 +103,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Recommended Work Flows</span></p>
+<p class="caption"><span class="caption-text">Work Flow Recommendations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">The CD is available</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Files are grouped in album folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Files are not grouped in folders but have some metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Files are not grouped and have little or no existing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Troubleshooting</span></p>
 <ul>
@@ -120,7 +121,6 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Plugins API</a><ul>
@@ -212,7 +212,7 @@
   <div class="section" id="plugins-api">
 <h1>Plugins API<a class="headerlink" href="#plugins-api" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="plugin-metadata">
-<h2>Plugin Metadata<a class="headerlink" href="#plugin-metadata" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Plugin Metadata<a class="headerlink" href="#plugin-metadata" title="Permalink to this headline">¶</a></h2>
 <p>Each plugin must provide some metadata as variables. Those variables should be placed at the top of the file.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
@@ -237,7 +237,7 @@ one you chose is not available in the list.</p></li>
 </ul>
 </div>
 <div class="section" id="metadata-processors">
-<h2>Metadata Processors<a class="headerlink" href="#metadata-processors" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>Metadata Processors<a class="headerlink" href="#metadata-processors" title="Permalink to this headline">¶</a></h2>
 <p>MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to
 the processor functions in the following examples are as follows:</p>
 <ul class="simple">
@@ -283,7 +283,7 @@ the processor functions in the following examples are as follows:</p>
 </div>
 </div>
 <div class="section" id="event-hooks">
-<h2>Event Hooks<a class="headerlink" href="#event-hooks" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2>Event Hooks<a class="headerlink" href="#event-hooks" title="Permalink to this headline">¶</a></h2>
 <p>Plugins can register themselves to listen for different events. Currently the following event hooks are available:</p>
 <div class="section" id="file-post-load-processor-file">
 <h3>file_post_load_processor(file)<a class="headerlink" href="#file-post-load-processor-file" title="Permalink to this headline">¶</a></h3>
@@ -353,7 +353,7 @@ the file or write extra data. Note that the file’s metadata is already the new
 </div>
 </div>
 <div class="section" id="file-formats">
-<h2>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline">¶</a></h2>
+<span id="index-3"></span><h2>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline">¶</a></h2>
 <p>Plugins can extend Picard with support for additional file formats. See the existing <a class="reference external" href="https://github.com/metabrainz/picard/tree/master/picard/formats">file format implementations</a> for details on how to implement the <code class="docutils literal notranslate"><span class="pre">_load</span></code>
 and <code class="docutils literal notranslate"><span class="pre">_save</span></code> methods. Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
@@ -389,7 +389,7 @@ and <code class="docutils literal notranslate"><span class="pre">_save</span></c
 </div>
 </div>
 <div class="section" id="tagger-script-functions">
-<h2>Tagger Script Functions<a class="headerlink" href="#tagger-script-functions" title="Permalink to this headline">¶</a></h2>
+<span id="index-4"></span><h2>Tagger Script Functions<a class="headerlink" href="#tagger-script-functions" title="Permalink to this headline">¶</a></h2>
 <p>To define new tagger script functions use <code class="docutils literal notranslate"><span class="pre">register_script_function(function,</span> <span class="pre">name=None)</span></code> from the <code class="docutils literal notranslate"><span class="pre">picard.script</span></code> module.
 <code class="docutils literal notranslate"><span class="pre">parser</span></code> is an instance of <code class="docutils literal notranslate"><span class="pre">picard.script.ScriptParser</span></code>, and the rest of the arguments passed to it are the arguments from
 the function call in the tagger script. Example:</p>
@@ -417,7 +417,7 @@ the function call in the tagger script. Example:</p>
 <p>The default value for both arguments is <strong>True</strong>.</p>
 </div>
 <div class="section" id="context-menu-actions">
-<h2>Context Menu Actions<a class="headerlink" href="#context-menu-actions" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>Context Menu Actions<a class="headerlink" href="#context-menu-actions" title="Permalink to this headline">¶</a></h2>
 <p>Right-click context menu actions can be added to albums, tracks and files in “Unmatched Files”, “Clusters”
 and the “ClusterList” (parent folder of Clusters). Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Remove Perfect Albums&#39;</span>

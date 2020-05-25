@@ -88,6 +88,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
@@ -102,13 +103,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Recommended Work Flows</span></p>
+<p class="caption"><span class="caption-text">Work Flow Recommendations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">The CD is available</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Files are grouped in album folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Files are not grouped in folders but have some metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Files are not grouped and have little or no existing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Troubleshooting</span></p>
 <ul>
@@ -120,7 +121,6 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="extending.html">Extending Picard</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="plugins.html">Plugins</a></li>
@@ -203,14 +203,14 @@
             
   <div class="section" id="scripts">
 <h1>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline">¶</a></h1>
-<p>There are two types of scripts used in Picard: the file naming script and tagging scripts. These are
+<p id="index-0">There are two types of scripts used in Picard: the file naming script and tagging scripts. These are
 managed from the “File Naming” and “Scripting” sections of the <span class="menuselection">“Options ‣ Options…”</span> menu. All scripts are written
 using the <a class="reference internal" href="../scripting.html"><span class="doc">Picard scripting language</span></a>. Scripts are often discussed in the
 <a class="reference external" href="https://community.metabrainz.org/">MetaBrainz Community Forum</a>, and there is a thread specific to
 <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">file naming and script snippets</a>.</p>
 <div class="section" id="file-naming-script">
 <h2>File Naming Script<a class="headerlink" href="#file-naming-script" title="Permalink to this headline">¶</a></h2>
-<p>There is only one file naming script defined in a user’s settings, although it can vary from a simple
+<p id="index-1">There is only one file naming script defined in a user’s settings, although it can vary from a simple
 one-line script such as <code class="docutils literal notranslate"><span class="pre">%album%/%title%</span></code> to a very complex script using different file naming formats
 based on different criteria. In all cases, the files will be saved using the text output by the script.</p>
 <div class="admonition note">
@@ -221,7 +221,7 @@ files’ metadata.</p>
 </div>
 <div class="section" id="tagging-scripts">
 <h2>Tagging Scripts<a class="headerlink" href="#tagging-scripts" title="Permalink to this headline">¶</a></h2>
-<p>There can be multiple tagging scripts defined in a user’s settings. Individual scripts can be enabled or
+<p id="index-2">There can be multiple tagging scripts defined in a user’s settings. Individual scripts can be enabled or
 disabled, and the order of execution of the scripts can be set. Whenever a script is run automatically (i.e.:
 when an album is loaded), it is processed once for each track in the album that triggered the
 run. For example, if there are two tagging scripts enabled (A and B) and an album with three tracks is

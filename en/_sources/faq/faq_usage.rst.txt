@@ -14,6 +14,10 @@ Using Picard
 
    There is a separate section that explains the tagging process.  Please see :doc:`../usage/using` for details.
 
+.. index::
+   single: tagger icon
+   single: icon; tagger
+
 **The green "Tagger" icon disappeared from MusicBrainz.org, how do I get it back?**
 
    This icon shows up when a manual lookup is performed via Picard using :menuselection:`"Tools --> Lookup"`.

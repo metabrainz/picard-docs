@@ -10,6 +10,9 @@
 Plugins Options
 ===============
 
+.. index::
+   pair: configuration; plugins
+
 .. image:: ../images/options-plugins.png
    :width: 100 %
 
@@ -17,6 +20,9 @@ This section allows you to manage the plugins used by Picard.  You can install n
 disable or uninstall plugins that are currently installed.  Picard provides a list of plugins that have
 been submitted to the project.  A list of the standard plugins is available on the `plugins page
 <https://picard.musicbrainz.org/plugins/>`_ on the Picard website.
+
+.. index::
+   single: plugins; third-party
 
 There are also a number of plugins available by third-party developers.  Often these are discussed on
 the `Community Discussion Forum <https://community.metabrainz.org/>`_ so if you're looking for a particular
@@ -89,6 +95,9 @@ section below the list.
    Options.
 
 .. _ref_installingplugins:
+
+.. index::
+   single: plugins; installing
 
 Installing Third-Party Plugins
 ------------------------------

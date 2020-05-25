@@ -10,6 +10,10 @@
 Colors
 ======
 
+.. index::
+   single: configuration; colors
+   single: user interface; colors
+
 .. image:: ../images/options-interface-colors.png
    :width: 100 %
 

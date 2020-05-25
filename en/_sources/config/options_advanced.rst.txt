@@ -10,6 +10,9 @@
 Advanced Options
 ================
 
+.. index::
+   single: configuration; advanced options
+
 .. image:: ../images/options-advanced.png
    :width: 100 %
 

@@ -10,6 +10,9 @@
 Tag Compatibility
 =================
 
+.. index::
+   single: configuration; tag compatibility
+
 .. image:: ../images/options-tags-compatibility.png
    :width: 100 %
 

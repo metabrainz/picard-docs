@@ -10,6 +10,9 @@
 Top Tags
 ========
 
+.. index::
+   single: configuration; top tags
+
 .. image:: ../images/options-interface-top-tags.png
    :width: 100 %
 

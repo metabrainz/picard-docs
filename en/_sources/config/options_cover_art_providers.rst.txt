@@ -10,6 +10,9 @@
 Cover Art Providers
 ===================
 
+.. index::
+   single: configuration; cover art providers
+
 .. only:: html
 
    .. image:: ../images/options-cover.png

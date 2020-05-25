@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General Recommendations &mdash; MusicBrainz Picard v2.3.2 documentation</title>
+  <title>Work Flow Recommendations &mdash; MusicBrainz Picard v2.3.2 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="The CD is available" href="workflow_cd.html" />
+    <link rel="next" title="When the CD is available" href="workflow_cd.html" />
     <link rel="prev" title="Saving Updated Files" href="../usage/save.html" /> 
 </head>
 
@@ -88,6 +88,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
@@ -102,13 +103,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Recommended Work Flows</span></p>
+<p class="caption"><span class="caption-text">Work Flow Recommendations</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">General Recommendations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflow_cd.html">The CD is available</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflow_album.html">Files are grouped in album folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflow_metadata.html">Files are not grouped in folders but have some metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflow_no_info.html">Files are not grouped and have little or no existing metadata</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">General Recommendations</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Troubleshooting</span></p>
 <ul>
@@ -120,7 +123,6 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -171,7 +173,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>General Recommendations</li>
+      <li>Work Flow Recommendations</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -190,20 +192,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="general-recommendations">
-<h1>General Recommendations<a class="headerlink" href="#general-recommendations" title="Permalink to this headline">¶</a></h1>
-<p>This section provides some recommended work flows for various tagging scenarios.  These work flows are
+  <div class="section" id="work-flow-recommendations">
+<h1>Work Flow Recommendations<a class="headerlink" href="#work-flow-recommendations" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">This section provides some recommended work flows for various tagging scenarios.  These work flows are
 based on what are believed to be best practices.</p>
 <p>The scenarios covered include:</p>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="workflow_cd.html"><span class="doc">The CD is available</span></a></p></li>
-<li><p><a class="reference internal" href="workflow_album.html"><span class="doc">Files are grouped in album folders</span></a></p></li>
-<li><p><a class="reference internal" href="workflow_metadata.html"><span class="doc">Files are not grouped in folders but have some metadata</span></a></p></li>
-<li><p><a class="reference internal" href="workflow_no_info.html"><span class="doc">Files are not grouped and have little or no existing metadata</span></a></p></li>
+<li><p><a class="reference internal" href="workflow_cd.html"><span class="doc">When the CD is available</span></a></p></li>
+<li><p><a class="reference internal" href="workflow_album.html"><span class="doc">When files are grouped by album</span></a></p></li>
+<li><p><a class="reference internal" href="workflow_metadata.html"><span class="doc">When files are not grouped but have some metadata</span></a></p></li>
+<li><p><a class="reference internal" href="workflow_no_info.html"><span class="doc">When files are not grouped and have little or no existing metadata</span></a></p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Regardless of whether or not it’s one of the the work flows listed below, it is <strong>strongly</strong> recommended
+<p>Regardless of whether or not it’s one of the the work flows listed, it is <strong>strongly</strong> recommended
 that you make a backup copy of the files being processed and initially process a copy of your music files.
 This will help to ensure that Picard is properly configured (e.g.: settings, scripts, and plugins) and
 produces the expected and desired results.</p>
@@ -218,7 +220,7 @@ produces the expected and desired results.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="workflow_cd.html" class="btn btn-neutral float-right" title="The CD is available" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="workflow_cd.html" class="btn btn-neutral float-right" title="When the CD is available" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../usage/save.html" class="btn btn-neutral float-left" title="Saving Updated Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

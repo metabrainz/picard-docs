@@ -10,6 +10,9 @@
 File Formats
 ============
 
+.. index::
+   single: file formats
+
 **What formats does Picard support?**
 
    Picard supports the following file formats:
@@ -50,6 +53,9 @@ File Formats
    See the :doc:`../variables/variables` section for information on which MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping
    <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
 
+.. index::
+   single: tags; editing
+
 **How to I edit several tags at once? Why is it not easier do so?**
 
    Please understand that Picard is not designed as a general purpose tag editor. Its primary goal is to retrieve community-maintained MusicBrainz
@@ -72,6 +78,9 @@ File Formats
 
    This process should work in both panes.
 
+.. index::
+   single: audio player
+
 **The built-in audio player cannot play my file. Which formats does it support?**
 
    The formats supported by the built-in audio player depend on the formats supported by your operating system.
@@ -92,6 +101,10 @@ File Formats
 
       On Linux systems the player uses GStreamer which supports most common audio formats, although some distributions might exclude some codecs due to
       licensing issues. For the widest format support make sure you install all of the GStreamer plugins available for your distribution.
+
+.. index::
+   single: acoustic fingerprint
+   single: fingerprint; acoustic
 
 **I am using Fedora. Why doesn't acoustic fingerprinting work?**
 

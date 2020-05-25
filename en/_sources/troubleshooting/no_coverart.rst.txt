@@ -12,6 +12,9 @@ There is no coverart
 
 There are two different problems that often fall under this topic:
 
+.. index::
+   single: troubleshooting; no cover art downloaded
+
 Picard isn't finding and downloading any cover art
 --------------------------------------------------
 
@@ -42,6 +45,9 @@ Picard isn't finding and downloading any cover art
    the Cover Art Archives subsection of the :menuselection:`"Options --> Options... --> Cover Art"` settings.  Please
    see the :doc:`../config/options_cover_art_archive` section for more information.
 
+
+.. index::
+   single: troubleshooting; no cover art displayed
 
 Coverart that is saved with the files isn't displayed
 -----------------------------------------------------

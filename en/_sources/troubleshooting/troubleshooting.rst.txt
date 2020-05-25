@@ -10,6 +10,9 @@
 General Troubleshooting
 =======================
 
+.. index::
+   single: troubleshooting; general
+
 Getting Help
 ------------
 
@@ -24,6 +27,9 @@ If you have problems using Picard, please first check the following resources:
 * If the problem is to do with a plugin, check the `Picard Plugins <https://picard.musicbrainz.org/plugins/>`_ for
   updated plugin versions.
 
+
+.. index::
+   single: troubleshooting; reporting a bug
 
 Reporting a Bug
 ---------------
@@ -41,6 +47,9 @@ If you're still convinced you have found a new bug, open a `new ticket
 * What actually happened and what did you expect to happen?
 * If you're using plugins, which plugins do you have enabled?
 
+
+.. index::
+   single: troubleshooting; logs
 
 Getting Logs
 ------------

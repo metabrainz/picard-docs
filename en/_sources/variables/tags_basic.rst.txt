@@ -28,6 +28,10 @@
 
 Basic Tags
 ==========
+
+.. index::
+   single: tags; basic
+
 The following tags are populated from MusicBrainz data for most releases, without any special Picard settings.
 
 All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in

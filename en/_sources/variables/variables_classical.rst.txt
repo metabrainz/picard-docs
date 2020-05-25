@@ -11,6 +11,9 @@
 Classical Music Tags
 ====================
 
+.. index::
+   single: tags; classical
+
 With the help of plugins like "Classical Extras" or "Work & Movement" you can make use of the following tags for
 tagging your classical music.
 

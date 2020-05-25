@@ -10,6 +10,9 @@
 Ratings
 =======
 
+.. index::
+   single: configuration; ratings
+
 .. image:: ../images/options-metadata-ratings.png
    :width: 100 %
 

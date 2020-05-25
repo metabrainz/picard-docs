@@ -10,6 +10,9 @@
 Before Tagging
 ==============
 
+.. index::
+   single: configuration; before tagging
+
 .. only:: html
 
    .. image:: ../images/options-tags.png

@@ -10,6 +10,9 @@
 Tag Options
 ===========
 
+.. index::
+   single: configuration; tag options
+
 .. image:: ../images/options-tags.png
    :width: 100 %
 

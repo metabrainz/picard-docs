@@ -9,6 +9,9 @@
 Processing Order
 ================
 
+.. index::
+   single: processing order
+
 In order to make effective use of plugins and scripts, it is important to understand when
 each is processed in relation to the others. As a general statement, plugins are always
 processed before scripts. Plugins of the same type will be executed in order based upon

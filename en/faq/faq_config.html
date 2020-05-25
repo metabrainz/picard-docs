@@ -88,6 +88,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
@@ -102,13 +103,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Recommended Work Flows</span></p>
+<p class="caption"><span class="caption-text">Work Flow Recommendations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">The CD is available</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Files are grouped in album folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Files are not grouped in folders but have some metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Files are not grouped and have little or no existing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Troubleshooting</span></p>
 <ul>
@@ -120,7 +121,6 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
@@ -199,7 +199,7 @@
             
   <div class="section" id="configuration">
 <h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
-<p><strong>Where is the Picard configuration saved?</strong></p>
+<p id="index-0"><strong>Where is the Picard configuration saved?</strong></p>
 <blockquote>
 <div><p>Picard saves the configuration in the file <code class="docutils literal notranslate"><span class="pre">Picard.ini</span></code>. Its location depends on the operating system:</p>
 <p><strong>Windows:</strong></p>
@@ -213,7 +213,7 @@ actual Windows user name.</p>
 <div><p><code class="docutils literal notranslate"><span class="pre">$HOME/.config/MusicBrainz/Picard.ini</span></code></p>
 </div></blockquote>
 </div></blockquote>
-<p><strong>I tagged a file in Picard, but iTunes is not seeing the tags!</strong></p>
+<p id="index-1"><strong>I tagged a file in Picard, but iTunes is not seeing the tags!</strong></p>
 <blockquote>
 <div><p>First, you need to force iTunes to re-read the information from your tags and update its library. This is discussed in the <a class="reference external" href="https://musicbrainz.org/doc/iTunes_Guide">iTunes
 Guide</a>.</p>
@@ -228,19 +228,6 @@ ID3v2.3 tags instead.</p>
 <p>Starting with version 0.14, the default settings have been changed to ID3v2.3 and this should no longer be an issue.</p>
 </div></blockquote>
 <p><strong>How do I tell Picard which browser to use?</strong></p>
-<blockquote>
-<div><p>On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can
-use the <code class="docutils literal notranslate"><span class="pre">BROWSER</span></code> environment variable.</p>
-<p>For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">BROWSER</span><span class="o">=</span><span class="s2">&quot;firefox &#39;</span><span class="si">%s</span><span class="s2">&#39; &amp;&quot;</span>
-</pre></div>
-</div>
-<p>Another approach that works in some GNU/Linux systems is the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">update</span><span class="o">-</span><span class="n">alternatives</span> <span class="o">--</span><span class="n">config</span> <span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">browser</span>
-</pre></div>
-</div>
-<p>This should present you with a list of existing browsers in your system, allowing you to select the one to use by default.</p>
-</div></blockquote>
 </div>
 
 

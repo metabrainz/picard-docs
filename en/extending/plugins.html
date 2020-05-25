@@ -88,6 +88,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started:</span></p>
 <ul>
@@ -102,13 +103,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Recommended Work Flows</span></p>
+<p class="caption"><span class="caption-text">Work Flow Recommendations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">The CD is available</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Files are grouped in album folders</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Files are not grouped in folders but have some metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Files are not grouped and have little or no existing metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Troubleshooting</span></p>
 <ul>
@@ -120,7 +121,6 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="extending.html">Extending Picard</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Plugins</a></li>
@@ -199,7 +199,7 @@
             
   <div class="section" id="plugins">
 <h1>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h1>
-<p>Plugins are written in Python, and are registered to the appropriate hooks.  Each plugin
+<p id="index-0">Plugins are written in Python, and are registered to the appropriate hooks.  Each plugin
 has its own version identifier, but also lists the plugin API versions that it supports.
 When loading a plugin, Picard first compares its list of API versions to the plugin’s
 supported versions to ensure that the plugin will operate correctly.  The Picard API
@@ -210,7 +210,7 @@ During the normal running of Picard, when it encounters a hook it will first ret
 list of all plugins registered for that specific hook, and then execute them sequentially
 in order based upon the priority specified when the plugin was registered to the hook.</p>
 <p>There are a few different types of plugins, including:</p>
-<p><strong>Metadata processors</strong>: These plugins can access and modify the metadata when it is loaded
+<p id="index-1"><strong>Metadata processors</strong>: These plugins can access and modify the metadata when it is loaded
 from MusicBrainz. They are registered with <code class="docutils literal notranslate"><span class="pre">register_album_metadata_processor()</span></code> or
 <code class="docutils literal notranslate"><span class="pre">register_track_metadata_processor()</span></code>.  These are what you might call “automatic” because
 they operate without any user intervention.  An example is the Classical Extras plugin.</p>

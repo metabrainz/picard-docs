@@ -13,6 +13,9 @@
 Advanced Variables
 ==================
 
+.. index::
+   single: variables; advanced
+
 If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>`, you get these extra variables:
 
 .. note::

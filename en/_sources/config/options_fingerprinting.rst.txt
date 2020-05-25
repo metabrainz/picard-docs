@@ -10,6 +10,9 @@
 Fingerprinting Options
 ======================
 
+.. index::
+   single: configuration; fingerprinting
+
 .. image:: ../images/options-fingerprinting.png
    :width: 100 %
 

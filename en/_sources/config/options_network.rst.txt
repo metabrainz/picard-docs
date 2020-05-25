@@ -10,6 +10,9 @@
 Network
 =======
 
+.. index::
+   single: configuration; network
+
 .. image:: ../images/options-network.png
    :width: 100 %
 
