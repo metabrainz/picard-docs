@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Bob Swift
+# Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 10:05-0600\n"
+"POT-Creation-Date: 2020-05-26 12:51-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/scripting.rst:10
+#: ../../source/scripting.rst:7
 msgid "Scripting"
 msgstr ""
 
@@ -36,27 +36,27 @@ msgstr ""
 msgid "Please refer to the section on :doc:`Scripts <extending/scripts>` in :doc:`Extending Picard <extending/extending>` for additional details about the two types of scripts, including how and when each of the scripts are executed."
 msgstr ""
 
-#: ../../source/scripting.rst:29
+#: ../../source/scripting.rst:31
 msgid "Syntax"
 msgstr ""
 
-#: ../../source/scripting.rst:31
+#: ../../source/scripting.rst:33
 msgid "The syntax is derived from `Foobar2000's titleformat <https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference>`_. There are three base elements: text, variable and function. Variables consist of alphanumeric characters enclosed in percent signs (e.g.: ``%artist%``). Functions start with a dollar sign and end with an argument list enclosed in parentheses (e.g.: ``$lower(...)``)."
 msgstr ""
 
-#: ../../source/scripting.rst:38
+#: ../../source/scripting.rst:40
 msgid "To use parentheses or commas as-is inside a function call, you must escape them with a backslash."
 msgstr ""
 
-#: ../../source/scripting.rst:43
+#: ../../source/scripting.rst:44
 msgid "Metadata Variables"
 msgstr ""
 
-#: ../../source/scripting.rst:45
+#: ../../source/scripting.rst:46
 msgid "See :doc:`variables/variables` for the list of the variables provided by Picard."
 msgstr ""
 
-#: ../../source/scripting.rst:47
+#: ../../source/scripting.rst:48
 msgid "Picard's variables can be either simple variables containing a single text string, or multi-value variables containing multiple text strings. In scripts, multi-value variables are automatically converted to a single text string by joining the values with a semicolon \";\", except when used with special multi-value functions."
 msgstr ""
 

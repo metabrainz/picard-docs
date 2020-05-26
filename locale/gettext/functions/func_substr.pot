@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Bob Swift
+# Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:48-0600\n"
+"POT-Creation-Date: 2020-05-26 12:51-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,34 +16,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/functions/func_substr.rst:10
+#: ../../source/functions/func_substr.rst:7
 msgid "$substr"
 msgstr ""
 
-#: ../../source/functions/func_substr.rst:12
+#: ../../source/functions/func_substr.rst:9
 msgid "Usage: **$substr(text,start,end)**"
 msgstr ""
 
-#: ../../source/functions/func_substr.rst:13
+#: ../../source/functions/func_substr.rst:10
 msgid "Category: text"
 msgstr ""
 
-#: ../../source/functions/func_substr.rst:14
+#: ../../source/functions/func_substr.rst:11
 msgid "Implemented: Picard 2.3"
 msgstr ""
 
-#: ../../source/functions/func_substr.rst:16
+#: ../../source/functions/func_substr.rst:13
 msgid "**Description:**"
 msgstr ""
 
-#: ../../source/functions/func_substr.rst:18
+#: ../../source/functions/func_substr.rst:15
 msgid "Returns the substring of ``text`` beginning with the character at the ``start`` index, up to (but not including) the character at the ``end`` index. Indexes are zero-based. Negative numbers will be counted back from the end of the string. If the start or end indexes are left blank, they will default to the start and end of the string respectively.  If the ``start`` index evaluates to a negative number (e.g.: ``text`` is \"abc\" and ``start`` is -10), it will default to the start of the string.  Similarly, if ``end`` index is a number greater than the number of characters in the string, it will default to the end of the string. Invalid index values (e.g.: ``start`` greater than ``end``) will return an empty string."
 msgstr ""
 
-#: ../../source/functions/func_substr.rst:30
+#: ../../source/functions/func_substr.rst:27
 msgid "**Example:**"
 msgstr ""
 
-#: ../../source/functions/func_substr.rst:32
+#: ../../source/functions/func_substr.rst:29
 msgid "The following statements will return the values indicated::"
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Bob Swift
+# Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:48-0600\n"
+"POT-Creation-Date: 2020-05-26 12:51-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,42 +16,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/functions/func_slice.rst:10
+#: ../../source/functions/func_slice.rst:7
 msgid "$slice"
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:12
+#: ../../source/functions/func_slice.rst:9
 msgid "Usage: **$slice(name,start,end[,separator])**"
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:13
+#: ../../source/functions/func_slice.rst:10
 msgid "Category: multi-value"
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:14
+#: ../../source/functions/func_slice.rst:11
 msgid "Implemented: Picard 2.3"
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:16
+#: ../../source/functions/func_slice.rst:13
 msgid "**Description:**"
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:18
+#: ../../source/functions/func_slice.rst:15
 msgid "Returns a multi-value variable containing the elements from the ``start`` index up to but not including the ``end`` index from the multi-value variable ``name``. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable."
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:24
+#: ../../source/functions/func_slice.rst:21
 msgid "Indexes are zero based. Negative numbers will be counted back from the number of elements in the list. If the ``start`` or ``end`` indexes are left blank, they will default to 0 and the number of elements in the list respectively."
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:28
+#: ../../source/functions/func_slice.rst:25
 msgid "A typical use might be to create a multi-value variable with all artists in ``%artists%`` except the first, which can be used to create a \"feat.\" list.  This would look something like ``$setmulti(supporting_artists,$slice(%artists%,1,))``."
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:33
+#: ../../source/functions/func_slice.rst:30
 msgid "**Example:**"
 msgstr ""
 
-#: ../../source/functions/func_slice.rst:35
+#: ../../source/functions/func_slice.rst:32
 msgid "The following statements will return the values indicated::"
 msgstr ""

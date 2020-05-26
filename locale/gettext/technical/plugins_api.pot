@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2020, Bob Swift
+# Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:48-0600\n"
+"POT-Creation-Date: 2020-05-26 12:51-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,166 +16,166 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/technical/plugins_api.rst:10
+#: ../../source/technical/plugins_api.rst:7
 msgid "Plugins API"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:13
+#: ../../source/technical/plugins_api.rst:15
 msgid "Plugin Metadata"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:15
+#: ../../source/technical/plugins_api.rst:17
 msgid "Each plugin must provide some metadata as variables. Those variables should be placed at the top of the file."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:27
+#: ../../source/technical/plugins_api.rst:29
 msgid "Variables explanation:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:29
+#: ../../source/technical/plugins_api.rst:31
 msgid "**PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:31
+#: ../../source/technical/plugins_api.rst:33
 msgid "**PLUGIN_VERSION** should be filled with the version of Plugin."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:33
+#: ../../source/technical/plugins_api.rst:35
 msgid "**PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin to run with. New Picard versions will usually support older plugin API versions, but on breaking changes support for older plugin versions can be dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:37
+#: ../../source/technical/plugins_api.rst:39
 msgid "**PLUGIN_LICENSE** should be set with the license name of the plugin. If possible use one of the license names from the `SPDX License List <https://spdx.org/licenses/>`_, but you are welcomed to use another licnese if the one you chose is not available in the list."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:41
+#: ../../source/technical/plugins_api.rst:43
 msgid "**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:45
+#: ../../source/technical/plugins_api.rst:50
 msgid "Metadata Processors"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:47
+#: ../../source/technical/plugins_api.rst:52
 msgid "MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to the processor functions in the following examples are as follows:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:50
+#: ../../source/technical/plugins_api.rst:55
 msgid "**album**: ``picard.album.Album``"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:51
+#: ../../source/technical/plugins_api.rst:56
 msgid "**metadata**: ``picard.metadata.Metadata``"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:52
+#: ../../source/technical/plugins_api.rst:57
 msgid "**release**: ``dict`` with release data from MusicBrainz JSON web service"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:53
+#: ../../source/technical/plugins_api.rst:58
 msgid "**track**: ``dict`` with track data from MusicBrainz JSON web service"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:57
+#: ../../source/technical/plugins_api.rst:62
 msgid "Album metadata example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:78
+#: ../../source/technical/plugins_api.rst:83
 msgid "Track metadata example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:96
+#: ../../source/technical/plugins_api.rst:104
 msgid "Event Hooks"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:98
+#: ../../source/technical/plugins_api.rst:106
 msgid "Plugins can register themselves to listen for different events. Currently the following event hooks are available:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:101
+#: ../../source/technical/plugins_api.rst:109
 msgid "file_post_load_processor(file)"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:103
+#: ../../source/technical/plugins_api.rst:111
 msgid "This hook is called after a file has been loaded into Picard. This could for example be used to load additional data for a file. Usage:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:117
+#: ../../source/technical/plugins_api.rst:125
 msgid "file_post_save_processor(file)"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:119
+#: ../../source/technical/plugins_api.rst:127
 msgid "This hook is called after a file has been saved. This can for example be used to run additional post-processing on the file or write extra data. Note that the file's metadata is already the newly saved metadata. Usage:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:133
+#: ../../source/technical/plugins_api.rst:141
 msgid "file_post_addition_to_track_processor(track, file)"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:135
+#: ../../source/technical/plugins_api.rst:143
 msgid "This hook is called after a file has been added to a track (on the right-hand pane of Picard)."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:148
+#: ../../source/technical/plugins_api.rst:156
 msgid "file_post_removal_from_track_processor(track, file)"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:150
+#: ../../source/technical/plugins_api.rst:158
 msgid "This hook is called after a file has been removed from a track (on the right-hand pane of Picard)."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:163
+#: ../../source/technical/plugins_api.rst:171
 msgid "album_post_removal_processor(album)"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:165
+#: ../../source/technical/plugins_api.rst:173
 msgid "This hook is called after an album has been removed from Picard."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:179
+#: ../../source/technical/plugins_api.rst:187
 msgid "Event hooks have been available since API version 2.2."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:183
+#: ../../source/technical/plugins_api.rst:194
 msgid "File Formats"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:185
+#: ../../source/technical/plugins_api.rst:196
 msgid "Plugins can extend Picard with support for additional file formats. See the existing `file format implementations <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for details on how to implement the ``_load`` and ``_save`` methods. Example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:223
+#: ../../source/technical/plugins_api.rst:237
 msgid "Tagger Script Functions"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:225
+#: ../../source/technical/plugins_api.rst:239
 msgid "To define new tagger script functions use ``register_script_function(function, name=None)`` from the ``picard.script`` module. ``parser`` is an instance of ``picard.script.ScriptParser``, and the rest of the arguments passed to it are the arguments from the function call in the tagger script. Example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:247
+#: ../../source/technical/plugins_api.rst:261
 msgid "``register_script_function`` supports two optional arguments:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:249
+#: ../../source/technical/plugins_api.rst:263
 msgid "**eval_args**: If this is **False**, the arguments will not be evaluated before being passed to **function**."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:250
+#: ../../source/technical/plugins_api.rst:264
 msgid "**check_argcount**: If this is **False** the number of arguments passed to the function will not be verified."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:252
+#: ../../source/technical/plugins_api.rst:266
 msgid "The default value for both arguments is **True**."
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:256
+#: ../../source/technical/plugins_api.rst:273
 msgid "Context Menu Actions"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:258
+#: ../../source/technical/plugins_api.rst:275
 msgid "Right-click context menu actions can be added to albums, tracks and files in \"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of Clusters). Example:"
 msgstr ""
 
-#: ../../source/technical/plugins_api.rst:287
+#: ../../source/technical/plugins_api.rst:304
 msgid "Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", \"*cluster*\" or \"*clusterlist*\"."
 msgstr ""
