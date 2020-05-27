@@ -41,12 +41,15 @@ plugins and tutorials are provided when available rather than trying to reproduc
    config/configuration
    variables/variables
    scripting
+   functions/list_by_type
 
 .. toctree::
    :caption: Using Picard
    :hidden:
 
-   usage/using
+   General Usage <usage/using>
+   extending/extending
+   faq/faq
 
 
 .. toctree::
@@ -75,10 +78,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :caption: Appendices
    :hidden:
 
-   functions/list_by_type
-   extending/extending
    technical/plugins_api
-   faq/faq
    examples/examples
 
 
