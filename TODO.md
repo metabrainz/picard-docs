@@ -14,3 +14,8 @@
   - scripts
 
 - Add more index items to tags and variables
+
+- Explain context menus
+  - left-pane
+  - right-pane
+  - tags pane

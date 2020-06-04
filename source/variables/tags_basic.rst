@@ -204,13 +204,13 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
     MusicBrainz Identifier for the work.
 
-**musicip_fingerprint**
+.. **musicip_fingerprint**
 
-    MusicIP's Fingerprint.
+..     MusicIP's Fingerprint.
 
-**musicip_puid**
+.. **musicip_puid**
 
-    MusicIP PUID’s associated with the track.
+..     MusicIP PUID’s associated with the track.
 
 **originalalbum**
 
