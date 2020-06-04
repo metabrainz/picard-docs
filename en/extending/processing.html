@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Plugins API" href="../technical/plugins_api.html" />
+    <link rel="next" title="Frequently Asked Questions" href="../faq/faq.html" />
     <link rel="prev" title="Scripts" href="scripts.html" /> 
 </head>
 
@@ -98,10 +98,27 @@
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Using Picard</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Using Picard</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="extending.html">Extending Picard</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripts.html">Scripts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Processing Order</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#startup">Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loading-a-release">Loading a Release</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loading-music-files">Loading Music Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-removing-files">Adding / Removing Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#saving-files">Saving Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removing-albums">Removing Albums</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#context-menus">Context Menus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
 <ul>
@@ -120,25 +137,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Appendices</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="extending.html">Extending Picard</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scripts.html">Scripts</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Processing Order</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#startup">Startup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#loading-a-release">Loading a Release</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#loading-music-files">Loading Music Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#adding-removing-files">Adding / Removing Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#saving-files">Saving Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#removing-albums">Removing Albums</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#context-menus">Context Menus</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
 </ul>
 
@@ -283,7 +283,7 @@ on a file, album, track, cluster or cluster list.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../technical/plugins_api.html" class="btn btn-neutral float-right" title="Plugins API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../faq/faq.html" class="btn btn-neutral float-right" title="Frequently Asked Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="scripts.html" class="btn btn-neutral float-left" title="Scripts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

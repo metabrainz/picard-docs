@@ -1,10 +1,7 @@
-..  MusicBrainz Picard Documentation Project
-..  Copyright (C) 2020  Bob Swift (rdswift).
-..  Permission is granted to copy, distribute and/or modify this document
-..  under the terms of the GNU Free Documentation License, Version 1.3
-..  or any later version published by the Free Software Foundation;
-..  with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-..  A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 Notices
 =======
@@ -12,10 +9,13 @@ Notices
 .. | Copyright © 2020 Bob Swift (rdswift).
 .. | Copyright © 2020 MetaBrainz Foundation.
 
-Copyright © 2020 Bob Swift.
+.. Copyright © 2020 Bob Swift.
 
-Permission is granted to copy, distribute and/or modify this document under
-the terms of the GNU Free Documentation License, Version 1.3
-or any later version published by the Free Software Foundation;
-with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
+.. Permission is granted to copy, distribute and/or modify this document under
+.. the terms of the GNU Free Documentation License, Version 1.3
+.. or any later version published by the Free Software Foundation;
+.. with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+.. A copy of the license is available at https://www.gnu.org/licenses/fdl-1.3.html.
+
+This MusicBrainz Picard User Guide is licensed under CC0 1.0
+A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
