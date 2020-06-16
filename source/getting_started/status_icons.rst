@@ -78,7 +78,7 @@ Track Icons
 
 |img-track-audio|
 
-   | This icon indicates that the track is an audio track and that there is no file currently matched.
+   | This icon indicates that the track is an audio track and that there is no single file currently matched.  This appears if there is no file matched, of if there are multiple files matched.
    |
 
 .. |img-track-video| image:: ../images/track-video.png
@@ -87,7 +87,7 @@ Track Icons
 
 |img-track-video|
 
-   | This icon indicates that the track is a video track and that there is no file currently matched.
+   | This icon indicates that the track is a video track and that there is no file currently matched.  This appears if there is no file matched, of if there are multiple files matched.
    |
 
 .. |img-track-data| image:: ../images/track-data.png
@@ -96,7 +96,7 @@ Track Icons
 
 |img-track-data|
 
-   | This icon indicates that the track is a data track and that there is no file currently matched.
+   | This icon indicates that the track is a data track and that there is no file currently matched.  This appears if there is no file matched, of if there are multiple files matched.
    |
 
 .. |img-match-50| image:: ../images/track-match-50.png
