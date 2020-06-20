@@ -182,6 +182,12 @@ html_theme = "sphinx_rtd_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_context = {
+    'extra_css_files': [
+        '_static/css/extra.css',
+    ],
+}
+
 
 # -- Options for LaTeX / PDF output ------------------------------------------
 
