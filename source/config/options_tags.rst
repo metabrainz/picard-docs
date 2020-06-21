@@ -29,10 +29,14 @@ Tag Options
 
       Details:
       :doc:`options_before_tagging` /
-      :doc:`options_tag_compatibility`
+      :doc:`options_tags_compatibility_id3` /
+      :doc:`options_tags_compatibility_aac` /
+      :doc:`options_tags_compatibility_ac3`
 
 .. toctree::
    :hidden:
 
    options_before_tagging
-   options_tag_compatibility
+   options_tags_compatibility_id3
+   options_tags_compatibility_aac
+   options_tags_compatibility_ac3
