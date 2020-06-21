@@ -188,6 +188,8 @@ html_context = {
     ],
 }
 
+html_favicon = '_static/picard-icon.png'
+
 
 # -- Options for LaTeX / PDF output ------------------------------------------
 
