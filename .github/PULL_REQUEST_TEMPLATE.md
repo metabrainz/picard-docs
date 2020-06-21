@@ -11,35 +11,25 @@
     not the 'master' branch.
 -->
 
-# Summary
+**Summary**
 
-<!--
-    Update the checkbox with an [x] for the type of contribution you are making.
--->
+This is a…
+ - [x] Correction
+ - [ ] Addition
+ - [ ] Restructuring
+ - [ ] Minor / simple change (like a typo)
+ - [ ] Other
 
-* This is a…
-  * [x] Correction
-  * [ ] Addition
-  * [ ] Restructuring
-  * [ ] Minor / simple change (like a typo)
-  * [ ] Other
+**Reason for the Change**
 
-# Reason for the Change
+Anything that helps us understand why you are making this change goes here.
+What problem are you trying to fix? What does this change address?
 
-<!--
-    Anything that helps us understand why you are making this change goes here.
-    What problem are you trying to fix? What does this change address?
--->
+**Description of the Change**
 
-# Description of the Change
+The details, considerations, or other interesting points of your change.
 
-<!--
-    The details, considerations, or other interesting points of your change.
--->
+**Additional Action Required**
 
-# Additional Action Required
-
-<!--
-    Other than merging your change, do you want / need us to do anything else
-    with your change? This could include reviewing a specific part of your PR.
--->
+Other than merging your change, do you want / need us to do anything else
+with your change? This could include reviewing a specific part of your PR.
