@@ -2,12 +2,12 @@ name: Check, Build and Publish Files
 
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the master and development branches
+  # but only for the master branch
   push:
     branches:
       - 'master'
     paths-ignore:
-      - '.github/test.yml'
+      - '.github/**'
 
 jobs:
   lint_rst:

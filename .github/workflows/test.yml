@@ -2,7 +2,7 @@ name: Check and Build Files
 
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the master and development branches
+  # but not for the master and gh-pages branches
   push:
     branches-ignore:
       - 'gh-pages'
@@ -10,17 +10,24 @@ on:
     paths:
       - 'source/**.rst'
       - 'source/**.txt'
+      - 'source/images/*'
+      - '_static/**'
+      - '_templates/**'
       - '.github/workflows/test.yml'
       - 'setup.py'
+      - 'conf.py'
   pull_request:
     branches-ignore:
       - 'gh-pages'
-      - 'master'
     paths:
       - 'source/**.rst'
       - 'source/**.txt'
+      - 'source/images/*'
+      - '_static/**'
+      - '_templates/**'
       - '.github/workflows/test.yml'
       - 'setup.py'
+      - 'conf.py'
 
 jobs:
   lint_rst:
