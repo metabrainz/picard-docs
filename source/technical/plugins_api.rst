@@ -30,7 +30,8 @@ Variables explanation:
 
 * **PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function.
 
-* **PLUGIN_VERSION** should be filled with the version of Plugin.
+* **PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z``
+  (e.g.: "1.0" or "2.12.4"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_.
 
 * **PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin to run with. New Picard versions
   will usually support older plugin API versions, but on breaking changes support for older plugin versions can
