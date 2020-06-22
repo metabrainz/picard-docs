@@ -10,11 +10,11 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-import datetime
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+
+import datetime
 
 # import sphinx_rtd_theme
 # import picard_theme
@@ -25,96 +25,15 @@ copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this
 # -- Project information -----------------------------------------------------
 
 project = 'MusicBrainz Picard'
-# copyright = '{0}, MetaBrainz Foundation'.format(copyright_year)
 # copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
 copyright = 'This documentation is licensed under CC0 1.0.'
-# copyright = '{0}, Bob Swift'.format(copyright_year)
 author = 'Bob Swift'
-# author = ''
 
 # The full version, including alpha/beta/rc tags
 release = 'v2.3.2'
 version = release
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
-
-# my_top_space = r'\vspace*{0.2\textheight}'
-# my_sig_space = r'\vspace*{2.5em}'
-# my_sep_space = r'\vspace*{\fill}'
-# my_bot_space = r'\vspace{0.02\textheight}'
-
-# my_notice = r'''{0}
-# This document only exists because of the volunteer effort that
-# went into its development, from the initial documentation on the Picard website,
-# the information posted in the Community Discussion Forum, documentation from
-# scripts, plugins and program source code, proofreaders, editors, translators,
-# and feedback from the user community.\\
-# \\
-# My sincere thanks to all the volunteers for your time and effort that have
-# helped make this documentation project a reality.\\
-
-# {1}
-# Bob Swift (rdswift)\\
-# editor\\
-
-# {2}
-# Copyright © {4} Bob Swift (rdswift).\\
-# Copyright © {4} MetaBrainz Foundation.\\
-# \\
-# Permission is granted to copy, distribute and/or modify this document under the
-# terms of the GNU Free Documentation License, Version 1.3 or any later version
-# published by the Free Software Foundation; with no Invariant Sections, no Front-
-# Cover Texts, and no Back-Cover Texts. A copy of the license is available at
-# https://www.gnu.org/licenses/fdl-1.3.html.
-# {3}
-# '''.format(my_top_space, my_sig_space, my_sep_space, my_bot_space, datetime.datetime.now().year,)
-
-# my_notice = r'\vspace*{0.1\textheight}' + r'''
-# This document only exists because of the volunteer effort that
-# went into its development, from the initial documentation on the Picard website,
-# the information posted in the Community Discussion Forum, documentation from
-# scripts, plugins and program source code, proofreaders, editors, translators,
-# and feedback from the user community.\\
-# \\
-# My sincere thanks to all the volunteers for your time and effort that have
-# helped make this documentation project a reality.\\
-# \vspace*{2.5em}
-
-# Bob Swift (rdswift)\\
-# editor\\
-
-# ''' + r'\vspace*{\fill}' + r"""
-# Copyright © {0} Bob Swift (rdswift).\\
-# Copyright © {0} MetaBrainz Foundation.\\
-# \\
-# Permission is granted to copy, distribute and/or modify this document under the
-# terms of the GNU Free Documentation License, Version 1.3 or any later version
-# published by the Free Software Foundation; with no Invariant Sections, no Front-
-# Cover Texts, and no Back-Cover Texts. A copy of the license is available at
-# https://www.gnu.org/licenses/fdl-1.3.html.
-# """.format(datetime.datetime.now().year,) + r'\vspace{0.1\textheight}'
-
-# my_notice = r'''\vspace*{\fill}
-# Copyright © 2020-''' + this_year + r''' Bob Swift\\
-# Copyright © 2020-''' + this_year + r''' MetaBrainz Foundation\\
-# \\
-# Permission is granted to copy, distribute and/or modify this document under the
-# terms of the GNU Free Documentation License, Version 1.3 or any later version
-# published by the Free Software Foundation; with no Invariant Sections, no Front-
-# Cover Texts, and no Back-Cover Texts. A copy of the license is available at
-# https://www.gnu.org/licenses/fdl-1.3.html.
-# \vspace{0.1\textheight}'''
-
-# my_notice = r'''\vspace*{\fill}
-# Copyright © ''' + copyright_year + r''' Bob Swift\\
-# \\
-# Permission is granted to copy, distribute and/or modify this document under the
-# terms of the GNU Free Documentation License, Version 1.3 or any later version
-# published by the Free Software Foundation; with no Invariant Sections, no Front-
-# Cover Texts, and no Back-Cover Texts. A copy of the license is available at
-# https://www.gnu.org/licenses/fdl-1.3.html.
-# \vspace{0.1\textheight}'''
-
 
 my_notice = r'''\vspace*{\fill}
 MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a
@@ -186,6 +105,12 @@ html_context = {
     'extra_css_files': [
         '_static/css/extra.css',
     ],
+    'supported_languages': [
+        ('en', 'English'),
+        # ('fr', 'Française'),
+        # ('de', 'Deutsche'),
+        # ('es', 'Española'),
+    ]
 }
 
 html_favicon = '_static/picard-icon.png'

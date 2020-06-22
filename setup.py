@@ -8,14 +8,17 @@ import argparse
 import os
 import re
 import shutil
-import sys
 import subprocess
-import zipfile
-import restructuredtext_lint
+import sys
 import time
+import zipfile
+
+import restructuredtext_lint
+
+import conf
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.03'
+SCRIPT_VERS = '0.04'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -35,6 +38,9 @@ LANGUAGE_LIST = {
     # 'de': 'German',
     # 'es': 'Spanish',
 }
+if conf.html_context and 'supported_languages' in conf.html_context:
+    for code, title in conf.html_context['supported_languages']:
+        LANGUAGE_LIST[code] = title
 
 DEFAULT_LANGUAGE = 'en'
 LANGUAGES = LANGUAGE_LIST.keys()
@@ -261,7 +267,6 @@ class LintRST():
                             err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
                         if err_process:
                             err_processed = True
-                            # print('\n   [{0}] {1} Line {2}: {3}'.format(err.type, err.source, err.line, err.message), end='', flush=True)
                             print('\n   [{0}] Line {1}: {2}'.format(err.type, err.line, err.message), end='', flush=True)
                             if err.type == 'WARNING':
                                 self.warning_count += 1
@@ -292,9 +297,7 @@ class LintRST():
             {int} -- Error code 1 if check failed, otherwise 0.
         """
         for dir_name, subdir_list, file_list in os.walk(root_dir):
-            # print('Found directory: %s' % dir_name)
             for fname in file_list:
-                # print('\t%s' % fname)
                 if str(fname).lower().endswith('.rst'):
                     self.check_file(os.path.join(dir_name, fname), ignore_info)
 
@@ -411,29 +414,6 @@ def parse_command_line():
     # arg_parser.add_argument('--about', help="information about the script", action='store_true', dest='about')
     # arg_parser.add_argument('--warranty', help="warranty information about the script", action='store_true', dest='warranty')
 
-    # subparsers = arg_parser.add_subparsers()
-    # parser01 = subparsers.add_parser('venv', help='Python virtual environment functions.')
-    # parser01a = parser01.add_mutually_exclusive_group(required=True)
-    # parser01a.add_argument("--make", help="Create a virtual environment for the project.", action='store_true', dest='venv_make')
-    # # parser01a.add_argument("--update", help="Updates the virtual environment for the project.  If there is no existing virtual environment, one will be created.",
-    # #                        action='store_true', dest='venv_update')
-    # # parser01a.add_argument("--activate", help="Activate the virtual environment for the project.  If there is no existing virtual environment, one will be created.",
-    # #                        action='store_true', dest='venv_activate')
-    # # parser01a.add_argument("--deactivate", help="Dectivate the virtual environment for the project.", action='store_true', dest='venv_deactivate')
-    # parser01a.add_argument("--remove", help="Remove / delete the virtual environment for the project.", action='store_true', dest='venv_remove')
-
-    # parser02 = subparsers.add_parser('ui', help='User Interface functions.')
-    # parser02a = parser02.add_mutually_exclusive_group(required=True)
-    # parser02a.add_argument('--compile', help=("Compile the specified UI file(s) to Python code.  Do not include the full path or the '.ui' extension."
-    #                        "  If no files are specified all UI files will be compiled."), nargs='*', metavar='UI', dest='ui_compile')
-    # parser02a.add_argument('--clean', help="Clean all compiled UI files.", action='store_true', dest='ui_clean')
-
-    # parser03 = subparsers.add_parser('tests', help='Program testing functions.')
-    # parser03a = parser03.add_mutually_exclusive_group(required=True)
-    # parser03a.add_argument('--run', help="Run all unit tests.", action='store_true', dest='tests_run')
-    # parser03a.add_argument('--flake8', help="Lint source code using flake8.", action='store_true', dest='tests_flake8')
-    # parser03a.add_argument('--pylint', help="Lint source code using pylint.", action='store_true', dest='tests_pylint')
-
     args = arg_parser.parse_args()
     return args
 
@@ -537,8 +517,9 @@ def clean_directory(dir_path, dir_name):
                     time.sleep(1)
                 if not counter:
                     raise Exception('Unable to clean directory.')
-            except Exception:
-                print("\nError removing the {0} directory: {1}\n".format(dir_name, dir_path))
+            except Exception as ex:
+                print("\nError removing the {0} directory: {1}".format(dir_name, dir_path))
+                print("Error message: {0}\n".format(ex))
                 exit_with_code(1)
         else:
             print("\nThe {0} directory is not a directory: {1}\n".format(dir_name, dir_path))
@@ -554,8 +535,9 @@ def clean_directory(dir_path, dir_name):
                 time.sleep(1)
             if not counter:
                 raise Exception('Unable to create directory.')
-        except Exception:
-            print("\nError creating the {0} directory: {1}\n".format(dir_name, dir_path))
+        except Exception as ex:
+            print("\nError creating the {0} directory: {1}".format(dir_name, dir_path))
+            print("Error message: {0}\n".format(ex))
             exit_with_code(1)
 
 
@@ -590,8 +572,9 @@ def remove_dir(dir_path):
                     time.sleep(1)
                 if not counter:
                     raise Exception('Directory not removed.')
-            except Exception:
-                print("\nError removing the directory: {0}\n".format(dir_path))
+            except Exception as ex:
+                print("\nError removing the directory: {0}".format(dir_path))
+                print("Error message: {0}\n".format(ex))
                 exit_with_code(1)
         else:
             print('\nUnable to remove (not a directory): {0}\n'.format(dir_path))
@@ -619,8 +602,9 @@ def remove_file(file_path):
                     time.sleep(1)
                 if not counter:
                     raise Exception('File not removed.')
-            except Exception:
-                print("\nError removing the file: {0}\n".format(file_path))
+            except Exception as ex:
+                print("\nError removing the file: {0}".format(file_path))
+                print("Error message: {0}\n".format(ex))
                 exit_with_code(1)
         else:
             print('\nUnable to remove (not a file): {0}\n'.format(file_path))
@@ -810,19 +794,6 @@ def main():
     # return
     # print('User VENV Location = {0}\nExists: {1}\n'.format(VENV_LOCATION, check_venv()))
 
-    # if 'language' in vars(args):
-    #     if args.language == 'all':
-    #         process_languages = LANGUAGES
-    #     elif args.language in LANGUAGES:
-    #         process_languages = [args.language]
-    #     else:
-    #         print('\nInvalid language selected: {0}'.format(args.language))
-    #         print('\nPlease select from:')
-    #         list_languages()
-    #         exit_with_code(1)
-    # else:
-    #     process_languages = [DEFAULT_LANGUAGE]
-
     if 'language' in vars(args):
         if args.language == 'all':
             process_languages = LANGUAGES
@@ -909,23 +880,6 @@ def main():
             print("\nUnknown test target: '{0}'\n".format(args.test_target))
             exit_with_code(1)
 
-    # elif 'venv_make' in vars(args):
-    #     # 'venv' option selected
-    #     if args.venv_make:
-    #         # print('** VENV Make option selected **')
-    #         make_venv()
-    #     # elif args.venv_update:
-    #     #     print('** VENV Update option selected **')
-    #     # elif args.venv_activate:
-    #     #     activate_venv()
-    #     # elif args.venv_deactivate:
-    #     #     print('** VENV Deactivate option selected **')
-    #     elif args.venv_remove:
-    #         # print('** VENV Remove option selected **')
-    #         remove_venv()
-    #     else:
-    #         print('Error: Invalid option selected.')
-
     else:
         # show help information
         show_help()
@@ -941,11 +895,4 @@ def main():
 
 
 if __name__ == '__main__':
-    # RC = 1
     main()
-    # try:
-    #     main()
-    #     RC = 0
-    # except Exception as err:
-    #     print('Error: {0}'.format(err), file=sys.stderr)
-    # sys.exit(RC)

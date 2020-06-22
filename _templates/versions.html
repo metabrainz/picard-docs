@@ -46,19 +46,17 @@
     <div class="rst-other-versions">
       <dl>
         <dt>{{ _('Select Language') }}</dt>
+        {% if supported_languages %}
+        {% for lang_code, lang_title in supported_languages %}
+        <dd><a href="{{ url_root }}../{{ lang_code }}/{{ pagename }}.html" class="__ptNoRemap">{{ lang_title }}</a></dd>
+        {% endfor %}
+        {% else %}
         <dd><a href="{{ url_root }}../en/{{ pagename }}.html" class="__ptNoRemap">English</a></dd>
-<!--
-        <dd><a href="{{ url_root }}../de/{{ pagename }}.html" class="__ptNoRemap">Deutsche</a></dd>
-        <dd><a href="{{ url_root }}../fr/{{ pagename }}.html" class="__ptNoRemap">Française</a></dd>
-        <dd><a href="{{ url_root }}../es/{{ pagename }}.html" class="__ptNoRemap">Española</a></dd>
--->
+        {% endif %}
       </dl>
 
       <dl>
         <dt>{{ _('Downloads') }}</dt>
-<!--
-        <dd><a href="{{ url_root }}../MusicBrainz_Picard_[{{ language }}].pdf" target="_blank" class="__ptNoRemap">{{ _('PDF') }}</a></dd>
--->
         <dd><a href="{{ url_root }}../MusicBrainz_Picard_[{{ language }}].pdf" target="_blank" class="__ptNoRemap">{{ _('PDF File') }}</a></dd>
         <dd><a href="{{ url_root }}../MusicBrainz_Picard_[{{ language }}].epub" target="_blank" class="__ptNoRemap">{{ _('epub File') }}</a></dd>
         <dd><a href="{{ url_root }}../MusicBrainz_Picard_HTML_[{{ language }}].zip" target="_blank" class="__ptNoRemap">{{ _('HTML Files') }}</a></dd>
