@@ -14,7 +14,7 @@ $find
 
 Returns the zero-based index of the first occurrance of ``needle`` in ``haystack``, or
 an empty string if ``needle`` was not found.  The comparisons are case-sensitive. If ``needle`` is
-blank, it will match the begging of ``haystack`` and return "0". The function does not
+blank, it will match the beginning of ``haystack`` and return "0". The function does not
 support wildcards.
 
 .. note::

@@ -6,13 +6,13 @@
 $trim
 =====
 
-| Usage: **$trim(text[,char])**
+| Usage: **$trim(text[,character])**
 | Category: text
 
 **Description:**
 
-Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``char``
-specifies the character to trim.  If multiple characters are provided in ``char``, each character
+Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``character``
+specifies the character to trim.  If multiple characters are provided in ``character``, each character
 will be applied separately to the function.
 
 
