@@ -17,6 +17,8 @@
 
   
   
+    <link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  
   
   
 
@@ -230,7 +232,8 @@
 <p>Variables explanation:</p>
 <ul class="simple">
 <li><p><strong>PLUGIN_DESCRIPTION</strong> should be as simple as possible, while still describing the main function.</p></li>
-<li><p><strong>PLUGIN_VERSION</strong> should be filled with the version of Plugin.</p></li>
+<li><p><strong>PLUGIN_VERSION</strong> should be filled with the version of Plugin. Plugin versions should be in the format <code class="docutils literal notranslate"><span class="pre">x.y.z</span></code>
+(e.g.: “1.0” or “2.12.4”). It is recommended that you use <a class="reference external" href="https://semver.org/">Semantic Versioning</a>.</p></li>
 <li><p><strong>PLUGIN_API_VERSIONS</strong> should be set to the versions of Picard this plugin to run with. New Picard versions
 will usually support older plugin API versions, but on breaking changes support for older plugin versions can
 be dropped. Versions available for Picard 2 are “2.0”, “2.1” and “2.2”.</p></li>
@@ -503,19 +506,15 @@ and the “ClusterList” (parent folder of Clusters). Example:</p>
     <div class="rst-other-versions">
       <dl>
         <dt>Select Language</dt>
+        
+        
         <dd><a href="../../en/technical/plugins_api.html" class="__ptNoRemap">English</a></dd>
-<!--
-        <dd><a href="../../de/technical/plugins_api.html" class="__ptNoRemap">Deutsche</a></dd>
-        <dd><a href="../../fr/technical/plugins_api.html" class="__ptNoRemap">Française</a></dd>
-        <dd><a href="../../es/technical/plugins_api.html" class="__ptNoRemap">Española</a></dd>
--->
+        
+        
       </dl>
 
       <dl>
         <dt>Downloads</dt>
-<!--
-        <dd><a href="../../MusicBrainz_Picard_[en].pdf" target="_blank" class="__ptNoRemap">PDF</a></dd>
--->
         <dd><a href="../../MusicBrainz_Picard_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
         <dd><a href="../../MusicBrainz_Picard_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
         <dd><a href="../../MusicBrainz_Picard_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>

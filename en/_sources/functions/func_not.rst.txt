@@ -19,8 +19,8 @@ Returns true if ``x`` is empty.
 The following statements will return the values indicated::
 
     $set(foo,)
-    $not(%foo%)  ==>  "1"  (False)
+    $not(%foo%)  ==>  "1"   (False)
 
-    $not(x)      ==>  ""  (True)
-    $not( )      ==>  ""  (True)
+    $not(x)      ==>  ""    (True)
+    $not( )      ==>  ""    (True)
     $not()       ==>  Error

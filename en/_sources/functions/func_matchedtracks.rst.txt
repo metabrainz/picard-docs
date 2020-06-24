@@ -12,7 +12,11 @@ $matchedtracks
 
 **Description:**
 
-Returns the number of matched tracks within a release.  Note that this only works in File Naming scripts.
+Returns the number of matched tracks within a release.
+
+.. note::
+
+    This function only works in File Naming scripts.
 
 
 **Example:**
