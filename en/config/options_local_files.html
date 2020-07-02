@@ -228,9 +228,20 @@
   <div class="section" id="local-files">
 <span id="ref-local-files"></span><h1>Local Files<a class="headerlink" href="#local-files" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../_images/options-cover-local.png" id="index-0"><img alt="../_images/options-cover-local.png" id="index-0" src="../_images/options-cover-local.png" style="width: 100%;" /></a>
-<p>In this section you can configure the file names to be used by the Local Files cover art provider. The file names are defined
-using a regular expression. The default is to load files with the name “cover”, “folder” or “albumart” and the file extension
-“jpg”, “png”, “gif” or “tiff” (e.g.: “folder.jpg” or “cover.png”).</p>
+<p>In this section you can configure the file names to be used by the Local Files cover art provider. If you are trying to collect
+more than one image, the naming is important.</p>
+<p>The file names are defined using a regular expression. The default is <code class="docutils literal notranslate"><span class="pre">^(?:cover|folder|albumart)(.*)\.(?:jpe?g|png|gif|tiff?)$</span></code>
+which will load files with the name “cover”, “folder” or “albumart” and the file extension “jpg”, “png”, “gif” or “tiff” (e.g.:
+“folder.jpg” or “cover.png”).</p>
+<p>The first part of the regular expression is a non-capture group: <code class="docutils literal notranslate"><span class="pre">(?:cover|folder|albumart)</span></code>.  Items listed in this group will
+not get captured and the default (Front) type will apply.</p>
+<p>The second part of the regular expression is a group: <code class="docutils literal notranslate"><span class="pre">(.*)</span></code>. This is the real capture, so if the file names match any of the
+cover art types, they will be tagged as such.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A common mistake is to add all the types into the first (non-capture) group. This means that all the regular file names would be
+thrown into the Front type and cause unexpected results.</p>
+</div>
 </div>
 
 
