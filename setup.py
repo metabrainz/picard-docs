@@ -18,7 +18,7 @@ import restructuredtext_lint
 import conf
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.04'
+SCRIPT_VERS = '0.05'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -64,7 +64,7 @@ SPHINX_GETTEXT_DIR = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
 SPHINX_BUILD_TIMEOUT = 300
 SPHINX_BUILD_TARGETS = {
     'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
-    'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
+    'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
     'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc="epub"'},
 }
 OUTPUT_DIR = 'docs'
@@ -510,11 +510,11 @@ def clean_directory(dir_path, dir_name):
                 if not os.listdir(dir_path):
                     return
                 shutil.rmtree(dir_path)
-                counter = 10
+                counter = 50
                 # Multiple checks for success to accommodate race condition in Windows
                 while counter and os.path.exists(dir_path):
                     counter -= 1
-                    time.sleep(1)
+                    time.sleep(.2)
                 if not counter:
                     raise Exception('Unable to clean directory.')
             except Exception as ex:
@@ -528,11 +528,11 @@ def clean_directory(dir_path, dir_name):
         try:
             print('Creating the {0} directory: {1}'.format(dir_name, dir_path))
             os.makedirs(dir_path)
-            counter = 10
+            counter = 50
             # Multiple checks for success to accommodate race condition in Windows
             while counter and not os.path.exists(dir_path):
                 counter -= 1
-                time.sleep(1)
+                time.sleep(.2)
             if not counter:
                 raise Exception('Unable to create directory.')
         except Exception as ex:
@@ -565,11 +565,11 @@ def remove_dir(dir_path):
         if os.path.isdir(dir_path):
             try:
                 os.rmdir(dir_path)
-                counter = 10
+                counter = 50
                 # Multiple checks for success to accommodate race condition in Windows
                 while counter and os.path.exists(dir_path):
                     counter -= 1
-                    time.sleep(1)
+                    time.sleep(.2)
                 if not counter:
                     raise Exception('Directory not removed.')
             except Exception as ex:
@@ -595,11 +595,11 @@ def remove_file(file_path):
         if os.path.isfile(file_path):
             try:
                 os.remove(file_path)
-                counter = 10
+                counter = 50
                 # Multiple checks for success to accommodate race condition in Windows
                 while counter and os.path.exists(file_path):
                     counter -= 1
-                    time.sleep(1)
+                    time.sleep(.2)
                 if not counter:
                     raise Exception('File not removed.')
             except Exception as ex:
@@ -666,17 +666,17 @@ def build_html(language=''):
         Exception: Files not copied
     """
     output_dir = os.path.join(OUTPUT_DIR, language)
-    html_dir = os.path.join(SPHINX_BUILD_DIR, 'html')
+    html_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['html']['dir'])
     clean_directory(output_dir, 'html')
     print('Copying HTML files to document directory: {0}'.format(output_dir))
     try:
         remove_dir(output_dir)
         shutil.copytree(html_dir, output_dir)
-        counter = 10
+        counter = 50
         # Multiple checks for success to accommodate race condition in Windows
         while counter and not os.path.exists(output_dir):
             counter -= 1
-            time.sleep(1)
+            time.sleep(.2)
         if not counter:
             raise Exception('Directory does not exist.')
     except Exception as ex:
@@ -709,8 +709,26 @@ def build_pdf(language=''):
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
     """
-    pdf_file = os.path.join(SPHINX_BUILD_DIR, 'latex', 'musicbrainzpicard.pdf')
-    target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_[{0}].pdf'.format(language))
+    pdf_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['pdf']['dir'])
+    current_dir = os.getcwd()
+    try:
+        os.chdir(pdf_dir)
+        exit_code = subprocess.call('make all-pdf', timeout=SPHINX_BUILD_TIMEOUT)
+        os.chdir(current_dir)
+        if exit_code:
+            exit_with_code(exit_code)
+        pdf_file = os.path.join(SPHINX_BUILD_DIR, 'latex', 'musicbrainzpicard.pdf')
+        target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_[{0}].pdf'.format(language))
+        # Multiple checks if file exists to accommodate race condition in Windows
+        counter = 50
+        while counter and not os.path.exists(pdf_file):
+            counter -= 1
+            time.sleep(.2)
+        if not counter:
+            raise Exception('PDF file not found.')
+    except Exception as ex:
+        print('Error building PDF file.  Error: {0}'.format(ex))
+        exit_with_code(1)
     print('Copying output to: {0}\n'.format(target_file))
     try:
         shutil.copyfile(pdf_file, target_file)
