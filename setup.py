@@ -713,7 +713,7 @@ def build_pdf(language=''):
     current_dir = os.getcwd()
     try:
         os.chdir(pdf_dir)
-        exit_code = subprocess.call('make all-pdf', timeout=SPHINX_BUILD_TIMEOUT)
+        exit_code = subprocess.call('make', timeout=SPHINX_BUILD_TIMEOUT)
         os.chdir(current_dir)
         if exit_code:
             exit_with_code(exit_code)
