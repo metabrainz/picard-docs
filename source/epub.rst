@@ -48,6 +48,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :hidden:
 
    General Usage <usage/using>
+   usage/other
    extending/extending
    faq/faq
 
