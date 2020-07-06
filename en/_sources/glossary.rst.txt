@@ -98,6 +98,25 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    MusicBrainz website for additional information.
 
 .. index::
+   single: disc id
+
+**disc id**
+
+   A Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.
+   It is a string of letters, like ``XzPS7vW.HPHsYemQh0HBUGr8vuU-``.  Disc IDs for a release can be
+   seen on the disc IDs tab for the release on MusicBrainz. Clicking on these will give a detailed
+   display of the disc ID, including the list of attached releases.
+
+   A release may have any number of disc IDs, and a disc ID may be linked to multiple releases. This
+   is because `disc ID calculation <https://musicbrainz.org/doc/Disc_ID_Calculation>`_ involves a
+   hash of the frame offsets of the CD tracks.  Different pressing of a CD often have slightly
+   different frame offsets, and hence different disc IDs.
+
+   Conversely, two different CDs may happen to have exactly the same set of frame offsets and hence
+   the same disc ID.  For example ``lwHl8fGzJyLXQR33ug60E8jhf4k-`` applies to a wide `variety of releases
+   <https://musicbrainz.org/cdtoc/lwHl8fGzJyLXQR33ug60E8jhf4k->`_ by a variety of artists.
+
+.. index::
    single: MusicBrainz Identifier
    see: mbid; MusicBrainz Identifier
 

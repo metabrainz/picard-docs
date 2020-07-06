@@ -108,6 +108,7 @@
 <p class="caption"><span class="caption-text">Using Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/other.html">Other Picard Tasks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq/faq.html">Frequently Asked Questions</a></li>
 </ul>
@@ -257,7 +258,20 @@ convenient way.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Cover_Art_Archive">Cover Art Archive page</a> on the
 MusicBrainz website for additional information.</p>
 </div></blockquote>
-<p id="index-7"><strong>mbid</strong></p>
+<p id="index-7"><strong>disc id</strong></p>
+<blockquote>
+<div><p>A Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.
+It is a string of letters, like <code class="docutils literal notranslate"><span class="pre">XzPS7vW.HPHsYemQh0HBUGr8vuU-</span></code>.  Disc IDs for a release can be
+seen on the disc IDs tab for the release on MusicBrainz. Clicking on these will give a detailed
+display of the disc ID, including the list of attached releases.</p>
+<p>A release may have any number of disc IDs, and a disc ID may be linked to multiple releases. This
+is because <a class="reference external" href="https://musicbrainz.org/doc/Disc_ID_Calculation">disc ID calculation</a> involves a
+hash of the frame offsets of the CD tracks.  Different pressing of a CD often have slightly
+different frame offsets, and hence different disc IDs.</p>
+<p>Conversely, two different CDs may happen to have exactly the same set of frame offsets and hence
+the same disc ID.  For example <code class="docutils literal notranslate"><span class="pre">lwHl8fGzJyLXQR33ug60E8jhf4k-</span></code> applies to a wide <a class="reference external" href="https://musicbrainz.org/cdtoc/lwHl8fGzJyLXQR33ug60E8jhf4k-">variety of releases</a> by a variety of artists.</p>
+</div></blockquote>
+<p id="index-8"><strong>mbid</strong></p>
 <blockquote>
 <div><p>The MusicBrainz Identifier, which is a unique code used to identify each element in the MusicBrainz
 database.  These are 128-bit Universally Unique Identifiers (UUID) represented as 32 hexadecimal digits,
@@ -265,11 +279,11 @@ displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a tota
 <p>Please see the <a class="reference external" href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID page on Wikipedia</a>
 for more information.</p>
 </div></blockquote>
-<p id="index-8"><strong>non-album track</strong></p>
+<p id="index-9"><strong>non-album track</strong></p>
 <blockquote>
 <div><p>This term is obsolete and has been replaced with ‘standalone recording’.</p>
 </div></blockquote>
-<p id="index-9"><strong>recording</strong></p>
+<p id="index-10"><strong>recording</strong></p>
 <blockquote>
 <div><p>An entity in MusicBrainz which can be linked to tracks on releases. For example “Be (One in a Million)”
 (recording id: fbd0e1a0-b6c5-4926-b89d-3922e4144da9) is the recording linked to track 14 on the album
@@ -278,7 +292,7 @@ to any number of tracks.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Recording">Recording</a> page on the MusicBrainz
 website for additional information.</p>
 </div></blockquote>
-<p id="index-10"><strong>release</strong></p>
+<p id="index-11"><strong>release</strong></p>
 <blockquote>
 <div><p>Represents the unique issuing of a product on a specific date with specific
 release information such as the country, label, barcode and packaging.  For example “<a class="reference external" href="https://musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483">Sea of No Cares</a>” (release id:
@@ -286,7 +300,7 @@ release information such as the country, label, barcode and packaging.  For exam
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Release">Release</a> page on the MusicBrainz
 website for additional information.</p>
 </div></blockquote>
-<p id="index-11"><strong>release group</strong></p>
+<p id="index-12"><strong>release group</strong></p>
 <blockquote>
 <div><p>Groups several different releases into a single logical entity. Every release
 belongs to one, and only one release group.  Both release groups and releases are “albums” in a
@@ -298,14 +312,14 @@ id: 4e4ba41e-24ae-3f57-87f6-3d8f19ae9483) is one version of the album in the <a 
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Release_Group">Release Group</a> page on the MusicBrainz
 website for additional information.</p>
 </div></blockquote>
-<p id="index-12"><strong>standalone recording</strong></p>
+<p id="index-13"><strong>standalone recording</strong></p>
 <blockquote>
 <div><p>A recording that is not linked to any release.  An example is “<a class="reference external" href="https://musicbrainz.org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8">Sea of No Cares (live)</a>” (recording id:
 0198c132-ed38-430c-92bd-d3c7e9ff25b8) by Great Big Sea.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Standalone_Recording">Standalone Recording</a> page on
 the MusicBrainz website for additional information.</p>
 </div></blockquote>
-<p id="index-13"><strong>track</strong></p>
+<p id="index-14"><strong>track</strong></p>
 <blockquote>
 <div><p>A track is the way a recording is represented on a particular release (or, more precisely, on a
 particular medium). Every track has a title and is credited to one or more artists.  For example,
@@ -315,7 +329,7 @@ bf8ecb3c-6fe6-41b7-a078-5748265a9f94).</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Track">Track</a> page on
 the MusicBrainz website for additional information.</p>
 </div></blockquote>
-<p id="index-14"><strong>work</strong></p>
+<p id="index-15"><strong>work</strong></p>
 <blockquote>
 <div><p>A distinct intellectual or artistic creation, which can be expressed in the form of
 one or more audio recordings. While a ‘Work’ in MusicBrainz is usually musical in nature, it is

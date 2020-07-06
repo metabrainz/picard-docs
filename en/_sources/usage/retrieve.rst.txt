@@ -72,7 +72,7 @@ will show up in the right-hand pane based on a "best match" using the Preferred 
 
 .. only:: latex
 
-   .. include:: retrieve_lookup_steps.txt
+   .. include:: retrieve_scan_steps.txt
 
 
 .. only:: latex
