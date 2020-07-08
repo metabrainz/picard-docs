@@ -11,3 +11,4 @@ Appendices
    :hidden:
 
    technical/plugins_api
+   technical/tag_mapping
