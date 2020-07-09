@@ -78,9 +78,13 @@ plugins and tutorials are provided when available rather than trying to reproduc
 .. toctree::
    :caption: Appendices
    :hidden:
+   :maxdepth: 0
+   :titlesonly:
 
    technical/plugins_api
-   examples/examples
+   technical/tag_mapping
+
+..   examples/examples
 
 
 .. Indices and tables

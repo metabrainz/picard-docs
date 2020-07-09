@@ -25,5 +25,5 @@ MusicBrainz Picard
    pdf_troubleshooting
    faq/faq
    examples/examples
-   pdf_appendices
-
+   technical/plugins_api_pdf
+   technical/tag_mapping_pdf
