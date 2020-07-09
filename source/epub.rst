@@ -78,6 +78,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 .. toctree::
    :caption: Appendices
    :hidden:
+   :maxdepth: 1
 
    technical/plugins_api
    technical/tag_mapping

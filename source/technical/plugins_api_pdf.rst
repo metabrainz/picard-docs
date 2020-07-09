@@ -3,12 +3,7 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
+Appendix 1: Plugins API
+=======================
 
-Appendices
-==========
-
-.. toctree::
-   :hidden:
-
-   technical/plugins_api
-   technical/tag_mapping
+.. include:: plugins_api_common.txt
