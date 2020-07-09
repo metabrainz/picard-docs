@@ -129,7 +129,7 @@
 <p class="caption"><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="technical/plugins_api.html">Plugins API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical/tag_mapping.html">Tag Mapping</a></li>
 </ul>
 
             
@@ -325,7 +325,119 @@
 <li class="toctree-l1"><a class="reference internal" href="pdf_troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq/faq.html">Frequently Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pdf_appendices.html">Appendices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical/plugins_api_pdf.html">Appendix 1: Plugins API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api_pdf.html#plugin-metadata">Plugin Metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api_pdf.html#metadata-processors">Metadata Processors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api_pdf.html#album-metadata-example">Album metadata example:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api_pdf.html#track-metadata-example">Track metadata example:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api_pdf.html#event-hooks">Event Hooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api_pdf.html#file-post-load-processor-file">file_post_load_processor(file)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api_pdf.html#file-post-save-processor-file">file_post_save_processor(file)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api_pdf.html#file-post-addition-to-track-processor-track-file">file_post_addition_to_track_processor(track, file)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api_pdf.html#file-post-removal-from-track-processor-track-file">file_post_removal_from_track_processor(track, file)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="technical/plugins_api_pdf.html#album-post-removal-processor-album">album_post_removal_processor(album)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api_pdf.html#file-formats">File Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api_pdf.html#tagger-script-functions">Tagger Script Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/plugins_api_pdf.html#context-menu-actions">Context Menu Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="technical/tag_mapping_pdf.html">Appendix 2: Tag Mapping</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#acoustid">AcoustID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#acoustid-fingerprint">AcoustID Fingerprint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id1">Album</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id2">Album Artist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#album-artist-sort-order">Album Artist Sort Order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#album-sort-order">Album Sort Order </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id4">Arranger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id5">Artist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#artist-sort-order">Artist Sort Order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#artists">Artists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id6">ASIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id7">Barcode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#bpm">BPM </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id9">Catalog Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#comment">Comment </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#compilation-itunes">Compilation (iTunes) </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id12">Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#composer-sort-order">Composer Sort Order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id13">Conductor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#copyright">Copyright </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#disc-number">Disc Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#disc-subtitle">Disc Subtitle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#encoded-by">Encoded By </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#encoder-settings">Encoder Settings </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id17">Engineer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#gapless-playback">Gapless Playback </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id19">Genre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#grouping">Grouping </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#initial-key">Initial Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id22">ISRC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#language">Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#license">License  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id25">Lyricist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#lyrics">Lyrics </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id27">Media</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id28">Mix-DJ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id29">Mixer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#mood">Mood </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#movement">Movement </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#movement-count">Movement Count </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#movement-number">Movement Number </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id34">MusicBrainz Artist ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id35">MusicBrainz Disc ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id36">MusicBrainz Original Artist ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id37">MusicBrainz Original Release ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id38">MusicBrainz Recording ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id39">MusicBrainz Release Artist ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#musicbrainz-release-group-id">MusicBrainz Release Group ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id40">MusicBrainz Release ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id41">MusicBrainz Track ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id42">MusicBrainz TRM ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#musicbrainz-work-id">MusicBrainz Work ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#musicip-fingerprint">MusicIP Fingerprint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id43">MusicIP PUID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#original-album">Original Album</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#original-artist">Original Artist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#original-filename">Original Filename</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#original-release-date">Original Release Date </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#original-release-year">Original Release Year </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#performer">Performer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#podcast">Podcast </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#podcast-url">Podcast URL </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id48">Producer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id49">Rating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id50">Record Label</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id51">Release Country</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id52">Release Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id53">Release Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id54">Release Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id55">Remixer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#replaygain-album-gain">ReplayGain Album Gain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#replaygain-album-peak">ReplayGain Album Peak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#replaygain-album-range">ReplayGain Album Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#replaygain-reference-loudness">ReplayGain Reference Loudness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#replaygain-track-gain">ReplayGain Track Gain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#replaygain-track-peak">ReplayGain Track Peak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#replaygain-track-range">ReplayGain Track Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#script">Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#show-name">Show Name </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#show-name-sort-order">Show Name Sort Order </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#show-work-movement">Show Work &amp; Movement </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#subtitle">Subtitle </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#total-discs">Total Discs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#total-tracks">Total Tracks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#track-number">Track Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id60">Track Title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#track-title-sort-order">Track Title Sort Order </a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#website-official-artist-website">Website (official artist website)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#work-title">Work Title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="technical/tag_mapping_pdf.html#id64">Writer </a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
