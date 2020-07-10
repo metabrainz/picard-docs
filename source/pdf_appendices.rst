@@ -3,15 +3,13 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Appendix 1: Plugins API
-=======================
 
-.. include:: plugins_api_common.txt
+.. Master File for Building PDF Documents
 
-.. raw:: latex
+Appendices
+==========
 
-   \clearpage
+.. toctree::
 
-..   \pagebreak
-..   \newpage
-..   \clearpage
+   technical/plugins_api_pdf
+   technical/tag_mapping_pdf
