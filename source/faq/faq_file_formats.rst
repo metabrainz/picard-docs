@@ -35,15 +35,11 @@ File Formats
    * Ogg Video (.ogv)
    * ADTS stream / AAC (.aac)
    * AC-3 (.ac3, .eac3)
-   * Direct Stream Digital (.dsf)
+   * Direct Stream Digital (.dff, .dsf)
 
    .. note::
 
       WAV files cannot be tagged due to the lack of a standard for doing so, however, they can be fingerprinted and renamed.
-
-   .. note::
-
-      The DFF type of Direct Stream Digital files cannot be tagged because they do not have the ability to hold metadata.
 
 **What formats will Picard support?**
 
