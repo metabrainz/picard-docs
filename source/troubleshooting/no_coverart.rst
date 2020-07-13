@@ -58,6 +58,14 @@ Coverart that is saved with the files isn't displayed
 
    You should also confirm that your player supports the version of the tags being written.
 
+   .. seealso::
+
+      For more information please see:
+      :doc:`../config/options_tags_compatibility_aac` /
+      :doc:`../config/options_tags_compatibility_ac3` /
+      :doc:`../config/options_tags_compatibility_id3` /
+      :doc:`../config/options_tags_compatibility_wave`
+
 **Embedded cover image too large**
 
    Even if your cover art image has been properly embedded in the file, it's possible that your player has trouble
