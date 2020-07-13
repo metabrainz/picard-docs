@@ -24,7 +24,7 @@ been submitted to the project.  A list of the standard plugins is available on t
 There are also a number of plugins available by third-party developers.  Often these are discussed on
 the `Community Discussion Forum <https://community.metabrainz.org/>`_ so if you're looking for a particular
 enhancement or functionality, a search there might be useful.  In addition, one of the MusicBrainz editors,
-`Colby Dray <https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list of available
+`Colby Ray <https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list of available
 plugins on a `wiki page <https://wiki.musicbrainz.org/User:Colbydray/PicardPlugins>`_.  Instructions regarding
 installation of third-party plugins are included in the :ref:`"Installing Third-Party Plugins" <ref_installingplugins>`
 section below.
