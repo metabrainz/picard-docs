@@ -24,6 +24,8 @@ MusicBrainz Picard
    extending/extending
    pdf_troubleshooting
    faq/faq
-   examples/examples
-   technical/plugins_api_pdf
-   technical/tag_mapping_pdf
+   pdf_appendices
+
+..   examples/examples
+..   technical/plugins_api_pdf
+..   technical/tag_mapping_pdf
