@@ -3,14 +3,7 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
+Command Line Options
+====================
 
-.. Master File for Building PDF Documents
-
-Appendices
-==========
-
-.. toctree::
-
-   technical/plugins_api_pdf
-   technical/tag_mapping_pdf
-   technical/command_line_pdf
+.. include:: command_line_common.txt
