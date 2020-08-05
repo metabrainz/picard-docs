@@ -44,6 +44,10 @@ several other more minor settings) by wrapping them between percent '%' symbols 
    Some of these tags are only supported for certain file types or tag formats.  Please see the `Picard Tag Mapping
    <https://picard.musicbrainz.org/docs/mappings/>`_ webpage for details.
 
+.. note::
+
+   Tags that rely on information from the files (e.g.: bpm) are only available for use in the file naming script.
+
 **acoustid_fingerprint**
 
     AcoustID Fingerprint for the track.
@@ -90,7 +94,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **bpm**
 
-    Beats per minute of the track.
+    Beats per minute of the track.  Only available to the file naming script.
 
 **catalognumber**
 
@@ -129,11 +133,11 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **encodedby**
 
-    Encoded by (person or organization).
+    Encoded by (person or organization).  Only available to the file naming script.
 
 **encodersettings**
 
-    Encoder Settings used.
+    Encoder Settings used.  Only available to the file naming script.
 
 **isrc**
 
