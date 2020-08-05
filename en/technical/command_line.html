@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Scan Files &mdash; MusicBrainz Picard v2.3.2 documentation</title>
+  <title>Command Line Options &mdash; MusicBrainz Picard v2.3.2 documentation</title>
   
 
   
@@ -39,8 +39,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lookup in Browser" href="retrieve_browser.html" />
-    <link rel="prev" title="Lookup Files" href="retrieve_lookup.html" /> 
+    <link rel="prev" title="Tag Mapping" href="tag_mapping.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -106,22 +105,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Using Picard</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="using.html">General Usage</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="retrieve.html">Retrieving Album information</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="retrieve_lookup_cd.html">Lookup CD</a></li>
-<li class="toctree-l3"><a class="reference internal" href="retrieve_lookup.html">Lookup Files</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Scan Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="retrieve_browser.html">Lookup in Browser</a></li>
-<li class="toctree-l3"><a class="reference internal" href="retrieve_manual.html">Manual Lookup</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="match.html">Matching Files to Tracks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="coverart.html">Setting the Cover Art</a></li>
-<li class="toctree-l2"><a class="reference internal" href="save.html">Saving Updated Files</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="other.html">Other Picard Tasks</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
 </ul>
@@ -142,10 +128,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Appendices</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../technical/tag_mapping.html">Tag Mapping</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../technical/command_line.html">Command Line Options</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tag_mapping.html">Tag Mapping</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line Options</a></li>
 </ul>
 
             
@@ -192,17 +178,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="using.html">Using Picard</a> &raquo;</li>
-        
-          <li><a href="retrieve.html">Retrieving Album information</a> &raquo;</li>
-        
-      <li>Scan Files</li>
+      <li>Command Line Options</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/usage/retrieve_scan.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/technical/command_line.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -215,37 +197,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="scan-files">
-<h1>Scan Files<a class="headerlink" href="#scan-files" title="Permalink to this headline">¶</a></h1>
-<p id="index-0">The steps to follow to scan and lookup files are:</p>
-<ol class="arabic">
-<li><p>Add your files using <span class="menuselection">“Files ‣ Add Files…”</span> or <span class="menuselection">“Files ‣ Add Folder…”</span>.
-For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is
-enabled from <span class="menuselection">“View ‣ File Browser”</span>.</p>
-<a class="reference internal image-reference" href="../_images/lookup_1.png"><img alt="../_images/lookup_1.png" src="../_images/lookup_1.png" style="width: 100%;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
+  <div class="section" id="command-line-options">
+<h1>Command Line Options<a class="headerlink" href="#command-line-options" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">Picard can be started from the command line with the following arguments:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">picard</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">c</span> <span class="n">CONFIG_FILE</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">d</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">N</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">P</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">v</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">V</span><span class="p">]</span> <span class="p">[</span><span class="n">FILE</span> <span class="p">[</span><span class="n">FILE</span> <span class="o">...</span><span class="p">]]</span>
+</pre></div>
 </div>
-</li>
-<li><p>Drag the selected directory or files to the “Unclustered Files” folder, and wait for Picard to process the files -
-the names will turn from grey to black.</p>
-<a class="reference internal image-reference" href="../_images/lookup_2.png"><img alt="../_images/lookup_2.png" src="../_images/lookup_2.png" style="width: 100%;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-</li>
-<li><p>Select the desired files and use <span class="menuselection">“Tools ‣ Scan”</span> to scan the files to determine their AcoustID fingerprints
-and lookup using this information. The album(s) matching the files will show up in the right-hand pane based on a “best match”
-using the Preferred Releases settings in the Metadata options.</p>
-<p>A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.</p>
-<a class="reference internal image-reference" href="../_images/lookup_5.png"><img alt="../_images/lookup_5.png" src="../_images/lookup_5.png" style="width: 100%;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as clustering
-the files or a browser lookup.</p>
-</li>
-</ol>
+<p>where the options are:</p>
+<p><code class="docutils literal notranslate"><span class="pre">-h</span></code>, <code class="docutils literal notranslate"><span class="pre">--help</span></code> show a help message and exit</p>
+<p><code class="docutils literal notranslate"><span class="pre">-c</span> <span class="pre">CONFIG_FILE</span></code>, <code class="docutils literal notranslate"><span class="pre">--config-file</span> <span class="pre">CONFIG_FILE</span></code> location of the configuration file to use</p>
+<p><code class="docutils literal notranslate"><span class="pre">-d</span></code>, <code class="docutils literal notranslate"><span class="pre">--debug</span></code> enable debug-level logging</p>
+<p><code class="docutils literal notranslate"><span class="pre">-N</span></code>, <code class="docutils literal notranslate"><span class="pre">--no-restore</span></code> do not restore window positions or sizes</p>
+<p><code class="docutils literal notranslate"><span class="pre">-P</span></code>, <code class="docutils literal notranslate"><span class="pre">--no-plugins</span></code> do not load any plugins</p>
+<p><code class="docutils literal notranslate"><span class="pre">-v</span></code>, <code class="docutils literal notranslate"><span class="pre">--version</span></code> display the version information and exit</p>
+<p><code class="docutils literal notranslate"><span class="pre">-V</span></code>, <code class="docutils literal notranslate"><span class="pre">--long-version</span></code> display the long version information and exit</p>
+<p><code class="docutils literal notranslate"><span class="pre">FILE</span></code> is the file or files to load</p>
 </div>
 
 
@@ -256,10 +222,8 @@ the files or a browser lookup.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="retrieve_browser.html" class="btn btn-neutral float-right" title="Lookup in Browser" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="retrieve_lookup.html" class="btn btn-neutral float-left" title="Lookup Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="tag_mapping.html" class="btn btn-neutral float-left" title="Tag Mapping" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -300,7 +264,7 @@ the files or a browser lookup.</p>
         <dt>Select Language</dt>
         
         
-        <dd><a href="../../en/usage/retrieve_scan.html" class="__ptNoRemap">English</a></dd>
+        <dd><a href="../../en/technical/command_line.html" class="__ptNoRemap">English</a></dd>
         
         
       </dl>

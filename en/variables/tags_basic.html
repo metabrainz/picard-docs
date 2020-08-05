@@ -141,6 +141,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/tag_mapping.html">Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/command_line.html">Command Line Options</a></li>
 </ul>
 
             
@@ -222,6 +223,10 @@ from the MusicBrainz database.</p>
 <p class="admonition-title">Note</p>
 <p>Some of these tags are only supported for certain file types or tag formats.  Please see the <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mapping</a> webpage for details.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tags that rely on information from the files (e.g.: bpm) are only available for use in the file naming script.</p>
+</div>
 <p><strong>acoustid_fingerprint</strong></p>
 <blockquote>
 <div><p>AcoustID Fingerprint for the track.</p>
@@ -268,7 +273,7 @@ from the MusicBrainz database.</p>
 </div></blockquote>
 <p><strong>bpm</strong></p>
 <blockquote>
-<div><p>Beats per minute of the track.</p>
+<div><p>Beats per minute of the track.  Only available to the file naming script.</p>
 </div></blockquote>
 <p><strong>catalognumber</strong></p>
 <blockquote>
@@ -309,11 +314,11 @@ contents (TOC) information read from the disc.</p>
 </div></blockquote>
 <p><strong>encodedby</strong></p>
 <blockquote>
-<div><p>Encoded by (person or organization).</p>
+<div><p>Encoded by (person or organization).  Only available to the file naming script.</p>
 </div></blockquote>
 <p><strong>encodersettings</strong></p>
 <blockquote>
-<div><p>Encoder Settings used.</p>
+<div><p>Encoder Settings used.  Only available to the file naming script.</p>
 </div></blockquote>
 <p><strong>isrc</strong></p>
 <blockquote>

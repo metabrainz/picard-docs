@@ -82,6 +82,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
    technical/plugins_api
    technical/tag_mapping
+   technical/command_line
 
 ..   examples/examples
 

@@ -141,6 +141,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technical/tag_mapping.html">Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/command_line.html">Command Line Options</a></li>
 </ul>
 
             
@@ -215,6 +216,10 @@
 <p class="admonition-title">Note</p>
 <p>Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Variables that rely on information from the files (e.g.: _bitrate) are only available for use in the file naming script.</p>
+</div>
 <p><strong>_absolutetracknumber</strong></p>
 <blockquote>
 <div><p>The absolute number of this track disregarding the disc number (i.e.: <code class="docutils literal notranslate"><span class="pre">%_absolutetracknumber%</span></code> of <code class="docutils literal notranslate"><span class="pre">%_totalalbumtracks%</span></code>).
@@ -234,31 +239,31 @@ For example, this value would be 11 for the second track on disc 2 where disc 1 
 </div></blockquote>
 <p><strong>_bitrate</strong></p>
 <blockquote>
-<div><p>Approximate bitrate in kbps.</p>
+<div><p>Approximate bitrate in kbps.  Only available to the file naming script.</p>
 </div></blockquote>
 <p><strong>_bits_per_sample</strong></p>
 <blockquote>
-<div><p>Bits of data per sample.</p>
+<div><p>Bits of data per sample.  Only available to the file naming script.</p>
 </div></blockquote>
 <p><strong>_channels</strong></p>
 <blockquote>
-<div><p>Number of audio channels in the file.</p>
+<div><p>Number of audio channels in the file.  Only available to the file naming script.</p>
 </div></blockquote>
 <p><strong>_dirname</strong></p>
 <blockquote>
-<div><p>The name of the directory containing the file at the point of being loaded into Picard. (<em>since Picard 1.1</em>)</p>
+<div><p>The name of the directory containing the file at the point of being loaded into Picard.  Only available to the file naming script. (<em>since Picard 1.1</em>)</p>
 </div></blockquote>
 <p><strong>_extension</strong></p>
 <blockquote>
-<div><p>The file’s extension. (<em>since Picard 0.9</em>)</p>
+<div><p>The file’s extension.  Only available to the file naming script. (<em>since Picard 0.9</em>)</p>
 </div></blockquote>
 <p><strong>_filename</strong></p>
 <blockquote>
-<div><p>The name of the file without extension (<em>since Picard 1.1</em>)</p>
+<div><p>The name of the file without extension.  Only available to the file naming script. (<em>since Picard 1.1</em>)</p>
 </div></blockquote>
 <p><strong>_format</strong></p>
 <blockquote>
-<div><p>Media format of the file (e.g.: MPEG-1 Audio).</p>
+<div><p>Media format of the file (e.g.: MPEG-1 Audio).  Only available to the file naming script.</p>
 </div></blockquote>
 <p><strong>_length</strong></p>
 <blockquote>
@@ -294,7 +299,7 @@ For example, this value would be 11 for the second track on disc 2 where disc 1 
 </div></blockquote>
 <p><strong>_sample_rate</strong></p>
 <blockquote>
-<div><p>Number of digitizing samples per second (Hz).</p>
+<div><p>Number of digitizing samples per second (Hz).  Only available to the file naming script.</p>
 </div></blockquote>
 <p id="ref-secondaryreleasetype"><strong>_secondaryreleasetype</strong></p>
 <blockquote>
