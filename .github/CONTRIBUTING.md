@@ -15,7 +15,7 @@ Individual contributors are not being listed here for fear of missing someone; h
 that your contributions are greatly appreciated.
 
 If you want to contribute corrections or new material to this documentation project, please initiate
-a [Pull Request](https://github.com/rdswift/picard-docs/pulls) against the **development** branch to
+a [Pull Request](https://github.com/rdswift/picard-docs/pulls) against the `master` branch to
 submit the changes for review and implementation.  All documentation is included in the form of
 restructured text files (\*.rst) found in the *"source"* directory.  This directory also contains some
 subdirectories to help organize the information into logical groups.  The *"index.rst"* file contains
