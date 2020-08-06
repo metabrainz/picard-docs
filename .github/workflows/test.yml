@@ -16,18 +16,18 @@ on:
       - '.github/workflows/test.yml'
       - 'setup.py'
       - 'conf.py'
-  pull_request:
-    branches-ignore:
-      - 'gh-pages'
-    paths:
-      - 'source/**.rst'
-      - 'source/**.txt'
-      - 'source/images/*'
-      - '_static/**'
-      - '_templates/**'
-      - '.github/workflows/test.yml'
-      - 'setup.py'
-      - 'conf.py'
+  # pull_request:
+  #   branches-ignore:
+  #     - 'gh-pages'
+  #   paths:
+  #     - 'source/**.rst'
+  #     - 'source/**.txt'
+  #     - 'source/images/*'
+  #     - '_static/**'
+  #     - '_templates/**'
+  #     - '.github/workflows/test.yml'
+  #     - 'setup.py'
+  #     - 'conf.py'
 
 jobs:
   lint_rst:
