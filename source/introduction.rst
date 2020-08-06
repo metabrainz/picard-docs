@@ -27,7 +27,7 @@ tweak music collections to your needs."*
       acknowledgements
 
 
-Picard Can...
+Picard can...
 -------------
 
 ...add metadata tags to your music files, based on information available from the `MusicBrainz
@@ -46,8 +46,10 @@ in a naming script.
 ...calculate and submit a music file's AcoustID fingerprint to the `AcoustID database <https://acoustid.org/>`_.
 
 
-Picard Cannot...
+Picard cannot...
 ----------------
+
+...play music files or videos.
 
 ...automatically identify and remove all duplicate music files in your collection.
 
