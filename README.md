@@ -11,13 +11,19 @@ This documentation project is open source and provided under CC0 1.0. To view a 
 visit [https://creativecommons.org/publicdomain/zero/1.0](https://creativecommons.org/publicdomain/zero/1.0).
 
 The project currently produces the on-line documentation in [ReadTheDocs](https://readthedocs.org)
-format theme using [Sphinx](https://www.sphinx-doc.org/). A stand-alone PDF document is also being
+format theme using [Sphinx](https://www.sphinx-doc.org/). Stand-alone PDF and ePub documents are also being
 produced.  The latest build of the documentation produced by this initiative can be viewed on the
 [web page](https://picard-docs.musicbrainz.org/index.html).
 
 ## Contributing to the Documentation
 
 This documentation project only exists because of the volunteer effort that goes into its development.
+
+Further high quality contributions are welcomed from all Picard users wanting to be part of the
+open source community that creates and maintains this valuable music tool. Even if you cannot
+write code, based on your experience of using Picard any help you can give to improve this
+documentation further will be most appreciated - and even if you cannot improve the existing help,
+if you can create or maintain translations into other languages, that would be of great benefit.
 
 If you notice an error in the documentation or have additional or updated material to contribute,
 please raise an issue in the [issue tracker](https://github.com/rdswift/picard-docs/issues).
