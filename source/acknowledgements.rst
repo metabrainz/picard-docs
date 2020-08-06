@@ -17,6 +17,12 @@ editors, translators, and feedback from the user community.  Individual contribu
 being listed here for fear of missing someone; however, please know that your contributions
 are greatly appreciated.
 
+Further high quality contributions are welcomed from all Picard users wanting to be part of the 
+open source community that creates and maintains this valuable music tool. Even if you cannot
+write code, based on your experience of using Picard any help you can give to improve this 
+documentation further will be most appreciated - and even if you cannot improve the existing help, 
+if you can create or maintain translations into other languages, that would be of great benefit.
+
 If you notice an error in the documentation or have additional material to contribute, please
 `raise an issue <https://github.com/rdswift/picard-docs/issues>`_ on the `documentation project
 on GitHub <https://github.com/rdswift/picard-docs/>`_.  `Pull Requests
