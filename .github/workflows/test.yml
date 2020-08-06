@@ -16,18 +16,18 @@ on:
       - '.github/workflows/test.yml'
       - 'setup.py'
       - 'conf.py'
-  pull_request:
-    branches-ignore:
-      - 'gh-pages'
-    paths:
-      - 'source/**.rst'
-      - 'source/**.txt'
-      - 'source/images/*'
-      - '_static/**'
-      - '_templates/**'
-      - '.github/workflows/test.yml'
-      - 'setup.py'
-      - 'conf.py'
+  # pull_request:
+  #   branches-ignore:
+  #     - 'gh-pages'
+  #   paths:
+  #     - 'source/**.rst'
+  #     - 'source/**.txt'
+  #     - 'source/images/*'
+  #     - '_static/**'
+  #     - '_templates/**'
+  #     - '.github/workflows/test.yml'
+  #     - 'setup.py'
+  #     - 'conf.py'
 
 jobs:
   lint_rst:
@@ -84,14 +84,3 @@ jobs:
     - name: Build EPUB Files
       run: |
         python ./setup.py build epub
-
-  #   - name: Update gh-pages branch
-  #     run: |
-  #       git checkout gh-pages
-  #       cd docs
-  #       cp -v -f -r * ..
-  #       cd ..
-  #       git add -A
-  #       if grep -q "Changes to be committed:" <<< `git status`; then
-  #         git status && git commit -m "Based on '$GITHUB_EVENT_NAME' to '$GITHUB_REF' by '$GITHUB_ACTOR'" && git push origin gh-pages
-  #       fi
