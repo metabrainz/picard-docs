@@ -4,21 +4,31 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Download & Install
-==================
+Download & Install Picard
+=========================
 
 .. index::
    single: install; download
 
-The latest version of MusicBraiz Picard is always available for download from the `Picard
-Website <https://picard.musicbrainz.org/downloads/>`_.  This includes installers for all
-major operating systems (e.g.: Linux, macOS and Windows) as well as the `source code
-<https://picard.musicbrainz.org/downloads/#source>`_. The latest source code is also
-available at the `project repository <https://github.com/musicbrainz/picard>`_ on GitHub.
+MusicBrainz Picard is available for all major desktop operating systems (e.g. Windows, Linux and macOS), 
+and in multiple forms (directly downloadable formal release executables, package manager versions of these, 
+daily build executables, Python source code that you can execute with your own Python environment etc.)
+
+It is expected that most users will run formal release executables or package manager equivalents as these are
+easy to install, and are stable versions which are less likely to have bugs in experimental or new functionality.
+
+However, any users wishing to contribute to the development of Picard or its Plugins may want to run from source code,
+downloading it from Github using a version of Git on their own computer. If you want to contribute to the Picard code
+but you don't understand what the previous sentance said, then you have a bit of a learning curve. :-)
+
+The latest version of MusicBrainz Picard is always available for download from the `Picard
+Website <https://picard.musicbrainz.org/downloads/>`_.  This includes installers for all supported platforms as well as
+`release source code <https://picard.musicbrainz.org/downloads/#source>`_. The very latest source code is also
+available at the `GitHub repository <https://github.com/musicbrainz/picard>`_.
 
 
-Installing Using Flatpak
-------------------------
+Linux: Installing with Flatpak
+------------------------------
 
 .. index::
    pair: install; flatpak
