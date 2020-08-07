@@ -33,9 +33,9 @@ to reproduce the information in this document.
 
 In order to effectively use Picard, it is important to understand what the program can do and,
 equally important, what it cannot do.  Picard is primarily intended to tag and organise albums containing tracks, 
-guided by the user to the specific release of the album that you have, and then to keep the metadata for these
+guided by the user to the specific release of the album that they have, and then to keep the metadata for these
 tracks up to date as users around the world enhance the quality of the Musicbrainz data associated with that 
-particular release and track, and Picard does this very well indeed. However, it is not intended to automatically
+particular release and track; Picard does this very well indeed. However, it is not intended to automatically
 organize your collection of thousands of random music files, and if this is what you are hoping for then you will likely
 be disappointed.  To quote from the Picard website, *"Picard is not built to be a mass single-track
 tag fixer. Picard believes in quality over quantity and provides a plethora of customizations to
