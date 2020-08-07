@@ -25,9 +25,8 @@ copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this
 # -- Project information -----------------------------------------------------
 
 project = 'MusicBrainz Picard'
-# copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
 copyright = 'This documentation is licensed under CC0 1.0.'
-author = 'Bob Swift'
+author = 'MusicBrainz Community'
 
 # The full version, including alpha/beta/rc tags
 release = 'v2.3.2'
@@ -36,7 +35,7 @@ version = release
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
 my_notice = r'''\vspace*{\fill}
-MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a
+MusicBrainz Picard User Guide is licensed under CC0 1.0. To view a
 copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0
 \vspace{0.1\textheight}'''
 
@@ -65,7 +64,6 @@ exclude_patterns = [
     '_build',
     'Thumbs.db',
     '.DS_Store',
-    'README.md',
     'html',
     'docs',
     'locale',
@@ -155,7 +153,7 @@ epub_theme = 'epub'
 
 epub_description = 'A User Guide for MusicBrainz Picard.'
 
-epub_author = 'Bob Swift'
+epub_author = 'MusicBrainz Community'
 
 epub_contributor = 'Members of the MusicBrainz Community'
 
