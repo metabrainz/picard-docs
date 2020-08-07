@@ -7,15 +7,36 @@
 Introduction
 ============
 
-MusicBrainz Picard is a cross-platform music file tagger.  This User Guide is intended to
-augment the information provided on the `Picard website <https://picard.musicbrainz.org/>`_
-and to provide an alternate format for the documentation, including a PDF document suitable
-for printing.  Links to additional information such as scripts, plugins and tutorials are
-provided when available rather than trying to reproduce the information in this document.
+MusicBrainz Picard is a cross-platform music file tagger.  
+For any people who don't know what this means, here is a quick explanation which can be
+skipped by those people who already know.
+
+Your music files don't just contain music. They also contain "metadata", consisting of "tags" 
+which consist of a tag name or type and associated data, for example the album or track name,
+the name of the artist, the record label, the year of issue etc. 
+Unless you rip the music files yourself with a very basic tool, your music files probably already contain some basic metadata,
+however there are literally hundreds of tags that can be applied to your music if you are interested.
+
+Obviously, if you wanted to you could painstakingly research all this information for each 
+album and track individually, and type the data into a tagging tool, but clearly it makes more
+sense in this internet connected age for one person to do this for each album and track, 
+to upload that data to a shared database and then for the tagging tool to access that database
+and use the data to tag the music files. And **that** is what MusicBrainz Picard does.
+
+**MusicBrainz** is the database, and **Picard** is the tool that tags the music files.
+
+This User Guide is intended to augment and eventually replace the information provided on the 
+`Picard website <https://picard.musicbrainz.org/>`_ and additionally to make this available in
+alternate ebook formats, including a PDF version suitable for printing. Links to additional 
+information such as scripts, plugins and tutorials are provided when available rather than trying
+to reproduce the information in this document.
 
 In order to effectively use Picard, it is important to understand what the program can do and,
-equally important, what it cannot do.  What Picard does, it does very well, but if you're expecting
-it to automatically organize your collection of thousands of random music files you will likely
+equally important, what it cannot do.  Picard is primarily intended to tag and organise albums containing tracks, 
+guided by the user to the specific release of the album that you have, and then to keep the metadata for these
+tracks up to date as users around the world enhance the quality of the Musicbrainz data associated with that 
+particular release and track, and Picard does this very well indeed. However, it is not intended to automatically
+organize your collection of thousands of random music files, and if this is what you are hoping for then you will likely
 be disappointed.  To quote from the Picard website, *"Picard is not built to be a mass single-track
 tag fixer. Picard believes in quality over quantity and provides a plethora of customizations to
 tweak music collections to your needs."*
