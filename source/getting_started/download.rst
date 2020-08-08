@@ -18,7 +18,7 @@ It is expected that most users will run formal release executables or package ma
 easy to install, and are stable versions which are less likely to have bugs in experimental or new functionality.
 
 However, any users wishing to contribute to the development of Picard or its Plugins may want to run from source code,
-downloading it from Github using a version of Git on their own computer. If you want to contribute to the Picard code
+downloading it from GitHub using a version of Git on their own computer. If you want to contribute to the Picard code
 but you don't understand what the previous sentance said, then you have a bit of a learning curve. :-)
 
 The latest version of MusicBrainz Picard is always available for download from the `Picard
