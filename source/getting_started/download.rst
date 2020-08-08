@@ -12,7 +12,7 @@ Download & Install Picard
 
 MusicBrainz Picard is available for all major desktop operating systems (e.g. Windows, Linux and macOS), 
 and in multiple forms (directly downloadable formal release executables, package manager versions of these, 
-daily build executables, Python source code that you can execute with your own Python environment etc.)
+daily build executables, Python source code that you can execute with your own Python environment, etc.)
 
 It is expected that most users will run formal release executables or package manager equivalents as these are
 easy to install, and are stable versions which are less likely to have bugs in experimental or new functionality.
