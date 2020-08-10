@@ -39,7 +39,10 @@ File Formats
 
    .. note::
 
-      WAV files cannot be tagged due to the lack of a standard for doing so, however, they can be fingerprinted and renamed.
+      WAVE files lack a standard for proper tagging. Picard uses ID3v2 tags to tag WAVE files, but this is
+      not supported by all software. For compatibility with software which does not support ID3v2 tags in
+      WAVE files additional RIFF INFO tags can be written to the files. RIFF INFO has only limited support
+      for tags and character encodings.
 
 **What formats will Picard support?**
 

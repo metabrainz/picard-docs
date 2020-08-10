@@ -19,5 +19,3 @@
   - left-pane
   - right-pane
   - tags pane
-
-- Update Tags Configuration section to include WAVE files once new mutagen module is available to support this tagging.
