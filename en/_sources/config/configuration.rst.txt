@@ -92,8 +92,7 @@ settings on the right hand side.  This is where the majority of Picard's customi
       :doc:`options_plugins` /
       :doc:`options_interface` /
       :doc:`options_scripting` /
-      :doc:`options_advanced` /
-      :doc:`options_about`
+      :doc:`options_advanced`
 
 .. toctree::
    :hidden:
@@ -109,4 +108,3 @@ settings on the right hand side.  This is where the majority of Picard's customi
    options_interface.rst
    options_scripting.rst
    options_advanced.rst
-   options_about.rst

@@ -35,6 +35,6 @@ There are typically four reasons that tags may not be written or updated when fi
 
 **The file type does not support writing tags**
 
-   Confirm that the file type that you are writing actually supports the tags that are to be written.  For example,
-   WAV files cannot be tagged due to the lack of a standard for doing so.  Please see the
-   :doc:`../config/options_tag_compatibility` section for additional information.
+   Confirm that the file type that you are writing actually supports the tags that are to be written.  Not all
+   file types support all the tags Picard supports.  Please see the
+   :doc:`../technical/tag_mapping.html` section for details about the tags supported by various file formats.

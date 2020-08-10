@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; MusicBrainz Picard v2.3.2 documentation</title>
+  <title>Introduction &mdash; MusicBrainz Picard v2.4 documentation</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                v2.3.2
+                v2.4
               </div>
             
           
@@ -253,10 +253,10 @@ in a naming script.</p>
 <div class="section" id="limitations">
 <span id="index-0"></span><h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
 <p><strong>File Formats</strong></p>
-<p>Picard currently supports most music file formats, with two notable exceptions: Matroska (.mka) and Windows
-WAVE (.wav).  WAV files cannot be tagged due to the lack of a standard for doing so, however, they can be
-fingerprinted and renamed.  In addition, Picard does not support writing custom tags for all formats.  The
-<a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mappings</a> webpage provides more information
+<p>Picard currently supports most music file formats, with Matroska (.mka) being one notable exception.
+Microsoft WAVE (.wav) files can be fingerprinted and renamed and can be tagged using ID3v2 tags, but this is
+not supported by all playback software.  In addition, Picard does not support writing custom tags for all formats.
+The <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mappings</a> webpage provides more information
 regarding the mapping between Picard internal tag names and various tagging formats.</p>
 <p><strong>Request Rate Limiting</strong></p>
 <p>Picard’s metadata retrieval is limited to the standard <strong>one request per second</strong> rate limiting for the MusicBrainz

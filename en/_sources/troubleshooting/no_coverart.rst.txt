@@ -56,8 +56,15 @@ Coverart that is saved with the files isn't displayed
    "cover.jpg" or "folder.jpg"), and some support both. Picard allows you to specify how the cover art images should
    be saved.  Please see the :doc:`../config/options_location` section of the Coverart options for details.
 
-   You should also confirm that your player supports the version of the tags being written.  Please see the
-   :doc:`../config/options_tag_compatibility` section for more information.
+   You should also confirm that your player supports the version of the tags being written.
+
+   .. seealso::
+
+      For more information please see:
+      :doc:`../config/options_tags_compatibility_aac` /
+      :doc:`../config/options_tags_compatibility_ac3` /
+      :doc:`../config/options_tags_compatibility_id3` /
+      :doc:`../config/options_tags_compatibility_wave`
 
 **Embedded cover image too large**
 
