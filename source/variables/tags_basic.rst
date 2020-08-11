@@ -41,8 +41,15 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 .. note::
 
-   Some of these tags are only supported for certain file types or tag formats.  Please see the `Picard Tag Mapping
-   <https://picard.musicbrainz.org/docs/mappings/>`_ webpage for details.
+   .. only:: html
+
+      Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
+      <../technical/tag_mapping>` section for details.
+
+   .. only:: latex
+
+      Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
+      <../technical/tag_mapping_pdf>` section for details.
 
 .. note::
 
