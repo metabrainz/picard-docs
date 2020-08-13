@@ -9,6 +9,7 @@
    <script>
       const supported_languages = ['en'];
       const default_language = 'en';
+      const current_version = '';
       var language_code = "";
       function getLanguage() {
          let lg = {
@@ -56,7 +57,10 @@
          if (window.location.hostname.endsWith(".github.io")) {
             return '/picard-docs/' + getLanguage() + '/index.html';
          }
-         return '/' + getLanguage() + '/index.html';
+         if (current_version == "") {
+             return '/' + getLanguage() + '/index.html';
+         }
+         return '/' + current_version + '/' + getLanguage() + '/index.html';
       }
    </script>
 </head>

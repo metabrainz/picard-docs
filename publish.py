@@ -11,10 +11,13 @@ import shutil
 import sys
 import time
 
-DEFAULT_LANGUAGE = 'en'
+import _build
+
 DOCUMENT_DIRECTORY = 'docs'
-INDEX_TEMPLATE = 'index.html.template'
-DEFAULT_LANGUAGE = 'en'
+BUILD_DIRECTORY = '_build'
+DEFAULT_LANGUAGE = _build.default_language if _build.default_language else 'en'
+CURRENT_VERSION = _build.current_version if _build.current_version else 'latest'
+FILE_NAME_ROOT = _build.file_name_root if _build.file_name_root else 'MusicBrainz_Picard'
 
 LANGUAGE_TEST_1 = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 LANGUAGE_TEST_2 = re.compile(r'^.*MusicBrainz_Picard_\[([a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?)\].pdf$')
@@ -22,7 +25,6 @@ LANGUAGE_TEST_2 = re.compile(r'^.*MusicBrainz_Picard_\[([a-z]{2}(-[A-Z]([A-Z]{1}
 
 def exit_with_code(exit_code=0):
     """Print and exit with the specified exit code.
-
     Keyword Arguments:
         exit_code {int} -- Exit code to use (default: 0)
     """
@@ -34,11 +36,9 @@ def clean_directory(dir_path, dir_name):
     """Removes all files and subdirectories for the specified directory.  If the specified
     directory does not exist, it will be created.  Includes multiple checks for success to
     accommodate race condition in Windows.
-
     Arguments:
         dir_path {str} -- Path to the directory to clean
         dir_name {str} -- Name of the directory type (e.g.: 'html')
-
     Raises:
         Exception: Unable to clean directory
         Exception: Unable to create directory
@@ -82,10 +82,8 @@ def clean_directory(dir_path, dir_name):
 def remove_dir(dir_path):
     """Remove the specified directory.  Includes multiple checks for success to accommodate race
     condition in Windows.
-
     Arguments:
         dir_path {str} -- Path of directory to remove
-
     Raises:
         Exception: Directory not removed
     """
@@ -111,10 +109,8 @@ def remove_dir(dir_path):
 def remove_file(file_path):
     """Removes the specified file.  Includes multiple checks for success to accommodate race
     condition in Windows.
-
     Arguments:
         file_path {str} -- File to remove.
-
     Raises:
         Exception: File not removed
     """
@@ -139,10 +135,8 @@ def remove_file(file_path):
 
 def get_subdir_list(root_dir):
     """Get list of subdirectories in the specified directory.
-
     Arguments:
         root_dir {str} -- Path to directory to check
-
     Returns:
         {list} -- List of subdirectories
     """
@@ -155,10 +149,8 @@ def get_subdir_list(root_dir):
 
 def get_file_list(root_dir):
     """Get list of files in the specified directory.
-
     Arguments:
         root_dir {str} -- Path to directory to check
-
     Returns:
         {list} -- List of files
     """
@@ -171,10 +163,8 @@ def get_file_list(root_dir):
 
 def languages_from_dir_list(dir_list):
     """Extract a list of valid language codes from a directory list.
-
     Arguments:
         dir_list {list} -- List of directories
-
     Returns:
         {list} -- List of language codes
     """
@@ -188,7 +178,6 @@ def languages_from_dir_list(dir_list):
 
 def copy_files(mask, target):
     """Copy files using wildcards.
-
     Arguments:
         mask {str} -- Source files mask
         target {str} -- Target directory
@@ -200,7 +189,6 @@ def copy_files(mask, target):
 
 def delete_files(mask):
     """Delete files using wildcards.
-
     Arguments:
         mask {str} -- Source files mask
     """
@@ -211,7 +199,6 @@ def delete_files(mask):
 
 def copy_directories(source, target):
     """Copy directory to target recursively.
-
     Arguments:
         source {str} -- Source directory to copy
         target {str} -- Target directory, which cannot exist for Python < 3.8
@@ -235,35 +222,50 @@ def main():
     print("\nOld languages = {0}\nNew languages = {1}".format(old_languages, new_languages))
 
     print('\nDeleting current files:')
-    delete_files('*.pdf')
-    delete_files('*.epub')
-    delete_files('*.zip')
+    # delete_files('*.pdf')
+    # delete_files('*.epub')
+    # delete_files('*.zip')
+    delete_files('{0}_{1}_HTML_[*.zip'.format(FILE_NAME_ROOT, CURRENT_VERSION,))
+    delete_files('{0}_{1}_[*.epub'.format(FILE_NAME_ROOT, CURRENT_VERSION,))
+    delete_files('{0}_{1}_[*.pdf'.format(FILE_NAME_ROOT, CURRENT_VERSION,))
+    delete_files('index.html')
+    delete_files('version_links.js')
 
     print('\nDeleting current directories:')
     for item in old_languages:
         clean_directory(item, 'language')
         print("Removing directory: {0}".format(item))
         remove_dir(item)
+    clean_directory(CURRENT_VERSION, 'version')
 
     print('\nCopying new files and directories.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.pdf'), '.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.epub'), '.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.zip'), '.')
+
+    print('\nCopying html files to root directory.')
     copy_directories(DOCUMENT_DIRECTORY, '.')
+
+    print('\nCopying html files to version directory.')
+    copy_directories(DOCUMENT_DIRECTORY, CURRENT_VERSION)
 
     print('\nUpdating the master index.html file.\n')
     try:
-        with open(INDEX_TEMPLATE, 'r', encoding='utf8') as f:
-            temp = f.read()
+        shutil.copy(os.path.join(BUILD_DIRECTORY, 'top_index.html'), 'index.html')
     except Exception as e:
-        print('Error reading template: {0}\n'.format(e))
+        print('Error copying top level index.html file.\n')
         exit_with_code(1)
-    temp = temp.replace(r'{{DEFAULT_LANGUAGE}}', DEFAULT_LANGUAGE).replace(r'{{SUPPORTED_LANGUAGES}}', str(new_languages))
+    print('Updating the version level index.html file.\n')
     try:
-        with open('index.html', 'w', encoding='utf8') as f:
-            f.write(temp)
+        shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_index.html'), os.path.join(CURRENT_VERSION, 'index.html'))
     except Exception as e:
-        print('Error writing index.html file: {0}\n'.format(e))
+        print('Error copying version level index.html file.\n')
+        exit_with_code(1)
+    print('Updating the version_links.js file.\n')
+    try:
+        shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_links.js'), '.')
+    except Exception as e:
+        print('Error copying version_links.js file.\n')
         exit_with_code(1)
 
     exit_with_code(0)

@@ -7,18 +7,23 @@ cross-platform music file tagging system using metadata from [MusicBrainz](https
 This project is not intended to replace the documentation on the Picard website, but to augment
 it with additional detail and a structured approach.
 
-This documentation project is open source and provided under the GNU GENERAL PUBLIC LICENSE, Version
-3 (GPLv3).  The documentation produced by the project is provided under the GNU Free Documentation
-License, Version 1.3 (GFDLv1.3).
+This documentation project is open source and provided under CC0 1.0. To view a copy of this license,
+visit [https://creativecommons.org/publicdomain/zero/1.0](https://creativecommons.org/publicdomain/zero/1.0).
 
 The project currently produces the on-line documentation in [ReadTheDocs](https://readthedocs.org)
-format theme using [Sphinx](https://www.sphinx-doc.org/). A stand-alone PDF document is also being
+format theme using [Sphinx](https://www.sphinx-doc.org/). Stand-alone PDF and ePub documents are also being
 produced.  The latest build of the documentation produced by this initiative can be viewed on the
-[web page](https://rdswift.github.io/picard-docs/index.html).
+[web page](https://picard-docs.musicbrainz.org/).
 
 ## Contributing to the Documentation
 
 This documentation project only exists because of the volunteer effort that goes into its development.
+
+Further high quality contributions are welcomed from all Picard users wanting to be part of the
+open source community that creates and maintains this valuable music tool. Even if you cannot
+write code, based on your experience of using Picard any help you can give to improve this
+documentation further will be most appreciated - and even if you cannot improve the existing help,
+if you can create or maintain translations into other languages, that would be of great benefit.
 
 If you notice an error in the documentation or have additional or updated material to contribute,
 please raise an issue in the [issue tracker](https://github.com/rdswift/picard-docs/issues).

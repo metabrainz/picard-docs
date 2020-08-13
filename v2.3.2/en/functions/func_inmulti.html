@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>$inmulti &mdash; MusicBrainz Picard v2.3.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="/version_links.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="$is_audio" href="func_is_audio.html" />
+    <link rel="prev" title="$in" href="func_in.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.3.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acknowledgements.html">Documentation Credits &amp; Updates</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting.html">Scripting</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="list_by_type.html">Scripting Functions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#assignment-functions">Assignment Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#text-functions">Text Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#multi-value-functions">Multi-Value Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#mathematical-functions">Mathematical Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="list_by_type.html#conditional-functions">Conditional Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="func_and.html">$and</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_endswith.html">$endswith</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_eq.html">$eq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_eq_all.html">$eq_all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_eq_any.html">$eq_any</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_gt.html">$gt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_gte.html">$gte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_if.html">$if</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_if2.html">$if2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_in.html">$in</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">$inmulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_is_audio.html">$is_audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_is_complete.html">$is_complete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_is_video.html">$is_video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_lt.html">$lt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_lte.html">$lte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_ne.html">$ne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_ne_all.html">$ne_all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_ne_any.html">$ne_any</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_not.html">$not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_or.html">$or</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_startswith.html">$startswith</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#information-functions">Information Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#loop-functions">Loop Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_by_type.html#miscellaneous-functions">Miscellaneous Functions</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../technical/plugins_api.html">Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/tag_mapping.html">Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technical/command_line.html">Command Line Options</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="list_by_type.html">Scripting Functions</a> &raquo;</li>
+        
+      <li>$inmulti</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/functions/func_inmulti.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="inmulti">
+<h1>$inmulti<a class="headerlink" href="#inmulti" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Usage: <strong>$inmulti(%x%,y)</strong></div>
+<div class="line">Category: conditional</div>
+<div class="line">Implemented: Picard 1.0</div>
+</div>
+<p><strong>Description:</strong></p>
+<p>Returns true if multi-value variable <code class="docutils literal notranslate"><span class="pre">x</span></code> contains exactly <code class="docutils literal notranslate"><span class="pre">y</span></code> as one of its values.
+Note that comparisons are case-sensitive.</p>
+<p><strong>Example:</strong></p>
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$setmulti(foo,One; Two; Three)
+$set(bar,Two)
+$inmulti(%foo%,%bar%)  ==&gt;  &quot;1&quot;  (True)
+$inmulti(%foo%,Two)    ==&gt;  &quot;1&quot;  (True)
+$inmulti(%foo%,two)    ==&gt;  &quot;&quot;   (False)
+$inmulti(%foo%,Once)   ==&gt;  &quot;&quot;   (False)
+$inmulti(%foo%,w)      ==&gt;  &quot;&quot;   (False)
+$inmulti(%foo%,)       ==&gt;  &quot;&quot;   (False)
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="func_is_audio.html" class="btn btn-neutral float-right" title="$is_audio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="func_in.html" class="btn btn-neutral float-left" title="$in" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      v2.3.2 [en]
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <!-- <dl>
+        <dt>Testing</dt>
+        <dd>url_root = "../"<br /></dd>
+        <dd>pagename = "functions/func_inmulti"<br /></dd>
+        <dd>releases = "['v2.3.2']"<br /></dd>
+      </dl> -->
+
+      <dl id="select_version">
+        <dt>Select Version</dt>
+        <!-- <dd><a href="../../../index.html" class="__ptNoRemap">latest</a></dd> -->
+      </dl>
+      <script>list_versions();</script>
+
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/functions/func_inmulti.html" class="__ptNoRemap">English</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <!-- <dd><a href="../../MusicBrainz_Picard_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="../../MusicBrainz_Picard_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="../../MusicBrainz_Picard_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd> -->
+        <dd><a href="/MusicBrainz_Picard_v2.3.2_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/MusicBrainz_Picard_v2.3.2_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/MusicBrainz_Picard_v2.3.2_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
