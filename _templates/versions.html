@@ -40,10 +40,15 @@
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       <span class="fa fa-book"> {{ _('Options') }}</span>
-      {{ language }}
+      {{ version }} [{{ language }}]
       <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>{{ _('Select Version') }}</dt>
+      </dl>
+      <script>list_versions();</script>
+
       <dl>
         <dt>{{ _('Select Language') }}</dt>
         {% if supported_languages %}
@@ -51,15 +56,15 @@
         <dd><a href="{{ url_root }}../{{ lang_code }}/{{ pagename }}.html" class="__ptNoRemap">{{ lang_title }}</a></dd>
         {% endfor %}
         {% else %}
-        <dd><a href="{{ url_root }}../en/{{ pagename }}.html" class="__ptNoRemap">English</a></dd>
+        <dd><a href="{{ url_root }}../{{ default_language }}/{{ pagename }}.html" class="__ptNoRemap">English</a></dd>
         {% endif %}
       </dl>
 
       <dl>
         <dt>{{ _('Downloads') }}</dt>
-        <dd><a href="{{ url_root }}../MusicBrainz_Picard_[{{ language }}].pdf" target="_blank" class="__ptNoRemap">{{ _('PDF File') }}</a></dd>
-        <dd><a href="{{ url_root }}../MusicBrainz_Picard_[{{ language }}].epub" target="_blank" class="__ptNoRemap">{{ _('epub File') }}</a></dd>
-        <dd><a href="{{ url_root }}../MusicBrainz_Picard_HTML_[{{ language }}].zip" target="_blank" class="__ptNoRemap">{{ _('HTML Files') }}</a></dd>
+        <dd><a href="/MusicBrainz_Picard_{{ version }}_[{{ language }}].pdf" target="_blank" class="__ptNoRemap">{{ _('PDF File') }}</a></dd>
+        <dd><a href="/MusicBrainz_Picard_{{ version }}_[{{ language }}].epub" target="_blank" class="__ptNoRemap">{{ _('epub File') }}</a></dd>
+        <dd><a href="/MusicBrainz_Picard_{{ version }}_HTML_[{{ language }}].zip" target="_blank" class="__ptNoRemap">{{ _('HTML Files') }}</a></dd>
       </dl>
 
     </div>

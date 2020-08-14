@@ -37,4 +37,4 @@ There are typically four reasons that tags may not be written or updated when fi
 
    Confirm that the file type that you are writing actually supports the tags that are to be written.  Not all
    file types support all the tags Picard supports.  Please see the
-   :doc:`../technical/tag_mapping.html` section for details about the tags supported by various file formats.
+   :doc:`../technical/tag_mapping` section for details about the tags supported by various file formats.
