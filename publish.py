@@ -242,31 +242,27 @@ def main():
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.pdf'), '.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.epub'), '.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.zip'), '.')
-
-    print('\nCopying html files to root directory.')
-    copy_directories(DOCUMENT_DIRECTORY, '.')
+    time.sleep(1)
 
     print('\nCopying html files to version directory.')
     copy_directories(DOCUMENT_DIRECTORY, CURRENT_VERSION)
+    time.sleep(1)
 
-    print('\nUpdating the master index.html file.\n')
-    try:
-        shutil.copy(os.path.join(BUILD_DIRECTORY, 'top_index.html'), 'index.html')
-    except Exception as e:
-        print('Error copying top level index.html file.\n')
-        exit_with_code(1)
-    print('Updating the version level index.html file.\n')
-    try:
-        shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_index.html'), os.path.join(CURRENT_VERSION, 'index.html'))
-    except Exception as e:
-        print('Error copying version level index.html file.\n')
-        exit_with_code(1)
+    print('\nCopying html files to root directory.')
+    copy_directories(DOCUMENT_DIRECTORY, '.')
+    time.sleep(1)
+
+    print('\nUpdating the master index.html file.')
+    shutil.copy(os.path.join(BUILD_DIRECTORY, 'top_index.html'), 'index.html')
+    time.sleep(1)
+
+    print('Updating the version level index.html file.')
+    shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_index.html'), os.path.join(CURRENT_VERSION, 'index.html'))
+    time.sleep(1)
+
     print('Updating the version_links.js file.\n')
-    try:
-        shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_links.js'), '.')
-    except Exception as e:
-        print('Error copying version_links.js file.\n')
-        exit_with_code(1)
+    shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_links.js'), '.')
+    time.sleep(1)
 
     exit_with_code(0)
 
