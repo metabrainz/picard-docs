@@ -32,51 +32,43 @@ def exit_with_code(exit_code=0):
     sys.exit(exit_code)
 
 
+def make_directory(dir_path, dir_name):
+    print('Creating the {0} directory: {1}'.format(dir_name, dir_path))
+    os.makedirs(dir_path)
+    counter = 10
+    # Multiple checks for success to accommodate race condition in Windows
+    while counter and not os.path.exists(dir_path):
+        counter -= 1
+        time.sleep(1)
+    if not counter:
+        raise Exception('Unable to reate the {0} directory: {1}'.format(dir_name, dir_path))
+
+
 def clean_directory(dir_path, dir_name):
-    """Removes all files and subdirectories for the specified directory.  If the specified
-    directory does not exist, it will be created.  Includes multiple checks for success to
-    accommodate race condition in Windows.
+    """Removes the specified directory including all files and subdirectories.Includes
+    multiple checks for success to accommodate race condition in Windows.
     Arguments:
         dir_path {str} -- Path to the directory to clean
         dir_name {str} -- Name of the directory type (e.g.: 'html')
     Raises:
         Exception: Unable to clean directory
-        Exception: Unable to create directory
+        Exception: Not a directory
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
-            try:
-                print('Emptying the {0} directory: {1}'.format(dir_name, dir_path))
-                if not os.listdir(dir_path):
-                    return
-                shutil.rmtree(dir_path)
-                counter = 10
-                # Multiple checks for success to accommodate race condition in Windows
-                while counter and os.path.exists(dir_path):
-                    counter -= 1
-                    time.sleep(1)
-                if not counter:
-                    raise Exception('Unable to clean directory.')
-            except Exception:
-                print("\nError removing the {0} directory: {1}\n".format(dir_name, dir_path))
-                exit_with_code(1)
-        else:
-            print("\nThe {0} directory is not a directory: {1}\n".format(dir_name, dir_path))
-            exit_with_code(1)
-    else:
-        try:
-            print('Creating the {0} directory: {1}'.format(dir_name, dir_path))
-            os.makedirs(dir_path)
+            print('Emptying the {0} directory: {1}'.format(dir_name, dir_path))
+            if not os.listdir(dir_path):
+                return
+            shutil.rmtree(dir_path)
             counter = 10
             # Multiple checks for success to accommodate race condition in Windows
-            while counter and not os.path.exists(dir_path):
+            while counter and os.path.exists(dir_path):
                 counter -= 1
                 time.sleep(1)
             if not counter:
-                raise Exception('Unable to create directory.')
-        except Exception:
-            print("\nError creating the {0} directory: {1}\n".format(dir_name, dir_path))
-            exit_with_code(1)
+                raise Exception('Unable to clean directory.')
+        else:
+            raise Exception("The {0} directory is not a directory: {1}\n".format(dir_name, dir_path))
 
 
 def remove_dir(dir_path):
@@ -89,21 +81,16 @@ def remove_dir(dir_path):
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
-            try:
-                os.rmdir(dir_path)
-                counter = 10
-                # Multiple checks for success to accommodate race condition in Windows
-                while counter and os.path.exists(dir_path):
-                    counter -= 1
-                    time.sleep(1)
-                if not counter:
-                    raise Exception('Directory not removed.')
-            except Exception:
-                print("\nError removing the directory: {0}\n".format(dir_path))
-                exit_with_code(1)
+            os.rmdir(dir_path)
+            counter = 10
+            # Multiple checks for success to accommodate race condition in Windows
+            while counter and os.path.exists(dir_path):
+                counter -= 1
+                time.sleep(1)
+            if not counter:
+                raise Exception('Directory not removed.')
         else:
-            print('\nUnable to remove (not a directory): {0}\n'.format(dir_path))
-            exit_with_code(1)
+            raise Exception('\nUnable to remove (not a directory): {0}\n'.format(dir_path))
 
 
 def remove_file(file_path):
@@ -116,21 +103,16 @@ def remove_file(file_path):
     """
     if os.path.exists(file_path):
         if os.path.isfile(file_path):
-            try:
-                os.remove(file_path)
-                counter = 10
-                # Multiple checks for success to accommodate race condition in Windows
-                while counter and os.path.exists(file_path):
-                    counter -= 1
-                    time.sleep(1)
-                if not counter:
-                    raise Exception('File not removed.')
-            except Exception:
-                print("\nError removing the file: {0}\n".format(file_path))
-                exit_with_code(1)
+            os.remove(file_path)
+            counter = 10
+            # Multiple checks for success to accommodate race condition in Windows
+            while counter and os.path.exists(file_path):
+                counter -= 1
+                time.sleep(1)
+            if not counter:
+                raise Exception('File not removed.')
         else:
-            print('\nUnable to remove (not a file): {0}\n'.format(file_path))
-            exit_with_code(1)
+            raise Exception('Unable to remove (not a file): {0}\n'.format(file_path))
 
 
 def get_subdir_list(root_dir):
@@ -204,14 +186,10 @@ def copy_directories(source, target):
         target {str} -- Target directory, which cannot exist for Python < 3.8
     """
     if os.path.exists(source) and os.path.exists(target) and os.path.isdir(target):
-        try:
-            subdirs = get_subdir_list(source)
-            for subdir in subdirs:
-                print(" - {0}".format(os.path.join(source, subdir)))
-                shutil.copytree(os.path.join(source, subdir), os.path.join(target, subdir))
-        except OSError as e:
-            print('Copy unsuccessful. Error: {0}'.format(e))
-            exit_with_code(1)
+        subdirs = get_subdir_list(source)
+        for subdir in subdirs:
+            print(" - {0}".format(os.path.join(source, subdir)))
+            shutil.copytree(os.path.join(source, subdir), os.path.join(target, subdir))
 
 
 def main():
@@ -222,9 +200,6 @@ def main():
     print("\nOld languages = {0}\nNew languages = {1}".format(old_languages, new_languages))
 
     print('\nDeleting current files:')
-    # delete_files('*.pdf')
-    # delete_files('*.epub')
-    # delete_files('*.zip')
     delete_files('{0}_{1}_HTML_[*.zip'.format(FILE_NAME_ROOT, CURRENT_VERSION,))
     delete_files('{0}_{1}_[*.epub'.format(FILE_NAME_ROOT, CURRENT_VERSION,))
     delete_files('{0}_{1}_[*.pdf'.format(FILE_NAME_ROOT, CURRENT_VERSION,))
@@ -237,6 +212,7 @@ def main():
         print("Removing directory: {0}".format(item))
         remove_dir(item)
     clean_directory(CURRENT_VERSION, 'version')
+    make_directory(CURRENT_VERSION, 'version')
 
     print('\nCopying new files and directories.')
     copy_files(os.path.join(DOCUMENT_DIRECTORY, '*.pdf'), '.')
@@ -253,15 +229,31 @@ def main():
     time.sleep(1)
 
     print('\nUpdating the master index.html file.')
-    shutil.copy(os.path.join(BUILD_DIRECTORY, 'top_index.html'), 'index.html')
+    source = os.path.join(BUILD_DIRECTORY, 'top_index.html')
+    target = 'index.html'
+    # Ensure file exists so copy does not fail.
+    with open(target, 'a', encoding='utf8') as ofile:
+        ofile.write('')
     time.sleep(1)
+    shutil.copy(source, target)
 
     print('Updating the version level index.html file.')
-    shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_index.html'), os.path.join(CURRENT_VERSION, 'index.html'))
+    source = os.path.join(BUILD_DIRECTORY, 'version_index.html')
+    target = os.path.join(CURRENT_VERSION, 'index.html')
+    # Ensure file exists so copy does not fail.
+    with open(target, 'a', encoding='utf8') as ofile:
+        ofile.write('')
     time.sleep(1)
+    shutil.copy(source, target)
 
     print('Updating the version_links.js file.\n')
-    shutil.copy(os.path.join(BUILD_DIRECTORY, 'version_links.js'), '.')
+    source = os.path.join(BUILD_DIRECTORY, 'version_links.js')
+    target = 'version_links.js'
+    # Ensure file exists so copy does not fail.
+    with open(target, 'a', encoding='utf8') as ofile:
+        ofile.write('')
+    time.sleep(1)
+    shutil.copy(source, target)
     time.sleep(1)
 
     exit_with_code(0)
