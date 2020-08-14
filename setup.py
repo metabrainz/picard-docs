@@ -18,7 +18,7 @@ import restructuredtext_lint
 import conf
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.05'
+SCRIPT_VERS = '0.06'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -34,16 +34,13 @@ PACKAGE_TITLE = 'Picard Docs'
 
 LANGUAGE_LIST = {
     'en': 'English',
-    # 'fr': 'French',
-    # 'de': 'German',
-    # 'es': 'Spanish',
 }
-if conf.html_context and 'supported_languages' in conf.html_context:
-    for code, title in conf.html_context['supported_languages']:
+if conf.supported_languages:
+    for code, title in conf.supported_languages:
         LANGUAGE_LIST[code] = title
 
-DEFAULT_LANGUAGE = 'en'
-LANGUAGES = LANGUAGE_LIST.keys()
+DEFAULT_LANGUAGE = conf.default_language if conf.default_language else 'en'
+LANGUAGES = list(LANGUAGE_LIST.keys())
 
 
 ########################
@@ -611,6 +608,36 @@ def remove_file(file_path):
             exit_with_code(1)
 
 
+def save_version_info():
+    file_name = os.path.join(SPHINX_BUILD_DIR, '__init__.py')
+    remove_file(file_name)
+    print("Saving: {0}".format(file_name,))
+    with open(file_name, 'w', encoding='utf8') as ofile:
+        ofile.write('current_version = "{0}"\n'.format(conf.version,))
+        ofile.write('default_language = "{0}"\n'.format(DEFAULT_LANGUAGE,))
+        ofile.write('supported_languages = {0}\n'.format(LANGUAGES,))
+        ofile.write('file_name_root = "{0}"\n'.format(FILE_NAME_ROOT,))
+    with open('index.html.template', 'r', encoding='utf8') as ifile:
+        template = ifile.read()
+    file_name = os.path.join(SPHINX_BUILD_DIR, 'top_index.html')
+    remove_file(file_name)
+    print("Saving: {0}".format(file_name,))
+    with open(file_name, 'w', encoding='utf8') as ofile:
+        ofile.write(template.replace('{{SUPPORTED_LANGUAGES}}', str(LANGUAGES)).replace('{{DEFAULT_LANGUAGE}}', DEFAULT_LANGUAGE).replace('{{CURRENT_VERSION}}', ''))
+    file_name = os.path.join(SPHINX_BUILD_DIR, 'version_index.html')
+    remove_file(file_name)
+    print("Saving: {0}".format(file_name,))
+    with open(file_name, 'w', encoding='utf8') as ofile:
+        ofile.write(template.replace('{{SUPPORTED_LANGUAGES}}', str(LANGUAGES)).replace('{{DEFAULT_LANGUAGE}}', DEFAULT_LANGUAGE).replace('{{CURRENT_VERSION}}', conf.version))
+    with open('version_links.js.template', 'r', encoding='utf8') as ifile:
+        template = ifile.read()
+    file_name = os.path.join(SPHINX_BUILD_DIR, 'version_links.js')
+    remove_file(file_name)
+    print("Saving: {0}".format(file_name,))
+    with open(file_name, 'w', encoding='utf8') as ofile:
+        ofile.write(template.replace('{{DEFAULT_LANGUAGE}}', DEFAULT_LANGUAGE).replace('{{VERSION_LIST}}', str(conf.release_list)))
+
+
 def do_build(target=None, language='', clean=False):
     if not (target and target in SPHINX_BUILD_TARGETS.keys()):
         print("\nUnknown build target: {0}".format(target))
@@ -649,6 +676,7 @@ def do_build(target=None, language='', clean=False):
 
     if target == 'html':
         build_html(language=language)
+        save_version_info()
     elif target == 'pdf':
         build_pdf(language=language)
     elif target == 'epub':
@@ -683,7 +711,7 @@ def build_html(language=''):
         print('Files not copied.  Error: {0}'.format(ex))
         exit_with_code(1)
 
-    zip_file = os.path.join(OUTPUT_DIR, '{0}_HTML_[{1}].zip'.format(FILE_NAME_ROOT, language))
+    zip_file = os.path.join(OUTPUT_DIR, '{0}_{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, conf.version, language))
     print('Removing old ZIP file: {0}'.format(zip_file))
     remove_file(zip_file)
     print('Copying HTML to ZIP file: {0}'.format(zip_file))
@@ -718,7 +746,7 @@ def build_pdf(language=''):
         if exit_code:
             exit_with_code(exit_code)
         pdf_file = os.path.join(SPHINX_BUILD_DIR, 'latex', 'musicbrainzpicard.pdf')
-        target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_[{0}].pdf'.format(language))
+        target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].pdf'.format(conf.version, language))
         # Multiple checks if file exists to accommodate race condition in Windows
         counter = 50
         while counter and not os.path.exists(pdf_file):
@@ -744,7 +772,7 @@ def build_epub(language=''):
         language {str} -- Language to use for the build (default: {''})
     """
     epub_file = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['epub']['dir'], 'MusicBrainzPicard.epub')
-    target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_[{0}].epub'.format(language))
+    target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].epub'.format(conf.version, language))
     print('Copying output to: {0}\n'.format(target_file))
     try:
         shutil.copyfile(epub_file, target_file)

@@ -27,8 +27,8 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :hidden:
 
    introduction
+   contributing
    glossary
-   acknowledgements
 
 
 .. toctree::

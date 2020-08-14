@@ -11,9 +11,6 @@ write code, based on your experience of using Picard any help you can give to im
 documentation further will be most appreciated - and even if you cannot improve the existing help,
 if you can create or maintain translations into other languages, that would be of great benefit.
 
-Individual contributors are not being listed here for fear of missing someone; however, please know
-that your contributions are greatly appreciated.
-
 If you want to contribute corrections or new material to this documentation project, please initiate
 a [Pull Request](https://github.com/rdswift/picard-docs/pulls) against the `master` branch to
 submit the changes for review and implementation.  All documentation is included in the form of
