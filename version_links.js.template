@@ -7,8 +7,8 @@ var serv = window.location.protocol + '//' + window.location.hostname
 function list_versions(url_root) {
     text = "\n";
     for (i = 0; i < vcount; i++) {
-        text += '<dd><a href="' + serv + '/' + versions[i] + '/' + default_language + '/index.html" class="__ptNoRemap">' + versions[i] + "</a></dd>\n";
+        text += '<dd><a href="/' + versions[i] + '/index.html" class="__ptNoRemap">' + versions[i] + "</a></dd>\n";
     }
-    text += '<dd><a href="' + serv + '/' + default_language + '/index.html" class="__ptNoRemap">latest' + "</a></dd>\n";
+    text += '<dd><a href="/index.html" class="__ptNoRemap">latest' + "</a></dd>\n";
     document.getElementById("select_version").innerHTML += text;
 }
