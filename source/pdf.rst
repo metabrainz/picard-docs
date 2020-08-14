@@ -12,6 +12,7 @@ MusicBrainz Picard
 .. toctree::
 
    introduction
+   contributing
    glossary
    pdf_starting
    config/configuration
