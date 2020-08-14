@@ -31,7 +31,21 @@ author = 'Bob Swift'
 
 # The full version, including alpha/beta/rc tags
 release = 'v2.4'
+release_list = [
+    'v2.3.2',
+    'v2.4',
+    # 'v2.4.1',
+]
 version = release
+
+# Language information
+default_language = 'en'
+supported_languages = [
+    ('en', 'English'),
+    # ('fr', 'Française'),
+    # ('de', 'Deutsche'),
+    # ('es', 'Española'),
+]
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
@@ -80,7 +94,7 @@ exclude_patterns = [
 
 # -- Options for Internationalization ----------------------------------------
 
-language = 'en'
+language = default_language
 locale_dirs = ['locale']
 gettext_compact = False
 # gettext_compact = True
@@ -101,16 +115,15 @@ html_theme = "sphinx_rtd_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_js_files = ['/version_links.js']
+
 html_context = {
     'extra_css_files': [
         '_static/css/extra.css',
     ],
-    'supported_languages': [
-        ('en', 'English'),
-        # ('fr', 'Française'),
-        # ('de', 'Deutsche'),
-        # ('es', 'Española'),
-    ]
+    'default_language': default_language,
+    'supported_languages': supported_languages,
+    'releases': release_list,
 }
 
 html_favicon = '_static/picard-icon.png'
