@@ -9,7 +9,13 @@ Other Information
 .. index::
    single: tags; writing
 
-For technical details on how tags are written into files, see `Picard Tag Mapping <https://picard.musicbrainz.org/docs/mappings/>`_.
+.. only:: html
+
+   For technical details on how tags are written into files, see the :doc:`Picard Tag Mapping <../technical/tag_mapping>` section.
+
+.. only:: latex
+
+   For technical details on how tags are written into files, see the :doc:`Picard Tag Mapping <../technical/tag_mapping_pdf>` section.
 
 If you set new variables, these will be saved as new tags in ID3, APEv2 and VORBIS based files. For ID3 based files these will be
 saved to, and reloaded from, ID3 user defined text information (TXXX) frames. They will not be saved in ASF or MP4 based files.

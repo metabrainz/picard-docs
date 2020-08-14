@@ -51,8 +51,15 @@ File Formats
 
 **Which tags can Picard write to my files?**
 
-   See the :doc:`../variables/variables` section for information on which MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping
-   <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
+   .. only: html
+
+      See the :doc:`../variables/variables` section for information on which MusicBrainz fields that Picard writes to tags. The :doc:`Picard Tag Mapping
+      <../technical/tag_mapping>` section contains more technical information on how these are further mapped into each tag format.
+
+   .. only: latex
+
+      See the :doc:`../variables/variables` section for information on which MusicBrainz fields that Picard writes to tags. The :doc:`Picard Tag Mapping
+      <../technical/tag_mapping_pdf>` section contains more technical information on how these are further mapped into each tag format.
 
 .. index::
    single: tags; editing

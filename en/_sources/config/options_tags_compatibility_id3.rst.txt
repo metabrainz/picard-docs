@@ -15,11 +15,19 @@ ID3 Files
 
 **ID3v2 version**
 
-   Although ID3v2.4 is the latest version, its support in music players is still lacking. While somesoftware has
+   Although ID3v2.4 is the latest version, its support in music players is still lacking. While some software has
    no problem using version 2.4 tags, others may not be able to read the tags and display the information. Support
-   for ID3v2.4 in other media players (such as smartphones) is variable. Other than native support for
-   multi-valued tags in v2.4, the `Picard Tag Mapping <https://picard.musicbrainz.org/docs/mappings/>`_ will show
-   you what you lose when choosing v2.3 instead of v2.4.
+   for ID3v2.4 in other media players (such as smartphones) is variable.
+
+   .. only:: html
+
+      Other than native support for multi-valued tags in v2.4, the :doc:`Picard Tag Mapping <../technical/tag_mapping>`
+      section will show you what you lose when choosing v2.3 instead of v2.4.
+
+   .. only:: latex
+
+      Other than native support for multi-valued tags in v2.4, the :doc:`Picard Tag Mapping <../technical/tag_mapping_pdf>`
+      section will show you what you lose when choosing v2.3 instead of v2.4.
 
 **ID3v2 text encoding**
 
@@ -36,8 +44,15 @@ ID3 Files
 **Save iTunes compatible grouping and work**
 
    Save the tags grouping and work so that they are compatible with current iTunes versions. Without this option
-   grouping will be displayed in iTunes as "work name" and work will not be available. See the
-   `Picard Tag Mapping page <https://picard.musicbrainz.org/docs/mappings/>`_ for details.
+   grouping will be displayed in iTunes as "work name" and work will not be available.
+
+   .. only:: html
+
+      See the :doc:`Picard Tag Mapping <../technical/tag_mapping>` section for details.
+
+   .. only:: latex
+
+      See the :doc:`Picard Tag Mapping <../technical/tag_mapping_pdf>` section for details.
 
    .. note::
 
