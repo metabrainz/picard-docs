@@ -1,0 +1,38 @@
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
+
+
+Tag Options
+===========
+
+.. index::
+   single: configuration; tag options
+
+.. image:: ../images/options-tags.png
+   :width: 100 %
+
+**Write tags to files**
+
+   Uncheck to disable Picard from writing metadata to your files. Picard may still move or rename your files according
+   to your settings.
+
+**Preserve timestamps of tagged files**
+
+   If checked, Picard will not update the "Last Modified" date and time of your music files when it writes new tags to them.
+
+
+.. only:: html
+
+   .. seealso::
+
+      Details:
+      :doc:`options_before_tagging` /
+      :doc:`options_tag_compatibility`
+
+.. toctree::
+   :hidden:
+
+   options_before_tagging
+   options_tag_compatibility

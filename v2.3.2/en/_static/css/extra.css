@@ -1,0 +1,51 @@
+a.icon-home, a.icon-home:hover {
+    display: inline-block;
+    padding: 4px 4px 4px 23px;
+    background: transparent url(../logo-small.svg) center left no-repeat;
+    background-size: 1.5em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+.fa-home::before, .icon-home::before {
+    content: "";
+}
+
+.wy-nav-top a, .wy-breadcrumbs li a.icon-home {
+    margin: -2em;
+    background: transparent url(../logo-small.svg) center left no-repeat;
+    background-size: 1.5em;
+    padding: 4px 4px 4px 26px;
+}
+
+dl.footnote.brackets dt.label {
+    border: none;
+    background: transparent;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+dl.footnote.brackets dt.label span.brackets::before {
+    content: "[";
+}
+
+dl.footnote.brackets dt.label span.brackets::after {
+    content: "] ";
+}
+
+a.footnote-reference.brackets {
+    font-size: 70%;
+    vertical-align: super;
+}
+
+a.footnote-reference.brackets::before {
+    content: "[";
+}
+
+a.footnote-reference.brackets::after {
+    content: "]";
+}
+
+table.colwidths-given.docutils.align-default tbody tr td {
+    white-space: normal;
+}
