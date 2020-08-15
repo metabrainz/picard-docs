@@ -54,13 +54,14 @@
       };
 
       function makeURL() {
+         var root_dir = '/';
          if (window.location.hostname.endsWith(".github.io")) {
-            return '/picard-docs/' + getLanguage() + '/index.html';
+            root_dir = '/picard-docs/';
          }
          if (current_version == "") {
-             return '/' + getLanguage() + '/index.html';
+             return root_dir + getLanguage() + '/index.html';
          }
-         return '/' + current_version + '/' + getLanguage() + '/index.html';
+         return root_dir + current_version + '/' + getLanguage() + '/index.html';
       }
    </script>
 </head>
