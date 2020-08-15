@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 14:27-0600\n"
+"POT-Creation-Date: 2020-08-15 12:29-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../source/usage/retrieve_lookup_cd_steps.txt:21
 #: ../../source/usage/retrieve_lookup_steps.txt:38
-#: ../../source/usage/retrieve_lookup_steps.txt:38
+#: ../../source/usage/retrieve_scan_steps.txt:32
 #: ../../source/usage/retrieve_browser_steps.txt:62
 #: ../../source/usage/retrieve_manual_steps.txt:50
 msgid "A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track."
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Use the green arrow |lookup_tagger| to load the information for a release into Picard.  In addition, you can select the release and attach the toc."
 msgstr ""
 
-#: ../../source/usage/retrieve_lookup_cd_steps.txt:48
+#: ../../source/usage/retrieve_lookup_cd_steps.txt:53
 msgid "If none of the releases displayed are correct, you have the option to add a new release (with some information automatically included)."
 msgstr ""
 
@@ -85,35 +85,31 @@ msgid "If you don't have the CD available, and your files are grouped by album, 
 msgstr ""
 
 #: ../../source/usage/retrieve_lookup_steps.txt:9
-#: ../../source/usage/retrieve_lookup_steps.txt:9
 msgid "The steps to follow to lookup files are:"
 msgstr ""
 
 #: ../../source/usage/retrieve_lookup_steps.txt:11
-#: ../../source/usage/retrieve_lookup_steps.txt:11
+#: ../../source/usage/retrieve_scan_steps.txt:11
 #: ../../source/usage/retrieve_browser_steps.txt:15
 #: ../../source/usage/retrieve_manual_steps.txt:8
 msgid "Add your files using :menuselection:`\"Files --> Add Files...\"` or :menuselection:`\"Files --> Add Folder...\"`. For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is enabled from :menuselection:`\"View --> File Browser\"`."
 msgstr ""
 
 #: ../../source/usage/retrieve_lookup_steps.txt:20
-#: ../../source/usage/retrieve_lookup_steps.txt:20
+#: ../../source/usage/retrieve_scan_steps.txt:20
 #: ../../source/usage/retrieve_browser_steps.txt:24
 #: ../../source/usage/retrieve_manual_steps.txt:17
 msgid "Drag the selected directory or files to the \"Unclustered Files\" folder, and wait for Picard to process the files - the names will turn from grey to black."
 msgstr ""
 
 #: ../../source/usage/retrieve_lookup_steps.txt:28
-#: ../../source/usage/retrieve_lookup_steps.txt:28
 msgid "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album clusters."
 msgstr ""
 
 #: ../../source/usage/retrieve_lookup_steps.txt:35
-#: ../../source/usage/retrieve_lookup_steps.txt:35
 msgid "Select a clustered album and use :menuselection:`\"Tools --> Lookup\"` to lookup the cluster. Depending on your previous metadata, the album will show up in the right-hand pane."
 msgstr ""
 
-#: ../../source/usage/retrieve_lookup_steps.txt:45
 #: ../../source/usage/retrieve_lookup_steps.txt:45
 msgid "If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as scanning the files or a manual lookup."
 msgstr ""
@@ -128,6 +124,18 @@ msgstr ""
 
 #: ../../source/usage/retrieve.rst:68
 msgid "If your files are not grouped into albums and you don't have the CD available, this is the only remaining method of automatically identifying the album to retrieve.  This is done by scanning the files to obtain their AcoustID fingerprints and then perform the lookup for the individual files by fingerprint.  The album(s) matching the files will show up in the right-hand pane based on a \"best match\" using the Preferred Releases settings in the Metadata options."
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:9
+msgid "The steps to follow to scan and lookup files are:"
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:28
+msgid "Select the desired files and use :menuselection:`\"Tools --> Scan\"` to scan the files to determine their AcoustID fingerprints and lookup using this information. The album(s) matching the files will show up in the right-hand pane based on a \"best match\" using the Preferred Releases settings in the Metadata options."
+msgstr ""
+
+#: ../../source/usage/retrieve_scan_steps.txt:39
+msgid "If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as clustering the files or a browser lookup."
 msgstr ""
 
 #: ../../source/usage/retrieve.rst:81

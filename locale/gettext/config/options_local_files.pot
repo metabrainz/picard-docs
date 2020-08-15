@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.4.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 14:27-0600\n"
+"POT-Creation-Date: 2020-08-15 12:29-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,5 +21,21 @@ msgid "Local Files"
 msgstr ""
 
 #: ../../source/config/options_local_files.rst:18
-msgid "In this section you can configure the file names to be used by the Local Files cover art provider. The file names are defined using a regular expression. The default is to load files with the name \"cover\", \"folder\" or \"albumart\" and the file extension \"jpg\", \"png\", \"gif\" or \"tiff\" (e.g.: \"folder.jpg\" or \"cover.png\")."
+msgid "In this section you can configure the file names to be used by the Local Files cover art provider. If you are trying to collect more than one image, the naming is important."
+msgstr ""
+
+#: ../../source/config/options_local_files.rst:21
+msgid "The file names are defined using a regular expression. The default is ``^(?:cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` which will load files with the name \"cover\", \"folder\" or \"albumart\" and the file extension \"jpg\", \"png\", \"gif\" or \"tiff\" (e.g.: \"folder.jpg\" or \"cover.png\")."
+msgstr ""
+
+#: ../../source/config/options_local_files.rst:25
+msgid "The first part of the regular expression is a non-capture group: ``(?:cover|folder|albumart)``.  Items listed in this group will not get captured and the default (Front) type will apply."
+msgstr ""
+
+#: ../../source/config/options_local_files.rst:28
+msgid "The second part of the regular expression is a group: ``(.*)``. This is the real capture, so if the file names match any of the cover art types, they will be tagged as such."
+msgstr ""
+
+#: ../../source/config/options_local_files.rst:33
+msgid "A common mistake is to add all the types into the first (non-capture) group. This means that all the regular file names would be thrown into the Front type and cause unexpected results."
 msgstr ""
