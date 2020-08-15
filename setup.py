@@ -18,7 +18,7 @@ import restructuredtext_lint
 import conf
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.06'
+SCRIPT_VERS = '0.07'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -47,10 +47,6 @@ LANGUAGES = list(LANGUAGE_LIST.keys())
 #   Sphinx Constants   #
 ########################
 
-# SPHINX_OPTS = os.getenv('SPHINXOPTS', '')
-# SPHINX_BUILD = os.getenv('SPHINXBUILD', 'sphinx-build')
-# SPHINX_BUILD_DIR = os.getenv('SPHINXBUILDDIR', '_build')
-# SPHINX_SOURCE_DIR = os.getenv('SPHINXSOURCEDIR', '.')
 SPHINX_OPTS = ''
 SPHINX_BUILD = 'sphinx-build'
 SPHINX_INTL = 'sphinx-intl'
@@ -155,10 +151,9 @@ of the {1} package.
 
 For usage instructions, please use the '--help' option.
 
-This program comes with ABSOLUTELY NO WARRANTY; for details use option
-'--warranty'.  This is free software, and you are welcome to redistribute
+This program comes with ABSOLUTELY NO WARRANTY; for details use command
+'info warranty'.  This is free software, and you are welcome to redistribute
 it under certain conditions.  Please see the GPLv3 license for details.
-
 """.format(COPYRIGHT_TEXT, PACKAGE_TITLE)
 
 WARRANTY_TEXT = """\
@@ -188,7 +183,6 @@ courts shall apply local law that most closely approximates an absolute
 waiver of all civil liability in connection with the Program, unless a
 warranty or assumption of liability accompanies a copy of the Program in
 return for a fee.
-
 """.format(COPYRIGHT_TEXT,)
 
 DESCRIPTION = "{0} (v{1})".format(SCRIPT_NAME, SCRIPT_VERS)
@@ -316,7 +310,6 @@ def show_help():
 def parse_command_line():
     """Parse the command line arguments.
     """
-
     arg_parser = argparse.ArgumentParser(description=DESCRIPTION)
 
     arg_parser.add_argument(
@@ -329,34 +322,6 @@ def parse_command_line():
         dest='language',
         help="specify language for processing"
     )
-
-    # arg_parser.add_argument(
-    #     'command',
-    #     action='store',
-    #     choices=['lint', 'html', 'pdf', 'pot', 'languages'],
-    #     help="lint = lint the *.rst files, html = build html files, pdf = build pdf file, pot = build translation template files, languages = display list of supported languages"
-    # )
-
-    # arg_parser.add_argument(
-    #     '--about',
-    #     help="information about the script",
-    #     action='store_true',
-    #     dest='about'
-    # )
-
-    # arg_parser.add_argument(
-    #     '--warranty',
-    #     help="warranty information about the script",
-    #     action='store_true',
-    #     dest='warranty'
-    # )
-
-    # arg_parser.add_argument(
-    #     '--languages',
-    #     help="list the supported languages",
-    #     action='store_true',
-    #     dest='languages'
-    # )
 
     subparsers = arg_parser.add_subparsers()
 
@@ -407,9 +372,6 @@ def parse_command_line():
         choices=['about', 'languages', 'warranty'],
         help="about = info about the script, languages = list of supported languages, warranty = warranty of the script"
     )
-
-    # arg_parser.add_argument('--about', help="information about the script", action='store_true', dest='about')
-    # arg_parser.add_argument('--warranty', help="warranty information about the script", action='store_true', dest='warranty')
 
     args = arg_parser.parse_args()
     return args
@@ -521,7 +483,7 @@ def clean_directory(dir_path, dir_name):
         else:
             print("\nThe {0} directory is not a directory: {1}\n".format(dir_name, dir_path))
             exit_with_code(1)
-    else:
+    if not os.path.exists(dir_path):
         try:
             print('Creating the {0} directory: {1}'.format(dir_name, dir_path))
             os.makedirs(dir_path)
@@ -609,6 +571,11 @@ def remove_file(file_path):
 
 
 def save_version_info():
+    """Save version and language information to a __init__.py file in the build directory
+    so that it can be imported and used in the publish.py script.  Also create index.html
+    files for use in the top and version directories, as well as the version_links.js file
+    to provide the list of selectable versions in the options section of each web page.
+    """
     file_name = os.path.join(SPHINX_BUILD_DIR, '__init__.py')
     remove_file(file_name)
     print("Saving: {0}".format(file_name,))
@@ -639,6 +606,13 @@ def save_version_info():
 
 
 def do_build(target=None, language='', clean=False):
+    """Perform the specified build operation.
+
+    Args:
+        target (str, optional): Type of build target to use. Defaults to None.
+        language (str, optional): Language code to use for the build. If not specified, the default language is used.
+        clean (bool, optional): Signals whether the build directory should be emptied before starting the build. Defaults to False.
+    """
     if not (target and target in SPHINX_BUILD_TARGETS.keys()):
         print("\nUnknown build target: {0}".format(target))
         exit_with_code(1)
@@ -650,20 +624,13 @@ def do_build(target=None, language='', clean=False):
         language_option = ''
     else:
         language_option = '-D language=' + language
-        check_sphinx_intl()
-        command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
-        print('\nUpdating PO files with command: {0}\n'.format(command))
-        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
-        if exit_code:
-            exit_with_code(exit_code)
+        update_po(language)
 
     if clean:
         clean_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[target]['dir'])
         print('\nCleaning build directory: {0}'.format(clean_dir))
         clean_directory(clean_dir, target)
 
-    # command = ' '.join([SPHINXBUILD, '-M', 'html', SPHINXSOURCEDIR, SPHINXBUILDDIR, language_option])
-    # command = ' '.join([SPHINX_BUILD, '-M', 'html', '"' + SPHINX_SOURCE_DIR + '"', '"' + build_dir + '"', '-c', '.', language_option])
     command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
     print('\nBuilding with command: {0}\n'.format(command))
     try:
@@ -684,8 +651,7 @@ def do_build(target=None, language='', clean=False):
 
 
 def build_html(language=''):
-    """Build the HTML files.  Includes multiple checks for success to accommodate race
-    condition in Windows.
+    """Build post processing specific to HTML files.
 
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
@@ -732,7 +698,7 @@ def build_html(language=''):
 
 
 def build_pdf(language=''):
-    """Build the PDF file.
+    """Build post processing specific to PDF files.
 
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
@@ -766,7 +732,7 @@ def build_pdf(language=''):
 
 
 def build_epub(language=''):
-    """Build the epub file.
+    """Build post processing specific to ePub files.
 
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
@@ -817,6 +783,15 @@ def update_po(language):
 
 
 def check_language(language, supported_only=False):
+    """Checks that the specified language is a valid language code.
+
+    Args:
+        language (str): Language code to check.
+        supported_only (bool, optional): Validates the specified language against the list of supported language codes only. Defaults to False.
+
+    Returns:
+        bool: True if the language code is valid, otherwise False.
+    """
     if language and isinstance(language, str):
         if RE_TEST_LANGUAGE.match(language):
             if (not supported_only) or language in LANGUAGE_LIST.keys():
