@@ -31,8 +31,3 @@ appreciated.
    `Contributing to MusicBrainz Picard <https://github.com/metabrainz/picard/blob/master/CONTRIBUTING.md>`_ /
    `Picard Translations <https://github.com/metabrainz/picard/blob/master/po/README.md>`_ /
    `Contributing to the Documentation <https://github.com/rdswift/picard-docs/blob/master/.github/CONTRIBUTING.md>`_
-
-.. toctree::
-   :hidden:
-
-   acknowledgements

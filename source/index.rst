@@ -28,6 +28,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
    introduction
    contributing
+   acknowledgements
    glossary
 
 
