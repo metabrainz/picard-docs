@@ -39,9 +39,15 @@ Spanish (Lead: TBA)
 * TBA
 
 
-Content Contributors
+Contributors
 --------------------
 
+This list includes contributors to the documentation, regardless of their role.  In addition to actual content contributors,
+this includes leads, translators, reviewers and proofreaders.  All contributions are valuable and appreciated.  As such, the
+names are presented in alphabetical order so as not to imply the relative importance of someone's contribution based on their
+position in the list.
+
+Contributors include:
 Vedant Chakravadhanula,
 Rahul Kumar Gupta,
 Wieland Hoffmann,

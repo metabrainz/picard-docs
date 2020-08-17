@@ -13,6 +13,7 @@ MusicBrainz Picard
 
    introduction
    contributing
+   acknowledgements
    glossary
    pdf_starting
    config/configuration
