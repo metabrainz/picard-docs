@@ -7,8 +7,8 @@
 My tags are truncated to 30 characters in Windows Media Player!
 ==================================================================================
 
-Prior to version 0.14, Picard's default settings were to write ID3v2.4 and ID3v1 tags to files. WMP can't read ID3v2.4, so it falls
-back to ID3v1 which has a limitation of 30 characters per title. To solve this on versions prior to 0.14, configure Picard to write
-ID3v2.3 tags instead.
+Windows Media Player (WMP) can only read ID3v2.3 tags. If you have tagged your files with ID3v2.4 WMP falls back to ID3v1 which has a
+limitation of 30 characters per title. Writing ID3v2.3 is the default, but you can configure it in the :doc:`tag options for ID3
+<../config/options_tags_compatibility_id3>`.
 
-Starting with version 0.14, the default settings have been changed to ID3v2.3 and this should no longer be an issue.
+Prior to version 0.14, Picard's default setting was to write ID3v2.4 to files.
