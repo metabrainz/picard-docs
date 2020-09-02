@@ -141,10 +141,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
 **recording**
 
-   An entity in MusicBrainz which can be linked to tracks on releases. For example "`Be (One in a Million) 
-   <https://musicbrainz.org/recording/fbd0e1a0-b6c5-4926-b89d-3922e4144da9>`_" is the recording linked to 
-   track 14 on the album "Tourist". Each track must always be associated with a single recording, but a 
-   recording can be linked to any number of tracks.
+   An entity in MusicBrainz which can be linked to tracks on releases. Each track must always be 
+   associated with a single recording, but a recording can be linked to any number of tracks.
+   For example, this recording of "`Bohemian Rhapsody 
+   <https://musicbrainz.org/recording/b1a9c0e9-d987-4042-ae91-78d6a3267d69>`_" is found as a track on over 100 releases. 
 
    Please see the `Recording <https://musicbrainz.org/doc/Recording>`_ page on the MusicBrainz
    website for additional information.
