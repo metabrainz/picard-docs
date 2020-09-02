@@ -209,11 +209,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
    A distinct intellectual or artistic creation, which can be expressed in the form of
    one or more audio recordings. While a 'Work' in MusicBrainz is usually musical in nature, it is
-   not necessarily so. For example, a work could be a novel, play, poem or essay, later recorded as
-   an oratory or audiobook.  "`Blinded by the Light
-   <https://musicbrainz.org/recording/431b3d53-2783-46fd-9bb4-e1410f2941b6>`_" by "Manfred Mann's Earth Band"
-   is a recording of "`Blinded by the Light
-   <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_" written by Bruce Springsteen.
+   not necessarily so. A work could also be a novel, play, poem or essay, later recorded as
+   an oratory or audiobook. For example, the song "`Blinded by the Light
+   <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_" written by Bruce Springsteen 
+   has well over 100 recordings of it.
 
    Please see the `Work <https://musicbrainz.org/doc/Work>`_ page on the MusicBrainz website for
    additional information.
