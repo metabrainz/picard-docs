@@ -50,6 +50,7 @@ position in the list.
 Contributors include (in alphabetic surname order):
 
 - Vedant Chakravadhanula
+- Pavan Chander
 - Rahul Kumar Gupta
 - Wieland Hoffmann
 - Jun Kim
