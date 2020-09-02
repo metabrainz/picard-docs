@@ -128,6 +128,21 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
    Please see the `UUID page on Wikipedia <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_
    for more information.
+   
+.. index::
+   single: medium
+
+**medium**
+
+   One of the physical, separate things you would get when you buy something in a record store. They are the 
+   individual CDs, vinyls, etc. contained within the packaging of an album (or any other type of release). 
+   Mediums are always included in a release, and have a position in said release (e.g. disc 1 or disc 2). 
+   They have a format, like CD, 12" vinyl or cassette (in some cases this will be unknown), and can have 
+   an optional title (e.g. disc 2: The Early Years). For example, CD 1 of "`The Wall 
+   <https://musicbrainz.org/release/4bd2dbd5-a961-335a-a618-39c26b2ee791#disc1>`_".
+
+   Please see the `Medium <https://musicbrainz.org/doc/Medium>`_ page on the MusicBrainz
+   website for additional information.
 
 .. index::
    see: non-album track; standalone recording
