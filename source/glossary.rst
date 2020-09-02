@@ -227,7 +227,7 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    not necessarily so. A work could also be a novel, play, poem or essay, later recorded as
    an oratory or audiobook. For example, the song "`Blinded by the Light
    <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_" written by Bruce Springsteen 
-   has well over 100 recordings of it.
+   has been recorded well over 100 times.
 
    Please see the `Work <https://musicbrainz.org/doc/Work>`_ page on the MusicBrainz website for
    additional information.
