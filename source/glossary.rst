@@ -128,17 +128,17 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
    Please see the `UUID page on Wikipedia <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_
    for more information.
-   
+
 .. index::
    single: medium
 
 **medium**
 
-   One of the physical, separate things you would get when you buy something in a record store. They are the 
-   individual CDs, vinyls, etc. contained within the packaging of an album (or any other type of release). 
-   Mediums are always included in a release, and have a position in said release (e.g. disc 1 or disc 2). 
-   They have a format, like CD, 12" vinyl or cassette (in some cases this will be unknown), and can have 
-   an optional title (e.g. disc 2: The Early Years). For example, CD 1 of "`The Wall 
+   One of the physical, separate things you would get when you buy something in a record store. They are the
+   individual CDs, vinyls, etc. contained within the packaging of an album (or any other type of release).
+   Mediums are always included in a release, and have a position in said release (e.g. disc 1 or disc 2).
+   They have a format like CD, 12" vinyl or cassette (in some cases this will be unknown), and can have
+   an optional title (e.g. disc 2: The Early Years). For example, CD 1 of "`The Wall
    <https://musicbrainz.org/release/4bd2dbd5-a961-335a-a618-39c26b2ee791#disc1>`_".
 
    Please see the `Medium <https://musicbrainz.org/doc/Medium>`_ page on the MusicBrainz
@@ -156,10 +156,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
 **recording**
 
-   An entity in MusicBrainz which can be linked to tracks on releases. Each track must always be 
+   An entity in MusicBrainz which can be linked to tracks on releases. Each track must always be
    associated with a single recording, but a recording can be linked to any number of tracks.
-   For example, this recording of "`Bohemian Rhapsody 
-   <https://musicbrainz.org/recording/b1a9c0e9-d987-4042-ae91-78d6a3267d69>`_" is found as a track on over 100 releases. 
+   For example, this recording of "`Bohemian Rhapsody
+   <https://musicbrainz.org/recording/b1a9c0e9-d987-4042-ae91-78d6a3267d69>`_" is found as a track on over 100 releases.
 
    Please see the `Recording <https://musicbrainz.org/doc/Recording>`_ page on the MusicBrainz
    website for additional information.
@@ -185,8 +185,8 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    belongs to one, and only one release group. Both release groups and releases are "albums" in a
    general sense, but with an important difference: a release is something you can buy as media such
    as a CD or a vinyl record, while a release group embraces the overall concept of an album — it
-   doesn't matter how many CDs or editions / versions it had.  For example the `Sea of No Cares
-   <https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca>`_ release group 
+   doesn't matter how many CDs or editions / versions it had.  For example the `"Sea of No Cares"
+   <https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca>`_ release group
    contains multiple releases.
 
    Please see the `Release Group <https://musicbrainz.org/doc/Release_Group>`_ page on the MusicBrainz
@@ -226,7 +226,7 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    one or more audio recordings. While a 'Work' in MusicBrainz is usually musical in nature, it is
    not necessarily so. A work could also be a novel, play, poem or essay, later recorded as
    an oratory or audiobook. For example, the song "`Blinded by the Light
-   <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_" written by Bruce Springsteen 
+   <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_" written by Bruce Springsteen
    has been recorded well over 100 times.
 
    Please see the `Work <https://musicbrainz.org/doc/Work>`_ page on the MusicBrainz website for
