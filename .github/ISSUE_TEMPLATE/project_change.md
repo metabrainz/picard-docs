@@ -1,8 +1,8 @@
 ---
-name: Documentation Content Changes
-about: Report an error or request a change to the documentation content
-title: 'Content: '
-labels: 'documentation'
+name: Project Changes
+about: Request a change to the documentation project itself (e.g. administration, structure, outputs, etc.)
+title: 'Project: '
+labels: 'admin'
 assignees: ''
 
 ---
@@ -19,10 +19,9 @@ assignees: ''
 
 ### Type of change requested
 
-- [x] Correction (fix a mistake)
-- [ ] Addition (add new material)
-- [ ] Modification / Deletion (revise existing material)
-- [ ] Other (formatting, typos, etc.)
+- [x] Improvement Request (change an existing part of the project)
+- [ ] Enhancement Request (add something new to the project)
+- [ ] Other
 
 ### What you would like to see changed
 
@@ -30,8 +29,8 @@ Please provide a description of what you want changed.
 
 ### Why you would like to see this changed
 
-Please provide a reason for making the requested changes (e.g. The information is incorrect or unclear as shown.)
+Please provide a reason for making the requested changes (e.g. To provide a file I can use with my e-reader.)
 
 ### Additional context
 
-Please add any other comments or screenshots about the change request here.
+Add any other comments or screenshots about the change request here.
