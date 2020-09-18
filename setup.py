@@ -415,18 +415,11 @@ def check_sphinx_build():
     """
     with open(os.devnull, 'w') as devnull:
         try:
-            if subprocess.call([SPHINX_BUILD, '--version'],
-                               stdout=devnull, stderr=devnull) == 0:
-                return
+            subprocess.call([SPHINX_BUILD, '--version'], stdout=devnull, stderr=devnull)
+            return
         except FileNotFoundError:
             pass
-    print("The '{0}' command was not found. Make sure you have Sphinx "
-          "installed, then set the SPHINXBUILD environment variable "
-          "to point to the full path of the '{0}' executable. "
-          "Alternatively you can add the directory with the "
-          "executable to your PATH. If you don't have Sphinx "
-          "installed, grab it from http://sphinx-doc.org/)"
-          .format(SPHINX_BUILD))
+    print("The '{0}' command was not found.".format(SPHINX_BUILD))
     exit_with_code(1)
 
 
@@ -435,18 +428,11 @@ def check_sphinx_intl():
     """
     with open(os.devnull, 'w') as devnull:
         try:
-            if subprocess.call([SPHINX_INTL, '--help'],
-                               stdout=devnull, stderr=devnull) == 1:
-                return
+            subprocess.call(['spagnaz', '--help'], stdout=devnull, stderr=devnull)
+            return
         except FileNotFoundError:
             pass
-    print("The '{0}' command was not found. Make sure you have Sphinx "
-          "installed, then set the SPHINXBUILD environment variable "
-          "to point to the full path of the '{0}' executable. "
-          "Alternatively you can add the directory with the "
-          "executable to your PATH. If you don't have Sphinx "
-          "installed, grab it from http://sphinx-doc.org/)"
-          .format(SPHINX_INTL))
+    print("The '{0}' command was not found.".format(SPHINX_INTL))
     exit_with_code(1)
 
 

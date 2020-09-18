@@ -66,11 +66,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        echo sphinx-build found at: `which sphinx-build`
+        echo sphinx-intl found at: `which sphinx-intl`
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
-        echo `which sphinx-intl`
-        sphinx-intl --help
     - name: Build HTML Files
       run: |
         python ./setup.py -l all build html
