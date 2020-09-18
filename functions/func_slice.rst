@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $slice
 ======
@@ -9,15 +12,15 @@ $slice
 
 **Description:**
 
-Returns a multi-value variable containing the elements between the ``start`` and
-``end`` indexes from the multi-value variable ``name``. A literal value representing a
-multi-value can be substituted for ``name``, using the ``separator`` (or a
-semicolon followed by a space "; " if not passed) to coerce the value into a
+Returns a multi-value variable containing the elements from the ``start`` index up to
+but not including the ``end`` index from the multi-value variable ``name``. A literal
+value representing a multi-value can be substituted for ``name``, using the ``separator``
+(or a semicolon followed by a space "; " if not passed) to coerce the value into a
 proper multi-valued variable.
 
-Indexes are zero based. Negative numbers will be counted
-back from the end of the list. If the ``start`` or ``end`` indexes are left blank,
-they will default to the start and end of the list respectively.
+Indexes are zero based. Negative numbers will be counted back from the number of elements
+in the list. If the ``start`` or ``end`` indexes are left blank, they will default to 0
+and the number of elements in the list respectively.
 
 A typical use might be to create a multi-value variable with all artists in
 ``%artists%`` except the first, which can be used to create a "feat." list.  This

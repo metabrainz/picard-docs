@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-18 16:21-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../functions/func_truncate.rst:7
+msgid "$truncate"
+msgstr ""
+
+#: ../../functions/func_truncate.rst:9
+msgid "Usage: **$truncate(text,length)**"
+msgstr ""
+
+#: ../../functions/func_truncate.rst:10
+msgid "Category: text"
+msgstr ""
+
+#: ../../functions/func_truncate.rst:11
+msgid "Implemented: Picard 0.12"
+msgstr ""
+
+#: ../../functions/func_truncate.rst:13
+msgid "**Description:**"
+msgstr ""
+
+#: ../../functions/func_truncate.rst:15
+msgid ""
+"Truncate ``text`` to ``length``.  If ``length`` is less than 0, then the "
+"value used is the number of characters in ``text`` plus ``length`` (e.g.:"
+" ``$truncate(abcd,-1)`` is the same as ``$truncate(abcd,3)``).  If "
+"``length`` is missing or a negative number greater than the number of "
+"characters in ``text``, the function will return an empty string."
+msgstr ""
+
+#: ../../functions/func_truncate.rst:21
+msgid "**Example:**"
+msgstr ""
+
+#: ../../functions/func_truncate.rst:23
+msgid "The following statements will return the values indicated::"
+msgstr ""
+

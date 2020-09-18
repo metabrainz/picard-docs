@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $matchedtracks
 ==============
@@ -9,7 +12,11 @@ $matchedtracks
 
 **Description:**
 
-Returns the number of matched tracks within a release.  Note that this only works in File Naming scripts.
+Returns the number of matched tracks within a release.
+
+.. note::
+
+    This function only works in File Naming scripts.
 
 
 **Example:**

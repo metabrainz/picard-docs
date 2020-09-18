@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $is_audio
 =========
@@ -16,6 +19,6 @@ Returns true, if the track being processed is not shown as being a video.
 
 The following statements will return the values indicated::
 
-    $is_audio()  ==>  "1" (if the track is not a video)
-    $is_audio()  ==>  ""  (if the track is a video)
+    $is_audio()  ==>  "1"  (True, if the track is not a video)
+    $is_audio()  ==>  ""   (False, if the track is a video)
 

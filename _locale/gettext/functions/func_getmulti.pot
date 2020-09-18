@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-18 16:21-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../functions/func_getmulti.rst:7
+msgid "$getmulti"
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:9
+msgid "Usage: **$getmulti(name,index[,separator])**"
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:10
+msgid "Category: multi-value"
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:11
+msgid "Implemented: Picard 2.3"
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:13
+msgid "**Description:**"
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:15
+msgid "Gets the element at ``index`` from the multi-value variable ``name``. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-value variable."
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:20
+msgid "The ``index`` is zero based.   If ``index`` is less than 0, then the value used is the number of elements in ``name`` plus ``index`` (e.g.: ``$getmulti(%abcd%,-1)`` is the same as ``$getmulti(%abcd%,3)`` if ``%abcd%`` is a multi-value variable with four elements).  If ``index`` is missing, not an integer, a number greater than or equal to the number of elements in ``name``, or a negative number greater than the number of elements in ``name``, then the function will return an empty string."
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:28
+msgid "**Example:**"
+msgstr ""
+
+#: ../../functions/func_getmulti.rst:30
+msgid "The following statements will return the values indicated::"
+msgstr ""

@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $if
 ===
@@ -9,7 +12,7 @@ $if
 **Description:**
 
 If ``condition`` is not empty it returns ``then``, otherwise it returns ``else``.  If ``else``
-is not provided, it will be assumed to be "".  In addition to (or instead of) returning values,
+is not provided, it will be assumed to be an empty string.  In addition to (or instead of) returning values,
 ``then`` and ``else`` can be used to conditionally execute other functions.
 
 
@@ -26,5 +29,5 @@ The following statements will return the values indicated::
     $if(%bar%,This is bar)                    ==>  ""
     $if(,True,False)                          ==>  "False"
     $if( ,True,False)                         ==>  "True"
-    $if(,$set(value,True),$set(value,False))  ==>  Sets %value% to "False"
-    $set(value,$if(%bar%,True,False))         ==>  Sets %value% to "False"
+    $if(,$set(value,True),$set(value,False))  ==>  Sets "value" to "False"
+    $set(value,$if(%bar%,True,False))         ==>  Sets "value" to "False"

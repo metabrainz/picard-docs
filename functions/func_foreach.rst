@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $foreach
 ========
@@ -23,11 +26,13 @@ variable.
 
 The following statements will perform the processing indicated::
 
+    $noop( Mark all listed tags for deletion from the files. )
     $foreach(genre; comment; year,$delete(%_loop_value%))
-            ==>  Mark all listed tags for deletion from the files.
 
+    $noop( Create an 'artist_count' tag with a count of all artists
+           listed for the track. )
     $foreach(%artists%,$set(artist_count,%_loop_count%))
-            ==>  Create an 'artist_count' tag with a count of all artists listed for the track.
 
+    $noop( Create a separate tag for each artist listed for the
+           track as 'artist_1', 'artist_2', etc. )
     $foreach(%artists%,$set(artist_%_loop_count%,%_loop_value%))
-            ==>  Create a separate tag for each artist listed for the track as 'artist_1', 'artist_2', etc.

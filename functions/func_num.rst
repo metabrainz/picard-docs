@@ -1,15 +1,18 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $num
 ====
 
-| Usage: **$num(num,len)**
+| Usage: **$num(number,length)**
 | Category: text
 
 **Description:**
 
-Returns ``num`` formatted to ``len`` digits, where ``num`` and ``len`` are integers and
-``len`` cannot be greater than 20.
+Returns ``number`` formatted to ``length`` digits, where ``number`` and ``length`` are integers and
+``length`` cannot be greater than 20.
 
 
 **Example:**

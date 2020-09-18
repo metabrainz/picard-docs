@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $delprefix
 ==========
@@ -10,7 +13,7 @@ $delprefix
 **Description:**
 
 Deletes the specified ``prefixes`` from the beginning of ``text``. Any number of ``prefixes``
-can be specified, separated by commas. If no prefix is specified 'A' and 'The' are used by
+can be specified, separated by commas. If no prefix is specified "A" and "The" are used by
 default. Note that the matching is case-sensitive.
 
 

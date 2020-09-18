@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-18 16:21-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../config/options_tags_compatibility_wave.rst:8
+msgid "WAVE Files"
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:16
+msgid ""
+"WAVE by itself as a standard only supports the INFO chunk tags, which are"
+" very limited.  In addition, INFO chunks don't have any proper support "
+"for encoding."
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:19
+msgid ""
+"In all cases Picard will write ID3 tags to the WAVE files. This is "
+"supported by quite a few tools; however, it is not supported universally."
+"  Tools not supporting ID3 tags should just ignore them.  If possible, "
+"this is likely the best option to have proper tags in WAVE files. For "
+"compatibility with software that does not support ID3v2 tags, Picard can "
+"also save `Resource Interchange File Format "
+"<https://wikipedia.org/wiki/Resource_Interchange_File_Format>`_ (RIFF) "
+"INFO tags to WAVE files.  RIFF INFO is read and written only as an extra."
+" If there are no existing ID3 tags, the data from RIFF INFO will be used."
+"  When saving files, RIFF INFO will be written in addition to the ID3v2 "
+"tags."
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:26
+msgid ""
+"Picard's use of the RIFF INFO tags is determined by the following "
+"configuration settings:"
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:28
+msgid "**Also include RIFF INFO tags in the files**"
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:30
+msgid "Picard will save the RIFF INFO tags to the files."
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:32
+msgid "**Remove existing RIFF INFO tags from WAVE files**"
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:34
+msgid ""
+"Picard will remove any existing RIFF INFO tags from the WAVE files. This "
+"setting is ignored if the previous setting is enabled to allow writing "
+"the RIFF INFO tags to the files."
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:37
+msgid "**RIFF INFO Text Encoding**"
+msgstr ""
+
+#: ../../config/options_tags_compatibility_wave.rst:39
+msgid ""
+"This setting allows you to specify the encoding used for the RIFF INFO "
+"tags written.  The default setting is Windows-1252 encoding.  Picard can "
+"also use UTF-8 as an alternative, which allows for full language support,"
+" but it depends on the software reading it.  Typically, if the software "
+"supports this, it will read the ID3 tags anyway so there is not much to "
+"be gained."
+msgstr ""
+

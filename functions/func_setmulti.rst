@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $setmulti
 =========
@@ -19,6 +22,6 @@ and then set them back as proper multi-valued variable.
 
 The following statements will return the values indicated::
 
-    $setmulti(genre,$lower(%genre%))  ==>  'genre' with all elements in lower case
-    $setmulti(alpha,A; B; C)          ==>  'alpha' with 3 elements ('A', 'B' and 'C')
-    $setmulti(mixed,A:A; B:B; C:C,:)  ==>  'mixed' with 4 elements ('A', 'A; B', 'B; C' and 'C')
+    $setmulti(genre,$lower(%genre%))  ==>  all "genre" elements in lower case
+    $setmulti(alpha,A; B; C)          ==>  3 elements ("A", "B" and "C")
+    $setmulti(mixed,A:A; B:B,:)       ==>  3 elements ("A", "A; B" and "B")

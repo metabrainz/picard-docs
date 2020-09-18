@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-18 16:21-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../functions/func_map.rst:7
+msgid "$map"
+msgstr ""
+
+#: ../../functions/func_map.rst:9
+msgid "Usage: **$map(name,code[,separator])**"
+msgstr ""
+
+#: ../../functions/func_map.rst:10
+msgid "Category: multi-value"
+msgstr ""
+
+#: ../../functions/func_map.rst:11
+msgid "Implemented: Picard 2.3"
+msgstr ""
+
+#: ../../functions/func_map.rst:13
+msgid "**Description:**"
+msgstr ""
+
+#: ../../functions/func_map.rst:15
+msgid "Iterates over each element found in the multi-value variable ``name`` and updates the value of the element to the value returned by ``code``, returning the updated multi-value variable. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable."
+msgstr ""
+
+#: ../../functions/func_map.rst:21
+msgid "For each loop, the element value is first stored in the variable ``_loop_value`` and the count is stored in the variable ``_loop_count``. This allows the element or count value to be accessed within the code script."
+msgstr ""
+
+#: ../../functions/func_map.rst:27
+msgid "You cannot save the ``code`` to a variable and then pass the variable to the function as ``%code%`` because it will be evaluated when it is assigned to the variable rather than during the loop."
+msgstr ""
+
+#: ../../functions/func_map.rst:32
+msgid "**Example:**"
+msgstr ""
+
+#: ../../functions/func_map.rst:36
+#: ../../functions/func_map.rst:54
+msgid "The following statements will return the values indicated::"
+msgstr ""

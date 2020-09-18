@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $join
 =====
@@ -19,14 +22,14 @@ space "; " if not passed) to coerce the value into a proper multi-valued variabl
 
 The following statements will return the values indicated::
 
-    $set(foo,First:A; Second:B; Third:C)
-    $join(%foo%, >> )                          ==>  "First:A; Second:B; Third:C"
-    $join(%foo%, >> ,:)                        ==>  "First:A; Second:B; Third:C"
+    $set(foo,First:A; Second:B)
+    $join(%foo%, >> )                     ==>  "First:A; Second:B"
+    $join(%foo%, >> ,:)                   ==>  "First >> A; Second >> B"
 
-    $setmulti(bar,First:A; Second:B; Third:C)
-    $join(%bar%, >> )                          ==>  "First:A >> Second:B >> Third:C"
-    $join(%bar%, >> ,:)                        ==>  "First >> A; Second >> B; Third >> C"
+    $setmulti(bar,First:A; Second:B)
+    $join(%bar%, >> )                     ==>  "First:A >> Second:B"
+    $join(%bar%, >> ,:)                   ==>  "First >> A; Second >> B"
 
-    $join(First:A; Second:B; Third:C,)         ==>  "First:ASecond:BThird:C"
-    $join(First:A; Second:B; Third:C, >> )     ==>  "First:A >> Second:B >> Third:C"
-    $join(First:A; Second:B; Third:C, >> ,:)   ==>  "First >> A; Second >> B; Third >> C"
+    $join(First:A; Second:B,)             ==>  "First:ASecond:B"
+    $join(First:A; Second:B, >> )         ==>  "First:A >> Second:B"
+    $join(First:A; Second:B, >> ,:)       ==>  "First >> A; Second >> B"

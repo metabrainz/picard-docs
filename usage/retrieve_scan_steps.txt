@@ -1,0 +1,40 @@
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
+
+.. index::
+   single: scan files
+
+The steps to follow to scan and lookup files are:
+
+1. Add your files using :menuselection:`"Files --> Add Files..."` or :menuselection:`"Files --> Add Folder..."`.
+   For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is
+   enabled from :menuselection:`"View --> File Browser"`.
+
+   .. image:: images/lookup_1.png
+      :width: 100%
+
+   |
+
+2. Drag the selected directory or files to the "Unclustered Files" folder, and wait for Picard to process the files -
+   the names will turn from grey to black.
+
+   .. image:: images/lookup_2.png
+      :width: 100%
+
+   |
+
+3. Select the desired files and use :menuselection:`"Tools --> Scan"` to scan the files to determine their AcoustID fingerprints
+   and lookup using this information. The album(s) matching the files will show up in the right-hand pane based on a "best match"
+   using the Preferred Releases settings in the Metadata options.
+
+   A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.
+
+   .. image:: images/lookup_5.png
+      :width: 100%
+
+   |
+
+   If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as clustering
+   the files or a browser lookup.

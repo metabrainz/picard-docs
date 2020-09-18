@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $or
 ===
@@ -16,11 +19,11 @@ of arguments. The result is true if **ANY** of the arguments is not empty.
 
 The following statements will return the values indicated::
 
-    $or(,)          ==>  ""
-    $or(,1)         ==>  "1"
-    $or(,A)         ==>  "1"
-    $or(,$gt(4,5))  ==>  ""
-    $or(,$lt(4,5))  ==>  "1"
-    $or(,,)         ==>  ""
-    $or(,,0)        ==>  "1"
-    $or(,, )        ==>  "1"
+    $or(,)          ==>  ""   (False)
+    $or(,1)         ==>  "1"  (True)
+    $or(,A)         ==>  "1"  (True)
+    $or(,$gt(4,5))  ==>  ""   (False)
+    $or(,$lt(4,5))  ==>  "1"  (True)
+    $or(,,)         ==>  ""   (False)
+    $or(,,0)        ==>  "1"  (True)
+    $or(,, )        ==>  "1"  (True)

@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $if2
 ====
@@ -8,7 +11,7 @@ $if2
 
 **Description:**
 
-Returns first non empty argument.  Can be used with an arbitrary number of arguments.
+Returns the first non empty argument.  Can be used with an arbitrary number of arguments.
 
 
 **Example:**

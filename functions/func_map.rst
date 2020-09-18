@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $map
 ====
@@ -19,25 +22,69 @@ For each loop, the element value is first stored in the variable ``_loop_value``
 is stored in the variable ``_loop_count``. This allows the element or count value to be
 accessed within the code script.
 
-Note that you cannot save the ``code`` to a variable and then pass the variable to the function
-as ``%code%`` because it will be evaluated when it is assigned to the variable rather than
-during the loop.
+.. note::
+
+    You cannot save the ``code`` to a variable and then pass the variable to the function
+    as ``%code%`` because it will be evaluated when it is assigned to the variable rather than
+    during the loop.
 
 
 **Example:**
 
-The following statements will return the values indicated::
+.. only:: html
 
-    $set(foo,First:A; Second:B; Third:C)
-    $map(%foo%,$upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; SECOND:B; THIRD:C"
-    $map(%foo%,$upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B; THIRD:4=C"
+   The following statements will return the values indicated::
 
-    $setmulti(bar,First:A; Second:B; Third:C)
-    $map(%bar%,$upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B; 3=THIRD:C"
-    $map(%bar%,$upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B; THIRD:4=C"
+       $set(foo,First:A; Second:B)
+       $map(%foo%,$upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; SECOND:B"
+       $map(%foo%,$upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
 
-    $map(First:A; Second:B; Third:C,$upper(%_loop_count%=%_loop_value%))  ==>
-                                                            "1=FIRST:A; 2=SECOND:B; 3=THIRD:C"
+       $setmulti(bar,First:A; Second:B)
+       $map(%bar%,$upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B"
+       $map(%bar%,$upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
 
-    $map(First:A; Second:B; Third:C,$upper(%_loop_count%=%_loop_value%),:)  ==>
-                                                            "1=FIRST:2=A; SECOND:3=B; THIRD:4=C"
+       $map(First:A; Second:B,
+           $upper(%_loop_count%=%_loop_value%))           ==>  "1=FIRST:A; 2=SECOND:B"
+
+       $map(First:A; Second:B,
+           $upper(%_loop_count%=%_loop_value%),:)         ==>  "1=FIRST:2=A; SECOND:3=B"
+
+.. only:: latex
+
+   The following statements will return the values indicated::
+
+       $set(foo,First:A; Second:B)
+       $map(%foo%,
+           $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; SECOND:B"
+       $map(%foo%,
+           $upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
+
+       $setmulti(bar,First:A; Second:B)
+       $map(%bar%,
+           $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B"
+       $map(%bar%,
+           $upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
+
+       $map(First:A; Second:B,
+           $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B"
+
+..    $map(First:A; Second:B,
+..        $upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
+..
+..    $set(foo,First:A; Second:B)
+..    $map(%foo%,
+..        $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; SECOND:B"
+..    $map(%foo%,
+..        $upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
+..
+..    $setmulti(bar,First:A; Second:B)
+..    $map(%bar%,
+..        $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B"
+..    $map(%bar%,
+..        $upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
+..
+..    $map(First:A; Second:B,
+..        $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B"
+..
+..    $map(First:A; Second:B,
+..        $upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"

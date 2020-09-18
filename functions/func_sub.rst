@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $sub
 ====
@@ -8,8 +11,8 @@ $sub
 
 **Description:**
 
-Subtracts ``y`` from ``x``. Can be used with an arbitrary number of arguments (i.e. ``$sub(x,y,z)`` = (x - y) - z).
-Returns "" if an argument is missing or not an integer.
+Subtracts ``y`` from ``x``. Can be used with an arbitrary number of arguments (i.e.: ``$sub(x,y,z)`` = (x - y) - z).
+Returns an empty string if an argument is missing or not an integer.
 
 
 **Example:**

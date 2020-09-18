@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $upper
 ======
@@ -15,4 +18,4 @@ Returns ``text`` in upper case.
 
 The following statement will return the value indicated::
 
-    $upper(This text is UPPER case)  ==>  "THIS TEXT IS ALL UPPER CASE"
+    $upper(This text is UPPER case)  ==>  "THIS TEXT IS UPPER CASE"

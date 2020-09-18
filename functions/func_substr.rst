@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $substr
 =======
@@ -14,10 +17,11 @@ index, up to (but not including) the character at the ``end`` index. Indexes are
 zero-based. Negative numbers will be counted back from the end of the string. If
 the start or end indexes are left blank, they will default to the start and end
 of the string respectively.  If the ``start`` index evaluates to a negative
-number (e.g. ``text`` is "abc" and ``start`` is -10), it will default to the
+number (e.g.: ``text`` is "abc" and ``start`` is -10), it will default to the
 start of the string.  Similarly, if ``end`` index is a number greater than the
 number of characters in the string, it will default to the end of the string.
-Invalid index values (e.g. ``start`` greater than ``end``) will return "".
+Invalid index values (e.g.: ``start`` greater than ``end``) will return an empty
+string.
 
 
 **Example:**

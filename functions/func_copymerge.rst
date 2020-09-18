@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $copymerge
 ==========
@@ -14,12 +17,12 @@ so retaining the original ordering. Like ``$copy``, this will also copy multi-va
 without flattening them.  Following the operation, ``target`` will be a multi-value variable.
 
 Note that the variable names for ``target`` and ``source`` are passed directly without enclosing them
-in percent signs "%".
+in percent signs '%'.
 
 
 **Example:**
 
-The following statements will yield the values for 'target' as indicated::
+The following statements will yield the values for ``target`` as indicated::
 
     $set(target,)
     $set(source,one)

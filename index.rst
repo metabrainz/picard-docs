@@ -1,38 +1,94 @@
-.. Picard ReadTheDocs master file.
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Picard Scripting & Tagging
-==========================
+
+.. Master File for Building HTML Documents
+
+:orphan:
+
+MusicBrainz Picard
+==================
+
+**User Guide for MusicBrainz Picard, the next generation tagger.**
+
+MusicBrainz Picard is a cross-platform music file tagger. This User Guide is intended to augment the information
+provided on the `Picard website <https://picard.musicbrainz.org/>`_ and to provide an alternate format for the
+documentation, including a PDF document suitable for printing. Links to additional information such as scripts,
+plugins and tutorials are provided when available rather than trying to reproduce the information in this document.
+
+.. include:: copyright_notice.txt
+
+.. .. seealso::
+
+..    For quick access to a particular topic, please use the search box or the :ref:`topic index <genindex>`.
+
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Overview:
+   :caption: About Picard
+   :hidden:
 
-   scripting
-..   variables/variables
+   about_picard/introduction
+   about_picard/glossary
+   about_picard/acknowledgements
+
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Tags & Variables:
+   :caption: Getting Started
+   :hidden:
 
+   getting_started/download
+   getting_started/screen_main
+   getting_started/status_icons
+   config/configuration
    variables/variables
-   variables/tags_basic
-   variables/tags_advanced
-   variables/variables_basic
-   variables/variables_advanced
+   extending/scripting
+   functions/list_by_type
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Functions:
+   :caption: Using Picard
+   :hidden:
 
-   functions/_list_by_name
-   functions/_list_by_type
+   General Usage <usage/using>
+   usage/other
+   extending/extending
+   faq/faq
 
 
-.. .. toctree::
-..    :maxdepth: 2
-..    :caption: Examples:
+.. toctree::
+   :caption: Workflow Recommendations
+   :hidden:
 
-..    examples/examples
+   General Recommendations <workflows/workflows>
+   workflows/workflow_cd
+   workflows/workflow_album
+   workflows/workflow_metadata
+   workflows/workflow_no_info
+
+
+.. toctree::
+   :caption: Troubleshooting
+   :hidden:
+
+   troubleshooting/troubleshooting
+   troubleshooting/no_coverart
+   troubleshooting/missing_tags
+   troubleshooting/not_saving
+   troubleshooting/stopped_working
+
+
+.. toctree::
+   :caption: Appendices
+   :hidden:
+   :maxdepth: 0
+   :titlesonly:
+
+   appendices/plugins_api
+   appendices/tag_mapping
+   appendices/command_line
+
+..   examples/examples
 
 
 .. Indices and tables
@@ -41,5 +97,3 @@ Picard Scripting & Tagging
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 .. * :ref:`search`
-.. * :doc:`scripting`
-.. * :doc:`variables/variables`

@@ -1,4 +1,7 @@
-.. Picard Function
+.. MusicBrainz Picard Documentation Project
+.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
+.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
+.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $getmulti
 =========
@@ -15,11 +18,11 @@ representing a multi-value can be substituted for ``name``, using the ``separato
 proper multi-value variable.
 
 The ``index`` is zero based.   If ``index`` is less than 0, then the
-value used is the number of elements in ``name`` plus ``index`` (e.g. ``$getmulti(%abcd%,-1)``
+value used is the number of elements in ``name`` plus ``index`` (e.g.: ``$getmulti(%abcd%,-1)``
 is the same as ``$getmulti(%abcd%,3)`` if ``%abcd%`` is a multi-value variable with four
 elements).  If ``index`` is missing, not an integer, a number greater than or equal to the
 number of elements in ``name``, or a negative number greater than the number of elements in
-``name``, then the function will return "".
+``name``, then the function will return an empty string.
 
 
 **Example:**
