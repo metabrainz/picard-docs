@@ -428,7 +428,7 @@ def check_sphinx_intl():
     """
     with open(os.devnull, 'w') as devnull:
         try:
-            subprocess.call(['spagnaz', '--help'], stdout=devnull, stderr=devnull)
+            subprocess.call([SPHINX_INTL, '--help'], stdout=devnull, stderr=devnull)
             return
         except FileNotFoundError:
             pass
