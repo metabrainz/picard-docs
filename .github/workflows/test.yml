@@ -69,6 +69,8 @@ jobs:
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+        echo `which sphinx-intl`
+        sphinx-intl --help
     - name: Build HTML Files
       run: |
         python ./setup.py -l all build html
