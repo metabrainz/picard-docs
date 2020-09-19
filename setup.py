@@ -54,6 +54,7 @@ SPHINX_BUILD_DIR = '_build'
 SPHINX_SOURCE_DIR = '.'
 SPHINX_LOCALE_DIR = '_locale'
 SPHINX_GETTEXT_DIR = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
+SPHINX_GETTEXT_DIR = '/'.join([SPHINX_LOCALE_DIR, 'gettext'])
 SPHINX_BUILD_TIMEOUT = 300
 SPHINX_BUILD_TARGETS = {
     'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
@@ -633,7 +634,8 @@ def do_build(target=None, language='', clean=False):
         print('\nCleaning build directory: {0}'.format(clean_dir))
         clean_directory(clean_dir, target)
 
-    command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
+    # command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
+    command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], SPHINX_SOURCE_DIR, SPHINX_BUILD_DIR, '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
     print('\nBuilding with command: {0}\n'.format(command))
     try:
         exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
@@ -756,8 +758,8 @@ def build_pot():
     the supported languages.
     """
     check_sphinx_build()
-    command = ' '.join([SPHINX_BUILD, '-M', 'gettext', '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_LOCALE_DIR + '"', '-c', '.', '-D', 'language={0}'.format(DEFAULT_LANGUAGE)])
-    print('Extracting POT files with command: {0}\n'.format(command))
+    command = [SPHINX_BUILD, '-M', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR, '-c', '.', '-D', 'language={0}'.format(DEFAULT_LANGUAGE)]
+    print('Extracting POT files with command: {0}\n'.format(' '.join(command)))
     exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
     if exit_code:
         exit_with_code(exit_code)
@@ -779,10 +781,12 @@ def update_po(language):
     """
     check_sphinx_intl()
     # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_LOCALE_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
-    command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
+    # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
     # command = ' '.join([SPHINX_INTL, 'build', '-d', '"' + SPHINX_GETTEXT_DIR + '"', '-o', '"' + SPHINX_LOCALE_DIR + '"', '-l', language])
     # command = ' '.join([SPHINX_INTL, 'update', '-l', language])
-    print('Updating PO files with command: {0}\n'.format(command))
+    # command = [SPHINX_INTL, 'update', '-p "' + SPHINX_GETTEXT_DIR + '"', '-l ' + language]
+    command = [SPHINX_INTL, 'update', '-p', SPHINX_GETTEXT_DIR, '-l', language]
+    print('Updating PO files with command: {0}\n'.format(' '.join(command)))
     exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
     if exit_code:
         exit_with_code(exit_code)
