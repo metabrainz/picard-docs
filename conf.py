@@ -88,7 +88,6 @@ exclude_patterns = [
     'docs',
     'html',
     'README.md',
-    'README.md',
     'testing',
     'Thumbs.db',
     'TODO.md',

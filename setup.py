@@ -18,7 +18,7 @@ import restructuredtext_lint
 import conf
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.08'
+SCRIPT_VERS = '0.09'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -52,18 +52,17 @@ SPHINX_BUILD = 'sphinx-build'
 SPHINX_INTL = 'sphinx-intl'
 SPHINX_BUILD_DIR = '_build'
 SPHINX_SOURCE_DIR = '.'
-SPHINX_LOCALE_DIR = '_locale'
+SPHINX_LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs[0] else '_locale'
 SPHINX_GETTEXT_DIR = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
-SPHINX_GETTEXT_DIR = '/'.join([SPHINX_LOCALE_DIR, 'gettext'])
 SPHINX_BUILD_TIMEOUT = 300
 SPHINX_BUILD_TARGETS = {
     'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
-    'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
-    'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc="epub"'},
+    # 'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
+    'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
+    'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
 }
 OUTPUT_DIR = 'docs'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
-MAKE_HTML_ZIP = False
 
 
 ######################
@@ -414,27 +413,43 @@ def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
 def check_sphinx_build():
     """Check if sphinx-build is available in current path.
     """
-    with open(os.devnull, 'w') as devnull:
-        try:
-            subprocess.call([SPHINX_BUILD, '--version'], stdout=devnull, stderr=devnull)
-            return
-        except FileNotFoundError:
-            pass
-    print("The '{0}' command was not found.".format(SPHINX_BUILD))
-    exit_with_code(1)
+    return
+    # with open(os.devnull, 'w') as devnull:
+    #     try:
+    #         subprocess.call([SPHINX_BUILD, '--version'], stdout=devnull, stderr=devnull)
+    #         return
+    #     except FileNotFoundError:
+    #         pass
+    # print("The '{0}' command was not found.".format(SPHINX_BUILD))
+    # exit_with_code(1)
 
 
 def check_sphinx_intl():
     """Check if sphinx-intl is available in current path.
     """
-    with open(os.devnull, 'w') as devnull:
-        try:
-            subprocess.call([SPHINX_INTL, '--help'], stdout=devnull, stderr=devnull)
-            return
-        except FileNotFoundError:
-            pass
-    print("The '{0}' command was not found.".format(SPHINX_INTL))
-    exit_with_code(1)
+    return
+    # with open(os.devnull, 'w') as devnull:
+    #     try:
+    #         subprocess.call([SPHINX_INTL, '--help'], stdout=devnull, stderr=devnull)
+    #         return
+    #     except FileNotFoundError:
+    #         pass
+    # print("The '{0}' command was not found.".format(SPHINX_INTL))
+    # exit_with_code(1)
+
+    # command = "{0} --help".format(SPHINX_INTL,)
+    # try:
+    #     # exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
+    #     exit_code = subprocess.run(command, shell=True, check=True, capture_output=True, timeout=SPHINX_BUILD_TIMEOUT).returncode
+    #     # print("\n\nexit_code = {0}\n\n".format(exit_code))
+    #     # exit_code = 1
+    #     # subprocess.run('ls -al', shell=True, check=True)
+    #     return
+    # except Exception as ex:
+    #     print("ERROR executing process: {0}".format(ex))
+    #     exit_code = 1
+    # if exit_code:
+    #     exit_with_code(exit_code)
 
 
 def create_directory(dir_path, dir_name):
@@ -583,7 +598,7 @@ def save_version_info():
     remove_file(file_name)
     print("Saving: {0}".format(file_name,))
     with open(file_name, 'w', encoding='utf8') as ofile:
-        ofile.write('current_version = "{0}"\n'.format(conf.version[1:],))
+        ofile.write('current_version = "{0}"\n'.format(conf.version,))
         ofile.write('default_language = "{0}"\n'.format(DEFAULT_LANGUAGE,))
         ofile.write('supported_languages = {0}\n'.format(LANGUAGES,))
         ofile.write('file_name_root = "{0}"\n'.format(FILE_NAME_ROOT,))
@@ -634,17 +649,34 @@ def do_build(target=None, language='', clean=False):
         print('\nCleaning build directory: {0}'.format(clean_dir))
         clean_directory(clean_dir, target)
 
-    # command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
-    command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], SPHINX_SOURCE_DIR, SPHINX_BUILD_DIR, '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
+    # # command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
+    # # command = [SPHINX_BUILD, SPHINX_BUILD_TARGETS[target]['cmd'], SPHINX_SOURCE_DIR, SPHINX_BUILD_DIR, '-c .', SPHINX_BUILD_TARGETS[target]['extra'], language_option]
+    # command = [SPHINX_BUILD, '-b ' + SPHINX_BUILD_TARGETS[target]['cmd'], SPHINX_SOURCE_DIR, SPHINX_BUILD_DIR, '-c .']
+    # if SPHINX_BUILD_TARGETS[target]['extra']:
+    #     command = command.append(SPHINX_BUILD_TARGETS[target]['extra'])
+    # if language_option:
+    #     command = command.append(language_option)
+    command = '{0} -M {1} {2} {3} -c . {4} {5}'.format(
+        SPHINX_BUILD,
+        SPHINX_BUILD_TARGETS[target]['cmd'],
+        SPHINX_SOURCE_DIR,
+        SPHINX_BUILD_DIR,
+        # os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[target]['dir']),
+        SPHINX_BUILD_TARGETS[target]['extra'],
+        language_option,
+    ).strip().replace('  ', ' ')
     print('\nBuilding with command: {0}\n'.format(command))
     try:
-        exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
+        # exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
+        exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_BUILD_TIMEOUT).returncode
+        # print("\n\nexit_code = {0}\n\n".format(exit_code))
+        # exit_code = 1
+        # subprocess.run('ls -al', shell=True, check=True)
     except Exception as ex:
         print("ERROR executing process: {0}".format(ex))
         exit_code = 1
     if exit_code:
         exit_with_code(exit_code)
-    save_version_info()
 
     if target == 'html':
         build_html(language=language)
@@ -682,25 +714,24 @@ def build_html(language=''):
         print('Files not copied.  Error: {0}'.format(ex))
         exit_with_code(1)
 
-    if MAKE_HTML_ZIP:
-        zip_file = os.path.join(OUTPUT_DIR, '{0}_{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, conf.version, language))
-        print('Removing old ZIP file: {0}'.format(zip_file))
-        remove_file(zip_file)
-        print('Copying HTML to ZIP file: {0}'.format(zip_file))
-        current_dir = os.getcwd()
+    zip_file = os.path.join(OUTPUT_DIR, '{0}_{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, conf.version, language))
+    print('Removing old ZIP file: {0}'.format(zip_file))
+    remove_file(zip_file)
+    print('Copying HTML to ZIP file: {0}'.format(zip_file))
+    current_dir = os.getcwd()
 
-        try:
-            with zipfile.ZipFile(zip_file, 'w') as myzip:
-                os.chdir(output_dir)
-                for dirName, subdirList, fileList in os.walk('.'):
-                    for fname in fileList:
-                        f_name = os.path.join(dirName, fname)
-                        myzip.write(f_name)
-        except Exception as ex:
-            print('Error creating ZIP file.  Error: {0}'.format(ex))
-            os.chdir(current_dir)
-            exit_with_code(1)
+    try:
+        with zipfile.ZipFile(zip_file, 'w') as myzip:
+            os.chdir(output_dir)
+            for dirName, subdirList, fileList in os.walk('.'):
+                for fname in fileList:
+                    f_name = os.path.join(dirName, fname)
+                    myzip.write(f_name)
+    except Exception as ex:
+        print('Error creating ZIP file.  Error: {0}'.format(ex))
         os.chdir(current_dir)
+        exit_with_code(1)
+    os.chdir(current_dir)
 
 
 def build_pdf(language=''):
@@ -709,14 +740,14 @@ def build_pdf(language=''):
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
     """
-    pdf_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['pdf']['dir'])
-    current_dir = os.getcwd()
+    # pdf_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['pdf']['dir'])
+    # current_dir = os.getcwd()
     try:
-        os.chdir(pdf_dir)
-        exit_code = subprocess.call('make', timeout=SPHINX_BUILD_TIMEOUT)
-        os.chdir(current_dir)
-        if exit_code:
-            exit_with_code(exit_code)
+        # os.chdir(pdf_dir)
+        # exit_code = subprocess.run('make pdflatex', shell=True, check=True, capture_output=False, timeout=SPHINX_BUILD_TIMEOUT).returncode
+        # os.chdir(current_dir)
+        # if exit_code:
+        #     exit_with_code(exit_code)
         pdf_file = os.path.join(SPHINX_BUILD_DIR, 'latex', 'musicbrainzpicard.pdf')
         target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].pdf'.format(conf.version, language))
         # Multiple checks if file exists to accommodate race condition in Windows
@@ -758,9 +789,12 @@ def build_pot():
     the supported languages.
     """
     check_sphinx_build()
-    command = [SPHINX_BUILD, '-M', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR, '-c', '.', '-D', 'language={0}'.format(DEFAULT_LANGUAGE)]
-    print('Extracting POT files with command: {0}\n'.format(' '.join(command)))
-    exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+    # command = ' '.join([SPHINX_BUILD, '-M', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR, '-c .', '-D language={0}'.format(DEFAULT_LANGUAGE)])
+    # command = ' '.join([SPHINX_BUILD, '-b', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR + '/gettext', '-c .', '-D language={0}'.format(DEFAULT_LANGUAGE)])
+    command = ' '.join([SPHINX_BUILD, '-b', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR + '/gettext', '-c .'])
+    print('Extracting POT files with command: {0}\n'.format(command))
+    # exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+    exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_BUILD_TIMEOUT).returncode
     if exit_code:
         exit_with_code(exit_code)
 
@@ -781,13 +815,11 @@ def update_po(language):
     """
     check_sphinx_intl()
     # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_LOCALE_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
-    # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + SPHINX_GETTEXT_DIR + '"', '-l', language])
+    command = ' '.join([SPHINX_INTL, 'update', '-p', SPHINX_GETTEXT_DIR, '-l', language])
     # command = ' '.join([SPHINX_INTL, 'build', '-d', '"' + SPHINX_GETTEXT_DIR + '"', '-o', '"' + SPHINX_LOCALE_DIR + '"', '-l', language])
     # command = ' '.join([SPHINX_INTL, 'update', '-l', language])
-    # command = [SPHINX_INTL, 'update', '-p "' + SPHINX_GETTEXT_DIR + '"', '-l ' + language]
-    command = [SPHINX_INTL, 'update', '-p', SPHINX_GETTEXT_DIR, '-l', language]
-    print('Updating PO files with command: {0}\n'.format(' '.join(command)))
-    exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
+    print('Updating PO files with command: {0}\n'.format(command))
+    exit_code = subprocess.run(command, shell=True, timeout=SPHINX_BUILD_TIMEOUT).returncode
     if exit_code:
         exit_with_code(exit_code)
 
