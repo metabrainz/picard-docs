@@ -76,13 +76,13 @@ jobs:
         python ./setup.py -l all build html
     - name: Install LaTeX dependencies
       run: |
-        sudo apt-get install latexmk
-        sudo apt-get install xzdec
-        sudo apt-get install texlive
-        sudo apt-get install texlive-latex-extra
+        sudo apt-get install latexmk xzdec texlive texlive-latex-extra texlive-lang-all
     - name: Build PDF Files
       run: |
         python ./setup.py -l all build pdf
     - name: Build EPUB Files
       run: |
         python ./setup.py -l all build epub
+    - name: Display Output Directory
+      run: |
+        ls -al docs
