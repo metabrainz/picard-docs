@@ -4,37 +4,46 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-07 12:42-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../config/options_os_x.rst:8
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../config/options_os_x.rst:10
 msgid ""
 "In macOS, this option is currently a text field. The device is usually "
 "``/dev/rdisk1``."
 msgstr ""
+"Dans macOS, cette option est actuellement un champ de texte. Le "
+"périphérique est généralement ``/dev/rdisk1``."
 
 #: ../../config/options_os_x.rst:12
 msgid ""
-"If that doesn't work, one way is to simply keep increasing the number "
-"(e.g. ``/dev/rdisk2``) until it does work. A less trial and error method "
-"is to open \"Terminal\" and type ``mount``. The output should include a "
+"If that doesn't work, one way is to simply keep increasing the number (e."
+"g. ``/dev/rdisk2``) until it does work. A less trial and error method is "
+"to open \"Terminal\" and type ``mount``. The output should include a "
 "line such as::"
 msgstr ""
+"Si cela ne fonctionne pas, une façon est de simplement continuer à "
+"augmenter le nombre (par exemple ``/dev/rdisk2``) jusqu'à ce que cela "
+"fonctionne. Une méthode moins d'essai et d'erreur consiste à ouvrir "
+"\"Terminal\" et à taper \"mount\". La sortie doit inclure une ligne "
+"telle que::"
 
 #: ../../config/options_os_x.rst:18
 msgid ""
@@ -42,4 +51,6 @@ msgid ""
 "example, it says ``/dev/disk2``, you should enter ``/dev/rdisk2`` in "
 "Picard's preferences."
 msgstr ""
-
+"Vous devez remplacer ``/dev/disk`` par ``/dev/rdisk``, donc si, par "
+"exemple, il dit ``/dev/disk2``, vous devez entrer ``/dev/rdisk2`` dans "
+"les préférences de Picard."

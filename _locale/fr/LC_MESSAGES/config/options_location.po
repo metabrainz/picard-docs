@@ -4,27 +4,29 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-07 11:33-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../config/options_location.rst:8
 msgid "Location"
-msgstr ""
+msgstr "Emplacement"
 
 #: ../../config/options_location.rst:19
 msgid "**Embed cover images into tags**"
-msgstr ""
+msgstr "**Incorporez des images de couverture dans des tags**"
 
 #: ../../config/options_location.rst:21
 msgid ""
@@ -33,10 +35,15 @@ msgid ""
 "the same directory, some music players will only display embedded images "
 "and don't find the separate files."
 msgstr ""
+"Permet aux images d'être intégrées directement dans vos fichiers "
+"musicaux. Bien que cela utilisera plus d'espace de stockage que de le "
+"stocker en tant que fichier image séparé dans le même répertoire, "
+"certains lecteurs de musique afficheront uniquement les images intégrées "
+"et ne trouveront pas les fichiers séparés."
 
 #: ../../config/options_location.rst:25
 msgid "**Only embed a front image**"
-msgstr ""
+msgstr "**N'intègre qu'une image avant**"
 
 #: ../../config/options_location.rst:27
 msgid ""
@@ -44,48 +51,67 @@ msgid ""
 "only display a single embedded image, so embedding additional images may "
 "not add any functionality."
 msgstr ""
+"N'intègre qu'une image avant dans vos fichiers musicaux. De nombreux "
+"lecteurs de musique n'afficheront qu'une seule image intégrée, donc "
+"l'incorporation d'images supplémentaires peut ne pas ajouter de "
+"fonctionnalité."
 
 #: ../../config/options_location.rst:32
 msgid "**Save cover images as separate files**"
-msgstr ""
+msgstr "**Enregistrer les images de couverture dans des fichiers séparés**"
 
 #: ../../config/options_location.rst:34
 msgid ""
-"In the file name mask you can use any variable or function from "
-":doc:`Picard Tags <../variables/variables>` and :doc:`Picard Scripting "
+"In the file name mask you can use any variable or function from :doc:"
+"`Picard Tags <../variables/variables>` and :doc:`Picard Scripting "
 "Functions <../functions/list_by_type>`. The mask should not contain a "
 "file extension; this is added automatically based on the actual image "
 "type. The default value is \"cover\". If you change this to \"folder\", "
 "Windows will use it to preview the containing directory."
 msgstr ""
+"Dans le masque de nom de fichier, vous pouvez utiliser n'importe quelle "
+"variable ou fonction de :doc:`Picard Tags <../variables/variables>` et :"
+"doc:`Picard Scripting Functions <../functions/list_by_type>`. Le masque "
+"ne doit pas contenir d'extension de fichier; ceci est ajouté "
+"automatiquement en fonction du type d'image réel. La valeur par défaut "
+"est \"cover\". Si vous changez ceci en \"cover\", Windows l'utilisera "
+"pour prévisualiser le répertoire contenant."
 
 #: ../../config/options_location.rst:39
 msgid ""
 "In addition to scripting variables already available for a track you can "
 "use the following cover art specific variables:"
 msgstr ""
+"En plus des variables de script déjà disponibles pour une piste, vous "
+"pouvez utiliser les variables spécifiques à la pochette suivantes:"
 
 #: ../../config/options_location.rst:42
 msgid ""
 "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). "
 "For front images this will always be \"front\"."
 msgstr ""
+"``coverart_maintype``: Le type principal (par exemple: front, back, "
+"booklet). Pour les images avant, ce sera toujours \"front\"."
 
 #: ../../config/options_location.rst:43
 msgid "``coverart_types``: Full list of all types assigned to this image."
 msgstr ""
+"``coverart_types``: Liste complète de tous les types affectés à cette "
+"image."
 
 #: ../../config/options_location.rst:44
 msgid "``coverart_comment``: The cover art comment."
-msgstr ""
+msgstr "``coverart_comment``: Le commentaire de la pochette."
 
 #: ../../config/options_location.rst:46
 msgid "**Overwrite the file if it already exists**"
-msgstr ""
+msgstr "**Écraser le fichier s'il existe déjà**"
 
 #: ../../config/options_location.rst:48
 msgid ""
 "Check this to replace existing files. This is especially recommended if "
 "trying to write \"folder\" previews for Windows."
 msgstr ""
-
+"Cochez ceci pour remplacer les fichiers existants. Ceci est "
+"particulièrement recommandé si vous essayez d'écrire des aperçus de "
+"\"folder\" pour Windows."
