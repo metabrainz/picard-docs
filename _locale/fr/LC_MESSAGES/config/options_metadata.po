@@ -4,27 +4,31 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-07 11:50-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../config/options_metadata.rst:8
 msgid "Metadata Options"
-msgstr ""
+msgstr "Options de métadonnées"
 
 #: ../../config/options_metadata.rst:16
 msgid "**Translate artist names to this locale where possible**"
 msgstr ""
+"**Traduisez les noms d'artistes dans cette langue lorsque cela est "
+"possible**"
 
 #: ../../config/options_metadata.rst:18
 msgid ""
@@ -34,26 +38,37 @@ msgid ""
 "artist sort name (which is, by Style Guideline, stored in Latin script) "
 "is used as a fallback if there is no English alias."
 msgstr ""
+"Lorsqu'elle est cochée, Picard verra si un artiste a un alias pour la "
+"langue sélectionnée. Si c'est le cas, Picard utilisera cet alias au lieu "
+"du nom de l'artiste lors du marquage. Lorsque \"English\" est la langue "
+"sélectionnée, le nom de tri de l'artiste (qui est, par Style Guideline, "
+"stocké en script latin) est utilisé comme solution de secours s'il n'y a "
+"pas d'alias anglais."
 
 #: ../../config/options_metadata.rst:22
 msgid "**Use standardized artist names**"
-msgstr ""
+msgstr "**Utilisez des noms d'artistes standardisés**"
 
 #: ../../config/options_metadata.rst:24
 msgid ""
-"Check to only use standard Artist names, rather than Artist Credits which"
-" may differ slightly across tracks and releases."
+"Check to only use standard Artist names, rather than Artist Credits "
+"which may differ slightly across tracks and releases."
 msgstr ""
+"Cochez pour n'utiliser que des noms d'artistes standard, plutôt que des "
+"crédits d'artiste qui peuvent différer légèrement selon les pistes et "
+"les versions."
 
 #: ../../config/options_metadata.rst:28
 msgid ""
 "If the \"Translate artist names\" option above is also checked, it will "
 "override this option if a suitable alias is found."
 msgstr ""
+"Si l'option \"Traduire les noms d'artistes\" ci-dessus est également "
+"cochée, elle remplacera cette option si un alias approprié est trouvé."
 
 #: ../../config/options_metadata.rst:30
 msgid "**Use standardized instrument and vocal credits**"
-msgstr ""
+msgstr "**Utilisez des crédits d'instruments et vocaux standardisés**"
 
 #: ../../config/options_metadata.rst:32
 msgid ""
@@ -61,10 +76,13 @@ msgid ""
 "relationships. Uncheck to use the instruments and vocals as credited in "
 "the relationship."
 msgstr ""
+"Cochez pour n'utiliser que des noms standard pour les instruments et les "
+"voix dans les relations interprètes. Décochez pour utiliser les "
+"instruments et les voix comme crédités dans la relation."
 
 #: ../../config/options_metadata.rst:35
 msgid "**Convert Unicode punctuation characters to ASCII**"
-msgstr ""
+msgstr "**Convertir les caractères de ponctuation Unicode en ASCII**"
 
 #: ../../config/options_metadata.rst:37
 msgid ""
@@ -73,47 +91,63 @@ msgid ""
 "quotation marks are converted to ASCII apostrophes ('), and horizontal "
 "ellipses are converted to three full stops (...)."
 msgstr ""
+"Convertit les caractères de ponctuation Unicode des données MusicBrainz "
+"en ASCII pour une utilisation cohérente de la ponctuation dans les "
+"balises. Par exemple, les guillemets simples droits sont convertis en "
+"apostrophes ASCII (') et les ellipses horizontales sont converties en "
+"trois points (...)."
 
 #: ../../config/options_metadata.rst:41
 msgid "**Use release relationships**"
-msgstr ""
+msgstr "**Utiliser les relations de version**"
 
 #: ../../config/options_metadata.rst:43
 msgid ""
 "Check to retrieve and write release-level relationships (e.g.: URLs, "
-"composer, lyricist, performer, conductor, or DJ mixer) to your files. You"
-" must have this enabled to use Picard to retrieve cover art."
+"composer, lyricist, performer, conductor, or DJ mixer) to your files. "
+"You must have this enabled to use Picard to retrieve cover art."
 msgstr ""
+"Cochez pour récupérer et écrire les relations au niveau de la version "
+"(par exemple: URL, compositeur, parolier, interprète, chef d'orchestre "
+"ou mixeur DJ) dans vos fichiers. Vous devez l'activer pour utiliser "
+"Picard pour récupérer l'art de couverture."
 
 #: ../../config/options_metadata.rst:46
 msgid "**Use track relationships**"
-msgstr ""
+msgstr "**Utiliser les relations de suivi**"
 
 #: ../../config/options_metadata.rst:48
 msgid ""
 "Check to write track-level relationships (e.g.: composer, lyricist, "
 "performer, or remixer) to your files."
 msgstr ""
+"Cochez pour écrire des relations au niveau de la piste (par exemple: "
+"compositeur, parolier, interprète ou remixeur) dans vos fichiers."
 
 #: ../../config/options_metadata.rst:50
 msgid "**Various artists**"
-msgstr ""
+msgstr "**Artistes variés**"
 
 #: ../../config/options_metadata.rst:52
 msgid "Choose how you want the \"Various Artists\" artist spelled."
 msgstr ""
+"Choisissez comment vous voulez que l'artiste \"Various Artists\" soit "
+"orthographié."
 
 #: ../../config/options_metadata.rst:54
 msgid "**Non-album tracks**"
-msgstr ""
+msgstr "**Pistes hors album**"
 
 #: ../../config/options_metadata.rst:56
 msgid "Choose how you want \"non-album tracks\" to be grouped."
 msgstr ""
+"Choisissez la manière dont vous souhaitez regrouper les \"pistes hors "
+"album\"."
 
 #: ../../config/options_metadata.rst:62
 msgid ""
-"Details: :doc:`options_releases` / :doc:`options_genres` / "
-":doc:`options_ratings`"
+"Details: :doc:`options_releases` / :doc:`options_genres` / :doc:"
+"`options_ratings`"
 msgstr ""
-
+"Détails: :doc:`options_releases` / :doc:`options_genres` / :doc:"
+"`options_ratings`"

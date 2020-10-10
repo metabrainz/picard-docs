@@ -4,55 +4,63 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-08 15:01-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../functions/func_sortmulti.rst:7
 msgid "$sortmulti"
-msgstr ""
+msgstr "$sortmulti"
 
 #: ../../functions/func_sortmulti.rst:9
 msgid "Usage: **$sortmulti(name[,separator])**"
-msgstr ""
+msgstr "Utilisation: **$sortmulti(nom[,séparateur])**"
 
 #: ../../functions/func_sortmulti.rst:10
 msgid "Category: multi-value"
-msgstr ""
+msgstr "Catégorie: multi-valeur"
 
 #: ../../functions/func_sortmulti.rst:11
 msgid "Implemented: Picard 2.3.1"
-msgstr ""
+msgstr "Mis en œuvre: Picard 2.3.1"
 
 #: ../../functions/func_sortmulti.rst:13
 msgid "**Description:**"
-msgstr ""
+msgstr "**La description:**"
 
 #: ../../functions/func_sortmulti.rst:15
 msgid ""
 "Returns a copy of the multi-value variable ``name`` with the elements "
-"sorted in ascending order. A literal value representing a multi-value can"
-" be substituted for ``name``, using the ``separator`` (or a semicolon "
+"sorted in ascending order. A literal value representing a multi-value "
+"can be substituted for ``name``, using the ``separator`` (or a semicolon "
 "followed by a space \"; \" if not passed) to coerce the value into a "
-"proper multi-valued variable.  If ``name`` is missing ``$sortmulti`` will"
-" return an empty string."
+"proper multi-valued variable.  If ``name`` is missing ``$sortmulti`` "
+"will return an empty string."
 msgstr ""
+"Renvoie une copie de la variable à valeurs multiples ``nom`` avec les "
+"éléments triés par ordre croissant. Une valeur littérale représentant "
+"une valeur multiple peut être remplacée par ``nom``, en utilisant le "
+"``séparateur`` (ou un point-virgule suivi d'un espace \"; \" s'il n'est "
+"pas passé) pour contraindre la valeur à une valeur multiple appropriée "
+"variable. Si ``nom`` est manquant, ``$sortmulti`` renverra une chaîne "
+"vide."
 
 #: ../../functions/func_sortmulti.rst:22
 msgid "**Example:**"
-msgstr ""
+msgstr "**Exemple:**"
 
 #: ../../functions/func_sortmulti.rst:24
 msgid "The following statements will return the values indicated::"
-msgstr ""
-
+msgstr "Les instructions suivantes renverront les valeurs indiquées::"

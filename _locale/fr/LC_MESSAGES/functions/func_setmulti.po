@@ -4,39 +4,41 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-08 14:14-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../functions/func_setmulti.rst:7
 msgid "$setmulti"
-msgstr ""
+msgstr "$setmulti"
 
 #: ../../functions/func_setmulti.rst:9
 msgid "Usage: **$setmulti(name,value[,separator])**"
-msgstr ""
+msgstr "Utilisation: **$setmulti(nom,valeur[,séparateur])**"
 
 #: ../../functions/func_setmulti.rst:10
 msgid "Category: assignment"
-msgstr ""
+msgstr "Catégorie: affectation"
 
 #: ../../functions/func_setmulti.rst:11
 msgid "Implemented: Picard 1.0"
-msgstr ""
+msgstr "Mis en œuvre: Picard 1.0"
 
 #: ../../functions/func_setmulti.rst:13
 msgid "**Description:**"
-msgstr ""
+msgstr "**La description:**"
 
 #: ../../functions/func_setmulti.rst:15
 msgid ""
@@ -46,12 +48,17 @@ msgid ""
 "operate on multi-valued variables as a string, and then set them back as "
 "proper multi-valued variable."
 msgstr ""
+"Définit la variable ``nom`` sur ``valeur``, en utilisant le "
+"``séparateur`` (ou un point-virgule suivi d'un espace \"; \" s'il n'est "
+"pas passé) pour forcer la ``valeur`` à revenir dans un multi approprié -"
+"variable valorisée. Cela peut être utilisé pour opérer sur des variables "
+"à valeurs multiples sous forme de chaîne, puis les remettre en tant que "
+"variable à valeurs multiples appropriée."
 
 #: ../../functions/func_setmulti.rst:21
 msgid "**Example:**"
-msgstr ""
+msgstr "**Exemple:**"
 
 #: ../../functions/func_setmulti.rst:23
 msgid "The following statements will return the values indicated::"
-msgstr ""
-
+msgstr "Les instructions suivantes renverront les valeurs indiquées::"

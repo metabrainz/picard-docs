@@ -4,229 +4,276 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-07 17:06-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../faq/faq_file_formats.rst:8
 msgid "File Formats"
-msgstr ""
+msgstr "Formats de fichier"
 
 #: ../../faq/faq_file_formats.rst:13
 msgid "**What formats does Picard support?**"
-msgstr ""
+msgstr "**Quels formats Picard prend-il en charge?**"
 
 #: ../../faq/faq_file_formats.rst:15
 msgid "Picard supports the following file formats:"
-msgstr ""
+msgstr "Picard prend en charge les formats de fichiers suivants:"
 
 #: ../../faq/faq_file_formats.rst:17
 msgid "MPEG-1 Audio (.mp3, .mp2, .m2a)"
-msgstr ""
+msgstr "MPEG-1 Audio (.mp3, .mp2, .m2a)"
 
 #: ../../faq/faq_file_formats.rst:18
 msgid "MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .mp4)"
-msgstr ""
+msgstr "MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .mp4)"
 
 #: ../../faq/faq_file_formats.rst:19
 msgid "Windows Media Audio (.wma, .wmv, .asf)"
-msgstr ""
+msgstr "Windows Media Audio (.wma, .wmv, .asf)"
 
 #: ../../faq/faq_file_formats.rst:20
 msgid "Microsoft WAVE (.wav)"
-msgstr ""
+msgstr "Microsoft WAVE (.wav)"
 
 #: ../../faq/faq_file_formats.rst:21
 msgid "The True Audio (.tta)"
-msgstr ""
+msgstr "The True Audio (.tta)"
 
 #: ../../faq/faq_file_formats.rst:22
 msgid "FLAC (.flac)"
-msgstr ""
+msgstr "FLAC (.flac)"
 
 #: ../../faq/faq_file_formats.rst:23
 msgid "Audio Interchange File Format (.aiff, .aif, .aifc)"
-msgstr ""
+msgstr "Audio Interchange File Format (.aiff, .aif, .aifc)"
 
 #: ../../faq/faq_file_formats.rst:24
 msgid "Musepack (.mpc, .mp+)"
-msgstr ""
+msgstr "Musepack (.mpc, .mp+)"
 
 #: ../../faq/faq_file_formats.rst:25
 msgid "WavPack (.wv)"
-msgstr ""
+msgstr "WavPack (.wv)"
 
 #: ../../faq/faq_file_formats.rst:26
 msgid "OptimFROG (.ofr, .ofs)"
-msgstr ""
+msgstr "OptimFROG (.ofr, .ofs)"
 
 #: ../../faq/faq_file_formats.rst:27
 msgid "Monkey's Audio (.ape)"
-msgstr ""
+msgstr "Monkey's Audio (.ape)"
 
 #: ../../faq/faq_file_formats.rst:28
 msgid "Tom's lossless Audio Kompressor (.tak)"
-msgstr ""
+msgstr "Tom's lossless Audio Kompressor (.tak)"
 
 #: ../../faq/faq_file_formats.rst:29
 msgid "Speex (.spx)"
-msgstr ""
+msgstr "Speex (.spx)"
 
 #: ../../faq/faq_file_formats.rst:30
 msgid "Generic Ogg files (.ogg)"
-msgstr ""
+msgstr "Generic Ogg files (.ogg)"
 
 #: ../../faq/faq_file_formats.rst:31
 msgid "Ogg FLAC (.ogg, .ogv)"
-msgstr ""
+msgstr "Ogg FLAC (.ogg, .ogv)"
 
 #: ../../faq/faq_file_formats.rst:32
 msgid "Ogg Theora (.ogg, .oga)"
-msgstr ""
+msgstr "Ogg Theora (.ogg, .oga)"
 
 #: ../../faq/faq_file_formats.rst:33
 msgid "Ogg Opus (.opus)"
-msgstr ""
+msgstr "Ogg Opus (.opus)"
 
 #: ../../faq/faq_file_formats.rst:34
 msgid "Ogg Audio (.oga)"
-msgstr ""
+msgstr "Ogg Audio (.oga)"
 
 #: ../../faq/faq_file_formats.rst:35
 msgid "Ogg Video (.ogv)"
-msgstr ""
+msgstr "Ogg Video (.ogv)"
 
 #: ../../faq/faq_file_formats.rst:36
 msgid "ADTS stream / AAC (.aac)"
-msgstr ""
+msgstr "ADTS stream / AAC (.aac)"
 
 #: ../../faq/faq_file_formats.rst:37
 msgid "AC-3 (.ac3, .eac3)"
-msgstr ""
+msgstr "AC-3 (.ac3, .eac3)"
 
 #: ../../faq/faq_file_formats.rst:38
 msgid "Direct Stream Digital (.dff, .dsf)"
-msgstr ""
+msgstr "Direct Stream Digital (.dff, .dsf)"
 
 #: ../../faq/faq_file_formats.rst:42
 msgid ""
-"WAVE files lack a standard for proper tagging. Picard uses ID3v2 tags to "
-"tag WAVE files, but this is not supported by all software. For "
-"compatibility with software which does not support ID3v2 tags in WAVE "
-"files additional RIFF INFO tags can be written to the files. RIFF INFO "
-"has only limited support for tags and character encodings."
+"WAVE files lack a standard for proper tagging. Picard uses ID3v2 tags to tag "
+"WAVE files, but this is not supported by all software. For compatibility with "
+"software which does not support ID3v2 tags in WAVE files additional RIFF INFO "
+"tags can be written to the files. RIFF INFO has only limited support for tags "
+"and character encodings."
 msgstr ""
+"Les fichiers WAVE n'ont pas de norme pour un marquage approprié. Picard "
+"utilise des balises ID3v2 pour baliser les fichiers WAVE, mais cela n'est pas "
+"pris en charge par tous les logiciels. Pour assurer la compatibilité avec un "
+"logiciel qui ne prend pas en charge les balises ID3v2 dans les fichiers WAVE, "
+"des balises RIFF INFO supplémentaires peuvent être écrites dans les fichiers. "
+"RIFF INFO n'a qu'une prise en charge limitée des balises et des encodages de "
+"caractères."
 
 #: ../../faq/faq_file_formats.rst:47
 msgid "**What formats will Picard support?**"
-msgstr ""
+msgstr "**Quels formats Picard prend-il en charge?**"
 
 #: ../../faq/faq_file_formats.rst:49
 msgid ""
 "Picard is intended to eventually support all formats (including "
-"fingerprinting), but this is a complex (arguably never-ending) process, "
-"and will take some time."
+"fingerprinting), but this is a complex (arguably never-ending) process, and "
+"will take some time."
 msgstr ""
+"Picard est destiné à prendre en charge à terme tous les formats (y compris "
+"les empreintes digitales), mais il s'agit d'un processus complexe (sans doute "
+"sans fin), et prendra un certain temps."
 
 #: ../../faq/faq_file_formats.rst:52
 msgid "**Which tags can Picard write to my files?**"
-msgstr ""
+msgstr "**Quelles balises Picard peut-il écrire dans mes fichiers?**"
 
 #: ../../faq/faq_file_formats.rst:54
 msgid ""
 "See the :doc:`../variables/variables` section for information on which "
-"MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping "
-"<https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical"
-" information on how these are further mapped into each tag format."
+"MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping <https://"
+"picard.musicbrainz.org/docs/mappings/>`_ contains more technical information "
+"on how these are further mapped into each tag format."
 msgstr ""
+"Voir la section :doc:`../variables/variables` pour plus d'informations sur "
+"les champs MusicBrainz que Picard écrit dans les balises. `Picard Tag Mapping "
+"<https://picard.musicbrainz.org/docs/mappings/>`_ contient des informations "
+"plus techniques sur la manière dont ils sont davantage mappés dans chaque "
+"format de tag."
 
 #: ../../faq/faq_file_formats.rst:60
 msgid "**How to I edit several tags at once? Why is it not easier do so?**"
 msgstr ""
+"**Comment modifier plusieurs balises à la fois? Pourquoi n'est-ce pas plus "
+"facile de le faire?**"
 
 #: ../../faq/faq_file_formats.rst:62
 msgid ""
 "Please understand that Picard is not designed as a general purpose tag "
-"editor. Its primary goal is to retrieve community-maintained MusicBrainz "
-"data to write into your tags. Some secondary goals include:"
+"editor. Its primary goal is to retrieve community-maintained MusicBrainz data "
+"to write into your tags. Some secondary goals include:"
 msgstr ""
+"Veuillez comprendre que Picard n'est pas conçu comme un éditeur de balises à "
+"usage général. Son objectif principal est de récupérer les données "
+"MusicBrainz maintenues par la communauté pour les écrire dans vos balises. "
+"Certains objectifs secondaires comprennent:"
 
 #: ../../faq/faq_file_formats.rst:65
 msgid "allowing rule-based customization of that data using scripts and plugins"
 msgstr ""
+"autoriser la personnalisation basée sur des règles de ces données à l'aide de "
+"scripts et de plugins"
 
 #: ../../faq/faq_file_formats.rst:66
 msgid ""
 "encouraging users to create an account and fix and update data via the "
-"MusicBrainz website, thus sharing their work with the rest of the "
-"community rather than simply fixing their tags locally."
+"MusicBrainz website, thus sharing their work with the rest of the community "
+"rather than simply fixing their tags locally."
 msgstr ""
+"encourager les utilisateurs à créer un compte et à corriger et mettre à jour "
+"les données via le site Web MusicBrainz, partageant ainsi leur travail avec "
+"le reste de la communauté plutôt que de simplement réparer leurs tags "
+"localement."
 
 #: ../../faq/faq_file_formats.rst:69
 msgid ""
 "To that end, Picard is likely to never have as much development focus on "
-"manual bulk editing of tags as other general purpose editors (e.g.: "
-"`Mp3tag <https://www.mp3tag.de/en/>`_, `foobar2000 "
-"<https://www.foobar2000.org/>`_, or even many library managers such as "
-"iTunes, Windows Media Player, and MediaMonkey). That doesn't mean that "
-"the team won't welcome patches in this area!"
+"manual bulk editing of tags as other general purpose editors (e.g.: `Mp3tag "
+"<https://www.mp3tag.de/en/>`_, `foobar2000 <https://www.foobar2000.org/>`_, "
+"or even many library managers such as iTunes, Windows Media Player, and "
+"MediaMonkey). That doesn't mean that the team won't welcome patches in this "
+"area!"
 msgstr ""
+"À cette fin, Picard ne se concentrera probablement jamais autant sur "
+"l'édition manuelle en masse des balises que d'autres éditeurs à usage général "
+"(par exemple: `Mp3tag <https://www.mp3tag.de/en/>`_, `foobar2000 < https://"
+"www.foobar2000.org/>`_, ou même de nombreux gestionnaires de bibliothèques "
+"tels que iTunes, Windows Media Player et MediaMonkey). Cela ne veut pas dire "
+"que l'équipe n'acceptera pas de correctifs dans ce domaine!"
 
 #: ../../faq/faq_file_formats.rst:73
 msgid ""
-"Having said all this, it is still possible to edit several tags at once "
-"in Picard by following the steps:"
+"Having said all this, it is still possible to edit several tags at once in "
+"Picard by following the steps:"
 msgstr ""
+"Cela dit, il est toujours possible d'éditer plusieurs balises à la fois dans "
+"Picard en suivant les étapes:"
 
 #: ../../faq/faq_file_formats.rst:75
 msgid "Click and select several files with CTRL or SHIFT"
-msgstr ""
+msgstr "Cliquez et sélectionnez plusieurs fichiers avec CTRL ou SHIFT"
 
 #: ../../faq/faq_file_formats.rst:76
 msgid "Right click on one of them, then click Details..."
-msgstr ""
+msgstr "Faites un clic droit sur l'un d'eux, puis cliquez sur Détails ..."
 
 #: ../../faq/faq_file_formats.rst:77
 msgid ""
-"On the popup dialog you can see the tags, with entries that denote where "
-"tags are different across files. You can edit or add new tags here."
+"On the popup dialog you can see the tags, with entries that denote where tags "
+"are different across files. You can edit or add new tags here."
 msgstr ""
+"Dans la boîte de dialogue contextuelle, vous pouvez voir les balises, avec "
+"des entrées qui indiquent où les balises sont différentes d'un fichier à "
+"l'autre. Vous pouvez modifier ou ajouter de nouvelles balises ici."
 
 #: ../../faq/faq_file_formats.rst:78
 msgid ""
-"On exiting the dialog, you have changed the tags in memory. You need to "
-"click Save in order to persist these changes to your files."
+"On exiting the dialog, you have changed the tags in memory. You need to click "
+"Save in order to persist these changes to your files."
 msgstr ""
+"En quittant la boîte de dialogue, vous avez modifié les balises en mémoire. "
+"Vous devez cliquer sur Enregistrer pour conserver ces modifications dans vos "
+"fichiers."
 
 #: ../../faq/faq_file_formats.rst:80
 msgid "This process should work in both panes."
-msgstr ""
+msgstr "Ce processus devrait fonctionner dans les deux volets."
 
 #: ../../faq/faq_file_formats.rst:85
 msgid ""
 "**The built-in audio player cannot play my file. Which formats does it "
 "support?**"
 msgstr ""
+"**Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-"
+"il en charge?**"
 
 #: ../../faq/faq_file_formats.rst:87
 msgid ""
 "The formats supported by the built-in audio player depend on the formats "
 "supported by your operating system."
 msgstr ""
+"Les formats pris en charge par le lecteur audio intégré dépendent des formats "
+"pris en charge par votre système d'exploitation."
 
 #: ../../faq/faq_file_formats.rst:89
 msgid "**Windows:**"
-msgstr ""
+msgstr "**Windows:**"
 
 #: ../../faq/faq_file_formats.rst:91
 msgid ""
@@ -234,47 +281,70 @@ msgid ""
 "Windows version certain codecs are pre-installed, but you can install "
 "additional codecs."
 msgstr ""
+"Les formats pris en charge dépendent des codecs installés. Selon la version "
+"de Windows, certains codecs sont préinstallés, mais vous pouvez installer des "
+"codecs supplémentaires."
 
 #: ../../faq/faq_file_formats.rst:94
 msgid ""
-"You might want to install the `Directshow Filters for Ogg "
-"<https://xiph.org/dshow/downloads/>`_ to add support for Ogg Vorbis, Ogg "
-"Speex, Ogg Theora, Ogg FLAC, native FLAC, and WebM files."
+"You might want to install the `Directshow Filters for Ogg <https://xiph.org/"
+"dshow/downloads/>`_ to add support for Ogg Vorbis, Ogg Speex, Ogg Theora, Ogg "
+"FLAC, native FLAC, and WebM files."
 msgstr ""
+"Vous voudrez peut-être installer les `Directshow Filters for Ogg <https://"
+"xiph.org/dshow/downloads/>`_ pour ajouter la prise en charge des fichiers Ogg "
+"Vorbis, Ogg Speex, Ogg Theora, Ogg FLAC, FLAC natif et WebM."
 
 #: ../../faq/faq_file_formats.rst:99
 msgid ""
-"Additional information is available from  `Microsoft's Codecs FAQ "
-"<https://support.microsoft.com/en-us/help/15070/windows-media-player-"
-"codecs-frequently-asked-questions>`_."
+"Additional information is available from  `Microsoft's Codecs FAQ <https://"
+"support.microsoft.com/en-us/help/15070/windows-media-player-codecs-frequently-"
+"asked-questions>`_."
 msgstr ""
+"Des informations supplémentaires sont disponibles dans `FAQ sur les codecs de "
+"Microsoft <https://support.microsoft.com/en-us/help/15070/windows-media-"
+"player-codecs-frequency-asked-questions>`_."
 
 #: ../../faq/faq_file_formats.rst:101
 msgid "**Linux:**"
-msgstr ""
+msgstr "**Linux:**"
 
 #: ../../faq/faq_file_formats.rst:103
 msgid ""
-"On Linux systems the player uses GStreamer which supports most common "
-"audio formats, although some distributions might exclude some codecs due "
-"to licensing issues. For the widest format support make sure you install "
-"all of the GStreamer plugins available for your distribution."
+"On Linux systems the player uses GStreamer which supports most common audio "
+"formats, although some distributions might exclude some codecs due to "
+"licensing issues. For the widest format support make sure you install all of "
+"the GStreamer plugins available for your distribution."
 msgstr ""
+"Sur les systèmes Linux, le lecteur utilise GStreamer qui prend en charge les "
+"formats audio les plus courants, bien que certaines distributions puissent "
+"exclure certains codecs en raison de problèmes de licence. Pour une prise en "
+"charge du format le plus large, assurez-vous d'installer tous les plugins "
+"GStreamer disponibles pour votre distribution."
 
 #: ../../faq/faq_file_formats.rst:110
 msgid "**I am using Fedora. Why doesn't acoustic fingerprinting work?**"
 msgstr ""
+"**J'utilise Fedora. Pourquoi la prise d'empreintes acoustiques ne fonctionne-"
+"t-elle pas?**"
 
 #: ../../faq/faq_file_formats.rst:112
 msgid ""
-"Acoustic fingerprinting in Picard uses a tool called ``fpcalc``, which is"
-" not available in Fedora. You can get it by installing the chromaprint-"
-"toolspackage from the `RPM Fusion repository <https://rpmfusion.org/>`_. "
-"This functionality is not contained in the main Fedora ``picard`` package"
-" because it requires the ``ffmpeg`` package which `cannot be distributed "
-"by Fedora <https://fedoraproject.org/wiki/Forbidden_items>`_. After "
-"`enabling the \"rpmfusion-free\" RPM Fusion repository "
-"<https://rpmfusion.org/Configuration>`_, install the package using (as "
-"root)::"
+"Acoustic fingerprinting in Picard uses a tool called ``fpcalc``, which is not "
+"available in Fedora. You can get it by installing the chromaprint-"
+"toolspackage from the `RPM Fusion repository <https://rpmfusion.org/>`_. This "
+"functionality is not contained in the main Fedora ``picard`` package because "
+"it requires the ``ffmpeg`` package which `cannot be distributed by Fedora "
+"<https://fedoraproject.org/wiki/Forbidden_items>`_. After `enabling the "
+"\"rpmfusion-free\" RPM Fusion repository <https://rpmfusion.org/"
+"Configuration>`_, install the package using (as root)::"
 msgstr ""
-
+"La prise d'empreintes acoustiques en Picard utilise un outil appelé "
+"``fpcalc``, qui n'est pas disponible dans Fedora. Vous pouvez l'obtenir en "
+"installant le pack chromaprint-tools à partir du référentiel `RPM Fusion "
+"<https://rpmfusion.org/>`_. Cette fonctionnalité n'est pas contenue dans le "
+"paquet principal Fedora ``picard`` car elle nécessite le paquet ``ffmpeg`` "
+"qui `ne peut pas être distribué par Fedora <https://fedoraproject.org/wiki/"
+"Forbidden_items>`_. Après `avoir activé le référentiel RPM Fusion \"sans "
+"rpmfusion\" <https://rpmfusion.org/Configuration>`_, installez le package en "
+"utilisant (en tant que root)::"

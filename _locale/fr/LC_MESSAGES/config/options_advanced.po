@@ -4,39 +4,46 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-06 13:13-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../config/options_advanced.rst:8
 msgid "Advanced Options"
-msgstr ""
+msgstr "Options avancées"
 
 #: ../../config/options_advanced.rst:16
 msgid "**Ignore file paths matching the following regular expression**"
 msgstr ""
+"**Ignorer les chemins de fichiers correspondant à l'expression régulière "
+"suivante**"
 
 #: ../../config/options_advanced.rst:18
 msgid ""
 "You can specify patterns for files and directories that Picard should "
-"never load. For example, if you set this to the regular expression "
-"``\\.bak$`` any file ending in \".bak\" will be ignored when loading "
-"files."
+"never load. For example, if you set this to the regular expression ``\\."
+"bak$`` any file ending in \".bak\" will be ignored when loading files."
 msgstr ""
+"Vous pouvez spécifier des modèles pour les fichiers et répertoires que "
+"Picard ne doit jamais charger. Par exemple, si vous définissez ceci sur "
+"l'expression régulière ``\\.bak$`` tout fichier se terminant par \".bak"
+"\" sera ignoré lors du chargement des fichiers."
 
 #: ../../config/options_advanced.rst:22
 msgid "**Ignore hidden files**"
-msgstr ""
+msgstr "** Ignorer les fichiers cachés **"
 
 #: ../../config/options_advanced.rst:24
 msgid ""
@@ -44,10 +51,15 @@ msgid ""
 "loaded. This also includes any file or subdirectory inside a hidden "
 "directory."
 msgstr ""
+"Si cette option est activée, les fichiers et répertoires cachés ne "
+"seront pas chargés. Cela inclut également tout fichier ou sous-"
+"répertoire dans un répertoire caché."
 
 #: ../../config/options_advanced.rst:27
 msgid "**Include sub-folders when adding files from folders**"
 msgstr ""
+"**Inclure les sous-dossiers lors de l'ajout de fichiers à partir de "
+"dossiers**"
 
 #: ../../config/options_advanced.rst:29
 msgid ""
@@ -55,47 +67,69 @@ msgid ""
 "selected directory and all its subdirectories. If disabled only audio "
 "files in the selected directory will be loaded."
 msgstr ""
+"Si cette option est activée, Picard chargera tous les fichiers audio "
+"dans le répertoire sélectionné et tous ses sous-répertoires. Si elle est "
+"désactivée, seuls les fichiers audio du répertoire sélectionné seront "
+"chargés."
 
 #: ../../config/options_advanced.rst:32
 msgid "**Ignore track duration difference under this number of seconds**"
 msgstr ""
+"**Ignorer la différence de durée de la piste sous ce nombre de secondes**"
 
 #: ../../config/options_advanced.rst:34
 msgid ""
 "This specifies the number of seconds that a file can differ in length "
-"from the length in the MusicBrainz database and still be considered to be"
-" the same.  The default value is 2 seconds."
+"from the length in the MusicBrainz database and still be considered to "
+"be the same.  The default value is 2 seconds."
 msgstr ""
+"Ceci spécifie le nombre de secondes pendant lesquelles un fichier peut "
+"différer en longueur de la longueur dans la base de données MusicBrainz "
+"et toujours être considéré comme identique. La valeur par défaut est de "
+"2 secondes."
 
 #: ../../config/options_advanced.rst:37
 msgid ""
 "**Ignore the following tracks when determining whether a release is "
 "complete**"
 msgstr ""
+"**Ignorez les pistes suivantes pour déterminer si une version est "
+"terminée**"
 
 #: ../../config/options_advanced.rst:39
 msgid ""
 "Missing tracks of the selected type (i.e.: video, pregap, data or "
-"silence) will be ignored when determining whether a release is considered"
-" to be complete. For example, if \"video\" is selected then a release "
-"with a bonus video will be marked as complete if it has all the audio "
-"tracks matched with a file even if the video file is missing."
+"silence) will be ignored when determining whether a release is "
+"considered to be complete. For example, if \"video\" is selected then a "
+"release with a bonus video will be marked as complete if it has all the "
+"audio tracks matched with a file even if the video file is missing."
 msgstr ""
+"Les pistes manquantes du type sélectionné (c'est-à-dire: vidéo, pré-"
+"séquence, données ou silence) seront ignorées lors de la détermination "
+"si une sortie est considérée comme terminée. Par exemple, si \"vidéo\" "
+"est sélectionné, une version avec une vidéo bonus sera marquée comme "
+"terminée si toutes les pistes audio correspondent à un fichier même si "
+"le fichier vidéo est manquant."
 
 #: ../../config/options_advanced.rst:44
 msgid "**Tags to ignore for comparison**"
-msgstr ""
+msgstr "**Balises à ignorer pour comparaison**"
 
 #: ../../config/options_advanced.rst:46
 msgid ""
-"Tags in this list will not be considered when comparing the existing file"
-" metadata to the data retrieved from MusicBrainz. If the only difference "
-"between the file's metadata and the metadata retrieved from MusicBrainz "
-"is a tag listed in this ignore list then the file will be considered "
-"unmodified."
+"Tags in this list will not be considered when comparing the existing "
+"file metadata to the data retrieved from MusicBrainz. If the only "
+"difference between the file's metadata and the metadata retrieved from "
+"MusicBrainz is a tag listed in this ignore list then the file will be "
+"considered unmodified."
 msgstr ""
+"Les balises de cette liste ne seront pas prises en compte lors de la "
+"comparaison des métadonnées de fichier existantes avec les données "
+"extraites de MusicBrainz. Si la seule différence entre les métadonnées "
+"du fichier et les métadonnées extraites de MusicBrainz est une balise "
+"répertoriée dans cette liste ignorée, le fichier sera considéré comme "
+"non modifié."
 
 #: ../../config/options_advanced.rst:55
 msgid "Details: :doc:`options_network` / :doc:`options_matching`"
-msgstr ""
-
+msgstr "Détails: :doc:`options_network` / :doc:`options_matching`"

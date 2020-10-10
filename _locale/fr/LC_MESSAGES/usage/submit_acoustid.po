@@ -4,23 +4,25 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-18 16:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-09 14:59-0600\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../usage/submit_acoustid.rst:7
 msgid "Submitting Acoustic Fingerprints"
-msgstr ""
+msgstr "Soumission d'empreintes acoustiques"
 
 #: ../../usage/submit_acoustid.rst:14
 msgid ""
@@ -28,6 +30,10 @@ msgid ""
 "recordings, allowing them to be looked up in the MusicBrainz database. "
 "Thus, it is very valuable to add them when you are tagging files."
 msgstr ""
+"Les empreintes acoustiques sont très utiles pour identifier les pistes "
+"et les enregistrements, ce qui permet de les rechercher dans la base de "
+"données MusicBrainz. Ainsi, il est très utile de les ajouter lorsque "
+"vous étiquetez des fichiers."
 
 #: ../../usage/submit_acoustid.rst:20
 msgid ""
@@ -38,31 +44,50 @@ msgid ""
 "whether the AcoustID was calculated and whether it ready for submission "
 "(red = unsubmitted, grey = already submitted)."
 msgstr ""
+"Lorsque vous utilisez Picard pour soumettre des empreintes acoustiques, "
+"il est recommandé d'activer la colonne Empreintes digitales dans la vue "
+"du tableau dans le volet de droite. Pour ce faire, cliquez avec le "
+"bouton droit de la souris sur l'en-tête de la colonne et cochez la case "
+"\"État de l'empreinte digitale\". Cela affichera une icône indiquant si "
+"l'AcoustID a été calculé et s'il est prêt à être soumis (rouge = non "
+"soumis, gris = déjà soumis)."
 
 #: ../../usage/submit_acoustid.rst:26
 msgid ""
 "There are two methods for submitting acoustic fingerprints, depending on "
 "the workflow that you are using to identify the releases that you are "
-"tagging.  The steps to follow to submit acoustic fingerprints for each of"
-" the two workflows are:"
+"tagging.  The steps to follow to submit acoustic fingerprints for each "
+"of the two workflows are:"
 msgstr ""
+"Il existe deux méthodes pour soumettre des empreintes acoustiques, en "
+"fonction du flux de travail que vous utilisez pour identifier les "
+"versions que vous marquez. Les étapes à suivre pour soumettre des "
+"empreintes acoustiques pour chacun des deux flux de travail sont les "
+"suivantes:"
 
 #: ../../usage/submit_acoustid.rst:31
 msgid "Submitting when using Scan to identify the release"
-msgstr ""
+msgstr "Envoi lors de l'utilisation de Scan pour identifier la version"
 
 #: ../../usage/submit_acoustid.rst:33
 msgid ""
 "Load files into the clustering pane.  Select the files and click the "
 "\"Scan\" button, or select :menuselection:`\"Tools --> Scan\"`."
 msgstr ""
+"Chargez les fichiers dans le volet de clustering. Sélectionnez les "
+"fichiers et cliquez sur le bouton \"Scan\", ou sélectionnez :"
+"menuselection:`\"Outils --> Scan\"`."
 
 #: ../../usage/submit_acoustid.rst:41
 msgid ""
-"If the files are matched to a track and move to the right-hand pane, they"
-" already exist in the AcoustID database and do not need to be re-"
+"If the files are matched to a track and move to the right-hand pane, "
+"they already exist in the AcoustID database and do not need to be re-"
 "submitted.  The \"Submit\" button will remain disabled."
 msgstr ""
+"Si les fichiers correspondent à une piste et sont déplacés vers le volet "
+"de droite, ils existent déjà dans la base de données AcoustID et n'ont "
+"pas besoin d'être soumis à nouveau. Le bouton \"Soumettre\" restera "
+"désactivé."
 
 #: ../../usage/submit_acoustid.rst:49
 msgid ""
@@ -71,6 +96,10 @@ msgid ""
 "tracks will show up in red (i.e.: unsubmitted status) and the \"Submit\" "
 "button will be enabled."
 msgstr ""
+"Si les fichiers ne correspondent pas ou si vous les déplacez "
+"manuellement pour qu'ils correspondent à une autre piste, ils pourraient "
+"être soumis. L'icône AcoustID pour les pistes apparaîtra en rouge (c'est-"
+"à-dire: statut non soumis) et le bouton \"Soumettre\" sera activé."
 
 #: ../../usage/submit_acoustid.rst:58
 msgid ""
@@ -79,35 +108,50 @@ msgid ""
 "to grey (i.e.: submitted status) and the \"Submit\" button will be "
 "disabled."
 msgstr ""
+"Cliquer sur le bouton \"Soumettre\" ne soumettra que les empreintes "
+"digitales des fichiers identifiés à l'étape 3. L'icône AcoustID des "
+"pistes deviendra grise (c'est-à-dire: statut soumis) et le bouton "
+"\"Soumettre\" sera désactivé."
 
 #: ../../usage/submit_acoustid.rst:69
 msgid "Submitting when not using Scan to identify the release"
 msgstr ""
+"Soumission lorsque vous n'utilisez pas Scan pour identifier la version"
 
 #: ../../usage/submit_acoustid.rst:71
 msgid ""
 "Make sure that the files are properly matched to tracks on a release in "
 "the right-hand pane."
 msgstr ""
+"Assurez-vous que les fichiers correspondent correctement aux pistes "
+"d'une version dans le volet de droite."
 
 #: ../../usage/submit_acoustid.rst:78
 msgid ""
-"Select the files in the right-hand pane and select "
-":menuselection:`\"Tools --> Generate AcoustID fingerprints\"`. This will "
-"calculate the acoustic fingerprints for the selected files."
+"Select the files in the right-hand pane and select :menuselection:`"
+"\"Tools --> Generate AcoustID fingerprints\"`. This will calculate the "
+"acoustic fingerprints for the selected files."
 msgstr ""
+"Sélectionnez les fichiers dans le volet de droite et sélectionnez :"
+"menuelection:`\"Outils --> Générer des empreintes AcoustID\"`. Cela "
+"calculera les empreintes acoustiques des fichiers sélectionnés."
 
 #: ../../usage/submit_acoustid.rst:88
 msgid ""
 "The \"Generate AcoustID fingerprints\" action button can be added to the "
 "button bar by changing the settings in the User Interface options."
 msgstr ""
+"Le bouton d'action \"Générer des empreintes digitales AcoustID\" peut "
+"être ajouté à la barre de boutons en modifiant les paramètres dans les "
+"options de l'interface utilisateur."
 
 #: ../../usage/submit_acoustid.rst:91
 msgid ""
 "The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted "
 "status) and the \"Submit\" button will be enabled."
 msgstr ""
+"L'icône AcoustID pour les pistes apparaîtra en rouge (c'est-à-dire: "
+"statut non soumis) et le bouton \"Soumettre\" sera activé."
 
 #: ../../usage/submit_acoustid.rst:99
 msgid ""
@@ -115,4 +159,6 @@ msgid ""
 "files. The AcoustID icon for the tracks will change to grey (i.e.: "
 "submitted status) and the \"Submit\" button will be disabled."
 msgstr ""
-
+"Cliquer sur le bouton \"Soumettre\" soumettra les empreintes digitales "
+"des fichiers. L'icône AcoustID des pistes deviendra grise (ex: état "
+"soumis) et le bouton \"Soumettre\" sera désactivé."
