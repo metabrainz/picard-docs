@@ -15,8 +15,14 @@ Network
 
 **Web Proxy**
 
-    If you need a proxy to make an outside network connection you may specify one here.  The required
-    settings are **Server Address**, **Port**, **Username** and **Password**.
+    If you need a proxy to make an outside network connection you may specify one here.  You can
+    choose between HTTP and SOCKS proxy.  The required settings are **Server Address**, **Port**.
+    If the proxy requires authentication also enter **Username** and **Password**.
+
+**Request timeout in seconds**
+
+    By default Picard will abort running network requests after 30 seconds of inactivity.  If needed
+    you can change the timeout period here.
 
 .. |lookup_tagger| image:: ../images/mblookup-tagger.png
    :height: 1em
