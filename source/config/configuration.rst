@@ -23,8 +23,12 @@ item, simply check the box for the screen option.  The items are:
 **File Browser**
 
    This displays a file browser on the left side of the screen for selecting
-   files and directories for processing.  Files and directories can also be selected using your
-   system's file browser by dragging and dropping them onto the Picard application.
+   files and directories for processing. Files can be loaded into Picard by dragging and dropping
+   them to the right panes, double clicking on individual files or by selecting multiple files
+   and folders and selecting "Load selected files" from the context menu.
+
+   Files and directories can also be selected using your system's file browser by dragging and
+   dropping them onto the Picard application.
 
 **Cover Art**
 
