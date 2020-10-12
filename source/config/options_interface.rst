@@ -30,7 +30,7 @@ User Interface Options
     .. warning::
 
         Please be aware that using the system theme might cause the user interface to be not shown correctly.
-        If this is the case disable the "Use system theme" option to use Picard\'s default theme again.
+        If this is the case disable the "Use system theme" option to use Picard's default theme again.
 
 **Allow selection of multiple directories**
 
