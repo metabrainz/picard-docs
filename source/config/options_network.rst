@@ -16,7 +16,7 @@ Network
 **Web Proxy**
 
     If you need a proxy to make an outside network connection you may specify one here.  You can
-    choose between HTTP and SOCKS proxy.  The required settings are **Server Address**, **Port**.
+    choose between HTTP and SOCKS proxy.  The required settings are **Server Address** and **Port**.
     If the proxy requires authentication also enter **Username** and **Password**.
 
 **Request timeout in seconds**
