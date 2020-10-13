@@ -434,9 +434,11 @@ def check_sphinx_intl():
     """
     with open(os.devnull, 'w') as devnull:
         try:
-            if subprocess.call([SPHINX_INTL, '--help'],
-                               stdout=devnull, stderr=devnull) == 1:
-                return
+            # if subprocess.call([SPHINX_INTL, '--help'],
+            #                    stdout=devnull, stderr=devnull) == 1:
+            #     return
+            subprocess.call([SPHINX_INTL, '--help'], stdout=devnull, stderr=devnull)
+            return
         except FileNotFoundError:
             pass
     print("The '{0}' command was not found. Make sure you have Sphinx "
