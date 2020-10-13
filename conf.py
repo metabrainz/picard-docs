@@ -1,5 +1,4 @@
 # Configuration file for the Sphinx documentation builder.
-# -*- blah_coding: utf-8 -*-
 #
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
@@ -51,9 +50,10 @@ supported_languages = [
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
-notice_text = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. ' \
-    + 'To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
-my_notice = r'\vspace*{\fill}' + "\n" + notice_text + "\n" + r'\vspace{0.1\textheight}'
+my_notice = r'''\vspace*{\fill}
+MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a
+copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0
+\vspace{0.1\textheight}'''
 
 
 # -- General configuration ---------------------------------------------------
@@ -82,14 +82,16 @@ exclude_patterns = [
     '_ignored',
     '_images',
     '_locale',
+    'Thumbs.db',
     '.DS_Store',
+    'README.md',
+    'html',
+    'docs',
     '.git',
     '.github',
-    'docs',
-    'html',
-    'README.md',
+    'images',
     'testing',
-    'Thumbs.db',
+    'README.md',
     'TODO.md',
 ]
 
@@ -167,9 +169,13 @@ latex_domain_indices = True
 # epub_baseneme = 'musicbrainzpicard'
 
 epub_theme = 'epub'
+
 epub_description = 'A User Guide for MusicBrainz Picard.'
+
 epub_author = 'Bob Swift'
+
 epub_contributor = 'Members of the MusicBrainz Community'
+
 epub_uid = 'MusicBrainzPicardUserGuide'
 
 # epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
@@ -181,12 +187,12 @@ epub_show_urls = 'footnote'
 
 epub_use_index = True
 
-
 # -- Options for custom 404 page --------------------------------------
 
 # sphinx-notfound-page
 # https://github.com/readthedocs/sphinx-notfound-page
 
+notfound_template = 'custom_404.html'
 notfound_title = 'Page Not Found'
 notfound_text_1 = "We're sorry but we are unable to find the requested page. Please use the table " \
     + "of contents or the search box in the left-hand sidebar to locate your topic."
