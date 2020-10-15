@@ -32,7 +32,7 @@ correct spot in the right-hand pane.
    :width: 100%
 
 Right-clicking an item in the track list brings up a menu of commands, including "Info", "Open in Player", "Open Containing Folder",
-"Search for similar tracks", "Looup in Browser", "Generate AcoustID Fingerprints", "Save" and "Remove".  In addition, you can
+"Search for similar tracks", "Lookup in Browser", "Generate AcoustID Fingerprints", "Save" and "Remove".  In addition, you can
 re-run any associated plugins or scripts against only the selected item.  Right-clicking an items in the left-hand pane will bring
 up a similar menu of commands.
 
