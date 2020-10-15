@@ -22,7 +22,7 @@ existing in the files.
 
 **1. Load the files**
 
-   Drag the batch of files to process from the browser to the "Unclustered Files" secion in the left-hand pane.
+   Drag the batch of files to process from the browser to the "Unclustered Files" section in the left-hand pane.
 
 
 **2. Cluster and lookup the files**

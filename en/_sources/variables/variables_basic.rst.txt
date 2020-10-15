@@ -84,7 +84,7 @@ These variables are populated from MusicBrainz data for most releases, without a
 
 **_rating**
 
-    Rating 0-5 by Musicbrainz users.
+    Rating 0-5 by MusicBrainz users.
 
 **_releasecomment**
 
