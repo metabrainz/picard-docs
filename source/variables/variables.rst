@@ -38,6 +38,7 @@ release. A description of how to gain access to these beta versions for testing 
       :doc:`tags_basic` /
       :doc:`tags_advanced` /
       :doc:`variables_basic` /
+      :doc:`variables_file` /
       :doc:`variables_advanced` /
       :doc:`variables_classical` /
       :doc:`variables_plugins` /
@@ -49,6 +50,7 @@ release. A description of how to gain access to these beta versions for testing 
    tags_basic
    tags_advanced
    variables_basic
+   variables_file
    variables_advanced
    variables_classical
    variables_plugins
