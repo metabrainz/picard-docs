@@ -21,7 +21,8 @@ These variables are populated from MusicBrainz data for most releases, without a
 
 .. note::
 
-   Variables that rely on information from the files (e.g.: _bitrate) are only available for use in the file naming script.
+   Variables that rely on information from the files (e.g.: _bitrate) are only available for use on
+   tracks with attached files or in the file naming script.
 
 **_absolutetracknumber**
 
@@ -42,31 +43,31 @@ These variables are populated from MusicBrainz data for most releases, without a
 
 **_bitrate**
 
-    Approximate bitrate in kbps.  Only available to the file naming script.
+    Approximate bitrate in kbps.
 
 **_bits_per_sample**
 
-    Bits of data per sample.  Only available to the file naming script.
+    Bits of data per sample.
 
 **_channels**
 
-    Number of audio channels in the file.  Only available to the file naming script.
+    Number of audio channels in the file.
 
 **_dirname**
 
-    The name of the directory containing the file at the point of being loaded into Picard.  Only available to the file naming script. (*since Picard 1.1*)
+    The name of the directory containing the file at the point of being loaded into Picard. (*since Picard 1.1*)
 
 **_extension**
 
-    The file's extension.  Only available to the file naming script. (*since Picard 0.9*)
+    The file's extension. (*since Picard 0.9*)
 
 **_filename**
 
-    The name of the file without extension.  Only available to the file naming script. (*since Picard 1.1*)
+    The name of the file without extension. (*since Picard 1.1*)
 
 **_format**
 
-    Media format of the file (e.g.: MPEG-1 Audio).  Only available to the file naming script.
+    Media format of the file (e.g.: MPEG-1 Audio).
 
 **_length**
 
@@ -104,7 +105,7 @@ These variables are populated from MusicBrainz data for most releases, without a
 
 **_sample_rate**
 
-    Number of digitizing samples per second (Hz).  Only available to the file naming script.
+    Number of digitizing samples per second (Hz).
 
 .. _ref_secondaryreleasetype:
 
