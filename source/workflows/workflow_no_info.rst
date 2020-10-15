@@ -24,7 +24,7 @@ most in a single batch).  Picard will try to group them into clusters based on t
 
 **1. Load the files**
 
-   Drag the batch of files to process from the browser to the "Unclustered Files" secion in the left-hand pane.
+   Drag the batch of files to process from the browser to the "Unclustered Files" section in the left-hand pane.
 
 
 **2. Scan the files**

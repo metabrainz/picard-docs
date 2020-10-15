@@ -38,7 +38,7 @@ up the release.
 
 **4. Load the files**
 
-   Drag the files or folder from the browser to the "Unclustered Files" secion in the left-hand pane.  You do not
+   Drag the files or folder from the browser to the "Unclustered Files" section in the left-hand pane.  You do not
    need to scan or cluster them.
 
 

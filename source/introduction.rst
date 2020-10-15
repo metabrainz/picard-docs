@@ -33,9 +33,9 @@ information such as scripts, plugins and tutorials are provided when available r
 to reproduce the information in this document.
 
 In order to effectively use Picard, it is important to understand what the program can do and,
-equally important, what it cannot do.  Picard is primarily intended to tag and organise albums containing tracks,
+equally important, what it cannot do.  Picard is primarily intended to tag and organize albums containing tracks,
 guided by the user to the specific release of the album that they have, and then to keep the metadata for these
-tracks up to date as users around the world enhance the quality of the Musicbrainz data associated with that
+tracks up to date as users around the world enhance the quality of the MusicBrainz data associated with that
 particular release and track; Picard does this very well indeed. However, it is not intended to automatically
 organize your collection of thousands of random music files, and if this is what you are hoping for then you will likely
 be disappointed.  To quote from the Picard website, *"Picard is not built to be a mass single-track
@@ -95,7 +95,7 @@ not supported by all playback software.  In addition, Picard does not support wr
 **Request Rate Limiting**
 
 Picard's metadata retrieval is limited to the standard **one request per second** rate limiting for the MusicBrainz
-API.  This becomes quite noticable when trying to process a large list of files, and is exacerbated by
+API.  This becomes quite noticeable when trying to process a large list of files, and is exacerbated by
 extensions that perform additional information requests from the database.
 
 **Network File Processing**
