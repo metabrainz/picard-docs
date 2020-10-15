@@ -22,6 +22,16 @@ matching for you.  If the matching wasn't done automatically, drag the appropria
 .. image:: ../images/lookup_4.png
    :width: 100%
 
+.. note::
+
+   If you drag and drop multiple files onto a specific track the first selected file will be matched to the track on
+   which you dropped the files.  The rest of the selected files will be matched to the following tracks in order.
+   This allows you to quickly match multiple files to a sequence of tracks.  If you want to match all files to a single
+   track instead you can hold the :kbd:`Alt` key while dropping the files.
+
+   If you drop multiple files onto an album Picard will try to match the files to the tracks based on the metadata.
+
+
 Depending on your previous metadata, Picard will try to guess the matching tracks. The order is green > yellow > orange > red,
 where green is the best match. If you are seeing a lot of red and orange, it could mean that Picard has guessed incorrectly, or that
 your files didn't have a lot of previous metadata to work with.  If this is the case, it's recommended to select a track and
