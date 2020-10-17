@@ -25,9 +25,6 @@ plugins and tutorials are provided when available rather than trying to reproduc
 ..    For quick access to a particular topic, please use the search box or the :ref:`topic index <genindex>`.
 
 
-.. .. include:: image_links.txt
-
-
 .. toctree::
    :caption: About Picard
    :hidden:
@@ -100,4 +97,3 @@ plugins and tutorials are provided when available rather than trying to reproduc
 ..    * :ref:`genindex`
 ..    * :ref:`modindex`
 ..    * :ref:`search`
-
