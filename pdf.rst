@@ -18,8 +18,9 @@ MusicBrainz Picard
 .. toctree::
 
    about_picard/introduction
-   about_picard/glossary
+   about_picard/contributing
    about_picard/acknowledgements
+   about_picard/glossary
    getting_started/pdf_starting
    config/configuration
    variables/variables

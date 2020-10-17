@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-06 16:03-0600\n"
+"POT-Creation-Date: 2020-10-15 14:09-0600\n"
+"PO-Revision-Date: 2020-10-15 14:38-0600\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
 "X-Generator: Poedit 2.4.1\n"
 
 #: ../../config/options_interface.rst:8
@@ -45,13 +45,13 @@ msgstr "**Autoriser la sélection de plusieurs répertoires**"
 #: ../../config/options_interface.rst:23
 msgid ""
 "Enabling this option will bypass the native directory selector and use "
-"QT's file dialog.  This may be desirable since the native directory "
+"Qt's file dialog.  This may be desirable since the native directory "
 "selector generally doesn't allow you to select more than one directory. "
 "This applies to the :menuselection:`\"File --> Add folder\"` dialog. The "
 "file browser always allows multiple directory selection."
 msgstr ""
 "L'activation de cette option contournera le sélecteur de répertoire "
-"natif et utilisera la boîte de dialogue de fichier de QT. Cela peut être "
+"natif et utilisera la boîte de dialogue de fichier de Qt. Cela peut être "
 "souhaitable car le sélecteur de répertoire natif ne vous permet "
 "généralement pas de sélectionner plus d'un répertoire. Ceci s'applique à "
 "la boîte de dialogue :menuselection:`\"Fichier --> Ajouter un dossier"
@@ -59,10 +59,28 @@ msgstr ""
 "répertoires."
 
 #: ../../config/options_interface.rst:28
+msgid "**Use built-in search rather than looking in browser**"
+msgstr ""
+"**Utilisez la recherche intégrée plutôt que de rechercher dans le "
+"navigateur**"
+
+#: ../../config/options_interface.rst:30
+msgid ""
+"When this option is enabled the search for albums, artists or tracks "
+"will show the results in a dialog. By default this option is disabled "
+"and Picard will open a search on MusicBrainz.org in your default web "
+"browser."
+msgstr ""
+"Lorsque cette option est activée, la recherche d'albums, d'artistes ou "
+"de pistes affichera les résultats dans une boîte de dialogue. Par "
+"défaut, cette option est désactivée et Picard ouvrira une recherche sur "
+"MusicBrainz.org dans votre navigateur Web par défaut."
+
+#: ../../config/options_interface.rst:33
 msgid "**Use advanced query syntax**"
 msgstr "**Utilisez la syntaxe de requête avancée**"
 
-#: ../../config/options_interface.rst:30
+#: ../../config/options_interface.rst:35
 msgid ""
 "This will enable advanced query syntax parsing on your searches. This "
 "only applies to the search box at the top right of Picard, not the "
@@ -72,13 +90,13 @@ msgstr ""
 "recherches. Cela s'applique uniquement à la zone de recherche en haut à "
 "droite de Picard, pas aux boutons de recherche."
 
-#: ../../config/options_interface.rst:33
+#: ../../config/options_interface.rst:38
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr ""
 "**Afficher une boîte de dialogue de confirmation de fermeture pour les "
 "modifications non enregistrées**"
 
-#: ../../config/options_interface.rst:35
+#: ../../config/options_interface.rst:40
 msgid ""
 "When this is enabled, Picard will show a dialog when you try to quit the "
 "program with unsaved files loaded. This may help prevent accidentally "
@@ -90,11 +108,11 @@ msgstr ""
 "modifications de balises que vous avez apportées, mais pas encore "
 "enregistrées."
 
-#: ../../config/options_interface.rst:38
+#: ../../config/options_interface.rst:43
 msgid "**Begin browsing in the following directory**"
 msgstr "**Commencez à naviguer dans le répertoire suivant**"
 
-#: ../../config/options_interface.rst:40
+#: ../../config/options_interface.rst:45
 msgid ""
 "By default, Picard remembers the last directory used to load files. If "
 "you enable this option and provide a directory, Picard will always start "
@@ -104,11 +122,11 @@ msgstr ""
 "charger les fichiers. Si vous activez cette option et fournissez un "
 "répertoire, Picard démarrera toujours dans le répertoire fourni."
 
-#: ../../config/options_interface.rst:43
+#: ../../config/options_interface.rst:48
 msgid "**User interface language**"
 msgstr "**Langue de l'interface utilisateur**"
 
-#: ../../config/options_interface.rst:45
+#: ../../config/options_interface.rst:50
 msgid ""
 "By default, Picard will display in the language displayed by your "
 "operating system, however you can override this and select a different "
@@ -118,11 +136,11 @@ msgstr ""
 "d'exploitation, mais vous pouvez le remplacer et sélectionner une autre "
 "langue si nécessaire."
 
-#: ../../config/options_interface.rst:48
+#: ../../config/options_interface.rst:53
 msgid "**Customize action toolbar**"
 msgstr "**Personnaliser la barre d'outils d'action**"
 
-#: ../../config/options_interface.rst:50
+#: ../../config/options_interface.rst:55
 msgid ""
 "This allows you to to add, remove or rearrange the items displayed in "
 "the Action Toolbar."
@@ -130,7 +148,7 @@ msgstr ""
 "Cela vous permet d'ajouter, de supprimer ou de réorganiser les éléments "
 "affichés dans la barre d'outils Action."
 
-#: ../../config/options_interface.rst:56
+#: ../../config/options_interface.rst:61
 msgid ""
 "Details: :doc:`options_interface_colors` / :doc:"
 "`options_interface_top_tags`"

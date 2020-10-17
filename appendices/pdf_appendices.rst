@@ -11,6 +11,6 @@ Appendices
 
 .. toctree::
 
-   plugins_api_pdf
-   tag_mapping_pdf
-   command_line_pdf
+   plugins_api
+   tag_mapping
+   command_line

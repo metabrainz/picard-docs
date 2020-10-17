@@ -80,6 +80,9 @@ settings on the right hand side.  This is where the majority of Picard's customi
 
 .. only:: html
 
+   .. image:: images/options-general.png
+      :width: 100 %
+
    .. seealso::
 
       :doc:`options_general` /

@@ -33,8 +33,9 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :hidden:
 
    about_picard/introduction
-   about_picard/glossary
+   about_picard/contributing
    about_picard/acknowledgements
+   about_picard/glossary
 
 
 .. toctree::
