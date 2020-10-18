@@ -34,7 +34,7 @@ These options determine how Picard handles files when they are saved with update
 
 **Destination directory**
 
-   This specifies the destination parent diretory to which files are moved when they are saved, if the
+   This specifies the destination parent directory to which files are moved when they are saved, if the
    "Move files when saving" option is selected.  If you use the directory "." the files will be moved
    relative to their current location. If they are already in some sort of directory structure, this will
    probably not do what you want!
