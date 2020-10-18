@@ -15,6 +15,7 @@ Some of the most often asked questions have been addressed in the following sect
    * :doc:`faq_usage_tagger_icon`
    * :doc:`faq_usage_load_album_errors`
    * :doc:`faq_usage_macos_drives`
+   * :doc:`faq_usage_macos_startup_error`
    * :doc:`faq_config_where_saved`
    * :doc:`faq_config_itunes`
    * :doc:`faq_config_tags_truncated`
@@ -33,6 +34,7 @@ Some of the most often asked questions have been addressed in the following sect
    faq_usage_tagger_icon
    faq_usage_load_album_errors
    faq_usage_macos_drives
+   faq_usage_macos_startup_error
    faq_config_where_saved
    faq_config_itunes
    faq_config_tags_truncated
