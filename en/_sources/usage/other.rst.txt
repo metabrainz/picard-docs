@@ -23,6 +23,11 @@ there are some other tasks that it can perform:
       This will calculate the acoustic fingerprints for the selected tracks and submit them to
       the AcoustID database.
 
+
+   **Generating tags from file names**
+
+      This will extract tags such as track number and title from the file name.
+
 .. .. only:: latex
 
 ..    Each of these steps are described in detail in the following sections.
@@ -33,10 +38,12 @@ there are some other tasks that it can perform:
 
       Step-by-step detailed instructions:
       :doc:`attach_disc_id` /
-      :doc:`submit_acoustid`
+      :doc:`submit_acoustid` /
+      :doc:`tags_from_file_names`
 
 .. toctree::
    :hidden:
 
    attach_disc_id
    submit_acoustid
+   tags_from_file_names
