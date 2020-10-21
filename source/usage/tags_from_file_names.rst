@@ -57,3 +57,27 @@ Sometimes files have been named without spaces and use underscores instead.  For
 could be named :file:`04_Heart_of_Gold.mp3`.  By default the title would get extracted as
 "Heart_of_Gold".  In this case enable the checkbox "Replace underscores with spaces" and use a
 pattern like :samp:`%tracknumber%_%title%` to extract the title properly as "Heart of Gold".
+
+
+
+Ignoring parts of the file name
+-------------------------------
+
+Sometimes you don't want to include parts of the file name in your tags and just want to ignore it.
+The pattern must always match the entire file name, though.  In this case you can use a hidden
+variable for the parts of the file name you do not want to match to an actual tag.  Hidden variables
+start with an underscore like :samp:`%_dummy%`.  This variable will still be available on the file
+for :doc:`../scripting`, but will not get written to the actual file tags on saving.
+
+One example might be if you want to extract only the track number from a file name like
+:file:`04 Are You Ready for the Country_.mp3`.  Maybe the track number tag is missing in the file,
+but the title tag is already properly set.  You could use the pattern :samp:`%tracknumber% %_filetitle%`.
+This would extract the `tracknumber` tag properly, but would extract the rest of the file name
+to a hidden variable `%_filetitle%` which would not get written to the file tags. The name
+``%_filetitle%`` is arbitrarily chosen, it just needs to start with an underscore.
+
+
+    .. note::
+        Parsing hidden variables from file names is supported since Picard 2.5.  Earlier versions
+        would create an actual tag which would get stored to the tags.  If you are using a Picard
+        version older than 2.5 you will need to remove the unwanted tags before saving the files.
