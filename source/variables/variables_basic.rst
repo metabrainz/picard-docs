@@ -19,10 +19,6 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.
 
-.. note::
-
-   Variables that rely on information from the files (e.g.: _bitrate) are only available for use in the file naming script.
-
 **_absolutetracknumber**
 
     The absolute number of this track disregarding the disc number (i.e.: ``%_absolutetracknumber%`` of ``%_totalalbumtracks%``).
@@ -39,38 +35,6 @@ These variables are populated from MusicBrainz data for most releases, without a
 **_artists_sort**
 
     The Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)
-
-**_bitrate**
-
-    Approximate bitrate in kbps.  Only available to the file naming script.
-
-**_bits_per_sample**
-
-    Bits of data per sample.  Only available to the file naming script.
-
-**_channels**
-
-    Number of audio channels in the file.  Only available to the file naming script.
-
-**_dirname**
-
-    The name of the directory containing the file at the point of being loaded into Picard.  Only available to the file naming script. (*since Picard 1.1*)
-
-**_extension**
-
-    The file's extension.  Only available to the file naming script. (*since Picard 0.9*)
-
-**_filename**
-
-    The name of the file without extension.  Only available to the file naming script. (*since Picard 1.1*)
-
-**_format**
-
-    Media format of the file (e.g.: MPEG-1 Audio).  Only available to the file naming script.
-
-**_length**
-
-    The length of the track in format mins:secs.
 
 **_multiartist**
 
@@ -101,10 +65,6 @@ These variables are populated from MusicBrainz data for most releases, without a
 **_releaselanguage**
 
     Release Language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)
-
-**_sample_rate**
-
-    Number of digitizing samples per second (Hz).  Only available to the file naming script.
 
 .. _ref_secondaryreleasetype:
 
