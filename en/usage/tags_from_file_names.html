@@ -117,6 +117,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#basic-usage">Basic usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#matching-folders">Matching folders</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#replace-underscores-with-spaces">Replace underscores with spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ignoring-parts-of-the-file-name">Ignoring parts of the file name</a></li>
 </ul>
 </li>
 </ul>
@@ -252,6 +253,28 @@ could match the artist, album, track number and title with a pattern of
 could be named <code class="file docutils literal notranslate"><span class="pre">04_Heart_of_Gold.mp3</span></code>.  By default the title would get extracted as
 “Heart_of_Gold”.  In this case enable the checkbox “Replace underscores with spaces” and use a
 pattern like <code class="samp docutils literal notranslate"><span class="pre">%tracknumber%_%title%</span></code> to extract the title properly as “Heart of Gold”.</p>
+</div>
+<div class="section" id="ignoring-parts-of-the-file-name">
+<h2>Ignoring parts of the file name<a class="headerlink" href="#ignoring-parts-of-the-file-name" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you don’t want to include parts of the file name in your tags and just want to ignore them.
+The pattern must always match the entire file name, though.  In this case you can use a hidden
+variable for the parts of the file name you do not want to match to an actual tag.  Hidden variables
+start with an underscore like <code class="samp docutils literal notranslate"><span class="pre">%_dummy%</span></code>.  This variable will still be available on the file
+for <a class="reference internal" href="../scripting.html"><span class="doc">Scripting</span></a>, but will not get written to the actual file tags on saving.</p>
+<p>One example might be if you want to extract only the track number from a file name like
+<code class="file docutils literal notranslate"><span class="pre">04</span> <span class="pre">Are</span> <span class="pre">You</span> <span class="pre">Ready</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">Country_.mp3</span></code>.  Maybe the track number tag is missing in the file,
+but the title tag is already properly set.  You could use the pattern <code class="samp docutils literal notranslate"><span class="pre">%tracknumber%</span> <span class="pre">%_filetitle%</span></code>.
+This would extract the <cite>tracknumber</cite> tag properly, but would extract the rest of the file name
+to a hidden variable <cite>%_filetitle%</cite> which would not get written to the file tags. The name
+<code class="docutils literal notranslate"><span class="pre">%_filetitle%</span></code> is arbitrarily chosen, it just needs to start with an underscore.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Parsing hidden variables from file names is supported since Picard 2.5.  Earlier versions
+would create an actual tag which would get stored to the tags.  If you are using a Picard
+version older than 2.5 you will need to remove the unwanted tags before saving the files.</p>
+</div>
+</div></blockquote>
 </div>
 </div>
 
