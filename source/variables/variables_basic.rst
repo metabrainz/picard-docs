@@ -36,9 +36,21 @@ These variables are populated from MusicBrainz data for most releases, without a
 
     The Artist's Sort Name(s) (multi-value) (*since Picard 1.3*).
 
+**_datatrack**
+
+    Set to 1 if the track is a "`data track <https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks>`_" (*since Picard 1.3.1*).
+
+**_discpregap**
+
+    Set to 1 if the disc the track is on has a "`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_" (*since Picard 1.4*).
+
 **_multiartist**
 
     0 if tracks on the album all have the same primary artist, 1 otherwise (*since Picard 1.3*).
+
+**_pregap**
+
+    Set to 1 if the track is a "`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_" (*since Picard 1.3.1*).
 
 .. _ref_primaryreleasetype:
 
