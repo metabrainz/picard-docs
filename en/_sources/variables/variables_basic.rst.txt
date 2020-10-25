@@ -22,23 +22,23 @@ These variables are populated from MusicBrainz data for most releases, without a
 **_absolutetracknumber**
 
     The absolute number of this track disregarding the disc number (i.e.: ``%_absolutetracknumber%`` of ``%_totalalbumtracks%``).
-    For example, this value would be 11 for the second track on disc 2 where disc 1 has 9 tracks. (*since Picard 1.3*)
+    For example, this value would be 11 for the second track on disc 2 where disc 1 has 9 tracks (*since Picard 1.3*).
 
 **_albumartists**
 
-    The Album's Artists' Name(s) (multi-value). (*since Picard 1.3*)
+    The Album's Artists' Name(s) (multi-value) (*since Picard 1.3*).
 
 **_albumartists_sort**
 
-    The Album Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)
+    The Album Artist's Sort Name(s) (multi-value) (*since Picard 1.3*).
 
 **_artists_sort**
 
-    The Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)
+    The Artist's Sort Name(s) (multi-value) (*since Picard 1.3*).
 
 **_multiartist**
 
-    0 if tracks on the album all have the same primary artist, 1 otherwise. (*since Picard 1.3*)
+    0 if tracks on the album all have the same primary artist, 1 otherwise (*since Picard 1.3*).
 
 .. _ref_primaryreleasetype:
 
@@ -52,7 +52,7 @@ These variables are populated from MusicBrainz data for most releases, without a
 
 **_releasecomment**
 
-    Release disambiguation comment. (*since Picard 0.15*)
+    Release disambiguation comment (*since Picard 0.15*).
 
 **_releasegroup**
 
@@ -64,7 +64,7 @@ These variables are populated from MusicBrainz data for most releases, without a
 
 **_releaselanguage**
 
-    Release Language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)
+    Release Language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ (*since Picard 0.10*).
 
 .. _ref_secondaryreleasetype:
 

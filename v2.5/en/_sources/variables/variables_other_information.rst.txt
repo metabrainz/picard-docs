@@ -21,4 +21,4 @@ If you set new variables, these will be saved as new tags in ID3, APEv2 and VORB
 saved to, and reloaded from, ID3 user defined text information (TXXX) frames. They will not be saved in ASF or MP4 based files.
 
 For ID3 based tags (i.e.: MP3 files), you can also set ID3 tags directly from your scripts by setting a special variable starting with
-"_id3:". Currently these tags are not loaded into variables when you reload the file into Picard. (*since Picard 0.9*)
+"_id3:". Currently these tags are not loaded into variables when you reload the file into Picard (*since Picard 0.9*).
