@@ -1,5 +1,5 @@
 const default_language = 'en';
-const versions = ['v2.3.2', 'v2.4', 'v2.4.1', 'v2.4.2', 'v2.4.4', 'v2.5'];
+const versions = ['v2.3.2', 'v2.4', 'v2.4.1', 'v2.4.2', 'v2.4.4', 'v2.5', 'v2.5.1'];
 var vcount = versions.length;
 var i, text;
 var serv = window.location.protocol + '//' + window.location.hostname
