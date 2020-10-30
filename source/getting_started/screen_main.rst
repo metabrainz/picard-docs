@@ -61,7 +61,7 @@ Below you find a selection of screenshots of Picard's main screen on different s
 .. figure:: ../images/mainscreen-macos-light.png
    :width: 100 %
 
-   Picard on macOS 11 Big Sur
+   Picard on macOS
 
 .. figure:: ../images/mainscreen-linux-plasma-light.png
    :width: 100 %
@@ -77,6 +77,11 @@ Below you find a selection of screenshots of Picard's main screen on different s
    :width: 100 %
 
    Picard on Linux with the GNOME desktop environment
+
+.. figure:: ../images/mainscreen-windows7.png
+   :width: 100 %
+
+   Picard on Windows 7
 
 .. figure:: ../images/mainscreen-haiku.png
    :width: 100 %
