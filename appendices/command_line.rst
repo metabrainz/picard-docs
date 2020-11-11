@@ -23,6 +23,8 @@ where the options are:
 
 ``-d``, ``--debug`` enable debug-level logging
 
+``-M``, ``--no-player`` disable built-in media player
+
 ``-N``, ``--no-restore`` do not restore window positions or sizes
 
 ``-P``, ``--no-plugins`` do not load any plugins

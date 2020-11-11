@@ -77,6 +77,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    troubleshooting/missing_tags
    troubleshooting/not_saving
    troubleshooting/stopped_working
+   troubleshooting/macos_startup_error
 
 
 .. toctree::

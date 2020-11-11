@@ -17,3 +17,4 @@ Troubleshooting
    missing_tags
    not_saving
    stopped_working
+   macos_startup_error

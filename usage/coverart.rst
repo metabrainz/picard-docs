@@ -22,7 +22,10 @@ Cover Art image.
 .. image:: images/drop-cover-art.png
    :width: 100 %
 
-Right-clicking on the images brings up a menu of options including "Show more details", "Keep original cover
+You can also choose a local file as cover art by right clicking on the image and selecting
+"Choose local file…" from the menu.
+
+The menu also provides additional options including "Show more details", "Keep original cover
 art", and options for the way that images dropped onto the selection are processed.  Selecting "Show more
 details" will bring up a new window as:
 

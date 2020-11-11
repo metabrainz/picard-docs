@@ -24,6 +24,7 @@ AcoustID
    "APEv2", "``ACOUSTID_ID``"
    "iTunes MP4", "``----:com.apple.iTunes:Acoustid Id``"
    "ASF/Windows Media", "``Acoustid/Id``"
+   "RIFF INFO", "n/a"
 
 
 AcoustID Fingerprint
@@ -38,6 +39,7 @@ AcoustID Fingerprint
    "APEv2", "``ACOUSTID_FINGERPRINT``"
    "iTunes MP4", "``----:com.apple.iTunes:Acoustid Fingerprint``"
    "ASF/Windows Media", "``Acoustid/Fingerprint``"
+   "RIFF INFO", "n/a"
 
 
 `Album <https://musicbrainz.org/doc/Release_Title>`_
@@ -52,6 +54,7 @@ AcoustID Fingerprint
    "APEv2", "``Album``"
    "iTunes MP4", "``©alb``"
    "ASF/Windows Media", "``WM/AlbumTitle``"
+   "RIFF INFO", "``IPRD``"
 
 
 `Album Artist <https://musicbrainz.org/doc/Release_Artist>`_
@@ -66,6 +69,7 @@ AcoustID Fingerprint
    "APEv2", "``Album Artist``"
    "iTunes MP4", "``aART``"
    "ASF/Windows Media", "``WM/AlbumArtist``"
+   "RIFF INFO", "n/a"
 
 
 Album Artist Sort Order
@@ -80,6 +84,7 @@ Album Artist Sort Order
    "APEv2", "``ALBUMARTISTSORT``"
    "iTunes MP4", "``soaa``"
    "ASF/Windows Media", "``WM/AlbumArtistSortOrder``"
+   "RIFF INFO", "n/a"
 
 
 Album Sort Order
@@ -94,6 +99,7 @@ Album Sort Order
    "APEv2", "``ALBUMSORT``"
    "iTunes MP4", "``soal``"
    "ASF/Windows Media", "``WM/AlbumSortOrder``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -110,6 +116,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Arranger``"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 
 `Artist <https://musicbrainz.org/doc/Artist>`_
@@ -124,6 +131,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Artist``"
    "iTunes MP4", "``©ART``"
    "ASF/Windows Media", "``Author``"
+   "RIFF INFO", "``IART``"
 
 
 Artist Sort Order
@@ -138,6 +146,7 @@ Artist Sort Order
    "APEv2", "``ARTISTSORT``"
    "iTunes MP4", "``soar``"
    "ASF/Windows Media", "``WM/ArtistSortOrder``"
+   "RIFF INFO", "n/a"
 
 
 Artists
@@ -152,6 +161,7 @@ Artists
    "APEv2", "``Artists``"
    "iTunes MP4", "``----:com.apple.iTunes:ARTISTS``"
    "ASF/Windows Media", "``WM/ARTISTS``"
+   "RIFF INFO", "n/a"
 
 
 `ASIN <https://musicbrainz.org/doc/ASIN>`_
@@ -166,6 +176,7 @@ Artists
    "APEv2", "``ASIN``"
    "iTunes MP4", "``----:com.apple.iTunes:ASIN``"
    "ASF/Windows Media", "``ASIN``"
+   "RIFF INFO", "n/a"
 
 
 `Barcode <https://musicbrainz.org/doc/Barcode>`_
@@ -180,6 +191,7 @@ Artists
    "APEv2", "``Barcode``"
    "iTunes MP4", "``----:com.apple.iTunes:BARCODE``"
    "ASF/Windows Media", "``WM/Barcode``"
+   "RIFF INFO", "n/a"
 
 
 BPM
@@ -194,6 +206,7 @@ BPM
    "APEv2", "``BPM``"
    "iTunes MP4", "``tmpo``"
    "ASF/Windows Media", "``WM/BeatsPerMinute``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -210,6 +223,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``CatalogNumber``"
    "iTunes MP4", "``----:com.apple.iTunes:CATALOGNUMBER``"
    "ASF/Windows Media", "``WM/CatalogNo``"
+   "RIFF INFO", "n/a"
 
 
 Comment
@@ -224,6 +238,7 @@ Comment
    "APEv2", "``Comment``"
    "iTunes MP4", "``©cmt``"
    "ASF/Windows Media", "``Description``"
+   "RIFF INFO", "``ICMT``"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -240,6 +255,7 @@ Compilation (iTunes)
    "APEv2", "``Compilation``"
    "iTunes MP4", "``cpil``"
    "ASF/Windows Media", "``WM/IsCompilation``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 5 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -256,6 +272,7 @@ See :ref:`Note 5 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Composer``"
    "iTunes MP4", "``©wrt``"
    "ASF/Windows Media", "``WM/Composer``"
+   "RIFF INFO", "``IMUS``"
 
 
 Composer Sort Order
@@ -270,6 +287,7 @@ Composer Sort Order
    "APEv2", "``COMPOSERSORT``"
    "iTunes MP4", "``soco``"
    "ASF/Windows Media", "``WM/ComposerSortOrder`` (Picard>=1.3)"
+   "RIFF INFO", "n/a"
 
 
 `Conductor <https://musicbrainz.org/relationship/234670ce-5f22-4fd0-921b-ef1662695c5d>`_
@@ -284,6 +302,7 @@ Composer Sort Order
    "APEv2", "``Conductor``"
    "iTunes MP4", "``----:com.apple.iTunes:CONDUCTOR``"
    "ASF/Windows Media", "``WM/Conductor``"
+   "RIFF INFO", "n/a"
 
 
 Copyright
@@ -298,6 +317,7 @@ Copyright
    "APEv2", "``Copyright``"
    "iTunes MP4", "``cprt``"
    "ASF/Windows Media", "``Copyright``"
+   "RIFF INFO", "``ICOP``"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -314,6 +334,7 @@ Disc Number
    "APEv2", "``Disc``"
    "iTunes MP4", "``disk``"
    "ASF/Windows Media", "``WM/PartOfSet``"
+   "RIFF INFO", "n/a"
 
 
 Disc Subtitle
@@ -328,6 +349,7 @@ Disc Subtitle
    "APEv2", "``DiscSubtitle``"
    "iTunes MP4", "``----:com.apple.iTunes:DISCSUBTITLE``"
    "ASF/Windows Media", "``WM/SetSubTitle``"
+   "RIFF INFO", "n/a"
 
 
 Encoded By
@@ -342,6 +364,7 @@ Encoded By
    "APEv2", "``EncodedBy``"
    "iTunes MP4", "``©too``"
    "ASF/Windows Media", "``WM/EncodedBy``"
+   "RIFF INFO", "``IENC``"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -358,6 +381,7 @@ Encoder Settings
    "APEv2", "``EncoderSettings``"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/EncodingSettings`` (Picard>=1.3.1)"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -374,6 +398,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Engineer``"
    "iTunes MP4", "``----:com.apple.iTunes:ENGINEER``"
    "ASF/Windows Media", "``WM/Engineer``"
+   "RIFF INFO", "``IENG``"
 
 
 Gapless Playback
@@ -388,6 +413,7 @@ Gapless Playback
    "APEv2", "n/a"
    "iTunes MP4", "``pgap``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -404,6 +430,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Genre``"
    "iTunes MP4", "``©gen``"
    "ASF/Windows Media", "``WM/Genre``"
+   "RIFF INFO", "``IGNR``"
 
 
 Grouping
@@ -418,6 +445,7 @@ Grouping
    "APEv2", "``Grouping``"
    "iTunes MP4", "``©grp``"
    "ASF/Windows Media", "``WM/ContentGroupDescription``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Notes 3 and 8 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -434,6 +462,7 @@ Initial Key
    "APEv2", "``KEY``"
    "iTunes MP4", "``----:com.apple.iTunes:initialkey``"
    "ASF/Windows Media", "``WM/InitialKey``"
+   "RIFF INFO", "n/a"
 
 
 `ISRC <https://musicbrainz.org/doc/ISRC>`_
@@ -448,6 +477,7 @@ Initial Key
    "APEv2", "``ISRC``"
    "iTunes MP4", "``----:com.apple.iTunes:ISRC``"
    "ASF/Windows Media", "``WM/ISRC``"
+   "RIFF INFO", "n/a"
 
 
 Language
@@ -462,6 +492,7 @@ Language
    "APEv2", "``Language``"
    "iTunes MP4", "``----:com.apple.iTunes:LANGUAGE``"
    "ASF/Windows Media", "``WM/Language``"
+   "RIFF INFO", "``ILNG``"
 
 
 License
@@ -476,6 +507,7 @@ License
    "APEv2", "``LICENSE``"
    "iTunes MP4", "``----:com.apple.iTunes:LICENSE``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Notes 6 and 7 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -492,6 +524,7 @@ See :ref:`Notes 6 and 7 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Lyricist``"
    "iTunes MP4", "``----:com.apple.iTunes:LYRICIST``"
    "ASF/Windows Media", "``WM/Writer``"
+   "RIFF INFO", "n/a"
 
 
 Lyrics
@@ -506,6 +539,7 @@ Lyrics
    "APEv2", "``Lyrics``"
    "iTunes MP4", "``©lyr``"
    "ASF/Windows Media", "``WM/Lyrics``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -522,6 +556,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Media``"
    "iTunes MP4", "``----:com.apple.iTunes:MEDIA``"
    "ASF/Windows Media", "``WM/Media``"
+   "RIFF INFO", "``IMED``"
 
 
 `Mix-DJ <https://musicbrainz.org/relationship/28338ee6-d578-485a-bb53-61dbfd7c6545>`_
@@ -536,6 +571,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``DJMixer``"
    "iTunes MP4", "``----:com.apple.iTunes:DJMIXER``"
    "ASF/Windows Media", "``WM/DJMixer``"
+   "RIFF INFO", "n/a"
 
 
 `Mixer <https://musicbrainz.org/relationship/3e3102e1-1896-4f50-b5b2-dd9824e46efe>`_
@@ -550,6 +586,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Mixer``"
    "iTunes MP4", "``----:com.apple.iTunes:MIXER``"
    "ASF/Windows Media", "``WM/Mixer``"
+   "RIFF INFO", "n/a"
 
 
 Mood
@@ -564,6 +601,7 @@ Mood
    "APEv2", "``Mood``"
    "iTunes MP4", "``----:com.apple.iTunes:MOOD``"
    "ASF/Windows Media", "``WM/Mood``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 3 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -580,6 +618,7 @@ Movement
    "APEv2", "``MOVEMENTNAME``"
    "iTunes MP4", "``©mvn``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -596,6 +635,7 @@ Movement Count
    "APEv2", "``MOVEMENTTOTAL``"
    "iTunes MP4", "``mvc``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -612,6 +652,7 @@ Movement Number
    "APEv2", "``MOVEMENT``"
    "iTunes MP4", "``mvi``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -628,6 +669,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``MUSICBRAINZ_ARTISTID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Artist Id``"
    "ASF/Windows Media", "``MusicBrainz/Artist Id``"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz Disc ID <https://musicbrainz.org/doc/Disc_ID>`_
@@ -642,6 +684,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``MUSICBRAINZ_DISCID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Disc Id``"
    "ASF/Windows Media", "``MusicBrainz/Disc Id``"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz Original Artist ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
@@ -656,6 +699,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "n/a"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Original Artist Id`` (Picard>=2.1)"
    "ASF/Windows Media", "``MusicBrainz/Original Artist Id`` (Picard>=2.1)"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz Original Release ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
@@ -670,6 +714,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "n/a"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Original Album Id`` (Picard>=2.1)"
    "ASF/Windows Media", "``MusicBrainz/Original Album Id`` (Picard>=2.1)"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz Recording ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
@@ -684,6 +729,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``MUSICBRAINZ_TRACKID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Track Id``"
    "ASF/Windows Media", "``MusicBrainz/Track Id``"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz Release Artist ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
@@ -698,6 +744,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``MUSICBRAINZ_ALBUMARTISTID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Album Artist Id``"
    "ASF/Windows Media", "``MusicBrainz/Album Artist Id``"
+   "RIFF INFO", "n/a"
 
 
 MusicBrainz Release Group ID
@@ -712,6 +759,7 @@ MusicBrainz Release Group ID
    "APEv2", "``MUSICBRAINZ_RELEASEGROUPID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Release Group Id``"
    "ASF/Windows Media", "``MusicBrainz/Release Group Id``"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz Release ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
@@ -726,6 +774,7 @@ MusicBrainz Release Group ID
    "APEv2", "``MUSICBRAINZ_ALBUMID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Album Id``"
    "ASF/Windows Media", "``MusicBrainz/Album Id``"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz Track ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
@@ -740,6 +789,7 @@ MusicBrainz Release Group ID
    "APEv2", "``MUSICBRAINZ_RELEASETRACKID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Release Track Id``"
    "ASF/Windows Media", "``MusicBrainz/Release Track Id``"
+   "RIFF INFO", "n/a"
 
 
 `MusicBrainz TRM ID <https://musicbrainz.org/doc/TRM>`_
@@ -754,6 +804,7 @@ MusicBrainz Release Group ID
    "APEv2", "``MUSICBRAINZ_TRMID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz TRM Id``"
    "ASF/Windows Media", "``MusicBrainz/TRM Id``"
+   "RIFF INFO", "n/a"
 
 
 MusicBrainz Work ID
@@ -768,6 +819,7 @@ MusicBrainz Work ID
    "APEv2", "``MUSICBRAINZ_WORKID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Work Id``"
    "ASF/Windows Media", "``MusicBrainz/Work Id``"
+   "RIFF INFO", "n/a"
 
 
 MusicIP Fingerprint
@@ -782,6 +834,7 @@ MusicIP Fingerprint
    "APEv2", "n/a"
    "iTunes MP4", "``----:com.apple.iTunes:fingerprint``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 
 `MusicIP PUID <https://musicbrainz.org/doc/PUID>`_
@@ -796,6 +849,7 @@ MusicIP Fingerprint
    "APEv2", "``MUSICIP_PUID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicIP PUID``"
    "ASF/Windows Media", "``MusicIP/PUID``"
+   "RIFF INFO", "n/a"
 
 
 Original Album
@@ -810,6 +864,7 @@ Original Album
    "APEv2", "n/a"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/OriginalAlbumTitle`` (Picard>=2.1)"
+   "RIFF INFO", "n/a"
 
 
 Original Artist
@@ -824,6 +879,7 @@ Original Artist
    "APEv2", "``Original Artist`` (Picard>=2.1)"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/OriginalArtist`` (Picard>=2.1)"
+   "RIFF INFO", "n/a"
 
 
 Original Filename
@@ -838,6 +894,7 @@ Original Filename
    "APEv2", "``ORIGINALFILENAME``"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/OriginalFilename``"
+   "RIFF INFO", "n/a"
 
 
 Original Release Date
@@ -852,6 +909,7 @@ Original Release Date
    "APEv2", "n/a"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/OriginalReleaseTime`` (Picard>=1.3.1) ``WM/OriginalReleaseYear`` (Picard<=1.3.0)"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 1 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -868,6 +926,7 @@ Original Release Year
    "APEv2", "``ORIGINALYEAR``"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/OriginalReleaseYear`` (Picard>=1.3.1)"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 1 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -884,6 +943,7 @@ Performer
    "APEv2", "``Performer={artist} (instrument)``"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 .. seealso::
 
@@ -909,6 +969,7 @@ Podcast
    "APEv2", "n/a"
    "iTunes MP4", "``pcst``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -925,6 +986,7 @@ Podcast URL
    "APEv2", "n/a"
    "iTunes MP4", "``purl``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -941,6 +1003,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Producer``"
    "iTunes MP4", "``----:com.apple.iTunes:PRODUCER``"
    "ASF/Windows Media", "``WM/Producer``"
+   "RIFF INFO", "``IPRO``"
 
 
 `Rating <https://musicbrainz.org/doc/Rating_System>`_
@@ -955,6 +1018,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "n/a"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/SharedUserRating``"
+   "RIFF INFO", "n/a"
 
 
 `Record Label <https://musicbrainz.org/doc/Label_Name>`_
@@ -969,6 +1033,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Label``"
    "iTunes MP4", "``----:com.apple.iTunes:LABEL``"
    "ASF/Windows Media", "``WM/Publisher``"
+   "RIFF INFO", "n/a"
 
 
 `Release Country <https://musicbrainz.org/doc/Release_Country>`_
@@ -983,6 +1048,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``RELEASECOUNTRY``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Album Release Country``"
    "ASF/Windows Media", "``MusicBrainz/Album Release Country``"
+   "RIFF INFO", "``ICNT``"
 
 
 `Release Date <https://musicbrainz.org/doc/Release_Date>`_
@@ -997,6 +1063,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Year``"
    "iTunes MP4", "``©day``"
    "ASF/Windows Media", "``WM/Year``"
+   "RIFF INFO", "``ICRD``"
 
 
 `Release Status <https://musicbrainz.org/doc/Release_Status>`_
@@ -1011,6 +1078,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``MUSICBRAINZ_ALBUMSTATUS``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Album Status``"
    "ASF/Windows Media", "``MusicBrainz/Album Status``"
+   "RIFF INFO", "n/a"
 
 
 `Release Type <https://musicbrainz.org/doc/Release_Type>`_
@@ -1025,6 +1093,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``MUSICBRAINZ_ALBUMTYPE``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Album Type``"
    "ASF/Windows Media", "``MusicBrainz/Album Type``"
+   "RIFF INFO", "n/a"
 
 
 `Remixer <https://musicbrainz.org/relationship/7950be4d-13a3-48e7-906b-5af562e39544>`_
@@ -1039,6 +1108,7 @@ See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``MixArtist``"
    "iTunes MP4", "``----:com.apple.iTunes:REMIXER``"
    "ASF/Windows Media", "``WM/ModifiedBy``"
+   "RIFF INFO", "n/a"
 
 
 ReplayGain Album Gain
@@ -1053,6 +1123,7 @@ ReplayGain Album Gain
    "APEv2", "``REPLAYGAIN_ALBUM_GAIN``"
    "iTunes MP4", "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_GAIN``"
    "ASF/Windows Media", "``REPLAYGAIN_ALBUM_GAIN``"
+   "RIFF INFO", "n/a"
 
 
 ReplayGain Album Peak
@@ -1067,6 +1138,7 @@ ReplayGain Album Peak
    "APEv2", "``REPLAYGAIN_ALBUM_PEAK``"
    "iTunes MP4", "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_PEAK``"
    "ASF/Windows Media", "``REPLAYGAIN_ALBUM_PEAK``"
+   "RIFF INFO", "n/a"
 
 
 ReplayGain Album Range
@@ -1081,6 +1153,7 @@ ReplayGain Album Range
    "APEv2", "``REPLAYGAIN_ALBUM_RANGE``"
    "iTunes MP4", "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_RANGE``"
    "ASF/Windows Media", "``REPLAYGAIN_ALBUM_RANGE``"
+   "RIFF INFO", "n/a"
 
 
 ReplayGain Reference Loudness
@@ -1095,6 +1168,7 @@ ReplayGain Reference Loudness
    "APEv2", "``REPLAYGAIN_REFERENCE_LOUDNESS``"
    "iTunes MP4", "``----:com.apple.iTunes:REPLAYGAIN_REFERENCE_LOUDNESS``"
    "ASF/Windows Media", "``REPLAYGAIN_REFERENCE_LOUDNESS``"
+   "RIFF INFO", "n/a"
 
 
 ReplayGain Track Gain
@@ -1109,6 +1183,7 @@ ReplayGain Track Gain
    "APEv2", "``REPLAYGAIN_TRACK_GAIN``"
    "iTunes MP4", "``----:com.apple.iTunes:REPLAYGAIN_TRACK_GAIN``"
    "ASF/Windows Media", "``REPLAYGAIN_TRACK_GAIN``"
+   "RIFF INFO", "n/a"
 
 
 ReplayGain Track Peak
@@ -1123,6 +1198,7 @@ ReplayGain Track Peak
    "APEv2", "``REPLAYGAIN_TRACK_PEAK``"
    "iTunes MP4", "``----:com.apple.iTunes:REPLAYGAIN_TRACK_PEAK``"
    "ASF/Windows Media", "``REPLAYGAIN_TRACK_PEAK``"
+   "RIFF INFO", "n/a"
 
 
 ReplayGain Track Range
@@ -1137,6 +1213,7 @@ ReplayGain Track Range
    "APEv2", "``REPLAYGAIN_TRACK_RANGE``"
    "iTunes MP4", "``----:com.apple.iTunes:REPLAYGAIN_TRACK_RANGE``"
    "ASF/Windows Media", "``REPLAYGAIN_TRACK_RANGE``"
+   "RIFF INFO", "n/a"
 
 
 Script
@@ -1151,6 +1228,7 @@ Script
    "APEv2", "``Script``"
    "iTunes MP4", "``----:com.apple.iTunes:SCRIPT``"
    "ASF/Windows Media", "``WM/Script``"
+   "RIFF INFO", "n/a"
 
 
 Show Name
@@ -1165,6 +1243,7 @@ Show Name
    "APEv2", "n/a"
    "iTunes MP4", "``tvsh``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -1181,6 +1260,7 @@ Show Name Sort Order
    "APEv2", "n/a"
    "iTunes MP4", "``sosn``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -1197,6 +1277,7 @@ Show Work & Movement
    "APEv2", "``SHOWMOVEMENT``"
    "iTunes MP4", "``shwm``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -1213,6 +1294,7 @@ Subtitle
    "APEv2", "``Subtitle``"
    "iTunes MP4", "``----:com.apple.iTunes:SUBTITLE``"
    "ASF/Windows Media", "``WM/SubTitle``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -1229,6 +1311,7 @@ Total Discs
    "APEv2", "``Disc``"
    "iTunes MP4", "``disk``"
    "ASF/Windows Media", "``WM/PartOfSet`` (Picard>=1.3.1)"
+   "RIFF INFO", "n/a"
 
 
 Total Tracks
@@ -1243,6 +1326,7 @@ Total Tracks
    "APEv2", "``Track``"
    "iTunes MP4", "``trkn``"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 
 Track Number
@@ -1257,6 +1341,7 @@ Track Number
    "APEv2", "``Track``"
    "iTunes MP4", "``trkn``"
    "ASF/Windows Media", "``WM/TrackNumber``"
+   "RIFF INFO", "``ITRK``"
 
 
 `Track Title <https://musicbrainz.org/doc/Track_Title>`_
@@ -1271,6 +1356,7 @@ Track Number
    "APEv2", "``Title``"
    "iTunes MP4", "``©nam``"
    "ASF/Windows Media", "``Title``"
+   "RIFF INFO", "``INAM``"
 
 
 Track Title Sort Order
@@ -1285,6 +1371,7 @@ Track Title Sort Order
    "APEv2", "``TITLESORT``"
    "iTunes MP4", "``sonm``"
    "ASF/Windows Media", "``WM/TitleSortOrder``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -1301,6 +1388,7 @@ Website (official artist website)
    "APEv2", "``Weblink``"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "``WM/AuthorURL`` (Picard>=1.3.1)"
+   "RIFF INFO", "n/a"
 
 
 Work Title
@@ -1315,6 +1403,7 @@ Work Title
    "APEv2", "``WORK``"
    "iTunes MP4", "``©wrk`` (Picard>=2.1)"
    "ASF/Windows Media", "``WM/Work``"
+   "RIFF INFO", "n/a"
 
 See :ref:`Note 8 <ref_tag_mapping_notes>` at the end of this section.
 
@@ -1331,6 +1420,7 @@ See :ref:`Note 8 <ref_tag_mapping_notes>` at the end of this section.
    "APEv2", "``Writer``"
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "n/a"
+   "RIFF INFO", "``IWRI``"
 
 See :ref:`Note 2 <ref_tag_mapping_notes>` at the end of this section.
 

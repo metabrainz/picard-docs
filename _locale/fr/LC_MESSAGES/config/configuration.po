@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-06 14:37-0600\n"
+"POT-Creation-Date: 2020-11-09 16:39-0700\n"
+"PO-Revision-Date: 2020-11-09 16:58-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
 "X-Generator: Poedit 2.4.1\n"
 
 #: ../../config/configuration.rst:8
@@ -57,21 +57,26 @@ msgstr "**Navigateur de fichiers**"
 #: ../../config/configuration.rst:25
 msgid ""
 "This displays a file browser on the left side of the screen for "
-"selecting files and directories for processing.  Files and directories "
-"can also be selected using your system's file browser by dragging and "
-"dropping them onto the Picard application."
+"selecting files and directories for processing. Files can be loaded into "
+"Picard by dragging and dropping them to the right panes, double clicking "
+"on individual files or by selecting multiple files and folders and "
+"selecting \"Load selected files\" from the context menu."
 msgstr ""
-"Ceci affiche un navigateur de fichiers sur le côté gauche de l'écran "
-"pour sélectionner les fichiers et répertoires à traiter. Les fichiers et "
-"répertoires peuvent également être sélectionnés à l'aide du navigateur "
-"de fichiers de votre système en les faisant glisser et en les déposant "
-"sur l'application Picard."
 
-#: ../../config/configuration.rst:29
+#: ../../config/configuration.rst:30
+msgid ""
+"Files and directories can also be selected using your system's file "
+"browser by dragging and dropping them onto the Picard application."
+msgstr ""
+"Les fichiers et répertoires peuvent également être sélectionnés à l'aide "
+"du navigateur de fichiers de votre système en les faisant glisser et en "
+"les déposant sur l'application Picard."
+
+#: ../../config/configuration.rst:33
 msgid "**Cover Art**"
 msgstr "**Couverture Art**"
 
-#: ../../config/configuration.rst:31
+#: ../../config/configuration.rst:35
 msgid ""
 "This displays the cover art for the currently selected item (track or "
 "release) in a window to the right of the tags section of the display.  "
@@ -83,11 +88,11 @@ msgstr ""
 "l'affichage. Cela vous permet de sélectionner ou de remplacer la "
 "pochette enregistrée avec la version."
 
-#: ../../config/configuration.rst:35
+#: ../../config/configuration.rst:39
 msgid "**Actions**"
 msgstr "**Actions**"
 
-#: ../../config/configuration.rst:37
+#: ../../config/configuration.rst:41
 msgid ""
 "This displays the button bar of the actions performed by Picard, located "
 "just below the menu bar."
@@ -95,11 +100,11 @@ msgstr ""
 "Cela affiche la barre de boutons des actions effectuées par Picard, "
 "située juste en dessous de la barre de menu."
 
-#: ../../config/configuration.rst:39
+#: ../../config/configuration.rst:43
 msgid "**Search**"
 msgstr "**Chercher**"
 
-#: ../../config/configuration.rst:41
+#: ../../config/configuration.rst:45
 msgid ""
 "This displays the manual search box to the right of the \"Actions\" "
 "button bar."
@@ -107,21 +112,21 @@ msgstr ""
 "Cela affiche la zone de recherche manuelle à droite de la barre de "
 "boutons \"Actions\"."
 
-#: ../../config/configuration.rst:43
+#: ../../config/configuration.rst:47
 msgid "**Player**"
 msgstr "**Joueur**"
 
-#: ../../config/configuration.rst:45
+#: ../../config/configuration.rst:49
 msgid "This displays the built-in player for playing selected audio files."
 msgstr ""
 "Ceci affiche le lecteur intégré pour la lecture des fichiers audio "
 "sélectionnés."
 
-#: ../../config/configuration.rst:53
+#: ../../config/configuration.rst:57
 msgid "Action Options"
 msgstr "Options d'action"
 
-#: ../../config/configuration.rst:55
+#: ../../config/configuration.rst:59
 msgid ""
 "The action options are found under the :menuselection:`\"Options\"` item "
 "on the menu bar.  There are three available actions that Picard can "
@@ -132,19 +137,19 @@ msgstr ""
 "peut effectuer lors de l'enregistrement des fichiers musicaux "
 "sélectionnés:"
 
-#: ../../config/configuration.rst:58
+#: ../../config/configuration.rst:62
 msgid "**Rename Files**"
 msgstr "**Renommer les fichiers**"
 
-#: ../../config/configuration.rst:60
+#: ../../config/configuration.rst:64
 msgid "Picard will rename each file in accordance with the naming script."
 msgstr "Picard renommera chaque fichier conformément au script de nommage."
 
-#: ../../config/configuration.rst:62
+#: ../../config/configuration.rst:66
 msgid "**Move Files**"
 msgstr "**Déplacer des fichiers**"
 
-#: ../../config/configuration.rst:64
+#: ../../config/configuration.rst:68
 msgid ""
 "Picard will move files to the target directory in accordance with the "
 "naming script."
@@ -152,11 +157,11 @@ msgstr ""
 "Picard déplacera les fichiers vers le répertoire cible conformément au "
 "script de nommage."
 
-#: ../../config/configuration.rst:66
+#: ../../config/configuration.rst:70
 msgid "**Save Tags**"
 msgstr "**Enregistrer les tags**"
 
-#: ../../config/configuration.rst:68
+#: ../../config/configuration.rst:72
 msgid ""
 "Picard will update the metadata tags in the files in accordance with the "
 "specified option settings and tagging scripts."
@@ -165,11 +170,11 @@ msgstr ""
 "conformément aux paramètres d'option et aux scripts de balisage "
 "spécifiés."
 
-#: ../../config/configuration.rst:75
+#: ../../config/configuration.rst:79
 msgid "Option Settings"
 msgstr "Paramètres des options"
 
-#: ../../config/configuration.rst:77
+#: ../../config/configuration.rst:81
 msgid ""
 "The option settings are found under the :menuselection:`\"Options --> "
 "Options...\"` item on the menu bar.  This will open a new window with "
@@ -184,7 +189,7 @@ msgstr ""
 "côté droit. C'est là que la majorité de la personnalisation de Picard "
 "est effectuée."
 
-#: ../../config/configuration.rst:85
+#: ../../config/configuration.rst:92
 msgid ""
 ":doc:`options_general` / :doc:`options_metadata` / :doc:"
 "`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :"

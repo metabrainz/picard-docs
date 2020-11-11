@@ -30,13 +30,14 @@ copyright = 'This documentation is licensed under CC0 1.0.'
 author = 'Bob Swift'
 
 # The full version, including alpha/beta/rc tags
-release = 'v2.4.4'
+release = 'v2.5'
 release_list = [
     'v2.3.2',
     'v2.4',
     'v2.4.1',
     'v2.4.2',
     'v2.4.4',
+    'v2.5',
 ]
 version = release
 

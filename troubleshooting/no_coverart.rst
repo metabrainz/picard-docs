@@ -25,8 +25,8 @@ Picard isn't finding and downloading any cover art
    It's possible that the selected release does not have any cover art available from the enabled cover art
    providers. If a cover art image is displayed for the release on the MusicBrainz website, it is possible that
    the image for the release group is being displayed, or it is being provided through a third-party provider
-   agreement.  Sometimes this can be addressed by enabling the "CAA Release Group" and "Whitelist" provider
-   options.
+   agreement.  Sometimes this can be addressed by enabling the "CAA Release Group" and "Allowed cover art URLs"
+   provider options.
 
 **The selected provider is not currently available**
 

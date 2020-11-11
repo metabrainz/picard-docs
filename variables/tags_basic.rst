@@ -44,10 +44,6 @@ several other more minor settings) by wrapping them between percent '%' symbols 
    Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
    <../appendices/tag_mapping>` section for details.
 
-.. note::
-
-   Tags that rely on information from the files (e.g.: bpm) are only available for use in the file naming script.
-
 **acoustid_fingerprint**
 
     AcoustID Fingerprint for the track.

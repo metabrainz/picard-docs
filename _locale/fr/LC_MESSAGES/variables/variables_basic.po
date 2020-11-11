@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-18 10:02-0600\n"
-"PO-Revision-Date: 2020-10-18 10:11-0600\n"
+"POT-Creation-Date: 2020-11-09 16:39-0700\n"
+"PO-Revision-Date: 2020-11-09 18:09-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -40,20 +40,11 @@ msgstr ""
 "Les variables ne seront pas créées si aucune valeur n'a été récupérée pour la "
 "variable à partir de la base de données MusicBrainz."
 
-#: ../../variables/variables_basic.rst:24
-msgid ""
-"Variables that rely on information from the files (e.g.: _bitrate) are only "
-"available for use in the file naming script."
-msgstr ""
-"Les variables qui reposent sur les informations des fichiers (par exemple: "
-"_bitrate) ne sont disponibles que pour une utilisation dans le script de "
-"dénomination de fichier."
-
-#: ../../variables/variables_basic.rst:26
+#: ../../variables/variables_basic.rst:22
 msgid "**_absolutetracknumber**"
 msgstr "**_absolutetracknumber**"
 
-#: ../../variables/variables_basic.rst:28
+#: ../../variables/variables_basic.rst:24
 msgid ""
 "The absolute number of this track disregarding the disc number (i.e.: ``"
 "%_absolutetracknumber%`` of ``%_totalalbumtracks%``). For example, this value "
@@ -65,128 +56,67 @@ msgstr ""
 "valeur serait 11 pour la deuxième piste du disque 2 où le disque 1 a 9 pistes. "
 "(*depuis Picard 1.3*)"
 
-#: ../../variables/variables_basic.rst:31
+#: ../../variables/variables_basic.rst:27
 msgid "**_albumartists**"
 msgstr "**_albumartists**"
 
-#: ../../variables/variables_basic.rst:33
+#: ../../variables/variables_basic.rst:29
 msgid "The Album's Artists' Name(s) (multi-value). (*since Picard 1.3*)"
 msgstr ""
 "Les noms des artistes de l'album (valeurs multiples). (*depuis Picard 1.3*)"
 
-#: ../../variables/variables_basic.rst:35
+#: ../../variables/variables_basic.rst:31
 msgid "**_albumartists_sort**"
 msgstr "**_albumartists_sort**"
 
-#: ../../variables/variables_basic.rst:37
+#: ../../variables/variables_basic.rst:33
 msgid "The Album Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)"
 msgstr ""
 "Les noms de tri des artistes de l'album (valeurs multiples). (*depuis Picard "
 "1.3*)"
 
-#: ../../variables/variables_basic.rst:39
+#: ../../variables/variables_basic.rst:35
 msgid "**_artists_sort**"
 msgstr "**_artists_sort**"
 
-#: ../../variables/variables_basic.rst:41
+#: ../../variables/variables_basic.rst:37
 msgid "The Artist's Sort Name(s) (multi-value). (*since Picard 1.3*)"
 msgstr ""
 "Les noms de tri des artistes de la piste (valeurs multiples). (*depuis Picard "
 "1.3*)"
 
+#: ../../variables/variables_basic.rst:39
+msgid "**_datatrack**"
+msgstr "**_datatrack**"
+
+#: ../../variables/variables_basic.rst:41
+msgid ""
+"Set to 1 if the track is a \"`data track <https://wiki.musicbrainz.org/Style/"
+"Unknown_and_untitled/Special_purpose_track_title#Data_tracks>`_\". (*since "
+"Picard 1.3.1*)"
+msgstr ""
+"Réglé sur 1 si la piste est une \"`piste de données <https://wiki.musicbrainz."
+"org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks>`_\". "
+"(*depuis Picard 1.3.1*)"
+
 #: ../../variables/variables_basic.rst:43
-msgid "**_bitrate**"
-msgstr "**_bitrate**"
+msgid "**_discpregap**"
+msgstr "**_discpregap**"
 
 #: ../../variables/variables_basic.rst:45
-msgid "Approximate bitrate in kbps.  Only available to the file naming script."
+msgid ""
+"Set to 1 if the disc the track is on has a \"`pregap track <https://musicbrainz."
+"org/doc/Terminology#hidden_track>`_\". (*since Picard 1.4*)"
 msgstr ""
-"Le débit binaire approximatif en kbps. Uniquement disponible pour le script de "
-"dénomination de fichier."
+"Réglé sur 1 si le disque sur lequel se trouve la piste a une \"`piste de pré-"
+"insertion <https://musicbrainz.org/doc/Terminology#hidden_track>`_\". (*depuis "
+"Picard 1.4*)"
 
 #: ../../variables/variables_basic.rst:47
-msgid "**_bits_per_sample**"
-msgstr "**_bits_per_sample**"
-
-#: ../../variables/variables_basic.rst:49
-msgid "Bits of data per sample.  Only available to the file naming script."
-msgstr ""
-"Le nombre de bits de données par échantillon. Uniquement disponible pour le "
-"script de dénomination de fichier."
-
-#: ../../variables/variables_basic.rst:51
-msgid "**_channels**"
-msgstr "**_channels**"
-
-#: ../../variables/variables_basic.rst:53
-msgid ""
-"Number of audio channels in the file.  Only available to the file naming script."
-msgstr ""
-"Le nombre de canaux audio dans le fichier. Uniquement disponible pour le script "
-"de dénomination de fichier."
-
-#: ../../variables/variables_basic.rst:55
-msgid "**_dirname**"
-msgstr "**_dirname**"
-
-#: ../../variables/variables_basic.rst:57
-msgid ""
-"The name of the directory containing the file at the point of being loaded into "
-"Picard.  Only available to the file naming script. (*since Picard 1.1*)"
-msgstr ""
-"Le nom du répertoire contenant le fichier au moment de son chargement dans "
-"Picard. Uniquement disponible pour le script de dénomination de fichier. "
-"(*depuis Picard 1.1*)"
-
-#: ../../variables/variables_basic.rst:59
-msgid "**_extension**"
-msgstr "**_extension**"
-
-#: ../../variables/variables_basic.rst:61
-msgid ""
-"The file's extension.  Only available to the file naming script. (*since Picard "
-"0.9*)"
-msgstr ""
-"L'extension du fichier. Uniquement disponible pour le script de dénomination de "
-"fichier. (*depuis Picard 0.9*)"
-
-#: ../../variables/variables_basic.rst:63
-msgid "**_filename**"
-msgstr "**_filename**"
-
-#: ../../variables/variables_basic.rst:65
-msgid ""
-"The name of the file without extension.  Only available to the file naming "
-"script. (*since Picard 1.1*)"
-msgstr ""
-"Le nom du fichier sans extension. Uniquement disponible pour le script de "
-"dénomination de fichier. (*depuis Picard 1.1*)"
-
-#: ../../variables/variables_basic.rst:67
-msgid "**_format**"
-msgstr "**_format**"
-
-#: ../../variables/variables_basic.rst:69
-msgid ""
-"Media format of the file (e.g.: MPEG-1 Audio).  Only available to the file "
-"naming script."
-msgstr ""
-"Le format multimédia du fichier (par exemple: MPEG-1 Audio). Uniquement "
-"disponible pour le script de dénomination de fichier."
-
-#: ../../variables/variables_basic.rst:71
-msgid "**_length**"
-msgstr "**_length**"
-
-#: ../../variables/variables_basic.rst:73
-msgid "The length of the track in format mins:secs."
-msgstr "La longueur de la piste au format mins:secs."
-
-#: ../../variables/variables_basic.rst:75
 msgid "**_multiartist**"
 msgstr "**_multiartist**"
 
-#: ../../variables/variables_basic.rst:77
+#: ../../variables/variables_basic.rst:49
 msgid ""
 "0 if tracks on the album all have the same primary artist, 1 otherwise. (*since "
 "Picard 1.3*)"
@@ -194,37 +124,49 @@ msgstr ""
 "0 si toutes les pistes de l'album ont le même artiste principal, 1 sinon. "
 "(*depuis Picard 1.3*)"
 
-#: ../../variables/variables_basic.rst:81
+#: ../../variables/variables_basic.rst:51
+msgid "**_pregap**"
+msgstr "**_pregap**"
+
+#: ../../variables/variables_basic.rst:53
+msgid ""
+"Set to 1 if the track is a \"`pregap track <https://musicbrainz.org/doc/"
+"Terminology#hidden_track>`_\". (*since Picard 1.3.1*)"
+msgstr ""
+"Réglé sur 1 si la piste est une \"`piste pré-assemblée <https://musicbrainz.org/"
+"doc/Terminology#hidden_track>`_\". (*depuis Picard 1.3.1*)"
+
+#: ../../variables/variables_basic.rst:57
 msgid "**_primaryreleasetype**"
 msgstr "**_primaryreleasetype**"
 
-#: ../../variables/variables_basic.rst:83
+#: ../../variables/variables_basic.rst:59
 msgid "Release Group Primary type (i.e.: album, single, ep, broadcast, or other)."
 msgstr ""
 "Le type de groupe principal de version (ex: album, single, ep, diffusion ou "
 "autre)."
 
-#: ../../variables/variables_basic.rst:85
+#: ../../variables/variables_basic.rst:61
 msgid "**_rating**"
 msgstr "**_rating**"
 
-#: ../../variables/variables_basic.rst:87
+#: ../../variables/variables_basic.rst:63
 msgid "Rating 0-5 by MusicBrainz users."
 msgstr "Note 0-5 par les utilisateurs de MusicBrainz."
 
-#: ../../variables/variables_basic.rst:89
+#: ../../variables/variables_basic.rst:65
 msgid "**_releasecomment**"
 msgstr "**_releasecomment**"
 
-#: ../../variables/variables_basic.rst:91
+#: ../../variables/variables_basic.rst:67
 msgid "Release disambiguation comment. (*since Picard 0.15*)"
 msgstr "Le commentaire d'homonymie pour la version. (*depuis Picard 0,15*)"
 
-#: ../../variables/variables_basic.rst:93
+#: ../../variables/variables_basic.rst:69
 msgid "**_releasegroup**"
 msgstr "**_releasegroup**"
 
-#: ../../variables/variables_basic.rst:95
+#: ../../variables/variables_basic.rst:71
 msgid ""
 "Release Group Title which is typically the same as the Album Title, but can be "
 "different."
@@ -232,19 +174,19 @@ msgstr ""
 "Le titre du groupe de versions qui est généralement le même que le titre de "
 "l'album, mais peut être différent."
 
-#: ../../variables/variables_basic.rst:97
+#: ../../variables/variables_basic.rst:73
 msgid "**_releasegroupcomment**"
 msgstr "**_releasegroupcomment**"
 
-#: ../../variables/variables_basic.rst:99
+#: ../../variables/variables_basic.rst:75
 msgid "Release Group disambiguation comment."
 msgstr "Le commentaire d'homonymie pour le groupe de version."
 
-#: ../../variables/variables_basic.rst:101
+#: ../../variables/variables_basic.rst:77
 msgid "**_releaselanguage**"
 msgstr "**_releaselanguage**"
 
-#: ../../variables/variables_basic.rst:103
+#: ../../variables/variables_basic.rst:79
 msgid ""
 "Release Language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_. "
 "(*since Picard 0.10*)"
@@ -252,23 +194,11 @@ msgstr ""
 "La langue de la version selon `ISO 639-3 <https://fr.wikipedia.org/wiki/"
 "ISO_639-3>`_. (*depuis Picard 0,10*)"
 
-#: ../../variables/variables_basic.rst:105
-msgid "**_sample_rate**"
-msgstr "**_sample_rate**"
-
-#: ../../variables/variables_basic.rst:107
-msgid ""
-"Number of digitizing samples per second (Hz).  Only available to the file "
-"naming script."
-msgstr ""
-"Le nombre d'échantillons de numérisation par seconde (Hz). Uniquement "
-"disponible pour le script de dénomination de fichier."
-
-#: ../../variables/variables_basic.rst:111
+#: ../../variables/variables_basic.rst:83
 msgid "**_secondaryreleasetype**"
 msgstr "**_secondaryreleasetype**"
 
-#: ../../variables/variables_basic.rst:113
+#: ../../variables/variables_basic.rst:85
 msgid ""
 "Zero or more Release Group Secondary types (i.e.: audiobook, compilation, dj-"
 "mix, interview, live, mixtape/street, remix, soundtrack, or spokenword)."
@@ -277,10 +207,98 @@ msgstr ""
 "livre audio, compilation, DJ-mix, interview, live, mixtape / street, remix, "
 "bande sonore ou speechword)."
 
-#: ../../variables/variables_basic.rst:115
+#: ../../variables/variables_basic.rst:87
 msgid "**_totalalbumtracks**"
 msgstr "**_totalalbumtracks**"
 
-#: ../../variables/variables_basic.rst:117
+#: ../../variables/variables_basic.rst:89
 msgid "The total number of tracks across all discs of this release."
 msgstr "Le nombre total de pistes sur tous les disques de cette version."
+
+#~ msgid ""
+#~ "Variables that rely on information from the files (e.g.: _bitrate) are only "
+#~ "available for use in the file naming script."
+#~ msgstr ""
+#~ "Les variables qui reposent sur les informations des fichiers (par exemple: "
+#~ "_bitrate) ne sont disponibles que pour une utilisation dans le script de "
+#~ "dénomination de fichier."
+
+#~ msgid "**_bitrate**"
+#~ msgstr "**_bitrate**"
+
+#~ msgid "Approximate bitrate in kbps.  Only available to the file naming script."
+#~ msgstr ""
+#~ "Le débit binaire approximatif en kbps. Uniquement disponible pour le script "
+#~ "de dénomination de fichier."
+
+#~ msgid "**_bits_per_sample**"
+#~ msgstr "**_bits_per_sample**"
+
+#~ msgid "Bits of data per sample.  Only available to the file naming script."
+#~ msgstr ""
+#~ "Le nombre de bits de données par échantillon. Uniquement disponible pour le "
+#~ "script de dénomination de fichier."
+
+#~ msgid "**_channels**"
+#~ msgstr "**_channels**"
+
+#~ msgid ""
+#~ "Number of audio channels in the file.  Only available to the file naming "
+#~ "script."
+#~ msgstr ""
+#~ "Le nombre de canaux audio dans le fichier. Uniquement disponible pour le "
+#~ "script de dénomination de fichier."
+
+#~ msgid ""
+#~ "The name of the directory containing the file at the point of being loaded "
+#~ "into Picard.  Only available to the file naming script. (*since Picard 1.1*)"
+#~ msgstr ""
+#~ "Le nom du répertoire contenant le fichier au moment de son chargement dans "
+#~ "Picard. Uniquement disponible pour le script de dénomination de fichier. "
+#~ "(*depuis Picard 1.1*)"
+
+#~ msgid "**_extension**"
+#~ msgstr "**_extension**"
+
+#~ msgid ""
+#~ "The file's extension.  Only available to the file naming script. (*since "
+#~ "Picard 0.9*)"
+#~ msgstr ""
+#~ "L'extension du fichier. Uniquement disponible pour le script de dénomination "
+#~ "de fichier. (*depuis Picard 0.9*)"
+
+#~ msgid "**_filename**"
+#~ msgstr "**_filename**"
+
+#~ msgid ""
+#~ "The name of the file without extension.  Only available to the file naming "
+#~ "script. (*since Picard 1.1*)"
+#~ msgstr ""
+#~ "Le nom du fichier sans extension. Uniquement disponible pour le script de "
+#~ "dénomination de fichier. (*depuis Picard 1.1*)"
+
+#~ msgid "**_format**"
+#~ msgstr "**_format**"
+
+#~ msgid ""
+#~ "Media format of the file (e.g.: MPEG-1 Audio).  Only available to the file "
+#~ "naming script."
+#~ msgstr ""
+#~ "Le format multimédia du fichier (par exemple: MPEG-1 Audio). Uniquement "
+#~ "disponible pour le script de dénomination de fichier."
+
+#~ msgid "**_length**"
+#~ msgstr "**_length**"
+
+#~ msgid "The length of the track in format mins:secs."
+#~ msgstr "La longueur de la piste au format mins:secs."
+
+#~ msgid "**_sample_rate**"
+#~ msgstr "**_sample_rate**"
+
+#~ msgid ""
+#~ "Number of digitizing samples per second (Hz).  Only available to the file "
+#~ "naming script."
+#~ msgstr ""
+#~ "Le nombre d'échantillons de numérisation par seconde (Hz). Uniquement "
+#~ "disponible pour le script de dénomination de fichier."

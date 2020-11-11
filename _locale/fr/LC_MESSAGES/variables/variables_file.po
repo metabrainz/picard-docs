@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.4.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-09 16:39-0700\n"
+"PO-Revision-Date: 2020-11-09 18:15-0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: ../../variables/variables_file.rst:7
+msgid "File Variables"
+msgstr "Variables de fichier"
+
+#: ../../variables/variables_file.rst:12
+msgid ""
+"These variables are populated from MusicBrainz data for most releases, "
+"without any special Picard settings."
+msgstr ""
+"Ces variables sont renseignées à partir des données MusicBrainz pour "
+"la plupart des versions, sans aucun paramètre Picard particulier."
+
+#: ../../variables/variables_file.rst:16
+msgid ""
+"Variables that rely on information from the files (e.g.: _bitrate) are "
+"only available for use on tracks with attached files, when running "
+"scripts manually on files or in the file naming script."
+msgstr ""
+"Les variables qui reposent sur les informations des fichiers (par "
+"exemple: _bitrate) ne sont disponibles que pour une utilisation sur "
+"les pistes avec des fichiers joints, lors de l'exécution manuelle de "
+"scripts sur des fichiers ou dans le script de dénomination de fichier."
+
+#: ../../variables/variables_file.rst:21
+msgid ""
+"Prior to version 2.5 Picard did not support using file variables in "
+"tagging scripts."
+msgstr ""
+"Avant la version 2.5, Picard ne prenait pas en charge l'utilisation de "
+"variables de fichier dans les scripts de balisage."
+
+#: ../../variables/variables_file.rst:23
+msgid "**_bitrate**"
+msgstr "**_bitrate**"
+
+#: ../../variables/variables_file.rst:25
+msgid "Approximate bitrate in kbps."
+msgstr "Débit binaire approximatif en kbps."
+
+#: ../../variables/variables_file.rst:27
+msgid "**_bits_per_sample**"
+msgstr "**_bits_per_sample**"
+
+#: ../../variables/variables_file.rst:29
+msgid "Bits of data per sample."
+msgstr "Bits de données par échantillon."
+
+#: ../../variables/variables_file.rst:31
+msgid "**_channels**"
+msgstr "**_channels**"
+
+#: ../../variables/variables_file.rst:33
+msgid "Number of audio channels in the file."
+msgstr "Nombre de canaux audio dans le fichier."
+
+#: ../../variables/variables_file.rst:35
+msgid "**_dirname**"
+msgstr "**_dirname**"
+
+#: ../../variables/variables_file.rst:37
+msgid ""
+"The name of the directory containing the file at the point of being "
+"loaded into Picard. (*since Picard 1.1*)"
+msgstr ""
+"Le nom du répertoire contenant le fichier au moment de son chargement "
+"dans Picard. (*depuis Picard 1.1*)"
+
+#: ../../variables/variables_file.rst:39
+msgid "**_extension**"
+msgstr "**_extension**"
+
+#: ../../variables/variables_file.rst:41
+msgid "The file's extension. (*since Picard 0.9*)"
+msgstr "L'extension du fichier. (*depuis Picard 0.9*)"
+
+#: ../../variables/variables_file.rst:43
+msgid "**_filename**"
+msgstr "**_filename**"
+
+#: ../../variables/variables_file.rst:45
+msgid "The name of the file without extension. (*since Picard 1.1*)"
+msgstr "Le nom du fichier sans extension. (*depuis Picard 1.1*)"
+
+#: ../../variables/variables_file.rst:47
+msgid "**_format**"
+msgstr "**_format**"
+
+#: ../../variables/variables_file.rst:49
+msgid "Media format of the file (e.g.: MPEG-1 Audio)."
+msgstr "Le format multimédia du fichier (par exemple: MPEG-1 Audio)."
+
+#: ../../variables/variables_file.rst:51
+msgid "**_length**"
+msgstr "**_length**"
+
+#: ../../variables/variables_file.rst:53
+msgid "The length of the track in format mins:secs."
+msgstr "La longueur de la piste au format mins:secs."
+
+#: ../../variables/variables_file.rst:55
+msgid "**_sample_rate**"
+msgstr "**_sample_rate**"
+
+#: ../../variables/variables_file.rst:57
+msgid "Number of digitizing samples per second (Hz)."
+msgstr "Le nombre d'échantillons de numérisation par seconde (Hz)."

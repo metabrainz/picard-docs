@@ -33,9 +33,9 @@ are queried. Picard will try the providers from top to bottom until an image is 
    care more about visual quality then having an exact representation of your release. It is also a good
    fallback for the Cover Art Archive provider.
 
-**Sites on the whitelist**
+**Allowed cover art URLs**
 
-   This will use images provided from whitelisted sites. See `Cover art whitelist
+   This will use images provided from approved third-party sites. See `Cover art whitelist
    <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide
    for more information.
 

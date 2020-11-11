@@ -18,6 +18,20 @@ User Interface Options
     If this option is disabled, the text labels under the icons in the toolbar will not be displayed,
     causing the toolbar to appear a little smaller.
 
+**Use system theme**
+
+    By default Picard uses the Qt Fusion theme for the user interface. If you enable this option
+    Picard will instead use the default Qt theme configured on your system. How to change the Qt
+    theme depends on your desktop environment.
+
+    .. note::
+        This option is not available on Windows and macOS.
+
+    .. warning::
+
+        Please be aware that using the system theme might cause the user interface to be not shown correctly.
+        If this is the case disable the "Use system theme" option to use Picard's default theme again.
+
 **Allow selection of multiple directories**
 
     Enabling this option will bypass the native directory selector and use Qt's file dialog.  This
@@ -28,7 +42,8 @@ User Interface Options
 **Use built-in search rather than looking in browser**
 
     When this option is enabled the search for albums, artists or tracks will show the results in a dialog.
-    By default this option is disabled and Picard will open a search on MusicBrainz.org in your default web browser.
+    By default this option is enabled. If this option is disabled Picard will open a search on
+    MusicBrainz.org in your default web browser.
 
 **Use advanced query syntax**
 
