@@ -6,6 +6,8 @@
 
 .. Master File for Building HTML Documents
 
+:orphan:
+
 MusicBrainz Picard
 ==================
 

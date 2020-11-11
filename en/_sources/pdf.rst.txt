@@ -6,6 +6,8 @@
 
 .. Master File for Building PDF Documents
 
+:orphan:
+
 MusicBrainz Picard
 ==================
 

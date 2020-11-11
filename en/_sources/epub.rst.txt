@@ -6,6 +6,8 @@
 
 .. Master File for Building EPUB Documents
 
+:orphan:
+
 MusicBrainz Picard
 ==================
 
