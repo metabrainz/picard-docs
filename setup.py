@@ -112,7 +112,7 @@ IGNORE_DIRECTIVES = [
 IGNORE_ROLES = [
     # Cross-referencing
     'any', 'ref', 'doc', 'download', 'numref', 'envar', 'token',
-    'keyword', 'option', 'term',
+    'keyword', 'option', 'term', 'index',
 
     # Math
     'math', 'eq',
@@ -131,7 +131,7 @@ RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
 RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)"\.$')
 
 RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
-RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)"\.$')
+RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
 
 RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 
@@ -247,11 +247,13 @@ class LintRST():
                             if ignore_info:
                                 err_process = False
                             else:
+                                # Ignore warnings matching keywords in directive or role lists
                                 m = RE_TEST_DIRECTIVE_1.match(err.message)
                                 err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
                                 m = RE_TEST_ROLE_1.match(err.message)
                                 err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
-                        if (err.type == 'ERROR' or err.type == 'SEVERE') and err.message.startswith('Unknown'):
+                        if err.type in ['ERROR', 'SEVERE']:
+                            # Ignore errors matching keywords in directive or role lists
                             m = RE_TEST_DIRECTIVE_2.match(err.message)
                             err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
                             m = RE_TEST_ROLE_2.match(err.message)
