@@ -5,6 +5,7 @@ Python script used to provide development support functions.
 """
 
 import argparse
+import glob
 import os
 import re
 import shutil
@@ -52,7 +53,7 @@ SPHINX_BUILD = 'sphinx-build'
 SPHINX_INTL = 'sphinx-intl'
 SPHINX_BUILD_DIR = '_build'
 SPHINX_SOURCE_DIR = 'source'
-SPHINX_LOCALE_DIR = 'locale'
+SPHINX_LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs[0] else '_locale'
 SPHINX_GETTEXT_DIR = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
 SPHINX_BUILD_TIMEOUT = 300
 SPHINX_BUILD_TARGETS = {
@@ -193,6 +194,7 @@ Usage: {0} [optional arguments] command
 Commands:
    clean html          Reset html build directory
    clean pdf           Reset pdf build directory
+   clean mo            Remove all compiled MO files
 
    build html          Build HTML files
    build pdf           Build PDF files
@@ -359,8 +361,8 @@ def parse_command_line():
     parser03.add_argument(
         'clean_target',
         action='store',
-        choices=['html', 'pdf', 'epub', 'po'],
-        help="html = clean html build directory, pdf = clean pdf build directory, po = clean language directory"
+        choices=['html', 'pdf', 'epub', 'po', 'mo'],
+        help="html = clean html build directory, pdf = clean pdf build directory, epub = clean epub build directory, po = clean language directory, mo = remove all compiled MO files"
     )
 
     parser04 = subparsers.add_parser(
@@ -784,6 +786,25 @@ def update_po(language):
         exit_with_code(exit_code)
 
 
+def clean_mo():
+    """Delete all compiled translation files (*.mo) from the gettext directory and subdirectories.
+    """
+    print('Deleting compiled translation *.mo files.')
+    count = 0
+    # get a recursive list of file paths that matches pattern including sub directories
+    gettext_path = os.path.join(SPHINX_LOCALE_DIR, '**', '*.mo')
+    filelist = glob.glob(gettext_path, recursive=True)
+    # Iterate over the list of filepaths & remove each file.
+    for filepath in filelist:
+        try:
+            os.remove(filepath)
+            count += 1
+        except OSError:
+            print("Error deleting file: {0}".format(filepath,))
+            exit_with_code(1)
+    print('Removed {0} files.'.format(count))
+
+
 def check_language(language, supported_only=False):
     """Checks that the specified language is a valid language code.
 
@@ -882,6 +903,9 @@ def main():
         if args.clean_target in SPHINX_BUILD_TARGETS.keys():
             clean_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[args.clean_target]['dir'])
             clean_directory(clean_dir, args.clean_target)
+
+        elif args.clean_target == 'mo':
+            clean_mo()
 
         else:
             print("\nUnknown clean target: '{0}'\n".format(args.clean_target))
