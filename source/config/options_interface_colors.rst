@@ -4,12 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Colors
-======
-
-.. index::
-   single: configuration; colors
-   single: user interface; colors
+:index:`Colors <configuration; colors, user interface; colors>`
+================================================================
 
 .. image:: ../images/options-interface-colors.png
    :width: 100 %

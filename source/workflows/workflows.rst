@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Work Flow Recommendations
-=========================
-
-.. index::
-   single: workflows; general
+:index:`Work Flow Recommendations <workflows; general>`
+==========================================================
 
 This section provides some recommended workflows for various tagging scenarios.  These workflows are
 based on what are believed to be best practices.

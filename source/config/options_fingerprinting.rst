@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Fingerprinting Options
-======================
-
-.. index::
-   single: configuration; fingerprinting
+:index:`Fingerprinting Options <configuration; fingerprinting>`
+=================================================================
 
 .. image:: ../images/options-fingerprinting.png
    :width: 100 %

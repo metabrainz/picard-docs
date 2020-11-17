@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-When files are not grouped but have some metadata
-=================================================
-
-.. index::
-   single: workflows; files not grouped
+:index:`When files are not grouped but have some metadata <workflows; files not grouped>`
+===========================================================================================
 
 In this situation, you will need to feed batches of files to Picard to process.  In order to minimize the
 performance impact, it is recommended to keep the batches relatively small (i.e.: approximately 200 files at

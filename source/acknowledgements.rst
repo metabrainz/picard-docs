@@ -3,11 +3,8 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Acknowledgements
-================
-
-.. index::
-   single: acknowledgements
+:index:`Acknowledgements <acknowledgements>`
+================================================
 
 We gratefully acknowledge the following for their contributions to help develop, maintain and
 improve the Picard User Guide:

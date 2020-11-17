@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Main Screen
-===========
-
-.. index::
-   single: user interface; main screen
+:index:`Main Screen <user interface; main screen>`
+=====================================================
 
 .. Picard's main screen is comprised of a number of sections, as described below:
 

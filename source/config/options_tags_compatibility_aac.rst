@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-AAC Files
-=========
-
-.. index::
-   single: configuration; aac tag options
+:index:`AAC Files <configuration; aac tag options>`
+========================================================
 
 .. image:: ../images/options-tags-compatibility-aac.png
    :width: 100 %

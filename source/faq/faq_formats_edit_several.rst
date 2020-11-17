@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-How to I edit several tags at once? Why is it not easier do so?
-========================================================================
-
-.. index::
-   single: tags; editing
+:index:`How to I edit several tags at once? Why is it not easier do so? <tags; editing>`
+=============================================================================================
 
 Please understand that Picard is not designed as a general purpose tag editor. Its primary goal is to retrieve community-maintained MusicBrainz
 data to write into your tags. Some secondary goals include:

@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Cover Art Providers
-===================
-
-.. index::
-   single: configuration; cover art providers
+:index:`Cover Art Providers <configuration; cover art providers>`
+===================================================================
 
 .. only:: html
 

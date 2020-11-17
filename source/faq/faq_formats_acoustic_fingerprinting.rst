@@ -4,12 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-I am using Fedora. Why doesn't acoustic fingerprinting work?
-======================================================================
-
-.. index::
-   single: acoustic fingerprint
-   single: fingerprint; acoustic
+:index:`I am using Fedora. Why doesn't acoustic fingerprinting work? <acoustic fingerprint, fingerprint; acoustic>`
+=====================================================================================================================
 
 Acoustic fingerprinting in Picard uses a tool called ``fpcalc``, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
 from the `RPM Fusion repository <https://rpmfusion.org/>`_. This functionality is not contained in the main Fedora ``picard`` package because it requires

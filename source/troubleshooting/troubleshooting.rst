@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-General Troubleshooting
-=======================
-
-.. index::
-   single: troubleshooting; general
+:index:`General Troubleshooting <troubleshooting; general>`
+==============================================================
 
 Getting Help
 ------------
@@ -25,11 +22,8 @@ If you have problems using Picard, please first check the following resources:
   updated plugin versions.
 
 
-.. index::
-   single: troubleshooting; reporting a bug
-
-Reporting a Bug
----------------
+:index:`Reporting a Bug <troubleshooting; reporting a bug>`
+------------------------------------------------------------
 
 If you think you have found a bug please check whether you are using the latest version of Picard and whether the
 bug has already been reported in the `bug tracker <https://tickets.musicbrainz.org/browse/PICARD>`_. If you're not
@@ -45,11 +39,8 @@ If you're still convinced you have found a new bug, open a `new ticket
 * If you're using plugins, which plugins do you have enabled?
 
 
-.. index::
-   single: troubleshooting; logs
-
-Getting Logs
-------------
+:index:`Getting Logs <troubleshooting; logs>`
+------------------------------------------------
 
 For many bugs, it helps developers to have a log from Picard. You can see the log by going to :menuselection:`"Help --> View Log"`.
 You can also get a full debug log (better because it contains more detailed information) by starting Picard with `-d` as a

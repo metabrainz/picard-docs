@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Preferred Releases
-==================
-
-.. index::
-   single: configuration; release preferences
+:index:`Preferred Releases <configuration; release preferences>`
+==================================================================
 
 .. image:: ../images/options-metadata-releases.png
    :width: 100 %

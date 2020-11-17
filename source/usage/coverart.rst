@@ -3,11 +3,8 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Setting the Cover Art
-=====================
-
-.. index::
-   single: cover art; setting
+:index:`Setting the Cover Art <cover art; setting>`
+====================================================
 
 .. only:: latex
 

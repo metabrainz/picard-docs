@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-macOS shows the app is damaged. How can I run Picard?
-=====================================================
-
-.. index::
-   single: macos
+:index:`macOS shows the app is damaged. How can I run Picard? <macos>`
+=========================================================================
 
 On macOS 10.12 and 10.13 there have been reports that sometimes the MusicBrainz Picard app
 cannot be started and macOS shows an error message:

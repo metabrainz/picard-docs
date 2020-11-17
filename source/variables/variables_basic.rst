@@ -7,11 +7,8 @@
 
 .. TODO: Note which tags are not provided by Picard
 
-Basic Variables
-===============
-
-.. index::
-   single: variables; basic
+:index:`Basic Variables <variables; basic>`
+============================================
 
 These variables are populated from MusicBrainz data for most releases, without any special Picard settings.
 

@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-How do I tell Picard which browser to use?
-============================================================
-
-.. index::
-   pair: configuration; browser
+:index:`How do I tell Picard which browser to use? <pair: configuration; browser>`
+====================================================================================
 
 On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can
 use the ``BROWSER`` environment variable.

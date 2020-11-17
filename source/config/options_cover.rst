@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Cover Art Options
-=================
-
-.. index::
-   pair: configuration; cover art
+:index:`Cover Art Options <pair: configuration; cover art>`
+==============================================================
 
 .. image:: ../images/options-cover.png
    :width: 100 %

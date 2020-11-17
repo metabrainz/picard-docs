@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-File Naming Options
-===================
-
-.. index::
-   pair: configuration; file naming
+:index:`File Naming Options <pair: configuration; file naming>`
+=================================================================
 
 .. image:: ../images/options-filenaming.png
    :width: 100 %
@@ -70,12 +67,9 @@ These options determine how Picard handles files when they are saved with update
    This option tells Picard to replace all Windows-incompatible characters with an underscore. This is
    enabled by default on Windows systems, with no option to disable.
 
-.. index::
-   single: scripts; file naming
-
 **Name files like this**
 
-   An edit box that contains a formatting string that tells Picard what the new name of the file and its
+   An edit box that contains a :index:`formatting string <scripts; file naming>` that tells Picard what the new name of the file and its
    containing directories should be in terms of various metadata values. The formatting string is in
    :doc:`Picard's scripting language <../scripting>` where dark blue text starting with a '$' is a
    :doc:`function name <../functions/list_by_type>` and names in light blue within '%' signs are Picard's

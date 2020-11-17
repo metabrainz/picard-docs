@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Matching
-========
-
-.. index::
-   single: configuration; matching preferences
+:index:`Matching <configuration; matching preferences>`
+=========================================================
 
 .. image:: ../images/options-matching.png
    :width: 100 %

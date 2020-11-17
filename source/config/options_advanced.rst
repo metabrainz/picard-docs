@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Advanced Options
-================
-
-.. index::
-   single: configuration; advanced options
+:index:`Advanced Options <configuration; advanced options>`
+===============================================================
 
 .. image:: ../images/options-advanced.png
    :width: 100 %

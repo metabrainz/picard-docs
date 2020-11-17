@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.4.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 10:05-0600\n"
+"POT-Creation-Date: 2020-11-17 11:03-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "This User Guide is intended to provide comprehensive information related 
 msgstr ""
 
 #: ../../source/introduction.rst:35
-msgid "In order to effectively use Picard, it is important to understand what the program can do and, equally important, what it cannot do.  Picard is primarily intended to tag and organise albums containing tracks, guided by the user to the specific release of the album that they have, and then to keep the metadata for these tracks up to date as users around the world enhance the quality of the Musicbrainz data associated with that particular release and track; Picard does this very well indeed. However, it is not intended to automatically organize your collection of thousands of random music files, and if this is what you are hoping for then you will likely be disappointed.  To quote from the Picard website, *\"Picard is not built to be a mass single-track tag fixer. Picard believes in quality over quantity and provides a plethora of customizations to tweak music collections to your needs.\"*"
+msgid "In order to effectively use Picard, it is important to understand what the program can do and, equally important, what it cannot do.  Picard is primarily intended to tag and organize albums containing tracks, guided by the user to the specific release of the album that they have, and then to keep the metadata for these tracks up to date as users around the world enhance the quality of the MusicBrainz data associated with that particular release and track; Picard does this very well indeed. However, it is not intended to automatically organize your collection of thousands of random music files, and if this is what you are hoping for then you will likely be disappointed.  To quote from the Picard website, *\"Picard is not built to be a mass single-track tag fixer. Picard believes in quality over quantity and provides a plethora of customizations to tweak music collections to your needs.\"*"
 msgstr ""
 
 #: ../../source/introduction.rst:46
@@ -84,38 +84,38 @@ msgstr ""
 msgid "...provide metadata not already existing in the MusicBrainz database."
 msgstr ""
 
-#: ../../source/introduction.rst:77
-msgid "Limitations"
+#: ../../source/introduction.rst:73
+msgid ":index:`Limitations <limitations>`"
 msgstr ""
 
-#: ../../source/introduction.rst:79
+#: ../../source/introduction.rst:75
 msgid "**File Formats**"
 msgstr ""
 
-#: ../../source/introduction.rst:81
+#: ../../source/introduction.rst:77
 msgid "Picard currently supports most music file formats, with Matroska (.mka) being one notable exception. Microsoft WAVE (.wav) files can be fingerprinted and renamed and can be tagged using ID3v2 tags, but this is not supported by all playback software.  In addition, Picard does not support writing custom tags for all formats."
 msgstr ""
 
-#: ../../source/introduction.rst:87
+#: ../../source/introduction.rst:83
 msgid "The :doc:`Picard Tag Mappings <technical/tag_mapping>` section provides more information regarding the mapping between Picard internal tag names and various tagging formats."
 msgstr ""
 
-#: ../../source/introduction.rst:92
+#: ../../source/introduction.rst:88
 msgid "The :doc:`Picard Tag Mappings <technical/tag_mapping_pdf>` section provides more information regarding the mapping between Picard internal tag names and various tagging formats."
 msgstr ""
 
-#: ../../source/introduction.rst:95
+#: ../../source/introduction.rst:91
 msgid "**Request Rate Limiting**"
 msgstr ""
 
-#: ../../source/introduction.rst:97
-msgid "Picard's metadata retrieval is limited to the standard **one request per second** rate limiting for the MusicBrainz API.  This becomes quite noticable when trying to process a large list of files, and is exacerbated by extensions that perform additional information requests from the database."
+#: ../../source/introduction.rst:93
+msgid "Picard's metadata retrieval is limited to the standard **one request per second** :index:`rate limiting` for the MusicBrainz API.  This becomes quite noticeable when trying to process a large list of files, and is exacerbated by extensions that perform additional information requests from the database."
 msgstr ""
 
-#: ../../source/introduction.rst:101
+#: ../../source/introduction.rst:97
 msgid "**Network File Processing**"
 msgstr ""
 
-#: ../../source/introduction.rst:103
+#: ../../source/introduction.rst:99
 msgid "Sometimes Picard needs to rewrite the entire music file in order to add or update the tags.  This can take a few seconds, and the delay becomes even longer if the file is accessed across a network (e.g.: file is read from or written to a NAS device).  The recommended \"best practice\" is to process all files on a local drive and then move them to the desired remote directory once processing is complete."
 msgstr ""

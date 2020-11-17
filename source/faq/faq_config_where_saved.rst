@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Where is the Picard configuration saved?
-=====================================================
-
-.. index::
-   single: configuration; config file location
+:index:`Where is the Picard configuration saved? <configuration; config file location>`
+========================================================================================
 
 Picard saves the configuration in the file ``Picard.ini``. Its location depends on the operating system:
 

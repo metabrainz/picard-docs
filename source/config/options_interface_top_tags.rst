@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Top Tags
-========
-
-.. index::
-   single: configuration; top tags
+:index:`Top Tags <configuration; top tags>`
+============================================
 
 .. image:: ../images/options-interface-top-tags.png
    :width: 100 %

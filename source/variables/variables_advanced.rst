@@ -7,11 +7,8 @@
 
 .. TODO: Note which tags are not provided by Picard
 
-Advanced Variables
-==================
-
-.. index::
-   single: variables; advanced
+:index:`Advanced Variables <variables; advanced>`
+====================================================
 
 If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>`, you get these extra variables:
 

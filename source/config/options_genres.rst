@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Genres
-======
-
-.. index::
-   single: configuration; genres
+:index:`Genres <configuration; genres>`
+==========================================
 
 .. image:: ../images/options-metadata-genres.png
    :width: 100 %

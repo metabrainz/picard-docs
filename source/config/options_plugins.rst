@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Plugins Options
-===============
-
-.. index::
-   pair: configuration; plugins
+:index:`Plugins Options <pair: configuration; plugins>`
+=========================================================
 
 .. image:: ../images/options-plugins.png
    :width: 100 %
@@ -18,10 +15,7 @@ disable or uninstall plugins that are currently installed.  Picard provides a li
 been submitted to the project.  A list of the standard plugins is available on the `plugins page
 <https://picard.musicbrainz.org/plugins/>`_ on the Picard website.
 
-.. index::
-   single: plugins; third-party
-
-There are also a number of plugins available by third-party developers.  Often these are discussed on
+There are also a number of plugins available by :index:`third-party developers <plugins; third-party>`.  Often these are discussed on
 the `Community Discussion Forum <https://community.metabrainz.org/>`_ so if you're looking for a particular
 enhancement or functionality, a search there might be useful.  In addition, one of the MusicBrainz editors,
 `Colby Ray <https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list of available
@@ -93,11 +87,8 @@ section below the list.
 
 .. _ref_installingplugins:
 
-.. index::
-   single: plugins; installing
-
-Installing Third-Party Plugins
-------------------------------
+:index:`Installing Third-Party Plugins <plugins; installing>`
+-----------------------------------------------------------------
 
 You can install a third-party plugin that does not appear in the plugins list, using the following steps:
 

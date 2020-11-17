@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-WAVE Files
-==========
-
-.. index::
-   single: configuration; wave tag options
+:index:`WAVE Files <configuration; wave tag options>`
+=======================================================
 
 .. image:: ../images/options-tags-compatibility-wave.png
    :width: 100 %

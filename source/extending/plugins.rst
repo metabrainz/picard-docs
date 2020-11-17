@@ -3,11 +3,8 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Plugins
-=======
-
-.. index::
-   single: plugins
+:index:`Plugins <plugins>`
+===========================
 
 Plugins are written in Python, and are registered to the appropriate hooks.  Each plugin
 has its own version identifier, but also lists the plugin API versions that it supports.
@@ -21,10 +18,7 @@ During the normal running of Picard, when it encounters a hook it will first ret
 list of all plugins registered for that specific hook, and then execute them sequentially
 in order based upon the priority specified when the plugin was registered to the hook.
 
-There are a few different types of plugins, including:
-
-.. index::
-   single: plugins; types
+There are a few different :index:`types of plugins <plugins; types>`, including:
 
 **Metadata processors**: These plugins can access and modify the metadata when it is loaded
 from MusicBrainz. They are registered with ``register_album_metadata_processor()`` or

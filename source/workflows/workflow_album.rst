@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-When files are grouped by album
-===============================
-
-.. index::
-   single: workflows; files grouped by album
+:index:`When files are grouped by album <workflows; files grouped by album>`
+==============================================================================
 
 If the music files to be processed are already grouped into folders by album, then the process of looking up
 the release in the MusicBrainz database is greatly simplified because Picard works best when processing one
@@ -52,12 +49,9 @@ album at a time.
    Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`../usage/save` section for details.
 
 
-.. index::
-   single: acoustic fingerprint; submitting
-
 **7. Calculate and submit AcoustID fingerprints**
 
-   This step is optional, but appreciated because it will help identify the files for others to look up for tagging.
+   :index:`This step is optional <acoustic fingerprint; submitting>`, but appreciated because it will help identify the files for others to look up for tagging.
 
    Select the album entry in the right-hand pane and calculate the AcoustID fingerprints using :menuselection:`"Tools -->
    Generate AcoustID Fingerprints"`.  Once the fingerprints have been calculated, submit them using :menuselection:`"Files -->

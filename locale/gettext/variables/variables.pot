@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.4.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 10:05-0600\n"
+"POT-Creation-Date: 2020-11-17 14:22-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,29 +17,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/variables/variables.rst:8
-msgid "Tags & Variables"
+msgid ":index:`Tags & Variables <scripts; tags, scripts; variables>`"
 msgstr ""
 
-#: ../../source/variables/variables.rst:14
+#: ../../source/variables/variables.rst:10
 msgid "This describes both Tags which are saved inside your music files and can be read by your music player, and Picard variables which can be used in Picard scripts for tagging, file renaming, and in several other more minor settings."
 msgstr ""
 
-#: ../../source/variables/variables.rst:18
+#: ../../source/variables/variables.rst:14
 msgid "All tags are also available as variables, but additional variables which start with an underscore '_' are not saved as Tags within your music files (e.g. ``_my_tag_not_saved``)."
 msgstr ""
 
-#: ../../source/variables/variables.rst:21
+#: ../../source/variables/variables.rst:17
 msgid "Variables are used in scripts by wrapping the name between percent '%' characters (e.g. ``%title%``)."
 msgstr ""
 
-#: ../../source/variables/variables.rst:23
+#: ../../source/variables/variables.rst:19
 msgid "Some variables can contain more than one value (e.g. ``musicbrainz_artistid``), and if you want to use only one of the values then you will need to use special script functions to access or set them. To access all the multiple values at once, use the variable normally and Picard will combine them into a single string separated by a semicolon and space (e.g.: \"Item 1; Item 2; Item 3\")."
 msgstr ""
 
-#: ../../source/variables/variables.rst:28
+#: ../../source/variables/variables.rst:24
 msgid "If a tag description indicates a later version of Picard than the current official version on the downloads page, then the tag is beta functionality which will be available in the next official release. A description of how to gain access to these beta versions for testing can be found on the `Picard downloads page <https://picard.musicbrainz.org/downloads/>`_ on the website."
 msgstr ""
 
-#: ../../source/variables/variables.rst:37
-msgid "Details: :doc:`tags_basic` / :doc:`tags_advanced` / :doc:`variables_basic` / :doc:`variables_advanced` / :doc:`variables_classical` / :doc:`variables_plugins` / :doc:`variables_other_information`"
+#: ../../source/variables/variables.rst:33
+msgid "Details: :doc:`tags_basic` / :doc:`tags_advanced` / :doc:`variables_basic` / :doc:`variables_file` / :doc:`variables_advanced` / :doc:`variables_classical` / :doc:`variables_plugins` / :doc:`variables_other_information`"
 msgstr ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.4.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 10:05-0600\n"
+"POT-Creation-Date: 2020-11-17 12:17-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,45 +17,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/technical/command_line.rst:7
-msgid "Command Line Options"
+msgid ":index:`Command Line Options <pair: command line; options>`"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:12
+#: ../../source/technical/command_line_common.txt:9
 msgid "Picard can be started from the command line with the following arguments:"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:18
+#: ../../source/technical/command_line_common.txt:15
 msgid "where the options are:"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:20
+#: ../../source/technical/command_line_common.txt:17
 msgid "``-h``, ``--help`` show a help message and exit"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:22
+#: ../../source/technical/command_line_common.txt:19
 msgid "``-c CONFIG_FILE``, ``--config-file CONFIG_FILE`` location of the configuration file to use"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:24
+#: ../../source/technical/command_line_common.txt:21
 msgid "``-d``, ``--debug`` enable debug-level logging"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:26
+#: ../../source/technical/command_line_common.txt:23
+msgid "``-M``, ``--no-player`` disable built-in media player"
+msgstr ""
+
+#: ../../source/technical/command_line_common.txt:25
 msgid "``-N``, ``--no-restore`` do not restore window positions or sizes"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:28
+#: ../../source/technical/command_line_common.txt:27
 msgid "``-P``, ``--no-plugins`` do not load any plugins"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:30
+#: ../../source/technical/command_line_common.txt:29
 msgid "``-v``, ``--version`` display the version information and exit"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:32
+#: ../../source/technical/command_line_common.txt:31
 msgid "``-V``, ``--long-version`` display the long version information and exit"
 msgstr ""
 
-#: ../../source/technical/command_line_common.txt:34
-msgid "``FILE`` is the file or files to load"
+#: ../../source/technical/command_line_common.txt:33
+msgid "``FILE`` is the file or files to load.  If one of the filenames begins with a hyphen, use ``--`` to separate the options from the filenames."
 msgstr ""

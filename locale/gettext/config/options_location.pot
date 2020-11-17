@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.4.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 10:05-0600\n"
+"POT-Creation-Date: 2020-11-17 14:22-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,53 +17,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/config/options_location.rst:8
-msgid "Location"
+msgid ":index:`Location <configuration; cover art location, cover art; location to save>`"
 msgstr ""
 
-#: ../../source/config/options_location.rst:19
+#: ../../source/config/options_location.rst:15
 msgid "**Embed cover images into tags**"
 msgstr ""
 
-#: ../../source/config/options_location.rst:21
+#: ../../source/config/options_location.rst:17
 msgid "Enables images to be embedded directly into your music files. While this will use more storage space than storing it as a separate image file in the same directory, some music players will only display embedded images and don't find the separate files."
 msgstr ""
 
-#: ../../source/config/options_location.rst:25
+#: ../../source/config/options_location.rst:21
 msgid "**Only embed a front image**"
 msgstr ""
 
-#: ../../source/config/options_location.rst:27
+#: ../../source/config/options_location.rst:23
 msgid "Embeds only a front image into your music files. Many music players will only display a single embedded image, so embedding additional images may not add any functionality."
 msgstr ""
 
-#: ../../source/config/options_location.rst:32
+#: ../../source/config/options_location.rst:28
 msgid "**Save cover images as separate files**"
 msgstr ""
 
-#: ../../source/config/options_location.rst:34
+#: ../../source/config/options_location.rst:30
 msgid "In the file name mask you can use any variable or function from :doc:`Picard Tags <../variables/variables>` and :doc:`Picard Scripting Functions <../functions/list_by_type>`. The mask should not contain a file extension; this is added automatically based on the actual image type. The default value is \"cover\". If you change this to \"folder\", Windows will use it to preview the containing directory."
 msgstr ""
 
-#: ../../source/config/options_location.rst:39
+#: ../../source/config/options_location.rst:35
 msgid "In addition to scripting variables already available for a track you can use the following cover art specific variables:"
 msgstr ""
 
-#: ../../source/config/options_location.rst:42
+#: ../../source/config/options_location.rst:38
 msgid "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For front images this will always be \"front\"."
 msgstr ""
 
-#: ../../source/config/options_location.rst:43
+#: ../../source/config/options_location.rst:39
 msgid "``coverart_types``: Full list of all types assigned to this image."
 msgstr ""
 
-#: ../../source/config/options_location.rst:44
+#: ../../source/config/options_location.rst:40
 msgid "``coverart_comment``: The cover art comment."
 msgstr ""
 
-#: ../../source/config/options_location.rst:46
+#: ../../source/config/options_location.rst:42
 msgid "**Overwrite the file if it already exists**"
 msgstr ""
 
-#: ../../source/config/options_location.rst:48
+#: ../../source/config/options_location.rst:44
 msgid "Check this to replace existing files. This is especially recommended if trying to write \"folder\" previews for Windows."
 msgstr ""

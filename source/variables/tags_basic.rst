@@ -23,11 +23,8 @@
 .. #metabrainz [May 23, 03:51:54] <+BrainzBot> PICARD-1034: Picard not seeing TOPE and TOAL
 
 
-Basic Tags
-==========
-
-.. index::
-   single: tags; basic
+:index:`Basic Tags <tags; basic>`
+=======================================
 
 The following tags are populated from MusicBrainz data for most releases, without any special Picard settings.
 

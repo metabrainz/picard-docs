@@ -7,11 +7,8 @@
 
 .. TODO: Note which tags are not provided by Picard
 
-Advanced Tags
-=============
-
-.. index::
-   single: tags; advanced
+:index:`Advanced Tags <tags; advanced>`
+=========================================
 
 You can make additional tags available by enabling the :ref:`Advanced Relationships <advanced_relationships>` and the
 :ref:`Use genres from MusicBrainz <genre_settings>` settings in Picard.
@@ -104,11 +101,9 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 
 .. _genre_settings:
 
-.. index::
-   single: tags; genre
+:index:`Genre Tags <tags; genre>`
+-------------------------------------
 
-Genre Tags
-----------
 If you enable Use genres from MusicBrainz, you get:
 
 **genre**

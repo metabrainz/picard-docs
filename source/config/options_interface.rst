@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-User Interface Options
-======================
-
-.. index::
-   pair: configuration; user interface
+:index:`User Interface Options <pair: configuration; user interface>`
+=======================================================================
 
 .. image:: ../images/options-interface.png
    :width: 100 %

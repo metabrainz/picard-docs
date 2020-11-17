@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-ID3 Files
-=========
-
-.. index::
-   single: configuration; id3 tag options
+:index:`ID3 Files <configuration; id3 tag options>`
+=====================================================
 
 .. image:: ../images/options-tags-compatibility-id3.png
    :width: 100 %

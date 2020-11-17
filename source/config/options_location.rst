@@ -4,12 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Location
-========
-
-.. index::
-   single: configuration; cover art location
-   single: cover art; location to save
+:index:`Location <configuration; cover art location, cover art; location to save>`
+====================================================================================
 
 .. only:: html
 

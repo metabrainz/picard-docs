@@ -9,11 +9,8 @@ There is no coverart
 
 There are two different problems that often fall under this topic:
 
-.. index::
-   single: troubleshooting; no cover art downloaded
-
-Picard isn't finding and downloading any cover art
---------------------------------------------------
+:index:`Picard isn't finding and downloading any cover art <troubleshooting; no cover art downloaded>`
+-----------------------------------------------------------------------------------------------------------
 
 **No cover art providers have been enabled in the configuration settings**
 
@@ -43,11 +40,8 @@ Picard isn't finding and downloading any cover art
    see the :doc:`../config/options_cover_art_archive` section for more information.
 
 
-.. index::
-   single: troubleshooting; no cover art displayed
-
-Coverart that is saved with the files isn't displayed
------------------------------------------------------
+:index:`Coverart that is saved with the files isn't displayed <troubleshooting; no cover art displayed>`
+-----------------------------------------------------------------------------------------------------------
 
 **Player doesn't support embedded cover art**
 

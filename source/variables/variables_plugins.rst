@@ -5,11 +5,8 @@
 
 .. TODO: Expand definitions
 
-Tags from Plugins
-=================
-
-.. index::
-   single: tags; plugins
+:index:`Tags from Plugins <tags; plugins>`
+===============================================
 
 Plugins from Picard :doc:`Plugins <../config/options_plugins>` can add more tags.  Following are some examples.
 

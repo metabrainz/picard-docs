@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-The built-in audio player cannot play my file. Which formats does it support?
-=============================================================================================
-
-.. index::
-   single: audio player
+:index:`The built-in audio player cannot play my file. Which formats does it support? <audio player>`
+=========================================================================================================
 
 The formats supported by the built-in audio player depend on the formats supported by your operating system.
 

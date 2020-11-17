@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-.. index::
-   single: troubleshooting; tags not saved
-
-Tags are not updated or saved
-=============================
+:index:`Tags are not updated or saved <troubleshooting; tags not saved>`
+============================================================================
 
 There are typically four reasons that tags may not be written or updated when files are saved:
 

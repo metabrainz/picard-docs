@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Download & Install Picard
-=========================
-
-.. index::
-   single: install; download
+:index:`Download & Install Picard <install; download>`
+===========================================================
 
 MusicBrainz Picard is available for all major desktop operating systems (e.g. Windows, Linux and macOS),
 and in multiple forms (directly downloadable formal release executables, package manager versions of these,
@@ -27,11 +24,8 @@ Website <https://picard.musicbrainz.org/downloads/>`_.  This includes installers
 available at the `GitHub repository <https://github.com/musicbrainz/picard>`_.
 
 
-Linux: Installing with Flatpak
-------------------------------
-
-.. index::
-   pair: install; flatpak
+:index:`Linux: Installing with Flatpak <pair: install; flatpak>`
+-------------------------------------------------------------------
 
 Picard is also available on Flathub. This version should work on all modern Linux distributions,
 as long Flatpak is installed.

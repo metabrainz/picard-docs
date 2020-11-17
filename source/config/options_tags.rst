@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Tag Options
-===========
-
-.. index::
-   single: configuration; tag options
+:index:`Tag Options <configuration; tag options>`
+==================================================
 
 .. image:: ../images/options-tags.png
    :width: 100 %

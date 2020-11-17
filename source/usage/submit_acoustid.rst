@@ -3,13 +3,8 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Submitting Acoustic Fingerprints
-================================
-
-.. index::
-   single: AcoustID; submitting
-   single: acoustic fingerprint; submitting
-   single: fingerprint; submitting
+:index:`Submitting Acoustic Fingerprints <AcoustID; submitting, acoustic fingerprint; submitting, fingerprint; submitting>`
+===============================================================================================================================
 
 Acoustic fingerprints are very useful for identifying tracks and recordings, allowing them to be
 looked up in the MusicBrainz database. Thus, it is very valuable to add them when you are tagging

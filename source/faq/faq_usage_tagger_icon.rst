@@ -4,12 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-The green "Tagger" icon disappeared from MusicBrainz.org. How do I get it back?
-========================================================================================
-
-.. index::
-   single: tagger icon
-   single: icon; tagger
+:index:`The green "Tagger" icon disappeared from MusicBrainz.org. How do I get it back? <tagger icon, icon; tagger>`
+=======================================================================================================================
 
 This icon shows up when a manual lookup is performed via Picard using :menuselection:`"Tools --> Lookup"`.
 

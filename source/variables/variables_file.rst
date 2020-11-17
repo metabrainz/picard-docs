@@ -3,11 +3,8 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-File Variables
-===============
-
-.. index::
-   single: variables; file
+:index:`File Variables <variables; file>`
+==========================================
 
 These variables are populated from MusicBrainz data for most releases, without any special Picard settings.
 

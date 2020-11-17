@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Ratings
-=======
-
-.. index::
-   single: configuration; ratings
+:index:`Ratings <configuration; ratings>`
+==========================================
 
 .. image:: ../images/options-metadata-ratings.png
    :width: 100 %

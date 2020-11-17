@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-I tagged a file in Picard, but iTunes is not seeing the tags!
-=======================================================================
-
-.. index::
-   single: itunes
+:index:`I tagged a file in Picard, but iTunes is not seeing the tags! <itunes>`
+==================================================================================
 
 First, you need to force iTunes to re-read the information from your tags and update its library. This is discussed in the `iTunes
 Guide <https://musicbrainz.org/doc/iTunes_Guide>`_.

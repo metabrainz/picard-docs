@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-General Options
-===============
-
-.. index::
-   single: configuration; general options
+:index:`General Options <configuration; general options>`
+===========================================================
 
 .. image:: ../images/options-general.png
    :width: 100 %
@@ -45,12 +42,9 @@ General Options
    the correct track.  This is useful when re-processing files that have been previously tagged
    with incorrect information.
 
-.. index::
-   pair: configuration; update checking
-
 **Check for updates during start-up**
 
-   This option determines whether or not Picard will automatically check for program updates during
+   This option determines whether or not Picard will automatically :index:`check for program updates <pair: configuration; update checking>` during
    startup.  In any case, you can have Picard check for program updates at any time using :menuselection:`"Help
    --> Check for update"`.
 

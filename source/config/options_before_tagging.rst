@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Before Tagging
-==============
-
-.. index::
-   single: configuration; before tagging
+:index:`Before Tagging <configuration; before tagging>`
+=========================================================
 
 .. only:: html
 

@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-When the CD is available
-========================
-
-.. index::
-   single: workflows; cd
+:index:`When the CD is available <workflows; cd>`
+====================================================
 
 This is perhaps the best case scenario, because it provides the greatest chance of tagging your music files
 with the most accurate match from the MusicBrainz database.  It is also one of the easier methods for looking
@@ -60,12 +57,9 @@ up the release.
    Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`../usage/save` section for details.
 
 
-.. index::
-   single: acoustic fingerprint; submitting
-
 **8. Calculate and submit AcoustID fingerprints**
 
-   This step is optional, but appreciated because it will help identify the files for others to look up for tagging.
+   :index:`This step is optional <acoustic fingerprint; submitting>`, but appreciated because it will help identify the files for others to look up for tagging.
 
    Select the album entry in the right-hand pane and calculate the AcoustID fingerprints using :menuselection:`"Tools -->
    Generate AcoustID Fingerprints"`.  Once the fingerprints have been calculated, submit them using :menuselection:`"Files -->

@@ -4,11 +4,8 @@
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-What formats does Picard support?
-==========================================
-
-.. index::
-   single: file formats
+:index:`What formats does Picard support? <file formats>`
+============================================================
 
 Picard supports the following file formats:
 

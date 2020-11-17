@@ -69,12 +69,8 @@ Picard Cannot...
 ...provide metadata not already existing in the MusicBrainz database.
 
 
-.. index::
-   single: limitations
-   single: rate limiting
-
-Limitations
------------
+:index:`Limitations <limitations>`
+------------------------------------
 
 **File Formats**
 
@@ -94,7 +90,7 @@ not supported by all playback software.  In addition, Picard does not support wr
 
 **Request Rate Limiting**
 
-Picard's metadata retrieval is limited to the standard **one request per second** rate limiting for the MusicBrainz
+Picard's metadata retrieval is limited to the standard **one request per second** :index:`rate limiting` for the MusicBrainz
 API.  This becomes quite noticeable when trying to process a large list of files, and is exacerbated by
 extensions that perform additional information requests from the database.
 

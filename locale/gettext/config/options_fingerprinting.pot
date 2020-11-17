@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.4.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 10:05-0600\n"
+"POT-Creation-Date: 2020-11-17 12:17-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,45 +17,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/config/options_fingerprinting.rst:8
-msgid "Fingerprinting Options"
+msgid ":index:`Fingerprinting Options <configuration; fingerprinting>`"
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:16
+#: ../../source/config/options_fingerprinting.rst:13
 msgid "If you select a file or cluster in the left-hand side of the Picard screen and select :menuselection:`\"Tools --> Scan\"`, Picard will invoke a program to scan the files and produce a fingerprint for each that can then be used to look up the file on MusicBrainz."
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:20
+#: ../../source/config/options_fingerprinting.rst:17
 msgid "MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/AcoustID>`_ (an Open Source `acoustic fingerprinting <https://musicbrainz.org/doc/Fingerprinting>`_ system created by `Lukáš Lalinský <https://oxygene.sk/>`_) but has previously supported TRM and MusicID PUID."
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:24
+#: ../../source/config/options_fingerprinting.rst:21
 msgid "**Audio Fingerprinting**"
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:26
+#: ../../source/config/options_fingerprinting.rst:23
 msgid "This allows you to select whether or not to enable acoustic fingerprinting within Picard. If acoustic fingerprinting is diabled then all remaining options in this tab will be locked and ignored."
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:30
+#: ../../source/config/options_fingerprinting.rst:27
 msgid "**Ignore existing AcoustID fingerprints**"
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:32
+#: ../../source/config/options_fingerprinting.rst:29
 msgid "When checked, any existing AcoustID fingerprint information will not be used, and the files will be rescanned."
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:35
+#: ../../source/config/options_fingerprinting.rst:32
 msgid "**Fingerprint calculator**"
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:37
+#: ../../source/config/options_fingerprinting.rst:34
 msgid "This identifies the external program on your system that will be used to calculate the AcoustID fingerprints.  By default, Picard uses the `Chromaprint <https://acoustid.org/chromaprint>`_ (fpcalc) utility which is included with the Picard installation."
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:41
+#: ../../source/config/options_fingerprinting.rst:38
 msgid "**API key**"
 msgstr ""
 
-#: ../../source/config/options_fingerprinting.rst:43
+#: ../../source/config/options_fingerprinting.rst:40
 msgid "The key used to access the AcoustID API to lookup and submit AcoustID fingerprints.  There is no cost to obtain an API key."
 msgstr ""

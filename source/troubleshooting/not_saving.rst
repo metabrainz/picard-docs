@@ -3,11 +3,8 @@
 .. This MusicBrainz Picard User Guide is licensed under CC0 1.0
 .. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-.. index::
-   single: troubleshooting; files not saved
-
-Files are not being saved
-=========================
+:index:`Files are not being saved <troubleshooting; files not saved>`
+========================================================================
 
 There are two typical scenarios where files are not being saved:
 

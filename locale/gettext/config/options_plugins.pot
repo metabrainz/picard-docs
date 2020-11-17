@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.4.2\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 10:05-0600\n"
+"POT-Creation-Date: 2020-11-17 14:22-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/config/options_plugins.rst:8
-msgid "Plugins Options"
+msgid ":index:`Plugins Options <pair: configuration; plugins>`"
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:16
+#: ../../source/config/options_plugins.rst:13
 msgid "This section allows you to manage the plugins used by Picard.  You can install new plugins or enable, disable or uninstall plugins that are currently installed.  Picard provides a list of plugins that have been submitted to the project.  A list of the standard plugins is available on the `plugins page <https://picard.musicbrainz.org/plugins/>`_ on the Picard website."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:24
-msgid "There are also a number of plugins available by third-party developers.  Often these are discussed on the `Community Discussion Forum <https://community.metabrainz.org/>`_ so if you're looking for a particular enhancement or functionality, a search there might be useful.  In addition, one of the MusicBrainz editors, `Colby Ray <https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list of available plugins on a `wiki page <https://wiki.musicbrainz.org/User:Colbydray/PicardPlugins>`_.  Instructions regarding installation of third-party plugins are included in the :ref:`\"Installing Third-Party Plugins\" <ref_installingplugins>` section below."
+#: ../../source/config/options_plugins.rst:18
+msgid "There are also a number of plugins available by :index:`third-party developers <plugins; third-party>`.  Often these are discussed on the `Community Discussion Forum <https://community.metabrainz.org/>`_ so if you're looking for a particular enhancement or functionality, a search there might be useful.  In addition, one of the MusicBrainz editors, `Colby Ray <https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list of available plugins on a `wiki page <https://wiki.musicbrainz.org/User:Colbydray/PicardPlugins>`_.  Instructions regarding installation of third-party plugins are included in the :ref:`\"Installing Third-Party Plugins\" <ref_installingplugins>` section below."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:33
+#: ../../source/config/options_plugins.rst:27
 msgid "Plugins List"
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:35
+#: ../../source/config/options_plugins.rst:29
 msgid "The screen displays a list of the standard plugins and any others that have been installed.  Each plugin is displayed on a separate line showing the version number and one or more status / action icons.  The icons are:"
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:42
+#: ../../source/config/options_plugins.rst:36
 msgid "|img-plugin-download|"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 msgid "This icon indicates that the plugin is not installed.  Clicking the icon will download and install the plugin."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:51
+#: ../../source/config/options_plugins.rst:45
 msgid "|img-plugin-reload|"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "This icon indicates that a newer version of the plugin is available.  Clicking the icon will download and install the updated version."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:60
+#: ../../source/config/options_plugins.rst:54
 msgid "|img-plugin-enabled|"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "This icon indicates that the plugin is installed and currently enabled.  Clicking the icon will disable the plugin, but it will still be installed."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:69
+#: ../../source/config/options_plugins.rst:63
 msgid "|img-plugin-disabled|"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "This icon indicates that the plugin is installed but currently disabled.  Clicking the icon will enable the plugin."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:78
+#: ../../source/config/options_plugins.rst:72
 msgid "|img-plugin-trash|"
 msgstr ""
 
@@ -76,34 +76,34 @@ msgstr ""
 msgid "This icon indicates that the plugin is currently installed.  Clicking the icon will uninstall the plugin."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:83
+#: ../../source/config/options_plugins.rst:77
 msgid "When a plugin in the list is selected (i.e.: highlighted), a brief description of the plugin will be shown in  the \"Details\" section below the list."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:91
+#: ../../source/config/options_plugins.rst:85
 msgid "Some plugins have their own option page which will typically appear under the \"Plugins\" section of the Options."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:100
-msgid "Installing Third-Party Plugins"
+#: ../../source/config/options_plugins.rst:91
+msgid ":index:`Installing Third-Party Plugins <plugins; installing>`"
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:102
+#: ../../source/config/options_plugins.rst:93
 msgid "You can install a third-party plugin that does not appear in the plugins list, using the following steps:"
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:104
+#: ../../source/config/options_plugins.rst:95
 msgid "Download the plugin and save it to a local drive."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:106
+#: ../../source/config/options_plugins.rst:97
 msgid "Select the \"Install plugin...\" action, located just below the list of plugins."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:111
+#: ../../source/config/options_plugins.rst:102
 msgid "Navigate to the file you downloaded in Step 1 and select it.  The file will be copied to the plugin folder, and will appear in the list of plugins."
 msgstr ""
 
-#: ../../source/config/options_plugins.rst:114
+#: ../../source/config/options_plugins.rst:105
 msgid "Enable the plugin if desired, and select the \"Make It So!\" action button at the bottom of the window."
 msgstr ""
