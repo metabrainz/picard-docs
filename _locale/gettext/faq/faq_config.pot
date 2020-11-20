@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.5.1\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-11 17:05-0700\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,78 +16,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../faq/faq_config.rst:8
-msgid "Configuration"
+#: ../../faq/faq_config.rst:4
+msgid ":index:`Configuration <configuration; config file location>`"
 msgstr ""
 
-#: ../../faq/faq_config.rst:13
+#: ../../faq/faq_config.rst:6
 msgid "**Where is the Picard configuration saved?**"
 msgstr ""
 
-#: ../../faq/faq_config.rst:15
+#: ../../faq/faq_config.rst:8
 msgid "Picard saves the configuration in the file ``Picard.ini``. Its location depends on the operating system:"
 msgstr ""
 
-#: ../../faq/faq_config.rst:17
+#: ../../faq/faq_config.rst:10
 msgid "**Windows:**"
 msgstr ""
 
-#: ../../faq/faq_config.rst:19
+#: ../../faq/faq_config.rst:12
 msgid "``%APPDATA%\\MusicBrainz\\Picard.ini``"
 msgstr ""
 
-#: ../../faq/faq_config.rst:21
+#: ../../faq/faq_config.rst:14
 msgid "This usually will be ``C:\\Users\\YourUserName\\AppData\\Roaming\\MusicBrainz``, where ``YourUserName`` should be replaced with your actual Windows user name."
 msgstr ""
 
-#: ../../faq/faq_config.rst:24
+#: ../../faq/faq_config.rst:17
 msgid "**macOS, Linux and other Unix like systems:**"
 msgstr ""
 
-#: ../../faq/faq_config.rst:26
+#: ../../faq/faq_config.rst:19
 msgid "``$HOME/.config/MusicBrainz/Picard.ini``"
 msgstr ""
 
-#: ../../faq/faq_config.rst:32
+#: ../../faq/faq_config.rst:21
 msgid "**I tagged a file in Picard, but iTunes is not seeing the tags!**"
 msgstr ""
 
-#: ../../faq/faq_config.rst:34
-msgid "First, you need to force iTunes to re-read the information from your tags and update its library. This is discussed in the `iTunes Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
+#: ../../faq/faq_config.rst:23
+msgid "First, you need to force :index:`iTunes <itunes>` to re-read the information from your tags and update its library. This is discussed in the `iTunes Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
 msgstr ""
 
-#: ../../faq/faq_config.rst:37
+#: ../../faq/faq_config.rst:26
 msgid "Additionally, iTunes has a known bug in its ID3v2.4 implementation, which makes it unable to read such tags if they also contain embedded cover art. As a work-around, you can configure Picard to write ID3v2.3 tags."
 msgstr ""
 
-#: ../../faq/faq_config.rst:40
+#: ../../faq/faq_config.rst:29
 msgid "**My tags are truncated to 30 characters in Windows Media Player!**"
 msgstr ""
 
-#: ../../faq/faq_config.rst:42
+#: ../../faq/faq_config.rst:31
 msgid "Prior to version 0.14, Picard's default settings were to write ID3v2.4 and ID3v1 tags to files. WMP can't read ID3v2.4, so it falls back to ID3v1 which has a limitation of 30 characters per title. To solve this on versions prior to 0.14, configure Picard to write ID3v2.3 tags instead."
 msgstr ""
 
-#: ../../faq/faq_config.rst:46
+#: ../../faq/faq_config.rst:35
 msgid "Starting with version 0.14, the default settings have been changed to ID3v2.3 and this should no longer be an issue."
 msgstr ""
 
-#: ../../faq/faq_config.rst:51
+#: ../../faq/faq_config.rst:37
 msgid "**How do I tell Picard which browser to use?**"
 msgstr ""
 
-#: ../../faq/faq_config.rst:53
-msgid "On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can use the ``BROWSER`` environment variable."
+#: ../../faq/faq_config.rst:39
+msgid "On Windows, macOS, GNOME and KDE, Picard uses the :index:`default browser <pair: configuration; browser>` that has been configured for the system. On other systems, you can use the ``BROWSER`` environment variable."
 msgstr ""
 
-#: ../../faq/faq_config.rst:56
+#: ../../faq/faq_config.rst:42
 msgid "For example::"
 msgstr ""
 
-#: ../../faq/faq_config.rst:60
+#: ../../faq/faq_config.rst:46
 msgid "Another approach that works in some GNU/Linux systems is the following command::"
 msgstr ""
 
-#: ../../faq/faq_config.rst:64
+#: ../../faq/faq_config.rst:50
 msgid "This should present you with a list of existing browsers in your system, allowing you to select the one to use by default."
 msgstr ""

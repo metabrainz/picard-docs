@@ -1,22 +1,13 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Scripting Functions
-===================
-
-.. index::
-   single: scripting; functions
+:index:`Scripting Functions <scripting; functions>`
+====================================================
 
 The following is a list of the Picard scripting functions grouped by function type.
 
 
-Assignment Functions
---------------------
-
-.. index::
-   single: scripting functions; assignment
+:index:`Assignment Functions <scripting functions; assignment>`
+----------------------------------------------------------------
 
 These functions are used to assign (or unassign) a value to a tag or variable. The assignment
 scripting functions are:
@@ -32,11 +23,8 @@ scripting functions are:
    func_unset
 
 
-Text Functions
---------------
-
-.. index::
-   single: scripting functions; text
+:index:`Text Functions <scripting functions; text>`
+----------------------------------------------------
 
 These functions are used to manage text (e.g.: extract, replace or format) in tags or variables.
 The text scripting functions are:
@@ -69,11 +57,8 @@ The text scripting functions are:
    func_upper
 
 
-Multi-Value Functions
----------------------
-
-.. index::
-   single: scripting functions; multi-value
+:index:`Multi-Value Functions <scripting functions; multi-value>`
+------------------------------------------------------------------
 
 These functions are used to manage multi-value tags or variables.  The multi-value scripting
 functions are:
@@ -91,11 +76,8 @@ functions are:
    func_sortmulti
 
 
-Mathematical Functions
-----------------------
-
-.. index::
-   single: scripting functions; mathematical
+:index:`Mathematical Functions <scripting functions; mathematical>`
+--------------------------------------------------------------------
 
 These functions are used to perform arithmetic operations on tags or variables.  The mathematical
 scripting functions are:
@@ -110,11 +92,8 @@ scripting functions are:
    func_sub
 
 
-Conditional Functions
----------------------
-
-.. index::
-   single: scripting functions; conditional
+:index:`Conditional Functions <scripting functions; conditional>`
+------------------------------------------------------------------
 
 These functions are used to test for various conditions and take appropriate actions depending on
 the results of the test. The conditional scripting functions are:
@@ -146,11 +125,8 @@ the results of the test. The conditional scripting functions are:
    func_startswith
 
 
-Information Functions
----------------------
-
-.. index::
-   single: scripting functions; information
+:index:`Information Functions <scripting functions; information>`
+------------------------------------------------------------------
 
 These functions provide additional system or data information. The information scripting functions are:
 
@@ -161,11 +137,8 @@ These functions provide additional system or data information. The information s
    func_matchedtracks
 
 
-Loop Functions
---------------
-
-.. index::
-   single: scripting functions; loop
+:index:`Loop Functions <scripting functions; loop>`
+----------------------------------------------------
 
 These functions provide the ability to repeat actions based on the contents of a multi-value variable or
 the result of a conditional test.  The loop scripting functions are:
@@ -177,11 +150,8 @@ the result of a conditional test.  The loop scripting functions are:
    func_while
 
 
-Miscellaneous Functions
------------------------
-
-.. index::
-   single: scripting functions; miscellaneous
+:index:`Miscellaneous Functions <scripting functions; miscellaneous>`
+----------------------------------------------------------------------
 
 The miscellaneous scripting functions are:
 

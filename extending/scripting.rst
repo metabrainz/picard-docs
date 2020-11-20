@@ -1,13 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Scripting
-=========
-
-.. index::
-   single: scripts
+:index:`Scripting <scripts>`
+=============================
 
 Scripts are used to control some aspects of the operation of Picard.
 
@@ -24,11 +18,8 @@ and there is a thread specific to `file naming and script snippets
    Please refer to the section on :doc:`Scripts <scripts>` in :doc:`Extending Picard <extending>`
    for additional details about the two types of scripts, including how and when each of the scripts are executed.
 
-.. index::
-   single: scripts; syntax
-
-Syntax
-------
+:index:`Syntax <scripts; syntax>`
+----------------------------------
 
 The syntax is derived from `Foobar2000's titleformat
 <https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference>`_.

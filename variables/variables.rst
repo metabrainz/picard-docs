@@ -1,15 +1,8 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 
-Tags & Variables
-================
-
-.. index::
-   single: scripts; tags
-   single: scripts; variables
+:index:`Tags & Variables <scripts; tags, scripts; variables>`
+==============================================================
 
 This describes both Tags which are saved inside your music files and can be read by your
 music player, and Picard variables which can be used in Picard scripts for tagging, file

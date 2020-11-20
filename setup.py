@@ -5,6 +5,7 @@ Python script used to provide development support functions.
 """
 
 import argparse
+import glob
 import os
 import re
 import shutil
@@ -18,7 +19,7 @@ import restructuredtext_lint
 import conf
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.09'
+SCRIPT_VERS = '0.10'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -113,7 +114,7 @@ IGNORE_DIRECTIVES = [
 IGNORE_ROLES = [
     # Cross-referencing
     'any', 'ref', 'doc', 'download', 'numref', 'envar', 'token',
-    'keyword', 'option', 'term',
+    'keyword', 'option', 'term', 'index',
 
     # Math
     'math', 'eq',
@@ -129,10 +130,10 @@ IGNORE_ROLES = [
 ################################################
 
 RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
-RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)"\.$')
+RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)".*$')
 
 RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
-RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)"\.$')
+RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
 
 RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 
@@ -194,6 +195,7 @@ Usage: {0} [optional arguments] command
 Commands:
    clean html          Reset html build directory
    clean pdf           Reset pdf build directory
+   clean mo            Remove all compiled MO files
 
    build html          Build HTML files
    build pdf           Build PDF files
@@ -252,7 +254,8 @@ class LintRST():
                                 err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
                                 m = RE_TEST_ROLE_1.match(err.message)
                                 err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
-                        if (err.type == 'ERROR' or err.type == 'SEVERE') and err.message.startswith('Unknown'):
+                        # if (err.type == 'ERROR' or err.type == 'SEVERE') and err.message.startswith('Unknown'):
+                        if err.type == 'ERROR' or err.type == 'SEVERE':
                             m = RE_TEST_DIRECTIVE_2.match(err.message)
                             err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
                             m = RE_TEST_ROLE_2.match(err.message)
@@ -358,8 +361,8 @@ def parse_command_line():
     parser03.add_argument(
         'clean_target',
         action='store',
-        choices=['html', 'pdf', 'epub', 'po'],
-        help="html = clean html build directory, pdf = clean pdf build directory, po = clean language directory"
+        choices=['html', 'pdf', 'epub', 'po', 'mo'],
+        help="html = clean html build directory, pdf = clean pdf build directory, epub = clean epub build directory, po = clean language directory, mo = remove all compiled MO files"
     )
 
     parser04 = subparsers.add_parser(
@@ -824,6 +827,25 @@ def update_po(language):
         exit_with_code(exit_code)
 
 
+def clean_mo():
+    """Delete all compiled translation files (*.mo) from the gettext directory and subdirectories.
+    """
+    print('Deleting compiled translation *.mo files.')
+    count = 0
+    # get a recursive list of file paths that matches pattern including sub directories
+    gettext_path = os.path.join(SPHINX_LOCALE_DIR, '**', '*.mo')
+    filelist = glob.glob(gettext_path, recursive=True)
+    # Iterate over the list of filepaths & remove each file.
+    for filepath in filelist:
+        try:
+            os.remove(filepath)
+            count += 1
+        except OSError:
+            print("Error deleting file: {0}".format(filepath,))
+            exit_with_code(1)
+    print('Removed {0} files.'.format(count))
+
+
 def check_language(language, supported_only=False):
     """Checks that the specified language is a valid language code.
 
@@ -922,6 +944,9 @@ def main():
         if args.clean_target in SPHINX_BUILD_TARGETS.keys():
             clean_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[args.clean_target]['dir'])
             clean_directory(clean_dir, args.clean_target)
+
+        elif args.clean_target == 'mo':
+            clean_mo()
 
         else:
             print("\nUnknown clean target: '{0}'\n".format(args.clean_target))

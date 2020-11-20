@@ -1,14 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-
-When files are not grouped and have little or no existing metadata
-==================================================================
-
-.. index::
-   single: workflows; no metadata
+:index:`When files are not grouped and have little or no existing metadata <workflows; no metadata>`
+=====================================================================================================
 
 This is perhaps the worst case scenario, because it provides the greatest chance of tagging your music files
 with an incorrect match from the MusicBrainz database.

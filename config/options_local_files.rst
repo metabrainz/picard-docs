@@ -1,16 +1,9 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
-
 
 .. _ref-local-files:
 
-Local Files
-===========
-
-.. index::
-   single: configuration; local files
+:index:`Local Files <configuration; local files>`
+==================================================
 
 .. image:: images/options-cover-local.png
    :width: 100 %

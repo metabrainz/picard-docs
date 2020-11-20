@@ -1,9 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Generating tags from file names
-===============================
+Generating :index:`tags from file names`
+=========================================
 
 Sometimes files have poor quality tags or no tags at all, but the file names are well structured and
 follow a pattern. In this case you can use :menuselection:`"Tools --> Tags From &File Names..."` to

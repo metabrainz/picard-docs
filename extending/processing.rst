@@ -1,13 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Processing Order
-================
-
-.. index::
-   single: processing order
+:index:`Processing Order <processing order>`
+=============================================
 
 In order to make effective use of plugins and scripts, it is important to understand when
 each is processed in relation to the others. As a general statement, plugins are always

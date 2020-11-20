@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.5.1\n"
+"Project-Id-Version: MusicBrainz Picard v2.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-11 17:05-0700\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,46 +16,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../troubleshooting/missing_tags.rst:11
-msgid "Tags are not updated or saved"
+#: ../../troubleshooting/missing_tags.rst:4
+msgid ":index:`Tags are not updated or saved <troubleshooting; tags not saved>`"
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:13
+#: ../../troubleshooting/missing_tags.rst:6
 msgid "There are typically four reasons that tags may not be written or updated when files are saved:"
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:15
+#: ../../troubleshooting/missing_tags.rst:8
 msgid "**Saving tags has not been enabled in the configuration settings**"
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:17
+#: ../../troubleshooting/missing_tags.rst:10
 msgid "Confirm that the :menuselection:`\"Options --> Save tags\"` setting has been enabled.  See :ref:`action_options` for more information."
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:21
+#: ../../troubleshooting/missing_tags.rst:14
 msgid "**Tags are being set in the file naming script**"
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:23
+#: ../../troubleshooting/missing_tags.rst:16
 msgid "Tags created or updated in the file naming script will not be written to the output files. This script is only used for developing the file name and directory structure for the output.  If you want to set or update a tag value in a script, it must be in a tagging script.  Please see the :doc:`../extending/scripts` section for more information about the different types of scripts."
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:29
+#: ../../troubleshooting/missing_tags.rst:22
 msgid "**The tags begin with an underscore**"
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:31
+#: ../../troubleshooting/missing_tags.rst:24
 msgid "Tags whose names begin with an underscore, regardless of how they are created, will not be written to the output files.  These are considered variables for use within Picard rather than tags.  Please see the :doc:`../variables/variables` section for more information regarding the difference between tags and variables."
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:36
+#: ../../troubleshooting/missing_tags.rst:29
 msgid "**The file type does not support writing tags**"
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:38
+#: ../../troubleshooting/missing_tags.rst:31
 msgid "Confirm that the file type that you are writing actually supports the tags that are to be written.  Not all file types support all the tags Picard supports."
 msgstr ""
 
-#: ../../troubleshooting/missing_tags.rst:41
+#: ../../troubleshooting/missing_tags.rst:34
 msgid "Please see the :doc:`../appendices/tag_mapping` section for details about the tags supported by various file formats."
 msgstr ""

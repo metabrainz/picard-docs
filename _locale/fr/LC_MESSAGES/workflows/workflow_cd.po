@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-18 10:02-0600\n"
-"PO-Revision-Date: 2020-10-18 10:13-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 17:19-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../workflows/workflow_cd.rst:8
-msgid "When the CD is available"
-msgstr "Lorsque le CD est disponible"
+#: ../../workflows/workflow_cd.rst:4
+msgid ":index:`When the CD is available <workflows; cd>`"
+msgstr ":index:`Lorsque le CD est disponible <workflows; cd>`"
 
-#: ../../workflows/workflow_cd.rst:13
+#: ../../workflows/workflow_cd.rst:6
 msgid ""
 "This is perhaps the best case scenario, because it provides the greatest "
 "chance of tagging your music files with the most accurate match from the "
@@ -36,11 +36,11 @@ msgstr ""
 "précise de la base de données MusicBrainz. C'est également l'une des "
 "méthodes les plus simples pour rechercher la version."
 
-#: ../../workflows/workflow_cd.rst:17
+#: ../../workflows/workflow_cd.rst:10
 msgid "**1. Rip the CD to music files**"
 msgstr "**1. Ripper le CD en fichiers musicaux**"
 
-#: ../../workflows/workflow_cd.rst:19
+#: ../../workflows/workflow_cd.rst:12
 msgid ""
 "Extract the music filed from the CD using your favorite ripping program "
 "(e.g.: `Exact Audio Copy <http://exactaudiocopy.de/>`_ for Windows or "
@@ -57,11 +57,11 @@ msgstr ""
 "votre lecteur. Un format populaire est FLAC, qui est un format compressé "
 "sans perte."
 
-#: ../../workflows/workflow_cd.rst:25
+#: ../../workflows/workflow_cd.rst:18
 msgid "**2. Lookup the CD on MusicBrainz**"
 msgstr "**2. Recherchez le CD sur MusicBrainz**"
 
-#: ../../workflows/workflow_cd.rst:27
+#: ../../workflows/workflow_cd.rst:20
 msgid ""
 "With the CD in the drive, it can be looked up automatically using the :"
 "menuselection:`\"Tools --> Lookup CD\"` command. See the :doc:`../usage/"
@@ -72,11 +72,11 @@ msgstr ""
 "Voir la section :doc:`../usage/retrieve_lookup_cd` pour des instructions "
 "détaillées."
 
-#: ../../workflows/workflow_cd.rst:31
+#: ../../workflows/workflow_cd.rst:24
 msgid "**3. Select the correct release**"
 msgstr "**3. Sélectionnez la version appropriée**"
 
-#: ../../workflows/workflow_cd.rst:33
+#: ../../workflows/workflow_cd.rst:26
 msgid ""
 "If there is only one release that matches the disc id for your disc, it "
 "will be loaded automatically.  Before proceeding, please check to ensure "
@@ -93,11 +93,11 @@ msgstr ""
 "des informations telles que l'identifiant du disque ou les empreintes "
 "digitales AcoustID."
 
-#: ../../workflows/workflow_cd.rst:39
+#: ../../workflows/workflow_cd.rst:32
 msgid "**4. Load the files**"
 msgstr "**4. Chargez les fichiers**"
 
-#: ../../workflows/workflow_cd.rst:41
+#: ../../workflows/workflow_cd.rst:34
 msgid ""
 "Drag the files or folder from the browser to the \"Unclustered Files\" "
 "section in the left-hand pane.  You do not need to scan or cluster them."
@@ -106,11 +106,11 @@ msgstr ""
 "\"Fichiers non groupés\" dans le volet de gauche. Vous n'avez pas besoin "
 "de les analyser ou de les regrouper."
 
-#: ../../workflows/workflow_cd.rst:45
+#: ../../workflows/workflow_cd.rst:38
 msgid "**5. Match the files to the tracks on the release**"
 msgstr "**5. Faites correspondre les fichiers aux pistes de la version**"
 
-#: ../../workflows/workflow_cd.rst:47
+#: ../../workflows/workflow_cd.rst:40
 msgid ""
 "Drag the files from the left-hand pane and drop them on the release in "
 "the right-hand pane.  Check that each track on the release is associated "
@@ -122,11 +122,11 @@ msgstr ""
 "est associée à un seul fichier. L'icône de libération devrait devenir "
 "dorée. Voir la section :doc:`../usage/match` pour plus de détails."
 
-#: ../../workflows/workflow_cd.rst:52
+#: ../../workflows/workflow_cd.rst:45
 msgid "**6. Verify the metadata and cover art**"
 msgstr "**6. Vérifiez les métadonnées et la pochette**"
 
-#: ../../workflows/workflow_cd.rst:54
+#: ../../workflows/workflow_cd.rst:47
 msgid ""
 "Check that the metadata and cover art image for the release and tracks "
 "are what you want.  Adjust if required. See the :doc:`../usage/coverart` "
@@ -136,11 +136,11 @@ msgstr ""
 "des pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la "
 "section :doc:`../usage/coverart` pour plus de détails."
 
-#: ../../workflows/workflow_cd.rst:58
+#: ../../workflows/workflow_cd.rst:51
 msgid "**7. Save the files**"
 msgstr "**7. Enregistrez les fichiers**"
 
-#: ../../workflows/workflow_cd.rst:60
+#: ../../workflows/workflow_cd.rst:53
 msgid ""
 "Save the files using the :menuselection:`\"File --> Save\"` command.  "
 "See the :doc:`../usage/save` section for details."
@@ -149,19 +149,21 @@ msgstr ""
 "\"Fichier --> Enregistrer\"`. Voir la section :doc:`../usage/save` pour "
 "plus de détails."
 
-#: ../../workflows/workflow_cd.rst:66
+#: ../../workflows/workflow_cd.rst:56
 msgid "**8. Calculate and submit AcoustID fingerprints**"
 msgstr "**8. Calculer et soumettre les empreintes digitales AcoustID**"
 
-#: ../../workflows/workflow_cd.rst:68
+#: ../../workflows/workflow_cd.rst:58
 msgid ""
-"This step is optional, but appreciated because it will help identify the "
-"files for others to look up for tagging."
+":index:`This step is optional <acoustic fingerprint; submitting>`, but "
+"appreciated because it will help identify the files for others to look "
+"up for tagging."
 msgstr ""
-"Cette étape est facultative, mais appréciée car elle aidera à identifier "
-"les fichiers que d'autres pourront rechercher pour le marquage."
+":index:`Cette étape est facultative <empreinte digitale acoustique; "
+"soumission>`, mais appréciée car elle aidera à identifier les fichiers "
+"que d'autres pourront rechercher pour le marquage."
 
-#: ../../workflows/workflow_cd.rst:70
+#: ../../workflows/workflow_cd.rst:60
 msgid ""
 "Select the album entry in the right-hand pane and calculate the AcoustID "
 "fingerprints using :menuselection:`\"Tools --> Generate AcoustID "
@@ -173,7 +175,7 @@ msgstr ""
 "empreintes AcoustID\"`. Une fois les empreintes calculées, soumettez-les "
 "en utilisant :menuselection:`\"Fichiers --> Soumettre les AcoustIDs\"`."
 
-#: ../../workflows/workflow_cd.rst:76
+#: ../../workflows/workflow_cd.rst:66
 msgid ""
 "AcoustID fingerprints should only be submitted after the files have been "
 "tagged with MusicBrainz metadata, and you have verified that the files "
@@ -183,3 +185,6 @@ msgstr ""
 "les fichiers ont été étiquetés avec les métadonnées MusicBrainz et que "
 "vous avez vérifié que les fichiers ont été mis en correspondance avec la "
 "bonne piste dans la version appropriée."
+
+#~ msgid "When the CD is available"
+#~ msgstr "Lorsque le CD est disponible"

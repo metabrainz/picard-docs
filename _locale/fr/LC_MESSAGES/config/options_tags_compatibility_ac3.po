@@ -8,23 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-07 13:26-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:21-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../config/options_tags_compatibility_ac3.rst:8
-msgid "AC3 Files"
-msgstr "Fichiers AC3"
+#: ../../config/options_tags_compatibility_ac3.rst:4
+msgid ":index:`AC3 Files <configuration; ac3 tag options>`"
+msgstr ":index:`Fichiers AC3 <configuration; options de balise ac3>`"
 
-#: ../../config/options_tags_compatibility_ac3.rst:16
+#: ../../config/options_tags_compatibility_ac3.rst:9
 msgid ""
 "Picard can save APEv2 tags to pure AC3 files, which by default do not "
 "support tagging. APEv2 tags in AC3 are supported by some players, but "
@@ -40,19 +40,19 @@ msgstr ""
 "gérer cela, vous pouvez choisir d'enregistrer les balises dans ces "
 "fichiers:"
 
-#: ../../config/options_tags_compatibility_ac3.rst:20
+#: ../../config/options_tags_compatibility_ac3.rst:13
 msgid "**Save APEv2 tags**"
 msgstr "** Enregistrer les tags APEv2 **"
 
-#: ../../config/options_tags_compatibility_ac3.rst:22
+#: ../../config/options_tags_compatibility_ac3.rst:15
 msgid "Picard will save APEv2 tags to the files."
 msgstr "Picard enregistrera les balises APEv2 dans les fichiers."
 
-#: ../../config/options_tags_compatibility_ac3.rst:24
+#: ../../config/options_tags_compatibility_ac3.rst:17
 msgid "**Do not save tags**"
 msgstr "**Ne pas enregistrer les tags**"
 
-#: ../../config/options_tags_compatibility_ac3.rst:26
+#: ../../config/options_tags_compatibility_ac3.rst:19
 msgid ""
 "Picard will not save any tags to the files, but you can still use Picard "
 "to rename them. By default existing APEv2 tags will be kept in the file."
@@ -61,11 +61,11 @@ msgstr ""
 "toujours utiliser Picard pour les renommer. Par défaut, les balises "
 "APEv2 existantes seront conservées dans le fichier."
 
-#: ../../config/options_tags_compatibility_ac3.rst:29
+#: ../../config/options_tags_compatibility_ac3.rst:22
 msgid "**Remove APEv2 tags**"
 msgstr "** Supprimer les balises APEv2 **"
 
-#: ../../config/options_tags_compatibility_ac3.rst:31
+#: ../../config/options_tags_compatibility_ac3.rst:24
 msgid ""
 "If you have \"Do not save tags\" enabled checking this option will cause "
 "Picard to remove existing APEv2 tags from the file on saving."
@@ -74,7 +74,7 @@ msgstr ""
 "option obligera Picard à supprimer les balises APEv2 existantes du "
 "fichier lors de l'enregistrement."
 
-#: ../../config/options_tags_compatibility_ac3.rst:34
+#: ../../config/options_tags_compatibility_ac3.rst:27
 msgid ""
 "Regardless of how you have configured saving tags Picard will always "
 "read existing APEv2 tags in AC3 files."
@@ -82,3 +82,6 @@ msgstr ""
 "Quelle que soit la façon dont vous avez configuré l'enregistrement des "
 "balises, Picard lira toujours les balises APEv2 existantes dans les "
 "fichiers AC3."
+
+#~ msgid "AC3 Files"
+#~ msgstr "Fichiers AC3"

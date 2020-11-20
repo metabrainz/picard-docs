@@ -1,15 +1,9 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 .. TODO: Expand definitions
 
-Classical Music Tags
-====================
-
-.. index::
-   single: tags; classical
+:index:`Classical Music Tags <tags; classical>`
+================================================
 
 With the help of plugins like "Classical Extras" or "Work & Movement" you can make use of the following tags for
 tagging your classical music.

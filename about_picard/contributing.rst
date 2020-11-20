@@ -1,13 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Contributing to the Project
-===========================
-
-.. index::
-   single: contributing
+:index:`Contributing to the Project <contributing>`
+====================================================
 
 This document only exists because of the volunteer effort that went into its development,
 from the initial documentation on the Picard website, the information posted in the Community

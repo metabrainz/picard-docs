@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-09 16:39-0700\n"
-"PO-Revision-Date: 2020-11-10 11:57-0700\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:11-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../config/options_network.rst:8
-msgid "Network"
-msgstr "Réseau"
+#: ../../config/options_network.rst:4
+msgid ":index:`Network <configuration; network>`"
+msgstr ":index:`Réseau <configuration; réseau>`"
 
-#: ../../config/options_network.rst:16
+#: ../../config/options_network.rst:9
 msgid "**Web Proxy**"
 msgstr "**Proxy Web**"
 
-#: ../../config/options_network.rst:18
+#: ../../config/options_network.rst:11
 msgid ""
 "If you need a proxy to make an outside network connection you may "
 "specify one here.  You can choose between HTTP and SOCKS proxy.  The "
@@ -41,11 +41,11 @@ msgstr ""
 "et **Port**. Si le proxy requiert une authentification, saisissez "
 "également **Nom d'utilisateur** et **Mot de passe**."
 
-#: ../../config/options_network.rst:22
+#: ../../config/options_network.rst:15
 msgid "**Request timeout in seconds**"
 msgstr "**Demander un délai d'expiration en secondes**"
 
-#: ../../config/options_network.rst:24
+#: ../../config/options_network.rst:17
 msgid ""
 "By default Picard will abort running network requests after 30 seconds "
 "of inactivity.  If needed you can change the timeout period here."
@@ -54,11 +54,11 @@ msgstr ""
 "secondes d'inactivité. Si nécessaire, vous pouvez modifier le délai "
 "d'expiration ici."
 
-#: ../../config/options_network.rst:30
+#: ../../config/options_network.rst:23
 msgid "**Browser Integration**"
 msgstr "**Intégration du navigateur**"
 
-#: ../../config/options_network.rst:32
+#: ../../config/options_network.rst:25
 msgid ""
 "The browser integration allows you to load releases and recordings into "
 "Picard directly from the MusicBrainz website. Once you have opened "
@@ -74,11 +74,11 @@ msgstr ""
 "lookup_tagger| à côté des sorties et des enregistrements. Cliquer sur ce "
 "bouton chargera la version ou l'enregistrement correspondant dans Picard."
 
-#: ../../config/options_network.rst:37
+#: ../../config/options_network.rst:30
 msgid "**Default listening port**"
 msgstr "**Port d'écoute par défaut**"
 
-#: ../../config/options_network.rst:39
+#: ../../config/options_network.rst:32
 msgid ""
 "This identifies the default port Picard will listen on for the browser "
 "integration. If the port is not available Picard will try to increase "
@@ -89,11 +89,11 @@ msgstr ""
 "d'augmenter le numéro de port de un jusqu'à ce qu'il trouve un port "
 "libre."
 
-#: ../../config/options_network.rst:42
+#: ../../config/options_network.rst:35
 msgid "**Listen only on localhost**"
 msgstr "**Écoutez uniquement sur localhost**"
 
-#: ../../config/options_network.rst:44
+#: ../../config/options_network.rst:37
 msgid ""
 "By default Picard will limit access to the browser integration port to "
 "your local machine. Deactivating this option will expose the port on "
@@ -110,7 +110,7 @@ msgstr ""
 "play.google.com/store/apps/details?id=org.musicbrainz.picard."
 "barcodescanner>`_ pour Android."
 
-#: ../../config/options_network.rst:52
+#: ../../config/options_network.rst:45
 msgid ""
 "Only expose the port externally when you actually need it and only on "
 "networks you trust. Exposing application ports via the network can open "
@@ -120,3 +120,6 @@ msgstr ""
 "et uniquement sur les réseaux de confiance. L'exposition des ports "
 "d'application via le réseau peut ouvrir des failles de sécurité "
 "potentielles sur votre système."
+
+#~ msgid "Network"
+#~ msgstr "Réseau"

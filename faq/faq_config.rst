@@ -1,14 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-
-Configuration
-=============
-
-.. index::
-   single: configuration; config file location
+:index:`Configuration <configuration; config file location>`
+=============================================================
 
 **Where is the Picard configuration saved?**
 
@@ -25,13 +18,9 @@ Configuration
 
       ``$HOME/.config/MusicBrainz/Picard.ini``
 
-
-.. index::
-   single: itunes
-
 **I tagged a file in Picard, but iTunes is not seeing the tags!**
 
-   First, you need to force iTunes to re-read the information from your tags and update its library. This is discussed in the `iTunes
+   First, you need to force :index:`iTunes <itunes>` to re-read the information from your tags and update its library. This is discussed in the `iTunes
    Guide <https://musicbrainz.org/doc/iTunes_Guide>`_.
 
    Additionally, iTunes has a known bug in its ID3v2.4 implementation, which makes it unable to read such tags if they also contain
@@ -45,12 +34,9 @@ Configuration
 
    Starting with version 0.14, the default settings have been changed to ID3v2.3 and this should no longer be an issue.
 
-.. index::
-   pair: configuration; browser
-
 **How do I tell Picard which browser to use?**
 
-   On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can
+   On Windows, macOS, GNOME and KDE, Picard uses the :index:`default browser <pair: configuration; browser>` that has been configured for the system. On other systems, you can
    use the ``BROWSER`` environment variable.
 
    For example::

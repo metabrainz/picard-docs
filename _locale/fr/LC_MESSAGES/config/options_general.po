@@ -8,27 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-06 15:14-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:04-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../config/options_general.rst:8
-msgid "General Options"
-msgstr "Options générales"
+#: ../../config/options_general.rst:4
+msgid ":index:`General Options <configuration; general options>`"
+msgstr ":index:`Options générales <configuration; options générales>`"
 
-#: ../../config/options_general.rst:16
+#: ../../config/options_general.rst:9
 msgid "**Server address**"
 msgstr "**Adresse du serveur**"
 
-#: ../../config/options_general.rst:18
+#: ../../config/options_general.rst:11
 msgid ""
 "The domain name for the MusicBrainz database server used by Picard to "
 "get details of your music. Default value: musicbrainz.org (for the main "
@@ -38,11 +38,11 @@ msgstr ""
 "Picard pour obtenir les détails de votre musique. Valeur par défaut: "
 "musicbrainz.org (pour le serveur principal MusicBrainz)."
 
-#: ../../config/options_general.rst:21
+#: ../../config/options_general.rst:14
 msgid "**Port**"
 msgstr "**Port**"
 
-#: ../../config/options_general.rst:23
+#: ../../config/options_general.rst:16
 msgid ""
 "The port number for the server. Default value: 80 (for the main "
 "MusicBrainz server)."
@@ -50,11 +50,11 @@ msgstr ""
 "Le numéro de port du serveur. Valeur par défaut: 80 (pour le serveur "
 "MusicBrainz principal)."
 
-#: ../../config/options_general.rst:25
+#: ../../config/options_general.rst:18
 msgid "**Username**"
 msgstr "**Nom d'utilisateur**"
 
-#: ../../config/options_general.rst:27
+#: ../../config/options_general.rst:20
 msgid ""
 "Your MusicBrainz website username, used to submit acoustic fingerprints, "
 "retrieve and save items to your collections, and retrieve personal "
@@ -65,19 +65,19 @@ msgstr ""
 "éléments dans vos collections et récupérer des balises personnelles de "
 "folksonomy."
 
-#: ../../config/options_general.rst:30
+#: ../../config/options_general.rst:23
 msgid "**Password**"
 msgstr "**Mot de passe**"
 
-#: ../../config/options_general.rst:32
+#: ../../config/options_general.rst:25
 msgid "Your MusicBrainz website password."
 msgstr "Le mot de passe de votre site Web MusicBrainz."
 
-#: ../../config/options_general.rst:34
+#: ../../config/options_general.rst:27
 msgid "**Automatically scan all new files**"
 msgstr "**Analyser automatiquement tous les nouveaux fichiers**"
 
-#: ../../config/options_general.rst:36
+#: ../../config/options_general.rst:29
 msgid ""
 "Check this box if you want Picard to scan each music file you add and "
 "look for an AcoustID fingerprint. This takes time, but may be helpful "
@@ -94,11 +94,11 @@ msgstr ""
 "scanner à tout moment un fichier musical particulier en utilisant :"
 "menuselection:`\"Outils --> Analyser\"`."
 
-#: ../../config/options_general.rst:41
+#: ../../config/options_general.rst:34
 msgid "**Ignore MBIDs when loading new files**"
 msgstr "**Ignorer les MBID lors du chargement de nouveaux fichiers**"
 
-#: ../../config/options_general.rst:43
+#: ../../config/options_general.rst:36
 msgid ""
 "If you disable this option Picard will not use MusicBrainz identifiers "
 "(MBIDs) stored in the files to automatically load the corresponding "
@@ -113,27 +113,28 @@ msgstr ""
 "retraitement de fichiers qui ont déjà été marqués avec des informations "
 "incorrectes."
 
-#: ../../config/options_general.rst:51
+#: ../../config/options_general.rst:41
 msgid "**Check for updates during start-up**"
 msgstr "**Vérifiez les mises à jour lors du démarrage**"
 
-#: ../../config/options_general.rst:53
+#: ../../config/options_general.rst:43
 msgid ""
 "This option determines whether or not Picard will automatically check "
-"for program updates during startup.  In any case, you can have Picard "
-"check for program updates at any time using :menuselection:`\"Help --> "
-"Check for update\"`."
+"for :index:`program updates <pair: configuration; update checking>` "
+"during startup.  In any case, you can have Picard check for program "
+"updates at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
 "Cette option détermine si Picard vérifiera automatiquement les mises à "
-"jour du programme au démarrage. Dans tous les cas, vous pouvez demander "
+"jour du :index:`programme au démarrage <pair: configuration; "
+"vérification des mises à jour>`. Dans tous les cas, vous pouvez demander "
 "à Picard de vérifier les mises à jour du programme à tout moment en "
 "utilisant :menuselection:`\"Aide --> Vérifier les mises à jour\"`."
 
-#: ../../config/options_general.rst:57
+#: ../../config/options_general.rst:47
 msgid "**Days between checks**"
 msgstr "**Jours entre les chèques**"
 
-#: ../../config/options_general.rst:59
+#: ../../config/options_general.rst:49
 msgid ""
 "This option allows you to limit the automatic update checking by "
 "selecting the interval, in days, between checks. Set this to 1 if you "
@@ -147,11 +148,11 @@ msgstr ""
 "Notez que cela ne s'applique que si l'option \"Vérifier les mises à jour "
 "au démarrage\" est activée."
 
-#: ../../config/options_general.rst:63
+#: ../../config/options_general.rst:53
 msgid "**Updates to check**"
 msgstr "**Mises à jour à vérifier**"
 
-#: ../../config/options_general.rst:65
+#: ../../config/options_general.rst:55
 msgid ""
 "This option allows you to select which levels of update to check. Your "
 "options are:"
@@ -159,19 +160,19 @@ msgstr ""
 "Cette option vous permet de sélectionner les niveaux de mise à jour à "
 "vérifier. Vos options sont:"
 
-#: ../../config/options_general.rst:67
+#: ../../config/options_general.rst:57
 msgid "Stable releases only"
 msgstr "Versions stables uniquement"
 
-#: ../../config/options_general.rst:68
+#: ../../config/options_general.rst:58
 msgid "Stable and Beta releases"
 msgstr "Versions stables et bêta"
 
-#: ../../config/options_general.rst:69
+#: ../../config/options_general.rst:59
 msgid "Stable, Beta and Dev releases"
 msgstr "Versions stables, bêta et dev"
 
-#: ../../config/options_general.rst:71
+#: ../../config/options_general.rst:61
 msgid ""
 "For example, if you subscribe to \"Stable releases only\" you will not "
 "be notified if a new Beta or Dev release is issued."
@@ -180,7 +181,7 @@ msgstr ""
 "vous ne serez pas averti si une nouvelle version bêta ou de "
 "développement est publiée."
 
-#: ../../config/options_general.rst:76
+#: ../../config/options_general.rst:66
 msgid ""
 "The update checking related settings and :menuselection:`\"Help --> "
 "Check for update...\"` command may not be available when Picard is "
@@ -192,3 +193,6 @@ msgstr ""
 "être disponibles lorsque Picard est distribué sous forme de package. "
 "Dans ce cas, l'utilisateur doit vérifier auprès du responsable du "
 "package pour déterminer quand une mise à jour est disponible."
+
+#~ msgid "General Options"
+#~ msgstr "Options générales"

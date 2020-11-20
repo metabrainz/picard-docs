@@ -1,17 +1,11 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 .. TODO: Expand definitions
 
 .. TODO: Note which tags are not provided by Picard
 
-Advanced Variables
-==================
-
-.. index::
-   single: variables; advanced
+:index:`Advanced Variables <variables; advanced>`
+==================================================
 
 If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>`, you get these extra variables:
 

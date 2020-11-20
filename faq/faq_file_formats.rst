@@ -1,14 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-
-File Formats
-============
-
-.. index::
-   single: file formats
+:index:`File Formats <file formats>`
+=====================================
 
 **What formats does Picard support?**
 
@@ -54,12 +47,9 @@ File Formats
    See the :doc:`../variables/variables` section for information on which MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping
    <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
 
-.. index::
-   single: tags; editing
-
 **How to I edit several tags at once? Why is it not easier do so?**
 
-   Please understand that Picard is not designed as a general purpose tag editor. Its primary goal is to retrieve community-maintained MusicBrainz
+   Please understand that Picard is not designed as a general purpose :index:`tag editor <tags; editing>`. Its primary goal is to retrieve community-maintained MusicBrainz
    data to write into your tags. Some secondary goals include:
 
    * allowing rule-based customization of that data using scripts and plugins
@@ -79,12 +69,9 @@ File Formats
 
    This process should work in both panes.
 
-.. index::
-   single: audio player
-
 **The built-in audio player cannot play my file. Which formats does it support?**
 
-   The formats supported by the built-in audio player depend on the formats supported by your operating system.
+   The formats supported by the built-in :index:`audio player` depend on the formats supported by your operating system.
 
    **Windows:**
 
@@ -103,13 +90,9 @@ File Formats
       On Linux systems the player uses GStreamer which supports most common audio formats, although some distributions might exclude some codecs due to
       licensing issues. For the widest format support make sure you install all of the GStreamer plugins available for your distribution.
 
-.. index::
-   single: acoustic fingerprint
-   single: fingerprint; acoustic
-
 **I am using Fedora. Why doesn't acoustic fingerprinting work?**
 
-   Acoustic fingerprinting in Picard uses a tool called ``fpcalc``, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
+   :index:`Acoustic fingerprinting <acoustic fingerprint, fingerprint; acoustic>` in Picard uses a tool called ``fpcalc``, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
    from the `RPM Fusion repository <https://rpmfusion.org/>`_. This functionality is not contained in the main Fedora ``picard`` package because it requires
    the ``ffmpeg`` package which `cannot be distributed by Fedora <https://fedoraproject.org/wiki/Forbidden_items>`_. After `enabling the "rpmfusion-free" RPM
    Fusion repository <https://rpmfusion.org/Configuration>`_, install the package using (as root)::

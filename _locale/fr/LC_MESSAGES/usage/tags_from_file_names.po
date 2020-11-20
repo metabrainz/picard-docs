@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.4.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-09 18:16-0700\n"
-"PO-Revision-Date: 2020-11-10 12:27-0700\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 17:06-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: ../../usage/tags_from_file_names.rst:4
+msgid "Generating :index:`tags from file names`"
+msgstr "Générer des :index:`balises à partir des noms de fichiers`"
 
 #: ../../usage/tags_from_file_names.rst:6
-msgid "Generating tags from file names"
-msgstr "Générer des balises à partir des noms de fichiers"
-
-#: ../../usage/tags_from_file_names.rst:8
 msgid ""
 "Sometimes files have poor quality tags or no tags at all, but the file "
 "names are well structured and follow a pattern. In this case you can "
@@ -37,11 +37,11 @@ msgstr ""
 "\"Outils --> Balises de noms de fichiers...\"` pour générer les balises "
 "à partir des noms de fichiers."
 
-#: ../../usage/tags_from_file_names.rst:14
+#: ../../usage/tags_from_file_names.rst:12
 msgid "Basic usage"
 msgstr "Utilisation de base"
 
-#: ../../usage/tags_from_file_names.rst:16
+#: ../../usage/tags_from_file_names.rst:14
 msgid ""
 "To use this tool, select one or more files loaded into Picard and open "
 "the Tags From File Names dialog from the menu at :menuselection:`\"Tools "
@@ -56,7 +56,7 @@ msgstr ""
 "de noms de fichiers et un champ de saisie en haut où vous pouvez entrer "
 "un modèle correspondant."
 
-#: ../../usage/tags_from_file_names.rst:23
+#: ../../usage/tags_from_file_names.rst:21
 msgid ""
 "The matching pattern can consist of Picard tag names enclosed in ``%`` "
 "signs and other characters that are matched verbatim.  For the tag names "
@@ -73,7 +73,7 @@ msgstr ""
 "pouvez sélectionner quelques modèles prédéfinis, mais vous pouvez "
 "également les ajuster ou définir les vôtres."
 
-#: ../../usage/tags_from_file_names.rst:28
+#: ../../usage/tags_from_file_names.rst:26
 #, python-format
 msgid ""
 "If your files for example consist of a track number and track title "
@@ -91,7 +91,7 @@ msgstr ""
 "le motif doit également inclure ce séparateur, par exemple :samp:`"
 "%tracknumber% - %title%`."
 
-#: ../../usage/tags_from_file_names.rst:33
+#: ../../usage/tags_from_file_names.rst:31
 msgid ""
 "Clicking on the \"Preview\" button next to the matching pattern will "
 "show a preview of the extracted tags for each file name.  Once you are "
@@ -109,11 +109,11 @@ msgstr ""
 "fichiers si vous souhaitez que les balises soient écrites (voir :doc:"
 "`save`)."
 
-#: ../../usage/tags_from_file_names.rst:41
+#: ../../usage/tags_from_file_names.rst:39
 msgid "Matching folders"
 msgstr "Dossiers correspondants"
 
-#: ../../usage/tags_from_file_names.rst:43
+#: ../../usage/tags_from_file_names.rst:41
 msgid ""
 "The pattern can also match the parent folders of the file. To match for "
 "folders use a slash (``/``) as separator.  If for example the file is in "
@@ -130,11 +130,11 @@ msgstr ""
 "vous pouvez faire correspondre l'artiste, album, numéro de piste et "
 "titre avec un modèle de :samp:`%artist%/%album%/%tracknumber% - %title%`."
 
-#: ../../usage/tags_from_file_names.rst:54
+#: ../../usage/tags_from_file_names.rst:52
 msgid "Replace underscores with spaces"
 msgstr "Remplacer les traits de soulignement par des espaces"
 
-#: ../../usage/tags_from_file_names.rst:56
+#: ../../usage/tags_from_file_names.rst:54
 msgid ""
 "Sometimes files have been named without spaces and use underscores "
 "instead.  For example a file could be named :file:`04_Heart_of_Gold."
@@ -151,11 +151,11 @@ msgstr ""
 "samp:`%tracknumber% _%title%` pour extraire correctement le titre en "
 "\"Heart of Gold\"."
 
-#: ../../usage/tags_from_file_names.rst:63
+#: ../../usage/tags_from_file_names.rst:61
 msgid "Ignoring parts of the file name"
 msgstr "Ignorer certaines parties du nom de fichier"
 
-#: ../../usage/tags_from_file_names.rst:65
+#: ../../usage/tags_from_file_names.rst:63
 msgid ""
 "Sometimes you don't want to include parts of the file name in your tags "
 "and just want to ignore them. The pattern must always match the entire "
@@ -175,7 +175,7 @@ msgstr ""
 "fichier pour :doc:`../extending/scripting`, mais ne sera pas écrite dans "
 "les balises réelles du fichier lors de l'enregistrement."
 
-#: ../../usage/tags_from_file_names.rst:71
+#: ../../usage/tags_from_file_names.rst:69
 #, python-format
 msgid ""
 "One example might be if you want to extract only the track number from a "
@@ -199,7 +199,7 @@ msgstr ""
 "est choisi arbitrairement, il suffit de commencer par un trait de "
 "soulignement."
 
-#: ../../usage/tags_from_file_names.rst:80
+#: ../../usage/tags_from_file_names.rst:78
 msgid ""
 "Parsing hidden variables from file names is supported since Picard 2.5.  "
 "Earlier versions would create an actual tag which would get stored to "

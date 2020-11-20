@@ -1,8 +1,4 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
-
 
 Configuration
 =============
@@ -11,11 +7,8 @@ Once Picard has been installed on your system, the next step is to configure it 
 preferences.  The configuration consists of enabling the desired screen sections for display,
 selecting the desired actions, and setting the various options.
 
-.. index::
-   single: configuration; screen setup
-
-Screen Setup
-------------
+:index:`Screen Setup <configuration; screen setup>`
+----------------------------------------------------
 
 The screen setup is found under the :menuselection:`"View"` item on the menu bar.  To enable the display of an
 item, simply check the box for the screen option.  The items are:
@@ -48,13 +41,10 @@ item, simply check the box for the screen option.  The items are:
 
    This displays the built-in player for playing selected audio files.
 
-.. index::
-   single: configuration; action options
-
 .. _action_options:
 
-Action Options
---------------
+:index:`Action Options <configuration; action options>`
+--------------------------------------------------------
 
 The action options are found under the :menuselection:`"Options"` item on the menu bar.  There are three available
 actions that Picard can perform when saving selected music files:
@@ -72,20 +62,18 @@ actions that Picard can perform when saving selected music files:
    Picard will update the metadata tags in the files in accordance with the specified
    option settings and tagging scripts.
 
-.. index::
-   see: option settings; configuration
 
-Option Settings
----------------
+:index:`Option Settings <see: option settings; configuration>`
+---------------------------------------------------------------
 
 The option settings are found under the :menuselection:`"Options --> Options..."` item on the menu bar.  This will open
 a new window with the option groups listed in a tree format on the left hand side, and the individual
 settings on the right hand side.  This is where the majority of Picard's customization is performed.
 
-.. image:: images/options-general.png
-   :width: 100 %
-
 .. only:: html
+
+   .. image:: images/options-general.png
+      :width: 100 %
 
    .. seealso::
 

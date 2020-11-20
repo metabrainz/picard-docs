@@ -1,14 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-
-.. index::
-   single: troubleshooting; macOS shows app is damaged
-
-macOS shows the app is damaged
-===============================
+:index:`macOS shows the app is damaged <troubleshooting; macOS shows app is damaged>`
+======================================================================================
 
 On macOS 10.12 and 10.13 there have been reports that sometimes the MusicBrainz Picard app
 cannot be started and macOS shows an error message:

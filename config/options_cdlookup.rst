@@ -1,14 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-
-CD Lookup Options
-=================
-
-.. index::
-   single: configuration; cd lookup
+:index:`CD Lookup Options <configuration; cd lookup>`
+======================================================
 
 This section allows you to select which CD ROM device to use by default for looking up a CD.
 
