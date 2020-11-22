@@ -44,6 +44,10 @@
       <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>{{ _('Select Version') }}</dt>
+      </dl>
+      <script>list_versions('{{ language }}', '{{ pagename }}');</script>
       <dl>
         <dt>{{ _('Select Language') }}</dt>
         {% if supported_languages %}
@@ -57,9 +61,10 @@
 
       <dl>
         <dt>{{ _('Downloads') }}</dt>
-        <dd><a href="{{ url_root }}../MusicBrainz_Picard_[{{ language }}].pdf" target="_blank" class="__ptNoRemap">{{ _('PDF File') }}</a></dd>
-        <dd><a href="{{ url_root }}../MusicBrainz_Picard_[{{ language }}].epub" target="_blank" class="__ptNoRemap">{{ _('epub File') }}</a></dd>
-        <dd><a href="{{ url_root }}../MusicBrainz_Picard_HTML_[{{ language }}].zip" target="_blank" class="__ptNoRemap">{{ _('HTML Files') }}</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_{{ release }}_[{{ language }}].pdf" target="_blank" class="__ptNoRemap">{{ _('PDF File') }}</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_{{ release }}_[{{ language }}].epub" target="_blank" class="__ptNoRemap">{{ _('epub File') }}</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_{{ release }}_HTML_[{{ language }}].zip" target="_blank" class="__ptNoRemap">{{ _('HTML Files') }}</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">{{ _('Tag Map Spreadsheet') }}</a></dd>
       </dl>
 
     </div>
