@@ -122,7 +122,7 @@ html_theme = "sphinx_rtd_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# html_js_files = ['/version_links.js']
+html_js_files = ['/version_links.js']
 
 html_context = {
     'extra_css_files': [
@@ -130,6 +130,7 @@ html_context = {
     ],
     'default_language': default_language,
     'supported_languages': supported_languages,
+    'release': release,
     'releases': release_list,
 }
 
@@ -149,8 +150,8 @@ latex_documents = [
 # latex_toplevel_sectioning = 'chapter'
 
 # latex_show_urls = 'inline'
-latex_show_urls = 'footnote'
-# latex_show_urls = 'no'
+# latex_show_urls = 'footnote'
+latex_show_urls = 'no'
 
 latex_elements = {
     'papersize': 'letterpaper',
