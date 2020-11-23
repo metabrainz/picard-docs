@@ -1,9 +1,8 @@
-name: Check and Basic Build
+name: Check and Full Build
 
 on:
-  push:
-    branches-ignore:
-      - 'gh-pages'
+  pull_request:
+    branches:
       - 'master'
       - '0*'
       - '1*'
@@ -28,7 +27,7 @@ on:
 
 jobs:
   lint_rst_and_basic_build:
-    name: Check with LintRST and Basic Build
+    name: Check with LintRST and Full Build
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -50,14 +49,16 @@ jobs:
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+    - name: Update Translation Files
+        python ./setup.py build pot
     - name: Build HTML Files
       run: |
         python ./setup.py clean html
-        python ./setup.py build html
+        python ./setup.py -l all build html
     - name: Build EPUB File
       run: |
         python ./setup.py clean epub
-        python ./setup.py build epub
+        python ./setup.py -l all build epub
     - name: Install LaTeX dependencies
       run: |
         sudo apt-get install latexmk
@@ -67,11 +68,11 @@ jobs:
     - name: Build PDF File
       run: |
         python ./setup.py clean pdf
-        python ./setup.py build pdf
+        python ./setup.py -l all build pdf
     - name: Store Build Output Files
         uses: actions/upload-artifact@v2
         with:
-          name: output_files_from_build
+          name: output_files_from_builds
           path: |
             docs/*.zip
             docs/*.pdf
