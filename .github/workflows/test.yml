@@ -54,10 +54,22 @@ jobs:
       run: |
         python ./setup.py clean html
         python ./setup.py build html
+    - name: Store HTML Build Output File
+      uses: actions/upload-artifact@v2
+      with:
+        name: html_files
+        path: docs/*.zip
+        retention-days: 5
     - name: Build EPUB File
       run: |
         python ./setup.py clean epub
         python ./setup.py build epub
+    - name: Store ePub Build Output File
+      uses: actions/upload-artifact@v2
+      with:
+        name: epub_file
+        path: docs/*.epub
+        retention-days: 5
     - name: Install LaTeX dependencies
       run: |
         sudo apt-get install latexmk
@@ -68,13 +80,9 @@ jobs:
       run: |
         python ./setup.py clean pdf
         python ./setup.py build pdf
-    - name: Store Build Output Files
+    - name: Store PDF Build Output File
       uses: actions/upload-artifact@v2
       with:
-        name: output_files_from_build
-        path: |
-          docs/*.zip
-          docs/*.pdf
-          docs/*.epub
-          docs/MusicBrainz_Picard_Tag_Map.*
+        name: pdf_file
+        path: docs/*.pdf
         retention-days: 5
