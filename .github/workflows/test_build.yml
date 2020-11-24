@@ -70,12 +70,12 @@ jobs:
         python ./setup.py clean pdf
         python ./setup.py -l all build pdf
     - name: Store Build Output Files
-        uses: actions/upload-artifact@v2
-        with:
-          name: output_files_from_builds
-          path: |
-            docs/*.zip
-            docs/*.pdf
-            docs/*.epub
-            docs/MusicBrainz_Picard_Tag_Map.*
-          retention-days: 5
+      uses: actions/upload-artifact@v2
+      with:
+        name: output_files_from_builds
+        path: |
+          docs/*.zip
+          docs/*.pdf
+          docs/*.epub
+          docs/MusicBrainz_Picard_Tag_Map.*
+        retention-days: 5
