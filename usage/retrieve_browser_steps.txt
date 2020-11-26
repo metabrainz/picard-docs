@@ -1,0 +1,58 @@
+.. MusicBrainz Picard Documentation Project
+
+.. |retrieve_browser_steps_lookup_tagger| image:: images/mblookup-tagger.png
+   :height: 1em
+
+The steps to follow to :index:`manually lookup an album <lookup in browser>` on MusicBrainz are:
+
+1. Add your files using :menuselection:`"Files --> Add Files..."` or :menuselection:`"Files --> Add Folder..."`.
+   For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is
+   enabled from :menuselection:`"View --> File Browser"`.
+
+   .. image:: images/lookup_1.png
+      :width: 100%
+
+   |
+
+2. Drag the selected directory or files to the "Unclustered Files" folder, and wait for Picard to process the files -
+   the names will turn from grey to black.
+
+   .. image:: images/lookup_2.png
+      :width: 100%
+
+   |
+
+3. Use :menuselection:`"Tools --> Cluster"` to group the files into album clusters if you want lookup a cluster.
+
+   .. image:: images/lookup_3.png
+      :width: 100%
+
+   |
+
+4. Select a file or clustered album and use :menuselection:`"Tools --> Lookup in Browser"` to initiate the search in your
+   browser using the currently available metadata.
+
+   .. image:: images/browser_1.png
+      :width: 100%
+
+   |
+
+5. If you want to revise or refine your search criteria, make the desired changes at the bottom of the web page and click
+   the "Search" button to re-initiate the search.
+
+   .. image:: images/browser_2.png
+      :width: 100%
+
+   |
+
+6. Use the green arrow |retrieve_browser_steps_lookup_tagger| to load the information for a release into Picard.
+
+   .. image:: images/browser_3.png
+      :width: 100%
+
+   |
+
+7. A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track.
+
+   .. image:: images/lookup_5.png
+      :width: 100%

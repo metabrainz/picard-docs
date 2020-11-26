@@ -14,7 +14,7 @@ This Code of Conduct for the MusicBrainz Picard Documentation Project is taken a
 
 6. Respectfully suggest other options. Not everyone wants to reconfigure their directories, change their OS or switch players and formats.
 
-7. Try not to pick fights by [nit-picking](http://www.merriam-webster.com/dictionary/nitpicking) other contributors. Asking for a source or reason (if not provided by the contributor in a contribution) is OK; otherwise you can always submit your own edit to fix small errors or omissions. This is more productive.
+7. Try not to start fights by [nit-picking](http://www.merriam-webster.com/dictionary/nitpicking) other contributors.
 
 8. Use gender neutral language whenever possible. Unless actually talking about genders or specific people, there is no reason to use gendered language. As we touch older work that is not gender neutral, we should make an effort to make it gender neutral.
 

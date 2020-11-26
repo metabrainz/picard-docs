@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:53-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: ../../troubleshooting/no_coverart.rst:8
+msgid "There is no coverart"
+msgstr "Il n'y a pas de pochette"
+
+#: ../../troubleshooting/no_coverart.rst:10
+msgid "There are two different problems that often fall under this topic:"
+msgstr "Il y a deux problèmes différents qui relèvent souvent de ce sujet:"
+
+#: ../../troubleshooting/no_coverart.rst:13
+msgid ""
+":index:`Picard isn't finding and downloading any cover art <troubleshooting; no "
+"cover art downloaded>`"
+msgstr ""
+":index:`Picard ne trouve et ne télécharge aucune pochette <dépannage; aucune "
+"pochette téléchargée>`"
+
+#: ../../troubleshooting/no_coverart.rst:15
+msgid "**No cover art providers have been enabled in the configuration settings**"
+msgstr ""
+"**Aucun fournisseur de pochettes n'a été activé dans les paramètres de "
+"configuration**"
+
+#: ../../troubleshooting/no_coverart.rst:17
+msgid ""
+"Confirm that the :menuselection:`\"Options --> Options... --> Cover Art\"` "
+"settings have at least one cover art provider enabled.  Please see the :doc:`../"
+"config/options_cover_art_providers` section for more information."
+msgstr ""
+"Confirmez que les paramètres :menuselection:`\"Options --> Options... --> Cover "
+"Art\"` ont au moins un fournisseur de jaquettes activé. Veuillez consulter la "
+"section :doc:`../config/options_cover_art_providers` pour plus d'informations."
+
+#: ../../troubleshooting/no_coverart.rst:20
+msgid "**There is no cover art available from the selected providers**"
+msgstr "**Aucune pochette n'est disponible auprès des fournisseurs sélectionnés**"
+
+#: ../../troubleshooting/no_coverart.rst:22
+msgid ""
+"It's possible that the selected release does not have any cover art available "
+"from the enabled cover art providers. If a cover art image is displayed for the "
+"release on the MusicBrainz website, it is possible that the image for the "
+"release group is being displayed, or it is being provided through a third-party "
+"provider agreement.  Sometimes this can be addressed by enabling the \"CAA "
+"Release Group\" and \"Allowed cover art URLs\" provider options."
+msgstr ""
+"Il est possible que la version sélectionnée ne dispose d'aucune pochette "
+"disponible auprès des fournisseurs de pochettes activés. Si une image de "
+"couverture est affichée pour la version sur le site Web MusicBrainz, il est "
+"possible que l'image du groupe de versions soit affichée ou qu'elle soit "
+"fournie par le biais d'un accord de fournisseur tiers. Parfois, cela peut être "
+"résolu en activant les options de fournisseur \"Groupe de versions CAA\" et "
+"\"URL de couvertures autorisées\"."
+
+#: ../../troubleshooting/no_coverart.rst:28
+msgid "**The selected provider is not currently available**"
+msgstr "**Le fournisseur sélectionné n'est pas disponible actuellement**"
+
+#: ../../troubleshooting/no_coverart.rst:30
+msgid ""
+"On occasion, the server providing the cover art (e.g.: archive.org) is not "
+"available, or mirror servers have not yet been synchronized with the latest "
+"updates.  In this case, you may have to wait for a few minutes before retrying "
+"your request. Reviewing the details in Picard's log often provides some insight "
+"into whether or not this is the issue."
+msgstr ""
+"Parfois, le serveur fournissant la pochette (par exemple: archive.org) n'est "
+"pas disponible ou les serveurs miroir n'ont pas encore été synchronisés avec "
+"les dernières mises à jour. Dans ce cas, vous devrez peut-être attendre "
+"quelques minutes avant de réessayer votre demande. L'examen des détails dans le "
+"journal de Picard permet souvent de déterminer si c'est le problème ou non."
+
+#: ../../troubleshooting/no_coverart.rst:35
+msgid "**The cover art is still a pending edit**"
+msgstr "**La pochette est toujours en attente de modification**"
+
+#: ../../troubleshooting/no_coverart.rst:37
+msgid ""
+"If the cover art was recently added, the edit adding the image may not have "
+"been accepted and applied yet. You can have Picard use the cover art from "
+"pending edits by disabling the \"Download only approved images\" option in the "
+"Cover Art Archives subsection of the :menuselection:`\"Options --> Options... --"
+"> Cover Art\"` settings.  Please see the :doc:`../config/"
+"options_cover_art_archive` section for more information."
+msgstr ""
+"Si la pochette a été ajoutée récemment, la modification ajoutant l'image n'a "
+"peut-être pas encore été acceptée et appliquée. Vous pouvez demander à Picard "
+"d'utiliser la pochette des modifications en attente en désactivant l'option "
+"\"Télécharger uniquement les images approuvées\" dans la sous-section Archives "
+"de la pochette des paramètres :menuselection:`\"Options --> Options... --> Art "
+"de couverture\"`. Veuillez consulter la section :doc:`../config/"
+"options_cover_art_archive` pour plus d'informations."
+
+#: ../../troubleshooting/no_coverart.rst:44
+msgid ""
+":index:`Coverart that is saved with the files isn't displayed <troubleshooting; "
+"no cover art displayed>`"
+msgstr ""
+":index:`La couverture enregistrée avec les fichiers n'est pas affichée "
+"<dépannage; aucune pochette affichée>`"
+
+#: ../../troubleshooting/no_coverart.rst:46
+msgid "**Player doesn't support embedded cover art**"
+msgstr "**Le lecteur ne prend pas en charge la pochette intégrée**"
+
+#: ../../troubleshooting/no_coverart.rst:48
+msgid ""
+"Check to confirm that your player supports embedded cover art images.  That "
+"support is not universal among all players.  Some players support embedded "
+"images, some support images stored as files in the directory (e.g.: \"cover.jpg"
+"\" or \"folder.jpg\"), and some support both. Picard allows you to specify how "
+"the cover art images should be saved.  Please see the :doc:`../config/"
+"options_location` section of the Coverart options for details."
+msgstr ""
+"Vérifiez que votre lecteur prend en charge les images de couverture intégrées. "
+"Ce soutien n'est pas universel parmi tous les acteurs. Certains lecteurs "
+"prennent en charge les images intégrées, certains prennent en charge les images "
+"stockées sous forme de fichiers dans le répertoire (par exemple: \"cover.jpg\" "
+"ou \"folder.jpg\"), et certains prennent en charge les deux. Picard vous permet "
+"de spécifier comment les images de la pochette doivent être enregistrées. "
+"Veuillez consulter la section :doc:`../config/options_location` des options de "
+"Coverart pour plus de détails."
+
+#: ../../troubleshooting/no_coverart.rst:53
+msgid ""
+"You should also confirm that your player supports the version of the tags being "
+"written."
+msgstr ""
+"Vous devez également confirmer que votre lecteur prend en charge la version des "
+"balises en cours d'écriture."
+
+#: ../../troubleshooting/no_coverart.rst:57
+msgid ""
+"For more information please see: :doc:`../config/"
+"options_tags_compatibility_aac` / :doc:`../config/"
+"options_tags_compatibility_ac3` / :doc:`../config/"
+"options_tags_compatibility_id3` / :doc:`../config/"
+"options_tags_compatibility_wave`"
+msgstr ""
+"Pour plus d'informations, veuillez consulter: :doc:`../config/"
+"options_tags_compatibility_aac` / :doc:`../config/"
+"options_tags_compatibility_ac3` / :doc:`../config/"
+"options_tags_compatibility_id3` / :doc:`../config/"
+"options_tags_compatibility_wave`"
+
+#: ../../troubleshooting/no_coverart.rst:63
+msgid "**Embedded cover image too large**"
+msgstr "**Image de couverture intégrée trop grande**"
+
+#: ../../troubleshooting/no_coverart.rst:65
+msgid ""
+"Even if your cover art image has been properly embedded in the file, it's "
+"possible that your player has trouble dealing with embedded images over a "
+"certain size.  If all else fails, you might try using an image with a smaller "
+"file size."
+msgstr ""
+"Même si votre image de couverture a été correctement intégrée dans le fichier, "
+"il est possible que votre lecteur rencontre des difficultés avec les images "
+"intégrées dépassant une certaine taille. Si tout le reste échoue, vous pouvez "
+"essayer d'utiliser une image avec une taille de fichier plus petite."

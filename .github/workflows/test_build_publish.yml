@@ -1,26 +1,39 @@
-name: Check, Build and Publish Files
+name: Check, Full Build and Publish
 
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
   push:
     branches:
       - 'master'
-    paths-ignore:
-      - '.github/**'
-      - 'locale/gettext/**'
-      - 'LICENSE'
-      - '*.md'
+      - '0*'
+      - '1*'
+      - '2*'
+      - '3*'
+      - '4*'
+      - '5*'
+      - '6*'
+      - '7*'
+      - '8*'
+      - '9*'
+    paths:
+      - '**.po'
+      - '**.rst'
+      - '**.txt'
+      - '**/images/*'
+      - '_static/**'
+      - '_templates/**'
+      - '.github/workflows/*.yml'
+      - 'setup.py'
+      - 'conf.py'
 
 jobs:
-  lint_rst:
-    name: Check with LintRST
+  lint_rst_and_full_build_and_publish:
+    name: Check with LintRST, Full Build and Publish
     runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: [3.7]
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
@@ -29,44 +42,34 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Test RST Files
+    - name: Lint Test RST Files
       run: python ./setup.py test rst
-
-  build_files:
-    name: Build and publish output files
-    needs: lint_rst
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.7]
-    steps:
-    - uses: actions/checkout@v1
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
+    - name: Setup for Build
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+    - name: Update Translation Files
+      run: |
+        python ./setup.py build pot
     - name: Build HTML Files
       run: |
+        python ./setup.py clean html
         python ./setup.py -l all build html
+    - name: Build EPUB File
+      run: |
+        python ./setup.py clean epub
+        python ./setup.py -l all build epub
     - name: Install LaTeX dependencies
       run: |
         sudo apt-get install latexmk
         sudo apt-get install xzdec
         sudo apt-get install texlive
         sudo apt-get install texlive-latex-extra
-    - name: Build PDF Files
+    - name: Build PDF File
       run: |
+        python ./setup.py clean pdf
         python ./setup.py -l all build pdf
-    - name: Build EPUB Files
-      run: |
-        python ./setup.py -l all build epub
     - name: Update gh-pages branch
       run: |
         git config --global user.name "${GITHUB_ACTOR}"

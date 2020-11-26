@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:11-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: ../../config/options_network.rst:4
+msgid ":index:`Network <configuration; network>`"
+msgstr ":index:`Réseau <configuration; réseau>`"
+
+#: ../../config/options_network.rst:9
+msgid "**Web Proxy**"
+msgstr "**Proxy Web**"
+
+#: ../../config/options_network.rst:11
+msgid ""
+"If you need a proxy to make an outside network connection you may "
+"specify one here.  You can choose between HTTP and SOCKS proxy.  The "
+"required settings are **Server Address** and **Port**. If the proxy "
+"requires authentication also enter **Username** and **Password**."
+msgstr ""
+"Si vous avez besoin d'un proxy pour établir une connexion réseau "
+"externe, vous pouvez en spécifier un ici. Vous pouvez choisir entre le "
+"proxy HTTP et SOCKS. Les paramètres requis sont **Adresse du serveur** "
+"et **Port**. Si le proxy requiert une authentification, saisissez "
+"également **Nom d'utilisateur** et **Mot de passe**."
+
+#: ../../config/options_network.rst:15
+msgid "**Request timeout in seconds**"
+msgstr "**Demander un délai d'expiration en secondes**"
+
+#: ../../config/options_network.rst:17
+msgid ""
+"By default Picard will abort running network requests after 30 seconds "
+"of inactivity.  If needed you can change the timeout period here."
+msgstr ""
+"Par défaut, Picard abandonnera les requêtes réseau en cours après 30 "
+"secondes d'inactivité. Si nécessaire, vous pouvez modifier le délai "
+"d'expiration ici."
+
+#: ../../config/options_network.rst:23
+msgid "**Browser Integration**"
+msgstr "**Intégration du navigateur**"
+
+#: ../../config/options_network.rst:25
+msgid ""
+"The browser integration allows you to load releases and recordings into "
+"Picard directly from the MusicBrainz website. Once you have opened "
+"musicbrainz.org in your browser from Picard, the website will show the "
+"green tagger button |lookup_tagger| next to releases and recordings.  "
+"Clicking on this button will load the corresponding release or recording "
+"into Picard."
+msgstr ""
+"L'intégration du navigateur vous permet de charger des versions et des "
+"enregistrements dans Picard directement à partir du site Web "
+"MusicBrainz. Une fois que vous avez ouvert musicbrainz.org dans votre "
+"navigateur depuis Picard, le site Web affichera le bouton tagger vert |"
+"lookup_tagger| à côté des sorties et des enregistrements. Cliquer sur ce "
+"bouton chargera la version ou l'enregistrement correspondant dans Picard."
+
+#: ../../config/options_network.rst:30
+msgid "**Default listening port**"
+msgstr "**Port d'écoute par défaut**"
+
+#: ../../config/options_network.rst:32
+msgid ""
+"This identifies the default port Picard will listen on for the browser "
+"integration. If the port is not available Picard will try to increase "
+"the port number by one until it finds a free port."
+msgstr ""
+"Cela identifie le port par défaut que Picard écoutera pour l'intégration "
+"du navigateur. Si le port n'est pas disponible, Picard essaiera "
+"d'augmenter le numéro de port de un jusqu'à ce qu'il trouve un port "
+"libre."
+
+#: ../../config/options_network.rst:35
+msgid "**Listen only on localhost**"
+msgstr "**Écoutez uniquement sur localhost**"
+
+#: ../../config/options_network.rst:37
+msgid ""
+"By default Picard will limit access to the browser integration port to "
+"your local machine. Deactivating this option will expose the port on "
+"your network, allowing you to request Picard to load a specific release "
+"or recording via the network. For example, this would be used for the "
+"`Picard Barcode Scanner <https://play.google.com/store/apps/details?"
+"id=org.musicbrainz.picard.barcodescanner>`_ Android app."
+msgstr ""
+"Par défaut, Picard limitera l'accès au port d'intégration du navigateur "
+"à votre machine locale. La désactivation de cette option exposera le "
+"port sur votre réseau, vous permettant de demander à Picard de charger "
+"une version ou un enregistrement spécifique via le réseau. Par exemple, "
+"cela serait utilisé pour l'application `Picard Barcode Scanner <https://"
+"play.google.com/store/apps/details?id=org.musicbrainz.picard."
+"barcodescanner>`_ pour Android."
+
+#: ../../config/options_network.rst:45
+msgid ""
+"Only expose the port externally when you actually need it and only on "
+"networks you trust. Exposing application ports via the network can open "
+"potential security holes on your system."
+msgstr ""
+"N'exposez le port en externe que lorsque vous en avez réellement besoin "
+"et uniquement sur les réseaux de confiance. L'exposition des ports "
+"d'application via le réseau peut ouvrir des failles de sécurité "
+"potentielles sur votre système."
+
+#~ msgid "Network"
+#~ msgstr "Réseau"

@@ -47,7 +47,7 @@ version = release
 default_language = 'en'
 supported_languages = [
     ('en', 'English'),
-    # ('fr', 'Française'),
+    ('fr', 'Française'),
     # ('de', 'Deutsche'),
     # ('es', 'Española'),
 ]
@@ -70,6 +70,7 @@ master_doc = 'index'
 # ones.
 extensions = [
     "recommonmark",
+    "notfound.extension",
     # "sphinx_rtd_theme",
     # "picard_theme",
 ]
@@ -82,12 +83,14 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     '_build',
+    '_images',
+    '_ignored',
+    '_locale',
     'Thumbs.db',
     '.DS_Store',
     'README.md',
     'html',
     'docs',
-    'locale',
     '.git',
     '.github',
     'images',
@@ -100,7 +103,7 @@ exclude_patterns = [
 # -- Options for Internationalization ----------------------------------------
 
 language = default_language
-locale_dirs = ['locale']
+locale_dirs = ['_locale']
 gettext_compact = False
 # gettext_compact = True
 
@@ -128,6 +131,7 @@ html_context = {
     ],
     'default_language': default_language,
     'supported_languages': supported_languages,
+    'release': release,
     'releases': release_list,
 }
 
@@ -147,8 +151,8 @@ latex_documents = [
 # latex_toplevel_sectioning = 'chapter'
 
 # latex_show_urls = 'inline'
-latex_show_urls = 'footnote'
-# latex_show_urls = 'no'
+# latex_show_urls = 'footnote'
+latex_show_urls = 'no'
 
 latex_elements = {
     'papersize': 'letterpaper',
@@ -179,7 +183,7 @@ epub_contributor = 'Members of the MusicBrainz Community'
 
 epub_uid = 'MusicBrainzPicardUserGuide'
 
-epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
+# epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
 # epub_cover = ('_static/epub_cover.png', '')
 
 # epub_show_urls = 'inline'
@@ -187,3 +191,82 @@ epub_show_urls = 'footnote'
 # epub_show_urls = 'no'
 
 epub_use_index = True
+
+# -- Options for custom 404 page --------------------------------------
+
+# sphinx-notfound-page
+# https://github.com/readthedocs/sphinx-notfound-page
+
+notfound_template = 'custom_404.html'
+notfound_title = 'Page Not Found'
+notfound_text_1 = "We're sorry but we are unable to find the requested page. Please use the table " \
+    + "of contents or the search box in the left-hand sidebar to locate your topic."
+notfound_text_2 = "If you believe that you have received this message in error, please report it on " \
+    + "the <a href='https://github.com/rdswift/picard-docs/issues/new/choose' " \
+    + "target='_blank'>documentation project site</a>.  Thanks."
+notfound_script = r'''
+<script>
+    var target_language = 'en';
+    var target_version = 'latest';
+    var src_host = window.location.hostname;
+    var src_protocol = window.location.protocol;
+    var src_path = window.location.pathname;
+    var src_path_parts = src_path.split('/');
+    var target_path = '';
+    var target_url = src_protocol + '//' + src_host + '/en/latest/not_found.html';
+
+    const re_language = /^[a-z][a-z](-[A-Z][A-Z])?$/;
+    const re_version_1 = /^[0-9][0-9\.]*$/;
+    const re_version_2 = /^(latest|stable)$/;
+    const re_version_3 = /^v[0-9][0-9\.]*$/;
+
+    function is_language(test_language) {
+        if (test_language.search(re_language) < 0) {
+            return false
+        }
+        target_language = test_language;
+        return true;
+    }
+
+    function is_rtd_version(test_version) {
+        return ((test_version.search(re_version_1) >= 0) || (test_version.search(re_version_2) >= 0));
+    }
+
+    function is_version(test_version) {
+        if (test_version.search(re_version_3) < 0) {
+            return false;
+        }
+        target_version = test_version.substring(1, 1000);
+        return true;
+    }
+
+    function test_url() {
+        var counter = 1;
+        if ((is_language(src_path_parts[counter])) && (is_rtd_version(src_path_parts[counter + 1]))) {
+            return true;
+        }
+        if (is_version(src_path_parts[counter])) {
+            counter += 1;
+        }
+        if (counter < src_path_parts.length) {
+            if (is_language(src_path_parts[counter])) {
+                target_path += '/' + target_language + '/' + target_version;
+                counter += 1;
+                while (counter < src_path_parts.length) {
+                    target_path += '/' + src_path_parts[counter];
+                    counter += 1;
+                }
+                target_url = src_protocol + '//' + src_host + target_path;
+                document.getElementById('content').innerHTML = '<p>The page may have been moved to <a href="' + target_url + '">' + target_url + '</a>.</p>';
+                window.location.replace(target_url);
+            }
+        }
+    }
+
+    test_url();
+</script>
+'''
+notfound_context = {
+    'title': notfound_title,
+    'body': "\n<h1>" + notfound_title + "</h1>\n<p>\n" + notfound_text_1 + "\n</p>\n<div id='content'></div>\n<p>\n" + notfound_text_2 + "\n</p>\n" + notfound_script,
+}

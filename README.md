@@ -13,7 +13,7 @@ visit [https://creativecommons.org/publicdomain/zero/1.0](https://creativecommon
 The project currently produces the on-line documentation in [ReadTheDocs](https://readthedocs.org)
 format theme using [Sphinx](https://www.sphinx-doc.org/). Stand-alone PDF and ePub documents are also being
 produced.  The latest build of the documentation produced by this initiative can be viewed on the
-[web page](https://picard-docs.musicbrainz.org/index.html).
+[web page](https://picard-docs.musicbrainz.org/).
 
 ## Contributing to the Documentation
 

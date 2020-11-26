@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-08 14:54-0600\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: ../../functions/func_slice.rst:7
+msgid "$slice"
+msgstr "$slice"
+
+#: ../../functions/func_slice.rst:9
+msgid "Usage: **$slice(name,start,end[,separator])**"
+msgstr "Utilisation: **$slice(nom,début,fin[,séparateur])**"
+
+#: ../../functions/func_slice.rst:10
+msgid "Category: multi-value"
+msgstr "Catégorie: multi-valeur"
+
+#: ../../functions/func_slice.rst:11
+msgid "Implemented: Picard 2.3"
+msgstr "Mis en œuvre: Picard 2.3"
+
+#: ../../functions/func_slice.rst:13
+msgid "**Description:**"
+msgstr "**La description:**"
+
+#: ../../functions/func_slice.rst:15
+msgid ""
+"Returns a multi-value variable containing the elements from the "
+"``start`` index up to but not including the ``end`` index from the multi-"
+"value variable ``name``. A literal value representing a multi-value can "
+"be substituted for ``name``, using the ``separator`` (or a semicolon "
+"followed by a space \"; \" if not passed) to coerce the value into a "
+"proper multi-valued variable."
+msgstr ""
+"Renvoie une variable à valeurs multiples contenant les éléments de "
+"l'index ``début`` jusqu'à mais sans inclure l'index ``fin`` de la "
+"variable à valeurs multiples ``nom``. Une valeur littérale représentant "
+"une valeur multiple peut être remplacée par ``nom``, en utilisant le "
+"``séparateur`` (ou un point-virgule suivi d'un espace \"; \" s'il n'est "
+"pas passé) pour contraindre la valeur à une valeur multiple appropriée "
+"variable."
+
+#: ../../functions/func_slice.rst:21
+msgid ""
+"Indexes are zero based. Negative numbers will be counted back from the "
+"number of elements in the list. If the ``start`` or ``end`` indexes are "
+"left blank, they will default to 0 and the number of elements in the "
+"list respectively."
+msgstr ""
+"Les index sont basés sur zéro. Les nombres négatifs seront comptés à "
+"partir du nombre d'éléments de la liste. Si les index ``début`` ou "
+"``fin`` sont laissés vides, ils seront par défaut à 0 et au nombre "
+"d'éléments dans la liste respectivement."
+
+#: ../../functions/func_slice.rst:25
+msgid ""
+"A typical use might be to create a multi-value variable with all artists "
+"in ``%artists%`` except the first, which can be used to create a \"feat."
+"\" list.  This would look something like ``$setmulti(supporting_artists,"
+"$slice(%artists%,1,))``."
+msgstr ""
+"Une utilisation typique pourrait être de créer une variable à valeurs "
+"multiples avec tous les artistes dans ``%artists%`` sauf le premier, qui "
+"peut être utilisé pour créer un \"feat.\" liste. Cela ressemblerait à "
+"quelque chose comme ``$setmulti(support_artists,$slice(%artists%,1,))``."
+
+#: ../../functions/func_slice.rst:30
+msgid "**Example:**"
+msgstr "**Exemple:**"
+
+#: ../../functions/func_slice.rst:32
+msgid "The following statements will return the values indicated::"
+msgstr "Les instructions suivantes renverront les valeurs indiquées::"

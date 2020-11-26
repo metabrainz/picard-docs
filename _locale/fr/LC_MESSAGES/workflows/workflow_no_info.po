@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 17:49-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: ../../workflows/workflow_no_info.rst:4
+msgid ""
+":index:`When files are not grouped and have little or no existing "
+"metadata <workflows; no metadata>`"
+msgstr ""
+":index:`Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de "
+"métadonnées existantes <pas de métadonnées>`"
+
+#: ../../workflows/workflow_no_info.rst:6
+msgid ""
+"This is perhaps the worst case scenario, because it provides the "
+"greatest chance of tagging your music files with an incorrect match from "
+"the MusicBrainz database."
+msgstr ""
+"C'est peut-être le pire des cas, car il offre les meilleures chances de "
+"marquer vos fichiers musicaux avec une correspondance incorrecte de la "
+"base de données MusicBrainz."
+
+#: ../../workflows/workflow_no_info.rst:9
+msgid ""
+"In this situation, you will need to feed batches of files to Picard to "
+"process.  In order to minimize the performance impact, it is recommended "
+"to keep the batches relatively small (i.e.: approximately 200 files at "
+"most in a single batch).  Picard will try to group them into clusters "
+"based on their AcoustID fingerprints."
+msgstr ""
+"Dans cette situation, vous devrez envoyer des lots de fichiers à Picard "
+"pour les traiter. Afin de minimiser l'impact sur les performances, il "
+"est recommandé de garder les lots relativement petits (c'est-à-dire: "
+"environ 200 fichiers au maximum dans un seul lot). Picard essaiera de "
+"les regrouper en groupes en fonction de leurs empreintes digitales "
+"AcoustID."
+
+#: ../../workflows/workflow_no_info.rst:15
+msgid ""
+"This workflow will likely only partially match the files to a release in "
+"each batch processed.  This means that an album may not be fully "
+"matched, tagged and renamed until multiple batches have been processed."
+msgstr ""
+"Ce flux de travail ne fera probablement correspondre que partiellement "
+"les fichiers à une version dans chaque lot traité. Cela signifie qu'un "
+"album peut ne pas être entièrement mis en correspondance, étiqueté et "
+"renommé tant que plusieurs lots n'ont pas été traités."
+
+#: ../../workflows/workflow_no_info.rst:18
+msgid "**1. Load the files**"
+msgstr "**1. Chargez les fichiers**"
+
+#: ../../workflows/workflow_no_info.rst:20
+msgid ""
+"Drag the batch of files to process from the browser to the \"Unclustered "
+"Files\" section in the left-hand pane."
+msgstr ""
+"Faites glisser le lot de fichiers à traiter du navigateur vers la "
+"section \"Fichiers non groupés\" dans le volet de gauche."
+
+#: ../../workflows/workflow_no_info.rst:23
+msgid "**2. Scan the files**"
+msgstr "**2. Analyser les fichiers**"
+
+#: ../../workflows/workflow_no_info.rst:25
+msgid ""
+"Select the files in the left-hand pane and scan them using the :"
+"menuselection:`Tools --> Scan\"` command. Picard will attempt to "
+"calculate the AcoustID fingerprint for each of the files and then "
+"retrieve releases with matching recordings.  See the :doc:`../usage/"
+"retrieve_scan` section for details."
+msgstr ""
+"Sélectionnez les fichiers dans le volet de gauche et scannez-les à "
+"l'aide de la commande :menuselection:`\"Outils --> Analyser\"`. Picard "
+"tentera de calculer l'empreinte digitale AcoustID pour chacun des "
+"fichiers, puis récupérera les versions avec les enregistrements "
+"correspondants. Voir le section :doc:`../usage/retrieve_scan` pour plus "
+"de détails."
+
+#: ../../workflows/workflow_no_info.rst:29
+msgid "**3. Match the files to the tracks on the release**"
+msgstr "**3. Faites correspondre les fichiers aux pistes de la version**"
+
+#: ../../workflows/workflow_no_info.rst:31
+msgid ""
+"Drag the files from the left-hand pane and drop them on the release in "
+"the right-hand pane.  Check that each track on the release is associated "
+"with only one file.  The release icon will likely remain silver, "
+"indicating that not all tracks have been matched to files.  See the :doc:"
+"`../usage/match` section for details."
+msgstr ""
+"Faites glisser les fichiers du volet de gauche et déposez-les sur la "
+"version dans le volet de droite. Vérifiez que chaque piste de la version "
+"est associée à un seul fichier. L'icône de version restera probablement "
+"argentée, indiquant que toutes les pistes n'ont pas été associées aux "
+"fichiers. Voir la section :doc:`../usage/match` pour plus de détails."
+
+#: ../../workflows/workflow_no_info.rst:36
+msgid "**4. Verify the metadata and cover art**"
+msgstr "**4. Vérifiez les métadonnées et la pochette**"
+
+#: ../../workflows/workflow_no_info.rst:38
+msgid ""
+"Check that the metadata and cover art image for the release and tracks "
+"are what you want.  Adjust if required. See the :doc:`../usage/coverart` "
+"section for details."
+msgstr ""
+"Vérifiez que les métadonnées et l'image de la pochette de la version et "
+"des pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la "
+"section :doc:`../usage/coverart` pour plus de détails."
+
+#: ../../workflows/workflow_no_info.rst:42
+msgid "**5. Save the files**"
+msgstr "**5. Enregistrez les fichiers**"
+
+#: ../../workflows/workflow_no_info.rst:44
+msgid ""
+"Save the files using the :menuselection:`\"File --> Save\"` command.  "
+"See the :doc:`../usage/save` section for details."
+msgstr ""
+"Enregistrez les fichiers à l'aide de la commande :menuselection:`"
+"\"Fichier --> Enregistrer\"`. Voir la section :doc:`../usage/save` pour "
+"plus de détails."

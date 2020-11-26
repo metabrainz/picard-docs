@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-16 18:38-0600\n"
+"PO-Revision-Date: 2020-10-08 14:21-0600\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: ../../functions/func_getmulti.rst:7
+msgid "$getmulti"
+msgstr "$getmulti"
+
+#: ../../functions/func_getmulti.rst:9
+msgid "Usage: **$getmulti(name,index[,separator])**"
+msgstr "Utilisation: **$getmulti(nom,index[,séparateur])**"
+
+#: ../../functions/func_getmulti.rst:10
+msgid "Category: multi-value"
+msgstr "Catégorie: multi-valeur"
+
+#: ../../functions/func_getmulti.rst:11
+msgid "Implemented: Picard 2.3"
+msgstr "Mis en œuvre: Picard 2.3"
+
+#: ../../functions/func_getmulti.rst:13
+msgid "**Description:**"
+msgstr "**La description:**"
+
+#: ../../functions/func_getmulti.rst:15
+msgid ""
+"Gets the element at ``index`` from the multi-value variable ``name``. A "
+"literal value representing a multi-value can be substituted for "
+"``name``, using the ``separator`` (or a semicolon followed by a space "
+"\"; \" if not passed) to coerce the value into a proper multi-value "
+"variable."
+msgstr ""
+"Obtient l'élément à ``index`` à partir de la variable à valeurs "
+"multiples ``nom``. Une valeur littérale représentant une valeur multiple "
+"peut être remplacée par ``nom``, en utilisant le ``séparateur`` (ou un "
+"point-virgule suivi d'un espace \"; \" s'il n'est pas passé) pour forcer "
+"la valeur en une valeur multiple appropriée variable."
+
+#: ../../functions/func_getmulti.rst:20
+msgid ""
+"The ``index`` is zero based.   If ``index`` is less than 0, then the "
+"value used is the number of elements in ``name`` plus ``index`` (e.g.: ``"
+"$getmulti(%abcd%,-1)`` is the same as ``$getmulti(%abcd%,3)`` if ``%abcd"
+"%`` is a multi-value variable with four elements).  If ``index`` is "
+"missing, not an integer, a number greater than or equal to the number of "
+"elements in ``name``, or a negative number greater than the number of "
+"elements in ``name``, then the function will return an empty string."
+msgstr ""
+"L'``index`` est basé sur zéro. Si ``index`` est inférieur à 0, alors la "
+"valeur utilisée est le nombre d'éléments dans ``nom`` plus ``index`` "
+"(par exemple: ``$getmulti(%abcd%,-1)`` est identique à ``$getmulti(%abcd"
+"%,3)`` si ``%abcd%`` est une variable à valeurs multiples avec quatre "
+"éléments). Si ``index`` est manquant, pas un entier, un nombre supérieur "
+"ou égal au nombre d'éléments dans ``nom``, ou un nombre négatif "
+"supérieur au nombre d'éléments dans ``nom``, alors le fonction "
+"retournera une chaîne vide."
+
+#: ../../functions/func_getmulti.rst:28
+msgid "**Example:**"
+msgstr "**Exemple:**"
+
+#: ../../functions/func_getmulti.rst:30
+msgid "The following statements will return the values indicated::"
+msgstr "Les instructions suivantes renverront les valeurs indiquées::"
