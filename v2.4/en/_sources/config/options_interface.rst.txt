@@ -10,7 +10,7 @@ User Interface Options
 .. index::
    pair: configuration; user interface
 
-.. image:: ../images/options-interface.png
+.. image:: images/options-interface.png
    :width: 100 %
 
 **Show text labels under icon**
@@ -20,10 +20,15 @@ User Interface Options
 
 **Allow selection of multiple directories**
 
-    Enabling this option will bypass the native directory selector and use QT's file dialog.  This
+    Enabling this option will bypass the native directory selector and use Qt's file dialog.  This
     may be desirable since the native directory selector generally doesn't allow you to select more
     than one directory. This applies to the :menuselection:`"File --> Add folder"` dialog. The file
     browser always allows multiple directory selection.
+
+**Use built-in search rather than looking in browser**
+
+    When this option is enabled the search for albums, artists or tracks will show the results in a dialog.
+    By default this option is disabled and Picard will open a search on MusicBrainz.org in your default web browser.
 
 **Use advanced query syntax**
 

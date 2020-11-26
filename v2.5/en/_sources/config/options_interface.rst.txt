@@ -10,7 +10,7 @@ User Interface Options
 .. index::
    pair: configuration; user interface
 
-.. image:: ../images/options-interface.png
+.. image:: images/options-interface.png
    :width: 100 %
 
 **Show text labels under icon**

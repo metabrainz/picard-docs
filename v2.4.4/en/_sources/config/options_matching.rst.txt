@@ -10,7 +10,7 @@ Matching
 .. index::
    single: configuration; matching preferences
 
-.. image:: ../images/options-matching.png
+.. image:: images/options-matching.png
    :width: 100 %
 
 It is recommended for most users to leave these settings at their default values. For advanced users,

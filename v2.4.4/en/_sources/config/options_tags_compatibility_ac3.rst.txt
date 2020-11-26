@@ -10,7 +10,7 @@ AC3 Files
 .. index::
    single: configuration; ac3 tag options
 
-.. image:: ../images/options-tags-compatibility-ac3.png
+.. image:: images/options-tags-compatibility-ac3.png
    :width: 100 %
 
 Picard can save APEv2 tags to pure AC3 files, which by default do not support tagging. APEv2 tags in AC3

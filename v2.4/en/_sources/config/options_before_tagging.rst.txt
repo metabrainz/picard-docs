@@ -12,7 +12,7 @@ Before Tagging
 
 .. only:: html
 
-   .. image:: ../images/options-tags.png
+   .. image:: images/options-tags.png
       :width: 100 %
 
 **Clear existing tags**

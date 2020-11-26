@@ -6,6 +6,8 @@
 
 .. Master File for Building HTML Documents
 
+:orphan:
+
 MusicBrainz Picard
 ==================
 
@@ -22,14 +24,15 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 ..    For quick access to a particular topic, please use the search box or the :ref:`topic index <genindex>`.
 
+
 .. toctree::
    :caption: About Picard
    :hidden:
 
-   introduction
-   contributing
-   acknowledgements
-   glossary
+   about_picard/introduction
+   about_picard/contributing
+   about_picard/acknowledgements
+   about_picard/glossary
 
 
 .. toctree::
@@ -41,7 +44,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    getting_started/status_icons
    config/configuration
    variables/variables
-   scripting
+   extending/scripting
    functions/list_by_type
 
 .. toctree::
@@ -74,6 +77,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    troubleshooting/missing_tags
    troubleshooting/not_saving
    troubleshooting/stopped_working
+   troubleshooting/macos_startup_error
 
 
 .. toctree::
@@ -82,9 +86,9 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :maxdepth: 0
    :titlesonly:
 
-   technical/plugins_api
-   technical/tag_mapping
-   technical/command_line
+   appendices/plugins_api
+   appendices/tag_mapping
+   appendices/command_line
 
 ..   examples/examples
 
@@ -95,4 +99,3 @@ plugins and tutorials are provided when available rather than trying to reproduc
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 .. * :ref:`search`
-

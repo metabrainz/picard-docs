@@ -10,7 +10,7 @@ Top Tags
 .. index::
    single: configuration; top tags
 
-.. image:: ../images/options-interface-top-tags.png
+.. image:: images/options-interface-top-tags.png
    :width: 100 %
 
 The tags specified in this option setting will always be shown in the specified order at the top of the

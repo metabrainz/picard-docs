@@ -11,7 +11,7 @@ Scripting Options
    single: configuration; scripting
    single: scripts; tagging
 
-.. image:: ../images/options-scripting.png
+.. image:: images/options-scripting.png
    :width: 100 %
 
 This section allows for the management of user-defined tagging scripts.
@@ -25,4 +25,4 @@ add, remove and reorder the scripts, enable or disable individual scripts, as we
 currently selected script.
 
 For additional information about scripting please see the ":doc:`Scripts <../extending/scripts>`"
-and ":doc:`Scripting <../scripting>`" sections, as well as ":doc:`Tags & Variables <../variables/variables>`".
+and ":doc:`Scripting <../extending/scripting>`" sections, as well as ":doc:`Tags & Variables <../variables/variables>`".

@@ -1,0 +1,542 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MusicBrainz Picard &mdash; Documentation MusicBrainz Picard v2.4.2</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/extra.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/picard-icon.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="/version_links.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> MusicBrainz Picard
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Commencer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables/variables.html">Balises et variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage/using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MusicBrainz Picard</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>MusicBrainz Picard</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pdf.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="musicbrainz-picard">
+<h1>MusicBrainz Picard<a class="headerlink" href="#musicbrainz-picard" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about_picard/introduction.html#picard-can">Picard can …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about_picard/introduction.html#picard-cannot">Picard ne peut pas …</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about_picard/introduction.html#limitations">Limites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/acknowledgements.html">Remerciements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about_picard/acknowledgements.html#editor-and-english-language-lead">Éditeur et responsable de la langue anglaise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about_picard/acknowledgements.html#translation-teams">Équipes de traduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="about_picard/acknowledgements.html#french-lead-tba">Français (Lead: TBA)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="about_picard/acknowledgements.html#german-lead-tba">Allemande (Lead: TBA)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="about_picard/acknowledgements.html#spanish-lead-tba">Espagnol (Lead: TBA)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="about_picard/acknowledgements.html#contributors">Les contributeurs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about_picard/glossary.html">Glossaire des termes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/pdf_starting.html">Commencer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config/configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config/configuration.html#screen-setup">Configuration d’écran</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config/configuration.html#action-options">Options d’action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config/configuration.html#option-settings">Paramètres des options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variables/variables.html">Balises et variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending/scripting.html">Scripting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extending/scripting.html#syntax">Syntaxe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extending/scripting.html#metadata-variables">Variables de métadonnées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extending/scripting.html#scripting-functions">Fonctions de script</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions/list_by_type.html">Fonctions de script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#assignment-functions">Fonctions d’affectation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_copy.html">$copy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_copymerge.html">$copymerge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_delete.html">$delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_set.html">$set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_setmulti.html">$setmulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_unset.html">$unset</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#text-functions">Fonctions de texte</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_delprefix.html">$delprefix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_find.html">$find</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_firstalphachar.html">$firstalphachar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_firstwords.html">$firstwords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_get.html">$get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_initials.html">$initials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_left.html">$left</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_len.html">$len</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_lower.html">$lower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_num.html">$num</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_pad.html">$pad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_replace.html">$replace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_reverse.html">$reverse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_right.html">$right</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_rreplace.html">$rreplace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_rsearch.html">$rsearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_strip.html">$strip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_substr.html">$substr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_swapprefix.html">$swapprefix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_title.html">$title</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_trim.html">$trim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_truncate.html">$truncate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_upper.html">$upper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#multi-value-functions">Fonctions à valeurs multiples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_getmulti.html">$getmulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_join.html">$join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_lenmulti.html">$lenmulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_map.html">$map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_performer.html">$performer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_reversemulti.html">$reversemulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_slice.html">$slice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_sortmulti.html">$sortmulti</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#mathematical-functions">Fonctions mathématiques</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_add.html">$add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_div.html">$div</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_mod.html">$mod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_mul.html">$mul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_sub.html">$sub</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#conditional-functions">Fonctions conditionnelles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_and.html">$and</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_endswith.html">$endswith</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_eq.html">$eq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_eq_all.html">$eq_all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_eq_any.html">$eq_any</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_gt.html">$gt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_gte.html">$gte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_if.html">$if</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_if2.html">$if2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_in.html">$in</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_inmulti.html">$inmulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_is_audio.html">$is_audio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_is_complete.html">$is_complete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_is_video.html">$is_video</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_lt.html">$lt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_lte.html">$lte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_ne.html">$ne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_ne_all.html">$ne_all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_ne_any.html">$ne_any</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_not.html">$not</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_or.html">$or</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_startswith.html">$startswith</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#information-functions">Fonctions d’information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_datetime.html">$datetime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_matchedtracks.html">$matchedtracks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#loop-functions">Fonctions de boucle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_foreach.html">$foreach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_while.html">$while</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="functions/list_by_type.html#miscellaneous-functions">Fonctions diverses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/func_noop.html">$noop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage/using.html">Utiliser Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/workflows.html">Recommandations de flux de travail</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage/other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/pdf_troubleshooting.html">Dépannage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq/faq.html">Questions fréquemment posées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/pdf_appendices.html">Annexes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendices/plugins_api.html">Annexe 1: API des plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="appendices/plugins_api.html#plugin-metadata">Métadonnées du plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/plugins_api.html#metadata-processors">Processeurs de métadonnées</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="appendices/plugins_api.html#album-metadata-example">Exemple de métadonnées d’album:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="appendices/plugins_api.html#track-metadata-example">Exemple de Suivre les métadonnées:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/plugins_api.html#event-hooks">Hooks d’événement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="appendices/plugins_api.html#file-post-load-processor-file">file_post_load_processor(file)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="appendices/plugins_api.html#file-post-save-processor-file">file_post_save_processor(file)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="appendices/plugins_api.html#file-post-addition-to-track-processor-track-file">file_post_addition_to_track_processor(track, file)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="appendices/plugins_api.html#file-post-removal-from-track-processor-track-file">file_post_removal_from_track_processor(track, file)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="appendices/plugins_api.html#album-post-removal-processor-album">album_post_removal_processor(album)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/plugins_api.html#file-formats">Formats de fichier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/plugins_api.html#tagger-script-functions">Fonctions de script de tagger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/plugins_api.html#context-menu-actions">Actions du menu contextuel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="appendices/tag_mapping.html">Annexe 2: Mappage des balises</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#acoustid">AcoustID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#acoustid-fingerprint">Empreinte digitale AcoustID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id1">Album</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id2">Artiste de l’album</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#album-artist-sort-order">Ordre de tri de l’artiste de l’album</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#album-sort-order">Ordre de tri de l’artiste de l’album</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id3">Arrangeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id4">Artiste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#artist-sort-order">Ordre de tri des artistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#artists">Artistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id5">ASIN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id6">Code à barres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#bpm">BPM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id7">Numéro de catalogue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#comment">Commentaire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#compilation-itunes">Compilation (iTunes)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id8">Compositeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#composer-sort-order">Ordre de tri du compositeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id9">Chef d’orchestre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#copyright">Copyright</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#disc-number">Numéro de disque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#disc-subtitle">Sous-titre du disque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#encoded-by">Encodé par</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#encoder-settings">Paramètres de l’encodeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id10">Ingénieur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#gapless-playback">Gapless Playback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id11">Genre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#grouping">Regroupement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#initial-key">Clé initiale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id12">ISRC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#language">Langue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#license">License</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id13">Parolier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#lyrics">Paroles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id14">Médias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id15">Mix-DJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id16">Mélangeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#mood">Mood</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#movement">Mouvement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#movement-count">Nombre de mouvements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#movement-number">Numéro de mouvement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id17">Identifiant de l’artiste MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id18">ID du disque MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id19">Identifiant original de l’artiste MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id20">ID de la version originale de MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id21">Identifiant d’enregistrement MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id22">Identifiant de l’artiste de la version MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#musicbrainz-release-group-id">Identifiant du groupe de versions MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id23">Identifiant de version MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id24">ID de la piste MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id25">MusicBrainz TRM ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#musicbrainz-work-id">MusicBrainz Work ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#musicip-fingerprint">Empreinte digitale MusicIP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id26">MusicIP PUID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#original-album">Album original</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#original-artist">Artiste original</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#original-filename">Nom de fichier d’origine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#original-release-date">Date de sortie d’origine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#original-release-year">Année de sortie d’origine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#performer">L’exécutant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#podcast">Podcast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#podcast-url">URL du podcast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id27">Producteur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id28">Évaluation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id29">Étiquette d’enregistrement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id30">Pays de sortie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id31">Date de sortie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id32">État de sortie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id33">Type de version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id34">Remixeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-album-gain">ReplayGain Gain d’album</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-album-peak">ReplayGain Album Peak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-album-range">ReplayGain Album Range</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-reference-loudness">ReplayGain Reference Loudness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-track-gain">ReplayGain Track Gain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-track-peak">ReplayGain Track Peak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-track-range">ReplayGain Track Range</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#script">Script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#show-name">Afficher le nom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#show-name-sort-order">Afficher l’ordre de tri des noms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#show-work-movement">Afficher le travail et le mouvement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#subtitle">Subtitle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#total-discs">Nombre total de disques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#total-tracks">Total des pistes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#track-number">Numéro de piste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id35">Titre de la piste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#track-title-sort-order">Ordre de tri des titres de piste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#website-official-artist-website">Site Web (site officiel de l’artiste)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#work-title">Work Title</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id36">Écrivain</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionnez la version</dt>
+      </dl>
+      <script>list_versions('fr', 'pdf');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="./../en/pdf.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="./../fr/pdf.html" class="__ptNoRemap">Française</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.4.2_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.4.2_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.4.2_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

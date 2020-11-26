@@ -10,7 +10,7 @@ Cover Art Archive
 .. index::
    pair: configuration; cover art archive
 
-.. image:: ../images/options-cover-caa.png
+.. image:: images/options-cover-caa.png
    :width: 100 %
 
 In this section you can decide which types of cover art you would like to download from the Cover Art Archive,

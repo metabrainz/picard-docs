@@ -10,7 +10,7 @@ WAVE Files
 .. index::
    single: configuration; wave tag options
 
-.. image:: ../images/options-tags-compatibility-wave.png
+.. image:: images/options-tags-compatibility-wave.png
    :width: 100 %
 
 WAVE by itself as a standard only supports the INFO chunk tags, which are very limited.  In addition, INFO chunks

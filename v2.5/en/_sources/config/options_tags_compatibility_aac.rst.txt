@@ -10,7 +10,7 @@ AAC Files
 .. index::
    single: configuration; aac tag options
 
-.. image:: ../images/options-tags-compatibility-aac.png
+.. image:: images/options-tags-compatibility-aac.png
    :width: 100 %
 
 Picard can save APEv2 tags to pure AAC files, which by default do not support tagging. APEv2 tags in AAC

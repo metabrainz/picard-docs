@@ -10,7 +10,7 @@ Genres
 .. index::
    single: configuration; genres
 
-.. image:: ../images/options-metadata-genres.png
+.. image:: images/options-metadata-genres.png
    :width: 100 %
 
 **Use genres from MusicBrainz**

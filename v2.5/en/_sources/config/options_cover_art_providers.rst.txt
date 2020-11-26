@@ -12,7 +12,7 @@ Cover Art Providers
 
 .. only:: html
 
-   .. image:: ../images/options-cover.png
+   .. image:: images/options-cover.png
       :width: 100 %
 
 Picard can download Cover Art from a number of sources, and you can choose which sources you want Picard to

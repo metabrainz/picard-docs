@@ -13,7 +13,7 @@ Location
 
 .. only:: html
 
-   .. image:: ../images/options-cover.png
+   .. image:: images/options-cover.png
       :width: 100 %
 
 **Embed cover images into tags**

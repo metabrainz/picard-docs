@@ -7,7 +7,7 @@
 Windows
 =======
 
-.. image:: ../images/options-cdlookup.png
+.. image:: images/options-cdlookup.png
    :width: 100 %
 
 On Windows, Picard has a pulldown menu listing the various CD drives it has found. Pull down the

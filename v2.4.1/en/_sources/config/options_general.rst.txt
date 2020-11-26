@@ -10,7 +10,7 @@ General Options
 .. index::
    single: configuration; general options
 
-.. image:: ../images/options-general.png
+.. image:: images/options-general.png
    :width: 100 %
 
 **Server address**

@@ -1,7 +1,4 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 .. TODO: Expand definitions
 
@@ -23,11 +20,8 @@
 .. #metabrainz [May 23, 03:51:54] <+BrainzBot> PICARD-1034: Picard not seeing TOPE and TOAL
 
 
-Basic Tags
-==========
-
-.. index::
-   single: tags; basic
+:index:`Basic Tags <tags; basic>`
+==================================
 
 The following tags are populated from MusicBrainz data for most releases, without any special Picard settings.
 
@@ -41,15 +35,8 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 .. note::
 
-   .. only:: html
-
-      Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
-      <../technical/tag_mapping>` section for details.
-
-   .. only:: latex
-
-      Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
-      <../technical/tag_mapping_pdf>` section for details.
+   Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
+   <../appendices/tag_mapping>` section for details.
 
 **acoustid_fingerprint**
 
@@ -145,7 +132,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 **isrc**
 
     International Standard Recording Code - an international standard code for uniquely identifying sound recordings and music video recordings.
-    See `Wikipedia <https://en.wikipedia.org/wiki/International_Standard_Recording_Code>`_ for more information (*since Picard 0.12*).
+    See `Wikipedia <https://en.wikipedia.org/wiki/International_Standard_Recording_Code>`_ for more information. (*since Picard 0.12*)
 
 **key**
 
@@ -157,7 +144,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **language**
 
-    Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if track relationships are enabled in Options and a related work exists (*since Picard 0.10*).
+    Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if track relationships are enabled in Options and a related work exists. (*since Picard 0.10*)
 
 **lyrics**
 
@@ -181,7 +168,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **musicbrainz_discid**
 
-    Disc ID if the album was added using :menuselection:`"Tools --> Lookup CD"` (*since Picard 0.12*).
+    Disc ID if the album was added using :menuselection:`"Tools --> Lookup CD"`. (*since Picard 0.12*)
 
 **musicbrainz_originalalbumid**
 
@@ -201,7 +188,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **musicbrainz_releasetrackid**
 
-    Release Track MusicBrainz Identifier (*since Picard 1.3*).
+    Release Track MusicBrainz Identifier. (*since Picard 1.3*)
 
 **musicbrainz_trackid**
 
@@ -253,7 +240,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **script**
 
-    The script used to write the release's track list. The possible values are taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard (*since Picard 0.10*).
+    The script used to write the release's track list. The possible values are taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard. (*since Picard 0.10*)
 
 **subtitle**
 

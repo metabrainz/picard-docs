@@ -73,4 +73,5 @@ Pasting this log into your forum post or bug ticket can help developers and othe
       :doc:`no_coverart` /
       :doc:`missing_tags` /
       :doc:`not_saving` /
-      :doc:`stopped_working`
+      :doc:`stopped_working` /
+      :doc:`macos_startup_error`

@@ -33,7 +33,7 @@ Submitting when using Scan to identify the release
 1. Load files into the clustering pane.  Select the files and click the "Scan" button, or select
    :menuselection:`"Tools --> Scan"`.
 
-   .. image:: ../images/submit_acoustid_1.png
+   .. image:: images/submit_acoustid_1.png
       :width: 100%
 
    |
@@ -41,7 +41,7 @@ Submitting when using Scan to identify the release
 2. If the files are matched to a track and move to the right-hand pane, they already exist in the
    AcoustID database and do not need to be re-submitted.  The "Submit" button will remain disabled.
 
-   .. image:: ../images/submit_acoustid_2.png
+   .. image:: images/submit_acoustid_2.png
       :width: 100%
 
    |
@@ -50,7 +50,7 @@ Submitting when using Scan to identify the release
    be submitted.  The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted status) and
    the "Submit" button will be enabled.
 
-   .. image:: ../images/submit_acoustid_3.png
+   .. image:: images/submit_acoustid_3.png
       :width: 100%
 
    |
@@ -59,7 +59,7 @@ Submitting when using Scan to identify the release
    The AcoustID icon for the tracks will change to grey (i.e.: submitted status) and the "Submit"
    button will be disabled.
 
-   .. image:: ../images/submit_acoustid_4.png
+   .. image:: images/submit_acoustid_4.png
       :width: 100%
 
    |
@@ -70,7 +70,7 @@ Submitting when not using Scan to identify the release
 
 1. Make sure that the files are properly matched to tracks on a release in the right-hand pane.
 
-   .. image:: ../images/submit_acoustid_5.png
+   .. image:: images/submit_acoustid_5.png
       :width: 100%
 
    |
@@ -78,7 +78,7 @@ Submitting when not using Scan to identify the release
 2. Select the files in the right-hand pane and select :menuselection:`"Tools --> Generate AcoustID fingerprints"`.
    This will calculate the acoustic fingerprints for the selected files.
 
-   .. image:: ../images/submit_acoustid_6.png
+   .. image:: images/submit_acoustid_6.png
       :width: 100%
 
    |
@@ -91,7 +91,7 @@ Submitting when not using Scan to identify the release
    The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted status) and the "Submit" button will
    be enabled.
 
-   .. image:: ../images/submit_acoustid_7.png
+   .. image:: images/submit_acoustid_7.png
       :width: 100%
 
    |
@@ -99,5 +99,5 @@ Submitting when not using Scan to identify the release
 3. Clicking the "Submit" button will submit the fingerprints for the files. The AcoustID icon for the tracks will
    change to grey (i.e.: submitted status) and the "Submit" button will be disabled.
 
-   .. image:: ../images/submit_acoustid_8.png
+   .. image:: images/submit_acoustid_8.png
       :width: 100%

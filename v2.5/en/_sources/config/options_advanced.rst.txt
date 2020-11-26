@@ -10,7 +10,7 @@ Advanced Options
 .. index::
    single: configuration; advanced options
 
-.. image:: ../images/options-advanced.png
+.. image:: images/options-advanced.png
    :width: 100 %
 
 **Ignore file paths matching the following regular expression**

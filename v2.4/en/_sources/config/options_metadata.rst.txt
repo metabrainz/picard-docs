@@ -10,7 +10,7 @@ Metadata Options
 .. index::
    single: configuration; metadata options
 
-.. image:: ../images/options-metadata.png
+.. image:: images/options-metadata.png
    :width: 100 %
 
 **Translate artist names to this locale where possible**

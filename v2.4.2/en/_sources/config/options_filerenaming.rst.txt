@@ -10,7 +10,7 @@ File Naming Options
 .. index::
    pair: configuration; file naming
 
-.. image:: ../images/options-filenaming.png
+.. image:: images/options-filenaming.png
    :width: 100 %
 
 These options determine how Picard handles files when they are saved with updated metadata.
@@ -77,7 +77,7 @@ These options determine how Picard handles files when they are saved with update
 
    An edit box that contains a formatting string that tells Picard what the new name of the file and its
    containing directories should be in terms of various metadata values. The formatting string is in
-   :doc:`Picard's scripting language <../scripting>` where dark blue text starting with a '$' is a
+   :doc:`Picard's scripting language <../extending/scripting>` where dark blue text starting with a '$' is a
    :doc:`function name <../functions/list_by_type>` and names in light blue within '%' signs are Picard's
    :doc:`tag and variable names <../variables/variables>`, and is generally referred to as a "file naming
    script". Note that the use of a '/' in the formatting string separates the output directory from the file

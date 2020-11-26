@@ -10,7 +10,7 @@ Network
 .. index::
    single: configuration; network
 
-.. image:: ../images/options-network.png
+.. image:: images/options-network.png
    :width: 100 %
 
 **Web Proxy**
@@ -18,7 +18,7 @@ Network
     If you need a proxy to make an outside network connection you may specify one here.  The required
     settings are **Server Address**, **Port**, **Username** and **Password**.
 
-.. |lookup_tagger| image:: ../images/mblookup-tagger.png
+.. |lookup_tagger| image:: images/mblookup-tagger.png
    :height: 1em
 
 **Browser Integration**

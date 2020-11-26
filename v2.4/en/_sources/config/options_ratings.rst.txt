@@ -10,7 +10,7 @@ Ratings
 .. index::
    single: configuration; ratings
 
-.. image:: ../images/options-metadata-ratings.png
+.. image:: images/options-metadata-ratings.png
    :width: 100 %
 
 **Enable track ratings**

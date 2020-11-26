@@ -10,7 +10,7 @@ Tag Options
 .. index::
    single: configuration; tag options
 
-.. image:: ../images/options-tags.png
+.. image:: images/options-tags.png
    :width: 100 %
 
 **Write tags to files**

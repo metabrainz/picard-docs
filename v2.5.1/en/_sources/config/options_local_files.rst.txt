@@ -12,7 +12,7 @@ Local Files
 .. index::
    single: configuration; local files
 
-.. image:: ../images/options-cover-local.png
+.. image:: images/options-cover-local.png
    :width: 100 %
 
 In this section you can configure the file names to be used by the Local Files cover art provider. If you are trying to collect

@@ -11,7 +11,7 @@ Scripts
 
 There are two types of scripts used in Picard: the file naming script and tagging scripts. These are
 managed from the "File Naming" and "Scripting" sections of the :menuselection:`"Options --> Options..."` menu. All scripts are written
-using the :doc:`Picard scripting language <../scripting>`. Scripts are often discussed in the
+using the :doc:`Picard scripting language <scripting>`. Scripts are often discussed in the
 `MetaBrainz Community Forum <https://community.metabrainz.org/>`_, and there is a thread specific to
 `file naming and script snippets <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_.
 

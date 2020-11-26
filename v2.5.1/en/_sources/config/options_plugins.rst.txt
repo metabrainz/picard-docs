@@ -10,7 +10,7 @@ Plugins Options
 .. index::
    pair: configuration; plugins
 
-.. image:: ../images/options-plugins.png
+.. image:: images/options-plugins.png
    :width: 100 %
 
 This section allows you to manage the plugins used by Picard.  You can install new plugins or enable,
@@ -35,7 +35,7 @@ Plugins List
 The screen displays a list of the standard plugins and any others that have been installed.  Each plugin is
 displayed on a separate line showing the version number and one or more status / action icons.  The icons are:
 
-.. |img-plugin-download| image:: ../images/options-plugin-download.png
+.. |img-plugin-download| image:: images/options-plugin-download.png
    :width: 18pt
    :height: 18pt
 
@@ -44,7 +44,7 @@ displayed on a separate line showing the version number and one or more status /
    | This icon indicates that the plugin is not installed.  Clicking the icon will download and install the plugin.
    |
 
-.. |img-plugin-reload| image:: ../images/options-plugin-reload.png
+.. |img-plugin-reload| image:: images/options-plugin-reload.png
    :width: 18pt
    :height: 18pt
 
@@ -53,7 +53,7 @@ displayed on a separate line showing the version number and one or more status /
    | This icon indicates that a newer version of the plugin is available.  Clicking the icon will download and install the updated version.
    |
 
-.. |img-plugin-enabled| image:: ../images/options-plugin-enabled.png
+.. |img-plugin-enabled| image:: images/options-plugin-enabled.png
    :width: 24pt
    :height: 24pt
 
@@ -62,7 +62,7 @@ displayed on a separate line showing the version number and one or more status /
    | This icon indicates that the plugin is installed and currently enabled.  Clicking the icon will disable the plugin, but it will still be installed.
    |
 
-.. |img-plugin-disabled| image:: ../images/options-plugin-disabled.png
+.. |img-plugin-disabled| image:: images/options-plugin-disabled.png
    :width: 24pt
    :height: 24pt
 
@@ -71,7 +71,7 @@ displayed on a separate line showing the version number and one or more status /
    | This icon indicates that the plugin is installed but currently disabled.  Clicking the icon will enable the plugin.
    |
 
-.. |img-plugin-trash| image:: ../images/options-plugin-trash.png
+.. |img-plugin-trash| image:: images/options-plugin-trash.png
    :width: 24pt
    :height: 24pt
 
@@ -83,7 +83,7 @@ displayed on a separate line showing the version number and one or more status /
 When a plugin in the list is selected (i.e.: highlighted), a brief description of the plugin will be shown in  the "Details"
 section below the list.
 
-.. image:: ../images/plugin-details.png
+.. image:: images/plugin-details.png
    :width: 100 %
 
 .. note::
@@ -105,7 +105,7 @@ You can install a third-party plugin that does not appear in the plugins list, u
 
 2. Select the "Install plugin..." action, located just below the list of plugins.
 
-   .. image:: ../images/install-plugin.png
+   .. image:: images/install-plugin.png
       :width: 100 %
 
 3. Navigate to the file you downloaded in Step 1 and select it.  The file will be copied to the plugin folder,

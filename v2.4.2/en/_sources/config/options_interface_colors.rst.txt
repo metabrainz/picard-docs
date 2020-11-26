@@ -11,7 +11,7 @@ Colors
    single: configuration; colors
    single: user interface; colors
 
-.. image:: ../images/options-interface-colors.png
+.. image:: images/options-interface-colors.png
    :width: 100 %
 
 This section allows you to customize the various colors used in the Picard user interface.  To change a

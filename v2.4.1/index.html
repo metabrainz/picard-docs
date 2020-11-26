@@ -7,10 +7,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MusicBrainz Picard Documentation</title>
    <script>
-      const supported_languages = ['en'];
+      const supported_languages = ['en', 'fr'];
       const default_language = 'en';
       const current_version = 'v2.4.1';
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
       var language_code = "";
+      var r_language = "";
+      var r_version = "";
+      var r_page = "";
+      var r_anchor = "";
       function getLanguage() {
          let lg = {
             a: window.navigator.language,
@@ -55,13 +61,28 @@
 
       function makeURL() {
          var root_dir = '/';
+         var r_target = "index.html";
          if (window.location.hostname.endsWith(".github.io")) {
             root_dir = '/picard-docs/';
          }
-         if (current_version == "") {
-             return root_dir + getLanguage() + '/index.html';
+         if (urlParams.has('version')) { r_version = urlParams.get('version'); }
+         if (urlParams.has('language')) { r_language = urlParams.get('language'); }
+         if (urlParams.has('page')) { r_page = urlParams.get('page'); }
+         if (urlParams.has('anchor')) { r_anchor = urlParams.get('anchor'); }
+         if ((r_language == "") || (!supported_languages.includes(r_language))) { r_language = getLanguage(); }
+         if (r_page != "") {
+            r_target = r_page + ".html";
+            if (r_anchor != "") { r_target = r_target + "#" + r_anchor; }
          }
-         return root_dir + current_version + '/' + getLanguage() + '/index.html';
+         if (current_version == "") {
+            if (r_version == "") {
+               return root_dir + r_language + '/' + r_target;
+            }
+            return root_dir + r_version + '/index.html' + queryString;
+         }
+         else {
+            return root_dir + current_version + '/' + r_language + '/' + r_target;
+         }
       }
    </script>
 </head>

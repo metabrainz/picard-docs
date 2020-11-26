@@ -10,7 +10,7 @@ Fingerprinting Options
 .. index::
    single: configuration; fingerprinting
 
-.. image:: ../images/options-fingerprinting.png
+.. image:: images/options-fingerprinting.png
    :width: 100 %
 
 If you select a file or cluster in the left-hand side of the Picard screen and select :menuselection:`"Tools
