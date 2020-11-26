@@ -62,6 +62,7 @@ jobs:
         python ./setup.py -l all build epub
     - name: Install LaTeX dependencies
       run: |
+        sudo apt-get update
         sudo apt-get install latexmk
         sudo apt-get install xzdec
         sudo apt-get install texlive

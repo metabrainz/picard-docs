@@ -74,6 +74,7 @@ jobs:
         retention-days: 5
     - name: Install LaTeX dependencies
       run: |
+        sudo apt-get update
         sudo apt-get install latexmk
         sudo apt-get install xzdec
         sudo apt-get install texlive
