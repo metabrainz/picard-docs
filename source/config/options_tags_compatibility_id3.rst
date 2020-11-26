@@ -27,8 +27,10 @@
       Other than native support for multi-valued tags in v2.4, the :doc:`Picard Tag Mapping <../technical/tag_mapping_pdf>`
       section will show you what you lose when choosing v2.3 instead of v2.4.
       
-   Windows 10 Creators Update v1703 onwards is supposed to support the reading and display of ID3 v2.4 tags in Windows Explorer, though this has not been verified.
-   In earlier versions of Windows, support in Windows Explorer can be added using  :doc:`SoftPointer AudioShell 2 <http://www.softpointer.com/AudioShellAndWindows8.htm>`.
+   Windows 10 Creators Update v1703 onwards is supposed to support the reading and display of ID3 v2.4 tags in Windows Explorer, 
+   though this has not been verified.
+   In earlier versions of Windows, support in Windows Explorer can be added using 
+   :doc:`SoftPointer AudioShell 2 <http://www.softpointer.com/AudioShellAndWindows8.htm>`.
    
 **ID3v2 text encoding**
 
