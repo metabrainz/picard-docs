@@ -28,6 +28,8 @@ CURRENT_VERSION = config.VERSION if config.VERSION else ''
 VERSIONS = config.VERSIONS.copy() if config.VERSIONS else []
 FILE_NAME_ROOT = config.FILE_NAME_ROOT if config.FILE_NAME_ROOT else 'MusicBrainz_Picard'
 TAG_MAP_NAME = config.TAG_MAP_NAME if config.TAG_MAP_NAME else 'MusicBrainz_Picard_Tag_Map'
+GITHUB_REF = config.GITHUB_REF if config.GITHUB_REF else ''
+GITHUB_HEAD_REF = config.GITHUB_HEAD_REF if config.GITHUB_HEAD_REF else ''
 
 LANGUAGE_TEST_1 = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 LANGUAGE_TEST_2 = re.compile(r'^.*' + FILE_NAME_ROOT + r'_\[([a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?)\].pdf$')
@@ -72,14 +74,20 @@ def get_reference_branch():
     Returns:
         str: The target branch, or None on error
     """
-    env_info = None
+    # env_info = None
+    # try:
+    #     env_info = os.environ['GITHUB_REF']
+    #     env_info = os.environ['GITHUB_HEAD_REF']
+    # except KeyError:
+    #     pass
+    # try:
+    #     parts = env_info.split('/')
+    #     return parts[-1]
+    # except AttributeError:
+    #     return None
+    ref = GITHUB_HEAD_REF if GITHUB_HEAD_REF else GITHUB_REF
     try:
-        env_info = os.environ['GITHUB_REF']
-        env_info = os.environ['GITHUB_HEAD_REF']
-    except KeyError:
-        pass
-    try:
-        parts = env_info.split('/')
+        parts = ref.split('/')
         return parts[-1]
     except AttributeError:
         return None
@@ -473,8 +481,9 @@ def main():
             f.write(js)
         time.sleep(1)
 
-    print('Updating the persistent settings file: {0}.py\n'.format(PERSISTENT_FILE,))
-    update_persistent_settings(PERSISTENT_FILE, P_STABLE_VERSION, versions_dict, P_DEFAULT_LANGUAGE, P_LANGUAGES)
+    if branch == 'master':
+        print('Updating the persistent settings file: {0}.py\n'.format(PERSISTENT_FILE,))
+        update_persistent_settings(PERSISTENT_FILE, P_STABLE_VERSION, versions_dict, P_DEFAULT_LANGUAGE, P_LANGUAGES)
 
     exit_with_code(0)
 
