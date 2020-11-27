@@ -132,6 +132,8 @@ html_context = {
 
 html_favicon = '_static/picard-icon.png'
 
+html_copy_source = False
+
 
 # -- Options for LaTeX / PDF output ------------------------------------------
 
