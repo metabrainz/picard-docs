@@ -1,0 +1,112 @@
+name: Check, Full Build and Publish
+
+on:
+  push:
+    branches:
+      - 'master'
+      - '0*'
+      - '1*'
+      - '2*'
+      - '3*'
+      - '4*'
+      - '5*'
+      - '6*'
+      - '7*'
+      - '8*'
+      - '9*'
+    paths:
+      - '**.po'
+      - '**.rst'
+      - '**.txt'
+      - '**/images/*'
+      - '_static/**'
+      - '_templates/**'
+      - '.github/workflows/*.yml'
+      - 'setup.py'
+      - 'conf.py'
+
+jobs:
+  lint_rst_and_full_build_and_publish:
+    name: Check with LintRST, Full Build and Publish
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Lint Test RST Files
+      run: python ./setup.py test rst
+    - name: Setup for Build
+      run: |
+        export SPHINXBUILD=`which sphinx-build`
+        mkdir _build
+        mkdir docs
+    - name: Update Translation Files
+      run: |
+        python ./setup.py build pot
+    - name: Build HTML Files
+      run: |
+        python ./setup.py clean html
+        python ./setup.py -l all build html
+    - name: Build EPUB Files
+      run: |
+        python ./setup.py clean epub
+        python ./setup.py -l all build epub
+    - name: Install LaTeX dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install latexmk
+        sudo apt-get install xzdec
+        sudo apt-get install texlive
+        sudo apt-get install texlive-lang-arabic
+        sudo apt-get install texlive-lang-chinese
+        sudo apt-get install texlive-lang-cjk
+        sudo apt-get install texlive-lang-cyrillic
+        sudo apt-get install texlive-lang-czechslovak
+        sudo apt-get install texlive-lang-english
+        sudo apt-get install texlive-lang-european
+        sudo apt-get install texlive-lang-french
+        sudo apt-get install texlive-lang-german
+        sudo apt-get install texlive-lang-greek
+        sudo apt-get install texlive-lang-italian
+        sudo apt-get install texlive-lang-japanese
+        sudo apt-get install texlive-lang-korean
+        sudo apt-get install texlive-lang-other
+        sudo apt-get install texlive-lang-polish
+        sudo apt-get install texlive-lang-portuguese
+        sudo apt-get install texlive-lang-spanish
+        sudo apt-get install texlive-latex-extra
+        sudo apt-get install xindy
+    - name: Build PDF Files
+      run: |
+        python ./setup.py clean pdf
+        python ./setup.py -l all build pdf
+    - name: Add Environment Variables to Variables File
+      run: |
+        echo "GITHUB_REF = '${GITHUB_REF}'" >> docs/__init__.py
+        echo "GITHUB_HEAD_REF = '${GITHUB_HEAD_REF}'" >> docs/__init__.py
+    - name: Display Variables Passed to Publish Action
+      run: |
+        cat docs/__init__.py
+    - name: Checkout gh-pages branch
+      run: |
+        git config --global user.name "${GITHUB_ACTOR}"
+        git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git checkout --force gh-pages
+    - name: Update gh-pages branch
+      run: |
+        python publish.py
+        git add -A
+        if grep -q "Changes to be committed:" <<< `git status`; then
+          git status && git commit -m "Based on ${GITHUB_EVENT_NAME} to ${GITHUB_REF} by ${GITHUB_ACTOR}" && git push origin gh-pages
+        fi
+        git checkout master
