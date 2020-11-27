@@ -68,6 +68,7 @@ jobs:
         sudo apt-get install texlive
         sudo apt-get install texlive-full
         sudo apt-get install texlive-latex-extra
+        sudo apt-get install xindy
     - name: Build PDF Files
       run: |
         python ./setup.py clean pdf
