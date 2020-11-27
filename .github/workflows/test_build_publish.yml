@@ -72,6 +72,10 @@ jobs:
       run: |
         python ./setup.py clean pdf
         python ./setup.py -l all build pdf
+    - name: Add Environment Variables to Variables File
+      run: |
+        echo "GITHUB_REF = '${GITHUB_REF}'" >> docs/__init__.py
+        echo "GITHUB_HEAD_REF = '${GITHUB_HEAD_REF}'" >> docs/__init__.py
     - name: Display Variables Passed to Publish Action
       run: |
         cat docs/__init__.py
@@ -81,30 +85,6 @@ jobs:
         git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git checkout --force gh-pages
-    - name: Build Environment Variables Text File
-      run: |
-        echo "CI = ${CI}" > env.txt
-        echo "HOME = ${HOME}" >> env.txt
-        echo "GITHUB_WORKFLOW = ${GITHUB_WORKFLOW}" >> env.txt
-        echo "GITHUB_RUN_ID = ${GITHUB_RUN_ID}" >> env.txt
-        echo "GITHUB_RUN_NUMBER = ${GITHUB_RUN_NUMBER}" >> env.txt
-        echo "GITHUB_ACTION = ${GITHUB_ACTION}" >> env.txt
-        echo "GITHUB_ACTIONS = ${GITHUB_ACTIONS}" >> env.txt
-        echo "GITHUB_ACTOR = ${GITHUB_ACTOR}" >> env.txt
-        echo "GITHUB_REPOSITORY = ${GITHUB_REPOSITORY}" >> env.txt
-        echo "GITHUB_EVENT_NAME = ${GITHUB_EVENT_NAME}" >> env.txt
-        echo "GITHUB_EVENT_PATH = ${GITHUB_EVENT_PATH}" >> env.txt
-        echo "GITHUB_WORKSPACE = ${GITHUB_WORKSPACE}" >> env.txt
-        echo "GITHUB_SHA = ${GITHUB_SHA}" >> env.txt
-        echo "GITHUB_REF = ${GITHUB_REF}" >> env.txt
-        echo "GITHUB_HEAD_REF = ${GITHUB_HEAD_REF}" >> env.txt
-        echo "GITHUB_BASE_REF = ${GITHUB_BASE_REF}" >> env.txt
-        echo "GITHUB_SERVER_URL = ${GITHUB_SERVER_URL}" >> env.txt
-        echo "GITHUB_API_URL = ${GITHUB_API_URL}" >> env.txt
-        echo "GITHUB_GRAPHQL_URL = ${GITHUB_GRAPHQL_URL}" >> env.txt
-    - name: Display Environment Variables Text File
-      run: |
-        cat env.txt
     - name: Update gh-pages branch
       run: |
         python publish.py
