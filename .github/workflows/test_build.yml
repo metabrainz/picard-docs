@@ -1,9 +1,8 @@
-name: Check and Basic Build
+name: Check and Full Build
 
 on:
-  push:
-    branches-ignore:
-      - 'gh-pages'
+  pull_request:
+    branches:
       - 'master'
       - '0*'
       - '1*'
@@ -28,7 +27,7 @@ on:
 
 jobs:
   lint_rst_and_basic_build:
-    name: Check with LintRST and Basic Build
+    name: Check with LintRST and Full Build
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -50,24 +49,27 @@ jobs:
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+    - name: Update Translation Files
+      run: |
+        python ./setup.py build pot
     - name: Build HTML Files
       run: |
         python ./setup.py clean html
-        python ./setup.py build html
-    - name: Store HTML Build Output File
+        python ./setup.py -l all build html
+    - name: Store HTML Build Output Files
       uses: actions/upload-artifact@v2
       with:
         name: html_files
         path: docs/*.zip
         retention-days: 5
-    - name: Build EPUB File
+    - name: Build EPUB Files
       run: |
         python ./setup.py clean epub
-        python ./setup.py build epub
-    - name: Store ePub Build Output File
+        python ./setup.py -l all build epub
+    - name: Store ePub Build Output Files
       uses: actions/upload-artifact@v2
       with:
-        name: epub_file
+        name: epub_files
         path: docs/*.epub
         retention-days: 5
     - name: Install LaTeX dependencies
@@ -76,16 +78,33 @@ jobs:
         sudo apt-get install latexmk
         sudo apt-get install xzdec
         sudo apt-get install texlive
-        sudo apt-get install texlive-full
+        sudo apt-get install texlive-lang-arabic
+        sudo apt-get install texlive-lang-chinese
+        sudo apt-get install texlive-lang-cjk
+        sudo apt-get install texlive-lang-cyrillic
+        sudo apt-get install texlive-lang-czechslovak
+        sudo apt-get install texlive-lang-english
+        sudo apt-get install texlive-lang-european
+        sudo apt-get install texlive-lang-french
+        sudo apt-get install texlive-lang-german
+        sudo apt-get install texlive-lang-greek
+        sudo apt-get install texlive-lang-italian
+        sudo apt-get install texlive-lang-japanese
+        sudo apt-get install texlive-lang-korean
+        sudo apt-get install texlive-lang-other
+        sudo apt-get install texlive-lang-polish
+        sudo apt-get install texlive-lang-portuguese
+        sudo apt-get install texlive-lang-spanish
         sudo apt-get install texlive-latex-extra
-    - name: Build PDF File
+        sudo apt-get install xindy
+    - name: Build PDF Files
       run: |
         python ./setup.py clean pdf
-        python ./setup.py build pdf
-    - name: Store PDF Build Output File
+        python ./setup.py -l all build pdf
+    - name: Store PDF Build Output Files
       uses: actions/upload-artifact@v2
       with:
-        name: pdf_file
+        name: pdf_files
         path: docs/*.pdf
         retention-days: 5
     - name: Display Variables Passed to Publish Action
