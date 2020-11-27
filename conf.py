@@ -38,6 +38,7 @@ release_list = [
     'v2.4.2',
     'v2.4.4',
     'v2.5',
+    'v2.5.1',
     'v2.5.2',
 ]
 version = release
@@ -135,6 +136,8 @@ html_context = {
 }
 
 html_favicon = '_static/picard-icon.png'
+
+html_copy_source = False
 
 
 # -- Options for LaTeX / PDF output ------------------------------------------
