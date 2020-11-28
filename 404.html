@@ -33,99 +33,118 @@
       var has_version = false;
       var has_language = false;
       var has_rtd_format = false;
+      var well_formed = true;
+
+      var debug = false;
 
       const re_language = /^[a-z][a-z](-[A-Z][A-Z])?$/;
       const re_version1 = /^[0-9][0-9\.]*$/;
       const re_version2 = /^v[0-9][0-9\.]*$/;
 
       function is_language(test_language) {
-         // window.alert("Testing language: " + test_language);
+         if (debug) { window.alert("Testing language: " + test_language); }
          if (test_language.search(re_language) < 0) {
-            // window.alert("Failed regular expression check.");
+            if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
          if (supported_languages.indexOf(test_language) < 0) {
-            // window.alert("Failed supported languages check.");
+            if (debug) { window.alert("Failed supported languages check."); }
             return false;
          }
          target_language = test_language;
          has_language = true;
-         // window.alert("Passed.  Target language set to: " + target_language);
+         if (debug) { window.alert("Passed.  Target language set to: " + target_language); }
          return true;
       }
 
       function is_rtd_version(test_version) {
-         // window.alert("Testing RTD version: " + test_version);
+         if (debug) { window.alert("Testing RTD version: " + test_version); }
          if (test_version.search(re_version1) < 0) {
-            // window.alert("Failed regular expression check.");
+            if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
          if (version_list.indexOf(test_version) < 0) {
-            // window.alert("Failed supported versions check.");
+            if (debug) { window.alert("Failed supported versions check."); }
             return false;
          }
-         target_version = 'v' + test_version;
+         target_version = '/v' + test_version;
          has_version = true;
          has_rtd_format = true;
-         // window.alert("Passed. Target version set to: " + target_version);
+         if (debug) { window.alert("Passed. Target version set to: " + target_version); }
          return true;
       }
 
       function is_gh_version(test_version) {
-         // window.alert("Testing GH version: " + test_version);
+         if (debug) { window.alert("Testing GH version: " + test_version); }
          if (test_version.search(re_version2) < 0) {
-            // window.alert("Failed regular expression check.");
+            if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
          var temp = test_version.substring(1);
          if (version_list.indexOf(temp) < 0) {
-            // window.alert("Failed supported versions check.");
-            return false;
+            if (debug) { window.alert("Failed supported versions check."); }
+            target_version = '';
+            // has_version = true;
+            return true;
          }
-         target_version = test_version;
+         target_version = '/' + test_version;
          has_version = true;
-         // window.alert("Passed. Target version set to: " + target_version);
+         if (debug) { window.alert("Passed. Target version set to: " + target_version); }
          return true;
       }
 
       var counter = 1;
-      if (is_language(src_path_parts[counter])) {
+      // Check for GitHub Pages style version number
+      if (is_gh_version(src_path_parts[counter])) {
+         target_path = target_version;
          counter += 1;
-         if (counter < src_path_parts.length) {
-            if ((is_rtd_version(src_path_parts[counter])) || (src_path_parts[counter].search(/^(latest|stable)$/) >= 0)) {
-               if (is_rtd_version(src_path_parts[counter])) {
-                  target_path = '/' + target_version;
-               }
-               else {
-                  if (src_path_parts[counter] == 'stable') {
-                     target_path = '/v' + latest_version;
-                  }
-               }
-               counter += 1;
-               target_path += '/' + target_language;
-               while (counter < src_path_parts.length) {
-                  target_path += '/' + src_path_parts[counter];
-                  counter += 1;
-               }
-               target_url = src_protocol + '//' + src_host + target_path;
+      }
+
+      // Check for language identifier
+      if (is_language(src_path_parts[counter])) {
+         target_path += '/' + target_language;
+         counter += 1;
+      }
+
+      // Check for ReadTheDocs style version number
+      if ((!has_version) && ((is_rtd_version(src_path_parts[counter])) || (src_path_parts[counter].search(/^(latest|stable)$/) >= 0))) {
+         if (is_rtd_version(src_path_parts[counter])) {
+            target_path = target_version + '/' + target_language;
+         }
+         else {
+            if (src_path_parts[counter] == 'stable') {
+               target_path = '/v' + latest_version + '/' + target_language;
             }
          }
-         if (target_url == '') {
-            target_url = src_protocol + '//' + src_host + '/' + target_language + '/not_found.html';
+         well_formed = false;
+         counter += 1;
+      }
+
+      // Patch to redirect to new location of scripting documentation
+      if (src_path_parts[counter] == 'scripting.html') {
+         target_path += '/extending';
+         if (debug) { window.alert("Patching target url for updated location of scripting.html file."); }
+         if ((has_language) || (has_version)) {
+            well_formed = false;
          }
+      }
+
+      // Combine remaining portions of the submitted path
+      while (counter < src_path_parts.length) {
+         target_path += '/' + src_path_parts[counter];
+         counter += 1;
+      }
+
+      // Build the redirection target url
+      if (well_formed) {
+         target_url = src_protocol + '//' + src_host + target_version + '/' + target_language + '/not_found.html';
       }
       else {
-         if (is_gh_version(src_path_parts[counter])) {
-            counter += 1;
-            if (is_language(src_path_parts[counter])) {
-               target_url = src_protocol + '//' + src_host + '/' + target_version + '/' + target_language + '/not_found.html';
-            }
-         }
-         if (target_url == '') {
-            target_url = src_protocol + '//' + src_host + '/' + target_language + '/not_found.html';
-         }
+         target_url = src_protocol + '//' + src_host + target_path;
       }
-      // window.alert('Old URL: ' + window.location + "\nNew URL: " + target_url)
+
+      // Redirect to the new target
+      if (debug) { window.alert('Old URL: ' + window.location + "\nNew URL: " + target_url); }
       window.location.replace(target_url);
    </script>
 </body>
