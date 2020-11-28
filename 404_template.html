@@ -33,6 +33,7 @@
       var has_version = false;
       var has_language = false;
       var has_rtd_format = false;
+      var well_formed = true;
 
       var debug = false;
 
@@ -101,9 +102,10 @@
 
       // Check for language identifier
       if (is_language(src_path_parts[counter])) {
-         target_path += '/' + target_language;
          counter += 1;
       }
+      target_path += '/' + target_language;
+      has_language = true;
 
       // Check for ReadTheDocs style version number
       if ((!has_version) && ((is_rtd_version(src_path_parts[counter])) || (src_path_parts[counter].search(/^(latest|stable)$/) >= 0))) {
