@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-18 17:04-0700\n"
-"PO-Revision-Date: 2020-11-19 16:25-0700\n"
+"POT-Creation-Date: 2020-11-29 15:51-0700\n"
+"PO-Revision-Date: 2020-11-29 15:55-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -86,19 +86,30 @@ msgstr ""
 "commencent par un signe dollar et se terminent par une liste d'arguments "
 "entre parenthèses (par exemple: ``$lower(...)``)."
 
-#: ../../extending/scripting.rst:31
+#: ../../extending/scripting.rst:33
 msgid ""
-"To use parentheses or commas as-is inside a function call, you must "
-"escape them with a backslash."
+"When entering input strings into Picard scripts you have to escape a "
+"backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
+"parentheses \"(\" and \")\" in order to force Picard to not interpret "
+"them as part of the script command.  This is done by inserting a "
+"backslash before the character to be escaped.  For example, to set a tag "
+"value to ``($1,000,000)`` it would have to be entered as ``$set(test_tag,"
+"\\(\\$1\\,000\\,000\\))``."
 msgstr ""
-"Pour utiliser des parenthèses ou des virgules telles quelles dans un "
-"appel de fonction, vous devez les échapper avec une barre oblique inverse."
+"Lorsque vous entrez des chaînes d'entrée dans des scripts Picard, vous "
+"devez échapper une barre oblique inverse \"\\\\\", un signe dollar \"$\", "
+"une virgule \",\" et les parenthèses gauche et droite \"(\" et \")\" afin "
+"de forcer Picard à ne pas les interpréter dans le cadre de la commande de "
+"script. Cela se fait en insérant une barre oblique inverse avant le "
+"caractère à échapper. Par exemple, pour définir une valeur de balise sur "
+"``($1,000,000)``, il faudrait la saisir sous la forme ``$set(test_tag,"
+"\\(\\$1\\,000\\,000\\))``."
 
-#: ../../extending/scripting.rst:35
+#: ../../extending/scripting.rst:40
 msgid "Metadata Variables"
 msgstr "Variables de métadonnées"
 
-#: ../../extending/scripting.rst:37
+#: ../../extending/scripting.rst:42
 msgid ""
 "See :doc:`../variables/variables` for the list of the variables provided "
 "by Picard."
@@ -106,7 +117,7 @@ msgstr ""
 "Voir :doc:`../variables/variables` pour la liste des variables fournies "
 "par Picard."
 
-#: ../../extending/scripting.rst:39
+#: ../../extending/scripting.rst:44
 msgid ""
 "Picard's variables can be either simple variables containing a single "
 "text string, or multi-value variables containing multiple text strings. "
@@ -121,7 +132,7 @@ msgstr ""
 "texte en joignant les valeurs par un point-virgule ';', sauf lorsqu'elles "
 "sont utilisées avec des fonctions spéciales à valeurs multiples."
 
-#: ../../extending/scripting.rst:57
+#: ../../extending/scripting.rst:62
 msgid ""
 "The full list of available scripting functions is covered in the "
 "following chapter."
@@ -129,11 +140,11 @@ msgstr ""
 "La liste complète des fonctions de script disponibles est couverte dans "
 "le chapitre suivant."
 
-#: ../../extending/scripting.rst:47
+#: ../../extending/scripting.rst:52
 msgid "Scripting Functions"
 msgstr "Fonctions de script"
 
-#: ../../extending/scripting.rst:49
+#: ../../extending/scripting.rst:54
 msgid ""
 "The full list of available scripting functions is available, either :doc:"
 "`sorted alphabetically <../functions/list_by_name>` or :doc:`grouped by "
@@ -148,3 +159,11 @@ msgstr ""
 
 #~ msgid "Syntax"
 #~ msgstr "Syntaxe"
+
+#~ msgid ""
+#~ "To use parentheses or commas as-is inside a function call, you must "
+#~ "escape them with a backslash."
+#~ msgstr ""
+#~ "Pour utiliser des parenthèses ou des virgules telles quelles dans un "
+#~ "appel de fonction, vous devez les échapper avec une barre oblique "
+#~ "inverse."
