@@ -49,6 +49,9 @@ jobs:
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+    - name: Build Tag Map Files
+      run: |
+        python ./setup.py build map
     - name: Update Translation Files
       run: |
         python ./setup.py build pot

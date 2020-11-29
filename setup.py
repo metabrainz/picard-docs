@@ -17,6 +17,7 @@ import zipfile
 import restructuredtext_lint
 
 import conf
+import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder'
 SCRIPT_VERS = '0.11'
@@ -203,6 +204,7 @@ Commands:
    build epub          Build epub files
    build po            Build the specified language
    build pot           Build translation template files
+   build map           Build tag map files
 
    test rst            Lint the rst files
    test html           Test build the html files
@@ -350,8 +352,8 @@ def parse_command_line():
     parser02.add_argument(
         'build_target',
         action='store',
-        choices=['html', 'pdf', 'epub', 'po', 'pot'],
-        help="html = build html files, pdf = build pdf file, epub = build epub file, po = build translation files, pot = build translation template files"
+        choices=['html', 'pdf', 'epub', 'po', 'pot', 'map'],
+        help="html = build html files, pdf = build pdf file, epub = build epub file, po = build translation files, pot = build translation template files, map = build tag map files"
     )
 
     parser03 = subparsers.add_parser(
@@ -821,6 +823,24 @@ def build_pot():
     #         update_po(lang)
 
 
+def build_map():
+    """Build the tag mapping files.
+    """
+    create_directory(OUTPUT_DIR, 'Output Documents')
+
+    filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.html')
+    tag_mapping.write_html(filename)
+
+    filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.xlsx')
+    tag_mapping.write_spreadsheet(filename)
+
+    filename = os.path.join(SPHINX_SOURCE_DIR, 'appendices', 'tag_mapping.rst')
+    tag_mapping.write_rst(filename)
+
+    # filename = os.path.join(SPHINX_SOURCE_DIR, 'appendices', 'tag_mapping_pdf.rst')
+    # tag_mapping.write_rst(filename, pdf=True)
+
+
 def update_po(language):
     """Update the translation *.po files for the specified language.  Creates the files if
     don't exist.
@@ -928,6 +948,12 @@ def main():
             save_version_info()
             for lang in process_languages:
                 do_build(target=args.build_target, language=lang, clean=True)
+
+        elif args.build_target == 'map':
+            build_map()
+            # for lang in process_languages:
+            #     if lang != DEFAULT_LANGUAGE:
+            #         update_po(lang)
 
         elif args.build_target == 'po':
             # build_pot()

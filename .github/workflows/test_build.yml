@@ -49,6 +49,15 @@ jobs:
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+    - name: Build Tag Map Files
+      run: |
+        python ./setup.py build map
+    - name: Store Tag Map Build Output File
+      uses: actions/upload-artifact@v2
+      with:
+        name: tag_map_files
+        path: docs/MusicBrainz_Picard_Tag_Map.*
+        retention-days: 5
     - name: Update Translation Files
       run: |
         python ./setup.py build pot
