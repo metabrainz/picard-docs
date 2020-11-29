@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MusicBrainz Picard Tag Mapping</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="MusicBrainz, Picard, Tags, Tag Map">
+  <meta name="description" content="Mapping of the metadata tags used with MusicBrainz Picard.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: arial;
+      font-size: 11pt
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      margin: 0;
+      text-align: left;
+    }
+    th, .column1 {
+      font-weight: bold;
+      background-color: #e6e6e6;
+    }
+    code {
+      background-color: lightgray;
+    }
+  </style>
+
+  <link rel="shortcut icon" href="https://picard-docs.musicbrainz.org/en/_static/picard-icon.png"/>
+</head>
+<body>
+  <h1>MusicBrainz Picard Tag Mapping</h1>
+<table width="2970">
+<tr>
+  <th style="width: 250px">Tag Name</th>
+  <th style="width: 350px">Internal Name</th>
+  <th style="width: 450px">ID3v2</th>
+  <th style="width: 350px">Vorbis</th>
+  <th style="width: 250px">APEv2</th>
+  <th style="width: 550px">iTunes MP4</th>
+  <th style="width: 500px">ASF/Windows Media</th>
+  <th style="width: 150px">RIFF INFO</th>
+</tr>
+<tr>
+  <td class="column1">AcoustID</td>
+  <td><code>acoustid_id</code></td>
+  <td><code>TXXX:Acoustid Id</code></td>
+  <td><code>ACOUSTID_ID</code></td>
+  <td><code>ACOUSTID_ID</code></td>
+  <td><code>----:com.apple.iTunes:Acoustid Id</code></td>
+  <td><code>Acoustid/Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">AcoustID Fingerprint</td>
+  <td><code>acoustid_fingerprint</code></td>
+  <td><code>TXXX:Acoustid Fingerprint</code></td>
+  <td><code>ACOUSTID_FINGERPRINT</code></td>
+  <td><code>ACOUSTID_FINGERPRINT</code></td>
+  <td><code>----:com.apple.iTunes:Acoustid Fingerprint</code></td>
+  <td><code>Acoustid/Fingerprint</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Title">Album</a></td>
+  <td><code>album</code></td>
+  <td><code>TALB</code></td>
+  <td><code>ALBUM</code></td>
+  <td><code>Album</code></td>
+  <td><code>©alb</code></td>
+  <td><code>WM/AlbumTitle</code></td>
+  <td><code>IPRD</code></td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Artist">Album Artist</a></td>
+  <td><code>albumartist</code></td>
+  <td><code>TPE2</code></td>
+  <td><code>ALBUMARTIST</code></td>
+  <td><code>Album Artist</code></td>
+  <td><code>aART</code></td>
+  <td><code>WM/AlbumArtist</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Album Artist Sort Order</td>
+  <td><code>albumartistsort</code></td>
+  <td><code>TSO2</code> (Picard>=1.2)<br /><code>TXXX:ALBUMARTISTSORT</code> (Picard<=1.1)</td>
+  <td><code>ALBUMARTISTSORT</code></td>
+  <td><code>ALBUMARTISTSORT</code></td>
+  <td><code>soaa</code></td>
+  <td><code>WM/AlbumArtistSortOrder</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Album Sort Order <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>albumsort</code></td>
+  <td><code>TSOA</code></td>
+  <td><code>ALBUMSORT</code></td>
+  <td><code>ALBUMSORT</code></td>
+  <td><code>soal</code></td>
+  <td><code>WM/AlbumSortOrder</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/22661fb8-cdb7-4f67-8385-b2a8be6c9f0d">Arranger</a></td>
+  <td><code>arranger</code></td>
+  <td><code>TIPL:arranger</code> (ID3v2.4)<br /><code>IPLS:arranger</code> (ID3v2.3)</td>
+  <td><code>ARRANGER</code></td>
+  <td><code>Arranger</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Artist">Artist</a></td>
+  <td><code>artist</code></td>
+  <td><code>TPE1</code></td>
+  <td><code>ARTIST</code></td>
+  <td><code>Artist</code></td>
+  <td><code>©ART</code></td>
+  <td><code>Author</code></td>
+  <td><code>IART</code></td>
+</tr>
+<tr>
+  <td class="column1">Artist Sort Order</td>
+  <td><code>artistsort</code></td>
+  <td><code>TSOP</code></td>
+  <td><code>ARTISTSORT</code></td>
+  <td><code>ARTISTSORT</code></td>
+  <td><code>soar</code></td>
+  <td><code>WM/ArtistSortOrder</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Artists</td>
+  <td><code>artists</code></td>
+  <td><code>TXXX:Artists</code></td>
+  <td><code>ARTISTS</code></td>
+  <td><code>Artists</code></td>
+  <td><code>----:com.apple.iTunes:ARTISTS</code></td>
+  <td><code>WM/ARTISTS</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/ASIN">ASIN</a></td>
+  <td><code>asin</code></td>
+  <td><code>TXXX:ASIN</code></td>
+  <td><code>ASIN</code></td>
+  <td><code>ASIN</code></td>
+  <td><code>----:com.apple.iTunes:ASIN</code></td>
+  <td><code>ASIN</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Barcode">Barcode</a></td>
+  <td><code>barcode</code></td>
+  <td><code>TXXX:BARCODE</code></td>
+  <td><code>BARCODE</code></td>
+  <td><code>Barcode</code></td>
+  <td><code>----:com.apple.iTunes:BARCODE</code></td>
+  <td><code>WM/Barcode</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">BPM <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>bpm</code></td>
+  <td><code>TBPM</code></td>
+  <td><code>BPM</code></td>
+  <td><code>BPM</code></td>
+  <td><code>tmpo</code></td>
+  <td><code>WM/BeatsPerMinute</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Catalog_Number">Catalog Number</a></td>
+  <td><code>catalognumber</code></td>
+  <td><code>TXXX:CATALOGNUMBER</code></td>
+  <td><code>CATALOGNUMBER</code></td>
+  <td><code>CatalogNumber</code></td>
+  <td><code>----:com.apple.iTunes:CATALOGNUMBER</code></td>
+  <td><code>WM/CatalogNo</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Comment <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>comment:description</code></td>
+  <td><code>COMM:description</code></td>
+  <td><code>COMMENT</code></td>
+  <td><code>Comment</code></td>
+  <td><code>©cmt</code></td>
+  <td><code>Description</code></td>
+  <td><code>ICMT</code></td>
+</tr>
+<tr>
+  <td class="column1">Compilation (iTunes) <sup><a href="#fn5">[5]</a></sup></td>
+  <td><code>compilation</code></td>
+  <td><code>TCMP</code></td>
+  <td><code>COMPILATION</code></td>
+  <td><code>Compilation</code></td>
+  <td><code>cpil</code></td>
+  <td><code>WM/IsCompilation</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f">Composer</a></td>
+  <td><code>composer</code></td>
+  <td><code>TCOM</code></td>
+  <td><code>COMPOSER</code></td>
+  <td><code>Composer</code></td>
+  <td><code>©wrt</code></td>
+  <td><code>WM/Composer</code></td>
+  <td><code>IMUS</code></td>
+</tr>
+<tr>
+  <td class="column1">Composer Sort Order</td>
+  <td><code>composersort</code></td>
+  <td><code>TSOC</code> (Picard>=1.3)<br /><code>TXXX:COMPOSERSORT</code> (Picard<=1.2)</td>
+  <td><code>COMPOSERSORT</code></td>
+  <td><code>COMPOSERSORT</code></td>
+  <td><code>soco</code></td>
+  <td><code>WM/ComposerSortOrder</code> (Picard>=1.3)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/234670ce-5f22-4fd0-921b-ef1662695c5d">Conductor</a></td>
+  <td><code>conductor</code></td>
+  <td><code>TPE3</code></td>
+  <td><code>CONDUCTOR</code></td>
+  <td><code>Conductor</code></td>
+  <td><code>----:com.apple.iTunes:CONDUCTOR</code></td>
+  <td><code>WM/Conductor</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Copyright <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>copyright</code></td>
+  <td><code>TCOP</code></td>
+  <td><code>COPYRIGHT</code></td>
+  <td><code>Copyright</code></td>
+  <td><code>cprt</code></td>
+  <td><code>Copyright</code></td>
+  <td><code>ICOP</code></td>
+</tr>
+<tr>
+  <td class="column1">Disc Number</td>
+  <td><code>discnumber</code></td>
+  <td><code>TPOS</code></td>
+  <td><code>DISCNUMBER</code></td>
+  <td><code>Disc</code></td>
+  <td><code>disk</code></td>
+  <td><code>WM/PartOfSet</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Disc Subtitle</td>
+  <td><code>discsubtitle</code></td>
+  <td><code>TSST</code> (ID3v2.4 only)</td>
+  <td><code>DISCSUBTITLE</code></td>
+  <td><code>DiscSubtitle</code></td>
+  <td><code>----:com.apple.iTunes:DISCSUBTITLE</code></td>
+  <td><code>WM/SetSubTitle</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Encoded By <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>encodedby</code></td>
+  <td><code>TENC</code></td>
+  <td><code>ENCODEDBY</code></td>
+  <td><code>EncodedBy</code></td>
+  <td><code>©too</code></td>
+  <td><code>WM/EncodedBy</code></td>
+  <td><code>IENC</code></td>
+</tr>
+<tr>
+  <td class="column1">Encoder Settings <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>encodersettings</code></td>
+  <td><code>TSSE</code></td>
+  <td><code>ENCODERSETTINGS</code></td>
+  <td><code>EncoderSettings</code></td>
+  <td>n/a</td>
+  <td><code>WM/EncodingSettings</code> (Picard>=1.3.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/5dcc52af-7064-4051-8d62-7d80f4c3c907">Engineer</a></td>
+  <td><code>engineer</code></td>
+  <td><code>TIPL:engineer</code> (ID3v2.4)<br /><code>IPLS:engineer</code> (ID3v2.3)</td>
+  <td><code>ENGINEER</code></td>
+  <td><code>Engineer</code></td>
+  <td><code>----:com.apple.iTunes:ENGINEER</code></td>
+  <td><code>WM/Engineer</code></td>
+  <td><code>IENG</code></td>
+</tr>
+<tr>
+  <td class="column1">Gapless Playback <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>gapless</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>pgap</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Genre">Genre</a></td>
+  <td><code>genre</code></td>
+  <td><code>TCON</code></td>
+  <td><code>GENRE</code></td>
+  <td><code>Genre</code></td>
+  <td><code>©gen</code></td>
+  <td><code>WM/Genre</code></td>
+  <td><code>IGNR</code></td>
+</tr>
+<tr>
+  <td class="column1">Grouping <sup><a href="#fn3">[3]</a></sup></td>
+  <td><code>grouping</code></td>
+  <td><code>TIT1</code><br /><code>GRP1</code> <sup><a href="#fn8">[8]</a></sup></td>
+  <td><code>GROUPING</code></td>
+  <td><code>Grouping</code></td>
+  <td><code>©grp</code></td>
+  <td><code>WM/ContentGroupDescription</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Initial Key</td>
+  <td><code>key</code> (Picard>=1.4)</td>
+  <td><code>TKEY</code></td>
+  <td><code>KEY</code></td>
+  <td><code>KEY</code></td>
+  <td><code>----:com.apple.iTunes:initialkey</code></td>
+  <td><code>WM/InitialKey</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/ISRC">ISRC</a></td>
+  <td><code>isrc</code></td>
+  <td><code>TSRC</code></td>
+  <td><code>ISRC</code></td>
+  <td><code>ISRC</code></td>
+  <td><code>----:com.apple.iTunes:ISRC</code></td>
+  <td><code>WM/ISRC</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Language</td>
+  <td><code>language</code></td>
+  <td><code>TLAN</code></td>
+  <td><code>LANGUAGE</code></td>
+  <td><code>Language</code></td>
+  <td><code>----:com.apple.iTunes:LANGUAGE</code></td>
+  <td><code>WM/Language</code></td>
+  <td><code>ILNG</code></td>
+</tr>
+<tr>
+  <td class="column1">License <sup><a href="#fn6">[6]</a></sup> <sup><a href="#fn7">[7]</a></sup></td>
+  <td><code>license</code></td>
+  <td><code>WCOP</code> (single URL)<br /><code>TXXX:LICENSE</code> (multiple or non-URL)</td>
+  <td><code>LICENSE</code></td>
+  <td><code>LICENSE</code></td>
+  <td><code>----:com.apple.iTunes:LICENSE</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c">Lyricist</a></td>
+  <td><code>lyricist</code></td>
+  <td><code>TEXT</code></td>
+  <td><code>LYRICIST</code></td>
+  <td><code>Lyricist</code></td>
+  <td><code>----:com.apple.iTunes:LYRICIST</code></td>
+  <td><code>WM/Writer</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Lyrics <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>lyrics:description</code></td>
+  <td><code>USLT:description</code></td>
+  <td><code>LYRICS</code></td>
+  <td><code>Lyrics</code></td>
+  <td><code>©lyr</code></td>
+  <td><code>WM/Lyrics</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Format">Media</a></td>
+  <td><code>media</code></td>
+  <td><code>TMED</code></td>
+  <td><code>MEDIA</code></td>
+  <td><code>Media</code></td>
+  <td><code>----:com.apple.iTunes:MEDIA</code></td>
+  <td><code>WM/Media</code></td>
+  <td><code>IMED</code></td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/28338ee6-d578-485a-bb53-61dbfd7c6545">Mix-DJ</a></td>
+  <td><code>djmixer</code></td>
+  <td><code>TIPL:DJ-mix</code> (ID3v2.4)<br /><code>IPLS:DJ-mix</code> (ID3v2.3)</td>
+  <td><code>DJMIXER</code></td>
+  <td><code>DJMixer</code></td>
+  <td><code>----:com.apple.iTunes:DJMIXER</code></td>
+  <td><code>WM/DJMixer</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/3e3102e1-1896-4f50-b5b2-dd9824e46efe">Mixer</a></td>
+  <td><code>mixer</code></td>
+  <td><code>TIPL:mix</code> (ID3v2.4)<br /><code>IPLS:mix</code> (ID3v2.3)</td>
+  <td><code>MIXER</code></td>
+  <td><code>Mixer</code></td>
+  <td><code>----:com.apple.iTunes:MIXER</code></td>
+  <td><code>WM/Mixer</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Mood <sup><a href="#fn3">[3]</a></sup></td>
+  <td><code>mood</code></td>
+  <td><code>TMOO</code> (ID3v2.4 only)</td>
+  <td><code>MOOD</code></td>
+  <td><code>Mood</code></td>
+  <td><code>----:com.apple.iTunes:MOOD</code></td>
+  <td><code>WM/Mood</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Movement <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>movement</code> (Picard>=2.1)</td>
+  <td><code>MVNM</code></td>
+  <td><code>MOVEMENTNAME</code></td>
+  <td><code>MOVEMENTNAME</code></td>
+  <td><code>©mvn</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Movement Count <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>movementtotal</code> (Picard>=2.1)</td>
+  <td><code>MVIN</code></td>
+  <td><code>MOVEMENTTOTAL</code></td>
+  <td><code>MOVEMENTTOTAL</code></td>
+  <td><code>mvc</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Movement Number <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>movementnumber</code> (Picard>=2.1)</td>
+  <td><code>MVIN</code></td>
+  <td><code>MOVEMENT</code></td>
+  <td><code>MOVEMENT</code></td>
+  <td><code>mvi</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Artist ID</a></td>
+  <td><code>musicbrainz_artistid</code></td>
+  <td><code>TXXX:MusicBrainz Artist Id</code></td>
+  <td><code>MUSICBRAINZ_ARTISTID</code></td>
+  <td><code>MUSICBRAINZ_ARTISTID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Artist Id</code></td>
+  <td><code>MusicBrainz/Artist Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Disc_ID">MusicBrainz Disc ID</a></td>
+  <td><code>musicbrainz_discid</code></td>
+  <td><code>TXXX:MusicBrainz Disc Id</code></td>
+  <td><code>MUSICBRAINZ_DISCID</code></td>
+  <td><code>MUSICBRAINZ_DISCID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Disc Id</code></td>
+  <td><code>MusicBrainz/Disc Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Original Artist ID</a></td>
+  <td><code>musicbrainz_originalartistid</code></td>
+  <td><code>TXXX:MusicBrainz Original Artist Id</code></td>
+  <td><code>MUSICBRAINZ_ORIGINALARTISTID</code></td>
+  <td>n/a</td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Original Artist Id</code> (Picard>=2.1)</td>
+  <td><code>MusicBrainz/Original Artist Id</code> (Picard>=2.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Original Release ID</a></td>
+  <td><code>musicbrainz_originalalbumid</code></td>
+  <td><code>TXXX:MusicBrainz Original Album Id</code></td>
+  <td><code>MUSICBRAINZ_ORIGINALALBUMID</code></td>
+  <td>n/a</td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Original Album Id</code> (Picard>=2.1)</td>
+  <td><code>MusicBrainz/Original Album Id</code> (Picard>=2.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Recording ID</a></td>
+  <td><code>musicbrainz_recordingid</code></td>
+  <td><code>UFID:http://musicbrainz.org</code></td>
+  <td><code>MUSICBRAINZ_TRACKID</code></td>
+  <td><code>MUSICBRAINZ_TRACKID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Track Id</code></td>
+  <td><code>MusicBrainz/Track Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Release Artist ID</a></td>
+  <td><code>musicbrainz_albumartistid</code></td>
+  <td><code>TXXX:MusicBrainz Album Artist Id</code></td>
+  <td><code>MUSICBRAINZ_ALBUMARTISTID</code></td>
+  <td><code>MUSICBRAINZ_ALBUMARTISTID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Album Artist Id</code></td>
+  <td><code>MusicBrainz/Album Artist Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">MusicBrainz Release Group ID</td>
+  <td><code>musicbrainz_releasegroupid</code></td>
+  <td><code>TXXX:MusicBrainz Release Group Id</code></td>
+  <td><code>MUSICBRAINZ_RELEASEGROUPID</code></td>
+  <td><code>MUSICBRAINZ_RELEASEGROUPID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Release Group Id</code></td>
+  <td><code>MusicBrainz/Release Group Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Release ID</a></td>
+  <td><code>musicbrainz_albumid</code></td>
+  <td><code>TXXX:MusicBrainz Album Id</code></td>
+  <td><code>MUSICBRAINZ_ALBUMID</code></td>
+  <td><code>MUSICBRAINZ_ALBUMID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Album Id</code></td>
+  <td><code>MusicBrainz/Album Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Track ID</a></td>
+  <td><code>musicbrainz_trackid</code></td>
+  <td><code>TXXX:MusicBrainz Release Track Id</code></td>
+  <td><code>MUSICBRAINZ_RELEASETRACKID</code></td>
+  <td><code>MUSICBRAINZ_RELEASETRACKID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Release Track Id</code></td>
+  <td><code>MusicBrainz/Release Track Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/TRM">MusicBrainz TRM ID</a></td>
+  <td><code>musicbrainz_trmid</code> (deprecated)</td>
+  <td><code>TXXX:MusicBrainz TRM Id</code></td>
+  <td><code>MUSICBRAINZ_TRMID</code></td>
+  <td><code>MUSICBRAINZ_TRMID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz TRM Id</code></td>
+  <td><code>MusicBrainz/TRM Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">MusicBrainz Work ID</td>
+  <td><code>musicbrainz_workid</code></td>
+  <td><code>TXXX:MusicBrainz Work Id</code></td>
+  <td><code>MUSICBRAINZ_WORKID</code></td>
+  <td><code>MUSICBRAINZ_WORKID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Work Id</code></td>
+  <td><code>MusicBrainz/Work Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">MusicIP Fingerprint</td>
+  <td><code>musicip_fingerprint</code></td>
+  <td><code>TXXX:MusicMagic Fingerprint</code></td>
+  <td><code>FINGERPRINT=MusicMagic Fingerprint {fingerprint}</code></td>
+  <td>n/a</td>
+  <td><code>----:com.apple.iTunes:fingerprint</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/PUID">MusicIP PUID</a></td>
+  <td><code>musicip_puid</code></td>
+  <td><code>TXXX:MusicIP PUID</code></td>
+  <td><code>MUSICIP_PUID</code></td>
+  <td><code>MUSICIP_PUID</code></td>
+  <td><code>----:com.apple.iTunes:MusicIP PUID</code></td>
+  <td><code>MusicIP/PUID</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Original Album</td>
+  <td><code>originalalbum</code></td>
+  <td><code>TOAL</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>WM/OriginalAlbumTitle</code> (Picard>=2.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Original Artist</td>
+  <td><code>originalartist</code></td>
+  <td><code>TOPE</code></td>
+  <td>n/a</td>
+  <td><code>Original Artist</code> (Picard>=2.1)</td>
+  <td>n/a</td>
+  <td><code>WM/OriginalArtist</code> (Picard>=2.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Original Filename</td>
+  <td><code>originalfilename</code> (Picard>=2.3)</td>
+  <td><code>TOFN</code></td>
+  <td><code>ORIGINALFILENAME</code></td>
+  <td><code>ORIGINALFILENAME</code></td>
+  <td>n/a</td>
+  <td><code>WM/OriginalFilename</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Original Release Date <sup><a href="#fn1">[1]</a></sup></td>
+  <td><code>originaldate</code></td>
+  <td><code>TDOR</code> (ID3v2.4)<br /><code>TORY</code> (ID3v2.3)</td>
+  <td><code>ORIGINALDATE</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>WM/OriginalReleaseTime</code> (Picard>=1.3.1)<br /><code>WM/OriginalReleaseYear</code> (Picard<=1.3.0)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Original Release Year <sup><a href="#fn1">[1]</a></sup></td>
+  <td><code>originalyear</code></td>
+  <td>n/a</td>
+  <td><code>ORIGINALYEAR</code></td>
+  <td><code>ORIGINALYEAR</code></td>
+  <td>n/a</td>
+  <td><code>WM/OriginalReleaseYear</code> (Picard>=1.3.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Performer</td>
+  <td><code>performer:instrument</code></td>
+  <td><code>TMCL:instrument</code> (ID3v2.4)<br /><code>IPLS:instrument</code> (ID3v2.3)</td>
+  <td><code>PERFORMER={artist} (instrument)</code></td>
+  <td><code>Performer={artist} (instrument)</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Podcast <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>podcast</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>pcst</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Podcast URL <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>podcasturl</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>purl</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/5c0ceac3-feb4-41f0-868d-dc06f6e27fc0">Producer</a></td>
+  <td><code>producer</code></td>
+  <td><code>TIPL:producer</code> (ID3v2.4)<br /><code>IPLS:producer</code> (ID3v2.3)</td>
+  <td><code>PRODUCER</code></td>
+  <td><code>Producer</code></td>
+  <td><code>----:com.apple.iTunes:PRODUCER</code></td>
+  <td><code>WM/Producer</code></td>
+  <td><code>IPRO</code></td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Rating_System">Rating</a></td>
+  <td><code>_rating</code></td>
+  <td><code>POPM</code></td>
+  <td><code>RATING:user@email</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>WM/SharedUserRating</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Label_Name">Record Label</a></td>
+  <td><code>label</code></td>
+  <td><code>TPUB</code></td>
+  <td><code>LABEL</code></td>
+  <td><code>Label</code></td>
+  <td><code>----:com.apple.iTunes:LABEL</code></td>
+  <td><code>WM/Publisher</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Country">Release Country</a></td>
+  <td><code>releasecountry</code></td>
+  <td><code>TXXX:MusicBrainz Album Release Country</code></td>
+  <td><code>RELEASECOUNTRY</code></td>
+  <td><code>RELEASECOUNTRY</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Album Release Country</code></td>
+  <td><code>MusicBrainz/Album Release Country</code></td>
+  <td><code>ICNT</code></td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Date">Release Date</a></td>
+  <td><code>date</code></td>
+  <td><code>TDRC</code> (ID3v2.4)<br /><code>TYER</code> + <code>TDAT</code> (ID3v2.3)</td>
+  <td><code>DATE</code></td>
+  <td><code>Year</code></td>
+  <td><code>©day</code></td>
+  <td><code>WM/Year</code></td>
+  <td><code>ICRD</code></td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Status">Release Status</a></td>
+  <td><code>releasestatus</code></td>
+  <td><code>TXXX:MusicBrainz Album Status</code></td>
+  <td><code>RELEASESTATUS</code></td>
+  <td><code>MUSICBRAINZ_ALBUMSTATUS</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Album Status</code></td>
+  <td><code>MusicBrainz/Album Status</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Release_Type">Release Type</a></td>
+  <td><code>releasetype</code></td>
+  <td><code>TXXX:MusicBrainz Album Type</code></td>
+  <td><code>RELEASETYPE</code></td>
+  <td><code>MUSICBRAINZ_ALBUMTYPE</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Album Type</code></td>
+  <td><code>MusicBrainz/Album Type</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/7950be4d-13a3-48e7-906b-5af562e39544">Remixer</a></td>
+  <td><code>remixer</code></td>
+  <td><code>TPE4</code></td>
+  <td><code>REMIXER</code></td>
+  <td><code>MixArtist</code></td>
+  <td><code>----:com.apple.iTunes:REMIXER</code></td>
+  <td><code>WM/ModifiedBy</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">ReplayGain Album Gain</td>
+  <td><code>replaygain_album_gain</code> (Picard>=2.2)</td>
+  <td><code>TXXX:REPLAYGAIN_ALBUM_GAIN</code></td>
+  <td><code>REPLAYGAIN_ALBUM_GAIN</code></td>
+  <td><code>REPLAYGAIN_ALBUM_GAIN</code></td>
+  <td><code>----:com.apple.iTunes:REPLAYGAIN_ALBUM_GAIN</code></td>
+  <td><code>REPLAYGAIN_ALBUM_GAIN</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">ReplayGain Album Peak</td>
+  <td><code>replaygain_album_peak</code> (Picard>=2.2)</td>
+  <td><code>TXXX:REPLAYGAIN_ALBUM_PEAK</code></td>
+  <td><code>REPLAYGAIN_ALBUM_PEAK</code></td>
+  <td><code>REPLAYGAIN_ALBUM_PEAK</code></td>
+  <td><code>----:com.apple.iTunes:REPLAYGAIN_ALBUM_PEAK</code></td>
+  <td><code>REPLAYGAIN_ALBUM_PEAK</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">ReplayGain Album Range</td>
+  <td><code>replaygain_album_range</code> (Picard>=2.2)</td>
+  <td><code>TXXX:REPLAYGAIN_ALBUM_RANGE</code></td>
+  <td><code>REPLAYGAIN_ALBUM_RANGE</code></td>
+  <td><code>REPLAYGAIN_ALBUM_RANGE</code></td>
+  <td><code>----:com.apple.iTunes:REPLAYGAIN_ALBUM_RANGE</code></td>
+  <td><code>REPLAYGAIN_ALBUM_RANGE</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">ReplayGain Reference Loudness</td>
+  <td><code>replaygain_reference_loudness</code> (Picard>=2.2)</td>
+  <td><code>TXXX:REPLAYGAIN_REFERENCE_LOUDNESS</code></td>
+  <td><code>REPLAYGAIN_REFERENCE_LOUDNESS</code></td>
+  <td><code>REPLAYGAIN_REFERENCE_LOUDNESS</code></td>
+  <td><code>----:com.apple.iTunes:REPLAYGAIN_REFERENCE_LOUDNESS</code></td>
+  <td><code>REPLAYGAIN_REFERENCE_LOUDNESS</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">ReplayGain Track Gain</td>
+  <td><code>replaygain_track_gain</code> (Picard>=2.2)</td>
+  <td><code>TXXX:REPLAYGAIN_TRACK_GAIN</code></td>
+  <td><code>REPLAYGAIN_TRACK_GAIN</code></td>
+  <td><code>REPLAYGAIN_TRACK_GAIN</code></td>
+  <td><code>----:com.apple.iTunes:REPLAYGAIN_TRACK_GAIN</code></td>
+  <td><code>REPLAYGAIN_TRACK_GAIN</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">ReplayGain Track Peak</td>
+  <td><code>replaygain_track_peak</code> (Picard>=2.2)</td>
+  <td><code>TXXX:REPLAYGAIN_TRACK_PEAK</code></td>
+  <td><code>REPLAYGAIN_TRACK_PEAK</code></td>
+  <td><code>REPLAYGAIN_TRACK_PEAK</code></td>
+  <td><code>----:com.apple.iTunes:REPLAYGAIN_TRACK_PEAK</code></td>
+  <td><code>REPLAYGAIN_TRACK_PEAK</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">ReplayGain Track Range</td>
+  <td><code>replaygain_track_range</code> (Picard>=2.2)</td>
+  <td><code>TXXX:REPLAYGAIN_TRACK_RANGE</code></td>
+  <td><code>REPLAYGAIN_TRACK_RANGE</code></td>
+  <td><code>REPLAYGAIN_TRACK_RANGE</code></td>
+  <td><code>----:com.apple.iTunes:REPLAYGAIN_TRACK_RANGE</code></td>
+  <td><code>REPLAYGAIN_TRACK_RANGE</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Script</td>
+  <td><code>script</code></td>
+  <td><code>TXXX:SCRIPT</code></td>
+  <td><code>SCRIPT</code></td>
+  <td><code>Script</code></td>
+  <td><code>----:com.apple.iTunes:SCRIPT</code></td>
+  <td><code>WM/Script</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Show Name <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>show</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>tvsh</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Show Name Sort Order <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>showsort</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>sosn</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Show Work & Movement <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>showmovement</code> (Picard>=2.1)</td>
+  <td><code>TXXX:SHOWMOVEMENT</code></td>
+  <td><code>SHOWMOVEMENT</code></td>
+  <td><code>SHOWMOVEMENT</code></td>
+  <td><code>shwm</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Subtitle <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>subtitle</code></td>
+  <td><code>TIT3</code></td>
+  <td><code>SUBTITLE</code></td>
+  <td><code>Subtitle</code></td>
+  <td><code>----:com.apple.iTunes:SUBTITLE</code></td>
+  <td><code>WM/SubTitle</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Total Discs</td>
+  <td><code>totaldiscs</code></td>
+  <td><code>TPOS</code></td>
+  <td><code>DISCTOTAL and TOTALDISCS</code></td>
+  <td><code>Disc</code></td>
+  <td><code>disk</code></td>
+  <td><code>WM/PartOfSet</code> (Picard>=1.3.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Total Tracks</td>
+  <td><code>totaltracks</code></td>
+  <td><code>TRCK</code></td>
+  <td><code>TRACKTOTAL</code> and <code>TOTALTRACKS</code></td>
+  <td><code>Track</code></td>
+  <td><code>trkn</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Track Number</td>
+  <td><code>tracknumber</code></td>
+  <td><code>TRCK</code></td>
+  <td><code>TRACKNUMBER</code></td>
+  <td><code>Track</code></td>
+  <td><code>trkn</code></td>
+  <td><code>WM/TrackNumber</code></td>
+  <td><code>ITRK</code></td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/Track_Title">Track Title</a></td>
+  <td><code>title</code></td>
+  <td><code>TIT2</code></td>
+  <td><code>TITLE</code></td>
+  <td><code>Title</code></td>
+  <td><code>©nam</code></td>
+  <td><code>Title</code></td>
+  <td><code>INAM</code></td>
+</tr>
+<tr>
+  <td class="column1">Track Title Sort Order <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>titlesort</code></td>
+  <td><code>TSOT</code></td>
+  <td><code>TITLESORT</code></td>
+  <td><code>TITLESORT</code></td>
+  <td><code>sonm</code></td>
+  <td><code>WM/TitleSortOrder</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Website (official artist website)</td>
+  <td><code>website</code></td>
+  <td><code>WOAR</code></td>
+  <td><code>WEBSITE</code></td>
+  <td><code>Weblink</code></td>
+  <td>n/a</td>
+  <td><code>WM/AuthorURL</code> (Picard>=1.3.1)</td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1">Work Title</td>
+  <td><code>work</code> (Picard>=1.3)</td>
+  <td><code>TXXX:WORK</code> <code>TIT1</code> <sup><a href="#fn8">[8]</a></sup></td>
+  <td><code>WORK</code></td>
+  <td><code>WORK</code></td>
+  <td><code>©wrk</code> (Picard>=2.1)</td>
+  <td><code>WM/Work</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68">Writer</a> <sup><a href="#fn2">[2]</a></sup></td>
+  <td><code>writer</code></td>
+  <td><code>TXXX:Writer</code> (Picard>=1.3)</td>
+  <td><code>WRITER</code></td>
+  <td><code>Writer</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>IWRI</code></td>
+</tr>
+</table>
+
+<h2>Notes:</h2>
+<ol>
+  <li style="width: 1200px;" id="fn1">Taken from the earliest release in the release group.</li>
+  <li style="width: 1200px;" id="fn2">Used when uncertain whether composer or lyricist.</li>
+  <li style="width: 1200px;" id="fn3">This is populated by LastFMPlus plugin and not by stock Picard.</li>
+  <li style="width: 1200px;" id="fn4">This is not able to be populated by stock Picard. It may be used and populated by certain plugins.</li>
+  <li style="width: 1200px;" id="fn5">For Picard>=1.3 this indicates a Various Artists album; for Picard<=1.2 this indicates albums with tracks by different artists which is incorrect (e.g.: an original album with a duet with a feat. artist would show as a Compilation). In neither case does this indicate a MusicBrainz Release Group subtype of compilation.</li>
+  <li style="width: 1200px;" id="fn6"><a href="https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50">Release-level license</a> relationship type.</li>
+  <li style="width: 1200px;" id="fn7"><a href="https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a">Recording-level license</a> relationship type.</li>
+  <li style="width: 1200px;" id="fn8">With "Save iTunes compatible grouping and work" (since Picard>=2.1.0)</li>
+</ol>
+
+</body>
+</html>
