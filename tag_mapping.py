@@ -9,7 +9,7 @@ tag mapping pages, HTML table and Excel spreadsheet.
 # https://docs.google.com/spreadsheets/d/1afugW3R1FRDN-mwt5SQLY4R7aLAu3RqzjN3pR1497Ok/edit#gid=0
 
 import re
-import textwrap
+
 import xlsxwriter
 
 
@@ -39,16 +39,18 @@ COLUMNS = [
 # Notes to display below the tag information
 #
 # Notes may include RST links and newlines.
-NOTES = [
-    ("1", "Taken from the earliest release in the release group."),
-    ("2", "Used when uncertain whether composer or lyricist."),
-    ("3", "This is populated by LastFMPlus plugin and not by stock Picard."),
-    ("4", "This is not able to be populated by stock Picard. It may be used and populated by certain plugins."),
-    ("5", "For Picard>=1.3 this indicates a Various Artists album; for Picard<=1.2 this indicates albums with tracks by different artists which is incorrect (e.g.: an original album with a duet with a feat. artist would show as a Compilation). In neither case does this indicate a MusicBrainz Release Group subtype of compilation."),
-    ("6", "`Release-level license <https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_ relationship type."),
-    ("7", "`Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type."),
-    ("8", "With \"Save iTunes compatible grouping and work\" (since Picard>=2.1.0)"),
-]
+NOTES = {
+    1: "Taken from the earliest release in the release group.",
+    2: "Used when uncertain whether composer or lyricist.",
+    3: "This is populated by LastFMPlus plugin and not by stock Picard.",
+    4: "This is not able to be populated by stock Picard. It may be used and populated by certain plugins.",
+    5: "For Picard>=1.3 this indicates a Various Artists album; for Picard<=1.2 this indicates albums with tracks by different artists which is incorrect (e.g.: an original album with a duet with a feat. artist would show as a Compilation). In neither case does this indicate a MusicBrainz Release Group subtype of compilation.",
+    6: "`Release-level license <https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_ relationship type.",
+    7: "`Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.",
+    8: "With \"Save iTunes compatible grouping and work\" (since Picard>=2.1.0)",
+}
+NOTES_NUMBERS = list(NOTES.keys())
+NOTES_NUMBERS.sort()
 
 # Tag Mapping information
 #
@@ -1111,9 +1113,8 @@ def write_spreadsheet(filename):
     tag_name_format = workbook.add_format({'bold': True, 'align': 'left', 'valign': 'top', 'bg_color': '#e6e6e6', 'bottom': 1})
     tag_info_format = workbook.add_format({'align': 'left', 'valign': 'top', 'text_wrap': True})
     notes_title_format = workbook.add_format({'bold': True, 'align': 'left', 'font_size': 18})
-    notes_number_format = workbook.add_format({'align': 'right', 'valign': 'top'})
-    # notes_text_format = workbook.add_format({'align': 'left', 'valign': 'top', 'text_wrap': True})
-    notes_text_format = workbook.add_format({'align': 'left', 'valign': 'top'})
+    # notes_number_format = workbook.add_format({'align': 'right', 'valign': 'top'})
+    # notes_text_format = workbook.add_format({'align': 'left', 'valign': 'top'})
 
     # Write the title
     worksheet.write('A1', 'MusicBrainz Picard Tag Mapping', title_format)
@@ -1142,14 +1143,10 @@ def write_spreadsheet(filename):
     # Write the notes section
     row += 2
     worksheet.write(row, 1, 'Notes:', notes_title_format)
-    # for num, text in enumerate(NOTES, start=1):
-    for num, text in NOTES:
+    for num in NOTES_NUMBERS:
         row += 1
-        text = str(text).replace('``', '')
+        text = str(NOTES[num]).replace('``', '')
         text = re.sub(RE_STRIP_URL, r'\1', text)
-
-        # worksheet.write(row, 0, '{0}.  '.format(num,), notes_number_format)
-        # worksheet.write(row, 1, text, notes_text_format)
         worksheet.write(row, 1, '{0}.  {1}'.format(num, text,))
 
     workbook.close()
@@ -1213,6 +1210,7 @@ def write_html(filename):
     for (name, val, pts, px) in COLUMNS:
         width += px + 15
     html = '<table width="{0}">\n<tr>\n'.format(width,)
+
     # Write the table headers
     for (name, val, pts, px) in COLUMNS:
         text = str(val).replace('\n', '<br />')
@@ -1239,9 +1237,8 @@ def write_html(filename):
 
     # Write the notes section
     html += '<h2>Notes:</h2>\n<ol>\n'
-    # for num, text in enumerate(NOTES, start=1):
-    for num, text in NOTES:
-        text = str(text).replace('\n', '<br />')
+    for num in NOTES_NUMBERS:
+        text = str(NOTES[num]).replace('\n', '<br />')
         text = re.sub(RE_MAKE_CODE, r'<code>\1</code>', text)
         text = re.sub(RE_MAKE_ANCHOR, r'<a href="\2">\1</a>', text)
         html += '  <li style="width: 1200px;" id="fn{0}">{1}</li>\n'.format(num, text)
@@ -1262,48 +1259,13 @@ def write_rst(filename, pdf=False):
     RE_MAKE_FOOTNOTE = re.compile(r'(\[([0-9]+)\])')
     rst = '.. MusicBrainz Picard Documentation Project\n\n'
     rst += '.. Picard Tag Mapping\n\n.. This file is automatically generated. Any changes entered manually will be overwritten.\n\n'
-    rst += ':orphan:\n\n'
+    # rst += ':orphan:\n\n'   # Only required if generating separate files for HTML and PDF output.
     temp = 'Appendix B: :index:`Tag Mapping <pair: mapping; tags>`'
     rst += temp + '\n' + '=' * len(temp) + '\n\n'
     rst += 'The following is a mapping between Picard internal tag names and those used by various tagging formats.\n'
-    # if not pdf:
-    #     rst += 'The mapping is also available as a `table <tag_map.html>`_ and a `spreadsheet <tag_map.xlsx>`_.\n'
     rst += 'The mapping is also available as a `table <https://picard-docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map.html>`_'
     rst += ' and a `spreadsheet <https://picard-docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map.xlsx>`_.\n'
     rst += '\n'
-
-    # # Write the tag values
-    # for tag in TAG_MAP:
-    #     temp = str(tag['tag_name']).replace('\n', ' ')
-    #     if pdf:
-    #         temp = re.sub(RE_MAKE_FOOTNOTE, r' :sup:`\1` ', temp)
-    #     else:
-    #         temp = re.sub(RE_MAKE_FOOTNOTE, r' [#f\2]_ ', temp)
-    #     temp = re.sub(r'\s+', ' ', temp)
-    #     temp = temp.strip()
-    #     temp += '\n'
-    #     rst += temp + '-' * len(temp) + '\n.. csv-table::\n   :width: 100%\n   :widths: 37 100\n\n'
-    #     for col, (name, val, pts, px) in enumerate(COLUMNS):
-    #         if col:
-    #             temp = '"' + str(val).replace('\n', ' ') + '", "' + str(tag[name]).replace('\n', ' ') + '"'
-    #             if not pdf:
-    #                 temp = re.sub(RE_MAKE_FOOTNOTE, r' [#f\2]_ ', temp)
-    #                 temp = re.sub(r'\s+', ' ', temp)
-    #             rst += '   ' + temp.strip() + '\n'
-    #     if 'seealso' in tag and tag['seealso']:
-    #         rst += '\n.. seealso::\n\n'
-    #         for temp in str(tag['seealso']).split('\n'):
-    #             rst += '   ' + temp.strip() + '\n'
-    #     rst += '\n\n'
-
-    # # Write the notes
-    # rst += '.. rubric:: Notes:\n\n'
-    # # for num, text in enumerate(NOTES, start=1):
-    # for num, text in NOTES:
-    #     temp = '#.' if pdf else '.. [#f{0}]'.format(num,)
-    #     rst += temp + ' ' + str(text).replace('\n', ' ').strip() + '\n'
-    # if pdf:
-    #     rst += '\n.. raw:: latex\n\n   \clearpage\n'
 
     # Write the tag values
     for tag in TAG_MAP:
@@ -1328,10 +1290,9 @@ def write_rst(filename, pdf=False):
 
     # Write the notes
     rst += '.. rubric:: Notes:\n\n'
-    # for num, text in enumerate(NOTES, start=1):
-    for num, text in NOTES:
+    for num in NOTES_NUMBERS:
         temp = '#.'
-        rst += temp + ' ' + str(text).replace('\n', ' ').strip() + '\n'
+        rst += temp + ' ' + str(NOTES[num]).replace('\n', ' ').strip() + '\n'
     if pdf:
         rst += '\n.. raw:: latex\n\n   \clearpage\n'
 
