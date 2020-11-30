@@ -28,8 +28,13 @@ alphanumeric characters enclosed in percent signs (e.g.: ``%artist%``). Function
 start with a dollar sign and end with an argument list enclosed in parentheses (e.g.:
 ``$lower(...)``).
 
-To use parentheses or commas as-is inside a function call, you must escape them with
-a backslash.
+.. note::
+
+   When entering input strings into Picard scripts you have to escape a backslash "\\",
+   dollar sign "$", comma "," and the left and right parentheses "(" and ")" in order to force
+   Picard to not interpret them as part of the script command.  This is done by inserting
+   a backslash before the character to be escaped.  For example, to set a tag value to ``($1,000,000)``
+   it would have to be entered as ``$set(test_tag,\(\$1\,000\,000\))``.
 
 Metadata Variables
 ------------------
