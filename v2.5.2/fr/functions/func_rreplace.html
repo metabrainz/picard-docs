@@ -245,6 +245,10 @@
 </div>
 <p><strong>La description:</strong></p>
 <p>Expression régulière remplacer. Cette fonction remplacera le groupe correspondant spécifié par <code class="docutils literal notranslate"><span class="pre">motif</span></code> par <code class="docutils literal notranslate"><span class="pre">remplacement</span></code> dans <code class="docutils literal notranslate"><span class="pre">texte</span></code>. Pour plus d’informations sur les expressions régulières, veuillez consulter <a class="reference external" href="https://wikipedia.org/wiki/Regular_expression">l’article sur Wikipedia</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lors de la saisie d’expressions régulières dans des scripts Picard, vous devez échapper une barre oblique inverse « \ », un signe dollar « $ », une virgule « , » et les parenthèses gauche et droite « ( » et « ) » pour forcer Picard à ne pas les interpréter dans le cadre de la commande de script. Cela se fait en insérant une barre oblique inverse avant le caractère à échapper. Par exemple, l’expression régulière <code class="docutils literal notranslate"><span class="pre">^\s*([0-9,\.]*)$</span></code> devrait être saisie sous la forme <code class="docutils literal notranslate"><span class="pre">^\\s*\([0-9\,\\.]*\)\$</span></code>.</p>
+</div>
 <p><strong>Exemple:</strong></p>
 <p>Les instructions suivantes renverront les valeurs indiquées:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$rreplace(test \(disc 1\),\\s\\\(disc \\d+\\\),)  ==&gt;  &quot;test&quot;

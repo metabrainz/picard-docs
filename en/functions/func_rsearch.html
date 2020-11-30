@@ -246,6 +246,14 @@
 <p>Regular expression search. This function will return the first matching group specified by
 <code class="docutils literal notranslate"><span class="pre">pattern</span></code> from <code class="docutils literal notranslate"><span class="pre">text</span></code>.  For more information about regular expressions, please see the
 <a class="reference external" href="https://wikipedia.org/wiki/Regular_expression">article on Wikipedia</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When entering regular expressions into Picard scripts you have to escape a backslash “\”,
+dollar sign “$”, comma “,” and the left and right parentheses “(” and “)” in order to force
+Picard to not interpret them as part of the script command.  This is done by inserting
+a backslash before the character to be escaped.  For example, the regular expression
+<code class="docutils literal notranslate"><span class="pre">^\s*([0-9,\.]*)$</span></code> would have to be entered as <code class="docutils literal notranslate"><span class="pre">^\\s*\([0-9\,\\.]*\)\$</span></code>.</p>
+</div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$rsearch(test \(disc 1\),\\\(disc \(\\d+\)\\\))  ==&gt;  &quot;1&quot;

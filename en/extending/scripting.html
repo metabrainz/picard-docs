@@ -224,8 +224,14 @@ There are three base elements: text, variable and function. Variables consist of
 alphanumeric characters enclosed in percent signs (e.g.: <code class="docutils literal notranslate"><span class="pre">%artist%</span></code>). Functions
 start with a dollar sign and end with an argument list enclosed in parentheses (e.g.:
 <code class="docutils literal notranslate"><span class="pre">$lower(...)</span></code>).</p>
-<p>To use parentheses or commas as-is inside a function call, you must escape them with
-a backslash.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When entering input strings into Picard scripts you have to escape a backslash “\”,
+dollar sign “$”, comma “,” and the left and right parentheses “(” and “)” in order to force
+Picard to not interpret them as part of the script command.  This is done by inserting
+a backslash before the character to be escaped.  For example, to set a tag value to <code class="docutils literal notranslate"><span class="pre">($1,000,000)</span></code>
+it would have to be entered as <code class="docutils literal notranslate"><span class="pre">$set(test_tag,\(\$1\,000\,000\))</span></code>.</p>
+</div>
 </div>
 <div class="section" id="metadata-variables">
 <h2>Metadata Variables<a class="headerlink" href="#metadata-variables" title="Permalink to this headline">¶</a></h2>

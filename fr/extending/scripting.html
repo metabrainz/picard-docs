@@ -217,7 +217,10 @@
 <div class="section" id="syntax">
 <h2><span class="target" id="index-3"></span>Syntaxe<a class="headerlink" href="#syntax" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La syntaxe est dérivée du <a class="reference external" href="https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference">format de titre de Foobar2000</a>. Il existe trois éléments de base: le texte, la variable et la fonction. Les variables sont constituées de caractères alphanumériques entourés de signes de pourcentage (par exemple: <code class="docutils literal notranslate"><span class="pre">%artiste%</span></code>). Les fonctions commencent par un signe dollar et se terminent par une liste d’arguments entre parenthèses (par exemple: <code class="docutils literal notranslate"><span class="pre">$lower(...)</span></code>).</p>
-<p>Pour utiliser des parenthèses ou des virgules telles quelles dans un appel de fonction, vous devez les échapper avec une barre oblique inverse.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lorsque vous entrez des chaînes d’entrée dans des scripts Picard, vous devez échapper une barre oblique inverse « \ », un signe dollar « $ », une virgule « , » et les parenthèses gauche et droite « ( » et « ) » afin de forcer Picard à ne pas les interpréter dans le cadre de la commande de script. Cela se fait en insérant une barre oblique inverse avant le caractère à échapper. Par exemple, pour définir une valeur de balise sur <code class="docutils literal notranslate"><span class="pre">($1,000,000)</span></code>, il faudrait la saisir sous la forme <code class="docutils literal notranslate"><span class="pre">$set(test_tag,\(\$1\,000\,000\))</span></code>.</p>
+</div>
 </div>
 <div class="section" id="metadata-variables">
 <h2>Variables de métadonnées<a class="headerlink" href="#metadata-variables" title="Lien permanent vers ce titre">¶</a></h2>
