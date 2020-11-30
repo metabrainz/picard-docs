@@ -17,7 +17,7 @@
    <title>MusicBrainz Picard Documentation</title>
 </head>
 <body>
-   <!-- <div id='test'></div> -->
+   <div id='redirection_error'></div>
    <script>
       var target_language = '{{default_language}}';
       var target_version = '';
@@ -40,6 +40,10 @@
       const re_language = /^[a-z][a-z](-[A-Z][A-Z])?$/;
       const re_version1 = /^[0-9][0-9\.]*$/;
       const re_version2 = /^v[0-9][0-9\.]*$/;
+      const re_version3 = /^v([0-9]+\.[0-9]+)/;
+      const re_version4 = /^([0-9]+\.[0-9]+)/;
+
+      const not_found = 'not_found.html';
 
       function is_language(test_language) {
          if (debug) { window.alert("Testing language: " + test_language); }
@@ -63,11 +67,14 @@
             if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
-         if (version_list.indexOf(test_version) < 0) {
-            if (debug) { window.alert("Failed supported versions check."); }
+         var arr = re_version4.exec(test_version);
+         var temp = arr[1];
+         if (version_list.indexOf(temp) < 0) {
+            if (debug) { window.alert("Failed supported versions check.  Version: " + temp); }
             return false;
          }
-         target_version = '/v' + test_version;
+         // target_version = '/v' + test_version;
+         target_version = '/v' + temp;
          has_version = true;
          has_rtd_format = true;
          if (debug) { window.alert("Passed. Target version set to: " + target_version); }
@@ -80,73 +87,92 @@
             if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
-         var temp = test_version.substring(1);
+         var arr = re_version3.exec(test_version);
+         // var temp = test_version.substring(1);
+         var temp = arr[1];
          if (version_list.indexOf(temp) < 0) {
-            if (debug) { window.alert("Failed supported versions check."); }
+            if (debug) { window.alert("Failed supported versions check.  Version: " + temp); }
             target_version = '';
             // has_version = true;
             return true;
          }
          target_version = '/' + test_version;
+         target_version = '/v' + temp;
          has_version = true;
          if (debug) { window.alert("Passed. Target version set to: " + target_version); }
          return true;
       }
 
       var counter = 1;
-      // Check for GitHub Pages style version number
-      if (is_gh_version(src_path_parts[counter])) {
-         target_path = target_version;
-         counter += 1;
-      }
-
-      // Check for language identifier
-      if (is_language(src_path_parts[counter])) {
-         counter += 1;
-      }
-      target_path += '/' + target_language;
-      has_language = true;
-
-      // Check for ReadTheDocs style version number
-      if ((!has_version) && ((is_rtd_version(src_path_parts[counter])) || (src_path_parts[counter].search(/^(latest|stable)$/) >= 0))) {
-         if (is_rtd_version(src_path_parts[counter])) {
-            target_path = target_version + '/' + target_language;
-         }
-         else {
-            if (src_path_parts[counter] == 'stable') {
-               target_path = '/v' + latest_version + '/' + target_language;
-            }
-         }
-         well_formed = false;
-         counter += 1;
-      }
-
-      // Patch to redirect to new location of scripting documentation
-      if (src_path_parts[counter] == 'scripting.html') {
-         target_path += '/extending';
-         if (debug) { window.alert("Patching target url for updated location of scripting.html file."); }
-         if ((has_language) || (has_version)) {
-            well_formed = false;
-         }
-      }
-
-      // Combine remaining portions of the submitted path
-      while (counter < src_path_parts.length) {
-         target_path += '/' + src_path_parts[counter];
-         counter += 1;
-      }
-
-      // Build the redirection target url
-      if (well_formed) {
-         target_url = src_protocol + '//' + src_host + target_version + '/' + target_language + '/not_found.html';
+      if (src_path_parts[src_path_parts.length - 1] == not_found) {
+         if (debug) { window.alert("Unable to find the not_found.html file."); }
+         document.getElementById('redirection_error').innerHTML = "<h1>Redirection Error</h1>\n<p>We're sorry but there was a problem redirecting to your requested page.</p>";
       }
       else {
-         target_url = src_protocol + '//' + src_host + target_path;
-      }
+         // Check for GitHub Pages style version number
+         if (is_gh_version(src_path_parts[counter])) {
+            target_path = target_version;
+            counter += 1;
+         }
 
-      // Redirect to the new target
-      if (debug) { window.alert('Old URL: ' + window.location + "\nNew URL: " + target_url); }
-      window.location.replace(target_url);
+         // Check for language identifier
+         if (is_language(src_path_parts[counter])) {
+            counter += 1;
+         }
+         target_path += '/' + target_language;
+         has_language = true;
+
+         var anchor_test = document.URL.split('#');
+         if (debug) { window.alert('Performing anchor test.\n\nLength: ' + anchor_test.length + "\nLast Part: " + anchor_test[anchor_test.length - 1]); }
+         if ((anchor_test.length > 1) && (anchor_test[anchor_test.length - 1] == "redirected")) {
+            target_url = src_protocol + '//' + src_host + target_version + '/' + target_language + '/' + not_found;
+            if (debug) { window.alert('Page has already been redirected.\n\nOld URL: ' + window.location + "\nNew URL: " + target_url); }
+         }
+
+         if (target_url == "") {
+
+            // Check for ReadTheDocs style version number
+            if ((!has_version) && ((is_rtd_version(src_path_parts[counter])) || (src_path_parts[counter].search(/^(latest|stable)$/) >= 0))) {
+               if (is_rtd_version(src_path_parts[counter])) {
+                  target_path = target_version + '/' + target_language;
+               }
+               else {
+                  if (src_path_parts[counter] == 'stable') {
+                     target_path = '/v' + latest_version + '/' + target_language;
+                  }
+               }
+               well_formed = false;
+               counter += 1;
+            }
+
+            // Patch to redirect to new location of scripting documentation
+            if (src_path_parts[counter] == 'scripting.html') {
+               target_path += '/extending';
+               if (debug) { window.alert("Patching target url for updated location of scripting.html file."); }
+               if ((has_language) || (has_version)) {
+                  well_formed = false;
+               }
+            }
+
+            // Combine remaining portions of the submitted path
+            while (counter < src_path_parts.length) {
+               target_path += '/' + src_path_parts[counter];
+               counter += 1;
+            }
+
+            // Build the redirection target url
+            if (well_formed) {
+               target_url = src_protocol + '//' + src_host + target_version + '/' + target_language + '/' + not_found;
+            }
+            else {
+               target_url = src_protocol + '//' + src_host + target_path + "#redirected";
+            }
+         }
+
+         // Redirect to the new target
+         if (debug) { window.alert('Old URL: ' + window.location + "\nNew URL: " + target_url); }
+         window.location.replace(target_url);
+      }
    </script>
 </body>
 </html>
