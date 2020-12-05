@@ -4,6 +4,8 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+# pylint: disable=missing-module-docstring
+
 
 # -- Path setup --------------------------------------------------------------
 
@@ -26,7 +28,7 @@ copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this
 
 project = 'MusicBrainz Picard'
 # copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
-copyright = 'This documentation is licensed under CC0 1.0.'
+copyright = 'This documentation is licensed under CC0 1.0.'     # pylint: disable=redefined-builtin
 author = 'Bob Swift'
 
 # The full version, including alpha/beta/rc tags

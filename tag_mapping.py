@@ -8,10 +8,13 @@ tag mapping pages, HTML table and Excel spreadsheet.
 # Tag Reference Table by outsidecontext:
 # https://docs.google.com/spreadsheets/d/1afugW3R1FRDN-mwt5SQLY4R7aLAu3RqzjN3pR1497Ok/edit#gid=0
 
+# pylint: disable=line-too-long
+# pylint: disable=too-many-lines
+
 import re
+import sys
 
 import xlsxwriter
-
 
 # Column headings to use for the table
 #
@@ -1096,7 +1099,7 @@ def rc2cell(row, col):
     return '{0}{1}'.format(cell_col, cell_row)
 
 
-def write_spreadsheet(filename):
+def write_spreadsheet(filename):    # pylint: disable=too-many-locals
     """Output the tag mapping information in the form of an Excel spreadsheet (*.xlsx) file.
 
     Args:
@@ -1122,7 +1125,7 @@ def write_spreadsheet(filename):
     row = 2
 
     # Write the table headers
-    for col, (name, val, pts, px) in enumerate(COLUMNS):
+    for col, (name, val, pts, px) in enumerate(COLUMNS):    # pylint: disable=unused-variable
         worksheet.write(row, col, val, tag_header_format)
         worksheet.set_column(col, col, pts)
 
@@ -1207,7 +1210,7 @@ def write_html(filename):
     RE_MAKE_CODE = re.compile(r'``([^`]*)``')
     RE_MAKE_ANCHOR = re.compile(r'`(.*)\s+<([^>]*)>`_')
     width = 0
-    for (name, val, pts, px) in COLUMNS:
+    for (name, val, pts, px) in COLUMNS:    # pylint: disable=unused-variable
         width += px + 15
     html = '<table width="{0}">\n<tr>\n'.format(width,)
 
@@ -1276,7 +1279,7 @@ def write_rst(filename, pdf=False):
         temp = temp.strip()
         temp += '\n'
         rst += temp + '-' * len(temp) + '\n.. csv-table::\n   :width: 100%\n   :widths: 37 100\n\n'
-        for col, (name, val, pts, px) in enumerate(COLUMNS):
+        for col, (name, val, pts, px) in enumerate(COLUMNS):    # pylint: disable=unused-variable
             if col:
                 temp = '"' + str(val).replace('\n', ' ') + '", "' + str(tag[name]).replace('\n', ' ') + '"'
                 temp = re.sub(RE_MAKE_FOOTNOTE, r' :sup:`\1` ', temp)
@@ -1294,7 +1297,7 @@ def write_rst(filename, pdf=False):
         temp = '#.'
         rst += temp + ' ' + str(NOTES[num]).replace('\n', ' ').strip() + '\n'
     if pdf:
-        rst += '\n.. raw:: latex\n\n   \clearpage\n'
+        rst += '\n.. raw:: latex\n\n   \\clearpage\n'
 
     # Write the output file
     with open(filename, 'w', encoding='utf8') as ofile:
@@ -1304,7 +1307,7 @@ def write_rst(filename, pdf=False):
 def main():
     """Main part of script to execute.
     """
-    exit()
+    sys.exit()
 
 
 ##############################################################################
