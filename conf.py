@@ -17,6 +17,7 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 import datetime
+import re
 
 # import sphinx_rtd_theme
 # import picard_theme
@@ -44,6 +45,7 @@ release_list = [
     'v2.5.2',
 ]
 version = release
+major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
 
 # Language information
 default_language = 'en'
@@ -133,6 +135,7 @@ html_context = {
     ],
     'default_language': default_language,
     'supported_languages': supported_languages,
+    'major_minor': major_minor,
     'release': release,
     'releases': release_list,
 }

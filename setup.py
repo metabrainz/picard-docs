@@ -363,7 +363,7 @@ class LintRST():
         Returns:
             {int} -- Error code 1 if check failed, otherwise 0.
         """
-        for dir_name, _, file_list in os.walk(root_dir):
+        for dir_name, subdir_list, file_list in os.walk(root_dir):  # pylint: disable=unused-variable
             for fname in file_list:
                 if str(fname).lower().endswith('.rst'):
                     self.check_file(os.path.join(dir_name, fname), ignore_info)
@@ -814,7 +814,7 @@ def build_html(language=''):
         print('Files not copied.  Error: {0}'.format(ex))
         exit_with_code(1)
 
-    zip_file = os.path.join(OUTPUT_DIR, '{0}_{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, conf.version, language))
+    zip_file = os.path.join(OUTPUT_DIR, '{0}_{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, conf.major_minor, language))
     print('Removing old ZIP file: {0}'.format(zip_file))
     remove_file(zip_file)
     print('Copying HTML to ZIP file: {0}'.format(zip_file))
@@ -823,9 +823,9 @@ def build_html(language=''):
     try:
         with zipfile.ZipFile(zip_file, 'w') as myzip:
             os.chdir(output_dir)
-            for dirName, subdirList, fileList in os.walk('.'):
-                for fname in fileList:
-                    f_name = os.path.join(dirName, fname)
+            for dir_name, subdir_list, file_list in os.walk('.'):   # pylint: disable=unused-variable
+                for fname in file_list:
+                    f_name = os.path.join(dir_name, fname)
                     myzip.write(f_name)
     except (OSError, zipfile.BadZipFile, zipfile.LargeZipFile) as ex:
         print('Error creating ZIP file.  Error: {0}'.format(ex))
@@ -842,7 +842,7 @@ def build_pdf(language=''):
     """
     try:
         pdf_file = os.path.join(SPHINX_.BUILD_DIR, 'latex', 'musicbrainzpicard.pdf')
-        target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].pdf'.format(conf.version, language))
+        target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].pdf'.format(conf.major_minor, language))
         # Multiple checks if file exists to accommodate race condition in Windows
         counter = 50
         while counter and not os.path.exists(pdf_file):
@@ -868,7 +868,7 @@ def build_epub(language=''):
         language {str} -- Language to use for the build (default: {''})
     """
     epub_file = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS['epub']['dir'], 'MusicBrainzPicard.epub')
-    target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].epub'.format(conf.version, language))
+    target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].epub'.format(conf.major_minor, language))
     print('Copying output to: {0}\n'.format(target_file))
     try:
         shutil.copyfile(epub_file, target_file)
