@@ -47,7 +47,8 @@ release_list = [
 version = release
 major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
 
-# Language information
+# -- Language information ----------------------------------------------------
+
 default_language = 'en'
 supported_languages = [
     ('en', 'English'),
@@ -55,6 +56,11 @@ supported_languages = [
     # ('de', 'Deutsche'),
     # ('es', 'Española'),
 ]
+
+# -- Base file name for PDF and EPUB files -----------------------------------
+
+base_filename = 'musicbrainzpicard'
+
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
@@ -148,9 +154,9 @@ html_copy_source = False
 # -- Options for LaTeX / PDF output ------------------------------------------
 
 latex_documents = [
-    ('pdf', 'musicbrainzpicard.tex', 'MusicBrainz Picard', '', 'manual', False),
-    # ('pdf', 'musicbrainzpicard.tex', 'MusicBrainz Picard', 'Edited by Bob Swift', 'manual', False),
-    # ('pdf', 'musicbrainzpicard.tex', 'MusicBrainz Picard', '', 'howto', False),
+    ('pdf', '{0}.tex'.format(base_filename), project, '', 'manual', False),
+    # ('pdf', '{0}.tex'.format(base_filename), project, 'Edited by Bob Swift', 'manual', False),
+    # ('pdf', '{0}.tex'.format(base_filename), project, '', 'howto', False),
 ]
 
 # latex_toplevel_sectioning = 'part'
@@ -178,7 +184,7 @@ latex_domain_indices = True
 
 # -- Options for epub output ------------------------------------------
 
-# epub_baseneme = 'musicbrainzpicard'
+epub_baseneme = base_filename
 
 epub_theme = 'epub'
 
