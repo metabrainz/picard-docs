@@ -24,6 +24,7 @@ on:
       - '.github/workflows/*.yml'
       - 'setup.py'
       - 'conf.py'
+      - 'tag_mapping.py'
 
 jobs:
   lint_rst_and_full_build_and_publish:
@@ -49,6 +50,9 @@ jobs:
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+    - name: Build Tag Map Files
+      run: |
+        python ./setup.py build map
     - name: Update Translation Files
       run: |
         python ./setup.py build pot
@@ -68,6 +72,7 @@ jobs:
         sudo apt-get install texlive
         sudo apt-get install texlive-full
         sudo apt-get install texlive-latex-extra
+        sudo apt-get install xindy
     - name: Build PDF Files
       run: |
         python ./setup.py clean pdf
