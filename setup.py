@@ -34,6 +34,7 @@ OUTPUT_DIR = 'docs'
 BASE_FILE_NAME = conf.base_filename if hasattr(conf, 'filename') and conf.base_filename else 'musicbrainzpicard'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
 TAG_MAP_NAME = FILE_NAME_ROOT + '_Tag_Map'
+CURRENT_VERSION = conf.version
 
 
 ########################################
@@ -533,6 +534,22 @@ def run_isort():
     exit_with_code(1 if exit_code else 0)
 
 
+def get_major_minor(version):
+    """Extract the major.minor portion of the supplied version string.
+
+    Args:
+        version (str): Version string to process
+
+    Returns:
+        str: Major.minor portion of the version string, or '' if invalid version
+    """
+    if re.match(r'^(v?[0-9][0-9\.]*)', version):
+        parts = re.match(r'^v?([0-9][0-9\.]*)', version).group(1).split('.')
+        parts.append('')
+        return '{0}.{1}'.format(int('0' + parts[0]), int('0' + parts[1]))
+    return ''
+
+
 def create_directory(dir_path, dir_name):
     """If the specified directory does not exist, it will be created.  Includes multiple
     checks for success to accommodate race condition in Windows.
@@ -761,7 +778,7 @@ def build_html(language=''):
         print('Files not copied.  Error: {0}'.format(ex))
         exit_with_code(1)
 
-    zip_file = os.path.join(OUTPUT_DIR, '{0}_{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, conf.major_minor, language))
+    zip_file = os.path.join(OUTPUT_DIR, '{0}_v{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, get_major_minor(CURRENT_VERSION), language))
     print('Removing old ZIP file: {0}'.format(zip_file))
     remove_file(zip_file)
     print('Copying HTML to ZIP file: {0}'.format(zip_file))
@@ -789,7 +806,7 @@ def build_pdf(language=''):
     """
     try:
         pdf_file = os.path.join(SPHINX_.BUILD_DIR, 'latex', BASE_FILE_NAME + '.pdf')
-        target_file = os.path.join(OUTPUT_DIR, '{0}_{1}_[{2}].pdf'.format(FILE_NAME_ROOT, conf.major_minor, language))
+        target_file = os.path.join(OUTPUT_DIR, '{0}_v{1}_[{2}].pdf'.format(FILE_NAME_ROOT, get_major_minor(CURRENT_VERSION), language))
         # Multiple checks if file exists to accommodate race condition in Windows
         counter = 50
         while counter and not os.path.exists(pdf_file):
@@ -815,7 +832,7 @@ def build_epub(language=''):
         language {str} -- Language to use for the build (default: {''})
     """
     epub_file = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS['epub']['dir'], BASE_FILE_NAME + '.epub')
-    target_file = os.path.join(OUTPUT_DIR, '{0}_{1}_[{2}].epub'.format(FILE_NAME_ROOT, conf.major_minor, language))
+    target_file = os.path.join(OUTPUT_DIR, '{0}_v{1}_[{2}].epub'.format(FILE_NAME_ROOT, get_major_minor(CURRENT_VERSION), language))
     print('Copying output to: {0}\n'.format(target_file))
     try:
         shutil.copyfile(epub_file, target_file)
@@ -841,12 +858,15 @@ def build_map():
     create_directory(OUTPUT_DIR, 'Output Documents')
 
     filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.html')
+    print('\nWriting HTML mapping file: {0}'.format(filename))
     tag_mapping.write_html(filename)
 
     filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.xlsx')
+    print('Writing mapping spreadsheet file: {0}'.format(filename))
     tag_mapping.write_spreadsheet(filename)
 
     filename = os.path.join(SPHINX_.SOURCE_DIR, 'appendices', 'tag_mapping.rst')
+    print('Writing RST mapping file: {0}'.format(filename))
     tag_mapping.write_rst(filename)
 
 
