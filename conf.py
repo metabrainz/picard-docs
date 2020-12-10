@@ -28,24 +28,13 @@ copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this
 # -- Project information -----------------------------------------------------
 
 project = 'MusicBrainz Picard'
+
+# The full version, including alpha/beta/rc tags (must start with a 'v' and not contain any spaces)
+version = 'v2.5.2'
+
+author = 'Bob Swift'
 # copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
 copyright = 'This documentation is licensed under CC0 1.0.'     # pylint: disable=redefined-builtin
-author = 'Bob Swift'
-
-# The full version, including alpha/beta/rc tags
-release = 'v2.5.2'
-release_list = [
-    'v2.3.2',
-    'v2.4',
-    'v2.4.1',
-    'v2.4.2',
-    'v2.4.4',
-    'v2.5',
-    'v2.5.1',
-    'v2.5.2',
-]
-version = release
-major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
 
 # -- Language information ----------------------------------------------------
 
@@ -135,6 +124,9 @@ html_static_path = ['_static']
 
 html_js_files = ['/version_links.js']
 
+# Major.minor portion of the version number used for naming the download files
+major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
+
 html_context = {
     'extra_css_files': [
         '_static/css/extra.css',
@@ -142,8 +134,7 @@ html_context = {
     'default_language': default_language,
     'supported_languages': supported_languages,
     'major_minor': major_minor,
-    'release': release,
-    'releases': release_list,
+    'release': version,
 }
 
 html_favicon = '_static/picard-icon.png'
@@ -152,6 +143,8 @@ html_copy_source = False
 
 
 # -- Options for LaTeX / PDF output ------------------------------------------
+
+release = version   # For display on cover of PDF document
 
 latex_documents = [
     ('pdf', '{0}.tex'.format(base_filename), project, '', 'manual', False),
