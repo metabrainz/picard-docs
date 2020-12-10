@@ -4,6 +4,8 @@
 Python script used to provide development support functions.
 """
 
+# pylint: disable=too-many-lines
+
 import argparse
 import glob
 import os
@@ -13,20 +15,26 @@ import subprocess
 import sys
 import time
 import zipfile
+from subprocess import SubprocessError
 
 import restructuredtext_lint
 
 import conf
+import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.11'
+SCRIPT_VERS = '0.12'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
 PACKAGE_NAME = 'picard-docs'
 PACKAGE_TITLE = 'Picard Docs'
 
-# VENV_LOCATION = os.path.join(os.path.expanduser('~'), '.venv', PACKAGE_NAME)
+OUTPUT_DIR = 'docs'
+BASE_FILE_NAME = conf.base_filename if hasattr(conf, 'filename') and conf.base_filename else 'musicbrainzpicard'
+FILE_NAME_ROOT = 'MusicBrainz_Picard'
+TAG_MAP_NAME = FILE_NAME_ROOT + '_Tag_Map'
+CURRENT_VERSION = conf.version
 
 
 ########################################
@@ -44,27 +52,22 @@ DEFAULT_LANGUAGE = conf.default_language if conf.default_language else 'en'
 LANGUAGES = list(LANGUAGE_LIST.keys())
 
 
-########################
-#   Sphinx Constants   #
-########################
-
-SPHINX_OPTS = ''
-SPHINX_BUILD = 'sphinx-build'
-SPHINX_INTL = 'sphinx-intl'
-SPHINX_BUILD_DIR = '_build'
-SPHINX_SOURCE_DIR = '.'
-SPHINX_LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs[0] else '_locale'
-SPHINX_GETTEXT_DIR = os.path.join(SPHINX_LOCALE_DIR, 'gettext')
-SPHINX_BUILD_TIMEOUT = 300
-SPHINX_BUILD_TARGETS = {
-    'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
-    # 'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
-    'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
-    'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
-}
-OUTPUT_DIR = 'docs'
-FILE_NAME_ROOT = 'MusicBrainz_Picard'
-TAG_MAP_NAME = FILE_NAME_ROOT + '_Tag_Map'
+class SPHINX_():    # pylint: disable=too-few-public-methods
+    """Sphinx constants used when building the documentation.
+    """
+    OPTS = ''
+    BUILD = 'sphinx-build'
+    INTL = 'sphinx-intl'
+    BUILD_DIR = '_build'
+    SOURCE_DIR = '.'
+    LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs[0] else '_locale'
+    GETTEXT_DIR = os.path.join(LOCALE_DIR, 'gettext')
+    BUILD_TIMEOUT = 300
+    BUILD_TARGETS = {
+        'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
+        'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
+        'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
+    }
 
 
 ######################
@@ -74,6 +77,11 @@ TAG_MAP_NAME = FILE_NAME_ROOT + '_Tag_Map'
 IGNORE_INFO_MESSAGES = False
 FAIL_ON_WARNINGS = True
 
+PYTHON_FILES_TO_CHECK = [
+    'setup.py',
+    'conf.py',
+    'tag_mapping.py',
+]
 
 #################################################################
 #   Sphinx Directives and Roles to ignore while lint checking   #
@@ -201,12 +209,15 @@ Commands:
    build html          Build HTML files
    build pdf           Build PDF files
    build epub          Build epub files
+   build all           Build all files
    build po            Build the specified language
    build pot           Build translation template files
+   build map           Build tag map files
 
    test rst            Lint the rst files
-   test html           Test build the html files
-   test pdf            Test build the pdf file
+   test flake8         Test python files with flake8
+   test pylint         Test python files with pylint
+   test isort          Check python files import sorting
 
    info about          Information about the script
    info warranty       Warranty information about the script
@@ -217,10 +228,56 @@ Optional Arguments:
   -h, --help           Show this help message and exit
 """.format(os.path.basename(os.path.realpath(__file__)))
 
+
+################################################
+#   Custom exceptions used within the script   #
+################################################
+
+class CustomError(Exception):
+    """Custom base exception for the script.
+    """
+    def __init__(self, message='Setup Script Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class CreateDirectoryError(CustomError):
+    """Exception when creating a directory.
+    """
+    def __init__(self, message='Create Directory Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class CleanDirectoryError(CustomError):
+    """Exception when cleaning a directory.
+    """
+    def __init__(self, message='Clean Directory Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class RemoveDirectoryError(CustomError):
+    """Exception when removing a directory.
+    """
+    def __init__(self, message='Remove Directory Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class RemoveFileError(CustomError):
+    """Exception when removing a file.
+    """
+    def __init__(self, message='Remove File Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
 ##############################################################################
 
-
 class LintRST():
+    """Lint the restructured text (RST) files.
+    """
     def __init__(self):
         """Provides an instance of the "restructuredtext-lint" linter.
         """
@@ -228,6 +285,22 @@ class LintRST():
         self.warning_count = 0
         self.error_count = 0
         self.info_count = 0
+        self.linter = restructuredtext_lint
+
+    def print_error(self, err):
+        """Print the error information and increment the appropriate error counter.
+
+        Args:
+            err (restructuredtext_lint error): Restructured text linter error object.
+        """
+        print('\n   [{0}] Line {1}: {2}'.format(err.type, err.line, err.message), end='', flush=True)
+        if err.type == 'WARNING':
+            self.warning_count += 1
+        elif err.type == 'INFO':
+            self.info_count += 1
+        else:
+            # Includes 'ERROR' and 'SEVERE'
+            self.error_count += 1
 
     def check_file(self, file_name, ignore_info=True):
         """Lint check the specified file, printing the findings to the console.
@@ -240,43 +313,37 @@ class LintRST():
         """
         print('Checking {0}'.format(file_name), end='', flush=True)
         self.checked_count += 1
-        if os.path.isfile(file_name):
-            try:
-                err_processed = False
-                errs = restructuredtext_lint.lint_file(file_name)
-                if errs:
-                    for err in errs:
-                        err_process = True
-                        if err.type == 'INFO':
-                            if ignore_info:
-                                err_process = False
-                            else:
-                                m = RE_TEST_DIRECTIVE_1.match(err.message)
-                                err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
-                                m = RE_TEST_ROLE_1.match(err.message)
-                                err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
-                        # if (err.type == 'ERROR' or err.type == 'SEVERE') and err.message.startswith('Unknown'):
-                        if err.type == 'ERROR' or err.type == 'SEVERE':
-                            m = RE_TEST_DIRECTIVE_2.match(err.message)
-                            err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
-                            m = RE_TEST_ROLE_2.match(err.message)
-                            err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
-                        if err_process:
-                            err_processed = True
-                            print('\n   [{0}] Line {1}: {2}'.format(err.type, err.line, err.message), end='', flush=True)
-                            if err.type == 'WARNING':
-                                self.warning_count += 1
-                            elif err.type == 'INFO':
-                                self.info_count += 1
-                            else:
-                                # Includes 'ERROR' and 'SEVERE'
-                                self.error_count += 1
-                print('' if err_processed else ' [OK]')
-            except Exception as ex:
-                print('\n   [ERROR] Line 0: Error reading file. ({0})'.format(ex,))
-                self.error_count += 1
-        else:
+        if not os.path.isfile(file_name):
             print('\n   [ERROR] Line 0: File not found.')
+            self.error_count += 1
+            return
+
+        try:
+            err_processed = False
+            errs = self.linter.lint_file(file_name)
+            if not errs:
+                errs = []
+            for err in errs:
+                err_process = True
+                if err.type == 'INFO':
+                    if ignore_info:
+                        err_process = False
+                    else:
+                        m = RE_TEST_DIRECTIVE_1.match(err.message)
+                        err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
+                        m = RE_TEST_ROLE_1.match(err.message)
+                        err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
+                elif err.type == 'ERROR' or err.type == 'SEVERE':
+                    m = RE_TEST_DIRECTIVE_2.match(err.message)
+                    err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
+                    m = RE_TEST_ROLE_2.match(err.message)
+                    err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
+                if err_process:
+                    err_processed = True
+                    self.print_error(err)
+            print('' if err_processed else ' [OK]')
+        except IOError as ex:
+            print('\n   [ERROR] Line 0: Error reading file. ({0})'.format(ex,))
             self.error_count += 1
 
     def check(self, root_dir, ignore_info=False, fail_on_warnings=False):
@@ -292,7 +359,7 @@ class LintRST():
         Returns:
             {int} -- Error code 1 if check failed, otherwise 0.
         """
-        for dir_name, subdir_list, file_list in os.walk(root_dir):
+        for dir_name, subdir_list, file_list in os.walk(root_dir):  # pylint: disable=unused-variable
             for fname in file_list:
                 if str(fname).lower().endswith('.rst'):
                     self.check_file(os.path.join(dir_name, fname), ignore_info)
@@ -338,8 +405,11 @@ def parse_command_line():
     parser01.add_argument(
         'test_target',
         action='store',
-        choices=['rst', 'html', 'pdf'],
-        help="rst = lint check the rst files, html = test build html files, pdf = test build pdf file"
+        choices=['rst', 'flake8', 'pylint', 'isort'],
+        help="rst = lint check the rst files, "
+             "flake8 = test python files with flake8, "
+             "pylint = test python files with pylint, "
+             "isort = check python files import sorting"
     )
 
     parser02 = subparsers.add_parser(
@@ -350,8 +420,14 @@ def parse_command_line():
     parser02.add_argument(
         'build_target',
         action='store',
-        choices=['html', 'pdf', 'epub', 'po', 'pot'],
-        help="html = build html files, pdf = build pdf file, epub = build epub file, po = build translation files, pot = build translation template files"
+        choices=['html', 'pdf', 'epub', 'po', 'pot', 'map', 'all'],
+        help="html = build html files, "
+             "pdf = build pdf file, "
+             "epub = build epub file, "
+             "all = build all files, "
+             "po = build translation files, "
+             "pot = build translation template files, "
+             "map = build tag map files"
     )
 
     parser03 = subparsers.add_parser(
@@ -363,7 +439,11 @@ def parse_command_line():
         'clean_target',
         action='store',
         choices=['html', 'pdf', 'epub', 'po', 'mo'],
-        help="html = clean html build directory, pdf = clean pdf build directory, epub = clean epub build directory, po = clean language directory, mo = remove all compiled MO files"
+        help="html = clean html build directory, "
+             "pdf = clean pdf build directory, "
+             "epub = clean epub build directory, "
+             "po = clean language directory, "
+             "mo = remove all compiled MO files"
     )
 
     parser04 = subparsers.add_parser(
@@ -375,7 +455,9 @@ def parse_command_line():
         'info_type',
         action='store',
         choices=['about', 'languages', 'warranty'],
-        help="about = info about the script, languages = list of supported languages, warranty = warranty of the script"
+        help="about = info about the script, "
+             "languages = list of supported languages, "
+             "warranty = warranty of the script"
     )
 
     args = arg_parser.parse_args()
@@ -414,46 +496,58 @@ def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
     exit_with_code(exit_code)
 
 
-def check_sphinx_build():
-    """Check if sphinx-build is available in current path.
+def run_pylint():
+    """Check the Python code using pylint.
     """
-    return
-    # with open(os.devnull, 'w') as devnull:
-    #     try:
-    #         subprocess.call([SPHINX_BUILD, '--version'], stdout=devnull, stderr=devnull)
-    #         return
-    #     except FileNotFoundError:
-    #         pass
-    # print("The '{0}' command was not found.".format(SPHINX_BUILD))
-    # exit_with_code(1)
+    exit_code = 0
+    for filename in PYTHON_FILES_TO_CHECK:
+        print('\nLint File: {0}'.format(filename))
+        command = 'pylint {0}'.format(filename,)
+        exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
+    exit_with_code(1 if exit_code else 0)
 
 
-def check_sphinx_intl():
-    """Check if sphinx-intl is available in current path.
+def run_flake8():
+    """Check the Python code using flake8.
     """
-    return
-    # with open(os.devnull, 'w') as devnull:
-    #     try:
-    #         subprocess.call([SPHINX_INTL, '--help'], stdout=devnull, stderr=devnull)
-    #         return
-    #     except FileNotFoundError:
-    #         pass
-    # print("The '{0}' command was not found.".format(SPHINX_INTL))
-    # exit_with_code(1)
+    exit_code = 0
+    for filename in PYTHON_FILES_TO_CHECK:
+        print('\nFlake8 Check File: {0}'.format(filename))
+        command = 'flake8 {0}'.format(filename,)
+        exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
+    print()
+    exit_with_code(1 if exit_code else 0)
 
-    # command = "{0} --help".format(SPHINX_INTL,)
-    # try:
-    #     # exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
-    #     exit_code = subprocess.run(command, shell=True, check=True, capture_output=True, timeout=SPHINX_BUILD_TIMEOUT).returncode
-    #     # print("\n\nexit_code = {0}\n\n".format(exit_code))
-    #     # exit_code = 1
-    #     # subprocess.run('ls -al', shell=True, check=True)
-    #     return
-    # except Exception as ex:
-    #     print("ERROR executing process: {0}".format(ex))
-    #     exit_code = 1
-    # if exit_code:
-    #     exit_with_code(exit_code)
+
+def run_isort():
+    """Check the Python code using isort.
+    """
+    exit_code = 0
+    for filename in PYTHON_FILES_TO_CHECK:
+        print('\nIsort Check File: {0}'.format(filename))
+        command = 'isort -c {0}'.format(filename,)
+        proc_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
+        if not proc_code:
+            print('OK: Imports are properly sorted.')
+        exit_code = max(exit_code, proc_code)
+    print()
+    exit_with_code(1 if exit_code else 0)
+
+
+def get_major_minor(version):
+    """Extract the major.minor portion of the supplied version string.
+
+    Args:
+        version (str): Version string to process
+
+    Returns:
+        str: Major.minor portion of the version string, or '' if invalid version
+    """
+    if re.match(r'^(v?[0-9][0-9\.]*)', version):
+        parts = re.match(r'^v?([0-9][0-9\.]*)', version).group(1).split('.')
+        parts.append('')
+        return '{0}.{1}'.format(int('0' + parts[0]), int('0' + parts[1]))
+    return ''
 
 
 def create_directory(dir_path, dir_name):
@@ -463,9 +557,6 @@ def create_directory(dir_path, dir_name):
     Arguments:
         dir_path {str} -- Path to the directory to create
         dir_name {str} -- Name of the directory type (e.g.: 'html')
-
-    Raises:
-        Exception: Unable to create directory
     """
     if not os.path.exists(dir_path):
         try:
@@ -477,8 +568,8 @@ def create_directory(dir_path, dir_name):
                 counter -= 1
                 time.sleep(.2)
             if not counter:
-                raise Exception('Unable to create directory.')
-        except Exception as ex:
+                raise CreateDirectoryError
+        except (CustomError, OSError) as ex:
             print("\nError creating the {0} directory: {1}".format(dir_name, dir_path))
             print("Error message: {0}\n".format(ex))
             exit_with_code(1)
@@ -492,10 +583,6 @@ def clean_directory(dir_path, dir_name):
     Arguments:
         dir_path {str} -- Path to the directory to clean
         dir_name {str} -- Name of the directory type (e.g.: 'html')
-
-    Raises:
-        Exception: Unable to clean directory
-        Exception: Unable to create directory
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
@@ -510,8 +597,8 @@ def clean_directory(dir_path, dir_name):
                     counter -= 1
                     time.sleep(.2)
                 if not counter:
-                    raise Exception('Unable to clean directory.')
-            except Exception as ex:
+                    raise CleanDirectoryError
+            except (shutil.Error, CleanDirectoryError) as ex:
                 print("\nError removing the {0} directory: {1}".format(dir_name, dir_path))
                 print("Error message: {0}\n".format(ex))
                 exit_with_code(1)
@@ -538,9 +625,6 @@ def remove_dir(dir_path):
 
     Arguments:
         dir_path {str} -- Path of directory to remove
-
-    Raises:
-        Exception: Directory not removed
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
@@ -552,8 +636,8 @@ def remove_dir(dir_path):
                     counter -= 1
                     time.sleep(.2)
                 if not counter:
-                    raise Exception('Directory not removed.')
-            except Exception as ex:
+                    raise RemoveDirectoryError
+            except (RemoveDirectoryError, OSError) as ex:
                 print("\nError removing the directory: {0}".format(dir_path))
                 print("Error message: {0}\n".format(ex))
                 exit_with_code(1)
@@ -568,9 +652,6 @@ def remove_file(file_path):
 
     Arguments:
         file_path {str} -- File to remove.
-
-    Raises:
-        Exception: File not removed
     """
     if os.path.exists(file_path):
         if os.path.isfile(file_path):
@@ -582,8 +663,8 @@ def remove_file(file_path):
                     counter -= 1
                     time.sleep(.2)
                 if not counter:
-                    raise Exception('File not removed.')
-            except Exception as ex:
+                    raise RemoveFileError
+            except (RemoveFileError, OSError) as ex:
                 print("\nError removing the file: {0}".format(file_path))
                 print("Error message: {0}\n".format(ex))
                 exit_with_code(1)
@@ -603,40 +684,16 @@ def save_version_info():
     file_name = os.path.join(OUTPUT_DIR, '__init__.py')
     remove_file(file_name)
     print("Saving: {0}".format(file_name,))
-    versions = ''
-    for item in conf.release_list:
-        versions += "    '{0}',\n".format(item,)
     with open(file_name, 'w', encoding='utf8') as ofile:
         ofile.write(
             "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n\n" +
             "# This file is automatically generated.\n\n" +
             "VERSION = '" + conf.version + "'\n" +
-            "VERSIONS = [\n" + versions + "]\n\n" +
             "DEFAULT_LANGUAGE = '" + DEFAULT_LANGUAGE + "'\n" +
             "LANGUAGES = " + str(LANGUAGES) + "\n\n" +
             "FILE_NAME_ROOT = '" + FILE_NAME_ROOT + "'\n" +
             "TAG_MAP_NAME = '" + TAG_MAP_NAME + "'\n"
         )
-
-    # with open('index.html.template', 'r', encoding='utf8') as ifile:
-    #     template = ifile.read()
-    # file_name = os.path.join(SPHINX_BUILD_DIR, 'top_index.html')
-    # remove_file(file_name)
-    # print("Saving: {0}".format(file_name,))
-    # with open(file_name, 'w', encoding='utf8') as ofile:
-    #     ofile.write(template.replace('{{SUPPORTED_LANGUAGES}}', str(LANGUAGES)).replace('{{DEFAULT_LANGUAGE}}', DEFAULT_LANGUAGE).replace('{{CURRENT_VERSION}}', ''))
-    # file_name = os.path.join(SPHINX_BUILD_DIR, 'version_index.html')
-    # remove_file(file_name)
-    # print("Saving: {0}".format(file_name,))
-    # with open(file_name, 'w', encoding='utf8') as ofile:
-    #     ofile.write(template.replace('{{SUPPORTED_LANGUAGES}}', str(LANGUAGES)).replace('{{DEFAULT_LANGUAGE}}', DEFAULT_LANGUAGE).replace('{{CURRENT_VERSION}}', conf.version))
-    # with open('version_links.js.template', 'r', encoding='utf8') as ifile:
-    #     template = ifile.read()
-    # file_name = os.path.join(SPHINX_BUILD_DIR, 'version_links.js')
-    # remove_file(file_name)
-    # print("Saving: {0}".format(file_name,))
-    # with open(file_name, 'w', encoding='utf8') as ofile:
-    #     ofile.write(template.replace('{{DEFAULT_LANGUAGE}}', DEFAULT_LANGUAGE).replace('{{VERSION_LIST}}', str(conf.release_list)))
 
 
 def do_build(target=None, language='', clean=False):
@@ -647,11 +704,10 @@ def do_build(target=None, language='', clean=False):
         language (str, optional): Language code to use for the build. If not specified, the default language is used.
         clean (bool, optional): Signals whether the build directory should be emptied before starting the build. Defaults to False.
     """
-    if not (target and target in SPHINX_BUILD_TARGETS.keys()):
+    if not (target and target in SPHINX_.BUILD_TARGETS.keys()):
         print("\nUnknown build target: {0}".format(target))
         exit_with_code(1)
     print("\nBuilding target: {0}".format(target))
-    check_sphinx_build()
     if not (language and language in LANGUAGES):
         language = DEFAULT_LANGUAGE
     if language == DEFAULT_LANGUAGE:
@@ -661,44 +717,37 @@ def do_build(target=None, language='', clean=False):
         update_po(language)
 
     if clean:
-        clean_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[target]['dir'])
+        clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[target]['dir'])
         print('\nCleaning build directory: {0}'.format(clean_dir))
         clean_directory(clean_dir, target)
 
-    # # command = ' '.join([SPHINX_BUILD, '-M', SPHINX_BUILD_TARGETS[target]['cmd'], '"' + SPHINX_SOURCE_DIR + '"', '"' + SPHINX_BUILD_DIR + '"', '-c', '.', SPHINX_BUILD_TARGETS[target]['extra'], language_option])
-    # # command = [SPHINX_BUILD, SPHINX_BUILD_TARGETS[target]['cmd'], SPHINX_SOURCE_DIR, SPHINX_BUILD_DIR, '-c .', SPHINX_BUILD_TARGETS[target]['extra'], language_option]
-    # command = [SPHINX_BUILD, '-b ' + SPHINX_BUILD_TARGETS[target]['cmd'], SPHINX_SOURCE_DIR, SPHINX_BUILD_DIR, '-c .']
-    # if SPHINX_BUILD_TARGETS[target]['extra']:
-    #     command = command.append(SPHINX_BUILD_TARGETS[target]['extra'])
-    # if language_option:
-    #     command = command.append(language_option)
     command = '{0} -M {1} {2} {3} -c . {4} {5}'.format(
-        SPHINX_BUILD,
-        SPHINX_BUILD_TARGETS[target]['cmd'],
-        SPHINX_SOURCE_DIR,
-        SPHINX_BUILD_DIR,
-        # os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[target]['dir']),
-        SPHINX_BUILD_TARGETS[target]['extra'],
+        SPHINX_.BUILD,
+        SPHINX_.BUILD_TARGETS[target]['cmd'],
+        SPHINX_.SOURCE_DIR,
+        SPHINX_.BUILD_DIR,
+        SPHINX_.BUILD_TARGETS[target]['extra'],
         language_option,
     ).strip().replace('  ', ' ')
     print('\nBuilding with command: {0}\n'.format(command))
     try:
-        # exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT, shell=True)
-        exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_BUILD_TIMEOUT).returncode
-        # print("\n\nexit_code = {0}\n\n".format(exit_code))
-        # exit_code = 1
-        # subprocess.run('ls -al', shell=True, check=True)
-    except Exception as ex:
+        exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
+    except (SubprocessError, FileNotFoundError, OSError) as ex:
         print("ERROR executing process: {0}".format(ex))
         exit_code = 1
     if exit_code:
         exit_with_code(exit_code)
 
     if target == 'html':
+        # Additional HTML processing
         build_html(language=language)
+
     elif target == 'pdf':
+        # Additional PDF processing
         build_pdf(language=language)
+
     elif target == 'epub':
+        # Additional EPUB processing
         build_epub(language=language)
 
 
@@ -712,7 +761,7 @@ def build_html(language=''):
         Exception: Files not copied
     """
     output_dir = os.path.join(OUTPUT_DIR, language)
-    html_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['html']['dir'])
+    html_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS['html']['dir'])
     clean_directory(output_dir, 'html')
     print('Copying HTML files to document directory: {0}'.format(output_dir))
     try:
@@ -724,12 +773,12 @@ def build_html(language=''):
             counter -= 1
             time.sleep(.2)
         if not counter:
-            raise Exception('Directory does not exist.')
-    except Exception as ex:
+            raise CreateDirectoryError
+    except (CreateDirectoryError, shutil.Error) as ex:
         print('Files not copied.  Error: {0}'.format(ex))
         exit_with_code(1)
 
-    zip_file = os.path.join(OUTPUT_DIR, '{0}_{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, conf.version, language))
+    zip_file = os.path.join(OUTPUT_DIR, '{0}_v{1}_HTML_[{2}].zip'.format(FILE_NAME_ROOT, get_major_minor(CURRENT_VERSION), language))
     print('Removing old ZIP file: {0}'.format(zip_file))
     remove_file(zip_file)
     print('Copying HTML to ZIP file: {0}'.format(zip_file))
@@ -738,11 +787,11 @@ def build_html(language=''):
     try:
         with zipfile.ZipFile(zip_file, 'w') as myzip:
             os.chdir(output_dir)
-            for dirName, subdirList, fileList in os.walk('.'):
-                for fname in fileList:
-                    f_name = os.path.join(dirName, fname)
+            for dir_name, subdir_list, file_list in os.walk('.'):   # pylint: disable=unused-variable
+                for fname in file_list:
+                    f_name = os.path.join(dir_name, fname)
                     myzip.write(f_name)
-    except Exception as ex:
+    except (OSError, zipfile.BadZipFile, zipfile.LargeZipFile) as ex:
         print('Error creating ZIP file.  Error: {0}'.format(ex))
         os.chdir(current_dir)
         exit_with_code(1)
@@ -755,30 +804,23 @@ def build_pdf(language=''):
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
     """
-    # pdf_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['pdf']['dir'])
-    # current_dir = os.getcwd()
     try:
-        # os.chdir(pdf_dir)
-        # exit_code = subprocess.run('make pdflatex', shell=True, check=True, capture_output=False, timeout=SPHINX_BUILD_TIMEOUT).returncode
-        # os.chdir(current_dir)
-        # if exit_code:
-        #     exit_with_code(exit_code)
-        pdf_file = os.path.join(SPHINX_BUILD_DIR, 'latex', 'musicbrainzpicard.pdf')
-        target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].pdf'.format(conf.version, language))
+        pdf_file = os.path.join(SPHINX_.BUILD_DIR, 'latex', BASE_FILE_NAME + '.pdf')
+        target_file = os.path.join(OUTPUT_DIR, '{0}_v{1}_[{2}].pdf'.format(FILE_NAME_ROOT, get_major_minor(CURRENT_VERSION), language))
         # Multiple checks if file exists to accommodate race condition in Windows
         counter = 50
         while counter and not os.path.exists(pdf_file):
             counter -= 1
             time.sleep(.2)
         if not counter:
-            raise Exception('PDF file not found.')
-    except Exception as ex:
+            raise FileNotFoundError
+    except (FileNotFoundError, OSError) as ex:
         print('Error building PDF file.  Error: {0}'.format(ex))
         exit_with_code(1)
     print('Copying output to: {0}\n'.format(target_file))
     try:
         shutil.copyfile(pdf_file, target_file)
-    except Exception as ex:
+    except (shutil.Error, OSError) as ex:
         print('Error copying PDF file.  Error: {0}'.format(ex))
         exit_with_code(1)
 
@@ -789,12 +831,12 @@ def build_epub(language=''):
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
     """
-    epub_file = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS['epub']['dir'], 'MusicBrainzPicard.epub')
-    target_file = os.path.join(OUTPUT_DIR, 'MusicBrainz_Picard_{0}_[{1}].epub'.format(conf.version, language))
+    epub_file = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS['epub']['dir'], BASE_FILE_NAME + '.epub')
+    target_file = os.path.join(OUTPUT_DIR, '{0}_v{1}_[{2}].epub'.format(FILE_NAME_ROOT, get_major_minor(CURRENT_VERSION), language))
     print('Copying output to: {0}\n'.format(target_file))
     try:
         shutil.copyfile(epub_file, target_file)
-    except Exception as ex:
+    except (shutil.Error, OSError) as ex:
         print('Error copying epub file.  Error: {0}'.format(ex))
         exit_with_code(1)
 
@@ -803,22 +845,29 @@ def build_pot():
     """Build the current 'gettext' language translation files and updates the *.po files for
     the supported languages.
     """
-    check_sphinx_build()
-    # command = ' '.join([SPHINX_BUILD, '-M', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR, '-c .', '-D language={0}'.format(DEFAULT_LANGUAGE)])
-    # command = ' '.join([SPHINX_BUILD, '-b', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR + '/gettext', '-c .', '-D language={0}'.format(DEFAULT_LANGUAGE)])
-    command = ' '.join([SPHINX_BUILD, '-b', 'gettext', SPHINX_SOURCE_DIR, SPHINX_LOCALE_DIR + '/gettext', '-c .'])
+    command = ' '.join([SPHINX_.BUILD, '-b', 'gettext', SPHINX_.SOURCE_DIR, SPHINX_.LOCALE_DIR + '/gettext', '-c .'])
     print('Extracting POT files with command: {0}\n'.format(command))
-    # exit_code = subprocess.call(command, timeout=SPHINX_BUILD_TIMEOUT)
-    exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_BUILD_TIMEOUT).returncode
+    exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
     if exit_code:
         exit_with_code(exit_code)
 
-    # check_sphinx_intl()
-    # print('\nUpdating PO files for other languages.')
-    # for lang in LANGUAGE_LIST.keys():
-    #     if lang != DEFAULT_LANGUAGE:
-    #         print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-    #         update_po(lang)
+
+def build_map():
+    """Build the tag mapping files.
+    """
+    create_directory(OUTPUT_DIR, 'Output Documents')
+
+    filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.html')
+    print('\nWriting HTML mapping file: {0}'.format(filename))
+    tag_mapping.write_html(filename)
+
+    filename = os.path.join(OUTPUT_DIR, TAG_MAP_NAME + '.xlsx')
+    print('Writing mapping spreadsheet file: {0}'.format(filename))
+    tag_mapping.write_spreadsheet(filename)
+
+    filename = os.path.join(SPHINX_.SOURCE_DIR, 'appendices', 'tag_mapping.rst')
+    print('Writing RST mapping file: {0}'.format(filename))
+    tag_mapping.write_rst(filename)
 
 
 def update_po(language):
@@ -828,13 +877,9 @@ def update_po(language):
     Arguments:
         language {str} -- Language code to update
     """
-    check_sphinx_intl()
-    # command = ' '.join([SPHINX_INTL, 'update', '-p', '"' + os.path.join(SPHINX_LOCALE_DIR, SPHINX_GETTEXT_DIR) + '"', '-l', language])
-    command = ' '.join([SPHINX_INTL, 'update', '-p', SPHINX_GETTEXT_DIR, '-l', language])
-    # command = ' '.join([SPHINX_INTL, 'build', '-d', '"' + SPHINX_GETTEXT_DIR + '"', '-o', '"' + SPHINX_LOCALE_DIR + '"', '-l', language])
-    # command = ' '.join([SPHINX_INTL, 'update', '-l', language])
+    command = ' '.join([SPHINX_.INTL, 'update', '-p', SPHINX_.GETTEXT_DIR, '-l', language])
     print('Updating PO files with command: {0}\n'.format(command))
-    exit_code = subprocess.run(command, shell=True, timeout=SPHINX_BUILD_TIMEOUT).returncode
+    exit_code = subprocess.run(command, shell=True, timeout=SPHINX_.BUILD_TIMEOUT, check=True).returncode
     if exit_code:
         exit_with_code(exit_code)
 
@@ -845,7 +890,7 @@ def clean_mo():
     print('Deleting compiled translation *.mo files.')
     count = 0
     # get a recursive list of file paths that matches pattern including sub directories
-    gettext_path = os.path.join(SPHINX_LOCALE_DIR, '**', '*.mo')
+    gettext_path = os.path.join(SPHINX_.LOCALE_DIR, '**', '*.mo')
     filelist = glob.glob(gettext_path, recursive=True)
     # Iterate over the list of filepaths & remove each file.
     for filepath in filelist:
@@ -878,7 +923,7 @@ def check_language(language, supported_only=False):
 def list_languages():
     """List the supported language options.
     """
-    for lang in LANGUAGE_LIST.keys():
+    for lang in LANGUAGE_LIST:
         print('   {0} - {1}'.format(lang, LANGUAGE_LIST[lang]))
     print("or 'all' to process all supported languages.\n")
 
@@ -886,10 +931,10 @@ def list_languages():
 def main():
     """Main part of script to execute.
     """
+    # pylint: disable=too-many-branches
+    # pylint: disable=too-many-statements
+
     args = parse_command_line()
-    # print('\n{0}\n\n'.format(args,))
-    # return
-    # print('User VENV Location = {0}\nExists: {1}\n'.format(VENV_LOCATION, check_venv()))
 
     if 'language' in vars(args):
         if args.language == 'all':
@@ -924,38 +969,56 @@ def main():
             exit_with_code(1)
 
     elif 'build_target' in vars(args):
-        if args.build_target in SPHINX_BUILD_TARGETS.keys():
+        if args.build_target in SPHINX_.BUILD_TARGETS.keys():
             save_version_info()
             for lang in process_languages:
                 do_build(target=args.build_target, language=lang, clean=True)
 
+        elif args.build_target == 'map':
+            build_map()
+            # for lang in process_languages:
+            #     if lang != DEFAULT_LANGUAGE:
+            #         update_po(lang)
+
         elif args.build_target == 'po':
-            # build_pot()
             for lang in process_languages:
                 if lang != DEFAULT_LANGUAGE:
                     update_po(lang)
 
         elif args.build_target == 'pot':
             build_pot()
-            check_sphinx_intl()
             print('\nUpdating PO files for other languages.')
-            for lang in LANGUAGE_LIST.keys():
+            for lang in LANGUAGE_LIST:
                 if lang != DEFAULT_LANGUAGE:
                     print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
                     update_po(lang)
 
         elif args.build_target == 'clean':
             for target, target_dir in [('html', 'html'), ('pdf', 'latex')]:
-                clean_dir = os.path.join(SPHINX_BUILD_DIR, target_dir)
+                clean_dir = os.path.join(SPHINX_.BUILD_DIR, target_dir)
                 clean_directory(clean_dir, target)
+
+        elif args.build_target == 'all':
+            save_version_info()
+            build_map()
+            build_pot()
+            clean_mo()
+            print('\nUpdating PO files for other languages.')
+            for lang in LANGUAGE_LIST:
+                if lang != DEFAULT_LANGUAGE:
+                    print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
+                    update_po(lang)
+            for build_target in SPHINX_.BUILD_TARGETS:
+                for lang in process_languages:
+                    do_build(target=build_target, language=lang, clean=True)
 
         else:
             print("\nUnknown build target: '{0}'\n".format(args.build_target))
             exit_with_code(1)
 
     elif 'clean_target' in vars(args):
-        if args.clean_target in SPHINX_BUILD_TARGETS.keys():
-            clean_dir = os.path.join(SPHINX_BUILD_DIR, SPHINX_BUILD_TARGETS[args.clean_target]['dir'])
+        if args.clean_target in SPHINX_.BUILD_TARGETS.keys():
+            clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[args.clean_target]['dir'])
             clean_directory(clean_dir, args.clean_target)
 
         elif args.clean_target == 'mo':
@@ -967,7 +1030,16 @@ def main():
 
     elif 'test_target' in vars(args):
         if args.test_target == 'rst':
-            run_lint(SPHINX_SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
+            run_lint(SPHINX_.SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
+
+        elif args.test_target == 'pylint':
+            run_pylint()
+
+        elif args.test_target == 'flake8':
+            run_flake8()
+
+        elif args.test_target == 'isort':
+            run_isort()
 
         elif args.test_target == 'html':
             print('\nThat function is still under development.\n')
@@ -984,10 +1056,6 @@ def main():
     else:
         # show help information
         show_help()
-        # sys.exit(1)
-
-    # for arg in vars(args):
-    #     print("arg: {0} = {1}".format(arg, getattr(args, arg)))
 
     exit_with_code(0)
 
