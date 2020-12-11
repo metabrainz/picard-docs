@@ -31,7 +31,7 @@ PACKAGE_NAME = 'picard-docs'
 PACKAGE_TITLE = 'Picard Docs'
 
 OUTPUT_DIR = 'docs'
-BASE_FILE_NAME = conf.base_filename if hasattr(conf, 'filename') and conf.base_filename else 'musicbrainzpicard'
+BASE_FILE_NAME = conf.base_filename if hasattr(conf, 'base_filename') and conf.base_filename else 'musicbrainzpicard'
 FILE_NAME_ROOT = 'MusicBrainz_Picard'
 TAG_MAP_NAME = FILE_NAME_ROOT + '_Tag_Map'
 CURRENT_VERSION = conf.version
