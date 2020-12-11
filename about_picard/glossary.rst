@@ -130,6 +130,21 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    for more information.
 
 .. index::
+   single: medium
+
+**medium**
+
+   One of the physical, separate things you would get when you buy something in a record store. They are the
+   individual CDs, vinyls, etc. contained within the packaging of an album (or any other type of release).
+   Mediums are always included in a release, and have a position in said release (e.g. disc 1 or disc 2).
+   They have a format like CD, 12" vinyl or cassette (in some cases this will be unknown), and can have
+   an optional title (e.g. disc 2: The Early Years). For example, CD 1 of "`The Wall
+   <https://musicbrainz.org/release/4bd2dbd5-a961-335a-a618-39c26b2ee791#disc1>`_".
+
+   Please see the `Medium <https://musicbrainz.org/doc/Medium>`_ page on the MusicBrainz
+   website for additional information.
+
+.. index::
    see: non-album track; standalone recording
 
 **non-album track**
@@ -141,10 +156,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
 **recording**
 
-   An entity in MusicBrainz which can be linked to tracks on releases. For example "Be (One in a Million)"
-   (recording id: fbd0e1a0-b6c5-4926-b89d-3922e4144da9) is the recording linked to track 14 on the album
-   "Tourist". Each track must always be associated with a single recording, but a recording can be linked
-   to any number of tracks.
+   An entity in MusicBrainz which can be linked to tracks on releases. Each track must always be
+   associated with a single recording, but a recording can be linked to any number of tracks.
+   For example, this recording of "`Bohemian Rhapsody
+   <https://musicbrainz.org/recording/b1a9c0e9-d987-4042-ae91-78d6a3267d69>`_" is found as a track on over 100 releases.
 
    Please see the `Recording <https://musicbrainz.org/doc/Recording>`_ page on the MusicBrainz
    website for additional information.
@@ -155,9 +170,8 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 **release**
 
    Represents the unique issuing of a product on a specific date with specific
-   release information such as the country, label, barcode and packaging.  For example "`Sea of No Cares
-   <https://musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483>`_" (release id:
-   4e4ba41e-24ae-3f57-87f6-3d8f19ae9483) is one version of the album released by Great Big Sea.
+   release information such as the country, label, barcode and packaging. For example "`Sea of No Cares
+   <https://musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483>`_" is one version of the album released by Great Big Sea.
 
    Please see the `Release <https://musicbrainz.org/doc/Release>`_ page on the MusicBrainz
    website for additional information.
@@ -168,13 +182,12 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 **release group**
 
    Groups several different releases into a single logical entity. Every release
-   belongs to one, and only one release group.  Both release groups and releases are "albums" in a
+   belongs to one, and only one release group. Both release groups and releases are "albums" in a
    general sense, but with an important difference: a release is something you can buy as media such
    as a CD or a vinyl record, while a release group embraces the overall concept of an album — it
-   doesn't matter how many CDs or editions / versions it had.  For example "Sea of No Cares" (release
-   id: 4e4ba41e-24ae-3f57-87f6-3d8f19ae9483) is one version of the album in the `release group id
-   7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca
-   <https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca>`_ by Great Big Sea.
+   doesn't matter how many CDs or editions / versions it had.  For example the `"Sea of No Cares"
+   <https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca>`_ release group
+   contains multiple releases.
 
    Please see the `Release Group <https://musicbrainz.org/doc/Release_Group>`_ page on the MusicBrainz
    website for additional information.
@@ -185,9 +198,8 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
 **standalone recording**
 
-   A recording that is not linked to any release.  An example is "`Sea of No Cares (live)
-   <https://musicbrainz.org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8>`_" (recording id:
-   0198c132-ed38-430c-92bd-d3c7e9ff25b8) by Great Big Sea.
+   A recording that is not linked to any release. An example is "`Sea of No Cares (live)
+   <https://musicbrainz.org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8>`_" by Great Big Sea.
 
    Please see the `Standalone Recording <https://musicbrainz.org/doc/Standalone_Recording>`_ page on
    the MusicBrainz website for additional information.
@@ -200,8 +212,7 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
    A track is the way a recording is represented on a particular release (or, more precisely, on a
    particular medium). Every track has a title and is credited to one or more artists.  For example,
    track 7 of the album "`Back to Boston <https://musicbrainz.org/release/9780e88d-a9e2-4e99-87c4-e54b65e7e49b>`_"
-   by Jason Anderson is "`Driving Home <https://musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94>`_" (track id:
-   bf8ecb3c-6fe6-41b7-a078-5748265a9f94).
+   by Jason Anderson is "`Driving Home <https://musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94>`_".
 
    Please see the `Track <https://musicbrainz.org/doc/Track>`_ page on
    the MusicBrainz website for additional information.
@@ -213,12 +224,10 @@ in the MusicBrainz environment.  Specific terms are defined as follows:
 
    A distinct intellectual or artistic creation, which can be expressed in the form of
    one or more audio recordings. While a 'Work' in MusicBrainz is usually musical in nature, it is
-   not necessarily so. For example, a work could be a novel, play, poem or essay, later recorded as
-   an oratory or audiobook.  "`Blinded by the Light
-   <https://musicbrainz.org/recording/431b3d53-2783-46fd-9bb4-e1410f2941b6>`_" by "Manfred Mann's Earth Band"
-   is a recording of the `work id 7a757d97-da2a-3751-8d32-94d471de2eeb
-   <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_ "Blinded by the Light"
-   written by Bruce Springsteen.
+   not necessarily so. A work could also be a novel, play, poem or essay, later recorded as
+   an oratory or audiobook. For example, the song "`Blinded by the Light
+   <https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_" written by Bruce Springsteen
+   has been recorded well over 100 times.
 
    Please see the `Work <https://musicbrainz.org/doc/Work>`_ page on the MusicBrainz website for
    additional information.

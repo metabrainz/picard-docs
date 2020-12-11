@@ -11,7 +11,7 @@ Retrieving Album information
    This stage identifies the album on MusicBrainz that will provide the information used
    for tagging the files, and retrieves the metadata from the MusicBrainz database.  There
    are a few different methods available, depending on the information currently available
-   on your system (e.g.: metadata exising in the files, or having the source CD available).
+   on your system (e.g.: metadata existing in the files, or having the source CD available).
 
 There are basically four main methods used to retrieve album information from the MusicBrainz database.
 

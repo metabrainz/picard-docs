@@ -15,7 +15,7 @@ There are four stages to using Picard to process your audio files:
       This stage identifies the album on MusicBrainz that will provide the information used
       for tagging the files, and retrieves the metadata from the MusicBrainz database.  There
       are a few different methods available, depending on the information currently available
-      on your system (e.g.: metadata exising in the files, or having the source CD available).
+      on your system (e.g.: metadata existing in the files, or having the source CD available).
 
 
    **Matching audio files to tracks**

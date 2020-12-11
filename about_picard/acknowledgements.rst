@@ -47,20 +47,22 @@ this includes leads, translators, reviewers and proofreaders.  All contributions
 names are presented in alphabetical order so as not to imply the relative importance of someone's contribution based on their
 position in the list.
 
-Contributors include:
-Vedant Chakravadhanula,
-Rahul Kumar Gupta,
-Wieland Hoffmann,
-Jun Kim,
-Sambhav Kothari,
-Laurent Monin,
-Akash Nagaraj,
-Frederik "Freso" S. Olesen,
-Theodore Fabian Rudy,
-Sophist,
-Bob Swift,
-Philipp Wolfer,
-Shadab Zafar.
+Contributors include (in alphabetical order by surname):
+
+- Vedant Chakravadhanula
+- Pavan Chander
+- Rahul Kumar Gupta
+- Wieland Hoffmann
+- Jun Kim
+- Sambhav Kothari
+- Laurent Monin
+- Akash Nagaraj
+- Frederik "Freso" S. Olesen
+- Theodore Fabian Rudy
+- Sophist
+- Bob Swift
+- Philipp Wolfer
+- Shadab Zafar
 
 .. note::
 

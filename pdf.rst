@@ -11,10 +11,6 @@
 MusicBrainz Picard
 ==================
 
-
-.. .. include:: image_links.txt
-
-
 .. toctree::
 
    about_picard/introduction

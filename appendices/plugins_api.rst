@@ -1,18 +1,10 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Appendix 1: Plugins API
-=======================
+:index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API <pair: plugins; api>`
+============================================================================================
 
-.. index::
-   pair: plugins; api
-   pair: plugins; programming
-   single: plugins; metadata
-
-Plugin Metadata
----------------
+:index:`Plugin Metadata <plugins; metadata>`
+---------------------------------------------
 
 Each plugin must provide some metadata as variables. Those variables should be placed at the top of the file.
 
@@ -44,11 +36,8 @@ Variables explanation:
 * **PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text.
 
 
-.. index::
-   single: plugins; metadata processors
-
-Metadata Processors
--------------------
+:index:`Metadata Processors <plugins; metadata processors>`
+------------------------------------------------------------
 
 MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to
 the processor functions in the following examples are as follows:
@@ -98,11 +87,8 @@ Track metadata example:
    register_track_metadata_processor(remove_featartists)
 
 
-.. index::
-   pair: plugins; event hooks
-
-Event Hooks
------------
+:index:`Event Hooks <pair: plugins; event hooks>`
+--------------------------------------------------
 
 Plugins can register themselves to listen for different events. Currently the following event hooks are available:
 
@@ -188,11 +174,8 @@ This hook is called after an album has been removed from Picard.
    Event hooks have been available since API version 2.2.
 
 
-.. index::
-   pair: plugins; file format
-
-File Formats
-------------
+:index:`File Formats <pair: plugins; file format>`
+---------------------------------------------------
 
 Plugins can extend Picard with support for additional file formats. See the existing `file format implementations
 <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for details on how to implement the ``_load``
@@ -231,11 +214,8 @@ and ``_save`` methods. Example:
    register_format(MyFile)
 
 
-.. index::
-   pair: scripting functions; plugins
-
-Tagger Script Functions
------------------------
+:index:`Tagger Script Functions <pair: scripting functions; plugins>`
+----------------------------------------------------------------------
 
 To define new tagger script functions use ``register_script_function(function, name=None)`` from the ``picard.script`` module.
 ``parser`` is an instance of ``picard.script.ScriptParser``, and the rest of the arguments passed to it are the arguments from
@@ -267,11 +247,8 @@ the function call in the tagger script. Example:
 The default value for both arguments is **True**.
 
 
-.. index::
-   pair: plugins; context menu actions
-
-Context Menu Actions
---------------------
+:index:`Context Menu Actions <pair: plugins; context menu actions>`
+--------------------------------------------------------------------
 
 Right-click context menu actions can be added to albums, tracks and files in "Unmatched Files", "Clusters"
 and the "ClusterList" (parent folder of Clusters). Example:

@@ -16,7 +16,7 @@ album at a time.
 
 **1. Load the files**
 
-   Drag the files or folder from the browser to the "Unclustered Files" secion in the left-hand pane.
+   Drag the files or folder from the browser to the "Unclustered Files" section in the left-hand pane.
 
 
 **2. Cluster and lookup the files**
