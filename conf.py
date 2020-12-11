@@ -48,7 +48,7 @@ supported_languages = [
 
 # -- Base file name for PDF and EPUB files -----------------------------------
 
-base_filename = 'MusicBrainzPicard'
+base_filename = 'musicbrainzpicard'
 
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
@@ -177,7 +177,7 @@ latex_domain_indices = True
 
 # -- Options for epub output ------------------------------------------
 
-epub_baseneme = base_filename
+epub_basename = base_filename
 
 epub_theme = 'epub'
 
