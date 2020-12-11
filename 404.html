@@ -51,7 +51,6 @@
          if (supported_languages.indexOf(test_language) < 0) {
             if (debug) { window.alert("Failed supported languages check.  Target language set to: " + target_language); }
             // Returning true will drop this item from the path
-            well_formed = false;
             return true;
          }
          target_language = test_language;
