@@ -48,7 +48,7 @@ supported_languages = [
 
 # -- Base file name for PDF and EPUB files -----------------------------------
 
-base_filename = 'musicbrainzpicard'
+base_filename = 'MusicBrainzPicard'
 
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
