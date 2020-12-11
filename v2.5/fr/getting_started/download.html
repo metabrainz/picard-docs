@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Téléchargez et installez Picard &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Téléchargez et installez Picard &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -101,14 +101,14 @@
 <p class="caption"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Téléchargez et installez Picard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#linux-installing-with-flatpak">Linux: installation avec Flatpak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux-installing-with-flatpak">Linux: Installation avec Flatpak</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -130,16 +130,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -204,14 +204,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="download-install-picard">
-<h1>Téléchargez et installez Picard<a class="headerlink" href="#download-install-picard" title="Lien permanent vers ce titre">¶</a></h1>
-<p id="index-0">MusicBrainz Picard est disponible pour tous les principaux systèmes d’exploitation de bureau (par exemple Windows, Linux et macOS), et sous plusieurs formes (exécutables de version formelle directement téléchargeables, versions de gestionnaire de packages de ceux-ci, exécutables de construction quotidiens, code source Python que vous pouvez exécuter avec le vôtre Environnement Python, etc.)</p>
+<h1><span class="target" id="index-2"></span>Téléchargez et installez Picard<a class="headerlink" href="#download-install-picard" title="Lien permanent vers ce titre">¶</a></h1>
+<p>MusicBrainz Picard est disponible pour tous les principaux systèmes d’exploitation de bureau (par exemple Windows, Linux et macOS), et sous plusieurs formes (exécutables de version formelle directement téléchargeables, versions de gestionnaire de packages de ceux-ci, exécutables de construction quotidiens, code source Python que vous pouvez exécuter avec le vôtre Environnement Python, etc.)</p>
 <p>On s’attend à ce que la plupart des utilisateurs exécutent des exécutables de version formelle ou des équivalents de gestionnaire de paquets car ils sont faciles à installer et sont des versions stables qui sont moins susceptibles d’avoir des bogues dans les fonctionnalités expérimentales ou nouvelles.</p>
 <p>Cependant, tout utilisateur souhaitant contribuer au développement de Picard ou de ses plugins peut vouloir exécuter à partir du code source, en le téléchargeant depuis GitHub en utilisant une version de Git sur son propre ordinateur. Si vous souhaitez contribuer au code Picard mais que vous ne comprenez pas ce que disait la phrase précédente, alors vous avez un peu de courbe d’apprentissage. :-)</p>
 <p>La dernière version de MusicBrainz Picard est toujours disponible au téléchargement sur <a class="reference external" href="https://picard.musicbrainz.org/downloads/">le site Web de Picard</a>. Cela inclut les programmes d’installation pour toutes les plates-formes prises en charge ainsi que <a class="reference external" href="https://picard.musicbrainz.org/downloads/#source">le code source de la version</a>. Le tout dernier code source est également disponible dans <a class="reference external" href="https://github.com/musicbrainz/picard">le référentiel GitHub</a>.</p>
 <div class="section" id="linux-installing-with-flatpak">
-<h2>Linux: installation avec Flatpak<a class="headerlink" href="#linux-installing-with-flatpak" title="Lien permanent vers ce titre">¶</a></h2>
-<p id="index-1">Picard est également disponible sur Flathub. Cette version devrait fonctionner sur toutes les distributions Linux modernes, tant que Flatpak est installé.</p>
+<h2>Linux: <span class="target" id="index-3"></span>Installation avec Flatpak<a class="headerlink" href="#linux-installing-with-flatpak" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Picard est également disponible sur Flathub. Cette version devrait fonctionner sur toutes les distributions Linux modernes, tant que Flatpak est installé.</p>
 <p>Commencez par activer le référentiel Flathub:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 </pre></div>
@@ -242,11 +242,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Écran principal &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Écran principal &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -104,8 +104,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -127,16 +127,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -201,20 +201,52 @@
            <div itemprop="articleBody">
             
   <div class="section" id="main-screen">
-<h1>Écran principal<a class="headerlink" href="#main-screen" title="Lien permanent vers ce titre">¶</a></h1>
-<span class="target" id="index-0"></span><a class="reference internal image-reference" href="../_images/screen_main.png"><img alt="../_images/screen_main.png" src="../_images/screen_main.png" style="width: 100%;" /></a>
+<h1><span class="target" id="index-1"></span>Écran principal<a class="headerlink" href="#main-screen" title="Lien permanent vers ce titre">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/screen_main.png"><img alt="../_images/screen_main.png" src="../_images/screen_main.png" style="width: 100%;" /></a>
 <ol class="arabic simple">
 <li><p><strong>Barre de menus</strong>: Ceci fournit le menu déroulant des actions que Picard peut effectuer.</p></li>
-<li><p><strong>Tool Bar</strong>: This provides quick links to the main functions performed by Picard.  This can
-be customized by the user in the <a class="reference internal" href="../config/options_interface.html"><span class="doc">User Interface Options</span></a> settings.</p></li>
-<li><p><strong>File Browser</strong>: Ceci fournit un navigateur pour sélectionner les fichiers et répertoires à traiter.</p></li>
+<li><p><strong>Barre d’outils</strong>: Ceci fournit des liens rapides vers les principales fonctions exécutées par Picard. Ceci peut être personnalisé par l’utilisateur dans les paramètres <a class="reference internal" href="../config/options_interface.html"><span class="doc">User Interface Options</span></a>.</p></li>
+<li><p><strong>Navigateur de fichiers</strong>: Ceci fournit un navigateur pour sélectionner les fichiers et répertoires à traiter.</p></li>
 <li><p><strong>Volet de cluster</strong>: Souvent appelé « volet de gauche », cette section permet à l’utilisateur de sélectionner et de regrouper les fichiers pour l’analyse, la recherche ou la mise en correspondance.</p></li>
 <li><p><strong>Volet Album</strong>: Souvent appelé « volet de droite », cette section affiche les albums extraits de MusicBrainz. C’est la section où les fichiers sont mis en correspondance avec les informations de piste téléchargées.</p></li>
 <li><p><strong>Volet Métadonnées</strong>: Cette section est un tableau à trois colonnes des métadonnées de balise pour l’album ou la piste actuellement sélectionné dans le volet Album. La première colonne affiche le nom de la balise, la seconde la valeur d’origine trouvée dans le fichier et la troisième colonne affiche la nouvelle valeur qui sera écrite.</p></li>
 <li><p><strong>Pochette</strong>: Ceci montre la nouvelle image de la pochette qui sera écrite dans l’album ou la piste sélectionné, ainsi que l’image de la pochette d’origine trouvée dans les fichiers correspondant à l’album ou à la piste sélectionné.</p></li>
-<li><p><strong>Player</strong>: The built-in player that can be used to play selected audio files.</p></li>
+<li><p><strong>Lecteur de musique</strong>: Le lecteur intégré qui peut être utilisé pour lire des fichiers audio sélectionnés.</p></li>
 <li><p><strong>Barre d’état</strong>: La barre en bas de l’écran affiche des informations sur le fonctionnement actuel de Picard, y compris des éléments tels que le nombre de fichiers, d’albums et de téléchargements en attente.</p></li>
 </ol>
+<p>Picard est disponible pour différents systèmes d’exploitation. Et bien que les fonctionnalités de Picard soient globalement les mêmes, l’aspect spécifique de l’interface utilisateur peut être légèrement différent en fonction du système d’exploitation. Tout au long de la documentation, des captures d’écran prises sur différents systèmes d’exploitation sont utilisées. Vous trouverez ci-dessous une sélection de captures d’écran de l’écran principal de Picard sur différents systèmes:</p>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-windows10-light.png"><img alt="win10light" src="../_images/mainscreen-windows10-light.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sur Windows 10 (avec interface utilisateur légère)</div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-windows10-dark.png"><img alt="win10dark" src="../_images/mainscreen-windows10-dark.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sur Windows 10 (avec une interface utilisateur sombre)</div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-macos-light.png"><img alt="maclight" src="../_images/mainscreen-macos-light.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sur macOS</div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-linux-plasma-light.png"><img alt="linuxlight" src="../_images/mainscreen-linux-plasma-light.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sous Linux avec l’environnement de bureau KDE Plasma (thème clair)</div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-linux-plasma-dark.png"><img alt="linuxdark" src="../_images/mainscreen-linux-plasma-dark.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sous Linux avec l’environnement de bureau KDE Plasma (thème sombre)</div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-linux-gnome.png"><img alt="linuxgnome" src="../_images/mainscreen-linux-gnome.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sous Linux avec l’environnement de bureau GNOME</div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-windows7.png"><img alt="win7" src="../_images/mainscreen-windows7.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sur Windows 7</div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="../_images/mainscreen-haiku.png"><img alt="haiku" src="../_images/mainscreen-haiku.png" style="width: 100%;" /></a></div>
+<div class="line">Picard sur Haiku</div>
+</div>
 </div>
 
 
@@ -236,11 +268,10 @@ be customized by the user in the <a class="reference internal" href="../config/o
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

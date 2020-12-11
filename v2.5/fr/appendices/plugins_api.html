@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Annexe 1: API des plugins &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Annexe 2: Mappage des balises" href="tag_mapping.html" />
+    <link rel="next" title="Annexe B: Mappage de balises" href="tag_mapping.html" />
     <link rel="prev" title="macOS montre que l’application est endommagée" href="../troubleshooting/macos_startup_error.html" /> 
 </head>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -104,8 +104,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -127,16 +127,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -183,7 +183,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Annexe 1: API des plugins</li>
+      <li>Annexe A: API des plugins</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -200,10 +200,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="appendix-1-plugins-api">
-<h1>Annexe 1: API des plugins<a class="headerlink" href="#appendix-1-plugins-api" title="Lien permanent vers ce titre">¶</a></h1>
+  <div class="section" id="appendix-a-plugins-api">
+<h1><span class="target" id="index-8"></span>Annexe A: <span class="target" id="index-9"></span>API des plugins<a class="headerlink" href="#appendix-a-plugins-api" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="section" id="plugin-metadata">
-<span id="index-0"></span><h2>Métadonnées du plugin<a class="headerlink" href="#plugin-metadata" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-10"></span>Métadonnées du plugin<a class="headerlink" href="#plugin-metadata" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Chaque plugin doit fournir des métadonnées sous forme de variables. Ces variables doivent être placées en haut du fichier.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
@@ -224,7 +224,7 @@
 </ul>
 </div>
 <div class="section" id="metadata-processors">
-<span id="index-1"></span><h2>Processeurs de métadonnées<a class="headerlink" href="#metadata-processors" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-11"></span>Processeurs de métadonnées<a class="headerlink" href="#metadata-processors" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Les métadonnées MusicBrainz peuvent être post-traitées à deux niveaux, album et piste. Les types d’arguments passés aux fonctions de processeur dans les exemples suivants sont les suivants:</p>
 <ul class="simple">
 <li><p><strong>album</strong>: <code class="docutils literal notranslate"><span class="pre">picard.album.Album</span></code></p></li>
@@ -269,7 +269,7 @@
 </div>
 </div>
 <div class="section" id="event-hooks">
-<span id="index-2"></span><h2>Hooks d’événement<a class="headerlink" href="#event-hooks" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-12"></span>Crochets d’événement<a class="headerlink" href="#event-hooks" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Les plugins peuvent s’enregistrer pour écouter différents événements. Actuellement, les hooks d’événement suivants sont disponibles:</p>
 <div class="section" id="file-post-load-processor-file">
 <h3>file_post_load_processor(file)<a class="headerlink" href="#file-post-load-processor-file" title="Lien permanent vers ce titre">¶</a></h3>
@@ -337,8 +337,8 @@
 </div>
 </div>
 <div class="section" id="file-formats">
-<span id="index-3"></span><h2>Formats de fichier<a class="headerlink" href="#file-formats" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Les plugins peuvent étendre Picard avec la prise en charge de formats de fichiers supplémentaires. Voir les <a class="reference external" href="https://github.com/metabrainz/picard/tree/master/picard/formats">implémentations de format de fichier existantes</a> pour plus de détails sur la façon d’implémenter les méthodes « _load »   et « _save””. Exemple:</p>
+<h2><span class="target" id="index-13"></span>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les plugins peuvent étendre Picard avec la prise en charge de formats de fichiers supplémentaires. Voir les <a class="reference external" href="https://github.com/metabrainz/picard/tree/master/picard/formats">implémentations de format de fichier existantes</a> pour plus de détails sur la façon d’implémenter les méthodes « _load » et « _save ». Exemple:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
 <span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
@@ -372,7 +372,7 @@
 </div>
 </div>
 <div class="section" id="tagger-script-functions">
-<span id="index-4"></span><h2>Fonctions de script de tagger<a class="headerlink" href="#tagger-script-functions" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-14"></span>Fonctions de script de tagger<a class="headerlink" href="#tagger-script-functions" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Pour définir de nouvelles fonctions de script de tagger, utilisez <code class="docutils literal notranslate"><span class="pre">register_script_function</span> <span class="pre">(function,</span> <span class="pre">name</span> <span class="pre">=</span> <span class="pre">None)</span></code> du module <code class="docutils literal notranslate"><span class="pre">picard.script</span></code>. <code class="docutils literal notranslate"><span class="pre">parser</span></code> est une instance de <code class="docutils literal notranslate"><span class="pre">picard.script.ScriptParser</span></code>, et le reste des arguments qui lui sont passés sont les arguments de l’appel de fonction dans le script du tagger. Exemple:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Initials&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;Lukas Lalinsky&quot;</span>
@@ -398,7 +398,7 @@
 <p>La valeur par défaut des deux arguments est <strong>True</strong>.</p>
 </div>
 <div class="section" id="context-menu-actions">
-<span id="index-5"></span><h2>Actions du menu contextuel<a class="headerlink" href="#context-menu-actions" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-15"></span>Actions du menu contextuel<a class="headerlink" href="#context-menu-actions" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Les actions du menu contextuel du clic droit peuvent être ajoutées aux albums, pistes et fichiers dans « Fichiers sans correspondance », « Clusters » et « ClusterList » (dossier parent des clusters). Exemple:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Remove Perfect Albums&#39;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;ichneumon, hrglgrmpf&#39;</span>
@@ -437,7 +437,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="tag_mapping.html" class="btn btn-neutral float-right" title="Annexe 2: Mappage des balises" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="tag_mapping.html" class="btn btn-neutral float-right" title="Annexe B: Mappage de balises" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../troubleshooting/macos_startup_error.html" class="btn btn-neutral float-left" title="macOS montre que l’application est endommagée" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
@@ -448,11 +448,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

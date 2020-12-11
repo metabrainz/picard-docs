@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Les fichiers ne sont pas enregistrés &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Les fichiers ne sont pas enregistrés &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Picard vient d’arrêter de travailler" href="stopped_working.html" />
-    <link rel="prev" title="Les balises ne sont ni mises à jour ni enregistrées" href="missing_tags.html" /> 
+    <link rel="next" title="Picard vient de cesser de travailler" href="stopped_working.html" />
+    <link rel="prev" title="Les balises ne sont pas mises à jour ou enregistrées" href="missing_tags.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -104,8 +104,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -127,16 +127,16 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -201,7 +201,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="files-are-not-being-saved">
-<span id="index-0"></span><h1>Les fichiers ne sont pas enregistrés<a class="headerlink" href="#files-are-not-being-saved" title="Lien permanent vers ce titre">¶</a></h1>
+<h1><span class="target" id="index-1"></span>Les fichiers ne sont pas enregistrés<a class="headerlink" href="#files-are-not-being-saved" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Il existe deux scénarios typiques dans lesquels les fichiers ne sont pas enregistrés:</p>
 <p><strong>Après avoir sélectionné les fichiers dans le volet de droite, vous voyez un arrêt rouge comme une icône</strong></p>
 <blockquote>
@@ -211,7 +211,7 @@
 </div></blockquote>
 <p><strong>Dans le volet de droite, vous ne voyez qu’une icône de note de musique devant les pistes</strong></p>
 <blockquote>
-<div><p>Cela signifie qu’il ne s’agit que des données de piste de MusicBrainz, mais qu’aucun fichier n’y est associé. Dans ce cas, le bouton Enregistrer est désactivé. Assurez-vous que les fichiers correspondent correctement aux pistes avant de réessayer de sauvegarder. Veuillez consulter les sections <a class="reference internal" href="../usage/match.html"><span class="doc">Faire correspondre les fichiers aux pistes</span></a> et <a class="reference internal" href="../usage/save.html"><span class="doc">Enregistrement des fichiers mis à jour</span></a> pour plus d’informations.</p>
+<div><p>Cela signifie qu’il ne s’agit que des données de piste de MusicBrainz, mais qu’aucun fichier n’y est associé. Dans ce cas, le bouton Enregistrer est désactivé. Assurez-vous que les fichiers correspondent correctement aux pistes avant de réessayer de sauvegarder. Veuillez consulter les sections <a class="reference internal" href="../usage/match.html"><span class="doc">Mise en correspondance des fichiers aux pistes</span></a> et <a class="reference internal" href="../usage/save.html"><span class="doc">Enregistrement des fichiers mis à jour</span></a> pour plus d’informations.</p>
 </div></blockquote>
 <p>Une troisième possibilité, bien que très rare, est que vous essayez de définir une balise avec une clé invalide. Si les deux solutions ci-dessus ne résolvent pas votre problème, essayez de revoir toutes les balises à écrire pour voir s’il y en a qui ne semblent pas valides.</p>
 </div>
@@ -224,10 +224,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="stopped_working.html" class="btn btn-neutral float-right" title="Picard vient d’arrêter de travailler" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="stopped_working.html" class="btn btn-neutral float-right" title="Picard vient de cesser de travailler" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="missing_tags.html" class="btn btn-neutral float-left" title="Les balises ne sont ni mises à jour ni enregistrées" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
+        <a href="missing_tags.html" class="btn btn-neutral float-left" title="Les balises ne sont pas mises à jour ou enregistrées" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
       
     </div>
   
@@ -235,11 +235,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

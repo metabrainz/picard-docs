@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Dépannage général &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Dépannage général &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -104,8 +104,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -127,21 +127,21 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Dépannage général</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#getting-help">Obtenir de l’aide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reporting-a-bug">Signaler un bug</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-logs">Obtenir des journaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reporting-a-bug">Signaler un bogue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-logs">Récupération des journaux</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -206,9 +206,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="general-troubleshooting">
-<h1>Dépannage général<a class="headerlink" href="#general-troubleshooting" title="Lien permanent vers ce titre">¶</a></h1>
+<h1><span class="target" id="index-3"></span>Dépannage général<a class="headerlink" href="#general-troubleshooting" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="section" id="getting-help">
-<span id="index-0"></span><h2>Obtenir de l’aide<a class="headerlink" href="#getting-help" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Obtenir de l’aide<a class="headerlink" href="#getting-help" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Si vous rencontrez des problèmes lors de l’utilisation de Picard, veuillez d’abord consulter les ressources suivantes:</p>
 <ul class="simple">
 <li><p>Pour des informations générales sur l’utilisation, consultez la documentation <a class="reference internal" href="../usage/using.html"><span class="doc">Utiliser Picard</span></a> et le <a class="reference external" href="https://picard.musicbrainz.org/docs/guide/">guide de démarrage rapide illustré</a>.</p></li>
@@ -219,7 +219,7 @@
 </ul>
 </div>
 <div class="section" id="reporting-a-bug">
-<span id="index-1"></span><h2>Signaler un bug<a class="headerlink" href="#reporting-a-bug" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-4"></span>Signaler un bogue<a class="headerlink" href="#reporting-a-bug" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Si vous pensez avoir trouvé un bogue, veuillez vérifier si vous utilisez la dernière version de Picard et si le bogue a déjà été signalé dans le <a class="reference external" href="https://tickets.musicbrainz.org/browse/PICARD">bug tracker</a>. Si vous n’êtes pas sûr ou ne souhaitez pas consulter les tickets existants, demandez d’abord sur les forums de la communauté.</p>
 <p>Si vous êtes toujours convaincu d’avoir trouvé un nouveau bogue, ouvrez un <a class="reference external" href="https://tickets.musicbrainz.org/secure/CreateIssue.jspa?pid=10042&amp;issuetype=1">nouveau ticket</a> fournissant les informations suivantes:</p>
 <ul class="simple">
@@ -231,7 +231,7 @@
 </ul>
 </div>
 <div class="section" id="getting-logs">
-<span id="index-2"></span><h2>Obtenir des journaux<a class="headerlink" href="#getting-logs" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-5"></span>Récupération des journaux<a class="headerlink" href="#getting-logs" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Pour de nombreux bogues, cela aide les développeurs à avoir un journal de Picard. Vous pouvez voir le journal en allant dans <span class="menuselection">« Aide ‣ Afficher le journal »</span>. Vous pouvez également obtenir un journal de débogage complet (mieux car il contient des informations plus détaillées) en démarrant Picard avec <cite>-d</cite> comme argument de ligne de commande. Si vous utilisez Windows, vous pouvez modifier la cible de votre raccourci (<span class="menuselection">raccourci clic droit ‣ Propriétés</span>) en:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C:\Program Files\MusicBrainz Picard\picard.exe&quot;</span> <span class="o">-</span><span class="n">d</span>
 </pre></div>
@@ -243,7 +243,7 @@
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">Voir aussi</p>
-<p>Situations spécifiques: <a class="reference internal" href="no_coverart.html"><span class="doc">Il n’y a pas de pochette</span></a> / <a class="reference internal" href="missing_tags.html"><span class="doc">Les balises ne sont ni mises à jour ni enregistrées</span></a> / <a class="reference internal" href="not_saving.html"><span class="doc">Les fichiers ne sont pas enregistrés</span></a> / <a class="reference internal" href="stopped_working.html"><span class="doc">Picard vient d’arrêter de travailler</span></a> / <a class="reference internal" href="macos_startup_error.html"><span class="doc">macOS montre que l’application est endommagée</span></a></p>
+<p>Situations spécifiques: <a class="reference internal" href="no_coverart.html"><span class="doc">Il n’y a pas de pochette</span></a> / <a class="reference internal" href="missing_tags.html"><span class="doc">Les balises ne sont pas mises à jour ou enregistrées</span></a> / <a class="reference internal" href="not_saving.html"><span class="doc">Les fichiers ne sont pas enregistrés</span></a> / <a class="reference internal" href="stopped_working.html"><span class="doc">Picard vient de cesser de travailler</span></a> / <a class="reference internal" href="macos_startup_error.html"><span class="doc">macOS montre que l’application est endommagée</span></a></p>
 </div>
 </div>
 </div>
@@ -267,11 +267,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

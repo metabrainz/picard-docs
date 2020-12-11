@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Index &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -102,8 +102,8 @@
 <li class="toctree-l1"><a class="reference internal" href="getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending/scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -125,16 +125,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -209,6 +209,7 @@
  | <a href="#E"><strong>E</strong></a>
  | <a href="#F"><strong>F</strong></a>
  | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
  | <a href="#I"><strong>I</strong></a>
  | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
@@ -218,7 +219,6 @@
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
- | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
  | <a href="#W"><strong>W</strong></a>
  
@@ -226,37 +226,48 @@
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/acknowledgements.html#index-0">acknowledgements</a>
-</li>
-      <li><a href="about_picard/glossary.html#index-1">acoustic fingerprint</a>, <a href="faq/faq_file_formats.html#index-3">[1]</a>
+      <li><a href="about_picard/glossary.html#index-39">AcoustID</a>
 
       <ul>
-        <li><a href="usage/submit_acoustid.html#index-0">submitting</a>, <a href="workflows/workflow_album.html#index-1">[1]</a>, <a href="workflows/workflow_cd.html#index-1">[2]</a>
+        <li><a href="usage/submit_acoustid.html#index-1">soumission</a>
 </li>
       </ul></li>
-      <li><a href="about_picard/glossary.html#index-2">AcoustID</a>
+      <li>
+    actions du menu contextuel
 
       <ul>
-        <li><a href="usage/submit_acoustid.html#index-0">submitting</a>
+        <li><a href="appendices/plugins_api.html#index-15">plugins</a>
 </li>
       </ul></li>
+      <li><a href="about_picard/glossary.html#index-40">albumartist</a>
+</li>
+      <li><a href="usage/retrieve.html#index-10">analyser les fichiers</a>, <a href="usage/retrieve_scan.html#index-2">[1]</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/glossary.html#index-3">albumartist</a>
-</li>
       <li>
     api
 
       <ul>
-        <li><a href="appendices/plugins_api.html#index-0">plugins</a>
+        <li><a href="appendices/plugins_api.html#index-9">plugins</a>
 </li>
       </ul></li>
-      <li><a href="about_picard/glossary.html#index-4">artist</a>
+      <li><a href="about_picard/glossary.html#index-44">archives d&#39;art de couverture</a>
 </li>
-      <li><a href="about_picard/glossary.html#index-5">artist credit</a>
+      <li>
+    archives de l&#39;art de la couverture
+
+      <ul>
+        <li><a href="config/options_cover_art_archive.html#index-2">configuration</a>
 </li>
-      <li><a href="faq/faq_file_formats.html#index-2">audio player</a>
+      </ul></li>
+      <li>
+    art de couverture
+
+      <ul>
+        <li><a href="config/options_cover.html#index-1">configuration</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -264,12 +275,35 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
-    browser
+    balisage
 
       <ul>
-        <li><a href="faq/faq_config.html#index-2">configuration</a>
+        <li><a href="extending/scripts.html#index-4">scripts</a>
 </li>
       </ul></li>
+      <li>
+    balises
+
+      <ul>
+        <li><a href="variables/tags_advanced.html#index-2">avancées</a>
+</li>
+        <li><a href="variables/tags_basic.html#index-1">de base</a>
+</li>
+        <li><a href="variables/tags_advanced.html#index-3">de genre</a>
+</li>
+        <li><a href="variables/variables_classical.html#index-1">de musique classique</a>
+</li>
+        <li><a href="variables/variables_plugins.html#index-1">des plugins</a>
+</li>
+        <li><a href="variables/variables_other_information.html#index-1">écriture</a>
+</li>
+        <li><a href="appendices/tag_mapping.html#index-1">mappage</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="usage/tags_from_file_names.html#index-1">balises à partir des noms de fichiers</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -281,123 +315,120 @@
 
       <ul>
         <li>
-    voir cover art archive
+    voir archives d&#39;art de couverture
 </li>
       </ul></li>
-      <li>
-    command line
-
-      <ul>
-        <li><a href="appendices/command_line.html#index-0">options</a>
+      <li><a href="usage/retrieve.html#index-8">chercher cd</a>, <a href="usage/retrieve_lookup_cd.html#index-2">[1]</a>
 </li>
-      </ul></li>
       <li>
     configuration
 
       <ul>
-        <li><a href="config/options_tags_compatibility_aac.html#index-0">aac tag options</a>
+        <li><a href="config/options_cover_art_archive.html#index-2">archives de l&#39;art de la couverture</a>
 </li>
-        <li><a href="config/options_tags_compatibility_ac3.html#index-0">ac3 tag options</a>
+        <li><a href="config/options_cover.html#index-1">art de couverture</a>
 </li>
-        <li><a href="config/configuration.html#index-1">action options</a>
+        <li><a href="config/options_before_tagging.html#index-1">avant le balisage</a>
 </li>
-        <li><a href="config/options_advanced.html#index-0">advanced options</a>
+        <li><a href="config/configuration.html#index-3">configuration de l&#39;écran</a>
 </li>
-        <li><a href="config/options_before_tagging.html#index-0">before tagging</a>
+        <li><a href="config/options_interface_colors.html#index-1">couleurs</a>
 </li>
-        <li><a href="faq/faq_config.html#index-2">browser</a>
+        <li><a href="config/options_filerenaming.html#index-2">dénomination des fichiers</a>
 </li>
-        <li><a href="config/options_cdlookup.html#index-0">cd lookup</a>
+        <li><a href="config/options_location.html#index-1">emplacement de la pochette</a>
 </li>
-        <li><a href="config/options_interface_colors.html#index-0">colors</a>
+        <li><a href="faq/faq_config.html#index-6">emplacement du fichier de configuration</a>
 </li>
-        <li><a href="faq/faq_config.html#index-0">config file location</a>
+        <li><a href="config/options_fingerprinting.html#index-1">empreinte digitale</a>
 </li>
-        <li><a href="config/options_cover.html#index-0">cover art</a>
+        <li><a href="config/options_ratings.html#index-1">évaluations</a>
 </li>
-        <li><a href="config/options_cover_art_archive.html#index-0">cover art archive</a>
+        <li><a href="config/options_local_files.html#index-1">fichiers locaux</a>
 </li>
-        <li><a href="config/options_location.html#index-0">cover art location</a>
-</li>
-        <li><a href="config/options_cover_art_providers.html#index-0">cover art providers</a>
-</li>
-        <li><a href="config/options_filerenaming.html#index-0">file naming</a>
-</li>
-        <li><a href="config/options_fingerprinting.html#index-0">fingerprinting</a>
-</li>
-        <li><a href="config/options_general.html#index-0">general options</a>
+        <li><a href="config/options_cover_art_providers.html#index-1">fournisseurs d&#39;art de couverture</a>
 </li>
         <li><a href="config/options_genres.html#index-0">genres</a>
 </li>
-        <li><a href="config/options_tags_compatibility_id3.html#index-0">id3 tag options</a>
+        <li><a href="config/options_interface.html#index-1">interface utilisateur</a>
 </li>
-        <li><a href="config/options_local_files.html#index-0">local files</a>
+        <li><a href="faq/faq_config.html#index-8">navigateur</a>
 </li>
-        <li><a href="config/options_matching.html#index-0">matching preferences</a>
+        <li><a href="config/options_advanced.html#index-1">options avancées</a>
 </li>
-        <li><a href="config/options_metadata.html#index-0">metadata options</a>
+        <li><a href="config/configuration.html#index-4">options d&#39;action</a>
 </li>
-        <li><a href="config/options_network.html#index-0">network</a>
+        <li><a href="config/options_tags.html#index-1">options de balise</a>
+</li>
+        <li><a href="config/options_tags_compatibility_aac.html#index-1">options de balise aac</a>
+</li>
+        <li><a href="config/options_tags_compatibility_ac3.html#index-1">options de balise ac3</a>
+</li>
+        <li><a href="config/options_tags_compatibility_id3.html#index-1">options de balise id3</a>
+</li>
+        <li><a href="config/options_tags_compatibility_wave.html#index-1">options de balise wave</a>
+</li>
+        <li><a href="config/options_metadata.html#index-1">options de métadonnées</a>
+</li>
+        <li><a href="config/options_general.html#index-2">options générales</a>
 </li>
         <li><a href="config/options_plugins.html#index-0">plugins</a>
 </li>
-        <li><a href="config/options_ratings.html#index-0">ratings</a>
+        <li><a href="config/options_matching.html#index-1">préférences correspondantes</a>
 </li>
-        <li><a href="config/options_releases.html#index-0">release preferences</a>
+        <li><a href="config/options_releases.html#index-1">préférences de version</a>
 </li>
-        <li><a href="config/configuration.html#index-0">screen setup</a>
+        <li><a href="config/options_cdlookup.html#index-1">recherche cd</a>
 </li>
-        <li><a href="config/options_scripting.html#index-0">scripting</a>
+        <li><a href="config/options_network.html#index-1">réseau</a>
 </li>
-        <li><a href="config/options_tags.html#index-0">tag options</a>
+        <li><a href="config/options_scripting.html#index-1">scripts</a>
 </li>
         <li><a href="config/options_interface_top_tags.html#index-0">top tags</a>
 </li>
-        <li><a href="config/options_general.html#index-1">update checking</a>
-</li>
-        <li><a href="config/options_interface.html#index-0">user interface</a>
-</li>
-        <li><a href="config/options_tags_compatibility_wave.html#index-0">wave tag options</a>
+        <li><a href="config/options_general.html#index-4">vérification des mises à jour</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    context menu actions
-
-      <ul>
-        <li><a href="appendices/plugins_api.html#index-5">plugins</a>
+      <li><a href="about_picard/contributing.html#index-1">contribuer</a>
 </li>
-      </ul></li>
-      <li><a href="about_picard/contributing.html#index-0">contributing</a>
+      <li><a href="about_picard/glossary.html#index-42">crédits d&#39;artiste</a>
 </li>
-      <li>
-    cover art
-
-      <ul>
-        <li><a href="config/options_cover.html#index-0">configuration</a>
-</li>
-        <li><a href="config/options_location.html#index-0">location to save</a>
-</li>
-        <li><a href="usage/coverart.html#index-0">setting</a>
-</li>
-      </ul></li>
-      <li><a href="about_picard/glossary.html#index-6">cover art archive</a>
-
-      <ul>
-        <li><a href="config/options_cover_art_archive.html#index-0">configuration</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/glossary.html#index-7">disc id</a>
+      <li>
+    dénomination des fichiers
 
       <ul>
-        <li><a href="usage/attach_disc_id.html#index-0">attaching</a>
+        <li><a href="config/options_filerenaming.html#index-2">configuration</a>
+</li>
+      </ul></li>
+      <li>
+    dépannage
+
+      <ul>
+        <li><a href="troubleshooting/no_coverart.html#index-3">aucune pochette affichée</a>
+</li>
+        <li><a href="troubleshooting/no_coverart.html#index-2">aucune pochette téléchargée</a>
+</li>
+        <li><a href="troubleshooting/missing_tags.html#index-1">balises non enregistrées</a>
+</li>
+        <li><a href="troubleshooting/not_saving.html#index-1">fichiers non enregistrés</a>
+</li>
+        <li><a href="troubleshooting/troubleshooting.html#index-3">général</a>
+</li>
+        <li><a href="troubleshooting/troubleshooting.html#index-5">journaux</a>
+</li>
+        <li><a href="troubleshooting/stopped_working.html#index-1">le programme se fige</a>
+</li>
+        <li><a href="troubleshooting/macos_startup_error.html#index-1">macOS montre que l&#39;application est endommagée</a>
+</li>
+        <li><a href="troubleshooting/troubleshooting.html#index-4">signaler un bug</a>
 </li>
       </ul></li>
   </ul></td>
@@ -406,13 +437,30 @@
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="about_picard/glossary.html#index-38">empreinte acoustique</a>
+</li>
       <li>
-    event hooks
+    empreinte digitale
 
       <ul>
-        <li><a href="appendices/plugins_api.html#index-2">plugins</a>
+        <li><a href="usage/submit_acoustid.html#index-1">soumission</a>
 </li>
       </ul></li>
+      <li>
+    empreinte digitale acoustique
+
+      <ul>
+        <li><a href="usage/submit_acoustid.html#index-1">soumission</a>, <a href="workflows/workflow_album.html#index-4">[1]</a>, <a href="workflows/workflow_cd.html#index-4">[2]</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="faq/faq_file_formats.html#index-10">empreintes acoustiques</a>
+</li>
+      <li><a href="about_picard/glossary.html#index-50">enregistrement</a>
+</li>
+      <li><a href="usage/save.html#index-1">enregistrement de fichiers</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -420,46 +468,56 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
-    file format
+    fichiers
 
       <ul>
-        <li><a href="appendices/plugins_api.html#index-3">plugins</a>
+        <li><a href="usage/save.html#index-1">enregistrement</a>
 </li>
       </ul></li>
-      <li><a href="faq/faq_file_formats.html#index-0">file formats</a>
+      <li><a href="usage/retrieve.html#index-9">fichiers de recherche</a>, <a href="usage/retrieve_lookup.html#index-2">[1]</a>
 </li>
-      <li>
-    file naming
-
-      <ul>
-        <li><a href="config/options_filerenaming.html#index-0">configuration</a>
-</li>
-        <li><a href="extending/scripts.html#index-1">scripts</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    files
-
-      <ul>
-        <li><a href="usage/save.html#index-0">saving</a>
-</li>
-      </ul></li>
-      <li>
-    fingerprint
-
-      <ul>
-        <li><a href="about_picard/glossary.html#index-1">acoustic</a>, <a href="faq/faq_file_formats.html#index-3">[1]</a>
-</li>
-        <li><a href="usage/submit_acoustid.html#index-0">submitting</a>
-</li>
-      </ul></li>
       <li>
     flatpak
 
       <ul>
-        <li><a href="getting_started/download.html#index-1">install</a>
+        <li><a href="getting_started/download.html#index-3">installation</a>
+</li>
+      </ul></li>
+      <li>
+    flux de travail
+
+      <ul>
+        <li><a href="workflows/workflow_metadata.html#index-1">fichiers non groupés</a>
+</li>
+      </ul></li>
+      <li><a href="functions/list_by_type.html#index-9">fonctions de script</a>
+
+      <ul>
+        <li><a href="functions/list_by_type.html#index-10">affectation</a>
+</li>
+        <li><a href="functions/list_by_type.html#index-16">boucle</a>
+</li>
+        <li><a href="functions/list_by_type.html#index-14">conditionnel</a>
+</li>
+        <li><a href="functions/list_by_type.html#index-17">divers</a>
+</li>
+        <li><a href="functions/list_by_type.html#index-15">informations</a>
+</li>
+        <li><a href="functions/list_by_type.html#index-13">mathématique</a>
+</li>
+        <li><a href="functions/list_by_type.html#index-12">multi-valeur</a>
+</li>
+        <li><a href="appendices/plugins_api.html#index-14">plugins</a>
+</li>
+        <li><a href="functions/list_by_type.html#index-11">texte</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="faq/faq_file_formats.html#index-4">format de fichier</a>
+
+      <ul>
+        <li><a href="appendices/plugins_api.html#index-13">plugins</a>
 </li>
       </ul></li>
   </ul></td>
@@ -468,46 +526,74 @@
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/glossary.html#index-0">glossary</a>
+      <li><a href="about_picard/glossary.html#index-19">glossaire</a>
 </li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    hooks d&#39;événement
+
+      <ul>
+        <li><a href="appendices/plugins_api.html#index-12">plugins</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="faq/faq_usage.html#index-3">icône de tagueur</a>
+</li>
       <li>
-    icon
+    icônes
 
       <ul>
-        <li><a href="faq/faq_usage.html#index-0">tagger</a>
+        <li><a href="getting_started/status_icons.html#index-4">album</a>
+</li>
+        <li><a href="getting_started/status_icons.html#index-4">libération</a>
 </li>
       </ul></li>
+      <li><a href="getting_started/status_icons.html#index-3">icônes d&#39;état</a>
+</li>
+      <li><a href="getting_started/status_icons.html#index-5">icônes de piste</a>
+</li>
       <li>
-    icons
+    id de disque
 
       <ul>
-        <li><a href="getting_started/status_icons.html#index-1">album</a>
-</li>
-        <li><a href="getting_started/status_icons.html#index-1">release</a>
-</li>
-        <li><a href="getting_started/status_icons.html#index-0">status</a>
-</li>
-        <li><a href="getting_started/status_icons.html#index-2">track</a>
+        <li><a href="usage/attach_disc_id.html#index-1">attacher</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="about_picard/glossary.html#index-45">id du disque</a>
+</li>
       <li>
-    install
+    installation
 
       <ul>
-        <li><a href="getting_started/download.html#index-0">download</a>
+        <li><a href="getting_started/download.html#index-3">flatpak</a>
 </li>
-        <li><a href="getting_started/download.html#index-1">flatpak</a>
+        <li><a href="getting_started/download.html#index-2">télécharger</a>
 </li>
       </ul></li>
-      <li><a href="faq/faq_config.html#index-1">itunes</a>
+      <li>
+    interface utilisateur
+
+      <ul>
+        <li><a href="config/options_interface.html#index-1">configuration</a>
+</li>
+        <li><a href="config/options_interface_colors.html#index-1">couleurs</a>
+</li>
+        <li><a href="getting_started/screen_main.html#index-1">écran principal</a>
+</li>
+      </ul></li>
+      <li><a href="faq/faq_config.html#index-7">itunes</a>
 </li>
   </ul></td>
 </tr></table>
@@ -515,15 +601,22 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/introduction.html#index-0">limitations</a>
+      <li><a href="about_picard/glossary.html#index-41">l&#39;artiste</a>
 </li>
-      <li><a href="usage/retrieve.html#index-0">lookup cd</a>, <a href="usage/retrieve_lookup_cd.html#index-0">[1]</a>
+      <li><a href="about_picard/glossary.html#index-46">L&#39;identifiant MusicBrainz</a>
+</li>
+      <li><a href="faq/faq_file_formats.html#index-9">lecteur audio</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="usage/retrieve.html#index-1">lookup files</a>, <a href="usage/retrieve_lookup.html#index-0">[1]</a>
+      <li>
+    ligne de commande
+
+      <ul>
+        <li><a href="appendices/command_line.html#index-1">options</a>
 </li>
-      <li><a href="usage/retrieve.html#index-3">lookup in browser</a>, <a href="usage/retrieve_browser.html#index-0">[1]</a>
+      </ul></li>
+      <li><a href="about_picard/introduction.html#index-2">limites</a>
 </li>
   </ul></td>
 </tr></table>
@@ -531,36 +624,57 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="faq/faq_usage.html#index-1">macos</a>
+      <li><a href="faq/faq_usage.html#index-4">macos</a>
 </li>
       <li>
-    mapping
+    mappage
 
       <ul>
-        <li><a href="appendices/tag_mapping.html#index-0">tags</a>
+        <li><a href="appendices/tag_mapping.html#index-1">balises</a>
 </li>
       </ul></li>
-      <li><a href="usage/match.html#index-0">matching files to tracks</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     mbid
 
       <ul>
         <li>
-    voir MusicBrainz Identifier
+    voir L&#39;identifiant MusicBrainz
 </li>
       </ul></li>
-      <li><a href="about_picard/glossary.html#index-9">medium</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="usage/match.html#index-1">mise en correspondance des fichiers aux pistes</a>
 </li>
-      <li><a href="about_picard/glossary.html#index-8">MusicBrainz Identifier</a>
+      <li>
+    mots clés
+
+      <ul>
+        <li><a href="faq/faq_file_formats.html#index-8">édition</a>
+</li>
+      </ul></li>
+      <li><a href="about_picard/glossary.html#index-48">moyen</a>
 </li>
   </ul></td>
 </tr></table>
 
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    navigateur
+
+      <ul>
+        <li><a href="faq/faq_config.html#index-8">configuration</a>
+</li>
+      </ul></li>
+      <li>
+    nom de fichier
+
+      <ul>
+        <li><a href="extending/scripts.html#index-3">scripts</a>
+</li>
+      </ul></li>
+  </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     non-album track
@@ -577,65 +691,76 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
-    option settings
+    options
 
       <ul>
-        <li>
-    voir configuration
+        <li><a href="appendices/command_line.html#index-1">ligne de commande</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    options
-
-      <ul>
-        <li><a href="appendices/command_line.html#index-0">command line</a>
+      <li><a href="extending/processing.html#index-1">ordre de traitement</a>
 </li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    paramètres des options
+
+      <ul>
+        <li>
+    voir configuration
+</li>
+      </ul></li>
+      <li><a href="workflows/workflow_no_info.html#index-1">pas de métadonnées</a>
+</li>
       <li><a href="extending/plugins.html#index-0">plugins</a>
 
       <ul>
-        <li><a href="appendices/plugins_api.html#index-0">api</a>
+        <li><a href="appendices/plugins_api.html#index-15">actions du menu contextuel</a>
+</li>
+        <li><a href="appendices/plugins_api.html#index-9">api</a>
 </li>
         <li><a href="config/options_plugins.html#index-0">configuration</a>
 </li>
-        <li><a href="appendices/plugins_api.html#index-5">context menu actions</a>
+        <li><a href="appendices/plugins_api.html#index-14">fonctions de script</a>
 </li>
-        <li><a href="appendices/plugins_api.html#index-2">event hooks</a>
+        <li><a href="appendices/plugins_api.html#index-13">format de fichier</a>
 </li>
-        <li><a href="appendices/plugins_api.html#index-3">file format</a>
+        <li><a href="appendices/plugins_api.html#index-12">hooks d&#39;événement</a>
 </li>
-        <li><a href="config/options_plugins.html#index-2">installing</a>
+        <li><a href="config/options_plugins.html#index-4">installation</a>
 </li>
-        <li><a href="appendices/plugins_api.html#index-0">metadata</a>
+        <li><a href="appendices/plugins_api.html#index-10">métadonnées</a>
 </li>
-        <li><a href="appendices/plugins_api.html#index-1">metadata processors</a>
+        <li><a href="appendices/plugins_api.html#index-11">processeurs de métadonnées</a>
 </li>
-        <li><a href="appendices/plugins_api.html#index-0">programming</a>
+        <li><a href="appendices/plugins_api.html#index-8">programmation</a>
 </li>
-        <li><a href="appendices/plugins_api.html#index-4">scripting functions</a>
+        <li><a href="config/options_plugins.html#index-5">tierce personne</a>
 </li>
-        <li><a href="config/options_plugins.html#index-1">third-party</a>
-</li>
-        <li><a href="extending/plugins.html#index-1">types</a>
+        <li><a href="extending/plugins.html#index-3">types</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="extending/processing.html#index-0">processing order</a>
-</li>
       <li>
-    programming
+    pochette
 
       <ul>
-        <li><a href="appendices/plugins_api.html#index-0">plugins</a>
+        <li><a href="config/options_location.html#index-1">emplacement pour enregistrer</a>
+</li>
+        <li><a href="usage/coverart.html#index-1">réglage</a>
+</li>
+      </ul></li>
+      <li>
+    programmation
+
+      <ul>
+        <li><a href="appendices/plugins_api.html#index-8">plugins</a>
 </li>
       </ul></li>
   </ul></td>
@@ -644,19 +769,22 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/introduction.html#index-0">rate limiting</a>
+      <li><a href="usage/retrieve.html#index-11">recherche dans le navigateur</a>, <a href="usage/retrieve_browser.html#index-2">[1]</a>
 </li>
-      <li><a href="about_picard/glossary.html#index-11">recording</a>
+      <li>
+    recording
 
       <ul>
-        <li><a href="about_picard/glossary.html#index-14">standalone</a>
+        <li><a href="about_picard/glossary.html#index-53">standalone</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/glossary.html#index-12">release</a>
+      <li><a href="about_picard/glossary.html#index-51">release</a>
 </li>
-      <li><a href="about_picard/glossary.html#index-13">release group</a>
+      <li><a href="about_picard/glossary.html#index-52">release group</a>
+</li>
+      <li><a href="about_picard/acknowledgements.html#index-1">remerciements</a>
 </li>
   </ul></td>
 </tr></table>
@@ -664,57 +792,25 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="usage/save.html#index-0">saving files</a>
-</li>
-      <li><a href="usage/retrieve.html#index-2">scan files</a>, <a href="usage/retrieve_scan.html#index-0">[1]</a>
-</li>
-      <li>
-    scripting
+      <li><a href="extending/scripting.html#index-2">scripts</a>, <a href="extending/scripts.html#index-0">[1]</a>
 
       <ul>
-        <li><a href="functions/list_by_type.html#index-0">functions</a>
+        <li><a href="config/options_scripting.html#index-1">balisage</a>, <a href="extending/scripts.html#index-4">[1]</a>
 </li>
-      </ul></li>
-      <li>
-    scripting functions
-
-      <ul>
-        <li><a href="functions/list_by_type.html#index-1">assignment</a>
+        <li><a href="variables/variables.html#index-1">balises</a>
 </li>
-        <li><a href="functions/list_by_type.html#index-5">conditional</a>
+        <li><a href="config/options_filerenaming.html#index-4">dénomination de fichier</a>
 </li>
-        <li><a href="functions/list_by_type.html#index-6">information</a>
+        <li><a href="extending/scripts.html#index-3">nom de fichier</a>
 </li>
-        <li><a href="functions/list_by_type.html#index-7">loop</a>
+        <li><a href="extending/scripting.html#index-3">syntaxe</a>
 </li>
-        <li><a href="functions/list_by_type.html#index-4">mathematical</a>
-</li>
-        <li><a href="functions/list_by_type.html#index-8">miscellaneous</a>
-</li>
-        <li><a href="functions/list_by_type.html#index-3">multi-value</a>
-</li>
-        <li><a href="appendices/plugins_api.html#index-4">plugins</a>
-</li>
-        <li><a href="functions/list_by_type.html#index-2">text</a>
+        <li><a href="variables/variables.html#index-1">variables</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="extending/scripting.html#index-0">scripts</a>, <a href="extending/scripts.html#index-0">[1]</a>
-
-      <ul>
-        <li><a href="config/options_filerenaming.html#index-1">file naming</a>, <a href="extending/scripts.html#index-1">[1]</a>
-</li>
-        <li><a href="extending/scripting.html#index-1">syntax</a>
-</li>
-        <li><a href="config/options_scripting.html#index-0">tagging</a>, <a href="extending/scripts.html#index-2">[1]</a>
-</li>
-        <li><a href="variables/variables.html#index-0">tags</a>
-</li>
-        <li><a href="variables/variables.html#index-0">variables</a>
-</li>
-      </ul></li>
-      <li><a href="about_picard/glossary.html#index-14">standalone recording</a>
+      <li><a href="about_picard/glossary.html#index-53">standalone recording</a>
 </li>
   </ul></td>
 </tr></table>
@@ -722,87 +818,8 @@
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="faq/faq_usage.html#index-0">tagger icon</a>
+      <li><a href="about_picard/glossary.html#index-54">track</a>
 </li>
-      <li>
-    tagging
-
-      <ul>
-        <li><a href="extending/scripts.html#index-2">scripts</a>
-</li>
-      </ul></li>
-      <li>
-    tags
-
-      <ul>
-        <li><a href="variables/tags_advanced.html#index-0">advanced</a>
-</li>
-        <li><a href="variables/tags_basic.html#index-0">basic</a>
-</li>
-        <li><a href="variables/variables_classical.html#index-0">classical</a>
-</li>
-        <li><a href="faq/faq_file_formats.html#index-1">editing</a>
-</li>
-        <li><a href="variables/tags_advanced.html#index-1">genre</a>
-</li>
-        <li><a href="appendices/tag_mapping.html#index-0">mapping</a>
-</li>
-        <li><a href="variables/variables_plugins.html#index-0">plugins</a>
-</li>
-        <li><a href="variables/variables_other_information.html#index-0">writing</a>
-</li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/glossary.html#index-15">track</a>
-</li>
-      <li>
-    troubleshooting
-
-      <ul>
-        <li><a href="troubleshooting/not_saving.html#index-0">files not saved</a>
-</li>
-        <li><a href="troubleshooting/troubleshooting.html#index-0">general</a>
-</li>
-        <li><a href="troubleshooting/troubleshooting.html#index-2">logs</a>
-</li>
-        <li><a href="troubleshooting/macos_startup_error.html#index-0">macOS shows app is damaged</a>
-</li>
-        <li><a href="troubleshooting/no_coverart.html#index-1">no cover art displayed</a>
-</li>
-        <li><a href="troubleshooting/no_coverart.html#index-0">no cover art downloaded</a>
-</li>
-        <li><a href="troubleshooting/stopped_working.html#index-0">program freezes</a>
-</li>
-        <li><a href="troubleshooting/troubleshooting.html#index-1">reporting a bug</a>
-</li>
-        <li><a href="troubleshooting/missing_tags.html#index-0">tags not saved</a>
-</li>
-      </ul></li>
-  </ul></td>
-</tr></table>
-
-<h2 id="U">U</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    update checking
-
-      <ul>
-        <li><a href="config/options_general.html#index-1">configuration</a>
-</li>
-      </ul></li>
-      <li>
-    user interface
-
-      <ul>
-        <li><a href="config/options_interface_colors.html#index-0">colors</a>
-</li>
-        <li><a href="config/options_interface.html#index-0">configuration</a>
-</li>
-        <li><a href="getting_started/screen_main.html#index-0">main screen</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -813,11 +830,20 @@
     variables
 
       <ul>
-        <li><a href="variables/variables_advanced.html#index-0">advanced</a>
+        <li><a href="variables/variables_advanced.html#index-1">avancées</a>
 </li>
-        <li><a href="variables/variables_basic.html#index-0">basic</a>
+        <li><a href="variables/variables_basic.html#index-1">de base</a>
 </li>
-        <li><a href="variables/variables_file.html#index-0">file</a>
+        <li><a href="variables/variables_file.html#index-1">de fichier</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    vérification des mises à jour
+
+      <ul>
+        <li><a href="config/options_general.html#index-4">configuration</a>
 </li>
       </ul></li>
   </ul></td>
@@ -826,21 +852,17 @@
 <h2 id="W">W</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="about_picard/glossary.html#index-16">work</a>
+      <li><a href="about_picard/glossary.html#index-55">work</a>
 </li>
       <li>
     workflows
 
       <ul>
-        <li><a href="workflows/workflow_cd.html#index-0">cd</a>
+        <li><a href="workflows/workflow_cd.html#index-2">cd</a>
 </li>
-        <li><a href="workflows/workflow_album.html#index-0">files grouped by album</a>
+        <li><a href="workflows/workflow_album.html#index-2">fichiers regroupés par album</a>
 </li>
-        <li><a href="workflows/workflow_metadata.html#index-0">files not grouped</a>
-</li>
-        <li><a href="workflows/workflows.html#index-0">general</a>
-</li>
-        <li><a href="workflows/workflow_no_info.html#index-0">no metadata</a>
+        <li><a href="workflows/workflows.html#index-1">général</a>
 </li>
       </ul></li>
   </ul></td>
@@ -857,11 +879,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

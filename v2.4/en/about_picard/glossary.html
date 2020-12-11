@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Glossary of Terms &mdash; MusicBrainz Picard v2.4 documentation</title>
+  <title>Glossary of Terms &mdash; MusicBrainz Picard v2.4.4 documentation</title>
   
 
   
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                v2.4
+                v2.4.4
               </div>
             
           
@@ -132,9 +132,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix 1: Plugins API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix 2: Tag Mapping</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix 3: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
 </ul>
 
             
@@ -280,64 +280,68 @@ displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a tota
 <p>Please see the <a class="reference external" href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID page on Wikipedia</a>
 for more information.</p>
 </div></blockquote>
-<p id="index-9"><strong>non-album track</strong></p>
+<p id="index-9"><strong>medium</strong></p>
+<blockquote>
+<div><p>One of the physical, separate things you would get when you buy something in a record store. They are the
+individual CDs, vinyls, etc. contained within the packaging of an album (or any other type of release).
+Mediums are always included in a release, and have a position in said release (e.g. disc 1 or disc 2).
+They have a format like CD, 12” vinyl or cassette (in some cases this will be unknown), and can have
+an optional title (e.g. disc 2: The Early Years). For example, CD 1 of “<a class="reference external" href="https://musicbrainz.org/release/4bd2dbd5-a961-335a-a618-39c26b2ee791#disc1">The Wall</a>”.</p>
+<p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Medium">Medium</a> page on the MusicBrainz
+website for additional information.</p>
+</div></blockquote>
+<p id="index-10"><strong>non-album track</strong></p>
 <blockquote>
 <div><p>This term is obsolete and has been replaced with ‘standalone recording’.</p>
 </div></blockquote>
-<p id="index-10"><strong>recording</strong></p>
+<p id="index-11"><strong>recording</strong></p>
 <blockquote>
-<div><p>An entity in MusicBrainz which can be linked to tracks on releases. For example “Be (One in a Million)”
-(recording id: fbd0e1a0-b6c5-4926-b89d-3922e4144da9) is the recording linked to track 14 on the album
-“Tourist”. Each track must always be associated with a single recording, but a recording can be linked
-to any number of tracks.</p>
+<div><p>An entity in MusicBrainz which can be linked to tracks on releases. Each track must always be
+associated with a single recording, but a recording can be linked to any number of tracks.
+For example, this recording of “<a class="reference external" href="https://musicbrainz.org/recording/b1a9c0e9-d987-4042-ae91-78d6a3267d69">Bohemian Rhapsody</a>” is found as a track on over 100 releases.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Recording">Recording</a> page on the MusicBrainz
 website for additional information.</p>
 </div></blockquote>
-<p id="index-11"><strong>release</strong></p>
+<p id="index-12"><strong>release</strong></p>
 <blockquote>
 <div><p>Represents the unique issuing of a product on a specific date with specific
-release information such as the country, label, barcode and packaging.  For example “<a class="reference external" href="https://musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483">Sea of No Cares</a>” (release id:
-4e4ba41e-24ae-3f57-87f6-3d8f19ae9483) is one version of the album released by Great Big Sea.</p>
+release information such as the country, label, barcode and packaging. For example “<a class="reference external" href="https://musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483">Sea of No Cares</a>” is one version of the album released by Great Big Sea.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Release">Release</a> page on the MusicBrainz
 website for additional information.</p>
 </div></blockquote>
-<p id="index-12"><strong>release group</strong></p>
+<p id="index-13"><strong>release group</strong></p>
 <blockquote>
 <div><p>Groups several different releases into a single logical entity. Every release
-belongs to one, and only one release group.  Both release groups and releases are “albums” in a
+belongs to one, and only one release group. Both release groups and releases are “albums” in a
 general sense, but with an important difference: a release is something you can buy as media such
 as a CD or a vinyl record, while a release group embraces the overall concept of an album — it
-doesn’t matter how many CDs or editions / versions it had.  For example “Sea of No Cares” (release
-id: 4e4ba41e-24ae-3f57-87f6-3d8f19ae9483) is one version of the album in the <a class="reference external" href="https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca">release group id
-7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca</a> by Great Big Sea.</p>
+doesn’t matter how many CDs or editions / versions it had.  For example the <a class="reference external" href="https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca">“Sea of No Cares”</a> release group
+contains multiple releases.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Release_Group">Release Group</a> page on the MusicBrainz
 website for additional information.</p>
 </div></blockquote>
-<p id="index-13"><strong>standalone recording</strong></p>
+<p id="index-14"><strong>standalone recording</strong></p>
 <blockquote>
-<div><p>A recording that is not linked to any release.  An example is “<a class="reference external" href="https://musicbrainz.org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8">Sea of No Cares (live)</a>” (recording id:
-0198c132-ed38-430c-92bd-d3c7e9ff25b8) by Great Big Sea.</p>
+<div><p>A recording that is not linked to any release. An example is “<a class="reference external" href="https://musicbrainz.org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8">Sea of No Cares (live)</a>” by Great Big Sea.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Standalone_Recording">Standalone Recording</a> page on
 the MusicBrainz website for additional information.</p>
 </div></blockquote>
-<p id="index-14"><strong>track</strong></p>
+<p id="index-15"><strong>track</strong></p>
 <blockquote>
 <div><p>A track is the way a recording is represented on a particular release (or, more precisely, on a
 particular medium). Every track has a title and is credited to one or more artists.  For example,
 track 7 of the album “<a class="reference external" href="https://musicbrainz.org/release/9780e88d-a9e2-4e99-87c4-e54b65e7e49b">Back to Boston</a>”
-by Jason Anderson is “<a class="reference external" href="https://musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94">Driving Home</a>” (track id:
-bf8ecb3c-6fe6-41b7-a078-5748265a9f94).</p>
+by Jason Anderson is “<a class="reference external" href="https://musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94">Driving Home</a>”.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Track">Track</a> page on
 the MusicBrainz website for additional information.</p>
 </div></blockquote>
-<p id="index-15"><strong>work</strong></p>
+<p id="index-16"><strong>work</strong></p>
 <blockquote>
 <div><p>A distinct intellectual or artistic creation, which can be expressed in the form of
 one or more audio recordings. While a ‘Work’ in MusicBrainz is usually musical in nature, it is
-not necessarily so. For example, a work could be a novel, play, poem or essay, later recorded as
-an oratory or audiobook.  “<a class="reference external" href="https://musicbrainz.org/recording/431b3d53-2783-46fd-9bb4-e1410f2941b6">Blinded by the Light</a>” by “Manfred Mann’s Earth Band”
-is a recording of the <a class="reference external" href="https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb">work id 7a757d97-da2a-3751-8d32-94d471de2eeb</a> “Blinded by the Light”
-written by Bruce Springsteen.</p>
+not necessarily so. A work could also be a novel, play, poem or essay, later recorded as
+an oratory or audiobook. For example, the song “<a class="reference external" href="https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb">Blinded by the Light</a>” written by Bruce Springsteen
+has been recorded well over 100 times.</p>
 <p>Please see the <a class="reference external" href="https://musicbrainz.org/doc/Work">Work</a> page on the MusicBrainz website for
 additional information.</p>
 </div></blockquote>
@@ -372,8 +376,7 @@ to the <a class="reference external" href="https://musicbrainz.org/doc/MusicBrai
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
         &copy; Copyright This documentation is licensed under CC0 1.0.

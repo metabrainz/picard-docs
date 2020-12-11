@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Annexe 2: Mappage des balises &mdash; Documentation MusicBrainz Picard v2.4</title>
+  <title>Annexe B: Mappage de balises &mdash; Documentation MusicBrainz Picard v2.4.4</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Annexe 3: Options de ligne de commande" href="command_line.html" />
-    <link rel="prev" title="Annexe 1: API des plugins" href="plugins_api.html" /> 
+    <link rel="next" title="Annexe C: Options de ligne de commande" href="command_line.html" />
+    <link rel="prev" title="Annexe A: API des plugins" href="plugins_api.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.4
+                v2.4.4
               </div>
             
           
@@ -133,9 +133,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -182,7 +182,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Annexe 2: Mappage des balises</li>
+      <li>Annexe B: Mappage de balises</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -199,9 +199,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="appendix-2-tag-mapping">
-<h1>Annexe 2: Mappage des balises<a class="headerlink" href="#appendix-2-tag-mapping" title="Lien permanent vers ce titre">¶</a></h1>
-<p id="index-0">Ce qui suit est un mappage entre les noms de balises internes de Picard et ceux utilisés par divers formats de balisage.</p>
+  <div class="section" id="appendix-b-tag-mapping">
+<h1>Annexe B: <span class="target" id="index-1"></span>Mappage de balises<a class="headerlink" href="#appendix-b-tag-mapping" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Ce qui suit est un mappage entre les noms de balises internes de Picard et ceux utilisés par divers formats de balisage. Le mappage est également disponible sous forme de <a class="reference external" href="https://picard-docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map.html">table</a> et de <a class="reference external" href="https://picard-docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map.xlsx">tableur</a>.</p>
 <div class="section" id="acoustid">
 <h2>AcoustID<a class="headerlink" href="#acoustid" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
@@ -227,6 +227,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Acoustid/Id</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -257,6 +260,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Acoustid/Fingerprint</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -285,6 +291,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/AlbumTitle</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IPRD</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -315,6 +324,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/AlbumArtist</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -344,11 +356,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/AlbumArtistSortOrder</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="album-sort-order">
-<h2>Ordre de tri de l’artiste de l’album<a class="headerlink" href="#album-sort-order" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="album-sort-order-4">
+<h2>Ordre de tri des albums <sup>[4]</sup><a class="headerlink" href="#album-sort-order-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -373,9 +388,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/AlbumSortOrder</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id3">
 <h2><a class="reference external" href="https://musicbrainz.org/relationship/22661fb8-cdb7-4f67-8385-b2a8be6c9f0d">Arrangeur</a><a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h2>
@@ -389,7 +406,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">arranger</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:arranger</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">IPLS:arranger</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:arranger</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">IPLS:arranger</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ARRANGER</span></code></p></td>
@@ -398,10 +415,13 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">Arranger</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -432,6 +452,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Author</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IART</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -460,6 +483,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/ArtistSortOrder</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -490,6 +516,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/ARTISTS</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -518,6 +547,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ASIN</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -548,11 +580,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Barcode</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="bpm">
-<h2>BPM<a class="headerlink" href="#bpm" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="bpm-4">
+<h2>BPM <sup>[4]</sup><a class="headerlink" href="#bpm-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -577,9 +612,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/BeatsPerMinute</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id7">
 <h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Catalog_Number">Numéro de catalogue</a><a class="headerlink" href="#id7" title="Lien permanent vers ce titre">¶</a></h2>
@@ -607,11 +644,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/CatalogNo</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="comment">
-<h2>Commentaire<a class="headerlink" href="#comment" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="comment-4">
+<h2>Commentaire <sup>[4]</sup><a class="headerlink" href="#comment-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -636,12 +676,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Description</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ICMT</span></code></p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="compilation-itunes">
-<h2>Compilation (iTunes)<a class="headerlink" href="#compilation-itunes" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="compilation-itunes-5">
+<h2>Compilation (iTunes) <sup>[5]</sup><a class="headerlink" href="#compilation-itunes-5" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -666,9 +708,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/IsCompilation</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 5</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id8">
 <h2><a class="reference external" href="https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-edca32ee158f">Compositeur</a><a class="headerlink" href="#id8" title="Lien permanent vers ce titre">¶</a></h2>
@@ -695,6 +739,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Composer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IMUS</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -725,6 +772,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/ComposerSortOrder</span></code> (Picard&gt;=1.3)</p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -754,11 +804,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Conductor</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="copyright">
-<h2>Copyright<a class="headerlink" href="#copyright" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="copyright-4">
+<h2>Copyright <sup>[4]</sup><a class="headerlink" href="#copyright-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -783,9 +836,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Copyright</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ICOP</span></code></p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="disc-number">
 <h2>Numéro de disque<a class="headerlink" href="#disc-number" title="Lien permanent vers ce titre">¶</a></h2>
@@ -813,6 +868,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/PartOfSet</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -828,7 +886,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">discsubtitle</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TSST</span></code> (id3v24 only)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TSST</span></code> (ID3v2.4 only)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">DISCSUBTITLE</span></code></p></td>
@@ -842,11 +900,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/SetSubTitle</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="encoded-by">
-<h2>Encodé par<a class="headerlink" href="#encoded-by" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="encoded-by-4">
+<h2>Encodé par <sup>[4]</sup><a class="headerlink" href="#encoded-by-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -871,12 +932,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/EncodedBy</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IENC</span></code></p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="encoder-settings">
-<h2>Paramètres de l’encodeur<a class="headerlink" href="#encoder-settings" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="encoder-settings-4">
+<h2>Paramètres de l’encodeur <sup>[4]</sup><a class="headerlink" href="#encoder-settings-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -896,14 +959,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">EncoderSettings</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/EncodingSettings</span></code> (Picard&gt;=1.3.1)</p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id10">
 <h2><a class="reference external" href="https://musicbrainz.org/relationship/5dcc52af-7064-4051-8d62-7d80f4c3c907">Ingénieur</a><a class="headerlink" href="#id10" title="Lien permanent vers ce titre">¶</a></h2>
@@ -917,7 +982,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">engineer</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:engineer</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">IPLS:engineer</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:engineer</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">IPLS:engineer</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ENGINEER</span></code></p></td>
@@ -931,11 +996,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Engineer</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IENG</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="gapless-playback">
-<h2>Gapless Playback<a class="headerlink" href="#gapless-playback" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="gapless-playback-4">
+<h2>Lecture sans interruption <sup>[4]</sup><a class="headerlink" href="#gapless-playback-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -946,23 +1014,25 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">gapless</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">pgap</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id11">
 <h2><a class="reference external" href="https://musicbrainz.org/doc/Genre">Genre</a><a class="headerlink" href="#id11" title="Lien permanent vers ce titre">¶</a></h2>
@@ -990,11 +1060,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Genre</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IGNR</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="grouping">
-<h2>Regroupement<a class="headerlink" href="#grouping" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="grouping-3">
+<h2>Regroupement <sup>[3]</sup><a class="headerlink" href="#grouping-3" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1005,7 +1078,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">grouping</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TIT1</span></code> <code class="docutils literal notranslate"><span class="pre">GRP1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TIT1</span></code> <code class="docutils literal notranslate"><span class="pre">GRP1</span></code> <sup>[8]</sup></p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">GROUPING</span></code></p></td>
@@ -1019,9 +1092,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/ContentGroupDescription</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarques 3 et 8</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="initial-key">
 <h2>Clé initiale<a class="headerlink" href="#initial-key" title="Lien permanent vers ce titre">¶</a></h2>
@@ -1048,6 +1123,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/InitialKey</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1078,6 +1156,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/ISRC</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1107,11 +1188,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Language</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ILNG</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="license">
-<h2>License<a class="headerlink" href="#license" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="license-6-7">
+<h2>License <sup>[6, 7]</sup><a class="headerlink" href="#license-6-7" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1134,11 +1218,13 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">----:com.apple.iTunes:LICENSE</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarques 6 et 7</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id13">
 <h2><a class="reference external" href="https://musicbrainz.org/relationship/3e48faba-ec01-47fd-8e89-30e81161661c">Parolier</a><a class="headerlink" href="#id13" title="Lien permanent vers ce titre">¶</a></h2>
@@ -1166,11 +1252,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Writer</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="lyrics">
-<h2>Paroles<a class="headerlink" href="#lyrics" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="lyrics-4">
+<h2>Paroles <sup>[4]</sup><a class="headerlink" href="#lyrics-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1195,9 +1284,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Lyrics</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id14">
 <h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Format">Médias</a><a class="headerlink" href="#id14" title="Lien permanent vers ce titre">¶</a></h2>
@@ -1225,6 +1316,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Media</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IMED</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1240,7 +1334,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">djmixer</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:DJ-mix</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">IPLS:DJ-mix</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:DJ-mix</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">IPLS:DJ-mix</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">DJMIXER</span></code></p></td>
@@ -1253,6 +1347,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/DJMixer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1269,7 +1366,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">mixer</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:mix</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">IPLS:mix</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:mix</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">IPLS:mix</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MIXER</span></code></p></td>
@@ -1283,11 +1380,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Mixer</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="mood">
-<h2>Mood<a class="headerlink" href="#mood" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="mood-3">
+<h2>Mood <sup>[3]</sup><a class="headerlink" href="#mood-3" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1298,7 +1398,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">mood</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TMOO</span></code> (id3v24 only)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TMOO</span></code> (ID3v2.4 only)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MOOD</span></code></p></td>
@@ -1312,12 +1412,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Mood</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 3</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="movement">
-<h2>Mouvement<a class="headerlink" href="#movement" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="movement-4">
+<h2>Mouvement <sup>[4]</sup><a class="headerlink" href="#movement-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1340,14 +1442,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">©mvn</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="movement-count">
-<h2>Nombre de mouvements<a class="headerlink" href="#movement-count" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="movement-count-4">
+<h2>Nombre de mouvements <sup>[4]</sup><a class="headerlink" href="#movement-count-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1370,14 +1474,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">mvc</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="movement-number">
-<h2>Numéro de mouvement<a class="headerlink" href="#movement-number" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="movement-number-4">
+<h2>Numéro de mouvement <sup>[4]</sup><a class="headerlink" href="#movement-number-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1400,11 +1506,13 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">mvi</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id17">
 <h2><a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">Identifiant de l’artiste MusicBrainz</a><a class="headerlink" href="#id17" title="Lien permanent vers ce titre">¶</a></h2>
@@ -1431,6 +1539,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Artist</span> <span class="pre">Id</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1461,6 +1572,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Disc</span> <span class="pre">Id</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1482,13 +1596,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">MUSICBRAINZ_ORIGINALARTISTID</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">----:com.apple.iTunes:MusicBrainz</span> <span class="pre">Original</span> <span class="pre">Artist</span> <span class="pre">Id</span></code> (Picard&gt;=2.1)</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Original</span> <span class="pre">Artist</span> <span class="pre">Id</span></code> (Picard&gt;=2.1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1511,13 +1628,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">MUSICBRAINZ_ORIGINALALBUMID</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">----:com.apple.iTunes:MusicBrainz</span> <span class="pre">Original</span> <span class="pre">Album</span> <span class="pre">Id</span></code> (Picard&gt;=2.1)</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Original</span> <span class="pre">Album</span> <span class="pre">Id</span></code> (Picard&gt;=2.1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1534,7 +1654,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">musicbrainz_recordingid</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">UFID:</span> <span class="pre">`//musicbrainz.org</span> <span class="pre">&lt;https://musicbrainz.org&gt;`_</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">UFID:http://musicbrainz.org</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MUSICBRAINZ_TRACKID</span></code></p></td>
@@ -1547,6 +1667,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Track</span> <span class="pre">Id</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1577,6 +1700,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Album</span> <span class="pre">Artist</span> <span class="pre">Id</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1605,6 +1731,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Release</span> <span class="pre">Group</span> <span class="pre">Id</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1635,6 +1764,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Album</span> <span class="pre">Id</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1663,6 +1795,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Release</span> <span class="pre">Track</span> <span class="pre">Id</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1693,6 +1828,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/TRM</span> <span class="pre">Id</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1722,6 +1860,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Work</span> <span class="pre">Id</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1743,13 +1884,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">FINGERPRINT=MusicMagic</span> <span class="pre">Fingerprint</span> <span class="pre">{fingerprint}</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">----:com.apple.iTunes:fingerprint</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1780,6 +1924,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicIP/PUID</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1798,16 +1945,19 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">TOAL</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/OriginalAlbumTitle</span></code> (Picard&gt;=2.1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1827,16 +1977,19 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">TOPE</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Original</span> <span class="pre">Artist</span></code> (Picard&gt;=2.1)</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/OriginalArtist</span></code> (Picard&gt;=2.1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1862,16 +2015,19 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">ORIGINALFILENAME</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/OriginalFilename</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="original-release-date">
-<h2>Date de sortie d’origine<a class="headerlink" href="#original-release-date" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="original-release-date-1">
+<h2>Date de sortie d’origine <sup>[1]</sup><a class="headerlink" href="#original-release-date-1" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1882,26 +2038,28 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">originaldate</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TDOR</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">TORY</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TDOR</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">TORY</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ORIGINALDATE</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/OriginalReleaseTime</span></code> (Picard&gt;=1.3.1) <code class="docutils literal notranslate"><span class="pre">WM/OriginalReleaseYear</span></code> (Picard&lt;=1.3.0)</p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 1</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="original-release-year">
-<h2>Année de sortie d’origine<a class="headerlink" href="#original-release-year" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="original-release-year-1">
+<h2>Année de sortie d’origine <sup>[1]</sup><a class="headerlink" href="#original-release-year-1" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1912,7 +2070,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">originalyear</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ORIGINALYEAR</span></code></p></td>
@@ -1921,14 +2079,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">ORIGINALYEAR</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/OriginalReleaseYear</span></code> (Picard&gt;=1.3.1)</p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 1</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="performer">
 <h2>L’exécutant<a class="headerlink" href="#performer" title="Lien permanent vers ce titre">¶</a></h2>
@@ -1942,7 +2102,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">performer:instrument</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TMCL:instrument</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">IPLS:instrument</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TMCL:instrument</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">IPLS:instrument</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">PERFORMER={artist}</span> <span class="pre">(instrument)</span></code></p></td>
@@ -1951,10 +2111,13 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">Performer={artist}</span> <span class="pre">(instrument)</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -1963,8 +2126,8 @@
 <p>Veuillez vous référer à <a class="reference external" href="https://musicbrainz.org/relationship/888a2320-52e4-4fe8-a8a0-7a4c8dfde167">Types de relations / Artiste-Release / Performer</a>, <a class="reference external" href="https://musicbrainz.org/relationship/eb10f8a0-0f4c-4dce-aa47-87bcb2bc42f3">Relation Types / Artist-Release / Vocal</a>, <a class="reference external" href="https://musicbrainz.org/relationship/67555849-61e5-455b-96e3-29733f0115f5">Relation Types / Artist-Release / Instrument</a>, <a class="reference external" href="https://musicbrainz.org/relationship/628a9658-f54c-4142-b0c0-95f031b544da">Types de relations / Enregistrement d’artiste / Interprète</a>, <a class="reference external" href="https://musicbrainz.org/relationship/0fdbe3c6-7700-4a31-ae54-b53f06ae1cfa">Types de relations / Enregistrement d’artiste / Vocal</a>, et <a class="reference external" href="https://musicbrainz.org/relationship/59054b12-01ac-43ee-a618-285fd397e461">Relationship Types / Artist-Recording / Instrument</a> pour plus d’informations.</p>
 </div>
 </div>
-<div class="section" id="podcast">
-<h2>Podcast<a class="headerlink" href="#podcast" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="podcast-4">
+<h2>Podcast <sup>[4]</sup><a class="headerlink" href="#podcast-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -1975,26 +2138,28 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">podcast</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">pcst</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="podcast-url">
-<h2>URL du podcast<a class="headerlink" href="#podcast-url" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="podcast-url-4">
+<h2>Podcast URL <sup>[4]</sup><a class="headerlink" href="#podcast-url-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2005,23 +2170,25 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">podcasturl</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">purl</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="id27">
 <h2><a class="reference external" href="https://musicbrainz.org/relationship/5c0ceac3-feb4-41f0-868d-dc06f6e27fc0">Producteur</a><a class="headerlink" href="#id27" title="Lien permanent vers ce titre">¶</a></h2>
@@ -2035,7 +2202,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">producer</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:producer</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">IPLS:producer</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TIPL:producer</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">IPLS:producer</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">PRODUCER</span></code></p></td>
@@ -2048,6 +2215,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Producer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IPRO</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -2070,13 +2240,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">RATING:user&#64;email</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/SharedUserRating</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2107,6 +2280,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Publisher</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2136,6 +2312,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Album</span> <span class="pre">Release</span> <span class="pre">Country</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ICNT</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2151,7 +2330,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">date</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TDRC</span></code> (id3v24) <code class="docutils literal notranslate"><span class="pre">TYER</span></code> + <code class="docutils literal notranslate"><span class="pre">TDAT</span></code> (id3v23)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TDRC</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">TYER</span></code> + <code class="docutils literal notranslate"><span class="pre">TDAT</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">DATE</span></code></p></td>
@@ -2164,6 +2343,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Year</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ICRD</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -2194,6 +2376,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Album</span> <span class="pre">Status</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2222,6 +2407,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">MusicBrainz/Album</span> <span class="pre">Type</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2252,6 +2440,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/ModifiedBy</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2280,6 +2471,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">REPLAYGAIN_ALBUM_GAIN</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2310,6 +2504,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">REPLAYGAIN_ALBUM_PEAK</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2338,6 +2535,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">REPLAYGAIN_ALBUM_RANGE</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2368,6 +2568,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">REPLAYGAIN_REFERENCE_LOUDNESS</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2396,6 +2599,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">REPLAYGAIN_TRACK_GAIN</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2426,6 +2632,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">REPLAYGAIN_TRACK_PEAK</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2454,6 +2663,9 @@
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">REPLAYGAIN_TRACK_RANGE</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2484,11 +2696,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Script</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="show-name">
-<h2>Afficher le nom<a class="headerlink" href="#show-name" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="show-name-4">
+<h2>Afficher le nom <sup>[4]</sup><a class="headerlink" href="#show-name-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2499,26 +2714,28 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">show</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">tvsh</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="show-name-sort-order">
-<h2>Afficher l’ordre de tri des noms<a class="headerlink" href="#show-name-sort-order" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="show-name-sort-order-4">
+<h2>Afficher l’ordre de tri des noms <sup>[4]</sup><a class="headerlink" href="#show-name-sort-order-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2529,26 +2746,28 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">showsort</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sosn</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="show-work-movement">
-<h2>Afficher le travail et le mouvement<a class="headerlink" href="#show-work-movement" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="show-work-movement-4">
+<h2>Afficher le travail et le mouvement <sup>[4]</sup><a class="headerlink" href="#show-work-movement-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2571,14 +2790,16 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">shwm</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="subtitle">
-<h2>Subtitle<a class="headerlink" href="#subtitle" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="subtitle-4">
+<h2>Sous-titre <sup>[4]</sup><a class="headerlink" href="#subtitle-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2603,9 +2824,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/SubTitle</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="total-discs">
 <h2>Nombre total de disques<a class="headerlink" href="#total-discs" title="Lien permanent vers ce titre">¶</a></h2>
@@ -2633,6 +2856,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/PartOfSet</span></code> (Picard&gt;=1.3.1)</p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2651,7 +2877,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">TRCK</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TRACKTOTAL</span> <span class="pre">and</span> <span class="pre">TOTALTRACKS</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TRACKTOTAL</span></code> and <code class="docutils literal notranslate"><span class="pre">TOTALTRACKS</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Track</span></code></p></td>
@@ -2660,7 +2886,10 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">trkn</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2691,6 +2920,9 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/TrackNumber</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ITRK</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -2720,11 +2952,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Title</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">INAM</span></code></p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="track-title-sort-order">
-<h2>Ordre de tri des titres de piste<a class="headerlink" href="#track-title-sort-order" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="track-title-sort-order-4">
+<h2>Ordre de tri des titres de piste <sup>[4]</sup><a class="headerlink" href="#track-title-sort-order-4" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2749,9 +2984,11 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/TitleSortOrder</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 4</span></a> à la fin de cette section.</p>
 </div>
 <div class="section" id="website-official-artist-website">
 <h2>Site Web (site officiel de l’artiste)<a class="headerlink" href="#website-official-artist-website" title="Lien permanent vers ce titre">¶</a></h2>
@@ -2774,10 +3011,13 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">Weblink</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/AuthorURL</span></code> (Picard&gt;=1.3.1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
@@ -2794,7 +3034,7 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">work</span></code> (Picard&gt;=1.3)</p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TXXX:WORK</span></code> <code class="docutils literal notranslate"><span class="pre">TIT1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TXXX:WORK</span></code> <code class="docutils literal notranslate"><span class="pre">TIT1</span></code> <sup>[8]</sup></p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WORK</span></code></p></td>
@@ -2808,12 +3048,14 @@
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">WM/Work</span></code></p></td>
 </tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p>n/a</p></td>
+</tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 8</span></a> à la fin de cette section.</p>
 </div>
-<div class="section" id="id36">
-<h2><a class="reference external" href="https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68">Écrivain</a><a class="headerlink" href="#id36" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="writer-2">
+<h2><a class="reference external" href="https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68">Écrivain</a> <sup>[2]</sup><a class="headerlink" href="#writer-2" title="Lien permanent vers ce titre">¶</a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2833,23 +3075,25 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">Writer</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p>n / a</p></td>
+<td><p>n/a</p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IWRI</span></code></p></td>
 </tr>
 </tbody>
 </table>
-<p>Voir <a class="reference internal" href="#ref-tag-mapping-notes"><span class="std std-ref">Remarque 2</span></a> à la fin de cette section.</p>
-<p class="rubric">Notes:</p>
+<p class="rubric">Remarques:</p>
 <ol class="arabic simple">
 <li><p>Tiré de la version la plus ancienne du groupe de versions.</p></li>
 <li><p>Utilisé en cas de doute quant à savoir s’il s’agit d’un compositeur ou d’un parolier.</p></li>
 <li><p>Ceci est fourni par le plugin LastFMPlus et non par Picard.</p></li>
 <li><p>Ceci ne peut pas être fourni par Picard. Il peut être utilisé et rempli par certains plugins.</p></li>
 <li><p>Pour Picard &gt;= 1.3, cela indique un album de Various Artists; pour Picard &lt;= 1.2, cela indique des albums avec des pistes d’artistes différents ce qui est incorrect (par exemple: un album original avec un duo avec un artiste de l’exploit apparaîtrait comme une compilation). Dans aucun des cas, cela n’indique un sous-type MusicBrainz Release Group de compilation.</p></li>
-<li><p><a class="reference external" href="https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50">Type de relation de licence au niveau de la version</a></p></li>
-<li><p><a class="reference external" href="https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a">Type de relation de licence au niveau de l’enregistrement</a></p></li>
+<li><p><a class="reference external" href="https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50">Type de relation de licence au niveau de la version</a>.</p></li>
+<li><p><a class="reference external" href="https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a">Type de relation de licence au niveau de l’enregistrement</a>.</p></li>
 <li><p>Avec « Enregistrer le regroupement compatible iTunes et travailler » (depuis Picard &gt;= 2.1.0)</p></li>
 </ol>
 </div>
@@ -2863,10 +3107,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="command_line.html" class="btn btn-neutral float-right" title="Annexe 3: Options de ligne de commande" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="command_line.html" class="btn btn-neutral float-right" title="Annexe C: Options de ligne de commande" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="plugins_api.html" class="btn btn-neutral float-left" title="Annexe 1: API des plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
+        <a href="plugins_api.html" class="btn btn-neutral float-left" title="Annexe A: API des plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
       
     </div>
   
@@ -2874,11 +3118,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

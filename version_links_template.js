@@ -6,6 +6,7 @@
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
 const default_language = '{{default_language}}';
+const stable_version = '{{stable_version}}';
 const versions = {{version_list}};
 var vcount = versions.length;
 var i, text;
@@ -17,6 +18,7 @@ function list_versions(r_language, r_page) {
         // text += '<dd><a href="/' + versions[i] + '/index.html?language=' + r_language + '&page=' + r_page + '" class="__ptNoRemap">' + versions[i] + "</a></dd>\n";
         text += '<dd><a href="/v' + versions[i] + '/index.html?language=' + r_language + '&page=' + r_page + '" class="__ptNoRemap">' + versions[i] + "</a></dd>\n";
     }
+    text += '<dd><a href="/v' + stable_version + '/index.html?language=' + r_language + '&page=' + r_page + '" class="__ptNoRemap">stable' + "</a></dd>\n";
     // text += '<dd><a href="/index.html" class="__ptNoRemap">latest' + "</a></dd>\n";
     text += '<dd><a href="/index.html?language=' + r_language + '&page=' + r_page + '" class="__ptNoRemap">latest' + "</a></dd>\n";
     document.getElementById("select_version").innerHTML += text;

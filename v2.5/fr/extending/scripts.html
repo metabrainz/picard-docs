@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Les scripts &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Scripts &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Commande en traitement" href="processing.html" />
+    <link rel="next" title="Ordre de traitement" href="processing.html" />
     <link rel="prev" title="Plugins" href="plugins.html" /> 
 </head>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -104,8 +104,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -114,12 +114,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="extending.html">Prolonger Picard</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Les scripts</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Scripts</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#file-naming-script">Script de dénomination de fichier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tagging-scripts">Balisage des scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-scripts">Scripts de balisage</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="processing.html">Commande en traitement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="processing.html">Ordre de traitement</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
@@ -136,16 +136,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -194,7 +194,7 @@
         
           <li><a href="extending.html">Prolonger Picard</a> &raquo;</li>
         
-      <li>Les scripts</li>
+      <li>Scripts</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -212,19 +212,19 @@
            <div itemprop="articleBody">
             
   <div class="section" id="scripts">
-<h1>Les scripts<a class="headerlink" href="#scripts" title="Lien permanent vers ce titre">¶</a></h1>
-<p id="index-0">Il existe deux types de scripts utilisés dans Picard: le script de dénomination de fichier et les scripts de balisage. Ceux-ci sont gérés à partir des sections « Nom du fichier » et « Script » du menu <span class="menuselection">« Options ‣ Options… »</span>. Tous les scripts sont écrits en utilisant le <a class="reference internal" href="scripting.html"><span class="doc">langage de script Picard</span></a>. Les scripts sont souvent abordés dans le <a class="reference external" href="https://community.metabrainz.org/">MetaBrainz Community Forum</a>, et il existe un fil de discussion spécifique à <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">la dénomination de fichier et les extraits de script</a>.</p>
+<h1><span class="target" id="index-0"></span>Scripts<a class="headerlink" href="#scripts" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Il existe deux types de scripts utilisés dans Picard: le script de dénomination de fichier et les scripts de balisage. Ceux-ci sont gérés à partir des sections « Nom du fichier » et « Script » du menu <span class="menuselection">« Options ‣ Options… »</span>. Tous les scripts sont écrits en utilisant le <a class="reference internal" href="scripting.html"><span class="doc">langage de script Picard</span></a>. Les scripts sont souvent abordés dans le <a class="reference external" href="https://community.metabrainz.org/">MetaBrainz Community Forum</a>, et il existe un fil de discussion spécifique à <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">la dénomination de fichier et les extraits de script</a>.</p>
 <div class="section" id="file-naming-script">
-<h2>Script de dénomination de fichier<a class="headerlink" href="#file-naming-script" title="Lien permanent vers ce titre">¶</a></h2>
-<p id="index-1">Il n’y a qu’un seul script de dénomination de fichier défini dans les paramètres d’un utilisateur, bien qu’il puisse varier d’un simple script sur une ligne tel que <code class="docutils literal notranslate"><span class="pre">%album%/%title%</span></code> à un script très complexe utilisant différents formats de dénomination de fichier basés sur différents Critères. Dans tous les cas, les fichiers seront enregistrés en utilisant le texte sorti par le script.</p>
+<h2><span class="target" id="index-3"></span>Script de dénomination de fichier<a class="headerlink" href="#file-naming-script" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Il n’y a qu’un seul script de dénomination de fichier défini dans les paramètres d’un utilisateur, bien qu’il puisse varier d’un simple script sur une ligne tel que <code class="docutils literal notranslate"><span class="pre">%album%/%title%</span></code> à un script très complexe utilisant différents formats de dénomination de fichier basés sur différents Critères. Dans tous les cas, les fichiers seront enregistrés en utilisant le texte sorti par le script.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les nouveaux ensembles de balises ou les balises modifiées par le script de dénomination de fichier ne seront pas écrites dans les métadonnées des fichiers de sortie.</p>
 </div>
 </div>
 <div class="section" id="tagging-scripts">
-<h2>Balisage des scripts<a class="headerlink" href="#tagging-scripts" title="Lien permanent vers ce titre">¶</a></h2>
-<p id="index-2">Plusieurs scripts de balisage peuvent être définis dans les paramètres d’un utilisateur. Des scripts individuels peuvent être activés ou désactivés, et l’ordre d’exécution des scripts peut être défini. Chaque fois qu’un script est exécuté automatiquement (c’est-à-dire lorsqu’un album est chargé), il est traité une fois pour chaque piste de l’album qui a déclenché la lecture. Par exemple, si deux scripts de balisage sont activés (A et B) et qu’un album avec trois pistes est chargé, les scripts seront traités dans l’ordre suivant:</p>
+<h2><span class="target" id="index-4"></span>Scripts de balisage<a class="headerlink" href="#tagging-scripts" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Plusieurs scripts de balisage peuvent être définis dans les paramètres d’un utilisateur. Des scripts individuels peuvent être activés ou désactivés, et l’ordre d’exécution des scripts peut être défini. Chaque fois qu’un script est exécuté automatiquement (c’est-à-dire lorsqu’un album est chargé), il est traité une fois pour chaque piste de l’album qui a déclenché la lecture. Par exemple, si deux scripts de balisage sont activés (A et B) et qu’un album avec trois pistes est chargé, les scripts seront traités dans l’ordre suivant:</p>
 <ol class="arabic simple">
 <li><p>Script A Track 1;</p></li>
 <li><p>Script A Track 2;</p></li>
@@ -247,7 +247,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="processing.html" class="btn btn-neutral float-right" title="Commande en traitement" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="processing.html" class="btn btn-neutral float-right" title="Ordre de traitement" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="plugins.html" class="btn btn-neutral float-left" title="Plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
@@ -258,11 +258,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

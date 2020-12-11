@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; MusicBrainz Picard v2.5 documentation</title>
+  <title>Introduction &mdash; MusicBrainz Picard v2.5.2 documentation</title>
   
 
   
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -138,9 +138,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix 1: Plugins API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix 2: Tag Mapping</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix 3: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
 </ul>
 
             
@@ -253,7 +253,7 @@ in a naming script.</p>
 <p>…provide metadata not already existing in the MusicBrainz database.</p>
 </div>
 <div class="section" id="limitations">
-<span id="index-0"></span><h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-0"></span>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
 <p><strong>File Formats</strong></p>
 <p>Picard currently supports most music file formats, with Matroska (.mka) being one notable exception.
 Microsoft WAVE (.wav) files can be fingerprinted and renamed and can be tagged using ID3v2 tags, but this is
@@ -261,7 +261,7 @@ not supported by all playback software.  In addition, Picard does not support wr
 <p>The <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Picard Tag Mappings</span></a> section provides more information
 regarding the mapping between Picard internal tag names and various tagging formats.</p>
 <p><strong>Request Rate Limiting</strong></p>
-<p>Picard’s metadata retrieval is limited to the standard <strong>one request per second</strong> rate limiting for the MusicBrainz
+<p>Picard’s metadata retrieval is limited to the standard <strong>one request per second</strong> <span class="target" id="index-1"></span>rate limiting for the MusicBrainz
 API.  This becomes quite noticeable when trying to process a large list of files, and is exacerbated by
 extensions that perform additional information requests from the database.</p>
 <p><strong>Network File Processing</strong></p>
@@ -291,8 +291,7 @@ and then move them to the desired remote directory once processing is complete.<
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
         &copy; Copyright This documentation is licensed under CC0 1.0.

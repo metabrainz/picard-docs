@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Plugins &mdash; MusicBrainz Picard v2.5 documentation</title>
+  <title>Plugins &mdash; MusicBrainz Picard v2.5.2 documentation</title>
   
 
   
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -138,9 +138,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix 1: Plugins API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix 2: Tag Mapping</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix 3: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
 </ul>
 
             
@@ -207,8 +207,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="plugins">
-<h1>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h1>
-<p id="index-0">Plugins are written in Python, and are registered to the appropriate hooks.  Each plugin
+<h1><span class="target" id="index-0"></span>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h1>
+<p>Plugins are written in Python, and are registered to the appropriate hooks.  Each plugin
 has its own version identifier, but also lists the plugin API versions that it supports.
 When loading a plugin, Picard first compares its list of API versions to the plugin’s
 supported versions to ensure that the plugin will operate correctly.  The Picard API
@@ -218,8 +218,8 @@ any plugin APIs with which it is backwards compatible.</p>
 During the normal running of Picard, when it encounters a hook it will first retrieve a
 list of all plugins registered for that specific hook, and then execute them sequentially
 in order based upon the priority specified when the plugin was registered to the hook.</p>
-<p>There are a few different types of plugins, including:</p>
-<p id="index-1"><strong>Metadata processors</strong>: These plugins can access and modify the metadata when it is loaded
+<p>There are a few different <span class="target" id="index-1"></span>types of plugins, including:</p>
+<p><strong>Metadata processors</strong>: These plugins can access and modify the metadata when it is loaded
 from MusicBrainz. They are registered with <code class="docutils literal notranslate"><span class="pre">register_album_metadata_processor()</span></code> or
 <code class="docutils literal notranslate"><span class="pre">register_track_metadata_processor()</span></code>.  These are what you might call “automatic” because
 they operate without any user intervention.  An example is the Classical Extras plugin.</p>
@@ -267,8 +267,7 @@ MusicBrainz Picard repository shown on the Picard website.</p>
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
         &copy; Copyright This documentation is licensed under CC0 1.0.

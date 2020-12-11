@@ -21,27 +21,24 @@
    <script>
       var target_language = 'en';
       var target_version = '';
-      var latest_version = '2.5.2';
+      var stable_version = '2.5';
       var supported_languages = ['en', 'fr'];
-      var version_list = ['2.3.2', '2.4', '2.4.1', '2.4.2', '2.4.4', '2.5', '2.5.1', '2.5.2'];
+      var version_list = ['2.3', '2.4', '2.5'];
       var src_host = window.location.hostname;
       var src_protocol = window.location.protocol;
       var src_path = window.location.pathname;
       var src_path_parts = src_path.split('/');
       var target_path = '';
       var target_url = '';
-      var has_version = false;
-      var has_language = false;
-      var has_rtd_format = false;
       var well_formed = true;
 
       var debug = false;
 
       const re_language = /^[a-z][a-z](-[A-Z][A-Z])?$/;
-      const re_version1 = /^[0-9][0-9\.]*$/;
+      const re_version1 = /^v?[0-9][0-9\.]*$/;
       const re_version2 = /^v[0-9][0-9\.]*$/;
       const re_version3 = /^v([0-9]+\.[0-9]+)/;
-      const re_version4 = /^([0-9]+\.[0-9]+)/;
+      const re_version4 = /^v?([0-9]+\.[0-9]+)/;
 
       const not_found = 'not_found.html';
 
@@ -52,11 +49,12 @@
             return false;
          }
          if (supported_languages.indexOf(test_language) < 0) {
-            if (debug) { window.alert("Failed supported languages check."); }
-            return false;
+            if (debug) { window.alert("Failed supported languages check.  Target language set to: " + target_language); }
+            // Returning true will drop this item from the path
+            well_formed = false;
+            return true;
          }
          target_language = test_language;
-         has_language = true;
          if (debug) { window.alert("Passed.  Target language set to: " + target_language); }
          return true;
       }
@@ -71,12 +69,10 @@
          var temp = arr[1];
          if (version_list.indexOf(temp) < 0) {
             if (debug) { window.alert("Failed supported versions check.  Version: " + temp); }
-            return false;
+            // Returning true will drop this item from the path
+            return true;
          }
-         // target_version = '/v' + test_version;
          target_version = '/v' + temp;
-         has_version = true;
-         has_rtd_format = true;
          if (debug) { window.alert("Passed. Target version set to: " + target_version); }
          return true;
       }
@@ -88,17 +84,18 @@
             return false;
          }
          var arr = re_version3.exec(test_version);
-         // var temp = test_version.substring(1);
          var temp = arr[1];
          if (version_list.indexOf(temp) < 0) {
             if (debug) { window.alert("Failed supported versions check.  Version: " + temp); }
             target_version = '';
-            // has_version = true;
             return true;
          }
-         target_version = '/' + test_version;
          target_version = '/v' + temp;
-         has_version = true;
+         if (target_version != '/' + test_version) {
+            if (debug) { window.alert("Target Version " + target_version + " != Test Version /" + test_version); }
+            if (debug) { window.alert("Changing well_formed to false."); }
+            well_formed = false;
+         }
          if (debug) { window.alert("Passed. Target version set to: " + target_version); }
          return true;
       }
@@ -111,7 +108,6 @@
       else {
          // Check for GitHub Pages style version number
          if (is_gh_version(src_path_parts[counter])) {
-            target_path = target_version;
             counter += 1;
          }
 
@@ -119,8 +115,6 @@
          if (is_language(src_path_parts[counter])) {
             counter += 1;
          }
-         target_path += '/' + target_language;
-         has_language = true;
 
          var anchor_test = document.URL.split('#');
          if (debug) { window.alert('Performing anchor test.\n\nLength: ' + anchor_test.length + "\nLast Part: " + anchor_test[anchor_test.length - 1]); }
@@ -128,30 +122,38 @@
             target_url = src_protocol + '//' + src_host + target_version + '/' + target_language + '/' + not_found;
             if (debug) { window.alert('Page has already been redirected.\n\nOld URL: ' + window.location + "\nNew URL: " + target_url); }
          }
-
-         if (target_url == "") {
-
+         else {
             // Check for ReadTheDocs style version number
-            if ((!has_version) && ((is_rtd_version(src_path_parts[counter])) || (src_path_parts[counter].search(/^(latest|stable)$/) >= 0))) {
-               if (is_rtd_version(src_path_parts[counter])) {
-                  target_path = target_version + '/' + target_language;
+            if (src_path_parts[counter] == 'latest') {
+               well_formed = false;
+               target_version = '';
+               counter += 1;
+            }
+            else {
+               if (src_path_parts[counter] == 'stable') {
+                  well_formed = false;
+                  target_version = '/v' + stable_version;
+                  counter += 1;
                }
                else {
-                  if (src_path_parts[counter] == 'stable') {
-                     target_path = '/v' + latest_version + '/' + target_language;
+                  if (is_rtd_version(src_path_parts[counter])) {
+                     well_formed = false;
+                     counter += 1;
                   }
                }
-               well_formed = false;
+            }
+
+            // Check for language identifier
+            if (is_language(src_path_parts[counter])) {
                counter += 1;
+               well_formed = false;
             }
 
             // Patch to redirect to new location of scripting documentation
             if (src_path_parts[counter] == 'scripting.html') {
                target_path += '/extending';
                if (debug) { window.alert("Patching target url for updated location of scripting.html file."); }
-               if ((has_language) || (has_version)) {
-                  well_formed = false;
-               }
+               well_formed = false;
             }
 
             // Combine remaining portions of the submitted path
@@ -161,17 +163,26 @@
             }
 
             // Build the redirection target url
-            if (well_formed) {
-               target_url = src_protocol + '//' + src_host + target_version + '/' + target_language + '/' + not_found;
+            target_url = src_protocol + '//' + src_host + target_version + '/' + target_language;
+            if ((well_formed) || (target_url + target_path == window.location)) {
+               if (debug) {
+                  if (well_formed) {
+                     window.alert("well_formed is true.");
+                  }
+                  if (target_url + target_path == window.location) {
+                     window.alert("Target path same as the source path.");
+                  }
+               }
+               target_url += '/' + not_found;
             }
             else {
-               target_url = src_protocol + '//' + src_host + target_path + "#redirected";
+               target_url += target_path + "#redirected";
             }
+            if (debug) { window.alert('Old URL: ' + window.location + "\nNew URL: " + target_url); }
          }
 
          // Redirect to the new target
-         if (debug) { window.alert('Old URL: ' + window.location + "\nNew URL: " + target_url); }
-         window.location.replace(target_url);
+         window.location.href = target_url
       }
    </script>
 </body>

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Plugins &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Plugins &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Les scripts" href="scripts.html" />
+    <link rel="next" title="Scripts" href="scripts.html" />
     <link rel="prev" title="Prolonger Picard" href="extending.html" /> 
 </head>
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -104,8 +104,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Utiliser Picard</span></p>
@@ -114,8 +114,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="extending.html">Prolonger Picard</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Plugins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scripts.html">Les scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="processing.html">Commande en traitement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripts.html">Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="processing.html">Ordre de traitement</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
@@ -132,16 +132,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -208,11 +208,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="plugins">
-<h1>Plugins<a class="headerlink" href="#plugins" title="Lien permanent vers ce titre">¶</a></h1>
-<p id="index-0">Les plugins sont écrits en Python et sont enregistrés dans les hooks appropriés. Chaque plugin a son propre identifiant de version, mais répertorie également les versions d’API de plugin qu’il prend en charge. Lors du chargement d’un plugin, Picard compare d’abord sa liste de versions d’API aux versions prises en charge par le plugin pour s’assurer que le plugin fonctionnera correctement. Les versions de l’API Picard indiquent la version du programme dans laquelle l’API du plugin a été mise à jour pour la dernière fois et toutes les API du plugin avec lesquelles elle est rétrocompatible.</p>
+<h1><span class="target" id="index-0"></span>Plugins<a class="headerlink" href="#plugins" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Les plugins sont écrits en Python et sont enregistrés dans les hooks appropriés. Chaque plugin a son propre identifiant de version, mais répertorie également les versions d’API de plugin qu’il prend en charge. Lors du chargement d’un plugin, Picard compare d’abord sa liste de versions d’API aux versions prises en charge par le plugin pour s’assurer que le plugin fonctionnera correctement. Les versions de l’API Picard indiquent la version du programme dans laquelle l’API du plugin a été mise à jour pour la dernière fois et toutes les API du plugin avec lesquelles elle est rétrocompatible.</p>
 <p>Les hooks sont des connexions aux différents objets de Picard qui appellent un type spécifique de plugin. Pendant le fonctionnement normal de Picard, lorsqu’il rencontre un hook, il récupère d’abord une liste de tous les plugins enregistrés pour ce hook spécifique, puis les exécute séquentiellement dans l’ordre en fonction de la priorité spécifiée lors de l’enregistrement du plugin sur le hook.</p>
-<p>Il existe différents types de plugins, notamment:</p>
-<p id="index-1"><strong>Processeurs de métadonnées</strong>: Ces plugins peuvent accéder et modifier les métadonnées lors de leur chargement depuis MusicBrainz. Ils sont enregistrés avec <code class="docutils literal notranslate"><span class="pre">register_album_metadata_processor()</span></code> ou <code class="docutils literal notranslate"><span class="pre">register_track_metadata_processor()</span></code>. Ce sont ce que vous pourriez appeler « automatiques » car ils fonctionnent sans aucune intervention de l’utilisateur. Un exemple est le plugin Classical Extras.</p>
+<p>Il existe différents <span class="target" id="index-3"></span>types de plugins, notamment:</p>
+<p><strong>Processeurs de métadonnées</strong>: Ces plugins peuvent accéder et modifier les métadonnées lors de leur chargement depuis MusicBrainz. Ils sont enregistrés avec <code class="docutils literal notranslate"><span class="pre">register_album_metadata_processor()</span></code> ou <code class="docutils literal notranslate"><span class="pre">register_track_metadata_processor()</span></code>. Ce sont ce que vous pourriez appeler « automatiques » car ils fonctionnent sans aucune intervention de l’utilisateur. Un exemple est le plugin Classical Extras.</p>
 <p><strong>Fournisseurs d’art de couverture</strong>: Ces plugins fournissent une autre source d’art de couverture et sont enregistrés avec <code class="docutils literal notranslate"><span class="pre">register_cover_art_provider()</span></code>. Ils sont également « automatiques » en ce sens qu’ils chargent la pochette d’album sans intervention de l’utilisateur, bien qu’ils doivent être activés par l’utilisateur dans les options de la pochette. Le plugin Fanart.tv en est un exemple.</p>
 <p><strong>Fonction de script</strong>: Certains plugins fournissent simplement des fonctions de script supplémentaires à utiliser dans <span class="menuselection">« Options ‣ Scripting »</span> ou le script de renommage. Ceux-ci sont enregistrés avec <code class="docutils literal notranslate"><span class="pre">register_script_function()</span></code>. Keep tag, qui fournit la fonction <code class="docutils literal notranslate"><span class="pre">$keep()</span></code>, en est un exemple.</p>
 <p><strong>Actions du menu contextuel</strong>: les plugins peuvent enregistrer des actions qui peuvent être activées manuellement via le menu contextuel. C’est ce que fait le plugin Load as non-album track. Un autre exemple est Generate Cuesheet. Ceux-ci sont enregistrés avec <code class="docutils literal notranslate"><span class="pre">register_album_action()</span></code>, <code class="docutils literal notranslate"><span class="pre">register_track_action()</span></code>, <code class="docutils literal notranslate"><span class="pre">register_file_action()</span></code>, <code class="docutils literal notranslate"><span class="pre">register_cluster_action()</span></code> ou <code class="docutils literal notranslate"><span class="pre">register_clusterlist_action()</span></code>.</p>
@@ -230,7 +230,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="scripts.html" class="btn btn-neutral float-right" title="Les scripts" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="scripts.html" class="btn btn-neutral float-right" title="Scripts" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="extending.html" class="btn btn-neutral float-left" title="Prolonger Picard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
@@ -241,11 +241,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

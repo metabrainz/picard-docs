@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Scripting &mdash; Documentation MusicBrainz Picard v2.5</title>
+  <title>Script &mdash; Documentation MusicBrainz Picard v2.5.2</title>
   
 
   
@@ -42,7 +42,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Fonctions de script" href="../functions/list_by_type.html" />
-    <link rel="prev" title="Les autres informations" href="../variables/variables_other_information.html" /> 
+    <link rel="prev" title="Autres informations" href="../variables/variables_other_information.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                v2.5
+                v2.5.2
               </div>
             
           
@@ -104,8 +104,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises et variables</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Scripting</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Script</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#syntax">Syntaxe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#metadata-variables">Variables de métadonnées</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#scripting-functions">Fonctions de script</a></li>
@@ -132,16 +132,16 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont ni mises à jour ni enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient d’arrêter de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe 1: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe 2: Mappage des balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe 3: Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 </ul>
 
             
@@ -188,7 +188,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Scripting</li>
+      <li>Script</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -206,8 +206,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="scripting">
-<h1>Scripting<a class="headerlink" href="#scripting" title="Lien permanent vers ce titre">¶</a></h1>
-<p id="index-0">Les scripts sont utilisés pour contrôler certains aspects du fonctionnement de Picard.</p>
+<h1><span class="target" id="index-2"></span>Script<a class="headerlink" href="#scripting" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Les scripts sont utilisés pour contrôler certains aspects du fonctionnement de Picard.</p>
 <p>Il existe deux types de scripts utilisés dans Picard: le script de dénomination de fichier et les scripts de balisage. Ceux-ci sont gérés à partir des sections « Nom du fichier » et « Script » du menu <span class="menuselection">« Options ‣ Options… »</span>.</p>
 <p>Les scripts sont souvent abordés dans le <a class="reference external" href="https://community.metabrainz.org/">MetaBrainz Community Forum</a>, et il existe un fil de discussion spécifique à <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">la dénomination de fichier et les extraits de script</a>.</p>
 <div class="admonition seealso">
@@ -215,13 +215,16 @@
 <p>Veuillez vous référer à la section sur <a class="reference internal" href="scripts.html"><span class="doc">Scripts</span></a> dans <a class="reference internal" href="extending.html"><span class="doc">Extending Picard</span></a> pour plus de détails sur les deux types de scripts, y compris comment et quand chacun des scripts est exécuté.</p>
 </div>
 <div class="section" id="syntax">
-<span id="index-1"></span><h2>Syntaxe<a class="headerlink" href="#syntax" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-3"></span>Syntaxe<a class="headerlink" href="#syntax" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La syntaxe est dérivée du <a class="reference external" href="https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference">format de titre de Foobar2000</a>. Il existe trois éléments de base: le texte, la variable et la fonction. Les variables sont constituées de caractères alphanumériques entourés de signes de pourcentage (par exemple: <code class="docutils literal notranslate"><span class="pre">%artiste%</span></code>). Les fonctions commencent par un signe dollar et se terminent par une liste d’arguments entre parenthèses (par exemple: <code class="docutils literal notranslate"><span class="pre">$lower(...)</span></code>).</p>
-<p>Pour utiliser des parenthèses ou des virgules telles quelles dans un appel de fonction, vous devez les échapper avec une barre oblique inverse.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lorsque vous entrez des chaînes d’entrée dans des scripts Picard, vous devez échapper une barre oblique inverse « \ », un signe dollar « $ », une virgule « , » et les parenthèses gauche et droite « ( » et « ) » afin de forcer Picard à ne pas les interpréter dans le cadre de la commande de script. Cela se fait en insérant une barre oblique inverse avant le caractère à échapper. Par exemple, pour définir une valeur de balise sur <code class="docutils literal notranslate"><span class="pre">($1,000,000)</span></code>, il faudrait la saisir sous la forme <code class="docutils literal notranslate"><span class="pre">$set(test_tag,\(\$1\,000\,000\))</span></code>.</p>
+</div>
 </div>
 <div class="section" id="metadata-variables">
 <h2>Variables de métadonnées<a class="headerlink" href="#metadata-variables" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Voir <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises et variables</span></a> pour la liste des variables fournies par Picard.</p>
+<p>Voir <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a> pour la liste des variables fournies par Picard.</p>
 <p>Les variables de Picard peuvent être soit de simples variables contenant une seule chaîne de texte, soit des variables à valeurs multiples contenant plusieurs chaînes de texte. Dans les scripts, les variables à valeurs multiples sont automatiquement converties en une seule chaîne de texte en joignant les valeurs par un point-virgule “;”, sauf lorsqu’elles sont utilisées avec des fonctions spéciales à valeurs multiples.</p>
 </div>
 <div class="section" id="scripting-functions">
@@ -241,7 +244,7 @@
         <a href="../functions/list_by_type.html" class="btn btn-neutral float-right" title="Fonctions de script" accesskey="n" rel="next">Prochain <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../variables/variables_other_information.html" class="btn btn-neutral float-left" title="Les autres informations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
+        <a href="../variables/variables_other_information.html" class="btn btn-neutral float-left" title="Autres informations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Précédent</a>
       
     </div>
   
@@ -249,11 +252,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
-        &copy; Copyright This documentation is licensed under CC0 1.0.
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
 
     </p> -->
   </div>

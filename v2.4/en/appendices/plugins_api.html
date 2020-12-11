@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Appendix 1: Plugins API &mdash; MusicBrainz Picard v2.4 documentation</title>
+  <title>Appendix A: Plugins API &mdash; MusicBrainz Picard v2.4.4 documentation</title>
   
 
   
@@ -40,7 +40,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Appendix 2: Tag Mapping" href="tag_mapping.html" />
+    <link rel="next" title="Appendix B: Tag Mapping" href="tag_mapping.html" />
     <link rel="prev" title="Picard just stopped working" href="../troubleshooting/stopped_working.html" /> 
 </head>
 
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                v2.4
+                v2.4.4
               </div>
             
           
@@ -132,9 +132,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Appendices</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Appendix 1: Plugins API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_mapping.html">Appendix 2: Tag Mapping</a></li>
-<li class="toctree-l1"><a class="reference internal" href="command_line.html">Appendix 3: Command Line Options</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_line.html">Appendix C: Command Line Options</a></li>
 </ul>
 
             
@@ -181,7 +181,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Appendix 1: Plugins API</li>
+      <li>Appendix A: Plugins API</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -198,10 +198,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="appendix-1-plugins-api">
-<h1>Appendix 1: Plugins API<a class="headerlink" href="#appendix-1-plugins-api" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="appendix-a-plugins-api">
+<h1><span class="target" id="index-0"></span>Appendix A: <span class="target" id="index-1"></span>Plugins API<a class="headerlink" href="#appendix-a-plugins-api" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="plugin-metadata">
-<span id="index-0"></span><h2>Plugin Metadata<a class="headerlink" href="#plugin-metadata" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-2"></span>Plugin Metadata<a class="headerlink" href="#plugin-metadata" title="Permalink to this headline">¶</a></h2>
 <p>Each plugin must provide some metadata as variables. Those variables should be placed at the top of the file.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
@@ -227,7 +227,7 @@ one you chose is not available in the list.</p></li>
 </ul>
 </div>
 <div class="section" id="metadata-processors">
-<span id="index-1"></span><h2>Metadata Processors<a class="headerlink" href="#metadata-processors" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-3"></span>Metadata Processors<a class="headerlink" href="#metadata-processors" title="Permalink to this headline">¶</a></h2>
 <p>MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to
 the processor functions in the following examples are as follows:</p>
 <ul class="simple">
@@ -273,7 +273,7 @@ the processor functions in the following examples are as follows:</p>
 </div>
 </div>
 <div class="section" id="event-hooks">
-<span id="index-2"></span><h2>Event Hooks<a class="headerlink" href="#event-hooks" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-4"></span>Event Hooks<a class="headerlink" href="#event-hooks" title="Permalink to this headline">¶</a></h2>
 <p>Plugins can register themselves to listen for different events. Currently the following event hooks are available:</p>
 <div class="section" id="file-post-load-processor-file">
 <h3>file_post_load_processor(file)<a class="headerlink" href="#file-post-load-processor-file" title="Permalink to this headline">¶</a></h3>
@@ -343,7 +343,7 @@ the file or write extra data. Note that the file’s metadata is already the new
 </div>
 </div>
 <div class="section" id="file-formats">
-<span id="index-3"></span><h2>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-5"></span>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline">¶</a></h2>
 <p>Plugins can extend Picard with support for additional file formats. See the existing <a class="reference external" href="https://github.com/metabrainz/picard/tree/master/picard/formats">file format implementations</a> for details on how to implement the <code class="docutils literal notranslate"><span class="pre">_load</span></code>
 and <code class="docutils literal notranslate"><span class="pre">_save</span></code> methods. Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
@@ -379,7 +379,7 @@ and <code class="docutils literal notranslate"><span class="pre">_save</span></c
 </div>
 </div>
 <div class="section" id="tagger-script-functions">
-<span id="index-4"></span><h2>Tagger Script Functions<a class="headerlink" href="#tagger-script-functions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-6"></span>Tagger Script Functions<a class="headerlink" href="#tagger-script-functions" title="Permalink to this headline">¶</a></h2>
 <p>To define new tagger script functions use <code class="docutils literal notranslate"><span class="pre">register_script_function(function,</span> <span class="pre">name=None)</span></code> from the <code class="docutils literal notranslate"><span class="pre">picard.script</span></code> module.
 <code class="docutils literal notranslate"><span class="pre">parser</span></code> is an instance of <code class="docutils literal notranslate"><span class="pre">picard.script.ScriptParser</span></code>, and the rest of the arguments passed to it are the arguments from
 the function call in the tagger script. Example:</p>
@@ -407,7 +407,7 @@ the function call in the tagger script. Example:</p>
 <p>The default value for both arguments is <strong>True</strong>.</p>
 </div>
 <div class="section" id="context-menu-actions">
-<span id="index-5"></span><h2>Context Menu Actions<a class="headerlink" href="#context-menu-actions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="target" id="index-7"></span>Context Menu Actions<a class="headerlink" href="#context-menu-actions" title="Permalink to this headline">¶</a></h2>
 <p>Right-click context menu actions can be added to albums, tracks and files in “Unmatched Files”, “Clusters”
 and the “ClusterList” (parent folder of Clusters). Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Remove Perfect Albums&#39;</span>
@@ -447,7 +447,7 @@ and the “ClusterList” (parent folder of Clusters). Example:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="tag_mapping.html" class="btn btn-neutral float-right" title="Appendix 2: Tag Mapping" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="tag_mapping.html" class="btn btn-neutral float-right" title="Appendix B: Tag Mapping" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../troubleshooting/stopped_working.html" class="btn btn-neutral float-left" title="Picard just stopped working" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -458,8 +458,7 @@ and the “ClusterList” (parent folder of Clusters). Example:</p>
   <hr/>
 
   <div role="contentinfo">
-    <!-- <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This <a rel="cc:attributionURL" href="https://picard-docs.musicbrainz.org"><span rel="dct:title">MusicBrainz Picard User Guide</span></a> by <span rel="cc:attributionName">Bob Swift</span> is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p> -->
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /> <img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
     <!-- <p>
         
         &copy; Copyright This documentation is licensed under CC0 1.0.
