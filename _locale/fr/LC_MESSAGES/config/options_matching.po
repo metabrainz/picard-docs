@@ -8,92 +8,91 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-07 11:39-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:10-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../config/options_matching.rst:8
-#, fuzzy
-msgid "Matching"
-msgstr "Correspondant à"
+#: ../../config/options_matching.rst:4
+msgid ":index:`Matching <configuration; matching preferences>`"
+msgstr ":index:`Correspondance <configuration; préférences correspondantes>`"
 
-#: ../../config/options_matching.rst:16
+#: ../../config/options_matching.rst:9
 msgid ""
 "It is recommended for most users to leave these settings at their default "
-"values. For advanced users, these allow you to tune the way Picard "
-"matches your files and clusters to MusicBrainz releases and tracks."
+"values. For advanced users, these allow you to tune the way Picard matches "
+"your files and clusters to MusicBrainz releases and tracks."
 msgstr ""
-"Il est recommandé à la plupart des utilisateurs de laisser ces paramètres "
-"à leurs valeurs par défaut. Pour les utilisateurs avancés, ceux-ci vous "
-"permettent d'ajuster la façon dont Picard fait correspondre vos fichiers "
-"et vos clusters aux versions et pistes de MusicBrainz."
+"Il est recommandé à la plupart des utilisateurs de laisser ces paramètres à "
+"leurs valeurs par défaut. Pour les utilisateurs avancés, ceux-ci vous "
+"permettent d'ajuster la façon dont Picard fait correspondre vos fichiers et "
+"vos clusters aux versions et pistes de MusicBrainz."
 
-#: ../../config/options_matching.rst:20
+#: ../../config/options_matching.rst:13
 msgid "**Minimal similarity for file lookups**"
 msgstr "**Similitude minimale pour les recherches de fichiers**"
 
-#: ../../config/options_matching.rst:22 ../../config/options_matching.rst:33
+#: ../../config/options_matching.rst:15 ../../config/options_matching.rst:26
 msgid ""
 "The higher the percentage value, the more similar an individual file's "
-"metadata must be to the metadata from MusicBrainz for it to be matched to "
-"a release on the right-hand side."
+"metadata must be to the metadata from MusicBrainz for it to be matched to a "
+"release on the right-hand side."
 msgstr ""
-"Plus la valeur en pourcentage est élevée, plus les métadonnées d'un "
-"fichier individuel doivent être similaires aux métadonnées de MusicBrainz "
-"pour qu'elles correspondent à une version sur le côté droit."
+"Plus la valeur en pourcentage est élevée, plus les métadonnées d'un fichier "
+"individuel doivent être similaires aux métadonnées de MusicBrainz pour "
+"qu'elles correspondent à une version sur le côté droit."
 
-#: ../../config/options_matching.rst:25
+#: ../../config/options_matching.rst:18
 msgid "**Minimal similarity for cluster lookups**"
 msgstr "**Similitude minimale pour les recherches de cluster**"
 
-#: ../../config/options_matching.rst:27
+#: ../../config/options_matching.rst:20
 msgid ""
-"The higher the percentage value, the more similar a cluster of files from "
-"the left-hand pane must be to a MusicBrainz release for the entire "
-"cluster to be matched to a release on the right-hand side."
+"The higher the percentage value, the more similar a cluster of files from the "
+"left-hand pane must be to a MusicBrainz release for the entire cluster to be "
+"matched to a release on the right-hand side."
 msgstr ""
 "Plus la valeur de pourcentage est élevée, plus un cluster de fichiers du "
 "volet de gauche doit être similaire à une version de MusicBrainz pour que "
-"l'ensemble du cluster soit mis en correspondance avec une version sur le "
-"côté droit."
+"l'ensemble du cluster soit mis en correspondance avec une version sur le côté "
+"droit."
 
-#: ../../config/options_matching.rst:31
+#: ../../config/options_matching.rst:24
 msgid "**Minimal similarity for matching files to tracks**"
-msgstr ""
-"**Similitude minimale pour faire correspondre les fichiers aux pistes**"
+msgstr "**Similitude minimale pour faire correspondre les fichiers aux pistes**"
 
-#: ../../config/options_matching.rst:36
+#: ../../config/options_matching.rst:29
 msgid ""
-"If you have absolutely no metadata in your current files, and you are "
-"using \"Scan\" to match tracks, you may find that you need to lower the "
-"value of \"Minimal similarity for matching files to tracks\" in order for "
-"Picard to match the files within a release. Otherwise you may find that "
-"Picard matches the track to a release but then is not sure which track is "
-"correct; and leaves it in an \"unmatched files\" group within that "
-"release."
+"If you have absolutely no metadata in your current files, and you are using "
+"\"Scan\" to match tracks, you may find that you need to lower the value of "
+"\"Minimal similarity for matching files to tracks\" in order for Picard to "
+"match the files within a release. Otherwise you may find that Picard matches "
+"the track to a release but then is not sure which track is correct; and "
+"leaves it in an \"unmatched files\" group within that release."
 msgstr ""
-"Si vous n'avez absolument aucune métadonnée dans vos fichiers actuels et "
-"que vous utilisez \"Scan\" pour faire correspondre les pistes, vous "
-"constaterez peut-être que vous devez réduire la valeur de \"Similitude "
-"minimale pour faire correspondre les fichiers aux pistes\" afin que "
-"Picard corresponde aux fichiers dans une version. Sinon, vous constaterez "
-"peut-être que Picard associe la piste à une version mais ne sait pas "
-"quelle piste est correcte; et le laisse dans un groupe \"fichiers sans "
-"correspondance\" dans cette version."
+"Si vous n'avez absolument aucune métadonnée dans vos fichiers actuels et que "
+"vous utilisez \"Scan\" pour faire correspondre les pistes, vous constaterez "
+"peut-être que vous devez réduire la valeur de \"Similitude minimale pour "
+"faire correspondre les fichiers aux pistes\" afin que Picard corresponde aux "
+"fichiers dans une version. Sinon, vous constaterez peut-être que Picard "
+"associe la piste à une version mais ne sait pas quelle piste est correcte; et "
+"le laisse dans un groupe \"fichiers sans correspondance\" dans cette version."
 
-#: ../../config/options_matching.rst:42
+#: ../../config/options_matching.rst:35
 msgid ""
 "As a general rule, lowering the percentages may increase the chance of "
 "finding a match at the risk of false positives and incorrect matches."
 msgstr ""
-"En règle générale, abaisser les pourcentages peut augmenter les chances "
-"de trouver une correspondance au risque de faux positifs et de "
-"correspondances incorrectes."
+"En règle générale, abaisser les pourcentages peut augmenter les chances de "
+"trouver une correspondance au risque de faux positifs et de correspondances "
+"incorrectes."
+
+#~ msgid "Matching"
+#~ msgstr "Correspondant à"

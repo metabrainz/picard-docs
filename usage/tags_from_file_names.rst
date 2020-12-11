@@ -1,9 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Generating tags from file names
-===============================
+Generating :index:`tags from file names`
+=========================================
 
 Sometimes files have poor quality tags or no tags at all, but the file names are well structured and
 follow a pattern. In this case you can use :menuselection:`"Tools --> Tags From &File Names..."` to
@@ -75,8 +73,8 @@ This would extract the ``tracknumber`` tag properly, but would extract the rest 
 to a hidden variable :samp:`%_filetitle%` which would not get written to the file tags. The name
 :samp:`%_filetitle%` is arbitrarily chosen, it just needs to start with an underscore.
 
-   .. note::
+.. note::
 
-      Parsing hidden variables from file names is supported since Picard 2.5.  Earlier versions
-      would create an actual tag which would get stored to the tags.  If you are using a Picard
-      version older than 2.5 you will need to remove the unwanted tags before saving the files.
+   Parsing hidden variables from file names is supported since Picard 2.5.  Earlier versions
+   would create an actual tag which would get stored to the tags.  If you are using a Picard
+   version older than 2.5 you will need to remove the unwanted tags before saving the files.

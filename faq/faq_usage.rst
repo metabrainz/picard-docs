@@ -1,8 +1,4 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
-
 
 Using Picard
 ============
@@ -11,13 +7,9 @@ Using Picard
 
    There is a separate section that explains the tagging process.  Please see :doc:`../usage/using` for details.
 
-.. index::
-   single: tagger icon
-   single: icon; tagger
-
 **The green "Tagger" icon disappeared from MusicBrainz.org, how do I get it back?**
 
-   This icon shows up when a manual lookup is performed via Picard using :menuselection:`"Tools --> Lookup"`.
+   This :index:`icon <tagger icon, icon; tagger>` shows up when a manual lookup is performed via Picard using :menuselection:`"Tools --> Lookup"`.
 
    Alternatively the parameter ``?tport=8000`` can be added to the end of almost any MusicBrainz URL and the green
    tagger icons will continue to show up from then on.
@@ -52,10 +44,7 @@ Using Picard
 
 **macOS shows the app is damaged. How can I run Picard?**
 
-.. index::
-   single: macos
-
-On macOS 10.12 and 10.13 there have been reports that sometimes the MusicBrainz Picard app
+On "index:`macOS <macos>` 10.12 and 10.13 there have been reports that sometimes the MusicBrainz Picard app
 cannot be started and macOS shows an error message:
 
    "MusicBrainz Picard.app" is damaged and can't be opened. You should move it to the Trash.

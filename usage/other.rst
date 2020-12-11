@@ -1,7 +1,4 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 Other Picard Tasks
 ==================
@@ -27,18 +24,16 @@ there are some other tasks that it can perform:
 
       This will extract tags such as track number and title from the file name.
 
-.. .. only:: latex
-
-..    Each of these steps are described in detail in the following sections.
-
-.. only:: html
-
    .. seealso::
 
       Step-by-step detailed instructions:
       :doc:`attach_disc_id` /
       :doc:`submit_acoustid` /
       :doc:`tags_from_file_names`
+
+.. .. only:: latex
+
+..    Each of these steps are described in detail in the following sections.
 
 .. toctree::
    :hidden:

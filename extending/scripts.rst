@@ -1,13 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Scripts
-=======
-
-.. index::
-   single: scripts
+:index:`Scripts <scripts>`
+===========================
 
 There are two types of scripts used in Picard: the file naming script and tagging scripts. These are
 managed from the "File Naming" and "Scripting" sections of the :menuselection:`"Options --> Options..."` menu. All scripts are written
@@ -15,11 +9,8 @@ using the :doc:`Picard scripting language <scripting>`. Scripts are often discus
 `MetaBrainz Community Forum <https://community.metabrainz.org/>`_, and there is a thread specific to
 `file naming and script snippets <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_.
 
-File Naming Script
-------------------
-
-.. index::
-   pair: file naming; scripts
+:index:`File Naming Script <pair: file naming; scripts>`
+---------------------------------------------------------
 
 There is only one file naming script defined in a user’s settings, although it can vary from a simple
 one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats
@@ -30,11 +21,8 @@ based on different criteria. In all cases, the files will be saved using the tex
    Any new tags set or tags modified by the file naming script will not be written to the output
    files' metadata.
 
-Tagging Scripts
----------------
-
-.. index::
-   pair: tagging; scripts
+:index:`Tagging Scripts <pair: tagging; scripts>`
+--------------------------------------------------
 
 There can be multiple tagging scripts defined in a user’s settings. Individual scripts can be enabled or
 disabled, and the order of execution of the scripts can be set. Whenever a script is run automatically (i.e.:

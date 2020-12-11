@@ -1,13 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-.. index::
-   single: troubleshooting; program freezes
-
-Picard just stopped working
-===========================
+:index:`Picard just stopped working <troubleshooting; program freezes>`
+========================================================================
 
 There are typically two reasons that Picard will run very slowly or appear to be stalled:
 

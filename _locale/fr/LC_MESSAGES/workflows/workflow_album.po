@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-18 10:02-0600\n"
-"PO-Revision-Date: 2020-10-18 10:12-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 17:19-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,13 +18,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../workflows/workflow_album.rst:8
-msgid "When files are grouped by album"
-msgstr "Lorsque les fichiers sont regroupés par album"
+#: ../../workflows/workflow_album.rst:4
+msgid ""
+":index:`When files are grouped by album <workflows; files grouped by "
+"album>`"
+msgstr ""
+":index:`Lorsque les fichiers sont regroupés par album <workflows; "
+"fichiers regroupés par album>`"
 
-#: ../../workflows/workflow_album.rst:13
+#: ../../workflows/workflow_album.rst:6
 msgid ""
 "If the music files to be processed are already grouped into folders by "
 "album, then the process of looking up the release in the MusicBrainz "
@@ -36,11 +40,11 @@ msgstr ""
 "données MusicBrainz est grandement simplifié car Picard fonctionne mieux "
 "lors du traitement d'un album à la fois."
 
-#: ../../workflows/workflow_album.rst:17
+#: ../../workflows/workflow_album.rst:10
 msgid "**1. Load the files**"
 msgstr "**1. Chargez les fichiers**"
 
-#: ../../workflows/workflow_album.rst:19
+#: ../../workflows/workflow_album.rst:12
 msgid ""
 "Drag the files or folder from the browser to the \"Unclustered Files\" "
 "section in the left-hand pane."
@@ -48,11 +52,11 @@ msgstr ""
 "Faites glisser les fichiers ou le dossier du navigateur vers la section "
 "\"Fichiers non groupés\" dans le volet de gauche."
 
-#: ../../workflows/workflow_album.rst:22
+#: ../../workflows/workflow_album.rst:15
 msgid "**2. Cluster and lookup the files**"
 msgstr "**2. Regrouper et rechercher les fichiers**"
 
-#: ../../workflows/workflow_album.rst:24
+#: ../../workflows/workflow_album.rst:17
 msgid ""
 "Select the files in the left-hand pane and combine them into an album "
 "cluster using the :menuselection:`Tools --> Cluster\"` command.  Select "
@@ -67,11 +71,11 @@ msgstr ""
 "\"`. Voir la section :doc:`../usage/retrieve_lookup` pour plus de "
 "détails."
 
-#: ../../workflows/workflow_album.rst:29
+#: ../../workflows/workflow_album.rst:22
 msgid "**3. Select the correct release**"
 msgstr "**3. Sélectionnez la version appropriée**"
 
-#: ../../workflows/workflow_album.rst:31
+#: ../../workflows/workflow_album.rst:24
 msgid ""
 "If there is only one release that matches the lookup, it will be loaded "
 "automatically.  Before proceeding, please check to ensure that it "
@@ -87,11 +91,11 @@ msgstr ""
 "pochette). Ceci est particulièrement important si vous allez soumettre "
 "des informations telles que les empreintes digitales AcoustID."
 
-#: ../../workflows/workflow_album.rst:37
+#: ../../workflows/workflow_album.rst:30
 msgid "**4. Match the files to the tracks on the release**"
 msgstr "**4. Faites correspondre les fichiers aux pistes de la version**"
 
-#: ../../workflows/workflow_album.rst:39
+#: ../../workflows/workflow_album.rst:32
 msgid ""
 "Drag the files from the left-hand pane and drop them on the release in "
 "the right-hand pane.  Check that each track on the release is associated "
@@ -103,11 +107,11 @@ msgstr ""
 "est associée à un seul fichier. L'icône de libération devrait devenir "
 "dorée. Voir la section :doc:`../usage/match` pour plus de détails."
 
-#: ../../workflows/workflow_album.rst:44
+#: ../../workflows/workflow_album.rst:37
 msgid "**5. Verify the metadata and cover art**"
 msgstr "**5. Vérifiez les métadonnées et la pochette**"
 
-#: ../../workflows/workflow_album.rst:46
+#: ../../workflows/workflow_album.rst:39
 msgid ""
 "Check that the metadata and cover art image for the release and tracks "
 "are what you want.  Adjust if required. See the :doc:`../usage/coverart` "
@@ -117,11 +121,11 @@ msgstr ""
 "des pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la "
 "section :doc:`../usage/coverart` pour plus de détails."
 
-#: ../../workflows/workflow_album.rst:50
+#: ../../workflows/workflow_album.rst:43
 msgid "**6. Save the files**"
 msgstr "**6. Enregistrez les fichiers**"
 
-#: ../../workflows/workflow_album.rst:52
+#: ../../workflows/workflow_album.rst:45
 msgid ""
 "Save the files using the :menuselection:`\"File --> Save\"` command.  "
 "See the :doc:`../usage/save` section for details."
@@ -130,19 +134,21 @@ msgstr ""
 "\"Fichier --> Enregistrer\"`. Voir la section :doc:`../usage/save` pour "
 "plus de détails."
 
-#: ../../workflows/workflow_album.rst:58
+#: ../../workflows/workflow_album.rst:48
 msgid "**7. Calculate and submit AcoustID fingerprints**"
 msgstr "**7. Calculer et soumettre les empreintes digitales AcoustID**"
 
-#: ../../workflows/workflow_album.rst:60
+#: ../../workflows/workflow_album.rst:50
 msgid ""
-"This step is optional, but appreciated because it will help identify the "
-"files for others to look up for tagging."
+":index:`This step is optional <acoustic fingerprint; submitting>`, but "
+"appreciated because it will help identify the files for others to look "
+"up for tagging."
 msgstr ""
-"Cette étape est facultative, mais appréciée car elle aidera à identifier "
-"les fichiers que d'autres pourront rechercher pour le marquage."
+":index:`Cette étape est facultative <empreinte digitale acoustique; "
+"soumission>`, mais appréciée car elle aidera à identifier les fichiers "
+"que d'autres pourront rechercher pour le marquage."
 
-#: ../../workflows/workflow_album.rst:62
+#: ../../workflows/workflow_album.rst:52
 msgid ""
 "Select the album entry in the right-hand pane and calculate the AcoustID "
 "fingerprints using :menuselection:`\"Tools --> Generate AcoustID "
@@ -154,7 +160,7 @@ msgstr ""
 "empreintes AcoustID\"`. Une fois les empreintes calculées, soumettez-les "
 "en utilisant :menuselection:`\"Fichiers --> Soumettre les AcoustIDs\"`."
 
-#: ../../workflows/workflow_album.rst:68
+#: ../../workflows/workflow_album.rst:58
 msgid ""
 "AcoustID fingerprints should only be submitted after the files have been "
 "tagged with MusicBrainz metadata, and you have verified that the files "
@@ -164,3 +170,6 @@ msgstr ""
 "les fichiers ont été étiquetés avec les métadonnées MusicBrainz et que "
 "vous avez vérifié que les fichiers ont été mis en correspondance avec la "
 "bonne piste dans la version appropriée."
+
+#~ msgid "When files are grouped by album"
+#~ msgstr "Lorsque les fichiers sont regroupés par album"

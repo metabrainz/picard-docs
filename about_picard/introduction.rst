@@ -1,8 +1,4 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
-
 
 Introduction
 ============
@@ -69,12 +65,8 @@ Picard Cannot...
 ...provide metadata not already existing in the MusicBrainz database.
 
 
-.. index::
-   single: limitations
-   single: rate limiting
-
-Limitations
------------
+:index:`Limitations <limitations>`
+-----------------------------------
 
 **File Formats**
 
@@ -87,7 +79,7 @@ regarding the mapping between Picard internal tag names and various tagging form
 
 **Request Rate Limiting**
 
-Picard's metadata retrieval is limited to the standard **one request per second** rate limiting for the MusicBrainz
+Picard's metadata retrieval is limited to the standard **one request per second** :index:`rate limiting` for the MusicBrainz
 API.  This becomes quite noticeable when trying to process a large list of files, and is exacerbated by
 extensions that perform additional information requests from the database.
 

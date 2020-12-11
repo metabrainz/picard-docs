@@ -24,6 +24,7 @@ on:
       - '.github/workflows/*.yml'
       - 'setup.py'
       - 'conf.py'
+      - 'tag_mapping.py'
 
 jobs:
   lint_rst_and_full_build_and_publish:
@@ -49,6 +50,9 @@ jobs:
         export SPHINXBUILD=`which sphinx-build`
         mkdir _build
         mkdir docs
+    - name: Build Tag Map Files
+      run: |
+        python ./setup.py build map
     - name: Update Translation Files
       run: |
         python ./setup.py build pot
@@ -66,23 +70,7 @@ jobs:
         sudo apt-get install latexmk
         sudo apt-get install xzdec
         sudo apt-get install texlive
-        sudo apt-get install texlive-lang-arabic
-        sudo apt-get install texlive-lang-chinese
-        sudo apt-get install texlive-lang-cjk
-        sudo apt-get install texlive-lang-cyrillic
-        sudo apt-get install texlive-lang-czechslovak
-        sudo apt-get install texlive-lang-english
-        sudo apt-get install texlive-lang-european
-        sudo apt-get install texlive-lang-french
-        sudo apt-get install texlive-lang-german
-        sudo apt-get install texlive-lang-greek
-        sudo apt-get install texlive-lang-italian
-        sudo apt-get install texlive-lang-japanese
-        sudo apt-get install texlive-lang-korean
-        sudo apt-get install texlive-lang-other
-        sudo apt-get install texlive-lang-polish
-        sudo apt-get install texlive-lang-portuguese
-        sudo apt-get install texlive-lang-spanish
+        sudo apt-get install texlive-full
         sudo apt-get install texlive-latex-extra
         sudo apt-get install xindy
     - name: Build PDF Files

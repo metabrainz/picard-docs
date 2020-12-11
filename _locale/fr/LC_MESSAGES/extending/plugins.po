@@ -8,23 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-07 15:43-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:23-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../extending/plugins.rst:7
-msgid "Plugins"
-msgstr "Plugins"
+#: ../../extending/plugins.rst:4
+msgid ":index:`Plugins <plugins>`"
+msgstr ":index:`Plugins <plugins>`"
 
-#: ../../extending/plugins.rst:12
+#: ../../extending/plugins.rst:6
 msgid ""
 "Plugins are written in Python, and are registered to the appropriate "
 "hooks.  Each plugin has its own version identifier, but also lists the "
@@ -45,7 +45,7 @@ msgstr ""
 "été mise à jour pour la dernière fois et toutes les API du plugin avec "
 "lesquelles elle est rétrocompatible."
 
-#: ../../extending/plugins.rst:19
+#: ../../extending/plugins.rst:13
 msgid ""
 "Hooks are connections to the various objects in Picard that call a "
 "specific type of plugin. During the normal running of Picard, when it "
@@ -61,11 +61,15 @@ msgstr ""
 "séquentiellement dans l'ordre en fonction de la priorité spécifiée lors "
 "de l'enregistrement du plugin sur le hook."
 
-#: ../../extending/plugins.rst:24
-msgid "There are a few different types of plugins, including:"
-msgstr "Il existe différents types de plugins, notamment:"
+#: ../../extending/plugins.rst:18
+msgid ""
+"There are a few different :index:`types of plugins <plugins; types>`, "
+"including:"
+msgstr ""
+"Il existe différents :index:`types de plugins <plugins; types>`, "
+"notamment:"
 
-#: ../../extending/plugins.rst:29
+#: ../../extending/plugins.rst:20
 msgid ""
 "**Metadata processors**: These plugins can access and modify the "
 "metadata when it is loaded from MusicBrainz. They are registered with "
@@ -81,7 +85,7 @@ msgstr ""
 "appeler \"automatiques\" car ils fonctionnent sans aucune intervention "
 "de l'utilisateur. Un exemple est le plugin Classical Extras."
 
-#: ../../extending/plugins.rst:34
+#: ../../extending/plugins.rst:25
 msgid ""
 "**Cover art providers**: These plugins provide another cover art source, "
 "and are registered with ``register_cover_art_provider()``. They are also "
@@ -96,7 +100,7 @@ msgstr ""
 "l'utilisateur, bien qu'ils doivent être activés par l'utilisateur dans "
 "les options de la pochette. Le plugin Fanart.tv en est un exemple."
 
-#: ../../extending/plugins.rst:39
+#: ../../extending/plugins.rst:30
 msgid ""
 "**Scripting function**: Some plugins just provide additional scripting "
 "functions for use in :menuselection:`\"Options --> Scripting\"` or the "
@@ -110,7 +114,7 @@ msgstr ""
 "enregistrés avec ``register_script_function()``. Keep tag, qui fournit "
 "la fonction ``$keep()``, en est un exemple."
 
-#: ../../extending/plugins.rst:43
+#: ../../extending/plugins.rst:34
 msgid ""
 "**Context menu actions**: Plugins can register actions that can be "
 "activated manually via the context menu. This is what the Load as non-"
@@ -127,7 +131,7 @@ msgstr ""
 "``register_file_action()``, ``register_cluster_action()`` ou "
 "``register_clusterlist_action()``."
 
-#: ../../extending/plugins.rst:48
+#: ../../extending/plugins.rst:39
 msgid ""
 "**File formats**: Plugins can also provide support for new file formats "
 "not yet supported by Picard.  These are registered with "
@@ -137,7 +141,7 @@ msgstr ""
 "de nouveaux formats de fichiers non encore pris en charge par Picard. "
 "Ceux-ci sont enregistrés avec ``register_format()``."
 
-#: ../../extending/plugins.rst:51
+#: ../../extending/plugins.rst:42
 msgid ""
 "**Event processors**: Plugins can execute automatically based on certain "
 "event triggers. These are registered with "
@@ -154,7 +158,7 @@ msgstr ""
 "``file_post_removal_from_track_processor()`` ou "
 "``album_post_removal_processor()``."
 
-#: ../../extending/plugins.rst:56
+#: ../../extending/plugins.rst:47
 msgid ""
 "Note that plugins are not limited to one of those areas.  A single "
 "plugin could implement all of the above, but most existing plugins focus "
@@ -164,7 +168,7 @@ msgstr ""
 "seul plugin pourrait implémenter tout ce qui précède, mais la plupart "
 "des plugins existants se concentrent sur un seul."
 
-#: ../../extending/plugins.rst:59
+#: ../../extending/plugins.rst:50
 msgid ""
 "The :doc:`Plugins API <../appendices/plugins_api>` provides information "
 "regarding the different plugin hooks available, along with some examples "
@@ -177,3 +181,6 @@ msgstr ""
 "quelques exemples de leur utilisation. Il existe également une liste des "
 "`plugins disponibles <https://picard.musicbrainz.org/plugins/>`_ qui ont "
 "été soumis au référentiel MusicBrainz Picard affiché sur le site Picard."
+
+#~ msgid "Plugins"
+#~ msgstr "Plugins"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-18 10:02-0600\n"
-"PO-Revision-Date: 2020-10-18 10:13-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-21 11:55-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,13 +18,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../workflows/workflow_metadata.rst:8
-msgid "When files are not grouped but have some metadata"
-msgstr "Lorsque les fichiers ne sont pas groupés mais ont des métadonnées"
+#: ../../workflows/workflow_metadata.rst:4
+msgid ""
+":index:`When files are not grouped but have some metadata <workflows; "
+"files not grouped>`"
+msgstr ""
+":index:`Lorsque les fichiers ne sont pas groupés mais ont des "
+"métadonnées <flux de travail; fichiers non groupés>`"
 
-#: ../../workflows/workflow_metadata.rst:13
+#: ../../workflows/workflow_metadata.rst:6
 msgid ""
 "In this situation, you will need to feed batches of files to Picard to "
 "process.  In order to minimize the performance impact, it is recommended "
@@ -39,7 +43,7 @@ msgstr ""
 "les regrouper en clusters en fonction des métadonnées existant "
 "actuellement dans les fichiers."
 
-#: ../../workflows/workflow_metadata.rst:20
+#: ../../workflows/workflow_metadata.rst:13
 msgid ""
 "This workflow will likely only partially match the files to a release in "
 "each batch processed.  This means that an album may not be fully "
@@ -50,11 +54,11 @@ msgstr ""
 "album peut ne pas être entièrement mis en correspondance, étiqueté et "
 "renommé tant que plusieurs lots n'ont pas été traités."
 
-#: ../../workflows/workflow_metadata.rst:23
+#: ../../workflows/workflow_metadata.rst:16
 msgid "**1. Load the files**"
 msgstr "**1. Chargez les fichiers**"
 
-#: ../../workflows/workflow_metadata.rst:25
+#: ../../workflows/workflow_metadata.rst:18
 msgid ""
 "Drag the batch of files to process from the browser to the \"Unclustered "
 "Files\" section in the left-hand pane."
@@ -62,11 +66,11 @@ msgstr ""
 "Faites glisser le lot de fichiers à traiter du navigateur vers la "
 "section \"Fichiers non groupés\" dans le volet de gauche."
 
-#: ../../workflows/workflow_metadata.rst:28
+#: ../../workflows/workflow_metadata.rst:21
 msgid "**2. Cluster and lookup the files**"
 msgstr "**2. Regrouper et rechercher les fichiers**"
 
-#: ../../workflows/workflow_metadata.rst:30
+#: ../../workflows/workflow_metadata.rst:23
 msgid ""
 "Select the files in the left-hand pane and combine them into album "
 "clusters using the :menuselection:`Tools --> Cluster\"` command.  Picard "
@@ -83,11 +87,11 @@ msgstr ""
 "menuselection:`\"Outils --> Recherche\"`. Voir la section :doc:`../usage/"
 "retrieve_lookup` pour plus de détails."
 
-#: ../../workflows/workflow_metadata.rst:35
+#: ../../workflows/workflow_metadata.rst:28
 msgid "**3. Match the files to the tracks on the release**"
 msgstr "**3. Faites correspondre les fichiers aux pistes de la version**"
 
-#: ../../workflows/workflow_metadata.rst:37
+#: ../../workflows/workflow_metadata.rst:30
 msgid ""
 "Drag the files from the left-hand pane and drop them on the release in "
 "the right-hand pane.  Check that each track on the release is associated "
@@ -101,11 +105,11 @@ msgstr ""
 "argentée, indiquant que toutes les pistes n'ont pas été associées aux "
 "fichiers. Voir la section :doc:`../usage/match` pour plus de détails."
 
-#: ../../workflows/workflow_metadata.rst:42
+#: ../../workflows/workflow_metadata.rst:35
 msgid "**4. Verify the metadata and cover art**"
 msgstr "**4. Vérifiez les métadonnées et la pochette**"
 
-#: ../../workflows/workflow_metadata.rst:44
+#: ../../workflows/workflow_metadata.rst:37
 msgid ""
 "Check that the metadata and cover art image for the release and tracks "
 "are what you want.  Adjust if required. See the :doc:`../usage/coverart` "
@@ -115,11 +119,11 @@ msgstr ""
 "des pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la "
 "section :doc:`../usage/coverart` pour plus de détails."
 
-#: ../../workflows/workflow_metadata.rst:48
+#: ../../workflows/workflow_metadata.rst:41
 msgid "**5. Save the files**"
 msgstr "**5. Enregistrez les fichiers**"
 
-#: ../../workflows/workflow_metadata.rst:50
+#: ../../workflows/workflow_metadata.rst:43
 msgid ""
 "Save the files using the :menuselection:`\"File --> Save\"` command.  "
 "See the :doc:`../usage/save` section for details."
@@ -128,7 +132,7 @@ msgstr ""
 "\"Fichier --> Enregistrer\"`. Voir la section :doc:`../usage/save` pour "
 "plus de détails."
 
-#: ../../workflows/workflow_metadata.rst:55
+#: ../../workflows/workflow_metadata.rst:48
 msgid ""
 "It is not recommended to submit AcoustID fingerprints for files matched "
 "in this way, because it is virtually impossible to verify that your "

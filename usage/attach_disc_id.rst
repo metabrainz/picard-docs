@@ -1,13 +1,7 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
-Attaching a Disc ID to a Release
-================================
-
-.. index::
-   single: disc id; attaching
+:index:`Attaching a Disc ID to a Release <disc id; attaching>`
+===============================================================
 
 Disc IDs are very useful for identifying CDs and allowing MusicBrainz to know the length of tracks
 on a CD. Thus, it is very valuable to add them when submitting a new CD release or when you have a

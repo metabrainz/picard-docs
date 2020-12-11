@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-09 16:44-0700\n"
-"PO-Revision-Date: 2020-11-09 17:08-0700\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:21-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../config/options_tags_compatibility_id3.rst:8
-msgid "ID3 Files"
-msgstr "Fichiers ID3"
+#: ../../config/options_tags_compatibility_id3.rst:4
+msgid ":index:`ID3 Files <configuration; id3 tag options>`"
+msgstr ":index:`Fichiers ID3 <configuration; options de balise id3>`"
 
-#: ../../config/options_tags_compatibility_id3.rst:16
+#: ../../config/options_tags_compatibility_id3.rst:9
 msgid "**ID3v2 version**"
 msgstr "**Version ID3v2**"
 
-#: ../../config/options_tags_compatibility_id3.rst:18
+#: ../../config/options_tags_compatibility_id3.rst:11
 msgid ""
 "Although ID3v2.4 is the latest version, its support in music players is "
 "still lacking. While some software has no problem using version 2.4 "
@@ -43,7 +43,7 @@ msgstr ""
 "informations. La prise en charge d'ID3v2.4 dans d'autres lecteurs "
 "multimédias (tels que les smartphones) est variable."
 
-#: ../../config/options_tags_compatibility_id3.rst:22
+#: ../../config/options_tags_compatibility_id3.rst:15
 msgid ""
 "Other than native support for multi-valued tags in v2.4, the :doc:"
 "`Picard Tag Mapping <../appendices/tag_mapping>` section will show you "
@@ -53,11 +53,11 @@ msgstr ""
 "v2.4, la section :doc:`Picard Tag Mapping <../appendices/tag_mapping>` "
 "vous montrera ce que vous perdez en choisissant v2.3 au lieu de v2.4."
 
-#: ../../config/options_tags_compatibility_id3.rst:25
+#: ../../config/options_tags_compatibility_id3.rst:18
 msgid "**ID3v2 text encoding**"
 msgstr "**Encodage de texte ID3v2**"
 
-#: ../../config/options_tags_compatibility_id3.rst:27
+#: ../../config/options_tags_compatibility_id3.rst:20
 msgid ""
 "The default for version 2.4 is UTF-8, the default for version 2.3 is "
 "UTF-16. Use ISO-8859-1 only if you face compatibility issues with your "
@@ -67,11 +67,11 @@ msgstr ""
 "pour la version 2.3 est UTF-16. N'utilisez ISO-8859-1 que si vous "
 "rencontrez des problèmes de compatibilité avec votre lecteur."
 
-#: ../../config/options_tags_compatibility_id3.rst:30
+#: ../../config/options_tags_compatibility_id3.rst:23
 msgid "**Join ID3v23 tags with**"
 msgstr "**Rejoignez les tags ID3v23 avec**"
 
-#: ../../config/options_tags_compatibility_id3.rst:32
+#: ../../config/options_tags_compatibility_id3.rst:25
 msgid ""
 "As mentioned above, ID3v2.3 does not support multi-value tags, and so "
 "Picard flattens these to strings before saving them to ID3v2.3 tags. "
@@ -89,11 +89,11 @@ msgstr ""
 "compatibilité visuelle en Picard entre ID3v2.3 et d'autres formats de "
 "balisage."
 
-#: ../../config/options_tags_compatibility_id3.rst:37
+#: ../../config/options_tags_compatibility_id3.rst:30
 msgid "**Save iTunes compatible grouping and work**"
 msgstr "**Enregistrez le regroupement compatible iTunes et travaillez**"
 
-#: ../../config/options_tags_compatibility_id3.rst:39
+#: ../../config/options_tags_compatibility_id3.rst:32
 msgid ""
 "Save the tags grouping and work so that they are compatible with current "
 "iTunes versions. Without this option grouping will be displayed in "
@@ -104,7 +104,7 @@ msgstr ""
 "option, le regroupement sera affiché dans iTunes en tant que \"nom de "
 "travail\" et le travail ne sera pas disponible."
 
-#: ../../config/options_tags_compatibility_id3.rst:42
+#: ../../config/options_tags_compatibility_id3.rst:35
 msgid ""
 "See the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section "
 "for details."
@@ -112,7 +112,7 @@ msgstr ""
 "Voir la section :doc:`Picard Tag Mapping <../appendices/tag_mapping>` "
 "pour plus de détails."
 
-#: ../../config/options_tags_compatibility_id3.rst:46
+#: ../../config/options_tags_compatibility_id3.rst:39
 msgid ""
 "For other players supporting grouping and work you might need to disable "
 "this option. `MusicBee <https://getmusicbee.com/>`_ is one example of "
@@ -122,11 +122,11 @@ msgstr ""
 "vous devrez peut-être désactiver cette option. `MusicBee <https://"
 "getmusicbee.com/>`_ en est un exemple."
 
-#: ../../config/options_tags_compatibility_id3.rst:49
+#: ../../config/options_tags_compatibility_id3.rst:42
 msgid "**Also include ID3v1 tags in the files**"
 msgstr "** Incluez également les balises ID3v1 dans les fichiers **"
 
-#: ../../config/options_tags_compatibility_id3.rst:51
+#: ../../config/options_tags_compatibility_id3.rst:44
 msgid ""
 "This is not recommended at all. ID3v1.1 tags are obsolete and may not "
 "work with non-latin scripts."
@@ -167,3 +167,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Voir la section :doc:`Picard Tag Mapping <../appendices/tag_mapping>` "
 #~ "pour plus de détails."
+
+#~ msgid "ID3 Files"
+#~ msgstr "Fichiers ID3"

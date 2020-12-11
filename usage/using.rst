@@ -1,7 +1,4 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 Using Picard
 ============
@@ -36,12 +33,6 @@ There are four stages to using Picard to process your audio files:
       first stage, based on the settings configured in the Options.  This may also include
       renaming the files and placing them in a different directory.
 
-.. .. only:: latex
-
-..    Each of these steps are described in detail in the following sections.
-
-.. only:: html
-
    .. seealso::
 
       Details:
@@ -49,6 +40,10 @@ There are four stages to using Picard to process your audio files:
       :doc:`match` /
       :doc:`coverart` /
       :doc:`save`
+
+.. .. only:: latex
+
+..    Each of these steps are described in detail in the following sections.
 
 .. toctree::
    :hidden:

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-09 16:39-0700\n"
-"PO-Revision-Date: 2020-11-09 18:04-0700\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 17:11-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,13 +18,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../variables/variables.rst:8
-msgid "Tags & Variables"
-msgstr "Balises et variables"
+#: ../../variables/variables.rst:5
+msgid ":index:`Tags & Variables <scripts; tags, scripts; variables>`"
+msgstr ""
+":index:`Balises & Variables <scripts; balises, scripts; variables>`"
 
-#: ../../variables/variables.rst:14
+#: ../../variables/variables.rst:7
 msgid ""
 "This describes both Tags which are saved inside your music files and can "
 "be read by your music player, and Picard variables which can be used in "
@@ -37,7 +38,7 @@ msgstr ""
 "pour le balisage, le changement de nom de fichier et dans plusieurs "
 "autres paramètres mineurs."
 
-#: ../../variables/variables.rst:18
+#: ../../variables/variables.rst:11
 msgid ""
 "All tags are also available as variables, but additional variables which "
 "start with an underscore '_' are not saved as Tags within your music "
@@ -48,7 +49,7 @@ msgstr ""
 "soulignement '_' ne sont pas enregistrées en tant que balises dans vos "
 "fichiers de musique (par exemple, ``_my_tag_not_saved``)."
 
-#: ../../variables/variables.rst:21
+#: ../../variables/variables.rst:14
 msgid ""
 "Variables are used in scripts by wrapping the name between percent '%' "
 "characters (e.g. ``%title%``)."
@@ -56,7 +57,7 @@ msgstr ""
 "Les variables sont utilisées dans les scripts en enveloppant le nom "
 "entre des caractères pour cent '%' (par exemple, ``%title%``)."
 
-#: ../../variables/variables.rst:23
+#: ../../variables/variables.rst:16
 msgid ""
 "Some variables can contain more than one value (e.g. "
 "``musicbrainz_artistid``), and if you want to use only one of the values "
@@ -73,7 +74,7 @@ msgstr ""
 "seule chaîne séparée par un point-virgule et un espace (par exemple: "
 "\"Item 1; Item 2; Item 3\")."
 
-#: ../../variables/variables.rst:28
+#: ../../variables/variables.rst:21
 msgid ""
 "If a tag description indicates a later version of Picard than the "
 "current official version on the downloads page, then the tag is beta "
@@ -90,7 +91,7 @@ msgstr ""
 "téléchargement Picard <https://picard.musicbrainz.org/downloads/>`_ sur "
 "le site Web."
 
-#: ../../variables/variables.rst:37
+#: ../../variables/variables.rst:30
 msgid ""
 "Details: :doc:`tags_basic` / :doc:`tags_advanced` / :doc:"
 "`variables_basic` / :doc:`variables_file` / :doc:`variables_advanced` / :"
@@ -101,3 +102,6 @@ msgstr ""
 "`variables_basic` / :doc:`variables_file` / :doc:`variables_advanced` / :"
 "doc:`variables_classical` / :doc:`variables_plugins` / :doc:"
 "`variables_other_information`"
+
+#~ msgid "Tags & Variables"
+#~ msgstr "Balises et variables"

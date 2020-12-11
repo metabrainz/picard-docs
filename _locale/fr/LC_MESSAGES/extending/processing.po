@@ -8,23 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-07 15:56-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:24-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../extending/processing.rst:7
-msgid "Processing Order"
-msgstr "Commande en traitement"
+#: ../../extending/processing.rst:4
+msgid ":index:`Processing Order <processing order>`"
+msgstr ":index:`Ordre de traitement <ordre de traitement>`"
 
-#: ../../extending/processing.rst:12
+#: ../../extending/processing.rst:6
 msgid ""
 "In order to make effective use of plugins and scripts, it is important "
 "to understand when each is processed in relation to the others. As a "
@@ -38,11 +38,11 @@ msgstr ""
 "Les plugins du même type seront exécutés dans l'ordre en fonction de la "
 "priorité spécifiée lors de l'enregistrement du plugin."
 
-#: ../../extending/processing.rst:18
+#: ../../extending/processing.rst:12
 msgid "Startup"
 msgstr "Commencez"
 
-#: ../../extending/processing.rst:20
+#: ../../extending/processing.rst:14
 msgid ""
 "During program startup, plugins with the following hooks are processed, "
 "and any additional functionality that they provide will be available "
@@ -52,31 +52,31 @@ msgstr ""
 "traités et toutes les fonctionnalités supplémentaires qu'ils fournissent "
 "seront disponibles immédiatement:"
 
-#: ../../extending/processing.rst:23
+#: ../../extending/processing.rst:17
 msgid "File Formats"
 msgstr "Formats de fichier"
 
-#: ../../extending/processing.rst:24
+#: ../../extending/processing.rst:18
 msgid "Cover Art Providers"
 msgstr "Fournisseurs d'art de couverture"
 
-#: ../../extending/processing.rst:25
+#: ../../extending/processing.rst:19
 msgid "Tagger Script Functions"
 msgstr "Fonctions de script de tagger"
 
-#: ../../extending/processing.rst:26
+#: ../../extending/processing.rst:20
 msgid "Context Menu Actions"
 msgstr "Actions du menu contextuel"
 
-#: ../../extending/processing.rst:27
+#: ../../extending/processing.rst:21
 msgid "Option Pages"
 msgstr "Pages d'options"
 
-#: ../../extending/processing.rst:30
+#: ../../extending/processing.rst:24
 msgid "Loading a Release"
 msgstr "Chargement d'une version"
 
-#: ../../extending/processing.rst:32
+#: ../../extending/processing.rst:26
 msgid ""
 "When data gets loaded from MusicBrainz (while the album shows the "
 "\"loading\" status in the right-hand pane), the following are processed:"
@@ -85,15 +85,15 @@ msgstr ""
 "l'album affiche l'état de \"chargement\" dans le volet de droite), les "
 "éléments suivants sont traités:"
 
-#: ../../extending/processing.rst:35
+#: ../../extending/processing.rst:29
 msgid "Metadata Processor Plugins"
 msgstr "Plugins du processeur de métadonnées"
 
-#: ../../extending/processing.rst:36
+#: ../../extending/processing.rst:30
 msgid "Tagging Scripts"
 msgstr "Balisage des scripts"
 
-#: ../../extending/processing.rst:38
+#: ../../extending/processing.rst:32
 msgid ""
 "Plugins have access to the raw data loaded from MusicBrainz and are "
 "processed before scripts, in the order of priority set when the plugin "
@@ -103,11 +103,11 @@ msgstr ""
 "sont traités avant les scripts, dans l'ordre de priorité défini lors de "
 "l'enregistrement du plugin."
 
-#: ../../extending/processing.rst:41
+#: ../../extending/processing.rst:35
 msgid "Scripts are processed in the order set in the Options menu."
 msgstr "Les scripts sont traités dans l'ordre défini dans le menu Options."
 
-#: ../../extending/processing.rst:45
+#: ../../extending/processing.rst:39
 msgid ""
 "Tagging scripts are always run against metadata loaded from MusicBrainz, "
 "and exactly after the data gets loaded and before files get matched. "
@@ -121,11 +121,11 @@ msgstr ""
 "de balisage n'ont pas accès aux métadonnées stockées dans les fichiers "
 "existants."
 
-#: ../../extending/processing.rst:50
+#: ../../extending/processing.rst:44
 msgid "Loading Music Files"
 msgstr "Chargement de fichiers musicaux"
 
-#: ../../extending/processing.rst:52
+#: ../../extending/processing.rst:46
 msgid ""
 "After a file has been loaded into Picard, plugins registered with "
 "``file_post_load_processor()`` are executed. This could, for example, be "
@@ -136,11 +136,11 @@ msgstr ""
 "exemple, être utilisé pour charger des données supplémentaires pour un "
 "fichier."
 
-#: ../../extending/processing.rst:56
+#: ../../extending/processing.rst:50
 msgid "Adding / Removing Files"
 msgstr "Ajout / suppression de fichiers"
 
-#: ../../extending/processing.rst:58
+#: ../../extending/processing.rst:52
 msgid ""
 "After a file has been added to a track (on the right-hand pane of "
 "Picard), plugins registered with "
@@ -150,7 +150,7 @@ msgstr ""
 "Picard), les plugins enregistrés avec "
 "``file_post_addition_to_track_processor()`` sont exécutés."
 
-#: ../../extending/processing.rst:61
+#: ../../extending/processing.rst:55
 msgid ""
 "After a file has been removed from a track (on the right-hand pane of "
 "Picard), plugins registered with "
@@ -160,11 +160,11 @@ msgstr ""
 "Picard), les plugins enregistrés avec "
 "``file_post_removal_from_track_processor()`` sont exécutés."
 
-#: ../../extending/processing.rst:65
+#: ../../extending/processing.rst:59
 msgid "Saving Files"
 msgstr "Sauvegarde des fichiers"
 
-#: ../../extending/processing.rst:67
+#: ../../extending/processing.rst:61
 msgid ""
 "When files are saved, for each file the File Naming Script is first "
 "executed to determine the destination path and file name. Note that this "
@@ -175,7 +175,7 @@ msgstr ""
 "destination et le nom du fichier. Notez que ce script n'a aucun effet "
 "sur les valeurs de balises écrites dans le fichier de sortie."
 
-#: ../../extending/processing.rst:71
+#: ../../extending/processing.rst:65
 msgid ""
 "After a file has been saved, plugins registered with "
 "``file_post_save_processor()`` are executed. This can, for example, be "
@@ -188,11 +188,11 @@ msgstr ""
 "fichier ou écrire des données supplémentaires. Notez que les métadonnées "
 "du fichier sont déjà les métadonnées nouvellement enregistrées."
 
-#: ../../extending/processing.rst:76
+#: ../../extending/processing.rst:70
 msgid "Removing Albums"
 msgstr "Suppression d'albums"
 
-#: ../../extending/processing.rst:78
+#: ../../extending/processing.rst:72
 msgid ""
 "After an album has been removed from Picard, plugins registered with "
 "``album_post_removal_processor()`` are executed."
@@ -200,11 +200,11 @@ msgstr ""
 "Après qu'un album a été supprimé de Picard, les plugins enregistrés avec "
 "``album_post_removal_processor()`` sont exécutés."
 
-#: ../../extending/processing.rst:82
+#: ../../extending/processing.rst:76
 msgid "Context Menus"
 msgstr "Menus contextuels"
 
-#: ../../extending/processing.rst:84
+#: ../../extending/processing.rst:78
 msgid ""
 "Individual tagging scripts can be executed on-demand from the context "
 "menu displayed when right-clicking on a file, album, track, cluster or "
@@ -213,3 +213,6 @@ msgstr ""
 "Les scripts de balisage individuels peuvent être exécutés à la demande à "
 "partir du menu contextuel affiché lors d'un clic droit sur un fichier, "
 "un album, une piste, un cluster ou une liste de cluster."
+
+#~ msgid "Processing Order"
+#~ msgstr "Commande en traitement"

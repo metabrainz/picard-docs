@@ -1,7 +1,4 @@
 .. MusicBrainz Picard Documentation Project
-.. Prepared in 2020 by Bob Swift (bswift@rsds.ca)
-.. This MusicBrainz Picard User Guide is licensed under CC0 1.0
-.. A copy of the license is available at https://creativecommons.org/publicdomain/zero/1.0
 
 $rreplace
 =========
@@ -15,7 +12,13 @@ Regular expression replace. This function will replace the matching group specif
 ``pattern`` with ``replace`` in ``text``.  For more information about regular expressions,
 please see the `article on Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_.
 
+.. note::
 
+   When entering regular expressions into Picard scripts you have to escape a backslash "\\",
+   dollar sign "$", comma "," and the left and right parentheses "(" and ")" in order to force
+   Picard to not interpret them as part of the script command.  This is done by inserting
+   a backslash before the character to be escaped.  For example, the regular expression
+   ``^\s*([0-9,\.]*)$`` would have to be entered as ``^\\s*\([0-9\,\\.]*\)\$``.
 
 **Example:**
 

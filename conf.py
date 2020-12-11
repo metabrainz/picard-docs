@@ -4,6 +4,8 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+# pylint: disable=missing-module-docstring
+
 
 # -- Path setup --------------------------------------------------------------
 
@@ -15,6 +17,7 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 import datetime
+import re
 
 # import sphinx_rtd_theme
 # import picard_theme
@@ -25,23 +28,16 @@ copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this
 # -- Project information -----------------------------------------------------
 
 project = 'MusicBrainz Picard'
-# copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
-copyright = 'This documentation is licensed under CC0 1.0.'
+
+# The full version, including alpha/beta/rc tags (must start with a 'v' and not contain any spaces)
+version = 'v2.5.2'
+
 author = 'Bob Swift'
+# copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
+copyright = 'This documentation is licensed under CC0 1.0.'     # pylint: disable=redefined-builtin
 
-# The full version, including alpha/beta/rc tags
-release = 'v2.5'
-release_list = [
-    'v2.3.2',
-    'v2.4',
-    'v2.4.1',
-    'v2.4.2',
-    'v2.4.4',
-    'v2.5',
-]
-version = release
+# -- Language information ----------------------------------------------------
 
-# Language information
 default_language = 'en'
 supported_languages = [
     ('en', 'English'),
@@ -49,6 +45,11 @@ supported_languages = [
     # ('de', 'Deutsche'),
     # ('es', 'Española'),
 ]
+
+# -- Base file name for PDF and EPUB files -----------------------------------
+
+base_filename = 'musicbrainzpicard'
+
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
@@ -123,14 +124,17 @@ html_static_path = ['_static']
 
 html_js_files = ['/version_links.js']
 
+# Major.minor portion of the version number used for naming the download files
+major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
+
 html_context = {
     'extra_css_files': [
         '_static/css/extra.css',
     ],
     'default_language': default_language,
     'supported_languages': supported_languages,
-    'release': release,
-    'releases': release_list,
+    'major_minor': major_minor,
+    'release': version,
 }
 
 html_favicon = '_static/picard-icon.png'
@@ -140,10 +144,12 @@ html_copy_source = False
 
 # -- Options for LaTeX / PDF output ------------------------------------------
 
+release = version   # For display on cover of PDF document
+
 latex_documents = [
-    ('pdf', 'musicbrainzpicard.tex', 'MusicBrainz Picard', '', 'manual', False),
-    # ('pdf', 'musicbrainzpicard.tex', 'MusicBrainz Picard', 'Edited by Bob Swift', 'manual', False),
-    # ('pdf', 'musicbrainzpicard.tex', 'MusicBrainz Picard', '', 'howto', False),
+    ('pdf', '{0}.tex'.format(base_filename), project, '', 'manual', False),
+    # ('pdf', '{0}.tex'.format(base_filename), project, 'Edited by Bob Swift', 'manual', False),
+    # ('pdf', '{0}.tex'.format(base_filename), project, '', 'howto', False),
 ]
 
 # latex_toplevel_sectioning = 'part'
@@ -171,7 +177,7 @@ latex_domain_indices = True
 
 # -- Options for epub output ------------------------------------------
 
-# epub_baseneme = 'musicbrainzpicard'
+epub_baseneme = base_filename
 
 epub_theme = 'epub'
 

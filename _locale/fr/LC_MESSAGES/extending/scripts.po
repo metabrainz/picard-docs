@@ -8,23 +8,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-07 16:14-0600\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:27-0700\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../extending/scripts.rst:7
-msgid "Scripts"
-msgstr "Les scripts"
+#: ../../extending/scripts.rst:4
+msgid ":index:`Scripts <scripts>`"
+msgstr ":index:`Scripts <scripts>`"
 
-#: ../../extending/scripts.rst:12
+#: ../../extending/scripts.rst:6
 msgid ""
 "There are two types of scripts used in Picard: the file naming script "
 "and tagging scripts. These are managed from the \"File Naming\" and "
@@ -47,11 +47,13 @@ msgstr ""
 "<https://community.metabrainz.org/t/repository-for-neat-file-name-string-"
 "patterns-and-tagger-script-snippets/2786/>`_."
 
-#: ../../extending/scripts.rst:19
-msgid "File Naming Script"
-msgstr "Script de dénomination de fichier"
+#: ../../extending/scripts.rst:13
+msgid ":index:`File Naming Script <pair: file naming; scripts>`"
+msgstr ""
+":index:`Script de dénomination de fichier <pair: nom de fichier; "
+"scripts>`"
 
-#: ../../extending/scripts.rst:24
+#: ../../extending/scripts.rst:15
 msgid ""
 "There is only one file naming script defined in a user’s settings, "
 "although it can vary from a simple one-line script such as ``%album%/"
@@ -66,7 +68,7 @@ msgstr ""
 "différents Critères. Dans tous les cas, les fichiers seront enregistrés "
 "en utilisant le texte sorti par le script."
 
-#: ../../extending/scripts.rst:30
+#: ../../extending/scripts.rst:21
 msgid ""
 "Any new tags set or tags modified by the file naming script will not be "
 "written to the output files' metadata."
@@ -75,11 +77,11 @@ msgstr ""
 "de dénomination de fichier ne seront pas écrites dans les métadonnées "
 "des fichiers de sortie."
 
-#: ../../extending/scripts.rst:34
-msgid "Tagging Scripts"
-msgstr "Balisage des scripts"
+#: ../../extending/scripts.rst:25
+msgid ":index:`Tagging Scripts <pair: tagging; scripts>`"
+msgstr ":index:`Scripts de balisage <pair: balisage; scripts>`"
 
-#: ../../extending/scripts.rst:39
+#: ../../extending/scripts.rst:27
 msgid ""
 "There can be multiple tagging scripts defined in a user’s settings. "
 "Individual scripts can be enabled or disabled, and the order of "
@@ -98,31 +100,31 @@ msgstr ""
 "sont activés (A et B) et qu'un album avec trois pistes est chargé, les "
 "scripts seront traités dans l'ordre suivant:"
 
-#: ../../extending/scripts.rst:45
+#: ../../extending/scripts.rst:33
 msgid "Script A Track 1;"
 msgstr "Script A Track 1;"
 
-#: ../../extending/scripts.rst:46
+#: ../../extending/scripts.rst:34
 msgid "Script A Track 2;"
 msgstr "Script A Track 2;"
 
-#: ../../extending/scripts.rst:47
+#: ../../extending/scripts.rst:35
 msgid "Script A Track 3;"
 msgstr "Script A Track 3;"
 
-#: ../../extending/scripts.rst:48
+#: ../../extending/scripts.rst:36
 msgid "Script B Track 1;"
 msgstr "Script B Track 1;"
 
-#: ../../extending/scripts.rst:49
+#: ../../extending/scripts.rst:37
 msgid "Script B Track 2;"
 msgstr "Script B Track 2;"
 
-#: ../../extending/scripts.rst:50
+#: ../../extending/scripts.rst:38
 msgid "Script B Track 3."
 msgstr "Script B Track 3."
 
-#: ../../extending/scripts.rst:52
+#: ../../extending/scripts.rst:40
 msgid ""
 "Metadata updates are not shared between tracks, so you cannot append "
 "data from one track to a tag in another track."
@@ -131,7 +133,7 @@ msgstr ""
 "vous ne pouvez donc pas ajouter de données d'une piste à une balise dans "
 "une autre piste."
 
-#: ../../extending/scripts.rst:55
+#: ../../extending/scripts.rst:43
 msgid ""
 "Any new tags set or tags modified by the tagging scripts will be written "
 "to the output files' metadata, unless the tag name begins with an "
@@ -149,7 +151,7 @@ msgstr ""
 "balisage sont exécutés une fois pour chaque piste dans les données, en "
 "utilisant les métadonnées de cette piste."
 
-#: ../../extending/scripts.rst:60
+#: ../../extending/scripts.rst:48
 msgid ""
 "Tagging scripts can also be run manually by right-clicking either an "
 "album or a track in the right-hand pane in Picard. If run from the album "
@@ -162,3 +164,12 @@ msgstr ""
 "script est exécuté pour chaque piste de l'album. S'il est exécuté à "
 "partir d'une piste individuelle, le script n'est exécuté que pour cette "
 "piste."
+
+#~ msgid "Scripts"
+#~ msgstr "Les scripts"
+
+#~ msgid "File Naming Script"
+#~ msgstr "Script de dénomination de fichier"
+
+#~ msgid "Tagging Scripts"
+#~ msgstr "Balisage des scripts"
