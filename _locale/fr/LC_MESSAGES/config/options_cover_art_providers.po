@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-18 17:04-0700\n"
-"PO-Revision-Date: 2020-11-19 15:59-0700\n"
+"POT-Creation-Date: 2020-12-12 15:19-0700\n"
+"PO-Revision-Date: 2020-12-12 15:23-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -80,34 +80,38 @@ msgstr ""
 "bonne solution de secours pour le fournisseur de Cover Art Archive."
 
 #: ../../config/options_cover_art_providers.rst:29
-msgid "**Allowed cover art URLs**"
-msgstr "**URL de couverture autorisées**"
+msgid "**Allowed Cover Art URLs**"
+msgstr "**URL de Couverture Autorisées**"
 
 #: ../../config/options_cover_art_providers.rst:31
 msgid ""
-"This will use images provided from approved third-party sites. See "
-"`Cover art whitelist <https://wiki.musicbrainz.org/History:Style/"
-"Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide for more "
-"information."
+"This will use images provided from approved third-party sites. The image "
+"location is stored as a URL relationship for the release within the "
+"MusicBrainz database, and only approved sites can be used for this "
+"relationship."
 msgstr ""
-"Cela utilisera des images fournies par des sites tiers approuvés. Voir "
-"`Liste blanche des couvertures <https://wiki.musicbrainz.org/History:"
-"Style/Relationships/URLs/Cover_art_whitelist>`_ dans le Guide de style "
-"pour plus d'informations."
+"Cela utilisera des images fournies par des sites tiers approuvés. "
+"L'emplacement de l'image est stocké en tant que relation URL pour la "
+"version dans la base de données MusicBrainz, et seuls les sites "
+"approuvés peuvent être utilisés pour cette relation."
 
-#: ../../config/options_cover_art_providers.rst:37
+#: ../../config/options_cover_art_providers.rst:36
 msgid ""
-"CD Baby and other whitelist sites are no longer being used by "
-"MusicBrainz for new Cover Art."
+"This relationship type is now deprecated in MusicBrainz, and is no "
+"longer used.    See `Cover art whitelist <https://wiki.musicbrainz.org/"
+"History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style "
+"Guide for more information."
 msgstr ""
-"CD Baby et d'autres sites de liste blanche ne sont plus utilisés par "
-"MusicBrainz pour la nouvelle pochette."
+"Ce type de relation est désormais obsolète dans MusicBrainz et n'est "
+"plus utilisé. Voir `Liste blanche des couvertures <https://wiki."
+"musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ "
+"dans le Guide de style pour plus d'informations."
 
-#: ../../config/options_cover_art_providers.rst:39
+#: ../../config/options_cover_art_providers.rst:40
 msgid "**Local Files**"
 msgstr "**Fichiers locaux**"
 
-#: ../../config/options_cover_art_providers.rst:41
+#: ../../config/options_cover_art_providers.rst:42
 msgid ""
 "Load cover art from local files. The file names to load can be "
 "configured in the :ref:`ref-local-files` provider options."
@@ -116,7 +120,7 @@ msgstr ""
 "charger peuvent être configurés dans les options du fournisseur :ref:"
 "`ref-local-files`."
 
-#: ../../config/options_cover_art_providers.rst:43
+#: ../../config/options_cover_art_providers.rst:44
 msgid ""
 "In addition to the built-in cover art providers described above, "
 "additional cover art providers can be installed as `plugins <https://"
@@ -126,7 +130,7 @@ msgstr ""
 "fournisseurs de couvertures supplémentaires peuvent être installés en "
 "tant que `plugins <https://picard.musicbrainz.org/plugins/>`_."
 
-#: ../../config/options_cover_art_providers.rst:46
+#: ../../config/options_cover_art_providers.rst:47
 msgid ""
 "**Amazon**: Amazon often has cover art when other sites don't, however "
 "while this art is almost always for the correct Artist and Album, it may "
@@ -143,7 +147,7 @@ msgstr ""
 "intégré à Picard 2.1.3 et aux versions antérieures. Pour les versions "
 "ultérieures, il doit être installé en tant que plugin séparé.*"
 
-#: ../../config/options_cover_art_providers.rst:51
+#: ../../config/options_cover_art_providers.rst:52
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, "
 "which focuses on cover art with high visual quality. This provider "
@@ -155,7 +159,7 @@ msgstr ""
 "fournisseur fournit un représentant de la pochette pour le groupe de "
 "versions et non pour la version individuelle."
 
-#: ../../config/options_cover_art_providers.rst:54
+#: ../../config/options_cover_art_providers.rst:55
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb."
 "com/>`_, which focuses on cover art with high visual quality. This "
@@ -172,3 +176,21 @@ msgstr ""
 
 #~ msgid "Cover Art Providers"
 #~ msgstr "Fournisseurs d'art de couverture"
+
+#~ msgid ""
+#~ "This will use images provided from approved third-party sites. See "
+#~ "`Cover art whitelist <https://wiki.musicbrainz.org/History:Style/"
+#~ "Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide for more "
+#~ "information."
+#~ msgstr ""
+#~ "Cela utilisera des images fournies par des sites tiers approuvés. "
+#~ "Voir `Liste blanche des couvertures <https://wiki.musicbrainz.org/"
+#~ "History:Style/Relationships/URLs/Cover_art_whitelist>`_ dans le Guide "
+#~ "de style pour plus d'informations."
+
+#~ msgid ""
+#~ "CD Baby and other whitelist sites are no longer being used by "
+#~ "MusicBrainz for new Cover Art."
+#~ msgstr ""
+#~ "CD Baby et d'autres sites de liste blanche ne sont plus utilisés par "
+#~ "MusicBrainz pour la nouvelle pochette."
