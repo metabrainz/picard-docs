@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-29 15:10-0700\n"
-"PO-Revision-Date: 2020-11-29 15:16-0700\n"
+"POT-Creation-Date: 2020-12-12 16:44-0700\n"
+"PO-Revision-Date: 2020-12-12 16:46-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -49,7 +49,27 @@ msgstr ""
 "`l'article sur Wikipedia <https://wikipedia.org/wiki/"
 "Regular_expression>`_."
 
-#: ../../functions/func_rsearch.rst:17
+#: ../../functions/func_rsearch.rst:15
+msgid ""
+"If a marked subexpression is defined using parentheses within the search "
+"pattern, only the pattern captured by the subexpression will be "
+"returned.  If more than one marked subexpression is defined and matched, "
+"only the pattern captured by the first subexpression will be returned. "
+"If more than one marked subexpression is defined and not all are "
+"matched, an empty string will be returned.  If no subexpression is "
+"specified, then the pattern captured by the whole search expression will "
+"be returned."
+msgstr ""
+"Si une sous-expression marquée est définie à l'aide de parenthèses dans "
+"le modèle de recherche, seul le modèle capturé par la sous-expression "
+"sera renvoyé. Si plus d'une sous-expression marquée est définie et mise "
+"en correspondance, seul le modèle capturé par la première sous-"
+"expression sera renvoyé. Si plus d'une sous-expression marquée est "
+"définie et que toutes ne correspondent pas, une chaîne vide sera "
+"renvoyée. Si aucune sous-expression n'est spécifiée, le modèle capturé "
+"par l'expression de recherche entière sera retourné."
+
+#: ../../functions/func_rsearch.rst:24
 msgid ""
 "When entering regular expressions into Picard scripts you have to escape "
 "a backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and "
@@ -68,10 +88,21 @@ msgstr ""
 "\\.]*)$`` devrait être saisie sous la forme ``^\\\\s*\\([0-9\\,\\\\.]*"
 "\\)\\$``."
 
-#: ../../functions/func_rsearch.rst:23
+#: ../../functions/func_rsearch.rst:30
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_rsearch.rst:25
+#: ../../functions/func_rsearch.rst:32
 msgid "The following statements will return the values indicated::"
 msgstr "Les instructions suivantes renverront les valeurs indiquées::"
+
+#~ msgid ""
+#~ "If a marked subexpression is defined using parentheses within the "
+#~ "search pattern, only the pattern captured by the subexpression will "
+#~ "be returned.  If no subexpression is specified, then the pattern "
+#~ "captured by the whole search expression will be returned."
+#~ msgstr ""
+#~ "Si une sous-expression marquée est définie à l'aide de parenthèses "
+#~ "dans le modèle de recherche, seul le modèle capturé par la sous-"
+#~ "expression sera renvoyé. Si aucune sous-expression n'est spécifiée, "
+#~ "le modèle capturé par l'expression de recherche entière sera retourné."
