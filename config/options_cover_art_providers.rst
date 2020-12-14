@@ -26,15 +26,16 @@ are queried. Picard will try the providers from top to bottom until an image is 
    care more about visual quality then having an exact representation of your release. It is also a good
    fallback for the Cover Art Archive provider.
 
-**Allowed cover art URLs**
+**Allowed Cover Art URLs**
 
-   This will use images provided from approved third-party sites. See `Cover art whitelist
-   <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide
-   for more information.
+   This will use images provided from approved third-party sites. The image location is stored as a URL relationship
+   for the release within the MusicBrainz database, and only approved sites can be used for this relationship.
 
    .. note::
 
-      CD Baby and other whitelist sites are no longer being used by MusicBrainz for new Cover Art.
+      This relationship type is now deprecated in MusicBrainz, and is no longer used.    See `Cover art whitelist
+      <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide
+      for more information.
 
 **Local Files**
 
