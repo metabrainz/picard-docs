@@ -245,6 +245,7 @@
 </div>
 <p><strong>La description:</strong></p>
 <p>Recherche d’expression régulière. Cette fonction renverra le premier groupe correspondant spécifié par <code class="docutils literal notranslate"><span class="pre">motif</span></code> à partir de <code class="docutils literal notranslate"><span class="pre">texte</span></code>. Pour plus d’informations sur les expressions régulières, veuillez consulter <a class="reference external" href="https://wikipedia.org/wiki/Regular_expression">l’article sur Wikipedia</a>.</p>
+<p>Si une sous-expression marquée est définie à l’aide de parenthèses dans le modèle de recherche, seul le modèle capturé par la sous-expression sera renvoyé. Si plus d’une sous-expression marquée est définie et mise en correspondance, seul le modèle capturé par la première sous-expression sera renvoyé. Si plus d’une sous-expression marquée est définie et que toutes ne correspondent pas, une chaîne vide sera renvoyée. Si aucune sous-expression n’est spécifiée, le modèle capturé par l’expression de recherche entière sera retourné.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Lors de la saisie d’expressions régulières dans des scripts Picard, vous devez échapper une barre oblique inverse « \ », un signe dollar « $ », une virgule « , » et les parenthèses gauche et droite « ( » et « ) » pour forcer Picard à ne pas les interpréter dans le cadre de la commande de script. Cela se fait en insérant une barre oblique inverse avant le caractère à échapper. Par exemple, l’expression régulière <code class="docutils literal notranslate"><span class="pre">^\s*([0-9,\.]*)$</span></code> devrait être saisie sous la forme <code class="docutils literal notranslate"><span class="pre">^\\s*\([0-9\,\\.]*\)\$</span></code>.</p>
@@ -254,6 +255,12 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$rsearch(test \(disc 1\),\\\(disc \(\\d+\)\\\))  ==&gt;  &quot;1&quot;
 $rsearch(test \(disc 1\),\\\(disc \\d+\\\))      ==&gt;  &quot;(disc 1)&quot;
 $rsearch(test,x)                                 ==&gt;  &quot;&quot;
+$rsearch(test,t)                                 ==&gt;  &quot;t&quot;
+$rsearch(test,s)                                 ==&gt;  &quot;s&quot;
+$rsearch(test,\(e\).*s)                          ==&gt;  &quot;e&quot;
+$rsearch(test,\(e\).*\(s\))                      ==&gt;  &quot;e&quot;
+$rsearch(test,\(e\).*x)                          ==&gt;  &quot;&quot;
+$rsearch(test,\(e\).*\(x\))                      ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

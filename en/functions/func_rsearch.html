@@ -246,6 +246,12 @@
 <p>Regular expression search. This function will return the first matching group specified by
 <code class="docutils literal notranslate"><span class="pre">pattern</span></code> from <code class="docutils literal notranslate"><span class="pre">text</span></code>.  For more information about regular expressions, please see the
 <a class="reference external" href="https://wikipedia.org/wiki/Regular_expression">article on Wikipedia</a>.</p>
+<p>If a marked subexpression is defined using parentheses within the search pattern, only the
+pattern captured by the subexpression will be returned.  If more than one marked subexpression
+is defined and matched, only the pattern captured by the first subexpression will be returned.
+If more than one marked subexpression is defined and not all are matched, an empty string will
+be returned.  If no subexpression is specified, then the pattern captured by the whole search
+expression will be returned.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When entering regular expressions into Picard scripts you have to escape a backslash “\”,
@@ -259,6 +265,12 @@ a backslash before the character to be escaped.  For example, the regular expres
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$rsearch(test \(disc 1\),\\\(disc \(\\d+\)\\\))  ==&gt;  &quot;1&quot;
 $rsearch(test \(disc 1\),\\\(disc \\d+\\\))      ==&gt;  &quot;(disc 1)&quot;
 $rsearch(test,x)                                 ==&gt;  &quot;&quot;
+$rsearch(test,t)                                 ==&gt;  &quot;t&quot;
+$rsearch(test,s)                                 ==&gt;  &quot;s&quot;
+$rsearch(test,\(e\).*s)                          ==&gt;  &quot;e&quot;
+$rsearch(test,\(e\).*\(s\))                      ==&gt;  &quot;e&quot;
+$rsearch(test,\(e\).*x)                          ==&gt;  &quot;&quot;
+$rsearch(test,\(e\).*\(x\))                      ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>
