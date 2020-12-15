@@ -100,7 +100,12 @@
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Download &amp; Install Picard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#linux-installing-with-flatpak">Linux: Installing with Flatpak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-picard-on-linux">Installing Picard on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-with-flatpak">Installing with Flatpak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-with-snap">Installing with Snap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-from-your-distribution-s-package-repository">Installing from your distribution’s package repository</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="screen_main.html">Main Screen</a></li>
@@ -216,10 +221,12 @@ but you don’t understand what the previous sentence said, then you have a bit 
 Website</a>.  This includes installers for all supported platforms as well as
 <a class="reference external" href="https://picard.musicbrainz.org/downloads/#source">release source code</a>. The very latest source code is also
 available at the <a class="reference external" href="https://github.com/musicbrainz/picard">GitHub repository</a>.</p>
-<div class="section" id="linux-installing-with-flatpak">
-<h2>Linux: <span class="target" id="index-1"></span>Installing with Flatpak<a class="headerlink" href="#linux-installing-with-flatpak" title="Permalink to this headline">¶</a></h2>
-<p>Picard is also available on Flathub. This version should work on all modern Linux distributions,
-as long Flatpak is installed.</p>
+<div class="section" id="installing-picard-on-linux">
+<h2>Installing Picard on Linux<a class="headerlink" href="#installing-picard-on-linux" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installing-with-flatpak">
+<h3><span class="target" id="index-1"></span>Installing with Flatpak<a class="headerlink" href="#installing-with-flatpak" title="Permalink to this headline">¶</a></h3>
+<p>Picard is available on Flathub. This version should work on all modern Linux distributions,
+as long as Flatpak is installed.</p>
 <p>First enable the Flathub repository:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 </pre></div>
@@ -227,6 +234,24 @@ as long Flatpak is installed.</p>
 <p>You can now install Picard:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>flatpak install flathub org.musicbrainz.Picard
 </pre></div>
+</div>
+</div>
+<div class="section" id="installing-with-snap">
+<h3><span class="target" id="index-2"></span>Installing with Snap<a class="headerlink" href="#installing-with-snap" title="Permalink to this headline">¶</a></h3>
+<p>Picard is available as a Snap from the Snap Store.  This version should work on all modern
+Linux distributions, as long as Snap is installed.</p>
+<p>If your Linux distributions supports it you can install Picard from your distribution’s software
+center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the command line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snap install picard
+</pre></div>
+</div>
+</div>
+<div class="section" id="installing-from-your-distribution-s-package-repository">
+<h3><span class="target" id="index-3"></span>Installing from your distribution’s package repository<a class="headerlink" href="#installing-from-your-distribution-s-package-repository" title="Permalink to this headline">¶</a></h3>
+<p>Picard is available in the package repositories of most distributions.  The <a class="reference external" href="https://picard.musicbrainz.org/downloads/#linux">download page</a> provides links to the packages for common Linux
+distributions.  Please refer to your distribution’s documentation for how to install software packages.</p>
+<p>Please note that most distributions usually ship older versions of Picard.  If you want to use
+the latest available version, as is recommended, install Picard as Flatpak or Snap as described above.</p>
 </div>
 </div>
 </div>
