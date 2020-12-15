@@ -20,11 +20,14 @@ Website <https://picard.musicbrainz.org/downloads/>`_.  This includes installers
 available at the `GitHub repository <https://github.com/musicbrainz/picard>`_.
 
 
-Linux: :index:`Installing with Flatpak <pair: install; flatpak>`
------------------------------------------------------------------
+Installing Picard on Linux
+--------------------------
 
-Picard is also available on Flathub. This version should work on all modern Linux distributions,
-as long Flatpak is installed.
+:index:`Installing with Flatpak <pair: install; flatpak>`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Picard is available on Flathub. This version should work on all modern Linux distributions,
+as long as Flatpak is installed.
 
 First enable the Flathub repository:
 
@@ -37,6 +40,32 @@ You can now install Picard:
 .. code-block:: bash
 
    flatpak install flathub org.musicbrainz.Picard
+
+
+:index:`Installing with Snap <pair: install; snap>`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Picard is available as a Snap from the Snap Store.  This version should work on all modern
+Linux distributions, as long as Snap is installed.
+
+If your Linux distributions supports it you can install Picard from your distribution's software
+center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the command line:
+
+
+.. code-block:: bash
+
+   snap install picard
+
+
+:index:`Installing from your distribution's package repository <pair: install; Linux package>`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Picard is available in the package repositories of most distributions.  The `download page
+<https://picard.musicbrainz.org/downloads/#linux>`_ provides links to the packages for common Linux
+distributions.  Please refer to your distribution's documentation for how to install software packages.
+
+Please note that most distributions usually ship older versions of Picard.  If you want to use
+the latest available version, as is recommended, install Picard as Flatpak or Snap as described above.
 
 .. raw:: latex
 
