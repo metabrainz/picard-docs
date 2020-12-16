@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.5.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-15 15:27-0700\n"
-"PO-Revision-Date: 2020-12-15 15:30-0700\n"
+"POT-Creation-Date: 2020-12-16 11:33-0700\n"
+"PO-Revision-Date: 2020-12-16 11:58-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -69,8 +69,7 @@ msgid ""
 "won't be able to disable or remove the plugins using Picard's 'Option' "
 "settings, you will need to remove them manually.  The plugins may be located "
 "in a ``plugins`` subdirectory of the directory where the Picard program file "
-"is stored, or in a user-specific directory.  On a Windows system, this would "
-"be ``C:\\Users\\{user}\\AppData\\Roaming\\MusicBrainz\\Picard\\plugins``."
+"is stored, or in a user-specific directory:"
 msgstr ""
 "Pour vérifier si l'un des fichiers du plugin est corrompu ou, dans le cas "
 "d'une mise à jour récente vers un plugin ou Picard, un plugin n'est pas "
@@ -78,12 +77,23 @@ msgstr ""
 "Picard. Étant donné que vous ne pourrez pas désactiver ou supprimer les "
 "plugins en utilisant les paramètres 'Option' de Picard, vous devrez les "
 "supprimer manuellement. Les plugins peuvent être situés dans un sous-"
-"répertoire ``plugins`` du répertoire où le fichier programme Picard est "
-"stocké, ou dans un répertoire spécifique à l'utilisateur. Sur un système "
-"Windows, ce serait ``C:\\Users\\{user}\\AppData\\Roaming\\MusicBrainz\\Picard"
-"\\plugins``."
+"répertoire ``plugins`` du répertoire où est stocké le fichier programme "
+"Picard, ou dans un répertoire spécifique à l'utilisateur:"
+
+#: ../../troubleshooting/does_not_start.rst:25
+msgid ""
+"*Windows*: ``C:\\Users\\{user}\\AppData\\Local\\MusicBrainz\\Picard\\plugins``"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:26
+msgid "*macOS*: ``~/Library/Preferences/MusicBrainz/Picard/plugins``"
+msgstr ""
 
 #: ../../troubleshooting/does_not_start.rst:27
+msgid "*Linux*: ``~/.config/MusicBrainz/Picard/plugins``"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:29
 msgid ""
 "Once you have located the plugin files, they should be removed from the "
 "``plugins`` directory and moved to a temporary directory.  Then try to start "
@@ -98,21 +108,18 @@ msgstr ""
 "répertoire temporaire un par un, et vérifier si Picard va démarrer. Cela "
 "aidera à identifier le plugin à l'origine du problème."
 
-#: ../../troubleshooting/does_not_start.rst:31
+#: ../../troubleshooting/does_not_start.rst:33
 msgid "**The option settings file has become corrupted or is incompatible**"
 msgstr "**Le fichier de paramètres d'options est corrompu ou est incompatible**"
 
-#: ../../troubleshooting/does_not_start.rst:33
+#: ../../troubleshooting/does_not_start.rst:35
 msgid ""
 "To check whether Picard's option settings file has become corrupted or, in "
 "the case of a recent upgrade to Picard, it is not compatible, you should try "
 "removing the settings file and then start Picard.  If Picard is started "
 "without finding its configuration settings file, it will create a new one "
 "using the default settings.  The settings file is called ``Picard.ini`` and "
-"can be found in a user-specific directory.  On a Windows system, this would "
-"be ``C:\\Users\\{user}\\AppData\\Roaming\\MusicBrainz``. Again, it is "
-"recommended that you move the file to a temporary directory so that it can be "
-"recovered if this turns out not to be the cause of the problem."
+"can be found in a user-specific directory:"
 msgstr ""
 "Pour vérifier si le fichier de paramètres d'options de Picard est corrompu "
 "ou, dans le cas d'une mise à niveau récente vers Picard, il n'est pas "
@@ -120,16 +127,34 @@ msgstr ""
 "démarrer Picard. Si Picard est démarré sans trouver son fichier de paramètres "
 "de configuration, il en créera un nouveau en utilisant les paramètres par "
 "défaut. Le fichier de paramètres s'appelle ``Picard.ini`` et se trouve dans "
-"un répertoire spécifique à l'utilisateur. Sur un système Windows, ce serait "
-"``C:\\Users\\{user}\\AppData\\Roaming\\MusicBrainz``. Encore une fois, il est "
-"recommandé de déplacer le fichier vers un répertoire temporaire afin qu'il "
-"puisse être récupéré si cela ne s'avère pas être la cause du problème."
+"un répertoire spécifique à l'utilisateur:"
+
+#: ../../troubleshooting/does_not_start.rst:40
+msgid "*Windows*: ``C:\\Users\\{user}\\AppData\\Roaming\\MusicBrainz``"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:41
+msgid "*macOS*: ``~/Library/Preferences/MusicBrainz``"
+msgstr ""
 
 #: ../../troubleshooting/does_not_start.rst:42
+msgid "*Linux*: ``~/.config/MusicBrainz``"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:44
+msgid ""
+"Again, it is recommended that you move the file to a temporary directory so "
+"that it can be recovered if this turns out not to be the cause of the problem."
+msgstr ""
+"Encore une fois, il est recommandé de déplacer le fichier vers un répertoire "
+"temporaire afin qu'il puisse être récupéré si cela ne s'avère pas être la "
+"cause du problème."
+
+#: ../../troubleshooting/does_not_start.rst:47
 msgid "**There really is a bug in Picard**"
 msgstr "**Il y a vraiment un bug en Picard**"
 
-#: ../../troubleshooting/does_not_start.rst:44
+#: ../../troubleshooting/does_not_start.rst:49
 msgid ""
 "If this problem started just after updating Picard, in spite of all the "
 "testing that is performed prior to releasing a new version, it may be "

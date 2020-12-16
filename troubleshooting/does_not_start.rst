@@ -20,9 +20,11 @@ don't provide any clues as to the problem, it may be one of the following:
    a plugin is not compatible, you should try removing all of the plugins and then start Picard.  Since you won't be able
    to disable or remove the plugins using Picard's 'Option' settings, you will need to remove them manually.  The plugins
    may be located in a ``plugins`` subdirectory of the directory where the Picard program file is stored, or in a user-specific
-   directory.  On a Windows system, this would be ``C:\Users\{user}\AppData\Roaming\MusicBrainz\Picard\plugins``.
+   directory:
 
-   .. Can we include locations for the other platforms?
+   - *Windows*: ``C:\Users\{user}\AppData\Local\MusicBrainz\Picard\plugins``
+   - *macOS*: ``~/Library/Preferences/MusicBrainz/Picard/plugins``
+   - *Linux*: ``~/.config/MusicBrainz/Picard/plugins``
 
    Once you have located the plugin files, they should be removed from the ``plugins`` directory and moved to a temporary
    directory.  Then try to start Picard.  If the program starts, you should try restoring the plugin files from your temporary
@@ -33,11 +35,14 @@ don't provide any clues as to the problem, it may be one of the following:
    To check whether Picard's option settings file has become corrupted or, in the case of a recent upgrade to Picard, it is
    not compatible, you should try removing the settings file and then start Picard.  If Picard is started without finding its
    configuration settings file, it will create a new one using the default settings.  The settings file is called ``Picard.ini``
-   and can be found in a user-specific directory.  On a Windows system, this would be ``C:\Users\{user}\AppData\Roaming\MusicBrainz``.
+   and can be found in a user-specific directory:
+
+   - *Windows*: ``C:\Users\{user}\AppData\Roaming\MusicBrainz``
+   - *macOS*: ``~/Library/Preferences/MusicBrainz``
+   - *Linux*: ``~/.config/MusicBrainz``
+
    Again, it is recommended that you move the file to a temporary directory so that it can be recovered if this turns out not
    to be the cause of the problem.
-
-   .. Can we include locations for the other platforms?
 
 **There really is a bug in Picard**
 
