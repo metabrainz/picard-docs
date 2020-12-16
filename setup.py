@@ -23,7 +23,7 @@ import conf
 import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.12'
+SCRIPT_VERS = '0.13'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -218,6 +218,7 @@ Commands:
    test flake8         Test python files with flake8
    test pylint         Test python files with pylint
    test isort          Check python files import sorting
+   test po             Rudimentary test of RST in *.po files
 
    info about          Information about the script
    info warranty       Warranty information about the script
@@ -373,6 +374,54 @@ class LintRST():
         return 1 if err > 0 else 0
 
 
+def check_rst_in_po():
+    """Rudimentary testing of restructured-text directives and roles in translation *.po files.
+    """
+    print("\nTesting restructured-text in *.po files.\n")
+    count = 0
+    warn = 0
+    bad_files = []
+    if os.path.isdir(SPHINX_.LOCALE_DIR):   # pylint: disable=too-many-nested-blocks
+        for dir_name, subdir_list, file_list in os.walk(SPHINX_.LOCALE_DIR):   # pylint: disable=unused-variable
+            for file_name in file_list:
+                if re.match(r'.*\.po$', file_name, re.IGNORECASE):
+                    count += 1
+                    filename = os.path.join(dir_name, file_name)
+                    print("{0}\r".format((filename + ' ' * 80)[0:79],), end='', flush=True)
+                    content = ''
+                    with open(filename, 'r', encoding='utf8') as f:
+                        content = f.read()
+                    check = bool(re.search(r"`[^`_]+`\s+_", content))
+                    if check:
+                        warn += 1
+                        bad_files.append('Link: ' + filename)
+                        break
+                    for item in IGNORE_DIRECTIVES:
+                        # if re.match(r"\.\.\s+" + item + r"\s+::", content):
+                        if re.match(r"\.\.\s+" + item + r"\s+::", content):
+                            warn += 1
+                            bad_files.append('Directive: ' + filename)
+                            check = True
+                            break
+                    if not check:
+                        for item in IGNORE_ROLES:
+                            if re.search(r":\s+" + item + r":", content) or \
+                               re.search(r":" + item + r"\s+:", content) or \
+                               re.search(r":" + item + r":\s+`", content):
+                                warn += 1
+                                bad_files.append('Role: ' + filename)
+                                check = True
+                                break
+        print(' ' * 79 + '\r', end='', flush=True)
+    print("Checked {0} files.  Found {1} files with issues to check.".format(count, warn))
+    if bad_files:
+        print("\nCheck the following files for errors:")
+        for filename in bad_files:
+            print("  {0}".format(filename,))
+    print()
+    exit_with_code(1 if warn else 0)
+
+
 def show_help():
     """Print the help screen.
     """
@@ -405,11 +454,12 @@ def parse_command_line():
     parser01.add_argument(
         'test_target',
         action='store',
-        choices=['rst', 'flake8', 'pylint', 'isort'],
+        choices=['rst', 'flake8', 'pylint', 'isort', 'po'],
         help="rst = lint check the rst files, "
              "flake8 = test python files with flake8, "
              "pylint = test python files with pylint, "
-             "isort = check python files import sorting"
+             "isort = check python files import sorting, "
+             "po = rudimentary test of RST in *.po files"
     )
 
     parser02 = subparsers.add_parser(
@@ -1040,6 +1090,9 @@ def main():
 
         elif args.test_target == 'isort':
             run_isort()
+
+        elif args.test_target == 'po':
+            check_rst_in_po()
 
         elif args.test_target == 'html':
             print('\nThat function is still under development.\n')
