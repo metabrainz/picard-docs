@@ -230,6 +230,16 @@ Optional Arguments:
 """.format(os.path.basename(os.path.realpath(__file__)))
 
 
+def exit_with_code(exit_code=0):
+    """Print and exit with the specified exit code.
+
+    Keyword Arguments:
+        exit_code {int} -- Exit code to use (default: 0)
+    """
+    print('Exit Code: {0}\n'.format(exit_code))
+    sys.exit(exit_code)
+
+
 ################################################
 #   Custom exceptions used within the script   #
 ################################################
@@ -374,52 +384,97 @@ class LintRST():
         return 1 if err > 0 else 0
 
 
-def check_rst_in_po():
-    """Rudimentary testing of restructured-text directives and roles in translation *.po files.
+##############################################################################
+
+class POCheck():
+    """Check for restructured text errors in the translation *.po files.
     """
-    print("\nTesting restructured-text in *.po files.\n")
-    count = 0
-    warn = 0
-    bad_files = []
-    if os.path.isdir(SPHINX_.LOCALE_DIR):   # pylint: disable=too-many-nested-blocks
-        for dir_name, subdir_list, file_list in os.walk(SPHINX_.LOCALE_DIR):   # pylint: disable=unused-variable
-            for file_name in file_list:
-                if re.match(r'.*\.po$', file_name, re.IGNORECASE):
-                    count += 1
-                    filename = os.path.join(dir_name, file_name)
-                    print("{0}\r".format((filename + ' ' * 80)[0:79],), end='', flush=True)
-                    content = ''
-                    with open(filename, 'r', encoding='utf8') as f:
-                        content = f.read()
-                    check = bool(re.search(r"`[^`_]+`\s+_", content))
-                    if check:
-                        warn += 1
-                        bad_files.append('Link: ' + filename)
-                        break
-                    for item in IGNORE_DIRECTIVES:
-                        # if re.match(r"\.\.\s+" + item + r"\s+::", content):
-                        if re.match(r"\.\.\s+" + item + r"\s+::", content):
-                            warn += 1
-                            bad_files.append('Directive: ' + filename)
-                            check = True
-                            break
-                    if not check:
-                        for item in IGNORE_ROLES:
-                            if re.search(r":\s+" + item + r":", content) or \
-                               re.search(r":" + item + r"\s+:", content) or \
-                               re.search(r":" + item + r":\s+`", content):
-                                warn += 1
-                                bad_files.append('Role: ' + filename)
-                                check = True
-                                break
-        print(' ' * 79 + '\r', end='', flush=True)
-    print("Checked {0} files.  Found {1} files with issues to check.".format(count, warn))
-    if bad_files:
-        print("\nCheck the following files for errors:")
-        for filename in bad_files:
-            print("  {0}".format(filename,))
-    print()
-    exit_with_code(1 if warn else 0)
+    def __init__(self):
+        """Provides an instance of the "POCheck" class.
+        """
+        self.warning_count = 0
+        self.file_count = 0
+        self.line_count = 0
+        self.bad_files = []
+
+    def get_lines(self, file_lines):
+        """Assemble the content into full lines for testing.
+
+        Args:
+            file_lines (list): List of the lines read from the *.po file
+
+        Returns:
+            dict: Dictionary of assembled lines by starting line number in the file.
+        """
+        tx_lines = {}
+        line_number = 0
+        build_line = False
+        temp_line_text = ''
+        temp_line_number = 0
+        for file_line in file_lines:
+            line_number += 1
+            if build_line:
+                if re.match(r'^".*"$', file_line):
+                    temp_line_text += file_line[1:-1]
+                else:
+                    tx_lines[temp_line_number] = temp_line_text
+                    build_line = False
+            if file_line and not build_line:
+                if re.match(r'^(msgid|msgstr)', file_line):
+                    temp_line_number = line_number
+                    temp_line_text = ''
+                    build_line = True
+        if build_line:  # Catch case where line ends on the last line of a msgstr entry
+            tx_lines[temp_line_number] = temp_line_text
+        self.line_count += len(tx_lines)
+        return tx_lines
+
+    def Check_line(self, filename, line_number, content):
+        """Check the line for restructured-text errors.
+
+        Args:
+            filename (str): Full path of the file being checked
+            line_number (int): Line number of the start of the assembled line
+            content (str): The assembled line to check
+        """
+        if re.search(r"`[^`_]+`\s+_", content):
+            self.warning_count += 1
+            self.bad_files.append('Link [L{0}]: {1}'.format(line_number, filename))
+            # return
+        for item in IGNORE_DIRECTIVES:
+            if re.match(r"\.\.\s+" + item + r"\s+::", content):
+                self.warning_count += 1
+                self.bad_files.append('Directive "{0}" [L{1}]: {2}'.format(item, line_number, filename))
+                # return
+        for item in IGNORE_ROLES:
+            if re.search(r":\s+" + item + r":", content) or re.search(r":" + item + r"\s+:", content) or re.search(r":" + item + r":\s+`", content):
+                self.warning_count += 1
+                self.bad_files.append('Role "{0}" [L{1}]: {2}'.format(item, line_number, filename))
+
+    def check(self, locale_dir):
+        """Check all translation *.po files in the specified directory and subdirectories.
+        """
+        print("\nTesting restructured-text in *.po files.\nStarting root directory: {0}\n".format(locale_dir,))
+        if os.path.isdir(locale_dir):
+            for dir_name, subdir_list, file_list in os.walk(locale_dir):   # pylint: disable=unused-variable
+                for file_name in file_list:
+                    if re.match(r'.*\.po$', file_name, re.IGNORECASE):
+                        self.file_count += 1
+                        filename = os.path.join(dir_name, file_name)
+                        print("{0}\r".format((filename + ' ' * 80)[0:79],), end='', flush=True)
+                        content = {}
+                        with open(filename, 'r', encoding='utf8') as f:
+                            content = self.get_lines(f.readlines())
+                        for key in sorted(content):
+                            self.Check_line(filename, key, content[key])
+            print(' ' * 79 + '\r', end='', flush=True)
+        print("Checked {0:,} lines in {1:,} files.  Found {2:,} issues to check.".format(self.line_count, self.file_count, self.warning_count))
+        if self.bad_files:
+            print("\nCheck the following for errors:")
+            for item in self.bad_files:
+                print("  {0}".format(item,))
+        print()
+        exit_with_code(1 if self.warning_count else 0)
 
 
 def show_help():
@@ -657,16 +712,6 @@ def clean_directory(dir_path, dir_name):
             exit_with_code(1)
     if not os.path.exists(dir_path):
         create_directory(dir_path=dir_path, dir_name=dir_name)
-
-
-def exit_with_code(exit_code=0):
-    """Print and exit with the specified exit code.
-
-    Keyword Arguments:
-        exit_code {int} -- Exit code to use (default: 0)
-    """
-    print('Exit Code: {0}\n'.format(exit_code))
-    sys.exit(exit_code)
 
 
 def remove_dir(dir_path):
@@ -1092,7 +1137,9 @@ def main():
             run_isort()
 
         elif args.test_target == 'po':
-            check_rst_in_po()
+            # check_rst_in_po()
+            checker = POCheck()
+            checker.check(SPHINX_.LOCALE_DIR)
 
         elif args.test_target == 'html':
             print('\nThat function is still under development.\n')
