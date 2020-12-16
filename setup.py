@@ -437,12 +437,12 @@ class POCheck():
             line_number (int): Line number of the start of the assembled line
             content (str): The assembled line to check
         """
-        if re.search(r"`[^`_]+`\s+_", content):
+        if re.search(r"`[^`_]+`\s+_", content) or re.search(r"`[^`']*'\s*_", content):
             self.warning_count += 1
             self.bad_files.append('Link [L{0}]: {1}'.format(line_number, filename))
             # return
         for item in IGNORE_DIRECTIVES:
-            if re.match(r"\.\.\s+" + item + r"\s+::", content):
+            if re.search(r"\.\.\s+" + item + r"\s+::", content):
                 self.warning_count += 1
                 self.bad_files.append('Directive "{0}" [L{1}]: {2}'.format(item, line_number, filename))
                 # return
