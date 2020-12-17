@@ -9,6 +9,7 @@ Troubleshooting
    :hidden:
 
    troubleshooting
+   does_not_start
    no_coverart
    missing_tags
    not_saving

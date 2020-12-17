@@ -69,6 +69,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :hidden:
 
    troubleshooting/troubleshooting
+   troubleshooting/does_not_start
    troubleshooting/no_coverart
    troubleshooting/missing_tags
    troubleshooting/not_saving

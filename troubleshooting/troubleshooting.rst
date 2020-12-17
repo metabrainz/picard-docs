@@ -57,6 +57,7 @@ Pasting this log into your forum post or bug ticket can help developers and othe
    .. seealso::
 
       Specific situations:
+      :doc:`does_not_start` /
       :doc:`no_coverart` /
       :doc:`missing_tags` /
       :doc:`not_saving` /
