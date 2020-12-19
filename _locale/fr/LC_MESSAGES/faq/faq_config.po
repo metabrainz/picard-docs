@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-18 17:04-0700\n"
-"PO-Revision-Date: 2020-11-19 16:30-0700\n"
+"POT-Creation-Date: 2020-12-18 15:53-0700\n"
+"PO-Revision-Date: 2020-12-18 16:06-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -22,139 +22,76 @@ msgstr ""
 
 #: ../../faq/faq_config.rst:4
 msgid ":index:`Configuration <configuration; config file location>`"
-msgstr ""
-":index:`Configuration <configuration; emplacement du fichier de configuration>`"
+msgstr ":index:`Configuration <configuration; emplacement du fichier de configuration>`"
 
-#: ../../faq/faq_config.rst:6
-msgid "**Where is the Picard configuration saved?**"
-msgstr "**Où est enregistrée la configuration Picard?**"
+#: ../../faq/faq_config.rst:7
+msgid "Where is the Picard :index:`configuration <configuration; file>` saved?"
+msgstr "Où est le Picard :index:`configuration <configuration; fichier>` enregistré?"
 
-#: ../../faq/faq_config.rst:8
-msgid ""
-"Picard saves the configuration in the file ``Picard.ini``. Its location depends "
-"on the operating system:"
-msgstr ""
-"Picard enregistre la configuration dans le fichier ``Picard.ini``. Son "
-"emplacement dépend du système d'exploitation:"
+#: ../../faq/faq_config.rst:9
+msgid "Picard saves the configuration in the file ``Picard.ini``. Its location depends on the operating system:"
+msgstr "Picard enregistre la configuration dans le fichier ``Picard.ini``. Son emplacement dépend du système d'exploitation:"
 
-#: ../../faq/faq_config.rst:10
+#: ../../faq/faq_config.rst:11
 msgid "**Windows:**"
 msgstr "**Windows:**"
 
-#: ../../faq/faq_config.rst:12
+#: ../../faq/faq_config.rst:13
 msgid "``%APPDATA%\\MusicBrainz\\Picard.ini``"
 msgstr "``%APPDATA%\\MusicBrainz\\Picard.ini``"
 
-#: ../../faq/faq_config.rst:14
-msgid ""
-"This usually will be ``C:\\Users\\YourUserName\\AppData\\Roaming"
-"\\MusicBrainz``, where ``YourUserName`` should be replaced with your actual "
-"Windows user name."
-msgstr ""
-"Ce sera généralement ``C:\\Users\\YourUserName\\AppData\\Roaming"
-"\\MusicBrainz``, où ``YourUserName`` doit être remplacé par votre nom "
-"d'utilisateur Windows actuel."
+#: ../../faq/faq_config.rst:15
+msgid "This usually will be ``C:\\Users\\YourUserName\\AppData\\Roaming\\MusicBrainz``, where ``YourUserName`` should be replaced with your actual Windows user name."
+msgstr "Ce sera généralement ``C:\\Users\\YourUserName\\AppData\\Roaming\\MusicBrainz``, où ``YourUserName`` doit être remplacé par votre nom d'utilisateur Windows actuel."
 
-#: ../../faq/faq_config.rst:17
+#: ../../faq/faq_config.rst:18
 msgid "**macOS, Linux and other Unix like systems:**"
 msgstr "**macOS, Linux et autres systèmes de type Unix:**"
 
-#: ../../faq/faq_config.rst:19
+#: ../../faq/faq_config.rst:20
 msgid "``$HOME/.config/MusicBrainz/Picard.ini``"
 msgstr "``$HOME/.config/MusicBrainz/Picard.ini``"
 
-#: ../../faq/faq_config.rst:21
-msgid "**I tagged a file in Picard, but iTunes is not seeing the tags!**"
-msgstr "**J'ai tagué un fichier en Picard, mais iTunes ne voit pas les tags!**"
-
-#: ../../faq/faq_config.rst:23
-msgid ""
-"First, you need to force :index:`iTunes <itunes>` to re-read the information "
-"from your tags and update its library. This is discussed in the `iTunes Guide "
-"<https://musicbrainz.org/doc/iTunes_Guide>`_."
-msgstr ""
-"Tout d'abord, vous devez forcer :index:`iTunes <itunes>` à relire les "
-"informations de vos balises et à mettre à jour sa bibliothèque. Ceci est "
-"discuté dans le `iTunes Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
+#: ../../faq/faq_config.rst:24
+msgid "I tagged a file in Picard, but :index:`iTunes <itunes; tags, tagging; itunes>` is not seeing the tags!"
+msgstr "J'ai marqué un fichier en Picard, mais :index:`iTunes <itunes; étiquettes, marquage; itunes>` ne voit pas les balises!"
 
 #: ../../faq/faq_config.rst:26
-msgid ""
-"Additionally, iTunes has a known bug in its ID3v2.4 implementation, which makes "
-"it unable to read such tags if they also contain embedded cover art. As a work-"
-"around, you can configure Picard to write ID3v2.3 tags."
-msgstr ""
-"De plus, iTunes a un bogue connu dans son implémentation ID3v2.4, qui le rend "
-"incapable de lire ces balises si elles contiennent également uart de couverture "
-"intégrée. Pour contourner le problème, vous pouvez configurer Picard pour "
-"écrire des balises ID3v2.3."
+msgid "First, you need to force :index:`iTunes <itunes>` to re-read the information from your tags and update its library. This is discussed in the `iTunes Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
+msgstr "Tout d'abord, vous devez forcer :index:`iTunes <itunes>` à relire les informations de vos balises et à mettre à jour sa bibliothèque. Ceci est discuté dans le `iTunes Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
 
 #: ../../faq/faq_config.rst:29
-msgid "**My tags are truncated to 30 characters in Windows Media Player!**"
-msgstr "**Mes balises sont tronquées à 30 caractères dans Windows Media Player!**"
+msgid "Additionally, iTunes has a known bug in its ID3v2.4 implementation, which makes it unable to read such tags if they also contain embedded cover art. As a work-around, you can configure Picard to write ID3v2.3 tags."
+msgstr "De plus, iTunes a un bogue connu dans son implémentation ID3v2.4, qui le rend incapable de lire ces balises si elles contiennent également uart de couverture intégrée. Pour contourner le problème, vous pouvez configurer Picard pour écrire des balises ID3v2.3."
 
-#: ../../faq/faq_config.rst:31
-msgid ""
-"Prior to version 0.14, Picard's default settings were to write ID3v2.4 and "
-"ID3v1 tags to files. WMP can't read ID3v2.4, so it falls back to ID3v1 which "
-"has a limitation of 30 characters per title. To solve this on versions prior to "
-"0.14, configure Picard to write ID3v2.3 tags instead."
-msgstr ""
-"Avant la version 0.14, les paramètres par défaut de Picard étaient d'écrire les "
-"balises ID3v2.4 et ID3v1 dans les fichiers. WMP ne peut pas lire ID3v2.4, il "
-"revient donc à ID3v1 qui a une limitation de 30 caractères par titre. Pour "
-"résoudre ce problème sur les versions antérieures à 0.14, configurez Picard "
-"pour qu'il écrive des balises ID3v2.3 à la place."
+#: ../../faq/faq_config.rst:34
+msgid "My tags are :index:`truncated <tags; truncated, WMP; tags>` to 30 characters in Windows Media Player!"
+msgstr "Mes balises sont :index:`truncated <tags; tronqué, WMP; balises>` à 30 caractères dans Windows Media Player!"
 
-#: ../../faq/faq_config.rst:35
-msgid ""
-"Starting with version 0.14, the default settings have been changed to ID3v2.3 "
-"and this should no longer be an issue."
-msgstr ""
-"À partir de la version 0.14, les paramètres par défaut ont été modifiés en "
-"ID3v2.3 et cela ne devrait plus être un problème."
+#: ../../faq/faq_config.rst:36
+msgid "Prior to version 0.14, Picard's default settings were to write ID3v2.4 and ID3v1 tags to files. WMP can't read ID3v2.4, so it falls back to ID3v1 which has a limitation of 30 characters per title. To solve this on versions prior to 0.14, configure Picard to write ID3v2.3 tags instead."
+msgstr "Avant la version 0.14, les paramètres par défaut de Picard étaient d'écrire les balises ID3v2.4 et ID3v1 dans les fichiers. WMP ne peut pas lire ID3v2.4, il revient donc à ID3v1 qui a une limitation de 30 caractères par titre. Pour résoudre ce problème sur les versions antérieures à 0.14, configurez Picard pour qu'il écrive des balises ID3v2.3 à la place."
 
-#: ../../faq/faq_config.rst:37
-msgid "**How do I tell Picard which browser to use?**"
-msgstr "**Comment indiquer à Picard quel navigateur utiliser?**"
+#: ../../faq/faq_config.rst:40
+msgid "Starting with version 0.14, the default settings have been changed to ID3v2.3 and this should no longer be an issue."
+msgstr "À partir de la version 0.14, les paramètres par défaut ont été modifiés en ID3v2.3 et cela ne devrait plus être un problème."
 
-#: ../../faq/faq_config.rst:39
-msgid ""
-"On Windows, macOS, GNOME and KDE, Picard uses the :index:`default browser "
-"<pair: configuration; browser>` that has been configured for the system. On "
-"other systems, you can use the ``BROWSER`` environment variable."
-msgstr ""
-"Sous Windows, macOS, GNOME et KDE, Picard utilise le :index:`navigateur par "
-"défaut <pair: configuration; navigateur>` qui a été configuré pour le système. "
-"Sur d'autres systèmes, vous pouvez utiliser la variable d'environnement "
-"``BROWSER``."
+#: ../../faq/faq_config.rst:44
+msgid "How do I tell Picard which :index:`browser <pair: configuration; browser>` to use?"
+msgstr "Comment dire à Picard quel :index:`navigateur <paire: configuration; navigateur>` utiliser?"
 
-#: ../../faq/faq_config.rst:42
+#: ../../faq/faq_config.rst:46
+msgid "On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can use the ``BROWSER`` environment variable."
+msgstr "Sous Windows, macOS, GNOME et KDE, Picard utilise le navigateur par défaut qui a été configuré pour le système. Sur d'autres systèmes, vous pouvez utiliser la variable d'environnement ``BROWSER``."
+
+#: ../../faq/faq_config.rst:49
 msgid "For example::"
 msgstr "Par exemple::"
 
-#: ../../faq/faq_config.rst:46
-msgid ""
-"Another approach that works in some GNU/Linux systems is the following command::"
-msgstr ""
-"Une autre approche qui fonctionne dans certains systèmes GNU / Linux est la "
-"commande suivante::"
+#: ../../faq/faq_config.rst:53
+msgid "Another approach that works in some GNU/Linux systems is the following command::"
+msgstr "Une autre approche qui fonctionne dans certains systèmes GNU / Linux est la commande suivante::"
 
-#: ../../faq/faq_config.rst:50
-msgid ""
-"This should present you with a list of existing browsers in your system, "
-"allowing you to select the one to use by default."
-msgstr ""
-"Cela devrait vous présenter une liste des navigateurs existants dans votre "
-"système, vous permettant de sélectionner celui à utiliser par défaut."
-
-#~ msgid "Configuration"
-#~ msgstr "Configuration"
-
-#~ msgid ""
-#~ "On Windows, macOS, GNOME and KDE, Picard uses the default browser that has "
-#~ "been configured for the system. On other systems, you can use the "
-#~ "``BROWSER`` environment variable."
-#~ msgstr ""
-#~ "Sous Windows, macOS, GNOME et KDE, Picard utilise le navigateur par défaut "
-#~ "qui a été configuré pour le système. Sur d'autres systèmes, vous pouvez "
-#~ "utiliser la variable d'environnement ``BROWSER``."
+#: ../../faq/faq_config.rst:57
+msgid "This should present you with a list of existing browsers in your system, allowing you to select the one to use by default."
+msgstr "Cela devrait vous présenter une liste des navigateurs existants dans votre système, vous permettant de sélectionner celui à utiliser par défaut."
