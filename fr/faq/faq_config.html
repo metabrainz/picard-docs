@@ -116,7 +116,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="faq.html">Questions fréquemment posées</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="faq_usage.html">Utiliser Picard</a></li>
 <li class="toctree-l2"><a class="reference internal" href="faq_file_formats.html">Formats de fichiers</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#where-is-the-picard-configuration-saved">Où est le Picard configuration enregistré?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-tagged-a-file-in-picard-but-itunes-is-not-seeing-the-tags">J’ai marqué un fichier en Picard, mais iTunes ne voit pas les balises!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#my-tags-are-truncated-to-30-characters-in-windows-media-player">Mes balises sont truncated à 30 caractères dans Windows Media Player!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-tell-picard-which-browser-to-use">Comment dire à Picard quel navigateur utiliser?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -143,6 +149,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Indice</a></li>
 </ul>
 
             
@@ -209,10 +219,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="configuration">
-<h1><span class="target" id="index-6"></span>Configuration<a class="headerlink" href="#configuration" title="Lien permanent vers ce titre">¶</a></h1>
-<p><strong>Où est enregistrée la configuration Picard?</strong></p>
-<blockquote>
-<div><p>Picard enregistre la configuration dans le fichier <code class="docutils literal notranslate"><span class="pre">Picard.ini</span></code>. Son emplacement dépend du système d’exploitation:</p>
+<h1><span class="target" id="index-12"></span>Configuration<a class="headerlink" href="#configuration" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="where-is-the-picard-configuration-saved">
+<h2>Où est le Picard <span class="target" id="index-7"></span>configuration enregistré?<a class="headerlink" href="#where-is-the-picard-configuration-saved" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Picard enregistre la configuration dans le fichier <code class="docutils literal notranslate"><span class="pre">Picard.ini</span></code>. Son emplacement dépend du système d’exploitation:</p>
 <p><strong>Windows:</strong></p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">%APPDATA%\MusicBrainz\Picard.ini</span></code></p>
@@ -222,20 +232,20 @@
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">$HOME/.config/MusicBrainz/Picard.ini</span></code></p>
 </div></blockquote>
-</div></blockquote>
-<p><strong>J’ai tagué un fichier en Picard, mais iTunes ne voit pas les tags!</strong></p>
-<blockquote>
-<div><p>Tout d’abord, vous devez forcer <span class="target" id="index-7"></span>iTunes à relire les informations de vos balises et à mettre à jour sa bibliothèque. Ceci est discuté dans le <a class="reference external" href="https://musicbrainz.org/doc/iTunes_Guide">iTunes Guide</a>.</p>
+</div>
+<div class="section" id="i-tagged-a-file-in-picard-but-itunes-is-not-seeing-the-tags">
+<h2>J’ai marqué un fichier en Picard, mais <span class="target" id="index-8"></span>iTunes ne voit pas les balises!<a class="headerlink" href="#i-tagged-a-file-in-picard-but-itunes-is-not-seeing-the-tags" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Tout d’abord, vous devez forcer <span class="target" id="index-13"></span>iTunes à relire les informations de vos balises et à mettre à jour sa bibliothèque. Ceci est discuté dans le <a class="reference external" href="https://musicbrainz.org/doc/iTunes_Guide">iTunes Guide</a>.</p>
 <p>De plus, iTunes a un bogue connu dans son implémentation ID3v2.4, qui le rend incapable de lire ces balises si elles contiennent également uart de couverture intégrée. Pour contourner le problème, vous pouvez configurer Picard pour écrire des balises ID3v2.3.</p>
-</div></blockquote>
-<p><strong>Mes balises sont tronquées à 30 caractères dans Windows Media Player!</strong></p>
-<blockquote>
-<div><p>Avant la version 0.14, les paramètres par défaut de Picard étaient d’écrire les balises ID3v2.4 et ID3v1 dans les fichiers. WMP ne peut pas lire ID3v2.4, il revient donc à ID3v1 qui a une limitation de 30 caractères par titre. Pour résoudre ce problème sur les versions antérieures à 0.14, configurez Picard pour qu’il écrive des balises ID3v2.3 à la place.</p>
+</div>
+<div class="section" id="my-tags-are-truncated-to-30-characters-in-windows-media-player">
+<h2>Mes balises sont <span class="target" id="index-10"></span>truncated à 30 caractères dans Windows Media Player!<a class="headerlink" href="#my-tags-are-truncated-to-30-characters-in-windows-media-player" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Avant la version 0.14, les paramètres par défaut de Picard étaient d’écrire les balises ID3v2.4 et ID3v1 dans les fichiers. WMP ne peut pas lire ID3v2.4, il revient donc à ID3v1 qui a une limitation de 30 caractères par titre. Pour résoudre ce problème sur les versions antérieures à 0.14, configurez Picard pour qu’il écrive des balises ID3v2.3 à la place.</p>
 <p>À partir de la version 0.14, les paramètres par défaut ont été modifiés en ID3v2.3 et cela ne devrait plus être un problème.</p>
-</div></blockquote>
-<p><strong>Comment indiquer à Picard quel navigateur utiliser?</strong></p>
-<blockquote>
-<div><p>Sous Windows, macOS, GNOME et KDE, Picard utilise le <span class="target" id="index-8"></span>navigateur par défaut qui a été configuré pour le système. Sur d’autres systèmes, vous pouvez utiliser la variable d’environnement <code class="docutils literal notranslate"><span class="pre">BROWSER</span></code>.</p>
+</div>
+<div class="section" id="how-do-i-tell-picard-which-browser-to-use">
+<h2>Comment dire à Picard quel <span class="target" id="index-11"></span>navigateur utiliser?<a class="headerlink" href="#how-do-i-tell-picard-which-browser-to-use" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Sous Windows, macOS, GNOME et KDE, Picard utilise le navigateur par défaut qui a été configuré pour le système. Sur d’autres systèmes, vous pouvez utiliser la variable d’environnement <code class="docutils literal notranslate"><span class="pre">BROWSER</span></code>.</p>
 <p>Par exemple:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">BROWSER</span><span class="o">=</span><span class="s2">&quot;firefox &#39;</span><span class="si">%s</span><span class="s2">&#39; &amp;&quot;</span>
 </pre></div>
@@ -245,7 +255,7 @@
 </pre></div>
 </div>
 <p>Cela devrait vous présenter une liste des navigateurs existants dans votre système, vous permettant de sélectionner celui à utiliser par défaut.</p>
-</div></blockquote>
+</div>
 </div>
 
 

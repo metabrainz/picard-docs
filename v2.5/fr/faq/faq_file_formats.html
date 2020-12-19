@@ -115,7 +115,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="faq.html">Questions fréquemment posées</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="faq_usage.html">Utiliser Picard</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Formats de fichiers</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Formats de fichiers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-formats-does-picard-support">Quels formats Picard prend-il en charge?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-formats-will-picard-support">Quels formats Picard prend-il en charge?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#which-tags-can-picard-write-to-my-files">Quelles balises Picard peut-il écrire dans mes fichiers?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-i-edit-several-tags-at-once-why-is-it-not-easier-do-so">Comment modifier plusieurs balises à la fois? Pourquoi n’est-ce pas plus facile de le faire?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-il en charge?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">J’utilise Fedora. Pourquoi la prise d’empreintes acoustique ne fonctionne-t-elle pas?</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="faq_config.html">Configuration</a></li>
 </ul>
 </li>
@@ -143,6 +151,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Indice</a></li>
 </ul>
 
             
@@ -210,9 +222,9 @@
             
   <div class="section" id="file-formats">
 <h1><span class="target" id="index-4"></span>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien permanent vers ce titre">¶</a></h1>
-<p><strong>Quels formats Picard prend-il en charge?</strong></p>
-<blockquote>
-<div><p>Picard prend en charge les formats de fichiers suivants:</p>
+<div class="section" id="what-formats-does-picard-support">
+<h2>Quels formats Picard prend-il en charge?<a class="headerlink" href="#what-formats-does-picard-support" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Picard prend en charge les formats de fichiers suivants:</p>
 <ul class="simple">
 <li><p>MPEG-1 Audio (.mp3, .mp2, .m2a)</p></li>
 <li><p>MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .mp4)</p></li>
@@ -241,18 +253,18 @@
 <p class="admonition-title">Note</p>
 <p>Les fichiers WAVE n’ont pas de norme pour un marquage approprié. Picard utilise des balises ID3v2 pour baliser les fichiers WAVE, mais cela n’est pas pris en charge par tous les logiciels. Pour assurer la compatibilité avec un logiciel qui ne prend pas en charge les balises ID3v2 dans les fichiers WAVE, des balises RIFF INFO supplémentaires peuvent être écrites dans les fichiers. RIFF INFO n’a qu’une prise en charge limitée des balises et des encodages de caractères.</p>
 </div>
-</div></blockquote>
-<p><strong>Quels formats Picard prend-il en charge?</strong></p>
-<blockquote>
-<div><p>Picard est destiné à prendre en charge à terme tous les formats (y compris les empreintes digitales), mais il s’agit d’un processus complexe (sans doute sans fin), et prendra un certain temps.</p>
-</div></blockquote>
-<p><strong>Quelles balises Picard peut-il écrire dans mes fichiers?</strong></p>
-<blockquote>
-<div><p>Voir la section <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a> pour plus d’informations sur les champs MusicBrainz que Picard écrit dans les balises. <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mapping</a> contient des informations plus techniques sur la manière dont ils sont davantage mappés dans chaque format de tag.</p>
-</div></blockquote>
-<p><strong>Comment modifier plusieurs balises à la fois? Pourquoi n’est-ce pas plus facile de le faire?</strong></p>
-<blockquote>
-<div><p>Veuillez comprendre que Picard n’est pas conçu comme un <span class="target" id="index-8"></span>éditeur de balises à usage général. Son objectif principal est de récupérer les données MusicBrainz maintenues par la communauté pour les écrire dans vos balises. Certains objectifs secondaires comprennent:</p>
+</div>
+<div class="section" id="what-formats-will-picard-support">
+<h2>Quels formats Picard prend-il en charge?<a class="headerlink" href="#what-formats-will-picard-support" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Picard est destiné à prendre en charge à terme tous les formats (y compris les empreintes digitales), mais il s’agit d’un processus complexe (sans doute sans fin), et prendra un certain temps.</p>
+</div>
+<div class="section" id="which-tags-can-picard-write-to-my-files">
+<h2>Quelles balises Picard peut-il écrire dans mes fichiers?<a class="headerlink" href="#which-tags-can-picard-write-to-my-files" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Voir la section <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a> pour plus d’informations sur les champs MusicBrainz que Picard écrit dans les balises. <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mapping</a> contient des informations plus techniques sur la manière dont ils sont davantage mappés dans chaque format de tag.</p>
+</div>
+<div class="section" id="how-to-i-edit-several-tags-at-once-why-is-it-not-easier-do-so">
+<h2>Comment modifier plusieurs balises à la fois? Pourquoi n’est-ce pas plus facile de le faire?<a class="headerlink" href="#how-to-i-edit-several-tags-at-once-why-is-it-not-easier-do-so" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Veuillez comprendre que Picard n’est pas conçu comme un <span class="target" id="index-8"></span>éditeur de balises à usage général. Son objectif principal est de récupérer les données MusicBrainz maintenues par la communauté pour les écrire dans vos balises. Certains objectifs secondaires comprennent:</p>
 <ul class="simple">
 <li><p>autoriser la personnalisation basée sur des règles de ces données à l’aide de scripts et de plugins</p></li>
 <li><p>encourager les utilisateurs à créer un compte et à corriger et mettre à jour les données via le site Web MusicBrainz, partageant ainsi leur travail avec le reste de la communauté plutôt que de simplement réparer leurs tags localement.</p></li>
@@ -266,10 +278,10 @@
 <li><p>En quittant la boîte de dialogue, vous avez modifié les balises en mémoire. Vous devez cliquer sur Enregistrer pour conserver ces modifications dans vos fichiers.</p></li>
 </ol>
 <p>Ce processus devrait fonctionner dans les deux volets.</p>
-</div></blockquote>
-<p><strong>Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-il en charge?</strong></p>
-<blockquote>
-<div><p>Les formats pris en charge par le <span class="target" id="index-9"></span>lecteur audio intégré dépendent des formats pris en charge par votre système d’exploitation.</p>
+</div>
+<div class="section" id="the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">
+<h2>Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-il en charge?<a class="headerlink" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les formats pris en charge par le <span class="target" id="index-9"></span>lecteur audio intégré dépendent des formats pris en charge par votre système d’exploitation.</p>
 <p><strong>Windows:</strong></p>
 <blockquote>
 <div><p>Les formats pris en charge dépendent des codecs installés. Selon la version de Windows, certains codecs sont préinstallés, mais vous pouvez installer des codecs supplémentaires.</p>
@@ -283,14 +295,14 @@
 <blockquote>
 <div><p>Sur les systèmes Linux, le lecteur utilise GStreamer qui prend en charge les formats audio les plus courants, bien que certaines distributions puissent exclure certains codecs en raison de problèmes de licence. Pour une prise en charge du format le plus large, assurez-vous d’installer tous les plugins GStreamer disponibles pour votre distribution.</p>
 </div></blockquote>
-</div></blockquote>
-<p><strong>J’utilise Fedora. Pourquoi la prise d’empreintes acoustiques ne fonctionne-t-elle pas?</strong></p>
-<blockquote>
-<div><p>La prise <span class="target" id="index-10"></span>d’empreintes acoustiques en Picard utilise un outil appelé <code class="docutils literal notranslate"><span class="pre">fpcalc</span></code>, qui n’est pas disponible dans Fedora. Vous pouvez l’obtenir en installant le pack chromaprint-tools à partir du référentiel <a class="reference external" href="https://rpmfusion.org/">RPM Fusion</a>. Cette fonctionnalité n’est pas contenue dans le paquet principal Fedora <code class="docutils literal notranslate"><span class="pre">picard</span></code> car elle nécessite le paquet <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> qui <a class="reference external" href="https://fedoraproject.org/wiki/Forbidden_items">ne peut pas être distribué par Fedora</a>. Après <a class="reference external" href="https://rpmfusion.org/Configuration">avoir activé le référentiel RPM Fusion « sans rpmfusion »</a>, installez le package en utilisant (en tant que root):</p>
+</div>
+<div class="section" id="i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">
+<h2>J’utilise Fedora. Pourquoi la prise <span class="target" id="index-7"></span>d’empreintes acoustique ne fonctionne-t-elle pas?<a class="headerlink" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work" title="Lien permanent vers ce titre">¶</a></h2>
+<p>La prise d’empreintes acoustiques en Picard utilise un outil appelé <code class="docutils literal notranslate"><span class="pre">fpcalc</span></code>, qui n’est pas disponible dans Fedora. Vous pouvez l’obtenir en installant le pack chromaprint-tools à partir du référentiel <a class="reference external" href="https://rpmfusion.org/">RPM Fusion</a>. Cette fonctionnalité n’est pas contenue dans le paquet principal Fedora <code class="docutils literal notranslate"><span class="pre">picard</span></code> car elle nécessite le paquet <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> qui <a class="reference external" href="https://fedoraproject.org/wiki/Forbidden_items">ne peut pas être distribué par Fedora</a>. Après <a class="reference external" href="https://rpmfusion.org/Configuration">avoir activé le référentiel RPM Fusion « sans rpmfusion »</a>, installez le package en utilisant (en tant que root):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="n">install</span> <span class="n">chromaprint</span><span class="o">-</span><span class="n">tools</span>
 </pre></div>
 </div>
-</div></blockquote>
+</div>
 </div>
 
 
