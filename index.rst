@@ -78,6 +78,15 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 
 .. toctree::
+   :caption: Tutorials
+   :hidden:
+   :maxdepth: 0
+   :titlesonly:
+
+   tutorials/naming_script
+
+
+.. toctree::
    :caption: Appendices
    :hidden:
    :maxdepth: 0

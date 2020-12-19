@@ -24,6 +24,7 @@ MusicBrainz Picard
    extending/extending
    troubleshooting/pdf_troubleshooting
    faq/faq
+   tutorials/tutorials
    appendices/pdf_appendices
 
 ..   examples/examples
