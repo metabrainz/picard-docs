@@ -202,9 +202,12 @@ HELP = """\
 Usage: {0} [optional arguments] command
 
 Commands:
-   clean html          Reset html build directory
-   clean pdf           Reset pdf build directory
-   clean mo            Remove all compiled MO files
+   clean html          clean html build directory
+   clean pdf           clean pdf build directory
+   clean epub          clean epub build directory
+   clean po            clean language directory
+   clean mo            remove all compiled MO files
+   clean all           clean all build targets
 
    build html          Build HTML files
    build pdf           Build PDF files
@@ -415,7 +418,7 @@ class POCheck():
             line_number += 1
             if build_line:
                 if re.match(r'^".*"$', file_line):
-                    temp_line_text += file_line[1:-1]
+                    temp_line_text += file_line[1:-2]
                 else:
                     tx_lines[temp_line_number] = temp_line_text
                     build_line = False
@@ -447,18 +450,21 @@ class POCheck():
                 self.bad_files.append('Directive "{0}" [L{1}]: {2}'.format(item, line_number, filename))
                 # return
         for item in IGNORE_ROLES:
-            if re.search(r":\s+" + item + r":", content) or re.search(r":" + item + r"\s+:", content) or re.search(r":" + item + r":\s+`", content):
+            if re.search(r":\s+" + item + r":", content) \
+               or re.search(r":" + item + r"\s+:", content) \
+               or re.search(r":" + item + r":\s+`", content) \
+               or re.search(r"[^\:]+" + item + r":`", content):
                 self.warning_count += 1
                 self.bad_files.append('Role "{0}" [L{1}]: {2}'.format(item, line_number, filename))
 
-    def check(self, locale_dir):
+    def check(self, locale_dir, filetype='po'):
         """Check all translation *.po files in the specified directory and subdirectories.
         """
         print("\nTesting restructured-text in *.po files.\nStarting root directory: {0}\n".format(locale_dir,))
         if os.path.isdir(locale_dir):
             for dir_name, subdir_list, file_list in os.walk(locale_dir):   # pylint: disable=unused-variable
                 for file_name in file_list:
-                    if re.match(r'.*\.po$', file_name, re.IGNORECASE):
+                    if re.match(r'.*\.' + filetype + '$', file_name, re.IGNORECASE):
                         self.file_count += 1
                         filename = os.path.join(dir_name, file_name)
                         print("{0}\r".format((filename + ' ' * 80)[0:79],), end='', flush=True)
@@ -543,12 +549,13 @@ def parse_command_line():
     parser03.add_argument(
         'clean_target',
         action='store',
-        choices=['html', 'pdf', 'epub', 'po', 'mo'],
+        choices=['html', 'pdf', 'epub', 'po', 'mo', 'all'],
         help="html = clean html build directory, "
              "pdf = clean pdf build directory, "
              "epub = clean epub build directory, "
              "po = clean language directory, "
-             "mo = remove all compiled MO files"
+             "mo = remove all compiled MO files, "
+             "all = clean all build targets"
     )
 
     parser04 = subparsers.add_parser(
@@ -1087,6 +1094,8 @@ def main():
                 if lang != DEFAULT_LANGUAGE:
                     print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
                     update_po(lang)
+            # checker = POCheck()
+            # checker.check(SPHINX_.LOCALE_DIR)
 
         elif args.build_target == 'clean':
             for target, target_dir in [('html', 'html'), ('pdf', 'latex')]:
@@ -1118,6 +1127,12 @@ def main():
 
         elif args.clean_target == 'mo':
             clean_mo()
+
+        elif args.clean_target == 'all':
+            clean_mo()
+            for clean_target in SPHINX_.BUILD_TARGETS.keys():
+                clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[clean_target]['dir'])
+                clean_directory(clean_dir, clean_target)
 
         else:
             print("\nUnknown clean target: '{0}'\n".format(args.clean_target))
