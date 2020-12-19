@@ -96,3 +96,11 @@ plugins and tutorials are provided when available rather than trying to reproduc
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 .. * :ref:`search`
+
+.. toctree::
+   :caption: References
+   :hidden:
+   :maxdepth: 0
+   :titlesonly:
+
+   genindex
