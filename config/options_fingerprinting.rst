@@ -31,6 +31,12 @@ MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/Acous
    fingerprints.  By default, Picard uses the `Chromaprint <https://acoustid.org/chromaprint>`_ (fpcalc)
    utility which is included with the Picard installation.
 
+   Picard will auto-detect the path unless you have specifically overwritten it with something different
+   than the detected path. :menuselection:`"Options --> Fingerprinting"` will show the auto detected
+   path as a placeholder hint in the text input, and also uses it for validating the executable. The user
+   only needs to actually select something if auto detection does not work. If the user has selected a
+   specific path this will be used.
+
 **API key**
 
    The key used to access the AcoustID API to lookup and submit AcoustID fingerprints.  There is no
