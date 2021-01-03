@@ -9,3 +9,4 @@ The following sections provide tutorials to help explain some of the features of
    :hidden:
 
    naming_script
+   acoustid

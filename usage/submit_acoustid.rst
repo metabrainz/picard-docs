@@ -5,7 +5,7 @@
 
 Acoustic fingerprints are very useful for identifying tracks and recordings, allowing them to be
 looked up in the MusicBrainz database. Thus, it is very valuable to add them when you are tagging
-files.
+files.  Please see the :doc:`../tutorials/acoustid` tutorial for additional information.
 
 .. note::
 
