@@ -56,6 +56,9 @@ after submission, the AcoustID should be available.
    for a batch might fail due to various reasons such as networking or server issues. If a request fails, all of the fingerprints of this submission batch are still
    marked as not having been submitted and submission could be retried.
 
+   You can also use :menuselection:`"Generate fingerprints"` on either unmatched or matched files. This will only generate the acoustic fingerprints without doing
+   any lookup on the AcoustID server. This also means there will be no AcoustID tag created. However, you can submit these fingerprints if you match the fingerprinted
+   files to a track.
 
 .. From https://community.metabrainz.org/t/why-sometimes-acoustids-are-not-available-to-be-uploaded/511870/4
 
