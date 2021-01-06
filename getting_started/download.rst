@@ -49,12 +49,22 @@ Picard is available as a Snap from the Snap Store.  This version should work on 
 Linux distributions, as long as Snap is installed (see `Installing Snap <https://snapcraft.io/docs/installing-snapd>`_).
 
 If your Linux distributions supports it you can install Picard from your distribution's software
-center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the command line:
+center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the terminal:
 
 
 .. code-block:: bash
 
    snap install picard
+
+.. note::
+
+   Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and
+   folders on your system.  By default Picard has access to your home folder.  You can additionally give it access to
+   removable media by running the following command on a terminal:
+
+   .. code-block:: bash
+
+      snap connect picard:removable-media
 
 
 :index:`Installing from your distribution's package repository <pair: install; Linux package>`
