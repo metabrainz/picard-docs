@@ -254,9 +254,18 @@ as long as Flatpak is installed (see <a class="reference external" href="https:/
 <p>Picard is available as a Snap from the Snap Store.  This version should work on all modern
 Linux distributions, as long as Snap is installed (see <a class="reference external" href="https://snapcraft.io/docs/installing-snapd">Installing Snap</a>).</p>
 <p>If your Linux distributions supports it you can install Picard from your distribution’s software
-center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the command line:</p>
+center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the terminal:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snap install picard
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and
+folders on your system.  By default Picard has access to your home folder.  You can additionally give it access to
+removable media by running the following command on a terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snap connect picard:removable-media
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="installing-from-your-distribution-s-package-repository">

@@ -123,6 +123,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#i-m-trying-to-load-a-release-in-picard-but-all-i-m-seeing-is-couldn-t-load-album-errors-what-s-up">J’essaye de charger une version en Picard, mais tout ce que je vois est « Impossible de charger les erreurs d’album ». Quoi de neuf?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#i-m-using-macos-where-are-my-network-folders-or-drives">J’utilise macOS, où sont mes dossiers réseau ou lecteurs?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#macos-shows-the-app-is-damaged-how-can-i-run-picard">macOS montre que l’application est endommagé. Comment puis-je diriger Picard?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#picard-is-installed-on-linux-as-a-snap-how-can-i-access-removable-media">Picard is installed on Linux as a Snap, how can I access removable media?</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="faq_file_formats.html">Formats de fichiers</a></li>
@@ -269,6 +270,15 @@
 </pre></div>
 </div>
 <p>Cela effacera l’application marquée comme endommagée. Si vous avez placé l’application dans un emplacement différent de <code class="file docutils literal notranslate"><span class="pre">/Applications</span></code> ajustez le chemin dans la commande ci-dessus en conséquence.</p>
+</div>
+<div class="section" id="picard-is-installed-on-linux-as-a-snap-how-can-i-access-removable-media">
+<h2>Picard is installed on Linux as a Snap, how can I access removable media?<a class="headerlink" href="#picard-is-installed-on-linux-as-a-snap-how-can-i-access-removable-media" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and
+folders on your system.  By default Picard has access to your home folder.  You can additionally give it access to
+removable media by running the following command on a terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snap connect picard:removable-media
+</pre></div>
+</div>
 </div>
 </div>
 
