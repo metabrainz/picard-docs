@@ -41,12 +41,14 @@ following:
       <https://musicbrainz.org/doc/How_to_Add_a_Release>`_, supplying evidence of the track listing and as much information
       as possible to prove it is genuine and it may be accepted again.
 
+
 I'm using macOS, where are my :index:`network folders <macos; network folders>` or drives?
 ---------------------------------------------------------------------------------------------
 
 These should show up in the add file and add folder dialogs, but they aren't visible by default in the file browser
 pane. If you want to see them in the file browser pane, right click in the pane and select "show hidden files". They
 should then be visible in the /Volumes folder.
+
 
 macOS shows the app is :index:`damaged <macos; app damaged>`. How can I run Picard?
 --------------------------------------------------------------------------------------
@@ -64,3 +66,15 @@ and run::
 
 This will clear the app being marked as damaged.  If you have placed the app in a different
 location than :file:`/Applications` adjust the path in the command above accordingly.
+
+
+Picard is installed on Linux as a Snap, how can I access removable media?
+-------------------------------------------------------------------------
+
+Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and
+folders on your system.  By default Picard has access to your home folder.  You can additionally give it access to
+removable media by running the following command on a terminal:
+
+.. code-block:: bash
+
+   snap connect picard:removable-media
