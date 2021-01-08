@@ -40,6 +40,25 @@
 
    Check to write track-level relationships (e.g.: composer, lyricist, performer, or remixer) to your files.
 
+**Original release date**
+
+   This option allows the user to select the information source used for the ``originaldate`` and ``originalyear`` tags, from either:
+
+   *  the first release date of the recording (varies by track)
+   *  the first release date of the release group (varies by album)
+
+   The default is to use the first release by release group, which is consistent with the values provided in these tags prior to Picard
+   version 2.6, when this option was first implemented.
+
+   .. warning::
+
+      If the option to use the recording release date is selected and the ``originaldate`` or ``originalyear`` tags are used in the path
+      portion of your file naming script, this may (and likely will) cause your album to be scattered across multiple directories.  To
+      help prevent this from happening, the ``_releaseoriginaldate`` variable has been added, which will provide a consistent value across
+      all tracks on a release, regardless of this option setting. To get just the year portion of this variable, simply use
+      ``$left(%_releaseoriginaldate%,4)``.  Similarly the ``_recordingoriginaldate`` variable will always provide the date based on the
+      recording, regardless of this option setting.
+
 **Various artists**
 
    Choose how you want the "Various Artists" artist spelled.

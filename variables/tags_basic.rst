@@ -216,15 +216,36 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **originaldate**
 
-    Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended to provide, for example, the release date of the vinyl version of what you have on CD. (*Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)
+   The original release date in the format YYYY-MM-DD.  Prior to Picard version 2.6, this date was based on the earliest
+   release in the Release Group providing, for example, the release date of the vinyl version of what you have on CD. As of
+   Picard version 2.6, the source of the information for this tag can be selected in the :doc:`../config/options_metadata`
+   section of the Options settings.  The selection options are:
 
-    .. note::
+   *  the first release date of the recording (varies by track)
+   *  the first release date of the release group (varies by album)
 
-        If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.
+   .. warning::
+
+      If the option to use the recording release date is selected and the ``originaldate`` tag is used in the path portion of
+      your file naming script, this may (and likely will) cause your album to be scattered across multiple directories.  To
+      help prevent this from happening, the ``_releaseoriginaldate`` variable has been added, which will provide a consistent
+      value across all tracks on a release, regardless of this option setting.
+
+   .. note::
+
+      If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.
 
 **originalyear**
 
-    Year of the original Release Date intended for release year of the original recording.
+   Year portion of the ``originaldate`` tag.
+
+   .. warning::
+
+      If the option to use the recording release date is selected and the ``originalyear`` tag is used in the path portion of
+      your file naming script, this may (and likely will) cause your album to be scattered across multiple directories.  To
+      help prevent this from happening, the ``_releaseoriginaldate`` variable has been added, which will provide a consistent
+      value across all tracks on a release, regardless of this option setting. To get just the year portion of this variable,
+      simply use ``$left(%_releaseoriginaldate%,4)``.
 
 **releasecountry**
 

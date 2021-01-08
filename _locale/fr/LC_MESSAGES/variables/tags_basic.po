@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-18 17:04-0700\n"
-"PO-Revision-Date: 2020-11-19 17:41-0700\n"
+"POT-Creation-Date: 2021-01-08 16:06-0700\n"
+"PO-Revision-Date: 2021-01-08 16:16-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -470,18 +470,46 @@ msgstr "**originaldate**"
 
 #: ../../variables/tags_basic.rst:219
 msgid ""
-"Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended "
-"to provide, for example, the release date of the vinyl version of what you have "
-"on CD. (*Included as standard from Picard 0.15, and using the Original Release "
-"Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)"
+"The original release date in the format YYYY-MM-DD.  Prior to Picard version "
+"2.6, this date was based on the earliest release in the Release Group providing, "
+"for example, the release date of the vinyl version of what you have on CD. As of "
+"Picard version 2.6, the source of the information for this tag can be selected "
+"in the :doc:`../config/options_metadata` section of the Options settings.  The "
+"selection options are:"
 msgstr ""
-"La date de sortie (AAAA-MM-JJ) de la version la plus ancienne du groupe de mise "
-"à jour destinée à fournir, par exemple, la date de sortie de la version vinyle "
-"de ce que vous avez sur le CD. (*Inclus en standard à partir de Picard 0.15, et "
-"en utilisant le plugin Original Release Date si vous utilisez toujours une "
-"version non-NGS antérieure à Picard 0.15*)"
+"La date de sortie d'origine au format AAAA-MM-JJ. Avant la version 2.6 de "
+"Picard, cette date était basée sur la version la plus ancienne du Release Group "
+"fournissant, par exemple, la date de sortie de la version vinyle de ce que vous "
+"avez sur CD. Depuis la version 2.6 de Picard, la source des informations pour "
+"cette balise peut être sélectionnée dans la section :doc:`../config/"
+"options_metadata` des paramètres Options. Les options de sélection sont:"
 
-#: ../../variables/tags_basic.rst:223
+#: ../../variables/tags_basic.rst:224
+msgid "the first release date of the recording (varies by track)"
+msgstr "la première date de sortie de l'enregistrement (varie selon la piste)"
+
+#: ../../variables/tags_basic.rst:225
+msgid "the first release date of the release group (varies by album)"
+msgstr "la première date de sortie du groupe de sortie (varie selon l'album)"
+
+#: ../../variables/tags_basic.rst:229
+msgid ""
+"If the option to use the recording release date is selected and the "
+"``originaldate`` tag is used in the path portion of your file naming script, "
+"this may (and likely will) cause your album to be scattered across multiple "
+"directories.  To help prevent this from happening, the ``_releaseoriginaldate`` "
+"variable has been added, which will provide a consistent value across all tracks "
+"on a release, regardless of this option setting."
+msgstr ""
+"Si l'option permettant d'utiliser la date de sortie de l'enregistrement est "
+"sélectionnée et que la balise ``originaldate`` est utilisée dans la partie "
+"chemin de votre script de dénomination de fichier, cela peut (et probablement "
+"entraînera) la dispersion de votre album dans plusieurs répertoires. Pour éviter "
+"que cela ne se produise, la variable ``_releaseoriginaldate`` a été ajoutée, ce "
+"qui fournira une valeur cohérente sur toutes les pistes d'une version, quel que "
+"soit le réglage de cette option."
+
+#: ../../variables/tags_basic.rst:236
 msgid ""
 "If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes "
 "compatible version) then the original date can only be stored as a year."
@@ -490,31 +518,46 @@ msgstr ""
 "la version compatible Windows et iTunes), la date d'origine ne peut être stockée "
 "que comme une année."
 
-#: ../../variables/tags_basic.rst:225
+#: ../../variables/tags_basic.rst:238
 msgid "**originalyear**"
 msgstr "**originalyear**"
 
-#: ../../variables/tags_basic.rst:227
-msgid ""
-"Year of the original Release Date intended for release year of the original "
-"recording."
-msgstr ""
-"L'année de la date de sortie originale prévue pour l'année de sortie de "
-"l'enregistrement original."
+#: ../../variables/tags_basic.rst:240
+msgid "Year portion of the ``originaldate`` tag."
+msgstr "Partie année de la balise ``originaldate``."
 
-#: ../../variables/tags_basic.rst:229
+#: ../../variables/tags_basic.rst:244
+msgid ""
+"If the option to use the recording release date is selected and the "
+"``originalyear`` tag is used in the path portion of your file naming script, "
+"this may (and likely will) cause your album to be scattered across multiple "
+"directories.  To help prevent this from happening, the ``_releaseoriginaldate`` "
+"variable has been added, which will provide a consistent value across all tracks "
+"on a release, regardless of this option setting. To get just the year portion of "
+"this variable, simply use ``$left(%_releaseoriginaldate%,4)``."
+msgstr ""
+"Si l'option permettant d'utiliser la date de sortie de l'enregistrement est "
+"sélectionnée et que la balise ``originalyear`` est utilisée dans la partie "
+"chemin de votre script de dénomination de fichier, cela peut (et probablement) "
+"entraînera la dispersion de votre album dans plusieurs répertoires. Pour éviter "
+"que cela ne se produise, la variable ``_releaseoriginaldate`` a été ajoutée, ce "
+"qui fournira une valeur cohérente sur toutes les pistes d'une version, quel que "
+"soit le réglage de cette option. Pour obtenir uniquement la partie année de "
+"cette variable, utilisez simplement ``$left(%_releaseoriginaldate%, 4)``."
+
+#: ../../variables/tags_basic.rst:250
 msgid "**releasecountry**"
 msgstr "**releasecountry**"
 
-#: ../../variables/tags_basic.rst:231
+#: ../../variables/tags_basic.rst:252
 msgid "Country in which the release was issued."
 msgstr "Le pays dans lequel la libération a été publiée."
 
-#: ../../variables/tags_basic.rst:233
+#: ../../variables/tags_basic.rst:254
 msgid "**releasestatus**"
 msgstr "**releasestatus**"
 
-#: ../../variables/tags_basic.rst:235
+#: ../../variables/tags_basic.rst:256
 msgid ""
 "Release Status indicating the \"official\" status of the release.  Possible "
 "values include official, promotional, bootleg, and pseudo-release."
@@ -522,11 +565,11 @@ msgstr ""
 "Le statut de la version indiquant le statut \"officiel\" de la version. Les "
 "valeurs possibles incluent officiel, promotionnel, bootleg et pseudo-release."
 
-#: ../../variables/tags_basic.rst:237
+#: ../../variables/tags_basic.rst:258
 msgid "**releasetype**"
 msgstr "**releasetype**"
 
-#: ../../variables/tags_basic.rst:239
+#: ../../variables/tags_basic.rst:260
 msgid ""
 "Release Group Type (see also :ref:`_primaryreleasetype <ref_primaryreleasetype>` "
 "and :ref:`_secondaryreleasetype <ref_secondaryreleasetype>`)"
@@ -535,11 +578,11 @@ msgstr ""
 "<ref_primaryreleasetype>` et :ref:`_secondaryreleasetype "
 "<ref_secondaryreleasetype>`)."
 
-#: ../../variables/tags_basic.rst:241
+#: ../../variables/tags_basic.rst:262
 msgid "**script**"
 msgstr "**script**"
 
-#: ../../variables/tags_basic.rst:243
+#: ../../variables/tags_basic.rst:264
 msgid ""
 "The script used to write the release's track list. The possible values are taken "
 "from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard. "
@@ -549,59 +592,59 @@ msgstr ""
 "possibles sont tirées du standard `ISO 15924 <https://fr.wikipedia.org/wiki/"
 "ISO_15924>`_. (*depuis Picard 0,10*)"
 
-#: ../../variables/tags_basic.rst:245
+#: ../../variables/tags_basic.rst:266
 msgid "**subtitle**"
 msgstr "**subtitle**"
 
-#: ../../variables/tags_basic.rst:247
+#: ../../variables/tags_basic.rst:268
 msgid "Used for information directly related to the contents title."
 msgstr "Utilisé pour les informations directement liées au titre du contenu."
 
-#: ../../variables/tags_basic.rst:249
+#: ../../variables/tags_basic.rst:270
 msgid "**title**"
 msgstr "**title**"
 
-#: ../../variables/tags_basic.rst:251
+#: ../../variables/tags_basic.rst:272
 msgid "Track Title."
 msgstr "Le titre de la piste."
 
-#: ../../variables/tags_basic.rst:253
+#: ../../variables/tags_basic.rst:274
 msgid "**titlesort**"
 msgstr "**titlesort**"
 
-#: ../../variables/tags_basic.rst:255
+#: ../../variables/tags_basic.rst:276
 msgid "Track Title's Sort Name."
 msgstr "Le nom de tri du titre de la piste."
 
-#: ../../variables/tags_basic.rst:257
+#: ../../variables/tags_basic.rst:278
 msgid "**totaldiscs**"
 msgstr "**totaldiscs**"
 
-#: ../../variables/tags_basic.rst:259
+#: ../../variables/tags_basic.rst:280
 msgid "Total number of discs in this release"
 msgstr "Le nombre total de disques dans cette version"
 
-#: ../../variables/tags_basic.rst:261
+#: ../../variables/tags_basic.rst:282
 msgid "**totaltracks**"
 msgstr "**totaltracks**"
 
-#: ../../variables/tags_basic.rst:263
+#: ../../variables/tags_basic.rst:284
 msgid "Total tracks on this disc."
 msgstr "Le nombre total de pistes sur ce disque."
 
-#: ../../variables/tags_basic.rst:265
+#: ../../variables/tags_basic.rst:286
 msgid "**tracknumber**"
 msgstr "**tracknumber**"
 
-#: ../../variables/tags_basic.rst:267
+#: ../../variables/tags_basic.rst:288
 msgid "Track number on the disc."
 msgstr "Le numéro de la piste sur ce disque."
 
-#: ../../variables/tags_basic.rst:269
+#: ../../variables/tags_basic.rst:290
 msgid "**website**"
 msgstr "**website**"
 
-#: ../../variables/tags_basic.rst:271
+#: ../../variables/tags_basic.rst:292
 msgid "Used for official artist website."
 msgstr "Utilisé pour le site officiel de l'artiste."
 
@@ -624,3 +667,23 @@ msgstr "Utilisé pour le site officiel de l'artiste."
 
 #~ msgid "Basic Tags"
 #~ msgstr "Balises de base"
+
+#~ msgid ""
+#~ "Release Date (YYYY-MM-DD) of the earliest release in the Release Group "
+#~ "intended to provide, for example, the release date of the vinyl version of "
+#~ "what you have on CD. (*Included as standard from Picard 0.15, and using the "
+#~ "Original Release Date plugin if you are still using a non-NGS version earlier "
+#~ "than Picard 0.15*)"
+#~ msgstr ""
+#~ "La date de sortie (AAAA-MM-JJ) de la version la plus ancienne du groupe de "
+#~ "mise à jour destinée à fournir, par exemple, la date de sortie de la version "
+#~ "vinyle de ce que vous avez sur le CD. (*Inclus en standard à partir de Picard "
+#~ "0.15, et en utilisant le plugin Original Release Date si vous utilisez "
+#~ "toujours une version non-NGS antérieure à Picard 0.15*)"
+
+#~ msgid ""
+#~ "Year of the original Release Date intended for release year of the original "
+#~ "recording."
+#~ msgstr ""
+#~ "L'année de la date de sortie originale prévue pour l'année de sortie de "
+#~ "l'enregistrement original."
