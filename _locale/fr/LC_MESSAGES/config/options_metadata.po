@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-08 16:06-0700\n"
-"PO-Revision-Date: 2021-01-08 16:11-0700\n"
+"POT-Creation-Date: 2020-11-18 17:04-0700\n"
+"PO-Revision-Date: 2020-11-19 16:10-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -22,26 +22,29 @@ msgstr ""
 
 #: ../../config/options_metadata.rst:4
 msgid ":index:`Metadata Options <configuration; metadata options>`"
-msgstr ":index:`Options de métadonnées <configuration; options de métadonnées>`"
+msgstr ""
+":index:`Options de métadonnées <configuration; options de métadonnées>`"
 
 #: ../../config/options_metadata.rst:9
 msgid "**Translate artist names to this locale where possible**"
 msgstr ""
-"**Traduisez les noms d'artistes dans cette langue lorsque cela est possible**"
+"**Traduisez les noms d'artistes dans cette langue lorsque cela est "
+"possible**"
 
 #: ../../config/options_metadata.rst:11
 msgid ""
-"When checked, Picard will see whether an artist has an alias for the selected "
-"locale. If it does, Picard will use that alias instead of the artist name "
-"when tagging. When \"English\" is the selected locale, the artist sort name "
-"(which is, by Style Guideline, stored in Latin script) is used as a fallback "
-"if there is no English alias."
+"When checked, Picard will see whether an artist has an alias for the "
+"selected locale. If it does, Picard will use that alias instead of the "
+"artist name when tagging. When \"English\" is the selected locale, the "
+"artist sort name (which is, by Style Guideline, stored in Latin script) "
+"is used as a fallback if there is no English alias."
 msgstr ""
-"Lorsqu'elle est cochée, Picard verra si un artiste a un alias pour la langue "
-"sélectionnée. Si c'est le cas, Picard utilisera cet alias au lieu du nom de "
-"l'artiste lors du marquage. Lorsque \"English\" est la langue sélectionnée, "
-"le nom de tri de l'artiste (qui est, par Style Guideline, stocké en script "
-"latin) est utilisé comme solution de secours s'il n'y a pas d'alias anglais."
+"Lorsqu'elle est cochée, Picard verra si un artiste a un alias pour la "
+"langue sélectionnée. Si c'est le cas, Picard utilisera cet alias au lieu "
+"du nom de l'artiste lors du marquage. Lorsque \"English\" est la langue "
+"sélectionnée, le nom de tri de l'artiste (qui est, par Style Guideline, "
+"stocké en script latin) est utilisé comme solution de secours s'il n'y a "
+"pas d'alias anglais."
 
 #: ../../config/options_metadata.rst:15
 msgid "**Use standardized artist names**"
@@ -49,20 +52,20 @@ msgstr "**Utilisez des noms d'artistes standardisés**"
 
 #: ../../config/options_metadata.rst:17
 msgid ""
-"Check to only use standard Artist names, rather than Artist Credits which may "
-"differ slightly across tracks and releases."
+"Check to only use standard Artist names, rather than Artist Credits "
+"which may differ slightly across tracks and releases."
 msgstr ""
 "Cochez pour n'utiliser que des noms d'artistes standard, plutôt que des "
-"crédits d'artiste qui peuvent différer légèrement selon les pistes et les "
-"versions."
+"crédits d'artiste qui peuvent différer légèrement selon les pistes et "
+"les versions."
 
 #: ../../config/options_metadata.rst:21
 msgid ""
 "If the \"Translate artist names\" option above is also checked, it will "
 "override this option if a suitable alias is found."
 msgstr ""
-"Si l'option \"Traduire les noms d'artistes\" ci-dessus est également cochée, "
-"elle remplacera cette option si un alias approprié est trouvé."
+"Si l'option \"Traduire les noms d'artistes\" ci-dessus est également "
+"cochée, elle remplacera cette option si un alias approprié est trouvé."
 
 #: ../../config/options_metadata.rst:23
 msgid "**Use standardized instrument and vocal credits**"
@@ -71,12 +74,12 @@ msgstr "**Utilisez des crédits d'instruments et vocaux standardisés**"
 #: ../../config/options_metadata.rst:25
 msgid ""
 "Check to only use standard names for instruments and vocals in performer "
-"relationships. Uncheck to use the instruments and vocals as credited in the "
-"relationship."
+"relationships. Uncheck to use the instruments and vocals as credited in "
+"the relationship."
 msgstr ""
-"Cochez pour n'utiliser que des noms standard pour les instruments et les voix "
-"dans les relations interprètes. Décochez pour utiliser les instruments et les "
-"voix comme crédités dans la relation."
+"Cochez pour n'utiliser que des noms standard pour les instruments et les "
+"voix dans les relations interprètes. Décochez pour utiliser les "
+"instruments et les voix comme crédités dans la relation."
 
 #: ../../config/options_metadata.rst:28
 msgid "**Convert Unicode punctuation characters to ASCII**"
@@ -85,14 +88,15 @@ msgstr "**Convertir les caractères de ponctuation Unicode en ASCII**"
 #: ../../config/options_metadata.rst:30
 msgid ""
 "Converts Unicode punctuation characters in MusicBrainz data to ASCII for "
-"consistent use of punctuation in tags. For example, right single quotation "
-"marks are converted to ASCII apostrophes ('), and horizontal ellipses are "
-"converted to three full stops (...)."
+"consistent use of punctuation in tags. For example, right single "
+"quotation marks are converted to ASCII apostrophes ('), and horizontal "
+"ellipses are converted to three full stops (...)."
 msgstr ""
-"Convertit les caractères de ponctuation Unicode des données MusicBrainz en "
-"ASCII pour une utilisation cohérente de la ponctuation dans les balises. Par "
-"exemple, les guillemets simples droits sont convertis en apostrophes ASCII "
-"(') et les ellipses horizontales sont converties en trois points (...)."
+"Convertit les caractères de ponctuation Unicode des données MusicBrainz "
+"en ASCII pour une utilisation cohérente de la ponctuation dans les "
+"balises. Par exemple, les guillemets simples droits sont convertis en "
+"apostrophes ASCII (') et les ellipses horizontales sont converties en "
+"trois points (...)."
 
 #: ../../config/options_metadata.rst:34
 msgid "**Use release relationships**"
@@ -101,13 +105,13 @@ msgstr "**Utiliser les relations de version**"
 #: ../../config/options_metadata.rst:36
 msgid ""
 "Check to retrieve and write release-level relationships (e.g.: URLs, "
-"composer, lyricist, performer, conductor, or DJ mixer) to your files. You "
-"must have this enabled to use Picard to retrieve cover art."
+"composer, lyricist, performer, conductor, or DJ mixer) to your files. "
+"You must have this enabled to use Picard to retrieve cover art."
 msgstr ""
-"Cochez pour récupérer et écrire les relations au niveau de la version (par "
-"exemple: URL, compositeur, parolier, interprète, chef d'orchestre ou mixeur "
-"DJ) dans vos fichiers. Vous devez l'activer pour utiliser Picard pour "
-"récupérer l'art de couverture."
+"Cochez pour récupérer et écrire les relations au niveau de la version "
+"(par exemple: URL, compositeur, parolier, interprète, chef d'orchestre "
+"ou mixeur DJ) dans vos fichiers. Vous devez l'activer pour utiliser "
+"Picard pour récupérer l'art de couverture."
 
 #: ../../config/options_metadata.rst:39
 msgid "**Use track relationships**"
@@ -122,81 +126,26 @@ msgstr ""
 "compositeur, parolier, interprète ou remixeur) dans vos fichiers."
 
 #: ../../config/options_metadata.rst:43
-msgid "**Original release date**"
-msgstr "**Date de sortie d'origine**"
-
-#: ../../config/options_metadata.rst:45
-msgid ""
-"This option allows the user to select the information source used for the "
-"``originaldate`` and ``originalyear`` tags, from either:"
-msgstr ""
-"Cette option permet à l'utilisateur de sélectionner la source d'informations "
-"utilisée pour les balises ``originaldate`` et ``originalyear``, soit:"
-
-#: ../../config/options_metadata.rst:47
-msgid "the first release date of the recording (varies by track)"
-msgstr "la première date de sortie de l'enregistrement (varie selon la piste)"
-
-#: ../../config/options_metadata.rst:48
-msgid "the first release date of the release group (varies by album)"
-msgstr "la première date de sortie du groupe de sortie (varie selon l'album)"
-
-#: ../../config/options_metadata.rst:50
-msgid ""
-"The default is to use the first release by release group, which is consistent "
-"with the values provided in these tags prior to Picard version 2.6, when this "
-"option was first implemented."
-msgstr ""
-"La valeur par défaut est d'utiliser la première version par groupe de "
-"versions, ce qui est cohérent avec les valeurs fournies dans ces balises "
-"avant la version 2.6 de Picard, lorsque cette option a été implémentée pour "
-"la première fois."
-
-#: ../../config/options_metadata.rst:55
-msgid ""
-"If the option to use the recording release date is selected and the "
-"``originaldate`` or ``originalyear`` tags are used in the path portion of "
-"your file naming script, this may (and likely will) cause your album to be "
-"scattered across multiple directories.  To help prevent this from happening, "
-"the ``_releaseoriginaldate`` variable has been added, which will provide a "
-"consistent value across all tracks on a release, regardless of this option "
-"setting. To get just the year portion of this variable, simply use ``"
-"$left(%_releaseoriginaldate%,4)``.  Similarly the ``_recordingoriginaldate`` "
-"variable will always provide the date based on the recording, regardless of "
-"this option setting."
-msgstr ""
-"Si l'option permettant d'utiliser la date de sortie de l'enregistrement est "
-"sélectionnée et que les balises ``originaldate`` ou ``originalyear`` sont "
-"utilisées dans la partie chemin de votre script de dénomination de fichier, "
-"cela peut (et probablement) entraînera la dispersion de votre album. sur "
-"plusieurs répertoires. Pour éviter que cela ne se produise, la variable "
-"``_releaseoriginaldate`` a été ajoutée, ce qui fournira une valeur cohérente "
-"sur toutes les pistes d'une version, quel que soit le réglage de cette "
-"option. Pour obtenir uniquement la partie année de cette variable, utilisez "
-"simplement ``$left(%_releaseoriginaldate%, 4)``. De même, la variable "
-"``_recordingoriginaldate`` fournira toujours la date en fonction de "
-"l'enregistrement, quel que soit le réglage de cette option."
-
-#: ../../config/options_metadata.rst:62
 msgid "**Various artists**"
 msgstr "**Artistes variés**"
 
-#: ../../config/options_metadata.rst:64
+#: ../../config/options_metadata.rst:45
 msgid "Choose how you want the \"Various Artists\" artist spelled."
 msgstr ""
 "Choisissez comment vous voulez que l'artiste \"Various Artists\" soit "
 "orthographié."
 
-#: ../../config/options_metadata.rst:66
+#: ../../config/options_metadata.rst:47
 msgid "**Non-album tracks**"
 msgstr "**Pistes hors album**"
 
-#: ../../config/options_metadata.rst:68
+#: ../../config/options_metadata.rst:49
 msgid "Choose how you want \"non-album tracks\" to be grouped."
 msgstr ""
-"Choisissez la manière dont vous souhaitez regrouper les \"pistes hors album\"."
+"Choisissez la manière dont vous souhaitez regrouper les \"pistes hors "
+"album\"."
 
-#: ../../config/options_metadata.rst:74
+#: ../../config/options_metadata.rst:55
 msgid ""
 "Details: :doc:`options_releases` / :doc:`options_genres` / :doc:"
 "`options_ratings`"
