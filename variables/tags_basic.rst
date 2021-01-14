@@ -216,7 +216,10 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **originaldate**
 
-   Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended to provide, for example, the release date of the vinyl version of what you have on CD. (*Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)
+   The original release date in the format YYYY-MM-DD. By default this is set to the earliest release in the Release
+   Group.  This can provide, for example, the release date of the vinyl version of what you have on CD. (*Included as
+   standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version
+   earlier than Picard 0.15*)
 
    .. note::
 
@@ -234,7 +237,8 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **originalyear**
 
-    Year of the original Release Date intended for release year of the original recording.
+   The year of the original release date in the format YYYY. By default this is set to the earliest release in the Release
+   Group.  This can provide, for example, the release year of the vinyl version of what you have on CD.
 
 **releasecountry**
 
