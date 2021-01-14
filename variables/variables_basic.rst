@@ -56,6 +56,10 @@ These variables are populated from MusicBrainz data for most releases, without a
 
     Rating 0-5 by MusicBrainz users.
 
+**_recording_firstreleasedate**
+
+   The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
+
 **_releasecomment**
 
     Release disambiguation comment. (*since Picard 0.15*)
@@ -67,6 +71,14 @@ These variables are populated from MusicBrainz data for most releases, without a
 **_releasegroupcomment**
 
     Release Group disambiguation comment.
+
+**_releasegroup_firstreleasedate**
+
+   The date of the earliest release in the Release Group in the format YYYY-MM-DD. This is intended to provide, for example, the release date of the vinyl version of what you have on CD. (*Since Picard 2.6*)
+
+   .. note::
+
+      This is the same information provided by default in the ``originaldate`` tag.
 
 **_releaselanguage**
 
