@@ -108,6 +108,10 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
     Release Date (YYYY-MM-DD) - the date that the release was issued.
 
+**director**
+
+   The director of a video track as provided by the Video Director relationship in MusicBrainz.  (*Since Picard 2.6*)
+
 **discid**
 
     Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of
