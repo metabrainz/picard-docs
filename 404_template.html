@@ -154,6 +154,11 @@
                if (debug) { window.alert("Patching target url for updated location of scripting.html file."); }
                well_formed = false;
             }
+            else if (src_path_parts[counter] == 'technical') {
+               target_path += '/appendices';
+               counter += 1;
+               well_formed = false;
+            }
 
             // Combine remaining portions of the submitted path
             while (counter < src_path_parts.length) {
