@@ -41,9 +41,9 @@ copyright = 'This documentation is licensed under CC0 1.0.'     # pylint: disabl
 default_language = 'en'
 supported_languages = [
     ('en', 'English'),
-    ('fr', 'Française'),
-    # ('de', 'Deutsche'),
-    # ('es', 'Española'),
+    ('fr', 'Français'),
+    # ('de', 'Deutsch'),
+    # ('es', 'Español'),
 ]
 
 # -- Base file name for PDF and EPUB files -----------------------------------
