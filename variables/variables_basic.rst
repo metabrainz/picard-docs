@@ -60,6 +60,10 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
 
+**_releaseannotation**
+
+   The annotation comment for the release. (*since Picard 2.6*)
+
 **_releasecomment**
 
     Release disambiguation comment. (*since Picard 0.15*)
