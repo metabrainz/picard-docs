@@ -310,6 +310,21 @@ Copyright :sup:`[4]`
    "RIFF INFO", "``ICOP``"
 
 
+Director
+---------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``director``"
+   "ID3v2", "``TXXX:DIRECTOR``"
+   "Vorbis", "``DIRECTOR``"
+   "APEv2", "``Director``"
+   "iTunes MP4", "``©dir`` :sup:`[9]` "
+   "ASF/Windows Media", "``WM/Director``"
+   "RIFF INFO", "n/a"
+
+
 Disc Number
 ------------
 .. csv-table::
@@ -1381,3 +1396,4 @@ Work Title
 #. `Release-level license <https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_ relationship type.
 #. `Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.
 #. With "Save iTunes compatible grouping and work" (since Picard>=2.1.0)
+#. From iTunes Metadata Format Specification
