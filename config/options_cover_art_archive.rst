@@ -37,14 +37,17 @@ and what quality (size) you want to download. Obviously, the better the quality,
 
 **Use the first image type as the filename**
 
-   When checked, Picard will use the type of the image (e.g.: front, back, booklet, etc.) as the filename when saving.  If the
-   image has been assigned multiple types, then the first type will be used.  For example, if the image is of types "Front" and
-   "Raw", then "front" will be used for the filename.  If unchecked, Picard will use the file name specified in the "Use the
-   following file name for images" setting in the :doc:`options_location` section of the :doc:`options_cover` settings.
+   This setting changes how Picard names image files **other than front images**.
+
+   When checked, Picard will use the type of the image (e.g.: back, booklet, etc.) as the filename when saving, as long as
+   the type is not front. If the image has been assigned multiple types, then the first type will be used. For example,
+   if the image is of types "back" and "raw", then "back" will be used for the filename. If unchecked or if the image is
+   of type "front", Picard will use the file name specified in the "Use the following file name for images" setting in the
+   :doc:`options_location` section of the :doc:`options_cover` settings.
 
    .. note::
 
-      This will not change the name used for "front" images that has been specified in the :ref:`Save cover images
+      This will **not** change the name used for "front" images that has been specified in the :ref:`Save cover images
       <ref-local-images>` section of the general :menuselection:`"Cover Art Options"`.
 
 Since Picard 1.3, you can also decide whether or not to use the image from the release group (if any) if no front image is
