@@ -108,6 +108,10 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
     Release Date (YYYY-MM-DD) - the date that the release was issued.
 
+**director**
+
+   The director of a video track as provided by the Video Director relationship in MusicBrainz.  (*Since Picard 2.6*)
+
 **discid**
 
     Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of
@@ -216,15 +220,29 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **originaldate**
 
-    Release Date (YYYY-MM-DD) of the earliest release in the Release Group intended to provide, for example, the release date of the vinyl version of what you have on CD. (*Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)
+   The original release date in the format YYYY-MM-DD. By default this is set to the earliest release in the Release
+   Group.  This can provide, for example, the release date of the vinyl version of what you have on CD. (*Included as
+   standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version
+   earlier than Picard 0.15*)
 
-    .. note::
+   .. note::
 
-        If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.
+      This is the same information provided in the ``_releasegroup_firstreleasedate`` variable, and is consistent across
+      all tracks in the release.  If you prefer to have this tag populated with the date of the earliest recording of
+      the track in the database, which will likely be different for each track in the release, this can be achieved by
+      enabling a one-line tagging script as ``$set(originaldate,%_recording_firstreleasedate%)``.  Be aware that setting
+      this can cause a release to be scattered across multiple directories if you use ``%originaldate%`` as part of the
+      path portion of your file naming script.
+
+
+   .. note::
+
+      If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.
 
 **originalyear**
 
-    Year of the original Release Date intended for release year of the original recording.
+   The year of the original release date in the format YYYY. By default this is set to the earliest release in the Release
+   Group.  This can provide, for example, the release year of the vinyl version of what you have on CD.
 
 **releasecountry**
 

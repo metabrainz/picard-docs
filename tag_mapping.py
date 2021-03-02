@@ -51,6 +51,7 @@ NOTES = {
     6: "`Release-level license <https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_ relationship type.",
     7: "`Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.",
     8: "With \"Save iTunes compatible grouping and work\" (since Picard>=2.1.0)",
+    9: "From iTunes Metadata Format Specification",
 }
 NOTES_NUMBERS = list(NOTES.keys())
 NOTES_NUMBERS.sort()
@@ -291,6 +292,17 @@ TAG_MAP = [
         "itunes": "``cprt``",
         "wmp": "``Copyright``",
         "riff": "``ICOP``",
+    },
+
+    {
+        "tag_name": "Director",
+        "picard_name": "``director``",
+        "id3v2": "``TXXX:DIRECTOR``",
+        "vorbis": "``DIRECTOR``",
+        "apev2": "``Director``",
+        "itunes": "``©dir`` [9]",
+        "wmp": "``WM/Director``",
+        "riff": "n/a",
     },
 
     {

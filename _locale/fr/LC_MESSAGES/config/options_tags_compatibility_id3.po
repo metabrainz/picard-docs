@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-18 17:04-0700\n"
-"PO-Revision-Date: 2020-11-19 16:21-0700\n"
+"POT-Creation-Date: 2021-02-22 10:37-0700\n"
+"PO-Revision-Date: 2021-02-22 10:40-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -89,11 +89,53 @@ msgstr ""
 "compatibilité visuelle en Picard entre ID3v2.3 et d'autres formats de "
 "balisage."
 
-#: ../../config/options_tags_compatibility_id3.rst:30
+#: ../../config/options_tags_compatibility_id3.rst:32
+msgid ""
+"This setting is explicitly only for ID3 v2.3 tags, because those don’t "
+"support proper multi value tags. Hence this separator thing is actually "
+"more of a workaround to this fact."
+msgstr ""
+"Ce paramètre est explicitement réservé aux balises ID3 v2.3, car celles-"
+"ci ne prennent pas en charge les balises à valeurs multiples "
+"appropriées. Par conséquent, cette chose de séparateur est en fait plus "
+"une solution de contournement à ce fait."
+
+#: ../../config/options_tags_compatibility_id3.rst:35
+msgid ""
+"Because Vorbis tags allow the same tag to exist multiple times, and "
+"hence support multi valued tags by default, there actually is no "
+"separator at all there. It is just multiple values, shown using whatever "
+"the player software uses uses as a separator."
+msgstr ""
+"Étant donné que les balises Vorbis permettent à la même balise d'exister "
+"plusieurs fois, et donc prennent en charge les balises à valeurs "
+"multiples par défaut, il n'y a en fait aucun séparateur. Ce ne sont que "
+"des valeurs multiples, affichées en utilisant tout ce que le logiciel du "
+"lecteur utilise comme séparateur."
+
+#: ../../config/options_tags_compatibility_id3.rst:39
+msgid ""
+"If for some reason you want all the values of the tag in a single field "
+"separated by some separator you could use a script like:"
+msgstr ""
+"Si, pour une raison quelconque, vous voulez toutes les valeurs de la "
+"balise dans un seul champ séparé par un séparateur, vous pouvez utiliser "
+"un script comme:"
+
+#: ../../config/options_tags_compatibility_id3.rst:42
+msgid "``$set(musicbrainz_artistid,$join(%musicbrainz_artistid%, / ))``"
+msgstr "``$set(musicbrainz_artistid,$join(%musicbrainz_artistid%, / ))``"
+
+#: ../../config/options_tags_compatibility_id3.rst:44
+msgid "to flatten all the values into a single field separated by \" / \"."
+msgstr ""
+"pour aplatir toutes les valeurs dans un seul champ séparé par \" / \"."
+
+#: ../../config/options_tags_compatibility_id3.rst:46
 msgid "**Save iTunes compatible grouping and work**"
 msgstr "**Enregistrez le regroupement compatible iTunes et travaillez**"
 
-#: ../../config/options_tags_compatibility_id3.rst:32
+#: ../../config/options_tags_compatibility_id3.rst:48
 msgid ""
 "Save the tags grouping and work so that they are compatible with current "
 "iTunes versions. Without this option grouping will be displayed in "
@@ -104,7 +146,7 @@ msgstr ""
 "option, le regroupement sera affiché dans iTunes en tant que \"nom de "
 "travail\" et le travail ne sera pas disponible."
 
-#: ../../config/options_tags_compatibility_id3.rst:35
+#: ../../config/options_tags_compatibility_id3.rst:51
 msgid ""
 "See the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section "
 "for details."
@@ -112,7 +154,7 @@ msgstr ""
 "Voir la section :doc:`Picard Tag Mapping <../appendices/tag_mapping>` "
 "pour plus de détails."
 
-#: ../../config/options_tags_compatibility_id3.rst:39
+#: ../../config/options_tags_compatibility_id3.rst:55
 msgid ""
 "For other players supporting grouping and work you might need to disable "
 "this option. `MusicBee <https://getmusicbee.com/>`_ is one example of "
@@ -122,11 +164,11 @@ msgstr ""
 "vous devrez peut-être désactiver cette option. `MusicBee <https://"
 "getmusicbee.com/>`_ en est un exemple."
 
-#: ../../config/options_tags_compatibility_id3.rst:42
+#: ../../config/options_tags_compatibility_id3.rst:58
 msgid "**Also include ID3v1 tags in the files**"
 msgstr "** Incluez également les balises ID3v1 dans les fichiers **"
 
-#: ../../config/options_tags_compatibility_id3.rst:44
+#: ../../config/options_tags_compatibility_id3.rst:60
 msgid ""
 "This is not recommended at all. ID3v1.1 tags are obsolete and may not "
 "work with non-latin scripts."

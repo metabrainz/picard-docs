@@ -27,6 +27,22 @@
    '; ' for the greatest compatibility (rather than '/' since tags more often contain a '/' than a ';') and for
    the best visual compatibility in Picard between ID3v2.3 and other tagging formats.
 
+   .. note::
+
+      This setting is explicitly only for ID3 v2.3 tags, because those don’t support proper multi value tags.
+      Hence this separator thing is actually more of a workaround to this fact.
+
+      Because Vorbis tags allow the same tag to exist multiple times, and hence support multi valued tags by
+      default, there actually is no separator at all there. It is just multiple values, shown using whatever the
+      player software uses uses as a separator.
+
+      If for some reason you want all the values of the tag in a single field separated by some separator you
+      could use a script like:
+
+      ``$set(musicbrainz_artistid,$join(%musicbrainz_artistid%, / ))``
+
+      to flatten all the values into a single field separated by " / ".
+
 **Save iTunes compatible grouping and work**
 
    Save the tags grouping and work so that they are compatible with current iTunes versions. Without this option
