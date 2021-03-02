@@ -7,6 +7,7 @@ VERSIONS = [
     '2.3',
     '2.4',
     '2.5',
+    '2.6',
 ]
 STABLE_VERSION = '2.5'
 
