@@ -37,8 +37,10 @@ and what quality (size) you want to download. Obviously, the better the quality,
 
 **Use the first image type as the filename**
 
-   When checked, Picard will use the type of the first image retrieved as the filename when saving all images.  If left
-   unchecked, each file will be named according to its image type.
+   When checked, Picard will use the type of the image (e.g.: front, back, booklet, etc.) as the filename when saving.  If the
+   image has been assigned multiple types, then the first type will be used.  For example, if the image is of types "Front" and
+   "Raw", then "front" will be used for the filename.  If unchecked, Picard will use the file name specified in the "Use the
+   following file name for images" setting in the :doc:`options_location` section of the :doc:`options_cover` settings.
 
    .. note::
 
