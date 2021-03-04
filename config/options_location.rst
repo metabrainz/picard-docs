@@ -39,3 +39,17 @@
 
    Check this to replace existing files. This is especially recommended if trying to write "folder" previews
    for Windows.
+
+**Save only a single front image as separate file**
+
+   This tells Picard to only save the first "front" image to a separate file with the release.  If left unchecked, all "front"
+   images will be saved as separate files.
+
+**Always use the primary image type as the file name for non-front images**
+
+   This setting changes how Picard names image files **other than front images**.
+
+   When checked, Picard will use the type of the image (e.g.: back, booklet, etc.) as the filename when saving, as long as
+   the type is not front. If the image has been assigned multiple types, then the first type will be used. For example,
+   if the image is of types "back" and "raw", then "back" will be used for the filename. If unchecked or if the image is
+   of type "front", Picard will use the file name specified in the "Use the following file name for images" setting.
