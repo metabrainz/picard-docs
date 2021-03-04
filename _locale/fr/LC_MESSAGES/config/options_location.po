@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-18 17:04-0700\n"
-"PO-Revision-Date: 2020-11-19 16:09-0700\n"
+"POT-Creation-Date: 2021-03-04 12:38-0700\n"
+"PO-Revision-Date: 2021-03-04 12:40-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -46,25 +46,27 @@ msgstr ""
 "et ne trouveront pas les fichiers séparés."
 
 #: ../../config/options_location.rst:17
-msgid "**Only embed a front image**"
-msgstr "**N'intègre qu'une image avant**"
+msgid "**Embed only a single front image**"
+msgstr "**Incorporer une seule image de face**"
 
 #: ../../config/options_location.rst:19
 msgid ""
-"Embeds only a front image into your music files. Many music players will "
-"only display a single embedded image, so embedding additional images may "
-"not add any functionality."
+"Embeds only a single front image into your music files.  No other "
+"images, regardless of their type, will be embedded. Many music players "
+"will only display a single embedded image, so embedding additional "
+"images may not add any functionality."
 msgstr ""
-"N'intègre qu'une image avant dans vos fichiers musicaux. De nombreux "
-"lecteurs de musique n'afficheront qu'une seule image intégrée, donc "
-"l'incorporation d'images supplémentaires peut ne pas ajouter de "
+"N'intègre qu'une seule image avant dans vos fichiers musicaux. Aucune "
+"autre image, quel que soit son type, ne sera intégrée. De nombreux "
+"lecteurs de musique n'afficheront qu'une seule image intégrée, de sorte "
+"que l'incorporation d'images supplémentaires peut ne pas ajouter de "
 "fonctionnalité."
 
-#: ../../config/options_location.rst:24
+#: ../../config/options_location.rst:25
 msgid "**Save cover images as separate files**"
 msgstr "**Enregistrer les images de couverture dans des fichiers séparés**"
 
-#: ../../config/options_location.rst:26
+#: ../../config/options_location.rst:27
 msgid ""
 "In the file name mask you can use any variable or function from :doc:"
 "`Picard Tags <../variables/variables>` and :doc:`Picard Scripting "
@@ -81,7 +83,7 @@ msgstr ""
 "est \"cover\". Si vous changez ceci en \"cover\", Windows l'utilisera "
 "pour prévisualiser le répertoire contenant."
 
-#: ../../config/options_location.rst:31
+#: ../../config/options_location.rst:32
 msgid ""
 "In addition to scripting variables already available for a track you can "
 "use the following cover art specific variables:"
@@ -89,7 +91,7 @@ msgstr ""
 "En plus des variables de script déjà disponibles pour une piste, vous "
 "pouvez utiliser les variables spécifiques à la pochette suivantes:"
 
-#: ../../config/options_location.rst:34
+#: ../../config/options_location.rst:35
 msgid ""
 "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). "
 "For front images this will always be \"front\"."
@@ -97,21 +99,21 @@ msgstr ""
 "``coverart_maintype``: Le type principal (par exemple: front, back, "
 "booklet). Pour les images avant, ce sera toujours \"front\"."
 
-#: ../../config/options_location.rst:35
+#: ../../config/options_location.rst:36
 msgid "``coverart_types``: Full list of all types assigned to this image."
 msgstr ""
 "``coverart_types``: Liste complète de tous les types affectés à cette "
 "image."
 
-#: ../../config/options_location.rst:36
+#: ../../config/options_location.rst:37
 msgid "``coverart_comment``: The cover art comment."
 msgstr "``coverart_comment``: Le commentaire de la pochette."
 
-#: ../../config/options_location.rst:38
+#: ../../config/options_location.rst:39
 msgid "**Overwrite the file if it already exists**"
 msgstr "**Écraser le fichier s'il existe déjà**"
 
-#: ../../config/options_location.rst:40
+#: ../../config/options_location.rst:41
 msgid ""
 "Check this to replace existing files. This is especially recommended if "
 "trying to write \"folder\" previews for Windows."
@@ -119,6 +121,59 @@ msgstr ""
 "Cochez ceci pour remplacer les fichiers existants. Ceci est "
 "particulièrement recommandé si vous essayez d'écrire des aperçus de "
 "\"folder\" pour Windows."
+
+#: ../../config/options_location.rst:44
+msgid "**Save only a single front image as separate file**"
+msgstr "**Enregistrer une seule image de face en tant que fichier séparé**"
+
+#: ../../config/options_location.rst:46
+msgid ""
+"This tells Picard to only save the first \"front\" image to a separate "
+"file with the release.  No other \"front\" images or images of any other "
+"type will be saved.  If left unchecked, all \"front\" images will be "
+"saved as separate files, along with any other specified image types to "
+"be downloaded."
+msgstr ""
+"Cela indique à Picard de ne sauvegarder que la première image «avant» "
+"dans un fichier séparé avec la version. Aucune autre image «avant» ou "
+"image d'un autre type ne sera enregistrée. Si cette case n'est pas "
+"cochée, toutes les images «avant» seront enregistrées en tant que "
+"fichiers séparés, avec tout autre type d'image spécifié à télécharger."
+
+#: ../../config/options_location.rst:50
+msgid ""
+"**Always use the primary image type as the file name for non-front "
+"images**"
+msgstr ""
+"**Utilisez toujours le type d'image principal comme nom de fichier pour "
+"les images non recto**"
+
+#: ../../config/options_location.rst:52
+msgid ""
+"This setting changes how Picard names image files **other than front "
+"images**."
+msgstr ""
+"Ce paramètre modifie la manière dont Picard nomme les fichiers image "
+"**autres que les images avant**."
+
+#: ../../config/options_location.rst:54
+msgid ""
+"When checked, Picard will use the type of the image (e.g.: back, "
+"booklet, etc.) as the filename when saving, as long as the type is not "
+"front. If the image has been assigned multiple types, then the first "
+"type will be used. For example, if the image is of types \"back\" and "
+"\"raw\", then \"back\" will be used for the filename. If unchecked or if "
+"the image is of type \"front\", Picard will use the file name specified "
+"in the \"Use the following file name for images\" setting."
+msgstr ""
+"Lorsqu'elle est cochée, Picard utilisera le type de l'image (par "
+"exemple: dos, livret, etc.) comme nom de fichier lors de "
+"l'enregistrement, tant que le type n'est pas au recto. Si plusieurs "
+"types ont été attribués à l'image, le premier type sera utilisé. Par "
+"exemple, si l'image est de types «back» et «raw», alors «back» sera "
+"utilisé pour le nom de fichier. Si elle n'est pas cochée ou si l'image "
+"est de type «front», Picard utilisera le nom de fichier spécifié dans le "
+"paramètre «Utiliser le nom de fichier suivant pour les images»."
 
 #~ msgid "Location"
 #~ msgstr "Emplacement"
