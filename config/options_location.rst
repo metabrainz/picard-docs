@@ -14,10 +14,11 @@
    than storing it as a separate image file in the same directory, some music players will only display
    embedded images and don't find the separate files.
 
-**Only embed a single front image**
+**Embed only a single front image**
 
-   Embeds only a single front image into your music files. Many music players will only display a single
-   embedded image, so embedding additional images may not add any functionality.
+   Embeds only a single front image into your music files.  No other images, regardless of their type,
+   will be embedded. Many music players will only display a single embedded image, so embedding additional
+   images may not add any functionality.
 
 .. _ref-local-images:
 
