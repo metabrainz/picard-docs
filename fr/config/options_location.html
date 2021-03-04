@@ -248,9 +248,9 @@
 <blockquote>
 <div><p>Permet aux images d’être intégrées directement dans vos fichiers musicaux. Bien que cela utilisera plus d’espace de stockage que de le stocker en tant que fichier image séparé dans le même répertoire, certains lecteurs de musique afficheront uniquement les images intégrées et ne trouveront pas les fichiers séparés.</p>
 </div></blockquote>
-<p><strong>N’intègre qu’une image avant</strong></p>
+<p><strong>Incorporer une seule image de face</strong></p>
 <blockquote>
-<div><p>N’intègre qu’une image avant dans vos fichiers musicaux. De nombreux lecteurs de musique n’afficheront qu’une seule image intégrée, donc l’incorporation d’images supplémentaires peut ne pas ajouter de fonctionnalité.</p>
+<div><p>N’intègre qu’une seule image avant dans vos fichiers musicaux. Aucune autre image, quel que soit son type, ne sera intégrée. De nombreux lecteurs de musique n’afficheront qu’une seule image intégrée, de sorte que l’incorporation d’images supplémentaires peut ne pas ajouter de fonctionnalité.</p>
 </div></blockquote>
 <p id="ref-local-images"><strong>Enregistrer les images de couverture dans des fichiers séparés</strong></p>
 <blockquote>
@@ -265,6 +265,15 @@
 <p><strong>Écraser le fichier s’il existe déjà</strong></p>
 <blockquote>
 <div><p>Cochez ceci pour remplacer les fichiers existants. Ceci est particulièrement recommandé si vous essayez d’écrire des aperçus de « folder » pour Windows.</p>
+</div></blockquote>
+<p><strong>Enregistrer une seule image de face en tant que fichier séparé</strong></p>
+<blockquote>
+<div><p>Cela indique à Picard de ne sauvegarder que la première image «avant» dans un fichier séparé avec la version. Aucune autre image «avant» ou image d’un autre type ne sera enregistrée. Si cette case n’est pas cochée, toutes les images «avant» seront enregistrées en tant que fichiers séparés, avec tout autre type d’image spécifié à télécharger.</p>
+</div></blockquote>
+<p><strong>Utilisez toujours le type d’image principal comme nom de fichier pour les images non recto</strong></p>
+<blockquote>
+<div><p>Ce paramètre modifie la manière dont Picard nomme les fichiers image <strong>autres que les images avant</strong>.</p>
+<p>Lorsqu’elle est cochée, Picard utilisera le type de l’image (par exemple: dos, livret, etc.) comme nom de fichier lors de l’enregistrement, tant que le type n’est pas au recto. Si plusieurs types ont été attribués à l’image, le premier type sera utilisé. Par exemple, si l’image est de types «back» et «raw», alors «back» sera utilisé pour le nom de fichier. Si elle n’est pas cochée ou si l’image est de type «front», Picard utilisera le nom de fichier spécifié dans le paramètre «Utiliser le nom de fichier suivant pour les images».</p>
 </div></blockquote>
 </div>
 
