@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-04 10:24-0700\n"
-"PO-Revision-Date: 2021-03-04 10:31-0700\n"
+"POT-Creation-Date: 2021-03-04 11:55-0700\n"
+"PO-Revision-Date: 2021-03-04 11:58-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -46,19 +46,19 @@ msgstr ""
 "et ne trouveront pas les fichiers séparés."
 
 #: ../../config/options_location.rst:17
-msgid "**Only embed a front image**"
-msgstr "**N'intègre qu'une image avant**"
+msgid "**Only embed a single front image**"
+msgstr "**N'intègre qu'une seule image de face**"
 
 #: ../../config/options_location.rst:19
 msgid ""
-"Embeds only a front image into your music files. Many music players will "
-"only display a single embedded image, so embedding additional images may "
-"not add any functionality."
+"Embeds only a single front image into your music files. Many music "
+"players will only display a single embedded image, so embedding "
+"additional images may not add any functionality."
 msgstr ""
-"N'intègre qu'une image avant dans vos fichiers musicaux. De nombreux "
-"lecteurs de musique n'afficheront qu'une seule image intégrée, donc "
-"l'incorporation d'images supplémentaires peut ne pas ajouter de "
-"fonctionnalité."
+"N'intègre qu'une seule image avant dans vos fichiers musicaux. De "
+"nombreux lecteurs de musique n'afficheront qu'une seule image intégrée, "
+"de sorte que l'incorporation d'images supplémentaires peut ne pas "
+"ajouter de fonctionnalité."
 
 #: ../../config/options_location.rst:24
 msgid "**Save cover images as separate files**"
@@ -127,15 +127,18 @@ msgstr "**Enregistrer une seule image de face en tant que fichier séparé**"
 #: ../../config/options_location.rst:45
 msgid ""
 "This tells Picard to only save the first \"front\" image to a separate "
-"file with the release.  If left unchecked, all \"front\" images will be "
-"saved as separate files."
+"file with the release.  No other \"front\" images or images of any other "
+"type will be saved.  If left unchecked, all \"front\" images will be "
+"saved as separate files, along with any other specified image types to "
+"be downloaded."
 msgstr ""
 "Cela indique à Picard de ne sauvegarder que la première image «avant» "
-"dans un fichier séparé avec la version. Si cette case n'est pas cochée, "
-"toutes les images «avant» seront enregistrées en tant que fichiers "
-"séparés."
+"dans un fichier séparé avec la version. Aucune autre image «avant» ou "
+"image d'un autre type ne sera enregistrée. Si cette case n'est pas "
+"cochée, toutes les images «avant» seront enregistrées en tant que "
+"fichiers séparés, avec tout autre type d'image spécifié à télécharger."
 
-#: ../../config/options_location.rst:48
+#: ../../config/options_location.rst:49
 msgid ""
 "**Always use the primary image type as the file name for non-front "
 "images**"
@@ -143,7 +146,7 @@ msgstr ""
 "**Utilisez toujours le type d'image principal comme nom de fichier pour "
 "les images non recto**"
 
-#: ../../config/options_location.rst:50
+#: ../../config/options_location.rst:51
 msgid ""
 "This setting changes how Picard names image files **other than front "
 "images**."
@@ -151,7 +154,7 @@ msgstr ""
 "Ce paramètre modifie la manière dont Picard nomme les fichiers image "
 "**autres que les images avant**."
 
-#: ../../config/options_location.rst:52
+#: ../../config/options_location.rst:53
 msgid ""
 "When checked, Picard will use the type of the image (e.g.: back, "
 "booklet, etc.) as the filename when saving, as long as the type is not "
