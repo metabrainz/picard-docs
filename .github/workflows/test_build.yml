@@ -21,7 +21,6 @@ on:
       - '**/images/*'
       - '_static/**'
       - '_templates/**'
-      - '.github/workflows/*.yml'
       - 'setup.py'
       - 'conf.py'
       - 'tag_mapping.py'
@@ -88,7 +87,6 @@ jobs:
         sudo apt-get install latexmk
         sudo apt-get install xzdec
         sudo apt-get install texlive
-        sudo apt-get install texlive-full
         sudo apt-get install texlive-latex-extra
         sudo apt-get install xindy
     - name: Build PDF Files
