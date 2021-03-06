@@ -100,9 +100,17 @@
       }
 
       var counter = 1;
+      // Check if already redirected to a not found page
       if (src_path_parts[src_path_parts.length - 1] == not_found) {
          if (debug) { window.alert("Unable to find the not_found.html file."); }
-         document.getElementById('redirection_error').innerHTML = "<h1>Redirection Error</h1>\n<p>We're sorry but there was a problem redirecting to your requested page.</p>";
+         if (src_path_parts[src_path_parts.length - 2] == default_language) {
+            document.getElementById('redirection_error').innerHTML = "<h1>Redirection Error</h1>\n<p>We're sorry but there was a problem redirecting to your requested page.</p>";
+         }
+         else {
+            target_url = src_protocol + '//' + src_host + '/v' + stable_version + "/" + default_language + '/' + not_found;
+            if (debug) { window.alert("Redirecting to:\n" + target_url); }
+            window.location.replace(target_url);
+         }
       }
       else {
          // Check for GitHub Pages style version number
@@ -186,7 +194,7 @@
          }
 
          // Redirect to the new target
-         window.location.href = target_url
+         window.location.href = target_url;
       }
    </script>
 </body>
