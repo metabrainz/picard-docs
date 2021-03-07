@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-04 12:38-0700\n"
-"PO-Revision-Date: 2021-03-04 12:40-0700\n"
+"POT-Creation-Date: 2021-03-07 15:32-0700\n"
+"PO-Revision-Date: 2021-03-07 15:39-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -73,23 +73,24 @@ msgid ""
 "Functions <../functions/list_by_type>`. The mask should not contain a "
 "file extension; this is added automatically based on the actual image "
 "type. The default value is \"cover\". If you change this to \"folder\", "
-"Windows will use it to preview the containing directory."
+"Windows will display the image as a preview of the containing directory."
 msgstr ""
 "Dans le masque de nom de fichier, vous pouvez utiliser n'importe quelle "
-"variable ou fonction de :doc:`Picard Tags <../variables/variables>` et :"
-"doc:`Picard Scripting Functions <../functions/list_by_type>`. Le masque "
-"ne doit pas contenir d'extension de fichier; ceci est ajouté "
-"automatiquement en fonction du type d'image réel. La valeur par défaut "
-"est \"cover\". Si vous changez ceci en \"cover\", Windows l'utilisera "
-"pour prévisualiser le répertoire contenant."
+"variable ou fonction de :doc:`Étiquettes Picard <../variables/"
+"variables>` et :doc:`Fonctions des scripts Picard <../functions/"
+"list_by_type>`. Le masque ne doit pas contenir d'extension de fichier; "
+"celle-ci est ajoutée automatiquement en fonction du type d'image réel. "
+"La valeur par défaut est \"cover\". Si vous changez cette valeur pour "
+"\"folder\", Windows affichera l'image comme un aperçu du répertoire "
+"contenant le fichier."
 
 #: ../../config/options_location.rst:32
 msgid ""
-"In addition to scripting variables already available for a track you can "
-"use the following cover art specific variables:"
+"In addition to scripting variables already available for a track, you "
+"can use the following cover art specific variables:"
 msgstr ""
-"En plus des variables de script déjà disponibles pour une piste, vous "
-"pouvez utiliser les variables spécifiques à la pochette suivantes:"
+"En plus des variables de script déjà disponibles pour un titre, vous "
+"pouvez utiliser les variables suivantes spécifiques au cover art :"
 
 #: ../../config/options_location.rst:35
 msgid ""
@@ -110,10 +111,36 @@ msgid "``coverart_comment``: The cover art comment."
 msgstr "``coverart_comment``: Le commentaire de la pochette."
 
 #: ../../config/options_location.rst:39
+msgid "For example, specifying a file naming mask such as::"
+msgstr ""
+"Par exemple, en spécifiant un masque de dénomination de fichier tel que::"
+
+#: ../../config/options_location.rst:43
+msgid ""
+"will preface the file name with the album artist, original release year "
+"and album title."
+msgstr ""
+"précèdera le nom du fichier avec l'artiste de l'album, l'année de sortie "
+"de l'original et le titre de l'album."
+
+#: ../../config/options_location.rst:45
+msgid ""
+"You can also have Picard save the images to a subdirectory by including "
+"this in the file naming mask. For example::"
+msgstr ""
+"Vous pouvez également demander à Picard d'enregistrer les images dans un "
+"sous-répertoire en l'incluant dans le masque de dénomination des "
+"fichiers. Par exemple::"
+
+#: ../../config/options_location.rst:49
+msgid "which will place the images in a subdirectory called \"Artwork\"."
+msgstr "qui placera les images dans un sous-répertoire appelé \"Artwork\"."
+
+#: ../../config/options_location.rst:51
 msgid "**Overwrite the file if it already exists**"
 msgstr "**Écraser le fichier s'il existe déjà**"
 
-#: ../../config/options_location.rst:41
+#: ../../config/options_location.rst:53
 msgid ""
 "Check this to replace existing files. This is especially recommended if "
 "trying to write \"folder\" previews for Windows."
@@ -122,11 +149,11 @@ msgstr ""
 "particulièrement recommandé si vous essayez d'écrire des aperçus de "
 "\"folder\" pour Windows."
 
-#: ../../config/options_location.rst:44
+#: ../../config/options_location.rst:56
 msgid "**Save only a single front image as separate file**"
 msgstr "**Enregistrer une seule image de face en tant que fichier séparé**"
 
-#: ../../config/options_location.rst:46
+#: ../../config/options_location.rst:58
 msgid ""
 "This tells Picard to only save the first \"front\" image to a separate "
 "file with the release.  No other \"front\" images or images of any other "
@@ -140,7 +167,7 @@ msgstr ""
 "cochée, toutes les images «avant» seront enregistrées en tant que "
 "fichiers séparés, avec tout autre type d'image spécifié à télécharger."
 
-#: ../../config/options_location.rst:50
+#: ../../config/options_location.rst:62
 msgid ""
 "**Always use the primary image type as the file name for non-front "
 "images**"
@@ -148,7 +175,7 @@ msgstr ""
 "**Utilisez toujours le type d'image principal comme nom de fichier pour "
 "les images non recto**"
 
-#: ../../config/options_location.rst:52
+#: ../../config/options_location.rst:64
 msgid ""
 "This setting changes how Picard names image files **other than front "
 "images**."
@@ -156,7 +183,7 @@ msgstr ""
 "Ce paramètre modifie la manière dont Picard nomme les fichiers image "
 "**autres que les images avant**."
 
-#: ../../config/options_location.rst:54
+#: ../../config/options_location.rst:66
 msgid ""
 "When checked, Picard will use the type of the image (e.g.: back, "
 "booklet, etc.) as the filename when saving, as long as the type is not "
