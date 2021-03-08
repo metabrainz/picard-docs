@@ -260,14 +260,24 @@ images may not add any functionality.</p>
 <div><p>In the file name mask you can use any variable or function from <a class="reference internal" href="../variables/variables.html"><span class="doc">Picard Tags</span></a>
 and <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">Picard Scripting Functions</span></a>. The mask should not contain a file extension; this is
 added automatically based on the actual image type. The default value is “cover”. If you change this to
-“folder”, Windows will use it to preview the containing directory.</p>
-<p>In addition to scripting variables already available for a track you can use the following cover art
+“folder”, Windows will display the image as a preview of the containing directory.</p>
+<p>In addition to scripting variables already available for a track, you can use the following cover art
 specific variables:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">coverart_maintype</span></code>: The primary type (e.g.: front, medium, booklet). For front images this will always be “front”.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">coverart_types</span></code>: Full list of all types assigned to this image.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">coverart_comment</span></code>: The cover art comment.</p></li>
 </ul>
+<p>For example, specifying a file naming mask such as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">originalyear</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">coverart_maintype</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>will preface the file name with the album artist, original release year and album title.</p>
+<p>You can also have Picard save the images to a subdirectory by including this in the file naming mask. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Artwork</span><span class="o">/%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">originalyear</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">coverart_maintype</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>which will place the images in a subdirectory called “Artwork”.</p>
 </div></blockquote>
 <p><strong>Overwrite the file if it already exists</strong></p>
 <blockquote>

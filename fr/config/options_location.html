@@ -254,13 +254,23 @@
 </div></blockquote>
 <p id="ref-local-images"><strong>Enregistrer les images de couverture dans des fichiers séparés</strong></p>
 <blockquote>
-<div><p>Dans le masque de nom de fichier, vous pouvez utiliser n’importe quelle variable ou fonction de <a class="reference internal" href="../variables/variables.html"><span class="doc">Picard Tags</span></a> et <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">Picard Scripting Functions</span></a>. Le masque ne doit pas contenir d’extension de fichier; ceci est ajouté automatiquement en fonction du type d’image réel. La valeur par défaut est « cover ». Si vous changez ceci en « cover », Windows l’utilisera pour prévisualiser le répertoire contenant.</p>
-<p>En plus des variables de script déjà disponibles pour une piste, vous pouvez utiliser les variables spécifiques à la pochette suivantes:</p>
+<div><p>Dans le masque de nom de fichier, vous pouvez utiliser n’importe quelle variable ou fonction de <a class="reference internal" href="../variables/variables.html"><span class="doc">Étiquettes Picard</span></a> et <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">Fonctions des scripts Picard</span></a>. Le masque ne doit pas contenir d’extension de fichier; celle-ci est ajoutée automatiquement en fonction du type d’image réel. La valeur par défaut est « cover ». Si vous changez cette valeur pour « folder », Windows affichera l’image comme un aperçu du répertoire contenant le fichier.</p>
+<p>En plus des variables de script déjà disponibles pour un titre, vous pouvez utiliser les variables suivantes spécifiques au cover art :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">coverart_maintype</span></code>: Le type principal (par exemple: front, back, booklet). Pour les images avant, ce sera toujours « front ».</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">coverart_types</span></code>: Liste complète de tous les types affectés à cette image.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">coverart_comment</span></code>: Le commentaire de la pochette.</p></li>
 </ul>
+<p>Par exemple, en spécifiant un masque de dénomination de fichier tel que:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">originalyear</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">coverart_maintype</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>précèdera le nom du fichier avec l’artiste de l’album, l’année de sortie de l’original et le titre de l’album.</p>
+<p>Vous pouvez également demander à Picard d’enregistrer les images dans un sous-répertoire en l’incluant dans le masque de dénomination des fichiers. Par exemple:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Artwork</span><span class="o">/%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">originalyear</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">coverart_maintype</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>qui placera les images dans un sous-répertoire appelé « Artwork ».</p>
 </div></blockquote>
 <p><strong>Écraser le fichier s’il existe déjà</strong></p>
 <blockquote>
