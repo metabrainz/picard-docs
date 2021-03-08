@@ -27,14 +27,26 @@
    In the file name mask you can use any variable or function from :doc:`Picard Tags <../variables/variables>`
    and :doc:`Picard Scripting Functions <../functions/list_by_type>`. The mask should not contain a file extension; this is
    added automatically based on the actual image type. The default value is "cover". If you change this to
-   "folder", Windows will use it to preview the containing directory.
+   "folder", Windows will display the image as a preview of the containing directory.
 
-   In addition to scripting variables already available for a track you can use the following cover art
+   In addition to scripting variables already available for a track, you can use the following cover art
    specific variables:
 
    * ``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For front images this will always be "front".
    * ``coverart_types``: Full list of all types assigned to this image.
    * ``coverart_comment``: The cover art comment.
+
+   For example, specifying a file naming mask such as::
+
+      %albumartist% - %originalyear% - %album% - %coverart_maintype%
+
+   will preface the file name with the album artist, original release year and album title.
+
+   You can also have Picard save the images to a subdirectory by including this in the file naming mask. For example::
+
+      Artwork/%albumartist% - %originalyear% - %album% - %coverart_maintype%
+
+   which will place the images in a subdirectory called "Artwork".
 
 **Overwrite the file if it already exists**
 
