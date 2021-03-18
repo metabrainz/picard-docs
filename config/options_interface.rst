@@ -59,8 +59,9 @@
 
     .. note::
 
-        If anything other than "Default" is selected, then the colors assigned in the :doc:`options_interface_colors` section
-        will not be applied.
+        The colors for the light and dark themes can be customized in the :doc:`options_interface_colors` section.  Separate sets of
+        color selections are maintained for the light and dark themes.  The colors for the currently displayed theme are the ones
+        displayed for editing.
 
 **Customize action toolbar**
 
