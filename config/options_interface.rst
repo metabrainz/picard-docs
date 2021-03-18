@@ -11,20 +11,6 @@
     If this option is disabled, the text labels under the icons in the toolbar will not be displayed,
     causing the toolbar to appear a little smaller.
 
-**Use system theme**
-
-    By default Picard uses the Qt Fusion theme for the user interface. If you enable this option
-    Picard will instead use the default Qt theme configured on your system. How to change the Qt
-    theme depends on your desktop environment.
-
-    .. note::
-        This option is not available on Windows and macOS.
-
-    .. warning::
-
-        Please be aware that using the system theme might cause the user interface to be not shown correctly.
-        If this is the case disable the "Use system theme" option to use Picard's default theme again.
-
 **Allow selection of multiple directories**
 
     Enabling this option will bypass the native directory selector and use Qt's file dialog.  This
@@ -57,6 +43,24 @@
 
     By default, Picard will display in the language displayed by your operating system, however you can
     override this and select a different language if needed.
+
+**User interface color theme**
+
+    This option allows the user to select the color theme used by Picard. On macOS and Windows systems, the available choices are:
+
+    * Default - The default color scheme based on the operating system display settings.
+    * Light - A light display theme.
+    * Dark - A dark display theme.
+
+    On Linux and similar operating systems, the available choices are:
+
+    * Default - The default color scheme based on the operating system display settings.
+    * System - The Qt5 theme configured in the desktop environment.
+
+    .. note::
+
+        If anything other than "Default" is selected, then the colors assigned in the :doc:`options_interface_colors` section
+        will not be applied.
 
 **Customize action toolbar**
 
