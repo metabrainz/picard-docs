@@ -62,7 +62,7 @@ after submission, the AcoustID should be available.
 
 .. From https://community.metabrainz.org/t/why-sometimes-acoustids-are-not-available-to-be-uploaded/511870/4
 
-.. It really depends what you are doing. The submission links AcoustId fingerprints to MusicBrainz recording IDs.
+.. raw:: latex
 
 .. 1. If you use the "Generate fingerprints" button on files already matched to tracks in the right pane, the submission should be available
 

@@ -9,3 +9,4 @@ Tutorials
    naming_script
    acoustid
    multiple_release_countries
+   write_plugin
