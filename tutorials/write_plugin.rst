@@ -9,7 +9,7 @@ will help get you started in turning your great idea a reality.
 
 Picard plugins are written in Python, so that's the language you'll be using.  Please check the `INSTALL.md
 <https://github.com/metabrainz/picard/blob/master/INSTALL.md>`_ file on the Picard repository on GitHub to see the minimum
-version requirements.  Also refer to the :doc:`Plugins API <../appendices/plugins_api>` for addition information, including
+version requirements.  Also refer to the :doc:`Plugins API <../appendices/plugins_api>` for additional information, including
 the parameters passed to each of the function types.
 
 .. note::
