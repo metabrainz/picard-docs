@@ -48,6 +48,7 @@ Contributors include (in alphabetic surname order):
 - Rahul Kumar Gupta
 - Wieland Hoffmann
 - jesus2099
+- David Kellner
 - Jun Kim
 - Sambhav Kothari
 - Laurent Monin
