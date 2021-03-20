@@ -85,11 +85,8 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
    tutorials/naming_script
    tutorials/acoustid
-<<<<<<< Upstream, based on origin/master
    tutorials/multiple_release_countries
-=======
    tutorials/write_plugin
->>>>>>> 313d5ce Add tutorial for developing a basic plugin
 
 
 .. toctree::
