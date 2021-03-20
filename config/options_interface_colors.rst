@@ -30,3 +30,8 @@ conditions:
 * **Tag changed**: changed tags in the metadata pane
 
 * **Tag removed**: removed tags in the metadata pane
+
+.. note::
+
+   Separate sets of color selections are maintained for the light and dark themes.  The colors for
+   the currently displayed theme are the ones displayed for editing.
