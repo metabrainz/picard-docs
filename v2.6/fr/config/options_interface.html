@@ -244,18 +244,6 @@
 <blockquote>
 <div><p>Si cette option est désactivée, les étiquettes de texte sous les icônes de la barre d’outils ne seront pas affichées, ce qui fait que la barre d’outils apparaîtra un peu plus petite.</p>
 </div></blockquote>
-<p><strong>Utiliser le thème du système</strong></p>
-<blockquote>
-<div><p>Par défaut, Picard utilise le thème Qt Fusion pour l’interface utilisateur. Si vous activez cette option, Picard utilisera à la place le thème Qt par défaut configuré sur votre système. La façon de changer le thème Qt dépend de votre environnement de bureau.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Cette option n’est pas disponible sur Windows et macOS.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Avertissement</p>
-<p>Veuillez noter que l’utilisation du thème système peut entraîner un affichage incorrect de l’interface utilisateur. Si tel est le cas, désactivez l’option « Utiliser le thème système » pour utiliser à nouveau le thème par défaut de Picard.</p>
-</div>
-</div></blockquote>
 <p><strong>Autoriser la sélection de plusieurs répertoires</strong></p>
 <blockquote>
 <div><p>L’activation de cette option contournera le sélecteur de répertoire natif et utilisera la boîte de dialogue de fichier de Qt. Cela peut être souhaitable car le sélecteur de répertoire natif ne vous permet généralement pas de sélectionner plus d’un répertoire. Ceci s’applique à la boîte de dialogue <span class="menuselection">« Fichier ‣ Ajouter un dossier »</span>. Le navigateur de fichiers permet toujours la sélection de plusieurs répertoires.</p>
@@ -279,6 +267,24 @@
 <p><strong>Langue de l’interface utilisateur</strong></p>
 <blockquote>
 <div><p>Par défaut, Picard s’affichera dans la langue affichée par votre système d’exploitation, mais vous pouvez le remplacer et sélectionner une autre langue si nécessaire.</p>
+</div></blockquote>
+<p><strong>Thème de couleurs de l’interface utilisateur</strong></p>
+<blockquote>
+<div><p>Cette option permet à l’utilisateur de sélectionner le thème de couleurs utilisé par Picard. Sur les systèmes macOS et Windows, les choix disponibles sont les suivants:</p>
+<ul class="simple">
+<li><p>Défaut - Le schéma de couleurs par défaut basé sur les paramètres d’affichage du système d’exploitation.</p></li>
+<li><p>Light - Un thème d’affichage lumineux.</p></li>
+<li><p>Dark - Un thème d’affichage sombre.</p></li>
+</ul>
+<p>Sous Linux et les systèmes d’exploitation similaires, les choix disponibles sont les suivants:</p>
+<ul class="simple">
+<li><p>Défaut - Le schéma de couleurs par défaut basé sur les paramètres d’affichage du système d’exploitation.</p></li>
+<li><p>System - Le thème Qt5 configuré dans l’environnement de bureau.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les couleurs des thèmes clair et foncé peuvent être personnalisées dans la section <a class="reference internal" href="options_interface_colors.html"><span class="doc">Couleurs</span></a>.  Des ensembles distincts de sélections de couleurs sont gérés pour les thèmes clairs et foncés.  Les couleurs du thème actuellement affiché sont celles qui sont affichées pour l’édition.</p>
+</div>
 </div></blockquote>
 <p><strong>Personnaliser la barre d’outils d’action</strong></p>
 <blockquote>

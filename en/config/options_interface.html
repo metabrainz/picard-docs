@@ -244,21 +244,6 @@
 <div><p>If this option is disabled, the text labels under the icons in the toolbar will not be displayed,
 causing the toolbar to appear a little smaller.</p>
 </div></blockquote>
-<p><strong>Use system theme</strong></p>
-<blockquote>
-<div><p>By default Picard uses the Qt Fusion theme for the user interface. If you enable this option
-Picard will instead use the default Qt theme configured on your system. How to change the Qt
-theme depends on your desktop environment.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This option is not available on Windows and macOS.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Please be aware that using the system theme might cause the user interface to be not shown correctly.
-If this is the case disable the “Use system theme” option to use Picard’s default theme again.</p>
-</div>
-</div></blockquote>
 <p><strong>Allow selection of multiple directories</strong></p>
 <blockquote>
 <div><p>Enabling this option will bypass the native directory selector and use Qt’s file dialog.  This
@@ -291,6 +276,26 @@ and provide a directory, Picard will always start in the directory provided.</p>
 <blockquote>
 <div><p>By default, Picard will display in the language displayed by your operating system, however you can
 override this and select a different language if needed.</p>
+</div></blockquote>
+<p><strong>User interface color theme</strong></p>
+<blockquote>
+<div><p>This option allows the user to select the color theme used by Picard. On macOS and Windows systems, the available choices are:</p>
+<ul class="simple">
+<li><p>Default - The default color scheme based on the operating system display settings.</p></li>
+<li><p>Light - A light display theme.</p></li>
+<li><p>Dark - A dark display theme.</p></li>
+</ul>
+<p>On Linux and similar operating systems, the available choices are:</p>
+<ul class="simple">
+<li><p>Default - The default color scheme based on the operating system display settings.</p></li>
+<li><p>System - The Qt5 theme configured in the desktop environment.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The colors for the light and dark themes can be customized in the <a class="reference internal" href="options_interface_colors.html"><span class="doc">Colors</span></a> section.  Separate sets of
+color selections are maintained for the light and dark themes.  The colors for the currently displayed theme are the ones
+displayed for editing.</p>
+</div>
 </div></blockquote>
 <p><strong>Customize action toolbar</strong></p>
 <blockquote>
