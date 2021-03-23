@@ -152,7 +152,7 @@ Artists
    :widths: 37 100
 
    "Internal Name", "``artists``"
-   "ID3v2", "``TXXX:Artists``"
+   "ID3v2", "``TXXX:ARTISTS``"
    "Vorbis", "``ARTISTS``"
    "APEv2", "``Artists``"
    "iTunes MP4", "``----:com.apple.iTunes:ARTISTS``"
