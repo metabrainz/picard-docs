@@ -176,7 +176,7 @@ TAG_MAP = [
     {
         "tag_name": "Artists",
         "picard_name": "``artists``",
-        "id3v2": "``TXXX:Artists``",
+        "id3v2": "``TXXX:ARTISTS``",
         "vorbis": "``ARTISTS``",
         "apev2": "``Artists``",
         "itunes": "``----:com.apple.iTunes:ARTISTS``",
