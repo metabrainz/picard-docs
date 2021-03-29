@@ -5,7 +5,7 @@ $unique
 
 | Usage: **$unique(name[,case_sensitive[,separator]])**
 | Category: multi-value
-| Implemented: Picard 2.6
+| Implemented: Picard 2.6.1
 
 **Description:**
 
