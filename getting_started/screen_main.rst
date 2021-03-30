@@ -63,6 +63,12 @@ Below you find a selection of screenshots of Picard's main screen on different s
 | |maclight|
 | Picard on macOS
 
+.. |macdark| image:: images/mainscreen-macos-dark.png
+   :width: 100 %
+
+| |macdark|
+| Picard on macOS (dark mode)
+
 .. |linuxlight| image:: images/mainscreen-linux-plasma-light.png
    :width: 100 %
 
