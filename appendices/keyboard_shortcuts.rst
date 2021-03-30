@@ -53,6 +53,16 @@ Main window
    View activity history           Ctrl+H                  ⌘+⇧+H
    View error/debug log            Ctrl+G                  ⌘+G
 
+   **Metadata view**
+   ---------------------------------------------------------------
+   Add new tag                     Alt+Shift+A             ⌥+⇧+A
+   Edit selected tag               Alt+Shift+E             ⌥+⇧+E
+   Remove selected tag             Alt+Shift+R |br|        ⌥+⇧+R |br|
+                                   Del                     Del |br|
+                                                           ⌘+⌫
+   Copy selected tag value         Ctrl+C                  ⌘+C
+   Paste to selected tag value     Ctrl+V                  ⌘+V
+
    **Other**
    ---------------------------------------------------------------
    Focus search                    Ctrl+F                  ⌘+F
