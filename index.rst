@@ -96,6 +96,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    appendices/plugins_api
    appendices/tag_mapping
    appendices/command_line
+   appendices/keyboard_shortcuts
 
 ..   examples/examples
 
