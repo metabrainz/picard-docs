@@ -74,6 +74,7 @@ functions are:
    func_reversemulti
    func_slice
    func_sortmulti
+   func_unique
 
 
 :index:`Mathematical Functions <scripting functions; mathematical>`
