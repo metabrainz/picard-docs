@@ -66,7 +66,8 @@ class SPHINX_():    # pylint: disable=too-few-public-methods
     BUILD_TARGETS = {
         'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
         'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
-        'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
+        # 'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
+        'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
     }
 
 
@@ -289,6 +290,15 @@ class RemoveFileError(CustomError):
 
 ##############################################################################
 
+class ErrorLintRST():
+    """Special LintRST error for unhandled exceptions.
+    """
+    def __init__(self, type_='INFO', line_=0, message_=''):
+        self.type = type_
+        self.line = line_
+        self.message = message_
+
+
 class LintRST():
     """Lint the restructured text (RST) files.
     """
@@ -299,6 +309,7 @@ class LintRST():
         self.warning_count = 0
         self.error_count = 0
         self.info_count = 0
+        self.untested = 0
         self.linter = restructuredtext_lint
 
     def print_error(self, err):
@@ -312,6 +323,8 @@ class LintRST():
             self.warning_count += 1
         elif err.type == 'INFO':
             self.info_count += 1
+        elif err.type == 'UNTESTED':
+            self.untested += 1
         else:
             # Includes 'ERROR' and 'SEVERE'
             self.error_count += 1
@@ -356,6 +369,9 @@ class LintRST():
                     err_processed = True
                     self.print_error(err)
             print('' if err_processed else ' [OK]')
+        except UnicodeDecodeError as ex:
+            err = ErrorLintRST('UNTESTED', 0, 'Unable to check because of unmapped unicode characters.\n')
+            self.print_error(err)
         except IOError as ex:
             print('\n   [ERROR] Line 0: Error reading file. ({0})'.format(ex,))
             self.error_count += 1
@@ -379,9 +395,9 @@ class LintRST():
                     self.check_file(os.path.join(dir_name, fname), ignore_info)
 
         if ignore_info:
-            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.\n'.format(self.checked_count, self.error_count, self.warning_count))
+            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.  Untested: {3}.\n'.format(self.checked_count, self.error_count, self.warning_count, self.untested))
         else:
-            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.  Info: {3}\n'.format(self.checked_count, self.error_count, self.warning_count, self.info_count))
+            print('\nChecked {0} files.  Errors: {1}.  Warnings: {2}.  Untested: {3}.  Info: {4}\n'.format(self.checked_count, self.error_count, self.warning_count, self.untested, self.info_count))
 
         err = self.error_count + (self.warning_count if fail_on_warnings else 0)
         return 1 if err > 0 else 0
@@ -798,6 +814,22 @@ def save_version_info():
         )
 
 
+def run_command(command):
+    """Executes a command in a subprocess.
+
+    Args:
+        command (str): Command to execute, including all command line parameters.
+    """
+    print('\nExecuting command: {0}\n'.format(command))
+    try:
+        exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
+    except (SubprocessError, FileNotFoundError, OSError) as ex:
+        print("ERROR executing process: {0}".format(ex))
+        exit_code = 1
+    if exit_code:
+        exit_with_code(exit_code)
+
+
 def do_build(target=None, language='', clean=False):
     """Perform the specified build operation.
 
@@ -831,14 +863,7 @@ def do_build(target=None, language='', clean=False):
         SPHINX_.BUILD_TARGETS[target]['extra'],
         language_option,
     ).strip().replace('  ', ' ')
-    print('\nBuilding with command: {0}\n'.format(command))
-    try:
-        exit_code = subprocess.run(command, shell=True, check=True, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
-    except (SubprocessError, FileNotFoundError, OSError) as ex:
-        print("ERROR executing process: {0}".format(ex))
-        exit_code = 1
-    if exit_code:
-        exit_with_code(exit_code)
+    run_command(command)
 
     if target == 'html':
         # Additional HTML processing
@@ -906,6 +931,18 @@ def build_pdf(language=''):
     Keyword Arguments:
         language {str} -- Language to use for the build (default: {''})
     """
+    save_dir = os.getcwd()
+    os.chdir(os.path.join(SPHINX_.BUILD_DIR, 'latex'))
+    build_pdf_command = 'lualatex {0}'.format(BASE_FILE_NAME,)
+    print('\nBuilding PDF output - First Pass')
+    run_command(build_pdf_command)
+    make_index_command = "makeindex -s python.ist {0}".format(BASE_FILE_NAME,)
+    print('\nBuilding PDF output - Building Index')
+    run_command(make_index_command)
+    print('\nBuilding PDF output - Second Pass')
+    run_command(build_pdf_command)
+    os.chdir(save_dir)
+
     try:
         pdf_file = os.path.join(SPHINX_.BUILD_DIR, 'latex', BASE_FILE_NAME + '.pdf')
         target_file = os.path.join(OUTPUT_DIR, '{0}_v{1}_[{2}].pdf'.format(FILE_NAME_ROOT, get_major_minor(CURRENT_VERSION), language))
