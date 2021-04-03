@@ -23,7 +23,7 @@ import conf
 import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.13'
+SCRIPT_VERS = '0.14'
 SCRIPT_COPYRIGHT = '2020'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -66,7 +66,6 @@ class SPHINX_():    # pylint: disable=too-few-public-methods
     BUILD_TARGETS = {
         'html': {'dir': 'html', 'cmd': 'html', 'extra': ''},
         'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
-        # 'pdf': {'dir': 'latex', 'cmd': 'latexpdf', 'extra': ''},
         'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
     }
 
@@ -290,6 +289,7 @@ class RemoveFileError(CustomError):
 
 ##############################################################################
 
+# pylint: disable=too-few-public-methods
 class ErrorLintRST():
     """Special LintRST error for unhandled exceptions.
     """
@@ -369,7 +369,7 @@ class LintRST():
                     err_processed = True
                     self.print_error(err)
             print('' if err_processed else ' [OK]')
-        except UnicodeDecodeError as ex:
+        except UnicodeDecodeError:
             err = ErrorLintRST('UNTESTED', 0, 'Unable to check because of unmapped unicode characters.\n')
             self.print_error(err)
         except IOError as ex:
@@ -1167,7 +1167,7 @@ def main():
 
         elif args.clean_target == 'all':
             clean_mo()
-            for clean_target in SPHINX_.BUILD_TARGETS.keys():
+            for clean_target in SPHINX_.BUILD_TARGETS:
                 clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[clean_target]['dir'])
                 clean_directory(clean_dir, clean_target)
 
