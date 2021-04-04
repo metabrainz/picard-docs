@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Generating tags from file names &mdash; MusicBrainz Picard v2.6 documentation</title>
@@ -35,7 +36,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
         <script src="/version_links.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
@@ -93,14 +93,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">About Picard</span></p>
+              <p><span class="caption-text">About Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
@@ -110,7 +110,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Using Picard</span></p>
+<p><span class="caption-text">Using Picard</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="using.html">General Usage</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="other.html">Other Picard Tasks</a><ul class="current">
@@ -128,7 +128,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<p><span class="caption-text">Workflow Recommendations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
@@ -136,7 +136,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<p><span class="caption-text">Troubleshooting</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
@@ -146,19 +146,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorials</span></p>
+<p><span class="caption-text">Tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendices</span></p>
+<p><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References</span></p>
+<p><span class="caption-text">References</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
@@ -226,12 +226,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="generating-tags-from-file-names">
+  <section id="generating-tags-from-file-names">
 <h1>Generating <span class="target" id="index-0"></span>tags from file names<a class="headerlink" href="#generating-tags-from-file-names" title="Permalink to this headline">¶</a></h1>
 <p>Sometimes files have poor quality tags or no tags at all, but the file names are well structured and
 follow a pattern. In this case you can use <span class="menuselection">“Tools ‣ Tags From <span class="accelerator">F</span>ile Names…”</span> to
 generate the tags from the file names.</p>
-<div class="section" id="basic-usage">
+<section id="basic-usage">
 <h2>Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h2>
 <p>To use this tool, select one or more files loaded into Picard and open the Tags From File Names
 dialog from the menu at <span class="menuselection">“Tools ‣ Tags From <span class="accelerator">F</span>ile Names…”</span>.  The dialog will
@@ -250,8 +250,8 @@ tags for each file name.  Once you are satisfied with the result, you can accept
 the “Ok” button.  The changed tags will be set for the files.  Note that the changes will not be
 saved automatically, you still need to save the files if you want the tags to be written
 (see <a class="reference internal" href="save.html"><span class="doc">Saving Updated Files</span></a>).</p>
-</div>
-<div class="section" id="matching-folders">
+</section>
+<section id="matching-folders">
 <h2>Matching folders<a class="headerlink" href="#matching-folders" title="Permalink to this headline">¶</a></h2>
 <p>The pattern can also match the parent folders of the file. To match for folders use a slash (<code class="docutils literal notranslate"><span class="pre">/</span></code>)
 as separator.  If for example the file is in a folder named after the album, which in turn is
@@ -259,15 +259,15 @@ inside a folder named after the artist (i.e. <code class="file docutils literal 
 could match the artist, album, track number and title with a pattern of
 <code class="samp docutils literal notranslate"><span class="pre">%artist%/%album%/%tracknumber%</span> <span class="pre">-</span> <span class="pre">%title%</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/tags_from_file_names_2.png"><img alt="../_images/tags_from_file_names_2.png" src="../_images/tags_from_file_names_2.png" style="width: 100%;" /></a>
-</div>
-<div class="section" id="replace-underscores-with-spaces">
+</section>
+<section id="replace-underscores-with-spaces">
 <h2>Replace underscores with spaces<a class="headerlink" href="#replace-underscores-with-spaces" title="Permalink to this headline">¶</a></h2>
 <p>Sometimes files have been named without spaces and use underscores instead.  For example a file
 could be named <code class="file docutils literal notranslate"><span class="pre">04_Heart_of_Gold.mp3</span></code>.  By default the title would get extracted as
 “Heart_of_Gold”.  In this case enable the checkbox “Replace underscores with spaces” and use a
 pattern like <code class="samp docutils literal notranslate"><span class="pre">%tracknumber%_%title%</span></code> to extract the title properly as “Heart of Gold”.</p>
-</div>
-<div class="section" id="ignoring-parts-of-the-file-name">
+</section>
+<section id="ignoring-parts-of-the-file-name">
 <h2>Ignoring parts of the file name<a class="headerlink" href="#ignoring-parts-of-the-file-name" title="Permalink to this headline">¶</a></h2>
 <p>Sometimes you don’t want to include parts of the file name in your tags and just want to ignore them.
 The pattern must always match the entire file name, though.  In this case you can use a hidden
@@ -286,8 +286,8 @@ to a hidden variable <code class="samp docutils literal notranslate"><span class
 would create an actual tag which would get stored to the tags.  If you are using a Picard
 version older than 2.5 you will need to remove the unwanted tags before saving the files.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

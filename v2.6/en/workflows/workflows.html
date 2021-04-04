@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Work Flow Recommendations &mdash; MusicBrainz Picard v2.6 documentation</title>
@@ -35,7 +36,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
         <script src="/version_links.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
@@ -93,14 +93,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">About Picard</span></p>
+              <p><span class="caption-text">About Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+<p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
@@ -110,14 +110,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Using Picard</span></p>
+<p><span class="caption-text">Using Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<p><span class="caption-text">Workflow Recommendations</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">General Recommendations</a><ul class="simple">
 </ul>
@@ -127,7 +127,7 @@
 <li class="toctree-l1"><a class="reference internal" href="workflow_metadata.html">When files are not grouped but have some metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<p><span class="caption-text">Troubleshooting</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
@@ -137,19 +137,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorials</span></p>
+<p><span class="caption-text">Tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendices</span></p>
+<p><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
 </ul>
-<p class="caption"><span class="caption-text">References</span></p>
+<p><span class="caption-text">References</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
@@ -215,7 +215,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="work-flow-recommendations">
+  <section id="work-flow-recommendations">
 <h1><span class="target" id="index-0"></span>Work Flow Recommendations<a class="headerlink" href="#work-flow-recommendations" title="Permalink to this headline">¶</a></h1>
 <p>This section provides some recommended workflows for various tagging scenarios.  These workflows are
 based on what are believed to be best practices.</p>
@@ -233,7 +233,7 @@ that you make a backup copy of the files being processed and initially process a
 This will help to ensure that Picard is properly configured (e.g.: settings, scripts, and plugins) and
 produces the expected and desired results.</p>
 </div>
-</div>
+</section>
 
 
            </div>
