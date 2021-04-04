@@ -165,8 +165,10 @@ latex_elements = {
     'pointsize': '11pt',
     # 'preamble': '\\hyphenation{Music-Brainz}',
     'preamble': r'''\hyphenation{Music-Brainz}
-    \newcommand\sphinxbackoftitlepage{''' + my_notice + r'''}
-    ''',
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\newcommand\sphinxbackoftitlepage{''' + my_notice + r'''}
+''',
     'extraclassoptions': 'openany',
     # 'maketitle': r'\newcommand\sphinxbackoftitlepage{<Extra material>}\sphinxmaketitle',
     # 'maketitle': r'\newcommand\sphinxbackoftitlepage{<Extra material>}\sphinxmaketitle',

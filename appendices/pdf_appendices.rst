@@ -8,4 +8,4 @@ Appendices
    plugins_api
    tag_mapping
    command_line
-   keyboard_shortcuts_pdf
+   keyboard_shortcuts
