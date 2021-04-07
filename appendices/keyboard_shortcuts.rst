@@ -50,6 +50,7 @@ View
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Toggle file browser", :kbd:`Ctrl+B`, :kbd:`⌘+B`
+   "Toggle metadata view", :kbd:`Ctrl+Shift+M`, :kbd:`⌘+⇧+M`
 
 Tools
 +++++++++++
