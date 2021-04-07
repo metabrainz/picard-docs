@@ -4,8 +4,7 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Scripting &mdash; MusicBrainz Picard v2.6 documentation</title>
@@ -93,14 +92,14 @@
               
             
             
-              <p><span class="caption-text">About Picard</span></p>
+              <p class="caption"><span class="caption-text">About Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
 </ul>
-<p><span class="caption-text">Getting Started</span></p>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
@@ -115,14 +114,14 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
 </ul>
-<p><span class="caption-text">Using Picard</span></p>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extending.html">Extending Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
 </ul>
-<p><span class="caption-text">Workflow Recommendations</span></p>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
@@ -130,7 +129,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
 </ul>
-<p><span class="caption-text">Troubleshooting</span></p>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
@@ -140,19 +139,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
 </ul>
-<p><span class="caption-text">Tutorials</span></p>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
 </ul>
-<p><span class="caption-text">Appendices</span></p>
+<p class="caption"><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
 </ul>
-<p><span class="caption-text">References</span></p>
+<p class="caption"><span class="caption-text">References</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
@@ -218,7 +217,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="scripting">
+  <div class="section" id="scripting">
 <h1><span class="target" id="index-0"></span>Scripting<a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h1>
 <p>Scripts are used to control some aspects of the operation of Picard.</p>
 <p>There are two types of scripts used in Picard: the file naming script and tagging scripts.
@@ -231,7 +230,7 @@ and there is a thread specific to <a class="reference external" href="https://co
 <p>Please refer to the section on <a class="reference internal" href="scripts.html"><span class="doc">Scripts</span></a> in <a class="reference internal" href="extending.html"><span class="doc">Extending Picard</span></a>
 for additional details about the two types of scripts, including how and when each of the scripts are executed.</p>
 </div>
-<section id="syntax">
+<div class="section" id="syntax">
 <h2><span class="target" id="index-1"></span>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
 <p>The syntax is derived from <a class="reference external" href="https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference">Foobar2000’s titleformat</a>.
 There are three base elements: text, variable and function. Variables consist of
@@ -246,22 +245,22 @@ Picard to not interpret them as part of the script command.  This is done by ins
 a backslash before the character to be escaped.  For example, to set a tag value to <code class="docutils literal notranslate"><span class="pre">($1,000,000)</span></code>
 it would have to be entered as <code class="docutils literal notranslate"><span class="pre">$set(test_tag,\(\$1\,000\,000\))</span></code>.</p>
 </div>
-</section>
-<section id="metadata-variables">
+</div>
+<div class="section" id="metadata-variables">
 <h2>Metadata Variables<a class="headerlink" href="#metadata-variables" title="Permalink to this headline">¶</a></h2>
 <p>See <a class="reference internal" href="../variables/variables.html"><span class="doc">Tags &amp; Variables</span></a> for the list of the variables provided by Picard.</p>
 <p>Picard’s variables can be either simple variables containing a single text
 string, or multi-value variables containing multiple text strings. In scripts, multi-value
 variables are automatically converted to a single text string by joining the values with a
 semicolon “;”, except when used with special multi-value functions.</p>
-</section>
-<section id="scripting-functions">
+</div>
+<div class="section" id="scripting-functions">
 <h2>Scripting Functions<a class="headerlink" href="#scripting-functions" title="Permalink to this headline">¶</a></h2>
 <p>The full list of available scripting functions is available, either
 <a class="reference internal" href="../functions/list_by_name.html"><span class="doc">sorted alphabetically</span></a> or
 <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">grouped by function type</span></a>.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>

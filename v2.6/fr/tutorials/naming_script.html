@@ -4,8 +4,7 @@
 <html class="writer-html5" lang="fr" >
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Ecriture d’un script de nommage de fichier &mdash; Documentation MusicBrainz Picard v2.6</title>
@@ -94,14 +93,14 @@
               
             
             
-              <p><span class="caption-text">À propos de Picard</span></p>
+              <p class="caption"><span class="caption-text">À propos de Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
 </ul>
-<p><span class="caption-text">Commencer</span></p>
+<p class="caption"><span class="caption-text">Commencer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
@@ -111,14 +110,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
 </ul>
-<p><span class="caption-text">Utiliser Picard</span></p>
+<p class="caption"><span class="caption-text">Utiliser Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
-<p><span class="caption-text">Recommandations générales</span></p>
+<p class="caption"><span class="caption-text">Recommandations générales</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
@@ -126,7 +125,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
 </ul>
-<p><span class="caption-text">Dépannage</span></p>
+<p class="caption"><span class="caption-text">Dépannage</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
@@ -136,19 +135,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
 </ul>
-<p><span class="caption-text">Tutoriels</span></p>
+<p class="caption"><span class="caption-text">Tutoriels</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Ecriture d’un script de nommage de fichier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acoustid.html">Compréhension Empreintes acoustiques et AcoustIDs</a></li>
 </ul>
-<p><span class="caption-text">Annexes</span></p>
+<p class="caption"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D: Courts clavier</a></li>
 </ul>
-<p><span class="caption-text">Références</span></p>
+<p class="caption"><span class="caption-text">Références</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
@@ -214,7 +213,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="writing-a-file-naming-script">
+  <div class="section" id="writing-a-file-naming-script">
 <h1>Ecriture d’un <span class="target" id="index-1"></span>script de nommage de fichier<a class="headerlink" href="#writing-a-file-naming-script" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Ecrire un script pour organiser et nommer vos fichiers n’est en fait pas si difficile - ne vous laissez pas intimider par tous les “$”, “%” et les parenthèses. Si vous pouvez écrire un modèle comme « <strong>ARTISTE - (ANNÉE) NOM/PISTE DE L’ALBUM - TITRE DE LA CHANSON</strong> » de la façon dont vous voulez que les fichiers et dossiers soient nommés, vous pouvez facilement traduire cela dans le script approprié.</p>
 <p>Notez que l’utilisation d’un “/” dans la chaîne de formatage sépare le répertoire de sortie du nom de fichier. La chaîne de mise en forme peut contenir n’importe quel nombre de caractères “/”. Tout ce qui précède le dernier “/” est l’emplacement du répertoire, et tout ce qui se trouve après le dernier “/” devient le nom du fichier. Dans notre exemple, nous n’avons qu’un seul caractère “/”, ce qui signifie que nous aurons un niveau de répertoire pour l’album qui contiendra les chansons de cet album.</p>
@@ -222,7 +221,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span>
 </pre></div>
 </div>
-<p>Maintenant, nous voulons le <strong>ANNÉE</strong>. Il n’y a pas de balise <code class="docutils literal notranslate"><span class="pre">année</span></code>, mais il y a <code class="docutils literal notranslate"><span class="pre">date</span></code>. Utilisons ceci pour le moment. Si nous voulons ajouter du texte supplémentaire comme le « <strong>-</strong> », écrivez-le simplement. Nous devons faire attention aux parenthèses, car ce sont des variables spéciales dans les scripts. Nous devons les préfixer avec une barre oblique inverse. Ajoutons tout cela:</p>
+<p>Maintenant, nous voulons le <strong>ANNÉE</strong>. Il n’y a pas de balise <code class="docutils literal notranslate"><span class="pre">année</span></code>, mais il y a <code class="docutils literal notranslate"><span class="pre">date</span></code>. Utilisons ceci pour le moment. Si nous voulons ajouter du texte supplémentaire comme le « <strong>-</strong>« , écrivez-le simplement. Nous devons faire attention aux parenthèses, car ce sont des variables spéciales dans les scripts. Nous devons les préfixer avec une barre oblique inverse. Ajoutons tout cela:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> \<span class="p">(</span><span class="o">%</span><span class="n">date</span><span class="o">%</span>\<span class="p">)</span>
 </pre></div>
 </div>
@@ -261,7 +260,7 @@
 <p class="admonition-title">Voir aussi</p>
 <p>Pour plus d’informations sur les balises et variables disponibles, veuillez consulter la section <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a>. Pour plus d’informations sur les fonctions de script disponibles, veuillez consulter la section <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">Fonctions de script</span></a>.</p>
 </div>
-</section>
+</div>
 
 
            </div>
