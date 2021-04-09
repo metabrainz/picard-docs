@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-09 13:19-0600\n"
+"PO-Revision-Date: 2021-04-09 13:26-0600\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: ../../functions/func_cleanmulti.rst:4
+msgid "$cleanmulti"
+msgstr "$cleanmulti"
+
+#: ../../functions/func_cleanmulti.rst:6
+msgid "Usage: **$cleanmulti(name[,separator])**"
+msgstr "Utilisation: **$cleanmulti(nom[,séparateur])**"
+
+#: ../../functions/func_cleanmulti.rst:7
+msgid "Category: multi-value"
+msgstr "Catégorie : multi-valeurs"
+
+#: ../../functions/func_cleanmulti.rst:8
+msgid "Implemented: Picard 2.7"
+msgstr "Mis en œuvre: Picard 2.7"
+
+#: ../../functions/func_cleanmulti.rst:10
+msgid "**Description:**"
+msgstr "**Description:**"
+
+#: ../../functions/func_cleanmulti.rst:12
+msgid ""
+"Returns a copy of the multi-value variable ``name`` with all empty "
+"elements removed. A literal value representing a multi-value can be "
+"substituted for ``name``, using the ``separator`` (or a semicolon "
+"followed by a space \"; \" if not passed) to coerce the value into a "
+"proper multi-valued variable."
+msgstr ""
+"Retourne une copie de la variable à valeurs multiples ``nom`` avec "
+"tous les éléments vides supprimés. Une valeur littérale représentant "
+"une multivaleur peut être substituée à ``nom``, en utilisant le "
+"séparateur ``séparateur`` (ou un point-virgule suivi d'un espace \"; "
+"\" s'il n'est pas passé) pour contraindre la valeur à devenir une "
+"variable multivaleur correcte."
+
+#: ../../functions/func_cleanmulti.rst:17
+msgid ""
+"The function will return an empty string if ``name`` is missing or if "
+"``separator`` is specified as an empty string."
+msgstr ""
+"La fonction retournera une chaîne vide si le ``nom`` est manquant ou "
+"si le ``séparateur`` est spécifié comme une chaîne vide."
+
+#: ../../functions/func_cleanmulti.rst:20
+msgid "**Example:**"
+msgstr "**Exemple:**"
+
+#: ../../functions/func_cleanmulti.rst:22
+msgid "The following statements will return the values indicated::"
+msgstr "Les instructions suivantes renverront les valeurs indiquées::"
