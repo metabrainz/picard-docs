@@ -71,6 +71,7 @@ functions are:
    func_lenmulti
    func_map
    func_performer
+   func_replacemulti
    func_reversemulti
    func_slice
    func_sortmulti
