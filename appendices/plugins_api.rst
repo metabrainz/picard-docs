@@ -30,7 +30,7 @@ Variables explanation:
   be dropped. Versions available for Picard 2 are "2.0", "2.1" and "2.2".
 
 * **PLUGIN_LICENSE** should be set with the license name of the plugin. If possible use one of the license names
-  from the `SPDX License List <https://spdx.org/licenses/>`_, but you are welcomed to use another licnese if the
+  from the `SPDX License List <https://spdx.org/licenses/>`_, but you are welcomed to use another license if the
   one you chose is not available in the list.
 
 * **PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text.
