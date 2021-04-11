@@ -19,6 +19,8 @@ For each loop, the element value is first stored in the variable ``_loop_value``
 is stored in the variable ``_loop_count``. This allows the element or count value to be
 accessed within the code script.
 
+Empty elements are automatically removed from the output.
+
 .. note::
 
     You cannot save the ``code`` to a variable and then pass the variable to the function
