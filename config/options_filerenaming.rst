@@ -82,6 +82,10 @@ These options determine how Picard handles files when they are saved with update
    and there is a thread specific to `file naming and script snippets
    <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_.
 
+   Below the file naming script edit box is a section showing examples of the output of the script in two columns: input
+   and output.  You can preview the changes that will be made to your actual files by selecting them in the clustering pane
+   prior to opening the Options screen.
+
    .. note::
 
       Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
