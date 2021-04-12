@@ -42,6 +42,9 @@ Empty elements are automatically removed from the output.
        $map(%bar%,$upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B"
        $map(%bar%,$upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
 
+       $setmulti(baz,A; B; x; C)
+       $map(%baz%,$if($eq(%_loop_value%,x),,%_loop_count%=%_loop_value%))
+                                                          ==> "1=A; 2=B; 4=C"
        $map(First:A; Second:B,
            $upper(%_loop_count%=%_loop_value%))           ==>  "1=FIRST:A; 2=SECOND:B"
 
@@ -64,6 +67,9 @@ Empty elements are automatically removed from the output.
        $map(%bar%,
            $upper(%_loop_count%=%_loop_value%),:)  ==>  "1=FIRST:2=A; SECOND:3=B"
 
+       $setmulti(baz,A; B; x; C)
+       $map(%baz%,$if($eq(%_loop_value%,x),,%_loop_count%=%_loop_value%))
+                                                   ==> "1=A; 2=B; 4=C"
        $map(First:A; Second:B,
            $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; 2=SECOND:B"
 
