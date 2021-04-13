@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>$performer &mdash; MusicBrainz Picard v2.6 documentation</title>
+  <title>$replacemulti &mdash; MusicBrainz Picard v2.6 documentation</title>
   
 
   
@@ -42,8 +42,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="$replacemulti" href="func_replacemulti.html" />
-    <link rel="prev" title="$map" href="func_map.html" /> 
+    <link rel="next" title="$reversemulti" href="func_reversemulti.html" />
+    <link rel="prev" title="$performer" href="func_performer.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -115,8 +115,8 @@
 <li class="toctree-l3"><a class="reference internal" href="func_join.html">$join</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_lenmulti.html">$lenmulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_map.html">$map</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">$performer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="func_replacemulti.html">$replacemulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_performer.html">$performer</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">$replacemulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_reversemulti.html">$reversemulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_slice.html">$slice</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_sortmulti.html">$sortmulti</a></li>
@@ -219,7 +219,7 @@
         
           <li><a href="list_by_type.html">Scripting Functions</a> &raquo;</li>
         
-      <li>$performer</li>
+      <li>$replacemulti</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -236,30 +236,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="performer">
-<h1>$performer<a class="headerlink" href="#performer" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="replacemulti">
+<h1>$replacemulti<a class="headerlink" href="#replacemulti" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line">Usage: <strong>$performer(pattern[,separator])</strong></div>
+<div class="line">Usage: <strong>$replacemulti(name,search,replace[,separator])</strong></div>
 <div class="line">Category: multi-value</div>
-<div class="line">Implemented: Picard 0.10</div>
+<div class="line">Implemented: Picard 2.7</div>
 </div>
 <p><strong>Description:</strong></p>
-<p>Returns the performers where the performance type matches <code class="docutils literal notranslate"><span class="pre">pattern</span></code> separated by
-<code class="docutils literal notranslate"><span class="pre">separator</span></code> (or a comma followed by a space “, ” if not passed).  If <code class="docutils literal notranslate"><span class="pre">pattern</span></code>
-is blank, then all performers will be returned.  Note that the <code class="docutils literal notranslate"><span class="pre">pattern</span></code> to be
-matched is case-sensitive.</p>
+<p>Replaces occurrences of <code class="docutils literal notranslate"><span class="pre">search</span></code> with <code class="docutils literal notranslate"><span class="pre">replace</span></code> in the multi-value variable <code class="docutils literal notranslate"><span class="pre">name</span></code> and
+returns the resulting multi-value variable string with the elements separated by <code class="docutils literal notranslate"><span class="pre">separator</span></code>
+(or the default separator of a semicolon followed by a space “; ” if not passed).</p>
+<p>Empty elements are automatically removed from the output.</p>
 <p><strong>Example:</strong></p>
-<p>With the performer tags as <code class="docutils literal notranslate"><span class="pre">performer:guitar</span></code> = “Ann”, <code class="docutils literal notranslate"><span class="pre">performer:rhythm-guitar</span></code> =
-“Bob” and <code class="docutils literal notranslate"><span class="pre">performer:drums</span></code> = “Cindy”, the following statements will return the
-values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,guitar)
-$performer(%foo%)          ==&gt;  &quot;Ann, Bob&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$setmulti(foo,Electronic; Idm; Techno)
+$replacemulti(%foo%,Idm,IDM)                ==&gt;  &quot;Electronic; IDM; Techno&quot;
 
-$performer(guitar)         ==&gt;  &quot;Ann, Bob&quot;
-$performer(Guitar)         ==&gt;  &quot;&quot;
-$performer(rhythm-guitar)  ==&gt;  &quot;Bob&quot;
-$performer()               ==&gt;  &quot;Ann, Bob, Cindy&quot;
-$performer(, / )           ==&gt;  &quot;Ann / Bob / Cindy&quot;
+$setmulti(foo,Electronic; Jungle; Bardcore)
+$replacemulti(%foo%,Bardcore,Hardcore)      ==&gt;  &quot;Electronic; Jungle; Hardcore&quot;
+
+$setmulti(foo,One; Two; Three)
+$replacemulti(%foo%,Four,Five)              ==&gt;  &quot;One; Two; Three&quot;
+
+$setmulti(foo,Four; Five; Six)
+$replacemulti(%foo%,Five,)                  ==&gt;  &quot;Four; Six&quot;
 </pre></div>
 </div>
 </div>
@@ -272,10 +273,10 @@ $performer(, / )           ==&gt;  &quot;Ann / Bob / Cindy&quot;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="func_replacemulti.html" class="btn btn-neutral float-right" title="$replacemulti" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="func_reversemulti.html" class="btn btn-neutral float-right" title="$reversemulti" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="func_map.html" class="btn btn-neutral float-left" title="$map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="func_performer.html" class="btn btn-neutral float-left" title="$performer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -314,14 +315,14 @@ $performer(, / )           ==&gt;  &quot;Ann / Bob / Cindy&quot;
       <dl id="select_version">
         <dt>Select Version</dt>
       </dl>
-      <script>list_versions('en', 'functions/func_performer');</script>
+      <script>list_versions('en', 'functions/func_replacemulti');</script>
       <dl>
         <dt>Select Language</dt>
         
         
-        <dd><a href="../../en/functions/func_performer.html" class="__ptNoRemap">English</a></dd>
+        <dd><a href="../../en/functions/func_replacemulti.html" class="__ptNoRemap">English</a></dd>
         
-        <dd><a href="../../fr/functions/func_performer.html" class="__ptNoRemap">Français</a></dd>
+        <dd><a href="../../fr/functions/func_replacemulti.html" class="__ptNoRemap">Français</a></dd>
         
         
       </dl>

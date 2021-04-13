@@ -116,6 +116,7 @@
 <li class="toctree-l3"><a class="reference internal" href="func_lenmulti.html">$lenmulti</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">$map</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_performer.html">$performer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_replacemulti.html">$replacemulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_reversemulti.html">$reversemulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_slice.html">$slice</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_sortmulti.html">$sortmulti</a></li>
@@ -251,6 +252,7 @@ into a proper multi-valued variable.</p>
 <p>For each loop, the element value is first stored in the variable <code class="docutils literal notranslate"><span class="pre">_loop_value</span></code> and the count
 is stored in the variable <code class="docutils literal notranslate"><span class="pre">_loop_count</span></code>. This allows the element or count value to be
 accessed within the code script.</p>
+<p>Empty elements are automatically removed from the output.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You cannot save the <code class="docutils literal notranslate"><span class="pre">code</span></code> to a variable and then pass the variable to the function
@@ -267,6 +269,9 @@ $setmulti(bar,First:A; Second:B)
 $map(%bar%,$upper(%_loop_count%=%_loop_value%))    ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
 $map(%bar%,$upper(%_loop_count%=%_loop_value%),:)  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
 
+$setmulti(baz,A; B; x; C)
+$map(%baz%,$if($eq(%_loop_value%,x),,%_loop_count%=%_loop_value%))
+                                                   ==&gt; &quot;1=A; 2=B; 4=C&quot;
 $map(First:A; Second:B,
     $upper(%_loop_count%=%_loop_value%))           ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
 

@@ -117,6 +117,7 @@
 <li class="toctree-l3"><a class="reference internal" href="func_lenmulti.html">$lenmulti</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">$map</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_performer.html">$performer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="func_replacemulti.html">$replacemulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_reversemulti.html">$reversemulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_slice.html">$slice</a></li>
 <li class="toctree-l3"><a class="reference internal" href="func_sortmulti.html">$sortmulti</a></li>
@@ -246,6 +247,7 @@
 <p><strong>La description:</strong></p>
 <p>Itère sur chaque élément trouvé dans la variable à valeurs multiples <code class="docutils literal notranslate"><span class="pre">nom</span></code> et met à jour la valeur de l’élément à la valeur renvoyée par <code class="docutils literal notranslate"><span class="pre">code</span></code>, renvoyant la variable à valeurs multiples mise à jour. Une valeur littérale représentant une valeur multiple peut être remplacée par <code class="docutils literal notranslate"><span class="pre">nom</span></code>, en utilisant le <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou un point-virgule suivi d’un espace « ;  » s’il n’est pas passé) pour contraindre la valeur à une valeur multiple appropriée variable.</p>
 <p>Pour chaque boucle, la valeur de l’élément est d’abord stockée dans la variable <code class="docutils literal notranslate"><span class="pre">_loop_value</span></code> et le décompte est stocké dans la variable <code class="docutils literal notranslate"><span class="pre">_loop_count</span></code>. Cela permet d’accéder à l’élément ou à la valeur de comptage dans le script de code.</p>
+<p>Les éléments vides sont automatiquement supprimés de la sortie.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Vous ne pouvez pas enregistrer le <code class="docutils literal notranslate"><span class="pre">code</span></code> dans une variable puis passer la variable à la fonction en tant que <code class="docutils literal notranslate"><span class="pre">%code%</span></code> car il sera évalué lorsqu’il sera affecté à la variable plutôt que pendant la boucle.</p>
@@ -260,6 +262,9 @@ $setmulti(bar,First:A; Second:B)
 $map(%bar%,$upper(%_loop_count%=%_loop_value%))    ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
 $map(%bar%,$upper(%_loop_count%=%_loop_value%),:)  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
 
+$setmulti(baz,A; B; x; C)
+$map(%baz%,$if($eq(%_loop_value%,x),,%_loop_count%=%_loop_value%))
+                                                   ==&gt; &quot;1=A; 2=B; 4=C&quot;
 $map(First:A; Second:B,
     $upper(%_loop_count%=%_loop_value%))           ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
 
