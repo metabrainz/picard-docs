@@ -8,39 +8,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-08 14:24-0600\n"
+"POT-Creation-Date: 2021-04-11 12:25-0600\n"
+"PO-Revision-Date: 2021-04-11 12:26-0600\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../functions/func_map.rst:7
+#: ../../functions/func_map.rst:4
 msgid "$map"
 msgstr "$map"
 
-#: ../../functions/func_map.rst:9
+#: ../../functions/func_map.rst:6
 msgid "Usage: **$map(name,code[,separator])**"
 msgstr "Utilisation: **$map(nom,code[,séparateur])**"
 
-#: ../../functions/func_map.rst:10
+#: ../../functions/func_map.rst:7
 msgid "Category: multi-value"
 msgstr "Catégorie: multi-valeur"
 
-#: ../../functions/func_map.rst:11
+#: ../../functions/func_map.rst:8
 msgid "Implemented: Picard 2.3"
 msgstr "Mis en œuvre: Picard 2.3"
 
-#: ../../functions/func_map.rst:13
+#: ../../functions/func_map.rst:10
 msgid "**Description:**"
 msgstr "**La description:**"
 
-#: ../../functions/func_map.rst:15
+#: ../../functions/func_map.rst:12
 msgid ""
 "Iterates over each element found in the multi-value variable ``name`` "
 "and updates the value of the element to the value returned by ``code``, "
@@ -57,7 +57,7 @@ msgstr ""
 "d'un espace \"; \" s'il n'est pas passé) pour contraindre la valeur à "
 "une valeur multiple appropriée variable."
 
-#: ../../functions/func_map.rst:21
+#: ../../functions/func_map.rst:18
 msgid ""
 "For each loop, the element value is first stored in the variable "
 "``_loop_value`` and the count is stored in the variable ``_loop_count``. "
@@ -69,7 +69,11 @@ msgstr ""
 "``_loop_count``. Cela permet d'accéder à l'élément ou à la valeur de "
 "comptage dans le script de code."
 
-#: ../../functions/func_map.rst:27
+#: ../../functions/func_map.rst:22
+msgid "Empty elements are automatically removed from the output."
+msgstr "Les éléments vides sont automatiquement supprimés de la sortie."
+
+#: ../../functions/func_map.rst:26
 #, python-format
 msgid ""
 "You cannot save the ``code`` to a variable and then pass the variable to "
@@ -80,10 +84,10 @@ msgstr ""
 "la variable à la fonction en tant que ``%code%`` car il sera évalué "
 "lorsqu'il sera affecté à la variable plutôt que pendant la boucle."
 
-#: ../../functions/func_map.rst:32
+#: ../../functions/func_map.rst:31
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_map.rst:36 ../../functions/func_map.rst:54
+#: ../../functions/func_map.rst:35 ../../functions/func_map.rst:53
 msgid "The following statements will return the values indicated::"
 msgstr "Les instructions suivantes renverront les valeurs indiquées::"

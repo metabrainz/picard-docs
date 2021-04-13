@@ -49,6 +49,7 @@ View
    :header: "**Action**", "**Windows / Linux**", "**macOS**"
 
    "Toggle file browser", "Ctrl+B", "⌘+B"
+   "Toggle metadata view", "Ctrl+Shift+M", "⌘+⇧+M"
 
 Tools
 +++++++++++
