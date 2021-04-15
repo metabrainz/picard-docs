@@ -5,7 +5,7 @@ $replacemulti
 
 | Usage: **$replacemulti(name,search,replace[,separator])**
 | Category: multi-value
-| Implemented: Picard 2.7
+| Implemented: Picard 2.6.1
 
 **Description:**
 
