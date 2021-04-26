@@ -8,50 +8,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-16 18:38-0600\n"
-"PO-Revision-Date: 2020-10-08 15:26-0600\n"
+"POT-Creation-Date: 2021-04-26 09:29-0600\n"
+"PO-Revision-Date: 2021-04-26 09:33-0600\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
-"Language: fr\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../functions/func_title.rst:7
+#: ../../functions/func_title.rst:4
 msgid "$title"
 msgstr "$title"
 
-#: ../../functions/func_title.rst:9
+#: ../../functions/func_title.rst:6
 msgid "Usage: **$title(text)**"
 msgstr "Utilisation: **$title(texte)**"
 
-#: ../../functions/func_title.rst:10
+#: ../../functions/func_title.rst:7
 msgid "Category: text"
 msgstr "Catégorie: texte"
 
-#: ../../functions/func_title.rst:11
+#: ../../functions/func_title.rst:8
 msgid "Implemented: Picard 2.1"
 msgstr "Mis en œuvre: Picard 2.1"
 
-#: ../../functions/func_title.rst:13
+#: ../../functions/func_title.rst:10
 msgid "**Description:**"
 msgstr "**La description:**"
 
-#: ../../functions/func_title.rst:15
+#: ../../functions/func_title.rst:12
 msgid ""
-"Returns ``text`` in title case (first character in every word "
-"capitalized)."
+"Returns ``text`` with the first character in every word capitalized. "
+"Note that other characters in the words will not be modified, which "
+"allows the preservation of all upper-case acronyms such as \"BBC\".  To "
+"only have the first character of each word capitalized you could first "
+"change the text to lower-case."
 msgstr ""
-"Renvoie ``texte`` dans la casse du titre (premier caractère de "
-"chaque mot en majuscule)."
+"Renvoie le \"texte\" avec le premier caractère de chaque mot en "
+"majuscule. Notez que les autres caractères des mots ne seront pas "
+"modifiés, ce qui permet de conserver tous les acronymes en majuscules "
+"tels que \"BBC\".  Pour n'avoir que le premier caractère de chaque mot "
+"en majuscule, vous pourriez d'abord changer le texte en minuscule."
 
 #: ../../functions/func_title.rst:18
-msgid "**Example:**"
-msgstr "**Exemple:**"
+msgid "**Examples:**"
+msgstr "**Exemples:**"
 
 #: ../../functions/func_title.rst:20
-msgid "The following statement will return the value indicated::"
-msgstr "L'instruction suivante renverra la valeur indiquée::"
+msgid "The following statements will return the values indicated::"
+msgstr "Les instructions suivantes renverront les valeurs indiquées::"
+
+#~ msgid ""
+#~ "Returns ``text`` in title case (first character in every word "
+#~ "capitalized)."
+#~ msgstr ""
+#~ "Renvoie ``texte`` dans la casse du titre (premier caractère de chaque "
+#~ "mot en majuscule)."
