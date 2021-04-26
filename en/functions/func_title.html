@@ -257,10 +257,23 @@
 <div class="line">Implemented: Picard 2.1</div>
 </div>
 <p><strong>Description:</strong></p>
-<p>Returns <code class="docutils literal notranslate"><span class="pre">text</span></code> in title case (first character in every word capitalized).</p>
-<p><strong>Example:</strong></p>
-<p>The following statement will return the value indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$title(tHe houR is upOn uS)  ==&gt;  &quot;The Hour Is Upon Us&quot;
+<p>Returns <code class="docutils literal notranslate"><span class="pre">text</span></code> with the first character in every word capitalized. Note that other
+characters in the words will not be modified, which allows the preservation of all
+upper-case acronyms such as “BBC”.  To only have the first character of each word
+capitalized you could first change the text to lower-case.</p>
+<p><strong>Examples:</strong></p>
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,tHe houR is upOn uS)
+$title(%foo%)          ==&gt;  &quot;THe HouR Is UpOn US&quot;
+$title($lower(%foo%))  ==&gt;  &quot;The Hour Is Upon Us&quot;
+
+$set(bar,THIS TEXT IS ALL CAPITALS)
+$title(%bar%)          ==&gt;  &quot;THIS TEXT IS ALL CAPITALS&quot;
+$title($lower(%bar%))  ==&gt;  &quot;This Text Is All Capitals&quot;
+
+$set(baz,AC/DC recorded live at the BBC studio in London)
+$title(%baz%)          ==&gt;  &quot;AC/DC Recorded Live At The BBC Studio In London&quot;
+$title($lower(%baz%))  ==&gt;  &quot;Ac/Dc Recorded Live At The Bbc Studio In London&quot;
 </pre></div>
 </div>
 </div>
