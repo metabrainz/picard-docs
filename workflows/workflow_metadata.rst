@@ -20,9 +20,9 @@ existing in the files.
 
 **2. Cluster and lookup the files**
 
-   Select the files in the left-hand pane and combine them into album clusters using the :menuselection:`Tools
+   Select the files in the left-hand pane and combine them into album clusters using the :menuselection:`"Tools
    --> Cluster"` command.  Picard will attempt to cluster the files based on their existing metadata.  Select
-   the desired cluster(s) in the left-hand pane and initiate the lookup using the :menuselection:`Tools -->
+   the desired cluster(s) in the left-hand pane and initiate the lookup using the :menuselection:`"Tools -->
    Lookup"` command.  See the :doc:`../usage/retrieve_lookup` section for details.
 
 **3. Match the files to the tracks on the release**

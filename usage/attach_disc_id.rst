@@ -39,7 +39,7 @@ The steps to follow to submit a disc id are:
 
 3. Select the desired target release frm the list displayed by clicking the radio button next to the release, and then
    click the "Attach CD TOC" button below the list of releases.  This will prepare an edit to attach the disc id to the
-   release.  Add an appropriate edit note, and submit the edit.
+   release.  You then need to add an appropriate edit note, and submit the edit.
 
    .. image:: images/add_disc_id_1.png
       :width: 100%

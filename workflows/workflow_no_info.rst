@@ -22,7 +22,7 @@ most in a single batch).  Picard will try to group them into clusters based on t
 
 **2. Scan the files**
 
-   Select the files in the left-hand pane and scan them using the :menuselection:`Tools --> Scan"` command.
+   Select the files in the left-hand pane and scan them using the :menuselection:`"Tools --> Scan"` command.
    Picard will attempt to calculate the AcoustID fingerprint for each of the files and then retrieve releases
    with matching recordings.  See the :doc:`../usage/retrieve_scan` section for details.
 

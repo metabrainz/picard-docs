@@ -53,7 +53,7 @@ See the :doc:`../variables/variables` section for information on which MusicBrai
 <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
 
 
-How to I edit several tags at once? Why is it not easier do so?
+How to I edit several tags at once? Why is it not easier do?
 -------------------------------------------------------------------
 
 Please understand that Picard is not designed as a general purpose :index:`tag editor <tags; editing>`. Its primary goal is to retrieve community-maintained MusicBrainz
@@ -68,7 +68,7 @@ Media Player, and MediaMonkey). That doesn't mean that the team won't welcome pa
 
 Having said all this, it is still possible to edit several tags at once in Picard by following the steps:
 
-1. Click and select several files with CTRL or SHIFT
+1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`
 2. Right click on one of them, then click Details...
 3. On the popup dialog you can see the tags, with entries that denote where tags are different across files. You can edit or add new tags here.
 4. On exiting the dialog, you have changed the tags in memory. You need to click Save in order to persist these changes to your files.
@@ -105,6 +105,6 @@ I am using Fedora. Why doesn't :index:`acoustic fingerprinting <acoustic fingerp
 Acoustic fingerprinting in Picard uses a tool called ``fpcalc``, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
 from the `RPM Fusion repository <https://rpmfusion.org/>`_. This functionality is not contained in the main Fedora ``picard`` package because it requires
 the ``ffmpeg`` package which `cannot be distributed by Fedora <https://fedoraproject.org/wiki/Forbidden_items>`_. After `enabling the "rpmfusion-free" RPM
-Fusion repository <https://rpmfusion.org/Configuration>`_, install the package using (as root)::
+Fusion repository <https://rpmfusion.org/Configuration>`_, install the package (as root) using::
 
    yum install chromaprint-tools

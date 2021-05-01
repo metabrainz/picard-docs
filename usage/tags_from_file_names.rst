@@ -25,8 +25,8 @@ few predefined patterns available to select from, but you can also adjust them o
 
 If your files for example consist of a track number and track title separated by a space
 (e.g. :file:`04 Heart of Gold.mp3`) you can use the matching pattern :samp:`%tracknumber% %title%`.
-Should the track number and title be separated by e.g. a colon like :file:`04 - Heart of Gold.mp3`
-the pattern needs to also include this separator, e.g. :samp:`%tracknumber% - %title%`.
+Should the track number and title be separated by for example a hyphen like :file:`04 - Heart of Gold.mp3`
+the pattern needs to also include this separator, like :samp:`%tracknumber% - %title%`.
 
 Clicking on the "Preview" button next to the matching pattern will show a preview of the extracted
 tags for each file name.  Once you are satisfied with the result, you can accept the changes with

@@ -14,9 +14,9 @@ album at a time.
 
 **2. Cluster and lookup the files**
 
-   Select the files in the left-hand pane and combine them into an album cluster using the :menuselection:`Tools
+   Select the files in the left-hand pane and combine them into an album cluster using the :menuselection:`"Tools
    --> Cluster"` command.  Select the cluster in the left-hand pane and initiate the lookup using the
-   :menuselection:`Tools --> Lookup"` command.  See the :doc:`../usage/retrieve_lookup` section for details.
+   :menuselection:`"Tools --> Lookup"` command.  See the :doc:`../usage/retrieve_lookup` section for details.
 
 
 **3. Select the correct release**

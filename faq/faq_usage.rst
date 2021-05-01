@@ -47,7 +47,7 @@ I'm using macOS, where are my :index:`network folders <macos; network folders>` 
 
 These should show up in the add file and add folder dialogs, but they aren't visible by default in the file browser
 pane. If you want to see them in the file browser pane, right click in the pane and select "show hidden files". They
-should then be visible in the /Volumes folder.
+should then be visible in the :file:`/Volumes` folder.
 
 
 macOS shows the app is :index:`damaged <macos; app damaged>`. How can I run Picard?

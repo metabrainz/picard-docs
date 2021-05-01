@@ -3,7 +3,7 @@
 macOS
 =====
 
-In macOS, this option is currently a text field. The device is usually ``/dev/rdisk1``.
+In macOS, the CD Lookup option is currently a text field. The device is usually ``/dev/rdisk1``.
 
 If that doesn't work, one way is to simply keep increasing the number (e.g. ``/dev/rdisk2``) until
 it does work. A less trial and error method is to open "Terminal" and type ``mount``. The output

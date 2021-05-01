@@ -47,7 +47,7 @@ There are two different problems that often fall under this topic:
 
    Check to confirm that your player supports embedded cover art images.  That support is not universal among all
    players.  Some players support embedded images, some support images stored as files in the directory (e.g.:
-   "cover.jpg" or "folder.jpg"), and some support both. Picard allows you to specify how the cover art images should
+   :file:`cover.jpg` or :file:`folder.jpg`), and some support both. Picard allows you to specify how the cover art images should
    be saved.  Please see the :doc:`../config/options_location` section of the Coverart options for details.
 
    You should also confirm that your player supports the version of the tags being written.
