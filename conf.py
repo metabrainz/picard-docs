@@ -167,6 +167,8 @@ latex_elements = {
     'preamble': r'''\hyphenation{Music-Brainz}
 \usepackage{fontspec}
 \setmainfont{DejaVu Sans}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
 \newcommand\sphinxbackoftitlepage{''' + my_notice + r'''}
 ''',
     'extraclassoptions': 'openany',
