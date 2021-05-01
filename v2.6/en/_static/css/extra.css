@@ -55,3 +55,23 @@ table.colwidths-given.docutils.align-default tbody tr td {
     width: auto;
     overflow-y: auto;
 }
+
+/* adds formatting for keyboard shortcuts */
+
+kbd.compound {
+    white-space: nowrap;
+}
+
+kbd:not(.compound) {
+    display: inline-block;
+    background-color: #f7f7f7;
+    padding: .15em .4em;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: .4em;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 #ddd;
+    line-height: 1em;
+    font-size: .9em;
+}
