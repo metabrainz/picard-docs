@@ -203,37 +203,20 @@ return for a fee.
 DESCRIPTION = "{0} (v{1})".format(SCRIPT_NAME, SCRIPT_VERS)
 
 HELP = """\
-Usage: {0} [optional arguments] command
+Usage: {0} [optional arguments] command [command args]
 
 Commands:
-   clean html          clean html build directory
-   clean pdf           clean pdf build directory
-   clean epub          clean epub build directory
-   clean po            clean language directory
-   clean mo            remove all compiled MO files
-   clean all           clean all build targets
+   clean            Clean the specified target directory
+   build            Build the specified target files
+   test             Run the specified tests
 
-   build html          Build HTML files
-   build pdf           Build PDF files
-   build epub          Build epub files
-   build all           Build all files
-   build po            Build the specified language
-   build pot           Build translation template files
-   build map           Build tag map files
-
-   test rst            Lint the rst files
-   test flake8         Test python files with flake8
-   test pylint         Test python files with pylint
-   test isort          Check python files import sorting
-   test po             Rudimentary test of RST in *.po files
-
-   info about          Information about the script
-   info warranty       Warranty information about the script
-   info languages      Display list of supported languages
+   info about       Information about the script
+   info warranty    Warranty information about the script
+   info languages   Display list of supported languages
 
 Optional Arguments:
-  -l LANGUAGE          Specify language for processing
-  -h, --help           Show this help message and exit
+  -l LANGUAGE       Specify language for processing
+  -h, --help        Show this help message and exit
 """.format(os.path.basename(os.path.realpath(__file__)))
 
 
@@ -245,6 +228,17 @@ def exit_with_code(exit_code=0):
     """
     print('Exit Code: {0}\n'.format(exit_code))
     sys.exit(exit_code)
+
+
+def python_files_to_check():
+    """Provide expanded list if python files to check.
+
+    Yields:
+        str: Path and name of file.
+    """
+    for filepath in PYTHON_FILES_TO_CHECK:
+        for filename in glob.glob(filepath, recursive=True):
+            yield filename
 
 
 ################################################
@@ -506,7 +500,8 @@ class POCheck():
             for item in self.bad_files:
                 print("  {0}".format(item,))
         print()
-        exit_with_code(1 if self.warning_count else 0)
+        if self.warning_count:
+            exit_with_code(1 if self.warning_count else 0)
 
 
 def show_help():
@@ -539,14 +534,17 @@ def parse_command_line():
     )
 
     parser01.add_argument(
-        'test_target',
+        'test_targets',
         action='store',
-        choices=['rst', 'flake8', 'pylint', 'isort', 'po'],
+        nargs='+',
+        type=str,
+        choices=['rst', 'po', 'flake8', 'pylint', 'isort', 'python'],
         help="rst = lint check the rst files, "
+             "po = rudimentary test of RST in *.po files "
              "flake8 = test python files with flake8, "
              "pylint = test python files with pylint, "
              "isort = check python files import sorting, "
-             "po = rudimentary test of RST in *.po files"
+             "python = all python tests (isort, flake8 and pylint)"
     )
 
     parser02 = subparsers.add_parser(
@@ -555,16 +553,17 @@ def parse_command_line():
     )
 
     parser02.add_argument(
-        'build_target',
+        'build_targets',
         action='store',
-        choices=['html', 'pdf', 'epub', 'po', 'pot', 'map', 'all'],
-        help="html = build html files, "
+        nargs='+',
+        choices=['map', 'pot', 'po', 'html', 'pdf', 'epub', 'all'],
+        help="map = build tag map files, "
+             "pot = build translation template files, "
+             "po = build translation files, "
+             "html = build html files, "
              "pdf = build pdf file, "
              "epub = build epub file, "
-             "all = build all files, "
-             "po = build translation files, "
-             "pot = build translation template files, "
-             "map = build tag map files"
+             "all = build all files"
     )
 
     parser03 = subparsers.add_parser(
@@ -573,14 +572,14 @@ def parse_command_line():
     )
 
     parser03.add_argument(
-        'clean_target',
+        'clean_targets',
         action='store',
-        choices=['html', 'pdf', 'epub', 'po', 'mo', 'all'],
-        help="html = clean html build directory, "
+        nargs='+',
+        choices=['mo', 'html', 'pdf', 'epub', 'all'],
+        help="mo = remove all compiled MO files, "
+             "html = clean html build directory, "
              "pdf = clean pdf build directory, "
              "epub = clean epub build directory, "
-             "po = clean language directory, "
-             "mo = remove all compiled MO files, "
              "all = clean all build targets"
     )
 
@@ -631,48 +630,49 @@ def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
     linter = LintRST()
     err = linter.check(root_dir, ignore_info, fail_on_warnings)
     exit_code = 1 if err > 0 else 0
-    exit_with_code(exit_code)
+    if exit_code:
+        exit_with_code(exit_code)
 
 
 def run_pylint():
     """Check the Python code using pylint.
     """
     exit_code = 0
-    for filepath in PYTHON_FILES_TO_CHECK:
-        for filename in glob.glob(filepath):
-            print('\nLint File: {0}'.format(filename))
-            command = 'pylint {0}'.format(filename,)
-            exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
-    exit_with_code(1 if exit_code else 0)
+    for filename in python_files_to_check():
+        print('\nLint File: {0}'.format(filename))
+        command = 'pylint {0}'.format(filename,)
+        exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
+    if exit_code:
+        exit_with_code(exit_code)
 
 
 def run_flake8():
     """Check the Python code using flake8.
     """
     exit_code = 0
-    for filepath in PYTHON_FILES_TO_CHECK:
-        for filename in glob.glob(filepath):
-            print('\nFlake8 Check File: {0}'.format(filename))
-            command = 'flake8 {0}'.format(filename,)
-            exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
+    for filename in python_files_to_check():
+        print('\nFlake8 Check File: {0}'.format(filename))
+        command = 'flake8 {0}'.format(filename,)
+        exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
     print()
-    exit_with_code(1 if exit_code else 0)
+    if exit_code:
+        exit_with_code(exit_code)
 
 
 def run_isort():
     """Check the Python code using isort.
     """
     exit_code = 0
-    for filepath in PYTHON_FILES_TO_CHECK:
-        for filename in glob.glob(filepath):
-            print('\nIsort Check File: {0}'.format(filename))
-            command = 'isort -c {0}'.format(filename,)
-            proc_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
-            if not proc_code:
-                print('OK: Imports are properly sorted.')
-            exit_code = max(exit_code, proc_code)
+    for filename in python_files_to_check():
+        print('\nIsort Check File: {0}'.format(filename))
+        command = 'isort -c {0}'.format(filename,)
+        proc_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
+        if not proc_code:
+            print('OK: Imports are properly sorted.')
+        exit_code = max(exit_code, proc_code)
     print()
-    exit_with_code(1 if exit_code else 0)
+    if exit_code:
+        exit_with_code(exit_code)
 
 
 def get_major_minor(version):
@@ -1086,6 +1086,10 @@ def main():
     # pylint: disable=too-many-branches
     # pylint: disable=too-many-statements
 
+    # PYTHON_FILES = []
+    # for filepath in PYTHON_FILES_TO_CHECK:
+    #     PYTHON_FILES.extend(glob.glob(filepath, recursive=True))
+
     args = parse_command_line()
 
     if 'language' in vars(args):
@@ -1120,103 +1124,106 @@ def main():
             print("\nUnknown info type: '{0}'\n".format(args.info_type))
             exit_with_code(1)
 
-    elif 'build_target' in vars(args):
-        if args.build_target in SPHINX_.BUILD_TARGETS.keys():
-            save_version_info()
-            for lang in process_languages:
-                do_build(target=args.build_target, language=lang, clean=True)
+    elif 'build_targets' in vars(args):
+        for target in args.build_targets:
+            if target in SPHINX_.BUILD_TARGETS.keys():
+                save_version_info()
+                for lang in process_languages:
+                    do_build(target=target, language=lang, clean=True)
 
-        elif args.build_target == 'map':
-            build_map()
-            # for lang in process_languages:
-            #     if lang != DEFAULT_LANGUAGE:
-            #         update_po(lang)
+            elif target == 'map':
+                build_map()
+                # for lang in process_languages:
+                #     if lang != DEFAULT_LANGUAGE:
+                #         update_po(lang)
 
-        elif args.build_target == 'po':
-            for lang in process_languages:
-                if lang != DEFAULT_LANGUAGE:
-                    update_po(lang)
+            elif target == 'po':
+                for lang in process_languages:
+                    if lang != DEFAULT_LANGUAGE:
+                        update_po(lang)
 
-        elif args.build_target == 'pot':
-            build_pot()
-            print('\nUpdating PO files for other languages.')
-            for lang in LANGUAGE_LIST:
-                if lang != DEFAULT_LANGUAGE:
-                    print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-                    update_po(lang)
-            # checker = POCheck()
-            # checker.check(SPHINX_.LOCALE_DIR)
+            elif target == 'pot':
+                build_pot()
+                print('\nUpdating PO files for other languages.')
+                for lang in LANGUAGE_LIST:
+                    if lang != DEFAULT_LANGUAGE:
+                        print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
+                        update_po(lang)
+                # checker = POCheck()
+                # checker.check(SPHINX_.LOCALE_DIR)
 
-        elif args.build_target == 'clean':
-            for target, target_dir in [('html', 'html'), ('pdf', 'latex')]:
-                clean_dir = os.path.join(SPHINX_.BUILD_DIR, target_dir)
+            elif target == 'all':
+                save_version_info()
+                build_map()
+                build_pot()
+                clean_mo()
+                print('\nUpdating PO files for other languages.')
+                for lang in LANGUAGE_LIST:
+                    if lang != DEFAULT_LANGUAGE:
+                        print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
+                        update_po(lang)
+                for build_target in SPHINX_.BUILD_TARGETS:
+                    for lang in process_languages:
+                        do_build(target=build_target, language=lang, clean=True)
+
+            else:
+                print("\nUnknown build target: '{0}'\n".format(args.build_target))
+                exit_with_code(1)
+
+    elif 'clean_targets' in vars(args):
+        for target in args.clean_targets:
+            if target in SPHINX_.BUILD_TARGETS.keys():
+                clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[target]['dir'])
                 clean_directory(clean_dir, target)
 
-        elif args.build_target == 'all':
-            save_version_info()
-            build_map()
-            build_pot()
-            clean_mo()
-            print('\nUpdating PO files for other languages.')
-            for lang in LANGUAGE_LIST:
-                if lang != DEFAULT_LANGUAGE:
-                    print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-                    update_po(lang)
-            for build_target in SPHINX_.BUILD_TARGETS:
-                for lang in process_languages:
-                    do_build(target=build_target, language=lang, clean=True)
+            elif target == 'mo':
+                clean_mo()
 
-        else:
-            print("\nUnknown build target: '{0}'\n".format(args.build_target))
-            exit_with_code(1)
+            elif target == 'all':
+                clean_mo()
+                for clean_target in SPHINX_.BUILD_TARGETS:
+                    clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[clean_target]['dir'])
+                    clean_directory(clean_dir, clean_target)
 
-    elif 'clean_target' in vars(args):
-        if args.clean_target in SPHINX_.BUILD_TARGETS.keys():
-            clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[args.clean_target]['dir'])
-            clean_directory(clean_dir, args.clean_target)
+            else:
+                print("\nUnknown clean target: '{0}'\n".format(target))
+                exit_with_code(1)
 
-        elif args.clean_target == 'mo':
-            clean_mo()
+    elif 'test_targets' in vars(args):
+        for target in args.test_targets:
+            if target == 'rst':
+                run_lint(SPHINX_.SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
 
-        elif args.clean_target == 'all':
-            clean_mo()
-            for clean_target in SPHINX_.BUILD_TARGETS:
-                clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[clean_target]['dir'])
-                clean_directory(clean_dir, clean_target)
+            elif target == 'po':
+                # check_rst_in_po()
+                checker = POCheck()
+                checker.check(SPHINX_.LOCALE_DIR)
 
-        else:
-            print("\nUnknown clean target: '{0}'\n".format(args.clean_target))
-            exit_with_code(1)
+            elif target == 'python':
+                run_isort()
+                run_flake8()
+                run_pylint()
 
-    elif 'test_target' in vars(args):
-        if args.test_target == 'rst':
-            run_lint(SPHINX_.SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
+            elif target == 'isort':
+                run_isort()
 
-        elif args.test_target == 'pylint':
-            run_pylint()
+            elif target == 'flake8':
+                run_flake8()
 
-        elif args.test_target == 'flake8':
-            run_flake8()
+            elif target == 'pylint':
+                run_pylint()
 
-        elif args.test_target == 'isort':
-            run_isort()
+            elif target == 'html':
+                print('\nThat function is still under development.\n')
+                exit_with_code(1)
 
-        elif args.test_target == 'po':
-            # check_rst_in_po()
-            checker = POCheck()
-            checker.check(SPHINX_.LOCALE_DIR)
+            elif target == 'pdf':
+                print('\nThat function is still under development.\n')
+                exit_with_code(1)
 
-        elif args.test_target == 'html':
-            print('\nThat function is still under development.\n')
-            exit_with_code(1)
-
-        elif args.test_target == 'pdf':
-            print('\nThat function is still under development.\n')
-            exit_with_code(1)
-
-        else:
-            print("\nUnknown test target: '{0}'\n".format(args.test_target))
-            exit_with_code(1)
+            else:
+                print("\nUnknown test target: '{0}'\n".format(target))
+                exit_with_code(1)
 
     else:
         # show help information
