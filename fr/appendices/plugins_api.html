@@ -220,24 +220,16 @@
 <p>Chaque plugin doit fournir des métadonnées sous forme de variables. Ces variables doivent être placées en haut du fichier.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
-<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">This plugin is an example</span>
-
-<span class="s2">Since *Picard 2.7* the description can be formatted using</span>
-<span class="s2">[Markdown](https://daringfireball.net/projects/markdown/) syntax.</span>
-<span class="s2">If you use Markdown formatting make sure the minimum version in</span>
-<span class="s2">`PLUGIN_API_VERSIONS` is set to 2.7.</span>
-<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;This plugin is an example&quot;</span>
 <span class="n">PLUGIN_VERSION</span> <span class="o">=</span> <span class="s1">&#39;0.1&#39;</span>
-<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.7&#39;</span><span class="p">,</span> <span class="s1">&#39;2.8&#39;</span><span class="p">]</span>
+<span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.1&#39;</span><span class="p">,</span> <span class="s1">&#39;2.2&#39;</span><span class="p">]</span>
 <span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0-or-later&quot;</span>
 <span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.html&quot;</span>
 </pre></div>
 </div>
 <p>Explication des variables:</p>
 <ul class="simple">
-<li><p><strong>PLUGIN_NAME</strong> doit être un nom court mais descriptif du plugin.</p></li>
-<li><p><strong>PLUGIN_DESCRIPTION</strong> doit être aussi simple que possible, tout en décrivant la fonction principale. Si votre plugin est destiné à Picard 2.7 ou plus, vous pouvez utiliser la syntaxe <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a> pour formater le texte.  Si votre plugin cible des versions antérieures, vous pouvez à la place utiliser un simple formatage HTML. Veuillez limiter l’utilisation du HTML au formatage de base du texte (par exemple, <code class="docutils literal notranslate"><span class="pre">&lt;strong&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;em&gt;</span></code>), aux liens (<code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code>) et aux listes (<code class="docutils literal notranslate"><span class="pre">&lt;ul&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;ol&gt;</span></code>).</p></li>
+<li><p><strong>PLUGIN_DESCRIPTION</strong> should be as simple as possible, while still describing the main function.</p></li>
 <li><p><strong>PLUGIN_VERSION</strong> doit être rempli avec la version de le Plug-in. Les versions de plug-in doivent être au format <code class="docutils literal notranslate"><span class="pre">x.y.z</span></code> (par exemple: « 1.0 » ou « 2.12.4 »). Il est recommandé d’utiliser <a class="reference external" href="https://semver.org/">Semantic Versioning</a>.</p></li>
 <li><p><strong>PLUGIN_API_VERSIONS</strong> doit être défini sur les versions de Picard avec lesquelles s’exécuter ce plugin. Les nouvelles versions de Picard prendront généralement en charge les anciennes versions de l’API de plug-in, mais en cas de modification, la prise en charge des anciennes versions de plug-in peut être abandonnée. Les versions disponibles pour Picard 2 sont « 2.0 », « 2.1 » et « 2.2 ».</p></li>
 <li><p><strong>PLUGIN_LICENSE</strong> doit être défini avec le nom de licence du plugin. Si possible, utilisez l’un des noms de licence de la <a class="reference external" href="https://spdx.org/licenses/">Liste des licences SPDX</a>, mais vous êtes invités à utiliser une autre licence si celle que vous avez choisie n’est pas disponible dans la liste.</p></li>
