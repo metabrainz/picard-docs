@@ -22,6 +22,7 @@ import restructuredtext_lint
 import conf
 import tag_mapping
 
+
 SCRIPT_NAME = 'Picard Docs Builder'
 SCRIPT_VERS = '0.14'
 SCRIPT_COPYRIGHT = '2020'
@@ -70,6 +71,8 @@ class SPHINX_():    # pylint: disable=too-few-public-methods
     }
 
 
+
+
 ######################
 #   Linter Options   #
 ######################
@@ -81,6 +84,7 @@ PYTHON_FILES_TO_CHECK = [
     'setup.py',
     'conf.py',
     'tag_mapping.py',
+    '_extensions/*.py',
 ]
 
 #################################################################

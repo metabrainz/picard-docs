@@ -7,17 +7,17 @@
 # pylint: disable=missing-module-docstring
 
 
+import datetime
+import os
+import re
+import sys
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
-import datetime
-import re
+sys.path.insert(0, os.path.abspath('_extensions'))
 
 # import sphinx_rtd_theme
 # import picard_theme
@@ -70,6 +70,7 @@ master_doc = 'index'
 extensions = [
     "recommonmark",
     "notfound.extension",
+    "taggerscript",
     # "sphinx_rtd_theme",
     # "picard_theme",
 ]
@@ -280,3 +281,5 @@ notfound_context = {
     'title': notfound_title,
     'body': "\n<h1>" + notfound_title + "</h1>\n<p>\n" + notfound_text_1 + "\n</p>\n<div id='content'></div>\n<p>\n" + notfound_text_2 + "\n</p>\n" + notfound_script,
 }
+
+highlight_language = 'taggerscript'
