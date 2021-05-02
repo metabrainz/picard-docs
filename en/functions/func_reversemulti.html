@@ -251,17 +251,17 @@ variable.</p>
 <p>This function can be used in conjunction with the <code class="docutils literal notranslate"><span class="pre">$sortmulti</span></code> function to sort in descending order.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,A; B; C; D; E)
-$reversemulti(%foo%)            ==&gt;  &quot;A; B; C; D; E&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,A; B; C; D; E<span class="k">)</span>
+<span class="k">$reversemulti(</span><span class="n">%foo%</span><span class="k">)</span>            ==&gt;  &quot;A; B; C; D; E&quot;
 
-$setmulti(bar,A; B; C; D; E)
-$reversemulti(%bar%)            ==&gt;  &quot;E; D; C; B; A&quot;
+<span class="k">$setmulti(</span>bar,A; B; C; D; E<span class="k">)</span>
+<span class="k">$reversemulti(</span><span class="n">%bar%</span><span class="k">)</span>            ==&gt;  &quot;E; D; C; B; A&quot;
 
-$setmulti(baz,A:A; B:B; C:C,:)
-$reversemulti(%baz%)            ==&gt;  &quot;C; B; C; A; B; A&quot;
+<span class="k">$setmulti(</span>baz,A:A; B:B; C:C,:<span class="k">)</span>
+<span class="k">$reversemulti(</span><span class="n">%baz%</span><span class="k">)</span>            ==&gt;  &quot;C; B; C; A; B; A&quot;
 
-$reversemulti(A; B; C; D; E)    ==&gt;  &quot;E; D; C; B; A&quot;
-$reversemulti(A:A; B:B; C:C,:)  ==&gt;  &quot;C:B; C:A; B:A&quot;
+<span class="k">$reversemulti(</span>A; B; C; D; E<span class="k">)</span>    ==&gt;  &quot;E; D; C; B; A&quot;
+<span class="k">$reversemulti(</span>A:A; B:B; C:C,:<span class="k">)</span>  ==&gt;  &quot;C:B; C:A; B:A&quot;
 </pre></div>
 </div>
 </div>

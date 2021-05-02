@@ -252,14 +252,14 @@ matched is case-sensitive.</p>
 <p>With the performer tags as <code class="docutils literal notranslate"><span class="pre">performer:guitar</span></code> = “Ann”, <code class="docutils literal notranslate"><span class="pre">performer:rhythm-guitar</span></code> =
 “Bob” and <code class="docutils literal notranslate"><span class="pre">performer:drums</span></code> = “Cindy”, the following statements will return the
 values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,guitar)
-$performer(%foo%)          ==&gt;  &quot;Ann, Bob&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,guitar<span class="k">)</span>
+<span class="k">$performer(</span><span class="n">%foo%</span><span class="k">)</span>          ==&gt;  &quot;Ann, Bob&quot;
 
-$performer(guitar)         ==&gt;  &quot;Ann, Bob&quot;
-$performer(Guitar)         ==&gt;  &quot;&quot;
-$performer(rhythm-guitar)  ==&gt;  &quot;Bob&quot;
-$performer()               ==&gt;  &quot;Ann, Bob, Cindy&quot;
-$performer(, / )           ==&gt;  &quot;Ann / Bob / Cindy&quot;
+<span class="k">$performer(</span>guitar<span class="k">)</span>         ==&gt;  &quot;Ann, Bob&quot;
+<span class="k">$performer(</span>Guitar<span class="k">)</span>         ==&gt;  &quot;&quot;
+<span class="k">$performer(</span>rhythm-guitar<span class="k">)</span>  ==&gt;  &quot;Bob&quot;
+<span class="k">$performer()</span>               ==&gt;  &quot;Ann, Bob, Cindy&quot;
+<span class="k">$performer(</span>, / <span class="k">)</span>           ==&gt;  &quot;Ann / Bob / Cindy&quot;
 </pre></div>
 </div>
 </div>

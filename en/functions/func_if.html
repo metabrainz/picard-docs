@@ -260,17 +260,17 @@ is not provided, it will be assumed to be an empty string.  In addition to (or i
 <code class="docutils literal notranslate"><span class="pre">then</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code> can be used to conditionally execute other functions.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,This is foo)
-$set(bar,)
-$if(%foo%,%foo%,No foo)                   ==&gt;  &quot;This is foo&quot;
-$if(%bar%,%bar%,No bar)                   ==&gt;  &quot;No bar&quot;
-$if(%bar%,This is bar,No bar)             ==&gt;  &quot;No bar&quot;
-$if(%bar%,This is bar,)                   ==&gt;  &quot;&quot;
-$if(%bar%,This is bar)                    ==&gt;  &quot;&quot;
-$if(,True,False)                          ==&gt;  &quot;False&quot;
-$if( ,True,False)                         ==&gt;  &quot;True&quot;
-$if(,$set(value,True),$set(value,False))  ==&gt;  Sets &quot;value&quot; to &quot;False&quot;
-$set(value,$if(%bar%,True,False))         ==&gt;  Sets &quot;value&quot; to &quot;False&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,This is foo<span class="k">)</span>
+<span class="k">$set(</span>bar,<span class="k">)</span>
+<span class="k">$if(</span><span class="n">%foo%</span>,<span class="n">%foo%</span>,No foo<span class="k">)</span>                   ==&gt;  &quot;This is foo&quot;
+<span class="k">$if(</span><span class="n">%bar%</span>,<span class="n">%bar%</span>,No bar<span class="k">)</span>                   ==&gt;  &quot;No bar&quot;
+<span class="k">$if(</span><span class="n">%bar%</span>,This is bar,No bar<span class="k">)</span>             ==&gt;  &quot;No bar&quot;
+<span class="k">$if(</span><span class="n">%bar%</span>,This is bar,<span class="k">)</span>                   ==&gt;  &quot;&quot;
+<span class="k">$if(</span><span class="n">%bar%</span>,This is bar<span class="k">)</span>                    ==&gt;  &quot;&quot;
+<span class="k">$if(</span>,True,False<span class="k">)</span>                          ==&gt;  &quot;False&quot;
+<span class="k">$if(</span> ,True,False<span class="k">)</span>                         ==&gt;  &quot;True&quot;
+<span class="k">$if(</span>,<span class="k">$set(</span>value,True<span class="k">)</span>,<span class="k">$set(</span>value,False<span class="k">))</span>  ==&gt;  Sets &quot;value&quot; to &quot;False&quot;
+<span class="k">$set(</span>value,<span class="k">$if(</span><span class="n">%bar%</span>,True,False<span class="k">))</span>         ==&gt;  Sets &quot;value&quot; to &quot;False&quot;
 </pre></div>
 </div>
 </div>

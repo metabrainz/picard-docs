@@ -247,12 +247,12 @@ examples below.</p>
 <p>Les codes de formatage spécifiques à la plate-forme doivent être évités pour garantir la portabilité des scripts sur les différentes plates-formes. Ces codes incluent: supprimer zéro-padding (par exemple: <code class="docutils literal notranslate"><span class="pre">%-d</span></code> et <code class="docutils literal notranslate"><span class="pre">%-m</span></code> sous Linux ou macOS, et leurs équivalents <code class="docutils literal notranslate"><span class="pre">%#d</span></code> et <code class="docutils literal notranslate"><span class="pre">%#m</span></code> sur Windows); spécificateurs de longueur d’élément (par exemple: <code class="docutils literal notranslate"><span class="pre">%3Y</span></code>); et accrocher “%” à la fin de la chaîne de format.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$datetime()                         ==&gt;  &quot;2020-02-15 14:26:32&quot;
-$datetime(\%Y-\%m-\%d \%H:\%M:\%S)  ==&gt;  &quot;2020-02-15 14:26:32&quot;
-$datetime(\%Y-\%m-\%d)              ==&gt;  &quot;2020-02-15&quot;
-$datetime(\%H:\%M:\%S)              ==&gt;  &quot;14:26:32&quot;
-$datetime(\%B \%d, \%Y)             ==&gt;  &quot;February 15, 2020&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$datetime()</span>                         ==&gt;  &quot;2020-02-15 14:26:32&quot;
+<span class="k">$datetime(</span><span class="se">\%</span>Y-<span class="se">\%</span>m-<span class="se">\%</span>d <span class="se">\%</span>H:<span class="se">\%</span>M:<span class="se">\%</span>S<span class="k">)</span>  ==&gt;  &quot;2020-02-15 14:26:32&quot;
+<span class="k">$datetime(</span><span class="se">\%</span>Y-<span class="se">\%</span>m-<span class="se">\%</span>d<span class="k">)</span>              ==&gt;  &quot;2020-02-15&quot;
+<span class="k">$datetime(</span><span class="se">\%</span>H:<span class="se">\%</span>M:<span class="se">\%</span>S<span class="k">)</span>              ==&gt;  &quot;14:26:32&quot;
+<span class="k">$datetime(</span><span class="se">\%</span>B <span class="se">\%</span>d, <span class="se">\%</span>Y<span class="k">)</span>             ==&gt;  &quot;February 15, 2020&quot;
 </pre></div>
 </div>
 </div>

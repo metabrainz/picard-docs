@@ -261,13 +261,13 @@ Whitespace characters include multiple consecutive spaces, and various other uni
 Characters such as newlines ‘\n’, tabs ‘\t’ and returns ‘\r’ are treated as spaces.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will each return “This text has been stripped.”:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$strip(This text has been stripped.)
-$strip(This text has been stripped.  )
-$strip(  This text has been stripped.  )
-$strip(  This  text has been stripped.)
-$strip(  This  text has been stripped.  )
-$strip(This  text  has  been  stripped.)
-$strip(This  text\rhas\nbeen\tstripped.)
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$strip(</span>This text has been stripped.<span class="k">)</span>
+<span class="k">$strip(</span>This text has been stripped.  <span class="k">)</span>
+<span class="k">$strip(</span>  This text has been stripped.  <span class="k">)</span>
+<span class="k">$strip(</span>  This  text has been stripped.<span class="k">)</span>
+<span class="k">$strip(</span>  This  text has been stripped.  <span class="k">)</span>
+<span class="k">$strip(</span>This  text  has  been  stripped.<span class="k">)</span>
+<span class="k">$strip(</span>This  text<span class="se">\r</span>has<span class="se">\n</span>been<span class="se">\t</span>stripped.<span class="k">)</span>
 </pre></div>
 </div>
 </div>

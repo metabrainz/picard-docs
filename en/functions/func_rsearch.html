@@ -275,15 +275,15 @@ a backslash before the character to be escaped.  For example, the regular expres
 </div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$rsearch(test \(disc 1\),\\\(disc \(\\d+\)\\\))  ==&gt;  &quot;1&quot;
-$rsearch(test \(disc 1\),\\\(disc \\d+\\\))      ==&gt;  &quot;(disc 1)&quot;
-$rsearch(test,x)                                 ==&gt;  &quot;&quot;
-$rsearch(test,t)                                 ==&gt;  &quot;t&quot;
-$rsearch(test,s)                                 ==&gt;  &quot;s&quot;
-$rsearch(test,\(e\).*s)                          ==&gt;  &quot;e&quot;
-$rsearch(test,\(e\).*\(s\))                      ==&gt;  &quot;e&quot;
-$rsearch(test,\(e\).*x)                          ==&gt;  &quot;&quot;
-$rsearch(test,\(e\).*\(x\))                      ==&gt;  &quot;&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$rsearch(</span>test <span class="se">\(</span>disc 1<span class="se">\)</span>,<span class="se">\\\(</span>disc <span class="se">\(\\</span>d+<span class="se">\)\\\)</span><span class="k">)</span>  ==&gt;  &quot;1&quot;
+<span class="k">$rsearch(</span>test <span class="se">\(</span>disc 1<span class="se">\)</span>,<span class="se">\\\(</span>disc <span class="se">\\</span>d+<span class="se">\\\)</span><span class="k">)</span>      ==&gt;  &quot;(disc 1<span class="k">)</span>&quot;
+<span class="k">$rsearch(</span>test,x<span class="k">)</span>                                 ==&gt;  &quot;&quot;
+<span class="k">$rsearch(</span>test,t<span class="k">)</span>                                 ==&gt;  &quot;t&quot;
+<span class="k">$rsearch(</span>test,s<span class="k">)</span>                                 ==&gt;  &quot;s&quot;
+<span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*s<span class="k">)</span>                          ==&gt;  &quot;e&quot;
+<span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*<span class="se">\(</span>s<span class="se">\)</span><span class="k">)</span>                      ==&gt;  &quot;e&quot;
+<span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*x<span class="k">)</span>                          ==&gt;  &quot;&quot;
+<span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*<span class="se">\(</span>x<span class="se">\)</span><span class="k">)</span>                      ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

@@ -260,11 +260,11 @@
 <p><strong>La description:</strong></p>
 <p>Déplace les <code class="docutils literal notranslate"><span class="pre">préfixes</span></code> spécifiés du début à la fin de <code class="docutils literal notranslate"><span class="pre">texte</span></code>. N’importe quel nombre de <code class="docutils literal notranslate"><span class="pre">préfixes</span></code> peut être spécifié, séparés par des virgules. Si aucun préfixe n’est spécifié, « A » et « The » sont utilisés par défaut. Notez que la correspondance est sensible à la casse.</p>
 <p><strong>Exemple:</strong></p>
-<p>Si l “<code class="docutils literal notranslate"><span class="pre">albumartiste</span></code> est « Le Butcherettes », les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$swapprefix(%albumartist%)               ==&gt;  &quot;Le Butcherettes&quot;
-$swapprefix(%albumartist%,le)            ==&gt;  &quot;Le Butcherettes&quot;
-$swapprefix(%albumartist%,L)             ==&gt;  &quot;Le Butcherettes&quot;
-$swapprefix(%albumartist%,A,An,The,Le)   ==&gt;  &quot;Butcherettes, Le&quot;
+<p>If the <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> is « Le Butcherettes », the following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$swapprefix(</span><span class="n">%albumartist%</span><span class="k">)</span>               ==&gt;  &quot;Le Butcherettes&quot;
+<span class="k">$swapprefix(</span><span class="n">%albumartist%</span>,le<span class="k">)</span>            ==&gt;  &quot;Le Butcherettes&quot;
+<span class="k">$swapprefix(</span><span class="n">%albumartist%</span>,L<span class="k">)</span>             ==&gt;  &quot;Le Butcherettes&quot;
+<span class="k">$swapprefix(</span><span class="n">%albumartist%</span>,A,An,The,Le<span class="k">)</span>   ==&gt;  &quot;Butcherettes, Le&quot;
 </pre></div>
 </div>
 </div>

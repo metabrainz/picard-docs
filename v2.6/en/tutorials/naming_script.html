@@ -225,23 +225,23 @@ that we will have one directory level for the album which will contain the songs
 We want the <strong>ARTIST</strong> name, so available tags for this could be <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> or <code class="docutils literal notranslate"><span class="pre">artist</span></code>. This should be the
 name for an album folder, so <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> sounds like what we need. To get the actual value for a tag you need to enclose
 its name in percent signs. So let’s start:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span>
 </pre></div>
 </div>
 <p>Now we want the <strong>YEAR</strong>. There is no <code class="docutils literal notranslate"><span class="pre">year</span></code> tag, but there is <code class="docutils literal notranslate"><span class="pre">date</span></code>. Let’s use this for now. If we want to add
 extra text like the “<strong>-</strong>” just write it down. We need to be careful with the parentheses, because those are special
 variables in scripting. We need to prefix them with a backslash. Let’s add this all:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> \<span class="p">(</span><span class="o">%</span><span class="n">date</span><span class="o">%</span>\<span class="p">)</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span>
 </pre></div>
 </div>
 <p>Now we want the <strong>ALBUM NAME</strong>. That’s simple, just use <code class="docutils literal notranslate"><span class="pre">album</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> \<span class="p">(</span><span class="o">%</span><span class="n">date</span><span class="o">%</span>\<span class="p">)</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>
 </pre></div>
 </div>
 <p>That takes care of the directory portion of the renaming.  The next part is the <strong>TRACK</strong> number and <strong>SONG TITLE</strong>.  The
 track number is available as <code class="docutils literal notranslate"><span class="pre">tracknumber</span></code> and the title of the track is simply <code class="docutils literal notranslate"><span class="pre">title</span></code>.  Adding these to our script
 we get:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> \<span class="p">(</span><span class="o">%</span><span class="n">date</span><span class="o">%</span>\<span class="p">)</span> <span class="o">%</span><span class="n">album</span><span class="o">%/%</span><span class="n">tracknumber</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">title</span><span class="o">%</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="n">%tracknumber%</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
 <p>You can see that this looks nearly like the pattern that we said we wanted at the start. It’s not perfect yet for a few
@@ -250,27 +250,27 @@ we get a full date instead of just the year. Finally, sometimes if you tag exist
 <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> set, just <code class="docutils literal notranslate"><span class="pre">artist</span></code>.</p>
 <p>Let’s fix the track number first. We can take care of that by using the <code class="docutils literal notranslate"><span class="pre">$num()</span></code> function to add a leading zero to the
 number shown for tracks 1 through 9:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%albumartist% - \(%date%\) %album%/$num(%tracknumber%,2) - %title%
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
 <p>Now let’s fix the <strong>ARTIST</strong>. We can fallback to using <code class="docutils literal notranslate"><span class="pre">artist</span></code> if <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> is not available by using:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - \(%date%\) %album%/$num(%tracknumber%,2) - %title%
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">$if2()</span></code> function uses the first value that is not empty, so if <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> is empty it uses <code class="docutils literal notranslate"><span class="pre">artist</span></code> instead.</p>
 <p>For the <code class="docutils literal notranslate"><span class="pre">date</span></code> tag the dates from MusicBrainz are always formatted as YYYY-MM-DD. We only need the year, so let’s get
 just the first 4 characters with the <code class="docutils literal notranslate"><span class="pre">$left()</span></code> function:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - \($left(%date%,4)\) %album%/$num(%tracknumber%,2) - %title%
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
 <p>What happens if there is no <code class="docutils literal notranslate"><span class="pre">date</span></code> tag information? Sometimes MusicBrainz does not have the release date of an album
 set as it is not yet known or hasn’t been entered into the database. It would be great to omit the entire date with the
 parentheses in this case. Let’s use the <code class="docutils literal notranslate"><span class="pre">$if()</span></code> function to check whether the date is set:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - $if(%date%,\($left(%date%,4)\) )%album%/$num(%tracknumber%,2) - %title%
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="k">$if(</span><span class="n">%date%</span>,<span class="se">\(</span><span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span><span class="se">\)</span> <span class="k">)</span><span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
 <p>Alternately, we can enter a placeholder such a “<strong>0000</strong>” if the date is missing:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$if2(%albumartist%,%artist%) - \($if(%date%,$left(%date%,4),0000)\) %album%/$num(%tracknumber%,2) - %title%
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="k">$if(</span><span class="n">%date%</span>,<span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span>,0000<span class="k">)</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
 <p>And there you have it – the final script for naming your files developed from the pattern that we used as our starting point.</p>

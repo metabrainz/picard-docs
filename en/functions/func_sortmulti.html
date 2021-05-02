@@ -251,16 +251,16 @@ coerce the value into a proper multi-valued variable.  If <code class="docutils 
 <code class="docutils literal notranslate"><span class="pre">$sortmulti</span></code> will return an empty string.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,B; C; E; D; A)
-$sortmulti(%foo%)                       ==&gt;  &quot;B; C; E; D; A&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,B; C; E; D; A<span class="k">)</span>
+<span class="k">$sortmulti(</span><span class="n">%foo%</span><span class="k">)</span>                       ==&gt;  &quot;B; C; E; D; A&quot;
 
-$setmulti(foo,B; C; E; D; A)
-$sortmulti(%foo%)                       ==&gt;  &quot;A; B; C; D; E&quot;
+<span class="k">$setmulti(</span>foo,B; C; E; D; A<span class="k">)</span>
+<span class="k">$sortmulti(</span><span class="n">%foo%</span><span class="k">)</span>                       ==&gt;  &quot;A; B; C; D; E&quot;
 
-$sortmulti(B; D; E; A; C)               ==&gt;  &quot;A; B; C; D; E&quot;
-$sortmulti(B:AB; D:C; E:D; A:A; C:X,:)  ==&gt;  &quot;A; C:AB; D:B:C; E:D; A:X&quot;
-$sortmulti(,)                           ==&gt;  &quot;&quot;
-$sortmulti(,:)                          ==&gt;  &quot;&quot;
+<span class="k">$sortmulti(</span>B; D; E; A; C<span class="k">)</span>               ==&gt;  &quot;A; B; C; D; E&quot;
+<span class="k">$sortmulti(</span>B:AB; D:C; E:D; A:A; C:X,:<span class="k">)</span>  ==&gt;  &quot;A; C:AB; D:B:C; E:D; A:X&quot;
+<span class="k">$sortmulti(</span>,<span class="k">)</span>                           ==&gt;  &quot;&quot;
+<span class="k">$sortmulti(</span>,:<span class="k">)</span>                          ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

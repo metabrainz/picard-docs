@@ -258,15 +258,15 @@
 <p><strong>La description:</strong></p>
 <p>Renvoie vrai si <code class="docutils literal notranslate"><span class="pre">x</span></code> ou <code class="docutils literal notranslate"><span class="pre">y</span></code> n’est pas vide. Peut être utilisé avec un nombre arbitraire d’arguments. Le résultat est vrai si <strong>TOUT</strong> des arguments n’est pas vide.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$or(,)          ==&gt;  &quot;&quot;   (False)
-$or(,1)         ==&gt;  &quot;1&quot;  (True)
-$or(,A)         ==&gt;  &quot;1&quot;  (True)
-$or(,$gt(4,5))  ==&gt;  &quot;&quot;   (False)
-$or(,$lt(4,5))  ==&gt;  &quot;1&quot;  (True)
-$or(,,)         ==&gt;  &quot;&quot;   (False)
-$or(,,0)        ==&gt;  &quot;1&quot;  (True)
-$or(,, )        ==&gt;  &quot;1&quot;  (True)
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$or(</span>,<span class="k">)</span>          ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$or(</span>,1<span class="k">)</span>         ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$or(</span>,A<span class="k">)</span>         ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$or(</span>,<span class="k">$gt(</span>4,5<span class="k">))</span>  ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$or(</span>,<span class="k">$lt(</span>4,5<span class="k">))</span>  ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$or(</span>,,<span class="k">)</span>         ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$or(</span>,,0<span class="k">)</span>        ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$or(</span>,, <span class="k">)</span>        ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
 </pre></div>
 </div>
 </div>

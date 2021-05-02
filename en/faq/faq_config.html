@@ -260,11 +260,11 @@ ID3v2.3 tags instead.</p>
 <p>On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can
 use the <code class="docutils literal notranslate"><span class="pre">BROWSER</span></code> environment variable.</p>
 <p>For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">BROWSER</span><span class="o">=</span><span class="s2">&quot;firefox &#39;</span><span class="si">%s</span><span class="s2">&#39; &amp;&quot;</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>export BROWSER=&quot;firefox &#39;<span class="err">%</span>s&#39; &amp;&quot;
 </pre></div>
 </div>
 <p>Another approach that works in some GNU/Linux systems is the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">update</span><span class="o">-</span><span class="n">alternatives</span> <span class="o">--</span><span class="n">config</span> <span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">browser</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>sudo update-alternatives --config x-www-browser
 </pre></div>
 </div>
 <p>This should present you with a list of existing browsers in your system, allowing you to select the one to use by default.</p>

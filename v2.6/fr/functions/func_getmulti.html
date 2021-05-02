@@ -248,25 +248,25 @@
 <p>Obtient l’élément à <code class="docutils literal notranslate"><span class="pre">index</span></code> à partir de la variable à valeurs multiples <code class="docutils literal notranslate"><span class="pre">nom</span></code>. Une valeur littérale représentant une valeur multiple peut être remplacée par <code class="docutils literal notranslate"><span class="pre">nom</span></code>, en utilisant le <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou un point-virgule suivi d’un espace « ;  » s’il n’est pas passé) pour forcer la valeur en une valeur multiple appropriée variable.</p>
 <p>L”<code class="docutils literal notranslate"><span class="pre">index</span></code> est basé sur zéro. Si <code class="docutils literal notranslate"><span class="pre">index</span></code> est inférieur à 0, alors la valeur utilisée est le nombre d’éléments dans <code class="docutils literal notranslate"><span class="pre">nom</span></code> plus <code class="docutils literal notranslate"><span class="pre">index</span></code> (par exemple: <code class="docutils literal notranslate"><span class="pre">$getmulti(%abcd%,-1)</span></code> est identique à <code class="docutils literal notranslate"><span class="pre">$getmulti(%abcd%,3)</span></code> si <code class="docutils literal notranslate"><span class="pre">%abcd%</span></code> est une variable à valeurs multiples avec quatre éléments). Si <code class="docutils literal notranslate"><span class="pre">index</span></code> est manquant, pas un entier, un nombre supérieur ou égal au nombre d’éléments dans <code class="docutils literal notranslate"><span class="pre">nom</span></code>, ou un nombre négatif supérieur au nombre d’éléments dans <code class="docutils literal notranslate"><span class="pre">nom</span></code>, alors le fonction retournera une chaîne vide.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,A; B; C)
-$setmulti(bar,A; B; C)
-$set(baz,1)
-$getmulti(%foo%,%baz%)        ==&gt;  &quot;&quot;
-$getmulti(%foo%,0)            ==&gt;  &quot;A; B; C&quot;
-$getmulti(%foo%,-1)           ==&gt;  &quot;A; B; C&quot;
-$getmulti(%foo%,-%baz%)       ==&gt;  &quot;A; B; C&quot;
-$getmulti(%bar%,%baz%)        ==&gt;  &quot;B&quot;
-$getmulti(%bar%,0)            ==&gt;  &quot;A&quot;
-$getmulti(%bar%,-1)           ==&gt;  &quot;C&quot;
-$getmulti(%bar%,-%baz%)       ==&gt;  &quot;C&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,A; B; C<span class="k">)</span>
+<span class="k">$setmulti(</span>bar,A; B; C<span class="k">)</span>
+<span class="k">$set(</span>baz,1<span class="k">)</span>
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,<span class="n">%baz%</span><span class="k">)</span>        ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,0<span class="k">)</span>            ==&gt;  &quot;A; B; C&quot;
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,-1<span class="k">)</span>           ==&gt;  &quot;A; B; C&quot;
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,-<span class="n">%baz%</span><span class="k">)</span>       ==&gt;  &quot;A; B; C&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,<span class="n">%baz%</span><span class="k">)</span>        ==&gt;  &quot;B&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,0<span class="k">)</span>            ==&gt;  &quot;A&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,-1<span class="k">)</span>           ==&gt;  &quot;C&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,-<span class="n">%baz%</span><span class="k">)</span>       ==&gt;  &quot;C&quot;
 
-$getmulti(A:1; B:2; C:3,1)    ==&gt;  &quot;B:2&quot;
-$getmulti(A:1; B:2; C:3,1,:)  ==&gt;  &quot;1; B&quot;
-$getmulti(A:1; B:2; C:3,10)   ==&gt;  &quot;&quot;
-$getmulti(A:1; B:2; C:3,-10)  ==&gt;  &quot;&quot;
-$getmulti(A:1; B:2; C:3,1.5)  ==&gt;  &quot;&quot;
-$getmulti(A:1; B:2; C:3,a)    ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,1<span class="k">)</span>    ==&gt;  &quot;B:2&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,1,:<span class="k">)</span>  ==&gt;  &quot;1; B&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,10<span class="k">)</span>   ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,-10<span class="k">)</span>  ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,1.5<span class="k">)</span>  ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,a<span class="k">)</span>    ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

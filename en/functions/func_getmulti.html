@@ -256,24 +256,24 @@ number of elements in <code class="docutils literal notranslate"><span class="pr
 <code class="docutils literal notranslate"><span class="pre">name</span></code>, then the function will return an empty string.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,A; B; C)
-$setmulti(bar,A; B; C)
-$set(baz,1)
-$getmulti(%foo%,%baz%)        ==&gt;  &quot;&quot;
-$getmulti(%foo%,0)            ==&gt;  &quot;A; B; C&quot;
-$getmulti(%foo%,-1)           ==&gt;  &quot;A; B; C&quot;
-$getmulti(%foo%,-%baz%)       ==&gt;  &quot;A; B; C&quot;
-$getmulti(%bar%,%baz%)        ==&gt;  &quot;B&quot;
-$getmulti(%bar%,0)            ==&gt;  &quot;A&quot;
-$getmulti(%bar%,-1)           ==&gt;  &quot;C&quot;
-$getmulti(%bar%,-%baz%)       ==&gt;  &quot;C&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,A; B; C<span class="k">)</span>
+<span class="k">$setmulti(</span>bar,A; B; C<span class="k">)</span>
+<span class="k">$set(</span>baz,1<span class="k">)</span>
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,<span class="n">%baz%</span><span class="k">)</span>        ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,0<span class="k">)</span>            ==&gt;  &quot;A; B; C&quot;
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,-1<span class="k">)</span>           ==&gt;  &quot;A; B; C&quot;
+<span class="k">$getmulti(</span><span class="n">%foo%</span>,-<span class="n">%baz%</span><span class="k">)</span>       ==&gt;  &quot;A; B; C&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,<span class="n">%baz%</span><span class="k">)</span>        ==&gt;  &quot;B&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,0<span class="k">)</span>            ==&gt;  &quot;A&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,-1<span class="k">)</span>           ==&gt;  &quot;C&quot;
+<span class="k">$getmulti(</span><span class="n">%bar%</span>,-<span class="n">%baz%</span><span class="k">)</span>       ==&gt;  &quot;C&quot;
 
-$getmulti(A:1; B:2; C:3,1)    ==&gt;  &quot;B:2&quot;
-$getmulti(A:1; B:2; C:3,1,:)  ==&gt;  &quot;1; B&quot;
-$getmulti(A:1; B:2; C:3,10)   ==&gt;  &quot;&quot;
-$getmulti(A:1; B:2; C:3,-10)  ==&gt;  &quot;&quot;
-$getmulti(A:1; B:2; C:3,1.5)  ==&gt;  &quot;&quot;
-$getmulti(A:1; B:2; C:3,a)    ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,1<span class="k">)</span>    ==&gt;  &quot;B:2&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,1,:<span class="k">)</span>  ==&gt;  &quot;1; B&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,10<span class="k">)</span>   ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,-10<span class="k">)</span>  ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,1.5<span class="k">)</span>  ==&gt;  &quot;&quot;
+<span class="k">$getmulti(</span>A:1; B:2; C:3,a<span class="k">)</span>    ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

@@ -247,25 +247,25 @@ without flattening them.  Following the operation, <code class="docutils literal
 in percent signs ‘%’.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will yield the values for <code class="docutils literal notranslate"><span class="pre">target</span></code> as indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(target,)
-$set(source,one)
-$copymerge(target,source)     ==&gt;  &quot;one&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>target,<span class="k">)</span>
+<span class="k">$set(</span>source,one<span class="k">)</span>
+<span class="k">$copymerge(</span>target,source<span class="k">)</span>     ==&gt;  &quot;one&quot;
 
-$set(target,zero)
-$set(source,one)
-$copymerge(target,source)     ==&gt;  &quot;zero; one&quot;
+<span class="k">$set(</span>target,zero<span class="k">)</span>
+<span class="k">$set(</span>source,one<span class="k">)</span>
+<span class="k">$copymerge(</span>target,source<span class="k">)</span>     ==&gt;  &quot;zero; one&quot;
 
-$set(target,zero)
-$setmulti(source,one; two)
-$copymerge(target,source)     ==&gt;  &quot;zero; one; two&quot;
+<span class="k">$set(</span>target,zero<span class="k">)</span>
+<span class="k">$setmulti(</span>source,one; two<span class="k">)</span>
+<span class="k">$copymerge(</span>target,source<span class="k">)</span>     ==&gt;  &quot;zero; one; two&quot;
 
-$setmulti(target,zero; two)
-$setmulti(source,one; two)
-$copymerge(target,source)     ==&gt;  &quot;zero; two; one&quot;
+<span class="k">$setmulti(</span>target,zero; two<span class="k">)</span>
+<span class="k">$setmulti(</span>source,one; two<span class="k">)</span>
+<span class="k">$copymerge(</span>target,source<span class="k">)</span>     ==&gt;  &quot;zero; two; one&quot;
 
-$set(target,zero; one; zero)
-$set(source,one; two; three)
-$copymerge(target,source)     ==&gt;  &quot;zero, one; two; three&quot;
+<span class="k">$set(</span>target,zero; one; zero<span class="k">)</span>
+<span class="k">$set(</span>source,one; two; three<span class="k">)</span>
+<span class="k">$copymerge(</span>target,source<span class="k">)</span>     ==&gt;  &quot;zero, one; two; three&quot;
 </pre></div>
 </div>
 </div>

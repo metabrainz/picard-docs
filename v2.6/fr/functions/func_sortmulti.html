@@ -247,17 +247,17 @@
 <p><strong>La description:</strong></p>
 <p>Renvoie une copie de la variable à valeurs multiples <code class="docutils literal notranslate"><span class="pre">nom</span></code> avec les éléments triés par ordre croissant. Une valeur littérale représentant une valeur multiple peut être remplacée par <code class="docutils literal notranslate"><span class="pre">nom</span></code>, en utilisant le <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou un point-virgule suivi d’un espace « ;  » s’il n’est pas passé) pour contraindre la valeur à une valeur multiple appropriée variable. Si <code class="docutils literal notranslate"><span class="pre">nom</span></code> est manquant, <code class="docutils literal notranslate"><span class="pre">$sortmulti</span></code> renverra une chaîne vide.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,B; C; E; D; A)
-$sortmulti(%foo%)                       ==&gt;  &quot;B; C; E; D; A&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,B; C; E; D; A<span class="k">)</span>
+<span class="k">$sortmulti(</span><span class="n">%foo%</span><span class="k">)</span>                       ==&gt;  &quot;B; C; E; D; A&quot;
 
-$setmulti(foo,B; C; E; D; A)
-$sortmulti(%foo%)                       ==&gt;  &quot;A; B; C; D; E&quot;
+<span class="k">$setmulti(</span>foo,B; C; E; D; A<span class="k">)</span>
+<span class="k">$sortmulti(</span><span class="n">%foo%</span><span class="k">)</span>                       ==&gt;  &quot;A; B; C; D; E&quot;
 
-$sortmulti(B; D; E; A; C)               ==&gt;  &quot;A; B; C; D; E&quot;
-$sortmulti(B:AB; D:C; E:D; A:A; C:X,:)  ==&gt;  &quot;A; C:AB; D:B:C; E:D; A:X&quot;
-$sortmulti(,)                           ==&gt;  &quot;&quot;
-$sortmulti(,:)                          ==&gt;  &quot;&quot;
+<span class="k">$sortmulti(</span>B; D; E; A; C<span class="k">)</span>               ==&gt;  &quot;A; B; C; D; E&quot;
+<span class="k">$sortmulti(</span>B:AB; D:C; E:D; A:A; C:X,:<span class="k">)</span>  ==&gt;  &quot;A; C:AB; D:B:C; E:D; A:X&quot;
+<span class="k">$sortmulti(</span>,<span class="k">)</span>                           ==&gt;  &quot;&quot;
+<span class="k">$sortmulti(</span>,:<span class="k">)</span>                          ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

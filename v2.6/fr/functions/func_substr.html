@@ -260,15 +260,15 @@
 <p><strong>La description:</strong></p>
 <p>Renvoie la sous-chaîne de <code class="docutils literal notranslate"><span class="pre">texte</span></code> commençant par le caractère à l’index <code class="docutils literal notranslate"><span class="pre">début</span></code>, jusqu’à (mais non compris) le caractère à l’index <code class="docutils literal notranslate"><span class="pre">fin</span></code>. Les index sont basés sur zéro. Les nombres négatifs seront comptés à partir de la fin de la chaîne. Si les index de début ou de fin sont laissés vides, ils seront respectivement par défaut au début et à la fin de la chaîne. Si l’index <code class="docutils literal notranslate"><span class="pre">début</span></code> est évalué à un nombre négatif (par exemple: <code class="docutils literal notranslate"><span class="pre">texte</span></code> est « abc » et <code class="docutils literal notranslate"><span class="pre">début</span></code> est -10), il sera par défaut au début de la chaîne. De même, si l’index <code class="docutils literal notranslate"><span class="pre">fin</span></code> est un nombre supérieur au nombre de caractères de la chaîne, il sera par défaut à la fin de la chaîne. Les valeurs d’index invalides (par exemple: <code class="docutils literal notranslate"><span class="pre">début</span></code> supérieur à <code class="docutils literal notranslate"><span class="pre">fin</span></code>) renverra une chaîne vide.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$substr(abcdefg)        ==&gt;  &quot;abcdefg&quot;
-$substr(abcdefg,3)      ==&gt;  &quot;defg&quot;
-$substr(abcdefg,,3)     ==&gt;  &quot;abc&quot;
-$substr(abcdefg,0,3)    ==&gt;  &quot;abc&quot;
-$substr(abcdefg,-3)     ==&gt;  &quot;efg&quot;
-$substr(abcdefg,-6,3)   ==&gt;  &quot;bc&quot;
-$substr(abcdefg,-10,3)  ==&gt;  &quot;abc&quot;
-$substr(abcdefg,3,1)    ==&gt;  &quot;&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$substr(</span>abcdefg<span class="k">)</span>        ==&gt;  &quot;abcdefg&quot;
+<span class="k">$substr(</span>abcdefg,3<span class="k">)</span>      ==&gt;  &quot;defg&quot;
+<span class="k">$substr(</span>abcdefg,,3<span class="k">)</span>     ==&gt;  &quot;abc&quot;
+<span class="k">$substr(</span>abcdefg,0,3<span class="k">)</span>    ==&gt;  &quot;abc&quot;
+<span class="k">$substr(</span>abcdefg,-3<span class="k">)</span>     ==&gt;  &quot;efg&quot;
+<span class="k">$substr(</span>abcdefg,-6,3<span class="k">)</span>   ==&gt;  &quot;bc&quot;
+<span class="k">$substr(</span>abcdefg,-10,3<span class="k">)</span>  ==&gt;  &quot;abc&quot;
+<span class="k">$substr(</span>abcdefg,3,1<span class="k">)</span>    ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

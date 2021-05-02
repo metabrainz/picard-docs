@@ -251,15 +251,15 @@
 <p>Lors d’une comparaison insensible à la casse (par défaut), le dernier élément correspondant sera utilisé dans le résultat.  Par exemple, si la variable à valeurs multiples contient “abc”, “Abc”, “ABc” et “ABC” dans cet ordre, l’élément “ABC” sera inclus dans le résultat.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$setmulti(foo,a; A; B; b; cd; Cd; cD; CD; a; A; b)
-$set(bar,a; A; B; b; cd; Cd; cD; CD; a; A; b)
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>foo,a; A; B; b; cd; Cd; cD; CD; a; A; b<span class="k">)</span>
+<span class="k">$set(</span>bar,a; A; B; b; cd; Cd; cD; CD; a; A; b<span class="k">)</span>
 
-$unique(%foo%)     ==&gt;  &quot;A; CD; b&quot;
-$unique(%bar%)     ==&gt;  &quot;a; A; B; b; cd; Cd; cD; CD; a; A; b&quot;
-$unique(%foo%,1)   ==&gt;  &quot;A; B; CD; Cd; a; b; cD; cd&quot;
+<span class="k">$unique(</span><span class="n">%foo%</span><span class="k">)</span>     ==&gt;  &quot;A; CD; b&quot;
+<span class="k">$unique(</span><span class="n">%bar%</span><span class="k">)</span>     ==&gt;  &quot;a; A; B; b; cd; Cd; cD; CD; a; A; b&quot;
+<span class="k">$unique(</span><span class="n">%foo%</span>,1<span class="k">)</span>   ==&gt;  &quot;A; B; CD; Cd; a; b; cD; cd&quot;
 
-$unique(a; A; B; b; cd; Cd; cD; CD; a; A; b)  ==&gt;  &quot;A; CD; b&quot;
+<span class="k">$unique(</span>a; A; B; b; cd; Cd; cD; CD; a; A; b<span class="k">)</span>  ==&gt;  &quot;A; CD; b&quot;
 </pre></div>
 </div>
 </div>

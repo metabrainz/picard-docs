@@ -245,18 +245,18 @@ that <code class="docutils literal notranslate"><span class="pre">$copy(target,s
 <p>Note that if the variable <code class="docutils literal notranslate"><span class="pre">target</span></code> already exists, it will be overwritten by <code class="docutils literal notranslate"><span class="pre">source</span></code>.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will yield the values for <code class="docutils literal notranslate"><span class="pre">target</span></code> as indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(source,)
-$set(target,This will be overwritten)
-$copy(target,source)                   ==&gt;  &quot;&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>source,<span class="k">)</span>
+<span class="k">$set(</span>target,This will be overwritten<span class="k">)</span>
+<span class="k">$copy(</span>target,source<span class="k">)</span>                   ==&gt;  &quot;&quot;
 
-$set(source,one)
-$copy(target,source)                   ==&gt;  &quot;one&quot;
+<span class="k">$set(</span>source,one<span class="k">)</span>
+<span class="k">$copy(</span>target,source<span class="k">)</span>                   ==&gt;  &quot;one&quot;
 
-$setmulti(source,one)
-$copy(target,source)                   ==&gt;  &quot;one&quot;
+<span class="k">$setmulti(</span>source,one<span class="k">)</span>
+<span class="k">$copy(</span>target,source<span class="k">)</span>                   ==&gt;  &quot;one&quot;
 
-$setmulti(source,one; two)
-$copy(target,source)                   ==&gt;  &quot;one; two&quot;
+<span class="k">$setmulti(</span>source,one; two<span class="k">)</span>
+<span class="k">$copy(</span>target,source<span class="k">)</span>                   ==&gt;  &quot;one; two&quot;
 </pre></div>
 </div>
 </div>

@@ -259,13 +259,13 @@
 <p><strong>La description:</strong></p>
 <p>Renvoie la variable <code class="docutils literal notranslate"><span class="pre">nom</span></code> (équivalent à <code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">nom%</span></code>) ou une chaîne vide si <code class="docutils literal notranslate"><span class="pre">nom</span></code> n’a pas été défini. Si <code class="docutils literal notranslate"><span class="pre">nom</span></code> est une autre variable (par exemple <code class="docutils literal notranslate"><span class="pre">%indirect%</span></code>), la valeur de la variable sera utilisée comme <code class="docutils literal notranslate"><span class="pre">nom</span></code>. Cela permet la récupération de variables nommées dynamiquement.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,This is foo)
-$set(bar,foo)
-$get(foo)              ==&gt;  &quot;This is foo&quot;
-$get(bar)              ==&gt;  &quot;foo&quot;
-$get(%bar%)            ==&gt;  &quot;This is foo&quot;
-$get(baz)              ==&gt;  &quot;&quot; (&#39;baz&#39; has not been set to a value)
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,This is foo<span class="k">)</span>
+<span class="k">$set(</span>bar,foo<span class="k">)</span>
+<span class="k">$get(</span>foo<span class="k">)</span>              ==&gt;  &quot;This is foo&quot;
+<span class="k">$get(</span>bar<span class="k">)</span>              ==&gt;  &quot;foo&quot;
+<span class="k">$get(</span><span class="n">%bar%</span><span class="k">)</span>            ==&gt;  &quot;This is foo&quot;
+<span class="k">$get(</span>baz<span class="k">)</span>              ==&gt;  &quot;&quot; (&#39;baz&#39; has not been set to a value<span class="k">)</span>
 </pre></div>
 </div>
 </div>

@@ -260,12 +260,12 @@
 <p><strong>La description:</strong></p>
 <p>Supprime les <code class="docutils literal notranslate"><span class="pre">préfixes</span></code> spécifiés du début de <code class="docutils literal notranslate"><span class="pre">texte</span></code>. N’importe quel nombre de <code class="docutils literal notranslate"><span class="pre">préfixes</span></code> peut être spécifié, séparés par des virgules. Si aucun préfixe n’est spécifié, « A » et « The » sont utilisés par défaut. Notez que la correspondance est sensible à la casse.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$delprefix(The Beatles)       ==&gt;  &quot;Beatles&quot;
-$delprefix(The Beatles,)      ==&gt;  &quot;The Beatles&quot;
-$delprefix(THE Beatles)       ==&gt;  &quot;THE Beatles&quot;
-$delprefix(THE Beatles,THE)   ==&gt;  &quot;Beatles&quot;
-$delprefix(The Beatles,A,An)  ==&gt;  &quot;The Beatles&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$delprefix(</span>The Beatles<span class="k">)</span>       ==&gt;  &quot;Beatles&quot;
+<span class="k">$delprefix(</span>The Beatles,<span class="k">)</span>      ==&gt;  &quot;The Beatles&quot;
+<span class="k">$delprefix(</span>THE Beatles<span class="k">)</span>       ==&gt;  &quot;THE Beatles&quot;
+<span class="k">$delprefix(</span>THE Beatles,THE<span class="k">)</span>   ==&gt;  &quot;Beatles&quot;
+<span class="k">$delprefix(</span>The Beatles,A,An<span class="k">)</span>  ==&gt;  &quot;The Beatles&quot;
 </pre></div>
 </div>
 </div>

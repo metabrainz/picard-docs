@@ -260,11 +260,11 @@ number of arguments.  Note that comparisons are case-sensitive.</p>
 <p>Functionally equivalent to <code class="docutils literal notranslate"><span class="pre">$or($eq(x,a1),$eq(x,a2)</span> <span class="pre">...)</span></code>.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$eq_any(A,A,B,C)  ==&gt;  &quot;1&quot;  (True)
-$eq_any(A,a,A,A)  ==&gt;  &quot;1&quot;  (True)
-$eq_any(A,a,b,c)  ==&gt;  &quot;&quot;   (False)
-$eq_any(,,,)      ==&gt;  &quot;1&quot;  (True)
-$eq_any(,a,b,c)   ==&gt;  &quot;&quot;   (False)
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$eq_any(</span>A,A,B,C<span class="k">)</span>  ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$eq_any(</span>A,a,A,A<span class="k">)</span>  ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$eq_any(</span>A,a,b,c<span class="k">)</span>  ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$eq_any(</span>,,,<span class="k">)</span>      ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$eq_any(</span>,a,b,c<span class="k">)</span>   ==&gt;  &quot;&quot;   (False<span class="k">)</span>
 </pre></div>
 </div>
 </div>

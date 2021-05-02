@@ -262,12 +262,12 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">coverart_comment</span></code>: Le commentaire de la pochette.</p></li>
 </ul>
 <p>Par exemple, en spécifiant un masque de dénomination de fichier tel que:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">originalyear</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">coverart_maintype</span><span class="o">%</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="n">%originalyear%</span> - <span class="n">%album%</span> - <span class="n">%coverart_maintype%</span>
 </pre></div>
 </div>
 <p>précèdera le nom du fichier avec l’artiste de l’album, l’année de sortie de l’original et le titre de l’album.</p>
 <p>Vous pouvez également demander à Picard d’enregistrer les images dans un sous-répertoire en l’incluant dans le masque de dénomination des fichiers. Par exemple:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Artwork</span><span class="o">/%</span><span class="n">albumartist</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">originalyear</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">album</span><span class="o">%</span> <span class="o">-</span> <span class="o">%</span><span class="n">coverart_maintype</span><span class="o">%</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>Artwork/<span class="n">%albumartist%</span> - <span class="n">%originalyear%</span> - <span class="n">%album%</span> - <span class="n">%coverart_maintype%</span>
 </pre></div>
 </div>
 <p>qui placera les images dans un sous-répertoire appelé « Artwork ».</p>

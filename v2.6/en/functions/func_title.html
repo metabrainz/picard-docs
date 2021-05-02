@@ -263,17 +263,17 @@ upper-case acronyms such as “BBC”.  To only have the first character of each
 capitalized you could first change the text to lower-case.</p>
 <p><strong>Examples:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,tHe houR is upOn uS)
-$title(%foo%)          ==&gt;  &quot;THe HouR Is UpOn US&quot;
-$title($lower(%foo%))  ==&gt;  &quot;The Hour Is Upon Us&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,tHe houR is upOn uS<span class="k">)</span>
+<span class="k">$title(</span><span class="n">%foo%</span><span class="k">)</span>          ==&gt;  &quot;THe HouR Is UpOn US&quot;
+<span class="k">$title($lower(</span><span class="n">%foo%</span><span class="k">))</span>  ==&gt;  &quot;The Hour Is Upon Us&quot;
 
-$set(bar,THIS TEXT IS ALL CAPITALS)
-$title(%bar%)          ==&gt;  &quot;THIS TEXT IS ALL CAPITALS&quot;
-$title($lower(%bar%))  ==&gt;  &quot;This Text Is All Capitals&quot;
+<span class="k">$set(</span>bar,THIS TEXT IS ALL CAPITALS<span class="k">)</span>
+<span class="k">$title(</span><span class="n">%bar%</span><span class="k">)</span>          ==&gt;  &quot;THIS TEXT IS ALL CAPITALS&quot;
+<span class="k">$title($lower(</span><span class="n">%bar%</span><span class="k">))</span>  ==&gt;  &quot;This Text Is All Capitals&quot;
 
-$set(baz,AC/DC recorded live at the BBC studio in London)
-$title(%baz%)          ==&gt;  &quot;AC/DC Recorded Live At The BBC Studio In London&quot;
-$title($lower(%baz%))  ==&gt;  &quot;Ac/Dc Recorded Live At The Bbc Studio In London&quot;
+<span class="k">$set(</span>baz,AC/DC recorded live at the BBC studio in London<span class="k">)</span>
+<span class="k">$title(</span><span class="n">%baz%</span><span class="k">)</span>          ==&gt;  &quot;AC/DC Recorded Live At The BBC Studio In London&quot;
+<span class="k">$title($lower(</span><span class="n">%baz%</span><span class="k">))</span>  ==&gt;  &quot;Ac/Dc Recorded Live At The Bbc Studio In London&quot;
 </pre></div>
 </div>
 </div>

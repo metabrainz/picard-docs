@@ -222,7 +222,7 @@ cannot be started and macOS shows an error message:</p>
 <p>This mostly seems to happen after moving the file to the Applications folder and seems to be
 caused by Gatekeeper mistakenly marking the app as damaged.  To solve the issue open a terminal
 and run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xattr</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;/Applications/MusicBrainz Picard.app&quot;</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>xattr -c &quot;/Applications/MusicBrainz Picard.app&quot;
 </pre></div>
 </div>
 <p>This will clear the app being marked as damaged.  If you have placed the app in a different

@@ -258,15 +258,15 @@
 <p>Returns the first non empty argument.  Can be used with an arbitrary number of arguments.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,)
-$set(bar,Something)
-$if2(%foo%,%bar%,Three)    ==&gt;  &quot;Something&quot;
-$if2(,%bar%,Three)         ==&gt;  &quot;Something&quot;
-$if2(,%foo%,%bar%,Three)   ==&gt;  &quot;Something&quot;
-$if2(%foo%, ,%bar%,Three)  ==&gt;  &quot; &quot;
-$if2(%foo%.,%bar%,Three)   ==&gt;  &quot;.&quot;
-$if2(%foo%,,Three)         ==&gt;  &quot;Three&quot;
-$if2(%foo%,,,)             ==&gt;  &quot;&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,<span class="k">)</span>
+<span class="k">$set(</span>bar,Something<span class="k">)</span>
+<span class="k">$if2(</span><span class="n">%foo%</span>,<span class="n">%bar%</span>,Three<span class="k">)</span>    ==&gt;  &quot;Something&quot;
+<span class="k">$if2(</span>,<span class="n">%bar%</span>,Three<span class="k">)</span>         ==&gt;  &quot;Something&quot;
+<span class="k">$if2(</span>,<span class="n">%foo%</span>,<span class="n">%bar%</span>,Three<span class="k">)</span>   ==&gt;  &quot;Something&quot;
+<span class="k">$if2(</span><span class="n">%foo%</span>, ,<span class="n">%bar%</span>,Three<span class="k">)</span>  ==&gt;  &quot; &quot;
+<span class="k">$if2(</span><span class="n">%foo%</span>.,<span class="n">%bar%</span>,Three<span class="k">)</span>   ==&gt;  &quot;.&quot;
+<span class="k">$if2(</span><span class="n">%foo%</span>,,Three<span class="k">)</span>         ==&gt;  &quot;Three&quot;
+<span class="k">$if2(</span><span class="n">%foo%</span>,,,<span class="k">)</span>             ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>

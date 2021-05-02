@@ -260,11 +260,11 @@ number of arguments.  Note that comparisons are case-sensitive.</p>
 <p>Functionally equivalent to <code class="docutils literal notranslate"><span class="pre">$and($ne(x,a1),$ne(x,a2)</span> <span class="pre">...)</span></code>.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ne_all(A,A,B,C)    ==&gt;  &quot;&quot;   (False)
-$ne_all(A,a,A,A)    ==&gt;  &quot;&quot;   (False)
-$ne_all(A,a,a,a)    ==&gt;  &quot;1&quot;  (True)
-$ne_all(,,,)        ==&gt;  &quot;&quot;   (False)
-$ne_all(,a,a)       ==&gt;  &quot;1&quot;  (True)
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$ne_all(</span>A,A,B,C<span class="k">)</span>    ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$ne_all(</span>A,a,A,A<span class="k">)</span>    ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$ne_all(</span>A,a,a,a<span class="k">)</span>    ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$ne_all(</span>,,,<span class="k">)</span>        ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$ne_all(</span>,a,a<span class="k">)</span>       ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
 </pre></div>
 </div>
 </div>

@@ -243,10 +243,10 @@
 <p><strong>La description:</strong></p>
 <p>Définit la variable <code class="docutils literal notranslate"><span class="pre">nom</span></code> sur <code class="docutils literal notranslate"><span class="pre">valeur</span></code>, en utilisant le <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou un point-virgule suivi d’un espace « ;  » s’il n’est pas passé) pour forcer la <code class="docutils literal notranslate"><span class="pre">valeur</span></code> à revenir dans un multi approprié -variable valorisée. Cela peut être utilisé pour opérer sur des variables à valeurs multiples sous forme de chaîne, puis les remettre en tant que variable à valeurs multiples appropriée.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$setmulti(genre,$lower(%genre%))  ==&gt;  all &quot;genre&quot; elements in lower case
-$setmulti(alpha,A; B; C)          ==&gt;  3 elements (&quot;A&quot;, &quot;B&quot; and &quot;C&quot;)
-$setmulti(mixed,A:A; B:B,:)       ==&gt;  3 elements (&quot;A&quot;, &quot;A; B&quot; and &quot;B&quot;)
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>genre,<span class="k">$lower(</span><span class="n">%genre%</span><span class="k">))</span>  ==&gt;  all &quot;genre&quot; elements in lower case
+<span class="k">$setmulti(</span>alpha,A; B; C<span class="k">)</span>          ==&gt;  3 elements (&quot;A&quot;, &quot;B&quot; and &quot;C&quot;<span class="k">)</span>
+<span class="k">$setmulti(</span>mixed,A:A; B:B,:<span class="k">)</span>       ==&gt;  3 elements (&quot;A&quot;, &quot;A; B&quot; and &quot;B&quot;<span class="k">)</span>
 </pre></div>
 </div>
 </div>

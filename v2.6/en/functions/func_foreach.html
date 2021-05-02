@@ -245,16 +245,16 @@ or count value to be accessed within the code script.</p>
 variable.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will perform the processing indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$noop( Mark all listed tags for deletion from the files. )
-$foreach(genre; comment; year,$delete(%_loop_value%))
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="cm">$noop( Mark all listed tags for deletion from the files. )</span>
+<span class="k">$foreach(</span>genre; comment; year,<span class="k">$delete(</span><span class="n">%_loop_value%</span><span class="k">))</span>
 
-$noop( Create an &#39;artist_count&#39; tag with a count of all artists
-       listed for the track. )
-$foreach(%artists%,$set(artist_count,%_loop_count%))
+<span class="cm">$noop( Create an &#39;artist_count&#39; tag with a count of all artists</span>
+<span class="cm">       listed for the track. )</span>
+<span class="k">$foreach(</span><span class="n">%artists%</span>,<span class="k">$set(</span>artist_count,<span class="n">%_loop_count%</span><span class="k">))</span>
 
-$noop( Create a separate tag for each artist listed for the
-       track as &#39;artist_1&#39;, &#39;artist_2&#39;, etc. )
-$foreach(%artists%,$set(artist_%_loop_count%,%_loop_value%))
+<span class="cm">$noop( Create a separate tag for each artist listed for the</span>
+<span class="cm">       track as &#39;artist_1&#39;, &#39;artist_2&#39;, etc. )</span>
+<span class="k">$foreach(</span><span class="n">%artists%</span>,<span class="k">$set(</span>artist_<span class="n">%_loop_count%</span>,<span class="n">%_loop_value%</span><span class="k">))</span>
 </pre></div>
 </div>
 </div>

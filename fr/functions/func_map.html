@@ -253,23 +253,23 @@
 <p>Vous ne pouvez pas enregistrer le <code class="docutils literal notranslate"><span class="pre">code</span></code> dans une variable puis passer la variable à la fonction en tant que <code class="docutils literal notranslate"><span class="pre">%code%</span></code> car il sera évalué lorsqu’il sera affecté à la variable plutôt que pendant la boucle.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,First:A; Second:B)
-$map(%foo%,$upper(%_loop_count%=%_loop_value%))    ==&gt;  &quot;1=FIRST:A; SECOND:B&quot;
-$map(%foo%,$upper(%_loop_count%=%_loop_value%),:)  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,First:A; Second:B<span class="k">)</span>
+<span class="k">$map(</span><span class="n">%foo%</span>,<span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">))</span>    ==&gt;  &quot;1=FIRST:A; SECOND:B&quot;
+<span class="k">$map(</span><span class="n">%foo%</span>,<span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">)</span>,:<span class="k">)</span>  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
 
-$setmulti(bar,First:A; Second:B)
-$map(%bar%,$upper(%_loop_count%=%_loop_value%))    ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
-$map(%bar%,$upper(%_loop_count%=%_loop_value%),:)  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
+<span class="k">$setmulti(</span>bar,First:A; Second:B<span class="k">)</span>
+<span class="k">$map(</span><span class="n">%bar%</span>,<span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">))</span>    ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
+<span class="k">$map(</span><span class="n">%bar%</span>,<span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">)</span>,:<span class="k">)</span>  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
 
-$setmulti(baz,A; B; x; C)
-$map(%baz%,$if($eq(%_loop_value%,x),,%_loop_count%=%_loop_value%))
+<span class="k">$setmulti(</span>baz,A; B; x; C<span class="k">)</span>
+<span class="k">$map(</span><span class="n">%baz%</span>,<span class="k">$if($eq(</span><span class="n">%_loop_value%</span>,x<span class="k">)</span>,,<span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">))</span>
                                                    ==&gt; &quot;1=A; 2=B; 4=C&quot;
-$map(First:A; Second:B,
-    $upper(%_loop_count%=%_loop_value%))           ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
+<span class="k">$map(</span>First:A; Second:B,
+    <span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">))</span>           ==&gt;  &quot;1=FIRST:A; 2=SECOND:B&quot;
 
-$map(First:A; Second:B,
-    $upper(%_loop_count%=%_loop_value%),:)         ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
+<span class="k">$map(</span>First:A; Second:B,
+    <span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">)</span>,:<span class="k">)</span>         ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;
 </pre></div>
 </div>
 </div>

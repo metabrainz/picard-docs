@@ -259,15 +259,15 @@
 <p><strong>La description:</strong></p>
 <p>Renvoie vrai, si <code class="docutils literal notranslate"><span class="pre">x</span></code> contient <code class="docutils literal notranslate"><span class="pre">y</span></code>. Notez que les comparaisons sont sensibles à la casse.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,ABCDEFG)
-$set(bar,CDE)
-$in(%foo%,%bar%)  ==&gt;  &quot;1&quot;  (True)
-$in(ABCDE,CDE)    ==&gt;  &quot;1&quot;  (True)
-$in(ABCDE,CE)     ==&gt;  &quot;&quot;   (False)
-$in(ABCDE,cde)    ==&gt;  &quot;&quot;   (False)
-$in(ABCDE,)       ==&gt;  &quot;1&quot;  (True)
-$in(,)            ==&gt;  &quot;1&quot;  (True)
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,ABCDEFG<span class="k">)</span>
+<span class="k">$set(</span>bar,CDE<span class="k">)</span>
+<span class="k">$in(</span><span class="n">%foo%</span>,<span class="n">%bar%</span><span class="k">)</span>  ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$in(</span>ABCDE,CDE<span class="k">)</span>    ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$in(</span>ABCDE,CE<span class="k">)</span>     ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$in(</span>ABCDE,cde<span class="k">)</span>    ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$in(</span>ABCDE,<span class="k">)</span>       ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$in(</span>,<span class="k">)</span>            ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
 </pre></div>
 </div>
 </div>

@@ -249,22 +249,22 @@
 <p>Les index sont basés sur zéro. Les nombres négatifs seront comptés à partir du nombre d’éléments de la liste. Si les index <code class="docutils literal notranslate"><span class="pre">début</span></code> ou <code class="docutils literal notranslate"><span class="pre">fin</span></code> sont laissés vides, ils seront par défaut à 0 et au nombre d’éléments dans la liste respectivement.</p>
 <p>Une utilisation typique pourrait être de créer une variable à valeurs multiples avec tous les artistes dans <code class="docutils literal notranslate"><span class="pre">%artists%</span></code> sauf le premier, qui peut être utilisé pour créer un « feat. » liste. Cela ressemblerait à quelque chose comme <code class="docutils literal notranslate"><span class="pre">$setmulti(support_artists,$slice(%artists%,1,))</span></code>.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,A; B; C; D; E)
-$slice(%foo%,1)                        ==&gt;  &quot;&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,A; B; C; D; E<span class="k">)</span>
+<span class="k">$slice(</span><span class="n">%foo%</span>,1<span class="k">)</span>                        ==&gt;  &quot;&quot;
 
-$setmulti(foo,A; B; C; D; E)
-$slice(%foo%,1)                        ==&gt;  &quot;B; C; D; E&quot;
+<span class="k">$setmulti(</span>foo,A; B; C; D; E<span class="k">)</span>
+<span class="k">$slice(</span><span class="n">%foo%</span>,1<span class="k">)</span>                        ==&gt;  &quot;B; C; D; E&quot;
 
-$slice(A; B; C; D; E,1)                ==&gt;  &quot;B; C; D; E&quot;
-$slice(A; B; C; D; E,1,3)              ==&gt;  &quot;B; C&quot;
-$slice(A; B; C; D; E,,3)               ==&gt;  &quot;A; B; C&quot;
-$slice(A; B; C; D; E,1,3)              ==&gt;  &quot;B; C&quot;
-$slice(A; B; C; D; E,1,-1)             ==&gt;  &quot;B; C; D&quot;
-$slice(A; B; C; D; E,-4,4)             ==&gt;  &quot;B; C; D&quot;
-$slice(A:A; B:B; C:C; D:D; E:E,,1,:)   ==&gt;  &quot;A&quot;
-$slice(A:A; B:B; C:C; D:D; E:E,-2,,:)  ==&gt;  &quot;D; E:E&quot;
-$slice(A:A; B:B; C:C; D:D; E:E,2,4,:)  ==&gt;  &quot;B; C:C; D&quot;
+<span class="k">$slice(</span>A; B; C; D; E,1<span class="k">)</span>                ==&gt;  &quot;B; C; D; E&quot;
+<span class="k">$slice(</span>A; B; C; D; E,1,3<span class="k">)</span>              ==&gt;  &quot;B; C&quot;
+<span class="k">$slice(</span>A; B; C; D; E,,3<span class="k">)</span>               ==&gt;  &quot;A; B; C&quot;
+<span class="k">$slice(</span>A; B; C; D; E,1,3<span class="k">)</span>              ==&gt;  &quot;B; C&quot;
+<span class="k">$slice(</span>A; B; C; D; E,1,-1<span class="k">)</span>             ==&gt;  &quot;B; C; D&quot;
+<span class="k">$slice(</span>A; B; C; D; E,-4,4<span class="k">)</span>             ==&gt;  &quot;B; C; D&quot;
+<span class="k">$slice(</span>A:A; B:B; C:C; D:D; E:E,,1,:<span class="k">)</span>   ==&gt;  &quot;A&quot;
+<span class="k">$slice(</span>A:A; B:B; C:C; D:D; E:E,-2,,:<span class="k">)</span>  ==&gt;  &quot;D; E:E&quot;
+<span class="k">$slice(</span>A:A; B:B; C:C; D:D; E:E,2,4,:<span class="k">)</span>  ==&gt;  &quot;B; C:C; D&quot;
 </pre></div>
 </div>
 </div>

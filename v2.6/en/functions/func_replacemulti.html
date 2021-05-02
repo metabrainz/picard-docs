@@ -250,17 +250,17 @@ returns the resulting multi-value variable string with the elements separated by
 <p>Empty elements are automatically removed from the output.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$setmulti(foo,Electronic; Idm; Techno)
-$replacemulti(%foo%,Idm,IDM)                ==&gt;  &quot;Electronic; IDM; Techno&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>foo,Electronic; Idm; Techno<span class="k">)</span>
+<span class="k">$replacemulti(</span><span class="n">%foo%</span>,Idm,IDM<span class="k">)</span>                ==&gt;  &quot;Electronic; IDM; Techno&quot;
 
-$setmulti(foo,Electronic; Jungle; Bardcore)
-$replacemulti(%foo%,Bardcore,Hardcore)      ==&gt;  &quot;Electronic; Jungle; Hardcore&quot;
+<span class="k">$setmulti(</span>foo,Electronic; Jungle; Bardcore<span class="k">)</span>
+<span class="k">$replacemulti(</span><span class="n">%foo%</span>,Bardcore,Hardcore<span class="k">)</span>      ==&gt;  &quot;Electronic; Jungle; Hardcore&quot;
 
-$setmulti(foo,One; Two; Three)
-$replacemulti(%foo%,Four,Five)              ==&gt;  &quot;One; Two; Three&quot;
+<span class="k">$setmulti(</span>foo,One; Two; Three<span class="k">)</span>
+<span class="k">$replacemulti(</span><span class="n">%foo%</span>,Four,Five<span class="k">)</span>              ==&gt;  &quot;One; Two; Three&quot;
 
-$setmulti(foo,Four; Five; Six)
-$replacemulti(%foo%,Five,)                  ==&gt;  &quot;Four; Six&quot;
+<span class="k">$setmulti(</span>foo,Four; Five; Six<span class="k">)</span>
+<span class="k">$replacemulti(</span><span class="n">%foo%</span>,Five,<span class="k">)</span>                  ==&gt;  &quot;Four; Six&quot;
 </pre></div>
 </div>
 </div>

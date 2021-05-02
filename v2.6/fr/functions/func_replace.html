@@ -259,23 +259,23 @@
 <p><strong>La description:</strong></p>
 <p>Remplace les occurrences de <code class="docutils literal notranslate"><span class="pre">recherche</span></code> dans <code class="docutils literal notranslate"><span class="pre">texte</span></code> par <code class="docutils literal notranslate"><span class="pre">remplacement</span></code> et renvoie la chaîne résultante.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,I like cats the best)
-$replace(%foo%,cat,dog)                 ==&gt;  &quot;I like dogs the best&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,I like cats the best<span class="k">)</span>
+<span class="k">$replace(</span><span class="n">%foo%</span>,cat,dog<span class="k">)</span>                 ==&gt;  &quot;I like dogs the best&quot;
 
-$set(foo,I like cats the best)
-$set(bar,cat)
-$replace(%foo%,%bar%,dog)               ==&gt;  &quot;I like dogs the best&quot;
+<span class="k">$set(</span>foo,I like cats the best<span class="k">)</span>
+<span class="k">$set(</span>bar,cat<span class="k">)</span>
+<span class="k">$replace(</span><span class="n">%foo%</span>,<span class="n">%bar%</span>,dog<span class="k">)</span>               ==&gt;  &quot;I like dogs the best&quot;
 
-$set(foo,I like cats the best)
-$set(bar,cat)
-$set(baz,dog)
-$replace(%foo%,%bar%,%baz%)             ==&gt;  &quot;I like dogs the best&quot;
+<span class="k">$set(</span>foo,I like cats the best<span class="k">)</span>
+<span class="k">$set(</span>bar,cat<span class="k">)</span>
+<span class="k">$set(</span>baz,dog<span class="k">)</span>
+<span class="k">$replace(</span><span class="n">%foo%</span>,<span class="n">%bar%</span>,<span class="n">%baz%</span><span class="k">)</span>             ==&gt;  &quot;I like dogs the best&quot;
 
-$replace(I like cats the best,cat,dog)  ==&gt;  &quot;I like dogs the best&quot;
-$replace(I like cats the best,pig,dog)  ==&gt;  &quot;I like cats the best&quot;
-$replace(I like cats the best,cat,)     ==&gt;  &quot;I like s the best&quot;
-$replace(Bad replace,,_)                ==&gt;  &quot;_B_a_d_ _r_e_p_l_a_c_e_&quot;
+<span class="k">$replace(</span>I like cats the best,cat,dog<span class="k">)</span>  ==&gt;  &quot;I like dogs the best&quot;
+<span class="k">$replace(</span>I like cats the best,pig,dog<span class="k">)</span>  ==&gt;  &quot;I like cats the best&quot;
+<span class="k">$replace(</span>I like cats the best,cat,<span class="k">)</span>     ==&gt;  &quot;I like s the best&quot;
+<span class="k">$replace(</span>Bad replace,,_<span class="k">)</span>                ==&gt;  &quot;_B_a_d_ _r_e_p_l_a_c_e_&quot;
 </pre></div>
 </div>
 </div>

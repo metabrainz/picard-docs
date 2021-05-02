@@ -258,17 +258,17 @@
 <p><strong>La description:</strong></p>
 <p>Renvoie vrai si les deux <code class="docutils literal notranslate"><span class="pre">x</span></code> et <code class="docutils literal notranslate"><span class="pre">y</span></code> ne sont pas vides. Peut être utilisé avec un nombre arbitraire d’arguments. Le résultat est vrai si <strong>TOUS</strong> des arguments ne sont pas vides.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(test,x)
-$and(%test%,)          ==&gt;  &quot;&quot;   (False)
-$and(%test%,1)         ==&gt;  &quot;1&quot;  (True)
-$and(%test%,A)         ==&gt;  &quot;1&quot;  (True)
-$and(%test%,$gt(4,5))  ==&gt;  &quot;&quot;   (False)
-$and(%test%,$lt(4,5))  ==&gt;  &quot;1&quot;  (True)
-$and(%test%,,)         ==&gt;  &quot;&quot;   (False)
-$and(%test%,,0)        ==&gt;  &quot;&quot;   (False)
-$and(%test%,, )        ==&gt;  &quot;&quot;   (False)
-$and(%test%, , )       ==&gt;  &quot;1&quot;  (True)
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>test,x<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,<span class="k">)</span>          ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,1<span class="k">)</span>         ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,A<span class="k">)</span>         ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,<span class="k">$gt(</span>4,5<span class="k">))</span>  ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,<span class="k">$lt(</span>4,5<span class="k">))</span>  ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,,<span class="k">)</span>         ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,,0<span class="k">)</span>        ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>,, <span class="k">)</span>        ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$and(</span><span class="n">%test%</span>, , <span class="k">)</span>       ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
 </pre></div>
 </div>
 </div>

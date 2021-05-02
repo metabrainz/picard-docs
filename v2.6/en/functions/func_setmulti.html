@@ -246,9 +246,9 @@ multi-valued variable. This can be used to operate on multi-valued variables as 
 and then set them back as proper multi-valued variable.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$setmulti(genre,$lower(%genre%))  ==&gt;  all &quot;genre&quot; elements in lower case
-$setmulti(alpha,A; B; C)          ==&gt;  3 elements (&quot;A&quot;, &quot;B&quot; and &quot;C&quot;)
-$setmulti(mixed,A:A; B:B,:)       ==&gt;  3 elements (&quot;A&quot;, &quot;A; B&quot; and &quot;B&quot;)
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>genre,<span class="k">$lower(</span><span class="n">%genre%</span><span class="k">))</span>  ==&gt;  all &quot;genre&quot; elements in lower case
+<span class="k">$setmulti(</span>alpha,A; B; C<span class="k">)</span>          ==&gt;  3 elements (&quot;A&quot;, &quot;B&quot; and &quot;C&quot;<span class="k">)</span>
+<span class="k">$setmulti(</span>mixed,A:A; B:B,:<span class="k">)</span>       ==&gt;  3 elements (&quot;A&quot;, &quot;A; B&quot; and &quot;B&quot;<span class="k">)</span>
 </pre></div>
 </div>
 </div>

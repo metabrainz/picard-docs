@@ -307,7 +307,7 @@
 <div class="section" id="i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">
 <h2>J’utilise Fedora. Pourquoi la prise <span class="target" id="index-7"></span>d’empreintes acoustique ne fonctionne-t-elle pas?<a class="headerlink" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La prise d’empreintes acoustiques dans Picard utilise un outil appelé <code class="docutils literal notranslate"><span class="pre">fpcalc</span></code>, qui n’est pas disponible dans Fedora. Vous pouvez l’obtenir en installant le paquetage chromaprint-tools depuis le dépôt <a class="reference external" href="https://rpmfusion.org/">RPM Fusion</a>. Cette fonctionnalité n’est pas contenue dans le paquet principal de Fedora <code class="docutils literal notranslate"><span class="pre">picard</span></code> car elle nécessite le paquet <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> qui <a class="reference external" href="https://fedoraproject.org/wiki/Forbidden_items">n’est pas distribué par Fedora</a>. Après avoir <a class="reference external" href="https://rpmfusion.org/Configuration">activé le dépôt de RPM Fusion « rpmfusion-free »</a>, installez le paquet (en tant que root) en utilisant:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="n">install</span> <span class="n">chromaprint</span><span class="o">-</span><span class="n">tools</span>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>yum install chromaprint-tools
 </pre></div>
 </div>
 </div>

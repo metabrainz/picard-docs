@@ -251,20 +251,20 @@ proper multi-valued variable.  If <code class="docutils literal notranslate"><sp
 will return “1”.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,)
-$lenmulti(%foo%)            ==&gt;  &quot;0&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,<span class="k">)</span>
+<span class="k">$lenmulti(</span><span class="n">%foo%</span><span class="k">)</span>            ==&gt;  &quot;0&quot;
 
-$set(foo,A; B; C)
-$lenmulti(%foo%)            ==&gt;  &quot;1&quot;
+<span class="k">$set(</span>foo,A; B; C<span class="k">)</span>
+<span class="k">$lenmulti(</span><span class="n">%foo%</span><span class="k">)</span>            ==&gt;  &quot;1&quot;
 
-$setmulti(foo,A; B; C)
-$lenmulti(%foo%)            ==&gt;  &quot;3&quot;
+<span class="k">$setmulti(</span>foo,A; B; C<span class="k">)</span>
+<span class="k">$lenmulti(</span><span class="n">%foo%</span><span class="k">)</span>            ==&gt;  &quot;3&quot;
 
-$lenmulti(A; B; C)          ==&gt;  &quot;3&quot;
-$lenmulti(A:A; B:B; C:C,:)  ==&gt;  &quot;4&quot;
-$lenmulti(,)                ==&gt;  &quot;0&quot;
-$lenmulti(,:)               ==&gt;  &quot;0&quot;
-$lenmulti(A; B; C,)         ==&gt;  &quot;1&quot;
+<span class="k">$lenmulti(</span>A; B; C<span class="k">)</span>          ==&gt;  &quot;3&quot;
+<span class="k">$lenmulti(</span>A:A; B:B; C:C,:<span class="k">)</span>  ==&gt;  &quot;4&quot;
+<span class="k">$lenmulti(</span>,<span class="k">)</span>                ==&gt;  &quot;0&quot;
+<span class="k">$lenmulti(</span>,:<span class="k">)</span>               ==&gt;  &quot;0&quot;
+<span class="k">$lenmulti(</span>A; B; C,<span class="k">)</span>         ==&gt;  &quot;1&quot;
 </pre></div>
 </div>
 </div>

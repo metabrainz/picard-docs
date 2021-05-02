@@ -260,14 +260,14 @@
 Note that comparisons are case-sensitive.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$setmulti(foo,One; Two; Three)
-$set(bar,Two)
-$inmulti(%foo%,%bar%)  ==&gt;  &quot;1&quot;  (True)
-$inmulti(%foo%,Two)    ==&gt;  &quot;1&quot;  (True)
-$inmulti(%foo%,two)    ==&gt;  &quot;&quot;   (False)
-$inmulti(%foo%,Once)   ==&gt;  &quot;&quot;   (False)
-$inmulti(%foo%,w)      ==&gt;  &quot;&quot;   (False)
-$inmulti(%foo%,)       ==&gt;  &quot;&quot;   (False)
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>foo,One; Two; Three<span class="k">)</span>
+<span class="k">$set(</span>bar,Two<span class="k">)</span>
+<span class="k">$inmulti(</span><span class="n">%foo%</span>,<span class="n">%bar%</span><span class="k">)</span>  ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$inmulti(</span><span class="n">%foo%</span>,Two<span class="k">)</span>    ==&gt;  &quot;1&quot;  (True<span class="k">)</span>
+<span class="k">$inmulti(</span><span class="n">%foo%</span>,two<span class="k">)</span>    ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$inmulti(</span><span class="n">%foo%</span>,Once<span class="k">)</span>   ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$inmulti(</span><span class="n">%foo%</span>,w<span class="k">)</span>      ==&gt;  &quot;&quot;   (False<span class="k">)</span>
+<span class="k">$inmulti(</span><span class="n">%foo%</span>,<span class="k">)</span>       ==&gt;  &quot;&quot;   (False<span class="k">)</span>
 </pre></div>
 </div>
 </div>

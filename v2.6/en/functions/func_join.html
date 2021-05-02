@@ -250,17 +250,17 @@ can be substituted for <code class="docutils literal notranslate"><span class="p
 space “; ” if not passed) to coerce the value into a proper multi-valued variable.</p>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$set(foo,First:A; Second:B)
-$join(%foo%, &gt;&gt; )                     ==&gt;  &quot;First:A; Second:B&quot;
-$join(%foo%, &gt;&gt; ,:)                   ==&gt;  &quot;First &gt;&gt; A; Second &gt;&gt; B&quot;
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,First:A; Second:B<span class="k">)</span>
+<span class="k">$join(</span><span class="n">%foo%</span>, &gt;&gt; <span class="k">)</span>                     ==&gt;  &quot;First:A; Second:B&quot;
+<span class="k">$join(</span><span class="n">%foo%</span>, &gt;&gt; ,:<span class="k">)</span>                   ==&gt;  &quot;First &gt;&gt; A; Second &gt;&gt; B&quot;
 
-$setmulti(bar,First:A; Second:B)
-$join(%bar%, &gt;&gt; )                     ==&gt;  &quot;First:A &gt;&gt; Second:B&quot;
-$join(%bar%, &gt;&gt; ,:)                   ==&gt;  &quot;First &gt;&gt; A; Second &gt;&gt; B&quot;
+<span class="k">$setmulti(</span>bar,First:A; Second:B<span class="k">)</span>
+<span class="k">$join(</span><span class="n">%bar%</span>, &gt;&gt; <span class="k">)</span>                     ==&gt;  &quot;First:A &gt;&gt; Second:B&quot;
+<span class="k">$join(</span><span class="n">%bar%</span>, &gt;&gt; ,:<span class="k">)</span>                   ==&gt;  &quot;First &gt;&gt; A; Second &gt;&gt; B&quot;
 
-$join(First:A; Second:B,)             ==&gt;  &quot;First:ASecond:B&quot;
-$join(First:A; Second:B, &gt;&gt; )         ==&gt;  &quot;First:A &gt;&gt; Second:B&quot;
-$join(First:A; Second:B, &gt;&gt; ,:)       ==&gt;  &quot;First &gt;&gt; A; Second &gt;&gt; B&quot;
+<span class="k">$join(</span>First:A; Second:B,<span class="k">)</span>             ==&gt;  &quot;First:ASecond:B&quot;
+<span class="k">$join(</span>First:A; Second:B, &gt;&gt; <span class="k">)</span>         ==&gt;  &quot;First:A &gt;&gt; Second:B&quot;
+<span class="k">$join(</span>First:A; Second:B, &gt;&gt; ,:<span class="k">)</span>       ==&gt;  &quot;First &gt;&gt; A; Second &gt;&gt; B&quot;
 </pre></div>
 </div>
 </div>

@@ -260,12 +260,12 @@
 <p><strong>La description:</strong></p>
 <p>Tronquez <code class="docutils literal notranslate"><span class="pre">texte</span></code> en <code class="docutils literal notranslate"><span class="pre">longueur</span></code>. Si <code class="docutils literal notranslate"><span class="pre">longueur</span></code> est inférieur à 0, alors la valeur utilisée est le nombre de caractères dans <code class="docutils literal notranslate"><span class="pre">texte</span></code> plus <code class="docutils literal notranslate"><span class="pre">longueur</span></code> (par exemple: <code class="docutils literal notranslate"><span class="pre">$truncate(abcd,</span> <span class="pre">-1)</span></code> est le même comme <code class="docutils literal notranslate"><span class="pre">$truncate(abcd,3)</span></code>). Si <code class="docutils literal notranslate"><span class="pre">longueur</span></code> est manquant ou un nombre négatif supérieur au nombre de caractères dans <code class="docutils literal notranslate"><span class="pre">texte</span></code>, la fonction renverra une chaîne vide.</p>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$truncate(Once upon a time,)     ==&gt;  &quot;&quot;
-$truncate(Once upon a time,0)    ==&gt;  &quot;&quot;
-$truncate(Once upon a time,3)    ==&gt;  &quot;Onc&quot;
-$truncate(Once upon a time,-3)   ==&gt;  &quot;Once upon a t&quot;
-$truncate(Once upon a time,-30)  ==&gt;  &quot;&quot;
+<p>The following statements will return the values indicated:</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$truncate(</span>Once upon a time,<span class="k">)</span>     ==&gt;  &quot;&quot;
+<span class="k">$truncate(</span>Once upon a time,0<span class="k">)</span>    ==&gt;  &quot;&quot;
+<span class="k">$truncate(</span>Once upon a time,3<span class="k">)</span>    ==&gt;  &quot;Onc&quot;
+<span class="k">$truncate(</span>Once upon a time,-3<span class="k">)</span>   ==&gt;  &quot;Once upon a t&quot;
+<span class="k">$truncate(</span>Once upon a time,-30<span class="k">)</span>  ==&gt;  &quot;&quot;
 </pre></div>
 </div>
 </div>
