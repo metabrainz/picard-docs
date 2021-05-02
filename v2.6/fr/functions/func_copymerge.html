@@ -244,7 +244,7 @@
 <p>Fusionne les métadonnées de la variable <code class="docutils literal notranslate"><span class="pre">source</span></code> dans <code class="docutils literal notranslate"><span class="pre">target</span></code>, en supprimant les doublons et en les ajoutant à la fin, conservant ainsi l’ordre d’origine. Comme <code class="docutils literal notranslate"><span class="pre">$copy</span></code>, cela copiera également les variables à valeurs multiples sans les aplatir. Après l’opération, <code class="docutils literal notranslate"><span class="pre">target</span></code> sera une variable à valeurs multiples.</p>
 <p>Notez que les noms de variable pour <code class="docutils literal notranslate"><span class="pre">target</span></code> et <code class="docutils literal notranslate"><span class="pre">source</span></code> sont passés directement sans les entourer de signes de pourcentage “%”.</p>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will yield the values for <code class="docutils literal notranslate"><span class="pre">target</span></code> as indicated:</p>
+<p>Les instructions suivantes donneront les valeurs de <code class="docutils literal notranslate"><span class="pre">target</span></code> comme indiqué:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>target,<span class="k">)</span>
 <span class="k">$set(</span>source,one<span class="k">)</span>
 <span class="k">$copymerge(</span>target,source<span class="k">)</span>     ==&gt;  &quot;one&quot;

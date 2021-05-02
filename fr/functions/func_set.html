@@ -243,13 +243,10 @@
 <p>Définit la variable <code class="docutils literal notranslate"><span class="pre">nom</span></code> sur <code class="docutils literal notranslate"><span class="pre">valeur</span></code>. La valeur d’une variable est disponible pour d’autres fonctions de script si elle est comprise entre les caractères “%” (par exemple: <code class="docutils literal notranslate"><span class="pre">%name%</span></code>). Si <code class="docutils literal notranslate"><span class="pre">nom</span></code> est une autre variable (par exemple: <code class="docutils literal notranslate"><span class="pre">%indirect%</span></code>), la valeur de la variable sera utilisée comme <code class="docutils literal notranslate"><span class="pre">nom</span></code>. Cela permet la création de variables nommées dynamiquement.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To create a variable which can be used for the file naming string, but
-which will not be written as a tag in the file, prefix the variable name with
-an underscore. <code class="docutils literal notranslate"><span class="pre">%something%</span></code> will create a « something » tag; <code class="docutils literal notranslate"><span class="pre">%_something%</span></code>
-will not.</p>
+<p>Pour créer une variable qui peut être utilisée pour la chaîne de dénomination du fichier, mais qui ne sera pas écrite comme une balise dans le fichier, préfixez le nom de la variable avec un trait de soulignement. <code class="docutils literal notranslate"><span class="pre">%something%</span></code> créera une balise <code class="docutils literal notranslate"><span class="pre">something</span></code>; <code class="docutils literal notranslate"><span class="pre">%_something%</span></code> ne le sera pas.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will return the values indicated:</p>
+<p>Les instructions suivantes renverront les valeurs indiquées:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>comment,Testing<span class="k">)</span>  ==&gt;  &quot;Testing&quot; will be written to the &quot;comment&quot; tag
 <span class="k">$set(</span>_hidden,Testing<span class="k">)</span>  ==&gt;  &quot;_hidden&quot; variable will not be written
 

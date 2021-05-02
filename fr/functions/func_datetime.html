@@ -237,17 +237,13 @@
 <div class="line">Mis en œuvre: Picard 2.3</div>
 </div>
 <p><strong>La description:</strong></p>
-<p>Returns the current date and time in the specified format, which is based on the
-standard Python <code class="docutils literal notranslate"><span class="pre">strftime</span></code> <a class="reference external" href="https://strftime.org">format codes</a>. If no format is specified
-the date and time will be returned in the form “2020-02-15 14:26:32”.  Note that any special
-characters such as “%”, “$”, “(“, “)” and “\” will need to be escaped as shown in the
-examples below.</p>
+<p>Renvoie la date et l’heure actuelles dans le format spécifié, qui est basé sur le code de format standard Python <code class="docutils literal notranslate"><span class="pre">strftime</span></code> &lt;<a class="reference external" href="https://strftime.org">https://strftime.org</a>&gt;`_. Si aucun format n’est spécifié, la date et l’heure seront renvoyées sous la forme “2020-02-15 14:26:32”.  Notez que tous les caractères spéciaux tels que “%”, “$”, “(“, “)” et “\” devront être échappés comme indiqué dans les exemples ci-dessous.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Les codes de formatage spécifiques à la plate-forme doivent être évités pour garantir la portabilité des scripts sur les différentes plates-formes. Ces codes incluent: supprimer zéro-padding (par exemple: <code class="docutils literal notranslate"><span class="pre">%-d</span></code> et <code class="docutils literal notranslate"><span class="pre">%-m</span></code> sous Linux ou macOS, et leurs équivalents <code class="docutils literal notranslate"><span class="pre">%#d</span></code> et <code class="docutils literal notranslate"><span class="pre">%#m</span></code> sur Windows); spécificateurs de longueur d’élément (par exemple: <code class="docutils literal notranslate"><span class="pre">%3Y</span></code>); et accrocher “%” à la fin de la chaîne de format.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will return the values indicated:</p>
+<p>Les instructions suivantes renverront les valeurs indiquées:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$datetime()</span>                         ==&gt;  &quot;2020-02-15 14:26:32&quot;
 <span class="k">$datetime(</span><span class="se">\%</span>Y-<span class="se">\%</span>m-<span class="se">\%</span>d <span class="se">\%</span>H:<span class="se">\%</span>M:<span class="se">\%</span>S<span class="k">)</span>  ==&gt;  &quot;2020-02-15 14:26:32&quot;
 <span class="k">$datetime(</span><span class="se">\%</span>Y-<span class="se">\%</span>m-<span class="se">\%</span>d<span class="k">)</span>              ==&gt;  &quot;2020-02-15&quot;

@@ -247,7 +247,7 @@
 <p><strong>La description:</strong></p>
 <p>Joint tous les éléments de la variable à valeurs multiples <code class="docutils literal notranslate"><span class="pre">nom</span></code>, en plaçant <code class="docutils literal notranslate"><span class="pre">texte</span></code> entre chaque élément et renvoie le résultat sous forme de chaîne. Une valeur littérale représentant une valeur multiple peut être remplacée par <code class="docutils literal notranslate"><span class="pre">nom</span></code>, en utilisant le <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou un point-virgule suivi d’un espace « ;  » s’il n’est pas passé) pour contraindre la valeur à une valeur multiple appropriée variable.</p>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will return the values indicated:</p>
+<p>Les instructions suivantes renverront les valeurs indiquées:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,First:A; Second:B<span class="k">)</span>
 <span class="k">$join(</span><span class="n">%foo%</span>, &gt;&gt; <span class="k">)</span>                     ==&gt;  &quot;First:A; Second:B&quot;
 <span class="k">$join(</span><span class="n">%foo%</span>, &gt;&gt; ,:<span class="k">)</span>                   ==&gt;  &quot;First &gt;&gt; A; Second &gt;&gt; B&quot;

@@ -244,7 +244,7 @@
 <p>Copie les métadonnées de la variable <code class="docutils literal notranslate"><span class="pre">source</span></code> vers <code class="docutils literal notranslate"><span class="pre">target</span></code>. La différence avec <code class="docutils literal notranslate"><span class="pre">$set(target,%source%)</span></code> est que <code class="docutils literal notranslate"><span class="pre">$copy(target,</span> <span class="pre">source)</span></code> copie les variables à valeurs multiples sans les aplatir.</p>
 <p>Notez que si la variable <code class="docutils literal notranslate"><span class="pre">target</span></code> existe déjà, elle sera écrasée par <code class="docutils literal notranslate"><span class="pre">source</span></code>.</p>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will yield the values for <code class="docutils literal notranslate"><span class="pre">target</span></code> as indicated:</p>
+<p>Les instructions suivantes donneront les valeurs de <code class="docutils literal notranslate"><span class="pre">target</span></code> comme indiqué:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>source,<span class="k">)</span>
 <span class="k">$set(</span>target,This will be overwritten<span class="k">)</span>
 <span class="k">$copy(</span>target,source<span class="k">)</span>                   ==&gt;  &quot;&quot;

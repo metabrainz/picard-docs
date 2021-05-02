@@ -245,14 +245,9 @@
 <div class="line">Mis en œuvre: Picard 0.10</div>
 </div>
 <p><strong>La description:</strong></p>
-<p>Returns the performers where the performance type matches <code class="docutils literal notranslate"><span class="pre">pattern</span></code> separated by
-<code class="docutils literal notranslate"><span class="pre">separator</span></code> (or a comma followed by a space « ,  » if not passed).  If <code class="docutils literal notranslate"><span class="pre">pattern</span></code>
-is blank, then all performers will be returned.  Note that the <code class="docutils literal notranslate"><span class="pre">pattern</span></code> to be
-matched is case-sensitive.</p>
+<p>Renvoie les interprètes dont le type de performance correspond à <code class="docutils literal notranslate"><span class="pre">motif</span></code> séparés par <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou une virgule suivie d’un espace « ,  » si non passé). Si <code class="docutils literal notranslate"><span class="pre">motif</span></code> est vide, tous les interprètes seront renvoyés. Notez que le <code class="docutils literal notranslate"><span class="pre">motif</span></code> à mettre en correspondance est sensible à la casse.</p>
 <p><strong>Exemple:</strong></p>
-<p>With the performer tags as <code class="docutils literal notranslate"><span class="pre">performer:guitar</span></code> = « Ann », <code class="docutils literal notranslate"><span class="pre">performer:rhythm-guitar</span></code> =
-« Bob » and <code class="docutils literal notranslate"><span class="pre">performer:drums</span></code> = « Cindy », the following statements will return the
-values indicated:</p>
+<p>Avec les balises performer comme <code class="docutils literal notranslate"><span class="pre">performer:guitar</span></code> = « Ann », <code class="docutils literal notranslate"><span class="pre">performer:rhythm-guitar</span></code> = « Bob » et <code class="docutils literal notranslate"><span class="pre">performer:drums</span></code> = « Cindy », les instructions suivantes renverront les valeurs indiqué:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,guitar<span class="k">)</span>
 <span class="k">$performer(</span><span class="n">%foo%</span><span class="k">)</span>          ==&gt;  &quot;Ann, Bob&quot;
 

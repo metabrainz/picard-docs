@@ -253,7 +253,7 @@
 <p>Vous ne pouvez pas enregistrer le <code class="docutils literal notranslate"><span class="pre">code</span></code> dans une variable puis passer la variable à la fonction en tant que <code class="docutils literal notranslate"><span class="pre">%code%</span></code> car il sera évalué lorsqu’il sera affecté à la variable plutôt que pendant la boucle.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will return the values indicated:</p>
+<p>Les instructions suivantes renverront les valeurs indiquées:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,First:A; Second:B<span class="k">)</span>
 <span class="k">$map(</span><span class="n">%foo%</span>,<span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">))</span>    ==&gt;  &quot;1=FIRST:A; SECOND:B&quot;
 <span class="k">$map(</span><span class="n">%foo%</span>,<span class="k">$upper(</span><span class="n">%_loop_count%</span>=<span class="n">%_loop_value%</span><span class="k">)</span>,:<span class="k">)</span>  ==&gt;  &quot;1=FIRST:2=A; SECOND:3=B&quot;

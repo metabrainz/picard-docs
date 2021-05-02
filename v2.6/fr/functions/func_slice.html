@@ -249,7 +249,7 @@
 <p>Les index sont basés sur zéro. Les nombres négatifs seront comptés à partir du nombre d’éléments de la liste. Si les index <code class="docutils literal notranslate"><span class="pre">début</span></code> ou <code class="docutils literal notranslate"><span class="pre">fin</span></code> sont laissés vides, ils seront par défaut à 0 et au nombre d’éléments dans la liste respectivement.</p>
 <p>Une utilisation typique pourrait être de créer une variable à valeurs multiples avec tous les artistes dans <code class="docutils literal notranslate"><span class="pre">%artists%</span></code> sauf le premier, qui peut être utilisé pour créer un « feat. » liste. Cela ressemblerait à quelque chose comme <code class="docutils literal notranslate"><span class="pre">$setmulti(support_artists,$slice(%artists%,1,))</span></code>.</p>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will return the values indicated:</p>
+<p>Les instructions suivantes renverront les valeurs indiquées:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,A; B; C; D; E<span class="k">)</span>
 <span class="k">$slice(</span><span class="n">%foo%</span>,1<span class="k">)</span>                        ==&gt;  &quot;&quot;
 

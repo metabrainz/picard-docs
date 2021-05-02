@@ -240,7 +240,7 @@
 <p>Itère sur chaque élément trouvé dans la variable à valeurs multiples <code class="docutils literal notranslate"><span class="pre">nom</span></code>, exécutant <code class="docutils literal notranslate"><span class="pre">code</span></code> à chaque itération. Avant chaque itération, la valeur de l’élément est d’abord stockée dans la variable <code class="docutils literal notranslate"><span class="pre">_loop_value</span></code> et le décompte est stocké dans la variable <code class="docutils literal notranslate"><span class="pre">_loop_count</span></code>. Cela permet d’accéder à l’élément ou à la valeur de comptage dans le script de code.</p>
 <p>Une valeur littérale représentant une valeur multiple peut être remplacée par <code class="docutils literal notranslate"><span class="pre">nom</span></code>, en utilisant le <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou un point-virgule suivi d’un espace « ;  » s’il n’est pas passé) pour contraindre la valeur à une valeur multiple appropriée variable.</p>
 <p><strong>Exemple:</strong></p>
-<p>The following statements will perform the processing indicated:</p>
+<p>Les instructions suivantes effectueront le traitement indiqué:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="cm">$noop( Mark all listed tags for deletion from the files. )</span>
 <span class="k">$foreach(</span>genre; comment; year,<span class="k">$delete(</span><span class="n">%_loop_value%</span><span class="k">))</span>
 
