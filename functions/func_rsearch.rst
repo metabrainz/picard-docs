@@ -29,7 +29,9 @@ expression will be returned.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $rsearch(test \(disc 1\),\\\(disc \(\\d+\)\\\))  ==>  "1"
     $rsearch(test \(disc 1\),\\\(disc \\d+\\\))      ==>  "(disc 1)"

@@ -17,7 +17,9 @@ Note that if the variable ``target`` already exists, it will be overwritten by `
 
 **Example:**
 
-The following statements will yield the values for ``target`` as indicated::
+The following statements will yield the values for ``target`` as indicated:
+
+.. code-block:: taggerscript
 
     $set(source,)
     $set(target,This will be overwritten)

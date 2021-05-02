@@ -23,7 +23,9 @@ will be used as ``name``.  This allows the creation of dynamically named variabl
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
    $set(comment,Testing)  ==>  "Testing" will be written to the "comment" tag
    $set(_hidden,Testing)  ==>  "_hidden" variable will not be written

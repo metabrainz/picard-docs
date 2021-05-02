@@ -17,7 +17,9 @@ return an empty string.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $pad(abc,5,+)   ==>  "++abc"
     $pad(abc,0,+)   ==>  "abc"

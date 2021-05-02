@@ -17,6 +17,8 @@ running ``$delete(genre)`` will actually remove the "genre" tag from a file when
 
 **Example:**
 
-The following statements will perform the actions indicated::
+The following statements will perform the actions indicated:
+
+.. code-block:: taggerscript
 
     $delete(genre)  ==>  Remove the "genre" tag from a file when saving

@@ -15,7 +15,9 @@ Characters such as newlines '\\n', tabs '\\t' and returns '\\r' are treated as s
 
 **Example:**
 
-The following statements will each return "This text has been stripped."::
+The following statements will each return "This text has been stripped.":
+
+.. code-block:: taggerscript
 
     $strip(This text has been stripped.)
     $strip(This text has been stripped.  )

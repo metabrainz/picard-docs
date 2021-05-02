@@ -13,7 +13,9 @@ Returns the number of characters in ``text``.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,)
     $len(%foo%)    ==>  "0"

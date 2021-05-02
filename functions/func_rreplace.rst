@@ -22,7 +22,9 @@ please see the `article on Wikipedia <https://wikipedia.org/wiki/Regular_express
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $rreplace(test \(disc 1\),\\s\\\(disc \\d+\\\),)  ==>  "test"
     $rreplace(test,[t,)                               ==>  "test"

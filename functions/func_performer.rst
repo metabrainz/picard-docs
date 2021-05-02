@@ -19,7 +19,9 @@ matched is case-sensitive.
 
 With the performer tags as ``performer:guitar`` = "Ann", ``performer:rhythm-guitar`` =
 "Bob" and ``performer:drums`` = "Cindy", the following statements will return the
-values indicated::
+values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,guitar)
     $performer(%foo%)          ==>  "Ann, Bob"

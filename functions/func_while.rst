@@ -21,6 +21,8 @@ within the ``code`` script.
 
 **Example:**
 
-The following statement will set ``return`` to "Echo... echo... echo..."::
+The following statement will set ``return`` to "Echo... echo... echo...":
+
+.. code-block:: taggerscript
 
     $set(return,Echo...)$while($lt(%_loop_count%,2),$set(return,%return% echo...))

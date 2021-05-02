@@ -13,7 +13,9 @@ Does nothing and always returns an empty string.  This is useful for comments or
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $noop( A comment. )          ==>  ""
     $noop($set(foo,Testing...))  ==>  "" (and "foo" is not set)

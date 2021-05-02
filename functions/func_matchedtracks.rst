@@ -18,6 +18,8 @@ Returns the number of matched tracks within a release.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $matchedtracks()  ==>  "3" (if three of the tracks were matched)

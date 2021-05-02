@@ -23,7 +23,9 @@ string.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $substr(abcdefg)        ==>  "abcdefg"
     $substr(abcdefg,3)      ==>  "defg"

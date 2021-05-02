@@ -14,7 +14,9 @@ Returns ``number`` formatted to ``length`` digits, where ``number`` and ``length
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $num(,)        ==>  ""
     $num(,1)       ==>  "0"

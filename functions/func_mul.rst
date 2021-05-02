@@ -15,7 +15,9 @@ the function will return an empty string.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $mul(1,2)      ==> "2"
     $mul(1,2,3)    ==> "6"

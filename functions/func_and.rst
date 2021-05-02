@@ -14,7 +14,9 @@ of arguments. The result is true if **ALL** of the arguments are not empty.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(test,x)
     $and(%test%,)          ==>  ""   (False)

@@ -15,7 +15,9 @@ not an integer, the function will return an empty string.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $gte(-1,0)   ==>  ""   (False)
     $gte(0,0)    ==>  "1"  (True)

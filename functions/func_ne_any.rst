@@ -16,7 +16,9 @@ Functionally equivalent to ``$or($ne(x,a1),$ne(x,a2) ...)``.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $ne_any(A,A,B,C)    ==>  "1"  (True)
     $ne_any(A,a,A,A)    ==>  "1"  (True)

@@ -16,7 +16,9 @@ default. Note that the matching is case-sensitive.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $delprefix(The Beatles)       ==>  "Beatles"
     $delprefix(The Beatles,)      ==>  "The Beatles"
