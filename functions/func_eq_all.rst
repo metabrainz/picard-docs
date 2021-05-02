@@ -16,7 +16,9 @@ Functionally equivalent to ``$and($eq(x,a1),$eq(x,a2) ...)``.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $eq_all(A,A,B,C)    ==>  ""   (False)
     $eq_all(A,a,A,A)    ==>  ""   (False)

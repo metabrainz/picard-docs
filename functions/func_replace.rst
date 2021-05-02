@@ -13,7 +13,9 @@ Replaces occurrences of ``search`` in ``text`` with ``replace`` and returns the 
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,I like cats the best)
     $replace(%foo%,cat,dog)                 ==>  "I like dogs the best"

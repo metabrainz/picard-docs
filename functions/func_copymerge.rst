@@ -19,7 +19,9 @@ in percent signs '%'.
 
 **Example:**
 
-The following statements will yield the values for ``target`` as indicated::
+The following statements will yield the values for ``target`` as indicated:
+
+.. code-block:: taggerscript
 
     $set(target,)
     $set(source,one)

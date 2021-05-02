@@ -24,7 +24,9 @@ number of elements in ``name``, or a negative number greater than the number of 
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,A; B; C)
     $setmulti(bar,A; B; C)

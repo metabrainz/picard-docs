@@ -18,7 +18,9 @@ will return "1".
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,)
     $lenmulti(%foo%)            ==>  "0"

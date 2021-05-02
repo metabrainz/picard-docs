@@ -17,7 +17,9 @@ space "; " if not passed) to coerce the value into a proper multi-valued variabl
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,First:A; Second:B)
     $join(%foo%, >> )                     ==>  "First:A; Second:B"

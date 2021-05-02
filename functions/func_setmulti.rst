@@ -17,7 +17,9 @@ and then set them back as proper multi-valued variable.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $setmulti(genre,$lower(%genre%))  ==>  all "genre" elements in lower case
     $setmulti(alpha,A; B; C)          ==>  3 elements ("A", "B" and "C")

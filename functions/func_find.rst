@@ -21,7 +21,9 @@ support wildcards.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $find(abcdef,a)     ==>  "0"
     $find(abcdef,c)     ==>  "2"

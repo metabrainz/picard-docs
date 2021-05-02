@@ -14,7 +14,9 @@ not an integer, the function will return an empty string.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $lte(-1,0)   ==>  "1"  (True)
     $lte(0,0)    ==>  ""   (False)

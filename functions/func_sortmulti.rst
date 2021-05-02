@@ -18,7 +18,9 @@ coerce the value into a proper multi-valued variable.  If ``name`` is missing
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,B; C; E; D; A)
     $sortmulti(%foo%)                       ==>  "B; C; E; D; A"

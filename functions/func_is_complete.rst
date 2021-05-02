@@ -17,7 +17,9 @@ Returns true if every track in the album is matched to a single file.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $is_complete()  ==>  "1"  (True, if all tracks have been matched)
     $is_complete()  ==>  ""   (False, if not all tracks have been matched)

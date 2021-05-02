@@ -16,7 +16,9 @@ Functionally equivalent to ``$and($ne(x,a1),$ne(x,a2) ...)``.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $ne_all(A,A,B,C)    ==>  ""   (False)
     $ne_all(A,a,A,A)    ==>  ""   (False)

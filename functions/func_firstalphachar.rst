@@ -16,7 +16,9 @@ the default value "#" will be used.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $firstalphachar(abc)             ==>  "A"
     $firstalphachar(123)             ==>  "#"

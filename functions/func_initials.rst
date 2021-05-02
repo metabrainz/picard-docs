@@ -14,7 +14,9 @@ Returns the first character of each word in ``text``, if it is an alphabetic cha
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,This is a test)
     $initials(%foo%)               ==>  "Tiat"

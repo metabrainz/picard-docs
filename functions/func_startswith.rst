@@ -14,7 +14,9 @@ Returns true if ``text`` starts with ``prefix``.  Note that the comparison is ca
 
 **Example:**
 
-The statements below return the values indicated::
+The statements below return the values indicated:
+
+.. code-block:: taggerscript
 
     $startswith(The time is now.,The time)  ==>  "1"  (True)
     $startswith(The time is now.,The TIME)  ==>  ""   (False)

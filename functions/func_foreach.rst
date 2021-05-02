@@ -21,7 +21,9 @@ variable.
 
 **Example:**
 
-The following statements will perform the processing indicated::
+The following statements will perform the processing indicated:
+
+.. code-block:: taggerscript
 
     $noop( Mark all listed tags for deletion from the files. )
     $foreach(genre; comment; year,$delete(%_loop_value%))

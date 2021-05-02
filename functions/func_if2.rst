@@ -13,7 +13,9 @@ Returns the first non empty argument.  Can be used with an arbitrary number of a
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,)
     $set(bar,Something)

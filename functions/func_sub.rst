@@ -14,7 +14,9 @@ Returns an empty string if an argument is missing or not an integer.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $sub(20,15)      ==>  "5"
     $sub(20,-15)     ==>  "35"

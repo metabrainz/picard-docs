@@ -14,7 +14,9 @@ Returns true, if ``x`` contains ``y``.  Note that comparisons are case-sensitive
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,ABCDEFG)
     $set(bar,CDE)

@@ -16,7 +16,9 @@ Functionally equivalent to ``$or($eq(x,a1),$eq(x,a2) ...)``.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $eq_any(A,A,B,C)  ==>  "1"  (True)
     $eq_any(A,a,A,A)  ==>  "1"  (True)

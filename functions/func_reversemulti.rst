@@ -19,7 +19,9 @@ This function can be used in conjunction with the ``$sortmulti`` function to sor
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,A; B; C; D; E)
     $reversemulti(%foo%)            ==>  "A; B; C; D; E"

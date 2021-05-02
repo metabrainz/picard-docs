@@ -14,7 +14,9 @@ Returns true if ``text`` ends with ``suffix``.  Note that the comparison is case
 
 **Example:**
 
-The statements below return the values indicated::
+The statements below return the values indicated:
+
+.. code-block:: taggerscript
 
     $endswith(The time is now,is now)  ==>  "1"  (True)
     $endswith(The time is now,is NOW)  ==>  ""   (False)

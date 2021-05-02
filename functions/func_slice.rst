@@ -26,7 +26,9 @@ would look something like ``$setmulti(supporting_artists,$slice(%artists%,1,))``
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,A; B; C; D; E)
     $slice(%foo%,1)                        ==>  ""

@@ -16,7 +16,9 @@ Note that the matching is case-sensitive.
 
 **Example:**
 
-If the ``albumartist`` is "Le Butcherettes", the following statements will return the values indicated::
+If the ``albumartist`` is "Le Butcherettes", the following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $swapprefix(%albumartist%)               ==>  "Le Butcherettes"
     $swapprefix(%albumartist%,le)            ==>  "Le Butcherettes"

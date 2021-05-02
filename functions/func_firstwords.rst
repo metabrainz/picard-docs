@@ -18,7 +18,9 @@ than the number of characters in ``text``, the function will return an empty str
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $firstwords(Once upon a time,)     ==>  ""
     $firstwords(Once upon a time,0)    ==>  ""

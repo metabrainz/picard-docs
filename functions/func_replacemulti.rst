@@ -17,7 +17,9 @@ Empty elements are automatically removed from the output.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $setmulti(foo,Electronic; Idm; Techno)
     $replacemulti(%foo%,Idm,IDM)                ==>  "Electronic; IDM; Techno"

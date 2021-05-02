@@ -25,7 +25,9 @@ examples below.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
    $datetime()                         ==>  "2020-02-15 14:26:32"
    $datetime(\%Y-\%m-\%d \%H:\%M:\%S)  ==>  "2020-02-15 14:26:32"

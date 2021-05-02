@@ -14,6 +14,8 @@ Unsets the variable ``name``.  The function allows for wildcards to unset certai
 
 **Example:**
 
-The following would unset all performer tags::
+The following would unset all performer tags:
+
+.. code-block:: taggerscript
 
     $unset(performer:*)

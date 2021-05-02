@@ -13,7 +13,9 @@ Returns true if ``x`` does not equal ``y``.  Note that comparisons are case-sens
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $ne(,a)   ==>  "1"  (True)
     $ne(a,)   ==>  "1"  (True)

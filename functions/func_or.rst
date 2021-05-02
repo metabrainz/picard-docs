@@ -14,7 +14,9 @@ of arguments. The result is true if **ANY** of the arguments is not empty.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $or(,)          ==>  ""   (False)
     $or(,1)         ==>  "1"  (True)

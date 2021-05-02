@@ -24,7 +24,9 @@ missing ``$unique`` will return an empty string.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $setmulti(foo,a; A; B; b; cd; Cd; cD; CD; a; A; b)
     $set(bar,a; A; B; b; cd; Cd; cD; CD; a; A; b)

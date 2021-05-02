@@ -14,7 +14,9 @@ Returns true if ``x`` equals ``y``.  Note that comparisons are case-sensitive.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $eq(,a)   ==>  ""   (False)
     $eq(a,)   ==>  ""   (False)

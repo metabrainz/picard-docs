@@ -16,7 +16,9 @@ argument is zero, the function will return an empty string.
 
 **Example:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $div(10,3)      ==> "3"
     $div(10,-3)     ==> "-4"
