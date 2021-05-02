@@ -144,6 +144,7 @@ IGNORE_ROLES = [
 
 RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
 RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)".*$')
+RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "taggerscript".*$')
 
 RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
 RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
@@ -364,6 +365,12 @@ class LintRST():
                         err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
                         m = RE_TEST_ROLE_1.match(err.message)
                         err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
+                elif err.type == 'WARNING':
+                    if RE_TEST_DIRECTIVE_3.match(err.message):
+                        err.type = 'UNTESTED'
+                        self.print_error(err)
+                        err_processed = True
+                        break
                 elif err.type == 'ERROR' or err.type == 'SEVERE':
                     m = RE_TEST_DIRECTIVE_2.match(err.message)
                     err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
