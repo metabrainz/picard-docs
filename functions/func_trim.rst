@@ -15,7 +15,9 @@ will be applied separately to the function.
 
 **Examples:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $trim(  Trimmed  )       ==>  "Trimmed"
     $trim(__Trimmed__,_)     ==>  "Trimmed"

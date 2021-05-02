@@ -55,8 +55,10 @@ Empty elements are automatically removed from the output.
 
 .. only:: latex
 
-   The following statements will return the values indicated::
+    The following statements will return the values indicated:
 
+    .. code-block:: taggerscript
+ 
        $set(foo,First:A; Second:B)
        $map(%foo%,
            $upper(%_loop_count%=%_loop_value%))    ==>  "1=FIRST:A; SECOND:B"

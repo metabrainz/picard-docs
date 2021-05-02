@@ -17,7 +17,9 @@ capitalized you could first change the text to lower-case.
 
 **Examples:**
 
-The following statements will return the values indicated::
+The following statements will return the values indicated:
+
+.. code-block:: taggerscript
 
     $set(foo,tHe houR is upOn uS)
     $title(%foo%)          ==>  "THe HouR Is UpOn US"
