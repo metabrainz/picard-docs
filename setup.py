@@ -3,6 +3,8 @@
 """\
 Python script used to provide development support functions.
 """
+# Copyright (C) 2020-2021 Bob Swift
+# Copyright (C) 2021 Philipp Wolfer
 
 # pylint: disable=too-many-lines
 
@@ -22,10 +24,9 @@ import restructuredtext_lint
 import conf
 import tag_mapping
 
-
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.14'
-SCRIPT_COPYRIGHT = '2020'
+SCRIPT_VERS = '0.15'
+SCRIPT_COPYRIGHT = '2021'
 SCRIPT_AUTHOR = 'Bob Swift'
 
 PACKAGE_NAME = 'picard-docs'
@@ -69,8 +70,6 @@ class SPHINX_():    # pylint: disable=too-few-public-methods
         'epub': {'dir': 'epub', 'cmd': 'epub', 'extra': '-D master_doc=epub'},
         'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': ''},
     }
-
-
 
 
 ######################
@@ -639,10 +638,11 @@ def run_pylint():
     """Check the Python code using pylint.
     """
     exit_code = 0
-    for filename in PYTHON_FILES_TO_CHECK:
-        print('\nLint File: {0}'.format(filename))
-        command = 'pylint {0}'.format(filename,)
-        exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
+    for filepath in PYTHON_FILES_TO_CHECK:
+        for filename in glob.glob(filepath):
+            print('\nLint File: {0}'.format(filename))
+            command = 'pylint {0}'.format(filename,)
+            exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
     exit_with_code(1 if exit_code else 0)
 
 
@@ -650,10 +650,11 @@ def run_flake8():
     """Check the Python code using flake8.
     """
     exit_code = 0
-    for filename in PYTHON_FILES_TO_CHECK:
-        print('\nFlake8 Check File: {0}'.format(filename))
-        command = 'flake8 {0}'.format(filename,)
-        exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
+    for filepath in PYTHON_FILES_TO_CHECK:
+        for filename in glob.glob(filepath):
+            print('\nFlake8 Check File: {0}'.format(filename))
+            command = 'flake8 {0}'.format(filename,)
+            exit_code = max(exit_code, subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode)
     print()
     exit_with_code(1 if exit_code else 0)
 
@@ -662,13 +663,14 @@ def run_isort():
     """Check the Python code using isort.
     """
     exit_code = 0
-    for filename in PYTHON_FILES_TO_CHECK:
-        print('\nIsort Check File: {0}'.format(filename))
-        command = 'isort -c {0}'.format(filename,)
-        proc_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
-        if not proc_code:
-            print('OK: Imports are properly sorted.')
-        exit_code = max(exit_code, proc_code)
+    for filepath in PYTHON_FILES_TO_CHECK:
+        for filename in glob.glob(filepath):
+            print('\nIsort Check File: {0}'.format(filename))
+            command = 'isort -c {0}'.format(filename,)
+            proc_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
+            if not proc_code:
+                print('OK: Imports are properly sorted.')
+            exit_code = max(exit_code, proc_code)
     print()
     exit_with_code(1 if exit_code else 0)
 
