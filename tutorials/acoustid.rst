@@ -64,16 +64,16 @@ after submission, the AcoustID should be available.
 
 .. It really depends what you are doing. The submission links AcoustId fingerprints to MusicBrainz recording IDs.
 
-.. 1. If you use the “Generate fingerprints” button on files already matched to tracks in the right pane, the submission should be available
+.. 1. If you use the "Generate fingerprints" button on files already matched to tracks in the right pane, the submission should be available
 
-.. 2. If you use the “Generate fingerprints” button on unmatched files it will generate the fingerprint for those files, but as they are not linked to a MusicBrainz recording there is nothing to submit. If you drag one of those files onto a track on the right pane (or match it in some other way to a track on the right) the submission will be available.
+.. 2. If you use the "Generate fingerprints" button on unmatched files it will generate the fingerprint for those files, but as they are not linked to a MusicBrainz recording there is nothing to submit. If you drag one of those files onto a track on the right pane (or match it in some other way to a track on the right) the submission will be available.
 
-.. 3. If you use the “Scan” button the fingerprint will be generated and a lookup for those fingerprints against the AcoustId server will be made. There are two possible outcomes:
+.. 3. If you use the "Scan" button the fingerprint will be generated and a lookup for those fingerprints against the AcoustId server will be made. There are two possible outcomes:
 
 ..    -  There is no match, thus the files remain as unmatched files. This is the same situation as 2)
 ..    -  There is a match and the files get moved to the right pane, matched to a track. But this time the submission stays disabled, because the fingerprint already matched this exact recording ID, there is no need to submit this again. However, if you move such a file to a different track the submission will become available.
 
 .. If the submission does not activate in some circumstance where you would expect it to be active, check two things:
 
-.. Was there a fingerprint generated for this file? Use the “Fingerprint” column for this. If a fingerprint was generated a fingerprint icon should be displayed in this column.
+.. Was there a fingerprint generated for this file? Use the "Fingerprint" column for this. If a fingerprint was generated a fingerprint icon should be displayed in this column.
 .. Was there any related error message in Help > View Debug/Error Log.
