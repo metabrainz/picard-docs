@@ -40,6 +40,11 @@
 
    Check to write track-level relationships (e.g.: composer, lyricist, performer, or remixer) to your files.
 
+**Guess track number and title from filename if empty**
+
+   If checked, Picard will try to guess a file's track number or title from the filename if the ``tracknumber``
+   or ``title`` tag is empty.
+
 **Various artists**
 
    Choose how you want the "Various Artists" artist spelled.
