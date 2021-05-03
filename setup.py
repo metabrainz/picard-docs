@@ -137,13 +137,17 @@ IGNORE_ROLES = [
     'program', 'regexp', 'samp', 'pep', 'rfc',
 ]
 
+IGNORE_LEXERS = [
+    'taggerscript',
+]
+
 ################################################
 #   RE Tests for Sphinx Roles and Directives   #
 ################################################
 
 RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
 RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)".*$')
-RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "taggerscript".*$')
+RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "([^"]+)".*$')
 
 RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
 RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
@@ -327,7 +331,7 @@ class LintRST():
             # Includes 'ERROR' and 'SEVERE'
             self.error_count += 1
 
-    def check_file(self, file_name, ignore_info=True):
+    def check_file(self, file_name, ignore_info=True):  # pylint: disable=too-many-branches
         """Lint check the specified file, printing the findings to the console.
 
         Arguments:
@@ -352,23 +356,25 @@ class LintRST():
                 err_process = True
                 if err.type == 'INFO':
                     if ignore_info:
-                        err_process = False
-                    else:
-                        m = RE_TEST_DIRECTIVE_1.match(err.message)
-                        err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
-                        m = RE_TEST_ROLE_1.match(err.message)
-                        err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
+                        # Ignore this error message and continue testing
+                        continue
+                    m = RE_TEST_DIRECTIVE_1.match(err.message)
+                    if m and m.group(1) in IGNORE_DIRECTIVES:
+                        continue
+                    m = RE_TEST_ROLE_1.match(err.message)
+                    if m and m.group(1) in IGNORE_ROLES:
+                        continue
                 elif err.type == 'WARNING':
-                    if RE_TEST_DIRECTIVE_3.match(err.message):
-                        err.type = 'UNTESTED'
-                        self.print_error(err)
-                        err_processed = True
-                        break
+                    m = RE_TEST_DIRECTIVE_3.match(err.message)
+                    if m and m.group(1) in IGNORE_LEXERS:
+                        continue
                 elif err.type == 'ERROR' or err.type == 'SEVERE':
                     m = RE_TEST_DIRECTIVE_2.match(err.message)
-                    err_process = err_process and not bool(m and m.group(1) in IGNORE_DIRECTIVES)
+                    if m and m.group(1) in IGNORE_DIRECTIVES:
+                        continue
                     m = RE_TEST_ROLE_2.match(err.message)
-                    err_process = err_process and not bool(m and m.group(1) in IGNORE_ROLES)
+                    if m and m.group(1) in IGNORE_ROLES:
+                        continue
                 if err_process:
                     err_processed = True
                     self.print_error(err)
