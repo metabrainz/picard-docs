@@ -30,11 +30,11 @@
    .. note::
 
       This setting is explicitly only for ID3 v2.3 tags, because those don’t support proper multi value tags.
-      Hence this separator thing is actually more of a workaround to this fact.
+      Hence this separator setting is actually more of a workaround to this fact.
 
       Because Vorbis tags allow the same tag to exist multiple times, and hence support multi valued tags by
       default, there actually is no separator at all there. It is just multiple values, shown using whatever the
-      player software uses uses as a separator.
+      player software uses as a separator.
 
       If for some reason you want all the values of the tag in a single field separated by some separator you
       could use a script like:
