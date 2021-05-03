@@ -281,5 +281,3 @@ notfound_context = {
     'title': notfound_title,
     'body': "\n<h1>" + notfound_title + "</h1>\n<p>\n" + notfound_text_1 + "\n</p>\n<div id='content'></div>\n<p>\n" + notfound_text_2 + "\n</p>\n" + notfound_script,
 }
-
-highlight_language = 'taggerscript'

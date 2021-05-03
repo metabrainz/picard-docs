@@ -35,4 +35,4 @@ class TaggerScriptLexer(RegexLexer):
 def setup(sphinx: Sphinx):
     """Setup method to initialize this extension.
     """
-    sphinx.add_lexer('taggerscript', TaggerScriptLexer())
+    sphinx.add_lexer('taggerscript', TaggerScriptLexer)
