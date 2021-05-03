@@ -1,3 +1,17 @@
+/* Display Picard logo in side and top bar */
+.wy-nav-side a.icon-home, .wy-nav-side a.icon-home:hover {
+    display: inline-block;
+    padding: 4px 4px 4px 23px;
+    background: transparent url(../logo-small.svg) center left no-repeat;
+    background-size: 1.5em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+.wy-nav-side .fa-home::before, .wy-nav-side .icon-home::before {
+    content: "";
+}
+
 .wy-nav-top a {
     margin: -2em;
     background: transparent url(../logo-small.svg) center left no-repeat;
