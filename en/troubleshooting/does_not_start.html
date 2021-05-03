@@ -232,9 +232,9 @@ to disable or remove the plugins using Picard’s ‘Option’ settings, you wil
 may be located in a <code class="docutils literal notranslate"><span class="pre">plugins</span></code> subdirectory of the directory where the Picard program file is stored, or in a user-specific
 directory:</p>
 <ul class="simple">
-<li><p><em>Windows</em>: <code class="docutils literal notranslate"><span class="pre">C:\Users\{user}\AppData\Local\MusicBrainz\Picard\plugins</span></code></p></li>
-<li><p><em>macOS</em>: <code class="docutils literal notranslate"><span class="pre">~/Library/Preferences/MusicBrainz/Picard/plugins</span></code></p></li>
-<li><p><em>Linux</em>: <code class="docutils literal notranslate"><span class="pre">~/.config/MusicBrainz/Picard/plugins</span></code></p></li>
+<li><p><em>Windows</em>: <code class="file docutils literal notranslate"><span class="pre">C:\Users\</span><em><span class="pre">user</span></em><span class="pre">\AppData\Local\MusicBrainz\Picard\plugins</span></code></p></li>
+<li><p><em>macOS</em>: <code class="file docutils literal notranslate"><span class="pre">~/Library/Preferences/MusicBrainz/Picard/plugins</span></code></p></li>
+<li><p><em>Linux</em>: <code class="file docutils literal notranslate"><span class="pre">~/.config/MusicBrainz/Picard/plugins</span></code></p></li>
 </ul>
 <p>Once you have located the plugin files, they should be removed from the <code class="docutils literal notranslate"><span class="pre">plugins</span></code> directory and moved to a temporary
 directory.  Then try to start Picard.  If the program starts, you should try restoring the plugin files from your temporary
@@ -244,12 +244,12 @@ directory one at a time, and check if Picard will start.  This will help identif
 <blockquote>
 <div><p>To check whether Picard’s option settings file has become corrupted or, in the case of a recent upgrade to Picard, it is
 not compatible, you should try removing the settings file and then start Picard.  If Picard is started without finding its
-configuration settings file, it will create a new one using the default settings.  The settings file is called <code class="docutils literal notranslate"><span class="pre">Picard.ini</span></code>
-and can be found in a user-specific directory:</p>
+configuration settings file, it will create a new one using the default settings.  The settings file is called
+<code class="file docutils literal notranslate"><span class="pre">Picard.ini</span></code> and can be found in a user-specific directory:</p>
 <ul class="simple">
-<li><p><em>Windows</em>: <code class="docutils literal notranslate"><span class="pre">C:\Users\{user}\AppData\Roaming\MusicBrainz</span></code></p></li>
-<li><p><em>macOS</em>: <code class="docutils literal notranslate"><span class="pre">~/Library/Preferences/MusicBrainz</span></code></p></li>
-<li><p><em>Linux</em>: <code class="docutils literal notranslate"><span class="pre">~/.config/MusicBrainz</span></code></p></li>
+<li><p><em>Windows</em>: <code class="file docutils literal notranslate"><span class="pre">C:\Users\</span><em><span class="pre">user</span></em><span class="pre">\AppData\Roaming\MusicBrainz</span></code></p></li>
+<li><p><em>macOS</em>: <code class="file docutils literal notranslate"><span class="pre">~/Library/Preferences/MusicBrainz</span></code></p></li>
+<li><p><em>Linux</em>: <code class="file docutils literal notranslate"><span class="pre">~/.config/MusicBrainz</span></code></p></li>
 </ul>
 <p>Again, it is recommended that you move the file to a temporary directory so that it can be recovered if this turns out not
 to be the cause of the problem.</p>
