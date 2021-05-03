@@ -36,13 +36,17 @@
    * ``coverart_types``: Full list of all types assigned to this image.
    * ``coverart_comment``: The cover art comment.
 
-   For example, specifying a file naming mask such as::
+   For example, specifying a file naming mask such as:
+
+   .. code-block:: taggerscript
 
       %albumartist% - %originalyear% - %album% - %coverart_maintype%
 
    will preface the file name with the album artist, original release year and album title.
 
-   You can also have Picard save the images to a subdirectory by including this in the file naming mask. For example::
+   You can also have Picard save the images to a subdirectory by including this in the file naming mask. For example:
+
+   .. code-block:: taggerscript
 
       Artwork/%albumartist% - %originalyear% - %album% - %coverart_maintype%
 

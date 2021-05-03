@@ -6,18 +6,18 @@
 Where is the Picard :index:`configuration <configuration; file>` saved?
 ------------------------------------------------------------------------
 
-Picard saves the configuration in the file ``Picard.ini``. Its location depends on the operating system:
+Picard saves the configuration in the file :file:`Picard.ini`. Its location depends on the operating system:
 
 **Windows:**
 
-   ``%APPDATA%\MusicBrainz\Picard.ini``
+   :file:`%APPDATA%\\MusicBrainz\\Picard.ini`
 
-   This usually will be ``C:\Users\YourUserName\AppData\Roaming\MusicBrainz``, where ``YourUserName`` should be replaced with your
-   actual Windows user name.
+   This usually will be :file:`C:\\Users\\YourUserName\\AppData\\Roaming\\MusicBrainz`, where ``YourUserName``
+   should be replaced with your actual Windows user name.
 
 **macOS, Linux and other Unix like systems:**
 
-   ``$HOME/.config/MusicBrainz/Picard.ini``
+   :file:`$HOME/.config/MusicBrainz/Picard.ini`
 
 
 I tagged a file in Picard, but :index:`iTunes <itunes; tags, tagging; itunes>` is not seeing the tags!

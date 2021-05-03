@@ -39,7 +39,9 @@
       If for some reason you want all the values of the tag in a single field separated by some separator you
       could use a script like:
 
-      ``$set(musicbrainz_artistid,$join(%musicbrainz_artistid%, / ))``
+      .. code-block:: taggerscript
+
+         $set(musicbrainz_artistid,$join(%musicbrainz_artistid%, / ))
 
       to flatten all the values into a single field separated by " / ".
 

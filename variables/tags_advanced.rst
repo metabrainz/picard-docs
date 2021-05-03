@@ -85,7 +85,9 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 **writer**
 
     Writer Relationship Type (*since Picard 1.0*). Not written to most file formats automatically.
-    You can merge this with composers with a script like::
+    You can merge this with composers with a script like:
+
+    .. code-block:: taggerscript
 
         $copymerge(composer, writer)
 
