@@ -201,6 +201,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -214,7 +216,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
     
@@ -255,11 +257,11 @@
 <h2>Comment dire à Picard quel <span class="target" id="index-11"></span>navigateur utiliser?<a class="headerlink" href="#how-do-i-tell-picard-which-browser-to-use" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Sous Windows, macOS, GNOME et KDE, Picard utilise le navigateur par défaut qui a été configuré pour le système. Sur d’autres systèmes, vous pouvez utiliser la variable d’environnement <code class="docutils literal notranslate"><span class="pre">BROWSER</span></code>.</p>
 <p>Par exemple:</p>
-<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>export BROWSER=&quot;firefox &#39;<span class="err">%</span>s&#39; &amp;&quot;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">BROWSER</span><span class="o">=</span><span class="s2">&quot;firefox &#39;</span><span class="si">%s</span><span class="s2">&#39; &amp;&quot;</span>
 </pre></div>
 </div>
 <p>Une autre approche qui fonctionne dans certains systèmes GNU / Linux est la commande suivante:</p>
-<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>sudo update-alternatives --config x-www-browser
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">update</span><span class="o">-</span><span class="n">alternatives</span> <span class="o">--</span><span class="n">config</span> <span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">browser</span>
 </pre></div>
 </div>
 <p>Cela devrait vous présenter une liste des navigateurs existants dans votre système, vous permettant de sélectionner celui à utiliser par défaut.</p>

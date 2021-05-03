@@ -190,6 +190,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -201,7 +203,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
     
@@ -220,7 +222,7 @@
 <div><p>« MusicBrainz Picard.app » est endommagé et ne peut pas être ouvert. Vous devez le déplacer vers la corbeille.</p>
 </div></blockquote>
 <p>Cela semble se produire principalement après le déplacement du fichier dans le dossier Applications et semble être causé par Gatekeeper marquant par erreur l’application comme endommagée. Pour résoudre le problème, ouvrez un terminal et exécutez:</p>
-<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span>xattr -c &quot;/Applications/MusicBrainz Picard.app&quot;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xattr</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;/Applications/MusicBrainz Picard.app&quot;</span>
 </pre></div>
 </div>
 <p>Cela effacera l’application marquée comme endommagée. Si vous avez placé l’application dans un emplacement différent, alors <code class="file docutils literal notranslate"><span class="pre">/Applications</span></code> ajustez le chemin dans la commande ci-dessus en conséquence.</p>
