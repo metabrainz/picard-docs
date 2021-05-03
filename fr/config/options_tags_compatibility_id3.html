@@ -262,7 +262,9 @@
 <p>Ce paramètre est explicitement réservé aux balises ID3 v2.3, car celles-ci ne prennent pas en charge les balises à valeurs multiples appropriées. Par conséquent, cette chose de séparateur est en fait plus une solution de contournement à ce fait.</p>
 <p>Étant donné que les balises Vorbis permettent à la même balise d’exister plusieurs fois, et donc prennent en charge les balises à valeurs multiples par défaut, il n’y a en fait aucun séparateur. Ce ne sont que des valeurs multiples, affichées en utilisant tout ce que le logiciel du lecteur utilise comme séparateur.</p>
 <p>Si, pour une raison quelconque, vous voulez toutes les valeurs de la balise dans un seul champ séparé par un séparateur, vous pouvez utiliser un script comme:</p>
-<p><code class="docutils literal notranslate"><span class="pre">$set(musicbrainz_artistid,$join(%musicbrainz_artistid%,</span> <span class="pre">/</span> <span class="pre">))</span></code></p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>musicbrainz_artistid,<span class="k">$join(</span><span class="n">%musicbrainz_artistid%</span>, / <span class="k">))</span>
+</pre></div>
+</div>
 <p>pour aplatir toutes les valeurs dans un seul champ séparé par  » / « .</p>
 </div>
 </div></blockquote>
