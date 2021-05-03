@@ -15,7 +15,7 @@ many slightly different fingerprints, but the AcoustID represents what the servi
 
 What Picard does is as follows:
 
-1. When you click :menuselection:`"Scan"` on a file, Picard generates the audio fingerprint for the file, using the ``fpcalc`` command line utility provided
+1. When you click :menuselection:`"Scan"` on a file, Picard generates the audio fingerprint for the file, using the :program:`fpcalc` command line utility provided
    by AcoustID.
 
 2. Picard uses this fingerprint to lookup an AcoustID from the AcoustID server. The AcoustID server will compare the fingerprint and will try to match it

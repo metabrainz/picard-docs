@@ -102,7 +102,7 @@ The formats supported by the built-in :index:`audio player` depend on the format
 I am using Fedora. Why doesn't :index:`acoustic fingerprinting <acoustic fingerprint, fingerprint; acoustic>` work?
 ------------------------------------------------------------------------------------------------------------------------
 
-Acoustic fingerprinting in Picard uses a tool called ``fpcalc``, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
+Acoustic fingerprinting in Picard uses a tool called :program:`fpcalc`, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
 from the `RPM Fusion repository <https://rpmfusion.org/>`_. This functionality is not contained in the main Fedora ``picard`` package because it requires
 the ``ffmpeg`` package which `cannot be distributed by Fedora <https://fedoraproject.org/wiki/Forbidden_items>`_. After `enabling the "rpmfusion-free" RPM
 Fusion repository <https://rpmfusion.org/Configuration>`_, install the package (as root) using::

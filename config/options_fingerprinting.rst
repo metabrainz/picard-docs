@@ -28,7 +28,7 @@ MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/Acous
 **Fingerprint calculator**
 
    This identifies the external program on your system that will be used to calculate the AcoustID
-   fingerprints.  By default, Picard uses the `Chromaprint <https://acoustid.org/chromaprint>`_ (fpcalc)
+   fingerprints.  By default, Picard uses the `Chromaprint <https://acoustid.org/chromaprint>`_ (:program:`fpcalc`)
    utility which is included with the Picard installation.
 
    Picard will auto-detect the path unless you have specifically overwritten it with something different
