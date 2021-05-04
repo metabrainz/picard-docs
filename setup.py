@@ -121,6 +121,9 @@ IGNORE_DIRECTIVES = [
 
     # Grammar production displays
     'productionlist',
+
+    # Command line parameter docs
+    'option', 'describe'
 ]
 
 IGNORE_ROLES = [
