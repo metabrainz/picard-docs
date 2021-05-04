@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _func_is_video:
+
 $is_video
 =========
 

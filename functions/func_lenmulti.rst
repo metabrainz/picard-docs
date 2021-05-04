@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _func_lenmulti:
+
 $lenmulti
 =========
 
@@ -11,7 +13,7 @@ $lenmulti
 Returns the number of elements in the multi-value variable ``name``. A literal value
 representing a multi-value can be substituted for ``name``, using the ``separator``
 (or a semicolon followed by a space "; " if not passed) to coerce the value into a
-proper multi-valued variable.  If ``name`` is missing ``$lenmulti`` will return "0".  If
+proper multi-valued variable.  If ``name`` is missing :ref:`func_lenmulti` will return "0".  If
 ``separator`` is specified but left blank (e.g. ``$setmulti(A; B; C,)``) the function
 will return "1".
 

@@ -48,7 +48,7 @@ reasons.  What if there are 10 or more tracks on the album and they don't sort p
 we get a full date instead of just the year. Finally, sometimes if you tag existing files they might not have the
 ``albumartist`` set, just ``artist``.
 
-Let’s fix the track number first. We can take care of that by using the ``$num()`` function to add a leading zero to the
+Let’s fix the track number first. We can take care of that by using the :ref:`func_num` function to add a leading zero to the
 number shown for tracks 1 through 9:
 
 .. code-block:: taggerscript
@@ -61,10 +61,10 @@ Now let’s fix the **ARTIST**. We can fallback to using ``artist`` if ``albumar
 
    $if2(%albumartist%,%artist%) - \(%date%\) %album%/$num(%tracknumber%,2) - %title%
 
-The ``$if2()`` function uses the first value that is not empty, so if ``albumartist`` is empty it uses ``artist`` instead.
+The :ref:`func_if2` function uses the first value that is not empty, so if ``albumartist`` is empty it uses ``artist`` instead.
 
 For the ``date`` tag the dates from MusicBrainz are always formatted as YYYY-MM-DD. We only need the year, so let’s get
-just the first 4 characters with the ``$left()`` function:
+just the first 4 characters with the :ref:`func_left` function:
 
 .. code-block:: taggerscript
 
@@ -72,7 +72,7 @@ just the first 4 characters with the ``$left()`` function:
 
 What happens if there is no ``date`` tag information? Sometimes MusicBrainz does not have the release date of an album
 set as it is not yet known or hasn't been entered into the database. It would be great to omit the entire date with the
-parentheses in this case. Let’s use the ``$if()`` function to check whether the date is set:
+parentheses in this case. Let’s use the :ref:`func_if` function to check whether the date is set:
 
 .. code-block:: taggerscript
 

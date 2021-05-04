@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _func_copymerge:
+
 $copymerge
 ==========
 
@@ -10,7 +12,7 @@ $copymerge
 **Description:**
 
 Merges metadata from variable ``source`` into ``target``, removing duplicates and appending to the end,
-so retaining the original ordering. Like ``$copy``, this will also copy multi-valued variables
+so retaining the original ordering. Like :ref:`func_copy`, this will also copy multi-valued variables
 without flattening them.  Following the operation, ``target`` will be a multi-value variable.
 
 Note that the variable names for ``target`` and ``source`` are passed directly without enclosing them

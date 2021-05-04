@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _func_sortmulti:
+
 $sortmulti
 ==========
 
@@ -13,7 +15,7 @@ Returns a copy of the multi-value variable ``name`` with the elements sorted in 
 order. A literal value representing a multi-value can be substituted for ``name``,
 using the ``separator`` (or a semicolon followed by a space "; " if not passed) to
 coerce the value into a proper multi-valued variable.  If ``name`` is missing
-``$sortmulti`` will return an empty string.
+:ref:`func_sortmulti` will return an empty string.
 
 
 **Example:**

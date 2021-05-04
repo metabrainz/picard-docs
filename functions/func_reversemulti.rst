@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _func_reversemulti:
+
 $reversemulti
 =============
 
@@ -14,7 +16,7 @@ value representing a multi-value can be substituted for ``name``, using the ``se
 semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued
 variable.
 
-This function can be used in conjunction with the ``$sortmulti`` function to sort in descending order.
+This function can be used in conjunction with the :ref:`func_sortmulti` function to sort in descending order.
 
 
 **Example:**
