@@ -11,23 +11,41 @@ Picard can be started from the command line with the following arguments:
 
 where the options are:
 
-``-h``, ``--help`` show a help message and exit
+.. option:: -h, --help
 
-``-c CONFIG_FILE``, ``--config-file CONFIG_FILE`` location of the configuration file to use
+   show a help message and exit
 
-``-d``, ``--debug`` enable debug-level logging
+.. option:: -c CONFIG_FILE, --config-file CONFIG_FILE
 
-``-M``, ``--no-player`` disable built-in media player
+   location of the configuration file to use
 
-``-N``, ``--no-restore`` do not restore window positions or sizes
+.. option:: -d, --debug
 
-``-P``, ``--no-plugins`` do not load any plugins
+   enable debug-level logging
 
-``-v``, ``--version`` display the version information and exit
+.. option:: -M, --no-player
 
-``-V``, ``--long-version`` display the long version information and exit
+   disable built-in media player
 
-``FILE`` is the file or files to load
+.. option:: -N, --no-restore
+
+   do not restore window positions or sizes
+
+.. option:: -P, --no-plugins
+
+   do not load any plugins
+
+.. option:: -v, --version
+
+   display the version information and exit
+
+.. option:: -V, --long-version
+
+   display the long version information and exit
+
+.. describe:: FILE
+
+   the file or files to load
 
 .. raw:: latex
 

@@ -4,9 +4,9 @@
 ========================================================================
 
 If you find that Picard won't start there are a few common possible reasons, and things to try to correct the issue.
-Before doing anything drastic, it is recommended that you try to start Picard from the command line with the ``-d`` option
-to generate the debug logging.  This process is described in the :doc:`troubleshooting` section.  If the resulting logs
-don't provide any clues as to the problem, it may be one of the following:
+Before doing anything drastic, it is recommended that you try to start Picard from the command line with the :option:`-d`
+option to generate the debug logging.  This process is described in the :doc:`troubleshooting` section.  If the resulting
+logs don't provide any clues as to the problem, it may be one of the following:
 
 **The program files have become corrupted**
 

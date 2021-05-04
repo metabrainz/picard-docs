@@ -39,7 +39,7 @@ If you're still convinced you have found a new bug, open a `new ticket
 ----------------------------------------------
 
 For many bugs, it helps developers to have a log from Picard. You can see the log by going to :menuselection:`"Help --> View Log"`.
-You can also get a full debug log (better because it contains more detailed information) by starting Picard with `-d` as a
+You can also get a full debug log (better because it contains more detailed information) by starting Picard with :option:`-d` as a
 command-line argument. If you're using Windows, you can change your shortcut's Target (:menuselection:`right click shortcut -->
 Properties`) to::
 
