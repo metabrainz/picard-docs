@@ -93,7 +93,7 @@ as the primary date in your file's tags you could use the following script:
 
    $set(date,$if2(%originaldate%,%date%))
 
-The use of ``$if2()`` ensures that if ``originaldate`` is empty it will fall back to ``date``.
+The use of :ref:`func_if2` ensures that if ``originaldate`` is empty it will fall back to ``date``.
 
 In addition Picard provides a variable ``%_recording_firstreleasedate%``, which tries to provide
 the first release date per recording (which can be different for each track in a release).

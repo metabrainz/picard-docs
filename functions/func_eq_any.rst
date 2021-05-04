@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _func_eq_any:
+
 $eq_any
 =======
 
