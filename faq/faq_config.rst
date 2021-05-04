@@ -12,7 +12,7 @@ Picard saves the configuration in the file :file:`Picard.ini`. Its location depe
 
    :file:`%APPDATA%\\MusicBrainz\\Picard.ini`
 
-   This usually will be :file:`C:\\Users\\YourUserName\\AppData\\Roaming\\MusicBrainz`, where ``YourUserName``
+   This usually will be :file:`C:\\Users\\\\{YourUserName}\\AppData\\Roaming\\MusicBrainz`, where ``YourUserName``
    should be replaced with your actual Windows user name.
 
 **macOS, Linux and other Unix like systems:**
