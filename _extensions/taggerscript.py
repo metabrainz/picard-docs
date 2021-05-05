@@ -17,7 +17,8 @@ class TaggerScriptLexer(RegexLexer):
     tokens = {
         'root': [
             (r'[^\$%\\)]+', Text),
-            (r'\\.', String.Escape),
+            (r'\\u[A-Fa-f0-9]{4}', String.Escape),
+            (r'\\[^u]', String.Escape),
             (r'\$noop\(', Comment.Multiline, 'comment'),
             (r'\$[A-Za-z_0-9]+\(', Keyword),
             (r'%[A-Za-z_0-9]+%', Name),
