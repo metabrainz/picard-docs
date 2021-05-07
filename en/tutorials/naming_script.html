@@ -250,7 +250,7 @@ we get:</p>
 reasons.  What if there are 10 or more tracks on the album and they don’t sort properly in the directory listing?  Also,
 we get a full date instead of just the year. Finally, sometimes if you tag existing files they might not have the
 <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> set, just <code class="docutils literal notranslate"><span class="pre">artist</span></code>.</p>
-<p>Let’s fix the track number first. We can take care of that by using the <code class="docutils literal notranslate"><span class="pre">$num()</span></code> function to add a leading zero to the
+<p>Let’s fix the track number first. We can take care of that by using the <a class="reference internal" href="../functions/func_num.html#func-num"><span class="std std-ref">$num</span></a> function to add a leading zero to the
 number shown for tracks 1 through 9:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
@@ -259,15 +259,15 @@ number shown for tracks 1 through 9:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="n">%date%</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">$if2()</span></code> function uses the first value that is not empty, so if <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> is empty it uses <code class="docutils literal notranslate"><span class="pre">artist</span></code> instead.</p>
+<p>The <a class="reference internal" href="../functions/func_if2.html#func-if2"><span class="std std-ref">$if2</span></a> function uses the first value that is not empty, so if <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> is empty it uses <code class="docutils literal notranslate"><span class="pre">artist</span></code> instead.</p>
 <p>For the <code class="docutils literal notranslate"><span class="pre">date</span></code> tag the dates from MusicBrainz are always formatted as YYYY-MM-DD. We only need the year, so let’s get
-just the first 4 characters with the <code class="docutils literal notranslate"><span class="pre">$left()</span></code> function:</p>
+just the first 4 characters with the <a class="reference internal" href="../functions/func_left.html#func-left"><span class="std std-ref">$left</span></a> function:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="se">\(</span><span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span><span class="se">\)</span> <span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>
 <p>What happens if there is no <code class="docutils literal notranslate"><span class="pre">date</span></code> tag information? Sometimes MusicBrainz does not have the release date of an album
 set as it is not yet known or hasn’t been entered into the database. It would be great to omit the entire date with the
-parentheses in this case. Let’s use the <code class="docutils literal notranslate"><span class="pre">$if()</span></code> function to check whether the date is set:</p>
+parentheses in this case. Let’s use the <a class="reference internal" href="../functions/func_if.html#func-if"><span class="std std-ref">$if</span></a> function to check whether the date is set:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if2(</span><span class="n">%albumartist%</span>,<span class="n">%artist%</span><span class="k">)</span> - <span class="k">$if(</span><span class="n">%date%</span>,<span class="se">\(</span><span class="k">$left(</span><span class="n">%date%</span>,4<span class="k">)</span><span class="se">\)</span> <span class="k">)</span><span class="n">%album%</span>/<span class="k">$num(</span><span class="n">%tracknumber%</span>,2<span class="k">)</span> - <span class="n">%title%</span>
 </pre></div>
 </div>

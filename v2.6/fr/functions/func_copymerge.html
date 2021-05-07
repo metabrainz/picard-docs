@@ -236,14 +236,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="copymerge">
-<h1>$copymerge<a class="headerlink" href="#copymerge" title="Lien permanent vers ce titre">¶</a></h1>
+<span id="func-copymerge"></span><h1>$copymerge<a class="headerlink" href="#copymerge" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="line-block">
 <div class="line">Utilisation: <strong>$copymerge(target,source)</strong></div>
 <div class="line">Catégorie: affectation</div>
 <div class="line">Mis en œuvre: Picard 1.0</div>
 </div>
 <p><strong>La description:</strong></p>
-<p>Fusionne les métadonnées de la variable <code class="docutils literal notranslate"><span class="pre">source</span></code> dans <code class="docutils literal notranslate"><span class="pre">target</span></code>, en supprimant les doublons et en les ajoutant à la fin, conservant ainsi l’ordre d’origine. Comme <code class="docutils literal notranslate"><span class="pre">$copy</span></code>, cela copiera également les variables à valeurs multiples sans les aplatir. Après l’opération, <code class="docutils literal notranslate"><span class="pre">target</span></code> sera une variable à valeurs multiples.</p>
+<p>Merges metadata from variable <code class="docutils literal notranslate"><span class="pre">source</span></code> into <code class="docutils literal notranslate"><span class="pre">target</span></code>, removing duplicates and appending to the end,
+so retaining the original ordering. Like <a class="reference internal" href="func_copy.html#func-copy"><span class="std std-ref">$copy</span></a>, this will also copy multi-valued variables
+without flattening them.  Following the operation, <code class="docutils literal notranslate"><span class="pre">target</span></code> will be a multi-value variable.</p>
 <p>Notez que les noms de variable pour <code class="docutils literal notranslate"><span class="pre">target</span></code> et <code class="docutils literal notranslate"><span class="pre">source</span></code> sont passés directement sans les entourer de signes de pourcentage “%”.</p>
 <p><strong>Exemple:</strong></p>
 <p>Les instructions suivantes donneront les valeurs de <code class="docutils literal notranslate"><span class="pre">target</span></code> comme indiqué:</p>

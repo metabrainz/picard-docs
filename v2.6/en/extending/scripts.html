@@ -310,7 +310,7 @@ as the primary date in your file’s tags you could use the following script:</p
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>date,<span class="k">$if2(</span><span class="n">%originaldate%</span>,<span class="n">%date%</span><span class="k">))</span>
 </pre></div>
 </div>
-<p>The use of <code class="docutils literal notranslate"><span class="pre">$if2()</span></code> ensures that if <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> is empty it will fall back to <code class="docutils literal notranslate"><span class="pre">date</span></code>.</p>
+<p>The use of <a class="reference internal" href="../functions/func_if2.html#func-if2"><span class="std std-ref">$if2</span></a> ensures that if <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> is empty it will fall back to <code class="docutils literal notranslate"><span class="pre">date</span></code>.</p>
 <p>In addition Picard provides a variable <code class="docutils literal notranslate"><span class="pre">%_recording_firstreleasedate%</span></code>, which tries to provide
 the first release date per recording (which can be different for each track in a release).
 If you prefer this you can use the following script:</p>
