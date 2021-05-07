@@ -21,7 +21,7 @@ class TaggerScriptLexer(RegexLexer):
             (r'\\[^u]', String.Escape),
             (r'\$noop\(', Comment.Multiline, 'comment'),
             (r'\$[A-Za-z_0-9]+\(', Keyword),
-            (r'%[A-Za-z_0-9]+%', Name),
+            (r'%[A-Za-z_0-9:]+%', Name),
             (r'\)', Keyword),
         ],
         'comment': [
