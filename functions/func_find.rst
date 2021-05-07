@@ -18,7 +18,7 @@ support wildcards.
 
 .. note::
 
-    Prior to Picard 2.3.2 :ref:`func_find` returned "-1" if ``needle`` was not found.
+    Prior to Picard 2.3.2 ``$find`` returned "-1" if ``needle`` was not found.
 
 
 **Example:**

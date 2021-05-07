@@ -16,7 +16,7 @@ By default, the comparison ignores the case of the elements; however, this can b
 setting ``case_sensitive`` to a non-empty value. A literal value representing a multi-value
 can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space
 "; " if not passed) to coerce the value into a proper multi-valued variable.  If ``name`` is
-missing :ref:`func_unique` will return an empty string.
+missing ``$unique`` will return an empty string.
 
 .. note::
 
