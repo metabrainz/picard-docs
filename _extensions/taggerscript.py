@@ -26,7 +26,7 @@ class TaggerScriptLexer(RegexLexer):
         ],
         'comment': [
             (r'[^\$\\)]+', Comment.Multiline),
-            (r'\\.', Comment.Multiline),
+            (r'\\[()]', Comment.Multiline),
             (r'\$[A-Za-z_0-9]+\(', Comment.Multiline, '#push'),
             (r'\)', Comment.Multiline, '#pop'),
         ],
