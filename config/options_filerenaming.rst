@@ -87,25 +87,34 @@ These options determine how Picard handles files when they are saved with update
    This option tells Picard to replace all Windows-incompatible characters with an underscore. This is
    enabled by default on Windows systems, with no option to disable.
 
-**Name files like this**
+**Selected file naming script**
 
-   An edit box that contains a :index:`formatting string <scripts; file naming>` that tells Picard what the new name of the file and its
-   containing directories should be in terms of various metadata values. The formatting string is in
-   :doc:`Picard's scripting language <../extending/scripting>` where dark blue text starting with a '$' is a
-   :doc:`function name <../functions/list_by_type>` and names in light blue within '%' signs are Picard's
-   :doc:`tag and variable names <../variables/variables>`, and is generally referred to as a "file naming
-   script". Note that the use of a '/' in the formatting string separates the output directory from the file
-   name. The formatting string is allowed to contain any number of '/' characters. Everything before the
-   last '/' is the directory location, and everything after the last '/' becomes the file's name.
+   As of Picard version 2.7, multiple file naming scripts are supported.  This option allows the user to select the
+   file naming script to use from the list of scripts available. Scripts can be either system preset scripts or
+   user-defined scripts. The available scripts are managed in the :doc:`File naming script editor <options_filerenaming_editor>`
+   screen, which is displayed when the "Open the file naming script editor" button is selected.
 
-   There is only one file naming script defined in a user’s settings, although it can vary from a simple
-   one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats
-   based on different criteria. In all cases, the files will be saved using the text output by the script.
+**Files will be named like this**
 
-   Scripts are often discussed in the `MetaBrainz Community Forum <https://community.metabrainz.org/>`_,
-   and there is a thread specific to `file naming and script snippets
-   <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_.
+   Below the file naming script selector is a section showing examples of the output of the script in two columns: Before
+   and After.  If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files
+   will be randomly chosen from your selection as file naming examples.  If you have not selected any files, then some default
+   examples will be provided.
 
-   .. note::
+   You can change the randomly selected example files from your selected files list by clicking on the :kbd:`Reload examples`
+   button.
 
-      Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
+.. note::
+
+   Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
+
+.. only:: html
+
+   .. seealso::
+
+      :doc:`options_filerenaming_editor`
+
+.. toctree::
+   :hidden:
+
+   options_filerenaming_editor.rst
