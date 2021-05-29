@@ -60,10 +60,6 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
 
-**_release_countries**
-
-    This provides the complete list of release countries for the release as a multi-value variable. (*since Picard 2.3.1*)
-
 **_releaseannotation**
 
    The annotation comment for the release. (*since Picard 2.6*)
@@ -71,6 +67,10 @@ These variables are populated from MusicBrainz data for most releases, without a
 **_releasecomment**
 
     Release disambiguation comment. (*since Picard 0.15*)
+
+**_releasecountries**
+
+    This provides the complete list of release countries for the release as a multi-value variable. (*since Picard 2.3.1*)
 
 **_releasegroup**
 
