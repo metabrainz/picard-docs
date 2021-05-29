@@ -85,6 +85,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
    tutorials/naming_script
    tutorials/acoustid
+   tutorials/multiple_release_countries
 
 
 .. toctree::
