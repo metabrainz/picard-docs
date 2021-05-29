@@ -8,12 +8,12 @@ Handling of :index:`multiple release countries <multiple release countries, rele
 There has been quite some debate about some digital releases with a really long list of release countries added. Independent on your stand on this matter,
 this has shown that there are some issues with how these releases are handled by Picard.
 
-Let’s take the **Live at the Sydney Opera House, Official release by Joe Bonamassa, 2019-10-25** (MusicBrainz release
-`ac3ab901-7da8-480b-a0ab-217ef9f3d9c3 <https://musicbrainz.org/release/ac3ab901-7da8-480b-a0ab-217ef9f3d9c3>`_) as an example.
+Let’s take the release **Bleach**, by Nirvana (MusicBrainz release
+`adab3feb-1822-4d27-a997-db7d6c9688c0 <https://musicbrainz.org/release/adab3feb-1822-4d27-a997-db7d6c9688c0>`_) as an example.
 
 By default Picard will write a single ``releasecountry`` tag to the files. Prior to v2.3.1, Picard had been populating the tag with what the MusicBrainz server
 returned as the country for the release. If there were multiple release events, this country field was just filled with the first one in alphabetical order
-(Algeria in our example). Picard v2.3.1 introduced some options to better handle this.
+(Afghanistan in our example). Picard v2.3.1 introduced some options to better handle this.
 
 
 Using preferred release countries
@@ -21,7 +21,7 @@ Using preferred release countries
 
 The first improvement was automatic if you configured preferred release countries in :menuselection:`"Options --> Metadata --> Preferred Releases"`.
 Picard will use the first country from the preferred release countries that is also in the list of release events. So if you have configured
-preferred release countries to be Europe, Germany and UK, for our example that would mean the ``releasecountry`` tag gets set to Germany.
+preferred release countries to be Europe, Canada, Germany and UK, for our example that would mean the ``releasecountry`` tag gets set to Canada.
 
 
 Using scripting to set a different country
