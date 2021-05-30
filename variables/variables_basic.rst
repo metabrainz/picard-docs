@@ -68,6 +68,10 @@ These variables are populated from MusicBrainz data for most releases, without a
 
     Release disambiguation comment. (*since Picard 0.15*)
 
+**_releasecountries**
+
+    This provides the complete list of release countries for the release as a multi-value variable. (*since Picard 2.3.1*)
+
 **_releasegroup**
 
     Release Group Title which is typically the same as the Album Title, but can be different.

@@ -77,3 +77,11 @@ after submission, the AcoustID should be available.
 
 .. Was there a fingerprint generated for this file? Use the "Fingerprint" column for this. If a fingerprint was generated a fingerprint icon should be displayed in this column.
 .. Was there any related error message in Help > View Debug/Error Log.
+
+.. raw:: latex
+
+   \clearpage
+
+..   \pagebreak
+..   \newpage
+..   \clearpage
