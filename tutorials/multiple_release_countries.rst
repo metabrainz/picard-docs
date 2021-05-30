@@ -5,8 +5,8 @@ Handling of :index:`multiple release countries <multiple release countries, rele
 
 .. From https://community.metabrainz.org/t/handling-of-multiple-release-countries-with-picard-2-3-1/465485
 
-There has been quite some debate about some digital releases with a really long list of release countries added. Independent on your stand on this matter,
-this has shown that there are some issues with how these releases are handled by Picard.
+Some releases, especially digital releases, can have a very long list of release countries, sometimes listing all of the world's countries except for a few
+where the release is not officially available. Picard offers some tools to handle this.
 
 Let’s take the release **Bleach**, by Nirvana (MusicBrainz release
 `adab3feb-1822-4d27-a997-db7d6c9688c0 <https://musicbrainz.org/release/adab3feb-1822-4d27-a997-db7d6c9688c0>`_) as an example.
@@ -19,7 +19,7 @@ returned as the country for the release. If there were multiple release events, 
 Using preferred release countries
 ==================================
 
-The first improvement was automatic if you configured preferred release countries in :menuselection:`"Options --> Metadata --> Preferred Releases"`.
+If you configure preferred release countries in :menuselection:`"Options --> Metadata --> Preferred Releases"`.
 Picard will use the first country from the preferred release countries that is also in the list of release events. So if you have configured
 preferred release countries to be Europe, Canada, Germany and UK, for our example that would mean the ``releasecountry`` tag gets set to Canada.
 
@@ -71,7 +71,8 @@ such as in the following script:
    $if($eq(%releasecountry%,XW),$set(releasecountry,[Worldwide]))
    $if($eq(%releasecountry%,XG),$set(releasecountry,DDR))
 
-Ideally, someone will add some helper functions for this, such as a ``$countryname()`` function that could be used to easily convert the code into a readable name.
+A change has been submitted to Picard to add a ``$countryname()`` function to easily convert the code into a readable name; however this is not scheduled for
+release until Picard v2.7.
 
 .. raw:: latex
 
