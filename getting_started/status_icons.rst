@@ -131,6 +131,24 @@ to indicate the status of the item.
 
    This icon indicates that Picard encountered an error while trying to save the track.  This is typically due to the file being marked as read-only, or you do not have sufficient permission to save the file in the specified directory.
 
+
+:index:`Status Bar <icons; status bar, status bar>`
+--------------------------------------------------------
+
+There is a status bar at the bottom of Picard's main screen, which displays some information about current processing status.  This includes four numbers along with the current port number that Picard is monitoring.
+
+.. image:: images/status_bar.png
+   :width: 100 %
+
+From left to right, the four numbers represent:
+
+1. The number of files loaded.
+2. The number of MusicBrainz releases loaded.
+3. The number of files with pending action (e.g. loading, saving, fingerprinting).
+4. The number of active network requests.
+
+You can tell whether or not Picard is currently processing your files by looking at the numbers for pending files and pending network requests. If both are 0 nothing is pending and processing is complete.
+
 .. raw:: latex
 
    \clearpage
