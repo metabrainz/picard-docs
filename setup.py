@@ -736,21 +736,33 @@ def clean_directory(dir_path, dir_name):
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
-            try:
-                print('Emptying the {0} directory: {1}'.format(dir_name, dir_path))
-                if not os.listdir(dir_path):
-                    return
-                shutil.rmtree(dir_path)
-                counter = 50
-                # Multiple checks for success to accommodate race condition in Windows
-                while counter and os.path.exists(dir_path):
-                    counter -= 1
-                    time.sleep(.2)
-                if not counter:
-                    raise CleanDirectoryError
-            except (shutil.Error, CleanDirectoryError) as ex:
+            print('Emptying the {0} directory: {1}'.format(dir_name, dir_path))
+            if not os.listdir(dir_path):
+                return
+            err = None
+            tries = 5
+            while tries > 0:
+                tries -= 1
+                err = None
+                if os.path.exists(dir_path):
+                    try:
+                        shutil.rmtree(dir_path)
+                    except (shutil.Error, PermissionError) as ex:
+                        err = ex
+                        time.sleep(.2)
+                        continue
+                    # Multiple checks for success to accommodate race condition in Windows
+                    counter = 50
+                    while counter and os.path.exists(dir_path):
+                        counter -= 1
+                        time.sleep(.2)
+                    if not counter:
+                        err = CleanDirectoryError()
+                        continue
+                tries = 0
+            if err:
                 print("\nError removing the {0} directory: {1}".format(dir_name, dir_path))
-                print("Error message: {0}\n".format(ex))
+                print("Error message: {0}\n".format(err))
                 exit_with_code(1)
         else:
             print("\nThe {0} directory is not a directory: {1}\n".format(dir_name, dir_path))
@@ -768,18 +780,30 @@ def remove_dir(dir_path):
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
-            try:
-                os.rmdir(dir_path)
-                counter = 50
-                # Multiple checks for success to accommodate race condition in Windows
-                while counter and os.path.exists(dir_path):
-                    counter -= 1
-                    time.sleep(.2)
-                if not counter:
-                    raise RemoveDirectoryError
-            except (RemoveDirectoryError, OSError) as ex:
+            err = None
+            tries = 5
+            while tries > 0:
+                tries -= 1
+                err = None
+                if os.path.exists(dir_path):
+                    try:
+                        os.rmdir(dir_path)
+                    except (shutil.Error, PermissionError) as ex:
+                        err = ex
+                        time.sleep(.2)
+                        continue
+                    counter = 50
+                    # Multiple checks for success to accommodate race condition in Windows
+                    while counter and os.path.exists(dir_path):
+                        counter -= 1
+                        time.sleep(.2)
+                    if not counter:
+                        err = RemoveDirectoryError()
+                        continue
+                tries = 0
+            if err:
                 print("\nError removing the directory: {0}".format(dir_path))
-                print("Error message: {0}\n".format(ex))
+                print("Error message: {0}\n".format(err))
                 exit_with_code(1)
         else:
             print('\nUnable to remove (not a directory): {0}\n'.format(dir_path))
@@ -795,18 +819,30 @@ def remove_file(file_path):
     """
     if os.path.exists(file_path):
         if os.path.isfile(file_path):
-            try:
-                os.remove(file_path)
-                counter = 50
-                # Multiple checks for success to accommodate race condition in Windows
-                while counter and os.path.exists(file_path):
-                    counter -= 1
-                    time.sleep(.2)
-                if not counter:
-                    raise RemoveFileError
-            except (RemoveFileError, OSError) as ex:
+            err = None
+            tries = 5
+            while tries > 0:
+                tries -= 1
+                err = None
+                if os.path.exists(file_path):
+                    try:
+                        os.remove(file_path)
+                    except (shutil.Error, PermissionError) as ex:
+                        err = ex
+                        time.sleep(.2)
+                        continue
+                    counter = 50
+                    # Multiple checks for success to accommodate race condition in Windows
+                    while counter and os.path.exists(file_path):
+                        counter -= 1
+                        time.sleep(.2)
+                    if not counter:
+                        err = RemoveFileError()
+                        continue
+                tries = 0
+            if err:
                 print("\nError removing the file: {0}".format(file_path))
-                print("Error message: {0}\n".format(ex))
+                print("Error message: {0}\n".format(err))
                 exit_with_code(1)
         else:
             print('\nUnable to remove (not a file): {0}\n'.format(file_path))
