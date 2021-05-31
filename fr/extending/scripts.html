@@ -119,15 +119,15 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Scripts</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#file-naming-script">Script de dénomination de fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tagging-scripts">Scripts de balisage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tagging-script-examples">Tagging Script Examples</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#move-disambiguation-to-album-title">Move disambiguation to album title</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#release-language-as-language">Release language as language</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#use-original-release-date">Use original release date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#set-album-sort-name">Set album sort name</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#set-compilation-for-multi-artist-releases">Set compilation for multi artist releases</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#remove-featuring-from-album-artist">Remove featuring from album artist</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#move-featuring-from-artist-to-title">Move featuring from artist to title</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#preserve-original-filename">Preserve original filename</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tagging-script-examples">Exemples de scripts de marquage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#move-disambiguation-to-album-title">Déplacer la désambiguïsation vers le titre de l’album</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#release-language-as-language">Libérer la langue en tant que langue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-original-release-date">Utiliser la date de sortie originale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-album-sort-name">Définir le nom de tri de l’album</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-compilation-for-multi-artist-releases">Définir la compilation pour les sorties multi-artistes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#remove-featuring-from-album-artist">Supprimer le featuring de l’artiste de l’album</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#move-featuring-from-artist-to-title">Déplacer le featuring de l’artiste au titre</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#preserve-original-filename">Conserver le nom de fichier original</a></li>
 </ul>
 </li>
 </ul>
@@ -241,11 +241,7 @@
             
   <div class="section" id="scripts">
 <h1><span class="target" id="index-0"></span>Scripts<a class="headerlink" href="#scripts" title="Lien permanent vers ce titre">¶</a></h1>
-<p>There are two types of scripts used in Picard: the file naming script and tagging scripts. These are
-managed from the « File Naming » and « Scripting » sections of the <span class="menuselection">« Options ‣ Options… »</span> menu. All scripts are written
-using the <a class="reference internal" href="scripting.html"><span class="doc">Picard scripting language</span></a>. Scripts are often discussed in the
-<a class="reference external" href="https://community.metabrainz.org/c/picard">MetaBrainz Community Forum</a>, and there is a thread specific to
-<a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">file naming and script snippets</a>.</p>
+<p>Il existe deux types de scripts utilisés dans Picard: le script de nommage des fichiers et les scripts de marquage. Ils sont gérés à partir des sections « Nommage des fichiers » et « Scripting » du menu <span class="menuselection">« Options ‣ Options… »</span>. Tous les scripts sont écrits en utilisant le <a class="reference internal" href="scripting.html"><span class="doc">Langage de script Picard</span></a>. Les scripts sont souvent discutés dans le <a class="reference external" href="https://community.metabrainz.org/c/picard">Forum communautaire de MetaBrainz</a>, et il y a un fil spécifique au <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">nommage des fichiers et aux extraits de scripts</a>.</p>
 <div class="section" id="file-naming-script">
 <h2><span class="target" id="index-3"></span>Script de dénomination de fichier<a class="headerlink" href="#file-naming-script" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Il n’y a qu’un seul script de dénomination de fichier défini dans les paramètres d’un utilisateur, bien qu’il puisse varier d’un simple script sur une ligne tel que <code class="docutils literal notranslate"><span class="pre">%album%/%title%</span></code> à un script très complexe utilisant différents formats de dénomination de fichier basés sur différents Critères. Dans tous les cas, les fichiers seront enregistrés en utilisant le texte sorti par le script.</p>
@@ -270,84 +266,69 @@ using the <a class="reference internal" href="scripting.html"><span class="doc">
 <p>Les scripts de balisage peuvent également être exécutés manuellement en cliquant avec le bouton droit sur un album ou une piste dans le volet de droite de Picard. S’il est exécuté à partir de l’entrée de l’album, le script est exécuté pour chaque piste de l’album. S’il est exécuté à partir d’une piste individuelle, le script n’est exécuté que pour cette piste.</p>
 </div>
 <div class="section" id="tagging-script-examples">
-<h2>Tagging Script Examples<a class="headerlink" href="#tagging-script-examples" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The following scripting examples show how tagger scripts can be used to solve some specific use cases.
-Please refer to <a class="reference internal" href="scripting.html"><span class="doc">Picard scripting language</span></a> for a detailed description of the variables and
-functions used in these examples.</p>
+<h2>Exemples de scripts de marquage<a class="headerlink" href="#tagging-script-examples" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les exemples de script suivants montrent comment les scripts du tagger peuvent être utilisés pour résoudre certains cas d’utilisation spécifiques. Veuillez vous référer à <a class="reference internal" href="scripting.html"><span class="doc">Langage de script Picard</span></a> pour une description détaillée des variables et des fonctions utilisées dans ces exemples.</p>
 <div class="section" id="move-disambiguation-to-album-title">
-<h3>Move disambiguation to album title<a class="headerlink" href="#move-disambiguation-to-album-title" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Append the disambiguation comment of a release to the album title:</p>
+<h3>Déplacer la désambiguïsation vers le titre de l’album<a class="headerlink" href="#move-disambiguation-to-album-title" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ajoute le commentaire de désambiguïsation d’une sortie au titre de l’album:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>album,<span class="n">%album%</span><span class="k">$if(</span><span class="n">%_releasecomment%</span>, <span class="se">\(</span><span class="n">%_releasecomment%</span><span class="se">\)</span><span class="k">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="release-language-as-language">
-<h3>Release language as language<a class="headerlink" href="#release-language-as-language" title="Lien permanent vers ce titre">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">%_releaselanguage%</span></code> variable specifies the language of the track listing, whereas the
-<code class="docutils literal notranslate"><span class="pre">%language%</span></code> variable is supposed to be the lyrics language.  The following script will use the
-<code class="docutils literal notranslate"><span class="pre">%_releaselanguage%</span></code> instead if <code class="docutils literal notranslate"><span class="pre">%language%</span></code> is empty:</p>
+<h3>Libérer la langue en tant que langue<a class="headerlink" href="#release-language-as-language" title="Lien permanent vers ce titre">¶</a></h3>
+<p>La variable <code class="docutils literal notranslate"><span class="pre">%_releaselanguage%</span></code> spécifie la langue de la liste des pistes, alors que la variable <code class="docutils literal notranslate"><span class="pre">%language%</span></code> est supposée être la langue des paroles.  Le script suivant utilisera la variable <code class="docutils literal notranslate"><span class="pre">%_releaselanguage%</span></code> à la place si <code class="docutils literal notranslate"><span class="pre">%language%</span></code> est vide:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if($not(</span><span class="n">%language%</span><span class="k">)</span>,<span class="k">$set(</span>language,<span class="n">%_releaselanguage%</span><span class="k">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="use-original-release-date">
-<h3>Use original release date<a class="headerlink" href="#use-original-release-date" title="Lien permanent vers ce titre">¶</a></h3>
-<p>By default Picard provides a tag <code class="docutils literal notranslate"><span class="pre">date</span></code> which holds the release date of a specific release and
-<code class="docutils literal notranslate"><span class="pre">originaldate</span></code> which provides the earliest release date of this release.  For example you might have
-a 2020 reissue of an album that originally was released in 1992.  In this case <code class="docutils literal notranslate"><span class="pre">date</span></code> will be set
-to « 2020 » and <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> to « 1992 ».  If you prefer to have always the original release date
-as the primary date in your file’s tags you could use the following script:</p>
+<h3>Utiliser la date de sortie originale<a class="headerlink" href="#use-original-release-date" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Par défaut, Picard fournit un tag <code class="docutils literal notranslate"><span class="pre">date</span></code> qui contient la date de sortie d’une version spécifique et <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> qui fournit la date de sortie la plus ancienne de cette version.  Par exemple, vous pouvez avoir une réédition en 2020 d’un album qui est sorti en 1992.  Dans ce cas, <code class="docutils literal notranslate"><span class="pre">date</span></code> sera mis à « 2020 » et <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> à « 1992 ».  Si vous préférez avoir toujours la date de sortie originale comme date principale dans les balises de votre fichier, vous pouvez utiliser le script suivant:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>date,<span class="k">$if2(</span><span class="n">%originaldate%</span>,<span class="n">%date%</span><span class="k">))</span>
 </pre></div>
 </div>
-<p>The use of <a class="reference internal" href="../functions/func_if2.html#func-if2"><span class="std std-ref">$if2</span></a> ensures that if <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> is empty it will fall back to <code class="docutils literal notranslate"><span class="pre">date</span></code>.</p>
-<p>In addition Picard provides a variable <code class="docutils literal notranslate"><span class="pre">%_recording_firstreleasedate%</span></code>, which tries to provide
-the first release date per recording (which can be different for each track in a release).
-If you prefer this you can use the following script:</p>
+<p>L’utilisation de <a class="reference internal" href="../functions/func_if2.html#func-if2"><span class="std std-ref">$if2</span></a> garantit que si <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> est vide, il reviendra à <code class="docutils literal notranslate"><span class="pre">date</span></code>.</p>
+<p>De plus, Picard fournit une variable <code class="docutils literal notranslate"><span class="pre">%_recording_firstreleasedate%</span></code>, qui essaie de fournir la première date de sortie par enregistrement (qui peut être différente pour chaque piste dans une sortie). Si vous préférez cela, vous pouvez utiliser le script suivant:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>date,<span class="k">$if2(</span><span class="n">%_recording_firstreleasedate%</span>,<span class="n">%originaldate%</span>,<span class="n">%date%</span><span class="k">))</span>
 </pre></div>
 </div>
-<p>Or if you want to keep the <code class="docutils literal notranslate"><span class="pre">date</span></code> for the actual release date of the specific release, but use
-the recording’s first release date as <code class="docutils literal notranslate"><span class="pre">originaldate</span></code>:</p>
+<p>Ou si vous voulez garder le <code class="docutils literal notranslate"><span class="pre">date</span></code> pour la date de sortie réelle de la version spécifique, mais utiliser la date de première sortie de l’enregistrement comme <code class="docutils literal notranslate"><span class="pre">originaldate</span></code>:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>originaldate,<span class="k">$if2(</span><span class="n">%_recording_firstreleasedate%</span>,<span class="n">%originaldate%</span><span class="k">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="set-album-sort-name">
-<h3>Set album sort name<a class="headerlink" href="#set-album-sort-name" title="Lien permanent vers ce titre">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">albumsort</span></code> tag is not filled by Picard by default.  You can set it to a meaningful value
-with prefixes « The » and « A » moved to the end with the following script:</p>
+<h3>Définir le nom de tri de l’album<a class="headerlink" href="#set-album-sort-name" title="Lien permanent vers ce titre">¶</a></h3>
+<p>La balise <code class="docutils literal notranslate"><span class="pre">albumsort</span></code> n’est pas remplie par Picard par défaut.  Vous pouvez lui donner une valeur significative avec les préfixes « The » et « A » déplacés à la fin avec le script suivant:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>albumsort,<span class="k">$swapprefix(</span><span class="n">%album%</span><span class="k">))</span>
 </pre></div>
 </div>
-<p>This will e.g. set the sort name for the release « The Best of Muddy Waters » to « Best of Muddy Waters, The ».</p>
+<p>Par exemple, le nom de tri de la version « The Best of Muddy Waters » deviendra « Best of Muddy Waters, The ».</p>
 </div>
 <div class="section" id="set-compilation-for-multi-artist-releases">
-<h3>Set compilation for multi artist releases<a class="headerlink" href="#set-compilation-for-multi-artist-releases" title="Lien permanent vers ce titre">¶</a></h3>
-<p>By default the <code class="docutils literal notranslate"><span class="pre">compilation</span></code> tag will be set to 1 only for Various Artists releases.  The following script will
-set it for all releases with more than one artist (as it was default behavior in Picard 1.2 and earlier):</p>
+<h3>Définir la compilation pour les sorties multi-artistes<a class="headerlink" href="#set-compilation-for-multi-artist-releases" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Par défaut, la balise <code class="docutils literal notranslate"><span class="pre">compilation</span></code> sera mise à 1 uniquement pour les sorties Various Artists.  Le script suivant le définira pour toutes les sorties avec plus d’un artiste (comme c’était le comportement par défaut dans Picard 1.2 et antérieur):</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if(</span><span class="n">%_multiartist%</span>,<span class="k">$set(</span>compilation,1<span class="k">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="remove-featuring-from-album-artist">
-<h3>Remove featuring from album artist<a class="headerlink" href="#remove-featuring-from-album-artist" title="Lien permanent vers ce titre">¶</a></h3>
-<p>This always removes featuring artists from the album artist:</p>
+<h3>Supprimer le featuring de l’artiste de l’album<a class="headerlink" href="#remove-featuring-from-album-artist" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Cela supprime toujours les artistes en vedette de l’artiste de l’album:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>albumartist,<span class="k">$rreplace(</span><span class="n">%albumartist%</span>,<span class="se">\\</span>s+feat<span class="se">\\</span>..*,<span class="k">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="move-featuring-from-artist-to-title">
-<h3>Move featuring from artist to title<a class="headerlink" href="#move-featuring-from-artist-to-title" title="Lien permanent vers ce titre">¶</a></h3>
-<p>According to MusicBrainz guidelines featuring artists are part of the artist name, e.g.
-« Artist A feat. Artist B ».  Some users prefer to have featuring added to the album or track title
-instead.  The following script moves featured track artists to the track title:</p>
+<h3>Déplacer le featuring de l’artiste au titre<a class="headerlink" href="#move-featuring-from-artist-to-title" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Selon les directives de MusicBrainz, les artistes en featuring font partie du nom de l’artiste, par exemple « Artist A feat. Artist B ».  Certains utilisateurs préfèrent que le featuring soit ajouté au titre de l’album ou de la piste.  Le script suivant déplace les artistes en vedette vers le titre de la piste:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>_feat_title,<span class="k">$rsearch(</span><span class="n">%artist%</span>,<span class="se">\\</span>s+<span class="se">\\\(</span>?<span class="se">\(</span>f<span class="se">\(</span>ea<span class="se">\)</span>?t<span class="se">\\</span>.[^<span class="se">\)</span>]*<span class="se">\)</span><span class="k">))</span>
 <span class="k">$set(</span>artist,<span class="k">$rreplace(</span><span class="n">%artist%</span>,<span class="se">\\</span>s+<span class="se">\\\(</span>?f<span class="se">\(</span>ea<span class="se">\)</span>?t<span class="se">\\</span>.[^<span class="se">\)</span>]*<span class="se">\\\)</span>?,<span class="k">))</span>
 <span class="k">$set(</span>title,<span class="k">$if(</span><span class="n">%_feat_title%</span>,<span class="n">%title%</span> <span class="se">\(</span><span class="n">%_feat_title%</span><span class="se">\)</span>,<span class="n">%title%</span><span class="k">))</span>
 </pre></div>
 </div>
-<p>The same can be done for moving featured artists from the album artist to the album title:</p>
+<p>On peut faire de même pour déplacer les artistes vedettes de l’artiste de l’album au titre de l’album:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>_feat_album,<span class="k">$rsearch(</span><span class="n">%albumartist%</span>,<span class="se">\\</span>s+<span class="se">\\\(</span>?<span class="se">\(</span>f<span class="se">\(</span>ea<span class="se">\)</span>?t<span class="se">\\</span>.[^<span class="se">\)</span>]*<span class="se">\)</span><span class="k">))</span>
 <span class="k">$set(</span>albumartist,<span class="k">$rreplace(</span><span class="n">%albumartist%</span>,<span class="se">\\</span>s+<span class="se">\\\(</span>?f<span class="se">\(</span>ea<span class="se">\)</span>?t<span class="se">\\</span>.[^<span class="se">\)</span>]*<span class="se">\\\)</span>?,<span class="k">))</span>
 <span class="k">$set(</span>album,<span class="k">$if(</span><span class="n">%_feat_album%</span>,<span class="n">%album%</span> <span class="se">\(</span><span class="n">%_feat_album%</span><span class="se">\)</span>,<span class="n">%album%</span><span class="k">))</span>
@@ -355,16 +336,12 @@ instead.  The following script moves featured track artists to the track title:<
 </div>
 </div>
 <div class="section" id="preserve-original-filename">
-<h3>Preserve original filename<a class="headerlink" href="#preserve-original-filename" title="Lien permanent vers ce titre">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">originalfilename</span></code> tag is supposed to hold the filename the file originally had.  By default
-Picard does not set or modify this tag.  If you want to save this information the following Script
-can be used:</p>
+<h3>Conserver le nom de fichier original<a class="headerlink" href="#preserve-original-filename" title="Lien permanent vers ce titre">¶</a></h3>
+<p>La balise <code class="docutils literal notranslate"><span class="pre">originalfilename</span></code> est censée contenir le nom de fichier que le fichier avait à l’origine.  Par défaut, Picard ne définit ni ne modifie cette balise.  Si vous voulez sauvegarder cette information, le script suivant peut être utilisé:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>originalfilename,<span class="k">$if2(</span><span class="n">%originalfilename%</span>,<span class="n">%_filename%</span>.<span class="n">%_extension%</span><span class="k">))</span>
 </pre></div>
 </div>
-<p>This will keep any existing <code class="docutils literal notranslate"><span class="pre">originalfilename</span></code> tag.  But if this tag is not yet present
-the tag will be set to the current filename.  As this happens before the file is being saved
-the original name of the file before Picard modifies it can be preserved.</p>
+<p>Ceci gardera toute balise existante <code class="docutils literal notranslate"><span class="pre">originalfilename</span></code>.  Mais si cette balise n’est pas encore présente, elle sera remplacée par le nom du fichier courant.  Comme cela se produit avant que le fichier ne soit enregistré, le nom original du fichier avant que Picard ne le modifie peut être préservé.</p>
 </div>
 </div>
 </div>
