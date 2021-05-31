@@ -15,8 +15,7 @@ function types.
 
 For the purpose of this tutorial, we're going to develop a simple plugin to save the argument information provided by Picard
 to ``track`` and ``release`` processing plugins.  This will demonstrate how the information is accessed, and will provide a
-utility that you might find useful when developing your own plugins.  This is based on the
-`Data Dumper <https://github.com/rdswift/picard-plugins/tree/2.0_RDS_Plugins/plugins/data_dumper>`_ plugin.
+utility that you might find useful when developing your own plugins.
 
 The first thing that we'll need to include is the header information that describes the plugin.
 
@@ -55,8 +54,8 @@ priority settings.
 Now we can start adding the code that we want Picard to execute. First we'll identify the output file to store the parameter
 information provided by Picard. This is a file named ``data_dump.txt`` to be stored in the file naming output directory. We find
 the name of the configuration setting we need, ``move_files_to``, by examining the Picard source code for the corresponding
-option setting screen. In this case it is
-`picard/ui/options/renaming.py <https://github.com/metabrainz/picard/blob/master/picard/ui/options/renaming.py#L90>`_.
+option setting screen. In this case it is a TextOption in the ``RenamingOptionsPage`` class found in the file
+`picard/ui/options/renaming.py <https://github.com/metabrainz/picard/blob/master/picard/ui/options/renaming.py>`_.
 
 .. code-block:: python
 
@@ -86,12 +85,12 @@ We also include error checking to write an entry to the Picard log in the event 
 Now we include the functions to be called when releases and tracks are retrieved by Picard. The release function hook provides
 three arguments, and the track function hook provides four arguments. The argument types are described in the :doc:`Plugins API
 <../appendices/plugins_api>` section. The first argument, ``album``, is an object that holds information about the selected album.
-See the ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py#L112>`_ file in
+See the ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file in
 Picard's source code for more information.
 
 The second argument, ``metadata``, is an object that holds the tags and variables that Picard has assigned for the current release
 and track. This is where you can add or edit the tags and variables that Picard makes available to the user for scripts. See the
-``Metadata`` class in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py#L146>`_ file in
+``Metadata`` class in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py>`_ file in
 Picard's source code for more information.
 
 The ``track`` and ``release`` arguments are Python dictionaries containing the information provided in response to Picard's calls to
@@ -186,9 +185,9 @@ great idea into reality.
    Relevant portions of Picard's source code including:
 
    * Option settings modules in `picard/ui/options/ <https://github.com/metabrainz/picard/tree/master/picard/ui/options>`_ for names used to access the settings.
-   * ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py#L112>`_ file.
-   * ``Metadata`` class and metadata processing plugin registration functions in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py#L146>`_ file.
-   * ``PluginPriority`` class in the `picard/plugin.py <https://github.com/metabrainz/picard/blob/master/picard/plugin.py#L217>`_ file.
+   * ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file.
+   * ``Metadata`` class and metadata processing plugin registration functions in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py>`_ file.
+   * ``PluginPriority`` class in the `picard/plugin.py <https://github.com/metabrainz/picard/blob/master/picard/plugin.py>`_ file.
 
 .. raw:: latex
 
