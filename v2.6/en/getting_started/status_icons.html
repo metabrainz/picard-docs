@@ -106,6 +106,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Status Icons</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#album-release-icons">Album / Release Icons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#track-icons">Track Icons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#status-bar">Status Bar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -303,6 +304,19 @@ to indicate the status of the item.</p>
 <blockquote>
 <div><p>This icon indicates that Picard encountered an error while trying to save the track.  This is typically due to the file being marked as read-only, or you do not have sufficient permission to save the file in the specified directory.</p>
 </div></blockquote>
+</div>
+<div class="section" id="status-bar">
+<h2><span class="target" id="index-3"></span>Status Bar<a class="headerlink" href="#status-bar" title="Permalink to this headline">¶</a></h2>
+<p>There is a status bar at the bottom of Picard’s main screen, which displays some information about current processing status.  This includes four numbers along with the current port number that Picard is monitoring.</p>
+<a class="reference internal image-reference" href="../_images/status_bar.png"><img alt="../_images/status_bar.png" src="../_images/status_bar.png" style="width: 100%;" /></a>
+<p>From left to right, the four numbers represent:</p>
+<ol class="arabic simple">
+<li><p>The number of files loaded.</p></li>
+<li><p>The number of MusicBrainz releases loaded.</p></li>
+<li><p>The number of files with pending action (e.g. loading, saving, fingerprinting).</p></li>
+<li><p>The number of active network requests.</p></li>
+</ol>
+<p>You can tell whether or not Picard is currently processing your files by looking at the numbers for pending files and pending network requests. If both are 0 nothing is pending and processing is complete.</p>
 </div>
 </div>
 

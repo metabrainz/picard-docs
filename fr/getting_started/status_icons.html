@@ -107,6 +107,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Icônes d’état</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#album-release-icons">Icônes d’album / de sortie</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#track-icons">Icônes de piste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#status-bar">Status Bar</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -222,10 +223,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="status-icons">
-<h1><span class="target" id="index-3"></span>Icônes d’état<a class="headerlink" href="#status-icons" title="Lien permanent vers ce titre">¶</a></h1>
+<h1><span class="target" id="index-4"></span>Icônes d’état<a class="headerlink" href="#status-icons" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Lorsque les albums et les pistes sont affichés dans le volet de droite, chaque ligne commence par une icône pour indiquer l’état de l’élément.</p>
 <div class="section" id="album-release-icons">
-<h2><span class="target" id="index-4"></span>Icônes d’album / de sortie<a class="headerlink" href="#album-release-icons" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-5"></span>Icônes d’album / de sortie<a class="headerlink" href="#album-release-icons" title="Lien permanent vers ce titre">¶</a></h2>
 <p><a class="reference internal" href="../_images/release.png"><img alt="img-release" src="../_images/release.png" style="width: 24pt; height: 24pt;" /></a></p>
 <blockquote>
 <div><div class="line-block">
@@ -263,7 +264,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="track-icons">
-<h2><span class="target" id="index-5"></span>Icônes de piste<a class="headerlink" href="#track-icons" title="Lien permanent vers ce titre">¶</a></h2>
+<h2><span class="target" id="index-6"></span>Icônes de piste<a class="headerlink" href="#track-icons" title="Lien permanent vers ce titre">¶</a></h2>
 <p><a class="reference internal" href="../_images/track-audio.png"><img alt="img-track-audio" src="../_images/track-audio.png" style="width: 24pt; height: 24pt;" /></a></p>
 <blockquote>
 <div><div class="line-block">
@@ -303,6 +304,19 @@
 <blockquote>
 <div><p>Cette icône indique que Picard a rencontré une erreur en essayant de sauvegarder la trace. Cela est généralement dû au fait que le fichier est marqué en lecture seule ou que vous ne disposez pas des autorisations suffisantes pour enregistrer le fichier dans le répertoire spécifié.</p>
 </div></blockquote>
+</div>
+<div class="section" id="status-bar">
+<h2><span class="target" id="index-3"></span>Status Bar<a class="headerlink" href="#status-bar" title="Lien permanent vers ce titre">¶</a></h2>
+<p>There is a status bar at the bottom of Picard’s main screen, which displays some information about current processing status.  This includes four numbers along with the current port number that Picard is monitoring.</p>
+<a class="reference internal image-reference" href="../_images/status_bar.png"><img alt="../_images/status_bar.png" src="../_images/status_bar.png" style="width: 100%;" /></a>
+<p>From left to right, the four numbers represent:</p>
+<ol class="arabic simple">
+<li><p>The number of files loaded.</p></li>
+<li><p>The number of MusicBrainz releases loaded.</p></li>
+<li><p>The number of files with pending action (e.g. loading, saving, fingerprinting).</p></li>
+<li><p>The number of active network requests.</p></li>
+</ol>
+<p>You can tell whether or not Picard is currently processing your files by looking at the numbers for pending files and pending network requests. If both are 0 nothing is pending and processing is complete.</p>
 </div>
 </div>
 
