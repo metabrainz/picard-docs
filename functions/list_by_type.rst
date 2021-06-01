@@ -135,6 +135,7 @@ These functions provide additional system or data information. The information s
 .. toctree::
    :maxdepth: 1
 
+   func_countryname
    func_datetime
    func_matchedtracks
 
