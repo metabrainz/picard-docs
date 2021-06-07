@@ -21,6 +21,7 @@ MusicBrainz Picard
    usage/using
    workflows/workflows
    usage/other
+   usage/user_profiles
    extending/extending
    troubleshooting/pdf_troubleshooting
    faq/faq
