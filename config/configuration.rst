@@ -63,6 +63,14 @@ actions that Picard can perform when saving selected music files:
    option settings and tagging scripts.
 
 
+:index:`User Profiles <user profiles, profiles; user>`
+---------------------------------------------------------------
+
+As of version 2.7, Picard supports multiple user profiles that can quickly switch between option settings. The profile
+management functions are found under the :menuselection:`"Options --> User Profiles..."` item on the menu bar.  Please
+see the :doc:`Managing User Profiles <../usage/user_profiles>` section for a detailed explanation of the profile system.
+
+
 :index:`Option Settings <see: option settings; configuration>`
 ---------------------------------------------------------------
 
