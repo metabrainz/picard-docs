@@ -28,7 +28,9 @@ Submitting when using Scan to identify the release
    .. image:: images/submit_acoustid_1.png
       :width: 100%
 
-   |
+   .. raw:: latex
+
+      \clearpage
 
 2. If the files are matched to a track and move to the right-hand pane, they already exist in the
    AcoustID database and do not need to be re-submitted.  The "Submit" button will remain disabled.
@@ -45,7 +47,9 @@ Submitting when using Scan to identify the release
    .. image:: images/submit_acoustid_3.png
       :width: 100%
 
-   |
+   .. raw:: latex
+
+      \clearpage
 
 4. Clicking the "Submit" button will only submit the fingerprints for the files identified in Step 3.
    The AcoustID icon for the tracks will change to grey (i.e.: submitted status) and the "Submit"
@@ -65,7 +69,9 @@ Submitting when not using Scan to identify the release
    .. image:: images/submit_acoustid_5.png
       :width: 100%
 
-   |
+   .. raw:: latex
+
+      \clearpage
 
 2. Select the files in the right-hand pane and select :menuselection:`"Tools --> Generate AcoustID fingerprints"`.
    This will calculate the acoustic fingerprints for the selected files.
@@ -73,7 +79,9 @@ Submitting when not using Scan to identify the release
    .. image:: images/submit_acoustid_6.png
       :width: 100%
 
-   |
+   .. raw:: latex
+
+      \par
 
    .. note::
 
@@ -86,10 +94,16 @@ Submitting when not using Scan to identify the release
    .. image:: images/submit_acoustid_7.png
       :width: 100%
 
-   |
+   .. raw:: latex
+
+      \clearpage
 
 3. Clicking the "Submit" button will submit the fingerprints for the files. The AcoustID icon for the tracks will
    change to grey (i.e.: submitted status) and the "Submit" button will be disabled.
 
    .. image:: images/submit_acoustid_8.png
       :width: 100%
+
+.. raw:: latex
+
+   \clearpage
