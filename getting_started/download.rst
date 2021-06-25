@@ -26,8 +26,9 @@ Installing Picard on Linux
 :index:`Installing with Flatpak <pair: install; flatpak>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Picard is available on Flathub. This version should work on all modern Linux distributions,
-as long as Flatpak is installed (see `Flatpak Quick Setup <https://flatpak.org/setup/>`_).
+Picard is available on `Flathub <https://flathub.org/apps/details/org.musicbrainz.Picard>`_.
+This version should work on all modern Linux distributions, as long as Flatpak is installed
+(see `Flatpak Quick Setup <https://flatpak.org/setup/>`_).
 
 First enable the Flathub repository:
 
@@ -48,8 +49,9 @@ You can now install Picard:
 Picard is available as a Snap from the Snap Store.  This version should work on all modern
 Linux distributions, as long as Snap is installed (see `Installing Snap <https://snapcraft.io/docs/installing-snapd>`_).
 
-If your Linux distributions supports it you can install Picard from your distribution's software
-center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the terminal:
+The `Snap Store page of Picard <https://snapcraft.io/picard>`_ gives detailed instructions on how to install Picard on
+various Linux distributions.  If your Linux distributions supports it you can install Picard from your distribution's
+software center, e.g. Ubuntu Software or KDE Discover.  You can also install Picard from the terminal:
 
 
 .. code-block:: bash
