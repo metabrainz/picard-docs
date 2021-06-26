@@ -92,7 +92,7 @@ The profiles stack order can be rearranged either by selecting a profile and usi
 list, or by dragging the profile to a new position in the stack.  Profiles are enabled when the box beside the profile's name
 is checked.
 
-When you are satisfied with your changes, click the :kbd:`Make_It_So!` button to store them and exit the profile editor screen.
+When you are satisfied with your changes, click the :kbd:`Make It So!` button to store them and exit the profile editor screen.
 Use the :kbd:`Cancel` button to exit without saving your changes.
 
 .. note::
@@ -105,5 +105,5 @@ To update the settings for the options managed by the new profile, the recommend
 
 1. Enable the new profile and disable all others.  This is the safest way to avoid accidentally applying changes to another profile.
 2. Exit the profile editor and open the :menuselection:`Options...` screen.
-3. Make the desired changes to the options managed by the profile, and save them using the :kbd:`Make_It_So!` button.
+3. Make the desired changes to the options managed by the profile, and save them using the :kbd:`Make It So!` button.
 4. Return to the profile editor and set the stack order and enabled profiles as desired.
