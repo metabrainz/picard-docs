@@ -38,6 +38,9 @@ The editor screen has the following sections:
    entries will display help information about the entry if available, and the "Show help tooltips" option
    is enabled.
 
+   Unicode characters can be entered into the script using the format ``\uXXXX`` where "XXXX" is the hexadecimal
+   value of the unicode character.  It is not recommended to include unicode characters in the directory or filename.
+
    The use of a '/' in the formatting string separates the output directory from the file name. The formatting string
    is allowed to contain any number of '/' characters. Everything before the last '/' is the directory location, and
    everything after the last '/' becomes the file's name.
