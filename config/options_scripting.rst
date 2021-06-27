@@ -16,6 +16,15 @@ the content of the selected script shown in the right-hand column.  This section
 add, remove and reorder the scripts, enable or disable individual scripts, as well as edit the
 currently selected script.
 
+The script editor automatically highlights the elements of the script, where dark blue text
+starting with a '$' is a :doc:`function name <../functions/list_by_type>` and names in light blue
+within '%' signs are Picard's :doc:`tag and variable names <../variables/variables>`. Hovering
+your mouse pointer over one of the highlighted entries will display help information about the
+entry if available.
+
+Unicode characters can be entered into the script using the format ``\uXXXX`` where "XXXX" is
+the hexadecimal value of the unicode character.
+
 When the checkbox beside the script is checked, that script will be executed automatically, once
 for each track in the release, when Picard retrieves information for a release from the MusicBrainz
 website.  If the checkbox is left unchecked, then the script will not be executed automatically.
