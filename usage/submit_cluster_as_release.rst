@@ -7,6 +7,9 @@ Picard can assist you in submitting information to the MusicBrainz database by a
 populating the submission form on the website with data from your files.  This is typically
 used when you have the music files for an album, but it is not yet available on MusicBrainz.
 
+Submitting multiple tracks as a cluster
+----------------------------------------
+
 To use this functionality, the steps to follow are:
 
 **1. Load the files**
@@ -68,9 +71,10 @@ To use this functionality, the steps to follow are:
       the `MusicBrainz Style Guides <https://musicbrainz.org/doc/Style>`_ and that the artist and release groups have been
       matched to existing items as appropriate.  You should also add an edit note citing the source of the information.
 
-**Submitting single tracks**
+Submitting a single track
+--------------------------
 
-You can also use this feature to submit a single track as a release or as a non-album track.  To do this, right-click the
+You can also use this feature to submit a single track as a release or as a standalone recording.  To do this, right-click the
 file and select either :menuselection:`"Submit file as standalone recording..."` or :menuselection:`"Submit file as release..."`
 as appropriate. Again, be sure to confirm the information has been correctly entered in accordance with the `MusicBrainz Style
 Guides <https://musicbrainz.org/doc/Style>`_ and that the artist and release groups have been matched to existing items as
