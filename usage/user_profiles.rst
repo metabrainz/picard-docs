@@ -78,11 +78,11 @@ All user profile management is done within the User Profile Editor screen availa
 User Profiles..."` item on the menu bar.  From this screen you will be able to add, copy, edit, remove, enable and disable
 profiles, as well as setting the order of the profile stack.
 
-Initially, the list of profiles will be empty.  To create a new profile click on the :kbd:`New` button.  This will create a
+Initially, the list of profiles will be empty.  To create a new profile click on the :guilabel:`New` button.  This will create a
 profile with no options selected for the profile to manage.  To rename the profile, right-click on the profile name and
 select the :menuselection:`Rename profile` command.  The list of options that the profile is to manage are selected from the
 list in the right-hand pane.  Options can be selected either by group or individually.  The groups can be expanded to see
-the individual options belonging to that group.  Once you are satisfied with your changes to a profile, click the :kbd:`Save`
+the individual options belonging to that group.  Once you are satisfied with your changes to a profile, click the :guilabel:`Save`
 button to store your changes.
 
 .. image:: images/user_profiles1.png
@@ -92,8 +92,8 @@ The profiles stack order can be rearranged either by selecting a profile and usi
 list, or by dragging the profile to a new position in the stack.  Profiles are enabled when the box beside the profile's name
 is checked.
 
-When you are satisfied with your changes, click the :kbd:`Make It So!` button to store them and exit the profile editor screen.
-Use the :kbd:`Cancel` button to exit without saving your changes.
+When you are satisfied with your changes, click the :guilabel:`Make It So!` button to store them and exit the profile editor screen.
+Use the :guilabel:`Cancel` button to exit without saving your changes.
 
 .. note::
 
@@ -105,5 +105,5 @@ To update the settings for the options managed by the new profile, the recommend
 
 1. Enable the new profile and disable all others.  This is the safest way to avoid accidentally applying changes to another profile.
 2. Exit the profile editor and open the :menuselection:`Options...` screen.
-3. Make the desired changes to the options managed by the profile, and save them using the :kbd:`Make It So!` button.
+3. Make the desired changes to the options managed by the profile, and save them using the :guilabel:`Make It So!` button.
 4. Return to the profile editor and set the stack order and enabled profiles as desired.
