@@ -17,7 +17,7 @@ Main window
 -----------
 
 File
-++++++
+++++
 
 .. csv-table::
    :width: 100%
@@ -30,7 +30,7 @@ File
    "Quit Picard", :kbd:`Ctrl+Q`, :kbd:`⌘+Q`
 
 Edit
-++++++
+++++
 
 .. csv-table::
    :width: 100%
@@ -42,7 +42,7 @@ Edit
    "Show info for selected item", :kbd:`Ctrl+I`, :kbd:`⌘+I`
 
 View
-++++++++
+++++
 
 .. csv-table::
    :width: 100%
@@ -52,8 +52,19 @@ View
    "Toggle file browser", :kbd:`Ctrl+B`, :kbd:`⌘+B`
    "Toggle metadata view", :kbd:`Ctrl+Shift+M`, :kbd:`⌘+⇧+M`
 
+Options
++++++++
+
+.. csv-table::
+   :width: 100%
+   :widths: 50 25 25
+   :header: "**Action**", "**Windows / Linux**", "**macOS**"
+
+   "Open file naming script editor", :kbd:`Ctrl+Shift+S`, :kbd:`⌘+⇧+S`
+   "Open profile editor", :kbd:`Ctrl+Shift+P`, :kbd:`⌘+⇧+P`
+
 Tools
-+++++++++++
++++++
 
 .. csv-table::
    :width: 100%
@@ -71,7 +82,7 @@ Tools
    "Tags from file names", :kbd:`Ctrl+Shift+T`, :kbd:`⌘+⇧+T`
 
 Help
-+++++++++
+++++
 
 .. csv-table::
    :width: 100%
@@ -83,7 +94,7 @@ Help
    "View error/debug log", :kbd:`Ctrl+G`, :kbd:`⌘+G`
 
 Metadata view
-+++++++++++++++
++++++++++++++
 
 .. csv-table::
    :width: 100%
@@ -97,7 +108,7 @@ Metadata view
    "Paste to selected tag value", :kbd:`Ctrl+V`, :kbd:`⌘+V`
 
 Other
-++++++++++++++
++++++
 
 .. csv-table::
    :width: 100%
