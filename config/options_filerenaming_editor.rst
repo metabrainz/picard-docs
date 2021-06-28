@@ -32,11 +32,12 @@ The editor screen has the following sections:
    Below the title is an edit box section containing the :index:`formatting string <scripts; file naming>` of the
    selected script. This tells Picard what the new name of the file and its containing directories should be in
    terms of various metadata values. The formatting string is generally referred to as a "file naming script", and
-   is in :doc:`Picard's scripting language <../extending/scripting>` where dark blue text starting with a '$' is a
-   :doc:`function name <../functions/list_by_type>` and names in light blue within '%' signs are Picard's
-   :doc:`tag and variable names <../variables/variables>`. Hovering your mouse pointer over one of the highlighted
-   entries will display help information about the entry if available, and the "Show help tooltips" option
-   is enabled.
+   is in :doc:`Picard's scripting language <../extending/scripting>`.
+
+   The script editor automatically highlights the elements of the script, including
+   :doc:`function names <../functions/list_by_type>` and :doc:`tag and variable names <../variables/variables>`.
+   Hovering your mouse pointer over one of the highlighted entries will display help information about the
+   entry if available.
 
    Unicode characters can be entered into the script using the format ``\uXXXX`` where "XXXX" is the hexadecimal
    value of the unicode character.  It is not recommended to include unicode characters in the directory or filename.
