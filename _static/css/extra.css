@@ -57,20 +57,13 @@ table.colwidths-given.docutils.align-default tbody tr td {
     overflow-y: auto;
 }
 
+span.guilabel {
+    white-space: nowrap;
+}
+
 /* adds formatting for keyboard shortcuts */
 kbd.compound {
     white-space: nowrap;
-    display: inline-block;
-    background-color: #f7f7f7;
-    padding: .15em .4em;
-    margin-left: 1px;
-    margin-right: 1px;
-    margin-bottom: .4em;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    box-shadow: inset 0 -1px 0 #ddd;
-    line-height: 1em;
-    font-size: .9em;
 }
 
 kbd:not(.compound) {
@@ -85,16 +78,6 @@ kbd:not(.compound) {
     box-shadow: inset 0 -1px 0 #ddd;
     line-height: 1em;
     font-size: .9em;
-}
-
-kbd.compound > kbd:not(.compound) {
-    border: 0px;
-    border-radius: 0px;
-    padding: 0px;
-    margin: 0px;
-    box-shadow: none;
-    line-height: 1.07em;
-    font-size: 1em;
 }
 
 /* Extended syntax highlighting for Picard Tagger Script */
