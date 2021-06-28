@@ -51,7 +51,7 @@ To use this functionality, the steps to follow are:
 
    When the option is selected, the system will submit a request to add the information to MusicBrainz, and you will
    be presented with a confirmation screen in your browser.  You can see the information that will be submitted by
-   expanding the "Data submitted with this request" link.  Selecting :kbd:`Continue` will open an "Add Release" edit
+   expanding the "Data submitted with this request" link.  Selecting :guilabel:`Continue` will open an "Add Release" edit
    screen with the fields populated with your information.
 
    .. image:: images/submit_cluster_4.png
@@ -59,14 +59,22 @@ To use this functionality, the steps to follow are:
 
 **5. Complete the submission**
 
-   Selecting :kbd:`Continue` will open an "Add Release" edit screen with the fields populated with your information.
+   Selecting :guilabel:`Continue` will open an "Add Release" edit screen with the fields populated with your information.
    From here you can check and submit your edit as if you had entered all of the information manually.
 
    .. note::
 
-      Before submitting the edit, you should check that all of the information has been correctly entered and that
-      artist and release groups have been matched to existing items as appropriate.  You should also add an edit note
-      citing the source of the information.
+      Before submitting the edit, you should check that all of the information has been correctly entered in accordance with
+      the `MusicBrainz Style Guides <https://musicbrainz.org/doc/Style>`_ and that the artist and release groups have been
+      matched to existing items as appropriate.  You should also add an edit note citing the source of the information.
+
+**Submitting single tracks**
+
+You can also use this feature to submit a single track as a release or as a non-album track.  To do this, right-click the
+file and select either :menuselection:`"Submit file as standalone recording..."` or :menuselection:`"Submit file as release..."`
+as appropriate. Again, be sure to confirm the information has been correctly entered in accordance with the `MusicBrainz Style
+Guides <https://musicbrainz.org/doc/Style>`_ and that the artist and release groups have been matched to existing items as
+appropriate.  You should also add an edit note citing the source of the information.
 
 .. raw:: latex
 
