@@ -82,8 +82,7 @@ Initially, the list of profiles will be empty.  To create a new profile click on
 profile with no options selected for the profile to manage.  To rename the profile, right-click on the profile name and
 select the :menuselection:`Rename profile` command.  The list of options that the profile is to manage are selected from the
 list in the right-hand pane.  Options can be selected either by group or individually.  The groups can be expanded to see
-the individual options belonging to that group.  Once you are satisfied with your changes to a profile, click the :guilabel:`Save`
-button to store your changes.
+the individual options belonging to that group.
 
 .. image:: images/user_profiles1.png
    :width: 100 %
