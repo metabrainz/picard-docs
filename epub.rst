@@ -49,7 +49,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
    General Usage <usage/using>
    usage/other
-   usage/user_profiles
+   usage/option_profiles
    extending/extending
    faq/faq
 

@@ -50,7 +50,7 @@ Perhaps you prefer to limit this list to the first few entries. The following ex
    $setmulti(releasecountry,$slice(%_releasecountries%,0,6))
 
 
-What’s missing?
+What's missing?
 ================
 
 Countries are currently written to the tags as their ISO 3166-1 country code, with some special values added for historical countries and things like \[Europe\]
