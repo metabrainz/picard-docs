@@ -1,11 +1,11 @@
 .. MusicBrainz Picard Documentation Project
 
-User Profiles
-=======================
+Option Profiles
+===============
 
-As of version 2.7, Picard supports multiple user profiles that can allow the user to quickly switch between option settings.
+As of version 2.7, Picard supports multiple profiles that can allow the user to quickly switch between option settings.
 
-How User Profiles Work
+How Option Profiles Work
 ------------------------
 
 A profile is defined by a set of options it manages.  For example, one profile may include settings for file naming such as
@@ -22,7 +22,7 @@ will only be applied to the first enabled profile in the stack that manages that
 Initially, the profile stack contains only the system's "user settings" profile, which holds the default settings for the user.
 
 Example of Using Profiles
---------------------------
+-------------------------
 
 For this example, the user would like to define a set of options with alternate values, in this case a target directory where
 audio files are saved (option ``move_files_to``).
@@ -71,11 +71,11 @@ Finally, to return to their usual output directory the user only has to disable 
    [x] user settings  move_files_to  windows_compatibility  [plus all other settings]
 
 
-Managing User Profiles
------------------------
+Managing Option Profiles
+------------------------
 
-All user profile management is done within the User Profile Editor screen available from the :menuselection:`"Options -->
-User Profiles..."` item on the menu bar.  From this screen you will be able to add, copy, edit, remove, enable and disable
+All option profile management is done within the Option Profile Editor screen available from the :menuselection:`"Options -->
+Option Profiles..."` item on the menu bar.  From this screen you will be able to add, copy, edit, remove, enable and disable
 profiles, as well as setting the order of the profile stack.
 
 Initially, the list of profiles will be empty.  To create a new profile click on the :guilabel:`New` button.  This will create a
