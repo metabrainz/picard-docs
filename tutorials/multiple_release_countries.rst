@@ -71,8 +71,19 @@ such as in the following script:
    $if($eq(%releasecountry%,XW),$set(releasecountry,[Worldwide]))
    $if($eq(%releasecountry%,XG),$set(releasecountry,DDR))
 
-A change has been submitted to Picard to add a ``$countryname()`` function to easily convert the code into a readable name; however this is not scheduled for
-release until Picard v2.7.
+A simpler method would be to use the ``$countryname()`` function introduced in Picard v2.7 to easily convert the code into a readable name, such as in the following scripts:
+
+.. code-block:: taggerscript
+
+   $noop( Convert only %releasecountry% )
+   $set(releasecountry,$countryname(%releasecountry%,yes))
+
+   $noop( List all countries by name )
+   $setmulti(releasecountry,$map(%_releasecountries%,$countryname(%_loop_value%,yes)))
+
+   $noop( List only the first 6 countries by name )
+   $setmulti(temp,$slice(%_releasecountries%,0,6))
+   $setmulti(releasecountry,$map(%temp%,$countryname(%_loop_value%,yes)))
 
 .. raw:: latex
 
