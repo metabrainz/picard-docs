@@ -16,10 +16,8 @@ enabled or disabled independently from the other user-defined profiles.  The sys
 enabled and includes all options.
 
 When an option value is retrieved as part of Picard's processing, it comes from the first enabled profile in the stack that
-manages that option.  Similarly, when a new value is set for an option in the :menuselection:`Options...` window, the change
-will only be applied to the first enabled profile in the stack that manages that option.
-
-Initially, the profile stack contains only the system's "user settings" profile, which holds the default settings for the user.
+manages that option. Initially, the profile stack contains only the system's "User base settings" profile, which holds the
+default settings for the user.
 
 Example of Using Profiles
 -------------------------
@@ -35,7 +33,7 @@ The stack is now:
    [x] TargetMyDir    move_files_to
    [x] user settings  move_files_to  [plus all other settings]
 
-Since the profile "TargetMyDir" is enabled, any change to ``move_files_to`` is done within this profile, and "user settings"
+Since the profile "TargetMyDir" is enabled, the value for ``move_files_to`` is retrieved from this profile.  The "user settings"
 still has the old ``move_files_to`` value.
 
 Now the user wants to work on another set of music files, wanting to disable ``windows_compatibility`` for this set and save
@@ -50,8 +48,8 @@ Now the stack looks like:
    [x] TargetMyDir    move_files_to
    [x] user settings  move_files_to  windows_compatibility  [plus all other settings]
 
-They change the values of ``move_files_to`` (to "not_for_windows") and ``windows_compatibility`` (to false).  Now when they
-process their files, the files are saved to the "ByeByeWin" ``move_files_to`` directory, with ``windows_compatibility`` = false.
+They change the values of ``move_files_to`` (to "not_for_windows") and ``windows_compatibility`` (to false) for this new profile.
+Now when they process their files, the files are saved to the "ByeByeWin" ``move_files_to`` directory, with ``windows_compatibility`` = false.
 
 Now the user wants to save files to the "TargetMyDir" target directory again, with their usual options.  To do this they simply
 disable the "ByeByeWin" profile (which can later be re-enabled if needed).  The stack looks like:
@@ -80,11 +78,17 @@ profiles, as well as setting the order of the profile stack.
 
 Initially, the list of profiles will be empty.  To create a new profile click on the :guilabel:`New` button.  This will create a
 profile with no options selected for the profile to manage.  To rename the profile, right-click on the profile name and
-select the :menuselection:`Rename profile` command.  The list of options that the profile is to manage are selected from the
+select the :menuselection:`"Rename profile"` command.  The list of options that the profile is to manage are selected from the
 list in the right-hand pane.  Options can be selected either by group or individually.  The groups can be expanded to see
 the individual options belonging to that group.
 
 .. image:: images/user_profiles1.png
+   :width: 100 %
+
+You can see the value currently assigned to a profile's option setting by hovering your cursor over the setting in the list. The
+value will be displayed as a tooltip for the setting.
+
+.. image:: images/option-setting-value-tooltip.png
    :width: 100 %
 
 The profiles stack order can be rearranged either by selecting a profile and using the up and down arrow buttons below the
@@ -96,13 +100,28 @@ Use the :guilabel:`Cancel` button to exit without saving your changes.
 
 .. note::
 
-   Creating a new profile, or adding new options to an existing profile, does not save the settings for the options.  The
-   option settings will only be updated when you make and save changes in the :menuselection:`"Options --> Options..."` dialog,
-   and only if the profile is the first enabled one in the stack that manages those options.
+   Creating a new profile, or adding new options to an existing profile, does not save the settings for the options.  Settings
+   must be updated in the :menuselection:`"Options..."` window, as described in the following section.
 
-To update the settings for the options managed by the new profile, the recommended steps are:
+Saving Profile Option Settings
+------------------------------
 
-1. Enable the new profile and disable all others.  This is the safest way to avoid accidentally applying changes to another profile.
-2. Exit the profile editor and open the :menuselection:`Options...` screen.
-3. Make the desired changes to the options managed by the profile, and save them using the :guilabel:`Make It So!` button.
-4. Return to the profile editor and set the stack order and enabled profiles as desired.
+To save a value to a profile option setting, simply select the target profile in the :menuselection:`"Options..."` window, make
+the desired changes, and then click the :guilabel:`Make It So!` button.
+
+.. image:: images/options-profile-selector.png
+   :width: 100 %
+
+The changes will only be applied to the selected profile, and only for option settings managed by the profile — all other changes will
+be ignored.  The default target is "User base settings" which is the user's normal settings, and includes all options.  If no option
+profiles have been defined, this "Save settings to:" section will not be displayed in the :menuselection:`"Options..."` window.
+
+Whenever a profile is selected in the "Save settings to:" section, the setting values displayed are updated to show the values that
+are associated with the profile. Any option settings not managed by the profile will display the values for the user's base settings.
+
+From the :menuselection:`"Options..."` window you will also be able to see which profiles, if any, manage any of the options on
+the current page.  This is done by clicking the :guilabel:`Attached Profiles` button beside the output target profile selector.
+
+.. image:: images/options-attached-profiles.png
+   :width: 100 %
+

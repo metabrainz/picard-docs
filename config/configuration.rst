@@ -83,6 +83,11 @@ settings on the right hand side.  This is where the majority of Picard's customi
    .. image:: images/options-general.png
       :width: 100 %
 
+In addition to the basic "user settings", this is also where option setting changes are made to individual option profiles.
+This is covered in greater detail in the :doc:`Managing Option Profiles <../usage/option_profiles>` section.
+
+.. only:: html
+
    .. seealso::
 
       :doc:`options_general` /
