@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-24 11:32-0600\n"
+"PO-Revision-Date: 2021-07-24 11:40-0600\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 3.0\n"
+
+#: ../../functions/func_dateformat.rst:6
+msgid "$dateformat"
+msgstr "$dateformat"
+
+#: ../../functions/func_dateformat.rst:8
+msgid "Usage: **$dateformat(date,[format],[date_order])**"
+msgstr "Utilisation: **$dateformat(date,[format],[ordre_des_dates])**"
+
+#: ../../functions/func_dateformat.rst:9
+msgid "Category: information"
+msgstr "Catégorie: information"
+
+#: ../../functions/func_dateformat.rst:10
+msgid "Implemented: Picard 2.7"
+msgstr "Mis en œuvre: Picard 2.7"
+
+#: ../../functions/func_dateformat.rst:12
+msgid "**Description:**"
+msgstr "**La description:**"
+
+#: ../../functions/func_dateformat.rst:14
+msgid ""
+"Returns the input ``date`` in the specified ``format``, which is based "
+"on the standard Python ``strftime`` `format codes <https://strftime."
+"org>`_. If no ``format`` is specified the date will be returned in the "
+"form '2020-02-15'.  Note that any special characters such as '%', '$', "
+"'(', ')' and '\\\\' will need to be escaped as shown in the examples "
+"below."
+msgstr ""
+"Renvoie la ``date`` d'entrée dans le ``format`` spécifié, qui est basé "
+"sur les codes de format standard Python ``strftime`` <https://strftime."
+"org>`_. Si aucun ``format`` n'est spécifié, la date sera retournée sous "
+"la forme '2020-02-15'.  Notez que tous les caractères spéciaux tels que "
+"'%', '$', '(', ')' et '\\\\' devront être échappés comme indiqué dans "
+"les exemples ci-dessous."
+
+#: ../../functions/func_dateformat.rst:20
+msgid ""
+"The \"year\", \"month\" and \"day\" portions of the date must be entered "
+"as numbers, and can be separated by any non-numeric characters.  The "
+"default order for the input date is \"ymd\".  This can be changed by "
+"specifying a ``date_order`` of either \"dmy\" or \"mdy\"."
+msgstr ""
+"Les parties \"année\", \"mois\" et \"jour\" de la date doivent être "
+"saisies sous forme de chiffres et peuvent être séparées par des "
+"caractères non numériques.  L'ordre par défaut de la date saisie est "
+"\"ymd\".  Ceci peut être changé en spécifiant un \"ordre_de_date\" de "
+"\"dmy\" ou \"mdy\"."
+
+#: ../../functions/func_dateformat.rst:24
+msgid ""
+"If either the ``date`` or ``format`` are invalid an empty string will be "
+"returned."
+msgstr ""
+"Si la ``date`` ou le ``format`` ne sont pas valides, une chaîne vide "
+"sera retournée."
+
+#: ../../functions/func_dateformat.rst:28
+#, python-format
+msgid ""
+"Platform-specific formatting codes should be avoided to help ensure the "
+"portability of scripts across the different platforms.  These codes "
+"include: remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or "
+"macOS, and their equivalent ``%#d`` and ``%#m`` on Windows); element "
+"length specifiers (e.g.: ``%3Y``); and hanging '%' at the end of the "
+"format string."
+msgstr ""
+"Les codes de formatage spécifiques à la plate-forme doivent être évités "
+"pour garantir la portabilité des scripts sur les différentes plates-"
+"formes. Ces codes incluent: supprimer zéro-padding (par exemple: ``%-d`` "
+"et ``%-m`` sous Linux ou macOS, et leurs équivalents ``%#d`` et ``%#m`` "
+"sur Windows); spécificateurs de longueur d'élément (par exemple: ``"
+"%3Y``); et accrocher '%' à la fin de la chaîne de format."
+
+#: ../../functions/func_dateformat.rst:34
+msgid "**Example:**"
+msgstr "**Exemple:**"
+
+#: ../../functions/func_dateformat.rst:36
+msgid "The following statements will return the values indicated:"
+msgstr "Les instructions suivantes renverront les valeurs indiquées:"
