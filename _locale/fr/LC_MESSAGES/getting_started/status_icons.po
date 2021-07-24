@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-31 11:38-0600\n"
-"PO-Revision-Date: 2021-05-31 12:39-0600\n"
+"POT-Creation-Date: 2021-07-24 12:37-0600\n"
+"PO-Revision-Date: 2021-07-24 12:40-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
 "Language-Team: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../../getting_started/status_icons.rst:4
 msgid ":index:`Status Icons <icons; status>`"
@@ -198,25 +198,38 @@ msgstr ":index:`Barre d'état <icônes ; barre d'état, barre d'état>`"
 msgid ""
 "There is a status bar at the bottom of Picard's main screen, which displays "
 "some information about current processing status.  This includes four numbers "
-"along with the current port number that Picard is monitoring."
+"along with the current port number that Picard is monitoring. In addition, if "
+"Picard is currently processing your files an estimated time to completion "
+"will also be displayed to the left of the status indicators."
 msgstr ""
 "Il y a une barre d'état en bas de l'écran principal de Picard, qui affiche "
-"quelques informations sur l'état actuel du traitement.  Cela inclut quatre "
-"chiffres ainsi que le numéro du port actuel que Picard surveille."
+"quelques informations sur l'état actuel du traitement.  Elle comprend quatre "
+"chiffres ainsi que le numéro du port que Picard surveille actuellement. De "
+"plus, si Picard est en train de traiter vos fichiers, une estimation de la "
+"durée de traitement sera également affichée à gauche des indicateurs de "
+"statut."
 
-#: ../../getting_started/status_icons.rst:143
-msgid "From left to right, the four numbers represent:"
-msgstr "De gauche à droite, les quatre chiffres représentent:"
+#: ../../getting_started/status_icons.rst:144
+msgid "From left to right, the numbers represent:"
+msgstr "De gauche à droite, les chiffres représentent:"
 
-#: ../../getting_started/status_icons.rst:145
+#: ../../getting_started/status_icons.rst:146
+msgid ""
+"The estimated processing time remaining (only displayed if Picard is actively "
+"processing files)."
+msgstr ""
+"Le temps de traitement estimé restant (affiché uniquement si Picard est en "
+"train de traiter activement des fichiers)."
+
+#: ../../getting_started/status_icons.rst:147
 msgid "The number of files loaded."
 msgstr "Le nombre de fichiers chargés."
 
-#: ../../getting_started/status_icons.rst:146
+#: ../../getting_started/status_icons.rst:148
 msgid "The number of MusicBrainz releases loaded."
 msgstr "Le nombre de versions de MusicBrainz chargées."
 
-#: ../../getting_started/status_icons.rst:147
+#: ../../getting_started/status_icons.rst:149
 msgid ""
 "The number of files with pending action (e.g. loading, saving, "
 "fingerprinting)."
@@ -224,26 +237,6 @@ msgstr ""
 "Le nombre de fichiers en attente d'une action (par exemple, chargement, "
 "sauvegarde, prise d'empreinte)."
 
-#: ../../getting_started/status_icons.rst:148
+#: ../../getting_started/status_icons.rst:150
 msgid "The number of active network requests."
 msgstr "Le nombre de demandes de réseau actives."
-
-#: ../../getting_started/status_icons.rst:150
-msgid ""
-"You can tell whether or not Picard is currently processing your files by "
-"looking at the numbers for pending files and pending network requests. If "
-"both are 0 nothing is pending and processing is complete."
-msgstr ""
-"Vous pouvez savoir si Picard est ou non en train de traiter vos fichiers en "
-"regardant les nombres de fichiers en attente et de requêtes réseau en "
-"attente. Si les deux sont à 0, rien n'est en attente et le traitement est "
-"terminé."
-
-#~ msgid "Status Icons"
-#~ msgstr "Icônes d'état"
-
-#~ msgid "Album / Release Icons"
-#~ msgstr "Icônes d'album / version"
-
-#~ msgid "Track Icons"
-#~ msgstr "Icônes de piste"
