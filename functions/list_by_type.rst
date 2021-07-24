@@ -116,6 +116,7 @@ the results of the test. The conditional scripting functions are:
    func_inmulti
    func_is_audio
    func_is_complete
+   func_is_multi
    func_is_video
    func_lt
    func_lte
@@ -136,8 +137,12 @@ These functions provide additional system or data information. The information s
    :maxdepth: 1
 
    func_countryname
+   func_dateformat
    func_datetime
+   func_day
    func_matchedtracks
+   func_month
+   func_year
 
 
 :index:`Loop Functions <scripting functions; loop>`
