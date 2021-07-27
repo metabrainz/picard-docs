@@ -113,11 +113,18 @@ the desired changes, and then click the :guilabel:`Make It So!` button.
    :width: 100 %
 
 The changes will only be applied to the selected profile, and only for option settings managed by the profile — all other changes will
-be ignored.  The default target is "User base settings" which is the user's normal settings, and includes all options.  If no option
-profiles have been defined, this "Save settings to:" section will not be displayed in the :menuselection:`"Options..."` window.
+be ignored.  When the Options dialog is opened, the output target is automatically set to the first enabled profile in the profile
+stack.  If there are no enabled profiles, then the target is set to "User base settings" which is the user's normal settings, and
+includes all options.  If no option profiles have been defined, this "Save settings to:" section will not be displayed in the
+:menuselection:`"Options..."` window.
 
 Whenever a profile is selected in the "Save settings to:" section, the setting values displayed are updated to show the values that
-are associated with the profile. Any option settings not managed by the profile will display the values for the user's base settings.
+are associated with the profile, and the settings are highlighted in the dialog. Any option settings not managed by the profile will
+display the values for the user's base settings.  In addition, the "Save settings to:" selector will be highlighted to indicate that
+there is a profile selected as the output target.
+
+.. image:: images/option-setting-values-highlighted.png
+   :width: 100 %
 
 From the :menuselection:`"Options..."` window you will also be able to see which profiles, if any, manage any of the options on
 the current page.  This is done by clicking the :guilabel:`Attached Profiles` button beside the output target profile selector.
