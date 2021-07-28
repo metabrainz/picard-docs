@@ -40,18 +40,18 @@ The following statements will return the values indicated:
    $set(foo,07.21.2021)
    $set(bar,mdy)
    $set(format,\%Y.\%m.\%d)
-   $dateformat(%foo%,%format%,%bar%)    ==>  "2021.07.21"
+   $dateformat(%foo%,%format%,%bar%)     ==>  "2021.07.21"
 
-   $dateformat(2021 07 21)              ==>  "2021-07-21"
-   $dateformat(2021.07.21)              ==>  "2021-07-21"
-   $dateformat(2021-07-21)              ==>  "2021-07-21"
-   $dateformat(2021-7-21)               ==>  "2021-07-21"
-   $dateformat(2021-7-21,\%B \%d, \%Y)  ==>  "July 21, 2021"
+   $dateformat(2021 07 21)               ==>  "2021-07-21"
+   $dateformat(2021.07.21)               ==>  "2021-07-21"
+   $dateformat(2021-07-21)               ==>  "2021-07-21"
+   $dateformat(2021-7-21)                ==>  "2021-07-21"
+   $dateformat(2021-7-21,\%B \%d\, \%Y)  ==>  "July 21, 2021"
 
-   $dateformat(2021-07-21,,myd)         ==>  "2021-07-21"
-   $dateformat(2021-07-21,,dmy)         ==>  ""
-   $dateformat(2021-07-21,,mdy)         ==>  ""
-   $dateformat(2021-July-21)            ==>  ""
-   $dateformat(2021)                    ==>  ""
-   $dateformat(2021-07)                 ==>  ""
-   $dateformat(,)                       ==>  ""
+   $dateformat(2021-07-21,,myd)          ==>  "2021-07-21"
+   $dateformat(2021-07-21,,dmy)          ==>  ""
+   $dateformat(2021-07-21,,mdy)          ==>  ""
+   $dateformat(2021-July-21)             ==>  ""
+   $dateformat(2021)                     ==>  ""
+   $dateformat(2021-07)                  ==>  ""
+   $dateformat(,)                        ==>  ""
