@@ -27,16 +27,19 @@ The following statements will return the values indicated:
 
    $set(foo,07.21.2020)
    $set(bar,mdy)
-   $year(%foo%,%bar%)       ==>  "2020"
+   $year(%foo%,%bar%)              ==>  "2020"
 
-   $year(2020 07 21)        ==>  "2020"
-   $year(2020.07.21)        ==>  "2020"
-   $year(2020-07-21)        ==>  "2020"
-   $year(20-7-21)           ==>  "20"
+   $year(2020 07 21)               ==>  "2020"
+   $year(2020.07.21)               ==>  "2020"
+   $year(2020-07-21)               ==>  "2020"
+   $year(20-7-21)                  ==>  "20"
 
-   $year(2020-07-21,dym)    ==>  "2020" (invalid date order)
+   $noop( Invalid date order )
+   $year(2020-07-21,dym)           ==>  "2020"
 
-   $month(,)                 ==>  ""
-   $month(07-21,mdy)         ==>  ""
-   $month(21-07,dmy)         ==>  ""
-   $month(21-July-2020,dmy)  ==>  "" (month is not numeric)
+   $year(,)                        ==>  ""
+   $year(07-21,mdy)                ==>  ""
+   $year(21-07,dmy)                ==>  ""
+
+   $noop( Month is not numeric )
+   $year(21-July-2020,dmy,1)       ==>  ""
