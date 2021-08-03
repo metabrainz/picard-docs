@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _ref-match-files:
+
 :index:`Matching Files to Tracks <matching files to tracks>`
 =============================================================
 

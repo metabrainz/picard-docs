@@ -10,3 +10,4 @@ Tutorials
    acoustid
    multiple_release_countries
    write_plugin
+   android_app
