@@ -63,14 +63,6 @@ actions that Picard can perform when saving selected music files:
    option settings and tagging scripts.
 
 
-:index:`Option Profiles <option profiles, profiles; option>`
--------------------------------------------------------------
-
-As of version 2.7, Picard supports multiple profiles that can quickly switch between option settings. The profile
-management functions are found under the :menuselection:`"Options --> Option Profiles..."` item on the menu bar.  Please
-see the :doc:`Managing Option Profiles <../usage/option_profiles>` section for a detailed explanation of the profile system.
-
-
 :index:`Option Settings <see: option settings; configuration>`
 ---------------------------------------------------------------
 
@@ -84,13 +76,20 @@ settings on the right hand side.  This is where the majority of Picard's customi
       :width: 100 %
 
 In addition to the basic "user settings", this is also where option setting changes are made to individual option profiles.
-This is covered in greater detail in the :doc:`Managing Option Profiles <../usage/option_profiles>` section.
+This is covered in greater detail in the :doc:`../usage/option_profiles` section.
+
+Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option
+settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted.
+Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are
+always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used
+during processing.
 
 .. only:: html
 
    .. seealso::
 
       :doc:`options_general` /
+      :doc:`options_profiles` /
       :doc:`options_metadata` /
       :doc:`options_tags` /
       :doc:`options_cover` /
@@ -106,6 +105,7 @@ This is covered in greater detail in the :doc:`Managing Option Profiles <../usag
    :hidden:
 
    options_general.rst
+   options_profiles.rst
    options_metadata.rst
    options_tags.rst
    options_cover.rst
