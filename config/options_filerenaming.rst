@@ -77,7 +77,7 @@ These options determine how Picard handles files when they are saved with update
    will be randomly chosen from your selection as file naming examples.  If you have not selected any files, then some default
    examples will be provided.
 
-   You can change the randomly selected example files from your selected files list by clicking on the :kbd:`Reload examples`
+   You can change the randomly selected example files from your selected files list by clicking on the :guilabel:`Reload examples`
    button.
 
 .. note::
