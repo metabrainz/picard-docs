@@ -16,7 +16,7 @@ enabled or disabled independently from the other user-defined profiles.  The sys
 enabled and includes all options.
 
 When an option value is retrieved as part of Picard's processing, it comes from the first enabled profile in the stack that
-manages that option. Initially, the profile stack contains only the system's "User base settings" profile, which holds the
+manages that option. Initially, the profile stack contains only the system's "user settings" profile, which holds the
 default settings for the user.
 
 Example of Using Profiles
@@ -32,6 +32,9 @@ The stack is now:
 
    [x] TargetMyDir    move_files_to
    [x] user settings  move_files_to  [plus all other settings]
+
+
+They change the value of ``move_files_to`` (to "target_my_dir") for this new profile.
 
 Since the profile "TargetMyDir" is enabled, the value for ``move_files_to`` is retrieved from this profile.  The "user settings"
 still has the old ``move_files_to`` value.
@@ -72,8 +75,8 @@ Finally, to return to their usual output directory the user only has to disable 
 Managing Option Profiles
 ------------------------
 
-All option profile management is done within the Option Profile Editor screen available from the :menuselection:`"Options -->
-Option Profiles..."` item on the menu bar.  From this screen you will be able to add, copy, edit, remove, enable and disable
+All option profile management is done within the Option Profiles page available from the :menuselection:`"Options -->
+Options..."` item on the menu bar.  From this screen you will be able to add, copy, edit, remove, enable and disable
 profiles, as well as setting the order of the profile stack.
 
 Initially, the list of profiles will be empty.  To create a new profile click on the :guilabel:`New` button.  This will create a
@@ -82,7 +85,7 @@ select the :menuselection:`"Rename profile"` command.  The list of options that 
 list in the right-hand pane.  Options can be selected either by group or individually.  The groups can be expanded to see
 the individual options belonging to that group.
 
-.. image:: images/user_profiles1.png
+.. image:: images/option_profiles1.png
    :width: 100 %
 
 You can see the value currently assigned to a profile's option setting by hovering your cursor over the setting in the list. The
@@ -91,44 +94,57 @@ value will be displayed as a tooltip for the setting.
 .. image:: images/option-setting-value-tooltip.png
    :width: 100 %
 
-The profiles stack order can be rearranged either by selecting a profile and using the up and down arrow buttons below the
+The profile stack order can be rearranged either by selecting a profile and using the up and down arrow buttons below the
 list, or by dragging the profile to a new position in the stack.  Profiles are enabled when the box beside the profile's name
 is checked.
 
-When you are satisfied with your changes, click the :guilabel:`Make It So!` button to store them and exit the profile editor screen.
-Use the :guilabel:`Cancel` button to exit without saving your changes.
+Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option
+settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted.
+Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are
+always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used
+during processing.
 
-.. note::
+You can also quickly enable or disable a profile (but not change the order of the profile stack), using the
+:menuselection:`"Options --> Enable/disable profiles"` item in the menu bar on Picard's main screen.
 
-   Creating a new profile, or adding new options to an existing profile, does not save the settings for the options.  Settings
-   must be updated in the :menuselection:`"Options..."` window, as described in the following section.
+When you click the :guilabel:`Make It So!` button, in addition to saving your updated profile configuration all highlighted
+options will be saved to the first enabled profile in the profile stack that controls that option. All other options will be
+saved to the "user settings" as before.  This is described in more detail in the following section.
 
 Saving Profile Option Settings
 ------------------------------
 
-To save a value to a profile option setting, simply select the target profile in the :menuselection:`"Options..."` window, make
-the desired changes, and then click the :guilabel:`Make It So!` button.
+To save a value to a profile option setting, simply ensure that the the target profile is the first enabled profile in the
+profile stack, make the desired changes (the options should be highlighted), and then click the :guilabel:`Make It So!` button.
 
-.. image:: images/options-profile-selector.png
+.. image:: images/options-profile-save1.png
    :width: 100 %
 
-The changes will only be applied to the selected profile, and only for option settings managed by the profile — all other changes will
-be ignored.  When the Options dialog is opened, the output target is automatically set to the first enabled profile in the profile
-stack.  If there are no enabled profiles, then the target is set to "User base settings" which is the user's normal settings, and
-includes all options.  If no option profiles have been defined, this "Save settings to:" section will not be displayed in the
-:menuselection:`"Options..."` window.
-
-Whenever a profile is selected in the "Save settings to:" section, the setting values displayed are updated to show the values that
-are associated with the profile, and the settings are highlighted in the dialog. Any option settings not managed by the profile will
-display the values for the user's base settings.  In addition, the "Save settings to:" selector will be highlighted to indicate that
-there is a profile selected as the output target.
-
-.. image:: images/option-setting-values-highlighted.png
+.. image:: images/options-profile-save2.png
    :width: 100 %
 
-From the :menuselection:`"Options..."` window you will also be able to see which profiles, if any, manage any of the options on
-the current page.  This is done by clicking the :guilabel:`Attached Profiles` button beside the output target profile selector.
+Remember, all highlighted options will be saved to the first enabled profile in the profile stack that controls that option.
+All other options will be saved to the "user settings" profile which is the user's normal settings, and includes all options.
+You can confirm which profile a highlighted option will update by hovering your cursor over the option.
+
+.. image:: images/options-profile-save3.png
+   :width: 100 %
+
+From the pages which contain options that can be included on a profile, you will also be able to see which profiles, if any,
+manage any of the options on the page.  This is done by clicking the :guilabel:`Attached Profiles` button.
 
 .. image:: images/options-attached-profiles.png
    :width: 100 %
 
+This lists the attached profiles in the order in which they appear in the profile stack, and whether or not the profile is
+enabled.  If the page does not contain any options that could be managed by a profile, the :guilabel:`Attached Profiles` button
+will be disabled.
+
+.. warning::
+
+   It is important to understand that when you click the :guilabel:`Make It So!` button **all** of the option settings on **all**
+   pages will be saved. If an option is managed by one or more profiles that are currently enabled, the option will be highlighted
+   and it will be saved to the **first** enabled profile in the profile stack that manages the option. If there are no enabled
+   profiles that manage the option, the option will not be highlighted and it will be saved to the "user settings" profile which
+   is the user's normal settings, contains all options, is at the bottom of the profile stack, and is always enabled.  The "user
+   settings" profile cannot be modified is not shown in the profile management page.
