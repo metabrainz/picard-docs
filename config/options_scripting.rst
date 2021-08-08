@@ -16,6 +16,9 @@ the content of the selected script shown in the right-hand column.  This section
 add, remove and reorder the scripts, enable or disable individual scripts, as well as edit the
 currently selected script.
 
+As of Picard v2.7 you can also import a new script from a file, or export an existing script to a file.
+Files can be stored as either a plain-text script or a Picard Tagging Script Package stored in YAML format.
+
 The script editor automatically highlights the elements of the script, including
 :doc:`function names <../functions/list_by_type>` and :doc:`tag and variable names <../variables/variables>`.
 Hovering your mouse pointer over one of the highlighted entries will display help information about the
