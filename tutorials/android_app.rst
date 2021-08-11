@@ -142,6 +142,29 @@ Instead of searching by barcode you can also do a text search on your phone:
       :alt: Release loaded into Picard
 
 
+Loading releases from the Tagger
+--------------------------------
+
+Instead of finding a release by barcode or a search to send to Picard, you can also send a release from a tagged audio file currently stored on your device:
+
+1. On the main screen of the Android app tap on "Tagger".
+
+   .. image:: images/android-main.png
+      :width: 50 %
+      :alt: MusicBrainz for Android main screen
+
+2. On the tagger, select your release and tap the MusicBrainz icon near the bottom of the screen.
+
+   .. image:: images/android-tagger.png
+      :width: 50 %
+      :alt: MusicBrainz for Android tagger
+
+3. If everything was configured correctly, the release
+   will be loaded into Picard running on your computer.
+
+   .. image:: images/picard-result.png
+      :alt: Release loaded into Picard
+
 .. raw:: latex
 
    \clearpage
