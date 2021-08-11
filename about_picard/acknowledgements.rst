@@ -57,6 +57,7 @@ Contributors include (in alphabetic surname order):
 - Theodore Fabian Rudy
 - Sophist
 - Bob Swift
+- Akshat Tiwari
 - Philipp Wolfer
 - Shadab Zafar
 
