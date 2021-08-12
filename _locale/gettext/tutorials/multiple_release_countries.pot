@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 09:27-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../tutorials/multiple_release_countries.rst:4
+msgid "Handling of :index:`multiple release countries <multiple release countries, release countries; multiple>`"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:8
+msgid "Some releases, especially digital releases, can have a very long list of release countries, sometimes listing all of the world's countries except for a few where the release is not officially available. Picard offers some tools to handle this."
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:11
+msgid "Let’s take the release **Bleach**, by Nirvana (MusicBrainz release `adab3feb-1822-4d27-a997-db7d6c9688c0 <https://musicbrainz.org/release/adab3feb-1822-4d27-a997-db7d6c9688c0>`_) as an example."
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:14
+msgid "By default Picard will write a single ``releasecountry`` tag to the files. Prior to v2.3.1, Picard had been populating the tag with what the MusicBrainz server returned as the country for the release. If there were multiple release events, this country field was just filled with the first one in alphabetical order (Afghanistan in our example). Picard v2.3.1 introduced some options to better handle this."
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:20
+msgid "Using preferred release countries"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:22
+msgid "If you configure preferred release countries in :menuselection:`\"Options --> Metadata --> Preferred Releases\"`. Picard will use the first country from the preferred release countries that is also in the list of release events. So if you have configured preferred release countries to be Europe, Canada, Germany and UK, for our example that would mean the ``releasecountry`` tag gets set to Canada."
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:28
+msgid "Using scripting to set a different country"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:30
+msgid "Picard v2.3.1 also added a new variable ``%_releasecountries%``, which provides the complete list of release countries for a release as a multi-value variable. You can use this to set different values for the ``releasecountry`` tag."
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:33
+msgid "For example, the following script would set it to \"\\[International\\]\" if there are 10 or more release countries:"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:39
+msgid "Of course you can adjust the count and the replacement text to your liking. You can also choose to save the entire list instead of just a single country to this tag using the script:"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:46
+msgid "Perhaps you prefer to limit this list to the first few entries. The following example just uses the first 6 countries:"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:54
+msgid "What’s missing?"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:56
+msgid "Countries are currently written to the tags as their ISO 3166-1 country code, with some special values added for historical countries and things like \\[Europe\\] or \\[Worldwide\\]. These codes are not always easily recognizable or obvious, such as \"DZ\" for Algeria or \"DE\" for Germany. You can of course use scripting to make these more readable.  For example, if you want to see \"United Kingdom\" instead of \"GB\" in this tag use:"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:64
+msgid "This might work if you deal only with a couple of countries in your collection, or you just want to handle some special cases like using \"Europe\" instead of \"XE\" such as in the following script:"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:74
+msgid "A change has been submitted to Picard to add a ``$countryname()`` function to easily convert the code into a readable name; however this is not scheduled for release until Picard v2.7."
+msgstr ""

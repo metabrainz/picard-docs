@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 09:27-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../tutorials/write_plugin.rst:4
+msgid "Writing a :index:`Plugin <plugin; writing>`"
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:6
+msgid "You have a great idea for extending Picard with a plugin but don't know where to start.  Unfortunately, this is a common problem and prevents far too many of those great ideas from ever seeing the light of day.  Perhaps this tutorial will help get you started in turning your great idea a reality."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:10
+msgid "Picard plugins are written in Python, so that's the programming language you'll be using.  Please check the `INSTALL.md <https://github.com/metabrainz/picard/blob/master/INSTALL.md>`_ file in the Picard repository on GitHub to see the minimum version requirements. This is Python 3.6 as of the time this tutorial was written.  Also refer to the :doc:`Plugins API <../appendices/plugins_api>` for additional information, including the parameters passed to each of the function types."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:16
+msgid "For the purpose of this tutorial, we're going to develop a simple plugin to save the argument information provided by Picard to ``track`` and ``release`` processing plugins.  This will demonstrate how the information is accessed, and will provide a utility that you might find useful when developing your own plugins."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:20
+msgid "The first thing that we'll need to include is the header information that describes the plugin."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:32
+msgid "Next we list the modules that will be referenced in our code.  In this case, we will be using the ``os`` module to build the output file path, and the ``json`` module to format the argument dictionary text for readability. We will be saving our output file to the base directory used for file naming so we import the ``config`` module from Picard, as well as the ``log`` module so that we can write debug or error messages to Picard's log.  Finally, we import the appropriate processing hooks and plugin priority settings."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:50
+msgid "To ensure maximum compatibility, you should only use standard Python modules, or third-party modules that are already included in Picard.  If you use other modules, then the plugin will not function properly if used on a system that doesn't have the proper version of the module installed or if someone is using an executable version of Picard."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:54
+msgid "Now we can start adding the code that we want Picard to execute. First we'll identify the output file to store the parameter information provided by Picard. This is a file named ``data_dump.txt`` to be stored in the file naming output directory. We find the name of the configuration setting we need, ``move_files_to``, by examining the Picard source code for the corresponding option setting screen. In this case it is a TextOption in the ``RenamingOptionsPage`` class found in the file `picard/ui/options/renaming.py <https://github.com/metabrainz/picard/blob/master/picard/ui/options/renaming.py>`_."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:64
+msgid "The next part is a function to write a Python object to our output file.  To allow the same function to be used for different situations, we include parameters to identify the type of line (input type), the object to write, and options for writing to JSON format and appending or overwriting an existing output file. In our case, we want to overwrite the file each time a new release is processed, but always append the track information to the file."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:69
+msgid "We also include error checking to write an entry to the Picard log in the event of an exception."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:85
+msgid "Now we include the functions to be called when releases and tracks are retrieved by Picard. The release function hook provides three arguments, and the track function hook provides four arguments. The argument types are described in the :doc:`Plugins API <../appendices/plugins_api>` section. The first argument, ``album``, is an object that holds information about the selected album. See the ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file in Picard's source code for more information."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:91
+msgid "The second argument, ``metadata``, is an object that holds the tags and variables that Picard has assigned for the current release and track. This is where you can add or edit the tags and variables that Picard makes available to the user for scripts. See the ``Metadata`` class in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py>`_ file in Picard's source code for more information."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:96
+msgid "The ``track`` and ``release`` arguments are Python dictionaries containing the information provided in response to Picard's calls to the MusicBrainz API. The information may differ, depending on the user's :doc:`../config/options_metadata` settings for things like \"*Use release relationships*\" or \"*Use track relationships*\"."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:111
+msgid "Finally, we need to register our functions so that they are processed with the appropriate events.  In our case, we set the priority to ``HIGH`` so that we output the parameter information as it is received by Picard before any other plugins have an opportunity to modify it."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:122
+msgid "The complete plugin code file looks something like:"
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:170
+msgid "That's it for our plugin code. Now we need to package it so that we can install it into Picard.  If we're going to just use it locally for ourself, the easiest way is to just name the file something like :file:`my_plugin.py`.  If there are multiple files, such as plugins that include additional settings screens, then the files should be saved in a directory such as :file:`my_plugin` with the main file named :file:`__init__.py`.  The directory is then archived into a :file:`my_plugin.zip` file, with the file name the same as the included directory name. The the contents of the archive would show as something like::"
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:180
+msgid "If you've made it this far, congratulations! You've just created your first Picard plugin. Now you have a starting point for turning that great idea into reality."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:185
+msgid "Relevant portions of Picard's source code including:"
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:187
+msgid "Option settings modules in `picard/ui/options/ <https://github.com/metabrainz/picard/tree/master/picard/ui/options>`_ for names used to access the settings."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:188
+msgid "``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:189
+msgid "``Metadata`` class and metadata processing plugin registration functions in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py>`_ file."
+msgstr ""
+
+#: ../../tutorials/write_plugin.rst:190
+msgid "``PluginPriority`` class in the `picard/plugin.py <https://github.com/metabrainz/picard/blob/master/picard/plugin.py>`_ file."
+msgstr ""
