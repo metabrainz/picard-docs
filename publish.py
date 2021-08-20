@@ -354,10 +354,10 @@ def main():
 
     # Get the current reference branch for the GitHub action.
     branch = get_reference_branch()
-    # branch = 'master'
+    # branch = 'release'
     # branch = '2.5'
 
-    if branch == 'master':
+    if branch == 'release':
         publish_targets.append('.')
         P_DEFAULT_LANGUAGE = DEFAULT_LANGUAGE
         for lang in LANGUAGE_LIST:
