@@ -3,7 +3,7 @@ name: Check, Full Build and Publish
 on:
   push:
     branches:
-      - 'master'
+      - 'publish'
       - '0*'
       - '1*'
       - '2*'
@@ -52,9 +52,9 @@ jobs:
     - name: Build Tag Map Files
       run: |
         python ./setup.py build map
-    - name: Update Translation Files
-      run: |
-        python ./setup.py build pot
+    # - name: Update Translation Files
+    #   run: |
+    #     python ./setup.py build pot
     - name: Build HTML Files
       run: |
         python ./setup.py clean html

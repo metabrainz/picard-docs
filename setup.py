@@ -906,7 +906,7 @@ def do_build(target=None, language='', clean=False):
         language_option = ''
     else:
         language_option = '-D language=' + language
-        update_po(language)
+        # update_po(language)
 
     if clean:
         clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[target]['dir'])
@@ -1189,24 +1189,26 @@ def main():
 
             elif target == 'pot':
                 build_pot()
-                print('\nUpdating PO files for other languages.')
-                for lang in LANGUAGE_LIST:
-                    if lang != DEFAULT_LANGUAGE:
-                        print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-                        update_po(lang)
-                # checker = POCheck()
-                # checker.check(SPHINX_.LOCALE_DIR)
+                # Following disabled because po file handling is now done in Weblate.
+                # print('\nUpdating PO files for other languages.')
+                # for lang in LANGUAGE_LIST:
+                #     if lang != DEFAULT_LANGUAGE:
+                #         print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
+                #         update_po(lang)
+                # # checker = POCheck()
+                # # checker.check(SPHINX_.LOCALE_DIR)
 
             elif target == 'all':
                 save_version_info()
                 build_map()
                 build_pot()
                 clean_mo()
-                print('\nUpdating PO files for other languages.')
-                for lang in LANGUAGE_LIST:
-                    if lang != DEFAULT_LANGUAGE:
-                        print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-                        update_po(lang)
+                # Following disabled because po file handling is now done in Weblate.
+                # print('\nUpdating PO files for other languages.')
+                # for lang in LANGUAGE_LIST:
+                #     if lang != DEFAULT_LANGUAGE:
+                #         print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
+                #         update_po(lang)
                 for build_target in SPHINX_.BUILD_TARGETS:
                     for lang in process_languages:
                         do_build(target=build_target, language=lang, clean=True)

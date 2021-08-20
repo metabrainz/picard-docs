@@ -58,9 +58,9 @@ jobs:
         name: tag_map_files
         path: docs/MusicBrainz_Picard_Tag_Map.*
         retention-days: 5
-    - name: Update Translation Files
-      run: |
-        python ./setup.py build pot
+    # - name: Update Translation Files
+    #   run: |
+    #     python ./setup.py build pot
     - name: Build HTML Files
       run: |
         python ./setup.py clean html
