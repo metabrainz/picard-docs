@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 09:27-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../config/options_location.rst:4
+msgid ":index:`Location <configuration; cover art location, cover art; location to save>`"
+msgstr ""
+
+#: ../../config/options_location.rst:11
+msgid "**Embed cover images into tags**"
+msgstr ""
+
+#: ../../config/options_location.rst:13
+msgid "Enables images to be embedded directly into your music files. While this will use more storage space than storing it as a separate image file in the same directory, some music players will only display embedded images and don't find the separate files."
+msgstr ""
+
+#: ../../config/options_location.rst:17
+msgid "**Embed only a single front image**"
+msgstr ""
+
+#: ../../config/options_location.rst:19
+msgid "Embeds only a single front image into your music files.  No other images, regardless of their type, will be embedded. Many music players will only display a single embedded image, so embedding additional images may not add any functionality."
+msgstr ""
+
+#: ../../config/options_location.rst:25
+msgid "**Save cover images as separate files**"
+msgstr ""
+
+#: ../../config/options_location.rst:27
+msgid "In the file name mask you can use any variable or function from :doc:`Picard Tags <../variables/variables>` and :doc:`Picard Scripting Functions <../functions/list_by_type>`. The mask should not contain a file extension; this is added automatically based on the actual image type. The default value is \"cover\". If you change this to \"folder\", Windows will display the image as a preview of the containing directory."
+msgstr ""
+
+#: ../../config/options_location.rst:32
+msgid "In addition to scripting variables already available for a track, you can use the following cover art specific variables:"
+msgstr ""
+
+#: ../../config/options_location.rst:35
+msgid "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For front images this will always be \"front\"."
+msgstr ""
+
+#: ../../config/options_location.rst:36
+msgid "``coverart_types``: Full list of all types assigned to this image."
+msgstr ""
+
+#: ../../config/options_location.rst:37
+msgid "``coverart_comment``: The cover art comment."
+msgstr ""
+
+#: ../../config/options_location.rst:39
+msgid "For example, specifying a file naming mask such as:"
+msgstr ""
+
+#: ../../config/options_location.rst:45
+msgid "will preface the file name with the album artist, original release year and album title."
+msgstr ""
+
+#: ../../config/options_location.rst:47
+msgid "You can also have Picard save the images to a subdirectory by including this in the file naming mask. For example:"
+msgstr ""
+
+#: ../../config/options_location.rst:53
+msgid "which will place the images in a subdirectory called \"Artwork\"."
+msgstr ""
+
+#: ../../config/options_location.rst:55
+msgid "**Overwrite the file if it already exists**"
+msgstr ""
+
+#: ../../config/options_location.rst:57
+msgid "Check this to replace existing files. This is especially recommended if trying to write \"folder\" previews for Windows."
+msgstr ""
+
+#: ../../config/options_location.rst:60
+msgid "**Save only a single front image as separate file**"
+msgstr ""
+
+#: ../../config/options_location.rst:62
+msgid "This tells Picard to only save the first \"front\" image to a separate file with the release.  No other \"front\" images or images of any other type will be saved.  If left unchecked, all \"front\" images will be saved as separate files, along with any other specified image types to be downloaded."
+msgstr ""
+
+#: ../../config/options_location.rst:66
+msgid "**Always use the primary image type as the file name for non-front images**"
+msgstr ""
+
+#: ../../config/options_location.rst:68
+msgid "This setting changes how Picard names image files **other than front images**."
+msgstr ""
+
+#: ../../config/options_location.rst:70
+msgid "When checked, Picard will use the type of the image (e.g.: back, booklet, etc.) as the filename when saving, as long as the type is not front. If the image has been assigned multiple types, then the first type will be used. For example, if the image is of types \"back\" and \"raw\", then \"back\" will be used for the filename. If unchecked or if the image is of type \"front\", Picard will use the file name specified in the \"Use the following file name for images\" setting."
+msgstr ""

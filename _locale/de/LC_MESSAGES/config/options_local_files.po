@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-12 09:27-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../config/options_local_files.rst:6
+msgid ":index:`Local Files <configuration; local files>`"
+msgstr ""
+
+#: ../../config/options_local_files.rst:11
+msgid "In this section you can configure the file names to be used by the Local Files cover art provider. If you are trying to collect more than one image, the naming is important."
+msgstr ""
+
+#: ../../config/options_local_files.rst:14
+msgid "The file names are defined using a regular expression. The default is ``^(?:cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` which will load files with the name \"cover\", \"folder\" or \"albumart\" and the file extension \"jpg\", \"png\", \"gif\" or \"tiff\" (e.g.: \"folder.jpg\" or \"cover.png\")."
+msgstr ""
+
+#: ../../config/options_local_files.rst:18
+msgid "The first part of the regular expression is a non-capture group: ``(?:cover|folder|albumart)``.  Items listed in this group will not get captured and the default (Front) type will apply."
+msgstr ""
+
+#: ../../config/options_local_files.rst:21
+msgid "The second part of the regular expression is a group: ``(.*)``. This is the real capture, so if the file names match any of the cover art types, they will be tagged as such."
+msgstr ""
+
+#: ../../config/options_local_files.rst:26
+msgid "A common mistake is to add all the types into the first (non-capture) group. This means that all the regular file names would be thrown into the Front type and cause unexpected results."
+msgstr ""
