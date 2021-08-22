@@ -20,6 +20,11 @@ Other Picard Tasks
       This will calculate the acoustic fingerprints for the selected tracks and submit them to
       the AcoustID database.
 
+   **Submitting track acoustic features**
+
+      This will extract the acoustic features for the selected tracks and submit them to
+      the AcousticBrainz database.
+
    **Generating tags from file names**
 
       This will extract tags such as track number and title from the file name.
@@ -34,6 +39,7 @@ Other Picard Tasks
       Step-by-step detailed instructions:
       :doc:`attach_disc_id` /
       :doc:`submit_acoustid` /
+      :doc:`submit_acousticbrainz` /
       :doc:`tags_from_file_names` /
       :doc:`submit_cluster_as_release`
 
@@ -46,5 +52,6 @@ Other Picard Tasks
 
    attach_disc_id
    submit_acoustid
+   submit_acousticbrainz
    tags_from_file_names
    submit_cluster_as_release
