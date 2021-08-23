@@ -53,7 +53,35 @@ if conf.supported_languages:
 DEFAULT_LANGUAGE = conf.default_language if conf.default_language else 'en'
 LANGUAGES = list(LANGUAGE_LIST.keys())
 
-
+LANGUAGE_NAMES = {
+    'bg': 'Bulgarian',
+    'cs': 'Czech',
+    'da': 'Danish',
+    'de': 'German',
+    'el': 'Greek',
+    'en': 'English',
+    'es': 'Spanish',
+    'et': 'Estonian',
+    'fi': 'Finnish',
+    'fr': 'French',
+    'hr': 'Croatian',
+    'hu': 'Hungarian',
+    'it': 'Italian',
+    'ja': 'Japanese',
+    'lt': 'Lithuanian',
+    'lv': 'Latvian',
+    'nl': 'Dutch',
+    'no': 'Norwegian',
+    'pl': 'Polish',
+    'pt': 'Portuguese',
+    'ro': 'Romanian',
+    'ru': 'Russian',
+    'sk': 'Slovak',
+    'sl': 'Slovenian',
+    'sv': 'Swedish',
+    'tr': 'Turkish',
+    'zh': 'Chinese',
+}
 class SPHINX_():    # pylint: disable=too-few-public-methods
     """Sphinx constants used when building the documentation.
     """
@@ -1125,6 +1153,20 @@ def list_languages():
     print("or 'all' to process all supported languages.\n")
 
 
+def build_all_po_files():
+    """Helper function to build all language po files.
+    """
+    # Process all languages in the `_locale` directory
+    locale_dir = conf.locale_dirs[0]
+    for lang_dir in next(os.walk(locale_dir))[1]:
+        testdir = os.path.join(locale_dir, lang_dir, 'LC_MESSAGES')
+        if os.path.exists(testdir) and os.path.isdir(testdir):
+            short_lang = lang_dir[:2]
+            lang_title = LANGUAGE_NAMES[short_lang] if short_lang in LANGUAGE_NAMES else 'Unknown Language'
+            print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang_dir, lang_title))
+            update_po(lang_dir)
+
+
 def main():
     """Main part of script to execute.
     """
@@ -1183,32 +1225,22 @@ def main():
                 #         update_po(lang)
 
             elif target == 'po':
-                for lang in process_languages:
-                    if lang != DEFAULT_LANGUAGE:
-                        update_po(lang)
+                build_all_po_files()
 
             elif target == 'pot':
                 build_pot()
-                # Following disabled because po file handling is now done in Weblate.
-                # print('\nUpdating PO files for other languages.')
-                # for lang in LANGUAGE_LIST:
-                #     if lang != DEFAULT_LANGUAGE:
-                #         print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-                #         update_po(lang)
-                # # checker = POCheck()
-                # # checker.check(SPHINX_.LOCALE_DIR)
+                print('\nUpdating PO files for other languages.')
+                build_all_po_files()
+                # checker = POCheck()
+                # checker.check(SPHINX_.LOCALE_DIR)
 
             elif target == 'all':
                 save_version_info()
                 build_map()
                 build_pot()
                 clean_mo()
-                # Following disabled because po file handling is now done in Weblate.
-                # print('\nUpdating PO files for other languages.')
-                # for lang in LANGUAGE_LIST:
-                #     if lang != DEFAULT_LANGUAGE:
-                #         print("\n\nUpdating the '{0}' ({1}) files.\n".format(lang, LANGUAGE_LIST[lang]))
-                #         update_po(lang)
+                print('\nUpdating PO files for other languages.')
+                build_all_po_files()
                 for build_target in SPHINX_.BUILD_TARGETS:
                     for lang in process_languages:
                         do_build(target=build_target, language=lang, clean=True)

@@ -13,7 +13,7 @@
 
 **Port**
 
-   The port number for the server. Default value: 80 (for the main MusicBrainz server).
+   The port number for the server. Default value: 443 (for the main MusicBrainz server).
 
 **Username**
 

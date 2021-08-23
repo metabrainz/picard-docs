@@ -4,37 +4,7 @@
 =============================================
 
 We gratefully acknowledge the following for their contributions to help develop, maintain and
-improve the Picard User Guide:
-
-Editor and English Language Lead
---------------------------------
-
-* Bob Swift (rdswift)
-
-
-Translation Teams
------------------
-
-French (Lead: TBA)
-+++++++++++++++++++
-
-* TBA
-
-
-German (Lead: TBA)
-++++++++++++++++++++
-
-* TBA
-
-
-Spanish (Lead: TBA)
-+++++++++++++++++++++++
-
-* TBA
-
-
-Contributors
---------------------
+improve the Picard User Guide.
 
 This list includes contributors to the documentation, regardless of their role.  In addition to actual content contributors,
 this includes leads, translators, reviewers and proofreaders.  All contributions are valuable and appreciated.  As such, the
@@ -45,6 +15,7 @@ Contributors include (in alphabetic surname order):
 
 - Vedant Chakravadhanula
 - Pavan Chander
+- Gabriel Ferreira
 - Rahul Kumar Gupta
 - Wieland Hoffmann
 - jesus2099

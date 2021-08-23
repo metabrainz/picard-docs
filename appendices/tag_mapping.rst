@@ -1274,7 +1274,7 @@ Total Discs
 
    "Internal Name", "``totaldiscs``"
    "ID3v2", "``TPOS``"
-   "Vorbis", "``DISCTOTAL and TOTALDISCS``"
+   "Vorbis", "``DISCTOTAL`` and ``TOTALDISCS``"
    "APEv2", "``Disc``"
    "iTunes MP4", "``disk``"
    "ASF/Windows Media", "``WM/PartOfSet`` (Picard>=1.3.1)"

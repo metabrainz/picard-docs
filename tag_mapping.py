@@ -999,7 +999,7 @@ TAG_MAP = [
         "tag_name": "Total Discs",
         "picard_name": "``totaldiscs``",
         "id3v2": "``TPOS``",
-        "vorbis": "``DISCTOTAL and TOTALDISCS``",
+        "vorbis": "``DISCTOTAL`` and ``TOTALDISCS``",
         "apev2": "``Disc``",
         "itunes": "``disk``",
         "wmp": "``WM/PartOfSet`` (Picard>=1.3.1)",
