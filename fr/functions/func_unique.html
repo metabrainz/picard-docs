@@ -249,14 +249,14 @@
 <div class="line">Catégorie : multi-valeurs</div>
 <div class="line">Implémenté : Picard 2.6.1</div>
 </div>
-<p><strong>Description:</strong></p>
+<p><strong>La description:</strong></p>
 <p>Retourne une copie triée de la variable à valeurs multiples <code class="docutils literal notranslate"><span class="pre">nom</span></code> avec les éléments en double supprimés. Par défaut, la comparaison ne tient pas compte de la casse des éléments ; cependant, cela peut être modifié en donnant à <code class="docutils literal notranslate"><span class="pre">sensible_à_la_casse</span></code> une valeur non vide. Une valeur littérale représentant une multi-valeur peut être substituée à <code class="docutils literal notranslate"><span class="pre">nom</span></code>, en utilisant le <code class="docutils literal notranslate"><span class="pre">séparateur</span></code> (ou un point-virgule suivi d’un espace « ;  » s’il n’est pas passé) pour contraindre la valeur dans une variable multi-valeur appropriée.  Si <code class="docutils literal notranslate"><span class="pre">nom</span></code> est manquant, <code class="docutils literal notranslate"><span class="pre">$unique</span></code> retournera une chaîne vide.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Lors d’une comparaison insensible à la casse (par défaut), le dernier élément correspondant sera utilisé dans le résultat.  Par exemple, si la variable à valeurs multiples contient “abc”, “Abc”, “ABc” et “ABC” dans cet ordre, l’élément “ABC” sera inclus dans le résultat.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
+<p>Les instructions suivantes renverront les valeurs indiquées :</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$setmulti(</span>foo,a; A; B; b; cd; Cd; cD; CD; a; A; b<span class="k">)</span>
 <span class="k">$set(</span>bar,a; A; B; b; cd; Cd; cD; CD; a; A; b<span class="k">)</span>
 

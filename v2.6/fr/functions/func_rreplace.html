@@ -268,7 +268,7 @@
 <p>Lors de la saisie d’expressions régulières dans des scripts Picard, vous devez échapper une barre oblique inverse « \ », un signe dollar « $ », une virgule « , » et les parenthèses gauche et droite « ( » et « ) » pour forcer Picard à ne pas les interpréter dans le cadre de la commande de script. Cela se fait en insérant une barre oblique inverse avant le caractère à échapper. Par exemple, l’expression régulière <code class="docutils literal notranslate"><span class="pre">^\s*([0-9,\.]*)$</span></code> devrait être saisie sous la forme <code class="docutils literal notranslate"><span class="pre">^\\s*\([0-9\,\\.]*\)\$</span></code>.</p>
 </div>
 <p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
+<p>Les instructions suivantes renverront les valeurs indiquées :</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$rreplace(</span>test <span class="se">\(</span>disc 1<span class="se">\)</span>,<span class="se">\\</span>s<span class="se">\\\(</span>disc <span class="se">\\</span>d+<span class="se">\\\)</span>,<span class="k">)</span>  ==&gt;  &quot;test&quot;
 <span class="k">$rreplace(</span>test,[t,<span class="k">)</span>                               ==&gt;  &quot;test&quot;
 </pre></div>
