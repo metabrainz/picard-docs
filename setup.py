@@ -25,7 +25,7 @@ import conf
 import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.15'
+SCRIPT_VERS = '0.16'
 SCRIPT_COPYRIGHT = '2021'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -183,7 +183,7 @@ RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "([^"]+)".*$')
 RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
 RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
 
-RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
+RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(_[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 
 ##################################################
 #   Text to display when the script is started   #
@@ -513,6 +513,32 @@ class POCheck():
                or re.search(r"[^\:]+" + item + r":`", content):
                 self.warning_count += 1
                 self.bad_files.append('Role "{0}" [L{1}]: {2}'.format(item, line_number, filename))
+        backticks = content.count('`') % 2
+        if backticks:
+            self.warning_count += 1
+            self.bad_files.append('Backtick Mismatch [L{0}]: {1}'.format(line_number, filename))
+            return
+        backticks_open = False
+        lastchar = ''
+        nextchar = ''
+        ccount = 0
+        for char in content:
+            ccount += 1
+            if char == '`':
+                backticks_open = not backticks_open
+                nextchar = content[ccount] if len(content) > ccount else ''
+                if backticks_open:
+                    if lastchar and nextchar and nextchar != '`' and re.search(r"[a-zA-Z0-9]+", lastchar):
+                    # if lastchar and lastchar not in  ':"\' ' and nextchar and nextchar != '`':
+                        self.warning_count += 1
+                        self.bad_files.append('Backtick Open "{0}" [L{1},C{2}]: {3}'.format(lastchar + char, line_number, ccount, filename))
+                        break
+                else:
+                    if lastchar != '`' and nextchar and re.search(r"[a-zA-Z0-9]+", nextchar):
+                        self.warning_count += 1
+                        self.bad_files.append('Backtick Close "{0}" [L{1},C{2}]: {3}'.format(char + nextchar, line_number, ccount, filename))
+                        break
+            lastchar = char
 
     def check(self, locale_dir, filetype='po'):
         """Check all translation *.po files in the specified directory and subdirectories.
@@ -575,8 +601,9 @@ def parse_command_line():
         action='store',
         nargs='+',
         type=str,
-        choices=['rst', 'po', 'flake8', 'pylint', 'isort', 'python'],
+        choices=['rst', 'sphinx', 'po', 'flake8', 'pylint', 'isort', 'python'],
         help="rst = lint check the rst files, "
+             "sphinx = test build of the *.rst files "
              "po = rudimentary test of RST in *.po files "
              "flake8 = test python files with flake8, "
              "pylint = test python files with pylint, "
@@ -636,6 +663,33 @@ def parse_command_line():
 
     args = arg_parser.parse_args()
     return args
+
+
+def run_sphinx_test(language=''):
+    """Perform a trial build using Sphinx with all warnings enabled.
+    """
+    print('\nSphinx test build.\n')
+    if not (language and language in LANGUAGES):
+        language = DEFAULT_LANGUAGE
+    if language == DEFAULT_LANGUAGE:
+        language_option = ''
+    else:
+        language_option = '-D language=' + language
+        # update_po(language)
+    junk_dir = '_junk'
+    command = '{0} -b {1} {2} {3} {4} {5}'.format(
+        SPHINX_.BUILD,
+        'dummy',
+        '-W --keep-going',
+        SPHINX_.SOURCE_DIR,
+        junk_dir,
+        language_option,
+    ).strip().replace('  ', ' ')
+    exit_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
+    remove_dir(junk_dir)
+    print()
+    if exit_code:
+        exit_with_code(exit_code)
 
 
 def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
@@ -753,7 +807,7 @@ def create_directory(dir_path, dir_name):
             exit_with_code(1)
 
 
-def clean_directory(dir_path, dir_name):
+def clean_directory(dir_path, dir_name, create_dir=True):
     """Removes all files and subdirectories for the specified directory.  If the specified
     directory does not exist, it will be created.  Includes multiple checks for success to
     accommodate race condition in Windows.
@@ -795,7 +849,7 @@ def clean_directory(dir_path, dir_name):
         else:
             print("\nThe {0} directory is not a directory: {1}\n".format(dir_name, dir_path))
             exit_with_code(1)
-    if not os.path.exists(dir_path):
+    if create_dir and not os.path.exists(dir_path):
         create_directory(dir_path=dir_path, dir_name=dir_name)
 
 
@@ -808,6 +862,7 @@ def remove_dir(dir_path):
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
+            clean_directory(dir_path, 'temporary build', create_dir=False)
             err = None
             tries = 5
             while tries > 0:
@@ -1273,10 +1328,20 @@ def main():
             if target == 'rst':
                 run_lint(SPHINX_.SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
 
+            elif target == 'sphinx':
+                for lang in process_languages:
+                    run_sphinx_test(language=lang)
+
             elif target == 'po':
                 # check_rst_in_po()
                 checker = POCheck()
-                checker.check(SPHINX_.LOCALE_DIR)
+                if process_languages == [DEFAULT_LANGUAGE]:
+                    checker.check(SPHINX_.LOCALE_DIR)
+                else:
+                    for lang in process_languages:
+                        test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
+                        if os.path.exists(test_target) and os.path.isdir(test_target):
+                            checker.check(test_target)
 
             elif target == 'python':
                 run_isort()
