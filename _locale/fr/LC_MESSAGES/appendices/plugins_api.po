@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-02 14:13-0600\n"
-"PO-Revision-Date: 2021-05-02 15:14-0600\n"
+"PO-Revision-Date: 2021-08-24 12:50+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/appendicesplugins_api/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.3\n"
 
 #: ../../appendices/plugins_api.rst:4
 msgid ":index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API <pair: plugins; api>`"
@@ -34,7 +35,7 @@ msgstr "Chaque plugin doit fournir des métadonnées sous forme de variables. Ce
 
 #: ../../appendices/plugins_api.rst:21
 msgid "Variables explanation:"
-msgstr "Explication des variables:"
+msgstr "Explication des variables :"
 
 #: ../../appendices/plugins_api.rst:23
 msgid "**PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function."
@@ -42,7 +43,11 @@ msgstr "**PLUGIN_DESCRIPTION** doit être aussi simple que possible, tout en dé
 
 #: ../../appendices/plugins_api.rst:25
 msgid "**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_."
-msgstr "**PLUGIN_VERSION** doit être rempli avec la version de le Plug-in. Les versions de plug-in doivent être au format ``x.y.z`` (par exemple: \"1.0\" ou \"2.12.4\"). Il est recommandé d'utiliser `Semantic Versioning <https://semver.org/>`_."
+msgstr ""
+"**PLUGIN_VERSION** doit être rempli avec la version de le Plug-in. Les "
+"versions de plug-in doivent être au format ``x.y.z`` (par exemple : \"1.0\" "
+"ou \"2.12.4\"). Il est recommandé d'utiliser `Semantic Versioning <https "
+"://semver.org/>`_."
 
 #: ../../appendices/plugins_api.rst:28
 msgid "**PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin to run with. New Picard versions will usually support older plugin API versions, but on breaking changes support for older plugin versions can be dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
@@ -62,31 +67,38 @@ msgstr ":index:`Processeurs de métadonnées <plugins; processeurs de métadonn�
 
 #: ../../appendices/plugins_api.rst:42
 msgid "MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to the processor functions in the following examples are as follows:"
-msgstr "Les métadonnées MusicBrainz peuvent être post-traitées à deux niveaux, album et piste. Les types d'arguments passés aux fonctions de processeur dans les exemples suivants sont les suivants:"
+msgstr ""
+"Les métadonnées MusicBrainz peuvent être post-traitées à deux niveaux, album "
+"et piste. Les types d'arguments passés aux fonctions de processeur dans les "
+"exemples suivants sont les suivants :"
 
 #: ../../appendices/plugins_api.rst:45
 msgid "**album**: ``picard.album.Album``"
-msgstr "**album**: ``picard.album.Album``"
+msgstr "**album** : ``picard.album.Album``"
 
 #: ../../appendices/plugins_api.rst:46
 msgid "**metadata**: ``picard.metadata.Metadata``"
-msgstr "**metadata**: ``picard.metadata.Metadata``"
+msgstr "**metadata** : ``picard.metadata.Metadata``"
 
 #: ../../appendices/plugins_api.rst:47
 msgid "**release**: ``dict`` with release data from MusicBrainz JSON web service"
-msgstr "**release**: ``dict`` avec les données de version du service Web MusicBrainz JSON"
+msgstr ""
+"**release** : ``dict`` avec les données de version du service Web "
+"MusicBrainz JSON"
 
 #: ../../appendices/plugins_api.rst:48
 msgid "**track**: ``dict`` with track data from MusicBrainz JSON web service"
-msgstr "**track**: ``dict`` avec les données de piste du service Web MusicBrainz JSON"
+msgstr ""
+"**track** : ``dict`` avec les données de piste du service Web MusicBrainz "
+"JSON"
 
 #: ../../appendices/plugins_api.rst:52
 msgid "Album metadata example:"
-msgstr "Exemple de métadonnées d'album:"
+msgstr "Exemple de métadonnées d'album :"
 
 #: ../../appendices/plugins_api.rst:73
 msgid "Track metadata example:"
-msgstr "Exemple de Suivre les métadonnées:"
+msgstr "Exemple de Suivre les métadonnées :"
 
 #: ../../appendices/plugins_api.rst:91
 msgid ":index:`Event Hooks <pair: plugins; event hooks>`"
@@ -94,7 +106,9 @@ msgstr ":index:`Crochets d'événement <pair: plugins; hooks d'événement>`"
 
 #: ../../appendices/plugins_api.rst:93
 msgid "Plugins can register themselves to listen for different events. Currently the following event hooks are available:"
-msgstr "Les plugins peuvent s'enregistrer pour écouter différents événements. Actuellement, les hooks d'événement suivants sont disponibles:"
+msgstr ""
+"Les plugins peuvent s'enregistrer pour écouter différents événements. "
+"Actuellement, les hooks d'événement suivants sont disponibles :"
 
 #: ../../appendices/plugins_api.rst:96
 msgid "file_post_load_processor(file)"
@@ -102,7 +116,10 @@ msgstr "file_post_load_processor(file)"
 
 #: ../../appendices/plugins_api.rst:98
 msgid "This hook is called after a file has been loaded into Picard. This could for example be used to load additional data for a file. Usage:"
-msgstr "Ce hook est appelé après le chargement d'un fichier dans Picard. Cela pourrait par exemple être utilisé pour charger des données supplémentaires pour un fichier. Usage:"
+msgstr ""
+"Ce hook est appelé après le chargement d'un fichier dans Picard. Cela "
+"pourrait par exemple être utilisé pour charger des données supplémentaires "
+"pour un fichier. Usage :"
 
 #: ../../appendices/plugins_api.rst:112
 msgid "file_post_save_processor(file)"
@@ -110,7 +127,11 @@ msgstr "file_post_save_processor(file)"
 
 #: ../../appendices/plugins_api.rst:114
 msgid "This hook is called after a file has been saved. This can for example be used to run additional post-processing on the file or write extra data. Note that the file's metadata is already the newly saved metadata. Usage:"
-msgstr "Ce hook est appelé après l'enregistrement d'un fichier. Cela peut par exemple être utilisé pour exécuter un post-traitement supplémentaire sur le fichier ou écrire des données supplémentaires. Notez que les métadonnées du fichier sont déjà les métadonnées nouvellement enregistrées. Usage:"
+msgstr ""
+"Ce hook est appelé après l'enregistrement d'un fichier. Cela peut par "
+"exemple être utilisé pour exécuter un post-traitement supplémentaire sur le "
+"fichier ou écrire des données supplémentaires. Notez que les métadonnées du "
+"fichier sont déjà les métadonnées nouvellement enregistrées. Usage :"
 
 #: ../../appendices/plugins_api.rst:128
 msgid "file_post_addition_to_track_processor(track, file)"
@@ -146,7 +167,12 @@ msgstr ":index:`Formats de fichiers <pair: plugins; format de fichier>`"
 
 #: ../../appendices/plugins_api.rst:180
 msgid "Plugins can extend Picard with support for additional file formats. See the existing `file format implementations <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for details on how to implement the ``_load`` and ``_save`` methods. Example:"
-msgstr "Les plugins peuvent étendre Picard avec la prise en charge de formats de fichiers supplémentaires. Voir les `implémentations de format de fichier existantes <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ pour plus de détails sur la façon d'implémenter les méthodes \"_load\" et \"_save\". Exemple:"
+msgstr ""
+"Les plugins peuvent étendre Picard avec la prise en charge de formats de "
+"fichiers supplémentaires. Voir les `implémentations de format de fichier "
+"existantes <https ://github.com/metabrainz/picard/tree/master/picard/"
+"formats>`_ pour plus de détails sur la façon d'implémenter les méthodes "
+"``_load`` et ``_save``. Exemple :"
 
 #: ../../appendices/plugins_api.rst:218
 msgid ":index:`Tagger Script Functions <pair: scripting functions; plugins>`"
@@ -154,19 +180,29 @@ msgstr ":index:`Fonctions de script de tagger <pair: fonctions de script; plugin
 
 #: ../../appendices/plugins_api.rst:220
 msgid "To define new tagger script functions use ``register_script_function(function, name=None)`` from the ``picard.script`` module. ``parser`` is an instance of ``picard.script.ScriptParser``, and the rest of the arguments passed to it are the arguments from the function call in the tagger script. Example:"
-msgstr "Pour définir de nouvelles fonctions de script de tagger, utilisez ``register_script_function (function, name = None)`` du module ``picard.script``. ``parser`` est une instance de ``picard.script.ScriptParser``, et le reste des arguments qui lui sont passés sont les arguments de l'appel de fonction dans le script du tagger. Exemple:"
+msgstr ""
+"Pour définir de nouvelles fonctions de script de tagger, utilisez ``"
+"register_script_function (function, name = None)`` du module ``picard."
+"script``. ``parser`` est une instance de ``picard.script.ScriptParser``, et "
+"le reste des arguments qui lui sont passés sont les arguments de l'appel de "
+"fonction dans le script du tagger. Exemple :"
 
 #: ../../appendices/plugins_api.rst:242
 msgid "``register_script_function`` supports two optional arguments:"
-msgstr "``register_script_function`` prend en charge deux arguments optionnels:"
+msgstr ""
+"``register_script_function`` prend en charge deux arguments optionnels :"
 
 #: ../../appendices/plugins_api.rst:244
 msgid "**eval_args**: If this is **False**, the arguments will not be evaluated before being passed to **function**."
-msgstr "**eval_args**: Si c'est **False**, les arguments ne seront pas évalués avant d'être passés à **function**."
+msgstr ""
+"**eval_args** : Si c'est **False**, les arguments ne seront pas évalués "
+"avant d'être passés à **function**."
 
 #: ../../appendices/plugins_api.rst:245
 msgid "**check_argcount**: If this is **False** the number of arguments passed to the function will not be verified."
-msgstr "**check_argcount**: Si c'est **False**, le nombre d'arguments passés à la fonction ne sera pas vérifié."
+msgstr ""
+"**check_argcount** : Si c'est **False**, le nombre d'arguments passés à la "
+"fonction ne sera pas vérifié."
 
 #: ../../appendices/plugins_api.rst:247
 msgid "The default value for both arguments is **True**."
@@ -178,7 +214,10 @@ msgstr ":index:`Actions du menu contextuel <pair: plugins; actions du menu conte
 
 #: ../../appendices/plugins_api.rst:253
 msgid "Right-click context menu actions can be added to albums, tracks and files in \"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of Clusters). Example:"
-msgstr "Les actions du menu contextuel du clic droit peuvent être ajoutées aux albums, pistes et fichiers dans \"Fichiers sans correspondance\", \"Clusters\" et \"ClusterList\" (dossier parent des clusters). Exemple:"
+msgstr ""
+"Les actions du menu contextuel du clic droit peuvent être ajoutées aux "
+"albums, pistes et fichiers dans \"Fichiers sans correspondance\", \"Clusters"
+"\" et \"ClusterList\" (dossier parent des clusters). Exemple :"
 
 #: ../../appendices/plugins_api.rst:282
 msgid "Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", \"*cluster*\" or \"*clusterlist*\"."
