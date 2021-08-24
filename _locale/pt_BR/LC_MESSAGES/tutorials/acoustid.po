@@ -1,20 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Gabriel Ferreira <gabrielcarvfer@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-12 09:27-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-24 12:51+0000\n"
+"Last-Translator: Gabriel Ferreira <gabrielcarvfer@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
+"projects/picard-docs/tutorialsacoustid/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: ../../tutorials/acoustid.rst:6
 msgid "Understanding :index:`Acoustic Fingerprinting <pair: acoustic; fingerprint>` and :index:`AcoustIDs <acoustid; usage>`"
@@ -55,6 +57,18 @@ msgstr ""
 #: ../../tutorials/acoustid.rst:34
 msgid "You don't need the AcoustID fingerprinting software to manually generate new AcoustIDs. The difference is, that the fingerprinting software is meant to be run on already tagged files, so if it cannot find an AcoustID it will immediately do the submission. For Picard the AcoustID is primarily an identification tool, and because the files are considered untagged at this *identification* stage, you can only do the submission once the files have been properly matched to a MusicBrainz recording. You will also find that after submission Picard will not automatically fetch the newly generated AcoustIDs.  This is because the generation can take some time, and the response received from the AcoustID server does not contain newly generated AcoustIDs. However, if you do another scan on the files after submission, the AcoustID should be available."
 msgstr ""
+"Você não precisa gerar digitais AcoustID manualmente. O gerador de "
+"impressões digitais utiliza arquivos de áudio já etiquetados, e caso não "
+"encontre um AcoustID correspondente, irá submetê-lo para o serviço. No "
+"Picard, o AcoustID é usado primariamente como um identificador de arquivos "
+"não etiquetados, portanto novas digitais só podem ser submetidas quando os "
+"arquivos forem devidamente etiquetados com informações de uma gravação "
+"MusicBrainz. Você irá notar que após a submissão das digitais, o Picard não "
+"buscará as digitais AcoustID extraídas. Isso se deve à duração da extração e "
+"ao fato que o servidor AcoustID não conterá informações sobre uma digital "
+"recente. Após aguardar algum tempo poderá achar o AcoustID e recuperar as "
+"informações das gravações através do escaneamento dos arquivos "
+"correspondentes."
 
 #: ../../tutorials/acoustid.rst:46
 msgid "If files are matched using :menuselection:`\"Scan\"` and then :menuselection:`\"Generate fingerprints\"` is used on them, submission will not be enabled, because they have already been matched by fingerprint.  This is the same situation as just using :menuselection:`\"Scan\"`, because after the files are scanned the resulting fingerprint / recording ID is remembered as already having been submitted."

@@ -1,20 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Gabriel Ferreira <gabrielcarvfer@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-12 09:27-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-24 12:51+0000\n"
+"Last-Translator: Gabriel Ferreira <gabrielcarvfer@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
+"projects/picard-docs/configoptions_filerenaming/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: ../../config/options_filerenaming.rst:4
 msgid ":index:`File Naming Options <pair: configuration; file naming>`"
@@ -95,6 +97,17 @@ msgstr ""
 #: ../../config/options_filerenaming.rst:68
 msgid "An edit box that contains a :index:`formatting string <scripts; file naming>` that tells Picard what the new name of the file and its containing directories should be in terms of various metadata values. The formatting string is in :doc:`Picard's scripting language <../extending/scripting>` where dark blue text starting with a '$' is a :doc:`function name <../functions/list_by_type>` and names in light blue within '%' signs are Picard's :doc:`tag and variable names <../variables/variables>`, and is generally referred to as a \"file naming script\". Note that the use of a '/' in the formatting string separates the output directory from the file name. The formatting string is allowed to contain any number of '/' characters. Everything before the last '/' is the directory location, and everything after the last '/' becomes the file's name."
 msgstr ""
+"Uma caixa de edição contém uma :index:`string de formatação <scripts; file "
+"naming>` que diz ao Picard qual deve ser o novo nome do arquivo e em que "
+"diretório este deve ser salvo baseado nos valores das etiquetas. A string de "
+"formatação segue a :doc:`linguagem de script do Picard <../extending/"
+"scripting>`, onde texto azul escuro iniciado com '$' é um :doc:`nome de "
+"função <../functions/list_by_type>`e nomes em azul claro começando com '%' "
+"são usados para :doc:`nomes de etiquetas e de variáveis <../variables/"
+"variables>` do Picard. A string é chamada de script de renomeação (\"file "
+"naming script\"). A barra ('/') separa o diretório destino do nome do "
+"arquivo, e pode ser utilizada múltiplas vezes para criar subdiretórios. Tudo "
+"antes da última '/' é o diretório destino e tudo após é o nome do arquivo."
 
 #: ../../config/options_filerenaming.rst:77
 msgid "There is only one file naming script defined in a user’s settings, although it can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script."

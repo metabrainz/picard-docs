@@ -1,101 +1,158 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Gabriel Ferreira <gabrielcarvfer@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-12 09:27-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-23 07:21+0000\n"
+"Last-Translator: Gabriel Ferreira <gabrielcarvfer@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
+"projects/picard-docs/faqfaq_usage/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: ../../faq/faq_usage.rst:4
 msgid "Using Picard"
-msgstr ""
+msgstr "Usando o Picard"
 
 #: ../../faq/faq_usage.rst:7
 msgid "How do I tag files with Picard?"
-msgstr ""
+msgstr "Como etiqueto arquivos com o Picard?"
 
 #: ../../faq/faq_usage.rst:9
 msgid "There is a separate section that explains the tagging process.  Please see :doc:`../usage/using` for details."
 msgstr ""
+"Existe uma seção dedicada explicando o processo de etiquetagem.  Favor olhar "
+":doc:`../usage/using` para detalhes."
 
 #: ../../faq/faq_usage.rst:13
 msgid "The green \"Tagger\" :index:`icon <tagger icon, icon; tagger>` disappeared from MusicBrainz.org, how do I get it back?"
 msgstr ""
+"O :index:`ícone <tagger icon, icon; tagger>` \"Tagger\" verde desapareceu do "
+"MusicBrainz.org. Como o consigo de volta?"
 
 #: ../../faq/faq_usage.rst:15
 msgid "This icon shows up when a manual lookup is performed via Picard using :menuselection:`\"Tools --> Lookup\"`."
 msgstr ""
+"Este ícone aparece quando a busca manual é realizada via Picard usando "
+":menuselection:`\"Ferramentas --> Buscar\"`."
 
 #: ../../faq/faq_usage.rst:17
 msgid "Alternatively the parameter ``?tport=8000`` can be added to the end of almost any MusicBrainz URL and the green tagger icons will continue to show up from then on."
 msgstr ""
+"Alternativamente, o parâmetro ``?tport=8000`` pode ser adicionado ao final "
+"de quase todas URLs MusicBrainz e o ícone tagger verde continuará aparecendo "
+"daí em diante."
 
 #: ../../faq/faq_usage.rst:22
 msgid "I'm trying to :index:`load a release <release; load error, album; load error, error; couldn't load album>` in Picard, but all I'm seeing is \"Couldn't load album errors\". What's up?"
 msgstr ""
+"Eu estou tentando :index:`carregar um lançamento <release; load error,album;"
+"load error,error;couldn't load album>` no Picard, mas só vejo erros \"Não "
+"foi possível carregar o álbum\". O que está acontecendo?"
 
 #: ../../faq/faq_usage.rst:24
 msgid "If you get \"Couldn't load album errors\" for releases in Picard, this can occur for a number of reasons. Check the following:"
 msgstr ""
+"Erros do tipo \"Não foi possível carregar o álbum\" podem ocorrer por várias "
+"razões. Cheque o seguinte:"
 
 #: ../../faq/faq_usage.rst:27
 msgid "**Is the problem persistent for a given release?**"
-msgstr ""
+msgstr "**O problema persiste para um lançamento específico?**"
 
 #: ../../faq/faq_usage.rst:0
 msgid "Try waiting a minute or two, or even a bit longer and then try again with a right-click, \"Refresh\". Sometimes the servers are just overloaded and temporarily reject requests."
 msgstr ""
+"Tente aguardar um minuto ou dois, ou um pouco mais e tente novamente "
+"clicando com o botão direito, \"Atualizar\". Os servidores podem estar "
+"sobrecarregados ou rejeitando requisições."
 
 #: ../../faq/faq_usage.rst:32
 msgid "**Has the release been deleted from MusicBrainz?**"
-msgstr ""
+msgstr "**O lançamento foi apagado do MusicBrainz?**"
 
 #: ../../faq/faq_usage.rst:0
 msgid "If you are re-tagging files previously tagged with Picard, and get this error, the release has possibly been :index:`deleted <release; deleted>`. Try to right-click and use the \"Lookup in browser\" option to view the release on the website. If you can't find it, it may have been deleted. This could be because you tagged a pending release that was voted down, or tagged against a release that was deleted because editors decided it wasn't a valid release. This can happen for homebrew compilations, bad torrent or pirate rips, \"advance\" releases or very poorly added releases. Usually there will be an alternate release you can tag against, which you can find by searching or doing another clustered lookup from Picard. If you can't find a replacement and believe it has been deleted unfairly, `submit a new release <https://musicbrainz.org/doc/How_to_Add_a_Release>`_, supplying evidence of the track listing and as much information as possible to prove it is genuine and it may be accepted again."
 msgstr ""
+"Se estiver re-etiquetando arquivos previamente etiquetados pelo Picard e "
+"encontrar este erro, o lançamento provavelmente foi :index:`apagado <release;"
+" deleted>`. Tente clicar com o botão direito e use a opção \"Buscar no "
+"navegador\" para olhar o lançamento pelo site. Se não conseguir encontrá-lo, "
+"ele pode ter sido apagado. Isto pode ter acontecido por você ter utilizado "
+"um lançamento pendente de revisão que foi recusado ou removido por um editor "
+"que o considerou inválido. Isto pode acontecer para compilações, torrents, "
+"digitalizações piratas, lançamentos adicionados incorretamente. Geralmente "
+"existe um lançamento correto que serve de alternative, o qual pode encontrar "
+"procurando novamente manualmente ou via Picard. Se não puder encontrar uma "
+"alternative e acredita que o lançamento foi apagado indevidamente, `submeta "
+"um novo lançamento <https://musicbrainz.org/doc/How_to_Add_a_Release>`_, "
+"fornecendo evidências como a lista de trilhas do lançamento e o que mais "
+"puder para provar que é genuíno."
 
 #: ../../faq/faq_usage.rst:46
 msgid "I'm using macOS, where are my :index:`network folders <macos; network folders>` or drives?"
 msgstr ""
+"Estou usando o macOS, onde estão minhas :index:`pastas na rede <macos; "
+"network folders>` ou discos?"
 
 #: ../../faq/faq_usage.rst:48
 msgid "These should show up in the add file and add folder dialogs, but they aren't visible by default in the file browser pane. If you want to see them in the file browser pane, right click in the pane and select \"show hidden files\". They should then be visible in the :file:`/Volumes` folder."
 msgstr ""
+"Estes devem ser mostrados nos diálogos de adicionar arquivos ou pastas, mas "
+"não são visíveis por padrão no painel de navegação de arquivos. Se quiser "
+"mostrá-los, clique com o botão direito no painel e selecione \"mostrar "
+"arquivos ocultos\". Eles devem estar visíveis na pasta :file:`/Volumes`."
 
 #: ../../faq/faq_usage.rst:54
 msgid "macOS shows the app is :index:`damaged <macos; app damaged>`. How can I run Picard?"
 msgstr ""
+"macOS mostra o aplicativo como :index:`corrompido <macos; app damaged>`. "
+"Como executo o Picard?"
 
 #: ../../faq/faq_usage.rst:56
 msgid "On macOS 10.12 and 10.13 there have been reports that sometimes the MusicBrainz Picard app cannot be started and macOS shows an error message:"
 msgstr ""
+"Alguns usuários reportaram que o MusicBrainz Picard não pode ser executado "
+"ou mostra uma mensagem de erro no macOS 10.12 e 10.13:"
 
 #: ../../faq/faq_usage.rst:59
 msgid "\"MusicBrainz Picard.app\" is damaged and can't be opened. You should move it to the Trash."
 msgstr ""
+"O aplicativo \"MusicBrainz Picard.app\" está danificado/corrompido e não "
+"pode ser aberto. Você deve movê-lo para o lixo."
 
 #: ../../faq/faq_usage.rst:61
 msgid "This mostly seems to happen after moving the file to the Applications folder and seems to be caused by Gatekeeper mistakenly marking the app as damaged.  To solve the issue open a terminal and run::"
 msgstr ""
+"Isto parece ocorrer após mover o arquivo para a pasta de Aplicações e parece "
+"causado pelo Gatekeeper marcando o aplicativo como danificado "
+"indevidamente.  Para resolver o problema, abra o terminal e execute::"
 
 #: ../../faq/faq_usage.rst:67
 msgid "This will clear the app being marked as damaged.  If you have placed the app in a different location than :file:`/Applications` adjust the path in the command above accordingly."
 msgstr ""
+"Isto irá remover a marcação de danificado.  Se você tiver colocado o "
+"aplicativo numa pasta diferente de :file:`/Aplicações`, ajuste o caminho no "
+"comando acima."
 
 #: ../../faq/faq_usage.rst:72
 msgid "Picard is installed on Linux as a Snap, how can I access removable media?"
 msgstr ""
+"Picard está instalado no Linux como um Snap, como posso acessar um disco "
+"removível?"
 
 #: ../../faq/faq_usage.rst:74
 msgid "Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and folders on your system.  By default Picard has access to your home folder.  You can additionally give it access to removable media by running the following command on a terminal:"
 msgstr ""
+"Snaps são executados dentro de uma caixa de areia e portanto não tem acesso "
+"a todos os arquivos e pastas no seu sistema.  Por padrão, o Picard tem "
+"acesso à sua pasta de usuário.  Você pode dar permissões adicionais para "
+"discos removíveis com o seguinte comando:"
