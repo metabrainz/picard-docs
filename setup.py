@@ -521,7 +521,7 @@ class POCheck():
                or re.search(r"[^\:]+" + item + r":`", content):
                 self.write_warning('[L{0}]: Role "{1}"'.format(line_number, item))
         links = re.findall(r"`([^`]*)`_", content)
-        for item in ['doc', 'download', 'ref']:
+        for item in ['doc', 'download', 'numref', 'ref']:
             links.extend(re.findall(r":" + item + r":`([^`]*)`", content))
         for item in links:
             if (
