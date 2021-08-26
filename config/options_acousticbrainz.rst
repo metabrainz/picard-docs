@@ -21,8 +21,9 @@ extractor in the application directory.
 
 **AcousticBrainz settings**
 
-   This section allows you to specify the acoustic features extractor application to use for processing the audio files.  There is also
-   an option with a link to download a client application from the AcousticBrainz website.
+   This section allows you to specify the acoustic features extractor application to use for processing the audio files.  This extractor
+   is bundled with the Picard installation on Windows and macOS systems, and can be found in the Picard installation directory. There is
+   also an option with a link to download a client application from the AcousticBrainz website.
 
 .. seealso::
 
