@@ -38,9 +38,15 @@
             detected: lg.a || lg.c || lg.d || lg.e || lg.b[0],
             available: lg.b || [lg.a] || [lg.c] || [lg.d] || [lg.e]
          };
+         language.detected = language.detected.replace("-", "_");
          if ( supported_languages.includes(language.detected) ) {
             return language.detected;
          }
+         var temp_array = []
+         for (var i = 0; i < language.available.length; i++) {
+            temp_array.push(language.available[i].replace("-", "_"));
+         }
+         language.available = temp_array;
          language_code = "";
          supported_languages.forEach(languageFull);
          if (language_code != "") {
@@ -49,7 +55,11 @@
          if (supported_languages.includes(language.detected.substring(0, 2))) {
             return language.detected.substring(0, 2);
          }
-         supported_languages.forEach(languageSub);
+         language.available.forEach(languageSub1);
+         if (language_code != "") {
+            return language_code;
+         };
+         language.available.forEach(languageSub2);
          if (language_code != "") {
             return language_code;
          };
@@ -62,9 +72,17 @@
          }
       };
 
-      function languageSub(item) {
+      function languageSub1(item) {
          if ((language_code == "") && (supported_languages.includes(item.substring(0, 2)))) {
             language_code = item.substring(0, 2);
+         }
+      };
+
+      function languageSub2(item) {
+         for (var i = 0; i < supported_languages.length; i++) {
+            if ((language_code == "") && (item.substring(0, 2) == supported_languages[i].substring(0, 2))) {
+               language_code = supported_languages[i];
+            }
          }
       };
 

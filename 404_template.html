@@ -34,7 +34,7 @@
 
       var debug = false;
 
-      const re_language = /^[a-z][a-z](-[A-Z][A-Z])?$/;
+      const re_language = /^[a-z][a-z](_[A-Z][A-Z])?$/;
       const re_version1 = /^v?[0-9][0-9\.]*$/;
       const re_version2 = /^v[0-9][0-9\.]*$/;
       const re_version3 = /^v([0-9]+\.[0-9]+)/;
@@ -42,18 +42,35 @@
 
       const not_found = 'not_found.html';
 
+      function test_supported_language(test_language) {
+         if (supported_languages.indexOf(test_language) > -1) {
+            return test_language;
+         }
+         if (supported_languages.indexOf(test_language.substr(0,2)) > -1) {
+            return test_language.substr(0,2);
+         }
+         for (var i = 0; i < supported_languages.length; i++) {
+            if (supported_languages[i].substr(0,2) == test_language.substr(0,2)) {
+               return supported_languages[i];
+            }
+         }
+         return "";
+      }
+
       function is_language(test_language) {
+         var test_value = test_language.replace("-", "_");
          if (debug) { window.alert("Testing language: " + test_language); }
-         if (test_language.search(re_language) < 0) {
+         if (test_value.search(re_language) < 0) {
             if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
-         if (supported_languages.indexOf(test_language) < 0) {
+         var test_supported = test_supported_language(test_value)
+         if (test_supported == "") {
             if (debug) { window.alert("Failed supported languages check.  Target language set to: " + target_language); }
             // Returning true will drop this item from the path
             return true;
          }
-         target_language = test_language;
+         target_language = test_supported;
          if (debug) { window.alert("Passed.  Target language set to: " + target_language); }
          return true;
       }
