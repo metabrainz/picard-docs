@@ -47,10 +47,12 @@
 
       Details:
       :doc:`options_network` /
-      :doc:`options_matching`
+      :doc:`options_matching` /
+      :doc:`options_maintenance`
 
 .. toctree::
    :hidden:
 
    options_network
    options_matching
+   options_maintenance
