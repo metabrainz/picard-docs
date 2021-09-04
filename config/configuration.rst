@@ -94,6 +94,7 @@ during processing.
       :doc:`options_tags` /
       :doc:`options_cover` /
       :doc:`options_filerenaming` /
+      :doc:`options_acousticbrainz` /
       :doc:`options_fingerprinting` /
       :doc:`options_cdlookup` /
       :doc:`options_plugins` /
@@ -110,6 +111,7 @@ during processing.
    options_tags.rst
    options_cover.rst
    options_filerenaming.rst
+   options_acousticbrainz.rst
    options_fingerprinting
    options_cdlookup.rst
    options_plugins.rst
