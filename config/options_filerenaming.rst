@@ -18,12 +18,14 @@ These options determine how Picard handles files when they are saved with update
    If this option is left unchecked, then Picard will leave the files in the same directory when they
    are saved.
 
-   Note that the "Rename Files" and "Move Files" options are independent of one another. "Rename Files"
-   refers to Picard changing file names, typically based on artist and track names. "Move Files" refers
-   to Picard moving files to new directories, based on a specified parent directory and subdirectories,
-   typically based on album artist name and release title. However, they both use the same "file naming
-   string". "Move files" uses the portion up until the last '/'. "Rename files" uses the portion after
-   the last '/'.
+   .. note::
+
+      The "Rename Files" and "Move Files" options are independent of one another. "Rename Files"
+      refers to Picard changing file names, typically based on artist and track names. "Move Files" refers
+      to Picard moving files to new directories, based on a specified parent directory and subdirectories,
+      typically based on album artist name and release title. However, they both use the same "file naming
+      string". "Move files" uses the portion up until the last '/'. "Rename files" uses the portion after
+      the last '/'.
 
 **Destination directory**
 
@@ -39,6 +41,14 @@ These options determine how Picard handles files when they are saved with update
    files are moved they will end up in the release directory with your music files. In a pattern, the
    '\*' character matches zero or more characters. Other text, like ".jpg", matches those exact
    characters. Thus "\*.jpg" matches "cover.jpg", "liner.jpg", "a.jpg", and ".jpg", but not "nomatch.jpg2".
+
+   .. note::
+
+      This option can also be used to move subdirectories to the new release directory.  This is done by
+      specifying the name of the subdirectory in the list of files to be moved. For example, if your album
+      folders have a subfolder called "Artwork", "covers" or "scans" that contains additional image files
+      that you also want to move to the new release directory, simply add "artwork", "covers" and "scans"
+      to the list of additional file matching patterns.
 
 **Delete empty directories**
 
