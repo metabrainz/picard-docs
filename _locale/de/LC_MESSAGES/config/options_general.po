@@ -1,28 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-12 09:27-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-24 12:51+0000\n"
+"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
+"Language-Team: German <https://translate.uploadedlobster.com/projects/"
+"picard-docs/configoptions_general/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: ../../config/options_general.rst:4
 msgid ":index:`General Options <configuration; general options>`"
 msgstr ""
+":index:`Allgemeine Einstellungen <Konfiguration; allgemeine Einstellungen>`"
 
 #: ../../config/options_general.rst:9
 msgid "**Server address**"
-msgstr ""
+msgstr "**Serveradresse**"
 
 #: ../../config/options_general.rst:11
 msgid "The domain name for the MusicBrainz database server used by Picard to get details of your music. Default value: musicbrainz.org (for the main MusicBrainz server)."
@@ -30,11 +33,13 @@ msgstr ""
 
 #: ../../config/options_general.rst:14
 msgid "**Port**"
-msgstr ""
+msgstr "**Port**"
 
 #: ../../config/options_general.rst:16
 msgid "The port number for the server. Default value: 443 (for the main MusicBrainz server)."
 msgstr ""
+"Die Port-Nummer für den Server. Standardwert: 80 (für den MusicBrainz "
+"Hauptserver)."
 
 #: ../../config/options_general.rst:18
 msgid "**Username**"
@@ -54,7 +59,7 @@ msgstr ""
 
 #: ../../config/options_general.rst:27
 msgid "**Automatically scan all new files**"
-msgstr ""
+msgstr "**Alle neuen Dateien automatisch analysieren**"
 
 #: ../../config/options_general.rst:29
 msgid "Check this box if you want Picard to scan each music file you add and look for an AcoustID fingerprint. This takes time, but may be helpful for you and MusicBrainz. Leave it unchecked if you don't want Picard to do this scan automatically. In any case, you can direct Picard to scan a particular music file at any time using :menuselection:`\"Tools --> Scan\"`."
@@ -62,7 +67,7 @@ msgstr ""
 
 #: ../../config/options_general.rst:34
 msgid "**Ignore MBIDs when loading new files**"
-msgstr ""
+msgstr "**MBIDs beim Laden neuer Dateien ignorieren**"
 
 #: ../../config/options_general.rst:36
 msgid "If you disable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track.  This is useful when re-processing files that have been previously tagged with incorrect information."
@@ -70,7 +75,7 @@ msgstr ""
 
 #: ../../config/options_general.rst:41
 msgid "**Check for updates during start-up**"
-msgstr ""
+msgstr "**Beim Start nach Updates suchen**"
 
 #: ../../config/options_general.rst:43
 msgid "This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; update checking>` during startup.  In any case, you can have Picard check for program updates at any time using :menuselection:`\"Help --> Check for update\"`."
@@ -78,7 +83,7 @@ msgstr ""
 
 #: ../../config/options_general.rst:47
 msgid "**Days between checks**"
-msgstr ""
+msgstr "**Tage zwischen Überprüfungen**"
 
 #: ../../config/options_general.rst:49
 msgid "This option allows you to limit the automatic update checking by selecting the interval, in days, between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that this only applies if the \"Check for updates during start-up\" option is enabled."
@@ -86,7 +91,7 @@ msgstr ""
 
 #: ../../config/options_general.rst:53
 msgid "**Updates to check**"
-msgstr ""
+msgstr "**Überprüfen auf**"
 
 #: ../../config/options_general.rst:55
 msgid "This option allows you to select which levels of update to check. Your options are:"
@@ -94,15 +99,15 @@ msgstr ""
 
 #: ../../config/options_general.rst:57
 msgid "Stable releases only"
-msgstr ""
+msgstr "Nur stabile Versionen"
 
 #: ../../config/options_general.rst:58
 msgid "Stable and Beta releases"
-msgstr ""
+msgstr "Stabile und Beta-Versionen"
 
 #: ../../config/options_general.rst:59
 msgid "Stable, Beta and Dev releases"
-msgstr ""
+msgstr "Stabile, Beta- und Entwicklungs-Versionen"
 
 #: ../../config/options_general.rst:61
 msgid "For example, if you subscribe to \"Stable releases only\" you will not be notified if a new Beta or Dev release is issued."
