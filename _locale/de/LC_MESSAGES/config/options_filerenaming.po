@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-12 11:58-0600\n"
+"POT-Creation-Date: 2021-09-12 18:50-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: de\n"
@@ -81,15 +81,66 @@ msgstr ""
 msgid ""
 "Enter patterns that match any other files you want Picard to move when "
 "saving music files (e.g.: \"Folder.jpg\", \"\\*.png\", \"\\*.cue\", "
-"\"\\*.log\"). Patterns are separated by spaces. When these additional "
-"files are moved they will end up in the release directory with your music"
-" files. In a pattern, the '\\*' character matches zero or more "
-"characters. Other text, like \".jpg\", matches those exact characters. "
-"Thus \"\\*.jpg\" matches \"cover.jpg\", \"liner.jpg\", \"a.jpg\", and "
-"\".jpg\", but not \"nomatch.jpg2\"."
+"\"\\*.log\"). Patterns support the Unix shell-style wildcards, and are "
+"separated by spaces. The wildcard patters available are:"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:44
+msgid "**Pattern**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:44
+msgid "**Meaning**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:46
+msgid "\\*"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:46
+msgid "matches everything"
 msgstr ""
 
 #: ../../config/options_filerenaming.rst:47
+msgid "?"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:47
+msgid "matches any single character"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:48
+msgid "\\[seq\\]"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:48
+msgid "matches any character in *seq*"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:49
+msgid "\\[!seq\\]"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:49
+msgid "matches any character not in *seq*"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:52
+msgid ""
+"For a literal match, wrap the meta-characters in brackets. For example, "
+"'\\[?\\]' matches the character '?'."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:54
+msgid ""
+"When these additional files are moved they will end up in the release "
+"directory with your music files. In a pattern, the '\\*' character "
+"matches zero or more characters. Other text, like \".jpg\", matches those"
+" exact characters. Thus \"\\*.jpg\" matches \"cover.jpg\", \"liner.jpg\","
+" \"a.jpg\", and \".jpg\", but not \"nomatch.jpg2\"."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:61
 msgid ""
 "This option can also be used to move subdirectories to the new release "
 "directory.  This is done by specifying the name of the subdirectory in "
@@ -100,11 +151,11 @@ msgid ""
 "of additional file matching patterns."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:53
+#: ../../config/options_filerenaming.rst:67
 msgid "**Delete empty directories**"
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:55
+#: ../../config/options_filerenaming.rst:69
 msgid ""
 "When selected, Picard will remove directories that have become empty once"
 " a move is completed. Leave this unchecked if you want Picard to leave "
@@ -114,22 +165,22 @@ msgid ""
 " directory makes that clear."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:60
+#: ../../config/options_filerenaming.rst:74
 msgid "**Rename files when saving**"
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:62
+#: ../../config/options_filerenaming.rst:76
 msgid ""
 "Select this option to let Picard change the file and directory names of "
 "your files when it saves them, in order to make the file and directory "
 "names consistent with the new metadata."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:65
+#: ../../config/options_filerenaming.rst:79
 msgid "**Replace non-ASCII characters**"
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:67
+#: ../../config/options_filerenaming.rst:81
 msgid ""
 "Select this option to replace non-ASCII characters with their ASCII "
 "equivalent (e.g.: 'á', 'ä' and 'ǎ' with 'a'; 'é', 'ě' and 'ë' with 'e'; "
@@ -137,22 +188,22 @@ msgid ""
 "found on `Wikipedia <https://en.wikipedia.org/wiki/ASCII>`_."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:71
+#: ../../config/options_filerenaming.rst:85
 msgid "**Windows compatibility**"
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:73
+#: ../../config/options_filerenaming.rst:87
 msgid ""
 "This option tells Picard to replace all Windows-incompatible characters "
 "with an underscore. This is enabled by default on Windows systems, with "
 "no option to disable."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:76
+#: ../../config/options_filerenaming.rst:90
 msgid "**Name files like this**"
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:78
+#: ../../config/options_filerenaming.rst:92
 msgid ""
 "An edit box that contains a :index:`formatting string <scripts; file "
 "naming>` that tells Picard what the new name of the file and its "
@@ -169,7 +220,7 @@ msgid ""
 "becomes the file's name."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:87
+#: ../../config/options_filerenaming.rst:101
 msgid ""
 "There is only one file naming script defined in a user’s settings, "
 "although it can vary from a simple one-line script such as "
@@ -178,7 +229,7 @@ msgid ""
 "saved using the text output by the script."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:91
+#: ../../config/options_filerenaming.rst:105
 msgid ""
 "Scripts are often discussed in the `MetaBrainz Community Forum "
 "<https://community.metabrainz.org/>`_, and there is a thread specific to "
@@ -187,7 +238,7 @@ msgid ""
 "snippets/2786/>`_."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:97
+#: ../../config/options_filerenaming.rst:111
 msgid ""
 "Any new tags set or tags modified by the file naming script will not be "
 "written to the output files' metadata."
@@ -209,5 +260,22 @@ msgstr ""
 #~ "uses the portion up until the last"
 #~ " '/'. \"Rename files\" uses the "
 #~ "portion after the last '/'."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Enter patterns that match any other "
+#~ "files you want Picard to move when"
+#~ " saving music files (e.g.: \"Folder.jpg\","
+#~ " \"\\*.png\", \"\\*.cue\", \"\\*.log\"). Patterns"
+#~ " are separated by spaces. When these"
+#~ " additional files are moved they will"
+#~ " end up in the release directory "
+#~ "with your music files. In a "
+#~ "pattern, the '\\*' character matches "
+#~ "zero or more characters. Other text, "
+#~ "like \".jpg\", matches those exact "
+#~ "characters. Thus \"\\*.jpg\" matches "
+#~ "\"cover.jpg\", \"liner.jpg\", \"a.jpg\", and "
+#~ "\".jpg\", but not \"nomatch.jpg2\"."
 #~ msgstr ""
 

@@ -37,10 +37,24 @@ These options determine how Picard handles files when they are saved with update
 **Move additional files**
 
    Enter patterns that match any other files you want Picard to move when saving music files (e.g.:
-   "Folder.jpg", "\*.png", "\*.cue", "\*.log"). Patterns are separated by spaces. When these additional
-   files are moved they will end up in the release directory with your music files. In a pattern, the
-   '\*' character matches zero or more characters. Other text, like ".jpg", matches those exact
-   characters. Thus "\*.jpg" matches "cover.jpg", "liner.jpg", "a.jpg", and ".jpg", but not "nomatch.jpg2".
+   "Folder.jpg", "\*.png", "\*.cue", "\*.log"). Patterns support the Unix shell-style wildcards, and are
+   separated by spaces. The wildcard patters available are:
+
+   =========== ===================================
+   **Pattern** **Meaning**
+   =========== ===================================
+   \*          matches everything
+   ?           matches any single character
+   \[seq\]     matches any character in *seq*
+   \[!seq\]    matches any character not in *seq*
+   =========== ===================================
+
+   For a literal match, wrap the meta-characters in brackets. For example, '\[?\]' matches the character '?'.
+
+   When these additional files are moved they will end up in the release directory
+   with your music files. In a pattern, the '\*' character matches zero or more characters. Other text,
+   like ".jpg", matches those exact characters. Thus "\*.jpg" matches "cover.jpg", "liner.jpg", "a.jpg",
+   and ".jpg", but not "nomatch.jpg2".
 
    .. note::
 
