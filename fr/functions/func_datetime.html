@@ -161,8 +161,8 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C: Options de ligne de commande</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D: Courts clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Références</span></p>
 <ul>
@@ -242,7 +242,7 @@
 <div class="line">Mis en œuvre: Picard 2.3</div>
 </div>
 <p><strong>La description:</strong></p>
-<p>Renvoie la date et l’heure actuelles dans le format spécifié, qui est basé sur le code de format standard Python <code class="docutils literal notranslate"><span class="pre">strftime</span></code> &lt;<a class="reference external" href="https://strftime.org">https://strftime.org</a>&gt;`_. Si aucun format n’est spécifié, la date et l’heure seront renvoyées sous la forme “2020-02-15 14:26:32”.  Notez que tous les caractères spéciaux tels que “%”, “$”, “(“, “)” et “\” devront être échappés comme indiqué dans les exemples ci-dessous.</p>
+<p>Renvoie la date et l’heure actuelles dans le format spécifié, qui est basé sur le <a class="reference external" href="https://strftime.org">code de format standard</a> Python <code class="docutils literal notranslate"><span class="pre">strftime</span></code>. Si aucun format n’est spécifié, la date et l’heure seront renvoyées sous la forme “2020-02-15 14:26:32”.  Notez que tous les caractères spéciaux tels que “%”, “$”, “(“, “)” et “\” devront être échappés comme indiqué dans les exemples ci-dessous.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Les codes de formatage spécifiques à la plate-forme doivent être évités pour garantir la portabilité des scripts sur les différentes plates-formes. Ces codes incluent: supprimer zéro-padding (par exemple: <code class="docutils literal notranslate"><span class="pre">%-d</span></code> et <code class="docutils literal notranslate"><span class="pre">%-m</span></code> sous Linux ou macOS, et leurs équivalents <code class="docutils literal notranslate"><span class="pre">%#d</span></code> et <code class="docutils literal notranslate"><span class="pre">%#m</span></code> sur Windows); spécificateurs de longueur d’élément (par exemple: <code class="docutils literal notranslate"><span class="pre">%3Y</span></code>); et accrocher “%” à la fin de la chaîne de format.</p>
