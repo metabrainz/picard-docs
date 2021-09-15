@@ -16,9 +16,13 @@ from your music files and submitting it to the AcousticBrainz database.
    All information extraction from a music file is performed on your system and only this information is sent to
    AcousticBrainz.  Your actual music files are not transmitted.
 
-To extract the information from an audio file and submit it to AcousticBrainz, simply select the tracks or releases that you
-wish to submit and select the "Submit AcousticBrainz features" command from the "Tools" section of Picard's main menu bar.
-If the files are properly tagged with MusicBrainz identifiers and a valid extraction application has been configured in the
+To extract the information from an audio file and submit it to AcousticBrainz, you must first match your audio files to
+release and track information from the MusicBrainz database and save the files. See the :doc:`retrieve` and :doc:`match`
+sections for more information about retrieving release information and matching audio files to releases.
+
+Once the files have been matched and saved, simply select the tracks or releases that you wish to submit and use the "Submit
+AcousticBrainz features" command from the "Tools" section of Picard's main menu bar. If the files are properly tagged with
+MusicBrainz identifiers and a valid extraction application has been configured in the
 :doc:`AcousticBrainz option settings <../config/options_acousticbrainz>`, then the files will be added to a queue where they
 will be processed in the background.
 
