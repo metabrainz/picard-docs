@@ -25,6 +25,10 @@ and what quality (size) you want to download. Obviously, the better the quality,
    fixed sizes are generated automatically from the full size image, provided that it is greater than or equal to the fixed
    size being generated.  The generated images are square and padded as required if the original image is not square.
 
+   .. note::
+
+      If the selected size is not available, then Picard will use the largest available size below the selected size.
+
 **Download only approved images**
 
    When checked, Picard will only download images that have been approved (i.e.: the edit to add the image has been accepted
