@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-18 09:49-0600\n"
-"PO-Revision-Date: 2021-05-30 09:54-0600\n"
+"PO-Revision-Date: 2021-09-18 17:13+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/variablesvariables_basic/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_basic.rst:8
@@ -51,7 +53,7 @@ msgid ""
 "tracks. (*since Picard 1.3*)"
 msgstr ""
 "Le numéro absolu de cette piste sans tenir compte du numéro de disque "
-"(c'est-à-dire: ``%_absolutetracknumber%`` de ``%_totalbumtracks%``). Par "
+"(c'est-à-dire : ``%_absolutetracknumber%`` de ``%_totalbumtracks%``). Par "
 "exemple, cette valeur serait 11 pour la deuxième piste du disque 2 où le "
 "disque 1 a 9 pistes. (*depuis Picard 1.3*)"
 
@@ -127,7 +129,7 @@ msgstr ""
 
 #: ../../variables/variables_basic.rst:45
 msgid "**_musicbrainz_discids**"
-msgstr ""
+msgstr "**_musicbrainz_discids**"
 
 #: ../../variables/variables_basic.rst:47
 msgid ""
@@ -137,6 +139,11 @@ msgid ""
 "provided for Disc 1 of a three CD set will not include the disc ids "
 "attached to discs 2 and 3 of the set."
 msgstr ""
+"Cette variable à valeurs multiples contient une liste de tous les "
+"identifiants de disque associés à la version sélectionnée.  La liste fournie "
+"pour chaque support ne comprend que les identifiants de disque associés à ce "
+"support. Par exemple, la liste fournie pour le disque 1 d'un ensemble de "
+"trois CD ne comprendra pas les identifiants des disques 2 et 3 de l'ensemble."
 
 #: ../../variables/variables_basic.rst:51
 msgid "**_pregap**"
@@ -159,8 +166,8 @@ msgstr "**_primaryreleasetype**"
 #: ../../variables/variables_basic.rst:59
 msgid "Release Group Primary type (i.e.: album, single, ep, broadcast, or other)."
 msgstr ""
-"Le type de groupe principal de version (ex: album, single, ep, diffusion "
-"ou autre)."
+"Le type de groupe principal de version (c'est-à-dire : album, single, ep, "
+"diffusion ou autre)."
 
 #: ../../variables/variables_basic.rst:61
 msgid "**_rating**"
@@ -274,9 +281,9 @@ msgid ""
 " dj-mix, interview, live, mixtape/street, remix, soundtrack, or "
 "spokenword)."
 msgstr ""
-"Zéro ou plus de types secondaires pour le groupe de versions "
-"(c'est-à-dire: livre audio, compilation, DJ-mix, interview, live, mixtape"
-" / street, remix, bande sonore ou speechword)."
+"Zéro ou plus de types secondaires pour le groupe de versions (c'est-à-dire : "
+"livre audio, compilation, DJ-mix, interview, live, mixtape / street, remix, "
+"bande sonore ou speechword)."
 
 #: ../../variables/variables_basic.rst:107
 msgid "**_totalalbumtracks**"
@@ -424,4 +431,3 @@ msgstr "Le nombre total de pistes sur tous les disques de cette version."
 #~ "CD. (*Depuis Picard 2.6*. Avant Picard"
 #~ " 2.6, ces informations étaient disponibles"
 #~ " dans la balise ``originaldate``.)"
-

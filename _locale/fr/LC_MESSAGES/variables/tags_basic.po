@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-18 09:49-0600\n"
-"PO-Revision-Date: 2021-01-15 13:49-0700\n"
+"PO-Revision-Date: 2021-09-18 17:13+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/variablestags_basic/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/tags_basic.rst:24
@@ -101,7 +103,7 @@ msgstr "**albumartistsort**"
 
 #: ../../variables/tags_basic.rst:59
 msgid "Release Artist's Sort Name (e.g.: \"Beatles, The\")."
-msgstr "Libérez le nom de tri de l'artiste (par exemple: \"Beatles, The\")."
+msgstr "Libérez le nom de tri de l'artiste (par exemple : \"Beatles, The\")."
 
 #: ../../variables/tags_basic.rst:61
 msgid "**albumsort**"
@@ -188,8 +190,8 @@ msgid ""
 "Disambiguation Comment - the comment entered to help distinguish one "
 "release from another (e.g.: Deluxe version with 2 bonus tracks)."
 msgstr ""
-"Le commentaire entré pour aider à distinguer une version d'une autre (par"
-" exemple: version Deluxe avec 2 pistes bonus)."
+"Le commentaire entré pour aider à distinguer une version d'une autre (par "
+"exemple : version Deluxe avec 2 pistes bonus)."
 
 #: ../../variables/tags_basic.rst:98
 msgid "**compilation**"
@@ -348,9 +350,9 @@ msgid ""
 "<https://musicbrainz.org/doc/Release/Format>`_ page on the MusicBrainz "
 "website for more information."
 msgstr ""
-"Format de sortie (par exemple: CD). Consultez la page `Format de "
-"publication <https://musicbrainz.org/doc/Release/Format>`_ sur le site "
-"Web MusicBrainz pour plus d'informations."
+"Format de sortie (par exemple : CD). Consultez la page `Format de "
+"publication <https://musicbrainz.org/doc/Release/Format>`_ sur le site Web "
+"MusicBrainz pour plus d'informations."
 
 #: ../../variables/tags_basic.rst:156
 msgid "**musicbrainz_albumartistid**"
@@ -381,7 +383,6 @@ msgid "**musicbrainz_discid**"
 msgstr "**musicbrainz_discid**"
 
 #: ../../variables/tags_basic.rst:170
-#, fuzzy
 msgid ""
 "Disc ID is the code number which MusicBrainz uses to link a physical CD "
 "to a release listing.  This is based on the table of contents (TOC) "
@@ -389,9 +390,11 @@ msgid ""
 "album information was retrieved using :menuselection:`\"Tools --> Lookup "
 "CD\"`. (*since Picard 0.12*)"
 msgstr ""
-"L'ID de disque est le numéro de code que MusicBrainz utilise pour lier un"
-" CD physique à une liste de versions. Ceci est basé sur les informations "
-"de table des matières (TOC) lues à partir du disque."
+"L'ID du disque est le numéro de code que MusicBrainz utilise pour relier un "
+"CD physique à une liste de diffusion.  Ce lien est basé sur les informations "
+"de la table des matières (TOC) lues sur le disque. Cette balise contient le "
+"Disc ID si les informations sur l'album ont été récupérées en utilisant "
+":menuselection:`\"Outils --> CD de recherche\"`. (*depuis Picard 0.12*)"
 
 #: ../../variables/tags_basic.rst:174
 msgid "**musicbrainz_originalalbumid**"
@@ -726,4 +729,3 @@ msgstr "Utilisé pour le site officiel de l'artiste."
 #~ " ajouté en utilisant :menuselection:`\"Outils "
 #~ "--> Rechercher un CD\"`. (*depuis Picard"
 #~ " 0,12*)"
-
