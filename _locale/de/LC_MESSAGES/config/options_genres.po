@@ -1,28 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-12 09:27-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-24 12:51+0000\n"
+"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
+"Language-Team: German <https://translate.uploadedlobster.com/projects/"
+"picard-docs/configoptions_genres/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: ../../config/options_genres.rst:4
 msgid ":index:`Genres <configuration; genres>`"
-msgstr ""
+msgstr ":index:`Genres <Konfiguration; Genres>`"
 
 #: ../../config/options_genres.rst:9
 msgid "**Use genres from MusicBrainz**"
-msgstr ""
+msgstr "**Genres von MusicBrainz verwenden**"
 
 #: ../../config/options_genres.rst:11
 msgid "Use genres provided by MusicBrainz and save them to the genre tag."
@@ -31,6 +33,8 @@ msgstr ""
 #: ../../config/options_genres.rst:13
 msgid "**Fall back on album's artists genres if no genres are found for the release or release group**"
 msgstr ""
+"**Genres des Veröffentlichungskünstlers verwenden, falls keine Genres für "
+"die Veröffentlichung oder die Veröffentlichungsgruppe gefunden werden**"
 
 #: ../../config/options_genres.rst:15
 msgid "If there is no genre set for the release or release group on MusicBrainz, use the genre of the album artist instead."
@@ -38,7 +42,7 @@ msgstr ""
 
 #: ../../config/options_genres.rst:17
 msgid "**Only use my genres**"
-msgstr ""
+msgstr "**Nur eigene Genres verwenden**"
 
 #: ../../config/options_genres.rst:19
 msgid "When enabled, Picard will only write genres you personally have submitted to MusicBrainz. You'll need to set your username and password to use this feature."
@@ -46,7 +50,7 @@ msgstr ""
 
 #: ../../config/options_genres.rst:22
 msgid "**Use folksonomy tags as genres**"
-msgstr ""
+msgstr "**Folksonomy-Tags als Genre verwenden**"
 
 #: ../../config/options_genres.rst:24
 msgid "Check to use all folksonomy tags to set the genre. Otherwise only the tags considered by MusicBrainz to be proper genres will be used."
@@ -54,7 +58,7 @@ msgstr ""
 
 #: ../../config/options_genres.rst:27
 msgid "**Minimal genre usage**"
-msgstr ""
+msgstr "**Mindestens zu verwendende Genres**"
 
 #: ../../config/options_genres.rst:29
 msgid "Choose how popular the genre must be before it is written by Picard. Default: 90%. Lowering the value here will lead to more, but possibly less relevant, genres in your files."
@@ -62,7 +66,7 @@ msgstr ""
 
 #: ../../config/options_genres.rst:32
 msgid "**Maximum number of genres**"
-msgstr ""
+msgstr "**Maximale Anzahl zu verwendender Genres**"
 
 #: ../../config/options_genres.rst:34
 msgid "Choose how many genres to use. Default: 5. If you only want a single genre, set this to 1."
@@ -70,7 +74,7 @@ msgstr ""
 
 #: ../../config/options_genres.rst:36
 msgid "**Join multiple genres with**"
-msgstr ""
+msgstr "**Mehrere Genres verbinden mit**"
 
 #: ../../config/options_genres.rst:38
 msgid "Select which character should be used to separate multiple genres."

@@ -3,17 +3,18 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-08 16:22-0600\n"
-"PO-Revision-Date: 2021-08-08 16:26-0600\n"
+"POT-Creation-Date: 2021-09-12 18:50-0600\n"
+"PO-Revision-Date: 2021-09-12 19:00-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/configoptions_filerenaming/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,7 +49,7 @@ msgid ""
 msgstr ""
 "Si elle est sélectionnée, cette option indique à Picard de déplacer vos "
 "fichiers audio vers un nouveau répertoire lorsqu'il les enregistre. Une "
-"utilisation pour cela est de garder votre travail organisé: tous les "
+"utilisation pour cela est de garder votre travail organisé : tous les "
 "fichiers non étiquetés sont sous \"Répertoire A\", et lorsque Picard les "
 "marque, il les déplace vers \"Répertoire B\". Lorsque \"Répertoire A\" "
 "est vide, votre travail de marquage est terminé."
@@ -61,16 +62,16 @@ msgstr ""
 "Si cette option n'est pas cochée, Picard laissera les fichiers dans le "
 "même répertoire lorsqu'ils seront enregistrés."
 
-#: ../../config/options_filerenaming.rst:21
+#: ../../config/options_filerenaming.rst:23
 msgid ""
-"Note that the \"Rename Files\" and \"Move Files\" options are "
-"independent of one another. \"Rename Files\" refers to Picard changing "
-"file names, typically based on artist and track names. \"Move Files\" "
-"refers to Picard moving files to new directories, based on a specified "
-"parent directory and subdirectories, typically based on album artist "
-"name and release title. However, they both use the same \"file naming "
-"string\". \"Move files\" uses the portion up until the last '/'. "
-"\"Rename files\" uses the portion after the last '/'."
+"The \"Rename Files\" and \"Move Files\" options are independent of one "
+"another. \"Rename Files\" refers to Picard changing file names, "
+"typically based on artist and track names. \"Move Files\" refers to "
+"Picard moving files to new directories, based on a specified parent "
+"directory and subdirectories, typically based on album artist name and "
+"release title. However, they both use the same \"file naming string\". "
+"\"Move files\" uses the portion up until the last '/'. \"Rename files\" "
+"uses the portion after the last '/'."
 msgstr ""
 "Notez que les options \"Renommer les fichiers\" et \"Déplacer les "
 "fichiers\" sont indépendantes les unes des autres. «Renommer les "
@@ -84,11 +85,11 @@ msgstr ""
 "utilise la partie vers le haut jusqu'au dernier '/'. \"Renommer les "
 "fichiers\" utilise la partie après le dernier '/'."
 
-#: ../../config/options_filerenaming.rst:28
+#: ../../config/options_filerenaming.rst:30
 msgid "**Destination directory**"
 msgstr "**Répertoire de destination**"
 
-#: ../../config/options_filerenaming.rst:30
+#: ../../config/options_filerenaming.rst:32
 msgid ""
 "This specifies the destination parent directory to which files are moved "
 "when they are saved, if the \"Move files when saving\" option is "
@@ -102,39 +103,114 @@ msgstr ""
 "vous utilisez le répertoire \".\" les fichiers seront déplacés par "
 "rapport à leur emplacement actuel. S'ils sont déjà dans une sorte de "
 "structure de répertoires, cela ne fera probablement pas ce que vous "
-"voulez!"
+"voulez !"
 
-#: ../../config/options_filerenaming.rst:35
+#: ../../config/options_filerenaming.rst:37
 msgid "**Move additional files**"
 msgstr "**Déplacer des fichiers supplémentaires**"
 
-#: ../../config/options_filerenaming.rst:37
+#: ../../config/options_filerenaming.rst:39
 msgid ""
 "Enter patterns that match any other files you want Picard to move when "
 "saving music files (e.g.: \"Folder.jpg\", \"\\*.png\", \"\\*.cue\", "
-"\"\\*.log\"). Patterns are separated by spaces. When these additional "
-"files are moved they will end up in the release directory with your "
-"music files. In a pattern, the '\\*' character matches zero or more "
-"characters. Other text, like \".jpg\", matches those exact characters. "
-"Thus \"\\*.jpg\" matches \"cover.jpg\", \"liner.jpg\", \"a.jpg\", and \"."
-"jpg\", but not \"nomatch.jpg2\"."
+"\"\\*.log\"). Patterns support the Unix shell-style wildcards, and are "
+"separated by spaces. The wildcard patters available are:"
 msgstr ""
-"Entrez des modèles qui correspondent à tous les autres fichiers que "
-"Picard doit déplacer lors de l'enregistrement de fichiers musicaux (par "
-"exemple: \"folder.jpg\", \"\\*. png\", \"\\*. cue\", \"\\*. log\"). Les "
-"motifs sont séparés par des espaces. Lorsque ces fichiers "
-"supplémentaires sont déplacés, ils se retrouveront dans le répertoire de "
-"publication avec vos fichiers musicaux. Dans un modèle, le caractère "
-"\"\\*\" correspond à zéro ou plusieurs caractères. Un autre texte, comme "
-"\".jpg\", correspond à ces caractères exacts. Ainsi \"\\*.jpg\" "
-"correspond à \"cover.jpg\", \"liner.jpg\", \"a.jpg\" et \".jpg\", mais "
-"pas à \"nomatch.jpg2\"."
+"Entrez des motifs correspondant à tout autre fichier que vous souhaitez "
+"que Picard déplace lors de l'enregistrement des fichiers musicaux (par "
+"exemple : \"Dossier.jpg\", \"\\*.png\", \"\\*.cue\", \"\\*.log\"). Les "
+"modèles prennent en charge les caractères génériques de style shell Unix "
+"et sont séparés par des espaces. Les modèles de caractères génériques "
+"disponibles sont les suivants :"
 
-#: ../../config/options_filerenaming.rst:43
+#: ../../config/options_filerenaming.rst:44
+msgid "**Pattern**"
+msgstr "**Modèle**"
+
+#: ../../config/options_filerenaming.rst:44
+msgid "**Meaning**"
+msgstr "**Signification**"
+
+#: ../../config/options_filerenaming.rst:46
+msgid "\\*"
+msgstr "\\*"
+
+#: ../../config/options_filerenaming.rst:46
+msgid "matches everything"
+msgstr "correspond à tout"
+
+#: ../../config/options_filerenaming.rst:47
+msgid "?"
+msgstr "?"
+
+#: ../../config/options_filerenaming.rst:47
+msgid "matches any single character"
+msgstr "correspond à tout caractère unique"
+
+#: ../../config/options_filerenaming.rst:48
+msgid "\\[seq\\]"
+msgstr "\\[seq\\]"
+
+#: ../../config/options_filerenaming.rst:48
+msgid "matches any character in *seq*"
+msgstr "correspond à n'importe quel caractère de *seq*"
+
+#: ../../config/options_filerenaming.rst:49
+msgid "\\[!seq\\]"
+msgstr "\\[!seq\\]"
+
+#: ../../config/options_filerenaming.rst:49
+msgid "matches any character not in *seq*"
+msgstr "correspond à tout caractère ne figurant pas dans *seq*"
+
+#: ../../config/options_filerenaming.rst:52
+msgid ""
+"For a literal match, wrap the meta-characters in brackets. For example, "
+"'\\[?\\]' matches the character '?'."
+msgstr ""
+"Pour une correspondance littérale, mettez les métacaractères entre "
+"parenthèses. Par exemple, \"\\[?\\]\" correspond au caractère \"?\"."
+
+#: ../../config/options_filerenaming.rst:54
+msgid ""
+"When these additional files are moved they will end up in the release "
+"directory with your music files. In a pattern, the '\\*' character "
+"matches zero or more characters. Other text, like \".jpg\", matches "
+"those exact characters. Thus \"\\*.jpg\" matches \"cover.jpg\", \"liner."
+"jpg\", \"a.jpg\", and \".jpg\", but not \"nomatch.jpg2\"."
+msgstr ""
+"Lorsque ces fichiers supplémentaires sont déplacés, ils se retrouvent "
+"dans le répertoire de sortie avec vos fichiers musicaux. Dans un modèle, "
+"le caractère \"\\*\" correspond à zéro ou plusieurs caractères. Un autre "
+"texte, comme \".jpg\", correspond à ces caractères exacts. Ainsi, \"\\*."
+"jpg\" correspond à \"cover.jpg\", \"liner.jpg\", \"a.jpg\" et \".jpg\", "
+"mais pas à \"nomatch.jpg2\"."
+
+#: ../../config/options_filerenaming.rst:61
+msgid ""
+"This option can also be used to move subdirectories to the new release "
+"directory.  This is done by specifying the name of the subdirectory in "
+"the list of files to be moved. For example, if your album folders have a "
+"subfolder called \"Artwork\", \"covers\" or \"scans\" that contains "
+"additional image files that you also want to move to the new release "
+"directory, simply add \"artwork\", \"covers\" and \"scans\" to the list "
+"of additional file matching patterns."
+msgstr ""
+"Cette option peut également être utilisée pour déplacer des sous-"
+"répertoires vers le nouveau répertoire de la version.  Cela se fait en "
+"spécifiant le nom du sous-répertoire dans la liste des fichiers à "
+"déplacer. Par exemple, si vos dossiers d'albums ont un sous-dossier "
+"appelé \"Artwork\", \"covers\" ou \"scans\" qui contient des fichiers "
+"images supplémentaires que vous souhaitez également déplacer vers le "
+"nouveau répertoire de sortie, il suffit d'ajouter \"artwork\", \"covers"
+"\" et \"scans\" à la liste des modèles de correspondance des fichiers "
+"supplémentaires."
+
+#: ../../config/options_filerenaming.rst:67
 msgid "**Delete empty directories**"
 msgstr "**Supprimer les répertoires vides**"
 
-#: ../../config/options_filerenaming.rst:45
+#: ../../config/options_filerenaming.rst:69
 msgid ""
 "When selected, Picard will remove directories that have become empty "
 "once a move is completed. Leave this unchecked if you want Picard to "
@@ -151,11 +227,11 @@ msgstr ""
 "répertoire vide n'a plus de travail à faire, et la suppression du "
 "répertoire le clarifie."
 
-#: ../../config/options_filerenaming.rst:50
+#: ../../config/options_filerenaming.rst:74
 msgid "**Rename files when saving**"
 msgstr "**Renommer les fichiers lors de l'enregistrement**"
 
-#: ../../config/options_filerenaming.rst:52
+#: ../../config/options_filerenaming.rst:76
 msgid ""
 "Select this option to let Picard change the file and directory names of "
 "your files when it saves them, in order to make the file and directory "
@@ -166,11 +242,11 @@ msgstr ""
 "afin de rendre les noms de fichier et de répertoire cohérents avec les "
 "nouvelles métadonnées."
 
-#: ../../config/options_filerenaming.rst:55
+#: ../../config/options_filerenaming.rst:79
 msgid "**Replace non-ASCII characters**"
 msgstr "**Remplacer les caractères non ASCII**"
 
-#: ../../config/options_filerenaming.rst:57
+#: ../../config/options_filerenaming.rst:81
 msgid ""
 "Select this option to replace non-ASCII characters with their ASCII "
 "equivalent (e.g.: 'á', 'ä' and 'ǎ' with 'a'; 'é', 'ě' and 'ë' with 'e'; "
@@ -178,16 +254,16 @@ msgid ""
 "found on `Wikipedia <https://en.wikipedia.org/wiki/ASCII>`_."
 msgstr ""
 "Sélectionnez cette option pour remplacer les caractères non ASCII par "
-"leur équivalent ASCII (par exemple: 'á', 'ä' et 'ǎ' par 'a'; 'é', 'ě' et "
-"'ë' par 'e'; 'æ' avec \"ae\"). Plus d'informations sur les caractères "
-"ASCII peuvent être trouvées sur `Wikipedia <https://en.wikipedia.org/"
-"wiki/ASCII>`_."
+"leur équivalent ASCII (par exemple : 'á', 'ä' et 'ǎ' par 'a' ; 'é', 'ě' "
+"et 'ë' par 'e' ; 'æ' avec \"ae\"). Plus d'informations sur les "
+"caractères ASCII peuvent être trouvées sur `Wikipedia <https://en."
+"wikipedia.org/wiki/ASCII>`_."
 
-#: ../../config/options_filerenaming.rst:61
+#: ../../config/options_filerenaming.rst:85
 msgid "**Windows compatibility**"
 msgstr "**Compatibilité Windows**"
 
-#: ../../config/options_filerenaming.rst:63
+#: ../../config/options_filerenaming.rst:87
 msgid ""
 "This option tells Picard to replace all Windows-incompatible characters "
 "with an underscore. This is enabled by default on Windows systems, with "
@@ -197,11 +273,11 @@ msgstr ""
 "incompatibles avec Windows par un trait de soulignement. Ceci est activé "
 "par défaut sur les systèmes Windows, sans option de désactivation."
 
-#: ../../config/options_filerenaming.rst:66
-msgid "**Selected file naming script**"
-msgstr "**Système de dénomination des fichiers sélectionnés**"
+#: ../../config/options_filerenaming.rst:90
+msgid "**Name files like this**"
+msgstr "**Nommez des fichiers comme celui-ci**"
 
-#: ../../config/options_filerenaming.rst:68
+#: ../../config/options_filerenaming.rst:92
 msgid ""
 "As of Picard version 2.7, multiple file naming scripts are supported.  "
 "This option allows the user to select the file naming script to use from "
@@ -221,11 +297,7 @@ msgstr ""
 "bouton \"Ouvrir l'éditeur de script de nommage de fichier\" est "
 "sélectionné."
 
-#: ../../config/options_filerenaming.rst:73
-msgid "**Files will be named like this**"
-msgstr "**Les fichiers seront nommés comme ceci**"
-
-#: ../../config/options_filerenaming.rst:75
+#: ../../config/options_filerenaming.rst:101
 msgid ""
 "Below the file naming script selector is a section showing examples of "
 "the output of the script in two columns: Before and After.  If you "
@@ -242,16 +314,18 @@ msgstr ""
 "vous n'avez sélectionné aucun fichier, des exemples par défaut seront "
 "fournis."
 
-#: ../../config/options_filerenaming.rst:80
+#: ../../config/options_filerenaming.rst:105
 msgid ""
 "You can change the randomly selected example files from your selected "
 "files list by clicking on the :guilabel:`Reload examples` button."
 msgstr ""
-"Vous pouvez changer les fichiers d'exemple choisis au hasard dans votre "
-"liste de fichiers sélectionnés en cliquant sur le bouton :guilabel:"
-"`Recharger les exemples`."
+"Les scripts sont souvent abordés dans le `MetaBrainz Community Forum "
+"<https://community.metabrainz.org/>`_, et il existe un fil de discussion "
+"spécifique à `la dénomination de fichier et les extraits de script "
+"<https://community.metabrainz.org/t/repository-for-neat-file-name-string-"
+"patterns-and-tagger-script-snippets/2786/>`_."
 
-#: ../../config/options_filerenaming.rst:85
+#: ../../config/options_filerenaming.rst:111
 msgid ""
 "Any new tags set or tags modified by the file naming script will not be "
 "written to the output files' metadata."
@@ -263,3 +337,27 @@ msgstr ""
 #: ../../config/options_filerenaming.rst:91
 msgid ":doc:`options_filerenaming_editor`"
 msgstr ":doc:`options_filerenaming_editor`"
+
+#~ msgid "File Naming Options"
+#~ msgstr "Options de dénomination de fichier"
+
+#~ msgid ""
+#~ "Enter patterns that match any other files you want Picard to move "
+#~ "when saving music files (e.g.: \"Folder.jpg\", \"\\*.png\", \"\\*.cue"
+#~ "\", \"\\*.log\"). Patterns are separated by spaces. When these "
+#~ "additional files are moved they will end up in the release directory "
+#~ "with your music files. In a pattern, the '\\*' character matches zero "
+#~ "or more characters. Other text, like \".jpg\", matches those exact "
+#~ "characters. Thus \"\\*.jpg\" matches \"cover.jpg\", \"liner.jpg\", "
+#~ "\"a.jpg\", and \".jpg\", but not \"nomatch.jpg2\"."
+#~ msgstr ""
+#~ "Entrez des modèles qui correspondent à tous les autres fichiers que "
+#~ "Picard doit déplacer lors de l'enregistrement de fichiers musicaux "
+#~ "(par exemple : \"folder.jpg\", \"\\*. png\", \"\\*. cue\", \"\\*. log"
+#~ "\"). Les motifs sont séparés par des espaces. Lorsque ces fichiers "
+#~ "supplémentaires sont déplacés, ils se retrouveront dans le répertoire "
+#~ "de publication avec vos fichiers musicaux. Dans un modèle, le "
+#~ "caractère \"\\*\" correspond à zéro ou plusieurs caractères. Un autre "
+#~ "texte, comme \".jpg\", correspond à ces caractères exacts. Ainsi "
+#~ "\"\\*.jpg\" correspond à \"cover.jpg\", \"liner.jpg\", \"a.jpg\" et "
+#~ "\".jpg\", mais pas à \"nomatch.jpg2\"."

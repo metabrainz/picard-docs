@@ -25,7 +25,7 @@ import conf
 import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.15'
+SCRIPT_VERS = '0.16'
 SCRIPT_COPYRIGHT = '2021'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -82,6 +82,8 @@ LANGUAGE_NAMES = {
     'tr': 'Turkish',
     'zh': 'Chinese',
 }
+
+
 class SPHINX_():    # pylint: disable=too-few-public-methods
     """Sphinx constants used when building the documentation.
     """
@@ -183,7 +185,7 @@ RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "([^"]+)".*$')
 RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
 RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
 
-RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(-[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
+RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(_[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 
 ##################################################
 #   Text to display when the script is started   #
@@ -456,6 +458,8 @@ class POCheck():
         self.file_count = 0
         self.line_count = 0
         self.bad_files = []
+        self.filename = ''
+        self.filename_written = False
 
     def get_lines(self, file_lines):
         """Assemble the content into full lines for testing.
@@ -489,7 +493,15 @@ class POCheck():
         self.line_count += len(tx_lines)
         return tx_lines
 
-    def Check_line(self, filename, line_number, content):
+    def write_warning(self, message):
+        if not self.filename_written:
+            self.bad_files.append('')
+            self.bad_files.append('File: {0}'.format(self.filename,))
+            self.filename_written = True
+        self.warning_count += 1
+        self.bad_files.append('  ' + message)
+
+    def Check_line(self, line_number, content):   # pylint: disable=too-many-branches
         """Check the line for restructured-text errors.
 
         Args:
@@ -498,25 +510,60 @@ class POCheck():
             content (str): The assembled line to check
         """
         if re.search(r"`[^`_]+`\s+_", content) or re.search(r"`[^`']*'\s*_", content):
-            self.warning_count += 1
-            self.bad_files.append('Link [L{0}]: {1}'.format(line_number, filename))
-            # return
+            self.write_warning('[L{0}]: Link'.format(line_number,))
         for item in IGNORE_DIRECTIVES:
             if re.search(r"\.\.\s+" + item + r"\s+::", content):
-                self.warning_count += 1
-                self.bad_files.append('Directive "{0}" [L{1}]: {2}'.format(item, line_number, filename))
-                # return
+                self.write_warning('[L{0}]: Directive "{1}"'.format(line_number, item))
         for item in IGNORE_ROLES:
             if re.search(r":\s+" + item + r":", content) \
                or re.search(r":" + item + r"\s+:", content) \
                or re.search(r":" + item + r":\s+`", content) \
                or re.search(r"[^\:]+" + item + r":`", content):
-                self.warning_count += 1
-                self.bad_files.append('Role "{0}" [L{1}]: {2}'.format(item, line_number, filename))
+                self.write_warning('[L{0}]: Role "{1}"'.format(line_number, item))
+        links = re.findall(r"`([^`]*)`_", content)
+        for item in ['doc', 'download', 'numref', 'ref']:
+            links.extend(re.findall(r":" + item + r":`([^`]*)`", content))
+        for item in links:
+            if (
+                item.count('<') != item.count('>')
+                or '<>' in item
+                or re.search(r"\S<", ' ' + item)
+                or re.search(r"<\S*\s+.*>", item)
+            ):
+                self.write_warning('[L{0}]: Link "{1}"'.format(line_number, item))
+        indices = re.findall(r":index:`[^<]*<([^>]*)>", content)
+        for item in indices:
+            if re.search(r"\s+(,|;)", item):
+                self.write_warning('[L{0}]: Index "{1}"'.format(line_number, item))
+        backticks = content.count('`') % 2
+        if backticks:
+            self.write_warning('[L{0}]: Backtick Mismatch'.format(line_number,))
+            return
+        backticks_open = False
+        lastchar = ''
+        nextchar = ''
+        ccount = 0
+        for char in content:
+            ccount += 1
+            if char == '`':
+                backticks_open = not backticks_open
+                nextchar = content[ccount] if len(content) > ccount else ''
+                if backticks_open:
+                    # if lastchar and lastchar not in ' :"\'' and nextchar and nextchar != '`':
+                    if lastchar and nextchar and nextchar != '`' and re.search(r"[a-zA-Z0-9]+", lastchar):
+                        self.write_warning('[L{0},C{1}]: Backtick Open "{2}"'.format(line_number, ccount, lastchar + char + nextchar))
+                        break
+                else:
+                    if lastchar != '`' and nextchar and re.search(r"[a-zA-Z0-9]+", nextchar):
+                        self.write_warning(' [L{0},C{1}]: Backtick Close "{2}"'.format(line_number, ccount, lastchar + char + nextchar))
+                        break
+            lastchar = char
 
     def check(self, locale_dir, filetype='po'):
         """Check all translation *.po files in the specified directory and subdirectories.
         """
+        if not (os.path.exists(locale_dir) and os.path.isdir(locale_dir)):
+            return
         print("\nTesting restructured-text in *.po files.\nStarting root directory: {0}\n".format(locale_dir,))
         if os.path.isdir(locale_dir):
             for dir_name, subdir_list, file_list in os.walk(locale_dir):   # pylint: disable=unused-variable
@@ -524,18 +571,21 @@ class POCheck():
                     if re.match(r'.*\.' + filetype + '$', file_name, re.IGNORECASE):
                         self.file_count += 1
                         filename = os.path.join(dir_name, file_name)
+                        self.filename_written = False
                         print("{0}\r".format((filename + ' ' * 80)[0:79],), end='', flush=True)
+                        self.filename = filename
                         content = {}
                         with open(filename, 'r', encoding='utf8') as f:
                             content = self.get_lines(f.readlines())
                         for key in sorted(content):
-                            self.Check_line(filename, key, content[key])
+                            self.Check_line(key, content[key])
             print(' ' * 79 + '\r', end='', flush=True)
         print("Checked {0:,} lines in {1:,} files.  Found {2:,} issues to check.".format(self.line_count, self.file_count, self.warning_count))
         if self.bad_files:
             print("\nCheck the following for errors:")
             for item in self.bad_files:
-                print("  {0}".format(item,))
+                # print("  {0}".format(item,))
+                print(item)
         print()
         if self.warning_count:
             exit_with_code(1 if self.warning_count else 0)
@@ -575,8 +625,9 @@ def parse_command_line():
         action='store',
         nargs='+',
         type=str,
-        choices=['rst', 'po', 'flake8', 'pylint', 'isort', 'python'],
+        choices=['rst', 'sphinx', 'po', 'flake8', 'pylint', 'isort', 'python'],
         help="rst = lint check the rst files, "
+             "sphinx = test build of the *.rst files "
              "po = rudimentary test of RST in *.po files "
              "flake8 = test python files with flake8, "
              "pylint = test python files with pylint, "
@@ -636,6 +687,33 @@ def parse_command_line():
 
     args = arg_parser.parse_args()
     return args
+
+
+def run_sphinx_test(language=''):
+    """Perform a trial build using Sphinx with all warnings enabled.
+    """
+    print('\nSphinx test build.\n')
+    if not (language and language in LANGUAGES):
+        language = DEFAULT_LANGUAGE
+    if language == DEFAULT_LANGUAGE:
+        language_option = ''
+    else:
+        language_option = '-D language=' + language
+        # update_po(language)
+    junk_dir = '_junk'
+    command = '{0} -b {1} {2} {3} {4} {5}'.format(
+        SPHINX_.BUILD,
+        'dummy',
+        '-W --keep-going',
+        SPHINX_.SOURCE_DIR,
+        junk_dir,
+        language_option,
+    ).strip().replace('  ', ' ')
+    exit_code = subprocess.run(command, shell=True, check=False, capture_output=False, timeout=SPHINX_.BUILD_TIMEOUT).returncode
+    remove_dir(junk_dir)
+    print()
+    if exit_code:
+        exit_with_code(exit_code)
 
 
 def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
@@ -753,7 +831,7 @@ def create_directory(dir_path, dir_name):
             exit_with_code(1)
 
 
-def clean_directory(dir_path, dir_name):
+def clean_directory(dir_path, dir_name, create_dir=True):
     """Removes all files and subdirectories for the specified directory.  If the specified
     directory does not exist, it will be created.  Includes multiple checks for success to
     accommodate race condition in Windows.
@@ -795,7 +873,7 @@ def clean_directory(dir_path, dir_name):
         else:
             print("\nThe {0} directory is not a directory: {1}\n".format(dir_name, dir_path))
             exit_with_code(1)
-    if not os.path.exists(dir_path):
+    if create_dir and not os.path.exists(dir_path):
         create_directory(dir_path=dir_path, dir_name=dir_name)
 
 
@@ -808,6 +886,7 @@ def remove_dir(dir_path):
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
+            clean_directory(dir_path, 'temporary build', create_dir=False)
             err = None
             tries = 5
             while tries > 0:
@@ -1273,10 +1352,19 @@ def main():
             if target == 'rst':
                 run_lint(SPHINX_.SOURCE_DIR, ignore_info=IGNORE_INFO_MESSAGES, fail_on_warnings=FAIL_ON_WARNINGS)
 
+            elif target == 'sphinx':
+                for lang in process_languages:
+                    run_sphinx_test(language=lang)
+
             elif target == 'po':
                 # check_rst_in_po()
                 checker = POCheck()
-                checker.check(SPHINX_.LOCALE_DIR)
+                if process_languages == [DEFAULT_LANGUAGE]:
+                    checker.check(SPHINX_.LOCALE_DIR)
+                else:
+                    for lang in process_languages:
+                        test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
+                        checker.check(test_target)
 
             elif target == 'python':
                 run_isort()

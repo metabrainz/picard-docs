@@ -112,11 +112,6 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
    The director of a video track as provided by the Video Director relationship in MusicBrainz.  (*Since Picard 2.6*)
 
-**discid**
-
-    Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of
-    contents (TOC) information read from the disc.
-
 **discnumber**
 
     Number of the disc in this release that contains this track.
@@ -172,7 +167,9 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **musicbrainz_discid**
 
-    Disc ID if the album was added using :menuselection:`"Tools --> Lookup CD"`. (*since Picard 0.12*)
+    Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of
+    contents (TOC) information read from the disc. This tag contains the Disc ID if the album information was retrieved using
+    :menuselection:`"Tools --> Lookup CD"`. (*since Picard 0.12*)
 
 **musicbrainz_originalalbumid**
 
