@@ -41,9 +41,9 @@ msgstr ""
 msgid "Variables explanation:"
 msgstr "Explication des variables :"
 
-#: ../../appendices/plugins_api.rst:23
-msgid "**PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function."
-msgstr "**PLUGIN_DESCRIPTION** doit être aussi simple que possible, tout en décrivant toujours la fonction principale."
+#: ../../appendices/plugins_api.rst:30
+msgid "**PLUGIN_NAME** should be a short but descriptive name for the plugin."
+msgstr ""
 
 #: ../../appendices/plugins_api.rst:25
 msgid "**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_."
@@ -53,9 +53,17 @@ msgstr ""
 "ou \"2.12.4\"). Il est recommandé d'utiliser `Semantic Versioning <https"
 "://semver.org/>`_."
 
-#: ../../appendices/plugins_api.rst:28
-msgid "**PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin to run with. New Picard versions will usually support older plugin API versions, but on breaking changes support for older plugin versions can be dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
-msgstr "**PLUGIN_API_VERSIONS** doit être défini sur les versions de Picard avec lesquelles s'exécuter ce plugin. Les nouvelles versions de Picard prendront généralement en charge les anciennes versions de l'API de plug-in, mais en cas de modification, la prise en charge des anciennes versions de plug-in peut être abandonnée. Les versions disponibles pour Picard 2 sont \"2.0\", \"2.1\" et \"2.2\"."
+#: ../../appendices/plugins_api.rst:38
+msgid ""
+"**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin "
+"versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\")."
+" It is recommended that you use `Semantic Versioning "
+"<https://semver.org/>`_."
+msgstr ""
+"**PLUGIN_VERSION** doit être rempli avec la version de le Plug-in. Les "
+"versions de plug-in doivent être au format ``x.y.z`` (par exemple: "
+"\"1.0\" ou \"2.12.4\"). Il est recommandé d'utiliser `Semantic Versioning"
+" <https://semver.org/>`_."
 
 #: ../../appendices/plugins_api.rst:32
 msgid ""
