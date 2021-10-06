@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-06 09:47-0600\n"
-"PO-Revision-Date: 2021-08-24 12:50+0000\n"
+"PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/configoptions_general/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/configoptions_general/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_general.rst:4
@@ -93,7 +94,6 @@ msgid "**Automatically scan all new files**"
 msgstr "**Analyser automatiquement tous les nouveaux fichiers**"
 
 #: ../../config/options_general.rst:37
-#, fuzzy
 msgid ""
 "Check this box if you want Picard to scan each music file you add and "
 "look for an :index:`AcoustID <pair: AcoustID; automatic scan>` "
@@ -103,18 +103,18 @@ msgid ""
 "music file at any time using :menuselection:`\"Tools --> Scan\"`. See "
 "also :ref:`ref_scan_files` and :ref:`ref_tutorial_acoustid`."
 msgstr ""
-"Cochez cette case si vous souhaitez que Picard analyse chaque fichier de "
-"musique que vous ajoutez et recherche une empreinte digitale AcoustID. "
-"Cela prend du temps, mais peut être utile pour vous et MusicBrainz. "
-"Laissez-la décochée si vous ne voulez pas que Picard fasse cette analyse "
-"automatiquement. Dans tous les cas, vous pouvez demander à Picard de "
-"scanner à tout moment un fichier musical particulier en utilisant "
-":menuselection:`\"Outils --> Analyser\"`."
+"Cochez cette case si vous voulez que Picard analyse chaque fichier musical "
+"que vous ajoutez et recherche une empreinte :index:`AcoustID <pair : "
+"AcoustID ; scan automatique>` empreinte digitale. Cela prend du temps, mais "
+"peut être utile pour vous et MusicBrainz. Laissez cette case décochée si "
+"vous ne voulez pas que Picard fasse ce scan automatiquement. Dans tous les "
+"cas, vous pouvez demander à Picard de scanner un fichier musical particulier "
+"à tout moment en utilisant :menuselection:`\"Outils --> Scan\"`. Voir aussi "
+":ref:`ref_scan_files` et :ref:`ref_tutorial_acoustid`."
 
 #: ../../config/options_general.rst:43
-#, fuzzy
 msgid "**Automatically cluster all new files**"
-msgstr "**Analyser automatiquement tous les nouveaux fichiers**"
+msgstr "**Automatiquement regrouper tous les nouveaux fichiers**"
 
 #: ../../config/options_general.rst:45
 msgid ""
@@ -124,12 +124,21 @@ msgid ""
 "any case, you can direct Picard to cluster files any time using "
 ":menuselection:`\"Tools --> Cluster\"`. See also :ref:`ref_lookup_files`."
 msgstr ""
+"Cochez cette case si vous voulez que Picard regroupe automatiquement tous "
+"les fichiers chargés dans l'album :index:`clusters <pair: cluster; "
+"regroupement automatique>`. Ne la cochez pas si vous ne voulez pas que "
+"Picard fasse cela automatiquement. Dans tous les cas, vous pouvez demander à "
+"Picard de regrouper les fichiers à tout moment en utilisant :menuselection:`"
+"\"Outils --> Cluster\"`. Voir aussi :ref:`ref_lookup_files`."
 
 #: ../../config/options_general.rst:52
 msgid ""
 "You can either enable \"Automatically scan all new files\" or "
 "\"Automatically cluster all new files\", but not both."
 msgstr ""
+"Vous pouvez activer soit l'option \"Analyser automatiquement tous les "
+"nouveaux fichiers\", soit l'option \"Regrouper automatiquement tous les "
+"nouveaux fichiers\", mais pas les deux."
 
 #: ../../config/options_general.rst:55
 msgid "**Ignore MBIDs when loading new files**"
@@ -232,4 +241,3 @@ msgstr ""
 
 #~ msgid "General Options"
 #~ msgstr "Options générales"
-

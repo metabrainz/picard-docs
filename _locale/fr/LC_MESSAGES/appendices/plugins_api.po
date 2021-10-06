@@ -9,13 +9,16 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-02 14:13-0600\n"
-"PO-Revision-Date: 2021-08-24 12:50+0000\n"
+"PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/"
 "picard-docs/appendicesplugins_api/fr/>\n"
 "Language: fr\n"
-"X-Generator: Weblate 4.7.2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.8.0\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../../appendices/plugins_api.rst:4
 msgid ""
@@ -43,7 +46,7 @@ msgstr "Explication des variables :"
 
 #: ../../appendices/plugins_api.rst:30
 msgid "**PLUGIN_NAME** should be a short but descriptive name for the plugin."
-msgstr ""
+msgstr "**PLUGIN_NAME** doit être un nom court mais descriptif du plugin."
 
 #: ../../appendices/plugins_api.rst:25
 msgid "**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_."
@@ -75,6 +78,14 @@ msgid ""
 " to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) "
 "and lists (``<ul>``, ``<ol>``)."
 msgstr ""
+"**PLUGIN_DESCRIPTION** doit être aussi simple que possible, tout en "
+"décrivant la fonction principale. Si votre plugin est destiné à Picard 2.7 "
+"ou plus, vous pouvez utiliser la syntaxe `Markdown <https://daringfireball."
+"net/projects/markdown/>`_ pour formater le texte.  Si votre plugin cible des "
+"versions antérieures, vous pouvez à la place utiliser un simple formatage "
+"HTML. Veuillez limiter l'utilisation du HTML au formatage de base du texte ("
+"par exemple, ``<strong>``, ``<em>``), aux liens (``<a>``) et aux listes "
+"(``<ul>``, ``<ol>``)."
 
 #: ../../appendices/plugins_api.rst:38
 msgid ""
@@ -310,4 +321,3 @@ msgstr ""
 #~ "**PLUGIN_DESCRIPTION** doit être aussi simple"
 #~ " que possible, tout en décrivant "
 #~ "toujours la fonction principale."
-

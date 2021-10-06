@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
-#, fuzzy
+# Bob Swift <bswift@rsds.ca>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-28 15:19-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-10-06 18:03+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/usagesubmit_cluster_as_release/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/submit_cluster_as_release.rst:4
@@ -23,6 +26,8 @@ msgid ""
 ":index:`Submitting Cluster as a Release <cluster; submitting, release; "
 "submitting>`"
 msgstr ""
+":index:`Soumettre le cluster comme une version <cluster; soumettre, release; "
+"soumettre>`"
 
 #: ../../usage/submit_cluster_as_release.rst:6
 msgid ""
@@ -31,28 +36,36 @@ msgid ""
 "with data from your files.  This is typically used when you have the "
 "music files for an album, but it is not yet available on MusicBrainz."
 msgstr ""
+"Picard peut vous aider à soumettre des informations à la base de données "
+"MusicBrainz en remplissant automatiquement le formulaire de soumission sur "
+"le site Web avec les données de vos fichiers.  Cette méthode est "
+"généralement utilisée lorsque vous disposez des fichiers musicaux d'un "
+"album, mais que celui-ci n'est pas encore disponible sur MusicBrainz."
 
 #: ../../usage/submit_cluster_as_release.rst:11
 msgid "Submitting multiple tracks as a cluster"
-msgstr ""
+msgstr "Soumettre plusieurs pistes en tant que groupe"
 
 #: ../../usage/submit_cluster_as_release.rst:13
 msgid "To use this functionality, the steps to follow are:"
 msgstr ""
+"Pour utiliser cette fonctionnalité, les étapes à suivre sont les suivantes :"
 
 #: ../../usage/submit_cluster_as_release.rst:15
 msgid "**1. Load the files**"
-msgstr ""
+msgstr "**1. Chargez les fichiers**"
 
 #: ../../usage/submit_cluster_as_release.rst:17
 msgid ""
 "Drag the batch of files to process from the browser pane to the "
 "\"Unclustered Files\" section in the clustering pane."
 msgstr ""
+"Faites glisser le lot de fichiers à traiter depuis le volet du navigateur "
+"vers la section \"Fichiers non regroupés\" du volet de regroupement."
 
 #: ../../usage/submit_cluster_as_release.rst:26
 msgid "**2. Cluster the files**"
-msgstr ""
+msgstr "**2. Regroupez les fichiers**"
 
 #: ../../usage/submit_cluster_as_release.rst:28
 msgid ""
@@ -64,10 +77,17 @@ msgid ""
 "ensure that it is complete for the album, and does not contain any "
 "additional files."
 msgstr ""
+"Sélectionnez les fichiers dans le panneau de clustering et combinez-les en "
+"clusters d'albums en utilisant la commande :menuselection:`\"Outils --> "
+"Cluster\"`.  Picard tentera de regrouper les fichiers en se basant sur leurs "
+"métadonnées existantes.  Selon la qualité des métadonnées, vous devrez peut-"
+"être ajouter manuellement des éléments au cluster ou en supprimer pour vous "
+"assurer qu'il est complet pour l'album et qu'il ne contient pas de fichiers "
+"supplémentaires."
 
 #: ../../usage/submit_cluster_as_release.rst:40
 msgid "**3. Submit the cluster**"
-msgstr ""
+msgstr "**3. Soumettre le cluster**"
 
 #: ../../usage/submit_cluster_as_release.rst:42
 msgid ""
@@ -76,10 +96,15 @@ msgid ""
 "right-click to bring up the context menu.  From there you should see an "
 "option to :menuselection:`\"Submit cluster as release...\"`."
 msgstr ""
+"Une fois que vous avez les bons fichiers dans le cluster et qu'il est "
+"complet pour l'album, vous pouvez le soumettre à MusicBrainz en "
+"sélectionnant le cluster et en faisant un clic droit pour faire apparaître "
+"le menu contextuel.  De là, vous devriez voir une option :menuselection:`"
+"\"Soumettre le cluster en tant que communiqué...\"`."
 
 #: ../../usage/submit_cluster_as_release.rst:53
 msgid "**4. Confirm submitted information**"
-msgstr ""
+msgstr "**4. Confirmez les informations soumises**"
 
 #: ../../usage/submit_cluster_as_release.rst:55
 msgid ""
@@ -90,10 +115,17 @@ msgid ""
 "Selecting :guilabel:`Continue` will open an \"Add Release\" edit screen "
 "with the fields populated with your information."
 msgstr ""
+"Lorsque l'option est sélectionnée, le système soumet une demande d'ajout des "
+"informations à MusicBrainz, et un écran de confirmation s'affiche dans votre "
+"navigateur.  Vous pouvez voir les informations qui seront soumises en "
+"développant le lien \"Données soumises avec cette demande\".  En "
+"sélectionnant :guilabel:`Continuer`, vous ouvrirez un écran d'édition "
+"\"Ajouter un communiqué\" dont les champs seront remplis avec vos "
+"informations."
 
 #: ../../usage/submit_cluster_as_release.rst:63
 msgid "**5. Complete the submission**"
-msgstr ""
+msgstr "**5. Complétez la soumission**"
 
 #: ../../usage/submit_cluster_as_release.rst:65
 msgid ""
@@ -102,6 +134,10 @@ msgid ""
 "and submit your edit as if you had entered all of the information "
 "manually."
 msgstr ""
+"En sélectionnant :guilabel:`Continuer`, vous ouvrirez un écran d'édition "
+"\"Ajouter un communiqué\" dont les champs sont remplis avec vos "
+"informations. À partir de cet écran, vous pouvez vérifier et soumettre votre "
+"modification comme si vous aviez saisi toutes les informations manuellement."
 
 #: ../../usage/submit_cluster_as_release.rst:70
 msgid ""
@@ -111,10 +147,16 @@ msgid ""
 "release groups have been matched to existing items as appropriate.  You "
 "should also add an edit note citing the source of the information."
 msgstr ""
+"Avant de soumettre l'édition, vous devez vérifier que toutes les "
+"informations ont été correctement saisies conformément aux `Guides de style "
+"MusicBrainz <https://musicbrainz.org/doc/Style>`_ et que les groupes "
+"d'artistes et de sorties ont été mis en correspondance avec des éléments "
+"existants, le cas échéant.  Vous devriez également ajouter une note "
+"d'édition citant la source de l'information."
 
 #: ../../usage/submit_cluster_as_release.rst:75
 msgid "Submitting a single track"
-msgstr ""
+msgstr "Soumission d'une seule piste"
 
 #: ../../usage/submit_cluster_as_release.rst:77
 msgid ""
@@ -128,4 +170,14 @@ msgid ""
 "items as appropriate.  You should also add an edit note citing the source"
 " of the information."
 msgstr ""
-
+"Vous pouvez également utiliser cette fonctionnalité pour soumettre une seule "
+"piste en tant que version ou en tant qu'enregistrement autonome.  Pour ce "
+"faire, cliquez avec le bouton droit de la souris sur le fichier et "
+"sélectionnez :menuselection:`\"Soumettre le fichier comme enregistrement "
+"autonome...\"` ou :menuselection:`\"Soumettre le fichier comme release...\"` "
+"selon le cas. Encore une fois, assurez-vous de confirmer que les "
+"informations ont été correctement saisies conformément aux `Guides de style "
+"MusicBrainz <https://musicbrainz.org/doc/Style>`_ et que les groupes "
+"d'artistes et de versions ont été mis en correspondance avec des éléments "
+"existants, le cas échéant.  Vous devez également ajouter une note d'édition "
+"citant la source de l'information."
