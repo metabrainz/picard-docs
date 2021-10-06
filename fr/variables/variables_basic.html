@@ -1,79 +1,37 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="fr" >
 <head>
   <meta charset="utf-8" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Variables de base &mdash; Documentation MusicBrainz Picard v2.6.3</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
-
-  
-  
-    <link rel="shortcut icon" href="../_static/picard-icon.png"/>
-  
-
-  
-  
-
-  
-
-  
+  <title>Variables de base &mdash; Documentation MusicBrainz Picard v2.6.4</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Variables de fichier" href="variables_file.html" />
     <link rel="prev" title="Balises avancées" href="tags_advanced.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                v2.6.3
+                v2.6.4
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,18 +39,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption"><span class="caption-text">À propos de Picard</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
@@ -165,71 +112,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">MusicBrainz Picard</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="variables.html">Balises &amp; Variables</a> &raquo;</li>
-        
       <li>Variables de base</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="section" id="basic-variables">
 <h1><span class="target" id="index-1"></span>Variables de base<a class="headerlink" href="#basic-variables" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Ces variables sont renseignées à partir des données MusicBrainz pour la plupart des versions, sans aucun paramètre Picard particulier.</p>
@@ -239,7 +145,7 @@
 </div>
 <p><strong>_absolutetracknumber</strong></p>
 <blockquote>
-<div><p>Le numéro absolu de cette piste sans tenir compte du numéro de disque (c’est-à-dire: <code class="docutils literal notranslate"><span class="pre">%_absolutetracknumber%</span></code> de <code class="docutils literal notranslate"><span class="pre">%_totalbumtracks%</span></code>). Par exemple, cette valeur serait 11 pour la deuxième piste du disque 2 où le disque 1 a 9 pistes. (<em>depuis Picard 1.3</em>)</p>
+<div><p>Le numéro absolu de cette piste sans tenir compte du numéro de disque (c’est-à-dire : <code class="docutils literal notranslate"><span class="pre">%_absolutetracknumber%</span></code> de <code class="docutils literal notranslate"><span class="pre">%_totalbumtracks%</span></code>). Par exemple, cette valeur serait 11 pour la deuxième piste du disque 2 où le disque 1 a 9 pistes. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>_albumartists</strong></p>
 <blockquote>
@@ -265,13 +171,17 @@
 <blockquote>
 <div><p>0 si toutes les pistes de l’album ont le même artiste principal, 1 sinon. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
+<p><strong>_musicbrainz_discids</strong></p>
+<blockquote>
+<div><p>Cette variable à valeurs multiples contient une liste de tous les identifiants de disque associés à la version sélectionnée.  La liste fournie pour chaque support ne comprend que les identifiants de disque associés à ce support. Par exemple, la liste fournie pour le disque 1 d’un ensemble de trois CD ne comprendra pas les identifiants des disques 2 et 3 de l’ensemble.</p>
+</div></blockquote>
 <p><strong>_pregap</strong></p>
 <blockquote>
 <div><p>Réglé sur 1 si la piste est une « <a class="reference external" href="https://musicbrainz.org/doc/Terminology#hidden_track">piste pré-assemblée</a> ». (<em>depuis Picard 1.3.1</em>)</p>
 </div></blockquote>
 <p id="ref-primaryreleasetype"><strong>_primaryreleasetype</strong></p>
 <blockquote>
-<div><p>Le type de groupe principal de version (ex: album, single, ep, diffusion ou autre).</p>
+<div><p>Le type de groupe principal de version (c’est-à-dire : album, single, ep, diffusion ou autre).</p>
 </div></blockquote>
 <p><strong>_rating</strong></p>
 <blockquote>
@@ -315,7 +225,7 @@
 </div></blockquote>
 <p id="ref-secondaryreleasetype"><strong>_secondaryreleasetype</strong></p>
 <blockquote>
-<div><p>Zéro ou plus de types secondaires pour le groupe de versions (c’est-à-dire: livre audio, compilation, DJ-mix, interview, live, mixtape / street, remix, bande sonore ou speechword).</p>
+<div><p>Zéro ou plus de types secondaires pour le groupe de versions (c’est-à-dire : livre audio, compilation, DJ-mix, interview, live, mixtape / street, remix, bande sonore ou speechword).</p>
 </div></blockquote>
 <p><strong>_totalalbumtracks</strong></p>
 <blockquote>
@@ -325,7 +235,6 @@
 
 
            </div>
-           
           </div>
           <footer>
   
@@ -357,9 +266,7 @@
 
         </div>
       </div>
-
     </section>
-
   </div>
   
 
@@ -395,18 +302,11 @@
 
     </div>
   </div>
-
-
-  <script type="text/javascript">
+<script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
