@@ -40,10 +40,26 @@ msgstr ""
 "musicbrainz.org (pour le serveur principal MusicBrainz)."
 
 #: ../../config/options_general.rst:14
+msgid ""
+"In addition to the standard MusicBrainz servers provided in the drop "
+"down list, you can manually enter an alternate address, such as "
+"\"localhost\" if you are running a local copy of the server. When an "
+"alternate server host name is entered, a warning will be displayed and "
+"you will be asked to confirm that you want to submit all data to this "
+"alternate server."
+msgstr ""
+"En plus des serveurs MusicBrainz standard fournis dans la liste "
+"déroulante, vous pouvez entrer manuellement une adresse alternative, "
+"telle que \"localhost\" si vous exécutez une copie locale du serveur. "
+"Lorsqu'un nom d'hôte de serveur alternatif est saisi, un avertissement "
+"sera affiché et il vous sera demandé de confirmer que vous voulez "
+"soumettre toutes les données à ce serveur alternatif."
+
+#: ../../config/options_general.rst:22
 msgid "**Port**"
 msgstr "**Port**"
 
-#: ../../config/options_general.rst:16
+#: ../../config/options_general.rst:24
 msgid ""
 "The port number for the server. Default value: 443 (for the main "
 "MusicBrainz server)."
@@ -51,11 +67,11 @@ msgstr ""
 "Le numéro de port du serveur. Valeur par défaut: 80 (pour le serveur "
 "MusicBrainz principal)."
 
-#: ../../config/options_general.rst:18
+#: ../../config/options_general.rst:26
 msgid "**Username**"
 msgstr "**Nom d'utilisateur**"
 
-#: ../../config/options_general.rst:20
+#: ../../config/options_general.rst:28
 msgid ""
 "Your MusicBrainz website username, used to submit acoustic fingerprints, "
 "retrieve and save items to your collections, and retrieve personal "
@@ -66,19 +82,19 @@ msgstr ""
 "éléments dans vos collections et récupérer des balises personnelles de "
 "folksonomy."
 
-#: ../../config/options_general.rst:23
+#: ../../config/options_general.rst:31
 msgid "**Password**"
 msgstr "**Mot de passe**"
 
-#: ../../config/options_general.rst:25
+#: ../../config/options_general.rst:33
 msgid "Your MusicBrainz website password."
 msgstr "Le mot de passe de votre site Web MusicBrainz."
 
-#: ../../config/options_general.rst:27
+#: ../../config/options_general.rst:35
 msgid "**Automatically scan all new files**"
 msgstr "**Analyser automatiquement tous les nouveaux fichiers**"
 
-#: ../../config/options_general.rst:29
+#: ../../config/options_general.rst:37
 msgid ""
 "Check this box if you want Picard to scan each music file you add and "
 "look for an AcoustID fingerprint. This takes time, but may be helpful "
@@ -95,11 +111,11 @@ msgstr ""
 "scanner à tout moment un fichier musical particulier en utilisant :"
 "menuselection:`\"Outils --> Analyser\"`."
 
-#: ../../config/options_general.rst:34
+#: ../../config/options_general.rst:42
 msgid "**Ignore MBIDs when loading new files**"
 msgstr "**Ignorer les MBID lors du chargement de nouveaux fichiers**"
 
-#: ../../config/options_general.rst:36
+#: ../../config/options_general.rst:44
 msgid ""
 "If you disable this option Picard will not use MusicBrainz identifiers "
 "(MBIDs) stored in the files to automatically load the corresponding "
@@ -114,11 +130,11 @@ msgstr ""
 "retraitement de fichiers qui ont déjà été marqués avec des informations "
 "incorrectes."
 
-#: ../../config/options_general.rst:41
+#: ../../config/options_general.rst:49
 msgid "**Check for updates during start-up**"
 msgstr "**Vérifiez les mises à jour lors du démarrage**"
 
-#: ../../config/options_general.rst:43
+#: ../../config/options_general.rst:51
 msgid ""
 "This option determines whether or not Picard will automatically check "
 "for :index:`program updates <pair: configuration; update checking>` "
@@ -131,11 +147,11 @@ msgstr ""
 "à Picard de vérifier les mises à jour du programme à tout moment en "
 "utilisant :menuselection:`\"Aide --> Vérifier les mises à jour\"`."
 
-#: ../../config/options_general.rst:47
+#: ../../config/options_general.rst:55
 msgid "**Days between checks**"
 msgstr "**Jours entre les chèques**"
 
-#: ../../config/options_general.rst:49
+#: ../../config/options_general.rst:57
 msgid ""
 "This option allows you to limit the automatic update checking by "
 "selecting the interval, in days, between checks. Set this to 1 if you "
@@ -149,11 +165,11 @@ msgstr ""
 "Notez que cela ne s'applique que si l'option \"Vérifier les mises à jour "
 "au démarrage\" est activée."
 
-#: ../../config/options_general.rst:53
+#: ../../config/options_general.rst:61
 msgid "**Updates to check**"
 msgstr "**Mises à jour à vérifier**"
 
-#: ../../config/options_general.rst:55
+#: ../../config/options_general.rst:63
 msgid ""
 "This option allows you to select which levels of update to check. Your "
 "options are:"
@@ -161,19 +177,19 @@ msgstr ""
 "Cette option vous permet de sélectionner les niveaux de mise à jour à "
 "vérifier. Vos options sont :"
 
-#: ../../config/options_general.rst:57
+#: ../../config/options_general.rst:65
 msgid "Stable releases only"
 msgstr "Versions stables uniquement"
 
-#: ../../config/options_general.rst:58
+#: ../../config/options_general.rst:66
 msgid "Stable and Beta releases"
 msgstr "Versions stables et bêta"
 
-#: ../../config/options_general.rst:59
+#: ../../config/options_general.rst:67
 msgid "Stable, Beta and Dev releases"
 msgstr "Versions stables, bêta et dev"
 
-#: ../../config/options_general.rst:61
+#: ../../config/options_general.rst:69
 msgid ""
 "For example, if you subscribe to \"Stable releases only\" you will not "
 "be notified if a new Beta or Dev release is issued."
@@ -182,7 +198,7 @@ msgstr ""
 "vous ne serez pas averti si une nouvelle version bêta ou de "
 "développement est publiée."
 
-#: ../../config/options_general.rst:66
+#: ../../config/options_general.rst:74
 msgid ""
 "The update checking related settings and :menuselection:`\"Help --> "
 "Check for update...\"` command may not be available when Picard is "

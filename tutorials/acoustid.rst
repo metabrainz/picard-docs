@@ -2,7 +2,9 @@
 
 .. Can you explain how Picard handles :index:`Fingerprinting <pair: acoustic, fingerprint>`, and is this the same as generating the :index:`AcoustID <acoustid; usage>`?
 
-Understanding :index:`Acoustic Fingerprinting <pair: acoustic; fingerprint>` and :index:`AcoustIDs <acoustid; usage>`
+.. _ref_tutorial_acoustid:
+
+Understanding :index:`Acoustic Fingerprinting <pair: acoustic; fingerprint>` and :index:`AcoustIDs <AcoustID; usage>`
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 .. From https://community.metabrainz.org/t/picard-fingerprinting-and-acoustids/190/2

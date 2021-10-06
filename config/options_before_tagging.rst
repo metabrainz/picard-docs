@@ -13,6 +13,11 @@
    Checking this will remove all existing metadata and leave your files with only MusicBrainz metadata. Information you
    may have added through another media player such as "genre", "comments" or "ratings" will be removed.
 
+**Keep embedded images when clearing tags**
+
+   The default is for Picard to remove any embedded images from the files when clearing existing tags. Checking this
+   option will keep the embedded images in the files.
+
 **Remove ID3 tags from FLAC files**
 
    Check to remove ID3 tags from FLAC files – Vorbis Comments are recommended for FLAC files. Picard will write Vorbis

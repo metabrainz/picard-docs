@@ -75,13 +75,26 @@ settings on the right hand side.  This is where the majority of Picard's customi
    .. image:: images/options-general.png
       :width: 100 %
 
+In addition to the basic "user settings", this is also where option setting changes are made to individual option profiles.
+This is covered in greater detail in the :doc:`../usage/option_profiles` section.
+
+Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option
+settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted.
+Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are
+always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used
+during processing.
+
+.. only:: html
+
    .. seealso::
 
       :doc:`options_general` /
+      :doc:`options_profiles` /
       :doc:`options_metadata` /
       :doc:`options_tags` /
       :doc:`options_cover` /
       :doc:`options_filerenaming` /
+      :doc:`options_acousticbrainz` /
       :doc:`options_fingerprinting` /
       :doc:`options_cdlookup` /
       :doc:`options_plugins` /
@@ -93,10 +106,12 @@ settings on the right hand side.  This is where the majority of Picard's customi
    :hidden:
 
    options_general.rst
+   options_profiles.rst
    options_metadata.rst
    options_tags.rst
    options_cover.rst
    options_filerenaming.rst
+   options_acousticbrainz.rst
    options_fingerprinting
    options_cdlookup.rst
    options_plugins.rst

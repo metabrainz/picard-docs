@@ -31,8 +31,8 @@ msgstr "**Effacer les balises existantes**"
 
 #: ../../config/options_before_tagging.rst:13
 msgid ""
-"Checking this will remove all existing metadata and leave your files "
-"with only MusicBrainz metadata. Information you may have added through "
+"Checking this will remove all existing metadata and leave your files with"
+" only MusicBrainz metadata. Information you may have added through "
 "another media player such as \"genre\", \"comments\" or \"ratings\" will "
 "be removed."
 msgstr ""
@@ -43,10 +43,21 @@ msgstr ""
 "seront supprimées."
 
 #: ../../config/options_before_tagging.rst:16
+msgid "**Keep embedded images when clearing tags**"
+msgstr ""
+
+#: ../../config/options_before_tagging.rst:18
+msgid ""
+"The default is for Picard to remove any embedded images from the files "
+"when clearing existing tags. Checking this option will keep the embedded "
+"images in the files."
+msgstr ""
+
+#: ../../config/options_before_tagging.rst:21
 msgid "**Remove ID3 tags from FLAC files**"
 msgstr "**Supprimer les balises ID3 des fichiers FLAC**"
 
-#: ../../config/options_before_tagging.rst:18
+#: ../../config/options_before_tagging.rst:23
 msgid ""
 "Check to remove ID3 tags from FLAC files – Vorbis Comments are "
 "recommended for FLAC files. Picard will write Vorbis Comments to FLAC "
@@ -57,11 +68,11 @@ msgstr ""
 "écrira les commentaires Vorbis dans les fichiers FLAC quel que soit ce "
 "paramètre."
 
-#: ../../config/options_before_tagging.rst:21
+#: ../../config/options_before_tagging.rst:26
 msgid "**Remove APEv2 tags from MP3 files**"
 msgstr "**Supprimer les balises APEv2 des fichiers MP3**"
 
-#: ../../config/options_before_tagging.rst:23
+#: ../../config/options_before_tagging.rst:28
 msgid ""
 "Check to remove APEv2 tags from MP3 files – ID3 is recommended for MP3 "
 "files. Picard will write ID3 tags to MP3 files regardless of this "
@@ -71,7 +82,7 @@ msgstr ""
 "recommandé pour les fichiers MP3. Picard écrira les balises ID3 sur les "
 "fichiers MP3 quel que soit ce paramètre."
 
-#: ../../config/options_before_tagging.rst:26
+#: ../../config/options_before_tagging.rst:31
 msgid ""
 "**Preserve these tags from being cleared or overwritten with MusicBrainz "
 "data**"
@@ -79,7 +90,7 @@ msgstr ""
 "**Empêchez ces balises d'être effacées ou écrasées par les données "
 "MusicBrainz**"
 
-#: ../../config/options_before_tagging.rst:28
+#: ../../config/options_before_tagging.rst:33
 msgid ""
 "This is an advanced option: If you have tags which you need to preserve, "
 "enter their names here to stop Picard from overwriting them."
@@ -89,3 +100,4 @@ msgstr ""
 
 #~ msgid "Before Tagging"
 #~ msgstr "Avant de marquer"
+

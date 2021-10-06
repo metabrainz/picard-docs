@@ -136,18 +136,18 @@ to indicate the status of the item.
 --------------------------------------------------------
 
 There is a status bar at the bottom of Picard's main screen, which displays some information about current processing status.  This includes four numbers along with the current port number that Picard is monitoring.
+In addition, if Picard is currently processing your files an estimated time to completion will also be displayed to the left of the status indicators.
 
 .. image:: images/status_bar.png
    :width: 100 %
 
-From left to right, the four numbers represent:
+From left to right, the numbers represent:
 
-1. The number of files loaded.
-2. The number of MusicBrainz releases loaded.
-3. The number of files with pending action (e.g. loading, saving, fingerprinting).
-4. The number of active network requests.
-
-You can tell whether or not Picard is currently processing your files by looking at the numbers for pending files and pending network requests. If both are 0 nothing is pending and processing is complete.
+1. The estimated processing time remaining (only displayed if Picard is actively processing files).
+2. The number of files loaded.
+3. The number of MusicBrainz releases loaded.
+4. The number of files with pending action (e.g. loading, saving, fingerprinting).
+5. The number of active network requests.
 
 .. raw:: latex
 
