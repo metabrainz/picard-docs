@@ -5,7 +5,8 @@
 
 Acoustic fingerprints are very useful for identifying tracks and recordings, allowing them to be
 looked up in the MusicBrainz database. Thus, it is very valuable to add them when you are tagging
-files.  Please see the :doc:`../tutorials/acoustid` tutorial for additional information.
+files.  Note that an acoustic fingerprint is **not** an AcoustID. Please see the :doc:`../tutorials/acoustid`
+tutorial for additional information.
 
 .. note::
 
@@ -16,8 +17,12 @@ files.  Please see the :doc:`../tutorials/acoustid` tutorial for additional info
    submitted).
 
 There are two methods for submitting acoustic fingerprints, depending on the workflow that you are
-using to identify the releases that you are tagging.  The steps to follow to submit acoustic
-fingerprints for each of the two workflows are:
+using to identify the releases that you are tagging. Note that both methods require that you first
+match your audio files to release and track information from the MusicBrainz database. See the
+:doc:`retrieve` and :doc:`match` sections for more information about retrieving release information
+and matching audio files to releases.
+
+The steps to follow to submit acoustic fingerprints for each of the two workflows are:
 
 Submitting when using Scan to identify the release
 --------------------------------------------------
