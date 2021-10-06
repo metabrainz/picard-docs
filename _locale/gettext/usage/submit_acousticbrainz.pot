@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.7alpha1\n"
+"Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-03 14:34-0600\n"
+"POT-Creation-Date: 2021-10-06 09:47-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,13 @@ msgid "All information extraction from a music file is performed on your system 
 msgstr ""
 
 #: ../../usage/submit_acousticbrainz.rst:19
-msgid "To extract the information from an audio file and submit it to AcousticBrainz, simply select the tracks or releases that you wish to submit and select the \"Submit AcousticBrainz features\" command from the \"Tools\" section of Picard's main menu bar. If the files are properly tagged with MusicBrainz identifiers and a valid extraction application has been configured in the :doc:`AcousticBrainz option settings <../config/options_acousticbrainz>`, then the files will be added to a queue where they will be processed in the background."
+msgid "To extract the information from an audio file and submit it to AcousticBrainz, you must first match your audio files to release and track information from the MusicBrainz database and save the files. See the :doc:`retrieve` and :doc:`match` sections for more information about retrieving release information and matching audio files to releases."
 msgstr ""
 
-#: ../../usage/submit_acousticbrainz.rst:28
+#: ../../usage/submit_acousticbrainz.rst:23
+msgid "Once the files have been matched and saved, simply select the tracks or releases that you wish to submit and use the \"Submit AcousticBrainz features\" command from the \"Tools\" section of Picard's main menu bar. If the files are properly tagged with MusicBrainz identifiers and a valid extraction application has been configured in the :doc:`AcousticBrainz option settings <../config/options_acousticbrainz>`, then the files will be added to a queue where they will be processed in the background."
+msgstr ""
+
+#: ../../usage/submit_acousticbrainz.rst:32
 msgid "If there is no valid extraction application identified, or if the \"AcousticBrainz features extraction\" option has not been enabled in the AcousticBrainz option settings, then the \"Submit AcousticBrainz features\" command will be unavailable."
 msgstr ""

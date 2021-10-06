@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.6.3\n"
+"Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-12 09:27-0600\n"
+"POT-Creation-Date: 2021-10-06 09:47-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,6 +116,14 @@ msgstr ""
 msgid "The option settings are found under the :menuselection:`\"Options --> Options...\"` item on the menu bar.  This will open a new window with the option groups listed in a tree format on the left hand side, and the individual settings on the right hand side.  This is where the majority of Picard's customization is performed."
 msgstr ""
 
-#: ../../config/configuration.rst:80
-msgid ":doc:`options_general` / :doc:`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :doc:`options_fingerprinting` / :doc:`options_cdlookup` / :doc:`options_plugins` / :doc:`options_interface` / :doc:`options_scripting` / :doc:`options_advanced`"
+#: ../../config/configuration.rst:78
+msgid "In addition to the basic \"user settings\", this is also where option setting changes are made to individual option profiles. This is covered in greater detail in the :doc:`../usage/option_profiles` section."
+msgstr ""
+
+#: ../../config/configuration.rst:81
+msgid "Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted. Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used during processing."
+msgstr ""
+
+#: ../../config/configuration.rst:91
+msgid ":doc:`options_general` / :doc:`options_profiles` / :doc:`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :doc:`options_acousticbrainz` / :doc:`options_fingerprinting` / :doc:`options_cdlookup` / :doc:`options_plugins` / :doc:`options_interface` / :doc:`options_scripting` / :doc:`options_advanced`"
 msgstr ""
