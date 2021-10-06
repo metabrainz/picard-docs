@@ -27,7 +27,7 @@ MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/Acous
 
 **Save AcoustID fingerprints to file tags**
 
-   When checked, the AcoustID fingerprint information from scanned files will be saved to the `acoustid_fingerprint`
+   When checked, the AcoustID fingerprint information from scanned files will be saved to the ``acoustid_fingerprint``
    tag.  Note that this option is disabled by default because the fingerprint can always be calculated again from
    the audio file, and it can add a rather long data tag to the file.  The option to save this information has been
    added as of Picard v2.7 to accommodate use cases such as a workflow where the user adds this tag directly after

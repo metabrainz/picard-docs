@@ -54,8 +54,7 @@ To use this functionality, the steps to follow are:
 
    When the option is selected, the system will submit a request to add the information to MusicBrainz, and you will
    be presented with a confirmation screen in your browser.  You can see the information that will be submitted by
-   expanding the "Data submitted with this request" link.  Selecting :guilabel:`Continue` will open an "Add Release" edit
-   screen with the fields populated with your information.
+   expanding the "Data submitted with this request" link.
 
    .. image:: images/submit_cluster_4.png
       :width: 100%
