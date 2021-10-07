@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Option Profiles &mdash; MusicBrainz Picard v2.7.0b1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extending Picard" href="../extending/extending.html" />
+    <link rel="prev" title="Submitting Cluster as a Release" href="submit_cluster_as_release.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.7.0b1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using Picard</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Option Profiles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-option-profiles-work">How Option Profiles Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-of-using-profiles">Example of Using Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-option-profiles">Managing Option Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#saving-profile-option-settings">Saving Profile Option Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Handling of multiple release countries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Option Profiles</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="option-profiles">
+<h1>Option Profiles<a class="headerlink" href="#option-profiles" title="Permalink to this headline">¶</a></h1>
+<p>As of version 2.7, Picard supports multiple profiles that can allow the user to quickly switch between option settings.</p>
+<div class="section" id="how-option-profiles-work">
+<h2>How Option Profiles Work<a class="headerlink" href="#how-option-profiles-work" title="Permalink to this headline">¶</a></h2>
+<p>A profile is defined by a set of options it manages.  For example, one profile may include settings for file naming such as
+the target directory and which file naming script to use, while another profile may include different settings for the same
+options or different options entirely (or some of each).  Profiles are stacked and processed in the order specified by the
+user, from top to bottom with the lowest level being the system’s “user settings” profile.  Each user-defined profile can be
+enabled or disabled independently from the other user-defined profiles.  The system’s “user settings” profile is always
+enabled and includes all options.</p>
+<p>When an option value is retrieved as part of Picard’s processing, it comes from the first enabled profile in the stack that
+manages that option. Initially, the profile stack contains only the system’s “user settings” profile, which holds the
+default settings for the user.</p>
+</div>
+<div class="section" id="example-of-using-profiles">
+<h2>Example of Using Profiles<a class="headerlink" href="#example-of-using-profiles" title="Permalink to this headline">¶</a></h2>
+<p>For this example, the user would like to define a set of options with alternate values, in this case a target directory where
+audio files are saved (option <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code>).</p>
+<p>The user creates a new profile (named “TargetMyDir”), adds the option <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> to it, and enables this profile.
+The stack is now:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">TargetMyDir</span>    <span class="n">move_files_to</span>
+<span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">user</span> <span class="n">settings</span>  <span class="n">move_files_to</span>  <span class="p">[</span><span class="n">plus</span> <span class="nb">all</span> <span class="n">other</span> <span class="n">settings</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>They change the value of <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> (to “target_my_dir”) for this new profile.</p>
+<p>Since the profile “TargetMyDir” is enabled, the value for <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> is retrieved from this profile.  The “user settings”
+still has the old <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> value.</p>
+<p>Now the user wants to work on another set of music files, wanting to disable <code class="docutils literal notranslate"><span class="pre">windows_compatibility</span></code> for this set and save
+them to the “not_for_windows” directory.</p>
+<p>They create a new profile (named “ByeByeWin”), add options <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> and <code class="docutils literal notranslate"><span class="pre">windows_compatibility</span></code>, and enable it.
+Now the stack looks like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">ByeByeWin</span>      <span class="n">move_files_to</span>  <span class="n">windows_compatibility</span>
+<span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">TargetMyDir</span>    <span class="n">move_files_to</span>
+<span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">user</span> <span class="n">settings</span>  <span class="n">move_files_to</span>  <span class="n">windows_compatibility</span>  <span class="p">[</span><span class="n">plus</span> <span class="nb">all</span> <span class="n">other</span> <span class="n">settings</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>They change the values of <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> (to “not_for_windows”) and <code class="docutils literal notranslate"><span class="pre">windows_compatibility</span></code> (to false) for this new profile.
+Now when they process their files, the files are saved to the “ByeByeWin” <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> directory, with <code class="docutils literal notranslate"><span class="pre">windows_compatibility</span></code> = false.</p>
+<p>Now the user wants to save files to the “TargetMyDir” target directory again, with their usual options.  To do this they simply
+disable the “ByeByeWin” profile (which can later be re-enabled if needed).  The stack looks like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="p">]</span> <span class="n">ByeByeWin</span>      <span class="n">move_files_to</span>  <span class="n">windows_compatibility</span>
+<span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">TargetMyDir</span>    <span class="n">move_files_to</span>
+<span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">user</span> <span class="n">settings</span>  <span class="n">move_files_to</span>  <span class="n">windows_compatibility</span>  <span class="p">[</span><span class="n">plus</span> <span class="nb">all</span> <span class="n">other</span> <span class="n">settings</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Finally, to return to their usual output directory the user only has to disable the “TargetMyDir” profile so the stack is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="p">]</span> <span class="n">ByeByeWin</span>      <span class="n">move_files_to</span>  <span class="n">windows_compatibility</span>
+<span class="p">[</span> <span class="p">]</span> <span class="n">TargetMyDir</span>    <span class="n">move_files_to</span>
+<span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">user</span> <span class="n">settings</span>  <span class="n">move_files_to</span>  <span class="n">windows_compatibility</span>  <span class="p">[</span><span class="n">plus</span> <span class="nb">all</span> <span class="n">other</span> <span class="n">settings</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="managing-option-profiles">
+<h2>Managing Option Profiles<a class="headerlink" href="#managing-option-profiles" title="Permalink to this headline">¶</a></h2>
+<p>All option profile management is done within the Option Profiles page available from the <span class="menuselection">“Options ‣
+Options…”</span> item on the menu bar.  From this screen you will be able to add, copy, edit, remove, enable and disable
+profiles, as well as setting the order of the profile stack.</p>
+<p>Initially, the list of profiles will be empty.  To create a new profile click on the <span class="guilabel">New</span> button.  This will create a
+profile with no options selected for the profile to manage.  To rename the profile, right-click on the profile name and
+select the <span class="menuselection">“Rename profile”</span> command.  The list of options that the profile is to manage are selected from the
+list in the right-hand pane.  Options can be selected either by group or individually.  The groups can be expanded to see
+the individual options belonging to that group.</p>
+<a class="reference internal image-reference" href="../_images/option_profiles1.png"><img alt="../_images/option_profiles1.png" src="../_images/option_profiles1.png" style="width: 100%;" /></a>
+<p>You can see the value currently assigned to a profile’s option setting by hovering your cursor over the setting in the list. The
+value will be displayed as a tooltip for the setting.</p>
+<a class="reference internal image-reference" href="../_images/option-setting-value-tooltip.png"><img alt="../_images/option-setting-value-tooltip.png" src="../_images/option-setting-value-tooltip.png" style="width: 100%;" /></a>
+<p>The profile stack order can be rearranged either by selecting a profile and using the up and down arrow buttons below the
+list, or by dragging the profile to a new position in the stack.  Profiles are enabled when the box beside the profile’s name
+is checked.</p>
+<p>Changes made to a profile’s options settings, enabled status, or position in the profile stack will be reflected in the option
+settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted.
+Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are
+always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used
+during processing.</p>
+<p>You can also quickly enable or disable a profile (but not change the order of the profile stack), using the
+<span class="menuselection">“Options ‣ Enable/disable profiles”</span> item in the menu bar on Picard’s main screen.</p>
+<p>When you click the <span class="guilabel">Make It So!</span> button, in addition to saving your updated profile configuration all highlighted
+options will be saved to the first enabled profile in the profile stack that controls that option. All other options will be
+saved to the “user settings” as before.  This is described in more detail in the following section.</p>
+</div>
+<div class="section" id="saving-profile-option-settings">
+<h2>Saving Profile Option Settings<a class="headerlink" href="#saving-profile-option-settings" title="Permalink to this headline">¶</a></h2>
+<p>To save a value to a profile option setting, simply ensure that the the target profile is the first enabled profile in the
+profile stack, make the desired changes (the options should be highlighted), and then click the <span class="guilabel">Make It So!</span> button.</p>
+<a class="reference internal image-reference" href="../_images/options-profile-save1.png"><img alt="../_images/options-profile-save1.png" src="../_images/options-profile-save1.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/options-profile-save2.png"><img alt="../_images/options-profile-save2.png" src="../_images/options-profile-save2.png" style="width: 100%;" /></a>
+<p>Remember, all highlighted options will be saved to the first enabled profile in the profile stack that controls that option.
+All other options will be saved to the “user settings” profile which is the user’s normal settings, and includes all options.
+You can confirm which profile a highlighted option will update by hovering your cursor over the option.</p>
+<a class="reference internal image-reference" href="../_images/options-profile-save3.png"><img alt="../_images/options-profile-save3.png" src="../_images/options-profile-save3.png" style="width: 100%;" /></a>
+<p>From the pages which contain options that can be included on a profile, you will also be able to see which profiles, if any,
+manage any of the options on the page.  This is done by clicking the <span class="guilabel">Attached Profiles</span> button.</p>
+<a class="reference internal image-reference" href="../_images/options-attached-profiles.png"><img alt="../_images/options-attached-profiles.png" src="../_images/options-attached-profiles.png" style="width: 100%;" /></a>
+<p>This lists the attached profiles in the order in which they appear in the profile stack, and whether or not the profile is
+enabled.  If the page does not contain any options that could be managed by a profile, the <span class="guilabel">Attached Profiles</span> button
+will be disabled.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is important to understand that when you click the <span class="guilabel">Make It So!</span> button <strong>all</strong> of the option settings on <strong>all</strong>
+pages will be saved. If an option is managed by one or more profiles that are currently enabled, the option will be highlighted
+and it will be saved to the <strong>first</strong> enabled profile in the profile stack that manages the option. If there are no enabled
+profiles that manage the option, the option will not be highlighted and it will be saved to the “user settings” profile which
+is the user’s normal settings, contains all options, is at the bottom of the profile stack, and is always enabled.  The “user
+settings” profile cannot be modified is not shown in the profile management page.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../extending/extending.html" class="btn btn-neutral float-right" title="Extending Picard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="submit_cluster_as_release.html" class="btn btn-neutral float-left" title="Submitting Cluster as a Release" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'usage/option_profiles');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/usage/option_profiles.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/usage/option_profiles.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.7_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
