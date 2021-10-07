@@ -28,4 +28,4 @@ If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>
 
 **_workcomment**
 
-    Work disambiguation comment. (*since Picard 2.7)
+    Work disambiguation comment. (*since Picard 2.7*)
