@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-02 11:40-0600\n"
-"PO-Revision-Date: 2021-08-21 22:50+0000\n"
+"PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/"
 "picard-docs/functionsfunc_rsearch/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../functions/func_rsearch.rst:4
@@ -31,11 +31,11 @@ msgstr "Utilisation: **$rsearch(texte,motif)**"
 
 #: ../../functions/func_rsearch.rst:7
 msgid "Category: text"
-msgstr "Catégorie: texte"
+msgstr "Catégorie : texte"
 
 #: ../../functions/func_rsearch.rst:9
 msgid "**Description:**"
-msgstr "**La description:**"
+msgstr "**Description:**"
 
 #: ../../functions/func_rsearch.rst:11
 msgid ""
@@ -80,14 +80,13 @@ msgid ""
 "regular expression ``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^"
 "\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
 msgstr ""
-"Lors de la saisie d'expressions régulières dans des scripts Picard, vous "
-"devez échapper une barre oblique inverse \"\\\\\", un signe dollar \"$"
-"\", une virgule \",\" et les parenthèses gauche et droite \"(\" et \")\" "
-"pour forcer Picard à ne pas les interpréter dans le cadre de la commande "
-"de script. Cela se fait en insérant une barre oblique inverse avant le "
-"caractère à échapper. Par exemple, l'expression régulière ``^\\s*([0-9,"
-"\\.]*)$`` devrait être saisie sous la forme ``^\\\\s*\\([0-9\\,\\\\.]*"
-"\\)\\$``."
+"Lorsque vous saisissez des expressions régulières dans des scripts Picard, "
+"vous devez échapper la barre oblique inversée \"\\\\\", le signe dollar \"$\""
+", la virgule \",\" et les parenthèses gauche et droite \"(\" et \")\" afin "
+"de forcer Picard à ne pas les interpréter comme faisant partie de la "
+"commande du script.  Cela se fait en insérant une barre oblique inverse "
+"avant le caractère à échapper.  Par exemple, l'expression régulière ``^\\s"
+"*([0-9,\\.]*)$`` doit être saisie comme ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
 
 #: ../../functions/func_rsearch.rst:30
 msgid "**Example:**"

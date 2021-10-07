@@ -12,15 +12,28 @@ Each plugin must provide some metadata as variables. Those variables should be p
 
    PLUGIN_NAME = "Example plugin"
    PLUGIN_AUTHOR = "This authors name"
-   PLUGIN_DESCRIPTION = "This plugin is an example"
+   PLUGIN_DESCRIPTION = """
+   This plugin is an example
+
+   Since *Picard 2.7* the description can be formatted using
+   [Markdown](https://daringfireball.net/projects/markdown/) syntax.
+   If you use Markdown formatting make sure the minimum version in
+   `PLUGIN_API_VERSIONS` is set to 2.7.
+   """
    PLUGIN_VERSION = '0.1'
-   PLUGIN_API_VERSIONS = ['2.1', '2.2']
+   PLUGIN_API_VERSIONS = ['2.7', '2.8']
    PLUGIN_LICENSE = "GPL-2.0-or-later"
    PLUGIN_LICENSE_URL = "https://www.gnu.org/licenses/gpl-2.0.html"
 
 Variables explanation:
 
+* **PLUGIN_NAME** should be a short but descriptive name for the plugin.
+
 * **PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function.
+  If your plugin targets Picard 2.7 or later you can use `Markdown <https://daringfireball.net/projects/markdown/>`_
+  syntax to format the text.  If your plugin targets earlier versions you can instead use simple HTML formatting.
+  Please restrict the usage of HTML to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and
+  lists (``<ul>``, ``<ol>``).
 
 * **PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z``
   (e.g.: "1.0" or "2.12.4"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_.

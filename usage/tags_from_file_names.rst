@@ -78,3 +78,7 @@ to a hidden variable :samp:`%_filetitle%` which would not get written to the fil
    Parsing hidden variables from file names is supported since Picard 2.5.  Earlier versions
    would create an actual tag which would get stored to the tags.  If you are using a Picard
    version older than 2.5 you will need to remove the unwanted tags before saving the files.
+
+.. raw:: latex
+
+   \clearpage

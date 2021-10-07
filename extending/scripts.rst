@@ -12,13 +12,14 @@ using the :doc:`Picard scripting language <scripting>`. Scripts are often discus
 :index:`File Naming Script <pair: file naming; scripts>`
 ---------------------------------------------------------
 
-There is only one file naming script defined in a user’s settings, although it can vary from a simple
-one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats
-based on different criteria. In all cases, the files will be saved using the text output by the script.
+Multiple file naming scripts can be defined in a user’s settings, although only one is selected at a time
+for use.  File naming scripts can vary from a simple one-line script such as ``%album%/%title%`` to a very
+complex script using different file naming formats based on different criteria. In all cases, the files
+will be saved using the text output by the script.
 
 .. note::
 
-   Any new tags set or tags modified by the file naming script will not be written to the output
+   Any new tags set or tags modified by the file naming script will **not** be written to the output
    files' metadata.
 
 :index:`Tagging Scripts <pair: tagging; scripts>`

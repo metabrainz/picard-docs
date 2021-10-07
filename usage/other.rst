@@ -3,10 +3,10 @@
 Other Picard Tasks
 ==================
 
-In addition to the general functionality of Picard tagging and organizing your audio files,
-there are some other tasks that it can perform:
-
 .. only:: html
+
+   In addition to the general functionality of Picard tagging and organizing your audio files,
+   there are some other tasks that it can perform:
 
    **Attaching disc ids to releases on MusicBrainz**
 
@@ -20,16 +20,28 @@ there are some other tasks that it can perform:
       This will calculate the acoustic fingerprints for the selected tracks and submit them to
       the AcoustID database.
 
+   **Submitting track acoustic features**
+
+      This will extract the acoustic features for the selected tracks and submit them to
+      the AcousticBrainz database.
+
    **Generating tags from file names**
 
       This will extract tags such as track number and title from the file name.
+
+   **Submitting cluster as a release**
+
+      You can submit a cluster as a release to the MusicBrainz database.  This functionality has
+      long been available through a plugin, but has been included within Picard itself as of v2.7.
 
    .. seealso::
 
       Step-by-step detailed instructions:
       :doc:`attach_disc_id` /
       :doc:`submit_acoustid` /
-      :doc:`tags_from_file_names`
+      :doc:`submit_acousticbrainz` /
+      :doc:`tags_from_file_names` /
+      :doc:`submit_cluster_as_release`
 
 .. .. only:: latex
 
@@ -40,4 +52,6 @@ there are some other tasks that it can perform:
 
    attach_disc_id
    submit_acoustid
+   submit_acousticbrainz
    tags_from_file_names
+   submit_cluster_as_release
