@@ -25,3 +25,7 @@ If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>
 **_recordingtitle**
 
     Recording title - normally the same as the Track title, but can be different.
+
+**_workcomment**
+
+    Work disambiguation comment. (*since Picard 2.7)
