@@ -4,9 +4,6 @@ This project was created with the intent of eventually developing a comprehensiv
 user manual for [MusicBrainz Picard](https://picard.musicbrainz.org), a full-featured,
 cross-platform music file tagging system using metadata from [MusicBrainz](https://musicbrainz.org).
 
-This project is not intended to replace the documentation on the Picard website, but to augment
-it with additional detail and a structured approach.
-
 This documentation project is open source and provided under CC0 1.0. To view a copy of this license,
 visit [https://creativecommons.org/publicdomain/zero/1.0](https://creativecommons.org/publicdomain/zero/1.0).
 
@@ -26,7 +23,7 @@ documentation further will be most appreciated - and even if you cannot improve 
 if you can create or maintain translations into other languages, that would be of great benefit.
 
 If you notice an error in the documentation or have additional or updated material to contribute,
-please raise an issue in the [issue tracker](https://github.com/rdswift/picard-docs/issues).
-[Pull Requests](https://github.com/rdswift/picard-docs/pulls) to address outstanding issues are also
-appreciated.  Please see [CONTRIBUTING.md](https://github.com/rdswift/picard-docs/blob/master/.github/CONTRIBUTING.md)
+please create a [ticket](https://tickets.metabrainz.org/issues/?filter=12025) under the Picard project (Documentation component).
+[Pull Requests](https://github.com/metabrainz/picard-docs/pulls) to address outstanding issues are also
+appreciated.  Please see [CONTRIBUTING.md](https://github.com/metabrainz/picard-docs/blob/master/.github/CONTRIBUTING.md)
 for more information and additional ways to contribute.
