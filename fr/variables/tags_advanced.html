@@ -56,7 +56,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="variables.html">Balises &amp; Variables</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="tags_basic.html">Balises de base</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Balises avancées</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#advanced-relationship-tags">Balises de relation avancées</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#track-relationship-tags">Balises de relation de suivi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#genre-tags">Balises de genre</a></li>
 </ul>
 </li>
@@ -143,7 +143,7 @@
              
   <div class="section" id="advanced-tags">
 <h1><span class="target" id="index-2"></span>Balises avancées<a class="headerlink" href="#advanced-tags" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Vous pouvez rendre des balises supplémentaires disponibles en activant les paramètres <a class="reference internal" href="#advanced-relationships"><span class="std std-ref">Relations avancées</span></a> et <a class="reference internal" href="#genre-settings"><span class="std std-ref">Utiliser les genres de MusicBrainz</span></a> paramètres dans Picard.</p>
+<p>Vous pouvez rendre des balises supplémentaires disponibles en activant les paramètres <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations entre les pistes</span></a> et <a class="reference internal" href="../config/options_genres.html"><span class="doc">Utiliser les genres à partir de MusicBrainz</span></a> dans Picard.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les balises ne seront pas créées et ne seront pas disponibles en tant que variables si aucune valeur n’a été récupérée pour la balise dans la base de données MusicBrainz.</p>
@@ -152,9 +152,9 @@
 <p class="admonition-title">Note</p>
 <p>Certaines de ces balises ne sont prises en charge que pour certains types de fichiers ou formats de balises. Veuillez consulter la section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Picard Tag Mapping</span></a> pour plus de détails.</p>
 </div>
-<div class="section" id="advanced-relationship-tags">
-<span id="advanced-relationships"></span><h2>Balises de relation avancées<a class="headerlink" href="#advanced-relationship-tags" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Si vous activez le balisage avec les relations avancées, vous obtenez ces balises supplémentaires:</p>
+<div class="section" id="track-relationship-tags">
+<span id="advanced-relationships"></span><h2>Balises de relation de suivi<a class="headerlink" href="#track-relationship-tags" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Si vous activez le balisage avec « Utiliser les relations de suivi », vous obtenez ces balises supplémentaires :</p>
 <p><strong>arranger</strong></p>
 <blockquote>
 <div><p>Type de relation arrangeur (sorties, enregistrements, œuvres), type de relation instrumentateur, type de relation orchestrateur (<em>depuis Picard 0.10</em>)</p>
@@ -219,7 +219,7 @@
 </div>
 <div class="section" id="genre-tags">
 <span id="genre-settings"></span><h2><span class="target" id="index-3"></span>Balises de genre<a class="headerlink" href="#genre-tags" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Si vous activez Utiliser les genres de MusicBrainz, vous obtenez:</p>
+<p>Si vous activez « Utiliser les genres de MusicBrainz », vous obtenez :</p>
 <p><strong>genre</strong></p>
 <blockquote>
 <div><p>Informations sur le genre de MusicBrainz (<em>depuis Picard 2.1, les versions antérieures utilisaient des balises folksonomy</em>)</p>

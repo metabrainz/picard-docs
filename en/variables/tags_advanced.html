@@ -55,7 +55,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="variables.html">Tags &amp; Variables</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="tags_basic.html">Basic Tags</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Advanced Tags</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#advanced-relationship-tags">Advanced Relationship Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#track-relationship-tags">Track Relationship Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#genre-tags">Genre Tags</a></li>
 </ul>
 </li>
@@ -142,8 +142,8 @@
              
   <div class="section" id="advanced-tags">
 <h1><span class="target" id="index-0"></span>Advanced Tags<a class="headerlink" href="#advanced-tags" title="Permalink to this headline">¶</a></h1>
-<p>You can make additional tags available by enabling the <a class="reference internal" href="#advanced-relationships"><span class="std std-ref">Advanced Relationships</span></a> and the
-<a class="reference internal" href="#genre-settings"><span class="std std-ref">Use genres from MusicBrainz</span></a> settings in Picard.</p>
+<p>You can make additional tags available by enabling the <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use track relationships</span></a> and the
+<a class="reference internal" href="../config/options_genres.html"><span class="doc">Use genres from MusicBrainz</span></a> settings in Picard.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Tags will not be created and will not be available as variables if there was no value retrieved for the tag
@@ -153,9 +153,9 @@ from the MusicBrainz database.</p>
 <p class="admonition-title">Note</p>
 <p>Some of these tags are only supported for certain file types or tag formats.  Please see the <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Picard Tag Mapping</span></a> section for details.</p>
 </div>
-<div class="section" id="advanced-relationship-tags">
-<span id="advanced-relationships"></span><h2>Advanced Relationship Tags<a class="headerlink" href="#advanced-relationship-tags" title="Permalink to this headline">¶</a></h2>
-<p>If you enable tagging with Advanced Relationships, you get these extra tags:</p>
+<div class="section" id="track-relationship-tags">
+<span id="advanced-relationships"></span><h2>Track Relationship Tags<a class="headerlink" href="#track-relationship-tags" title="Permalink to this headline">¶</a></h2>
+<p>If you enable tagging with “Use track relationships”, you get these extra tags:</p>
 <p><strong>arranger</strong></p>
 <blockquote>
 <div><p>Arranger Relationship Type (releases, recordings, works), Instrumentator Relationship Type, Orchestrator Relationship Type (<em>since Picard 0.10</em>)</p>
@@ -221,7 +221,7 @@ You can merge this with composers with a script like:</p>
 </div>
 <div class="section" id="genre-tags">
 <span id="genre-settings"></span><h2><span class="target" id="index-1"></span>Genre Tags<a class="headerlink" href="#genre-tags" title="Permalink to this headline">¶</a></h2>
-<p>If you enable Use genres from MusicBrainz, you get:</p>
+<p>If you enable “Use genres from MusicBrainz”, you get:</p>
 <p><strong>genre</strong></p>
 <blockquote>
 <div><p>Genre information from MusicBrainz (<em>since Picard 2.1, earlier versions used folksonomy tags</em>)</p>
