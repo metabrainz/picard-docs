@@ -212,9 +212,9 @@ notfound_template = 'custom_404.html'
 notfound_title = 'Page Not Found'
 notfound_text_1 = "We're sorry but we are unable to find the requested page. Please use the table " \
     + "of contents or the search box in the left-hand sidebar to locate your topic."
-notfound_text_2 = "If you believe that you have received this message in error, please report it on " \
-    + "the <a href='https://github.com/rdswift/picard-docs/issues/new/choose' " \
-    + "target='_blank'>documentation project site</a>.  Thanks."
+notfound_text_2 = "If you believe that you have received this message in error, please report it in " \
+    + "a <a href='https://tickets.metabrainz.org/issues/?filter=12025' target='_blank'>ticket</a> " \
+    + "under the Picard project (Documentation component).  Thanks."
 notfound_script = r'''
 <script>
     var target_language = 'en';
