@@ -3,25 +3,27 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
+# inkhorn <inkhorn@hostux.ninja>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-06 09:47-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2021-10-11 00:14+0000\n"
+"Last-Translator: inkhorn <inkhorn@hostux.ninja>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
+"projects/picard-docs/configconfiguration/pt_BR/>\n"
 "Language: pt_BR\n"
-"Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/configuration.rst:4
 msgid "Configuration"
-msgstr ""
+msgstr "Configuração"
 
 #: ../../config/configuration.rst:6
 msgid ""
@@ -30,10 +32,14 @@ msgid ""
 " the desired screen sections for display, selecting the desired actions, "
 "and setting the various options."
 msgstr ""
+"Logo que o Picard tenha sido instalado em seu sistema, o próximo passo será "
+"configurá-lo de acordo com suas preferências.  A configuração consiste em "
+"habilitar as seções de tela desejadas para exibição, selecionar as ações "
+"desejadas e definir várias opções."
 
 #: ../../config/configuration.rst:11
 msgid ":index:`Screen Setup <configuration; screen setup>`"
-msgstr ""
+msgstr ":index:`Configuração da tela <configuração; configuração da tela>`"
 
 #: ../../config/configuration.rst:13
 msgid ""
@@ -41,10 +47,13 @@ msgid ""
 " menu bar.  To enable the display of an item, simply check the box for "
 "the screen option.  The items are:"
 msgstr ""
+"A configuração da tela é encontrada em :menuselection:`\"Vista\"` em barra "
+"de menu.  Para ativar a exibição de um item, basta marcar a caixa com a "
+"opção de tela.  Os itens são:"
 
 #: ../../config/configuration.rst:16
 msgid "**File Browser**"
-msgstr ""
+msgstr "**Navegador de arquivos**"
 
 #: ../../config/configuration.rst:18
 msgid ""
@@ -54,16 +63,23 @@ msgid ""
 "individual files or by selecting multiple files and folders and selecting"
 " \"Load selected files\" from the context menu."
 msgstr ""
+"Isto exibe um navegador de arquivos no lado esquerdo da tela para selecionar "
+"arquivos e pastas para processamento. Os arquivos podem ser carregados no "
+"Picard arrastando e soltando-os em painéis da direita, via duplo clique em "
+"arquivos individuais ou selecionando vários arquivos e pastas e escolhendo "
+"\"Carregar arquivos selecionados\" no menu de contexto."
 
 #: ../../config/configuration.rst:23
 msgid ""
 "Files and directories can also be selected using your system's file "
 "browser by dragging and dropping them onto the Picard application."
 msgstr ""
+"Os arquivos e pastas também podem ser selecionados usando o navegador de "
+"arquivos de seu sistema, arrastando e soltando-os diretamente no Picard."
 
 #: ../../config/configuration.rst:26
 msgid "**Cover Art**"
-msgstr ""
+msgstr "**Arte da capa***"
 
 #: ../../config/configuration.rst:28
 msgid ""
@@ -72,38 +88,46 @@ msgid ""
 "This allows you to select or replace the cover art saved with the "
 "release."
 msgstr ""
+"Isto exibe a arte da capa do item atualmente selecionado (faixa ou álbum) em "
+"uma janela à direita da seção de ids do display.  Isto permite selecionar ou "
+"substituir a arte da capa salva com o álbum."
 
 #: ../../config/configuration.rst:32
 msgid "**Actions**"
-msgstr ""
+msgstr "**Ações**"
 
 #: ../../config/configuration.rst:34
 msgid ""
 "This displays the button bar of the actions performed by Picard, located "
 "just below the menu bar."
 msgstr ""
+"Isto exibe a barra de botões das ações executadas por Picard, localizada "
+"logo abaixo da barra de menu."
 
 #: ../../config/configuration.rst:36
 msgid "**Search**"
-msgstr ""
+msgstr "**Procurar**"
 
 #: ../../config/configuration.rst:38
 msgid ""
 "This displays the manual search box to the right of the \"Actions\" "
 "button bar."
 msgstr ""
+"Isto exibe a caixa de busca manual à direita da barra de botões \"Ações\"."
 
 #: ../../config/configuration.rst:40
 msgid "**Player**"
-msgstr ""
+msgstr "**Reprodutor**"
 
 #: ../../config/configuration.rst:42
 msgid "This displays the built-in player for playing selected audio files."
 msgstr ""
+"Isto exibe o reprodutor incorporado de reprodução de arquivos de áudio "
+"selecionados."
 
 #: ../../config/configuration.rst:47
 msgid ":index:`Action Options <configuration; action options>`"
-msgstr ""
+msgstr ":index:`Opções de ação <configuração; opções de ação>`"
 
 #: ../../config/configuration.rst:49
 msgid ""
@@ -111,38 +135,46 @@ msgid ""
 "on the menu bar.  There are three available actions that Picard can "
 "perform when saving selected music files:"
 msgstr ""
+"As opções de ação são encontradas em :menuselection:`\"Opções\"` na barra de "
+"menu.  Há três ações disponíveis que o Picard pode executar ao salvar "
+"arquivos de música selecionados:"
 
 #: ../../config/configuration.rst:52
 msgid "**Rename Files**"
-msgstr ""
+msgstr "**Renomear arquivos***"
 
 #: ../../config/configuration.rst:54
 msgid "Picard will rename each file in accordance with the naming script."
-msgstr ""
+msgstr "O Picard renomeará cada arquivo de acordo com a esquema aplicada."
 
 #: ../../config/configuration.rst:56
 msgid "**Move Files**"
-msgstr ""
+msgstr "**Mover arquivos**"
 
 #: ../../config/configuration.rst:58
 msgid ""
 "Picard will move files to the target directory in accordance with the "
 "naming script."
 msgstr ""
+"O Picard moverá os arquivos para a pasta de destino de acordo com a esquema "
+"aplicada."
 
 #: ../../config/configuration.rst:60
 msgid "**Save Tags**"
-msgstr ""
+msgstr "**Salvar ids**"
 
 #: ../../config/configuration.rst:62
 msgid ""
 "Picard will update the metadata tags in the files in accordance with the "
 "specified option settings and tagging scripts."
 msgstr ""
+"O Picard atualizará as ids de metadados nos arquivos de acordo com as "
+"configurações de opções e a esquema de identificação aplicada."
 
 #: ../../config/configuration.rst:67
 msgid ":index:`Option Settings <see: option settings; configuration>`"
 msgstr ""
+":index:`Configurações de opção <ver: configurações de opção; configuração>`"
 
 #: ../../config/configuration.rst:69
 msgid ""
@@ -152,6 +184,11 @@ msgid ""
 "individual settings on the right hand side.  This is where the majority "
 "of Picard's customization is performed."
 msgstr ""
+"As configurações de opções são encontradas em :menuselection:`\"Opções --> "
+"Opções...\"` na barra de menu.  Isto abrirá uma nova janela com os grupos de "
+"opções listados em um formato de árvore no lado esquerdo, e as configurações "
+"individuais no lado direito.  É aqui que a maior parte de personalização do "
+"Picard é feita."
 
 #: ../../config/configuration.rst:78
 msgid ""
@@ -159,6 +196,9 @@ msgid ""
 "setting changes are made to individual option profiles. This is covered "
 "in greater detail in the :doc:`../usage/option_profiles` section."
 msgstr ""
+"Além de \"configurações básicas do usuário\", aqui também são feitas "
+"alterações em opções de perfis individuais. Isto é abordado com mais "
+"detalhes na seção :doc:`../usage/option_profiles`."
 
 #: ../../config/configuration.rst:81
 msgid ""
@@ -171,6 +211,14 @@ msgid ""
 "profile stack, which corresponds to the setting that will be used during "
 "processing."
 msgstr ""
+"As mudanças feitas nas configurações de opções de perfil, status habilitado "
+"ou posição na pilha de perfis serão refletidas em configurações de opções "
+"exibidas nas outras páginas. As opções que são controladas por um perfil "
+"habilitado serão mostradas como destacadas. Passando o cursor sobre a opção "
+"destacada, identificará qual perfil atualmente controla a configuração. As "
+"configurações são sempre exibidas com base no primeiro perfil habilitado na "
+"pilha de perfis, que corresponde à configuração que será usada durante o "
+"processamento."
 
 #: ../../config/configuration.rst:91
 msgid ""
@@ -181,6 +229,11 @@ msgid ""
 ":doc:`options_plugins` / :doc:`options_interface` / "
 ":doc:`options_scripting` / :doc:`options_advanced`"
 msgstr ""
+":doc:`options_general` / :doc:`options_profiles` / :doc:`options_metadata` / "
+":doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / "
+":doc:`options_acousticbrainz` / :doc:`options_fingerprinting` / "
+":doc:`options_cdlookup` / :doc:`options_plugins` / :doc:`options_interface` /"
+" :doc:`options_scripting` / :doc:`options_advanced`"
 
 #~ msgid ""
 #~ ":doc:`options_general` / :doc:`options_metadata` /"
@@ -191,4 +244,3 @@ msgstr ""
 #~ ":doc:`options_interface` / :doc:`options_scripting` "
 #~ "/ :doc:`options_advanced`"
 #~ msgstr ""
-

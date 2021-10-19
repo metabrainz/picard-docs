@@ -15,13 +15,12 @@ documentation further will be most appreciated.  Even if you cannot improve the 
 if you can create or maintain translations into other languages, that would be of great benefit.
 
 If you notice an error in the documentation or have additional material to contribute, please
-`raise an issue <https://github.com/rdswift/picard-docs/issues>`_ on the `documentation project
-on GitHub <https://github.com/rdswift/picard-docs/>`_.  `Pull Requests
-<https://github.com/rdswift/picard-docs/pulls>`_ to address outstanding issues are also
-appreciated.
+create a `ticket <https://tickets.metabrainz.org/issues/?filter=12025>`_  under the Picard
+project (Documentation component).  `Pull Requests <https://github.com/metabrainz/picard-docs/pulls>`_
+to address outstanding issues are also appreciated.
 
 .. seealso::
 
    `Contributing to MusicBrainz Picard <https://github.com/metabrainz/picard/blob/master/CONTRIBUTING.md>`_ /
    `Picard Translations <https://github.com/metabrainz/picard/blob/master/po/README.md>`_ /
-   `Contributing to the Documentation <https://github.com/rdswift/picard-docs/blob/master/.github/CONTRIBUTING.md>`_
+   `Contributing to the Documentation <https://github.com/metabrainz/picard-docs/blob/master/.github/CONTRIBUTING.md>`_

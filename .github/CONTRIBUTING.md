@@ -6,9 +6,9 @@ Further high quality contributions are welcomed from all Picard users wanting to
 
 If you want to contribute corrections or new material to this documentation project, there are a few different ways to submit your contributions.
 
-- If you are comfortable developing ReStructuredText format files, and are familiar with [Pull Requests](https://github.com/rdswift/picard-docs/pulls) on GitHub, you can submit a pull request with the changes to the documentation source files. This is the preferred method, because it provides a clear way for the changes to be reviewed and discussed.
+- If you are comfortable developing ReStructuredText format files, and are familiar with [Pull Requests](https://github.com/metabrainz/picard-docs/pulls) on GitHub, you can submit a pull request with the changes to the documentation source files. This is the preferred method, because it provides a clear way for the changes to be reviewed and discussed.
 
-- If you are not so comfortable developing ReStructuredText format files or preparing GitHub pull requests, you can create an [Issue](https://github.com/rdswift/picard-docs/issues) requesting the change (if the issue does not already exist) and attach your suggestions to it, either as an attached text file or within the discussion comments on the Issue. This way, someone can convert your suggestions into the appropriate (\*.rst) file changes and submit a pull request with the changes on your behalf.
+- If you are not so comfortable developing ReStructuredText format files or preparing GitHub pull requests, you can create a [ticket](https://tickets.metabrainz.org/issues/?filter=12025) under the Picard project (Documentation component) requesting the change (if the issue does not already exist) and attach your suggestions to it, either as an attached text file or within the discussion comments on the Issue. This way, someone can convert your suggestions into the appropriate (\*.rst) file changes and submit a pull request with the changes on your behalf.
 
 - You can also provide your suggestions on the Community Discussion Forum, or via email to the editor of the MusicBrainz Picard documentation project through their [account profile page](https://musicbrainz.org/user/rdswift) on [MusicBrainz](https://musicbrainz.org/).
 

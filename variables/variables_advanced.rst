@@ -7,7 +7,7 @@
 :index:`Advanced Variables <variables; advanced>`
 ==================================================
 
-If you enable tagging with :ref:`Advanced Relationships <advanced_relationships>`, you get these extra variables:
+If you enable tagging with :doc:`Use track relationships <../config/options_metadata>`, you get these extra variables:
 
 .. note::
 

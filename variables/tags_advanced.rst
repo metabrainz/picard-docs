@@ -7,8 +7,8 @@
 :index:`Advanced Tags <tags; advanced>`
 ========================================
 
-You can make additional tags available by enabling the :ref:`Advanced Relationships <advanced_relationships>` and the
-:ref:`Use genres from MusicBrainz <genre_settings>` settings in Picard.
+You can make additional tags available by enabling the :doc:`Use track relationships <../config/options_metadata>` and the
+:doc:`Use genres from MusicBrainz <../config/options_genres>` settings in Picard.
 
 .. note::
 
@@ -22,9 +22,9 @@ You can make additional tags available by enabling the :ref:`Advanced Relationsh
 
 .. _advanced_relationships:
 
-Advanced Relationship Tags
+Track Relationship Tags
 --------------------------
-If you enable tagging with Advanced Relationships, you get these extra tags:
+If you enable tagging with "Use track relationships", you get these extra tags:
 
 **arranger**
 
@@ -96,7 +96,7 @@ If you enable tagging with Advanced Relationships, you get these extra tags:
 :index:`Genre Tags <tags; genre>`
 ----------------------------------
 
-If you enable Use genres from MusicBrainz, you get:
+If you enable "Use genres from MusicBrainz", you get:
 
 **genre**
 
