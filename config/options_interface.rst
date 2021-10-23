@@ -13,7 +13,7 @@
 
 **Show icons in menus**
 
-    Some users prefer to disable menu icons, which is the default behavior for macos systems. This option
+    Some users prefer to disable menu icons, which is the default behavior for macOS systems. This option
     allows the user to select whether the icons are displayed in the menus.
 
 **User interface language**
