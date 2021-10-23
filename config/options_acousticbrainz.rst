@@ -19,7 +19,7 @@ extractor in the application directory.
    If enabled and a proper extractor application is available, the "Submit AcousticBrainz features" command will be enabled in the
    "Tools" section of Picard's main menu bar, when either a properly tagged file or release is selected.
 
-**AcousticBrainz settings**
+**AcousticBrainz/Essentia feature extractor**
 
    This section allows you to specify the acoustic features extractor application to use for processing the audio files.  This extractor
    is bundled with the Picard installation on Windows and macOS systems, and can be found in the Picard installation directory. There is
