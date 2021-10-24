@@ -98,7 +98,27 @@ scripting functions are:
 ------------------------------------------------------------------
 
 These functions are used to test for various conditions and take appropriate actions depending on
-the results of the test. The conditional scripting functions are:
+the results of the test.
+
+.. warning::
+
+   Formatting the code in your scripts by adding things like spaces, tabs and newlines could affect
+   the results of conditional tests because these characters are not ignored. For example,
+
+   .. code-block:: taggerscript
+
+      $set(test,)
+      $if(
+         %test%,
+         $set(test1,Not Empty),
+         $set(test1,Empty)
+      )
+      $if(%test%,$set(test2,Not Empty),$set(test2,Empty))
+
+   will return "Not Empty" for ``%test1%``, but "Empty" for ``%test2%``. The different values are a
+   result of the indentation in the formatted code.
+
+The conditional scripting functions are:
 
 .. toctree::
    :maxdepth: 1

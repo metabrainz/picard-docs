@@ -13,6 +13,11 @@ $or
 Returns true if either ``x`` or ``y`` is not empty. Can be used with an arbitrary number
 of arguments. The result is true if **ANY** of the arguments is not empty.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

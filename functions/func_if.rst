@@ -14,21 +14,11 @@ If ``condition`` is not empty it returns ``then``, otherwise it returns ``else``
 is not provided, it will be assumed to be an empty string.  In addition to (or instead of) returning values,
 ``then`` and ``else`` can be used to conditionally execute other functions.
 
-.. note::
+.. only:: html
 
-   Spaces, tabs or newlines in the ``condition`` will make it not register as empty.  For example,
+   .. warning::
 
-   .. code-block:: taggerscript
-
-      $set(test,)
-      $if(
-         %test%,
-         $set(test1,Not Empty),
-         $set(test1,Empty)
-      )
-      $if(%test%,$set(test2,Not Empty),$set(test2,Empty))
-
-   will return "Not Empty" for ``%test1%`` and "Empty" for ``%test2%``.
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

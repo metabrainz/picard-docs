@@ -15,6 +15,11 @@ number of arguments.  Note that comparisons are case-sensitive.
 
 Functionally equivalent to ``$or($eq(x,a1),$eq(x,a2) ...)``.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

@@ -12,6 +12,11 @@ $ne
 
 Returns true if ``x`` does not equal ``y``.  Note that comparisons are case-sensitive.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 
