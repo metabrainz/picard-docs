@@ -13,6 +13,11 @@ $startswith
 
 Returns true if ``text`` starts with ``prefix``.  Note that the comparison is case-sensitive.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

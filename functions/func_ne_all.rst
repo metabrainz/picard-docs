@@ -15,6 +15,11 @@ number of arguments.  Note that comparisons are case-sensitive.
 
 Functionally equivalent to ``$and($ne(x,a1),$ne(x,a2) ...)``.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

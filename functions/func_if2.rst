@@ -12,6 +12,11 @@ $if2
 
 Returns the first non empty argument.  Can be used with an arbitrary number of arguments.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

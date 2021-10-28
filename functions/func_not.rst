@@ -12,6 +12,11 @@ $not
 
 Returns true if ``x`` is empty.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

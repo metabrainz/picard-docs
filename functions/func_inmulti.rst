@@ -14,6 +14,11 @@ $inmulti
 Returns true if multi-value variable ``x`` contains exactly ``y`` as one of its values.
 Note that comparisons are case-sensitive.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

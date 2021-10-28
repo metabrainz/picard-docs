@@ -14,6 +14,11 @@ If ``condition`` is not empty it returns ``then``, otherwise it returns ``else``
 is not provided, it will be assumed to be an empty string.  In addition to (or instead of) returning values,
 ``then`` and ``else`` can be used to conditionally execute other functions.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 
