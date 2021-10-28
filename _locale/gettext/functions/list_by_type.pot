@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2021-10-28 13:27-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,29 +61,41 @@ msgid ":index:`Conditional Functions <scripting functions; conditional>`"
 msgstr ""
 
 #: ../../functions/list_by_type.rst:100
-msgid "These functions are used to test for various conditions and take appropriate actions depending on the results of the test. The conditional scripting functions are:"
+msgid "These functions are used to test for various conditions and take appropriate actions depending on the results of the test."
 msgstr ""
 
-#: ../../functions/list_by_type.rst:132
+#: ../../functions/list_by_type.rst:105
+msgid "Formatting the code in your scripts by adding things like spaces, tabs and newlines could affect the results of conditional tests because these characters are not ignored. For example,"
+msgstr ""
+
+#: ../../functions/list_by_type.rst:118
+msgid "will return \"Not Empty\" for ``%test1%``, but \"Empty\" for ``%test2%``. The different values are a result of the indentation in the formatted code."
+msgstr ""
+
+#: ../../functions/list_by_type.rst:121
+msgid "The conditional scripting functions are:"
+msgstr ""
+
+#: ../../functions/list_by_type.rst:152
 msgid ":index:`Information Functions <scripting functions; information>`"
 msgstr ""
 
-#: ../../functions/list_by_type.rst:134
+#: ../../functions/list_by_type.rst:154
 msgid "These functions provide additional system or data information. The information scripting functions are:"
 msgstr ""
 
-#: ../../functions/list_by_type.rst:149
+#: ../../functions/list_by_type.rst:169
 msgid ":index:`Loop Functions <scripting functions; loop>`"
 msgstr ""
 
-#: ../../functions/list_by_type.rst:151
+#: ../../functions/list_by_type.rst:171
 msgid "These functions provide the ability to repeat actions based on the contents of a multi-value variable or the result of a conditional test.  The loop scripting functions are:"
 msgstr ""
 
-#: ../../functions/list_by_type.rst:162
+#: ../../functions/list_by_type.rst:182
 msgid ":index:`Miscellaneous Functions <scripting functions; miscellaneous>`"
 msgstr ""
 
-#: ../../functions/list_by_type.rst:164
+#: ../../functions/list_by_type.rst:184
 msgid "The miscellaneous scripting functions are:"
 msgstr ""
