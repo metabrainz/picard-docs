@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-28 13:27-0600\n"
-"PO-Revision-Date: 2020-11-19 16:43-0700\n"
+"PO-Revision-Date: 2021-10-29 16:23+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/functionslist_by_type/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/list_by_type.rst:4
@@ -87,14 +89,12 @@ msgid ":index:`Conditional Functions <scripting functions; conditional>`"
 msgstr ":index:`Fonctions conditionnelles <fonctions de script; conditionnel>`"
 
 #: ../../functions/list_by_type.rst:100
-#, fuzzy
 msgid ""
 "These functions are used to test for various conditions and take "
 "appropriate actions depending on the results of the test."
 msgstr ""
-"Ces fonctions sont utilisées pour tester diverses conditions et prendre "
-"les mesures appropriées en fonction des résultats du test. Les fonctions "
-"de script conditionnelles sont:"
+"Ces fonctions sont utilisées pour tester diverses conditions et prendre les "
+"mesures appropriées en fonction des résultats du test."
 
 #: ../../functions/list_by_type.rst:105
 msgid ""
@@ -102,6 +102,10 @@ msgid ""
 "and newlines could affect the results of conditional tests because these "
 "characters are not ignored. For example,"
 msgstr ""
+"Le fait de formater le code de vos scripts en ajoutant des éléments tels que "
+"des espaces, des tabulations et des sauts de ligne peut affecter les "
+"résultats des tests conditionnels, car ces caractères ne sont pas ignorés. "
+"Par exemple,"
 
 #: ../../functions/list_by_type.rst:118
 msgid ""
@@ -109,11 +113,13 @@ msgid ""
 " The different values are a result of the indentation in the formatted "
 "code."
 msgstr ""
+"retournera \"Not Empty\" pour ``%test1%``, mais \"Empty\" pour ``%test2%``. "
+"Les différentes valeurs sont le résultat de l'indentation dans le code "
+"formaté."
 
 #: ../../functions/list_by_type.rst:121
-#, fuzzy
 msgid "The conditional scripting functions are:"
-msgstr "Les diverses fonctions de script sont:"
+msgstr "Les fonctions de scripts conditionnels sont :"
 
 #: ../../functions/list_by_type.rst:152
 msgid ":index:`Information Functions <scripting functions; information>`"
@@ -175,4 +181,3 @@ msgstr "Les diverses fonctions de script sont:"
 
 #~ msgid "Miscellaneous Functions"
 #~ msgstr "Fonctions diverses"
-
