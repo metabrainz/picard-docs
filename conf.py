@@ -30,7 +30,7 @@ copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this
 project = 'MusicBrainz Picard'
 
 # The full version, including alpha/beta/rc tags (must start with a 'v' and not contain any spaces)
-version = 'v2.7.0b1'
+version = 'v2.7.0b2'
 
 author = 'Bob Swift'
 # copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
