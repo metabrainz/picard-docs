@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Options de l’interface utilisateur &mdash; Documentation MusicBrainz Picard v2.7.0b1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Options de l’interface utilisateur &mdash; Documentation MusicBrainz Picard v2.7.0b2</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.7.0b1
+                v2.7.0b2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -158,25 +158,9 @@
 <blockquote>
 <div><p>Si cette option est désactivée, les étiquettes de texte sous les icônes de la barre d’outils ne seront pas affichées, ce qui fait que la barre d’outils apparaîtra un peu plus petite.</p>
 </div></blockquote>
-<p><strong>Autoriser la sélection de plusieurs répertoires</strong></p>
+<p><strong>Afficher les icônes dans les menus</strong></p>
 <blockquote>
-<div><p>L’activation de cette option contournera le sélecteur de répertoire natif et utilisera la boîte de dialogue de fichier de Qt. Cela peut être souhaitable car le sélecteur de répertoire natif ne vous permet généralement pas de sélectionner plus d’un répertoire. Ceci s’applique à la boîte de dialogue <span class="menuselection">« Fichier ‣ Ajouter un dossier »</span>. Le navigateur de fichiers permet toujours la sélection de plusieurs répertoires.</p>
-</div></blockquote>
-<p><strong>Utilisez la recherche intégrée plutôt que de rechercher dans le navigateur</strong></p>
-<blockquote>
-<div><p>Lorsque cette option est activée, la recherche d’albums, d’artistes ou de pistes affichera les résultats dans une boîte de dialogue. Par défaut, cette option est activée. Si cette option est désactivée, Picard ouvrira une recherche sur MusicBrainz.org dans votre navigateur Web par défaut.</p>
-</div></blockquote>
-<p><strong>Utilisez la syntaxe de requête avancée</strong></p>
-<blockquote>
-<div><p>Cela activera l’analyse de la syntaxe de requête avancée sur vos recherches. Cela s’applique uniquement à la zone de recherche en haut à droite de Picard, pas aux boutons de recherche.</p>
-</div></blockquote>
-<p><strong>Afficher une boîte de dialogue de confirmation de fermeture pour les modifications non enregistrées</strong></p>
-<blockquote>
-<div><p>Lorsque cela est activé, Picard affichera une boîte de dialogue lorsque vous essayez de quitter le programme avec des fichiers non enregistrés chargés. Cela peut aider à éviter de perdre accidentellement les modifications de balises que vous avez apportées, mais pas encore enregistrées.</p>
-</div></blockquote>
-<p><strong>Commencez à naviguer dans le répertoire suivant</strong></p>
-<blockquote>
-<div><p>Par défaut, Picard se souvient du dernier répertoire utilisé pour charger les fichiers. Si vous activez cette option et fournissez un répertoire, Picard démarrera toujours dans le répertoire fourni.</p>
+<div><p>Certains utilisateurs préfèrent désactiver les icônes de menu, ce qui est le comportement par défaut des systèmes macOS. Cette option permet à l’utilisateur de choisir si les icônes sont affichées dans les menus.</p>
 </div></blockquote>
 <p><strong>Langue de l’interface utilisateur</strong></p>
 <blockquote>
@@ -199,6 +183,30 @@
 <p class="admonition-title">Note</p>
 <p>Les couleurs des thèmes clair et foncé peuvent être personnalisées dans la section <a class="reference internal" href="options_interface_colors.html"><span class="doc">Couleurs</span></a>.  Des ensembles distincts de sélections de couleurs sont gérés pour les thèmes clairs et foncés.  Les couleurs du thème actuellement affiché sont celles qui sont affichées pour l’édition.</p>
 </div>
+</div></blockquote>
+<p><strong>Autoriser la sélection de plusieurs répertoires</strong></p>
+<blockquote>
+<div><p>L’activation de cette option contournera le sélecteur de répertoire natif et utilisera la boîte de dialogue de fichier de Qt. Cela peut être souhaitable car le sélecteur de répertoire natif ne vous permet généralement pas de sélectionner plus d’un répertoire. Ceci s’applique à la boîte de dialogue <span class="menuselection">« Fichier ‣ Ajouter un dossier »</span>. Le navigateur de fichiers permet toujours la sélection de plusieurs répertoires.</p>
+</div></blockquote>
+<p><strong>Utilisez la recherche intégrée plutôt que de rechercher dans le navigateur</strong></p>
+<blockquote>
+<div><p>Lorsque cette option est activée, la recherche d’albums, d’artistes ou de pistes affichera les résultats dans une boîte de dialogue. Par défaut, cette option est activée. Si cette option est désactivée, Picard ouvrira une recherche sur MusicBrainz.org dans votre navigateur Web par défaut.</p>
+</div></blockquote>
+<p><strong>Utilisez la syntaxe de requête avancée</strong></p>
+<blockquote>
+<div><p>Cela activera l’analyse de la syntaxe de requête avancée sur vos recherches. Cela s’applique uniquement à la zone de recherche en haut à droite de Picard, pas aux boutons de recherche.</p>
+</div></blockquote>
+<p><strong>Afficher une boîte de dialogue de confirmation de fermeture pour les modifications non enregistrées</strong></p>
+<blockquote>
+<div><p>Lorsque cela est activé, Picard affichera une boîte de dialogue lorsque vous essayez de quitter le programme avec des fichiers non enregistrés chargés. Cela peut aider à éviter de perdre accidentellement les modifications de balises que vous avez apportées, mais pas encore enregistrées.</p>
+</div></blockquote>
+<p><strong>Ajustement automatique de la position horizontale dans le navigateur de fichiers</strong></p>
+<blockquote>
+<div><p>Lorsque cette option est activée, Picard fera automatiquement défiler l’affichage du navigateur de fichiers pour que le contenu pertinent reste visible.</p>
+</div></blockquote>
+<p><strong>Commencez à naviguer dans le répertoire suivant</strong></p>
+<blockquote>
+<div><p>Par défaut, Picard se souvient du dernier répertoire utilisé pour charger les fichiers. Si vous activez cette option et fournissez un répertoire, Picard démarrera toujours dans le répertoire fourni.</p>
 </div></blockquote>
 <p><strong>Personnaliser la barre d’outils d’action</strong></p>
 <blockquote>

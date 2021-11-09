@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$ne_all &mdash; Documentation MusicBrainz Picard v2.7.0b1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>$ne_all &mdash; Documentation MusicBrainz Picard v2.7.0b2</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.7.0b1
+                v2.7.0b2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -171,6 +171,10 @@
 <p><strong>Description:</strong></p>
 <p>Renvoie vrai si <code class="docutils literal notranslate"><span class="pre">x</span></code> n’est pas égal à <code class="docutils literal notranslate"><span class="pre">a1</span></code> et <code class="docutils literal notranslate"><span class="pre">a2</span></code>, etc. Peut être utilisé avec un nombre arbitraire d’arguments. Notez que les comparaisons sont sensibles à la casse.</p>
 <p>Fonctionnellement équivalent à <code class="docutils literal notranslate"><span class="pre">$and($ne(x,a1),$ne(x,a2)</span> <span class="pre">...)</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Le formatage du code à l’aide de caractères tels que des espaces, des tabulations ou des sauts de ligne peut affecter le résultat de la fonction.</p>
+</div>
 <p><strong>Exemple:</strong></p>
 <p>Les instructions suivantes renverront les valeurs indiquées :</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$ne_all(</span>A,A,B,C<span class="k">)</span>    ==&gt;  &quot;&quot;   (False<span class="k">)</span>

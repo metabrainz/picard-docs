@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scripting Functions &mdash; MusicBrainz Picard v2.7.0b1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Scripting Functions &mdash; MusicBrainz Picard v2.7.0b2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -29,7 +29,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.7.0b1
+                v2.7.0b2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -314,7 +314,24 @@ scripting functions are:</p>
 <div class="section" id="conditional-functions">
 <h2><span class="target" id="index-5"></span>Conditional Functions<a class="headerlink" href="#conditional-functions" title="Permalink to this headline">¶</a></h2>
 <p>These functions are used to test for various conditions and take appropriate actions depending on
-the results of the test. The conditional scripting functions are:</p>
+the results of the test.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Formatting the code in your scripts by adding things like spaces, tabs and newlines could affect
+the results of conditional tests because these characters are not ignored. For example,</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>test,<span class="k">)</span>
+<span class="k">$if(</span>
+   <span class="n">%test%</span>,
+   <span class="k">$set(</span>test1,Not Empty<span class="k">)</span>,
+   <span class="k">$set(</span>test1,Empty<span class="k">)</span>
+<span class="k">)</span>
+<span class="k">$if(</span><span class="n">%test%</span>,<span class="k">$set(</span>test2,Not Empty<span class="k">)</span>,<span class="k">$set(</span>test2,Empty<span class="k">))</span>
+</pre></div>
+</div>
+<p>will return “Not Empty” for <code class="docutils literal notranslate"><span class="pre">%test1%</span></code>, but “Empty” for <code class="docutils literal notranslate"><span class="pre">%test2%</span></code>. The different values are a
+result of the indentation in the formatted code.</p>
+</div>
+<p>The conditional scripting functions are:</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="func_and.html">$and</a></li>

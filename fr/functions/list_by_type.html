@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fonctions de script &mdash; Documentation MusicBrainz Picard v2.7.0b1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Fonctions de script &mdash; Documentation MusicBrainz Picard v2.7.0b2</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.7.0b1
+                v2.7.0b2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -310,7 +310,22 @@
 </div>
 <div class="section" id="conditional-functions">
 <h2><span class="target" id="index-14"></span>Fonctions conditionnelles<a class="headerlink" href="#conditional-functions" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Ces fonctions sont utilisées pour tester diverses conditions et prendre les mesures appropriées en fonction des résultats du test. Les fonctions de script conditionnelles sont:</p>
+<p>Ces fonctions sont utilisées pour tester diverses conditions et prendre les mesures appropriées en fonction des résultats du test.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Le fait de formater le code de vos scripts en ajoutant des éléments tels que des espaces, des tabulations et des sauts de ligne peut affecter les résultats des tests conditionnels, car ces caractères ne sont pas ignorés. Par exemple,</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>test,<span class="k">)</span>
+<span class="k">$if(</span>
+   <span class="n">%test%</span>,
+   <span class="k">$set(</span>test1,Not Empty<span class="k">)</span>,
+   <span class="k">$set(</span>test1,Empty<span class="k">)</span>
+<span class="k">)</span>
+<span class="k">$if(</span><span class="n">%test%</span>,<span class="k">$set(</span>test2,Not Empty<span class="k">)</span>,<span class="k">$set(</span>test2,Empty<span class="k">))</span>
+</pre></div>
+</div>
+<p>retournera « Not Empty » pour <code class="docutils literal notranslate"><span class="pre">%test1%</span></code>, mais « Empty » pour <code class="docutils literal notranslate"><span class="pre">%test2%</span></code>. Les différentes valeurs sont le résultat de l’indentation dans le code formaté.</p>
+</div>
+<p>Les fonctions de scripts conditionnels sont :</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="func_and.html">$and</a></li>

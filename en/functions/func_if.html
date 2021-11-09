@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$if &mdash; MusicBrainz Picard v2.7.0b1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>$if &mdash; MusicBrainz Picard v2.7.0b2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -29,7 +29,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.7.0b1
+                v2.7.0b2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -171,6 +171,10 @@
 <p>If <code class="docutils literal notranslate"><span class="pre">condition</span></code> is not empty it returns <code class="docutils literal notranslate"><span class="pre">then</span></code>, otherwise it returns <code class="docutils literal notranslate"><span class="pre">else</span></code>.  If <code class="docutils literal notranslate"><span class="pre">else</span></code>
 is not provided, it will be assumed to be an empty string.  In addition to (or instead of) returning values,
 <code class="docutils literal notranslate"><span class="pre">then</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code> can be used to conditionally execute other functions.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.</p>
+</div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,This is foo<span class="k">)</span>
