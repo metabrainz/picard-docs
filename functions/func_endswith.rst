@@ -13,6 +13,11 @@ $endswith
 
 Returns true if ``text`` ends with ``suffix``.  Note that the comparison is case-sensitive.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

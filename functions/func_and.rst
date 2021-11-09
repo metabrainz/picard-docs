@@ -13,6 +13,11 @@ $and
 Returns true if both ``x`` and ``y`` are not empty. Can be used with an arbitrary number
 of arguments. The result is true if **ALL** of the arguments are not empty.
 
+.. only:: html
+
+   .. warning::
+
+      Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function.
 
 **Example:**
 

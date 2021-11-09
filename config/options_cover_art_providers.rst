@@ -12,13 +12,13 @@ Picard can download Cover Art from a number of sources, and you can choose which
 use. You can activate more than one provider and choose the order in which the providers
 are queried. Picard will try the providers from top to bottom until an image is returned.
 
-**Cover Art Archive**
+**Cover Art Archive: Release**
 
    The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in cooperation with the `Internet
    Archive <https://archive.org>`_. The Cover Art Archive is the most comprehensive database of cover art
    (e.g.: front covers, back covers, booklets, CDs).
 
-**CAA Release Group**
+**Cover Art Archive: Release Group**
 
    This provider uses the Cover Art Archive cover image assigned to the release group. This is usually the
    image that best describes the release group as a whole or the image with the best visual quality, but is
