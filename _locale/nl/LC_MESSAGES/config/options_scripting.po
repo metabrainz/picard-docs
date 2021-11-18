@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-04 09:38-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../config/options_scripting.rst:4
+msgid ":index:`Scripting Options <configuration; scripting, scripts; tagging>`"
+msgstr ""
+
+#: ../../config/options_scripting.rst:9
+msgid "This section allows for the management of user-defined tagging scripts."
+msgstr ""
+
+#: ../../config/options_scripting.rst:11
+msgid "The \"Tagger Script(s)\" checkbox at the top of the page allows you to completely disable all tagging scripts.  This can be useful when tracking down a problem with Picard's configuration."
+msgstr ""
+
+#: ../../config/options_scripting.rst:14
+msgid "Below the checkbox are two columns showing the list of scripts in the left-hand column, with the content of the selected script shown in the right-hand column.  This section allows you to add, remove and reorder the scripts, enable or disable individual scripts, as well as edit the currently selected script."
+msgstr ""
+
+#: ../../config/options_scripting.rst:19
+msgid "As of Picard v2.7 you can also import a new script from a file, or export an existing script to a file. Files can be stored as either a plain-text script or a Picard Tagging Script Package stored in YAML format."
+msgstr ""
+
+#: ../../config/options_scripting.rst:22
+msgid "The script editor automatically highlights the elements of the script, including :doc:`function names <../functions/list_by_type>` and :doc:`tag and variable names <../variables/variables>`. Hovering your mouse pointer over one of the highlighted entries will display help information about the entry if available."
+msgstr ""
+
+#: ../../config/options_scripting.rst:27
+msgid "Unicode characters can be entered into the script using the format ``\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode character."
+msgstr ""
+
+#: ../../config/options_scripting.rst:30
+msgid "When the checkbox beside the script is checked, that script will be executed automatically, once for each track in the release, when Picard retrieves information for a release from the MusicBrainz website.  If the checkbox is left unchecked, then the script will not be executed automatically."
+msgstr ""
+
+#: ../../config/options_scripting.rst:34
+msgid "Regardless of whether or not the script is executed automatically, it can also be executed manually by right-clicking on an item in the clustering pane (middle pane) or the tagging pane (right-hand pane) and selecting it from the list displayed when :menuselection:`\"Run Scripts\"` is selected.  If a cluster is selected in the middle pane or a release is selected in the right-hand pane, the script will be executed for each track in the selected cluster or release.  If only a single track or file is selected, then the script will only be executed for that track or file."
+msgstr ""
+
+#: ../../config/options_scripting.rst:41
+msgid "For additional information about scripting please see the \":doc:`Scripts <../extending/scripts>`\" and \":doc:`Scripting <../extending/scripting>`\" sections, as well as \":doc:`Tags & Variables <../variables/variables>`\"."
+msgstr ""
