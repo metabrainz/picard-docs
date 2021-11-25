@@ -142,7 +142,6 @@ File naming script editor
    "Use selected completion", :kbd:`Tab` |br| |nl| :kbd:`Return`, :kbd:`Tab` |br| |nl| :kbd:`Return`
    "Hide completions", :kbd:`Esc`, :kbd:`Esc`
    "Edit script metadata", :kbd:`Ctrl+M`, :kbd:`⌘+M`
-   "Save changes to script", :kbd:`Ctrl+S`, :kbd:`⌘+S`
    "Word wrap on/off", :kbd:`Ctrl+Shift+W`, :kbd:`⌘+⇧+W`
    "Show/hide help tooltips", :kbd:`Ctrl+Shift+T`, :kbd:`⌘+⇧+T`
    "Show/hide documentation", :kbd:`Ctrl+H`, :kbd:`⌘+H`
