@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 09:38-0600\n"
+"POT-Creation-Date: 2021-11-26 04:18-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,146 +32,150 @@ msgstr ""
 msgid "Multiple file naming scripts can be defined in a user’s settings, although only one is selected at a time for use.  File naming scripts can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script."
 msgstr ""
 
-#: ../../extending/scripts.rst:22
+#: ../../extending/scripts.rst:20
+msgid "File naming scripts are managed using the :doc:`../config/options_filerenaming_editor` which can be opened from the \"File Naming\" section of the :menuselection:`\"Options --> Options...\"` menu, or directly from the :menuselection:`\"Options --> Open file naming script editor...\"` menu item. The current file naming script can also be selected directly from the :menuselection:`\"Options --> Select file naming script\"` menu."
+msgstr ""
+
+#: ../../extending/scripts.rst:27
 msgid "Any new tags set or tags modified by the file naming script will **not** be written to the output files' metadata."
 msgstr ""
 
-#: ../../extending/scripts.rst:26
+#: ../../extending/scripts.rst:31
 msgid ":index:`Tagging Scripts <pair: tagging; scripts>`"
 msgstr ""
 
-#: ../../extending/scripts.rst:28
+#: ../../extending/scripts.rst:33
 msgid "There can be multiple tagging scripts defined in a user’s settings. Individual scripts can be enabled or disabled, and the order of execution of the scripts can be set. Whenever a script is run automatically (i.e.: when an album is loaded), it is processed once for each track in the album that triggered the run. For example, if there are two tagging scripts enabled (A and B) and an album with three tracks is loaded, the scripts will be processed in the following order:"
 msgstr ""
 
-#: ../../extending/scripts.rst:34
+#: ../../extending/scripts.rst:39
 msgid "Script A Track 1;"
 msgstr ""
 
-#: ../../extending/scripts.rst:35
+#: ../../extending/scripts.rst:40
 msgid "Script A Track 2;"
 msgstr ""
 
-#: ../../extending/scripts.rst:36
+#: ../../extending/scripts.rst:41
 msgid "Script A Track 3;"
 msgstr ""
 
-#: ../../extending/scripts.rst:37
+#: ../../extending/scripts.rst:42
 msgid "Script B Track 1;"
 msgstr ""
 
-#: ../../extending/scripts.rst:38
+#: ../../extending/scripts.rst:43
 msgid "Script B Track 2;"
 msgstr ""
 
-#: ../../extending/scripts.rst:39
+#: ../../extending/scripts.rst:44
 msgid "Script B Track 3."
 msgstr ""
 
-#: ../../extending/scripts.rst:41
+#: ../../extending/scripts.rst:46
 msgid "Metadata updates are not shared between tracks, so you cannot append data from one track to a tag in another track."
 msgstr ""
 
-#: ../../extending/scripts.rst:44
+#: ../../extending/scripts.rst:49
 msgid "Any new tags set or tags modified by the tagging scripts will be written to the output files' metadata, unless the tag name begins with an underscore. These \"hidden\" tags are typically used as variables to hold temporary values that are used later in either the tagging or file naming scripts. Tagging scripts are run once for each track in the data, using the metadata for that track."
 msgstr ""
 
-#: ../../extending/scripts.rst:49
+#: ../../extending/scripts.rst:54
 msgid "Tagging scripts can also be run manually by right-clicking either an album or a track in the right-hand pane in Picard. If run from the album entry, the script is run for each track in the album. If run from an individual track, the script is only run for that track."
 msgstr ""
 
-#: ../../extending/scripts.rst:55
+#: ../../extending/scripts.rst:60
 msgid "Tagging Script Examples"
 msgstr ""
 
-#: ../../extending/scripts.rst:57
+#: ../../extending/scripts.rst:62
 msgid "The following scripting examples show how tagger scripts can be used to solve some specific use cases. Please refer to :doc:`Picard scripting language <scripting>` for a detailed description of the variables and functions used in these examples."
 msgstr ""
 
-#: ../../extending/scripts.rst:63
+#: ../../extending/scripts.rst:68
 msgid "Move disambiguation to album title"
 msgstr ""
 
-#: ../../extending/scripts.rst:65
+#: ../../extending/scripts.rst:70
 msgid "Append the disambiguation comment of a release to the album title:"
 msgstr ""
 
-#: ../../extending/scripts.rst:73
+#: ../../extending/scripts.rst:78
 msgid "Release language as language"
 msgstr ""
 
-#: ../../extending/scripts.rst:75
+#: ../../extending/scripts.rst:80
 msgid "The ``%_releaselanguage%`` variable specifies the language of the track listing, whereas the ``%language%`` variable is supposed to be the lyrics language.  The following script will use the ``%_releaselanguage%`` instead if ``%language%`` is empty:"
 msgstr ""
 
-#: ../../extending/scripts.rst:85
+#: ../../extending/scripts.rst:90
 msgid "Use original release date"
 msgstr ""
 
-#: ../../extending/scripts.rst:87
+#: ../../extending/scripts.rst:92
 msgid "By default Picard provides a tag ``date`` which holds the release date of a specific release and ``originaldate`` which provides the earliest release date of this release.  For example you might have a 2020 reissue of an album that originally was released in 1992.  In this case ``date`` will be set to \"2020\" and ``originaldate`` to \"1992\".  If you prefer to have always the original release date as the primary date in your file's tags you could use the following script:"
 msgstr ""
 
-#: ../../extending/scripts.rst:97
+#: ../../extending/scripts.rst:102
 msgid "The use of :ref:`func_if2` ensures that if ``originaldate`` is empty it will fall back to ``date``."
 msgstr ""
 
-#: ../../extending/scripts.rst:99
+#: ../../extending/scripts.rst:104
 msgid "In addition Picard provides a variable ``%_recording_firstreleasedate%``, which tries to provide the first release date per recording (which can be different for each track in a release). If you prefer this you can use the following script:"
 msgstr ""
 
-#: ../../extending/scripts.rst:107
+#: ../../extending/scripts.rst:112
 msgid "Or if you want to keep the ``date`` for the actual release date of the specific release, but use the recording's first release date as ``originaldate``:"
 msgstr ""
 
-#: ../../extending/scripts.rst:116
+#: ../../extending/scripts.rst:121
 msgid "Set album sort name"
 msgstr ""
 
-#: ../../extending/scripts.rst:118
+#: ../../extending/scripts.rst:123
 msgid "The ``albumsort`` tag is not filled by Picard by default.  You can set it to a meaningful value with prefixes \"The\" and \"A\" moved to the end with the following script:"
 msgstr ""
 
-#: ../../extending/scripts.rst:125
+#: ../../extending/scripts.rst:130
 msgid "This will e.g. set the sort name for the release \"The Best of Muddy Waters\" to \"Best of Muddy Waters, The\"."
 msgstr ""
 
-#: ../../extending/scripts.rst:129
+#: ../../extending/scripts.rst:134
 msgid "Set compilation for multi artist releases"
 msgstr ""
 
-#: ../../extending/scripts.rst:131
+#: ../../extending/scripts.rst:136
 msgid "By default the ``compilation`` tag will be set to 1 only for Various Artists releases.  The following script will set it for all releases with more than one artist (as it was default behavior in Picard 1.2 and earlier):"
 msgstr ""
 
-#: ../../extending/scripts.rst:140
+#: ../../extending/scripts.rst:145
 msgid "Remove featuring from album artist"
 msgstr ""
 
-#: ../../extending/scripts.rst:142
+#: ../../extending/scripts.rst:147
 msgid "This always removes featuring artists from the album artist:"
 msgstr ""
 
-#: ../../extending/scripts.rst:150
+#: ../../extending/scripts.rst:155
 msgid "Move featuring from artist to title"
 msgstr ""
 
-#: ../../extending/scripts.rst:152
+#: ../../extending/scripts.rst:157
 msgid "According to MusicBrainz guidelines featuring artists are part of the artist name, e.g. \"Artist A feat. Artist B\".  Some users prefer to have featuring added to the album or track title instead.  The following script moves featured track artists to the track title:"
 msgstr ""
 
-#: ../../extending/scripts.rst:162
+#: ../../extending/scripts.rst:167
 msgid "The same can be done for moving featured artists from the album artist to the album title:"
 msgstr ""
 
-#: ../../extending/scripts.rst:172
+#: ../../extending/scripts.rst:177
 msgid "Preserve original filename"
 msgstr ""
 
-#: ../../extending/scripts.rst:174
+#: ../../extending/scripts.rst:179
 msgid "The ``originalfilename`` tag is supposed to hold the filename the file originally had.  By default Picard does not set or modify this tag.  If you want to save this information the following Script can be used:"
 msgstr ""
 
-#: ../../extending/scripts.rst:182
+#: ../../extending/scripts.rst:187
 msgid "This will keep any existing ``originalfilename`` tag.  But if this tag is not yet present the tag will be set to the current filename.  As this happens before the file is being saved the original name of the file before Picard modifies it can be preserved."
 msgstr ""

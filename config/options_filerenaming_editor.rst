@@ -80,15 +80,17 @@ The editor screen has the following sections:
 
    * Import a new script from a file, either as a plain-text script or a Picard Naming Script Package.
    * Export the current script to a file, either as a plain-text script or a Picard Naming Script Package.
-   * Add a new (empty) script.
+   * Add a new (default) script.
    * Copy the current script as a new script.
    * Delete the current script.
-   * Save changes to the current script.
-   * Revert the current script to the last time it was saved.
+   * Reset all scripts, also available via the :guilabel:`Reset` button.
+   * Save all changes, also available via the :guilabel:`Make It So!` button.
+   * Exit without saving changes, also available via the :guilabel:`Cancel` button.
 
-   There is also an option to edit the metadata details for the current script. These details include such things as title,
-   author, version, license, description, and date and time of the last update. It is recommended that the description
-   include things such as any required plugins, settings, or tagging scripts.
+   There is also an option to view/edit the metadata details for the current script. These details include such things as title,
+   author, version, license, description, and date and time of the last update. It is recommended that the description include
+   things such as any required plugins, settings, or tagging scripts.  This can also be triggered by double clicking the script
+   title text box.
 
    .. image:: images/options-filenaming-editor-metadata.png
       :width: 100 %
