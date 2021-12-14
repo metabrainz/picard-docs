@@ -18,6 +18,7 @@ Contributors include (in alphabetic surname order):
 - Gabriel Ferreira
 - Rahul Kumar Gupta
 - Wieland Hoffmann
+- InvisibleMan78
 - jesus2099
 - David Kellner
 - Jun Kim
