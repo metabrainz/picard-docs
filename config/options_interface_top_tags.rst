@@ -13,8 +13,8 @@ in alphabetical order below the top tags.
 
 .. note::
 
-   By default, Picard will display the tags "**Title**", "**Artist**", "**Album**", "**Track Number**", "**Length**"
-   and "**Date**" first in the list. This can be changed if you right click on one of the tags in the metadata pane,
-   and enable :menuselection:`"Show Changes First"` in the context menu.
+   By default, Picard will display the top tags configured here first in the list. If you right click on one of
+   the tags in the metadata pane, and enable :menuselection:`"Show Changes First"` in the context menu, the tags
+   with changes will always be displayed first in the list, followed by the remaining top tags and other tags.
 
    .. image:: images/options-interface-top-tags-context.png
