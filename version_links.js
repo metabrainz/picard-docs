@@ -6,7 +6,7 @@
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
 const default_language = 'en';
-const stable_version = '2.6';
+const stable_version = '2.7';
 const versions = ['2.3', '2.4', '2.5', '2.6', '2.7'];
 var vcount = versions.length;
 var i, text;
