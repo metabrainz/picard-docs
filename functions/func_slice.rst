@@ -33,12 +33,12 @@ The following statements will return the values indicated:
 .. code-block:: taggerscript
 
     $set(foo,A; B; C; D; E)
-    $slice(%foo%,1)                        ==>  ""
+    $slice(%foo%,1,)                       ==>  ""
 
     $setmulti(foo,A; B; C; D; E)
-    $slice(%foo%,1)                        ==>  "B; C; D; E"
+    $slice(%foo%,1,)                       ==>  "B; C; D; E"
 
-    $slice(A; B; C; D; E,1)                ==>  "B; C; D; E"
+    $slice(A; B; C; D; E,1,)               ==>  "B; C; D; E"
     $slice(A; B; C; D; E,1,3)              ==>  "B; C"
     $slice(A; B; C; D; E,,3)               ==>  "A; B; C"
     $slice(A; B; C; D; E,1,3)              ==>  "B; C"
