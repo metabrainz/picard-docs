@@ -5,7 +5,7 @@
 $slice
 ======
 
-| Usage: **$slice(name,start,end[,separator])**
+| Usage: **$slice(name,start[,end[,separator]])**
 | Category: multi-value
 | Implemented: Picard 2.3
 
@@ -23,7 +23,7 @@ and the number of elements in the list respectively.
 
 A typical use might be to create a multi-value variable with all artists in
 ``%artists%`` except the first, which can be used to create a "feat." list.  This
-would look something like ``$setmulti(supporting_artists,$slice(%artists%,1,))``.
+would look something like ``$setmulti(supporting_artists,$slice(%artists%,1))``.
 
 
 **Example:**
@@ -38,7 +38,7 @@ The following statements will return the values indicated:
     $setmulti(foo,A; B; C; D; E)
     $slice(%foo%,1)                        ==>  "B; C; D; E"
 
-    $slice(A; B; C; D; E,1)                ==>  "B; C; D; E"
+    $slice(A; B; C; D; E,1,)               ==>  "B; C; D; E"
     $slice(A; B; C; D; E,1,3)              ==>  "B; C"
     $slice(A; B; C; D; E,,3)               ==>  "A; B; C"
     $slice(A; B; C; D; E,1,3)              ==>  "B; C"
