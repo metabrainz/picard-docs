@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-22 11:01-0700\n"
-"PO-Revision-Date: 2021-10-06 18:03+0000\n"
+"PO-Revision-Date: 2021-12-23 18:55+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/functionsfunc_slice/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/functionsfunc_slice/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.10\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_slice.rst:6
@@ -25,9 +26,8 @@ msgid "$slice"
 msgstr "$slice"
 
 #: ../../functions/func_slice.rst:8
-#, fuzzy
 msgid "Usage: **$slice(name,start[,end[,separator]])**"
-msgstr "Utilisation: **$slice(nom,début,fin[,séparateur])**"
+msgstr "Utilisation: **$slice(nom,début[,fin[,séparateur]])**"
 
 #: ../../functions/func_slice.rst:9
 msgid "Category: multi-value"
@@ -71,7 +71,6 @@ msgstr ""
 "d'éléments dans la liste respectivement."
 
 #: ../../functions/func_slice.rst:24
-#, fuzzy
 msgid ""
 "A typical use might be to create a multi-value variable with all artists "
 "in ``%artists%`` except the first, which can be used to create a "
@@ -81,7 +80,7 @@ msgstr ""
 "Une utilisation typique pourrait être de créer une variable à valeurs "
 "multiples avec tous les artistes dans ``%artists%`` sauf le premier, qui "
 "peut être utilisé pour créer un \"feat.\" liste. Cela ressemblerait à "
-"quelque chose comme ``$setmulti(support_artists,$slice(%artists%,1,))``."
+"quelque chose comme ``$setmulti(support_artists,$slice(%artists%,1))``."
 
 #: ../../functions/func_slice.rst:29
 msgid "**Example:**"
@@ -90,4 +89,3 @@ msgstr "**Exemple:**"
 #: ../../functions/func_slice.rst:31
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"
-
