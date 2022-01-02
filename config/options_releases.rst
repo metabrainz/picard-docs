@@ -17,7 +17,7 @@
    Add one or more countries into the list to make Picard prefer matching clusters or files to releases from the chosen countries.
    This list is also used to prioritize files in the "Other Releases" context menu.
 
-**Preferred release formats**
+**Preferred medium formats**
 
    Add one or more formats into the list to make Picard prefer matching clusters or files to releases of the specified format.
    This list is also used to prioritize files in the "Other Releases" context menu.
