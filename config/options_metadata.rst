@@ -93,9 +93,9 @@
 
    Choose how you want the "Various Artists" artist spelled.
 
-**Non-album tracks**
+**Standalone recordings**
 
-   Choose how you want "non-album tracks" to be grouped.
+   Choose how you want "Standalone recordings" to be grouped.
 
 .. only:: html
 
