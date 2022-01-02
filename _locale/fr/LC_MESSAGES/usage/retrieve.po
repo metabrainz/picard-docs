@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2022-01-02 09:45-0700\n"
 "PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/usageretrieve/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects"
+"/picard-docs/usageretrieve/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/retrieve.rst:4
@@ -58,16 +57,17 @@ msgid ":doc:`Lookup CD <retrieve_lookup_cd>`"
 msgstr ":doc:`CD de recherche <retrieve_lookup_cd>`"
 
 #: ../../usage/retrieve.rst:24
+#, fuzzy
 msgid ""
 "This is the preferred method of automatically identifying the album to "
 "retrieve, and should be used when you have the CD available.  Typically "
 "this would be used right after ripping the audio files from the CD.  When"
-" initiated, the table of contents (toc) is read from the CD and a request"
+" initiated, the table of contents (TOC) is read from the CD and a request"
 " is sent to MusicBrainz to return a list of the releases that match the "
-"toc.  If there are any matches, then they will be listed for you to "
+"TOC.  If there are any matches, then they will be listed for you to "
 "select the one to use.  If there are no matches or none of the matches "
 "are correct, you can search the database manually for the matching album,"
-" and are given the option of attaching the toc from your CD to the "
+" and are given the option of attaching the TOC from your CD to the "
 "selected release for future lookup."
 msgstr ""
 "Il s'agit de la méthode préférée pour identifier automatiquement l'album "
@@ -99,15 +99,17 @@ msgstr ""
 "liste des versions correspondantes sera affichée."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:13
+#, fuzzy
 msgid ""
-"Select the correct release from the list.  This will load the information"
-" for the release into Picard."
+"Select the correct release from the list and click on the "
+":guilabel:`\"Load into Picard\"` button.  This will load the information "
+"for the release into Picard."
 msgstr ""
 "Sélectionnez la version correcte dans la liste. Cela chargera les "
 "informations pour la publication dans Picard."
 
 #: ../../usage/retrieve_browser_steps.txt:55
-#: ../../usage/retrieve_lookup_cd_steps.txt:15
+#: ../../usage/retrieve_lookup_cd_steps.txt:16
 #: ../../usage/retrieve_lookup_steps.txt:32
 #: ../../usage/retrieve_manual_steps.txt:47
 #: ../../usage/retrieve_scan_steps.txt:26
@@ -118,13 +120,14 @@ msgstr ""
 "Un symbole de musique devant un numéro de piste dans le volet de droite "
 "indique qu'aucun fichier n'a été attribué à la piste."
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:22
+#: ../../usage/retrieve_lookup_cd_steps.txt:23
+#, fuzzy
 msgid ""
 "If there are no matches or none of the matches are correct, use the "
-":menuselection:`\"Lookup in Browser\"` option to locate the correct "
-"release.  Enter the release title or artist and initiate the search.  You"
-" will be provided with a list of the releases that match your search "
-"criterion and have the same number of tracks as your CD toc."
+":guilabel:`\"Submit disc ID\"` option to locate the correct release.  "
+"Enter the release title or artist and initiate the search.  You will be "
+"provided with a list of the releases that match your search criterion and"
+" have the same number of tracks as your CD TOC."
 msgstr ""
 "S'il n'y a pas de correspondance ou si aucune des correspondances n'est "
 "correcte, utilisez l'option :menuselection:`\"Rechercher dans le "
@@ -133,7 +136,7 @@ msgstr ""
 "des versions qui correspondent à votre critère de recherche et qui ont le"
 " même nombre de pistes que votre CD toc."
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:34
+#: ../../usage/retrieve_lookup_cd_steps.txt:35
 msgid ""
 "Use the green arrow |lookup_tagger| to load the information for a release"
 " into Picard.  In addition, you can select the release and attach the "
@@ -143,7 +146,7 @@ msgstr ""
 "pour une publication dans Picard. De plus, vous pouvez sélectionner la "
 "version et attacher la toc."
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:47
+#: ../../usage/retrieve_lookup_cd_steps.txt:48
 msgid ""
 "If none of the releases displayed are correct, you have the option to add"
 " a new release (with some information automatically included)."
@@ -217,8 +220,8 @@ msgid ""
 "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album "
 ":index:`clusters <pair: cluster; lookup>`."
 msgstr ""
-"Utilisez :menuselection:`\"Outils --> Cluster\"` pour regrouper les fichiers "
-"en album :index:`clusters <pair: cluster; recherche>`."
+"Utilisez :menuselection:`\"Outils --> Cluster\"` pour regrouper les "
+"fichiers en album :index:`clusters <pair: cluster; recherche>`."
 
 #: ../../usage/retrieve_lookup_steps.txt:29
 msgid ""
@@ -437,3 +440,4 @@ msgstr ""
 "Instructions pas à pas: :doc:`retrieve_lookup_cd` / "
 ":doc:`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` /"
 " :doc:`retrieve_manual`"
+
