@@ -16,7 +16,7 @@ The steps to follow to submit a disc id are:
 **1. Lookup the CD**
 
    Make sure the CD is inserted in the drive, and select :menuselection:`"Tools --> Lookup CD... --> (drive to use)"`.
-   The CD toc will be calculated and sent to MusicBrainz, and a list of matching releases will be displayed.
+   The CD TOC will be calculated and sent to MusicBrainz, and a list of matching releases will be displayed.
 
    .. image:: images/cd_lookup_1.png
       :width: 100%
@@ -31,7 +31,7 @@ The steps to follow to submit a disc id are:
    to do anything further.  If there are no matches found or the desired target release does not appear in the list,
    use the :menuselection:`"Submit disc ID"` option to locate the correct release.  Enter the release title or
    artist and initiate the search.  You will be provided with a list of the releases that match your search criterion
-   and have the same number of tracks as your CD toc.
+   and have the same number of tracks as your CD TOC.
 
    .. image:: images/cd_lookup_2.png
       :width: 100%
