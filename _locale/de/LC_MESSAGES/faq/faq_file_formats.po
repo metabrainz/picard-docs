@@ -1,20 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
-# This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-12 09:27-0600\n"
+"POT-Creation-Date: 2022-01-05 08:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
 "Language: de\n"
+"Language-Team: none\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../faq/faq_file_formats.rst:4
 msgid ":index:`File Formats <file formats>`"
@@ -33,7 +36,7 @@ msgid "MPEG-1 Audio (.mp3, .mp2, .m2a)"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:12
-msgid "MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .mp4)"
+msgid "MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .m4r, .mp4)"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:13
@@ -117,7 +120,12 @@ msgid "Direct Stream Digital (.dff, .dsf)"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:36
-msgid "WAVE files lack a standard for proper tagging. Picard uses ID3v2 tags to tag WAVE files, but this is not supported by all software. For compatibility with software which does not support ID3v2 tags in WAVE files additional RIFF INFO tags can be written to the files. RIFF INFO has only limited support for tags and character encodings."
+msgid ""
+"WAVE files lack a standard for proper tagging. Picard uses ID3v2 tags to "
+"tag WAVE files, but this is not supported by all software. For "
+"compatibility with software which does not support ID3v2 tags in WAVE "
+"files additional RIFF INFO tags can be written to the files. RIFF INFO "
+"has only limited support for tags and character encodings."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:43
@@ -125,7 +133,10 @@ msgid "What formats will Picard support?"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:45
-msgid "Picard is intended to eventually support all formats (including fingerprinting), but this is a complex (arguably never-ending) process, and will take some time."
+msgid ""
+"Picard is intended to eventually support all formats (including "
+"fingerprinting), but this is a complex (arguably never-ending) process, "
+"and will take some time."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:50
@@ -133,7 +144,11 @@ msgid "Which tags can Picard write to my files?"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:52
-msgid "See the :doc:`../variables/variables` section for information on which MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format."
+msgid ""
+"See the :doc:`../variables/variables` section for information on which "
+"MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping "
+"<https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical"
+" information on how these are further mapped into each tag format."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:57
@@ -141,7 +156,11 @@ msgid "How to I edit several tags at once? Why is it not easier do?"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:59
-msgid "Please understand that Picard is not designed as a general purpose :index:`tag editor <tags; editing>`. Its primary goal is to retrieve community-maintained MusicBrainz data to write into your tags. Some secondary goals include:"
+msgid ""
+"Please understand that Picard is not designed as a general purpose "
+":index:`tag editor <tags; editing>`. Its primary goal is to retrieve "
+"community-maintained MusicBrainz data to write into your tags. Some "
+"secondary goals include:"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:62
@@ -149,15 +168,26 @@ msgid "allowing rule-based customization of that data using scripts and plugins"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:63
-msgid "encouraging users to create an account and fix and update data via the MusicBrainz website, thus sharing their work with the rest of the community rather than simply fixing their tags locally."
+msgid ""
+"encouraging users to create an account and fix and update data via the "
+"MusicBrainz website, thus sharing their work with the rest of the "
+"community rather than simply fixing their tags locally."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:65
-msgid "To that end, Picard is likely to never have as much development focus on manual bulk editing of tags as other general purpose editors (e.g.: `Mp3tag <https://www.mp3tag.de/en/>`_, `foobar2000 <https://www.foobar2000.org/>`_, or even many library managers such as iTunes, Windows Media Player, and MediaMonkey). That doesn't mean that the team won't welcome patches in this area!"
+msgid ""
+"To that end, Picard is likely to never have as much development focus on "
+"manual bulk editing of tags as other general purpose editors (e.g.: "
+"`Mp3tag <https://www.mp3tag.de/en/>`_, `foobar2000 "
+"<https://www.foobar2000.org/>`_, or even many library managers such as "
+"iTunes, Windows Media Player, and MediaMonkey). That doesn't mean that "
+"the team won't welcome patches in this area!"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:69
-msgid "Having said all this, it is still possible to edit several tags at once in Picard by following the steps:"
+msgid ""
+"Having said all this, it is still possible to edit several tags at once "
+"in Picard by following the steps:"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:71
@@ -169,11 +199,15 @@ msgid "Right click on one of them, then click Details..."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:73
-msgid "On the popup dialog you can see the tags, with entries that denote where tags are different across files. You can edit or add new tags here."
+msgid ""
+"On the popup dialog you can see the tags, with entries that denote where "
+"tags are different across files. You can edit or add new tags here."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:74
-msgid "On exiting the dialog, you have changed the tags in memory. You need to click Save in order to persist these changes to your files."
+msgid ""
+"On exiting the dialog, you have changed the tags in memory. You need to "
+"click Save in order to persist these changes to your files."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:76
@@ -181,11 +215,15 @@ msgid "This process should work in both panes."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:80
-msgid "The built-in audio player cannot play my file. Which formats does it support?"
+msgid ""
+"The built-in audio player cannot play my file. Which formats does it "
+"support?"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:82
-msgid "The formats supported by the built-in :index:`audio player` depend on the formats supported by your operating system."
+msgid ""
+"The formats supported by the built-in :index:`audio player` depend on the"
+" formats supported by your operating system."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:84
@@ -193,15 +231,24 @@ msgid "**Windows:**"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:86
-msgid "The supported formats depend on the installed codecs. Depending on the Windows version certain codecs are pre-installed, but you can install additional codecs."
+msgid ""
+"The supported formats depend on the installed codecs. Depending on the "
+"Windows version certain codecs are pre-installed, but you can install "
+"additional codecs."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:89
-msgid "You might want to install the `Directshow Filters for Ogg <https://xiph.org/dshow/downloads/>`_ to add support for Ogg Vorbis, Ogg Speex, Ogg Theora, Ogg FLAC, native FLAC, and WebM files."
+msgid ""
+"You might want to install the `Directshow Filters for Ogg "
+"<https://xiph.org/dshow/downloads/>`_ to add support for Ogg Vorbis, Ogg "
+"Speex, Ogg Theora, Ogg FLAC, native FLAC, and WebM files."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:94
-msgid "Additional information is available from  `Microsoft's Codecs FAQ <https://support.microsoft.com/en-us/help/15070/windows-media-player-codecs-frequently-asked-questions>`_."
+msgid ""
+"Additional information is available from  `Microsoft's Codecs FAQ "
+"<https://support.microsoft.com/en-us/help/15070/windows-media-player-"
+"codecs-frequently-asked-questions>`_."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:96
@@ -209,13 +256,33 @@ msgid "**Linux:**"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:98
-msgid "On Linux systems the player uses GStreamer which supports most common audio formats, although some distributions might exclude some codecs due to licensing issues. For the widest format support make sure you install all of the GStreamer plugins available for your distribution."
+msgid ""
+"On Linux systems the player uses GStreamer which supports most common "
+"audio formats, although some distributions might exclude some codecs due "
+"to licensing issues. For the widest format support make sure you install "
+"all of the GStreamer plugins available for your distribution."
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:103
-msgid "I am using Fedora. Why doesn't :index:`acoustic fingerprinting <acoustic fingerprint, fingerprint; acoustic>` work?"
+msgid ""
+"I am using Fedora. Why doesn't :index:`acoustic fingerprinting <acoustic "
+"fingerprint, fingerprint; acoustic>` work?"
 msgstr ""
 
 #: ../../faq/faq_file_formats.rst:105
-msgid "Acoustic fingerprinting in Picard uses a tool called :program:`fpcalc`, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage from the `RPM Fusion repository <https://rpmfusion.org/>`_. This functionality is not contained in the main Fedora ``picard`` package because it requires the ``ffmpeg`` package which `cannot be distributed by Fedora <https://fedoraproject.org/wiki/Forbidden_items>`_. After `enabling the \"rpmfusion-free\" RPM Fusion repository <https://rpmfusion.org/Configuration>`_, install the package (as root) using::"
+msgid ""
+"Acoustic fingerprinting in Picard uses a tool called :program:`fpcalc`, "
+"which is not available in Fedora. You can get it by installing the "
+"chromaprint-toolspackage from the `RPM Fusion repository "
+"<https://rpmfusion.org/>`_. This functionality is not contained in the "
+"main Fedora ``picard`` package because it requires the ``ffmpeg`` package"
+" which `cannot be distributed by Fedora "
+"<https://fedoraproject.org/wiki/Forbidden_items>`_. After `enabling the "
+"\"rpmfusion-free\" RPM Fusion repository "
+"<https://rpmfusion.org/Configuration>`_, install the package (as root) "
+"using::"
 msgstr ""
+
+#~ msgid "MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .mp4)"
+#~ msgstr ""
+
