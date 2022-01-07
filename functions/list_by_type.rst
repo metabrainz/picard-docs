@@ -66,6 +66,7 @@ functions are:
 .. toctree::
    :maxdepth: 1
 
+   func_appendmulti
    func_getmulti
    func_join
    func_lenmulti
