@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 11:40-0600\n"
-"PO-Revision-Date: 2021-10-06 18:03+0000\n"
+"POT-Creation-Date: 2021-12-22 11:01-0700\n"
+"PO-Revision-Date: 2021-12-23 18:55+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/"
 "picard-docs/functionsfunc_slice/fr/>\n"
@@ -18,35 +18,35 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8.1\n"
-"Generated-By: Babel 2.8.0\n"
+"X-Generator: Weblate 4.10\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../functions/func_slice.rst:4
+#: ../../functions/func_slice.rst:6
 msgid "$slice"
 msgstr "$slice"
 
-#: ../../functions/func_slice.rst:6
-msgid "Usage: **$slice(name,start,end[,separator])**"
-msgstr "Utilisation: **$slice(nom,début,fin[,séparateur])**"
+#: ../../functions/func_slice.rst:8
+msgid "Usage: **$slice(name,start[,end[,separator]])**"
+msgstr "Utilisation: **$slice(nom,début[,fin[,séparateur]])**"
 
-#: ../../functions/func_slice.rst:7
+#: ../../functions/func_slice.rst:9
 msgid "Category: multi-value"
 msgstr "Catégorie: multi-valeur"
 
-#: ../../functions/func_slice.rst:8
+#: ../../functions/func_slice.rst:10
 msgid "Implemented: Picard 2.3"
 msgstr "Mis en œuvre: Picard 2.3"
 
-#: ../../functions/func_slice.rst:10
+#: ../../functions/func_slice.rst:12
 msgid "**Description:**"
 msgstr "**Description:**"
 
-#: ../../functions/func_slice.rst:12
+#: ../../functions/func_slice.rst:14
 msgid ""
-"Returns a multi-value variable containing the elements from the "
-"``start`` index up to but not including the ``end`` index from the multi-"
-"value variable ``name``. A literal value representing a multi-value can "
-"be substituted for ``name``, using the ``separator`` (or a semicolon "
+"Returns a multi-value variable containing the elements from the ``start``"
+" index up to but not including the ``end`` index from the multi-value "
+"variable ``name``. A literal value representing a multi-value can be "
+"substituted for ``name``, using the ``separator`` (or a semicolon "
 "followed by a space \"; \" if not passed) to coerce the value into a "
 "proper multi-valued variable."
 msgstr ""
@@ -58,34 +58,34 @@ msgstr ""
 "pas passé) pour contraindre la valeur à une valeur multiple appropriée "
 "variable."
 
-#: ../../functions/func_slice.rst:18
+#: ../../functions/func_slice.rst:20
 msgid ""
 "Indexes are zero based. Negative numbers will be counted back from the "
 "number of elements in the list. If the ``start`` or ``end`` indexes are "
-"left blank, they will default to 0 and the number of elements in the "
-"list respectively."
+"left blank, they will default to 0 and the number of elements in the list"
+" respectively."
 msgstr ""
 "Les index sont basés sur zéro. Les nombres négatifs seront comptés à "
 "partir du nombre d'éléments de la liste. Si les index ``début`` ou "
 "``fin`` sont laissés vides, ils seront par défaut à 0 et au nombre "
 "d'éléments dans la liste respectivement."
 
-#: ../../functions/func_slice.rst:22
+#: ../../functions/func_slice.rst:24
 msgid ""
 "A typical use might be to create a multi-value variable with all artists "
-"in ``%artists%`` except the first, which can be used to create a \"feat."
-"\" list.  This would look something like ``$setmulti(supporting_artists,"
-"$slice(%artists%,1,))``."
+"in ``%artists%`` except the first, which can be used to create a "
+"\"feat.\" list.  This would look something like "
+"``$setmulti(supporting_artists,$slice(%artists%,1))``."
 msgstr ""
 "Une utilisation typique pourrait être de créer une variable à valeurs "
 "multiples avec tous les artistes dans ``%artists%`` sauf le premier, qui "
 "peut être utilisé pour créer un \"feat.\" liste. Cela ressemblerait à "
-"quelque chose comme ``$setmulti(support_artists,$slice(%artists%,1,))``."
+"quelque chose comme ``$setmulti(support_artists,$slice(%artists%,1))``."
 
-#: ../../functions/func_slice.rst:27
+#: ../../functions/func_slice.rst:29
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_slice.rst:29
+#: ../../functions/func_slice.rst:31
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"

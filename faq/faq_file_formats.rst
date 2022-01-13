@@ -9,7 +9,7 @@ What formats does Picard support?
 Picard supports the following file formats:
 
 * MPEG-1 Audio (.mp3, .mp2, .m2a)
-* MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .mp4)
+* MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .m4r, .mp4)
 * Windows Media Audio (.wma, .wmv, .asf)
 * Microsoft WAVE (.wav)
 * The True Audio (.tta)
