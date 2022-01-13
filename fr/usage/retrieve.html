@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Récupération des informations sur l’album &mdash; Documentation MusicBrainz Picard v2.7.1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Récupération des informations sur l’album &mdash; Documentation MusicBrainz Picard v2.7.3</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.7.1
+                v2.7.3
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -144,7 +144,7 @@
 <h1>Récupération des informations sur l’album<a class="headerlink" href="#retrieving-album-information" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Il existe essentiellement quatre méthodes principales utilisées pour récupérer les informations d’album à partir de la base de données MusicBrainz.</p>
 <p><a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">CD de recherche</span></a></p>
-<p>Il s’agit de la méthode préférée pour identifier automatiquement l’album à récupérer et doit être utilisée lorsque le CD est disponible. En règle générale, cela serait utilisé juste après l’extraction des fichiers audio du CD. Une fois lancée, la table des matières (toc) est lue à partir du CD et une demande est envoyée à MusicBrainz pour renvoyer une liste des versions qui correspondent à la toc. S’il y a des correspondances, elles seront répertoriées pour que vous puissiez sélectionner celle à utiliser. S’il n’y a pas de correspondance ou si aucune des correspondances n’est correcte, vous pouvez rechercher manuellement dans la base de données l’album correspondant et vous avez la possibilité de joindre le toc de votre CD à la version sélectionnée pour une recherche ultérieure.</p>
+<p>C’est la méthode préférée pour identifier automatiquement l’album à récupérer, et elle doit être utilisée lorsque vous disposez du CD.  En général, elle est utilisée juste après avoir extrait les fichiers audio du CD.  Lorsqu’elle est lancée, la table des matières (TOC) est lue à partir du CD et une requête est envoyée à MusicBrainz pour renvoyer une liste des sorties qui correspondent à la TOC.  S’il y a des correspondances, elles seront listées pour que vous puissiez choisir celle à utiliser.  S’il n’y a pas de correspondance ou si aucune correspondance n’est correcte, vous pouvez rechercher manuellement l’album correspondant dans la base de données, et vous avez la possibilité d’attacher la TOC de votre CD à la sortie sélectionnée pour une consultation ultérieure.</p>
 <p><a class="reference internal" href="retrieve_lookup.html"><span class="doc">Rechercher des fichiers</span></a></p>
 <p>Si vous ne disposez pas du CD et que vos fichiers sont regroupés par album, il s’agit de la méthode préférée pour identifier automatiquement l’album à récupérer. Cela se fait en regroupant les fichiers dans des groupes d’albums dans Picard, puis en effectuant la recherche. Picard essaiera de faire correspondre l’ensemble des fichiers en cluster à la même version.</p>
 <p><a class="reference internal" href="retrieve_scan.html"><span class="doc">Analyser les fichiers</span></a></p>
