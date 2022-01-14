@@ -1,11 +1,17 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _tutorial_naming_script:
+
 Writing a :index:`File Naming Script <script; file naming, file naming script>`
 ==================================================================================
 
 Writing a script to organize and name your files is actually not that hard -- just don’t get intimidated by all the
 '$', '%' and parentheses. If you can write down a pattern like "**ARTIST - (YEAR) ALBUM NAME/TRACK - SONG TITLE**"
 of how you want the files and folders named, you can quite easily translate this to the proper script.
+
+To get started, first open the :doc:`/config/options_filerenaming_editor`, either by selecting :menuselection:`"Options --> Open file naming script editor..."`
+from Picard's main menu bar or by clicking the :guilabel:`Edit script...` button on the :doc:`/config/options_filerenaming` configuration page.
+From this screen, you can start a new script for your work.
 
 Note that the use of a '/' in the formatting string separates the output directory from the file name. The formatting
 string is allowed to contain any number of '/' characters. Everything before the last '/' is the directory location,

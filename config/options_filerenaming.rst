@@ -1,5 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _opt_file_naming:
+
 :index:`File Naming Options <pair: configuration; file naming>`
 ================================================================
 
@@ -92,7 +94,7 @@ These options determine how Picard handles files when they are saved with update
    As of Picard version 2.7, multiple file naming scripts are supported.  This option allows the user to select the
    file naming script to use from the list of scripts available. Scripts can be either system preset scripts or
    user-defined scripts. The available scripts are managed in the :doc:`File naming script editor <options_filerenaming_editor>`
-   screen, which is displayed when the "Open the file naming script editor" button is selected.
+   screen, which is displayed when the :guilabel:`Edit script...` button is selected.
 
 **Files will be named like this**
 

@@ -1,7 +1,9 @@
 .. MusicBrainz Picard Documentation Project
 
+.. _opt_naming_script_editor:
+
 :index:`File Naming Script Editor <pair: file naming; script editor>`
-==================================================================================
+======================================================================
 
 The file naming script editor is used to manage the file naming scripts available for use by Picard.
 Each script has a title that will show up in the script selection box.  There are two types of scripts
@@ -53,6 +55,7 @@ The editor screen has the following sections:
    Scripts are often discussed in the `MetaBrainz Community Forum <https://community.metabrainz.org/>`_,
    and there is a thread specific to `file naming and script snippets
    <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_.
+   There is also a tutorial on :doc:`/tutorials/naming_script` available.
 
    .. note::
 
