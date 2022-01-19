@@ -36,6 +36,13 @@ start with a dollar sign and end with an argument list enclosed in parentheses (
    a backslash before the character to be escaped.  For example, to set a tag value to ``($1,000,000)``
    it would have to be entered as ``$set(test_tag,\(\$1\,000\,000\))``.
 
+.. note::
+
+   Usually you can access the values of a tag by the proper variable name. For example, if your tag
+   is called "rerecorded" you can use ``%rerecorded%``. But the hyphen is not a valid character for a
+   script variable, so ``%re-recorded%`` gives a syntax error. In cases like this you need to use
+   ``$get(re-recorded)``.
+
 Metadata Variables
 ------------------
 

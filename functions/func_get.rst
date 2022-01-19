@@ -15,6 +15,12 @@ been set.  If ``name`` is another variable (e.g. ``%indirect%``) the value of th
 variable will be used as ``name``.  This allows the retrieval of dynamically named
 variables.
 
+.. note::
+
+   Usually you can access the values of a tag by the proper variable name. For example, if your tag
+   is called "rerecorded" you can use ``%rerecorded%``. But the hyphen is not a valid character for a
+   script variable, so ``%re-recorded%`` gives a syntax error. In cases like this you need to use
+   ``$get(re-recorded)``.
 
 **Example:**
 
