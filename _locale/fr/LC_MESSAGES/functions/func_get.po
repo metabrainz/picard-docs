@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021.
+# Bob Swift <bswift@rsds.ca>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-20 10:44-0700\n"
-"PO-Revision-Date: 2021-10-06 18:03+0000\n"
+"PO-Revision-Date: 2022-01-21 18:35+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/functionsfunc_get/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/functionsfunc_get/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.10.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_get.rst:6
@@ -58,6 +59,12 @@ msgid ""
 "variable, so ``%re-recorded%`` gives a syntax error. In cases like this "
 "you need to use ``$get(re-recorded)``."
 msgstr ""
+"En général, vous pouvez accéder aux valeurs d'une balise par le nom de "
+"variable approprié. Par exemple, si votre balise s'appelle \"rerecorded\", "
+"vous pouvez utiliser ``%rerecorded%``. Mais le trait d'union n'est pas un "
+"caractère valide pour une variable de script, donc ``%re-recorded%`` donne "
+"une erreur de syntaxe. Dans des cas comme celui-ci, vous devez utiliser "
+"``$get(re-recorded)``."
 
 #: ../../functions/func_get.rst:25
 msgid "**Example:**"
@@ -66,4 +73,3 @@ msgstr "**Exemple:**"
 #: ../../functions/func_get.rst:27
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"
-
