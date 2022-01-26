@@ -48,6 +48,10 @@ These variables are populated from MusicBrainz data for most releases, without a
     the disc ids attached to that medium. For example, the list provided for Disc 1 of a three CD set will not include the disc ids attached to discs 2
     and 3 of the set.
 
+**_musicbrainz_tracknumber**
+
+    The track number written as on the MusicBrainz release, such as vinyl numbering (A1, A2...).
+
 **_pregap**
 
    Set to 1 if the track is a "`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_". (*since Picard 1.3.1*)
