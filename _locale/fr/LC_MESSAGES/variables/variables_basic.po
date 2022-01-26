@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 13:55-0700\n"
+"POT-Creation-Date: 2022-01-26 16:21-0700\n"
 "PO-Revision-Date: 2021-09-18 17:13+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
@@ -189,10 +189,19 @@ msgid "Rating 0-5 by MusicBrainz users."
 msgstr "Note 0-5 par les utilisateurs de MusicBrainz."
 
 #: ../../variables/variables_basic.rst:69
+#, fuzzy
+msgid "**_recording_comment**"
+msgstr "**_releasecomment**"
+
+#: ../../variables/variables_basic.rst:71
+msgid "The disambiguation comment for the recording associated with a track."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:73
 msgid "**_recording_firstreleasedate**"
 msgstr "**_recording_firstreleasedate**"
 
-#: ../../variables/variables_basic.rst:71
+#: ../../variables/variables_basic.rst:75
 msgid ""
 "The date of the earliest recording for a track in the format YYYY-MM-DD."
 "  (*Since Picard 2.6*)"
@@ -200,27 +209,27 @@ msgstr ""
 "Date du premier enregistrement d'une piste au format AAAA-MM-JJ. (*Depuis"
 " Picard 2.6*)"
 
-#: ../../variables/variables_basic.rst:73
+#: ../../variables/variables_basic.rst:77
 msgid "**_releaseannotation**"
 msgstr "**_releaseannotation**"
 
-#: ../../variables/variables_basic.rst:75
+#: ../../variables/variables_basic.rst:79
 msgid "The annotation comment for the release. (*since Picard 2.6*)"
 msgstr "Le commentaire d'annotation pour la version. (*depuis Picard 2,6*)"
 
-#: ../../variables/variables_basic.rst:77
+#: ../../variables/variables_basic.rst:81
 msgid "**_releasecomment**"
 msgstr "**_releasecomment**"
 
-#: ../../variables/variables_basic.rst:79
+#: ../../variables/variables_basic.rst:83
 msgid "Release disambiguation comment. (*since Picard 0.15*)"
 msgstr "Le commentaire d'homonymie pour la version. (*depuis Picard 0,15*)"
 
-#: ../../variables/variables_basic.rst:81
+#: ../../variables/variables_basic.rst:85
 msgid "**_releasecountries**"
 msgstr "**_releasecountries**"
 
-#: ../../variables/variables_basic.rst:83
+#: ../../variables/variables_basic.rst:87
 msgid ""
 "This provides the complete list of release countries for the release as a"
 " multi-value variable. (*since Picard 2.3.1*)"
@@ -228,11 +237,11 @@ msgstr ""
 "Ceci fournit la liste complète des pays de la version pour la version "
 "comme une variable à plusieurs valeurs. (*depuis Picard 2.3.1*)"
 
-#: ../../variables/variables_basic.rst:85
+#: ../../variables/variables_basic.rst:89
 msgid "**_releasegroup**"
 msgstr "**_releasegroup**"
 
-#: ../../variables/variables_basic.rst:87
+#: ../../variables/variables_basic.rst:91
 msgid ""
 "Release Group Title which is typically the same as the Album Title, but "
 "can be different."
@@ -240,19 +249,19 @@ msgstr ""
 "Le titre du groupe de versions qui est généralement le même que le titre "
 "de l'album, mais peut être différent."
 
-#: ../../variables/variables_basic.rst:89
+#: ../../variables/variables_basic.rst:93
 msgid "**_releasegroupcomment**"
 msgstr "**_releasegroupcomment**"
 
-#: ../../variables/variables_basic.rst:91
+#: ../../variables/variables_basic.rst:95
 msgid "Release Group disambiguation comment."
 msgstr "Le commentaire d'homonymie pour le groupe de version."
 
-#: ../../variables/variables_basic.rst:93
+#: ../../variables/variables_basic.rst:97
 msgid "**_releasegroup_firstreleasedate**"
 msgstr "**_releasegroup_firstreleasedate**"
 
-#: ../../variables/variables_basic.rst:95
+#: ../../variables/variables_basic.rst:99
 msgid ""
 "The date of the earliest release in the Release Group in the format YYYY-"
 "MM-DD. This is intended to provide, for example, the release date of the "
@@ -262,7 +271,7 @@ msgstr ""
 "AAAA-MM-JJ. Ceci est destiné à fournir, par exemple, la date de sortie de"
 " la version vinyle de ce que vous avez sur CD. (*Depuis Picard 2.6*)"
 
-#: ../../variables/variables_basic.rst:99
+#: ../../variables/variables_basic.rst:103
 msgid ""
 "This is the same information provided by default in the ``originaldate`` "
 "tag."
@@ -270,11 +279,11 @@ msgstr ""
 "Ce sont les mêmes informations fournies par défaut dans la balise "
 "``originaldate``."
 
-#: ../../variables/variables_basic.rst:101
+#: ../../variables/variables_basic.rst:105
 msgid "**_releaselanguage**"
 msgstr "**_releaselanguage**"
 
-#: ../../variables/variables_basic.rst:103
+#: ../../variables/variables_basic.rst:107
 msgid ""
 "Release Language as per `ISO 639-3 "
 "<https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)"
@@ -282,11 +291,11 @@ msgstr ""
 "La langue de la version selon `ISO 639-3 "
 "<https://fr.wikipedia.org/wiki/ISO_639-3>`_. (*depuis Picard 0,10*)"
 
-#: ../../variables/variables_basic.rst:107
+#: ../../variables/variables_basic.rst:111
 msgid "**_secondaryreleasetype**"
 msgstr "**_secondaryreleasetype**"
 
-#: ../../variables/variables_basic.rst:109
+#: ../../variables/variables_basic.rst:113
 msgid ""
 "Zero or more Release Group Secondary types (i.e.: audiobook, compilation,"
 " dj-mix, interview, live, mixtape/street, remix, soundtrack, or "
@@ -296,11 +305,11 @@ msgstr ""
 "(c'est-à-dire : livre audio, compilation, DJ-mix, interview, live, "
 "mixtape / street, remix, bande sonore ou speechword)."
 
-#: ../../variables/variables_basic.rst:111
+#: ../../variables/variables_basic.rst:115
 msgid "**_totalalbumtracks**"
 msgstr "**_totalalbumtracks**"
 
-#: ../../variables/variables_basic.rst:113
+#: ../../variables/variables_basic.rst:117
 msgid "The total number of tracks across all discs of this release."
 msgstr "Le nombre total de pistes sur tous les disques de cette version."
 
