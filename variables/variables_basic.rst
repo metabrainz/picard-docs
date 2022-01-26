@@ -66,6 +66,10 @@ These variables are populated from MusicBrainz data for most releases, without a
 
     Rating 0-5 by MusicBrainz users.
 
+**_recording_comment**
+
+   The disambiguation comment for the recording associated with a track.
+
 **_recording_firstreleasedate**
 
    The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
