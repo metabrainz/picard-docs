@@ -147,6 +147,13 @@
 <p class="admonition-title">Note</p>
 <p>Lorsque vous entrez des chaînes d’entrée dans des scripts Picard, vous devez échapper une barre oblique inverse « \ », un signe dollar « $ », une virgule « , » et les parenthèses gauche et droite « ( » et « ) » afin de forcer Picard à ne pas les interpréter dans le cadre de la commande de script. Cela se fait en insérant une barre oblique inverse avant le caractère à échapper. Par exemple, pour définir une valeur de balise sur <code class="docutils literal notranslate"><span class="pre">($1,000,000)</span></code>, il faudrait la saisir sous la forme <code class="docutils literal notranslate"><span class="pre">$set(test_tag,\(\$1\,000\,000\))</span></code>.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Usually you can access the values of a tag by the proper variable name. For example, if your tag
+is called « rerecorded » you can use <code class="docutils literal notranslate"><span class="pre">%rerecorded%</span></code>. But the hyphen is not a valid character for a
+script variable, so <code class="docutils literal notranslate"><span class="pre">%re-recorded%</span></code> gives a syntax error. In cases like this you need to use
+<code class="docutils literal notranslate"><span class="pre">$get(re-recorded)</span></code>.</p>
+</div>
 </div>
 <div class="section" id="metadata-variables">
 <h2>Variables de métadonnées<a class="headerlink" href="#metadata-variables" title="Lien permanent vers ce titre">¶</a></h2>
