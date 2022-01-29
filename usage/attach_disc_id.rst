@@ -16,7 +16,11 @@ The steps to follow to submit a disc id are:
 **1. Lookup the CD**
 
    Make sure the CD is inserted in the drive, and select :menuselection:`"Tools --> Lookup CD... --> (drive to use)"`.
-   The CD TOC will be calculated and sent to MusicBrainz, and a list of matching releases will be displayed.
+   The CD toc will be calculated and sent to MusicBrainz. Alternately, you can use an EAC or XLD ripper log file
+   to lookup the CD using the :menuselection:`"Tools --> Lookup CD --> From EAC / XLD log file..."` command. This
+   will open a file browser dialog to allow you to select the log file to process. Either method will query the
+   MusicBrainz database and display a list of matching releases.
+
 
    .. image:: images/cd_lookup_1.png
       :width: 100%
