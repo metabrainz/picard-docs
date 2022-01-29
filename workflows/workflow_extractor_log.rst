@@ -1,7 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
-:index:`When the ripper log file is available <workflows; EAC log, workflows; XLD log>`
-=======================================================================================
+:index:`When the ripper log file is available <workflows; EAC log, workflows; XLD log, EAC; lookup log, XLD; lookup log>`
+=========================================================================================================================
 
 This option was added to Picard in version 2.8, and supports the use of log files produced by the popular CD
 file rippers `Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows and
