@@ -53,8 +53,14 @@ See the :doc:`../variables/variables` section for information on which MusicBrai
 <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
 
 
-How to I edit several tags at once? Why is it not easier do?
--------------------------------------------------------------------
+How do I edit tags in several files at once?
+--------------------------------------------
+
+1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`
+2. The metadata view at the bottom will show which tags are present in the selected files
+   and whether they are the same across all files or different.
+3. If you edit any value in the "New values" column you will change this tag for all selected files.
+4. You need to click Save in order to persist these changes to your files.
 
 Please understand that Picard is not designed as a general purpose :index:`tag editor <tags; editing>`. Its primary goal is to retrieve community-maintained MusicBrainz
 data to write into your tags. Some secondary goals include:
@@ -66,14 +72,45 @@ To that end, Picard is likely to never have as much development focus on manual 
 `Mp3tag <https://www.mp3tag.de/en/>`_, `foobar2000 <https://www.foobar2000.org/>`_, or even many library managers such as iTunes, Windows
 Media Player, and MediaMonkey). That doesn't mean that the team won't welcome patches in this area!
 
-Having said all this, it is still possible to edit several tags at once in Picard by following the steps:
 
-1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`
-2. Right click on one of them, then click Details...
-3. On the popup dialog you can see the tags, with entries that denote where tags are different across files. You can edit or add new tags here.
-4. On exiting the dialog, you have changed the tags in memory. You need to click Save in order to persist these changes to your files.
+Why is saving files sometimes slow, but saving a second time much faster?
+-------------------------------------------------------------------------
 
-This process should work in both panes.
+In most file formats the tags are near the beginning of the file, before the actual music data.  If changed
+tags get written to the file and the newly written tags take more space then before the entire file needs
+to be rewritten. This is usually much slower than just rewriting part of the file containing the tags,
+especially for larger files and/or if the files are on a slow storage (e.g. a network share or slow external drive).
+
+To mitigate the issue most tagging software (including Picard) leaves some free space (the so called padding)
+after the tags and before the actual music data. If the newly written are only a bit larger than before this free space
+can be used instead of rewriting the entire files. Likewise if the newly written tags take less space than before this
+only leads to an increase in padding, avoiding rewriting the file.
+
+This all means that when you add many tags to the files (or if there is no or only small padding) you experience
+slow writing speed. If you do only small changes or just remove and later re-add tags the writing is much faster.
+
+
+Why does Picard not use Vinyl style track numbers (e.g. A1, A2, ...) by default?
+--------------------------------------------------------------------------------
+
+For Vinyl releases the track numbers on MusicBrainz are usually entered as A1, A2, ..., B1, B2, ... and so on.
+Other releases might use even different more uncommon numbering schemes.  Yet Picard will by default always write
+decimal track numbers, starting with 1 for the first track on a medium.
+
+The main reason for this is that this is how track numbers are defined for most file formats.  The formats expect
+decimal numbers, and likewise music players might only expect decimal numbers when reading the files.
+
+If you really want to you can use the scripting variable ``%_musicbrainz_tracknumber%`` which always holds the
+track number as it was entered in the MusicBrainz database.  The following script will set the tracknumber tag
+to the value as displayed in the MusicBrainz database:
+
+.. code-block:: taggerscript
+
+   $set(tracknumber,%_musicbrainz_tracknumber%)
+
+Please be aware that for MP4 files this will result in the track number not being saved, as the MP4 format
+does not allow for non integer values in this tag.  For other formats it depends on the playback software and
+devices you use if they can handle these non-standard track numbers.
 
 
 The built-in audio player cannot play my file. Which formats does it support?
