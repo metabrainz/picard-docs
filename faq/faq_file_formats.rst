@@ -75,6 +75,23 @@ To that end, Picard is likely to never have as much development focus on manual 
 Media Player, and MediaMonkey). That doesn't mean that the team won't welcome patches in this area!
 
 
+Why is saving files sometimes slow, but saving a second time much faster?
+-------------------------------------------------------------------------
+
+In most file formats the tags are near the beginning of the file, before the actual music data.  If changed
+tags get written to the file and the newly written tags take more space then before the entire file needs
+to be rewritten. This is usually much slower than just rewriting part of the file containing the tags,
+especially for larger files and/or if the files are on a slow storage (e.g. a network share or slow external drive).
+
+To mitigate the issue most tagging software (including Picard) leaves some free space (the so called padding)
+after the tags and before the actual music data. If the newly written are only a bit larger than before this free space
+can be used instead of rewriting the entire files. Likewise if the newly written tags take less space than before this
+only leads to an increase in padding, avoiding rewriting the file.
+
+This all means that when you add many tags to the files (or if there is no or only small padding) you experience
+slow writing speed. If you do only small changes or just remove and later re-add tags the writing is much faster.
+
+
 The built-in audio player cannot play my file. Which formats does it support?
 -----------------------------------------------------------------------------------
 
