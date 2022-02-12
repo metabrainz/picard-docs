@@ -60,6 +60,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
    General Recommendations <workflows/workflows>
    workflows/workflow_cd
+   workflows/workflow_extractor_log
    workflows/workflow_album
    workflows/workflow_metadata
    workflows/workflow_no_info

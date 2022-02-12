@@ -10,7 +10,8 @@ up the release.
 **1. Rip the CD to music files**
 
    Extract the music filed from the CD using your favorite ripping program (e.g.: `Exact Audio Copy
-   <http://exactaudiocopy.de/>`_ for Windows or `Whipper <https://github.com/whipper-team/whipper>`_ for Linux).
+   <http://exactaudiocopy.de/>`_ for Windows, `X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_
+   for macOS, or `Whipper <https://github.com/whipper-team/whipper>`_ for Linux).
    The format for the output files depends on your personal preference and the formats supported by your player.
    A popular format is FLAC, which is a compressed lossless format.
 
@@ -23,11 +24,14 @@ up the release.
 
 **3. Select the correct release**
 
-   If there is only one release that matches the disc id for your disc, it will be loaded automatically.  Before
-   proceeding, please check to ensure that it properly matches your CD (e.g.: release country, date and label,
-   catalog number, barcode, media type, and cover art).  This is especially important if you are going to submit
-   any information such as disc id or AcoustID fingerprints.
+   A list of all releases matching the toc of the CD will be displayed for selection, with an option to submit
+   the disc id if none of the releases are a match to your CD.  Before proceeding, please check to ensure that
+   the release you select properly matches your CD (e.g.: release country, date and label, catalog number,
+   barcode, media type, and cover art).  This is especially important if you are going to submit any
+   information such as acoustic features to AcousticBrainz or AcoustID fingerprints.
 
+   .. image:: /usage/images/cd_lookup_1.png
+      :width: 100%
 
 **4. Load the files**
 
