@@ -53,8 +53,16 @@ See the :doc:`../variables/variables` section for information on which MusicBrai
 <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
 
 
-How to I edit several tags at once? Why is it not easier do?
--------------------------------------------------------------------
+How to I edit tags in several files at once?
+--------------------------------------------
+
+1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`
+2. The metadata view at the bottom will show which tags are present in the selected files
+   and whether they are the same across all files or different.
+3. If you edit any value in the "New values" column you will change this tag for all selected files.
+4. You need to click Save in order to persist these changes to your files.
+
+This process does work in both panes.
 
 Please understand that Picard is not designed as a general purpose :index:`tag editor <tags; editing>`. Its primary goal is to retrieve community-maintained MusicBrainz
 data to write into your tags. Some secondary goals include:
@@ -65,15 +73,6 @@ data to write into your tags. Some secondary goals include:
 To that end, Picard is likely to never have as much development focus on manual bulk editing of tags as other general purpose editors (e.g.:
 `Mp3tag <https://www.mp3tag.de/en/>`_, `foobar2000 <https://www.foobar2000.org/>`_, or even many library managers such as iTunes, Windows
 Media Player, and MediaMonkey). That doesn't mean that the team won't welcome patches in this area!
-
-Having said all this, it is still possible to edit several tags at once in Picard by following the steps:
-
-1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`
-2. Right click on one of them, then click Details...
-3. On the popup dialog you can see the tags, with entries that denote where tags are different across files. You can edit or add new tags here.
-4. On exiting the dialog, you have changed the tags in memory. You need to click Save in order to persist these changes to your files.
-
-This process should work in both panes.
 
 
 The built-in audio player cannot play my file. Which formats does it support?
