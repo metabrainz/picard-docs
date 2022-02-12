@@ -28,6 +28,11 @@
    Check to remove APEv2 tags from MP3 files – ID3 is recommended for MP3 files. Picard will write ID3 tags to MP3 files
    regardless of this setting.
 
+**Fix missing seekpoints for FLAC files**
+
+   Some software has issues handling FLAC files that have an empty seek table metadata block. This options removes the
+   empty and hence unused seek table block from the files on saving.
+
 **Preserve these tags from being cleared or overwritten with MusicBrainz data**
 
    This is an advanced option: If you have tags which you need to preserve, enter their names here to stop Picard from
