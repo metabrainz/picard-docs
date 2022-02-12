@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-05 08:23+0100\n"
+"POT-Creation-Date: 2022-02-12 10:49-0700\n"
 "PO-Revision-Date: 2021-05-03 11:27+0200\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: fr\n"
@@ -167,12 +167,37 @@ msgstr ""
 "mappés dans chaque format de tag."
 
 #: ../../faq/faq_file_formats.rst:57
-msgid "How to I edit several tags at once? Why is it not easier do?"
+msgid "How do I edit tags in several files at once?"
 msgstr ""
-"Comment puis-je modifier plusieurs balises à la fois? Pourquoi n'est-ce "
-"pas plus facile à faire?"
 
 #: ../../faq/faq_file_formats.rst:59
+msgid "Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`"
+msgstr ""
+"Cliquez et sélectionnez plusieurs fichiers avec :kbd:`Ctrl` ou "
+":kbd:`Shift`."
+
+#: ../../faq/faq_file_formats.rst:60
+msgid ""
+"The metadata view at the bottom will show which tags are present in the "
+"selected files and whether they are the same across all files or "
+"different."
+msgstr ""
+
+#: ../../faq/faq_file_formats.rst:62
+msgid ""
+"If you edit any value in the \"New values\" column you will change this "
+"tag for all selected files."
+msgstr ""
+
+#: ../../faq/faq_file_formats.rst:63
+#, fuzzy
+msgid "You need to click Save in order to persist these changes to your files."
+msgstr ""
+"En quittant la boîte de dialogue, vous avez modifié les balises en "
+"mémoire. Vous devez cliquer sur Enregistrer pour conserver ces "
+"modifications dans vos fichiers."
+
+#: ../../faq/faq_file_formats.rst:65
 msgid ""
 "Please understand that Picard is not designed as a general purpose "
 ":index:`tag editor <tags; editing>`. Its primary goal is to retrieve "
@@ -185,13 +210,13 @@ msgstr ""
 "pour les écrire dans vos balises. Certains objectifs secondaires "
 "comprennent:"
 
-#: ../../faq/faq_file_formats.rst:62
+#: ../../faq/faq_file_formats.rst:68
 msgid "allowing rule-based customization of that data using scripts and plugins"
 msgstr ""
 "autoriser la personnalisation basée sur des règles de ces données à "
 "l'aide de scripts et de plugins"
 
-#: ../../faq/faq_file_formats.rst:63
+#: ../../faq/faq_file_formats.rst:69
 msgid ""
 "encouraging users to create an account and fix and update data via the "
 "MusicBrainz website, thus sharing their work with the rest of the "
@@ -202,7 +227,7 @@ msgstr ""
 "travail avec le reste de la communauté plutôt que de simplement réparer "
 "leurs tags localement."
 
-#: ../../faq/faq_file_formats.rst:65
+#: ../../faq/faq_file_formats.rst:71
 msgid ""
 "To that end, Picard is likely to never have as much development focus on "
 "manual bulk editing of tags as other general purpose editors (e.g.: "
@@ -219,48 +244,79 @@ msgstr ""
 " ne veut pas dire que l'équipe n'acceptera pas de correctifs dans ce "
 "domaine!"
 
-#: ../../faq/faq_file_formats.rst:69
+#: ../../faq/faq_file_formats.rst:77
+msgid "Why is saving files sometimes slow, but saving a second time much faster?"
+msgstr ""
+
+#: ../../faq/faq_file_formats.rst:79
 msgid ""
-"Having said all this, it is still possible to edit several tags at once "
-"in Picard by following the steps:"
+"In most file formats the tags are near the beginning of the file, before "
+"the actual music data.  If changed tags get written to the file and the "
+"newly written tags take more space then before the entire file needs to "
+"be rewritten. This is usually much slower than just rewriting part of the"
+" file containing the tags, especially for larger files and/or if the "
+"files are on a slow storage (e.g. a network share or slow external "
+"drive)."
 msgstr ""
-"Cela dit, il est toujours possible d'éditer plusieurs balises à la fois "
-"dans Picard en suivant les étapes:"
 
-#: ../../faq/faq_file_formats.rst:71
-msgid "Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`"
-msgstr ""
-"Cliquez et sélectionnez plusieurs fichiers avec :kbd:`Ctrl` ou "
-":kbd:`Shift`."
-
-#: ../../faq/faq_file_formats.rst:72
-msgid "Right click on one of them, then click Details..."
-msgstr "Faites un clic droit sur l'un d'eux, puis cliquez sur Détails ..."
-
-#: ../../faq/faq_file_formats.rst:73
+#: ../../faq/faq_file_formats.rst:84
 msgid ""
-"On the popup dialog you can see the tags, with entries that denote where "
-"tags are different across files. You can edit or add new tags here."
+"To mitigate the issue most tagging software (including Picard) leaves "
+"some free space (the so called padding) after the tags and before the "
+"actual music data. If the newly written are only a bit larger than before"
+" this free space can be used instead of rewriting the entire files. "
+"Likewise if the newly written tags take less space than before this only "
+"leads to an increase in padding, avoiding rewriting the file."
 msgstr ""
-"Dans la boîte de dialogue contextuelle, vous pouvez voir les balises, "
-"avec des entrées qui indiquent où les balises sont différentes d'un "
-"fichier à l'autre. Vous pouvez modifier ou ajouter de nouvelles balises "
-"ici."
 
-#: ../../faq/faq_file_formats.rst:74
+#: ../../faq/faq_file_formats.rst:89
 msgid ""
-"On exiting the dialog, you have changed the tags in memory. You need to "
-"click Save in order to persist these changes to your files."
+"This all means that when you add many tags to the files (or if there is "
+"no or only small padding) you experience slow writing speed. If you do "
+"only small changes or just remove and later re-add tags the writing is "
+"much faster."
 msgstr ""
-"En quittant la boîte de dialogue, vous avez modifié les balises en "
-"mémoire. Vous devez cliquer sur Enregistrer pour conserver ces "
-"modifications dans vos fichiers."
 
-#: ../../faq/faq_file_formats.rst:76
-msgid "This process should work in both panes."
-msgstr "Ce processus devrait fonctionner dans les deux volets."
+#: ../../faq/faq_file_formats.rst:94
+msgid ""
+"Why does Picard not use Vinyl style track numbers (e.g. A1, A2, ...) by "
+"default?"
+msgstr ""
 
-#: ../../faq/faq_file_formats.rst:80
+#: ../../faq/faq_file_formats.rst:96
+msgid ""
+"For Vinyl releases the track numbers on MusicBrainz are usually entered "
+"as A1, A2, ..., B1, B2, ... and so on. Other releases might use even "
+"different more uncommon numbering schemes.  Yet Picard will by default "
+"always write decimal track numbers, starting with 1 for the first track "
+"on a medium."
+msgstr ""
+
+#: ../../faq/faq_file_formats.rst:100
+msgid ""
+"The main reason for this is that this is how track numbers are defined "
+"for most file formats.  The formats expect decimal numbers, and likewise "
+"music players might only expect decimal numbers when reading the files."
+msgstr ""
+
+#: ../../faq/faq_file_formats.rst:103
+msgid ""
+"If you really want to you can use the scripting variable "
+"``%_musicbrainz_tracknumber%`` which always holds the track number as it "
+"was entered in the MusicBrainz database.  The following script will set "
+"the tracknumber tag to the value as displayed in the MusicBrainz "
+"database:"
+msgstr ""
+
+#: ../../faq/faq_file_formats.rst:111
+msgid ""
+"Please be aware that for MP4 files this will result in the track number "
+"not being saved, as the MP4 format does not allow for non integer values "
+"in this tag.  For other formats it depends on the playback software and "
+"devices you use if they can handle these non-standard track numbers."
+msgstr ""
+
+#: ../../faq/faq_file_formats.rst:117
 msgid ""
 "The built-in audio player cannot play my file. Which formats does it "
 "support?"
@@ -268,7 +324,7 @@ msgstr ""
 "Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats "
 "prend-il en charge?"
 
-#: ../../faq/faq_file_formats.rst:82
+#: ../../faq/faq_file_formats.rst:119
 msgid ""
 "The formats supported by the built-in :index:`audio player` depend on the"
 " formats supported by your operating system."
@@ -276,11 +332,11 @@ msgstr ""
 "Les formats pris en charge par le :index:`lecteur audio` intégré "
 "dépendent des formats pris en charge par votre système d'exploitation."
 
-#: ../../faq/faq_file_formats.rst:84
+#: ../../faq/faq_file_formats.rst:121
 msgid "**Windows:**"
 msgstr "**Windows:**"
 
-#: ../../faq/faq_file_formats.rst:86
+#: ../../faq/faq_file_formats.rst:123
 msgid ""
 "The supported formats depend on the installed codecs. Depending on the "
 "Windows version certain codecs are pre-installed, but you can install "
@@ -290,7 +346,7 @@ msgstr ""
 "version de Windows, certains codecs sont préinstallés, mais vous pouvez "
 "installer des codecs supplémentaires."
 
-#: ../../faq/faq_file_formats.rst:89
+#: ../../faq/faq_file_formats.rst:126
 msgid ""
 "You might want to install the `Directshow Filters for Ogg "
 "<https://xiph.org/dshow/downloads/>`_ to add support for Ogg Vorbis, Ogg "
@@ -301,7 +357,7 @@ msgstr ""
 " fichiers Ogg Vorbis, Ogg Speex, Ogg Theora, Ogg FLAC, FLAC natif et "
 "WebM."
 
-#: ../../faq/faq_file_formats.rst:94
+#: ../../faq/faq_file_formats.rst:131
 msgid ""
 "Additional information is available from  `Microsoft's Codecs FAQ "
 "<https://support.microsoft.com/en-us/help/15070/windows-media-player-"
@@ -311,11 +367,11 @@ msgstr ""
 "codecs de Microsoft <https://support.microsoft.com/en-us/help/15070"
 "/windows-media-player-codecs-frequency-asked-questions>`_."
 
-#: ../../faq/faq_file_formats.rst:96
+#: ../../faq/faq_file_formats.rst:133
 msgid "**Linux:**"
 msgstr "**Linux:**"
 
-#: ../../faq/faq_file_formats.rst:98
+#: ../../faq/faq_file_formats.rst:135
 msgid ""
 "On Linux systems the player uses GStreamer which supports most common "
 "audio formats, although some distributions might exclude some codecs due "
@@ -328,7 +384,7 @@ msgstr ""
 "une prise en charge du format le plus large, assurez-vous d'installer "
 "tous les plugins GStreamer disponibles pour votre distribution."
 
-#: ../../faq/faq_file_formats.rst:103
+#: ../../faq/faq_file_formats.rst:140
 msgid ""
 "I am using Fedora. Why doesn't :index:`acoustic fingerprinting <acoustic "
 "fingerprint, fingerprint; acoustic>` work?"
@@ -337,7 +393,7 @@ msgstr ""
 "<empreinte acoustique, empreinte digitale; acoustique>` ne "
 "fonctionne-t-elle pas?"
 
-#: ../../faq/faq_file_formats.rst:105
+#: ../../faq/faq_file_formats.rst:142
 msgid ""
 "Acoustic fingerprinting in Picard uses a tool called :program:`fpcalc`, "
 "which is not available in Fedora. You can get it by installing the "
@@ -363,4 +419,40 @@ msgstr ""
 
 #~ msgid "File Formats"
 #~ msgstr "Formats de fichier"
+
+#~ msgid "How to I edit several tags at once? Why is it not easier do?"
+#~ msgstr ""
+#~ "Comment puis-je modifier plusieurs "
+#~ "balises à la fois? Pourquoi n'est-"
+#~ "ce pas plus facile à faire?"
+
+#~ msgid ""
+#~ "Having said all this, it is still"
+#~ " possible to edit several tags at "
+#~ "once in Picard by following the "
+#~ "steps:"
+#~ msgstr ""
+#~ "Cela dit, il est toujours possible "
+#~ "d'éditer plusieurs balises à la fois "
+#~ "dans Picard en suivant les étapes:"
+
+#~ msgid "Right click on one of them, then click Details..."
+#~ msgstr "Faites un clic droit sur l'un d'eux, puis cliquez sur Détails ..."
+
+#~ msgid ""
+#~ "On the popup dialog you can see"
+#~ " the tags, with entries that denote"
+#~ " where tags are different across "
+#~ "files. You can edit or add new "
+#~ "tags here."
+#~ msgstr ""
+#~ "Dans la boîte de dialogue contextuelle,"
+#~ " vous pouvez voir les balises, avec"
+#~ " des entrées qui indiquent où les "
+#~ "balises sont différentes d'un fichier à"
+#~ " l'autre. Vous pouvez modifier ou "
+#~ "ajouter de nouvelles balises ici."
+
+#~ msgid "This process should work in both panes."
+#~ msgstr "Ce processus devrait fonctionner dans les deux volets."
 
