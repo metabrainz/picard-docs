@@ -30,8 +30,8 @@
 
 **Fix missing seekpoints for FLAC files**
 
-   Some software has issues handling FLAC files that have an empty seek table metadata block. This options removes the
-   empty and hence unused seek table block from the files on saving.
+   Some software has issues handling FLAC files that have an empty seek table metadata block. When this option is enabled
+   empty and hence unused seek table blocks will be removed from the files on saving.
 
 **Preserve these tags from being cleared or overwritten with MusicBrainz data**
 
