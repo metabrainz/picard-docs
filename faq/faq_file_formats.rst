@@ -92,6 +92,29 @@ This all means that when you add many tags to the files (or if there is no or on
 slow writing speed. If you do only small changes or just remove and later re-add tags the writing is much faster.
 
 
+Why does Picard not use Vinyl style track numbers (e.g. A1, A2, ...) by default?
+--------------------------------------------------------------------------------
+
+For Vinyl releases the track numbers on MusicBrainz are usually entered as A1, A2, ..., B1, B2, ... and so on.
+Other releases might use even different more uncommon numbering schemes.  Yet Picard will by default always write
+decimal track numbers, starting with 1 for the first track on a medium.
+
+The main reason for this is that this is how track numbers are defined for most file formats.  The formats expect
+decimal numbers, and likewise music players might only expect decimal numbers when reading the files.
+
+If you really want to you can use the scripting variable ``%_musicbrainz_tracknumber%`` which always holds the
+track number as it was entered in the MusicBrainz database.  The following script will set the tracknumber tag
+to the value as displayed in the MusicBrainz database:
+
+.. code-block:: taggerscript
+
+   $set(tracknumber,%_musicbrainz_tracknumber%)
+
+Please be aware that for MP4 files this will result in the track number not beings saved, as the MP4 format
+does not allow for non integer values in this tag.  For other formats it depends on the playback software and
+devices you use if they can handle these non-standard track numbers.
+
+
 The built-in audio player cannot play my file. Which formats does it support?
 -----------------------------------------------------------------------------------
 
