@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-12 10:49-0700\n"
-"PO-Revision-Date: 2021-05-03 11:27+0200\n"
+"PO-Revision-Date: 2022-02-13 18:00+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/faqfaq_file_formats/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.10.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../faq/faq_file_formats.rst:4
@@ -168,7 +170,7 @@ msgstr ""
 
 #: ../../faq/faq_file_formats.rst:57
 msgid "How do I edit tags in several files at once?"
-msgstr ""
+msgstr "Comment modifier les balises de plusieurs fichiers à la fois ?"
 
 #: ../../faq/faq_file_formats.rst:59
 msgid "Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`"
@@ -182,20 +184,23 @@ msgid ""
 "selected files and whether they are the same across all files or "
 "different."
 msgstr ""
+"La vue des métadonnées en bas de l'écran indique les balises présentes dans "
+"les fichiers sélectionnés et si elles sont identiques pour tous les fichiers "
+"ou différentes."
 
 #: ../../faq/faq_file_formats.rst:62
 msgid ""
 "If you edit any value in the \"New values\" column you will change this "
 "tag for all selected files."
 msgstr ""
+"Si vous modifiez une valeur dans la colonne \"Nouvelles valeurs\", vous "
+"changerez cette balise pour tous les fichiers sélectionnés."
 
 #: ../../faq/faq_file_formats.rst:63
-#, fuzzy
 msgid "You need to click Save in order to persist these changes to your files."
 msgstr ""
-"En quittant la boîte de dialogue, vous avez modifié les balises en "
-"mémoire. Vous devez cliquer sur Enregistrer pour conserver ces "
-"modifications dans vos fichiers."
+"Vous devez cliquer sur Enregistrer pour que ces modifications soient "
+"conservées dans vos fichiers."
 
 #: ../../faq/faq_file_formats.rst:65
 msgid ""
@@ -247,6 +252,8 @@ msgstr ""
 #: ../../faq/faq_file_formats.rst:77
 msgid "Why is saving files sometimes slow, but saving a second time much faster?"
 msgstr ""
+"Pourquoi l'enregistrement des fichiers est-il parfois lent, mais "
+"l'enregistrement une deuxième fois beaucoup plus rapide ?"
 
 #: ../../faq/faq_file_formats.rst:79
 msgid ""
@@ -258,6 +265,14 @@ msgid ""
 "files are on a slow storage (e.g. a network share or slow external "
 "drive)."
 msgstr ""
+"Dans la plupart des formats de fichiers, les balises se trouvent au début du "
+"fichier, avant les données musicales proprement dites.  Si des balises "
+"modifiées sont écrites dans le fichier et que les balises nouvellement "
+"écrites prennent plus d'espace qu'auparavant, le fichier entier doit être "
+"réécrit. Cette opération est généralement beaucoup plus lente que la "
+"réécriture d'une partie du fichier contenant les balises, surtout pour les "
+"fichiers volumineux et/ou si les fichiers se trouvent sur un support de "
+"stockage lent (par exemple, un partage réseau ou un lecteur externe lent)."
 
 #: ../../faq/faq_file_formats.rst:84
 msgid ""
@@ -268,6 +283,13 @@ msgid ""
 "Likewise if the newly written tags take less space than before this only "
 "leads to an increase in padding, avoiding rewriting the file."
 msgstr ""
+"Pour atténuer ce problème, la plupart des logiciels d'étiquetage (y compris "
+"Picard) laissent un espace libre (appelé \"padding\") après les étiquettes "
+"et avant les données musicales proprement dites. Si les données nouvellement "
+"écrites ne sont qu'un peu plus grandes qu'avant, cet espace libre peut être "
+"utilisé au lieu de réécrire les fichiers entiers. De même, si les balises "
+"nouvellement écrites prennent moins de place qu'avant, cela ne fait "
+"qu'augmenter le padding, évitant ainsi de réécrire le fichier."
 
 #: ../../faq/faq_file_formats.rst:89
 msgid ""
@@ -276,12 +298,18 @@ msgid ""
 "only small changes or just remove and later re-add tags the writing is "
 "much faster."
 msgstr ""
+"Cela signifie que lorsque vous ajoutez de nombreuses balises aux fichiers ("
+"ou s'il n'y a pas ou peu de remplissage), la vitesse d'écriture est lente. "
+"Si vous n'effectuez que de petites modifications ou si vous supprimez et "
+"réintroduisez des balises, l'écriture est beaucoup plus rapide."
 
 #: ../../faq/faq_file_formats.rst:94
 msgid ""
 "Why does Picard not use Vinyl style track numbers (e.g. A1, A2, ...) by "
 "default?"
 msgstr ""
+"Pourquoi Picard n'utilise-t-il pas par défaut les numéros de pistes de style "
+"Vinyle (par exemple A1, A2, ...) ?"
 
 #: ../../faq/faq_file_formats.rst:96
 msgid ""
@@ -291,6 +319,11 @@ msgid ""
 "always write decimal track numbers, starting with 1 for the first track "
 "on a medium."
 msgstr ""
+"Pour les disques vinyles, les numéros de pistes sur MusicBrainz sont "
+"généralement saisis sous la forme A1, A2, ..., B1, B2, ... et ainsi de "
+"suite. D'autres versions peuvent utiliser des schémas de numérotation encore "
+"plus inhabituels.  Pourtant, Picard écrira toujours par défaut des numéros "
+"de pistes décimaux, en commençant par 1 pour la première piste d'un support."
 
 #: ../../faq/faq_file_formats.rst:100
 msgid ""
@@ -298,6 +331,10 @@ msgid ""
 "for most file formats.  The formats expect decimal numbers, and likewise "
 "music players might only expect decimal numbers when reading the files."
 msgstr ""
+"La principale raison en est que c'est ainsi que les numéros de piste sont "
+"définis pour la plupart des formats de fichiers.  Les formats attendent des "
+"nombres décimaux, et de même, les lecteurs de musique peuvent n'attendre que "
+"des nombres décimaux lors de la lecture des fichiers."
 
 #: ../../faq/faq_file_formats.rst:103
 msgid ""
@@ -307,6 +344,11 @@ msgid ""
 "the tracknumber tag to the value as displayed in the MusicBrainz "
 "database:"
 msgstr ""
+"Si vous le souhaitez vraiment, vous pouvez utiliser la variable de script "
+"``%_musicbrainz_tracknumber%`` qui contient toujours le numéro de piste tel "
+"qu'il a été saisi dans la base de données MusicBrainz.  Le script suivant va "
+"définir la balise tracknumber à la valeur telle qu'elle est affichée dans la "
+"base de données MusicBrainz :"
 
 #: ../../faq/faq_file_formats.rst:111
 msgid ""
@@ -315,6 +357,11 @@ msgid ""
 "in this tag.  For other formats it depends on the playback software and "
 "devices you use if they can handle these non-standard track numbers."
 msgstr ""
+"Veuillez noter que pour les fichiers MP4, le numéro de la piste ne sera pas "
+"enregistré, car le format MP4 n'autorise pas les valeurs non entières dans "
+"cette balise.  Pour les autres formats, cela dépend du logiciel de lecture "
+"et des appareils que vous utilisez s'ils peuvent gérer ces numéros de piste "
+"non standard."
 
 #: ../../faq/faq_file_formats.rst:117
 msgid ""
@@ -455,4 +502,3 @@ msgstr ""
 
 #~ msgid "This process should work in both panes."
 #~ msgstr "Ce processus devrait fonctionner dans les deux volets."
-
