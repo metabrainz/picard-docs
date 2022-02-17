@@ -72,7 +72,7 @@ settings on the right hand side.  This is where the majority of Picard's customi
 
 .. only:: html
 
-   .. image:: images/options-general.png
+   .. image:: images/options-general-with-tree.png
       :width: 100 %
 
 In addition to the basic "user settings", this is also where option setting changes are made to individual option profiles.
@@ -94,7 +94,6 @@ during processing.
       :doc:`options_tags` /
       :doc:`options_cover` /
       :doc:`options_filerenaming` /
-      :doc:`options_acousticbrainz` /
       :doc:`options_fingerprinting` /
       :doc:`options_cdlookup` /
       :doc:`options_plugins` /
@@ -111,7 +110,6 @@ during processing.
    options_tags.rst
    options_cover.rst
    options_filerenaming.rst
-   options_acousticbrainz.rst
    options_fingerprinting
    options_cdlookup.rst
    options_plugins.rst
