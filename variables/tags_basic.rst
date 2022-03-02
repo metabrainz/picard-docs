@@ -187,13 +187,9 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
     Release Group's MusicBrainz Identifier.
 
-**musicbrainz_releasetrackid**
-
-    Release Track MusicBrainz Identifier. (*since Picard 1.3*)
-
 **musicbrainz_trackid**
 
-    MusicBrainz Identifier for the track.
+    Release Track MusicBrainz Identifier.
 
 **musicbrainz_workid**
 
