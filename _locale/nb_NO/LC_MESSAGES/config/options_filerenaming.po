@@ -200,10 +200,30 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_filerenaming.rst:92
-msgid "**Selected file naming script**"
+msgid "**Allow paths longer than 259 characters**"
 msgstr ""
 
 #: ../../config/options_filerenaming.rst:94
+msgid ""
+"This option allows the user to disable the 259 character path limit "
+"Picard would usually enforce in Windows compatibility mode when renaming "
+"and/or moving files. This is possible both on Windows and on other "
+"platforms with Windows compatibility enabled."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:100
+msgid ""
+"Enabling long paths on Windows might cause files being saved with path "
+"names exceeding the 259 character limit traditionally imposed by the "
+"Windows API. Some software might not be able to properly access those "
+"files."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:103
+msgid "**Selected file naming script**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:105
 msgid ""
 "As of Picard version 2.7, multiple file naming scripts are supported.  "
 "This option allows the user to select the file naming script to use from "
@@ -214,11 +234,11 @@ msgid ""
 "selected."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:99
+#: ../../config/options_filerenaming.rst:110
 msgid "**Files will be named like this**"
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:101
+#: ../../config/options_filerenaming.rst:112
 msgid ""
 "Below the file naming script selector is a section showing examples of "
 "the output of the script in two columns: Before and After.  If you select"
@@ -228,19 +248,19 @@ msgid ""
 "default examples will be provided."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:106
+#: ../../config/options_filerenaming.rst:117
 msgid ""
 "You can change the randomly selected example files from your selected "
 "files list by clicking on the :guilabel:`Reload examples` button."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:111
+#: ../../config/options_filerenaming.rst:122
 msgid ""
 "Any new tags set or tags modified by the file naming script will not be "
 "written to the output files' metadata."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:117
+#: ../../config/options_filerenaming.rst:128
 msgid ":doc:`options_filerenaming_editor`"
 msgstr ""
 
