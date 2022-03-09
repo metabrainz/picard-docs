@@ -78,3 +78,14 @@ removable media by running the following command on a terminal:
 .. code-block:: bash
 
    snap connect picard:removable-media
+
+
+How do I manually add lyrics to a file?
+---------------------------------------
+
+Select the file that you want to edit and then right click in the metadata view at the bottom of the main screen.
+Select "Add tag..." from the context menu displayed. This will open a new dialog for entering the tag information.
+Select "lyrics" as the tag and enter the lyrics into the text box.
+
+.. image:: /faq/images/add_lyrics.png
+   :width: 100%
