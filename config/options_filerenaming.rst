@@ -99,6 +99,8 @@ These options determine how Picard handles files when they are saved with update
 
       Enabling long paths on Windows might cause files being saved with path names exceeding the 259 character
       limit traditionally imposed by the Windows API. Some software might not be able to properly access those files.
+      In particular Windows Explorer cannot rename files with long path names or create new files inside folders if
+      the resulting path length would exceed the length limit.
 
 **Selected file naming script**
 

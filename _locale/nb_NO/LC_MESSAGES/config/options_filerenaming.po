@@ -216,14 +216,16 @@ msgid ""
 "Enabling long paths on Windows might cause files being saved with path "
 "names exceeding the 259 character limit traditionally imposed by the "
 "Windows API. Some software might not be able to properly access those "
-"files."
-msgstr ""
-
-#: ../../config/options_filerenaming.rst:103
-msgid "**Selected file naming script**"
+"files. In particular Windows Explorer cannot rename files with long path "
+"names or create new files inside folders if the resulting path length "
+"would exceed the length limit."
 msgstr ""
 
 #: ../../config/options_filerenaming.rst:105
+msgid "**Selected file naming script**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:107
 msgid ""
 "As of Picard version 2.7, multiple file naming scripts are supported.  "
 "This option allows the user to select the file naming script to use from "
@@ -234,11 +236,11 @@ msgid ""
 "selected."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:110
+#: ../../config/options_filerenaming.rst:112
 msgid "**Files will be named like this**"
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:112
+#: ../../config/options_filerenaming.rst:114
 msgid ""
 "Below the file naming script selector is a section showing examples of "
 "the output of the script in two columns: Before and After.  If you select"
@@ -248,19 +250,19 @@ msgid ""
 "default examples will be provided."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:117
+#: ../../config/options_filerenaming.rst:119
 msgid ""
 "You can change the randomly selected example files from your selected "
 "files list by clicking on the :guilabel:`Reload examples` button."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:122
+#: ../../config/options_filerenaming.rst:124
 msgid ""
 "Any new tags set or tags modified by the file naming script will not be "
 "written to the output files' metadata."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:128
+#: ../../config/options_filerenaming.rst:130
 msgid ":doc:`options_filerenaming_editor`"
 msgstr ""
 
