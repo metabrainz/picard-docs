@@ -33,7 +33,7 @@ during processing.
    and it will be saved to the **first** enabled profile in the profile stack that manages the option. If there are no enabled
    profiles that manage the option, the option will not be highlighted and it will be saved to the "user settings" profile which
    is the user's normal settings, contains all options, is at the bottom of the profile stack, and is always enabled.  The "user
-   settings" profile cannot be modified is not shown in the profile management page.
+   settings" profile cannot be modified and is not shown in the profile management page.
 
 .. seealso::
 
