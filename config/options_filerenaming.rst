@@ -40,7 +40,7 @@ These options determine how Picard handles files when they are saved with update
 
    Enter patterns that match any other files you want Picard to move when saving music files (e.g.:
    "Folder.jpg", "\*.png", "\*.cue", "\*.log"). Patterns support the Unix shell-style wildcards, and are
-   separated by spaces. The wildcard patters available are:
+   separated by spaces. The wildcard patterns available are:
 
    =========== ===================================
    **Pattern** **Meaning**
