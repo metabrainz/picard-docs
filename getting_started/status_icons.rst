@@ -123,13 +123,31 @@ to indicate the status of the item.
    | This icon indicates that the track has been saved successfully.
    |
 
-.. |img-track-error| image:: images/track-error.png
+.. |img-error-no-access| image:: images/error-no-access.png
    :width: 24pt
    :height: 24pt
 
-|img-track-error|
+|img-error-no-access|
 
-   This icon indicates that Picard encountered an error while trying to save the track.  This is typically due to the file being marked as read-only, or you do not have sufficient permission to save the file in the specified directory.
+   | This icon indicates that Picard encountered a permission error while trying to load or save the file.  This is typically due to the file being marked as read-only, or you do not have sufficient permission to read the file or save the file in the specified directory.
+   |
+
+.. |img-error-not-found| image:: images/error-not-found.png
+   :width: 24pt
+   :height: 24pt
+
+|img-error-not-found|
+
+   | This icon indicates that Picard could not find the file with the given path while trying to load or save the track.  This is typically due to the file being moved or deleted since it was loaded into Picard, but could also be due to a missing directory.
+   |
+
+.. |img-dialog-error| image:: images/dialog-error.png
+   :width: 24pt
+   :height: 24pt
+
+|img-dialog-error|
+
+   This icon indicates that Picard encountered an error while trying to load or save the track.  This is typically due to a problem writing the tags into the file, but could also be due to a storage IO error on your system.
 
 
 :index:`Status Bar <icons; status bar, status bar>`
