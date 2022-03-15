@@ -89,6 +89,19 @@ These options determine how Picard handles files when they are saved with update
    This option tells Picard to replace all Windows-incompatible characters with an underscore. This is
    enabled by default on Windows systems, with no option to disable.
 
+**Allow paths longer than 259 characters**
+
+   This option allows the user to disable the 259 character path limit Picard would usually enforce in Windows
+   compatibility mode when renaming and/or moving files. This is possible both on Windows and on other platforms
+   with Windows compatibility enabled.
+
+   .. warning::
+
+      Enabling long paths on Windows might cause files being saved with path names exceeding the 259 character
+      limit traditionally imposed by the Windows API. Some software might not be able to properly access those files.
+      In particular Windows Explorer cannot rename files with long path names or create new files inside folders if
+      the resulting path length would exceed the length limit.
+
 **Selected file naming script**
 
    As of Picard version 2.7, multiple file naming scripts are supported.  This option allows the user to select the
