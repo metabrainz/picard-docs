@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-14 10:50-0600\n"
-"PO-Revision-Date: 2021-07-24 12:40-0600\n"
+"PO-Revision-Date: 2022-03-15 14:51+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/getting_startedstatus_icons/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.11\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../getting_started/status_icons.rst:4
@@ -110,45 +112,42 @@ msgid "|img-track-audio|"
 msgstr "|img-track-audio|"
 
 #: ../../getting_started/status_icons.rst
-#, fuzzy
 msgid ""
 "This icon indicates that the track is an audio track and that there is no"
 " single file currently matched.  This appears if there is no file "
 "matched, or if there are multiple files matched."
 msgstr ""
-"Cette icône indique que la piste est une piste audio et qu'aucun fichier "
-"ne correspond actuellement. Cela apparaît s'il n'y a pas de fichier "
-"correspondant, ou si plusieurs fichiers correspondent."
+"Cette icône indique que la piste est une piste audio et qu'il n'y a pas de "
+"fichier unique correspondant.  Elle apparaît si aucun fichier ne correspond "
+"ou si plusieurs fichiers correspondent."
 
 #: ../../getting_started/status_icons.rst:74
 msgid "|img-track-video|"
 msgstr "|img-track-video|"
 
 #: ../../getting_started/status_icons.rst
-#, fuzzy
 msgid ""
 "This icon indicates that the track is a video track and that there is no "
 "file currently matched.  This appears if there is no file matched, or if "
 "there are multiple files matched."
 msgstr ""
-"Cette icône indique que la piste est une piste vidéo et qu'aucun fichier "
-"ne correspond actuellement. Cela apparaît s'il n'y a pas de fichier "
-"correspondant, ou si plusieurs fichiers correspondent."
+"Cette icône indique que la piste est une piste vidéo et qu'il n'y a pas de "
+"fichier correspondant.  Elle apparaît si aucun fichier ne correspond ou si "
+"plusieurs fichiers correspondent."
 
 #: ../../getting_started/status_icons.rst:83
 msgid "|img-track-data|"
 msgstr "|img-track-data|"
 
 #: ../../getting_started/status_icons.rst
-#, fuzzy
 msgid ""
 "This icon indicates that the track is a data track and that there is no "
 "file currently matched.  This appears if there is no file matched, or if "
 "there are multiple files matched."
 msgstr ""
-"Cette icône indique que la piste est une piste de données et qu'aucun "
-"fichier ne correspond actuellement. Cela apparaît s'il n'y a pas de "
-"fichier correspondant, ou si plusieurs fichiers correspondent."
+"Cette icône indique que la piste est une piste de données et qu'il n'y a pas "
+"de fichier correspondant.  Elle apparaît si aucun fichier ne correspond ou "
+"si plusieurs fichiers correspondent."
 
 #: ../../getting_started/status_icons.rst:112
 msgid ""
@@ -181,7 +180,7 @@ msgstr "Cette icône indique que la trace a été enregistrée avec succès."
 
 #: ../../getting_started/status_icons.rst:130
 msgid "|img-error-no-access|"
-msgstr ""
+msgstr "|img-error-no-access|"
 
 #: ../../getting_started/status_icons.rst
 msgid ""
@@ -190,10 +189,15 @@ msgid ""
 " marked as read-only, or you do not have sufficient permission to read "
 "the file or save the file in the specified directory."
 msgstr ""
+"Cette icône indique que Picard a rencontré une erreur de permission en "
+"essayant de charger ou d'enregistrer le fichier.  Ceci est généralement dû "
+"au fait que le fichier est marqué comme étant en lecture seule, ou que vous "
+"n'avez pas la permission suffisante pour lire le fichier ou enregistrer le "
+"fichier dans le répertoire spécifié."
 
 #: ../../getting_started/status_icons.rst:139
 msgid "|img-error-not-found|"
-msgstr ""
+msgstr "|img-error-not-found|"
 
 #: ../../getting_started/status_icons.rst
 msgid ""
@@ -202,11 +206,15 @@ msgid ""
 "the file being moved or deleted since it was loaded into Picard, but "
 "could also be due to a missing directory."
 msgstr ""
+"Cette icône indique que Picard n'a pas pu trouver le fichier avec le chemin "
+"donné en essayant de charger ou de sauvegarder la piste.  Cela est "
+"généralement dû au fait que le fichier a été déplacé ou supprimé depuis son "
+"chargement dans Picard, mais cela peut aussi être dû à un répertoire "
+"manquant."
 
 #: ../../getting_started/status_icons.rst:148
-#, fuzzy
 msgid "|img-dialog-error|"
-msgstr "|img-track-error|"
+msgstr "|img-dialog-error|"
 
 #: ../../getting_started/status_icons.rst:150
 msgid ""
@@ -215,6 +223,10 @@ msgid ""
 "into the file, but could also be due to a storage IO error on your "
 "system."
 msgstr ""
+"Cette icône indique que Picard a rencontré une erreur en essayant de charger "
+"ou d'enregistrer la piste.  Ceci est généralement dû à un problème "
+"d'écriture des tags dans le fichier, mais peut aussi être dû à une erreur "
+"d'entrée/sortie de données sur votre système."
 
 #: ../../getting_started/status_icons.rst:154
 msgid ":index:`Status Bar <icons; status bar, status bar>`"
@@ -285,4 +297,3 @@ msgstr "Le nombre de demandes de réseau actives."
 #~ "ou que vous ne disposez pas des"
 #~ " autorisations suffisantes pour enregistrer "
 #~ "le fichier dans le répertoire spécifié."
-
