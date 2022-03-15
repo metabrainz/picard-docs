@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.7\n"
+"Project-Id-Version: MusicBrainz Picard v2.7.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 08:10-0700\n"
+"POT-Creation-Date: 2022-03-06 08:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,26 +29,34 @@ msgid "**Minimal similarity for file lookups**"
 msgstr ""
 
 #: ../../config/options_matching.rst:15
-#: ../../config/options_matching.rst:26
+#: ../../config/options_matching.rst:30
 msgid "The higher the percentage value, the more similar an individual file's metadata must be to the metadata from MusicBrainz for it to be matched to a release on the right-hand side."
 msgstr ""
 
 #: ../../config/options_matching.rst:18
+msgid "This setting is used when you do a lookup on individual files. The files' metadata is compared to the recordings found on MusicBrainz. If the similarity is below the threshold the recording is ignored completely."
+msgstr ""
+
+#: ../../config/options_matching.rst:22
 msgid "**Minimal similarity for cluster lookups**"
 msgstr ""
 
-#: ../../config/options_matching.rst:20
+#: ../../config/options_matching.rst:24
 msgid "The higher the percentage value, the more similar a cluster of files from the left-hand pane must be to a MusicBrainz release for the entire cluster to be matched to a release on the right-hand side."
 msgstr ""
 
-#: ../../config/options_matching.rst:24
+#: ../../config/options_matching.rst:28
 msgid "**Minimal similarity for matching files to tracks**"
 msgstr ""
 
-#: ../../config/options_matching.rst:29
+#: ../../config/options_matching.rst:33
+msgid "This setting is used when a file is assigned to a release and Picard needs to decide which track to assign it to. This happens on cluster lookup after the release has been chosen, or if you manually drag files onto a loaded release (as opposed to dragging it onto a track directly). If none of the tracks gives a match above the threshold the file is moved into an \"unmatched files\" section on that release."
+msgstr ""
+
+#: ../../config/options_matching.rst:39
 msgid "If you have absolutely no metadata in your current files, and you are using \"Scan\" to match tracks, you may find that you need to lower the value of \"Minimal similarity for matching files to tracks\" in order for Picard to match the files within a release. Otherwise you may find that Picard matches the track to a release but then is not sure which track is correct; and leaves it in an \"unmatched files\" group within that release."
 msgstr ""
 
-#: ../../config/options_matching.rst:35
+#: ../../config/options_matching.rst:45
 msgid "As a general rule, lowering the percentages may increase the chance of finding a match at the risk of false positives and incorrect matches."
 msgstr ""
