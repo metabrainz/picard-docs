@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-06 08:54-0700\n"
-"PO-Revision-Date: 2020-11-19 16:10-0700\n"
+"PO-Revision-Date: 2022-03-17 16:30+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/configoptions_matching/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.11\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_matching.rst:4
@@ -54,6 +56,10 @@ msgid ""
 " metadata is compared to the recordings found on MusicBrainz. If the "
 "similarity is below the threshold the recording is ignored completely."
 msgstr ""
+"Ce paramètre est utilisé lorsque vous effectuez une recherche sur des "
+"fichiers individuels. Les métadonnées des fichiers sont comparées aux "
+"enregistrements trouvés sur MusicBrainz. Si la similarité est inférieure au "
+"seuil fixé, l'enregistrement est complètement ignoré."
 
 #: ../../config/options_matching.rst:22
 msgid "**Minimal similarity for cluster lookups**"
@@ -83,6 +89,13 @@ msgid ""
 "If none of the tracks gives a match above the threshold the file is moved"
 " into an \"unmatched files\" section on that release."
 msgstr ""
+"Ce paramètre est utilisé lorsqu'un fichier est affecté à une release et que "
+"Picard doit décider à quelle piste l'affecter. Cela se produit lors de la "
+"consultation des clusters après que la version ait été choisie, ou si vous "
+"faites glisser manuellement les fichiers sur une version chargée (par "
+"opposition à un glisser sur une piste directement). Si aucune des pistes "
+"n'offre une correspondance supérieure au seuil fixé, le fichier est déplacé "
+"dans une section \"fichiers non appariés\" sur cette version."
 
 #: ../../config/options_matching.rst:39
 msgid ""
@@ -114,4 +127,3 @@ msgstr ""
 
 #~ msgid "Matching"
 #~ msgstr "Correspondant à"
-
