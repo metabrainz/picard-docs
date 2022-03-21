@@ -147,6 +147,10 @@
 <p class="admonition-title">Note</p>
 <p>Lorsque vous entrez des chaînes d’entrée dans des scripts Picard, vous devez échapper une barre oblique inverse « \ », un signe dollar « $ », une virgule « , » et les parenthèses gauche et droite « ( » et « ) » afin de forcer Picard à ne pas les interpréter dans le cadre de la commande de script. Cela se fait en insérant une barre oblique inverse avant le caractère à échapper. Par exemple, pour définir une valeur de balise sur <code class="docutils literal notranslate"><span class="pre">($1,000,000)</span></code>, il faudrait la saisir sous la forme <code class="docutils literal notranslate"><span class="pre">$set(test_tag,\(\$1\,000\,000\))</span></code>.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En général, vous pouvez accéder aux valeurs d’une balise par le nom de variable approprié. Par exemple, si votre balise s’appelle « rerecorded », vous pouvez utiliser <code class="docutils literal notranslate"><span class="pre">%rerecorded%</span></code>. Mais le trait d’union n’est pas un caractère valide pour une variable de script, donc <code class="docutils literal notranslate"><span class="pre">%re-recorded%</span></code> donne une erreur de syntaxe. Dans des cas comme celui-ci, vous devez utiliser <code class="docutils literal notranslate"><span class="pre">$get(re-recorded)</span></code>.</p>
+</div>
 </div>
 <div class="section" id="metadata-variables">
 <h2>Variables de métadonnées<a class="headerlink" href="#metadata-variables" title="Lien permanent vers ce titre">¶</a></h2>

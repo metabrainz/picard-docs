@@ -69,7 +69,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#what-formats-does-picard-support">Quels formats Picard prend-il en charge?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#what-formats-will-picard-support">Quels formats Picard prend-il en charge?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#which-tags-can-picard-write-to-my-files">Quelles balises Picard peut-il écrire dans mes fichiers?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#how-to-i-edit-several-tags-at-once-why-is-it-not-easier-do">Comment puis-je modifier plusieurs balises à la fois? Pourquoi n’est-ce pas plus facile à faire?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-i-edit-tags-in-several-files-at-once">Comment modifier les balises de plusieurs fichiers à la fois ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster">Pourquoi l’enregistrement des fichiers est-il parfois lent, mais l’enregistrement une deuxième fois beaucoup plus rapide ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default">Pourquoi Picard n’utilise-t-il pas par défaut les numéros de piste de style Vinyle (par exemple A1, A2, …) ?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-il en charge?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">J’utilise Fedora. Pourquoi la prise d’empreintes acoustique ne fonctionne-t-elle pas?</a></li>
 </ul>
@@ -182,22 +184,37 @@
 <h2>Quelles balises Picard peut-il écrire dans mes fichiers?<a class="headerlink" href="#which-tags-can-picard-write-to-my-files" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Voir la section <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a> pour plus d’informations sur les champs MusicBrainz que Picard écrit dans les balises. <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mapping</a> contient des informations plus techniques sur la manière dont ils sont davantage mappés dans chaque format de tag.</p>
 </div>
-<div class="section" id="how-to-i-edit-several-tags-at-once-why-is-it-not-easier-do">
-<h2>Comment puis-je modifier plusieurs balises à la fois? Pourquoi n’est-ce pas plus facile à faire?<a class="headerlink" href="#how-to-i-edit-several-tags-at-once-why-is-it-not-easier-do" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="how-to-i-edit-tags-in-several-files-at-once">
+<h2>Comment modifier les balises de plusieurs fichiers à la fois ?<a class="headerlink" href="#how-to-i-edit-tags-in-several-files-at-once" title="Lien permanent vers ce titre">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Cliquez et sélectionnez plusieurs fichiers avec <kbd class="kbd docutils literal notranslate">Ctrl</kbd> ou <kbd class="kbd docutils literal notranslate">Shift</kbd>.</p></li>
+<li><p>La vue des métadonnées en bas de l’écran indique les balises présentes dans les fichiers sélectionnés et si elles sont identiques pour tous les fichiers ou différentes.</p></li>
+<li><p>Si vous modifiez une valeur dans la colonne « Nouvelles valeurs », vous changerez cette balise pour tous les fichiers sélectionnés.</p></li>
+<li><p>Vous devez cliquer sur Enregistrer pour que ces modifications soient conservées dans vos fichiers.</p></li>
+</ol>
+<p>Ce processus fonctionne dans les deux volets.</p>
 <p>Veuillez comprendre que Picard n’est pas conçu comme un <span class="target" id="index-8"></span>éditeur de balises à usage général. Son objectif principal est de récupérer les données MusicBrainz maintenues par la communauté pour les écrire dans vos balises. Certains objectifs secondaires comprennent:</p>
 <ul class="simple">
 <li><p>autoriser la personnalisation basée sur des règles de ces données à l’aide de scripts et de plugins</p></li>
 <li><p>encourager les utilisateurs à créer un compte et à corriger et mettre à jour les données via le site Web MusicBrainz, partageant ainsi leur travail avec le reste de la communauté plutôt que de simplement réparer leurs tags localement.</p></li>
 </ul>
 <p>À cette fin, Picard ne se concentrera probablement jamais autant sur l’édition manuelle en masse des balises que d’autres éditeurs à usage général (par exemple: <a class="reference external" href="https://www.mp3tag.de/en/">Mp3tag</a>, <a class="reference external" href="https://www.foobar2000.org/">foobar2000</a>, ou même de nombreux gestionnaires de bibliothèques tels que iTunes, Windows Media Player et MediaMonkey). Cela ne veut pas dire que l’équipe n’acceptera pas de correctifs dans ce domaine!</p>
-<p>Cela dit, il est toujours possible d’éditer plusieurs balises à la fois dans Picard en suivant les étapes:</p>
-<ol class="arabic simple">
-<li><p>Cliquez et sélectionnez plusieurs fichiers avec <kbd class="kbd docutils literal notranslate">Ctrl</kbd> ou <kbd class="kbd docutils literal notranslate">Shift</kbd>.</p></li>
-<li><p>Faites un clic droit sur l’un d’eux, puis cliquez sur Détails …</p></li>
-<li><p>Dans la boîte de dialogue contextuelle, vous pouvez voir les balises, avec des entrées qui indiquent où les balises sont différentes d’un fichier à l’autre. Vous pouvez modifier ou ajouter de nouvelles balises ici.</p></li>
-<li><p>En quittant la boîte de dialogue, vous avez modifié les balises en mémoire. Vous devez cliquer sur Enregistrer pour conserver ces modifications dans vos fichiers.</p></li>
-</ol>
-<p>Ce processus devrait fonctionner dans les deux volets.</p>
+</div>
+<div class="section" id="why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster">
+<h2>Pourquoi l’enregistrement des fichiers est-il parfois lent, mais l’enregistrement une deuxième fois beaucoup plus rapide ?<a class="headerlink" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Dans la plupart des formats de fichiers, les balises se trouvent au début du fichier, avant les données musicales proprement dites.  Si des balises modifiées sont écrites dans le fichier et que les balises nouvellement écrites prennent plus d’espace qu’auparavant, le fichier entier doit être réécrit. Cette opération est généralement beaucoup plus lente que la réécriture d’une partie du fichier contenant les balises, surtout pour les fichiers volumineux et/ou si les fichiers se trouvent sur un support de stockage lent (par exemple, un partage réseau ou un disque externe lent).</p>
+<p>Pour atténuer ce problème, la plupart des logiciels d’étiquetage (y compris Picard) laissent un espace libre (appelé « padding ») après les étiquettes et avant les données musicales proprement dites. Si les données nouvellement écrites ne sont qu’un peu plus grandes qu’avant, cet espace libre peut être utilisé au lieu de réécrire les fichiers entiers. De même, si les balises nouvellement écrites prennent moins de place qu’avant, cela ne fait qu’augmenter le padding, évitant ainsi de réécrire le fichier.</p>
+<p>Cela signifie que lorsque vous ajoutez de nombreuses balises aux fichiers (ou s’il n’y a pas ou peu de remplissage), la vitesse d’écriture est lente. Si vous n’effectuez que de petites modifications ou si vous supprimez et réinsérez des balises, l’écriture est beaucoup plus rapide.</p>
+</div>
+<div class="section" id="why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default">
+<h2>Pourquoi Picard n’utilise-t-il pas par défaut les numéros de piste de style Vinyle (par exemple A1, A2, …) ?<a class="headerlink" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour les disques vinyles, les numéros de pistes sur MusicBrainz sont généralement saisis comme A1, A2, …, B1, B2, … et ainsi de suite. D’autres versions peuvent utiliser des schémas de numérotation encore plus inhabituels.  Pourtant, Picard écrira toujours par défaut des numéros de pistes décimaux, en commençant par 1 pour la première piste d’un support.</p>
+<p>La principale raison en est que c’est ainsi que les numéros de piste sont définis pour la plupart des formats de fichiers.  Les formats attendent des nombres décimaux, et de même, les lecteurs de musique peuvent n’attendre que des nombres décimaux lors de la lecture des fichiers.</p>
+<p>Si vous le souhaitez vraiment, vous pouvez utiliser la variable de script « %_musicbrainz_tracknumber% » qui contient toujours le numéro de piste tel qu’il a été saisi dans la base de données MusicBrainz.  Le script suivant va définir la balise tracknumber à la valeur telle qu’elle est affichée dans la base de données MusicBrainz :</p>
+<div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>tracknumber,<span class="n">%_musicbrainz_tracknumber%</span><span class="k">)</span>
+</pre></div>
+</div>
+<p>Veuillez noter que pour les fichiers MP4, le numéro de piste ne sera pas sauvegardé, car le format MP4 n’autorise pas les valeurs non entières dans cette balise.  Pour les autres formats, cela dépend du logiciel de lecture et des appareils que vous utilisez s’ils peuvent gérer ces numéros de piste non standard.</p>
 </div>
 <div class="section" id="the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">
 <h2>Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-il en charge?<a class="headerlink" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support" title="Lien permanent vers ce titre">¶</a></h2>
