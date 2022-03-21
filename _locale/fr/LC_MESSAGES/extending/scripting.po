@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-29 15:51-0700\n"
-"PO-Revision-Date: 2020-11-29 15:55-0700\n"
+"POT-Creation-Date: 2022-03-21 09:30-0600\n"
+"PO-Revision-Date: 2022-03-21 09:46-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language: fr\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../../extending/scripting.rst:4
 msgid ":index:`Scripting <scripts>`"
@@ -105,11 +105,27 @@ msgstr ""
 "``($1,000,000)``, il faudrait la saisir sous la forme ``$set(test_tag,"
 "\\(\\$1\\,000\\,000\\))``."
 
-#: ../../extending/scripting.rst:40
+#: ../../extending/scripting.rst:41
+#, python-format
+msgid ""
+"Usually you can access the values of a tag by the proper variable name. "
+"For example, if your tag is called \"rerecorded\" you can use ``"
+"%rerecorded%``. But the hyphen is not a valid character for a script "
+"variable, so ``%re-recorded%`` gives a syntax error. In cases like this "
+"you need to use ``$get(re-recorded)``."
+msgstr ""
+"En général, vous pouvez accéder aux valeurs d'une balise par le nom de "
+"variable approprié. Par exemple, si votre balise s'appelle \"rerecorded"
+"\", vous pouvez utiliser ``%rerecorded%``. Mais le trait d'union n'est "
+"pas un caractère valide pour une variable de script, donc ``%re-recorded"
+"%`` donne une erreur de syntaxe. Dans des cas comme celui-ci, vous devez "
+"utiliser ``$get(re-recorded)``."
+
+#: ../../extending/scripting.rst:47
 msgid "Metadata Variables"
 msgstr "Variables de métadonnées"
 
-#: ../../extending/scripting.rst:42
+#: ../../extending/scripting.rst:49
 msgid ""
 "See :doc:`../variables/variables` for the list of the variables provided "
 "by Picard."
@@ -117,7 +133,7 @@ msgstr ""
 "Voir :doc:`../variables/variables` pour la liste des variables fournies "
 "par Picard."
 
-#: ../../extending/scripting.rst:44
+#: ../../extending/scripting.rst:51
 msgid ""
 "Picard's variables can be either simple variables containing a single "
 "text string, or multi-value variables containing multiple text strings. "
@@ -132,7 +148,7 @@ msgstr ""
 "texte en joignant les valeurs par un point-virgule ';', sauf lorsqu'elles "
 "sont utilisées avec des fonctions spéciales à valeurs multiples."
 
-#: ../../extending/scripting.rst:62
+#: ../../extending/scripting.rst:69
 msgid ""
 "The full list of available scripting functions is covered in the "
 "following chapter."
@@ -140,11 +156,11 @@ msgstr ""
 "La liste complète des fonctions de script disponibles est couverte dans "
 "le chapitre suivant."
 
-#: ../../extending/scripting.rst:52
+#: ../../extending/scripting.rst:59
 msgid "Scripting Functions"
 msgstr "Fonctions de script"
 
-#: ../../extending/scripting.rst:54
+#: ../../extending/scripting.rst:61
 msgid ""
 "The full list of available scripting functions is available, either :doc:"
 "`sorted alphabetically <../functions/list_by_name>` or :doc:`grouped by "
