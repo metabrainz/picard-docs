@@ -172,10 +172,7 @@
 <p>Renvoie la variable <code class="docutils literal notranslate"><span class="pre">nom</span></code> (équivalent à <code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">nom%</span></code>) ou une chaîne vide si <code class="docutils literal notranslate"><span class="pre">nom</span></code> n’a pas été défini. Si <code class="docutils literal notranslate"><span class="pre">nom</span></code> est une autre variable (par exemple <code class="docutils literal notranslate"><span class="pre">%indirect%</span></code>), la valeur de la variable sera utilisée comme <code class="docutils literal notranslate"><span class="pre">nom</span></code>. Cela permet la récupération de variables nommées dynamiquement.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Usually you can access the values of a tag by the proper variable name. For example, if your tag
-is called « rerecorded » you can use <code class="docutils literal notranslate"><span class="pre">%rerecorded%</span></code>. But the hyphen is not a valid character for a
-script variable, so <code class="docutils literal notranslate"><span class="pre">%re-recorded%</span></code> gives a syntax error. In cases like this you need to use
-<code class="docutils literal notranslate"><span class="pre">$get(re-recorded)</span></code>.</p>
+<p>En général, vous pouvez accéder aux valeurs d’une balise par le nom de variable approprié. Par exemple, si votre balise s’appelle « rerecorded », vous pouvez utiliser <code class="docutils literal notranslate"><span class="pre">%rerecorded%</span></code>. Mais le trait d’union n’est pas un caractère valide pour une variable de script, donc <code class="docutils literal notranslate"><span class="pre">%re-recorded%</span></code> donne une erreur de syntaxe. Dans des cas comme celui-ci, vous devez utiliser <code class="docutils literal notranslate"><span class="pre">$get(re-recorded)</span></code>.</p>
 </div>
 <p><strong>Exemple:</strong></p>
 <p>Les instructions suivantes renverront les valeurs indiquées :</p>
