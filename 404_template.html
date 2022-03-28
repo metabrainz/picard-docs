@@ -30,15 +30,17 @@
       var src_path_parts = src_path.split('/');
       var target_path = '';
       var target_url = '';
+      var has_language = false;
+      var has_version = false;
+      var language_changed = true;
+      var version_changed = true;
       var well_formed = true;
 
       var debug = false;
 
       const re_language = /^[a-z][a-z](_[A-Z][A-Z])?$/;
-      const re_version1 = /^v?[0-9][0-9\.]*$/;
-      const re_version2 = /^v[0-9][0-9\.]*$/;
-      const re_version3 = /^v([0-9]+\.[0-9]+)/;
-      const re_version4 = /^v?([0-9]+\.[0-9]+)/;
+      const re_version_a = /^v?[0-9][0-9\.]*$/;
+      const re_version_b = /^v?([0-9]+\.[0-9])/;
 
       const not_found = 'not_found.html';
 
@@ -64,6 +66,7 @@
             if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
+         has_language = true;
          var test_supported = test_supported_language(test_value)
          if (test_supported == "") {
             if (debug) { window.alert("Failed supported languages check.  Target language set to: " + target_language); }
@@ -72,16 +75,18 @@
          }
          target_language = test_supported;
          if (debug) { window.alert("Passed.  Target language set to: " + target_language); }
+         language_changed = false;
          return true;
       }
 
-      function is_rtd_version(test_version) {
-         if (debug) { window.alert("Testing RTD version: " + test_version); }
-         if (test_version.search(re_version1) < 0) {
+      function is_version(test_version) {
+         if (debug) { window.alert("Testing version: " + test_version); }
+         if (test_version.search(re_version_a) < 0) {
             if (debug) { window.alert("Failed regular expression check."); }
             return false;
          }
-         var arr = re_version4.exec(test_version);
+         has_version = true;
+         var arr = re_version_b.exec(test_version);
          var temp = arr[1];
          if (version_list.indexOf(temp) < 0) {
             if (debug) { window.alert("Failed supported versions check.  Version: " + temp); }
@@ -89,29 +94,7 @@
             return true;
          }
          target_version = '/v' + temp;
-         if (debug) { window.alert("Passed. Target version set to: " + target_version); }
-         return true;
-      }
-
-      function is_gh_version(test_version) {
-         if (debug) { window.alert("Testing GH version: " + test_version); }
-         if (test_version.search(re_version2) < 0) {
-            if (debug) { window.alert("Failed regular expression check."); }
-            return false;
-         }
-         var arr = re_version3.exec(test_version);
-         var temp = arr[1];
-         if (version_list.indexOf(temp) < 0) {
-            if (debug) { window.alert("Failed supported versions check.  Version: " + temp); }
-            target_version = '';
-            return true;
-         }
-         target_version = '/v' + temp;
-         if (target_version != '/' + test_version) {
-            if (debug) { window.alert("Target Version " + target_version + " != Test Version /" + test_version); }
-            if (debug) { window.alert("Changing well_formed to false."); }
-            well_formed = false;
-         }
+         if ((test_version == target_version) && (!has_language)) { version_changed = false; }
          if (debug) { window.alert("Passed. Target version set to: " + target_version); }
          return true;
       }
@@ -130,8 +113,8 @@
          }
       }
       else {
-         // Check for GitHub Pages style version number
-         if (is_gh_version(src_path_parts[counter])) {
+         // Check for version number
+         if (is_version(src_path_parts[counter])) {
             counter += 1;
          }
 
@@ -160,8 +143,7 @@
                   counter += 1;
                }
                else {
-                  if (is_rtd_version(src_path_parts[counter])) {
-                     well_formed = false;
+                  if (is_version(src_path_parts[counter])) {
                      counter += 1;
                   }
                }
@@ -193,6 +175,7 @@
 
             // Build the redirection target url
             target_url = src_protocol + '//' + src_host + target_version + '/' + target_language;
+            if ((language_changed) || (version_changed)) { well_formed = false; }
             if ((well_formed) || (target_url + target_path == window.location)) {
                if (debug) {
                   if (well_formed) {
