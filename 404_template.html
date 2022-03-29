@@ -39,8 +39,8 @@
       var debug = false;
 
       const re_language = /^[a-z][a-z](_[A-Z][A-Z])?$/;
-      const re_version_a = /^[vV]?[0-9][0-9\.]*$/;
-      const re_version_b = /^[vV]?([0-9]+\.[0-9]+)/;
+      const re_version_a = /^[vV]?[0-9\.]+$/;
+      const re_version_b = /^[vV]?([0-9]+\.[0-9]+).*$/;
 
       const not_found = 'not_found.html';
 
@@ -103,6 +103,10 @@
          }
          has_version = true;
          var arr = re_version_b.exec(test_version);
+         if (!arr) {
+            if (debug) { window.alert("Failed missing major or minor versions check."); }
+            return true;
+         }
          var temp = arr[1];
          if (version_list.indexOf(temp) < 0) {
             if (debug) { window.alert("Failed supported versions check.  Version: " + temp); }
