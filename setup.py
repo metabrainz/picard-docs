@@ -853,7 +853,7 @@ def clean_directory(dir_path, dir_name, create_dir=True):
                 if os.path.exists(dir_path):
                     try:
                         shutil.rmtree(dir_path)
-                    except (shutil.Error, PermissionError) as ex:
+                    except (shutil.Error, PermissionError, OSError) as ex:
                         err = ex
                         time.sleep(.2)
                         continue
