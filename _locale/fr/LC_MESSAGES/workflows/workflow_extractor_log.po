@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
+# Bob Swift <bswift@rsds.ca>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-12 10:49-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-05-02 18:18+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/workflowsworkflow_extractor_log/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.12\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../workflows/workflow_extractor_log.rst:4
@@ -23,6 +26,9 @@ msgid ""
 ":index:`When the ripper log file is available <workflows; EAC log, "
 "workflows; XLD log, EAC; lookup log, XLD; lookup log>`"
 msgstr ""
+":index:`Lorsque le fichier journal du ripper est disponible <flux de travail;"
+" journal EAC, flux de travail; journal XLD, EAC; journal de consultation, "
+"XLD; journal de consultation>`"
 
 #: ../../workflows/workflow_extractor_log.rst:6
 msgid ""
@@ -38,10 +44,22 @@ msgid ""
 "MusicBrainz database.  It is also one of the easier methods for looking "
 "up the release."
 msgstr ""
+"Cette option a été ajoutée à Picard dans la version 2.8, et supporte "
+"l'utilisation des fichiers journaux produits par les populaires rippers de "
+"fichiers CD `Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ pour "
+"Windows, `X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ "
+"pour macOS, et `Whipper <https://github.com/whipper-team/whipper>`_ pour "
+"Linux.  Comme les fichiers journaux de ces rippers contiennent suffisamment "
+"d'informations pour générer la table des matières du CD, ils peuvent être "
+"utilisés à la place de la lecture du CD. Comme pour la lecture du CD lui-"
+"même, cette méthode offre la plus grande chance de marquer vos fichiers "
+"musicaux avec la correspondance la plus précise de la base de données "
+"MusicBrainz.  C'est également l'une des méthodes les plus simples pour "
+"rechercher la version."
 
 #: ../../workflows/workflow_extractor_log.rst:15
 msgid "**1. Lookup the CD on MusicBrainz**"
-msgstr ""
+msgstr "**1. Recherchez le CD sur MusicBrainz**"
 
 #: ../../workflows/workflow_extractor_log.rst:17
 msgid ""
@@ -51,10 +69,16 @@ msgid ""
 " to select the log file to process. See the "
 ":doc:`/usage/retrieve_lookup_cd` section for detailed instructions."
 msgstr ""
+"Utilisez le fichier journal du ripper pour rechercher automatiquement la "
+"version en sélectionnant la commande :menuselection:`\"Outils --> Recherche "
+"de CD --> A partir du fichier journal EAC / XLD / Whipper...\"`. Cette "
+"commande ouvre une boîte de dialogue de recherche de fichiers qui vous "
+"permet de sélectionner le fichier journal à traiter. Consultez la section "
+":doc:`/usage/retrieve_lookup_cd` pour des instructions détaillées."
 
 #: ../../workflows/workflow_extractor_log.rst:23
 msgid "**2. Select the correct release**"
-msgstr ""
+msgstr "**2. Sélectionnez le bon déclencheur**"
 
 #: ../../workflows/workflow_extractor_log.rst:25
 msgid ""
@@ -69,7 +93,7 @@ msgstr ""
 
 #: ../../workflows/workflow_extractor_log.rst:35
 msgid "**3. Load the files**"
-msgstr ""
+msgstr "**3. Chargez les fichiers**"
 
 #: ../../workflows/workflow_extractor_log.rst:37
 msgid ""
@@ -88,6 +112,10 @@ msgid ""
 "with only one file.  The release icon should turn gold.  See the "
 ":doc:`/usage/match` section for details."
 msgstr ""
+"Faites glisser les fichiers du volet de gauche et déposez-les sur la version "
+"dans le volet de droite.  Vérifiez que chaque piste de la version est "
+"associée à un seul fichier.  L'icône de la release doit devenir dorée.  "
+"Consultez la section :doc:`/usage/match` pour plus de détails."
 
 #: ../../workflows/workflow_extractor_log.rst:48
 msgid "**5. Verify the metadata and cover art**"
@@ -99,6 +127,9 @@ msgid ""
 "are what you want.  Adjust if required. See the :doc:`/usage/coverart` "
 "section for details."
 msgstr ""
+"Vérifiez que les métadonnées et l'image de la couverture de la publication "
+"et des pistes correspondent à ce que vous souhaitez.  Ajustez-les si "
+"nécessaire. Consultez la section :doc:`/usage/coverart` pour plus de détails."
 
 #: ../../workflows/workflow_extractor_log.rst:54
 msgid "**7. Save the files**"
@@ -109,6 +140,8 @@ msgid ""
 "Save the files using the :menuselection:`\"File --> Save\"` command.  See"
 " the :doc:`/usage/save` section for details."
 msgstr ""
+"Enregistrez les fichiers à l'aide de la commande :menuselection:`\"Fichier --"
+"> Sauvez\"`.  Voir la section :doc:`/usage/save` pour plus de détails."
 
 #: ../../workflows/workflow_extractor_log.rst:59
 msgid "**8. Calculate and submit AcoustID fingerprints**"
@@ -188,4 +221,3 @@ msgstr ""
 #~ " to submit any information such as"
 #~ " disc id or AcoustID fingerprints."
 #~ msgstr ""
-
