@@ -15,6 +15,7 @@ Contributors include (in alphabetic surname order):
 
 - Vedant Chakravadhanula
 - Pavan Chander
+- Ronan Desplanques
 - Gabriel Ferreira
 - Rahul Kumar Gupta
 - Wieland Hoffmann

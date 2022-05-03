@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2022-03-14 10:50-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: pt_BR\n"
@@ -98,7 +98,7 @@ msgstr ""
 msgid ""
 "This icon indicates that the track is an audio track and that there is no"
 " single file currently matched.  This appears if there is no file "
-"matched, of if there are multiple files matched."
+"matched, or if there are multiple files matched."
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:74
@@ -108,7 +108,7 @@ msgstr ""
 #: ../../getting_started/status_icons.rst
 msgid ""
 "This icon indicates that the track is a video track and that there is no "
-"file currently matched.  This appears if there is no file matched, of if "
+"file currently matched.  This appears if there is no file matched, or if "
 "there are multiple files matched."
 msgstr ""
 
@@ -119,7 +119,7 @@ msgstr ""
 #: ../../getting_started/status_icons.rst
 msgid ""
 "This icon indicates that the track is a data track and that there is no "
-"file currently matched.  This appears if there is no file matched, of if "
+"file currently matched.  This appears if there is no file matched, or if "
 "there are multiple files matched."
 msgstr ""
 
@@ -146,22 +146,46 @@ msgid "This icon indicates that the track has been saved successfully."
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:130
-msgid "|img-track-error|"
+msgid "|img-error-no-access|"
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:132
+#: ../../getting_started/status_icons.rst
 msgid ""
-"This icon indicates that Picard encountered an error while trying to save"
-" the track.  This is typically due to the file being marked as read-only,"
-" or you do not have sufficient permission to save the file in the "
-"specified directory."
+"This icon indicates that Picard encountered a permission error while "
+"trying to load or save the file.  This is typically due to the file being"
+" marked as read-only, or you do not have sufficient permission to read "
+"the file or save the file in the specified directory."
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:136
+#: ../../getting_started/status_icons.rst:139
+msgid "|img-error-not-found|"
+msgstr ""
+
+#: ../../getting_started/status_icons.rst
+msgid ""
+"This icon indicates that Picard could not find the file with the given "
+"path while trying to load or save the track.  This is typically due to "
+"the file being moved or deleted since it was loaded into Picard, but "
+"could also be due to a missing directory."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:148
+msgid "|img-dialog-error|"
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:150
+msgid ""
+"This icon indicates that Picard encountered an error while trying to load"
+" or save the track.  This is typically due to a problem writing the tags "
+"into the file, but could also be due to a storage IO error on your "
+"system."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:154
 msgid ":index:`Status Bar <icons; status bar, status bar>`"
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:138
+#: ../../getting_started/status_icons.rst:156
 msgid ""
 "There is a status bar at the bottom of Picard's main screen, which "
 "displays some information about current processing status.  This includes"
@@ -171,31 +195,31 @@ msgid ""
 "status indicators."
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:144
+#: ../../getting_started/status_icons.rst:162
 msgid "From left to right, the numbers represent:"
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:146
+#: ../../getting_started/status_icons.rst:164
 msgid ""
 "The estimated processing time remaining (only displayed if Picard is "
 "actively processing files)."
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:147
+#: ../../getting_started/status_icons.rst:165
 msgid "The number of files loaded."
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:148
+#: ../../getting_started/status_icons.rst:166
 msgid "The number of MusicBrainz releases loaded."
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:149
+#: ../../getting_started/status_icons.rst:167
 msgid ""
 "The number of files with pending action (e.g. loading, saving, "
 "fingerprinting)."
 msgstr ""
 
-#: ../../getting_started/status_icons.rst:150
+#: ../../getting_started/status_icons.rst:168
 msgid "The number of active network requests."
 msgstr ""
 
@@ -218,5 +242,45 @@ msgstr ""
 #~ "pending files and pending network "
 #~ "requests. If both are 0 nothing is"
 #~ " pending and processing is complete."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This icon indicates that the track "
+#~ "is an audio track and that there"
+#~ " is no single file currently matched."
+#~ "  This appears if there is no "
+#~ "file matched, of if there are "
+#~ "multiple files matched."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This icon indicates that the track "
+#~ "is a video track and that there"
+#~ " is no file currently matched.  This"
+#~ " appears if there is no file "
+#~ "matched, of if there are multiple "
+#~ "files matched."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This icon indicates that the track "
+#~ "is a data track and that there "
+#~ "is no file currently matched.  This "
+#~ "appears if there is no file "
+#~ "matched, of if there are multiple "
+#~ "files matched."
+#~ msgstr ""
+
+#~ msgid "|img-track-error|"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This icon indicates that Picard "
+#~ "encountered an error while trying to "
+#~ "save the track.  This is typically "
+#~ "due to the file being marked as"
+#~ " read-only, or you do not have"
+#~ " sufficient permission to save the "
+#~ "file in the specified directory."
 #~ msgstr ""
 

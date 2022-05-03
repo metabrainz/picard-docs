@@ -49,11 +49,11 @@ and will take some time.
 Which tags can Picard write to my files?
 -------------------------------------------
 
-See the :doc:`../variables/variables` section for information on which MusicBrainz fields that Picard writes to tags. `Picard Tag Mapping
+See the :doc:`../variables/variables` section for information on which MusicBrainz fields Picard writes to tags. `Picard Tag Mapping
 <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
 
 
-How to I edit tags in several files at once?
+How do I edit tags in several files at once?
 --------------------------------------------
 
 1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`
@@ -61,8 +61,6 @@ How to I edit tags in several files at once?
    and whether they are the same across all files or different.
 3. If you edit any value in the "New values" column you will change this tag for all selected files.
 4. You need to click Save in order to persist these changes to your files.
-
-This process does work in both panes.
 
 Please understand that Picard is not designed as a general purpose :index:`tag editor <tags; editing>`. Its primary goal is to retrieve community-maintained MusicBrainz
 data to write into your tags. Some secondary goals include:
@@ -110,7 +108,7 @@ to the value as displayed in the MusicBrainz database:
 
    $set(tracknumber,%_musicbrainz_tracknumber%)
 
-Please be aware that for MP4 files this will result in the track number not beings saved, as the MP4 format
+Please be aware that for MP4 files this will result in the track number not being saved, as the MP4 format
 does not allow for non integer values in this tag.  For other formats it depends on the playback software and
 devices you use if they can handle these non-standard track numbers.
 

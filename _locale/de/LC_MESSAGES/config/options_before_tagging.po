@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2022-02-12 10:49-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: de\n"
@@ -69,12 +69,23 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_before_tagging.rst:31
+msgid "**Fix missing seekpoints for FLAC files**"
+msgstr ""
+
+#: ../../config/options_before_tagging.rst:33
+msgid ""
+"Some software has issues handling FLAC files that have an empty seek "
+"table metadata block. When this option is enabled empty and hence unused "
+"seek table blocks will be removed from the files on saving."
+msgstr ""
+
+#: ../../config/options_before_tagging.rst:36
 msgid ""
 "**Preserve these tags from being cleared or overwritten with MusicBrainz "
 "data**"
 msgstr ""
 
-#: ../../config/options_before_tagging.rst:33
+#: ../../config/options_before_tagging.rst:38
 msgid ""
 "This is an advanced option: If you have tags which you need to preserve, "
 "enter their names here to stop Picard from overwriting them."

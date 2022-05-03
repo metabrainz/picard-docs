@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-02 09:45-0700\n"
+"POT-Creation-Date: 2022-02-12 10:49-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: pt_BR\n"
@@ -47,15 +47,19 @@ msgstr ""
 msgid ""
 "Make sure the CD is inserted in the drive, and select "
 ":menuselection:`\"Tools --> Lookup CD... --> (drive to use)\"`. The CD "
-"TOC will be calculated and sent to MusicBrainz, and a list of matching "
-"releases will be displayed."
+"toc will be calculated and sent to MusicBrainz. Alternately, you can use "
+"an EAC, XLD or Whipper ripper log file to lookup the CD using the "
+":menuselection:`\"Tools --> Lookup CD --> From EAC / XLD / Whipper log "
+"file...\"` command. This will open a file browser dialog to allow you to "
+"select the log file to process. Either method will query the MusicBrainz "
+"database and display a list of matching releases."
 msgstr ""
 
-#: ../../usage/attach_disc_id.rst:28
+#: ../../usage/attach_disc_id.rst:32
 msgid "**2. Review list of matching releases**"
 msgstr ""
 
-#: ../../usage/attach_disc_id.rst:30
+#: ../../usage/attach_disc_id.rst:34
 msgid ""
 "If the target release appears in this list, the disc id has already been "
 "attached and you do not need to do anything further.  If there are no "
@@ -66,7 +70,7 @@ msgid ""
 "criterion and have the same number of tracks as your CD TOC."
 msgstr ""
 
-#: ../../usage/attach_disc_id.rst:45
+#: ../../usage/attach_disc_id.rst:49
 msgid ""
 "If you search by artist, use the radio button next to the artist's name "
 "to select the desired artist.  If you click on the artist's name link, "
@@ -74,11 +78,11 @@ msgid ""
 "displayed."
 msgstr ""
 
-#: ../../usage/attach_disc_id.rst:52
+#: ../../usage/attach_disc_id.rst:56
 msgid "**3. Select the release**"
 msgstr ""
 
-#: ../../usage/attach_disc_id.rst:54
+#: ../../usage/attach_disc_id.rst:58
 msgid ""
 "Select the desired target release frm the list displayed by clicking the "
 "radio button next to the release, and then click the \"Attach CD TOC\" "
@@ -87,11 +91,11 @@ msgid ""
 "note, and submit the edit."
 msgstr ""
 
-#: ../../usage/attach_disc_id.rst:61
+#: ../../usage/attach_disc_id.rst:65
 msgid "**4. Add release if missing**"
 msgstr ""
 
-#: ../../usage/attach_disc_id.rst:63
+#: ../../usage/attach_disc_id.rst:67
 msgid ""
 "If none of the releases displayed are correct, you have the option to add"
 " a new release (with some information automatically included).  The disc "
@@ -125,5 +129,15 @@ msgstr ""
 #~ "releases that match your search "
 #~ "criterion and have the same number "
 #~ "of tracks as your CD toc."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Make sure the CD is inserted in"
+#~ " the drive, and select "
+#~ ":menuselection:`\"Tools --> Lookup CD... -->"
+#~ " (drive to use)\"`. The CD TOC "
+#~ "will be calculated and sent to "
+#~ "MusicBrainz, and a list of matching "
+#~ "releases will be displayed."
 #~ msgstr ""
 

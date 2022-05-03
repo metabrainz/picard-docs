@@ -9,9 +9,10 @@ based on what are believed to be best practices.
 The scenarios covered include:
 
 1. :doc:`workflow_cd`
-2. :doc:`workflow_album`
-3. :doc:`workflow_metadata`
-4. :doc:`workflow_no_info`
+2. :doc:`workflow_extractor_log`
+3. :doc:`workflow_album`
+4. :doc:`workflow_metadata`
+5. :doc:`workflow_no_info`
 
 .. note::
 
@@ -26,6 +27,7 @@ The scenarios covered include:
       :hidden:
 
       workflow_cd
+      workflow_extractor_log
       workflow_album
       workflow_metadata
       workflow_no_info

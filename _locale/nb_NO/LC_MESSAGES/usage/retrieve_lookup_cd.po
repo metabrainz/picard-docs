@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-02 10:23-0700\n"
+"POT-Creation-Date: 2022-02-12 10:49-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: nb_NO\n"
@@ -31,24 +31,28 @@ msgstr ""
 msgid ""
 "Make sure the CD is inserted in the drive, and select "
 ":menuselection:`\"Tools --> Lookup CD... --> (drive to use)\"`. The CD "
-"toc will be calculated and sent to MusicBrainz, and a list of matching "
-"releases will be displayed."
+"toc will be calculated and sent to MusicBrainz. Alternately, you can use "
+"an EAC, XLD or Whipper ripper log file to lookup the CD using the "
+":menuselection:`\"Tools --> Lookup CD --> From EAC / XLD / Whipper log "
+"file...\"` command. This will open a file browser dialog to allow you to "
+"select the log file to process. Either method will query the MusicBrainz "
+"database and display a list of matching releases."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:13
+#: ../../usage/retrieve_lookup_cd_steps.txt:16
 msgid ""
 "Select the correct release from the list and click on the :guilabel:`Load"
 " into Picard` button.  This will load the information for the release "
 "into Picard."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:16
+#: ../../usage/retrieve_lookup_cd_steps.txt:19
 msgid ""
 "A music symbol in front of a track number in the right-hand pane "
 "indicates that there has been no file assigned to the track."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:23
+#: ../../usage/retrieve_lookup_cd_steps.txt:26
 msgid ""
 "If there are no matches or none of the matches are correct, use the "
 ":guilabel:`Submit disc ID` option to locate the correct release.  Enter "
@@ -57,14 +61,14 @@ msgid ""
 " have the same number of tracks as your CD TOC."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:35
+#: ../../usage/retrieve_lookup_cd_steps.txt:38
 msgid ""
 "Use the green arrow |lookup_tagger| to load the information for a release"
 " into Picard.  In addition, you can select the release and attach the "
 "toc."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:48
+#: ../../usage/retrieve_lookup_cd_steps.txt:51
 msgid ""
 "If none of the releases displayed are correct, you have the option to add"
 " a new release (with some information automatically included)."
@@ -108,5 +112,15 @@ msgstr ""
 #~ "releases that match your search "
 #~ "criterion and have the same number "
 #~ "of tracks as your CD TOC."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Make sure the CD is inserted in"
+#~ " the drive, and select "
+#~ ":menuselection:`\"Tools --> Lookup CD... -->"
+#~ " (drive to use)\"`. The CD toc "
+#~ "will be calculated and sent to "
+#~ "MusicBrainz, and a list of matching "
+#~ "releases will be displayed."
 #~ msgstr ""
 
