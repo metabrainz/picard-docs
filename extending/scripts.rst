@@ -17,7 +17,7 @@ for use.  File naming scripts can vary from a simple one-line script such as ``%
 complex script using different file naming formats based on different criteria. In all cases, the files
 will be saved using the text output by the script.
 
-File naming scripts are managed using the :doc:`../config/options_filerenaming_editor` which can be opened
+File naming scripts are managed using the :doc:`/config/options_filerenaming_editor` which can be opened
 from the "File Naming" section of the :menuselection:`"Options --> Options..."` menu, or directly from the
 :menuselection:`"Options --> Open file naming script editor..."` menu item. The current file naming script
 can also be selected directly from the :menuselection:`"Options --> Select file naming script"` menu.

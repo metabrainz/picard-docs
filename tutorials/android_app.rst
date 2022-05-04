@@ -37,7 +37,7 @@ port number, you will need it to configure the Android app in the next step.
 
 .. seealso::
 
-    :doc:`Network options <../config/options_network>`
+    :doc:`Network options </config/options_network>`
 
 
 Installing and configuring the MusicBrainz Android app

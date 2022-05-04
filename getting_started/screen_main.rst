@@ -15,7 +15,7 @@
 1. **Menu Bar**: This provides the pull-down menu of actions that Picard can perform.
 
 2. **Tool Bar**: This provides quick links to the main functions performed by Picard.  This can
-   be customized by the user in the :doc:`User Interface Options <../config/options_interface>` settings.
+   be customized by the user in the :doc:`User Interface Options </config/options_interface>` settings.
 
 3. **File Browser**: This provides a browser for selecting files and directories for processing.
 

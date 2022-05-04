@@ -15,7 +15,7 @@ There are two different problems that often fall under this topic:
 **No cover art providers have been enabled in the configuration settings**
 
    Confirm that the :menuselection:`"Options --> Options... --> Cover Art"` settings have at least one cover
-   art provider enabled.  Please see the :doc:`../config/options_cover_art_providers` section for more information.
+   art provider enabled.  Please see the :doc:`/config/options_cover_art_providers` section for more information.
 
 **There is no cover art available from the selected providers**
 
@@ -37,7 +37,7 @@ There are two different problems that often fall under this topic:
    If the cover art was recently added, the edit adding the image may not have been accepted and applied yet. You
    can have Picard use the cover art from pending edits by disabling the "Download only approved images" option in
    the Cover Art Archives subsection of the :menuselection:`"Options --> Options... --> Cover Art"` settings.  Please
-   see the :doc:`../config/options_cover_art_archive` section for more information.
+   see the :doc:`/config/options_cover_art_archive` section for more information.
 
 
 :index:`Coverart that is saved with the files isn't displayed <troubleshooting; no cover art displayed>`
@@ -48,17 +48,17 @@ There are two different problems that often fall under this topic:
    Check to confirm that your player supports embedded cover art images.  That support is not universal among all
    players.  Some players support embedded images, some support images stored as files in the directory (e.g.:
    :file:`cover.jpg` or :file:`folder.jpg`), and some support both. Picard allows you to specify how the cover art images should
-   be saved.  Please see the :doc:`../config/options_location` section of the Coverart options for details.
+   be saved.  Please see the :doc:`/config/options_location` section of the Coverart options for details.
 
    You should also confirm that your player supports the version of the tags being written.
 
    .. seealso::
 
       For more information please see:
-      :doc:`../config/options_tags_compatibility_aac` /
-      :doc:`../config/options_tags_compatibility_ac3` /
-      :doc:`../config/options_tags_compatibility_id3` /
-      :doc:`../config/options_tags_compatibility_wave`
+      :doc:`/config/options_tags_compatibility_aac` /
+      :doc:`/config/options_tags_compatibility_ac3` /
+      :doc:`/config/options_tags_compatibility_id3` /
+      :doc:`/config/options_tags_compatibility_wave`
 
 **Embedded cover image too large**
 

@@ -6,7 +6,7 @@ Using Picard
 How do I tag files with Picard?
 --------------------------------
 
-There is a separate section that explains the tagging process.  Please see :doc:`../usage/using` for details.
+There is a separate section that explains the tagging process.  Please see :doc:`/usage/using` for details.
 
 
 The green "Tagger" :index:`icon <tagger icon, icon; tagger>` disappeared from MusicBrainz.org, how do I get it back?

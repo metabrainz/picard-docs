@@ -8,9 +8,9 @@ Getting Help
 
 If you have problems using Picard, please first check the following resources:
 
-* For general usage information see the :doc:`../usage/using` documentation and the `illustrated quick start guide
+* For general usage information see the :doc:`/usage/using` documentation and the `illustrated quick start guide
   <https://picard.musicbrainz.org/docs/guide/>`_.
-* Read the :doc:`FAQ section <../faq/faq>` for common questions and problems.
+* Read the :doc:`FAQ section </faq/faq>` for common questions and problems.
 * Consult the `community forums <https://community.metabrainz.org/c/picard>`_.
 * Check the `download page <https://picard.musicbrainz.org/downloads/>`_ for a newer version of Picard which might
   solve your problem.

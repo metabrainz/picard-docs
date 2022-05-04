@@ -23,24 +23,24 @@ existing in the files.
    Select the files in the left-hand pane and combine them into album clusters using the :menuselection:`"Tools
    --> Cluster"` command.  Picard will attempt to cluster the files based on their existing metadata.  Select
    the desired cluster(s) in the left-hand pane and initiate the lookup using the :menuselection:`"Tools -->
-   Lookup"` command.  See the :doc:`../usage/retrieve_lookup` section for details.
+   Lookup"` command.  See the :doc:`/usage/retrieve_lookup` section for details.
 
 **3. Match the files to the tracks on the release**
 
    Drag the files from the left-hand pane and drop them on the release in the right-hand pane.  Check that each
    track on the release is associated with only one file.  The release icon will likely remain silver, indicating
-   that not all tracks have been matched to files.  See the :doc:`../usage/match` section for details.
+   that not all tracks have been matched to files.  See the :doc:`/usage/match` section for details.
 
 
 **4. Verify the metadata and cover art**
 
    Check that the metadata and cover art image for the release and tracks are what you want.  Adjust if required.
-   See the :doc:`../usage/coverart` section for details.
+   See the :doc:`/usage/coverart` section for details.
 
 
 **5. Save the files**
 
-   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`../usage/save` section for details.
+   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`/usage/save` section for details.
 
 
 .. note::

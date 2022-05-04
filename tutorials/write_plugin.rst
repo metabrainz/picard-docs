@@ -10,7 +10,7 @@ will help get you started in turning your great idea a reality.
 Picard plugins are written in Python, so that's the programming language you'll be using.  Please check the `INSTALL.md
 <https://github.com/metabrainz/picard/blob/master/INSTALL.md>`_ file in the Picard repository on GitHub to see the minimum
 version requirements. This is Python 3.6 as of the time this tutorial was written.  Also refer to the
-:doc:`Plugins API <../appendices/plugins_api>` for additional information, including the parameters passed to each of the
+:doc:`Plugins API </appendices/plugins_api>` for additional information, including the parameters passed to each of the
 function types.
 
 For the purpose of this tutorial, we're going to develop a simple plugin to save the argument information provided by Picard
@@ -84,7 +84,7 @@ We also include error checking to write an entry to the Picard log in the event 
 
 Now we include the functions to be called when releases and tracks are retrieved by Picard. The release function hook provides
 three arguments, and the track function hook provides four arguments. The argument types are described in the :doc:`Plugins API
-<../appendices/plugins_api>` section. The first argument, ``album``, is an object that holds information about the selected album.
+</appendices/plugins_api>` section. The first argument, ``album``, is an object that holds information about the selected album.
 See the ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file in
 Picard's source code for more information.
 
@@ -94,7 +94,7 @@ and track. This is where you can add or edit the tags and variables that Picard 
 Picard's source code for more information.
 
 The ``track`` and ``release`` arguments are Python dictionaries containing the information provided in response to Picard's calls to
-the MusicBrainz API. The information may differ, depending on the user's :doc:`../config/options_metadata` settings for things like
+the MusicBrainz API. The information may differ, depending on the user's :doc:`/config/options_metadata` settings for things like
 "*Use release relationships*" or "*Use track relationships*".
 
 .. code-block:: python

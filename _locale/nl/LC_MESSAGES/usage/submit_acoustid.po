@@ -1,39 +1,63 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
-# This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 09:38-0600\n"
+"POT-Creation-Date: 2022-05-04 12:34-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
 "Language: nl\n"
+"Language-Team: none\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/submit_acoustid.rst:4
-msgid ":index:`Submitting Acoustic Fingerprints <AcoustID; submitting, acoustic fingerprint; submitting, fingerprint; submitting>`"
+msgid ""
+":index:`Submitting Acoustic Fingerprints <AcoustID; submitting, acoustic "
+"fingerprint; submitting, fingerprint; submitting>`"
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:6
-msgid "Acoustic fingerprints are very useful for identifying tracks and recordings, allowing them to be looked up in the MusicBrainz database. Thus, it is very valuable to add them when you are tagging files.  Note that an acoustic fingerprint is **not** an AcoustID. Please see the :doc:`../tutorials/acoustid` tutorial for additional information."
+msgid ""
+"Acoustic fingerprints are very useful for identifying tracks and "
+"recordings, allowing them to be looked up in the MusicBrainz database. "
+"Thus, it is very valuable to add them when you are tagging files.  Note "
+"that an acoustic fingerprint is **not** an AcoustID. Please see the "
+":doc:`/tutorials/acoustid` tutorial for additional information."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:13
-msgid "When using Picard to submit acoustic fingerprints, it is recommended to enable the Fingerprint column in the table view in the right-hand pane.  This is done by right-clicking the column header and checking the box beside \"Fingerprint status\".  This will display an icon indicating whether the AcoustID was calculated and whether it ready for submission (red = unsubmitted, grey = already submitted)."
+msgid ""
+"When using Picard to submit acoustic fingerprints, it is recommended to "
+"enable the Fingerprint column in the table view in the right-hand pane.  "
+"This is done by right-clicking the column header and checking the box "
+"beside \"Fingerprint status\".  This will display an icon indicating "
+"whether the AcoustID was calculated and whether it ready for submission "
+"(red = unsubmitted, grey = already submitted)."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:19
-msgid "There are two methods for submitting acoustic fingerprints, depending on the workflow that you are using to identify the releases that you are tagging. Note that both methods require that you first match your audio files to release and track information from the MusicBrainz database. See the :doc:`retrieve` and :doc:`match` sections for more information about retrieving release information and matching audio files to releases."
+msgid ""
+"There are two methods for submitting acoustic fingerprints, depending on "
+"the workflow that you are using to identify the releases that you are "
+"tagging. Note that both methods require that you first match your audio "
+"files to release and track information from the MusicBrainz database. See"
+" the :doc:`retrieve` and :doc:`match` sections for more information about"
+" retrieving release information and matching audio files to releases."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:25
-msgid "The steps to follow to submit acoustic fingerprints for each of the two workflows are:"
+msgid ""
+"The steps to follow to submit acoustic fingerprints for each of the two "
+"workflows are:"
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:28
@@ -41,19 +65,32 @@ msgid "Submitting when using Scan to identify the release"
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:30
-msgid "Load files into the clustering pane.  Select the files and click the \"Scan\" button, or select :menuselection:`\"Tools --> Scan\"`."
+msgid ""
+"Load files into the clustering pane.  Select the files and click the "
+"\"Scan\" button, or select :menuselection:`\"Tools --> Scan\"`."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:40
-msgid "If the files are matched to a track and move to the right-hand pane, they already exist in the AcoustID database and do not need to be re-submitted.  The \"Submit\" button will remain disabled."
+msgid ""
+"If the files are matched to a track and move to the right-hand pane, they"
+" already exist in the AcoustID database and do not need to be re-"
+"submitted.  The \"Submit\" button will remain disabled."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:48
-msgid "If the files are not matched, or you manually move them to match to a different track they could be submitted.  The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted status) and the \"Submit\" button will be enabled."
+msgid ""
+"If the files are not matched, or you manually move them to match to a "
+"different track they could be submitted.  The AcoustID icon for the "
+"tracks will show up in red (i.e.: unsubmitted status) and the \"Submit\" "
+"button will be enabled."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:59
-msgid "Clicking the \"Submit\" button will only submit the fingerprints for the files identified in Step 3. The AcoustID icon for the tracks will change to grey (i.e.: submitted status) and the \"Submit\" button will be disabled."
+msgid ""
+"Clicking the \"Submit\" button will only submit the fingerprints for the "
+"files identified in Step 3. The AcoustID icon for the tracks will change "
+"to grey (i.e.: submitted status) and the \"Submit\" button will be "
+"disabled."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:70
@@ -61,21 +98,47 @@ msgid "Submitting when not using Scan to identify the release"
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:72
-msgid "Make sure that the files are properly matched to tracks on a release in the right-hand pane."
+msgid ""
+"Make sure that the files are properly matched to tracks on a release in "
+"the right-hand pane."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:81
-msgid "Select the files in the right-hand pane and select :menuselection:`\"Tools --> Generate AcoustID fingerprints\"`. This will calculate the acoustic fingerprints for the selected files."
+msgid ""
+"Select the files in the right-hand pane and select "
+":menuselection:`\"Tools --> Generate AcoustID fingerprints\"`. This will "
+"calculate the acoustic fingerprints for the selected files."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:93
-msgid "The \"Generate AcoustID fingerprints\" action button can be added to the button bar by changing the settings in the User Interface options."
+msgid ""
+"The \"Generate AcoustID fingerprints\" action button can be added to the "
+"button bar by changing the settings in the User Interface options."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:96
-msgid "The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted status) and the \"Submit\" button will be enabled."
+msgid ""
+"The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted "
+"status) and the \"Submit\" button will be enabled."
 msgstr ""
 
 #: ../../usage/submit_acoustid.rst:106
-msgid "Clicking the \"Submit\" button will submit the fingerprints for the files. The AcoustID icon for the tracks will change to grey (i.e.: submitted status) and the \"Submit\" button will be disabled."
+msgid ""
+"Clicking the \"Submit\" button will submit the fingerprints for the "
+"files. The AcoustID icon for the tracks will change to grey (i.e.: "
+"submitted status) and the \"Submit\" button will be disabled."
 msgstr ""
+
+#~ msgid ""
+#~ "Acoustic fingerprints are very useful "
+#~ "for identifying tracks and recordings, "
+#~ "allowing them to be looked up in"
+#~ " the MusicBrainz database. Thus, it "
+#~ "is very valuable to add them when"
+#~ " you are tagging files.  Note that"
+#~ " an acoustic fingerprint is **not** "
+#~ "an AcoustID. Please see the "
+#~ ":doc:`../tutorials/acoustid` tutorial for additional"
+#~ " information."
+#~ msgstr ""
+

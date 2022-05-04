@@ -18,7 +18,7 @@ string is allowed to contain any number of '/' characters. Everything before the
 and everything after the last '/' becomes the file's name.  In our example, we only have one '/' character, meaning
 that we will have one directory level for the album which will contain the songs for that album.
 
-First, let's have a look at what we need. You see a list of the available tags in the :doc:`../variables/tags_basic` section.
+First, let's have a look at what we need. You see a list of the available tags in the :doc:`/variables/tags_basic` section.
 We want the **ARTIST** name, so available tags for this could be ``albumartist`` or ``artist``. This should be the
 name for an album folder, so ``albumartist`` sounds like what we need. To get the actual value for a tag you need to enclose
 its name in percent signs. So let’s start:
@@ -94,8 +94,8 @@ And there you have it -- the final script for naming your files developed from t
 
 .. seealso::
 
-   For additional information about the available tags and variables please see the :doc:`../variables/variables` section.
-   For information about the script functions available please see the :doc:`../functions/list_by_type` section.
+   For additional information about the available tags and variables please see the :doc:`/variables/variables` section.
+   For information about the script functions available please see the :doc:`/functions/list_by_type` section.
 
 .. raw:: latex
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
+"Project-Id-Version: MusicBrainz Picard v2.8.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 09:38-0600\n"
+"POT-Creation-Date: 2022-05-04 12:34-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "To use this tool, select one or more files loaded into Picard and open th
 msgstr ""
 
 #: ../../usage/tags_from_file_names.rst:21
-msgid "The matching pattern can consist of Picard tag names enclosed in ``%`` signs and other characters that are matched verbatim.  For the tag names you can use predefined names such as ``%artist%``, ``%album%``, or ``%title%`` (see :doc:`../variables/variables`) or use custom names.  There are a few predefined patterns available to select from, but you can also adjust them or set your own."
+msgid "The matching pattern can consist of Picard tag names enclosed in ``%`` signs and other characters that are matched verbatim.  For the tag names you can use predefined names such as ``%artist%``, ``%album%``, or ``%title%`` (see :doc:`/variables/variables`) or use custom names.  There are a few predefined patterns available to select from, but you can also adjust them or set your own."
 msgstr ""
 
 #: ../../usage/tags_from_file_names.rst:26
@@ -65,7 +65,7 @@ msgid "Ignoring parts of the file name"
 msgstr ""
 
 #: ../../usage/tags_from_file_names.rst:63
-msgid "Sometimes you don't want to include parts of the file name in your tags and just want to ignore them. The pattern must always match the entire file name, though.  In this case you can use a hidden variable for the parts of the file name you do not want to match to an actual tag.  Hidden variables start with an underscore like :samp:`%_dummy%`.  This variable will still be available on the file for :doc:`../extending/scripting`, but will not get written to the actual file tags on saving."
+msgid "Sometimes you don't want to include parts of the file name in your tags and just want to ignore them. The pattern must always match the entire file name, though.  In this case you can use a hidden variable for the parts of the file name you do not want to match to an actual tag.  Hidden variables start with an underscore like :samp:`%_dummy%`.  This variable will still be available on the file for :doc:`/extending/scripting`, but will not get written to the actual file tags on saving."
 msgstr ""
 
 #: ../../usage/tags_from_file_names.rst:69

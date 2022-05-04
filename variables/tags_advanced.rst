@@ -7,8 +7,8 @@
 :index:`Advanced Tags <tags; advanced>`
 ========================================
 
-You can make additional tags available by enabling the :doc:`Use track relationships <../config/options_metadata>` and the
-:doc:`Use genres from MusicBrainz <../config/options_genres>` settings in Picard.
+You can make additional tags available by enabling the :doc:`Use track relationships </config/options_metadata>` and the
+:doc:`Use genres from MusicBrainz </config/options_genres>` settings in Picard.
 
 .. note::
 
@@ -18,7 +18,7 @@ You can make additional tags available by enabling the :doc:`Use track relations
 .. note::
 
    Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
-   <../appendices/tag_mapping>` section for details.
+   </appendices/tag_mapping>` section for details.
 
 .. _advanced_relationships:
 

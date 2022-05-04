@@ -47,7 +47,7 @@ or ``album_post_removal_processor()``.
 Note that plugins are not limited to one of those areas.  A single plugin could implement all
 of the above, but most existing plugins focus on one.
 
-The :doc:`Plugins API <../appendices/plugins_api>` provides information regarding the different
+The :doc:`Plugins API </appendices/plugins_api>` provides information regarding the different
 plugin hooks available, along with some examples of their use.  There is also a list of the
 `available plugins <https://picard.musicbrainz.org/plugins/>`_ that have been submitted to the
 MusicBrainz Picard repository shown on the Picard website.
