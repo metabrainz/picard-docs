@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-# Bob Swift <bswift@rsds.ca>, 2021.
+# Bob Swift <bswift@rsds.ca>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-01 11:38-0600\n"
-"PO-Revision-Date: 2021-10-06 18:03+0000\n"
+"PO-Revision-Date: 2022-05-04 16:18+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/configoptions_maintenance/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/configoptions_maintenance/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.12\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_maintenance.rst:4
@@ -29,7 +30,6 @@ msgid "**Configuration File**"
 msgstr "**Fichier de configuration**"
 
 #: ../../config/options_maintenance.rst:11
-#, fuzzy
 msgid ""
 "This displays the path and file name of the configuration INI file "
 "currently used by Picard. This file contains all of your settings and "
@@ -37,13 +37,9 @@ msgid ""
 "systems."
 msgstr ""
 "Ceci affiche le chemin et le nom du fichier INI de configuration "
-"actuellement utilisé par Picard. Ce fichier contient tous vos paramètres "
-"et préférences, et le format du fichier est cohérent entre les systèmes "
-"d'exploitation. Il y a également un bouton :guilabel:`Ouvrir le dossier` "
-"pour ouvrir l'emplacement dans le navigateur de fichiers de votre "
-"système, de sorte que vous puissiez facilement faire une copie de "
-"sauvegarde du fichier ou copier les paramètres pour les utiliser sur un "
-"autre ordinateur."
+"actuellement utilisé par Picard. Ce fichier contient tous vos paramètres et "
+"préférences, et le format du fichier est cohérent sur tous les systèmes "
+"d'exploitation."
 
 #: ../../config/options_maintenance.rst:15
 msgid ""
@@ -54,6 +50,13 @@ msgid ""
 "you want to undo configuration changes.  It also allows you to have "
 "different configurations available without using profiles."
 msgstr ""
+"Le bouton :guilabel:`Sauvegarde` vous permet de créer une copie de "
+"sauvegarde du fichier de configuration actuel.  Cela peut être utilisé pour "
+"copier facilement les paramètres pour les utiliser sur un autre ordinateur, "
+"ou pour fournir un instantané pour une récupération facile dans le cas où la "
+"configuration devient corrompue ou si vous voulez annuler les changements de "
+"configuration.  Cela vous permet également de disposer de différentes "
+"configurations sans utiliser de profils."
 
 #: ../../config/options_maintenance.rst:21
 msgid ""
@@ -63,6 +66,12 @@ msgid ""
 "settings.  Prior to loading the file, Picard will automatically save a "
 "backup copy of the current file."
 msgstr ""
+"Le bouton :guilabel:`Sauvegarde de charge` vous permet de remplacer le "
+"fichier de configuration actuel par une sauvegarde créée précédemment.  Le "
+"chargement d'un fichier de configuration de sauvegarde remplacera tous les "
+"paramètres de la configuration actuelle.  Avant de charger le fichier, "
+"Picard enregistrera automatiquement une copie de sauvegarde du fichier "
+"actuel."
 
 #: ../../config/options_maintenance.rst:27
 msgid "**Configuration File Cleanup**"
@@ -121,4 +130,3 @@ msgstr ""
 "Les options appartenant à des plugins qui sont installés mais "
 "actuellement désactivés ne seront pas répertoriées pour une éventuelle "
 "suppression."
-
