@@ -171,7 +171,7 @@ That's it for our plugin code. Now we need to package it so that we can install 
 for ourself, the easiest way is to just name the file something like :file:`my_plugin.py`.  If there are multiple files, such as plugins that
 include additional settings screens, then the files should be saved in a directory such as :file:`my_plugin` with the main file named
 :file:`__init__.py`.  The directory is then archived into a :file:`my_plugin.zip` file, with the file name the same as the included directory name.
-The the contents of the archive would show as something like::
+The contents of the archive would show as something like::
 
    my_plugin/__init__.py
    my_plugin/another_file.py
