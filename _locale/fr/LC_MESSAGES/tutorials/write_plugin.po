@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
+# Bob Swift <bswift@rsds.ca>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 14:34-0600\n"
-"PO-Revision-Date: 2022-05-04 13:13-0600\n"
+"PO-Revision-Date: 2022-05-10 21:18+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/tutorialswrite_plugin/fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.12\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../tutorials/write_plugin.rst:4
@@ -242,7 +244,6 @@ msgid "The complete plugin code file looks something like:"
 msgstr "Le fichier de code complet du plugin ressemble à quelque chose comme:"
 
 #: ../../tutorials/write_plugin.rst:170
-#, fuzzy
 msgid ""
 "That's it for our plugin code. Now we need to package it so that we can "
 "install it into Picard.  If we're going to just use it locally for "
@@ -255,16 +256,16 @@ msgid ""
 "directory name. The contents of the archive would show as something "
 "like::"
 msgstr ""
-"C'est tout pour le code de notre plugin. Maintenant nous devons "
-"l'empaqueter afin de pouvoir l'installer dans Picard.  Si nous voulons "
-"juste l'utiliser localement pour nous-mêmes, le plus simple est de nommer"
-" le fichier comme :file:`my_plugin.py`.  S'il y a plusieurs fichiers, "
-"comme des plugins qui incluent des écrans de réglages supplémentaires, "
-"alors les fichiers doivent être enregistrés dans un répertoire tel que "
-":file:`my_plugin` avec le fichier principal nommé :file:`__init__.py`.  "
-"Le répertoire est ensuite archivé dans un fichier :file:`my_plugin.zip`, "
-"dont le nom de fichier est identique au nom du répertoire inclus. Le "
-"contenu de l'archive s'affiche comme suit::"
+"C'est tout pour le code de notre plugin. Maintenant nous devons l'empaqueter "
+"afin de pouvoir l'installer dans Picard.  Si nous voulons juste l'utiliser "
+"localement pour nous-mêmes, le plus simple est de nommer le fichier comme "
+":file:`my_plugin.py`.  S'il y a plusieurs fichiers, comme des plugins qui "
+"incluent des écrans de réglages supplémentaires, alors les fichiers doivent "
+"être enregistrés dans un répertoire tel que :file:`my_plugin` avec le "
+"fichier principal nommé :file:`__init__.py`.  Le répertoire est ensuite "
+"archivé dans un fichier :file:`my_plugin.zip`, dont le nom de fichier est "
+"identique au nom du répertoire inclus. Le contenu de l'archive s'afficherait "
+"comme suit::"
 
 #: ../../tutorials/write_plugin.rst:180
 msgid ""
@@ -338,4 +339,3 @@ msgstr ""
 #~ "``data_dump.txt`` qui sera stocké dans "
 #~ "le répertoire de sortie du nom du"
 #~ " fichier."
-
