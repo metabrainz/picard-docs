@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Écriture d’un Plugin &mdash; Documentation MusicBrainz Picard v2.8.0rc1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Écriture d’un Plugin &mdash; Documentation MusicBrainz Picard v2.8.0rc2</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.8.0rc1
+                v2.8.0rc2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -241,7 +241,7 @@
 <span class="n">register_track_metadata_processor</span><span class="p">(</span><span class="n">dump_track_info</span><span class="p">,</span> <span class="n">priority</span><span class="o">=</span><span class="n">PluginPriority</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>C’est tout pour le code de notre plugin. Maintenant nous devons l’empaqueter afin de pouvoir l’installer dans Picard.  Si nous voulons juste l’utiliser localement pour nous-mêmes, le plus simple est de nommer le fichier comme <code class="file docutils literal notranslate"><span class="pre">my_plugin.py</span></code>.  S’il y a plusieurs fichiers, comme des plugins qui incluent des écrans de réglages supplémentaires, alors les fichiers doivent être enregistrés dans un répertoire tel que <code class="file docutils literal notranslate"><span class="pre">my_plugin</span></code> avec le fichier principal nommé <code class="file docutils literal notranslate"><span class="pre">__init__.py</span></code>.  Le répertoire est ensuite archivé dans un fichier <code class="file docutils literal notranslate"><span class="pre">my_plugin.zip</span></code>, dont le nom de fichier est identique au nom du répertoire inclus. Le contenu de l’archive s’affiche comme suit:</p>
+<p>C’est tout pour le code de notre plugin. Maintenant nous devons l’empaqueter afin de pouvoir l’installer dans Picard.  Si nous voulons juste l’utiliser localement pour nous-mêmes, le plus simple est de nommer le fichier comme <code class="file docutils literal notranslate"><span class="pre">my_plugin.py</span></code>.  S’il y a plusieurs fichiers, comme des plugins qui incluent des écrans de réglages supplémentaires, alors les fichiers doivent être enregistrés dans un répertoire tel que <code class="file docutils literal notranslate"><span class="pre">my_plugin</span></code> avec le fichier principal nommé <code class="file docutils literal notranslate"><span class="pre">__init__.py</span></code>.  Le répertoire est ensuite archivé dans un fichier <code class="file docutils literal notranslate"><span class="pre">my_plugin.zip</span></code>, dont le nom de fichier est identique au nom du répertoire inclus. Le contenu de l’archive s’afficherait comme suit:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_plugin</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
 <span class="n">my_plugin</span><span class="o">/</span><span class="n">another_file</span><span class="o">.</span><span class="n">py</span>
 <span class="n">my_plugin</span><span class="o">/</span><span class="n">etc</span>
@@ -307,7 +307,7 @@
       <dl id="select_version">
         <dt>Sélectionner la version</dt>
       </dl>
-      <script>list_versions('fr', 'tutorials/write_plugin');</script>
+      <script>list_versions('fr', 'tutorials/write_plugin', 'stable',  'dernière');</script>
       <dl>
         <dt>Choisir la langue</dt>
         

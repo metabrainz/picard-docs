@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Writing a Plugin &mdash; MusicBrainz Picard v2.8.0rc1 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Writing a Plugin &mdash; MusicBrainz Picard v2.8.0rc2 documentation</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -29,7 +29,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.8.0rc1
+                v2.8.0rc2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -274,7 +274,7 @@ modify it.</p>
 for ourself, the easiest way is to just name the file something like <code class="file docutils literal notranslate"><span class="pre">my_plugin.py</span></code>.  If there are multiple files, such as plugins that
 include additional settings screens, then the files should be saved in a directory such as <code class="file docutils literal notranslate"><span class="pre">my_plugin</span></code> with the main file named
 <code class="file docutils literal notranslate"><span class="pre">__init__.py</span></code>.  The directory is then archived into a <code class="file docutils literal notranslate"><span class="pre">my_plugin.zip</span></code> file, with the file name the same as the included directory name.
-The the contents of the archive would show as something like:</p>
+The contents of the archive would show as something like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_plugin</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
 <span class="n">my_plugin</span><span class="o">/</span><span class="n">another_file</span><span class="o">.</span><span class="n">py</span>
 <span class="n">my_plugin</span><span class="o">/</span><span class="n">etc</span>
@@ -341,7 +341,7 @@ great idea into reality.</p>
       <dl id="select_version">
         <dt>Select Version</dt>
       </dl>
-      <script>list_versions('en', 'tutorials/write_plugin');</script>
+      <script>list_versions('en', 'tutorials/write_plugin', 'stable',  'latest');</script>
       <dl>
         <dt>Select Language</dt>
         

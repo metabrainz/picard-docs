@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maintenance &mdash; Documentation MusicBrainz Picard v2.8.0rc1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Maintenance &mdash; Documentation MusicBrainz Picard v2.8.0rc2</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.8.0rc1
+                v2.8.0rc2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -158,18 +158,9 @@
 <a class="reference internal image-reference" href="../_images/options-maintenance.png"><img alt="../_images/options-maintenance.png" src="../_images/options-maintenance.png" style="width: 100%;" /></a>
 <p><strong>Fichier de configuration</strong></p>
 <blockquote>
-<div><p>This displays the path and file name of the configuration INI file currently used by
-Picard. This file contains all of your settings and preferences, and the format of the
-file is consistent across operating systems.</p>
-<p>The <span class="guilabel">Save Backup</span> button allows you to create a backup copy of the current
-configuration file.  This can be used to easily copy the settings for use on a different
-computer, or to provide a snapshot for easy recovery in the event that the configuration
-becomes corrupted or you want to undo configuration changes.  It also allows you to have
-different configurations available without using profiles.</p>
-<p>The <span class="guilabel">Load Backup</span> button allows you to replace the current configuration file
-with a backup created earlier.  Loading a backup configuration file will replace all of
-the current configuration settings.  Prior to loading the file, Picard will automatically
-save a backup copy of the current file.</p>
+<div><p>Ceci affiche le chemin et le nom du fichier INI de configuration actuellement utilisé par Picard. Ce fichier contient tous vos paramètres et préférences, et le format du fichier est cohérent sur tous les systèmes d’exploitation.</p>
+<p>Le bouton <span class="guilabel">Sauvegarde</span> vous permet de créer une copie de sauvegarde du fichier de configuration actuel.  Cela peut être utilisé pour copier facilement les paramètres pour les utiliser sur un autre ordinateur, ou pour fournir un instantané pour une récupération facile dans le cas où la configuration devient corrompue ou si vous voulez annuler les changements de configuration.  Cela vous permet également de disposer de différentes configurations sans utiliser de profils.</p>
+<p>Le bouton <span class="guilabel">Sauvegarde de charge</span> vous permet de remplacer le fichier de configuration actuel par une sauvegarde créée précédemment.  Le chargement d’un fichier de configuration de sauvegarde remplacera tous les paramètres de la configuration actuelle.  Avant de charger le fichier, Picard enregistrera automatiquement une copie de sauvegarde du fichier actuel.</p>
 </div></blockquote>
 <p><strong>Nettoyage des fichiers de configuration</strong></p>
 <blockquote>
@@ -230,7 +221,7 @@ save a backup copy of the current file.</p>
       <dl id="select_version">
         <dt>Sélectionner la version</dt>
       </dl>
-      <script>list_versions('fr', 'config/options_maintenance');</script>
+      <script>list_versions('fr', 'config/options_maintenance', 'stable',  'dernière');</script>
       <dl>
         <dt>Choisir la langue</dt>
         

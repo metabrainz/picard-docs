@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ecriture d’un script de nommage de fichier &mdash; Documentation MusicBrainz Picard v2.8.0rc1</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Ecriture d’un script de nommage de fichier &mdash; Documentation MusicBrainz Picard v2.8.0rc2</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" /><link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.8.0rc1
+                v2.8.0rc2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -130,7 +130,7 @@
   <div class="section" id="writing-a-file-naming-script">
 <span id="tutorial-naming-script"></span><h1>Ecriture d’un <span class="target" id="index-1"></span>script de nommage de fichier<a class="headerlink" href="#writing-a-file-naming-script" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Ecrire un script pour organiser et nommer vos fichiers n’est en fait pas si difficile - ne vous laissez pas intimider par tous les “$”, “%” et les parenthèses. Si vous pouvez écrire un modèle comme « <strong>ARTISTE - (ANNÉE) NOM/PISTE DE L’ALBUM - TITRE DE LA CHANSON</strong> » de la façon dont vous voulez que les fichiers et dossiers soient nommés, vous pouvez facilement traduire cela dans le script approprié.</p>
-<p>Pour commencer, ouvrez d’abord le <a class="reference internal" href="../config/options_filerenaming_editor.html"><span class="doc">Nom de fichier Editeur de script</span></a>, soit en sélectionnant <span class="menuselection">« Options ‣ Ouvrir l’éditeur de script de nommage de fichier… »</span> dans la barre de menu principale de Picard ou en cliquant sur le :guilabel : bouton <cite>Modifier le script…</cite> sur la page de configuration <a class="reference internal" href="../config/options_filerenaming.html"><span class="doc">Options de nom de fichier</span></a>. À partir de cet écran, vous pouvez démarrer un nouveau script pour votre travail.</p>
+<p>Pour commencer, ouvrez d’abord le <a class="reference internal" href="../config/options_filerenaming_editor.html"><span class="doc">Nom de fichier Editeur de script</span></a>, soit en sélectionnant <span class="menuselection">« Options ‣ Ouvrir l’éditeur de script de nommage de fichier… »</span> dans la barre de menu principale de Picard ou en cliquant sur le :guilabel: bouton <cite>Modifier le script…</cite> sur la page de configuration <a class="reference internal" href="../config/options_filerenaming.html"><span class="doc">Options de nom de fichier</span></a>. À partir de cet écran, vous pouvez démarrer un nouveau script pour votre travail.</p>
 <p>Notez que l’utilisation d’un “/” dans la chaîne de formatage sépare le répertoire de sortie du nom de fichier. La chaîne de mise en forme peut contenir n’importe quel nombre de caractères “/”. Tout ce qui précède le dernier “/” est l’emplacement du répertoire, et tout ce qui se trouve après le dernier “/” devient le nom du fichier. Dans notre exemple, nous n’avons qu’un seul caractère “/”, ce qui signifie que nous aurons un niveau de répertoire pour l’album qui contiendra les chansons de cet album.</p>
 <p>Voyons d’abord ce dont nous avons besoin. Vous voyez une liste des balises disponibles dans la section <a class="reference internal" href="../variables/tags_basic.html"><span class="doc">Balises de base</span></a>. Nous voulons le nom <strong>ARTISTE</strong>, donc les balises disponibles pour cela pourraient être <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> ou <code class="docutils literal notranslate"><span class="pre">artist</span></code>. Cela devrait être le nom d’un dossier d’album, donc <code class="docutils literal notranslate"><span class="pre">albumartist</span></code> ressemble à ce dont nous avons besoin. Pour obtenir la valeur réelle d’une balise, vous devez mettre son nom entre des signes de pourcentage. Alors commençons:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="n">%albumartist%</span>
@@ -224,7 +224,7 @@
       <dl id="select_version">
         <dt>Sélectionner la version</dt>
       </dl>
-      <script>list_versions('fr', 'tutorials/naming_script');</script>
+      <script>list_versions('fr', 'tutorials/naming_script', 'stable',  'dernière');</script>
       <dl>
         <dt>Choisir la langue</dt>
         
