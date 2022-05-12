@@ -20,7 +20,7 @@ show you a list of filenames and an input field at the top where you can enter a
 
 The matching pattern can consist of Picard tag names enclosed in ``%`` signs and other characters
 that are matched verbatim.  For the tag names you can use predefined names such as ``%artist%``,
-``%album%``, or ``%title%`` (see :doc:`../variables/variables`) or use custom names.  There are a
+``%album%``, or ``%title%`` (see :doc:`/variables/variables`) or use custom names.  There are a
 few predefined patterns available to select from, but you can also adjust them or set your own.
 
 If your files for example consist of a track number and track title separated by a space
@@ -64,7 +64,7 @@ Sometimes you don't want to include parts of the file name in your tags and just
 The pattern must always match the entire file name, though.  In this case you can use a hidden
 variable for the parts of the file name you do not want to match to an actual tag.  Hidden variables
 start with an underscore like :samp:`%_dummy%`.  This variable will still be available on the file
-for :doc:`../extending/scripting`, but will not get written to the actual file tags on saving.
+for :doc:`/extending/scripting`, but will not get written to the actual file tags on saving.
 
 One example might be if you want to extract only the track number from a file name like
 :file:`04 Are You Ready for the Country_.mp3`.  Maybe the track number tag is missing in the file,

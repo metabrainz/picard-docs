@@ -20,7 +20,7 @@ As of Picard v2.7 you can also import a new script from a file, or export an exi
 Files can be stored as either a plain-text script or a Picard Tagging Script Package stored in YAML format.
 
 The script editor automatically highlights the elements of the script, including
-:doc:`function names <../functions/list_by_type>` and :doc:`tag and variable names <../variables/variables>`.
+:doc:`function names </functions/list_by_type>` and :doc:`tag and variable names </variables/variables>`.
 Hovering your mouse pointer over one of the highlighted entries will display help information about the
 entry if available.
 
@@ -38,5 +38,5 @@ a cluster is selected in the middle pane or a release is selected in the right-h
 will be executed for each track in the selected cluster or release.  If only a single track or file
 is selected, then the script will only be executed for that track or file.
 
-For additional information about scripting please see the ":doc:`Scripts <../extending/scripts>`"
-and ":doc:`Scripting <../extending/scripting>`" sections, as well as ":doc:`Tags & Variables <../variables/variables>`".
+For additional information about scripting please see the ":doc:`Scripts </extending/scripts>`"
+and ":doc:`Scripting </extending/scripting>`" sections, as well as ":doc:`Tags & Variables </variables/variables>`".

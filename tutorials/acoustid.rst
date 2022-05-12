@@ -30,7 +30,7 @@ What Picard does is as follows:
 
 If there was no AcoustID found you can use the :menuselection:`"Submit"` button in Picard to submit the fingerprints to the AcoustID server once you have
 matched the files to the proper recordings. If there is no AcoustID already existing for a fingerprint, the server will generate a new AcoustID (which can take
-some time). It will also link the AcoustID to the MusicBrainz recording identified by the submitted metadata.  Please see the :doc:`../usage/submit_acoustid`
+some time). It will also link the AcoustID to the MusicBrainz recording identified by the submitted metadata.  Please see the :doc:`/usage/submit_acoustid`
 section for a detailed step-by-step procedure.
 
 You don't need the AcoustID fingerprinting software to manually generate new AcoustIDs. The difference is, that the fingerprinting software is meant to be run

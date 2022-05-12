@@ -24,21 +24,21 @@ most in a single batch).  Picard will try to group them into clusters based on t
 
    Select the files in the left-hand pane and scan them using the :menuselection:`"Tools --> Scan"` command.
    Picard will attempt to calculate the AcoustID fingerprint for each of the files and then retrieve releases
-   with matching recordings.  See the :doc:`../usage/retrieve_scan` section for details.
+   with matching recordings.  See the :doc:`/usage/retrieve_scan` section for details.
 
 **3. Match the files to the tracks on the release**
 
    Drag the files from the left-hand pane and drop them on the release in the right-hand pane.  Check that each
    track on the release is associated with only one file.  The release icon will likely remain silver, indicating
-   that not all tracks have been matched to files.  See the :doc:`../usage/match` section for details.
+   that not all tracks have been matched to files.  See the :doc:`/usage/match` section for details.
 
 
 **4. Verify the metadata and cover art**
 
    Check that the metadata and cover art image for the release and tracks are what you want.  Adjust if required.
-   See the :doc:`../usage/coverart` section for details.
+   See the :doc:`/usage/coverart` section for details.
 
 
 **5. Save the files**
 
-   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`../usage/save` section for details.
+   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`/usage/save` section for details.

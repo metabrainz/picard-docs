@@ -37,4 +37,4 @@ during processing.
 
 .. seealso::
 
-   Please see the :doc:`../usage/option_profiles` section for a detailed explanation of the profile system.
+   Please see the :doc:`/usage/option_profiles` section for a detailed explanation of the profile system.

@@ -19,7 +19,7 @@ up the release.
 **2. Lookup the CD on MusicBrainz**
 
    With the CD in the drive, it can be looked up automatically using the :menuselection:`"Tools --> Lookup CD"` command.
-   See the :doc:`../usage/retrieve_lookup_cd` section for detailed instructions.
+   See the :doc:`/usage/retrieve_lookup_cd` section for detailed instructions.
 
 
 **3. Select the correct release**
@@ -43,18 +43,18 @@ up the release.
 
    Drag the files from the left-hand pane and drop them on the release in the right-hand pane.  Check that each
    track on the release is associated with only one file.  The release icon should turn gold.  See the
-   :doc:`../usage/match` section for details.
+   :doc:`/usage/match` section for details.
 
 
 **6. Verify the metadata and cover art**
 
    Check that the metadata and cover art image for the release and tracks are what you want.  Adjust if required.
-   See the :doc:`../usage/coverart` section for details.
+   See the :doc:`/usage/coverart` section for details.
 
 
 **7. Save the files**
 
-   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`../usage/save` section for details.
+   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`/usage/save` section for details.
 
 
 **8. Calculate and submit AcoustID fingerprints**

@@ -22,7 +22,7 @@ There are two typical scenarios where files are not being saved:
 
     That means that this is just the track data from MusicBrainz, but no file has been associated with it. In that case the
     save button is disabled.  Check to make sure that the files are properly matched to the tracks before trying to save
-    again.  Please see the :doc:`../usage/match` and :doc:`../usage/save` sections for more information.
+    again.  Please see the :doc:`/usage/match` and :doc:`/usage/save` sections for more information.
 
 A third possibility, although very rare, is that you are trying to set a tag with an invalid key.  If the two solutions above
 don't resolve your problem, try reviewing all of the tags to be written to see if there are any that don't appear to be valid.

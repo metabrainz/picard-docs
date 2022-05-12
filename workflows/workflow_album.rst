@@ -16,7 +16,7 @@ album at a time.
 
    Select the files in the left-hand pane and combine them into an album cluster using the :menuselection:`"Tools
    --> Cluster"` command.  Select the cluster in the left-hand pane and initiate the lookup using the
-   :menuselection:`"Tools --> Lookup"` command.  See the :doc:`../usage/retrieve_lookup` section for details.
+   :menuselection:`"Tools --> Lookup"` command.  See the :doc:`/usage/retrieve_lookup` section for details.
 
 
 **3. Select the correct release**
@@ -31,18 +31,18 @@ album at a time.
 
    Drag the files from the left-hand pane and drop them on the release in the right-hand pane.  Check that each
    track on the release is associated with only one file.  The release icon should turn gold.  See the
-   :doc:`../usage/match` section for details.
+   :doc:`/usage/match` section for details.
 
 
 **5. Verify the metadata and cover art**
 
    Check that the metadata and cover art image for the release and tracks are what you want.  Adjust if required.
-   See the :doc:`../usage/coverart` section for details.
+   See the :doc:`/usage/coverart` section for details.
 
 
 **6. Save the files**
 
-   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`../usage/save` section for details.
+   Save the files using the :menuselection:`"File --> Save"` command.  See the :doc:`/usage/save` section for details.
 
 
 **7. Calculate and submit AcoustID fingerprints**

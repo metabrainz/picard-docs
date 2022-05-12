@@ -76,7 +76,7 @@ settings on the right hand side.  This is where the majority of Picard's customi
       :width: 100 %
 
 In addition to the basic "user settings", this is also where option setting changes are made to individual option profiles.
-This is covered in greater detail in the :doc:`../usage/option_profiles` section.
+This is covered in greater detail in the :doc:`/usage/option_profiles` section.
 
 Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option
 settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted.

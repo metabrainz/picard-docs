@@ -47,7 +47,7 @@
       <dl id="select_version">
         <dt>{{ _('Select Version') }}</dt>
       </dl>
-      <script>list_versions('{{ language }}', '{{ pagename }}');</script>
+      <script>list_versions('{{ language }}', '{{ pagename }}', '{{ _("stable") }}',  '{{ _("latest") }}');</script>
       <dl>
         <dt>{{ _('Select Language') }}</dt>
         {% if supported_languages %}

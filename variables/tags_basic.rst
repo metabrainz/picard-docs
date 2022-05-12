@@ -36,7 +36,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 .. note::
 
    Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
-   <../appendices/tag_mapping>` section for details.
+   </appendices/tag_mapping>` section for details.
 
 **acoustid_fingerprint**
 

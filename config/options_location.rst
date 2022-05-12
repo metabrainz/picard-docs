@@ -24,8 +24,8 @@
 
 **Save cover images as separate files**
 
-   In the file name mask you can use any variable or function from :doc:`Picard Tags <../variables/variables>`
-   and :doc:`Picard Scripting Functions <../functions/list_by_type>`. The mask should not contain a file extension; this is
+   In the file name mask you can use any variable or function from :doc:`Picard Tags </variables/variables>`
+   and :doc:`Picard Scripting Functions </functions/list_by_type>`. The mask should not contain a file extension; this is
    added automatically based on the actual image type. The default value is "cover". If you change this to
    "folder", Windows will display the image as a preview of the containing directory.
 

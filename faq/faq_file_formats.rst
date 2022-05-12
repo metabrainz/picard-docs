@@ -49,14 +49,14 @@ and will take some time.
 Which tags can Picard write to my files?
 -------------------------------------------
 
-See the :doc:`../variables/variables` section for information on which MusicBrainz fields Picard writes to tags. `Picard Tag Mapping
+See the :doc:`/variables/variables` section for information on which MusicBrainz fields Picard writes to tags. `Picard Tag Mapping
 <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format.
 
 
 How do I edit tags in several files at once?
 --------------------------------------------
 
-1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`
+1. Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`.
 2. The metadata view at the bottom will show which tags are present in the selected files
    and whether they are the same across all files or different.
 3. If you edit any value in the "New values" column you will change this tag for all selected files.

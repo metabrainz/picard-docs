@@ -17,7 +17,7 @@ There are typically two reasons that Picard will run very slowly or appear to be
 
     If you are processing a large library of files, it is generally more effective to process smaller batches (e.g.: 200 files)
     at a time, first retrieving the information using a cluster and lookup process, and then processing any remaining unmatched
-    files using the scan process.  Please see the :doc:`../usage/retrieve` section for more information.
+    files using the scan process.  Please see the :doc:`/usage/retrieve` section for more information.
 
 **Processing files across a network connection**
 

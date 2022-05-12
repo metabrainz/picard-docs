@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
+"Project-Id-Version: MusicBrainz Picard v2.8.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 09:38-0600\n"
+"POT-Creation-Date: 2022-05-09 14:34-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "You have a great idea for extending Picard with a plugin but don't know w
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:10
-msgid "Picard plugins are written in Python, so that's the programming language you'll be using.  Please check the `INSTALL.md <https://github.com/metabrainz/picard/blob/master/INSTALL.md>`_ file in the Picard repository on GitHub to see the minimum version requirements. This is Python 3.6 as of the time this tutorial was written.  Also refer to the :doc:`Plugins API <../appendices/plugins_api>` for additional information, including the parameters passed to each of the function types."
+msgid "Picard plugins are written in Python, so that's the programming language you'll be using.  Please check the `INSTALL.md <https://github.com/metabrainz/picard/blob/master/INSTALL.md>`_ file in the Picard repository on GitHub to see the minimum version requirements. This is Python 3.6 as of the time this tutorial was written.  Also refer to the :doc:`Plugins API </appendices/plugins_api>` for additional information, including the parameters passed to each of the function types."
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:16
@@ -57,7 +57,7 @@ msgid "We also include error checking to write an entry to the Picard log in the
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:85
-msgid "Now we include the functions to be called when releases and tracks are retrieved by Picard. The release function hook provides three arguments, and the track function hook provides four arguments. The argument types are described in the :doc:`Plugins API <../appendices/plugins_api>` section. The first argument, ``album``, is an object that holds information about the selected album. See the ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file in Picard's source code for more information."
+msgid "Now we include the functions to be called when releases and tracks are retrieved by Picard. The release function hook provides three arguments, and the track function hook provides four arguments. The argument types are described in the :doc:`Plugins API </appendices/plugins_api>` section. The first argument, ``album``, is an object that holds information about the selected album. See the ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file in Picard's source code for more information."
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:91
@@ -65,7 +65,7 @@ msgid "The second argument, ``metadata``, is an object that holds the tags and v
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:96
-msgid "The ``track`` and ``release`` arguments are Python dictionaries containing the information provided in response to Picard's calls to the MusicBrainz API. The information may differ, depending on the user's :doc:`../config/options_metadata` settings for things like \"*Use release relationships*\" or \"*Use track relationships*\"."
+msgid "The ``track`` and ``release`` arguments are Python dictionaries containing the information provided in response to Picard's calls to the MusicBrainz API. The information may differ, depending on the user's :doc:`/config/options_metadata` settings for things like \"*Use release relationships*\" or \"*Use track relationships*\"."
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:111
@@ -77,7 +77,7 @@ msgid "The complete plugin code file looks something like:"
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:170
-msgid "That's it for our plugin code. Now we need to package it so that we can install it into Picard.  If we're going to just use it locally for ourself, the easiest way is to just name the file something like :file:`my_plugin.py`.  If there are multiple files, such as plugins that include additional settings screens, then the files should be saved in a directory such as :file:`my_plugin` with the main file named :file:`__init__.py`.  The directory is then archived into a :file:`my_plugin.zip` file, with the file name the same as the included directory name. The the contents of the archive would show as something like::"
+msgid "That's it for our plugin code. Now we need to package it so that we can install it into Picard.  If we're going to just use it locally for ourself, the easiest way is to just name the file something like :file:`my_plugin.py`.  If there are multiple files, such as plugins that include additional settings screens, then the files should be saved in a directory such as :file:`my_plugin` with the main file named :file:`__init__.py`.  The directory is then archived into a :file:`my_plugin.zip` file, with the file name the same as the included directory name. The contents of the archive would show as something like::"
 msgstr ""
 
 #: ../../tutorials/write_plugin.rst:180

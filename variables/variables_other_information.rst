@@ -3,7 +3,7 @@
 :index:`Other Information <tags; writing>`
 ===========================================
 
-For technical details on how tags are written into files, see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section.
+For technical details on how tags are written into files, see the :doc:`Picard Tag Mapping </appendices/tag_mapping>` section.
 
 If you set variables that are not known to Picard, these will be saved as new tags in ID3, MP4, APEv2 and Vorbis based files.
 They will not be saved in ASF based files.
