@@ -187,3 +187,36 @@ can be used:
 This will keep any existing ``originalfilename`` tag.  But if this tag is not yet present
 the tag will be set to the current filename.  As this happens before the file is being saved
 the original name of the file before Picard modifies it can be preserved.
+
+
+Handle multiple release countries
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By default Picard will write a single ``releasecountry`` tag to the files.  If a release on MusicBrainz
+has multiple release countries the first release country is being used for the ``releasecountry`` tag.
+
+If preferred release countries are configured in :doc:`/config/options_releases` the first country
+from the preferred release countries that is also in the list of release events will be used.
+
+Scripting can be used to further customize the release country.  The variable ``%_releasecountries%``
+provides the complete list of release countries for a release.
+
+The following script will set ``releasecountry`` to “[International]” if there are 10 release
+countries or more:
+
+.. code-block:: taggerscript
+
+   $if($gte($lenmulti(%_releasecountries%),10),$set(releasecountry,[International]))
+
+To save the entire list instead of just a single country to this tag:
+
+.. code-block:: taggerscript
+
+   $setmulti(releasecountry,%_releasecountries%)
+
+The list of countries can also be limited to just a few entries.  The following example
+uses just the first 6 countries:
+
+.. code-block:: taggerscript
+
+   $setmulti(releasecountry,$slice(%_releasecountries%,0,6))
