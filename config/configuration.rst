@@ -84,7 +84,7 @@ Hovering your cursor over the highlighted option will identify which profile cur
 always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used
 during processing.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 
@@ -101,18 +101,39 @@ during processing.
       :doc:`options_scripting` /
       :doc:`options_advanced`
 
-.. toctree::
-   :hidden:
+.. only:: html and not epub
 
-   options_general.rst
-   options_profiles.rst
-   options_metadata.rst
-   options_tags.rst
-   options_cover.rst
-   options_filerenaming.rst
-   options_fingerprinting
-   options_cdlookup.rst
-   options_plugins.rst
-   options_interface.rst
-   options_scripting.rst
-   options_advanced.rst
+   .. toctree::
+      :hidden:
+
+      options_general.rst
+      options_profiles.rst
+      options_metadata.rst
+      options_tags.rst
+      options_cover.rst
+      options_filerenaming.rst
+      options_fingerprinting
+      options_cdlookup.rst
+      options_plugins.rst
+      options_interface.rst
+      options_scripting.rst
+      options_advanced.rst
+
+.. only:: latex or epub
+
+   .. toctree::
+      :hidden:
+
+      options_general
+      options_profiles
+      options_metadata
+      options_tags
+      options_cover
+      options_filerenaming
+      options_filerenaming_editor
+      options_fingerprinting
+      options_cdlookup
+      options_plugins
+      options_interface
+      options_scripting
+      options_advanced

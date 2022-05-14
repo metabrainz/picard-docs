@@ -21,7 +21,7 @@ The scenarios covered include:
    This will help to ensure that Picard is properly configured (e.g.: settings, scripts, and plugins) and
    produces the expected and desired results.
 
-.. only:: latex
+.. only:: latex or epub
 
    .. toctree::
       :hidden:

@@ -102,6 +102,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    appendices/tag_mapping
    appendices/command_line
    appendices/keyboard_shortcuts
+   /functions/list_by_name
 
 ..   examples/examples
 

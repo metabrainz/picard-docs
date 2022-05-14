@@ -183,25 +183,39 @@ latex_domain_indices = True
 # -- Options for epub output ------------------------------------------
 
 epub_basename = base_filename
-
 epub_theme = 'epub'
 
+# Metadata included in the epub file.
+epub_title = '{0} User Guide ({1})'.format(project, major_minor,)
 epub_description = 'A User Guide for MusicBrainz Picard.'
-
-epub_author = 'Bob Swift'
-
+epub_author = 'Bob Swift (Editor)'
 epub_contributor = 'Members of the MusicBrainz Community'
-
+epub_publisher = 'MetaBrainz Foundation'
 epub_uid = 'MusicBrainzPicardUserGuide'
 
-# epub_cover = ('_static/epub_cover.png', 'epub-cover.html')
-# epub_cover = ('_static/epub_cover.png', '')
+epub_tocdepth = 3
+epub_tocscope = 'includehidden'
+
+epub_cover = ('_static/picard_logo_256.png', 'epub-cover.html')
+epub_guide = (('cover', 'epub-cover.xhtml', u'Cover Page'),)
 
 # epub_show_urls = 'inline'
-epub_show_urls = 'footnote'
-# epub_show_urls = 'no'
+# epub_show_urls = 'footnote'
+epub_show_urls = 'no'
 
 epub_use_index = True
+
+epub_post_files = [
+    ('genindex.xhtml', 'INDEX'),
+]
+
+epub_exclude_files = [
+    '404.xhtml',
+    'index.xhtml',
+    'not_found.xhtml',
+    'pdf.xhtml',
+    os.path.join('examples', 'examples.xhtml'),
+]
 
 # -- Options for custom 404 page --------------------------------------
 

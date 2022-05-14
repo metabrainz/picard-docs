@@ -16,7 +16,7 @@
    If checked, Picard will not update the "Last Modified" date and time of your music files when it writes new tags to them.
 
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

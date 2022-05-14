@@ -2,16 +2,27 @@
 
 :orphan:
 
-Functions Listed Alphabetically
-===============================
+Appendix E: Scripting Functions Listed Alphabetically
+=====================================================
 
-The available scripting functions are:
+.. only:: not epub
 
-.. * :doc:`$if <func_if>`
-.. * :doc:`func_if`
+   The available scripting functions are:
 
-.. toctree::
-   :maxdepth: 0
-   :glob:
+   .. toctree::
+      :maxdepth: 0
+      :glob:
 
-   func_*
+      func_*
+
+.. only:: epub
+
+   The available scripting functions are described in detail on the following
+   pages. The functions are listed alphabetically.
+
+   .. toctree::
+      :maxdepth: 0
+      :glob:
+      :hidden:
+
+      func_*

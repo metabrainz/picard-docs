@@ -8,7 +8,7 @@
 
 **Configuration File**
 
-   This displays the path and file name of the configuration INI file currently used by
+   This displays the path and file name of the configuration file currently used by
    Picard. This file contains all of your settings and preferences, and the format of the
    file is consistent across operating systems.
 
@@ -26,9 +26,9 @@
 
 **Configuration File Cleanup**
 
-   Over the course of trying out plugins and such, the configuration INI file can become
+   Over the course of trying out plugins and such, the configuration file can become
    bloated with orphaned settings.  This section allows you to remove unused option settings
-   from the configuration INI file.
+   from the configuration file.
 
    Settings that are found in the configuration file that do not appear on any option
    settings page will be listed. If your configuration file does not contain any unused
