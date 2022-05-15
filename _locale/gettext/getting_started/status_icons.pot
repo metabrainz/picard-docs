@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.7.3\n"
+"Project-Id-Version: MusicBrainz Picard v2.8.0rc2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-14 10:50-0600\n"
+"POT-Creation-Date: 2022-05-15 11:21-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,12 +28,22 @@ msgstr ""
 msgid ":index:`Album / Release Icons <icons; album, icons; release>`"
 msgstr ""
 
+#: ../../getting_started/status_icons.rst:12
+#: ../../getting_started/status_icons.rst:12
+msgid "img-release"
+msgstr ""
+
 #: ../../getting_started/status_icons.rst:16
 msgid "|img-release|"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:0
 msgid "This icon indicates that the information for the release has been successfully retrieved from the MusicBrainz database.  Some, but not all, tracks may have been matched to files and the information has not been modified."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:21
+#: ../../getting_started/status_icons.rst:21
+msgid "img-release-modified"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:25
@@ -44,6 +54,11 @@ msgstr ""
 msgid "This icon indicates that some of the tracks have been matched and that the information for the release has been modified."
 msgstr ""
 
+#: ../../getting_started/status_icons.rst:30
+#: ../../getting_started/status_icons.rst:30
+msgid "img-release-matched"
+msgstr ""
+
 #: ../../getting_started/status_icons.rst:34
 msgid "|img-release-matched|"
 msgstr ""
@@ -52,12 +67,22 @@ msgstr ""
 msgid "This icon indicates that all of the tracks have been matched and that the information has not been modified."
 msgstr ""
 
+#: ../../getting_started/status_icons.rst:39
+#: ../../getting_started/status_icons.rst:39
+msgid "img-release-matched-modified"
+msgstr ""
+
 #: ../../getting_started/status_icons.rst:43
 msgid "|img-release-matched-modified|"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:0
 msgid "This icon indicates that all of the tracks have been matched and that the information for the release has been modified."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:48
+#: ../../getting_started/status_icons.rst:48
+msgid "img-release-error"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:52
@@ -72,12 +97,22 @@ msgstr ""
 msgid ":index:`Track Icons <icons; track>`"
 msgstr ""
 
+#: ../../getting_started/status_icons.rst:61
+#: ../../getting_started/status_icons.rst:61
+msgid "img-track-audio"
+msgstr ""
+
 #: ../../getting_started/status_icons.rst:65
 msgid "|img-track-audio|"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:0
 msgid "This icon indicates that the track is an audio track and that there is no single file currently matched.  This appears if there is no file matched, or if there are multiple files matched."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:70
+#: ../../getting_started/status_icons.rst:70
+msgid "img-track-video"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:74
@@ -88,12 +123,47 @@ msgstr ""
 msgid "This icon indicates that the track is a video track and that there is no file currently matched.  This appears if there is no file matched, or if there are multiple files matched."
 msgstr ""
 
+#: ../../getting_started/status_icons.rst:79
+#: ../../getting_started/status_icons.rst:79
+msgid "img-track-data"
+msgstr ""
+
 #: ../../getting_started/status_icons.rst:83
 msgid "|img-track-data|"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:0
 msgid "This icon indicates that the track is a data track and that there is no file currently matched.  This appears if there is no file matched, or if there are multiple files matched."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:88
+#: ../../getting_started/status_icons.rst:88
+msgid "img-match-50"
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:92
+#: ../../getting_started/status_icons.rst:92
+msgid "img-match-60"
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:96
+#: ../../getting_started/status_icons.rst:96
+msgid "img-match-70"
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:100
+#: ../../getting_started/status_icons.rst:100
+msgid "img-match-80"
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:104
+#: ../../getting_started/status_icons.rst:104
+msgid "img-match-90"
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:108
+#: ../../getting_started/status_icons.rst:108
+msgid "img-match-100"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:112
@@ -104,12 +174,22 @@ msgstr ""
 msgid "These icons indicates the quality of match between the information from the file and the information for the track as provided from the MusicBrainz database.  Red indicates a poor match, progressing to all green which indicates a very good match."
 msgstr ""
 
+#: ../../getting_started/status_icons.rst:117
+#: ../../getting_started/status_icons.rst:117
+msgid "img-track-saved"
+msgstr ""
+
 #: ../../getting_started/status_icons.rst:121
 msgid "|img-track-saved|"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:0
 msgid "This icon indicates that the track has been saved successfully."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:126
+#: ../../getting_started/status_icons.rst:126
+msgid "img-error-no-access"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:130
@@ -120,12 +200,22 @@ msgstr ""
 msgid "This icon indicates that Picard encountered a permission error while trying to load or save the file.  This is typically due to the file being marked as read-only, or you do not have sufficient permission to read the file or save the file in the specified directory."
 msgstr ""
 
+#: ../../getting_started/status_icons.rst:135
+#: ../../getting_started/status_icons.rst:135
+msgid "img-error-not-found"
+msgstr ""
+
 #: ../../getting_started/status_icons.rst:139
 msgid "|img-error-not-found|"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:0
 msgid "This icon indicates that Picard could not find the file with the given path while trying to load or save the track.  This is typically due to the file being moved or deleted since it was loaded into Picard, but could also be due to a missing directory."
+msgstr ""
+
+#: ../../getting_started/status_icons.rst:144
+#: ../../getting_started/status_icons.rst:144
+msgid "img-dialog-error"
 msgstr ""
 
 #: ../../getting_started/status_icons.rst:148
