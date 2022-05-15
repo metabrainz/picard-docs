@@ -28,6 +28,8 @@ Other Picard Tasks
       You can submit a cluster as a release to the MusicBrainz database.  This functionality has
       long been available through a plugin, but has been included within Picard itself as of v2.7.
 
+.. only:: html and not epub
+
    .. seealso::
 
       Step-by-step detailed instructions:

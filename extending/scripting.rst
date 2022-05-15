@@ -53,7 +53,7 @@ string, or multi-value variables containing multiple text strings. In scripts, m
 variables are automatically converted to a single text string by joining the values with a
 semicolon ";", except when used with special multi-value functions.
 
-.. only:: html
+.. only:: html and not epub
 
    Scripting Functions
    -------------------

@@ -41,7 +41,7 @@
     retrieved from MusicBrainz is a tag listed in this ignore list then the file will be
     considered unmodified.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

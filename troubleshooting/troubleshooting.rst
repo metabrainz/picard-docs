@@ -52,7 +52,7 @@ Pasting this log into your forum post or bug ticket can help developers and othe
    Please remember to first remove any personal and confidential information like user id, passwords or authorization tokens
    before posting or submitting any log output.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

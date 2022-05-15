@@ -8,7 +8,7 @@ This section allows you to select which CD ROM device to use by default for look
 On Windows and Linux systems, you can override this setting by clicking on :menuselection:`"Tools -->
 Lookup CD..."` and selecting the desired device from the list of available devices.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

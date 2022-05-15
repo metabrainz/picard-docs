@@ -11,7 +11,7 @@
    You must enable :menuselection:`"Options --> Metadata --> Use release relationships"` for Picard to be able
    to download cover art from MusicBrainz cover art relationships.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

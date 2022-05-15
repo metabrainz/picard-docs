@@ -76,7 +76,7 @@
 
     This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 
