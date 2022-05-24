@@ -8,7 +8,7 @@
 
 This section allows for the management of user-defined tagging scripts.
 
-The "Tagger Script(s)" checkbox at the top of the page allows you to completely disable all
+The "Enable Tagger Script(s)" checkbox at the top of the page allows you to completely disable all
 tagging scripts.  This can be useful when tracking down a problem with Picard's configuration.
 
 Below the checkbox are two columns showing the list of scripts in the left-hand column, with

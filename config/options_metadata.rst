@@ -97,7 +97,7 @@
 
    Choose how you want "Standalone recordings" to be grouped.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

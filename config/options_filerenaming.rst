@@ -123,13 +123,13 @@ These options determine how Picard handles files when they are saved with update
 
    Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 
       :doc:`options_filerenaming_editor`
 
-.. toctree::
-   :hidden:
+   .. toctree::
+      :hidden:
 
-   options_filerenaming_editor.rst
+      options_filerenaming_editor.rst

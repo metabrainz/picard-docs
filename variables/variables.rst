@@ -23,7 +23,7 @@ downloads page, then the tag is beta functionality which will be available in th
 release. A description of how to gain access to these beta versions for testing can be found on the
 `Picard downloads page <https://picard.musicbrainz.org/downloads/>`_ on the website.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

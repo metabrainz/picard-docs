@@ -12,7 +12,7 @@ program.
 
 Scripts are stored within the user settings, and are managed from the :menuselection:`"Options --> Options..."` menu.
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 

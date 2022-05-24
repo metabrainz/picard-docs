@@ -33,6 +33,9 @@ There are four stages to using Picard to process your audio files:
       first stage, based on the settings configured in the Options.  This may also include
       renaming the files and placing them in a different directory.
 
+
+.. only:: html and not epub
+
    .. seealso::
 
       Details:

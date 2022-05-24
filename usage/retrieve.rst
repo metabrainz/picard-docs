@@ -106,7 +106,7 @@ The second browser search method uses manually entered information as the search
    .. include:: retrieve_manual_steps.txt
 
 
-.. only:: html
+.. only:: html and not epub
 
    .. seealso::
 
@@ -116,6 +116,8 @@ The second browser search method uses manually entered information as the search
       :doc:`retrieve_scan` /
       :doc:`retrieve_browser` /
       :doc:`retrieve_manual`
+
+.. only:: html
 
    .. toctree::
       :hidden:
