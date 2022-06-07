@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.8</title>
+  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.8.1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -33,7 +33,7 @@
             <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
           </a>
               <div class="version">
-                v2.8
+                v2.8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -100,7 +100,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Annexe A: API des plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tag_mapping.html">Annexe B: Mappage de balises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="command_line.html">Annexe C : Options de ligne de commande</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_name.html">Annexe E : Fonctions de script classées par ordre alphabétique</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Références</span></p>
@@ -156,7 +156,7 @@
 <ul class="simple">
 <li><p><strong>PLUGIN_NAME</strong> doit être un nom court mais descriptif du plugin.</p></li>
 <li><p><strong>PLUGIN_DESCRIPTION</strong> doit être aussi simple que possible, tout en décrivant la fonction principale. Si votre plugin est destiné à Picard 2.7 ou plus, vous pouvez utiliser la syntaxe <a class="reference external" href="https://daringfireball.net/projects/markdown/">Markdown</a> pour formater le texte.  Si votre plugin cible des versions antérieures, vous pouvez à la place utiliser un simple formatage HTML. Veuillez limiter l’utilisation du HTML au formatage de base du texte (par exemple, <code class="docutils literal notranslate"><span class="pre">&lt;strong&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;em&gt;</span></code>), aux liens (<code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code>) et aux listes (<code class="docutils literal notranslate"><span class="pre">&lt;ul&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;ol&gt;</span></code>).</p></li>
-<li><p><strong>PLUGIN_VERSION</strong> doit être rempli avec la version de le Plug-in. Les versions de plug-in doivent être au format <code class="docutils literal notranslate"><span class="pre">x.y.z</span></code> (par exemple : « 1.0 » ou « 2.12.4 »). Il est recommandé d’utiliser <a class="reference external" href="https://semver.org/">Semantic Versioning</a>.</p></li>
+<li><p><strong>PLUGIN_VERSION</strong> doit être rempli avec la version de le Plug-in. Les versions de plug-in doivent être au format <code class="docutils literal notranslate"><span class="pre">x.y.z</span></code> (par exemple: « 1.0 » ou « 2.12.4 »). Il est recommandé d’utiliser <a class="reference external" href="https://semver.org/">Semantic Versioning</a>.</p></li>
 <li><p><strong>PLUGIN_API_VERSIONS</strong> doit être défini sur les versions de Picard avec lesquelles s’exécuter ce plugin. Les nouvelles versions de Picard prendront généralement en charge les anciennes versions de l’API de plug-in, mais en cas de modification, la prise en charge des anciennes versions de plug-in peut être abandonnée. Les versions disponibles pour Picard 2 sont « 2.0 », « 2.1 » et « 2.2 ».</p></li>
 <li><p><strong>PLUGIN_LICENSE</strong> doit être défini avec le nom de licence du plugin. Si possible, utilisez l’un des noms de licence de la <a class="reference external" href="https://spdx.org/licenses/">Liste des licences SPDX</a>, mais vous êtes invités à utiliser une autre licence si celle que vous avez choisie n’est pas disponible dans la liste.</p></li>
 <li><p><strong>PLUGIN_LICENSE_URL</strong> doit être défini sur une URL pointant vers le texte complet de la licence.</p></li>
