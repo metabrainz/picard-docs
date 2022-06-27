@@ -7,7 +7,7 @@ Picard can be started from the command line with the following arguments:
 
 .. code::
 
-   picard [-h] [-c CONFIG_FILE] [-d] [-N] [-P] [-v] [-V] [FILE [FILE ...]]
+   picard [-h] [-c CONFIG_FILE] [-d] [-N] [-P] [-v] [-V] [FILE_OR_URL [FILE_OR_URL ...]]
 
 where the options are:
 
@@ -17,7 +17,7 @@ where the options are:
 
 .. option:: -c CONFIG_FILE, --config-file CONFIG_FILE
 
-   location of the configuration file to use
+   location of the configuration file to use (implies ``--stand-alone-instance``)
 
 .. option:: -d, --debug
 
@@ -33,7 +33,11 @@ where the options are:
 
 .. option:: -P, --no-plugins
 
-   do not load any plugins
+   do not load any plugins (starts a stand-alone instance)
+   
+.. option:: -s, --stand-alone-instance
+                        
+   force Picard to create a new, stand-alone instance
 
 .. option:: -v, --version
 
@@ -43,9 +47,9 @@ where the options are:
 
    display the long version information and exit
 
-.. describe:: FILE
+.. describe:: FILE_OR_URL
 
-   the file or files to load
+   the file(s), URL(s) and MBID(s) to load
 
 .. raw:: latex
 
