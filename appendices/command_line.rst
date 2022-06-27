@@ -34,6 +34,10 @@ where the options are:
 .. option:: -P, --no-plugins
 
    do not load any plugins
+   
+.. option:: -s, --stand-alone-instance
+                        
+   force create new Picard instance
 
 .. option:: -v, --version
 
