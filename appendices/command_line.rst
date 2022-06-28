@@ -37,7 +37,7 @@ where the options are:
    
 .. option:: -s, --stand-alone-instance
                         
-   force create new Picard instance
+   force Picard to create a new, stand-alone instance
 
 .. option:: -v, --version
 
