@@ -33,6 +33,7 @@ Contributors include (in alphabetic surname order):
 - Akshat Tiwari
 - Philipp Wolfer
 - Shadab Zafar
+- skelly37
 
 .. note::
 
