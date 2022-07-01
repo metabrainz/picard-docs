@@ -28,12 +28,13 @@ Contributors include (in alphabetic surname order):
 - Akash Nagaraj
 - Frederik "Freso" S. Olesen
 - Theodore Fabian Rudy
+- skelly37
 - Sophist
 - Bob Swift
 - Akshat Tiwari
 - Philipp Wolfer
 - Shadab Zafar
-- skelly37
+
 
 .. note::
 
