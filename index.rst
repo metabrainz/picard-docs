@@ -36,6 +36,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :hidden:
 
    getting_started/download
+   getting_started/starting
    getting_started/screen_main
    getting_started/status_icons
    config/configuration

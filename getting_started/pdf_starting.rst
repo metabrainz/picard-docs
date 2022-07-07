@@ -10,5 +10,6 @@ including installation and some basic information about the user interface.
    :hidden:
 
    download
+   starting
    screen_main
    status_icons
