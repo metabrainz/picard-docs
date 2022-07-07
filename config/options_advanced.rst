@@ -27,6 +27,12 @@
     This specifies the number of seconds that a file can differ in length from the length in the
     MusicBrainz database and still be considered to be the same.  The default value is 2 seconds.
 
+**Maximum number of entities to return per MusicBrainz query**
+
+    This sets the maximum number of results returned for queries made to the MusicBrainz website.
+    The default value is 50 results. On Picard v2.8.1 and earlier, this value was fixed at a
+    maximum of 25 responses.
+
 **Ignore the following tracks when determining whether a release is complete**
 
     Missing tracks of the selected type (i.e.: video, pregap, data or silence) will be ignored when
