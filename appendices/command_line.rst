@@ -17,7 +17,7 @@ where the options are:
 
 .. option:: -c CONFIG_FILE, --config-file CONFIG_FILE
 
-   location of the configuration file to use
+   location of the configuration file to use (starts a stand-alone instance)
 
 .. option:: -d, --debug
 
@@ -33,7 +33,7 @@ where the options are:
 
 .. option:: -P, --no-plugins
 
-   do not load any plugins
+   do not load any plugins (starts a stand-alone instance)
    
 .. option:: -s, --stand-alone-instance
                         
