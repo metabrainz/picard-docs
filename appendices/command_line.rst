@@ -7,7 +7,7 @@ Picard can be started from the command line with the following arguments:
 
 .. code::
 
-   picard [-h] [-c CONFIG_FILE] [-d] [-N] [-P] [-v] [-V] [FILE [FILE ...]]
+   picard [-h] [-c CONFIG_FILE] [-d] [-N] [-P] [-v] [-V] [FILE_OR_URL [FILE_OR_URL ...]]
 
 where the options are:
 
@@ -47,9 +47,9 @@ where the options are:
 
    display the long version information and exit
 
-.. describe:: FILE
+.. describe:: FILE_OR_URL
 
-   the file or files to load
+   the file or files or URL or URLS to load (URLs and files can be passed together)
 
 .. raw:: latex
 
