@@ -17,7 +17,7 @@ where the options are:
 
 .. option:: -c CONFIG_FILE, --config-file CONFIG_FILE
 
-   location of the configuration file to use (starts a stand-alone instance)
+   location of the configuration file to use (implies ``--stand-alone-instance``)
 
 .. option:: -d, --debug
 
