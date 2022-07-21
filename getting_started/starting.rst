@@ -40,7 +40,9 @@ All instances started with the ``-h / --help``, ``-v / --version`` or ``-V / --l
 command line arguments will always output the requested product information and exit, regardless of
 whether or not another instance is running.
 
-Important note: If Picard's inter-process-communication file (named in the following way: $PICARD_NAME_v$PICARD_VERSION_pipe_file) gets removed, you will not be able to exit nicely and will have to force kill the Picard's instance. This might get handled better in some distant future but the user should not interact with the pipe file in any way.
+.. note::
+
+Picard's stand-alone mode is implemented via the use of an inter-process-communication (IPC) file, which will be named according to the following format: ``$PICARD_NAME_v$PICARD_VERSION_pipe_file``. If this IPC file is deleted, Picard will not exit cleanly and will have to be forcefully terminated. This may be handled better in the future, however it is strongly suggested that users do not manually interact with this file.
 
 .. raw:: latex
 
