@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.7\n"
+"Project-Id-Version: MusicBrainz Picard v2.8.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 08:10-0700\n"
+"POT-Creation-Date: 2022-07-07 08:26-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,21 +53,29 @@ msgid "This specifies the number of seconds that a file can differ in length fro
 msgstr ""
 
 #: ../../config/options_advanced.rst:30
-msgid "**Ignore the following tracks when determining whether a release is complete**"
+msgid "**Maximum number of entities to return per MusicBrainz query**"
 msgstr ""
 
 #: ../../config/options_advanced.rst:32
+msgid "This sets the maximum number of results returned for queries made to the MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and earlier, this value was fixed at a maximum of 25 responses."
+msgstr ""
+
+#: ../../config/options_advanced.rst:36
+msgid "**Ignore the following tracks when determining whether a release is complete**"
+msgstr ""
+
+#: ../../config/options_advanced.rst:38
 msgid "Missing tracks of the selected type (i.e.: video, pregap, data or silence) will be ignored when determining whether a release is considered to be complete. For example, if \"video\" is selected then a release with a bonus video will be marked as complete if it has all the audio tracks matched with a file even if the video file is missing."
 msgstr ""
 
-#: ../../config/options_advanced.rst:37
+#: ../../config/options_advanced.rst:43
 msgid "**Tags to ignore for comparison**"
 msgstr ""
 
-#: ../../config/options_advanced.rst:39
+#: ../../config/options_advanced.rst:45
 msgid "Tags in this list will not be considered when comparing the existing file metadata to the data retrieved from MusicBrainz. If the only difference between the file's metadata and the metadata retrieved from MusicBrainz is a tag listed in this ignore list then the file will be considered unmodified."
 msgstr ""
 
-#: ../../config/options_advanced.rst:48
+#: ../../config/options_advanced.rst:54
 msgid "Details: :doc:`options_network` / :doc:`options_matching` / :doc:`options_maintenance`"
 msgstr ""
