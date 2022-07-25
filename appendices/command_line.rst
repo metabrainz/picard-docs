@@ -49,7 +49,7 @@ where the options are:
 
 .. describe:: FILE_OR_URL
 
-   the file or files or URL or URLS to load (URLs and files can be passed together)
+   the file(s), URL(s) and MBID(s) to load
 
 .. raw:: latex
 
