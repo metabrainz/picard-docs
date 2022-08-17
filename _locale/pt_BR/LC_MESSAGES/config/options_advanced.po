@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2022-07-07 08:26-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: pt_BR\n"
@@ -69,12 +69,23 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_advanced.rst:30
+msgid "**Maximum number of entities to return per MusicBrainz query**"
+msgstr ""
+
+#: ../../config/options_advanced.rst:32
+msgid ""
+"This sets the maximum number of results returned for queries made to the "
+"MusicBrainz website. The default value is 50 results. On Picard v2.8.1 "
+"and earlier, this value was fixed at a maximum of 25 responses."
+msgstr ""
+
+#: ../../config/options_advanced.rst:36
 msgid ""
 "**Ignore the following tracks when determining whether a release is "
 "complete**"
 msgstr ""
 
-#: ../../config/options_advanced.rst:32
+#: ../../config/options_advanced.rst:38
 msgid ""
 "Missing tracks of the selected type (i.e.: video, pregap, data or "
 "silence) will be ignored when determining whether a release is considered"
@@ -83,11 +94,11 @@ msgid ""
 "tracks matched with a file even if the video file is missing."
 msgstr ""
 
-#: ../../config/options_advanced.rst:37
+#: ../../config/options_advanced.rst:43
 msgid "**Tags to ignore for comparison**"
 msgstr ""
 
-#: ../../config/options_advanced.rst:39
+#: ../../config/options_advanced.rst:45
 msgid ""
 "Tags in this list will not be considered when comparing the existing file"
 " metadata to the data retrieved from MusicBrainz. If the only difference "
@@ -96,7 +107,7 @@ msgid ""
 "unmodified."
 msgstr ""
 
-#: ../../config/options_advanced.rst:48
+#: ../../config/options_advanced.rst:54
 msgid ""
 "Details: :doc:`options_network` / :doc:`options_matching` / "
 ":doc:`options_maintenance`"
