@@ -20,13 +20,7 @@ version already running, Picard will start normally.  Additionally, Picard can b
 "stand-alone" mode, in which case it neither sends information to an already running instance
 nor accepts information from another instance.
 
-The following cases will always start Picard in stand-alone mode:
-
-- Instances started with command-line argument ``-s / --stand-alone`` always start as stand-alone.
-
-- Instances started with command-line arguments ``-c / --config-file`` and/or ``-P / --no-plugins`` always start as stand-alone.  This is because the arguments provided could result in changes to the configured processing.
-
-- Windows portable instances always start as stand-alone by virtue of them using a different configuration file location than the standard location used for a desktop version of the program.
+Instances started with command-line argument ``-s / --stand-alone`` always start as stand-alone.
 
 If there is already an instance running when another instance is started that doesn't result in a
 stand-alone instance, any of the command-line overrides ``-d / --debug``, ``-M / --no-player``
