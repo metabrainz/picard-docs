@@ -11,7 +11,7 @@ you can also specify files or directories to load into Picard for processing.  P
 :doc:`/appendices/command_line` for more details about the available options.
 
 As of version 3, Picard will try to only run a single instance of the program at a time.
-When the program is started, it checks to see if there is another instance of that version
+When the program is started, it checks to see if there is another instance of that version, configuration file and plugin startup status ``-P``
 already running.  If the same version is already running, any files or directories specified
 on the command line of the new instance will be passed to the already running instance for
 processing and the new duplicate instance will be shut down.  This allows batch processing
