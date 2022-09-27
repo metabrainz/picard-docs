@@ -15,7 +15,7 @@ documentation further will be most appreciated.  Even if you cannot improve the 
 if you can create or maintain translations into other languages, that would be of great benefit.
 
 If you notice an error in the documentation or have additional material to contribute, please
-create a `ticket <https://tickets.metabrainz.org/issues/?filter=12025>`_  under the Picard
+create a `ticket <https://tickets.metabrainz.org/issues/?jql=project+%3D+PICARD+AND+component+%3D+Documentation+AND+resolution+%3D+Unresolved>`_  under the Picard
 project (Documentation component).  `Pull Requests <https://github.com/metabrainz/picard-docs/pulls>`_
 to address outstanding issues are also appreciated.
 
