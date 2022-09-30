@@ -1,12 +1,21 @@
 .. MusicBrainz Picard Documentation Project
 
-:index:`When the ripper log file is available <workflows; EAC log, workflows; XLD log, EAC; lookup log, XLD; lookup log>`
-=========================================================================================================================
+.. index::
+   single: workflows; ripper log
+   single: lookup; ripper log
+   single: EAC; lookup log
+   single: XLD; lookup log
+   single: Whipper; lookup log
+   single: fre:ac; lookup log
+
+When the ripper log file is available
+=====================================
 
 This option was added to Picard in version 2.8, and supports the use of log files produced by the popular CD
 file rippers `Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows,
-`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS, and
-`Whipper <https://github.com/whipper-team/whipper>`_ for Linux.  Because the log files of these
+`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS,
+`Whipper <https://github.com/whipper-team/whipper>`_ for Linux, and
+`fre:ac <https://www.freac.org>`_ for multiple platforms.  Because the log files of these
 rippers contain sufficient information to generate the CD table of contents they can be used in place of reading
 the CD. As with reading the CD itself, this method provides the greatest chance of tagging your music files with
 the most accurate match from the MusicBrainz database.  It is also one of the easier methods for looking up the
@@ -15,7 +24,7 @@ release.
 **1. Lookup the CD on MusicBrainz**
 
    Use the ripper log file to look up the release automatically by selecting the
-   :menuselection:`"Tools --> Lookup CD --> From EAC / XLD / Whipper log file..."` command. This will open a
+   :menuselection:`"Tools --> Lookup CD --> EAC / XLD / Whipper / fre:ac log files..."` command. This will open a
    file browser dialog to allow you to select the log file to process. See the :doc:`/usage/retrieve_lookup_cd`
    section for detailed instructions.
 
