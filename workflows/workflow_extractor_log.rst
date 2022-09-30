@@ -1,15 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
-.. index::
-   single: workflows; ripper log
-   single: lookup; ripper log
-   single: EAC; lookup log
-   single: XLD; lookup log
-   single: Whipper; lookup log
-   single: fre:ac; lookup log
-
-When the ripper log file is available
-=====================================
+:index:`When the ripper log file is available <workflows; ripper log, lookup; ripper log, EAC; lookup log, XLD; lookup log, Whipper; lookup log, fre:ac; lookup log>`
+=====================================================================================================================================================================
 
 This option was added to Picard in version 2.8, and supports the use of log files produced by the popular CD
 file rippers `Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows,
