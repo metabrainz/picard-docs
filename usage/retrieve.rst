@@ -14,15 +14,16 @@ There are basically four main methods used to retrieve album information from th
 
 .. only:: latex
 
-   Lookup CD
-   ---------
+   Lookup CD or Ripper Log
+   -----------------------
 
 .. only:: html
 
-   :doc:`Lookup CD <retrieve_lookup_cd>`
+   :doc:`Lookup CD or Ripper Log <retrieve_lookup_cd>`
 
 This is the preferred method of automatically identifying the album to retrieve, and
-should be used when you have the CD available.  Typically this would be used right after ripping the
+should be used when you have the CD or :ref:`supported ripper log <faq_supported_rippers>` available.
+Typically this would be used right after ripping the
 audio files from the CD.  When initiated, the table of contents (TOC) is read from the CD and a request
 is sent to MusicBrainz to return a list of the releases that match the TOC.  If there are any matches,
 then they will be listed for you to select the one to use.  If there are no matches or none of the
