@@ -40,7 +40,7 @@ These variables are populated from MusicBrainz data for most releases, without a
 
 **_multiartist**
 
-    0 if tracks on the album all have the same primary artist, 1 otherwise. (*since Picard 1.3*)
+    Set to 1 if not all of the tracks on the album have the same primary artist, otherwise empty. (*since Picard 1.3*)
 
 **_musicbrainz_discids**
 
