@@ -50,7 +50,7 @@ and will take some time.
 What rippers are supported for looking up from logs?
 ----------------------------------------------------
 
-As of version 2.8, Picard supports the use of log files produced by popular CD file rippers for looking up a release. Because the log
+As of version 2.9, Picard supports the use of log files produced by popular CD file rippers for looking up a release. Because the log
 files of these rippers contain sufficient information to generate the CD table of contents they can be used in place of reading
 the CD itself.  The supported rippers include:
 
