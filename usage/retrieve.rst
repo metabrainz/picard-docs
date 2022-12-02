@@ -1,6 +1,6 @@
 .. MusicBrainz Picard Documentation Project
 
-Retrieving Album information
+Retrieving Album Information
 ============================
 
 .. only:: latex
