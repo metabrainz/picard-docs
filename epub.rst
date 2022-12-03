@@ -32,6 +32,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    workflows/workflows
    usage/other
    usage/option_profiles
+   usage/command_processing
    extending/extending
    troubleshooting/pdf_troubleshooting
    faq/faq
