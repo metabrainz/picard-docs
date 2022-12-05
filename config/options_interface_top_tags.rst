@@ -18,3 +18,5 @@ in alphabetical order below the top tags.
    with changes will always be displayed first in the list, followed by the remaining top tags and other tags.
 
    .. image:: images/options-interface-top-tags-context.png
+      :width: 50%
+      :align: center
