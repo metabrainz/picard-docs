@@ -45,6 +45,21 @@ What formats will Picard support?
 Picard is intended to eventually support all formats (including fingerprinting), but this is a complex (arguably never-ending) process,
 and will take some time.
 
+.. _faq_supported_rippers:
+
+What rippers are supported for looking up from logs?
+----------------------------------------------------
+
+As of version 2.9, Picard supports the use of log files produced by popular CD file rippers for looking up a release. Because the log
+files of these rippers contain sufficient information to generate the CD table of contents they can be used in place of reading
+the CD itself.  The supported rippers include:
+
+- `dBpoweramp <https://dbpoweramp.com/>`_ for macOS and Windows
+- `Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows
+- `fre:ac <https://www.freac.org>`_ for Linux, macOS, Windows and others
+- `Whipper <https://github.com/whipper-team/whipper>`_ for Linux
+- `X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS
+
 
 Which tags can Picard write to my files?
 -------------------------------------------
