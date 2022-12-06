@@ -7,7 +7,7 @@ $min
 
 | Usage: **$min(type,x,...)**
 | Category: information
-| Implemented: Picard 3.0
+| Implemented: Picard 2.9
 
 **Description:**
 

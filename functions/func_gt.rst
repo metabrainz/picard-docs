@@ -19,7 +19,7 @@ the following order of preference: "int", "float" and "text".
 
 .. note::
 
-   The ``type`` argument was added in Picard v3.0.  Prior to that, if an argument
+   The ``type`` argument was added in Picard v2.9.  Prior to that, if an argument
    was missing or was not an integer, the function would return an empty string.
 
 
