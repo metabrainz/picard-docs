@@ -72,20 +72,18 @@
     By default, Picard remembers the last directory used to load files. If you enable this option
     and provide a directory, Picard will always start in the directory provided.
 
-**Customize action toolbar**
-
-    This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.
-
 .. only:: html and not epub
 
    .. seealso::
 
       Details:
       :doc:`options_interface_colors` /
-      :doc:`options_interface_top_tags`
+      :doc:`options_interface_top_tags` /
+      :doc:`options_interface_toolbar`
 
 .. toctree::
    :hidden:
 
    options_interface_colors
    options_interface_top_tags
+   options_interface_toolbar

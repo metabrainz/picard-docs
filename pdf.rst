@@ -8,6 +8,7 @@ MusicBrainz Picard
 ==================
 
 .. toctree::
+   :includehidden:
 
    about_picard/introduction
    about_picard/contributing
