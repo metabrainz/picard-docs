@@ -64,9 +64,9 @@ span.guilabel {
 /* adds formatting for keyboard shortcuts */
 kbd.compound {
     white-space: nowrap;
-    border: none;
-    box-shadow: none;
-    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
 }
 
 kbd:not(.compound) {
