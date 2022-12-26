@@ -77,7 +77,7 @@ Why is saving files sometimes slow, but saving a second time much faster?
 -------------------------------------------------------------------------
 
 In most file formats the tags are near the beginning of the file, before the actual music data.  If changed
-tags get written to the file and the newly written tags take more space then before the entire file needs
+tags get written to the file and the newly written tags take more space than before the entire file needs
 to be rewritten. This is usually much slower than just rewriting part of the file containing the tags,
 especially for larger files and/or if the files are on a slow storage (e.g. a network share or slow external drive).
 
