@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-04 12:34-0600\n"
+"POT-Creation-Date: 2022-12-30 13:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: nl\n"
 "Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.1\n"
 
 #: ../../faq/faq_usage.rst:4
 msgid "Using Picard"
@@ -157,6 +157,32 @@ msgid ""
 "not have full access to all files and folders on your system.  By default"
 " Picard has access to your home folder.  You can additionally give it "
 "access to removable media by running the following command on a terminal:"
+msgstr ""
+
+#: ../../faq/faq_usage.rst:84
+msgid ""
+"On Windows, how do I solve errors on saving to cloud storage drives "
+"mounted with rclone?"
+msgstr ""
+
+#: ../../faq/faq_usage.rst:86
+msgid ""
+"rclone can provide access to cloud storage by mounting a virtual "
+"filesystem as a drive.  This virtual filesystem has some differences to a"
+" real filesystem which can cause compatibility issues."
+msgstr ""
+
+#: ../../faq/faq_usage.rst:89
+msgid ""
+"For full compatibility with Picard you need to mount the cloud storage "
+"with rclone as a network drive with the ``--network-mode`` parameter and "
+"set the cache mode to ``--vfs-cache-mode=writes`` or ``--vfs-cache-"
+"mode=full``.  Your rclone command to mount a remote as drive X: might "
+"look like this:"
+msgstr ""
+
+#: ../../faq/faq_usage.rst:98
+msgid "Please refer to the rclone documentation for more details."
 msgstr ""
 
 #~ msgid ""
