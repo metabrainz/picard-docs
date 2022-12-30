@@ -87,8 +87,8 @@ rclone can provide access to cloud storage by mounting a virtual filesystem as a
 virtual filesystem has some differences to a real filesystem which can cause compatibility issues.
 
 For full compatibility with Picard you need to mount the cloud storage with rclone as a network
-drive with the `--network-mode` parameter and set the cache mode to `--vfs-cache-mode=writes`
-or `--vfs-cache-mode=full`.  Your rclone command to mount a remote as drive X:
+drive with the ``--network-mode`` parameter and set the cache mode to ``--vfs-cache-mode=writes``
+or ``--vfs-cache-mode=full``.  Your rclone command to mount a remote as drive X:
 might look like this:
 
 .. code-block:: batch
