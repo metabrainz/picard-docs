@@ -73,6 +73,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#i-m-using-macos-where-are-my-network-folders-or-drives">I’m using macOS, where are my network folders or drives?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#macos-shows-the-app-is-damaged-how-can-i-run-picard">macOS shows the app is damaged. How can I run Picard?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#picard-is-installed-on-linux-as-a-snap-how-can-i-access-removable-media">Picard is installed on Linux as a Snap, how can I access removable media?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#on-windows-how-do-i-solve-errors-on-saving-to-cloud-storage-drives-mounted-with-rclone">On Windows, how do I solve errors on saving to cloud storage drives mounted with rclone?</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="faq_file_formats.html">File Formats</a></li>
@@ -211,6 +212,19 @@ removable media by running the following command on a terminal:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snap connect picard:removable-media
 </pre></div>
 </div>
+</div>
+<div class="section" id="on-windows-how-do-i-solve-errors-on-saving-to-cloud-storage-drives-mounted-with-rclone">
+<h2>On Windows, how do I solve errors on saving to cloud storage drives mounted with rclone?<a class="headerlink" href="#on-windows-how-do-i-solve-errors-on-saving-to-cloud-storage-drives-mounted-with-rclone" title="Permalink to this headline"></a></h2>
+<p>rclone can provide access to cloud storage by mounting a virtual filesystem as a drive.  This
+virtual filesystem has some differences to a real filesystem which can cause compatibility issues.</p>
+<p>For full compatibility with Picard you need to mount the cloud storage with rclone as a network
+drive with the <code class="docutils literal notranslate"><span class="pre">--network-mode</span></code> parameter and set the cache mode to <code class="docutils literal notranslate"><span class="pre">--vfs-cache-mode=writes</span></code>
+or <code class="docutils literal notranslate"><span class="pre">--vfs-cache-mode=full</span></code>.  Your rclone command to mount a remote as drive X:
+might look like this:</p>
+<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span>rclone mount --vfs-cache-mode=writes --network-mode remote:path/to/files X:
+</pre></div>
+</div>
+<p>Please refer to the rclone documentation for more details.</p>
 </div>
 </div>
 

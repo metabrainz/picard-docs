@@ -206,7 +206,10 @@
 </div>
 <div class="section" id="why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster">
 <h2>Pourquoi l’enregistrement des fichiers est-il parfois lent, mais l’enregistrement une deuxième fois beaucoup plus rapide ?<a class="headerlink" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster" title="Lien permanent vers ce titre"></a></h2>
-<p>Dans la plupart des formats de fichiers, les balises se trouvent au début du fichier, avant les données musicales proprement dites.  Si des balises modifiées sont écrites dans le fichier et que les balises nouvellement écrites prennent plus d’espace qu’auparavant, le fichier entier doit être réécrit. Cette opération est généralement beaucoup plus lente que la réécriture d’une partie du fichier contenant les balises, surtout pour les fichiers volumineux et/ou si les fichiers se trouvent sur un support de stockage lent (par exemple, un partage réseau ou un lecteur externe lent).</p>
+<p>In most file formats the tags are near the beginning of the file, before the actual music data.  If changed
+tags get written to the file and the newly written tags take more space than before the entire file needs
+to be rewritten. This is usually much slower than just rewriting part of the file containing the tags,
+especially for larger files and/or if the files are on a slow storage (e.g. a network share or slow external drive).</p>
 <p>Pour atténuer ce problème, la plupart des logiciels d’étiquetage (y compris Picard) laissent un espace libre (appelé « padding ») après les étiquettes et avant les données musicales proprement dites. Si les données nouvellement écrites ne sont qu’un peu plus grandes qu’avant, cet espace libre peut être utilisé au lieu de réécrire les fichiers entiers. De même, si les balises nouvellement écrites prennent moins de place qu’avant, cela ne fait qu’augmenter le padding, évitant ainsi de réécrire le fichier.</p>
 <p>Cela signifie que lorsque vous ajoutez de nombreuses balises aux fichiers (ou s’il n’y a pas ou peu de remplissage), la vitesse d’écriture est lente. Si vous n’effectuez que de petites modifications ou si vous supprimez et réintroduisez des balises, l’écriture est beaucoup plus rapide.</p>
 </div>
