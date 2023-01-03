@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executable Commands &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Prolonger Picard" href="../extending/extending.html" />
+    <link rel="prev" title="Command and Batch Processing" href="command_processing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.9alpha1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">À propos de Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contribuer au projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Remerciements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossaire des termes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Balises &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Fonctions de script</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utiliser Picard</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="using.html">Usage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">Autres tâches de Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_profiles.html">Profils d’options</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="command_processing.html">Command and Batch Processing</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Executable Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clear-logs">CLEAR_LOGS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cluster">CLUSTER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fingerprint">FINGERPRINT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#from-file">FROM_FILE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load">LOAD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup">LOOKUP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup-cd">LOOKUP_CD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pause">PAUSE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quit">QUIT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">REMOVE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-all">REMOVE_ALL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-empty">REMOVE_EMPTY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-saved">REMOVE_SAVED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-unclustered">REMOVE_UNCLUSTERED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#save-matched">SAVE_MATCHED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#save-modified">SAVE_MODIFIED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scan">SCAN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show">SHOW</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submit-fingerprints">SUBMIT_FINGERPRINTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#write-logs">WRITE_LOGS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recommandations générales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">When the ripper log file is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dépannage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">Dépannage général</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard ne démarre pas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">Il n’y a pas de pochette</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Les balises ne sont pas mises à jour ou enregistrées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Les fichiers ne sont pas enregistrés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard vient de cesser de travailler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS montre que l’application est endommagée</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Ecriture d’un script de nommage de fichier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_name.html">Annexe E : Fonctions de script classées par ordre alphabétique</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Références</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="command_processing.html">Command and Batch Processing</a></li>
+      <li class="breadcrumb-item active">Executable Commands</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="executable-commands">
+<h1><span class="target" id="index-0"></span>Executable Commands<a class="headerlink" href="#executable-commands" title="Lien permanent vers ce titre"></a></h1>
+<p>Picard can accept commands for processing by specifying them on the command line using
+the <code class="docutils literal notranslate"><span class="pre">-e</span></code> option or loading them from a text file. Commands are case-insensitive, and
+are processed sequentially in the order that they are received. The executable commands
+that Picard recognizes are:</p>
+<div class="section" id="clear-logs">
+<h2><span class="target" id="index-1"></span>CLEAR_LOGS<a class="headerlink" href="#clear-logs" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>CLEAR_LOGS</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Clear the Picard logs.</p>
+</div>
+<div class="section" id="cluster">
+<h2><span class="target" id="index-2"></span>CLUSTER<a class="headerlink" href="#cluster" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>CLUSTER</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Cluster all files in the cluster pane.</p>
+</div>
+<div class="section" id="fingerprint">
+<h2><span class="target" id="index-3"></span>FINGERPRINT<a class="headerlink" href="#fingerprint" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>FINGERPRINT</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Calculate acoustic fingerprints for all (matched) files in the album pane.</p>
+</div>
+<div class="section" id="from-file">
+<h2><span class="target" id="index-4"></span>FROM_FILE<a class="headerlink" href="#from-file" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>FROM_FILE &lt;file path&gt;</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Load commands from a file.  The file path can be either an absolute or relative
+path to a text file containing the commands to be executed. Each command to be
+processed must be on a separate line along with its arguments (if applicable). Blank
+lines and lines beginning with an octothorpe (#) are ignored. Command files can
+include other command files by specifying them with another <code class="docutils literal notranslate"><span class="pre">FROM_FILE</span></code> command.
+Circular references (by including a command file that is currently being processed)
+are ignored and will be logged as a warning.</p>
+</div>
+<div class="section" id="load">
+<h2><span class="target" id="index-5"></span>LOAD<a class="headerlink" href="#load" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>LOAD &lt;supported MBID/URL or path to a file/directory&gt;</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Load one or more files/directories/MBIDs/URLs to Picard. This is similar to including
+the file, directory path, URL or MBID on the command line.</p>
+<p>Files and directories are specified including the path (either absolute or relative)
+to the file or directory, and may include drive specifiers. They can also be specified
+using the <code class="docutils literal notranslate"><span class="pre">file://</span></code> prefix. URLs are specified by using either the <code class="docutils literal notranslate"><span class="pre">http://</span></code> or
+<code class="docutils literal notranslate"><span class="pre">https://</span></code> prefix. MBIDs are specified in the format <code class="docutils literal notranslate"><span class="pre">mbid://&lt;entity_type&gt;/&lt;mbid&gt;</span></code>
+where <code class="docutils literal notranslate"><span class="pre">&lt;entity_type&gt;</span></code> is one of « release », « artist » or « track » and <code class="docutils literal notranslate"><span class="pre">&lt;mbid&gt;</span></code> is the
+MusicBrainz Identifier of the entity.</p>
+<p>If a specified item contains a space, it must be enclosed in quotes such as
+<code class="docutils literal notranslate"><span class="pre">&quot;/home/user/music/my</span> <span class="pre">song.mp3&quot;</span></code>.</p>
+</div>
+<div class="section" id="lookup">
+<h2><span class="target" id="index-6"></span>LOOKUP<a class="headerlink" href="#lookup" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>LOOKUP [clustered|unclustered|all]</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Lookup files in the clustering pane. Options are clustered files, unclustered files or
+all files. If not specified, the command defaults to all files.</p>
+</div>
+<div class="section" id="lookup-cd">
+<h2><span class="target" id="index-7"></span>LOOKUP_CD<a class="headerlink" href="#lookup-cd" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>LOOKUP_CD [device/log file]</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Read CD from the selected drive or ripper log file, and looks it up on MusicBrainz. If
+no argument is specified, it defaults to the first (alphabetically) available disc drive.</p>
+</div>
+<div class="section" id="pause">
+<h2><span class="target" id="index-8"></span>PAUSE<a class="headerlink" href="#pause" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>PAUSE &lt;number of seconds to pause&gt;</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Pause executable command processing for the specified number of seconds.</p>
+</div>
+<div class="section" id="quit">
+<h2><span class="target" id="index-9"></span>QUIT<a class="headerlink" href="#quit" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>QUIT</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Exits the running instance of Picard. Once a <code class="docutils literal notranslate"><span class="pre">QUIT</span></code> command has been queued, Picard will
+not queue any further executable commands.</p>
+</div>
+<div class="section" id="remove">
+<h2><span class="target" id="index-10"></span>REMOVE<a class="headerlink" href="#remove" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>REMOVE &lt;path to one or more files&gt;</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Removes the specified file(s) from Picard. Does nothing if no arguments provided.</p>
+</div>
+<div class="section" id="remove-all">
+<h2><span class="target" id="index-11"></span>REMOVE_ALL<a class="headerlink" href="#remove-all" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>REMOVE_ALL</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Removes all files from Picard.</p>
+</div>
+<div class="section" id="remove-empty">
+<h2><span class="target" id="index-12"></span>REMOVE_EMPTY<a class="headerlink" href="#remove-empty" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>REMOVE_EMPTY</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Removes all empty clusters and albums.</p>
+</div>
+<div class="section" id="remove-saved">
+<h2><span class="target" id="index-13"></span>REMOVE_SAVED<a class="headerlink" href="#remove-saved" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>REMOVE_SAVED</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Removes all saved files from the album pane.</p>
+</div>
+<div class="section" id="remove-unclustered">
+<h2><span class="target" id="index-14"></span>REMOVE_UNCLUSTERED<a class="headerlink" href="#remove-unclustered" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>REMOVE_UNCLUSTERED</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Removes all unclustered files from the cluster pane.</p>
+</div>
+<div class="section" id="save-matched">
+<h2><span class="target" id="index-15"></span>SAVE_MATCHED<a class="headerlink" href="#save-matched" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>SAVE_MATCHED</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Saves all matched files from the album pane.</p>
+</div>
+<div class="section" id="save-modified">
+<h2><span class="target" id="index-16"></span>SAVE_MODIFIED<a class="headerlink" href="#save-modified" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>SAVE_MATCHED</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Saves all modified files from the album pane.</p>
+</div>
+<div class="section" id="scan">
+<h2><span class="target" id="index-17"></span>SCAN<a class="headerlink" href="#scan" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>SCAN</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Scans all files in the cluster pane.</p>
+</div>
+<div class="section" id="show">
+<h2><span class="target" id="index-18"></span>SHOW<a class="headerlink" href="#show" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>SHOW</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Make the running instance the currently active window.</p>
+</div>
+<div class="section" id="submit-fingerprints">
+<h2><span class="target" id="index-19"></span>SUBMIT_FINGERPRINTS<a class="headerlink" href="#submit-fingerprints" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>SUBMIT_FINGERPRINTS</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Submits outstanding acoustic fingerprints for all (matched) files in the album pane.</p>
+</div>
+<div class="section" id="write-logs">
+<h2><span class="target" id="index-20"></span>WRITE_LOGS<a class="headerlink" href="#write-logs" title="Lien permanent vers ce titre"></a></h2>
+<div class="line-block">
+<div class="line">Usage: <strong>WRITE_LOGS &lt;path to output file&gt;</strong></div>
+<div class="line">Implemented: Picard 2.9</div>
+</div>
+<p>Writes the Picard logs to the specified output file.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../extending/extending.html" class="btn btn-neutral float-right" title="Prolonger Picard" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="command_processing.html" class="btn btn-neutral float-left" title="Command and Batch Processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">Ce guide de l'utilisateur MusicBrainz Picard est sous licence CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Droits d'auteur This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Construit avec <a href="http://sphinx-doc.org/">Sphinx</a> en utilisant un <a href="https://github.com/rtfd/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      fr
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Sélectionner la version</dt>
+      </dl>
+      <script>list_versions('fr', 'usage/exec_commands', 'stable',  'dernière');</script>
+      <dl>
+        <dt>Choisir la langue</dt>
+        
+        
+        <dd><a href="../../en/usage/exec_commands.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/usage/exec_commands.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Téléchargements</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.9_[fr].pdf" target="_blank" class="__ptNoRemap">Fichier PDF</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.9_[fr].epub" target="_blank" class="__ptNoRemap">Fichier epub</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.9_HTML_[fr].zip" target="_blank" class="__ptNoRemap">Fichiers HTML</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Feuille de calcul carte des étiquettes</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

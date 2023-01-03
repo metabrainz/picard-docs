@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starting Picard &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/picard-icon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="/version_links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Main Screen" href="screen_main.html" />
+    <link rel="prev" title="Download &amp; Install Picard" href="download.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+          </a>
+              <div class="version">
+                v2.9alpha1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">About Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/contributing.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about_picard/glossary.html">Glossary of Terms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="download.html">Download &amp; Install Picard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="screen_main.html">Main Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="status_icons.html">Status Icons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variables/variables.html">Tags &amp; Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/scripting.html">Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_type.html">Scripting Functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using Picard</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/using.html">General Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Other Picard Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Option Profiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Extending Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Workflow Recommendations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">General Recommendations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">When the CD is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">When the ripper log file is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">When files are grouped by album</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">When files are not grouped but have some metadata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">When files are not grouped and have little or no existing metadata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/troubleshooting.html">General Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/does_not_start.html">Picard won’t start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/no_coverart.html">There is no coverart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/missing_tags.html">Tags are not updated or saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/not_saving.html">Files are not being saved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/stopped_working.html">Picard just stopped working</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/macos_startup_error.html">macOS shows the app is damaged</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/naming_script.html">Writing a File Naming Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Handling of multiple release countries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Appendix B: Tag Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Appendix C: Command Line Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Appendix D: Keyboard Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/list_by_name.html">Appendix E: Scripting Functions Listed Alphabetically</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MusicBrainz Picard</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Starting Picard</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="starting-picard">
+<h1><span class="target" id="index-0"></span>Starting Picard<a class="headerlink" href="#starting-picard" title="Permalink to this headline"></a></h1>
+<p>Once Picard has been installed on your system, most of the time you will be starting it by
+clicking an icon on your desktop or in a start menu.  This will run the program using the
+default location for the configuration file and configured logging level.  Picard can also
+be started from a command line prompt with some overrides available.  From the command line,
+you can also specify files or directories to load into Picard for processing.  Please see
+<a class="reference internal" href="../appendices/command_line.html"><span class="doc">Appendix C: Command Line Options</span></a> for more details about the available options.</p>
+<p>As of version 2.9, Picard will try to only run a single instance of the program at a time.
+When the program is started, it checks to see if there is another instance of that version,
+configuration file and plugin startup status <code class="docutils literal notranslate"><span class="pre">-P</span></code> already running.  If the same version
+is already running, any files or directories specified on the command line of the new
+instance, along with any executable commands specified with the <code class="docutils literal notranslate"><span class="pre">-e</span></code> or <code class="docutils literal notranslate"><span class="pre">-exec</span></code> options
+will be passed to the already running instance for processing and the new duplicate instance
+will be shut down.  This allows batch processing of files to be initiated automatically from
+other processes.  If there is no instance of that version already running, Picard will start
+normally.</p>
+<p>Additionally, Picard can be started in “stand-alone” mode, in which case it neither sends
+information to an already running instance nor accepts information from another instance.</p>
+<p>Instances started with command-line argument <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">/</span> <span class="pre">--stand-alone</span></code> always start as stand-alone.</p>
+<p>If there is already an instance running when another instance is started that doesn’t result in a
+stand-alone instance, any of the command-line overrides <code class="docutils literal notranslate"><span class="pre">-d</span> <span class="pre">/</span> <span class="pre">--debug</span></code>, <code class="docutils literal notranslate"><span class="pre">-M</span> <span class="pre">/</span> <span class="pre">--no-player</span></code>
+or <code class="docutils literal notranslate"><span class="pre">-N</span> <span class="pre">/</span> <span class="pre">-no-restore</span></code> of the new duplicate instance will be ignored, and only the specified
+files or directories and executable commands (if any) will be passed to the running instance for
+processing.  Similarly, if a primary instance has been started with any of these overrides
+specified on the command line, starting a subsequent instance of that version without the override
+will not modify the user interface settings of the currently running instance.</p>
+<p>All instances started with the <code class="docutils literal notranslate"><span class="pre">-h</span> <span class="pre">/</span> <span class="pre">--help</span></code>, <code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">/</span> <span class="pre">--version</span></code> or <code class="docutils literal notranslate"><span class="pre">-V</span> <span class="pre">/</span> <span class="pre">--long-version</span></code>
+command line arguments will always output the requested product information and exit, regardless of
+whether or not another instance is running.</p>
+<p>Please refer to the <a class="reference internal" href="../usage/command_processing.html"><span class="doc">Command and Batch Processing</span></a> section for more information.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="screen_main.html" class="btn btn-neutral float-right" title="Main Screen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="download.html" class="btn btn-neutral float-left" title="Download &amp; Install Picard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">This MusicBrainz Picard User Guide is licensed under CC0 1.0 <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <!-- <p>
+        
+        &copy; Copyright This documentation is licensed under CC0 1.0.
+
+    </p> -->
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Options</span>
+      en
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl id="select_version">
+        <dt>Select Version</dt>
+      </dl>
+      <script>list_versions('en', 'getting_started/starting', 'stable',  'latest');</script>
+      <dl>
+        <dt>Select Language</dt>
+        
+        
+        <dd><a href="../../en/getting_started/starting.html" class="__ptNoRemap">English</a></dd>
+        
+        <dd><a href="../../fr/getting_started/starting.html" class="__ptNoRemap">Français</a></dd>
+        
+        
+      </dl>
+
+      <dl>
+        <dt>Downloads</dt>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.9_[en].pdf" target="_blank" class="__ptNoRemap">PDF File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.9_[en].epub" target="_blank" class="__ptNoRemap">epub File</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_v2.9_HTML_[en].zip" target="_blank" class="__ptNoRemap">HTML Files</a></dd>
+        <dd><a href="/downloads/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank" class="__ptNoRemap">Tag Map Spreadsheet</a></dd>
+      </dl>
+
+    </div>
+  </div>
+<script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
