@@ -36,6 +36,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :hidden:
 
    getting_started/download
+   getting_started/starting
    getting_started/screen_main
    getting_started/status_icons
    config/configuration
@@ -50,6 +51,7 @@ plugins and tutorials are provided when available rather than trying to reproduc
    General Usage <usage/using>
    usage/other
    usage/option_profiles
+   usage/command_processing
    extending/extending
    faq/faq
 

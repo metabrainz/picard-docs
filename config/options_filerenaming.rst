@@ -78,30 +78,6 @@ These options determine how Picard handles files when they are saved with update
    Select this option to let Picard change the file and directory names of your files when it saves
    them, in order to make the file and directory names consistent with the new metadata.
 
-**Replace non-ASCII characters**
-
-   Select this option to replace non-ASCII characters with their ASCII equivalent (e.g.: 'á', 'ä' and 'ǎ'
-   with 'a'; 'é', 'ě' and 'ë' with 'e'; 'æ' with "ae"). More information regarding ASCII characters can be
-   found on `Wikipedia <https://en.wikipedia.org/wiki/ASCII>`_.
-
-**Windows compatibility**
-
-   This option tells Picard to replace all Windows-incompatible characters with an underscore. This is
-   enabled by default on Windows systems, with no option to disable.
-
-**Allow paths longer than 259 characters**
-
-   This option allows the user to disable the 259 character path limit Picard would usually enforce in Windows
-   compatibility mode when renaming and/or moving files. This is possible both on Windows and on other platforms
-   with Windows compatibility enabled.
-
-   .. warning::
-
-      Enabling long paths on Windows might cause files being saved with path names exceeding the 259 character
-      limit traditionally imposed by the Windows API. Some software might not be able to properly access those files.
-      In particular Windows Explorer cannot rename files with long path names or create new files inside folders if
-      the resulting path length would exceed the length limit.
-
 **Selected file naming script**
 
    As of Picard version 2.7, multiple file naming scripts are supported.  This option allows the user to select the
@@ -123,13 +99,22 @@ These options determine how Picard handles files when they are saved with update
 
    Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
 
+.. only:: latex
+
+   .. toctree::
+
+      options_filerenaming_editor
+      options_filerenaming_compat
+
 .. only:: html and not epub
 
    .. seealso::
 
-      :doc:`options_filerenaming_editor`
+      :doc:`options_filerenaming_editor` /
+      :doc:`options_filerenaming_compat`
 
    .. toctree::
       :hidden:
 
-      options_filerenaming_editor.rst
+      options_filerenaming_editor
+      options_filerenaming_compat

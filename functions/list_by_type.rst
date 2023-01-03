@@ -256,6 +256,8 @@ These functions provide additional system or data information. The information s
       func_datetime
       func_day
       func_matchedtracks
+      func_max
+      func_min
       func_month
       func_year
 
@@ -266,6 +268,8 @@ These functions provide additional system or data information. The information s
    | :doc:`func_datetime`
    | :doc:`func_day`
    | :doc:`func_matchedtracks`
+   | :doc:`func_max`
+   | :doc:`func_min`
    | :doc:`func_month`
    | :doc:`func_year`
 

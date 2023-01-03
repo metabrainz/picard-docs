@@ -1,6 +1,6 @@
 .. MusicBrainz Picard Documentation Project
 
-Lookup CD
-=========
+Lookup CD or Ripper Log
+=======================
 
 .. include:: retrieve_lookup_cd_steps.txt

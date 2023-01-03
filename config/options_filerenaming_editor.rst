@@ -90,12 +90,19 @@ The editor screen has the following sections:
    * Save all changes, also available via the :guilabel:`Make It So!` button.
    * Exit without saving changes, also available via the :guilabel:`Cancel` button.
 
+**Script Metadata**
+
+   .. image:: images/options-filenaming-editor-metadata.png
+      :width: 100 %
+
+   .. Force a blank line in html output
+   .. only:: html
+
+      |
+
    There is also an option to view/edit the metadata details for the current script. These details include such things as title,
    author, version, license, description, and date and time of the last update. It is recommended that the description include
    things such as any required plugins, settings, or tagging scripts.  This can also be triggered by double clicking the script
    title text box.
-
-   .. image:: images/options-filenaming-editor-metadata.png
-      :width: 100 %
 
    This information is saved in the Picard Naming Script Package file, and is included when a script package file is imported.
