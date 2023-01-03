@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.8.5\n"
+"Project-Id-Version: MusicBrainz Picard v2.9alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-30 13:41+0100\n"
+"POT-Creation-Date: 2023-01-03 15:29-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "$lt"
 msgstr ""
 
 #: ../../functions/func_lt.rst:8
-msgid "Usage: **$lt(x,y)**"
+msgid "Usage: **$lt(x,y[,type])**"
 msgstr ""
 
 #: ../../functions/func_lt.rst:9
@@ -33,13 +33,17 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_lt.rst:13
-msgid "Returns true if ``x`` is less than ``y``.  If an argument is missing or is not an integer, the function will return an empty string."
+msgid "Returns \"1\" (True) if ``x`` is less than ``y`` using the comparison specified in ``type``. Possible values of ``type`` are \"int\" (integer), \"float\" (floating point), \"text\" (case-sensitive text), \"nocase\" (case-insensitive text) and \"auto\" (automatically determine the type of arguments provided), with \"auto\" used as the default comparison method if ``type`` is not specified.  The \"auto\" type will use the first type that applies to both arguments in the following order of preference: \"int\", \"float\" and \"text\"."
 msgstr ""
 
-#: ../../functions/func_lt.rst:17
+#: ../../functions/func_lt.rst:22
+msgid "The ``type`` argument was added in Picard v2.9.  Prior to that, if an argument was missing or was not an integer, the function would return an empty string."
+msgstr ""
+
+#: ../../functions/func_lt.rst:26
 msgid "**Example:**"
 msgstr ""
 
-#: ../../functions/func_lt.rst:19
+#: ../../functions/func_lt.rst:28
 msgid "The following statements will return the values indicated:"
 msgstr ""

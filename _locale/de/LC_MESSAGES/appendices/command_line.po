@@ -1,20 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
-# This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-12 09:27-0600\n"
+"POT-Creation-Date: 2023-01-03 15:29-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
 "Language: de\n"
+"Language-Team: none\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../appendices/command_line.rst:4
 msgid "Appendix C: :index:`Command Line Options <pair: command line; options>`"
@@ -41,25 +44,56 @@ msgid "enable debug-level logging"
 msgstr ""
 
 #: ../../appendices/command_line.rst:28
-msgid "disable built-in media player"
+msgid ""
+"execute one or more COMMANDs at start-up (see :doc:`/usage/exec_commands`"
+" for more information)"
 msgstr ""
 
 #: ../../appendices/command_line.rst:32
-msgid "do not restore window positions or sizes"
+msgid "disable built-in media player"
 msgstr ""
 
 #: ../../appendices/command_line.rst:36
-msgid "do not load any plugins"
+msgid "do not restore window positions or sizes"
 msgstr ""
 
 #: ../../appendices/command_line.rst:40
-msgid "display the version information and exit"
+msgid "do not load any plugins"
 msgstr ""
 
 #: ../../appendices/command_line.rst:44
-msgid "display the long version information and exit"
+msgid "force Picard to create a new, stand-alone instance"
 msgstr ""
 
 #: ../../appendices/command_line.rst:48
-msgid "the file or files to load"
+msgid "display the version information and exit"
 msgstr ""
+
+#: ../../appendices/command_line.rst:52
+msgid "display the long version information and exit"
+msgstr ""
+
+#: ../../appendices/command_line.rst:56
+msgid "one or more files, directories, URLs and MBIDs to load"
+msgstr ""
+
+#: ../../appendices/command_line.rst:60
+msgid ""
+"Files and directories are specified including the path (either absolute "
+"or relative) to the file or directory, and may include drive specifiers. "
+"They can also be specified using the ``file://`` prefix. URLs are "
+"specified by using either the ``http://`` or ``https://`` prefix. MBIDs "
+"are specified in the format ``mbid://<entity_type>/<mbid>`` where "
+"``<entity_type>`` is one of \"release\", \"artist\" or \"track\" and "
+"``<mbid>`` is the MusicBrainz Identifier of the entity."
+msgstr ""
+
+#: ../../appendices/command_line.rst:66
+msgid ""
+"If a specified item contains a space, it must be enclosed in quotes such "
+"as ``\"/home/user/music/my song.mp3\"``."
+msgstr ""
+
+#~ msgid "the file or files to load"
+#~ msgstr ""
+

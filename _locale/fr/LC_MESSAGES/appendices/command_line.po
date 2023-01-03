@@ -8,30 +8,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-04 17:12+0200\n"
+"POT-Creation-Date: 2023-01-03 15:29-0700\n"
 "PO-Revision-Date: 2021-08-24 20:50+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/appendicescommand_line/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects"
+"/picard-docs/appendicescommand_line/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../appendices/command_line.rst:4
 msgid "Appendix C: :index:`Command Line Options <pair: command line; options>`"
 msgstr ""
-"Annexe C : :index:`Options de ligne de commande <pair: ligne de commande; "
-"options>`"
+"Annexe C : :index:`Options de ligne de commande <pair: ligne de commande;"
+" options>`"
 
 #: ../../appendices/command_line.rst:6
 msgid "Picard can be started from the command line with the following arguments:"
 msgstr ""
-"Picard peut être démarré à partir de la ligne de commande avec les arguments "
-"suivants :"
+"Picard peut être démarré à partir de la ligne de commande avec les "
+"arguments suivants :"
 
 #: ../../appendices/command_line.rst:12
 msgid "where the options are:"
@@ -50,28 +49,59 @@ msgid "enable debug-level logging"
 msgstr "active la journalisation au niveau du débogage"
 
 #: ../../appendices/command_line.rst:28
+msgid ""
+"execute one or more COMMANDs at start-up (see :doc:`/usage/exec_commands`"
+" for more information)"
+msgstr ""
+
+#: ../../appendices/command_line.rst:32
 msgid "disable built-in media player"
 msgstr "désactiver le lecteur multimédia intégré"
 
-#: ../../appendices/command_line.rst:32
+#: ../../appendices/command_line.rst:36
 msgid "do not restore window positions or sizes"
 msgstr "ne restaure pas la position ou la taille des fenêtres"
 
-#: ../../appendices/command_line.rst:36
+#: ../../appendices/command_line.rst:40
 msgid "do not load any plugins"
 msgstr "ne chargent aucun plug-in"
 
-#: ../../appendices/command_line.rst:40
+#: ../../appendices/command_line.rst:44
+msgid "force Picard to create a new, stand-alone instance"
+msgstr ""
+
+#: ../../appendices/command_line.rst:48
 msgid "display the version information and exit"
 msgstr "affiche les informations de version et quitte"
 
-#: ../../appendices/command_line.rst:44
+#: ../../appendices/command_line.rst:52
 msgid "display the long version information and exit"
 msgstr "affiche les informations de la version longue et quitte"
 
-#: ../../appendices/command_line.rst:48
-msgid "the file or files to load"
-msgstr "le ou les fichiers à charger"
+#: ../../appendices/command_line.rst:56
+msgid "one or more files, directories, URLs and MBIDs to load"
+msgstr ""
+
+#: ../../appendices/command_line.rst:60
+msgid ""
+"Files and directories are specified including the path (either absolute "
+"or relative) to the file or directory, and may include drive specifiers. "
+"They can also be specified using the ``file://`` prefix. URLs are "
+"specified by using either the ``http://`` or ``https://`` prefix. MBIDs "
+"are specified in the format ``mbid://<entity_type>/<mbid>`` where "
+"``<entity_type>`` is one of \"release\", \"artist\" or \"track\" and "
+"``<mbid>`` is the MusicBrainz Identifier of the entity."
+msgstr ""
+
+#: ../../appendices/command_line.rst:66
+msgid ""
+"If a specified item contains a space, it must be enclosed in quotes such "
+"as ``\"/home/user/music/my song.mp3\"``."
+msgstr ""
 
 #~ msgid "Appendix C: Command Line Options"
 #~ msgstr "Annexe 3: Options de ligne de commande"
+
+#~ msgid "the file or files to load"
+#~ msgstr "le ou les fichiers à charger"
+

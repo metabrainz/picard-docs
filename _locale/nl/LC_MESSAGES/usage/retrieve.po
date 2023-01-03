@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-02 13:48-0700\n"
+"POT-Creation-Date: 2023-01-03 15:29-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: nl\n"
@@ -39,29 +39,32 @@ msgid ""
 msgstr ""
 
 #: ../../usage/retrieve.rst:18
-msgid "Lookup CD"
+msgid "Lookup CD or Ripper Log"
 msgstr ""
 
 #: ../../usage/retrieve.rst:22
-msgid ":doc:`Lookup CD <retrieve_lookup_cd>`"
+msgid ":doc:`Lookup CD or Ripper Log <retrieve_lookup_cd>`"
 msgstr ""
 
 #: ../../usage/retrieve.rst:24
 msgid ""
 "This is the preferred method of automatically identifying the album to "
-"retrieve, and should be used when you have the CD available.  Typically "
-"this would be used right after ripping the audio files from the CD.  When"
-" initiated, the table of contents (TOC) is read from the CD and a request"
-" is sent to MusicBrainz to return a list of the releases that match the "
-"TOC.  If there are any matches, then they will be listed for you to "
-"select the one to use.  If there are no matches or none of the matches "
-"are correct, you can search the database manually for the matching album,"
-" and are given the option of attaching the TOC from your CD to the "
-"selected release for future lookup."
+"retrieve, and should be used when you have the CD or :ref:`supported "
+"ripper log <faq_supported_rippers>` available. Typically this would be "
+"used right after ripping the audio files from the CD.  When initiated, "
+"the table of contents (TOC) is read from the CD and a request is sent to "
+"MusicBrainz to return a list of the releases that match the TOC.  If "
+"there are any matches, then they will be listed for you to select the one"
+" to use.  If there are no matches or none of the matches are correct, you"
+" can search the database manually for the matching album, and are given "
+"the option of attaching the TOC from your CD to the selected release for "
+"future lookup."
 msgstr ""
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:3
-msgid "The steps to follow to :index:`lookup a CD <lookup cd>` are:"
+msgid ""
+"The steps to follow to :index:`lookup a CD <lookup; cd, lookup; ripper "
+"log>` are:"
 msgstr ""
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:5
@@ -69,11 +72,11 @@ msgid ""
 "Make sure the CD is inserted in the drive, and select "
 ":menuselection:`\"Tools --> Lookup CD... --> (drive to use)\"`. The CD "
 "TOC will be calculated and sent to MusicBrainz. Alternately, you can use "
-"an EAC, XLD or Whipper ripper log file to lookup the CD using the "
-":menuselection:`\"Tools --> Lookup CD --> From EAC / XLD / Whipper log "
-"file...\"` command. This will open a file browser dialog to allow you to "
-"select the log file to process. Either method will query the MusicBrainz "
-"database and display a list of matching releases."
+"a :ref:`supported ripper log file <faq_supported_rippers>` to lookup the "
+"CD using the :menuselection:`\"Tools --> Lookup CD --> From CD ripper log"
+" file...\"` command. This will open a file browser dialog to allow you to"
+" select the log file to process. Either method will query the MusicBrainz"
+" database and display a list of matching releases."
 msgstr ""
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:16
@@ -119,15 +122,15 @@ msgid ""
 " a new release (with some information automatically included)."
 msgstr ""
 
-#: ../../usage/retrieve.rst:40
+#: ../../usage/retrieve.rst:41
 msgid "Lookup Files"
 msgstr ""
 
-#: ../../usage/retrieve.rst:44
+#: ../../usage/retrieve.rst:45
 msgid ":doc:`Lookup Files <retrieve_lookup>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:46
+#: ../../usage/retrieve.rst:47
 msgid ""
 "If you don't have the CD available, and your files are grouped by album, "
 "this is the preferred method of automatically identifying the album to "
@@ -191,15 +194,15 @@ msgid ""
 " lookup."
 msgstr ""
 
-#: ../../usage/retrieve.rst:59
+#: ../../usage/retrieve.rst:60
 msgid "Scan Files"
 msgstr ""
 
-#: ../../usage/retrieve.rst:63
+#: ../../usage/retrieve.rst:64
 msgid ":doc:`Scan Files <retrieve_scan>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:65
+#: ../../usage/retrieve.rst:66
 msgid ""
 "If your files are not grouped into albums and you don't have the CD "
 "available, this is the only remaining method of automatically identifying"
@@ -230,15 +233,15 @@ msgid ""
 "browser lookup."
 msgstr ""
 
-#: ../../usage/retrieve.rst:78
+#: ../../usage/retrieve.rst:79
 msgid "Lookup in Browser"
 msgstr ""
 
-#: ../../usage/retrieve.rst:82
+#: ../../usage/retrieve.rst:83
 msgid ":doc:`Lookup in Browser <retrieve_browser>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:84
+#: ../../usage/retrieve.rst:85
 msgid ""
 "If none of the automated methods are available, or don't produce the "
 "desired results, you have the option of retrieving the album information "
@@ -283,15 +286,15 @@ msgid ""
 "information for a release into Picard."
 msgstr ""
 
-#: ../../usage/retrieve.rst:96
+#: ../../usage/retrieve.rst:97
 msgid "Manual Lookup"
 msgstr ""
 
-#: ../../usage/retrieve.rst:100
+#: ../../usage/retrieve.rst:101
 msgid ":doc:`Manual Lookup <retrieve_manual>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:102
+#: ../../usage/retrieve.rst:103
 msgid ""
 "The second browser search method uses manually entered information as the"
 " search criterion."
@@ -333,7 +336,7 @@ msgid ""
 "opening a browser window."
 msgstr ""
 
-#: ../../usage/retrieve.rst:113
+#: ../../usage/retrieve.rst:114
 msgid ""
 "Step-by-step instructions: :doc:`retrieve_lookup_cd` / "
 ":doc:`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` /"
@@ -442,5 +445,57 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Retrieving Album information"
+#~ msgstr ""
+
+#~ msgid "Lookup CD"
+#~ msgstr ""
+
+#~ msgid ":doc:`Lookup CD <retrieve_lookup_cd>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is the preferred method of "
+#~ "automatically identifying the album to "
+#~ "retrieve, and should be used when "
+#~ "you have the CD available.  Typically"
+#~ " this would be used right after "
+#~ "ripping the audio files from the "
+#~ "CD.  When initiated, the table of "
+#~ "contents (TOC) is read from the CD"
+#~ " and a request is sent to "
+#~ "MusicBrainz to return a list of "
+#~ "the releases that match the TOC.  "
+#~ "If there are any matches, then "
+#~ "they will be listed for you to "
+#~ "select the one to use.  If there"
+#~ " are no matches or none of the"
+#~ " matches are correct, you can search"
+#~ " the database manually for the "
+#~ "matching album, and are given the "
+#~ "option of attaching the TOC from "
+#~ "your CD to the selected release "
+#~ "for future lookup."
+#~ msgstr ""
+
+#~ msgid "The steps to follow to :index:`lookup a CD <lookup cd>` are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Make sure the CD is inserted in"
+#~ " the drive, and select "
+#~ ":menuselection:`\"Tools --> Lookup CD... -->"
+#~ " (drive to use)\"`. The CD TOC "
+#~ "will be calculated and sent to "
+#~ "MusicBrainz. Alternately, you can use an"
+#~ " EAC, XLD or Whipper ripper log "
+#~ "file to lookup the CD using the"
+#~ " :menuselection:`\"Tools --> Lookup CD -->"
+#~ " From EAC / XLD / Whipper log"
+#~ " file...\"` command. This will open a"
+#~ " file browser dialog to allow you "
+#~ "to select the log file to process."
+#~ " Either method will query the "
+#~ "MusicBrainz database and display a list"
+#~ " of matching releases."
 #~ msgstr ""
 
