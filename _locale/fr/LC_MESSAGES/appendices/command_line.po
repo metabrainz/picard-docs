@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021.
+# Bob Swift <bswift@rsds.ca>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 15:29-0700\n"
-"PO-Revision-Date: 2021-08-24 20:50+0000\n"
+"PO-Revision-Date: 2023-01-04 23:51+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/appendicescommand_line/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/appendicescommand_line/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../appendices/command_line.rst:4
@@ -53,6 +54,8 @@ msgid ""
 "execute one or more COMMANDs at start-up (see :doc:`/usage/exec_commands`"
 " for more information)"
 msgstr ""
+"exécuter une ou plusieurs COMMANDs au démarrage (voir :doc:`/usage/"
+"exec_commands` pour plus d'informations)"
 
 #: ../../appendices/command_line.rst:32
 msgid "disable built-in media player"
@@ -68,7 +71,7 @@ msgstr "ne chargent aucun plug-in"
 
 #: ../../appendices/command_line.rst:44
 msgid "force Picard to create a new, stand-alone instance"
-msgstr ""
+msgstr "forcez Picard à créer une nouvelle instance autonome"
 
 #: ../../appendices/command_line.rst:48
 msgid "display the version information and exit"
@@ -80,7 +83,7 @@ msgstr "affiche les informations de la version longue et quitte"
 
 #: ../../appendices/command_line.rst:56
 msgid "one or more files, directories, URLs and MBIDs to load"
-msgstr ""
+msgstr "un ou plusieurs fichiers, répertoires, URLs et MBIDs à charger"
 
 #: ../../appendices/command_line.rst:60
 msgid ""
@@ -92,16 +95,25 @@ msgid ""
 "``<entity_type>`` is one of \"release\", \"artist\" or \"track\" and "
 "``<mbid>`` is the MusicBrainz Identifier of the entity."
 msgstr ""
+"Les fichiers et les répertoires sont spécifiés en incluant le chemin (absolu "
+"ou relatif) vers le fichier ou le répertoire, et peuvent inclure des "
+"spécificateurs de lecteur. Ils peuvent également être spécifiés en utilisant "
+"le préfixe \"file://\". Les URLs sont spécifiées en utilisant le préfixe "
+"\"http://\" ou \"https://\". Les MBID sont spécifiés au format "
+"``mbid://<type_d'entité>/<mbid>`` où ``<type_d'entité>`` est l'un de "
+"\"release\", \"artist\" ou \"track\" et ``<mbid>`` est l'identifiant "
+"MusicBrainz de l'entité."
 
 #: ../../appendices/command_line.rst:66
 msgid ""
 "If a specified item contains a space, it must be enclosed in quotes such "
 "as ``\"/home/user/music/my song.mp3\"``."
 msgstr ""
+"Si un élément spécifié contient un espace, il doit être placé entre "
+"guillemets, comme par exemple ``\"/home/user/music/my song.mp3\"``."
 
 #~ msgid "Appendix C: Command Line Options"
 #~ msgstr "Annexe 3: Options de ligne de commande"
 
 #~ msgid "the file or files to load"
 #~ msgstr "le ou les fichiers à charger"
-

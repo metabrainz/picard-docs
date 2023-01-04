@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021, 2022.
+# Bob Swift <bswift@rsds.ca>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 15:29-0700\n"
-"PO-Revision-Date: 2022-12-03 21:09+0000\n"
+"PO-Revision-Date: 2023-01-04 23:51+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/usageretrieve/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/usageretrieve/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/retrieve.rst:4
@@ -50,15 +51,13 @@ msgstr ""
 
 #: ../../usage/retrieve.rst:18
 msgid "Lookup CD or Ripper Log"
-msgstr ""
+msgstr "Recherche du journal du CD ou du ripper"
 
 #: ../../usage/retrieve.rst:22
-#, fuzzy
 msgid ":doc:`Lookup CD or Ripper Log <retrieve_lookup_cd>`"
-msgstr ":doc:`CD de recherche <retrieve_lookup_cd>`"
+msgstr ":doc:`Recherche du journal du CD ou du ripper <retrieve_lookup_cd>`"
 
 #: ../../usage/retrieve.rst:24
-#, fuzzy
 msgid ""
 "This is the preferred method of automatically identifying the album to "
 "retrieve, and should be used when you have the CD or :ref:`supported "
@@ -73,27 +72,27 @@ msgid ""
 "future lookup."
 msgstr ""
 "C'est la méthode préférée pour identifier automatiquement l'album à "
-"récupérer, et elle doit être utilisée lorsque vous disposez du CD.  En "
-"général, elle est utilisée juste après avoir extrait les fichiers audio "
-"du CD.  Lorsqu'elle est lancée, la table des matières (TOC) est lue à "
-"partir du CD et une requête est envoyée à MusicBrainz pour renvoyer une "
-"liste des sorties qui correspondent à la TOC.  S'il y a des "
-"correspondances, elles seront listées pour que vous puissiez choisir "
-"celle à utiliser.  S'il n'y a pas de correspondance ou si aucune "
-"correspondance n'est correcte, vous pouvez rechercher manuellement "
-"l'album correspondant dans la base de données, et vous avez la "
-"possibilité d'attacher la TOC de votre CD à la sortie sélectionnée pour "
-"une consultation ultérieure."
+"récupérer, et devrait être utilisée lorsque vous avez le CD ou :ref:`le "
+"journal des rippeurs supportés <faq_supported_rippers>` disponible. "
+"Typiquement, cette fonction est utilisée juste après avoir rippé les "
+"fichiers audio du CD.  Lorsqu'elle est lancée, la table des matières (TOC) "
+"est lue à partir du CD et une requête est envoyée à MusicBrainz pour "
+"retourner une liste des sorties qui correspondent à la TOC.  S'il y a des "
+"correspondances, elles seront listées pour que vous puissiez choisir celle à "
+"utiliser.  S'il n'y a pas de correspondance ou si aucune correspondance "
+"n'est correcte, vous pouvez rechercher manuellement l'album correspondant "
+"dans la base de données, et vous avez la possibilité d'attacher la TOC de "
+"votre CD à la sortie sélectionnée pour une consultation ultérieure."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:3
-#, fuzzy
 msgid ""
 "The steps to follow to :index:`lookup a CD <lookup; cd, lookup; ripper "
 "log>` are:"
-msgstr "Les étapes à suivre pour :index:`rechercher un CD <chercher cd>` sont:"
+msgstr ""
+"Les étapes à suivre pour :index:`rechercher un CD <chercher; cd, chercher; "
+"grumes de défonceuse>` sont:"
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:5
-#, fuzzy
 msgid ""
 "Make sure the CD is inserted in the drive, and select "
 ":menuselection:`\"Tools --> Lookup CD... --> (drive to use)\"`. The CD "
@@ -105,15 +104,15 @@ msgid ""
 " database and display a list of matching releases."
 msgstr ""
 "Assurez-vous que le CD est inséré dans le lecteur, et sélectionnez "
-":menuselection:`\"Outils --> Recherche de CD... --> (l'entraînement à "
-"utiliser)\"`. La TOC du CD sera calculée et envoyée à MusicBrainz. Vous "
-"pouvez également utiliser un fichier journal de ripper EAC, XLD ou "
-"Whipper pour rechercher le CD en utilisant la commande "
-":menuselection:`\"Outils --> Recherche de CD --> À partir du fichier "
-"journal EAC / XLD / Whipper...\"`. Cela ouvrira une boîte de dialogue de "
-"recherche de fichiers pour vous permettre de sélectionner le fichier "
-"journal à traiter. L'une ou l'autre méthode interrogera la base de "
-"données MusicBrainz et affichera une liste des sorties correspondantes."
+":menuselection:`\"Outils --> CD de recherche... --> (drive to use)\"`. La "
+"table des matières du CD sera calculée et envoyée à MusicBrainz. Vous pouvez "
+"également utiliser un fichier journal de ripper supporté par :ref:` "
+"<faq_supported_rippers>` pour rechercher le CD en utilisant la commande "
+":menuselection:`\"Outils --> CD de recherche --> Depuis le fichier journal "
+"du ripper CD...\"`. Cela ouvrira une boîte de dialogue de recherche de "
+"fichiers pour vous permettre de sélectionner le fichier journal à traiter. "
+"L'une ou l'autre méthode interrogera la base de données MusicBrainz et "
+"affichera une liste des versions correspondantes."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:16
 msgid ""
@@ -503,4 +502,3 @@ msgstr ""
 
 #~ msgid "Lookup CD"
 #~ msgstr "CD de recherche"
-
