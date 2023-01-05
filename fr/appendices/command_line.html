@@ -74,7 +74,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">When the ripper log file is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">Lorsque le fichier journal du ripper est disponible</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
@@ -161,7 +161,7 @@
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-e">
 <span id="cmdoption-exec"></span><span class="sig-name descname"><span class="pre">-e</span></span><span class="sig-prename descclassname"> <span class="pre">COMMAND</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--exec</span></span><span class="sig-prename descclassname"> <span class="pre">COMMAND</span></span><a class="headerlink" href="#cmdoption-e" title="Lien permanent vers cette définition"></a></dt>
-<dd><p>execute one or more COMMANDs at start-up (see <a class="reference internal" href="../usage/exec_commands.html"><span class="doc">Executable Commands</span></a> for more information)</p>
+<dd><p>exécuter une ou plusieurs COMMANDs au démarrage (voir <a class="reference internal" href="../usage/exec_commands.html"><span class="doc">Executable Commands</span></a> pour plus d’informations)</p>
 </dd></dl>
 
 <dl class="std option">
@@ -185,7 +185,7 @@
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-s">
 <span id="cmdoption-stand-alone-instance"></span><span class="sig-name descname"><span class="pre">-s</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--stand-alone-instance</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-s" title="Lien permanent vers cette définition"></a></dt>
-<dd><p>force Picard to create a new, stand-alone instance</p>
+<dd><p>forcez Picard à créer une nouvelle instance autonome</p>
 </dd></dl>
 
 <dl class="std option">
@@ -203,15 +203,11 @@
 <dl class="describe">
 <dt class="sig sig-object">
 <span class="sig-name descname"><span class="pre">FILE_OR_URL</span></span></dt>
-<dd><p>one or more files, directories, URLs and MBIDs to load</p>
+<dd><p>un ou plusieurs fichiers, répertoires, URLs et MBIDs à charger</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Files and directories are specified including the path (either absolute or relative) to the file or directory, and may include drive specifiers.
-They can also be specified using the <code class="docutils literal notranslate"><span class="pre">file://</span></code> prefix.
-URLs are specified by using either the <code class="docutils literal notranslate"><span class="pre">http://</span></code> or <code class="docutils literal notranslate"><span class="pre">https://</span></code> prefix.
-MBIDs are specified in the format <code class="docutils literal notranslate"><span class="pre">mbid://&lt;entity_type&gt;/&lt;mbid&gt;</span></code> where <code class="docutils literal notranslate"><span class="pre">&lt;entity_type&gt;</span></code> is one of « release », « artist »
-or « track » and <code class="docutils literal notranslate"><span class="pre">&lt;mbid&gt;</span></code> is the MusicBrainz Identifier of the entity.</p>
-<p>If a specified item contains a space, it must be enclosed in quotes such as <code class="docutils literal notranslate"><span class="pre">&quot;/home/user/music/my</span> <span class="pre">song.mp3&quot;</span></code>.</p>
+<p>Les fichiers et les répertoires sont spécifiés en incluant le chemin (absolu ou relatif) vers le fichier ou le répertoire, et peuvent inclure des spécificateurs de lecteur. Ils peuvent également être spécifiés en utilisant le préfixe « <a class="reference external" href="file://">file://</a> ». Les URLs sont spécifiées en utilisant le préfixe « <a class="reference external" href="http://">http://</a> » ou « <a class="reference external" href="https://">https://</a> ». Les MBID sont spécifiés au format <code class="docutils literal notranslate"><span class="pre">mbid://&lt;type_d'entité&gt;/&lt;mbid&gt;</span></code> où <code class="docutils literal notranslate"><span class="pre">&lt;type_d'entité&gt;</span></code> est l’un de « release », « artist » ou « track » et <code class="docutils literal notranslate"><span class="pre">&lt;mbid&gt;</span></code> est l’identifiant MusicBrainz de l’entité.</p>
+<p>Si un élément spécifié contient un espace, il doit être placé entre guillemets, comme par exemple <code class="docutils literal notranslate"><span class="pre">&quot;/home/user/music/my</span> <span class="pre">song.mp3&quot;</span></code>.</p>
 </div>
 </dd></dl>
 

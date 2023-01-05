@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Lookup CD or Ripper Log" href="retrieve_lookup_cd.html" />
+    <link rel="next" title="Recherche du journal du CD ou du ripper" href="retrieve_lookup_cd.html" />
     <link rel="prev" title="Utiliser Picard" href="using.html" /> 
 </head>
 
@@ -65,7 +65,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="using.html">Usage général</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Récupération des informations sur l’album</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="retrieve_lookup_cd.html">Lookup CD or Ripper Log</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retrieve_lookup_cd.html">Recherche du journal du CD ou du ripper</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_lookup.html">Rechercher des fichiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_scan.html">Analyser les fichiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="retrieve_browser.html">Recherche dans le navigateur</a></li>
@@ -87,7 +87,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">When the ripper log file is available</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_extractor_log.html">Lorsque le fichier journal du ripper est disponible</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
@@ -150,15 +150,8 @@
   <div class="section" id="retrieving-album-information">
 <h1>Récupération des informations sur l’album<a class="headerlink" href="#retrieving-album-information" title="Lien permanent vers ce titre"></a></h1>
 <p>Il existe essentiellement quatre méthodes principales utilisées pour récupérer les informations d’album à partir de la base de données MusicBrainz.</p>
-<p><a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">Lookup CD or Ripper Log</span></a></p>
-<p>This is the preferred method of automatically identifying the album to retrieve, and
-should be used when you have the CD or <a class="reference internal" href="../faq/faq_file_formats.html#faq-supported-rippers"><span class="std std-ref">supported ripper log</span></a> available.
-Typically this would be used right after ripping the
-audio files from the CD.  When initiated, the table of contents (TOC) is read from the CD and a request
-is sent to MusicBrainz to return a list of the releases that match the TOC.  If there are any matches,
-then they will be listed for you to select the one to use.  If there are no matches or none of the
-matches are correct, you can search the database manually for the matching album, and are given the
-option of attaching the TOC from your CD to the selected release for future lookup.</p>
+<p><a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">Recherche du journal du CD ou du ripper</span></a></p>
+<p>C’est la méthode préférée pour identifier automatiquement l’album à récupérer, et devrait être utilisée lorsque vous avez le CD ou <a class="reference internal" href="../faq/faq_file_formats.html#faq-supported-rippers"><span class="std std-ref">le journal des rippeurs supportés</span></a> disponible. Typiquement, cette fonction est utilisée juste après avoir rippé les fichiers audio du CD.  Lorsqu’elle est lancée, la table des matières (TOC) est lue à partir du CD et une requête est envoyée à MusicBrainz pour retourner une liste des sorties qui correspondent à la TOC.  S’il y a des correspondances, elles seront listées pour que vous puissiez choisir celle à utiliser.  S’il n’y a pas de correspondance ou si aucune correspondance n’est correcte, vous pouvez rechercher manuellement l’album correspondant dans la base de données, et vous avez la possibilité d’attacher la TOC de votre CD à la sortie sélectionnée pour une consultation ultérieure.</p>
 <p><a class="reference internal" href="retrieve_lookup.html"><span class="doc">Rechercher des fichiers</span></a></p>
 <p>Si vous ne disposez pas du CD et que vos fichiers sont regroupés par album, il s’agit de la méthode préférée pour identifier automatiquement l’album à récupérer. Cela se fait en regroupant les fichiers dans des groupes d’albums dans Picard, puis en effectuant la recherche. Picard essaiera de faire correspondre l’ensemble des fichiers en cluster à la même version.</p>
 <p><a class="reference internal" href="retrieve_scan.html"><span class="doc">Analyser les fichiers</span></a></p>
@@ -169,7 +162,7 @@ option of attaching the TOC from your CD to the selected release for future look
 <p>La deuxième méthode de recherche par navigateur utilise des informations saisies manuellement comme critère de recherche.</p>
 <div class="admonition seealso">
 <p class="admonition-title">Voir aussi</p>
-<p>Instructions pas à pas: <a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">Lookup CD or Ripper Log</span></a> / <a class="reference internal" href="retrieve_lookup.html"><span class="doc">Rechercher des fichiers</span></a> / <a class="reference internal" href="retrieve_scan.html"><span class="doc">Analyser les fichiers</span></a> / <a class="reference internal" href="retrieve_browser.html"><span class="doc">Recherche dans le navigateur</span></a> / <a class="reference internal" href="retrieve_manual.html"><span class="doc">Recherche manuelle</span></a></p>
+<p>Instructions pas à pas: <a class="reference internal" href="retrieve_lookup_cd.html"><span class="doc">Recherche du journal du CD ou du ripper</span></a> / <a class="reference internal" href="retrieve_lookup.html"><span class="doc">Rechercher des fichiers</span></a> / <a class="reference internal" href="retrieve_scan.html"><span class="doc">Analyser les fichiers</span></a> / <a class="reference internal" href="retrieve_browser.html"><span class="doc">Recherche dans le navigateur</span></a> / <a class="reference internal" href="retrieve_manual.html"><span class="doc">Recherche manuelle</span></a></p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -182,7 +175,7 @@ option of attaching the TOC from your CD to the selected release for future look
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="retrieve_lookup_cd.html" class="btn btn-neutral float-right" title="Lookup CD or Ripper Log" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="retrieve_lookup_cd.html" class="btn btn-neutral float-right" title="Recherche du journal du CD ou du ripper" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="using.html" class="btn btn-neutral float-left" title="Utiliser Picard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>

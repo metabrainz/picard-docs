@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>When the ripper log file is available &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Lorsque le fichier journal du ripper est disponible &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -74,7 +74,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="workflows.html">Recommandations générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow_cd.html">Lorsque le CD est disponible</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">When the ripper log file is available</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lorsque le fichier journal du ripper est disponible</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow_album.html">Lorsque les fichiers sont regroupés par album</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow_metadata.html">Lorsque les fichiers ne sont pas groupés mais ont des métadonnées</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow_no_info.html">Lorsque les fichiers ne sont pas regroupés et ont peu ou pas de métadonnées existantes</a></li>
@@ -125,7 +125,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
           <li class="breadcrumb-item"><a href="workflows.html">Recommandations de flux de travail</a></li>
-      <li class="breadcrumb-item active">When the ripper log file is available</li>
+      <li class="breadcrumb-item active">Lorsque le fichier journal du ripper est disponible</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -135,18 +135,11 @@
            <div itemprop="articleBody">
              
   <div class="section" id="when-the-ripper-log-file-is-available">
-<h1><span class="target" id="index-0"></span>When the ripper log file is available<a class="headerlink" href="#when-the-ripper-log-file-is-available" title="Lien permanent vers ce titre"></a></h1>
-<p>This option was added to Picard in version 2.8, and supports the use of log files produced by <a class="reference internal" href="../faq/faq_file_formats.html#faq-supported-rippers"><span class="std std-ref">supported
-popular CD file rippers</span></a>. Because the log files of these rippers contain sufficient
-information to generate the CD table of contents they can be used in place of reading the CD. As with reading
-the CD itself, this method provides the greatest chance of tagging your music files with the most accurate
-match from the MusicBrainz database.  It is also one of the easier methods for looking up the release.</p>
+<h1><span class="target" id="index-2"></span>Lorsque le fichier journal du ripper est disponible<a class="headerlink" href="#when-the-ripper-log-file-is-available" title="Lien permanent vers ce titre"></a></h1>
+<p>Cette option a été ajoutée à Picard dans la version 2.8, et permet d’utiliser les fichiers de log produits par les :ref:<a href="#id1"><span class="problematic" id="id2">``</span></a>Prise en charge des extracteurs de fichiers CD les plus populaires &lt;faq_supported_rippers&gt;`. Comme les fichiers journaux de ces rippers contiennent suffisamment d’informations pour générer la table des matières du CD, ils peuvent être utilisés à la place de la lecture du CD. Comme pour la lecture du CD, cette méthode offre les meilleures chances de marquer vos fichiers musicaux avec la correspondance la plus précise de la base de données MusicBrainz.  C’est également l’une des méthodes les plus simples pour rechercher la version.</p>
 <p><strong>1. Recherchez le CD sur MusicBrainz</strong></p>
 <blockquote>
-<div><p>Use the ripper log file to look up the release automatically by selecting the
-<span class="menuselection">« Tools ‣ Lookup CD ‣ From CD ripper log file… »</span> command. This will open a
-file browser dialog to allow you to select the log file to process. See the <a class="reference internal" href="../usage/retrieve_lookup_cd.html"><span class="doc">Lookup CD or Ripper Log</span></a>
-section for detailed instructions.</p>
+<div><p>Utilisez le fichier journal du ripper pour rechercher automatiquement la version en sélectionnant la commande <span class="menuselection">« Outils ‣ Recherche de CD ‣ Depuis le fichier journal du ripper CD… »</span>. Cette commande ouvre une boîte de dialogue de recherche de fichiers qui vous permet de sélectionner le fichier journal à traiter. Consultez la section <a class="reference internal" href="../usage/retrieve_lookup_cd.html"><span class="doc">Recherche du journal du CD ou du ripper</span></a> pour des instructions détaillées.</p>
 </div></blockquote>
 <p><strong>2. Sélectionnez le bon déclencheur</strong></p>
 <blockquote>
@@ -171,7 +164,7 @@ section for detailed instructions.</p>
 </div></blockquote>
 <p><strong>8. Calculer et soumettre les empreintes digitales AcoustID</strong></p>
 <blockquote>
-<div><p><span class="target" id="index-3"></span>Cette étape est facultative, mais appréciée car elle aidera à identifier les fichiers que d’autres pourront rechercher pour le marquage.</p>
+<div><p><span class="target" id="index-4"></span>Cette étape est facultative, mais appréciée car elle aidera à identifier les fichiers que d’autres pourront rechercher pour le marquage.</p>
 <p>Sélectionnez l’entrée de l’album dans le volet de droite et calculez les empreintes AcoustID à l’aide de <span class="menuselection">« Outils ‣ Générer des empreintes AcoustID »</span>. Une fois les empreintes calculées, soumettez-les en utilisant <span class="menuselection">« Fichiers ‣ Soumettre les AcoustIDs »</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
