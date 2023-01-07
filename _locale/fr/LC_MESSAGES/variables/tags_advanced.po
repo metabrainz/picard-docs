@@ -8,18 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-04 12:34-0600\n"
+"POT-Creation-Date: 2023-01-07 16:23-0700\n"
 "PO-Revision-Date: 2022-05-04 14:35-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
-"docs/variablestags_advanced/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects"
+"/picard-docs/variablestags_advanced/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: ../../variables/tags_advanced.rst:8
 msgid ":index:`Advanced Tags <tags; advanced>`"
@@ -31,30 +30,30 @@ msgid ""
 "relationships </config/options_metadata>` and the :doc:`Use genres from "
 "MusicBrainz </config/options_genres>` settings in Picard."
 msgstr ""
-"Vous pouvez rendre des balises supplémentaires disponibles en activant les "
-"paramètres :doc:`Utiliser les relations de suivi </config/options_metadata>` "
-"et :doc:`Utiliser les genres de MusicBrainz </config/options_genres>` dans "
-"Picard."
+"Vous pouvez rendre des balises supplémentaires disponibles en activant "
+"les paramètres :doc:`Utiliser les relations de suivi "
+"</config/options_metadata>` et :doc:`Utiliser les genres de MusicBrainz "
+"</config/options_genres>` dans Picard."
 
 #: ../../variables/tags_advanced.rst:15
 msgid ""
-"Tags will not be created and will not be available as variables if there was "
-"no value retrieved for the tag from the MusicBrainz database."
+"Tags will not be created and will not be available as variables if there "
+"was no value retrieved for the tag from the MusicBrainz database."
 msgstr ""
-"Les balises ne seront pas créées et ne seront pas disponibles en tant que "
-"variables si aucune valeur n'a été récupérée pour la balise dans la base de "
-"données MusicBrainz."
+"Les balises ne seront pas créées et ne seront pas disponibles en tant que"
+" variables si aucune valeur n'a été récupérée pour la balise dans la base"
+" de données MusicBrainz."
 
 #: ../../variables/tags_advanced.rst:20
 msgid ""
 "Some of these tags are only supported for certain file types or tag "
-"formats.  Please see the :doc:`Picard Tag Mapping </appendices/tag_mapping>` "
-"section for details."
+"formats.  Please see the :doc:`Picard Tag Mapping "
+"</appendices/tag_mapping>` section for details."
 msgstr ""
-"Certaines de ces balises ne sont prises en charge que pour certains types de "
-"fichiers ou formats de balises. Veuillez consulter la section :doc:"
-"`Correspondances des balises Picardes </appendices/tag_mapping>` pour plus "
-"de détails."
+"Certaines de ces balises ne sont prises en charge que pour certains types"
+" de fichiers ou formats de balises. Veuillez consulter la section "
+":doc:`Correspondances des balises Picardes </appendices/tag_mapping>` "
+"pour plus de détails."
 
 #: ../../variables/tags_advanced.rst:26
 msgid "Track Relationship Tags"
@@ -62,11 +61,11 @@ msgstr "Balises de relation de suivi"
 
 #: ../../variables/tags_advanced.rst:27
 msgid ""
-"If you enable tagging with \"Use track relationships\", you get these extra "
-"tags:"
+"If you enable tagging with \"Use track relationships\", you get these "
+"extra tags:"
 msgstr ""
-"Si vous activez le balisage avec \"Utiliser les relations de suivi\", vous "
-"obtenez ces balises supplémentaires :"
+"Si vous activez le balisage avec \"Utiliser les relations de suivi\", "
+"vous obtenez ces balises supplémentaires :"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:29
@@ -75,190 +74,206 @@ msgstr "**arranger**"
 
 #: ../../variables/tags_advanced.rst:31
 msgid ""
-"Arranger Relationship Type (releases, recordings, works), Instrumentator "
-"Relationship Type, Orchestrator Relationship Type (*since Picard 0.10*)"
+"The names of the arrangers associated with the track.  These can include "
+"the instrument and orchestra arrangers, and could be associated with the "
+"release, recording or work. (*since Picard 0.10*)"
 msgstr ""
-"Type de relation arrangeur (sorties, enregistrements, œuvres), type de "
-"relation instrumentateur, type de relation orchestrateur (*depuis Picard "
-"0.10*)"
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:33
+#: ../../variables/tags_advanced.rst:34
 msgid "**composer**"
 msgstr "**composer**"
 
-#: ../../variables/tags_advanced.rst:35
-msgid "Composer Relationship Type"
-msgstr "Type de relation de compositeur"
+#: ../../variables/tags_advanced.rst:36
+msgid "The names of the composers for the associated work."
+msgstr ""
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:37
+#: ../../variables/tags_advanced.rst:38
 msgid "**composersort**"
 msgstr "**composersort**"
 
-#: ../../variables/tags_advanced.rst:39
-msgid "Composer Relationship Type's Sort Name"
-msgstr "Nom de tri du type de relation de compositeur"
+#: ../../variables/tags_advanced.rst:40
+msgid "The sort names of the composers for the associated work."
+msgstr ""
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:41
+#: ../../variables/tags_advanced.rst:42
 msgid "**conductor**"
 msgstr "**conductor**"
 
-#: ../../variables/tags_advanced.rst:43
+#: ../../variables/tags_advanced.rst:44
 msgid ""
-"Conductor Relationship Type (releases, recordings), Chorus Master "
-"Relationship Type (releases, recordings)"
+"Tha names of the conductors associated with the track.  These can include"
+" the conductor and chorus master, and could be associated with the "
+"release or recording."
 msgstr ""
-"Type de relation de chef d'orchestre (sorties, enregistrements), type de "
-"relation de maître de chœur (sorties, enregistrements)"
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:45
+#: ../../variables/tags_advanced.rst:47
 msgid "**djmixer**"
 msgstr "**djmixer**"
 
-#: ../../variables/tags_advanced.rst:47
-msgid "Mix-DJ Relationship Type (*since Picard 0.9*)"
-msgstr "Type de relation Mix-DJ (*depuis Picard 0.9*)"
+#: ../../variables/tags_advanced.rst:49
+msgid "The names of the DJ mixers for the track. (*since Picard 0.9*)"
+msgstr ""
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:49
+#: ../../variables/tags_advanced.rst:51
 msgid "**engineer**"
 msgstr "**engineer**"
 
-#: ../../variables/tags_advanced.rst:51
-msgid "Engineer Relationship Type"
-msgstr "Type de relation ingénieur"
+#: ../../variables/tags_advanced.rst:53
+msgid "The names of the engineers associated with the track."
+msgstr ""
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:53
+#: ../../variables/tags_advanced.rst:55
 msgid "**license**"
 msgstr "**license**"
 
-#: ../../variables/tags_advanced.rst:55
-msgid "License Relationship Type (releases, recordings) (*since Picard 1.0*)"
+#: ../../variables/tags_advanced.rst:57
+msgid ""
+"The licenses associated with the track, either through the release or "
+"recording relationships. (*since Picard 1.0*)"
 msgstr ""
-"Type de relation de licence (sorties, enregistrements) (*depuis Picard 1.0*)"
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:57
+#: ../../variables/tags_advanced.rst:59
 msgid "**lyricist**"
 msgstr "**lyricist**"
 
-#: ../../variables/tags_advanced.rst:59
-msgid "Lyricist Relationship Type"
-msgstr "Type de relation parolier"
+#: ../../variables/tags_advanced.rst:61
+msgid "The names of the lyricists for the associated work."
+msgstr ""
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:61
+#: ../../variables/tags_advanced.rst:63
 msgid "**mixer**"
 msgstr "**mixer**"
 
-#: ../../variables/tags_advanced.rst:63
-msgid "Engineer Relationship Type (\"Mixed By\") (*since Picard 0.9*)"
-msgstr "Type de relation ingénieur (\"Mixé par\") (*depuis Picard 0.9*)"
+#: ../../variables/tags_advanced.rst:65
+msgid ""
+"The names of the \"Mixed By\" engineers associated with the track. "
+"(*since Picard 0.9*)"
+msgstr ""
 
 # Tag name.  Do not translate (other than "type").
-#: ../../variables/tags_advanced.rst:65
+#: ../../variables/tags_advanced.rst:67
 msgid "**performer:<type>**"
 msgstr "**performer:<type>**"
 
-#: ../../variables/tags_advanced.rst:67
-msgid ""
-"Performer Relationship Type (releases - vocals/instruments, recordings - "
-"vocals/instruments), <type> can be \"vocal\", \"guest guitar\", \"solo violin"
-"\", …"
-msgstr ""
-"Type de relation interprète (sorties - voix / instruments, enregistrements - "
-"voix / instruments), <type> peut être \"vocal\", \"guest guitar\", \"solo "
-"violin\",…"
-
 #: ../../variables/tags_advanced.rst:69
+msgid "The names of the performers for the specified type.  These types include:"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:71
+#, fuzzy
 msgid ""
-"Orchestra Relationship Type (releases, recordings), <type> is \"orchestra\""
+"vocals or instruments for the associated release or recording, where "
+"<type> can be \"vocal\", \"guest guitar\", \"solo violin\", etc."
+msgstr ""
+"Type de relation interprète (sorties - voix / instruments, "
+"enregistrements - voix / instruments), <type> peut être \"vocal\", "
+"\"guest guitar\", \"solo violin\",…"
+
+#: ../../variables/tags_advanced.rst:73
+#, fuzzy
+msgid ""
+"the orchestra for the associated release or recording, where <type> is "
+"\"orchestra\""
 msgstr ""
 "Type de relation avec l'orchestre (sorties, enregistrements), <type> est "
 "\"orchestra\""
 
-#: ../../variables/tags_advanced.rst:71
-msgid ""
-"Concertmaster Relationship Type (releases, recordings), <type> is "
-"\"concertmaster\""
-msgstr ""
-"Type de relation Maître de concert (sorties, enregistrements), <type> est "
-"\"concertmaster\""
-
-# Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:73
-msgid "**producer**"
-msgstr "**producer**"
-
 #: ../../variables/tags_advanced.rst:75
-msgid "Producer Relationship Type"
-msgstr "Type de relation producteur"
+#, fuzzy
+msgid ""
+"the concert master for the associated release or recording, where <type> "
+"is \"concertmaster\""
+msgstr ""
+"Type de relation Maître de concert (sorties, enregistrements), <type> est"
+" \"concertmaster\""
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:77
-msgid "**remixer**"
-msgstr "**remixer**"
+msgid "**producer**"
+msgstr "**producer**"
 
 #: ../../variables/tags_advanced.rst:79
-msgid "Remixer Relationship Type"
-msgstr "Type de relation de remixeur"
+msgid "The names of the producers for the associated release or recording."
+msgstr ""
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:81
-msgid "**work**"
-msgstr "**work**"
+msgid "**remixer**"
+msgstr "**remixer**"
 
 #: ../../variables/tags_advanced.rst:83
-msgid "Work Name (*since Picard 1.3*)"
-msgstr "Nom du travail (*depuis Picard 1.3*)"
+msgid "The names of the remixer engineers associated with the track."
+msgstr ""
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:85
+msgid "**work**"
+msgstr "**work**"
+
+#: ../../variables/tags_advanced.rst:87
+msgid "The name of the work associated with the track. (*since Picard 1.3*)"
+msgstr ""
+
+# Tag name.  Do not translate.
+#: ../../variables/tags_advanced.rst:89
 msgid "**writer**"
 msgstr "**writer**"
 
-#: ../../variables/tags_advanced.rst:87
+#: ../../variables/tags_advanced.rst:91
+#, fuzzy
 msgid ""
-"Writer Relationship Type (*since Picard 1.0*). Not written to most file "
-"formats automatically. You can merge this with composers with a script like:"
+"The names of the writers associated with the related work. (*since Picard"
+" 1.0*). This is not written to most file formats automatically. You can "
+"merge this with composers with a script like:"
 msgstr ""
-"Type de relation écrivain (*depuis Picard 1.0*). Non écrit automatiquement "
-"dans la plupart des formats de fichiers. Vous pouvez fusionner cela avec des "
-"compositeurs avec un script comme:"
+"Type de relation écrivain (*depuis Picard 1.0*). Non écrit "
+"automatiquement dans la plupart des formats de fichiers. Vous pouvez "
+"fusionner cela avec des compositeurs avec un script comme:"
 
-#: ../../variables/tags_advanced.rst:97
+#: ../../variables/tags_advanced.rst:101
 msgid ":index:`Genre Tags <tags; genre>`"
 msgstr ":index:`Balises de genre <balises; de genre>`"
 
-#: ../../variables/tags_advanced.rst:99
+#: ../../variables/tags_advanced.rst:103
 msgid "If you enable \"Use genres from MusicBrainz\", you get:"
 msgstr "Si vous activez \"Utiliser les genres de MusicBrainz\", vous obtenez :"
 
 # Tag name.  Do not translate.
-#: ../../variables/tags_advanced.rst:101
+#: ../../variables/tags_advanced.rst:105
 msgid "**genre**"
 msgstr "**genre**"
 
-#: ../../variables/tags_advanced.rst:103
+#: ../../variables/tags_advanced.rst:107
 msgid ""
-"Genre information from MusicBrainz (*since Picard 2.1, earlier versions used "
-"folksonomy tags*)"
+"Genre information from MusicBrainz (*since Picard 2.1, earlier versions "
+"used folksonomy tags*)"
 msgstr ""
-"Informations sur le genre de MusicBrainz (*depuis Picard 2.1, les versions "
-"antérieures utilisaient des balises folksonomy*)"
+"Informations sur le genre de MusicBrainz (*depuis Picard 2.1, les "
+"versions antérieures utilisaient des balises folksonomy*)"
 
 #~ msgid ""
-#~ "Some of these tags are only supported for certain file types or tag "
-#~ "formats.  Please see the :doc:`Picard Tag Mapping <../appendices/"
-#~ "tag_mapping_pdf>` section for details."
+#~ "Some of these tags are only "
+#~ "supported for certain file types or "
+#~ "tag formats.  Please see the "
+#~ ":doc:`Picard Tag Mapping "
+#~ "<../appendices/tag_mapping_pdf>` section for "
+#~ "details."
 #~ msgstr ""
-#~ "Certaines de ces balises ne sont prises en charge que pour certains types "
-#~ "de fichiers ou formats de balises. Veuillez consulter la section :doc:"
-#~ "`Picard Tag Mapping <../appendices/tag_mapping_pdf>` pour plus de détails."
+#~ "Certaines de ces balises ne sont "
+#~ "prises en charge que pour certains "
+#~ "types de fichiers ou formats de "
+#~ "balises. Veuillez consulter la section "
+#~ ":doc:`Picard Tag Mapping "
+#~ "<../appendices/tag_mapping_pdf>` pour plus de "
+#~ "détails."
 
 #~ msgid "Advanced Tags"
 #~ msgstr "Balises avancées"
@@ -267,21 +282,84 @@ msgstr ""
 #~ msgstr "Balises de genre"
 
 #~ msgid ""
-#~ "You can make additional tags available by enabling the :ref:`Advanced "
-#~ "Relationships <advanced_relationships>` and the :ref:`Use genres from "
-#~ "MusicBrainz <genre_settings>` settings in Picard."
+#~ "You can make additional tags available"
+#~ " by enabling the :ref:`Advanced "
+#~ "Relationships <advanced_relationships>` and the "
+#~ ":ref:`Use genres from MusicBrainz "
+#~ "<genre_settings>` settings in Picard."
 #~ msgstr ""
-#~ "Vous pouvez rendre des balises supplémentaires disponibles en activant "
-#~ "les paramètres :ref:`Relations avancées <advanced_relationships>` et :ref:"
-#~ "`Utiliser les genres de MusicBrainz <genre_settings>` paramètres dans "
-#~ "Picard."
+#~ "Vous pouvez rendre des balises "
+#~ "supplémentaires disponibles en activant les"
+#~ " paramètres :ref:`Relations avancées "
+#~ "<advanced_relationships>` et :ref:`Utiliser les "
+#~ "genres de MusicBrainz <genre_settings>` "
+#~ "paramètres dans Picard."
 
 #~ msgid ""
-#~ "You can make additional tags available by enabling the :doc:`Use track "
-#~ "relationships <../config/options_metadata>` and the :doc:`Use genres from "
-#~ "MusicBrainz <../config/options_genres>` settings in Picard."
+#~ "You can make additional tags available"
+#~ " by enabling the :doc:`Use track "
+#~ "relationships <../config/options_metadata>` and the"
+#~ " :doc:`Use genres from MusicBrainz "
+#~ "<../config/options_genres>` settings in Picard."
 #~ msgstr ""
-#~ "Vous pouvez rendre des balises supplémentaires disponibles en activant "
-#~ "les paramètres :doc:`Utiliser les relations entre les pistes <../config/"
-#~ "options_metadata>` et :doc:`Utiliser les genres à partir de MusicBrainz "
-#~ "<../config/options_genres>` dans Picard."
+#~ "Vous pouvez rendre des balises "
+#~ "supplémentaires disponibles en activant les"
+#~ " paramètres :doc:`Utiliser les relations "
+#~ "entre les pistes <../config/options_metadata>` "
+#~ "et :doc:`Utiliser les genres à partir"
+#~ " de MusicBrainz <../config/options_genres>` dans"
+#~ " Picard."
+
+#~ msgid ""
+#~ "Arranger Relationship Type (releases, "
+#~ "recordings, works), Instrumentator Relationship "
+#~ "Type, Orchestrator Relationship Type (*since"
+#~ " Picard 0.10*)"
+#~ msgstr ""
+#~ "Type de relation arrangeur (sorties, "
+#~ "enregistrements, œuvres), type de relation "
+#~ "instrumentateur, type de relation "
+#~ "orchestrateur (*depuis Picard 0.10*)"
+
+#~ msgid "Composer Relationship Type"
+#~ msgstr "Type de relation de compositeur"
+
+#~ msgid "Composer Relationship Type's Sort Name"
+#~ msgstr "Nom de tri du type de relation de compositeur"
+
+#~ msgid ""
+#~ "Conductor Relationship Type (releases, "
+#~ "recordings), Chorus Master Relationship Type"
+#~ " (releases, recordings)"
+#~ msgstr ""
+#~ "Type de relation de chef d'orchestre "
+#~ "(sorties, enregistrements), type de relation"
+#~ " de maître de chœur (sorties, "
+#~ "enregistrements)"
+
+#~ msgid "Mix-DJ Relationship Type (*since Picard 0.9*)"
+#~ msgstr "Type de relation Mix-DJ (*depuis Picard 0.9*)"
+
+#~ msgid "Engineer Relationship Type"
+#~ msgstr "Type de relation ingénieur"
+
+#~ msgid "License Relationship Type (releases, recordings) (*since Picard 1.0*)"
+#~ msgstr ""
+#~ "Type de relation de licence (sorties,"
+#~ " enregistrements) (*depuis Picard 1.0*)"
+
+#~ msgid "Lyricist Relationship Type"
+#~ msgstr "Type de relation parolier"
+
+#~ msgid "Engineer Relationship Type (\"Mixed By\") (*since Picard 0.9*)"
+#~ msgstr "Type de relation ingénieur (\"Mixé par\") (*depuis Picard 0.9*)"
+
+#~ msgid "Producer Relationship Type"
+#~ msgstr "Type de relation producteur"
+
+#~ msgid "Remixer Relationship Type"
+#~ msgstr "Type de relation de remixeur"
+
+#~ msgid "Work Name (*since Picard 1.3*)"
+#~ msgstr "Nom du travail (*depuis Picard 1.3*)"
+
