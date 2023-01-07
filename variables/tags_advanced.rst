@@ -28,63 +28,67 @@ If you enable tagging with "Use track relationships", you get these extra tags:
 
 **arranger**
 
-    Arranger Relationship Type (releases, recordings, works), Instrumentator Relationship Type, Orchestrator Relationship Type (*since Picard 0.10*)
+    The names of the arrangers associated with the track.  These can include the instrument and orchestra arrangers,
+    and could be associated with the release, recording or work. (*since Picard 0.10*)
 
 **composer**
 
-    Composer Relationship Type
+    The names of the composers for the associated work.
 
 **composersort**
 
-    Composer Relationship Type's Sort Name
+    The sort names of the composers for the associated work.
 
 **conductor**
 
-    Conductor Relationship Type (releases, recordings), Chorus Master Relationship Type (releases, recordings)
+    Tha names of the conductors associated with the track.  These can include the conductor and chorus master, and could
+    be associated with the release or recording.
 
 **djmixer**
 
-    Mix-DJ Relationship Type (*since Picard 0.9*)
+    The names of the DJ mixers for the track. (*since Picard 0.9*)
 
 **engineer**
 
-    Engineer Relationship Type
+    The names of the engineers associated with the track.
 
 **license**
 
-    License Relationship Type (releases, recordings) (*since Picard 1.0*)
+    The licenses associated with the track, either through the release or recording relationships. (*since Picard 1.0*)
 
 **lyricist**
 
-    Lyricist Relationship Type
+    The names of the lyricists for the associated work.
 
 **mixer**
 
-    Engineer Relationship Type ("Mixed By") (*since Picard 0.9*)
+    The names of the "Mixed By" engineers associated with the track. (*since Picard 0.9*)
 
 **performer:<type>**
 
-    Performer Relationship Type (releases - vocals/instruments, recordings - vocals/instruments), <type> can be "vocal", "guest guitar", "solo violin", …
+    The names of the performers for the specified type.  These types include:
 
-    Orchestra Relationship Type (releases, recordings), <type> is "orchestra"
+    - vocals or instruments for the associated release or recording, where <type> can be "vocal", "guest guitar", "solo violin", etc.
 
-    Concertmaster Relationship Type (releases, recordings), <type> is "concertmaster"
+    - the orchestra for the associated release or recording, where <type> is "orchestra"
+
+    - the concert master for the associated release or recording, where <type> is "concertmaster"
 
 **producer**
 
-    Producer Relationship Type
+    The names of the producers for the associated release or recording.
 
 **remixer**
 
-    Remixer Relationship Type
+    The names of the remixer engineers associated with the track.
 
 **work**
 
-    Work Name (*since Picard 1.3*)
+    The name of the work associated with the track. (*since Picard 1.3*)
 
 **writer**
 
-    Writer Relationship Type (*since Picard 1.0*). Not written to most file formats automatically.
+    The names of the writers associated with the related work. (*since Picard 1.0*). This is not written to most file formats automatically.
     You can merge this with composers with a script like:
 
     .. code-block:: taggerscript
