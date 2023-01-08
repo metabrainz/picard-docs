@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021.
+# Bob Swift <bswift@rsds.ca>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-07 16:23-0700\n"
-"PO-Revision-Date: 2022-05-04 14:35-0600\n"
+"PO-Revision-Date: 2023-01-08 23:51+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/variablestags_advanced/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/variablestags_advanced/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/tags_advanced.rst:8
@@ -78,6 +79,9 @@ msgid ""
 "the instrument and orchestra arrangers, and could be associated with the "
 "release, recording or work. (*since Picard 0.10*)"
 msgstr ""
+"Les noms des arrangeurs associés à la piste.  Cela peut inclure les "
+"arrangeurs des instruments et de l'orchestre, et peut être associé à la "
+"sortie, l'enregistrement ou l'œuvre. (*depuis Picard 0.10*)"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:34
@@ -86,7 +90,7 @@ msgstr "**composer**"
 
 #: ../../variables/tags_advanced.rst:36
 msgid "The names of the composers for the associated work."
-msgstr ""
+msgstr "Les noms des compositeurs de l'œuvre associée."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:38
@@ -95,7 +99,7 @@ msgstr "**composersort**"
 
 #: ../../variables/tags_advanced.rst:40
 msgid "The sort names of the composers for the associated work."
-msgstr ""
+msgstr "Les noms de tri des compositeurs de l'œuvre associée."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:42
@@ -108,6 +112,9 @@ msgid ""
 " the conductor and chorus master, and could be associated with the "
 "release or recording."
 msgstr ""
+"Les noms des chefs d'orchestre associés à la piste.  Ils peuvent inclure le "
+"chef d'orchestre et le chef de chœur, et peuvent être associés à la sortie "
+"ou à l'enregistrement."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:47
@@ -116,7 +123,7 @@ msgstr "**djmixer**"
 
 #: ../../variables/tags_advanced.rst:49
 msgid "The names of the DJ mixers for the track. (*since Picard 0.9*)"
-msgstr ""
+msgstr "Les noms des DJ mixeurs pour la piste. (*depuis Picard 0.9*)"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:51
@@ -125,7 +132,7 @@ msgstr "**engineer**"
 
 #: ../../variables/tags_advanced.rst:53
 msgid "The names of the engineers associated with the track."
-msgstr ""
+msgstr "Les noms des ingénieurs associés à la piste."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:55
@@ -137,6 +144,8 @@ msgid ""
 "The licenses associated with the track, either through the release or "
 "recording relationships. (*since Picard 1.0*)"
 msgstr ""
+"Les licences associées à la piste, soit par le biais de la libération ou des "
+"relations d'enregistrement. (*depuis Picard 1.0*)"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:59
@@ -145,7 +154,7 @@ msgstr "**lyricist**"
 
 #: ../../variables/tags_advanced.rst:61
 msgid "The names of the lyricists for the associated work."
-msgstr ""
+msgstr "Les noms des paroliers de l'œuvre associée."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:63
@@ -157,6 +166,8 @@ msgid ""
 "The names of the \"Mixed By\" engineers associated with the track. "
 "(*since Picard 0.9*)"
 msgstr ""
+"Les noms des ingénieurs \"Mélangé par\" associés à la piste. (*depuis Picard "
+"0.9*)"
 
 # Tag name.  Do not translate (other than "type").
 #: ../../variables/tags_advanced.rst:67
@@ -166,34 +177,31 @@ msgstr "**performer:<type>**"
 #: ../../variables/tags_advanced.rst:69
 msgid "The names of the performers for the specified type.  These types include:"
 msgstr ""
+"Les noms des interprètes pour le type spécifié.  Ces types comprennent :"
 
 #: ../../variables/tags_advanced.rst:71
-#, fuzzy
 msgid ""
 "vocals or instruments for the associated release or recording, where "
 "<type> can be \"vocal\", \"guest guitar\", \"solo violin\", etc."
 msgstr ""
-"Type de relation interprète (sorties - voix / instruments, "
-"enregistrements - voix / instruments), <type> peut être \"vocal\", "
-"\"guest guitar\", \"solo violin\",…"
+"des voix ou des instruments pour la sortie ou l'enregistrement associé, où "
+"<type> peut être \"voix\", \"guitare invitée\", \"violon solo\", etc."
 
 #: ../../variables/tags_advanced.rst:73
-#, fuzzy
 msgid ""
 "the orchestra for the associated release or recording, where <type> is "
 "\"orchestra\""
 msgstr ""
-"Type de relation avec l'orchestre (sorties, enregistrements), <type> est "
-"\"orchestra\""
+"l'orchestre de la publication ou de l'enregistrement associé, où <type> est "
+"\"orchestre\""
 
 #: ../../variables/tags_advanced.rst:75
-#, fuzzy
 msgid ""
 "the concert master for the associated release or recording, where <type> "
 "is \"concertmaster\""
 msgstr ""
-"Type de relation Maître de concert (sorties, enregistrements), <type> est"
-" \"concertmaster\""
+"le master de concert pour la publication ou l'enregistrement associé, où "
+"<type> est \"concertmaster\""
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:77
@@ -202,7 +210,7 @@ msgstr "**producer**"
 
 #: ../../variables/tags_advanced.rst:79
 msgid "The names of the producers for the associated release or recording."
-msgstr ""
+msgstr "Les noms des producteurs pour la sortie ou l'enregistrement associé."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:81
@@ -211,7 +219,7 @@ msgstr "**remixer**"
 
 #: ../../variables/tags_advanced.rst:83
 msgid "The names of the remixer engineers associated with the track."
-msgstr ""
+msgstr "Les noms des ingénieurs remixeurs associés à la piste."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:85
@@ -220,7 +228,7 @@ msgstr "**work**"
 
 #: ../../variables/tags_advanced.rst:87
 msgid "The name of the work associated with the track. (*since Picard 1.3*)"
-msgstr ""
+msgstr "Le nom de l'œuvre associée à la piste. (*depuis Picard 1.3*)"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:89
@@ -228,15 +236,15 @@ msgid "**writer**"
 msgstr "**writer**"
 
 #: ../../variables/tags_advanced.rst:91
-#, fuzzy
 msgid ""
 "The names of the writers associated with the related work. (*since Picard"
 " 1.0*). This is not written to most file formats automatically. You can "
 "merge this with composers with a script like:"
 msgstr ""
-"Type de relation écrivain (*depuis Picard 1.0*). Non écrit "
-"automatiquement dans la plupart des formats de fichiers. Vous pouvez "
-"fusionner cela avec des compositeurs avec un script comme:"
+"Les noms des rédacteurs associés aux travaux connexes. (*depuis Picard 1.0*)"
+". Ceci n'est pas écrit automatiquement dans la plupart des formats de "
+"fichiers. Vous pouvez le fusionner avec les compositeurs avec un script "
+"comme :"
 
 #: ../../variables/tags_advanced.rst:101
 msgid ":index:`Genre Tags <tags; genre>`"
@@ -362,4 +370,3 @@ msgstr ""
 
 #~ msgid "Work Name (*since Picard 1.3*)"
 #~ msgstr "Nom du travail (*depuis Picard 1.3*)"
-
