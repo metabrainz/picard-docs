@@ -27,9 +27,11 @@ Contributors include (in alphabetic surname order):
 - Laurent Monin
 - Akash Nagaraj
 - Frederik "Freso" S. Olesen
+- Guntbert Reiter
 - Theodore Fabian Rudy
 - skelly37
 - Sophist
+- Odd Stråbø
 - Bob Swift
 - Akshat Tiwari
 - Philipp Wolfer
