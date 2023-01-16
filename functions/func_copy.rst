@@ -14,8 +14,13 @@ $copy
 Copies metadata from variable ``source`` to ``target``. The difference from ``$set(target,%source%)`` is
 that ``$copy(target,source)`` copies multi-value variables without flattening them.
 
-Note that if the variable ``target`` already exists, it will be overwritten by ``source``.
+.. note::
 
+   Unlike most functions, in this case the ``source`` is specified **without** enclosing it with percent signs (%).
+
+.. warning::
+
+   If the variable ``target`` already exists, it will be overwritten by ``source``.
 
 **Example:**
 
