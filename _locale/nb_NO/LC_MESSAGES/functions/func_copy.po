@@ -1,20 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
-# This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2023-01-16 09:48-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
 "Language: nb_NO\n"
+"Language-Team: none\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_copy.rst:6
 msgid "$copy"
@@ -37,17 +40,38 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_copy.rst:14
-msgid "Copies metadata from variable ``source`` to ``target``. The difference from ``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-value variables without flattening them."
+#, python-format
+msgid ""
+"Copies metadata from variable ``source`` to ``target``. The difference "
+"from ``$set(target,%source%)`` is that ``$copy(target,source)`` copies "
+"multi-value variables without flattening them."
 msgstr ""
 
-#: ../../functions/func_copy.rst:17
-msgid "Note that if the variable ``target`` already exists, it will be overwritten by ``source``."
+#: ../../functions/func_copy.rst:19
+msgid ""
+"Unlike most functions, in this case the ``source`` is specified "
+"**without** enclosing it with percent signs (%)."
 msgstr ""
 
-#: ../../functions/func_copy.rst:20
+#: ../../functions/func_copy.rst:23
+msgid ""
+"If the variable ``target`` already exists, it will be overwritten by "
+"``source``."
+msgstr ""
+
+#: ../../functions/func_copy.rst:25
 msgid "**Example:**"
 msgstr ""
 
-#: ../../functions/func_copy.rst:22
-msgid "The following statements will yield the values for ``target`` as indicated:"
+#: ../../functions/func_copy.rst:27
+msgid ""
+"The following statements will yield the values for ``target`` as "
+"indicated:"
 msgstr ""
+
+#~ msgid ""
+#~ "Note that if the variable ``target`` "
+#~ "already exists, it will be overwritten"
+#~ " by ``source``."
+#~ msgstr ""
+
