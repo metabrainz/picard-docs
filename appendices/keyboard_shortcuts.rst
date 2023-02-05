@@ -13,6 +13,8 @@
 Appendix D: :index:`Keyboard Shortcuts <user interface; keyboard shortcuts>`
 ============================================================================
 
+In addition to the standard keyboard shortcuts provided by your operating system for things like text selection, copy and paste, Picard also provides the following:
+
 Main window
 -----------
 
