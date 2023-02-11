@@ -23,28 +23,27 @@
 :index:`Basic Tags <tags; basic>`
 ==================================
 
-The following tags are populated from MusicBrainz data for most releases, without any special Picard settings.
+The following tags are supported and are written in the standard format that can be read by other software.  The information is populated from MusicBrainz data for most releases, without any special Picard settings.  Note that some of the information such as 'lyrics' is not contained within the MusicBrainz database, and will not be provided automatically.
 
-All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in
-several other more minor settings) by wrapping them between percent '%' symbols (e.g. ``%title%``).
+All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in several other more minor settings) by wrapping them between percent '%' symbols (e.g. ``%title%``).
 
-.. note::
-
-   Tags will not be created and will not be available as variables if there was no value retrieved for the tag
-   from the MusicBrainz database.
+Most tags beginning with ``musicbrainz_`` provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity.  The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity.  For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation.
 
 .. note::
 
-   Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping
-   </appendices/tag_mapping>` section for details.
+   Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database.
+
+.. note::
+
+   Some of these tags are only supported for certain file types or tag formats.  Please see the :doc:`Picard Tag Mapping </appendices/tag_mapping>` section for details.
 
 **acoustid_fingerprint**
 
-    AcoustID Fingerprint for the track.
+    AcoustID Fingerprint for the track.  The fingerprint is based on the audio information found in a file, and is calculated using the `Chromaprint <https://acoustid.org/chromaprint>`_ software.
 
 **acoustid_id**
 
-    AcoustID associated with the track.
+    AcoustID associated with the track.  The AcoustID is the identifier assigned to an audio file based on its 'acoustid_fingerprint'.  Multiple fingerprints may be assigned the same AcoustID if the fingerprints are similar enough.
 
 **album**
 
@@ -88,8 +87,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **catalognumber**
 
-    The number(s) assigned to the release by the label(s), which can often be found on the spine or near the barcode.
-    There may be more than one, especially when multiple labels are involved.
+    The number(s) assigned to the release by the label(s), which can often be found on the spine or near the barcode.  There may be more than one, especially when multiple labels are involved.
 
 **comment**
 
@@ -102,11 +100,11 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **copyright**
 
-    Contain copyright message for the copyright holder of the original sound, begin with a year and a space character.
+    Contains the copyright message for the copyright holder of the original sound, beginning with a year and a space character.
 
 **date**
 
-    Release Date (YYYY-MM-DD) - the date that the release was issued.
+    Release Date (YYYY-MM-DD) - the date that the release (album) was issued.
 
 **director**
 
@@ -130,8 +128,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **isrc**
 
-    International Standard Recording Code - an international standard code for uniquely identifying sound recordings and music video recordings.
-    See `Wikipedia <https://en.wikipedia.org/wiki/International_Standard_Recording_Code>`_ for more information. (*since Picard 0.12*)
+    International Standard Recording Code - an international standard code for uniquely identifying sound recordings and music video recordings.  See `Wikipedia <https://en.wikipedia.org/wiki/International_Standard_Recording_Code>`_ for more information. (*since Picard 0.12*)
 
 **key**
 
@@ -147,7 +144,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **lyrics**
 
-    Lyrics for the track.
+    Lyrics for the track.  Not provided by MusicBrainz.
 
 **media**
 
@@ -155,45 +152,43 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **musicbrainz_albumartistid**
 
-    Release Artist's MusicBrainz Identifier.
+    Release Artist's MusicBrainz Identifier (MBID).
 
 **musicbrainz_albumid**
 
-    Release MusicBrainz Identifier.
+    Release MusicBrainz Identifier (MBID).
 
 **musicbrainz_artistid**
 
-    Track Artist's MusicBrainz Identifier.
+    Track Artist's MusicBrainz Identifier (MBID).
 
 **musicbrainz_discid**
 
-    Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of
-    contents (TOC) information read from the disc. This tag contains the Disc ID if the album information was retrieved using
-    :menuselection:`"Tools --> Lookup CD"`. (*since Picard 0.12*)
+    Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of contents (TOC) information read from the disc. This tag contains the Disc ID if the album information was retrieved using :menuselection:`"Tools --> Lookup CD"`. (*since Picard 0.12*)
 
 **musicbrainz_originalalbumid**
 
-    Original Release's MusicBrainz Identifier.
+    Original Release's MusicBrainz Identifier (MBID).
 
 **musicbrainz_originalartistid**
 
-    Original Track Artist's MusicBrainz Identifier.
+    Original Track Artist's MusicBrainz Identifier (MBID).
 
 **musicbrainz_recordingid**
 
-    Recording's MusicBrainz Identifier.
+    Recording's MusicBrainz Identifier (MBID).
 
 **musicbrainz_releasegroupid**
 
-    Release Group's MusicBrainz Identifier.
+    Release Group's MusicBrainz Identifier (MBID).
 
 **musicbrainz_trackid**
 
-    Release Track MusicBrainz Identifier.
+    Release Track MusicBrainz Identifier (MBID).
 
 **musicbrainz_workid**
 
-    MusicBrainz Identifier for the work.
+    MusicBrainz Identifier for the work (MBID).
 
 .. **musicip_fingerprint**
 
@@ -213,19 +208,11 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **originaldate**
 
-   The original release date in the format YYYY-MM-DD. By default this is set to the earliest release in the Release
-   Group.  This can provide, for example, the release date of the vinyl version of what you have on CD. (*Included as
-   standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version
-   earlier than Picard 0.15*)
+   The original release date in the format YYYY-MM-DD. By default this is set to the earliest release in the Release Group.  This can provide, for example, the release date of the vinyl version of what you have on CD. (*Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)
 
    .. note::
 
-      This is the same information provided in the ``_releasegroup_firstreleasedate`` variable, and is consistent across
-      all tracks in the release.  If you prefer to have this tag populated with the date of the earliest recording of
-      the track in the database, which will likely be different for each track in the release, this can be achieved by
-      enabling a one-line tagging script as ``$set(originaldate,%_recording_firstreleasedate%)``.  Be aware that setting
-      this can cause a release to be scattered across multiple directories if you use ``%originaldate%`` as part of the
-      path portion of your file naming script.
+      This is the same information provided in the ``_releasegroup_firstreleasedate`` variable, and is consistent across all tracks in the release.  If you prefer to have this tag populated with the date of the earliest recording of the track in the database, which will likely be different for each track in the release, this can be achieved by enabling a one-line tagging script as ``$set(originaldate,%_recording_firstreleasedate%)``.  Be aware that setting this can cause a release to be scattered across multiple directories if you use ``%originaldate%`` as part of the path portion of your file naming script.
 
 
    .. note::
@@ -234,8 +221,7 @@ several other more minor settings) by wrapping them between percent '%' symbols 
 
 **originalyear**
 
-   The year of the original release date in the format YYYY. By default this is set to the earliest release in the Release
-   Group.  This can provide, for example, the release year of the vinyl version of what you have on CD.
+   The year of the original release date in the format YYYY. By default this is set to the earliest release in the Release Group.  This can provide, for example, the release year of the vinyl version of what you have on CD.
 
 **releasecountry**
 
