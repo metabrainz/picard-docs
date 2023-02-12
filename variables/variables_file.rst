@@ -38,6 +38,14 @@ These variables are populated from MusicBrainz data for most releases, without a
 
     The name of the file without extension. (*since Picard 1.1*)
 
+**_file_created_timestamp**
+
+    The file creation timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported by the file system. (*since Picard 2.9*)
+
+**_file_modified_timestamp**
+
+    The file modification timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported by the file system. (*since Picard 2.9*)
+
 **_format**
 
     Media format of the file (e.g.: MPEG-1 Audio).
