@@ -14,7 +14,9 @@ that Picard recognizes are:
 | Usage: **CLEAR_LOGS**
 | Implemented: Picard 2.9
 
-Clear the Picard logs.
+Clear all entries from Picard's log.  This is the equivalent of clicking the
+:guilabel:`Clear Log` button from the log viewing screen opened using the
+:menuselection:`"Help --> View Error/Debug Log"` command.
 
 :index:`CLUSTER <executable commands; CLUSTER>`
 -----------------------------------------------
@@ -22,7 +24,8 @@ Clear the Picard logs.
 | Usage: **CLUSTER**
 | Implemented: Picard 2.9
 
-Cluster all files in the cluster pane.
+Cluster all files in the cluster pane.  This is the equivalent of using the
+:menuselection:`"Tools --> Cluster"` command.
 
 :index:`FINGERPRINT <executable commands; FINGERPRINT>`
 -------------------------------------------------------
@@ -31,6 +34,8 @@ Cluster all files in the cluster pane.
 | Implemented: Picard 2.9
 
 Calculate acoustic fingerprints for all (matched) files in the album pane.
+This is the equivalent of using the :menuselection:`"Tools --> Generate
+AcoustID Fingerprints"` command.
 
 :index:`FROM_FILE <executable commands; FROM_FILE>`
 ---------------------------------------------------
@@ -45,6 +50,46 @@ lines and lines beginning with an octothorpe (#) are ignored. Command files can
 include other command files by specifying them with another ``FROM_FILE`` command.
 Circular references (by including a command file that is currently being processed)
 are ignored and will be logged as a warning.
+
+For example, you may have a file named ``commands.txt`` containing the standard
+commands that you want to use when processing each directory, such as:
+
+.. code::
+
+   # Try clustering and lookup the clusters first
+   CLUSTER
+   LOOKUP_CLUSTERED
+
+   # Save matched clusters
+   SAVE_MATCHED
+
+   # Calculate and submit fingerprints for the matched files
+   FINGERPRINT
+   SUBMIT_FINGERPRINTS
+
+   # Clean up and remove the saved files
+   REMOVE_SAVED
+   REMOVE_EMPTY
+
+   # Try scanning the remaining files to find matches
+   SCAN
+
+   # Save matched files from the scans
+   SAVE_MATCHED
+
+   # Clean up and remove the saved files
+   REMOVE_SAVED
+   REMOVE_EMPTY
+
+   # Any files remaining in the cluster pane could not be
+   # matched automatically
+
+You could then process a directory by starting Picard with the command:
+
+.. code::
+
+   picard -e LOAD path/to/directory/of/unprocessed/files -e FROM_FILE commands.txt
+
 
 :index:`LOAD <executable commands; LOAD>`
 -----------------------------------------
@@ -74,6 +119,8 @@ If a specified item contains a space, it must be enclosed in quotes such as
 Lookup files in the clustering pane. Options are clustered files, unclustered files or
 all files. If not specified, the command defaults to all files.
 
+This is the equivalent of using the :menuselection:`"Tools --> Lookup"` command.
+
 :index:`LOOKUP_CD <executable commands; LOOKUP_CD>`
 ---------------------------------------------------
 
@@ -82,6 +129,8 @@ all files. If not specified, the command defaults to all files.
 
 Read CD from the selected drive or ripper log file, and looks it up on MusicBrainz. If
 no argument is specified, it defaults to the first (alphabetically) available disc drive.
+
+This is the equivalent of using the :menuselection:`"Tools --> Lookup CD..."` command.
 
 :index:`PAUSE <executable commands; PAUSE>`
 -------------------------------------------
@@ -94,11 +143,17 @@ Pause executable command processing for the specified number of seconds.
 :index:`QUIT <executable commands; QUIT>`
 -----------------------------------------
 
-| Usage: **QUIT**
+| Usage: **QUIT \[force\]**
 | Implemented: Picard 2.9
 
-Exits the running instance of Picard. Once a ``QUIT`` command has been queued, Picard will
-not queue any further executable commands.
+The ``QUIT`` command waits until all queued executable commands have completed, and then
+initiates a shutdown request the same as if the user closed Picard from the user interface.
+This allows Picard to perform the same checks for unsaved files and such.  When 'force' is
+entered as an argument to the command, Picard will bypass the unsaved files check.
+
+Once a ``QUIT`` command has been queued, Picard will not queue any further executable commands.
+If the user cancels the ``QUIT`` from the unsaved files check dialog, the system will allow
+more commands to be queued.
 
 :index:`REMOVE <executable commands; REMOVE>`
 ---------------------------------------------
@@ -162,7 +217,8 @@ Saves all modified files from the album pane.
 | Usage: **SCAN**
 | Implemented: Picard 2.9
 
-Scans all files in the cluster pane.
+Scans all files in the cluster pane.  This is the equivalent of using the
+:menuselection:`"Tools --> Scan"` command.
 
 :index:`SHOW <executable commands; SHOW>`
 -----------------------------------------
@@ -170,7 +226,7 @@ Scans all files in the cluster pane.
 | Usage: **SHOW**
 | Implemented: Picard 2.9
 
-Make the running instance the currently active window.
+Make the running instance of Picard the currently active window.
 
 :index:`SUBMIT_FINGERPRINTS <executable commands; SUBMIT_FINGERPRINTS>`
 -----------------------------------------------------------------------
@@ -179,6 +235,8 @@ Make the running instance the currently active window.
 | Implemented: Picard 2.9
 
 Submits outstanding acoustic fingerprints for all (matched) files in the album pane.
+This is the equivalent of using the :menuselection:`"Tools --> Submit AcoustIDs"`
+command.
 
 :index:`WRITE_LOGS <executable commands; WRITE_LOGS>`
 -----------------------------------------------------
@@ -186,4 +244,6 @@ Submits outstanding acoustic fingerprints for all (matched) files in the album p
 | Usage: **WRITE_LOGS <path to output file>**
 | Implemented: Picard 2.9
 
-Writes the Picard logs to the specified output file.
+Writes the Picard logs to the specified output file. This is the equivalent of using
+the :guilabel:`Save As...` button from the log viewing screen opened using the
+:menuselection:`"Help --> View Error/Debug Log"` command.
