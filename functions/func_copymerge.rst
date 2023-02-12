@@ -17,8 +17,9 @@ without flattening them.  Following the operation, ``target`` will be a multi-va
 
 If ``keep_duplicates`` is set, then the duplicates will not be removed from the result.
 
-Note that the variable names for ``target`` and ``source`` are passed directly without enclosing them
-in percent signs '%'.
+.. note::
+
+   Unlike most functions, in this case the ``source`` is specified **without** enclosing it with percent signs (%).
 
 
 **Example:**

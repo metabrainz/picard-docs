@@ -13,15 +13,18 @@ $dateformat
 
 Returns the input ``date`` in the specified ``format``, which is based on the
 standard Python ``strftime`` `format codes <https://strftime.org>`_. If no ``format`` is specified
-the date will be returned in the form '2020-02-15'.  Note that any special
-characters such as '%', '$', '(', ')' and '\\' will need to be escaped as shown in the
-examples below.
+the date will be returned in the form '2020-02-15'.
 
 The "year", "month" and "day" portions of the date must be entered as numbers, and can be separated
 by any non-numeric characters.  The default order for the input date is "ymd".  This can be changed
 by specifying a ``date_order`` of either "dmy" or "mdy".
 
 If either the ``date`` or ``format`` are invalid an empty string will be returned.
+
+.. note::
+
+   Any special characters such as '%', '$', '(', ')' and '\\' will need to be escaped as shown in the
+   examples below.
 
 .. warning::
 
