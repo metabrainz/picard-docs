@@ -33,6 +33,11 @@ MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/Acous
    added as of Picard v2.7 to accommodate use cases such as a workflow where the user adds this tag directly after
    ripping to avoid having to redo the calculation in the future.
 
+**Maximum threads to use for calculator**
+
+   This allows you to specify the maximum number of fingerprint calculations to be run concurrently.  The default
+   value is 2.
+
 **Fingerprint calculator**
 
    This identifies the external program on your system that will be used to calculate the AcoustID
