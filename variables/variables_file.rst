@@ -3,7 +3,7 @@
 :index:`File Variables <variables; file>`
 ==========================================
 
-These variables are populated from MusicBrainz data for most releases, without any special Picard settings.
+These variables are populated from information found in the audio files themselves, without any special Picard settings.
 
 .. note::
 
