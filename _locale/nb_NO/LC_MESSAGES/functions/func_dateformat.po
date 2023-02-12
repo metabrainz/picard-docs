@@ -1,20 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
-# This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2023-02-12 08:15-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
 "Language: nb_NO\n"
+"Language-Team: none\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_dateformat.rst:6
 msgid "$dateformat"
@@ -37,25 +40,63 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:14
-msgid "Returns the input ``date`` in the specified ``format``, which is based on the standard Python ``strftime`` `format codes <https://strftime.org>`_. If no ``format`` is specified the date will be returned in the form '2020-02-15'.  Note that any special characters such as '%', '$', '(', ')' and '\\\\' will need to be escaped as shown in the examples below."
+msgid ""
+"Returns the input ``date`` in the specified ``format``, which is based on"
+" the standard Python ``strftime`` `format codes <https://strftime.org>`_."
+" If no ``format`` is specified the date will be returned in the form "
+"'2020-02-15'."
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:20
-msgid "The \"year\", \"month\" and \"day\" portions of the date must be entered as numbers, and can be separated by any non-numeric characters.  The default order for the input date is \"ymd\".  This can be changed by specifying a ``date_order`` of either \"dmy\" or \"mdy\"."
+#: ../../functions/func_dateformat.rst:18
+msgid ""
+"The \"year\", \"month\" and \"day\" portions of the date must be entered "
+"as numbers, and can be separated by any non-numeric characters.  The "
+"default order for the input date is \"ymd\".  This can be changed by "
+"specifying a ``date_order`` of either \"dmy\" or \"mdy\"."
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:24
-msgid "If either the ``date`` or ``format`` are invalid an empty string will be returned."
+#: ../../functions/func_dateformat.rst:22
+msgid ""
+"If either the ``date`` or ``format`` are invalid an empty string will be "
+"returned."
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:28
-msgid "Platform-specific formatting codes should be avoided to help ensure the portability of scripts across the different platforms.  These codes include: remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or macOS, and their equivalent ``%#d`` and ``%#m`` on Windows); element length specifiers (e.g.: ``%3Y``); and hanging '%' at the end of the format string."
+#: ../../functions/func_dateformat.rst:26
+msgid ""
+"Any special characters such as '%', '$', '(', ')' and '\\\\' will need to"
+" be escaped as shown in the examples below."
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:34
+#: ../../functions/func_dateformat.rst:31
+#, python-format
+msgid ""
+"Platform-specific formatting codes should be avoided to help ensure the "
+"portability of scripts across the different platforms.  These codes "
+"include: remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or "
+"macOS, and their equivalent ``%#d`` and ``%#m`` on Windows); element "
+"length specifiers (e.g.: ``%3Y``); and hanging '%' at the end of the "
+"format string."
+msgstr ""
+
+#: ../../functions/func_dateformat.rst:37
 msgid "**Example:**"
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:36
+#: ../../functions/func_dateformat.rst:39
 msgid "The following statements will return the values indicated:"
 msgstr ""
+
+#~ msgid ""
+#~ "Returns the input ``date`` in the "
+#~ "specified ``format``, which is based on"
+#~ " the standard Python ``strftime`` `format"
+#~ " codes <https://strftime.org>`_. If no "
+#~ "``format`` is specified the date will"
+#~ " be returned in the form "
+#~ "'2020-02-15'.  Note that any special "
+#~ "characters such as '%', '$', '(', "
+#~ "')' and '\\\\' will need to be "
+#~ "escaped as shown in the examples "
+#~ "below."
+#~ msgstr ""
+

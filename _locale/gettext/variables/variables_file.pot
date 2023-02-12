@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.8.5\n"
+"Project-Id-Version: MusicBrainz Picard v2.9alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-30 13:41+0100\n"
+"POT-Creation-Date: 2023-02-12 08:15-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid ":index:`File Variables <variables; file>`"
 msgstr ""
 
 #: ../../variables/variables_file.rst:6
-msgid "These variables are populated from MusicBrainz data for most releases, without any special Picard settings."
+msgid "These variables are populated from information found in the audio files themselves, without any special Picard settings."
 msgstr ""
 
 #: ../../variables/variables_file.rst:10
@@ -81,25 +81,41 @@ msgid "The name of the file without extension. (*since Picard 1.1*)"
 msgstr ""
 
 #: ../../variables/variables_file.rst:41
-msgid "**_format**"
+msgid "**_file_created_timestamp**"
 msgstr ""
 
 #: ../../variables/variables_file.rst:43
-msgid "Media format of the file (e.g.: MPEG-1 Audio)."
+msgid "The file creation timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported by the file system. (*since Picard 2.9*)"
 msgstr ""
 
 #: ../../variables/variables_file.rst:45
-msgid "**_length**"
+msgid "**_file_modified_timestamp**"
 msgstr ""
 
 #: ../../variables/variables_file.rst:47
-msgid "The length of the track in format mins:secs."
+msgid "The file modification timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported by the file system. (*since Picard 2.9*)"
 msgstr ""
 
 #: ../../variables/variables_file.rst:49
-msgid "**_sample_rate**"
+msgid "**_format**"
 msgstr ""
 
 #: ../../variables/variables_file.rst:51
+msgid "Media format of the file (e.g.: MPEG-1 Audio)."
+msgstr ""
+
+#: ../../variables/variables_file.rst:53
+msgid "**_length**"
+msgstr ""
+
+#: ../../variables/variables_file.rst:55
+msgid "The length of the track in format mins:secs."
+msgstr ""
+
+#: ../../variables/variables_file.rst:57
+msgid "**_sample_rate**"
+msgstr ""
+
+#: ../../variables/variables_file.rst:59
 msgid "Number of digitizing samples per second (Hz)."
 msgstr ""

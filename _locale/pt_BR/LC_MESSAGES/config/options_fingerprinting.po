@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 12:14-0600\n"
+"POT-Creation-Date: 2023-02-12 08:15-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: pt_BR\n"
@@ -78,10 +78,20 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_fingerprinting.rst:36
-msgid "**Fingerprint calculator**"
+msgid "**Maximum threads to use for calculator**"
 msgstr ""
 
 #: ../../config/options_fingerprinting.rst:38
+msgid ""
+"This allows you to specify the maximum number of fingerprint calculations"
+" to be run concurrently.  The default value is 2."
+msgstr ""
+
+#: ../../config/options_fingerprinting.rst:41
+msgid "**Fingerprint calculator**"
+msgstr ""
+
+#: ../../config/options_fingerprinting.rst:43
 msgid ""
 "This identifies the external program on your system that will be used to "
 "calculate the AcoustID fingerprints.  By default, Picard uses the "
@@ -89,7 +99,7 @@ msgid ""
 "utility which is included with the Picard installation."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:42
+#: ../../config/options_fingerprinting.rst:47
 msgid ""
 "Picard will auto-detect the path unless you have specifically overwritten"
 " it with something different than the detected path. "
@@ -100,11 +110,11 @@ msgid ""
 "specific path this will be used."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:48
+#: ../../config/options_fingerprinting.rst:53
 msgid "**API key**"
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:50
+#: ../../config/options_fingerprinting.rst:55
 msgid ""
 "The key used to access the AcoustID API to lookup and submit AcoustID "
 "fingerprints.  There is no cost to obtain an API key."

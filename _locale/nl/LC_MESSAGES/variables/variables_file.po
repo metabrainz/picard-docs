@@ -1,35 +1,45 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
-# This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the MusicBrainz Picard
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 09:38-0600\n"
+"POT-Creation-Date: 2023-02-12 08:15-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
 "Language: nl\n"
+"Language-Team: none\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_file.rst:4
 msgid ":index:`File Variables <variables; file>`"
 msgstr ""
 
 #: ../../variables/variables_file.rst:6
-msgid "These variables are populated from MusicBrainz data for most releases, without any special Picard settings."
+msgid ""
+"These variables are populated from information found in the audio files "
+"themselves, without any special Picard settings."
 msgstr ""
 
 #: ../../variables/variables_file.rst:10
-msgid "Variables that rely on information from the files (e.g.: _bitrate) are only available for use on tracks with attached files, when running scripts manually on files or in the file naming script."
+msgid ""
+"Variables that rely on information from the files (e.g.: _bitrate) are "
+"only available for use on tracks with attached files, when running "
+"scripts manually on files or in the file naming script."
 msgstr ""
 
 #: ../../variables/variables_file.rst:15
-msgid "Prior to version 2.5 Picard did not support using file variables in tagging scripts."
+msgid ""
+"Prior to version 2.5 Picard did not support using file variables in "
+"tagging scripts."
 msgstr ""
 
 #: ../../variables/variables_file.rst:17
@@ -61,7 +71,9 @@ msgid "**_dirname**"
 msgstr ""
 
 #: ../../variables/variables_file.rst:31
-msgid "The name of the directory containing the file at the point of being loaded into Picard. (*since Picard 1.1*)"
+msgid ""
+"The name of the directory containing the file at the point of being "
+"loaded into Picard. (*since Picard 1.1*)"
 msgstr ""
 
 #: ../../variables/variables_file.rst:33
@@ -81,25 +93,52 @@ msgid "The name of the file without extension. (*since Picard 1.1*)"
 msgstr ""
 
 #: ../../variables/variables_file.rst:41
-msgid "**_format**"
+msgid "**_file_created_timestamp**"
 msgstr ""
 
 #: ../../variables/variables_file.rst:43
-msgid "Media format of the file (e.g.: MPEG-1 Audio)."
+msgid ""
+"The file creation timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported"
+" by the file system. (*since Picard 2.9*)"
 msgstr ""
 
 #: ../../variables/variables_file.rst:45
-msgid "**_length**"
+msgid "**_file_modified_timestamp**"
 msgstr ""
 
 #: ../../variables/variables_file.rst:47
-msgid "The length of the track in format mins:secs."
+msgid ""
+"The file modification timestamp in the form 'YYYY-MM-DD HH:MM:SS' as "
+"reported by the file system. (*since Picard 2.9*)"
 msgstr ""
 
 #: ../../variables/variables_file.rst:49
-msgid "**_sample_rate**"
+msgid "**_format**"
 msgstr ""
 
 #: ../../variables/variables_file.rst:51
+msgid "Media format of the file (e.g.: MPEG-1 Audio)."
+msgstr ""
+
+#: ../../variables/variables_file.rst:53
+msgid "**_length**"
+msgstr ""
+
+#: ../../variables/variables_file.rst:55
+msgid "The length of the track in format mins:secs."
+msgstr ""
+
+#: ../../variables/variables_file.rst:57
+msgid "**_sample_rate**"
+msgstr ""
+
+#: ../../variables/variables_file.rst:59
 msgid "Number of digitizing samples per second (Hz)."
 msgstr ""
+
+#~ msgid ""
+#~ "These variables are populated from "
+#~ "MusicBrainz data for most releases, "
+#~ "without any special Picard settings."
+#~ msgstr ""
+
