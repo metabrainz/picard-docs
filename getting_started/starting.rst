@@ -14,7 +14,7 @@ As of version 2.9, Picard will try to only run a single instance of the program 
 When the program is started, it checks to see if there is another instance of that version,
 configuration file and plugin startup status ``-P`` already running.  If the same version
 is already running, any files or directories specified on the command line of the new
-instance, along with any executable commands specified with the ``-e`` or ``-exec`` options
+instance, along with any executable commands specified with the ``-e`` or ``--exec`` options
 will be passed to the already running instance for processing and the new duplicate instance
 will be shut down.  This allows batch processing of files to be initiated automatically from
 other processes.  If there is no instance of that version already running, Picard will start
@@ -27,7 +27,7 @@ Instances started with command-line argument ``-s / --stand-alone`` always start
 
 If there is already an instance running when another instance is started that doesn't result in a
 stand-alone instance, any of the command-line overrides ``-d / --debug``, ``-M / --no-player``
-or ``-N / -no-restore`` of the new duplicate instance will be ignored, and only the specified
+or ``-N / --no-restore`` of the new duplicate instance will be ignored, and only the specified
 files or directories and executable commands (if any) will be passed to the running instance for
 processing.  Similarly, if a primary instance has been started with any of these overrides
 specified on the command line, starting a subsequent instance of that version without the override
