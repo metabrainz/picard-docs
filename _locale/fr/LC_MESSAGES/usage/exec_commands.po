@@ -3,24 +3,29 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
+# Bob Swift <bswift@rsds.ca>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.9alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-12 08:15-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-02-13 16:14+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/usageexec_commands/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/exec_commands.rst:4
 msgid ":index:`Executable Commands <commands; executable, executable commands>`"
 msgstr ""
+":index:`Commandes exécutables <commandes; exécutables, commandes "
+"exécutables>`"
 
 #: ../../usage/exec_commands.rst:6
 msgid ""
@@ -30,14 +35,19 @@ msgid ""
 "order that they are received. The executable commands that Picard "
 "recognizes are:"
 msgstr ""
+"Picard peut accepter des commandes à traiter en les spécifiant sur la ligne "
+"de commande en utilisant l'option ``-e`` ou en les chargeant depuis un "
+"fichier texte. Les commandes sont insensibles à la casse, et sont traitées "
+"séquentiellement dans l'ordre où elles sont reçues. Les commandes "
+"exécutables que Picard reconnaît sont :"
 
 #: ../../usage/exec_commands.rst:12
 msgid ":index:`CLEAR_LOGS <executable commands; CLEAR_LOGS>`"
-msgstr ""
+msgstr ":index:`CLEAR_LOGS <commandes exécutables; CLEAR_LOGS>`"
 
 #: ../../usage/exec_commands.rst:14
 msgid "Usage: **CLEAR_LOGS**"
-msgstr ""
+msgstr "Utilisation : **CLEAR_LOGS**"
 
 #: ../../usage/exec_commands.rst:15 ../../usage/exec_commands.rst:25
 #: ../../usage/exec_commands.rst:34 ../../usage/exec_commands.rst:44
@@ -50,7 +60,7 @@ msgstr ""
 #: ../../usage/exec_commands.rst:218 ../../usage/exec_commands.rst:227
 #: ../../usage/exec_commands.rst:235 ../../usage/exec_commands.rst:245
 msgid "Implemented: Picard 2.9"
-msgstr ""
+msgstr "Implémenté : Picard 2.9"
 
 #: ../../usage/exec_commands.rst:17
 msgid ""
@@ -58,28 +68,34 @@ msgid ""
 "the :guilabel:`Clear Log` button from the log viewing screen opened using"
 " the :menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
+"Efface toutes les entrées du journal de Picard.  C'est l'équivalent de "
+"cliquer sur le bouton :guilabel:`Effacer le journal` à partir de l'écran de "
+"visualisation du journal ouvert par la commande :menuselection:`\"Aide --> "
+"Afficher le journal des erreurs et des débogages\"`."
 
 #: ../../usage/exec_commands.rst:22
 msgid ":index:`CLUSTER <executable commands; CLUSTER>`"
-msgstr ""
+msgstr ":index:`CLUSTER <commandes exécutables; CLUSTER>`"
 
 #: ../../usage/exec_commands.rst:24
 msgid "Usage: **CLUSTER**"
-msgstr ""
+msgstr "Utilisation : **CLUSTER**"
 
 #: ../../usage/exec_commands.rst:27
 msgid ""
 "Cluster all files in the cluster pane.  This is the equivalent of using "
 "the :menuselection:`\"Tools --> Cluster\"` command."
 msgstr ""
+"Regroupe tous les fichiers dans le volet de regroupement.  Cela équivaut à "
+"utiliser la commande :menuselection:`\"Outils --> Cluster\"`."
 
 #: ../../usage/exec_commands.rst:31
 msgid ":index:`FINGERPRINT <executable commands; FINGERPRINT>`"
-msgstr ""
+msgstr ":index:`FINGERPRINT <commandes exécutables; FINGERPRINT>`"
 
 #: ../../usage/exec_commands.rst:33
 msgid "Usage: **FINGERPRINT**"
-msgstr ""
+msgstr "Utilisation : **FINGERPRINT**"
 
 #: ../../usage/exec_commands.rst:36
 msgid ""
@@ -87,14 +103,17 @@ msgid ""
 "pane. This is the equivalent of using the :menuselection:`\"Tools --> "
 "Generate AcoustID Fingerprints\"` command."
 msgstr ""
+"Calcule les empreintes acoustiques pour tous les fichiers (correspondant) "
+"dans le volet album. C'est l'équivalent de l'utilisation de la commande "
+":menuselection:`\"Outils --> Générer des empreintes digitales AcoustID\"`."
 
 #: ../../usage/exec_commands.rst:41
 msgid ":index:`FROM_FILE <executable commands; FROM_FILE>`"
-msgstr ""
+msgstr ":index:`FROM_FILE <commandes exécutables; FROM_FILE>`"
 
 #: ../../usage/exec_commands.rst:43
 msgid "Usage: **FROM_FILE <file path>**"
-msgstr ""
+msgstr "Utilisation : **FROM_FILE <chemin du fichier>**"
 
 #: ../../usage/exec_commands.rst:46
 msgid ""
@@ -107,6 +126,15 @@ msgid ""
 "references (by including a command file that is currently being "
 "processed) are ignored and will be logged as a warning."
 msgstr ""
+"Charge les commandes à partir d'un fichier.  Le chemin du fichier peut être "
+"un chemin absolu ou relatif vers un fichier texte contenant les commandes à "
+"exécuter. Chaque commande à traiter doit être sur une ligne séparée avec ses "
+"arguments (le cas échéant). Les lignes vides et les lignes commençant par un "
+"octothorpe (#) sont ignorées. Les fichiers de commandes peuvent inclure "
+"d'autres fichiers de commandes en les spécifiant avec une autre commande "
+"``FROM_FILE``. Les références circulaires (par l'inclusion d'un fichier de "
+"commandes en cours de traitement) sont ignorées et feront l'objet d'un "
+"avertissement."
 
 #: ../../usage/exec_commands.rst:54
 msgid ""
@@ -114,24 +142,34 @@ msgid ""
 "standard commands that you want to use when processing each directory, "
 "such as:"
 msgstr ""
+"Par exemple, vous pouvez avoir un fichier nommé ``commands.txt`` contenant "
+"les commandes standard que vous voulez utiliser lors du traitement de chaque "
+"répertoire, comme par exemple :"
 
 #: ../../usage/exec_commands.rst:87
 msgid "You could then process a directory by starting Picard with the command:"
 msgstr ""
+"Vous pouvez alors traiter un répertoire en démarrant Picard avec la commande "
+":"
 
 #: ../../usage/exec_commands.rst:95
 msgid ":index:`LOAD <executable commands; LOAD>`"
-msgstr ""
+msgstr ":index:`LOAD <commandes exécutables; LOAD>`"
 
 #: ../../usage/exec_commands.rst:97
 msgid "Usage: **LOAD <supported MBID/URL or path to a file/directory>**"
 msgstr ""
+"Utilisation : **LOAD <MBID/URL supporté ou chemin d'accès à un fichier/"
+"répertoire>**"
 
 #: ../../usage/exec_commands.rst:100
 msgid ""
 "Load one or more files/directories/MBIDs/URLs to Picard. This is similar "
 "to including the file, directory path, URL or MBID on the command line."
 msgstr ""
+"Charge un ou plusieurs fichiers/répertoires/MBIDs/URLs dans Picard. Cela "
+"revient à inclure le fichier, le chemin du répertoire, l'URL ou le MBID sur "
+"la ligne de commande."
 
 #: ../../usage/exec_commands.rst:103
 msgid ""
@@ -152,11 +190,11 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:114
 msgid ":index:`LOOKUP <executable commands; LOOKUP>`"
-msgstr ""
+msgstr ":index:`LOOKUP <commandes exécutables; LOOKUP>`"
 
 #: ../../usage/exec_commands.rst:116
 msgid "Usage: **LOOKUP [clustered|unclustered|all]**"
-msgstr ""
+msgstr "Utilisation : **LOOKUP [clustered|unclustered|all]**"
 
 #: ../../usage/exec_commands.rst:119
 msgid ""
@@ -164,20 +202,26 @@ msgid ""
 "unclustered files or all files. If not specified, the command defaults to"
 " all files."
 msgstr ""
+"Rechercher des fichiers dans le volet de mise en grappe. Les options sont "
+"les fichiers clusterisés, les fichiers non clusterisés ou tous les fichiers. "
+"Si elle n'est pas spécifiée, la commande choisit par défaut tous les "
+"fichiers."
 
 #: ../../usage/exec_commands.rst:122
 msgid ""
 "This is the equivalent of using the :menuselection:`\"Tools --> Lookup\"`"
 " command."
 msgstr ""
+"Cela équivaut à utiliser la commande :menuselection:`\"Outils --> Recherche\""
+"`."
 
 #: ../../usage/exec_commands.rst:125
 msgid ":index:`LOOKUP_CD <executable commands; LOOKUP_CD>`"
-msgstr ""
+msgstr ":index:`LOOKUP_CD <commandes exécutables; LOOKUP_CD>`"
 
 #: ../../usage/exec_commands.rst:127
 msgid "Usage: **LOOKUP_CD [device/log file]**"
-msgstr ""
+msgstr "Utilisation : **LOOKUP_CD [dispositif/fichier journal]**"
 
 #: ../../usage/exec_commands.rst:130
 msgid ""
@@ -185,32 +229,40 @@ msgid ""
 "MusicBrainz. If no argument is specified, it defaults to the first "
 "(alphabetically) available disc drive."
 msgstr ""
+"Lit le CD à partir du lecteur sélectionné ou du fichier journal du ripper, "
+"et le recherche sur MusicBrainz. Si aucun argument n'est spécifié, elle "
+"choisit par défaut le premier lecteur de disque disponible (par ordre "
+"alphabétique)."
 
 #: ../../usage/exec_commands.rst:133
 msgid ""
 "This is the equivalent of using the :menuselection:`\"Tools --> Lookup "
 "CD...\"` command."
 msgstr ""
+"Cela équivaut à utiliser la commande :menuselection:`\"Outils --> Recherche "
+"de CD...\"`."
 
 #: ../../usage/exec_commands.rst:136
 msgid ":index:`PAUSE <executable commands; PAUSE>`"
-msgstr ""
+msgstr ":index:`PAUSE <commandes exécutables; PAUSE>`"
 
 #: ../../usage/exec_commands.rst:138
 msgid "Usage: **PAUSE <number of seconds to pause>**"
-msgstr ""
+msgstr "Utilisation : **PAUSE <nombre de secondes de pause>**"
 
 #: ../../usage/exec_commands.rst:141
 msgid "Pause executable command processing for the specified number of seconds."
 msgstr ""
+"Pause du traitement des commandes exécutables pendant le nombre de secondes "
+"spécifié."
 
 #: ../../usage/exec_commands.rst:144
 msgid ":index:`QUIT <executable commands; QUIT>`"
-msgstr ""
+msgstr ":index:`QUIT <commandes exécutables; QUIT>`"
 
 #: ../../usage/exec_commands.rst:146
 msgid "Usage: **QUIT \\[force\\]**"
-msgstr ""
+msgstr "Utilisation : **QUIT \\[force\\]**"
 
 #: ../../usage/exec_commands.rst:149
 msgid ""
@@ -220,6 +272,12 @@ msgid ""
 "same checks for unsaved files and such.  When 'force' is entered as an "
 "argument to the command, Picard will bypass the unsaved files check."
 msgstr ""
+"La commande ``QUIT`` attend que toutes les commandes exécutables en attente "
+"soient terminées, puis lance une demande d'arrêt de la même manière que si "
+"l'utilisateur fermait Picard depuis l'interface utilisateur. Cela permet à "
+"Picard d'effectuer les mêmes vérifications pour les fichiers non sauvegardés "
+"et autres.  Lorsque 'force' est entré comme argument de la commande, Picard "
+"contourne la vérification des fichiers non sauvegardés."
 
 #: ../../usage/exec_commands.rst:154
 msgid ""
@@ -228,122 +286,134 @@ msgid ""
 "unsaved files check dialog, the system will allow more commands to be "
 "queued."
 msgstr ""
+"Une fois qu'une commande ``QUIT`` a été mise en file d'attente, Picard ne "
+"mettra plus en file d'attente d'autres commandes exécutables. Si "
+"l'utilisateur annule la commande ``QUITTER`` depuis la boîte de dialogue de "
+"vérification des fichiers non sauvegardés, le système autorisera la mise en "
+"file d'attente d'autres commandes."
 
 #: ../../usage/exec_commands.rst:159
 msgid ":index:`REMOVE <executable commands; REMOVE>`"
-msgstr ""
+msgstr ":index:`REMOVE <commandes exécutables; REMOVE>`"
 
 #: ../../usage/exec_commands.rst:161
 msgid "Usage: **REMOVE <path to one or more files>**"
-msgstr ""
+msgstr "Utilisation : **REMOVE <chemin vers un ou plusieurs fichiers>**"
 
 #: ../../usage/exec_commands.rst:164
 msgid ""
 "Removes the specified file(s) from Picard. Does nothing if no arguments "
 "provided."
 msgstr ""
+"Supprime le(s) fichier(s) spécifié(s) de Picard. Ne fait rien si aucun "
+"argument n'est fourni."
 
 #: ../../usage/exec_commands.rst:167
 msgid ":index:`REMOVE_ALL <executable commands; REMOVE_ALL>`"
-msgstr ""
+msgstr ":index:`REMOVE_ALL <commandes exécutables; REMOVE_ALL>`"
 
 #: ../../usage/exec_commands.rst:169
 msgid "Usage: **REMOVE_ALL**"
-msgstr ""
+msgstr "Utilisation : **REMOVE_ALL**"
 
 #: ../../usage/exec_commands.rst:172
 msgid "Removes all files from Picard."
-msgstr ""
+msgstr "Supprime tous les fichiers de Picard."
 
 #: ../../usage/exec_commands.rst:175
 msgid ":index:`REMOVE_EMPTY <executable commands; REMOVE_EMPTY>`"
-msgstr ""
+msgstr ":index:`REMOVE_EMPTY <commandes exécutables; REMOVE_EMPTY>`"
 
 #: ../../usage/exec_commands.rst:177
 msgid "Usage: **REMOVE_EMPTY**"
-msgstr ""
+msgstr "Utilisation : **REMOVE_EMPTY**"
 
 #: ../../usage/exec_commands.rst:180
 msgid "Removes all empty clusters and albums."
-msgstr ""
+msgstr "Supprime tous les clusters et albums vides."
 
 #: ../../usage/exec_commands.rst:183
 msgid ":index:`REMOVE_SAVED <executable commands; REMOVE_SAVED>`"
-msgstr ""
+msgstr ":index:`REMOVE_SAVED <commandes exécutables; REMOVE_SAVED>`"
 
 #: ../../usage/exec_commands.rst:185
 msgid "Usage: **REMOVE_SAVED**"
-msgstr ""
+msgstr "Utilisation : **REMOVE_SAVED**"
 
 #: ../../usage/exec_commands.rst:188
 msgid "Removes all saved files from the album pane."
-msgstr ""
+msgstr "Supprime tous les fichiers enregistrés du volet album."
 
 #: ../../usage/exec_commands.rst:191
 msgid ":index:`REMOVE_UNCLUSTERED <executable commands; REMOVE_UNCLUSTERED>`"
-msgstr ""
+msgstr ":index:`REMOVE_UNCLUSTERED <commandes exécutables; REMOVE_UNCLUSTERED>`"
 
 #: ../../usage/exec_commands.rst:193
 msgid "Usage: **REMOVE_UNCLUSTERED**"
-msgstr ""
+msgstr "Utilisation : **REMOVE_UNCLUSTERED**"
 
 #: ../../usage/exec_commands.rst:196
 msgid "Removes all unclustered files from the cluster pane."
-msgstr ""
+msgstr "Supprime tous les fichiers non regroupés du panneau de regroupement."
 
 #: ../../usage/exec_commands.rst:199
 msgid ":index:`SAVE_MATCHED <executable commands; SAVE_MATCHED>`"
-msgstr ""
+msgstr ":index:`SAVE_MATCHED <commandes exécutables; SAVE_MATCHED>`"
 
 #: ../../usage/exec_commands.rst:201 ../../usage/exec_commands.rst:209
 msgid "Usage: **SAVE_MATCHED**"
-msgstr ""
+msgstr "Utilisation : **SAVE_MATCHED**"
 
 #: ../../usage/exec_commands.rst:204
 msgid "Saves all matched files from the album pane."
-msgstr ""
+msgstr "Enregistre tous les fichiers correspondants dans le volet album."
 
 #: ../../usage/exec_commands.rst:207
 msgid ":index:`SAVE_MODIFIED <executable commands; SAVE_MODIFIED>`"
-msgstr ""
+msgstr ":index:`SAVE_MODIFIED <commandes exécutables; SAVE_MODIFIED>`"
 
 #: ../../usage/exec_commands.rst:212
 msgid "Saves all modified files from the album pane."
-msgstr ""
+msgstr "Sauvegarde tous les fichiers modifiés du panneau de l'album."
 
 #: ../../usage/exec_commands.rst:215
 msgid ":index:`SCAN <executable commands; SCAN>`"
-msgstr ""
+msgstr ":index:`SCAN <commandes exécutables; SCAN>`"
 
 #: ../../usage/exec_commands.rst:217
 msgid "Usage: **SCAN**"
-msgstr ""
+msgstr "Utilisation : **SCAN**"
 
 #: ../../usage/exec_commands.rst:220
 msgid ""
 "Scans all files in the cluster pane.  This is the equivalent of using the"
 " :menuselection:`\"Tools --> Scan\"` command."
 msgstr ""
+"Analyse tous les fichiers du volet cluster.  Cela équivaut à l'utilisation "
+"de la commande :menuselection:`\"Outils --> Scan\"`."
 
 #: ../../usage/exec_commands.rst:224
 msgid ":index:`SHOW <executable commands; SHOW>`"
-msgstr ""
+msgstr ":index:`SHOW <commandes exécutables; SHOW>`"
 
 #: ../../usage/exec_commands.rst:226
 msgid "Usage: **SHOW**"
-msgstr ""
+msgstr "Utilisation : **SHOW**"
 
 #: ../../usage/exec_commands.rst:229
 msgid "Make the running instance of Picard the currently active window."
 msgstr ""
+"Faites de l'instance de Picard en cours d'exécution la fenêtre actuellement "
+"active."
 
 #: ../../usage/exec_commands.rst:232
 msgid ":index:`SUBMIT_FINGERPRINTS <executable commands; SUBMIT_FINGERPRINTS>`"
 msgstr ""
+":index:`SUBMIT_FINGERPRINTS <commandes exécutables; SUBMIT_FINGERPRINTS>`"
 
 #: ../../usage/exec_commands.rst:234
 msgid "Usage: **SUBMIT_FINGERPRINTS**"
-msgstr ""
+msgstr "Utilisation : **SUBMIT_FINGERPRINTS**"
 
 #: ../../usage/exec_commands.rst:237
 msgid ""
@@ -351,14 +421,17 @@ msgid ""
 "album pane. This is the equivalent of using the :menuselection:`\"Tools "
 "--> Submit AcoustIDs\"` command."
 msgstr ""
+"Soumet des empreintes acoustiques exceptionnelles pour tous les fichiers "
+"(correspondant) dans le volet album. C'est l'équivalent de l'utilisation de "
+"la commande :menuselection:`\"Outils --> Soumettre des AcoustIDs\"`."
 
 #: ../../usage/exec_commands.rst:242
 msgid ":index:`WRITE_LOGS <executable commands; WRITE_LOGS>`"
-msgstr ""
+msgstr ":index:`WRITE_LOGS <commandes exécutables; WRITE_LOGS>`"
 
 #: ../../usage/exec_commands.rst:244
 msgid "Usage: **WRITE_LOGS <path to output file>**"
-msgstr ""
+msgstr "Utilisation : **WRITE_LOGS <chemin vers le fichier de sortie>**"
 
 #: ../../usage/exec_commands.rst:247
 msgid ""
@@ -367,6 +440,11 @@ msgid ""
 "viewing screen opened using the :menuselection:`\"Help --> View "
 "Error/Debug Log\"` command."
 msgstr ""
+"Ecrit les logs de Picard dans le fichier de sortie spécifié. C'est "
+"l'équivalent de l'utilisation du bouton :guilabel:`Enregistrer sous...` "
+"depuis l'écran de visualisation des logs ouvert par la commande "
+":menuselection:`\"Aide --> Afficher le journal des erreurs et des débogages\""
+"`."
 
 #~ msgid "Clear the Picard logs."
 #~ msgstr ""
@@ -403,4 +481,3 @@ msgstr ""
 
 #~ msgid "Writes the Picard logs to the specified output file."
 #~ msgstr ""
-

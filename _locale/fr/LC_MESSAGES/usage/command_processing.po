@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
+# Bob Swift <bswift@rsds.ca>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.9alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 15:29-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2023-02-13 16:14+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/usagecommand_processing/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/command_processing.rst:4
@@ -23,6 +26,8 @@ msgid ""
 ":index:`Command and Batch Processing <command processing, batch "
 "processing, processing; batch>`"
 msgstr ""
+":index:`Traitement par commande et par lot <traitement par commande, "
+"traitement par lot, traitement; lot>`"
 
 #: ../../usage/command_processing.rst:6
 msgid ""
@@ -38,18 +43,34 @@ msgid ""
 "from other processes.  If there is no instance of that version already "
 "running, Picard will start normally."
 msgstr ""
+"Depuis la version 2.9, Picard essaie de ne faire tourner qu'une seule "
+"instance du programme à la fois. Lorsque le programme est lancé, il vérifie "
+"si une autre instance de cette version, de ce fichier de configuration et de "
+"ce statut de démarrage de plugin ``-P`` est déjà en cours d'exécution.  Si "
+"la même version est déjà en cours d'exécution, tous les fichiers ou "
+"répertoires spécifiés sur la ligne de commande de la nouvelle instance, "
+"ainsi que toutes les commandes exécutables spécifiées avec les options ``-e``"
+" ou ``-exec`` seront transmises à l'instance déjà en cours d'exécution pour "
+"traitement et la nouvelle instance dupliquée sera arrêtée.  Cela permet de "
+"lancer automatiquement le traitement par lot de fichiers à partir d'autres "
+"processus.  S'il n'y a pas d'instance de cette version en cours d'exécution, "
+"Picard démarrera normalement."
 
 #: ../../usage/command_processing.rst:16
 msgid ""
 "For example if there is an instance of Picard running and a second "
 "instance is started with the command line:"
 msgstr ""
+"Par exemple, si une instance de Picard est en cours d'exécution et qu'une "
+"seconde instance est lancée avec la ligne de commande :"
 
 #: ../../usage/command_processing.rst:23
 msgid ""
 "the load command will be passed to the running instance to load the "
 "specified release, and the second instance will be closed."
 msgstr ""
+"la commande load sera transmise à l'instance en cours d'exécution pour "
+"charger la version spécifiée, et la seconde instance sera fermée."
 
 #: ../../usage/command_processing.rst:26
 msgid ""
@@ -57,18 +78,23 @@ msgid ""
 "automate the tagging process, especially when used with the ``FROM_FILE``"
 " command to load a standard processing command sequence such as:"
 msgstr ""
+"Cela permet à l'utilisateur de mettre en place un traitement dynamique par "
+"lot de commandes pour automatiser le processus de marquage, en particulier "
+"lorsqu'il est utilisé avec la commande ``FROM_FILE`` pour charger une "
+"séquence de commandes de traitement standard telle que :"
 
 #: ../../usage/command_processing.rst:38
 msgid "or:"
-msgstr ""
+msgstr "ou :"
 
 #: ../../usage/command_processing.rst:49
 msgid "or even something like:"
-msgstr ""
+msgstr "ou même quelque chose comme :"
 
 #: ../../usage/command_processing.rst:84
 msgid ""
 "Please see the :doc:`/usage/exec_commands` section for details regarding "
 "the commands available for execution."
 msgstr ""
-
+"Veuillez consulter la section :doc:`/usage/exec_commands` pour plus de "
+"détails concernant les commandes disponibles pour l'exécution."
