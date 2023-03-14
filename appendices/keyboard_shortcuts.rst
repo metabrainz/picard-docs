@@ -79,7 +79,7 @@ Tools
    "Scan", :kbd:`Ctrl+Y`, :kbd:`⌘+Y`
    "Cluster", :kbd:`Ctrl+U`, :kbd:`⌘+U`
    "Lookup in browser", :kbd:`Ctrl+Shift+L`, :kbd:`⌘+⇧+L`
-   "Search for similar tracks", :kbd:`Ctrl+T`, :kbd:`⌘+T`
+   "Search for similar albums / tracks", :kbd:`Ctrl+T`, :kbd:`⌘+T`
    "Show other album versions", :kbd:`Ctrl+Shift+O`, :kbd:`⌘+⇧+O`
    "Generate AcoustID fingerprints", :kbd:`Ctrl+Shift+Y`, :kbd:`⌘+⇧+Y`
    "Tags from file names", :kbd:`Ctrl+Shift+T`, :kbd:`⌘+⇧+T`
