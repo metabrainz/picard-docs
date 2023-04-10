@@ -24,6 +24,7 @@ Each plugin must provide some metadata as variables. Those variables should be p
    PLUGIN_API_VERSIONS = ['2.7', '2.8']
    PLUGIN_LICENSE = "GPL-2.0-or-later"
    PLUGIN_LICENSE_URL = "https://www.gnu.org/licenses/gpl-2.0.html"
+   PLUGIN_USER_GUIDE_URL = "https://my.program.site.org/example_plugin_documentation.html"
 
 Variables explanation:
 
@@ -47,6 +48,10 @@ Variables explanation:
   one you chose is not available in the list.
 
 * **PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text.
+
+* **PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the documentation for the plugin.  This variable is
+  optional and may be omitted.  If a URL is provided, it will be shown as a clickable link in the description
+  displayed for the plugin in the Plugins option settings screen.
 
 
 :index:`Metadata Processors <plugins; metadata processors>`
