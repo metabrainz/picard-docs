@@ -6,13 +6,8 @@
 ======================================================================
 
 The file naming script editor is used to manage the file naming scripts available for use by Picard.
-Each script has a title that will show up in the script selection box.  There are two types of scripts
-available:
-
-* Preset Scripts - These are basic default scripts provided by Picard.
-* User-Defined Scripts - These are scripts that have been defined or customized by the user.
-
-Preset scripts cannot be modified, but you can make a copy of the script and the copy can be edited.
+Each script has a title that will show up in the script selection box, and all listed scripts can be
+edited by the user.
 
 .. image:: images/options-filenaming-editor-1.png
    :width: 100 %
@@ -22,12 +17,11 @@ The editor screen has the following sections:
 **Select the file naming script to use**
 
    This option allows the user to select the file naming script to use from the list of scripts available.
-   The selected script will show up in the editing section, where it can be modified if it is a user-defined
-   script.
+   The selected script will show up in the editing section, where it can be modified if required.
 
 **Title**
 
-   The title assigned to the currently selected script. This can be modified if the script is a user-defined script.
+   The title assigned to the currently selected script. This can be modified if required.
 
 **Script**
 
@@ -83,7 +77,7 @@ The editor screen has the following sections:
 
    * Import a new script from a file, either as a plain-text script or a Picard Naming Script Package.
    * Export the current script to a file, either as a plain-text script or a Picard Naming Script Package.
-   * Add a new (default) script.
+   * Add a new (default) script.  This can be a blank script or one of the basic system preset scripts provided by Picard.
    * Copy the current script as a new script.
    * Delete the current script.
    * Reset all scripts, also available via the :guilabel:`Reset` button.
