@@ -3,15 +3,12 @@
 :index:`Acknowledgements <acknowledgements>`
 =============================================
 
-We gratefully acknowledge the following for their contributions to help develop, maintain and
-improve the Picard User Guide.
+The following people (in alphabetic surname order) helped
+develop, maintain and improve the Picard User Guide.
+All contributions are valuable and appreciated.
 
-This list includes contributors to the documentation, regardless of their role.  In addition to actual content contributors,
-this includes leads, translators, reviewers and proofreaders.  All contributions are valuable and appreciated.  As such, the
-names are presented in alphabetical order so as not to imply the relative importance of someone's contribution based on their
-position in the list.
-
-Contributors include (in alphabetic surname order):
+Do help create content, lead the effort, translate it,
+review and proofread it, and add yourself to the list.
 
 - Vedant Chakravadhanula
 - Pavan Chander
@@ -40,5 +37,5 @@ Contributors include (in alphabetic surname order):
 
 .. note::
 
-   There are likely others that have not yet been identified, so we apologize if your name has been
-   missed.  Please let us know and we'll make sure that it is added to the list.
+   Likely some names are missing, but they shouldn't be.
+   Please let us know and we'll ensure everyone is listed.
