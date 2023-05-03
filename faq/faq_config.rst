@@ -33,7 +33,7 @@ embedded cover art. As a work-around, you can configure Picard to write ID3v2.3 
 My tags are :index:`truncated <tags; truncated, WMP; tags>` to 30 characters in Windows Media Player!
 ---------------------------------------------------------------------------------------------------------
 
-Picard's default settings is write ID3v2.4 and ID3v1 tags to files.  Older WMP versions can't read ID3v2.4, so it falls
+Picard's default settings write ID3v2.4 and ID3v1 tags to files.  Older WMP versions can't read ID3v2.4, so it falls
 back to ID3v1 which has a limitation of 30 characters per title.  To solve this on versions prior to 0.14, configure
 Picard to write ID3v2.3 tags instead.
 
