@@ -70,6 +70,14 @@ The steps to follow to submit a disc id are:
    .. image:: images/cd_lookup_4.png
       :width: 100%
 
+.. only:: html
+
+   Video tutorial
+   --------------
+
+   .. youtube:: C44k7VKY9J8
+      :privacy_mode:
+
 .. raw:: latex
 
    \clearpage

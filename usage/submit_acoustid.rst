@@ -109,6 +109,14 @@ Submitting when not using Scan to identify the release
    .. image:: images/submit_acoustid_8.png
       :width: 100%
 
+.. only:: html
+
+   Video tutorial
+   --------------
+
+   .. youtube:: XX8aio5hDPI
+      :privacy_mode:
+
 .. raw:: latex
 
    \clearpage

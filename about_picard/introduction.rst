@@ -89,3 +89,11 @@ Sometimes Picard needs to rewrite the entire music file in order to add or updat
 few seconds, and the delay becomes even longer if the file is accessed across a network (e.g.: file is
 read from or written to a NAS device).  The recommended "best practice" is to process all files on a local drive
 and then move them to the desired remote directory once processing is complete.
+
+.. only:: html
+
+   Introduction video
+   ------------------
+
+   .. youtube:: zMAc-UyO0NA
+      :privacy_mode:
