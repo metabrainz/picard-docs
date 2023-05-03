@@ -71,6 +71,7 @@ extensions = [
     "recommonmark",
     "notfound.extension",
     "taggerscript",
+    "sphinxcontrib.youtube",
     # "sphinx_rtd_theme",
     # "picard_theme",
 ]
