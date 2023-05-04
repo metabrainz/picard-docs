@@ -217,7 +217,7 @@ Most tags beginning with ``musicbrainz_`` provide the :index:`MusicBrainz Identi
 
    .. note::
 
-      If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.
+      If you are storing tags in MP3 files as ID3v2.3 then the original date can only be stored as a year.
 
 **originalyear**
 
