@@ -28,6 +28,12 @@ alternate formats, including a PDF version suitable for printing. Links to addit
 information such as scripts, plugins and tutorials are provided when available rather than trying
 to reproduce the information in this document.
 
+.. only:: html
+
+   .. note::
+
+      There is also an :doc:`Introduction to Picard Video Tutorial </tutorials/v_introduction>` available.
+
 In order to effectively use Picard, it is important to understand what the program can do and,
 equally important, what it cannot do.  Picard is primarily intended to tag and organize albums containing tracks,
 guided by the user to the specific release of the album that they have, and then to keep the metadata for these
@@ -89,11 +95,3 @@ Sometimes Picard needs to rewrite the entire music file in order to add or updat
 few seconds, and the delay becomes even longer if the file is accessed across a network (e.g.: file is
 read from or written to a NAS device).  The recommended "best practice" is to process all files on a local drive
 and then move them to the desired remote directory once processing is complete.
-
-.. only:: html
-
-   Introduction video
-   ------------------
-
-   .. youtube:: zMAc-UyO0NA
-      :privacy_mode:

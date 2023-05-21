@@ -16,6 +16,12 @@ tutorial for additional information.
    AcoustID was calculated and whether it ready for submission (red = unsubmitted, grey = already
    submitted).
 
+.. only:: html
+
+   .. note::
+
+      There is also a :doc:`Video Tutorial </tutorials/v_submit_acoustid>` available which demonstrates how to submit AcoustIDs.
+
 There are two methods for submitting acoustic fingerprints, depending on the workflow that you are
 using to identify the releases that you are tagging. Note that both methods require that you first
 match your audio files to release and track information from the MusicBrainz database. See the
@@ -108,14 +114,6 @@ Submitting when not using Scan to identify the release
 
    .. image:: images/submit_acoustid_8.png
       :width: 100%
-
-.. only:: html
-
-   Video tutorial
-   --------------
-
-   .. youtube:: XX8aio5hDPI
-      :privacy_mode:
 
 .. raw:: latex
 
