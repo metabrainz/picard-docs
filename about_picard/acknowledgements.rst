@@ -13,6 +13,7 @@ position in the list.
 
 Contributors include (in alphabetic surname order):
 
+- Aerozol
 - Vedant Chakravadhanula
 - Pavan Chander
 - Ronan Desplanques
