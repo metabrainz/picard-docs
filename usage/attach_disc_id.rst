@@ -7,9 +7,15 @@ Disc IDs are very useful for identifying CDs and allowing MusicBrainz to know th
 on a CD. Thus, it is very valuable to add them when submitting a new CD release or when you have a
 CD release that does not have a Disc ID attached.
 
-.. note::
+.. warning::
 
    Please do not add DiscIDs from CDs that are burned at home.
+
+.. only:: html
+
+   .. note::
+
+      There is also a :doc:`Video Tutorial </tutorials/v_attach_disc_id>` available which demonstrates how to attach a disc id to a release in MusicBrainz.
 
 The steps to follow to submit a disc id are:
 
@@ -69,14 +75,6 @@ The steps to follow to submit a disc id are:
 
    .. image:: images/cd_lookup_4.png
       :width: 100%
-
-.. only:: html
-
-   Video tutorial
-   --------------
-
-   .. youtube:: C44k7VKY9J8
-      :privacy_mode:
 
 .. raw:: latex
 

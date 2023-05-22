@@ -95,6 +95,17 @@ plugins and tutorials are provided when available rather than trying to reproduc
 
 
 .. toctree::
+   :caption: Video Tutorials
+   :hidden:
+   :maxdepth: 0
+   :titlesonly:
+
+   tutorials/v_introduction
+   tutorials/v_attach_disc_id
+   tutorials/v_submit_acoustid
+
+
+.. toctree::
    :caption: Appendices
    :hidden:
    :maxdepth: 0

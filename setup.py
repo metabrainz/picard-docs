@@ -3,7 +3,7 @@
 """\
 Python script used to provide development support functions.
 """
-# Copyright (C) 2020-2021 Bob Swift
+# Copyright (C) 2020-2023 Bob Swift
 # Copyright (C) 2021 Philipp Wolfer
 
 # pylint: disable=too-many-lines
@@ -25,8 +25,8 @@ import conf
 import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder'
-SCRIPT_VERS = '0.16'
-SCRIPT_COPYRIGHT = '2021'
+SCRIPT_VERS = '0.17'
+SCRIPT_COPYRIGHT = '2021-2023'
 SCRIPT_AUTHOR = 'Bob Swift'
 
 PACKAGE_NAME = 'picard-docs'
@@ -153,7 +153,10 @@ IGNORE_DIRECTIVES = [
     'productionlist',
 
     # Command line parameter docs
-    'option', 'describe'
+    'option', 'describe',
+
+    # Specialty directives
+    'youtube',
 ]
 
 IGNORE_ROLES = [
