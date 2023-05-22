@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-04 12:34-0600\n"
+"POT-Creation-Date: 2023-05-22 10:19-0600\n"
 "PO-Revision-Date: 2021-09-21 08:50+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language: pt_BR\n"
@@ -96,7 +96,13 @@ msgstr ""
 " listados quando disponíveis, ao invés de serem reproduzidos na íntegra "
 "neste documento."
 
-#: ../../about_picard/introduction.rst:31
+#: ../../about_picard/introduction.rst:35
+msgid ""
+"There is also an :doc:`Introduction to Picard Video Tutorial "
+"</tutorials/v_introduction>` available."
+msgstr ""
+
+#: ../../about_picard/introduction.rst:37
 msgid ""
 "In order to effectively use Picard, it is important to understand what "
 "the program can do and, equally important, what it cannot do.  Picard is "
@@ -126,11 +132,11 @@ msgstr ""
 " sobre quantidade e provê uma série de opções em como ajustar sua coleção"
 " de música para o seu caso de uso.\"*"
 
-#: ../../about_picard/introduction.rst:42
+#: ../../about_picard/introduction.rst:48
 msgid "Picard Can..."
 msgstr "O Picard pode..."
 
-#: ../../about_picard/introduction.rst:44
+#: ../../about_picard/introduction.rst:50
 msgid ""
 "...add metadata tags to your music files, based on information available "
 "from the `MusicBrainz website <https://musicbrainz.org/>`_."
@@ -139,7 +145,7 @@ msgstr ""
 "nas informações disponíveis no site do `Musicbrainz "
 "<https://musicbrainz.org/>`__."
 
-#: ../../about_picard/introduction.rst:47
+#: ../../about_picard/introduction.rst:53
 msgid ""
 "...look up the metadata either manually or automatically based on "
 "existing information, including artist and song name, disc id (for CDs), "
@@ -149,13 +155,13 @@ msgstr ""
 " já existentes, incluindo nome de artista e canção, id do disco (para "
 "CDs), e digitais AcoustID da trilha."
 
-#: ../../about_picard/introduction.rst:50
+#: ../../about_picard/introduction.rst:56
 msgid "...retrieve and embed coverart images from a variety of sources."
 msgstr ""
 "...baixar capas dos álbuns de uma variedade de fontes e embutir nos "
 "arquivos de música."
 
-#: ../../about_picard/introduction.rst:52
+#: ../../about_picard/introduction.rst:58
 msgid ""
 "...rename and place the music files in directories based on naming "
 "template instructions provided in a naming script."
@@ -163,7 +169,7 @@ msgstr ""
 "...renomear e mover arquivos de música para diretórios conforme as "
 "instruções do script de renomeação."
 
-#: ../../about_picard/introduction.rst:55
+#: ../../about_picard/introduction.rst:61
 msgid ""
 "...calculate and submit a disc id to the MusicBrainz database, attaching "
 "it to a specified release."
@@ -171,7 +177,7 @@ msgstr ""
 "...calcular e submeter um id de disco para o banco de dados MusicBrainz, "
 "anexando-o a um lançamento específico de um álbum."
 
-#: ../../about_picard/introduction.rst:57
+#: ../../about_picard/introduction.rst:63
 msgid ""
 "...calculate and submit a music file's AcoustID fingerprint to the "
 "`AcoustID database <https://acoustid.org/>`_."
@@ -179,11 +185,11 @@ msgstr ""
 "...calcular e submeter as digitais AcoustID de um arquivo de música para "
 "o banco de dados `AcoustID <https://acoustid.org/>`__."
 
-#: ../../about_picard/introduction.rst:61
+#: ../../about_picard/introduction.rst:67
 msgid "Picard Cannot..."
 msgstr "Picard não pode..."
 
-#: ../../about_picard/introduction.rst:63
+#: ../../about_picard/introduction.rst:69
 msgid ""
 "...automatically identify and remove all duplicate music files in your "
 "collection."
@@ -191,19 +197,19 @@ msgstr ""
 "...identificar e remover automaticamente arquivos de músicas duplicadas "
 "na sua coleção."
 
-#: ../../about_picard/introduction.rst:65
+#: ../../about_picard/introduction.rst:71
 msgid "...provide metadata not already existing in the MusicBrainz database."
 msgstr "...prover metadados inexistentes no banco de dados MusicBrainz."
 
-#: ../../about_picard/introduction.rst:69
+#: ../../about_picard/introduction.rst:75
 msgid ":index:`Limitations <limitations>`"
 msgstr ":index:`Limitações <limitações>`"
 
-#: ../../about_picard/introduction.rst:71
+#: ../../about_picard/introduction.rst:77
 msgid "**File Formats**"
 msgstr "**Formatos de Arquivos**"
 
-#: ../../about_picard/introduction.rst:73
+#: ../../about_picard/introduction.rst:79
 msgid ""
 "Picard currently supports most music file formats, with Matroska (.mka) "
 "being one notable exception. Microsoft WAVE (.wav) files can be "
@@ -218,7 +224,7 @@ msgstr ""
 "o Picard não suporta a escrita de etiquetas personalizadas em todos os "
 "formatos de arquivos."
 
-#: ../../about_picard/introduction.rst:77
+#: ../../about_picard/introduction.rst:83
 #, fuzzy
 msgid ""
 "The :doc:`Picard Tag Mappings </appendices/tag_mapping>` section provides"
@@ -230,11 +236,11 @@ msgstr ""
 "nomes de etiquetas usadas internamente pelo Picard e em diferentes "
 "formatos de etiquetas."
 
-#: ../../about_picard/introduction.rst:80
+#: ../../about_picard/introduction.rst:86
 msgid "**Request Rate Limiting**"
 msgstr "**Limitação de Taxa de Requisições**"
 
-#: ../../about_picard/introduction.rst:82
+#: ../../about_picard/introduction.rst:88
 msgid ""
 "Picard's metadata retrieval is limited to the standard **one request per "
 "second** :index:`rate limiting` for the MusicBrainz API.  This becomes "
@@ -247,11 +253,11 @@ msgstr ""
 "processando uma grande quantidade de arquivos, e pode ser exacerbado "
 "devido a extensões que fazem requisições adicionais ao banco de dados."
 
-#: ../../about_picard/introduction.rst:86
+#: ../../about_picard/introduction.rst:92
 msgid "**Network File Processing**"
 msgstr "**Processamento de Arquivos pela Rede**"
 
-#: ../../about_picard/introduction.rst:88
+#: ../../about_picard/introduction.rst:94
 msgid ""
 "Sometimes Picard needs to rewrite the entire music file in order to add "
 "or update the tags.  This can take a few seconds, and the delay becomes "

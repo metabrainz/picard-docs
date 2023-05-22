@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-07 16:23-0700\n"
+"POT-Creation-Date: 2023-05-22 10:19-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: nl\n"
@@ -170,45 +170,57 @@ msgid "The names of the producers for the associated release or recording."
 msgstr ""
 
 #: ../../variables/tags_advanced.rst:81
-msgid "**remixer**"
+msgid "**releasedate**"
 msgstr ""
 
 #: ../../variables/tags_advanced.rst:83
-msgid "The names of the remixer engineers associated with the track."
-msgstr ""
-
-#: ../../variables/tags_advanced.rst:85
-msgid "**work**"
+msgid ""
+"Explicit tag for the release date (*since Picard 2.9*).  This tag exists "
+"for specific use in scripts and plugins, but is not filled by default.  "
+"In most cases it is recommended to use the ``date`` tag instead for "
+"compatibility with existing software."
 msgstr ""
 
 #: ../../variables/tags_advanced.rst:87
-msgid "The name of the work associated with the track. (*since Picard 1.3*)"
+msgid "**remixer**"
 msgstr ""
 
 #: ../../variables/tags_advanced.rst:89
-msgid "**writer**"
+msgid "The names of the remixer engineers associated with the track."
 msgstr ""
 
 #: ../../variables/tags_advanced.rst:91
+msgid "**work**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:93
+msgid "The name of the work associated with the track. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:95
+msgid "**writer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:97
 msgid ""
 "The names of the writers associated with the related work. (*since Picard"
 " 1.0*). This is not written to most file formats automatically. You can "
 "merge this with composers with a script like:"
 msgstr ""
 
-#: ../../variables/tags_advanced.rst:101
+#: ../../variables/tags_advanced.rst:107
 msgid ":index:`Genre Tags <tags; genre>`"
 msgstr ""
 
-#: ../../variables/tags_advanced.rst:103
+#: ../../variables/tags_advanced.rst:109
 msgid "If you enable \"Use genres from MusicBrainz\", you get:"
 msgstr ""
 
-#: ../../variables/tags_advanced.rst:105
+#: ../../variables/tags_advanced.rst:111
 msgid "**genre**"
 msgstr ""
 
-#: ../../variables/tags_advanced.rst:107
+#: ../../variables/tags_advanced.rst:113
 msgid ""
 "Genre information from MusicBrainz (*since Picard 2.1, earlier versions "
 "used folksonomy tags*)"
