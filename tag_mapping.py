@@ -52,6 +52,7 @@ NOTES = {
     7: "`Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.",
     8: "With \"Save iTunes compatible grouping and work\" (since Picard>=2.1.0)",
     9: "From iTunes Metadata Format Specification",
+    10: "For compatibility reasons the ``date`` tag gets filled with the release date from MusicBrainz. This is how most software interprets this tag. Since Picard 2.9 the separate ``releasedate`` exists for use by scripts and plugins, but is not filled by default.",
 }
 NOTES_NUMBERS = list(NOTES.keys())
 NOTES_NUMBERS.sort()
@@ -292,6 +293,17 @@ TAG_MAP = [
         "itunes": "``cprt``",
         "wmp": "``Copyright``",
         "riff": "``ICOP``",
+    },
+
+    {
+        "tag_name": "`Date <https://musicbrainz.org/doc/Release_Date>`_ [10]",
+        "picard_name": "``date``",
+        "id3v2": "``TDRC`` (ID3v2.4)\n``TYER`` + ``TDAT`` (ID3v2.3)",
+        "vorbis": "``DATE``",
+        "apev2": "``Year``",
+        "itunes": "``©day``",
+        "wmp": "``WM/Year``",
+        "riff": "``ICRD``",
     },
 
     {
@@ -820,14 +832,14 @@ TAG_MAP = [
     },
 
     {
-        "tag_name": "`Release Date <https://musicbrainz.org/doc/Release_Date>`_",
-        "picard_name": "``date``",
-        "id3v2": "``TDRC`` (ID3v2.4)\n``TYER`` + ``TDAT`` (ID3v2.3)",
-        "vorbis": "``DATE``",
-        "apev2": "``Year``",
-        "itunes": "``©day``",
-        "wmp": "``WM/Year``",
-        "riff": "``ICRD``",
+        "tag_name": "Release Date [10]",
+        "picard_name": "``releasedate`` (since Picard 2.9, not filled by default)",
+        "id3v2": "``TDRL`` (ID3v2.4)\n``TXXX:RELEASEDATE`` (ID3v2.3)",
+        "vorbis": "``RELEASEDATE``",
+        "apev2": "``RELEASEDATE``",
+        "itunes": "``----:com.apple.iTunes:RELEASEDATE``",
+        "wmp": "n/a",
+        "riff": "n/a",
     },
 
     {

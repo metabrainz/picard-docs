@@ -310,6 +310,21 @@ Copyright :sup:`[4]`
    "RIFF INFO", "``ICOP``"
 
 
+`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`
+---------------------------------------------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``date``"
+   "ID3v2", "``TDRC`` (ID3v2.4) ``TYER`` + ``TDAT`` (ID3v2.3)"
+   "Vorbis", "``DATE``"
+   "APEv2", "``Year``"
+   "iTunes MP4", "``©day``"
+   "ASF/Windows Media", "``WM/Year``"
+   "RIFF INFO", "``ICRD``"
+
+
 Director
 ---------
 .. csv-table::
@@ -1026,19 +1041,19 @@ Podcast URL :sup:`[4]`
    "RIFF INFO", "``ICNT``"
 
 
-`Release Date <https://musicbrainz.org/doc/Release_Date>`_
------------------------------------------------------------
+Release Date :sup:`[10]`
+-------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
-   "Internal Name", "``date``"
-   "ID3v2", "``TDRC`` (ID3v2.4) ``TYER`` + ``TDAT`` (ID3v2.3)"
-   "Vorbis", "``DATE``"
-   "APEv2", "``Year``"
-   "iTunes MP4", "``©day``"
-   "ASF/Windows Media", "``WM/Year``"
-   "RIFF INFO", "``ICRD``"
+   "Internal Name", "``releasedate`` (since Picard 2.9, not filled by default)"
+   "ID3v2", "``TDRL`` (ID3v2.4) ``TXXX:RELEASEDATE`` (ID3v2.3)"
+   "Vorbis", "``RELEASEDATE``"
+   "APEv2", "``RELEASEDATE``"
+   "iTunes MP4", "``----:com.apple.iTunes:RELEASEDATE``"
+   "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
 
 
 `Release Status <https://musicbrainz.org/doc/Release_Status>`_
@@ -1397,3 +1412,4 @@ Work Title
 #. `Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.
 #. With "Save iTunes compatible grouping and work" (since Picard>=2.1.0)
 #. From iTunes Metadata Format Specification
+#. For compatibility reasons the ``date`` tag gets filled with the release date from MusicBrainz. This is how most software interprets this tag. Since Picard 2.9 the separate ``releasedate`` exists for use by scripts and plugins, but is not filled by default.
