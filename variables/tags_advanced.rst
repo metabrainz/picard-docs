@@ -78,6 +78,12 @@ If you enable tagging with "Use track relationships", you get these extra tags:
 
     The names of the producers for the associated release or recording.
 
+**releasedate**
+
+    Explicit tag for the release date (*since Picard 2.9*).  This tag exists for specific use in scripts and plugins,
+    but is not filled by default.  In most cases it is recommended to use the ``date`` tag instead for compatibility
+    with existing software.
+
 **remixer**
 
     The names of the remixer engineers associated with the track.
