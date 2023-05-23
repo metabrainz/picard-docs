@@ -4,21 +4,22 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 # Philipp Wolfer <ph.wolfer@gmail.com>, 2021.
-# Bob Swift <bswift@rsds.ca>, 2021.
+# Bob Swift <bswift@rsds.ca>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 10:19-0600\n"
-"PO-Revision-Date: 2021-10-29 16:23+0000\n"
+"PO-Revision-Date: 2023-05-22 20:50+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
-"docs/appendicestag_mapping/fr/>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/appendicestag_mapping/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.17\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../appendices/tag_mapping.rst:8
@@ -617,9 +618,8 @@ msgid "``ICOP``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:314
-#, fuzzy
 msgid "`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
-msgstr "`Date de sortie <https://musicbrainz.org/doc/Release_Date>`_"
+msgstr "`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``date``"
@@ -1851,25 +1851,24 @@ msgid "``ICNT``"
 msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1045
-#, fuzzy
 msgid "Release Date :sup:`[10]`"
-msgstr "Date de sortie d'origine :sup:`[1]`"
+msgstr "Date de publication :sup:`[10]`"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``releasedate`` (since Picard 2.9, not filled by default)"
-msgstr ""
+msgstr "``releasedate`` (depuis Picard 2.9, non renseigné par défaut)"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``TDRL`` (ID3v2.4) ``TXXX:RELEASEDATE`` (ID3v2.3)"
-msgstr ""
+msgstr "``TDRL`` (ID3v2.4) ``TXXX:RELEASEDATE`` (ID3v2.3)"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``RELEASEDATE``"
-msgstr ""
+msgstr "``RELEASEDATE``"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``----:com.apple.iTunes:RELEASEDATE``"
-msgstr ""
+msgstr "``----:com.apple.iTunes:RELEASEDATE``"
 
 #: ../../appendices/tag_mapping.rst:1060
 msgid "`Release Status <https://musicbrainz.org/doc/Release_Status>`_"
@@ -2460,6 +2459,11 @@ msgid ""
 "Picard 2.9 the separate ``releasedate`` exists for use by scripts and "
 "plugins, but is not filled by default."
 msgstr ""
+"Pour des raisons de compatibilité, la balise ``date`` est remplie avec la "
+"date de sortie de MusicBrainz. C'est ainsi que la plupart des logiciels "
+"interprètent cette balise. Depuis Picard 2.9, la balise séparée "
+"``releasedate`` existe pour être utilisée par les scripts et les plugins, "
+"mais elle n'est pas remplie par défaut."
 
 #~ msgid "**Notes:**"
 #~ msgstr "**Notes:**"
