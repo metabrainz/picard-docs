@@ -8,9 +8,11 @@
 
 
 import datetime
+import glob
 import os
 import re
 import sys
+
 
 # -- Path setup --------------------------------------------------------------
 
@@ -210,13 +212,22 @@ epub_post_files = [
     ('genindex.xhtml', 'INDEX'),
 ]
 
-epub_exclude_files = [
-    '404.xhtml',
-    'index.xhtml',
-    'not_found.xhtml',
-    'pdf.xhtml',
-    os.path.join('examples', 'examples.xhtml'),
-]
+def _exclude_files_helper():
+    excludes = [
+        '404.xhtml',
+        'index.xhtml',
+        'not_found.xhtml',
+        'pdf.xhtml',
+        'examples/examples.xhtml',
+    ]
+
+    for filepath in glob.glob('tutorials/v_*'):
+        if filepath.endswith('.rst'):
+            excludes.append(filepath[:-3] + 'xhtml')
+
+    return excludes
+
+epub_exclude_files = _exclude_files_helper()
 
 # -- Options for custom 404 page --------------------------------------
 

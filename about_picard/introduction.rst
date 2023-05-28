@@ -28,7 +28,7 @@ alternate formats, including a PDF version suitable for printing. Links to addit
 information such as scripts, plugins and tutorials are provided when available rather than trying
 to reproduce the information in this document.
 
-.. only:: html
+.. only:: html and not epub
 
    .. note::
 

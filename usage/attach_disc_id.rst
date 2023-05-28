@@ -11,7 +11,7 @@ CD release that does not have a Disc ID attached.
 
    Please do not add DiscIDs from CDs that are burned at home.
 
-.. only:: html
+.. only:: html and not epub
 
    .. note::
 
