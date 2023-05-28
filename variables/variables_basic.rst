@@ -74,6 +74,22 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
 
+**_recording_series**
+
+   The series title(s) associated with the recording (multi-value). (*since Picard 2.9*)
+
+**_recording_series_id**
+
+   The series MBID(s) associated with the recording (multi-value). (*since Picard 2.9*)
+
+**_recording_seriescomment**
+
+   The series comment(s) associated with the recording (multi-value). (*since Picard 2.9*)
+
+**_recording_seriesnumber**
+
+   The series number(s) associated with the recording (multi-value). (*since Picard 2.9*)
+
 **_releaseannotation**
 
    The annotation comment for the release. (*since Picard 2.6*)
@@ -85,6 +101,22 @@ These variables are populated from MusicBrainz data for most releases, without a
 **_releasecountries**
 
     This provides the complete list of release countries for the release as a multi-value variable. (*since Picard 2.3.1*)
+
+**_release_series**
+
+   The series title(s) associated with the release (multi-value). (*since Picard 2.9*)
+
+**_release_series_id**
+
+   The series MBID(s) associated with the release (multi-value). (*since Picard 2.9*)
+
+**_release_seriescomment**
+
+   The series comment(s) associated with the release (multi-value). (*since Picard 2.9*)
+
+**_release_seriesnumber**
+
+   The series number(s) associated with the release (multi-value). (*since Picard 2.9*)
 
 **_releasegroup**
 
@@ -102,6 +134,22 @@ These variables are populated from MusicBrainz data for most releases, without a
 
       This is the same information provided by default in the ``originaldate`` tag.
 
+**_releasegroup_series**
+
+   The series title(s) associated with the release group (multi-value). (*since Picard 2.9*)
+
+**_releasegroup_series_id**
+
+   The series MBID(s) associated with the release group (multi-value). (*since Picard 2.9*)
+
+**_releasegroup_seriescomment**
+
+   The series comment(s) associated with the release group (multi-value). (*since Picard 2.9*)
+
+**_releasegroup_seriesnumber**
+
+   The series number(s) associated with the release group (multi-value). (*since Picard 2.9*)
+
 **_releaselanguage**
 
     Release Language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)
@@ -115,3 +163,19 @@ These variables are populated from MusicBrainz data for most releases, without a
 **_totalalbumtracks**
 
     The total number of tracks across all discs of this release.
+
+**_work_series**
+
+   The series title(s) associated with the work (multi-value). (*since Picard 2.9*)
+
+**_work_series_id**
+
+   The series MBID(s) associated with the work (multi-value). (*since Picard 2.9*)
+
+**_work_seriescomment**
+
+   The series comment(s) associated with the work (multi-value). (*since Picard 2.9*)
+
+**_work_seriesnumber**
+
+   The series number(s) associated with the work (multi-value). (*since Picard 2.9*)
