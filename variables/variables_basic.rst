@@ -78,13 +78,13 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    The series title(s) associated with the recording (multi-value). (*since Picard 2.9*)
 
-**_recording_series_id**
+**_recording_seriesid**
 
    The series MBID(s) associated with the recording (multi-value). (*since Picard 2.9*)
 
 **_recording_seriescomment**
 
-   The series comment(s) associated with the recording (multi-value). (*since Picard 2.9*)
+   The series disambiguation comment(s) associated with the recording (multi-value). (*since Picard 2.9*)
 
 **_recording_seriesnumber**
 
@@ -106,13 +106,13 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    The series title(s) associated with the release (multi-value). (*since Picard 2.9*)
 
-**_release_series_id**
+**_release_seriesid**
 
    The series MBID(s) associated with the release (multi-value). (*since Picard 2.9*)
 
 **_release_seriescomment**
 
-   The series comment(s) associated with the release (multi-value). (*since Picard 2.9*)
+   The series disambiguation comment(s) associated with the release (multi-value). (*since Picard 2.9*)
 
 **_release_seriesnumber**
 
@@ -138,13 +138,13 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    The series title(s) associated with the release group (multi-value). (*since Picard 2.9*)
 
-**_releasegroup_series_id**
+**_releasegroup_seriesid**
 
    The series MBID(s) associated with the release group (multi-value). (*since Picard 2.9*)
 
 **_releasegroup_seriescomment**
 
-   The series comment(s) associated with the release group (multi-value). (*since Picard 2.9*)
+   The series disambiguation comment(s) associated with the release group (multi-value). (*since Picard 2.9*)
 
 **_releasegroup_seriesnumber**
 
@@ -168,13 +168,13 @@ These variables are populated from MusicBrainz data for most releases, without a
 
    The series title(s) associated with the work (multi-value). (*since Picard 2.9*)
 
-**_work_series_id**
+**_work_seriesid**
 
    The series MBID(s) associated with the work (multi-value). (*since Picard 2.9*)
 
 **_work_seriescomment**
 
-   The series comment(s) associated with the work (multi-value). (*since Picard 2.9*)
+   The series disambiguation comment(s) associated with the work (multi-value). (*since Picard 2.9*)
 
 **_work_seriesnumber**
 
