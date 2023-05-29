@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-25 08:08-0700\n"
+"POT-Creation-Date: 2023-05-29 14:17-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language: nb_NO\n"
@@ -172,93 +172,253 @@ msgid ""
 msgstr ""
 
 #: ../../variables/variables_basic.rst:77
-msgid "**_releaseannotation**"
+msgid "**_recording_series**"
 msgstr ""
 
 #: ../../variables/variables_basic.rst:79
-msgid "The annotation comment for the release. (*since Picard 2.6*)"
+msgid ""
+"The series title(s) associated with the recording (multi-value). (*since "
+"Picard 2.9*)"
 msgstr ""
 
 #: ../../variables/variables_basic.rst:81
-msgid "**_releasecomment**"
+msgid "**_recording_seriesid**"
 msgstr ""
 
 #: ../../variables/variables_basic.rst:83
-msgid "Release disambiguation comment. (*since Picard 0.15*)"
+msgid ""
+"The series MBID(s) associated with the recording (multi-value). (*since "
+"Picard 2.9*)"
 msgstr ""
 
 #: ../../variables/variables_basic.rst:85
-msgid "**_releasecountries**"
+msgid "**_recording_seriescomment**"
 msgstr ""
 
 #: ../../variables/variables_basic.rst:87
+msgid ""
+"The series disambiguation comment(s) associated with the recording "
+"(multi-value). (*since Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:89
+msgid "**_recording_seriesnumber**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:91
+msgid ""
+"The series number(s) associated with the recording (multi-value). (*since"
+" Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:93
+msgid "**_releaseannotation**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:95
+msgid "The annotation comment for the release. (*since Picard 2.6*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:97
+msgid "**_releasecomment**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:99
+msgid "Release disambiguation comment. (*since Picard 0.15*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:101
+msgid "**_releasecountries**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:103
 msgid ""
 "This provides the complete list of release countries for the release as a"
 " multi-value variable. (*since Picard 2.3.1*)"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:89
+#: ../../variables/variables_basic.rst:105
+msgid "**_release_series**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:107
+msgid ""
+"The series title(s) associated with the release (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:109
+msgid "**_release_seriesid**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:111
+msgid ""
+"The series MBID(s) associated with the release (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:113
+msgid "**_release_seriescomment**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:115
+msgid ""
+"The series disambiguation comment(s) associated with the release (multi-"
+"value). (*since Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:117
+msgid "**_release_seriesnumber**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:119
+msgid ""
+"The series number(s) associated with the release (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:121
 msgid "**_releasegroup**"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:91
+#: ../../variables/variables_basic.rst:123
 msgid ""
 "Release Group Title which is typically the same as the Album Title, but "
 "can be different."
 msgstr ""
 
-#: ../../variables/variables_basic.rst:93
+#: ../../variables/variables_basic.rst:125
 msgid "**_releasegroupcomment**"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:95
+#: ../../variables/variables_basic.rst:127
 msgid "Release Group disambiguation comment."
 msgstr ""
 
-#: ../../variables/variables_basic.rst:97
+#: ../../variables/variables_basic.rst:129
 msgid "**_releasegroup_firstreleasedate**"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:99
+#: ../../variables/variables_basic.rst:131
 msgid ""
 "The date of the earliest release in the Release Group in the format YYYY-"
 "MM-DD. This is intended to provide, for example, the release date of the "
 "vinyl version of what you have on CD. (*Since Picard 2.6*)"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:103
+#: ../../variables/variables_basic.rst:135
 msgid ""
 "This is the same information provided by default in the ``originaldate`` "
 "tag."
 msgstr ""
 
-#: ../../variables/variables_basic.rst:105
+#: ../../variables/variables_basic.rst:137
+msgid "**_releasegroup_series**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:139
+msgid ""
+"The series title(s) associated with the release group (multi-value). "
+"(*since Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:141
+msgid "**_releasegroup_seriesid**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:143
+msgid ""
+"The series MBID(s) associated with the release group (multi-value). "
+"(*since Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:145
+msgid "**_releasegroup_seriescomment**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:147
+msgid ""
+"The series disambiguation comment(s) associated with the release group "
+"(multi-value). (*since Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:149
+msgid "**_releasegroup_seriesnumber**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:151
+msgid ""
+"The series number(s) associated with the release group (multi-value). "
+"(*since Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:153
 msgid "**_releaselanguage**"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:107
+#: ../../variables/variables_basic.rst:155
 msgid ""
 "Release Language as per `ISO 639-3 "
 "<https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:111
+#: ../../variables/variables_basic.rst:159
 msgid "**_secondaryreleasetype**"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:113
+#: ../../variables/variables_basic.rst:161
 msgid ""
 "Zero or more Release Group Secondary types (i.e.: audiobook, compilation,"
 " dj-mix, interview, live, mixtape/street, remix, soundtrack, or "
 "spokenword)."
 msgstr ""
 
-#: ../../variables/variables_basic.rst:115
+#: ../../variables/variables_basic.rst:163
 msgid "**_totalalbumtracks**"
 msgstr ""
 
-#: ../../variables/variables_basic.rst:117
+#: ../../variables/variables_basic.rst:165
 msgid "The total number of tracks across all discs of this release."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:167
+msgid "**_work_series**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:169
+msgid ""
+"The series title(s) associated with the work (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:171
+msgid "**_work_seriesid**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:173
+msgid ""
+"The series MBID(s) associated with the work (multi-value). (*since Picard"
+" 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:175
+msgid "**_work_seriescomment**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:177
+msgid ""
+"The series disambiguation comment(s) associated with the work (multi-"
+"value). (*since Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:179
+msgid "**_work_seriesnumber**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:181
+msgid ""
+"The series number(s) associated with the work (multi-value). (*since "
+"Picard 2.9*)"
 msgstr ""
 
 #~ msgid ""

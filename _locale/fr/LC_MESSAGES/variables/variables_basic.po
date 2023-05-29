@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-25 08:08-0700\n"
+"POT-Creation-Date: 2023-05-29 14:17-0600\n"
 "PO-Revision-Date: 2022-11-26 17:09+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/variablesvariables_basic/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects"
+"/picard-docs/variablesvariables_basic/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_basic.rst:8
@@ -228,28 +227,82 @@ msgstr ""
 
 # Variable name.  Do not translate.
 #: ../../variables/variables_basic.rst:77
+#, fuzzy
+msgid "**_recording_series**"
+msgstr "**_recording_comment**"
+
+#: ../../variables/variables_basic.rst:79
+#, fuzzy
+msgid ""
+"The series title(s) associated with the recording (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+"Les noms des artistes de l'album (valeurs multiples). (*depuis Picard "
+"1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:81
+#, fuzzy
+msgid "**_recording_seriesid**"
+msgstr "**_recording_comment**"
+
+#: ../../variables/variables_basic.rst:83
+#, fuzzy
+msgid ""
+"The series MBID(s) associated with the recording (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+"Les noms de tri des artistes de la piste (valeurs multiples). (*depuis "
+"Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:85
+#, fuzzy
+msgid "**_recording_seriescomment**"
+msgstr "**_recording_comment**"
+
+#: ../../variables/variables_basic.rst:87
+msgid ""
+"The series disambiguation comment(s) associated with the recording "
+"(multi-value). (*since Picard 2.9*)"
+msgstr ""
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:89
+#, fuzzy
+msgid "**_recording_seriesnumber**"
+msgstr "**_recording_comment**"
+
+#: ../../variables/variables_basic.rst:91
+msgid ""
+"The series number(s) associated with the recording (multi-value). (*since"
+" Picard 2.9*)"
+msgstr ""
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:93
 msgid "**_releaseannotation**"
 msgstr "**_releaseannotation**"
 
-#: ../../variables/variables_basic.rst:79
+#: ../../variables/variables_basic.rst:95
 msgid "The annotation comment for the release. (*since Picard 2.6*)"
 msgstr "Le commentaire d'annotation pour la version. (*depuis Picard 2,6*)"
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:81
+#: ../../variables/variables_basic.rst:97
 msgid "**_releasecomment**"
 msgstr "**_releasecomment**"
 
-#: ../../variables/variables_basic.rst:83
+#: ../../variables/variables_basic.rst:99
 msgid "Release disambiguation comment. (*since Picard 0.15*)"
 msgstr "Le commentaire d'homonymie pour la version. (*depuis Picard 0,15*)"
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:85
+#: ../../variables/variables_basic.rst:101
 msgid "**_releasecountries**"
 msgstr "**_releasecountries**"
 
-#: ../../variables/variables_basic.rst:87
+#: ../../variables/variables_basic.rst:103
 msgid ""
 "This provides the complete list of release countries for the release as a"
 " multi-value variable. (*since Picard 2.3.1*)"
@@ -258,11 +311,69 @@ msgstr ""
 "comme une variable à plusieurs valeurs. (*depuis Picard 2.3.1*)"
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:89
+#: ../../variables/variables_basic.rst:105
+#, fuzzy
+msgid "**_release_series**"
+msgstr "**_releasecountries**"
+
+#: ../../variables/variables_basic.rst:107
+#, fuzzy
+msgid ""
+"The series title(s) associated with the release (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+"Les noms des artistes de l'album (valeurs multiples). (*depuis Picard "
+"1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:109
+#, fuzzy
+msgid "**_release_seriesid**"
+msgstr "**_releasecountries**"
+
+#: ../../variables/variables_basic.rst:111
+#, fuzzy
+msgid ""
+"The series MBID(s) associated with the release (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+"Les noms de tri des artistes de la piste (valeurs multiples). (*depuis "
+"Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:113
+#, fuzzy
+msgid "**_release_seriescomment**"
+msgstr "**_releasecomment**"
+
+#: ../../variables/variables_basic.rst:115
+#, fuzzy
+msgid ""
+"The series disambiguation comment(s) associated with the release (multi-"
+"value). (*since Picard 2.9*)"
+msgstr "Le commentaire d'annotation pour la version. (*depuis Picard 2,6*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:117
+#, fuzzy
+msgid "**_release_seriesnumber**"
+msgstr "**_releasecountries**"
+
+#: ../../variables/variables_basic.rst:119
+#, fuzzy
+msgid ""
+"The series number(s) associated with the release (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+"Les noms de tri des artistes de la piste (valeurs multiples). (*depuis "
+"Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:121
 msgid "**_releasegroup**"
 msgstr "**_releasegroup**"
 
-#: ../../variables/variables_basic.rst:91
+#: ../../variables/variables_basic.rst:123
 msgid ""
 "Release Group Title which is typically the same as the Album Title, but "
 "can be different."
@@ -271,20 +382,20 @@ msgstr ""
 "de l'album, mais peut être différent."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:93
+#: ../../variables/variables_basic.rst:125
 msgid "**_releasegroupcomment**"
 msgstr "**_releasegroupcomment**"
 
-#: ../../variables/variables_basic.rst:95
+#: ../../variables/variables_basic.rst:127
 msgid "Release Group disambiguation comment."
 msgstr "Le commentaire d'homonymie pour le groupe de version."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:97
+#: ../../variables/variables_basic.rst:129
 msgid "**_releasegroup_firstreleasedate**"
 msgstr "**_releasegroup_firstreleasedate**"
 
-#: ../../variables/variables_basic.rst:99
+#: ../../variables/variables_basic.rst:131
 msgid ""
 "The date of the earliest release in the Release Group in the format YYYY-"
 "MM-DD. This is intended to provide, for example, the release date of the "
@@ -294,7 +405,7 @@ msgstr ""
 "AAAA-MM-JJ. Ceci est destiné à fournir, par exemple, la date de sortie de"
 " la version vinyle de ce que vous avez sur CD. (*Depuis Picard 2.6*)"
 
-#: ../../variables/variables_basic.rst:103
+#: ../../variables/variables_basic.rst:135
 msgid ""
 "This is the same information provided by default in the ``originaldate`` "
 "tag."
@@ -303,11 +414,60 @@ msgstr ""
 "``originaldate``."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:105
+#: ../../variables/variables_basic.rst:137
+#, fuzzy
+msgid "**_releasegroup_series**"
+msgstr "**_releasegroup**"
+
+#: ../../variables/variables_basic.rst:139
+msgid ""
+"The series title(s) associated with the release group (multi-value). "
+"(*since Picard 2.9*)"
+msgstr ""
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:141
+#, fuzzy
+msgid "**_releasegroup_seriesid**"
+msgstr "**_releasegroup**"
+
+#: ../../variables/variables_basic.rst:143
+msgid ""
+"The series MBID(s) associated with the release group (multi-value). "
+"(*since Picard 2.9*)"
+msgstr ""
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:145
+#, fuzzy
+msgid "**_releasegroup_seriescomment**"
+msgstr "**_releasegroupcomment**"
+
+#: ../../variables/variables_basic.rst:147
+#, fuzzy
+msgid ""
+"The series disambiguation comment(s) associated with the release group "
+"(multi-value). (*since Picard 2.9*)"
+msgstr "Le commentaire d'annotation pour la version. (*depuis Picard 2,6*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:149
+#, fuzzy
+msgid "**_releasegroup_seriesnumber**"
+msgstr "**_releasegroup**"
+
+#: ../../variables/variables_basic.rst:151
+msgid ""
+"The series number(s) associated with the release group (multi-value). "
+"(*since Picard 2.9*)"
+msgstr ""
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:153
 msgid "**_releaselanguage**"
 msgstr "**_releaselanguage**"
 
-#: ../../variables/variables_basic.rst:107
+#: ../../variables/variables_basic.rst:155
 msgid ""
 "Release Language as per `ISO 639-3 "
 "<https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)"
@@ -316,11 +476,11 @@ msgstr ""
 "<https://fr.wikipedia.org/wiki/ISO_639-3>`_. (*depuis Picard 0,10*)"
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:111
+#: ../../variables/variables_basic.rst:159
 msgid "**_secondaryreleasetype**"
 msgstr "**_secondaryreleasetype**"
 
-#: ../../variables/variables_basic.rst:113
+#: ../../variables/variables_basic.rst:161
 msgid ""
 "Zero or more Release Group Secondary types (i.e.: audiobook, compilation,"
 " dj-mix, interview, live, mixtape/street, remix, soundtrack, or "
@@ -331,13 +491,71 @@ msgstr ""
 "mixtape / street, remix, bande sonore ou speechword)."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_basic.rst:115
+#: ../../variables/variables_basic.rst:163
 msgid "**_totalalbumtracks**"
 msgstr "**_totalalbumtracks**"
 
-#: ../../variables/variables_basic.rst:117
+#: ../../variables/variables_basic.rst:165
 msgid "The total number of tracks across all discs of this release."
 msgstr "Le nombre total de pistes sur tous les disques de cette version."
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:167
+#, fuzzy
+msgid "**_work_series**"
+msgstr "**_releasecountries**"
+
+#: ../../variables/variables_basic.rst:169
+#, fuzzy
+msgid ""
+"The series title(s) associated with the work (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+"Les noms des artistes de l'album (valeurs multiples). (*depuis Picard "
+"1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:171
+#, fuzzy
+msgid "**_work_seriesid**"
+msgstr "**_releasecountries**"
+
+#: ../../variables/variables_basic.rst:173
+#, fuzzy
+msgid ""
+"The series MBID(s) associated with the work (multi-value). (*since Picard"
+" 2.9*)"
+msgstr ""
+"Les noms de tri des artistes de la piste (valeurs multiples). (*depuis "
+"Picard 1.3*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:175
+#, fuzzy
+msgid "**_work_seriescomment**"
+msgstr "**_releasecomment**"
+
+#: ../../variables/variables_basic.rst:177
+#, fuzzy
+msgid ""
+"The series disambiguation comment(s) associated with the work (multi-"
+"value). (*since Picard 2.9*)"
+msgstr "Le commentaire d'homonymie pour la version. (*depuis Picard 0,15*)"
+
+# Variable name.  Do not translate.
+#: ../../variables/variables_basic.rst:179
+#, fuzzy
+msgid "**_work_seriesnumber**"
+msgstr "**_absolutetracknumber**"
+
+#: ../../variables/variables_basic.rst:181
+#, fuzzy
+msgid ""
+"The series number(s) associated with the work (multi-value). (*since "
+"Picard 2.9*)"
+msgstr ""
+"Les noms de tri des artistes de la piste (valeurs multiples). (*depuis "
+"Picard 1.3*)"
 
 #~ msgid ""
 #~ "Variables that rely on information from"
@@ -477,3 +695,4 @@ msgstr "Le nombre total de pistes sur tous les disques de cette version."
 #~ "CD. (*Depuis Picard 2.6*. Avant Picard"
 #~ " 2.6, ces informations étaient disponibles"
 #~ " dans la balise ``originaldate``.)"
+
