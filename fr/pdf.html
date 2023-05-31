@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MusicBrainz Picard &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>MusicBrainz Picard &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/css/extra.css" type="text/css" />
@@ -28,14 +28,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -51,7 +55,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="config/configuration.html">Configuration</a></li>
@@ -64,7 +68,7 @@
 <li class="toctree-l1"><a class="reference internal" href="usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -95,6 +99,12 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -121,7 +131,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">MusicBrainz Picard</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -154,7 +164,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/status_icons.html">Icônes d’état</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="getting_started/status_icons.html#album-release-icons">Icônes d’album / de sortie</a></li>
@@ -193,7 +203,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="config/options_filerenaming.html">Options de nom de fichier</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="config/options_filerenaming_editor.html">Nom de fichier Editeur de script</a></li>
-<li class="toctree-l4"><a class="reference internal" href="config/options_filerenaming_compat.html">File Naming Compatibility Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="config/options_filerenaming_compat.html">Options de compatibilité des noms de fichiers</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="config/options_fingerprinting.html">Options d’empreintes digitales</a></li>
@@ -212,7 +222,7 @@
 <li class="toctree-l3"><a class="reference internal" href="config/options_interface.html">Options de l’interface utilisateur</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="config/options_interface_colors.html">Couleurs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="config/options_interface_top_tags.html">Top Tags</a></li>
-<li class="toctree-l4"><a class="reference internal" href="config/options_interface_toolbar.html">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="config/options_interface_toolbar.html">Barre d’outils</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="config/options_scripting.html">Options de script</a></li>
@@ -403,8 +413,8 @@
 <li class="toctree-l2"><a class="reference internal" href="usage/option_profiles.html#saving-profile-option-settings">Sauvegarde des paramètres des options du profil</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="usage/command_processing.html">Command and Batch Processing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage/exec_commands.html">Executable Commands</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="usage/command_processing.html">Traitement par commande et par lot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage/exec_commands.html">Commandes exécutables</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="usage/exec_commands.html#clear-logs">CLEAR_LOGS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage/exec_commands.html#cluster">CLUSTER</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage/exec_commands.html#fingerprint">FINGERPRINT</a></li>
@@ -572,6 +582,7 @@
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#composer-sort-order">Ordre de tri du compositeur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id9">Chef d’orchestre</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#copyright-4">Copyright <sup>[4]</sup></a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#date-10">Date <sup>[10]</sup></a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#director">Réalisateur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#disc-number">Numéro de disque</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#disc-subtitle">Sous-titre du disque</a></li>
@@ -619,10 +630,10 @@
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id28">Évaluation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id29">Étiquette d’enregistrement</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id30">Pays de sortie</a></li>
-<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id31">Date de sortie</a></li>
-<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id32">État de sortie</a></li>
-<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id33">Type de version</a></li>
-<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id34">Remixeur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#release-date-10">Date de publication <sup>[10]</sup></a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id31">État de sortie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id32">Type de version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id33">Remixeur</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-album-gain">ReplayGain Gain d’album</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-album-peak">ReplayGain Album Peak</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#replaygain-album-range">ReplayGain Album Range</a></li>
@@ -638,7 +649,7 @@
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#total-discs">Nombre total de disques</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#total-tracks">Total des pistes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#track-number">Numéro de piste</a></li>
-<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id35">Titre de la piste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#id34">Titre de la piste</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#track-title-sort-order-4">Ordre de tri des titres de piste <sup>[4]</sup></a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#website-official-artist-website">Site Web (site officiel de l’artiste)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="appendices/tag_mapping.html#work-title">Work Title</a></li>

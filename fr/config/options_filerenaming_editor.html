@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nom de fichier Editeur de script &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Nom de fichier Editeur de script &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="File Naming Compatibility Options" href="options_filerenaming_compat.html" />
+    <link rel="next" title="Options de compatibilité des noms de fichiers" href="options_filerenaming_compat.html" />
     <link rel="prev" title="Options de nom de fichier" href="options_filerenaming.html" /> 
 </head>
 
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
@@ -67,7 +71,7 @@
 <li class="toctree-l3"><a class="reference internal" href="options_cover.html">Options de la pochette</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="options_filerenaming.html">Options de nom de fichier</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Nom de fichier Editeur de script</a></li>
-<li class="toctree-l4"><a class="reference internal" href="options_filerenaming_compat.html">File Naming Compatibility Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options_filerenaming_compat.html">Options de compatibilité des noms de fichiers</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="options_fingerprinting.html">Options d’empreintes digitales</a></li>
@@ -89,7 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -120,6 +124,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -146,7 +156,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="configuration.html">Configuration</a></li>
           <li class="breadcrumb-item"><a href="options_filerenaming.html">Options de nom de fichier</a></li>
       <li class="breadcrumb-item active">Nom de fichier Editeur de script</li>
@@ -160,21 +170,16 @@
              
   <div class="section" id="file-naming-script-editor">
 <span id="opt-naming-script-editor"></span><h1><span class="target" id="index-2"></span>Nom de fichier Editeur de script<a class="headerlink" href="#file-naming-script-editor" title="Lien permanent vers ce titre"></a></h1>
-<p>L’éditeur de script de nom de fichier est utilisé pour gérer les scripts de nom de fichier disponibles pour Picard. Chaque script a un titre qui apparaétra dans la boéte de sélection des scripts.  Il y a deux types de scripts disponibles:</p>
-<ul class="simple">
-<li><p>Scripts prédéfinis - Ce sont les scripts de base par défaut fournis par Picard.</p></li>
-<li><p>Scripts définis par l’utilisateur - Il s’agit de scripts qui ont été définis ou personnalisés par l’utilisateur.</p></li>
-</ul>
-<p>Les scripts prédéfinis ne peuvent pas être modifiés, mais vous pouvez faire une copie du script et la copie peut être éditée.</p>
+<p>L’éditeur de scripts de nommage de fichiers est utilisé pour gérer les scripts de nommage de fichiers disponibles pour Picard. Chaque script a un titre qui s’affiche dans la boîte de sélection des scripts, et tous les scripts listés peuvent être modifiés par l’utilisateur.</p>
 <a class="reference internal image-reference" href="../_images/options-filenaming-editor-1.png"><img alt="../_images/options-filenaming-editor-1.png" src="../_images/options-filenaming-editor-1.png" style="width: 100%;" /></a>
 <p>L’écran de l’éditeur comporte les sections suivantes:</p>
 <p><strong>Sélectionnez le script de dénomination des fichiers à utiliser</strong></p>
 <blockquote>
-<div><p>Cette option permet à l’utilisateur de sélectionner le script de dénomination de fichier à utiliser dans la liste des scripts disponibles. Le script sélectionné apparaîtra dans la section d’édition, où il pourra être modifié s’il s’agit d’un script défini par l’utilisateur.</p>
+<div><p>Cette option permet à l’utilisateur de sélectionner le script de dénomination de fichier à utiliser dans la liste des scripts disponibles. Le script sélectionné s’affichera dans la section d’édition, où il pourra être modifié si nécessaire.</p>
 </div></blockquote>
 <p><strong>Titre</strong></p>
 <blockquote>
-<div><p>Le titre attribué au script actuellement sélectionné. Il peut être modifié si le script est un script défini par l’utilisateur.</p>
+<div><p>Le titre attribué au script actuellement sélectionné. Il peut être modifié si nécessaire.</p>
 </div></blockquote>
 <p><strong>Scénario</strong></p>
 <blockquote>
@@ -206,7 +211,7 @@
 <ul class="simple">
 <li><p>Importez un nouveau script à partir d’un fichier, qu’il s’agisse d’un script en texte brut ou d’un paquet de scripts de dénomination Picard.</p></li>
 <li><p>Exporte le script actuel vers un fichier, soit sous forme de script en texte brut, soit sous forme de paquet de scripts de dénomination Picard.</p></li>
-<li><p>Ajouter un nouveau script (par défaut).</p></li>
+<li><p>Ajouter un nouveau script (par défaut).  Il peut s’agir d’un script vierge ou d’un des scripts prédéfinis du système de base fournis par Picard.</p></li>
 <li><p>Copie le script actuel comme un nouveau script.</p></li>
 <li><p>Supprime le script actuel.</p></li>
 <li><p>Réinitialise tous les scripts, également disponible via le bouton <span class="guilabel">Reset</span>.</p></li>
@@ -232,7 +237,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="options_filerenaming_compat.html" class="btn btn-neutral float-right" title="File Naming Compatibility Options" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="options_filerenaming_compat.html" class="btn btn-neutral float-right" title="Options de compatibilité des noms de fichiers" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="options_filerenaming.html" class="btn btn-neutral float-left" title="Options de nom de fichier" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>

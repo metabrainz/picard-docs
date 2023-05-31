@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>File Naming Script Editor &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+  <title>File Naming Script Editor &mdash; MusicBrainz Picard v2.9beta1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -29,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -119,6 +123,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction to Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attaching a Disc ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Submitting an AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
@@ -145,7 +155,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="configuration.html">Configuration</a></li>
           <li class="breadcrumb-item"><a href="options_filerenaming.html">File Naming Options</a></li>
       <li class="breadcrumb-item active">File Naming Script Editor</li>
@@ -160,24 +170,18 @@
   <div class="section" id="file-naming-script-editor">
 <span id="opt-naming-script-editor"></span><h1><span class="target" id="index-0"></span>File Naming Script Editor<a class="headerlink" href="#file-naming-script-editor" title="Permalink to this headline"></a></h1>
 <p>The file naming script editor is used to manage the file naming scripts available for use by Picard.
-Each script has a title that will show up in the script selection box.  There are two types of scripts
-available:</p>
-<ul class="simple">
-<li><p>Preset Scripts - These are basic default scripts provided by Picard.</p></li>
-<li><p>User-Defined Scripts - These are scripts that have been defined or customized by the user.</p></li>
-</ul>
-<p>Preset scripts cannot be modified, but you can make a copy of the script and the copy can be edited.</p>
+Each script has a title that will show up in the script selection box, and all listed scripts can be
+edited by the user.</p>
 <a class="reference internal image-reference" href="../_images/options-filenaming-editor-1.png"><img alt="../_images/options-filenaming-editor-1.png" src="../_images/options-filenaming-editor-1.png" style="width: 100%;" /></a>
 <p>The editor screen has the following sections:</p>
 <p><strong>Select the file naming script to use</strong></p>
 <blockquote>
 <div><p>This option allows the user to select the file naming script to use from the list of scripts available.
-The selected script will show up in the editing section, where it can be modified if it is a user-defined
-script.</p>
+The selected script will show up in the editing section, where it can be modified if required.</p>
 </div></blockquote>
 <p><strong>Title</strong></p>
 <blockquote>
-<div><p>The title assigned to the currently selected script. This can be modified if the script is a user-defined script.</p>
+<div><p>The title assigned to the currently selected script. This can be modified if required.</p>
 </div></blockquote>
 <p><strong>Script</strong></p>
 <blockquote>
@@ -226,7 +230,7 @@ display settings include:</p>
 <ul class="simple">
 <li><p>Import a new script from a file, either as a plain-text script or a Picard Naming Script Package.</p></li>
 <li><p>Export the current script to a file, either as a plain-text script or a Picard Naming Script Package.</p></li>
-<li><p>Add a new (default) script.</p></li>
+<li><p>Add a new (default) script.  This can be a blank script or one of the basic system preset scripts provided by Picard.</p></li>
 <li><p>Copy the current script as a new script.</p></li>
 <li><p>Delete the current script.</p></li>
 <li><p>Reset all scripts, also available via the <span class="guilabel">Reset</span> button.</p></li>

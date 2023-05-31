@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Tags &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+  <title>Basic Tags &mdash; MusicBrainz Picard v2.9beta1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -29,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -106,6 +110,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction to Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attaching a Disc ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Submitting an AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
@@ -132,7 +142,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="variables.html">Tags &amp; Variables</a></li>
       <li class="breadcrumb-item active">Basic Tags</li>
       <li class="wy-breadcrumbs-aside">
@@ -145,13 +155,12 @@
              
   <div class="section" id="basic-tags">
 <h1><span class="target" id="index-0"></span>Basic Tags<a class="headerlink" href="#basic-tags" title="Permalink to this headline"></a></h1>
-<p>The following tags are populated from MusicBrainz data for most releases, without any special Picard settings.</p>
-<p>All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in
-several other more minor settings) by wrapping them between percent ‘%’ symbols (e.g. <code class="docutils literal notranslate"><span class="pre">%title%</span></code>).</p>
+<p>The following tags are supported and are written in the standard format that can be read by other software.  The information is populated from MusicBrainz data for most releases, without any special Picard settings.  Note that some of the information such as ‘lyrics’ is not contained within the MusicBrainz database, and will not be provided automatically.</p>
+<p>All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in several other more minor settings) by wrapping them between percent ‘%’ symbols (e.g. <code class="docutils literal notranslate"><span class="pre">%title%</span></code>).</p>
+<p>Most tags beginning with <code class="docutils literal notranslate"><span class="pre">musicbrainz_</span></code> provide the <span class="target" id="index-1"></span>MusicBrainz Identifier (MBID) of the entity.  The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity.  For more information about MBIDs, please see the <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Identifier</a> page in the MusicBrainz documentation.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Tags will not be created and will not be available as variables if there was no value retrieved for the tag
-from the MusicBrainz database.</p>
+<p>Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -159,11 +168,11 @@ from the MusicBrainz database.</p>
 </div>
 <p><strong>acoustid_fingerprint</strong></p>
 <blockquote>
-<div><p>AcoustID Fingerprint for the track.</p>
+<div><p>AcoustID Fingerprint for the track.  The fingerprint is based on the audio information found in a file, and is calculated using the <a class="reference external" href="https://acoustid.org/chromaprint">Chromaprint</a> software.</p>
 </div></blockquote>
 <p><strong>acoustid_id</strong></p>
 <blockquote>
-<div><p>AcoustID associated with the track.</p>
+<div><p>AcoustID associated with the track.  The AcoustID is the identifier assigned to an audio file based on its ‘acoustid_fingerprint’.  Multiple fingerprints may be assigned the same AcoustID if the fingerprints are similar enough.</p>
 </div></blockquote>
 <p><strong>album</strong></p>
 <blockquote>
@@ -207,8 +216,7 @@ from the MusicBrainz database.</p>
 </div></blockquote>
 <p><strong>catalognumber</strong></p>
 <blockquote>
-<div><p>The number(s) assigned to the release by the label(s), which can often be found on the spine or near the barcode.
-There may be more than one, especially when multiple labels are involved.</p>
+<div><p>The number(s) assigned to the release by the label(s), which can often be found on the spine or near the barcode.  There may be more than one, especially when multiple labels are involved.</p>
 </div></blockquote>
 <p><strong>comment</strong></p>
 <blockquote>
@@ -223,11 +231,11 @@ There may be more than one, especially when multiple labels are involved.</p>
 </div></blockquote>
 <p><strong>copyright</strong></p>
 <blockquote>
-<div><p>Contain copyright message for the copyright holder of the original sound, begin with a year and a space character.</p>
+<div><p>Contains the copyright message for the copyright holder of the original sound, beginning with a year and a space character.</p>
 </div></blockquote>
 <p><strong>date</strong></p>
 <blockquote>
-<div><p>Release Date (YYYY-MM-DD) - the date that the release was issued.</p>
+<div><p>Release Date (YYYY-MM-DD) - the date that the release (album) was issued.</p>
 </div></blockquote>
 <p><strong>director</strong></p>
 <blockquote>
@@ -251,8 +259,7 @@ There may be more than one, especially when multiple labels are involved.</p>
 </div></blockquote>
 <p><strong>isrc</strong></p>
 <blockquote>
-<div><p>International Standard Recording Code - an international standard code for uniquely identifying sound recordings and music video recordings.
-See <a class="reference external" href="https://en.wikipedia.org/wiki/International_Standard_Recording_Code">Wikipedia</a> for more information. (<em>since Picard 0.12</em>)</p>
+<div><p>International Standard Recording Code - an international standard code for uniquely identifying sound recordings and music video recordings.  See <a class="reference external" href="https://en.wikipedia.org/wiki/International_Standard_Recording_Code">Wikipedia</a> for more information. (<em>since Picard 0.12</em>)</p>
 </div></blockquote>
 <p><strong>key</strong></p>
 <blockquote>
@@ -268,7 +275,7 @@ See <a class="reference external" href="https://en.wikipedia.org/wiki/Internatio
 </div></blockquote>
 <p><strong>lyrics</strong></p>
 <blockquote>
-<div><p>Lyrics for the track.</p>
+<div><p>Lyrics for the track.  Not provided by MusicBrainz.</p>
 </div></blockquote>
 <p><strong>media</strong></p>
 <blockquote>
@@ -276,45 +283,43 @@ See <a class="reference external" href="https://en.wikipedia.org/wiki/Internatio
 </div></blockquote>
 <p><strong>musicbrainz_albumartistid</strong></p>
 <blockquote>
-<div><p>Release Artist’s MusicBrainz Identifier.</p>
+<div><p>Release Artist’s MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_albumid</strong></p>
 <blockquote>
-<div><p>Release MusicBrainz Identifier.</p>
+<div><p>Release MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_artistid</strong></p>
 <blockquote>
-<div><p>Track Artist’s MusicBrainz Identifier.</p>
+<div><p>Track Artist’s MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_discid</strong></p>
 <blockquote>
-<div><p>Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of
-contents (TOC) information read from the disc. This tag contains the Disc ID if the album information was retrieved using
-<span class="menuselection">“Tools ‣ Lookup CD”</span>. (<em>since Picard 0.12</em>)</p>
+<div><p>Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing.  This is based on the table of contents (TOC) information read from the disc. This tag contains the Disc ID if the album information was retrieved using <span class="menuselection">“Tools ‣ Lookup CD”</span>. (<em>since Picard 0.12</em>)</p>
 </div></blockquote>
 <p><strong>musicbrainz_originalalbumid</strong></p>
 <blockquote>
-<div><p>Original Release’s MusicBrainz Identifier.</p>
+<div><p>Original Release’s MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_originalartistid</strong></p>
 <blockquote>
-<div><p>Original Track Artist’s MusicBrainz Identifier.</p>
+<div><p>Original Track Artist’s MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_recordingid</strong></p>
 <blockquote>
-<div><p>Recording’s MusicBrainz Identifier.</p>
+<div><p>Recording’s MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_releasegroupid</strong></p>
 <blockquote>
-<div><p>Release Group’s MusicBrainz Identifier.</p>
+<div><p>Release Group’s MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_trackid</strong></p>
 <blockquote>
-<div><p>Release Track MusicBrainz Identifier.</p>
+<div><p>Release Track MusicBrainz Identifier (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_workid</strong></p>
 <blockquote>
-<div><p>MusicBrainz Identifier for the work.</p>
+<div><p>MusicBrainz Identifier for the work (MBID).</p>
 </div></blockquote>
 <p><strong>originalalbum</strong></p>
 <blockquote>
@@ -326,28 +331,19 @@ contents (TOC) information read from the disc. This tag contains the Disc ID if 
 </div></blockquote>
 <p><strong>originaldate</strong></p>
 <blockquote>
-<div><p>The original release date in the format YYYY-MM-DD. By default this is set to the earliest release in the Release
-Group.  This can provide, for example, the release date of the vinyl version of what you have on CD. (<em>Included as
-standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version
-earlier than Picard 0.15</em>)</p>
+<div><p>The original release date in the format YYYY-MM-DD. By default this is set to the earliest release in the Release Group.  This can provide, for example, the release date of the vinyl version of what you have on CD. (<em>Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15</em>)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This is the same information provided in the <code class="docutils literal notranslate"><span class="pre">_releasegroup_firstreleasedate</span></code> variable, and is consistent across
-all tracks in the release.  If you prefer to have this tag populated with the date of the earliest recording of
-the track in the database, which will likely be different for each track in the release, this can be achieved by
-enabling a one-line tagging script as <code class="docutils literal notranslate"><span class="pre">$set(originaldate,%_recording_firstreleasedate%)</span></code>.  Be aware that setting
-this can cause a release to be scattered across multiple directories if you use <code class="docutils literal notranslate"><span class="pre">%originaldate%</span></code> as part of the
-path portion of your file naming script.</p>
+<p>This is the same information provided in the <code class="docutils literal notranslate"><span class="pre">_releasegroup_firstreleasedate</span></code> variable, and is consistent across all tracks in the release.  If you prefer to have this tag populated with the date of the earliest recording of the track in the database, which will likely be different for each track in the release, this can be achieved by enabling a one-line tagging script as <code class="docutils literal notranslate"><span class="pre">$set(originaldate,%_recording_firstreleasedate%)</span></code>.  Be aware that setting this can cause a release to be scattered across multiple directories if you use <code class="docutils literal notranslate"><span class="pre">%originaldate%</span></code> as part of the path portion of your file naming script.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are storing tags in MP3 files as ID3v2.3 (which is the Windows and iTunes compatible version) then the original date can only be stored as a year.</p>
+<p>If you are storing tags in MP3 files as ID3v2.3 then the original date can only be stored as a year.</p>
 </div>
 </div></blockquote>
 <p><strong>originalyear</strong></p>
 <blockquote>
-<div><p>The year of the original release date in the format YYYY. By default this is set to the earliest release in the Release
-Group.  This can provide, for example, the release year of the vinyl version of what you have on CD.</p>
+<div><p>The year of the original release date in the format YYYY. By default this is set to the earliest release in the Release Group.  This can provide, for example, the release year of the vinyl version of what you have on CD.</p>
 </div></blockquote>
 <p><strong>releasecountry</strong></p>
 <blockquote>

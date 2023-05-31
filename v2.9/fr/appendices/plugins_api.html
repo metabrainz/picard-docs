@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Annexe B: Mappage de balises" href="tag_mapping.html" />
-    <link rel="prev" title="Chargement des versions avec MusicBrainz pour Android" href="../tutorials/android_app.html" /> 
+    <link rel="prev" title="Soumission d’un AcoustID" href="../tutorials/v_submit_acoustid.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -66,7 +70,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -97,6 +101,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Annexe A: API des plugins</a></li>
@@ -123,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Annexe A: API des plugins</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -152,6 +162,7 @@
 <span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.7&#39;</span><span class="p">,</span> <span class="s1">&#39;2.8&#39;</span><span class="p">]</span>
 <span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0-or-later&quot;</span>
 <span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.html&quot;</span>
+<span class="n">PLUGIN_USER_GUIDE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://my.program.site.org/example_plugin_documentation.html&quot;</span>
 </pre></div>
 </div>
 <p>Explication des variables :</p>
@@ -162,6 +173,7 @@
 <li><p><strong>PLUGIN_API_VERSIONS</strong> doit être défini sur les versions de Picard avec lesquelles s’exécuter ce plugin. Les nouvelles versions de Picard prendront généralement en charge les anciennes versions de l’API de plug-in, mais en cas de modification, la prise en charge des anciennes versions de plug-in peut être abandonnée. Les versions disponibles pour Picard 2 sont « 2.0 », « 2.1 » et « 2.2 ».</p></li>
 <li><p><strong>PLUGIN_LICENSE</strong> doit être défini avec le nom de licence du plugin. Si possible, utilisez l’un des noms de licence de la <a class="reference external" href="https://spdx.org/licenses/">Liste des licences SPDX</a>, mais vous êtes invités à utiliser une autre licence si celle que vous avez choisie n’est pas disponible dans la liste.</p></li>
 <li><p><strong>PLUGIN_LICENSE_URL</strong> doit être défini sur une URL pointant vers le texte complet de la licence.</p></li>
+<li><p><strong>PLUGIN_USER_GUIDE_URL</strong> doit être définie comme une URL pointant vers la documentation du plugin.  Cette variable est facultative et peut être omise.  Si une URL est fournie, elle sera affichée comme un lien cliquable dans la description affichée pour le plugin dans l’écran de configuration des options de plugins.</p></li>
 </ul>
 </div>
 <div class="section" id="metadata-processors">
@@ -380,7 +392,7 @@
         <a href="tag_mapping.html" class="btn btn-neutral float-right" title="Annexe B: Mappage de balises" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../tutorials/android_app.html" class="btn btn-neutral float-left" title="Chargement des versions avec MusicBrainz pour Android" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+        <a href="../tutorials/v_submit_acoustid.html" class="btn btn-neutral float-left" title="Soumission d’un AcoustID" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
       
     </div>
   

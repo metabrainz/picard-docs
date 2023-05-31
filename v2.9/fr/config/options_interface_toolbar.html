@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toolbar &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Barre d’outils &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
@@ -72,7 +76,7 @@
 <li class="toctree-l3 current"><a class="reference internal" href="options_interface.html">Options de l’interface utilisateur</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="options_interface_colors.html">Couleurs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="options_interface_top_tags.html">Top Tags</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Toolbar</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Barre d’outils</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="options_scripting.html">Options de script</a></li>
@@ -90,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -121,6 +125,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -147,10 +157,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="configuration.html">Configuration</a></li>
           <li class="breadcrumb-item"><a href="options_interface.html">Options de l’interface utilisateur</a></li>
-      <li class="breadcrumb-item active">Toolbar</li>
+      <li class="breadcrumb-item active">Barre d’outils</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -160,29 +170,29 @@
            <div itemprop="articleBody">
              
   <div class="section" id="toolbar">
-<h1><span class="target" id="index-0"></span>Toolbar<a class="headerlink" href="#toolbar" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-1"></span>Barre d’outils<a class="headerlink" href="#toolbar" title="Lien permanent vers ce titre"></a></h1>
 <a class="reference internal image-reference" href="../_images/options-interface-toolbar.png"><img alt="../_images/options-interface-toolbar.png" src="../_images/options-interface-toolbar.png" style="width: 100%;" /></a>
-<p><strong>Customize Action Toolbar</strong></p>
+<p><strong>Personnaliser la barre d’outils d’action</strong></p>
 <blockquote>
-<div><p>This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.</p>
-<p>Items that can be included in the toolbar include:</p>
+<div><p>Cette fonction vous permet d’ajouter, de supprimer ou de réorganiser les éléments affichés dans la Barre d’outils d’action.</p>
+<p>Les éléments qui peuvent être inclus dans la barre d’outils sont les suivants :</p>
 <ul class="simple">
-<li><p>Add Files</p></li>
-<li><p>Add Folder</p></li>
+<li><p>Ajouter des fichiers</p></li>
+<li><p>Ajouter un dossier</p></li>
 <li><p>Cluster</p></li>
-<li><p>Generate Fingerprints</p></li>
+<li><p>Générer des empreintes digitales</p></li>
 <li><p>Info</p></li>
-<li><p>Lookup</p></li>
-<li><p>Lookup CD…</p></li>
-<li><p>Lookup in Browser</p></li>
-<li><p>Open in Player</p></li>
-<li><p>Parse File Names…</p></li>
-<li><p>Remove</p></li>
-<li><p>Save</p></li>
-<li><p>Scan</p></li>
-<li><p>Submit AcoustIDs</p></li>
+<li><p>Consulter le site</p></li>
+<li><p>Rechercher un CD…</p></li>
+<li><p>Recherche dans le navigateur</p></li>
+<li><p>Ouvrir dans le lecteur</p></li>
+<li><p>Analyser les noms de fichiers…</p></li>
+<li><p>Retirer</p></li>
+<li><p>Sauvez</p></li>
+<li><p>Scanner</p></li>
+<li><p>Soumettre des AcoustIDs</p></li>
 </ul>
-<p>In addition, separators can be added to allow grouping of items.</p>
+<p>En outre, des séparateurs peuvent être ajoutés pour permettre le regroupement des éléments.</p>
 </div></blockquote>
 </div>
 

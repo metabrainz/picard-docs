@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Starting Picard &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+  <title>Starting Picard &mdash; MusicBrainz Picard v2.9beta1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -29,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -96,6 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction to Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attaching a Disc ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Submitting an AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
@@ -122,7 +132,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Starting Picard</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -144,7 +154,7 @@ you can also specify files or directories to load into Picard for processing.  P
 When the program is started, it checks to see if there is another instance of that version,
 configuration file and plugin startup status <code class="docutils literal notranslate"><span class="pre">-P</span></code> already running.  If the same version
 is already running, any files or directories specified on the command line of the new
-instance, along with any executable commands specified with the <code class="docutils literal notranslate"><span class="pre">-e</span></code> or <code class="docutils literal notranslate"><span class="pre">-exec</span></code> options
+instance, along with any executable commands specified with the <code class="docutils literal notranslate"><span class="pre">-e</span></code> or <code class="docutils literal notranslate"><span class="pre">--exec</span></code> options
 will be passed to the already running instance for processing and the new duplicate instance
 will be shut down.  This allows batch processing of files to be initiated automatically from
 other processes.  If there is no instance of that version already running, Picard will start
@@ -154,7 +164,7 @@ information to an already running instance nor accepts information from another 
 <p>Instances started with command-line argument <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">/</span> <span class="pre">--stand-alone</span></code> always start as stand-alone.</p>
 <p>If there is already an instance running when another instance is started that doesn’t result in a
 stand-alone instance, any of the command-line overrides <code class="docutils literal notranslate"><span class="pre">-d</span> <span class="pre">/</span> <span class="pre">--debug</span></code>, <code class="docutils literal notranslate"><span class="pre">-M</span> <span class="pre">/</span> <span class="pre">--no-player</span></code>
-or <code class="docutils literal notranslate"><span class="pre">-N</span> <span class="pre">/</span> <span class="pre">-no-restore</span></code> of the new duplicate instance will be ignored, and only the specified
+or <code class="docutils literal notranslate"><span class="pre">-N</span> <span class="pre">/</span> <span class="pre">--no-restore</span></code> of the new duplicate instance will be ignored, and only the specified
 files or directories and executable commands (if any) will be passed to the running instance for
 processing.  Similarly, if a primary instance has been started with any of these overrides
 specified on the command line, starting a subsequent instance of that version without the override

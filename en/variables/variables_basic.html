@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Variables &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+  <title>Basic Variables &mdash; MusicBrainz Picard v2.9beta1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -29,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -106,6 +110,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction to Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attaching a Disc ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Submitting an AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
@@ -132,7 +142,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="variables.html">Tags &amp; Variables</a></li>
       <li class="breadcrumb-item active">Basic Variables</li>
       <li class="wy-breadcrumbs-aside">
@@ -209,6 +219,22 @@ and 3 of the set.</p>
 <blockquote>
 <div><p>The date of the earliest recording for a track in the format YYYY-MM-DD.  (<em>Since Picard 2.6</em>)</p>
 </div></blockquote>
+<p><strong>_recording_series</strong></p>
+<blockquote>
+<div><p>The series title(s) associated with the recording (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesid</strong></p>
+<blockquote>
+<div><p>The series MBID(s) associated with the recording (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriescomment</strong></p>
+<blockquote>
+<div><p>The series disambiguation comment(s) associated with the recording (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesnumber</strong></p>
+<blockquote>
+<div><p>The series number(s) associated with the recording (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
 <p><strong>_releaseannotation</strong></p>
 <blockquote>
 <div><p>The annotation comment for the release. (<em>since Picard 2.6</em>)</p>
@@ -220,6 +246,22 @@ and 3 of the set.</p>
 <p><strong>_releasecountries</strong></p>
 <blockquote>
 <div><p>This provides the complete list of release countries for the release as a multi-value variable. (<em>since Picard 2.3.1</em>)</p>
+</div></blockquote>
+<p><strong>_release_series</strong></p>
+<blockquote>
+<div><p>The series title(s) associated with the release (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesid</strong></p>
+<blockquote>
+<div><p>The series MBID(s) associated with the release (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriescomment</strong></p>
+<blockquote>
+<div><p>The series disambiguation comment(s) associated with the release (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesnumber</strong></p>
+<blockquote>
+<div><p>The series number(s) associated with the release (multi-value). (<em>since Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>_releasegroup</strong></p>
 <blockquote>
@@ -237,6 +279,22 @@ and 3 of the set.</p>
 <p>This is the same information provided by default in the <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> tag.</p>
 </div>
 </div></blockquote>
+<p><strong>_releasegroup_series</strong></p>
+<blockquote>
+<div><p>The series title(s) associated with the release group (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesid</strong></p>
+<blockquote>
+<div><p>The series MBID(s) associated with the release group (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriescomment</strong></p>
+<blockquote>
+<div><p>The series disambiguation comment(s) associated with the release group (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesnumber</strong></p>
+<blockquote>
+<div><p>The series number(s) associated with the release group (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
 <p><strong>_releaselanguage</strong></p>
 <blockquote>
 <div><p>Release Language as per <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a>. (<em>since Picard 0.10</em>)</p>
@@ -248,6 +306,22 @@ and 3 of the set.</p>
 <p><strong>_totalalbumtracks</strong></p>
 <blockquote>
 <div><p>The total number of tracks across all discs of this release.</p>
+</div></blockquote>
+<p><strong>_work_series</strong></p>
+<blockquote>
+<div><p>The series title(s) associated with the work (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesid</strong></p>
+<blockquote>
+<div><p>The series MBID(s) associated with the work (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriescomment</strong></p>
+<blockquote>
+<div><p>The series disambiguation comment(s) associated with the work (multi-value). (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesnumber</strong></p>
+<blockquote>
+<div><p>The series number(s) associated with the work (multi-value). (<em>since Picard 2.9</em>)</p>
 </div></blockquote>
 </div>
 

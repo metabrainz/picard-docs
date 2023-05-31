@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Options d’empreintes digitales &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Options d’empreintes digitales &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Options de recherche de CD" href="options_cdlookup.html" />
-    <link rel="prev" title="File Naming Compatibility Options" href="options_filerenaming_compat.html" /> 
+    <link rel="prev" title="Options de compatibilité des noms de fichiers" href="options_filerenaming_compat.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
@@ -85,7 +89,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -116,6 +120,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -142,7 +152,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="configuration.html">Configuration</a></li>
       <li class="breadcrumb-item active">Options d’empreintes digitales</li>
       <li class="wy-breadcrumbs-aside">
@@ -170,6 +180,10 @@
 <blockquote>
 <div><p>Lorsque cette option est cochée, les informations de l’empreinte AcoustID des fichiers scannés seront enregistrées dans la balise <code class="docutils literal notranslate"><span class="pre">acoustid_fingerprint</span></code>.  Notez que cette option est désactivée par défaut car l’empreinte peut toujours être recalculée à partir du fichier audio, et cela peut ajouter une balise de données assez longue au fichier.  L’option permettant de sauvegarder cette information a été ajoutée à partir de Picard v2.7 pour s’adapter à des cas d’utilisation tels qu’un workflow où l’utilisateur ajoute ce tag directement après le rippage pour éviter d’avoir à refaire le calcul dans le futur.</p>
 </div></blockquote>
+<p><strong>Fils maximum à utiliser pour la calculatrice</strong></p>
+<blockquote>
+<div><p>Cela vous permet de spécifier le nombre maximum de calculs d’empreintes digitales à exécuter simultanément.  La valeur par défaut est 2.</p>
+</div></blockquote>
 <p><strong>Calculateur d’empreintes digitales</strong></p>
 <blockquote>
 <div><p>Cela identifie le programme externe de votre système qui sera utilisé pour calculer les empreintes digitales AcoustID. Par défaut, Picard utilise l’utilitaire <a class="reference external" href="https://acoustid.org/chromaprint">Chromaprint</a> (<strong class="program">fpcalc</strong>) qui est inclus avec l’installation de Picard.</p>
@@ -191,7 +205,7 @@
         <a href="options_cdlookup.html" class="btn btn-neutral float-right" title="Options de recherche de CD" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="options_filerenaming_compat.html" class="btn btn-neutral float-left" title="File Naming Compatibility Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
+        <a href="options_filerenaming_compat.html" class="btn btn-neutral float-left" title="Options de compatibilité des noms de fichiers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>
       
     </div>
   

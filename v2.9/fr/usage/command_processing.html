@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Command and Batch Processing &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Traitement par commande et par lot &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Executable Commands" href="exec_commands.html" />
+    <link rel="next" title="Commandes exécutables" href="exec_commands.html" />
     <link rel="prev" title="Profils d’options" href="option_profiles.html" /> 
 </head>
 
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -66,8 +70,8 @@
 <li class="toctree-l1"><a class="reference internal" href="using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Command and Batch Processing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="exec_commands.html">Executable Commands</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Traitement par commande et par lot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exec_commands.html">Commandes exécutables</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
@@ -100,6 +104,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -126,8 +136,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Command and Batch Processing</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Traitement par commande et par lot</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -137,26 +147,14 @@
            <div itemprop="articleBody">
              
   <div class="section" id="command-and-batch-processing">
-<h1><span class="target" id="index-0"></span>Command and Batch Processing<a class="headerlink" href="#command-and-batch-processing" title="Lien permanent vers ce titre"></a></h1>
-<p>As of version 2.9, Picard will try to only run a single instance of the program at a time.
-When the program is started, it checks to see if there is another instance of that version,
-configuration file and plugin startup status <code class="docutils literal notranslate"><span class="pre">-P</span></code> already running.  If the same version
-is already running, any files or directories specified on the command line of the new
-instance, along with any executable commands specified with the <code class="docutils literal notranslate"><span class="pre">-e</span></code> or <code class="docutils literal notranslate"><span class="pre">-exec</span></code> options
-will be passed to the already running instance for processing and the new duplicate instance
-will be shut down.  This allows batch processing of files to be initiated automatically from
-other processes.  If there is no instance of that version already running, Picard will start
-normally.</p>
-<p>For example if there is an instance of Picard running and a second instance is started with
-the command line:</p>
+<h1><span class="target" id="index-1"></span>Traitement par commande et par lot<a class="headerlink" href="#command-and-batch-processing" title="Lien permanent vers ce titre"></a></h1>
+<p>Depuis la version 2.9, Picard essaie de ne faire tourner qu’une seule instance du programme à la fois. Lorsque le programme est lancé, il vérifie si une autre instance de cette version, de ce fichier de configuration et de ce statut de démarrage de plugin <code class="docutils literal notranslate"><span class="pre">-P</span></code> est déjà en cours d’exécution.  Si la même version est déjà en cours d’exécution, tous les fichiers ou répertoires spécifiés sur la ligne de commande de la nouvelle instance, ainsi que toutes les commandes exécutables spécifiées avec les options <code class="docutils literal notranslate"><span class="pre">-e</span></code> ou <code class="docutils literal notranslate"><span class="pre">-exec</span></code> seront transmises à l’instance déjà en cours d’exécution pour traitement et la nouvelle instance dupliquée sera arrêtée.  Cela permet de lancer automatiquement le traitement par lot de fichiers à partir d’autres processus.  S’il n’y a pas d’instance de cette version en cours d’exécution, Picard démarrera normalement.</p>
+<p>Par exemple, si une instance de Picard est en cours d’exécution et qu’une seconde instance est lancée avec la ligne de commande :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">picard</span> <span class="o">-</span><span class="n">e</span> <span class="n">load</span> <span class="n">mbid</span><span class="p">:</span><span class="o">//</span><span class="n">release</span><span class="o">/</span><span class="n">dbd0ce67</span><span class="o">-</span><span class="n">cae6</span><span class="o">-</span><span class="mi">33</span><span class="n">eb</span><span class="o">-</span><span class="mi">8</span><span class="n">f5a</span><span class="o">-</span><span class="mi">1143</span><span class="n">a30c2353</span>
 </pre></div>
 </div>
-<p>the load command will be passed to the running instance to load the specified release, and
-the second instance will be closed.</p>
-<p>This allows the user to set up dynamic batch processing of commands to automate the tagging
-process, especially when used with the <code class="docutils literal notranslate"><span class="pre">FROM_FILE</span></code> command to load a standard processing
-command sequence such as:</p>
+<p>la commande load sera transmise à l’instance en cours d’exécution pour charger la version spécifiée, et la seconde instance sera fermée.</p>
+<p>Cela permet à l’utilisateur de mettre en place un traitement dynamique par lot de commandes pour automatiser le processus de marquage, en particulier lorsqu’il est utilisé avec la commande <code class="docutils literal notranslate"><span class="pre">FROM_FILE</span></code> pour charger une séquence de commandes de traitement standard telle que :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CLUSTER</span>
 <span class="n">LOOKUP_CLUSTERED</span>
 <span class="n">SAVE_MATCHED</span>
@@ -164,7 +162,7 @@ command sequence such as:</p>
 <span class="n">REMOVE_EMPTY</span>
 </pre></div>
 </div>
-<p>or:</p>
+<p>ou :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LOOKUP_CD</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">ripper</span><span class="o">.</span><span class="n">log</span>
 <span class="n">SAVE_MATCHED</span>
 <span class="n">FINGERPRINT</span>
@@ -173,7 +171,7 @@ command sequence such as:</p>
 <span class="n">REMOVE_EMPTY</span>
 </pre></div>
 </div>
-<p>or even something like:</p>
+<p>ou même quelque chose comme :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load a directory of files to process</span>
 <span class="n">LOAD</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">directory</span><span class="o">/</span><span class="n">of</span><span class="o">/</span><span class="n">unprocessed</span><span class="o">/</span><span class="n">files</span>
 
@@ -206,8 +204,7 @@ command sequence such as:</p>
 <span class="c1"># matched automatically</span>
 </pre></div>
 </div>
-<p>Please see the <a class="reference internal" href="exec_commands.html"><span class="doc">Executable Commands</span></a> section for details regarding the commands
-available for execution.</p>
+<p>Veuillez consulter la section <a class="reference internal" href="exec_commands.html"><span class="doc">Commandes exécutables</span></a> pour plus de détails concernant les commandes disponibles pour l’exécution.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -219,7 +216,7 @@ available for execution.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="exec_commands.html" class="btn btn-neutral float-right" title="Executable Commands" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="exec_commands.html" class="btn btn-neutral float-right" title="Commandes exécutables" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="option_profiles.html" class="btn btn-neutral float-left" title="Profils d’options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>

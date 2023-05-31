@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Appendix A: Plugins API &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+  <title>Appendix A: Plugins API &mdash; MusicBrainz Picard v2.9beta1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Appendix B: Tag Mapping" href="tag_mapping.html" />
-    <link rel="prev" title="Loading releases with MusicBrainz for Android" href="../tutorials/android_app.html" /> 
+    <link rel="prev" title="Submitting an AcoustID" href="../tutorials/v_submit_acoustid.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -29,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -96,6 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction to Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attaching a Disc ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Submitting an AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Appendix A: Plugins API</a></li>
@@ -122,7 +132,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Appendix A: Plugins API</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -151,6 +161,7 @@
 <span class="n">PLUGIN_API_VERSIONS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2.7&#39;</span><span class="p">,</span> <span class="s1">&#39;2.8&#39;</span><span class="p">]</span>
 <span class="n">PLUGIN_LICENSE</span> <span class="o">=</span> <span class="s2">&quot;GPL-2.0-or-later&quot;</span>
 <span class="n">PLUGIN_LICENSE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://www.gnu.org/licenses/gpl-2.0.html&quot;</span>
+<span class="n">PLUGIN_USER_GUIDE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://my.program.site.org/example_plugin_documentation.html&quot;</span>
 </pre></div>
 </div>
 <p>Variables explanation:</p>
@@ -170,6 +181,9 @@ be dropped. Versions available for Picard 2 are “2.0”, “2.1” and “2.2�
 from the <a class="reference external" href="https://spdx.org/licenses/">SPDX License List</a>, but you are welcomed to use another license if the
 one you chose is not available in the list.</p></li>
 <li><p><strong>PLUGIN_LICENSE_URL</strong> should be set to a URL pointing to the full license text.</p></li>
+<li><p><strong>PLUGIN_USER_GUIDE_URL</strong> should be set to a URL pointing to the documentation for the plugin.  This variable is
+optional and may be omitted.  If a URL is provided, it will be shown as a clickable link in the description
+displayed for the plugin in the Plugins option settings screen.</p></li>
 </ul>
 </div>
 <div class="section" id="metadata-processors">
@@ -395,7 +409,7 @@ and the “ClusterList” (parent folder of Clusters). Example:</p>
         <a href="tag_mapping.html" class="btn btn-neutral float-right" title="Appendix B: Tag Mapping" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../tutorials/android_app.html" class="btn btn-neutral float-left" title="Loading releases with MusicBrainz for Android" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../tutorials/v_submit_acoustid.html" class="btn btn-neutral float-left" title="Submitting an AcoustID" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

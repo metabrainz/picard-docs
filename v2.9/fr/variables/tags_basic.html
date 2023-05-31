@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balises de base &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Balises de base &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -76,7 +80,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -107,6 +111,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -133,7 +143,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="variables.html">Balises &amp; Variables</a></li>
       <li class="breadcrumb-item active">Balises de base</li>
       <li class="wy-breadcrumbs-aside">
@@ -145,9 +155,10 @@
            <div itemprop="articleBody">
              
   <div class="section" id="basic-tags">
-<h1><span class="target" id="index-1"></span>Balises de base<a class="headerlink" href="#basic-tags" title="Lien permanent vers ce titre"></a></h1>
-<p>Les balises suivantes sont remplies à partir des données MusicBrainz pour la plupart des versions, sans aucun paramètre Picard spécial.</p>
+<h1><span class="target" id="index-2"></span>Balises de base<a class="headerlink" href="#basic-tags" title="Lien permanent vers ce titre"></a></h1>
+<p>Les balises suivantes sont prises en charge et sont écrites dans un format standard qui peut être lu par d’autres logiciels.  Les informations sont alimentées à partir des données de MusicBrainz pour la plupart des versions, sans aucun paramétrage spécial de Picard.  Notez que certaines informations, telles que les paroles, ne sont pas contenues dans la base de données MusicBrainz et ne seront pas fournies automatiquement.</p>
 <p>Tous ces éléments sont également disponibles en tant que variables à utiliser dans les scripts Picard (pour le balisage, pour le changement de nom de fichier et dans plusieurs autres paramètres plus mineurs) en les enveloppant entre des symboles de pourcentage “%” (par exemple, <code class="docutils literal notranslate"><span class="pre">%title%</span></code>).</p>
+<p>La plupart des balises commençant par <code class="docutils literal notranslate"><span class="pre">musicbrainz_</span></code> fournissent le <span class="target" id="index-4"></span>Identifiant MusicBrainz (MBID) de l’entité.  Le MBID est un identifiant de 32 caractères attribué à une entité (par exemple : artiste, album, piste ou œuvre) pour identifier l’entité de manière unique.  Pour plus d’informations sur les MBID, veuillez consulter la page <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">Identifiant MusicBrainz</a> dans la documentation de MusicBrainz.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les balises ne seront pas créées et ne seront pas disponibles en tant que variables si aucune valeur n’a été récupérée pour la balise dans la base de données MusicBrainz.</p>
@@ -158,11 +169,11 @@
 </div>
 <p><strong>acoustid_fingerprint</strong></p>
 <blockquote>
-<div><p>AcoustID Fingerprint pour la piste.</p>
+<div><p>Empreinte digitale AcoustID pour la piste.  L’empreinte digitale est basée sur les informations audio trouvées dans un fichier, et est calculée à l’aide du logiciel <a class="reference external" href="https://acoustid.org/chromaprint">Chromaprint</a>.</p>
 </div></blockquote>
 <p><strong>acoustid_id</strong></p>
 <blockquote>
-<div><p>AcoustID associé à la piste.</p>
+<div><p>AcoustID associé à la piste.  L’AcoustID est l’identifiant attribué à un fichier audio en fonction de son « acoustid_fingerprint ».  Plusieurs empreintes digitales peuvent se voir attribuer le même AcoustID si elles sont suffisamment similaires.</p>
 </div></blockquote>
 <p><strong>album</strong></p>
 <blockquote>
@@ -206,7 +217,7 @@
 </div></blockquote>
 <p><strong>catalognumber</strong></p>
 <blockquote>
-<div><p>Les numéros attribués à la version par les étiquettes, qui se trouvent souvent sur le dos ou près du code-barres Il peut y en avoir plusieurs, en particulier lorsque plusieurs étiquettes sont impliquées.</p>
+<div><p>Le(s) numéro(s) attribué(s) à la sortie par le(s) label(s), qui se trouve(nt) souvent sur le dos ou près du code-barres.  Il peut y en avoir plusieurs, notamment lorsque plusieurs étiquettes sont concernées.</p>
 </div></blockquote>
 <p><strong>comment</strong></p>
 <blockquote>
@@ -221,11 +232,11 @@
 </div></blockquote>
 <p><strong>copyright</strong></p>
 <blockquote>
-<div><p>Contenir un message de copyright pour le détenteur du copyright du son original, commencer par un an et un espace.</p>
+<div><p>Contient le message de copyright du détenteur du droit d’auteur du son original, commençant par une année et un caractère d’espace.</p>
 </div></blockquote>
 <p><strong>date</strong></p>
 <blockquote>
-<div><p>Date de sortie (AAAA-MM-JJ) - la date à laquelle la version a été publiée.</p>
+<div><p>Date de sortie (AAAA-MM-JJ) - la date à laquelle la sortie (l’album) a été publiée.</p>
 </div></blockquote>
 <p><strong>director</strong></p>
 <blockquote>
@@ -249,7 +260,7 @@
 </div></blockquote>
 <p><strong>isrc</strong></p>
 <blockquote>
-<div><p>Un code standard international pour identifier de manière unique les enregistrements sonores et les enregistrements vidéo de musique. Voir <a class="reference external" href="https://en.wikipedia.org/wiki/International_Standard_Recording_Code">Wikipedia</a> pour plus d’informations. (<em>depuis Picard 0,12</em>)</p>
+<div><p>International Standard Recording Code - code international normalisé permettant d’identifier de manière unique les enregistrements sonores et les enregistrements vidéo musicaux.  Voir <a class="reference external" href="https://fr.wikipedia.org/wiki/International_Standard_Recording_Code">Wikipedia</a> pour plus d’informations. (<em>depuis Picard 0.12</em>)</p>
 </div></blockquote>
 <p><strong>key</strong></p>
 <blockquote>
@@ -265,7 +276,7 @@
 </div></blockquote>
 <p><strong>lyrics</strong></p>
 <blockquote>
-<div><p>Paroles du titre.</p>
+<div><p>Paroles du titre.  Non fourni par MusicBrainz.</p>
 </div></blockquote>
 <p><strong>media</strong></p>
 <blockquote>
@@ -273,15 +284,15 @@
 </div></blockquote>
 <p><strong>musicbrainz_albumartistid</strong></p>
 <blockquote>
-<div><p>Libérez l’identifiant MusicBrainz de l’artiste.</p>
+<div><p>Libération Identifiant MusicBrainz de l’artiste (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_albumid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz de la version.</p>
+<div><p>L’identifiant MusicBrainz de la version (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_artistid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz de l’artiste de la piste.</p>
+<div><p>L’identifiant MusicBrainz de l’artiste de la piste (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_discid</strong></p>
 <blockquote>
@@ -289,27 +300,27 @@
 </div></blockquote>
 <p><strong>musicbrainz_originalalbumid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz original de la version.</p>
+<div><p>L’identifiant MusicBrainz original de la version (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_originalartistid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz original de l’artiste du morceau.</p>
+<div><p>L’identifiant MusicBrainz original de l’artiste du morceau (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_recordingid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz pour l’enregistrement.</p>
+<div><p>L’identifiant MusicBrainz pour l’enregistrement (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_releasegroupid</strong></p>
 <blockquote>
-<div><p>Identifiant MusicBrainz pour le groupe de versions.</p>
+<div><p>Identifiant MusicBrainz pour le groupe de versions (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_trackid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz de la piste de lancement.</p>
+<div><p>L’identifiant MusicBrainz de la piste de lancement (MBID).</p>
 </div></blockquote>
 <p><strong>musicbrainz_workid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz pour l’œuvre.</p>
+<div><p>L’identifiant MusicBrainz pour l’œuvre (MBID).</p>
 </div></blockquote>
 <p><strong>originalalbum</strong></p>
 <blockquote>
@@ -328,7 +339,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Si vous stockez des balises dans des fichiers MP3 en tant que ID3v2.3 (qui est la version compatible Windows et iTunes), la date d’origine ne peut être stockée que comme une année.</p>
+<p>Si vous stockez les balises des fichiers MP3 en tant qu’ID3v2.3, la date d’origine ne peut être stockée que sous la forme d’une année.</p>
 </div>
 </div></blockquote>
 <p><strong>originalyear</strong></p>

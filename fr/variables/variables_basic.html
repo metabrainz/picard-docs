@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Variables de base &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Variables de base &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -76,7 +80,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -107,6 +111,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -133,7 +143,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="variables.html">Balises &amp; Variables</a></li>
       <li class="breadcrumb-item active">Variables de base</li>
       <li class="wy-breadcrumbs-aside">
@@ -207,6 +217,22 @@
 <blockquote>
 <div><p>Date du premier enregistrement d’une piste au format AAAA-MM-JJ. (<em>Depuis Picard 2.6</em>)</p>
 </div></blockquote>
+<p><strong>_recording_series</strong></p>
+<blockquote>
+<div><p>Le(s) titre(s) de la série associé(s) à l’enregistrement (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesid</strong></p>
+<blockquote>
+<div><p>Le(s) MBID(s) de la série associé(s) à l’enregistrement (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriescomment</strong></p>
+<blockquote>
+<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) à l’enregistrement (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesnumber</strong></p>
+<blockquote>
+<div><p>Le(s) numéro(s) de série associé(s) à l’enregistrement (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
 <p><strong>_releaseannotation</strong></p>
 <blockquote>
 <div><p>Le commentaire d’annotation pour la version. (<em>depuis Picard 2,6</em>)</p>
@@ -218,6 +244,22 @@
 <p><strong>_releasecountries</strong></p>
 <blockquote>
 <div><p>Ceci fournit la liste complète des pays de la version pour la version comme une variable à plusieurs valeurs. (<em>depuis Picard 2.3.1</em>)</p>
+</div></blockquote>
+<p><strong>_release_series</strong></p>
+<blockquote>
+<div><p>Le(s) titre(s) de la série associé(s) à la version (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesid</strong></p>
+<blockquote>
+<div><p>Le(s) MBID(s) de la série associé(s) à la version (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriescomment</strong></p>
+<blockquote>
+<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) à la version (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesnumber</strong></p>
+<blockquote>
+<div><p>Le(s) numéro(s) de série associé(s) à la version (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>_releasegroup</strong></p>
 <blockquote>
@@ -235,6 +277,22 @@
 <p>Ce sont les mêmes informations fournies par défaut dans la balise <code class="docutils literal notranslate"><span class="pre">originaldate</span></code>.</p>
 </div>
 </div></blockquote>
+<p><strong>_releasegroup_series</strong></p>
+<blockquote>
+<div><p>Le(s) titre(s) de la série associé(s) au groupe de diffusion (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesid</strong></p>
+<blockquote>
+<div><p>Le(s) MBID(s) de la série associé(s) au groupe de diffusion (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriescomment</strong></p>
+<blockquote>
+<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) au groupe de diffusion (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesnumber</strong></p>
+<blockquote>
+<div><p>Le(s) numéro(s) de série associé(s) au groupe de diffusion (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
 <p><strong>_releaselanguage</strong></p>
 <blockquote>
 <div><p>La langue de la version selon <a class="reference external" href="https://fr.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a>. (<em>depuis Picard 0,10</em>)</p>
@@ -246,6 +304,22 @@
 <p><strong>_totalalbumtracks</strong></p>
 <blockquote>
 <div><p>Le nombre total de pistes sur tous les disques de cette version.</p>
+</div></blockquote>
+<p><strong>_work_series</strong></p>
+<blockquote>
+<div><p>Le(s) titre(s) de la série associé(s) à l’œuvre (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesid</strong></p>
+<blockquote>
+<div><p>Le(s) MBID(s) de la série associé(s) à l’œuvre (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriescomment</strong></p>
+<blockquote>
+<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) à l’œuvre (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesnumber</strong></p>
+<blockquote>
+<div><p>Le(s) numéro(s) de série associé(s) à l’œuvre (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
 </div></blockquote>
 </div>
 

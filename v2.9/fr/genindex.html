@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Index &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/css/extra.css" type="text/css" />
@@ -28,14 +28,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -51,7 +55,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="config/configuration.html">Configuration</a></li>
@@ -64,7 +68,7 @@
 <li class="toctree-l1"><a class="reference internal" href="usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -95,6 +99,12 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -121,7 +131,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Index</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -153,7 +163,6 @@
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
- | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
  | <a href="#W"><strong>W</strong></a>
  | <a href="#X"><strong>X</strong></a>
@@ -396,7 +405,7 @@
       <ul>
         <li><a href="variables/tags_advanced.html#index-2">avancées</a>
 </li>
-        <li><a href="variables/tags_basic.html#index-1">de base</a>
+        <li><a href="variables/tags_basic.html#index-2">de base</a>
 </li>
         <li><a href="variables/tags_advanced.html#index-3">de genre</a>
 </li>
@@ -414,8 +423,6 @@
       <li><a href="usage/tags_from_file_names.html#index-1">balises à partir des noms de fichiers</a>
 </li>
       <li><a href="getting_started/status_icons.html#index-7">barre d&#39;état</a>
-</li>
-      <li><a href="usage/command_processing.html#index-0">batch processing</a>
 </li>
   </ul></td>
 </tr></table>
@@ -451,13 +458,62 @@
         <li><a href="usage/submit_cluster_as_release.html#index-1">soumettre</a>
 </li>
       </ul></li>
-      <li><a href="usage/command_processing.html#index-0">command processing</a>
-</li>
       <li>
-    commands
+    commandes
 
       <ul>
-        <li><a href="usage/exec_commands.html#index-0">executable</a>
+        <li><a href="usage/exec_commands.html#index-21">exécutables</a>
+</li>
+      </ul></li>
+      <li><a href="usage/exec_commands.html#index-21">commandes exécutables</a>
+
+      <ul>
+        <li><a href="usage/exec_commands.html#index-42">CLEAR_LOGS</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-43">CLUSTER</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-44">FINGERPRINT</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-45">FROM_FILE</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-46">LOAD</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-47">LOOKUP</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-48">LOOKUP_CD</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-49">PAUSE</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-50">QUIT</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-51">REMOVE</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-52">REMOVE_ALL</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-53">REMOVE_EMPTY</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-54">REMOVE_SAVED</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-55">REMOVE_UNCLUSTERED</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-56">SAVE_MATCHED</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-57">SAVE_MODIFIED</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-58">SCAN</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-59">SHOW</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-60">SUBMIT_FINGERPRINTS</a>
+</li>
+        <li><a href="usage/exec_commands.html#index-61">WRITE_LOGS</a>
+</li>
+      </ul></li>
+      <li>
+    compatibilité des noms de fichiers
+
+      <ul>
+        <li><a href="config/options_filerenaming_compat.html#index-1">configuration</a>
 </li>
       </ul></li>
       <li>
@@ -469,6 +525,10 @@
         <li><a href="config/options_cover.html#index-1">art de couverture</a>
 </li>
         <li><a href="config/options_before_tagging.html#index-1">avant le balisage</a>
+</li>
+        <li><a href="config/options_interface_toolbar.html#index-1">barre d&#39;outils</a>
+</li>
+        <li><a href="config/options_filerenaming_compat.html#index-1">compatibilité des noms de fichiers</a>
 </li>
         <li><a href="config/configuration.html#index-3">configuration de l&#39;écran</a>
 </li>
@@ -487,8 +547,6 @@
         <li><a href="faq/faq_config.html#index-7">fichier</a>
 </li>
         <li><a href="config/options_local_files.html#index-1">fichiers locaux</a>
-</li>
-        <li><a href="config/options_filerenaming_compat.html#index-0">file naming compatibility</a>
 </li>
         <li><a href="config/options_cover_art_providers.html#index-1">fournisseurs d&#39;art de couverture</a>
 </li>
@@ -530,8 +588,6 @@
 </li>
         <li><a href="config/options_scripting.html#index-1">scripts</a>
 </li>
-        <li><a href="config/options_interface_toolbar.html#index-0">toolbar</a>
-</li>
         <li><a href="config/options_interface_top_tags.html#index-0">top tags</a>
 </li>
         <li><a href="config/options_general.html#index-10">vérification des mises à jour</a>
@@ -556,6 +612,8 @@
         <li><a href="workflows/workflow_extractor_log.html#index-2">journal de lookup</a>
 </li>
       </ul></li>
+      <li><a href="getting_started/starting.html#index-1">démarrage</a>
+</li>
       <li>
     dénomination des fichiers
 
@@ -626,6 +684,8 @@
         <li><a href="usage/submit_acoustid.html#index-1">soumission</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     empreinte digitale acoustique
 
@@ -644,50 +704,6 @@
         <li><a href="faq/faq_usage.html#index-6">impossible de charger l&#39;album</a>
 </li>
       </ul></li>
-      <li><a href="usage/exec_commands.html#index-0">executable commands</a>
-
-      <ul>
-        <li><a href="usage/exec_commands.html#index-1">CLEAR_LOGS</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-2">CLUSTER</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-3">FINGERPRINT</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-4">FROM_FILE</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-5">LOAD</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-6">LOOKUP</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-7">LOOKUP_CD</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-8">PAUSE</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-9">QUIT</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-10">REMOVE</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-11">REMOVE_ALL</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-12">REMOVE_EMPTY</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-13">REMOVE_SAVED</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-14">REMOVE_UNCLUSTERED</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-15">SAVE_MATCHED</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-16">SAVE_MODIFIED</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-17">SCAN</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-18">SHOW</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-19">SUBMIT_FINGERPRINTS</a>
-</li>
-        <li><a href="usage/exec_commands.html#index-20">WRITE_LOGS</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -703,13 +719,6 @@
       </ul></li>
       <li><a href="usage/retrieve.html#index-11">fichiers de recherche</a>, <a href="usage/retrieve_lookup.html#index-4">[1]</a>
 </li>
-      <li>
-    file naming compatibility
-
-      <ul>
-        <li><a href="config/options_filerenaming_compat.html#index-0">configuration</a>
-</li>
-      </ul></li>
       <li>
     flatpak
 
@@ -823,6 +832,13 @@
       </ul></li>
       <li><a href="about_picard/glossary.html#index-45">id du disque</a>
 </li>
+      <li>
+    identifiant
+
+      <ul>
+        <li><a href="variables/tags_basic.html#index-4">musicbrainz</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
@@ -847,6 +863,8 @@
     interface utilisateur
 
       <ul>
+        <li><a href="config/options_interface_toolbar.html#index-1">barre d&#39;outils</a>
+</li>
         <li><a href="config/options_interface.html#index-1">configuration</a>
 </li>
         <li><a href="config/options_interface_colors.html#index-1">couleurs</a>
@@ -923,8 +941,7 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li>
-    mbid
+      <li><a href="variables/tags_basic.html#index-4">mbid</a>
 
       <ul>
         <li>
@@ -1115,13 +1132,6 @@
 </li>
       </ul></li>
       <li>
-    processing
-
-      <ul>
-        <li><a href="usage/command_processing.html#index-0">batch</a>
-</li>
-      </ul></li>
-      <li>
     profils
 
       <ul>
@@ -1218,8 +1228,6 @@
       </ul></li>
       <li><a href="about_picard/glossary.html#index-53">standalone recording</a>
 </li>
-      <li><a href="getting_started/starting.html#index-0">starting</a>
-</li>
   </ul></td>
 </tr></table>
 
@@ -1233,23 +1241,21 @@
         <li><a href="faq/faq_config.html#index-10">tronqué</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="about_picard/glossary.html#index-54">track</a>
 </li>
   </ul></td>
-</tr></table>
-
-<h2 id="U">U</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
-    user interface
+    traitement
 
       <ul>
-        <li><a href="config/options_interface_toolbar.html#index-0">toolbar</a>
+        <li><a href="usage/command_processing.html#index-1">lot</a>
 </li>
       </ul></li>
+      <li><a href="usage/command_processing.html#index-1">traitement par commande</a>
+</li>
+      <li><a href="usage/command_processing.html#index-1">traitement par lot</a>
+</li>
   </ul></td>
 </tr></table>
 

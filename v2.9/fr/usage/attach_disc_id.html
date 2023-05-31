@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joindre un ID de disque à une version &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Joindre un ID de disque à une version &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -72,7 +76,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -103,6 +107,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -129,7 +139,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="other.html">Autres tâches de Picard</a></li>
       <li class="breadcrumb-item active">Joindre un ID de disque à une version</li>
       <li class="wy-breadcrumbs-aside">
@@ -143,9 +153,13 @@
   <div class="section" id="attaching-a-disc-id-to-a-release">
 <h1><span class="target" id="index-1"></span>Joindre un ID de disque à une version<a class="headerlink" href="#attaching-a-disc-id-to-a-release" title="Lien permanent vers ce titre"></a></h1>
 <p>Les ID de disque sont très utiles pour identifier les CD et permettre à MusicBrainz de connaître la longueur des pistes d’un CD. Ainsi, il est très utile de les ajouter lors de la soumission d’une nouvelle version de CD ou lorsque vous avez une version de CD qui n’a pas d’identifiant de disque attaché.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Veuillez ne pas ajouter de DiscID à partir de CD gravés à la maison.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Veuillez ne pas ajouter de DiscID à partir de CD gravés à la maison.</p>
+<p>Il existe également un <a class="reference internal" href="../tutorials/v_attach_disc_id.html"><span class="doc">Tutoriel vidéo</span></a> qui montre comment attacher un numéro de disque à une sortie dans MusicBrainz.</p>
 </div>
 <p>Les étapes à suivre pour soumettre un identifiant de disque sont:</p>
 <p><strong>1. Recherchez le CD</strong></p>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Tags &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+  <title>Advanced Tags &mdash; MusicBrainz Picard v2.9beta1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -29,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -110,6 +114,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction to Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attaching a Disc ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Submitting an AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Appendix A: Plugins API</a></li>
@@ -136,7 +146,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="variables.html">Tags &amp; Variables</a></li>
       <li class="breadcrumb-item active">Advanced Tags</li>
       <li class="wy-breadcrumbs-aside">
@@ -165,61 +175,72 @@ from the MusicBrainz database.</p>
 <p>If you enable tagging with “Use track relationships”, you get these extra tags:</p>
 <p><strong>arranger</strong></p>
 <blockquote>
-<div><p>Arranger Relationship Type (releases, recordings, works), Instrumentator Relationship Type, Orchestrator Relationship Type (<em>since Picard 0.10</em>)</p>
+<div><p>The names of the arrangers associated with the track.  These can include the instrument and orchestra arrangers,
+and could be associated with the release, recording or work. (<em>since Picard 0.10</em>)</p>
 </div></blockquote>
 <p><strong>composer</strong></p>
 <blockquote>
-<div><p>Composer Relationship Type</p>
+<div><p>The names of the composers for the associated work.</p>
 </div></blockquote>
 <p><strong>composersort</strong></p>
 <blockquote>
-<div><p>Composer Relationship Type’s Sort Name</p>
+<div><p>The sort names of the composers for the associated work.</p>
 </div></blockquote>
 <p><strong>conductor</strong></p>
 <blockquote>
-<div><p>Conductor Relationship Type (releases, recordings), Chorus Master Relationship Type (releases, recordings)</p>
+<div><p>Tha names of the conductors associated with the track.  These can include the conductor and chorus master, and could
+be associated with the release or recording.</p>
 </div></blockquote>
 <p><strong>djmixer</strong></p>
 <blockquote>
-<div><p>Mix-DJ Relationship Type (<em>since Picard 0.9</em>)</p>
+<div><p>The names of the DJ mixers for the track. (<em>since Picard 0.9</em>)</p>
 </div></blockquote>
 <p><strong>engineer</strong></p>
 <blockquote>
-<div><p>Engineer Relationship Type</p>
+<div><p>The names of the engineers associated with the track.</p>
 </div></blockquote>
 <p><strong>license</strong></p>
 <blockquote>
-<div><p>License Relationship Type (releases, recordings) (<em>since Picard 1.0</em>)</p>
+<div><p>The licenses associated with the track, either through the release or recording relationships. (<em>since Picard 1.0</em>)</p>
 </div></blockquote>
 <p><strong>lyricist</strong></p>
 <blockquote>
-<div><p>Lyricist Relationship Type</p>
+<div><p>The names of the lyricists for the associated work.</p>
 </div></blockquote>
 <p><strong>mixer</strong></p>
 <blockquote>
-<div><p>Engineer Relationship Type (“Mixed By”) (<em>since Picard 0.9</em>)</p>
+<div><p>The names of the “Mixed By” engineers associated with the track. (<em>since Picard 0.9</em>)</p>
 </div></blockquote>
 <p><strong>performer:&lt;type&gt;</strong></p>
 <blockquote>
-<div><p>Performer Relationship Type (releases - vocals/instruments, recordings - vocals/instruments), &lt;type&gt; can be “vocal”, “guest guitar”, “solo violin”, …</p>
-<p>Orchestra Relationship Type (releases, recordings), &lt;type&gt; is “orchestra”</p>
-<p>Concertmaster Relationship Type (releases, recordings), &lt;type&gt; is “concertmaster”</p>
+<div><p>The names of the performers for the specified type.  These types include:</p>
+<ul class="simple">
+<li><p>vocals or instruments for the associated release or recording, where &lt;type&gt; can be “vocal”, “guest guitar”, “solo violin”, etc.</p></li>
+<li><p>the orchestra for the associated release or recording, where &lt;type&gt; is “orchestra”</p></li>
+<li><p>the concert master for the associated release or recording, where &lt;type&gt; is “concertmaster”</p></li>
+</ul>
 </div></blockquote>
 <p><strong>producer</strong></p>
 <blockquote>
-<div><p>Producer Relationship Type</p>
+<div><p>The names of the producers for the associated release or recording.</p>
+</div></blockquote>
+<p><strong>releasedate</strong></p>
+<blockquote>
+<div><p>Explicit tag for the release date (<em>since Picard 2.9</em>).  This tag exists for specific use in scripts and plugins,
+but is not filled by default.  In most cases it is recommended to use the <code class="docutils literal notranslate"><span class="pre">date</span></code> tag instead for compatibility
+with existing software.</p>
 </div></blockquote>
 <p><strong>remixer</strong></p>
 <blockquote>
-<div><p>Remixer Relationship Type</p>
+<div><p>The names of the remixer engineers associated with the track.</p>
 </div></blockquote>
 <p><strong>work</strong></p>
 <blockquote>
-<div><p>Work Name (<em>since Picard 1.3</em>)</p>
+<div><p>The name of the work associated with the track. (<em>since Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>writer</strong></p>
 <blockquote>
-<div><p>Writer Relationship Type (<em>since Picard 1.0</em>). Not written to most file formats automatically.
+<div><p>The names of the writers associated with the related work. (<em>since Picard 1.0</em>). This is not written to most file formats automatically.
 You can merge this with composers with a script like:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$copymerge(</span>composer, writer<span class="k">)</span>
 </pre></div>

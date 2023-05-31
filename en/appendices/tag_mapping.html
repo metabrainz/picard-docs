@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Appendix B: Tag Mapping &mdash; MusicBrainz Picard v2.9alpha1 documentation</title>
+  <title>Appendix B: Tag Mapping &mdash; MusicBrainz Picard v2.9beta1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -29,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -96,6 +100,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction to Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attaching a Disc ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Submitting an AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="plugins_api.html">Appendix A: Plugins API</a></li>
@@ -122,7 +132,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Appendix B: Tag Mapping</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -772,6 +782,38 @@ The mapping is also available as a <a class="reference external" href="https://p
 </tr>
 <tr class="row-odd"><td><p>RIFF INFO</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">ICOP</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="date-10">
+<h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Date">Date</a> <sup>[10]</sup><a class="headerlink" href="#date-10" title="Permalink to this headline"></a></h2>
+<table class="colwidths-given docutils align-default" style="width: 100%">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Internal Name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">date</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>ID3v2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TDRC</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">TYER</span></code> + <code class="docutils literal notranslate"><span class="pre">TDAT</span></code> (ID3v2.3)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vorbis</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">DATE</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>APEv2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Year</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>iTunes MP4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">©day</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>ASF/Windows Media</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">WM/Year</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>RIFF INFO</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ICRD</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -2291,8 +2333,8 @@ for more information.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id31">
-<h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Date">Release Date</a><a class="headerlink" href="#id31" title="Permalink to this headline"></a></h2>
+<div class="section" id="release-date-10">
+<h2>Release Date <sup>[10]</sup><a class="headerlink" href="#release-date-10" title="Permalink to this headline"></a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2300,31 +2342,31 @@ for more information.</p>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Internal Name</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">date</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">releasedate</span></code> (since Picard 2.9, not filled by default)</p></td>
 </tr>
 <tr class="row-even"><td><p>ID3v2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">TDRC</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">TYER</span></code> + <code class="docutils literal notranslate"><span class="pre">TDAT</span></code> (ID3v2.3)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">TDRL</span></code> (ID3v2.4) <code class="docutils literal notranslate"><span class="pre">TXXX:RELEASEDATE</span></code> (ID3v2.3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Vorbis</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">DATE</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">RELEASEDATE</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>APEv2</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Year</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">RELEASEDATE</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>iTunes MP4</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">©day</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">----:com.apple.iTunes:RELEASEDATE</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>ASF/Windows Media</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">WM/Year</span></code></p></td>
+<td><p>n/a</p></td>
 </tr>
 <tr class="row-odd"><td><p>RIFF INFO</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">ICRD</span></code></p></td>
+<td><p>n/a</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="id32">
-<h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Status">Release Status</a><a class="headerlink" href="#id32" title="Permalink to this headline"></a></h2>
+<div class="section" id="id31">
+<h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Status">Release Status</a><a class="headerlink" href="#id31" title="Permalink to this headline"></a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2355,8 +2397,8 @@ for more information.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id33">
-<h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Type">Release Type</a><a class="headerlink" href="#id33" title="Permalink to this headline"></a></h2>
+<div class="section" id="id32">
+<h2><a class="reference external" href="https://musicbrainz.org/doc/Release_Type">Release Type</a><a class="headerlink" href="#id32" title="Permalink to this headline"></a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2387,8 +2429,8 @@ for more information.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id34">
-<h2><a class="reference external" href="https://musicbrainz.org/relationship/7950be4d-13a3-48e7-906b-5af562e39544">Remixer</a><a class="headerlink" href="#id34" title="Permalink to this headline"></a></h2>
+<div class="section" id="id33">
+<h2><a class="reference external" href="https://musicbrainz.org/relationship/7950be4d-13a3-48e7-906b-5af562e39544">Remixer</a><a class="headerlink" href="#id33" title="Permalink to this headline"></a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -2899,8 +2941,8 @@ for more information.</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="id35">
-<h2><a class="reference external" href="https://musicbrainz.org/doc/Track_Title">Track Title</a><a class="headerlink" href="#id35" title="Permalink to this headline"></a></h2>
+<div class="section" id="id34">
+<h2><a class="reference external" href="https://musicbrainz.org/doc/Track_Title">Track Title</a><a class="headerlink" href="#id34" title="Permalink to this headline"></a></h2>
 <table class="colwidths-given docutils align-default" style="width: 100%">
 <colgroup>
 <col style="width: 27%" />
@@ -3069,6 +3111,7 @@ for more information.</p>
 <li><p><a class="reference external" href="https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a">Recording-level license</a> relationship type.</p></li>
 <li><p>With “Save iTunes compatible grouping and work” (since Picard&gt;=2.1.0)</p></li>
 <li><p>From iTunes Metadata Format Specification</p></li>
+<li><p>For compatibility reasons the <code class="docutils literal notranslate"><span class="pre">date</span></code> tag gets filled with the release date from MusicBrainz. This is how most software interprets this tag. Since Picard 2.9 the separate <code class="docutils literal notranslate"><span class="pre">releasedate</span></code> exists for use by scripts and plugins, but is not filled by default.</p></li>
 </ol>
 </div>
 </div>

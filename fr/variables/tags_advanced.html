@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balises avancées &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Balises avancées &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -80,7 +84,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -111,6 +115,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -137,7 +147,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="variables.html">Balises &amp; Variables</a></li>
       <li class="breadcrumb-item active">Balises avancées</li>
       <li class="wy-breadcrumbs-aside">
@@ -164,61 +174,68 @@
 <p>Si vous activez le balisage avec « Utiliser les relations de suivi », vous obtenez ces balises supplémentaires :</p>
 <p><strong>arranger</strong></p>
 <blockquote>
-<div><p>Type de relation arrangeur (sorties, enregistrements, œuvres), type de relation instrumentateur, type de relation orchestrateur (<em>depuis Picard 0.10</em>)</p>
+<div><p>Les noms des arrangeurs associés à la piste.  Cela peut inclure les arrangeurs des instruments et de l’orchestre, et peut être associé à la sortie, l’enregistrement ou l’œuvre. (<em>depuis Picard 0.10</em>)</p>
 </div></blockquote>
 <p><strong>composer</strong></p>
 <blockquote>
-<div><p>Type de relation de compositeur</p>
+<div><p>Les noms des compositeurs de l’œuvre associée.</p>
 </div></blockquote>
 <p><strong>composersort</strong></p>
 <blockquote>
-<div><p>Nom de tri du type de relation de compositeur</p>
+<div><p>Les noms de tri des compositeurs de l’œuvre associée.</p>
 </div></blockquote>
 <p><strong>conductor</strong></p>
 <blockquote>
-<div><p>Type de relation de chef d’orchestre (sorties, enregistrements), type de relation de maître de chœur (sorties, enregistrements)</p>
+<div><p>Les noms des chefs d’orchestre associés à la piste.  Ils peuvent inclure le chef d’orchestre et le chef de chœur, et peuvent être associés à la sortie ou à l’enregistrement.</p>
 </div></blockquote>
 <p><strong>djmixer</strong></p>
 <blockquote>
-<div><p>Type de relation Mix-DJ (<em>depuis Picard 0.9</em>)</p>
+<div><p>Les noms des DJ mixeurs pour la piste. (<em>depuis Picard 0.9</em>)</p>
 </div></blockquote>
 <p><strong>engineer</strong></p>
 <blockquote>
-<div><p>Type de relation ingénieur</p>
+<div><p>Les noms des ingénieurs associés à la piste.</p>
 </div></blockquote>
 <p><strong>license</strong></p>
 <blockquote>
-<div><p>Type de relation de licence (sorties, enregistrements) (<em>depuis Picard 1.0</em>)</p>
+<div><p>Les licences associées à la piste, soit par le biais de la libération ou des relations d’enregistrement. (<em>depuis Picard 1.0</em>)</p>
 </div></blockquote>
 <p><strong>lyricist</strong></p>
 <blockquote>
-<div><p>Type de relation parolier</p>
+<div><p>Les noms des paroliers de l’œuvre associée.</p>
 </div></blockquote>
 <p><strong>mixer</strong></p>
 <blockquote>
-<div><p>Type de relation ingénieur (« Mixé par ») (<em>depuis Picard 0.9</em>)</p>
+<div><p>Les noms des ingénieurs « Mélangé par » associés à la piste. (<em>depuis Picard 0.9</em>)</p>
 </div></blockquote>
 <p><strong>performer:&lt;type&gt;</strong></p>
 <blockquote>
-<div><p>Type de relation interprète (sorties - voix / instruments, enregistrements - voix / instruments), &lt;type&gt; peut être « vocal », « guest guitar », « solo violin »,…</p>
-<p>Type de relation avec l’orchestre (sorties, enregistrements), &lt;type&gt; est « orchestra »</p>
-<p>Type de relation Maître de concert (sorties, enregistrements), &lt;type&gt; est « concertmaster »</p>
+<div><p>Les noms des interprètes pour le type spécifié.  Ces types comprennent :</p>
+<ul class="simple">
+<li><p>des voix ou des instruments pour la sortie ou l’enregistrement associé, où &lt;type&gt; peut être « voix », « guitare invitée », « violon solo », etc.</p></li>
+<li><p>l’orchestre de la publication ou de l’enregistrement associé, où &lt;type&gt; est « orchestre »</p></li>
+<li><p>le master de concert pour la publication ou l’enregistrement associé, où &lt;type&gt; est « concertmaster »</p></li>
+</ul>
 </div></blockquote>
 <p><strong>producer</strong></p>
 <blockquote>
-<div><p>Type de relation producteur</p>
+<div><p>Les noms des producteurs pour la sortie ou l’enregistrement associé.</p>
+</div></blockquote>
+<p><strong>releasedate</strong></p>
+<blockquote>
+<div><p>Balise explicite pour la date de publication (<em>depuis Picard 2.9</em>).  Cette balise existe pour une utilisation spécifique dans les scripts et les plugins, mais n’est pas remplie par défaut.  Dans la plupart des cas, il est recommandé d’utiliser la balise <code class="docutils literal notranslate"><span class="pre">date</span></code> à la place pour des raisons de compatibilité avec les logiciels existants.</p>
 </div></blockquote>
 <p><strong>remixer</strong></p>
 <blockquote>
-<div><p>Type de relation de remixeur</p>
+<div><p>Les noms des ingénieurs remixeurs associés à la piste.</p>
 </div></blockquote>
 <p><strong>work</strong></p>
 <blockquote>
-<div><p>Nom du travail (<em>depuis Picard 1.3</em>)</p>
+<div><p>Le nom de l’œuvre associée à la piste. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>writer</strong></p>
 <blockquote>
-<div><p>Type de relation écrivain (<em>depuis Picard 1.0</em>). Non écrit automatiquement dans la plupart des formats de fichiers. Vous pouvez fusionner cela avec des compositeurs avec un script comme:</p>
+<div><p>Les noms des rédacteurs associés aux travaux connexes. (<em>depuis Picard 1.0</em>). Ceci n’est pas écrit automatiquement dans la plupart des formats de fichiers. Vous pouvez le fusionner avec les compositeurs avec un script comme :</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$copymerge(</span>composer, writer<span class="k">)</span>
 </pre></div>
 </div>

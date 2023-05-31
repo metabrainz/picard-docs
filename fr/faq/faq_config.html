@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Configuration &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Configuration &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -66,7 +70,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="faq.html">Questions fréquemment posées</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="faq_usage.html">Utiliser Picard</a></li>
@@ -108,6 +112,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -134,7 +144,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="faq.html">Questions fréquemment posées</a></li>
       <li class="breadcrumb-item active">Configuration</li>
       <li class="wy-breadcrumbs-aside">
@@ -167,8 +177,8 @@
 </div>
 <div class="section" id="my-tags-are-truncated-to-30-characters-in-windows-media-player">
 <h2>Mes balises sont <span class="target" id="index-10"></span>truncated à 30 caractères dans Windows Media Player!<a class="headerlink" href="#my-tags-are-truncated-to-30-characters-in-windows-media-player" title="Lien permanent vers ce titre"></a></h2>
-<p>Avant la version 0.14, les paramètres par défaut de Picard étaient d’écrire les balises ID3v2.4 et ID3v1 dans les fichiers. WMP ne peut pas lire ID3v2.4, il revient donc à ID3v1 qui a une limitation de 30 caractères par titre. Pour résoudre ce problème sur les versions antérieures à 0.14, configurez Picard pour qu’il écrive des balises ID3v2.3 à la place.</p>
-<p>À partir de la version 0.14, les paramètres par défaut ont été modifiés en ID3v2.3 et cela ne devrait plus être un problème.</p>
+<p>Les paramètres par défaut de Picard écrivent les balises ID3v2.4 et ID3v1 dans les fichiers.  Les anciennes versions de WMP ne peuvent pas lire l’ID3v2.4, et se rabattent donc sur l’ID3v1, qui est limité à 30 caractères par titre.  Pour résoudre ce problème, configurez Picard pour qu’il écrive des balises ID3v2.3 à la place.</p>
+<p>Depuis Windows 10 Creators Update (version 1703), ID3v2.4 est pris en charge et le problème ci-dessus ne devrait plus se poser.</p>
 </div>
 <div class="section" id="how-do-i-tell-picard-which-browser-to-use">
 <h2>Comment dire à Picard quel <span class="target" id="index-11"></span>navigateur utiliser?<a class="headerlink" href="#how-do-i-tell-picard-which-browser-to-use" title="Lien permanent vers ce titre"></a></h2>

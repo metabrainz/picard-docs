@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Starting Picard &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Démarrage Picard &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Starting Picard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
@@ -66,7 +70,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -97,6 +101,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -123,8 +133,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Starting Picard</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Démarrage Picard</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -134,36 +144,14 @@
            <div itemprop="articleBody">
              
   <div class="section" id="starting-picard">
-<h1><span class="target" id="index-0"></span>Starting Picard<a class="headerlink" href="#starting-picard" title="Lien permanent vers ce titre"></a></h1>
-<p>Once Picard has been installed on your system, most of the time you will be starting it by
-clicking an icon on your desktop or in a start menu.  This will run the program using the
-default location for the configuration file and configured logging level.  Picard can also
-be started from a command line prompt with some overrides available.  From the command line,
-you can also specify files or directories to load into Picard for processing.  Please see
-<a class="reference internal" href="../appendices/command_line.html"><span class="doc">Annexe C : Options de ligne de commande</span></a> for more details about the available options.</p>
-<p>As of version 2.9, Picard will try to only run a single instance of the program at a time.
-When the program is started, it checks to see if there is another instance of that version,
-configuration file and plugin startup status <code class="docutils literal notranslate"><span class="pre">-P</span></code> already running.  If the same version
-is already running, any files or directories specified on the command line of the new
-instance, along with any executable commands specified with the <code class="docutils literal notranslate"><span class="pre">-e</span></code> or <code class="docutils literal notranslate"><span class="pre">-exec</span></code> options
-will be passed to the already running instance for processing and the new duplicate instance
-will be shut down.  This allows batch processing of files to be initiated automatically from
-other processes.  If there is no instance of that version already running, Picard will start
-normally.</p>
-<p>Additionally, Picard can be started in « stand-alone » mode, in which case it neither sends
-information to an already running instance nor accepts information from another instance.</p>
-<p>Instances started with command-line argument <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">/</span> <span class="pre">--stand-alone</span></code> always start as stand-alone.</p>
-<p>If there is already an instance running when another instance is started that doesn’t result in a
-stand-alone instance, any of the command-line overrides <code class="docutils literal notranslate"><span class="pre">-d</span> <span class="pre">/</span> <span class="pre">--debug</span></code>, <code class="docutils literal notranslate"><span class="pre">-M</span> <span class="pre">/</span> <span class="pre">--no-player</span></code>
-or <code class="docutils literal notranslate"><span class="pre">-N</span> <span class="pre">/</span> <span class="pre">-no-restore</span></code> of the new duplicate instance will be ignored, and only the specified
-files or directories and executable commands (if any) will be passed to the running instance for
-processing.  Similarly, if a primary instance has been started with any of these overrides
-specified on the command line, starting a subsequent instance of that version without the override
-will not modify the user interface settings of the currently running instance.</p>
-<p>All instances started with the <code class="docutils literal notranslate"><span class="pre">-h</span> <span class="pre">/</span> <span class="pre">--help</span></code>, <code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">/</span> <span class="pre">--version</span></code> or <code class="docutils literal notranslate"><span class="pre">-V</span> <span class="pre">/</span> <span class="pre">--long-version</span></code>
-command line arguments will always output the requested product information and exit, regardless of
-whether or not another instance is running.</p>
-<p>Please refer to the <a class="reference internal" href="../usage/command_processing.html"><span class="doc">Command and Batch Processing</span></a> section for more information.</p>
+<h1><span class="target" id="index-1"></span>Démarrage Picard<a class="headerlink" href="#starting-picard" title="Lien permanent vers ce titre"></a></h1>
+<p>Une fois que Picard a été installé sur votre système, la plupart du temps, vous le lancerez en cliquant sur une icône sur votre bureau ou dans un menu de démarrage.  Cela lancera le programme en utilisant l’emplacement par défaut du fichier de configuration et le niveau de journalisation configuré.  Picard peut également être lancé à partir d’une ligne de commande avec certaines options disponibles.  A partir de la ligne de commande, vous pouvez également spécifier des fichiers ou des répertoires à charger dans Picard pour le traitement.  Veuillez consulter <a class="reference internal" href="../appendices/command_line.html"><span class="doc">Annexe C : Options de ligne de commande</span></a> pour plus de détails sur les options disponibles.</p>
+<p>Depuis la version 2.9, Picard essaie de ne faire tourner qu’une seule instance du programme à la fois. Lorsque le programme est lancé, il vérifie si une autre instance de cette version, de ce fichier de configuration et de ce statut de démarrage de plugin <code class="docutils literal notranslate"><span class="pre">-P</span></code> est déjà en cours d’exécution.  Si la même version est déjà en cours d’exécution, tous les fichiers ou répertoires spécifiés sur la ligne de commande de la nouvelle instance, ainsi que toutes les commandes exécutables spécifiées avec les options <code class="docutils literal notranslate"><span class="pre">-e</span></code> ou <code class="docutils literal notranslate"><span class="pre">--exec</span></code> seront transmises à l’instance déjà en cours d’exécution pour traitement et la nouvelle instance dupliquée sera arrêtée.  Cela permet de lancer automatiquement le traitement par lot de fichiers à partir d’autres processus.  S’il n’y a pas d’instance de cette version en cours d’exécution, Picard démarrera normalement.</p>
+<p>De plus, Picard peut être démarré en mode « autonome », auquel cas il n’envoie pas d’informations à une instance déjà en cours d’exécution et n’accepte pas d’informations d’une autre instance.</p>
+<p>Les instances démarrées avec l’argument de ligne de commande <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">/</span> <span class="pre">--stand-alone</span></code> démarrent toujours en tant que autonome.</p>
+<p>S’il y a déjà une instance en cours d’exécution lorsque l’on démarre une autre instance qui n’est pas une instance autonome, toutes les options de la ligne de commande <cite>-d / –debug`</cite>, <cite>-M / –no-player`</cite> ou <cite>-N / –no-restore`</cite> de la nouvelle instance dupliquée seront ignorées, et seuls les fichiers ou répertoires spécifiés et les commandes exécutables (le cas échéant) seront transmis à l’instance en cours d’exécution pour traitement.  De même, si une instance primaire a été démarrée avec l’une de ces options spécifiées sur la ligne de commande, le démarrage d’une instance ultérieure de cette version sans cette option ne modifiera pas les paramètres de l’interface utilisateur de l’instance en cours d’exécution.</p>
+<p>Toutes les instances lancées avec les arguments de ligne de commande <code class="docutils literal notranslate"><span class="pre">-h</span> <span class="pre">/</span> <span class="pre">--help</span></code>, <code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">/</span> <span class="pre">--version</span></code> ou <code class="docutils literal notranslate"><span class="pre">-V</span> <span class="pre">/</span> <span class="pre">--long-version</span></code> afficheront toujours les informations demandées sur le produit et quitteront, qu’une autre instance soit en cours d’exécution ou non.</p>
+<p>Veuillez vous reporter à la section <a class="reference internal" href="../usage/command_processing.html"><span class="doc">Traitement par commande et par lot</span></a> pour plus d’informations.</p>
 </div>
 
 

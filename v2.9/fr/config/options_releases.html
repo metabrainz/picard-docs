@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Versions préférées &mdash; Documentation MusicBrainz Picard v2.9alpha1</title>
+  <title>Versions préférées &mdash; Documentation MusicBrainz Picard v2.9beta1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -30,14 +30,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> MusicBrainz Picard
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9alpha1
+                v2.9beta1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -53,7 +57,7 @@
 <p class="caption" role="heading"><span class="caption-text">Commencer</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/download.html">Téléchargez et installez Picard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Starting Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/starting.html">Démarrage Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/screen_main.html">Écran principal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="configuration.html">Configuration</a><ul class="current">
@@ -90,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage/using.html">Usage général</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/other.html">Autres tâches de Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/option_profiles.html">Profils d’options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Command and Batch Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/command_processing.html">Traitement par commande et par lot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
@@ -121,6 +125,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_introduction.html">Introduction à Picard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_attach_disc_id.html">Attacher une identification de disque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/v_submit_acoustid.html">Soumission d’un AcoustID</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
@@ -147,7 +157,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="configuration.html">Configuration</a></li>
           <li class="breadcrumb-item"><a href="options_metadata.html">Options de métadonnées</a></li>
       <li class="breadcrumb-item active">Versions préférées</li>
@@ -161,16 +171,19 @@
              
   <div class="section" id="preferred-releases">
 <h1><span class="target" id="index-1"></span>Versions préférées<a class="headerlink" href="#preferred-releases" title="Lien permanent vers ce titre"></a></h1>
-<a class="reference internal image-reference" href="../_images/options-metadata-releases.png"><img alt="../_images/options-metadata-releases.png" src="../_images/options-metadata-releases.png" style="width: 100%;" /></a>
-<p><strong>Types de version préférés</strong></p>
+<a class="reference internal image-reference" href="../_images/options-metadata-releases-types.png"><img alt="../_images/options-metadata-releases-types.png" src="../_images/options-metadata-releases-types.png" style="width: 100%;" /></a>
+<p><strong>Types de libération préférés</strong></p>
 <blockquote>
-<div><p>Ajustez les curseurs pour différents types de versions afin d’ajuster la probabilité que Picard fasse correspondre un fichier ou un cluster à des versions de différents types. Par exemple, vous pouvez l’utiliser pour réduire la probabilité que Picard fasse correspondre un fichier ou un album à une version Compilation ou Live.</p>
+<div><p>Ajustez les curseurs sur le côté droit de chacun des différents types de versions pour modifier la probabilité que Picard fasse correspondre un fichier ou un cluster aux versions de ce type. Déplacer un curseur vers la droite augmente la probabilité de correspondance avec ce type, tandis que déplacer le curseur vers la gauche diminue la probabilité.</p>
+<p>Par exemple, vous pouvez l’utiliser pour diminuer la probabilité que Picard fasse correspondre un fichier ou un album à une version Compilation ou Live.</p>
 </div></blockquote>
-<p><strong>Pays de version préférés</strong></p>
+<a class="reference internal image-reference" href="../_images/options-metadata-releases-countries.png"><img alt="../_images/options-metadata-releases-countries.png" src="../_images/options-metadata-releases-countries.png" style="width: 100%;" /></a>
+<p><strong>Pays de sortie préférés</strong></p>
 <blockquote>
 <div><p>Ajoutez un ou plusieurs pays à la liste pour que Picard préfère les clusters ou fichiers correspondants aux versions des pays choisis. Cette liste est également utilisée pour hiérarchiser les fichiers dans le menu contextuel « Autres versions ».</p>
 </div></blockquote>
-<p><strong>Moyens formats préférés</strong></p>
+<a class="reference internal image-reference" href="../_images/options-metadata-releases-formats.png"><img alt="../_images/options-metadata-releases-formats.png" src="../_images/options-metadata-releases-formats.png" style="width: 100%;" /></a>
+<p><strong>Formats moyens préférés</strong></p>
 <blockquote>
 <div><p>Ajoutez un ou plusieurs formats à la liste pour que Picard préfère les clusters ou fichiers correspondants aux versions du format spécifié. Cette liste est également utilisée pour hiérarchiser les fichiers dans le menu contextuel « Autres versions ».</p>
 </div></blockquote>
