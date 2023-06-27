@@ -16,7 +16,7 @@ tutorial for additional information.
    AcoustID was calculated and whether it ready for submission (red = unsubmitted, grey = already
    submitted).
 
-.. only:: html
+.. only:: html and not epub
 
    .. note::
 
