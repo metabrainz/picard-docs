@@ -58,10 +58,18 @@
     This will enable advanced query syntax parsing on your searches. This only applies to the search
     box at the top right of Picard, not the lookup buttons.
 
+**Show the new user dialog when starting Picard**
+
+    When this is enabled, Picard will show a dialog intended for new users when you start the program. This displays a warning about the consequences of saving files, along with a suggestion for minimizing the impact until you have confirmed that your configuration produces the expected results. It also provides a link to the on-line documentation.
+
 **Show a quit confirmation dialog for unsaved changes**
 
     When this is enabled, Picard will show a dialog when you try to quit the program with unsaved
     files loaded. This may help prevent accidentally losing tag changes you've made, but not yet saved.
+
+**Show a confirmation dialog when saving files**
+
+    When this is enabled, Picard will show a dialog when you save files, indicating what actions will be performed on the files and the number of files to be saved. This may help prevent accidentally making changes that you are not expecting.
 
 **Adjust horizontal position in file browser automatically**
 
