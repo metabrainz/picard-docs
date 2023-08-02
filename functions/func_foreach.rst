@@ -20,6 +20,10 @@ A literal value representing a multi-value can be substituted for ``name``, usin
 (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued
 variable.
 
+.. note::
+
+   Due to the way that the function parses the ``code`` parameter, multi-value functions that accept the name of the multi-value variable directly (without it being enclosed in percent signs) will not work as expected. To use these functions, the multi-value variable must be expanded by enclosing it with percent signs and re-split by adding "; " (semicolon and single space) as the separator parameter. For example, where you would normally use ``$getmulti(variable,0)`` you have to replace it with ``$getmulti(%variable%,0,; )``.
+
 
 **Example:**
 
