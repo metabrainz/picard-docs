@@ -108,7 +108,7 @@ Most tags beginning with ``musicbrainz_`` provide the :index:`MusicBrainz Identi
 
 **director**
 
-   The director of a video track as provided by the Video Director relationship in MusicBrainz.  (*Since Picard 2.6*)
+   The director of a track as provided by the Video Director or Audio Director relationship in MusicBrainz.  (*Since Picard 2.6, updated in Picard 2.9*)
 
 **discnumber**
 
