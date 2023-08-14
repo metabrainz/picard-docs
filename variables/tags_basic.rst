@@ -106,10 +106,6 @@ Most tags beginning with ``musicbrainz_`` provide the :index:`MusicBrainz Identi
 
     Release Date (YYYY-MM-DD) - the date that the release (album) was issued.
 
-**director**
-
-   The director of a track as provided by the Video Director or Audio Director relationship in MusicBrainz.  (*Since Picard 2.6, updated in Picard 2.9*)
-
 **discnumber**
 
     Number of the disc in this release that contains this track.
