@@ -59,21 +59,25 @@
    the correct track.  This is useful when re-processing files that have been previously tagged
    with incorrect information.
 
-**Check for updates during start-up**
+**Check for plugin updates during start-up**
 
-   This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; update checking>` during
+   This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup.  If this is enabled and an update to an installed plugin is available, a popup message will be displayed.
+
+**Check for program updates during start-up**
+
+   This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; program update checking>` during
    startup.  In any case, you can have Picard check for program updates at any time using :menuselection:`"Help
    --> Check for update"`.
 
 **Days between checks**
 
-   This option allows you to limit the automatic update checking by selecting the interval, in days,
+   This option allows you to limit the automatic program update checking by selecting the interval, in days,
    between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that
-   this only applies if the "Check for updates during start-up" option is enabled.
+   this only applies if the "Check for program updates during start-up" option is enabled.
 
 **Updates to check**
 
-   This option allows you to select which levels of update to check. Your options are:
+   This option allows you to select which levels of program update to check. Your options are:
 
    * Stable releases only
    * Stable and Beta releases
@@ -84,6 +88,6 @@
 
 .. note::
 
-   The update checking related settings and :menuselection:`"Help --> Check for update..."` command may
+   The program update checking related settings and :menuselection:`"Help --> Check for update..."` command may
    not be available when Picard is distributed as a package. In that case, the user should check with the
    maintainer of the package to determine when an update is available.
