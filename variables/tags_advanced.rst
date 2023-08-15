@@ -44,6 +44,10 @@ If you enable tagging with "Use track relationships", you get these extra tags:
     Tha names of the conductors associated with the track.  These can include the conductor and chorus master, and could
     be associated with the release or recording.
 
+**director**
+
+   The director of a track as provided by the Video Director or Audio Director relationship in MusicBrainz.  (*Since Picard 2.6, updated in Picard 2.9*)
+
 **djmixer**
 
     The names of the DJ mixers for the track. (*since Picard 0.9*)
