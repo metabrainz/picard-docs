@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.9alpha1\n"
+"Project-Id-Version: MusicBrainz Picard v2.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2023-08-14 21:40-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,45 +85,53 @@ msgid "If you disable this option Picard will not use MusicBrainz identifiers (M
 msgstr ""
 
 #: ../../config/options_general.rst:62
-msgid "**Check for updates during start-up**"
+msgid "**Check for plugin updates during start-up**"
 msgstr ""
 
 #: ../../config/options_general.rst:64
-msgid "This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; update checking>` during startup.  In any case, you can have Picard check for program updates at any time using :menuselection:`\"Help --> Check for update\"`."
+msgid "This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup.  If this is enabled and an update to an installed plugin is available, a popup message will be displayed."
+msgstr ""
+
+#: ../../config/options_general.rst:66
+msgid "**Check for program updates during start-up**"
 msgstr ""
 
 #: ../../config/options_general.rst:68
+msgid "This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; program update checking>` during startup.  In any case, you can have Picard check for program updates at any time using :menuselection:`\"Help --> Check for update\"`."
+msgstr ""
+
+#: ../../config/options_general.rst:72
 msgid "**Days between checks**"
 msgstr ""
 
-#: ../../config/options_general.rst:70
-msgid "This option allows you to limit the automatic update checking by selecting the interval, in days, between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that this only applies if the \"Check for updates during start-up\" option is enabled."
-msgstr ""
-
 #: ../../config/options_general.rst:74
-msgid "**Updates to check**"
-msgstr ""
-
-#: ../../config/options_general.rst:76
-msgid "This option allows you to select which levels of update to check. Your options are:"
+msgid "This option allows you to limit the automatic program update checking by selecting the interval, in days, between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that this only applies if the \"Check for program updates during start-up\" option is enabled."
 msgstr ""
 
 #: ../../config/options_general.rst:78
-msgid "Stable releases only"
-msgstr ""
-
-#: ../../config/options_general.rst:79
-msgid "Stable and Beta releases"
+msgid "**Updates to check**"
 msgstr ""
 
 #: ../../config/options_general.rst:80
-msgid "Stable, Beta and Dev releases"
+msgid "This option allows you to select which levels of program update to check. Your options are:"
 msgstr ""
 
 #: ../../config/options_general.rst:82
+msgid "Stable releases only"
+msgstr ""
+
+#: ../../config/options_general.rst:83
+msgid "Stable and Beta releases"
+msgstr ""
+
+#: ../../config/options_general.rst:84
+msgid "Stable, Beta and Dev releases"
+msgstr ""
+
+#: ../../config/options_general.rst:86
 msgid "For example, if you subscribe to \"Stable releases only\" you will not be notified if a new Beta or Dev release is issued."
 msgstr ""
 
-#: ../../config/options_general.rst:87
-msgid "The update checking related settings and :menuselection:`\"Help --> Check for update...\"` command may not be available when Picard is distributed as a package. In that case, the user should check with the maintainer of the package to determine when an update is available."
+#: ../../config/options_general.rst:91
+msgid "The program update checking related settings and :menuselection:`\"Help --> Check for update...\"` command may not be available when Picard is distributed as a package. In that case, the user should check with the maintainer of the package to determine when an update is available."
 msgstr ""

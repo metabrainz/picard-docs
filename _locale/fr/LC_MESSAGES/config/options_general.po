@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-06 09:47-0600\n"
+"POT-Creation-Date: 2023-08-14 21:40-0600\n"
 "PO-Revision-Date: 2021-10-06 18:26+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/configoptions_general/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects"
+"/picard-docs/configoptions_general/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_general.rst:4
@@ -103,14 +102,15 @@ msgid ""
 "music file at any time using :menuselection:`\"Tools --> Scan\"`. See "
 "also :ref:`ref_scan_files` and :ref:`ref_tutorial_acoustid`."
 msgstr ""
-"Cochez cette case si vous voulez que Picard analyse chaque fichier musical "
-"que vous ajoutez et recherche une empreinte :index:`AcoustID <pair: AcoustID;"
-" scan automatique>` empreinte digitale. Cela prend du temps, mais peut être "
-"utile pour vous et MusicBrainz. Laissez cette case décochée si vous ne "
-"voulez pas que Picard fasse ce scan automatiquement. Dans tous les cas, vous "
-"pouvez demander à Picard de scanner un fichier musical particulier à tout "
-"moment en utilisant :menuselection:`\"Outils --> Scan\"`. Voir aussi "
-":ref:`ref_scan_files` et :ref:`ref_tutorial_acoustid`."
+"Cochez cette case si vous voulez que Picard analyse chaque fichier "
+"musical que vous ajoutez et recherche une empreinte :index:`AcoustID "
+"<pair: AcoustID; scan automatique>` empreinte digitale. Cela prend du "
+"temps, mais peut être utile pour vous et MusicBrainz. Laissez cette case "
+"décochée si vous ne voulez pas que Picard fasse ce scan automatiquement. "
+"Dans tous les cas, vous pouvez demander à Picard de scanner un fichier "
+"musical particulier à tout moment en utilisant :menuselection:`\"Outils "
+"--> Scan\"`. Voir aussi :ref:`ref_scan_files` et "
+":ref:`ref_tutorial_acoustid`."
 
 #: ../../config/options_general.rst:43
 msgid "**Automatically cluster all new files**"
@@ -124,12 +124,13 @@ msgid ""
 "any case, you can direct Picard to cluster files any time using "
 ":menuselection:`\"Tools --> Cluster\"`. See also :ref:`ref_lookup_files`."
 msgstr ""
-"Cochez cette case si vous voulez que Picard regroupe automatiquement tous "
-"les fichiers chargés dans l'album :index:`clusters <pair: cluster; "
+"Cochez cette case si vous voulez que Picard regroupe automatiquement tous"
+" les fichiers chargés dans l'album :index:`clusters <pair: cluster; "
 "regroupement automatique>`. Ne la cochez pas si vous ne voulez pas que "
-"Picard fasse cela automatiquement. Dans tous les cas, vous pouvez demander à "
-"Picard de regrouper les fichiers à tout moment en utilisant :menuselection:`"
-"\"Outils --> Cluster\"`. Voir aussi :ref:`ref_lookup_files`."
+"Picard fasse cela automatiquement. Dans tous les cas, vous pouvez "
+"demander à Picard de regrouper les fichiers à tout moment en utilisant "
+":menuselection:`\"Outils --> Cluster\"`. Voir aussi "
+":ref:`ref_lookup_files`."
 
 #: ../../config/options_general.rst:52
 msgid ""
@@ -159,15 +160,30 @@ msgstr ""
 "qui ont déjà été marqués avec des informations incorrectes."
 
 #: ../../config/options_general.rst:62
-msgid "**Check for updates during start-up**"
+#, fuzzy
+msgid "**Check for plugin updates during start-up**"
 msgstr "**Vérifiez les mises à jour lors du démarrage**"
 
 #: ../../config/options_general.rst:64
 msgid ""
 "This option determines whether or not Picard will automatically check for"
-" :index:`program updates <pair: configuration; update checking>` during "
-"startup.  In any case, you can have Picard check for program updates at "
-"any time using :menuselection:`\"Help --> Check for update\"`."
+" :index:`plugin updates <pair: configuration; plugin update checking>` "
+"during startup.  If this is enabled and an update to an installed plugin "
+"is available, a popup message will be displayed."
+msgstr ""
+
+#: ../../config/options_general.rst:66
+#, fuzzy
+msgid "**Check for program updates during start-up**"
+msgstr "**Vérifiez les mises à jour lors du démarrage**"
+
+#: ../../config/options_general.rst:68
+#, fuzzy
+msgid ""
+"This option determines whether or not Picard will automatically check for"
+" :index:`program updates <pair: configuration; program update checking>` "
+"during startup.  In any case, you can have Picard check for program "
+"updates at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
 "Cette option détermine si Picard vérifiera automatiquement les mises à "
 "jour du :index:`programme au démarrage <pair: configuration; vérification"
@@ -175,16 +191,18 @@ msgstr ""
 "vérifier les mises à jour du programme à tout moment en utilisant "
 ":menuselection:`\"Aide --> Vérifier les mises à jour\"`."
 
-#: ../../config/options_general.rst:68
+#: ../../config/options_general.rst:72
 msgid "**Days between checks**"
 msgstr "**Jours entre les chèques**"
 
-#: ../../config/options_general.rst:70
+#: ../../config/options_general.rst:74
+#, fuzzy
 msgid ""
-"This option allows you to limit the automatic update checking by "
+"This option allows you to limit the automatic program update checking by "
 "selecting the interval, in days, between checks. Set this to 1 if you "
 "want to check daily, 7 for weekly checks, and so on. Note that this only "
-"applies if the \"Check for updates during start-up\" option is enabled."
+"applies if the \"Check for program updates during start-up\" option is "
+"enabled."
 msgstr ""
 "Cette option vous permet de limiter la vérification automatique des mises"
 " à jour en sélectionnant l'intervalle, en jours, entre les vérifications."
@@ -193,31 +211,32 @@ msgstr ""
 "ne s'applique que si l'option \"Vérifier les mises à jour au démarrage\" "
 "est activée."
 
-#: ../../config/options_general.rst:74
+#: ../../config/options_general.rst:78
 msgid "**Updates to check**"
 msgstr "**Mises à jour à vérifier**"
 
-#: ../../config/options_general.rst:76
+#: ../../config/options_general.rst:80
+#, fuzzy
 msgid ""
-"This option allows you to select which levels of update to check. Your "
-"options are:"
+"This option allows you to select which levels of program update to check."
+" Your options are:"
 msgstr ""
 "Cette option vous permet de sélectionner les niveaux de mise à jour à "
 "vérifier. Vos options sont :"
 
-#: ../../config/options_general.rst:78
+#: ../../config/options_general.rst:82
 msgid "Stable releases only"
 msgstr "Versions stables uniquement"
 
-#: ../../config/options_general.rst:79
+#: ../../config/options_general.rst:83
 msgid "Stable and Beta releases"
 msgstr "Versions stables et bêta"
 
-#: ../../config/options_general.rst:80
+#: ../../config/options_general.rst:84
 msgid "Stable, Beta and Dev releases"
 msgstr "Versions stables, bêta et dev"
 
-#: ../../config/options_general.rst:82
+#: ../../config/options_general.rst:86
 msgid ""
 "For example, if you subscribe to \"Stable releases only\" you will not be"
 " notified if a new Beta or Dev release is issued."
@@ -226,12 +245,13 @@ msgstr ""
 " ne serez pas averti si une nouvelle version bêta ou de développement est"
 " publiée."
 
-#: ../../config/options_general.rst:87
+#: ../../config/options_general.rst:91
+#, fuzzy
 msgid ""
-"The update checking related settings and :menuselection:`\"Help --> Check"
-" for update...\"` command may not be available when Picard is distributed"
-" as a package. In that case, the user should check with the maintainer of"
-" the package to determine when an update is available."
+"The program update checking related settings and :menuselection:`\"Help "
+"--> Check for update...\"` command may not be available when Picard is "
+"distributed as a package. In that case, the user should check with the "
+"maintainer of the package to determine when an update is available."
 msgstr ""
 "La mise à jour vérifiant les paramètres associés et la commande "
 ":menuselection:`\"Aide --> Vérifier les mises à jour...\"` peuvent ne pas"
@@ -241,3 +261,4 @@ msgstr ""
 
 #~ msgid "General Options"
 #~ msgstr "Options générales"
+
