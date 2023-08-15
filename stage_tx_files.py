@@ -68,7 +68,8 @@ def parse_git_status(git_stat: list, files_to_add: dict, files_to_ignore: set, r
                 continue
 
 def parse_git_diff(git_diff: list, files_to_add: dict):
-    """Parse the git diff response.  Do not add translation files that only have minor changes to headers.
+    """Parse the git diff response.  Do not add translation files that only have changed
+    comment lines or minor changes to headers.
 
     Args:
         git_diff (list): List of lines in the git diff response
@@ -79,15 +80,25 @@ def parse_git_diff(git_diff: list, files_to_add: dict):
         line = line.strip()
         if line.startswith("--- "):
             filename = line[6:].strip()
+
+            # Add files not in the locale directory (not translation files)
             if not filename.startswith(LOCALE_DIR) and filename not in files_to_add:
                 files_to_add[filename] = 'Modified'
             continue
+
+        # Ignore files not identified or already added
         if not filename or filename in files_to_add:
             continue
+
+        # Ignore changed comment lines
         if re.match(r'[+-]#', line):
             continue
+
+        # Ignore changed header lines
         if re.match(r'[+-]"(POT-Creation|PO-Revision|Language-Team|Plural-Forms|X-Generator|Content-Type|Generated-By|Project-Id-Version)', line):
             continue
+
+        # Add files with changed translation text lines
         if re.match(r'[+-](msgid|msgstr|")', line):
             files_to_add[filename] = 'Modified'
 
@@ -126,7 +137,7 @@ def main():
     rst_files.add('sphinx.pot')
     rst_files.add('sphinx.po')
 
-    print("\nGetting the list of changed files.")
+    print("Getting the list of translation files.")
     initialize_file_sets(rst_files, pot_files, files_to_ignore)
 
     try:
@@ -137,7 +148,7 @@ def main():
         git_diff = get_stdout_from_command(command).splitlines()
 
     except subprocess.SubprocessError as ex:
-        print(f"Error running:{command}\vException: {ex}")
+        print(f"Error running:{command}\nException: {ex}")
 
     files_to_add = {}
     print("Reviewing the changes to identify files to add.")
@@ -145,20 +156,20 @@ def main():
     print(" - Parsing the git status output.")
     parse_git_status(git_stat, files_to_add, files_to_ignore, rst_files, pot_files)
 
-    print(" - Parsing the diff file.")
+    print(" - Parsing the git diff output.")
     parse_git_diff(git_diff, files_to_add)
 
     if files_to_add:
-        print("Files to add:")
+        print("\nFiles to add to git staging:")
         for filename, action in files_to_add.items():
-            print(f" {filename} [{action}]")
+            print(f" + {filename} [{action}]")
             command = "git add " + filename
             exit_code = subprocess.run(command, shell=True, check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=COMMAND_TIMEOUT).returncode
             if exit_code:
                 print("\nThere was a problem adding the file to the commit.\n")
                 sys.exit(1)
     else:
-        print("No files to add.")
+        print("\nNo files to stage for git.")
 
     print()
 
