@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>General Options &mdash; MusicBrainz Picard v2.9 documentation</title>
+  <title>General Options &mdash; MusicBrainz Picard v2.9.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -36,7 +36,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9
+                v2.9.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -215,21 +215,25 @@ files to automatically load the corresponding MusicBrainz release and match the 
 the correct track.  This is useful when re-processing files that have been previously tagged
 with incorrect information.</p>
 </div></blockquote>
-<p><strong>Check for updates during start-up</strong></p>
+<p><strong>Check for plugin updates during start-up</strong></p>
 <blockquote>
-<div><p>This option determines whether or not Picard will automatically check for <span class="target" id="index-3"></span>program updates during
+<div><p>This option determines whether or not Picard will automatically check for <span class="target" id="index-3"></span>plugin updates during startup.  If this is enabled and an update to an installed plugin is available, a popup message will be displayed.</p>
+</div></blockquote>
+<p><strong>Check for program updates during start-up</strong></p>
+<blockquote>
+<div><p>This option determines whether or not Picard will automatically check for <span class="target" id="index-4"></span>program updates during
 startup.  In any case, you can have Picard check for program updates at any time using <span class="menuselection">“Help
 ‣ Check for update”</span>.</p>
 </div></blockquote>
 <p><strong>Days between checks</strong></p>
 <blockquote>
-<div><p>This option allows you to limit the automatic update checking by selecting the interval, in days,
+<div><p>This option allows you to limit the automatic program update checking by selecting the interval, in days,
 between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that
-this only applies if the “Check for updates during start-up” option is enabled.</p>
+this only applies if the “Check for program updates during start-up” option is enabled.</p>
 </div></blockquote>
 <p><strong>Updates to check</strong></p>
 <blockquote>
-<div><p>This option allows you to select which levels of update to check. Your options are:</p>
+<div><p>This option allows you to select which levels of program update to check. Your options are:</p>
 <ul class="simple">
 <li><p>Stable releases only</p></li>
 <li><p>Stable and Beta releases</p></li>
@@ -240,7 +244,7 @@ Dev release is issued.</p>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The update checking related settings and <span class="menuselection">“Help ‣ Check for update…”</span> command may
+<p>The program update checking related settings and <span class="menuselection">“Help ‣ Check for update…”</span> command may
 not be available when Picard is distributed as a package. In that case, the user should check with the
 maintainer of the package to determine when an update is available.</p>
 </div>

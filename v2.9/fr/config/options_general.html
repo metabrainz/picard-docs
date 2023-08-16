@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Options générales &mdash; Documentation MusicBrainz Picard v2.9</title>
+  <title>Options générales &mdash; Documentation MusicBrainz Picard v2.9.1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -37,7 +37,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9
+                v2.9.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -164,7 +164,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="general-options">
-<h1><span class="target" id="index-4"></span>Options générales<a class="headerlink" href="#general-options" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-5"></span>Options générales<a class="headerlink" href="#general-options" title="Lien permanent vers ce titre"></a></h1>
 <a class="reference internal image-reference" href="../_images/options-general.png"><img alt="../_images/options-general.png" src="../_images/options-general.png" style="width: 100%;" /></a>
 <p><strong>Adresse du serveur</strong></p>
 <blockquote>
@@ -186,11 +186,11 @@
 </div></blockquote>
 <p><strong>Analyser automatiquement tous les nouveaux fichiers</strong></p>
 <blockquote>
-<div><p>Cochez cette case si vous voulez que Picard analyse chaque fichier musical que vous ajoutez et recherche une empreinte <span class="target" id="index-8"></span>AcoustID empreinte digitale. Cela prend du temps, mais peut être utile pour vous et MusicBrainz. Laissez cette case décochée si vous ne voulez pas que Picard fasse ce scan automatiquement. Dans tous les cas, vous pouvez demander à Picard de scanner un fichier musical particulier à tout moment en utilisant <span class="menuselection">« Outils ‣ Scan »</span>. Voir aussi <a class="reference internal" href="../usage/retrieve_scan.html#ref-scan-files"><span class="std std-ref">Analyser les fichiers</span></a> et <a class="reference internal" href="../tutorials/acoustid.html#ref-tutorial-acoustid"><span class="std std-ref">Comprendre Empreintes acoustiques et AcoustIDs</span></a>.</p>
+<div><p>Cochez cette case si vous voulez que Picard analyse chaque fichier musical que vous ajoutez et recherche une empreinte <span class="target" id="index-10"></span>AcoustID empreinte digitale. Cela prend du temps, mais peut être utile pour vous et MusicBrainz. Laissez cette case décochée si vous ne voulez pas que Picard fasse ce scan automatiquement. Dans tous les cas, vous pouvez demander à Picard de scanner un fichier musical particulier à tout moment en utilisant <span class="menuselection">« Outils ‣ Scan »</span>. Voir aussi <a class="reference internal" href="../usage/retrieve_scan.html#ref-scan-files"><span class="std std-ref">Analyser les fichiers</span></a> et <a class="reference internal" href="../tutorials/acoustid.html#ref-tutorial-acoustid"><span class="std std-ref">Comprendre Empreintes acoustiques et AcoustIDs</span></a>.</p>
 </div></blockquote>
 <p><strong>Automatiquement regrouper tous les nouveaux fichiers</strong></p>
 <blockquote>
-<div><p>Cochez cette case si vous voulez que Picard regroupe automatiquement tous les fichiers chargés dans l’album <span class="target" id="index-9"></span>clusters. Ne la cochez pas si vous ne voulez pas que Picard fasse cela automatiquement. Dans tous les cas, vous pouvez demander à Picard de regrouper les fichiers à tout moment en utilisant <span class="menuselection">« Outils ‣ Cluster »</span>. Voir aussi <a class="reference internal" href="../usage/retrieve_lookup.html#ref-lookup-files"><span class="std std-ref">Rechercher des fichiers</span></a>.</p>
+<div><p>Cochez cette case si vous voulez que Picard regroupe automatiquement tous les fichiers chargés dans l’album <span class="target" id="index-11"></span>clusters. Ne la cochez pas si vous ne voulez pas que Picard fasse cela automatiquement. Dans tous les cas, vous pouvez demander à Picard de regrouper les fichiers à tout moment en utilisant <span class="menuselection">« Outils ‣ Cluster »</span>. Voir aussi <a class="reference internal" href="../usage/retrieve_lookup.html#ref-lookup-files"><span class="std std-ref">Rechercher des fichiers</span></a>.</p>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -200,17 +200,21 @@
 <blockquote>
 <div><p>Si vous désactivez cette option, Picard n’utilisera pas les identifiants MusicBrainz (MBID) stockés dans les fichiers pour charger automatiquement la version MusicBrainz correspondante et faire correspondre le fichier chargé à la bonne piste. Ceci est utile lors du retraitement de fichiers qui ont déjà été marqués avec des informations incorrectes.</p>
 </div></blockquote>
-<p><strong>Vérifiez les mises à jour lors du démarrage</strong></p>
+<p><strong>Vérifier les mises à jour des plugins au démarrage</strong></p>
 <blockquote>
-<div><p>Cette option détermine si Picard vérifiera automatiquement les mises à jour du <span class="target" id="index-10"></span>programme au démarrage. Dans tous les cas, vous pouvez demander à Picard de vérifier les mises à jour du programme à tout moment en utilisant <span class="menuselection">« Aide ‣ Vérifier les mises à jour »</span>.</p>
+<div><p>Cette option détermine si Picard vérifiera automatiquement la présence de <span class="target" id="index-12"></span>mises à jour de plugins lors du démarrage.  Si cette option est activée et qu’une mise à jour d’un plugin installé est disponible, un message contextuel sera affiché.</p>
+</div></blockquote>
+<p><strong>Vérifier les mises à jour du programme lors du démarrage</strong></p>
+<blockquote>
+<div><p>Cette option détermine si Picard vérifiera automatiquement les <span class="target" id="index-13"></span>mises à jour du programme lors du démarrage.  Dans tous les cas, vous pouvez demander à Picard de vérifier les mises à jour de programmes à tout moment en utilisant <span class="menuselection">« Aide ‣ Vérifier la mise à jour »</span>.</p>
 </div></blockquote>
 <p><strong>Jours entre les chèques</strong></p>
 <blockquote>
-<div><p>Cette option vous permet de limiter la vérification automatique des mises à jour en sélectionnant l’intervalle, en jours, entre les vérifications. Réglez-le sur 1 si vous souhaitez effectuer une vérification quotidienne, 7 pour les vérifications hebdomadaires, etc. Notez que cela ne s’applique que si l’option « Vérifier les mises à jour au démarrage » est activée.</p>
+<div><p>Cette option vous permet de limiter la vérification automatique de la mise à jour du programme en sélectionnant l’intervalle, en jours, entre les vérifications. Réglez cette valeur sur 1 si vous souhaitez une vérification quotidienne, sur 7 pour une vérification hebdomadaire, et ainsi de suite. Notez que cette option ne s’applique que si l’option « Vérifier les mises à jour du programme au démarrage » est activée.</p>
 </div></blockquote>
 <p><strong>Mises à jour à vérifier</strong></p>
 <blockquote>
-<div><p>Cette option vous permet de sélectionner les niveaux de mise à jour à vérifier. Vos options sont :</p>
+<div><p>Cette option vous permet de sélectionner les niveaux de mise à jour du programme à vérifier. Les options disponibles sont les suivantes :</p>
 <ul class="simple">
 <li><p>Versions stables uniquement</p></li>
 <li><p>Versions stables et bêta</p></li>
@@ -220,7 +224,7 @@
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>La mise à jour vérifiant les paramètres associés et la commande <span class="menuselection">« Aide ‣ Vérifier les mises à jour… »</span> peuvent ne pas être disponibles lorsque Picard est distribué sous forme de package. Dans ce cas, l’utilisateur doit vérifier auprès du responsable du package pour déterminer quand une mise à jour est disponible.</p>
+<p>Les paramètres relatifs à la vérification des mises à jour du programme et la commande <span class="menuselection">« Aide ‣ Vérifier la mise à jour… »</span> peuvent ne pas être disponibles lorsque Picard est distribué sous forme de paquetage. Dans ce cas, l’utilisateur doit se renseigner auprès du responsable du paquetage pour savoir si une mise à jour est disponible.</p>
 </div>
 </div>
 
