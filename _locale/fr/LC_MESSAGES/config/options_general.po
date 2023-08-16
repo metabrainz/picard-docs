@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021.
+# Bob Swift <bswift@rsds.ca>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-14 21:40-0600\n"
-"PO-Revision-Date: 2021-10-06 18:26+0000\n"
+"PO-Revision-Date: 2023-08-16 04:07+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/"
+"picard-docs/configoptions_general/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects"
-"/picard-docs/configoptions_general/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.18.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_general.rst:4
@@ -160,9 +161,8 @@ msgstr ""
 "qui ont déjà été marqués avec des informations incorrectes."
 
 #: ../../config/options_general.rst:62
-#, fuzzy
 msgid "**Check for plugin updates during start-up**"
-msgstr "**Vérifiez les mises à jour lors du démarrage**"
+msgstr "**Vérifier les mises à jour des plugins au démarrage**"
 
 #: ../../config/options_general.rst:64
 msgid ""
@@ -171,32 +171,34 @@ msgid ""
 "during startup.  If this is enabled and an update to an installed plugin "
 "is available, a popup message will be displayed."
 msgstr ""
+"Cette option détermine si Picard vérifiera automatiquement la présence de "
+":index:`mises à jour de plugins <pair: configuration; vérification des mises "
+"à jour de plugins>` lors du démarrage.  Si cette option est activée et "
+"qu'une mise à jour d'un plugin installé est disponible, un message "
+"contextuel sera affiché."
 
 #: ../../config/options_general.rst:66
-#, fuzzy
 msgid "**Check for program updates during start-up**"
-msgstr "**Vérifiez les mises à jour lors du démarrage**"
+msgstr "**Vérifier les mises à jour du programme lors du démarrage**"
 
 #: ../../config/options_general.rst:68
-#, fuzzy
 msgid ""
 "This option determines whether or not Picard will automatically check for"
 " :index:`program updates <pair: configuration; program update checking>` "
 "during startup.  In any case, you can have Picard check for program "
 "updates at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
-"Cette option détermine si Picard vérifiera automatiquement les mises à "
-"jour du :index:`programme au démarrage <pair: configuration; vérification"
-" des mises à jour>`. Dans tous les cas, vous pouvez demander à Picard de "
-"vérifier les mises à jour du programme à tout moment en utilisant "
-":menuselection:`\"Aide --> Vérifier les mises à jour\"`."
+"Cette option détermine si Picard vérifiera automatiquement les :index:`mises "
+"à jour du programme <pair: configuration; vérification des mises à jour du "
+"programme>` lors du démarrage.  Dans tous les cas, vous pouvez demander à "
+"Picard de vérifier les mises à jour de programmes à tout moment en utilisant "
+":menuselection:`\"Aide --> Vérifier la mise à jour\"`."
 
 #: ../../config/options_general.rst:72
 msgid "**Days between checks**"
 msgstr "**Jours entre les chèques**"
 
 #: ../../config/options_general.rst:74
-#, fuzzy
 msgid ""
 "This option allows you to limit the automatic program update checking by "
 "selecting the interval, in days, between checks. Set this to 1 if you "
@@ -204,25 +206,24 @@ msgid ""
 "applies if the \"Check for program updates during start-up\" option is "
 "enabled."
 msgstr ""
-"Cette option vous permet de limiter la vérification automatique des mises"
-" à jour en sélectionnant l'intervalle, en jours, entre les vérifications."
-" Réglez-le sur 1 si vous souhaitez effectuer une vérification "
-"quotidienne, 7 pour les vérifications hebdomadaires, etc. Notez que cela "
-"ne s'applique que si l'option \"Vérifier les mises à jour au démarrage\" "
-"est activée."
+"Cette option vous permet de limiter la vérification automatique de la mise à "
+"jour du programme en sélectionnant l'intervalle, en jours, entre les "
+"vérifications. Réglez cette valeur sur 1 si vous souhaitez une vérification "
+"quotidienne, sur 7 pour une vérification hebdomadaire, et ainsi de suite. "
+"Notez que cette option ne s'applique que si l'option \"Vérifier les mises à "
+"jour du programme au démarrage\" est activée."
 
 #: ../../config/options_general.rst:78
 msgid "**Updates to check**"
 msgstr "**Mises à jour à vérifier**"
 
 #: ../../config/options_general.rst:80
-#, fuzzy
 msgid ""
 "This option allows you to select which levels of program update to check."
 " Your options are:"
 msgstr ""
-"Cette option vous permet de sélectionner les niveaux de mise à jour à "
-"vérifier. Vos options sont :"
+"Cette option vous permet de sélectionner les niveaux de mise à jour du "
+"programme à vérifier. Les options disponibles sont les suivantes :"
 
 #: ../../config/options_general.rst:82
 msgid "Stable releases only"
@@ -246,19 +247,17 @@ msgstr ""
 " publiée."
 
 #: ../../config/options_general.rst:91
-#, fuzzy
 msgid ""
 "The program update checking related settings and :menuselection:`\"Help "
 "--> Check for update...\"` command may not be available when Picard is "
 "distributed as a package. In that case, the user should check with the "
 "maintainer of the package to determine when an update is available."
 msgstr ""
-"La mise à jour vérifiant les paramètres associés et la commande "
-":menuselection:`\"Aide --> Vérifier les mises à jour...\"` peuvent ne pas"
-" être disponibles lorsque Picard est distribué sous forme de package. "
-"Dans ce cas, l'utilisateur doit vérifier auprès du responsable du package"
-" pour déterminer quand une mise à jour est disponible."
+"Les paramètres relatifs à la vérification des mises à jour du programme et "
+"la commande :menuselection:`\"Aide --> Vérifier la mise à jour...\"` peuvent "
+"ne pas être disponibles lorsque Picard est distribué sous forme de "
+"paquetage. Dans ce cas, l'utilisateur doit se renseigner auprès du "
+"responsable du paquetage pour savoir si une mise à jour est disponible."
 
 #~ msgid "General Options"
 #~ msgstr "Options générales"
-
