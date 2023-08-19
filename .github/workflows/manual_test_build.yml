@@ -1,21 +1,42 @@
-name: Manual Check and Basic Build
+name: Manual Check and Build
 
 on:
   workflow_dispatch:
+    inputs:
+      pythonVersion:
+        description: 'Python version to use for the processing'
+        required: true
+        default: '3.8'
+        type: choice
+        options:
+          - 3.7
+          - 3.8
+          - 3.9
+          - 3.10
+          - 3.11
+      buildLevel:
+        description: 'Build languages'
+        required: true
+        default: 'English only'
+        type: choice
+        options:
+          - English only
+          - All supported languages
+
+env:
+  if: startsWith(inputs.buildLevel, 'All')
+  MY_BUILD_ARG: -l all
 
 jobs:
   lint_rst_and_basic_build:
-    name: Check with LintRST and Basic Build
+    name: Check with LintRST and Build
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.7]
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ inputs.pythonVersion }}
       uses: actions/setup-python@v1
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: ${{ inputs.pythonVersion }}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -36,20 +57,23 @@ jobs:
         name: tag_map_files
         path: docs/MusicBrainz_Picard_Tag_Map.*
         retention-days: 5
-    - name: Build HTML Files
+    - name: Update Translation Files
+      run: |
+        python ./setup.py build pot
+    - name: Build HTML Files - ${{ inputs.buildLevel }}
       run: |
         python ./setup.py clean html
-        python ./setup.py build html
+        python ./setup.py ${{ env.MY_BUILD_ARG }} build html
     - name: Store HTML Build Output File
       uses: actions/upload-artifact@v2
       with:
         name: html_files
         path: docs/*.zip
         retention-days: 5
-    - name: Build EPUB File
+    - name: Build EPUB File - ${{ inputs.buildLevel }}
       run: |
         python ./setup.py clean epub
-        python ./setup.py build epub
+        python ./setup.py ${{ env.MY_BUILD_ARG }} build epub
     - name: Store ePub Build Output File
       uses: actions/upload-artifact@v2
       with:
@@ -66,10 +90,10 @@ jobs:
         sudo apt-get install texlive-latex-extra
         sudo apt-get install texlive-luatex
         sudo apt-get install xindy
-    - name: Build PDF File
+    - name: Build PDF File - ${{ inputs.buildLevel }}
       run: |
         python ./setup.py clean pdf
-        python ./setup.py build pdf
+        python ./setup.py ${{ env.MY_BUILD_ARG }} build pdf
     - name: Store PDF Build Output File
       uses: actions/upload-artifact@v2
       with:
