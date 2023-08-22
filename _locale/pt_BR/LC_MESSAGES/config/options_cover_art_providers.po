@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 09:38-0600\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language: pt_BR\n"
 "Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_cover_art_providers.rst:4
@@ -25,11 +25,10 @@ msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:11
 msgid ""
-"Picard can download Cover Art from a number of sources, and you can "
-"choose which sources you want Picard to use. You can activate more than "
-"one provider and choose the order in which the providers are queried. "
-"Picard will try the providers from top to bottom until an image is "
-"returned."
+"Picard can download Cover Art from a number of sources, and you can choose "
+"which sources you want Picard to use. You can activate more than one "
+"provider and choose the order in which the providers are queried. Picard "
+"will try the providers from top to bottom until an image is returned."
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:15
@@ -39,9 +38,9 @@ msgstr ""
 #: ../../config/options_cover_art_providers.rst:17
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
-"cooperation with the `Internet Archive <https://archive.org>`_. The Cover"
-" Art Archive is the most comprehensive database of cover art (e.g.: front"
-" covers, back covers, booklets, CDs)."
+"cooperation with the `Internet Archive <https://archive.org>`_. The Cover "
+"Art Archive is the most comprehensive database of cover art (e.g.: front "
+"covers, back covers, booklets, CDs)."
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:21
@@ -50,13 +49,12 @@ msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:23
 msgid ""
-"This provider uses the Cover Art Archive cover image assigned to the "
-"release group. This is usually the image that best describes the release "
-"group as a whole or the image with the best visual quality, but is not "
-"necessarily the exact cover of the release you are tagging. This provider"
-" is a good choice if you care more about visual quality then having an "
-"exact representation of your release. It is also a good fallback for the "
-"Cover Art Archive provider."
+"This provider uses the Cover Art Archive cover image assigned to the release "
+"group. This is usually the image that best describes the release group as a "
+"whole or the image with the best visual quality, but is not necessarily the "
+"exact cover of the release you are tagging. This provider is a good choice "
+"if you care more about visual quality then having an exact representation of "
+"your release. It is also a good fallback for the Cover Art Archive provider."
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:29
@@ -73,10 +71,10 @@ msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:36
 msgid ""
-"This relationship type is now deprecated in MusicBrainz, and is no longer"
-" used.    See `Cover art whitelist "
-"<https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_"
-" in the Style Guide for more information."
+"This relationship type is now deprecated in MusicBrainz, and is no longer "
+"used.    See `Cover art whitelist <https://wiki.musicbrainz.org/History:"
+"Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide for more "
+"information."
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:40
@@ -85,46 +83,38 @@ msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:42
 msgid ""
-"Load cover art from local files. The file names to load can be configured"
-" in the :ref:`ref-local-files` provider options."
+"Load cover art from local files. The file names to load can be configured in "
+"the :ref:`ref-local-files` provider options."
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:44
 msgid ""
-"In addition to the built-in cover art providers described above, "
-"additional cover art providers can be installed as `plugins "
-"<https://picard.musicbrainz.org/plugins/>`_."
+"In addition to the built-in cover art providers described above, additional "
+"cover art providers can be installed as `plugins <https://picard.musicbrainz."
+"org/plugins/>`_."
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:47
 msgid ""
-"**Amazon**: Amazon often has cover art when other sites don't, however "
-"while this art is almost always for the correct Artist and Album, it may "
-"not be the absolute correct cover art for the specific Release with which"
-" you have tagged your music. *Note: The Amazon cover art provider was "
-"built-in in Picard 2.1.3 and earlier versions. For later versions it "
-"needs to be installed as a separate plugin.*"
+"**Amazon**: Amazon often has cover art when other sites don't, however while "
+"this art is almost always for the correct Artist and Album, it may not be "
+"the absolute correct cover art for the specific Release with which you have "
+"tagged your music. *Note: The Amazon cover art provider was built-in in "
+"Picard 2.1.3 and earlier versions. For later versions it needs to be "
+"installed as a separate plugin.*"
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:52
 msgid ""
-"**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, "
-"which focuses on cover art with high visual quality. This provider "
-"provides cover art representative for the release group and not the "
-"individual release."
+"**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
+"focuses on cover art with high visual quality. This provider provides cover "
+"art representative for the release group and not the individual release."
 msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:55
 msgid ""
-"**TheAudioDB**: Uses cover art from `TheAudioDB "
-"<https://www.theaudiodb.com/>`_, which focuses on cover art with high "
-"visual quality. This provider provides cover art representative for the "
-"release group and not the individual release."
+"**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
+">`_, which focuses on cover art with high visual quality. This provider "
+"provides cover art representative for the release group and not the "
+"individual release."
 msgstr ""
-
-#~ msgid "**Cover Art Archive**"
-#~ msgstr ""
-
-#~ msgid "**CAA Release Group**"
-#~ msgstr ""
-
