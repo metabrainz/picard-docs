@@ -11,12 +11,12 @@ msgstr ""
 "POT-Creation-Date: 2023-04-10 13:40-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language: nl\n"
 "Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_filerenaming_editor.rst:6
@@ -26,9 +26,8 @@ msgstr ""
 #: ../../config/options_filerenaming_editor.rst:8
 msgid ""
 "The file naming script editor is used to manage the file naming scripts "
-"available for use by Picard. Each script has a title that will show up in"
-" the script selection box, and all listed scripts can be edited by the "
-"user."
+"available for use by Picard. Each script has a title that will show up in "
+"the script selection box, and all listed scripts can be edited by the user."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:15
@@ -41,9 +40,9 @@ msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:19
 msgid ""
-"This option allows the user to select the file naming script to use from "
-"the list of scripts available. The selected script will show up in the "
-"editing section, where it can be modified if required."
+"This option allows the user to select the file naming script to use from the "
+"list of scripts available. The selected script will show up in the editing "
+"section, where it can be modified if required."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:22
@@ -52,8 +51,8 @@ msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:24
 msgid ""
-"The title assigned to the currently selected script. This can be modified"
-" if required."
+"The title assigned to the currently selected script. This can be modified if "
+"required."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:26
@@ -64,53 +63,52 @@ msgstr ""
 msgid ""
 "Below the title is an edit box section containing the :index:`formatting "
 "string <scripts; file naming>` of the selected script. This tells Picard "
-"what the new name of the file and its containing directories should be in"
-" terms of various metadata values. The formatting string is generally "
-"referred to as a \"file naming script\", and is in :doc:`Picard's "
-"scripting language </extending/scripting>`."
+"what the new name of the file and its containing directories should be in "
+"terms of various metadata values. The formatting string is generally "
+"referred to as a \"file naming script\", and is in :doc:`Picard's scripting "
+"language </extending/scripting>`."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:33
 msgid ""
 "The script editor automatically highlights the elements of the script, "
-"including :doc:`function names </functions/list_by_type>` and :doc:`tag "
-"and variable names </variables/variables>`. Hovering your mouse pointer "
-"over one of the highlighted entries will display help information about "
-"the entry if available."
+"including :doc:`function names </functions/list_by_type>` and :doc:`tag and "
+"variable names </variables/variables>`. Hovering your mouse pointer over one "
+"of the highlighted entries will display help information about the entry if "
+"available."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:38
 msgid ""
-"Unicode characters can be entered into the script using the format "
-"``\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode "
-"character.  It is not recommended to include unicode characters in the "
-"directory or filename."
+"Unicode characters can be entered into the script using the format ``"
+"\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode character.  "
+"It is not recommended to include unicode characters in the directory or "
+"filename."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:41
 msgid ""
 "The use of a '/' in the formatting string separates the output directory "
-"from the file name. The formatting string is allowed to contain any "
-"number of '/' characters. Everything before the last '/' is the directory"
-" location, and everything after the last '/' becomes the file's name."
+"from the file name. The formatting string is allowed to contain any number "
+"of '/' characters. Everything before the last '/' is the directory location, "
+"and everything after the last '/' becomes the file's name."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:45
 msgid ""
-"Each file naming script can vary from a simple one-line script such as "
-"``%album%/%title%`` to a very complex script using different file naming "
-"formats based on different criteria. In all cases, the files will be "
-"saved using the text output by the script."
+"Each file naming script can vary from a simple one-line script such as ``"
+"%album%/%title%`` to a very complex script using different file naming "
+"formats based on different criteria. In all cases, the files will be saved "
+"using the text output by the script."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:49
 msgid ""
-"Scripts are often discussed in the `MetaBrainz Community Forum "
-"<https://community.metabrainz.org/>`_, and there is a thread specific to "
-"`file naming and script snippets <https://community.metabrainz.org/t"
-"/repository-for-neat-file-name-string-patterns-and-tagger-script-"
-"snippets/2786/>`_. There is also a tutorial on "
-":doc:`/tutorials/naming_script` available."
+"Scripts are often discussed in the `MetaBrainz Community Forum <https://"
+"community.metabrainz.org/>`_, and there is a thread specific to `file naming "
+"and script snippets <https://community.metabrainz.org/t/repository-for-neat-"
+"file-name-string-patterns-and-tagger-script-snippets/2786/>`_. There is also "
+"a tutorial on :doc:`/tutorials/naming_script` available."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:56
@@ -125,12 +123,12 @@ msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:60
 msgid ""
-"Below the file naming script is a section showing examples of the output "
-"of the script in two columns: Before and After.  If you select files from"
-" the Cluster pane or Album pane prior to opening the Options screen, up "
-"to 10 files will be randomly chosen from your selection as file naming "
-"examples.  If you have not selected any files, then some default examples"
-" will be provided."
+"Below the file naming script is a section showing examples of the output of "
+"the script in two columns: Before and After.  If you select files from the "
+"Cluster pane or Album pane prior to opening the Options screen, up to 10 "
+"files will be randomly chosen from your selection as file naming examples.  "
+"If you have not selected any files, then some default examples will be "
+"provided."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:65
@@ -140,32 +138,31 @@ msgstr ""
 #: ../../config/options_filerenaming_editor.rst:67
 msgid ""
 "At the top of the screen is a menu bar that provides script management "
-"functions as well as display settings options. The display settings "
-"include:"
+"functions as well as display settings options. The display settings include:"
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:70
 msgid ""
-"Word wrap script - This will toggle word wrap on and off in the script "
-"edit box."
+"Word wrap script - This will toggle word wrap on and off in the script edit "
+"box."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:71
 msgid ""
-"Show help tooltips - This will determine whether or not the information "
-"is displayed when hovering over a highlighted item."
+"Show help tooltips - This will determine whether or not the information is "
+"displayed when hovering over a highlighted item."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:72
 msgid ""
-"Show documentation - This will toggle displaying the scripting "
-"documentation in a sidebar on the screen."
+"Show documentation - This will toggle displaying the scripting documentation "
+"in a sidebar on the screen."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:74
 msgid ""
-"There is also an option to update the randomly selected example files "
-"from your selected files list."
+"There is also an option to update the randomly selected example files from "
+"your selected files list."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:76
@@ -174,8 +171,8 @@ msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:78
 msgid ""
-"Import a new script from a file, either as a plain-text script or a "
-"Picard Naming Script Package."
+"Import a new script from a file, either as a plain-text script or a Picard "
+"Naming Script Package."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:79
@@ -186,8 +183,8 @@ msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:80
 msgid ""
-"Add a new (default) script.  This can be a blank script or one of the "
-"basic system preset scripts provided by Picard."
+"Add a new (default) script.  This can be a blank script or one of the basic "
+"system preset scripts provided by Picard."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:81
@@ -203,7 +200,8 @@ msgid "Reset all scripts, also available via the :guilabel:`Reset` button."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:84
-msgid "Save all changes, also available via the :guilabel:`Make It So!` button."
+msgid ""
+"Save all changes, also available via the :guilabel:`Make It So!` button."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:85
@@ -218,119 +216,16 @@ msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:97
 msgid ""
-"There is also an option to view/edit the metadata details for the current"
-" script. These details include such things as title, author, version, "
+"There is also an option to view/edit the metadata details for the current "
+"script. These details include such things as title, author, version, "
 "license, description, and date and time of the last update. It is "
 "recommended that the description include things such as any required "
-"plugins, settings, or tagging scripts.  This can also be triggered by "
-"double clicking the script title text box."
+"plugins, settings, or tagging scripts.  This can also be triggered by double "
+"clicking the script title text box."
 msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:102
 msgid ""
-"This information is saved in the Picard Naming Script Package file, and "
-"is included when a script package file is imported."
+"This information is saved in the Picard Naming Script Package file, and is "
+"included when a script package file is imported."
 msgstr ""
-
-#~ msgid "Add a new (empty) script."
-#~ msgstr ""
-
-#~ msgid "Save changes to the current script."
-#~ msgstr ""
-
-#~ msgid "Revert the current script to the last time it was saved."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "There is also an option to edit"
-#~ " the metadata details for the current"
-#~ " script. These details include such "
-#~ "things as title, author, version, "
-#~ "license, description, and date and time"
-#~ " of the last update. It is "
-#~ "recommended that the description include "
-#~ "things such as any required plugins, "
-#~ "settings, or tagging scripts."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Scripts are often discussed in the "
-#~ "`MetaBrainz Community Forum "
-#~ "<https://community.metabrainz.org/>`_, and there is"
-#~ " a thread specific to `file naming"
-#~ " and script snippets "
-#~ "<https://community.metabrainz.org/t/repository-for-"
-#~ "neat-file-name-string-patterns-and-"
-#~ "tagger-script-snippets/2786/>`_."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Below the title is an edit box "
-#~ "section containing the :index:`formatting "
-#~ "string <scripts; file naming>` of the"
-#~ " selected script. This tells Picard "
-#~ "what the new name of the file "
-#~ "and its containing directories should be"
-#~ " in terms of various metadata values."
-#~ " The formatting string is generally "
-#~ "referred to as a \"file naming "
-#~ "script\", and is in :doc:`Picard's "
-#~ "scripting language <../extending/scripting>`."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The script editor automatically highlights "
-#~ "the elements of the script, including"
-#~ " :doc:`function names <../functions/list_by_type>` "
-#~ "and :doc:`tag and variable names "
-#~ "<../variables/variables>`. Hovering your mouse "
-#~ "pointer over one of the highlighted "
-#~ "entries will display help information "
-#~ "about the entry if available."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The file naming script editor is "
-#~ "used to manage the file naming "
-#~ "scripts available for use by Picard. "
-#~ "Each script has a title that will"
-#~ " show up in the script selection "
-#~ "box.  There are two types of "
-#~ "scripts available:"
-#~ msgstr ""
-
-#~ msgid "Preset Scripts - These are basic default scripts provided by Picard."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "User-Defined Scripts - These are "
-#~ "scripts that have been defined or "
-#~ "customized by the user."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Preset scripts cannot be modified, but"
-#~ " you can make a copy of the "
-#~ "script and the copy can be edited."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This option allows the user to "
-#~ "select the file naming script to "
-#~ "use from the list of scripts "
-#~ "available. The selected script will show"
-#~ " up in the editing section, where "
-#~ "it can be modified if it is "
-#~ "a user-defined script."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The title assigned to the currently "
-#~ "selected script. This can be modified"
-#~ " if the script is a user-"
-#~ "defined script."
-#~ msgstr ""
-
-#~ msgid "Add a new (default) script."
-#~ msgstr ""
-
