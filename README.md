@@ -23,7 +23,7 @@ documentation further will be most appreciated - and even if you cannot improve 
 if you can create or maintain translations into other languages, that would be of great benefit.
 
 If you notice an error in the documentation or have additional or updated material to contribute,
-please create a [ticket](https://tickets.metabrainz.org/issues/?filter=12025) under the Picard project (Documentation component).
+please create a [ticket](https://tickets.metabrainz.org/issues/?jql=project%20%3D%20PICARD%20AND%20component%20%3D%20Documentation%20AND%20status%20not%20in%20(Cancelled%2C%20Closed)%20ORDER%20BY%20status%20ASC%2C%20resolution%20DESC) under the Picard project (Documentation component).
 [Pull Requests](https://github.com/metabrainz/picard-docs/pulls) to address outstanding issues are also
 appreciated.  Please see [CONTRIBUTING.md](https://github.com/metabrainz/picard-docs/blob/master/.github/CONTRIBUTING.md)
 for more information and additional ways to contribute.
