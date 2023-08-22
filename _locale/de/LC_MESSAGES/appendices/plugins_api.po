@@ -11,18 +11,18 @@ msgstr ""
 "POT-Creation-Date: 2023-04-10 13:40-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language: de\n"
 "Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../appendices/plugins_api.rst:4
 msgid ""
-":index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API "
-"<pair: plugins; api>`"
+":index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API <pair: "
+"plugins; api>`"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:7
@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:9
 msgid ""
-"Each plugin must provide some metadata as variables. Those variables "
-"should be placed at the top of the file."
+"Each plugin must provide some metadata as variables. Those variables should "
+"be placed at the top of the file."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:29
@@ -46,52 +46,49 @@ msgstr ""
 #: ../../appendices/plugins_api.rst:33
 msgid ""
 "**PLUGIN_DESCRIPTION** should be as simple as possible, while still "
-"describing the main function. If your plugin targets Picard 2.7 or later "
-"you can use `Markdown <https://daringfireball.net/projects/markdown/>`_ "
-"syntax to format the text.  If your plugin targets earlier versions you "
-"can instead use simple HTML formatting. Please restrict the usage of HTML"
-" to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) "
-"and lists (``<ul>``, ``<ol>``)."
+"describing the main function. If your plugin targets Picard 2.7 or later you "
+"can use `Markdown <https://daringfireball.net/projects/markdown/>`_ syntax "
+"to format the text.  If your plugin targets earlier versions you can instead "
+"use simple HTML formatting. Please restrict the usage of HTML to basic text "
+"formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists "
+"(``<ul>``, ``<ol>``)."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:39
 msgid ""
 "**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin "
-"versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\")."
-" It is recommended that you use `Semantic Versioning "
-"<https://semver.org/>`_."
+"versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It "
+"is recommended that you use `Semantic Versioning <https://semver.org/>`_."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:42
 msgid ""
-"**PLUGIN_API_VERSIONS** should be set to the versions of Picard this "
-"plugin to run with. New Picard versions will usually support older plugin"
-" API versions, but on breaking changes support for older plugin versions "
-"can be dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and "
-"\"2.2\"."
+"**PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin "
+"to run with. New Picard versions will usually support older plugin API "
+"versions, but on breaking changes support for older plugin versions can be "
+"dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:46
 msgid ""
 "**PLUGIN_LICENSE** should be set with the license name of the plugin. If "
-"possible use one of the license names from the `SPDX License List "
-"<https://spdx.org/licenses/>`_, but you are welcomed to use another "
-"license if the one you chose is not available in the list."
+"possible use one of the license names from the `SPDX License List <https://"
+"spdx.org/licenses/>`_, but you are welcomed to use another license if the "
+"one you chose is not available in the list."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:50
 msgid ""
-"**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full "
-"license text."
+"**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license "
+"text."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:52
 msgid ""
 "**PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the "
 "documentation for the plugin.  This variable is optional and may be "
-"omitted.  If a URL is provided, it will be shown as a clickable link in "
-"the description displayed for the plugin in the Plugins option settings "
-"screen."
+"omitted.  If a URL is provided, it will be shown as a clickable link in the "
+"description displayed for the plugin in the Plugins option settings screen."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:58
@@ -100,9 +97,9 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:60
 msgid ""
-"MusicBrainz metadata can be post-processed at two levels, album and "
-"track. The types of the arguments passed to the processor functions in "
-"the following examples are as follows:"
+"MusicBrainz metadata can be post-processed at two levels, album and track. "
+"The types of the arguments passed to the processor functions in the "
+"following examples are as follows:"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:63
@@ -114,7 +111,8 @@ msgid "**metadata**: ``picard.metadata.Metadata``"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:65
-msgid "**release**: ``dict`` with release data from MusicBrainz JSON web service"
+msgid ""
+"**release**: ``dict`` with release data from MusicBrainz JSON web service"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:66
@@ -135,8 +133,8 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:111
 msgid ""
-"Plugins can register themselves to listen for different events. Currently"
-" the following event hooks are available:"
+"Plugins can register themselves to listen for different events. Currently "
+"the following event hooks are available:"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:114
@@ -145,8 +143,8 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:116
 msgid ""
-"This hook is called after a file has been loaded into Picard. This could "
-"for example be used to load additional data for a file. Usage:"
+"This hook is called after a file has been loaded into Picard. This could for "
+"example be used to load additional data for a file. Usage:"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:130
@@ -156,8 +154,8 @@ msgstr ""
 #: ../../appendices/plugins_api.rst:132
 msgid ""
 "This hook is called after a file has been saved. This can for example be "
-"used to run additional post-processing on the file or write extra data. "
-"Note that the file's metadata is already the newly saved metadata. Usage:"
+"used to run additional post-processing on the file or write extra data. Note "
+"that the file's metadata is already the newly saved metadata. Usage:"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:146
@@ -176,8 +174,8 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:163
 msgid ""
-"This hook is called after a file has been removed from a track (on the "
-"right-hand pane of Picard)."
+"This hook is called after a file has been removed from a track (on the right-"
+"hand pane of Picard)."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:176
@@ -198,10 +196,10 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:198
 msgid ""
-"Plugins can extend Picard with support for additional file formats. See "
-"the existing `file format implementations "
-"<https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for "
-"details on how to implement the ``_load`` and ``_save`` methods. Example:"
+"Plugins can extend Picard with support for additional file formats. See the "
+"existing `file format implementations <https://github.com/metabrainz/picard/"
+"tree/master/picard/formats>`_ for details on how to implement the ``_load`` "
+"and ``_save`` methods. Example:"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:236
@@ -211,11 +209,10 @@ msgstr ""
 #: ../../appendices/plugins_api.rst:238
 msgid ""
 "To define new tagger script functions use "
-"``register_script_function(function, name=None)`` from the "
-"``picard.script`` module. ``parser`` is an instance of "
-"``picard.script.ScriptParser``, and the rest of the arguments passed to "
-"it are the arguments from the function call in the tagger script. "
-"Example:"
+"``register_script_function(function, name=None)`` from the ``picard.script`` "
+"module. ``parser`` is an instance of ``picard.script.ScriptParser``, and the "
+"rest of the arguments passed to it are the arguments from the function call "
+"in the tagger script. Example:"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:260
@@ -230,8 +227,8 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:263
 msgid ""
-"**check_argcount**: If this is **False** the number of arguments passed "
-"to the function will not be verified."
+"**check_argcount**: If this is **False** the number of arguments passed to "
+"the function will not be verified."
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:265
@@ -244,20 +241,13 @@ msgstr ""
 
 #: ../../appendices/plugins_api.rst:271
 msgid ""
-"Right-click context menu actions can be added to albums, tracks and files"
-" in \"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent "
-"folder of Clusters). Example:"
+"Right-click context menu actions can be added to albums, tracks and files in "
+"\"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of "
+"Clusters). Example:"
 msgstr ""
 
 #: ../../appendices/plugins_api.rst:300
 msgid ""
-"Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", "
-"\"*file*\", \"*cluster*\" or \"*clusterlist*\"."
+"Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", "
+"\"*cluster*\" or \"*clusterlist*\"."
 msgstr ""
-
-#~ msgid ""
-#~ "**PLUGIN_DESCRIPTION** should be as simple "
-#~ "as possible, while still describing the"
-#~ " main function."
-#~ msgstr ""
-
