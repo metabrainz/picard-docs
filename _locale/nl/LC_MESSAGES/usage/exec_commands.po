@@ -13,22 +13,23 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/exec_commands.rst:4
-msgid ":index:`Executable Commands <commands; executable, executable commands>`"
+msgid ""
+":index:`Executable Commands <commands; executable, executable commands>`"
 msgstr ""
 
 #: ../../usage/exec_commands.rst:6
 msgid ""
-"Picard can accept commands for processing by specifying them on the "
-"command line using the ``-e`` option or loading them from a text file. "
-"Commands are case-insensitive, and are processed sequentially in the "
-"order that they are received. The executable commands that Picard "
-"recognizes are:"
+"Picard can accept commands for processing by specifying them on the command "
+"line using the ``-e`` option or loading them from a text file. Commands are "
+"case-insensitive, and are processed sequentially in the order that they are "
+"received. The executable commands that Picard recognizes are:"
 msgstr ""
 
 #: ../../usage/exec_commands.rst:12
@@ -55,8 +56,8 @@ msgstr ""
 #: ../../usage/exec_commands.rst:17
 msgid ""
 "Clear all entries from Picard's log.  This is the equivalent of clicking "
-"the :guilabel:`Clear Log` button from the log viewing screen opened using"
-" the :menuselection:`\"Help --> View Error/Debug Log\"` command."
+"the :guilabel:`Clear Log` button from the log viewing screen opened using "
+"the :menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:22
@@ -69,8 +70,8 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:27
 msgid ""
-"Cluster all files in the cluster pane.  This is the equivalent of using "
-"the :menuselection:`\"Tools --> Cluster\"` command."
+"Cluster all files in the cluster pane.  This is the equivalent of using the :"
+"menuselection:`\"Tools --> Cluster\"` command."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:31
@@ -83,9 +84,9 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:36
 msgid ""
-"Calculate acoustic fingerprints for all (matched) files in the album "
-"pane. This is the equivalent of using the :menuselection:`\"Tools --> "
-"Generate AcoustID Fingerprints\"` command."
+"Calculate acoustic fingerprints for all (matched) files in the album pane. "
+"This is the equivalent of using the :menuselection:`\"Tools --> Generate "
+"AcoustID Fingerprints\"` command."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:41
@@ -99,20 +100,20 @@ msgstr ""
 #: ../../usage/exec_commands.rst:46
 msgid ""
 "Load commands from a file.  The file path can be either an absolute or "
-"relative path to a text file containing the commands to be executed. Each"
-" command to be processed must be on a separate line along with its "
-"arguments (if applicable). Blank lines and lines beginning with an "
-"octothorpe (#) are ignored. Command files can include other command files"
-" by specifying them with another ``FROM_FILE`` command. Circular "
-"references (by including a command file that is currently being "
-"processed) are ignored and will be logged as a warning."
+"relative path to a text file containing the commands to be executed. Each "
+"command to be processed must be on a separate line along with its arguments "
+"(if applicable). Blank lines and lines beginning with an octothorpe (#) are "
+"ignored. Command files can include other command files by specifying them "
+"with another ``FROM_FILE`` command. Circular references (by including a "
+"command file that is currently being processed) are ignored and will be "
+"logged as a warning."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:54
 msgid ""
 "For example, you may have a file named ``commands.txt`` containing the "
-"standard commands that you want to use when processing each directory, "
-"such as:"
+"standard commands that you want to use when processing each directory, such "
+"as:"
 msgstr ""
 
 #: ../../usage/exec_commands.rst:87
@@ -129,25 +130,25 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:100
 msgid ""
-"Load one or more files/directories/MBIDs/URLs to Picard. This is similar "
-"to including the file, directory path, URL or MBID on the command line."
+"Load one or more files/directories/MBIDs/URLs to Picard. This is similar to "
+"including the file, directory path, URL or MBID on the command line."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:103
 msgid ""
-"Files and directories are specified including the path (either absolute "
-"or relative) to the file or directory, and may include drive specifiers. "
-"They can also be specified using the ``file://`` prefix. URLs are "
-"specified by using either the ``http://`` or ``https://`` prefix. MBIDs "
-"are specified in the format ``mbid://<entity_type>/<mbid>`` where "
-"``<entity_type>`` is one of \"release\", \"artist\" or \"track\" and "
-"``<mbid>`` is the MusicBrainz Identifier of the entity."
+"Files and directories are specified including the path (either absolute or "
+"relative) to the file or directory, and may include drive specifiers. They "
+"can also be specified using the ``file://`` prefix. URLs are specified by "
+"using either the ``http://`` or ``https://`` prefix. MBIDs are specified in "
+"the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of "
+"\"release\", \"artist\" or \"track\" and ``<mbid>`` is the MusicBrainz "
+"Identifier of the entity."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:110
 msgid ""
-"If a specified item contains a space, it must be enclosed in quotes such "
-"as ``\"/home/user/music/my song.mp3\"``."
+"If a specified item contains a space, it must be enclosed in quotes such as "
+"``\"/home/user/music/my song.mp3\"``."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:114
@@ -161,14 +162,14 @@ msgstr ""
 #: ../../usage/exec_commands.rst:119
 msgid ""
 "Lookup files in the clustering pane. Options are clustered files, "
-"unclustered files or all files. If not specified, the command defaults to"
-" all files."
+"unclustered files or all files. If not specified, the command defaults to "
+"all files."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:122
 msgid ""
-"This is the equivalent of using the :menuselection:`\"Tools --> Lookup\"`"
-" command."
+"This is the equivalent of using the :menuselection:`\"Tools --> Lookup\"` "
+"command."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:125
@@ -188,8 +189,8 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:133
 msgid ""
-"This is the equivalent of using the :menuselection:`\"Tools --> Lookup "
-"CD...\"` command."
+"This is the equivalent of using the :menuselection:`\"Tools --> Lookup CD..."
+"\"` command."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:136
@@ -201,7 +202,8 @@ msgid "Usage: **PAUSE <number of seconds to pause>**"
 msgstr ""
 
 #: ../../usage/exec_commands.rst:141
-msgid "Pause executable command processing for the specified number of seconds."
+msgid ""
+"Pause executable command processing for the specified number of seconds."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:144
@@ -223,10 +225,9 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:154
 msgid ""
-"Once a ``QUIT`` command has been queued, Picard will not queue any "
-"further executable commands. If the user cancels the ``QUIT`` from the "
-"unsaved files check dialog, the system will allow more commands to be "
-"queued."
+"Once a ``QUIT`` command has been queued, Picard will not queue any further "
+"executable commands. If the user cancels the ``QUIT`` from the unsaved files "
+"check dialog, the system will allow more commands to be queued."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:159
@@ -321,8 +322,8 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:220
 msgid ""
-"Scans all files in the cluster pane.  This is the equivalent of using the"
-" :menuselection:`\"Tools --> Scan\"` command."
+"Scans all files in the cluster pane.  This is the equivalent of using the :"
+"menuselection:`\"Tools --> Scan\"` command."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:224
@@ -348,8 +349,8 @@ msgstr ""
 #: ../../usage/exec_commands.rst:237
 msgid ""
 "Submits outstanding acoustic fingerprints for all (matched) files in the "
-"album pane. This is the equivalent of using the :menuselection:`\"Tools "
-"--> Submit AcoustIDs\"` command."
+"album pane. This is the equivalent of using the :menuselection:`\"Tools --> "
+"Submit AcoustIDs\"` command."
 msgstr ""
 
 #: ../../usage/exec_commands.rst:242
@@ -362,45 +363,7 @@ msgstr ""
 
 #: ../../usage/exec_commands.rst:247
 msgid ""
-"Writes the Picard logs to the specified output file. This is the "
-"equivalent of using the :guilabel:`Save As...` button from the log "
-"viewing screen opened using the :menuselection:`\"Help --> View "
-"Error/Debug Log\"` command."
+"Writes the Picard logs to the specified output file. This is the equivalent "
+"of using the :guilabel:`Save As...` button from the log viewing screen "
+"opened using the :menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
-
-#~ msgid "Clear the Picard logs."
-#~ msgstr ""
-
-#~ msgid "Cluster all files in the cluster pane."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Calculate acoustic fingerprints for all "
-#~ "(matched) files in the album pane."
-#~ msgstr ""
-
-#~ msgid "Usage: **QUIT**"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Exits the running instance of Picard."
-#~ " Once a ``QUIT`` command has been "
-#~ "queued, Picard will not queue any "
-#~ "further executable commands."
-#~ msgstr ""
-
-#~ msgid "Scans all files in the cluster pane."
-#~ msgstr ""
-
-#~ msgid "Make the running instance the currently active window."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Submits outstanding acoustic fingerprints for"
-#~ " all (matched) files in the album "
-#~ "pane."
-#~ msgstr ""
-
-#~ msgid "Writes the Picard logs to the specified output file."
-#~ msgstr ""
-
