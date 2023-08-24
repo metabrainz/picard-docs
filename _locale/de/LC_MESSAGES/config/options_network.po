@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-15 11:21-0600\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
 "PO-Revision-Date: 2021-08-22 18:11+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
+"Language-Team: German <https://translate.uploadedlobster.com/projects/picard-"
+"docs/configoptions_network/de/>\n"
 "Language: de\n"
-"Language-Team: German <https://translate.uploadedlobster.com/projects"
-"/picard-docs/configoptions_network/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_network.rst:4
@@ -29,8 +29,8 @@ msgstr "**Web-Proxy**"
 
 #: ../../config/options_network.rst:11
 msgid ""
-"If you need a proxy to make an outside network connection you may specify"
-" one here.  You can choose between HTTP and SOCKS proxy.  The required "
+"If you need a proxy to make an outside network connection you may specify "
+"one here.  You can choose between HTTP and SOCKS proxy.  The required "
 "settings are **Server Address** and **Port**. If the proxy requires "
 "authentication also enter **Username** and **Password**."
 msgstr ""
@@ -41,8 +41,8 @@ msgstr "**Anfrage-Timeout in Sekunden**"
 
 #: ../../config/options_network.rst:17
 msgid ""
-"By default Picard will abort running network requests after 30 seconds of"
-" inactivity.  If needed you can change the timeout period here."
+"By default Picard will abort running network requests after 30 seconds of "
+"inactivity.  If needed you can change the timeout period here."
 msgstr ""
 
 #: ../../config/options_network.rst:20
@@ -57,10 +57,9 @@ msgstr "**Browser-Integration**"
 msgid ""
 "The browser integration allows you to load releases and recordings into "
 "Picard directly from the MusicBrainz website. Once you have opened "
-"musicbrainz.org in your browser from Picard, the website will show the "
-"green tagger button |lookup_tagger| next to releases and recordings.  "
-"Clicking on this button will load the corresponding release or recording "
-"into Picard."
+"musicbrainz.org in your browser from Picard, the website will show the green "
+"tagger button |lookup_tagger| next to releases and recordings.  Clicking on "
+"this button will load the corresponding release or recording into Picard."
 msgstr ""
 
 #: ../../config/options_network.rst:30
@@ -70,8 +69,8 @@ msgstr "**Standard-Verbindungsport**"
 #: ../../config/options_network.rst:32
 msgid ""
 "This identifies the default port Picard will listen on for the browser "
-"integration. If the port is not available Picard will try to increase the"
-" port number by one until it finds a free port."
+"integration. If the port is not available Picard will try to increase the "
+"port number by one until it finds a free port."
 msgstr ""
 
 #: ../../config/options_network.rst:35
@@ -80,13 +79,12 @@ msgstr "**Nur auf localhost Verbindungen annehmen**"
 
 #: ../../config/options_network.rst:37
 msgid ""
-"By default Picard will limit access to the browser integration port to "
-"your local machine. Deactivating this option will expose the port on your"
-" network, allowing you to request Picard to load a specific release or "
-"recording via the network. For example, this would be used for the "
-"`Picard Barcode Scanner "
-"<https://play.google.com/store/apps/details?id=org.musicbrainz.picard.barcodescanner>`_"
-" Android app."
+"By default Picard will limit access to the browser integration port to your "
+"local machine. Deactivating this option will expose the port on your "
+"network, allowing you to request Picard to load a specific release or "
+"recording via the network. For example, this would be used for the `Picard "
+"Barcode Scanner <https://play.google.com/store/apps/details?id=org."
+"musicbrainz.picard.barcodescanner>`_ Android app."
 msgstr ""
 
 #: ../../config/options_network.rst:45
@@ -95,4 +93,3 @@ msgid ""
 "networks you trust. Exposing application ports via the network can open "
 "potential security holes on your system."
 msgstr ""
-
