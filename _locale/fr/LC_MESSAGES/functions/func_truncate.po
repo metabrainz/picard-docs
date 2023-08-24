@@ -8,58 +8,58 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 11:40-0600\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
 "PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/functionsfunc_truncate/fr/>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
+"docs/functionsfunc_truncate/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: ../../functions/func_truncate.rst:4
+#: ../../functions/func_truncate.rst:6
 msgid "$truncate"
 msgstr "$truncate"
 
-#: ../../functions/func_truncate.rst:6
+#: ../../functions/func_truncate.rst:8
 msgid "Usage: **$truncate(text,length)**"
 msgstr "Utilisation: **$truncate(texte,longueur)**"
 
-#: ../../functions/func_truncate.rst:7
+#: ../../functions/func_truncate.rst:9
 msgid "Category: text"
 msgstr "Catégorie : texte"
 
-#: ../../functions/func_truncate.rst:8
+#: ../../functions/func_truncate.rst:10
 msgid "Implemented: Picard 0.12"
 msgstr "Mis en œuvre: Picard 0.12"
 
-#: ../../functions/func_truncate.rst:10
+#: ../../functions/func_truncate.rst:12
 msgid "**Description:**"
 msgstr "**Description:**"
 
-#: ../../functions/func_truncate.rst:12
+#: ../../functions/func_truncate.rst:14
 msgid ""
 "Truncate ``text`` to ``length``.  If ``length`` is less than 0, then the "
-"value used is the number of characters in ``text`` plus ``length`` (e."
-"g.: ``$truncate(abcd,-1)`` is the same as ``$truncate(abcd,3)``).  If "
-"``length`` is missing or a negative number greater than the number of "
-"characters in ``text``, the function will return an empty string."
+"value used is the number of characters in ``text`` plus ``length`` (e.g.: ``"
+"$truncate(abcd,-1)`` is the same as ``$truncate(abcd,3)``).  If ``length`` "
+"is missing or a negative number greater than the number of characters in "
+"``text``, the function will return an empty string."
 msgstr ""
-"Tronquez ``texte`` en ``longueur``. Si ``longueur`` est inférieur à 0, "
-"alors la valeur utilisée est le nombre de caractères dans ``texte`` plus "
+"Tronquez ``texte`` en ``longueur``. Si ``longueur`` est inférieur à 0, alors "
+"la valeur utilisée est le nombre de caractères dans ``texte`` plus "
 "``longueur`` (par exemple: ``$truncate(abcd, -1)`` est le même comme ``"
 "$truncate(abcd,3)``). Si ``longueur`` est manquant ou un nombre négatif "
-"supérieur au nombre de caractères dans ``texte``, la fonction renverra "
-"une chaîne vide."
+"supérieur au nombre de caractères dans ``texte``, la fonction renverra une "
+"chaîne vide."
 
-#: ../../functions/func_truncate.rst:18
+#: ../../functions/func_truncate.rst:20
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_truncate.rst:20
+#: ../../functions/func_truncate.rst:22
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"

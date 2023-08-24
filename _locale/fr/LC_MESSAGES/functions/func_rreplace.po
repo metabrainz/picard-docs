@@ -8,70 +8,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 11:40-0600\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
 "PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/functionsfunc_rreplace/fr/>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
+"docs/functionsfunc_rreplace/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: ../../functions/func_rreplace.rst:4
+#: ../../functions/func_rreplace.rst:6
 msgid "$rreplace"
 msgstr "$rreplace"
 
-#: ../../functions/func_rreplace.rst:6
+#: ../../functions/func_rreplace.rst:8
 msgid "Usage: **$rreplace(text,pattern,replace)**"
 msgstr "Utilisation: **$rreplace(texte,motif,remplacement)**"
 
-#: ../../functions/func_rreplace.rst:7
+#: ../../functions/func_rreplace.rst:9
 msgid "Category: text"
 msgstr "Catégorie : texte"
 
-#: ../../functions/func_rreplace.rst:9
+#: ../../functions/func_rreplace.rst:11
 msgid "**Description:**"
 msgstr "**Description:**"
 
-#: ../../functions/func_rreplace.rst:11
+#: ../../functions/func_rreplace.rst:13
 msgid ""
-"Regular expression replace. This function will replace the matching "
-"group specified by ``pattern`` with ``replace`` in ``text``.  For more "
-"information about regular expressions, please see the `article on "
-"Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
+"Regular expression replace. This function will replace the matching group "
+"specified by ``pattern`` with ``replace`` in ``text``.  For more information "
+"about regular expressions, please see the `article on Wikipedia <https://"
+"wikipedia.org/wiki/Regular_expression>`_."
 msgstr ""
 "Expression régulière remplacer. Cette fonction remplacera le groupe "
-"correspondant spécifié par ``motif`` par ``remplacement`` dans "
-"``texte``. Pour plus d'informations sur les expressions régulières, "
-"veuillez consulter `l'article sur Wikipedia <https://wikipedia.org/wiki/"
-"Regular_expression>`_."
+"correspondant spécifié par ``motif`` par ``remplacement`` dans ``texte``. "
+"Pour plus d'informations sur les expressions régulières, veuillez consulter "
+"`l'article sur Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
 
-#: ../../functions/func_rreplace.rst:17
+#: ../../functions/func_rreplace.rst:19
 msgid ""
-"When entering regular expressions into Picard scripts you have to escape "
-"a backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and "
-"right parentheses \"(\" and \")\" in order to force Picard to not "
-"interpret them as part of the script command.  This is done by inserting "
-"a backslash before the character to be escaped.  For example, the "
-"regular expression ``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^"
-"\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
+"When entering regular expressions into Picard scripts you have to escape a "
+"backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
+"parentheses \"(\" and \")\" in order to force Picard to not interpret them "
+"as part of the script command.  This is done by inserting a backslash before "
+"the character to be escaped.  For example, the regular expression ``^"
+"\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\\\.]*"
+"\\)\\$``."
 msgstr ""
 "Lorsque vous saisissez des expressions régulières dans des scripts Picard, "
-"vous devez échapper la barre oblique inversée \"\\\\\", le signe dollar \"$\""
-", la virgule \",\" et les parenthèses gauche et droite \"(\" et \")\" afin "
+"vous devez échapper la barre oblique inversée \"\\\\\", le signe dollar \"$"
+"\", la virgule \",\" et les parenthèses gauche et droite \"(\" et \")\" afin "
 "de forcer Picard à ne pas les interpréter comme faisant partie de la "
 "commande du script.  Cela se fait en insérant une barre oblique inverse "
-"avant le caractère à échapper.  Par exemple, l'expression régulière ``^\\s"
-"*([0-9,\\.]*)$`` doit être saisie comme ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
+"avant le caractère à échapper.  Par exemple, l'expression régulière ``^"
+"\\s*([0-9,\\.]*)$`` doit être saisie comme ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\"
+"$``."
 
-#: ../../functions/func_rreplace.rst:23
+#: ../../functions/func_rreplace.rst:25
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_rreplace.rst:25
+#: ../../functions/func_rreplace.rst:27
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"

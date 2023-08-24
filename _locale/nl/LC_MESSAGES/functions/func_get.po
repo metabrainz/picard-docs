@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-20 10:44-0700\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
-"Language: nl\n"
 "Language-Team: none\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_get.rst:6
@@ -36,22 +36,20 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_get.rst:13
-#, python-format
 msgid ""
-"Returns the variable ``name`` (equivalent to ``%name%``) or an empty "
-"string if ``name`` has not been set.  If ``name`` is another variable "
-"(e.g. ``%indirect%``) the value of the variable will be used as ``name``."
-"  This allows the retrieval of dynamically named variables."
+"Returns the variable ``name`` (equivalent to ``%name%``) or an empty string "
+"if ``name`` has not been set.  If ``name`` is another variable (e.g. ``"
+"%indirect%``) the value of the variable will be used as ``name``.  This "
+"allows the retrieval of dynamically named variables."
 msgstr ""
 
 #: ../../functions/func_get.rst:20
-#, python-format
 msgid ""
-"Usually you can access the values of a tag by the proper variable name. "
-"For example, if your tag is called \"rerecorded\" you can use "
-"``%rerecorded%``. But the hyphen is not a valid character for a script "
-"variable, so ``%re-recorded%`` gives a syntax error. In cases like this "
-"you need to use ``$get(re-recorded)``."
+"Usually you can access the values of a tag by the proper variable name. For "
+"example, if your tag is called \"rerecorded\" you can use ``%rerecorded%``. "
+"But the hyphen is not a valid character for a script variable, so ``%re-"
+"recorded%`` gives a syntax error. In cases like this you need to use ``"
+"$get(re-recorded)``."
 msgstr ""
 
 #: ../../functions/func_get.rst:25
@@ -61,4 +59,3 @@ msgstr ""
 #: ../../functions/func_get.rst:27
 msgid "The following statements will return the values indicated:"
 msgstr ""
-
