@@ -8,70 +8,68 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 11:40-0600\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
 "PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/functionsfunc_foreach/fr/>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
+"docs/functionsfunc_foreach/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: ../../functions/func_foreach.rst:4
+#: ../../functions/func_foreach.rst:6
 msgid "$foreach"
 msgstr "$foreach"
 
-#: ../../functions/func_foreach.rst:6
+#: ../../functions/func_foreach.rst:8
 msgid "Usage: **$foreach(name,code,separator=\"; \")**"
 msgstr "Utilisation: **$foreach(nom,code,séparateur=\";\")**"
 
-#: ../../functions/func_foreach.rst:7
+#: ../../functions/func_foreach.rst:9
 msgid "Category: loop"
 msgstr "Catégorie: boucle"
 
-#: ../../functions/func_foreach.rst:8
+#: ../../functions/func_foreach.rst:10
 msgid "Implemented: Picard 2.3"
 msgstr "Mis en œuvre: Picard 2.3"
 
-#: ../../functions/func_foreach.rst:10
+#: ../../functions/func_foreach.rst:12
 msgid "**Description:**"
 msgstr "**Description:**"
 
-#: ../../functions/func_foreach.rst:12
+#: ../../functions/func_foreach.rst:14
 msgid ""
 "Iterates over each element found in the multi-value variable ``name``, "
-"executing ``code`` during each iteration. Before each iteration, the "
-"element value is first stored in the variable ``_loop_value`` and the "
-"count is stored in the variable ``_loop_count``. This allows the element "
-"or count value to be accessed within the code script."
+"executing ``code`` during each iteration. Before each iteration, the element "
+"value is first stored in the variable ``_loop_value`` and the count is "
+"stored in the variable ``_loop_count``. This allows the element or count "
+"value to be accessed within the code script."
 msgstr ""
 "Itère sur chaque élément trouvé dans la variable à valeurs multiples "
-"``nom``, exécutant ``code`` à chaque itération. Avant chaque itération, "
-"la valeur de l'élément est d'abord stockée dans la variable "
-"``_loop_value`` et le décompte est stocké dans la variable "
-"``_loop_count``. Cela permet d'accéder à l'élément ou à la valeur de "
-"comptage dans le script de code."
+"``nom``, exécutant ``code`` à chaque itération. Avant chaque itération, la "
+"valeur de l'élément est d'abord stockée dans la variable ``_loop_value`` et "
+"le décompte est stocké dans la variable ``_loop_count``. Cela permet "
+"d'accéder à l'élément ou à la valeur de comptage dans le script de code."
 
-#: ../../functions/func_foreach.rst:17
+#: ../../functions/func_foreach.rst:19
 msgid ""
-"A literal value representing a multi-value can be substituted for "
-"``name``, using the ``separator`` (or a semicolon followed by a space "
-"\"; \" if not passed) to coerce the value into a proper multi-valued "
-"variable."
+"A literal value representing a multi-value can be substituted for ``name``, "
+"using the ``separator`` (or a semicolon followed by a space \"; \" if not "
+"passed) to coerce the value into a proper multi-valued variable."
 msgstr ""
-"Une valeur littérale représentant une valeur multiple peut être "
-"remplacée par ``nom``, en utilisant le ``séparateur`` (ou un point-"
-"virgule suivi d'un espace \"; \" s'il n'est pas passé) pour contraindre "
-"la valeur à une valeur multiple appropriée variable."
+"Une valeur littérale représentant une valeur multiple peut être remplacée "
+"par ``nom``, en utilisant le ``séparateur`` (ou un point-virgule suivi d'un "
+"espace \"; \" s'il n'est pas passé) pour contraindre la valeur à une valeur "
+"multiple appropriée variable."
 
-#: ../../functions/func_foreach.rst:22
+#: ../../functions/func_foreach.rst:24
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_foreach.rst:24
+#: ../../functions/func_foreach.rst:26
 msgid "The following statements will perform the processing indicated:"
 msgstr "Les instructions suivantes effectueront le traitement indiqué:"
