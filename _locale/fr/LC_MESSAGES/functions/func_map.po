@@ -8,88 +8,86 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 15:40-0600\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
 "PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/"
-"picard-docs/functionsfunc_map/fr/>\n"
+"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
+"docs/functionsfunc_map/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.8.1\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: ../../functions/func_map.rst:4
+#: ../../functions/func_map.rst:6
 msgid "$map"
 msgstr "$map"
 
-#: ../../functions/func_map.rst:6
+#: ../../functions/func_map.rst:8
 msgid "Usage: **$map(name,code[,separator])**"
 msgstr "Utilisation: **$map(nom,code[,séparateur])**"
 
-#: ../../functions/func_map.rst:7
+#: ../../functions/func_map.rst:9
 msgid "Category: multi-value"
 msgstr "Catégorie: multi-valeur"
 
-#: ../../functions/func_map.rst:8
+#: ../../functions/func_map.rst:10
 msgid "Implemented: Picard 2.3"
 msgstr "Mis en œuvre: Picard 2.3"
 
-#: ../../functions/func_map.rst:10
+#: ../../functions/func_map.rst:12
 msgid "**Description:**"
 msgstr "**Description:**"
 
-#: ../../functions/func_map.rst:12
+#: ../../functions/func_map.rst:14
 msgid ""
-"Iterates over each element found in the multi-value variable ``name`` "
-"and updates the value of the element to the value returned by ``code``, "
-"returning the updated multi-value variable. A literal value representing "
-"a multi-value can be substituted for ``name``, using the ``separator`` "
-"(or a semicolon followed by a space \"; \" if not passed) to coerce the "
-"value into a proper multi-valued variable."
+"Iterates over each element found in the multi-value variable ``name`` and "
+"updates the value of the element to the value returned by ``code``, "
+"returning the updated multi-value variable. A literal value representing a "
+"multi-value can be substituted for ``name``, using the ``separator`` (or a "
+"semicolon followed by a space \"; \" if not passed) to coerce the value into "
+"a proper multi-valued variable."
 msgstr ""
-"Itère sur chaque élément trouvé dans la variable à valeurs multiples "
-"``nom`` et met à jour la valeur de l'élément à la valeur renvoyée par "
-"``code``, renvoyant la variable à valeurs multiples mise à jour. Une "
-"valeur littérale représentant une valeur multiple peut être remplacée "
-"par ``nom``, en utilisant le ``séparateur`` (ou un point-virgule suivi "
-"d'un espace \"; \" s'il n'est pas passé) pour contraindre la valeur à "
-"une valeur multiple appropriée variable."
+"Itère sur chaque élément trouvé dans la variable à valeurs multiples ``nom`` "
+"et met à jour la valeur de l'élément à la valeur renvoyée par ``code``, "
+"renvoyant la variable à valeurs multiples mise à jour. Une valeur littérale "
+"représentant une valeur multiple peut être remplacée par ``nom``, en "
+"utilisant le ``séparateur`` (ou un point-virgule suivi d'un espace \"; \" "
+"s'il n'est pas passé) pour contraindre la valeur à une valeur multiple "
+"appropriée variable."
 
-#: ../../functions/func_map.rst:18
+#: ../../functions/func_map.rst:20
 msgid ""
 "For each loop, the element value is first stored in the variable "
 "``_loop_value`` and the count is stored in the variable ``_loop_count``. "
-"This allows the element or count value to be accessed within the code "
-"script."
+"This allows the element or count value to be accessed within the code script."
 msgstr ""
 "Pour chaque boucle, la valeur de l'élément est d'abord stockée dans la "
 "variable ``_loop_value`` et le décompte est stocké dans la variable "
 "``_loop_count``. Cela permet d'accéder à l'élément ou à la valeur de "
 "comptage dans le script de code."
 
-#: ../../functions/func_map.rst:22
+#: ../../functions/func_map.rst:24
 msgid "Empty elements are automatically removed from the output."
 msgstr "Les éléments vides sont automatiquement supprimés de la sortie."
 
-#: ../../functions/func_map.rst:26
-#, python-format
+#: ../../functions/func_map.rst:28
 msgid ""
-"You cannot save the ``code`` to a variable and then pass the variable to "
-"the function as ``%code%`` because it will be evaluated when it is "
-"assigned to the variable rather than during the loop."
+"You cannot save the ``code`` to a variable and then pass the variable to the "
+"function as ``%code%`` because it will be evaluated when it is assigned to "
+"the variable rather than during the loop."
 msgstr ""
-"Vous ne pouvez pas enregistrer le ``code`` dans une variable puis passer "
-"la variable à la fonction en tant que ``%code%`` car il sera évalué "
-"lorsqu'il sera affecté à la variable plutôt que pendant la boucle."
+"Vous ne pouvez pas enregistrer le ``code`` dans une variable puis passer la "
+"variable à la fonction en tant que ``%code%`` car il sera évalué lorsqu'il "
+"sera affecté à la variable plutôt que pendant la boucle."
 
-#: ../../functions/func_map.rst:31
+#: ../../functions/func_map.rst:33
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_map.rst:35 ../../functions/func_map.rst:58
+#: ../../functions/func_map.rst:37 ../../functions/func_map.rst:60
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"
 
