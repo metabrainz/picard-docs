@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 10:19-0600\n"
-"PO-Revision-Date: 2023-08-25 09:41+0000\n"
+"PO-Revision-Date: 2023-08-25 10:04+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/appendicestag_mapping/de/>\n"
@@ -616,7 +616,7 @@ msgstr ""
 
 #: ../../appendices/tag_mapping.rst:314
 msgid "`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
-msgstr "`Datum <https://musicbrainz.org/doc/Release_Date>`_"
+msgstr "`Datum <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``date``"
@@ -1847,7 +1847,7 @@ msgstr ""
 
 #: ../../appendices/tag_mapping.rst:1045
 msgid "Release Date :sup:`[10]`"
-msgstr "Datum der Veröffentlichung :sup:`[1]`"
+msgstr "Datum der Veröffentlichung :sup:`[10]`"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``releasedate`` (since Picard 2.9, not filled by default)"
@@ -2458,3 +2458,8 @@ msgid ""
 "Picard 2.9 the separate ``releasedate`` exists for use by scripts and "
 "plugins, but is not filled by default."
 msgstr ""
+"Aus Kompatibilitätsgründen wird der ``date``-Tag mit dem "
+"Veröffentlichungsdatum von MusicBrainz gefüllt. Dies ist die Art und Weise, "
+"wie die meisten Programme diesen Tag interpretieren. Seit Picard 2.9 gibt es "
+"das separate Tag ``releasedate``, das von Skripten und Plugins verwendet "
+"werden kann, aber standardmäßig nicht gefüllt wird."
