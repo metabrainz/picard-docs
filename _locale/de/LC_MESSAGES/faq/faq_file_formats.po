@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-# Philipp Wolfer <ph.wolfer@gmail.com>, 2022.
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-09 11:40-0700\n"
-"PO-Revision-Date: 2022-01-06 08:41+0000\n"
+"PO-Revision-Date: 2023-08-25 09:24+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
-"Language-Team: German <https://translate.uploadedlobster.com/projects/picard-"
-"docs/faqfaq_file_formats/de/>\n"
+"Language-Team: German <https://translations.metabrainz.org/projects/"
+"picard-docs/faqfaq_file_formats/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../faq/faq_file_formats.rst:4
@@ -89,14 +90,12 @@ msgid "Generic Ogg files (.ogg)"
 msgstr "Generische Ogg-Dateien (.ogg)"
 
 #: ../../faq/faq_file_formats.rst:25
-#, fuzzy
 msgid "Ogg FLAC (.ogg, .oga)"
-msgstr "Ogg Theora (.ogg, .oga)"
+msgstr "Ogg FLAC (.ogg, .oga)"
 
 #: ../../faq/faq_file_formats.rst:26
-#, fuzzy
 msgid "Ogg Theora (.ogg, .ogv)"
-msgstr "Ogg Theora (.ogg, .oga)"
+msgstr "Ogg Theora (.ogg, .ogv)"
 
 #: ../../faq/faq_file_formats.rst:27
 msgid "Ogg Opus (.opus)"
@@ -153,7 +152,7 @@ msgstr ""
 
 #: ../../faq/faq_file_formats.rst:51
 msgid "What rippers are supported for looking up from logs?"
-msgstr ""
+msgstr "Welche CD-Ripper werden für die Suche in Protokollen unterstützt?"
 
 #: ../../faq/faq_file_formats.rst:53
 msgid ""
@@ -163,27 +162,33 @@ msgid ""
 "they can be used in place of reading the CD itself.  The supported rippers "
 "include:"
 msgstr ""
+"Ab Version 2.9 unterstützt Picard die Verwendung von Logdateien, die von "
+"gängigen CD-Rippern erzeugt werden, um nach einer Veröffentlichung zu "
+"suchen. Da die Logdateien dieser Ripper genügend Informationen enthalten, um "
+"das Inhaltsverzeichnis der CD zu erstellen, können sie anstelle des Lesens "
+"der CD selbst verwendet werden.  Zu den unterstützten Rippern gehören:"
 
 #: ../../faq/faq_file_formats.rst:57
 msgid "`dBpoweramp <https://dbpoweramp.com/>`_ for macOS and Windows"
-msgstr ""
+msgstr "`dBpoweramp <https://dbpoweramp.com/>`_ für macOS und Windows"
 
 #: ../../faq/faq_file_formats.rst:58
 msgid "`Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows"
-msgstr ""
+msgstr "`Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ für Windows"
 
 #: ../../faq/faq_file_formats.rst:59
 msgid "`fre:ac <https://www.freac.org>`_ for Linux, macOS, Windows and others"
-msgstr ""
+msgstr "`fre:ac <https://www.freac.org>`_ für Linux, macOS, Windows und weitere"
 
 #: ../../faq/faq_file_formats.rst:60
 msgid "`Whipper <https://github.com/whipper-team/whipper>`_ for Linux"
-msgstr ""
+msgstr "`Whipper <https://github.com/whipper-team/whipper>`_ für Linux"
 
 #: ../../faq/faq_file_formats.rst:61
 msgid ""
 "`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS"
 msgstr ""
+"`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ für macOS"
 
 #: ../../faq/faq_file_formats.rst:65
 msgid "Which tags can Picard write to my files?"
@@ -196,30 +201,40 @@ msgid ""
 "picard.musicbrainz.org/docs/mappings/>`_ contains more technical information "
 "on how these are further mapped into each tag format."
 msgstr ""
+"Siehe den Abschnitt :doc:`/variables/variables` für Informationen darüber, "
+"welche MusicBrainz-Felder Picard in Tags schreibt. Der Abschnitt „Picard Tag-"
+"Zuordnung <https://picard.musicbrainz.org/docs/mappings/>“ enthält weitere "
+"technische Informationen darüber, wie diese in den einzelnen Tag-Formaten "
+"abgebildet werden."
 
 #: ../../faq/faq_file_formats.rst:72
 msgid "How do I edit tags in several files at once?"
-msgstr ""
+msgstr "Wie kann ich die Tags für mehrere Dateien auf einmal bearbeiten?"
 
 #: ../../faq/faq_file_formats.rst:74
 msgid "Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`."
-msgstr ""
+msgstr "Klicken Sie auf mehrere Dateien mit :kbd:`Strg` oder :kbd:`Umschalt`."
 
 #: ../../faq/faq_file_formats.rst:75
 msgid ""
 "The metadata view at the bottom will show which tags are present in the "
 "selected files and whether they are the same across all files or different."
 msgstr ""
+"In der Metadatenansicht am unteren Rand wird angezeigt, welche Tags in den "
+"ausgewählten Dateien vorhanden sind und ob sie für alle Dateien gleich oder "
+"unterschiedlich sind."
 
 #: ../../faq/faq_file_formats.rst:77
 msgid ""
 "If you edit any value in the \"New values\" column you will change this tag "
 "for all selected files."
 msgstr ""
+"Beim Bearbeiten eines Werts in der Spalte \"Neuer Wert\" wird dieser Tag für "
+"alle ausgewählten Dateien geändert."
 
 #: ../../faq/faq_file_formats.rst:78
 msgid "You need to click Save in order to persist these changes to your files."
-msgstr ""
+msgstr "Zur Übernahme der Änderungen muss auf „Speichern“ geklickt werden."
 
 #: ../../faq/faq_file_formats.rst:80
 msgid ""
