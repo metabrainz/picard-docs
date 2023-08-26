@@ -1,20 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Philipp Wolfer <ph.wolfer@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-08-26 10:27+0000\n"
+"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
+"Language-Team: German <https://translations.metabrainz.org/projects/"
+"picard-docs/functionsfunc_delete/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: ../../functions/func_delete.rst:6
 msgid "$delete"
@@ -22,23 +24,23 @@ msgstr ""
 
 #: ../../functions/func_delete.rst:8
 msgid "Usage: **$delete(name)**"
-msgstr ""
+msgstr "Verwendung: **$delete(Name)**"
 
 #: ../../functions/func_delete.rst:9
 msgid "Category: assignment"
-msgstr ""
+msgstr "Category: Zuordnung"
 
 #: ../../functions/func_delete.rst:10
 msgid "Implemented: Picard 2.1"
-msgstr ""
+msgstr "Implementiert: Picard 2.1"
 
 #: ../../functions/func_delete.rst:12
 msgid "**Description:**"
-msgstr ""
+msgstr "**Beschreibung:**"
 
 #: ../../functions/func_delete.rst:14
 msgid "Unsets the variable ``name`` and marks the tag for deletion."
-msgstr ""
+msgstr "Leert die Variable ``Name`` und markiert das Tag zur Löschung."
 
 #: ../../functions/func_delete.rst:16
 msgid ""
@@ -46,11 +48,14 @@ msgid ""
 "example, running ``$delete(genre)`` will actually remove the \"genre\" tag "
 "from a file when saving."
 msgstr ""
+"Diese Funktion ist ähnlich wie ``$unset(Name)`` aber markiert das Tag "
+"zusätzlich zur Löschung. Zum Beispiel löscht ``$delete(genre)`` das Genre-"
+"Tag beim Speichern aus der Datei."
 
 #: ../../functions/func_delete.rst:20
 msgid "**Example:**"
-msgstr ""
+msgstr "**Beispiel:**"
 
 #: ../../functions/func_delete.rst:22
 msgid "The following statements will perform the actions indicated:"
-msgstr ""
+msgstr "Die folgenden Ausdrücke führen die angegebenen Aktionen aus:"
