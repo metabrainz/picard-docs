@@ -11,8 +11,8 @@ $left
 **Description:**
 
 Returns the first ``number`` characters from ``text``.  If ``number`` is less than 0, then the
-value used is the number of characters in ``text`` plus ``number`` (e.g.: ``$right(abcd,-1)``
-is the same as ``$right(abcd,3)``).  If ``number`` is missing or a negative number greater
+value used is the number of characters in ``text`` plus ``number`` (e.g.: ``$left(abcd,-1)``
+is the same as ``$left(abcd,3)``).  If ``number`` is missing or a negative number greater
 than the number of characters in ``text``, the function will return an empty string.
 
 
