@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 # import picard_theme
 
 this_year = datetime.datetime.now().year
-copyright_year = str(this_year) if this_year == 2020 else '2020-{0}'.format(this_year)
+copyright_year = str(this_year) if this_year == 2020 else f'2020-{this_year}'
 
 # -- Project information -----------------------------------------------------
 
@@ -151,7 +151,7 @@ html_copy_source = False
 release = version   # For display on cover of PDF document
 
 latex_documents = [
-    ('pdf', '{0}.tex'.format(base_filename), project, '', 'manual', False),
+    ('pdf', f'{base_filename}.tex', project, '', 'manual', False),
     # ('pdf', '{0}.tex'.format(base_filename), project, 'Edited by Bob Swift', 'manual', False),
     # ('pdf', '{0}.tex'.format(base_filename), project, '', 'howto', False),
 ]
@@ -189,7 +189,7 @@ epub_basename = base_filename
 epub_theme = 'epub'
 
 # Metadata included in the epub file.
-epub_title = '{0} User Guide ({1})'.format(project, major_minor,)
+epub_title = f'{project} User Guide ({major_minor})'
 epub_description = 'A User Guide for MusicBrainz Picard.'
 epub_author = 'Bob Swift (Editor)'
 epub_contributor = 'Members of the MusicBrainz Community'
@@ -200,7 +200,7 @@ epub_tocdepth = 3
 epub_tocscope = 'includehidden'
 
 epub_cover = ('_static/picard_logo_256.png', 'epub-cover.html')
-epub_guide = (('cover', 'epub-cover.xhtml', u'Cover Page'),)
+epub_guide = (('cover', 'epub-cover.xhtml', 'Cover Page'),)
 
 # epub_show_urls = 'inline'
 # epub_show_urls = 'footnote'
@@ -211,6 +211,7 @@ epub_use_index = True
 epub_post_files = [
     ('genindex.xhtml', 'INDEX'),
 ]
+
 
 def _exclude_files_helper():
     excludes = [
@@ -226,6 +227,7 @@ def _exclude_files_helper():
             excludes.append(filepath[:-3] + 'xhtml')
 
     return excludes
+
 
 epub_exclude_files = _exclude_files_helper()
 

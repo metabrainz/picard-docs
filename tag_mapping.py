@@ -16,6 +16,7 @@ import sys
 
 import xlsxwriter
 
+
 # Column headings to use for the table
 #
 # Each tuple comprises the following:
@@ -1120,7 +1121,7 @@ def rc2cell(row, col):
             cell_col += chr(64 + temp)
         cell_col = cell_col[::-1]
     cell_row = int(max(row, 0)) + 1
-    return '{0}{1}'.format(cell_col, cell_row)
+    return f'{cell_col}{cell_row}'
 
 
 def write_spreadsheet(filename):    # pylint: disable=too-many-locals
@@ -1174,7 +1175,7 @@ def write_spreadsheet(filename):    # pylint: disable=too-many-locals
         row += 1
         text = str(NOTES[num]).replace('``', '')
         text = re.sub(RE_STRIP_URL, r'\1', text)
-        worksheet.write(row, 1, '{0}.  {1}'.format(num, text,))
+        worksheet.write(row, 1, f'{num}.  {text}')
 
     workbook.close()
 
@@ -1236,7 +1237,7 @@ def write_html(filename):
     width = 0
     for (name, val, pts, px) in COLUMNS:    # pylint: disable=unused-variable
         width += px + 15
-    html = '<table width="{0}">\n<tr>\n'.format(width,)
+    html = f'<table width="{width}">\n<tr>\n'
 
     # Write the table headers
     for (name, val, pts, px) in COLUMNS:
@@ -1244,7 +1245,7 @@ def write_html(filename):
         text = re.sub(RE_MAKE_FOOTNOTE, r'<sup><a href="#fn\2">\1</a></sup>', text)
         text = re.sub(RE_MAKE_CODE, r'<code>\1</code>', text)
         text = re.sub(RE_MAKE_ANCHOR, r'<a href="\2">\1</a>', text)
-        html += '  <th style="width: {0}px">{1}</th>\n'.format(px, text)
+        html += f'  <th style="width: {px}px">{text}</th>\n'
     html += '</tr>\n'
 
     # Write the tag values
@@ -1256,9 +1257,9 @@ def write_html(filename):
             text = re.sub(RE_MAKE_CODE, r'<code>\1</code>', text)
             text = re.sub(RE_MAKE_ANCHOR, r'<a href="\2">\1</a>', text)
             if col:
-                html += '  <td>{0}</td>\n'.format(text,)
+                html += f'  <td>{text}</td>\n'
             else:
-                html += '  <td class="column1">{0}</td>\n'.format(text,)
+                html += f'  <td class="column1">{text}</td>\n'
         html += '</tr>\n'
     html += '</table>\n\n'
 
@@ -1268,7 +1269,7 @@ def write_html(filename):
         text = str(NOTES[num]).replace('\n', '<br />')
         text = re.sub(RE_MAKE_CODE, r'<code>\1</code>', text)
         text = re.sub(RE_MAKE_ANCHOR, r'<a href="\2">\1</a>', text)
-        html += '  <li style="width: 1200px;" id="fn{0}">{1}</li>\n'.format(num, text)
+        html += f'  <li style="width: 1200px;" id="fn{num}">{text}</li>\n'
     html += '</ol>\n'
 
     # Write the output file
