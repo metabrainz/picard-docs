@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-16 09:48-0700\n"
-"PO-Revision-Date: 2023-08-26 10:27+0000\n"
+"PO-Revision-Date: 2023-08-30 00:43+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_copy/de/>\n"
@@ -23,19 +23,19 @@ msgstr ""
 
 #: ../../functions/func_copy.rst:6
 msgid "$copy"
-msgstr ""
+msgstr "$copy"
 
 #: ../../functions/func_copy.rst:8
 msgid "Usage: **$copy(target,source)**"
-msgstr ""
+msgstr "Verwendung: **$copy(ziel,quelle)**"
 
 #: ../../functions/func_copy.rst:9
 msgid "Category: assignment"
-msgstr "Category: Zuordnung"
+msgstr "Kategorie: Zuordnung"
 
 #: ../../functions/func_copy.rst:10
 msgid "Implemented: Picard 0.9"
-msgstr ""
+msgstr "Implementiert: Picard 0.9"
 
 #: ../../functions/func_copy.rst:12
 msgid "**Description:**"
@@ -47,18 +47,26 @@ msgid ""
 "``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-"
 "value variables without flattening them."
 msgstr ""
+"Kopiert Metadaten von der Variablen ``quelle`` nach ``ziel``. Der "
+"Unterschied zu ``$set(ziel,%quelle%)`` ist, dass ``$copy(ziel,quelle)`` "
+"mehrwertige Variablen kopiert mehrwertige Variablen kopiert, ohne sie zu "
+"glätten."
 
 #: ../../functions/func_copy.rst:19
 msgid ""
 "Unlike most functions, in this case the ``source`` is specified **without** "
 "enclosing it with percent signs (%)."
 msgstr ""
+"Anders als bei den meisten Funktionen, wird in diesem Fall ``quelle`` "
+"**ohne** die umschließenden Prozentzeichen (%) angegeben."
 
 #: ../../functions/func_copy.rst:23
 msgid ""
 "If the variable ``target`` already exists, it will be overwritten by "
 "``source``."
 msgstr ""
+"Wenn die Variable ``ziel`` bereits existiert, wird sie mit ``source`` "
+"überschrieben."
 
 #: ../../functions/func_copy.rst:25
 msgid "**Example:**"
@@ -68,3 +76,4 @@ msgstr "**Beispiel:**"
 msgid ""
 "The following statements will yield the values for ``target`` as indicated:"
 msgstr ""
+"Die folgenden Ausdrücke geben die angegebenen Werte für ``ziel`` zurück:"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2023-08-26 10:27+0000\n"
+"PO-Revision-Date: 2023-08-30 00:43+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_div/de/>\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../functions/func_div.rst:6
 msgid "$div"
-msgstr ""
+msgstr "$div"
 
 #: ../../functions/func_div.rst:8
 msgid "Usage: **$div(x,y,\\*args)**"
-msgstr ""
+msgstr "Verwendung: **$div(x,y,\\*args)**"
 
 #: ../../functions/func_div.rst:9
 msgid "Category: mathematical"
-msgstr ""
+msgstr "Kategorie: Mathematisch"
 
 #: ../../functions/func_div.rst:11
 msgid "**Description:**"
@@ -42,6 +42,11 @@ msgid ""
 "string.  If the second or any subsequent argument is zero, the function will "
 "return an empty string."
 msgstr ""
+"Dividiert ``x`` durch ``y``. Kann mit beliebig vielen Argumenten verwendet "
+"werden (z.B. ``$div(x,y,z)`` = (x / y) / z). Gibt eine leere Zeichenkette "
+"zurück, wenn ein Argument fehlt oder keine Ganzzahl ist. Wenn das zweite "
+"oder ein beliebiges nachfolgende Argument null ist, gibt die Funktion eine "
+"leere Zeichenkette zurück."
 
 #: ../../functions/func_div.rst:19
 msgid "**Example:**"

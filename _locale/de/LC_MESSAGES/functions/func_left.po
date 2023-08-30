@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../functions/func_left.rst:6
 msgid "$left"
-msgstr ""
+msgstr "$left"
 
 #: ../../functions/func_left.rst:8
 msgid "Usage: **$left(text,number)**"
-msgstr ""
+msgstr "Verwendung: **$left(text,anzahl)**"
 
 #: ../../functions/func_left.rst:9
 msgid "Category: text"
@@ -39,8 +39,8 @@ msgstr "**Beschreibung:**"
 msgid ""
 "Returns the first ``number`` characters from ``text``.  If ``number`` is "
 "less than 0, then the value used is the number of characters in ``text`` "
-"plus ``number`` (e.g.: ``$left(abcd,-1)`` is the same as "
-"``$left(abcd,3)``).  If ``number`` is missing or a negative number greater "
+"plus ``number`` (e.g.: ``$left(abcd,-1)`` is the same as ``"
+"$left(abcd,3)``).  If ``number`` is missing or a negative number greater "
 "than the number of characters in ``text``, the function will return an empty "
 "string."
 msgstr ""
@@ -52,3 +52,19 @@ msgstr "**Beispiel:**"
 #: ../../functions/func_left.rst:21
 msgid "The following statements will return the values indicated:"
 msgstr "Die folgenden Ausdrücke geben den angegebenen Wert zurück:"
+
+#: ../../functions/func_left.rst:13
+msgid ""
+"Returns the first ``number`` characters from ``text``.  If ``number`` is "
+"less than 0, then the value used is the number of characters in ``text`` "
+"plus ``number`` (e.g.: ``$right(abcd,-1)`` is the same as ``"
+"$right(abcd,3)``).  If ``number`` is missing or a negative number greater "
+"than the number of characters in ``text``, the function will return an empty "
+"string."
+msgstr ""
+"Gibt die ersten ``anzahl`` Zeichen von `text`` zurück. Wenn ``anzahl`` "
+"kleiner als 0 ist, dann ist der verwendete Wert die Anzahl Zeichen in "
+"``text`` plus ``anzahl`` (z.B. ist ``$left(abcd,-1)`` gleichwertig zu ``"
+"$left(abcd,3)``). Wenn ``anzahl`` nicht angegeben wurde oder kleiner als die "
+"negierte Anzahl Zeichen in ``text``` ist, gibt die Funktion eine leere "
+"Zeichenkette zurück."

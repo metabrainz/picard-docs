@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2023-08-26 10:27+0000\n"
+"PO-Revision-Date: 2023-08-30 00:43+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_if/de/>\n"
@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../functions/func_if.rst:6
 msgid "$if"
-msgstr ""
+msgstr "$if"
 
 #: ../../functions/func_if.rst:8
 msgid "Usage: **$if(condition,then[,else])**"
-msgstr ""
+msgstr "Verwendung: **$if(bedingung,wenn[,dann])**"
 
 #: ../../functions/func_if.rst:9
 msgid "Category: conditional"
@@ -44,6 +44,11 @@ msgid ""
 "string.  In addition to (or instead of) returning values, ``then`` and "
 "``else`` can be used to conditionally execute other functions."
 msgstr ""
+"Wenn ``bedingung`` nicht leer ist, wird ``wenn`` zurückgegeben, andernfalls "
+"``dann``. Wenn ``dann`` nicht angegeben wurde, wird es als leere "
+"Zeichenkette betrachtet. Zusätzlich zur (oder anstelle der) Rückgabe von "
+"Werten, können ``wenn`` und ``dann`` auch verwendet werden, um bedingt "
+"andere Funktionen auszuführen."
 
 #: ../../functions/func_if.rst:21
 msgid ""

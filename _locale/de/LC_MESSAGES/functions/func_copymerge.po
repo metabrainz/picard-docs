@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-12 08:15-0700\n"
-"PO-Revision-Date: 2023-08-26 10:27+0000\n"
+"PO-Revision-Date: 2023-08-30 00:43+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_copymerge/de/>\n"
@@ -23,19 +23,19 @@ msgstr ""
 
 #: ../../functions/func_copymerge.rst:6
 msgid "$copymerge"
-msgstr ""
+msgstr "$copymerge"
 
 #: ../../functions/func_copymerge.rst:8
 msgid "Usage: **$copymerge(target,source[,keep_duplicates])**"
-msgstr ""
+msgstr "Verwendung: **$copymerge(ziel,quelle[,duplikate_behalten])**"
 
 #: ../../functions/func_copymerge.rst:9
 msgid "Category: assignment"
-msgstr "Category: Zuordnung"
+msgstr "Kategorie: Zuordnung"
 
 #: ../../functions/func_copymerge.rst:10
 msgid "Implemented: Picard 1.0"
-msgstr ""
+msgstr "Implementiert: Picard 1.0"
 
 #: ../../functions/func_copymerge.rst:12
 msgid "**Description:**"
@@ -49,18 +49,27 @@ msgid ""
 "flattening them.  Following the operation, ``target`` will be a multi-value "
 "variable."
 msgstr ""
+"Führt die Metadaten aus der Variablen ``quelle`` mit ``ziel`` zusammen. "
+"Entfernt Duplikate und hängt neue Werte an das Ende an, so dass die "
+"ursprüngliche Reihenfolge beibehalten wird. Wie :ref:`func_copy`, kopiert "
+"dies auch mehrwertige Variablen, ohne sie zu verflachen. Nach der Ausführung "
+"ist ``ziel`` eine mehrwertige Variable."
 
 #: ../../functions/func_copymerge.rst:18
 msgid ""
 "If ``keep_duplicates`` is set, then the duplicates will not be removed from "
 "the result."
 msgstr ""
+"Wenn ``duplikate_behalten`` gesetzt ist, werden Duplikate nicht aus dem "
+"Ergebnis entfernt."
 
 #: ../../functions/func_copymerge.rst:22
 msgid ""
 "Unlike most functions, in this case the ``source`` is specified **without** "
 "enclosing it with percent signs (%)."
 msgstr ""
+"Anders als bei den meisten Funktionen, wird in diesem Fall ``quelle`` "
+"**ohne** die umschließenden Prozentzeichen (%) angegeben."
 
 #: ../../functions/func_copymerge.rst:25
 msgid "**Example:**"
@@ -70,3 +79,4 @@ msgstr "**Beispiel:**"
 msgid ""
 "The following statements will yield the values for ``target`` as indicated:"
 msgstr ""
+"Die folgenden Ausdrücke geben die angegebenen Werte für ``ziel`` zurück:"
