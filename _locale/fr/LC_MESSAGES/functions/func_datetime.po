@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 08:15-0700\n"
+"POT-Creation-Date: 2023-08-31 13:31-0600\n"
 "PO-Revision-Date: 2023-02-13 16:14+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -53,7 +53,7 @@ msgstr ""
 "org>`_. Si aucun format n'est spécifié, la date et l'heure seront retournées "
 "sous la forme '2020-02-15 14:26:32'."
 
-#: ../../functions/func_datetime.rst:20
+#: ../../functions/func_datetime.rst:18
 msgid ""
 "Any special characters such as '%', '$', '(', ')' and '\\\\' will need to be "
 "escaped as shown in the examples below."
@@ -61,13 +61,14 @@ msgstr ""
 "Tous les caractères spéciaux tels que \"%\", \"$\", \"(\", \")\" et \"\\\\\" "
 "devront être échappés comme indiqué dans les exemples ci-dessous."
 
-#: ../../functions/func_datetime.rst:25
+#: ../../functions/func_datetime.rst:22
+#, fuzzy
 msgid ""
 "Platform-specific formatting codes should be avoided to help ensure the "
 "portability of scripts across the different platforms.  These codes include: "
 "remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or macOS, and their "
-"equivalent ``%#d`` and ``%#m`` on Windows); element length specifiers (e.g.: "
-"``%3Y``); and hanging '%' at the end of the format string."
+"equivalents ``%#d`` and ``%#m`` on Windows); element length specifiers (e."
+"g.: ``%3Y``); and hanging '%' at the end of the format string."
 msgstr ""
 "Les codes de formatage spécifiques à la plate-forme doivent être évités pour "
 "garantir la portabilité des scripts sur les différentes plates-formes. Ces "
@@ -76,10 +77,11 @@ msgstr ""
 "spécificateurs de longueur d'élément (par exemple: ``%3Y``); et accrocher "
 "'%' à la fin de la chaîne de format."
 
-#: ../../functions/func_datetime.rst:31
-msgid "**Example:**"
+#: ../../functions/func_datetime.rst:25
+#, fuzzy
+msgid "**Examples:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_datetime.rst:33
+#: ../../functions/func_datetime.rst:27
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"

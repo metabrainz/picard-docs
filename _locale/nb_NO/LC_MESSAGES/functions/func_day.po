@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2023-08-31 13:31-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,7 +21,7 @@ msgid "$day"
 msgstr ""
 
 #: ../../functions/func_day.rst:8
-msgid "Usage: **$day(date[,date_order])**"
+msgid "Usage: **$day(date[,date order])**"
 msgstr ""
 
 #: ../../functions/func_day.rst:9
@@ -44,15 +44,36 @@ msgstr ""
 msgid ""
 "The \"year\", \"month\" and \"day\" portions of the date must be entered as "
 "numbers, and can be separated by any non-numeric characters.  The default "
-"order for the input date is \"ymd\".  This can be changed by specifying a "
-"``date_order`` of either \"dmy\" or \"mdy\".  If anything other than \"ymd"
-"\", \"dmy\" or \"mdy\" is specified, the default order \"ymd\" will be used."
+"order for the input date is \"ymd\" (year, month, day).  This can be changed "
+"by specifying a ``date order``."
+msgstr ""
+
+#: ../../functions/func_day.rst:18
+msgid "Valid entries for ``date order`` are:"
+msgstr ""
+
+#: ../../functions/func_day.rst:20
+msgid "**ymd** - year, month, day (This is the default order.)"
+msgstr ""
+
+#: ../../functions/func_day.rst:21
+msgid "**dmy** - day, month, year"
 msgstr ""
 
 #: ../../functions/func_day.rst:22
-msgid "**Example:**"
+msgid "**mdy** - month, day, year"
 msgstr ""
 
 #: ../../functions/func_day.rst:24
+msgid ""
+"If the ``date`` is invalid an empty string will be returned.  If an invalid "
+"``date order`` is specified, the default order \"ymd\" will be used."
+msgstr ""
+
+#: ../../functions/func_day.rst:27
+msgid "**Examples:**"
+msgstr ""
+
+#: ../../functions/func_day.rst:29
 msgid "The following statements will return the values indicated:"
 msgstr ""
