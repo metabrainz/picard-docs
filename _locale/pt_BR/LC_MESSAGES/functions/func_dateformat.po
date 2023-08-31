@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 08:15-0700\n"
+"POT-Creation-Date: 2023-08-31 13:31-0600\n"
 "PO-Revision-Date: 2021-12-04 08:25+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
@@ -25,7 +25,7 @@ msgid "$dateformat"
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:8
-msgid "Usage: **$dateformat(date,[format],[date_order])**"
+msgid "Usage: **$dateformat(date,[format],[date order])**"
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:9
@@ -45,42 +45,60 @@ msgid ""
 "Returns the input ``date`` in the specified ``format``, which is based on "
 "the standard Python ``strftime`` `format codes <https://strftime.org>`_. If "
 "no ``format`` is specified the date will be returned in the form "
-"'2020-02-15'."
+"'2020-02-15' (year, month, day)."
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:18
+#: ../../functions/func_dateformat.rst:16
 msgid ""
 "The \"year\", \"month\" and \"day\" portions of the date must be entered as "
 "numbers, and can be separated by any non-numeric characters.  The default "
-"order for the input date is \"ymd\".  This can be changed by specifying a "
-"``date_order`` of either \"dmy\" or \"mdy\"."
+"order for the input date is \"ymd\" (year, month, day).  This can be changed "
+"by specifying a ``date order``."
+msgstr ""
+
+#: ../../functions/func_dateformat.rst:18
+msgid "Valid entries for ``date order`` are:"
+msgstr ""
+
+#: ../../functions/func_dateformat.rst:20
+msgid "**ymd** - year, month, day (This is the default order.)"
+msgstr ""
+
+#: ../../functions/func_dateformat.rst:21
+msgid "**dmy** - day, month, year"
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:22
-msgid ""
-"If either the ``date`` or ``format`` are invalid an empty string will be "
-"returned."
+msgid "**mdy** - month, day, year"
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:26
+#: ../../functions/func_dateformat.rst:24
+msgid ""
+"If either the ``date`` or ``format`` are invalid an empty string will be "
+"returned.  If an invalid ``date order`` is specified, the default order "
+"\"ymd\" will be used."
+msgstr ""
+
+#: ../../functions/func_dateformat.rst:28
 msgid ""
 "Any special characters such as '%', '$', '(', ')' and '\\\\' will need to be "
 "escaped as shown in the examples below."
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:31
+#: ../../functions/func_dateformat.rst:32
 msgid ""
 "Platform-specific formatting codes should be avoided to help ensure the "
 "portability of scripts across the different platforms.  These codes include: "
 "remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or macOS, and their "
-"equivalent ``%#d`` and ``%#m`` on Windows); element length specifiers (e.g.: "
-"``%3Y``); and hanging '%' at the end of the format string."
+"equivalents ``%#d`` and ``%#m`` on Windows); element length specifiers (e."
+"g.: ``%3Y``); and hanging '%' at the end of the format string."
 msgstr ""
 
-#: ../../functions/func_dateformat.rst:37
-msgid "**Example:**"
+#: ../../functions/func_dateformat.rst:35
+#, fuzzy
+msgid "**Examples:**"
 msgstr "**Exemplo:**"
 
-#: ../../functions/func_dateformat.rst:39
+#: ../../functions/func_dateformat.rst:37
 msgid "The following statements will return the values indicated:"
 msgstr "Os comandos a seguir retornarão os valores indicados:"
