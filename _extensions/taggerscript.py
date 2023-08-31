@@ -3,7 +3,13 @@
 """
 
 from pygments.lexer import RegexLexer
-from pygments.token import Comment, Keyword, Name, String, Text
+from pygments.token import (
+    Comment,
+    Keyword,
+    Name,
+    String,
+    Text,
+)
 from sphinx.application import Sphinx
 
 
