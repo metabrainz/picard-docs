@@ -5,7 +5,7 @@
 $day
 ====
 
-| Usage: **$day(date[,date_order])**
+| Usage: **$day(date[,date order])**
 | Category: information
 | Implemented: Picard 2.7
 
@@ -13,13 +13,18 @@ $day
 
 Returns the "day" portion of the input ``date``.
 
-The "year", "month" and "day" portions of the date must be entered as numbers, and can be separated
-by any non-numeric characters.  The default order for the input date is "ymd".  This can be changed
-by specifying a ``date_order`` of either "dmy" or "mdy".  If anything other than "ymd", "dmy" or
-"mdy" is specified, the default order "ymd" will be used.
+The "year", "month" and "day" portions of the date must be entered as numbers, and can be separated by any non-numeric characters.  The default order for the input date is "ymd" (year, month, day).  This can be changed by specifying a ``date order``.
+
+Valid entries for ``date order`` are:
+
+- **ymd** - year, month, day (This is the default order.)
+- **dmy** - day, month, year
+- **mdy** - month, day, year
+
+If the ``date`` is invalid an empty string will be returned.  If an invalid ``date order`` is specified, the default order "ymd" will be used.
 
 
-**Example:**
+**Examples:**
 
 The following statements will return the values indicated:
 
