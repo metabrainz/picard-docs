@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2023-08-26 10:27+0000\n"
+"PO-Revision-Date: 2023-08-31 06:27+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_lenmulti/de/>\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../functions/func_lenmulti.rst:6
 msgid "$lenmulti"
-msgstr ""
+msgstr "$lenmulti"
 
 #: ../../functions/func_lenmulti.rst:8
 msgid "Usage: **$lenmulti(name[,separator])**"
-msgstr ""
+msgstr "Verwendung: **$lenmulti(name[,trenner])**"
 
 #: ../../functions/func_lenmulti.rst:9
 msgid "Category: multi-value"
@@ -44,6 +44,13 @@ msgid ""
 "specified but left blank (e.g. ``$setmulti(A; B; C,)``) the function will "
 "return \"1\"."
 msgstr ""
+"Liefert die Anzahl der Elemente im mehrwertigen Tag ``name`` zurück. Statt "
+"eines Variablennamens kann für ``name`` auch direkt ein Wert mit mehreren "
+"Elementen angegeben werden, die durch ``trenner`` (oder ein Semikolon "
+"gefolgt von einem Leerzeichen „; “ falls nicht angegeben) getrennt werden. "
+"Wenn ``name`` nicht angegeben wurde, liefert ``$lenmulti`` „0“ zurück. Wenn "
+"``trenner`` angegeben wurde aber leer ist (z. B. ``$setmulti(A; B; C,)``), "
+"liefert die Funktion „1“ zurück."
 
 #: ../../functions/func_lenmulti.rst:21
 msgid "**Example:**"
