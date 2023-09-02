@@ -10,10 +10,10 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-31 13:31-0600\n"
-"PO-Revision-Date: 2023-08-31 06:27+0000\n"
-"Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
-"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
-"docs/functionsfunc_dateformat/fr/>\n"
+"PO-Revision-Date: 2023-09-02 10:27+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/"
+"picard-docs/functionsfunc_dateformat/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,9 +27,8 @@ msgid "$dateformat"
 msgstr "$dateformat"
 
 #: ../../functions/func_dateformat.rst:8
-#, fuzzy
 msgid "Usage: **$dateformat(date,[format],[date order])**"
-msgstr "Utilisation: **$dateformat(date,[format],[ordre_des_dates])**"
+msgstr "Utilisation: **$dateformat(date,[format],[ordre des dates])**"
 
 #: ../../functions/func_dateformat.rst:9
 msgid "Category: information"
@@ -44,20 +43,18 @@ msgid "**Description:**"
 msgstr "**Description:**"
 
 #: ../../functions/func_dateformat.rst:14
-#, fuzzy
 msgid ""
 "Returns the input ``date`` in the specified ``format``, which is based on "
 "the standard Python ``strftime`` `format codes <https://strftime.org>`_. If "
 "no ``format`` is specified the date will be returned in the form "
 "'2020-02-15' (year, month, day)."
 msgstr ""
-"Renvoie la ``date`` d'entrée dans le ``format`` spécifié, qui est basé sur "
-"les codes de format standard Python ``strftime`` `<https://strftime.org>`_. "
-"Si aucun ``format`` n'est spécifié, la date sera retournée sous la forme "
-"'2020-02-15'."
+"Retourne la ``date`` d'entrée dans le ``format`` spécifié, qui est basé sur "
+"les codes de ``strftime`` standard de Python <https://strftime.org>`_. Si "
+"aucun ``format`` n'est spécifié, la date sera retournée sous la forme "
+"'2020-02-15' (année, mois, jour)."
 
 #: ../../functions/func_dateformat.rst:16
-#, fuzzy
 msgid ""
 "The \"year\", \"month\" and \"day\" portions of the date must be entered as "
 "numbers, and can be separated by any non-numeric characters.  The default "
@@ -65,35 +62,35 @@ msgid ""
 "by specifying a ``date order``."
 msgstr ""
 "Les parties \"année\", \"mois\" et \"jour\" de la date doivent être saisies "
-"sous forme de chiffres et peuvent être séparées par des caractères non "
-"numériques.  L'ordre par défaut de la date saisie est \"ymd\".  Ceci peut "
-"être changé en spécifiant un \"ordre_de_date\" de \"dmy\" ou \"mdy\"."
+"sous forme de nombres et peuvent être séparées par des caractères non "
+"numériques.  L'ordre par défaut pour la date d'entrée est \"ymd\" (année, "
+"mois, jour).  Ceci peut être modifié en spécifiant un ``ordre de date``."
 
 #: ../../functions/func_dateformat.rst:18
 msgid "Valid entries for ``date order`` are:"
-msgstr ""
+msgstr "Les entrées valides pour ``ordre de date`` sont :"
 
 #: ../../functions/func_dateformat.rst:20
 msgid "**ymd** - year, month, day (This is the default order.)"
-msgstr ""
+msgstr "**ymd** - année, mois, jour (il s'agit de l'ordre par défaut)."
 
 #: ../../functions/func_dateformat.rst:21
 msgid "**dmy** - day, month, year"
-msgstr ""
+msgstr "**dmy** - jour, mois, année"
 
 #: ../../functions/func_dateformat.rst:22
 msgid "**mdy** - month, day, year"
-msgstr ""
+msgstr "**mdy** - mois, jour, année"
 
 #: ../../functions/func_dateformat.rst:24
-#, fuzzy
 msgid ""
 "If either the ``date`` or ``format`` are invalid an empty string will be "
 "returned.  If an invalid ``date order`` is specified, the default order "
 "\"ymd\" will be used."
 msgstr ""
-"Si la ``date`` ou le ``format`` ne sont pas valides, une chaîne vide sera "
-"retournée."
+"Si la ``date`` ou le ``format`` sont invalides, une chaîne vide sera "
+"retournée.  Si un ``ordre de date`` invalide est spécifié, l'ordre par "
+"défaut \"ymd\" sera utilisé."
 
 #: ../../functions/func_dateformat.rst:28
 msgid ""
@@ -104,7 +101,6 @@ msgstr ""
 "devront être échappés comme indiqué dans les exemples ci-dessous."
 
 #: ../../functions/func_dateformat.rst:32
-#, fuzzy
 msgid ""
 "Platform-specific formatting codes should be avoided to help ensure the "
 "portability of scripts across the different platforms.  These codes include: "
@@ -112,17 +108,16 @@ msgid ""
 "equivalents ``%#d`` and ``%#m`` on Windows); element length specifiers (e."
 "g.: ``%3Y``); and hanging '%' at the end of the format string."
 msgstr ""
-"Les codes de formatage spécifiques à la plate-forme doivent être évités pour "
-"garantir la portabilité des scripts sur les différentes plates-formes. Ces "
-"codes incluent: supprimer zéro-padding (par exemple: ``%-d`` et ``%-m`` sous "
-"Linux ou macOS, et leurs équivalents ``%#d`` et ``%#m`` sur Windows); "
-"spécificateurs de longueur d'élément (par exemple: ``%3Y``); et accrocher "
-"'%' à la fin de la chaîne de format."
+"Les codes de formatage spécifiques à une plate-forme doivent être évités "
+"afin de garantir la portabilité des scripts sur les différentes plates-"
+"formes.  Ces codes comprennent : la suppression de la troncature zéro (par "
+"exemple : ``%-d`` et ``%-m`` sur Linux ou macOS, et leurs équivalents ``%#d``"
+" et ``%#m`` sur Windows) ; les spécificateurs de longueur d'élément (par "
+"exemple : ``%3Y``) ; et les \"%\" suspendus à la fin de la chaîne de format."
 
 #: ../../functions/func_dateformat.rst:35
-#, fuzzy
 msgid "**Examples:**"
-msgstr "**Exemple:**"
+msgstr "**Exemples:**"
 
 #: ../../functions/func_dateformat.rst:37
 msgid "The following statements will return the values indicated:"
