@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2023-08-30 00:43+0000\n"
+"PO-Revision-Date: 2023-09-02 10:27+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_title/de/>\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../functions/func_title.rst:6
 msgid "$title"
-msgstr ""
+msgstr "$title"
 
 #: ../../functions/func_title.rst:8
 msgid "Usage: **$title(text)**"
-msgstr ""
+msgstr "Verwendung: **$title(text)**"
 
 #: ../../functions/func_title.rst:9
 msgid "Category: text"
@@ -46,6 +46,11 @@ msgid ""
 "first character of each word capitalized you could first change the text to "
 "lower-case."
 msgstr ""
+"Gibt ``text`` mit den Anfangsbuchstaben jedes Wortes in Großbuchstaben "
+"zurück. Beachte, dass andere Zeichen in den Worten nicht verändert werden. "
+"Das erlaubt die Beibehaltung von Akronymen wie etwa „BBC“. Um ausschließlich "
+"den ersten Buchstaben in jedem Wort in Großbuchstaben zu haben, kann der "
+"Text zuerst in Kleinbuchstaben umgewandelt werden."
 
 #: ../../functions/func_title.rst:20
 msgid "**Examples:**"

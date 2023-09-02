@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2023-08-30 00:43+0000\n"
+"PO-Revision-Date: 2023-09-02 10:27+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_mod/de/>\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../functions/func_mod.rst:6
 msgid "$mod"
-msgstr ""
+msgstr "$mod"
 
 #: ../../functions/func_mod.rst:8
 msgid "Usage: **$mod(x,y,\\*args)**"
-msgstr ""
+msgstr "Verwendung: **$mod(x,y,\\*args)**"
 
 #: ../../functions/func_mod.rst:9
 msgid "Category: mathematical"
@@ -42,6 +42,11 @@ msgid ""
 "string.  If the second or any subsequent argument is zero, the function will "
 "return an empty string."
 msgstr ""
+"Gibt den Rest der Division von ``x`` mit ``y`` zurück. Kann mit beliebig "
+"vielen Argumenten verwendet werden (z. B. ``$mod(x,y,z)`` = (x % y) % z). "
+"Gibt eine leere Zeichenkette zurück, wenn ein Argument fehlt oder keine "
+"Ganzzahl ist. Wenn das zweite oder jedes nachfolgende Argument null ist, "
+"gibt die Funktion eine leere Zeichenkette zurück."
 
 #: ../../functions/func_mod.rst:19
 msgid "**Example:**"

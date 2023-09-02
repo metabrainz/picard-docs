@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2023-08-30 00:43+0000\n"
+"PO-Revision-Date: 2023-09-02 10:27+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/"
 "picard-docs/functionsfunc_setmulti/de/>\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../functions/func_setmulti.rst:6
 msgid "$setmulti"
-msgstr ""
+msgstr "$setmulti"
 
 #: ../../functions/func_setmulti.rst:8
 msgid "Usage: **$setmulti(name,value[,separator])**"
-msgstr ""
+msgstr "Verwendung: **$setmulti(name,wert[,trenner])**"
 
 #: ../../functions/func_setmulti.rst:9
 msgid "Category: assignment"
@@ -46,6 +46,11 @@ msgid ""
 "multi-valued variables as a string, and then set them back as proper multi-"
 "valued variable."
 msgstr ""
+"Setzt die Variable ``name`` auf ``wert``, wobei das Trennzeichen ``trenner`` "
+"(oder auf ein Semikolon gefolgt von einem Leerzeichen „; “, falls nicht "
+"übergeben) um den Wert zurück in ein richtiges mehrwertiges Tag umzuwandeln. "
+"Dies kann verwendet werden, um mit mehrwertigen Tags als Zeichenkette zu "
+"arbeiten und sie dann wieder in echte mehrwertige Tags zurückzusetzen."
 
 #: ../../functions/func_setmulti.rst:20
 msgid "**Example:**"
