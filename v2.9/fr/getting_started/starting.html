@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Démarrage Picard &mdash; Documentation MusicBrainz Picard v2.9.1</title>
+  <title>Démarrage Picard &mdash; Documentation MusicBrainz Picard v2.9.2</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -37,7 +37,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9.1
+                v2.9.2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -74,7 +74,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Recommandations générales</span></p>
+<p class="caption" role="heading"><span class="caption-text">Recommandations en matière de flux de travail</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
@@ -110,7 +110,7 @@
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B : Mappage de balises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/list_by_name.html">Annexe E : Fonctions de script classées par ordre alphabétique</a></li>
@@ -149,7 +149,7 @@
 <p>Depuis la version 2.9, Picard essaie de ne faire tourner qu’une seule instance du programme à la fois. Lorsque le programme est lancé, il vérifie si une autre instance de cette version, de ce fichier de configuration et de ce statut de démarrage de plugin <code class="docutils literal notranslate"><span class="pre">-P</span></code> est déjà en cours d’exécution.  Si la même version est déjà en cours d’exécution, tous les fichiers ou répertoires spécifiés sur la ligne de commande de la nouvelle instance, ainsi que toutes les commandes exécutables spécifiées avec les options <code class="docutils literal notranslate"><span class="pre">-e</span></code> ou <code class="docutils literal notranslate"><span class="pre">--exec</span></code> seront transmises à l’instance déjà en cours d’exécution pour traitement et la nouvelle instance dupliquée sera arrêtée.  Cela permet de lancer automatiquement le traitement par lot de fichiers à partir d’autres processus.  S’il n’y a pas d’instance de cette version en cours d’exécution, Picard démarrera normalement.</p>
 <p>De plus, Picard peut être démarré en mode « autonome », auquel cas il n’envoie pas d’informations à une instance déjà en cours d’exécution et n’accepte pas d’informations d’une autre instance.</p>
 <p>Les instances démarrées avec l’argument de ligne de commande <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">/</span> <span class="pre">--stand-alone</span></code> démarrent toujours en tant que autonome.</p>
-<p>S’il y a déjà une instance en cours d’exécution lorsque l’on démarre une autre instance qui n’est pas une instance autonome, toutes les options de la ligne de commande <cite>-d / –debug`</cite>, <cite>-M / –no-player`</cite> ou <cite>-N / –no-restore`</cite> de la nouvelle instance dupliquée seront ignorées, et seuls les fichiers ou répertoires spécifiés et les commandes exécutables (le cas échéant) seront transmis à l’instance en cours d’exécution pour traitement.  De même, si une instance primaire a été démarrée avec l’une de ces options spécifiées sur la ligne de commande, le démarrage d’une instance ultérieure de cette version sans cette option ne modifiera pas les paramètres de l’interface utilisateur de l’instance en cours d’exécution.</p>
+<p>S’il y a déjà une instance en cours d’exécution lorsque l’on démarre une autre instance qui n’est pas une instance autonome, toutes les options de la ligne de commande <code class="docutils literal notranslate"><span class="pre">-d</span> <span class="pre">/</span> <span class="pre">--debug</span></code>, <code class="docutils literal notranslate"><span class="pre">-M</span> <span class="pre">/</span> <span class="pre">--no-player</span></code> ou <code class="docutils literal notranslate"><span class="pre">-N</span> <span class="pre">/</span> <span class="pre">--no-restore</span></code> de la nouvelle instance dupliquée seront ignorées, et seuls les fichiers ou répertoires spécifiés et les commandes exécutables (le cas échéant) seront transmis à l’instance en cours d’exécution pour traitement.  De même, si une instance primaire a été démarrée avec l’une de ces options spécifiées sur la ligne de commande, le démarrage d’une instance ultérieure de cette version sans cette option ne modifiera pas les paramètres de l’interface utilisateur de l’instance en cours d’exécution.</p>
 <p>Toutes les instances lancées avec les arguments de ligne de commande <code class="docutils literal notranslate"><span class="pre">-h</span> <span class="pre">/</span> <span class="pre">--help</span></code>, <code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">/</span> <span class="pre">--version</span></code> ou <code class="docutils literal notranslate"><span class="pre">-V</span> <span class="pre">/</span> <span class="pre">--long-version</span></code> afficheront toujours les informations demandées sur le produit et quitteront, qu’une autre instance soit en cours d’exécution ou non.</p>
 <p>Veuillez vous reporter à la section <a class="reference internal" href="../usage/command_processing.html"><span class="doc">Traitement par commande et par lot</span></a> pour plus d’informations.</p>
 </div>

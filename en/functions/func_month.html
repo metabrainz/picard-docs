@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$month &mdash; MusicBrainz Picard v2.9.1 documentation</title>
+  <title>$month &mdash; MusicBrainz Picard v2.9.2 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -36,7 +36,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9.1
+                v2.9.2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -167,17 +167,21 @@
   <div class="section" id="month">
 <span id="func-month"></span><h1>$month<a class="headerlink" href="#month" title="Permalink to this headline"></a></h1>
 <div class="line-block">
-<div class="line">Usage: <strong>$month(date[,date_order])</strong></div>
+<div class="line">Usage: <strong>$month(date[,date order])</strong></div>
 <div class="line">Category: information</div>
 <div class="line">Implemented: Picard 2.7</div>
 </div>
 <p><strong>Description:</strong></p>
 <p>Returns the “month” portion of the input <code class="docutils literal notranslate"><span class="pre">date</span></code>.</p>
-<p>The “year”, “month” and “day” portions of the date must be entered as numbers, and can be separated
-by any non-numeric characters.  The default order for the input date is “ymd”.  This can be changed
-by specifying a <code class="docutils literal notranslate"><span class="pre">date_order</span></code> of either “dmy” or “mdy”.  If anything other than “ymd”, “dmy” or
-“mdy” is specified, the default order “ymd” will be used.</p>
-<p><strong>Example:</strong></p>
+<p>The “year”, “month” and “day” portions of the date must be entered as numbers, and can be separated by any non-numeric characters.  The default order for the input date is “ymd” (year, month, day).  This can be changed by specifying a <code class="docutils literal notranslate"><span class="pre">date</span> <span class="pre">order</span></code>.</p>
+<p>Valid entries for <code class="docutils literal notranslate"><span class="pre">date</span> <span class="pre">order</span></code> are:</p>
+<ul class="simple">
+<li><p><strong>ymd</strong> - year, month, day (This is the default order.)</p></li>
+<li><p><strong>dmy</strong> - day, month, year</p></li>
+<li><p><strong>mdy</strong> - month, day, year</p></li>
+</ul>
+<p>If the <code class="docutils literal notranslate"><span class="pre">date</span></code> is invalid an empty string will be returned.  If an invalid <code class="docutils literal notranslate"><span class="pre">date</span> <span class="pre">order</span></code> is specified, the default order “ymd” will be used.</p>
+<p><strong>Examples:</strong></p>
 <p>The following statements will return the values indicated:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,07.21.2020<span class="k">)</span>
 <span class="k">$set(</span>bar,mdy<span class="k">)</span>

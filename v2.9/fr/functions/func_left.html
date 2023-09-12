@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$left &mdash; Documentation MusicBrainz Picard v2.9.1</title>
+  <title>$left &mdash; Documentation MusicBrainz Picard v2.9.2</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -37,7 +37,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9.1
+                v2.9.2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -109,7 +109,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Recommandations générales</span></p>
+<p class="caption" role="heading"><span class="caption-text">Recommandations en matière de flux de travail</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
@@ -145,7 +145,7 @@
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B : Mappage de balises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_by_name.html">Annexe E : Fonctions de script classées par ordre alphabétique</a></li>
@@ -182,11 +182,11 @@
   <div class="section" id="left">
 <span id="func-left"></span><h1>$left<a class="headerlink" href="#left" title="Lien permanent vers ce titre"></a></h1>
 <div class="line-block">
-<div class="line">Utilisation: <strong>$left(texte,nombre)</strong></div>
+<div class="line">Utilisation : <strong>$left(texte,nombre)</strong></div>
 <div class="line">Catégorie : texte</div>
 </div>
 <p><strong>Description:</strong></p>
-<p>Renvoie les premiers caractères <code class="docutils literal notranslate"><span class="pre">nombre</span></code> de <code class="docutils literal notranslate"><span class="pre">texte</span></code>. Si <code class="docutils literal notranslate"><span class="pre">nombre</span></code> est inférieur à 0, alors la valeur utilisée est le nombre de caractères dans <code class="docutils literal notranslate"><span class="pre">texte</span></code> plus <code class="docutils literal notranslate"><span class="pre">nombre</span></code> (par exemple: <code class="docutils literal notranslate"><span class="pre">$right(abcd,-1)</span></code> est le même comme <code class="docutils literal notranslate"><span class="pre">$right(abcd,3)</span></code>). Si <code class="docutils literal notranslate"><span class="pre">nombre</span></code> est manquant ou un nombre négatif supérieur au nombre de caractères dans <code class="docutils literal notranslate"><span class="pre">texte</span></code>, la fonction renverra une chaîne vide.</p>
+<p>Renvoie les premiers caractères <code class="docutils literal notranslate"><span class="pre">nombre</span></code> de <code class="docutils literal notranslate"><span class="pre">texte</span></code>. Si <code class="docutils literal notranslate"><span class="pre">nombre</span></code> est inférieur à 0, alors la valeur utilisée est le nombre de caractères dans <code class="docutils literal notranslate"><span class="pre">texte</span></code> plus <code class="docutils literal notranslate"><span class="pre">nombre</span></code> (par exemple : <code class="docutils literal notranslate"><span class="pre">$left(abcd,-1)</span></code> est le même comme <code class="docutils literal notranslate"><span class="pre">$left(abcd,3)</span></code>). Si <code class="docutils literal notranslate"><span class="pre">nombre</span></code> est manquant ou un nombre négatif supérieur au nombre de caractères dans <code class="docutils literal notranslate"><span class="pre">texte</span></code>, la fonction renverra une chaîne vide.</p>
 <p><strong>Exemple:</strong></p>
 <p>Les instructions suivantes renverront les valeurs indiquées :</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$left(</span>,<span class="k">)</span>       ==&gt;  &quot;&quot;

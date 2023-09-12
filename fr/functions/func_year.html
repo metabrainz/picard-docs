@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$year &mdash; Documentation MusicBrainz Picard v2.9.1</title>
+  <title>$year &mdash; Documentation MusicBrainz Picard v2.9.2</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
@@ -37,7 +37,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.9.1
+                v2.9.2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -95,7 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../extending/extending.html">Prolonger Picard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq/faq.html">Questions fréquemment posées</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Recommandations générales</span></p>
+<p class="caption" role="heading"><span class="caption-text">Recommandations en matière de flux de travail</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflows.html">Recommandations générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workflows/workflow_cd.html">Lorsque le CD est disponible</a></li>
@@ -131,7 +131,7 @@
 <p class="caption" role="heading"><span class="caption-text">Annexes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/plugins_api.html">Annexe A: API des plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B: Mappage de balises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/tag_mapping.html">Annexe B : Mappage de balises</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command_line.html">Annexe C : Options de ligne de commande</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/keyboard_shortcuts.html">Annexe D : Courts clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_by_name.html">Annexe E : Fonctions de script classées par ordre alphabétique</a></li>
@@ -168,15 +168,22 @@
   <div class="section" id="year">
 <span id="func-year"></span><h1>$year<a class="headerlink" href="#year" title="Lien permanent vers ce titre"></a></h1>
 <div class="line-block">
-<div class="line">Utilisation : <strong>$year(date[,ordre_des_dates])</strong></div>
+<div class="line">Utilisation : <strong>$year(date[,ordre des dates])</strong></div>
 <div class="line">Catégorie: information</div>
 <div class="line">Implémenté : Picard 2.7</div>
 </div>
 <p><strong>Description:</strong></p>
 <p>Renvoie la partie « année » de la <code class="docutils literal notranslate"><span class="pre">date</span></code> d’entrée.</p>
-<p>Les parties « année », « mois » et « jour » de la date doivent être saisies sous forme de chiffres et peuvent être séparées par des caractères non numériques.  L’ordre par défaut de la date saisie est « ymd ».  Ceci peut être changé en spécifiant un <code class="docutils literal notranslate"><span class="pre">ordre_de_date</span></code> de « dmy » ou « mdy ».  Si quelque chose d’autre que « ymd », « dmy » ou « mdy » est spécifié, l’ordre par défaut « ymd » sera utilisé.</p>
-<p><strong>Exemple:</strong></p>
-<p>Les instructions suivantes renverront les valeurs indiquées:</p>
+<p>Les parties « année », « mois » et « jour » de la date doivent être saisies sous forme de nombres et peuvent être séparées par des caractères non numériques.  L’ordre par défaut pour la date d’entrée est « ymd » (année, mois, jour).  Ceci peut être modifié en spécifiant un <code class="docutils literal notranslate"><span class="pre">ordre</span> <span class="pre">de</span> <span class="pre">date</span></code>.</p>
+<p>Les entrées valides pour <code class="docutils literal notranslate"><span class="pre">ordre</span> <span class="pre">de</span> <span class="pre">date</span></code> sont :</p>
+<ul class="simple">
+<li><p><strong>ymd</strong> - année, mois, jour (il s’agit de l’ordre par défaut).</p></li>
+<li><p><strong>dmy</strong> - jour, mois, année</p></li>
+<li><p><strong>mdy</strong> - mois, jour, année</p></li>
+</ul>
+<p>Si la <code class="docutils literal notranslate"><span class="pre">date</span></code> est invalide, une chaîne vide sera retournée.  Si un <code class="docutils literal notranslate"><span class="pre">ordre</span> <span class="pre">de</span> <span class="pre">date</span></code> invalide est spécifié, l’ordre par défaut « ymd » sera utilisé.</p>
+<p><strong>Exemples:</strong></p>
+<p>Les instructions suivantes renverront les valeurs indiquées :</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>foo,07.21.2020<span class="k">)</span>
 <span class="k">$set(</span>bar,mdy<span class="k">)</span>
 <span class="k">$year(</span><span class="n">%foo%</span>,<span class="n">%bar%</span><span class="k">)</span>              ==&gt;  &quot;2020&quot;
