@@ -52,7 +52,7 @@ PYTHON_FILES_TO_CHECK = [
     'conf.py',
     'tag_mapping.py',
     '_extensions/*.py',
-    'stage_translation_files.py',
+    'gitstage.py',
 ]
 
 #################################################################
@@ -305,7 +305,7 @@ class SPHINX_():        # pylint: disable=too-few-public-methods
     INTL = 'sphinx-intl'
     BUILD_DIR = '_build'
     SOURCE_DIR = '.'
-    LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs[0] else '_locale'
+    LOCALE_DIR = conf.locale_dirs[0] if conf.locale_dirs else '_locale'
     GETTEXT_DIR = os.path.join(LOCALE_DIR, 'gettext')
     BUILD_TIMEOUT = 300
     BUILD_TARGETS = {
