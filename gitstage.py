@@ -18,11 +18,11 @@ from setup import PACKAGE_TITLE
 
 
 SCRIPT_NAME = 'Picard Docs Git File Stager'
-SCRIPT_VERS = '0.3'
+SCRIPT_VERS = '0.4'
 SCRIPT_INITIAL_COPYRIGHT = '2023'
 SCRIPT_INITIAL_AUTHOR = 'Bob Swift'
 
-DEFAULT_COMPARISON_DISPLAY = 'changed'
+DEFAULT_COMPARISON_DISPLAY_LEVEL = 'changed'
 
 COMMAND_TIMEOUT = 300
 LOCALE_DIRS = conf.locale_dirs if 'locale_dirs' in conf.__dict__ else ['_locale']
@@ -247,7 +247,7 @@ def parse_git_status(git_stat: list, files_to_stage: dict, files_to_ignore: set,
             files_to_stage[fullfilename] = 'Modified'
 
 
-def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, level: str = DEFAULT_COMPARISON_DISPLAY):
+def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, level: str = DEFAULT_COMPARISON_DISPLAY_LEVEL):
     # pylint: disable=too-many-branches
     # pylint: disable=too-many-statements
     # pylint: disable=too-many-locals
@@ -279,7 +279,9 @@ def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, l
             minus (str): Combined lines being removed
             plus (str): Combined lines being added
         """
-        if (minus or plus) and (level != 'none' or (level == 'changed' and minus != plus)):
+        if not minus and not plus:
+            return
+        if level == 'all' or (minus != plus and level == 'changed'):
             Printer.stdout(f"\nCompare: {fullfilename}")
             Printer.stdout(f"--- {len(minus):,} characters\n\"{minus}\"\n+++ {len(plus):,} characters\n\"{plus}\"")
         if minus != plus:
@@ -370,7 +372,7 @@ def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, l
     process_change(files_to_stage, fullfilename, minus, plus)
 
 
-def main():
+def main():     # pylint: disable=too-many-statements
     """Main processing method.
     """
     args = parse_command_line()
@@ -379,6 +381,7 @@ def main():
     stage_rst = args.rst if 'rst' in vars(args) else False
     silent = args.silent if 'silent' in vars(args) else False
     save_files = args.save_files if 'save_files' in vars(args) else False
+    display_comparison_level = args.display if 'display' in vars(args) else DEFAULT_COMPARISON_DISPLAY_LEVEL
     Printer.silent = silent
 
     if 'about' in vars(args) and args.about:
@@ -418,7 +421,7 @@ def main():
     parse_git_status(git_stat, files_to_stage, files_to_ignore, stage_rst)
 
     Printer.stdout(" - Parsing the git diff output.")
-    parse_git_diff(git_diff, files_to_stage, files_to_ignore)
+    parse_git_diff(git_diff, files_to_stage, files_to_ignore, display_comparison_level)
 
     if files_to_stage:
         Printer.stdout("\nFiles to add to git staging:")
