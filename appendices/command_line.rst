@@ -7,13 +7,17 @@ Picard can be started from the command line with the following arguments:
 
 .. code::
 
-   picard [-h] [-c CONFIG_FILE] [-d] [-N] [-P] [-s] [-v] [-V] [FILE_OR_URLs] [-e COMMANDs]
+   run_picard.py [-h] [-a AUDIT] [-c CONFIG_FILE] [-d] [-e COMMAND [COMMAND ...]] [-M] [-N] [-P] [--no-crash-dialog] [-s] [-v] [-V] [FILE_OR_URL ...]
 
 where the options are:
 
 .. option:: -h, --help
 
    show a help message and exit
+
+.. option:: -a AUDIT, --audit AUDIT
+
+   audit events passed as a comma-separated list, prefixes supported, use "all" to match any event. See the `Python Documentation <https://docs.python.org/3/library/audit_events.html#audit-events>`_ for more information.
 
 .. option:: -c CONFIG_FILE, --config-file CONFIG_FILE
 
@@ -38,6 +42,10 @@ where the options are:
 .. option:: -P, --no-plugins
 
    do not load any plugins
+
+.. option:: --no-crash-dialog
+
+   disable the crash dialog
 
 .. option:: -s, --stand-alone-instance
 
