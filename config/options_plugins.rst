@@ -90,7 +90,7 @@ You can install a third-party plugin that does not appear in the plugins list, u
 
 1. Download the plugin and save it to a local drive.
 
-2. Select the "Install plugin..." action, located just below the list of plugins.
+2. Select the :guilabel:`Install plugin...` action, located just below the list of plugins.
 
    .. image:: images/install-plugin.png
       :width: 100 %
@@ -98,4 +98,4 @@ You can install a third-party plugin that does not appear in the plugins list, u
 3. Navigate to the file you downloaded in Step 1 and select it.  The file will be copied to the plugin folder,
    and will appear in the list of plugins.
 
-4. Enable the plugin if desired, and select the "Make It So!" action button at the bottom of the window.
+4. Enable the plugin if desired, and select the :guilabel:`Make It So!` action button at the bottom of the window.
