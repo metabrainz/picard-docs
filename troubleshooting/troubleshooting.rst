@@ -40,7 +40,7 @@ If you're still convinced you have found a new bug, open a `new ticket <https://
 :index:`Getting a Debug Log <troubleshooting; get debug log>`
 -------------------------------------------------------------
 
-For many bugs, it helps developers to have a log from Picard. You can see the log by going to :menuselection:`"Help --> View Log"`. You can also get a full debug log, which is better because it contains more detailed information. Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly. To retrieve the full debug log:
+For many bugs, it helps developers to have a debug log from Picard. You can see the log by going to :menuselection:`"Help --> View Log"`. You can also get a full debug log, which is better because it contains more detailed information. Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly. To retrieve the full debug log:
 
 1. Start Picard.
 2. Open the log view with :menuselection:`"Help --> View Log"`.
@@ -52,10 +52,10 @@ For many bugs, it helps developers to have a log from Picard. You can see the lo
 8. Close the log viewer, and close Picard.
 
 
-:index:`Getting Logs in Case of Crashes <troubleshooting; getting log for chashes>`
+:index:`Getting Logs in Case of Crashes <troubleshooting; getting log for crashes>`
 -----------------------------------------------------------------------------------
 
-In some cases the problem will cause Picard to crash and not allow you to access the resulting log from the log viewer. You can still generate a log output to attach to your report by starting Picard with the ``-d`` command line option from a command / terminal window and copying the information output to the terminal. The steps to follow for each of the supported platforms are:
+In some cases the problem will cause Picard to crash and not allow you to access the resulting log from the log viewer. You can still generate a log output to attach to your report by starting Picard with the ``--debug`` command line option from a command / terminal window and copying the log output information from the terminal. The steps to follow for each of the supported platforms are:
 
 Windows Systems
 +++++++++++++++
@@ -64,13 +64,13 @@ First open a command window by clicking the search icon on the Windows Taskbar a
 
 .. code::
 
-   "C:\Program Files\MusicBrainz Picard\picard.exe" -d
+   "C:\Program Files\MusicBrainz Picard\picard.exe" --debug
 
-This will display all log information in the command window, and allow you to copy the information to the clipboard to paste into your report.
+This will display all log entries in the command window, and allow you to copy the information to the clipboard to paste into your report.
 
 .. note::
 
-   This method will only work with the installed version of Picard.  It will not work with the portable version.
+   This method will only work with the installed version of Picard.  It will not work with the portable or Windows Store versions.
 
 
 macOS Systems
@@ -88,19 +88,19 @@ Assuming Picard was put into the system wide Applications folder when installed,
 
    "/Applications/MusicBrainz Picard.app/Contents/MacOS/picard-run" --debug
 
-This will display all log information in the terminal window, and allow you to copy the information to the clipboard to paste into your report.
+This will display all log entries in the terminal window, and allow you to copy the information to the clipboard to paste into your report.
 
 
 Linux Systems
 +++++++++++++
 
-First open a Terminal window. Then start Picard by entering the following in the terminal window:
+First open a Terminal window in your desktop environment, either from the Applications menu or by pressing :kbd:`Ctrl+Alt+T` on most systems. Then start Picard by entering the following in the terminal window:
 
 .. code::
 
-   picard -d
+   picard --debug
 
-This will display all log information in the terminal window, and allow you to copy the information to the clipboard to paste into your report.
+This will display all log entries in the terminal window, and allow you to copy the information to the clipboard to paste into your report.
 
 
 .. only:: html and not epub
