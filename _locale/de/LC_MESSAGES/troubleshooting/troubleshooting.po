@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2023-09-22 08:57-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -75,61 +75,180 @@ msgid ""
 "the community forums first."
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:28
+#: ../../troubleshooting/troubleshooting.rst:26
 msgid ""
 "If you're still convinced you have found a new bug, open a `new ticket "
 "<https://tickets.musicbrainz.org/secure/CreateIssue.jspa?"
 "pid=10042&issuetype=1>`_ providing the following information:"
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:31
+#: ../../troubleshooting/troubleshooting.rst:28
 msgid "Which version of Picard do you use? (\"Affects Version\" in the form)"
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:32
+#: ../../troubleshooting/troubleshooting.rst:29
 msgid "Which operating system do you use? (\"Environment\" in the form)"
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:33
+#: ../../troubleshooting/troubleshooting.rst:30
 msgid "What did you do when the bug occurred?"
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:34
-msgid "What actually happened and what did you expect to happen?"
+#: ../../troubleshooting/troubleshooting.rst:31
+msgid "What actually happened, and what did you expect to happen?"
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:35
+#: ../../troubleshooting/troubleshooting.rst:32
 msgid "If you're using plugins, which plugins do you have enabled?"
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:39
-msgid ":index:`Getting Logs <troubleshooting; logs>`"
-msgstr ""
-
-#: ../../troubleshooting/troubleshooting.rst:41
+#: ../../troubleshooting/troubleshooting.rst:33
 msgid ""
-"For many bugs, it helps developers to have a log from Picard. You can see "
-"the log by going to :menuselection:`\"Help --> View Log\"`. You can also get "
-"a full debug log (better because it contains more detailed information) by "
-"starting Picard with :option:`-d` as a command-line argument. If you're "
-"using Windows, you can change your shortcut's Target (:menuselection:`right "
-"click shortcut --> Properties`) to::"
+"The **\"Debug\"** level log from the Picard session demonstrating the "
+"problem."
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:48
-msgid ""
-"Pasting this log into your forum post or bug ticket can help developers and "
-"other users to resolve your issue more quickly."
-msgstr ""
-
-#: ../../troubleshooting/troubleshooting.rst:52
+#: ../../troubleshooting/troubleshooting.rst:37
 msgid ""
 "Please remember to first remove any personal and confidential information "
 "like user id, passwords or authorization tokens before posting or submitting "
 "any log output."
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:59
+#: ../../troubleshooting/troubleshooting.rst:41
+msgid ":index:`Getting a Debug Log <troubleshooting; get debug log>`"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:43
+msgid ""
+"For many bugs, it helps developers to have a debug log from Picard. You can "
+"see the log by going to :menuselection:`\"Help --> View Log\"`. You can also "
+"get a full debug log, which is better because it contains more detailed "
+"information. Pasting this log into your forum post or bug ticket can help "
+"developers and other users to resolve your issue more quickly. To retrieve "
+"the full debug log:"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:45
+msgid "Start Picard."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:46
+msgid "Open the log view with :menuselection:`\"Help --> View Log\"`."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:47
+msgid "Change the log level :guilabel:`verbosity` to **Debug**."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:48
+msgid "Close the log viewer."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:49
+msgid "Close and restart Picard."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:50
+msgid "Repeat the action that caused the problem being reported."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:51
+msgid ""
+"Open the log viewer and copy the output to paste into the forum post or bug "
+"ticket. Alternately, you can save the log to a file to attach to your bug "
+"report by using the :guilabel:`Save As...` button."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:52
+msgid "Close the log viewer, and close Picard."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:56
+msgid ""
+":index:`Getting Logs in Case of Crashes <troubleshooting; getting log for "
+"crashes>`"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:58
+msgid ""
+"In some cases the problem will cause Picard to crash and not allow you to "
+"access the resulting log from the log viewer. You can still generate a log "
+"output to attach to your report by starting Picard with the ``--debug`` "
+"command line option from a command / terminal window and copying the log "
+"output information from the terminal. The steps to follow for each of the "
+"supported platforms are:"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:61
+msgid "Windows Systems"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:63
+msgid ""
+"First open a command window by clicking the search icon on the Windows "
+"Taskbar and enter \"cmd\". Then start Picard by entering the following in "
+"the command window:"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:69
+msgid ""
+"This will display all log entries in the command window, and allow you to "
+"copy the information to the clipboard to paste into your report."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:73
+msgid ""
+"This method will only work with the installed version of Picard.  It will "
+"not work with the portable or Windows Store versions."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:77
+msgid "macOS Systems"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:79
+msgid "First open a terminal window by doing one of the following:"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:81
+msgid ""
+"Click the Launchpad icon in the Dock, type \"Terminal\" in the search field, "
+"then click :guilabel:`Terminal`."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:83
+msgid ""
+"In the Finder, open the \"/Applications/Utilities\" folder, then double-"
+"click \"Terminal\"."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:85
+msgid ""
+"Assuming Picard was put into the system wide Applications folder when "
+"installed, it can then be started by entering the following in the terminal "
+"window:"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:91
+#: ../../troubleshooting/troubleshooting.rst:103
+msgid ""
+"This will display all log entries in the terminal window, and allow you to "
+"copy the information to the clipboard to paste into your report."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:95
+msgid "Linux Systems"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:97
+msgid ""
+"First open a Terminal window in your desktop environment, either from the "
+"Applications menu or by pressing :kbd:`Ctrl+Alt+T` on most systems. Then "
+"start Picard by entering the following in the terminal window:"
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:110
 msgid ""
 "Specific situations: :doc:`does_not_start` / :doc:`no_coverart` / :doc:"
 "`missing_tags` / :doc:`not_saving` / :doc:`stopped_working` / :doc:"
