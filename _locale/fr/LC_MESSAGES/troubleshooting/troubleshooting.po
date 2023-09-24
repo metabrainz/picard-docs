@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-22 08:57-0600\n"
-"PO-Revision-Date: 2022-05-04 13:10-0600\n"
+"PO-Revision-Date: 2023-09-24 03:27+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
+"Language-Team: French <https://translations.metabrainz.org/projects/"
+"picard-docs/troubleshootingtroubleshooting/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.0.2\n"
 "Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: ../../troubleshooting/troubleshooting.rst:4
 msgid ":index:`General Troubleshooting <troubleshooting; general>`"
@@ -122,9 +123,8 @@ msgid "What did you do when the bug occurred?"
 msgstr "Qu'avez-vous fait lorsque le bogue est survenu?"
 
 #: ../../troubleshooting/troubleshooting.rst:31
-#, fuzzy
 msgid "What actually happened, and what did you expect to happen?"
-msgstr "Que s'est-il réellement passé et à quoi vous attendiez-vous?"
+msgstr "Que s'est-il réellement passé, et à quoi vous attendiez-vous?"
 
 #: ../../troubleshooting/troubleshooting.rst:32
 msgid "If you're using plugins, which plugins do you have enabled?"
@@ -135,6 +135,8 @@ msgid ""
 "The **\"Debug\"** level log from the Picard session demonstrating the "
 "problem."
 msgstr ""
+"Le journal de niveau **\"Debug \"** de la session Picard démontrant le "
+"problème."
 
 #: ../../troubleshooting/troubleshooting.rst:37
 msgid ""
@@ -148,12 +150,12 @@ msgstr ""
 "journal."
 
 #: ../../troubleshooting/troubleshooting.rst:41
-#, fuzzy
 msgid ":index:`Getting a Debug Log <troubleshooting; get debug log>`"
-msgstr ":index:`Récupération des journaux <dépannage; journaux>`"
+msgstr ""
+":index:`Obtention d'un journal de débogage <dépannage; obtenir le journal de "
+"débogage>`"
 
 #: ../../troubleshooting/troubleshooting.rst:43
-#, fuzzy
 msgid ""
 "For many bugs, it helps developers to have a debug log from Picard. You can "
 "see the log by going to :menuselection:`\"Help --> View Log\"`. You can also "
@@ -162,37 +164,39 @@ msgid ""
 "developers and other users to resolve your issue more quickly. To retrieve "
 "the full debug log:"
 msgstr ""
-"Pour de nombreux bogues, cela aide les développeurs à avoir un journal de "
-"Picard. Vous pouvez voir le journal en allant dans :menuselection:`\"Aide --"
-"> Afficher le journal\"`. Vous pouvez également obtenir un journal de "
-"débogage complet (mieux car il contient des informations plus détaillées) en "
-"démarrant Picard avec :option:`-d` comme argument de ligne de commande. Si "
-"vous utilisez Windows, vous pouvez modifier la cible de votre raccourci (:"
-"menuselection:`raccourci clic droit --> Propriétés`) en::"
+"Pour de nombreux bogues, il est utile aux développeurs d'avoir un journal de "
+"débogage de Picard. Vous pouvez voir le journal en allant à :menuselection:`"
+"\"Aide --> Voir le journal\"`. Vous pouvez également obtenir un journal de "
+"débogage complet, ce qui est préférable car il contient des informations "
+"plus détaillées. Le fait de coller ce journal dans votre message sur le "
+"forum ou dans votre ticket de bogue peut aider les développeurs et les "
+"autres utilisateurs à résoudre votre problème plus rapidement. Pour "
+"récupérer le journal de débogage complet :"
 
 #: ../../troubleshooting/troubleshooting.rst:45
 msgid "Start Picard."
-msgstr ""
+msgstr "Commencez Picard."
 
 #: ../../troubleshooting/troubleshooting.rst:46
 msgid "Open the log view with :menuselection:`\"Help --> View Log\"`."
 msgstr ""
+"Ouvrez la vue du journal avec :menuselection:`\"Aide --> Voir le journal\"`."
 
 #: ../../troubleshooting/troubleshooting.rst:47
 msgid "Change the log level :guilabel:`verbosity` to **Debug**."
-msgstr ""
+msgstr "Changez le niveau de log :guilabel:`verbosité` en **Debug**."
 
 #: ../../troubleshooting/troubleshooting.rst:48
 msgid "Close the log viewer."
-msgstr ""
+msgstr "Fermez le visualiseur de journaux."
 
 #: ../../troubleshooting/troubleshooting.rst:49
 msgid "Close and restart Picard."
-msgstr ""
+msgstr "Fermer et redémarrer Picard."
 
 #: ../../troubleshooting/troubleshooting.rst:50
 msgid "Repeat the action that caused the problem being reported."
-msgstr ""
+msgstr "Répétez l'action qui a causé le problème signalé."
 
 #: ../../troubleshooting/troubleshooting.rst:51
 msgid ""
@@ -200,17 +204,22 @@ msgid ""
 "ticket. Alternately, you can save the log to a file to attach to your bug "
 "report by using the :guilabel:`Save As...` button."
 msgstr ""
+"Ouvrez la visionneuse de logs et copiez la sortie pour la coller dans le "
+"message du forum ou dans le rapport de bogue. Alternativement, vous pouvez "
+"enregistrer le journal dans un fichier à joindre à votre rapport de bogue en "
+"utilisant le bouton :guilabel:`Enregistrer sous...`."
 
 #: ../../troubleshooting/troubleshooting.rst:52
 msgid "Close the log viewer, and close Picard."
-msgstr ""
+msgstr "Fermez le visualisateur de journaux et fermez Picard."
 
 #: ../../troubleshooting/troubleshooting.rst:56
-#, fuzzy
 msgid ""
 ":index:`Getting Logs in Case of Crashes <troubleshooting; getting log for "
 "crashes>`"
-msgstr ":index:`Récupération des journaux <dépannage; journaux>`"
+msgstr ""
+":index:`Importer les logs en cas de crash <dépannage; obtenir les logs en "
+"cas de crash>`"
 
 #: ../../troubleshooting/troubleshooting.rst:58
 msgid ""
@@ -221,10 +230,17 @@ msgid ""
 "output information from the terminal. The steps to follow for each of the "
 "supported platforms are:"
 msgstr ""
+"Dans certains cas, le problème entraînera le plantage de Picard et ne vous "
+"permettra pas d'accéder au journal résultant à partir du visualisateur de "
+"journaux. Vous pouvez toujours générer une sortie de journal à joindre à "
+"votre rapport en démarrant Picard avec l'option de ligne de commande "
+"``--debug`` à partir d'une fenêtre de commande / terminal et en copiant les "
+"informations de sortie de journal à partir du terminal. Les étapes à suivre "
+"pour chacune des plateformes supportées sont les suivantes :"
 
 #: ../../troubleshooting/troubleshooting.rst:61
 msgid "Windows Systems"
-msgstr ""
+msgstr "Systèmes Windows"
 
 #: ../../troubleshooting/troubleshooting.rst:63
 msgid ""
@@ -232,38 +248,52 @@ msgid ""
 "Taskbar and enter \"cmd\". Then start Picard by entering the following in "
 "the command window:"
 msgstr ""
+"Ouvrez d'abord une fenêtre de commande en cliquant sur l'icône de recherche "
+"dans la barre des tâches de Windows et entrez \"cmd\". Démarrez ensuite "
+"Picard en saisissant la commande suivante dans la fenêtre de commande :"
 
 #: ../../troubleshooting/troubleshooting.rst:69
 msgid ""
 "This will display all log entries in the command window, and allow you to "
 "copy the information to the clipboard to paste into your report."
 msgstr ""
+"Cela affichera toutes les entrées du journal dans la fenêtre de commande et "
+"vous permettra de copier les informations dans le presse-papiers pour les "
+"coller dans votre rapport."
 
 #: ../../troubleshooting/troubleshooting.rst:73
 msgid ""
 "This method will only work with the installed version of Picard.  It will "
 "not work with the portable or Windows Store versions."
 msgstr ""
+"Cette méthode ne fonctionne qu'avec la version installée de Picard.  Elle ne "
+"fonctionnera pas avec les versions portables ou Windows Store."
 
 #: ../../troubleshooting/troubleshooting.rst:77
 msgid "macOS Systems"
-msgstr ""
+msgstr "Systèmes macOS"
 
 #: ../../troubleshooting/troubleshooting.rst:79
 msgid "First open a terminal window by doing one of the following:"
 msgstr ""
+"Ouvrez d'abord une fenêtre de terminal en effectuant l'une des opérations "
+"suivantes :"
 
 #: ../../troubleshooting/troubleshooting.rst:81
 msgid ""
 "Click the Launchpad icon in the Dock, type \"Terminal\" in the search field, "
 "then click :guilabel:`Terminal`."
 msgstr ""
+"Cliquez sur l'icône Launchpad dans le Dock, tapez \"Terminal\" dans le champ "
+"de recherche, puis cliquez sur :guilabel:`Terminal`."
 
 #: ../../troubleshooting/troubleshooting.rst:83
 msgid ""
 "In the Finder, open the \"/Applications/Utilities\" folder, then double-"
 "click \"Terminal\"."
 msgstr ""
+"Dans le Finder, ouvrez le dossier \"/Applications/Utilities\", puis double-"
+"cliquez sur \"Terminal\"."
 
 #: ../../troubleshooting/troubleshooting.rst:85
 msgid ""
@@ -271,6 +301,9 @@ msgid ""
 "installed, it can then be started by entering the following in the terminal "
 "window:"
 msgstr ""
+"Si Picard a été placé dans le dossier Applications du système lors de "
+"l'installation, il peut être démarré en entrant la commande suivante dans la "
+"fenêtre du terminal :"
 
 #: ../../troubleshooting/troubleshooting.rst:91
 #: ../../troubleshooting/troubleshooting.rst:103
@@ -278,10 +311,13 @@ msgid ""
 "This will display all log entries in the terminal window, and allow you to "
 "copy the information to the clipboard to paste into your report."
 msgstr ""
+"Cela affichera toutes les entrées du journal dans la fenêtre du terminal et "
+"vous permettra de copier les informations dans le presse-papiers pour les "
+"coller dans votre rapport."
 
 #: ../../troubleshooting/troubleshooting.rst:95
 msgid "Linux Systems"
-msgstr ""
+msgstr "Systèmes Linux"
 
 #: ../../troubleshooting/troubleshooting.rst:97
 msgid ""
@@ -289,6 +325,10 @@ msgid ""
 "Applications menu or by pressing :kbd:`Ctrl+Alt+T` on most systems. Then "
 "start Picard by entering the following in the terminal window:"
 msgstr ""
+"Ouvrez d'abord une fenêtre de terminal dans votre environnement de bureau, "
+"soit à partir du menu Applications, soit en appuyant sur :kbd:`Ctrl+Alt+T` "
+"sur la plupart des systèmes. Ensuite, démarrez Picard en entrant ce qui suit "
+"dans la fenêtre du terminal :"
 
 #: ../../troubleshooting/troubleshooting.rst:110
 msgid ""
