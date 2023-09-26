@@ -7,7 +7,7 @@
 //////////////////////////////////////////////////////////////////////////
 const default_language = 'en';
 const stable_version = '2.9';
-const versions = ['2.3', '2.4', '2.5', '2.6', '2.7', '2.8', '2.9'];
+const versions = ['2.3', '2.4', '2.5', '2.6', '2.7', '2.8', '2.9', '2.10'];
 var vcount = versions.length;
 var i, text;
 var serv = window.location.protocol + '//' + window.location.hostname
