@@ -66,30 +66,6 @@ These variables are populated from MusicBrainz data for most releases, without a
 
     Rating 0-5 by MusicBrainz users.
 
-**_recording_comment**
-
-   The disambiguation comment for the recording associated with a track.
-
-**_recording_firstreleasedate**
-
-   The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
-
-**_recording_series**
-
-   The series title(s) associated with the recording (multi-value). (*since Picard 2.9*)
-
-**_recording_seriesid**
-
-   The series MBID(s) associated with the recording (multi-value). (*since Picard 2.9*)
-
-**_recording_seriescomment**
-
-   The series disambiguation comment(s) associated with the recording (multi-value). (*since Picard 2.9*)
-
-**_recording_seriesnumber**
-
-   The series number(s) associated with the recording (multi-value). (*since Picard 2.9*)
-
 **_releaseannotation**
 
    The annotation comment for the release. (*since Picard 2.6*)

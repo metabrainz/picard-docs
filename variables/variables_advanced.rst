@@ -24,11 +24,31 @@ If you enable tagging with :doc:`Use track relationships </config/options_metada
 
 **_recordingcomment**
 
-    Recording disambiguation comment. (*since Picard 0.15*)
+   The disambiguation comment for the recording associated with a track. (*since Picard 0.15*)
 
 **_recordingtitle**
 
     Recording title - normally the same as the Track title, but can be different.
+
+**_recording_firstreleasedate**
+
+   The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
+
+**_recording_series**
+
+   The series title(s) associated with the recording (multi-value). (*since Picard 2.9*)
+
+**_recording_seriesid**
+
+   The series MBID(s) associated with the recording (multi-value). (*since Picard 2.9*)
+
+**_recording_seriescomment**
+
+   The series disambiguation comment(s) associated with the recording (multi-value). (*since Picard 2.9*)
+
+**_recording_seriesnumber**
+
+   The series number(s) associated with the recording (multi-value). (*since Picard 2.9*)
 
 **_workcomment**
 
