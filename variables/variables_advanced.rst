@@ -4,56 +4,103 @@
 
 .. TODO: Note which tags are not provided by Picard
 
+
+.. Test Release 1
+
+.. No extra relationships specified
+.. https://musicbrainz.org/ws/2/release/8c759d7a-2ade-4201-abc2-a2a7c1a6ad6c?inc=aliases+annotation+artist-credits+artists+collections+discids+isrcs+labels+media+recordings+release-groups&fmt=json
+
+.. Release extra relationships specified
+.. https://musicbrainz.org/ws/2/release/8c759d7a-2ade-4201-abc2-a2a7c1a6ad6c?inc=aliases+annotation+artist-credits+artists+collections+discids+isrcs+labels+media+recordings+release-groups+artist-rels+recording-rels+release-group-level-rels+release-rels+series-rels+url-rels+work-rels&fmt=json
+
+.. Track extra relationships specified
+.. https://musicbrainz.org/ws/2/release/8c759d7a-2ade-4201-abc2-a2a7c1a6ad6c?inc=aliases+annotation+artist-credits+artists+collections+discids+isrcs+labels+media+recordings+release-groups+artist-rels+recording-rels+release-group-level-rels+release-rels+series-rels+url-rels+work-rels+recording-level-rels+work-level-rels&fmt=json
+
+
+.. Test Release 2
+
+.. No extra relationships specified
+.. https://musicbrainz.org/ws/2/release/59f6dc82-6e05-4d58-8fae-d93c55a250ef?inc=aliases+annotation+artist-credits+artists+collections+discids+isrcs+labels+media+recordings+release-groups&fmt=json
+
+.. Release extra relationships specified
+.. https://musicbrainz.org/ws/2/release/59f6dc82-6e05-4d58-8fae-d93c55a250ef?inc=aliases+annotation+artist-credits+artists+collections+discids+isrcs+labels+media+recordings+release-groups+artist-rels+recording-rels+release-group-level-rels+release-rels+series-rels+url-rels+work-rels&fmt=json
+
+.. Track extra relationships specified
+.. https://musicbrainz.org/ws/2/release/59f6dc82-6e05-4d58-8fae-d93c55a250ef?inc=aliases+annotation+artist-credits+artists+collections+discids+isrcs+labels+media+recordings+release-groups+artist-rels+recording-rels+release-group-level-rels+release-rels+series-rels+url-rels+work-rels+recording-level-rels+work-level-rels&fmt=json
+
+
 :index:`Advanced Variables <variables; advanced>`
 ==================================================
 
-If you enable tagging with :doc:`Use track relationships </config/options_metadata>`, you get these extra variables:
+You can make additional tags available by enabling the :doc:`Use track relationships </config/options_metadata>` and/or the
+:doc:`Use release relationships </config/options_metadata>` settings in Picard.
+
+Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation.
 
 .. note::
 
    Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.
 
+
+Track Relationship Variables
+----------------------------
+
+If you enable tagging with :doc:`Use track relationships </config/options_metadata>`, you get these extra variables:
+
 **_lyricistsort**
 
-    The sort names of the lyricists for the work. (*since Picard 2.9*)
+   The sort names of the lyricists for the work. (*since Picard 2.9*)
 
 **_performance_attributes**
 
-    List of performance attributes for the work (e.g.: "live", "cover", "medley"). Use :ref:`func_inmulti` to check for
-    a specific type (i.e.: ``$if($inmulti(%_performance_attributes%,medley), (Medley),)``). (*since Picard 1.3*)
-
-**_recordingcomment**
-
-   The disambiguation comment for the recording associated with a track. (*since Picard 0.15*)
+   List of performance attributes for the work (e.g.: "live", "cover", "medley"). Use :ref:`func_inmulti` to check for a specific type (i.e.: ``$if($inmulti(%_performance_attributes%,medley), (Medley),)``). (*since Picard 1.3*)
 
 **_recordingtitle**
 
-    Recording title - normally the same as the Track title, but can be different.
-
-**_recording_firstreleasedate**
-
-   The date of the earliest recording for a track in the format YYYY-MM-DD.  (*Since Picard 2.6*)
+   Recording title - normally the same as the track title, but can be different.
 
 **_recording_series**
 
-   The series title(s) associated with the recording (multi-value). (*since Picard 2.9*)
+   A multi-value variable containing the series titles associated with the recording. (*since Picard 2.9*)
 
 **_recording_seriesid**
 
-   The series MBID(s) associated with the recording (multi-value). (*since Picard 2.9*)
+   A multi-value variable containing the series MBIDs associated with the recording. (*since Picard 2.9*)
 
 **_recording_seriescomment**
 
-   The series disambiguation comment(s) associated with the recording (multi-value). (*since Picard 2.9*)
+   A multi-value variable containing the series disambiguation comments associated with the recording. (*since Picard 2.9*)
 
 **_recording_seriesnumber**
 
-   The series number(s) associated with the recording (multi-value). (*since Picard 2.9*)
+   A multi-value variable containing the series numbers associated with the recording. (*since Picard 2.9*)
 
 **_workcomment**
 
-    Work disambiguation comment. (*since Picard 2.7*)
+   The disambiguation comment associated with the work. (*since Picard 2.7*)
 
 **_writersort**
 
-    The sort names of the writers for the work. (*since Picard 2.9*)
+   The sort names of the writers for the work. (*since Picard 2.9*)
+
+
+Track or Release Relationship Variables
+---------------------------------------
+
+If you enable tagging with :doc:`Use track relationships </config/options_metadata>` or :doc:`Use release relationships </config/options_metadata>`, you get these extra variables:
+
+**_work_series**
+
+   A multi-value variable containing the series titles associated with the work. (*since Picard 2.9*)
+
+**_work_seriesid**
+
+   A multi-value variable containing the series MBIDs associated with the work. (*since Picard 2.9*)
+
+**_work_seriescomment**
+
+   A multi-value variable containing the series disambiguation comments associated with the work. (*since Picard 2.9*)
+
+**_work_seriesnumber**
+
+   A multi-value variable containing the series numbers associated with the work. (*since Picard 2.9*)
