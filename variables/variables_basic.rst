@@ -73,22 +73,6 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
    The date of the earliest recording for a track in the format YYYY-MM-DD. (*Since Picard 2.6*)
 
-**_release_series**
-
-   A multi-value variable containing the series titles associated with the release. (*since Picard 2.9*)
-
-**_release_seriesid**
-
-   A multi-value variable containing the series MBIDs associated with the release. (*since Picard 2.9*)
-
-**_release_seriescomment**
-
-   A multi-value variable containing the series disambiguation comments associated with the release. (*since Picard 2.9*)
-
-**_release_seriesnumber**
-
-   A multi-value variable containing the series numbers associated with the release. (*since Picard 2.9*)
-
 **_releaseannotation**
 
    The annotation comment for the release. (*since Picard 2.6*)

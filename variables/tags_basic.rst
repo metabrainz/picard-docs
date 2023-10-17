@@ -204,7 +204,7 @@ These tags will be provided based on the information from the MusicBrainz databa
 Tags Not Provided from MusicBrainz Data
 ---------------------------------------
 
-These tags are not able to be populated by stock Picard, however they may be used and populated by certain plugins.
+These tags are not able to be populated by stock Picard, however they may be used and populated by certain plugins or scripts.
 
 **acoustid_fingerprint**
 
@@ -262,6 +262,10 @@ These tags are not able to be populated by stock Picard, however they may be use
 
    The original name of the audio file.
 
+**producer**
+
+   The names of the producers for the associated release or recording.
+
 **showmovement**
 
    The work and movement of the track.
@@ -278,7 +282,7 @@ These tags are not able to be populated by stock Picard, however they may be use
 iTunes-Specific Tags
 --------------------
 
-These tags are only available in iTunes files and are not able to be populated by stock Picard, however they may be used and populated by certain plugins.
+These tags are only available in iTunes files and are not able to be populated by stock Picard, however they may be used and populated by certain plugins or scripts.
 
 **gapless**
 

@@ -42,6 +42,29 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
    Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.
 
 
+Release Relationship Variables
+------------------------------
+
+If you enable tagging with :doc:`Use release relationships </config/options_metadata>`, you get these extra variables:
+
+**_release_series**
+
+   A multi-value variable containing the series titles associated with the release. (*since Picard 2.9*)
+
+**_release_seriesid**
+
+   A multi-value variable containing the series MBIDs associated with the release. (*since Picard 2.9*)
+
+**_release_seriescomment**
+
+   A multi-value variable containing the series disambiguation comments associated with the release. (*since Picard 2.9*)
+
+**_release_seriesnumber**
+
+   A multi-value variable containing the series numbers associated with the release. (*since Picard 2.9*)
+
+
+
 Track Relationship Variables
 ----------------------------
 
@@ -79,16 +102,6 @@ If you enable tagging with :doc:`Use track relationships </config/options_metada
 
    The disambiguation comment associated with the work. (*since Picard 2.7*)
 
-**_writersort**
-
-   The sort names of the writers for the work. (*since Picard 2.9*)
-
-
-Track or Release Relationship Variables
----------------------------------------
-
-If you enable tagging with :doc:`Use track relationships </config/options_metadata>` or :doc:`Use release relationships </config/options_metadata>`, you get these extra variables:
-
 **_work_series**
 
    A multi-value variable containing the series titles associated with the work. (*since Picard 2.9*)
@@ -104,3 +117,7 @@ If you enable tagging with :doc:`Use track relationships </config/options_metada
 **_work_seriesnumber**
 
    A multi-value variable containing the series numbers associated with the work. (*since Picard 2.9*)
+
+**_writersort**
+
+   The sort names of the writers for the work. (*since Picard 2.9*)
