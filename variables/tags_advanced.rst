@@ -111,9 +111,9 @@ If you enable "Use track relationships" in the Option settings, you get these ex
 
    - the concert master for the associated release or recording, where <type> is "*concertmaster*"
 
-**releasedate**
+**producer**
 
-   Explicit tag for the release date (*since Picard 2.9*). This tag exists for specific use in scripts and plugins, but is not filled by default. In most cases it is recommended to use the ``date`` tag instead for compatibility with existing software.
+   The names of the producers for the associated release or recording.
 
 **remixer**
 

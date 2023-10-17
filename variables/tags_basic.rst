@@ -262,9 +262,9 @@ These tags are not able to be populated by stock Picard, however they may be use
 
    The original name of the audio file.
 
-**producer**
+**releasedate**
 
-   The names of the producers for the associated release or recording.
+   Explicit tag for the release date (*since Picard 2.9*). This tag exists for specific use in scripts and plugins, but is not filled by default. In most cases it is recommended to use the ``date`` tag instead for compatibility with existing software.
 
 **showmovement**
 
