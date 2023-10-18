@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-18 12:03-0600\n"
-"PO-Revision-Date: 2023-08-16 04:07+0000\n"
+"PO-Revision-Date: 2023-10-18 18:51+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
-"docs/variablestags_advanced/fr/>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/"
+"picard-docs/variablestags_advanced/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/tags_advanced.rst:33
@@ -26,7 +26,6 @@ msgid ":index:`Advanced Tags <tags; advanced>`"
 msgstr ":index:`Balises avancées <balises; avancées>`"
 
 #: ../../variables/tags_advanced.rst:35
-#, fuzzy
 msgid ""
 "You can make additional tags available by enabling the :doc:`Use track "
 "relationships </config/options_metadata>` and/or the :doc:`Use genres from "
@@ -34,8 +33,8 @@ msgid ""
 msgstr ""
 "Vous pouvez rendre des balises supplémentaires disponibles en activant les "
 "paramètres :doc:`Utiliser les relations de suivi </config/options_metadata>` "
-"et :doc:`Utiliser les genres de MusicBrainz </config/options_genres>` dans "
-"Picard."
+"et/ou :doc:`Utiliser les genres de MusicBrainz </config/options_genres>` "
+"dans Picard."
 
 #: ../../variables/tags_advanced.rst:37
 msgid ""
@@ -46,6 +45,13 @@ msgid ""
 "`MusicBrainz Identifier <https://musicbrainz.org/doc/"
 "MusicBrainz_Identifier>`_ page in the MusicBrainz documentation."
 msgstr ""
+"Certaines balises fournissent le :index:`Identifiant MusicBrainz (MBID) "
+"<identifiant; musicbrainz, mbid>` de l'entité. Le MBID est un identifiant de "
+"32 caractères attribué à une entité (par exemple : un artiste, un album, une "
+"piste ou une œuvre) afin de l'identifier de manière unique. Pour plus "
+"d'informations sur les MBID, veuillez consulter la page `Identifiant "
+"MusicBrainz <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ dans la "
+"documentation MusicBrainz."
 
 #: ../../variables/tags_advanced.rst:41
 msgid ""
@@ -57,29 +63,27 @@ msgstr ""
 "données MusicBrainz."
 
 #: ../../variables/tags_advanced.rst:45
-#, fuzzy
 msgid ""
 "Some of these tags are only supported for certain file types or tag formats. "
 "Please see the :doc:`Picard Tag Mapping </appendices/tag_mapping>` section "
 "for details."
 msgstr ""
 "Certaines de ces balises ne sont prises en charge que pour certains types de "
-"fichiers ou formats de balises. Veuillez consulter la section :doc:"
-"`Correspondances des balises Picardes </appendices/tag_mapping>` pour plus "
-"de détails."
+"fichiers ou formats de balises. Veuillez consulter la section :doc:`"
+"Cartographie des étiquettes Picard </appendices/tag_mapping>` pour plus de "
+"détails."
 
 #: ../../variables/tags_advanced.rst:52
 msgid "Track Relationship Tags"
 msgstr "Balises de relation de suivi"
 
 #: ../../variables/tags_advanced.rst:54
-#, fuzzy
 msgid ""
 "If you enable \"Use track relationships\" in the Option settings, you get "
 "these extra tags:"
 msgstr ""
-"Si vous activez le balisage avec \"Utiliser les relations de suivi\", vous "
-"obtenez ces balises supplémentaires :"
+"Si vous activez l'option \"Utiliser les relations de suivi\" dans les "
+"paramètres de l'option, vous obtiendrez ces balises supplémentaires :"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:56
@@ -87,15 +91,14 @@ msgid "**arranger**"
 msgstr "**arranger**"
 
 #: ../../variables/tags_advanced.rst:58
-#, fuzzy
 msgid ""
 "The names of the arrangers associated with the track. These can include the "
 "instrument and orchestra arrangers, and could be associated with the "
 "release, recording or work. (*since Picard 0.10*)"
 msgstr ""
-"Les noms des arrangeurs associés à la piste.  Cela peut inclure les "
-"arrangeurs des instruments et de l'orchestre, et peut être associé à la "
-"sortie, l'enregistrement ou l'œuvre. (*depuis Picard 0.10*)"
+"Les noms des arrangeurs associés à la piste. Il peut s'agir d'arrangeurs "
+"d'instruments et d'orchestres, et ils peuvent être associés à la "
+"publication, à l'enregistrement ou à l'œuvre. (*depuis Picard 0.10*)"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:60
@@ -121,15 +124,14 @@ msgid "**conductor**"
 msgstr "**conductor**"
 
 #: ../../variables/tags_advanced.rst:70
-#, fuzzy
 msgid ""
 "The names of the conductors associated with the track. These can include the "
 "conductor and chorus master, and could be associated with the release or "
 "recording."
 msgstr ""
-"Les noms des chefs d'orchestre associés à la piste.  Ils peuvent inclure le "
-"chef d'orchestre et le chef de chœur, et peuvent être associés à la sortie "
-"ou à l'enregistrement."
+"Les noms des chefs d'orchestre associés à la piste. Il peut s'agir du chef "
+"d'orchestre et du chef de chœur, et peut être associé à la publication ou à "
+"l'enregistrement."
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:72
@@ -137,15 +139,14 @@ msgid "**director**"
 msgstr "**director**"
 
 #: ../../variables/tags_advanced.rst:74
-#, fuzzy
 msgid ""
 "The director of a track as provided by the *Video Director* or *Audio "
 "Director* relationship in MusicBrainz. (*Since Picard 2.6, updated in Picard "
 "2.9*)"
 msgstr ""
-"Le réalisateur d'une piste tel que fourni par la relation Directeur de la "
-"vidéo ou Directeur de l'audio dans MusicBrainz.  (*Depuis Picard 2.6, mis à "
-"jour dans Picard 2.9*)"
+"Le réalisateur d'une piste tel que fourni par la relation *Video Director* "
+"ou *Audio Director* dans MusicBrainz. (*Depuis Picard 2.6, mis à jour dans "
+"Picard 2.9*)"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:76
