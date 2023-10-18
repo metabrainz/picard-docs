@@ -63,6 +63,21 @@ If you enable tagging with :doc:`Use release relationships </config/options_meta
 
    A multi-value variable containing the series numbers associated with the release. (*since Picard 2.9*)
 
+**_releasegroup_series**
+
+   A multi-value variable containing the series titles associated with the release group. (*since Picard 2.9*)
+
+**_releasegroup_seriesid**
+
+   A multi-value variable containing the series MBIDs associated with the release group. (*since Picard 2.9*)
+
+**_releasegroup_seriescomment**
+
+   A multi-value variable containing the series disambiguation comments associated with the release group. (*since Picard 2.9*)
+
+**_releasegroup_seriesnumber**
+
+   A multi-value variable containing the series numbers associated with the release group. (*since Picard 2.9*)
 
 
 Track Relationship Variables
