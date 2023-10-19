@@ -75,14 +75,18 @@
    right single quotation marks are converted to ASCII apostrophes ('), and horizontal ellipses are converted to three
    full stops (...).
 
+**Use track and release relationships**
+
+   Check to write track-level relationships (e.g.: composer, lyricist, performer, or remixer) to your files.
+
+   .. note::
+
+      Enabling this option also automatically enables the "Use release relationships" option, and that option cannot be disabled.
+
 **Use release relationships**
 
    Check to retrieve and write release-level relationships (e.g.: URLs, composer, lyricist, performer, conductor, or DJ mixer)
    to your files. You must have this enabled to use Picard to retrieve cover art.
-
-**Use track relationships**
-
-   Check to write track-level relationships (e.g.: composer, lyricist, performer, or remixer) to your files.
 
 **Guess track number and title from filename if empty**
 

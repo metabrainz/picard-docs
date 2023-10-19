@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2023-10-19 08:55-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -50,8 +50,8 @@ msgid ""
 "If there are no exact matches to any of the selected locales, then Picard "
 "will attempt to find a match based on the root locale.  For example, if you "
 "have selected locales of \"English (Canadian)\", \"English (US)\" and "
-"\"Greek (Cyprus)\", and there are aliases for \"English (UK)\" and \"Greek"
-"\", then the \"English (UK)\" alias will be used."
+"\"Greek (Cyprus)\", and there are aliases for \"English (UK)\" and "
+"\"Greek\", then the \"English (UK)\" alias will be used."
 msgstr ""
 
 #: ../../config/options_metadata.rst:23
@@ -158,53 +158,59 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_metadata.rst:78
-msgid "**Use release relationships**"
+msgid "**Use track and release relationships**"
 msgstr ""
 
 #: ../../config/options_metadata.rst:80
+msgid ""
+"Check to write track-level relationships (e.g.: composer, lyricist, "
+"performer, or remixer) to your files."
+msgstr ""
+
+#: ../../config/options_metadata.rst:84
+msgid ""
+"Enabling this option also automatically enables the \"Use release "
+"relationships\" option, and that option cannot be disabled."
+msgstr ""
+
+#: ../../config/options_metadata.rst:86
+msgid "**Use release relationships**"
+msgstr ""
+
+#: ../../config/options_metadata.rst:88
 msgid ""
 "Check to retrieve and write release-level relationships (e.g.: URLs, "
 "composer, lyricist, performer, conductor, or DJ mixer) to your files. You "
 "must have this enabled to use Picard to retrieve cover art."
 msgstr ""
 
-#: ../../config/options_metadata.rst:83
-msgid "**Use track relationships**"
-msgstr ""
-
-#: ../../config/options_metadata.rst:85
-msgid ""
-"Check to write track-level relationships (e.g.: composer, lyricist, "
-"performer, or remixer) to your files."
-msgstr ""
-
-#: ../../config/options_metadata.rst:87
+#: ../../config/options_metadata.rst:91
 msgid "**Guess track number and title from filename if empty**"
 msgstr ""
 
-#: ../../config/options_metadata.rst:89
+#: ../../config/options_metadata.rst:93
 msgid ""
 "If checked, Picard will try to guess a file's track number or title from the "
 "filename if the ``tracknumber`` or ``title`` tag is empty."
 msgstr ""
 
-#: ../../config/options_metadata.rst:92
+#: ../../config/options_metadata.rst:96
 msgid "**Various artists**"
 msgstr ""
 
-#: ../../config/options_metadata.rst:94
+#: ../../config/options_metadata.rst:98
 msgid "Choose how you want the \"Various Artists\" artist spelled."
 msgstr ""
 
-#: ../../config/options_metadata.rst:96
+#: ../../config/options_metadata.rst:100
 msgid "**Standalone recordings**"
 msgstr ""
 
-#: ../../config/options_metadata.rst:98
+#: ../../config/options_metadata.rst:102
 msgid "Choose how you want \"Standalone recordings\" to be grouped."
 msgstr ""
 
-#: ../../config/options_metadata.rst:104
+#: ../../config/options_metadata.rst:108
 msgid ""
 "Details: :doc:`options_releases` / :doc:`options_genres` / :doc:"
 "`options_ratings`"
