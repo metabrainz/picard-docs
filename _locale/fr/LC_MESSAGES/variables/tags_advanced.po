@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-18 12:03-0600\n"
-"PO-Revision-Date: 2023-10-18 18:51+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-10-19 15:21+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/"
 "picard-docs/variablestags_advanced/fr/>\n"
 "Language: fr\n"
@@ -167,7 +167,6 @@ msgid "The names of the engineers associated with the track."
 msgstr "Les noms des ingénieurs associés à la piste."
 
 #: ../../variables/tags_advanced.rst:84
-#, fuzzy
 msgid "**language**"
 msgstr "**language**"
 
@@ -176,6 +175,8 @@ msgid ""
 "Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/"
 "ISO_639-3>`_ if a related work exists. (*since Picard 0.10*)"
 msgstr ""
+"Langage lyrique de travail selon `ISO 639-3 <https://wikipedia.org/wiki/"
+"ISO_639-3>`_ si un travail connexe existe. (*depuis Picard 0.10*)"
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:88
@@ -205,22 +206,20 @@ msgid "**mixer**"
 msgstr "**mixer**"
 
 #: ../../variables/tags_advanced.rst:98
-#, fuzzy
 msgid ""
 "The names of the \"*Mixed By*\" engineers associated with the track. (*since "
 "Picard 0.9*)"
 msgstr ""
-"Les noms des ingénieurs \"Mélangé par\" associés à la piste. (*depuis Picard "
-"0.9*)"
+"Les noms des ingénieurs \"*Mélangé par*\" associés à la piste. (*depuis "
+"Picard 0.9*)"
 
 #: ../../variables/tags_advanced.rst:100
-#, fuzzy
 msgid "**musicbrainz_workid**"
 msgstr "**musicbrainz_workid**"
 
 #: ../../variables/tags_advanced.rst:102
 msgid "The MBID for the Work if a related work exists."
-msgstr ""
+msgstr "L'MBID de l'œuvre s'il existe une œuvre connexe."
 
 # Tag name.  Do not translate (other than "type").
 #: ../../variables/tags_advanced.rst:104
@@ -228,38 +227,33 @@ msgid "**performer:<type>**"
 msgstr "**performer:<type>**"
 
 #: ../../variables/tags_advanced.rst:106
-#, fuzzy
 msgid ""
 "The names of the performers for the specified type. These types include:"
-msgstr ""
-"Les noms des interprètes pour le type spécifié.  Ces types comprennent :"
+msgstr "Les noms des interprètes pour le type spécifié. Ces types comprennent :"
 
 #: ../../variables/tags_advanced.rst:108
-#, fuzzy
 msgid ""
 "vocals or instruments for the associated release or recording, where <type> "
 "can be \"*vocal*\", \"*guest guitar*\", \"*solo violin*\", etc."
 msgstr ""
 "des voix ou des instruments pour la sortie ou l'enregistrement associé, où "
-"<type> peut être \"voix\", \"guitare invitée\", \"violon solo\", etc."
+"<type> peut être \"*voix*\", \"*guitare invitée*\", \"*violon solo*\", etc."
 
 #: ../../variables/tags_advanced.rst:110
-#, fuzzy
 msgid ""
 "the orchestra for the associated release or recording, where <type> is "
 "\"*orchestra*\""
 msgstr ""
 "l'orchestre de la publication ou de l'enregistrement associé, où <type> est "
-"\"orchestre\""
+"\"*orchestre*\""
 
 #: ../../variables/tags_advanced.rst:112
-#, fuzzy
 msgid ""
 "the concert master for the associated release or recording, where <type> is "
 "\"*concertmaster*\""
 msgstr ""
 "le master de concert pour la publication ou l'enregistrement associé, où "
-"<type> est \"concertmaster\""
+"<type> est \"*concertmaster*\""
 
 # Tag name.  Do not translate.
 #: ../../variables/tags_advanced.rst:114
@@ -294,16 +288,15 @@ msgid "**writer**"
 msgstr "**writer**"
 
 #: ../../variables/tags_advanced.rst:128
-#, fuzzy
 msgid ""
 "A multi-value tag containing the names of the writers associated with the "
 "related work. (*since Picard 1.0*). This is not written to most file formats "
 "automatically. You can merge this with composers with a script like:"
 msgstr ""
-"Les noms des rédacteurs associés aux travaux connexes. (*depuis Picard "
-"1.0*). Ceci n'est pas écrit automatiquement dans la plupart des formats de "
-"fichiers. Vous pouvez le fusionner avec les compositeurs avec un script "
-"comme :"
+"Une balise multi-valeurs contenant les noms des écrivains associés au "
+"travail en question. (*depuis Picard 1.0*). Cette balise n'est pas écrite "
+"automatiquement dans la plupart des formats de fichiers. Vous pouvez la "
+"fusionner avec les compositeurs à l'aide d'un script tel que :"
 
 #: ../../variables/tags_advanced.rst:136
 msgid ""
@@ -311,6 +304,9 @@ msgid ""
 "level relationships, and the values may be different depending on which "
 "relationship options are enabled."
 msgstr ""
+"Certains tags tels que **performer** sont disponibles à la fois pour les "
+"relations au niveau de la piste et de la version, et les valeurs peuvent "
+"être différentes en fonction des options de relations activées."
 
 #: ../../variables/tags_advanced.rst:142
 msgid ":index:`Genre Tags <tags; genre>`"
@@ -326,13 +322,13 @@ msgid "**genre**"
 msgstr "**genre**"
 
 #: ../../variables/tags_advanced.rst:148
-#, fuzzy
 msgid ""
 "A multi-value tag containing the specified genre information from "
 "MusicBrainz (*since Picard 2.1, earlier versions used folksonomy tags*)"
 msgstr ""
-"Informations sur le genre de MusicBrainz (*depuis Picard 2.1, les versions "
-"antérieures utilisaient des balises folksonomy*)"
+"Une étiquette à valeurs multiples contenant les informations sur le genre "
+"spécifié provenant de MusicBrainz (*depuis Picard 2.1, les versions "
+"antérieures utilisaient des étiquettes folksonomiques*)."
 
 # Tag name.  Do not translate.
 #~ msgid "**releasedate**"
