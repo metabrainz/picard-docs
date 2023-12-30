@@ -65,7 +65,11 @@
 <li class="toctree-l2"><a class="reference internal" href="tags_advanced.html">Advanced Tags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_basic.html">Basic Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_file.html">File Variables</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Advanced Variables</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Advanced Variables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#release-relationship-variables">Release Relationship Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#track-relationship-variables">Track Relationship Variables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="variables_classical.html">Classical Music Tags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_plugins.html">Tags from Plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_other_information.html">Other Information</a></li>
@@ -155,36 +159,105 @@
              
   <div class="section" id="advanced-variables">
 <h1><span class="target" id="index-0"></span>Advanced Variables<a class="headerlink" href="#advanced-variables" title="Permalink to this headline"></a></h1>
-<p>If you enable tagging with <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use track relationships</span></a>, you get these extra variables:</p>
+<p>You can make additional tags available by enabling the <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use track relationships</span></a> and/or the
+<a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use release relationships</span></a> settings in Picard.</p>
+<p>Some variables provide the <span class="target" id="index-1"></span>MusicBrainz Identifier (MBID) of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Identifier</a> page in the MusicBrainz documentation.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.</p>
 </div>
+<div class="section" id="release-relationship-variables">
+<h2>Release Relationship Variables<a class="headerlink" href="#release-relationship-variables" title="Permalink to this headline"></a></h2>
+<p>If you enable tagging with <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use release relationships</span></a>, you get these extra variables:</p>
+<p><strong>_release_series</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series titles associated with the release. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesid</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series MBIDs associated with the release. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriescomment</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series disambiguation comments associated with the release. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesnumber</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series numbers associated with the release. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_series</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series titles associated with the release group. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesid</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series MBIDs associated with the release group. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriescomment</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series disambiguation comments associated with the release group. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesnumber</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series numbers associated with the release group. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+</div>
+<div class="section" id="track-relationship-variables">
+<h2>Track Relationship Variables<a class="headerlink" href="#track-relationship-variables" title="Permalink to this headline"></a></h2>
+<p>If you enable tagging with <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use track relationships</span></a>, you get these extra variables:</p>
 <p><strong>_lyricistsort</strong></p>
 <blockquote>
 <div><p>The sort names of the lyricists for the work. (<em>since Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>_performance_attributes</strong></p>
 <blockquote>
-<div><p>List of performance attributes for the work (e.g.: “live”, “cover”, “medley”). Use <a class="reference internal" href="../functions/func_inmulti.html#func-inmulti"><span class="std std-ref">$inmulti</span></a> to check for
-a specific type (i.e.: <code class="docutils literal notranslate"><span class="pre">$if($inmulti(%_performance_attributes%,medley),</span> <span class="pre">(Medley),)</span></code>). (<em>since Picard 1.3</em>)</p>
-</div></blockquote>
-<p><strong>_recordingcomment</strong></p>
-<blockquote>
-<div><p>Recording disambiguation comment. (<em>since Picard 0.15</em>)</p>
+<div><p>List of performance attributes for the work (e.g.: “live”, “cover”, “medley”). Use <a class="reference internal" href="../functions/func_inmulti.html#func-inmulti"><span class="std std-ref">$inmulti</span></a> to check for a specific type (i.e.: <code class="docutils literal notranslate"><span class="pre">$if($inmulti(%_performance_attributes%,medley),</span> <span class="pre">(Medley),)</span></code>). (<em>since Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>_recordingtitle</strong></p>
 <blockquote>
-<div><p>Recording title - normally the same as the Track title, but can be different.</p>
+<div><p>Recording title - normally the same as the track title, but can be different.</p>
+</div></blockquote>
+<p><strong>_recording_series</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series titles associated with the recording. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesid</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series MBIDs associated with the recording. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriescomment</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series disambiguation comments associated with the recording. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesnumber</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series numbers associated with the recording. (<em>since Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>_workcomment</strong></p>
 <blockquote>
-<div><p>Work disambiguation comment. (<em>since Picard 2.7</em>)</p>
+<div><p>The disambiguation comment associated with the work. (<em>since Picard 2.7</em>)</p>
+</div></blockquote>
+<p><strong>_work_series</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series titles associated with the work. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesid</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series MBIDs associated with the work. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriescomment</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series disambiguation comments associated with the work. (<em>since Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesnumber</strong></p>
+<blockquote>
+<div><p>A multi-value variable containing the series numbers associated with the work. (<em>since Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>_writersort</strong></p>
 <blockquote>
 <div><p>The sort names of the writers for the work. (<em>since Picard 2.9</em>)</p>
 </div></blockquote>
+</div>
 </div>
 
 

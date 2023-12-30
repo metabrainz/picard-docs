@@ -155,8 +155,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="basic-variables">
-<h1><span class="target" id="index-1"></span>Variables de base<a class="headerlink" href="#basic-variables" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-2"></span>Variables de base<a class="headerlink" href="#basic-variables" title="Lien permanent vers ce titre"></a></h1>
 <p>Ces variables sont renseignées à partir des données MusicBrainz pour la plupart des versions, sans aucun paramètre Picard particulier.</p>
+<p>Certaines variables fournissent le <span class="target" id="index-4"></span>Identifiant MusicBrainz (MBID) de l’entité. Le MBID est un identifiant de 32 caractères attribué à une entité (par exemple, un artiste, un album, une piste ou une œuvre) afin de l’identifier de manière unique. Pour plus d’informations sur les MBID, veuillez consulter la page <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">Identifiant MusicBrainz</a> dans la documentation MusicBrainz.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les variables ne seront pas créées si aucune valeur n’a été récupérée pour la variable à partir de la base de données MusicBrainz.</p>
@@ -167,23 +168,23 @@
 </div></blockquote>
 <p><strong>_albumartists</strong></p>
 <blockquote>
-<div><p>Les noms des artistes de l’album (valeurs multiples). (<em>depuis Picard 1.3</em>)</p>
+<div><p>Variable à valeurs multiples contenant les noms des artistes de l’album. Ceux-ci peuvent être « standardisés » ou « tels que crédités » selon que l’option de métadonnées « Utiliser les noms d’artistes standardisés » est activée ou non. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>_albumartists_sort</strong></p>
 <blockquote>
-<div><p>Les noms de tri des artistes de l’album (valeurs multiples). (<em>depuis Picard 1.3</em>)</p>
+<div><p>Une variable multi-valeurs contenant les noms de tri des artistes de l’album. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>_artists_sort</strong></p>
 <blockquote>
-<div><p>Les noms de tri des artistes de la piste (valeurs multiples). (<em>depuis Picard 1.3</em>)</p>
+<div><p>Une variable multi-valeurs contenant les noms de tri des artistes de la piste. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>_datatrack</strong></p>
 <blockquote>
-<div><p>Réglé sur 1 si la piste est une « <a class="reference external" href="https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks">piste de données</a> ». (<em>depuis Picard 1.3.1</em>)</p>
+<div><p>Prend la valeur 1 si la piste est une « piste de données &lt;<a class="reference external" href="https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks">https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks</a>&gt;`_ », sinon vide. (<em>depuis Picard 1.3.1</em>)</p>
 </div></blockquote>
 <p><strong>_discpregap</strong></p>
 <blockquote>
-<div><p>Réglé sur 1 si le disque sur lequel se trouve la piste a une « <a class="reference external" href="https://musicbrainz.org/doc/Terminology#hidden_track">piste de pré-insertion</a> ». (<em>depuis Picard 1.4</em>)</p>
+<div><p>Prend la valeur 1 si le disque sur lequel se trouve la piste possède un « <a class="reference external" href="https://musicbrainz.org/doc/Terminology#hidden_track">pregap track</a> », sinon vide (<em>depuis Picard 1.4</em>).</p>
 </div></blockquote>
 <p><strong>_multiartist</strong></p>
 <blockquote>
@@ -191,47 +192,31 @@
 </div></blockquote>
 <p><strong>_musicbrainz_discids</strong></p>
 <blockquote>
-<div><p>Cette variable à valeurs multiples contient une liste de tous les identifiants de disque associés à la version sélectionnée.  La liste fournie pour chaque support ne comprend que les identifiants de disque associés à ce support. Par exemple, la liste fournie pour le disque 1 d’un ensemble de trois CD ne comprendra pas les identifiants des disques 2 et 3 de l’ensemble.</p>
+<div><p>Variable à valeurs multiples contenant une liste de tous les identifiants de disque associés à la version sélectionnée. La liste fournie pour chaque support ne comprend que les identifiants de disque associés à ce support. Par exemple, la liste fournie pour le disque 1 d’un ensemble de trois CD ne comprendra pas les identifiants des disques 2 et 3 de l’ensemble.</p>
 </div></blockquote>
 <p><strong>_musicbrainz_tracknumber</strong></p>
 <blockquote>
-<div><p>Le numéro de la piste écrit comme sur la version MusicBrainz, comme la numérotation du vinyle (A1, A2…).</p>
+<div><p>Le numéro de piste tel qu’il figure sur la version MusicBrainz, comme la numérotation des vinyles (A1, A2…).</p>
 </div></blockquote>
 <p><strong>_pregap</strong></p>
 <blockquote>
-<div><p>Réglé sur 1 si la piste est une « <a class="reference external" href="https://musicbrainz.org/doc/Terminology#hidden_track">piste pré-assemblée</a> ». (<em>depuis Picard 1.3.1</em>)</p>
+<div><p>Prend la valeur 1 si la piste est une « <a class="reference external" href="https://musicbrainz.org/doc/Terminology#hidden_track">piste d’prégap</a> », sinon vide (<em>depuis Picard 1.3.1</em>).</p>
 </div></blockquote>
 <p id="ref-primaryreleasetype"><strong>_primaryreleasetype</strong></p>
 <blockquote>
-<div><p>Le type de groupe principal de version (c’est-à-dire : album, single, ep, diffusion ou autre).</p>
+<div><p>Le type principal du groupe de parution (par exemple : <em>album</em>, <em>single</em>, <em>ep</em>, <em>broadcast</em>, ou <em>autre</em>).</p>
 </div></blockquote>
 <p><strong>_rating</strong></p>
 <blockquote>
-<div><p>Note 0-5 par les utilisateurs de MusicBrainz.</p>
+<div><p>L’évaluation de la piste de 0 à 5 par les utilisateurs de MusicBrainz.</p>
 </div></blockquote>
-<p><strong>_recording_comment</strong></p>
+<p><strong>_recordingcomment</strong></p>
 <blockquote>
-<div><p>Le commentaire de désambiguïsation de l’enregistrement associé à une piste.</p>
+<div><p>Le commentaire de désambiguïsation pour l’enregistrement associé à une piste. (<em>depuis Picard 0.15</em>)</p>
 </div></blockquote>
 <p><strong>_recording_firstreleasedate</strong></p>
 <blockquote>
-<div><p>Date du premier enregistrement d’une piste au format AAAA-MM-JJ. (<em>Depuis Picard 2.6</em>)</p>
-</div></blockquote>
-<p><strong>_recording_series</strong></p>
-<blockquote>
-<div><p>Le(s) titre(s) de la série associé(s) à l’enregistrement (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_recording_seriesid</strong></p>
-<blockquote>
-<div><p>Le(s) MBID(s) de la série associé(s) à l’enregistrement (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_recording_seriescomment</strong></p>
-<blockquote>
-<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) à l’enregistrement (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_recording_seriesnumber</strong></p>
-<blockquote>
-<div><p>Le(s) numéro(s) de série associé(s) à l’enregistrement (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
+<div><p>La date de l’enregistrement le plus ancien pour une piste dans le format AAAA-MM-JJ. (<em>Depuis Picard 2.6</em>)</p>
 </div></blockquote>
 <p><strong>_releaseannotation</strong></p>
 <blockquote>
@@ -239,87 +224,39 @@
 </div></blockquote>
 <p><strong>_releasecomment</strong></p>
 <blockquote>
-<div><p>Le commentaire d’homonymie pour la version. (<em>depuis Picard 0,15</em>)</p>
+<div><p>Le commentaire de désambiguïsation pour la parution. (<em>depuis Picard 0.15</em>)</p>
 </div></blockquote>
 <p><strong>_releasecountries</strong></p>
 <blockquote>
-<div><p>Ceci fournit la liste complète des pays de la version pour la version comme une variable à plusieurs valeurs. (<em>depuis Picard 2.3.1</em>)</p>
-</div></blockquote>
-<p><strong>_release_series</strong></p>
-<blockquote>
-<div><p>Le(s) titre(s) de la série associé(s) à la version (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_release_seriesid</strong></p>
-<blockquote>
-<div><p>Le(s) MBID(s) de la série associé(s) à la version (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_release_seriescomment</strong></p>
-<blockquote>
-<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) à la version (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_release_seriesnumber</strong></p>
-<blockquote>
-<div><p>Le(s) numéro(s) de série associé(s) à la version (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
+<div><p>Une variable multi-valeurs contenant la liste complète des pays de la parution. (<em>depuis Picard 2.3.1</em>)</p>
 </div></blockquote>
 <p><strong>_releasegroup</strong></p>
 <blockquote>
-<div><p>Le titre du groupe de versions qui est généralement le même que le titre de l’album, mais peut être différent.</p>
-</div></blockquote>
-<p><strong>_releasegroupcomment</strong></p>
-<blockquote>
-<div><p>Le commentaire d’homonymie pour le groupe de version.</p>
+<div><p>Le titre du groupe de parution. Il s’agit généralement du même titre que celui de l’album, mais il peut être différent.</p>
 </div></blockquote>
 <p><strong>_releasegroup_firstreleasedate</strong></p>
 <blockquote>
-<div><p>La date de la version la plus ancienne du groupe de versions au format AAAA-MM-JJ. Ceci est destiné à fournir, par exemple, la date de sortie de la version vinyle de ce que vous avez sur CD. (<em>Depuis Picard 2.6</em>)</p>
+<div><p>La date de la première parution dans le groupe de parution au format AAAA-MM-JJ. Cette date est destinée à fournir, par exemple, la date de parution de la version vinyle de ce que vous avez sur CD. (<em>Depuis Picard 2.6</em>)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Ce sont les mêmes informations fournies par défaut dans la balise <code class="docutils literal notranslate"><span class="pre">originaldate</span></code>.</p>
 </div>
 </div></blockquote>
-<p><strong>_releasegroup_series</strong></p>
+<p><strong>_releasegroupcomment</strong></p>
 <blockquote>
-<div><p>Le(s) titre(s) de la série associé(s) au groupe de diffusion (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_releasegroup_seriesid</strong></p>
-<blockquote>
-<div><p>Le(s) MBID(s) de la série associé(s) au groupe de diffusion (valeurs multiples). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_releasegroup_seriescomment</strong></p>
-<blockquote>
-<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) au groupe de diffusion (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_releasegroup_seriesnumber</strong></p>
-<blockquote>
-<div><p>Le(s) numéro(s) de série associé(s) au groupe de diffusion (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
+<div><p>Le commentaire de désambiguïsation pour le groupe de parution.</p>
 </div></blockquote>
 <p><strong>_releaselanguage</strong></p>
 <blockquote>
-<div><p>La langue de la version selon <a class="reference external" href="https://fr.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a>. (<em>depuis Picard 0,10</em>)</p>
+<div><p>La langue de la parution selon <a class="reference external" href="https://wikipedia.org/wiki/ISO_639-3">ISO 639-3</a>. (<em>depuis Picard 0.10</em>)</p>
 </div></blockquote>
 <p id="ref-secondaryreleasetype"><strong>_secondaryreleasetype</strong></p>
 <blockquote>
-<div><p>Zéro ou plus de types secondaires pour le groupe de versions (c’est-à-dire : livre audio, compilation, DJ-mix, interview, live, mixtape / street, remix, bande sonore ou speechword).</p>
+<div><p>Zéro ou plusieurs types secondaires (par exemple : <em>livre audio</em>, <em>compilation</em>, <em>dj-mix</em>, <em>interview</em>, <em>vivant</em>, <em>mixtape/rue</em>, <em>remix</em>, <em>bande-son</em>, ou <em>mot parlé</em>) pour le groupe de parution.</p>
 </div></blockquote>
 <p><strong>_totalalbumtracks</strong></p>
 <blockquote>
 <div><p>Le nombre total de pistes sur tous les disques de cette version.</p>
-</div></blockquote>
-<p><strong>_work_series</strong></p>
-<blockquote>
-<div><p>Le(s) titre(s) de la série associé(s) à l’œuvre (valeur multiple). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_work_seriesid</strong></p>
-<blockquote>
-<div><p>Le(s) MBID(s) de la série associé(s) à l’œuvre (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_work_seriescomment</strong></p>
-<blockquote>
-<div><p>Le(s) commentaire(s) de désambiguïsation de la série associé(s) à l’œuvre (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
-</div></blockquote>
-<p><strong>_work_seriesnumber</strong></p>
-<blockquote>
-<div><p>Le(s) numéro(s) de série associé(s) à l’œuvre (multi-valeurs). (<em>depuis Picard 2.9</em>)</p>
 </div></blockquote>
 </div>
 

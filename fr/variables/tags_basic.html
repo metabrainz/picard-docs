@@ -62,7 +62,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/status_icons.html">Icônes d’état</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/configuration.html">Configuration</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="variables.html">Balises &amp; Variables</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Balises de base</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Balises de base</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tags-provided-from-musicbrainz-data">Tags fournis par les données de MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tags-not-provided-from-musicbrainz-data">Tags non fournis par les données de MusicBrainz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#itunes-specific-tags">Balises spécifiques à iTunes</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="tags_advanced.html">Balises avancées</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_basic.html">Variables de base</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_file.html">Variables de fichier</a></li>
@@ -156,182 +161,133 @@
              
   <div class="section" id="basic-tags">
 <h1><span class="target" id="index-2"></span>Balises de base<a class="headerlink" href="#basic-tags" title="Lien permanent vers ce titre"></a></h1>
-<p>Les balises suivantes sont prises en charge et sont écrites dans un format standard qui peut être lu par d’autres logiciels.  Les informations sont alimentées à partir des données de MusicBrainz pour la plupart des versions, sans aucun paramétrage spécial de Picard.  Notez que certaines informations, telles que les paroles, ne sont pas contenues dans la base de données MusicBrainz et ne seront pas fournies automatiquement.</p>
+<p>Les balises suivantes sont prises en charge et sont écrites dans un format standard qui peut être lu par d’autres logiciels. Les informations sont tirées des données de MusicBrainz pour la plupart des versions, sans paramètres Picard particuliers. Notez que certaines informations, telles que les « paroles », ne sont pas contenues dans la base de données MusicBrainz et ne seront pas fournies automatiquement.</p>
 <p>Tous ces éléments sont également disponibles en tant que variables à utiliser dans les scripts Picard (pour le balisage, pour le changement de nom de fichier et dans plusieurs autres paramètres plus mineurs) en les enveloppant entre des symboles de pourcentage “%” (par exemple, <code class="docutils literal notranslate"><span class="pre">%title%</span></code>).</p>
-<p>La plupart des balises commençant par <code class="docutils literal notranslate"><span class="pre">musicbrainz_</span></code> fournissent le <span class="target" id="index-4"></span>Identifiant MusicBrainz (MBID) de l’entité.  Le MBID est un identifiant de 32 caractères attribué à une entité (par exemple : artiste, album, piste ou œuvre) pour identifier l’entité de manière unique.  Pour plus d’informations sur les MBID, veuillez consulter la page <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">Identifiant MusicBrainz</a> dans la documentation de MusicBrainz.</p>
+<p>Certaines balises fournissent le <span class="target" id="index-4"></span>Identifiant MusicBrainz (MBID) de l’entité. Le MBID est un identifiant de 32 caractères attribué à une entité (par exemple : un artiste, un album, une piste ou une œuvre) afin de l’identifier de manière unique. Pour plus d’informations sur les MBID, veuillez consulter la page <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">Identifiant MusicBrainz</a> dans la documentation MusicBrainz.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les balises ne seront pas créées et ne seront pas disponibles en tant que variables si aucune valeur n’a été récupérée pour la balise dans la base de données MusicBrainz.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Certaines de ces balises ne sont prises en charge que pour certains types de fichiers ou formats de balises. Veuillez consulter la section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Correspondances des balises Picardes</span></a> pour plus de détails.</p>
+<p>Certaines de ces balises ne sont prises en charge que pour certains types de fichiers ou formats de balises. Veuillez consulter la section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Cartographie des étiquettes Picard</span></a> pour plus de détails.</p>
 </div>
-<p><strong>acoustid_fingerprint</strong></p>
-<blockquote>
-<div><p>Empreinte digitale AcoustID pour la piste.  L’empreinte digitale est basée sur les informations audio trouvées dans un fichier, et est calculée à l’aide du logiciel <a class="reference external" href="https://acoustid.org/chromaprint">Chromaprint</a>.</p>
-</div></blockquote>
-<p><strong>acoustid_id</strong></p>
-<blockquote>
-<div><p>AcoustID associé à la piste.  L’AcoustID est l’identifiant attribué à un fichier audio en fonction de son « acoustid_fingerprint ».  Plusieurs empreintes digitales peuvent se voir attribuer le même AcoustID si elles sont suffisamment similaires.</p>
-</div></blockquote>
+<div class="section" id="tags-provided-from-musicbrainz-data">
+<h2>Tags fournis par les données de MusicBrainz<a class="headerlink" href="#tags-provided-from-musicbrainz-data" title="Lien permanent vers ce titre"></a></h2>
+<p>Ces balises seront fournies sur la base des informations de la base de données MusicBrainz et seront remplies automatiquement par Picard si l’information est disponible.</p>
 <p><strong>album</strong></p>
 <blockquote>
-<div><p>Titre du communiqué.</p>
+<div><p>Le titre de la publication.</p>
 </div></blockquote>
 <p><strong>albumartist</strong></p>
 <blockquote>
-<div><p>Artiste ou artistes principalement crédités sur la sortie.</p>
+<div><p>Les artistes principalement crédités sur la publication, séparés par les phrases de jonction spécifiées. Il peut s’agir d’artistes « normalisés » ou « tels que crédités », selon que l’option de métadonnées « Utiliser des noms d’artistes normalisés » est activée ou non.</p>
 </div></blockquote>
 <p><strong>albumartistsort</strong></p>
 <blockquote>
-<div><p>Libérez le nom de tri de l’artiste (par exemple : « Beatles, The »).</p>
-</div></blockquote>
-<p><strong>albumsort</strong></p>
-<blockquote>
-<div><p>Nom de tri du titre de publication.</p>
+<div><p>Les noms de tri des artistes de la sortie, séparés par les phrases de jonction spécifiées. (par exemple : « Beatles, The »)</p>
 </div></blockquote>
 <p><strong>artist</strong></p>
 <blockquote>
-<div><p>Suivre les noms des artistes. (chaîne)</p>
+<div><p>Les noms des artistes de la piste, séparés par les phrases de jonction spécifiées. Ces noms peuvent être « standardisés » ou « tels que crédités », selon que l’option de métadonnées « Utiliser les noms d’artistes standardisés » est activée ou non.</p>
 </div></blockquote>
 <p><strong>artists</strong></p>
 <blockquote>
-<div><p>Suivre les noms des artistes. (multi-valeur) (<em>depuis Picard 1.3</em>)</p>
+<div><p>Une balise à valeurs multiples contenant les noms des artistes de la piste. Ceux-ci peuvent être « standardisés » ou « tels que crédités » selon que l’option de métadonnées « Utiliser les noms d’artistes standardisés » est activée ou non. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
 <p><strong>artistsort</strong></p>
 <blockquote>
-<div><p>Nom de tri de l’artiste de piste.</p>
+<div><p>Les noms de tri des artistes de la piste, séparés par les phrases de jonction spécifiées.</p>
 </div></blockquote>
 <p><strong>asin</strong></p>
 <blockquote>
-<div><p>Numéro d’identification standard d’Amazon - le numéro identifiant l’article sur Amazon.</p>
+<div><p>Le numéro d’identification standard d’Amazon - le numéro qui identifie l’article sur Amazon.</p>
 </div></blockquote>
 <p><strong>barcode</strong></p>
 <blockquote>
 <div><p>Le code-barres attribué à la version.</p>
 </div></blockquote>
-<p><strong>bpm</strong></p>
-<blockquote>
-<div><p>Battements par minute de la piste. Uniquement disponible pour le script de dénomination de fichier.</p>
-</div></blockquote>
 <p><strong>catalognumber</strong></p>
 <blockquote>
-<div><p>Le(s) numéro(s) attribué(s) à la sortie par le(s) label(s), qui se trouve(nt) souvent sur le dos ou près du code-barres.  Il peut y en avoir plusieurs, notamment lorsque plusieurs étiquettes sont concernées.</p>
+<div><p>Il s’agit d’une étiquette à plusieurs valeurs qui reprend les numéros attribués à l’édition par les étiquettes et qui se trouve souvent sur le dos ou près du code-barres. Il peut y en avoir plusieurs, en particulier lorsque plusieurs étiquettes sont concernées.</p>
 </div></blockquote>
 <p><strong>comment</strong></p>
 <blockquote>
-<div><p>Le commentaire entré pour aider à distinguer une version d’une autre (par exemple : version Deluxe avec 2 pistes bonus).</p>
+<div><p>Le commentaire de désambiguïsation permet de distinguer une version d’une autre (par exemple : version de luxe avec 2 titres bonus).</p>
 </div></blockquote>
 <p><strong>compilation</strong></p>
 <blockquote>
 <div><div class="line-block">
-<div class="line">(<em>depuis Picard 1.3, compatible avec iTunes</em>) 1 pour les albums Various Artist, sinon 0.</div>
-<div class="line">(<em>Picard 1.2 ou précédent</em>) 1 si plusieurs artistes de piste (y compris les artistes en vedette), sinon 0.</div>
+<div class="line">1 pour les albums de Various Artist, sinon vide (<em>depuis Picard 1.3, compatible avec iTunes</em>).</div>
+<div class="line">1 si plusieurs artistes de la piste (y compris les artistes vedettes), sinon 0. (<em>Picard 1.2 ou antérieur</em>)</div>
 </div>
-</div></blockquote>
-<p><strong>copyright</strong></p>
-<blockquote>
-<div><p>Contient le message de copyright du détenteur du droit d’auteur du son original, commençant par une année et un caractère d’espace.</p>
 </div></blockquote>
 <p><strong>date</strong></p>
 <blockquote>
-<div><p>Date de sortie (AAAA-MM-JJ) - la date à laquelle la sortie (l’album) a été publiée.</p>
+<div><p>La date à laquelle l’album a été publié, dans le format AAAA-MM-JJ.</p>
 </div></blockquote>
 <p><strong>discnumber</strong></p>
 <blockquote>
-<div><p>Numéro du disque de cette version contenant cette piste.</p>
+<div><p>Le numéro du disque de l’édition qui contient cette piste.</p>
 </div></blockquote>
 <p><strong>discsubtitle</strong></p>
 <blockquote>
-<div><p>Le titre multimédia attribué à un disque spécifique.</p>
-</div></blockquote>
-<p><strong>encodedby</strong></p>
-<blockquote>
-<div><p>Encodé par (personne ou organisation). Uniquement disponible pour le script de dénomination de fichier.</p>
-</div></blockquote>
-<p><strong>encodersettings</strong></p>
-<blockquote>
-<div><p>Paramètres d’encodeur utilisés. Uniquement disponible pour le script de dénomination de fichier.</p>
+<div><p>Le titre du média donné à un disque spécifique dans la version.</p>
 </div></blockquote>
 <p><strong>isrc</strong></p>
 <blockquote>
-<div><p>International Standard Recording Code - code international normalisé permettant d’identifier de manière unique les enregistrements sonores et les enregistrements vidéo musicaux.  Voir <a class="reference external" href="https://fr.wikipedia.org/wiki/International_Standard_Recording_Code">Wikipedia</a> pour plus d’informations. (<em>depuis Picard 0.12</em>)</p>
-</div></blockquote>
-<p><strong>key</strong></p>
-<blockquote>
-<div><p>Clé de la musique.</p>
+<div><p>Le code international normalisé des enregistrements - un code international normalisé pour identifier de manière unique les enregistrements sonores et les enregistrements vidéo musicaux. Voir <a class="reference external" href="https://fr.wikipedia.org/wiki/International_Standard_Recording_Code">Wikipedia</a> pour plus d’informations. (<em>depuis Picard 0.12</em>)</p>
 </div></blockquote>
 <p><strong>label</strong></p>
 <blockquote>
-<div><p>Libérez les noms d’étiquette.</p>
-</div></blockquote>
-<p><strong>language</strong></p>
-<blockquote>
-<div><p>Travaillez la langue des paroles selon <a class="reference external" href="https://fr.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a> si les relations de piste sont activées dans Options et qu’un travail connexe existe. (<em>depuis Picard 0,10</em>)</p>
-</div></blockquote>
-<p><strong>lyrics</strong></p>
-<blockquote>
-<div><p>Paroles du titre.  Non fourni par MusicBrainz.</p>
+<div><p>Une balise à valeurs multiples contenant les noms des étiquettes associées à la publication.</p>
 </div></blockquote>
 <p><strong>media</strong></p>
 <blockquote>
-<div><p>Format de sortie (par exemple : CD). Consultez la page <a class="reference external" href="https://musicbrainz.org/doc/Release/Format">Format de publication</a> sur le site Web MusicBrainz pour plus d’informations.</p>
+<div><p>Le support sur lequel la publication a été distribuée (par exemple : CD). Voir la page <a class="reference external" href="https://musicbrainz.org/doc/Release/Format">Format de sortie</a> sur le site de MusicBrainz pour plus d’informations.</p>
 </div></blockquote>
 <p><strong>musicbrainz_albumartistid</strong></p>
 <blockquote>
-<div><p>Libération Identifiant MusicBrainz de l’artiste (MBID).</p>
+<div><p>Une balise multi-valeurs contenant les MBIDs pour les artistes de la diffusion.</p>
 </div></blockquote>
 <p><strong>musicbrainz_albumid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz de la version (MBID).</p>
+<div><p>Le MBID de la version.</p>
 </div></blockquote>
 <p><strong>musicbrainz_artistid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz de l’artiste de la piste (MBID).</p>
+<div><p>Étiquette à valeurs multiples contenant les MBID des artistes de la piste.</p>
 </div></blockquote>
 <p><strong>musicbrainz_discid</strong></p>
 <blockquote>
-<div><p>L’ID du disque est le numéro de code que MusicBrainz utilise pour relier un CD physique à une liste de diffusion.  Ce lien est basé sur les informations de la table des matières (TOC) lues sur le disque. Cette balise contient le Disc ID si les informations sur l’album ont été récupérées en utilisant <span class="menuselection">« Outils ‣ CD de recherche »</span>. (<em>depuis Picard 0.12</em>)</p>
+<div><p>L’ID du disque est le numéro de code que MusicBrainz utilise pour relier un CD physique à une liste d’édition. Ce numéro est basé sur les informations de la table des matières (TOC) lues sur le disque. Cette balise contient le Disc ID si les informations sur l’album ont été récupérées en utilisant <span class="menuselection">« Outils ‣ Recherche de CD »</span>. (<em>depuis Picard 0.12</em>)</p>
 </div></blockquote>
 <p><strong>musicbrainz_originalalbumid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz original de la version (MBID).</p>
+<div><p>Le MBID de la version originale. Il n’est disponible que si la version a été fusionnée avec une autre version.</p>
 </div></blockquote>
 <p><strong>musicbrainz_originalartistid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz original de l’artiste du morceau (MBID).</p>
+<div><p>Une balise à valeurs multiples contenant les MBID pour les artistes de la piste de l’enregistrement original. Cette balise n’est disponible que si l’enregistrement a été fusionné avec un autre enregistrement.</p>
 </div></blockquote>
 <p><strong>musicbrainz_recordingid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz pour l’enregistrement (MBID).</p>
+<div><p>Le MBID de l’enregistrement.</p>
 </div></blockquote>
 <p><strong>musicbrainz_releasegroupid</strong></p>
 <blockquote>
-<div><p>Identifiant MusicBrainz pour le groupe de versions (MBID).</p>
+<div><p>Le MBID pour le groupe de parution.</p>
 </div></blockquote>
 <p><strong>musicbrainz_trackid</strong></p>
 <blockquote>
-<div><p>L’identifiant MusicBrainz de la piste de lancement (MBID).</p>
-</div></blockquote>
-<p><strong>musicbrainz_workid</strong></p>
-<blockquote>
-<div><p>L’identifiant MusicBrainz pour l’œuvre (MBID).</p>
-</div></blockquote>
-<p><strong>originalalbum</strong></p>
-<blockquote>
-<div><p>Le titre de la version la plus ancienne du groupe de publication destiné au titre de l’enregistrement original.</p>
-</div></blockquote>
-<p><strong>originalartist</strong></p>
-<blockquote>
-<div><p>L’artiste de la piste de la version la plus ancienne du groupe de publication destiné aux interprètes de l’enregistrement original.</p>
+<div><p>Le MBID de la piste.</p>
 </div></blockquote>
 <p><strong>originaldate</strong></p>
 <blockquote>
-<div><p>La date de sortie d’origine au format AAAA-MM-JJ. Par défaut, il s’agit de la version la plus ancienne du groupe de versions. Cela peut fournir, par exemple, la date de sortie de la version vinyle de ce que vous avez sur CD. (<em>Inclus en standard à partir de Picard 0.15, et en utilisant le plugin Original Release Date si vous utilisez toujours une version non-NGS antérieure à Picard 0.15</em>)</p>
+<div><p>La date de publication originale au format AAAA-MM-JJ. Par défaut, cette date est fixée à la sortie la plus ancienne du groupe de sorties. Cela peut fournir, par exemple, la date de sortie de la version vinyle de ce que vous avez sur CD. (<em>Inclus en standard à partir de Picard 0.15, et en utilisant le plugin Original Release Date si vous utilisez encore une version non-NGS antérieure à Picard 0.15</em>)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Il s’agit des mêmes informations fournies dans la variable <code class="docutils literal notranslate"><span class="pre">_releasegroup_firstreleasedate</span></code>, et elles sont cohérentes sur toutes les pistes de la version. Si vous préférez que cette balise soit renseignée avec la date du premier enregistrement de la piste dans la base de données, qui sera probablement différente pour chaque piste de la version, cela peut être réalisé en activant un script de marquage sur une ligne comme <code class="docutils literal notranslate"><span class="pre">$set(originaldate,%_recording_firstreleasedate%)</span></code>. Sachez que définir cela peut entraîner la dispersion d’une version dans plusieurs répertoires si vous utilisez <code class="docutils literal notranslate"><span class="pre">%originaldate%</span></code> dans le cadre de la partie chemin de votre script de nommage de fichier.</p>
+<p>Il s’agit de la même information que celle fournie par la variable <code class="docutils literal notranslate"><span class="pre">_releasegroup_firstreleasedate</span></code>, et elle est cohérente pour toutes les pistes de la version. Si vous préférez que ce tag soit rempli avec la date du premier enregistrement de la piste dans la base de données, qui sera probablement différente pour chaque piste de la version, cela peut être réalisé en activant un script de tagging d’une ligne comme <code class="docutils literal notranslate"><span class="pre">$set(originaldate,%_recording_firstreleasedate%)</span></code>. Soyez conscient que ce réglage peut entraîner la dispersion d’une version dans plusieurs répertoires si vous utilisez <code class="docutils literal notranslate"><span class="pre">%originaldate%</span></code> dans la partie chemin de votre script de nommage de fichiers.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -340,39 +296,31 @@
 </div></blockquote>
 <p><strong>originalyear</strong></p>
 <blockquote>
-<div><p>L’année de la date de sortie d’origine au format AAAA. Par défaut, il s’agit de la version la plus ancienne du groupe de versions. Cela peut fournir, par exemple, l’année de sortie de la version vinyle de ce que vous avez sur CD.</p>
+<div><p>L’année de la date de sortie originale au format AAAA. Par défaut, cette date est fixée à la sortie la plus ancienne du groupe de sorties. Cela peut permettre, par exemple, de connaître l’année de sortie de la version vinyle de ce que vous avez sur CD.</p>
 </div></blockquote>
 <p><strong>releasecountry</strong></p>
 <blockquote>
-<div><p>Le pays dans lequel la libération a été publiée.</p>
+<div><p>Code à deux caractères du pays dans lequel la diffusion a été effectuée. Si plusieurs pays de diffusion ont été spécifiés, cette balise contiendra le premier de la liste.</p>
 </div></blockquote>
 <p><strong>releasestatus</strong></p>
 <blockquote>
-<div><p>Le statut de la version indiquant le statut « officiel » de la version. Les valeurs possibles incluent officiel, promotionnel, bootleg et pseudo-release.</p>
+<div><p>Le statut de la version indiquant le statut « officiel » de la version. Les valeurs possibles incluent <em>officiel</em>, <em>promotionnel</em>, <em>bootleg</em> et <em>pseudo-release</em>.</p>
 </div></blockquote>
 <p><strong>releasetype</strong></p>
 <blockquote>
-<div><p>Le type de groupe de version (voir aussi <a class="reference internal" href="variables_basic.html#ref-primaryreleasetype"><span class="std std-ref">_primaryreleasetype</span></a> et <a class="reference internal" href="variables_basic.html#ref-secondaryreleasetype"><span class="std std-ref">_secondaryreleasetype</span></a>).</p>
+<div><p>Balise multi-valeurs contenant les types de rejets attribués au groupe de rejets. Voir aussi <a class="reference internal" href="variables_basic.html#ref-primaryreleasetype"><span class="std std-ref">_primaryreleasetype</span></a> et <a class="reference internal" href="variables_basic.html#ref-secondaryreleasetype"><span class="std std-ref">_secondaryreleasetype</span></a>.</p>
 </div></blockquote>
 <p><strong>script</strong></p>
 <blockquote>
 <div><p>Le script utilisé pour écrire la liste des morceaux de la sortie. Les valeurs possibles sont tirées du standard <a class="reference external" href="https://fr.wikipedia.org/wiki/ISO_15924">ISO 15924</a>. (<em>depuis Picard 0,10</em>)</p>
 </div></blockquote>
-<p><strong>subtitle</strong></p>
-<blockquote>
-<div><p>Utilisé pour les informations directement liées au titre du contenu.</p>
-</div></blockquote>
 <p><strong>title</strong></p>
 <blockquote>
 <div><p>Le titre de la piste.</p>
 </div></blockquote>
-<p><strong>titlesort</strong></p>
-<blockquote>
-<div><p>Le nom de tri du titre de la piste.</p>
-</div></blockquote>
 <p><strong>totaldiscs</strong></p>
 <blockquote>
-<div><p>Le nombre total de disques dans cette version</p>
+<div><p>Le nombre total de disques dans cette version.</p>
 </div></blockquote>
 <p><strong>totaltracks</strong></p>
 <blockquote>
@@ -380,12 +328,113 @@
 </div></blockquote>
 <p><strong>tracknumber</strong></p>
 <blockquote>
-<div><p>Le numéro de la piste sur ce disque.</p>
+<div><p>Le numéro de la piste sur le disque.</p>
 </div></blockquote>
 <p><strong>website</strong></p>
 <blockquote>
-<div><p>Utilisé pour le site officiel de l’artiste.</p>
+<div><p>Le site officiel de l’artiste.</p>
 </div></blockquote>
+</div>
+<div class="section" id="tags-not-provided-from-musicbrainz-data">
+<h2>Tags non fournis par les données de MusicBrainz<a class="headerlink" href="#tags-not-provided-from-musicbrainz-data" title="Lien permanent vers ce titre"></a></h2>
+<p>Ces balises ne peuvent pas être remplies par le stock Picard, mais elles peuvent être utilisées et remplies par certains plugins ou scripts.</p>
+<p><strong>acoustid_fingerprint</strong></p>
+<blockquote>
+<div><p>L’empreinte acoustique de la piste. L’empreinte est basée sur les informations audio contenues dans un fichier et est calculée à l’aide du logiciel <a class="reference external" href="https://acoustid.org/chromaprint">Chromaprint</a>.</p>
+</div></blockquote>
+<p><strong>acoustid_id</strong></p>
+<blockquote>
+<div><p>L’AcoustID associé à la piste. L’AcoustID est l’identifiant attribué à un fichier audio sur la base de son empreinte acoustique. Plusieurs empreintes peuvent se voir attribuer le même AcoustID si elles sont suffisamment similaires. Voir la section <a class="reference internal" href="../tutorials/acoustid.html"><span class="doc">Comprendre l’empreinte acoustique et les AcoustIDs</span></a> pour plus d’informations.</p>
+</div></blockquote>
+<p><strong>albumsort</strong></p>
+<blockquote>
+<div><p>Le nom de tri du titre de la version.</p>
+</div></blockquote>
+<p><strong>bpm</strong></p>
+<blockquote>
+<div><p>Le nombre de battements par minute de la piste.</p>
+</div></blockquote>
+<p><strong>copyright</strong></p>
+<blockquote>
+<div><p>Le message de copyright du détenteur du copyright du son original, commençant par une année et un espace.</p>
+</div></blockquote>
+<p><strong>encodedby</strong></p>
+<blockquote>
+<div><p>La personne ou l’organisation qui a encodé la piste.</p>
+</div></blockquote>
+<p><strong>encodersettings</strong></p>
+<blockquote>
+<div><p>Les paramètres utilisés lors de l’encodage de la piste.</p>
+</div></blockquote>
+<p><strong>key</strong></p>
+<blockquote>
+<div><p>La tonalité de la musique.</p>
+</div></blockquote>
+<p><strong>lyrics</strong></p>
+<blockquote>
+<div><p>Les paroles de la chanson.</p>
+</div></blockquote>
+<p><strong>musicip_fingerprint</strong></p>
+<blockquote>
+<div><p>L’empreinte MusicIP de la piste.</p>
+</div></blockquote>
+<p><strong>musicip_puid</strong></p>
+<blockquote>
+<div><p>Les PUID MusicIP associés à la piste.</p>
+</div></blockquote>
+<p><strong>originalalbum</strong></p>
+<blockquote>
+<div><p>Le titre de parution sortie dans le groupe de parution prévu pour le titre de l’enregistrement original.</p>
+</div></blockquote>
+<p><strong>originalartist</strong></p>
+<blockquote>
+<div><p>L’artiste de la piste de la première parution dans le groupe de parution destiné aux interprètes de l’enregistrement original.</p>
+</div></blockquote>
+<p><strong>originalfilename</strong></p>
+<blockquote>
+<div><p>Le nom original du fichier audio.</p>
+</div></blockquote>
+<p><strong>releasedate</strong></p>
+<blockquote>
+<div><p>Balise explicite pour la date de publication (<em>depuis Picard 2.9</em>). Cette balise existe pour une utilisation spécifique dans les scripts et les plugins, mais n’est pas remplie par défaut. Dans la plupart des cas, il est recommandé d’utiliser la balise <code class="docutils literal notranslate"><span class="pre">date</span></code> à la place pour des raisons de compatibilité avec les logiciels existants.</p>
+</div></blockquote>
+<p><strong>showmovement</strong></p>
+<blockquote>
+<div><p>Le travail et le mouvement de la piste.</p>
+</div></blockquote>
+<p><strong>subtitle</strong></p>
+<blockquote>
+<div><p>Cette rubrique est utilisée pour les informations directement liées au titre du contenu.</p>
+</div></blockquote>
+<p><strong>titlesort</strong></p>
+<blockquote>
+<div><p>Le nom de tri du titre de la piste.</p>
+</div></blockquote>
+</div>
+<div class="section" id="itunes-specific-tags">
+<h2>Balises spécifiques à iTunes<a class="headerlink" href="#itunes-specific-tags" title="Lien permanent vers ce titre"></a></h2>
+<p>Ces balises ne sont disponibles que dans les fichiers iTunes et ne peuvent pas être remplies par le stock Picard, mais elles peuvent être utilisées et remplies par certains plugins ou scripts.</p>
+<p><strong>gapless</strong></p>
+<blockquote>
+<div><p>Indique s’il y a ou non des lacunes entre les enregistrements de la version.</p>
+</div></blockquote>
+<p><strong>podcast</strong></p>
+<blockquote>
+<div><p>Indique si l’enregistrement est un podcast ou non.</p>
+</div></blockquote>
+<p><strong>podcasturl</strong></p>
+<blockquote>
+<div><p>L’url associée si l’enregistrement est un podcast.</p>
+</div></blockquote>
+<p><strong>show</strong></p>
+<blockquote>
+<div><p>Le nom de l’émission si l’enregistrement est associé à un programme de télévision.</p>
+</div></blockquote>
+<p><strong>showsort</strong></p>
+<blockquote>
+<div><p>Le nom du programme trié si l’enregistrement est associé à un programme TV.</p>
+</div></blockquote>
+</div>
 </div>
 
 

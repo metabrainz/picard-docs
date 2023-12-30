@@ -159,22 +159,23 @@
            <div itemprop="articleBody">
              
   <div class="section" id="advanced-tags">
-<h1><span class="target" id="index-2"></span>Balises avancées<a class="headerlink" href="#advanced-tags" title="Lien permanent vers ce titre"></a></h1>
-<p>Vous pouvez rendre des balises supplémentaires disponibles en activant les paramètres <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations de suivi</span></a> et <a class="reference internal" href="../config/options_genres.html"><span class="doc">Utiliser les genres de MusicBrainz</span></a> dans Picard.</p>
+<h1><span class="target" id="index-3"></span>Balises avancées<a class="headerlink" href="#advanced-tags" title="Lien permanent vers ce titre"></a></h1>
+<p>Vous pouvez rendre des balises supplémentaires disponibles en activant les paramètres <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations de suivi</span></a> et/ou <a class="reference internal" href="../config/options_genres.html"><span class="doc">Utiliser les genres de MusicBrainz</span></a> dans Picard.</p>
+<p>Certaines balises fournissent le <span class="target" id="index-6"></span>Identifiant MusicBrainz (MBID) de l’entité. Le MBID est un identifiant de 32 caractères attribué à une entité (par exemple : un artiste, un album, une piste ou une œuvre) afin de l’identifier de manière unique. Pour plus d’informations sur les MBID, veuillez consulter la page <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">Identifiant MusicBrainz</a> dans la documentation MusicBrainz.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les balises ne seront pas créées et ne seront pas disponibles en tant que variables si aucune valeur n’a été récupérée pour la balise dans la base de données MusicBrainz.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Certaines de ces balises ne sont prises en charge que pour certains types de fichiers ou formats de balises. Veuillez consulter la section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Correspondances des balises Picardes</span></a> pour plus de détails.</p>
+<p>Certaines de ces balises ne sont prises en charge que pour certains types de fichiers ou formats de balises. Veuillez consulter la section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Cartographie des étiquettes Picard</span></a> pour plus de détails.</p>
 </div>
 <div class="section" id="track-relationship-tags">
 <span id="advanced-relationships"></span><h2>Balises de relation de suivi<a class="headerlink" href="#track-relationship-tags" title="Lien permanent vers ce titre"></a></h2>
-<p>Si vous activez le balisage avec « Utiliser les relations de suivi », vous obtenez ces balises supplémentaires :</p>
+<p>Si vous activez l’option « Utiliser les relations de suivi » dans les paramètres de l’option, vous obtiendrez ces balises supplémentaires :</p>
 <p><strong>arranger</strong></p>
 <blockquote>
-<div><p>Les noms des arrangeurs associés à la piste.  Cela peut inclure les arrangeurs des instruments et de l’orchestre, et peut être associé à la sortie, l’enregistrement ou l’œuvre. (<em>depuis Picard 0.10</em>)</p>
+<div><p>Les noms des arrangeurs associés à la piste. Il peut s’agir d’arrangeurs d’instruments et d’orchestres, et ils peuvent être associés à la publication, à l’enregistrement ou à l’œuvre. (<em>depuis Picard 0.10</em>)</p>
 </div></blockquote>
 <p><strong>composer</strong></p>
 <blockquote>
@@ -186,11 +187,11 @@
 </div></blockquote>
 <p><strong>conductor</strong></p>
 <blockquote>
-<div><p>Les noms des chefs d’orchestre associés à la piste.  Ils peuvent inclure le chef d’orchestre et le chef de chœur, et peuvent être associés à la sortie ou à l’enregistrement.</p>
+<div><p>Les noms des chefs d’orchestre associés à la piste. Il peut s’agir du chef d’orchestre et du chef de chœur, et peut être associé à la publication ou à l’enregistrement.</p>
 </div></blockquote>
 <p><strong>director</strong></p>
 <blockquote>
-<div><p>Le réalisateur d’une piste tel que fourni par la relation Directeur de la vidéo ou Directeur de l’audio dans MusicBrainz.  (<em>Depuis Picard 2.6, mis à jour dans Picard 2.9</em>)</p>
+<div><p>Le réalisateur d’une piste tel que fourni par la relation <em>Video Director</em> ou <em>Audio Director</em> dans MusicBrainz. (<em>Depuis Picard 2.6, mis à jour dans Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>djmixer</strong></p>
 <blockquote>
@@ -199,6 +200,10 @@
 <p><strong>engineer</strong></p>
 <blockquote>
 <div><p>Les noms des ingénieurs associés à la piste.</p>
+</div></blockquote>
+<p><strong>language</strong></p>
+<blockquote>
+<div><p>Langage lyrique de travail selon <a class="reference external" href="https://wikipedia.org/wiki/ISO_639-3">ISO 639-3</a> si un travail connexe existe. (<em>depuis Picard 0.10</em>)</p>
 </div></blockquote>
 <p><strong>license</strong></p>
 <blockquote>
@@ -210,24 +215,24 @@
 </div></blockquote>
 <p><strong>mixer</strong></p>
 <blockquote>
-<div><p>Les noms des ingénieurs « Mélangé par » associés à la piste. (<em>depuis Picard 0.9</em>)</p>
+<div><p>Les noms des ingénieurs « <em>Mélangé par</em> » associés à la piste. (<em>depuis Picard 0.9</em>)</p>
+</div></blockquote>
+<p><strong>musicbrainz_workid</strong></p>
+<blockquote>
+<div><p>L’MBID de l’œuvre s’il existe une œuvre connexe.</p>
 </div></blockquote>
 <p><strong>performer:&lt;type&gt;</strong></p>
 <blockquote>
-<div><p>Les noms des interprètes pour le type spécifié.  Ces types comprennent :</p>
+<div><p>Les noms des interprètes pour le type spécifié. Ces types comprennent :</p>
 <ul class="simple">
-<li><p>des voix ou des instruments pour la sortie ou l’enregistrement associé, où &lt;type&gt; peut être « voix », « guitare invitée », « violon solo », etc.</p></li>
-<li><p>l’orchestre de la publication ou de l’enregistrement associé, où &lt;type&gt; est « orchestre »</p></li>
-<li><p>le master de concert pour la publication ou l’enregistrement associé, où &lt;type&gt; est « concertmaster »</p></li>
+<li><p>des voix ou des instruments pour la sortie ou l’enregistrement associé, où &lt;type&gt; peut être « <em>voix</em> », « <em>guitare invitée</em> », « <em>violon solo</em> », etc.</p></li>
+<li><p>l’orchestre de la publication ou de l’enregistrement associé, où &lt;type&gt; est « <em>orchestre</em> »</p></li>
+<li><p>le master de concert pour la publication ou l’enregistrement associé, où &lt;type&gt; est « <em>concertmaster</em> »</p></li>
 </ul>
 </div></blockquote>
 <p><strong>producer</strong></p>
 <blockquote>
 <div><p>Les noms des producteurs pour la sortie ou l’enregistrement associé.</p>
-</div></blockquote>
-<p><strong>releasedate</strong></p>
-<blockquote>
-<div><p>Balise explicite pour la date de publication (<em>depuis Picard 2.9</em>).  Cette balise existe pour une utilisation spécifique dans les scripts et les plugins, mais n’est pas remplie par défaut.  Dans la plupart des cas, il est recommandé d’utiliser la balise <code class="docutils literal notranslate"><span class="pre">date</span></code> à la place pour des raisons de compatibilité avec les logiciels existants.</p>
 </div></blockquote>
 <p><strong>remixer</strong></p>
 <blockquote>
@@ -239,18 +244,22 @@
 </div></blockquote>
 <p><strong>writer</strong></p>
 <blockquote>
-<div><p>Les noms des rédacteurs associés aux travaux connexes. (<em>depuis Picard 1.0</em>). Ceci n’est pas écrit automatiquement dans la plupart des formats de fichiers. Vous pouvez le fusionner avec les compositeurs avec un script comme :</p>
+<div><p>Une balise multi-valeurs contenant les noms des écrivains associés au travail en question. (<em>depuis Picard 1.0</em>). Cette balise n’est pas écrite automatiquement dans la plupart des formats de fichiers. Vous pouvez la fusionner avec les compositeurs à l’aide d’un script tel que :</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$copymerge(</span>composer, writer<span class="k">)</span>
 </pre></div>
 </div>
 </div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Certains tags tels que <strong>performer</strong> sont disponibles à la fois pour les relations au niveau de la piste et de la version, et les valeurs peuvent être différentes en fonction des options de relations activées.</p>
+</div>
 </div>
 <div class="section" id="genre-tags">
-<span id="genre-settings"></span><h2><span class="target" id="index-3"></span>Balises de genre<a class="headerlink" href="#genre-tags" title="Lien permanent vers ce titre"></a></h2>
+<span id="genre-settings"></span><h2><span class="target" id="index-5"></span>Balises de genre<a class="headerlink" href="#genre-tags" title="Lien permanent vers ce titre"></a></h2>
 <p>Si vous activez « Utiliser les genres de MusicBrainz », vous obtenez :</p>
 <p><strong>genre</strong></p>
 <blockquote>
-<div><p>Informations sur le genre de MusicBrainz (<em>depuis Picard 2.1, les versions antérieures utilisaient des balises folksonomy</em>)</p>
+<div><p>Une étiquette à valeurs multiples contenant les informations sur le genre spécifié provenant de MusicBrainz (<em>depuis Picard 2.1, les versions antérieures utilisaient des étiquettes folksonomiques</em>).</p>
 </div></blockquote>
 </div>
 </div>

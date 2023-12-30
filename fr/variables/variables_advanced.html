@@ -66,7 +66,11 @@
 <li class="toctree-l2"><a class="reference internal" href="tags_advanced.html">Balises avancées</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_basic.html">Variables de base</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_file.html">Variables de fichier</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Variables avancées</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Variables avancées</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#release-relationship-variables">Variables de la relation de parution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#track-relationship-variables">Suivi des variables relationnelles</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="variables_classical.html">Balises de musique classique</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_plugins.html">Balises des plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="variables_other_information.html">Autres informations</a></li>
@@ -155,12 +159,52 @@
            <div itemprop="articleBody">
              
   <div class="section" id="advanced-variables">
-<h1><span class="target" id="index-1"></span>Variables avancées<a class="headerlink" href="#advanced-variables" title="Lien permanent vers ce titre"></a></h1>
-<p>Si vous activez le balisage avec <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations de suivi</span></a>, vous obtenez ces variables supplémentaires :</p>
+<h1><span class="target" id="index-2"></span>Variables avancées<a class="headerlink" href="#advanced-variables" title="Lien permanent vers ce titre"></a></h1>
+<p>Vous pouvez rendre des balises supplémentaires disponibles en activant les paramètres <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations de suivi</span></a> et/ou <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations de parution</span></a> dans Picard.</p>
+<p>Certaines variables fournissent le <span class="target" id="index-4"></span>Identifiant MusicBrainz (MBID) de l’entité. Le MBID est un identifiant de 32 caractères attribué à une entité (par exemple, un artiste, un album, une piste ou une œuvre) afin de l’identifier de manière unique. Pour plus d’informations sur les MBID, veuillez consulter la page <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">Identifiant MusicBrainz</a> dans la documentation MusicBrainz.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Les variables ne seront pas créées si aucune valeur n’a été récupérée pour la variable à partir de la base de données MusicBrainz.</p>
 </div>
+<div class="section" id="release-relationship-variables">
+<h2>Variables de la relation de parution<a class="headerlink" href="#release-relationship-variables" title="Lien permanent vers ce titre"></a></h2>
+<p>Si vous activez le balisage avec <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations de parution</span></a>, vous obtenez ces variables supplémentaires :</p>
+<p><strong>_release_series</strong></p>
+<blockquote>
+<div><p>Une variable multi-valeurs contenant les titres des séries associées à la parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesid</strong></p>
+<blockquote>
+<div><p>Variable multi-valeurs contenant les MBIDs des séries associées à la parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriescomment</strong></p>
+<blockquote>
+<div><p>Une variable multi-valeurs contenant les commentaires de désambiguïsation de la série associés à la parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_release_seriesnumber</strong></p>
+<blockquote>
+<div><p>Une variable multi-valeurs contenant les numéros de série associés à la parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_series</strong></p>
+<blockquote>
+<div><p>Variable multi-valeurs contenant les titres des séries associées au groupe de parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesid</strong></p>
+<blockquote>
+<div><p>Variable multi-valeurs contenant les MBIDs des séries associées au groupe de parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriescomment</strong></p>
+<blockquote>
+<div><p>Variable multi-valeurs contenant les commentaires de désambiguïsation de la série associés au groupe de parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_releasegroup_seriesnumber</strong></p>
+<blockquote>
+<div><p>Variable à valeurs multiples contenant les numéros de série associés au groupe de parution. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+</div>
+<div class="section" id="track-relationship-variables">
+<h2>Suivi des variables relationnelles<a class="headerlink" href="#track-relationship-variables" title="Lien permanent vers ce titre"></a></h2>
+<p>Si vous activez le balisage avec <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Utiliser les relations de suivi</span></a>, vous obtenez ces variables supplémentaires :</p>
 <p><strong>_lyricistsort</strong></p>
 <blockquote>
 <div><p>Les noms de tri des paroliers de l’œuvre. (<em>depuis Picard 2.9</em>)</p>
@@ -169,22 +213,51 @@
 <blockquote>
 <div><p>Liste des attributs de performance de l’œuvre (ex: « live », « cover », « medley »). Utilisez <a class="reference internal" href="../functions/func_inmulti.html#func-inmulti"><span class="std std-ref">$inmulti</span></a> pour rechercher un type spécifique (c’est-à-dire: <code class="docutils literal notranslate"><span class="pre">$if($inmulti(%_performance_attributes%,medley),</span> <span class="pre">(Medley),)</span></code>). (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
-<p><strong>_recordingcomment</strong></p>
-<blockquote>
-<div><p>Enregistrement d’un commentaire d’homonymie. (<em>depuis Picard 0,15</em>)</p>
-</div></blockquote>
 <p><strong>_recordingtitle</strong></p>
 <blockquote>
-<div><p>Titre de l’enregistrement - normalement le même que le titre de la piste, mais peut être différent.</p>
+<div><p>Titre de l’enregistrement - normalement le même que le titre de la piste, mais il peut être différent.</p>
+</div></blockquote>
+<p><strong>_recording_series</strong></p>
+<blockquote>
+<div><p>Une variable multi-valeurs contenant les titres des séries associées à l’enregistrement. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesid</strong></p>
+<blockquote>
+<div><p>Variable multi-valeurs contenant les MBIDs des séries associées à l’enregistrement. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriescomment</strong></p>
+<blockquote>
+<div><p>Une variable multi-valeurs contenant les commentaires de désambiguïsation de la série associés à l’enregistrement. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_recording_seriesnumber</strong></p>
+<blockquote>
+<div><p>Une variable multi-valeurs contenant les numéros de série associés à l’enregistrement. (<em>depuis Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>_workcomment</strong></p>
 <blockquote>
-<div><p>Commentaire sur la désambiguïsation du travail. (<em>depuis Picard 2.7</em>)</p>
+<div><p>Le commentaire de désambiguïsation associé à l’œuvre. (<em>depuis Picard 2.7</em>)</p>
+</div></blockquote>
+<p><strong>_work_series</strong></p>
+<blockquote>
+<div><p>Une variable à valeurs multiples contenant les titres de séries associés à l’œuvre. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesid</strong></p>
+<blockquote>
+<div><p>Variable multi-valeurs contenant les MBIDs des séries associées à l’œuvre. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriescomment</strong></p>
+<blockquote>
+<div><p>Une variable multi-valeurs contenant les commentaires de désambiguïsation de la série associés à l’œuvre. (<em>depuis Picard 2.9</em>)</p>
+</div></blockquote>
+<p><strong>_work_seriesnumber</strong></p>
+<blockquote>
+<div><p>Une variable à valeurs multiples contenant les numéros de série associés à l’œuvre. (<em>depuis Picard 2.9</em>)</p>
 </div></blockquote>
 <p><strong>_writersort</strong></p>
 <blockquote>
 <div><p>Les noms de tri des rédacteurs de l’œuvre. (<em>depuis Picard 2.9</em>)</p>
 </div></blockquote>
+</div>
 </div>
 
 
