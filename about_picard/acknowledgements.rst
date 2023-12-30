@@ -25,6 +25,7 @@ Contributors include (in alphabetic surname order):
 - David Kellner
 - Jun Kim
 - Sambhav Kothari
+- Soham Kukreti
 - Laurent Monin
 - Akash Nagaraj
 - Frederik "Freso" S. Olesen
