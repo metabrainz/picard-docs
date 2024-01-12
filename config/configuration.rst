@@ -66,9 +66,10 @@ actions that Picard can perform when saving selected music files:
 :index:`Option Settings <see: option settings; configuration>`
 ---------------------------------------------------------------
 
-The option settings are found under the :menuselection:`"Options --> Options..."` item on the menu bar. This will open a new window with 
-the option groups listed in a tree format on the left hand side, and the individual settings on the right hand side. This is where 
-the majority of Picard's customization is performed.
+The option settings are found under the :menuselection:`"Options --> Options..."` item on the menu bar. On macOS they can be accessed 
+with :menuselection:`"MusicBrainz Picard --> Preferences..."`. This will open a new window with the option groups listed in a tree 
+format on the left hand side, and the individual settings on the right hand side. This is where the majority of Picard's 
+customization is performed.
 
 ..  note:: 
    When running your code from the source in a macOS environment, you can access the option settings by navigating to the 
