@@ -71,7 +71,7 @@ with :menuselection:`"MusicBrainz Picard --> Preferences..."`. This will open a 
 format on the left hand side, and the individual settings on the right hand side. This is where the majority of Picard's 
 customization is performed.
 
-..  note:: 
+.. note:: 
    When running your code from the source in a macOS environment, you can access the option settings by navigating to the 
    :menuselection:`"Python --> Preferences..."` option in the menu bar. This allows you to configure and customize various settings 
    for your development environment.
