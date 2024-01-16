@@ -27,6 +27,7 @@ Contributors include (in alphabetic surname order):
 - Frederik "Freso" S. Olesen
 - Guntbert Reiter
 - Theodore Fabian Rudy
+- Suryansh Shakya
 - skelly37
 - Sophist
 - Odd Stråbø
