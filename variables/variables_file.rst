@@ -57,3 +57,6 @@ These variables are populated from information found in the audio files themselv
 **_sample_rate**
 
     Number of digitizing samples per second (Hz).
+**_filesize**
+
+   Size of the file in Bytes.
