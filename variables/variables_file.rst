@@ -60,4 +60,4 @@ These variables are populated from information found in the audio files themselv
 
 **_filesize**
 
-   Size of the file in Bytes.
+   Size of the file in bytes.
