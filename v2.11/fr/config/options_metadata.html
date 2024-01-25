@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Options de métadonnées &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Options de métadonnées &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -169,7 +173,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="metadata-options">
-<h1><span class="target" id="index-1"></span>Options de métadonnées<a class="headerlink" href="#metadata-options" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-1"></span>Options de métadonnées<a class="headerlink" href="#metadata-options" title="Lien permanent vers cette rubrique"></a></h1>
 <a class="reference internal image-reference" href="../_images/options-metadata.png"><img alt="../_images/options-metadata.png" src="../_images/options-metadata.png" style="width: 100%;" /></a>
 <p><strong>Traduisez les noms d’artistes dans cette langue lorsque cela est possible</strong></p>
 <blockquote>
@@ -206,17 +210,13 @@
 <blockquote>
 <div><p>Convertit les caractères de ponctuation Unicode des données MusicBrainz en ASCII pour une utilisation cohérente de la ponctuation dans les balises. Par exemple, les guillemets simples droits sont convertis en apostrophes ASCII (“) et les ellipses horizontales sont converties en trois points (…).</p>
 </div></blockquote>
-<p><strong>Utiliser les relations de suivi et de relâchement</strong></p>
-<blockquote>
-<div><p>Cochez pour écrire des relations au niveau de la piste (par exemple: compositeur, parolier, interprète ou remixeur) dans vos fichiers.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>L’activation de cette option active également automatiquement l’option « Utiliser les relations de validation », et cette option ne peut pas être désactivée.</p>
-</div>
-</div></blockquote>
 <p><strong>Utiliser les relations de version</strong></p>
 <blockquote>
 <div><p>Cochez pour récupérer et écrire les relations au niveau de la version (par exemple: URL, compositeur, parolier, interprète, chef d’orchestre ou mixeur DJ) dans vos fichiers. Vous devez l’activer pour utiliser Picard pour récupérer l’art de couverture.</p>
+</div></blockquote>
+<p><strong>Utiliser les relations de suivi</strong></p>
+<blockquote>
+<div><p>Cochez pour écrire des relations au niveau de la piste (par exemple: compositeur, parolier, interprète ou remixeur) dans vos fichiers.</p>
 </div></blockquote>
 <p><strong>Déterminez le numéro de la piste et le titre à partir du nom du fichier s’il est vide</strong></p>
 <blockquote>

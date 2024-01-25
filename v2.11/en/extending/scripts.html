@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scripts &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Scripts &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -164,14 +168,14 @@
            <div itemprop="articleBody">
              
   <div class="section" id="scripts">
-<h1><span class="target" id="index-0"></span>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline"></a></h1>
+<h1><span class="target" id="index-0"></span>Scripts<a class="headerlink" href="#scripts" title="Permalink to this heading"></a></h1>
 <p>There are two types of scripts used in Picard: the file naming script and tagging scripts. These are
 managed from the “File Naming” and “Scripting” sections of the <span class="menuselection">“Options ‣ Options…”</span> menu. All scripts are written
 using the <a class="reference internal" href="scripting.html"><span class="doc">Picard scripting language</span></a>. Scripts are often discussed in the
 <a class="reference external" href="https://community.metabrainz.org/c/picard">MetaBrainz Community Forum</a>, and there is a thread specific to
 <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">file naming and script snippets</a>.</p>
 <div class="section" id="file-naming-script">
-<h2><span class="target" id="index-1"></span>File Naming Script<a class="headerlink" href="#file-naming-script" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-1"></span>File Naming Script<a class="headerlink" href="#file-naming-script" title="Permalink to this heading"></a></h2>
 <p>Multiple file naming scripts can be defined in a user’s settings, although only one is selected at a time
 for use.  File naming scripts can vary from a simple one-line script such as <code class="docutils literal notranslate"><span class="pre">%album%/%title%</span></code> to a very
 complex script using different file naming formats based on different criteria. In all cases, the files
@@ -187,7 +191,7 @@ files’ metadata.</p>
 </div>
 </div>
 <div class="section" id="tagging-scripts">
-<h2><span class="target" id="index-2"></span>Tagging Scripts<a class="headerlink" href="#tagging-scripts" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-2"></span>Tagging Scripts<a class="headerlink" href="#tagging-scripts" title="Permalink to this heading"></a></h2>
 <p>There can be multiple tagging scripts defined in a user’s settings. Individual scripts can be enabled or
 disabled, and the order of execution of the scripts can be set. Whenever a script is run automatically (i.e.:
 when an album is loaded), it is processed once for each track in the album that triggered the
@@ -212,19 +216,19 @@ in Picard. If run from the album entry, the script is run for each track in the 
 individual track, the script is only run for that track.</p>
 </div>
 <div class="section" id="tagging-script-examples">
-<h2>Tagging Script Examples<a class="headerlink" href="#tagging-script-examples" title="Permalink to this headline"></a></h2>
+<h2>Tagging Script Examples<a class="headerlink" href="#tagging-script-examples" title="Permalink to this heading"></a></h2>
 <p>The following scripting examples show how tagger scripts can be used to solve some specific use cases.
 Please refer to <a class="reference internal" href="scripting.html"><span class="doc">Picard scripting language</span></a> for a detailed description of the variables and
 functions used in these examples.</p>
 <div class="section" id="move-disambiguation-to-album-title">
-<h3>Move disambiguation to album title<a class="headerlink" href="#move-disambiguation-to-album-title" title="Permalink to this headline"></a></h3>
+<h3>Move disambiguation to album title<a class="headerlink" href="#move-disambiguation-to-album-title" title="Permalink to this heading"></a></h3>
 <p>Append the disambiguation comment of a release to the album title:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>album,<span class="n">%album%</span><span class="k">$if(</span><span class="n">%_releasecomment%</span>, <span class="se">\(</span><span class="n">%_releasecomment%</span><span class="se">\)</span><span class="k">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="release-language-as-language">
-<h3>Release language as language<a class="headerlink" href="#release-language-as-language" title="Permalink to this headline"></a></h3>
+<h3>Release language as language<a class="headerlink" href="#release-language-as-language" title="Permalink to this heading"></a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">%_releaselanguage%</span></code> variable specifies the language of the track listing, whereas the
 <code class="docutils literal notranslate"><span class="pre">%language%</span></code> variable is supposed to be the lyrics language.  The following script will use the
 <code class="docutils literal notranslate"><span class="pre">%_releaselanguage%</span></code> instead if <code class="docutils literal notranslate"><span class="pre">%language%</span></code> is empty:</p>
@@ -233,7 +237,7 @@ functions used in these examples.</p>
 </div>
 </div>
 <div class="section" id="use-original-release-date">
-<h3>Use original release date<a class="headerlink" href="#use-original-release-date" title="Permalink to this headline"></a></h3>
+<h3>Use original release date<a class="headerlink" href="#use-original-release-date" title="Permalink to this heading"></a></h3>
 <p>By default Picard provides a tag <code class="docutils literal notranslate"><span class="pre">date</span></code> which holds the release date of a specific release and
 <code class="docutils literal notranslate"><span class="pre">originaldate</span></code> which provides the earliest release date of this release.  For example you might have
 a 2020 reissue of an album that originally was released in 1992.  In this case <code class="docutils literal notranslate"><span class="pre">date</span></code> will be set
@@ -256,7 +260,7 @@ the recording’s first release date as <code class="docutils literal notranslat
 </div>
 </div>
 <div class="section" id="set-album-sort-name">
-<h3>Set album sort name<a class="headerlink" href="#set-album-sort-name" title="Permalink to this headline"></a></h3>
+<h3>Set album sort name<a class="headerlink" href="#set-album-sort-name" title="Permalink to this heading"></a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">albumsort</span></code> tag is not filled by Picard by default.  You can set it to a meaningful value
 with prefixes “The” and “A” moved to the end with the following script:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>albumsort,<span class="k">$swapprefix(</span><span class="n">%album%</span><span class="k">))</span>
@@ -265,7 +269,7 @@ with prefixes “The” and “A” moved to the end with the following script:<
 <p>This will e.g. set the sort name for the release “The Best of Muddy Waters” to “Best of Muddy Waters, The”.</p>
 </div>
 <div class="section" id="set-compilation-for-multi-artist-releases">
-<h3>Set compilation for multi artist releases<a class="headerlink" href="#set-compilation-for-multi-artist-releases" title="Permalink to this headline"></a></h3>
+<h3>Set compilation for multi artist releases<a class="headerlink" href="#set-compilation-for-multi-artist-releases" title="Permalink to this heading"></a></h3>
 <p>By default the <code class="docutils literal notranslate"><span class="pre">compilation</span></code> tag will be set to 1 only for Various Artists releases.  The following script will
 set it for all releases with more than one artist (as it was default behavior in Picard 1.2 and earlier):</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if(</span><span class="n">%_multiartist%</span>,<span class="k">$set(</span>compilation,1<span class="k">))</span>
@@ -273,14 +277,14 @@ set it for all releases with more than one artist (as it was default behavior in
 </div>
 </div>
 <div class="section" id="remove-featuring-from-album-artist">
-<h3>Remove featuring from album artist<a class="headerlink" href="#remove-featuring-from-album-artist" title="Permalink to this headline"></a></h3>
+<h3>Remove featuring from album artist<a class="headerlink" href="#remove-featuring-from-album-artist" title="Permalink to this heading"></a></h3>
 <p>This always removes featuring artists from the album artist:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$set(</span>albumartist,<span class="k">$rreplace(</span><span class="n">%albumartist%</span>,<span class="se">\\</span>s+feat<span class="se">\\</span>..*,<span class="k">))</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="move-featuring-from-artist-to-title">
-<h3>Move featuring from artist to title<a class="headerlink" href="#move-featuring-from-artist-to-title" title="Permalink to this headline"></a></h3>
+<h3>Move featuring from artist to title<a class="headerlink" href="#move-featuring-from-artist-to-title" title="Permalink to this heading"></a></h3>
 <p>According to MusicBrainz guidelines featuring artists are part of the artist name, e.g.
 “Artist A feat. Artist B”.  Some users prefer to have featuring added to the album or track title
 instead.  The following script moves featured track artists to the track title:</p>
@@ -297,7 +301,7 @@ instead.  The following script moves featured track artists to the track title:<
 </div>
 </div>
 <div class="section" id="preserve-original-filename">
-<h3>Preserve original filename<a class="headerlink" href="#preserve-original-filename" title="Permalink to this headline"></a></h3>
+<h3>Preserve original filename<a class="headerlink" href="#preserve-original-filename" title="Permalink to this heading"></a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">originalfilename</span></code> tag is supposed to hold the filename the file originally had.  By default
 Picard does not set or modify this tag.  If you want to save this information the following Script
 can be used:</p>

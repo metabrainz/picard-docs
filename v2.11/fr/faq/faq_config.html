@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Configuration &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Configuration &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -156,9 +160,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="configuration">
-<h1><span class="target" id="index-12"></span>Configuration<a class="headerlink" href="#configuration" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-12"></span>Configuration<a class="headerlink" href="#configuration" title="Lien permanent vers cette rubrique"></a></h1>
 <div class="section" id="where-is-the-picard-configuration-saved">
-<h2>Où est le Picard <span class="target" id="index-7"></span>configuration enregistré?<a class="headerlink" href="#where-is-the-picard-configuration-saved" title="Lien permanent vers ce titre"></a></h2>
+<h2>Où est le Picard <span class="target" id="index-7"></span>configuration enregistré?<a class="headerlink" href="#where-is-the-picard-configuration-saved" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Picard enregistre la configuration dans le fichier <code class="file docutils literal notranslate"><span class="pre">Picard.ini</span></code>. Son emplacement dépend du système d’exploitation:</p>
 <p><strong>Windows:</strong></p>
 <blockquote>
@@ -171,17 +175,17 @@
 </div></blockquote>
 </div>
 <div class="section" id="i-tagged-a-file-in-picard-but-itunes-is-not-seeing-the-tags">
-<h2>J’ai marqué un fichier en Picard, mais <span class="target" id="index-8"></span>iTunes ne voit pas les balises!<a class="headerlink" href="#i-tagged-a-file-in-picard-but-itunes-is-not-seeing-the-tags" title="Lien permanent vers ce titre"></a></h2>
+<h2>J’ai marqué un fichier en Picard, mais <span class="target" id="index-8"></span>iTunes ne voit pas les balises!<a class="headerlink" href="#i-tagged-a-file-in-picard-but-itunes-is-not-seeing-the-tags" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Tout d’abord, vous devez forcer <span class="target" id="index-13"></span>iTunes à relire les informations de vos balises et à mettre à jour sa bibliothèque. Ceci est discuté dans le <a class="reference external" href="https://musicbrainz.org/doc/iTunes_Guide">iTunes Guide</a>.</p>
 <p>De plus, iTunes a un bogue connu dans son implémentation ID3v2.4, qui le rend incapable de lire ces balises si elles contiennent également uart de couverture intégrée. Pour contourner le problème, vous pouvez configurer Picard pour écrire des balises ID3v2.3.</p>
 </div>
 <div class="section" id="my-tags-are-truncated-to-30-characters-in-windows-media-player">
-<h2>Mes balises sont <span class="target" id="index-10"></span>truncated à 30 caractères dans Windows Media Player!<a class="headerlink" href="#my-tags-are-truncated-to-30-characters-in-windows-media-player" title="Lien permanent vers ce titre"></a></h2>
+<h2>Mes balises sont <span class="target" id="index-10"></span>truncated à 30 caractères dans Windows Media Player!<a class="headerlink" href="#my-tags-are-truncated-to-30-characters-in-windows-media-player" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les paramètres par défaut de Picard écrivent les balises ID3v2.4 et ID3v1 dans les fichiers.  Les anciennes versions de WMP ne peuvent pas lire l’ID3v2.4, et se rabattent donc sur l’ID3v1, qui est limité à 30 caractères par titre.  Pour résoudre ce problème, configurez Picard pour qu’il écrive des balises ID3v2.3 à la place.</p>
 <p>Depuis Windows 10 Creators Update (version 1703), ID3v2.4 est pris en charge et le problème ci-dessus ne devrait plus se poser.</p>
 </div>
 <div class="section" id="how-do-i-tell-picard-which-browser-to-use">
-<h2>Comment dire à Picard quel <span class="target" id="index-11"></span>navigateur utiliser?<a class="headerlink" href="#how-do-i-tell-picard-which-browser-to-use" title="Lien permanent vers ce titre"></a></h2>
+<h2>Comment dire à Picard quel <span class="target" id="index-11"></span>navigateur utiliser?<a class="headerlink" href="#how-do-i-tell-picard-which-browser-to-use" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Sous Windows, macOS, GNOME et KDE, Picard utilise le navigateur par défaut qui a été configuré pour le système. Sur d’autres systèmes, vous pouvez utiliser la variable d’environnement <code class="docutils literal notranslate"><span class="pre">BROWSER</span></code>.</p>
 <p>Par exemple:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">BROWSER</span><span class="o">=</span><span class="s2">&quot;firefox &#39;</span><span class="si">%s</span><span class="s2">&#39; &amp;&quot;</span>

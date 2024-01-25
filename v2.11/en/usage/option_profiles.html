@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Option Profiles &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Option Profiles &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -149,10 +153,10 @@
            <div itemprop="articleBody">
              
   <div class="section" id="option-profiles">
-<h1>Option Profiles<a class="headerlink" href="#option-profiles" title="Permalink to this headline"></a></h1>
+<h1>Option Profiles<a class="headerlink" href="#option-profiles" title="Permalink to this heading"></a></h1>
 <p>As of version 2.7, Picard supports multiple profiles that can allow the user to quickly switch between option settings.</p>
 <div class="section" id="how-option-profiles-work">
-<h2>How Option Profiles Work<a class="headerlink" href="#how-option-profiles-work" title="Permalink to this headline"></a></h2>
+<h2>How Option Profiles Work<a class="headerlink" href="#how-option-profiles-work" title="Permalink to this heading"></a></h2>
 <p>A profile is defined by a set of options it manages.  For example, one profile may include settings for file naming such as
 the target directory and which file naming script to use, while another profile may include different settings for the same
 options or different options entirely (or some of each).  Profiles are stacked and processed in the order specified by the
@@ -164,7 +168,7 @@ manages that option. Initially, the profile stack contains only the system’s �
 default settings for the user.</p>
 </div>
 <div class="section" id="example-of-using-profiles">
-<h2>Example of Using Profiles<a class="headerlink" href="#example-of-using-profiles" title="Permalink to this headline"></a></h2>
+<h2>Example of Using Profiles<a class="headerlink" href="#example-of-using-profiles" title="Permalink to this heading"></a></h2>
 <p>For this example, the user would like to define a set of options with alternate values, in this case a target directory where
 audio files are saved (option <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code>).</p>
 <p>The user creates a new profile (named “TargetMyDir”), adds the option <code class="docutils literal notranslate"><span class="pre">move_files_to</span></code> to it, and enables this profile.
@@ -202,7 +206,7 @@ disable the “ByeByeWin” profile (which can later be re-enabled if needed).  
 </div>
 </div>
 <div class="section" id="managing-option-profiles">
-<h2>Managing Option Profiles<a class="headerlink" href="#managing-option-profiles" title="Permalink to this headline"></a></h2>
+<h2>Managing Option Profiles<a class="headerlink" href="#managing-option-profiles" title="Permalink to this heading"></a></h2>
 <p>All option profile management is done within the Option Profiles page available from the <span class="menuselection">“Options ‣
 Options…”</span> item on the menu bar.  From this screen you will be able to add, copy, edit, remove, enable and disable
 profiles, as well as setting the order of the profile stack.</p>
@@ -230,7 +234,7 @@ options will be saved to the first enabled profile in the profile stack that con
 saved to the “user settings” as before.  This is described in more detail in the following section.</p>
 </div>
 <div class="section" id="saving-profile-option-settings">
-<h2>Saving Profile Option Settings<a class="headerlink" href="#saving-profile-option-settings" title="Permalink to this headline"></a></h2>
+<h2>Saving Profile Option Settings<a class="headerlink" href="#saving-profile-option-settings" title="Permalink to this heading"></a></h2>
 <p>To save a value to a profile option setting, simply ensure that the the target profile is the first enabled profile in the
 profile stack, make the desired changes (the options should be highlighted), and then click the <span class="guilabel">Make It So!</span> button.</p>
 <a class="reference internal image-reference" href="../_images/options-profile-save1.png"><img alt="../_images/options-profile-save1.png" src="../_images/options-profile-save1.png" style="width: 100%;" /></a>

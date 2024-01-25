@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Processing Order &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Processing Order &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -158,13 +162,13 @@
            <div itemprop="articleBody">
              
   <div class="section" id="processing-order">
-<h1><span class="target" id="index-0"></span>Processing Order<a class="headerlink" href="#processing-order" title="Permalink to this headline"></a></h1>
+<h1><span class="target" id="index-0"></span>Processing Order<a class="headerlink" href="#processing-order" title="Permalink to this heading"></a></h1>
 <p>In order to make effective use of plugins and scripts, it is important to understand when
 each is processed in relation to the others. As a general statement, plugins are always
 processed before scripts. Plugins of the same type will be executed in order based upon
 the priority specified when the plugin was registered.</p>
 <div class="section" id="startup">
-<h2>Startup<a class="headerlink" href="#startup" title="Permalink to this headline"></a></h2>
+<h2>Startup<a class="headerlink" href="#startup" title="Permalink to this heading"></a></h2>
 <p>During program startup, plugins with the following hooks are processed, and any additional
 functionality that they provide will be available immediately:</p>
 <ul class="simple">
@@ -176,7 +180,7 @@ functionality that they provide will be available immediately:</p>
 </ul>
 </div>
 <div class="section" id="loading-a-release">
-<h2>Loading a Release<a class="headerlink" href="#loading-a-release" title="Permalink to this headline"></a></h2>
+<h2>Loading a Release<a class="headerlink" href="#loading-a-release" title="Permalink to this heading"></a></h2>
 <p>When data gets loaded from MusicBrainz (while the album shows the “loading” status in the
 right-hand pane), the following are processed:</p>
 <ul class="simple">
@@ -194,19 +198,19 @@ process. Tagging scripts do not have access to metadata stored in existing files
 </div>
 </div>
 <div class="section" id="loading-music-files">
-<h2>Loading Music Files<a class="headerlink" href="#loading-music-files" title="Permalink to this headline"></a></h2>
+<h2>Loading Music Files<a class="headerlink" href="#loading-music-files" title="Permalink to this heading"></a></h2>
 <p>After a file has been loaded into Picard, plugins registered with <code class="docutils literal notranslate"><span class="pre">file_post_load_processor()</span></code> are
 executed. This could, for example, be used to load additional data for a file.</p>
 </div>
 <div class="section" id="adding-removing-files">
-<h2>Adding / Removing Files<a class="headerlink" href="#adding-removing-files" title="Permalink to this headline"></a></h2>
+<h2>Adding / Removing Files<a class="headerlink" href="#adding-removing-files" title="Permalink to this heading"></a></h2>
 <p>After a file has been added to a track (on the right-hand pane of Picard), plugins registered with
 <code class="docutils literal notranslate"><span class="pre">file_post_addition_to_track_processor()</span></code> are executed.</p>
 <p>After a file has been removed from a track (on the right-hand pane of Picard), plugins registered with
 <code class="docutils literal notranslate"><span class="pre">file_post_removal_from_track_processor()</span></code> are executed.</p>
 </div>
 <div class="section" id="saving-files">
-<h2>Saving Files<a class="headerlink" href="#saving-files" title="Permalink to this headline"></a></h2>
+<h2>Saving Files<a class="headerlink" href="#saving-files" title="Permalink to this heading"></a></h2>
 <p>When files are saved, for each file the File Naming Script is first executed to determine the
 destination path and file name. Note that this script has no effect on the tag values written to the
 output file.</p>
@@ -215,12 +219,12 @@ can, for example, be used to run additional post-processing on the file or write
 the file’s metadata is already the newly saved metadata.</p>
 </div>
 <div class="section" id="removing-albums">
-<h2>Removing Albums<a class="headerlink" href="#removing-albums" title="Permalink to this headline"></a></h2>
+<h2>Removing Albums<a class="headerlink" href="#removing-albums" title="Permalink to this heading"></a></h2>
 <p>After an album has been removed from Picard, plugins registered with <code class="docutils literal notranslate"><span class="pre">album_post_removal_processor()</span></code>
 are executed.</p>
 </div>
 <div class="section" id="context-menus">
-<h2>Context Menus<a class="headerlink" href="#context-menus" title="Permalink to this headline"></a></h2>
+<h2>Context Menus<a class="headerlink" href="#context-menus" title="Permalink to this heading"></a></h2>
 <p>Individual tagging scripts can be executed on-demand from the context menu displayed when right-clicking
 on a file, album, track, cluster or cluster list.</p>
 </div>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dépannage général &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Dépannage général &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -155,9 +159,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="general-troubleshooting">
-<h1><span class="target" id="index-4"></span>Dépannage général<a class="headerlink" href="#general-troubleshooting" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-4"></span>Dépannage général<a class="headerlink" href="#general-troubleshooting" title="Lien permanent vers cette rubrique"></a></h1>
 <div class="section" id="getting-help">
-<h2>Obtenir de l’aide<a class="headerlink" href="#getting-help" title="Lien permanent vers ce titre"></a></h2>
+<h2>Obtenir de l’aide<a class="headerlink" href="#getting-help" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Si vous rencontrez des problèmes lors de l’utilisation de Picard, veuillez d’abord consulter les ressources suivantes:</p>
 <ul class="simple">
 <li><p>Pour des informations générales sur l’utilisation, consultez la documentation <a class="reference internal" href="../usage/using.html"><span class="doc">Utiliser Picard</span></a> et le <a class="reference external" href="https://picard.musicbrainz.org/docs/quick-start/">guide de démarrage rapide illustré</a>.</p></li>
@@ -168,7 +172,7 @@
 </ul>
 </div>
 <div class="section" id="reporting-a-bug">
-<h2><span class="target" id="index-5"></span>Signaler un bogue<a class="headerlink" href="#reporting-a-bug" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-5"></span>Signaler un bogue<a class="headerlink" href="#reporting-a-bug" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Si vous pensez avoir trouvé un bogue, veuillez vérifier si vous utilisez la dernière version de Picard et si le bogue a déjà été signalé dans le <a class="reference external" href="https://tickets.musicbrainz.org/browse/PICARD">bug tracker</a>. Si vous n’êtes pas sûr ou ne souhaitez pas consulter les tickets existants, demandez d’abord sur les forums de la communauté.</p>
 <p>Si vous êtes toujours convaincu d’avoir trouvé un nouveau bogue, ouvrez un <a class="reference external" href="https://tickets.musicbrainz.org/secure/CreateIssue.jspa?pid=10042&amp;issuetype=1">nouveau ticket</a> fournissant les informations suivantes:</p>
 <ul class="simple">
@@ -185,7 +189,7 @@
 </div>
 </div>
 <div class="section" id="getting-a-debug-log">
-<h2><span class="target" id="index-6"></span>Obtention d’un journal de débogage<a class="headerlink" href="#getting-a-debug-log" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-6"></span>Obtention d’un journal de débogage<a class="headerlink" href="#getting-a-debug-log" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Pour de nombreux bogues, il est utile aux développeurs d’avoir un journal de débogage de Picard. Vous pouvez voir le journal en allant à <span class="menuselection">« Aide ‣ Voir le journal »</span>. Vous pouvez également obtenir un journal de débogage complet, ce qui est préférable car il contient des informations plus détaillées. Le fait de coller ce journal dans votre message sur le forum ou dans votre ticket de bogue peut aider les développeurs et les autres utilisateurs à résoudre votre problème plus rapidement. Pour récupérer le journal de débogage complet :</p>
 <ol class="arabic simple">
 <li><p>Commencez Picard.</p></li>
@@ -199,10 +203,10 @@
 </ol>
 </div>
 <div class="section" id="getting-logs-in-case-of-crashes">
-<h2><span class="target" id="index-7"></span>Importer les logs en cas de crash<a class="headerlink" href="#getting-logs-in-case-of-crashes" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-7"></span>Importer les logs en cas de crash<a class="headerlink" href="#getting-logs-in-case-of-crashes" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Dans certains cas, le problème entraînera le plantage de Picard et ne vous permettra pas d’accéder au journal résultant à partir du visualisateur de journaux. Vous pouvez toujours générer une sortie de journal à joindre à votre rapport en démarrant Picard avec l’option de ligne de commande <code class="docutils literal notranslate"><span class="pre">--debug</span></code> à partir d’une fenêtre de commande / terminal et en copiant les informations de sortie de journal à partir du terminal. Les étapes à suivre pour chacune des plateformes supportées sont les suivantes :</p>
 <div class="section" id="windows-systems">
-<h3>Systèmes Windows<a class="headerlink" href="#windows-systems" title="Lien permanent vers ce titre"></a></h3>
+<h3>Systèmes Windows<a class="headerlink" href="#windows-systems" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ouvrez d’abord une fenêtre de commande en cliquant sur l’icône de recherche dans la barre des tâches de Windows et entrez « cmd ». Démarrez ensuite Picard en saisissant la commande suivante dans la fenêtre de commande :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C:\Program Files\MusicBrainz Picard\picard.exe&quot;</span> <span class="o">--</span><span class="n">debug</span>
 </pre></div>
@@ -214,7 +218,7 @@
 </div>
 </div>
 <div class="section" id="macos-systems">
-<h3>Systèmes macOS<a class="headerlink" href="#macos-systems" title="Lien permanent vers ce titre"></a></h3>
+<h3>Systèmes macOS<a class="headerlink" href="#macos-systems" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ouvrez d’abord une fenêtre de terminal en effectuant l’une des opérations suivantes :</p>
 <ul class="simple">
 <li><p>Cliquez sur l’icône Launchpad dans le Dock, tapez « Terminal » dans le champ de recherche, puis cliquez sur <span class="guilabel">Terminal</span>.</p></li>
@@ -227,7 +231,7 @@
 <p>Cela affichera toutes les entrées du journal dans la fenêtre du terminal et vous permettra de copier les informations dans le presse-papiers pour les coller dans votre rapport.</p>
 </div>
 <div class="section" id="linux-systems">
-<h3>Systèmes Linux<a class="headerlink" href="#linux-systems" title="Lien permanent vers ce titre"></a></h3>
+<h3>Systèmes Linux<a class="headerlink" href="#linux-systems" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ouvrez d’abord une fenêtre de terminal dans votre environnement de bureau, soit à partir du menu Applications, soit en appuyant sur <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Alt</kbd>+<kbd class="kbd docutils literal notranslate">T</kbd></kbd> sur la plupart des systèmes. Ensuite, démarrez Picard en entrant ce qui suit dans la fenêtre du terminal :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">picard</span> <span class="o">--</span><span class="n">debug</span>
 </pre></div>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generating tags from file names &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Generating tags from file names &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -156,12 +160,12 @@
            <div itemprop="articleBody">
              
   <div class="section" id="generating-tags-from-file-names">
-<h1>Generating <span class="target" id="index-0"></span>tags from file names<a class="headerlink" href="#generating-tags-from-file-names" title="Permalink to this headline"></a></h1>
+<h1>Generating <span class="target" id="index-0"></span>tags from file names<a class="headerlink" href="#generating-tags-from-file-names" title="Permalink to this heading"></a></h1>
 <p>Sometimes files have poor quality tags or no tags at all, but the file names are well structured and
 follow a pattern. In this case you can use <span class="menuselection">“Tools ‣ Tags From <span class="accelerator">F</span>ile Names…”</span> to
 generate the tags from the file names.</p>
 <div class="section" id="basic-usage">
-<h2>Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline"></a></h2>
+<h2>Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this heading"></a></h2>
 <p>To use this tool, select one or more files loaded into Picard and open the Tags From File Names
 dialog from the menu at <span class="menuselection">“Tools ‣ Tags From <span class="accelerator">F</span>ile Names…”</span>.  The dialog will
 show you a list of filenames and an input field at the top where you can enter a matching pattern.</p>
@@ -181,7 +185,7 @@ saved automatically, you still need to save the files if you want the tags to be
 (see <a class="reference internal" href="save.html"><span class="doc">Saving Updated Files</span></a>).</p>
 </div>
 <div class="section" id="matching-folders">
-<h2>Matching folders<a class="headerlink" href="#matching-folders" title="Permalink to this headline"></a></h2>
+<h2>Matching folders<a class="headerlink" href="#matching-folders" title="Permalink to this heading"></a></h2>
 <p>The pattern can also match the parent folders of the file. To match for folders use a slash (<code class="docutils literal notranslate"><span class="pre">/</span></code>)
 as separator.  If for example the file is in a folder named after the album, which in turn is
 inside a folder named after the artist (i.e. <code class="file docutils literal notranslate"><span class="pre">Neil</span> <span class="pre">Young/Harvest/04</span> <span class="pre">Heart</span> <span class="pre">of</span> <span class="pre">Gold.mp3</span></code>) you
@@ -190,14 +194,14 @@ could match the artist, album, track number and title with a pattern of
 <a class="reference internal image-reference" href="../_images/tags_from_file_names_2.png"><img alt="../_images/tags_from_file_names_2.png" src="../_images/tags_from_file_names_2.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="replace-underscores-with-spaces">
-<h2>Replace underscores with spaces<a class="headerlink" href="#replace-underscores-with-spaces" title="Permalink to this headline"></a></h2>
+<h2>Replace underscores with spaces<a class="headerlink" href="#replace-underscores-with-spaces" title="Permalink to this heading"></a></h2>
 <p>Sometimes files have been named without spaces and use underscores instead.  For example a file
 could be named <code class="file docutils literal notranslate"><span class="pre">04_Heart_of_Gold.mp3</span></code>.  By default the title would get extracted as
 “Heart_of_Gold”.  In this case enable the checkbox “Replace underscores with spaces” and use a
 pattern like <code class="samp docutils literal notranslate"><span class="pre">%tracknumber%_%title%</span></code> to extract the title properly as “Heart of Gold”.</p>
 </div>
 <div class="section" id="ignoring-parts-of-the-file-name">
-<h2>Ignoring parts of the file name<a class="headerlink" href="#ignoring-parts-of-the-file-name" title="Permalink to this headline"></a></h2>
+<h2>Ignoring parts of the file name<a class="headerlink" href="#ignoring-parts-of-the-file-name" title="Permalink to this heading"></a></h2>
 <p>Sometimes you don’t want to include parts of the file name in your tags and just want to ignore them.
 The pattern must always match the entire file name, though.  In this case you can use a hidden
 variable for the parts of the file name you do not want to match to an actual tag.  Hidden variables

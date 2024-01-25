@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Annexe A: API des plugins &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -144,9 +148,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="appendix-a-plugins-api">
-<h1><span class="target" id="index-8"></span>Annexe A: <span class="target" id="index-9"></span>API des plugins<a class="headerlink" href="#appendix-a-plugins-api" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-8"></span>Annexe A: <span class="target" id="index-9"></span>API des plugins<a class="headerlink" href="#appendix-a-plugins-api" title="Lien permanent vers cette rubrique"></a></h1>
 <div class="section" id="plugin-metadata">
-<h2><span class="target" id="index-10"></span>Métadonnées du plugin<a class="headerlink" href="#plugin-metadata" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-10"></span>Métadonnées du plugin<a class="headerlink" href="#plugin-metadata" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Chaque plugin doit fournir des métadonnées sous forme de variables. Ces variables doivent être placées en haut du fichier.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Example plugin&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;This authors name&quot;</span>
@@ -177,7 +181,7 @@
 </ul>
 </div>
 <div class="section" id="metadata-processors">
-<h2><span class="target" id="index-11"></span>Processeurs de métadonnées<a class="headerlink" href="#metadata-processors" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-11"></span>Processeurs de métadonnées<a class="headerlink" href="#metadata-processors" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les métadonnées MusicBrainz peuvent être post-traitées à deux niveaux, album et piste. Les types d’arguments passés aux fonctions de processeur dans les exemples suivants sont les suivants :</p>
 <ul class="simple">
 <li><p><strong>album</strong> : <code class="docutils literal notranslate"><span class="pre">picard.album.Album</span></code></p></li>
@@ -186,7 +190,7 @@
 <li><p><strong>track</strong> : <code class="docutils literal notranslate"><span class="pre">dict</span></code> avec les données de piste du service Web MusicBrainz JSON</p></li>
 </ul>
 <div class="section" id="album-metadata-example">
-<h3>Exemple de métadonnées d’album :<a class="headerlink" href="#album-metadata-example" title="Lien permanent vers ce titre"></a></h3>
+<h3>Exemple de métadonnées d’album :<a class="headerlink" href="#album-metadata-example" title="Lien permanent vers cette rubrique"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Disc Numbers&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;Lukas Lalinsky&quot;</span>
 <span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;Moves disc numbers from album titles to tags.&quot;</span>
@@ -205,7 +209,7 @@
 </div>
 </div>
 <div class="section" id="track-metadata-example">
-<h3>Exemple de Suivre les métadonnées :<a class="headerlink" href="#track-metadata-example" title="Lien permanent vers ce titre"></a></h3>
+<h3>Exemple de Suivre les métadonnées :<a class="headerlink" href="#track-metadata-example" title="Lien permanent vers cette rubrique"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Feat. Artists&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;Lukas Lalinsky&quot;</span>
 <span class="n">PLUGIN_DESCRIPTION</span> <span class="o">=</span> <span class="s2">&quot;Removes feat. artists from track titles.&quot;</span>
@@ -222,10 +226,10 @@
 </div>
 </div>
 <div class="section" id="event-hooks">
-<h2><span class="target" id="index-12"></span>Crochets d’événement<a class="headerlink" href="#event-hooks" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-12"></span>Crochets d’événement<a class="headerlink" href="#event-hooks" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les plugins peuvent s’enregistrer pour écouter différents événements. Actuellement, les hooks d’événement suivants sont disponibles :</p>
 <div class="section" id="file-post-load-processor-file">
-<h3>file_post_load_processor(file)<a class="headerlink" href="#file-post-load-processor-file" title="Lien permanent vers ce titre"></a></h3>
+<h3>file_post_load_processor(file)<a class="headerlink" href="#file-post-load-processor-file" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ce hook est appelé après le chargement d’un fichier dans Picard. Cela pourrait par exemple être utilisé pour charger des données supplémentaires pour un fichier. Usage :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_load_processor</span>
 
@@ -237,7 +241,7 @@
 </div>
 </div>
 <div class="section" id="file-post-save-processor-file">
-<h3>file_post_save_processor(file)<a class="headerlink" href="#file-post-save-processor-file" title="Lien permanent vers ce titre"></a></h3>
+<h3>file_post_save_processor(file)<a class="headerlink" href="#file-post-save-processor-file" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ce hook est appelé après l’enregistrement d’un fichier. Cela peut par exemple être utilisé pour exécuter un post-traitement supplémentaire sur le fichier ou écrire des données supplémentaires. Notez que les métadonnées du fichier sont déjà les métadonnées nouvellement enregistrées. Usage :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_save_processor</span>
 
@@ -249,7 +253,7 @@
 </div>
 </div>
 <div class="section" id="file-post-addition-to-track-processor-track-file">
-<h3>file_post_addition_to_track_processor(track, file)<a class="headerlink" href="#file-post-addition-to-track-processor-track-file" title="Lien permanent vers ce titre"></a></h3>
+<h3>file_post_addition_to_track_processor(track, file)<a class="headerlink" href="#file-post-addition-to-track-processor-track-file" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ce hook est appelé après qu’un fichier a été ajouté à une piste (dans le volet de droite de Picard).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_addition_to_track_processor</span>
 
@@ -261,7 +265,7 @@
 </div>
 </div>
 <div class="section" id="file-post-removal-from-track-processor-track-file">
-<h3>file_post_removal_from_track_processor(track, file)<a class="headerlink" href="#file-post-removal-from-track-processor-track-file" title="Lien permanent vers ce titre"></a></h3>
+<h3>file_post_removal_from_track_processor(track, file)<a class="headerlink" href="#file-post-removal-from-track-processor-track-file" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ce hook est appelé après qu’un fichier a été supprimé d’une piste (dans le volet droit de Picard).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.file</span> <span class="kn">import</span> <span class="n">register_file_post_removal_from_track_processor</span>
 
@@ -273,7 +277,7 @@
 </div>
 </div>
 <div class="section" id="album-post-removal-processor-album">
-<h3>album_post_removal_processor(album)<a class="headerlink" href="#album-post-removal-processor-album" title="Lien permanent vers ce titre"></a></h3>
+<h3>album_post_removal_processor(album)<a class="headerlink" href="#album-post-removal-processor-album" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Ce hook est appelé après qu’un album a été supprimé de Picard.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">picard.album</span> <span class="kn">import</span> <span class="n">register_album_post_removal_processor</span>
 
@@ -290,7 +294,7 @@
 </div>
 </div>
 <div class="section" id="file-formats">
-<h2><span class="target" id="index-13"></span>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-13"></span>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les plugins peuvent étendre Picard avec la prise en charge de formats de fichiers supplémentaires. Voir les <a class="reference external" href="https://github.com/metabrainz/picard/tree/master/picard/formats">implémentations de format de fichier existantes</a> pour plus de détails sur la façon d’implémenter les méthodes <code class="docutils literal notranslate"><span class="pre">_load</span></code> et <code class="docutils literal notranslate"><span class="pre">_save</span></code>. Exemple :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;...&quot;</span>
@@ -325,7 +329,7 @@
 </div>
 </div>
 <div class="section" id="tagger-script-functions">
-<h2><span class="target" id="index-14"></span>Fonctions de script de tagger<a class="headerlink" href="#tagger-script-functions" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-14"></span>Fonctions de script de tagger<a class="headerlink" href="#tagger-script-functions" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Pour définir de nouvelles fonctions de script de tagger, utilisez <code class="docutils literal notranslate"><span class="pre">register_script_function</span> <span class="pre">(function,</span> <span class="pre">name</span> <span class="pre">=</span> <span class="pre">None)</span></code> du module <code class="docutils literal notranslate"><span class="pre">picard.script</span></code>. <code class="docutils literal notranslate"><span class="pre">parser</span></code> est une instance de <code class="docutils literal notranslate"><span class="pre">picard.script.ScriptParser</span></code>, et le reste des arguments qui lui sont passés sont les arguments de l’appel de fonction dans le script du tagger. Exemple :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="s2">&quot;Initials&quot;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="s2">&quot;Lukas Lalinsky&quot;</span>
@@ -351,7 +355,7 @@
 <p>La valeur par défaut des deux arguments est <strong>True</strong>.</p>
 </div>
 <div class="section" id="context-menu-actions">
-<h2><span class="target" id="index-15"></span>Actions du menu contextuel<a class="headerlink" href="#context-menu-actions" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-15"></span>Actions du menu contextuel<a class="headerlink" href="#context-menu-actions" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les actions du menu contextuel du clic droit peuvent être ajoutées aux albums, pistes et fichiers dans « Fichiers sans correspondance », « Clusters » et « ClusterList » (dossier parent des clusters). Exemple :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PLUGIN_NAME</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Remove Perfect Albums&#39;</span>
 <span class="n">PLUGIN_AUTHOR</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;ichneumon, hrglgrmpf&#39;</span>

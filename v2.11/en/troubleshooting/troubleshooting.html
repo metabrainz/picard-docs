@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>General Troubleshooting &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>General Troubleshooting &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -154,9 +158,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="general-troubleshooting">
-<h1><span class="target" id="index-0"></span>General Troubleshooting<a class="headerlink" href="#general-troubleshooting" title="Permalink to this headline"></a></h1>
+<h1><span class="target" id="index-0"></span>General Troubleshooting<a class="headerlink" href="#general-troubleshooting" title="Permalink to this heading"></a></h1>
 <div class="section" id="getting-help">
-<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline"></a></h2>
+<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this heading"></a></h2>
 <p>If you have problems using Picard, please first check the following resources:</p>
 <ul class="simple">
 <li><p>For general usage information see the <a class="reference internal" href="../usage/using.html"><span class="doc">Using Picard</span></a> documentation and the <a class="reference external" href="https://picard.musicbrainz.org/quick-start/">illustrated quick start guide</a>.</p></li>
@@ -169,7 +173,7 @@ updated plugin versions.</p></li>
 </ul>
 </div>
 <div class="section" id="reporting-a-bug">
-<h2><span class="target" id="index-1"></span>Reporting a Bug<a class="headerlink" href="#reporting-a-bug" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-1"></span>Reporting a Bug<a class="headerlink" href="#reporting-a-bug" title="Permalink to this heading"></a></h2>
 <p>If you think you have found a bug please check whether you are using the latest version of Picard and whether the bug has already been reported in the <a class="reference external" href="https://tickets.musicbrainz.org/browse/PICARD">bug tracker</a>. If you’re not sure or don’t want to look through the existing tickets, ask on the community forums first.</p>
 <p>If you’re still convinced you have found a new bug, open a <a class="reference external" href="https://tickets.musicbrainz.org/secure/CreateIssue.jspa?pid=10042&amp;issuetype=1">new ticket</a> providing the following information:</p>
 <ul class="simple">
@@ -186,7 +190,7 @@ updated plugin versions.</p></li>
 </div>
 </div>
 <div class="section" id="getting-a-debug-log">
-<h2><span class="target" id="index-2"></span>Getting a Debug Log<a class="headerlink" href="#getting-a-debug-log" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-2"></span>Getting a Debug Log<a class="headerlink" href="#getting-a-debug-log" title="Permalink to this heading"></a></h2>
 <p>For many bugs, it helps developers to have a debug log from Picard. You can see the log by going to <span class="menuselection">“Help ‣ View Log”</span>. You can also get a full debug log, which is better because it contains more detailed information. Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly. To retrieve the full debug log:</p>
 <ol class="arabic simple">
 <li><p>Start Picard.</p></li>
@@ -200,10 +204,10 @@ updated plugin versions.</p></li>
 </ol>
 </div>
 <div class="section" id="getting-logs-in-case-of-crashes">
-<h2><span class="target" id="index-3"></span>Getting Logs in Case of Crashes<a class="headerlink" href="#getting-logs-in-case-of-crashes" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-3"></span>Getting Logs in Case of Crashes<a class="headerlink" href="#getting-logs-in-case-of-crashes" title="Permalink to this heading"></a></h2>
 <p>In some cases the problem will cause Picard to crash and not allow you to access the resulting log from the log viewer. You can still generate a log output to attach to your report by starting Picard with the <code class="docutils literal notranslate"><span class="pre">--debug</span></code> command line option from a command / terminal window and copying the log output information from the terminal. The steps to follow for each of the supported platforms are:</p>
 <div class="section" id="windows-systems">
-<h3>Windows Systems<a class="headerlink" href="#windows-systems" title="Permalink to this headline"></a></h3>
+<h3>Windows Systems<a class="headerlink" href="#windows-systems" title="Permalink to this heading"></a></h3>
 <p>First open a command window by clicking the search icon on the Windows Taskbar and enter “cmd”. Then start Picard by entering the following in the command window:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C:\Program Files\MusicBrainz Picard\picard.exe&quot;</span> <span class="o">--</span><span class="n">debug</span>
 </pre></div>
@@ -215,7 +219,7 @@ updated plugin versions.</p></li>
 </div>
 </div>
 <div class="section" id="macos-systems">
-<h3>macOS Systems<a class="headerlink" href="#macos-systems" title="Permalink to this headline"></a></h3>
+<h3>macOS Systems<a class="headerlink" href="#macos-systems" title="Permalink to this heading"></a></h3>
 <p>First open a terminal window by doing one of the following:</p>
 <ul class="simple">
 <li><p>Click the Launchpad icon in the Dock, type “Terminal” in the search field, then click <span class="guilabel">Terminal</span>.</p></li>
@@ -228,7 +232,7 @@ updated plugin versions.</p></li>
 <p>This will display all log entries in the terminal window, and allow you to copy the information to the clipboard to paste into your report.</p>
 </div>
 <div class="section" id="linux-systems">
-<h3>Linux Systems<a class="headerlink" href="#linux-systems" title="Permalink to this headline"></a></h3>
+<h3>Linux Systems<a class="headerlink" href="#linux-systems" title="Permalink to this heading"></a></h3>
 <p>First open a Terminal window in your desktop environment, either from the Applications menu or by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Alt</kbd>+<kbd class="kbd docutils literal notranslate">T</kbd></kbd> on most systems. Then start Picard by entering the following in the terminal window:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">picard</span> <span class="o">--</span><span class="n">debug</span>
 </pre></div>

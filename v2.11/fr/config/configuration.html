@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Configuration &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Configuration &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -163,10 +167,10 @@
            <div itemprop="articleBody">
              
   <div class="section" id="configuration">
-<h1>Configuration<a class="headerlink" href="#configuration" title="Lien permanent vers ce titre"></a></h1>
+<h1>Configuration<a class="headerlink" href="#configuration" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Une fois Picard installé sur votre système, l’étape suivante consiste à le configurer selon vos préférences. La configuration consiste à activer les sections d’écran souhaitées pour l’affichage, à sélectionner les actions souhaitées et à définir les différentes options.</p>
 <div class="section" id="screen-setup">
-<h2><span class="target" id="index-3"></span>Configuration de l’écran<a class="headerlink" href="#screen-setup" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-3"></span>Configuration de l’écran<a class="headerlink" href="#screen-setup" title="Lien permanent vers cette rubrique"></a></h2>
 <p>La configuration de l’écran se trouve sous l’élément <span class="menuselection">« View »</span> de la barre de menu. Pour activer l’affichage d’un élément, cochez simplement la case de l’option écran. Les éléments sont :</p>
 <p><strong>Navigateur de fichiers</strong></p>
 <blockquote>
@@ -191,7 +195,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="action-options">
-<span id="id1"></span><h2><span class="target" id="index-4"></span>Options d’action<a class="headerlink" href="#action-options" title="Lien permanent vers ce titre"></a></h2>
+<span id="id1"></span><h2><span class="target" id="index-4"></span>Options d’action<a class="headerlink" href="#action-options" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les options d’action se trouvent sous l’élément <span class="menuselection">« Options »</span> de la barre de menu. Il y a trois actions disponibles que Picard peut effectuer lors de l’enregistrement des fichiers musicaux sélectionnés :</p>
 <p><strong>Renommer les fichiers</strong></p>
 <blockquote>
@@ -207,8 +211,12 @@
 </div></blockquote>
 </div>
 <div class="section" id="option-settings">
-<h2><span class="target" id="index-5"></span>Paramètres des options<a class="headerlink" href="#option-settings" title="Lien permanent vers ce titre"></a></h2>
-<p>Les paramètres des options se trouvent sous l’élément <span class="menuselection">« Options ‣ Options… »</span> de la barre de menu. Cela ouvrira une nouvelle fenêtre avec les groupes d’options répertoriés dans un format d’arborescence sur le côté gauche et les paramètres individuels sur le côté droit. C’est là que la majorité de la personnalisation de Picard est effectuée.</p>
+<h2><span class="target" id="index-5"></span>Paramètres des options<a class="headerlink" href="#option-settings" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Les paramètres des options se trouvent sous l’élément <span class="menuselection">« Options ‣ Options… »</span> de la barre de menu. Sur macOS, on peut y accéder avec <span class="menuselection">« MusicBrainz Picard ‣ Préférences… »</span>. Ceci ouvrira une nouvelle fenêtre avec les groupes d’options listés sous forme d’arbre sur le côté gauche, et les réglages individuels sur le côté droit. C’est ici que la majorité des réglages de Picard sont effectués.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lorsque vous exécutez votre code à partir des sources dans un environnement macOS, vous pouvez accéder aux paramètres des options en naviguant vers l’option <span class="menuselection">« Python ‣ Préférences… »</span> dans la barre de menu. Cela vous permet de configurer et de personnaliser divers paramètres pour votre environnement de développement.</p>
+</div>
 <a class="reference internal image-reference" href="../_images/options-general-with-tree.png"><img alt="../_images/options-general-with-tree.png" src="../_images/options-general-with-tree.png" style="width: 100%;" /></a>
 <p>En plus des « paramètres utilisateur » de base, c’est également ici que les modifications des paramètres d’option sont apportées aux profils d’option individuels. Ceci est couvert plus en détail dans la section <a class="reference internal" href="../usage/option_profiles.html"><span class="doc">Profils d’options</span></a>.</p>
 <p>Les modifications apportées aux paramètres d’options d’un profil, à son statut d’activation ou à sa position dans la pile de profils seront reflétées dans les paramètres d’options affichés sur les autres pages. Les options contrôlées par un profil activé apparaissent en surbrillance. Si vous passez votre curseur sur l’option en surbrillance, vous saurez quel profil contrôle actuellement ce paramètre. Les paramètres sont toujours affichés en fonction du premier profil activé dans la pile de profils, qui correspond au paramètre qui sera utilisé pendant le traitement.</p>

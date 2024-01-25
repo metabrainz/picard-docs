@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ecriture d’un script de nommage de fichier &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Ecriture d’un script de nommage de fichier &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -144,7 +148,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="writing-a-file-naming-script">
-<span id="tutorial-naming-script"></span><h1>Ecriture d’un <span class="target" id="index-1"></span>script de nommage de fichier<a class="headerlink" href="#writing-a-file-naming-script" title="Lien permanent vers ce titre"></a></h1>
+<span id="tutorial-naming-script"></span><h1>Ecriture d’un <span class="target" id="index-1"></span>script de nommage de fichier<a class="headerlink" href="#writing-a-file-naming-script" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Ecrire un script pour organiser et nommer vos fichiers n’est en fait pas si difficile - ne vous laissez pas intimider par tous les “$”, “%” et les parenthèses. Si vous pouvez écrire un modèle comme « <strong>ARTISTE - (ANNÉE) NOM/PISTE DE L’ALBUM - TITRE DE LA CHANSON</strong> » de la façon dont vous voulez que les fichiers et dossiers soient nommés, vous pouvez facilement traduire cela dans le script approprié.</p>
 <p>Pour commencer, ouvrez d’abord le <a class="reference internal" href="../config/options_filerenaming_editor.html"><span class="doc">Nom de fichier Editeur de script</span></a>, soit en sélectionnant <span class="menuselection">« Options ‣ Ouvrir l’éditeur de script de nommage de fichier… »</span> dans la barre de menu principale de Picard ou en cliquant sur le :guilabel: bouton <cite>Modifier le script…</cite> sur la page de configuration <a class="reference internal" href="../config/options_filerenaming.html"><span class="doc">Options de nom de fichier</span></a>. À partir de cet écran, vous pouvez démarrer un nouveau script pour votre travail.</p>
 <p>Notez que l’utilisation d’un “/” dans la chaîne de formatage sépare le répertoire de sortie du nom de fichier. La chaîne de mise en forme peut contenir n’importe quel nombre de caractères “/”. Tout ce qui précède le dernier “/” est l’emplacement du répertoire, et tout ce qui se trouve après le dernier “/” devient le nom du fichier. Dans notre exemple, nous n’avons qu’un seul caractère “/”, ce qui signifie que nous aurons un niveau de répertoire pour l’album qui contiendra les chansons de cet album.</p>

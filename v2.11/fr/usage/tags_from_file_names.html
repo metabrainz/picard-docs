@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Générer des balises à partir des noms de fichiers &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Générer des balises à partir des noms de fichiers &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -157,10 +161,10 @@
            <div itemprop="articleBody">
              
   <div class="section" id="generating-tags-from-file-names">
-<h1>Générer des <span class="target" id="index-1"></span>balises à partir des noms de fichiers<a class="headerlink" href="#generating-tags-from-file-names" title="Lien permanent vers ce titre"></a></h1>
+<h1>Générer des <span class="target" id="index-1"></span>balises à partir des noms de fichiers<a class="headerlink" href="#generating-tags-from-file-names" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Parfois, les fichiers ont des balises de mauvaise qualité ou aucune balise du tout, mais les noms de fichiers sont bien structurés et suivent un modèle. Dans ce cas, vous pouvez utiliser <span class="menuselection">« Outils ‣ Balises de noms de fichiers… »</span> pour générer les balises à partir des noms de fichiers.</p>
 <div class="section" id="basic-usage">
-<h2>Utilisation de base<a class="headerlink" href="#basic-usage" title="Lien permanent vers ce titre"></a></h2>
+<h2>Utilisation de base<a class="headerlink" href="#basic-usage" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Pour utiliser cet outil, sélectionnez un ou plusieurs fichiers chargés dans Picard et ouvrez la boîte de dialogue Balises à partir de noms de fichiers dans le menu sous <span class="menuselection">« Outils ‣ Balises à partir de noms de fichiers… »</span>. La boîte de dialogue vous montrera une liste de noms de fichiers et un champ de saisie en haut où vous pouvez entrer un modèle correspondant.</p>
 <a class="reference internal image-reference" href="../_images/tags_from_file_names_1.png"><img alt="../_images/tags_from_file_names_1.png" src="../_images/tags_from_file_names_1.png" style="width: 100%;" /></a>
 <p>Le modèle de correspondance peut être constitué de noms de balises Picard entourés de signes <code class="docutils literal notranslate"><span class="pre">%</span></code> et d’autres caractères correspondant textuellement. Pour les noms de balises, vous pouvez utiliser des noms prédéfinis tels que <code class="docutils literal notranslate"><span class="pre">%artist%</span></code>, <code class="docutils literal notranslate"><span class="pre">%album%</span></code> ou <code class="docutils literal notranslate"><span class="pre">%title%</span></code> (voir <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a>) ou utilisez des noms personnalisés. Vous pouvez sélectionner quelques modèles prédéfinis, mais vous pouvez également les ajuster ou définir les vôtres.</p>
@@ -168,16 +172,16 @@
 <p>Cliquez sur le bouton « Aperçu » à côté du modèle correspondant pour afficher un aperçu des balises extraites pour chaque nom de fichier. Une fois que vous êtes satisfait du résultat, vous pouvez accepter les modifications avec le bouton « Ok ». Les balises modifiées seront définies pour les fichiers. Notez que les modifications ne seront pas enregistrées automatiquement, vous devez tout de même enregistrer les fichiers si vous souhaitez que les balises soient écrites (voir <a class="reference internal" href="save.html"><span class="doc">Enregistrement des fichiers mis à jour</span></a>).</p>
 </div>
 <div class="section" id="matching-folders">
-<h2>Dossiers correspondants<a class="headerlink" href="#matching-folders" title="Lien permanent vers ce titre"></a></h2>
+<h2>Dossiers correspondants<a class="headerlink" href="#matching-folders" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Le modèle peut également correspondre aux dossiers parents du fichier. Pour faire correspondre les dossiers, utilisez une barre oblique (<code class="docutils literal notranslate"><span class="pre">/</span></code>) comme séparateur. Si par exemple le fichier se trouve dans un dossier nommé d’après l’album, qui à son tour se trouve dans un dossier nommé d’après l’artiste (ex <code class="file docutils literal notranslate"><span class="pre">Neil</span> <span class="pre">Young/Harvest/04</span> <span class="pre">Heart</span> <span class="pre">of</span> <span class="pre">Gold.mp3</span></code>), vous pouvez faire correspondre l’artiste, album, numéro de piste et titre avec un modèle de <code class="samp docutils literal notranslate"><span class="pre">%artist%/%album%/%tracknumber%</span> <span class="pre">-</span> <span class="pre">%title%</span></code>.</p>
 <a class="reference internal image-reference" href="../_images/tags_from_file_names_2.png"><img alt="../_images/tags_from_file_names_2.png" src="../_images/tags_from_file_names_2.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="replace-underscores-with-spaces">
-<h2>Remplacer les traits de soulignement par des espaces<a class="headerlink" href="#replace-underscores-with-spaces" title="Lien permanent vers ce titre"></a></h2>
+<h2>Remplacer les traits de soulignement par des espaces<a class="headerlink" href="#replace-underscores-with-spaces" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Parfois, les fichiers ont été nommés sans espaces et utilisent plutôt des traits de soulignement. Par exemple, un fichier pourrait être nommé <code class="file docutils literal notranslate"><span class="pre">04_Heart_of_Gold.mp3</span></code>. Par défaut, le titre serait extrait en tant que « Heart_of_Gold ». Dans ce cas, cochez la case « Remplacer les traits de soulignement par des espaces » et utilisez un modèle comme <code class="samp docutils literal notranslate"><span class="pre">%tracknumber%</span> <span class="pre">_%title%</span></code> pour extraire correctement le titre en « Heart of Gold ».</p>
 </div>
 <div class="section" id="ignoring-parts-of-the-file-name">
-<h2>Ignorer certaines parties du nom de fichier<a class="headerlink" href="#ignoring-parts-of-the-file-name" title="Lien permanent vers ce titre"></a></h2>
+<h2>Ignorer certaines parties du nom de fichier<a class="headerlink" href="#ignoring-parts-of-the-file-name" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Parfois, vous ne souhaitez pas inclure des parties du nom de fichier dans vos balises et souhaitez simplement les ignorer. Le modèle doit toujours correspondre au nom de fichier entier, cependant. Dans ce cas, vous pouvez utiliser une variable masquée pour les parties du nom de fichier que vous ne souhaitez pas faire correspondre à une balise réelle. Les variables masquées commencent par un trait de soulignement comme <code class="samp docutils literal notranslate"><span class="pre">%_dummy%</span></code>. Cette variable sera toujours disponible dans le fichier pour <a class="reference internal" href="../extending/scripting.html"><span class="doc">Script</span></a>, mais ne sera pas écrite dans les balises réelles du fichier lors de l’enregistrement.</p>
 <p>Un exemple pourrait être si vous souhaitez extraire uniquement le numéro de piste d’un nom de fichier comme <code class="file docutils literal notranslate"><span class="pre">04</span> <span class="pre">Are</span> <span class="pre">You</span> <span class="pre">Ready</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">Country_.mp3</span></code>. Peut-être que la balise de numéro de piste est manquante dans le fichier, mais la balise de titre est déjà correctement définie. Vous pouvez utiliser le modèle <code class="samp docutils literal notranslate"><span class="pre">%tracknumber%</span> <span class="pre">%_filetitle%</span></code>. Cela extraire correctement la balise <code class="docutils literal notranslate"><span class="pre">tracknumber</span></code>, mais extraire le reste du nom de fichier dans une variable cachée <code class="samp docutils literal notranslate"><span class="pre">%_filetitle%</span></code> qui ne sera pas écrite dans les balises de fichier. Le nom <code class="samp docutils literal notranslate"><span class="pre">%_filetitle%</span></code> est choisi arbitrairement, il suffit de commencer par un trait de soulignement.</p>
 <div class="admonition note">

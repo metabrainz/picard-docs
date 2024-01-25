@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>File Formats &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>File Formats &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -160,9 +164,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="file-formats">
-<h1><span class="target" id="index-0"></span>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this headline"></a></h1>
+<h1><span class="target" id="index-0"></span>File Formats<a class="headerlink" href="#file-formats" title="Permalink to this heading"></a></h1>
 <div class="section" id="what-formats-does-picard-support">
-<h2>What formats does Picard support?<a class="headerlink" href="#what-formats-does-picard-support" title="Permalink to this headline"></a></h2>
+<h2>What formats does Picard support?<a class="headerlink" href="#what-formats-does-picard-support" title="Permalink to this heading"></a></h2>
 <p>Picard supports the following file formats:</p>
 <ul class="simple">
 <li><p>MPEG-1 Audio (.mp3, .mp2, .m2a)</p></li>
@@ -197,12 +201,12 @@ for tags and character encodings.</p>
 </div>
 </div>
 <div class="section" id="what-formats-will-picard-support">
-<h2>What formats will Picard support?<a class="headerlink" href="#what-formats-will-picard-support" title="Permalink to this headline"></a></h2>
+<h2>What formats will Picard support?<a class="headerlink" href="#what-formats-will-picard-support" title="Permalink to this heading"></a></h2>
 <p>Picard is intended to eventually support all formats (including fingerprinting), but this is a complex (arguably never-ending) process,
 and will take some time.</p>
 </div>
 <div class="section" id="what-rippers-are-supported-for-looking-up-from-logs">
-<span id="faq-supported-rippers"></span><h2>What rippers are supported for looking up from logs?<a class="headerlink" href="#what-rippers-are-supported-for-looking-up-from-logs" title="Permalink to this headline"></a></h2>
+<span id="faq-supported-rippers"></span><h2>What rippers are supported for looking up from logs?<a class="headerlink" href="#what-rippers-are-supported-for-looking-up-from-logs" title="Permalink to this heading"></a></h2>
 <p>As of version 2.9, Picard supports the use of log files produced by popular CD file rippers for looking up a release. Because the log
 files of these rippers contain sufficient information to generate the CD table of contents they can be used in place of reading
 the CD itself.  The supported rippers include:</p>
@@ -215,11 +219,11 @@ the CD itself.  The supported rippers include:</p>
 </ul>
 </div>
 <div class="section" id="which-tags-can-picard-write-to-my-files">
-<h2>Which tags can Picard write to my files?<a class="headerlink" href="#which-tags-can-picard-write-to-my-files" title="Permalink to this headline"></a></h2>
+<h2>Which tags can Picard write to my files?<a class="headerlink" href="#which-tags-can-picard-write-to-my-files" title="Permalink to this heading"></a></h2>
 <p>See the <a class="reference internal" href="../variables/variables.html"><span class="doc">Tags &amp; Variables</span></a> section for information on which MusicBrainz fields Picard writes to tags. <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Picard Tag Mapping</a> contains more technical information on how these are further mapped into each tag format.</p>
 </div>
 <div class="section" id="how-do-i-edit-tags-in-several-files-at-once">
-<h2>How do I edit tags in several files at once?<a class="headerlink" href="#how-do-i-edit-tags-in-several-files-at-once" title="Permalink to this headline"></a></h2>
+<h2>How do I edit tags in several files at once?<a class="headerlink" href="#how-do-i-edit-tags-in-several-files-at-once" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Click and select several files with <kbd class="kbd docutils literal notranslate">Ctrl</kbd> or <kbd class="kbd docutils literal notranslate">Shift</kbd>.</p></li>
 <li><p>The metadata view at the bottom will show which tags are present in the selected files
@@ -238,7 +242,7 @@ data to write into your tags. Some secondary goals include:</p>
 Media Player, and MediaMonkey). That doesn’t mean that the team won’t welcome patches in this area!</p>
 </div>
 <div class="section" id="why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster">
-<h2>Why is saving files sometimes slow, but saving a second time much faster?<a class="headerlink" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster" title="Permalink to this headline"></a></h2>
+<h2>Why is saving files sometimes slow, but saving a second time much faster?<a class="headerlink" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster" title="Permalink to this heading"></a></h2>
 <p>In most file formats the tags are near the beginning of the file, before the actual music data.  If changed
 tags get written to the file and the newly written tags take more space than before the entire file needs
 to be rewritten. This is usually much slower than just rewriting part of the file containing the tags,
@@ -251,7 +255,7 @@ only leads to an increase in padding, avoiding rewriting the file.</p>
 slow writing speed. If you do only small changes or just remove and later re-add tags the writing is much faster.</p>
 </div>
 <div class="section" id="why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default">
-<h2>Why does Picard not use Vinyl style track numbers (e.g. A1, A2, …) by default?<a class="headerlink" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default" title="Permalink to this headline"></a></h2>
+<h2>Why does Picard not use Vinyl style track numbers (e.g. A1, A2, …) by default?<a class="headerlink" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default" title="Permalink to this heading"></a></h2>
 <p>For Vinyl releases the track numbers on MusicBrainz are usually entered as A1, A2, …, B1, B2, … and so on.
 Other releases might use even different more uncommon numbering schemes.  Yet Picard will by default always write
 decimal track numbers, starting with 1 for the first track on a medium.</p>
@@ -268,7 +272,7 @@ does not allow for non integer values in this tag.  For other formats it depends
 devices you use if they can handle these non-standard track numbers.</p>
 </div>
 <div class="section" id="the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">
-<h2>The built-in audio player cannot play my file. Which formats does it support?<a class="headerlink" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support" title="Permalink to this headline"></a></h2>
+<h2>The built-in audio player cannot play my file. Which formats does it support?<a class="headerlink" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support" title="Permalink to this heading"></a></h2>
 <p>The formats supported by the built-in <span class="target" id="index-2"></span>audio player depend on the formats supported by your operating system.</p>
 <p><strong>Windows:</strong></p>
 <blockquote>
@@ -288,7 +292,7 @@ licensing issues. For the widest format support make sure you install all of the
 </div></blockquote>
 </div>
 <div class="section" id="i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">
-<h2>I am using Fedora. Why doesn’t <span class="target" id="index-3"></span>acoustic fingerprinting work?<a class="headerlink" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work" title="Permalink to this headline"></a></h2>
+<h2>I am using Fedora. Why doesn’t <span class="target" id="index-3"></span>acoustic fingerprinting work?<a class="headerlink" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work" title="Permalink to this heading"></a></h2>
 <p>Acoustic fingerprinting in Picard uses a tool called <strong class="program">fpcalc</strong>, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage
 from the <a class="reference external" href="https://rpmfusion.org/">RPM Fusion repository</a>. This functionality is not contained in the main Fedora <code class="docutils literal notranslate"><span class="pre">picard</span></code> package because it requires
 the <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> package which <a class="reference external" href="https://fedoraproject.org/wiki/Forbidden_items">cannot be distributed by Fedora</a>. After <a class="reference external" href="https://rpmfusion.org/Configuration">enabling the “rpmfusion-free” RPM

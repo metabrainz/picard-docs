@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Introduction &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -148,7 +152,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h1>
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
 <p>MusicBrainz Picard is a cross-platform music file tagger.
 For any people who don’t know what this means, here is a quick explanation which can be
 skipped by those people who already know.</p>
@@ -183,7 +187,7 @@ be disappointed.  To quote from the Picard website, <em>“Picard is not built t
 tag fixer. Picard believes in quality over quantity and provides a plethora of customizations to
 tweak music collections to your needs.”</em></p>
 <div class="section" id="picard-can">
-<h2>Picard Can…<a class="headerlink" href="#picard-can" title="Permalink to this headline"></a></h2>
+<h2>Picard Can…<a class="headerlink" href="#picard-can" title="Permalink to this heading"></a></h2>
 <p>…add metadata tags to your music files, based on information available from the <a class="reference external" href="https://musicbrainz.org/">MusicBrainz
 website</a>.</p>
 <p>…look up the metadata either manually or automatically based on existing information, including
@@ -195,12 +199,12 @@ in a naming script.</p>
 <p>…calculate and submit a music file’s AcoustID fingerprint to the <a class="reference external" href="https://acoustid.org/">AcoustID database</a>.</p>
 </div>
 <div class="section" id="picard-cannot">
-<h2>Picard Cannot…<a class="headerlink" href="#picard-cannot" title="Permalink to this headline"></a></h2>
+<h2>Picard Cannot…<a class="headerlink" href="#picard-cannot" title="Permalink to this heading"></a></h2>
 <p>…automatically identify and remove all duplicate music files in your collection.</p>
 <p>…provide metadata not already existing in the MusicBrainz database.</p>
 </div>
 <div class="section" id="limitations">
-<h2><span class="target" id="index-0"></span>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-0"></span>Limitations<a class="headerlink" href="#limitations" title="Permalink to this heading"></a></h2>
 <p><strong>File Formats</strong></p>
 <p>Picard currently supports most music file formats, with Matroska (.mka) being one notable exception.
 Microsoft WAVE (.wav) files can be fingerprinted and renamed and can be tagged using ID3v2 tags, but this is

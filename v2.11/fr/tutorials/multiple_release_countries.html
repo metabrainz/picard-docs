@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gestion de plusieurs pays de sortie &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Gestion de plusieurs pays de sortie &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -144,16 +148,16 @@
            <div itemprop="articleBody">
              
   <div class="section" id="handling-of-multiple-release-countries">
-<h1>Gestion de <span class="target" id="index-1"></span>plusieurs pays de sortie<a class="headerlink" href="#handling-of-multiple-release-countries" title="Lien permanent vers ce titre"></a></h1>
+<h1>Gestion de <span class="target" id="index-1"></span>plusieurs pays de sortie<a class="headerlink" href="#handling-of-multiple-release-countries" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Certaines sorties, en particulier les sorties numériques, peuvent avoir une très longue liste de pays de sortie, listant parfois tous les pays du monde sauf quelques-uns où la sortie n’est pas officiellement disponible. Picard propose quelques outils pour gérer cela.</p>
 <p>Prenons l’exemple de <strong>Bleach</strong>, de Nirvana (MusicBrainz release <a class="reference external" href="https://musicbrainz.org/release/adab3feb-1822-4d27-a997-db7d6c9688c0">adab3feb-1822-4d27-a997-db7d6c9688c0</a>).</p>
 <p>Par défaut, Picard écrit une seule balise <code class="docutils literal notranslate"><span class="pre">releasecountry</span></code> dans les fichiers. Avant la v2.3.1, Picard remplissait cette balise avec ce que le serveur MusicBrainz retournait comme pays pour la sortie. S’il y avait plusieurs sorties, ce champ pays était simplement rempli avec le premier par ordre alphabétique (Afghanistan dans notre exemple). Picard v2.3.1 a introduit quelques options pour mieux gérer ce problème.</p>
 <div class="section" id="using-preferred-release-countries">
-<h2>Utilisation des pays de diffusion préférés<a class="headerlink" href="#using-preferred-release-countries" title="Lien permanent vers ce titre"></a></h2>
+<h2>Utilisation des pays de diffusion préférés<a class="headerlink" href="#using-preferred-release-countries" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Si vous configurez les pays de publication préférés dans <span class="menuselection">« Options ‣ Metadata ‣ Preferred Releases »</span>. Picard utilisera le premier pays de la liste des pays de diffusion préférés qui se trouve également dans la liste des événements de diffusion. Ainsi, si vous avez configuré les pays de diffusion préférés comme étant l’Europe, le Canada, l’Allemagne et le Royaume-Uni, dans notre exemple, cela signifie que la balise <code class="docutils literal notranslate"><span class="pre">releasecountry</span></code> sera définie sur le Canada.</p>
 </div>
 <div class="section" id="using-scripting-to-set-a-different-country">
-<h2>Utilisation de scripts pour définir un pays différent<a class="headerlink" href="#using-scripting-to-set-a-different-country" title="Lien permanent vers ce titre"></a></h2>
+<h2>Utilisation de scripts pour définir un pays différent<a class="headerlink" href="#using-scripting-to-set-a-different-country" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Picard v2.3.1 a également ajouté une nouvelle variable <code class="docutils literal notranslate"><span class="pre">%_releasecountries%</span></code>, qui fournit la liste complète des pays de diffusion d’une version sous la forme d’une variable à plusieurs valeurs. Vous pouvez l’utiliser pour définir différentes valeurs pour la balise <code class="docutils literal notranslate"><span class="pre">releasecountry</span></code>.</p>
 <p>Par exemple, le script suivant lui attribue la valeur « [International] » s’il y a 10 pays de diffusion ou plus:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if($gte($lenmulti(</span><span class="n">%_releasecountries%</span><span class="k">)</span>,10<span class="k">)</span>,<span class="k">$set(</span>releasecountry,[International]<span class="k">))</span>
@@ -169,7 +173,7 @@
 </div>
 </div>
 <div class="section" id="what-s-missing">
-<h2>Qu’est-ce qui manque?<a class="headerlink" href="#what-s-missing" title="Lien permanent vers ce titre"></a></h2>
+<h2>Qu’est-ce qui manque?<a class="headerlink" href="#what-s-missing" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les pays sont actuellement inscrits dans les balises sous leur code pays ISO 3166-1, avec quelques valeurs spéciales ajoutées pour les pays historiques et des choses comme [Europe] ou [Worldwide]. Ces codes ne sont pas toujours facilement reconnaissables ou évidents, comme « DZ » pour l’Algérie ou « DE » pour l’Allemagne. Vous pouvez bien sûr utiliser des scripts pour les rendre plus lisibles.  Par exemple, si vous voulez voir « United Kingdom » au lieu de « GB » dans cette balise, utilisez:</p>
 <div class="highlight-taggerscript notranslate"><div class="highlight"><pre><span></span><span class="k">$if($eq(</span><span class="n">%releasecountry%</span>,GB<span class="k">)</span>,<span class="k">$set(</span>releasecountry,United Kingdom<span class="k">))</span>
 </pre></div>
