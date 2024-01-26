@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joindre un ID de disque à une version &mdash; Documentation MusicBrainz Picard v2.11</title>
+  <title>Joindre un ID de disque à une parution &mdash; Documentation MusicBrainz Picard v2.11</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -73,10 +73,10 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="using.html">Usage général</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="other.html">Autres tâches de Picard</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Joindre un ID de disque à une version</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Joindre un ID de disque à une parution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="submit_acoustid.html">Soumission d’empreintes acoustiques</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tags_from_file_names.html">Générer des balises à partir des noms de fichiers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="submit_cluster_as_release.html">Soumettre le cluster comme une version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="submit_cluster_as_release.html">Soumettre le cluster comme une parution</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="option_profiles.html">Profils d’options</a></li>
@@ -109,7 +109,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -145,7 +145,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="other.html">Autres tâches de Picard</a></li>
-      <li class="breadcrumb-item active">Joindre un ID de disque à une version</li>
+      <li class="breadcrumb-item active">Joindre un ID de disque à une parution</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -155,8 +155,8 @@
            <div itemprop="articleBody">
              
   <div class="section" id="attaching-a-disc-id-to-a-release">
-<h1><span class="target" id="index-1"></span>Joindre un ID de disque à une version<a class="headerlink" href="#attaching-a-disc-id-to-a-release" title="Lien permanent vers cette rubrique"></a></h1>
-<p>Les ID de disque sont très utiles pour identifier les CD et permettre à MusicBrainz de connaître la longueur des pistes d’un CD. Ainsi, il est très utile de les ajouter lors de la soumission d’une nouvelle version de CD ou lorsque vous avez une version de CD qui n’a pas d’identifiant de disque attaché.</p>
+<h1><span class="target" id="index-1"></span>Joindre un ID de disque à une parution<a class="headerlink" href="#attaching-a-disc-id-to-a-release" title="Lien permanent vers cette rubrique"></a></h1>
+<p>Les ID de disque sont très utiles pour identifier les CD et permettre à MusicBrainz de connaître la longueur des pistes d’un CD. Ainsi, il est très utile de les ajouter lors de la soumission d’une nouvelle parution CD ou lorsque vous avez une parution CD qui n’a pas d’identifiant de disque attaché.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Veuillez ne pas ajouter de DiscID à partir de CD gravés à la maison.</p>
@@ -173,21 +173,21 @@
 </div></blockquote>
 <p><strong>2. Examiner la liste des communiqués correspondants</strong></p>
 <blockquote>
-<div><p>Si la version cible apparaît dans cette liste, l’ID du disque a déjà été joint et vous n’avez rien d’autre à faire. Si aucune correspondance n’est trouvée ou si la version cible souhaitée n’apparaît pas dans la liste, utilisez l’option <span class="menuselection">« Soumettre l’ID du disque »</span> pour localiser la version correcte. Entrez le titre de la sortie ou l’artiste et lancez la recherche. Vous recevrez une liste des sorties qui correspondent à votre critère de recherche et qui ont le même nombre de pistes que votre CD TOC.</p>
+<div><p>Si la parution cible apparaît dans cette liste, l’ID du disque a déjà été joint et vous n’avez rien d’autre à faire. Si aucune correspondance n’est trouvée ou si la version cible souhaitée n’apparaît pas dans la liste, utilisez l’option <span class="menuselection">« Soumettre l’ID du disque »</span> pour localiser la parution correcte. Entrez le titre de la sortie ou l’artiste et lancez la recherche. Vous recevrez une liste des sorties qui correspondent à votre critère de recherche et qui ont le même nombre de pistes que votre CD TOC.</p>
 <a class="reference internal image-reference" href="../_images/cd_lookup_2.png"><img alt="../_images/cd_lookup_2.png" src="../_images/cd_lookup_2.png" style="width: 100%;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Si vous recherchez par artiste, utilisez le bouton radio à côté du nom de l’artiste pour sélectionner l’artiste souhaité. Si vous cliquez sur le lien du nom de l’artiste, vous ne serez pas autorisé à joindre l’identifiant du disque à l’une des versions affichées.</p>
+<p>Si vous recherchez par artiste, utilisez le bouton radio à côté du nom de l’artiste pour sélectionner l’artiste souhaité. Si vous cliquez sur le lien du nom de l’artiste, vous ne serez pas autorisé à joindre l’identifiant du disque à l’une des parutions affichées.</p>
 </div>
 </div></blockquote>
 <p><strong>3. Sélectionnez le communiqué</strong></p>
 <blockquote>
-<div><p>Sélectionnez la version cible souhaitée dans la liste affichée en cliquant sur le bouton radio à côté de la version, puis cliquez sur le bouton « Joindre le CD TOC » sous la liste des versions.  Cela préparera une édition pour joindre l’identifiant du disque à la version.  Vous devez ensuite ajouter une note d’édition appropriée et soumettre l’édition.</p>
+<div><p>Sélectionnez la version cible souhaitée dans la liste affichée en cliquant sur le bouton radio à côté de la parution, puis cliquez sur le bouton « Joindre le CD TOC » sous la liste des parutions.  Cela préparera une modification pour joindre l’identifiant du disque à la parution.  Vous devez ensuite ajouter une note de modification appropriée et soumettre la modification.</p>
 <a class="reference internal image-reference" href="../_images/add_disc_id_1.png"><img alt="../_images/add_disc_id_1.png" src="../_images/add_disc_id_1.png" style="width: 100%;" /></a>
 </div></blockquote>
-<p><strong>4. Ajouter la version si elle est manquante</strong></p>
+<p><strong>4. Ajouter la parution si elle est manquante</strong></p>
 <blockquote>
-<div><p>Si aucune des versions affichées n’est correcte, vous avez la possibilité d’ajouter une nouvelle version (avec certaines informations automatiquement incluses). L’identifiant du disque sera automatiquement attaché à la nouvelle version lorsque l’édition est enregistrée.</p>
+<div><p>Si aucune des parutions affichées n’est correcte, vous avez la possibilité d’ajouter une nouvelle parution (avec certaines informations automatiquement incluses). L’identifiant du disque sera automatiquement attaché à la nouvelle parution lorsque la modification est enregistrée.</p>
 <a class="reference internal image-reference" href="../_images/cd_lookup_4.png"><img alt="../_images/cd_lookup_4.png" src="../_images/cd_lookup_4.png" style="width: 100%;" /></a>
 </div></blockquote>
 </div>
