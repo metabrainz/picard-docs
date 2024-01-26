@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lorsque les fichiers sont regroupés par album &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Lorsque les fichiers sont regroupés par album &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -99,7 +103,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -145,7 +149,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="when-files-are-grouped-by-album">
-<h1><span class="target" id="index-2"></span>Lorsque les fichiers sont regroupés par album<a class="headerlink" href="#when-files-are-grouped-by-album" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-2"></span>Lorsque les fichiers sont regroupés par album<a class="headerlink" href="#when-files-are-grouped-by-album" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Si les fichiers musicaux à traiter sont déjà regroupés dans des dossiers par album, le processus de recherche de la version dans la base de données MusicBrainz est grandement simplifié car Picard fonctionne mieux lors du traitement d’un album à la fois.</p>
 <p><strong>1. Chargez les fichiers</strong></p>
 <blockquote>
@@ -155,17 +159,17 @@
 <blockquote>
 <div><p>Sélectionnez les fichiers dans le volet de gauche et combinez-les dans un groupe d’albums à l’aide de la commande <span class="menuselection">« Outils ‣ Cluster »</span>. Sélectionnez le groupe dans le volet de gauche et lancez la recherche à l’aide de <span class="menuselection">« Outils ‣ Recherche »</span>. Voir la section <a class="reference internal" href="../usage/retrieve_lookup.html"><span class="doc">Rechercher des fichiers</span></a> pour plus de détails.</p>
 </div></blockquote>
-<p><strong>3. Sélectionnez la version appropriée</strong></p>
+<p><strong>3. Sélectionnez la parution appropriée</strong></p>
 <blockquote>
 <div><p>S’il n’y a qu’une seule version qui correspond à la recherche, elle sera chargée automatiquement. Avant de continuer, veuillez vérifier qu’il correspond bien à votre album (par exemple: pays de sortie, date et étiquette, numéro de catalogue, code-barres, type de support et pochette). Ceci est particulièrement important si vous allez soumettre des informations telles que les empreintes digitales AcoustID.</p>
 </div></blockquote>
 <p><strong>4. Faites correspondre les fichiers aux pistes de la version</strong></p>
 <blockquote>
-<div><p>Faites glisser les fichiers du volet de gauche et déposez-les sur la version dans le volet de droite. Vérifiez que chaque piste de la version est associée à un seul fichier. L’icône de libération devrait devenir dorée. Voir la section <a class="reference internal" href="../usage/match.html"><span class="doc">Mise en correspondance des fichiers aux pistes</span></a> pour plus de détails.</p>
+<div><p>Faites glisser les fichiers du volet de gauche et déposez-les sur la parution dans le volet de droite. Vérifiez que chaque piste de la parution est associée à un seul fichier. L’icône de parution devrait devenir dorée. Voir la section <a class="reference internal" href="../usage/match.html"><span class="doc">Mise en correspondance des fichiers aux pistes</span></a> pour plus de détails.</p>
 </div></blockquote>
 <p><strong>5. Vérifiez les métadonnées et la pochette</strong></p>
 <blockquote>
-<div><p>Vérifiez que les métadonnées et l’image de la pochette de la version et des pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la section <a class="reference internal" href="../usage/coverart.html"><span class="doc">Définition de la pochette</span></a> pour plus de détails.</p>
+<div><p>Vérifiez que les métadonnées et l’image de la pochette de la parution et des pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la section <a class="reference internal" href="../usage/coverart.html"><span class="doc">Définition de la pochette</span></a> pour plus de détails.</p>
 </div></blockquote>
 <p><strong>6. Enregistrez les fichiers</strong></p>
 <blockquote>
@@ -177,7 +181,7 @@
 <p>Sélectionnez l’entrée de l’album dans le volet de droite et calculez les empreintes AcoustID à l’aide de <span class="menuselection">« Outils ‣ Générer des empreintes AcoustID »</span>. Une fois les empreintes calculées, soumettez-les en utilisant <span class="menuselection">« Fichiers ‣ Soumettre les AcoustIDs »</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Les empreintes digitales AcoustID ne doivent être soumises qu’après que les fichiers ont été étiquetés avec les métadonnées MusicBrainz et que vous avez vérifié que les fichiers ont été mis en correspondance avec la bonne piste dans la version appropriée.</p>
+<p>Les empreintes digitales AcoustID ne doivent être soumises qu’après que les fichiers ont été étiquetés avec les métadonnées MusicBrainz et que vous avez vérifié que les fichiers ont été mis en correspondance avec la bonne piste dans la parution appropriée.</p>
 </div>
 </div></blockquote>
 </div>

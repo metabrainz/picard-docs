@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>macOS &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>macOS &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -124,7 +128,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -171,7 +175,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="macos">
-<h1>macOS<a class="headerlink" href="#macos" title="Lien permanent vers ce titre"></a></h1>
+<h1>macOS<a class="headerlink" href="#macos" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Dans macOS, l’option de recherche de CD est actuellement un champ de texte. Le périphérique est généralement <code class="docutils literal notranslate"><span class="pre">/dev/rdisk1</span></code>.</p>
 <p>Si cela ne fonctionne pas, une façon est de simplement continuer à augmenter le nombre (par exemple <code class="docutils literal notranslate"><span class="pre">/dev/rdisk2</span></code>) jusqu’à ce que cela fonctionne. Une méthode moins d’essai et d’erreur consiste à ouvrir « Terminal » et à taper « mount ». La sortie doit inclure une ligne telle que:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">disk2</span> <span class="n">on</span> <span class="o">/</span><span class="n">Volumes</span><span class="o">/</span><span class="n">Audio</span> <span class="n">CD</span> <span class="p">(</span><span class="n">local</span><span class="p">,</span> <span class="n">nodev</span><span class="p">,</span> <span class="n">nosuid</span><span class="p">,</span> <span class="n">read</span><span class="o">-</span><span class="n">only</span><span class="p">)</span>

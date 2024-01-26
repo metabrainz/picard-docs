@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Variables &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Advanced Variables &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -158,7 +162,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="advanced-variables">
-<h1><span class="target" id="index-0"></span>Advanced Variables<a class="headerlink" href="#advanced-variables" title="Permalink to this headline"></a></h1>
+<h1><span class="target" id="index-0"></span>Advanced Variables<a class="headerlink" href="#advanced-variables" title="Permalink to this heading"></a></h1>
 <p>You can make additional tags available by enabling the <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use track relationships</span></a> and/or the
 <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use release relationships</span></a> settings in Picard.</p>
 <p>Some variables provide the <span class="target" id="index-1"></span>MusicBrainz Identifier (MBID) of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Identifier</a> page in the MusicBrainz documentation.</p>
@@ -167,7 +171,7 @@
 <p>Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database.</p>
 </div>
 <div class="section" id="release-relationship-variables">
-<h2>Release Relationship Variables<a class="headerlink" href="#release-relationship-variables" title="Permalink to this headline"></a></h2>
+<h2>Release Relationship Variables<a class="headerlink" href="#release-relationship-variables" title="Permalink to this heading"></a></h2>
 <p>If you enable tagging with <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use release relationships</span></a>, you get these extra variables:</p>
 <p><strong>_release_series</strong></p>
 <blockquote>
@@ -203,7 +207,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="track-relationship-variables">
-<h2>Track Relationship Variables<a class="headerlink" href="#track-relationship-variables" title="Permalink to this headline"></a></h2>
+<h2>Track Relationship Variables<a class="headerlink" href="#track-relationship-variables" title="Permalink to this heading"></a></h2>
 <p>If you enable tagging with <a class="reference internal" href="../config/options_metadata.html"><span class="doc">Use track relationships</span></a>, you get these extra variables:</p>
 <p><strong>_lyricistsort</strong></p>
 <blockquote>

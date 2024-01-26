@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Using Picard &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Using Picard &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -158,19 +162,19 @@
            <div itemprop="articleBody">
              
   <div class="section" id="using-picard">
-<h1>Using Picard<a class="headerlink" href="#using-picard" title="Permalink to this headline"></a></h1>
+<h1>Using Picard<a class="headerlink" href="#using-picard" title="Permalink to this heading"></a></h1>
 <div class="section" id="how-do-i-tag-files-with-picard">
-<h2>How do I tag files with Picard?<a class="headerlink" href="#how-do-i-tag-files-with-picard" title="Permalink to this headline"></a></h2>
+<h2>How do I tag files with Picard?<a class="headerlink" href="#how-do-i-tag-files-with-picard" title="Permalink to this heading"></a></h2>
 <p>There is a separate section that explains the tagging process.  Please see <a class="reference internal" href="../usage/using.html"><span class="doc">Using Picard</span></a> for details.</p>
 </div>
 <div class="section" id="the-green-tagger-icon-disappeared-from-musicbrainz-org-how-do-i-get-it-back">
-<h2>The green “Tagger” <span class="target" id="index-0"></span>icon disappeared from MusicBrainz.org, how do I get it back?<a class="headerlink" href="#the-green-tagger-icon-disappeared-from-musicbrainz-org-how-do-i-get-it-back" title="Permalink to this headline"></a></h2>
+<h2>The green “Tagger” <span class="target" id="index-0"></span>icon disappeared from MusicBrainz.org, how do I get it back?<a class="headerlink" href="#the-green-tagger-icon-disappeared-from-musicbrainz-org-how-do-i-get-it-back" title="Permalink to this heading"></a></h2>
 <p>This icon shows up when a manual lookup is performed via Picard using <span class="menuselection">“Tools ‣ Lookup”</span>.</p>
 <p>Alternatively the parameter <code class="docutils literal notranslate"><span class="pre">?tport=8000</span></code> can be added to the end of almost any MusicBrainz URL and the green
 tagger icons will continue to show up from then on.</p>
 </div>
 <div class="section" id="i-m-trying-to-load-a-release-in-picard-but-all-i-m-seeing-is-couldn-t-load-album-errors-what-s-up">
-<h2>I’m trying to <span class="target" id="index-1"></span>load a release in Picard, but all I’m seeing is “Couldn’t load album errors”. What’s up?<a class="headerlink" href="#i-m-trying-to-load-a-release-in-picard-but-all-i-m-seeing-is-couldn-t-load-album-errors-what-s-up" title="Permalink to this headline"></a></h2>
+<h2>I’m trying to <span class="target" id="index-1"></span>load a release in Picard, but all I’m seeing is “Couldn’t load album errors”. What’s up?<a class="headerlink" href="#i-m-trying-to-load-a-release-in-picard-but-all-i-m-seeing-is-couldn-t-load-album-errors-what-s-up" title="Permalink to this heading"></a></h2>
 <p>If you get “Couldn’t load album errors” for releases in Picard, this can occur for a number of reasons. Check the
 following:</p>
 <ol class="arabic">
@@ -195,13 +199,13 @@ as possible to prove it is genuine and it may be accepted again.</div>
 </ol>
 </div>
 <div class="section" id="i-m-using-macos-where-are-my-network-folders-or-drives">
-<h2>I’m using macOS, where are my <span class="target" id="index-3"></span>network folders or drives?<a class="headerlink" href="#i-m-using-macos-where-are-my-network-folders-or-drives" title="Permalink to this headline"></a></h2>
+<h2>I’m using macOS, where are my <span class="target" id="index-3"></span>network folders or drives?<a class="headerlink" href="#i-m-using-macos-where-are-my-network-folders-or-drives" title="Permalink to this heading"></a></h2>
 <p>These should show up in the add file and add folder dialogs, but they aren’t visible by default in the file browser
 pane. If you want to see them in the file browser pane, right click in the pane and select “show hidden files”. They
 should then be visible in the <code class="file docutils literal notranslate"><span class="pre">/Volumes</span></code> folder.</p>
 </div>
 <div class="section" id="macos-shows-the-app-is-damaged-how-can-i-run-picard">
-<h2>macOS shows the app is <span class="target" id="index-4"></span>damaged. How can I run Picard?<a class="headerlink" href="#macos-shows-the-app-is-damaged-how-can-i-run-picard" title="Permalink to this headline"></a></h2>
+<h2>macOS shows the app is <span class="target" id="index-4"></span>damaged. How can I run Picard?<a class="headerlink" href="#macos-shows-the-app-is-damaged-how-can-i-run-picard" title="Permalink to this heading"></a></h2>
 <p>On macOS 10.12 and 10.13 there have been reports that sometimes the MusicBrainz Picard app
 cannot be started and macOS shows an error message:</p>
 <blockquote>
@@ -217,7 +221,7 @@ and run:</p>
 location than <code class="file docutils literal notranslate"><span class="pre">/Applications</span></code> adjust the path in the command above accordingly.</p>
 </div>
 <div class="section" id="picard-is-installed-on-linux-as-a-snap-how-can-i-access-removable-media">
-<h2>Picard is installed on Linux as a Snap, how can I access removable media?<a class="headerlink" href="#picard-is-installed-on-linux-as-a-snap-how-can-i-access-removable-media" title="Permalink to this headline"></a></h2>
+<h2>Picard is installed on Linux as a Snap, how can I access removable media?<a class="headerlink" href="#picard-is-installed-on-linux-as-a-snap-how-can-i-access-removable-media" title="Permalink to this heading"></a></h2>
 <p>Picard installed as a Snap is running inside a sandbox and thus it does not have full access to all files and
 folders on your system.  By default Picard has access to your home folder.  You can additionally give it access to
 removable media by running the following command on a terminal:</p>
@@ -226,7 +230,7 @@ removable media by running the following command on a terminal:</p>
 </div>
 </div>
 <div class="section" id="on-windows-how-do-i-solve-errors-on-saving-to-cloud-storage-drives-mounted-with-rclone">
-<h2>On Windows, how do I solve errors on saving to cloud storage drives mounted with rclone?<a class="headerlink" href="#on-windows-how-do-i-solve-errors-on-saving-to-cloud-storage-drives-mounted-with-rclone" title="Permalink to this headline"></a></h2>
+<h2>On Windows, how do I solve errors on saving to cloud storage drives mounted with rclone?<a class="headerlink" href="#on-windows-how-do-i-solve-errors-on-saving-to-cloud-storage-drives-mounted-with-rclone" title="Permalink to this heading"></a></h2>
 <p>rclone can provide access to cloud storage by mounting a virtual filesystem as a drive.  This
 virtual filesystem has some differences to a real filesystem which can cause compatibility issues.</p>
 <p>For full compatibility with Picard you need to mount the cloud storage with rclone as a network

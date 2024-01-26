@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Introduction &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -104,7 +108,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -149,7 +153,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers ce titre"></a></h1>
+<h1>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers cette rubrique"></a></h1>
 <p>MusicBrainz Picard est un tagueur de fichiers musicaux multiplateforme. Pour toutes les personnes qui ne savent pas ce que cela signifie, voici une explication rapide qui peut être ignorée par les personnes qui le savent déjà.</p>
 <p>Vos fichiers musicaux ne contiennent pas que de la musique. Ils contiennent également des « métadonnées », constituées de « tags » qui se composent d’un nom ou d’un type de tag et des données associées, par exemple le nom de l’album ou de la piste, le nom de l’artiste, le label, l’année d’émission, etc. Sauf si vous extrayez vous-même les fichiers musicaux avec un outil très basique, vos fichiers musicaux contiennent probablement déjà des métadonnées de base, mais il y a littéralement des centaines de balises qui peuvent être appliquées à votre musique si vous êtes intéressé.</p>
 <p>Évidemment, si vous le souhaitez, vous pouvez rechercher minutieusement toutes ces informations pour chaque album et suivre vous-même, et saisir les données dans un outil de marquage. Cependant, à l’ère de la connexion Internet, il est clairement plus logique qu’une personne fasse cela pour chaque album et piste, puis télécharge ces données dans une base de données partagée. L’outil de marquage peut alors accéder à cette base de données et utiliser les données pour marquer les fichiers musicaux. Et <strong>c’est</strong> ce que fait MusicBrainz Picard.</p>
@@ -161,7 +165,7 @@
 </div>
 <p>Afin d’utiliser efficacement Picard, il est important de comprendre ce que le programme peut faire et, tout aussi important, ce qu’il ne peut pas faire. Picard est principalement destiné à étiqueter et organiser les albums contenant des pistes, guidé par l’utilisateur vers la sortie spécifique de l’album dont il dispose, puis à maintenir les métadonnées de ces pistes à jour à mesure que les utilisateurs du monde entier améliorent la qualité de MusicBrainz. les données associées à cette version et à cette piste particulières ; Picard le fait très bien en effet. Cependant, il n’est pas destiné à organiser automatiquement votre collection de milliers de fichiers musicaux aléatoires, et si c’est ce que vous espérez, vous serez probablement déçu. Pour citer le site Web de Picard, <em>« Picard n’est pas conçu pour être un fixateur d’étiquettes à piste unique de masse. Picard croit en la qualité plutôt que la quantité et propose une pléthore de personnalisations pour adapter les collections de musique à vos besoins. »</em></p>
 <div class="section" id="picard-can">
-<h2>Picard peut…<a class="headerlink" href="#picard-can" title="Lien permanent vers ce titre"></a></h2>
+<h2>Picard peut…<a class="headerlink" href="#picard-can" title="Lien permanent vers cette rubrique"></a></h2>
 <p>… ajouter des balises de métadonnées à vos fichiers musicaux, en fonction des informations disponibles sur le <a class="reference external" href="https://musicbrainz.org/">site Web MusicBrainz</a>.</p>
 <p>… recherchez les métadonnées manuellement ou automatiquement en fonction des informations existantes, notamment le nom de l’artiste et du morceau, l’identifiant du disque (pour les CD) et l’empreinte digitale AcoustID d’une piste.</p>
 <p>… récupérez et intégrez des images de pochettes à partir d’une variété de sources.</p>
@@ -170,12 +174,12 @@
 <p>… calculer et soumettre l’empreinte digitale AcoustID d’un fichier musical à la <a class="reference external" href="https://acoustid.org/">base de données AcoustID</a>.</p>
 </div>
 <div class="section" id="picard-cannot">
-<h2>Picard ne peut pas …<a class="headerlink" href="#picard-cannot" title="Lien permanent vers ce titre"></a></h2>
+<h2>Picard ne peut pas …<a class="headerlink" href="#picard-cannot" title="Lien permanent vers cette rubrique"></a></h2>
 <p>… identifier et supprimer automatiquement tous les fichiers musicaux en double de votre collection.</p>
 <p>… fournir des métadonnées qui n’existent pas déjà dans la base de données MusicBrainz.</p>
 </div>
 <div class="section" id="limitations">
-<h2><span class="target" id="index-2"></span>Limites<a class="headerlink" href="#limitations" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-2"></span>Limites<a class="headerlink" href="#limitations" title="Lien permanent vers cette rubrique"></a></h2>
 <p><strong>Formats de fichier</strong></p>
 <p>Picard prend actuellement en charge la plupart des formats de fichiers musicaux, Matroska (.mka) étant une exception notable. Les fichiers Microsoft WAVE (.wav) peuvent être empreintes digitales et renommés et peuvent être marqués à l’aide de balises ID3v2, mais cela n’est pas pris en charge par tous les logiciels de lecture. De plus, Picard ne prend pas en charge l’écriture de balises personnalisées pour tous les formats.</p>
 <p>La section <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Correspondances des balises Picardes</span></a> fournit plus d’informations concernant le mappage entre les noms de balises internes Picard et divers formats de balisage.</p>

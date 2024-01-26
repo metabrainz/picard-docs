@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ordre de traitement &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Ordre de traitement &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -113,7 +117,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -159,10 +163,10 @@
            <div itemprop="articleBody">
              
   <div class="section" id="processing-order">
-<h1><span class="target" id="index-1"></span>Ordre de traitement<a class="headerlink" href="#processing-order" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-1"></span>Ordre de traitement<a class="headerlink" href="#processing-order" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Afin d’utiliser efficacement les plugins et les scripts, il est important de comprendre quand chacun est traité par rapport aux autres. En règle générale, les plugins sont toujours traités avant les scripts. Les plugins du même type seront exécutés dans l’ordre en fonction de la priorité spécifiée lors de l’enregistrement du plugin.</p>
 <div class="section" id="startup">
-<h2>Commencez<a class="headerlink" href="#startup" title="Lien permanent vers ce titre"></a></h2>
+<h2>Commencez<a class="headerlink" href="#startup" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Au démarrage du programme, les plugins avec les hooks suivants sont traités et toutes les fonctionnalités supplémentaires qu’ils fournissent seront disponibles immédiatement:</p>
 <ul class="simple">
 <li><p>Formats de fichier</p></li>
@@ -173,7 +177,7 @@
 </ul>
 </div>
 <div class="section" id="loading-a-release">
-<h2>Chargement d’une version<a class="headerlink" href="#loading-a-release" title="Lien permanent vers ce titre"></a></h2>
+<h2>Chargement d’une version<a class="headerlink" href="#loading-a-release" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Lorsque les données sont chargées à partir de MusicBrainz (alors que l’album affiche l’état de « chargement » dans le volet de droite), les éléments suivants sont traités:</p>
 <ul class="simple">
 <li><p>Plugins du processeur de métadonnées</p></li>
@@ -187,25 +191,25 @@
 </div>
 </div>
 <div class="section" id="loading-music-files">
-<h2>Chargement de fichiers musicaux<a class="headerlink" href="#loading-music-files" title="Lien permanent vers ce titre"></a></h2>
+<h2>Chargement de fichiers musicaux<a class="headerlink" href="#loading-music-files" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Après le chargement d’un fichier dans Picard, les plugins enregistrés avec <code class="docutils literal notranslate"><span class="pre">file_post_load_processor()</span></code> sont exécutés. Cela pourrait, par exemple, être utilisé pour charger des données supplémentaires pour un fichier.</p>
 </div>
 <div class="section" id="adding-removing-files">
-<h2>Ajout / suppression de fichiers<a class="headerlink" href="#adding-removing-files" title="Lien permanent vers ce titre"></a></h2>
+<h2>Ajout / suppression de fichiers<a class="headerlink" href="#adding-removing-files" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Après qu’un fichier a été ajouté à une piste (sur le volet de droite de Picard), les plugins enregistrés avec <code class="docutils literal notranslate"><span class="pre">file_post_addition_to_track_processor()</span></code> sont exécutés.</p>
 <p>Après qu’un fichier a été supprimé d’une piste (sur le volet droit de Picard), les plugins enregistrés avec <code class="docutils literal notranslate"><span class="pre">file_post_removal_from_track_processor()</span></code> sont exécutés.</p>
 </div>
 <div class="section" id="saving-files">
-<h2>Sauvegarde des fichiers<a class="headerlink" href="#saving-files" title="Lien permanent vers ce titre"></a></h2>
+<h2>Sauvegarde des fichiers<a class="headerlink" href="#saving-files" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Lorsque les fichiers sont enregistrés, pour chaque fichier, le script de dénomination de fichier est d’abord exécuté pour déterminer le chemin de destination et le nom du fichier. Notez que ce script n’a aucun effet sur les valeurs de balises écrites dans le fichier de sortie.</p>
 <p>Une fois qu’un fichier a été enregistré, les plugins enregistrés avec <code class="docutils literal notranslate"><span class="pre">file_post_save_processor()</span></code> sont exécutés. Cela peut, par exemple, être utilisé pour exécuter un post-traitement supplémentaire sur le fichier ou écrire des données supplémentaires. Notez que les métadonnées du fichier sont déjà les métadonnées nouvellement enregistrées.</p>
 </div>
 <div class="section" id="removing-albums">
-<h2>Suppression d’albums<a class="headerlink" href="#removing-albums" title="Lien permanent vers ce titre"></a></h2>
+<h2>Suppression d’albums<a class="headerlink" href="#removing-albums" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Après qu’un album a été supprimé de Picard, les plugins enregistrés avec <code class="docutils literal notranslate"><span class="pre">album_post_removal_processor()</span></code> sont exécutés.</p>
 </div>
 <div class="section" id="context-menus">
-<h2>Menus contextuels<a class="headerlink" href="#context-menus" title="Lien permanent vers ce titre"></a></h2>
+<h2>Menus contextuels<a class="headerlink" href="#context-menus" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les scripts de balisage individuels peuvent être exécutés à la demande à partir du menu contextuel affiché lors d’un clic droit sur un fichier, un album, une piste, un cluster ou une liste de cluster.</p>
 </div>
 </div>

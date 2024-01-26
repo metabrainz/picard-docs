@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MusicBrainz Picard &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>MusicBrainz Picard &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
         <script src="_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -35,7 +39,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -97,7 +101,7 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -142,7 +146,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="musicbrainz-picard">
-<h1>MusicBrainz Picard<a class="headerlink" href="#musicbrainz-picard" title="Lien permanent vers ce titre"></a></h1>
+<h1>MusicBrainz Picard<a class="headerlink" href="#musicbrainz-picard" title="Lien permanent vers cette rubrique"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about_picard/introduction.html">Introduction</a><ul>
@@ -181,7 +185,7 @@
 <li class="toctree-l3"><a class="reference internal" href="config/options_general.html">Options générales</a></li>
 <li class="toctree-l3"><a class="reference internal" href="config/options_profiles.html">Options de profil</a></li>
 <li class="toctree-l3"><a class="reference internal" href="config/options_metadata.html">Options de métadonnées</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="config/options_releases.html">Versions préférées</a></li>
+<li class="toctree-l4"><a class="reference internal" href="config/options_releases.html">Parutions préférées</a></li>
 <li class="toctree-l4"><a class="reference internal" href="config/options_genres.html">Genres</a></li>
 <li class="toctree-l4"><a class="reference internal" href="config/options_ratings.html">Évaluations</a></li>
 </ul>
@@ -395,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage/other.html">Autres tâches de Picard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage/attach_disc_id.html">Joindre un ID de disque à une version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/attach_disc_id.html">Joindre un ID de disque à une parution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage/submit_acoustid.html">Soumission d’empreintes acoustiques</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="usage/submit_acoustid.html#submitting-when-using-scan-to-identify-the-release">Envoi lors de l’utilisation de Scan pour identifier la version</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage/submit_acoustid.html#submitting-when-not-using-scan-to-identify-the-release">Soumission lorsque vous n’utilisez pas Scan pour identifier la version</a></li>
@@ -408,7 +412,7 @@
 <li class="toctree-l3"><a class="reference internal" href="usage/tags_from_file_names.html#ignoring-parts-of-the-file-name">Ignorer certaines parties du nom de fichier</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="usage/submit_cluster_as_release.html">Soumettre le cluster comme une version</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage/submit_cluster_as_release.html">Soumettre le cluster comme une parution</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="usage/submit_cluster_as_release.html#submitting-multiple-tracks-as-a-cluster">Soumettre plusieurs pistes en tant que groupe</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage/submit_cluster_as_release.html#submitting-a-single-track">Soumission d’une seule piste</a></li>
 </ul>
@@ -545,7 +549,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tutorials/android_app.html#configuring-picard">Configuration du Picard</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorials/android_app.html#installing-and-configuring-the-musicbrainz-android-app">Installation et configuration de l’application MusicBrainz Android</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorials/android_app.html#loading-releases-by-barcode">Chargement des communiqués par code-barres</a></li>

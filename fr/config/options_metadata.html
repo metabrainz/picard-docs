@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Options de métadonnées &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Options de métadonnées &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,13 +17,15 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Versions préférées" href="options_releases.html" />
+    <link rel="next" title="Parutions préférées" href="options_releases.html" />
     <link rel="prev" title="Options de profil" href="options_profiles.html" /> 
 </head>
 
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -67,7 +71,7 @@
 <li class="toctree-l3"><a class="reference internal" href="options_general.html">Options générales</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_profiles.html">Options de profil</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Options de métadonnées</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="options_releases.html">Versions préférées</a></li>
+<li class="toctree-l4"><a class="reference internal" href="options_releases.html">Parutions préférées</a></li>
 <li class="toctree-l4"><a class="reference internal" href="options_genres.html">Genres</a></li>
 <li class="toctree-l4"><a class="reference internal" href="options_ratings.html">Évaluations</a></li>
 </ul>
@@ -123,7 +127,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -169,7 +173,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="metadata-options">
-<h1><span class="target" id="index-1"></span>Options de métadonnées<a class="headerlink" href="#metadata-options" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-1"></span>Options de métadonnées<a class="headerlink" href="#metadata-options" title="Lien permanent vers cette rubrique"></a></h1>
 <a class="reference internal image-reference" href="../_images/options-metadata.png"><img alt="../_images/options-metadata.png" src="../_images/options-metadata.png" style="width: 100%;" /></a>
 <p><strong>Traduisez les noms d’artistes dans cette langue lorsque cela est possible</strong></p>
 <blockquote>
@@ -206,17 +210,13 @@
 <blockquote>
 <div><p>Convertit les caractères de ponctuation Unicode des données MusicBrainz en ASCII pour une utilisation cohérente de la ponctuation dans les balises. Par exemple, les guillemets simples droits sont convertis en apostrophes ASCII (“) et les ellipses horizontales sont converties en trois points (…).</p>
 </div></blockquote>
-<p><strong>Utiliser les relations de suivi et de relâchement</strong></p>
-<blockquote>
-<div><p>Cochez pour écrire des relations au niveau de la piste (par exemple: compositeur, parolier, interprète ou remixeur) dans vos fichiers.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>L’activation de cette option active également automatiquement l’option « Utiliser les relations de validation », et cette option ne peut pas être désactivée.</p>
-</div>
-</div></blockquote>
 <p><strong>Utiliser les relations de version</strong></p>
 <blockquote>
 <div><p>Cochez pour récupérer et écrire les relations au niveau de la version (par exemple: URL, compositeur, parolier, interprète, chef d’orchestre ou mixeur DJ) dans vos fichiers. Vous devez l’activer pour utiliser Picard pour récupérer l’art de couverture.</p>
+</div></blockquote>
+<p><strong>Utiliser les relations de suivi</strong></p>
+<blockquote>
+<div><p>Cochez pour écrire des relations au niveau de la piste (par exemple: compositeur, parolier, interprète ou remixeur) dans vos fichiers.</p>
 </div></blockquote>
 <p><strong>Déterminez le numéro de la piste et le titre à partir du nom du fichier s’il est vide</strong></p>
 <blockquote>
@@ -232,7 +232,7 @@
 </div></blockquote>
 <div class="admonition seealso">
 <p class="admonition-title">Voir aussi</p>
-<p>Détails: <a class="reference internal" href="options_releases.html"><span class="doc">Versions préférées</span></a> / <a class="reference internal" href="options_genres.html"><span class="doc">Genres</span></a> / <a class="reference internal" href="options_ratings.html"><span class="doc">Évaluations</span></a></p>
+<p>Détails: <a class="reference internal" href="options_releases.html"><span class="doc">Parutions préférées</span></a> / <a class="reference internal" href="options_genres.html"><span class="doc">Genres</span></a> / <a class="reference internal" href="options_ratings.html"><span class="doc">Évaluations</span></a></p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -245,7 +245,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="options_releases.html" class="btn btn-neutral float-right" title="Versions préférées" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="options_releases.html" class="btn btn-neutral float-right" title="Parutions préférées" accesskey="n" rel="next">Page suivante <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="options_profiles.html" class="btn btn-neutral float-left" title="Options de profil" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Page précédente</a>

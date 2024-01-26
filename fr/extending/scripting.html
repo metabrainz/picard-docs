@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Script &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Script &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -104,7 +108,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -149,7 +153,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="scripting">
-<h1><span class="target" id="index-2"></span>Script<a class="headerlink" href="#scripting" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-2"></span>Script<a class="headerlink" href="#scripting" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Les scripts sont utilisés pour contrôler certains aspects du fonctionnement de Picard.</p>
 <p>Il existe deux types de scripts utilisés dans Picard: le script de dénomination de fichier et les scripts de balisage. Ceux-ci sont gérés à partir des sections « Nom du fichier » et « Script » du menu <span class="menuselection">« Options ‣ Options… »</span>.</p>
 <p>Les scripts sont souvent abordés dans le <a class="reference external" href="https://community.metabrainz.org/">MetaBrainz Community Forum</a>, et il existe un fil de discussion spécifique à <a class="reference external" href="https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/">la dénomination de fichier et les extraits de script</a>.</p>
@@ -158,7 +162,7 @@
 <p>Veuillez vous référer à la section sur <a class="reference internal" href="scripts.html"><span class="doc">Scripts</span></a> dans <a class="reference internal" href="extending.html"><span class="doc">Extending Picard</span></a> pour plus de détails sur les deux types de scripts, y compris comment et quand chacun des scripts est exécuté.</p>
 </div>
 <div class="section" id="syntax">
-<h2><span class="target" id="index-3"></span>Syntaxe<a class="headerlink" href="#syntax" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-3"></span>Syntaxe<a class="headerlink" href="#syntax" title="Lien permanent vers cette rubrique"></a></h2>
 <p>La syntaxe est dérivée du <a class="reference external" href="https://wiki.hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference">format de titre de Foobar2000</a>. Il existe trois éléments de base: le texte, la variable et la fonction. Les variables sont constituées de caractères alphanumériques entourés de signes de pourcentage (par exemple: <code class="docutils literal notranslate"><span class="pre">%artiste%</span></code>). Les fonctions commencent par un signe dollar et se terminent par une liste d’arguments entre parenthèses (par exemple: <code class="docutils literal notranslate"><span class="pre">$lower(...)</span></code>).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -170,12 +174,12 @@
 </div>
 </div>
 <div class="section" id="metadata-variables">
-<h2>Variables de métadonnées<a class="headerlink" href="#metadata-variables" title="Lien permanent vers ce titre"></a></h2>
+<h2>Variables de métadonnées<a class="headerlink" href="#metadata-variables" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Voir <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a> pour la liste des variables fournies par Picard.</p>
 <p>Les variables de Picard peuvent être soit de simples variables contenant une seule chaîne de texte, soit des variables à valeurs multiples contenant plusieurs chaînes de texte. Dans les scripts, les variables à valeurs multiples sont automatiquement converties en une seule chaîne de texte en joignant les valeurs par un point-virgule “;”, sauf lorsqu’elles sont utilisées avec des fonctions spéciales à valeurs multiples.</p>
 </div>
 <div class="section" id="scripting-functions">
-<h2>Fonctions de script<a class="headerlink" href="#scripting-functions" title="Lien permanent vers ce titre"></a></h2>
+<h2>Fonctions de script<a class="headerlink" href="#scripting-functions" title="Lien permanent vers cette rubrique"></a></h2>
 <p>La liste complète des fonctions de script disponibles est disponible, soit <a class="reference internal" href="../functions/list_by_name.html"><span class="doc">trié par ordre alphabétique</span></a> ou <a class="reference internal" href="../functions/list_by_type.html"><span class="doc">groupé par type de fonction</span></a>.</p>
 </div>
 </div>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Il n’y a pas de pochette &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Il n’y a pas de pochette &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -103,7 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -148,10 +152,10 @@
            <div itemprop="articleBody">
              
   <div class="section" id="there-is-no-coverart">
-<h1>Il n’y a pas de pochette<a class="headerlink" href="#there-is-no-coverart" title="Lien permanent vers ce titre"></a></h1>
+<h1>Il n’y a pas de pochette<a class="headerlink" href="#there-is-no-coverart" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Il y a deux problèmes différents qui relèvent souvent de ce sujet:</p>
 <div class="section" id="picard-isn-t-finding-and-downloading-any-cover-art">
-<h2><span class="target" id="index-2"></span>Picard ne trouve et ne télécharge aucune pochette<a class="headerlink" href="#picard-isn-t-finding-and-downloading-any-cover-art" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-2"></span>Picard ne trouve et ne télécharge aucune pochette<a class="headerlink" href="#picard-isn-t-finding-and-downloading-any-cover-art" title="Lien permanent vers cette rubrique"></a></h2>
 <p><strong>Aucun fournisseur de pochettes n’a été activé dans les paramètres de configuration</strong></p>
 <blockquote>
 <div><p>Confirmez que les paramètres <span class="menuselection">« Options ‣ Options… ‣ Art de couverture »</span> ont au moins un fournisseur de jaquettes activé. Veuillez consulter la section <a class="reference internal" href="../config/options_cover_art_providers.html"><span class="doc">Fournisseurs d’art de couverture</span></a> pour plus d’informations.</p>
@@ -170,7 +174,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="coverart-that-is-saved-with-the-files-isn-t-displayed">
-<h2><span class="target" id="index-3"></span>La couverture enregistrée avec les fichiers n’est pas affichée<a class="headerlink" href="#coverart-that-is-saved-with-the-files-isn-t-displayed" title="Lien permanent vers ce titre"></a></h2>
+<h2><span class="target" id="index-3"></span>La couverture enregistrée avec les fichiers n’est pas affichée<a class="headerlink" href="#coverart-that-is-saved-with-the-files-isn-t-displayed" title="Lien permanent vers cette rubrique"></a></h2>
 <p><strong>Le lecteur ne prend pas en charge la pochette intégrée</strong></p>
 <blockquote>
 <div><p>Vérifiez que votre lecteur prend en charge les images de couverture intégrées.  Cette prise en charge n’est pas universelle pour tous les lecteurs.  Certains lecteurs prennent en charge les images intégrées, d’autres les images stockées sous forme de fichiers dans le répertoire (par exemple: <code class="file docutils literal notranslate"><span class="pre">cover.jpg</span></code> ou <code class="file docutils literal notranslate"><span class="pre">folder.jpg</span></code>), et d’autres encore les deux. Picard vous permet de spécifier comment les images de couverture doivent être enregistrées.  Veuillez consulter la section <a class="reference internal" href="../config/options_location.html"><span class="doc">Emplacement</span></a> des options Coverart pour plus de détails.</p>

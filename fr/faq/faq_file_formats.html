@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formats de fichiers &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Formats de fichiers &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -115,7 +119,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -161,9 +165,9 @@
            <div itemprop="articleBody">
              
   <div class="section" id="file-formats">
-<h1><span class="target" id="index-4"></span>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-4"></span>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien permanent vers cette rubrique"></a></h1>
 <div class="section" id="what-formats-does-picard-support">
-<h2>Quels formats Picard prend-il en charge?<a class="headerlink" href="#what-formats-does-picard-support" title="Lien permanent vers ce titre"></a></h2>
+<h2>Quels formats Picard prend-il en charge?<a class="headerlink" href="#what-formats-does-picard-support" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Picard prend en charge les formats de fichiers suivants:</p>
 <ul class="simple">
 <li><p>MPEG-1 Audio (.mp3, .mp2, .m2a)</p></li>
@@ -195,11 +199,11 @@
 </div>
 </div>
 <div class="section" id="what-formats-will-picard-support">
-<h2>Quels formats Picard prend-il en charge?<a class="headerlink" href="#what-formats-will-picard-support" title="Lien permanent vers ce titre"></a></h2>
+<h2>Quels formats Picard prend-il en charge?<a class="headerlink" href="#what-formats-will-picard-support" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Picard est destiné à prendre en charge à terme tous les formats (y compris les empreintes digitales), mais il s’agit d’un processus complexe (sans doute sans fin), et prendra un certain temps.</p>
 </div>
 <div class="section" id="what-rippers-are-supported-for-looking-up-from-logs">
-<span id="faq-supported-rippers"></span><h2>Quels sont les rippers pris en charge pour la recherche de rondins ?<a class="headerlink" href="#what-rippers-are-supported-for-looking-up-from-logs" title="Lien permanent vers ce titre"></a></h2>
+<span id="faq-supported-rippers"></span><h2>Quels sont les rippers pris en charge pour la recherche de rondins ?<a class="headerlink" href="#what-rippers-are-supported-for-looking-up-from-logs" title="Lien permanent vers cette rubrique"></a></h2>
 <p>A partir de la version 2.9, Picard supporte l’utilisation des fichiers de log produits par les rippers de CD les plus populaires pour rechercher une version. Comme les fichiers journaux de ces rippeurs contiennent suffisamment d’informations pour générer la table des matières du CD, ils peuvent être utilisés à la place de la lecture du CD lui-même.  Les rippeurs pris en charge sont les suivants :</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://dbpoweramp.com/">dBpoweramp</a> pour macOS et Windows</p></li>
@@ -210,11 +214,11 @@
 </ul>
 </div>
 <div class="section" id="which-tags-can-picard-write-to-my-files">
-<h2>Quelles balises Picard peut-il écrire dans mes fichiers?<a class="headerlink" href="#which-tags-can-picard-write-to-my-files" title="Lien permanent vers ce titre"></a></h2>
+<h2>Quelles balises Picard peut-il écrire dans mes fichiers?<a class="headerlink" href="#which-tags-can-picard-write-to-my-files" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Voir la section <a class="reference internal" href="../variables/variables.html"><span class="doc">Balises &amp; Variables</span></a> pour des informations sur les champs MusicBrainz que Picard écrit dans les balises. <a class="reference external" href="https://picard.musicbrainz.org/docs/mappings/">Cartographie de la balise Picard</a> contient des informations plus techniques sur la façon dont ceux-ci sont ensuite mappés dans chaque format de tag.</p>
 </div>
 <div class="section" id="how-do-i-edit-tags-in-several-files-at-once">
-<h2>Comment modifier les balises de plusieurs fichiers à la fois ?<a class="headerlink" href="#how-do-i-edit-tags-in-several-files-at-once" title="Lien permanent vers ce titre"></a></h2>
+<h2>Comment modifier les balises de plusieurs fichiers à la fois ?<a class="headerlink" href="#how-do-i-edit-tags-in-several-files-at-once" title="Lien permanent vers cette rubrique"></a></h2>
 <ol class="arabic simple">
 <li><p>Cliquez et sélectionnez plusieurs fichiers avec <kbd class="kbd docutils literal notranslate">Ctrl</kbd> ou <kbd class="kbd docutils literal notranslate">Shift</kbd>.</p></li>
 <li><p>La vue des métadonnées en bas de l’écran indique les balises présentes dans les fichiers sélectionnés et si elles sont identiques pour tous les fichiers ou différentes.</p></li>
@@ -229,13 +233,13 @@
 <p>À cette fin, Picard ne se concentrera probablement jamais autant sur l’édition manuelle en masse des balises que d’autres éditeurs à usage général (par exemple: <a class="reference external" href="https://www.mp3tag.de/en/">Mp3tag</a>, <a class="reference external" href="https://www.foobar2000.org/">foobar2000</a>, ou même de nombreux gestionnaires de bibliothèques tels que iTunes, Windows Media Player et MediaMonkey). Cela ne veut pas dire que l’équipe n’acceptera pas de correctifs dans ce domaine!</p>
 </div>
 <div class="section" id="why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster">
-<h2>Pourquoi l’enregistrement des fichiers est-il parfois lent, mais l’enregistrement une deuxième fois beaucoup plus rapide ?<a class="headerlink" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster" title="Lien permanent vers ce titre"></a></h2>
+<h2>Pourquoi l’enregistrement des fichiers est-il parfois lent, mais l’enregistrement une deuxième fois beaucoup plus rapide ?<a class="headerlink" href="#why-is-saving-files-sometimes-slow-but-saving-a-second-time-much-faster" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Dans la plupart des formats de fichiers, les balises se trouvent au début du fichier, avant les données musicales proprement dites.  Si des balises modifiées sont écrites dans le fichier et que les balises nouvellement écrites prennent plus d’espace qu’auparavant, le fichier entier doit être réécrit. Cette opération est généralement beaucoup plus lente que la réécriture d’une partie du fichier contenant les balises, surtout pour les fichiers volumineux et/ou si les fichiers se trouvent sur un support de stockage lent (par exemple, un partage réseau ou un lecteur externe lent).</p>
 <p>Pour atténuer ce problème, la plupart des logiciels d’étiquetage (y compris Picard) laissent un espace libre (appelé « padding ») après les étiquettes et avant les données musicales proprement dites. Si les données nouvellement écrites ne sont qu’un peu plus grandes qu’avant, cet espace libre peut être utilisé au lieu de réécrire les fichiers entiers. De même, si les balises nouvellement écrites prennent moins de place qu’avant, cela ne fait qu’augmenter le padding, évitant ainsi de réécrire le fichier.</p>
 <p>Cela signifie que lorsque vous ajoutez de nombreuses balises aux fichiers (ou s’il n’y a pas ou peu de remplissage), la vitesse d’écriture est lente. Si vous n’effectuez que de petites modifications ou si vous supprimez et réintroduisez des balises, l’écriture est beaucoup plus rapide.</p>
 </div>
 <div class="section" id="why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default">
-<h2>Pourquoi Picard n’utilise-t-il pas par défaut les numéros de pistes de style Vinyle (par exemple A1, A2, …) ?<a class="headerlink" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default" title="Lien permanent vers ce titre"></a></h2>
+<h2>Pourquoi Picard n’utilise-t-il pas par défaut les numéros de pistes de style Vinyle (par exemple A1, A2, …) ?<a class="headerlink" href="#why-does-picard-not-use-vinyl-style-track-numbers-e-g-a1-a2-by-default" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Pour les disques vinyles, les numéros de pistes sur MusicBrainz sont généralement saisis sous la forme A1, A2, …, B1, B2, … et ainsi de suite. D’autres versions peuvent utiliser des schémas de numérotation encore plus inhabituels.  Pourtant, Picard écrira toujours par défaut des numéros de pistes décimaux, en commençant par 1 pour la première piste d’un support.</p>
 <p>La principale raison en est que c’est ainsi que les numéros de piste sont définis pour la plupart des formats de fichiers.  Les formats attendent des nombres décimaux, et de même, les lecteurs de musique peuvent n’attendre que des nombres décimaux lors de la lecture des fichiers.</p>
 <p>Si vous le souhaitez vraiment, vous pouvez utiliser la variable de script <code class="docutils literal notranslate"><span class="pre">%_musicbrainz_tracknumber%</span></code> qui contient toujours le numéro de piste tel qu’il a été saisi dans la base de données MusicBrainz.  Le script suivant va définir la balise tracknumber à la valeur telle qu’elle est affichée dans la base de données MusicBrainz :</p>
@@ -245,7 +249,7 @@
 <p>Veuillez noter que pour les fichiers MP4, le numéro de la piste ne sera pas enregistré, car le format MP4 n’autorise pas les valeurs non entières dans cette balise.  Pour les autres formats, cela dépend du logiciel de lecture et des appareils que vous utilisez s’ils peuvent gérer ces numéros de piste non standard.</p>
 </div>
 <div class="section" id="the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support">
-<h2>Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-il en charge?<a class="headerlink" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support" title="Lien permanent vers ce titre"></a></h2>
+<h2>Le lecteur audio intégré ne peut pas lire mon fichier. Quels formats prend-il en charge?<a class="headerlink" href="#the-built-in-audio-player-cannot-play-my-file-which-formats-does-it-support" title="Lien permanent vers cette rubrique"></a></h2>
 <p>Les formats pris en charge par le <span class="target" id="index-9"></span>lecteur audio intégré dépendent des formats pris en charge par votre système d’exploitation.</p>
 <p><strong>Windows:</strong></p>
 <blockquote>
@@ -262,7 +266,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work">
-<h2>J’utilise Fedora. Pourquoi la prise <span class="target" id="index-7"></span>d’empreintes acoustique ne fonctionne-t-elle pas?<a class="headerlink" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work" title="Lien permanent vers ce titre"></a></h2>
+<h2>J’utilise Fedora. Pourquoi la prise <span class="target" id="index-7"></span>d’empreintes acoustique ne fonctionne-t-elle pas?<a class="headerlink" href="#i-am-using-fedora-why-doesn-t-acoustic-fingerprinting-work" title="Lien permanent vers cette rubrique"></a></h2>
 <p>La prise d’empreintes acoustiques dans Picard utilise un outil appelé <strong class="program">fpcalc</strong>, qui n’est pas disponible dans Fedora. Vous pouvez l’obtenir en installant le paquetage chromaprint-tools depuis le dépôt <a class="reference external" href="https://rpmfusion.org/">RPM Fusion</a>. Cette fonctionnalité n’est pas contenue dans le paquet principal de Fedora <code class="docutils literal notranslate"><span class="pre">picard</span></code> car elle nécessite le paquet <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> qui <a class="reference external" href="https://fedoraproject.org/wiki/Forbidden_items">n’est pas distribué par Fedora</a>. Après avoir <a class="reference external" href="https://rpmfusion.org/Configuration">activé le dépôt de RPM Fusion « rpmfusion-free »</a>, installez le paquet (en tant que root) en utilisant:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="n">install</span> <span class="n">chromaprint</span><span class="o">-</span><span class="n">tools</span>
 </pre></div>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Versions préférées &mdash; Documentation MusicBrainz Picard v2.11.0rc1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Parutions préférées &mdash; Documentation MusicBrainz Picard v2.11</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -37,7 +41,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -67,7 +71,7 @@
 <li class="toctree-l3"><a class="reference internal" href="options_general.html">Options générales</a></li>
 <li class="toctree-l3"><a class="reference internal" href="options_profiles.html">Options de profil</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="options_metadata.html">Options de métadonnées</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Versions préférées</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Parutions préférées</a></li>
 <li class="toctree-l4"><a class="reference internal" href="options_genres.html">Genres</a></li>
 <li class="toctree-l4"><a class="reference internal" href="options_ratings.html">Évaluations</a></li>
 </ul>
@@ -123,7 +127,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des versions avec MusicBrainz pour Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -160,7 +164,7 @@
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="configuration.html">Configuration</a></li>
           <li class="breadcrumb-item"><a href="options_metadata.html">Options de métadonnées</a></li>
-      <li class="breadcrumb-item active">Versions préférées</li>
+      <li class="breadcrumb-item active">Parutions préférées</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -170,22 +174,22 @@
            <div itemprop="articleBody">
              
   <div class="section" id="preferred-releases">
-<h1><span class="target" id="index-1"></span>Versions préférées<a class="headerlink" href="#preferred-releases" title="Lien permanent vers ce titre"></a></h1>
+<h1><span class="target" id="index-1"></span>Parutions préférées<a class="headerlink" href="#preferred-releases" title="Lien permanent vers cette rubrique"></a></h1>
 <a class="reference internal image-reference" href="../_images/options-metadata-releases-types.png"><img alt="../_images/options-metadata-releases-types.png" src="../_images/options-metadata-releases-types.png" style="width: 100%;" /></a>
 <p><strong>Types de libération préférés</strong></p>
 <blockquote>
-<div><p>Ajustez les curseurs sur le côté droit de chacun des différents types de versions pour modifier la probabilité que Picard fasse correspondre un fichier ou un cluster aux versions de ce type. Déplacer un curseur vers la droite augmente la probabilité de correspondance avec ce type, tandis que déplacer le curseur vers la gauche diminue la probabilité.</p>
+<div><p>Ajustez les curseurs sur le côté droit de chacun des différents types de parution pour modifier la probabilité que Picard fasse correspondre un fichier ou un cluster aux parutions de ce type. Déplacer un curseur vers la droite augmente la probabilité de correspondance avec ce type, tandis que déplacer le curseur vers la gauche diminue la probabilité.</p>
 <p>Par exemple, vous pouvez l’utiliser pour diminuer la probabilité que Picard fasse correspondre un fichier ou un album à une version Compilation ou Live.</p>
 </div></blockquote>
 <a class="reference internal image-reference" href="../_images/options-metadata-releases-countries.png"><img alt="../_images/options-metadata-releases-countries.png" src="../_images/options-metadata-releases-countries.png" style="width: 100%;" /></a>
 <p><strong>Pays de sortie préférés</strong></p>
 <blockquote>
-<div><p>Ajoutez un ou plusieurs pays à la liste pour que Picard préfère les clusters ou fichiers correspondants aux versions des pays choisis. Cette liste est également utilisée pour hiérarchiser les fichiers dans le menu contextuel « Autres versions ».</p>
+<div><p>Ajoutez un ou plusieurs pays à la liste pour que Picard préfère les clusters ou fichiers correspondants aux parutions des pays choisis. Cette liste est également utilisée pour hiérarchiser les fichiers dans le menu contextuel « Autres parutions ».</p>
 </div></blockquote>
 <a class="reference internal image-reference" href="../_images/options-metadata-releases-formats.png"><img alt="../_images/options-metadata-releases-formats.png" src="../_images/options-metadata-releases-formats.png" style="width: 100%;" /></a>
 <p><strong>Formats moyens préférés</strong></p>
 <blockquote>
-<div><p>Ajoutez un ou plusieurs formats à la liste pour que Picard préfère les clusters ou fichiers correspondants aux versions du format spécifié. Cette liste est également utilisée pour hiérarchiser les fichiers dans le menu contextuel « Autres versions ».</p>
+<div><p>Ajoutez un ou plusieurs formats à la liste pour que Picard préfère les clusters ou fichiers correspondants aux parutions du format spécifié. Cette liste est également utilisée pour hiérarchiser les fichiers dans le menu contextuel « Autres parutions ».</p>
 </div></blockquote>
 </div>
 

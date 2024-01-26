@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Tags &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Basic Tags &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -159,7 +163,7 @@
            <div itemprop="articleBody">
              
   <div class="section" id="basic-tags">
-<h1><span class="target" id="index-0"></span>Basic Tags<a class="headerlink" href="#basic-tags" title="Permalink to this headline"></a></h1>
+<h1><span class="target" id="index-0"></span>Basic Tags<a class="headerlink" href="#basic-tags" title="Permalink to this heading"></a></h1>
 <p>The following tags are supported and are written in the standard format that can be read by other software. The information is populated from MusicBrainz data for most releases, without any special Picard settings. Note that some of the information such as ‘lyrics’ is not contained within the MusicBrainz database, and will not be provided automatically.</p>
 <p>All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in several other more minor settings) by wrapping them between percent ‘%’ symbols (e.g. <code class="docutils literal notranslate"><span class="pre">%title%</span></code>).</p>
 <p>Some tags provide the <span class="target" id="index-1"></span>MusicBrainz Identifier (MBID) of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the <a class="reference external" href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Identifier</a> page in the MusicBrainz documentation.</p>
@@ -172,7 +176,7 @@
 <p>Some of these tags are only supported for certain file types or tag formats. Please see the <a class="reference internal" href="../appendices/tag_mapping.html"><span class="doc">Picard Tag Mapping</span></a> section for details.</p>
 </div>
 <div class="section" id="tags-provided-from-musicbrainz-data">
-<h2>Tags Provided from MusicBrainz Data<a class="headerlink" href="#tags-provided-from-musicbrainz-data" title="Permalink to this headline"></a></h2>
+<h2>Tags Provided from MusicBrainz Data<a class="headerlink" href="#tags-provided-from-musicbrainz-data" title="Permalink to this heading"></a></h2>
 <p>These tags will be provided based on the information from the MusicBrainz database and will be populated automatically by Picard if the information is available.</p>
 <p><strong>album</strong></p>
 <blockquote>
@@ -335,7 +339,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="tags-not-provided-from-musicbrainz-data">
-<h2>Tags Not Provided from MusicBrainz Data<a class="headerlink" href="#tags-not-provided-from-musicbrainz-data" title="Permalink to this headline"></a></h2>
+<h2>Tags Not Provided from MusicBrainz Data<a class="headerlink" href="#tags-not-provided-from-musicbrainz-data" title="Permalink to this heading"></a></h2>
 <p>These tags are not able to be populated by stock Picard, however they may be used and populated by certain plugins or scripts.</p>
 <p><strong>acoustid_fingerprint</strong></p>
 <blockquote>
@@ -411,7 +415,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="itunes-specific-tags">
-<h2>iTunes-Specific Tags<a class="headerlink" href="#itunes-specific-tags" title="Permalink to this headline"></a></h2>
+<h2>iTunes-Specific Tags<a class="headerlink" href="#itunes-specific-tags" title="Permalink to this heading"></a></h2>
 <p>These tags are only available in iTunes files and are not able to be populated by stock Picard, however they may be used and populated by certain plugins or scripts.</p>
 <p><strong>gapless</strong></p>
 <blockquote>

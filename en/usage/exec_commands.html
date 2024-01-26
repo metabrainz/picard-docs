@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Executable Commands &mdash; MusicBrainz Picard v2.11.0rc1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Executable Commands &mdash; MusicBrainz Picard v2.11 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
     <link rel="stylesheet" href="../_static/css/extra.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/picard-icon.png"/>
   <!--[if lt IE 9]>
@@ -15,7 +17,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="/version_links.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -36,7 +40,7 @@
             MusicBrainz Picard
           </a>
               <div class="version">
-                v2.11.0rc1
+                v2.11
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -169,13 +173,13 @@
            <div itemprop="articleBody">
              
   <div class="section" id="executable-commands">
-<h1><span class="target" id="index-0"></span>Executable Commands<a class="headerlink" href="#executable-commands" title="Permalink to this headline"></a></h1>
+<h1><span class="target" id="index-0"></span>Executable Commands<a class="headerlink" href="#executable-commands" title="Permalink to this heading"></a></h1>
 <p>Picard can accept commands for processing by specifying them on the command line using
 the <code class="docutils literal notranslate"><span class="pre">-e</span></code> option or loading them from a text file. Commands are case-insensitive, and
 are processed sequentially in the order that they are received. The executable commands
 that Picard recognizes are:</p>
 <div class="section" id="clear-logs">
-<h2><span class="target" id="index-1"></span>CLEAR_LOGS<a class="headerlink" href="#clear-logs" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-1"></span>CLEAR_LOGS<a class="headerlink" href="#clear-logs" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>CLEAR_LOGS</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -185,7 +189,7 @@ that Picard recognizes are:</p>
 <span class="menuselection">“Help ‣ View Error/Debug Log”</span> command.</p>
 </div>
 <div class="section" id="cluster">
-<h2><span class="target" id="index-2"></span>CLUSTER<a class="headerlink" href="#cluster" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-2"></span>CLUSTER<a class="headerlink" href="#cluster" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>CLUSTER</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -194,7 +198,7 @@ that Picard recognizes are:</p>
 <span class="menuselection">“Tools ‣ Cluster”</span> command.</p>
 </div>
 <div class="section" id="fingerprint">
-<h2><span class="target" id="index-3"></span>FINGERPRINT<a class="headerlink" href="#fingerprint" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-3"></span>FINGERPRINT<a class="headerlink" href="#fingerprint" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>FINGERPRINT</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -204,7 +208,7 @@ This is the equivalent of using the <span class="menuselection">“Tools ‣ Gen
 AcoustID Fingerprints”</span> command.</p>
 </div>
 <div class="section" id="from-file">
-<h2><span class="target" id="index-4"></span>FROM_FILE<a class="headerlink" href="#from-file" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-4"></span>FROM_FILE<a class="headerlink" href="#from-file" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>FROM_FILE &lt;file path&gt;</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -253,7 +257,7 @@ commands that you want to use when processing each directory, such as:</p>
 </div>
 </div>
 <div class="section" id="load">
-<h2><span class="target" id="index-5"></span>LOAD<a class="headerlink" href="#load" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-5"></span>LOAD<a class="headerlink" href="#load" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>LOAD &lt;supported MBID/URL or path to a file/directory&gt;</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -270,7 +274,7 @@ MusicBrainz Identifier of the entity.</p>
 <code class="docutils literal notranslate"><span class="pre">&quot;/home/user/music/my</span> <span class="pre">song.mp3&quot;</span></code>.</p>
 </div>
 <div class="section" id="lookup">
-<h2><span class="target" id="index-6"></span>LOOKUP<a class="headerlink" href="#lookup" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-6"></span>LOOKUP<a class="headerlink" href="#lookup" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>LOOKUP [clustered|unclustered|all]</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -280,7 +284,7 @@ all files. If not specified, the command defaults to all files.</p>
 <p>This is the equivalent of using the <span class="menuselection">“Tools ‣ Lookup”</span> command.</p>
 </div>
 <div class="section" id="lookup-cd">
-<h2><span class="target" id="index-7"></span>LOOKUP_CD<a class="headerlink" href="#lookup-cd" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-7"></span>LOOKUP_CD<a class="headerlink" href="#lookup-cd" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>LOOKUP_CD [device/log file]</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -290,7 +294,7 @@ no argument is specified, it defaults to the first (alphabetically) available di
 <p>This is the equivalent of using the <span class="menuselection">“Tools ‣ Lookup CD…”</span> command.</p>
 </div>
 <div class="section" id="pause">
-<h2><span class="target" id="index-8"></span>PAUSE<a class="headerlink" href="#pause" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-8"></span>PAUSE<a class="headerlink" href="#pause" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>PAUSE &lt;number of seconds to pause&gt;</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -298,7 +302,7 @@ no argument is specified, it defaults to the first (alphabetically) available di
 <p>Pause executable command processing for the specified number of seconds.</p>
 </div>
 <div class="section" id="quit">
-<h2><span class="target" id="index-9"></span>QUIT<a class="headerlink" href="#quit" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-9"></span>QUIT<a class="headerlink" href="#quit" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>QUIT [force]</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -312,7 +316,7 @@ If the user cancels the <code class="docutils literal notranslate"><span class="
 more commands to be queued.</p>
 </div>
 <div class="section" id="remove">
-<h2><span class="target" id="index-10"></span>REMOVE<a class="headerlink" href="#remove" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-10"></span>REMOVE<a class="headerlink" href="#remove" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>REMOVE &lt;path to one or more files&gt;</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -320,7 +324,7 @@ more commands to be queued.</p>
 <p>Removes the specified file(s) from Picard. Does nothing if no arguments provided.</p>
 </div>
 <div class="section" id="remove-all">
-<h2><span class="target" id="index-11"></span>REMOVE_ALL<a class="headerlink" href="#remove-all" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-11"></span>REMOVE_ALL<a class="headerlink" href="#remove-all" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>REMOVE_ALL</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -328,7 +332,7 @@ more commands to be queued.</p>
 <p>Removes all files from Picard.</p>
 </div>
 <div class="section" id="remove-empty">
-<h2><span class="target" id="index-12"></span>REMOVE_EMPTY<a class="headerlink" href="#remove-empty" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-12"></span>REMOVE_EMPTY<a class="headerlink" href="#remove-empty" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>REMOVE_EMPTY</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -336,7 +340,7 @@ more commands to be queued.</p>
 <p>Removes all empty clusters and albums.</p>
 </div>
 <div class="section" id="remove-saved">
-<h2><span class="target" id="index-13"></span>REMOVE_SAVED<a class="headerlink" href="#remove-saved" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-13"></span>REMOVE_SAVED<a class="headerlink" href="#remove-saved" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>REMOVE_SAVED</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -344,7 +348,7 @@ more commands to be queued.</p>
 <p>Removes all saved files from the album pane.</p>
 </div>
 <div class="section" id="remove-unclustered">
-<h2><span class="target" id="index-14"></span>REMOVE_UNCLUSTERED<a class="headerlink" href="#remove-unclustered" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-14"></span>REMOVE_UNCLUSTERED<a class="headerlink" href="#remove-unclustered" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>REMOVE_UNCLUSTERED</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -352,7 +356,7 @@ more commands to be queued.</p>
 <p>Removes all unclustered files from the cluster pane.</p>
 </div>
 <div class="section" id="save-matched">
-<h2><span class="target" id="index-15"></span>SAVE_MATCHED<a class="headerlink" href="#save-matched" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-15"></span>SAVE_MATCHED<a class="headerlink" href="#save-matched" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>SAVE_MATCHED</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -360,7 +364,7 @@ more commands to be queued.</p>
 <p>Saves all matched files from the album pane.</p>
 </div>
 <div class="section" id="save-modified">
-<h2><span class="target" id="index-16"></span>SAVE_MODIFIED<a class="headerlink" href="#save-modified" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-16"></span>SAVE_MODIFIED<a class="headerlink" href="#save-modified" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>SAVE_MATCHED</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -368,7 +372,7 @@ more commands to be queued.</p>
 <p>Saves all modified files from the album pane.</p>
 </div>
 <div class="section" id="scan">
-<h2><span class="target" id="index-17"></span>SCAN<a class="headerlink" href="#scan" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-17"></span>SCAN<a class="headerlink" href="#scan" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>SCAN</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -377,7 +381,7 @@ more commands to be queued.</p>
 <span class="menuselection">“Tools ‣ Scan”</span> command.</p>
 </div>
 <div class="section" id="show">
-<h2><span class="target" id="index-18"></span>SHOW<a class="headerlink" href="#show" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-18"></span>SHOW<a class="headerlink" href="#show" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>SHOW</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -385,7 +389,7 @@ more commands to be queued.</p>
 <p>Make the running instance of Picard the currently active window.</p>
 </div>
 <div class="section" id="submit-fingerprints">
-<h2><span class="target" id="index-19"></span>SUBMIT_FINGERPRINTS<a class="headerlink" href="#submit-fingerprints" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-19"></span>SUBMIT_FINGERPRINTS<a class="headerlink" href="#submit-fingerprints" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>SUBMIT_FINGERPRINTS</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
@@ -395,7 +399,7 @@ This is the equivalent of using the <span class="menuselection">“Tools ‣ Sub
 command.</p>
 </div>
 <div class="section" id="write-logs">
-<h2><span class="target" id="index-20"></span>WRITE_LOGS<a class="headerlink" href="#write-logs" title="Permalink to this headline"></a></h2>
+<h2><span class="target" id="index-20"></span>WRITE_LOGS<a class="headerlink" href="#write-logs" title="Permalink to this heading"></a></h2>
 <div class="line-block">
 <div class="line">Usage: <strong>WRITE_LOGS &lt;path to output file&gt;</strong></div>
 <div class="line">Implemented: Picard 2.9</div>
