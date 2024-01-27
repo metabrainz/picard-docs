@@ -108,9 +108,10 @@ This will display all log entries in the terminal window, and allow you to copy 
    .. seealso::
 
       Specific situations:
-      :doc:`does_not_start` /
-      :doc:`no_coverart` /
-      :doc:`missing_tags` /
-      :doc:`not_saving` /
-      :doc:`stopped_working` /
-      :doc:`macos_startup_error`
+      :doc:`/troubleshooting/does_not_start` /
+      :doc:`/troubleshooting/no_coverart` /
+      :doc:`/troubleshooting/missing_tags` /
+      :doc:`/troubleshooting/not_saving` /
+      :doc:`/troubleshooting/stopped_working` /
+      :doc:`/troubleshooting/macos_startup_error` /
+      :doc:`/troubleshooting/not_recognizing_external_drive`
