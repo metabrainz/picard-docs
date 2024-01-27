@@ -71,7 +71,7 @@ with :menuselection:`"MusicBrainz Picard --> Preferences..."`. This will open a 
 format on the left hand side, and the individual settings on the right hand side. This is where the majority of Picard's 
 customization is performed.
 
-.. note:: 
+.. note::
    When running your code from the source in a macOS environment, you can access the option settings by navigating to the 
    :menuselection:`"Python --> Preferences..."` option in the menu bar. This allows you to configure and customize various settings 
    for your development environment.
@@ -94,54 +94,38 @@ during processing.
 
    .. toctree::
 
-      options_general
-      options_profiles
-      options_metadata
-      options_tags
-      options_cover
-      options_filerenaming
-      options_fingerprinting
-      options_cdlookup
-      options_plugins
-      options_interface
-      options_scripting
-      options_advanced
+      /config/options_general
+      /config/options_profiles
+      /config/options_metadata
+      /config/options_tags
+      /config/options_cover
+      /config/options_filerenaming
+      /config/options_fingerprinting
+      /config/options_cdlookup
+      /config/options_plugins
+      /config/options_interface
+      /config/options_scripting
+      /config/options_advanced
 
 
 .. only:: html and not epub
 
    .. seealso::
 
-      :doc:`options_general` /
-      :doc:`options_profiles` /
-      :doc:`options_metadata` /
-      :doc:`options_tags` /
-      :doc:`options_cover` /
-      :doc:`options_filerenaming` /
-      :doc:`options_fingerprinting` /
-      :doc:`options_cdlookup` /
-      :doc:`options_plugins` /
-      :doc:`options_interface` /
-      :doc:`options_scripting` /
-      :doc:`options_advanced`
+      :doc:`/config/options_general` /
+      :doc:`/config/options_profiles` /
+      :doc:`/config/options_metadata` /
+      :doc:`/config/options_tags` /
+      :doc:`/config/options_cover` /
+      :doc:`/config/options_filerenaming` /
+      :doc:`/config/options_fingerprinting` /
+      :doc:`/config/options_cdlookup` /
+      :doc:`/config/options_plugins` /
+      :doc:`/config/options_interface` /
+      :doc:`/config/options_scripting` /
+      :doc:`/config/options_advanced`
 
-   .. toctree::
-      :hidden:
-
-      options_general
-      options_profiles
-      options_metadata
-      options_tags
-      options_cover
-      options_filerenaming
-      options_fingerprinting
-      options_cdlookup
-      options_plugins
-      options_interface
-      options_scripting
-      options_advanced
-
-.. only:: epub
+.. only:: not latex
 
    .. toctree::
       :hidden:
