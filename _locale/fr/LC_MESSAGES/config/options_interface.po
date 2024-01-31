@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-06 09:42-0600\n"
+"POT-Creation-Date: 2024-01-31 09:30-0700\n"
 "PO-Revision-Date: 2023-07-07 17:07+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -139,13 +139,20 @@ msgstr ""
 "menuselection:`\"Fichier --> Ajouter un dossier\"`. Le navigateur de "
 "fichiers permet toujours la sélection de plusieurs répertoires."
 
-#: ../../config/options_interface.rst:50
+#: ../../config/options_interface.rst:52
+msgid ""
+"When enabling the multiple directories option setting Picard will no longer "
+"use the system file picker for selecting directories. This may result in "
+"reduced functionality."
+msgstr ""
+
+#: ../../config/options_interface.rst:54
 msgid "**Use built-in search rather than looking in browser**"
 msgstr ""
 "**Utilisez la recherche intégrée plutôt que de rechercher dans le "
 "navigateur**"
 
-#: ../../config/options_interface.rst:52
+#: ../../config/options_interface.rst:56
 msgid ""
 "When this option is enabled the search for albums, artists or tracks will "
 "show the results in a dialog. By default this option is enabled. If this "
@@ -157,11 +164,11 @@ msgstr ""
 "option est activée. Si cette option est désactivée, Picard ouvrira une "
 "recherche sur MusicBrainz.org dans votre navigateur Web par défaut."
 
-#: ../../config/options_interface.rst:56
+#: ../../config/options_interface.rst:60
 msgid "**Use advanced query syntax**"
 msgstr "**Utilisez la syntaxe de requête avancée**"
 
-#: ../../config/options_interface.rst:58
+#: ../../config/options_interface.rst:62
 msgid ""
 "This will enable advanced query syntax parsing on your searches. This only "
 "applies to the search box at the top right of Picard, not the lookup buttons."
@@ -170,11 +177,11 @@ msgstr ""
 "Cela s'applique uniquement à la zone de recherche en haut à droite de "
 "Picard, pas aux boutons de recherche."
 
-#: ../../config/options_interface.rst:61
+#: ../../config/options_interface.rst:65
 msgid "**Show the new user dialog when starting Picard**"
 msgstr "**Afficher le dialogue nouvel utilisateur au démarrage de Picard**"
 
-#: ../../config/options_interface.rst:63
+#: ../../config/options_interface.rst:67
 msgid ""
 "When this is enabled, Picard will show a dialog intended for new users when "
 "you start the program. This displays a warning about the consequences of "
@@ -190,13 +197,13 @@ msgstr ""
 "les résultats escomptés. Il fournit également un lien vers la documentation "
 "en ligne."
 
-#: ../../config/options_interface.rst:65
+#: ../../config/options_interface.rst:69
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr ""
 "**Afficher une boîte de dialogue de confirmation de fermeture pour les "
 "modifications non enregistrées**"
 
-#: ../../config/options_interface.rst:67
+#: ../../config/options_interface.rst:71
 msgid ""
 "When this is enabled, Picard will show a dialog when you try to quit the "
 "program with unsaved files loaded. This may help prevent accidentally losing "
@@ -207,13 +214,13 @@ msgstr ""
 "Cela peut aider à éviter de perdre accidentellement les modifications de "
 "balises que vous avez apportées, mais pas encore enregistrées."
 
-#: ../../config/options_interface.rst:70
+#: ../../config/options_interface.rst:74
 msgid "**Show a confirmation dialog when saving files**"
 msgstr ""
 "**Afficher une boîte de dialogue de confirmation lors de l'enregistrement "
 "des fichiers**"
 
-#: ../../config/options_interface.rst:72
+#: ../../config/options_interface.rst:76
 msgid ""
 "When this is enabled, Picard will show a dialog when you save files, "
 "indicating what actions will be performed on the files and the number of "
@@ -226,13 +233,13 @@ msgstr ""
 "peut permettre d'éviter d'effectuer accidentellement des modifications "
 "auxquelles vous ne vous attendiez pas."
 
-#: ../../config/options_interface.rst:74
+#: ../../config/options_interface.rst:78
 msgid "**Adjust horizontal position in file browser automatically**"
 msgstr ""
 "**Ajustement automatique de la position horizontale dans le navigateur de "
 "fichiers**"
 
-#: ../../config/options_interface.rst:76
+#: ../../config/options_interface.rst:80
 msgid ""
 "When this is enabled, Picard will automatically scroll the file browser "
 "display to keep relevant content visible."
@@ -241,11 +248,11 @@ msgstr ""
 "l'affichage du navigateur de fichiers pour que le contenu pertinent reste "
 "visible."
 
-#: ../../config/options_interface.rst:78
+#: ../../config/options_interface.rst:82
 msgid "**Begin browsing in the following directory**"
 msgstr "**Commencez à naviguer dans le répertoire suivant**"
 
-#: ../../config/options_interface.rst:80
+#: ../../config/options_interface.rst:84
 msgid ""
 "By default, Picard remembers the last directory used to load files. If you "
 "enable this option and provide a directory, Picard will always start in the "
@@ -255,7 +262,7 @@ msgstr ""
 "les fichiers. Si vous activez cette option et fournissez un répertoire, "
 "Picard démarrera toujours dans le répertoire fourni."
 
-#: ../../config/options_interface.rst:87
+#: ../../config/options_interface.rst:91
 msgid ""
 "Details: :doc:`options_interface_colors` / :doc:"
 "`options_interface_top_tags` / :doc:`options_interface_toolbar`"
