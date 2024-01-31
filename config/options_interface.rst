@@ -47,6 +47,10 @@
     than one directory. This applies to the :menuselection:`"File --> Add folder"` dialog. The file
     browser always allows multiple directory selection.
 
+    .. warning::
+
+       When enabling the multiple directories option setting Picard will no longer use the system file picker for selecting directories. This may result in reduced functionality.
+
 **Use built-in search rather than looking in browser**
 
     When this option is enabled the search for albums, artists or tracks will show the results in a dialog.

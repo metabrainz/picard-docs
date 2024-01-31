@@ -80,7 +80,6 @@ plugins and tutorials are provided when available rather than trying to reproduc
    /troubleshooting/not_saving
    /troubleshooting/stopped_working
    /troubleshooting/macos_startup_error
-   /troubleshooting/not_recognizing_external_drive
 
 
 .. toctree::
