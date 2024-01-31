@@ -113,5 +113,4 @@ This will display all log entries in the terminal window, and allow you to copy 
       :doc:`/troubleshooting/missing_tags` /
       :doc:`/troubleshooting/not_saving` /
       :doc:`/troubleshooting/stopped_working` /
-      :doc:`/troubleshooting/macos_startup_error` /
-      :doc:`/troubleshooting/not_recognizing_external_drive`
+      :doc:`/troubleshooting/macos_startup_error`
