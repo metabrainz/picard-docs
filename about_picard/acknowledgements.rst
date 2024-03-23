@@ -14,6 +14,7 @@ Contributors include (in alphabetic surname order):
 - Pavan Chander
 - Ronan Desplanques
 - Gabriel Ferreira
+- Giorgio Fontanive
 - Rahul Kumar Gupta
 - Wieland Hoffmann
 - InvisibleMan78
