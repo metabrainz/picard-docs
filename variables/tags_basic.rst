@@ -244,7 +244,7 @@ These tags are not able to be populated by stock Picard, however they may be use
 
 **syncedlyrics**
 
-    The synced lyrics for the track.
+    The synchronized lyrics for the track.
 
 **musicip_fingerprint**
 
