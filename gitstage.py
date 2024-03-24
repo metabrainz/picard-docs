@@ -4,7 +4,7 @@
 to the headers and do not contain changes to the translation strings.
 """
 
-# Copyright (C) 2023 Bob Swift
+# Copyright (C) 2023-2024 Bob Swift
 
 
 import argparse
@@ -18,8 +18,8 @@ from setup import PACKAGE_TITLE
 
 
 SCRIPT_NAME = 'Picard Docs Git File Stager'
-SCRIPT_VERS = '0.4'
-SCRIPT_INITIAL_COPYRIGHT = '2023'
+SCRIPT_VERS = '0.5'
+SCRIPT_INITIAL_COPYRIGHT = '2024'
 SCRIPT_INITIAL_AUTHOR = 'Bob Swift'
 
 DEFAULT_COMPARISON_DISPLAY_LEVEL = 'changed'
@@ -287,7 +287,12 @@ def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, l
         if minus != plus:
             files_to_stage[fullfilename] = 'Modified'
 
-    for line in git_diff:
+    line_count = len(git_diff)
+    line_num = 0
+    while line_num < line_count:
+        line = git_diff[line_num]
+        line_num += 1
+    # for line in git_diff:
         # Ignore nearby lines and unchanged ranges
         if line and line[0] in {' ', '@'}:
             continue
@@ -338,6 +343,10 @@ def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, l
         if re.match(r'[+-].*\\n"$', line) or re.match(r'[+-]"(' + HEADER_KEYS_TO_IGNORE + r')', line, re.IGNORECASE):
             process_change(files_to_stage, fullfilename, minus, plus)
             minus = plus = last = ''
+            # Keep skipping lines until header line ends with '\n"'
+            while line_num < line_count and not re.match(r'[+-].*\\n"$', line.strip()):
+                line = git_diff[line_num]
+                line_num += 1
             continue
 
         # Add files with changed translation text lines
