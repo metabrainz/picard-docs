@@ -109,6 +109,7 @@ Metadata view
    "Remove selected tag", :kbd:`Alt+Shift+R` |br| |nl| :kbd:`Del`, :kbd:`⌥+⇧+R` |br| |nl| :kbd:`Del` |br| |nl| :kbd:`⌘+⌫`
    "Copy selected tag value", :kbd:`Ctrl+C`, :kbd:`⌘+C`
    "Paste to selected tag value", :kbd:`Ctrl+V`, :kbd:`⌘+V`
+   "Show more details", :kbd:`Ctrl+Shift+I`, :kbd:`⌘+⇧+I`
 
 Other
 +++++
