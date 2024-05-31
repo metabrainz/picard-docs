@@ -81,7 +81,7 @@ These tags will be provided based on the information from the MusicBrainz databa
 
 **comment**
 
-   The disambiguation comment entered to help distinguish one release from another (e.g.: Deluxe version with 2 bonus tracks).
+   The disambiguation comment entered to help distinguish one release from another (e.g.: Deluxe version with 2 bonus tracks). This is not populated by stock Picard. It may be used and populated by certain plugins. Picard stores this information in the **_releasecomment** variable.
 
 **compilation**
 
