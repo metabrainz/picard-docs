@@ -25,60 +25,61 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :caption: About Picard
    :hidden:
 
-   about_picard/introduction
-   about_picard/contributing
-   about_picard/acknowledgements
-   about_picard/glossary
+   /about_picard/introduction
+   /about_picard/contributing
+   /about_picard/acknowledgements
+   /about_picard/glossary
 
 
 .. toctree::
    :caption: Getting Started
+   :titlesonly:
    :hidden:
 
-   getting_started/download
-   getting_started/starting
-   getting_started/screen_main
-   getting_started/status_icons
-   config/configuration
-   variables/variables
-   extending/scripting
-   functions/list_by_type
+   /getting_started/download
+   /getting_started/starting
+   /getting_started/screen_main
+   /getting_started/status_icons
+   /config/configuration
+   /variables/variables
+   /extending/scripting
+   /functions/list_by_type
 
 .. toctree::
    :caption: Using Picard
    :hidden:
 
-   General Usage <usage/using>
-   usage/other
-   usage/option_profiles
-   usage/command_processing
-   extending/extending
-   faq/faq
+   General Usage </usage/using>
+   /usage/other
+   /usage/option_profiles
+   /usage/command_processing
+   /extending/extending
+   /faq/faq
 
 
 .. toctree::
    :caption: Workflow Recommendations
    :hidden:
 
-   General Recommendations <workflows/workflows>
-   workflows/workflow_cd
-   workflows/workflow_extractor_log
-   workflows/workflow_album
-   workflows/workflow_metadata
-   workflows/workflow_no_info
+   General Recommendations </workflows/workflows>
+   /workflows/workflow_cd
+   /workflows/workflow_extractor_log
+   /workflows/workflow_album
+   /workflows/workflow_metadata
+   /workflows/workflow_no_info
 
 
 .. toctree::
    :caption: Troubleshooting
    :hidden:
 
-   troubleshooting/troubleshooting
-   troubleshooting/does_not_start
-   troubleshooting/no_coverart
-   troubleshooting/missing_tags
-   troubleshooting/not_saving
-   troubleshooting/stopped_working
-   troubleshooting/macos_startup_error
+   /troubleshooting/troubleshooting
+   /troubleshooting/does_not_start
+   /troubleshooting/no_coverart
+   /troubleshooting/missing_tags
+   /troubleshooting/not_saving
+   /troubleshooting/stopped_working
+   /troubleshooting/macos_startup_error
 
 
 .. toctree::
@@ -87,11 +88,11 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :maxdepth: 0
    :titlesonly:
 
-   tutorials/naming_script
-   tutorials/acoustid
-   tutorials/multiple_release_countries
-   tutorials/write_plugin
-   tutorials/android_app
+   /tutorials/naming_script
+   /tutorials/acoustid
+   /tutorials/multiple_release_countries
+   /tutorials/write_plugin
+   /tutorials/android_app
 
 
 .. toctree::
@@ -100,9 +101,9 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :maxdepth: 0
    :titlesonly:
 
-   tutorials/v_introduction
-   tutorials/v_attach_disc_id
-   tutorials/v_submit_acoustid
+   /tutorials/v_introduction
+   /tutorials/v_attach_disc_id
+   /tutorials/v_submit_acoustid
 
 
 .. toctree::
@@ -111,10 +112,10 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :maxdepth: 0
    :titlesonly:
 
-   appendices/plugins_api
-   appendices/tag_mapping
-   appendices/command_line
-   appendices/keyboard_shortcuts
+   /appendices/plugins_api
+   /appendices/tag_mapping
+   /appendices/command_line
+   /appendices/keyboard_shortcuts
    /functions/list_by_name
 
 ..   examples/examples

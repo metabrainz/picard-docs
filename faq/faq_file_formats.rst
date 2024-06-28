@@ -21,7 +21,7 @@ Picard supports the following file formats:
 * Monkey's Audio (.ape)
 * Tom's lossless Audio Kompressor (.tak)
 * Speex (.spx)
-* Generic Ogg files (.ogg)
+* Generic Ogg files (.ogg, .ogx)
 * Ogg FLAC (.ogg, .oga)
 * Ogg Theora (.ogg, .ogv)
 * Ogg Opus (.opus)
