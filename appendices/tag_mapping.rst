@@ -550,21 +550,6 @@ Lyrics :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Synced Lyrics
---------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``syncedlyrics:language:description``"
-   "ID3v2", "``SYLT:description``"
-   "Vorbis", "n/a"
-   "APEv2", "n/a"
-   "iTunes MP4", "n/a"
-   "ASF/Windows Media", "n/a"
-   "RIFF INFO", "n/a"
-
-
 `Media <https://musicbrainz.org/doc/Release_Format>`_
 ------------------------------------------------------
 .. csv-table::

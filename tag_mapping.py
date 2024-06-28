@@ -473,17 +473,6 @@ TAG_MAP = [
     },
 
     {
-        "tag_name": "Synced Lyrics",
-        "picard_name": "``syncedlyrics:language:description``",
-        "id3v2": "``SYLT:description``",
-        "vorbis": "n/a",
-        "apev2": "n/a",
-        "itunes": "n/a",
-        "wmp": "n/a",
-        "riff": "n/a",
-    },
-
-    {
         "tag_name": "`Media <https://musicbrainz.org/doc/Release_Format>`_",
         "picard_name": "``media``",
         "id3v2": "``TMED``",
