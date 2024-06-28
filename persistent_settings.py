@@ -13,8 +13,9 @@ VERSIONS = [
     '2.9',
     '2.10',
     '2.11',
+    '2.12',
 ]
-STABLE_VERSION = '2.11'
+STABLE_VERSION = '2.12'
 
 DEFAULT_LANGUAGE = 'en'
 LANGUAGES = ['en', 'fr']
