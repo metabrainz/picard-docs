@@ -242,10 +242,6 @@ These tags are not able to be populated by stock Picard, however they may be use
 
    The lyrics for the track.
 
-**syncedlyrics**
-
-    The synced lyrics for the track.
-
 **musicip_fingerprint**
 
    The MusicIP Fingerprint for the track.
