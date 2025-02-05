@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../variables/variables_basic.rst:8
+msgid ":index:`Basic Variables <variables; basic>`"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:10
+msgid "These variables are populated from MusicBrainz data for most releases, without any special Picard settings."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:12
+msgid "Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:16
+msgid "Variables will not be created if there was no value retrieved for the variable from the MusicBrainz database."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:18
+msgid "**_absolutetracknumber**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:20
+msgid "The absolute number of this track disregarding the disc number (i.e.: ``%_absolutetracknumber%`` of ``%_totalalbumtracks%``). For example, this value would be 11 for the second track on disc 2 where disc 1 has 9 tracks. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:22
+msgid "**_albumartists**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:24
+msgid "A multi-value variable containing the names of the album's artists. These could be either \"standardized\" or \"as credited\" depending on whether the \"Use standardized artist names\" metadata option is enabled. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:26
+msgid "**_albumartists_sort**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:28
+msgid "A multi-value variable containing the sort names of the album's artists. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:30
+msgid "**_artists_sort**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:32
+msgid "A multi-value variable containing the sort names of the track's artists. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:34
+msgid "**_datatrack**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:36
+msgid "Set to 1 if the track is a \"`data track <https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks>`_\", otherwise empty. (*since Picard 1.3.1*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:38
+msgid "**_discpregap**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:40
+msgid "Set to 1 if the disc the track is on has a \"`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_\", otherwise empty. (*since Picard 1.4*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:42
+msgid "**_multiartist**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:44
+msgid "Set to 1 if not all of the tracks on the album have the same primary artist, otherwise empty. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:46
+msgid "**_musicbrainz_discids**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:48
+msgid "A multi-value variable containing a list of all of the disc ids attached to the selected release. The list provided for each medium only includes the disc ids attached to that medium. For example, the list provided for Disc 1 of a three CD set will not include the disc ids attached to discs 2 and 3 of the set."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:50
+msgid "**_musicbrainz_tracknumber**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:52
+msgid "The track number written as on the MusicBrainz release, such as vinyl numbering (A1, A2…)."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:54
+msgid "**_pregap**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:56
+msgid "Set to 1 if the track is a \"`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_\", otherwise empty. (*since Picard 1.3.1*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:60
+msgid "**_primaryreleasetype**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:62
+msgid "The primary type of the release group (i.e.: *album*, *single*, *ep*, *broadcast*, or *other*)."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:64
+msgid "**_rating**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:66
+msgid "The rating of the track from 0-5 by MusicBrainz users."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:68
+msgid "**_recordingcomment**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:70
+msgid "The disambiguation comment for the recording associated with a track. (*since Picard 0.15*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:72
+msgid "**_recording_firstreleasedate**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:74
+msgid "The date of the earliest recording for a track in the format YYYY-MM-DD. (*Since Picard 2.6*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:76
+msgid "**_releaseannotation**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:78
+msgid "The annotation comment for the release. (*since Picard 2.6*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:80
+msgid "**_releasecomment**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:82
+msgid "The disambiguation comment for the release. (*since Picard 0.15*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:84
+msgid "**_releasecountries**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:86
+msgid "A multi-value variable containing the complete list of release countries for the release. (*since Picard 2.3.1*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:88
+msgid "**_releasegroup**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:90
+msgid "The title of the release group. This is typically the same as the album title, but can be different."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:92
+msgid "**_releasegroup_firstreleasedate**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:94
+msgid "The date of the earliest release in the release group in the format YYYY-MM-DD. This is intended to provide, for example, the release date of the vinyl version of what you have on CD. (*Since Picard 2.6*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:98
+msgid "This is the same information provided by default in the ``originaldate`` tag."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:100
+msgid "**_releasegroupcomment**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:102
+msgid "The disambiguation comment for the release group."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:104
+msgid "**_releaselanguage**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:106
+msgid "The language of the release as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_. (*since Picard 0.10*)"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:110
+msgid "**_secondaryreleasetype**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:112
+msgid "Zero or more secondary types (i.e.: *audiobook*, *compilation*, *dj-mix*, *interview*, *live*, *mixtape/street*, *remix*, *soundtrack*, or *spokenword*) for the release group."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:114
+msgid "**_totalalbumtracks**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:116
+msgid "The total number of tracks across all discs of this release."
+msgstr ""
