@@ -1,0 +1,107 @@
+/* Display Picard logo in side and top bar */
+.wy-nav-side a.icon-home, .wy-nav-side a.icon-home:hover {
+    display: inline-block;
+    padding: 4px 4px 4px 23px;
+    background: transparent url(../logo-small.svg) center left no-repeat;
+    background-size: 1.5em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+.wy-nav-side .fa-home::before, .wy-nav-side .icon-home::before {
+    content: "";
+}
+
+.wy-nav-top a {
+    margin: -2em;
+    background: transparent url(../logo-small.svg) center left no-repeat;
+    background-size: 1.5em;
+    padding: 4px 4px 4px 26px;
+}
+
+dl.footnote.brackets dt.label {
+    border: none;
+    background: transparent;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+dl.footnote.brackets dt.label span.brackets::before {
+    content: "[";
+}
+
+dl.footnote.brackets dt.label span.brackets::after {
+    content: "] ";
+}
+
+a.footnote-reference.brackets {
+    font-size: 70%;
+    vertical-align: super;
+}
+
+a.footnote-reference.brackets::before {
+    content: "[";
+}
+
+a.footnote-reference.brackets::after {
+    content: "]";
+}
+
+table.colwidths-given.docutils.align-default tbody tr td {
+    white-space: normal;
+}
+
+/* adds scrollbar to sidenav */
+.wy-side-scroll {
+    width: auto;
+    overflow-y: auto;
+}
+
+span.guilabel {
+    white-space: nowrap;
+}
+
+/* adds formatting for keyboard shortcuts */
+kbd.compound {
+    white-space: nowrap;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+kbd:not(.compound) {
+    display: inline-block;
+    background-color: white;
+    padding: .15em .4em;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: .4em;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    box-shadow: 0 2px gray;
+    line-height: 1em;
+    font-size: .9em;
+}
+
+/* Nicer formatting of lists with images */
+
+li img {
+    margin-bottom: 12px;
+}
+
+/* Extended syntax highlighting for Picard Tagger Script */
+.highlight-taggerscript .k {
+    color: rgb(0, 0, 255); /* function */
+}
+
+.highlight-taggerscript .n {
+    color: rgb(0, 128, 128); /* variable */
+}
+
+.highlight-taggerscript .se {
+    color: rgb(128, 0, 0); /* escape */
+}
+
+.highlight-taggerscript .cm {
+    color: rgb(128, 128, 128); /* noop */
+}
