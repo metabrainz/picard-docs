@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../troubleshooting/does_not_start.rst:4
+msgid ":index:`Picard won't start <troubleshooting; program won't start>`"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:6
+msgid "If you find that Picard won't start there are a few common possible reasons, and things to try to correct the issue. Before doing anything drastic, it is recommended that you try to start Picard from the command line with the :option:`-d` option to generate the debug logging.  This process is described in the :doc:`troubleshooting` section.  If the resulting logs don't provide any clues as to the problem, it may be one of the following:"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:11
+msgid "**The program files have become corrupted**"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:13
+msgid "If you suspect that this may be the problem, the first (and simplest) thing to try is to reinstall the program.  This should address any potential file corruption issues.  If Picard still won't start then it is unlikely that this was the problem."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:17
+msgid "**A plugin file has become corrupted or is incompatible**"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:19
+msgid "To check whether one of the plugin files has become corrupted or, in the case of a recent upgrade to a plugin or Picard, a plugin is not compatible, you should try removing all of the plugins and then start Picard.  Since you won't be able to disable or remove the plugins using Picard's 'Option' settings, you will need to remove them manually.  The plugins may be located in a ``plugins`` subdirectory of the directory where the Picard program file is stored, or in a user-specific directory:"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:25
+msgid "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Local\\\\MusicBrainz\\\\Picard\\\\plugins`"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:26
+msgid "*macOS*: :file:`~/Library/Preferences/MusicBrainz/Picard/plugins`"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:27
+msgid "*Linux*: :file:`~/.config/MusicBrainz/Picard/plugins`"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:29
+msgid "Once you have located the plugin files, they should be removed from the ``plugins`` directory and moved to a temporary directory.  Then try to start Picard.  If the program starts, you should try restoring the plugin files from your temporary directory one at a time, and check if Picard will start.  This will help identify the plugin that was causing the problem."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:33
+msgid "**The option settings file has become corrupted or is incompatible**"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:35
+msgid "To check whether Picard's option settings file has become corrupted or, in the case of a recent upgrade to Picard, it is not compatible, you should try removing the settings file and then start Picard.  If Picard is started without finding its configuration settings file, it will create a new one using the default settings.  The settings file is called :file:`Picard.ini` and can be found in a user-specific directory:"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:40
+msgid "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Roaming\\\\MusicBrainz`"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:41
+msgid "*macOS*: :file:`~/Library/Preferences/MusicBrainz`"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:42
+msgid "*Linux*: :file:`~/.config/MusicBrainz`"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:44
+msgid "Again, it is recommended that you move the file to a temporary directory so that it can be recovered if this turns out not to be the cause of the problem."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:47
+msgid "**There really is a bug in Picard**"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:49
+msgid "If this problem started just after updating Picard, in spite of all the testing that is performed prior to releasing a new version, it may be possible that this is indeed a bug.  In that case, you should first try to reinstall the previous version to ensure that it works and that the problem is only occurring with the new version.  Then you should report the issue, following the steps outlined in the \"Reporting a Bug\" topic of the :doc:`troubleshooting` section.  Please be sure to include as much information as possible, which will help the developers to locate and fix the problem."
+msgstr ""
