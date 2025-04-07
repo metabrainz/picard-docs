@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021, 2022, 2023.
+# Bob Swift <bswift@rsds.ca>, 2021, 2022, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-05 09:08-0600\n"
-"PO-Revision-Date: 2023-10-19 15:21+0000\n"
+"PO-Revision-Date: 2025-04-07 13:44+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
-"docs/variablesvariables_basic/fr/>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/"
+"picard-docs/variablesvariables_basic/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.10.4\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_basic.rst:8
@@ -94,9 +94,8 @@ msgstr ""
 
 # Variable name.  Do not translate.
 #: ../../variables/variables_basic.rst:26
-#, fuzzy
 msgid "**_albumartists_countries**"
-msgstr "**_albumartists_sort**"
+msgstr "**_albumartists_countries**"
 
 #: ../../variables/variables_basic.rst:28
 msgid ""
@@ -108,6 +107,13 @@ msgid ""
 "from Great Britain and there are two other credited artists from Canada, the "
 "value would be \"GB; CA; CA\"."
 msgstr ""
+"Variable à valeurs multiples contenant les codes pays de tous les artistes "
+"crédités de l'album, dans le même ordre que les artistes. Les codes de pays "
+"en double seront affichés s'il y a plus d'un artiste du même pays. Si un "
+"code pays n'est pas fourni par le webservice, le code \"XX\" sera utilisé "
+"pour indiquer un pays inconnu. Par exemple, si le premier artiste crédité "
+"vient de Grande-Bretagne et que deux autres artistes crédités viennent du "
+"Canada, la valeur sera \"GB; CA; CA\"."
 
 # Variable name.  Do not translate.
 #: ../../variables/variables_basic.rst:30
@@ -124,9 +130,8 @@ msgstr ""
 
 # Variable name.  Do not translate.
 #: ../../variables/variables_basic.rst:34
-#, fuzzy
 msgid "**_artists_countries**"
-msgstr "**_artists_sort**"
+msgstr "**_artists_countries**"
 
 #: ../../variables/variables_basic.rst:36
 msgid ""
@@ -138,6 +143,13 @@ msgid ""
 "from Great Britain and there are two other credited artists from Canada, the "
 "value would be \"GB; CA; CA\"."
 msgstr ""
+"Variable à valeurs multiples contenant les codes de pays de tous les "
+"artistes crédités de la piste, dans le même ordre que les artistes. Les "
+"codes de pays en double seront affichés s'il y a plus d'un artiste du même "
+"pays. Si un code pays n'est pas fourni par le webservice, le code \"XX\" "
+"sera utilisé pour indiquer un pays inconnu. Par exemple, si le premier "
+"artiste crédité vient de Grande-Bretagne et que deux autres artistes "
+"crédités viennent du Canada, la valeur sera \"GB; CA; CA\"."
 
 # Variable name.  Do not translate.
 #: ../../variables/variables_basic.rst:38
