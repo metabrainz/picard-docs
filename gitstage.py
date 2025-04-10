@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""Utility to stage updated translation files in git, ignoring files that only have minor changes
-to the headers and do not contain changes to the translation strings.
+"""Utility to stage updated translation files in git, ignoring files that only have
+minor changes to the headers and do not contain changes to the translation strings.
 """
 
-# Copyright (C) 2023-2024 Bob Swift
+# Copyright (C) 2023-2025 Bob Swift
 
 
 import argparse
@@ -18,14 +17,16 @@ from setup import PACKAGE_TITLE
 
 
 SCRIPT_NAME = 'Picard Docs Git File Stager'
-SCRIPT_VERS = '0.5'
-SCRIPT_INITIAL_COPYRIGHT = '2024'
+SCRIPT_VERS = '0.7'
+SCRIPT_INITIAL_COPYRIGHT = '2023-2025'
 SCRIPT_INITIAL_AUTHOR = 'Bob Swift'
 
 DEFAULT_COMPARISON_DISPLAY_LEVEL = 'changed'
 
 COMMAND_TIMEOUT = 300
 LOCALE_DIRS = conf.locale_dirs if 'locale_dirs' in conf.__dict__ else ['_locale']
+
+FILE_TYPES = {'.pot', '.po'}
 
 STATUS_FILE = 'git_status.txt'
 DIFF_FILE = 'git_diff.txt'
@@ -103,7 +104,7 @@ class Printer():
     silent = False
 
     @classmethod
-    def stdout(cls, text: str = ''):
+    def stdout(cls, text: str = '') -> None:
         """Print the text to stdout if the silent flag has not been set.
 
         Args:
@@ -113,7 +114,7 @@ class Printer():
             print(text)
 
     @staticmethod
-    def stderr(text: str = ''):
+    def stderr(text: str = '') -> None:
         """Print the text to stderr, regardless of the silent flag setting.
 
         Args:
@@ -185,7 +186,7 @@ def parse_command_line():
     return arg_parser.parse_args()
 
 
-def get_stdout_from_command(command: str):
+def get_stdout_from_command(command: str) -> str:
     """Run the specified command in a shell and return the stdout response as a string.
 
     Args:
@@ -195,11 +196,12 @@ def get_stdout_from_command(command: str):
         str: stdout response for the command output
     """
     Printer.stdout(f"Running command: {command}")
-    response = subprocess.run(command, shell=True, check=True, capture_output=True, encoding='utf8', timeout=COMMAND_TIMEOUT)
+    response = subprocess.run(command, shell=True, check=True, capture_output=True,
+                              encoding='utf8', timeout=COMMAND_TIMEOUT)
     return response.stdout
 
 
-def is_in_locale_dir(fullpath: str):
+def is_in_locale_dir(fullpath: str) -> bool:
     """Checks if the specified filepath is in a locale directory.
 
     Args:
@@ -214,15 +216,17 @@ def is_in_locale_dir(fullpath: str):
     return False
 
 
-def parse_git_status(git_stat: list, files_to_stage: dict, files_to_ignore: set, stage_rst: bool = False):
+def parse_git_status(git_stat: list, files_to_stage: dict, files_to_ignore: set,
+                     stage_rst: bool = False) -> None:
     """Parse the git status response to add new or deleted files.
 
     Args:
         git_stat (list): List of lines in the git status response
         files_to_stage (dict): Dictionary of files to add to git staging
         files_to_ignore (set): Set of files to not add to git staging
+        stage_rst: (bool): Whether or not RST files should be staged (default False)
     """
-    stage_types = {'.pot', '.po'}
+    stage_types = FILE_TYPES
     if stage_rst:
         stage_types.add('.rst')
     for line in git_stat:
@@ -235,7 +239,8 @@ def parse_git_status(git_stat: list, files_to_stage: dict, files_to_ignore: set,
         _root, ext = os.path.splitext(filename)
         if '_video_thumbnail' in fullfilename:
             files_to_ignore.add(fullfilename)
-        elif status == "??" and fullfilename not in files_to_ignore and is_in_locale_dir(fullfilename) and fullfilename.endswith('/'):
+        elif status == "??" and fullfilename not in files_to_ignore and \
+                is_in_locale_dir(fullfilename) and fullfilename.endswith('/'):
             files_to_stage[fullfilename] = 'Added'
         elif ext not in stage_types:
             files_to_ignore.add(fullfilename)
@@ -243,14 +248,37 @@ def parse_git_status(git_stat: list, files_to_stage: dict, files_to_ignore: set,
             files_to_stage[fullfilename] = 'Deleted'
         elif status == "??" and fullfilename not in files_to_ignore:
             files_to_stage[fullfilename] = 'Added'
-        elif status == "M" and fullfilename not in files_to_ignore and stage_rst and ext == '.rst':
+        elif status == "M" and fullfilename not in files_to_ignore and \
+                stage_rst and ext == '.rst':
             files_to_stage[fullfilename] = 'Modified'
 
 
-def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, level: str = DEFAULT_COMPARISON_DISPLAY_LEVEL):
-    # pylint: disable=too-many-branches
-    # pylint: disable=too-many-statements
-    # pylint: disable=too-many-locals
+def check_file(diff_plus: dict, diff_minus: dict) -> bool:
+    """Checks whether a file contains a mismatch of translation keys or values.
+
+    Args:
+        diff_plus (dict): Dictionary of translation keys added.
+        diff_minus (dict): Dictionary of translation keys removed.
+
+    Returns:
+        bool: True if there is a mismatch, otherwise false.
+    """
+    if not diff_plus and not diff_minus:
+        return False
+    s_p = set(diff_plus.keys())
+    s_m = set(diff_minus.keys())
+    if s_p.difference(s_m) or s_m.difference(s_p):
+        return True
+    for key in s_p.intersection(s_m):
+        if diff_plus[key][0] != diff_minus[key][0]:
+            return True
+        if diff_plus[key][1] != diff_minus[key][1]:
+            return True
+    return False
+
+
+def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set,
+                   level: str = DEFAULT_COMPARISON_DISPLAY_LEVEL) -> None:
     """Parse the git diff response.  Do not add translation files that only have changed
     comment lines or minor changes to headers.
 
@@ -260,128 +288,147 @@ def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set, l
         files_to_ignore (set): Set of files to not add to git staging
         level (str): Comparison display level (none|changed|all)
     """
+    # pylint: disable=too-many-locals
+    # pylint: disable=too-many-branches
+    # pylint: disable=too-many-statements
+
     fullfilename = ''
     filename = ''
-    ext = ''
+    file_line = ''
+    file_msgid = ''
+    file_msgstr = ''
+    file_sign = ''
     minus = ''
     plus = ''
     last = ''
     match_type = ''
-    last_type = ''
+    diff_plus = {}
+    diff_minus = {}
+    processing = False
 
-    def process_change(files_to_stage: dict, fullfilename: str, minus: str, plus: str):
-        """Compare the 'plus' and 'minus' strings and mark the file for staging if
-        they are different.  Print the diff if the appropriate display level is set.
-
-        Args:
-            files_to_stage (dict): Dictionary of files to add to git staging
-            fullfilename (str): Full path and name of file being examined
-            minus (str): Combined lines being removed
-            plus (str): Combined lines being added
-        """
-        if not minus and not plus:
-            return
-        if level == 'all' or (minus != plus and level == 'changed'):
-            Printer.stdout(f"\nCompare: {fullfilename}")
-            Printer.stdout(f"--- {len(minus):,} characters\n\"{minus}\"\n+++ {len(plus):,} characters\n\"{plus}\"")
-        if minus != plus:
-            files_to_stage[fullfilename] = 'Modified'
+    def do_process(new_file: bool = False):
+        nonlocal processing, file_line, file_msgid, file_msgstr, file_sign, \
+            diff_plus, diff_minus, minus, plus, last, line_num
+        if processing and file_line and file_msgid and file_sign:
+            if file_sign == '+':
+                diff_plus[file_msgid] = (file_line, file_msgstr)
+            else:
+                diff_minus[file_msgid] = (file_line, file_msgstr)
+        if filename and fullfilename not in files_to_stage.keys() and fullfilename not in files_to_ignore:
+            if minus != plus or (new_file and check_file(diff_plus=diff_plus, diff_minus=diff_minus)):
+                files_to_stage[fullfilename] = 'Modified'
+        processing = False
+        diff_plus = diff_minus = {}
+        file_line = file_msgid = file_msgstr = file_sign = plus = minus = last = ''
 
     line_count = len(git_diff)
     line_num = 0
     while line_num < line_count:
-        line = git_diff[line_num]
+        line = str(git_diff[line_num])
         line_num += 1
-    # for line in git_diff:
+
         # Ignore nearby lines and unchanged ranges
         if line and line[0] in {' ', '@'}:
             continue
 
         line = line.strip()
 
-        # Ignore selected information lines
-        if not line or line.startswith("+++ ") or line.startswith("diff") or line.startswith("index"):
+        # Ignore blank lines
+        if not line:
             continue
 
         # Start a new file filename for processing
         if line.startswith("--- "):
-            process_change(files_to_stage, fullfilename, minus, plus)
-            minus = plus = last = ''
+            do_process(new_file=True)
+            if filename and fullfilename not in files_to_stage.keys():
+                files_to_ignore.add(fullfilename)
             fullfilename = line[6:].strip()
             filename = os.path.split(fullfilename)[-1]
-            _root, ext = os.path.splitext(filename)
 
-        # Ignore non-translation files
-        if ext not in {'.pot', '.po'} or not is_in_locale_dir(fullfilename):
-            continue
+            # Ignore non-translation files
+            if os.path.splitext(filename)[1] not in FILE_TYPES or not is_in_locale_dir(fullfilename):
+                fullfilename = filename = ''
+                continue
 
-        # Ignore files already processed unless printing differences
-        if (fullfilename in files_to_stage or fullfilename in files_to_ignore) and level == 'none':
-            continue
+            # Ignore files already processed unless printing differences
+            if (fullfilename in files_to_stage or fullfilename in files_to_ignore) and level == 'none':
+                fullfilename = filename = ''
+                continue
 
-        # Add changed fuzzy comment lines
-        if re.match(r'[+-]#, fuzzy', line, re.IGNORECASE):
-            process_change(files_to_stage, fullfilename, minus, plus)
-            minus = plus = last = ''
-            files_to_stage[fullfilename] = 'Modified'
+        if not filename:
             continue
 
         # Add changed location comment lines
         if re.match(r'[+-]#: \.\./', line):
-            process_change(files_to_stage, fullfilename, minus, plus)
-            minus = plus = last = ''
-            files_to_stage[fullfilename] = 'Modified'
+            do_process()
+            file_sign = line[0]
+            file_line = line.rsplit(':', maxsplit=1)[-1].strip()
+            processing = True
             continue
 
         # Ignore changed comment lines
         if re.match(r'[+-]#', line):
-            process_change(files_to_stage, fullfilename, minus, plus)
-            minus = plus = last = ''
+            do_process()
+            continue
+
+        # Ignore selected information lines
+        if not line or line.startswith("+++ ") or line.startswith("diff") or line.startswith("index"):
+            do_process()
             continue
 
         # Ignore changed header lines
-        if re.match(r'[+-].*\\n"$', line) or re.match(r'[+-]"(' + HEADER_KEYS_TO_IGNORE + r')', line, re.IGNORECASE):
-            process_change(files_to_stage, fullfilename, minus, plus)
-            minus = plus = last = ''
+        if re.match(r'[+-].*\\n"$', line) or re.match(r'[+-]"(' + HEADER_KEYS_TO_IGNORE + r')',
+                                                      line, re.IGNORECASE):
+            do_process()
+            junk = line_num
             # Keep skipping lines until header line ends with '\n"'
             while line_num < line_count and not re.match(r'[+-].*\\n"$', line.strip()):
                 line = git_diff[line_num]
                 line_num += 1
             continue
 
+        # Add changed fuzzy comment lines
+        if re.match(r'[+-]#, fuzzy', line, re.IGNORECASE):
+            files_to_stage[fullfilename] = 'Modified'
+            do_process()
+            fullfilename = filename = ''
+            continue
+
         # Add files with changed translation text lines
-        match = re.match(r'[+-](msgid|msgstr)?\s?"', line)
+        match = re.match(r'[+-](msgid|msgstr|)?\s?"', line)
         if match:
             action = line[0]
             match_type = match.group(1)
             text = line[len(match.group(0)):-1]
+            if match_type == 'msgid' and not processing:
+                junk = str(git_diff[line_num - 2])
+                if re.match(r'\s#: \.\./', junk):
+                    do_process()
+                    file_line = line.split(':')[-1].strip()
+                    processing = True
 
-            # All related changes in the diff show the removed lines before the added lines
-            # so a minus following a plus should signify a new change.
-            if (last == '+' and action == '-') or (match_type and match_type != last_type):
-                process_change(files_to_stage, fullfilename, minus, plus)
-                minus = plus = last = last_type = ''
-
-            # Combine changed translation text lines within a 'msgid' or 'msgstr' section to
-            # accommodate lines wrapped at different lengths but the overall content is the same
-            if action == '+':
-                plus += text
+            if processing:
+                last = match_type or last
+                if last == 'msgid':
+                    file_msgid += text
+                if last == 'msgstr':
+                    file_msgstr += text
             else:
-                minus += text
+                if last == '+' and action == '-':
+                    do_process()
+                last = action
+                if last == '-':
+                    minus += text
+                else:
+                    plus += text
 
-            last = action
-            if match_type:
-                last_type = match_type
             continue
 
-        process_change(files_to_stage, fullfilename, minus, plus)
-        minus = plus = last = match_type = last_type = ''
-
     # Handle any outstanding changes at the end of the git diff output
-    process_change(files_to_stage, fullfilename, minus, plus)
+    do_process(new_file=True)
 
 
-def main():     # pylint: disable=too-many-statements
+def main():
     """Main processing method.
     """
     args = parse_command_line()
@@ -447,9 +494,8 @@ def main():     # pylint: disable=too-many-statements
                         ).returncode:
                     Printer.stderr(f"\nThere was a problem adding {filename if silent else 'the file'} to the commit.\n")
                     sys.exit(1)
-        if dry_run:
-            Printer.stdout("\nNo files staged due to dry run option enabled.")
-        Printer.stdout()
+        command = "\nNo files staged due to dry run option enabled.\n" if dry_run else ''
+        Printer.stdout(command)
     else:
         Printer.stdout("\nNo files to stage for git.\n")
 
