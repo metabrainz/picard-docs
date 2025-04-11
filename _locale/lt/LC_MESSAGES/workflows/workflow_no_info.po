@@ -2,38 +2,55 @@
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Vaclovas Intas <gateway_31@protonmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-11 14:20+0000\n"
+"Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
+"Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
+"picard-docs/workflowsworkflow_no_info/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
+"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: ../../workflows/workflow_no_info.rst:4
 msgid ":index:`When files are not grouped and have little or no existing metadata <workflows; no metadata>`"
 msgstr ""
+":index:`Kai failai nėra sugrupuoti ir turi mažai arba visai neturi esamų "
+"metaduomenų <darbo eigos; nėra metaduomenų>`"
 
 #: ../../workflows/workflow_no_info.rst:6
 msgid "This is perhaps the worst case scenario, because it provides the greatest chance of tagging your music files with an incorrect match from the MusicBrainz database."
 msgstr ""
+"Tai – galbūt blogiausias atvejis, nes didžiausia tikimybė, kad jūsų muzikos "
+"failai bus pažymėti neteisingu atitikmeniu iš „MusicBrainz“ duomenų bazės."
 
 #: ../../workflows/workflow_no_info.rst:9
 msgid "In this situation, you will need to feed batches of files to Picard to process.  In order to minimize the performance impact, it is recommended to keep the batches relatively small (i.e.: approximately 200 files at most in a single batch).  Picard will try to group them into clusters based on their AcoustID fingerprints."
 msgstr ""
+"Šioje padėtyje turėsite pateikti „Picard“ apdoroti failų paketus.  Norint "
+"sumažinti poveikį veikimui, rekomenduojama, kad paketai būtų palyginti maži ("
+"t. y. maždaug 200 failų viename pakete).  „Picard“ bandys juos sugrupuoti į "
+"sankaupas pagal jų „AcoustID“ atspaudus."
 
 #: ../../workflows/workflow_no_info.rst:15
 msgid "This workflow will likely only partially match the files to a release in each batch processed.  This means that an album may not be fully matched, tagged and renamed until multiple batches have been processed."
 msgstr ""
+"Ši darbo eiga greičiausiai tik iš dalies atitiks kiekvieno apdorojamo paketo "
+"failus su leidiniu.  Tai reiškia, kad albumas gali būti ne visiškai "
+"atitiktas, pažymėtas ir pervadintas tol, kol bus apdoroti keli paketai."
 
 #: ../../workflows/workflow_no_info.rst:18
 msgid "**1. Load the files**"
-msgstr ""
+msgstr "**1. Įkelkite failus**"
 
 #: ../../workflows/workflow_no_info.rst:20
 msgid "Drag the batch of files to process from the browser to the \"Unclustered Files\" section in the left-hand pane."
