@@ -27,3 +27,7 @@ please create a [ticket](https://tickets.metabrainz.org/issues/?jql=project%20%3
 [Pull Requests](https://github.com/metabrainz/picard-docs/pulls) to address outstanding issues are also
 appreciated.  Please see [CONTRIBUTING.md](https://github.com/metabrainz/picard-docs/blob/master/.github/CONTRIBUTING.md)
 for more information and additional ways to contribute.
+
+## Current Translation Progress
+
+![Translation status](https://translations.metabrainz.org/widget/picard-docs/multi-auto.svg)
