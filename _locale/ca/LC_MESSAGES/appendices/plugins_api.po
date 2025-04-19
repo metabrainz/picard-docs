@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../appendices/plugins_api.rst:4
+msgid ":index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API <pair: plugins; api>`"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:7
+msgid ":index:`Plugin Metadata <plugins; metadata>`"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:9
+msgid "Each plugin must provide some metadata as variables. Those variables should be placed at the top of the file."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:29
+msgid "Variables explanation:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:31
+msgid "**PLUGIN_NAME** should be a short but descriptive name for the plugin."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:33
+msgid "**PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function. If your plugin targets Picard 2.7 or later you can use `Markdown <https://daringfireball.net/projects/markdown/>`_ syntax to format the text.  If your plugin targets earlier versions you can instead use simple HTML formatting. Please restrict the usage of HTML to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists (``<ul>``, ``<ol>``)."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:39
+msgid "**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:42
+msgid "**PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin to run with. New Picard versions will usually support older plugin API versions, but on breaking changes support for older plugin versions can be dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:46
+msgid "**PLUGIN_LICENSE** should be set with the license name of the plugin. If possible use one of the license names from the `SPDX License List <https://spdx.org/licenses/>`_, but you are welcomed to use another license if the one you chose is not available in the list."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:50
+msgid "**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:52
+msgid "**PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the documentation for the plugin.  This variable is optional and may be omitted.  If a URL is provided, it will be shown as a clickable link in the description displayed for the plugin in the Plugins option settings screen."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:58
+msgid ":index:`Metadata Processors <plugins; metadata processors>`"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:60
+msgid "MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to the processor functions in the following examples are as follows:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:63
+msgid "**album**: ``picard.album.Album``"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:64
+msgid "**metadata**: ``picard.metadata.Metadata``"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:65
+msgid "**release**: ``dict`` with release data from MusicBrainz JSON web service"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:66
+msgid "**track**: ``dict`` with track data from MusicBrainz JSON web service"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:70
+msgid "Album metadata example:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:91
+msgid "Track metadata example:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:109
+msgid ":index:`Event Hooks <pair: plugins; event hooks>`"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:111
+msgid "Plugins can register themselves to listen for different events. Currently the following event hooks are available:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:114
+msgid "file_post_load_processor(file)"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:116
+msgid "This hook is called after a file has been loaded into Picard. This could for example be used to load additional data for a file. Usage:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:130
+msgid "file_post_save_processor(file)"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:132
+msgid "This hook is called after a file has been saved. This can for example be used to run additional post-processing on the file or write extra data. Note that the file's metadata is already the newly saved metadata. Usage:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:146
+msgid "file_post_addition_to_track_processor(track, file)"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:148
+msgid "This hook is called after a file has been added to a track (on the right-hand pane of Picard)."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:161
+msgid "file_post_removal_from_track_processor(track, file)"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:163
+msgid "This hook is called after a file has been removed from a track (on the right-hand pane of Picard)."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:176
+msgid "album_post_removal_processor(album)"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:178
+msgid "This hook is called after an album has been removed from Picard."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:192
+msgid "Event hooks have been available since API version 2.2."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:196
+msgid ":index:`File Formats <pair: plugins; file format>`"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:198
+msgid "Plugins can extend Picard with support for additional file formats. See the existing `file format implementations <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for details on how to implement the ``_load`` and ``_save`` methods. Example:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:236
+msgid ":index:`Tagger Script Functions <pair: scripting functions; plugins>`"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:238
+msgid "To define new tagger script functions use ``register_script_function(function, name=None)`` from the ``picard.script`` module. ``parser`` is an instance of ``picard.script.ScriptParser``, and the rest of the arguments passed to it are the arguments from the function call in the tagger script. Example:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:260
+msgid "``register_script_function`` supports two optional arguments:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:262
+msgid "**eval_args**: If this is **False**, the arguments will not be evaluated before being passed to **function**."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:263
+msgid "**check_argcount**: If this is **False** the number of arguments passed to the function will not be verified."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:265
+msgid "The default value for both arguments is **True**."
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:269
+msgid ":index:`Context Menu Actions <pair: plugins; context menu actions>`"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:271
+msgid "Right-click context menu actions can be added to albums, tracks and files in \"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of Clusters). Example:"
+msgstr ""
+
+#: ../../appendices/plugins_api.rst:300
+msgid "Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", \"*cluster*\" or \"*clusterlist*\"."
+msgstr ""

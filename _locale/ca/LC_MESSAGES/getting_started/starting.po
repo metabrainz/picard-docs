@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../getting_started/starting.rst:4
+msgid ":index:`Starting Picard <starting>`"
+msgstr ""
+
+#: ../../getting_started/starting.rst:6
+msgid "Once Picard has been installed on your system, most of the time you will be starting it by clicking an icon on your desktop or in a start menu.  This will run the program using the default location for the configuration file and configured logging level.  Picard can also be started from a command line prompt with some overrides available.  From the command line, you can also specify files or directories to load into Picard for processing.  Please see :doc:`/appendices/command_line` for more details about the available options."
+msgstr ""
+
+#: ../../getting_started/starting.rst:13
+msgid "As of version 2.9, Picard will try to only run a single instance of the program at a time. When the program is started, it checks to see if there is another instance of that version, configuration file and plugin startup status ``-P`` already running.  If the same version is already running, any files or directories specified on the command line of the new instance, along with any executable commands specified with the ``-e`` or ``--exec`` options will be passed to the already running instance for processing and the new duplicate instance will be shut down.  This allows batch processing of files to be initiated automatically from other processes.  If there is no instance of that version already running, Picard will start normally."
+msgstr ""
+
+#: ../../getting_started/starting.rst:23
+msgid "Additionally, Picard can be started in \"stand-alone\" mode, in which case it neither sends information to an already running instance nor accepts information from another instance."
+msgstr ""
+
+#: ../../getting_started/starting.rst:26
+msgid "Instances started with command-line argument ``-s / --stand-alone`` always start as stand-alone."
+msgstr ""
+
+#: ../../getting_started/starting.rst:28
+msgid "If there is already an instance running when another instance is started that doesn't result in a stand-alone instance, any of the command-line overrides ``-d / --debug``, ``-M / --no-player`` or ``-N / --no-restore`` of the new duplicate instance will be ignored, and only the specified files or directories and executable commands (if any) will be passed to the running instance for processing.  Similarly, if a primary instance has been started with any of these overrides specified on the command line, starting a subsequent instance of that version without the override will not modify the user interface settings of the currently running instance."
+msgstr ""
+
+#: ../../getting_started/starting.rst:36
+msgid "All instances started with the ``-h / --help``, ``-v / --version`` or ``-V / --long-version`` command line arguments will always output the requested product information and exit, regardless of whether or not another instance is running."
+msgstr ""
+
+#: ../../getting_started/starting.rst:40
+msgid "Please refer to the :doc:`/usage/command_processing` section for more information."
+msgstr ""
