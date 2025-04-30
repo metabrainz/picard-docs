@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2025-04-25 18:20+0000\n"
+"PO-Revision-Date: 2025-04-30 06:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/"
 "picard-docs/appendicescommand_line/ca/>\n"
@@ -40,6 +40,10 @@ msgstr "Mostra un missatge d'ajuda i surt"
 #: ../../appendices/command_line.rst:20
 msgid "audit events passed as a comma-separated list, prefixes supported, use \"all\" to match any event. See the `Python Documentation <https://docs.python.org/3/library/audit_events.html#audit-events>`_ for more information."
 msgstr ""
+"Esdeveniments d'auditoria indicats com a llista separada per comes; "
+"s'admeten prefixos, «all» coincideix amb qualsevol esdeveniment. Consulteu "
+"la `documentació de Python <https://docs.python.org/3/library/"
+"audit_events.html#audit-events>`_ per a més informació."
 
 #: ../../appendices/command_line.rst:24
 msgid "location of the configuration file to use"
@@ -52,6 +56,8 @@ msgstr "Habilita el registre de depuració"
 #: ../../appendices/command_line.rst:32
 msgid "execute one or more COMMANDs at start-up (see :doc:`/usage/exec_commands` for more information)"
 msgstr ""
+"Executa una o més ordres en iniciar el programa (consulteu :doc:`/usage/"
+"exec_commands` per a més informació)"
 
 #: ../../appendices/command_line.rst:36
 msgid "disable built-in media player"
@@ -88,6 +94,13 @@ msgstr "Un o més fitxers, directoris, URL i MBID que s'han de carregar"
 #: ../../appendices/command_line.rst:68
 msgid "Files and directories are specified including the path (either absolute or relative) to the file or directory, and may include drive specifiers. They can also be specified using the ``file://`` prefix. URLs are specified by using either the ``http://`` or ``https://`` prefix. MBIDs are specified in the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of \"release\", \"artist\" or \"track\" and ``<mbid>`` is the MusicBrainz Identifier of the entity."
 msgstr ""
+"Els fitxers i directoris s'especifiquen incloent-hi el camí (absolut o "
+"relatiu) i poden incloure especificadors d'unitat. També es poden "
+"especificar amb el prefix ``file://``. Els URL s'especifiquen amb el prefix "
+"``http://`` o ``https://``. Els MBID s'especifiquen amb el format "
+"``mbid://<tipus_entitat>/<mbid>``, on ``<tipus_entitat>`` és un dels valors "
+"«release» (publicació), «artist» (artista) o «track» (pista) i ``<mbid>`` és "
+"l'identificador de MusicBrainz de l'entitat."
 
 #: ../../appendices/command_line.rst:74
 msgid "If a specified item contains a space, it must be enclosed in quotes such as ``\"/home/user/music/my song.mp3\"``."
