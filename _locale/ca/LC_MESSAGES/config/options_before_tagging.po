@@ -2,67 +2,92 @@
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Marc Riera <marc@marcriera.cat>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-05-15 18:20+0000\n"
+"Last-Translator: Marc Riera <marc@marcriera.cat>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
+"picard-docs/configoptions_before_tagging/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.3\n"
 
 #: ../../config/options_before_tagging.rst:4
 msgid ":index:`Before Tagging <configuration; before tagging>`"
-msgstr ""
+msgstr ":index:`Abans de l'etiquetatge <configuració; abans de l'etiquetatge>`"
 
 #: ../../config/options_before_tagging.rst:11
 msgid "**Clear existing tags**"
-msgstr ""
+msgstr "**Esborra les etiquetes existents**"
 
 #: ../../config/options_before_tagging.rst:13
 msgid "Checking this will remove all existing metadata and leave your files with only MusicBrainz metadata. Information you may have added through another media player such as \"genre\", \"comments\" or \"ratings\" will be removed."
 msgstr ""
+"Si marqueu aquesta opció, se suprimiran totes les metadades existents i els "
+"fitxers només contindran metadades de MusicBrainz. Se suprimirà la "
+"informació que hàgiu afegit des d'un altre reproductor, com ara el gènere, "
+"els comentaris o les puntuacions."
 
 #: ../../config/options_before_tagging.rst:16
 msgid "**Keep embedded images when clearing tags**"
-msgstr ""
+msgstr "**Conserva les imatges incrustades en esborrar les etiquetes**"
 
 #: ../../config/options_before_tagging.rst:18
 msgid "The default is for Picard to remove any embedded images from the files when clearing existing tags. Checking this option will keep the embedded images in the files."
 msgstr ""
+"Per defecte, Picard suprimeix totes les imatges incrustades dels fitxers en "
+"esborrar les etiquetes existents. Si marqueu aquesta opció, les imatges "
+"incrustades es conservaran."
 
 #: ../../config/options_before_tagging.rst:21
 msgid "**Remove ID3 tags from FLAC files**"
-msgstr ""
+msgstr "**Suprimeix les etiquetes ID3 dels fitxers FLAC**"
 
 #: ../../config/options_before_tagging.rst:23
 msgid "Check to remove ID3 tags from FLAC files – Vorbis Comments are recommended for FLAC files. Picard will write Vorbis Comments to FLAC files regardless of this setting."
 msgstr ""
+"Marqueu aquesta opció per a suprimir les etiquetes ID3 dels fitxers FLAC; es "
+"recomanen els comentaris Vorbis per als fitxers FLAC. Picard escriurà "
+"comentaris Vorbis als fitxers FLAC independentment d'aquest paràmetre."
 
 #: ../../config/options_before_tagging.rst:26
 msgid "**Remove APEv2 tags from MP3 files**"
-msgstr ""
+msgstr "**Suprimeix les etiquetes APEv2 dels fitxers MP3**"
 
 #: ../../config/options_before_tagging.rst:28
 msgid "Check to remove APEv2 tags from MP3 files – ID3 is recommended for MP3 files. Picard will write ID3 tags to MP3 files regardless of this setting."
 msgstr ""
+"Marqueu aquesta opció per a suprimir les etiquetes APEv2 dels fitxers MP3; "
+"es recomana ID3 per als fitxers MP3. Picard escriurà etiquetes ID3 als "
+"fitxers MP3 independentment d'aquest paràmetre."
 
 #: ../../config/options_before_tagging.rst:31
 msgid "**Fix missing seekpoints for FLAC files**"
-msgstr ""
+msgstr "**Corregeix els punts de cerca absents en els fitxers FLAC**"
 
 #: ../../config/options_before_tagging.rst:33
 msgid "Some software has issues handling FLAC files that have an empty seek table metadata block. When this option is enabled empty and hence unused seek table blocks will be removed from the files on saving."
 msgstr ""
+"Alguns programes tenen problemes amb els fitxers FLAC amb un bloc de "
+"metadades de taula de cerca buit. Quan habiliteu aquesta opció, se "
+"suprimiran els blocs de taula de cerca buits (i, per tant, sense ús) dels "
+"fitxers en desar-los."
 
 #: ../../config/options_before_tagging.rst:36
 msgid "**Preserve these tags from being cleared or overwritten with MusicBrainz data**"
 msgstr ""
+"^Impedeix que aquestes etiquetes s'esborrin o siguin reemplaçades per dades "
+"de MusicBrainz**"
 
 #: ../../config/options_before_tagging.rst:38
 msgid "This is an advanced option: If you have tags which you need to preserve, enter their names here to stop Picard from overwriting them."
 msgstr ""
+"Això és una opció avançada: si hi ha etiquetes que voleu preservar, indiqueu-"
+"ne el nom aquí perquè Picard deixi de sobreescriure-les."
