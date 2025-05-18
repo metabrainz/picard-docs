@@ -5,7 +5,7 @@
 $rsearch
 ========
 
-| Usage: **$rsearch(text,pattern)**
+| Usage: **$rsearch(text,pattern[,group])**
 | Category: text
 
 **Description:**
@@ -21,6 +21,13 @@ If more than one marked subexpression is defined and not all are matched, an emp
 be returned.  If no subexpression is specified, then the pattern captured by the whole search
 expression will be returned.
 
+If the optional ``group`` parameter is not provided or is empty, return the first
+capture group which matched something (including the empty string) or the
+entire match.
+
+If ``group`` is an integer, return the capture group in the position matching this integer.
+Otherwise, return the capture group named ``group``, sans surrounding whitespace.
+
 .. note::
 
    When entering regular expressions into Picard scripts you have to escape a backslash "\\",
@@ -28,6 +35,10 @@ expression will be returned.
    Picard to not interpret them as part of the script command.  This is done by inserting
    a backslash before the character to be escaped.  For example, the regular expression
    ``^\s*([0-9,\.]*)$`` would have to be entered as ``^\\s*\([0-9\,\\.]*\)\$``.
+
+.. note::
+
+   The ``group`` argument was added in Picard v2.14.
 
 **Example:**
 
@@ -44,3 +55,5 @@ The following statements will return the values indicated:
     $rsearch(test,\(e\).*\(s\))                      ==>  "e"
     $rsearch(test,\(e\).*x)                          ==>  ""
     $rsearch(test,\(e\).*\(x\))                      ==>  ""
+    $rsearch(disc: 3,\(\\w+\): \(\\d+\),1)           ==>  "disc"
+    $rsearch(disc: 3,\(\\w+\): \(\\d+\),2)           ==>  "3"
