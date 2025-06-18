@@ -2,131 +2,198 @@
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Marc Riera <marc@marcriera.cat>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-31 09:30-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-06-18 12:20+0000\n"
+"Last-Translator: Marc Riera <marc@marcriera.cat>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
+"picard-docs/configconfiguration/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: ../../config/configuration.rst:4
 msgid "Configuration"
-msgstr ""
+msgstr "Configuració"
 
 #: ../../config/configuration.rst:6
 msgid "Once Picard has been installed on your system, the next step is to configure it to your preferences.  The configuration consists of enabling the desired screen sections for display, selecting the desired actions, and setting the various options."
 msgstr ""
+"Quan hàgiu instal·lat Picard al vostre sistema, el pas següent és configurar-"
+"lo segons les vostres preferències.  La configuració consisteix a habilitar "
+"les seccions de la pantalla que voleu veure, seleccionar les accions "
+"desitjades i definir diverses opcions."
 
 #: ../../config/configuration.rst:11
 msgid ":index:`Screen Setup <configuration; screen setup>`"
 msgstr ""
+":index:`Configuració de la pantalla <configuració; configuració de la "
+"pantalla>`"
 
 #: ../../config/configuration.rst:13
 msgid "The screen setup is found under the :menuselection:`\"View\"` item on the menu bar.  To enable the display of an item, simply check the box for the screen option.  The items are:"
 msgstr ""
+"La configuració de la pantalla és a l'element :menuselection:`«Visualitza»` "
+"de la barra de menú.  Per a mostrar un element, només cal que marqueu la "
+"casella de l'opció corresponent.  Els elements són:"
 
 #: ../../config/configuration.rst:16
 msgid "**File Browser**"
-msgstr ""
+msgstr "**Explorador de fitxers**"
 
 #: ../../config/configuration.rst:18
 msgid "This displays a file browser on the left side of the screen for selecting files and directories for processing. Files can be loaded into Picard by dragging and dropping them to the right panes, double clicking on individual files or by selecting multiple files and folders and selecting \"Load selected files\" from the context menu."
 msgstr ""
+"Això mostra un explorador de fitxers a l'esquerra de la pantalla per a "
+"seleccionar els fitxers i directoris que s'han de processar. Es poden "
+"carregar fitxers a Picard arrossegant-los i deixant-los anar a les "
+"subfinestres de la dreta, fent doble clic sobre fitxers individuals o "
+"seleccionant diversos fitxers i carpetes i «Carrega els fitxers seleccionats»"
+" al menú contextual."
 
 #: ../../config/configuration.rst:23
 msgid "Files and directories can also be selected using your system's file browser by dragging and dropping them onto the Picard application."
 msgstr ""
+"També podeu seleccionar fitxers i directoris a l'explorador de fitxers del "
+"sistema i arrossegar-los i deixar-los anar a Picard."
 
 #: ../../config/configuration.rst:26
 msgid "**Cover Art**"
-msgstr ""
+msgstr "**Caràtules**"
 
 #: ../../config/configuration.rst:28
 msgid "This displays the cover art for the currently selected item (track or release) in a window to the right of the tags section of the display.  This allows you to select or replace the cover art saved with the release."
 msgstr ""
+"Això mostra la caràtula de l'element seleccionat actualment (pista o "
+"publicació) en una finestra a la dreta de la secció d'etiquetes en "
+"pantalla.  Això us permet seleccionar o substituir la caràtula desada amb la "
+"publicació."
 
 #: ../../config/configuration.rst:32
 msgid "**Actions**"
-msgstr ""
+msgstr "**Accions**"
 
 #: ../../config/configuration.rst:34
 msgid "This displays the button bar of the actions performed by Picard, located just below the menu bar."
 msgstr ""
+"Això mostra la barra de botons de les accions de Picard, just a sota de la "
+"barra de menú."
 
 #: ../../config/configuration.rst:36
 msgid "**Search**"
-msgstr ""
+msgstr "**Cerca**"
 
 #: ../../config/configuration.rst:38
 msgid "This displays the manual search box to the right of the \"Actions\" button bar."
 msgstr ""
+"Això mostra el quadre de cerca manual a la dreta de la barra de botons "
+"«Accions»."
 
 #: ../../config/configuration.rst:40
 msgid "**Player**"
-msgstr ""
+msgstr "**Reproductor**"
 
 #: ../../config/configuration.rst:42
 msgid "This displays the built-in player for playing selected audio files."
 msgstr ""
+"Això mostra el reproductor integrat per a reproduir els fitxers d'àudio "
+"seleccionats."
 
 #: ../../config/configuration.rst:47
 msgid ":index:`Action Options <configuration; action options>`"
-msgstr ""
+msgstr ":index:`Opcions d'acció <configuració; opcions d'acció>`"
 
 #: ../../config/configuration.rst:49
 msgid "The action options are found under the :menuselection:`\"Options\"` item on the menu bar.  There are three available actions that Picard can perform when saving selected music files:"
 msgstr ""
+"Les opcions d'acció són a l'element :menuselection:`«Opcions»` de la barra "
+"de menú.  Hi ha tres accions disponibles que Picard pot fer en desar els "
+"fitxers de música seleccionats:"
 
 #: ../../config/configuration.rst:52
 msgid "**Rename Files**"
-msgstr ""
+msgstr "**Canvia el nom dels fitxers**"
 
 #: ../../config/configuration.rst:54
 msgid "Picard will rename each file in accordance with the naming script."
 msgstr ""
+"Picard canviarà el nom de cada fitxer d'acord amb l'script de nom dels "
+"fitxers."
 
 #: ../../config/configuration.rst:56
 msgid "**Move Files**"
-msgstr ""
+msgstr "**Mou els fitxers**"
 
 #: ../../config/configuration.rst:58
 msgid "Picard will move files to the target directory in accordance with the naming script."
 msgstr ""
+"Picard mourà els fitxers al directori de destinació d'acord amb l'script de "
+"nom dels fitxers."
 
 #: ../../config/configuration.rst:60
 msgid "**Save Tags**"
-msgstr ""
+msgstr "**Desa les etiquetes**"
 
 #: ../../config/configuration.rst:62
 msgid "Picard will update the metadata tags in the files in accordance with the specified option settings and tagging scripts."
 msgstr ""
+"Picard actualitzarà les etiquetes de metadades dels fitxers d'acord amb els "
+"paràmetres i scripts d'etiquetatge especificats."
 
 #: ../../config/configuration.rst:67
 msgid ":index:`Option Settings <see: option settings; configuration>`"
-msgstr ""
+msgstr ":index:`Paràmetres <see: paràmetres; configuració>`"
 
 #: ../../config/configuration.rst:69
 msgid "The option settings are found under the :menuselection:`\"Options --> Options...\"` item on the menu bar. On macOS they can be accessed with :menuselection:`\"MusicBrainz Picard --> Preferences...\"`. This will open a new window with the option groups listed in a tree format on the left hand side, and the individual settings on the right hand side. This is where the majority of Picard's customization is performed."
 msgstr ""
+"Els paràmetres són a l'element :menuselection:`«Opcions --> Opcions...»` de "
+"la barra de menú. Al macOS s'hi pot accedir amb :menuselection:`«MusicBrainz "
+"Picard --> Preferències...»`. Això obrirà una finestra nova amb els grups "
+"d'opcions en format d'arbre a l'esquerra i els paràmetres individuals a la "
+"dreta. Aquí és on es pot personalitzar la major part del comportament de "
+"Picard."
 
 #: ../../config/configuration.rst:75
 msgid "When running your code from the source in a macOS environment, you can access the option settings by navigating to the :menuselection:`\"Python --> Preferences...\"` option in the menu bar. This allows you to configure and customize various settings for your development environment."
 msgstr ""
+"En executar el programa des del codi font en un entorn macOS podeu accedir "
+"als paràmetres navegant a l'opció :menuselection:`«Python --> "
+"Preferències...»` de la barra de menú. Això us permet configurar i "
+"personalitzar diversos paràmetres de l'entorn de desenvolupament."
 
 #: ../../config/configuration.rst:84
 msgid "In addition to the basic \"user settings\", this is also where option setting changes are made to individual option profiles. This is covered in greater detail in the :doc:`/usage/option_profiles` section."
 msgstr ""
+"A més dels «paràmetres d'usuari» bàsics, aquí també és on es poden modificar "
+"els paràmetres de perfils d'opcions individuals. Això es tracta amb més "
+"detall a la secció :doc:`/usage/option_profiles`."
 
 #: ../../config/configuration.rst:87
 msgid "Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted. Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used during processing."
 msgstr ""
+"Els canvis aplicats als paràmetres d'un perfil d'opcions, l'estat "
+"d'habilitació o la posició a la llista de perfils es reflectiran als "
+"paràmetres que es mostren a la resta de pàgines. Les opcions controlades per "
+"un perfil habilitat es mostraran ressaltades. Si passeu el cursor sobre "
+"l'opció ressaltada, podreu identificar quin perfil controla el paràmetre "
+"actualment. Els paràmetres sempre es mostren en funció del primer perfil "
+"habilitat a la llista, que correspon al paràmetre que es farà servir durant "
+"el processament."
 
 #: ../../config/configuration.rst:115
 msgid ":doc:`/config/options_general` / :doc:`/config/options_profiles` / :doc:`/config/options_metadata` / :doc:`/config/options_tags` / :doc:`/config/options_cover` / :doc:`/config/options_filerenaming` / :doc:`/config/options_fingerprinting` / :doc:`/config/options_cdlookup` / :doc:`/config/options_plugins` / :doc:`/config/options_interface` / :doc:`/config/options_scripting` / :doc:`/config/options_advanced`"
 msgstr ""
+":doc:`/config/options_general` / :doc:`/config/options_profiles` / :doc:`/"
+"config/options_metadata` / :doc:`/config/options_tags` / :doc:`/config/"
+"options_cover` / :doc:`/config/options_filerenaming` / :doc:`/config/"
+"options_fingerprinting` / :doc:`/config/options_cdlookup` / :doc:`/config/"
+"options_plugins` / :doc:`/config/options_interface` / :doc:`/config/"
+"options_scripting` / :doc:`/config/options_advanced`"
