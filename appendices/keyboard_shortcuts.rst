@@ -53,6 +53,7 @@ View
 
    "Toggle file browser", :kbd:`Ctrl+B`, :kbd:`⌘+B`
    "Toggle metadata view", :kbd:`Ctrl+Shift+M`, :kbd:`⌘+⇧+M`
+   "Toggle filter view", :kbd:`Ctrl+Shift+F`, :kbd:`⌘+⇧+F`
 
 Options
 +++++++
