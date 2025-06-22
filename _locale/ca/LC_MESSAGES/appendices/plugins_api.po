@@ -2,38 +2,46 @@
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Marc Riera <marc@marcriera.cat>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-06-22 23:20+0000\n"
+"Last-Translator: Marc Riera <marc@marcriera.cat>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
+"picard-docs/appendicesplugins_api/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #: ../../appendices/plugins_api.rst:4
 msgid ":index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API <pair: plugins; api>`"
 msgstr ""
+":index:`Annex A <pair: connectors; programació>`: :index:`API dels "
+"connectors <pair: connectors; api>`"
 
 #: ../../appendices/plugins_api.rst:7
 msgid ":index:`Plugin Metadata <plugins; metadata>`"
-msgstr ""
+msgstr ":index:`Metadades del connector <connectors; metadades>`"
 
 #: ../../appendices/plugins_api.rst:9
 msgid "Each plugin must provide some metadata as variables. Those variables should be placed at the top of the file."
 msgstr ""
+"Cada connector ha de proporcionar algunes metadades com a variables. "
+"Aquestes variables s'han de definir a l'inici del fitxer."
 
 #: ../../appendices/plugins_api.rst:29
 msgid "Variables explanation:"
-msgstr ""
+msgstr "Explicació de les variables:"
 
 #: ../../appendices/plugins_api.rst:31
 msgid "**PLUGIN_NAME** should be a short but descriptive name for the plugin."
-msgstr ""
+msgstr "**PLUGIN_NAME** ha de ser un nom breu però descriptiu del connector."
 
 #: ../../appendices/plugins_api.rst:33
 msgid "**PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function. If your plugin targets Picard 2.7 or later you can use `Markdown <https://daringfireball.net/projects/markdown/>`_ syntax to format the text.  If your plugin targets earlier versions you can instead use simple HTML formatting. Please restrict the usage of HTML to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists (``<ul>``, ``<ol>``)."
@@ -54,6 +62,7 @@ msgstr ""
 #: ../../appendices/plugins_api.rst:50
 msgid "**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text."
 msgstr ""
+"**PLUGIN_LICENSE_URL** ha de ser un URL al text complet de la llicència."
 
 #: ../../appendices/plugins_api.rst:52
 msgid "**PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the documentation for the plugin.  This variable is optional and may be omitted.  If a URL is provided, it will be shown as a clickable link in the description displayed for the plugin in the Plugins option settings screen."
@@ -62,6 +71,7 @@ msgstr ""
 #: ../../appendices/plugins_api.rst:58
 msgid ":index:`Metadata Processors <plugins; metadata processors>`"
 msgstr ""
+":index:`Processadors de metadades <connectors; processadors de metadades>`"
 
 #: ../../appendices/plugins_api.rst:60
 msgid "MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to the processor functions in the following examples are as follows:"
