@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2025-06-22 23:20+0000\n"
+"PO-Revision-Date: 2025-06-29 20:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/"
 "picard-docs/appendicesplugins_api/ca/>\n"
@@ -46,18 +46,39 @@ msgstr "**PLUGIN_NAME** ha de ser un nom breu però descriptiu del connector."
 #: ../../appendices/plugins_api.rst:33
 msgid "**PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function. If your plugin targets Picard 2.7 or later you can use `Markdown <https://daringfireball.net/projects/markdown/>`_ syntax to format the text.  If your plugin targets earlier versions you can instead use simple HTML formatting. Please restrict the usage of HTML to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists (``<ul>``, ``<ol>``)."
 msgstr ""
+"**PLUGIN_DESCRIPTION** ha de ser tan senzill com sigui possible i alhora "
+"descriure la funció principal. Si el connector està dissenyat per a Picard "
+"2.7 o posterior, podeu fer servir sintaxi `Markdown <https://"
+"daringfireball.net/projects/markdown/>`_ per a formatar el text.  Si el "
+"connector està dissenyat per a versions anteriors, podeu fer servir format "
+"HTML senzill. Limiteu l'ús d'HTML a format de text bàsic (p. ex., "
+"``<strong>``, ``<em>``), enllaços (``<a>``) i llistes (``<ul>``, ``<ol>``)."
 
 #: ../../appendices/plugins_api.rst:39
 msgid "**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_."
 msgstr ""
+"**PLUGIN_VERSION** ha de contenir la versió del connector. Les versions dels "
+"connectors han de seguir el format ``x.y.z`` (p. ex., «1.0» o «2.12.4»). Es "
+"recomana que feu servir la `numeració de versions semàntica <https://"
+"semver.org/>`_."
 
 #: ../../appendices/plugins_api.rst:42
 msgid "**PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin to run with. New Picard versions will usually support older plugin API versions, but on breaking changes support for older plugin versions can be dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
 msgstr ""
+"**PLUGIN_API_VERSIONS** ha de contenir les versions de Picard amb què "
+"s'executarà el connector. Les versions de Picard noves normalment seran "
+"compatibles amb versions anteriors de l'API de connectors, però la "
+"compatibilitat amb versions anteriors dels connectors pot desaparèixer si hi "
+"ha canvis de funcionament. Les versions disponibles per a Picard 2 són «2.0»"
+", «2.1» i «2.2»."
 
 #: ../../appendices/plugins_api.rst:46
 msgid "**PLUGIN_LICENSE** should be set with the license name of the plugin. If possible use one of the license names from the `SPDX License List <https://spdx.org/licenses/>`_, but you are welcomed to use another license if the one you chose is not available in the list."
 msgstr ""
+"**PLUGIN_LICENSE** ha de contenir el nom de la llicència del connector. Si "
+"és possible, feu servir un nom de llicència de la `llista de llicències de "
+"l'SPDX <https://spdx.org/licenses/>`_, però podeu fer-ne servir un altre si "
+"la llicència que heu triat no està disponible a la llista."
 
 #: ../../appendices/plugins_api.rst:50
 msgid "**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text."
@@ -67,6 +88,10 @@ msgstr ""
 #: ../../appendices/plugins_api.rst:52
 msgid "**PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the documentation for the plugin.  This variable is optional and may be omitted.  If a URL is provided, it will be shown as a clickable link in the description displayed for the plugin in the Plugins option settings screen."
 msgstr ""
+"**PLUGIN_USER_GUIDE_URL** ha de contenir un URL a la documentació del "
+"connector.  Aquesta variable és opcional i es pot ometre.  Si es proporciona "
+"un URL, es mostrarà com a enllaç clicable a la descripció del connector a la "
+"pantalla de paràmetres dels connectors."
 
 #: ../../appendices/plugins_api.rst:58
 msgid ":index:`Metadata Processors <plugins; metadata processors>`"
@@ -76,123 +101,168 @@ msgstr ""
 #: ../../appendices/plugins_api.rst:60
 msgid "MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to the processor functions in the following examples are as follows:"
 msgstr ""
+"Les metadades de MusicBrainz es poden postprocessar en dos nivells, àlbum i "
+"pista. Els tipus d'arguments especificats per a les funcions de processament "
+"dels exemples següents són:"
 
 #: ../../appendices/plugins_api.rst:63
 msgid "**album**: ``picard.album.Album``"
-msgstr ""
+msgstr "**àlbum**: ``picard.album.Album``"
 
 #: ../../appendices/plugins_api.rst:64
 msgid "**metadata**: ``picard.metadata.Metadata``"
-msgstr ""
+msgstr "**metadades**: ``picard.metadata.Metadata``"
 
 #: ../../appendices/plugins_api.rst:65
 msgid "**release**: ``dict`` with release data from MusicBrainz JSON web service"
 msgstr ""
+"**publicació**: ``dict`` amb les dades d'una publicació del servei web JSON "
+"de MusicBrainz"
 
 #: ../../appendices/plugins_api.rst:66
 msgid "**track**: ``dict`` with track data from MusicBrainz JSON web service"
 msgstr ""
+"**pista**: ``dict`` amb les dades d'una pista del servei web JSON de "
+"MusicBrainz"
 
 #: ../../appendices/plugins_api.rst:70
 msgid "Album metadata example:"
-msgstr ""
+msgstr "Exemple de metadades d'un àlbum:"
 
 #: ../../appendices/plugins_api.rst:91
 msgid "Track metadata example:"
-msgstr ""
+msgstr "Exemple de metadades d'una pista:"
 
 #: ../../appendices/plugins_api.rst:109
 msgid ":index:`Event Hooks <pair: plugins; event hooks>`"
 msgstr ""
+":index:`Ganxos d'esdeveniment <pair: connectors; ganxos d'esdeveniment>`"
 
 #: ../../appendices/plugins_api.rst:111
 msgid "Plugins can register themselves to listen for different events. Currently the following event hooks are available:"
 msgstr ""
+"Els connectors es poden registrar per a escoltar diferents esdeveniments. "
+"Actualment, hi ha disponibles els ganxos d'esdeveniment següents:"
 
 #: ../../appendices/plugins_api.rst:114
 msgid "file_post_load_processor(file)"
-msgstr ""
+msgstr "file_post_load_processor(fitxer)"
 
 #: ../../appendices/plugins_api.rst:116
 msgid "This hook is called after a file has been loaded into Picard. This could for example be used to load additional data for a file. Usage:"
 msgstr ""
+"Aquest ganxo es crida després de carregar un fitxer a Picard. Es pot fer "
+"servir, per exemple, per a carregar dades addicionals d'un fitxer. Ús:"
 
 #: ../../appendices/plugins_api.rst:130
 msgid "file_post_save_processor(file)"
-msgstr ""
+msgstr "file_post_save_processor(fitxer)"
 
 #: ../../appendices/plugins_api.rst:132
 msgid "This hook is called after a file has been saved. This can for example be used to run additional post-processing on the file or write extra data. Note that the file's metadata is already the newly saved metadata. Usage:"
 msgstr ""
+"Aquest ganxo es crida després de desar un fitxer. Això es pot fer servir, "
+"per exemple, per a executar un postprocessament addicional sobre el fitxer o "
+"escriure-hi dades addicionals. Tingueu en compte que les metadades del "
+"fitxer ja són les metadades acabades de desar. Ús:"
 
 #: ../../appendices/plugins_api.rst:146
 msgid "file_post_addition_to_track_processor(track, file)"
-msgstr ""
+msgstr "file_post_addition_to_track_processor(pista, fitxer)"
 
 #: ../../appendices/plugins_api.rst:148
 msgid "This hook is called after a file has been added to a track (on the right-hand pane of Picard)."
 msgstr ""
+"Aquest ganxo es crida després d'afegir un fitxer a una pista (a la "
+"subfinestra dreta de Picard)."
 
 #: ../../appendices/plugins_api.rst:161
 msgid "file_post_removal_from_track_processor(track, file)"
-msgstr ""
+msgstr "file_post_removal_from_track_processor(pista, fitxer)"
 
 #: ../../appendices/plugins_api.rst:163
 msgid "This hook is called after a file has been removed from a track (on the right-hand pane of Picard)."
 msgstr ""
+"Aquest ganxo es crida després de suprimir un fitxer d'una pista (a la "
+"subfinestra dreta de Picard)."
 
 #: ../../appendices/plugins_api.rst:176
 msgid "album_post_removal_processor(album)"
-msgstr ""
+msgstr "album_post_removal_processor(àlbum)"
 
 #: ../../appendices/plugins_api.rst:178
 msgid "This hook is called after an album has been removed from Picard."
-msgstr ""
+msgstr "Aquest ganxo es crida després de suprimir un àlbum de Picard."
 
 #: ../../appendices/plugins_api.rst:192
 msgid "Event hooks have been available since API version 2.2."
 msgstr ""
+"Els ganxos d'esdeveniment han estat disponibles des de la versió 2.2 de "
+"l'API."
 
 #: ../../appendices/plugins_api.rst:196
 msgid ":index:`File Formats <pair: plugins; file format>`"
-msgstr ""
+msgstr ":index:`Formats de fitxer <pair: connectors; format de fitxer>`"
 
 #: ../../appendices/plugins_api.rst:198
 msgid "Plugins can extend Picard with support for additional file formats. See the existing `file format implementations <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for details on how to implement the ``_load`` and ``_save`` methods. Example:"
 msgstr ""
+"Els connectors poden ampliar Picard amb compatibilitat amb formats de fitxer "
+"addicionals. Consulteu les `implementacions de formats de fitxer <https://"
+"github.com/metabrainz/picard/tree/master/picard/formats>`_ existents per a "
+"veure més detalls sobre com implementar els mètodes ``_load`` i ``_save``. "
+"Exemple:"
 
 #: ../../appendices/plugins_api.rst:236
 msgid ":index:`Tagger Script Functions <pair: scripting functions; plugins>`"
 msgstr ""
+":index:`Funcions de scripts d'etiquetatge <pair: funcions de scripts; "
+"connectors>`"
 
 #: ../../appendices/plugins_api.rst:238
 msgid "To define new tagger script functions use ``register_script_function(function, name=None)`` from the ``picard.script`` module. ``parser`` is an instance of ``picard.script.ScriptParser``, and the rest of the arguments passed to it are the arguments from the function call in the tagger script. Example:"
 msgstr ""
+"Per a definir funcions noves de scripts d'etiquetatge, feu servir "
+"``register_script_function(funció, name=None)`` del mòdul ``picard.script`. "
+"``parser`` és una instància de ``picard.script.ScriptParser`` i la resta "
+"d'arguments especificats són els arguments de la crida a la funció a "
+"l'script d'etiquetatge. Exemple:"
 
 #: ../../appendices/plugins_api.rst:260
 msgid "``register_script_function`` supports two optional arguments:"
-msgstr ""
+msgstr "``register_script_function`` admet dos arguments opcionals:"
 
 #: ../../appendices/plugins_api.rst:262
 msgid "**eval_args**: If this is **False**, the arguments will not be evaluated before being passed to **function**."
 msgstr ""
+"**eval_args**: si això és **False**, els arguments no s'avaluaran abans d"
+"'enviar-se a **funció**."
 
 #: ../../appendices/plugins_api.rst:263
 msgid "**check_argcount**: If this is **False** the number of arguments passed to the function will not be verified."
 msgstr ""
+"**check_argcount**: si això és **False**, no es comprovarà el nombre "
+"d'arguments enviats a la funció."
 
 #: ../../appendices/plugins_api.rst:265
 msgid "The default value for both arguments is **True**."
-msgstr ""
+msgstr "El valor per defecte de tots dos arguments és **True**."
 
 #: ../../appendices/plugins_api.rst:269
 msgid ":index:`Context Menu Actions <pair: plugins; context menu actions>`"
 msgstr ""
+":index:`Accions del menú contextual <pair: connectors; accions del menú "
+"contextual>`"
 
 #: ../../appendices/plugins_api.rst:271
 msgid "Right-click context menu actions can be added to albums, tracks and files in \"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of Clusters). Example:"
 msgstr ""
+"Es poden afegir accions al menú contextual de clic dret per a àlbums, pistes "
+"i fitxers a «Fitxers sense coincidències», «Agrupacions» i «Llista "
+"d'agrupacions» (la carpeta principal de les agrupacions). Exemple:"
 
 #: ../../appendices/plugins_api.rst:300
 msgid "Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", \"*cluster*\" or \"*clusterlist*\"."
 msgstr ""
+"Feu servir ``register_x_action``, on «x» és «*album*», «*track*», «*file*», "
+"«*cluster*» or «*clusterlist*»."

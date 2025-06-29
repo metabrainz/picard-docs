@@ -2,155 +2,235 @@
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+# Marc Riera <marc@marcriera.cat>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-06-29 20:20+0000\n"
+"Last-Translator: Marc Riera <marc@marcriera.cat>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
+"picard-docs/configoptions_filerenaming_editor/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #: ../../config/options_filerenaming_editor.rst:6
 msgid ":index:`File Naming Script Editor <pair: file naming; script editor>`"
 msgstr ""
+":index:`Editor de scripts de nom dels fitxers <pair: nom dels fitxers; "
+"editor de scripts>`"
 
 #: ../../config/options_filerenaming_editor.rst:8
 msgid "The file naming script editor is used to manage the file naming scripts available for use by Picard. Each script has a title that will show up in the script selection box, and all listed scripts can be edited by the user."
 msgstr ""
+"L'editor de scripts de nom dels fitxers es fa servir per a administrar els "
+"scripts de nom dels fitxers disponibles per a l'ús a Picard. Cada script té "
+"un títol que es mostrarà al quadre de selecció de script i l'usuari pot "
+"editar tots els scripts de la llista."
 
 #: ../../config/options_filerenaming_editor.rst:15
 msgid "The editor screen has the following sections:"
-msgstr ""
+msgstr "La pantalla de l'editor té les seccions següents:"
 
 #: ../../config/options_filerenaming_editor.rst:17
 msgid "**Select the file naming script to use**"
-msgstr ""
+msgstr "**Seleccioneu l'script de noms dels fitxers que voleu fer servir**"
 
 #: ../../config/options_filerenaming_editor.rst:19
 msgid "This option allows the user to select the file naming script to use from the list of scripts available. The selected script will show up in the editing section, where it can be modified if required."
 msgstr ""
+"Aquesta opció permet a l'usuari seleccionat l'script de nom dels fitxers que "
+"es vol fer servir de la llista de scripts disponibles. L'script seleccionat "
+"es mostrarà a la secció d'edició, on es pot modificar, si cal."
 
 #: ../../config/options_filerenaming_editor.rst:22
 msgid "**Title**"
-msgstr ""
+msgstr "**Títol**"
 
 #: ../../config/options_filerenaming_editor.rst:24
 msgid "The title assigned to the currently selected script. This can be modified if required."
 msgstr ""
+"Títol assignat a l'script seleccionat actualment. Això es pot modificar, si "
+"cal."
 
 #: ../../config/options_filerenaming_editor.rst:26
 msgid "**Script**"
-msgstr ""
+msgstr "**Script**"
 
 #: ../../config/options_filerenaming_editor.rst:28
 msgid "Below the title is an edit box section containing the :index:`formatting string <scripts; file naming>` of the selected script. This tells Picard what the new name of the file and its containing directories should be in terms of various metadata values. The formatting string is generally referred to as a \"file naming script\", and is in :doc:`Picard's scripting language </extending/scripting>`."
 msgstr ""
+"Sota el títol hi ha una secció amb un quadre d'edició que conté la :index:`"
+"cadena de format <scripts; nom dels fitxers>` de l'script seleccionat. Això "
+"indica a Picard quin ha de ser el nom del fitxer i dels directoris segons "
+"diversos valors de metadades. Generalment, es fa referència a la cadena de "
+"format com a «script de nom dels fitxers» i està escrita en el :doc:`"
+"llenguatge de scripts de Picard </extending/scripting>`."
 
 #: ../../config/options_filerenaming_editor.rst:33
 msgid "The script editor automatically highlights the elements of the script, including :doc:`function names </functions/list_by_type>` and :doc:`tag and variable names </variables/variables>`. Hovering your mouse pointer over one of the highlighted entries will display help information about the entry if available."
 msgstr ""
+"L'editor de scripts ressalta automàticament els elements de l'script, "
+"incloent-hi els :doc:`noms de les funcions </functions/list_by_type>` i els "
+":doc:`noms de les etiquetes i les variables </variables/variables>`. Si "
+"passeu el cursor sobre una de les entrades ressaltades, es mostrarà "
+"informació d'ajuda sobre l'entrada si està disponible."
 
 #: ../../config/options_filerenaming_editor.rst:38
 msgid "Unicode characters can be entered into the script using the format ``\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode character.  It is not recommended to include unicode characters in the directory or filename."
 msgstr ""
+"Es poden introduir caràcters Unicode a l'script amb el format ``\\uXXXX``, "
+"on «XXXX» és el valor hexadecimal del caràcter Unicode.  No es recomana "
+"incloure caràcters Unicode al nom del directori o del fitxer."
 
 #: ../../config/options_filerenaming_editor.rst:41
 msgid "The use of a '/' in the formatting string separates the output directory from the file name. The formatting string is allowed to contain any number of '/' characters. Everything before the last '/' is the directory location, and everything after the last '/' becomes the file's name."
 msgstr ""
+"L'ús de «/» a la cadena de format separa el directori de sortida del nom del "
+"fitxer. Es permet que la cadena de format contingui qualsevol nombre de "
+"caràcters «/». Tot el que hi ha abans del darrer «/» és la ubicació del "
+"directori i tot el que hi ha després és el nom del fitxer."
 
 #: ../../config/options_filerenaming_editor.rst:45
 msgid "Each file naming script can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script."
 msgstr ""
+"Els scripts de nom dels fitxers poden variar d'un script senzill d'una sola "
+"línia com ara ``%album%/%title%`` a un script molt complex amb diferents "
+"formats de nom dels fitxers segons criteris diferents. En qualsevol cas, els "
+"fitxers es desaran amb la sortida de text de l'script."
 
 #: ../../config/options_filerenaming_editor.rst:49
 msgid "Scripts are often discussed in the `MetaBrainz Community Forum <https://community.metabrainz.org/>`_, and there is a thread specific to `file naming and script snippets <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_. There is also a tutorial on :doc:`/tutorials/naming_script` available."
 msgstr ""
+"Sovint es parla de scripts al `fòrum de la comunitat de MetaBrainz <https://"
+"community.metabrainz.org/>`_ i hi ha un fil específic de `nom dels fitxers i "
+"fragments de scripts <https://community.metabrainz.org/t/"
+"repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/"
+"2786/>`_. També hi ha un tutorial disponible a :doc:`/tutorials/"
+"naming_script`."
 
 #: ../../config/options_filerenaming_editor.rst:56
 msgid "Any new tags set or tags modified by the file naming script will not be written to the output files' metadata."
 msgstr ""
+"Qualsevol etiqueta nova o modificada per l'script de nom dels fitxers no "
+"s'escriurà a les metadades dels fitxers de sortida."
 
 #: ../../config/options_filerenaming_editor.rst:58
 msgid "**Files will be named like this**"
-msgstr ""
+msgstr "**El nom dels fitxers serà el següent**"
 
 #: ../../config/options_filerenaming_editor.rst:60
 msgid "Below the file naming script is a section showing examples of the output of the script in two columns: Before and After.  If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files will be randomly chosen from your selection as file naming examples.  If you have not selected any files, then some default examples will be provided."
 msgstr ""
+"Sota l'script de nom dels fitxers hi ha una secció que mostra exemples de la "
+"sortida de l'script en dues columnes: «Abans» i «Després».  Si seleccioneu "
+"fitxers de la subfinestra «Agrupació» o «Àlbum» abans d'obrir les opcions, "
+"es triaran fins a 10 fitxers de la selecció a l'atzar com a exemples de nom "
+"dels fitxers.  Si no heu seleccionat cap fitxer, es mostraran alguns "
+"exemples per defecte."
 
 #: ../../config/options_filerenaming_editor.rst:65
 msgid "**Menu bar**"
-msgstr ""
+msgstr "**Barra de menú**"
 
 #: ../../config/options_filerenaming_editor.rst:67
 msgid "At the top of the screen is a menu bar that provides script management functions as well as display settings options. The display settings include:"
 msgstr ""
+"A la part superior de la pantalla hi ha una barra de menú que proporciona "
+"funcions d'administració dels scripts i paràmetres de visualització. Els "
+"paràmetres de visualització inclouen:"
 
 #: ../../config/options_filerenaming_editor.rst:70
 msgid "Word wrap script - This will toggle word wrap on and off in the script edit box."
 msgstr ""
+"Ajusta les línies de l'script: això activarà o desactivarà l'ajustament de "
+"les línies al quadre d'edició de l'script."
 
 #: ../../config/options_filerenaming_editor.rst:71
 msgid "Show help tooltips - This will determine whether or not the information is displayed when hovering over a highlighted item."
 msgstr ""
+"Mostra els indicadors de funció d'ajuda: això determina si es mostra o no "
+"informació en passar el cursor sobre un element ressaltat."
 
 #: ../../config/options_filerenaming_editor.rst:72
 msgid "Show documentation - This will toggle displaying the scripting documentation in a sidebar on the screen."
 msgstr ""
+"Mostra la documentació: això activarà o desactivarà la documentació dels "
+"scripts en una barra lateral a la pantalla."
 
 #: ../../config/options_filerenaming_editor.rst:74
 msgid "There is also an option to update the randomly selected example files from your selected files list."
 msgstr ""
+"També hi ha una opció per a actualitzar els fitxers d'exemple seleccionats a "
+"l'atzar a partir de la llista de fitxers seleccionats."
 
 #: ../../config/options_filerenaming_editor.rst:76
 msgid "The script management functionality includes:"
-msgstr ""
+msgstr "La funcionalitat d'administració de scripts inclou:"
 
 #: ../../config/options_filerenaming_editor.rst:78
 msgid "Import a new script from a file, either as a plain-text script or a Picard Naming Script Package."
 msgstr ""
+"Importar un script nou des d'un fitxer, sigui un script de text sense "
+"formato un paquet de script de nom dels fitxers de Picard."
 
 #: ../../config/options_filerenaming_editor.rst:79
 msgid "Export the current script to a file, either as a plain-text script or a Picard Naming Script Package."
 msgstr ""
+"Exportar l'script actual a un fitxer, sigui un script de text sense format o "
+"un paquet de script de nom dels fitxers de Picard."
 
 #: ../../config/options_filerenaming_editor.rst:80
 msgid "Add a new (default) script.  This can be a blank script or one of the basic system preset scripts provided by Picard."
 msgstr ""
+"Afegir un script nou (per defecte).  Pot ser un script en blanc o un dels "
+"scripts bàsics predefinits del sistema que proporciona Picard."
 
 #: ../../config/options_filerenaming_editor.rst:81
 msgid "Copy the current script as a new script."
-msgstr ""
+msgstr "Copiar l'script actual com a script nou."
 
 #: ../../config/options_filerenaming_editor.rst:82
 msgid "Delete the current script."
-msgstr ""
+msgstr "Suprimir l'script actual."
 
 #: ../../config/options_filerenaming_editor.rst:83
 msgid "Reset all scripts, also available via the :guilabel:`Reset` button."
 msgstr ""
+"Reinicialitzar tots els scripts, disponible també amb el botó "
+":guilabel:`Reinicialitza`."
 
 #: ../../config/options_filerenaming_editor.rst:84
 msgid "Save all changes, also available via the :guilabel:`Make It So!` button."
-msgstr ""
+msgstr "Desar tots els canvis, disponible també amb el botó :guilabel:`Aplica`."
 
 #: ../../config/options_filerenaming_editor.rst:85
 msgid "Exit without saving changes, also available via the :guilabel:`Cancel` button."
 msgstr ""
+"Sortir sense desar els canvis, disponible també amb el botó "
+":guilabel:`Cancel·la`."
 
 #: ../../config/options_filerenaming_editor.rst:87
 msgid "**Script Metadata**"
-msgstr ""
+msgstr "**Metadades de l'script**"
 
 #: ../../config/options_filerenaming_editor.rst:97
 msgid "There is also an option to view/edit the metadata details for the current script. These details include such things as title, author, version, license, description, and date and time of the last update. It is recommended that the description include things such as any required plugins, settings, or tagging scripts.  This can also be triggered by double clicking the script title text box."
 msgstr ""
+"També hi ha una opció per a veure/editar els detalls de les metadades de "
+"l'script actual. Aquests detalls inclouen el títol, l'autor, la versió, la "
+"llicència, la descripció i la data i hora de la darrera actualització. Es "
+"recomana que la descripció inclogui detalls com els connectors, paràmetres o "
+"scripts d'etiquetatge necessaris.  Això també es pot obrir fent doble clic "
+"en el quadre de text del títol de l'script."
 
 #: ../../config/options_filerenaming_editor.rst:102
 msgid "This information is saved in the Picard Naming Script Package file, and is included when a script package file is imported."
 msgstr ""
+"Aquesta informació es desa al fitxer de paquet de script de nom dels fitxers "
+"de Picard i s'inclou quan s'importa un fitxer de paquet de script."
