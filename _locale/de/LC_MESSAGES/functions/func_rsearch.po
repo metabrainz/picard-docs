@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-08-04 18:11-0600\n"
 "PO-Revision-Date: 2023-08-26 10:27+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/picard-"
@@ -23,7 +23,7 @@ msgid "$rsearch"
 msgstr ""
 
 #: ../../functions/func_rsearch.rst:8
-msgid "Usage: **$rsearch(text,pattern)**"
+msgid "Usage: **$rsearch(text,pattern[,group])**"
 msgstr ""
 
 #: ../../functions/func_rsearch.rst:9
@@ -53,7 +53,21 @@ msgid ""
 "captured by the whole search expression will be returned."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:26
+#: ../../functions/func_rsearch.rst:24
+msgid ""
+"If the optional ``group`` parameter is not provided or is empty, return the "
+"first capture group which matched something (including the empty string) or "
+"the entire match."
+msgstr ""
+
+#: ../../functions/func_rsearch.rst:28
+msgid ""
+"If ``group`` is an integer, return the capture group in the position "
+"matching this integer. Otherwise, return the capture group named ``group``, "
+"sans surrounding whitespace."
+msgstr ""
+
+#: ../../functions/func_rsearch.rst:33
 msgid ""
 "When entering regular expressions into Picard scripts you have to escape a "
 "backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
@@ -64,10 +78,14 @@ msgid ""
 "\\.]*\\)\\$``."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:32
+#: ../../functions/func_rsearch.rst:41
+msgid "The ``group`` argument was added in Picard v2.14."
+msgstr ""
+
+#: ../../functions/func_rsearch.rst:43
 msgid "**Example:**"
 msgstr "**Beispiel:**"
 
-#: ../../functions/func_rsearch.rst:34
+#: ../../functions/func_rsearch.rst:45
 msgid "The following statements will return the values indicated:"
 msgstr "Die folgenden Ausdrücke geben den angegebenen Wert zurück:"
