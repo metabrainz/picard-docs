@@ -92,7 +92,6 @@ plugins and tutorials are provided when available rather than trying to reproduc
    /tutorials/acoustid
    /tutorials/multiple_release_countries
    /tutorials/write_plugin
-   /tutorials/android_app
 
 
 .. toctree::
