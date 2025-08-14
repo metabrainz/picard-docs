@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2025-06-22 23:20+0000\n"
+"PO-Revision-Date: 2025-08-14 11:36+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/"
 "picard-docs/configoptions_tags_compatibility_aac/ca/>\n"
@@ -21,11 +21,17 @@ msgstr ""
 
 #: ../../config/options_tags_compatibility_aac.rst:4
 msgid ":index:`AAC Files <configuration; aac tag options>`"
-msgstr ""
+msgstr ":index:`Fitxers AAC <configuració; opcions de les etiquetes aac>`"
 
 #: ../../config/options_tags_compatibility_aac.rst:9
 msgid "Picard can save APEv2 tags to pure AAC files, which by default do not support tagging. APEv2 tags in AAC are supported by some players, but players not supporting AAC files with APEv2 tags can have issues loading and playing those files. To deal with this you can choose whether to save tags to those files:"
 msgstr ""
+"Picard pot desar etiquetes APEv2 en fitxers AAC purs, que per defecte no "
+"admeten les etiquetes. Alguns reproductors admeten les etiquetes APEv2 en "
+"fitxers AAC, però els reproductors que no admeten els fitxers AAC amb "
+"etiquetes APEv2 poden tenir problemes per a carregar i reproduir aquests "
+"fitxers. Per tant, podeu seleccionar si voleu desar etiquetes en aquests "
+"fitxers:"
 
 #: ../../config/options_tags_compatibility_aac.rst:13
 msgid "**Save APEv2 tags**"
@@ -33,7 +39,7 @@ msgstr "**Desa etiquetes APEv2**"
 
 #: ../../config/options_tags_compatibility_aac.rst:15
 msgid "Picard will save APEv2 tags to the files."
-msgstr ""
+msgstr "Picard desarà etiquetes APEv2 en els fitxers."
 
 #: ../../config/options_tags_compatibility_aac.rst:17
 msgid "**Do not save tags**"
@@ -42,6 +48,9 @@ msgstr "**No desis etiquetes**"
 #: ../../config/options_tags_compatibility_aac.rst:19
 msgid "Picard will not save any tags to the files, but you can still use Picard to rename them. By default existing APEv2 tags will be kept in the file."
 msgstr ""
+"Picard no desarà cap etiqueta en els fitxers, però encara podreu fer servir "
+"Picard per a canviar-ne el nom. Per defecte, les etiquetes APEv2 existents "
+"en els fitxers es conservaran."
 
 #: ../../config/options_tags_compatibility_aac.rst:22
 msgid "**Remove APEv2 tags**"
@@ -50,7 +59,11 @@ msgstr "**Suprimeix les etiquetes APEv2**"
 #: ../../config/options_tags_compatibility_aac.rst:24
 msgid "If you have \"Do not save tags\" enabled checking this option will cause Picard to remove existing APEv2 tags from the file on saving."
 msgstr ""
+"Si habiliteu «No desis les etiquetes» i marqueu aquesta opció, Picard "
+"suprimirà les etiquetes APEv2 existents del fitxer en desar-lo."
 
 #: ../../config/options_tags_compatibility_aac.rst:27
 msgid "Regardless of how you have configured saving tags Picard will always read existing APEv2 tags in AAC files."
 msgstr ""
+"Independentment de com hàgiu configurat el desament de les etiquetes, Picard "
+"sempre llegirà les etiquetes APEv2 existents dels fitxers AAC."
