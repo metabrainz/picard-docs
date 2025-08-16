@@ -113,7 +113,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -174,9 +173,17 @@
 <blockquote>
 <div><p>Variable à valeurs multiples contenant les noms des artistes de l’album. Ceux-ci peuvent être « standardisés » ou « tels que crédités » selon que l’option de métadonnées « Utiliser les noms d’artistes standardisés » est activée ou non. (<em>depuis Picard 1.3</em>)</p>
 </div></blockquote>
+<p><strong>_albumartists_countries</strong></p>
+<blockquote>
+<div><p>Variable à valeurs multiples contenant les codes pays de tous les artistes crédités de l’album, dans le même ordre que les artistes. Les codes de pays en double seront affichés s’il y a plus d’un artiste du même pays. Si un code pays n’est pas fourni par le webservice, le code « XX » sera utilisé pour indiquer un pays inconnu. Par exemple, si le premier artiste crédité vient de Grande-Bretagne et que deux autres artistes crédités viennent du Canada, la valeur sera « GB; CA; CA ».</p>
+</div></blockquote>
 <p><strong>_albumartists_sort</strong></p>
 <blockquote>
 <div><p>Une variable multi-valeurs contenant les noms de tri des artistes de l’album. (<em>depuis Picard 1.3</em>)</p>
+</div></blockquote>
+<p><strong>_artists_countries</strong></p>
+<blockquote>
+<div><p>Variable à valeurs multiples contenant les codes de pays de tous les artistes crédités de la piste, dans le même ordre que les artistes. Les codes de pays en double seront affichés s’il y a plus d’un artiste du même pays. Si un code pays n’est pas fourni par le webservice, le code « XX » sera utilisé pour indiquer un pays inconnu. Par exemple, si le premier artiste crédité vient de Grande-Bretagne et que deux autres artistes crédités viennent du Canada, la valeur sera « GB; CA; CA ».</p>
 </div></blockquote>
 <p><strong>_artists_sort</strong></p>
 <blockquote>
@@ -184,7 +191,7 @@
 </div></blockquote>
 <p><strong>_datatrack</strong></p>
 <blockquote>
-<div><p>Prend la valeur 1 si la piste est une « piste de données &lt;<a class="reference external" href="https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks">https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks</a>&gt;`_ », sinon vide. (<em>depuis Picard 1.3.1</em>)</p>
+<div><p>Prend la valeur 1 si la piste est une « <a class="reference external" href="https://wiki.musicbrainz.org/Style/Unknown_and_untitled/Special_purpose_track_title#Data_tracks">piste de données</a> », sinon vide. (<em>depuis Picard 1.3.1</em>)</p>
 </div></blockquote>
 <p><strong>_discpregap</strong></p>
 <blockquote>

@@ -185,7 +185,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Comprendre Empreintes acoustiques et AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Gestion de plusieurs pays de sortie</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Écriture d’un Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Chargement des parutions avec MusicBrainz pour Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutoriels vidéo</span></p>
 <ul>
@@ -233,15 +232,21 @@
   <div class="section" id="rsearch">
 <span id="func-rsearch"></span><h1>$rsearch<a class="headerlink" href="#rsearch" title="Lien permanent vers cette rubrique"></a></h1>
 <div class="line-block">
-<div class="line">Utilisation: <strong>$rsearch(texte,motif)</strong></div>
+<div class="line">Utilisation : <strong>$rsearch(texte,motif[,groupe])</strong></div>
 <div class="line">Catégorie : texte</div>
 </div>
 <p><strong>Description:</strong></p>
 <p>Recherche d’expression régulière. Cette fonction renverra le premier groupe correspondant spécifié par <code class="docutils literal notranslate"><span class="pre">motif</span></code> à partir de <code class="docutils literal notranslate"><span class="pre">texte</span></code>. Pour plus d’informations sur les expressions régulières, veuillez consulter <a class="reference external" href="https://wikipedia.org/wiki/Regular_expression">l’article sur Wikipedia</a>.</p>
 <p>Si une sous-expression marquée est définie à l’aide de parenthèses dans le modèle de recherche, seul le modèle capturé par la sous-expression sera renvoyé. Si plus d’une sous-expression marquée est définie et mise en correspondance, seul le modèle capturé par la première sous-expression sera renvoyé. Si plus d’une sous-expression marquée est définie et que toutes ne correspondent pas, une chaîne vide sera renvoyée. Si aucune sous-expression n’est spécifiée, le modèle capturé par l’expression de recherche entière sera retourné.</p>
+<p>Si le paramètre facultatif « group » n’est pas fourni ou est vide, renvoie le premier groupe de capture qui correspond à quelque chose (y compris la chaîne vide) ou la correspondance entière.</p>
+<p>Si « group » est un nombre entier, renvoie le groupe de capture à la position correspondant à ce nombre entier. Sinon, renvoie le groupe de capture nommé « group », sans les espaces blancs qui l’entourent.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Lorsque vous saisissez des expressions régulières dans des scripts Picard, vous devez échapper la barre oblique inversée « \ », le signe dollar « $ », la virgule « , » et les parenthèses gauche et droite « ( » et « ) » afin de forcer Picard à ne pas les interpréter comme faisant partie de la commande du script.  Cela se fait en insérant une barre oblique inverse avant le caractère à échapper.  Par exemple, l’expression régulière <code class="docutils literal notranslate"><span class="pre">^\s*([0-9,\.]*)$</span></code> doit être saisie comme <code class="docutils literal notranslate"><span class="pre">^\\s*\([0-9\,\\.]*\)\$</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’argument « group » a été ajouté dans Picard v2.14.</p>
 </div>
 <p><strong>Exemple:</strong></p>
 <p>Les instructions suivantes renverront les valeurs indiquées :</p>
@@ -254,6 +259,8 @@
 <span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*<span class="se">\(</span>s<span class="se">\)</span><span class="k">)</span>                      ==&gt;  &quot;e&quot;
 <span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*x<span class="k">)</span>                          ==&gt;  &quot;&quot;
 <span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*<span class="se">\(</span>x<span class="se">\)</span><span class="k">)</span>                      ==&gt;  &quot;&quot;
+<span class="k">$rsearch(</span>disc: 3,<span class="se">\(\\</span>w+<span class="se">\)</span>: <span class="se">\(\\</span>d+<span class="se">\)</span>,1<span class="k">)</span>           ==&gt;  &quot;disc&quot;
+<span class="k">$rsearch(</span>disc: 3,<span class="se">\(\\</span>w+<span class="se">\)</span>: <span class="se">\(\\</span>d+<span class="se">\)</span>,2<span class="k">)</span>           ==&gt;  &quot;3&quot;
 </pre></div>
 </div>
 </div>

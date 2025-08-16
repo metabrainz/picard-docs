@@ -184,7 +184,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/acoustid.html">Understanding Acoustic Fingerprinting and AcoustIDs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/multiple_release_countries.html">Handling of multiple release countries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/write_plugin.html">Writing a Plugin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/android_app.html">Loading releases with MusicBrainz for Android</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Video Tutorials</span></p>
 <ul>
@@ -232,7 +231,7 @@
   <div class="section" id="rsearch">
 <span id="func-rsearch"></span><h1>$rsearch<a class="headerlink" href="#rsearch" title="Permalink to this heading"></a></h1>
 <div class="line-block">
-<div class="line">Usage: <strong>$rsearch(text,pattern)</strong></div>
+<div class="line">Usage: <strong>$rsearch(text,pattern[,group])</strong></div>
 <div class="line">Category: text</div>
 </div>
 <p><strong>Description:</strong></p>
@@ -245,6 +244,11 @@ is defined and matched, only the pattern captured by the first subexpression wil
 If more than one marked subexpression is defined and not all are matched, an empty string will
 be returned.  If no subexpression is specified, then the pattern captured by the whole search
 expression will be returned.</p>
+<p>If the optional <code class="docutils literal notranslate"><span class="pre">group</span></code> parameter is not provided or is empty, return the first
+capture group which matched something (including the empty string) or the
+entire match.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">group</span></code> is an integer, return the capture group in the position matching this integer.
+Otherwise, return the capture group named <code class="docutils literal notranslate"><span class="pre">group</span></code>, sans surrounding whitespace.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When entering regular expressions into Picard scripts you have to escape a backslash “\”,
@@ -252,6 +256,10 @@ dollar sign “$”, comma “,” and the left and right parentheses “(” an
 Picard to not interpret them as part of the script command.  This is done by inserting
 a backslash before the character to be escaped.  For example, the regular expression
 <code class="docutils literal notranslate"><span class="pre">^\s*([0-9,\.]*)$</span></code> would have to be entered as <code class="docutils literal notranslate"><span class="pre">^\\s*\([0-9\,\\.]*\)\$</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">group</span></code> argument was added in Picard v2.14.</p>
 </div>
 <p><strong>Example:</strong></p>
 <p>The following statements will return the values indicated:</p>
@@ -264,6 +272,8 @@ a backslash before the character to be escaped.  For example, the regular expres
 <span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*<span class="se">\(</span>s<span class="se">\)</span><span class="k">)</span>                      ==&gt;  &quot;e&quot;
 <span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*x<span class="k">)</span>                          ==&gt;  &quot;&quot;
 <span class="k">$rsearch(</span>test,<span class="se">\(</span>e<span class="se">\)</span>.*<span class="se">\(</span>x<span class="se">\)</span><span class="k">)</span>                      ==&gt;  &quot;&quot;
+<span class="k">$rsearch(</span>disc: 3,<span class="se">\(\\</span>w+<span class="se">\)</span>: <span class="se">\(\\</span>d+<span class="se">\)</span>,1<span class="k">)</span>           ==&gt;  &quot;disc&quot;
+<span class="k">$rsearch(</span>disc: 3,<span class="se">\(\\</span>w+<span class="se">\)</span>: <span class="se">\(\\</span>d+<span class="se">\)</span>,2<span class="k">)</span>           ==&gt;  &quot;3&quot;
 </pre></div>
 </div>
 </div>
