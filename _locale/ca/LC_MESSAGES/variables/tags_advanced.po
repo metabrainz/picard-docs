@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../variables/tags_advanced.rst:33
+msgid ":index:`Advanced Tags <tags; advanced>`"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:35
+msgid "You can make additional tags available by enabling the :doc:`Use track relationships </config/options_metadata>` and/or the :doc:`Use genres from MusicBrainz </config/options_genres>` settings in Picard."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:37
+msgid "Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:41
+msgid "Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:45
+msgid "Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping </appendices/tag_mapping>` section for details."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:52
+msgid "Track Relationship Tags"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:54
+msgid "If you enable \"Use track relationships\" in the Option settings, you get these extra tags:"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:56
+msgid "**arranger**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:58
+msgid "The names of the arrangers associated with the track. These can include the instrument and orchestra arrangers, and could be associated with the release, recording or work. (*since Picard 0.10*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:60
+msgid "**composer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:62
+msgid "The names of the composers for the associated work."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:64
+msgid "**composersort**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:66
+msgid "The sort names of the composers for the associated work."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:68
+msgid "**conductor**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:70
+msgid "The names of the conductors associated with the track. These can include the conductor and chorus master, and could be associated with the release or recording."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:72
+msgid "**director**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:74
+msgid "The director of a track as provided by the *Video Director* or *Audio Director* relationship in MusicBrainz. (*Since Picard 2.6, updated in Picard 2.9*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:76
+msgid "**djmixer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:78
+msgid "The names of the DJ mixers for the track. (*since Picard 0.9*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:80
+msgid "**engineer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:82
+msgid "The names of the engineers associated with the track."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:84
+msgid "**language**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:86
+msgid "Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if a related work exists. (*since Picard 0.10*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:88
+msgid "**license**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:90
+msgid "The licenses associated with the track, either through the release or recording relationships. (*since Picard 1.0*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:92
+msgid "**lyricist**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:94
+msgid "The names of the lyricists for the associated work."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:96
+msgid "**mixer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:98
+msgid "The names of the \"*Mixed By*\" engineers associated with the track. (*since Picard 0.9*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:100
+msgid "**musicbrainz_workid**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:102
+msgid "The MBID for the Work if a related work exists."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:104
+msgid "**performer:<type>**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:106
+msgid "The names of the performers for the specified type. These types include:"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:108
+msgid "vocals or instruments for the associated release or recording, where <type> can be \"*vocal*\", \"*guest guitar*\", \"*solo violin*\", etc."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:110
+msgid "the orchestra for the associated release or recording, where <type> is \"*orchestra*\""
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:112
+msgid "the concert master for the associated release or recording, where <type> is \"*concertmaster*\""
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:114
+msgid "**producer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:116
+msgid "The names of the producers for the associated release or recording."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:118
+msgid "**remixer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:120
+msgid "The names of the remixer engineers associated with the track."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:122
+msgid "**work**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:124
+msgid "The name of the work associated with the track. (*since Picard 1.3*)"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:126
+msgid "**writer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:128
+msgid "A multi-value tag containing the names of the writers associated with the related work. (*since Picard 1.0*). This is not written to most file formats automatically. You can merge this with composers with a script like:"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:136
+msgid "Some tags such as **performer** are available as both track and release level relationships, and the values may be different depending on which relationship options are enabled."
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:142
+msgid ":index:`Genre Tags <tags; genre>`"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:144
+msgid "If you enable \"Use genres from MusicBrainz\", you get:"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:146
+msgid "**genre**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:148
+msgid "A multi-value tag containing the specified genre information from MusicBrainz (*since Picard 2.1, earlier versions used folksonomy tags*)"
+msgstr ""
