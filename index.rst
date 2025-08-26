@@ -53,7 +53,9 @@ plugins and tutorials are provided when available rather than trying to reproduc
    /usage/other
    /usage/option_profiles
    /usage/command_processing
+   /usage/custom_columns
    /extending/extending
+   /extending/custom_columns_api
    /faq/faq
 
 

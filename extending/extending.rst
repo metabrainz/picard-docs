@@ -27,3 +27,4 @@ Scripts are stored within the user settings, and are managed from the :menuselec
    plugins
    scripts
    processing
+   custom_columns_api
