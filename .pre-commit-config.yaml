@@ -13,7 +13,7 @@ repos:
     rev: v6.2.5
     hooks:
     - id: rstcheck
-      args: [--report-level=warning]
+      args: [--report-level=warning, "--ignore-directives=youtube,vimeo"]
       additional_dependencies: [sphinx]
   - repo: https://github.com/sphinx-contrib/sphinx-lint
     rev: v1.0.0
