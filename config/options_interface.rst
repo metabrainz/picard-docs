@@ -91,6 +91,7 @@
       Details:
       :doc:`options_interface_colors` /
       :doc:`options_interface_top_tags` /
+      :doc:`options_interface_quick_menu` /
       :doc:`options_interface_toolbar`
 
 .. toctree::
@@ -98,4 +99,5 @@
 
    options_interface_colors
    options_interface_top_tags
+   options_interface_quick_menu
    options_interface_toolbar
