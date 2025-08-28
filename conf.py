@@ -172,6 +172,8 @@ latex_elements = {
 \setmainfont{DejaVu Sans}
 \setsansfont{DejaVu Sans}
 \setmonofont{DejaVu Sans Mono}
+\setlength{\headheight}{14pt}
+\addtolength{\topmargin}{-1.6pt}
 \newcommand\sphinxbackoftitlepage{''' + my_notice + r'''}
 ''',
     'extraclassoptions': 'openany',
