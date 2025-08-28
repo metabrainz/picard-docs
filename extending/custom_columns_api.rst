@@ -16,7 +16,7 @@ Overview and Flow
 **Lifecycle at a glance**:
 
 - **Create**: Build a ``CustomColumn`` via factory helpers in ``picard.ui.itemviews.custom_columns.factory`` (e.g., ``make_field_column``, ``make_script_column``, ``make_callable_column``, ``make_transformed_column``) or construct ``CustomColumn`` with your own provider.
-- **Register**: Add the column to live views with ``registry.register(column, add_to_file_view=..., add_to_album_view=..., insert_after_key=...)``. This inserts into the mutable column collections used by the File/Album widgets.
+- **Register**: Add the column to live views with ``registry.register(column, add_to=..., insert_after_key=...)``. This inserts into the mutable column collections used by the File/Album widgets.
 - **Persist** (optional): Store UI-defined columns as specs using ``picard.ui.itemviews.custom_columns.storage``. Use ``CustomColumnSpec`` + ``register_and_persist(spec)`` to save to config and auto-register; ``load_persisted_columns_once()`` restores saved columns on startup.
 - **Paint** (Qt): Once registered, the column participates like any other. Values come from the provider's ``evaluate(item)``. The header and sections are owned by the Qt views; width/resize hints are applied during registration (see ``registry._apply_column_width_to_headers``). Painting is handled by the standard header; only image columns overlay custom paint.
 
@@ -72,7 +72,7 @@ Field reference column:
         width=80,
         align=ColumnAlign.RIGHT,
     )
-    registry.register(col, add_to_file_view=True, add_to_album_view=False, insert_after_key="length")
+    registry.register(col, add_to={"FILE_VIEW"}, insert_after_key="length")
 
 Script column:
 
@@ -86,7 +86,7 @@ Script column:
         width=280,
         align=ColumnAlign.LEFT,
     )
-    registry.register(col, add_to_album_view=True, insert_after_key="title")
+    registry.register(col, add_to={"ALBUM_VIEW"}, insert_after_key="title")
 
 Transformed base field:
 
@@ -120,13 +120,17 @@ Registration
 .. code-block:: python
 
     registry.register(column,
-                      add_to_file_view=True,
-                      add_to_album_view=True,
+                      add_to={"FILE_VIEW", "ALBUM_VIEW"},
                       insert_after_key="title")
 
 - Inserts into live UI collections (``FILEVIEW_COLUMNS``, ``ALBUMVIEW_COLUMNS``).
 - ``insert_after_key`` places the column after an existing key; falls back to append if not found.
 - Idempotent per ``key`` (re-registration replaces existing instances). Use ``registry.unregister(key)`` to remove.
+
+Notes:
+
+- ``add_to`` accepts any iterable of view identifiers (e.g. set, list, tuple). Recognized values are ``"FILE_VIEW"`` and ``"ALBUM_VIEW"``.
+- If ``add_to`` is omitted or ``None`` the column is added to both views.
 
 Sorting
 -------
@@ -221,8 +225,7 @@ Serialize specs to config and (optionally) auto-register columns.
         expression=script,
         width=280,
         align="LEFT",
-        add_to_file_view=False,
-        add_to_album_view=True,
+        add_to="ALBUM_VIEW",  # or "FILE_VIEW,ALBUM_VIEW" for both
         insert_after_key="title",
     )
     register_and_persist(spec)  # saves to config and registers in views
@@ -238,7 +241,7 @@ Notes:
 - ``CustomColumnSpec.align`` accepts "LEFT" or "RIGHT" (mapped to ``ColumnAlign``).
 - ``CustomColumnSpec.kind``: ``FIELD``, ``SCRIPT``, or ``TRANSFORM``.
 - ``TRANSFORM`` specs use ``expression`` as the base field and optional ``transform: TransformName``.
-- Registry insertion uses the spec's ``add_to_file_view``, ``add_to_album_view``, and ``insert_after_key``.
+- Registry insertion uses the spec's ``add_to`` (comma-separated string of view identifiers) and ``insert_after_key``.
 
 Field Keys and Scripting
 ------------------------
