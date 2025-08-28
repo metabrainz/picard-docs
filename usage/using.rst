@@ -55,3 +55,4 @@ There are four stages to using Picard to process your audio files:
    match
    coverart
    save
+   custom_columns
