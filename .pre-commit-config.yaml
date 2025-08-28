@@ -1,0 +1,28 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+      - id: trailing-whitespace
+        exclude: "(.*\\.(po|pot|svg|ui)$|test/data/.*)"
+      - id: end-of-file-fixer
+        exclude: "(.*\\.(po|pot|svg|ui)$|test/data/.*)"
+      - id: mixed-line-ending
+        exclude: "(.*\\.(po|pot|svg|ui)$|test/data/.*)"
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: v6.2.5
+    hooks:
+    - id: rstcheck
+      args: [--report-level=warning, "--ignore-directives=youtube,vimeo"]
+      additional_dependencies: [sphinx]
+  - repo: https://github.com/sphinx-contrib/sphinx-lint
+    rev: v1.0.0
+    hooks:
+    - id: sphinx-lint
+      files: \.rst$
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+    - id: rst-backticks        # Check for single backticks (should be double)
+    - id: rst-directive-colons # Check directive formatting
+    - id: rst-inline-touching-normal # Check inline markup spacing
