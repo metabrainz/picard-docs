@@ -3,7 +3,7 @@
 Custom Columns
 ==============
 
-Create your own columns in Picard's File and Album views to display additional information about your music files and albums. You can show a single tag (Field Reference) or the result of a Picard script (Script).
+Create your own columns in Picard's File and Album views to display additional information about your music files and albums. Enter a simple variable (e.g., ``%artist%``) or a full Picard script to compute the value shown.
 
 .. note::
    This feature was added in `PICARD-2103: Add UI to manage custom columns <https://github.com/metabrainz/picard/pull/2714>`_.
@@ -17,29 +17,24 @@ To access the Custom Columns manager:
 2. Click "Manage Custom Columns…"
    - If the option is disabled, uncheck "Lock columns" in the same menu first
 
-The manager provides options to Add…, Edit…, Duplicate, Delete, and "Make It So!" (apply) your changes.
+Use New, Duplicate and Delete on the left. Edit details in the middle form and click OK to apply your changes (Cancel discards). The right side shows scripting help and links to the full scripting documentation.
 
-Column Types
-------------
+Expression
+----------
 
-**Field Reference**
-   Show the value of one tag. Enter the field key only, without percent signs. Examples: ``artist``, ``albumartist``, ``catalognumber``, ``~bitrate``.
-
-**Script**
-   Show the result of a Picard script using functions like ``$if()``, ``$if2()`` and variables like ``%artist%``.
+Enter a Picard script in the Expression box. For simple tag display, use a single variable like ``%artist%`` or ``%album%``.
 
 Common Options
 --------------
 
-- **Field Name**: The column title you'll see in the header
-- **Type**: Field or Script
-- **Expression**: The field key (Field) or the script (Script)
+- **Column Title**: The column title you'll see in the header
+- **Expression**: Picard script to compute the value
 - **Width**: Leave blank for automatic sizing
-- **Align**: LEFT or RIGHT
+- **Align**: left or right (mapped to ``ColumnAlign``)
+- **Sorting**: Choose how values are sorted (Default, Case Insensitive, Numeric, Natural, etc.)
 - **Add to views**: Choose File view and/or Album view
-- **Insert after key**: Place the new column after an existing column key (e.g. ``title``, ``artist``, ``album``). Leave empty to append at the end
 
-Click OK to confirm, then "Make It So!" to apply your changes.
+Click OK to apply your changes. Use Help for a direct link to this page.
 
 Examples
 --------
@@ -51,10 +46,9 @@ Adding a Script Column
 
 **Steps**:
 
-1. Right‑click header → "Manage Custom Columns…" → Add…
+1. Right‑click header → "Manage Custom Columns…" → New
 2. Set the following values:
-   - **Field Name**: Artist – Title
-   - **Type**: Script
+   - **Column Title**: Artist – Title
    - **Expression**:
 
      .. code-block:: text
@@ -62,30 +56,29 @@ Adding a Script Column
         $if(%title%,$if2(%artist%,Unknown Artist) - $if2(%title%,Unknown Title),$if2(%albumartist%,Unknown Artist) - $if2(%album%,Unknown Album))
 
    - **Align**: LEFT
+   - **Sorting**: Case Insensitive (optional)
    - **Add to views**: File view and Album view (both)
-   - **Insert after key**: title
-3. Click OK, then "Make It So!"
+3. Click OK
 
 **Tips**:
 - Use ``%field%`` variables and script functions like ``$if()``, ``$if2()``, ``$upper()``, ``$lower()``
 - Keep scripts short for best performance
 
-Adding a Field Reference Column
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adding a simple field column
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Goal**: Show Bitrate as a column in the File view, placed after Length.
+**Goal**: Show Track Length as a column in the File view.
 
 **Steps**:
 
-1. Right‑click header → "Manage Custom Columns…" → Add…
+1. Right‑click header → "Manage Custom Columns…" → New
 2. Set the following values:
-   - **Field Name**: Bitrate
-   - **Type**: Field
-   - **Expression**: ``~bitrate``
+   - **Column Title**: Length
+   - **Expression**: ``%length%``
    - **Align**: RIGHT (optional)
+   - **Sorting**: Natural (optional)
    - **Add to views**: File view (checked), Album view (optional)
-   - **Insert after key**: length
-3. Click OK, then "Make It So!"
+3. Click OK
 
 **Other field ideas**: ``catalognumber``, ``releasecountry``, ``media``, ``originalyear``, ``~channels``
 
@@ -129,13 +122,13 @@ Showing or Moving Columns
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - If you don't see your new column immediately, right‑click the header and enable it from the list
-- Drag the header to reorder, or use "Insert after key" when creating/editing
+- New columns are added at the end; drag the header to reorder
 
 Editing, Duplicating, and Deleting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Select a row in the manager and click Edit…, Duplicate, or Delete
-- Changes take effect after "Make It So!". Closing the window also applies pending changes
+- Select a row in the manager, edit its details in the form, or use Duplicate or Delete
+- Click OK to apply. If you have unsaved changes when switching selection or closing, you'll be prompted to save or discard
 
 Troubleshooting
 ---------------
@@ -144,7 +137,7 @@ Troubleshooting
    Ensure the correct view(s) are selected and enable it from the header menu.
 
 **Wrong position**
-   Provide a valid existing key in "Insert after key" (e.g. ``title``, ``artist``, ``album``, ``length``).
+   Drag the column header to the desired position.
 
 **Script errors**
    Simplify the expression and verify your ``%field%`` names and functions.
@@ -203,22 +196,20 @@ Common Patterns
 
    $if(%rating%,%rating%/5,No Rating)
 
-Field Reference Keys
+Expression variables
 --------------------
 
-Use these keys in Field Reference columns (no percent signs). Track and Album rows can show most music tags; File rows can also show technical file info (prefixed with ``~``).
+Use Picard variables with percent signs in the Expression box. Track and Album rows can show most music tags; File rows can also show technical file info.
 
 **Common examples**:
-- **title**: Track title
-- **artist**: Track artist(s)
-- **album**: Release title
-- **albumartist**: Release artist(s)
-- **~bitrate**: File bitrate (kbps)
-- **~filesize**: File size (bytes)
-- **catalognumber**: Label catalog number
-- **releasecountry**: Release country code
-- **rating**: Community rating 0–5
-- **length**: Track length mins:secs
+- **%title%**: Track title
+- **%artist%**: Track artist(s)
+- **%album%**: Release title
+- **%albumartist%**: Release artist(s)
+- **%length%**: Track length mins:secs
+- **%catalognumber%**: Label catalog number
+- **%releasecountry%**: Release country code
+- **%rating%**: Community rating 0–5
 
 .. seealso::
    For detailed information about the Picard scripting language, including all available functions and syntax, see :doc:`/extending/scripts`.

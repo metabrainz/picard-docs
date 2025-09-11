@@ -16,7 +16,7 @@ Overview and Flow
 **Lifecycle at a glance**:
 
 - **Create**: Build a ``CustomColumn`` via factory helpers in ``picard.ui.itemviews.custom_columns.factory`` (e.g., ``make_field_column``, ``make_script_column``, ``make_callable_column``, ``make_transformed_column``) or construct ``CustomColumn`` with your own provider.
-- **Register**: Add the column to live views with ``registry.register(column, add_to=..., insert_after_key=...)``. This inserts into the mutable column collections used by the File/Album widgets.
+- **Register**: Add the column to live views with ``registry.register(column, add_to=...)``. Membership is controlled explicitly by view set; ordering is appended, and widths are applied to existing headers.
 - **Persist** (optional): Store UI-defined columns as specs using ``picard.ui.itemviews.custom_columns.storage``. Use ``CustomColumnSpec`` + ``register_and_persist(spec)`` to save to config and auto-register; ``load_persisted_columns_once()`` restores saved columns on startup.
 - **Paint** (Qt): Once registered, the column participates like any other. Values come from the provider's ``evaluate(item)``. The header and sections are owned by the Qt views; width/resize hints are applied during registration (see ``registry._apply_column_width_to_headers``). Painting is handled by the standard header; only image columns overlay custom paint.
 
@@ -49,8 +49,9 @@ Imports
         DescendingCasefoldSortAdapter,
         NumericSortAdapter,
         DescendingNumericSortAdapter,
+        NaturalSortAdapter,
+        DescendingNaturalSortAdapter,
         LengthSortAdapter,
-        RandomSortAdapter,
         ArticleInsensitiveAdapter,
         CompositeSortAdapter,
         NullsLastAdapter,
@@ -119,18 +120,16 @@ Registration
 
 .. code-block:: python
 
-    registry.register(column,
-                      add_to={"FILE_VIEW", "ALBUM_VIEW"},
-                      insert_after_key="title")
+    registry.register(column, add_to={"FILE_VIEW", "ALBUM_VIEW"})
 
 - Inserts into live UI collections (``FILEVIEW_COLUMNS``, ``ALBUMVIEW_COLUMNS``).
-- ``insert_after_key`` places the column after an existing key; falls back to append if not found.
+- Ordering currently appends at the end; users can reorder from the UI.
 - Idempotent per ``key`` (re-registration replaces existing instances). Use ``registry.unregister(key)`` to remove.
 
 Notes:
 
 - ``add_to`` accepts any iterable of view identifiers (e.g. set, list, tuple). Recognized values are ``"FILE_VIEW"`` and ``"ALBUM_VIEW"``.
-- If ``add_to`` is omitted or ``None`` the column is added to both views.
+- If ``add_to`` is omitted or empty, the column is not added to any view. Pass explicit targets.
 
 Sorting
 -------
@@ -159,8 +158,9 @@ Available adapters (imported from ``picard.ui.itemviews.custom_columns``):
 - **DescendingCasefoldSortAdapter**: descending case-insensitive text sort
 - **NumericSortAdapter**: numeric sort using parser (default float)
 - **DescendingNumericSortAdapter**: descending numeric (negated value)
+- **NaturalSortAdapter**: locale-aware alphanumeric sort (e.g., Track 2 before Track 10)
+- **DescendingNaturalSortAdapter**: descending natural sort
 - **LengthSortAdapter**: sort by string length
-- **RandomSortAdapter**: deterministic pseudo-random by value and seed
 - **ArticleInsensitiveAdapter**: ignore leading articles (e.g. a, an, the)
 - **CompositeSortAdapter**: tuple sort from multiple key functions
 - **NullsFirstAdapter**: empty/whitespace values sort first
@@ -184,7 +184,7 @@ Built-ins:
 - **FieldReferenceProvider(key: str)**: returns ``obj.column(key)``; safe on missing keys.
 - **TransformProvider(base: ColumnValueProvider, transform: Callable[[str], str])**: applies a string transform.
 - **CallableProvider(func: Callable[[Item], str])**: wraps a Python callable.
-- Script provider is created via ``make_script_column(...)`` (do not instantiate directly).
+- Script provider is created via ``make_script_column(...)`` (do not instantiate directly). For UI-defined Script columns, the ``ChainedValueProvider`` is used internally and supports caching and max runtime configuration.
 
 Factory helpers return a ``CustomColumn`` and infer a sane ``sort_type`` when possible:
 
@@ -226,7 +226,7 @@ Serialize specs to config and (optionally) auto-register columns.
         width=280,
         align="LEFT",
         add_to="ALBUM_VIEW",  # or "FILE_VIEW,ALBUM_VIEW" for both
-        insert_after_key="title",
+        sorting_adapter="CasefoldSortAdapter",
     )
     register_and_persist(spec)  # saves to config and registers in views
 
@@ -241,14 +241,15 @@ Notes:
 - ``CustomColumnSpec.align`` accepts "LEFT" or "RIGHT" (mapped to ``ColumnAlign``).
 - ``CustomColumnSpec.kind``: ``FIELD``, ``SCRIPT``, or ``TRANSFORM``.
 - ``TRANSFORM`` specs use ``expression`` as the base field and optional ``transform: TransformName``.
-- Registry insertion uses the spec's ``add_to`` (comma-separated string of view identifiers) and ``insert_after_key``.
+- Sorting behavior can be customized with ``sorting_adapter`` (see names above). If omitted, default text sorting is used.
+- Registry insertion uses the spec's ``add_to`` (comma-separated string of view identifiers). Ordering appends at end.
 
 Field Keys and Scripting
 ------------------------
 
-- Field keys are the same strings used with ``obj.column(key)`` and Picard variables without percent signs (e.g. ``title``, ``albumartist``, ``~bitrate``).
-- Script expressions use the standard Picard scripting language (e.g. ``$if()``, ``$if2()``, ``%artist%``).
-- See ``picard.const.tags.ALL_TAGS`` for the authoritative list of variables.
+- Field keys are the same strings used with ``obj.column(key)``; in the UI these are typically referenced as variables with percent signs (e.g. ``%title%``, ``%albumartist%``, or technical variables like ``%_bitrate%`` depending on context).
+- Script expressions use the standard Picard scripting language (e.g. ``$if()``, ``$if2()``) with variables like ``%artist%``.
+- See ``picard.const.tags.ALL_TAGS`` and the variables documentation for the authoritative list of variables.
 
 Runtime & Safety
 ----------------
