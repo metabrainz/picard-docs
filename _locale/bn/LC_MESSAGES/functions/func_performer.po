@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../../functions/func_performer.rst:6
+msgid "$performer"
+msgstr ""
+
+#: ../../functions/func_performer.rst:8
+msgid "Usage: **$performer(pattern[,separator])**"
+msgstr ""
+
+#: ../../functions/func_performer.rst:9
+msgid "Category: multi-value"
+msgstr ""
+
+#: ../../functions/func_performer.rst:10
+msgid "Implemented: Picard 0.10"
+msgstr ""
+
+#: ../../functions/func_performer.rst:12
+msgid "**Description:**"
+msgstr ""
+
+#: ../../functions/func_performer.rst:14
+msgid "Returns the performers where the performance type matches ``pattern`` separated by ``separator`` (or a comma followed by a space \", \" if not passed).  If ``pattern`` is blank, then all performers will be returned.  Note that by default the ``pattern`` to be matched is case-sensitive and can appear anywhere in the tag."
+msgstr ""
+
+#: ../../functions/func_performer.rst:19
+msgid "As of version 2.7, you can explicitly define a regular expression in the form /pattern/flags. The only supported flag is \"i\" (ignore case). For more information about regular expressions, please see the `article on Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
+msgstr ""
+
+#: ../../functions/func_performer.rst:25
+msgid "When entering regular expressions into Picard scripts you have to escape a backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right parentheses \"(\" and \")\" in order to force Picard to not interpret them as part of the script command.  This is done by inserting a backslash before the character to be escaped.  For example, the regular expression ``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
+msgstr ""
+
+#: ../../functions/func_performer.rst:31
+msgid "**Example:**"
+msgstr ""
+
+#: ../../functions/func_performer.rst:33
+msgid "With the performer tags as ``performer:guitar`` = \"Ann\", ``performer:rhythm-guitar`` = \"Bob\" and ``performer:drums (drum kit)`` = \"Cindy\", the following statements will return the values indicated:"
+msgstr ""

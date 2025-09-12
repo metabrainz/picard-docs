@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../faq/faq_config.rst:4
+msgid ":index:`Configuration <configuration; config file location>`"
+msgstr ""
+
+#: ../../faq/faq_config.rst:7
+msgid "Where is the Picard :index:`configuration <configuration; file>` saved?"
+msgstr ""
+
+#: ../../faq/faq_config.rst:9
+msgid "Picard saves the configuration in the file :file:`Picard.ini`. Its location depends on the operating system:"
+msgstr ""
+
+#: ../../faq/faq_config.rst:11
+msgid "**Windows:**"
+msgstr ""
+
+#: ../../faq/faq_config.rst:13
+msgid ":file:`%APPDATA%\\\\MusicBrainz\\\\Picard.ini`"
+msgstr ""
+
+#: ../../faq/faq_config.rst:15
+msgid "This usually will be :file:`C:\\\\Users\\\\\\\\{YourUserName}\\\\AppData\\\\Roaming\\\\MusicBrainz`, where ``YourUserName`` should be replaced with your actual Windows user name."
+msgstr ""
+
+#: ../../faq/faq_config.rst:18
+msgid "**macOS, Linux and other Unix like systems:**"
+msgstr ""
+
+#: ../../faq/faq_config.rst:20
+msgid ":file:`$HOME/.config/MusicBrainz/Picard.ini`"
+msgstr ""
+
+#: ../../faq/faq_config.rst:24
+msgid "I tagged a file in Picard, but :index:`iTunes <itunes; tags, tagging; itunes>` is not seeing the tags!"
+msgstr ""
+
+#: ../../faq/faq_config.rst:26
+msgid "First, you need to force :index:`iTunes <itunes>` to re-read the information from your tags and update its library. This is discussed in the `iTunes Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
+msgstr ""
+
+#: ../../faq/faq_config.rst:29
+msgid "Additionally, iTunes has a known bug in its ID3v2.4 implementation, which makes it unable to read such tags if they also contain embedded cover art. As a work-around, you can configure Picard to write ID3v2.3 tags."
+msgstr ""
+
+#: ../../faq/faq_config.rst:34
+msgid "My tags are :index:`truncated <tags; truncated, WMP; tags>` to 30 characters in Windows Media Player!"
+msgstr ""
+
+#: ../../faq/faq_config.rst:36
+msgid "Picard's default settings write ID3v2.4 and ID3v1 tags to files.  Older WMP versions can't read ID3v2.4, so it falls back to ID3v1 which has a limitation of 30 characters per title.  To resolve this issue, configure Picard to write ID3v2.3 tags instead."
+msgstr ""
+
+#: ../../faq/faq_config.rst:40
+msgid "Since Windows 10 Creators Update (version 1703) ID3v2.4 is supported and the above issue should no longer apply."
+msgstr ""
+
+#: ../../faq/faq_config.rst:44
+msgid "How do I tell Picard which :index:`browser <pair: configuration; browser>` to use?"
+msgstr ""
+
+#: ../../faq/faq_config.rst:46
+msgid "On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can use the ``BROWSER`` environment variable."
+msgstr ""
+
+#: ../../faq/faq_config.rst:49
+msgid "For example::"
+msgstr ""
+
+#: ../../faq/faq_config.rst:53
+msgid "Another approach that works in some GNU/Linux systems is the following command::"
+msgstr ""
+
+#: ../../faq/faq_config.rst:57
+msgid "This should present you with a list of existing browsers in your system, allowing you to select the one to use by default."
+msgstr ""
