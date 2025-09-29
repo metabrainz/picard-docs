@@ -54,9 +54,9 @@
 
 **Ignore MBIDs when loading new files**
 
-   If you disable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the
+   If you enable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the
    files to automatically load the corresponding MusicBrainz release and match the loaded file to
-   the correct track.  This is useful when re-processing files that have been previously tagged
+   the correct track. Leaving this option disabled is useful when re-processing files that have been previously tagged
    with incorrect information.
 
 **Check for plugin updates during start-up**
