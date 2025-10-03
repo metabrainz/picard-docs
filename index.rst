@@ -50,6 +50,8 @@ plugins and tutorials are provided when available rather than trying to reproduc
    :hidden:
 
    General Usage </usage/using>
+   Sessions </usage/sessions>
+   /extending/sessions_api
    /usage/other
    /usage/option_profiles
    /usage/command_processing
