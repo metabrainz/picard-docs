@@ -1,20 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-02 11:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
+"picard-docs/configoptions_tags/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #: ../../config/options_tags.rst:4
 msgid ":index:`Tag Options <configuration; tag options>`"
@@ -22,23 +25,28 @@ msgstr ""
 
 #: ../../config/options_tags.rst:9
 msgid "**Write tags to files**"
-msgstr ""
+msgstr "**Tags naar bestanden schrijven**"
 
 #: ../../config/options_tags.rst:11
 msgid ""
 "Uncheck to disable Picard from writing metadata to your files. Picard may "
 "still move or rename your files according to your settings."
 msgstr ""
+"Als je dit uitvinkt, schrijft Picard geen metadata naar je bestanden. "
+"Afhankelijk van je instellingen kan Picard je bestanden wel verplaatsen of "
+"hernoemen."
 
 #: ../../config/options_tags.rst:14
 msgid "**Preserve timestamps of tagged files**"
-msgstr ""
+msgstr "**De tijdstempel van getagde bestanden behouden**"
 
 #: ../../config/options_tags.rst:16
 msgid ""
 "If checked, Picard will not update the \"Last Modified\" date and time of "
 "your music files when it writes new tags to them."
 msgstr ""
+"Als dit is aangevinkt, past Picard de datum en het tijdstip van “Laatst "
+"gewijzigd” niet aan als Picard nieuwe tags naar je bestanden schrijft."
 
 #: ../../config/options_tags.rst:23
 msgid ""
@@ -46,3 +54,7 @@ msgid ""
 "`options_tags_compatibility_id3` / :doc:`options_tags_compatibility_aac` / :"
 "doc:`options_tags_compatibility_ac3` / :doc:`options_tags_compatibility_wave`"
 msgstr ""
+"Details: :doc:`options_before_tagging` / "
+":doc:`options_tags_compatibility_id3` / :doc:`options_tags_compatibility_aac`"
+" / :doc:`options_tags_compatibility_ac3` / "
+":doc:`options_tags_compatibility_wave`"
