@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2025-12-02 11:12+0000\n"
+"PO-Revision-Date: 2025-12-03 15:11+0000\n"
 "Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
 "picard-docs/about_picardintroduction/lt/>\n"
@@ -77,54 +77,74 @@ msgstr ""
 #: ../../about_picard/introduction.rst:53
 msgid "...look up the metadata either manually or automatically based on existing information, including artist and song name, disc id (for CDs), and a track's AcoustID fingerprint."
 msgstr ""
+"...ieškoti metaduomenų rankiniu būdu arba automatiškai, remdamasis esama "
+"informacija, įskaitant atlikėjo ir dainos pavadinimą, disko ID (skirti CD) "
+"ir takelio „AcoustID“ atspaudą;"
 
 #: ../../about_picard/introduction.rst:56
 msgid "...retrieve and embed coverart images from a variety of sources."
-msgstr ""
+msgstr "...gauti ir įterpti viršelio vaizdus iš įvairių šaltinių;"
 
 #: ../../about_picard/introduction.rst:58
 msgid "...rename and place the music files in directories based on naming template instructions provided in a naming script."
 msgstr ""
+"...pervadinti ir sudėti muzikos failus kataloguose pagal pavadinimų šablono "
+"nurodymus, pateiktus pavadinimų skripte;"
 
 #: ../../about_picard/introduction.rst:61
 msgid "...calculate and submit a disc id to the MusicBrainz database, attaching it to a specified release."
 msgstr ""
+"...suskaičiuoti ir pateikti disko ID į „MusicBrainz“ duomenų bazę, pridedant "
+"jį prie konkretaus leidinio;"
 
 #: ../../about_picard/introduction.rst:63
 msgid "...calculate and submit a music file's AcoustID fingerprint to the `AcoustID database <https://acoustid.org/>`_."
 msgstr ""
+"...suskaičiuoti ir pateikti muzikos failo „AcoustID“ atspaudą į `„AcoustID“ "
+"duomenų bazę <https://acoustid.org/>`_."
 
 #: ../../about_picard/introduction.rst:67
 msgid "Picard Cannot..."
-msgstr ""
+msgstr "„Picard“ negali..."
 
 #: ../../about_picard/introduction.rst:69
 msgid "...automatically identify and remove all duplicate music files in your collection."
 msgstr ""
+"...automatiškai identifikuoti ir pašalinti visų dubliuojamų muzikos failų iš "
+"jūsų kolekcijos;"
 
 #: ../../about_picard/introduction.rst:71
 msgid "...provide metadata not already existing in the MusicBrainz database."
 msgstr ""
+"...pateikti metaduomenų, kurių neegzistuoja „MusicBrainz“ duomenų bazėje."
 
 #: ../../about_picard/introduction.rst:75
 msgid ":index:`Limitations <limitations>`"
-msgstr ""
+msgstr ":index:`Ribojimai <ribojimai>`"
 
 #: ../../about_picard/introduction.rst:77
 msgid "**File Formats**"
-msgstr ""
+msgstr "**Failų formatai**"
 
 #: ../../about_picard/introduction.rst:79
 msgid "Picard currently supports most music file formats, with Matroska (.mka) being one notable exception. Microsoft WAVE (.wav) files can be fingerprinted and renamed and can be tagged using ID3v2 tags, but this is not supported by all playback software.  In addition, Picard does not support writing custom tags for all formats."
 msgstr ""
+"„Picard“ šiuo metu palaiko daugumą muzikos failų formatų, išskyrus su "
+"Matroskos (.mka) formatą. „Microsoft“ WAVE (.wav) failai gali būti "
+"identifikuojami ir pervadinami, taip pat žymimi ID3v2 žymėmis, bet tai "
+"palaiko ne visos atkūrimo programos.  Be to, „Picard“ nepalaiko "
+"pasirinktinių žymų įrašymo visais formatais."
 
 #: ../../about_picard/introduction.rst:83
 msgid "The :doc:`Picard Tag Mappings </appendices/tag_mapping>` section provides more information regarding the mapping between Picard internal tag names and various tagging formats."
 msgstr ""
+":doc:`„Picard“ žymų susiejimų </appendices/tag_mapping>` sekcija pateikia "
+"daugiau informacijos apie „Picard“ vidinių žymų pavadinimų ir įvairių "
+"žymėjimo formatų susiejimus."
 
 #: ../../about_picard/introduction.rst:86
 msgid "**Request Rate Limiting**"
-msgstr ""
+msgstr "**Užklausų dažnio ribojimas**"
 
 #: ../../about_picard/introduction.rst:88
 msgid "Picard's metadata retrieval is limited to the standard **one request per second** :index:`rate limiting` for the MusicBrainz API.  This becomes quite noticeable when trying to process a large list of files, and is exacerbated by extensions that perform additional information requests from the database."
