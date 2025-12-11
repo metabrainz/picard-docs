@@ -206,7 +206,7 @@ Saves all matched files from the album pane.
 :index:`SAVE_MODIFIED <executable commands; SAVE_MODIFIED>`
 -----------------------------------------------------------
 
-| Usage: **SAVE_MATCHED**
+| Usage: **SAVE_MODIFIED**
 | Implemented: Picard 2.9
 
 Saves all modified files from the album pane.
