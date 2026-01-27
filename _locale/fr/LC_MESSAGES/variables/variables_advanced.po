@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-01-27 15:01-0700\n"
 "PO-Revision-Date: 2023-10-19 15:21+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -115,12 +115,14 @@ msgid "**_release_seriesnumber**"
 msgstr "**_release_seriesnumber**"
 
 #: ../../variables/variables_advanced.rst:64
+#, fuzzy
 msgid ""
-"A multi-value variable containing the series numbers associated with the "
-"release. (*since Picard 2.9*)"
+"If the release is part of one of more series, this multi-value variable "
+"contains the positions (numbers) of the release in those series. (*since "
+"Picard 2.9*)"
 msgstr ""
-"Une variable multi-valeurs contenant les numéros de série associés à la "
-"parution. (*depuis Picard 2.9*)"
+"Variable à valeurs multiples contenant les numéros de série associés au "
+"groupe de parution. (*depuis Picard 2.9*)"
 
 #: ../../variables/variables_advanced.rst:66
 msgid "**_releasegroup_series**"
@@ -164,9 +166,11 @@ msgid "**_releasegroup_seriesnumber**"
 msgstr "**_releasegroup_seriesnumber**"
 
 #: ../../variables/variables_advanced.rst:80
+#, fuzzy
 msgid ""
-"A multi-value variable containing the series numbers associated with the "
-"release group. (*since Picard 2.9*)"
+"If the release group is part of one of more series, this multi-value "
+"variable contains the positions (numbers) of the release group in those "
+"series. (*since Picard 2.9*)"
 msgstr ""
 "Variable à valeurs multiples contenant les numéros de série associés au "
 "groupe de parution. (*depuis Picard 2.9*)"
@@ -339,6 +343,13 @@ msgstr "**_writersort**"
 #: ../../variables/variables_advanced.rst:138
 msgid "The sort names of the writers for the work. (*since Picard 2.9*)"
 msgstr "Les noms de tri des rédacteurs de l'œuvre. (*depuis Picard 2.9*)"
+
+#~ msgid ""
+#~ "A multi-value variable containing the series numbers associated with the "
+#~ "release. (*since Picard 2.9*)"
+#~ msgstr ""
+#~ "Une variable multi-valeurs contenant les numéros de série associés à la "
+#~ "parution. (*depuis Picard 2.9*)"
 
 #~ msgid "Recording disambiguation comment. (*since Picard 0.15*)"
 #~ msgstr "Enregistrement d'un commentaire d'homonymie. (*depuis Picard 0,15*)"
