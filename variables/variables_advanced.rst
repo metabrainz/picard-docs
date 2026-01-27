@@ -61,7 +61,7 @@ If you enable tagging with :doc:`Use release relationships </config/options_meta
 
 **_release_seriesnumber**
 
-   A multi-value variable containing the series numbers associated with the release. (*since Picard 2.9*)
+   If the release is part of one of more series, this multi-value variable contains the positions (numbers) of the release in those series. (*since Picard 2.9*)
 
 **_releasegroup_series**
 
@@ -77,7 +77,7 @@ If you enable tagging with :doc:`Use release relationships </config/options_meta
 
 **_releasegroup_seriesnumber**
 
-   A multi-value variable containing the series numbers associated with the release group. (*since Picard 2.9*)
+   If the release group is part of one of more series, this multi-value variable contains the positions (numbers) of the release group in those series. (*since Picard 2.9*)
 
 
 Track Relationship Variables
