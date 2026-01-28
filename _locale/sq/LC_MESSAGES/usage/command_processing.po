@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../usage/command_processing.rst:4
+msgid ":index:`Command and Batch Processing <command processing, batch processing, processing; batch>`"
+msgstr ""
+
+#: ../../usage/command_processing.rst:6
+msgid "As of version 2.9, Picard will try to only run a single instance of the program at a time. When the program is started, it checks to see if there is another instance of that version, configuration file and plugin startup status ``-P`` already running.  If the same version is already running, any files or directories specified on the command line of the new instance, along with any executable commands specified with the ``-e`` or ``-exec`` options will be passed to the already running instance for processing and the new duplicate instance will be shut down.  This allows batch processing of files to be initiated automatically from other processes.  If there is no instance of that version already running, Picard will start normally."
+msgstr ""
+
+#: ../../usage/command_processing.rst:16
+msgid "For example if there is an instance of Picard running and a second instance is started with the command line:"
+msgstr ""
+
+#: ../../usage/command_processing.rst:23
+msgid "the load command will be passed to the running instance to load the specified release, and the second instance will be closed."
+msgstr ""
+
+#: ../../usage/command_processing.rst:26
+msgid "This allows the user to set up dynamic batch processing of commands to automate the tagging process, especially when used with the ``FROM_FILE`` command to load a standard processing command sequence such as:"
+msgstr ""
+
+#: ../../usage/command_processing.rst:38
+msgid "or:"
+msgstr ""
+
+#: ../../usage/command_processing.rst:49
+msgid "or even something like:"
+msgstr ""
+
+#: ../../usage/command_processing.rst:84
+msgid "Please see the :doc:`/usage/exec_commands` section for details regarding the commands available for execution."
+msgstr ""

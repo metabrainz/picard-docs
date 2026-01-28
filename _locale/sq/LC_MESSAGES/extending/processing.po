@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../extending/processing.rst:4
+msgid ":index:`Processing Order <processing order>`"
+msgstr ""
+
+#: ../../extending/processing.rst:6
+msgid "In order to make effective use of plugins and scripts, it is important to understand when each is processed in relation to the others. As a general statement, plugins are always processed before scripts. Plugins of the same type will be executed in order based upon the priority specified when the plugin was registered."
+msgstr ""
+
+#: ../../extending/processing.rst:12
+msgid "Startup"
+msgstr ""
+
+#: ../../extending/processing.rst:14
+msgid "During program startup, plugins with the following hooks are processed, and any additional functionality that they provide will be available immediately:"
+msgstr ""
+
+#: ../../extending/processing.rst:17
+msgid "File Formats"
+msgstr ""
+
+#: ../../extending/processing.rst:18
+msgid "Cover Art Providers"
+msgstr ""
+
+#: ../../extending/processing.rst:19
+msgid "Tagger Script Functions"
+msgstr ""
+
+#: ../../extending/processing.rst:20
+msgid "Context Menu Actions"
+msgstr ""
+
+#: ../../extending/processing.rst:21
+msgid "Option Pages"
+msgstr ""
+
+#: ../../extending/processing.rst:24
+msgid "Loading a Release"
+msgstr ""
+
+#: ../../extending/processing.rst:26
+msgid "When data gets loaded from MusicBrainz (while the album shows the \"loading\" status in the right-hand pane), the following are processed:"
+msgstr ""
+
+#: ../../extending/processing.rst:29
+msgid "Metadata Processor Plugins"
+msgstr ""
+
+#: ../../extending/processing.rst:30
+msgid "Tagging Scripts"
+msgstr ""
+
+#: ../../extending/processing.rst:32
+msgid "Plugins have access to the raw data loaded from MusicBrainz and are processed before scripts, in the order of priority set when the plugin was registered."
+msgstr ""
+
+#: ../../extending/processing.rst:35
+msgid "Scripts are processed in the order set in the Options menu."
+msgstr ""
+
+#: ../../extending/processing.rst:39
+msgid "Tagging scripts are always run against metadata loaded from MusicBrainz, and exactly after the data gets loaded and before files get matched. They are one of the last steps in the loading process. Tagging scripts do not have access to metadata stored in existing files."
+msgstr ""
+
+#: ../../extending/processing.rst:44
+msgid "Loading Music Files"
+msgstr ""
+
+#: ../../extending/processing.rst:46
+msgid "After a file has been loaded into Picard, plugins registered with ``file_post_load_processor()`` are executed. This could, for example, be used to load additional data for a file."
+msgstr ""
+
+#: ../../extending/processing.rst:50
+msgid "Adding / Removing Files"
+msgstr ""
+
+#: ../../extending/processing.rst:52
+msgid "After a file has been added to a track (on the right-hand pane of Picard), plugins registered with ``file_post_addition_to_track_processor()`` are executed."
+msgstr ""
+
+#: ../../extending/processing.rst:55
+msgid "After a file has been removed from a track (on the right-hand pane of Picard), plugins registered with ``file_post_removal_from_track_processor()`` are executed."
+msgstr ""
+
+#: ../../extending/processing.rst:59
+msgid "Saving Files"
+msgstr ""
+
+#: ../../extending/processing.rst:61
+msgid "When files are saved, for each file the File Naming Script is first executed to determine the destination path and file name. Note that this script has no effect on the tag values written to the output file."
+msgstr ""
+
+#: ../../extending/processing.rst:65
+msgid "After a file has been saved, plugins registered with ``file_post_save_processor()`` are executed. This can, for example, be used to run additional post-processing on the file or write extra data. Note that the file's metadata is already the newly saved metadata."
+msgstr ""
+
+#: ../../extending/processing.rst:70
+msgid "Removing Albums"
+msgstr ""
+
+#: ../../extending/processing.rst:72
+msgid "After an album has been removed from Picard, plugins registered with ``album_post_removal_processor()`` are executed."
+msgstr ""
+
+#: ../../extending/processing.rst:76
+msgid "Context Menus"
+msgstr ""
+
+#: ../../extending/processing.rst:78
+msgid "Individual tagging scripts can be executed on-demand from the context menu displayed when right-clicking on a file, album, track, cluster or cluster list."
+msgstr ""

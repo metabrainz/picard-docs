@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../functions/func_substr.rst:6
+msgid "$substr"
+msgstr ""
+
+#: ../../functions/func_substr.rst:8
+msgid "Usage: **$substr(text,start[,end])**"
+msgstr ""
+
+#: ../../functions/func_substr.rst:9
+msgid "Category: text"
+msgstr ""
+
+#: ../../functions/func_substr.rst:10
+msgid "Implemented: Picard 2.3"
+msgstr ""
+
+#: ../../functions/func_substr.rst:12
+msgid "**Description:**"
+msgstr ""
+
+#: ../../functions/func_substr.rst:14
+msgid "Returns the substring of ``text`` beginning with the character at the ``start`` index, up to (but not including) the character at the ``end`` index. Indexes are zero-based. Negative numbers will be counted back from the end of the string. If the start index is left blank, it will default to the start of the string.  If the end index is left blank or not included, it will default to the end of the string.  If the ``start`` index evaluates to a negative number (e.g.: ``text`` is \"abc\" and ``start`` is -10), it will default to the start of the string.  Similarly, if ``end`` index is a number greater than the number of characters in the string, it will default to the end of the string. Invalid index values (e.g.: ``start`` greater than ``end``) will return an empty string."
+msgstr ""
+
+#: ../../functions/func_substr.rst:27
+msgid "**Example:**"
+msgstr ""
+
+#: ../../functions/func_substr.rst:29
+msgid "The following statements will return the values indicated:"
+msgstr ""
