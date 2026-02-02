@@ -38,6 +38,7 @@ Contributors include (in alphabetic surname order):
 - Philipp Wolfer
 - yvanzo
 - Shadab Zafar
+- Dr Yann Golanski
 
 
 .. note::
