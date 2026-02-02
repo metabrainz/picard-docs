@@ -12,6 +12,7 @@ Linux specific
 --------------
 
 To change the size/scaling are:
+
 1. The usual default way to change the scaling is to rely on the settings of the desktop environment, e.g. on GNOME the scaling set when configuring the screens. This usually works, and should be the first approach to take.
 2. Setting the environment variable ``QT_SCALE_FACTOR`` will scale fonts for Qt applications. This can be useful on 4k monitors. From a terminal, you can then run ``QT_SCALE_FACTOR=2.0 picard`` to start Picard, or create an alias in your shell, or set the variable in your shell to affect all Qt applications.
 
