@@ -25,6 +25,7 @@ Contributors include (in alphabetic surname order):
 - Sambhav Kothari
 - Soham Kukreti
 - Laurent Monin
+- Maurits Meulenbelt
 - Akash Nagaraj
 - Frederik "Freso" S. Olesen
 - Guntbert Reiter
