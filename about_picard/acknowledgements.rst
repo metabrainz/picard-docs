@@ -15,6 +15,7 @@ Contributors include (in alphabetic surname order):
 - Ronan Desplanques
 - Gabriel Ferreira
 - Giorgio Fontanive
+- Dr Yann Golanski
 - Rahul Kumar Gupta
 - Wieland Hoffmann
 - InvisibleMan78
@@ -39,7 +40,6 @@ Contributors include (in alphabetic surname order):
 - Philipp Wolfer
 - yvanzo
 - Shadab Zafar
-- Dr Yann Golanski
 
 
 .. note::
