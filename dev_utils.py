@@ -151,6 +151,7 @@ IGNORE_ROLES = [
 
 IGNORE_LEXERS = [
     'taggerscript',
+    'none',
 ]
 
 ################################################
