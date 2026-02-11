@@ -3,9 +3,9 @@
 .. TODO: Expand definitions
 
 :index:`Tags from Plugins <tags; plugins>`
-===========================================
+==========================================
 
-Plugins from Picard :doc:`Plugins </config/options_plugins>` can add more tags.  Following are some examples.
+Plugins from Picard :doc:`Plugins <../config/options_plugins>` can add more tags. Following are some examples.
 
 Last.fm Plugin
 --------------
@@ -161,60 +161,4 @@ Additional Artists Variables Plugin
 
 .. note::
 
-   Some plugins make a large number of web service calls to get additional track-specific data such as performer and work relationships,
-   so loading a large number of albums and tracks could take a significant amount of time.  The time concern can be partially addressed by
-   operating a local MusicBrainz server with the rate limiting disabled.  Please see the `MusicBrainz Server <https://github.com/metabrainz/musicbrainz-server>`_
-   project on GitHub for additional information.
-
-
-
-.. Last.fm Plus
-.. ------------
-
-.. The LastFMPlus plugin is a sophisticated plugin that tries to provide stable and meaningful genre selections from the ever-changing and
-.. idiosyncratic list provided by lastFM.
-
-.. The LastFMPlus plugin is very configurable and examples provided here are based on the default lists provided on the Tag Filter List tab
-.. of the LastFMPlus options page.
-
-.. **Comment:songs-db_Custom1**
-
-..    The decade (e.g.: 1970s).
-
-.. **Comment:songs-db_Custom2**
-
-..    Category (e.g.: Female Vocalist, Singer-Songwriter).
-
-.. **Comment:songs-db_Custom3**
-
-..    Country (e.g.: British).
-
-.. **Comment:songs-db_Occassion**
-
-..    Good situations to play a track (e.g.: Driving, Love, Party).
-
-.. **genre**
-
-..    Specific detailed genres. For example, if the group is Rock the genre could be one of Acid rock, Acoustic rock, Alternative metal,
-..    Alternative rock, Art rock, Blues rock, Boogie rock, Brit rock, Christian rock, College rock, Country rock, etc.
-
-.. **grouping**
-
-..    Top-level genres - default list: Audiobooks, Blues, Classic rock, Classical, Country, Dance, Electronica, Folk, Hip-hop, Indie, Jazz,
-..    Kids, Metal, Pop, Punk, Reggae, Rock, Soul, Trance
-
-.. **mood**
-
-..    How a track "feels" (e.g.: Happy, Introspective, Drunk).
-
-.. **Original Year**
-
-..    The original year that the track was released, as opposed to **Original Release Date** (the earliest release date of the entire Album).
-
-.. .. note::
-
-..    This plugin makes a large number of web services calls to get track-specific data, so loading a large number of albums and tracks could take a significant amount of time.
-
-.. .. .. note::
-.. ..
-.. ..    Original Year does not seem to be working correctly at present.
+   Some plugins make a large number of web service calls to get additional track-specific data such as performer and work relationships, so loading a large number of albums and tracks could take a significant amount of time. The time concern can be partially addressed by operating a local MusicBrainz server with the rate limiting disabled. Please see the `MusicBrainz Server <https://github.com/metabrainz/musicbrainz-server>`_ project on GitHub for additional information.

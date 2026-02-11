@@ -30,10 +30,10 @@
 
 
 :index:`Advanced Variables <variables; advanced>`
-==================================================
+=================================================
 
-You can make additional tags available by enabling the :doc:`Use track relationships </config/options_metadata>` and/or the
-:doc:`Use release relationships </config/options_metadata>` settings in Picard.
+You can make additional tags available by enabling the :doc:`Use track relationships <../config/options_metadata>` and/or the
+:doc:`Use release relationships <../config/options_metadata>` settings in Picard.
 
 Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation.
 
@@ -45,7 +45,7 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 Release Relationship Variables
 ------------------------------
 
-If you enable tagging with :doc:`Use release relationships </config/options_metadata>`, you get these extra variables:
+If you enable tagging with :doc:`Use release relationships <../config/options_metadata>`, you get these extra variables:
 
 **_release_series**
 
@@ -83,7 +83,11 @@ If you enable tagging with :doc:`Use release relationships </config/options_meta
 Track Relationship Variables
 ----------------------------
 
-If you enable tagging with :doc:`Use track relationships </config/options_metadata>`, you get these extra variables:
+If you enable tagging with :doc:`Use track relationships <../config/options_metadata>`, you get these extra variables:
+
+**_broadcast_date**
+
+   The date the recording was broadcast.
 
 **_lyricistsort**
 

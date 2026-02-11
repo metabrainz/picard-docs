@@ -10,17 +10,11 @@ $lte
 
 **Description:**
 
-Returns "1" (True) if ``x`` is less than or equal to ``y`` using the comparison specified in ``type``.
-Possible values of ``type`` are "int" (integer), "float" (floating point), "text"
-(case-sensitive text), "nocase" (case-insensitive text) and "auto" (automatically determine
-the type of arguments provided), with "auto" used as the default comparison method if ``type``
-is not specified.  The "auto" type will use the first type that applies to both arguments in
-the following order of preference: "int", "float" and "text".
+Returns "1" (True) if ``x`` is less than or equal to ``y`` using the comparison specified in ``type``. Possible values of ``type`` are "int" (integer), "float" (floating point), "text" (case-sensitive text), "nocase" (case-insensitive text) and "auto" (automatically determine the type of arguments provided), with "auto" used as the default comparison method if ``type`` is not specified. The "auto" type will use the first type that applies to both arguments in the following order of preference: "int", "float" and "text".
 
 .. note::
 
-   The ``type`` argument was added in Picard v2.9.  Prior to that, if an argument
-   was missing or was not an integer, the function would return an empty string.
+   The ``type`` argument was added in Picard v2.9. Prior to that, if an argument was missing or was not an integer, the function would return an empty string.
 
 
 **Example:**

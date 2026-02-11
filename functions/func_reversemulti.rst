@@ -11,10 +11,7 @@ $reversemulti
 
 **Description:**
 
-Returns a copy of the multi-value variable ``name`` with the elements in reverse order. A literal
-value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a
-semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued
-variable.
+Returns a copy of the multi-value variable ``name`` with the elements in reverse order. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable.
 
 This function can be used in conjunction with the :ref:`func_sortmulti` function to sort in descending order.
 
@@ -25,14 +22,14 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $set(foo,A; B; C; D; E)
-    $reversemulti(%foo%)            ==>  "A; B; C; D; E"
+   $set(foo,A; B; C; D; E)
+   $reversemulti(%foo%)            ==>  "A; B; C; D; E"
 
-    $setmulti(bar,A; B; C; D; E)
-    $reversemulti(%bar%)            ==>  "E; D; C; B; A"
+   $setmulti(bar,A; B; C; D; E)
+   $reversemulti(%bar%)            ==>  "E; D; C; B; A"
 
-    $setmulti(baz,A:A; B:B; C:C,:)
-    $reversemulti(%baz%)            ==>  "C; B; C; A; B; A"
+   $setmulti(baz,A:A; B:B; C:C,:)
+   $reversemulti(%baz%)            ==>  "C; B; C; A; B; A"
 
-    $reversemulti(A; B; C; D; E)    ==>  "E; D; C; B; A"
-    $reversemulti(A:A; B:B; C:C,:)  ==>  "C:B; C:A; B:A"
+   $reversemulti(A; B; C; D; E)    ==>  "E; D; C; B; A"
+   $reversemulti(A:A; B:B; C:C,:)  ==>  "C:B; C:A; B:A"

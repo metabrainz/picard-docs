@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -23,152 +23,230 @@ msgstr ""
 msgid ":index:`Plugins Options <pair: configuration; plugins>`"
 msgstr ""
 
-#: ../../config/options_plugins.rst:9
+#: ../../config/options_plugins.rst:6
 msgid ""
-"This section allows you to manage the plugins used by Picard.  You can "
+"This section allows you to manage the plugins used by Picard. You can "
 "install new plugins or enable, disable or uninstall plugins that are "
-"currently installed.  Picard provides a list of plugins that have been "
-"submitted to the project.  A list of the standard plugins is available on "
-"the `plugins page <https://picard.musicbrainz.org/plugins/>`_ on the Picard "
-"website."
+"currently installed. Picard provides a list of plugins that have been "
+"submitted to the project. A list of the standard plugins is available on the "
+"`plugins page <https://picard.musicbrainz.org/plugins/>`_ on the Picard "
+"website. You are also presented with a list of the registered plugins when "
+"you choose to install a plugin."
 msgstr ""
 
-#: ../../config/options_plugins.rst:14
+#: ../../config/options_plugins.rst:13
 msgid ""
-"There are also a number of plugins available by :index:`third-party "
-"developers <plugins; third party>`.  Often these are discussed on the "
-"`Community Discussion Forum <https://community.metabrainz.org/>`_ so if "
-"you're looking for a particular enhancement or functionality, a search there "
-"might be useful.  In addition, one of the MusicBrainz editors, `Colby Ray "
-"<https://wiki.musicbrainz.org/User:Colbydray>`_ maintains an unofficial list "
-"of available plugins on a `wiki page <https://wiki.musicbrainz.org/User:"
-"Colbydray/PicardPlugins>`_.  Instructions regarding installation of third-"
-"party plugins are included in the :ref:`\"Installing Third-Party Plugins\" "
-"<ref_installingplugins>` section below."
+"The screen is divided into three sections. The top section includes the "
+"general plugin management action buttons, the middle section is the list of "
+"currently installed plugins, and the bottom section displays a brief log of "
+"the most recent plugin management actions executed."
+msgstr ""
+
+#: ../../config/options_plugins.rst:17
+msgid ""
+"When a plugin is installed, uninstalled, enabled or disabled, the action is "
+"processed immediately. These actions are not impacted by clicking either "
+"the  :guilabel:`Make It So!` or :guilabel:`Cancel` buttons. For example, "
+"clicking :guilabel:`Cancel` will not undo the action, and clicking :guilabel:"
+"`Restore Defaults` or :guilabel:`Restore all Defaults` will not make any "
+"changes to the status of the plugins."
+msgstr ""
+
+#: ../../config/options_plugins.rst:19
+msgid "When a new plugin is installed, it is automatically set as enabled."
 msgstr ""
 
 #: ../../config/options_plugins.rst:23
-msgid "Plugins List"
+msgid "Plugin Management"
 msgstr ""
 
 #: ../../config/options_plugins.rst:25
 msgid ""
-"The screen displays a list of the standard plugins and any others that have "
-"been installed.  Each plugin is displayed on a separate line showing the "
-"version number and one or more status / action icons.  The icons are:"
+"The general plugin management actions are :guilabel:`Install Plugin...` and :"
+"guilabel:`Refresh All`. In addition, there is a \"Search plugins...\" box "
+"that allows you to filter the list of plugins displayed in the plugin list."
 msgstr ""
 
-#: ../../config/options_plugins.rst:28
-msgid "img-plugin-download"
+#: ../../config/options_plugins.rst:29
+msgid "Installing a Plugin"
 msgstr ""
 
-#: ../../config/options_plugins.rst:32
-msgid "|img-plugin-download|"
-msgstr ""
-
-#: ../../config/options_plugins.rst:0
+#: ../../config/options_plugins.rst:31
 msgid ""
-"This icon indicates that the plugin is not installed.  Clicking the icon "
-"will download and install the plugin."
+"When the :guilabel:`Install Plugin...` button is clicked, a new dialog "
+"window will open to allow selecting the plugin to install. There are three "
+"tabs, which allow you to select the plugin from: the official plugin "
+"registry; a URL pointing to a third-party plugin; or a plugin on a local "
+"drive."
 msgstr ""
 
-#: ../../config/options_plugins.rst:37
-msgid "img-plugin-reload"
+#: ../../config/options_plugins.rst:34
+msgid "Installing from the registry"
+msgstr ""
+
+#: ../../config/options_plugins.rst:36
+msgid ""
+"When installing a plugin from the official plugin registry, you are "
+"presented with a list of available plugins not already installed from which "
+"to select. The list can be filtered by selecting a category or entering "
+"search text. Search text will be applied to the plugin name or description. "
+"Hovering your mouse pointer over a plugin will display a brief description "
+"of the plugin, and double-clicking a plugin will display additional "
+"information such as the plugin author, trust level, and a link to the plugin "
+"repository."
+msgstr ""
+
+#: ../../config/options_plugins.rst:38
+msgid "Each plugin in the official registry is assigned a trust level from:"
+msgstr ""
+
+#: ../../config/options_plugins.rst:40
+msgid "**official** 🛡️ - Maintained by the MusicBrainz Picard team"
 msgstr ""
 
 #: ../../config/options_plugins.rst:41
-msgid "|img-plugin-reload|"
+msgid "**trusted** ✓ - Well-known authors with an established reputation"
 msgstr ""
 
-#: ../../config/options_plugins.rst:0
+#: ../../config/options_plugins.rst:42
 msgid ""
-"This icon indicates that a newer version of the plugin is available.  "
-"Clicking the icon will download and install the updated version."
+"**community** ⚠️ - Other plugins (This is the default for new submissions)"
 msgstr ""
 
-#: ../../config/options_plugins.rst:46
-msgid "img-plugin-enabled"
-msgstr ""
-
-#: ../../config/options_plugins.rst:50
-msgid "|img-plugin-enabled|"
-msgstr ""
-
-#: ../../config/options_plugins.rst:0
+#: ../../config/options_plugins.rst:49
 msgid ""
-"This icon indicates that the plugin is installed and currently enabled.  "
-"Clicking the icon will disable the plugin, but it will still be installed."
+"Once you have selected a plugin and click :guilabel:`Install...`, you are "
+"asked to confirm the installation, and are able to select the version of the "
+"plugin to install. This can be a specific version number (tag), a branch "
+"such as \"main\" or \"development\" (if available), or a particular commit "
+"to the repository."
 msgstr ""
 
-#: ../../config/options_plugins.rst:55
-msgid "img-plugin-disabled"
+#: ../../config/options_plugins.rst:52
+msgid "Installing from a URL"
 msgstr ""
 
-#: ../../config/options_plugins.rst:59
-msgid "|img-plugin-disabled|"
-msgstr ""
-
-#: ../../config/options_plugins.rst:0
+#: ../../config/options_plugins.rst:54
 msgid ""
-"This icon indicates that the plugin is installed but currently disabled.  "
-"Clicking the icon will enable the plugin."
+"Sometimes plugin authors choose not to include one or more of their plugins "
+"in the official plugin registry. You can still install these plugins by "
+"providing the URL of the plugin repository to the installation dialog. The "
+"URL can usually be obtained directly from the plugin author, from a "
+"discussion on the `MetaBrainz Community Forum <https://community.metabrainz."
+"org>`_, from a user-maintained list in a blog or wiki, or by searching a Git "
+"repository provider such as GitHub. The MusicBrainz Picard team recommends "
+"that plugin repository names on GitHub (and other providers) begin with "
+"``picard-plugin-`` to help with their discovery when searching those "
+"platforms."
 msgstr ""
 
-#: ../../config/options_plugins.rst:64
-msgid "img-plugin-trash"
+#: ../../config/options_plugins.rst:61
+msgid ""
+"When installing a plugin from a URL, you must enter the URL to the "
+"repository of the plugin, and optionally the version of the plugin to "
+"install. The version can be a specific version number (tag), a branch such "
+"as \"main\" or \"development\" (if available), or a particular commit to the "
+"repository. If no verion is specified, you can select it from the "
+"confirmation dialog displayed."
+msgstr ""
+
+#: ../../config/options_plugins.rst:65
+msgid ""
+"Be careful when installing plugins from unknown sources, as plugins may pose "
+"security risks. Only install plugins from sources you trust."
 msgstr ""
 
 #: ../../config/options_plugins.rst:68
-msgid "|img-plugin-trash|"
+msgid "Installing from a local repository"
 msgstr ""
 
-#: ../../config/options_plugins.rst:0
+#: ../../config/options_plugins.rst:70
 msgid ""
-"This icon indicates that the plugin is currently installed.  Clicking the "
-"icon will uninstall the plugin."
+"You can also install a plugin from a local repository. This would typically "
+"be the case while testing a plugin during development."
 msgstr ""
 
-#: ../../config/options_plugins.rst:73
+#: ../../config/options_plugins.rst:77
 msgid ""
-"When a plugin in the list is selected (i.e.: highlighted), a brief "
-"description of the plugin will be shown in  the \"Details\" section below "
-"the list."
+"When installing a plugin from a local repository, you must enter the path to "
+"the repository of the plugin, and optionally the version of the plugin to "
+"install. The version can be a specific version number (tag), a branch such "
+"as \"main\" or \"development\" (if available), or a particular commit to the "
+"repository. If no verion is specified, you can select it from the "
+"confirmation dialog displayed."
 msgstr ""
 
 #: ../../config/options_plugins.rst:81
+msgid "Checking for Updates"
+msgstr ""
+
+#: ../../config/options_plugins.rst:83
+msgid ""
+"You can refresh the registry and check for updates to installed plugins by "
+"clicking the :guilabel:`Refresh All` button. If an update is found for an "
+"installed plugin it will be identified in the plugins list."
+msgstr ""
+
+#: ../../config/options_plugins.rst:90
+msgid ""
+"You can select which updates to apply and click the :guilabel:`Update All` "
+"button to perform the updates."
+msgstr ""
+
+#: ../../config/options_plugins.rst:94
+msgid "Plugins List"
+msgstr ""
+
+#: ../../config/options_plugins.rst:96
+msgid ""
+"The enabled status of a plugin can be toggled by using the check box to the "
+"left of the plugin name."
+msgstr ""
+
+#: ../../config/options_plugins.rst:98
+msgid ""
+"When a plugin in the list is selected, some details are displayed in a side "
+"panel for the selected plugin."
+msgstr ""
+
+#: ../../config/options_plugins.rst:105
+msgid ""
+"The display of this panel can be toggled using the :guilabel:`Show "
+"Details` / :guilabel:`Hide Details` button."
+msgstr ""
+
+#: ../../config/options_plugins.rst:107
+msgid ""
+"From the details panel you have the option to update the plugin (if an "
+"update is found to be available by using the :guilabel:`Refresh All` button) "
+"or uninstalling the plugin."
+msgstr ""
+
+#: ../../config/options_plugins.rst:109
+msgid ""
+"If you right-click on a plugin in the list, a context menu will be displayed."
+msgstr ""
+
+#: ../../config/options_plugins.rst:116
+msgid ""
+"From this menu, you can toggle the enabled status of the plugin, uninstall, "
+"reinstall or change the installed version (reference), view detailed "
+"information, open the plugin repository in your browser, or :doc:`manually "
+"set the order in which the plugins are executed "
+"<options_plugin_execution_order>`. The detailed information includes "
+"additional items such as the license, the link to the homepage for the "
+"plugin if available, and the directory that the plugin resides on your file "
+"system."
+msgstr ""
+
+#: ../../config/options_plugins.rst:123
 msgid ""
 "Some plugins have their own option page which will typically appear under "
 "the \"Plugins\" section of the Options."
 msgstr ""
 
-#: ../../config/options_plugins.rst:87
-msgid ":index:`Installing Third-Party Plugins <plugins; installing>`"
-msgstr ""
-
-#: ../../config/options_plugins.rst:89
+#: ../../config/options_plugins.rst:129
 msgid ""
-"You can install a third-party plugin that does not appear in the plugins "
-"list, using the following steps:"
-msgstr ""
-
-#: ../../config/options_plugins.rst:91
-msgid "Download the plugin and save it to a local drive."
-msgstr ""
-
-#: ../../config/options_plugins.rst:93
-msgid ""
-"Select the :guilabel:`Install plugin...` action, located just below the list "
-"of plugins."
-msgstr ""
-
-#: ../../config/options_plugins.rst:98
-msgid ""
-"Navigate to the file you downloaded in Step 1 and select it.  The file will "
-"be copied to the plugin folder, and will appear in the list of plugins."
-msgstr ""
-
-#: ../../config/options_plugins.rst:101
-msgid ""
-"Enable the plugin if desired, and select the :guilabel:`Make It So!` action "
-"button at the bottom of the window."
+"Please see the :doc:`options_plugin_execution_order` section for more "
+"information about manually setting the order in which plugins are executed."
 msgstr ""

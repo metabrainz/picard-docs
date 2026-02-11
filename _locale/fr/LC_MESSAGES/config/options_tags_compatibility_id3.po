@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2023-05-09 16:06+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -32,30 +32,30 @@ msgstr "**Version ID3v2**"
 #: ../../config/options_tags_compatibility_id3.rst:11
 msgid ""
 "ID3v2.4 is the latest version and the default since Picard 2.9. Most modern "
-"software and devices can read ID3v2.4 tags.  If you encounter issues with "
-"tag reading with your music player try using v2.3 instead."
+"software and devices can read ID3v2.4 tags. If you encounter issues with tag "
+"reading with your music player try using v2.3 instead."
 msgstr ""
 "ID3v2.4 est la dernière version et la version par défaut depuis Picard 2.9. "
 "La plupart des logiciels et appareils modernes peuvent lire les tags "
-"ID3v2.4.  Si vous rencontrez des problèmes de lecture avec votre lecteur de "
+"ID3v2.4. Si vous rencontrez des problèmes de lecture avec votre lecteur de "
 "musique, essayez d'utiliser la version 2.3."
 
-#: ../../config/options_tags_compatibility_id3.rst:15
+#: ../../config/options_tags_compatibility_id3.rst:13
 msgid ""
 "Other than native support for multi-valued tags in v2.4, the :doc:`Picard "
-"Tag Mapping </appendices/tag_mapping>` section will show you what you lose "
+"Tag Mapping <../appendices/tag_mapping>` section will show you what you lose "
 "when choosing v2.3 instead of v2.4."
 msgstr ""
 "Outre la prise en charge native des balises à valeurs multiples dans la "
-"v2.4, la section :doc:`Correspondances des balises Picardes </appendices/"
+"v2.4, la section :doc:`Correspondances des balises Picardes <../appendices/"
 "tag_mapping>` vous montrera ce que vous perdez en choisissant v2.3 au lieu "
 "de v2.4."
 
-#: ../../config/options_tags_compatibility_id3.rst:18
+#: ../../config/options_tags_compatibility_id3.rst:15
 msgid "**ID3v2 text encoding**"
 msgstr "**Encodage de texte ID3v2**"
 
-#: ../../config/options_tags_compatibility_id3.rst:20
+#: ../../config/options_tags_compatibility_id3.rst:17
 msgid ""
 "The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16. "
 "Use ISO-8859-1 only if you face compatibility issues with your player."
@@ -64,11 +64,11 @@ msgstr ""
 "pour la version 2.3 est UTF-16. N'utilisez ISO-8859-1 que si vous rencontrez "
 "des problèmes de compatibilité avec votre lecteur."
 
-#: ../../config/options_tags_compatibility_id3.rst:23
+#: ../../config/options_tags_compatibility_id3.rst:19
 msgid "**Join ID3v23 tags with**"
 msgstr "**Rejoignez les tags ID3v23 avec**"
 
-#: ../../config/options_tags_compatibility_id3.rst:25
+#: ../../config/options_tags_compatibility_id3.rst:21
 msgid ""
 "As mentioned above, ID3v2.3 does not support multi-value tags, and so Picard "
 "flattens these to strings before saving them to ID3v2.3 tags. This setting "
@@ -86,9 +86,9 @@ msgstr ""
 "compatibilité visuelle en Picard entre ID3v2.3 et d'autres formats de "
 "balisage."
 
-#: ../../config/options_tags_compatibility_id3.rst:32
+#: ../../config/options_tags_compatibility_id3.rst:25
 msgid ""
-"This setting is explicitly only for ID3 v2.3 tags, because those don’t "
+"This setting is explicitly only for ID3 v2.3 tags, because those don't "
 "support proper multi value tags. Hence this separator setting is actually "
 "more of a workaround to this fact."
 msgstr ""
@@ -97,7 +97,7 @@ msgstr ""
 "conséquent, ce paramètre de séparateur est en fait plus une solution de "
 "contournement à ce fait."
 
-#: ../../config/options_tags_compatibility_id3.rst:35
+#: ../../config/options_tags_compatibility_id3.rst:27
 msgid ""
 "Because Vorbis tags allow the same tag to exist multiple times, and hence "
 "support multi valued tags by default, there actually is no separator at all "
@@ -110,7 +110,7 @@ msgstr ""
 "multiples, affichées en utilisant tout ce que le logiciel du lecteur utilise "
 "comme séparateur."
 
-#: ../../config/options_tags_compatibility_id3.rst:39
+#: ../../config/options_tags_compatibility_id3.rst:29
 msgid ""
 "If for some reason you want all the values of the tag in a single field "
 "separated by some separator you could use a script like:"
@@ -119,15 +119,15 @@ msgstr ""
 "dans un seul champ séparé par un séparateur, vous pouvez utiliser un script "
 "comme:"
 
-#: ../../config/options_tags_compatibility_id3.rst:46
+#: ../../config/options_tags_compatibility_id3.rst:35
 msgid "to flatten all the values into a single field separated by \" / \"."
 msgstr "pour aplatir toutes les valeurs dans un seul champ séparé par \" / \"."
 
-#: ../../config/options_tags_compatibility_id3.rst:48
+#: ../../config/options_tags_compatibility_id3.rst:37
 msgid "**Save iTunes compatible grouping and work**"
 msgstr "**Enregistrez le regroupement compatible iTunes et travaillez**"
 
-#: ../../config/options_tags_compatibility_id3.rst:50
+#: ../../config/options_tags_compatibility_id3.rst:39
 msgid ""
 "Save the tags grouping and work so that they are compatible with current "
 "iTunes versions. Without this option grouping will be displayed in iTunes as "
@@ -138,15 +138,15 @@ msgstr ""
 "regroupement sera affiché dans iTunes en tant que \"nom de travail\" et le "
 "travail ne sera pas disponible."
 
-#: ../../config/options_tags_compatibility_id3.rst:53
+#: ../../config/options_tags_compatibility_id3.rst:41
 msgid ""
-"See the :doc:`Picard Tag Mapping </appendices/tag_mapping>` section for "
+"See the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for "
 "details."
 msgstr ""
-"Voir la section :doc:`Correspondances des balises Picardes </appendices/"
+"Voir la section :doc:`Correspondances des balises Picardes <../appendices/"
 "tag_mapping>` pour plus de détails."
 
-#: ../../config/options_tags_compatibility_id3.rst:57
+#: ../../config/options_tags_compatibility_id3.rst:45
 msgid ""
 "For other players supporting grouping and work you might need to disable "
 "this option. `MusicBee <https://getmusicbee.com/>`_ is one example of this."
@@ -155,11 +155,11 @@ msgstr ""
 "vous devrez peut-être désactiver cette option. `MusicBee <https://"
 "getmusicbee.com/>`_ en est un exemple."
 
-#: ../../config/options_tags_compatibility_id3.rst:60
+#: ../../config/options_tags_compatibility_id3.rst:47
 msgid "**Also include ID3v1 tags in the files**"
 msgstr "** Incluez également les balises ID3v1 dans les fichiers **"
 
-#: ../../config/options_tags_compatibility_id3.rst:62
+#: ../../config/options_tags_compatibility_id3.rst:49
 msgid ""
 "This is not recommended at all. ID3v1.1 tags are obsolete and may not work "
 "with non-latin scripts."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: 2021-10-11 00:14+0000\n"
 "Last-Translator: inkhorn <inkhorn@hostux.ninja>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
@@ -37,18 +37,18 @@ msgstr ""
 
 #: ../../usage/option_profiles.rst:11
 msgid ""
-"A profile is defined by a set of options it manages.  For example, one "
+"A profile is defined by a set of options it manages. For example, one "
 "profile may include settings for file naming such as the target directory "
 "and which file naming script to use, while another profile may include "
 "different settings for the same options or different options entirely (or "
-"some of each).  Profiles are stacked and processed in the order specified by "
+"some of each). Profiles are stacked and processed in the order specified by "
 "the user, from top to bottom with the lowest level being the system's \"user "
-"settings\" profile.  Each user-defined profile can be enabled or disabled "
-"independently from the other user-defined profiles.  The system's \"user "
+"settings\" profile. Each user-defined profile can be enabled or disabled "
+"independently from the other user-defined profiles. The system's \"user "
 "settings\" profile is always enabled and includes all options."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:18
+#: ../../usage/option_profiles.rst:13
 msgid ""
 "When an option value is retrieved as part of Picard's processing, it comes "
 "from the first enabled profile in the stack that manages that option. "
@@ -56,51 +56,51 @@ msgid ""
 "profile, which holds the default settings for the user."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:23
+#: ../../usage/option_profiles.rst:16
 msgid "Example of Using Profiles"
 msgstr ""
 
-#: ../../usage/option_profiles.rst:25
+#: ../../usage/option_profiles.rst:18
 msgid ""
 "For this example, the user would like to define a set of options with "
 "alternate values, in this case a target directory where audio files are "
 "saved (option ``move_files_to``)."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:28
+#: ../../usage/option_profiles.rst:20
 msgid ""
 "The user creates a new profile (named \"TargetMyDir\"), adds the option "
 "``move_files_to`` to it, and enables this profile. The stack is now:"
 msgstr ""
 
-#: ../../usage/option_profiles.rst:37
+#: ../../usage/option_profiles.rst:28
 msgid ""
 "They change the value of ``move_files_to`` (to \"target_my_dir\") for this "
 "new profile."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:39
+#: ../../usage/option_profiles.rst:30
 msgid ""
 "Since the profile \"TargetMyDir\" is enabled, the value for "
-"``move_files_to`` is retrieved from this profile.  The \"user settings\" "
+"``move_files_to`` is retrieved from this profile. The \"user settings\" "
 "still has the old ``move_files_to`` value."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:42
+#: ../../usage/option_profiles.rst:32
 msgid ""
 "Now the user wants to work on another set of music files, wanting to disable "
-"``windows_compatibility`` for this set and save them to the \"not_for_windows"
-"\" directory."
+"``windows_compatibility`` for this set and save them to the "
+"\"not_for_windows\" directory."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:45
+#: ../../usage/option_profiles.rst:34
 msgid ""
 "They create a new profile (named \"ByeByeWin\"), add options "
 "``move_files_to`` and ``windows_compatibility``, and enable it. Now the "
 "stack looks like:"
 msgstr ""
 
-#: ../../usage/option_profiles.rst:54
+#: ../../usage/option_profiles.rst:42
 msgid ""
 "They change the values of ``move_files_to`` (to \"not_for_windows\") and "
 "``windows_compatibility`` (to false) for this new profile. Now when they "
@@ -108,61 +108,61 @@ msgid ""
 "``move_files_to`` directory, with ``windows_compatibility`` = false."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:57
+#: ../../usage/option_profiles.rst:44
 msgid ""
 "Now the user wants to save files to the \"TargetMyDir\" target directory "
-"again, with their usual options.  To do this they simply disable the "
-"\"ByeByeWin\" profile (which can later be re-enabled if needed).  The stack "
+"again, with their usual options. To do this they simply disable the "
+"\"ByeByeWin\" profile (which can later be re-enabled if needed). The stack "
 "looks like:"
 msgstr ""
 
-#: ../../usage/option_profiles.rst:66
+#: ../../usage/option_profiles.rst:52
 msgid ""
 "Finally, to return to their usual output directory the user only has to "
 "disable the \"TargetMyDir\" profile so the stack is:"
 msgstr ""
 
-#: ../../usage/option_profiles.rst:76
+#: ../../usage/option_profiles.rst:62
 msgid "Managing Option Profiles"
 msgstr ""
 
-#: ../../usage/option_profiles.rst:78
+#: ../../usage/option_profiles.rst:64
 msgid ""
 "All option profile management is done within the Option Profiles page "
 "available from the :menuselection:`\"Options --> Options...\"` item on the "
-"menu bar.  From this screen you will be able to add, copy, edit, remove, "
+"menu bar. From this screen you will be able to add, copy, edit, remove, "
 "enable and disable profiles, as well as setting the order of the profile "
 "stack."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:82
+#: ../../usage/option_profiles.rst:66
 msgid ""
-"Initially, the list of profiles will be empty.  To create a new profile "
-"click on the :guilabel:`New` button.  This will create a profile with no "
-"options selected for the profile to manage.  To rename the profile, right-"
-"click on the profile name and select the :menuselection:`\"Rename profile\"` "
-"command.  The list of options that the profile is to manage are selected "
-"from the list in the right-hand pane.  Options can be selected either by "
-"group or individually.  The groups can be expanded to see the individual "
-"options belonging to that group."
+"Initially, the list of profiles will be empty. To create a new profile click "
+"on the :guilabel:`New` button. This will create a profile with no options "
+"selected for the profile to manage. To rename the profile, right-click on "
+"the profile name and select the :menuselection:`\"Rename profile\"` command. "
+"The list of options that the profile is to manage are selected from the list "
+"in the right-hand pane. Options can be selected either by group or "
+"individually. The groups can be expanded to see the individual options "
+"belonging to that group."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:91
+#: ../../usage/option_profiles.rst:73
 msgid ""
 "You can see the value currently assigned to a profile's option setting by "
 "hovering your cursor over the setting in the list. The value will be "
 "displayed as a tooltip for the setting."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:97
+#: ../../usage/option_profiles.rst:80
 msgid ""
 "The profile stack order can be rearranged either by selecting a profile and "
 "using the up and down arrow buttons below the list, or by dragging the "
-"profile to a new position in the stack.  Profiles are enabled when the box "
+"profile to a new position in the stack. Profiles are enabled when the box "
 "beside the profile's name is checked."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:101
+#: ../../usage/option_profiles.rst:82
 msgid ""
 "Changes made to a profile's options settings, enabled status, or position in "
 "the profile stack will be reflected in the option settings displayed on the "
@@ -181,27 +181,27 @@ msgstr ""
 "pilha de perfis, que corresponde à configuração que será usada durante o "
 "processamento."
 
-#: ../../usage/option_profiles.rst:107
+#: ../../usage/option_profiles.rst:84
 msgid ""
 "You can also quickly enable or disable a profile (but not change the order "
 "of the profile stack), using the :menuselection:`\"Options --> Enable/"
 "disable profiles\"` item in the menu bar on Picard's main screen."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:110
+#: ../../usage/option_profiles.rst:86
 msgid ""
 "When you click the :guilabel:`Make It So!` button, in addition to saving "
 "your updated profile configuration all highlighted options will be saved to "
 "the first enabled profile in the profile stack that controls that option. "
-"All other options will be saved to the \"user settings\" as before.  This is "
+"All other options will be saved to the \"user settings\" as before. This is "
 "described in more detail in the following section."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:115
+#: ../../usage/option_profiles.rst:89
 msgid "Saving Profile Option Settings"
 msgstr ""
 
-#: ../../usage/option_profiles.rst:117
+#: ../../usage/option_profiles.rst:91
 msgid ""
 "To save a value to a profile option setting, simply ensure that the the "
 "target profile is the first enabled profile in the profile stack, make the "
@@ -209,7 +209,7 @@ msgid ""
 "guilabel:`Make It So!` button."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:126
+#: ../../usage/option_profiles.rst:103
 msgid ""
 "Remember, all highlighted options will be saved to the first enabled profile "
 "in the profile stack that controls that option. All other options will be "
@@ -218,23 +218,23 @@ msgid ""
 "will update by hovering your cursor over the option."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:133
+#: ../../usage/option_profiles.rst:110
 msgid ""
 "From the pages which contain options that can be included on a profile, you "
 "will also be able to see which profiles, if any, manage any of the options "
-"on the page.  This is done by clicking the :guilabel:`Attached Profiles` "
+"on the page. This is done by clicking the :guilabel:`Attached Profiles` "
 "button."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:139
+#: ../../usage/option_profiles.rst:117
 msgid ""
 "This lists the attached profiles in the order in which they appear in the "
-"profile stack, and whether or not the profile is enabled.  If the page does "
+"profile stack, and whether or not the profile is enabled. If the page does "
 "not contain any options that could be managed by a profile, the :guilabel:"
 "`Attached Profiles` button will be disabled."
 msgstr ""
 
-#: ../../usage/option_profiles.rst:145
+#: ../../usage/option_profiles.rst:121
 msgid ""
 "It is important to understand that when you click the :guilabel:`Make It So!"
 "` button **all** of the option settings on **all** pages will be saved. If "
@@ -244,6 +244,6 @@ msgid ""
 "enabled profiles that manage the option, the option will not be highlighted "
 "and it will be saved to the \"user settings\" profile which is the user's "
 "normal settings, contains all options, is at the bottom of the profile "
-"stack, and is always enabled.  The \"user settings\" profile cannot be "
+"stack, and is always enabled. The \"user settings\" profile cannot be "
 "modified is not shown in the profile management page."
 msgstr ""

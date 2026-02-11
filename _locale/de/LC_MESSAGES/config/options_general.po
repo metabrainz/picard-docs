@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-29 14:34-0600\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: 2021-08-24 12:51+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translate.uploadedlobster.com/projects/picard-"
@@ -35,7 +35,7 @@ msgid ""
 "MusicBrainz server)."
 msgstr ""
 
-#: ../../config/options_general.rst:14
+#: ../../config/options_general.rst:13
 msgid ""
 "In addition to the standard MusicBrainz servers provided in the drop down "
 "list, you can manually enter an alternate address, such as \"localhost\" if "
@@ -44,11 +44,11 @@ msgid ""
 "confirm that you want to submit all data to this alternate server."
 msgstr ""
 
-#: ../../config/options_general.rst:22
+#: ../../config/options_general.rst:18
 msgid "**Port**"
 msgstr "**Port**"
 
-#: ../../config/options_general.rst:24
+#: ../../config/options_general.rst:20
 msgid ""
 "The port number for the server. Default value: 443 (for the main MusicBrainz "
 "server)."
@@ -56,65 +56,65 @@ msgstr ""
 "Die Port-Nummer für den Server. Standardwert: 80 (für den MusicBrainz "
 "Hauptserver)."
 
-#: ../../config/options_general.rst:26
+#: ../../config/options_general.rst:22
 msgid "**Username**"
 msgstr ""
 
-#: ../../config/options_general.rst:28
+#: ../../config/options_general.rst:24
 msgid ""
 "Your MusicBrainz website username, used to submit acoustic fingerprints, "
 "retrieve and save items to your collections, and retrieve personal "
 "folksonomy tags."
 msgstr ""
 
-#: ../../config/options_general.rst:31
+#: ../../config/options_general.rst:26
 msgid "**Password**"
 msgstr ""
 
-#: ../../config/options_general.rst:33
+#: ../../config/options_general.rst:28
 msgid "Your MusicBrainz website password."
 msgstr ""
 
-#: ../../config/options_general.rst:35
+#: ../../config/options_general.rst:30
 msgid "**Automatically scan all new files**"
 msgstr "**Alle neuen Dateien automatisch analysieren**"
 
-#: ../../config/options_general.rst:37
+#: ../../config/options_general.rst:32
 msgid ""
 "Check this box if you want Picard to scan each music file you add and look "
 "for an :index:`AcoustID <pair: AcoustID; automatic scan>` fingerprint. This "
 "takes time, but may be helpful for you and MusicBrainz. Leave it unchecked "
 "if you don't want Picard to do this scan automatically. In any case, you can "
 "direct Picard to scan a particular music file at any time using :"
-"menuselection:`\"Tools --> Scan\"`. See also :ref:`ref_scan_files` and :ref:"
-"`ref_tutorial_acoustid`."
+"menuselection:`\"Tools --> Scan\"`. See also :ref:`Scan Files "
+"<ref_scan_files>` and :ref:`ref_tutorial_acoustid`."
 msgstr ""
 
-#: ../../config/options_general.rst:43
+#: ../../config/options_general.rst:34
 #, fuzzy
 msgid "**Automatically cluster all new files**"
 msgstr "**Alle neuen Dateien automatisch analysieren**"
 
-#: ../../config/options_general.rst:45
+#: ../../config/options_general.rst:36
 msgid ""
 "Check this box if you want Picard to automatically group all loaded files "
 "into album :index:`clusters <pair: cluster; automatic clustering>`. Leave it "
 "unchecked if you don't want Picard to do this automatically. In any case, "
 "you can direct Picard to cluster files any time using :menuselection:"
-"`\"Tools --> Cluster\"`. See also :ref:`ref_lookup_files`."
+"`\"Tools --> Cluster\"`. See also :ref:`Lookup Files <ref_lookup_files>`."
 msgstr ""
 
-#: ../../config/options_general.rst:52
+#: ../../config/options_general.rst:40
 msgid ""
 "You can either enable \"Automatically scan all new files\" or "
 "\"Automatically cluster all new files\", but not both."
 msgstr ""
 
-#: ../../config/options_general.rst:55
+#: ../../config/options_general.rst:42
 msgid "**Ignore MBIDs when loading new files**"
 msgstr "**MBIDs beim Laden neuer Dateien ignorieren**"
 
-#: ../../config/options_general.rst:57
+#: ../../config/options_general.rst:44
 msgid ""
 "If you enable this option Picard will not use MusicBrainz identifiers "
 "(MBIDs) stored in the files to automatically load the corresponding "
@@ -123,37 +123,47 @@ msgid ""
 "previously tagged with incorrect information."
 msgstr ""
 
-#: ../../config/options_general.rst:62
+#: ../../config/options_general.rst:46
 #, fuzzy
-msgid "**Check for plugin updates during start-up**"
+msgid "**Check for documentation updates during start-up**"
 msgstr "**Beim Start nach Updates suchen**"
 
-#: ../../config/options_general.rst:64
+#: ../../config/options_general.rst:48
 msgid ""
 "This option determines whether or not Picard will automatically check for :"
-"index:`plugin updates <pair: configuration; plugin update checking>` during "
-"startup.  If this is enabled and an update to an installed plugin is "
-"available, a popup message will be displayed."
+"index:`available versions and languages on ReadTheDocs <pair: configuration; "
+"documentation checking>` during startup in order to provide the best match "
+"when displaying a help page. If this is disabled, the latest version of the "
+"documentation will be displayed in English in your web browser."
 msgstr ""
 
-#: ../../config/options_general.rst:66
+#: ../../config/options_general.rst:50
+msgid ""
+"If the option is disabled, a popup message will be displayed during startup "
+"asking if you want to enable the documentation checking. The message also "
+"includes an option to disable the popup from displaying in the future. The "
+"popup can also be enabled or disabled through a setting in the :doc:"
+"`options_interface` section."
+msgstr ""
+
+#: ../../config/options_general.rst:56
 #, fuzzy
 msgid "**Check for program updates during start-up**"
 msgstr "**Beim Start nach Updates suchen**"
 
-#: ../../config/options_general.rst:68
+#: ../../config/options_general.rst:58
 msgid ""
 "This option determines whether or not Picard will automatically check for :"
 "index:`program updates <pair: configuration; program update checking>` "
-"during startup.  In any case, you can have Picard check for program updates "
+"during startup. In any case, you can have Picard check for program updates "
 "at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
 
-#: ../../config/options_general.rst:72
+#: ../../config/options_general.rst:60
 msgid "**Days between checks**"
 msgstr "**Tage zwischen Überprüfungen**"
 
-#: ../../config/options_general.rst:74
+#: ../../config/options_general.rst:62
 msgid ""
 "This option allows you to limit the automatic program update checking by "
 "selecting the interval, in days, between checks. Set this to 1 if you want "
@@ -161,35 +171,35 @@ msgid ""
 "if the \"Check for program updates during start-up\" option is enabled."
 msgstr ""
 
-#: ../../config/options_general.rst:78
+#: ../../config/options_general.rst:64
 msgid "**Updates to check**"
 msgstr "**Überprüfen auf**"
 
-#: ../../config/options_general.rst:80
+#: ../../config/options_general.rst:66
 msgid ""
 "This option allows you to select which levels of program update to check. "
 "Your options are:"
 msgstr ""
 
-#: ../../config/options_general.rst:82
+#: ../../config/options_general.rst:68
 msgid "Stable releases only"
 msgstr "Nur stabile Versionen"
 
-#: ../../config/options_general.rst:83
+#: ../../config/options_general.rst:69
 msgid "Stable and Beta releases"
 msgstr "Stabile und Beta-Versionen"
 
-#: ../../config/options_general.rst:84
+#: ../../config/options_general.rst:70
 msgid "Stable, Beta and Dev releases"
 msgstr "Stabile, Beta- und Entwicklungs-Versionen"
 
-#: ../../config/options_general.rst:86
+#: ../../config/options_general.rst:72
 msgid ""
 "For example, if you subscribe to \"Stable releases only\" you will not be "
 "notified if a new Beta or Dev release is issued."
 msgstr ""
 
-#: ../../config/options_general.rst:91
+#: ../../config/options_general.rst:76
 msgid ""
 "The program update checking related settings and :menuselection:`\"Help --> "
 "Check for update...\"` command may not be available when Picard is "

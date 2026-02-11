@@ -10,8 +10,7 @@ $eq_all
 
 **Description:**
 
-Returns true if ``x`` equals ``a1`` and ``a2``, etc.  Can be used with an arbitrary
-number of arguments.  Note that comparisons are case-sensitive.
+Returns true if ``x`` equals ``a1`` and ``a2``, etc. Can be used with an arbitrary number of arguments. Note that comparisons are case-sensitive.
 
 Functionally equivalent to ``$and($eq(x,a1),$eq(x,a2) ...)``.
 
@@ -27,8 +26,8 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $eq_all(A,A,B,C)    ==>  ""   (False)
-    $eq_all(A,a,A,A)    ==>  ""   (False)
-    $eq_all(A,A,A,A)    ==>  "1"  (True)
-    $eq_all(,,,)        ==>  "1"  (True)
-    $eq_all(,a,)        ==>  ""   (False)
+   $eq_all(A,A,B,C)    ==>  ""   (False)
+   $eq_all(A,a,A,A)    ==>  ""   (False)
+   $eq_all(A,A,A,A)    ==>  "1"  (True)
+   $eq_all(,,,)        ==>  "1"  (True)
+   $eq_all(,a,)        ==>  ""   (False)

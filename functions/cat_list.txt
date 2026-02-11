@@ -38,6 +38,7 @@ Conditional Functions
    func_inmulti
    func_is_audio
    func_is_complete
+   func_is_multi
    func_is_video
    func_lt
    func_lte
@@ -56,8 +57,15 @@ Information Functions
    :maxdepth: 0
    :caption: The information scripting functions are:
 
+   func_countryname
+   func_dateformat
    func_datetime
+   func_day
    func_matchedtracks
+   func_max
+   func_min
+   func_month
+   func_year
 
 
 Loop Functions
@@ -102,14 +110,17 @@ Multi-Value Functions
    :maxdepth: 0
    :caption: The multi-value scripting functions are:
 
+   func_cleanmulti
    func_getmulti
    func_join
    func_lenmulti
    func_map
    func_performer
+   func_replacemulti
    func_reversemulti
    func_slice
    func_sortmulti
+   func_unique
 
 
 Text Functions

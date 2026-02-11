@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,61 +16,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../tutorials/multiple_release_countries.rst:4
-msgid "Handling of :index:`multiple release countries <multiple release countries, release countries; multiple>`"
+msgid ""
+"Handling of :index:`multiple release countries <multiple release countries, "
+"release countries; multiple>`"
 msgstr ""
 
 #: ../../tutorials/multiple_release_countries.rst:8
-msgid "Some releases, especially digital releases, can have a very long list of release countries, sometimes listing all of the world's countries except for a few where the release is not officially available. Picard offers some tools to handle this."
+msgid ""
+"Some releases, especially digital releases, can have a very long list of "
+"release countries, sometimes listing all of the world's countries except for "
+"a few where the release is not officially available. Picard offers some "
+"tools to handle this."
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:11
-msgid "Let’s take the release **Bleach**, by Nirvana (MusicBrainz release `adab3feb-1822-4d27-a997-db7d6c9688c0 <https://musicbrainz.org/release/adab3feb-1822-4d27-a997-db7d6c9688c0>`_) as an example."
+#: ../../tutorials/multiple_release_countries.rst:10
+msgid ""
+"Let's take the release **Bleach**, by Nirvana (MusicBrainz release "
+"`adab3feb-1822-4d27-a997-db7d6c9688c0 <https://musicbrainz.org/release/"
+"adab3feb-1822-4d27-a997-db7d6c9688c0>`_) as an example."
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:14
-msgid "By default Picard will write a single ``releasecountry`` tag to the files. Prior to v2.3.1, Picard had been populating the tag with what the MusicBrainz server returned as the country for the release. If there were multiple release events, this country field was just filled with the first one in alphabetical order (Afghanistan in our example). Picard v2.3.1 introduced some options to better handle this."
+#: ../../tutorials/multiple_release_countries.rst:12
+msgid ""
+"By default Picard will write a single ``releasecountry`` tag to the files. "
+"Prior to v2.3.1, Picard had been populating the tag with what the "
+"MusicBrainz server returned as the country for the release. If there were "
+"multiple release events, this country field was just filled with the first "
+"one in alphabetical order (Afghanistan in our example). Picard v2.3.1 "
+"introduced some options to better handle this."
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:20
+#: ../../tutorials/multiple_release_countries.rst:16
 msgid "Using preferred release countries"
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:22
-msgid "If you configure preferred release countries in :menuselection:`\"Options --> Metadata --> Preferred Releases\"`. Picard will use the first country from the preferred release countries that is also in the list of release events. So if you have configured preferred release countries to be Europe, Canada, Germany and UK, for our example that would mean the ``releasecountry`` tag gets set to Canada."
+#: ../../tutorials/multiple_release_countries.rst:18
+msgid ""
+"If you configure preferred release countries in :menuselection:`\"Options --"
+"> Metadata --> Preferred Releases\"`. Picard will use the first country from "
+"the preferred release countries that is also in the list of release events. "
+"So if you have configured preferred release countries to be Europe, Canada, "
+"Germany and UK, for our example that would mean the ``releasecountry`` tag "
+"gets set to Canada."
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:28
+#: ../../tutorials/multiple_release_countries.rst:22
 msgid "Using scripting to set a different country"
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:30
-msgid "Picard v2.3.1 also added a new variable ``%_releasecountries%``, which provides the complete list of release countries for a release as a multi-value variable. You can use this to set different values for the ``releasecountry`` tag."
+#: ../../tutorials/multiple_release_countries.rst:24
+msgid ""
+"Picard v2.3.1 also added a new variable ``%_releasecountries%``, which "
+"provides the complete list of release countries for a release as a multi-"
+"value variable. You can use this to set different values for the "
+"``releasecountry`` tag."
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:33
-msgid "For example, the following script would set it to \"\\[International\\]\" if there are 10 or more release countries:"
+#: ../../tutorials/multiple_release_countries.rst:26
+msgid ""
+"For example, the following script would set it to \"\\[International\\]\" if "
+"there are 10 or more release countries:"
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:39
-msgid "Of course you can adjust the count and the replacement text to your liking. You can also choose to save the entire list instead of just a single country to this tag using the script:"
+#: ../../tutorials/multiple_release_countries.rst:32
+msgid ""
+"Of course you can adjust the count and the replacement text to your liking. "
+"You can also choose to save the entire list instead of just a single country "
+"to this tag using the script:"
+msgstr ""
+
+#: ../../tutorials/multiple_release_countries.rst:38
+msgid ""
+"Perhaps you prefer to limit this list to the first few entries. The "
+"following example just uses the first 6 countries:"
 msgstr ""
 
 #: ../../tutorials/multiple_release_countries.rst:46
-msgid "Perhaps you prefer to limit this list to the first few entries. The following example just uses the first 6 countries:"
-msgstr ""
-
-#: ../../tutorials/multiple_release_countries.rst:54
 msgid "What's missing?"
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:56
-msgid "Countries are currently written to the tags as their ISO 3166-1 country code, with some special values added for historical countries and things like \\[Europe\\] or \\[Worldwide\\]. These codes are not always easily recognizable or obvious, such as \"DZ\" for Algeria or \"DE\" for Germany. You can of course use scripting to make these more readable.  For example, if you want to see \"United Kingdom\" instead of \"GB\" in this tag use:"
+#: ../../tutorials/multiple_release_countries.rst:48
+msgid ""
+"Countries are currently written to the tags as their ISO 3166-1 country "
+"code, with some special values added for historical countries and things "
+"like \\[Europe\\] or \\[Worldwide\\]. These codes are not always easily "
+"recognizable or obvious, such as \"DZ\" for Algeria or \"DE\" for Germany. "
+"You can of course use scripting to make these more readable. For example, if "
+"you want to see \"United Kingdom\" instead of \"GB\" in this tag use:"
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:64
-msgid "This might work if you deal only with a couple of countries in your collection, or you just want to handle some special cases like using \"Europe\" instead of \"XE\" such as in the following script:"
+#: ../../tutorials/multiple_release_countries.rst:54
+msgid ""
+"This might work if you deal only with a couple of countries in your "
+"collection, or you just want to handle some special cases like using "
+"\"Europe\" instead of \"XE\" such as in the following script:"
 msgstr ""
 
-#: ../../tutorials/multiple_release_countries.rst:74
-msgid "A simpler method would be to use the ``$countryname()`` function introduced in Picard v2.7 to easily convert the code into a readable name, such as in the following scripts:"
+#: ../../tutorials/multiple_release_countries.rst:63
+msgid ""
+"A simpler method would be to use the ``$countryname()`` function introduced "
+"in Picard v2.7 to easily convert the code into a readable name, such as in "
+"the following scripts:"
 msgstr ""

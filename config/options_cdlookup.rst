@@ -1,12 +1,11 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`CD Lookup Options <configuration; cd lookup>`
-======================================================
+=====================================================
 
 This section allows you to select which CD ROM device to use by default for looking up a CD.
 
-On Windows and Linux systems, you can override this setting by clicking on :menuselection:`"Tools -->
-Lookup CD..."` and selecting the desired device from the list of available devices.
+On Windows and Linux systems, you can override this setting by clicking on :menuselection:`"Tools --> Lookup CD..."` and selecting the desired device from the list of available devices.
 
 .. only:: html and not epub
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: 2020-11-19 16:20-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -24,13 +24,14 @@ msgstr ""
 msgid ":index:`AAC Files <configuration; aac tag options>`"
 msgstr ":index:`Fichiers AAC <configuration; options de balise aac>`"
 
-#: ../../config/options_tags_compatibility_aac.rst:9
+#: ../../config/options_tags_compatibility_aac.rst:6
+#, fuzzy
 msgid ""
 "Picard can save APEv2 tags to pure AAC files, which by default do not "
 "support tagging. APEv2 tags in AAC are supported by some players, but "
 "players not supporting AAC files with APEv2 tags can have issues loading and "
 "playing those files. To deal with this you can choose whether to save tags "
-"to those files:"
+"to those files."
 msgstr ""
 "Picard peut enregistrer les balises APEv2 dans des fichiers AAC purs, qui "
 "par défaut ne prennent pas en charge le balisage. Les balises APEv2 dans AAC "
@@ -40,19 +41,19 @@ msgstr ""
 "fichiers. Pour gérer cela, vous pouvez choisir d'enregistrer les balises "
 "dans ces fichiers:"
 
-#: ../../config/options_tags_compatibility_aac.rst:13
+#: ../../config/options_tags_compatibility_aac.rst:11
 msgid "**Save APEv2 tags**"
 msgstr "** Enregistrer les tags APEv2 **"
 
-#: ../../config/options_tags_compatibility_aac.rst:15
+#: ../../config/options_tags_compatibility_aac.rst:13
 msgid "Picard will save APEv2 tags to the files."
 msgstr "Picard enregistrera les balises APEv2 dans les fichiers."
 
-#: ../../config/options_tags_compatibility_aac.rst:17
+#: ../../config/options_tags_compatibility_aac.rst:15
 msgid "**Do not save tags**"
 msgstr "**Ne pas enregistrer les tags**"
 
-#: ../../config/options_tags_compatibility_aac.rst:19
+#: ../../config/options_tags_compatibility_aac.rst:17
 msgid ""
 "Picard will not save any tags to the files, but you can still use Picard to "
 "rename them. By default existing APEv2 tags will be kept in the file."
@@ -61,11 +62,11 @@ msgstr ""
 "toujours utiliser Picard pour les renommer. Par défaut, les balises APEv2 "
 "existantes seront conservées dans le fichier."
 
-#: ../../config/options_tags_compatibility_aac.rst:22
+#: ../../config/options_tags_compatibility_aac.rst:19
 msgid "**Remove APEv2 tags**"
 msgstr "** Supprimer les balises APEv2 **"
 
-#: ../../config/options_tags_compatibility_aac.rst:24
+#: ../../config/options_tags_compatibility_aac.rst:21
 msgid ""
 "If you have \"Do not save tags\" enabled checking this option will cause "
 "Picard to remove existing APEv2 tags from the file on saving."
@@ -74,7 +75,7 @@ msgstr ""
 "obligera Picard à supprimer les balises APEv2 existantes du fichier lors de "
 "l'enregistrement."
 
-#: ../../config/options_tags_compatibility_aac.rst:27
+#: ../../config/options_tags_compatibility_aac.rst:23
 msgid ""
 "Regardless of how you have configured saving tags Picard will always read "
 "existing APEv2 tags in AAC files."

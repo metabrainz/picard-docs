@@ -3,8 +3,7 @@
 Getting Started
 ===============
 
-This section provides information on how to get started using MusicBrainz Picard,
-including installation and some basic information about the user interface.
+This section provides information on how to get started using MusicBrainz Picard, including installation and some basic information about the user interface.
 
 .. toctree::
    :hidden:

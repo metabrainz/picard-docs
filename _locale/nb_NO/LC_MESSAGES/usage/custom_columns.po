@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../usage/custom_columns.rst:4
+msgid "Custom Columns"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:6
+msgid ""
+"Beginning with Picard v3, you can create your own columns in Picard's "
+"Cluster and Album panes to display additional information about your music "
+"files and albums. You can enter a simple variable (e.g., ``%artist%``) or a "
+"full Picard script to compute the value shown."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:10
+msgid "Opening the Custom Columns Manager"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:12
+msgid "To access the Custom Columns manager:"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:14
+msgid "Right-click any column header in the Cluster or Album pane."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:15
+msgid ""
+"Click \"Manage Custom Columns…\". If the option is disabled, you must first "
+"uncheck \"Lock columns\" in the same menu."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:24
+msgid ""
+"This will open a new window showing the manager, where you can add, edit and "
+"remove custom column definitions."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:33
+msgid ""
+"Select an item from the list to edit or :guilabel:`Delete` it, or click :"
+"guilabel:`New` or :guilabel:`Duplicate` to create a new custom column item."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:35
+msgid ""
+"The details for the selected item can be edited in the middle section, and "
+"include:"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:37
+msgid "**Column Title**: The column title you'll see in the header."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:38
+msgid ""
+"**Expression**: The Picard script to compute the value. This can be as "
+"simple as a single tag like ``%artist%`` or ``%album%``, or a more complex "
+"script."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:39
+msgid ""
+"**Width**: The width of the column. Leave this blank for automatic sizing."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:40
+msgid "**Align**: How the column should be aligned (left or right)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:41
+msgid ""
+"**Sorting**: How the values in the column are sorted (Default, Case "
+"Insensitive, Numeric, Natural, etc.)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:42
+msgid ""
+"**Add to views**: The sections in which the custom column could be applied: "
+"Cluster pane (File view) and/or Album pane (Album view)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:44
+msgid "Basic scripting function and tag documentation is also available."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:48
+msgid "Examples"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:51
+msgid "Adding a simple field column"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:53
+msgid ""
+"To show \"Bitrate\" as a column in the Cluster pane, set the following "
+"values:"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:55
+msgid "**Column Title**: Bitrate"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:56
+msgid "**Expression**: ``%_bitrate%``"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:57
+msgid "**Align**: right (optional)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:58
+msgid "**Sorting**: Natural (optional)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:59
+msgid "**Add to views**: File view (checked)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:63
+msgid "Adding a script column"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:65
+msgid "To show \"Artist - Title\" with fallbacks, set the following values:"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:67
+msgid "**Column Title**: Artist - Title"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:68
+msgid "**Expression**:"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:74
+msgid "**Align**: left"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:75
+msgid "**Sorting**: Case Insensitive (optional)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:76
+msgid "**Add to views**: File view and Album view (both)"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:80
+msgid ""
+"For the best performance, any scripts used should be short and simple to "
+"avoid excessive processing."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:84
+msgid "Showing or Moving Columns"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:86
+msgid ""
+"If you don't see your new column immediately, right-click the header and "
+"enable it from the list. New columns are added at the end. To move a column, "
+"drag the column header to the desired position."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:90
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:92
+msgid "**Column not visible**"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:94
+msgid ""
+"Ensure the correct view is selected and enable the column from the header "
+"menu."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:96
+msgid "**Wrong position**"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:98
+msgid "Drag the column header to the desired position."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:100
+msgid "**Script errors**"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:102
+msgid ""
+"Simplify the expression and verify your ``%field%`` names and functions."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:106
+msgid "Best Practices and Tips"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:109
+msgid "Performance Considerations"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:111
+msgid ""
+"**Keep scripts simple**: Complex scripts with many nested functions can slow "
+"down the interface."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:112
+msgid ""
+"**Use field references when possible**: Field references are faster than "
+"scripts for simple values."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:113
+msgid ""
+"**Avoid redundant calculations**: Don't repeat the same script logic in "
+"multiple columns."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:114
+msgid ""
+"**Test with large libraries**: Verify performance with your actual music "
+"collection."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:117
+msgid "Column Organization"
+msgstr ""
+
+#: ../../usage/custom_columns.rst:119
+msgid ""
+"**Group related columns**: Place similar columns together (e.g., all "
+"technical information in one area)."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:120
+msgid ""
+"**Use meaningful names**: Choose descriptive column titles that clearly "
+"indicate the content."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:121
+msgid ""
+"**Consider alignment**: Use 'right' alignment for numeric values, 'left' for "
+"text."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:122
+msgid ""
+"**Set appropriate widths**: Leave the width blank for automatic sizing, or "
+"set specific widths for consistency."
+msgstr ""
+
+#: ../../usage/custom_columns.rst:126
+msgid ""
+"For detailed information about the Picard scripting language, including all "
+"available functions and syntax, see :doc:`/extending/scripts`. For a "
+"complete list of available variables, see :doc:`/variables/variables`."
+msgstr ""

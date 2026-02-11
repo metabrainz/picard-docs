@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -44,21 +44,21 @@ msgid ""
 "passed) to coerce the value into a proper multi-value variable."
 msgstr ""
 
-#: ../../functions/func_getmulti.rst:19
+#: ../../functions/func_getmulti.rst:16
 msgid ""
-"The ``index`` is zero based.   If ``index`` is less than 0, then the value "
+"The ``index`` is zero based. If ``index`` is less than 0, then the value "
 "used is the number of elements in ``name`` plus ``index`` (e.g.: "
 "``$getmulti(%abcd%,-1)`` is the same as ``$getmulti(%abcd%,3)`` if "
-"``%abcd%`` is a multi-value variable with four elements).  If ``index`` is "
+"``%abcd%`` is a multi-value variable with four elements). If ``index`` is "
 "missing, not an integer, a number greater than or equal to the number of "
 "elements in ``name``, or a negative number greater than the number of "
 "elements in ``name``, then the function will return an empty string."
 msgstr ""
 
-#: ../../functions/func_getmulti.rst:27
+#: ../../functions/func_getmulti.rst:19
 msgid "**Example:**"
 msgstr ""
 
-#: ../../functions/func_getmulti.rst:29
+#: ../../functions/func_getmulti.rst:21
 msgid "The following statements will return the values indicated:"
 msgstr ""

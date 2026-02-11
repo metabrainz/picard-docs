@@ -24,12 +24,10 @@ MusicBrainz Picard
    usage/other
    usage/option_profiles
    usage/command_processing
+   usage/sessions
+   usage/custom_columns
    extending/extending
    troubleshooting/pdf_troubleshooting
    faq/faq
    tutorials/tutorials
    appendices/pdf_appendices
-
-..   examples/examples
-..   technical/plugins_api_pdf
-..   technical/tag_mapping_pdf

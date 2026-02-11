@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,11 +30,12 @@ msgstr ""
 #: ../../extending/scripting.rst:8
 msgid ""
 "There are two types of scripts used in Picard: the file naming script and "
-"tagging scripts. These are managed from the \"File Naming\" and \"Scripting"
-"\" sections of the :menuselection:`\"Options --> Options...\"` menu."
+"tagging scripts. These are managed from the \"File Naming\" and "
+"\"Scripting\" sections of the :menuselection:`\"Options --> Options...\"` "
+"menu."
 msgstr ""
 
-#: ../../extending/scripting.rst:12
+#: ../../extending/scripting.rst:10
 msgid ""
 "Scripts are often discussed in the `MetaBrainz Community Forum <https://"
 "community.metabrainz.org/>`_, and there is a thread specific to `file naming "
@@ -42,18 +43,18 @@ msgid ""
 "file-name-string-patterns-and-tagger-script-snippets/2786/>`_."
 msgstr ""
 
-#: ../../extending/scripting.rst:18
+#: ../../extending/scripting.rst:14
 msgid ""
 "Please refer to the section on :doc:`Scripts <scripts>` in :doc:`Extending "
 "Picard <extending>` for additional details about the two types of scripts, "
 "including how and when each of the scripts are executed."
 msgstr ""
 
-#: ../../extending/scripting.rst:22
+#: ../../extending/scripting.rst:17
 msgid ":index:`Syntax <scripts; syntax>`"
 msgstr ""
 
-#: ../../extending/scripting.rst:24
+#: ../../extending/scripting.rst:19
 msgid ""
 "The syntax is derived from `Foobar2000's titleformat <https://wiki."
 "hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference>`_. There "
@@ -63,37 +64,37 @@ msgid ""
 "parentheses (e.g.: ``$lower(...)``)."
 msgstr ""
 
-#: ../../extending/scripting.rst:33
+#: ../../extending/scripting.rst:23
 msgid ""
 "When entering input strings into Picard scripts you have to escape a "
 "backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
 "parentheses \"(\" and \")\" in order to force Picard to not interpret them "
-"as part of the script command.  This is done by inserting a backslash before "
-"the character to be escaped.  For example, to set a tag value to "
+"as part of the script command. This is done by inserting a backslash before "
+"the character to be escaped. For example, to set a tag value to "
 "``($1,000,000)`` it would have to be entered as ``$set(test_tag,\\(\\"
 "$1\\,000\\,000\\))``."
 msgstr ""
 
-#: ../../extending/scripting.rst:41
+#: ../../extending/scripting.rst:27
 msgid ""
 "Usually you can access the values of a tag by the proper variable name. For "
 "example, if your tag is called \"rerecorded\" you can use ``%rerecorded%``. "
 "But the hyphen is not a valid character for a script variable, so ``%re-"
-"recorded%`` gives a syntax error. In cases like this you need to use ``"
-"$get(re-recorded)``."
+"recorded%`` gives a syntax error. In cases like this you need to use "
+"``$get(re-recorded)``."
 msgstr ""
 
-#: ../../extending/scripting.rst:47
+#: ../../extending/scripting.rst:30
 msgid "Metadata Variables"
 msgstr ""
 
-#: ../../extending/scripting.rst:49
+#: ../../extending/scripting.rst:32
 msgid ""
-"See :doc:`/variables/variables` for the list of the variables provided by "
+"See :doc:`../variables/variables` for the list of the variables provided by "
 "Picard."
 msgstr ""
 
-#: ../../extending/scripting.rst:51
+#: ../../extending/scripting.rst:34
 msgid ""
 "Picard's variables can be either simple variables containing a single text "
 "string, or multi-value variables containing multiple text strings. In "
@@ -102,19 +103,19 @@ msgid ""
 "special multi-value functions."
 msgstr ""
 
-#: ../../extending/scripting.rst:69
+#: ../../extending/scripting.rst:47
 msgid ""
 "The full list of available scripting functions is covered in the following "
 "chapter."
 msgstr ""
 
-#: ../../extending/scripting.rst:59
+#: ../../extending/scripting.rst:39
 msgid "Scripting Functions"
 msgstr ""
 
-#: ../../extending/scripting.rst:61
+#: ../../extending/scripting.rst:41
 msgid ""
 "The full list of available scripting functions is available, either :doc:"
-"`sorted alphabetically </functions/list_by_name>` or :doc:`grouped by "
-"function type </functions/list_by_type>`."
+"`sorted alphabetically <../functions/list_by_name>` or :doc:`grouped by "
+"function type <../functions/list_by_type>`."
 msgstr ""

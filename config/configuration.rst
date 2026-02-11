@@ -6,9 +6,9 @@ Configuration
 Once Picard has been installed on your system, the next step is to configure it to your preferences. The configuration consists of enabling the desired screen sections for display, selecting the desired actions, and setting the various options.
 
 :index:`Screen Setup <configuration; screen setup>`
-----------------------------------------------------
+---------------------------------------------------
 
-The screen setup is found under the :menuselection:`"View"` item on the menu bar. To enable the display of an item, simply check the box for the screen option.  The items are:
+The screen setup is found under the :menuselection:`"View"` item on the menu bar. To enable the display of an item, simply check the box for the screen option. The items are:
 
 **File Browser**
 
@@ -34,9 +34,8 @@ The screen setup is found under the :menuselection:`"View"` item on the menu bar
 
 .. _action_options:
 
-
 :index:`Action Options <configuration; action options>`
---------------------------------------------------------
+-------------------------------------------------------
 
 The action options are found under the :menuselection:`"Options"` item on the menu bar. There are three available actions that Picard can perform when saving selected music files:
 
@@ -70,7 +69,7 @@ The option settings are found under the :menuselection:`"Options --> Options..."
 :index:`Option Profiles <see: profiles; configuration>`
 --------------------------------------------------------
 
-The option settings can also be manipulated with option profiles. A detailed explanation can be found in the :doc:`/usage/option_profiles` section, but they basically function as follows:
+The option settings can also be manipulated with option profiles. A detailed explanation can be found in the :doc:`../usage/option_profiles` section, but they basically function as follows:
 
 With option profiles, you can save a number of settings to a profile, which you can enable or disable to quickly change the settings for a particular usage scenario. For example, if you want to process your classical music differently to other music.
 
@@ -82,53 +81,33 @@ Changes made to a profile's options settings, enabled status, or position in the
 
    .. toctree::
 
-      /config/options_general
-      /config/options_profiles
-      /config/options_metadata
-      /config/options_tags
-      /config/options_cover
-      /config/options_filerenaming
-      /config/options_fingerprinting
-      /config/options_cdlookup
-      /config/options_plugins
-      /config/options_interface
-      /config/options_scripting
-      /config/options_advanced
+      options_general
+      options_profiles
+      options_metadata
+      options_tags
+      options_cover
+      options_filerenaming
+      options_fingerprinting
+      options_cdlookup
+      options_plugins
+      options_scripting
+      options_interface
+      options_advanced
 
 
 .. only:: html and not epub
 
    .. seealso::
 
-      :doc:`/config/options_general` /
-      :doc:`/config/options_profiles` /
-      :doc:`/config/options_metadata` /
-      :doc:`/config/options_tags` /
-      :doc:`/config/options_cover` /
-      :doc:`/config/options_filerenaming` /
-      :doc:`/config/options_fingerprinting` /
-      :doc:`/config/options_cdlookup` /
-      :doc:`/config/options_plugins` /
-      :doc:`/config/options_interface` /
-      :doc:`/config/options_scripting` /
-      :doc:`/config/options_advanced`
-
-.. only:: not latex
-
-   .. toctree::
-      :hidden:
-
-      /config/options_general
-      /config/options_profiles
-      /config/options_metadata
-      /config/options_tags
-      /config/options_cover
-      /config/options_filerenaming
-      /config/options_filerenaming_editor
-      /config/options_filerenaming_compat
-      /config/options_fingerprinting
-      /config/options_cdlookup
-      /config/options_plugins
-      /config/options_interface
-      /config/options_scripting
-      /config/options_advanced
+      :doc:`options_general` /
+      :doc:`options_profiles` /
+      :doc:`options_metadata` /
+      :doc:`options_tags` /
+      :doc:`options_cover` /
+      :doc:`options_filerenaming` /
+      :doc:`options_fingerprinting` /
+      :doc:`options_cdlookup` /
+      :doc:`options_plugins` /
+      :doc:`options_scripting` /
+      :doc:`options_interface` /
+      :doc:`options_advanced`

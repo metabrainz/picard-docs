@@ -19,11 +19,11 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $set(foo,)
-    $len(%foo%)    ==>  "0"
+   $set(foo,)
+   $len(%foo%)    ==>  "0"
 
-    $set(foo,ABC)
-    $len(%foo%)    ==>  "3"
+   $set(foo,ABC)
+   $len(%foo%)    ==>  "3"
 
-    $len()         ==>  "0"
-    $len(ABC)      ==>  "3"
+   $len()         ==>  "0"
+   $len(ABC)      ==>  "3"

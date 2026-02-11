@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) This documentation is licensed under CC0 1.0.
+# Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Returns the input ``date`` in the specified ``format``, which is based on
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:16
-msgid "The \"year\", \"month\" and \"day\" portions of the date must be entered as numbers, and can be separated by any non-numeric characters.  The default order for the input date is \"ymd\" (year, month, day).  This can be changed by specifying a ``date order``."
+msgid "The \"year\", \"month\" and \"day\" portions of the date must be entered as numbers, and can be separated by any non-numeric characters. The default order for the input date is \"ymd\" (year, month, day). This can be changed by specifying a ``date order``."
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:18
@@ -61,7 +61,7 @@ msgid "**mdy** - month, day, year"
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:24
-msgid "If either the ``date`` or ``format`` are invalid an empty string will be returned.  If an invalid ``date order`` is specified, the default order \"ymd\" will be used."
+msgid "If either the ``date`` or ``format`` are invalid an empty string will be returned. If an invalid ``date order`` is specified, the default order \"ymd\" will be used."
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:28
@@ -69,7 +69,7 @@ msgid "Any special characters such as '%', '$', '(', ')' and '\\\\' will need to
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:32
-msgid "Platform-specific formatting codes should be avoided to help ensure the portability of scripts across the different platforms.  These codes include: remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or macOS, and their equivalents ``%#d`` and ``%#m`` on Windows); element length specifiers (e.g.: ``%3Y``); and hanging '%' at the end of the format string."
+msgid "Platform-specific formatting codes should be avoided to help ensure the portability of scripts across the different platforms. These codes include: remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or macOS, and their equivalents ``%#d`` and ``%#m`` on Windows); element length specifiers (e.g.: ``%3Y``); and hanging '%' at the end of the format string."
 msgstr ""
 
 #: ../../functions/func_dateformat.rst:35

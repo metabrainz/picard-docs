@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) This documentation is licensed under CC0 1.0.
+# Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,17 +37,17 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_unique.rst:14
-msgid "Returns a sorted copy of the multi-value variable ``name`` with duplicate elements removed. By default, the comparison ignores the case of the elements; however, this can be changed by setting ``case_sensitive`` to a non-empty value. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable.  If ``name`` is missing ``$unique`` will return an empty string."
+msgid "Returns a sorted copy of the multi-value variable ``name`` with duplicate elements removed. By default, the comparison ignores the case of the elements; however, this can be changed by setting ``case_sensitive`` to a non-empty value. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable. If ``name`` is missing ``$unique`` will return an empty string."
 msgstr ""
 
-#: ../../functions/func_unique.rst:23
-msgid "When performing a (default) case-insensitive comparison, the last matching element will be used in the result.  For example, if the multi-value variable contained 'abc', 'Abc', 'ABc' and 'ABC' in that order, then the element 'ABC' would be included in the output."
+#: ../../functions/func_unique.rst:18
+msgid "When performing a (default) case-insensitive comparison, the last matching element will be used in the result. For example, if the multi-value variable contained 'abc', 'Abc', 'ABc' and 'ABC' in that order, then the element 'ABC' would be included in the output."
 msgstr ""
 
-#: ../../functions/func_unique.rst:27
+#: ../../functions/func_unique.rst:20
 msgid "**Example:**"
 msgstr ""
 
-#: ../../functions/func_unique.rst:29
+#: ../../functions/func_unique.rst:22
 msgid "The following statements will return the values indicated:"
 msgstr ""

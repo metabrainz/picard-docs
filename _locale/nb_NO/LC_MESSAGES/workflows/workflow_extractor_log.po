@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,101 +34,101 @@ msgid ""
 "sufficient information to generate the CD table of contents they can be used "
 "in place of reading the CD. As with reading the CD itself, this method "
 "provides the greatest chance of tagging your music files with the most "
-"accurate match from the MusicBrainz database.  It is also one of the easier "
+"accurate match from the MusicBrainz database. It is also one of the easier "
 "methods for looking up the release."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:12
+#: ../../workflows/workflow_extractor_log.rst:8
 msgid "**1. Lookup the CD on MusicBrainz**"
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:14
+#: ../../workflows/workflow_extractor_log.rst:10
 msgid ""
 "Use the ripper log file to look up the release automatically by selecting "
 "the :menuselection:`\"Tools --> Lookup CD --> From CD ripper log file...\"` "
 "command. This will open a file browser dialog to allow you to select the log "
-"file to process. See the :doc:`/usage/retrieve_lookup_cd` section for "
+"file to process. See the :doc:`../usage/retrieve_lookup_cd` section for "
 "detailed instructions."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:20
+#: ../../workflows/workflow_extractor_log.rst:13
 msgid "**2. Select the correct release**"
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:22
+#: ../../workflows/workflow_extractor_log.rst:15
 msgid ""
 "A list of all releases matching the toc of the CD will be displayed for "
 "selection, with an option to submit the disc id if none of the releases are "
-"a match to your CD.  Before proceeding, please check to ensure that the "
+"a match to your CD. Before proceeding, please check to ensure that the "
 "release you select properly matches your CD (e.g.: release country, date and "
-"label, catalog number, barcode, media type, and cover art).  This is "
+"label, catalog number, barcode, media type, and cover art). This is "
 "especially important if you are going to submit any information such as "
 "acoustic features to AcousticBrainz or AcoustID fingerprints."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:32
+#: ../../workflows/workflow_extractor_log.rst:21
 msgid "**3. Load the files**"
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:34
+#: ../../workflows/workflow_extractor_log.rst:23
 msgid ""
 "Drag the files or folder from the browser to the \"Unclustered Files\" "
-"section in the left-hand pane.  You do not need to scan or cluster them."
+"section in the left-hand pane. You do not need to scan or cluster them."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:38
+#: ../../workflows/workflow_extractor_log.rst:26
 msgid "**4. Match the files to the tracks on the release**"
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:40
+#: ../../workflows/workflow_extractor_log.rst:28
 msgid ""
 "Drag the files from the left-hand pane and drop them on the release in the "
-"right-hand pane.  Check that each track on the release is associated with "
-"only one file.  The release icon should turn gold.  See the :doc:`/usage/"
+"right-hand pane. Check that each track on the release is associated with "
+"only one file. The release icon should turn gold. See the :doc:`../usage/"
 "match` section for details."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:45
+#: ../../workflows/workflow_extractor_log.rst:31
 msgid "**5. Verify the metadata and cover art**"
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:47
+#: ../../workflows/workflow_extractor_log.rst:33
 msgid ""
 "Check that the metadata and cover art image for the release and tracks are "
-"what you want.  Adjust if required. See the :doc:`/usage/coverart` section "
+"what you want. Adjust if required. See the :doc:`../usage/coverart` section "
 "for details."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:51
+#: ../../workflows/workflow_extractor_log.rst:36
 msgid "**7. Save the files**"
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:53
+#: ../../workflows/workflow_extractor_log.rst:38
 msgid ""
-"Save the files using the :menuselection:`\"File --> Save\"` command.  See "
-"the :doc:`/usage/save` section for details."
+"Save the files using the :menuselection:`\"File --> Save\"` command. See "
+"the :doc:`../usage/save` section for details."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:56
+#: ../../workflows/workflow_extractor_log.rst:41
 msgid "**8. Calculate and submit AcoustID fingerprints**"
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:58
+#: ../../workflows/workflow_extractor_log.rst:43
 msgid ""
 ":index:`This step is optional <acoustic fingerprint; submitting>`, but "
 "appreciated because it will help identify the files for others to look up "
 "for tagging."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:61
+#: ../../workflows/workflow_extractor_log.rst:45
 msgid ""
 "Select the album entry in the right-hand pane and calculate the AcoustID "
 "fingerprints using :menuselection:`\"Tools --> Generate AcoustID "
-"Fingerprints\"`.  Once the fingerprints have been calculated, submit them "
+"Fingerprints\"`. Once the fingerprints have been calculated, submit them "
 "using :menuselection:`\"Files --> Submit AcoustIDs\"`."
 msgstr ""
 
-#: ../../workflows/workflow_extractor_log.rst:67
+#: ../../workflows/workflow_extractor_log.rst:49
 msgid ""
 "AcoustID fingerprints should only be submitted after the files have been "
 "tagged with MusicBrainz metadata, and you have verified that the files have "

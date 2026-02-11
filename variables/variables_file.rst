@@ -1,14 +1,13 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`File Variables <variables; file>`
-==========================================
+=========================================
 
 These variables are populated from information found in the audio files themselves, without any special Picard settings.
 
 .. note::
 
-   Variables that rely on information from the files (e.g.: _bitrate) are only available for use on
-   tracks with attached files, when running scripts manually on files or in the file naming script.
+   Variables that rely on information from the files (e.g.: ``_bitrate``) are only available for use on tracks with attached files, when running scripts manually on files or in the file naming script.
 
 .. warning::
 
@@ -38,6 +37,10 @@ These variables are populated from information found in the audio files themselv
 
     The name of the file without extension. (*since Picard 1.1*)
 
+**_filepath**
+
+    Full path and name of the file. (*since Picard 3.0*)
+
 **_file_created_timestamp**
 
     The file creation timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported by the file system. (*since Picard 2.9*)
@@ -60,4 +63,4 @@ These variables are populated from information found in the audio files themselv
 
 **_filesize**
 
-   Size of the file in bytes.
+   Size of the file in bytes. (*since Picard 3.0*)

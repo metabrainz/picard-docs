@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.5.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: 2021-09-12 17:55+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -31,8 +31,8 @@ msgid ""
 "If you find that Picard won't start there are a few common possible reasons, "
 "and things to try to correct the issue. Before doing anything drastic, it is "
 "recommended that you try to start Picard from the command line with the :"
-"option:`-d` option to generate the debug logging.  This process is described "
-"in the :doc:`troubleshooting` section.  If the resulting logs don't provide "
+"option:`-d` option to generate the debug logging. This process is described "
+"in the :doc:`troubleshooting` section. If the resulting logs don't provide "
 "any clues as to the problem, it may be one of the following:"
 msgstr ""
 "Si vous constatez que Picard ne démarre pas, il y a quelques raisons "
@@ -43,33 +43,33 @@ msgstr ""
 "section :doc:`troubleshooting`. Si les journaux résultants ne fournissent "
 "aucun indice sur le problème, il peut s'agir de l'un des éléments suivants:"
 
-#: ../../troubleshooting/does_not_start.rst:11
+#: ../../troubleshooting/does_not_start.rst:8
 msgid "**The program files have become corrupted**"
 msgstr "**Les fichiers du programme sont corrompus**"
 
-#: ../../troubleshooting/does_not_start.rst:13
+#: ../../troubleshooting/does_not_start.rst:10
 msgid ""
 "If you suspect that this may be the problem, the first (and simplest) thing "
-"to try is to reinstall the program.  This should address any potential file "
-"corruption issues.  If Picard still won't start then it is unlikely that "
-"this was the problem."
+"to try is to reinstall the program. This should address any potential file "
+"corruption issues. If Picard still won't start then it is unlikely that this "
+"was the problem."
 msgstr ""
 "Si vous pensez que cela peut être le problème, la première chose (et la plus "
 "simple) à essayer est de réinstaller le programme. Cela devrait résoudre "
 "tous les problèmes potentiels de corruption de fichiers. Si Picard ne "
 "démarre toujours pas, il est peu probable que ce soit le problème."
 
-#: ../../troubleshooting/does_not_start.rst:17
+#: ../../troubleshooting/does_not_start.rst:12
 msgid "**A plugin file has become corrupted or is incompatible**"
 msgstr "**Un fichier de plugin est corrompu ou est incompatible**"
 
-#: ../../troubleshooting/does_not_start.rst:19
+#: ../../troubleshooting/does_not_start.rst:14
 msgid ""
 "To check whether one of the plugin files has become corrupted or, in the "
 "case of a recent upgrade to a plugin or Picard, a plugin is not compatible, "
-"you should try removing all of the plugins and then start Picard.  Since you "
+"you should try removing all of the plugins and then start Picard. Since you "
 "won't be able to disable or remove the plugins using Picard's 'Option' "
-"settings, you will need to remove them manually.  The plugins may be located "
+"settings, you will need to remove them manually. The plugins may be located "
 "in a ``plugins`` subdirectory of the directory where the Picard program file "
 "is stored, or in a user-specific directory:"
 msgstr ""
@@ -82,7 +82,7 @@ msgstr ""
 "répertoire ``plugins`` du répertoire où est stocké le fichier programme "
 "Picard, ou dans un répertoire spécifique à l'utilisateur:"
 
-#: ../../troubleshooting/does_not_start.rst:25
+#: ../../troubleshooting/does_not_start.rst:16
 msgid ""
 "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Local\\"
 "\\MusicBrainz\\\\Picard\\\\plugins`"
@@ -90,21 +90,22 @@ msgstr ""
 "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Local\\"
 "\\MusicBrainz\\\\Picard\\\\plugins`"
 
-#: ../../troubleshooting/does_not_start.rst:26
+#: ../../troubleshooting/does_not_start.rst:17
 msgid "*macOS*: :file:`~/Library/Preferences/MusicBrainz/Picard/plugins`"
 msgstr "*macOS*: :file:`~/Library/Preferences/MusicBrainz/Picard/plugins`"
 
-#: ../../troubleshooting/does_not_start.rst:27
-msgid "*Linux*: :file:`~/.config/MusicBrainz/Picard/plugins`"
+#: ../../troubleshooting/does_not_start.rst:18
+#, fuzzy
+msgid "*Linux*: :file:`~/.local/share/MusicBrainz/Picard/plugins`"
 msgstr "*Linux*: :file:`~/.config/MusicBrainz/Picard/plugins`"
 
-#: ../../troubleshooting/does_not_start.rst:29
+#: ../../troubleshooting/does_not_start.rst:20
 msgid ""
 "Once you have located the plugin files, they should be removed from the "
-"``plugins`` directory and moved to a temporary directory.  Then try to start "
-"Picard.  If the program starts, you should try restoring the plugin files "
-"from your temporary directory one at a time, and check if Picard will "
-"start.  This will help identify the plugin that was causing the problem."
+"``plugins`` directory and moved to a temporary directory. Then try to start "
+"Picard. If the program starts, you should try restoring the plugin files "
+"from your temporary directory one at a time, and check if Picard will start. "
+"This will help identify the plugin that was causing the problem."
 msgstr ""
 "Une fois que vous avez localisé les fichiers du plugin, ils doivent être "
 "supprimés du répertoire ``plugins`` et déplacés vers un répertoire "
@@ -113,18 +114,18 @@ msgstr ""
 "répertoire temporaire un par un, et vérifier si Picard va démarrer. Cela "
 "aidera à identifier le plugin à l'origine du problème."
 
-#: ../../troubleshooting/does_not_start.rst:33
+#: ../../troubleshooting/does_not_start.rst:22
 msgid "**The option settings file has become corrupted or is incompatible**"
 msgstr ""
 "**Le fichier de paramètres d'options est corrompu ou est incompatible**"
 
-#: ../../troubleshooting/does_not_start.rst:35
+#: ../../troubleshooting/does_not_start.rst:24
 msgid ""
 "To check whether Picard's option settings file has become corrupted or, in "
 "the case of a recent upgrade to Picard, it is not compatible, you should try "
-"removing the settings file and then start Picard.  If Picard is started "
+"removing the settings file and then start Picard. If Picard is started "
 "without finding its configuration settings file, it will create a new one "
-"using the default settings.  The settings file is called :file:`Picard.ini` "
+"using the default settings. The settings file is called :file:`Picard.ini` "
 "and can be found in a user-specific directory:"
 msgstr ""
 "Pour vérifier si le fichier de paramètres d'options de Picard est corrompu "
@@ -135,7 +136,7 @@ msgstr ""
 "paramètres par défaut. Le fichier de paramètres s'appelle :file:`Picard.ini` "
 "et se trouve dans un répertoire spécifique à l'utilisateur:"
 
-#: ../../troubleshooting/does_not_start.rst:40
+#: ../../troubleshooting/does_not_start.rst:26
 msgid ""
 "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Roaming\\"
 "\\MusicBrainz`"
@@ -143,15 +144,15 @@ msgstr ""
 "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Roaming\\"
 "\\MusicBrainz`"
 
-#: ../../troubleshooting/does_not_start.rst:41
+#: ../../troubleshooting/does_not_start.rst:27
 msgid "*macOS*: :file:`~/Library/Preferences/MusicBrainz`"
 msgstr "*macOS*: :file:`~/Library/Preferences/MusicBrainz`"
 
-#: ../../troubleshooting/does_not_start.rst:42
+#: ../../troubleshooting/does_not_start.rst:28
 msgid "*Linux*: :file:`~/.config/MusicBrainz`"
 msgstr "*Linux*: :file:`~/.config/MusicBrainz`"
 
-#: ../../troubleshooting/does_not_start.rst:44
+#: ../../troubleshooting/does_not_start.rst:30
 msgid ""
 "Again, it is recommended that you move the file to a temporary directory so "
 "that it can be recovered if this turns out not to be the cause of the "
@@ -161,19 +162,19 @@ msgstr ""
 "temporaire afin qu'il puisse être récupéré si cela ne s'avère pas être la "
 "cause du problème."
 
-#: ../../troubleshooting/does_not_start.rst:47
+#: ../../troubleshooting/does_not_start.rst:32
 msgid "**There really is a bug in Picard**"
 msgstr "**Il y a vraiment un bug en Picard**"
 
-#: ../../troubleshooting/does_not_start.rst:49
+#: ../../troubleshooting/does_not_start.rst:34
 msgid ""
 "If this problem started just after updating Picard, in spite of all the "
 "testing that is performed prior to releasing a new version, it may be "
-"possible that this is indeed a bug.  In that case, you should first try to "
+"possible that this is indeed a bug. In that case, you should first try to "
 "reinstall the previous version to ensure that it works and that the problem "
-"is only occurring with the new version.  Then you should report the issue, "
+"is only occurring with the new version. Then you should report the issue, "
 "following the steps outlined in the \"Reporting a Bug\" topic of the :doc:"
-"`troubleshooting` section.  Please be sure to include as much information as "
+"`troubleshooting` section. Please be sure to include as much information as "
 "possible, which will help the developers to locate and fix the problem."
 msgstr ""
 "Si ce problème a commencé juste après la mise à jour de Picard, malgré tous "

@@ -20,7 +20,7 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $set(foo,This is a test)
-    $initials(%foo%)               ==>  "Tiat"
-    $initials(This is a test)      ==>  "Tiat"
-    $initials(This is a 123 test)  ==>  "Tiat"
+   $set(foo,This is a test)
+   $initials(%foo%)               ==>  "Tiat"
+   $initials(This is a test)      ==>  "Tiat"
+   $initials(This is a 123 test)  ==>  "Tiat"

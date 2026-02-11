@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2025-07-02 17:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_find/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_find/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,17 +40,23 @@ msgid "**Description:**"
 msgstr "**Descripció:**"
 
 #: ../../functions/func_find.rst:14
-msgid "Returns the zero-based index of the first occurrence of ``needle`` in ``haystack``, or an empty string if ``needle`` was not found.  The comparisons are case-sensitive. If ``needle`` is blank, it will match the beginning of ``haystack`` and return \"0\". The function does not support wildcards."
+msgid ""
+"Returns the zero-based index of the first occurrence of ``needle`` in "
+"``haystack``, or an empty string if ``needle`` was not found. The "
+"comparisons are case-sensitive. If ``needle`` is blank, it will match the "
+"beginning of ``haystack`` and return \"0\". The function does not support "
+"wildcards."
+msgstr ""
+
+#: ../../functions/func_find.rst:18
+msgid ""
+"Prior to Picard 2.3.2 ``$find`` returned \"-1\" if ``needle`` was not found."
 msgstr ""
 
 #: ../../functions/func_find.rst:21
-msgid "Prior to Picard 2.3.2 ``$find`` returned \"-1\" if ``needle`` was not found."
-msgstr ""
-
-#: ../../functions/func_find.rst:24
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_find.rst:26
+#: ../../functions/func_find.rst:23
 msgid "The following statements will return the values indicated:"
 msgstr "Les instruccions següents retornaran els valors indicats:"

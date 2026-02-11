@@ -26,3 +26,11 @@ repos:
     - id: rst-backticks        # Check for single backticks (should be double)
     - id: rst-directive-colons # Check directive formatting
     - id: rst-inline-touching-normal # Check inline markup spacing
+  - repo: local
+    hooks:
+    - id: test-rst
+      name: Test RST Files with dev_utils.py
+      entry: python dev_utils.py test rst --quiet
+      language: system
+      pass_filenames: false
+      types: [ text ]

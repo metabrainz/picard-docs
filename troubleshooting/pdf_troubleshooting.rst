@@ -5,10 +5,7 @@ Troubleshooting
 
 .. only:: latex or epub
 
-   Sometimes things don't go as planned, and you need to find out what has gone
-   wrong in order to correct the problem. This section provides information on
-   how to get started troubleshooting problems encountered while using
-   MusicBrainz Picard.
+   Sometimes things don't go as planned, and you need to find out what has gone wrong in order to correct the problem. This section provides information on how to get started troubleshooting problems encountered while using MusicBrainz Picard.
 
 .. toctree::
    :hidden:

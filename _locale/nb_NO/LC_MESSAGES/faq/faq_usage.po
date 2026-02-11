@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,8 +29,8 @@ msgstr ""
 
 #: ../../faq/faq_usage.rst:9
 msgid ""
-"There is a separate section that explains the tagging process.  Please see :"
-"doc:`/usage/using` for details."
+"There is a separate section that explains the tagging process. Please see :"
+"doc:`../usage/using` for details."
 msgstr ""
 
 #: ../../faq/faq_usage.rst:13
@@ -52,20 +52,20 @@ msgid ""
 "up from then on."
 msgstr ""
 
-#: ../../faq/faq_usage.rst:22
+#: ../../faq/faq_usage.rst:21
 msgid ""
 "I'm trying to :index:`load a release <release; load error, album; load "
 "error, error; couldn't load album>` in Picard, but all I'm seeing is "
 "\"Couldn't load album errors\". What's up?"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:24
+#: ../../faq/faq_usage.rst:23
 msgid ""
 "If you get \"Couldn't load album errors\" for releases in Picard, this can "
 "occur for a number of reasons. Check the following:"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:27
+#: ../../faq/faq_usage.rst:25
 msgid "**Is the problem persistent for a given release?**"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgid ""
 "temporarily reject requests."
 msgstr ""
 
-#: ../../faq/faq_usage.rst:32
+#: ../../faq/faq_usage.rst:29
 msgid "**Has the release been deleted from MusicBrainz?**"
 msgstr ""
 
@@ -98,13 +98,13 @@ msgid ""
 "and it may be accepted again."
 msgstr ""
 
-#: ../../faq/faq_usage.rst:46
+#: ../../faq/faq_usage.rst:35
 msgid ""
 "I'm using macOS, where are my :index:`network folders <macos; network "
 "folders>` or drives?"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:48
+#: ../../faq/faq_usage.rst:37
 msgid ""
 "These should show up in the add file and add folder dialogs, but they aren't "
 "visible by default in the file browser pane. If you want to see them in the "
@@ -112,72 +112,72 @@ msgid ""
 "They should then be visible in the :file:`/Volumes` folder."
 msgstr ""
 
-#: ../../faq/faq_usage.rst:54
+#: ../../faq/faq_usage.rst:41
 msgid ""
 "macOS shows the app is :index:`damaged <macos; app damaged>`. How can I run "
 "Picard?"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:56
+#: ../../faq/faq_usage.rst:43
 msgid ""
 "On macOS 10.12 and 10.13 there have been reports that sometimes the "
 "MusicBrainz Picard app cannot be started and macOS shows an error message:"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:59
+#: ../../faq/faq_usage.rst:45
 msgid ""
 "\"MusicBrainz Picard.app\" is damaged and can't be opened. You should move "
 "it to the Trash."
 msgstr ""
 
-#: ../../faq/faq_usage.rst:61
+#: ../../faq/faq_usage.rst:47
 msgid ""
 "This mostly seems to happen after moving the file to the Applications folder "
-"and seems to be caused by Gatekeeper mistakenly marking the app as damaged.  "
+"and seems to be caused by Gatekeeper mistakenly marking the app as damaged. "
 "To solve the issue open a terminal and run::"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:67
+#: ../../faq/faq_usage.rst:51
 msgid ""
-"This will clear the app being marked as damaged.  If you have placed the app "
+"This will clear the app being marked as damaged. If you have placed the app "
 "in a different location than :file:`/Applications` adjust the path in the "
 "command above accordingly."
 msgstr ""
 
-#: ../../faq/faq_usage.rst:72
+#: ../../faq/faq_usage.rst:55
 msgid ""
 "Picard is installed on Linux as a Snap, how can I access removable media?"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:74
+#: ../../faq/faq_usage.rst:57
 msgid ""
 "Picard installed as a Snap is running inside a sandbox and thus it does not "
-"have full access to all files and folders on your system.  By default Picard "
-"has access to your home folder.  You can additionally give it access to "
+"have full access to all files and folders on your system. By default Picard "
+"has access to your home folder. You can additionally give it access to "
 "removable media by running the following command on a terminal:"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:84
+#: ../../faq/faq_usage.rst:65
 msgid ""
 "On Windows, how do I solve errors on saving to cloud storage drives mounted "
 "with rclone?"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:86
+#: ../../faq/faq_usage.rst:67
 msgid ""
 "rclone can provide access to cloud storage by mounting a virtual filesystem "
-"as a drive.  This virtual filesystem has some differences to a real "
+"as a drive. This virtual filesystem has some differences to a real "
 "filesystem which can cause compatibility issues."
 msgstr ""
 
-#: ../../faq/faq_usage.rst:89
+#: ../../faq/faq_usage.rst:69
 msgid ""
 "For full compatibility with Picard you need to mount the cloud storage with "
 "rclone as a network drive with the ``--network-mode`` parameter and set the "
-"cache mode to ``--vfs-cache-mode=writes`` or ``--vfs-cache-mode=full``.  "
-"Your rclone command to mount a remote as drive X: might look like this:"
+"cache mode to ``--vfs-cache-mode=writes`` or ``--vfs-cache-mode=full``. Your "
+"rclone command to mount a remote as drive X: might look like this:"
 msgstr ""
 
-#: ../../faq/faq_usage.rst:98
+#: ../../faq/faq_usage.rst:75
 msgid "Please refer to the rclone documentation for more details."
 msgstr ""

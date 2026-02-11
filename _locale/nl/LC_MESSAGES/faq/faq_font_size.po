@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) This documentation is licensed under CC0 1.0.
+# Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.13.3\n"
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-03 13:35-0700\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,13 +40,21 @@ msgid "Two ways to change the size/scaling are:"
 msgstr ""
 
 #: ../../faq/faq_font_size.rst:16
+msgid "**Desktop Settings**"
+msgstr ""
+
+#: ../../faq/faq_font_size.rst:0
 msgid ""
 "The usual default way to change the scaling is to rely on the settings of "
 "the desktop environment, e.g. on GNOME the scaling set when configuring the "
 "screens. This usually works, and should be the first approach to take."
 msgstr ""
 
-#: ../../faq/faq_font_size.rst:17
+#: ../../faq/faq_font_size.rst:20
+msgid "**Environment Settings**"
+msgstr ""
+
+#: ../../faq/faq_font_size.rst:0
 msgid ""
 "Setting the environment variable ``QT_SCALE_FACTOR`` will scale fonts for Qt "
 "applications. This can be useful on 4k monitors. From a terminal, you can "
@@ -55,14 +63,15 @@ msgid ""
 "applications."
 msgstr ""
 
-#: ../../faq/faq_font_size.rst:19
+#: ../../faq/faq_font_size.rst:24
 msgid ""
-"To change both the size/scaling and the font, use `qt5ct`_ to set the new "
-"font and/or size. Note that these changes will apply to all Qt applications, "
-"not just Picard."
+"To change both the size/scaling and the font, use `qt6ct <https://github.com/"
+"trialuser02/qt6ct>`_ to set the new font and/or size. Note that these "
+"changes will apply to all Qt applications, not just Picard."
 msgstr ""
 
-#: ../../faq/faq_font_size.rst:21
+#: ../../faq/faq_font_size.rst:26
 msgid ""
-"`The official documentation on high DPI`_ could be a useful read as well."
+"`The official documentation on high DPI <https://doc.qt.io/qt-6/highdpi."
+"html>`_ could be a useful read as well."
 msgstr ""

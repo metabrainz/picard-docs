@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: 2022-05-04 14:44-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -27,10 +27,10 @@ msgstr ":index:`Autres informations <balises; écriture>`"
 #: ../../variables/variables_other_information.rst:6
 msgid ""
 "For technical details on how tags are written into files, see the :doc:"
-"`Picard Tag Mapping </appendices/tag_mapping>` section."
+"`Picard Tag Mapping <../appendices/tag_mapping>` section."
 msgstr ""
 "Pour des détails techniques sur l'écriture des balises dans les fichiers, "
-"consultez la section :doc:`Correspondances des balises Picardes </appendices/"
+"consultez la section :doc:`Correspondances des balises Picardes <../appendices/"
 "tag_mapping>`."
 
 #: ../../variables/variables_other_information.rst:8
@@ -44,7 +44,7 @@ msgstr ""
 "sur ID3, MP4, APEv2 et Vorbis. Ils ne seront pas enregistrés dans des "
 "fichiers ASF."
 
-#: ../../variables/variables_other_information.rst:11
+#: ../../variables/variables_other_information.rst:10
 msgid ""
 "For ID3 based files these tags will be saved to, and reloaded from, ID3 user "
 "defined text information (TXXX) frames."
@@ -53,23 +53,23 @@ msgstr ""
 "rechargées à partir de cadres d'informations textuelles définies par "
 "l'utilisateur ID3 (TXXX)."
 
-#: ../../variables/variables_other_information.rst:12
+#: ../../variables/variables_other_information.rst:11
 msgid ""
 "For MP4 files these tags will be saved with a prefix of ``----:com.apple."
-"iTunes:``.  This is widely understood by other tools to be used for custom "
+"iTunes:``. This is widely understood by other tools to be used for custom "
 "tags."
 msgstr ""
 "Pour les fichiers MP4, ces balises seront enregistrées avec le préfixe "
 "``----:com.apple.iTunes:``. Ceci est largement compris par d'autres outils à "
 "utiliser pour les balises personnalisées."
 
-#: ../../variables/variables_other_information.rst:14
+#: ../../variables/variables_other_information.rst:12
 msgid "For Vorbis and APEv2 files these tags will be saved as given."
 msgstr ""
 "Pour les fichiers Vorbis et APEv2, ces balises seront enregistrées telles "
 "quelles."
 
-#: ../../variables/variables_other_information.rst:16
+#: ../../variables/variables_other_information.rst:14
 msgid ""
 "For ID3 based tags (i.e.: MP3 files), you can also set ID3 tags directly "
 "from your scripts by setting a special variable starting with ``_id3:``, e."
@@ -83,9 +83,9 @@ msgstr ""
 "variables lorsque vous rechargez le fichier dans Picard (*depuis Picard "
 "0.9*)."
 
-#: ../../variables/variables_other_information.rst:21
+#: ../../variables/variables_other_information.rst:18
 msgid ""
-"Saving custom tags to MP4 files is supported since Picard 2.3.  Earlier "
+"Saving custom tags to MP4 files is supported since Picard 2.3. Earlier "
 "versions will neither save nor load custom tags in MP4 files."
 msgstr ""
 "L'enregistrement de balises personnalisées dans des fichiers MP4 est pris en "

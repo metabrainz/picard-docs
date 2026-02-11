@@ -3,12 +3,12 @@
 :index:`Toolbar <configuration; toolbar, user interface; toolbar>`
 ==================================================================
 
+This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.
+
 .. image:: images/options-interface-toolbar.png
-   :width: 100 %
+   :align: center
 
 **Customize Action Toolbar**
-
-   This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.
 
    Items that can be included in the toolbar include:
 

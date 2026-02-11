@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: 2024-01-23 14:28+0000\n"
 "Last-Translator: yvanzo <yvanzo@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: French <https://translations.metabrainz.org/projects/"
-"picard-docs/workflowsworkflow_extractor_log/fr/>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/workflowsworkflow_extractor_log/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +41,7 @@ msgid ""
 "sufficient information to generate the CD table of contents they can be used "
 "in place of reading the CD. As with reading the CD itself, this method "
 "provides the greatest chance of tagging your music files with the most "
-"accurate match from the MusicBrainz database.  It is also one of the easier "
+"accurate match from the MusicBrainz database. It is also one of the easier "
 "methods for looking up the release."
 msgstr ""
 "Cette option a été ajoutée à Picard dans la version 2.8, et permet "
@@ -51,111 +51,111 @@ msgstr ""
 "d'informations pour générer la table des matières du CD, ils peuvent être "
 "utilisés à la place de la lecture du CD. Comme pour la lecture du CD, cette "
 "méthode offre les meilleures chances de marquer vos fichiers musicaux avec "
-"la correspondance la plus précise de la base de données MusicBrainz.  C'est "
+"la correspondance la plus précise de la base de données MusicBrainz. C'est "
 "également l'une des méthodes les plus simples pour rechercher la version."
 
-#: ../../workflows/workflow_extractor_log.rst:12
+#: ../../workflows/workflow_extractor_log.rst:8
 msgid "**1. Lookup the CD on MusicBrainz**"
 msgstr "**1. Recherchez le CD sur MusicBrainz**"
 
-#: ../../workflows/workflow_extractor_log.rst:14
+#: ../../workflows/workflow_extractor_log.rst:10
 msgid ""
 "Use the ripper log file to look up the release automatically by selecting "
 "the :menuselection:`\"Tools --> Lookup CD --> From CD ripper log file...\"` "
 "command. This will open a file browser dialog to allow you to select the log "
-"file to process. See the :doc:`/usage/retrieve_lookup_cd` section for "
+"file to process. See the :doc:`../usage/retrieve_lookup_cd` section for "
 "detailed instructions."
 msgstr ""
 "Utilisez le fichier journal du ripper pour rechercher automatiquement la "
 "version en sélectionnant la commande :menuselection:`\"Outils --> Recherche "
 "de CD --> Depuis le fichier journal du ripper CD...\"`. Cette commande ouvre "
 "une boîte de dialogue de recherche de fichiers qui vous permet de "
-"sélectionner le fichier journal à traiter. Consultez la section :doc:`/usage/"
+"sélectionner le fichier journal à traiter. Consultez la section :doc:`../usage/"
 "retrieve_lookup_cd` pour des instructions détaillées."
 
-#: ../../workflows/workflow_extractor_log.rst:20
+#: ../../workflows/workflow_extractor_log.rst:13
 msgid "**2. Select the correct release**"
 msgstr "**2. Sélectionnez le bon déclencheur**"
 
-#: ../../workflows/workflow_extractor_log.rst:22
+#: ../../workflows/workflow_extractor_log.rst:15
 msgid ""
 "A list of all releases matching the toc of the CD will be displayed for "
 "selection, with an option to submit the disc id if none of the releases are "
-"a match to your CD.  Before proceeding, please check to ensure that the "
+"a match to your CD. Before proceeding, please check to ensure that the "
 "release you select properly matches your CD (e.g.: release country, date and "
-"label, catalog number, barcode, media type, and cover art).  This is "
+"label, catalog number, barcode, media type, and cover art). This is "
 "especially important if you are going to submit any information such as "
 "acoustic features to AcousticBrainz or AcoustID fingerprints."
 msgstr ""
 "Une liste de toutes les parutions correspondant au toc du CD sera affichée "
 "pour sélection, avec une option pour soumettre l'identifiant du disque si "
-"aucune des parutions ne correspond à votre CD.  Avant de poursuivre, "
-"vérifiez que la parution que vous sélectionnez correspond bien à votre CD ("
-"par exemple : pays de sortie, date et étiquette, numéro de catalogue, code-"
-"barres, type de support et couverture).  Ceci est particulièrement important "
+"aucune des parutions ne correspond à votre CD. Avant de poursuivre, "
+"vérifiez que la parution que vous sélectionnez correspond bien à votre CD "
+"(par exemple : pays de sortie, date et étiquette, numéro de catalogue, code-"
+"barres, type de support et couverture). Ceci est particulièrement important "
 "si vous avez l'intention de soumettre des informations telles que les "
 "caractéristiques acoustiques à AcousticBrainz ou les empreintes AcoustID."
 
-#: ../../workflows/workflow_extractor_log.rst:32
+#: ../../workflows/workflow_extractor_log.rst:21
 msgid "**3. Load the files**"
 msgstr "**3. Chargez les fichiers**"
 
-#: ../../workflows/workflow_extractor_log.rst:34
+#: ../../workflows/workflow_extractor_log.rst:23
 msgid ""
 "Drag the files or folder from the browser to the \"Unclustered Files\" "
-"section in the left-hand pane.  You do not need to scan or cluster them."
+"section in the left-hand pane. You do not need to scan or cluster them."
 msgstr ""
 "Faites glisser les fichiers ou le dossier du navigateur vers la section "
 "\"Fichiers non groupés\" dans le volet de gauche. Vous n'avez pas besoin de "
 "les analyser ou de les regrouper."
 
-#: ../../workflows/workflow_extractor_log.rst:38
+#: ../../workflows/workflow_extractor_log.rst:26
 msgid "**4. Match the files to the tracks on the release**"
 msgstr "**4. Faites correspondre les fichiers aux pistes de la version**"
 
-#: ../../workflows/workflow_extractor_log.rst:40
+#: ../../workflows/workflow_extractor_log.rst:28
 msgid ""
 "Drag the files from the left-hand pane and drop them on the release in the "
-"right-hand pane.  Check that each track on the release is associated with "
-"only one file.  The release icon should turn gold.  See the :doc:`/usage/"
+"right-hand pane. Check that each track on the release is associated with "
+"only one file. The release icon should turn gold. See the :doc:`../usage/"
 "match` section for details."
 msgstr ""
 "Faites glisser les fichiers du volet de gauche et déposez-les sur la "
 "parution dans le volet de droite. Vérifiez que chaque piste de la parution "
 "est associée à un seul fichier. L'icône de parution devrait devenir dorée. "
-"Voir la section :doc:`/usage/match` pour plus de détails."
+"Voir la section :doc:`../usage/match` pour plus de détails."
 
-#: ../../workflows/workflow_extractor_log.rst:45
+#: ../../workflows/workflow_extractor_log.rst:31
 msgid "**5. Verify the metadata and cover art**"
 msgstr "**5. Vérifiez les métadonnées et la pochette**"
 
-#: ../../workflows/workflow_extractor_log.rst:47
+#: ../../workflows/workflow_extractor_log.rst:33
 msgid ""
 "Check that the metadata and cover art image for the release and tracks are "
-"what you want.  Adjust if required. See the :doc:`/usage/coverart` section "
+"what you want. Adjust if required. See the :doc:`../usage/coverart` section "
 "for details."
 msgstr ""
 "Vérifiez que les métadonnées et l'image de la pochette de la parution et des "
-"pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la section "
-":doc:`/usage/coverart` pour plus de détails."
+"pistes correspondent à vos souhaits. Ajustez si nécessaire. Voir la section :"
+"doc:`../usage/coverart` pour plus de détails."
 
-#: ../../workflows/workflow_extractor_log.rst:51
+#: ../../workflows/workflow_extractor_log.rst:36
 msgid "**7. Save the files**"
 msgstr "**7. Enregistrez les fichiers**"
 
-#: ../../workflows/workflow_extractor_log.rst:53
+#: ../../workflows/workflow_extractor_log.rst:38
 msgid ""
-"Save the files using the :menuselection:`\"File --> Save\"` command.  See "
-"the :doc:`/usage/save` section for details."
+"Save the files using the :menuselection:`\"File --> Save\"` command. See "
+"the :doc:`../usage/save` section for details."
 msgstr ""
 "Enregistrez les fichiers à l'aide de la commande :menuselection:`\"Fichier --"
-"> Sauvez\"`.  Voir la section :doc:`/usage/save` pour plus de détails."
+"> Sauvez\"`. Voir la section :doc:`../usage/save` pour plus de détails."
 
-#: ../../workflows/workflow_extractor_log.rst:56
+#: ../../workflows/workflow_extractor_log.rst:41
 msgid "**8. Calculate and submit AcoustID fingerprints**"
 msgstr "**8. Calculer et soumettre les empreintes digitales AcoustID**"
 
-#: ../../workflows/workflow_extractor_log.rst:58
+#: ../../workflows/workflow_extractor_log.rst:43
 msgid ""
 ":index:`This step is optional <acoustic fingerprint; submitting>`, but "
 "appreciated because it will help identify the files for others to look up "
@@ -165,11 +165,11 @@ msgstr ""
 "soumission>`, mais appréciée car elle aidera à identifier les fichiers que "
 "d'autres pourront rechercher pour le marquage."
 
-#: ../../workflows/workflow_extractor_log.rst:61
+#: ../../workflows/workflow_extractor_log.rst:45
 msgid ""
 "Select the album entry in the right-hand pane and calculate the AcoustID "
 "fingerprints using :menuselection:`\"Tools --> Generate AcoustID "
-"Fingerprints\"`.  Once the fingerprints have been calculated, submit them "
+"Fingerprints\"`. Once the fingerprints have been calculated, submit them "
 "using :menuselection:`\"Files --> Submit AcoustIDs\"`."
 msgstr ""
 "Sélectionnez l'entrée de l'album dans le volet de droite et calculez les "
@@ -177,7 +177,7 @@ msgstr ""
 "empreintes AcoustID\"`. Une fois les empreintes calculées, soumettez-les en "
 "utilisant :menuselection:`\"Fichiers --> Soumettre les AcoustIDs\"`."
 
-#: ../../workflows/workflow_extractor_log.rst:67
+#: ../../workflows/workflow_extractor_log.rst:49
 msgid ""
 "AcoustID fingerprints should only be submitted after the files have been "
 "tagged with MusicBrainz metadata, and you have verified that the files have "

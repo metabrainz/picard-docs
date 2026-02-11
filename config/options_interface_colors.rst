@@ -1,37 +1,42 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`Colors <configuration; colors, user interface; colors>`
-================================================================
+===============================================================
 
-.. image:: images/options-interface-colors.png
-   :width: 100 %
+This section allows you to customize the various colors used in the Picard user interface. To change a color, simply click on the color block currently displayed for the desired text condition to bring up a selection dialog, then pick your desired color. To reset the color to the default, click the circular icon to the right of the color. The colors can be changed for the following text conditions.
 
-This section allows you to customize the various colors used in the Picard user interface.  To change a
-color, simply click on the color block currently displayed for the desired text condition to bring up a
-selection dialog, then pick your desired color.  The colors can be changed for the following text
-conditions:
+----
 
-* **Errored entity**: files and other elements with errors on loading or saving
+.. image:: images/options-interface-colors-entities.png
+   :align: center
 
-* **Pending entity**: files and other elements queued up for processing
+----
 
-* **Saved entity**: successfully saved files
+.. image:: images/options-interface-colors-logging.png
+   :align: center
 
-* **Log view text (debug)**: debug messages in the Error/Debug Log
+----
 
-* **Log view text (error)**: error messages in the Error/Debug Log
+.. image:: images/options-interface-colors-others.png
+   :align: center
 
-* **Log view text (info)**: informational messages in the Error/Debug Log
+----
 
-* **Log view text (warning)**: warning messages in the Error/Debug Log
+.. image:: images/options-interface-colors-profiles.png
+   :align: center
 
-* **Tag added**: newly added tags in the metadata pane
+----
 
-* **Tag changed**: changed tags in the metadata pane
+.. image:: images/options-interface-colors-syntax.png
+   :align: center
 
-* **Tag removed**: removed tags in the metadata pane
+----
+
+.. image:: images/options-interface-colors-tags.png
+   :align: center
+
+----
 
 .. note::
 
-   Separate sets of color selections are maintained for the light and dark themes.  The colors for
-   the currently displayed theme are the ones displayed for editing.
+   Separate sets of color selections are maintained for the light and dark themes. The colors for the currently displayed theme are the ones displayed for editing.

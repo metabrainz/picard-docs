@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2025-04-04 21:55+0000\n"
 "Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -38,17 +38,26 @@ msgid "**Description:**"
 msgstr "**Aprašas:**"
 
 #: ../../functions/func_set.rst:13
-msgid "Sets the variable ``name`` to ``value``.  The value of a variable is available to other script functions if it is enclosed between '%' characters (e.g.: ``%name%``). If ``name`` is another variable (e.g.: ``%indirect%``) the value of the variable will be used as ``name``.  This allows the creation of dynamically named variables."
+msgid ""
+"Sets the variable ``name`` to ``value``. The value of a variable is "
+"available to other script functions if it is enclosed between '%' characters "
+"(e.g.: ``%name%``). If ``name`` is another variable (e.g.: ``%indirect%``) "
+"the value of the variable will be used as ``name``. This allows the creation "
+"of dynamically named variables."
+msgstr ""
+
+#: ../../functions/func_set.rst:17
+msgid ""
+"To create a variable which can be used for the file naming string, but which "
+"will not be written as a tag in the file, prefix the variable name with an "
+"underscore. ``%something%`` will create a \"something\" tag; "
+"``%_something%`` will not."
 msgstr ""
 
 #: ../../functions/func_set.rst:20
-msgid "To create a variable which can be used for the file naming string, but which will not be written as a tag in the file, prefix the variable name with an underscore. ``%something%`` will create a \"something\" tag; ``%_something%`` will not."
-msgstr ""
-
-#: ../../functions/func_set.rst:26
 msgid "**Example:**"
 msgstr "**Pavyzdys:**"
 
-#: ../../functions/func_set.rst:28
+#: ../../functions/func_set.rst:22
 msgid "The following statements will return the values indicated:"
 msgstr "Toliau pateikti teiginiai grąžins nurodytas reikšmes:"

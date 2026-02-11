@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: 2020-11-19 16:21-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -24,27 +24,27 @@ msgstr ""
 msgid ":index:`WAVE Files <configuration; wave tag options>`"
 msgstr ":index:`Fichiers WAVE <configuration; options de balise wave>`"
 
-#: ../../config/options_tags_compatibility_wave.rst:9
+#: ../../config/options_tags_compatibility_wave.rst:6
 msgid ""
 "WAVE by itself as a standard only supports the INFO chunk tags, which are "
-"very limited.  In addition, INFO chunks don't have any proper support for "
+"very limited. In addition, INFO chunks don't have any proper support for "
 "encoding."
 msgstr ""
 "WAVE par lui-même en tant que norme ne prend en charge que les balises de "
 "bloc INFO, qui sont très limitées. De plus, les blocs INFO n'ont pas de "
 "support approprié pour l'encodage."
 
-#: ../../config/options_tags_compatibility_wave.rst:12
+#: ../../config/options_tags_compatibility_wave.rst:8
 msgid ""
 "In all cases Picard will write ID3 tags to the WAVE files. This is supported "
-"by quite a few tools; however, it is not supported universally.  Tools not "
-"supporting ID3 tags should just ignore them.  If possible, this is likely "
-"the best option to have proper tags in WAVE files. For compatibility with "
+"by quite a few tools; however, it is not supported universally. Tools not "
+"supporting ID3 tags should just ignore them. If possible, this is likely the "
+"best option to have proper tags in WAVE files. For compatibility with "
 "software that does not support ID3v2 tags, Picard can also save `Resource "
 "Interchange File Format <https://wikipedia.org/wiki/"
-"Resource_Interchange_File_Format>`_ (RIFF) INFO tags to WAVE files.  RIFF "
+"Resource_Interchange_File_Format>`_ (RIFF) INFO tags to WAVE files. RIFF "
 "INFO is read and written only as an extra. If there are no existing ID3 "
-"tags, the data from RIFF INFO will be used.  When saving files, RIFF INFO "
+"tags, the data from RIFF INFO will be used. When saving files, RIFF INFO "
 "will be written in addition to the ID3v2 tags."
 msgstr ""
 "Dans tous les cas, Picard écrira des balises ID3 dans les fichiers WAVE. "
@@ -61,7 +61,7 @@ msgstr ""
 "l'enregistrement des fichiers, RIFF INFO sera écrit en plus des balises "
 "ID3v2."
 
-#: ../../config/options_tags_compatibility_wave.rst:19
+#: ../../config/options_tags_compatibility_wave.rst:13
 msgid ""
 "Picard's use of the RIFF INFO tags is determined by the following "
 "configuration settings:"
@@ -69,19 +69,19 @@ msgstr ""
 "L'utilisation par Picard des balises RIFF INFO est déterminée par les "
 "paramètres de configuration suivants:"
 
-#: ../../config/options_tags_compatibility_wave.rst:21
+#: ../../config/options_tags_compatibility_wave.rst:15
 msgid "**Also include RIFF INFO tags in the files**"
 msgstr "** Incluez également les balises RIFF INFO dans les fichiers **"
 
-#: ../../config/options_tags_compatibility_wave.rst:23
+#: ../../config/options_tags_compatibility_wave.rst:17
 msgid "Picard will save the RIFF INFO tags to the files."
 msgstr "Picard enregistrera les balises RIFF INFO dans les fichiers."
 
-#: ../../config/options_tags_compatibility_wave.rst:25
+#: ../../config/options_tags_compatibility_wave.rst:19
 msgid "**Remove existing RIFF INFO tags from WAVE files**"
 msgstr "** Supprimer les balises RIFF INFO existantes des fichiers WAVE **"
 
-#: ../../config/options_tags_compatibility_wave.rst:27
+#: ../../config/options_tags_compatibility_wave.rst:21
 msgid ""
 "Picard will remove any existing RIFF INFO tags from the WAVE files. This "
 "setting is ignored if the previous setting is enabled to allow writing the "
@@ -91,16 +91,16 @@ msgstr ""
 "Ce paramètre est ignoré si le paramètre précédent est activé pour permettre "
 "l'écriture des balises RIFF INFO dans les fichiers."
 
-#: ../../config/options_tags_compatibility_wave.rst:30
+#: ../../config/options_tags_compatibility_wave.rst:23
 msgid "**RIFF INFO Text Encoding**"
 msgstr "**Encodage de texte RIFF INFO**"
 
-#: ../../config/options_tags_compatibility_wave.rst:32
+#: ../../config/options_tags_compatibility_wave.rst:25
 msgid ""
 "This setting allows you to specify the encoding used for the RIFF INFO tags "
-"written.  The default setting is Windows-1252 encoding.  Picard can also use "
+"written. The default setting is Windows-1252 encoding. Picard can also use "
 "UTF-8 as an alternative, which allows for full language support, but it "
-"depends on the software reading it.  Typically, if the software supports "
+"depends on the software reading it. Typically, if the software supports "
 "this, it will read the ID3 tags anyway so there is not much to be gained."
 msgstr ""
 "Ce paramètre vous permet de spécifier l'encodage utilisé pour les balises "

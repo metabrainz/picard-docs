@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -49,7 +49,7 @@ msgid ""
 "valued variable."
 msgstr ""
 
-#: ../../functions/func_slice.rst:20
+#: ../../functions/func_slice.rst:16
 msgid ""
 "Indexes are zero based. Negative numbers will be counted back from the "
 "number of elements in the list. If the ``start`` or ``end`` indexes are left "
@@ -57,18 +57,18 @@ msgid ""
 "respectively."
 msgstr ""
 
-#: ../../functions/func_slice.rst:24
+#: ../../functions/func_slice.rst:18
 msgid ""
 "A typical use might be to create a multi-value variable with all artists in "
 "``%artists%`` except the first, which can be used to create a \"feat.\" "
-"list.  This would look something like ``$setmulti(supporting_artists,"
+"list. This would look something like ``$setmulti(supporting_artists,"
 "$slice(%artists%,1))``."
 msgstr ""
 
-#: ../../functions/func_slice.rst:29
+#: ../../functions/func_slice.rst:21
 msgid "**Example:**"
 msgstr ""
 
-#: ../../functions/func_slice.rst:31
+#: ../../functions/func_slice.rst:23
 msgid "The following statements will return the values indicated:"
 msgstr ""

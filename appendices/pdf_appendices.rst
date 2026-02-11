@@ -6,7 +6,6 @@ Appendices
 .. toctree::
    :hidden:
 
-   plugins_api
    tag_mapping
    command_line
    keyboard_shortcuts
@@ -16,4 +15,4 @@ Appendices
    .. toctree::
       :hidden:
 
-      /functions/list_by_name
+      ../functions/list_by_name

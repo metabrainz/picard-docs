@@ -11,8 +11,7 @@ $copy
 
 **Description:**
 
-Copies metadata from variable ``source`` to ``target``. The difference from ``$set(target,%source%)`` is
-that ``$copy(target,source)`` copies multi-value variables without flattening them.
+Copies metadata from variable ``source`` to ``target``. The difference from ``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-value variables without flattening them.
 
 .. note::
 
@@ -28,15 +27,15 @@ The following statements will yield the values for ``target`` as indicated:
 
 .. code-block:: taggerscript
 
-    $set(source,)
-    $set(target,This will be overwritten)
-    $copy(target,source)                   ==>  ""
+   $set(source,)
+   $set(target,This will be overwritten)
+   $copy(target,source)                   ==>  ""
 
-    $set(source,one)
-    $copy(target,source)                   ==>  "one"
+   $set(source,one)
+   $copy(target,source)                   ==>  "one"
 
-    $setmulti(source,one)
-    $copy(target,source)                   ==>  "one"
+   $setmulti(source,one)
+   $copy(target,source)                   ==>  "one"
 
-    $setmulti(source,one; two)
-    $copy(target,source)                   ==>  "one; two"
+   $setmulti(source,one; two)
+   $copy(target,source)                   ==>  "one; two"

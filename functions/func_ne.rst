@@ -10,7 +10,7 @@ $ne
 
 **Description:**
 
-Returns true if ``x`` does not equal ``y``.  Note that comparisons are case-sensitive.
+Returns true if ``x`` does not equal ``y``. Note that comparisons are case-sensitive.
 
 .. only:: html
 
@@ -24,7 +24,7 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $ne(,a)   ==>  "1"  (True)
-    $ne(a,)   ==>  "1"  (True)
-    $ne(a,A)  ==>  "1"  (True)
-    $ne(a,a)  ==>  ""   (False)
+   $ne(,a)   ==>  "1"  (True)
+   $ne(a,)   ==>  "1"  (True)
+   $ne(a,A)  ==>  "1"  (True)
+   $ne(a,a)  ==>  ""   (False)

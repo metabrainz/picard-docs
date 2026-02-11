@@ -11,7 +11,7 @@ $eq
 
 **Description:**
 
-Returns true if ``x`` equals ``y``.  Note that comparisons are case-sensitive.
+Returns true if ``x`` equals ``y``. Note that comparisons are case-sensitive.
 
 .. only:: html
 
@@ -25,7 +25,7 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $eq(,a)   ==>  ""   (False)
-    $eq(a,)   ==>  ""   (False)
-    $eq(a,A)  ==>  ""   (False)
-    $eq(a,a)  ==>  "1"  (True)
+   $eq(,a)   ==>  ""   (False)
+   $eq(a,)   ==>  ""   (False)
+   $eq(a,A)  ==>  ""   (False)
+   $eq(a,a)  ==>  "1"  (True)

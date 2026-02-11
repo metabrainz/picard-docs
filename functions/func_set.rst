@@ -10,17 +10,11 @@ $set
 
 **Description:**
 
-Sets the variable ``name`` to ``value``.  The value of a variable is available to
-other script functions if it is enclosed between '%' characters (e.g.: ``%name%``).
-If ``name`` is another variable (e.g.: ``%indirect%``) the value of the variable
-will be used as ``name``.  This allows the creation of dynamically named variables.
+Sets the variable ``name`` to ``value``. The value of a variable is available to other script functions if it is enclosed between '%' characters (e.g.: ``%name%``). If ``name`` is another variable (e.g.: ``%indirect%``) the value of the variable will be used as ``name``. This allows the creation of dynamically named variables.
 
 .. note::
 
-   To create a variable which can be used for the file naming string, but
-   which will not be written as a tag in the file, prefix the variable name with
-   an underscore. ``%something%`` will create a "something" tag; ``%_something%``
-   will not.
+   To create a variable which can be used for the file naming string, but which will not be written as a tag in the file, prefix the variable name with an underscore. ``%something%`` will create a "something" tag; ``%_something%`` will not.
 
 
 **Example:**

@@ -1,10 +1,10 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`Ratings <configuration; ratings>`
-==========================================
+=========================================
 
 .. image:: images/options-metadata-ratings.png
-   :width: 100 %
+   :align: center
 
 **Enable track ratings**
 
@@ -12,7 +12,7 @@
 
 **E-mail**
 
-   The email address used when submitting ratings to MusicBrainz.  This identifies the user that provided the rating.
+   The email address used when submitting ratings to MusicBrainz. This identifies the user that provided the rating.
 
 **Submit ratings to MusicBrainz**
 

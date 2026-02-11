@@ -20,6 +20,5 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $is_audio()  ==>  "1"  (True, if the track is not a video)
-    $is_audio()  ==>  ""   (False, if the track is a video)
-
+   $is_audio()  ==>  "1"  (True, if the track is not a video)
+   $is_audio()  ==>  ""   (False, if the track is a video)

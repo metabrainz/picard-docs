@@ -11,7 +11,7 @@ $startswith
 
 **Description:**
 
-Returns true if ``text`` starts with ``prefix``.  Note that the comparison is case-sensitive.
+Returns true if ``text`` starts with ``prefix``. Note that the comparison is case-sensitive.
 
 .. only:: html
 
@@ -25,8 +25,8 @@ The statements below return the values indicated:
 
 .. code-block:: taggerscript
 
-    $startswith(The time is now.,The time)  ==>  "1"  (True)
-    $startswith(The time is now.,The TIME)  ==>  ""   (False)
-    $startswith(The time is now.,)          ==>  "1"  (True)
-    $startswith(,The)                       ==>  ""   (False)
-    $startswith(,)                          ==>  "1"  (True)
+   $startswith(The time is now.,The time)  ==>  "1"  (True)
+   $startswith(The time is now.,The TIME)  ==>  ""   (False)
+   $startswith(The time is now.,)          ==>  "1"  (True)
+   $startswith(,The)                       ==>  ""   (False)
+   $startswith(,)                          ==>  "1"  (True)

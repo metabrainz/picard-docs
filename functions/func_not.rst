@@ -24,9 +24,9 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $set(foo,)
-    $not(%foo%)  ==>  "1"   (False)
+   $set(foo,)
+   $not(%foo%)  ==>  "1"   (False)
 
-    $not(x)      ==>  ""    (True)
-    $not( )      ==>  ""    (True)
-    $not()       ==>  Error
+   $not(x)      ==>  ""    (True)
+   $not( )      ==>  ""    (True)
+   $not()       ==>  Error

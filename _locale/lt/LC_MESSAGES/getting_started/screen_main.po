@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: 2025-04-04 21:55+0000\n"
 "Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -26,151 +26,148 @@ msgid ":index:`Main Screen <user interface; main screen>`"
 msgstr ":index:`Pagrindinis ekranas <user interface; main screen>`"
 
 #: ../../getting_started/screen_main.rst:15
-msgid "**Menu Bar**: This provides the pull-down menu of actions that Picard can perform."
+msgid ""
+"**Menu Bar**: This provides the pull-down menu of actions that Picard can "
+"perform."
 msgstr ""
 "**Meniu juosta**: čia pateikiamas išskleidžiamasis veiksmų meniu, kuriuos "
 "„Picard“ gali atlikti."
 
 #: ../../getting_started/screen_main.rst:17
-msgid "**Tool Bar**: This provides quick links to the main functions performed by Picard.  This can be customized by the user in the :doc:`User Interface Options </config/options_interface>` settings."
+msgid ""
+"**Tool Bar**: This provides quick links to the main functions performed by "
+"Picard. This can be customized by the user in the :doc:`User Interface "
+"Options <../config/options_interface>` settings."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:20
-msgid "**File Browser**: This provides a browser for selecting files and directories for processing."
+#: ../../getting_started/screen_main.rst:19
+msgid ""
+"**File Browser**: This provides a browser for selecting files and "
+"directories for processing."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:22
-msgid "**Cluster Pane**:  Often referred to as the \"left-hand pane\", this section allows the user to select and cluster files for scanning, lookup or matching."
+#: ../../getting_started/screen_main.rst:21
+msgid ""
+"**Cluster Pane**: Often referred to as the \"left-hand pane\", this section "
+"allows the user to select and cluster files for scanning, lookup or matching."
+msgstr ""
+
+#: ../../getting_started/screen_main.rst:23
+msgid ""
+"**Album Pane**: Often referred to as the \"right-hand pane\", this section "
+"displays the albums retrieved from MusicBrainz. This is the section where "
+"files are matched to downloaded track information."
 msgstr ""
 
 #: ../../getting_started/screen_main.rst:25
-msgid "**Album Pane**:  Often referred to as the \"right-hand pane\", this section displays the albums retrieved from MusicBrainz.  This is the section where files are matched to downloaded track information."
+msgid ""
+"**Metadata Pane**: This section is a three-column table of the tag metadata "
+"for the album or track currently selected in the Album Pane. The first "
+"column shows the tag name, the second shows the original value found in the "
+"file, and the third column shows the new value that will be written."
+msgstr ""
+
+#: ../../getting_started/screen_main.rst:27
+msgid ""
+"**Cover Art**: This shows the new cover art image that will be written to "
+"the selected album or track, along with the original cover art image found "
+"in the files matched to the selected album or track."
 msgstr ""
 
 #: ../../getting_started/screen_main.rst:29
-msgid "**Metadata Pane**: This section is a three-column table of the tag metadata for the album or track currently selected in the Album Pane.  The first column shows the tag name, the second shows the original value found in the file, and the third column shows the new value that will be written."
+msgid ""
+"**Player**: The built-in player that can be used to play selected audio "
+"files."
+msgstr ""
+
+#: ../../getting_started/screen_main.rst:31
+msgid ""
+"**Status Bar**: The bar at the bottom of the screen shows information about "
+"the current operation of Picard, including such items as number of files, "
+"albums, and pending downloads. |nl|"
 msgstr ""
 
 #: ../../getting_started/screen_main.rst:33
-msgid "**Cover Art**: This shows the new cover art image that will be written to the selected album or track, along with the original cover art image found in the files matched to the selected album or track."
+msgid ""
+"Picard is available for different operating systems. And while Picard's "
+"functionality is overall the same the specific look of the user interface "
+"can be slightly different based on the operating system."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:37
-msgid "**Player**: The built-in player that can be used to play selected audio files."
+#: ../../getting_started/screen_main.rst:38
+#, fuzzy
+msgid ""
+":index:`Filtering the Main Screen <user interface; main screen filtering>`"
+msgstr ":index:`Pagrindinis ekranas <user interface; main screen>`"
+
+#: ../../getting_started/screen_main.rst:40
+msgid ""
+"The items displayed in the Cluster Pane and the Album Pane can be filtered "
+"to allow for quickly reviewing selected information. The filter bars can be "
+"displayed or hidden from the :menuselection:`\"View\"` menu, or using the "
+"keyboard shortcut :kbd:`Ctrl+Shift+F`."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:39
-msgid "**Status Bar**: The bar at the bottom of the screen shows information about the current operation of Picard, including such items as number of files, albums, and pending downloads. |nl|"
+#: ../../getting_started/screen_main.rst:45
+msgid ""
+"To filter the items in one of the panes, simply select one or more filters "
+"and enter the filter text to use for that pane. The items will be displayed "
+"or hidden based on the filter criteria entered."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:46
-msgid "Picard is available for different operating systems.  And while Picard's functionality is overall the same the specific look of the user interface can be slightly different based on the operating system.  Throughout the documentation screenshots taken on different operating systems are used. Below you find a selection of screenshots of Picard's main screen on different systems:"
+#: ../../getting_started/screen_main.rst:47
+msgid ""
+"When the :guilabel:`Filters` button is clicked, a dialog will be displayed "
+"to allow to you to select the filters to use for that pane."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:52
-msgid "win10light"
-msgstr "win10light"
+#: ../../getting_started/screen_main.rst:51
+msgid "When filtering is applied, items will only be displayed if:"
+msgstr ""
+
+#: ../../getting_started/screen_main.rst:53
+msgid "no filters are selected or no filter text has been entered;"
+msgstr ""
+
+#: ../../getting_started/screen_main.rst:54
+msgid "no tags are found that match the selected filters;"
+msgstr ""
 
 #: ../../getting_started/screen_main.rst:55
-msgid "|win10light|"
-msgstr "|win10light|"
-
-#: ../../getting_started/screen_main.rst:56
-msgid "Picard on Windows 10 (with light user interface)"
-msgstr "„Picard“ sistemoje „Windows 10“ (su šviesia naudotojo sąsaja)"
-
-#: ../../getting_started/screen_main.rst:58
-msgid "win10dark"
-msgstr "win10dark"
-
-#: ../../getting_started/screen_main.rst:61
-msgid "|win10dark|"
-msgstr "|win10dark|"
-
-#: ../../getting_started/screen_main.rst:62
-msgid "Picard on Windows 10 (with dark user interface)"
-msgstr "„Picard“ sistemoje „Windows 10“ (su tamsia naudotojo sąsaja)"
-
-#: ../../getting_started/screen_main.rst:64
-msgid "maclight"
-msgstr "maclight"
-
-#: ../../getting_started/screen_main.rst:67
-msgid "|maclight|"
-msgstr "|maclight|"
-
-#: ../../getting_started/screen_main.rst:68
-msgid "Picard on macOS"
+msgid ""
+"a tag is found that matches one of the selected filters and the filter text "
+"is found within the tag value."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:70
-msgid "macdark"
+#: ../../getting_started/screen_main.rst:57
+msgid ""
+"Items will not be displayed if one or more tags were found in the selected "
+"filters and the filter text was not found in any values of those tags."
 msgstr ""
 
-#: ../../getting_started/screen_main.rst:73
-msgid "|macdark|"
-msgstr ""
+#~ msgid "|win10light|"
+#~ msgstr "|win10light|"
 
-#: ../../getting_started/screen_main.rst:74
-msgid "Picard on macOS (dark mode)"
-msgstr ""
+#~ msgid "win10light"
+#~ msgstr "win10light"
 
-#: ../../getting_started/screen_main.rst:76
-msgid "linuxlight"
-msgstr ""
+#~ msgid "Picard on Windows 10 (with light user interface)"
+#~ msgstr "„Picard“ sistemoje „Windows 10“ (su šviesia naudotojo sąsaja)"
 
-#: ../../getting_started/screen_main.rst:79
-msgid "|linuxlight|"
-msgstr ""
+#~ msgid "|win10dark|"
+#~ msgstr "|win10dark|"
 
-#: ../../getting_started/screen_main.rst:80
-msgid "Picard on Linux with the KDE Plasma desktop environment (light theme)"
-msgstr ""
+#~ msgid "win10dark"
+#~ msgstr "win10dark"
 
-#: ../../getting_started/screen_main.rst:82
-msgid "linuxdark"
-msgstr ""
+#~ msgid "Picard on Windows 10 (with dark user interface)"
+#~ msgstr "„Picard“ sistemoje „Windows 10“ (su tamsia naudotojo sąsaja)"
 
-#: ../../getting_started/screen_main.rst:85
-msgid "|linuxdark|"
-msgstr ""
+#~ msgid "|maclight|"
+#~ msgstr "|maclight|"
 
-#: ../../getting_started/screen_main.rst:86
-msgid "Picard on Linux with the KDE Plasma desktop environment (dark theme)"
-msgstr ""
+#~ msgid "maclight"
+#~ msgstr "maclight"
 
-#: ../../getting_started/screen_main.rst:88
-msgid "linuxgnome"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:91
-msgid "|linuxgnome|"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:92
-msgid "Picard on Linux with the GNOME desktop environment"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:94
-msgid "win7"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:97
-msgid "|win7|"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:98
-msgid "Picard on Windows 7"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:100
-msgid "haiku"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:103
-msgid "|haiku|"
-msgstr ""
-
-#: ../../getting_started/screen_main.rst:104
-msgid "Picard on Haiku"
-msgstr "„Picard“ sistemoje „Haiku“"
+#~ msgid "Picard on Haiku"
+#~ msgstr "„Picard“ sistemoje „Haiku“"

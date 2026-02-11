@@ -30,9 +30,9 @@
 
 
 :index:`Advanced Tags <tags; advanced>`
-========================================
+=======================================
 
-You can make additional tags available by enabling the :doc:`Use track relationships </config/options_metadata>` and/or the :doc:`Use genres from MusicBrainz </config/options_genres>` settings in Picard.
+You can make additional tags available by enabling the :doc:`Use track relationships <../config/options_metadata>` and/or the :doc:`Use genres from MusicBrainz <../config/options_genres>` settings in Picard.
 
 Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation.
 
@@ -42,7 +42,7 @@ Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbr
 
 .. note::
 
-   Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping </appendices/tag_mapping>` section for details.
+   Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for details.
 
 
 .. _advanced_relationships:
@@ -139,7 +139,7 @@ If you enable "Use track relationships" in the Option settings, you get these ex
 .. _genre_settings:
 
 :index:`Genre Tags <tags; genre>`
-----------------------------------
+---------------------------------
 
 If you enable "Use genres from MusicBrainz", you get:
 

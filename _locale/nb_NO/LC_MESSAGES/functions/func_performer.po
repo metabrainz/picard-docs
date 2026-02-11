@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -40,12 +40,12 @@ msgstr ""
 msgid ""
 "Returns the performers where the performance type matches ``pattern`` "
 "separated by ``separator`` (or a comma followed by a space \", \" if not "
-"passed).  If ``pattern`` is blank, then all performers will be returned.  "
-"Note that by default the ``pattern`` to be matched is case-sensitive and can "
+"passed). If ``pattern`` is blank, then all performers will be returned. Note "
+"that by default the ``pattern`` to be matched is case-sensitive and can "
 "appear anywhere in the tag."
 msgstr ""
 
-#: ../../functions/func_performer.rst:19
+#: ../../functions/func_performer.rst:16
 msgid ""
 "As of version 2.7, you can explicitly define a regular expression in the "
 "form /pattern/flags. The only supported flag is \"i\" (ignore case). For "
@@ -53,22 +53,22 @@ msgid ""
 "Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
 msgstr ""
 
-#: ../../functions/func_performer.rst:25
+#: ../../functions/func_performer.rst:20
 msgid ""
 "When entering regular expressions into Picard scripts you have to escape a "
 "backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
 "parentheses \"(\" and \")\" in order to force Picard to not interpret them "
-"as part of the script command.  This is done by inserting a backslash before "
-"the character to be escaped.  For example, the regular expression "
+"as part of the script command. This is done by inserting a backslash before "
+"the character to be escaped. For example, the regular expression "
 "``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\"
 "\\.]*\\)\\$``."
 msgstr ""
 
-#: ../../functions/func_performer.rst:31
+#: ../../functions/func_performer.rst:22
 msgid "**Example:**"
 msgstr ""
 
-#: ../../functions/func_performer.rst:33
+#: ../../functions/func_performer.rst:24
 msgid ""
 "With the performer tags as ``performer:guitar`` = \"Ann\", ``performer:"
 "rhythm-guitar`` = \"Bob\" and ``performer:drums (drum kit)`` = \"Cindy\", "

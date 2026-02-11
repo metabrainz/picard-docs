@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -19,22 +19,39 @@ msgstr ""
 msgid ":index:`Local Files <configuration; local files>`"
 msgstr ""
 
-#: ../../config/options_local_files.rst:11
-msgid "In this section you can configure the file names to be used by the Local Files cover art provider. If you are trying to collect more than one image, the naming is important."
+#: ../../config/options_local_files.rst:8
+msgid ""
+"In this section you can configure the file names to be used by the Local "
+"Files cover art provider. If you are trying to collect more than one image, "
+"the naming is important."
 msgstr ""
 
-#: ../../config/options_local_files.rst:14
-msgid "The file names are defined using a regular expression. The default is ``^(?:cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` which will load files with the name \"cover\", \"folder\" or \"albumart\" and the file extension \"jpg\", \"png\", \"gif\" or \"tiff\" (e.g.: \"folder.jpg\" or \"cover.png\")."
+#: ../../config/options_local_files.rst:13
+msgid ""
+"The file names are defined using a `regular expression <https://en.wikipedia."
+"org/wiki/Regular_expression>`_. The default is ``^(?:cover|folder|albumart)(."
+"*)\\.(?:jpe?g|png|gif|tiff?)$`` which will load files with the name "
+"\"cover\", \"folder\" or \"albumart\" and the file extension \"jpg\", "
+"\"png\", \"gif\" or \"tiff\" (e.g.: \"folder.jpg\" or \"cover.png\")."
 msgstr ""
 
-#: ../../config/options_local_files.rst:18
-msgid "The first part of the regular expression is a non-capture group: ``(?:cover|folder|albumart)``.  Items listed in this group will not get captured and the default (Front) type will apply."
+#: ../../config/options_local_files.rst:15
+msgid ""
+"The first part of the regular expression is a non-capture group: ``(?:cover|"
+"folder|albumart)``. Items listed in this group will not get captured and the "
+"default (Front) type will apply."
+msgstr ""
+
+#: ../../config/options_local_files.rst:17
+msgid ""
+"The second part of the regular expression is a group: ``(.*)``. This is the "
+"real capture, so if the file names match any of the cover art types, they "
+"will be tagged as such."
 msgstr ""
 
 #: ../../config/options_local_files.rst:21
-msgid "The second part of the regular expression is a group: ``(.*)``. This is the real capture, so if the file names match any of the cover art types, they will be tagged as such."
-msgstr ""
-
-#: ../../config/options_local_files.rst:26
-msgid "A common mistake is to add all the types into the first (non-capture) group. This means that all the regular file names would be thrown into the Front type and cause unexpected results."
+msgid ""
+"A common mistake is to add all the types into the first (non-capture) group. "
+"This means that all the regular file names would be thrown into the Front "
+"type and cause unexpected results."
 msgstr ""

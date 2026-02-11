@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 08:15-0700\n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
 "PO-Revision-Date: 2023-02-13 16:14+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -26,7 +26,7 @@ msgid ":index:`Fingerprinting Options <configuration; fingerprinting>`"
 msgstr ""
 ":index:`Options d'empreintes digitales <configuration; empreinte digitale>`"
 
-#: ../../config/options_fingerprinting.rst:9
+#: ../../config/options_fingerprinting.rst:6
 msgid ""
 "If you select a file or cluster in the left-hand side of the Picard screen "
 "and select :menuselection:`\"Tools --> Scan\"`, Picard will invoke a program "
@@ -39,7 +39,7 @@ msgstr ""
 "empreinte pour chacun qui pourra alors être utilisé pour rechercher le "
 "fichier sur MusicBrainz."
 
-#: ../../config/options_fingerprinting.rst:13
+#: ../../config/options_fingerprinting.rst:8
 msgid ""
 "MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/"
 "AcoustID>`_ (an Open Source `acoustic fingerprinting <https://musicbrainz."
@@ -52,11 +52,11 @@ msgstr ""
 "`Lukáš Lalinský <https://oxygene.sk/>`_) mais a précédemment pris en charge "
 "TRM et MusicID PUID."
 
-#: ../../config/options_fingerprinting.rst:17
+#: ../../config/options_fingerprinting.rst:13
 msgid "**Audio Fingerprinting**"
 msgstr "**Empreinte audio**"
 
-#: ../../config/options_fingerprinting.rst:19
+#: ../../config/options_fingerprinting.rst:15
 msgid ""
 "This allows you to select whether or not to enable acoustic fingerprinting "
 "within Picard. If acoustic fingerprinting is disabled then all remaining "
@@ -66,11 +66,11 @@ msgstr ""
 "dans Picard. Si la prise d'empreintes acoustiques est désactivée, toutes les "
 "autres options de cet onglet seront verrouillées et ignorées."
 
-#: ../../config/options_fingerprinting.rst:23
+#: ../../config/options_fingerprinting.rst:17
 msgid "**Ignore existing AcoustID fingerprints**"
 msgstr "**Ignorer les empreintes digitales AcoustID existantes**"
 
-#: ../../config/options_fingerprinting.rst:25
+#: ../../config/options_fingerprinting.rst:19
 msgid ""
 "When checked, any existing AcoustID fingerprint information will not be "
 "used, and the files will be rescanned."
@@ -78,52 +78,52 @@ msgstr ""
 "Lorsqu'elle est cochée, les informations d'empreinte digitale AcoustID "
 "existantes ne seront pas utilisées et les fichiers seront à nouveau analysés."
 
-#: ../../config/options_fingerprinting.rst:28
+#: ../../config/options_fingerprinting.rst:21
 msgid "**Save AcoustID fingerprints to file tags**"
 msgstr ""
 "**Enregistrer les empreintes digitales AcoustID dans des étiquettes de "
 "fichiers**"
 
-#: ../../config/options_fingerprinting.rst:30
+#: ../../config/options_fingerprinting.rst:23
 msgid ""
 "When checked, the AcoustID fingerprint information from scanned files will "
-"be saved to the ``acoustid_fingerprint`` tag.  Note that this option is "
+"be saved to the ``acoustid_fingerprint`` tag. Note that this option is "
 "disabled by default because the fingerprint can always be calculated again "
-"from the audio file, and it can add a rather long data tag to the file.  The "
+"from the audio file, and it can add a rather long data tag to the file. The "
 "option to save this information has been added as of Picard v2.7 to "
 "accommodate use cases such as a workflow where the user adds this tag "
 "directly after ripping to avoid having to redo the calculation in the future."
 msgstr ""
 "Lorsque cette option est cochée, les informations de l'empreinte AcoustID "
 "des fichiers scannés seront enregistrées dans la balise "
-"``acoustid_fingerprint``.  Notez que cette option est désactivée par défaut "
+"``acoustid_fingerprint``. Notez que cette option est désactivée par défaut "
 "car l'empreinte peut toujours être recalculée à partir du fichier audio, et "
-"cela peut ajouter une balise de données assez longue au fichier.  L'option "
+"cela peut ajouter une balise de données assez longue au fichier. L'option "
 "permettant de sauvegarder cette information a été ajoutée à partir de Picard "
 "v2.7 pour s'adapter à des cas d'utilisation tels qu'un workflow où "
 "l'utilisateur ajoute ce tag directement après le rippage pour éviter d'avoir "
 "à refaire le calcul dans le futur."
 
-#: ../../config/options_fingerprinting.rst:36
+#: ../../config/options_fingerprinting.rst:25
 msgid "**Maximum threads to use for calculator**"
 msgstr "**Fils maximum à utiliser pour la calculatrice**"
 
-#: ../../config/options_fingerprinting.rst:38
+#: ../../config/options_fingerprinting.rst:27
 msgid ""
 "This allows you to specify the maximum number of fingerprint calculations to "
-"be run concurrently.  The default value is 2."
+"be run concurrently. The default value is 2."
 msgstr ""
 "Cela vous permet de spécifier le nombre maximum de calculs d'empreintes "
-"digitales à exécuter simultanément.  La valeur par défaut est 2."
+"digitales à exécuter simultanément. La valeur par défaut est 2."
 
-#: ../../config/options_fingerprinting.rst:41
+#: ../../config/options_fingerprinting.rst:29
 msgid "**Fingerprint calculator**"
 msgstr "**Calculateur d'empreintes digitales**"
 
-#: ../../config/options_fingerprinting.rst:43
+#: ../../config/options_fingerprinting.rst:31
 msgid ""
 "This identifies the external program on your system that will be used to "
-"calculate the AcoustID fingerprints.  By default, Picard uses the "
+"calculate the AcoustID fingerprints. By default, Picard uses the "
 "`Chromaprint <https://acoustid.org/chromaprint>`_ (:program:`fpcalc`) "
 "utility which is included with the Picard installation."
 msgstr ""
@@ -132,7 +132,7 @@ msgstr ""
 "l'utilitaire `Chromaprint <https://acoustid.org/chromaprint>`_ (:program:"
 "`fpcalc`) qui est inclus avec l'installation de Picard."
 
-#: ../../config/options_fingerprinting.rst:47
+#: ../../config/options_fingerprinting.rst:33
 msgid ""
 "Picard will auto-detect the path unless you have specifically overwritten it "
 "with something different than the detected path. :menuselection:`\"Options --"
@@ -150,14 +150,14 @@ msgstr ""
 "automatique ne fonctionne pas. Si l'utilisateur a sélectionné un chemin "
 "spécifique, celui-ci sera utilisé."
 
-#: ../../config/options_fingerprinting.rst:53
+#: ../../config/options_fingerprinting.rst:35
 msgid "**API key**"
 msgstr "**Clé API**"
 
-#: ../../config/options_fingerprinting.rst:55
+#: ../../config/options_fingerprinting.rst:37
 msgid ""
 "The key used to access the AcoustID API to lookup and submit AcoustID "
-"fingerprints.  There is no cost to obtain an API key."
+"fingerprints. There is no cost to obtain an API key."
 msgstr ""
 "Clé utilisée pour accéder à l'API AcoustID pour rechercher et soumettre des "
 "empreintes digitales AcoustID. Il n'y a aucun coût pour obtenir une clé API."

@@ -5,7 +5,7 @@
 .. TODO: Note which tags are not provided by Picard
 
 :index:`Basic Variables <variables; basic>`
-============================================
+===========================================
 
 These variables are populated from MusicBrainz data for most releases, without any special Picard settings.
 
@@ -25,7 +25,7 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
 **_albumartists_countries**
 
-   A multi-value variable containing the country codes for all of the credited album artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA".
+   A multi-value variable containing the country codes for all of the credited album artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA". (*since Picard 3.0*)
 
 **_albumartists_sort**
 
@@ -33,7 +33,7 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
 **_artists_countries**
 
-   A multi-value variable containing the country codes for all of the credited track artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA".
+   A multi-value variable containing the country codes for all of the credited track artists, in the same order as the artists. Duplicate country codes will be shown if there are more than one artist from the same country. If a country code is not provided by the webservice the code "XX" will be used to indicate an unknown country. For example, if the first credited artist is from Great Britain and there are two other credited artists from Canada, the value would be "GB; CA; CA". (*since Picard 3.0*)
 
 **_artists_sort**
 
@@ -46,6 +46,14 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 **_discpregap**
 
    Set to 1 if the disc the track is on has a "`pregap track <https://musicbrainz.org/doc/Terminology#hidden_track>`_", otherwise empty. (*since Picard 1.4*)
+
+**_folksonomy_tags**
+
+    Unfiltered list of all non-genre folksonomy tags loaded from MusicBrainz. Requires the :doc:`Use genres from MusicBrainz <../config/options_genres>` option to be enabled. (*since Picard 3.0*)
+
+**_genres**
+
+   Unfiltered list of all genres loaded from MusicBrainz. Requires the :doc:`Use genres from MusicBrainz <../config/options_genres>` option to be enabled.  (*since Picard 3.0*)
 
 **_multiartist**
 
