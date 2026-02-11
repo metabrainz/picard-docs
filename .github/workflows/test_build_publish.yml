@@ -86,17 +86,17 @@ jobs:
     - name: Display Variables Passed to Publish Action
       run: |
         cat docs/__init__.py
-    - name: Checkout gh-pages branch
-      run: |
-        git config --global user.name "${GITHUB_ACTOR}"
-        git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        git checkout --force gh-pages
-    - name: Update gh-pages branch
-      run: |
-        python publish.py
-        git add -A
-        if grep -q "Changes to be committed:" <<< `git status`; then
-          git status && git commit -m "Based on ${GITHUB_EVENT_NAME} to ${GITHUB_REF} by ${GITHUB_ACTOR}" && git push origin gh-pages
-        fi
-        git checkout master
+    # - name: Checkout gh-pages branch
+    #   run: |
+    #     git config --global user.name "${GITHUB_ACTOR}"
+    #     git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+    #     git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+    #     git checkout --force gh-pages
+    # - name: Update gh-pages branch
+    #   run: |
+    #     python publish.py
+    #     git add -A
+    #     if grep -q "Changes to be committed:" <<< `git status`; then
+    #       git status && git commit -m "Based on ${GITHUB_EVENT_NAME} to ${GITHUB_REF} by ${GITHUB_ACTOR}" && git push origin gh-pages
+    #     fi
+    #     git checkout master
