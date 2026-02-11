@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"POT-Creation-Date: 2025-10-14 11:00-0600\n"
 "PO-Revision-Date: 2025-05-15 18:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/usageretrieve/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/usageretrieve/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,203 +24,319 @@ msgid "Retrieving Album Information"
 msgstr ""
 
 #: ../../usage/retrieve.rst:8
-msgid "This stage identifies the album on MusicBrainz that will provide the information used for tagging the files, and retrieves the metadata from the MusicBrainz database.  There are a few different methods available, depending on the information currently available on your system (e.g.: metadata existing in the files, or having the source CD available)."
+msgid ""
+"This stage identifies the album on MusicBrainz that will provide the "
+"information used for tagging the files, and retrieves the metadata from the "
+"MusicBrainz database. There are a few different methods available, depending "
+"on the information currently available on your system (e.g.: metadata "
+"existing in the files, or having the source CD available)."
 msgstr ""
 
-#: ../../usage/retrieve.rst:13
-msgid "There are basically four main methods used to retrieve album information from the MusicBrainz database."
+#: ../../usage/retrieve.rst:10
+msgid ""
+"There are basically four main methods used to retrieve album information "
+"from the MusicBrainz database."
 msgstr ""
 
-#: ../../usage/retrieve.rst:18
+#: ../../usage/retrieve.rst:15 ../../usage/retrieve_lookup_cd.rst:6
 msgid "Lookup CD or Ripper Log"
 msgstr ""
 
-#: ../../usage/retrieve.rst:22
+#: ../../usage/retrieve.rst:20
 msgid ":doc:`Lookup CD or Ripper Log <retrieve_lookup_cd>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:24
-msgid "This is the preferred method of automatically identifying the album to retrieve, and should be used when you have the CD or :ref:`supported ripper log <faq_supported_rippers>` available. Typically this would be used right after ripping the audio files from the CD.  When initiated, the table of contents (TOC) is read from the CD and a request is sent to MusicBrainz to return a list of the releases that match the TOC.  If there are any matches, then they will be listed for you to select the one to use.  If there are no matches or none of the matches are correct, you can search the database manually for the matching album, and are given the option of attaching the TOC from your CD to the selected release for future lookup."
+#: ../../usage/retrieve.rst:22
+msgid ""
+"This is the preferred method of automatically identifying the album to "
+"retrieve, and should be used when you have the CD or :ref:`supported ripper "
+"log <faq_supported_rippers>` available. Typically this would be used right "
+"after ripping the audio files from the CD. When initiated, the table of "
+"contents (TOC) is read from the CD and a request is sent to MusicBrainz to "
+"return a list of the releases that match the TOC. If there are any matches, "
+"then they will be listed for you to select the one to use. If there are no "
+"matches or none of the matches are correct, you can search the database "
+"manually for the matching album, and are given the option of attaching the "
+"TOC from your CD to the selected release for future lookup."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:3
-msgid "The steps to follow to :index:`lookup a CD <lookup; cd, lookup; ripper log>` are:"
+#: ../../usage/retrieve_lookup_cd.rst:8
+msgid ""
+"The steps to follow to :index:`lookup a CD <lookup; cd, lookup; ripper log>` "
+"are:"
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:5
-msgid "Make sure the CD is inserted in the drive, and select :menuselection:`\"Tools --> Lookup CD... --> (drive to use)\"`. The CD TOC will be calculated and sent to MusicBrainz. Alternately, you can use a :ref:`supported ripper log file <faq_supported_rippers>` to lookup the CD using the :menuselection:`\"Tools --> Lookup CD --> From CD ripper log file...\"` command. This will open a file browser dialog to allow you to select the log file to process. Either method will query the MusicBrainz database and display a list of matching releases."
+#: ../../usage/retrieve_lookup_cd.rst:10
+msgid ""
+"Make sure the CD is inserted in the drive, and select :menuselection:"
+"`\"Tools --> Lookup CD... --> (drive to use)\"`. The CD TOC will be "
+"calculated and sent to MusicBrainz. Alternately, you can use a :ref:"
+"`supported ripper log file <faq_supported_rippers>` to lookup the CD using "
+"the :menuselection:`\"Tools --> Lookup CD --> From CD ripper log file...\"` "
+"command. This will open a file browser dialog to allow you to select the log "
+"file to process. Either method will query the MusicBrainz database and "
+"display a list of matching releases."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:16
-msgid "Select the correct release from the list and click on the :guilabel:`Load into Picard` button.  This will load the information for the release into Picard."
+#: ../../usage/retrieve_lookup_cd.rst:17
+msgid ""
+"Select the correct release from the list and click on the :guilabel:`Load "
+"into Picard` button. This will load the information for the release into "
+"Picard."
 msgstr ""
 
-#: ../../usage/retrieve_browser_steps.txt:55
-#: ../../usage/retrieve_lookup_cd_steps.txt:19
-#: ../../usage/retrieve_lookup_steps.txt:32
-#: ../../usage/retrieve_manual_steps.txt:47
-#: ../../usage/retrieve_scan_steps.txt:26
-msgid "A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track."
+#: ../../usage/retrieve_browser.rst:55 ../../usage/retrieve_lookup.rst:33
+#: ../../usage/retrieve_lookup_cd.rst:19 ../../usage/retrieve_manual.rst:48
+#: ../../usage/retrieve_scan.rst:26
+msgid ""
+"A music symbol in front of a track number in the right-hand pane indicates "
+"that there has been no file assigned to the track."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:26
-msgid "If there are no matches or none of the matches are correct, use the :guilabel:`Submit disc ID` option to locate the correct release.  Enter the release title or artist and initiate the search.  You will be provided with a list of the releases that match your search criterion and have the same number of tracks as your CD TOC."
+#: ../../usage/retrieve_lookup_cd.rst:26
+msgid ""
+"If there are no matches or none of the matches are correct, use the :"
+"guilabel:`Submit disc ID` option to locate the correct release. Enter the "
+"release title or artist and initiate the search. You will be provided with a "
+"list of the releases that match your search criterion and have the same "
+"number of tracks as your CD TOC."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:35
+#: ../../usage/retrieve_lookup_cd.rst:36
+msgid ""
+"Use the green arrow |lookup_tagger| to load the information for a release "
+"into Picard. In addition, you can select the release and attach the CD TOC."
+msgstr ""
+
+#: ../../usage/retrieve_lookup_cd.rst:33
 msgid "lookup_tagger"
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:38
-msgid "Use the green arrow |lookup_tagger| to load the information for a release into Picard.  In addition, you can select the release and attach the CD TOC."
+#: ../../usage/retrieve_lookup_cd.rst:45
+msgid ""
+"If you looked up by artist, and made your selection by clicking on the "
+"artist's name in the list rather than selecting the artist using the radio "
+"button next to the artist's name, you will not be allowed to attach the disc "
+"id to a release."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_cd_steps.txt:51
-msgid "If none of the releases displayed are correct, you have the option to add a new release (with some information automatically included)."
+#: ../../usage/retrieve_lookup_cd.rst:47
+msgid ""
+"If none of the releases displayed are correct, you have the option to add a "
+"new release (with some information automatically included)."
 msgstr ""
 
-#: ../../usage/retrieve.rst:41
+#: ../../usage/retrieve.rst:34 ../../usage/retrieve_lookup.rst:6
 msgid "Lookup Files"
 msgstr ""
 
-#: ../../usage/retrieve.rst:45
+#: ../../usage/retrieve.rst:39
 msgid ":doc:`Lookup Files <retrieve_lookup>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:47
-msgid "If you don't have the CD available, and your files are grouped by album, this is the preferred method of automatically identifying the album to retrieve.  This is done by grouping the files into album clusters in Picard and then perform the lookup.  Picard will try to match the entire set of clustered files to the same release."
+#: ../../usage/retrieve.rst:41
+msgid ""
+"If you don't have the CD available, and your files are grouped by album, "
+"this is the preferred method of automatically identifying the album to "
+"retrieve. This is done by grouping the files into album clusters in Picard "
+"and then perform the lookup. Picard will try to match the entire set of "
+"clustered files to the same release."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_steps.txt:3
+#: ../../usage/retrieve_lookup.rst:8
 msgid "The steps to follow to :index:`lookup files` are:"
 msgstr ""
 
-#: ../../usage/retrieve_browser_steps.txt:8
-#: ../../usage/retrieve_lookup_steps.txt:5
-#: ../../usage/retrieve_manual_steps.txt:5
-#: ../../usage/retrieve_scan_steps.txt:5
-msgid "Add your files using :menuselection:`\"Files --> Add Files...\"` or :menuselection:`\"Files --> Add Folder...\"`. For ease of use it is recommended to use the internal File Browser to manage file system interactions.  This is enabled from :menuselection:`\"View --> File Browser\"`."
+#: ../../usage/retrieve_browser.rst:13 ../../usage/retrieve_lookup.rst:10
+#: ../../usage/retrieve_manual.rst:10 ../../usage/retrieve_scan.rst:10
+msgid ""
+"Add your files using :menuselection:`\"Files --> Add Files...\"` or :"
+"menuselection:`\"Files --> Add Folder...\"`. For ease of use it is "
+"recommended to use the internal File Browser to manage file system "
+"interactions. This is enabled from :menuselection:`\"View --> File "
+"Browser\"`."
 msgstr ""
 
-#: ../../usage/retrieve_browser_steps.txt:17
-#: ../../usage/retrieve_lookup_steps.txt:14
-#: ../../usage/retrieve_manual_steps.txt:14
-#: ../../usage/retrieve_scan_steps.txt:14
-msgid "Drag the selected directory or files to the \"Unclustered Files\" folder, and wait for Picard to process the files - the names will turn from grey to black."
+#: ../../usage/retrieve_browser.rst:20 ../../usage/retrieve_lookup.rst:17
+#: ../../usage/retrieve_manual.rst:17 ../../usage/retrieve_scan.rst:17
+msgid ""
+"Drag the selected directory or files to the \"Unclustered Files\" folder, "
+"and wait for Picard to process the files - the names will turn from grey to "
+"black."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_steps.txt:22
-msgid "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album :index:`clusters <pair: cluster; lookup>`."
+#: ../../usage/retrieve_lookup.rst:24
+msgid ""
+"Use :menuselection:`\"Tools --> Cluster\"` to group the files into album :"
+"index:`clusters <pair: cluster; lookup>`."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_steps.txt:29
-msgid "Select a clustered album and use :menuselection:`\"Tools --> Lookup\"` to lookup the cluster. Depending on your previous metadata, the album will show up in the right-hand pane."
+#: ../../usage/retrieve_lookup.rst:31
+msgid ""
+"Select a clustered album and use :menuselection:`\"Tools --> Lookup\"` to "
+"lookup the cluster. Depending on your previous metadata, the album will show "
+"up in the right-hand pane."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_steps.txt:39
-msgid "If you're not sure that the album retrieved is correct, you can use :menuselection:`\"Tools --> Show other album versions...\"` to open a window displaying all releases matched.  From this window, you can select a different matching version to use, or refine the search criteria and perform a new search."
+#: ../../usage/retrieve_lookup.rst:40
+msgid ""
+"If you're not sure that the album retrieved is correct, you can use :"
+"menuselection:`\"Tools --> Show other album versions...\"` to open a window "
+"displaying all releases matched. From this window, you can select a "
+"different matching version to use, or refine the search criteria and perform "
+"a new search."
 msgstr ""
 
-#: ../../usage/retrieve_lookup_steps.txt:48
-msgid "If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as scanning the files or a manual lookup."
+#: ../../usage/retrieve_lookup.rst:47
+msgid ""
+"If no album was retrieved, or if the album retrieved was incorrect, you may "
+"have to try a different method such as scanning the files or a manual lookup."
 msgstr ""
 
-#: ../../usage/retrieve.rst:60
+#: ../../usage/retrieve.rst:53 ../../usage/retrieve_scan.rst:6
 msgid "Scan Files"
 msgstr ""
 
-#: ../../usage/retrieve.rst:64
+#: ../../usage/retrieve.rst:58
 msgid ":doc:`Scan Files <retrieve_scan>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:66
-msgid "If your files are not grouped into albums and you don't have the CD available, this is the only remaining method of automatically identifying the album to retrieve.  This is done by scanning the files to obtain their AcoustID fingerprints and then perform the lookup for the individual files by fingerprint.  The album(s) matching the files will show up in the right-hand pane based on a \"best match\" using the Preferred Releases settings in the Metadata options."
+#: ../../usage/retrieve.rst:60
+msgid ""
+"If your files are not grouped into albums and you don't have the CD "
+"available, this is the only remaining method of automatically identifying "
+"the album to retrieve. This is done by scanning the files to obtain their "
+"AcoustID fingerprints and then perform the lookup for the individual files "
+"by fingerprint. The album(s) matching the files will show up in the right-"
+"hand pane based on a \"best match\" using the Preferred Releases settings in "
+"the Metadata options."
 msgstr ""
 
-#: ../../usage/retrieve_scan_steps.txt:3
+#: ../../usage/retrieve_scan.rst:8
 msgid "The steps to follow to :index:`scan and lookup files <scan files>` are:"
 msgstr ""
 
-#: ../../usage/retrieve_scan_steps.txt:22
-msgid "Select the desired files and use :menuselection:`\"Tools --> Scan\"` to scan the files to determine their AcoustID fingerprints and lookup using this information. The album(s) matching the files will show up in the right-hand pane based on a \"best match\" using the Preferred Releases settings in the Metadata options."
+#: ../../usage/retrieve_scan.rst:24
+msgid ""
+"Select the desired files and use :menuselection:`\"Tools --> Scan\"` to scan "
+"the files to determine their AcoustID fingerprints and lookup using this "
+"information. The album(s) matching the files will show up in the right-hand "
+"pane based on a \"best match\" using the Preferred Releases settings in the "
+"Metadata options."
 msgstr ""
 
-#: ../../usage/retrieve_scan_steps.txt:33
-msgid "If no album was retrieved, or if the album retrieved was incorrect, you may have to try a different method such as clustering the files or a browser lookup."
+#: ../../usage/retrieve_scan.rst:33
+msgid ""
+"If no album was retrieved, or if the album retrieved was incorrect, you may "
+"have to try a different method such as clustering the files or a browser "
+"lookup."
 msgstr ""
 
-#: ../../usage/retrieve.rst:79
+#: ../../usage/retrieve.rst:70 ../../usage/retrieve_browser.rst:6
 msgid "Lookup in Browser"
 msgstr "Cerca al navegador"
 
-#: ../../usage/retrieve.rst:83
+#: ../../usage/retrieve.rst:75
 msgid ":doc:`Lookup in Browser <retrieve_browser>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:85
-msgid "If none of the automated methods are available, or don't produce the desired results, you have the option of retrieving the album information by having Picard initiate a search on the MusicBrainz website using your web browser.  There are two methods of initiating this search. The first method searches based on the tag information from the selected files."
+#: ../../usage/retrieve.rst:77
+msgid ""
+"If none of the automated methods are available, or don't produce the desired "
+"results, you have the option of retrieving the album information by having "
+"Picard initiate a search on the MusicBrainz website using your web browser. "
+"There are two methods of initiating this search. The first method searches "
+"based on the tag information from the selected files."
 msgstr ""
 
-#: ../../usage/retrieve_browser_steps.txt:3
+#: ../../usage/retrieve_browser.rst:11
+msgid ""
+"The steps to follow to :index:`manually lookup an album <lookup in browser>` "
+"on MusicBrainz are:"
+msgstr ""
+
+#: ../../usage/retrieve_browser.rst:27
+msgid ""
+"Use :menuselection:`\"Tools --> Cluster\"` to group the files into album "
+"clusters if you want lookup a cluster."
+msgstr ""
+
+#: ../../usage/retrieve_browser.rst:34
+msgid ""
+"Select a file or clustered album and use :menuselection:`\"Tools --> Lookup "
+"in Browser\"` to initiate the search in your browser using the currently "
+"available metadata."
+msgstr ""
+
+#: ../../usage/retrieve_browser.rst:41
+msgid ""
+"If you want to revise or refine your search criteria, make the desired "
+"changes at the bottom of the web page and click the \"Search\" button to re-"
+"initiate the search."
+msgstr ""
+
+#: ../../usage/retrieve_browser.rst:48
+msgid ""
+"Use the green arrow |retrieve_browser_steps_lookup_tagger| to load the "
+"information for a release into Picard."
+msgstr ""
+
+#: ../../usage/retrieve_browser.rst:8
 msgid "retrieve_browser_steps_lookup_tagger"
 msgstr ""
 
-#: ../../usage/retrieve_browser_steps.txt:6
-msgid "The steps to follow to :index:`manually lookup an album <lookup in browser>` on MusicBrainz are:"
-msgstr ""
-
-#: ../../usage/retrieve_browser_steps.txt:25
-msgid "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album clusters if you want lookup a cluster."
-msgstr ""
-
-#: ../../usage/retrieve_browser_steps.txt:32
-msgid "Select a file or clustered album and use :menuselection:`\"Tools --> Lookup in Browser\"` to initiate the search in your browser using the currently available metadata."
-msgstr ""
-
-#: ../../usage/retrieve_browser_steps.txt:40
-msgid "If you want to revise or refine your search criteria, make the desired changes at the bottom of the web page and click the \"Search\" button to re-initiate the search."
-msgstr ""
-
-#: ../../usage/retrieve_browser_steps.txt:48
-msgid "Use the green arrow |retrieve_browser_steps_lookup_tagger| to load the information for a release into Picard."
-msgstr ""
-
-#: ../../usage/retrieve.rst:97
+#: ../../usage/retrieve.rst:87 ../../usage/retrieve_manual.rst:6
 msgid "Manual Lookup"
 msgstr ""
 
-#: ../../usage/retrieve.rst:101
+#: ../../usage/retrieve.rst:92
 msgid ":doc:`Manual Lookup <retrieve_manual>`"
 msgstr ""
 
-#: ../../usage/retrieve.rst:103
-msgid "The second browser search method uses manually entered information as the search criterion."
+#: ../../usage/retrieve.rst:94
+msgid ""
+"The second browser search method uses manually entered information as the "
+"search criterion."
 msgstr ""
 
-#: ../../usage/retrieve_manual_steps.txt:3
+#: ../../usage/retrieve_manual.rst:8
 msgid "The steps to follow to manually lookup an album on MusicBrainz are:"
 msgstr ""
 
-#: ../../usage/retrieve_manual_steps.txt:22
-msgid "Enter your search information into the search box and select the type of records to search, then click the magnifying glass symbol to initiate the search.  This will open the `MusicBrainz website <https://musicbrainz.org>`_ in your browser."
+#: ../../usage/retrieve_manual.rst:24
+msgid ""
+"Enter your search information into the search box and select the type of "
+"records to search, then click the magnifying glass symbol to initiate the "
+"search. This will open the `MusicBrainz website <https://musicbrainz.org>`_ "
+"in your browser."
 msgstr ""
 
-#: ../../usage/retrieve_manual_steps.txt:30
-msgid "Continue to drill down by clicking on the appropriate links until you get to the release that you want to retrieve."
+#: ../../usage/retrieve_manual.rst:31
+msgid ""
+"Continue to drill down by clicking on the appropriate links until you get to "
+"the release that you want to retrieve."
 msgstr ""
 
-#: ../../usage/retrieve_manual_steps.txt:37
+#: ../../usage/retrieve_manual.rst:41
+msgid ""
+"Use the green arrow |retrieve_manual_steps_lookup_tagger| to load the "
+"information for a release into Picard."
+msgstr ""
+
+#: ../../usage/retrieve_manual.rst:38
 msgid "retrieve_manual_steps_lookup_tagger"
 msgstr ""
 
-#: ../../usage/retrieve_manual_steps.txt:40
-msgid "Use the green arrow |retrieve_manual_steps_lookup_tagger| to load the information for a release into Picard."
+#: ../../usage/retrieve_manual.rst:57
+msgid ""
+"If you enter a link to the desired entry (e.g.: ``https://musicbrainz.org/"
+"release/9383a6f5-9607-4a36-9c68-8663aad3592b``) in the search box in Picard, "
+"the entry will be loaded directly without opening a browser window."
 msgstr ""
 
-#: ../../usage/retrieve_manual_steps.txt:56
-msgid "If you enter a link to the desired entry (e.g.: ``https://musicbrainz.org/release/9383a6f5-9607-4a36-9c68-8663aad3592b``) in the search box in Picard, the entry will be loaded directly without opening a browser window."
-msgstr ""
-
-#: ../../usage/retrieve.rst:114
-msgid "Step-by-step instructions: :doc:`retrieve_lookup_cd` / :doc:`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / :doc:`retrieve_manual`"
+#: ../../usage/retrieve.rst:105
+msgid ""
+"Step-by-step instructions: :doc:`retrieve_lookup_cd` / :doc:"
+"`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / :doc:"
+"`retrieve_manual`"
 msgstr ""

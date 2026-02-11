@@ -1,10 +1,9 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`Work Flow Recommendations <workflows; general>`
-========================================================
+=======================================================
 
-This section provides some recommended workflows for various tagging scenarios.  These workflows are
-based on what are believed to be best practices.
+This section provides some recommended workflows for various tagging scenarios. These workflows are based on what are believed to be best practices.
 
 The scenarios covered include:
 
@@ -16,10 +15,7 @@ The scenarios covered include:
 
 .. note::
 
-   Regardless of whether or not it's one of the the workflows listed, it is **strongly** recommended
-   that you make a backup copy of the files being processed and initially process a copy of your music files.
-   This will help to ensure that Picard is properly configured (e.g.: settings, scripts, and plugins) and
-   produces the expected and desired results.
+   Regardless of whether or not it's one of the the workflows listed, it is **strongly** recommended that you make a backup copy of the files being processed and initially process a copy of your music files. This will help to ensure that Picard is properly configured (e.g.: settings, scripts, and plugins) and produces the expected and desired results.
 
 .. only:: latex or epub
 

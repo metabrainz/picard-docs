@@ -3,10 +3,7 @@
 :index:`Executable Commands <commands; executable, executable commands>`
 ========================================================================
 
-Picard can accept commands for processing by specifying them on the command line using
-the ``-e`` option or loading them from a text file. Commands are case-insensitive, and
-are processed sequentially in the order that they are received. The executable commands
-that Picard recognizes are:
+Picard can accept commands for processing by specifying them on the command line using the ``-e`` option or loading them from a text file. Commands are case-insensitive, and are processed sequentially in the order that they are received. The executable commands that Picard recognizes are:
 
 :index:`CLEAR_LOGS <executable commands; CLEAR_LOGS>`
 -----------------------------------------------------
@@ -14,9 +11,7 @@ that Picard recognizes are:
 | Usage: **CLEAR_LOGS**
 | Implemented: Picard 2.9
 
-Clear all entries from Picard's log.  This is the equivalent of clicking the
-:guilabel:`Clear Log` button from the log viewing screen opened using the
-:menuselection:`"Help --> View Error/Debug Log"` command.
+Clear all entries from Picard's log. This is the equivalent of clicking the :guilabel:`Clear Log` button from the log viewing screen opened using the :menuselection:`"Help --> View Error/Debug Log"` command.
 
 :index:`CLUSTER <executable commands; CLUSTER>`
 -----------------------------------------------
@@ -24,8 +19,7 @@ Clear all entries from Picard's log.  This is the equivalent of clicking the
 | Usage: **CLUSTER**
 | Implemented: Picard 2.9
 
-Cluster all files in the cluster pane.  This is the equivalent of using the
-:menuselection:`"Tools --> Cluster"` command.
+Cluster all files in the cluster pane. This is the equivalent of using the :menuselection:`"Tools --> Cluster"` command.
 
 :index:`FINGERPRINT <executable commands; FINGERPRINT>`
 -------------------------------------------------------
@@ -33,9 +27,7 @@ Cluster all files in the cluster pane.  This is the equivalent of using the
 | Usage: **FINGERPRINT**
 | Implemented: Picard 2.9
 
-Calculate acoustic fingerprints for all (matched) files in the album pane.
-This is the equivalent of using the :menuselection:`"Tools --> Generate
-AcoustID Fingerprints"` command.
+Calculate acoustic fingerprints for all (matched) files in the album pane. This is the equivalent of using the :menuselection:`"Tools --> Generate AcoustID Fingerprints"` command.
 
 :index:`FROM_FILE <executable commands; FROM_FILE>`
 ---------------------------------------------------
@@ -43,16 +35,9 @@ AcoustID Fingerprints"` command.
 | Usage: **FROM_FILE <file path>**
 | Implemented: Picard 2.9
 
-Load commands from a file.  The file path can be either an absolute or relative
-path to a text file containing the commands to be executed. Each command to be
-processed must be on a separate line along with its arguments (if applicable). Blank
-lines and lines beginning with an octothorpe (#) are ignored. Command files can
-include other command files by specifying them with another ``FROM_FILE`` command.
-Circular references (by including a command file that is currently being processed)
-are ignored and will be logged as a warning.
+Load commands from a file. The file path can be either an absolute or relative path to a text file containing the commands to be executed. Each command to be processed must be on a separate line along with its arguments (if applicable). Blank lines and lines beginning with an octothorpe (#) are ignored. Command files can include other command files by specifying them with another ``FROM_FILE`` command. Circular references (by including a command file that is currently being processed) are ignored and will be logged as a warning.
 
-For example, you may have a file named ``commands.txt`` containing the standard
-commands that you want to use when processing each directory, such as:
+For example, you may have a file named ``commands.txt`` containing the standard commands that you want to use when processing each directory, such as:
 
 .. code::
 
@@ -97,18 +82,11 @@ You could then process a directory by starting Picard with the command:
 | Usage: **LOAD <supported MBID/URL or path to a file/directory>**
 | Implemented: Picard 2.9
 
-Load one or more files/directories/MBIDs/URLs to Picard. This is similar to including
-the file, directory path, URL or MBID on the command line.
+Load one or more files/directories/MBIDs/URLs to Picard. This is similar to including the file, directory path, URL or MBID on the command line.
 
-Files and directories are specified including the path (either absolute or relative)
-to the file or directory, and may include drive specifiers. They can also be specified
-using the ``file://`` prefix. URLs are specified by using either the ``http://`` or
-``https://`` prefix. MBIDs are specified in the format ``mbid://<entity_type>/<mbid>``
-where ``<entity_type>`` is one of "release", "artist" or "track" and ``<mbid>`` is the
-MusicBrainz Identifier of the entity.
+Files and directories are specified including the path (either absolute or relative) to the file or directory, and may include drive specifiers. They can also be specified using the ``file://`` prefix. URLs are specified by using either the ``http://`` or ``https://`` prefix. MBIDs are specified in the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of "release", "artist" or "track" and ``<mbid>`` is the MusicBrainz Identifier of the entity.
 
-If a specified item contains a space, it must be enclosed in quotes such as
-``"/home/user/music/my song.mp3"``.
+If a specified item contains a space, it must be enclosed in quotes such as ``"/home/user/music/my song.mp3"``.
 
 :index:`LOOKUP <executable commands; LOOKUP>`
 ---------------------------------------------
@@ -116,8 +94,7 @@ If a specified item contains a space, it must be enclosed in quotes such as
 | Usage: **LOOKUP [clustered|unclustered|all]**
 | Implemented: Picard 2.9
 
-Lookup files in the clustering pane. Options are clustered files, unclustered files or
-all files. If not specified, the command defaults to all files.
+Lookup files in the clustering pane. Options are clustered files, unclustered files or all files. If not specified, the command defaults to all files.
 
 This is the equivalent of using the :menuselection:`"Tools --> Lookup"` command.
 
@@ -127,8 +104,7 @@ This is the equivalent of using the :menuselection:`"Tools --> Lookup"` command.
 | Usage: **LOOKUP_CD [device/log file]**
 | Implemented: Picard 2.9
 
-Read CD from the selected drive or ripper log file, and looks it up on MusicBrainz. If
-no argument is specified, it defaults to the first (alphabetically) available disc drive.
+Read CD from the selected drive or ripper log file, and looks it up on MusicBrainz. If no argument is specified, it defaults to the first (alphabetically) available disc drive.
 
 This is the equivalent of using the :menuselection:`"Tools --> Lookup CD..."` command.
 
@@ -146,14 +122,9 @@ Pause executable command processing for the specified number of seconds.
 | Usage: **QUIT \[force\]**
 | Implemented: Picard 2.9
 
-The ``QUIT`` command waits until all queued executable commands have completed, and then
-initiates a shutdown request the same as if the user closed Picard from the user interface.
-This allows Picard to perform the same checks for unsaved files and such.  When 'force' is
-entered as an argument to the command, Picard will bypass the unsaved files check.
+The ``QUIT`` command waits until all queued executable commands have completed, and then initiates a shutdown request the same as if the user closed Picard from the user interface. This allows Picard to perform the same checks for unsaved files and such. When 'force' is entered as an argument to the command, Picard will bypass the unsaved files check.
 
-Once a ``QUIT`` command has been queued, Picard will not queue any further executable commands.
-If the user cancels the ``QUIT`` from the unsaved files check dialog, the system will allow
-more commands to be queued.
+Once a ``QUIT`` command has been queued, Picard will not queue any further executable commands. If the user cancels the ``QUIT`` from the unsaved files check dialog, the system will allow more commands to be queued.
 
 :index:`REMOVE <executable commands; REMOVE>`
 ---------------------------------------------
@@ -206,7 +177,7 @@ Saves all matched files from the album pane.
 :index:`SAVE_MODIFIED <executable commands; SAVE_MODIFIED>`
 -----------------------------------------------------------
 
-| Usage: **SAVE_MODIFIED**
+| Usage: **SAVE_MATCHED**
 | Implemented: Picard 2.9
 
 Saves all modified files from the album pane.
@@ -217,8 +188,7 @@ Saves all modified files from the album pane.
 | Usage: **SCAN**
 | Implemented: Picard 2.9
 
-Scans all files in the cluster pane.  This is the equivalent of using the
-:menuselection:`"Tools --> Scan"` command.
+Scans all files in the cluster pane. This is the equivalent of using the :menuselection:`"Tools --> Scan"` command.
 
 :index:`SHOW <executable commands; SHOW>`
 -----------------------------------------
@@ -234,9 +204,7 @@ Make the running instance of Picard the currently active window.
 | Usage: **SUBMIT_FINGERPRINTS**
 | Implemented: Picard 2.9
 
-Submits outstanding acoustic fingerprints for all (matched) files in the album pane.
-This is the equivalent of using the :menuselection:`"Tools --> Submit AcoustIDs"`
-command.
+Submits outstanding acoustic fingerprints for all (matched) files in the album pane. This is the equivalent of using the :menuselection:`"Tools --> Submit AcoustIDs"` command.
 
 :index:`WRITE_LOGS <executable commands; WRITE_LOGS>`
 -----------------------------------------------------
@@ -244,6 +212,4 @@ command.
 | Usage: **WRITE_LOGS <path to output file>**
 | Implemented: Picard 2.9
 
-Writes the Picard logs to the specified output file. This is the equivalent of using
-the :guilabel:`Save As...` button from the log viewing screen opened using the
-:menuselection:`"Help --> View Error/Debug Log"` command.
+Writes the Picard logs to the specified output file. This is the equivalent of using the :guilabel:`Save As...` button from the log viewing screen opened using the :menuselection:`"Help --> View Error/Debug Log"` command.

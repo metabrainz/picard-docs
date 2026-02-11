@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 09:04-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -128,88 +128,88 @@ msgid ""
 "support for tags and character encodings."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:43
+#: ../../faq/faq_file_formats.rst:40
 msgid "What formats will Picard support?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:45
+#: ../../faq/faq_file_formats.rst:42
 msgid ""
 "Picard is intended to eventually support all formats (including "
 "fingerprinting), but this is a complex (arguably never-ending) process, and "
 "will take some time."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:51
+#: ../../faq/faq_file_formats.rst:47
 msgid "What rippers are supported for looking up from logs?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:53
+#: ../../faq/faq_file_formats.rst:49
 msgid ""
 "As of version 2.9, Picard supports the use of log files produced by popular "
 "CD file rippers for looking up a release. Because the log files of these "
 "rippers contain sufficient information to generate the CD table of contents "
-"they can be used in place of reading the CD itself.  The supported rippers "
+"they can be used in place of reading the CD itself. The supported rippers "
 "include:"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:57
+#: ../../faq/faq_file_formats.rst:51
 msgid "`dBpoweramp <https://dbpoweramp.com/>`_ for macOS and Windows"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:58
+#: ../../faq/faq_file_formats.rst:52
 msgid "`Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:59
+#: ../../faq/faq_file_formats.rst:53
 msgid "`fre:ac <https://www.freac.org>`_ for Linux, macOS, Windows and others"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:60
+#: ../../faq/faq_file_formats.rst:54
 msgid "`Whipper <https://github.com/whipper-team/whipper>`_ for Linux"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:61
+#: ../../faq/faq_file_formats.rst:55
 msgid ""
 "`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:65
+#: ../../faq/faq_file_formats.rst:59
 msgid "Which tags can Picard write to my files?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:67
+#: ../../faq/faq_file_formats.rst:61
 msgid ""
-"See the :doc:`/variables/variables` section for information on which "
+"See the :doc:`../variables/variables` section for information on which "
 "MusicBrainz fields Picard writes to tags. `Picard Tag Mapping <https://"
 "picard.musicbrainz.org/docs/mappings/>`_ contains more technical information "
 "on how these are further mapped into each tag format."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:72
+#: ../../faq/faq_file_formats.rst:65
 msgid "How do I edit tags in several files at once?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:74
+#: ../../faq/faq_file_formats.rst:67
 msgid "Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:75
+#: ../../faq/faq_file_formats.rst:68
 msgid ""
 "The metadata view at the bottom will show which tags are present in the "
 "selected files and whether they are the same across all files or different."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:77
+#: ../../faq/faq_file_formats.rst:69
 msgid ""
 "If you edit any value in the \"New values\" column you will change this tag "
 "for all selected files."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:78
+#: ../../faq/faq_file_formats.rst:70
 msgid "You need to click Save in order to persist these changes to your files."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:80
+#: ../../faq/faq_file_formats.rst:72
 msgid ""
 "Please understand that Picard is not designed as a general purpose :index:"
 "`tag editor <tags; editing>`. Its primary goal is to retrieve community-"
@@ -217,19 +217,19 @@ msgid ""
 "include:"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:83
+#: ../../faq/faq_file_formats.rst:74
 msgid ""
 "allowing rule-based customization of that data using scripts and plugins"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:84
+#: ../../faq/faq_file_formats.rst:75
 msgid ""
 "encouraging users to create an account and fix and update data via the "
 "MusicBrainz website, thus sharing their work with the rest of the community "
 "rather than simply fixing their tags locally."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:86
+#: ../../faq/faq_file_formats.rst:77
 msgid ""
 "To that end, Picard is likely to never have as much development focus on "
 "manual bulk editing of tags as other general purpose editors (e.g.: `Mp3tag "
@@ -239,22 +239,22 @@ msgid ""
 "area!"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:92
+#: ../../faq/faq_file_formats.rst:81
 msgid ""
 "Why is saving files sometimes slow, but saving a second time much faster?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:94
+#: ../../faq/faq_file_formats.rst:83
 msgid ""
 "In most file formats the tags are near the beginning of the file, before the "
-"actual music data.  If changed tags get written to the file and the newly "
+"actual music data. If changed tags get written to the file and the newly "
 "written tags take more space than before the entire file needs to be "
 "rewritten. This is usually much slower than just rewriting part of the file "
 "containing the tags, especially for larger files and/or if the files are on "
 "a slow storage (e.g. a network share or slow external drive)."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:99
+#: ../../faq/faq_file_formats.rst:85
 msgid ""
 "To mitigate the issue most tagging software (including Picard) leaves some "
 "free space (the so called padding) after the tags and before the actual "
@@ -264,7 +264,7 @@ msgid ""
 "increase in padding, avoiding rewriting the file."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:104
+#: ../../faq/faq_file_formats.rst:87
 msgid ""
 "This all means that when you add many tags to the files (or if there is no "
 "or only small padding) you experience slow writing speed. If you do only "
@@ -272,84 +272,84 @@ msgid ""
 "faster."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:109
+#: ../../faq/faq_file_formats.rst:91
 msgid ""
 "Why does Picard not use Vinyl style track numbers (e.g. A1, A2, ...) by "
 "default?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:111
+#: ../../faq/faq_file_formats.rst:93
 msgid ""
 "For Vinyl releases the track numbers on MusicBrainz are usually entered as "
 "A1, A2, ..., B1, B2, ... and so on. Other releases might use even different "
-"more uncommon numbering schemes.  Yet Picard will by default always write "
+"more uncommon numbering schemes. Yet Picard will by default always write "
 "decimal track numbers, starting with 1 for the first track on a medium."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:115
+#: ../../faq/faq_file_formats.rst:95
 msgid ""
 "The main reason for this is that this is how track numbers are defined for "
-"most file formats.  The formats expect decimal numbers, and likewise music "
+"most file formats. The formats expect decimal numbers, and likewise music "
 "players might only expect decimal numbers when reading the files."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:118
+#: ../../faq/faq_file_formats.rst:97
 msgid ""
 "If you really want to you can use the scripting variable "
 "``%_musicbrainz_tracknumber%`` which always holds the track number as it was "
-"entered in the MusicBrainz database.  The following script will set the "
+"entered in the MusicBrainz database. The following script will set the "
 "tracknumber tag to the value as displayed in the MusicBrainz database:"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:126
+#: ../../faq/faq_file_formats.rst:103
 msgid ""
 "Please be aware that for MP4 files this will result in the track number not "
 "being saved, as the MP4 format does not allow for non integer values in this "
-"tag.  For other formats it depends on the playback software and devices you "
+"tag. For other formats it depends on the playback software and devices you "
 "use if they can handle these non-standard track numbers."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:132
+#: ../../faq/faq_file_formats.rst:107
 msgid ""
 "The built-in audio player cannot play my file. Which formats does it support?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:134
+#: ../../faq/faq_file_formats.rst:109
 msgid ""
 "The formats supported by the built-in :index:`audio player` depend on the "
 "formats supported by your operating system."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:136
+#: ../../faq/faq_file_formats.rst:111
 msgid "**Windows:**"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:138
+#: ../../faq/faq_file_formats.rst:113
 msgid ""
 "The supported formats depend on the installed codecs. Depending on the "
 "Windows version certain codecs are pre-installed, but you can install "
 "additional codecs."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:141
+#: ../../faq/faq_file_formats.rst:115
 msgid ""
 "You might want to install the `Directshow Filters for Ogg <https://xiph.org/"
 "dshow/downloads/>`_ to add support for Ogg Vorbis, Ogg Speex, Ogg Theora, "
 "Ogg FLAC, native FLAC, and WebM files."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:146
+#: ../../faq/faq_file_formats.rst:119
 msgid ""
-"Additional information is available from  `Microsoft's Codecs FAQ <https://"
+"Additional information is available from `Microsoft's Codecs FAQ <https://"
 "support.microsoft.com/en-us/help/15070/windows-media-player-codecs-"
 "frequently-asked-questions>`_."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:148
+#: ../../faq/faq_file_formats.rst:121
 msgid "**Linux:**"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:150
+#: ../../faq/faq_file_formats.rst:123
 msgid ""
 "On Linux systems the player uses GStreamer which supports most common audio "
 "formats, although some distributions might exclude some codecs due to "
@@ -357,13 +357,13 @@ msgid ""
 "the GStreamer plugins available for your distribution."
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:155
+#: ../../faq/faq_file_formats.rst:127
 msgid ""
 "I am using Fedora. Why doesn't :index:`acoustic fingerprinting <acoustic "
 "fingerprint, fingerprint; acoustic>` work?"
 msgstr ""
 
-#: ../../faq/faq_file_formats.rst:157
+#: ../../faq/faq_file_formats.rst:129
 msgid ""
 "Acoustic fingerprinting in Picard uses a tool called :program:`fpcalc`, "
 "which is not available in Fedora. You can get it by installing the "

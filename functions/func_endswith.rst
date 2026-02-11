@@ -11,7 +11,7 @@ $endswith
 
 **Description:**
 
-Returns true if ``text`` ends with ``suffix``.  Note that the comparison is case-sensitive.
+Returns true if ``text`` ends with ``suffix``. Note that the comparison is case-sensitive.
 
 .. only:: html
 
@@ -25,8 +25,8 @@ The statements below return the values indicated:
 
 .. code-block:: taggerscript
 
-    $endswith(The time is now,is now)  ==>  "1"  (True)
-    $endswith(The time is now,is NOW)  ==>  ""   (False)
-    $endswith(The time is now,)        ==>  "1"  (True)
-    $endswith(,)                       ==>  "1"  (True)
-    $endswith(,now)                    ==>  ""   (False)
+   $endswith(The time is now,is now)  ==>  "1"  (True)
+   $endswith(The time is now,is NOW)  ==>  ""   (False)
+   $endswith(The time is now,)        ==>  "1"  (True)
+   $endswith(,)                       ==>  "1"  (True)
+   $endswith(,now)                    ==>  ""   (False)

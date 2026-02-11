@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: 2021-10-06 18:03+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -40,7 +40,7 @@ msgstr ""
 "exécutables de construction quotidiens, code source Python que vous pouvez "
 "exécuter avec le vôtre Environnement Python, etc.)"
 
-#: ../../getting_started/download.rst:10
+#: ../../getting_started/download.rst:8
 msgid ""
 "It is expected that most users will run formal release executables or "
 "package manager equivalents as these are easy to install, and are stable "
@@ -53,7 +53,7 @@ msgstr ""
 "susceptibles d'avoir des bogues dans les fonctionnalités expérimentales ou "
 "nouvelles."
 
-#: ../../getting_started/download.rst:13
+#: ../../getting_started/download.rst:10
 msgid ""
 "However, any users wishing to contribute to the development of Picard or its "
 "Plugins may want to run from source code, downloading it from GitHub using a "
@@ -68,14 +68,14 @@ msgstr ""
 "comprenez pas ce que disait la phrase précédente, alors vous avez un peu de "
 "courbe d'apprentissage. :-)"
 
-#: ../../getting_started/download.rst:17
+#: ../../getting_started/download.rst:12
 msgid ""
 "The latest version of MusicBrainz Picard is always available for download "
-"from the `Picard Website <https://picard.musicbrainz.org/downloads/>`_.  "
-"This includes installers for all supported platforms as well as `release "
-"source code <https://picard.musicbrainz.org/downloads/#source>`_. The very "
-"latest source code is also available at the `GitHub repository <https://"
-"github.com/musicbrainz/picard>`_."
+"from the `Picard Website <https://picard.musicbrainz.org/downloads/>`_. This "
+"includes installers for all supported platforms as well as `release source "
+"code <https://picard.musicbrainz.org/downloads/#source>`_. The very latest "
+"source code is also available at the `GitHub repository <https://github.com/"
+"musicbrainz/picard>`_."
 msgstr ""
 "La dernière version de MusicBrainz Picard est toujours disponible au "
 "téléchargement sur `le site Web de Picard <https://picard.musicbrainz.org/"
@@ -85,15 +85,15 @@ msgstr ""
 "source est également disponible dans `le référentiel GitHub <https://github."
 "com/musicbrainz/picard>`_."
 
-#: ../../getting_started/download.rst:24
+#: ../../getting_started/download.rst:16
 msgid "Installing Picard on Linux"
 msgstr "Installation de Picard sous Linux"
 
-#: ../../getting_started/download.rst:27
+#: ../../getting_started/download.rst:19
 msgid ":index:`Installing with Flatpak <pair: install; flatpak>`"
 msgstr ":index:`Installation avec Flatpak <pair: installation; flatpak>`"
 
-#: ../../getting_started/download.rst:29
+#: ../../getting_started/download.rst:21
 msgid ""
 "Picard is available on `Flathub <https://flathub.org/apps/details/org."
 "musicbrainz.Picard>`_. This version should work on all modern Linux "
@@ -105,21 +105,21 @@ msgstr ""
 "distributions Linux modernes, à condition que Flatpak soit installé (voir "
 "`Installation rapide du Flatpak <https://flatpak.org/setup/>`_)."
 
-#: ../../getting_started/download.rst:33
+#: ../../getting_started/download.rst:23
 msgid "First enable the Flathub repository:"
 msgstr "Commencez par activer le référentiel Flathub:"
 
-#: ../../getting_started/download.rst:39
+#: ../../getting_started/download.rst:29
 msgid "You can now install Picard:"
 msgstr "Vous pouvez maintenant installer Picard:"
 
-#: ../../getting_started/download.rst:47
+#: ../../getting_started/download.rst:37
 msgid ":index:`Installing with Snap <pair: install; snap>`"
 msgstr ":index:`Installation avec Snap <pair: installation; snap>`"
 
-#: ../../getting_started/download.rst:49
+#: ../../getting_started/download.rst:39
 msgid ""
-"Picard is available as a Snap from the Snap Store.  This version should work "
+"Picard is available as a Snap from the Snap Store. This version should work "
 "on all modern Linux distributions, as long as Snap is installed (see "
 "`Installing Snap <https://snapcraft.io/docs/installing-snapd>`_)."
 msgstr ""
@@ -127,26 +127,26 @@ msgstr ""
 "sur toutes les distributions Linux modernes, tant que Snap est installé "
 "(voir `Installation de Snap <https://snapcraft.io/docs/installing-snapd>`_)."
 
-#: ../../getting_started/download.rst:52
+#: ../../getting_started/download.rst:41
 msgid ""
 "The `Snap Store page of Picard <https://snapcraft.io/picard>`_ gives "
 "detailed instructions on how to install Picard on various Linux "
-"distributions.  If your Linux distributions supports it you can install "
+"distributions. If your Linux distributions supports it you can install "
 "Picard from your distribution's software center, e.g. Ubuntu Software or KDE "
-"Discover.  You can also install Picard from the terminal:"
+"Discover. You can also install Picard from the terminal:"
 msgstr ""
 "La page `Snap Store de Picard <https://snapcraft.io/picard>`_ donne des "
 "instructions détaillées sur la façon d'installer Picard sur diverses "
-"distributions Linux.  Si votre distribution Linux le supporte, vous pouvez "
+"distributions Linux. Si votre distribution Linux le supporte, vous pouvez "
 "installer Picard depuis le centre logiciel de votre distribution, par "
-"exemple Ubuntu Software ou KDE Discover.  Vous pouvez également installer "
+"exemple Ubuntu Software ou KDE Discover. Vous pouvez également installer "
 "Picard à partir du terminal:"
 
-#: ../../getting_started/download.rst:63
+#: ../../getting_started/download.rst:49
 msgid ""
 "Picard installed as a Snap is running inside a sandbox and thus it does not "
-"have full access to all files and folders on your system.  By default Picard "
-"has access to your home folder.  You can additionally give it access to "
+"have full access to all files and folders on your system. By default Picard "
+"has access to your home folder. You can additionally give it access to "
 "removable media by running the following command on a terminal:"
 msgstr ""
 "Picard installé en tant que Snap s'exécute dans un bac à sable et n'a donc "
@@ -155,7 +155,7 @@ msgstr ""
 "donner accès à un support amovible en exécutant la commande suivante sur un "
 "terminal:"
 
-#: ../../getting_started/download.rst:73
+#: ../../getting_started/download.rst:57
 msgid ""
 ":index:`Installing from your distribution's package repository <pair: "
 "install; Linux package>`"
@@ -163,11 +163,11 @@ msgstr ""
 ":index:`Installation à partir du référentiel de packages de votre "
 "distribution <pair: install; Paquet Linux>`"
 
-#: ../../getting_started/download.rst:75
+#: ../../getting_started/download.rst:59
 msgid ""
-"Picard is available in the package repositories of most distributions.  The "
+"Picard is available in the package repositories of most distributions. The "
 "`download page <https://picard.musicbrainz.org/downloads/#linux>`_ provides "
-"links to the packages for common Linux distributions.  Please refer to your "
+"links to the packages for common Linux distributions. Please refer to your "
 "distribution's documentation for how to install software packages."
 msgstr ""
 "Picard est disponible dans les référentiels de paquets de la plupart des "
@@ -176,9 +176,9 @@ msgstr ""
 "distributions Linux courantes. Veuillez consulter la documentation de votre "
 "distribution pour savoir comment installer les packages logiciels."
 
-#: ../../getting_started/download.rst:79
+#: ../../getting_started/download.rst:61
 msgid ""
-"Please note that most distributions usually ship older versions of Picard.  "
+"Please note that most distributions usually ship older versions of Picard. "
 "If you want to use the latest available version, as is recommended, install "
 "Picard as Flatpak or Snap as described above."
 msgstr ""

@@ -13,15 +13,9 @@ $min
 
 Returns the minimum value using the comparison specified in ``type``.
 
-Possible values of ``type`` are "int" (integer), "float" (floating point), "text"
-(case-sensitive text), "nocase" (case-insensitive text) and "auto" (automatically
-determine the type of arguments provided), with "auto" used as the default
-comparison method if ``type`` is not specified.  The "auto" type will use the
-first type that applies to both arguments in the following order of preference:
-"int", "float" and "text".
+Possible values of ``type`` are "int" (integer), "float" (floating point), "text" (case-sensitive text), "nocase" (case-insensitive text) and "auto" (automatically determine the type of arguments provided), with "auto" used as the default comparison method if ``type`` is not specified. The "auto" type will use the first type that applies to both arguments in the following order of preference: "int", "float" and "text".
 
-Can be used with an arbitrary number of arguments.  Multi-value arguments
-will be expanded automatically.
+Can be used with an arbitrary number of arguments. Multi-value arguments will be expanded automatically.
 
 
 **Example:**

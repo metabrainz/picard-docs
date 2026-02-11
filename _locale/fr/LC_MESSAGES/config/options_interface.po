@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-31 09:30-0700\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2024-02-02 04:28+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translations.metabrainz.org/projects/"
-"picard-docs/configoptions_interface/fr/>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_interface/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,11 +40,11 @@ msgstr ""
 "la barre d'outils ne seront pas affichées, ce qui fait que la barre d'outils "
 "apparaîtra un peu plus petite."
 
-#: ../../config/options_interface.rst:14
+#: ../../config/options_interface.rst:13
 msgid "**Show icons in menus**"
 msgstr "**Afficher les icônes dans les menus**"
 
-#: ../../config/options_interface.rst:16
+#: ../../config/options_interface.rst:15
 msgid ""
 "Some users prefer to disable menu icons, which is the default behavior for "
 "macOS systems. This option allows the user to select whether the icons are "
@@ -54,11 +54,11 @@ msgstr ""
 "comportement par défaut des systèmes macOS. Cette option permet à "
 "l'utilisateur de choisir si les icônes sont affichées dans les menus."
 
-#: ../../config/options_interface.rst:19
+#: ../../config/options_interface.rst:17
 msgid "**User interface language**"
 msgstr "**Langue de l'interface utilisateur**"
 
-#: ../../config/options_interface.rst:21
+#: ../../config/options_interface.rst:19
 msgid ""
 "By default, Picard will display in the language displayed by your operating "
 "system, however you can override this and select a different language if "
@@ -68,11 +68,11 @@ msgstr ""
 "d'exploitation, mais vous pouvez le remplacer et sélectionner une autre "
 "langue si nécessaire."
 
-#: ../../config/options_interface.rst:24
+#: ../../config/options_interface.rst:21
 msgid "**User interface color theme**"
 msgstr "**Thème de couleurs de l'interface utilisateur**"
 
-#: ../../config/options_interface.rst:26
+#: ../../config/options_interface.rst:23
 msgid ""
 "This option allows the user to select the color theme used by Picard. On "
 "macOS and Windows systems, the available choices are:"
@@ -81,7 +81,7 @@ msgstr ""
 "utilisé par Picard. Sur les systèmes macOS et Windows, les choix disponibles "
 "sont les suivants:"
 
-#: ../../config/options_interface.rst:28 ../../config/options_interface.rst:34
+#: ../../config/options_interface.rst:25 ../../config/options_interface.rst:31
 msgid ""
 "Default - The default color scheme based on the operating system display "
 "settings."
@@ -89,45 +89,45 @@ msgstr ""
 "Défaut - Le schéma de couleurs par défaut basé sur les paramètres "
 "d'affichage du système d'exploitation."
 
-#: ../../config/options_interface.rst:29
+#: ../../config/options_interface.rst:26
 msgid "Light - A light display theme."
 msgstr "Light - Un thème d'affichage lumineux."
 
-#: ../../config/options_interface.rst:30
+#: ../../config/options_interface.rst:27
 msgid "Dark - A dark display theme."
 msgstr "Dark - Un thème d'affichage sombre."
 
-#: ../../config/options_interface.rst:32
+#: ../../config/options_interface.rst:29
 msgid "On Linux and similar operating systems, the available choices are:"
 msgstr ""
 "Sous Linux et les systèmes d'exploitation similaires, les choix disponibles "
 "sont les suivants:"
 
-#: ../../config/options_interface.rst:35
+#: ../../config/options_interface.rst:32
 msgid "System - The Qt5 theme configured in the desktop environment."
 msgstr "System - Le thème Qt5 configuré dans l'environnement de bureau."
 
-#: ../../config/options_interface.rst:39
+#: ../../config/options_interface.rst:36
 msgid ""
 "The colors for the light and dark themes can be customized in the :doc:"
-"`options_interface_colors` section.  Separate sets of color selections are "
-"maintained for the light and dark themes.  The colors for the currently "
+"`options_interface_colors` section. Separate sets of color selections are "
+"maintained for the light and dark themes. The colors for the currently "
 "displayed theme are the ones displayed for editing."
 msgstr ""
 "Les couleurs des thèmes clair et foncé peuvent être personnalisées dans la "
-"section :doc:`options_interface_colors`.  Des ensembles distincts de "
-"sélections de couleurs sont gérés pour les thèmes clairs et foncés.  Les "
+"section :doc:`options_interface_colors`. Des ensembles distincts de "
+"sélections de couleurs sont gérés pour les thèmes clairs et foncés. Les "
 "couleurs du thème actuellement affiché sont celles qui sont affichées pour "
 "l'édition."
 
-#: ../../config/options_interface.rst:43
+#: ../../config/options_interface.rst:38
 msgid "**Allow selection of multiple directories**"
 msgstr "**Autoriser la sélection de plusieurs répertoires**"
 
-#: ../../config/options_interface.rst:45
+#: ../../config/options_interface.rst:40
 msgid ""
 "Enabling this option will bypass the native directory selector and use Qt's "
-"file dialog.  This may be desirable since the native directory selector "
+"file dialog. This may be desirable since the native directory selector "
 "generally doesn't allow you to select more than one directory. This applies "
 "to the :menuselection:`\"File --> Add folder\"` dialog. The file browser "
 "always allows multiple directory selection."
@@ -139,7 +139,7 @@ msgstr ""
 "menuselection:`\"Fichier --> Ajouter un dossier\"`. Le navigateur de "
 "fichiers permet toujours la sélection de plusieurs répertoires."
 
-#: ../../config/options_interface.rst:52
+#: ../../config/options_interface.rst:44
 msgid ""
 "When enabling the multiple directories option setting Picard will no longer "
 "use the system file picker for selecting directories. This may result in "
@@ -149,13 +149,13 @@ msgstr ""
 "n'utilisera plus le sélecteur de fichiers du système pour sélectionner les "
 "répertoires. Cela peut entraîner une réduction des fonctionnalités."
 
-#: ../../config/options_interface.rst:54
+#: ../../config/options_interface.rst:46
 msgid "**Use built-in search rather than looking in browser**"
 msgstr ""
 "**Utilisez la recherche intégrée plutôt que de rechercher dans le "
 "navigateur**"
 
-#: ../../config/options_interface.rst:56
+#: ../../config/options_interface.rst:48
 msgid ""
 "When this option is enabled the search for albums, artists or tracks will "
 "show the results in a dialog. By default this option is enabled. If this "
@@ -167,11 +167,11 @@ msgstr ""
 "option est activée. Si cette option est désactivée, Picard ouvrira une "
 "recherche sur MusicBrainz.org dans votre navigateur Web par défaut."
 
-#: ../../config/options_interface.rst:60
+#: ../../config/options_interface.rst:50
 msgid "**Use advanced query syntax**"
 msgstr "**Utilisez la syntaxe de requête avancée**"
 
-#: ../../config/options_interface.rst:62
+#: ../../config/options_interface.rst:52
 msgid ""
 "This will enable advanced query syntax parsing on your searches. This only "
 "applies to the search box at the top right of Picard, not the lookup buttons."
@@ -180,11 +180,11 @@ msgstr ""
 "Cela s'applique uniquement à la zone de recherche en haut à droite de "
 "Picard, pas aux boutons de recherche."
 
-#: ../../config/options_interface.rst:65
+#: ../../config/options_interface.rst:54
 msgid "**Show the new user dialog when starting Picard**"
 msgstr "**Afficher le dialogue nouvel utilisateur au démarrage de Picard**"
 
-#: ../../config/options_interface.rst:67
+#: ../../config/options_interface.rst:56
 msgid ""
 "When this is enabled, Picard will show a dialog intended for new users when "
 "you start the program. This displays a warning about the consequences of "
@@ -200,13 +200,13 @@ msgstr ""
 "les résultats escomptés. Il fournit également un lien vers la documentation "
 "en ligne."
 
-#: ../../config/options_interface.rst:69
+#: ../../config/options_interface.rst:58
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr ""
 "**Afficher une boîte de dialogue de confirmation de fermeture pour les "
 "modifications non enregistrées**"
 
-#: ../../config/options_interface.rst:71
+#: ../../config/options_interface.rst:60
 msgid ""
 "When this is enabled, Picard will show a dialog when you try to quit the "
 "program with unsaved files loaded. This may help prevent accidentally losing "
@@ -217,13 +217,13 @@ msgstr ""
 "Cela peut aider à éviter de perdre accidentellement les modifications de "
 "balises que vous avez apportées, mais pas encore enregistrées."
 
-#: ../../config/options_interface.rst:74
+#: ../../config/options_interface.rst:62
 msgid "**Show a confirmation dialog when saving files**"
 msgstr ""
 "**Afficher une boîte de dialogue de confirmation lors de l'enregistrement "
 "des fichiers**"
 
-#: ../../config/options_interface.rst:76
+#: ../../config/options_interface.rst:64
 msgid ""
 "When this is enabled, Picard will show a dialog when you save files, "
 "indicating what actions will be performed on the files and the number of "
@@ -236,13 +236,13 @@ msgstr ""
 "peut permettre d'éviter d'effectuer accidentellement des modifications "
 "auxquelles vous ne vous attendiez pas."
 
-#: ../../config/options_interface.rst:78
+#: ../../config/options_interface.rst:66
 msgid "**Adjust horizontal position in file browser automatically**"
 msgstr ""
 "**Ajustement automatique de la position horizontale dans le navigateur de "
 "fichiers**"
 
-#: ../../config/options_interface.rst:80
+#: ../../config/options_interface.rst:68
 msgid ""
 "When this is enabled, Picard will automatically scroll the file browser "
 "display to keep relevant content visible."
@@ -251,11 +251,11 @@ msgstr ""
 "l'affichage du navigateur de fichiers pour que le contenu pertinent reste "
 "visible."
 
-#: ../../config/options_interface.rst:82
+#: ../../config/options_interface.rst:70
 msgid "**Begin browsing in the following directory**"
 msgstr "**Commencez à naviguer dans le répertoire suivant**"
 
-#: ../../config/options_interface.rst:84
+#: ../../config/options_interface.rst:72
 msgid ""
 "By default, Picard remembers the last directory used to load files. If you "
 "enable this option and provide a directory, Picard will always start in the "
@@ -265,7 +265,7 @@ msgstr ""
 "les fichiers. Si vous activez cette option et fournissez un répertoire, "
 "Picard démarrera toujours dans le répertoire fourni."
 
-#: ../../config/options_interface.rst:91
+#: ../../config/options_interface.rst:78
 msgid ""
 "Details: :doc:`options_interface_colors` / :doc:"
 "`options_interface_top_tags` / :doc:`options_interface_toolbar`"

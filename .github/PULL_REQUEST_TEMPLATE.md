@@ -20,8 +20,7 @@ This is a…
 
 ### Reason for the Change
 
-Anything that helps us understand why you are making this change goes here.
-What problem are you trying to fix? What does this change address?
+Anything that helps us understand why you are making this change goes here. What problem are you trying to fix? What does this change address?
 
 ### Description of the Change
 
@@ -29,5 +28,4 @@ The details, considerations, or other interesting points of your change.
 
 ### Additional Action Required
 
-Other than merging your change, do you want / need us to do anything else
-with your change? This could include reviewing a specific part of your PR.
+Other than merging your change, do you want / need us to do anything else with your change? This could include reviewing a specific part of your PR.

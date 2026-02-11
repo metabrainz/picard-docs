@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) This documentation is licensed under CC0 1.0.
+# Copyright (C) 2025, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Project-Id-Version: MusicBrainz Picard v2.13.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,21 +29,21 @@ msgid "**Processing a large number of files at one time**"
 msgstr ""
 
 #: ../../troubleshooting/stopped_working.rst:10
-msgid "When processing a large number of files in one batch, Picard can run into issues either due to processing each file (e.g.: AcoustID fingerprinting) or during lookups following clustering or fingerprinting because of all of the information requests to the MusicBrainz server API, as well as downloading cover art.  Even though Picard may still be working its way through the backlog, the user interface may become non-responsive and appear that the program has stalled or frozen."
+msgid "When processing a large number of files in one batch, Picard can run into issues either due to processing each file (e.g.: AcoustID fingerprinting) or during lookups following clustering or fingerprinting because of all of the information requests to the MusicBrainz server API, as well as downloading cover art. Even though Picard may still be working its way through the backlog, the user interface may become non-responsive and appear that the program has stalled or frozen."
 msgstr ""
 
-#: ../../troubleshooting/stopped_working.rst:15
+#: ../../troubleshooting/stopped_working.rst:12
 msgid "The impact of processing files in large batches is exacerbated when using plugins that make additional information request calls to the MusicBrains server API."
 msgstr ""
 
-#: ../../troubleshooting/stopped_working.rst:18
-msgid "If you are processing a large library of files, it is generally more effective to process smaller batches (e.g.: 200 files) at a time, first retrieving the information using a cluster and lookup process, and then processing any remaining unmatched files using the scan process.  Please see the :doc:`/usage/retrieve` section for more information."
+#: ../../troubleshooting/stopped_working.rst:14
+msgid "If you are processing a large library of files, it is generally more effective to process smaller batches (e.g.: 200 files) at a time, first retrieving the information using a cluster and lookup process, and then processing any remaining unmatched files using the scan process. Please see the :doc:`../usage/retrieve` section for more information."
 msgstr ""
 
-#: ../../troubleshooting/stopped_working.rst:22
+#: ../../troubleshooting/stopped_working.rst:16
 msgid "**Processing files across a network connection**"
 msgstr ""
 
-#: ../../troubleshooting/stopped_working.rst:24
-msgid "If you are processing files across a network connection, this can impact the speed at which Picard works because of the speed difference between a network connection and a local drive.  In this case, the throughput can be improved by first copying the source files to a local drive, process with Picard, and then move the resulting files to the network drive."
+#: ../../troubleshooting/stopped_working.rst:18
+msgid "If you are processing files across a network connection, this can impact the speed at which Picard works because of the speed difference between a network connection and a local drive. In this case, the throughput can be improved by first copying the source files to a local drive, process with Picard, and then move the resulting files to the network drive."
 msgstr ""

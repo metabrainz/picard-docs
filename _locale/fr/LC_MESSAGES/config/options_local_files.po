@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2020-11-19 16:08-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgstr ""
 "par le fournisseur de pochettes de fichiers locaux. Si vous essayez de "
 "collecter plus d'une image, la dénomination est importante."
 
-#: ../../config/options_local_files.rst:14
+#: ../../config/options_local_files.rst:13
 msgid ""
 "The file names are defined using a regular expression. The default is ``^(?:"
 "cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` which will load "
@@ -48,17 +48,17 @@ msgstr ""
 "\"albumart\" et l'extension de fichier \"jpg\", \"png\", \"gif\" ou "
 "\"tiff\" (par exemple: \"folder.jpg\" ou \"cover.png\")."
 
-#: ../../config/options_local_files.rst:18
+#: ../../config/options_local_files.rst:15
 msgid ""
 "The first part of the regular expression is a non-capture group: ``(?:cover|"
-"folder|albumart)``.  Items listed in this group will not get captured and "
-"the default (Front) type will apply."
+"folder|albumart)``. Items listed in this group will not get captured and the "
+"default (Front) type will apply."
 msgstr ""
 "La première partie de l'expression régulière est un groupe sans capture: "
 "``(?:cover|folder|albumart)``. Les éléments répertoriés dans ce groupe ne "
 "seront pas capturés et le type par défaut (Front) s'appliquera."
 
-#: ../../config/options_local_files.rst:21
+#: ../../config/options_local_files.rst:17
 msgid ""
 "The second part of the regular expression is a group: ``(.*)``. This is the "
 "real capture, so if the file names match any of the cover art types, they "
@@ -68,7 +68,7 @@ msgstr ""
 "la vraie capture, donc si les noms de fichiers correspondent à l'un des "
 "types de pochettes, ils seront étiquetés comme tels."
 
-#: ../../config/options_local_files.rst:26
+#: ../../config/options_local_files.rst:21
 msgid ""
 "A common mistake is to add all the types into the first (non-capture) group. "
 "This means that all the regular file names would be thrown into the Front "

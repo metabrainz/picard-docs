@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2025-05-15 18:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/configoptions_advanced/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_advanced/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,68 +30,90 @@ msgstr ""
 "següent**"
 
 #: ../../config/options_advanced.rst:11
-msgid "You can specify patterns for files and directories that Picard should never load. For example, if you set this to the regular expression ``\\.bak$`` any file ending in \".bak\" will be ignored when loading files."
+msgid ""
+"You can specify patterns for files and directories that Picard should never "
+"load. For example, if you set this to the regular expression ``\\.bak$`` any "
+"file ending in \".bak\" will be ignored when loading files."
 msgstr ""
 "Podeu especificar patrons de fitxers i directoris que Picard no ha de "
 "carregar mai. Per exemple, si aquí indiqueu l'expressió regular ``\\.bak$``, "
 "qualsevol fitxer que acabi en «.bak» s'ignorarà en carregar els fitxers."
 
-#: ../../config/options_advanced.rst:15
+#: ../../config/options_advanced.rst:13
 msgid "**Ignore hidden files**"
 msgstr "**Ignora els fitxers ocults**"
 
-#: ../../config/options_advanced.rst:17
-msgid "If this option is enabled then hidden files and directories will not be loaded. This also includes any file or subdirectory inside a hidden directory."
+#: ../../config/options_advanced.rst:15
+msgid ""
+"If this option is enabled then hidden files and directories will not be "
+"loaded. This also includes any file or subdirectory inside a hidden "
+"directory."
 msgstr ""
 "Si aquesta opció està habilitada, no es carregaran els fitxers i directoris "
 "ocults. Això també inclou qualsevol fitxer o subdirectori dins d'un "
 "directori ocult."
 
-#: ../../config/options_advanced.rst:20
+#: ../../config/options_advanced.rst:17
 msgid "**Include sub-folders when adding files from folders**"
 msgstr "**Inclou les subcarpetes en afegir els fitxers de les carpetes**"
 
-#: ../../config/options_advanced.rst:22
-msgid "If this option is enabled Picard will load all audio files in the selected directory and all its subdirectories. If disabled only audio files in the selected directory will be loaded."
+#: ../../config/options_advanced.rst:19
+msgid ""
+"If this option is enabled Picard will load all audio files in the selected "
+"directory and all its subdirectories. If disabled only audio files in the "
+"selected directory will be loaded."
 msgstr ""
 "Si aquesta opció està habilitada, Picard carregarà tots els fitxers d'àudio "
 "del directori seleccionat i tots els subdirectoris. Si està inhabilitada, "
 "només es carregaran els fitxers d'àudio del directori seleccionat."
 
-#: ../../config/options_advanced.rst:25
+#: ../../config/options_advanced.rst:21
 msgid "**Ignore track duration difference under this number of seconds**"
 msgstr ""
 "**Ignora les diferències de durada de les pistes inferiors a aquest nombre "
 "de segons**"
 
-#: ../../config/options_advanced.rst:27
-msgid "This specifies the number of seconds that a file can differ in length from the length in the MusicBrainz database and still be considered to be the same.  The default value is 2 seconds."
+#: ../../config/options_advanced.rst:23
+msgid ""
+"This specifies the number of seconds that a file can differ in length from "
+"the length in the MusicBrainz database and still be considered to be the "
+"same. The default value is 2 seconds."
 msgstr ""
 "Això permet especificar la diferència en segons que pot haver-hi a la durada "
 "d'un fitxer en relació amb la durada a la base de dades de MusicBrainz "
-"perquè hi hagi una coincidència.  El valor per defecte és de 2 segons."
+"perquè hi hagi una coincidència. El valor per defecte és de 2 segons."
 
-#: ../../config/options_advanced.rst:30
+#: ../../config/options_advanced.rst:25
 msgid "**Maximum number of entities to return per MusicBrainz query**"
 msgstr ""
 "**Nombre màxim d'entitats que es retornaran per consulta a MusicBrainz**"
 
-#: ../../config/options_advanced.rst:32
-msgid "This sets the maximum number of results returned for queries made to the MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and earlier, this value was fixed at a maximum of 25 responses."
+#: ../../config/options_advanced.rst:27
+msgid ""
+"This sets the maximum number of results returned for queries made to the "
+"MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and "
+"earlier, this value was fixed at a maximum of 25 responses."
 msgstr ""
 "Això defineix el nombre màxim de resultats que retornen les consultes "
 "enviades al lloc web de MusicBrainz. El valor per defecte és de 50 "
 "resultats. A Picard 2.8.1 i les versions anteriors, aquest valor tenia un "
 "valor màxim fix de 25 respostes."
 
-#: ../../config/options_advanced.rst:36
-msgid "**Ignore the following tracks when determining whether a release is complete**"
+#: ../../config/options_advanced.rst:29
+msgid ""
+"**Ignore the following tracks when determining whether a release is "
+"complete**"
 msgstr ""
 "**Ignora les pistes següents a l'hora de determinar si una publicació està "
 "completa**"
 
-#: ../../config/options_advanced.rst:38
-msgid "Missing tracks of the selected type (i.e.: video, pregap, data or silence) will be ignored when determining whether a release is considered to be complete. For example, if \"video\" is selected then a release with a bonus video will be marked as complete if it has all the audio tracks matched with a file even if the video file is missing."
+#: ../../config/options_advanced.rst:31
+msgid ""
+"Missing tracks of the selected type (i.e.: video, pregap, data or silence) "
+"will be ignored when determining whether a release is considered to be "
+"complete. For example, if \"video\" is selected then a release with a bonus "
+"video will be marked as complete if it has all the audio tracks matched with "
+"a file even if the video file is missing."
 msgstr ""
 "Les pistes que faltin del tipus seleccionat (vídeo, pregap, dades o silenci) "
 "s'ignoraran a l'hora de determinar si una publicació es considera completa. "
@@ -99,12 +121,16 @@ msgstr ""
 "marcarà com a completa si totes les pistes d'àudio coincideixen amb un "
 "fitxer encara que falti el fitxer de vídeo."
 
-#: ../../config/options_advanced.rst:43
+#: ../../config/options_advanced.rst:33
 msgid "**Tags to ignore for comparison**"
 msgstr "**Etiquetes que s'ignoraran a les comparacions**"
 
-#: ../../config/options_advanced.rst:45
-msgid "Tags in this list will not be considered when comparing the existing file metadata to the data retrieved from MusicBrainz. If the only difference between the file's metadata and the metadata retrieved from MusicBrainz is a tag listed in this ignore list then the file will be considered unmodified."
+#: ../../config/options_advanced.rst:35
+msgid ""
+"Tags in this list will not be considered when comparing the existing file "
+"metadata to the data retrieved from MusicBrainz. If the only difference "
+"between the file's metadata and the metadata retrieved from MusicBrainz is a "
+"tag listed in this ignore list then the file will be considered unmodified."
 msgstr ""
 "Les etiquetes d'aquesta llista no es tindran en compte en comparar les "
 "metadades existents al fitxer amb les dades recuperades de MusicBrainz. Si "
@@ -112,8 +138,10 @@ msgstr ""
 "recuperades de MusicBrainz és una etiqueta d'aquesta llista, es considerarà "
 "que no hi ha modificacions."
 
-#: ../../config/options_advanced.rst:54
-msgid "Details: :doc:`options_network` / :doc:`options_matching` / :doc:`options_maintenance`"
+#: ../../config/options_advanced.rst:41
+msgid ""
+"Details: :doc:`options_network` / :doc:`options_matching` / :doc:"
+"`options_plugin_execution_order` / :doc:`options_maintenance`"
 msgstr ""
-"Detalls: :doc:`options_network` / :doc:`options_matching` / "
-":doc:`options_maintenance`"
+"Detalls: :doc:`options_network` / :doc:`options_matching` / :doc:"
+"`options_plugin_execution_order` / :doc:`options_maintenance`"

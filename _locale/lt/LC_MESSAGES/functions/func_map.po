@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: 2025-04-04 21:54+0000\n"
 "Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -42,26 +42,37 @@ msgid "**Description:**"
 msgstr "**Aprašas:**"
 
 #: ../../functions/func_map.rst:14
-msgid "Iterates over each element found in the multi-value variable ``name`` and updates the value of the element to the value returned by ``code``, returning the updated multi-value variable. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable."
+msgid ""
+"Iterates over each element found in the multi-value variable ``name`` and "
+"updates the value of the element to the value returned by ``code``, "
+"returning the updated multi-value variable. A literal value representing a "
+"multi-value can be substituted for ``name``, using the ``separator`` (or a "
+"semicolon followed by a space \"; \" if not passed) to coerce the value into "
+"a proper multi-valued variable."
 msgstr ""
 
-#: ../../functions/func_map.rst:20
-msgid "For each loop, the element value is first stored in the variable ``_loop_value`` and the count is stored in the variable ``_loop_count``. This allows the element or count value to be accessed within the code script."
+#: ../../functions/func_map.rst:16
+msgid ""
+"For each loop, the element value is first stored in the variable "
+"``_loop_value`` and the count is stored in the variable ``_loop_count``. "
+"This allows the element or count value to be accessed within the code script."
 msgstr ""
 
-#: ../../functions/func_map.rst:24
+#: ../../functions/func_map.rst:18
 msgid "Empty elements are automatically removed from the output."
 msgstr ""
 
-#: ../../functions/func_map.rst:28
-msgid "You cannot save the ``code`` to a variable and then pass the variable to the function as ``%code%`` because it will be evaluated when it is assigned to the variable rather than during the loop."
+#: ../../functions/func_map.rst:22
+msgid ""
+"You cannot save the ``code`` to a variable and then pass the variable to the "
+"function as ``%code%`` because it will be evaluated when it is assigned to "
+"the variable rather than during the loop."
 msgstr ""
 
-#: ../../functions/func_map.rst:33
+#: ../../functions/func_map.rst:25
 msgid "**Example:**"
 msgstr "**Pavyzdys:**"
 
-#: ../../functions/func_map.rst:37
-#: ../../functions/func_map.rst:60
+#: ../../functions/func_map.rst:29 ../../functions/func_map.rst:52
 msgid "The following statements will return the values indicated:"
 msgstr "Toliau pateikti teiginiai grąžins nurodytas reikšmes:"

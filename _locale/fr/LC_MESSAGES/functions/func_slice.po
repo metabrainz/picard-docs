@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2021-12-23 18:55+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -57,7 +57,7 @@ msgstr ""
 "virgule suivi d'un espace \"; \" s'il n'est pas passé) pour contraindre la "
 "valeur à une valeur multiple appropriée variable."
 
-#: ../../functions/func_slice.rst:20
+#: ../../functions/func_slice.rst:16
 msgid ""
 "Indexes are zero based. Negative numbers will be counted back from the "
 "number of elements in the list. If the ``start`` or ``end`` indexes are left "
@@ -69,11 +69,11 @@ msgstr ""
 "laissés vides, ils seront par défaut à 0 et au nombre d'éléments dans la "
 "liste respectivement."
 
-#: ../../functions/func_slice.rst:24
+#: ../../functions/func_slice.rst:18
 msgid ""
 "A typical use might be to create a multi-value variable with all artists in "
 "``%artists%`` except the first, which can be used to create a \"feat.\" "
-"list.  This would look something like ``$setmulti(supporting_artists,"
+"list. This would look something like ``$setmulti(supporting_artists,"
 "$slice(%artists%,1))``."
 msgstr ""
 "Une utilisation typique pourrait être de créer une variable à valeurs "
@@ -81,10 +81,10 @@ msgstr ""
 "peut être utilisé pour créer un \"feat.\" liste. Cela ressemblerait à "
 "quelque chose comme ``$setmulti(support_artists,$slice(%artists%,1))``."
 
-#: ../../functions/func_slice.rst:29
+#: ../../functions/func_slice.rst:21
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_slice.rst:31
+#: ../../functions/func_slice.rst:23
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"

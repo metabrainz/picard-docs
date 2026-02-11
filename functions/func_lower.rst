@@ -20,4 +20,4 @@ The following statement will return the value indicated:
 
 .. code-block:: taggerscript
 
-    $lower(tHe houR is upOn uS)  ==>  "the hour is upon us"
+   $lower(tHe houR is upOn uS)  ==>  "the hour is upon us"

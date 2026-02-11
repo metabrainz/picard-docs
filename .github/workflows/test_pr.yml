@@ -1,0 +1,87 @@
+name: Check and Basic Build
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+      - 'next_version'
+      - 'v0*'
+      - 'v1*'
+      - 'v2*'
+      - 'v3*'
+      - 'v4*'
+      - 'v5*'
+      - 'v6*'
+      - 'v7*'
+      - 'v8*'
+      - 'v9*'
+    paths:
+      - '**.po'
+      - '**.rst'
+      - '**.txt'
+      - '**/images/*'
+      - '_static/**'
+      - '_templates/**'
+      - 'dev_utils.py'
+      - 'conf.py'
+      - 'tag_mapping.py'
+      - '.readthedocs.yaml'
+
+jobs:
+  lint_rst_and_basic_build:
+    name: Check with LintRST and Basic Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.11]
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r requirements_dev.txt
+    - name: Lint Test RST Files
+      run: python ./dev_utils.py test rst
+    - name: Setup for Build
+      run: |
+        export SPHINXBUILD=`which sphinx-build`
+        mkdir _build
+        mkdir docs
+    - name: Build Tag Map Files
+      run: |
+        python ./dev_utils.py build map
+    - name: Store Tag Map Build Output File
+      uses: actions/upload-artifact@v4
+      with:
+        name: tag_map_files
+        path: _static/MusicBrainz_Picard_Tag_Map.*
+        retention-days: 5
+    - name: Build HTML Files
+      run: |
+        python ./dev_utils.py clean html
+        python ./dev_utils.py build html
+    # - name: Zip HTML Files
+    #   run: |
+    #     zip -r docs/html.zip _build/html
+    # - name: Store HTML Build Output Files
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: html_files
+    #     path: docs/heml.zip
+    #     retention-days: 5
+    - name: Store HTML Build Output Files
+      uses: actions/upload-artifact@v4
+      with:
+        name: html_files
+        path: _build/html/*
+        retention-days: 5

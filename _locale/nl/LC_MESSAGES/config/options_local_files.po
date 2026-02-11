@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -27,7 +27,7 @@ msgid ""
 "the naming is important."
 msgstr ""
 
-#: ../../config/options_local_files.rst:14
+#: ../../config/options_local_files.rst:13
 msgid ""
 "The file names are defined using a regular expression. The default is ``^(?:"
 "cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` which will load "
@@ -36,21 +36,21 @@ msgid ""
 "\"cover.png\")."
 msgstr ""
 
-#: ../../config/options_local_files.rst:18
+#: ../../config/options_local_files.rst:15
 msgid ""
 "The first part of the regular expression is a non-capture group: ``(?:cover|"
-"folder|albumart)``.  Items listed in this group will not get captured and "
-"the default (Front) type will apply."
+"folder|albumart)``. Items listed in this group will not get captured and the "
+"default (Front) type will apply."
 msgstr ""
 
-#: ../../config/options_local_files.rst:21
+#: ../../config/options_local_files.rst:17
 msgid ""
 "The second part of the regular expression is a group: ``(.*)``. This is the "
 "real capture, so if the file names match any of the cover art types, they "
 "will be tagged as such."
 msgstr ""
 
-#: ../../config/options_local_files.rst:26
+#: ../../config/options_local_files.rst:21
 msgid ""
 "A common mistake is to add all the types into the first (non-capture) group. "
 "This means that all the regular file names would be thrown into the Front "

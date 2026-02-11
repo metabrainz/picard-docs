@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,54 +30,54 @@ msgstr ""
 #: ../../config/options_network.rst:11
 msgid ""
 "If you need a proxy to make an outside network connection you may specify "
-"one here.  You can choose between HTTP and SOCKS proxy.  The required "
-"settings are **Server Address** and **Port**. If the proxy requires "
-"authentication also enter **Username** and **Password**."
+"one here. You can choose between HTTP and SOCKS proxy. The required settings "
+"are **Server Address** and **Port**. If the proxy requires authentication "
+"also enter **Username** and **Password**."
 msgstr ""
 
-#: ../../config/options_network.rst:15
+#: ../../config/options_network.rst:13
 msgid "**Request timeout in seconds**"
 msgstr ""
 
-#: ../../config/options_network.rst:17
+#: ../../config/options_network.rst:15
 msgid ""
 "By default Picard will abort running network requests after 30 seconds of "
-"inactivity.  If needed you can change the timeout period here."
+"inactivity. If needed you can change the timeout period here."
 msgstr ""
 
 #: ../../config/options_network.rst:20
-msgid "lookup_tagger"
-msgstr ""
-
-#: ../../config/options_network.rst:23
 msgid "**Browser Integration**"
 msgstr ""
 
-#: ../../config/options_network.rst:25
+#: ../../config/options_network.rst:22
 msgid ""
 "The browser integration allows you to load releases and recordings into "
 "Picard directly from the MusicBrainz website. Once you have opened "
 "musicbrainz.org in your browser from Picard, the website will show the green "
-"tagger button |lookup_tagger| next to releases and recordings.  Clicking on "
+"tagger button |lookup_tagger| next to releases and recordings. Clicking on "
 "this button will load the corresponding release or recording into Picard."
 msgstr ""
 
-#: ../../config/options_network.rst:30
+#: ../../config/options_network.rst:17
+msgid "lookup_tagger"
+msgstr ""
+
+#: ../../config/options_network.rst:24
 msgid "**Default listening port**"
 msgstr ""
 
-#: ../../config/options_network.rst:32
+#: ../../config/options_network.rst:26
 msgid ""
 "This identifies the default port Picard will listen on for the browser "
 "integration. If the port is not available Picard will try to increase the "
 "port number by one until it finds a free port."
 msgstr ""
 
-#: ../../config/options_network.rst:35
+#: ../../config/options_network.rst:28
 msgid "**Listen only on localhost**"
 msgstr ""
 
-#: ../../config/options_network.rst:37
+#: ../../config/options_network.rst:30
 msgid ""
 "By default Picard will limit access to the browser integration port to your "
 "local machine. Deactivating this option will expose the port on your "
@@ -87,7 +87,7 @@ msgid ""
 "musicbrainz.picard.barcodescanner>`_ Android app."
 msgstr ""
 
-#: ../../config/options_network.rst:45
+#: ../../config/options_network.rst:34
 msgid ""
 "Only expose the port externally when you actually need it and only on "
 "networks you trust. Exposing application ports via the network can open "

@@ -7,21 +7,21 @@
 
 
 import datetime
-import glob
 import os
 import re
 import sys
 
+from recommonmark.parser import CommonMarkParser
 
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, os.path.abspath('_extensions'))
+# sys.path.insert(0, os.path.abspath(os.path.join(root_path, '_extensions')))
+sys.path.insert(0, os.path.abspath(os.path.join('_extensions')))
 
-# import sphinx_rtd_theme
-# import picard_theme
+static_path = '_static'
 
 this_year = datetime.datetime.now().year
 copyright_year = str(this_year) if this_year == 2020 else f'2020-{this_year}'
@@ -34,28 +34,20 @@ project = 'MusicBrainz Picard'
 version = 'v2.13.3'
 
 author = 'Bob Swift'
-# copyright = 'MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0'
-copyright = 'This documentation is licensed under CC0 1.0.'     # pylint: disable=redefined-builtin
+copyright = f'{this_year}, MetaBrainz Foundation.'     # pylint: disable=redefined-builtin
 
 # -- Language information ----------------------------------------------------
 
 default_language = 'en'
-supported_languages = [
-    ('en', 'English'),
-    ('fr', 'Français'),
-    # ('de', 'Deutsch'),
-    # ('es', 'Español'),
-]
 
 # -- Base file name for PDF and EPUB files -----------------------------------
 
-base_filename = 'musicbrainzpicard'
-
+base_filename = 'MusicBrainzPicardUserGuide'
 
 # -- Notice for Back of Title Page in LaTex Output ---------------------------
 
 my_notice = r'''\vspace*{\fill}
-MusicBrainz Picard User Guide by Bob Swift is licensed under CC0 1.0. To view a
+MusicBrainz Picard User Guide is licensed under CC0 1.0. To view a
 copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0
 \vspace{0.1\textheight}'''
 
@@ -69,13 +61,17 @@ master_doc = 'index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "recommonmark",
+    # "recommonmark",
     "notfound.extension",
     "taggerscript",
     "sphinxcontrib.youtube",
     # "sphinx_rtd_theme",
     # "picard_theme",
 ]
+
+source_parsers = {'.md': CommonMarkParser}
+
+source_suffix = {'.rst': 'restructuredtext', '.md': 'restructuredtext'}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -88,17 +84,21 @@ exclude_patterns = [
     '_images',
     '_ignored',
     '_locale',
+    '__pycache__',
     'Thumbs.db',
     '.DS_Store',
-    'README.md',
     'html',
-    'docs',
     '.git',
     '.github',
     'images',
     'testing',
     'README.md',
+    'RELEASES.md',
+    'SETUP_AND_PROCESSING.md',
+    'DEV_UTILS.md',
     'TODO.md',
+    'draft_outline.md',
+    '.pytest_cache',
 ]
 
 
@@ -107,7 +107,6 @@ exclude_patterns = [
 language = default_language
 locale_dirs = ['_locale']
 gettext_compact = False
-# gettext_compact = True
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -123,24 +122,20 @@ html_theme = "sphinx_rtd_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = [static_path]
 
-html_js_files = ['/version_links.js']
+html_css_files = ['css/extra.css']
 
 # Major.minor portion of the version number used for naming the download files
 major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
 
 html_context = {
-    'extra_css_files': [
-        '_static/css/extra.css',
-    ],
     'default_language': default_language,
-    'supported_languages': supported_languages,
     'major_minor': major_minor,
     'release': version,
 }
 
-html_favicon = '_static/picard-icon.png'
+html_favicon = os.path.join(static_path, 'picard-icon.png')
 
 html_copy_source = False
 
@@ -149,10 +144,12 @@ html_copy_source = False
 
 release = version   # For display on cover of PDF document
 
+latex_engine = 'lualatex'
+
 latex_documents = [
     ('pdf', f'{base_filename}.tex', project, '', 'manual', False),
-    # ('pdf', '{0}.tex'.format(base_filename), project, 'Edited by Bob Swift', 'manual', False),
-    # ('pdf', '{0}.tex'.format(base_filename), project, '', 'howto', False),
+    # ('pdf', f'{base_filename}.tex', project, 'Edited by Bob Swift', 'manual', False),
+    # ('pdf', f'{base_filename}.tex', project, '', 'howto', False),
 ]
 
 # latex_toplevel_sectioning = 'part'
@@ -166,7 +163,6 @@ latex_show_urls = 'no'
 latex_elements = {
     'papersize': 'letterpaper',
     'pointsize': '11pt',
-    # 'preamble': '\\hyphenation{Music-Brainz}',
     'preamble': r'''\hyphenation{Music-Brainz}
 \usepackage{fontspec}
 \setmainfont{DejaVu Sans}
@@ -177,60 +173,10 @@ latex_elements = {
 \newcommand\sphinxbackoftitlepage{''' + my_notice + r'''}
 ''',
     'extraclassoptions': 'openany',
-    # 'maketitle': r'\newcommand\sphinxbackoftitlepage{<Extra material>}\sphinxmaketitle',
-    # 'maketitle': r'\newcommand\sphinxbackoftitlepage{<Extra material>}\sphinxmaketitle',
 }
 
 latex_domain_indices = True
 
-
-# -- Options for epub output ------------------------------------------
-
-epub_basename = base_filename
-epub_theme = 'epub'
-
-# Metadata included in the epub file.
-epub_title = f'{project} User Guide ({major_minor})'
-epub_description = 'A User Guide for MusicBrainz Picard.'
-epub_author = 'Bob Swift (Editor)'
-epub_contributor = 'Members of the MusicBrainz Community'
-epub_publisher = 'MetaBrainz Foundation'
-epub_uid = 'MusicBrainzPicardUserGuide'
-
-epub_tocdepth = 3
-epub_tocscope = 'includehidden'
-
-epub_cover = ('_static/picard_logo_256.png', 'epub-cover.html')
-epub_guide = (('cover', 'epub-cover.xhtml', 'Cover Page'),)
-
-# epub_show_urls = 'inline'
-# epub_show_urls = 'footnote'
-epub_show_urls = 'no'
-
-epub_use_index = True
-
-epub_post_files = [
-    ('genindex.xhtml', 'INDEX'),
-]
-
-
-def _exclude_files_helper():
-    excludes = [
-        '404.xhtml',
-        'index.xhtml',
-        'not_found.xhtml',
-        'pdf.xhtml',
-        'examples/examples.xhtml',
-    ]
-
-    for filepath in glob.glob('tutorials/v_*'):
-        if filepath.endswith('.rst'):
-            excludes.append(filepath[:-3] + 'xhtml')
-
-    return excludes
-
-
-epub_exclude_files = _exclude_files_helper()
 
 # -- Options for custom 404 page --------------------------------------
 
@@ -239,74 +185,3 @@ epub_exclude_files = _exclude_files_helper()
 
 notfound_template = 'custom_404.html'
 notfound_title = 'Page Not Found'
-notfound_text_1 = "We're sorry but we are unable to find the requested page. Please use the table " \
-    + "of contents or the search box in the left-hand sidebar to locate your topic."
-notfound_text_2 = "If you believe that you have received this message in error, please report it in " \
-    + "a <a href='https://tickets.metabrainz.org/issues/?filter=12025' target='_blank'>ticket</a> " \
-    + "under the Picard project (Documentation component).  Thanks."
-notfound_script = r'''
-<script>
-    var target_language = 'en';
-    var target_version = 'latest';
-    var src_host = window.location.hostname;
-    var src_protocol = window.location.protocol;
-    var src_path = window.location.pathname;
-    var src_path_parts = src_path.split('/');
-    var target_path = '';
-    var target_url = src_protocol + '//' + src_host + '/en/latest/not_found.html';
-
-    const re_language = /^[a-z][a-z](-[A-Z][A-Z])?$/;
-    const re_version_1 = /^[0-9][0-9\.]*$/;
-    const re_version_2 = /^(latest|stable)$/;
-    const re_version_3 = /^v[0-9][0-9\.]*$/;
-
-    function is_language(test_language) {
-        if (test_language.search(re_language) < 0) {
-            return false
-        }
-        target_language = test_language;
-        return true;
-    }
-
-    function is_rtd_version(test_version) {
-        return ((test_version.search(re_version_1) >= 0) || (test_version.search(re_version_2) >= 0));
-    }
-
-    function is_version(test_version) {
-        if (test_version.search(re_version_3) < 0) {
-            return false;
-        }
-        target_version = test_version.substring(1, 1000);
-        return true;
-    }
-
-    function test_url() {
-        var counter = 1;
-        if ((is_language(src_path_parts[counter])) && (is_rtd_version(src_path_parts[counter + 1]))) {
-            return true;
-        }
-        if (is_version(src_path_parts[counter])) {
-            counter += 1;
-        }
-        if (counter < src_path_parts.length) {
-            if (is_language(src_path_parts[counter])) {
-                target_path += '/' + target_language + '/' + target_version;
-                counter += 1;
-                while (counter < src_path_parts.length) {
-                    target_path += '/' + src_path_parts[counter];
-                    counter += 1;
-                }
-                target_url = src_protocol + '//' + src_host + target_path;
-                document.getElementById('content').innerHTML = '<p>The page may have been moved to <a href="' + target_url + '">' + target_url + '</a>.</p>';
-                window.location.replace(target_url);
-            }
-        }
-    }
-
-    test_url();
-</script>
-'''
-notfound_context = {
-    'title': notfound_title,
-    'body': "\n<h1>" + notfound_title + "</h1>\n<p>\n" + notfound_text_1 + "\n</p>\n<div id='content'></div>\n<p>\n" + notfound_text_2 + "\n</p>\n" + notfound_script,
-}

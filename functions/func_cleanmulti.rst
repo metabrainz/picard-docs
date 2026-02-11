@@ -3,7 +3,7 @@
 .. _func_cleanmulti:
 
 $cleanmulti
-=============
+===========
 
 | Usage: **$cleanmulti(name)**
 | Category: multi-value
@@ -20,7 +20,7 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $setmulti(test,One; ; Two; Three)
-    %test%                               ==>  "One; ; Two; Three"
-    $cleanmulti(test)
-    %test%                               ==>  "One; Two; Three"
+   $setmulti(test,One; ; Two; Three)
+   %test%                               ==>  "One; ; Two; Three"
+   $cleanmulti(test)
+   %test%                               ==>  "One; Two; Three"

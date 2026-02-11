@@ -11,8 +11,7 @@ $inmulti
 
 **Description:**
 
-Returns true if multi-value variable ``x`` contains exactly ``y`` as one of its values.
-Note that comparisons are case-sensitive.
+Returns true if multi-value variable ``x`` contains exactly ``y`` as one of its values. Note that comparisons are case-sensitive.
 
 .. only:: html
 
@@ -26,11 +25,11 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $setmulti(foo,One; Two; Three)
-    $set(bar,Two)
-    $inmulti(%foo%,%bar%)  ==>  "1"  (True)
-    $inmulti(%foo%,Two)    ==>  "1"  (True)
-    $inmulti(%foo%,two)    ==>  ""   (False)
-    $inmulti(%foo%,Once)   ==>  ""   (False)
-    $inmulti(%foo%,w)      ==>  ""   (False)
-    $inmulti(%foo%,)       ==>  ""   (False)
+   $setmulti(foo,One; Two; Three)
+   $set(bar,Two)
+   $inmulti(%foo%,%bar%)  ==>  "1"  (True)
+   $inmulti(%foo%,Two)    ==>  "1"  (True)
+   $inmulti(%foo%,two)    ==>  ""   (False)
+   $inmulti(%foo%,Once)   ==>  ""   (False)
+   $inmulti(%foo%,w)      ==>  ""   (False)
+   $inmulti(%foo%,)       ==>  ""   (False)

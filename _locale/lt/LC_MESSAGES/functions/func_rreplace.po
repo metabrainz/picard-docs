@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: 2025-04-04 21:55+0000\n"
 "Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -38,17 +38,28 @@ msgid "**Description:**"
 msgstr "**Aprašas:**"
 
 #: ../../functions/func_rreplace.rst:13
-msgid "Regular expression replace. This function will replace the matching group specified by ``pattern`` with ``replace`` in ``text``.  For more information about regular expressions, please see the `article on Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
+msgid ""
+"Regular expression replace. This function will replace the matching group "
+"specified by ``pattern`` with ``replace`` in ``text``. For more information "
+"about regular expressions, please see the `article on Wikipedia <https://"
+"wikipedia.org/wiki/Regular_expression>`_."
+msgstr ""
+
+#: ../../functions/func_rreplace.rst:17
+msgid ""
+"When entering regular expressions into Picard scripts you have to escape a "
+"backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
+"parentheses \"(\" and \")\" in order to force Picard to not interpret them "
+"as part of the script command. This is done by inserting a backslash before "
+"the character to be escaped. For example, the regular expression "
+"``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\"
+"\\.]*\\)\\$``."
 msgstr ""
 
 #: ../../functions/func_rreplace.rst:19
-msgid "When entering regular expressions into Picard scripts you have to escape a backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right parentheses \"(\" and \")\" in order to force Picard to not interpret them as part of the script command.  This is done by inserting a backslash before the character to be escaped.  For example, the regular expression ``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
-msgstr ""
-
-#: ../../functions/func_rreplace.rst:25
 msgid "**Example:**"
 msgstr "**Pavyzdys:**"
 
-#: ../../functions/func_rreplace.rst:27
+#: ../../functions/func_rreplace.rst:21
 msgid "The following statements will return the values indicated:"
 msgstr "Toliau pateikti teiginiai grąžins nurodytas reikšmes:"

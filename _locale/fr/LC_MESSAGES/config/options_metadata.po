@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2023-10-26 04:27+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -48,34 +48,34 @@ msgstr ""
 "\"Anglais (américain)\", \"Anglais\" et \"Grec\", alors l'alias \"Anglais "
 "(américain)\" sera utilisé."
 
-#: ../../config/options_metadata.rst:16
+#: ../../config/options_metadata.rst:13
 msgid ""
-"Note that Picard will attempt to use the first exact match first.  For "
+"Note that Picard will attempt to use the first exact match first. For "
 "example, if you have selected locales of \"English (Canadian)\", \"English "
 "(US)\" and \"Greek, and there are aliases for \"English\" and \"Greek\", "
 "then the \"Greek\" alias will be used."
 msgstr ""
 "Notez que Picard tentera d'utiliser la première correspondance exacte en "
-"premier.  Par exemple, si vous avez sélectionné les langues \"Anglais "
+"premier. Par exemple, si vous avez sélectionné les langues \"Anglais "
 "(Canadien)\", \"Anglais (US)\" et \"Grec\", et qu'il existe des alias pour "
 "\"Anglais\" et \"Grec\", alors l'alias \"Grec\" sera utilisé."
 
-#: ../../config/options_metadata.rst:19
+#: ../../config/options_metadata.rst:15
 msgid ""
 "If there are no exact matches to any of the selected locales, then Picard "
-"will attempt to find a match based on the root locale.  For example, if you "
+"will attempt to find a match based on the root locale. For example, if you "
 "have selected locales of \"English (Canadian)\", \"English (US)\" and "
 "\"Greek (Cyprus)\", and there are aliases for \"English (UK)\" and "
 "\"Greek\", then the \"English (UK)\" alias will be used."
 msgstr ""
 "S'il n'y a pas de correspondance exacte avec l'une des locales "
 "sélectionnées, alors Picard tentera de trouver une correspondance basée sur "
-"la locale racine.  Par exemple, si vous avez sélectionné les paramètres "
+"la locale racine. Par exemple, si vous avez sélectionné les paramètres "
 "locaux \"Anglais (canadien)\", \"Anglais (US)\" et \"Grec (Chypre)\", et "
 "qu'il existe des alias pour \"Anglais (UK)\" et \"Grec\", alors l'alias "
 "\"Anglais (UK)\" sera utilisé."
 
-#: ../../config/options_metadata.rst:23
+#: ../../config/options_metadata.rst:17
 msgid ""
 "When \"English\" is the selected locale, the artist sort name (which is, by "
 "Style Guideline, stored in Latin script) is used as a fallback if there is "
@@ -85,7 +85,7 @@ msgstr ""
 "(qui est, selon la directive stylistique, stocké en caractères latins) est "
 "utilisé comme solution de rechange s'il n'y a pas d'alias en anglais."
 
-#: ../../config/options_metadata.rst:26
+#: ../../config/options_metadata.rst:19
 msgid ""
 "To select which locales to use, click the :guilabel:`Select...` button "
 "beside the list of selected locales. This will bring up a new dialog window "
@@ -96,7 +96,7 @@ msgstr ""
 "apparaître une nouvelle fenêtre de dialogue dans laquelle vous pourrez "
 "ajouter, supprimer ou réorganiser votre liste de langues sélectionnées."
 
-#: ../../config/options_metadata.rst:32 ../../config/options_metadata.rst:56
+#: ../../config/options_metadata.rst:24 ../../config/options_metadata.rst:39
 msgid ""
 "Once you are satisfied with your selections, click the :guilabel:`Save` "
 "button to transfer the list to your option settings and close the dialog. "
@@ -109,23 +109,23 @@ msgstr ""
 "façon permanente tant que vous n'aurez pas cliqué sur le bouton :guilabel:"
 "`Faites-le donc !`."
 
-#: ../../config/options_metadata.rst:35
+#: ../../config/options_metadata.rst:26
 msgid "**Ignore artist name translation for script**"
 msgstr "**Ignorer la traduction du nom de l'artiste pour le script**"
 
-#: ../../config/options_metadata.rst:37
+#: ../../config/options_metadata.rst:28
 msgid ""
 "Sometimes you may not want to have the artist names translated if they "
-"appear in a certain character set script.  When checked, this option will "
+"appear in a certain character set script. When checked, this option will "
 "tell Picard to not perform the artist name translation if it is written "
 "using one of the selected scripts."
 msgstr ""
 "Parfois, vous pouvez ne pas vouloir que les noms d'artistes soient traduits "
-"s'ils apparaissent dans un certain jeu de caractères.  Lorsque cette option "
+"s'ils apparaissent dans un certain jeu de caractères. Lorsque cette option "
 "est cochée, elle indique à Picard de ne pas effectuer la traduction du nom "
 "de l'artiste s'il est écrit avec l'un des scripts sélectionnés."
 
-#: ../../config/options_metadata.rst:40
+#: ../../config/options_metadata.rst:30
 msgid ""
 "Each selected script includes a matching threshold value used to determine "
 "if that script should be used. When an artist name is evaluated to determine "
@@ -148,7 +148,7 @@ msgstr ""
 "correspondance spécifié pour le script, alors le nom d'artiste ne sera pas "
 "traduit."
 
-#: ../../config/options_metadata.rst:46
+#: ../../config/options_metadata.rst:32
 msgid ""
 "For example, if \"Translate artist names\" is enabled with the locale set to "
 "\"English\", and you enable \"Ignore artist name translation\" with the "
@@ -163,7 +163,7 @@ msgstr ""
 "grecs ou 50 % de caractères cyrilliques ne seront pas traduits et "
 "apparaîtront dans leur forme d'origine."
 
-#: ../../config/options_metadata.rst:50
+#: ../../config/options_metadata.rst:34
 msgid ""
 "To select which character set scripts to use and their weighting thresholds, "
 "click the :guilabel:`Select...` button beside the list of selected scripts. "
@@ -176,11 +176,11 @@ msgstr ""
 "fenêtre de dialogue dans laquelle vous pourrez ajouter, modifier ou "
 "supprimer des éléments dans votre liste de scripts sélectionnés."
 
-#: ../../config/options_metadata.rst:59
+#: ../../config/options_metadata.rst:41
 msgid "**Use standardized artist names**"
 msgstr "**Utilisez des noms d'artistes standardisés**"
 
-#: ../../config/options_metadata.rst:61
+#: ../../config/options_metadata.rst:43
 msgid ""
 "Check to only use standard Artist names, rather than Artist Credits which "
 "may differ slightly across tracks and releases."
@@ -189,7 +189,7 @@ msgstr ""
 "crédits d'artiste qui peuvent différer légèrement selon les pistes et les "
 "versions."
 
-#: ../../config/options_metadata.rst:65
+#: ../../config/options_metadata.rst:47
 msgid ""
 "If the \"Translate artist names\" option above is also checked, it will "
 "override this option if a suitable alias is found."
@@ -197,11 +197,11 @@ msgstr ""
 "Si l'option \"Traduire les noms d'artistes\" ci-dessus est également cochée, "
 "elle remplacera cette option si un alias approprié est trouvé."
 
-#: ../../config/options_metadata.rst:67
+#: ../../config/options_metadata.rst:49
 msgid "**Use standardized instrument and vocal credits**"
 msgstr "**Utilisez des crédits d'instruments et vocaux standardisés**"
 
-#: ../../config/options_metadata.rst:69
+#: ../../config/options_metadata.rst:51
 msgid ""
 "Check to only use standard names for instruments and vocals in performer "
 "relationships. Uncheck to use the instruments and vocals as credited in the "
@@ -211,11 +211,11 @@ msgstr ""
 "voix dans les relations interprètes. Décochez pour utiliser les instruments "
 "et les voix comme crédités dans la relation."
 
-#: ../../config/options_metadata.rst:72
+#: ../../config/options_metadata.rst:53
 msgid "**Convert Unicode punctuation characters to ASCII**"
 msgstr "**Convertir les caractères de ponctuation Unicode en ASCII**"
 
-#: ../../config/options_metadata.rst:74
+#: ../../config/options_metadata.rst:55
 msgid ""
 "Converts Unicode punctuation characters in MusicBrainz data to ASCII for "
 "consistent use of punctuation in tags. For example, right single quotation "
@@ -227,11 +227,11 @@ msgstr ""
 "exemple, les guillemets simples droits sont convertis en apostrophes ASCII "
 "(') et les ellipses horizontales sont converties en trois points (...)."
 
-#: ../../config/options_metadata.rst:78
+#: ../../config/options_metadata.rst:57
 msgid "**Use release relationships**"
 msgstr "**Utiliser les relations de version**"
 
-#: ../../config/options_metadata.rst:80
+#: ../../config/options_metadata.rst:59
 msgid ""
 "Check to retrieve and write release-level relationships (e.g.: URLs, "
 "composer, lyricist, performer, conductor, or DJ mixer) to your files. You "
@@ -242,11 +242,11 @@ msgstr ""
 "DJ) dans vos fichiers. Vous devez l'activer pour utiliser Picard pour "
 "récupérer l'art de couverture."
 
-#: ../../config/options_metadata.rst:83
+#: ../../config/options_metadata.rst:61
 msgid "**Use track relationships**"
 msgstr "**Utiliser les relations de suivi**"
 
-#: ../../config/options_metadata.rst:85
+#: ../../config/options_metadata.rst:63
 msgid ""
 "Check to write track-level relationships (e.g.: composer, lyricist, "
 "performer, or remixer) to your files."
@@ -254,13 +254,13 @@ msgstr ""
 "Cochez pour écrire des relations au niveau de la piste (par exemple: "
 "compositeur, parolier, interprète ou remixeur) dans vos fichiers."
 
-#: ../../config/options_metadata.rst:87
+#: ../../config/options_metadata.rst:65
 msgid "**Guess track number and title from filename if empty**"
 msgstr ""
 "**Déterminez le numéro de la piste et le titre à partir du nom du fichier "
 "s'il est vide**"
 
-#: ../../config/options_metadata.rst:89
+#: ../../config/options_metadata.rst:67
 msgid ""
 "If checked, Picard will try to guess a file's track number or title from the "
 "filename if the ``tracknumber`` or ``title`` tag is empty."
@@ -269,27 +269,27 @@ msgstr ""
 "ou le titre d'un fichier à partir du nom du fichier si la balise "
 "``tracknumber`` ou ``title`` est vide."
 
-#: ../../config/options_metadata.rst:92
+#: ../../config/options_metadata.rst:69
 msgid "**Various artists**"
 msgstr "**Artistes variés**"
 
-#: ../../config/options_metadata.rst:94
+#: ../../config/options_metadata.rst:71
 msgid "Choose how you want the \"Various Artists\" artist spelled."
 msgstr ""
 "Choisissez comment vous voulez que l'artiste \"Various Artists\" soit "
 "orthographié."
 
-#: ../../config/options_metadata.rst:96
+#: ../../config/options_metadata.rst:73
 msgid "**Standalone recordings**"
 msgstr "**Enregistrements autonomes**"
 
-#: ../../config/options_metadata.rst:98
+#: ../../config/options_metadata.rst:75
 msgid "Choose how you want \"Standalone recordings\" to be grouped."
 msgstr ""
 "Choisissez comment vous voulez que les \"Enregistrements autonomes\" soient "
 "regroupés."
 
-#: ../../config/options_metadata.rst:104
+#: ../../config/options_metadata.rst:81
 msgid ""
 "Details: :doc:`options_releases` / :doc:`options_genres` / :doc:"
 "`options_ratings`"

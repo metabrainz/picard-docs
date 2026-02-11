@@ -10,7 +10,7 @@ $if2
 
 **Description:**
 
-Returns the first non empty argument.  Can be used with an arbitrary number of arguments.
+Returns the first non empty argument. Can be used with an arbitrary number of arguments.
 
 .. only:: html
 
@@ -24,12 +24,12 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $set(foo,)
-    $set(bar,Something)
-    $if2(%foo%,%bar%,Three)    ==>  "Something"
-    $if2(,%bar%,Three)         ==>  "Something"
-    $if2(,%foo%,%bar%,Three)   ==>  "Something"
-    $if2(%foo%, ,%bar%,Three)  ==>  " "
-    $if2(%foo%.,%bar%,Three)   ==>  "."
-    $if2(%foo%,,Three)         ==>  "Three"
-    $if2(%foo%,,,)             ==>  ""
+   $set(foo,)
+   $set(bar,Something)
+   $if2(%foo%,%bar%,Three)    ==>  "Something"
+   $if2(,%bar%,Three)         ==>  "Something"
+   $if2(,%foo%,%bar%,Three)   ==>  "Something"
+   $if2(%foo%, ,%bar%,Three)  ==>  " "
+   $if2(%foo%.,%bar%,Three)   ==>  "."
+   $if2(%foo%,,Three)         ==>  "Three"
+   $if2(%foo%,,,)             ==>  ""

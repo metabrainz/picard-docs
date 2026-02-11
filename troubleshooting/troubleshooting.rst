@@ -1,25 +1,22 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`General Troubleshooting <troubleshooting; general>`
-============================================================
+===========================================================
 
 Getting Help
 ------------
 
 If you have problems using Picard, please first check the following resources:
 
-* For general usage information see the :doc:`/usage/using` documentation and the `illustrated quick start guide
-  <https://picard.musicbrainz.org/quick-start/>`_.
-* Read the :doc:`FAQ section </faq/faq>` for common questions and problems.
+* For general usage information see the :doc:`../usage/using` documentation and the `illustrated quick start guide <https://picard.musicbrainz.org/quick-start/>`_.
+* Read the :doc:`FAQ section <../faq/faq>` for common questions and problems.
 * Consult the `community forums <https://community.metabrainz.org/c/picard>`_.
-* Check the `download page <https://picard.musicbrainz.org/downloads/>`_ for a newer version of Picard which might
-  solve your problem.
-* If the problem is to do with a plugin, check the `Picard Plugins <https://picard.musicbrainz.org/plugins/>`_ for
-  updated plugin versions.
+* Check the `download page <https://picard.musicbrainz.org/downloads/>`_ for a newer version of Picard which might solve your problem.
+* If the problem is to do with a plugin, check the `Picard Plugins <https://picard.musicbrainz.org/plugins/>`_ for updated plugin versions.
 
 
 :index:`Reporting a Bug <troubleshooting; reporting a bug>`
-------------------------------------------------------------
+-----------------------------------------------------------
 
 If you think you have found a bug please check whether you are using the latest version of Picard and whether the bug has already been reported in the `bug tracker <https://tickets.musicbrainz.org/browse/PICARD>`_. If you're not sure or don't want to look through the existing tickets, ask on the community forums first.
 
@@ -70,7 +67,7 @@ This will display all log entries in the command window, and allow you to copy t
 
 .. note::
 
-   This method will only work with the installed version of Picard.  It will not work with the portable or Windows Store versions.
+   This method will only work with the installed version of Picard. It will not work with the portable or Windows Store versions.
 
 
 macOS Systems
@@ -108,9 +105,9 @@ This will display all log entries in the terminal window, and allow you to copy 
    .. seealso::
 
       Specific situations:
-      :doc:`/troubleshooting/does_not_start` /
-      :doc:`/troubleshooting/no_coverart` /
-      :doc:`/troubleshooting/missing_tags` /
-      :doc:`/troubleshooting/not_saving` /
-      :doc:`/troubleshooting/stopped_working` /
-      :doc:`/troubleshooting/macos_startup_error`
+      :doc:`does_not_start` /
+      :doc:`no_coverart` /
+      :doc:`missing_tags` /
+      :doc:`not_saving` /
+      :doc:`stopped_working` /
+      :doc:`macos_startup_error`

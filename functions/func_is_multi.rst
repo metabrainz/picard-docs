@@ -20,14 +20,14 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $set(foo,a; b; c)
-    $is_multi(%foo%)        ==>  "" (False)
+   $set(foo,a; b; c)
+   $is_multi(%foo%)        ==>  "" (False)
 
-    $set(bar,)
-    $is_multi(%bar%)        ==>  "" (False)
+   $set(bar,)
+   $is_multi(%bar%)        ==>  "" (False)
 
-    $setmulti(baz,a; b; c)
-    $is_multi(%baz%)        ==>  "1" (True)
+   $setmulti(baz,a; b; c)
+   $is_multi(%baz%)        ==>  "1" (True)
 
-    $is_multi(a; b; c)      ==>  "1" (True)
-    $is_multi(a)            ==>  "" (False)
+   $is_multi(a; b; c)      ==>  "1" (True)
+   $is_multi(a)            ==>  "" (False)

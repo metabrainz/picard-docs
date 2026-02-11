@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) This documentation is licensed under CC0 1.0.
+# Copyright (C) 2025, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Project-Id-Version: MusicBrainz Picard v2.13.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,66 +24,66 @@ msgstr ""
 msgid "If the music files to be processed are already grouped into folders by album, then the process of looking up the release in the MusicBrainz database is greatly simplified because Picard works best when processing one album at a time."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:10
+#: ../../workflows/workflow_album.rst:8
 msgid "**1. Load the files**"
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:12
+#: ../../workflows/workflow_album.rst:10
 msgid "Drag the files or folder from the browser to the \"Unclustered Files\" section in the left-hand pane."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:15
+#: ../../workflows/workflow_album.rst:13
 msgid "**2. Cluster and lookup the files**"
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:17
-msgid "Select the files in the left-hand pane and combine them into an album cluster using the :menuselection:`\"Tools --> Cluster\"` command.  Select the cluster in the left-hand pane and initiate the lookup using the :menuselection:`\"Tools --> Lookup\"` command.  See the :doc:`/usage/retrieve_lookup` section for details."
+#: ../../workflows/workflow_album.rst:15
+msgid "Select the files in the left-hand pane and combine them into an album cluster using the :menuselection:`\"Tools --> Cluster\"` command. Select the cluster in the left-hand pane and initiate the lookup using the :menuselection:`\"Tools --> Lookup\"` command. See the :doc:`../usage/retrieve_lookup` section for details."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:22
+#: ../../workflows/workflow_album.rst:18
 msgid "**3. Select the correct release**"
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:24
-msgid "If there is only one release that matches the lookup, it will be loaded automatically.  Before proceeding, please check to ensure that it properly matches your album (e.g.: release country, date and label, catalog number, barcode, media type, and cover art).  This is especially important if you are going to submit any information such as AcoustID fingerprints."
+#: ../../workflows/workflow_album.rst:20
+msgid "If there is only one release that matches the lookup, it will be loaded automatically. Before proceeding, please check to ensure that it properly matches your album (e.g.: release country, date and label, catalog number, barcode, media type, and cover art). This is especially important if you are going to submit any information such as AcoustID fingerprints."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:30
+#: ../../workflows/workflow_album.rst:23
 msgid "**4. Match the files to the tracks on the release**"
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:32
-msgid "Drag the files from the left-hand pane and drop them on the release in the right-hand pane.  Check that each track on the release is associated with only one file.  The release icon should turn gold.  See the :doc:`/usage/match` section for details."
+#: ../../workflows/workflow_album.rst:25
+msgid "Drag the files from the left-hand pane and drop them on the release in the right-hand pane. Check that each track on the release is associated with only one file. The release icon should turn gold. See the :doc:`../usage/match` section for details."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:37
+#: ../../workflows/workflow_album.rst:28
 msgid "**5. Verify the metadata and cover art**"
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:39
-msgid "Check that the metadata and cover art image for the release and tracks are what you want.  Adjust if required. See the :doc:`/usage/coverart` section for details."
+#: ../../workflows/workflow_album.rst:30
+msgid "Check that the metadata and cover art image for the release and tracks are what you want. Adjust if required. See the :doc:`../usage/coverart` section for details."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:43
+#: ../../workflows/workflow_album.rst:33
 msgid "**6. Save the files**"
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:45
-msgid "Save the files using the :menuselection:`\"File --> Save\"` command.  See the :doc:`/usage/save` section for details."
+#: ../../workflows/workflow_album.rst:35
+msgid "Save the files using the :menuselection:`\"File --> Save\"` command. See the :doc:`../usage/save` section for details."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:48
+#: ../../workflows/workflow_album.rst:38
 msgid "**7. Calculate and submit AcoustID fingerprints**"
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:50
+#: ../../workflows/workflow_album.rst:40
 msgid ":index:`This step is optional <acoustic fingerprint; submitting>`, but appreciated because it will help identify the files for others to look up for tagging."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:52
-msgid "Select the album entry in the right-hand pane and calculate the AcoustID fingerprints using :menuselection:`\"Tools --> Generate AcoustID Fingerprints\"`.  Once the fingerprints have been calculated, submit them using :menuselection:`\"Files --> Submit AcoustIDs\"`."
+#: ../../workflows/workflow_album.rst:42
+msgid "Select the album entry in the right-hand pane and calculate the AcoustID fingerprints using :menuselection:`\"Tools --> Generate AcoustID Fingerprints\"`. Once the fingerprints have been calculated, submit them using :menuselection:`\"Files --> Submit AcoustIDs\"`."
 msgstr ""
 
-#: ../../workflows/workflow_album.rst:58
+#: ../../workflows/workflow_album.rst:46
 msgid "AcoustID fingerprints should only be submitted after the files have been tagged with MusicBrainz metadata, and you have verified that the files have been matched to the correct track on the proper release."
 msgstr ""

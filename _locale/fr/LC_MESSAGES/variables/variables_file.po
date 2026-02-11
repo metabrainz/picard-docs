@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.4.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-31 09:30-0700\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2024-02-02 04:28+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translations.metabrainz.org/projects/"
-"picard-docs/variablesvariables_file/fr/>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/variablesvariables_file/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,16 +35,16 @@ msgstr ""
 
 #: ../../variables/variables_file.rst:10
 msgid ""
-"Variables that rely on information from the files (e.g.: _bitrate) are only "
-"available for use on tracks with attached files, when running scripts "
+"Variables that rely on information from the files (e.g.: ``_bitrate``) are "
+"only available for use on tracks with attached files, when running scripts "
 "manually on files or in the file naming script."
 msgstr ""
 "Les variables qui reposent sur les informations des fichiers (par exemple: "
-"_bitrate) ne sont disponibles que pour une utilisation sur les pistes avec "
+"``_bitrate``) ne sont disponibles que pour une utilisation sur les pistes avec "
 "des fichiers joints, lors de l'exécution manuelle de scripts sur des "
 "fichiers ou dans le script de dénomination de fichier."
 
-#: ../../variables/variables_file.rst:15
+#: ../../variables/variables_file.rst:14
 msgid ""
 "Prior to version 2.5 Picard did not support using file variables in tagging "
 "scripts."
@@ -53,38 +53,38 @@ msgstr ""
 "variables de fichier dans les scripts de balisage."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:17
+#: ../../variables/variables_file.rst:16
 msgid "**_bitrate**"
 msgstr "**_bitrate**"
 
-#: ../../variables/variables_file.rst:19
+#: ../../variables/variables_file.rst:18
 msgid "Approximate bitrate in kbps."
 msgstr "Débit binaire approximatif en kbps."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:21
+#: ../../variables/variables_file.rst:20
 msgid "**_bits_per_sample**"
 msgstr "**_bits_per_sample**"
 
-#: ../../variables/variables_file.rst:23
+#: ../../variables/variables_file.rst:22
 msgid "Bits of data per sample."
 msgstr "Bits de données par échantillon."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:25
+#: ../../variables/variables_file.rst:24
 msgid "**_channels**"
 msgstr "**_channels**"
 
-#: ../../variables/variables_file.rst:27
+#: ../../variables/variables_file.rst:26
 msgid "Number of audio channels in the file."
 msgstr "Nombre de canaux audio dans le fichier."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:29
+#: ../../variables/variables_file.rst:28
 msgid "**_dirname**"
 msgstr "**_dirname**"
 
-#: ../../variables/variables_file.rst:31
+#: ../../variables/variables_file.rst:30
 msgid ""
 "The name of the directory containing the file at the point of being loaded "
 "into Picard. (*since Picard 1.1*)"
@@ -93,28 +93,28 @@ msgstr ""
 "Picard. (*depuis Picard 1.1*)"
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:33
+#: ../../variables/variables_file.rst:32
 msgid "**_extension**"
 msgstr "**_extension**"
 
-#: ../../variables/variables_file.rst:35
+#: ../../variables/variables_file.rst:34
 msgid "The file's extension. (*since Picard 0.9*)"
 msgstr "L'extension du fichier. (*depuis Picard 0.9*)"
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:37
+#: ../../variables/variables_file.rst:36
 msgid "**_filename**"
 msgstr "**_filename**"
 
-#: ../../variables/variables_file.rst:39
+#: ../../variables/variables_file.rst:38
 msgid "The name of the file without extension. (*since Picard 1.1*)"
 msgstr "Le nom du fichier sans extension. (*depuis Picard 1.1*)"
 
-#: ../../variables/variables_file.rst:41
+#: ../../variables/variables_file.rst:40
 msgid "**_file_created_timestamp**"
 msgstr "**_file_created_timestamp**"
 
-#: ../../variables/variables_file.rst:43
+#: ../../variables/variables_file.rst:42
 msgid ""
 "The file creation timestamp in the form 'YYYY-MM-DD HH:MM:SS' as reported by "
 "the file system. (*since Picard 2.9*)"
@@ -122,11 +122,11 @@ msgstr ""
 "L'horodatage de la création du fichier sous la forme 'AAAA-MM-JJ HH:MM:SS' "
 "tel que rapporté par le système de fichiers. (*depuis Picard 2.9*)"
 
-#: ../../variables/variables_file.rst:45
+#: ../../variables/variables_file.rst:44
 msgid "**_file_modified_timestamp**"
 msgstr "**_file_modified_timestamp**"
 
-#: ../../variables/variables_file.rst:47
+#: ../../variables/variables_file.rst:46
 msgid ""
 "The file modification timestamp in the form 'YYYY-MM-DD HH:MM:SS' as "
 "reported by the file system. (*since Picard 2.9*)"
@@ -135,38 +135,38 @@ msgstr ""
 "tel que rapporté par le système de fichiers. (*depuis Picard 2.9*)"
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:49
+#: ../../variables/variables_file.rst:48
 msgid "**_format**"
 msgstr "**_format**"
 
-#: ../../variables/variables_file.rst:51
+#: ../../variables/variables_file.rst:50
 msgid "Media format of the file (e.g.: MPEG-1 Audio)."
 msgstr "Le format multimédia du fichier (par exemple: MPEG-1 Audio)."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:53
+#: ../../variables/variables_file.rst:52
 msgid "**_length**"
 msgstr "**_length**"
 
-#: ../../variables/variables_file.rst:55
+#: ../../variables/variables_file.rst:54
 msgid "The length of the track in format mins:secs."
 msgstr "La longueur de la piste au format mins:secs."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:57
+#: ../../variables/variables_file.rst:56
 msgid "**_sample_rate**"
 msgstr "**_sample_rate**"
 
-#: ../../variables/variables_file.rst:59
+#: ../../variables/variables_file.rst:58
 msgid "Number of digitizing samples per second (Hz)."
 msgstr "Le nombre d'échantillons de numérisation par seconde (Hz)."
 
 # Variable name.  Do not translate.
-#: ../../variables/variables_file.rst:61
+#: ../../variables/variables_file.rst:60
 msgid "**_filesize**"
 msgstr "**_filesize**"
 
-#: ../../variables/variables_file.rst:63
+#: ../../variables/variables_file.rst:62
 msgid "Size of the file in bytes."
 msgstr "Taille du fichier en octets."
 

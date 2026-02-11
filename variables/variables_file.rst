@@ -1,14 +1,13 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`File Variables <variables; file>`
-==========================================
+=========================================
 
 These variables are populated from information found in the audio files themselves, without any special Picard settings.
 
 .. note::
 
-   Variables that rely on information from the files (e.g.: _bitrate) are only available for use on
-   tracks with attached files, when running scripts manually on files or in the file naming script.
+   Variables that rely on information from the files (e.g.: ``_bitrate``) are only available for use on tracks with attached files, when running scripts manually on files or in the file naming script.
 
 .. warning::
 

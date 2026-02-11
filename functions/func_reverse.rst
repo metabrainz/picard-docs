@@ -19,7 +19,7 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $set(foo,abcde)
-    $reverse(%foo%)  ==>  "edcba"
+   $set(foo,abcde)
+   $reverse(%foo%)  ==>  "edcba"
 
-    $reverse(abcde)  ==>  "edcba"
+   $reverse(abcde)  ==>  "edcba"

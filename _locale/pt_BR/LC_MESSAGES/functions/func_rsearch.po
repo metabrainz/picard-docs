@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-04 18:11-0600\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2021-08-23 07:21+0000\n"
 "Last-Translator: Gabriel Ferreira <gabrielcarvfer@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
@@ -37,55 +37,55 @@ msgstr "**Descrição:**"
 #: ../../functions/func_rsearch.rst:13
 msgid ""
 "Regular expression search. This function will return the first matching "
-"group specified by ``pattern`` from ``text``.  For more information about "
-"regular expressions, please see the `article on Wikipedia <https://"
-"wikipedia.org/wiki/Regular_expression>`_."
+"group specified by ``pattern`` from ``text``. For more information about "
+"regular expressions, please see the `article on Wikipedia <https://wikipedia."
+"org/wiki/Regular_expression>`_."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:17
+#: ../../functions/func_rsearch.rst:15
 msgid ""
 "If a marked subexpression is defined using parentheses within the search "
-"pattern, only the pattern captured by the subexpression will be returned.  "
-"If more than one marked subexpression is defined and matched, only the "
-"pattern captured by the first subexpression will be returned. If more than "
-"one marked subexpression is defined and not all are matched, an empty string "
-"will be returned.  If no subexpression is specified, then the pattern "
+"pattern, only the pattern captured by the subexpression will be returned. If "
+"more than one marked subexpression is defined and matched, only the pattern "
+"captured by the first subexpression will be returned. If more than one "
+"marked subexpression is defined and not all are matched, an empty string "
+"will be returned. If no subexpression is specified, then the pattern "
 "captured by the whole search expression will be returned."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:24
+#: ../../functions/func_rsearch.rst:17
 msgid ""
 "If the optional ``group`` parameter is not provided or is empty, return the "
 "first capture group which matched something (including the empty string) or "
 "the entire match."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:28
+#: ../../functions/func_rsearch.rst:19
 msgid ""
 "If ``group`` is an integer, return the capture group in the position "
 "matching this integer. Otherwise, return the capture group named ``group``, "
 "sans surrounding whitespace."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:33
+#: ../../functions/func_rsearch.rst:23
 msgid ""
 "When entering regular expressions into Picard scripts you have to escape a "
 "backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right "
 "parentheses \"(\" and \")\" in order to force Picard to not interpret them "
-"as part of the script command.  This is done by inserting a backslash before "
-"the character to be escaped.  For example, the regular expression "
+"as part of the script command. This is done by inserting a backslash before "
+"the character to be escaped. For example, the regular expression "
 "``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\"
 "\\.]*\\)\\$``."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:41
+#: ../../functions/func_rsearch.rst:27
 msgid "The ``group`` argument was added in Picard v2.14."
 msgstr ""
 
-#: ../../functions/func_rsearch.rst:43
+#: ../../functions/func_rsearch.rst:29
 msgid "**Example:**"
 msgstr "**Exemplo:**"
 
-#: ../../functions/func_rsearch.rst:45
+#: ../../functions/func_rsearch.rst:31
 msgid "The following statements will return the values indicated:"
 msgstr "Os comandos a seguir retornarão os valores indicados:"

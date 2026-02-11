@@ -13,7 +13,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">{{ _('This MusicBrainz Picard User Guide is licensed under CC0 1.0') }} <a href="https://creativecommons.org/publicdomain/zero/1.0"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="/cc-zero.png" /></a></p>
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text">
+      {% trans %}Copyright{% endtrans %} &copy; {{ copyright }}
+      {% trans %}Licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0" target="_blank">CC0 1.0.{% endtrans %}<span class="license-link"></span></a>
+    </p>
     <!-- <p>
     {%- if show_copyright %}
       {%- if hasdoc('copyright') %}
@@ -54,4 +57,3 @@
   {%- block extrafooter %} {% endblock %}
 
 </footer>
-

@@ -4,21 +4,6 @@
 
 .. TODO: Note which tags are not provided by Picard
 
-.. #metabrainz [May 22, 16:54:30] <rdswift> zas: The Picard docs refer to the following as basic tags, but I haven't yet
-..                                found a release that will produce them.  Do you know if they are still valid, or have
-..                                they been deprecated?  musicbrainz_originalalbumid, musicbrainz_originalartistid,
-..                                musicbrainz_releasetrackid, originalalbum, originalartist
-.. #metabrainz [May 23, 02:50:44] <zas> rdswift: dunno, perhaps outsidecontext could tell
-.. #metabrainz [May 23, 02:52:20] <zas> but there were relatively recent changes regarding few of them, see PICARD-1426
-.. #metabrainz [May 23, 02:52:21] <+BrainzBot> PICARD-1426: Map musicbrainz_originalalbumid and musicbrainz_originalartistid
-..                                to MP4 and WMA https://tickets.metabrainz.org/browse/PICARD-1426
-.. #metabrainz [May 23, 02:53:34] <zas> PICARD-720
-.. #metabrainz [May 23, 02:53:35] <+BrainzBot> PICARD-720: Files are immediately recognized as "non-album tracks" if
-..                                MUSICBRAINZ_ALBUMID is missing https://tickets.metabrainz.org/browse/PICARD-720
-.. #metabrainz [May 23, 03:50:42] <Mineo> rdswift: musicbrainz_releasetrackid is only written for some formats (ape and vorbis)
-.. #metabrainz [May 23, 03:51:53] <Mineo> rdswift: for the original... tags, see https://tickets.metabrainz.org/browse/PICARD-1034
-.. #metabrainz [May 23, 03:51:54] <+BrainzBot> PICARD-1034: Picard not seeing TOPE and TOAL
-
 
 :index:`Basic Tags <tags; basic>`
 =================================
@@ -35,7 +20,7 @@ Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbr
 
 .. note::
 
-   Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping </appendices/tag_mapping>` section for details.
+   Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for details.
 
 
 Tags Provided from MusicBrainz Data
@@ -212,7 +197,7 @@ These tags are not able to be populated by stock Picard, however they may be use
 
 **acoustid_id**
 
-   The AcoustID associated with the track. The AcoustID is the identifier assigned to an audio file based on its acoustic fingerprint. Multiple fingerprints may be assigned the same AcoustID if the fingerprints are similar enough. See the section on :doc:`Understanding Acoustic Fingerprinting and AcoustIDs </tutorials/acoustid>` for more information.
+   The AcoustID associated with the track. The AcoustID is the identifier assigned to an audio file based on its acoustic fingerprint. Multiple fingerprints may be assigned the same AcoustID if the fingerprints are similar enough. See the section on :doc:`Understanding Acoustic Fingerprinting and AcoustIDs <../tutorials/acoustid>` for more information.
 
 **albumsort**
 

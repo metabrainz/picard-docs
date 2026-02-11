@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 11:08-0600\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: 2024-03-26 02:28+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -23,25 +23,25 @@ msgstr ""
 "X-Generator: Weblate 5.4\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../appendices/tag_mapping.rst:8
+#: ../../appendices/tag_mapping.rst:18
 msgid "Appendix B: :index:`Tag Mapping <pair: mapping; tags>`"
 msgstr "Annexe B : :index:`Mappage de balises <pair: mappage; balises>`"
 
-#: ../../appendices/tag_mapping.rst:10
+#: ../../appendices/tag_mapping.rst:20
 msgid ""
 "The following is a mapping between Picard internal tag names and those used "
-"by various tagging formats. The mapping is also available as a `table "
-"<https://picard-docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map."
-"html>`_ and a `spreadsheet <https://picard-docs.musicbrainz.org/downloads/"
-"MusicBrainz_Picard_Tag_Map.xlsx>`_."
+"by various tagging formats."
 msgstr ""
 "Ce qui suit est un mappage entre les noms de balises internes de Picard et "
-"ceux utilisés par divers formats de balisage. Le mappage est également "
-"disponible sous forme de `table <https://picard-docs.musicbrainz.org/"
-"downloads/MusicBrainz_Picard_Tag_Map.html>`_ et de `tableur <https://picard-"
-"docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map.xlsx>`_."
+"ceux utilisés par divers formats de balisage."
 
-#: ../../appendices/tag_mapping.rst:14
+#: ../../appendices/tag_mapping.rst:24
+msgid ""
+"The mapping is also available as a |tag_map_html_link| or |"
+"tag_map_xlsx_link|."
+msgstr ""
+
+#: ../../appendices/tag_mapping.rst:27
 msgid "AcoustID"
 msgstr "AcoustID"
 
@@ -97,7 +97,7 @@ msgstr "RIFF INFO"
 msgid "n/a"
 msgstr "n/a"
 
-#: ../../appendices/tag_mapping.rst:29
+#: ../../appendices/tag_mapping.rst:42
 msgid "AcoustID Fingerprint"
 msgstr "Empreinte digitale AcoustID"
 
@@ -121,7 +121,7 @@ msgstr "``----:com.apple.iTunes:Acoustid Fingerprint``"
 msgid "``Acoustid/Fingerprint``"
 msgstr "``Acoustid/Fingerprint``"
 
-#: ../../appendices/tag_mapping.rst:44
+#: ../../appendices/tag_mapping.rst:57
 msgid "`Album <https://musicbrainz.org/doc/Release_Title>`_"
 msgstr "`Album <https://musicbrainz.org/doc/Release_Title>`_"
 
@@ -153,7 +153,7 @@ msgstr "``WM/AlbumTitle``"
 msgid "``IPRD``"
 msgstr "``IPRD``"
 
-#: ../../appendices/tag_mapping.rst:59
+#: ../../appendices/tag_mapping.rst:72
 msgid "`Album Artist <https://musicbrainz.org/doc/Release_Artist>`_"
 msgstr "`Artiste de l'album <https://musicbrainz.org/doc/Release_Artist>`_"
 
@@ -181,7 +181,7 @@ msgstr "``aART``"
 msgid "``WM/AlbumArtist``"
 msgstr "``WM/AlbumArtist``"
 
-#: ../../appendices/tag_mapping.rst:74
+#: ../../appendices/tag_mapping.rst:87
 msgid "Album Artist Sort Order"
 msgstr "Ordre de tri de l'artiste de l'album"
 
@@ -205,7 +205,7 @@ msgstr "``soaa``"
 msgid "``WM/AlbumArtistSortOrder``"
 msgstr "``WM/AlbumArtistSortOrder``"
 
-#: ../../appendices/tag_mapping.rst:89
+#: ../../appendices/tag_mapping.rst:102
 msgid "Album Sort Order :sup:`[4]`"
 msgstr "Ordre de tri des albums :sup:`[4]`"
 
@@ -229,7 +229,7 @@ msgstr "``soal``"
 msgid "``WM/AlbumSortOrder``"
 msgstr "``WM/AlbumSortOrder``"
 
-#: ../../appendices/tag_mapping.rst:104
+#: ../../appendices/tag_mapping.rst:117
 msgid ""
 "`Arranger <https://musicbrainz.org/relationship/22661fb8-cdb7-4f67-8385-"
 "b2a8be6c9f0d>`_"
@@ -253,7 +253,7 @@ msgstr "``ARRANGER``"
 msgid "``Arranger``"
 msgstr "``Arranger``"
 
-#: ../../appendices/tag_mapping.rst:119
+#: ../../appendices/tag_mapping.rst:132
 msgid "`Artist <https://musicbrainz.org/doc/Artist>`_"
 msgstr "`Artiste <https://musicbrainz.org/doc/Artist>`_"
 
@@ -285,7 +285,7 @@ msgstr "``Author``"
 msgid "``IART``"
 msgstr "``IART``"
 
-#: ../../appendices/tag_mapping.rst:134
+#: ../../appendices/tag_mapping.rst:147
 msgid "Artist Sort Order"
 msgstr "Ordre de tri des artistes"
 
@@ -309,7 +309,7 @@ msgstr "``soar``"
 msgid "``WM/ArtistSortOrder``"
 msgstr "``WM/ArtistSortOrder``"
 
-#: ../../appendices/tag_mapping.rst:149
+#: ../../appendices/tag_mapping.rst:162
 msgid "Artists"
 msgstr "Artistes"
 
@@ -318,8 +318,8 @@ msgid "``artists``"
 msgstr "``artists``"
 
 #: ../../appendices/tag_mapping.rst:1
-msgid "``TXXX:ARTISTS``"
-msgstr "``TXXX:ARTISTS``"
+msgid "``TXXX:Artists``"
+msgstr "``TXXX:Artists``"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``ARTISTS``"
@@ -337,7 +337,7 @@ msgstr "``----:com.apple.iTunes:ARTISTS``"
 msgid "``WM/ARTISTS``"
 msgstr "``WM/ARTISTS``"
 
-#: ../../appendices/tag_mapping.rst:164
+#: ../../appendices/tag_mapping.rst:177
 msgid "`ASIN <https://musicbrainz.org/doc/ASIN>`_"
 msgstr "`ASIN <https://musicbrainz.org/doc/ASIN>`_"
 
@@ -357,7 +357,7 @@ msgstr "``ASIN``"
 msgid "``----:com.apple.iTunes:ASIN``"
 msgstr "``----:com.apple.iTunes:ASIN``"
 
-#: ../../appendices/tag_mapping.rst:179
+#: ../../appendices/tag_mapping.rst:192
 msgid "`Barcode <https://musicbrainz.org/doc/Barcode>`_"
 msgstr "`Code à barres <https://musicbrainz.org/doc/Barcode>`_"
 
@@ -385,7 +385,7 @@ msgstr "``----:com.apple.iTunes:BARCODE``"
 msgid "``WM/Barcode``"
 msgstr "``WM/Barcode``"
 
-#: ../../appendices/tag_mapping.rst:194
+#: ../../appendices/tag_mapping.rst:207
 msgid "BPM :sup:`[4]`"
 msgstr "BPM :sup:`[4]`"
 
@@ -409,7 +409,7 @@ msgstr "``tmpo``"
 msgid "``WM/BeatsPerMinute``"
 msgstr "``WM/BeatsPerMinute``"
 
-#: ../../appendices/tag_mapping.rst:209
+#: ../../appendices/tag_mapping.rst:222
 msgid "`Catalog Number <https://musicbrainz.org/doc/Release_Catalog_Number>`_"
 msgstr ""
 "`Numéro de catalogue <https://musicbrainz.org/doc/Release_Catalog_Number>`_"
@@ -438,7 +438,7 @@ msgstr "``----:com.apple.iTunes:CATALOGNUMBER``"
 msgid "``WM/CatalogNo``"
 msgstr "``WM/CatalogNo``"
 
-#: ../../appendices/tag_mapping.rst:224
+#: ../../appendices/tag_mapping.rst:237
 msgid "Comment :sup:`[4]`"
 msgstr "Commentaire :sup:`[4]`"
 
@@ -470,7 +470,7 @@ msgstr "``Description``"
 msgid "``ICMT``"
 msgstr "``ICMT``"
 
-#: ../../appendices/tag_mapping.rst:239
+#: ../../appendices/tag_mapping.rst:252
 msgid "Compilation (iTunes) :sup:`[5]`"
 msgstr "Compilation (iTunes) :sup:`[5]`"
 
@@ -498,7 +498,7 @@ msgstr "``cpil``"
 msgid "``WM/IsCompilation``"
 msgstr "``WM/IsCompilation``"
 
-#: ../../appendices/tag_mapping.rst:254
+#: ../../appendices/tag_mapping.rst:267
 msgid ""
 "`Composer <https://musicbrainz.org/relationship/d59d99ea-23d4-4a80-b066-"
 "edca32ee158f>`_"
@@ -534,7 +534,7 @@ msgstr "``WM/Composer``"
 msgid "``IMUS``"
 msgstr "``IMUS``"
 
-#: ../../appendices/tag_mapping.rst:269
+#: ../../appendices/tag_mapping.rst:282
 msgid "Composer Sort Order"
 msgstr "Ordre de tri du compositeur"
 
@@ -558,7 +558,7 @@ msgstr "``soco``"
 msgid "``WM/ComposerSortOrder`` (Picard>=1.3)"
 msgstr "``WM/ComposerSortOrder`` (Picard>=1.3)"
 
-#: ../../appendices/tag_mapping.rst:284
+#: ../../appendices/tag_mapping.rst:297
 msgid ""
 "`Conductor <https://musicbrainz.org/relationship/234670ce-5f22-4fd0-921b-"
 "ef1662695c5d>`_"
@@ -590,7 +590,7 @@ msgstr "``----:com.apple.iTunes:CONDUCTOR``"
 msgid "``WM/Conductor``"
 msgstr "``WM/Conductor``"
 
-#: ../../appendices/tag_mapping.rst:299
+#: ../../appendices/tag_mapping.rst:312
 msgid "Copyright :sup:`[4]`"
 msgstr "Copyright :sup:`[4]`"
 
@@ -618,39 +618,7 @@ msgstr "``cprt``"
 msgid "``ICOP``"
 msgstr "``ICOP``"
 
-#: ../../appendices/tag_mapping.rst:314
-msgid "`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
-msgstr "`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
-
-#: ../../appendices/tag_mapping.rst:1
-msgid "``date``"
-msgstr "``date``"
-
-#: ../../appendices/tag_mapping.rst:1
-msgid "``TDRC`` (ID3v2.4) ``TYER`` + ``TDAT`` (ID3v2.3)"
-msgstr "``TDRC`` (ID3v2.4) ``TYER`` + ``TDAT`` (ID3v2.3)"
-
-#: ../../appendices/tag_mapping.rst:1
-msgid "``DATE``"
-msgstr "``DATE``"
-
-#: ../../appendices/tag_mapping.rst:1
-msgid "``Year``"
-msgstr "``Year``"
-
-#: ../../appendices/tag_mapping.rst:1
-msgid "``©day``"
-msgstr "``©day``"
-
-#: ../../appendices/tag_mapping.rst:1
-msgid "``WM/Year``"
-msgstr "``WM/Year``"
-
-#: ../../appendices/tag_mapping.rst:1
-msgid "``ICRD``"
-msgstr "``ICRD``"
-
-#: ../../appendices/tag_mapping.rst:329
+#: ../../appendices/tag_mapping.rst:327
 msgid "Director"
 msgstr "Réalisateur"
 
@@ -678,7 +646,7 @@ msgstr "``©dir`` :sup:`[9]`"
 msgid "``WM/Director``"
 msgstr "``WM/Director``"
 
-#: ../../appendices/tag_mapping.rst:344
+#: ../../appendices/tag_mapping.rst:342
 msgid "Disc Number"
 msgstr "Numéro de disque"
 
@@ -706,7 +674,7 @@ msgstr "``disk``"
 msgid "``WM/PartOfSet``"
 msgstr "``WM/PartOfSet``"
 
-#: ../../appendices/tag_mapping.rst:359
+#: ../../appendices/tag_mapping.rst:357
 msgid "Disc Subtitle"
 msgstr "Sous-titre du disque"
 
@@ -734,7 +702,7 @@ msgstr "``----:com.apple.iTunes:DISCSUBTITLE``"
 msgid "``WM/SetSubTitle``"
 msgstr "``WM/SetSubTitle``"
 
-#: ../../appendices/tag_mapping.rst:374
+#: ../../appendices/tag_mapping.rst:372
 msgid "Encoded By :sup:`[4]`"
 msgstr "Encodé par :sup:`[4]`"
 
@@ -766,7 +734,7 @@ msgstr "``WM/EncodedBy``"
 msgid "``IENC``"
 msgstr "``IENC``"
 
-#: ../../appendices/tag_mapping.rst:389
+#: ../../appendices/tag_mapping.rst:387
 msgid "Encoder Settings :sup:`[4]`"
 msgstr "Paramètres de l'encodeur :sup:`[4]`"
 
@@ -790,7 +758,7 @@ msgstr "``EncoderSettings``"
 msgid "``WM/EncodingSettings`` (Picard>=1.3.1)"
 msgstr "``WM/EncodingSettings`` (Picard>=1.3.1)"
 
-#: ../../appendices/tag_mapping.rst:404
+#: ../../appendices/tag_mapping.rst:402
 msgid ""
 "`Engineer <https://musicbrainz.org/"
 "relationship/5dcc52af-7064-4051-8d62-7d80f4c3c907>`_"
@@ -826,7 +794,7 @@ msgstr "``WM/Engineer``"
 msgid "``IENG``"
 msgstr "``IENG``"
 
-#: ../../appendices/tag_mapping.rst:419
+#: ../../appendices/tag_mapping.rst:417
 msgid "Gapless Playback :sup:`[4]`"
 msgstr "Lecture sans interruption :sup:`[4]`"
 
@@ -838,7 +806,7 @@ msgstr "``gapless``"
 msgid "``pgap``"
 msgstr "``pgap``"
 
-#: ../../appendices/tag_mapping.rst:434
+#: ../../appendices/tag_mapping.rst:432
 msgid "`Genre <https://musicbrainz.org/doc/Genre>`_"
 msgstr "`Genre <https://musicbrainz.org/doc/Genre>`_"
 
@@ -870,7 +838,7 @@ msgstr "``WM/Genre``"
 msgid "``IGNR``"
 msgstr "``IGNR``"
 
-#: ../../appendices/tag_mapping.rst:449
+#: ../../appendices/tag_mapping.rst:447
 msgid "Grouping :sup:`[3]`"
 msgstr "Regroupement :sup:`[3]`"
 
@@ -898,7 +866,7 @@ msgstr "``©grp``"
 msgid "``WM/ContentGroupDescription``"
 msgstr "``WM/ContentGroupDescription``"
 
-#: ../../appendices/tag_mapping.rst:464
+#: ../../appendices/tag_mapping.rst:462
 msgid "Initial Key"
 msgstr "Clé initiale"
 
@@ -922,7 +890,7 @@ msgstr "``----:com.apple.iTunes:initialkey``"
 msgid "``WM/InitialKey``"
 msgstr "``WM/InitialKey``"
 
-#: ../../appendices/tag_mapping.rst:479
+#: ../../appendices/tag_mapping.rst:477
 msgid "`ISRC <https://musicbrainz.org/doc/ISRC>`_"
 msgstr "`ISRC <https://musicbrainz.org/doc/ISRC>`_"
 
@@ -946,7 +914,7 @@ msgstr "``----:com.apple.iTunes:ISRC``"
 msgid "``WM/ISRC``"
 msgstr "``WM/ISRC``"
 
-#: ../../appendices/tag_mapping.rst:494
+#: ../../appendices/tag_mapping.rst:492
 msgid "Language"
 msgstr "Langue"
 
@@ -978,7 +946,7 @@ msgstr "``WM/Language``"
 msgid "``ILNG``"
 msgstr "``ILNG``"
 
-#: ../../appendices/tag_mapping.rst:509
+#: ../../appendices/tag_mapping.rst:507
 msgid "License :sup:`[6, 7]`"
 msgstr "License :sup:`[6, 7]`"
 
@@ -998,7 +966,7 @@ msgstr "``LICENSE``"
 msgid "``----:com.apple.iTunes:LICENSE``"
 msgstr "``----:com.apple.iTunes:LICENSE``"
 
-#: ../../appendices/tag_mapping.rst:524
+#: ../../appendices/tag_mapping.rst:522
 msgid ""
 "`Lyricist <https://musicbrainz.org/relationship/3e48faba-"
 "ec01-47fd-8e89-30e81161661c>`_"
@@ -1030,7 +998,7 @@ msgstr "``----:com.apple.iTunes:LYRICIST``"
 msgid "``WM/Writer``"
 msgstr "``WM/Writer``"
 
-#: ../../appendices/tag_mapping.rst:539
+#: ../../appendices/tag_mapping.rst:537
 msgid "Lyrics :sup:`[4]`"
 msgstr "Paroles :sup:`[4]`"
 
@@ -1058,7 +1026,7 @@ msgstr "``©lyr``"
 msgid "``WM/Lyrics``"
 msgstr "``WM/Lyrics``"
 
-#: ../../appendices/tag_mapping.rst:554
+#: ../../appendices/tag_mapping.rst:552
 msgid "`Media <https://musicbrainz.org/doc/Release_Format>`_"
 msgstr "`Médias <https://musicbrainz.org/doc/Release_Format>`_"
 
@@ -1090,7 +1058,7 @@ msgstr "``WM/Media``"
 msgid "``IMED``"
 msgstr "``IMED``"
 
-#: ../../appendices/tag_mapping.rst:569
+#: ../../appendices/tag_mapping.rst:567
 msgid ""
 "`Mix-DJ <https://musicbrainz.org/relationship/28338ee6-d578-485a-"
 "bb53-61dbfd7c6545>`_"
@@ -1122,7 +1090,7 @@ msgstr "``----:com.apple.iTunes:DJMIXER``"
 msgid "``WM/DJMixer``"
 msgstr "``WM/DJMixer``"
 
-#: ../../appendices/tag_mapping.rst:584
+#: ../../appendices/tag_mapping.rst:582
 msgid ""
 "`Mixer <https://musicbrainz.org/relationship/3e3102e1-1896-4f50-b5b2-"
 "dd9824e46efe>`_"
@@ -1154,7 +1122,7 @@ msgstr "``----:com.apple.iTunes:MIXER``"
 msgid "``WM/Mixer``"
 msgstr "``WM/Mixer``"
 
-#: ../../appendices/tag_mapping.rst:599
+#: ../../appendices/tag_mapping.rst:597
 msgid "Mood :sup:`[3]`"
 msgstr "Mood :sup:`[3]`"
 
@@ -1182,7 +1150,7 @@ msgstr "``----:com.apple.iTunes:MOOD``"
 msgid "``WM/Mood``"
 msgstr "``WM/Mood``"
 
-#: ../../appendices/tag_mapping.rst:614
+#: ../../appendices/tag_mapping.rst:612
 msgid "Movement :sup:`[4]`"
 msgstr "Mouvement :sup:`[4]`"
 
@@ -1202,7 +1170,7 @@ msgstr "``MOVEMENTNAME``"
 msgid "``©mvn``"
 msgstr "``©mvn``"
 
-#: ../../appendices/tag_mapping.rst:629
+#: ../../appendices/tag_mapping.rst:627
 msgid "Movement Count :sup:`[4]`"
 msgstr "Nombre de mouvements :sup:`[4]`"
 
@@ -1222,7 +1190,7 @@ msgstr "``MOVEMENTTOTAL``"
 msgid "``mvc``"
 msgstr "``mvc``"
 
-#: ../../appendices/tag_mapping.rst:644
+#: ../../appendices/tag_mapping.rst:642
 msgid "Movement Number :sup:`[4]`"
 msgstr "Numéro de mouvement :sup:`[4]`"
 
@@ -1238,7 +1206,7 @@ msgstr "``MOVEMENT``"
 msgid "``mvi``"
 msgstr "``mvi``"
 
-#: ../../appendices/tag_mapping.rst:659
+#: ../../appendices/tag_mapping.rst:657
 msgid ""
 "`MusicBrainz Artist ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_"
 msgstr ""
@@ -1265,7 +1233,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Artist Id``"
 msgid "``MusicBrainz/Artist Id``"
 msgstr "``MusicBrainz/Artist Id``"
 
-#: ../../appendices/tag_mapping.rst:674
+#: ../../appendices/tag_mapping.rst:672
 msgid "`MusicBrainz Disc ID <https://musicbrainz.org/doc/Disc_ID>`_"
 msgstr "`ID du disque MusicBrainz <https://musicbrainz.org/doc/Disc_ID>`_"
 
@@ -1289,7 +1257,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Disc Id``"
 msgid "``MusicBrainz/Disc Id``"
 msgstr "``MusicBrainz/Disc Id``"
 
-#: ../../appendices/tag_mapping.rst:689
+#: ../../appendices/tag_mapping.rst:687
 msgid ""
 "`MusicBrainz Original Artist ID <https://musicbrainz.org/doc/"
 "MusicBrainz_Identifier>`_"
@@ -1317,7 +1285,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Original Artist Id`` (Picard>=2.1)"
 msgid "``MusicBrainz/Original Artist Id`` (Picard>=2.1)"
 msgstr "``MusicBrainz/Original Artist Id`` (Picard>=2.1)"
 
-#: ../../appendices/tag_mapping.rst:704
+#: ../../appendices/tag_mapping.rst:702
 msgid ""
 "`MusicBrainz Original Release ID <https://musicbrainz.org/doc/"
 "MusicBrainz_Identifier>`_"
@@ -1345,7 +1313,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Original Album Id`` (Picard>=2.1)"
 msgid "``MusicBrainz/Original Album Id`` (Picard>=2.1)"
 msgstr "``MusicBrainz/Original Album Id`` (Picard>=2.1)"
 
-#: ../../appendices/tag_mapping.rst:719
+#: ../../appendices/tag_mapping.rst:717
 msgid ""
 "`MusicBrainz Recording ID <https://musicbrainz.org/doc/"
 "MusicBrainz_Identifier>`_"
@@ -1373,7 +1341,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Track Id``"
 msgid "``MusicBrainz/Track Id``"
 msgstr "``MusicBrainz/Track Id``"
 
-#: ../../appendices/tag_mapping.rst:734
+#: ../../appendices/tag_mapping.rst:732
 msgid ""
 "`MusicBrainz Release Artist ID <https://musicbrainz.org/doc/"
 "MusicBrainz_Identifier>`_"
@@ -1401,7 +1369,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Album Artist Id``"
 msgid "``MusicBrainz/Album Artist Id``"
 msgstr "``MusicBrainz/Album Artist Id``"
 
-#: ../../appendices/tag_mapping.rst:749
+#: ../../appendices/tag_mapping.rst:747
 msgid "MusicBrainz Release Group ID"
 msgstr "Identifiant du groupe de versions MusicBrainz"
 
@@ -1425,7 +1393,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Release Group Id``"
 msgid "``MusicBrainz/Release Group Id``"
 msgstr "``MusicBrainz/Release Group Id``"
 
-#: ../../appendices/tag_mapping.rst:764
+#: ../../appendices/tag_mapping.rst:762
 msgid ""
 "`MusicBrainz Release ID <https://musicbrainz.org/doc/"
 "MusicBrainz_Identifier>`_"
@@ -1453,7 +1421,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Album Id``"
 msgid "``MusicBrainz/Album Id``"
 msgstr "``MusicBrainz/Album Id``"
 
-#: ../../appendices/tag_mapping.rst:779
+#: ../../appendices/tag_mapping.rst:777
 msgid ""
 "`MusicBrainz Track ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_"
 msgstr ""
@@ -1480,7 +1448,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Release Track Id``"
 msgid "``MusicBrainz/Release Track Id``"
 msgstr "``MusicBrainz/Release Track Id``"
 
-#: ../../appendices/tag_mapping.rst:794
+#: ../../appendices/tag_mapping.rst:792
 msgid "`MusicBrainz TRM ID <https://musicbrainz.org/doc/TRM>`_"
 msgstr "`MusicBrainz TRM ID <https://musicbrainz.org/doc/TRM>`_"
 
@@ -1504,7 +1472,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz TRM Id``"
 msgid "``MusicBrainz/TRM Id``"
 msgstr "``MusicBrainz/TRM Id``"
 
-#: ../../appendices/tag_mapping.rst:809
+#: ../../appendices/tag_mapping.rst:807
 msgid "MusicBrainz Work ID"
 msgstr "MusicBrainz Work ID"
 
@@ -1528,7 +1496,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Work Id``"
 msgid "``MusicBrainz/Work Id``"
 msgstr "``MusicBrainz/Work Id``"
 
-#: ../../appendices/tag_mapping.rst:824
+#: ../../appendices/tag_mapping.rst:822
 msgid "MusicIP Fingerprint"
 msgstr "Empreinte digitale MusicIP"
 
@@ -1548,7 +1516,7 @@ msgstr "``FINGERPRINT=MusicMagic Fingerprint {empreinte digitale}``"
 msgid "``----:com.apple.iTunes:fingerprint``"
 msgstr "``----:com.apple.iTunes:fingerprint``"
 
-#: ../../appendices/tag_mapping.rst:839
+#: ../../appendices/tag_mapping.rst:837
 msgid "`MusicIP PUID <https://musicbrainz.org/doc/PUID>`_"
 msgstr "`MusicIP PUID <https://musicbrainz.org/doc/PUID>`_"
 
@@ -1572,7 +1540,7 @@ msgstr "``----:com.apple.iTunes:MusicIP PUID``"
 msgid "``MusicIP/PUID``"
 msgstr "``MusicIP/PUID``"
 
-#: ../../appendices/tag_mapping.rst:854
+#: ../../appendices/tag_mapping.rst:852
 msgid "Original Album"
 msgstr "Album original"
 
@@ -1588,7 +1556,7 @@ msgstr "``TOAL``"
 msgid "``WM/OriginalAlbumTitle`` (Picard>=2.1)"
 msgstr "``WM/OriginalAlbumTitle`` (Picard>=2.1)"
 
-#: ../../appendices/tag_mapping.rst:869
+#: ../../appendices/tag_mapping.rst:867
 msgid "Original Artist"
 msgstr "Artiste original"
 
@@ -1608,7 +1576,7 @@ msgstr "``Original Artist`` (Picard>=2.1)"
 msgid "``WM/OriginalArtist`` (Picard>=2.1)"
 msgstr "``WM/OriginalArtist`` (Picard>=2.1)"
 
-#: ../../appendices/tag_mapping.rst:884
+#: ../../appendices/tag_mapping.rst:882
 msgid "Original Filename"
 msgstr "Nom de fichier d'origine"
 
@@ -1628,7 +1596,7 @@ msgstr "``ORIGINALFILENAME``"
 msgid "``WM/OriginalFilename``"
 msgstr "``WM/OriginalFilename``"
 
-#: ../../appendices/tag_mapping.rst:899
+#: ../../appendices/tag_mapping.rst:897
 msgid "Original Release Date :sup:`[1]`"
 msgstr "Date de sortie d'origine :sup:`[1]`"
 
@@ -1652,7 +1620,7 @@ msgstr ""
 "``WM/OriginalReleaseTime`` (Picard>=1.3.1) ``WM/OriginalReleaseYear`` "
 "(Picard<=1.3.0)"
 
-#: ../../appendices/tag_mapping.rst:914
+#: ../../appendices/tag_mapping.rst:912
 msgid "Original Release Year :sup:`[1]`"
 msgstr "Année de sortie d'origine :sup:`[1]`"
 
@@ -1668,7 +1636,7 @@ msgstr "``ORIGINALYEAR``"
 msgid "``WM/OriginalReleaseYear`` (Picard>=1.3.1)"
 msgstr "``WM/OriginalReleaseYear`` (Picard>=1.3.1)"
 
-#: ../../appendices/tag_mapping.rst:929
+#: ../../appendices/tag_mapping.rst:927
 msgid "Performer"
 msgstr "L'exécutant"
 
@@ -1688,7 +1656,7 @@ msgstr "``PERFORMER={artiste} (instrument)``"
 msgid "``Performer={artist} (instrument)``"
 msgstr "``Performer={artiste} (instrument)``"
 
-#: ../../appendices/tag_mapping.rst:944
+#: ../../appendices/tag_mapping.rst:942
 msgid ""
 "Please refer to `Relationship Types / Artist-Release / Performer <https://"
 "musicbrainz.org/relationship/888a2320-52e4-4fe8-a8a0-7a4c8dfde167>`_ , "
@@ -1717,7 +1685,7 @@ msgstr ""
 "relationship/59054b12-01ac-43ee-a618-285fd397e461>`_ pour plus "
 "d'informations."
 
-#: ../../appendices/tag_mapping.rst:955
+#: ../../appendices/tag_mapping.rst:953
 msgid "Podcast :sup:`[4]`"
 msgstr "Podcast :sup:`[4]`"
 
@@ -1729,7 +1697,7 @@ msgstr "``podcast``"
 msgid "``pcst``"
 msgstr "``pcst``"
 
-#: ../../appendices/tag_mapping.rst:970
+#: ../../appendices/tag_mapping.rst:968
 msgid "Podcast URL :sup:`[4]`"
 msgstr "Podcast URL :sup:`[4]`"
 
@@ -1741,7 +1709,7 @@ msgstr "``podcasturl``"
 msgid "``purl``"
 msgstr "``purl``"
 
-#: ../../appendices/tag_mapping.rst:985
+#: ../../appendices/tag_mapping.rst:983
 msgid ""
 "`Producer <https://musicbrainz.org/relationship/5c0ceac3-feb4-41f0-868d-"
 "dc06f6e27fc0>`_"
@@ -1777,7 +1745,7 @@ msgstr "``WM/Producer``"
 msgid "``IPRO``"
 msgstr "``IPRO``"
 
-#: ../../appendices/tag_mapping.rst:1000
+#: ../../appendices/tag_mapping.rst:998
 msgid "`Rating <https://musicbrainz.org/doc/Rating_System>`_"
 msgstr "`Évaluation <https://musicbrainz.org/doc/Rating_System>`_"
 
@@ -1797,7 +1765,7 @@ msgstr "``RATING:user@courriel``"
 msgid "``WM/SharedUserRating``"
 msgstr "``WM/SharedUserRating``"
 
-#: ../../appendices/tag_mapping.rst:1015
+#: ../../appendices/tag_mapping.rst:1013
 msgid "`Record Label <https://musicbrainz.org/doc/Label_Name>`_"
 msgstr "`Étiquette d'enregistrement <https://musicbrainz.org/doc/Label_Name>`_"
 
@@ -1825,7 +1793,7 @@ msgstr "``----:com.apple.iTunes:LABEL``"
 msgid "``WM/Publisher``"
 msgstr "``WM/Publisher``"
 
-#: ../../appendices/tag_mapping.rst:1030
+#: ../../appendices/tag_mapping.rst:1028
 msgid "`Release Country <https://musicbrainz.org/doc/Release_Country>`_"
 msgstr "`Pays de sortie <https://musicbrainz.org/doc/Release_Country>`_"
 
@@ -1853,27 +1821,39 @@ msgstr "``MusicBrainz/Album Release Country``"
 msgid "``ICNT``"
 msgstr "``ICNT``"
 
-#: ../../appendices/tag_mapping.rst:1045
-msgid "Release Date :sup:`[10]`"
-msgstr "Date de publication :sup:`[10]`"
+#: ../../appendices/tag_mapping.rst:1043
+msgid "`Release Date <https://musicbrainz.org/doc/Release_Date>`_"
+msgstr "`Date de sortie <https://musicbrainz.org/doc/Release_Date>`_"
 
 #: ../../appendices/tag_mapping.rst:1
-msgid "``releasedate`` (since Picard 2.9, not filled by default)"
-msgstr "``releasedate`` (depuis Picard 2.9, non renseigné par défaut)"
+msgid "``date``"
+msgstr "``date``"
 
 #: ../../appendices/tag_mapping.rst:1
-msgid "``TDRL`` (ID3v2.4) ``TXXX:RELEASEDATE`` (ID3v2.3)"
-msgstr "``TDRL`` (ID3v2.4) ``TXXX:RELEASEDATE`` (ID3v2.3)"
+msgid "``TDRC`` (ID3v2.4) ``TYER`` + ``TDAT`` (ID3v2.3)"
+msgstr "``TDRC`` (ID3v2.4) ``TYER`` + ``TDAT`` (ID3v2.3)"
 
 #: ../../appendices/tag_mapping.rst:1
-msgid "``RELEASEDATE``"
-msgstr "``RELEASEDATE``"
+msgid "``DATE``"
+msgstr "``DATE``"
 
 #: ../../appendices/tag_mapping.rst:1
-msgid "``----:com.apple.iTunes:RELEASEDATE``"
-msgstr "``----:com.apple.iTunes:RELEASEDATE``"
+msgid "``Year``"
+msgstr "``Year``"
 
-#: ../../appendices/tag_mapping.rst:1060
+#: ../../appendices/tag_mapping.rst:1
+msgid "``©day``"
+msgstr "``©day``"
+
+#: ../../appendices/tag_mapping.rst:1
+msgid "``WM/Year``"
+msgstr "``WM/Year``"
+
+#: ../../appendices/tag_mapping.rst:1
+msgid "``ICRD``"
+msgstr "``ICRD``"
+
+#: ../../appendices/tag_mapping.rst:1058
 msgid "`Release Status <https://musicbrainz.org/doc/Release_Status>`_"
 msgstr "`État de sortie <https://musicbrainz.org/doc/Release_Status>`_"
 
@@ -1901,7 +1881,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Album Status``"
 msgid "``MusicBrainz/Album Status``"
 msgstr "``MusicBrainz/Album Status``"
 
-#: ../../appendices/tag_mapping.rst:1075
+#: ../../appendices/tag_mapping.rst:1073
 msgid "`Release Type <https://musicbrainz.org/doc/Release_Type>`_"
 msgstr "`Type de version <https://musicbrainz.org/doc/Release_Type>`_"
 
@@ -1929,7 +1909,7 @@ msgstr "``----:com.apple.iTunes:MusicBrainz Album Type``"
 msgid "``MusicBrainz/Album Type``"
 msgstr "``MusicBrainz/Album Type``"
 
-#: ../../appendices/tag_mapping.rst:1090
+#: ../../appendices/tag_mapping.rst:1088
 msgid ""
 "`Remixer <https://musicbrainz.org/"
 "relationship/7950be4d-13a3-48e7-906b-5af562e39544>`_"
@@ -1961,7 +1941,7 @@ msgstr "``----:com.apple.iTunes:REMIXER``"
 msgid "``WM/ModifiedBy``"
 msgstr "``WM/ModifiedBy``"
 
-#: ../../appendices/tag_mapping.rst:1105
+#: ../../appendices/tag_mapping.rst:1103
 msgid "ReplayGain Album Gain"
 msgstr "ReplayGain Gain d'album"
 
@@ -1981,7 +1961,7 @@ msgstr "``REPLAYGAIN_ALBUM_GAIN``"
 msgid "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_GAIN``"
 msgstr "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_GAIN``"
 
-#: ../../appendices/tag_mapping.rst:1120
+#: ../../appendices/tag_mapping.rst:1118
 msgid "ReplayGain Album Peak"
 msgstr "ReplayGain Album Peak"
 
@@ -2001,7 +1981,7 @@ msgstr "``REPLAYGAIN_ALBUM_PEAK``"
 msgid "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_PEAK``"
 msgstr "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_PEAK``"
 
-#: ../../appendices/tag_mapping.rst:1135
+#: ../../appendices/tag_mapping.rst:1133
 msgid "ReplayGain Album Range"
 msgstr "ReplayGain Album Range"
 
@@ -2021,7 +2001,7 @@ msgstr "``REPLAYGAIN_ALBUM_RANGE``"
 msgid "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_RANGE``"
 msgstr "``----:com.apple.iTunes:REPLAYGAIN_ALBUM_RANGE``"
 
-#: ../../appendices/tag_mapping.rst:1150
+#: ../../appendices/tag_mapping.rst:1148
 msgid "ReplayGain Reference Loudness"
 msgstr "ReplayGain Reference Loudness"
 
@@ -2041,7 +2021,7 @@ msgstr "``REPLAYGAIN_REFERENCE_LOUDNESS``"
 msgid "``----:com.apple.iTunes:REPLAYGAIN_REFERENCE_LOUDNESS``"
 msgstr "``----:com.apple.iTunes:REPLAYGAIN_REFERENCE_LOUDNESS``"
 
-#: ../../appendices/tag_mapping.rst:1165
+#: ../../appendices/tag_mapping.rst:1163
 msgid "ReplayGain Track Gain"
 msgstr "ReplayGain Track Gain"
 
@@ -2061,7 +2041,7 @@ msgstr "``REPLAYGAIN_TRACK_GAIN``"
 msgid "``----:com.apple.iTunes:REPLAYGAIN_TRACK_GAIN``"
 msgstr "``----:com.apple.iTunes:REPLAYGAIN_TRACK_GAIN``"
 
-#: ../../appendices/tag_mapping.rst:1180
+#: ../../appendices/tag_mapping.rst:1178
 msgid "ReplayGain Track Peak"
 msgstr "ReplayGain Track Peak"
 
@@ -2081,7 +2061,7 @@ msgstr "``REPLAYGAIN_TRACK_PEAK``"
 msgid "``----:com.apple.iTunes:REPLAYGAIN_TRACK_PEAK``"
 msgstr "``----:com.apple.iTunes:REPLAYGAIN_TRACK_PEAK``"
 
-#: ../../appendices/tag_mapping.rst:1195
+#: ../../appendices/tag_mapping.rst:1193
 msgid "ReplayGain Track Range"
 msgstr "ReplayGain Track Range"
 
@@ -2101,7 +2081,7 @@ msgstr "``REPLAYGAIN_TRACK_RANGE``"
 msgid "``----:com.apple.iTunes:REPLAYGAIN_TRACK_RANGE``"
 msgstr "``----:com.apple.iTunes:REPLAYGAIN_TRACK_RANGE``"
 
-#: ../../appendices/tag_mapping.rst:1210
+#: ../../appendices/tag_mapping.rst:1208
 msgid "Script"
 msgstr "Script"
 
@@ -2129,7 +2109,7 @@ msgstr "``----:com.apple.iTunes:SCRIPT``"
 msgid "``WM/Script``"
 msgstr "``WM/Script``"
 
-#: ../../appendices/tag_mapping.rst:1225
+#: ../../appendices/tag_mapping.rst:1223
 msgid "Show Name :sup:`[4]`"
 msgstr "Afficher le nom :sup:`[4]`"
 
@@ -2141,7 +2121,7 @@ msgstr "``show``"
 msgid "``tvsh``"
 msgstr "``tvsh``"
 
-#: ../../appendices/tag_mapping.rst:1240
+#: ../../appendices/tag_mapping.rst:1238
 msgid "Show Name Sort Order :sup:`[4]`"
 msgstr "Afficher l'ordre de tri des noms :sup:`[4]`"
 
@@ -2153,7 +2133,7 @@ msgstr "``showsort``"
 msgid "``sosn``"
 msgstr "``sosn``"
 
-#: ../../appendices/tag_mapping.rst:1255
+#: ../../appendices/tag_mapping.rst:1253
 msgid "Show Work & Movement :sup:`[4]`"
 msgstr "Afficher le travail et le mouvement :sup:`[4]`"
 
@@ -2173,7 +2153,7 @@ msgstr "``SHOWMOVEMENT``"
 msgid "``shwm``"
 msgstr "``shwm``"
 
-#: ../../appendices/tag_mapping.rst:1270
+#: ../../appendices/tag_mapping.rst:1268
 msgid "Subtitle :sup:`[4]`"
 msgstr "Sous-titre :sup:`[4]`"
 
@@ -2201,7 +2181,7 @@ msgstr "``----:com.apple.iTunes:SUBTITLE``"
 msgid "``WM/SubTitle``"
 msgstr "``WM/SubTitle``"
 
-#: ../../appendices/tag_mapping.rst:1285
+#: ../../appendices/tag_mapping.rst:1283
 msgid "Total Discs"
 msgstr "Nombre total de disques"
 
@@ -2210,14 +2190,14 @@ msgid "``totaldiscs``"
 msgstr "``totaldiscs``"
 
 #: ../../appendices/tag_mapping.rst:1
-msgid "``DISCTOTAL`` and ``TOTALDISCS``"
+msgid "``DISCTOTAL and TOTALDISCS``"
 msgstr "``DISCTOTAL`` et ``TOTALDISCS``"
 
 #: ../../appendices/tag_mapping.rst:1
 msgid "``WM/PartOfSet`` (Picard>=1.3.1)"
 msgstr "``WM/PartOfSet`` (Picard>=1.3.1)"
 
-#: ../../appendices/tag_mapping.rst:1300
+#: ../../appendices/tag_mapping.rst:1298
 msgid "Total Tracks"
 msgstr "Total des pistes"
 
@@ -2241,7 +2221,7 @@ msgstr "``Track``"
 msgid "``trkn``"
 msgstr "``trkn``"
 
-#: ../../appendices/tag_mapping.rst:1315
+#: ../../appendices/tag_mapping.rst:1313
 msgid "Track Number"
 msgstr "Numéro de piste"
 
@@ -2261,7 +2241,7 @@ msgstr "``WM/TrackNumber``"
 msgid "``ITRK``"
 msgstr "``ITRK``"
 
-#: ../../appendices/tag_mapping.rst:1330
+#: ../../appendices/tag_mapping.rst:1328
 msgid "`Track Title <https://musicbrainz.org/doc/Track_Title>`_"
 msgstr "`Titre de la piste <https://musicbrainz.org/doc/Track_Title>`_"
 
@@ -2289,7 +2269,7 @@ msgstr "``©nam``"
 msgid "``INAM``"
 msgstr "``INAM``"
 
-#: ../../appendices/tag_mapping.rst:1345
+#: ../../appendices/tag_mapping.rst:1343
 msgid "Track Title Sort Order :sup:`[4]`"
 msgstr "Ordre de tri des titres de piste :sup:`[4]`"
 
@@ -2313,7 +2293,7 @@ msgstr "``sonm``"
 msgid "``WM/TitleSortOrder``"
 msgstr "``WM/TitleSortOrder``"
 
-#: ../../appendices/tag_mapping.rst:1360
+#: ../../appendices/tag_mapping.rst:1358
 msgid "Website (official artist website)"
 msgstr "Site Web (site officiel de l'artiste)"
 
@@ -2337,7 +2317,7 @@ msgstr "``Weblink``"
 msgid "``WM/AuthorURL`` (Picard>=1.3.1)"
 msgstr "``WM/AuthorURL`` (Picard>=1.3.1)"
 
-#: ../../appendices/tag_mapping.rst:1375
+#: ../../appendices/tag_mapping.rst:1373
 msgid "Work Title"
 msgstr "Work Title"
 
@@ -2361,7 +2341,7 @@ msgstr "``©wrk`` (Picard>=2.1)"
 msgid "``WM/Work``"
 msgstr "``WM/Work``"
 
-#: ../../appendices/tag_mapping.rst:1390
+#: ../../appendices/tag_mapping.rst:1388
 msgid ""
 "`Writer <https://musicbrainz.org/relationship/a255bca1-"
 "b157-4518-9108-7b147dc3fc68>`_ :sup:`[2]`"
@@ -2389,25 +2369,25 @@ msgstr "``Writer``"
 msgid "``IWRI``"
 msgstr "``IWRI``"
 
-#: ../../appendices/tag_mapping.rst:1405
+#: ../../appendices/tag_mapping.rst:1403
 msgid "Notes:"
 msgstr "Remarques:"
 
-#: ../../appendices/tag_mapping.rst:1406
+#: ../../appendices/tag_mapping.rst:1404
 msgid "Taken from the earliest release in the release group."
 msgstr "Tiré de la version la plus ancienne du groupe de versions."
 
-#: ../../appendices/tag_mapping.rst:1407
+#: ../../appendices/tag_mapping.rst:1405
 msgid "Used when uncertain whether composer or lyricist."
 msgstr ""
 "Utilisé en cas de doute quant à savoir s'il s'agit d'un compositeur ou d'un "
 "parolier."
 
-#: ../../appendices/tag_mapping.rst:1408
+#: ../../appendices/tag_mapping.rst:1406
 msgid "This is populated by LastFMPlus plugin and not by stock Picard."
 msgstr "Ceci est fourni par le plugin LastFMPlus et non par Picard."
 
-#: ../../appendices/tag_mapping.rst:1409
+#: ../../appendices/tag_mapping.rst:1407
 msgid ""
 "This is not able to be populated by stock Picard. It may be used and "
 "populated by certain plugins."
@@ -2415,7 +2395,7 @@ msgstr ""
 "Ceci ne peut pas être fourni par Picard. Il peut être utilisé et rempli par "
 "certains plugins."
 
-#: ../../appendices/tag_mapping.rst:1410
+#: ../../appendices/tag_mapping.rst:1408
 msgid ""
 "For Picard>=1.3 this indicates a Various Artists album; for Picard<=1.2 this "
 "indicates albums with tracks by different artists which is incorrect (e.g.: "
@@ -2429,7 +2409,7 @@ msgstr ""
 "l'exploit apparaîtrait comme une compilation). Dans aucun des cas, cela "
 "n'indique un sous-type MusicBrainz Release Group de compilation."
 
-#: ../../appendices/tag_mapping.rst:1411
+#: ../../appendices/tag_mapping.rst:1409
 msgid ""
 "`Release-level license <https://musicbrainz.org/"
 "relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_ relationship type."
@@ -2437,7 +2417,7 @@ msgstr ""
 "`Type de relation de licence au niveau de la version <https://musicbrainz."
 "org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_."
 
-#: ../../appendices/tag_mapping.rst:1412
+#: ../../appendices/tag_mapping.rst:1410
 msgid ""
 "`Recording-level license <https://musicbrainz.org/relationship/f25e301d-"
 "b87b-4561-86a0-5d2df6d26c0a>`_ relationship type."
@@ -2445,28 +2425,61 @@ msgstr ""
 "`Type de relation de licence au niveau de l'enregistrement <https://"
 "musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_."
 
-#: ../../appendices/tag_mapping.rst:1413
+#: ../../appendices/tag_mapping.rst:1411
 msgid "With \"Save iTunes compatible grouping and work\" (since Picard>=2.1.0)"
 msgstr ""
 "Avec \"Enregistrer le regroupement compatible iTunes et travailler\" (depuis "
 "Picard >= 2.1.0)"
 
-#: ../../appendices/tag_mapping.rst:1414
+#: ../../appendices/tag_mapping.rst:1412
 msgid "From iTunes Metadata Format Specification"
 msgstr "À partir de la spécification du format des métadonnées iTunes"
 
-#: ../../appendices/tag_mapping.rst:1415
-msgid ""
-"For compatibility reasons the ``date`` tag gets filled with the release date "
-"from MusicBrainz. This is how most software interprets this tag. Since "
-"Picard 2.9 the separate ``releasedate`` exists for use by scripts and "
-"plugins, but is not filled by default."
-msgstr ""
-"Pour des raisons de compatibilité, la balise ``date`` est remplie avec la "
-"date de sortie de MusicBrainz. C'est ainsi que la plupart des logiciels "
-"interprètent cette balise. Depuis Picard 2.9, la balise séparée "
-"``releasedate`` existe pour être utilisée par les scripts et les plugins, "
-"mais elle n'est pas remplie par défaut."
+#~ msgid ""
+#~ "The following is a mapping between Picard internal tag names and those "
+#~ "used by various tagging formats. The mapping is also available as a "
+#~ "`table <https://picard-docs.musicbrainz.org/downloads/"
+#~ "MusicBrainz_Picard_Tag_Map.html>`_ and a `spreadsheet <https://picard-"
+#~ "docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map.xlsx>`_."
+#~ msgstr ""
+#~ "Ce qui suit est un mappage entre les noms de balises internes de Picard "
+#~ "et ceux utilisés par divers formats de balisage. Le mappage est également "
+#~ "disponible sous forme de `table <https://picard-docs.musicbrainz.org/"
+#~ "downloads/MusicBrainz_Picard_Tag_Map.html>`_ et de `tableur <https://"
+#~ "picard-docs.musicbrainz.org/downloads/MusicBrainz_Picard_Tag_Map.xlsx>`_."
+
+#~ msgid "``TXXX:ARTISTS``"
+#~ msgstr "``TXXX:ARTISTS``"
+
+#~ msgid "`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
+#~ msgstr "`Date <https://musicbrainz.org/doc/Release_Date>`_ :sup:`[10]`"
+
+#~ msgid "Release Date :sup:`[10]`"
+#~ msgstr "Date de publication :sup:`[10]`"
+
+#~ msgid "``releasedate`` (since Picard 2.9, not filled by default)"
+#~ msgstr "``releasedate`` (depuis Picard 2.9, non renseigné par défaut)"
+
+#~ msgid "``TDRL`` (ID3v2.4) ``TXXX:RELEASEDATE`` (ID3v2.3)"
+#~ msgstr "``TDRL`` (ID3v2.4) ``TXXX:RELEASEDATE`` (ID3v2.3)"
+
+#~ msgid "``RELEASEDATE``"
+#~ msgstr "``RELEASEDATE``"
+
+#~ msgid "``----:com.apple.iTunes:RELEASEDATE``"
+#~ msgstr "``----:com.apple.iTunes:RELEASEDATE``"
+
+#~ msgid ""
+#~ "For compatibility reasons the ``date`` tag gets filled with the release "
+#~ "date from MusicBrainz. This is how most software interprets this tag. "
+#~ "Since Picard 2.9 the separate ``releasedate`` exists for use by scripts "
+#~ "and plugins, but is not filled by default."
+#~ msgstr ""
+#~ "Pour des raisons de compatibilité, la balise ``date`` est remplie avec la "
+#~ "date de sortie de MusicBrainz. C'est ainsi que la plupart des logiciels "
+#~ "interprètent cette balise. Depuis Picard 2.9, la balise séparée "
+#~ "``releasedate`` existe pour être utilisée par les scripts et les plugins, "
+#~ "mais elle n'est pas remplie par défaut."
 
 #~ msgid "Synced Lyrics"
 #~ msgstr "Paroles synchronisées"
@@ -2485,13 +2498,6 @@ msgstr ""
 
 #~ msgid "Appendix B: Tag Mapping"
 #~ msgstr "Annexe 2: Mappage des balises"
-
-#~ msgid ""
-#~ "The following is a mapping between Picard internal tag names and those "
-#~ "used by various tagging formats."
-#~ msgstr ""
-#~ "Ce qui suit est un mappage entre les noms de balises internes de Picard "
-#~ "et ceux utilisés par divers formats de balisage."
 
 #~ msgid ""
 #~ "See :ref:`Note 4 <ref_tag_mapping_notes>` at the end of this section."

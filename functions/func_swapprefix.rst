@@ -11,9 +11,7 @@ $swapprefix
 
 **Description:**
 
-Moves the specified ``prefixes`` from the beginning to the end of ``text``. Any number of ``prefixes``
-can be specified, separated by commas. If no prefix is specified "A" and "The" are used by default.
-Note that the matching is case-sensitive.
+Moves the specified ``prefixes`` from the beginning to the end of ``text``. Any number of ``prefixes`` can be specified, separated by commas. If no prefix is specified "A" and "The" are used by default. Note that the matching is case-sensitive.
 
 
 **Example:**
@@ -22,7 +20,7 @@ If the ``albumartist`` is "Le Butcherettes", the following statements will retur
 
 .. code-block:: taggerscript
 
-    $swapprefix(%albumartist%)               ==>  "Le Butcherettes"
-    $swapprefix(%albumartist%,le)            ==>  "Le Butcherettes"
-    $swapprefix(%albumartist%,L)             ==>  "Le Butcherettes"
-    $swapprefix(%albumartist%,A,An,The,Le)   ==>  "Butcherettes, Le"
+   $swapprefix(%albumartist%)               ==>  "Le Butcherettes"
+   $swapprefix(%albumartist%,le)            ==>  "Le Butcherettes"
+   $swapprefix(%albumartist%,L)             ==>  "Le Butcherettes"
+   $swapprefix(%albumartist%,A,An,The,Le)   ==>  "Butcherettes, Le"

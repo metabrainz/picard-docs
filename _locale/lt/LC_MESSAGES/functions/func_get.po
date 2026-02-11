@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2025-04-04 21:55+0000\n"
 "Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -38,17 +38,26 @@ msgid "**Description:**"
 msgstr "**Aprašas:**"
 
 #: ../../functions/func_get.rst:13
-msgid "Returns the variable ``name`` (equivalent to ``%name%``) or an empty string if ``name`` has not been set.  If ``name`` is another variable (e.g. ``%indirect%``) the value of the variable will be used as ``name``.  This allows the retrieval of dynamically named variables."
+msgid ""
+"Returns the variable ``name`` (equivalent to ``%name%``) or an empty string "
+"if ``name`` has not been set. If ``name`` is another variable (e.g. "
+"``%indirect%``) the value of the variable will be used as ``name``. This "
+"allows the retrieval of dynamically named variables."
 msgstr ""
 
-#: ../../functions/func_get.rst:20
-msgid "Usually you can access the values of a tag by the proper variable name. For example, if your tag is called \"rerecorded\" you can use ``%rerecorded%``. But the hyphen is not a valid character for a script variable, so ``%re-recorded%`` gives a syntax error. In cases like this you need to use ``$get(re-recorded)``."
+#: ../../functions/func_get.rst:17
+msgid ""
+"Usually you can access the values of a tag by the proper variable name. For "
+"example, if your tag is called \"rerecorded\" you can use ``%rerecorded%``. "
+"But the hyphen is not a valid character for a script variable, so ``%re-"
+"recorded%`` gives a syntax error. In cases like this you need to use "
+"``$get(re-recorded)``."
 msgstr ""
 
-#: ../../functions/func_get.rst:25
+#: ../../functions/func_get.rst:19
 msgid "**Example:**"
 msgstr "**Pavyzdys:**"
 
-#: ../../functions/func_get.rst:27
+#: ../../functions/func_get.rst:21
 msgid "The following statements will return the values indicated:"
 msgstr "Toliau pateikti teiginiai grąžins nurodytas reikšmes:"

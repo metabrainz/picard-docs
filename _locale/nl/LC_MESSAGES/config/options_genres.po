@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -51,50 +51,50 @@ msgid ""
 "feature."
 msgstr ""
 
-#: ../../config/options_genres.rst:22
+#: ../../config/options_genres.rst:21
 msgid "**Use folksonomy tags as genres**"
 msgstr ""
 
-#: ../../config/options_genres.rst:24
+#: ../../config/options_genres.rst:23
 msgid ""
 "Check to use all folksonomy tags to set the genre. Otherwise only the tags "
 "considered by MusicBrainz to be proper genres will be used."
 msgstr ""
 
-#: ../../config/options_genres.rst:27
+#: ../../config/options_genres.rst:25
 msgid "**Minimal genre usage**"
 msgstr ""
 
-#: ../../config/options_genres.rst:29
+#: ../../config/options_genres.rst:27
 msgid ""
 "Choose how popular the genre must be before it is written by Picard. "
 "Default: 90%. Lowering the value here will lead to more, but possibly less "
 "relevant, genres in your files."
 msgstr ""
 
-#: ../../config/options_genres.rst:32
+#: ../../config/options_genres.rst:29
 msgid "**Maximum number of genres**"
 msgstr ""
 
-#: ../../config/options_genres.rst:34
+#: ../../config/options_genres.rst:31
 msgid ""
 "Choose how many genres to use. Default: 5. If you only want a single genre, "
 "set this to 1."
 msgstr ""
 
-#: ../../config/options_genres.rst:36
+#: ../../config/options_genres.rst:33
 msgid "**Join multiple genres with**"
 msgstr ""
 
-#: ../../config/options_genres.rst:38
+#: ../../config/options_genres.rst:35
 msgid "Select which character should be used to separate multiple genres."
 msgstr ""
 
-#: ../../config/options_genres.rst:40
+#: ../../config/options_genres.rst:37
 msgid "**Genres or folksonomy tags to include or exclude**"
 msgstr ""
 
-#: ../../config/options_genres.rst:42
+#: ../../config/options_genres.rst:39
 msgid ""
 "One expression per line, case-insensitive. You can use the \"Playground\" "
 "text field to enter some genres and test the rules you have setup. Genres "
@@ -102,46 +102,46 @@ msgid ""
 "green."
 msgstr ""
 
-#: ../../config/options_genres.rst:45
+#: ../../config/options_genres.rst:41
 msgid ""
 "**Comments**: Lines not starting with '-' or '+' are ignored. (e.g.: "
 "``#comment``, ``!comment`` or ``comment``)"
 msgstr ""
 
-#: ../../config/options_genres.rst:47
+#: ../../config/options_genres.rst:43
 msgid ""
 "**Strict filtering**: Exclude exact word by prefixing it with '-' (e.g.: ``-"
-"word``).  Include exact word, even if another rule would exclude it, by "
+"word``). Include exact word, even if another rule would exclude it, by "
 "prefixing it with '+' (e.g.: ``+word``)."
 msgstr ""
 
-#: ../../config/options_genres.rst:50
+#: ../../config/options_genres.rst:45
 msgid ""
 "**Wildcard filtering**: Exclude all genres ending with \"word\" (e.g.: ``-"
-"*word``).  Include all genres starting with \"word\" (e.g.: ``+word*``).  "
+"*word``). Include all genres starting with \"word\" (e.g.: ``+word*``). "
 "Exclude all genres starting with 'w' and ending with \"rd\" (e.g.: ``-"
 "w*rd``)."
 msgstr ""
 
-#: ../../config/options_genres.rst:53
+#: ../../config/options_genres.rst:47
 msgid ""
 "**Regular expressions filtering (Python \"re\" syntax)**: Exclude genres "
 "starting with 'w' followed by any character, then 'r' followed by at least "
 "one 'd' (e.g.: ``-/^w.rd+/``)."
 msgstr ""
 
-#: ../../config/options_genres.rst:56
+#: ../../config/options_genres.rst:49
 msgid "**Playground for genres or folksonomy tags filters:**"
 msgstr ""
 
-#: ../../config/options_genres.rst:58
+#: ../../config/options_genres.rst:51
 msgid ""
 "This area allows you to enter genre tags, one per line, to test your "
-"filters.  If a tag is marked in red, it will be filtered out.  A tag marked "
+"filters. If a tag is marked in red, it will be filtered out. A tag marked "
 "green will be allowed."
 msgstr ""
 
-#: ../../config/options_genres.rst:63
+#: ../../config/options_genres.rst:55
 msgid ""
 "This list of test tags will be cleared when you exit the configuration "
 "section."

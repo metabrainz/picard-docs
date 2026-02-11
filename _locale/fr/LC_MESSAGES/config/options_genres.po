@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2020-11-19 16:05-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -64,11 +64,11 @@ msgstr ""
 "personnellement soumis à MusicBrainz. Vous devrez définir votre nom "
 "d'utilisateur et votre mot de passe pour utiliser cette fonctionnalité."
 
-#: ../../config/options_genres.rst:22
+#: ../../config/options_genres.rst:21
 msgid "**Use folksonomy tags as genres**"
 msgstr "**Utilisez des balises folksonomy comme genres**"
 
-#: ../../config/options_genres.rst:24
+#: ../../config/options_genres.rst:23
 msgid ""
 "Check to use all folksonomy tags to set the genre. Otherwise only the tags "
 "considered by MusicBrainz to be proper genres will be used."
@@ -77,11 +77,11 @@ msgstr ""
 "Sinon, seules les balises considérées par MusicBrainz comme des genres "
 "appropriés seront utilisées."
 
-#: ../../config/options_genres.rst:27
+#: ../../config/options_genres.rst:25
 msgid "**Minimal genre usage**"
 msgstr "**Utilisation minimale du genre**"
 
-#: ../../config/options_genres.rst:29
+#: ../../config/options_genres.rst:27
 msgid ""
 "Choose how popular the genre must be before it is written by Picard. "
 "Default: 90%. Lowering the value here will lead to more, but possibly less "
@@ -91,11 +91,11 @@ msgstr ""
 "défaut: 90%. Réduire la valeur ici conduira à plus de genres, mais peut-être "
 "moins pertinents, dans vos fichiers."
 
-#: ../../config/options_genres.rst:32
+#: ../../config/options_genres.rst:29
 msgid "**Maximum number of genres**"
 msgstr "**Nombre maximum de genres**"
 
-#: ../../config/options_genres.rst:34
+#: ../../config/options_genres.rst:31
 msgid ""
 "Choose how many genres to use. Default: 5. If you only want a single genre, "
 "set this to 1."
@@ -103,19 +103,19 @@ msgstr ""
 "Choisissez le nombre de genres à utiliser. Par défaut: 5. Si vous ne voulez "
 "qu'un seul genre, réglez-le sur 1."
 
-#: ../../config/options_genres.rst:36
+#: ../../config/options_genres.rst:33
 msgid "**Join multiple genres with**"
 msgstr "**Rejoignez plusieurs genres avec**"
 
-#: ../../config/options_genres.rst:38
+#: ../../config/options_genres.rst:35
 msgid "Select which character should be used to separate multiple genres."
 msgstr "Sélectionnez le caractère à utiliser pour séparer plusieurs genres."
 
-#: ../../config/options_genres.rst:40
+#: ../../config/options_genres.rst:37
 msgid "**Genres or folksonomy tags to include or exclude**"
 msgstr "**Balises de genres ou de folksonomy à inclure ou à exclure**"
 
-#: ../../config/options_genres.rst:42
+#: ../../config/options_genres.rst:39
 msgid ""
 "One expression per line, case-insensitive. You can use the \"Playground\" "
 "text field to enter some genres and test the rules you have setup. Genres "
@@ -127,7 +127,7 @@ msgstr ""
 "les règles que vous avez configurées. Les genres qui seront exclus seront "
 "marqués en rouge, les genres inclus seront marqués en vert."
 
-#: ../../config/options_genres.rst:45
+#: ../../config/options_genres.rst:41
 msgid ""
 "**Comments**: Lines not starting with '-' or '+' are ignored. (e.g.: "
 "``#comment``, ``!comment`` or ``comment``)"
@@ -135,20 +135,20 @@ msgstr ""
 "**Commentaires**: Les lignes ne commençant pas par '-' ou '+' sont ignorées. "
 "(par exemple: ``# commentaire``, ``! comment`` ou ``comment``)"
 
-#: ../../config/options_genres.rst:47
+#: ../../config/options_genres.rst:43
 msgid ""
 "**Strict filtering**: Exclude exact word by prefixing it with '-' (e.g.: ``-"
-"word``).  Include exact word, even if another rule would exclude it, by "
+"word``). Include exact word, even if another rule would exclude it, by "
 "prefixing it with '+' (e.g.: ``+word``)."
 msgstr ""
 "**Filtrage strict**: excluez le mot exact en le préfixant avec '-' (par "
 "exemple: ``-word``). Incluez le mot exact, même si une autre règle "
 "l'exclurait, en le préfixant avec '+' (par exemple: ``+mot``)."
 
-#: ../../config/options_genres.rst:50
+#: ../../config/options_genres.rst:45
 msgid ""
 "**Wildcard filtering**: Exclude all genres ending with \"word\" (e.g.: ``-"
-"*word``).  Include all genres starting with \"word\" (e.g.: ``+word*``).  "
+"*word``). Include all genres starting with \"word\" (e.g.: ``+word*``). "
 "Exclude all genres starting with 'w' and ending with \"rd\" (e.g.: ``-"
 "w*rd``)."
 msgstr ""
@@ -157,7 +157,7 @@ msgstr ""
 "\"mot\" (par exemple: ``+mot*``). Excluez tous les genres commençant par 'm' "
 "et se terminant par \"t\" (par exemple: ``-m*t``)."
 
-#: ../../config/options_genres.rst:53
+#: ../../config/options_genres.rst:47
 msgid ""
 "**Regular expressions filtering (Python \"re\" syntax)**: Exclude genres "
 "starting with 'w' followed by any character, then 'r' followed by at least "
@@ -167,22 +167,22 @@ msgstr ""
 "genres commençant par 'w' suivi de n'importe quel caractère, puis 'r' suivi "
 "d'au moins un 'd' (par exemple: ``-/^w.rd+/``)."
 
-#: ../../config/options_genres.rst:56
+#: ../../config/options_genres.rst:49
 msgid "**Playground for genres or folksonomy tags filters:**"
 msgstr ""
 "**Aire de jeu pour les filtres de balises de genres ou de folksonomy:**"
 
-#: ../../config/options_genres.rst:58
+#: ../../config/options_genres.rst:51
 msgid ""
 "This area allows you to enter genre tags, one per line, to test your "
-"filters.  If a tag is marked in red, it will be filtered out.  A tag marked "
+"filters. If a tag is marked in red, it will be filtered out. A tag marked "
 "green will be allowed."
 msgstr ""
 "Cette zone vous permet de saisir des balises de genre, une par ligne, pour "
 "tester vos filtres. Si une étiquette est marquée en rouge, elle sera "
 "filtrée. Un tag marqué en vert sera autorisé."
 
-#: ../../config/options_genres.rst:63
+#: ../../config/options_genres.rst:55
 msgid ""
 "This list of test tags will be cleared when you exit the configuration "
 "section."

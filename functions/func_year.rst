@@ -13,7 +13,7 @@ $year
 
 Returns the "year" portion of the input ``date``.
 
-The "year", "month" and "day" portions of the date must be entered as numbers, and can be separated by any non-numeric characters.  The default order for the input date is "ymd" (year, month, day).  This can be changed by specifying a ``date order``.
+The "year", "month" and "day" portions of the date must be entered as numbers, and can be separated by any non-numeric characters. The default order for the input date is "ymd" (year, month, day). This can be changed by specifying a ``date order``.
 
 Valid entries for ``date order`` are:
 
@@ -21,7 +21,7 @@ Valid entries for ``date order`` are:
 - **dmy** - day, month, year
 - **mdy** - month, day, year
 
-If the ``date`` is invalid an empty string will be returned.  If an invalid ``date order`` is specified, the default order "ymd" will be used.
+If the ``date`` is invalid an empty string will be returned. If an invalid ``date order`` is specified, the default order "ymd" will be used.
 
 
 **Examples:**

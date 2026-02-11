@@ -16,4 +16,4 @@ Appendices
    .. toctree::
       :hidden:
 
-      /functions/list_by_name
+      ../functions/list_by_name

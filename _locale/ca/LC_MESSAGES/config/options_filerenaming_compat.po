@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
 "PO-Revision-Date: 2025-07-18 14:36+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/configoptions_filerenaming_compat/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_filerenaming_compat/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,13 +20,17 @@ msgstr ""
 "X-Generator: Weblate 5.12.2\n"
 
 #: ../../config/options_filerenaming_compat.rst:4
-msgid ":index:`File Naming Compatibility Options <pair: configuration; file naming compatibility>`"
+msgid ""
+":index:`File Naming Compatibility Options <pair: configuration; file naming "
+"compatibility>`"
 msgstr ""
 ":index:`Opcions de compatibilitat de nom dels fitxers <pair: configuració; "
 "compatibilitat de nom dels fitxers>`"
 
 #: ../../config/options_filerenaming_compat.rst:9
-msgid "These options determine how Picard handles compatibility of files when they are saved with updated metadata."
+msgid ""
+"These options determine how Picard handles compatibility of files when they "
+"are saved with updated metadata."
 msgstr ""
 "Aquestes opcions determinen com Picard gestiona la compatibilitat dels "
 "fitxers quan es desen amb metadades actualitzades."
@@ -36,36 +40,49 @@ msgid "**Replace non-ASCII characters**"
 msgstr "**Substitueix els caràcters no ASCII**"
 
 #: ../../config/options_filerenaming_compat.rst:13
-msgid "Select this option to replace non-ASCII characters with their ASCII equivalent (e.g.: 'á', 'ä' and 'ǎ' with 'a'; 'é', 'ě' and 'ë' with 'e'; 'æ' with \"ae\"). More information regarding ASCII characters can be found on `Wikipedia <https://en.wikipedia.org/wiki/ASCII>`_."
+msgid ""
+"Select this option to replace non-ASCII characters with their ASCII "
+"equivalent (e.g.: 'á', 'ä' and 'ǎ' with 'a'; 'é', 'ě' and 'ë' with 'e'; 'æ' "
+"with \"ae\"). More information regarding ASCII characters can be found on "
+"`Wikipedia <https://en.wikipedia.org/wiki/ASCII>`_."
 msgstr ""
 "Seleccioneu aquesta opció per a substituir els caràcters no ASCII amb "
 "l'equivalent ASCII (per exemple, «á», «ä» i «ǎ» per «a»; «é», «ě» i «ë» per "
 "«e»; «æ» per «ae»). Podeu trobar més informació sobre els caràcters ASCII a "
 "la `Viquipèdia <https://ca.wikipedia.org/wiki/ASCII>`_."
 
-#: ../../config/options_filerenaming_compat.rst:17
+#: ../../config/options_filerenaming_compat.rst:15
 msgid "**Windows compatibility**"
 msgstr "**Compatibilitat amb el Windows**"
 
-#: ../../config/options_filerenaming_compat.rst:19
-msgid "This option tells Picard to replace all Windows-incompatible characters with an underscore. This is enabled by default on Windows systems, with no option to disable."
+#: ../../config/options_filerenaming_compat.rst:17
+msgid ""
+"This option tells Picard to replace all Windows-incompatible characters with "
+"an underscore. This is enabled by default on Windows systems, with no option "
+"to disable."
 msgstr ""
 "Aquesta opció indica a Picard que substitueixi tots els caràcters "
 "incompatibles amb el Windows per una ratlla baixa. Està habilitat per "
 "defecte en els sistemes Windows, sense opció per a inhabilitar-ho."
 
-#: ../../config/options_filerenaming_compat.rst:22
-msgid "As of version 2.9 Picard allows the user to specify what replacement characters to use as replacements for selected characters."
+#: ../../config/options_filerenaming_compat.rst:19
+msgid ""
+"As of version 2.9 Picard allows the user to specify what replacement "
+"characters to use as replacements for selected characters."
 msgstr ""
 "A partir de la versió 2.9 de Picard, es permet a l'usuari especificar quins "
 "caràcters de substitució es faran servir per als caràcters seleccionats."
 
-#: ../../config/options_filerenaming_compat.rst:29
+#: ../../config/options_filerenaming_compat.rst:25
 msgid "**Allow paths longer than 259 characters**"
 msgstr "**Permet els camins de més de 259 caràcters**"
 
-#: ../../config/options_filerenaming_compat.rst:31
-msgid "This option allows the user to disable the 259 character path limit Picard would usually enforce in Windows compatibility mode when renaming and/or moving files. This is possible both on Windows and on other platforms with Windows compatibility enabled."
+#: ../../config/options_filerenaming_compat.rst:27
+msgid ""
+"This option allows the user to disable the 259 character path limit Picard "
+"would usually enforce in Windows compatibility mode when renaming and/or "
+"moving files. This is possible both on Windows and on other platforms with "
+"Windows compatibility enabled."
 msgstr ""
 "Aquesta opció permet a l'usuari inhabilitar el límit de 259 caràcters als "
 "camins que Picard aplicaria normalment en el mode de compatibilitat amb el "
@@ -73,8 +90,14 @@ msgstr ""
 "Windows com en altres plataformes amb la compatibilitat amb el Windows "
 "habilitada."
 
-#: ../../config/options_filerenaming_compat.rst:37
-msgid "Enabling long paths on Windows might cause files being saved with path names exceeding the 259 character limit traditionally imposed by the Windows API. Some software might not be able to properly access those files. In particular Windows Explorer cannot rename files with long path names or create new files inside folders if the resulting path length would exceed the length limit."
+#: ../../config/options_filerenaming_compat.rst:31
+msgid ""
+"Enabling long paths on Windows might cause files being saved with path names "
+"exceeding the 259 character limit traditionally imposed by the Windows API. "
+"Some software might not be able to properly access those files. In "
+"particular Windows Explorer cannot rename files with long path names or "
+"create new files inside folders if the resulting path length would exceed "
+"the length limit."
 msgstr ""
 "Habilitar els camins llargs al Windows pot fer que es desin fitxers amb noms "
 "que superin el límit de 259 caràcters imposat tradicionalment per l'API del "
@@ -83,23 +106,30 @@ msgstr ""
 "canviar el nom dels fitxers amb un nom llarg ni crear fitxers nous en "
 "carpetes si la longitud del camí resultant supera el límit."
 
-#: ../../config/options_filerenaming_compat.rst:42
+#: ../../config/options_filerenaming_compat.rst:33
 msgid "**Replace spaces with underscores**"
 msgstr "**Substitueix els espais per ratlles baixes**"
 
-#: ../../config/options_filerenaming_compat.rst:44
-msgid "When enabled, this option directs Picard to replace all spaces with underscores in the file path and name generated by the selected file naming script."
+#: ../../config/options_filerenaming_compat.rst:35
+msgid ""
+"When enabled, this option directs Picard to replace all spaces with "
+"underscores in the file path and name generated by the selected file naming "
+"script."
 msgstr ""
 "Si l'habiliteu, aquesta opció indica a Picard que substitueixi tots els "
 "espais per ratlles baixes en el camí i el nom del fitxer generats per "
 "l'script de nom dels fitxers seleccionats."
 
-#: ../../config/options_filerenaming_compat.rst:47
+#: ../../config/options_filerenaming_compat.rst:37
 msgid "**Replace directory separators with**"
 msgstr "**Substitueix els separadors de directoris per**"
 
-#: ../../config/options_filerenaming_compat.rst:49
-msgid "By default Picard will replace any path separators (slash or backslash) with an underscore when using a tag or variable value as part of the file path and name generated by the selected file naming script. This option allows the user to set a different replacement character other than the underscore."
+#: ../../config/options_filerenaming_compat.rst:39
+msgid ""
+"By default Picard will replace any path separators (slash or backslash) with "
+"an underscore when using a tag or variable value as part of the file path "
+"and name generated by the selected file naming script. This option allows "
+"the user to set a different replacement character other than the underscore."
 msgstr ""
 "Per defecte, Picard substituirà qualsevol separador de camí (barra inclinada "
 "o barra inclinada inversa) per una ratlla baixa si es fa servir una etiqueta "

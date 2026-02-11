@@ -1,15 +1,14 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`Tag Options <configuration; tag options>`
-==================================================
+=================================================
 
 .. image:: images/options-tags.png
    :width: 100 %
 
 **Write tags to files**
 
-   Uncheck to disable Picard from writing metadata to your files. Picard may still move or rename your files according
-   to your settings.
+   Uncheck to disable Picard from writing metadata to your files. Picard may still move or rename your files according to your settings.
 
 **Preserve timestamps of tagged files**
 

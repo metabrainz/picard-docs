@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
 "PO-Revision-Date: 2025-07-02 17:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_gt/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_gt/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,17 +36,28 @@ msgid "**Description:**"
 msgstr "**Descripció:**"
 
 #: ../../functions/func_gt.rst:13
-msgid "Returns \"1\" (True) if ``x`` is greater than ``y`` using the comparison specified in ``type``. Possible values of ``type`` are \"int\" (integer), \"float\" (floating point), \"text\" (case-sensitive text), \"nocase\" (case-insensitive text) and \"auto\" (automatically determine the type of arguments provided), with \"auto\" used as the default comparison method if ``type`` is not specified.  The \"auto\" type will use the first type that applies to both arguments in the following order of preference: \"int\", \"float\" and \"text\"."
+msgid ""
+"Returns \"1\" (True) if ``x`` is greater than ``y`` using the comparison "
+"specified in ``type``. Possible values of ``type`` are \"int\" (integer), "
+"\"float\" (floating point), \"text\" (case-sensitive text), \"nocase\" (case-"
+"insensitive text) and \"auto\" (automatically determine the type of "
+"arguments provided), with \"auto\" used as the default comparison method if "
+"``type`` is not specified. The \"auto\" type will use the first type that "
+"applies to both arguments in the following order of preference: \"int\", "
+"\"float\" and \"text\"."
 msgstr ""
 
-#: ../../functions/func_gt.rst:22
-msgid "The ``type`` argument was added in Picard v2.9.  Prior to that, if an argument was missing or was not an integer, the function would return an empty string."
+#: ../../functions/func_gt.rst:17
+msgid ""
+"The ``type`` argument was added in Picard v2.9. Prior to that, if an "
+"argument was missing or was not an integer, the function would return an "
+"empty string."
 msgstr ""
 
-#: ../../functions/func_gt.rst:26
+#: ../../functions/func_gt.rst:20
 msgid "**Example:**"
 msgstr "**Exemple:**"
 
-#: ../../functions/func_gt.rst:28
+#: ../../functions/func_gt.rst:22
 msgid "The following statements will return the values indicated:"
 msgstr "Les instruccions següents retornaran els valors indicats:"

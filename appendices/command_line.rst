@@ -1,7 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
 Appendix C: :index:`Command Line Options <pair: command line; options>`
-========================================================================
+=======================================================================
 
 Picard can be started from the command line with the following arguments:
 
@@ -29,7 +29,7 @@ where the options are:
 
 .. option:: -e COMMAND, --exec COMMAND
 
-   execute one or more COMMANDs at start-up (see :doc:`/usage/exec_commands` for more information)
+   execute one or more COMMANDs at start-up (see :doc:`../usage/exec_commands` for more information)
 
 .. option:: -M, --no-player
 
@@ -65,18 +65,10 @@ where the options are:
 
    .. note::
 
-      Files and directories are specified including the path (either absolute or relative) to the file or directory, and may include drive specifiers.
-      They can also be specified using the ``file://`` prefix.
-      URLs are specified by using either the ``http://`` or ``https://`` prefix.
-      MBIDs are specified in the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of "release", "artist"
-      or "track" and ``<mbid>`` is the MusicBrainz Identifier of the entity.
+      Files and directories are specified including the path (either absolute or relative) to the file or directory, and may include drive specifiers. They can also be specified using the ``file://`` prefix. URLs are specified by using either the ``http://`` or ``https://`` prefix. MBIDs are specified in the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of "release", "artist" or "track" and ``<mbid>`` is the MusicBrainz Identifier of the entity.
 
       If a specified item contains a space, it must be enclosed in quotes such as ``"/home/user/music/my song.mp3"``.
 
 .. raw:: latex
 
    \clearpage
-
-..   \pagebreak
-..   \newpage
-..   \clearpage

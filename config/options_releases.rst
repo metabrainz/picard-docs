@@ -1,7 +1,7 @@
 .. MusicBrainz Picard Documentation Project
 
 :index:`Preferred Releases <configuration; release preferences>`
-=================================================================
+================================================================
 
 .. image:: images/options-metadata-releases-types.png
    :width: 100 %

@@ -10,8 +10,7 @@ $ne_all
 
 **Description:**
 
-Returns true if ``x`` does not equal ``a1`` and ``a2``, etc.  Can be used with an arbitrary
-number of arguments.  Note that comparisons are case-sensitive.
+Returns true if ``x`` does not equal ``a1`` and ``a2``, etc. Can be used with an arbitrary number of arguments. Note that comparisons are case-sensitive.
 
 Functionally equivalent to ``$and($ne(x,a1),$ne(x,a2) ...)``.
 
@@ -27,8 +26,8 @@ The following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
-    $ne_all(A,A,B,C)    ==>  ""   (False)
-    $ne_all(A,a,A,A)    ==>  ""   (False)
-    $ne_all(A,a,a,a)    ==>  "1"  (True)
-    $ne_all(,,,)        ==>  ""   (False)
-    $ne_all(,a,a)       ==>  "1"  (True)
+   $ne_all(A,A,B,C)    ==>  ""   (False)
+   $ne_all(A,a,A,A)    ==>  ""   (False)
+   $ne_all(A,a,a,a)    ==>  "1"  (True)
+   $ne_all(,,,)        ==>  ""   (False)
+   $ne_all(,a,a)       ==>  "1"  (True)

@@ -29,7 +29,3 @@ MusicBrainz Picard
    faq/faq
    tutorials/tutorials
    appendices/pdf_appendices
-
-..   examples/examples
-..   technical/plugins_api_pdf
-..   technical/tag_mapping_pdf
