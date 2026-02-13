@@ -40,8 +40,6 @@ Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbr
 
    Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database.
 
-.. note::
-
    Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for details.
 
 

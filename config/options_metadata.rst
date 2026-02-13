@@ -3,8 +3,16 @@
 :index:`Metadata Options <configuration; metadata options>`
 ===========================================================
 
-.. image:: images/options-metadata.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-metadata.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-metadata.png
+      :width: 70%
+      :align: center
 
 **Translate artist names to this locale where possible**
 
@@ -18,8 +26,16 @@
 
    To select which locales to use, click the :guilabel:`Select...` button beside the list of selected locales. This will bring up a new dialog window where you can add, remove or reorder your list of selected locales.
 
-   .. image:: images/locale_selector.png
-      :align: center
+   .. only:: not latex
+
+      .. image:: images/locale_selector.png
+         :align: center
+
+   .. only:: latex
+
+      .. image:: images/locale_selector.png
+         :width: 70%
+         :align: center
 
    Once you are satisfied with your selections, click the :guilabel:`Save` button to transfer the list to your option settings and close the dialog. Note that the changes will not be saved permanently until you click the :guilabel:`Make It So!` button.
 
@@ -33,8 +49,16 @@
 
    To select which character set scripts to use and their weighting thresholds, click the :guilabel:`Select...` button beside the list of selected scripts. This will bring up a new dialog window where you can add, edit or remove items in your list of selected scripts.
 
-   .. image:: images/script_selector.png
-      :align: center
+   .. only:: not latex
+
+      .. image:: images/script_selector.png
+         :align: center
+
+   .. only:: latex
+
+      .. image:: images/script_selector.png
+         :width: 70%
+         :align: center
 
    Once you are satisfied with your selections, click the :guilabel:`Save` button to transfer the list to your option settings and close the dialog. Note that the changes will not be saved permanently until you click the :guilabel:`Make It So!` button.
 

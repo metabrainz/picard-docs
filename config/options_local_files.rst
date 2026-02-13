@@ -7,8 +7,16 @@
 
 In this section you can configure the file names to be used by the Local Files cover art provider. If you are trying to collect more than one image, the naming is important.
 
-.. image:: images/options-cover-local.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-cover-local.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-cover-local.png
+      :width: 80%
+      :align: center
 
 The file names are defined using a `regular expression <https://en.wikipedia.org/wiki/Regular_expression>`_. The default is ``^(?:cover|folder|albumart)(.*)\.(?:jpe?g|png|gif|tiff?)$`` which will load files with the name "cover", "folder" or "albumart" and the file extension "jpg", "png", "gif" or "tiff" (e.g.: "folder.jpg" or "cover.png").
 

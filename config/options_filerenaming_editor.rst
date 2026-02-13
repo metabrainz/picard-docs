@@ -7,8 +7,16 @@
 
 The file naming script editor is used to manage the file naming scripts available for use by Picard. Each script has a title that will show up in the script selection box, and all listed scripts can be edited by the user.
 
-.. image:: images/options-filenaming-editor-1.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-filenaming-editor-1.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-filenaming-editor-1.png
+      :width: 100%
+      :align: center
 
 The editor screen has the following sections:
 
@@ -68,8 +76,16 @@ The editor screen has the following sections:
 
    When the documentation is displayed it shows the scripting function and available tags in separate tabs. Each tab is shown separately in the image below. There is a search function to assist in finding the desired function or tag.
 
-   .. image:: images/options-filenaming-editor-2.png
-      :align: center
+   .. only:: not latex
+
+      .. image:: images/options-filenaming-editor-2.png
+         :align: center
+
+   .. only:: latex
+
+      .. image:: images/options-filenaming-editor-2.png
+         :width: 100%
+         :align: center
 
    .. Force a blank line in html output
    .. only:: html
@@ -88,8 +104,16 @@ The editor screen has the following sections:
    things such as any required plugins, settings, or tagging scripts. This can also be triggered by double clicking the script
    title text box.
 
-   .. image:: images/options-filenaming-editor-metadata.png
-      :align: center
+   .. only:: not latex
+
+      .. image:: images/options-filenaming-editor-metadata.png
+         :align: center
+
+   .. only:: latex
+
+      .. image:: images/options-filenaming-editor-metadata.png
+         :width: 80%
+         :align: center
 
    .. Force a blank line in html output
    .. only:: html

@@ -1410,3 +1410,9 @@ Work Title
 #. `Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.
 #. With "Save iTunes compatible grouping and work" (since Picard>=2.1.0)
 #. From iTunes Metadata Format Specification
+
+.. only:: latex
+
+   .. raw:: latex
+
+      \clearpage

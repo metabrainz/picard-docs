@@ -5,8 +5,16 @@
 
 This provides access to some of the advanced settings for Picard.
 
-.. image:: images/options-advanced.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-advanced.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-advanced.png
+      :width: 75%
+      :align: center
 
 **Ignore file paths matching the following regular expression**
 

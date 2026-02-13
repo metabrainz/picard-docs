@@ -3,8 +3,16 @@
 :index:`File Naming Compatibility Options <pair: configuration; file naming compatibility>`
 ===========================================================================================
 
-.. image:: images/options-filenaming-compatibility.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-filenaming-compatibility.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-filenaming-compatibility.png
+      :width: 80%
+      :align: center
 
 These options determine how Picard handles compatibility of files when they are saved with updated metadata.
 
@@ -18,8 +26,16 @@ These options determine how Picard handles compatibility of files when they are 
 
    As of version 2.9 Picard allows the user to specify what replacement characters to use as replacements for selected characters.
 
-   .. image:: images/options-filenaming-compatibility-custom.png
-      :align: center
+   .. only:: not latex
+
+      .. image:: images/options-filenaming-compatibility-custom.png
+         :align: center
+
+   .. only:: latex
+
+      .. image:: images/options-filenaming-compatibility-custom.png
+         :width: 50%
+         :align: center
 
 **Allow paths longer than 259 characters**
 

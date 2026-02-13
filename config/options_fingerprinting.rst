@@ -7,8 +7,16 @@ If you select a file or cluster in the left-hand side of the Picard screen and s
 
 MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/AcoustID>`_ (an Open Source `acoustic fingerprinting <https://musicbrainz.org/doc/Fingerprinting>`_ system created by `Lukáš Lalinský <https://oxygene.sk/>`_) but has previously supported TRM and MusicID PUID.
 
-.. image:: images/options-fingerprinting.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-fingerprinting.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-fingerprinting.png
+      :width: 75%
+      :align: center
 
 **Audio Fingerprinting**
 

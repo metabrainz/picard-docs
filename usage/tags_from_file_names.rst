@@ -11,10 +11,18 @@ Basic usage
 
 To use this tool, select one or more files loaded into Picard and open the Tags From File Names dialog from the menu at :menuselection:`"Tools --> Tags From &File Names..."`. The dialog will show you a list of filenames and an input field at the top where you can enter a matching pattern.
 
-.. image:: images/tags_from_file_names_1.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/tags_from_file_names_1.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/tags_from_file_names_1.png
+      :align: center
+      :width: 75%
 
 The matching pattern can consist of Picard tag names enclosed in ``%`` signs and other characters that are matched verbatim. For the tag names you can use predefined names such as ``%artist%``, ``%album%``, or ``%title%`` (see :doc:`../variables/variables`) or use custom names. There are a few predefined patterns available to select from, but you can also adjust them or set your own.
 
@@ -28,10 +36,19 @@ Matching folders
 
 The pattern can also match the parent folders of the file. To match for folders use a slash (``/``) as separator. If for example the file is in a folder named after the album, which in turn is inside a folder named after the artist (i.e. :file:`Neil Young/Harvest/04 Heart of Gold.mp3`) you could match the artist, album, track number and title with a pattern of :samp:`%artist%/%album%/%tracknumber% - %title%`.
 
-.. image:: images/tags_from_file_names_2.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/tags_from_file_names_2.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/tags_from_file_names_2.png
+      :align: center
+      :width: 75%
+
 
 Replace underscores with spaces
 -------------------------------

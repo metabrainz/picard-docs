@@ -20,11 +20,9 @@ Make sure the CD is inserted in the drive, and select :menuselection:`"Tools -->
 .. image:: images/cd_lookup_1.png
    :align: center
 
-|
+.. only:: not latex
 
-.. raw:: latex
-
-   \clearpage
+   |
 
 Step 2
 -------
@@ -34,11 +32,13 @@ If the target release appears in this list, the disc id has already been attache
 .. image:: images/cd_lookup_2.png
    :align: center
 
-|
+.. only:: not latex
 
-.. raw:: latex
+   |
 
-   \par
+.. .. raw:: latex
+
+..    \par
 
 .. note::
 
@@ -53,10 +53,19 @@ Step 3
 
 Select the desired target release frm the list displayed by clicking the radio button next to the release, and then click the "Attach CD TOC" button below the list of releases. This will prepare an edit to attach the disc id to the release. You then need to add an appropriate edit note, and submit the edit.
 
-.. image:: images/add_disc_id_1.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/add_disc_id_1.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/add_disc_id_1.png
+      :align: center
+      :width: 100%
+
 
 Step 4
 -------
@@ -66,7 +75,9 @@ If none of the releases displayed are correct, you have the option to add a new 
 .. image:: images/cd_lookup_4.png
    :align: center
 
-|
+.. only:: not latex
+
+   |
 
 .. raw:: latex
 

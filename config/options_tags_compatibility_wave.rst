@@ -7,8 +7,16 @@ WAVE by itself as a standard only supports the INFO chunk tags, which are very l
 
 In all cases Picard will write ID3 tags to the WAVE files. This is supported by quite a few tools; however, it is not supported universally. Tools not supporting ID3 tags should just ignore them. If possible, this is likely the best option to have proper tags in WAVE files. For compatibility with software that does not support ID3v2 tags, Picard can also save `Resource Interchange File Format <https://wikipedia.org/wiki/Resource_Interchange_File_Format>`_ (RIFF) INFO tags to WAVE files. RIFF INFO is read and written only as an extra. If there are no existing ID3 tags, the data from RIFF INFO will be used. When saving files, RIFF INFO will be written in addition to the ID3v2 tags.
 
-.. image:: images/options-tags-compatibility-wave.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-tags-compatibility-wave.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-tags-compatibility-wave.png
+      :width: 70%
+      :align: center
 
 Picard's use of the RIFF INFO tags is determined by the following configuration settings:
 

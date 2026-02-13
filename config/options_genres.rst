@@ -3,8 +3,16 @@
 :index:`Genres <configuration; genres>`
 =======================================
 
-.. image:: images/options-metadata-genres.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-metadata-genres.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-metadata-genres.png
+      :width: 70%
+      :align: center
 
 **Use genres from MusicBrainz**
 

@@ -3,8 +3,16 @@
 :index:`Cover Art Options <pair: configuration; cover art>`
 ===========================================================
 
-.. image:: images/options-cover.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-cover.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-cover.png
+      :width: 70%
+      :align: center
 
 **Embed cover images into tags**
 

@@ -10,14 +10,18 @@ Most of the time this grouping of execution priorities is sufficient, however th
 .. image:: images/options-plugins-context-menu.png
    :align: center
 
-|
+.. only:: not latex
+
+   |
 
 The execution order editor can be opened from the context menu displayed by right-clicking on any of the installed plugins.
 
 .. image:: images/options-plugin-execution-order.png
    :align: center
 
-|
+.. only:: not latex
+
+   |
 
 When the execution order editor is opened, it will display all of the enabled plugin metadata processing functions in the order in which they are executed by Picard. You can change the order by moving the plugin processing functions up or down by selecting the function to move and then use the up or down button, or by using your mouse to drag the function to the desired location in the list. There is also an option to reset the order to that which was determined by the original plugin settings.
 

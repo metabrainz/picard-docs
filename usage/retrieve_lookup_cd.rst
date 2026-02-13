@@ -13,7 +13,9 @@ Make sure the CD is inserted in the drive, and select :menuselection:`"Tools -->
 .. image:: images/cd_lookup_1.png
    :align: center
 
-|
+.. only:: not latex
+
+   |
 
 Step 2
 -------
@@ -25,7 +27,9 @@ A music symbol in front of a track number in the right-hand pane indicates that 
 .. image:: images/cd_lookup_result.png
    :align: center
 
-|
+.. only:: not latex
+
+   |
 
 Step 3
 -------
@@ -35,7 +39,9 @@ If there are no matches or none of the matches are correct, use the :guilabel:`S
 .. image:: images/cd_lookup_2.png
    :align: center
 
-|
+.. only:: not latex
+
+   |
 
 .. |lookup_tagger| image:: images/mblookup-tagger.png
    :height: 1em
@@ -48,7 +54,9 @@ Use the green arrow |lookup_tagger| to load the information for a release into P
 .. image:: images/cd_lookup_3.png
    :align: center
 
-|
+.. only:: not latex
+
+   |
 
 .. note::
 
@@ -62,4 +70,6 @@ If none of the releases displayed are correct, you have the option to add a new 
 .. image:: images/cd_lookup_4.png
    :align: center
 
-|
+.. only:: not latex
+
+   |

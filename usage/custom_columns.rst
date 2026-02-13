@@ -14,21 +14,33 @@ To access the Custom Columns manager:
 1. Right-click any column header in the Cluster or Album pane.
 2. Click "Manage Custom Columns…". If the option is disabled, you must first uncheck "Lock columns" in the same menu.
 
-.. image:: images/custom_columns_1.png
-   :align: center
+.. only:: not latex
 
-.. only:: html
+   .. image:: images/custom_columns_1.png
+      :align: center
 
    |
+
+.. only:: latex
+
+   .. image:: images/custom_columns_1.png
+      :align: center
+      :width: 75%
 
 This will open a new window showing the manager, where you can add, edit and remove custom column definitions.
 
-.. image:: images/custom_columns_2.png
-   :width: 100 %
+.. only:: not latex
 
-.. only:: html
+   .. image:: images/custom_columns_2.png
+      :align: center
 
    |
+
+.. only:: latex
+
+   .. image:: images/custom_columns_2.png
+      :align: center
+      :width: 100%
 
 Select an item from the list to edit or :guilabel:`Delete` it, or click :guilabel:`New` or :guilabel:`Duplicate` to create a new custom column item.
 

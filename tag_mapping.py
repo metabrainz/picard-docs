@@ -1317,8 +1317,9 @@ def write_rst(filename, pdf=False):
     for num in NOTES_NUMBERS:
         temp = '#.'
         rst += temp + ' ' + str(NOTES[num]).replace('\n', ' ').strip() + '\n'
-    if pdf:
-        rst += '\n.. raw:: latex\n\n   \\clearpage\n'
+    # if pdf:
+    #     rst += '\n.. raw:: latex\n\n   \\clearpage\n'
+    rst += '\n.. only:: latex\n\n   .. raw:: latex\n\n      \\clearpage\n'
 
     # Write the output file
     with open(filename, 'w', encoding='utf8') as ofile:

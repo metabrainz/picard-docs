@@ -3,8 +3,16 @@
 Windows
 =======
 
-.. image:: images/options-cdlookup.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-cdlookup.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-cdlookup.png
+      :width: 75%
+      :align: center
 
 On Windows, Picard has a pulldown menu listing the various CD drives it has found. Pull down the menu and select the drive you want to use by default.
 

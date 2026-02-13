@@ -3,8 +3,16 @@
 :index:`Ratings <configuration; ratings>`
 =========================================
 
-.. image:: images/options-metadata-ratings.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-metadata-ratings.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-metadata-ratings.png
+      :width: 70%
+      :align: center
 
 **Enable track ratings**
 

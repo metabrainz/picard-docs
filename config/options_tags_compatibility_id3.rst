@@ -3,8 +3,16 @@
 :index:`ID3 Files <configuration; id3 tag options>`
 ===================================================
 
-.. image:: images/options-tags-compatibility-id3.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-tags-compatibility-id3.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-tags-compatibility-id3.png
+      :width: 70%
+      :align: center
 
 **ID3v2 version**
 

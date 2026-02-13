@@ -3,8 +3,18 @@
 :index:`User Interface Options <pair: configuration; user interface>`
 =====================================================================
 
-.. image:: images/options-interface.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-interface.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/options-interface.png
+      :width: 75%
+      :align: center
 
 **Show text labels under icons**
 

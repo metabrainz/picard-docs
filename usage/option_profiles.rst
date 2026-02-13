@@ -65,17 +65,33 @@ All option profile management is done within the Option Profiles page available 
 
 Initially, the list of profiles will be empty. To create a new profile click on the :guilabel:`New` button. This will create a profile with no options selected for the profile to manage. To rename the profile, right-click on the profile name and select the :menuselection:`"Rename profile"` command. The list of options that the profile is to manage are selected from the list in the right-hand pane. Options can be selected either by group or individually. The groups can be expanded to see the individual options belonging to that group.
 
-.. image:: images/option_profiles1.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/option_profiles1.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/option_profiles1.png
+      :align: center
+      :width: 75%
 
 You can see the value currently assigned to a profile's option setting by hovering your cursor over the setting in the list. The value will be displayed as a tooltip for the setting.
 
-.. image:: images/option-setting-value-tooltip.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/option-setting-value-tooltip.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/option-setting-value-tooltip.png
+      :align: center
+      :width: 75%
 
 The profile stack order can be rearranged either by selecting a profile and using the up and down arrow buttons below the list, or by dragging the profile to a new position in the stack. Profiles are enabled when the box beside the profile's name is checked.
 
@@ -90,29 +106,61 @@ Saving Profile Option Settings
 
 To save a value to a profile option setting, simply ensure that the the target profile is the first enabled profile in the profile stack, make the desired changes (the options should be highlighted), and then click the :guilabel:`Make It So!` button.
 
-.. image:: images/options-profile-save1.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/options-profile-save1.png
+      :align: center
 
-.. image:: images/options-profile-save2.png
-   :align: center
+   |
 
-|
+.. only:: latex
+
+   .. image:: images/options-profile-save1.png
+      :align: center
+      :width: 75%
+
+.. only:: not latex
+
+   .. image:: images/options-profile-save2.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/options-profile-save2.png
+      :align: center
+      :width: 75%
 
 Remember, all highlighted options will be saved to the first enabled profile in the profile stack that controls that option. All other options will be saved to the "user settings" profile which is the user's normal settings, and includes all options. You can confirm which profile a highlighted option will update by hovering your cursor over the option.
 
-.. image:: images/options-profile-save3.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/options-profile-save3.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/options-profile-save3.png
+      :align: center
+      :width: 75%
 
 From the pages which contain options that can be included on a profile, you will also be able to see which profiles, if any, manage any of the options on the page. This is done by clicking the :guilabel:`Attached Profiles` button.
 
-.. image:: images/options-attached-profiles.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/options-attached-profiles.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/options-attached-profiles.png
+      :align: center
+      :width: 75%
 
 This lists the attached profiles in the order in which they appear in the profile stack, and whether or not the profile is enabled. If the page does not contain any options that could be managed by a profile, the :guilabel:`Attached Profiles` button will be disabled.
 

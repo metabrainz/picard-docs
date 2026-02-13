@@ -18,8 +18,6 @@ Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbr
 
    Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database.
 
-.. note::
-
    Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for details.
 
 
@@ -140,8 +138,6 @@ These tags will be provided based on the information from the MusicBrainz databa
    .. note::
 
       This is the same information provided in the ``_releasegroup_firstreleasedate`` variable, and is consistent across all tracks in the release. If you prefer to have this tag populated with the date of the earliest recording of the track in the database, which will likely be different for each track in the release, this can be achieved by enabling a one-line tagging script as ``$set(originaldate,%_recording_firstreleasedate%)``. Be aware that setting this can cause a release to be scattered across multiple directories if you use ``%originaldate%`` as part of the path portion of your file naming script.
-
-   .. note::
 
       If you are storing tags in MP3 files as ID3v2.3 then the original date can only be stored as a year.
 

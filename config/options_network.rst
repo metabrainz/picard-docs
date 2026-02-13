@@ -5,8 +5,16 @@
 
 These settings allow you to configure the network settings used by Picard.
 
-.. image:: images/options-network.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-network.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-network.png
+      :width: 75%
+      :align: center
 
 **Web Proxy**
 

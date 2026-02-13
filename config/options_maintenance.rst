@@ -5,8 +5,16 @@
 
 This allows you to perform some maintenance activities regarding Picard's configuration file.
 
-.. image:: images/options-maintenance.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-maintenance.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-maintenance.png
+      :width: 70%
+      :align: center
 
 **Configuration File**
 

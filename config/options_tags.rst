@@ -3,8 +3,16 @@
 :index:`Tag Options <configuration; tag options>`
 =================================================
 
-.. image:: images/options-tags.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-tags.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-tags.png
+      :width: 70%
+      :align: center
 
 **Write tags to files**
 

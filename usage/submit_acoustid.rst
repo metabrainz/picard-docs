@@ -13,6 +13,10 @@ There are two methods for submitting acoustic fingerprints, depending on the wor
 
 The steps to follow to submit acoustic fingerprints for each of the two workflows are:
 
+.. raw:: latex
+
+   \clearpage
+
 Submitting when using Scan to identify the release
 --------------------------------------------------
 
@@ -21,49 +25,85 @@ Step 1
 
 Load files into the clustering pane. Select the files and select :menuselection:`"Tools --> Scan"`, or click the "Scan" button.
 
-.. image:: images/submit_acoustid_1.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_1.png
+      :align: center
 
-.. raw:: latex
+   |
 
-   \clearpage
+.. only:: latex
+
+   .. image:: images/submit_acoustid_1.png
+      :align: center
+      :width: 75%
+
+.. .. raw:: latex
+
+..    \clearpage
 
 Step 2
 +++++++
 
 If the files are matched to a track and move to the right-hand pane, they already exist in the AcoustID database and do not need to be re-submitted. The "Submit" button will remain disabled.
 
-.. image:: images/submit_acoustid_2.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_2.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/submit_acoustid_2.png
+      :align: center
+      :width: 75%
+
 
 Step 3
 +++++++
 
 If the files are not matched, or you manually move them to match to a different track they could be submitted. The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted status) and the "Submit" button will be enabled.
 
-.. image:: images/submit_acoustid_3.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_3.png
+      :align: center
 
-.. raw:: latex
+   |
 
-   \clearpage
+.. only:: latex
+
+   .. image:: images/submit_acoustid_3.png
+      :align: center
+      :width: 75%
+
+.. .. raw:: latex
+
+..    \clearpage
 
 Step 4
 +++++++
 
 Clicking the "Submit" button will only submit the fingerprints for the files identified in Step 3. The AcoustID icon for the tracks will change to grey (i.e.: submitted status) and the "Submit" button will be disabled.
 
-.. image:: images/submit_acoustid_4.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_4.png
+      :align: center
 
+   |
+
+.. only:: latex
+
+   .. image:: images/submit_acoustid_4.png
+      :align: center
+      :width: 75%
+
+.. raw:: latex
+
+   \clearpage
 
 Submitting when not using Scan to identify the release
 ------------------------------------------------------
@@ -73,24 +113,40 @@ Step 1
 
 Make sure that the files are properly matched to tracks on a release in the right-hand pane.
 
-.. image:: images/submit_acoustid_5.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_5.png
+      :align: center
 
-.. raw:: latex
+   |
 
-   \clearpage
+.. only:: latex
+
+   .. image:: images/submit_acoustid_5.png
+      :align: center
+      :width: 75%
+
+.. .. raw:: latex
+
+..    \clearpage
 
 Step 2
 +++++++
 
 Select the files in the right-hand pane and select :menuselection:`"Tools --> Generate AcoustID fingerprints"`. This will calculate the acoustic fingerprints for the selected files.
 
-.. image:: images/submit_acoustid_6.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_6.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/submit_acoustid_6.png
+      :align: center
+      :width: 75%
 
 .. raw:: latex
 
@@ -102,24 +158,40 @@ Select the files in the right-hand pane and select :menuselection:`"Tools --> Ge
 
 The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted status) and the "Submit" button will be enabled.
 
-.. image:: images/submit_acoustid_7.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_7.png
+      :align: center
 
-.. raw:: latex
+   |
 
-   \clearpage
+.. only:: latex
+
+   .. image:: images/submit_acoustid_7.png
+      :align: center
+      :width: 75%
+
+.. .. raw:: latex
+
+..    \clearpage
 
 Step 3
 +++++++
 
 Clicking the "Submit" button will submit the fingerprints for the files. The AcoustID icon for the tracks will change to grey (i.e.: submitted status) and the "Submit" button will be disabled.
 
-.. image:: images/submit_acoustid_8.png
-   :align: center
+.. only:: not latex
 
-|
+   .. image:: images/submit_acoustid_8.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/submit_acoustid_8.png
+      :align: center
+      :width: 75%
 
 .. raw:: latex
 

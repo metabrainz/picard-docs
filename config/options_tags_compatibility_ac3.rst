@@ -5,8 +5,16 @@
 
 Picard can save APEv2 tags to pure AC3 files, which by default do not support tagging. APEv2 tags in AC3 are supported by some players, but players not supporting AC3 files with APEv2 tags can have issues loading and playing those files. To deal with this you can choose whether to save tags to those files.
 
-.. image:: images/options-tags-compatibility-ac3.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-tags-compatibility-ac3.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-tags-compatibility-ac3.png
+      :width: 70%
+      :align: center
 
 **Save APEv2 tags**
 

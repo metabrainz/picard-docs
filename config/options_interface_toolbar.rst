@@ -5,8 +5,16 @@
 
 This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.
 
-.. image:: images/options-interface-toolbar.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-interface-toolbar.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-interface-toolbar.png
+      :width: 75%
+      :align: center
 
 **Customize Action Toolbar**
 

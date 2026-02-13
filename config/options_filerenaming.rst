@@ -7,8 +7,16 @@
 
 These options determine how Picard handles files when they are saved with updated metadata.
 
-.. image:: images/options-filenaming.png
-   :align: center
+.. only:: not latex
+
+   .. image:: images/options-filenaming.png
+      :align: center
+
+.. only:: latex
+
+   .. image:: images/options-filenaming.png
+      :width: 80%
+      :align: center
 
 **Move files when saving**
 

@@ -46,7 +46,14 @@ To filter the items in one of the panes, simply select one or more filters and e
 
 When the :guilabel:`Filters` button is clicked, a dialog will be displayed to allow to you to select the filters to use for that pane.
 
-.. image:: images/filter_selection_dialog.png
+.. only:: not latex
+
+   .. image:: images/filter_selection_dialog.png
+
+.. only:: latex
+
+   .. image:: images/filter_selection_dialog.png
+      :width: 30%
 
 When filtering is applied, items will only be displayed if:
 
