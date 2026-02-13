@@ -14,7 +14,7 @@
 
       <a href="../_static/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank">spreadsheet</a>
 
-Appendix B: :index:`Tag Mapping <pair: mapping; tags>`
+Appendix A: :index:`Tag Mapping <pair: mapping; tags>`
 ======================================================
 
 The following is a mapping between Picard internal tag names and those used by various tagging formats.

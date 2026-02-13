@@ -1283,7 +1283,7 @@ def write_rst(filename, pdf=False):
     rst += '.. only:: html and not latex and not epub\n\n'
     rst += '   .. |tag_map_html_link| raw:: html\n\n      <a href="../_static/MusicBrainz_Picard_Tag_Map.html" target="_blank">table</a>\n\n'
     rst += '   .. |tag_map_xlsx_link| raw:: html\n\n      <a href="../_static/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank">spreadsheet</a>\n\n'
-    temp = 'Appendix B: :index:`Tag Mapping <pair: mapping; tags>`'
+    temp = 'Appendix A: :index:`Tag Mapping <pair: mapping; tags>`'
     rst += temp + '\n' + '=' * len(temp) + '\n\n'
     rst += 'The following is a mapping between Picard internal tag names and those used by various tagging formats.\n\n'
     # rst += 'The mapping is also available as a |tag_map_html_link| or |tag_map_xlsx_link|.\n\n'
