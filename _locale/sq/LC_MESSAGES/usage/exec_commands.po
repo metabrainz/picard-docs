@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.13.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-27 15:01-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../usage/exec_commands.rst:4
+msgid ""
+":index:`Executable Commands <commands; executable, executable commands>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:6
+msgid ""
+"Picard can accept commands for processing by specifying them on the command "
+"line using the ``-e`` option or loading them from a text file. Commands are "
+"case-insensitive, and are processed sequentially in the order that they are "
+"received. The executable commands that Picard recognizes are:"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:9
+msgid ":index:`CLEAR_LOGS <executable commands; CLEAR_LOGS>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:11
+msgid "Usage: **CLEAR_LOGS**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:12 ../../usage/exec_commands.rst:20
+#: ../../usage/exec_commands.rst:28 ../../usage/exec_commands.rst:36
+#: ../../usage/exec_commands.rst:83 ../../usage/exec_commands.rst:95
+#: ../../usage/exec_commands.rst:105 ../../usage/exec_commands.rst:115
+#: ../../usage/exec_commands.rst:123 ../../usage/exec_commands.rst:133
+#: ../../usage/exec_commands.rst:141 ../../usage/exec_commands.rst:149
+#: ../../usage/exec_commands.rst:157 ../../usage/exec_commands.rst:165
+#: ../../usage/exec_commands.rst:173 ../../usage/exec_commands.rst:181
+#: ../../usage/exec_commands.rst:189 ../../usage/exec_commands.rst:197
+#: ../../usage/exec_commands.rst:205 ../../usage/exec_commands.rst:213
+msgid "Implemented: Picard 2.9"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:14
+msgid ""
+"Clear all entries from Picard's log. This is the equivalent of clicking the :"
+"guilabel:`Clear Log` button from the log viewing screen opened using the :"
+"menuselection:`\"Help --> View Error/Debug Log\"` command."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:17
+msgid ":index:`CLUSTER <executable commands; CLUSTER>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:19
+msgid "Usage: **CLUSTER**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:22
+msgid ""
+"Cluster all files in the cluster pane. This is the equivalent of using the :"
+"menuselection:`\"Tools --> Cluster\"` command."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:25
+msgid ":index:`FINGERPRINT <executable commands; FINGERPRINT>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:27
+msgid "Usage: **FINGERPRINT**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:30
+msgid ""
+"Calculate acoustic fingerprints for all (matched) files in the album pane. "
+"This is the equivalent of using the :menuselection:`\"Tools --> Generate "
+"AcoustID Fingerprints\"` command."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:33
+msgid ":index:`FROM_FILE <executable commands; FROM_FILE>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:35
+msgid "Usage: **FROM_FILE <file path>**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:38
+msgid ""
+"Load commands from a file. The file path can be either an absolute or "
+"relative path to a text file containing the commands to be executed. Each "
+"command to be processed must be on a separate line along with its arguments "
+"(if applicable). Blank lines and lines beginning with an octothorpe (#) are "
+"ignored. Command files can include other command files by specifying them "
+"with another ``FROM_FILE`` command. Circular references (by including a "
+"command file that is currently being processed) are ignored and will be "
+"logged as a warning."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:40
+msgid ""
+"For example, you may have a file named ``commands.txt`` containing the "
+"standard commands that you want to use when processing each directory, such "
+"as:"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:72
+msgid "You could then process a directory by starting Picard with the command:"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:80
+msgid ":index:`LOAD <executable commands; LOAD>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:82
+msgid "Usage: **LOAD <supported MBID/URL or path to a file/directory>**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:85
+msgid ""
+"Load one or more files/directories/MBIDs/URLs to Picard. This is similar to "
+"including the file, directory path, URL or MBID on the command line."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:87
+msgid ""
+"Files and directories are specified including the path (either absolute or "
+"relative) to the file or directory, and may include drive specifiers. They "
+"can also be specified using the ``file://`` prefix. URLs are specified by "
+"using either the ``http://`` or ``https://`` prefix. MBIDs are specified in "
+"the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of "
+"\"release\", \"artist\" or \"track\" and ``<mbid>`` is the MusicBrainz "
+"Identifier of the entity."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:89
+msgid ""
+"If a specified item contains a space, it must be enclosed in quotes such as "
+"``\"/home/user/music/my song.mp3\"``."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:92
+msgid ":index:`LOOKUP <executable commands; LOOKUP>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:94
+msgid "Usage: **LOOKUP [clustered|unclustered|all]**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:97
+msgid ""
+"Lookup files in the clustering pane. Options are clustered files, "
+"unclustered files or all files. If not specified, the command defaults to "
+"all files."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:99
+msgid ""
+"This is the equivalent of using the :menuselection:`\"Tools --> Lookup\"` "
+"command."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:102
+msgid ":index:`LOOKUP_CD <executable commands; LOOKUP_CD>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:104
+msgid "Usage: **LOOKUP_CD [device/log file]**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:107
+msgid ""
+"Read CD from the selected drive or ripper log file, and looks it up on "
+"MusicBrainz. If no argument is specified, it defaults to the first "
+"(alphabetically) available disc drive."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:109
+msgid ""
+"This is the equivalent of using the :menuselection:`\"Tools --> Lookup CD..."
+"\"` command."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:112
+msgid ":index:`PAUSE <executable commands; PAUSE>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:114
+msgid "Usage: **PAUSE <number of seconds to pause>**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:117
+msgid ""
+"Pause executable command processing for the specified number of seconds."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:120
+msgid ":index:`QUIT <executable commands; QUIT>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:122
+msgid "Usage: **QUIT \\[force\\]**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:125
+msgid ""
+"The ``QUIT`` command waits until all queued executable commands have "
+"completed, and then initiates a shutdown request the same as if the user "
+"closed Picard from the user interface. This allows Picard to perform the "
+"same checks for unsaved files and such. When 'force' is entered as an "
+"argument to the command, Picard will bypass the unsaved files check."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:127
+msgid ""
+"Once a ``QUIT`` command has been queued, Picard will not queue any further "
+"executable commands. If the user cancels the ``QUIT`` from the unsaved files "
+"check dialog, the system will allow more commands to be queued."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:130
+msgid ":index:`REMOVE <executable commands; REMOVE>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:132
+msgid "Usage: **REMOVE <path to one or more files>**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:135
+msgid ""
+"Removes the specified file(s) from Picard. Does nothing if no arguments "
+"provided."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:138
+msgid ":index:`REMOVE_ALL <executable commands; REMOVE_ALL>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:140
+msgid "Usage: **REMOVE_ALL**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:143
+msgid "Removes all files from Picard."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:146
+msgid ":index:`REMOVE_EMPTY <executable commands; REMOVE_EMPTY>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:148
+msgid "Usage: **REMOVE_EMPTY**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:151
+msgid "Removes all empty clusters and albums."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:154
+msgid ":index:`REMOVE_SAVED <executable commands; REMOVE_SAVED>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:156
+msgid "Usage: **REMOVE_SAVED**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:159
+msgid "Removes all saved files from the album pane."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:162
+msgid ":index:`REMOVE_UNCLUSTERED <executable commands; REMOVE_UNCLUSTERED>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:164
+msgid "Usage: **REMOVE_UNCLUSTERED**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:167
+msgid "Removes all unclustered files from the cluster pane."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:170
+msgid ":index:`SAVE_MATCHED <executable commands; SAVE_MATCHED>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:172 ../../usage/exec_commands.rst:180
+msgid "Usage: **SAVE_MATCHED**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:175
+msgid "Saves all matched files from the album pane."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:178
+msgid ":index:`SAVE_MODIFIED <executable commands; SAVE_MODIFIED>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:183
+msgid "Saves all modified files from the album pane."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:186
+msgid ":index:`SCAN <executable commands; SCAN>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:188
+msgid "Usage: **SCAN**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:191
+msgid ""
+"Scans all files in the cluster pane. This is the equivalent of using the :"
+"menuselection:`\"Tools --> Scan\"` command."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:194
+msgid ":index:`SHOW <executable commands; SHOW>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:196
+msgid "Usage: **SHOW**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:199
+msgid "Make the running instance of Picard the currently active window."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:202
+msgid ":index:`SUBMIT_FINGERPRINTS <executable commands; SUBMIT_FINGERPRINTS>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:204
+msgid "Usage: **SUBMIT_FINGERPRINTS**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:207
+msgid ""
+"Submits outstanding acoustic fingerprints for all (matched) files in the "
+"album pane. This is the equivalent of using the :menuselection:`\"Tools --> "
+"Submit AcoustIDs\"` command."
+msgstr ""
+
+#: ../../usage/exec_commands.rst:210
+msgid ":index:`WRITE_LOGS <executable commands; WRITE_LOGS>`"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:212
+msgid "Usage: **WRITE_LOGS <path to output file>**"
+msgstr ""
+
+#: ../../usage/exec_commands.rst:215
+msgid ""
+"Writes the Picard logs to the specified output file. This is the equivalent "
+"of using the :guilabel:`Save As...` button from the log viewing screen "
+"opened using the :menuselection:`\"Help --> View Error/Debug Log\"` command."
+msgstr ""

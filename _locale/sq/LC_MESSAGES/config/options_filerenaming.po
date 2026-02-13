@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../config/options_filerenaming.rst:6
+msgid ":index:`File Naming Options <pair: configuration; file naming>`"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:8
+msgid ""
+"These options determine how Picard handles files when they are saved with "
+"updated metadata."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:13
+msgid "**Move files when saving**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:15
+msgid ""
+"If selected, this option tells Picard to move your audio files to a new "
+"directory when it saves them. One use for this is to keep your work "
+"organized: all untagged files are under \"Directory A\", and when Picard "
+"tags them it moves them to \"Directory B\". When \"Directory A\" is empty, "
+"your tagging work is done."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:17
+msgid ""
+"If this option is left unchecked, then Picard will leave the files in the "
+"same directory when they are saved."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:21
+msgid ""
+"The \"Rename Files\" and \"Move Files\" options are independent of one "
+"another. \"Rename Files\" refers to Picard changing file names, typically "
+"based on artist and track names. \"Move Files\" refers to Picard moving "
+"files to new directories, based on a specified parent directory and "
+"subdirectories, typically based on album artist name and release title. "
+"However, they both use the same \"file naming string\". \"Move files\" uses "
+"the portion up until the last '/'. \"Rename files\" uses the portion after "
+"the last '/'."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:23
+msgid "**Destination directory**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:25
+msgid ""
+"This specifies the destination parent directory to which files are moved "
+"when they are saved, if the \"Move files when saving\" option is selected. "
+"If you use the directory \".\" the files will be moved relative to their "
+"current location. If they are already in some sort of directory structure, "
+"this will probably not do what you want!"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:27
+msgid "**Move additional files**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:29
+msgid ""
+"Enter patterns that match any other files you want Picard to move when "
+"saving music files (e.g.: \"Folder.jpg\", \"\\*.png\", \"\\*.cue\", \"\\*."
+"log\"). Patterns support the Unix shell-style wildcards, and are separated "
+"by spaces. The wildcard patterns available are:"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:32
+msgid "**Pattern**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:32
+msgid "**Meaning**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:34
+msgid "\\*"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:34
+msgid "matches everything"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:35
+msgid "?"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:35
+msgid "matches any single character"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:36
+msgid "\\[seq\\]"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:36
+msgid "matches any character in *seq*"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:37
+msgid "\\[!seq\\]"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:37
+msgid "matches any character not in *seq*"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:40
+msgid ""
+"For a literal match, wrap the meta-characters in brackets. For example, '\\[?"
+"\\]' matches the character '?'."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:42
+msgid ""
+"When these additional files are moved they will end up in the release "
+"directory with your music files. In a pattern, the '\\*' character matches "
+"zero or more characters. Other text, like \".jpg\", matches those exact "
+"characters. Thus \"\\*.jpg\" matches \"cover.jpg\", \"liner.jpg\", \"a."
+"jpg\", and \".jpg\", but not \"nomatch.jpg2\"."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:46
+msgid ""
+"This option can also be used to move subdirectories to the new release "
+"directory. This is done by specifying the name of the subdirectory in the "
+"list of files to be moved. For example, if your album folders have a "
+"subfolder called \"Artwork\", \"covers\" or \"scans\" that contains "
+"additional image files that you also want to move to the new release "
+"directory, simply add \"artwork\", \"covers\" and \"scans\" to the list of "
+"additional file matching patterns."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:48
+msgid "**Delete empty directories**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:50
+msgid ""
+"When selected, Picard will remove directories that have become empty once a "
+"move is completed. Leave this unchecked if you want Picard to leave the "
+"source directory structure unchanged. Checking this box may be convenient if "
+"you are using the \"move files\" option to organize your work. An empty "
+"directory has no more work for you to do, and deleting the directory makes "
+"that clear."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:52
+msgid "**Overwrite existing files**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:54
+msgid ""
+"Unless selected, if a file is found at the destination, the operation for "
+"that specific additional file is skipped, and the original file is left "
+"untouched. This ensures that no data is unintentionally overwritten."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:56
+msgid "**Rename files when saving**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:58
+msgid ""
+"Select this option to let Picard change the file and directory names of your "
+"files when it saves them, in order to make the file and directory names "
+"consistent with the new metadata."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:60
+msgid "**Selected file naming script**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:62
+msgid ""
+"As of Picard version 2.7, multiple file naming scripts are supported. This "
+"option allows the user to select the file naming script to use from the list "
+"of scripts available. Scripts can be either system preset scripts or user-"
+"defined scripts. The available scripts are managed in the :doc:`File naming "
+"script editor <options_filerenaming_editor>` screen, which is displayed when "
+"the :guilabel:`Edit script...` button is selected."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:64
+msgid "**Files will be named like this**"
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:66
+msgid ""
+"Below the file naming script selector is a section showing examples of the "
+"output of the script in two columns: Before and After. If you select files "
+"from the Cluster pane or Album pane prior to opening the Options screen, up "
+"to 10 files will be randomly chosen from your selection as file naming "
+"examples. If you have not selected any files, then some default examples "
+"will be provided."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:68
+msgid ""
+"You can change the randomly selected example files from your selected files "
+"list by clicking on the :guilabel:`Reload examples` button."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:72
+msgid ""
+"Any new tags set or tags modified by the file naming script will not be "
+"written to the output files' metadata."
+msgstr ""
+
+#: ../../config/options_filerenaming.rst:78
+msgid ":doc:`options_filerenaming_editor` / :doc:`options_filerenaming_compat`"
+msgstr ""

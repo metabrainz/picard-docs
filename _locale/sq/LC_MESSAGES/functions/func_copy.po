@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) This documentation is licensed under CC0 1.0.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../../functions/func_copy.rst:6
+msgid "$copy"
+msgstr ""
+
+#: ../../functions/func_copy.rst:8
+msgid "Usage: **$copy(target,source)**"
+msgstr ""
+
+#: ../../functions/func_copy.rst:9
+msgid "Category: assignment"
+msgstr ""
+
+#: ../../functions/func_copy.rst:10
+msgid "Implemented: Picard 0.9"
+msgstr ""
+
+#: ../../functions/func_copy.rst:12
+msgid "**Description:**"
+msgstr ""
+
+#: ../../functions/func_copy.rst:14
+msgid ""
+"Copies metadata from variable ``source`` to ``target``. The difference from "
+"``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-"
+"value variables without flattening them."
+msgstr ""
+
+#: ../../functions/func_copy.rst:18
+msgid ""
+"Unlike most functions, in this case the ``source`` is specified **without** "
+"enclosing it with percent signs (%)."
+msgstr ""
+
+#: ../../functions/func_copy.rst:22
+msgid ""
+"If the variable ``target`` already exists, it will be overwritten by "
+"``source``."
+msgstr ""
+
+#: ../../functions/func_copy.rst:24
+msgid "**Example:**"
+msgstr ""
+
+#: ../../functions/func_copy.rst:26
+msgid ""
+"The following statements will yield the values for ``target`` as indicated:"
+msgstr ""
