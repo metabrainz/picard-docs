@@ -41,13 +41,22 @@ When the :guilabel:`Install Plugin...` button is clicked, a new dialog window wi
 Installing from the registry
 ''''''''''''''''''''''''''''
 
+.. |badge-official| image:: images/plugin-badge-official.png
+   :height: 3ex
+
+.. |badge-trusted| image:: images/plugin-badge-trusted.png
+   :height: 3ex
+
+.. |badge-community| image:: images/plugin-badge-community.png
+   :height: 3ex
+
 When installing a plugin from the official plugin registry, you are presented with a list of available plugins not already installed from which to select. The list can be filtered by selecting a category or entering search text. Search text will be applied to the plugin name or description. Hovering your mouse pointer over a plugin will display a brief description of the plugin, and double-clicking a plugin will display additional information such as the plugin author, trust level, and a link to the plugin repository.
 
 Each plugin in the official registry is assigned a trust level from:
 
-* **official** 🛡️ - Maintained by the MusicBrainz Picard team
-* **trusted** ✓ - Well-known authors with an established reputation
-* **community** ⚠️ - Other plugins (This is the default for new submissions)
+* **official** |badge-official| - Maintained by the MusicBrainz Picard team
+* **trusted** |badge-trusted| - Well-known authors with an established reputation
+* **community** |badge-community| - Other plugins (This is the default for new submissions)
 
 .. only:: not latex
 
