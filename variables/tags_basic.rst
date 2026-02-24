@@ -273,6 +273,10 @@ These tags are only available in iTunes files and are not able to be populated b
 
    Indicates whether or not there are gaps between the recordings on the release.
 
+**itunes_cddb_1**
+
+   An iTunes-specific tag containing a code that uniquely identifies a CD based on the number of tracks and their lengths.
+
 **podcast**
 
    Indicates whether or not the recording is a podcast.
