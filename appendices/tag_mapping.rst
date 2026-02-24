@@ -488,6 +488,21 @@ Initial Key
    "RIFF INFO", "n/a"
 
 
+iTunes CDDB 1 :sup:`[9]`
+-------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``itunes_cddb_1``"
+   "ID3v2", "``iTunes_CDDB_1``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "``----:com.apple.iTunes:iTunes_CDDB_1``"
+   "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
+
+
 Language
 ---------
 .. csv-table::
