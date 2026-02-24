@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2025-07-01 16:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/configoptions_filerenaming/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_filerenaming/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,11 +32,11 @@ msgstr ""
 "Aquestes opcions determinen com Picard gestiona els fitxers quan es desen "
 "amb metadades actualitzades."
 
-#: ../../config/options_filerenaming.rst:13
+#: ../../config/options_filerenaming.rst:21
 msgid "**Move files when saving**"
 msgstr "**Mou els fitxers en desar-los**"
 
-#: ../../config/options_filerenaming.rst:15
+#: ../../config/options_filerenaming.rst:23
 msgid ""
 "If selected, this option tells Picard to move your audio files to a new "
 "directory when it saves them. One use for this is to keep your work "
@@ -50,7 +50,7 @@ msgstr ""
 "i, després d'etiquetar-los amb Picard, es mouen a «Directori B». Quan "
 "«Directori A» està buit, heu enllestit l'etiquetatge."
 
-#: ../../config/options_filerenaming.rst:17
+#: ../../config/options_filerenaming.rst:25
 msgid ""
 "If this option is left unchecked, then Picard will leave the files in the "
 "same directory when they are saved."
@@ -58,7 +58,7 @@ msgstr ""
 "Si aquesta opció es deixa sense marcar, Picard deixarà els fitxers al mateix "
 "directori on s'han desat."
 
-#: ../../config/options_filerenaming.rst:21
+#: ../../config/options_filerenaming.rst:29
 msgid ""
 "The \"Rename Files\" and \"Move Files\" options are independent of one "
 "another. \"Rename Files\" refers to Picard changing file names, typically "
@@ -79,11 +79,11 @@ msgstr ""
 "dels fitxers». «Mou els fitxers» fa servir la part fins a la darrera «/». "
 "«Canvia el nom dels fitxers» fa servir la part després de la darrera «/»."
 
-#: ../../config/options_filerenaming.rst:23
+#: ../../config/options_filerenaming.rst:31
 msgid "**Destination directory**"
 msgstr "**Directori de destinació**"
 
-#: ../../config/options_filerenaming.rst:25
+#: ../../config/options_filerenaming.rst:33
 msgid ""
 "This specifies the destination parent directory to which files are moved "
 "when they are saved, if the \"Move files when saving\" option is selected. "
@@ -97,11 +97,11 @@ msgstr ""
 "manera relativa a la ubicació actual. Si ja són dins d'una estructura de "
 "directoris, és probable que no vulgueu fer això!"
 
-#: ../../config/options_filerenaming.rst:27
+#: ../../config/options_filerenaming.rst:35
 msgid "**Move additional files**"
 msgstr "**Mou els fitxers addicionals**"
 
-#: ../../config/options_filerenaming.rst:29
+#: ../../config/options_filerenaming.rst:37
 msgid ""
 "Enter patterns that match any other files you want Picard to move when "
 "saving music files (e.g.: \"Folder.jpg\", \"\\*.png\", \"\\*.cue\", \"\\*."
@@ -113,47 +113,47 @@ msgstr ""
 "cue», «\\*.log»). Els patrons admeten comodins de l'intèrpret d'ordres de "
 "l'Unix, separats per espais. Els patrons de comodins disponibles són:"
 
-#: ../../config/options_filerenaming.rst:32
+#: ../../config/options_filerenaming.rst:40
 msgid "**Pattern**"
 msgstr "**Patró**"
 
-#: ../../config/options_filerenaming.rst:32
+#: ../../config/options_filerenaming.rst:40
 msgid "**Meaning**"
 msgstr "**Significat**"
 
-#: ../../config/options_filerenaming.rst:34
+#: ../../config/options_filerenaming.rst:42
 msgid "\\*"
 msgstr "\\*"
 
-#: ../../config/options_filerenaming.rst:34
+#: ../../config/options_filerenaming.rst:42
 msgid "matches everything"
 msgstr "concideix amb tot"
 
-#: ../../config/options_filerenaming.rst:35
+#: ../../config/options_filerenaming.rst:43
 msgid "?"
 msgstr "?"
 
-#: ../../config/options_filerenaming.rst:35
+#: ../../config/options_filerenaming.rst:43
 msgid "matches any single character"
 msgstr "coincideix amb qualsevol caràcter (només un)"
 
-#: ../../config/options_filerenaming.rst:36
+#: ../../config/options_filerenaming.rst:44
 msgid "\\[seq\\]"
 msgstr "\\[seq\\]"
 
-#: ../../config/options_filerenaming.rst:36
+#: ../../config/options_filerenaming.rst:44
 msgid "matches any character in *seq*"
 msgstr "coincideix amb qualsevol caràcter de *seq*"
 
-#: ../../config/options_filerenaming.rst:37
+#: ../../config/options_filerenaming.rst:45
 msgid "\\[!seq\\]"
 msgstr "\\[!seq\\]"
 
-#: ../../config/options_filerenaming.rst:37
+#: ../../config/options_filerenaming.rst:45
 msgid "matches any character not in *seq*"
 msgstr "coincideix amb qualsevol caràcter que no és a *seq*"
 
-#: ../../config/options_filerenaming.rst:40
+#: ../../config/options_filerenaming.rst:48
 msgid ""
 "For a literal match, wrap the meta-characters in brackets. For example, '\\[?"
 "\\]' matches the character '?'."
@@ -161,7 +161,7 @@ msgstr ""
 "Per a una coincidència literal, escriviu els metacaràcters entre claudàtors. "
 "Per exemple, «\\[?\\]» coincideix amb el caràcter «?»."
 
-#: ../../config/options_filerenaming.rst:42
+#: ../../config/options_filerenaming.rst:50
 msgid ""
 "When these additional files are moved they will end up in the release "
 "directory with your music files. In a pattern, the '\\*' character matches "
@@ -175,7 +175,7 @@ msgstr ""
 "amb aquests caràcters exactes. Per tant, «\\*.jpg» coincideix amb «cover."
 "jpg», «liner.jpg», «a.jpg» i «.jpg», però no amb «sensecoincidència.jpg2»."
 
-#: ../../config/options_filerenaming.rst:46
+#: ../../config/options_filerenaming.rst:54
 msgid ""
 "This option can also be used to move subdirectories to the new release "
 "directory. This is done by specifying the name of the subdirectory in the "
@@ -194,11 +194,11 @@ msgstr ""
 "«material gràfic», «caràtules» i «imatges» a la llista de patrons de "
 "coincidències de fitxers addicionals."
 
-#: ../../config/options_filerenaming.rst:48
+#: ../../config/options_filerenaming.rst:56
 msgid "**Delete empty directories**"
 msgstr "**Suprimeix els directoris buits**"
 
-#: ../../config/options_filerenaming.rst:50
+#: ../../config/options_filerenaming.rst:58
 msgid ""
 "When selected, Picard will remove directories that have become empty once a "
 "move is completed. Leave this unchecked if you want Picard to leave the "
@@ -214,23 +214,23 @@ msgstr ""
 "Un directori buit no conté cap feina pendent i suprimir el directori ho "
 "deixa clar."
 
-#: ../../config/options_filerenaming.rst:52
+#: ../../config/options_filerenaming.rst:60
 #, fuzzy
 msgid "**Overwrite existing files**"
 msgstr "**Mou els fitxers addicionals**"
 
-#: ../../config/options_filerenaming.rst:54
+#: ../../config/options_filerenaming.rst:62
 msgid ""
 "Unless selected, if a file is found at the destination, the operation for "
 "that specific additional file is skipped, and the original file is left "
 "untouched. This ensures that no data is unintentionally overwritten."
 msgstr ""
 
-#: ../../config/options_filerenaming.rst:56
+#: ../../config/options_filerenaming.rst:64
 msgid "**Rename files when saving**"
 msgstr "**Canvia el nom dels fitxers en desar-los**"
 
-#: ../../config/options_filerenaming.rst:58
+#: ../../config/options_filerenaming.rst:66
 msgid ""
 "Select this option to let Picard change the file and directory names of your "
 "files when it saves them, in order to make the file and directory names "
@@ -240,11 +240,11 @@ msgstr ""
 "directoris en desar els fitxers, de manera que els noms dels fitxers i "
 "directoris siguin coherents amb les metadades noves."
 
-#: ../../config/options_filerenaming.rst:60
+#: ../../config/options_filerenaming.rst:68
 msgid "**Selected file naming script**"
 msgstr "**Script de nom dels fitxers seleccionat**"
 
-#: ../../config/options_filerenaming.rst:62
+#: ../../config/options_filerenaming.rst:70
 msgid ""
 "As of Picard version 2.7, multiple file naming scripts are supported. This "
 "option allows the user to select the file naming script to use from the list "
@@ -261,11 +261,11 @@ msgstr ""
 "<options_filerenaming_editor>`, que es mostra en seleccionar el botó :"
 "guilabel:`Edita l'script...`."
 
-#: ../../config/options_filerenaming.rst:64
+#: ../../config/options_filerenaming.rst:72
 msgid "**Files will be named like this**"
 msgstr "**El nom dels fitxers serà el següent**"
 
-#: ../../config/options_filerenaming.rst:66
+#: ../../config/options_filerenaming.rst:74
 msgid ""
 "Below the file naming script selector is a section showing examples of the "
 "output of the script in two columns: Before and After. If you select files "
@@ -281,7 +281,7 @@ msgstr ""
 "exemples de nom dels fitxers. Si no heu seleccionat cap fitxer, es mostraran "
 "alguns exemples per defecte."
 
-#: ../../config/options_filerenaming.rst:68
+#: ../../config/options_filerenaming.rst:76
 msgid ""
 "You can change the randomly selected example files from your selected files "
 "list by clicking on the :guilabel:`Reload examples` button."
@@ -290,7 +290,7 @@ msgstr ""
 "canviar els fitxers d'exemple seleccionats a l'atzar a partir de la llista "
 "de fitxers seleccionats."
 
-#: ../../config/options_filerenaming.rst:72
+#: ../../config/options_filerenaming.rst:80
 msgid ""
 "Any new tags set or tags modified by the file naming script will not be "
 "written to the output files' metadata."
@@ -298,7 +298,7 @@ msgstr ""
 "Qualsevol etiqueta nova o modificada per l'script de nom dels fitxers no "
 "s'escriurà a les metadades dels fitxers de sortida."
 
-#: ../../config/options_filerenaming.rst:78
+#: ../../config/options_filerenaming.rst:86
 msgid ":doc:`options_filerenaming_editor` / :doc:`options_filerenaming_compat`"
 msgstr ""
 ":doc:`options_filerenaming_editor` / :doc:`options_filerenaming_compat`"

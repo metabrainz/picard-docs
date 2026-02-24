@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -34,7 +34,7 @@ msgid ""
 "you choose to install a plugin."
 msgstr ""
 
-#: ../../config/options_plugins.rst:13
+#: ../../config/options_plugins.rst:21
 msgid ""
 "The screen is divided into three sections. The top section includes the "
 "general plugin management action buttons, the middle section is the list of "
@@ -42,7 +42,7 @@ msgid ""
 "the most recent plugin management actions executed."
 msgstr ""
 
-#: ../../config/options_plugins.rst:17
+#: ../../config/options_plugins.rst:25
 msgid ""
 "When a plugin is installed, uninstalled, enabled or disabled, the action is "
 "processed immediately. These actions are not impacted by clicking either "
@@ -52,26 +52,26 @@ msgid ""
 "changes to the status of the plugins."
 msgstr ""
 
-#: ../../config/options_plugins.rst:19
+#: ../../config/options_plugins.rst:27
 msgid "When a new plugin is installed, it is automatically set as enabled."
 msgstr ""
 
-#: ../../config/options_plugins.rst:23
+#: ../../config/options_plugins.rst:31
 msgid "Plugin Management"
 msgstr ""
 
-#: ../../config/options_plugins.rst:25
+#: ../../config/options_plugins.rst:33
 msgid ""
 "The general plugin management actions are :guilabel:`Install Plugin...` and :"
 "guilabel:`Refresh All`. In addition, there is a \"Search plugins...\" box "
 "that allows you to filter the list of plugins displayed in the plugin list."
 msgstr ""
 
-#: ../../config/options_plugins.rst:29
+#: ../../config/options_plugins.rst:37
 msgid "Installing a Plugin"
 msgstr ""
 
-#: ../../config/options_plugins.rst:31
+#: ../../config/options_plugins.rst:39
 msgid ""
 "When the :guilabel:`Install Plugin...` button is clicked, a new dialog "
 "window will open to allow selecting the plugin to install. There are three "
@@ -80,11 +80,11 @@ msgid ""
 "drive."
 msgstr ""
 
-#: ../../config/options_plugins.rst:34
+#: ../../config/options_plugins.rst:42
 msgid "Installing from the registry"
 msgstr ""
 
-#: ../../config/options_plugins.rst:36
+#: ../../config/options_plugins.rst:53
 msgid ""
 "When installing a plugin from the official plugin registry, you are "
 "presented with a list of available plugins not already installed from which "
@@ -96,24 +96,40 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../config/options_plugins.rst:38
+#: ../../config/options_plugins.rst:55
 msgid "Each plugin in the official registry is assigned a trust level from:"
 msgstr ""
 
-#: ../../config/options_plugins.rst:40
-msgid "**official** 🛡️ - Maintained by the MusicBrainz Picard team"
-msgstr ""
-
-#: ../../config/options_plugins.rst:41
-msgid "**trusted** ✓ - Well-known authors with an established reputation"
-msgstr ""
-
-#: ../../config/options_plugins.rst:42
+#: ../../config/options_plugins.rst:57
 msgid ""
-"**community** ⚠️ - Other plugins (This is the default for new submissions)"
+"**official** |badge-official| - Maintained by the MusicBrainz Picard team"
 msgstr ""
 
-#: ../../config/options_plugins.rst:49
+#: ../../config/options_plugins.rst:44
+msgid "badge-official"
+msgstr ""
+
+#: ../../config/options_plugins.rst:58
+msgid ""
+"**trusted** |badge-trusted| - Well-known authors with an established "
+"reputation"
+msgstr ""
+
+#: ../../config/options_plugins.rst:47
+msgid "badge-trusted"
+msgstr ""
+
+#: ../../config/options_plugins.rst:59
+msgid ""
+"**community** |badge-community| - Other plugins (This is the default for new "
+"submissions)"
+msgstr ""
+
+#: ../../config/options_plugins.rst:50
+msgid "badge-community"
+msgstr ""
+
+#: ../../config/options_plugins.rst:74
 msgid ""
 "Once you have selected a plugin and click :guilabel:`Install...`, you are "
 "asked to confirm the installation, and are able to select the version of the "
@@ -122,11 +138,11 @@ msgid ""
 "to the repository."
 msgstr ""
 
-#: ../../config/options_plugins.rst:52
+#: ../../config/options_plugins.rst:77
 msgid "Installing from a URL"
 msgstr ""
 
-#: ../../config/options_plugins.rst:54
+#: ../../config/options_plugins.rst:79
 msgid ""
 "Sometimes plugin authors choose not to include one or more of their plugins "
 "in the official plugin registry. You can still install these plugins by "
@@ -140,7 +156,7 @@ msgid ""
 "platforms."
 msgstr ""
 
-#: ../../config/options_plugins.rst:61
+#: ../../config/options_plugins.rst:94
 msgid ""
 "When installing a plugin from a URL, you must enter the URL to the "
 "repository of the plugin, and optionally the version of the plugin to "
@@ -150,23 +166,23 @@ msgid ""
 "confirmation dialog displayed."
 msgstr ""
 
-#: ../../config/options_plugins.rst:65
+#: ../../config/options_plugins.rst:98
 msgid ""
 "Be careful when installing plugins from unknown sources, as plugins may pose "
 "security risks. Only install plugins from sources you trust."
 msgstr ""
 
-#: ../../config/options_plugins.rst:68
+#: ../../config/options_plugins.rst:101
 msgid "Installing from a local repository"
 msgstr ""
 
-#: ../../config/options_plugins.rst:70
+#: ../../config/options_plugins.rst:103
 msgid ""
 "You can also install a plugin from a local repository. This would typically "
 "be the case while testing a plugin during development."
 msgstr ""
 
-#: ../../config/options_plugins.rst:77
+#: ../../config/options_plugins.rst:118
 msgid ""
 "When installing a plugin from a local repository, you must enter the path to "
 "the repository of the plugin, and optionally the version of the plugin to "
@@ -176,58 +192,58 @@ msgid ""
 "confirmation dialog displayed."
 msgstr ""
 
-#: ../../config/options_plugins.rst:81
+#: ../../config/options_plugins.rst:122
 msgid "Checking for Updates"
 msgstr ""
 
-#: ../../config/options_plugins.rst:83
+#: ../../config/options_plugins.rst:124
 msgid ""
 "You can refresh the registry and check for updates to installed plugins by "
 "clicking the :guilabel:`Refresh All` button. If an update is found for an "
 "installed plugin it will be identified in the plugins list."
 msgstr ""
 
-#: ../../config/options_plugins.rst:90
+#: ../../config/options_plugins.rst:139
 msgid ""
 "You can select which updates to apply and click the :guilabel:`Update All` "
 "button to perform the updates."
 msgstr ""
 
-#: ../../config/options_plugins.rst:94
+#: ../../config/options_plugins.rst:143
 msgid "Plugins List"
 msgstr ""
 
-#: ../../config/options_plugins.rst:96
+#: ../../config/options_plugins.rst:145
 msgid ""
 "The enabled status of a plugin can be toggled by using the check box to the "
 "left of the plugin name."
 msgstr ""
 
-#: ../../config/options_plugins.rst:98
+#: ../../config/options_plugins.rst:147
 msgid ""
 "When a plugin in the list is selected, some details are displayed in a side "
 "panel for the selected plugin."
 msgstr ""
 
-#: ../../config/options_plugins.rst:105
+#: ../../config/options_plugins.rst:162
 msgid ""
 "The display of this panel can be toggled using the :guilabel:`Show "
 "Details` / :guilabel:`Hide Details` button."
 msgstr ""
 
-#: ../../config/options_plugins.rst:107
+#: ../../config/options_plugins.rst:164
 msgid ""
 "From the details panel you have the option to update the plugin (if an "
 "update is found to be available by using the :guilabel:`Refresh All` button) "
 "or uninstalling the plugin."
 msgstr ""
 
-#: ../../config/options_plugins.rst:109
+#: ../../config/options_plugins.rst:166
 msgid ""
 "If you right-click on a plugin in the list, a context menu will be displayed."
 msgstr ""
 
-#: ../../config/options_plugins.rst:116
+#: ../../config/options_plugins.rst:181
 msgid ""
 "From this menu, you can toggle the enabled status of the plugin, uninstall, "
 "reinstall or change the installed version (reference), view detailed "
@@ -239,13 +255,13 @@ msgid ""
 "system."
 msgstr ""
 
-#: ../../config/options_plugins.rst:123
+#: ../../config/options_plugins.rst:198
 msgid ""
 "Some plugins have their own option page which will typically appear under "
 "the \"Plugins\" section of the Options."
 msgstr ""
 
-#: ../../config/options_plugins.rst:129
+#: ../../config/options_plugins.rst:204
 msgid ""
 "Please see the :doc:`options_plugin_execution_order` section for more "
 "information about manually setting the order in which plugins are executed."

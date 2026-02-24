@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,18 +24,18 @@ msgstr ""
 msgid "In this section you can configure the file names to be used by the Local Files cover art provider. If you are trying to collect more than one image, the naming is important."
 msgstr ""
 
-#: ../../config/options_local_files.rst:13
+#: ../../config/options_local_files.rst:21
 msgid "The file names are defined using a `regular expression <https://en.wikipedia.org/wiki/Regular_expression>`_. The default is ``^(?:cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` which will load files with the name \"cover\", \"folder\" or \"albumart\" and the file extension \"jpg\", \"png\", \"gif\" or \"tiff\" (e.g.: \"folder.jpg\" or \"cover.png\")."
 msgstr ""
 
-#: ../../config/options_local_files.rst:15
+#: ../../config/options_local_files.rst:23
 msgid "The first part of the regular expression is a non-capture group: ``(?:cover|folder|albumart)``. Items listed in this group will not get captured and the default (Front) type will apply."
 msgstr ""
 
-#: ../../config/options_local_files.rst:17
+#: ../../config/options_local_files.rst:25
 msgid "The second part of the regular expression is a group: ``(.*)``. This is the real capture, so if the file names match any of the cover art types, they will be tagged as such."
 msgstr ""
 
-#: ../../config/options_local_files.rst:21
+#: ../../config/options_local_files.rst:29
 msgid "A common mistake is to add all the types into the first (non-capture) group. This means that all the regular file names would be thrown into the Front type and cause unexpected results."
 msgstr ""

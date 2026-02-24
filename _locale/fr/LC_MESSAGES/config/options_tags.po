@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2020-11-19 16:19-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid ":index:`Tag Options <configuration; tag options>`"
 msgstr ":index:`Options de balise <configuration; options de balise>`"
 
-#: ../../config/options_tags.rst:9
+#: ../../config/options_tags.rst:17
 msgid "**Write tags to files**"
 msgstr "**Écrire des balises dans des fichiers**"
 
-#: ../../config/options_tags.rst:11
+#: ../../config/options_tags.rst:19
 msgid ""
 "Uncheck to disable Picard from writing metadata to your files. Picard may "
 "still move or rename your files according to your settings."
@@ -37,11 +37,11 @@ msgstr ""
 "fichiers. Picard peut toujours déplacer ou renommer vos fichiers en fonction "
 "de vos paramètres."
 
-#: ../../config/options_tags.rst:13
+#: ../../config/options_tags.rst:21
 msgid "**Preserve timestamps of tagged files**"
 msgstr "**Conserver les horodatages des fichiers balisés**"
 
-#: ../../config/options_tags.rst:15
+#: ../../config/options_tags.rst:23
 msgid ""
 "If checked, Picard will not update the \"Last Modified\" date and time of "
 "your music files when it writes new tags to them."
@@ -50,85 +50,85 @@ msgstr ""
 "la \"dernière modification\" de vos fichiers musicaux lorsqu'il y écrit de "
 "nouvelles balises."
 
-#: ../../config/options_tags.rst:17
+#: ../../config/options_tags.rst:25
 msgid "**Clear existing tags**"
 msgstr ""
 
-#: ../../config/options_tags.rst:19
+#: ../../config/options_tags.rst:27
 msgid ""
 "Checking this will remove all existing metadata and leave your files with "
 "only MusicBrainz metadata. Information you may have added through another "
 "media player such as \"genre\", \"comments\" or \"ratings\" will be removed."
 msgstr ""
 
-#: ../../config/options_tags.rst:21
+#: ../../config/options_tags.rst:29
 msgid "**Keep embedded images when clearing tags**"
 msgstr ""
 
-#: ../../config/options_tags.rst:23
+#: ../../config/options_tags.rst:31
 msgid ""
 "The default is for Picard to remove any embedded images from the files when "
 "clearing existing tags. Checking this option will keep the embedded images "
 "in the files."
 msgstr ""
 
-#: ../../config/options_tags.rst:25
+#: ../../config/options_tags.rst:33
 #, fuzzy
 msgid "**Remove ID3 tags from FLAC files**"
 msgstr "**Écrire des balises dans des fichiers**"
 
-#: ../../config/options_tags.rst:27
+#: ../../config/options_tags.rst:35
 msgid ""
 "Check to remove ID3 tags from FLAC files - Vorbis Comments are recommended "
 "for FLAC files. Picard will write Vorbis Comments to FLAC files regardless "
 "of this setting."
 msgstr ""
 
-#: ../../config/options_tags.rst:29
+#: ../../config/options_tags.rst:37
 #, fuzzy
 msgid "**Remove APEv2 tags from MP3 files**"
 msgstr "**Écrire des balises dans des fichiers**"
 
-#: ../../config/options_tags.rst:31
+#: ../../config/options_tags.rst:39
 msgid ""
 "Check to remove APEv2 tags from MP3 files - ID3 is recommended for MP3 "
 "files. Picard will write ID3 tags to MP3 files regardless of this setting."
 msgstr ""
 
-#: ../../config/options_tags.rst:33
+#: ../../config/options_tags.rst:41
 msgid "**Fix missing seekpoints for FLAC files**"
 msgstr ""
 
-#: ../../config/options_tags.rst:35
+#: ../../config/options_tags.rst:43
 msgid ""
 "Some software has issues handling FLAC files that have an empty seek table "
 "metadata block. When this option is enabled empty and hence unused seek "
 "table blocks will be removed from the files on saving."
 msgstr ""
 
-#: ../../config/options_tags.rst:37
+#: ../../config/options_tags.rst:45
 msgid ""
 "**Preserve these tags from being cleared or overwritten with MusicBrainz "
 "data**"
 msgstr ""
 
-#: ../../config/options_tags.rst:39
+#: ../../config/options_tags.rst:47
 msgid ""
 "This is an advanced option: If you have tags which you need to preserve, "
 "enter their names here to stop Picard from overwriting them."
 msgstr ""
 
-#: ../../config/options_tags.rst:41
+#: ../../config/options_tags.rst:49
 msgid "**Do not sanitize dates for these tag formats**"
 msgstr ""
 
-#: ../../config/options_tags.rst:43
+#: ../../config/options_tags.rst:51
 msgid ""
 "Normally Picard will sanitize the dates stored in tags. This option allows "
 "you to override that sanitization for the selected formats."
 msgstr ""
 
-#: ../../config/options_tags.rst:49
+#: ../../config/options_tags.rst:57
 #, fuzzy
 msgid ""
 "Details: :doc:`options_tags_compatibility_id3` / :doc:"

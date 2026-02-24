@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2025-05-15 18:20+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/configoptions_advanced/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_advanced/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,13 +27,13 @@ msgstr ":index:`Opcions avançades <configuració; opcions avançades>`"
 msgid "This provides access to some of the advanced settings for Picard."
 msgstr ""
 
-#: ../../config/options_advanced.rst:11
+#: ../../config/options_advanced.rst:19
 msgid "**Ignore file paths matching the following regular expression**"
 msgstr ""
 "**Ignora els camins de fitxers que coincideixin amb l'expressió regular "
 "següent**"
 
-#: ../../config/options_advanced.rst:13
+#: ../../config/options_advanced.rst:21
 msgid ""
 "You can specify patterns for files and directories that Picard should never "
 "load. For example, if you set this to the regular expression ``\\.bak$`` any "
@@ -43,11 +43,11 @@ msgstr ""
 "carregar mai. Per exemple, si aquí indiqueu l'expressió regular ``\\.bak$``, "
 "qualsevol fitxer que acabi en «.bak» s'ignorarà en carregar els fitxers."
 
-#: ../../config/options_advanced.rst:15
+#: ../../config/options_advanced.rst:23
 msgid "**Ignore hidden files**"
 msgstr "**Ignora els fitxers ocults**"
 
-#: ../../config/options_advanced.rst:17
+#: ../../config/options_advanced.rst:25
 msgid ""
 "If this option is enabled then hidden files and directories will not be "
 "loaded. This also includes any file or subdirectory inside a hidden "
@@ -57,11 +57,11 @@ msgstr ""
 "ocults. Això també inclou qualsevol fitxer o subdirectori dins d'un "
 "directori ocult."
 
-#: ../../config/options_advanced.rst:19
+#: ../../config/options_advanced.rst:27
 msgid "**Include sub-folders when adding files from folders**"
 msgstr "**Inclou les subcarpetes en afegir els fitxers de les carpetes**"
 
-#: ../../config/options_advanced.rst:21
+#: ../../config/options_advanced.rst:29
 msgid ""
 "If this option is enabled Picard will load all audio files in the selected "
 "directory and all its subdirectories. If disabled only audio files in the "
@@ -71,13 +71,13 @@ msgstr ""
 "del directori seleccionat i tots els subdirectoris. Si està inhabilitada, "
 "només es carregaran els fitxers d'àudio del directori seleccionat."
 
-#: ../../config/options_advanced.rst:23
+#: ../../config/options_advanced.rst:31
 msgid "**Ignore track duration difference under this number of seconds**"
 msgstr ""
 "**Ignora les diferències de durada de les pistes inferiors a aquest nombre "
 "de segons**"
 
-#: ../../config/options_advanced.rst:25
+#: ../../config/options_advanced.rst:33
 msgid ""
 "This specifies the number of seconds that a file can differ in length from "
 "the length in the MusicBrainz database and still be considered to be the "
@@ -87,12 +87,12 @@ msgstr ""
 "d'un fitxer en relació amb la durada a la base de dades de MusicBrainz "
 "perquè hi hagi una coincidència. El valor per defecte és de 2 segons."
 
-#: ../../config/options_advanced.rst:27
+#: ../../config/options_advanced.rst:35
 msgid "**Maximum number of entities to return per MusicBrainz query**"
 msgstr ""
 "**Nombre màxim d'entitats que es retornaran per consulta a MusicBrainz**"
 
-#: ../../config/options_advanced.rst:29
+#: ../../config/options_advanced.rst:37
 msgid ""
 "This sets the maximum number of results returned for queries made to the "
 "MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and "
@@ -103,7 +103,7 @@ msgstr ""
 "resultats. A Picard 2.8.1 i les versions anteriors, aquest valor tenia un "
 "valor màxim fix de 25 respostes."
 
-#: ../../config/options_advanced.rst:31
+#: ../../config/options_advanced.rst:39
 msgid ""
 "**Ignore the following tracks when determining whether a release is "
 "complete**"
@@ -111,7 +111,7 @@ msgstr ""
 "**Ignora les pistes següents a l'hora de determinar si una publicació està "
 "completa**"
 
-#: ../../config/options_advanced.rst:33
+#: ../../config/options_advanced.rst:41
 msgid ""
 "Missing tracks of the selected type (i.e.: video, pregap, data or silence) "
 "will be ignored when determining whether a release is considered to be "
@@ -125,11 +125,11 @@ msgstr ""
 "marcarà com a completa si totes les pistes d'àudio coincideixen amb un "
 "fitxer encara que falti el fitxer de vídeo."
 
-#: ../../config/options_advanced.rst:35
+#: ../../config/options_advanced.rst:43
 msgid "**Tags to ignore for comparison**"
 msgstr "**Etiquetes que s'ignoraran a les comparacions**"
 
-#: ../../config/options_advanced.rst:37
+#: ../../config/options_advanced.rst:45
 msgid ""
 "Tags in this list will not be considered when comparing the existing file "
 "metadata to the data retrieved from MusicBrainz. If the only difference "
@@ -142,7 +142,7 @@ msgstr ""
 "recuperades de MusicBrainz és una etiqueta d'aquesta llista, es considerarà "
 "que no hi ha modificacions."
 
-#: ../../config/options_advanced.rst:43
+#: ../../config/options_advanced.rst:51
 #, fuzzy
 msgid ""
 "Details: :doc:`options_network` / :doc:`options_matching` / :doc:"

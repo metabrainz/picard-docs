@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,70 +24,70 @@ msgstr ""
 msgid "As of Picard v3 you can save and restore your current workspace state as a session file. Sessions preserve file placement (unclustered, clusters, albums, specific tracks, and standalone recordings), your manual metadata edits, and selected configuration options so you can resume work later."
 msgstr ""
 
-#: ../../config/options_sessions.rst:11
+#: ../../config/options_sessions.rst:19
 msgid "The following settings determine how the session files are managed:"
 msgstr ""
 
-#: ../../config/options_sessions.rst:13
+#: ../../config/options_sessions.rst:21
 msgid "**Sessions directory**"
 msgstr ""
 
-#: ../../config/options_sessions.rst:15
+#: ../../config/options_sessions.rst:23
 msgid "The directory where the session files are stored."
 msgstr ""
 
-#: ../../config/options_sessions.rst:17
+#: ../../config/options_sessions.rst:25
 msgid "**Auto-save every N minutes**"
 msgstr ""
 
-#: ../../config/options_sessions.rst:19
+#: ../../config/options_sessions.rst:27
 msgid "The interval in minutes between the times the current session is saved. Sessions will not be automatically saved when the interval is set to 0."
 msgstr ""
 
-#: ../../config/options_sessions.rst:21
+#: ../../config/options_sessions.rst:29
 msgid "When enabled, Picard periodically saves to the last known session file, or to ``autosave.mbps.gz`` in the sessions folder if no file is known."
 msgstr ""
 
-#: ../../config/options_sessions.rst:23
+#: ../../config/options_sessions.rst:31
 msgid "**Attempt session backup on unexpected shutdown**"
 msgstr ""
 
-#: ../../config/options_sessions.rst:25
+#: ../../config/options_sessions.rst:33
 msgid "When enabled, the system will attempt to save the current session to ``autosave.mbps.gz`` in the sessions folder if Picard is unexpectedly shut down."
 msgstr ""
 
-#: ../../config/options_sessions.rst:27
+#: ../../config/options_sessions.rst:35
 msgid "**Include MusicBrainz data in saved sessions**"
 msgstr ""
 
-#: ../../config/options_sessions.rst:29
+#: ../../config/options_sessions.rst:37
 msgid "When enabled, the release data for loaded albums will be included in the session information. This will speed up the session restore, and also allows continuing the work offline."
 msgstr ""
 
-#: ../../config/options_sessions.rst:31
+#: ../../config/options_sessions.rst:39
 msgid "**Do not make MusicBrainz requests on restore**"
 msgstr ""
 
-#: ../../config/options_sessions.rst:33
+#: ../../config/options_sessions.rst:41
 msgid "When enabled, requests to MusicBrainz will not be made when restoring the session."
 msgstr ""
 
-#: ../../config/options_sessions.rst:35
+#: ../../config/options_sessions.rst:43
 msgid "**Load last saved session on startup**"
 msgstr ""
 
-#: ../../config/options_sessions.rst:37
+#: ../../config/options_sessions.rst:45
 msgid "When enabled, Picard will load the most recently used session at startup (if the session information file is still available)."
 msgstr ""
 
-#: ../../config/options_sessions.rst:39
+#: ../../config/options_sessions.rst:47
 msgid "**No auto-matching on load**"
 msgstr ""
 
-#: ../../config/options_sessions.rst:41
+#: ../../config/options_sessions.rst:49
 msgid "When enabled, Picard will not perform any MBID-based auto-matching when restoring the session."
 msgstr ""
 
-#: ../../config/options_sessions.rst:45
+#: ../../config/options_sessions.rst:53
 msgid "For additional information about sessions please see the \":doc:`../usage/sessions`\" section under Usage."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2022-03-17 16:30+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -36,11 +36,11 @@ msgstr ""
 "permettent d'ajuster la façon dont Picard fait correspondre vos fichiers et "
 "vos clusters aux versions et pistes de MusicBrainz."
 
-#: ../../config/options_matching.rst:11
+#: ../../config/options_matching.rst:19
 msgid "**Minimal similarity for file lookups**"
 msgstr "**Similitude minimale pour les recherches de fichiers**"
 
-#: ../../config/options_matching.rst:13 ../../config/options_matching.rst:23
+#: ../../config/options_matching.rst:21 ../../config/options_matching.rst:31
 msgid ""
 "The higher the percentage value, the more similar an individual file's "
 "metadata must be to the metadata from MusicBrainz for it to be matched to a "
@@ -50,7 +50,7 @@ msgstr ""
 "individuel doivent être similaires aux métadonnées de MusicBrainz pour "
 "qu'elles correspondent à une version sur le côté droit."
 
-#: ../../config/options_matching.rst:15
+#: ../../config/options_matching.rst:23
 msgid ""
 "This setting is used when you do a lookup on individual files. The files' "
 "metadata is compared to the recordings found on MusicBrainz. If the "
@@ -61,11 +61,11 @@ msgstr ""
 "enregistrements trouvés sur MusicBrainz. Si la similarité est inférieure au "
 "seuil fixé, l'enregistrement est complètement ignoré."
 
-#: ../../config/options_matching.rst:17
+#: ../../config/options_matching.rst:25
 msgid "**Minimal similarity for cluster lookups**"
 msgstr "**Similitude minimale pour les recherches de cluster**"
 
-#: ../../config/options_matching.rst:19
+#: ../../config/options_matching.rst:27
 msgid ""
 "The higher the percentage value, the more similar a cluster of files from "
 "the left-hand pane must be to a MusicBrainz release for the entire cluster "
@@ -76,12 +76,12 @@ msgstr ""
 "l'ensemble du cluster soit mis en correspondance avec une version sur le "
 "côté droit."
 
-#: ../../config/options_matching.rst:21
+#: ../../config/options_matching.rst:29
 msgid "**Minimal similarity for matching files to tracks**"
 msgstr ""
 "**Similitude minimale pour faire correspondre les fichiers aux pistes**"
 
-#: ../../config/options_matching.rst:25
+#: ../../config/options_matching.rst:33
 msgid ""
 "This setting is used when a file is assigned to a release and Picard needs "
 "to decide which track to assign it to. This happens on cluster lookup after "
@@ -98,7 +98,7 @@ msgstr ""
 "n'offre une correspondance supérieure au seuil fixé, le fichier est déplacé "
 "dans une section \"fichiers non appariés\" sur cette version."
 
-#: ../../config/options_matching.rst:27
+#: ../../config/options_matching.rst:35
 msgid ""
 "If you have absolutely no metadata in your current files, and you are using "
 "\"Scan\" to match tracks, you may find that you need to lower the value of "
@@ -116,7 +116,7 @@ msgstr ""
 "et le laisse dans un groupe \"fichiers sans correspondance\" dans cette "
 "version."
 
-#: ../../config/options_matching.rst:29
+#: ../../config/options_matching.rst:37
 msgid ""
 "As a general rule, lowering the percentages may increase the chance of "
 "finding a match at the risk of false positives and incorrect matches."

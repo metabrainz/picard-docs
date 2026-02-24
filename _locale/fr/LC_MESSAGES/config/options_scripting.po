@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2022-05-16 18:18+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -31,7 +31,7 @@ msgstr ""
 "Cette section permet la gestion des scripts de balisage définis par "
 "l'utilisateur."
 
-#: ../../config/options_scripting.rst:11
+#: ../../config/options_scripting.rst:21
 msgid ""
 "The \"Enable Tagger Script(s)\" checkbox at the top of the page allows you "
 "to completely disable all tagging scripts. This can be useful when tracking "
@@ -42,7 +42,7 @@ msgstr ""
 "être utile lorsque l'on recherche un problème avec la configuration de "
 "Picard."
 
-#: ../../config/options_scripting.rst:13
+#: ../../config/options_scripting.rst:23
 msgid ""
 "Below the checkbox are two columns showing the list of scripts in the left-"
 "hand column, with the content of the selected script shown in the right-hand "
@@ -57,7 +57,7 @@ msgstr ""
 "scripts individuels, ainsi que de modifier le script actuellement "
 "sélectionné."
 
-#: ../../config/options_scripting.rst:15
+#: ../../config/options_scripting.rst:25
 msgid ""
 "As of Picard v2.7 you can also import a new script from a file, or export an "
 "existing script to a file. Files can be stored as either a plain-text script "
@@ -69,7 +69,7 @@ msgstr ""
 "soit sous la forme d'un paquet de script de balisage Picard stocké au format "
 "YAML."
 
-#: ../../config/options_scripting.rst:17
+#: ../../config/options_scripting.rst:27
 msgid ""
 "The script editor automatically highlights the elements of the script, "
 "including :doc:`function names <../functions/list_by_type>` and :doc:`tag "
@@ -84,7 +84,7 @@ msgstr ""
 "afficherez des informations d'aide sur cette entrée, si elles sont "
 "disponibles."
 
-#: ../../config/options_scripting.rst:19
+#: ../../config/options_scripting.rst:29
 msgid ""
 "Unicode characters can be entered into the script using the format "
 "``\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode character."
@@ -92,7 +92,7 @@ msgstr ""
 "Les caractères Unicode peuvent être saisis dans le script en utilisant le "
 "format ``uXXXX`` où \"XXXX\" est la valeur hexadécimale du caractère unicode."
 
-#: ../../config/options_scripting.rst:21
+#: ../../config/options_scripting.rst:31
 msgid ""
 "When the checkbox beside the script is checked, that script will be executed "
 "automatically, once for each track in the release, when Picard retrieves "
@@ -104,7 +104,7 @@ msgstr ""
 "récupérera des informations pour une version sur le site Web de MusicBrainz. "
 "Si la case n'est pas cochée, le script ne sera pas exécuté automatiquement."
 
-#: ../../config/options_scripting.rst:23
+#: ../../config/options_scripting.rst:33
 msgid ""
 "Regardless of whether or not the script is executed automatically, it can "
 "also be executed manually by right-clicking on an item in the clustering "
@@ -126,7 +126,7 @@ msgstr ""
 "fichier est sélectionné, le script ne sera exécuté que pour cette piste ou "
 "ce fichier."
 
-#: ../../config/options_scripting.rst:25
+#: ../../config/options_scripting.rst:35
 msgid ""
 "For additional information about scripting please see the \":doc:`Scripts "
 "<../extending/scripts>`\" and \":doc:`Scripting <../extending/scripting>`\" "
@@ -136,14 +136,3 @@ msgstr ""
 "doc:`\"Scripts\" <../extending/scripts>` et :doc:`\"Scripting\" <../"
 "extending/scripting>`, ainsi que :doc:`\"Balises & Variables\" <../variables/"
 "variables>`."
-
-#~ msgid ""
-#~ "For additional information about scripting please see the \":doc:`Scripts "
-#~ "<../extending/scripts>`\" and \":doc:`Scripting <../extending/"
-#~ "scripting>`\" sections, as well as \":doc:`Tags & Variables <../variables/"
-#~ "variables>`\"."
-#~ msgstr ""
-#~ "Pour plus d'informations sur les scripts, veuillez consulter les "
-#~ "sections :doc:`\"Scripts\" <../extending/scripts>` et :doc:`\"Scripting\" "
-#~ "<../extending/scripting>`, ainsi que :doc:`\"Balises & Variables\" <../"
-#~ "variables/variables>`."

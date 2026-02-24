@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -19,39 +19,39 @@ msgstr ""
 msgid ":index:`ID3 Files <configuration; id3 tag options>`"
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:9
+#: ../../config/options_tags_compatibility_id3.rst:17
 msgid "**ID3v2 version**"
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:11
+#: ../../config/options_tags_compatibility_id3.rst:19
 msgid ""
 "ID3v2.4 is the latest version and the default since Picard 2.9. Most modern "
 "software and devices can read ID3v2.4 tags. If you encounter issues with tag "
 "reading with your music player try using v2.3 instead."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:13
+#: ../../config/options_tags_compatibility_id3.rst:21
 msgid ""
 "Other than native support for multi-valued tags in v2.4, the :doc:`Picard "
 "Tag Mapping <../appendices/tag_mapping>` section will show you what you lose "
 "when choosing v2.3 instead of v2.4."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:15
+#: ../../config/options_tags_compatibility_id3.rst:23
 msgid "**ID3v2 text encoding**"
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:17
+#: ../../config/options_tags_compatibility_id3.rst:25
 msgid ""
 "The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16. "
 "Use ISO-8859-1 only if you face compatibility issues with your player."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:19
+#: ../../config/options_tags_compatibility_id3.rst:27
 msgid "**Join ID3v23 tags with**"
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:21
+#: ../../config/options_tags_compatibility_id3.rst:29
 msgid ""
 "As mentioned above, ID3v2.3 does not support multi-value tags, and so Picard "
 "flattens these to strings before saving them to ID3v2.3 tags. This setting "
@@ -61,14 +61,14 @@ msgid ""
 "ID3v2.3 and other tagging formats."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:25
+#: ../../config/options_tags_compatibility_id3.rst:33
 msgid ""
 "This setting is explicitly only for ID3 v2.3 tags, because those don't "
 "support proper multi value tags. Hence this separator setting is actually "
 "more of a workaround to this fact."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:27
+#: ../../config/options_tags_compatibility_id3.rst:35
 msgid ""
 "Because Vorbis tags allow the same tag to exist multiple times, and hence "
 "support multi valued tags by default, there actually is no separator at all "
@@ -76,44 +76,44 @@ msgid ""
 "uses as a separator."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:29
+#: ../../config/options_tags_compatibility_id3.rst:37
 msgid ""
 "If for some reason you want all the values of the tag in a single field "
 "separated by some separator you could use a script like:"
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:35
+#: ../../config/options_tags_compatibility_id3.rst:43
 msgid "to flatten all the values into a single field separated by \" / \"."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:37
+#: ../../config/options_tags_compatibility_id3.rst:45
 msgid "**Save iTunes compatible grouping and work**"
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:39
+#: ../../config/options_tags_compatibility_id3.rst:47
 msgid ""
 "Save the tags grouping and work so that they are compatible with current "
 "iTunes versions. Without this option grouping will be displayed in iTunes as "
 "\"work name\" and work will not be available."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:41
+#: ../../config/options_tags_compatibility_id3.rst:49
 msgid ""
 "See the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for "
 "details."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:45
+#: ../../config/options_tags_compatibility_id3.rst:53
 msgid ""
 "For other players supporting grouping and work you might need to disable "
 "this option. `MusicBee <https://getmusicbee.com/>`_ is one example of this."
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:47
+#: ../../config/options_tags_compatibility_id3.rst:55
 msgid "**Also include ID3v1 tags in the files**"
 msgstr ""
 
-#: ../../config/options_tags_compatibility_id3.rst:49
+#: ../../config/options_tags_compatibility_id3.rst:57
 msgid ""
 "This is not recommended at all. ID3v1.1 tags are obsolete and may not work "
 "with non-latin scripts."

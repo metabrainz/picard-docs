@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -23,14 +23,14 @@ msgstr ""
 msgid "This section allows for the management of user-defined tagging scripts."
 msgstr ""
 
-#: ../../config/options_scripting.rst:11
+#: ../../config/options_scripting.rst:21
 msgid ""
 "The \"Enable Tagger Script(s)\" checkbox at the top of the page allows you "
 "to completely disable all tagging scripts. This can be useful when tracking "
 "down a problem with Picard's configuration."
 msgstr ""
 
-#: ../../config/options_scripting.rst:13
+#: ../../config/options_scripting.rst:23
 msgid ""
 "Below the checkbox are two columns showing the list of scripts in the left-"
 "hand column, with the content of the selected script shown in the right-hand "
@@ -39,14 +39,14 @@ msgid ""
 "script."
 msgstr ""
 
-#: ../../config/options_scripting.rst:15
+#: ../../config/options_scripting.rst:25
 msgid ""
 "As of Picard v2.7 you can also import a new script from a file, or export an "
 "existing script to a file. Files can be stored as either a plain-text script "
 "or a Picard Tagging Script Package stored in YAML format."
 msgstr ""
 
-#: ../../config/options_scripting.rst:17
+#: ../../config/options_scripting.rst:27
 msgid ""
 "The script editor automatically highlights the elements of the script, "
 "including :doc:`function names <../functions/list_by_type>` and :doc:`tag "
@@ -55,13 +55,13 @@ msgid ""
 "entry if available."
 msgstr ""
 
-#: ../../config/options_scripting.rst:19
+#: ../../config/options_scripting.rst:29
 msgid ""
 "Unicode characters can be entered into the script using the format "
 "``\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode character."
 msgstr ""
 
-#: ../../config/options_scripting.rst:21
+#: ../../config/options_scripting.rst:31
 msgid ""
 "When the checkbox beside the script is checked, that script will be executed "
 "automatically, once for each track in the release, when Picard retrieves "
@@ -69,7 +69,7 @@ msgid ""
 "left unchecked, then the script will not be executed automatically."
 msgstr ""
 
-#: ../../config/options_scripting.rst:23
+#: ../../config/options_scripting.rst:33
 msgid ""
 "Regardless of whether or not the script is executed automatically, it can "
 "also be executed manually by right-clicking on an item in the clustering "
@@ -81,7 +81,7 @@ msgid ""
 "script will only be executed for that track or file."
 msgstr ""
 
-#: ../../config/options_scripting.rst:25
+#: ../../config/options_scripting.rst:35
 msgid ""
 "For additional information about scripting please see the \":doc:`Scripts "
 "<../extending/scripts>`\" and \":doc:`Scripting <../extending/scripting>`\" "

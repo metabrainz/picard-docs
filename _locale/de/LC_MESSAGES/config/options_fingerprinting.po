@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 08:15-0700\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2023-06-02 10:26+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: German <https://translations.metabrainz.org/projects/picard-"
@@ -41,32 +41,32 @@ msgid ""
 "sk/>`_) but has previously supported TRM and MusicID PUID."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:13
+#: ../../config/options_fingerprinting.rst:21
 msgid "**Audio Fingerprinting**"
 msgstr "**Audio-Fingerabdrücke**"
 
-#: ../../config/options_fingerprinting.rst:15
+#: ../../config/options_fingerprinting.rst:23
 msgid ""
 "This allows you to select whether or not to enable acoustic fingerprinting "
 "within Picard. If acoustic fingerprinting is disabled then all remaining "
 "options in this tab will be locked and ignored."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:17
+#: ../../config/options_fingerprinting.rst:25
 msgid "**Ignore existing AcoustID fingerprints**"
 msgstr "**Bestehende AcoustID-Fingerabdrücke ignorieren**"
 
-#: ../../config/options_fingerprinting.rst:19
+#: ../../config/options_fingerprinting.rst:27
 msgid ""
 "When checked, any existing AcoustID fingerprint information will not be "
 "used, and the files will be rescanned."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:21
+#: ../../config/options_fingerprinting.rst:29
 msgid "**Save AcoustID fingerprints to file tags**"
 msgstr "**AcoustID-Fingerabdrücke in Tags speichern**"
 
-#: ../../config/options_fingerprinting.rst:23
+#: ../../config/options_fingerprinting.rst:31
 msgid ""
 "When checked, the AcoustID fingerprint information from scanned files will "
 "be saved to the ``acoustid_fingerprint`` tag. Note that this option is "
@@ -77,21 +77,21 @@ msgid ""
 "directly after ripping to avoid having to redo the calculation in the future."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:25
+#: ../../config/options_fingerprinting.rst:33
 msgid "**Maximum threads to use for calculator**"
 msgstr "**Maximale Anzahl Threads für den Fingerabdruckerzeuger**"
 
-#: ../../config/options_fingerprinting.rst:27
+#: ../../config/options_fingerprinting.rst:35
 msgid ""
 "This allows you to specify the maximum number of fingerprint calculations to "
 "be run concurrently. The default value is 2."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:29
+#: ../../config/options_fingerprinting.rst:37
 msgid "**Fingerprint calculator**"
 msgstr "**Fingerabdruckerzeuger**"
 
-#: ../../config/options_fingerprinting.rst:31
+#: ../../config/options_fingerprinting.rst:39
 msgid ""
 "This identifies the external program on your system that will be used to "
 "calculate the AcoustID fingerprints. By default, Picard uses the "
@@ -99,7 +99,7 @@ msgid ""
 "utility which is included with the Picard installation."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:33
+#: ../../config/options_fingerprinting.rst:41
 msgid ""
 "Picard will auto-detect the path unless you have specifically overwritten it "
 "with something different than the detected path. :menuselection:`\"Options --"
@@ -109,11 +109,11 @@ msgid ""
 "the user has selected a specific path this will be used."
 msgstr ""
 
-#: ../../config/options_fingerprinting.rst:35
+#: ../../config/options_fingerprinting.rst:43
 msgid "**API key**"
 msgstr "**API-Schlüssel**"
 
-#: ../../config/options_fingerprinting.rst:37
+#: ../../config/options_fingerprinting.rst:45
 msgid ""
 "The key used to access the AcoustID API to lookup and submit AcoustID "
 "fingerprints. There is no cost to obtain an API key."

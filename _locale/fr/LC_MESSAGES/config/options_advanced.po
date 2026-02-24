@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2022-07-08 15:00+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
@@ -29,13 +29,13 @@ msgstr ":index:`Options avancées <configuration; options avancées>`"
 msgid "This provides access to some of the advanced settings for Picard."
 msgstr ""
 
-#: ../../config/options_advanced.rst:11
+#: ../../config/options_advanced.rst:19
 msgid "**Ignore file paths matching the following regular expression**"
 msgstr ""
 "**Ignorer les chemins de fichiers correspondant à l'expression régulière "
 "suivante**"
 
-#: ../../config/options_advanced.rst:13
+#: ../../config/options_advanced.rst:21
 msgid ""
 "You can specify patterns for files and directories that Picard should never "
 "load. For example, if you set this to the regular expression ``\\.bak$`` any "
@@ -46,11 +46,11 @@ msgstr ""
 "l'expression régulière ``\\.bak$`` tout fichier se terminant par \".bak\" "
 "sera ignoré lors du chargement des fichiers."
 
-#: ../../config/options_advanced.rst:15
+#: ../../config/options_advanced.rst:23
 msgid "**Ignore hidden files**"
 msgstr "**Ignorer les fichiers cachés**"
 
-#: ../../config/options_advanced.rst:17
+#: ../../config/options_advanced.rst:25
 msgid ""
 "If this option is enabled then hidden files and directories will not be "
 "loaded. This also includes any file or subdirectory inside a hidden "
@@ -60,13 +60,13 @@ msgstr ""
 "pas chargés. Cela inclut également tout fichier ou sous-répertoire dans un "
 "répertoire caché."
 
-#: ../../config/options_advanced.rst:19
+#: ../../config/options_advanced.rst:27
 msgid "**Include sub-folders when adding files from folders**"
 msgstr ""
 "**Inclure les sous-dossiers lors de l'ajout de fichiers à partir de "
 "dossiers**"
 
-#: ../../config/options_advanced.rst:21
+#: ../../config/options_advanced.rst:29
 msgid ""
 "If this option is enabled Picard will load all audio files in the selected "
 "directory and all its subdirectories. If disabled only audio files in the "
@@ -76,12 +76,12 @@ msgstr ""
 "répertoire sélectionné et tous ses sous-répertoires. Si elle est désactivée, "
 "seuls les fichiers audio du répertoire sélectionné seront chargés."
 
-#: ../../config/options_advanced.rst:23
+#: ../../config/options_advanced.rst:31
 msgid "**Ignore track duration difference under this number of seconds**"
 msgstr ""
 "**Ignorer la différence de durée de la piste sous ce nombre de secondes**"
 
-#: ../../config/options_advanced.rst:25
+#: ../../config/options_advanced.rst:33
 msgid ""
 "This specifies the number of seconds that a file can differ in length from "
 "the length in the MusicBrainz database and still be considered to be the "
@@ -92,11 +92,11 @@ msgstr ""
 "toujours être considéré comme identique. La valeur par défaut est de 2 "
 "secondes."
 
-#: ../../config/options_advanced.rst:27
+#: ../../config/options_advanced.rst:35
 msgid "**Maximum number of entities to return per MusicBrainz query**"
 msgstr "**Nombre maximum d'entités à retourner par requête MusicBrainz**"
 
-#: ../../config/options_advanced.rst:29
+#: ../../config/options_advanced.rst:37
 msgid ""
 "This sets the maximum number of results returned for queries made to the "
 "MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and "
@@ -107,14 +107,14 @@ msgstr ""
 "résultats. Sur Picard v2.8.1 et antérieures, cette valeur était fixée à un "
 "maximum de 25 réponses."
 
-#: ../../config/options_advanced.rst:31
+#: ../../config/options_advanced.rst:39
 msgid ""
 "**Ignore the following tracks when determining whether a release is "
 "complete**"
 msgstr ""
 "**Ignorez les pistes suivantes pour déterminer si une version est terminée**"
 
-#: ../../config/options_advanced.rst:33
+#: ../../config/options_advanced.rst:41
 msgid ""
 "Missing tracks of the selected type (i.e.: video, pregap, data or silence) "
 "will be ignored when determining whether a release is considered to be "
@@ -129,11 +129,11 @@ msgstr ""
 "toutes les pistes audio correspondent à un fichier même si le fichier vidéo "
 "est manquant."
 
-#: ../../config/options_advanced.rst:35
+#: ../../config/options_advanced.rst:43
 msgid "**Tags to ignore for comparison**"
 msgstr "**Balises à ignorer pour comparaison**"
 
-#: ../../config/options_advanced.rst:37
+#: ../../config/options_advanced.rst:45
 msgid ""
 "Tags in this list will not be considered when comparing the existing file "
 "metadata to the data retrieved from MusicBrainz. If the only difference "
@@ -146,7 +146,7 @@ msgstr ""
 "les métadonnées extraites de MusicBrainz est une balise répertoriée dans "
 "cette liste ignorée, le fichier sera considéré comme non modifié."
 
-#: ../../config/options_advanced.rst:43
+#: ../../config/options_advanced.rst:51
 #, fuzzy
 msgid ""
 "Details: :doc:`options_network` / :doc:`options_matching` / :doc:"

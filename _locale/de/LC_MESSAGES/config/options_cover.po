@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,11 +20,11 @@ msgstr ""
 msgid ":index:`Cover Art Options <pair: configuration; cover art>`"
 msgstr ""
 
-#: ../../config/options_cover.rst:9
+#: ../../config/options_cover.rst:17
 msgid "**Embed cover images into tags**"
 msgstr ""
 
-#: ../../config/options_cover.rst:11
+#: ../../config/options_cover.rst:19
 msgid ""
 "Enables images to be embedded directly into your music files. While this "
 "will use more storage space than storing it as a separate image file in the "
@@ -32,11 +32,11 @@ msgid ""
 "don't find the separate files."
 msgstr ""
 
-#: ../../config/options_cover.rst:13
+#: ../../config/options_cover.rst:21
 msgid "**Embed only a single front image**"
 msgstr ""
 
-#: ../../config/options_cover.rst:15
+#: ../../config/options_cover.rst:23
 msgid ""
 "Embeds only a single front image into your music files. No other images, "
 "regardless of their type, will be embedded. Many music players will only "
@@ -44,32 +44,32 @@ msgid ""
 "any functionality."
 msgstr ""
 
-#: ../../config/options_cover.rst:17
+#: ../../config/options_cover.rst:25
 msgid "**Never replace cover images with smaller ones**"
 msgstr ""
 
-#: ../../config/options_cover.rst:19
+#: ../../config/options_cover.rst:27
 msgid ""
 "Enabling this setting will prevent Picard from replacing an embedded cover "
 "image with one having smaller dimensions."
 msgstr ""
 
-#: ../../config/options_cover.rst:21
+#: ../../config/options_cover.rst:29
 msgid "**Never replace selected cover image types**"
 msgstr ""
 
-#: ../../config/options_cover.rst:23
+#: ../../config/options_cover.rst:31
 msgid ""
 "When this is enabled, Picard will not replace existing embedded cover images "
 "of the types specified. The types to retain are selected from a list in the "
 "selection dialog."
 msgstr ""
 
-#: ../../config/options_cover.rst:27
+#: ../../config/options_cover.rst:35
 msgid "**Save cover images as separate files**"
 msgstr ""
 
-#: ../../config/options_cover.rst:29
+#: ../../config/options_cover.rst:37
 msgid ""
 "In the file name mask you can use any variable or function from :doc:`Picard "
 "Tags <../variables/variables>` and :doc:`Picard Scripting Functions <../"
@@ -79,61 +79,61 @@ msgid ""
 "as a preview of the containing directory."
 msgstr ""
 
-#: ../../config/options_cover.rst:31
+#: ../../config/options_cover.rst:39
 msgid ""
 "In addition to scripting variables already available for a track, you can "
 "use the following cover art specific variables:"
 msgstr ""
 
-#: ../../config/options_cover.rst:33
+#: ../../config/options_cover.rst:41
 msgid ""
 "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For "
 "front images this will always be \"front\"."
 msgstr ""
 
-#: ../../config/options_cover.rst:34
+#: ../../config/options_cover.rst:42
 msgid "``coverart_types``: Full list of all types assigned to this image."
 msgstr ""
 
-#: ../../config/options_cover.rst:35
+#: ../../config/options_cover.rst:43
 msgid "``coverart_comment``: The cover art comment."
 msgstr ""
 
-#: ../../config/options_cover.rst:37
+#: ../../config/options_cover.rst:45
 msgid "For example, specifying a file naming mask such as:"
 msgstr ""
 
-#: ../../config/options_cover.rst:43
+#: ../../config/options_cover.rst:51
 msgid ""
 "will preface the file name with the album artist, original release year and "
 "album title."
 msgstr ""
 
-#: ../../config/options_cover.rst:45
+#: ../../config/options_cover.rst:53
 msgid ""
 "You can also have Picard save the images to a subdirectory by including this "
 "in the file naming mask. For example:"
 msgstr ""
 
-#: ../../config/options_cover.rst:51
+#: ../../config/options_cover.rst:59
 msgid "which will place the images in a subdirectory called \"Artwork\"."
 msgstr ""
 
-#: ../../config/options_cover.rst:53
+#: ../../config/options_cover.rst:61
 msgid "**Overwrite the file if it already exists**"
 msgstr ""
 
-#: ../../config/options_cover.rst:55
+#: ../../config/options_cover.rst:63
 msgid ""
 "Check this to replace existing files. This is especially recommended if "
 "trying to write \"folder\" previews for Windows."
 msgstr ""
 
-#: ../../config/options_cover.rst:57
+#: ../../config/options_cover.rst:65
 msgid "**Save only a single front image as separate file**"
 msgstr ""
 
-#: ../../config/options_cover.rst:59
+#: ../../config/options_cover.rst:67
 msgid ""
 "This tells Picard to only save the first \"front\" image to a separate file "
 "with the release. No other \"front\" images or images of any other type will "
@@ -141,17 +141,17 @@ msgid ""
 "files, along with any other specified image types to be downloaded."
 msgstr ""
 
-#: ../../config/options_cover.rst:61
+#: ../../config/options_cover.rst:69
 msgid "**Use the primary image type as the file name**"
 msgstr ""
 
-#: ../../config/options_cover.rst:63
+#: ../../config/options_cover.rst:71
 msgid ""
 "This setting changes how Picard names image files **other than front "
 "images**."
 msgstr ""
 
-#: ../../config/options_cover.rst:65
+#: ../../config/options_cover.rst:73
 msgid ""
 "When checked, Picard will use the type of the image (e.g.: back, booklet, "
 "etc.) as the filename when saving, as long as the type is not front. If the "
@@ -162,11 +162,11 @@ msgid ""
 "following file name for images\" setting."
 msgstr ""
 
-#: ../../config/options_cover.rst:69
+#: ../../config/options_cover.rst:77
 msgid "Cover Art Providers"
 msgstr ""
 
-#: ../../config/options_cover.rst:71
+#: ../../config/options_cover.rst:79
 msgid ""
 "Picard can download Cover Art from a number of sources, and you can choose "
 "which sources you want Picard to use. You can activate more than one "
@@ -174,11 +174,11 @@ msgid ""
 "will try the providers from top to bottom until an image is returned."
 msgstr ""
 
-#: ../../config/options_cover.rst:73
+#: ../../config/options_cover.rst:81
 msgid "**Cover Art Archive: Release**"
 msgstr ""
 
-#: ../../config/options_cover.rst:75
+#: ../../config/options_cover.rst:83
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
 "cooperation with the `Internet Archive <https://archive.org>`_. The Cover "
@@ -186,11 +186,11 @@ msgid ""
 "covers, back covers, booklets, CDs)."
 msgstr ""
 
-#: ../../config/options_cover.rst:77
+#: ../../config/options_cover.rst:85
 msgid "**Cover Art Archive: Release Group**"
 msgstr ""
 
-#: ../../config/options_cover.rst:79
+#: ../../config/options_cover.rst:87
 msgid ""
 "This provider uses the Cover Art Archive cover image assigned to the release "
 "group. This is usually the image that best describes the release group as a "
@@ -200,11 +200,11 @@ msgid ""
 "your release. It is also a good fallback for the Cover Art Archive provider."
 msgstr ""
 
-#: ../../config/options_cover.rst:81
+#: ../../config/options_cover.rst:89
 msgid "**Allowed Cover Art URLs**"
 msgstr ""
 
-#: ../../config/options_cover.rst:83
+#: ../../config/options_cover.rst:91
 msgid ""
 "This will use images provided from approved third-party sites. The image "
 "location is stored as a URL relationship for the release within the "
@@ -212,7 +212,7 @@ msgid ""
 "relationship."
 msgstr ""
 
-#: ../../config/options_cover.rst:87
+#: ../../config/options_cover.rst:95
 msgid ""
 "This relationship type is now deprecated in MusicBrainz, and is no longer "
 "used. See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/"
@@ -220,31 +220,31 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../config/options_cover.rst:89
+#: ../../config/options_cover.rst:97
 msgid "**Local Files**"
 msgstr ""
 
-#: ../../config/options_cover.rst:91
+#: ../../config/options_cover.rst:99
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
 "the :ref:`ref-local-files` provider options."
 msgstr ""
 
-#: ../../config/options_cover.rst:93
+#: ../../config/options_cover.rst:101
 msgid ""
 "In addition to the built-in cover art providers described above, additional "
 "cover art providers can be installed as `plugins <https://picard.musicbrainz."
 "org/plugins/>`_. These include:"
 msgstr ""
 
-#: ../../config/options_cover.rst:95
+#: ../../config/options_cover.rst:103
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
 "focuses on cover art with high visual quality. This provider provides cover "
 "art representative for the release group and not the individual release."
 msgstr ""
 
-#: ../../config/options_cover.rst:97
+#: ../../config/options_cover.rst:105
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
 ">`_, which focuses on cover art with high visual quality. This provider "
@@ -252,14 +252,14 @@ msgid ""
 "individual release."
 msgstr ""
 
-#: ../../config/options_cover.rst:101
+#: ../../config/options_cover.rst:109
 msgid ""
 "You must enable :menuselection:`\"Options --> Metadata --> Use release "
 "relationships\"` for Picard to be able to download cover art from "
 "MusicBrainz cover art relationships."
 msgstr ""
 
-#: ../../config/options_cover.rst:107
+#: ../../config/options_cover.rst:115
 msgid ""
 "Details: :doc:`options_cover_art_processing` / :doc:"
 "`options_cover_art_archive` / :doc:`options_local_files`"

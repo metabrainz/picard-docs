@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-31 09:30-0700\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2025-08-14 11:36+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/configoptions_interface/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_interface/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,12 +25,12 @@ msgstr ""
 ":index:`Opcions de la interfície d'usuari <pair: configuració; interfície "
 "d'usuari>`"
 
-#: ../../config/options_interface.rst:9
+#: ../../config/options_interface.rst:19
 #, fuzzy
 msgid "**Show text labels under icons**"
 msgstr "**Mostra etiquetes de text sota les icones**"
 
-#: ../../config/options_interface.rst:11
+#: ../../config/options_interface.rst:21
 msgid ""
 "If this option is disabled, the text labels under the icons in the toolbar "
 "will not be displayed, causing the toolbar to appear a little smaller."
@@ -39,11 +39,11 @@ msgstr ""
 "sota les icones de la barra d'eines, de manera que la barra d'eines serà una "
 "mica més petita."
 
-#: ../../config/options_interface.rst:13
+#: ../../config/options_interface.rst:23
 msgid "**Show icons in menus**"
 msgstr "**Mostra icones als menús**"
 
-#: ../../config/options_interface.rst:15
+#: ../../config/options_interface.rst:25
 msgid ""
 "Some users prefer to disable menu icons, which is the default behavior for "
 "macOS systems. This option allows the user to select whether the icons are "
@@ -53,11 +53,11 @@ msgstr ""
 "comportament per defecte en sistemes macOS. Aquesta opció permet a l'usuari "
 "seleccionar si s'han de mostrar les icones als menús."
 
-#: ../../config/options_interface.rst:17
+#: ../../config/options_interface.rst:27
 msgid "**User interface language**"
 msgstr "**Llengua de la interfície d'usuari**"
 
-#: ../../config/options_interface.rst:19
+#: ../../config/options_interface.rst:29
 msgid ""
 "By default, Picard will display in the language displayed by your operating "
 "system, however you can override this and select a different language if "
@@ -66,11 +66,11 @@ msgstr ""
 "Per defecte, Picard es mostrarà en la llengua del sistema operatiu, però "
 "podeu canviar aquest comportament i seleccionar una llengua diferent si cal."
 
-#: ../../config/options_interface.rst:21
+#: ../../config/options_interface.rst:31
 msgid "**User interface color theme**"
 msgstr "**Tema de color de la interfície d'usuari**"
 
-#: ../../config/options_interface.rst:23
+#: ../../config/options_interface.rst:33
 msgid ""
 "This option allows the user to select the color theme used by Picard. On "
 "macOS and Windows systems, the available choices are:"
@@ -78,7 +78,7 @@ msgstr ""
 "Aquesta opció permet a l'usuari seleccionar el tema de colors que fa servir "
 "Picard. En sistemes macOS i Windows, les opcions disponibles són:"
 
-#: ../../config/options_interface.rst:25
+#: ../../config/options_interface.rst:35
 msgid ""
 "Default - The default color scheme based on the operating system display "
 "settings."
@@ -86,15 +86,15 @@ msgstr ""
 "Per defecte: esquema de colors per defecte basat en els paràmetres "
 "d'aparença del sistema operatiu."
 
-#: ../../config/options_interface.rst:26
+#: ../../config/options_interface.rst:36
 msgid "Light - A light display theme."
 msgstr "Clar: un tema clar."
 
-#: ../../config/options_interface.rst:27
+#: ../../config/options_interface.rst:37
 msgid "Dark - A dark display theme."
 msgstr "Fosc: un tema fosc."
 
-#: ../../config/options_interface.rst:31
+#: ../../config/options_interface.rst:41
 msgid ""
 "The colors for the light and dark themes can be customized in the :doc:"
 "`options_interface_colors` section. Separate sets of color selections are "
@@ -106,11 +106,11 @@ msgstr ""
 "per als temes clar i fosc. Els colors del tema que es mostra actualment són "
 "els que es mostren per a l'edició."
 
-#: ../../config/options_interface.rst:33
+#: ../../config/options_interface.rst:43
 msgid "**Allow selection of multiple directories**"
 msgstr "**Permet la selecció de diversos directoris**"
 
-#: ../../config/options_interface.rst:35
+#: ../../config/options_interface.rst:45
 msgid ""
 "Enabling this option will bypass the native directory selector and use Qt's "
 "file dialog. This may be desirable since the native directory selector "
@@ -124,7 +124,7 @@ msgstr ""
 "s'aplica al diàleg :menuselection:`«Fitxer --> Afegeix una carpeta»`. "
 "L'explorador de fitxers sempre permet seleccionar diversos directoris."
 
-#: ../../config/options_interface.rst:39
+#: ../../config/options_interface.rst:49
 msgid ""
 "When enabling the multiple directories option setting Picard will no longer "
 "use the system file picker for selecting directories. This may result in "
@@ -134,12 +134,12 @@ msgstr ""
 "selector de fitxers del sistema per a seleccionar directoris. Això pot "
 "reduir la funcionalitat."
 
-#: ../../config/options_interface.rst:41
+#: ../../config/options_interface.rst:51
 msgid "**Use built-in search rather than looking in browser**"
 msgstr ""
 "**Fes servir la cerca incorporada en comptes de la cerca al navegador**"
 
-#: ../../config/options_interface.rst:43
+#: ../../config/options_interface.rst:53
 msgid ""
 "When this option is enabled the search for albums, artists or tracks will "
 "show the results in a dialog. By default this option is enabled. If this "
@@ -151,11 +151,11 @@ msgstr ""
 "defecte. Si inhabiliteu aquesta opció, Picard obrirà una cerca a MusicBrainz."
 "org al navegador per defecte."
 
-#: ../../config/options_interface.rst:45
+#: ../../config/options_interface.rst:55
 msgid "**Use advanced query syntax**"
 msgstr "**Fes servir la sintaxi de consulta avançada**"
 
-#: ../../config/options_interface.rst:47
+#: ../../config/options_interface.rst:57
 msgid ""
 "This will enable advanced query syntax parsing on your searches. This only "
 "applies to the search box at the top right of Picard, not the lookup buttons."
@@ -164,11 +164,11 @@ msgstr ""
 "s'aplica al quadre de cerca a la cantonada superior dreta de Picard, no als "
 "botons de cerca."
 
-#: ../../config/options_interface.rst:49
+#: ../../config/options_interface.rst:59
 msgid "**Show the new user dialog when starting Picard**"
 msgstr "**Mostra el diàleg d'usuari nou en iniciar Picard**"
 
-#: ../../config/options_interface.rst:51
+#: ../../config/options_interface.rst:61
 msgid ""
 "When this is enabled, Picard will show a dialog intended for new users when "
 "you start the program. This displays a warning about the consequences of "
@@ -182,11 +182,11 @@ msgstr ""
 "configuració produeix els resultats esperats. També proporciona un enllaç a "
 "la documentació en línia."
 
-#: ../../config/options_interface.rst:53
+#: ../../config/options_interface.rst:63
 msgid "**Show documentation update checking disabled dialog**"
 msgstr ""
 
-#: ../../config/options_interface.rst:55
+#: ../../config/options_interface.rst:65
 msgid ""
 "When this is enabled, Picard will show a dialog during startup to warn you "
 "if the documentation checking on ReadTheDocs is disabled. The documentation "
@@ -194,11 +194,11 @@ msgid ""
 "`options_general` section."
 msgstr ""
 
-#: ../../config/options_interface.rst:57
+#: ../../config/options_interface.rst:67
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr "**Mostra una confirmació en sortir si hi ha canvis sense desar**"
 
-#: ../../config/options_interface.rst:59
+#: ../../config/options_interface.rst:69
 msgid ""
 "When this is enabled, Picard will show a dialog when you try to quit the "
 "program with unsaved files loaded. This may help prevent accidentally losing "
@@ -208,11 +208,11 @@ msgstr ""
 "amb fitxers sense desar carregats. Això pot impedir que perdeu per accident "
 "els canvis que heu fet a les etiquetes, però que encara no heu desat."
 
-#: ../../config/options_interface.rst:61
+#: ../../config/options_interface.rst:71
 msgid "**Show a confirmation dialog when saving files**"
 msgstr "**Mostra un diàleg de confirmació en desar els fitxers**"
 
-#: ../../config/options_interface.rst:63
+#: ../../config/options_interface.rst:73
 msgid ""
 "When this is enabled, Picard will show a dialog when you save files, "
 "indicating what actions will be performed on the files and the number of "
@@ -223,12 +223,12 @@ msgstr ""
 "quines accions s'aplicaran als fitxers i el nombre de fitxers que es "
 "desaran. Això pot ajudar a impedir canvis accidentals inesperats."
 
-#: ../../config/options_interface.rst:65
+#: ../../config/options_interface.rst:75
 msgid "**Adjust horizontal position in file browser automatically**"
 msgstr ""
 "**Ajusta la posició horitzontal a l'explorador de fitxers automàticament**"
 
-#: ../../config/options_interface.rst:67
+#: ../../config/options_interface.rst:77
 msgid ""
 "When this is enabled, Picard will automatically scroll the file browser "
 "display to keep relevant content visible."
@@ -236,21 +236,21 @@ msgstr ""
 "Si ho habiliteu, Picard desplaçarà automàticament l'explorador de fitxers "
 "perquè el contingut rellevant es mantingui visible."
 
-#: ../../config/options_interface.rst:69
+#: ../../config/options_interface.rst:79
 msgid "**Enable audio player \"now playing\" notifications**"
 msgstr ""
 
-#: ../../config/options_interface.rst:71
+#: ../../config/options_interface.rst:81
 msgid ""
 "When enabled, Picard will send \"now playing\" notifications from the "
 "internal audio player."
 msgstr ""
 
-#: ../../config/options_interface.rst:73
+#: ../../config/options_interface.rst:83
 msgid "**Begin browsing in the following directory**"
 msgstr "**Inicia l'exploració al directori següent**"
 
-#: ../../config/options_interface.rst:75
+#: ../../config/options_interface.rst:85
 msgid ""
 "By default, Picard remembers the last directory used to load files. If you "
 "enable this option and provide a directory, Picard will always start in the "
@@ -260,7 +260,7 @@ msgstr ""
 "fitxers. Si habiliteu aquesta opció i proporcioneu un directori, Picard "
 "sempre s'iniciarà al directori proporcionat."
 
-#: ../../config/options_interface.rst:81
+#: ../../config/options_interface.rst:91
 #, fuzzy
 msgid ""
 "Details: :doc:`options_interface_colors` / :doc:"

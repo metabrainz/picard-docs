@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.4.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2022-05-04 13:14-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -55,7 +55,7 @@ msgstr ""
 "fichiers et un champ de saisie en haut où vous pouvez entrer un modèle "
 "correspondant."
 
-#: ../../usage/tags_from_file_names.rst:19
+#: ../../usage/tags_from_file_names.rst:27
 msgid ""
 "The matching pattern can consist of Picard tag names enclosed in ``%`` signs "
 "and other characters that are matched verbatim. For the tag names you can "
@@ -72,7 +72,7 @@ msgstr ""
 "quelques modèles prédéfinis, mais vous pouvez également les ajuster ou "
 "définir les vôtres."
 
-#: ../../usage/tags_from_file_names.rst:21
+#: ../../usage/tags_from_file_names.rst:29
 msgid ""
 "If your files for example consist of a track number and track title "
 "separated by a space (e.g. :file:`04 Heart of Gold.mp3`) you can use the "
@@ -88,7 +88,7 @@ msgstr ""
 "d'union, comme :file:`04 - Heart of Gold.mp3`, le modèle doit également "
 "inclure ce séparateur, comme :samp:`%tracknumber% - %title%`."
 
-#: ../../usage/tags_from_file_names.rst:23
+#: ../../usage/tags_from_file_names.rst:31
 msgid ""
 "Clicking on the \"Preview\" button next to the matching pattern will show a "
 "preview of the extracted tags for each file name. Once you are satisfied "
@@ -105,11 +105,11 @@ msgstr ""
 "automatiquement, vous devez tout de même enregistrer les fichiers si vous "
 "souhaitez que les balises soient écrites (voir :doc:`save`)."
 
-#: ../../usage/tags_from_file_names.rst:27
+#: ../../usage/tags_from_file_names.rst:35
 msgid "Matching folders"
 msgstr "Dossiers correspondants"
 
-#: ../../usage/tags_from_file_names.rst:29
+#: ../../usage/tags_from_file_names.rst:37
 msgid ""
 "The pattern can also match the parent folders of the file. To match for "
 "folders use a slash (``/``) as separator. If for example the file is in a "
@@ -126,11 +126,11 @@ msgstr ""
 "faire correspondre l'artiste, album, numéro de piste et titre avec un modèle "
 "de :samp:`%artist%/%album%/%tracknumber% - %title%`."
 
-#: ../../usage/tags_from_file_names.rst:37
+#: ../../usage/tags_from_file_names.rst:54
 msgid "Replace underscores with spaces"
 msgstr "Remplacer les traits de soulignement par des espaces"
 
-#: ../../usage/tags_from_file_names.rst:39
+#: ../../usage/tags_from_file_names.rst:56
 msgid ""
 "Sometimes files have been named without spaces and use underscores instead. "
 "For example a file could be named :file:`04_Heart_of_Gold.mp3`. By default "
@@ -146,11 +146,11 @@ msgstr ""
 "`%tracknumber% _%title%` pour extraire correctement le titre en \"Heart of "
 "Gold\"."
 
-#: ../../usage/tags_from_file_names.rst:43
+#: ../../usage/tags_from_file_names.rst:60
 msgid "Ignoring parts of the file name"
 msgstr "Ignorer certaines parties du nom de fichier"
 
-#: ../../usage/tags_from_file_names.rst:45
+#: ../../usage/tags_from_file_names.rst:62
 msgid ""
 "Sometimes you don't want to include parts of the file name in your tags and "
 "just want to ignore them. The pattern must always match the entire file "
@@ -170,7 +170,7 @@ msgstr ""
 "scripting`, mais ne sera pas écrite dans les balises réelles du fichier lors "
 "de l'enregistrement."
 
-#: ../../usage/tags_from_file_names.rst:47
+#: ../../usage/tags_from_file_names.rst:64
 msgid ""
 "One example might be if you want to extract only the track number from a "
 "file name like :file:`04 Are You Ready for the Country_.mp3`. Maybe the "
@@ -191,7 +191,7 @@ msgstr ""
 "dans les balises de fichier. Le nom :samp:`%_filetitle%` est choisi "
 "arbitrairement, il suffit de commencer par un trait de soulignement."
 
-#: ../../usage/tags_from_file_names.rst:51
+#: ../../usage/tags_from_file_names.rst:68
 msgid ""
 "Parsing hidden variables from file names is supported since Picard 2.5. "
 "Earlier versions would create an actual tag which would get stored to the "

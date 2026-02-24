@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2025-08-14 11:36+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
-"Language-Team: Catalan <https://translations.metabrainz.org/projects/"
-"picard-docs/configoptions_network/ca/>\n"
+"Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_network/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,11 +28,11 @@ msgid ""
 "These settings allow you to configure the network settings used by Picard."
 msgstr ""
 
-#: ../../config/options_network.rst:11
+#: ../../config/options_network.rst:19
 msgid "**Web Proxy**"
 msgstr "**Servidor intermediari**"
 
-#: ../../config/options_network.rst:13
+#: ../../config/options_network.rst:21
 msgid ""
 "If you need a proxy to make an outside network connection you may specify "
 "one here. You can choose between HTTP and SOCKS proxy. The required settings "
@@ -45,11 +45,11 @@ msgstr ""
 "servidor** i **Port**. Si el servidor intermediari requereix autenticació, "
 "també heu d'emplenar **Nom d'usuari** i **Contrasenya**."
 
-#: ../../config/options_network.rst:15
+#: ../../config/options_network.rst:23
 msgid "**Request timeout in seconds**"
 msgstr "**Temps d'espera de les sol·licituds en segons**"
 
-#: ../../config/options_network.rst:17
+#: ../../config/options_network.rst:25
 msgid ""
 "By default Picard will abort running network requests after 30 seconds of "
 "inactivity. If needed you can change the timeout period here."
@@ -57,11 +57,11 @@ msgstr ""
 "Per defecte, Picard anul·larà les sol·licituds de xarxa en curs després de "
 "30 segons d'inactivitat. Si cal, podeu canviar el temps d'espera aquí."
 
-#: ../../config/options_network.rst:22
+#: ../../config/options_network.rst:30
 msgid "**Browser Integration**"
 msgstr "**Integració amb el navegador**"
 
-#: ../../config/options_network.rst:24
+#: ../../config/options_network.rst:32
 msgid ""
 "The browser integration allows you to load releases and recordings into "
 "Picard directly from the MusicBrainz website. Once you have opened "
@@ -76,15 +76,15 @@ msgstr ""
 "els enregistraments. Si feu clic en aquest botó, es carregarà la publicació "
 "o l'enregistrament corresponent a Picard."
 
-#: ../../config/options_network.rst:19
+#: ../../config/options_network.rst:27
 msgid "lookup_tagger"
 msgstr ""
 
-#: ../../config/options_network.rst:26
+#: ../../config/options_network.rst:34
 msgid "**Default listening port**"
 msgstr "**Port d'escolta per defecte**"
 
-#: ../../config/options_network.rst:28
+#: ../../config/options_network.rst:36
 msgid ""
 "This identifies the default port Picard will listen on for the browser "
 "integration. If the port is not available Picard will try to increase the "
@@ -94,11 +94,11 @@ msgstr ""
 "el navegador. Si el port no està disponible, Picard intentarà incrementar el "
 "número de port d'un en un fins que trobi un port lliure."
 
-#: ../../config/options_network.rst:30
+#: ../../config/options_network.rst:38
 msgid "**Listen only on localhost**"
 msgstr "**Escolta només localhost**"
 
-#: ../../config/options_network.rst:32
+#: ../../config/options_network.rst:40
 msgid ""
 "By default Picard will limit access to the browser integration port to your "
 "local machine. Deactivating this option will expose the port on your "
@@ -114,7 +114,7 @@ msgstr ""
 "servir per a l'aplicació d'Android `Lector de codis de Picard <https://play."
 "google.com/store/apps/details?id=org.musicbrainz.picard.barcodescanner>`_."
 
-#: ../../config/options_network.rst:36
+#: ../../config/options_network.rst:44
 msgid ""
 "Only expose the port externally when you actually need it and only on "
 "networks you trust. Exposing application ports via the network can open "

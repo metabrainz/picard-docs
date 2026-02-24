@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2020-11-19 16:08-0700\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgstr ""
 "par le fournisseur de pochettes de fichiers locaux. Si vous essayez de "
 "collecter plus d'une image, la dénomination est importante."
 
-#: ../../config/options_local_files.rst:13
+#: ../../config/options_local_files.rst:21
 #, fuzzy
 msgid ""
 "The file names are defined using a `regular expression <https://en.wikipedia."
@@ -49,7 +49,7 @@ msgstr ""
 "\"albumart\" et l'extension de fichier \"jpg\", \"png\", \"gif\" ou "
 "\"tiff\" (par exemple: \"folder.jpg\" ou \"cover.png\")."
 
-#: ../../config/options_local_files.rst:15
+#: ../../config/options_local_files.rst:23
 msgid ""
 "The first part of the regular expression is a non-capture group: ``(?:cover|"
 "folder|albumart)``. Items listed in this group will not get captured and the "
@@ -59,7 +59,7 @@ msgstr ""
 "``(?:cover|folder|albumart)``. Les éléments répertoriés dans ce groupe ne "
 "seront pas capturés et le type par défaut (Front) s'appliquera."
 
-#: ../../config/options_local_files.rst:17
+#: ../../config/options_local_files.rst:25
 msgid ""
 "The second part of the regular expression is a group: ``(.*)``. This is the "
 "real capture, so if the file names match any of the cover art types, they "
@@ -69,7 +69,7 @@ msgstr ""
 "la vraie capture, donc si les noms de fichiers correspondent à l'un des "
 "types de pochettes, ils seront étiquetés comme tels."
 
-#: ../../config/options_local_files.rst:21
+#: ../../config/options_local_files.rst:29
 msgid ""
 "A common mistake is to add all the types into the first (non-capture) group. "
 "This means that all the regular file names would be thrown into the Front "

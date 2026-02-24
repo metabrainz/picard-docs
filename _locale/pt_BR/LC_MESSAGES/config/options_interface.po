@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-31 09:30-0700\n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
 "PO-Revision-Date: 2021-08-24 12:51+0000\n"
 "Last-Translator: Gabriel Ferreira <gabrielcarvfer@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.uploadedlobster.com/"
@@ -24,12 +24,12 @@ msgid ":index:`User Interface Options <pair: configuration; user interface>`"
 msgstr ""
 ":Index:`Opções da Interface do Usuário <pair: configuration; user interface>`"
 
-#: ../../config/options_interface.rst:9
+#: ../../config/options_interface.rst:19
 #, fuzzy
 msgid "**Show text labels under icons**"
 msgstr "**Mostrar legenda abaixo dos ícones**"
 
-#: ../../config/options_interface.rst:11
+#: ../../config/options_interface.rst:21
 msgid ""
 "If this option is disabled, the text labels under the icons in the toolbar "
 "will not be displayed, causing the toolbar to appear a little smaller."
@@ -38,22 +38,22 @@ msgstr ""
 "de ferramenta não serão mostradas, fazendo com que a barra seja menos "
 "espaçosa."
 
-#: ../../config/options_interface.rst:13
+#: ../../config/options_interface.rst:23
 msgid "**Show icons in menus**"
 msgstr ""
 
-#: ../../config/options_interface.rst:15
+#: ../../config/options_interface.rst:25
 msgid ""
 "Some users prefer to disable menu icons, which is the default behavior for "
 "macOS systems. This option allows the user to select whether the icons are "
 "displayed in the menus."
 msgstr ""
 
-#: ../../config/options_interface.rst:17
+#: ../../config/options_interface.rst:27
 msgid "**User interface language**"
 msgstr "**Linguagem da interface do usuário**"
 
-#: ../../config/options_interface.rst:19
+#: ../../config/options_interface.rst:29
 msgid ""
 "By default, Picard will display in the language displayed by your operating "
 "system, however you can override this and select a different language if "
@@ -62,11 +62,11 @@ msgstr ""
 "Por padrão, o Picard usa a língua do seu sistema operacional, porém você "
 "pode escolher uma outra linguagem se achar necessário."
 
-#: ../../config/options_interface.rst:21
+#: ../../config/options_interface.rst:31
 msgid "**User interface color theme**"
 msgstr "**Tema de cores da interface do usuário**"
 
-#: ../../config/options_interface.rst:23
+#: ../../config/options_interface.rst:33
 msgid ""
 "This option allows the user to select the color theme used by Picard. On "
 "macOS and Windows systems, the available choices are:"
@@ -74,21 +74,21 @@ msgstr ""
 "Esta opção permite que o usuário selecione o tema de cores usado pelo "
 "Picard. No macOS e no Windows, as opções disponíveis são:"
 
-#: ../../config/options_interface.rst:25
+#: ../../config/options_interface.rst:35
 msgid ""
 "Default - The default color scheme based on the operating system display "
 "settings."
 msgstr "Padrão - O tema padrão baseado nas configurações do sistema."
 
-#: ../../config/options_interface.rst:26
+#: ../../config/options_interface.rst:36
 msgid "Light - A light display theme."
 msgstr "Claro - O tema claro."
 
-#: ../../config/options_interface.rst:27
+#: ../../config/options_interface.rst:37
 msgid "Dark - A dark display theme."
 msgstr "Escuro - O tema escuro."
 
-#: ../../config/options_interface.rst:31
+#: ../../config/options_interface.rst:41
 msgid ""
 "The colors for the light and dark themes can be customized in the :doc:"
 "`options_interface_colors` section. Separate sets of color selections are "
@@ -100,11 +100,11 @@ msgstr ""
 "os temas claro e escuro. As cores disponíveis para modificação modificarão o "
 "tema atual."
 
-#: ../../config/options_interface.rst:33
+#: ../../config/options_interface.rst:43
 msgid "**Allow selection of multiple directories**"
 msgstr "**Permitir a seleção de múltiplos diretórios**"
 
-#: ../../config/options_interface.rst:35
+#: ../../config/options_interface.rst:45
 msgid ""
 "Enabling this option will bypass the native directory selector and use Qt's "
 "file dialog. This may be desirable since the native directory selector "
@@ -118,18 +118,18 @@ msgstr ""
 "menuselection:`\"Arquivo --> Adicionar Pasta\"`. O painel navegador de "
 "arquivos sempre permite seleção múltipla."
 
-#: ../../config/options_interface.rst:39
+#: ../../config/options_interface.rst:49
 msgid ""
 "When enabling the multiple directories option setting Picard will no longer "
 "use the system file picker for selecting directories. This may result in "
 "reduced functionality."
 msgstr ""
 
-#: ../../config/options_interface.rst:41
+#: ../../config/options_interface.rst:51
 msgid "**Use built-in search rather than looking in browser**"
 msgstr "**Usar busca integrada ao invés de buscar no navegador**"
 
-#: ../../config/options_interface.rst:43
+#: ../../config/options_interface.rst:53
 msgid ""
 "When this option is enabled the search for albums, artists or tracks will "
 "show the results in a dialog. By default this option is enabled. If this "
@@ -140,11 +140,11 @@ msgstr ""
 "serão mostradas numa janela. Se esta opção estiver desabilitada, Picard "
 "continuará a busca no MusicBrainz.org utilizando seu navegador padrão."
 
-#: ../../config/options_interface.rst:45
+#: ../../config/options_interface.rst:55
 msgid "**Use advanced query syntax**"
 msgstr "**Usar sintaxe de busca avançada**"
 
-#: ../../config/options_interface.rst:47
+#: ../../config/options_interface.rst:57
 msgid ""
 "This will enable advanced query syntax parsing on your searches. This only "
 "applies to the search box at the top right of Picard, not the lookup buttons."
@@ -153,11 +153,11 @@ msgstr ""
 "Isto só se aplica à caixa de busca na lateral superior direita do Picard, e "
 "não aos botões de busca."
 
-#: ../../config/options_interface.rst:49
+#: ../../config/options_interface.rst:59
 msgid "**Show the new user dialog when starting Picard**"
 msgstr ""
 
-#: ../../config/options_interface.rst:51
+#: ../../config/options_interface.rst:61
 msgid ""
 "When this is enabled, Picard will show a dialog intended for new users when "
 "you start the program. This displays a warning about the consequences of "
@@ -166,11 +166,11 @@ msgid ""
 "also provides a link to the on-line documentation."
 msgstr ""
 
-#: ../../config/options_interface.rst:53
+#: ../../config/options_interface.rst:63
 msgid "**Show documentation update checking disabled dialog**"
 msgstr ""
 
-#: ../../config/options_interface.rst:55
+#: ../../config/options_interface.rst:65
 msgid ""
 "When this is enabled, Picard will show a dialog during startup to warn you "
 "if the documentation checking on ReadTheDocs is disabled. The documentation "
@@ -178,12 +178,12 @@ msgid ""
 "`options_general` section."
 msgstr ""
 
-#: ../../config/options_interface.rst:57
+#: ../../config/options_interface.rst:67
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr ""
 "**Mostrar janela de confirmação do fechamento para mudanças não salvas**"
 
-#: ../../config/options_interface.rst:59
+#: ../../config/options_interface.rst:69
 msgid ""
 "When this is enabled, Picard will show a dialog when you try to quit the "
 "program with unsaved files loaded. This may help prevent accidentally losing "
@@ -193,13 +193,13 @@ msgstr ""
 "com arquivos modificados não salvos. Isto é feito para evitar que etiquetas "
 "modificadas por você sejam perdidas."
 
-#: ../../config/options_interface.rst:61
+#: ../../config/options_interface.rst:71
 #, fuzzy
 msgid "**Show a confirmation dialog when saving files**"
 msgstr ""
 "**Mostrar janela de confirmação do fechamento para mudanças não salvas**"
 
-#: ../../config/options_interface.rst:63
+#: ../../config/options_interface.rst:73
 msgid ""
 "When this is enabled, Picard will show a dialog when you save files, "
 "indicating what actions will be performed on the files and the number of "
@@ -207,31 +207,31 @@ msgid ""
 "you are not expecting."
 msgstr ""
 
-#: ../../config/options_interface.rst:65
+#: ../../config/options_interface.rst:75
 msgid "**Adjust horizontal position in file browser automatically**"
 msgstr ""
 
-#: ../../config/options_interface.rst:67
+#: ../../config/options_interface.rst:77
 msgid ""
 "When this is enabled, Picard will automatically scroll the file browser "
 "display to keep relevant content visible."
 msgstr ""
 
-#: ../../config/options_interface.rst:69
+#: ../../config/options_interface.rst:79
 msgid "**Enable audio player \"now playing\" notifications**"
 msgstr ""
 
-#: ../../config/options_interface.rst:71
+#: ../../config/options_interface.rst:81
 msgid ""
 "When enabled, Picard will send \"now playing\" notifications from the "
 "internal audio player."
 msgstr ""
 
-#: ../../config/options_interface.rst:73
+#: ../../config/options_interface.rst:83
 msgid "**Begin browsing in the following directory**"
 msgstr "**Comece a navegar no seguinte diretório**"
 
-#: ../../config/options_interface.rst:75
+#: ../../config/options_interface.rst:85
 msgid ""
 "By default, Picard remembers the last directory used to load files. If you "
 "enable this option and provide a directory, Picard will always start in the "
@@ -241,7 +241,7 @@ msgstr ""
 "arquivos. Se habilitar esta opção e fornecer um diretório, o Picard sempre "
 "iniciará por lá."
 
-#: ../../config/options_interface.rst:81
+#: ../../config/options_interface.rst:91
 #, fuzzy
 msgid ""
 "Details: :doc:`options_interface_colors` / :doc:"
