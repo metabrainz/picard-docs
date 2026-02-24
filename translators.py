@@ -22,6 +22,7 @@ ALIASES = {
     'bob': 'Bob Swift',
     'phw': 'Philipp Wolfer',
     'rdswift': 'Bob Swift',
+    'mfmeulenbelt': 'Maurits Meulenbelt',
 }
 
 # Contributor names to ignore (lower case)
