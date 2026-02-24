@@ -420,6 +420,17 @@ TAG_MAP = [
     },
 
     {
+        "tag_name": "iTunes CDDB 1 [9]",
+        "picard_name": "``itunes_cddb_1``",
+        "id3v2": "``iTunes_CDDB_1``",
+        "vorbis": "n/a",
+        "apev2": "n/a",
+        "itunes": "``----:com.apple.iTunes:iTunes_CDDB_1``",
+        "wmp": "n/a",
+        "riff": "n/a",
+    },
+
+    {
         "tag_name": "Language",
         "picard_name": "``language``",
         "id3v2": "``TLAN``",
