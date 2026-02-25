@@ -275,7 +275,7 @@ These tags are only available in iTunes files and are not able to be populated b
 
 **itunes_cddb_1**
 
-   An iTunes-specific tag containing a code that uniquely identifies a CD based on the number of tracks and their lengths.
+   An iTunes-specific tag containing a code that uniquely identifies a CD based on the number of tracks and their lengths (*since Picard 3.0*).
 
 **podcast**
 
