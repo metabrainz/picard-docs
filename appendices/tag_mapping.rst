@@ -28,7 +28,6 @@ AcoustID
 .. csv-table::
    :width: 100%
    :widths: 37 100
-
    "Internal Name", "``acoustid_id``"
    "ID3v2", "``TXXX:Acoustid Id``"
    "Vorbis", "``ACOUSTID_ID``"
@@ -830,6 +829,22 @@ MusicBrainz Work ID
    "APEv2", "``MUSICBRAINZ_WORKID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Work Id``"
    "ASF/Windows Media", "``MusicBrainz/Work Id``"
+   "RIFF INFO", "n/a"
+
+
+MusicBrainz Composer ID
+------------------------
+
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``musicbrainz_composerid``"
+   "ID3v2", "``TXXX:MusicBrainz Composer Id``"
+   "Vorbis", "``MUSICBRAINZ_COMPOSERID``"
+   "APEv2", "``MUSICBRAINZ_COMPOSERID``"
+   "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Composer Id``"
+   "ASF/Windows Media", "``MusicBrainz/Composer Id``"
    "RIFF INFO", "n/a"
 
 
