@@ -853,7 +853,7 @@ MusicIP Fingerprint
 .. csv-table::
    :width: 100%
    :widths: 37 100
-   
+
    "Internal Name", "``musicip_fingerprint``"
    "ID3v2", "``TXXX:MusicMagic Fingerprint``"
    "Vorbis", "``FINGERPRINT=MusicMagic Fingerprint {fingerprint}``"
