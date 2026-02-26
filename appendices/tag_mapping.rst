@@ -833,8 +833,7 @@ MusicBrainz Work ID
 
 
 MusicBrainz Composer ID
-------------------------
-
+-----------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
