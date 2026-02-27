@@ -563,6 +563,17 @@ TAG_MAP = [
     },
 
     {
+        "tag_name": "MusicBrainz Composer ID",
+        "picard_name": "``musicbrainz_composerid``",
+        "id3v2": "``TXXX:MusicBrainz Composer Id``",
+        "vorbis": "``MUSICBRAINZ_COMPOSERID``",
+        "apev2": "``MUSICBRAINZ_COMPOSERID``",
+        "itunes": "``----:com.apple.iTunes:MusicBrainz Composer Id``",
+        "wmp": "``MusicBrainz/Composer Id``",
+        "riff": "n/a",
+    },
+
+    {
         "tag_name": "`MusicBrainz Disc ID <https://musicbrainz.org/doc/Disc_ID>`_",
         "picard_name": "``musicbrainz_discid``",
         "id3v2": "``TXXX:MusicBrainz Disc Id``",
