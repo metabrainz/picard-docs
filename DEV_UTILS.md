@@ -12,7 +12,7 @@ Files are checked for consistency and integrity by using the `test` command. The
 
 ### Documentation and Translation Files
 
-- `rst`: Lint checks the restructured text (*.rst) files. The optional argument `-q`/`--quiet` is used to suppress INFO level messages from the output.
+- `rst`: Lint checks the restructured text (*.rst) files. The optional argument `-v`/`--verbose` is used to include INFO level messages in the output, and `-i`/`--ignore-warnings` is used to not fail the test on WARNING level messages.
 - `sphinx`: Performs a test build of the restructured text files using Sphinx.
 - `po`: Performs a rudimentary check of the restructured text contained in the *.po translation files.
 - `fuzzy`: Provides a list of all *.po translation files that contain a fuzzy translation that will need to be reviewed.

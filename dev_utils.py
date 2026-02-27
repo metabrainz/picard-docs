@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Python script used to provide development support functions.
 """
-# Copyright (C) 2020-2025 Bob Swift
+# Copyright (C) 2020-2026 Bob Swift
 # Copyright (C) 2021 Philipp Wolfer
 
 # pylint: disable=too-many-lines
@@ -24,8 +24,8 @@ import conf
 import tag_mapping
 
 SCRIPT_NAME = 'Picard Docs Builder Utils'
-SCRIPT_VERS = '0.30'
-SCRIPT_COPYRIGHT = '2021-2025'
+SCRIPT_VERS = '1.0'
+SCRIPT_COPYRIGHT = '2021-2026'
 SCRIPT_AUTHOR = 'Bob Swift'
 
 PACKAGE_NAME = 'picard-docs'
@@ -81,8 +81,6 @@ DIFF_FILE = 'git_diff.txt'
 ######################
 #   Linter Options   #
 ######################
-
-FAIL_ON_WARNINGS = True
 
 PYTHON_FILES_TO_CHECK = [
     'setup.py',
@@ -400,10 +398,17 @@ def parse_command_line():
     )
 
     parser01.add_argument(
-        '-q', '--quiet',
+        '-i', '--ignore-warnings',
         action='store_true',
-        dest='test_quiet',
-        help="suppress information messages"
+        dest='test_ignore_warnings',
+        help="don't fail on RST warnings"
+    )
+
+    parser01.add_argument(
+        '-v', '--verbose',
+        action='store_true',
+        dest='test_verbose',
+        help="show verbose information messages"
     )
 
     # Parse command `build`
@@ -552,9 +557,15 @@ def python_files_to_check():
 class LintRST():
     """Lint the restructured text (RST) files.
     """
-    def __init__(self):
+    def __init__(self, verbose=False, fail_on_warnings=True):
         """Provides an instance of the "restructuredtext-lint" linter.
+
+        Args:
+            verbose (bool, optional): Print verbose output for each file checked. Defaults to False.
+            fail_on_warnings (bool, optional): Fail if any warnings are found. Defaults to True.
         """
+        self.verbose = verbose
+        self.fail_on_warnings = fail_on_warnings
         self.checked_count = 0
         self.warning_count = 0
         self.error_count = 0
@@ -562,13 +573,12 @@ class LintRST():
         self.untested = 0
         self.linter = restructuredtext_lint
 
-    def process_error(self, err):
+    def process_error(self, err) -> str:
         """Print the error information and increment the appropriate error counter.
 
         Args:
             err (restructuredtext_lint error): Restructured text linter error object.
         """
-        print(f'\n   [{err.type}] Line {err.line}: {err.message}', end='', flush=True)
         if err.type == 'WARNING':
             self.warning_count += 1
         elif err.type == 'INFO':
@@ -579,30 +589,25 @@ class LintRST():
             # Includes 'ERROR' and 'SEVERE'
             self.error_count += 1
 
-    def check_file(self, file_name, ignore_info=True):  # pylint: disable=too-many-branches
+        return '' if err.type == 'INFO' and not self.verbose else f'\n   [{err.type}] Line {err.line}: {err.message}'
+
+    def check_file(self, file_name):  # pylint: disable=too-many-branches
         """Lint check the specified file, printing the findings to the console.
 
         Arguments:
             file_name {str} -- Path and name of the file to check
-
-        Keyword Arguments:
-            ignore_info {bool} -- Determines whether INFO notices should be ignored (default: {True})
         """
-        print(f"{' ' * 79}\r{file_name}", end='', flush=True)
         self.checked_count += 1
         if not os.path.isfile(file_name):
-            self.process_error(ErrorLintRST('ERROR', 0, 'File not found'))
+            print(f"{file_name}{self.process_error(ErrorLintRST('ERROR', 0, 'File not found'))}\n")
             return
 
+        err_text = ''
         try:
-            err_processed = False
-            errs = self.linter.lint_file(file_name)
-            if not errs:
-                errs = []
+            errs = self.linter.lint_file(file_name) or []
             for err in errs:
-                err_process = True
                 if err.type == 'INFO':
-                    if ignore_info:
+                    if not self.verbose:
                         # Ignore this error message and continue testing
                         continue
                     m = RE_TEST_DIRECTIVE_1.match(err.message)
@@ -622,25 +627,22 @@ class LintRST():
                     m = RE_TEST_ROLE_2.match(err.message)
                     if m and m.group(1) in IGNORE_ROLES:
                         continue
-                if err_process:
-                    err_processed = True
-                    self.process_error(err)
-            print('\n\n' if err_processed else f"\r{' ' * 79}\r", end='', flush=True)
-        except UnicodeDecodeError:
-            err = ErrorLintRST('UNTESTED', 0, 'Unable to check because of unmapped unicode characters.\n')
-            self.process_error(err)
-        except IOError as ex:
-            self.process_error(ErrorLintRST('ERROR', 0, f'Error reading file. ({ex})'))
+                err_text += self.process_error(err)
 
-    def check(self, root_dir, ignore_info=False, fail_on_warnings=False):
+        except UnicodeDecodeError:
+            err_text += self.process_error(ErrorLintRST('UNTESTED', 0, 'Unable to check because of unmapped unicode characters.'))
+
+        except IOError as ex:
+            err_text += self.process_error(ErrorLintRST('ERROR', 0, f'Error reading file. ({ex})'))
+
+        if err_text:
+            print(f"{file_name}{err_text}\n")
+
+    def check(self, root_dir):
         """Check all files in the specified directory, including files in subdirectories.
 
         Arguments:
             root_dir {str} -- Path to the root directory to check
-
-        Keyword Arguments:
-            ignore_info {bool} -- Determines whether INFO notices should be ignored (default: {False})
-            fail_on_warnings {bool} -- Determines whether warnings will cause the check to return a failed status (default: {False})
 
         Returns:
             {int} -- Error code 1 if check failed, otherwise 0.
@@ -648,17 +650,17 @@ class LintRST():
         for dir_name, subdir_list, file_list in os.walk(root_dir):  # pylint: disable=unused-variable
             for fname in file_list:
                 if str(fname).lower().endswith('.rst'):
-                    self.check_file(os.path.join(dir_name, fname), ignore_info)
+                    self.check_file(os.path.join(dir_name, fname))
 
         text = (
             f'Checked {self.checked_count:,} files.  '
             f'Errors: {self.error_count:,}  '
             f'Warnings: {self.warning_count:,}  '
             f'Untested: {self.untested:,}  '
-        ) + ('' if ignore_info else f'Info: {self.info_count:,}')
+        ) + ('' if not self.verbose else f'Info: {self.info_count:,}')
         print(f"{text.strip()}")
 
-        err = self.error_count + (self.warning_count if fail_on_warnings else 0)
+        err = self.error_count + (self.warning_count if self.fail_on_warnings else 0)
         return 1 if err > 0 else 0
 
 
@@ -872,7 +874,7 @@ def run_sphinx_test(language=''):
 
 ################################################################################
 
-def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
+def run_lint(root_dir, verbose=False, fail_on_warnings=True):
     """Check the RST files in the specified directory and subdirectories.
 
     Arguments:
@@ -898,11 +900,9 @@ def run_lint(root_dir, ignore_info=False, fail_on_warnings=False):
     # # ---------------------------------------------------------------------
 
     print(f'\nLint checking all RST files starting in the "{root_dir}" directory.\n')
-    linter = LintRST()
-    err = linter.check(root_dir, ignore_info, fail_on_warnings)
-    exit_code = 1 if err > 0 else 0
-    if exit_code:
-        exit_with_code(exit_code)
+    linter = LintRST(verbose=verbose, fail_on_warnings=fail_on_warnings)
+    if linter.check(root_dir):
+        exit_with_code(1)
 
 
 ################################################################################
@@ -1811,10 +1811,11 @@ def main():
                 exit_with_code(1)
 
     elif 'test_targets' in vars(args):
-        quiet = args.test_quiet if 'test_quiet' in vars(args) else False
+        verbose = args.test_verbose if 'test_verbose' in vars(args) else False
+        ignore_warnings = args.test_ignore_warnings if 'test_ignore_warnings' in vars(args) else False
         for target in args.test_targets:
             if target == 'rst':
-                run_lint(SPHINX_.SOURCE_DIR, ignore_info=quiet, fail_on_warnings=FAIL_ON_WARNINGS)
+                run_lint(SPHINX_.SOURCE_DIR, verbose=verbose, fail_on_warnings=not ignore_warnings)
 
             elif target == 'sphinx':
                 for lang in process_languages:

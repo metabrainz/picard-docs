@@ -30,7 +30,7 @@ repos:
     hooks:
     - id: test-rst
       name: Test RST Files with dev_utils.py
-      entry: python dev_utils.py test rst --quiet
+      entry: python dev_utils.py test rst
       language: system
       pass_filenames: false
       types: [ text ]
