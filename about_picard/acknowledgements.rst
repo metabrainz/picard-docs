@@ -38,10 +38,10 @@ Contributors include (in alphabetic surname order):
 - Odd Stråbø
 - Bob Swift
 - Akshat Tiwari
+- Deepak Tiwari
 - Philipp Wolfer
 - yvanzo
 - Shadab Zafar
-
 
 .. note::
 
