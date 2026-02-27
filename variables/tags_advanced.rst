@@ -99,6 +99,10 @@ If you enable "Use track relationships" in the Option settings, you get these ex
 
    The MBID for the Work if a related work exists.
 
+**musicbrainz_composerid**
+
+   A multi-value tag containing the MusicBrainz Identifier (MBID) for the composer(s) of the associated work (*since Picard 3.0*). The MBIDs appear in the same order as the corresponding names in the ``composer`` tag.
+
 **performer:<type>**
 
    The names of the performers for the specified type. These types include:

@@ -683,6 +683,21 @@ Movement Number :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
+MusicBrainz Composer ID
+------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``musicbrainz_composerid``"
+   "ID3v2", "``TXXX:MusicBrainz Composer Id``"
+   "Vorbis", "``MUSICBRAINZ_COMPOSERID``"
+   "APEv2", "``MUSICBRAINZ_COMPOSERID``"
+   "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Composer Id``"
+   "ASF/Windows Media", "``MusicBrainz/Composer Id``"
+   "RIFF INFO", "n/a"
+
+
 `MusicBrainz Disc ID <https://musicbrainz.org/doc/Disc_ID>`_
 -------------------------------------------------------------
 .. csv-table::
