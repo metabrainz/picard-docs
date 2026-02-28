@@ -44,7 +44,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Lint Test RST Files
-      run: python ./setup.py test rst
+      run: python ./dev_utils.py test rst
     - name: Setup for Build
       run: |
         export SPHINXBUILD=`which sphinx-build`
@@ -52,7 +52,7 @@ jobs:
         mkdir docs
     - name: Build Tag Map Files
       run: |
-        python ./setup.py build map
+        python ./dev_utils.py build map
     - name: Store Tag Map Build Output File
       uses: actions/upload-artifact@v4
       with:
@@ -61,27 +61,27 @@ jobs:
         retention-days: 5
     - name: Update Translation Files
       run: |
-        python ./setup.py build pot
+        python ./dev_utils.py build pot
     - name: Build HTML Files - ${{ inputs.buildLevel }}
       run: |
-        python ./setup.py clean html
-        python ./setup.py ${{ env.MY_BUILD_ARG }} build html
+        python ./dev_utils.py clean html
+        python ./dev_utils.py ${{ env.MY_BUILD_ARG }} build html
     - name: Store HTML Build Output File
       uses: actions/upload-artifact@v4
       with:
         name: html_files
         path: docs/*.zip
         retention-days: 5
-    - name: Build EPUB File - ${{ inputs.buildLevel }}
-      run: |
-        python ./setup.py clean epub
-        python ./setup.py ${{ env.MY_BUILD_ARG }} build epub
-    - name: Store ePub Build Output File
-      uses: actions/upload-artifact@v4
-      with:
-        name: epub_file
-        path: docs/*.epub
-        retention-days: 5
+    # - name: Build EPUB File - ${{ inputs.buildLevel }}
+    #   run: |
+    #     python ./dev_utils.py clean epub
+    #     python ./dev_utils.py ${{ env.MY_BUILD_ARG }} build epub
+    # - name: Store ePub Build Output File
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: epub_file
+    #     path: docs/*.epub
+    #     retention-days: 5
     - name: Install LaTeX dependencies
       run: |
         sudo apt-get update
@@ -94,14 +94,14 @@ jobs:
         sudo apt-get install xindy
     - name: Build PDF File - ${{ inputs.buildLevel }}
       run: |
-        python ./setup.py clean pdf
-        python ./setup.py ${{ env.MY_BUILD_ARG }} build pdf
+        python ./dev_utils.py clean pdf
+        python ./dev_utils.py ${{ env.MY_BUILD_ARG }} build pdf
     - name: Store PDF Build Output File
       uses: actions/upload-artifact@v4
       with:
         name: pdf_file
         path: docs/*.pdf
         retention-days: 5
-    - name: Display Variables Passed to Publish Action
-      run: |
-        cat docs/__init__.py
+    # - name: Display Variables Passed to Publish Action
+    #   run: |
+    #     cat docs/__init__.py
