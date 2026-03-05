@@ -152,7 +152,7 @@ When albums and tracks are displayed in the right-hand pane, each line begins wi
 :index:`Status Bar <icons; status bar, status bar>`
 --------------------------------------------------------
 
-There is a status bar at the bottom of Picard's main screen, which displays some information about current processing status. This includes four numbers along with the current port number that Picard is monitoring. In addition, if Picard is currently processing your files an estimated time to completion will also be displayed to the left of the status indicators.
+There is a status bar at the bottom of Picard's main screen, which displays some information about current processing status. This includes four numbers along with the current port number that Picard is monitoring, and a notification icon if there are any plugin updates available. In addition, if Picard is currently processing your files an estimated time to completion will also be displayed to the left of the status indicators.
 
 .. image:: images/status_bar.png
    :width: 100 %
@@ -164,6 +164,8 @@ From left to right, the numbers represent:
 3. The number of MusicBrainz releases loaded.
 4. The number of files with pending action (e.g. loading, saving, fingerprinting).
 5. The number of active network requests.
+
+If there are any plugin updates available and the notification icon is displayed, clicking the icon will open the Plugins options page where you can review the available plugin updates and select which ones to install.
 
 .. raw:: latex
 
