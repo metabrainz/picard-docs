@@ -135,4 +135,4 @@ Column Organization
 
 .. seealso::
 
-   For detailed information about the Picard scripting language, including all available functions and syntax, see :doc:`/extending/scripts`. For a complete list of available variables, see :doc:`/variables/variables`.
+   For detailed information about the Picard scripting language, including all available functions and syntax, see :doc:`../extending/scripts`. For a complete list of available variables, see :doc:`../variables/variables`.
