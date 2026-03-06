@@ -28,7 +28,7 @@
 
 8. **Player**: The built-in player that can be used to play selected audio files.
 
-9. **Status Bar**: The bar at the bottom of the screen shows information about the current operation of Picard, including such items as number of files, albums, and pending downloads. |nl|
+9. **Status Bar**: The bar at the bottom of the screen shows information about the current operation of Picard, including such items as number of files, albums, and pending downloads, and if there are any plugin updates available. |nl|
 
 Picard is available for different operating systems. And while Picard's functionality is overall the same the specific look of the user interface can be slightly different based on the operating system.
 
