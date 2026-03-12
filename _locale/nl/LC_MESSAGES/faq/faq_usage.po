@@ -3,50 +3,56 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/faqfaq_usage/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/faqfaq_usage/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.10.1\n"
 
 #: ../../faq/faq_usage.rst:4
 msgid "Using Picard"
-msgstr ""
+msgstr "Picard gebruiken"
 
 #: ../../faq/faq_usage.rst:7
 msgid "How do I tag files with Picard?"
-msgstr ""
+msgstr "Hoe tag ik bestanden met Picard?"
 
 #: ../../faq/faq_usage.rst:9
 msgid ""
 "There is a separate section that explains the tagging process.  Please see :"
 "doc:`/usage/using` for details."
 msgstr ""
+"Het tagproces wordt in een andere paragraaf uitgelegd. Zie :doc:`/usage/"
+"using` voor details."
 
 #: ../../faq/faq_usage.rst:13
 msgid ""
 "The green \"Tagger\" :index:`icon <tagger icon, icon; tagger>` disappeared "
 "from MusicBrainz.org, how do I get it back?"
 msgstr ""
+"Het groene :index:`Tagger-pictogram <tagger-pictogram, pictogram; tagger>` "
+"is verdwenen. Hoe krijg ik het terug?"
 
 #: ../../faq/faq_usage.rst:15
 msgid ""
 "This icon shows up when a manual lookup is performed via Picard using :"
 "menuselection:`\"Tools --> Lookup\"`."
 msgstr ""
+"Dit pictogram verschijnt nadat je via :menuselection:`‘Hulpmiddelen --> "
+"Opzoeken’` informatie hebt opgezocht."
 
 #: ../../faq/faq_usage.rst:17
 msgid ""
@@ -54,6 +60,8 @@ msgid ""
 "almost any MusicBrainz URL and the green tagger icons will continue to show "
 "up from then on."
 msgstr ""
+"Je kan ook de parameter ``?tport=8000`` aan het einde van bijna elke "
+"MusicBrainz-URL toevoegen, waarna het pictogram wordt weergegeven."
 
 #: ../../faq/faq_usage.rst:22
 msgid ""
@@ -61,16 +69,21 @@ msgid ""
 "error, error; couldn't load album>` in Picard, but all I'm seeing is "
 "\"Couldn't load album errors\". What's up?"
 msgstr ""
+"Ik probeer in Picard :index:`een uitgave te laden <uitgave; laadfout, album; "
+"laadfout, fout; kan uitgave niet laden>`, maar ik zie alleen de foutmelding “"
+"Kan de uitgave niet laden”. Wat is er aan de hand?"
 
 #: ../../faq/faq_usage.rst:24
 msgid ""
 "If you get \"Couldn't load album errors\" for releases in Picard, this can "
 "occur for a number of reasons. Check the following:"
 msgstr ""
+"Als je in Picard de foutmelding “Kan de uitgave niet laden” krijgt, kan dat "
+"een aantal redenen hebben. Controleer het volgende:"
 
 #: ../../faq/faq_usage.rst:27
 msgid "**Is the problem persistent for a given release?**"
-msgstr ""
+msgstr "**Vindt het probleem steeds bij een bepaalde uitgave plaats?**"
 
 #: ../../faq/faq_usage.rst:0
 msgid ""
@@ -78,10 +91,13 @@ msgid ""
 "right-click, \"Refresh\". Sometimes the servers are just overloaded and "
 "temporarily reject requests."
 msgstr ""
+"Wacht een paar minuten of zelfs iets langer en probeer het dan opnieuw door "
+"er met rechts op te klikken en ‘Herladen’ te selecteren. Soms zijn de "
+"servers gewoon overbelast en worden verzoeken tijdelijk afgewezen."
 
 #: ../../faq/faq_usage.rst:32
 msgid "**Has the release been deleted from MusicBrainz?**"
-msgstr ""
+msgstr "**Is de uitgave uit MusicBrainz verwijderd?**"
 
 #: ../../faq/faq_usage.rst:0
 msgid ""
@@ -100,12 +116,30 @@ msgid ""
 "the track listing and as much information as possible to prove it is genuine "
 "and it may be accepted again."
 msgstr ""
+"Als je bestanden die je eerder met Picard hebt opgeslagen opnieuw tagt en "
+"deze fout krijgt, is de uitgave misschien :index:`verwijderd <uitgave; "
+"verwijderd>`. Klik met rechts op de uitgave en selecteer ‘In de browser "
+"opzoeken’ om de uitgave op de website te bekijken. Als je haar niet kan "
+"vinden, is ze misschien verwijderd. Dat kan het geval zijn als je een "
+"uitgave hebt getagd die net was toegevoegd en die de stemming niet heeft "
+"overleefd of als je een uitgave hebt getagd die is verwijderd omdat ze geen "
+"geldige uitgave was. Dit kan gebeuren bij zelfgemaakte compilaties, dubieuze "
+"torrents, ‘advance’-uitgaven en uitgaven die met heel veel fouten zijn "
+"toegevoegd. Meestal kan je een andere uitgave gebruiken om te taggen. Je "
+"kunt die vinden op een van de vele manieren waarmee je met Picard kan "
+"zoeken. Als je geen vervanging kan vinden of als je denkt dat de uitgave "
+"niet had moeten worden verwijderd, kan je `een nieuwe uitgave toevoegen "
+"<https://musicbrainz.org/doc/How_to_Add_a_Release>`_. Voeg dan wel bewijs "
+"van het bestaan en zoveel mogelijk informatie over de uitgave toe, zodat de "
+"toevoeging weer wordt geaccepteerd."
 
 #: ../../faq/faq_usage.rst:46
 msgid ""
 "I'm using macOS, where are my :index:`network folders <macos; network "
 "folders>` or drives?"
 msgstr ""
+"Ik gebruik macOS. Waar zijn mijn :index:`netwerkmappen <macos; netwerkmappen>"
+"` of -schijven?"
 
 #: ../../faq/faq_usage.rst:48
 msgid ""
@@ -114,29 +148,35 @@ msgid ""
 "file browser pane, right click in the pane and select \"show hidden files\". "
 "They should then be visible in the :file:`/Volumes` folder."
 msgstr ""
+"Ze zouden in de dialoogvensters voor het toevoegen van bestanden en mappen "
+"zichtbaar moeten zijn, maar zijn in de verkenner standaard niet zichtbaar. "
+"Als je ze in het verkennervenster wil zien, moet je in het deelvenster met "
+"rechts klikken en ‘verborgen bestanden tonen’ selecteren. Vervolgens zouden "
+"ze in de map :file:`/Volumes` zichtbaar moeten zijn."
 
 #: ../../faq/faq_usage.rst:54
 msgid ""
 "macOS shows the app is :index:`damaged <macos; app damaged>`. How can I run "
 "Picard?"
 msgstr ""
+"macOS geeft aan dat de app is :index:`beschadigd <macos; app beschadigd>`. "
+"Hoe kan ik Picard uitvoeren?"
 
 #: ../../faq/faq_usage.rst:56
 msgid ""
 "On macOS 10.12 and 10.13 there have been reports that sometimes the "
 "MusicBrainz Picard app cannot be started and macOS shows an error message:"
 msgstr ""
-"We hebben meldingen gehad dat MusicBrainz Picard op macOS 10.12 en 10.13 "
-"soms niet kan worden opgestart en dat macOS dan de volgende melding "
-"weergeeft:"
+"We hebben meldingen gekregen dat de app MusicBrainz Picard op macOS 10.12 en "
+"10.13 soms niet kan worden gestart en dat macOS dan de foutmelding:"
 
 #: ../../faq/faq_usage.rst:59
 msgid ""
 "\"MusicBrainz Picard.app\" is damaged and can't be opened. You should move "
 "it to the Trash."
 msgstr ""
-"“MusicBrainz Picard.app” is beschadigd en kan niet worden geopend. Verplaats "
-"het naar de prullenmand."
+"“‘MusicBrainz Picard.app’ is beschadigd en kan niet worden geopend. "
+"Verplaats deze naar de prullenmand.” weergeeft."
 
 #: ../../faq/faq_usage.rst:61
 msgid ""
@@ -145,9 +185,9 @@ msgid ""
 "To solve the issue open a terminal and run::"
 msgstr ""
 "Dit lijkt meestal te gebeuren nadat het bestand naar de map Apps is "
-"gekopieerd, waarna Gatekeeper de app ten onrechte als beschadigd markeert. "
-"Om dit probleem op te lossen, open je een terminal en voer je het volgende "
-"uit::"
+"verplaatst, waarna Gatekeeper de app ten onrechte als beschadigd markeert. "
+"Om het probleem op te lossen, open je een terminal en voer je de volgende "
+"opdracht uit::"
 
 #: ../../faq/faq_usage.rst:67
 msgid ""
@@ -155,11 +195,16 @@ msgid ""
 "in a different location than :file:`/Applications` adjust the path in the "
 "command above accordingly."
 msgstr ""
+"Hierdoor wordt de markering verwijderd.  Als je de app hebt verplaatst naar "
+"een andere locatie dan :file:`/Apps`, kan je het pad in de opdracht daaraan "
+"aanpassen."
 
 #: ../../faq/faq_usage.rst:72
 msgid ""
 "Picard is installed on Linux as a Snap, how can I access removable media?"
 msgstr ""
+"Picard is op Linux als Snap geïnstalleerd. Hoe kan ik verwijderbare media "
+"openen?"
 
 #: ../../faq/faq_usage.rst:74
 msgid ""
@@ -168,12 +213,18 @@ msgid ""
 "has access to your home folder.  You can additionally give it access to "
 "removable media by running the following command on a terminal:"
 msgstr ""
+"Als Picard als Snap is geïnstalleerd, draait hij in een zandbak en heeft hij "
+"geen volledige toegang tot alle bestanden en mappen op je systeem. Picard "
+"heeft standaard alleen toegang tot je thuismap. Je kan Picard toegang tot "
+"verwijderbare media geven met de volgende terminalopdracht:"
 
 #: ../../faq/faq_usage.rst:84
 msgid ""
 "On Windows, how do I solve errors on saving to cloud storage drives mounted "
 "with rclone?"
 msgstr ""
+"Hoe kan ik op Windows problemen met opslaan naar cloudstations die zijn "
+"gekoppeld met rclone oplossen?"
 
 #: ../../faq/faq_usage.rst:86
 msgid ""
@@ -181,6 +232,10 @@ msgid ""
 "as a drive.  This virtual filesystem has some differences to a real "
 "filesystem which can cause compatibility issues."
 msgstr ""
+"rclone kan cloudopslag als station koppelen om de opslag als virtueel "
+"bestandssysteem toegankelijk te maken. Dit virtuele bestandssyteem wijkt op "
+"een aantal punten af van een echt bestandssysteem, en dat kan tot "
+"compatibiliteitsproblemen leiden."
 
 #: ../../faq/faq_usage.rst:89
 msgid ""
@@ -189,7 +244,12 @@ msgid ""
 "cache mode to ``--vfs-cache-mode=writes`` or ``--vfs-cache-mode=full``.  "
 "Your rclone command to mount a remote as drive X: might look like this:"
 msgstr ""
+"Voor volledige compatibiliteit met Picard moet je de cloudopslag als "
+"netwerkstation koppelen. Hiervoor gebruik je de parameter ``--network-mode`` "
+"en stel je de cachemodus in op ``--vfs-cache-mode=writes`` of ``--vfs-cache-"
+"mode=full``. De rclone-opdracht om cloudopslag als station X: te koppelen, "
+"zou er zo uit kunnen zien:"
 
 #: ../../faq/faq_usage.rst:98
 msgid "Please refer to the rclone documentation for more details."
-msgstr ""
+msgstr "Zie de documentatie van rclone voor meer details."

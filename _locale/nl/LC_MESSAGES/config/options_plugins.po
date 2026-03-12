@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-15 19:57-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_plugins/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_plugins.rst:4
 msgid ":index:`Plugins Options <pair: configuration; plugins>`"
-msgstr ""
+msgstr ":index:`Opties voor plug-ins <pair: configuratie; plug-ins>`"
 
 #: ../../config/options_plugins.rst:9
 msgid ""
@@ -32,6 +35,11 @@ msgid ""
 "the `plugins page <https://picard.musicbrainz.org/plugins/>`_ on the Picard "
 "website."
 msgstr ""
+"Hier kan je de plug-ins van Picard beheren. Je kan er nieuwe plug-ins "
+"installeren en geïnstalleerde plug-ins inschakelen, uitschakelen en "
+"verwijderen. Picard toont een lijst met plug-ins die bij het project zijn "
+"ingediend. Een lijst met standaardplug-ins is beschikbaar op de `plug-"
+"inspagina <https://picard.musicbrainz.org/plugins/>`_ op de Picard-website."
 
 #: ../../config/options_plugins.rst:14
 msgid ""
@@ -46,10 +54,19 @@ msgid ""
 "party plugins are included in the :ref:`\"Installing Third-Party Plugins\" "
 "<ref_installingplugins>` section below."
 msgstr ""
+"Er zijn ook plug-ins van :index:`externe ontwikkelaars <plug-ins; derde "
+"partij>` beschikbaar. Deze plug-ins worden vaak besproken op het `forum "
+"<https://community.metabrainz.org/>`_, dus als je een bepaalde verbetering "
+"of functie zoekt, is het handig om daar eerst te zoeken. Bovendien houdt een "
+"van de redacteuren van MusicBrainz, `Colby Ray <https://wiki.musicbrainz.org/"
+"User:Colbydray>`_, op de wiki een onofficiële `lijst met plug-ins <https://"
+"wiki.musicbrainz.org/User:Colbydray/PicardPlugins>`_ bij. In :ref:`‘Plug-ins "
+"van derden installeren’ <ref_installingplugins>` hieronder vind je "
+"instructies voor het installeren van plug-ins."
 
 #: ../../config/options_plugins.rst:23
 msgid "Plugins List"
-msgstr ""
+msgstr "Lijst met plug-ins"
 
 #: ../../config/options_plugins.rst:25
 msgid ""
@@ -57,76 +74,92 @@ msgid ""
 "been installed.  Each plugin is displayed on a separate line showing the "
 "version number and one or more status / action icons.  The icons are:"
 msgstr ""
+"In het venster zie je een lijst met standaardplug-ins en door jou "
+"geïnstalleerde plug-ins. Elke plug-in wordt samen met het versienummer en "
+"een of meer statuspictogrammen op een afzonderlijke regel weergegeven. De "
+"pictogrammen zijn:"
 
 #: ../../config/options_plugins.rst:28
 msgid "img-plugin-download"
-msgstr ""
+msgstr "img-plugin-download"
 
 #: ../../config/options_plugins.rst:32
 msgid "|img-plugin-download|"
-msgstr ""
+msgstr "|img-plugin-download|"
 
 #: ../../config/options_plugins.rst:0
 msgid ""
 "This icon indicates that the plugin is not installed.  Clicking the icon "
 "will download and install the plugin."
 msgstr ""
+"Dit pictogram geeft aan dat de plug-in niet is geïnstalleerd. Als je op het "
+"pictogram klikt, wordt de plug-in gedownload en geïnstalleerd."
 
 #: ../../config/options_plugins.rst:37
 msgid "img-plugin-reload"
-msgstr ""
+msgstr "img-plugin-reload"
 
 #: ../../config/options_plugins.rst:41
 msgid "|img-plugin-reload|"
-msgstr ""
+msgstr "|img-plugin-reload|"
 
 #: ../../config/options_plugins.rst:0
 msgid ""
 "This icon indicates that a newer version of the plugin is available.  "
 "Clicking the icon will download and install the updated version."
 msgstr ""
+"Dit pictogram geeft aan dat er een nieuwe versie van de plug-in beschikbaar "
+"is. Als je op het pictogram klikt, wordt de nieuwe versie gedownload en "
+"geïnstalleerd."
 
 #: ../../config/options_plugins.rst:46
 msgid "img-plugin-enabled"
-msgstr ""
+msgstr "img-plugin-enabled"
 
 #: ../../config/options_plugins.rst:50
 msgid "|img-plugin-enabled|"
-msgstr ""
+msgstr "|img-plugin-enabled|"
 
 #: ../../config/options_plugins.rst:0
 msgid ""
 "This icon indicates that the plugin is installed and currently enabled.  "
 "Clicking the icon will disable the plugin, but it will still be installed."
 msgstr ""
+"Dit pictogram geeft aan dat de plug-in is geïnstalleerd en ingeschakeld. Als "
+"je op het pictogram klikt, wordt de plug-in uitgeschakeld, maar niet "
+"verwijderd."
 
 #: ../../config/options_plugins.rst:55
 msgid "img-plugin-disabled"
-msgstr ""
+msgstr "img-plugin-disabled"
 
 #: ../../config/options_plugins.rst:59
 msgid "|img-plugin-disabled|"
-msgstr ""
+msgstr "|img-plugin-disabled|"
 
 #: ../../config/options_plugins.rst:0
 msgid ""
 "This icon indicates that the plugin is installed but currently disabled.  "
 "Clicking the icon will enable the plugin."
 msgstr ""
+"Dit pictogram geeft aan dat de plug-in is geïnstalleerd en uitgeschakeld. "
+"Als je op dit pictogram klikt, wordt de plug-in ingeschakeld."
 
 #: ../../config/options_plugins.rst:64
 msgid "img-plugin-trash"
-msgstr ""
+msgstr "img-plugin-trash"
 
 #: ../../config/options_plugins.rst:68
 msgid "|img-plugin-trash|"
-msgstr ""
+msgstr "|img-plugin-trash|"
 
 #: ../../config/options_plugins.rst:0
 msgid ""
 "This icon indicates that the plugin is currently installed.  Clicking the "
 "icon will uninstall the plugin."
 msgstr ""
+"Dit pictogram geeft aan dat de plug-in is geïnstalleerd. Als je op dit "
+"pictogram klikt, wordt de plug-in verwijderd."
 
 #: ../../config/options_plugins.rst:73
 msgid ""
@@ -134,41 +167,55 @@ msgid ""
 "description of the plugin will be shown in  the \"Details\" section below "
 "the list."
 msgstr ""
+"Als een plug-in in de lijst is geselecteerd (d.w.z. gemarkeerd) wordt er in "
+"het gedeelte ‘Details’ onder de lijst een korte beschrijving van de plug-in "
+"weergegeven."
 
 #: ../../config/options_plugins.rst:81
 msgid ""
 "Some plugins have their own option page which will typically appear under "
 "the \"Plugins\" section of the Options."
 msgstr ""
+"Sommige plug-ins hebben een eigen optiepagina, die meestal onder de "
+"optiepagina ‘Plug-ins’ wordt weergegeven."
 
 #: ../../config/options_plugins.rst:87
 msgid ":index:`Installing Third-Party Plugins <plugins; installing>`"
-msgstr ""
+msgstr ":index:`Plug-ins van derden installeren <plug-ins; installeren>`"
 
 #: ../../config/options_plugins.rst:89
 msgid ""
 "You can install a third-party plugin that does not appear in the plugins "
 "list, using the following steps:"
 msgstr ""
+"Je kan een plug-in van een externe ontwikkelaar die niet in de lijst staat "
+"als volgt installeren:"
 
 #: ../../config/options_plugins.rst:91
 msgid "Download the plugin and save it to a local drive."
-msgstr ""
+msgstr "Download de plug-in en sla hem lokaal op."
 
 #: ../../config/options_plugins.rst:93
 msgid ""
 "Select the :guilabel:`Install plugin...` action, located just below the list "
 "of plugins."
 msgstr ""
+"Selecteer de knop :guilabel:`Plug-in installeren …` onder de lijst met plug-"
+"ins."
 
 #: ../../config/options_plugins.rst:98
 msgid ""
 "Navigate to the file you downloaded in Step 1 and select it.  The file will "
 "be copied to the plugin folder, and will appear in the list of plugins."
 msgstr ""
+"Ga naar het bestand dat je in de eerste stap hebt gedownload en selecteer "
+"het. Het bestand wordt naar de plug-inmap gekopieerd en verschijnt in de "
+"lijst met plug-ins."
 
 #: ../../config/options_plugins.rst:101
 msgid ""
 "Enable the plugin if desired, and select the :guilabel:`Make It So!` action "
 "button at the bottom of the window."
 msgstr ""
+"Schakel de plug-in in (als je hem wil gebruiken) en selecteer de knop "
+":guilabel:`Oké` onderaan het scherm."

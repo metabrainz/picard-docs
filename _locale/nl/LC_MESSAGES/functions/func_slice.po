@@ -3,40 +3,40 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_slice/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_slice/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_slice.rst:6
 msgid "$slice"
-msgstr ""
+msgstr "$slice"
 
 #: ../../functions/func_slice.rst:8
 msgid "Usage: **$slice(name,start[,end[,separator]])**"
-msgstr ""
+msgstr "Gebruik: **$slice(naam,begin[,eind[,scheidingsteken]])**"
 
 #: ../../functions/func_slice.rst:9
 msgid "Category: multi-value"
-msgstr ""
+msgstr "Categorie: meervoudig"
 
 #: ../../functions/func_slice.rst:10
 msgid "Implemented: Picard 2.3"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 2.3"
 
 #: ../../functions/func_slice.rst:12
 msgid "**Description:**"
@@ -51,6 +51,12 @@ msgid ""
 "by a space \"; \" if not passed) to coerce the value into a proper multi-"
 "valued variable."
 msgstr ""
+"Retourneert een meervoudige variabele met elementen vanaf de positie "
+"``begin`` tot (maar niet tot en met) de positie ``eind`` uit de meervoudige "
+"variabele ``naam``. In plaats van ``naam`` kan je ook een tekenreeks "
+"opgegeven, zodat deze tekenreeks in een meervoudige variabele wordt omgezet. "
+"Je kan het scheidingsteken voor deze tekenreeks opgeven met de derde "
+"parameter (als je deze parameter niet opgeeft, wordt ‘; ’ gebruikt)."
 
 #: ../../functions/func_slice.rst:20
 msgid ""
@@ -59,6 +65,9 @@ msgid ""
 "blank, they will default to 0 and the number of elements in the list "
 "respectively."
 msgstr ""
+"Het tellen begint bij nul. Negatieve getallen worden terug geteld vanaf het "
+"aantal elementen in de lijst. Als ``begin`` of ``eind`` leeg wordt gelaten, "
+"worden respectievelijk 0 en het aantal elementen in de lijst gebruikt."
 
 #: ../../functions/func_slice.rst:24
 msgid ""
@@ -67,6 +76,10 @@ msgid ""
 "list.  This would look something like ``$setmulti(supporting_artists,"
 "$slice(%artists%,1))``."
 msgstr ""
+"Je kan dit bijvoorbeeld gebruiken om een meervoudige variabele te maken met "
+"alle artiesten in ``%artists%`` behalve de eerste artiest, zodat je een "
+"lijst met gastartiesten kan maken. Dat zou er zo uit kunnen zien: ``$setmulti"
+"(gastartiesten,$slice(%artists%,1))``."
 
 #: ../../functions/func_slice.rst:29
 msgid "**Example:**"

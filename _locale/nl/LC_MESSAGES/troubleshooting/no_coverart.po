@@ -3,40 +3,45 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/troubleshootingno_coverart/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../troubleshooting/no_coverart.rst:8
 msgid "There is no coverart"
-msgstr ""
+msgstr "Er is geen hoesafbeelding"
 
 #: ../../troubleshooting/no_coverart.rst:10
 msgid "There are two different problems that often fall under this topic:"
-msgstr ""
+msgstr "Dit kan worden veroorzaakt door twee verschillende problemen:"
 
 #: ../../troubleshooting/no_coverart.rst:13
 msgid ""
 ":index:`Picard isn't finding and downloading any cover art <troubleshooting; "
 "no cover art downloaded>`"
 msgstr ""
+":index:`Picard vindt en downloadt geen hoesafbeeldingen <probleemoplossing; "
+"geen afbeeldingen gedownload>`"
 
 #: ../../troubleshooting/no_coverart.rst:15
 msgid ""
 "**No cover art providers have been enabled in the configuration settings**"
-msgstr ""
+msgstr "**In de instellingen zijn geen bronnen voor afbeeldingen ingeschakeld**"
 
 #: ../../troubleshooting/no_coverart.rst:17
 msgid ""
@@ -44,10 +49,13 @@ msgid ""
 "settings have at least one cover art provider enabled.  Please see the :doc:"
 "`/config/options_cover_art_providers` section for more information."
 msgstr ""
+"Controleer of er in de instellingen onder :menuselection:`‘Opties --> Opties "
+"… --> Hoesafbeeldingen’` minstens één bron is ingeschakeld. Zie :doc:`/"
+"config/options_cover_art_providers` voor meer informatie."
 
 #: ../../troubleshooting/no_coverart.rst:20
 msgid "**There is no cover art available from the selected providers**"
-msgstr ""
+msgstr "**Er zijn geen afbeeldingen uit de geselecteerde bronnen**"
 
 #: ../../troubleshooting/no_coverart.rst:22
 msgid ""
@@ -59,10 +67,16 @@ msgid ""
 "by enabling the \"CAA Release Group\" and \"Allowed cover art URLs\" "
 "provider options."
 msgstr ""
+"Het kan zijn dat er voor de uitgave in de ingeschakelde bronnen geen "
+"hoesafbeeldingen te vinden zijn. Als Picard voor een uitgave in MusicBrainz "
+"een hoesafbeelding weergeeft, kan het zijn dat de afbeelding afkomstig is "
+"van de uitgavegroep of via een overeenkomst met een derde partij. Soms kan "
+"dit worden opgelost door de bronnen ‘Cover Art Archive: uitgavegroep’ en ‘"
+"Toegestane URL’s voor hoesafbeeldingen’ in te schakelen."
 
 #: ../../troubleshooting/no_coverart.rst:28
 msgid "**The selected provider is not currently available**"
-msgstr ""
+msgstr "**De geselecteerde bron is nu niet beschikbaar**"
 
 #: ../../troubleshooting/no_coverart.rst:30
 msgid ""
@@ -72,10 +86,14 @@ msgid ""
 "retrying your request. Reviewing the details in Picard's log often provides "
 "some insight into whether or not this is the issue."
 msgstr ""
+"Soms is de server die de afbeeldingen levert (zoals archive.org) niet "
+"beschikbaar of zijn spiegelservers niet actueel. In dat geval kan je een "
+"paar minuten wachten en het dan opnieuw proberen. In het logboek van Picard "
+"kan je vaak zien of dit het probleem is."
 
 #: ../../troubleshooting/no_coverart.rst:35
 msgid "**The cover art is still a pending edit**"
-msgstr ""
+msgstr "**De bewerking die de afbeelding toevoegt is nog niet definitief**"
 
 #: ../../troubleshooting/no_coverart.rst:37
 msgid ""
@@ -86,16 +104,24 @@ msgid ""
 "Options... --> Cover Art\"` settings.  Please see the :doc:`/config/"
 "options_cover_art_archive` section for more information."
 msgstr ""
+"Als de hoesafbeelding recent is toegevoegd, is de bewerking waarmee dat is "
+"gedaan misschien nog niet geaccepteerd en doorgevoerd. Je kan Picard "
+"instellen om ook afbeeldingen van open bewerkingen te gebruiken door in "
+":menuselection:`‘Opties --> Opties … --> Hoesafbeeldingen --> Cover Art "
+"Archive’` de optie ‘Alleen goedgekeurde afbeeldingen downloaden’ uit te "
+"schakelen. Zie :doc:`/config/options_cover_art_archive` voor meer informatie."
 
 #: ../../troubleshooting/no_coverart.rst:44
 msgid ""
 ":index:`Coverart that is saved with the files isn't displayed "
 "<troubleshooting; no cover art displayed>`"
 msgstr ""
+":index:`Met de bestanden opgeslagen afbeeldingen worden niet weergegeven "
+"<probleemoplossing; geen afbeelding weergegeven>`"
 
 #: ../../troubleshooting/no_coverart.rst:46
 msgid "**Player doesn't support embedded cover art**"
-msgstr ""
+msgstr "**De speler ondersteunt geen ingebedde afbeeldingen**"
 
 #: ../../troubleshooting/no_coverart.rst:48
 msgid ""
@@ -106,12 +132,22 @@ msgid ""
 "to specify how the cover art images should be saved.  Please see the :doc:`/"
 "config/options_location` section of the Coverart options for details."
 msgstr ""
+"Controleer of je muziekspeler ingebedde hoesafbeeldingen ondersteunt. Niet "
+"alle spelers doen dat. Sommige spelers ondersteunen wel ingebedde "
+"afbeeldingen, sommige spelers ondersteunen afbeeldingen die als bestand in "
+"de map staan (zoals :file:`cover.jpg` of :file:`folder.jpg`) en sommige "
+"spelers ondersteunen beide. Met Picard kan je instellen hoe de "
+"hoesafbeeldingen moeten worden opgeslagen. Zie :doc:`/config/"
+"options_location` van het hoofdstuk Opties voor hoesafbeeldingen voor "
+"details."
 
 #: ../../troubleshooting/no_coverart.rst:53
 msgid ""
 "You should also confirm that your player supports the version of the tags "
 "being written."
 msgstr ""
+"Controleer ook of je speler ondersteuning heeft voor de versie van de tags "
+"die worden geschreven."
 
 #: ../../troubleshooting/no_coverart.rst:57
 msgid ""
@@ -121,10 +157,15 @@ msgid ""
 "options_tags_compatibility_id3` / :doc:`/config/"
 "options_tags_compatibility_wave`"
 msgstr ""
+"Ga voor meer informatie naar: :doc:`/config/"
+"options_tags_compatibility_aac` / :doc:`/config/"
+"options_tags_compatibility_ac3` / :doc:`/config/"
+"options_tags_compatibility_id3` / :doc:`/config/"
+"options_tags_compatibility_wave`"
 
 #: ../../troubleshooting/no_coverart.rst:63
 msgid "**Embedded cover image too large**"
-msgstr ""
+msgstr "**De ingebedde afbeelding is te groot**"
 
 #: ../../troubleshooting/no_coverart.rst:65
 msgid ""
@@ -133,3 +174,7 @@ msgid ""
 "certain size.  If all else fails, you might try using an image with a "
 "smaller file size."
 msgstr ""
+"Zelfs als je afbeelding goed in het bestand is opgeslagen, kan je speler "
+"moeite hebben met de ingebedde afbeelding als die te groot is. Als alle "
+"andere mogelijke oplossingen niet helpen, kan je een kleinere afbeelding "
+"proberen."

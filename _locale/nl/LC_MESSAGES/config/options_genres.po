@@ -1,48 +1,56 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_genres/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../config/options_genres.rst:4
 msgid ":index:`Genres <configuration; genres>`"
-msgstr ""
+msgstr ":index:`Genres <configuratie; genres>`"
 
 #: ../../config/options_genres.rst:9
 msgid "**Use genres from MusicBrainz**"
-msgstr ""
+msgstr "**Genres van MusicBrainz gebruiken**"
 
 #: ../../config/options_genres.rst:11
 msgid "Use genres provided by MusicBrainz and save them to the genre tag."
-msgstr ""
+msgstr "Haal genres op van MusicBrainz en sla ze op in de tag ‘genre’."
 
 #: ../../config/options_genres.rst:13
 msgid ""
 "**Fall back on album's artists genres if no genres are found for the release "
 "or release group**"
 msgstr ""
+"**Op de genres van de albumartiest terugvallen als er voor de uitgave(groep) "
+"geen genres zijn gevonden**"
 
 #: ../../config/options_genres.rst:15
 msgid ""
 "If there is no genre set for the release or release group on MusicBrainz, "
 "use the genre of the album artist instead."
 msgstr ""
+"Als dit is ingeschakeld en de uitgave of uitgavegroep op MusicBrainz geen "
+"genre heeft, wordt het genre gebruikt dat aan de artiest van de uitgave is "
+"gekoppeld."
 
 #: ../../config/options_genres.rst:17
 msgid "**Only use my genres**"
-msgstr ""
+msgstr "**Alleen mijn genres gebruiken**"
 
 #: ../../config/options_genres.rst:19
 msgid ""
@@ -50,20 +58,26 @@ msgid ""
 "MusicBrainz. You'll need to set your username and password to use this "
 "feature."
 msgstr ""
+"Als dit is ingeschakeld, gebruikt Picard alleen genres die je op MusicBrainz "
+"hebt gebruikt. Voor deze functie moet je je gebruikersnaam en wachtwoord "
+"instellen."
 
 #: ../../config/options_genres.rst:22
 msgid "**Use folksonomy tags as genres**"
-msgstr ""
+msgstr "**Folksonomietags als genre gebruiken**"
 
 #: ../../config/options_genres.rst:24
 msgid ""
 "Check to use all folksonomy tags to set the genre. Otherwise only the tags "
 "considered by MusicBrainz to be proper genres will be used."
 msgstr ""
+"Als dit is ingeschakeld, worden alle folksonomietags als genre gebruikt. "
+"Anders worden alleen tags gebruikt die door MusicBrainz als echte genres "
+"worden beschouwd."
 
 #: ../../config/options_genres.rst:27
 msgid "**Minimal genre usage**"
-msgstr ""
+msgstr "**Minimaal gebruik van het genre**"
 
 #: ../../config/options_genres.rst:29
 msgid ""
@@ -71,28 +85,35 @@ msgid ""
 "Default: 90%. Lowering the value here will lead to more, but possibly less "
 "relevant, genres in your files."
 msgstr ""
+"Hiermee kun je aangeven hoe populair het genre moet zijn om door Picard te "
+"worden gebruikt. Standaard: 90%. Als je deze waarde verlaagt, worden er meer "
+"genres gebruikt, maar zijn die mogelijk minder relevant."
 
 #: ../../config/options_genres.rst:32
 msgid "**Maximum number of genres**"
-msgstr ""
+msgstr "**Maximumaantal genres**"
 
 #: ../../config/options_genres.rst:34
 msgid ""
 "Choose how many genres to use. Default: 5. If you only want a single genre, "
 "set this to 1."
 msgstr ""
+"Selecteer hoeveel genres er maximaal mogen worden gebruikt. Standaard: 5. "
+"Als je maar één genre wil, stel je dit in op 1."
 
 #: ../../config/options_genres.rst:36
 msgid "**Join multiple genres with**"
-msgstr ""
+msgstr "**Meerdere genres samenvoegen met**"
 
 #: ../../config/options_genres.rst:38
 msgid "Select which character should be used to separate multiple genres."
 msgstr ""
+"Hiermee kun je aangeven met welk teken meerdere genres van elkaar moeten "
+"worden gescheiden."
 
 #: ../../config/options_genres.rst:40
 msgid "**Genres or folksonomy tags to include or exclude**"
-msgstr ""
+msgstr "**Genres of folksonomietags die moeten worden in- of uitgesloten**"
 
 #: ../../config/options_genres.rst:42
 msgid ""
@@ -101,12 +122,18 @@ msgid ""
 "that will be excluded will be marked red, included genres will be marked "
 "green."
 msgstr ""
+"Eén genre of tag per regel, hoofdletterongevoelig. Je kan het tekstveld ‘"
+"Speelplaats’ gebruiken om regels te testen. Genres die worden uitgesloten, "
+"worden rood gemarkeerd en genres die worden gebruikt, worden groen "
+"gemarkeerd."
 
 #: ../../config/options_genres.rst:45
 msgid ""
 "**Comments**: Lines not starting with '-' or '+' are ignored. (e.g.: "
 "``#comment``, ``!comment`` or ``comment``)"
 msgstr ""
+"**Opmerkingen**: Regels die niet met ‘-’ of ‘+’ beginnen, worden genegeerd "
+"(bijv. ``#opmerking``, ``!opmerking`` of ``opmerking``)."
 
 #: ../../config/options_genres.rst:47
 msgid ""
@@ -114,6 +141,10 @@ msgid ""
 "word``).  Include exact word, even if another rule would exclude it, by "
 "prefixing it with '+' (e.g.: ``+word``)."
 msgstr ""
+"**Strikt filteren**: Je kan een woord uitsluiten door er een ‘-’ voor te "
+"zetten (bijv. ``-woord``). Je kan een woord expliciet wel gebruiken, zelfs "
+"als een andere regel dat zou uitsluiten, door er een ‘+’ voor te zetten "
+"(bijv. ``+woord``)."
 
 #: ../../config/options_genres.rst:50
 msgid ""
@@ -122,6 +153,10 @@ msgid ""
 "Exclude all genres starting with 'w' and ending with \"rd\" (e.g.: ``-"
 "w*rd``)."
 msgstr ""
+"**Met jokertekens filteren**: Om alle genres die beginnen met ‘woord’ uit te "
+"sluiten: ``-*woord``. Om alle genres die beginnen met ‘woord’ te gebruiken: "
+"``+woord``). Om alle genres die beginnen met ‘w’ en eindigen met ‘rd’ uit te "
+"sluiten: ``-w*rd``)."
 
 #: ../../config/options_genres.rst:53
 msgid ""
@@ -129,10 +164,13 @@ msgid ""
 "starting with 'w' followed by any character, then 'r' followed by at least "
 "one 'd' (e.g.: ``-/^w.rd+/``)."
 msgstr ""
+"**Filteren met reguliere expressies (Python’s ‘re’-syntaxis)**: Om genres "
+"die beginnen met ‘w’, gevolgd door een teken, vervolgens ‘r’ met daarna ten "
+"minste één ‘d’ uit te sluiten: ``-/^w.rd+/``)."
 
 #: ../../config/options_genres.rst:56
 msgid "**Playground for genres or folksonomy tags filters:**"
-msgstr ""
+msgstr "**Speelplein voor filters met genres en folksonomietags**:"
 
 #: ../../config/options_genres.rst:58
 msgid ""
@@ -140,9 +178,13 @@ msgid ""
 "filters.  If a tag is marked in red, it will be filtered out.  A tag marked "
 "green will be allowed."
 msgstr ""
+"In dit tekstvak kan je genretags invoeren (één per regel) om je filters te "
+"testen. Als een tag rood is gemarkeerd, wordt hij weggefilterd. Een met "
+"groen gemarkeerde tag wordt toegestaan."
 
 #: ../../config/options_genres.rst:63
 msgid ""
 "This list of test tags will be cleared when you exit the configuration "
 "section."
 msgstr ""
+"De lijst met testtags wordt gewist als je het configuratieonderdeel verlaat."

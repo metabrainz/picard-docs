@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-12 08:15-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_fingerprinting/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_fingerprinting.rst:4
 msgid ":index:`Fingerprinting Options <configuration; fingerprinting>`"
-msgstr ""
+msgstr ":index:`Opties voor vingerafdrukken <configuratie; vingerafdrukken>`"
 
 #: ../../config/options_fingerprinting.rst:9
 msgid ""
@@ -30,6 +33,10 @@ msgid ""
 "to scan the files and produce a fingerprint for each that can then be used "
 "to look up the file on MusicBrainz."
 msgstr ""
+"Als je in het clusterdeelvenster van Picard een bestand of een cluster "
+"bestanden selecteert, en vervolgens :menuselection:`‘Hulpmiddelen --> Scannen"
+"’`, roept Picard een programma aan dat de bestanden scant en van elk bestand "
+"een vingerafdruk maakt en op MusicBrainz opzoekt."
 
 #: ../../config/options_fingerprinting.rst:13
 msgid ""
@@ -38,10 +45,15 @@ msgid ""
 "org/doc/Fingerprinting>`_ system created by `Lukáš Lalinský <https://oxygene."
 "sk/>`_) but has previously supported TRM and MusicID PUID."
 msgstr ""
+"MusicBrainz ondersteunt nu alleen `AcoustID <https://musicbrainz.org/doc/"
+"AcoustID>`_ (een opensorucesysteem voor `akoestische vingerafdrukken "
+"<https://musicbrainz.org/doc/Fingerprinting>`_ dat is ontwikkeld door `Lukáš "
+"Lalinský <https://oxygene.sk/>`_) maar vroeger werden ook TRM en MusicID "
+"PUID ondersteund."
 
 #: ../../config/options_fingerprinting.rst:17
 msgid "**Audio Fingerprinting**"
-msgstr ""
+msgstr "**Audiovingerafdrukken**"
 
 #: ../../config/options_fingerprinting.rst:19
 msgid ""
@@ -49,20 +61,25 @@ msgid ""
 "within Picard. If acoustic fingerprinting is disabled then all remaining "
 "options in this tab will be locked and ignored."
 msgstr ""
+"Hiermee kan je instellen of je akoestische vingerafdrukken in Picard wil "
+"gebruiken. Als akoestische vingerafdrukken zijn uitgeschakeld, zijn alle "
+"andere opties op dit tabblad uitgeschakeld."
 
 #: ../../config/options_fingerprinting.rst:23
 msgid "**Ignore existing AcoustID fingerprints**"
-msgstr ""
+msgstr "**Bestaande AcoustID’s negeren**"
 
 #: ../../config/options_fingerprinting.rst:25
 msgid ""
 "When checked, any existing AcoustID fingerprint information will not be "
 "used, and the files will be rescanned."
 msgstr ""
+"Als je dit aanvinkt, worden bestaande vingerafdrukken genegeerd en worden "
+"alle bestanden opnieuw gescand."
 
 #: ../../config/options_fingerprinting.rst:28
 msgid "**Save AcoustID fingerprints to file tags**"
-msgstr ""
+msgstr "**AcoustID-vingerafdrukken in bestandstags opslaan**"
 
 #: ../../config/options_fingerprinting.rst:30
 msgid ""
@@ -74,20 +91,28 @@ msgid ""
 "accommodate use cases such as a workflow where the user adds this tag "
 "directly after ripping to avoid having to redo the calculation in the future."
 msgstr ""
+"Als je dit aanvinkt, worden de AcoustID-vingerafdrukken van gescande "
+"bestanden opgeslagen in de tag ``acoustid_fingerprint``. Deze optie is "
+"standaard uitgeschakeld, omdat de vingerafdruk altijd opnieuw kan worden "
+"berekend en de tag nogal groot kan zijn. De optie om deze informatie op te "
+"slaan is in Picard 2.7 toegevoegd, zodat gebruikers die de tag meteen na het "
+"rippen toevoegen de berekening in de toekomst niet opnieuw hoeven te doen."
 
 #: ../../config/options_fingerprinting.rst:36
 msgid "**Maximum threads to use for calculator**"
-msgstr ""
+msgstr "**Maximumaantal threads voor de calculator**"
 
 #: ../../config/options_fingerprinting.rst:38
 msgid ""
 "This allows you to specify the maximum number of fingerprint calculations to "
 "be run concurrently.  The default value is 2."
 msgstr ""
+"Hiermee kan je instellen hoeveel threads de calculator tegelijk mag "
+"gebruiken. De standaardwaarde is 2."
 
 #: ../../config/options_fingerprinting.rst:41
 msgid "**Fingerprint calculator**"
-msgstr ""
+msgstr "**Vingerafdrukcalculator**"
 
 #: ../../config/options_fingerprinting.rst:43
 msgid ""
@@ -96,6 +121,10 @@ msgid ""
 "`Chromaprint <https://acoustid.org/chromaprint>`_ (:program:`fpcalc`) "
 "utility which is included with the Picard installation."
 msgstr ""
+"Hiermee selecteer je het externe programma dat de akoestische "
+"vingerafdrukken berekent. Standaard gebruikt Picard `Chromaprint <https://"
+"acoustid.org/chromaprint>`_ (:program:`fpcalc`), die met Picard wordt "
+"meegeïnstalleerd."
 
 #: ../../config/options_fingerprinting.rst:47
 msgid ""
@@ -106,13 +135,21 @@ msgid ""
 "only needs to actually select something if auto detection does not work. If "
 "the user has selected a specific path this will be used."
 msgstr ""
+"Picard detecteert de locatie automatisch, tenzij je dit specifiek anders "
+"hebt opgegeven. In :menuselection:`‘Opties --> Vingerafdrukken’` zie je de "
+"automatisch gedetecteerde locatie als tijdelijke teksthint in het "
+"invoerveld. Dit wordt ook gebruikt om het uitvoerbare bestand te valideren. "
+"Je hoeft alleen iets te selecteren als de automatische detectie niet werkt. "
+"Als je een specifiek pad selecteert, wordt dat gebruikt."
 
 #: ../../config/options_fingerprinting.rst:53
 msgid "**API key**"
-msgstr ""
+msgstr "**API-sleutel**"
 
 #: ../../config/options_fingerprinting.rst:55
 msgid ""
 "The key used to access the AcoustID API to lookup and submit AcoustID "
 "fingerprints.  There is no cost to obtain an API key."
 msgstr ""
+"De sleutel die wordt gebruikt om AcoustID-vingerafdrukken via de AcoustID-"
+"API op te zoeken en in te dienen. Je kan de API-sleutel gratis ophalen."

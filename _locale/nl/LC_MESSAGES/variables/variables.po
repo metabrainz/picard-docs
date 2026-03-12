@@ -1,24 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/variablesvariables/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../variables/variables.rst:5
 msgid ":index:`Tags & Variables <scripts; tags, scripts; variables>`"
-msgstr ""
+msgstr ":index:`Tags en variabelen <scripts; tags, scripts; variabelen>`"
 
 #: ../../variables/variables.rst:7
 msgid ""
@@ -26,6 +29,10 @@ msgid ""
 "read by your music player, and Picard variables which can be used in Picard "
 "scripts for tagging, file renaming, and in several other more minor settings."
 msgstr ""
+"In dit gedeelte beschrijven we zowel tags (die in je muziekbestanden worden "
+"opgeslagen en door je muziekspeler kunnen worden gelezen) als Picard-"
+"variabelen (die worden gebruikt voor tags, bestandsnamen en bepaalde "
+"instellingen)."
 
 #: ../../variables/variables.rst:11
 msgid ""
@@ -33,12 +40,17 @@ msgid ""
 "start with an underscore '_' are not saved as Tags within your music files "
 "(e.g. ``_my_tag_not_saved``)."
 msgstr ""
+"Alle tags zijn beschikbaar als variabele, maar extra variabelen die beginnen "
+"met een laag streepje (_) worden niet als tag in je muziekbestanden "
+"opgeslagen (bijv. ``_mijn_tag_wordt_niet_opgeslagen``)."
 
 #: ../../variables/variables.rst:14
 msgid ""
 "Variables are used in scripts by wrapping the name between percent '%' "
 "characters (e.g. ``%title%``)."
 msgstr ""
+"Je kan variabelen in scripts gebruiken door ze tussen %-tekens te zetten "
+"(bijv. ``%title%``)."
 
 #: ../../variables/variables.rst:16
 msgid ""
@@ -49,6 +61,13 @@ msgid ""
 "will combine them into a single string separated by a semicolon and space (e."
 "g.: \"Item 1; Item 2; Item 3\")."
 msgstr ""
+"Sommige variabelen kunnen meer dan één waarde hebben (zoals "
+"``musicbrainz_artistid``). Als je maar een van die waarden wil gebruiken, "
+"zal je die waarde met bepaalde scriptfuncties moeten aanroepen of instellen. "
+"Om in één keer alle waarden te gebruiken, gebruik je de variabele op "
+"dezelfde manier als variabelen met één waarde. Picard combineert de waarden "
+"dan tot één tekenreeks, waarin de waarden worden gescheiden door een "
+"puntkomma en een spatie (bijv. ‘waarde 1; waarde 2; waarde 3’)."
 
 #: ../../variables/variables.rst:21
 msgid ""
@@ -59,6 +78,11 @@ msgid ""
 "`Picard downloads page <https://picard.musicbrainz.org/downloads/>`_ on the "
 "website."
 msgstr ""
+"Als in de beschrijving van een tag een latere versie van Picard wordt "
+"genoemd dan de huidige officiële versie op de downloadpagina, dan is de tag "
+"een bètafunctie die in de volgende officiële uitgave beschikbaar zal zijn. "
+"Op de pagina met Picard-downloads <https://picard.musicbrainz.org/downloads/>"
+"`_ op de website kan je lezen hoe je deze bètaversies kan vinden."
 
 #: ../../variables/variables.rst:30
 msgid ""
@@ -67,3 +91,7 @@ msgid ""
 "`variables_classical` / :doc:`variables_plugins` / :doc:"
 "`variables_other_information`"
 msgstr ""
+"Details: :doc:`tags_basic` / :doc:`tags_advanced` / :doc:`variables_basic` / "
+":doc:`variables_file` / :doc:`variables_advanced` / "
+":doc:`variables_classical` / :doc:`variables_plugins` / "
+":doc:`variables_other_information`"

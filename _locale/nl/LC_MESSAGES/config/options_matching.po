@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_matching/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_matching.rst:4
 msgid ":index:`Matching <configuration; matching preferences>`"
-msgstr ""
+msgstr ":index:`Overeenkomsten <configuratie; overeenkomsten>`"
 
 #: ../../config/options_matching.rst:9
 msgid ""
@@ -29,10 +32,14 @@ msgid ""
 "values. For advanced users, these allow you to tune the way Picard matches "
 "your files and clusters to MusicBrainz releases and tracks."
 msgstr ""
+"De meeste gebruikers kunnen deze instellingen het beste op de "
+"standaardinstellingen houden. Gevorderde gebruikers kunnen hiermee afstemmen "
+"hoe Picard je bestanden en clusters aan uitgaven en nummers in MusicBrainz "
+"koppelt."
 
 #: ../../config/options_matching.rst:13
 msgid "**Minimal similarity for file lookups**"
-msgstr ""
+msgstr "**Minimale overeenkomst voor het opzoeken van bestanden**"
 
 #: ../../config/options_matching.rst:15 ../../config/options_matching.rst:30
 msgid ""
@@ -40,6 +47,9 @@ msgid ""
 "metadata must be to the metadata from MusicBrainz for it to be matched to a "
 "release on the right-hand side."
 msgstr ""
+"Hoe hoger de waarde, hoe meer de metadata van een bestand moet overeenkomen "
+"met de metadata in MusicBrainz om aan een uitgave in het rechter deelvenster "
+"te worden gekoppeld."
 
 #: ../../config/options_matching.rst:18
 msgid ""
@@ -47,10 +57,14 @@ msgid ""
 "metadata is compared to the recordings found on MusicBrainz. If the "
 "similarity is below the threshold the recording is ignored completely."
 msgstr ""
+"Deze instelling wordt gebruikt als je afzonderlijke bestanden opzoekt. De "
+"metadata in het bestand worden vergeleken met de informatie over opnamen die "
+"op MusicBrainz worden gevonden. Als de overeenkomst lager is dan de "
+"drempelwaarde, wordt de opname genegeerd."
 
 #: ../../config/options_matching.rst:22
 msgid "**Minimal similarity for cluster lookups**"
-msgstr ""
+msgstr "**Minimale overeenkomst voor het opzoeken van clusters**"
 
 #: ../../config/options_matching.rst:24
 msgid ""
@@ -58,10 +72,14 @@ msgid ""
 "the left-hand pane must be to a MusicBrainz release for the entire cluster "
 "to be matched to a release on the right-hand side."
 msgstr ""
+"Hoe hoger de waarde, hoe meer een cluster van bestanden in het "
+"clusterdeelvenster van Picard moet overeenkomen met een uitgave in "
+"MusicBrainz om te worden gekoppeld aan een uitgave in het rechter "
+"deelvenster."
 
 #: ../../config/options_matching.rst:28
 msgid "**Minimal similarity for matching files to tracks**"
-msgstr ""
+msgstr "**Minimale overeenkomst voor het koppelen van bestanden aan nummers**"
 
 #: ../../config/options_matching.rst:33
 msgid ""
@@ -72,6 +90,14 @@ msgid ""
 "tracks gives a match above the threshold the file is moved into an "
 "\"unmatched files\" section on that release."
 msgstr ""
+"Deze instelling wordt gebruikt wanneer een bestand is gekoppeld aan een "
+"uitgave en Picard moet bepalen aan welk nummer het bestand moet worden "
+"gekoppeld. Dit gebeurt tijdens het opzoeken van een cluster nadat er een "
+"uitgave is gekozen, of als je zelf bestanden naar een geladen uitgave "
+"versleept (maar niet als je een bestand naar een nummer van een geladen "
+"uitgave versleept). Als geen van de bestanden de overeenkomstdrempel haalt, "
+"wordt het verplaatst naar het gedeelte ‘Niet-overeenkomende bestanden’ van "
+"de uitgave."
 
 #: ../../config/options_matching.rst:39
 msgid ""
@@ -82,9 +108,18 @@ msgid ""
 "the track to a release but then is not sure which track is correct; and "
 "leaves it in an \"unmatched files\" group within that release."
 msgstr ""
+"Als je geen enkele metadata in je bestanden hebt en je de functie ‘Scannen’ "
+"gebruikt om bestanden aan nummers te koppelen, moet je de waarde mogelijk "
+"verlagen om resultaten te krijgen. Anders koppelt Picard het bestand wel aan "
+"een uitgave, maar weet het programma niet zeker welk nummer het juiste is, "
+"waarna het bestand in het gedeelte ‘Niet-overeenkomende bestanden’ "
+"terechtkomt."
 
 #: ../../config/options_matching.rst:45
 msgid ""
 "As a general rule, lowering the percentages may increase the chance of "
 "finding a match at the risk of false positives and incorrect matches."
 msgstr ""
+"Over het algemeen betekent het verlagen van de drempelwaarde een hogere kans "
+"om een overeenkomst te vinden, maar ook een hogere kans op fout-positieven "
+"en onjuiste koppelingen."

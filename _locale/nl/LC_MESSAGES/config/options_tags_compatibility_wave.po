@@ -1,24 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_tags_compatibility_wave/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../config/options_tags_compatibility_wave.rst:4
 msgid ":index:`WAVE Files <configuration; wave tag options>`"
-msgstr ""
+msgstr ":index:`WAVE-bestanden <configuratie; opties voor wave-tags>`"
 
 #: ../../config/options_tags_compatibility_wave.rst:9
 msgid ""
@@ -26,6 +29,8 @@ msgid ""
 "very limited.  In addition, INFO chunks don't have any proper support for "
 "encoding."
 msgstr ""
+"De WAVE-standaard ondersteunt alleen INFO-chunktags, die zeer beperkt zijn. "
+"Daarnaast hebben INFO-chunktags geen goede ondersteuning voor codering."
 
 #: ../../config/options_tags_compatibility_wave.rst:12
 msgid ""
@@ -40,24 +45,36 @@ msgid ""
 "tags, the data from RIFF INFO will be used.  When saving files, RIFF INFO "
 "will be written in addition to the ID3v2 tags."
 msgstr ""
+"In alle gevallen schrijft Picard ID3-tags naar WAVE-bestanden. Dit wordt "
+"door best veel programma’s ondersteund, maar de ondersteuning is niet "
+"universeel. Programma’s die ID3-tags niet ondersteunen, zouden ze gewoon "
+"moeten negeren. Meestal is dit de beste manier om goede tags in WAVE-"
+"bestanden te hebben. Voor compatibiliteit met software die ID3v2-tags niet "
+"ondersteunt, kan Picard ook RIFF INFO-tags `(Resource Interchange File "
+"Format) <https://wikipedia.org/wiki/Resource_Interchange_File_Format>`_ naar "
+"WAVE-bestanden schrijven. RIFF INFO wordt alleen als extra gelezen en "
+"geschreven. Als er geen ID3-tags zijn, wordt de informatie uit de RIFF INFO-"
+"tags gebruikt. Bij het opslaan van bestanden worden naast ID3v2-tags ook "
+"RIFF INFO-tags geschreven."
 
 #: ../../config/options_tags_compatibility_wave.rst:19
 msgid ""
 "Picard's use of the RIFF INFO tags is determined by the following "
 "configuration settings:"
 msgstr ""
+"Picards gebruik van RIFF-INFO-tags wordt geregeld met de volgende opties:"
 
 #: ../../config/options_tags_compatibility_wave.rst:21
 msgid "**Also include RIFF INFO tags in the files**"
-msgstr ""
+msgstr "**Ook RIFF INFO-tags aan bestanden toevoegen**"
 
 #: ../../config/options_tags_compatibility_wave.rst:23
 msgid "Picard will save the RIFF INFO tags to the files."
-msgstr ""
+msgstr "Picard slaat RIFF INFO-tags in bestanden op."
 
 #: ../../config/options_tags_compatibility_wave.rst:25
 msgid "**Remove existing RIFF INFO tags from WAVE files**"
-msgstr ""
+msgstr "**Bestaande RIFF INFO-tags uit WAVE-bestanden verwijderen**"
 
 #: ../../config/options_tags_compatibility_wave.rst:27
 msgid ""
@@ -65,10 +82,12 @@ msgid ""
 "setting is ignored if the previous setting is enabled to allow writing the "
 "RIFF INFO tags to the files."
 msgstr ""
+"Picard verwijdert eventuele RIFF INFO-tags uit WAVE-bestanden. Als de vorige "
+"optie is ingeschakeld, wordt deze optie genegeerd."
 
 #: ../../config/options_tags_compatibility_wave.rst:30
 msgid "**RIFF INFO Text Encoding**"
-msgstr ""
+msgstr "**RIFF INFO-tekencodering**"
 
 #: ../../config/options_tags_compatibility_wave.rst:32
 msgid ""
@@ -78,3 +97,8 @@ msgid ""
 "depends on the software reading it.  Typically, if the software supports "
 "this, it will read the ID3 tags anyway so there is not much to be gained."
 msgstr ""
+"Met deze optie kan je instellen met welke codering RIFF INFO-tags worden "
+"geschreven. Standaard wordt Windows-1252 gebruikt. Picard kan ook UTF-8 "
+"gebruiken. UTF-8 biedt volledige taalondersteuning, maar niet alle software "
+"kan het lezen. Software die dit ondersteunt, ondersteunt meestal ook het "
+"lezen van ID3-tags, dus zo veel heb je niet aan deze optie."

@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-31 09:30-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usageretrieve/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/retrieve.rst:4
 msgid "Retrieving Album Information"
-msgstr ""
+msgstr "Informatie van MusicBrainz ophalen"
 
 #: ../../usage/retrieve.rst:8
 msgid ""
@@ -31,20 +34,26 @@ msgid ""
 "depending on the information currently available on your system (e.g.: "
 "metadata existing in the files, or having the source CD available)."
 msgstr ""
+"In deze stap zoek je de uitgave die je wil taggen op in de databank van "
+"MusicBrainz en laad je de informatie over die uitgave in Picard. Dat kan op "
+"een paar manieren, afhankelijk van de informatie die je al op je systeem "
+"hebt (zoals metadata in de bestanden of de cd in je cd-station)."
 
 #: ../../usage/retrieve.rst:13
 msgid ""
 "There are basically four main methods used to retrieve album information "
 "from the MusicBrainz database."
 msgstr ""
+"Er zijn vier manieren om informatie over uitgaven uit de databank van "
+"MusicBrainz op te halen."
 
 #: ../../usage/retrieve.rst:18
 msgid "Lookup CD or Ripper Log"
-msgstr ""
+msgstr "Cd opzoeken of ripperlogboek gebruiken"
 
 #: ../../usage/retrieve.rst:22
 msgid ":doc:`Lookup CD or Ripper Log <retrieve_lookup_cd>`"
-msgstr ""
+msgstr ":doc:`Cd opzoeken of ripperlogboek gebruiken <retrieve_lookup_cd>`"
 
 #: ../../usage/retrieve.rst:24
 msgid ""
@@ -59,12 +68,25 @@ msgid ""
 "manually for the matching album, and are given the option of attaching the "
 "TOC from your CD to the selected release for future lookup."
 msgstr ""
+"Dit is de beste methode om automatisch een uitgave op te zoeken. Je kan deze "
+"methode gebruiken als je de cd of een logboek van een :ref:`ondersteunde cd-"
+"ripper <faq_supported_rippers>` hebt. Meestal gebruik je dit meteen nadat je "
+"de nummers van de cd hebt geript. Als je deze optie gebruikt, wordt de "
+"inhoudsopgave (ToC) van de cd gelezen en naar MusicBrainz gestuurd, waarna "
+"je een lijst krijgt met uitgaven die dezelfde inhoudsopgave hebben. Als er "
+"overeenkomende uitgaven worden gevonden, krijg je een lijst te zien waaruit "
+"je de juiste kan kiezen. Als er geen overeenkomsten zijn gevonden of de "
+"juiste uitgave er niet tussen zit, kan je zelf in de databank naar de juiste "
+"uitgave zoeken. Bovendien kan je dan de inhoudsopgave van de cd aan de "
+"uitgave toevoegen, zodat hij later makkelijk kan worden teruggevonden."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:3
 msgid ""
 "The steps to follow to :index:`lookup a CD <lookup; cd, lookup; ripper log>` "
 "are:"
 msgstr ""
+"Om een cd op te zoeken :index:`cd opzoeken <opzoeken; cd, opzoeken; "
+"ripperlogboek>`:"
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:5
 msgid ""
@@ -77,6 +99,15 @@ msgid ""
 "file to process. Either method will query the MusicBrainz database and "
 "display a list of matching releases."
 msgstr ""
+"Zorg je dat de cd in je cd-speler zit en selecteer je :menuselection:`‘"
+"Hulpmiddelen --> Cd opzoeken … --> (te gebruiken station)’`. De TOC van de "
+"cd wordt berekend en naar MusicBrainz verstuurd. Je kunt ook een "
+":ref:`logboek van een ondersteunde ripper <vgv_ondersteunde_rippers>` "
+"gebruiken om de cd op te zoeken met de opdracht :menuselection:`‘"
+"Hulpmiddelen --> Cd opzoeken … --> Met logboekbestand van cd-ripper’`. Dan "
+"verschijnt er een verkennervenster waarmee je het logboekbestand kan "
+"selecteren. Met beide methoden wordt de MusicBrainz-databank bevraagd, "
+"waarna er een lijst met passende uitgaven wordt weergegeven."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:16
 msgid ""
@@ -84,6 +115,8 @@ msgid ""
 "into Picard` button.  This will load the information for the release into "
 "Picard."
 msgstr ""
+"Selecteer de juiste uitgave in de lijst en klik op de knop :guilabel:`In "
+"Picard laden`. De informatie over de uitgave wordt dan in Picard geladen."
 
 #: ../../usage/retrieve_browser_steps.txt:55
 #: ../../usage/retrieve_lookup_cd_steps.txt:19
@@ -94,6 +127,8 @@ msgid ""
 "A music symbol in front of a track number in the right-hand pane indicates "
 "that there has been no file assigned to the track."
 msgstr ""
+"Een muzieknoot voor een nummer in het rechter deelvenster geeft aan dat er "
+"nog geen bestand aan het nummer is gekoppeld."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:26
 msgid ""
@@ -103,6 +138,11 @@ msgid ""
 "a list of the releases that match your search criterion and have the same "
 "number of tracks as your CD TOC."
 msgstr ""
+"Als er geen bestanden zijn gekoppeld of als de koppelingen niet kloppen, kan "
+"je de juiste uitgave vinden met de optie :guilabel:`Disc-ID indienen`. Vul "
+"de titel of artiest van de uitgave in om te zoeken. Je krijgt een lijst te "
+"zien met uitgaven die passen bij je zoekcriteria en die even veel nummers "
+"hebben als de TOC van je cd."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:35
 msgid "lookup_tagger"
@@ -113,20 +153,25 @@ msgid ""
 "Use the green arrow |lookup_tagger| to load the information for a release "
 "into Picard.  In addition, you can select the release and attach the CD TOC."
 msgstr ""
+"Gebruik de groene pijl |lookup_tagger| om de informatie over een uitgave in "
+"Picard te laden. Je kan ook de uitgave selecteren en de TOC van de cd "
+"daaraan koppelen."
 
 #: ../../usage/retrieve_lookup_cd_steps.txt:51
 msgid ""
 "If none of the releases displayed are correct, you have the option to add a "
 "new release (with some information automatically included)."
 msgstr ""
+"Als geen van de weergegeven uitgaven de juiste is, kan je een nieuwe uitgave "
+"toevoegen (een deel van de informatie wordt dan al automatisch ingevuld)."
 
 #: ../../usage/retrieve.rst:41
 msgid "Lookup Files"
-msgstr ""
+msgstr "Bestanden opzoeken"
 
 #: ../../usage/retrieve.rst:45
 msgid ":doc:`Lookup Files <retrieve_lookup>`"
-msgstr ""
+msgstr ":doc:`Bestanden opzoeken <retrieve_lookup>`"
 
 #: ../../usage/retrieve.rst:47
 msgid ""
@@ -136,10 +181,14 @@ msgid ""
 "and then perform the lookup.  Picard will try to match the entire set of "
 "clustered files to the same release."
 msgstr ""
+"Als je de cd niet hebt en je bestanden per uitgave zijn gegroepeerd, is dit "
+"de beste methode om de juiste uitgave te zoeken. Eerst groepeer je de "
+"bestanden in clusters en daarna zoek je de clusters op. Vervolgens probeert "
+"Picard om alle bestanden in het cluster aan dezelfde uitgave te koppelen."
 
 #: ../../usage/retrieve_lookup_steps.txt:3
 msgid "The steps to follow to :index:`lookup files` are:"
-msgstr ""
+msgstr "Het :index:`opzoeken van bestanden` gaat als volgt:"
 
 #: ../../usage/retrieve_browser_steps.txt:8
 #: ../../usage/retrieve_lookup_steps.txt:5
@@ -152,6 +201,10 @@ msgid ""
 "interactions.  This is enabled from :menuselection:`\"View --> File "
 "Browser\"`."
 msgstr ""
+"Voeg je bestanden toe via :menuselection:`‘Bestand --> Bestanden toevoegen’` "
+"of :menuselection:`‘Bestand --> Map toevoegen’`. De interne verkenner een "
+"handig hulpmiddel om met je bestanden te werken. Je kan de verkenner "
+"inschakelen via :menuselection:`‘Beeld --> Verkenner’`."
 
 #: ../../usage/retrieve_browser_steps.txt:17
 #: ../../usage/retrieve_lookup_steps.txt:14
@@ -162,12 +215,17 @@ msgid ""
 "and wait for Picard to process the files - the names will turn from grey to "
 "black."
 msgstr ""
+"Sleep de geselecteerde map of bestanden naar het gedeelte ‘Niet-geclusterde "
+"bestanden’ en wacht tot Picard de bestanden heeft verwerkt. De namen worden "
+"één voor één zwart weergegeven in plaats van grijs."
 
 #: ../../usage/retrieve_lookup_steps.txt:22
 msgid ""
 "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album :"
 "index:`clusters <pair: cluster; lookup>`."
 msgstr ""
+"Gebruik :menuselection:`‘Hulpmiddelen --> Clusteren’` om de bestanden per "
+"uitgave te :index:`clusteren <koppelen: clusteren; opzoeken>`."
 
 #: ../../usage/retrieve_lookup_steps.txt:29
 msgid ""
@@ -175,6 +233,9 @@ msgid ""
 "lookup the cluster. Depending on your previous metadata, the album will show "
 "up in the right-hand pane."
 msgstr ""
+"Selecteer een cluster en gebruik :menuselection:`‘Hulpmiddelen --> Opzoeken"
+"’` om het cluster op te zoeken. Afhankelijk van de bestaande metadata wordt "
+"in het rechter deelvenster een uitgave weergegeven."
 
 #: ../../usage/retrieve_lookup_steps.txt:39
 msgid ""
@@ -184,20 +245,28 @@ msgid ""
 "different matching version to use, or refine the search criteria and perform "
 "a new search."
 msgstr ""
+"Als je niet zeker weet of de geladen uitgave de juiste is, kan je via "
+":menuselection:`‘Hulpmiddelen --> Andere versies van de uitgave zoeken …’` "
+"een scherm openen waarop alle gevonden uitgaven worden weergegeven. In dit "
+"venster kan je een andere uitgave selecteren om te gebruiken of de "
+"zoekopdracht aanpassen en opnieuw zoeken."
 
 #: ../../usage/retrieve_lookup_steps.txt:48
 msgid ""
 "If no album was retrieved, or if the album retrieved was incorrect, you may "
 "have to try a different method such as scanning the files or a manual lookup."
 msgstr ""
+"Als er geen uitgave wordt geladen of niet de goede uitgave is gelden, kan je "
+"een andere methode proberen, zoals de bestanden scannen of handmatig "
+"opzoeken."
 
 #: ../../usage/retrieve.rst:60
 msgid "Scan Files"
-msgstr ""
+msgstr "Bestanden scannen"
 
 #: ../../usage/retrieve.rst:64
 msgid ":doc:`Scan Files <retrieve_scan>`"
-msgstr ""
+msgstr ":doc:`Bestanden scannen <retrieve_scan>`"
 
 #: ../../usage/retrieve.rst:66
 msgid ""
@@ -209,10 +278,17 @@ msgid ""
 "hand pane based on a \"best match\" using the Preferred Releases settings in "
 "the Metadata options."
 msgstr ""
+"Als je bestanden niet in uitgaven worden gegroepeerd en je de cd niet hebt, "
+"is dit de enige andere methode om automatisch de juiste uitgave te laden. Je "
+"scant de bestanden om hun AcoustID-vingerafdrukken te bepalen, waarna de "
+"bestanden stuk voor stuk aan de hand van hun vingerafdruk worden opgezocht. "
+"Op basis van de instellingen onder Metadata > Uitgavevoorkeuren worden in "
+"het rechter deelvenster passende uitgaven geladen, waarna de bestanden aan "
+"de nummers van die uitgaven worden gekoppeld."
 
 #: ../../usage/retrieve_scan_steps.txt:3
 msgid "The steps to follow to :index:`scan and lookup files <scan files>` are:"
-msgstr ""
+msgstr "Je :index:`scant de bestanden <scan files>` als volgt:"
 
 #: ../../usage/retrieve_scan_steps.txt:22
 msgid ""
@@ -222,6 +298,12 @@ msgid ""
 "pane based on a \"best match\" using the Preferred Releases settings in the "
 "Metadata options."
 msgstr ""
+"Selecteer de gewenste bestanden en gebruik :menuselection:`‘Hulpmiddelen --> "
+"Scannen’` om hun AcoustID-vingerafdrukken te bepalen en aan de hand daarvan "
+"uitgaven te zoeken. Op basis van de instellingen onder Metadata > "
+"Uitgavevoorkeuren worden in het rechter deelvenster passende uitgaven "
+"geladen, waarna de bestanden aan de nummers van die uitgaven worden "
+"gekoppeld."
 
 #: ../../usage/retrieve_scan_steps.txt:33
 msgid ""
@@ -229,14 +311,17 @@ msgid ""
 "have to try a different method such as clustering the files or a browser "
 "lookup."
 msgstr ""
+"Als er geen of de verkeerde uitgave wordt geladen, moet je misschien een "
+"andere methode gebruiken, zoals de bestanden clusteren of de bestanden in de "
+"browser opzoeken."
 
 #: ../../usage/retrieve.rst:79
 msgid "Lookup in Browser"
-msgstr ""
+msgstr "In de browser opzoeken"
 
 #: ../../usage/retrieve.rst:83
 msgid ":doc:`Lookup in Browser <retrieve_browser>`"
-msgstr ""
+msgstr ":doc:`In de browser opzoeken <retrieve_browser>`"
 
 #: ../../usage/retrieve.rst:85
 msgid ""
@@ -246,22 +331,31 @@ msgid ""
 "There are two methods of initiating this search. The first method searches "
 "based on the tag information from the selected files."
 msgstr ""
+"Als de automatische methoden niet beschikbaar zijn of niet het gewenste "
+"resultaat opleveren, kan je de uitgaven zelf opzoeken. Picard start dan in "
+"je webbrowser een zoekopdracht op de website van MusicBrainz. Je kan de "
+"zoekopdracht op twee manieren starten. Met de eerste manier wordt er gezocht "
+"aan de hand van de tags van de geselecteerde bestanden."
 
 #: ../../usage/retrieve_browser_steps.txt:3
 msgid "retrieve_browser_steps_lookup_tagger"
-msgstr ""
+msgstr "retrieve_browser_steps_lookup_tagger"
 
 #: ../../usage/retrieve_browser_steps.txt:6
 msgid ""
 "The steps to follow to :index:`manually lookup an album <lookup in browser>` "
 "on MusicBrainz are:"
 msgstr ""
+"Je :index:`kan uitgaven als volgt op MusicBrainz opzoeken <in de browser "
+"opzoeken>`:"
 
 #: ../../usage/retrieve_browser_steps.txt:25
 msgid ""
 "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album "
 "clusters if you want lookup a cluster."
 msgstr ""
+"Als je een cluster wil opzoeken, groepeer je de bestanden via "
+":menuselection: `‘Hulpmiddelen --> Clusteren’`."
 
 #: ../../usage/retrieve_browser_steps.txt:32
 msgid ""
@@ -269,6 +363,9 @@ msgid ""
 "in Browser\"` to initiate the search in your browser using the currently "
 "available metadata."
 msgstr ""
+"Selecteer een bestand of een cluster en gebruik :menuselection:`‘"
+"Hulpmiddelen --> In de browser opzoeken`’ om op basis van de al aanwezige "
+"metadata in de browser naar een uitgave te zoeken."
 
 #: ../../usage/retrieve_browser_steps.txt:40
 msgid ""
@@ -276,30 +373,36 @@ msgid ""
 "changes at the bottom of the web page and click the \"Search\" button to re-"
 "initiate the search."
 msgstr ""
+"Als je de zoekopdracht wil aanpassen, kan je onderaan de pagina de criteria "
+"aanpassen en op ‘Zoeken’ klikken om opnieuw te zoeken."
 
 #: ../../usage/retrieve_browser_steps.txt:48
 msgid ""
 "Use the green arrow |retrieve_browser_steps_lookup_tagger| to load the "
 "information for a release into Picard."
 msgstr ""
+"Gebruik de groene pijl |retrieve_browser_steps_lookup_tagger| om informatie "
+"over de gewenste uitgave in Picard te laden."
 
 #: ../../usage/retrieve.rst:97
 msgid "Manual Lookup"
-msgstr ""
+msgstr "Handmatig opzoeken"
 
 #: ../../usage/retrieve.rst:101
 msgid ":doc:`Manual Lookup <retrieve_manual>`"
-msgstr ""
+msgstr ":doc:`Handmatig opzoeken <retrieve_manual>`"
 
 #: ../../usage/retrieve.rst:103
 msgid ""
 "The second browser search method uses manually entered information as the "
 "search criterion."
 msgstr ""
+"Voor de tweede methode voor opzoeken in de browser moet je zelf de "
+"zoekopdracht invullen."
 
 #: ../../usage/retrieve_manual_steps.txt:3
 msgid "The steps to follow to manually lookup an album on MusicBrainz are:"
-msgstr ""
+msgstr "Je kunt een uitgave als volgt in MusicBrainz opzoeken:"
 
 #: ../../usage/retrieve_manual_steps.txt:22
 msgid ""
@@ -308,22 +411,28 @@ msgid ""
 "search.  This will open the `MusicBrainz website <https://musicbrainz.org>`_ "
 "in your browser."
 msgstr ""
+"Vul in het zoekvak in wat je wil zoeken en selecteer het type (artiest, "
+"album, nummer). Vervolgens klik je op het vergrootglas om te zoeken. De "
+"`website van MusicBrainz <https://musicbrainz.org>`_ wordt in je browser "
+"geopend."
 
 #: ../../usage/retrieve_manual_steps.txt:30
 msgid ""
 "Continue to drill down by clicking on the appropriate links until you get to "
 "the release that you want to retrieve."
-msgstr ""
+msgstr "Zoek op de website naar de uitgave die je wil ophalen."
 
 #: ../../usage/retrieve_manual_steps.txt:37
 msgid "retrieve_manual_steps_lookup_tagger"
-msgstr ""
+msgstr "retrieve_manual_steps_lookup_tagger"
 
 #: ../../usage/retrieve_manual_steps.txt:40
 msgid ""
 "Use the green arrow |retrieve_manual_steps_lookup_tagger| to load the "
 "information for a release into Picard."
 msgstr ""
+"Gebruik de groene pijl | retrieve_manual_steps_lookup_tagger| om informatie "
+"over de gewenste uitgave in Picard te laden."
 
 #: ../../usage/retrieve_manual_steps.txt:56
 msgid ""
@@ -331,6 +440,9 @@ msgid ""
 "release/9383a6f5-9607-4a36-9c68-8663aad3592b``) in the search box in Picard, "
 "the entry will be loaded directly without opening a browser window."
 msgstr ""
+"Als je in het zoekvak een link naar het gewenste object invult (bijv. "
+"``https://musicbrainz.org/release/9383a6f5-9607-4a36-9c68-8663aad3592b``), "
+"dan wordt dat meteen geladen, zonder een browservenster te openen."
 
 #: ../../usage/retrieve.rst:114
 msgid ""
@@ -338,3 +450,6 @@ msgid ""
 "`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / :doc:"
 "`retrieve_manual`"
 msgstr ""
+"Stapsgewijze instructies: :doc:`retrieve_lookup_cd` / "
+":doc:`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / "
+":doc:`retrieve_manual`"

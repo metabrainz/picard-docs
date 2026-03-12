@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 10:19-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usagesubmit_acoustid/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/submit_acoustid.rst:4
@@ -24,6 +27,8 @@ msgid ""
 ":index:`Submitting Acoustic Fingerprints <AcoustID; submitting, acoustic "
 "fingerprint; submitting, fingerprint; submitting>`"
 msgstr ""
+":index:`Akoestische vingerafdrukken versturen <AcoustID; versturen, "
+"akoestische vingerafdruk; versturen, vingerafdruk; versturen>`"
 
 #: ../../usage/submit_acoustid.rst:6
 msgid ""
@@ -33,6 +38,11 @@ msgid ""
 "fingerprint is **not** an AcoustID. Please see the :doc:`/tutorials/"
 "acoustid` tutorial for additional information."
 msgstr ""
+"Akoestische vingerafdrukken zijn heel handig voor het herkennen van nummers "
+"en opnamen, zodat ze in de databank van MusicBrainz kunnen worden opgezocht. "
+"Het is dus heel waardevol om ze bij het taggen van je bestanden toe te "
+"voegen. Let op: een akoestische vingerafdruk is niet hetzelfde als een "
+"AcoustID. Zie :doc:`/tutorials/acoustid` voor meer informatie."
 
 #: ../../usage/submit_acoustid.rst:13
 msgid ""
@@ -43,12 +53,20 @@ msgid ""
 "AcoustID was calculated and whether it ready for submission (red = "
 "unsubmitted, grey = already submitted)."
 msgstr ""
+"Als je akoestische vingerafdrukken met Picard indient, raden we aan om de "
+"kolom Vingerafdrukstatus in de tabel in het rechter deelvenster te "
+"gebruiken. Dat doe je door met rechts op de kolomkop te klikken en ‘"
+"Vingerafdrukstatus’ aan te vinken. Je ziet dan een pictogram dat aangeeft of "
+"er een AcoustID is berekend en of die klaar is om in te dienen (rood: niet "
+"ingediend; grijs: al ingediend)."
 
 #: ../../usage/submit_acoustid.rst:23
 msgid ""
 "There is also a :doc:`Video Tutorial </tutorials/v_submit_acoustid>` "
 "available which demonstrates how to submit AcoustIDs."
 msgstr ""
+"Er is ook een :doc:`videohandleiding </tutorials/v_submit_acoustid>` over "
+"het indienen van AcoustID’s."
 
 #: ../../usage/submit_acoustid.rst:25
 msgid ""
@@ -59,22 +77,31 @@ msgid ""
 "`retrieve` and :doc:`match` sections for more information about retrieving "
 "release information and matching audio files to releases."
 msgstr ""
+"Je kan akoestische vingerafdrukken op twee manieren versturen, afhankelijk "
+"van de manier waarop je uitgaven aan je bestanden koppelt. In beide gevallen "
+"moet je eerst de audiobestanden aan de nummers in de databank van "
+"MusicBrainz koppelen voordat je AcoustID’s kunt indienen. Zie :doc:`ophalen` "
+"en :doc:`koppelen` voor meer informatie over het laden van uitgaven in "
+"MusicBrainz en het koppelen van audiobestanden aan uitgaven."
 
 #: ../../usage/submit_acoustid.rst:31
 msgid ""
 "The steps to follow to submit acoustic fingerprints for each of the two "
 "workflows are:"
-msgstr ""
+msgstr "Zoals gezegd, zijn er twee manieren om AcoustID’s in te dienen:"
 
 #: ../../usage/submit_acoustid.rst:34
 msgid "Submitting when using Scan to identify the release"
-msgstr ""
+msgstr "Als je de uitgave met scannen opzoekt"
 
 #: ../../usage/submit_acoustid.rst:36
 msgid ""
 "Load files into the clustering pane.  Select the files and click the \"Scan"
 "\" button, or select :menuselection:`\"Tools --> Scan\"`."
 msgstr ""
+"Laad de bestanden in het clusterdeelvenster. Selecteer de bestanden en klik "
+"op de knop ‘Scannen’, of selecteer :menuselection:`‘Hulpmiddelen --> Scannen"
+"’`."
 
 #: ../../usage/submit_acoustid.rst:46
 msgid ""
@@ -82,6 +109,10 @@ msgid ""
 "already exist in the AcoustID database and do not need to be re-submitted.  "
 "The \"Submit\" button will remain disabled."
 msgstr ""
+"Als de bestanden automatisch aan een nummer in het rechter deelvenster "
+"worden gekoppeld, zijn er al AcoustID’s in de databank en hoeven ze niet "
+"meer te worden ingediend. De knop ‘AcoustID’s versturen’ blijft "
+"uitgeschakeld."
 
 #: ../../usage/submit_acoustid.rst:54
 msgid ""
@@ -90,6 +121,10 @@ msgid ""
 "will show up in red (i.e.: unsubmitted status) and the \"Submit\" button "
 "will be enabled."
 msgstr ""
+"Als de bestanden niet worden gekoppeld of als je ze zelf naar een (ander) "
+"nummer sleept, kunnen de AcoustID’s worden verstuurd. Het AcoustID-pictogram "
+"voor de nummers wordt rood (wat ‘niet-ingediend’ betekent) en de knop ‘"
+"AcoustID’s versturen’ wordt ingeschakeld."
 
 #: ../../usage/submit_acoustid.rst:65
 msgid ""
@@ -97,16 +132,22 @@ msgid ""
 "files identified in Step 3. The AcoustID icon for the tracks will change to "
 "grey (i.e.: submitted status) and the \"Submit\" button will be disabled."
 msgstr ""
+"Als je op die knop klikt, worden alleen de vingerafdrukken van de bestanden "
+"die je in stap 3 hebt gekoppeld verstuurd. Het AcoustID-pictogram voor de "
+"nummers wordt grijs (wat ‘ingediend’ betekent) en de knop ‘AcoustID’s "
+"versturen’ wordt uitgeschakeld."
 
 #: ../../usage/submit_acoustid.rst:76
 msgid "Submitting when not using Scan to identify the release"
-msgstr ""
+msgstr "Als je de uitgave niet met scannen opzoekt"
 
 #: ../../usage/submit_acoustid.rst:78
 msgid ""
 "Make sure that the files are properly matched to tracks on a release in the "
 "right-hand pane."
 msgstr ""
+"Zorg dat de bestanden aan de juiste nummers van een uitgave in het rechter "
+"deelvenster zijn gekoppeld."
 
 #: ../../usage/submit_acoustid.rst:87
 msgid ""
@@ -114,18 +155,25 @@ msgid ""
 "> Generate AcoustID fingerprints\"`. This will calculate the acoustic "
 "fingerprints for the selected files."
 msgstr ""
+"Selecteer de bestanden in het rechter deelvenster en selecteer "
+":menuselection:`‘Hulpmiddelen --> AcoustID-vingerafdrukken aanmaken’`. De "
+"akoestische vingerafdrukken van de geselecteerde bestanden worden berekend."
 
 #: ../../usage/submit_acoustid.rst:99
 msgid ""
 "The \"Generate AcoustID fingerprints\" action button can be added to the "
 "button bar by changing the settings in the User Interface options."
 msgstr ""
+"In de instellingen, onder Gebruikersinterface > Actiewerkbalk, kan je de "
+"actieknop ‘AcoustID-vingerafdrukken aanmaken’ aan de actiewerkbalk toevoegen."
 
 #: ../../usage/submit_acoustid.rst:102
 msgid ""
 "The AcoustID icon for the tracks will show up in red (i.e.: unsubmitted "
 "status) and the \"Submit\" button will be enabled."
 msgstr ""
+"Het AcoustID-pictogram voor de nummers wordt rood (wat ‘niet-ingediend’ "
+"betekent) en de knop ‘AcoustID’s versturen’ wordt ingeschakeld."
 
 #: ../../usage/submit_acoustid.rst:112
 msgid ""
@@ -133,3 +181,7 @@ msgid ""
 "The AcoustID icon for the tracks will change to grey (i.e.: submitted "
 "status) and the \"Submit\" button will be disabled."
 msgstr ""
+"Als je op de knop ‘AcoustID’s versturen’ klikt, worden de vingerafdrukken "
+"van de bestanden ingediend. Het AcoustID-pictogram voor de nummers wordt "
+"grijs (wat ‘ingediend’ betekent) en de knop ‘AcoustID’s versturen’ wordt "
+"uitgeschakeld."

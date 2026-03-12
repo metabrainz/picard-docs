@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-10 13:40-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/appendicesplugins_api/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../appendices/plugins_api.rst:4
@@ -24,24 +27,28 @@ msgid ""
 ":index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API <pair: "
 "plugins; api>`"
 msgstr ""
+":index:`Bijlage A <pair: plug-ins; programmeren>`: :index:`Plug-in-API "
+"<pair: plug-ins; api>`"
 
 #: ../../appendices/plugins_api.rst:7
 msgid ":index:`Plugin Metadata <plugins; metadata>`"
-msgstr ""
+msgstr ":index:`Plug-inmetadata <plug-ins; metadata>`"
 
 #: ../../appendices/plugins_api.rst:9
 msgid ""
 "Each plugin must provide some metadata as variables. Those variables should "
 "be placed at the top of the file."
 msgstr ""
+"Elke plug-in moet bepaalde metadata als variabele opgeven. Deze variabelen "
+"moeten bovenaan het bestand staan."
 
 #: ../../appendices/plugins_api.rst:29
 msgid "Variables explanation:"
-msgstr ""
+msgstr "Uitleg van de variabelen:"
 
 #: ../../appendices/plugins_api.rst:31
 msgid "**PLUGIN_NAME** should be a short but descriptive name for the plugin."
-msgstr ""
+msgstr "**PLUGIN_NAME** moet een korte beschrijvende naam voor de plug-in zijn."
 
 #: ../../appendices/plugins_api.rst:33
 msgid ""
@@ -53,6 +60,13 @@ msgid ""
 "formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists "
 "(``<ul>``, ``<ol>``)."
 msgstr ""
+"**PLUGIN_DESCRIPTION** moet zo eenvoudig mogelijk zijn, maar wel de "
+"hoofdfunctie uitleggen. Als je plug-in is bedoeld voor Picard 2.7 of "
+"nieuwer, kan je de opmaak van de tekst met `Markdown <https://"
+"daringfireball.net/projects/markdown/>`_ verzorgen. Als je plug-in voor "
+"eerdere versies is bedoeld, kan je eenvoudige html-opmaak gebruiken. Beperk "
+"het gebruik van html tot eenvoudige tekstopmaak (bijb. ``<strong>``, ``<em>"
+"``), links (``<a>``) en lijsten (``<ul>``, ``<ol>``)."
 
 #: ../../appendices/plugins_api.rst:39
 msgid ""
@@ -60,6 +74,9 @@ msgid ""
 "versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It "
 "is recommended that you use `Semantic Versioning <https://semver.org/>`_."
 msgstr ""
+"**PLUGIN_VERSION** moet de versie van de plug-in bevatten. De versie moet de "
+"indeling ``x.y.z`` (bijv. ‘1.0’ of ‘2.12.4’) hebben. We raden aan om "
+"`semantische versienummering <https://semver.org/>`_ te gebruiken."
 
 #: ../../appendices/plugins_api.rst:42
 msgid ""
@@ -68,6 +85,11 @@ msgid ""
 "versions, but on breaking changes support for older plugin versions can be "
 "dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
 msgstr ""
+"**PLUGIN_API_VERSIONS** moet worden ingesteld op de versies van Picard "
+"waarmee deze plug-in werkt. Meestal ondersteunen nieuwe versies van Picard "
+"oudere API-versies, maar bij compatibiliteitsbrekende veranderingen kan de "
+"ondersteuning voor oudere plug-inversies worden losgelaten. Beschikbare "
+"versies voor Picard 2 zijn ‘2.0’, ‘2.1’ en ‘2.2’."
 
 #: ../../appendices/plugins_api.rst:46
 msgid ""
@@ -76,12 +98,18 @@ msgid ""
 "spdx.org/licenses/>`_, but you are welcomed to use another license if the "
 "one you chose is not available in the list."
 msgstr ""
+"**PLUGIN_LICENSE** moet worden ingesteld op de licentie van de plug-in. Bij "
+"voorkeur een van de licenties uit de `SPDX-licentielijst <https://spdx.org/"
+"licenses/>`_, maar je kan natuurlijk ook een andere licentie gebruiken als "
+"je favoriete licentie niet in die lijst staat."
 
 #: ../../appendices/plugins_api.rst:50
 msgid ""
 "**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license "
 "text."
 msgstr ""
+"**PLUGIN_LICENSE_URL** moet de URL naar de volledige tekst van de licentie "
+"zijn."
 
 #: ../../appendices/plugins_api.rst:52
 msgid ""
@@ -90,10 +118,14 @@ msgid ""
 "omitted.  If a URL is provided, it will be shown as a clickable link in the "
 "description displayed for the plugin in the Plugins option settings screen."
 msgstr ""
+"**PLUGIN_USER_GUIDE_URL** moet de URL naar de documentatie van de plug-in "
+"zijn. Deze variabele is optioneel en kan worden weggelaten. Als er een URL "
+"wordt opgegeven, is die te zien als klikbare link in de beschrijving op het "
+"instellingenvenster van de plug-in."
 
 #: ../../appendices/plugins_api.rst:58
 msgid ":index:`Metadata Processors <plugins; metadata processors>`"
-msgstr ""
+msgstr ":index:`Metadataverwerkers <plug-ins; metadataverwerkers>`"
 
 #: ../../appendices/plugins_api.rst:60
 msgid ""
@@ -101,55 +133,67 @@ msgid ""
 "The types of the arguments passed to the processor functions in the "
 "following examples are as follows:"
 msgstr ""
+"De metadata van MusicBrainz kan op twee niveaus worden verwerkt: uitgave en "
+"nummer. Aan de verwerker kunnen de volgende argumenten worden doorgegeven:"
 
 #: ../../appendices/plugins_api.rst:63
 msgid "**album**: ``picard.album.Album``"
-msgstr ""
+msgstr "**album**: ``picard.album.Album``"
 
 #: ../../appendices/plugins_api.rst:64
 msgid "**metadata**: ``picard.metadata.Metadata``"
-msgstr ""
+msgstr "**metadata**: ``picard.metadata.Metadata``"
 
 #: ../../appendices/plugins_api.rst:65
 msgid ""
 "**release**: ``dict`` with release data from MusicBrainz JSON web service"
 msgstr ""
+"**uitgave**: ``dict`` met uitgave-informatie uit de JSON-webdienst van "
+"MusicBrainz"
 
 #: ../../appendices/plugins_api.rst:66
 msgid "**track**: ``dict`` with track data from MusicBrainz JSON web service"
 msgstr ""
+"**nummer**: ``dict`` met nummerinformatie uit de JSON-webdienst van "
+"MusicBrainz"
 
 #: ../../appendices/plugins_api.rst:70
 msgid "Album metadata example:"
-msgstr ""
+msgstr "Voorbeeld van uitgavemetadata:"
 
 #: ../../appendices/plugins_api.rst:91
 msgid "Track metadata example:"
-msgstr ""
+msgstr "Voorbeeld van nummermetadata:"
 
 #: ../../appendices/plugins_api.rst:109
 msgid ":index:`Event Hooks <pair: plugins; event hooks>`"
-msgstr ""
+msgstr ":index:`Eventhooks <pair: plug-ins; eventhooks>`"
 
 #: ../../appendices/plugins_api.rst:111
 msgid ""
 "Plugins can register themselves to listen for different events. Currently "
 "the following event hooks are available:"
 msgstr ""
+"Plug-ins kunnen worden geregistreerd om naar verschillende soorten "
+"gebeurtenissen te luisteren. Op dit moment zijn de volgende eventhooks "
+"beschikbaar:"
 
 #: ../../appendices/plugins_api.rst:114
 msgid "file_post_load_processor(file)"
-msgstr ""
+msgstr "file_post_load_processor(file)"
 
 #: ../../appendices/plugins_api.rst:116
 msgid ""
 "This hook is called after a file has been loaded into Picard. This could for "
 "example be used to load additional data for a file. Usage:"
 msgstr ""
+"Deze hook wordt opgeroepen nadat een bestand in Picard is geladen. Je kan "
+"hem bijvoorbeeld gebruiken om extra informatie voor een bestand te laden. "
+"Gebruik:"
 
 #: ../../appendices/plugins_api.rst:130
 msgid "file_post_save_processor(file)"
-msgstr ""
+msgstr "file_post_save_processor(file)"
 
 #: ../../appendices/plugins_api.rst:132
 msgid ""
@@ -157,42 +201,50 @@ msgid ""
 "used to run additional post-processing on the file or write extra data. Note "
 "that the file's metadata is already the newly saved metadata. Usage:"
 msgstr ""
+"Deze hook wordt opgeroepen nadat een bestand is opgeslagen. Je kan hem "
+"bijvoorbeeld gebruiken voor extra nabewerking op het bestand of het "
+"schrijven van extra informatie. Let op: op dit moment is de nieuwe metadata "
+"al naar het bestand geschreven. Gebruik:"
 
 #: ../../appendices/plugins_api.rst:146
 msgid "file_post_addition_to_track_processor(track, file)"
-msgstr ""
+msgstr "file_post_addition_to_track_processor(track, file)"
 
 #: ../../appendices/plugins_api.rst:148
 msgid ""
 "This hook is called after a file has been added to a track (on the right-"
 "hand pane of Picard)."
 msgstr ""
+"Deze hook wordt opgeroepen nadat een bestand aan een nummer is gekoppeld (in "
+"het rechter deelvenster)."
 
 #: ../../appendices/plugins_api.rst:161
 msgid "file_post_removal_from_track_processor(track, file)"
-msgstr ""
+msgstr "file_post_removal_from_track_processor(track, file)"
 
 #: ../../appendices/plugins_api.rst:163
 msgid ""
 "This hook is called after a file has been removed from a track (on the right-"
 "hand pane of Picard)."
 msgstr ""
+"Deze hook wordt opgeroepen nadat een bestand van een nummer is verwijderd "
+"(in het rechter deelvenster)."
 
 #: ../../appendices/plugins_api.rst:176
 msgid "album_post_removal_processor(album)"
-msgstr ""
+msgstr "album_post_removal_processor(album)"
 
 #: ../../appendices/plugins_api.rst:178
 msgid "This hook is called after an album has been removed from Picard."
-msgstr ""
+msgstr "Deze hook wordt opgeroepen nadat een bestand uit Picard is verwijderd."
 
 #: ../../appendices/plugins_api.rst:192
 msgid "Event hooks have been available since API version 2.2."
-msgstr ""
+msgstr "Eventhooks zijn sinds API-versie 2.2 beschikbaar."
 
 #: ../../appendices/plugins_api.rst:196
 msgid ":index:`File Formats <pair: plugins; file format>`"
-msgstr ""
+msgstr ":index:`Bestandsindelingen <pair: plug-ins; bestandsindeling>`"
 
 #: ../../appendices/plugins_api.rst:198
 msgid ""
@@ -201,10 +253,14 @@ msgid ""
 "tree/master/picard/formats>`_ for details on how to implement the ``_load`` "
 "and ``_save`` methods. Example:"
 msgstr ""
+"Met plug-ins kan je Picard ondersteuning voor meer bestandsindelingen geven. "
+"Op `GitHub <https://github.com/metabrainz/picard/tree/master/picard/formats>"
+"`_ kun je zien hoe bestandsindelingen nu worden ondersteund en hoe je het "
+"``_laden`` en ``_opslaan`` implementeert. Voorbeeld:"
 
 #: ../../appendices/plugins_api.rst:236
 msgid ":index:`Tagger Script Functions <pair: scripting functions; plugins>`"
-msgstr ""
+msgstr ":index:`Taggerscriptfuncties <pair: scriptfuncties; plug-ins>`"
 
 #: ../../appendices/plugins_api.rst:238
 msgid ""
@@ -214,30 +270,41 @@ msgid ""
 "rest of the arguments passed to it are the arguments from the function call "
 "in the tagger script. Example:"
 msgstr ""
+"Met ``register_script_function(function, name=None)`` uit de module "
+"``picard.script`` kan je nieuwe tagscriptfuncties definiëren. ``parser`` is "
+"een exemplaar van ``picard.script.ScriptParser`` en de overige argumenten "
+"die eraan worden doorgegeven, zijn de argumenten van de functie-aanroep in "
+"het tagscript. Voorbeeld:"
 
 #: ../../appendices/plugins_api.rst:260
 msgid "``register_script_function`` supports two optional arguments:"
-msgstr ""
+msgstr "``register_script_function`` ondersteunt twee optionele argumenten:"
 
 #: ../../appendices/plugins_api.rst:262
 msgid ""
 "**eval_args**: If this is **False**, the arguments will not be evaluated "
 "before being passed to **function**."
 msgstr ""
+"**eval_args**: Als dit ``niet waar`` is, worden de argumenten niet "
+"geëvalueerd voordat ze aan de functie worden doorgegeven."
 
 #: ../../appendices/plugins_api.rst:263
 msgid ""
 "**check_argcount**: If this is **False** the number of arguments passed to "
 "the function will not be verified."
 msgstr ""
+"**check_argcount**: Als dit ``niet waar`` is, worden de argumenten die aan "
+"de functie worden doorgegeven niet geëvalueerd."
 
 #: ../../appendices/plugins_api.rst:265
 msgid "The default value for both arguments is **True**."
-msgstr ""
+msgstr "De standaardwaarde van beide argumenten is ``waar``."
 
 #: ../../appendices/plugins_api.rst:269
 msgid ":index:`Context Menu Actions <pair: plugins; context menu actions>`"
 msgstr ""
+":index:`Bewerkingen via het contextmenu <pair: plug-ins; bewerkingen "
+"contextmenu>`"
 
 #: ../../appendices/plugins_api.rst:271
 msgid ""
@@ -245,9 +312,15 @@ msgid ""
 "\"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of "
 "Clusters). Example:"
 msgstr ""
+"Bewerkingen die via het contextmenu beschikbaar zijn, kunnen aan uitgaven, "
+"nummers en bestanden in ‘Niet-overeenkomende bestanden’, ‘Clusters’ en ‘"
+"ClusterList’ (de bovenliggende map van Clusters) worden toegevoegd. "
+"Voorbeeld:"
 
 #: ../../appendices/plugins_api.rst:300
 msgid ""
 "Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", "
 "\"*cluster*\" or \"*clusterlist*\"."
 msgstr ""
+"Gebruik ``register_x_action``, waarbij ‘x’ ‘*album*’, ‘*track*’, ‘*file*’, "
+"‘*cluster*’ of ‘*clusterlist*’ is."

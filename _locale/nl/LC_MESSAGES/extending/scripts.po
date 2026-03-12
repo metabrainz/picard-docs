@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:11+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/extendingscripts/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../extending/scripts.rst:4
 msgid ":index:`Scripts <scripts>`"
-msgstr ""
+msgstr ":index:`Scripts <scripts>`"
 
 #: ../../extending/scripts.rst:6
 msgid ""
@@ -35,10 +38,18 @@ msgid ""
 "repository-for-neat-file-name-string-patterns-and-tagger-script-"
 "snippets/2786/>`_."
 msgstr ""
+"Picard gebruikt twee soorten scripts: het bestandsnamenscript en tagscripts. "
+"De opties hiervoor zijn te vinden op de pagina’s ‘Bestandsnamen’ en ‘Scripts"
+"’ in :menuselection:`‘Opties --> Opties …’` . Alle scripts worden geschreven "
+"in de :doc:`Picard-scripttaal <scripts>`. Scripts worden vaak op het `forum "
+"van MetaBrainz <https://community.metabrainz.org/c/picard>`_ besproken. Je "
+"vindt daar ook een discussie speciaal over `bestandsnamen en "
+"scriptfragmenten <https://community.metabrainz.org/t/repository-for-neat-"
+"file-name-string-patterns-and-tagger-script-snippets/2786/>`_."
 
 #: ../../extending/scripts.rst:13
 msgid ":index:`File Naming Script <pair: file naming; scripts>`"
-msgstr ""
+msgstr ":index:`Bestandsnamenscripts <pair: bestandsnamen; scripts>`"
 
 #: ../../extending/scripts.rst:15
 msgid ""
@@ -48,6 +59,12 @@ msgid ""
 "using different file naming formats based on different criteria. In all "
 "cases, the files will be saved using the text output by the script."
 msgstr ""
+"In de instellingen kan je verschillende bestandsnamenscripts instellen, maar "
+"er is er maximaal één tegelijk actief. Bestandsnamenscript kunnen heel "
+"eenvoudig zijn, zoals ``%album%/%title%``, maar je kan ook een heel complex "
+"script maken waarin verschillende criteria verschillende bestandsnamen "
+"opleveren. In elk geval worden de bestanden opgeslagen volgens de uitvoer "
+"van het script."
 
 #: ../../extending/scripts.rst:20
 msgid ""
@@ -58,16 +75,25 @@ msgid ""
 "menu item. The current file naming script can also be selected directly from "
 "the :menuselection:`\"Options --> Select file naming script\"` menu."
 msgstr ""
+"Bestandsnamenscripts worden beheerd in :doc:`/config/"
+"options_filerenaming_editor`. Je kan de bewerker openen vanuit de pagina ‘"
+"Bestandsnamen’ in de opties (:menuselection:`‘Opties --> Opties …’`) of "
+"rechtstreeks via :menuselection:`‘Opties --> Bewerker voor "
+"bestandsnamenscripts openen …’`. Je kan het actieve bestandsnamenscript ook "
+"selecteren via het menu :menuselection:`‘Opties --> Bestandsnamenscript "
+"selecteren’`."
 
 #: ../../extending/scripts.rst:27
 msgid ""
 "Any new tags set or tags modified by the file naming script will **not** be "
 "written to the output files' metadata."
 msgstr ""
+"Het bestandsnamenscript heeft alleen invloed op de bestandsnamen, **niet** "
+"op de tags die naar bestanden worden geschreven."
 
 #: ../../extending/scripts.rst:31
 msgid ":index:`Tagging Scripts <pair: tagging; scripts>`"
-msgstr ""
+msgstr ":index:`Tagscripts <pair: taggen; scripts>`"
 
 #: ../../extending/scripts.rst:33
 msgid ""
@@ -79,36 +105,47 @@ msgid ""
 "and B) and an album with three tracks is loaded, the scripts will be "
 "processed in the following order:"
 msgstr ""
+"In de instellingen kan je meerdere tagscripts instellen. Je kan "
+"afzonderlijke scripts in- of uitschakelen en je kan instellen in welke "
+"volgorde ze worden uitgevoerd. Als een script automatisch wordt uitgevoerd "
+"(bijvoorbeeld als een uitgave wordt geladen), wordt het script één keer "
+"uitgevoerd voor elk nummer van de uitgave die het uitvoeren activeerde. Als "
+"er bijvoorbeeld twee tagscripts zijn ingeschakeld (A en B) en er een uitgave "
+"met drie nummers wordt geladen, dan worden de scripts in de volgende "
+"volgorde uitgevoerd:"
 
 #: ../../extending/scripts.rst:39
 msgid "Script A Track 1;"
-msgstr ""
+msgstr "Script A op nummer 1;"
 
 #: ../../extending/scripts.rst:40
 msgid "Script A Track 2;"
-msgstr ""
+msgstr "Script A op nummer 2;"
 
 #: ../../extending/scripts.rst:41
 msgid "Script A Track 3;"
-msgstr ""
+msgstr "Script A op nummer 3;"
 
 #: ../../extending/scripts.rst:42
 msgid "Script B Track 1;"
-msgstr ""
+msgstr "Script B op nummer 1;"
 
 #: ../../extending/scripts.rst:43
 msgid "Script B Track 2;"
-msgstr ""
+msgstr "Script B op nummer 2;"
 
 #: ../../extending/scripts.rst:44
 msgid "Script B Track 3."
-msgstr ""
+msgstr "Script B op nummer 3."
 
 #: ../../extending/scripts.rst:46
 msgid ""
 "Metadata updates are not shared between tracks, so you cannot append data "
 "from one track to a tag in another track."
 msgstr ""
+"Wijzigingen in de metadata worden niet door meerdere nummers gedeeld, dus je "
+"kan geen informatie uit het ene nummer gebruiken om een ander nummer te "
+"taggen."
 
 #: ../../extending/scripts.rst:49
 msgid ""
@@ -119,6 +156,13 @@ msgid ""
 "Tagging scripts are run once for each track in the data, using the metadata "
 "for that track."
 msgstr ""
+"Tags die door de tagscripts worden gemaakt of gewijzigd, worden naar de "
+"metadata van de opgeslagen bestanden geschreven, tenzij de naam van de tag "
+"met een laag streepje (_) begint. Deze ‘verborgen’ tags worden meestal "
+"gebruikt voor het opslaan van tijdelijke variabelen, zodat die variabelen "
+"later voor andere tag- en bestandsnamenscripts kunnen worden gebruikt. "
+"Tagscripts worden voor elk nummer één keer uitgevoerd en gebruiken daarbij "
+"de metadata van dat nummer."
 
 #: ../../extending/scripts.rst:54
 msgid ""
@@ -127,10 +171,15 @@ msgid ""
 "the script is run for each track in the album. If run from an individual "
 "track, the script is only run for that track."
 msgstr ""
+"Je kan tagscripts ook handmatig uitvoeren door met rechts op een uitgave of "
+"nummer in het rechter deelvenster te klikken. Als een script vanaf een "
+"uitgave wordt uitgevoerd, wordt het voor elk nummer van die uitgave "
+"uitgevoerd. Als een script vanaf een nummer wordt uitgevoerd, wordt het "
+"alleen voor dat nummer uitgevoerd."
 
 #: ../../extending/scripts.rst:60
 msgid "Tagging Script Examples"
-msgstr ""
+msgstr "Voorbeelden van tagscripts"
 
 #: ../../extending/scripts.rst:62
 msgid ""
@@ -139,18 +188,22 @@ msgid ""
 "language <scripting>` for a detailed description of the variables and "
 "functions used in these examples."
 msgstr ""
+"De volgende voorbeelden laten zien hoe je tagscripts voor bepaalde "
+"gebruiksscenario’s kan gebruiken. Zie :doc:`Picard-scripttaal <scripts>` "
+"voor een uitgebreide beschrijving van de variabelen en functies die in deze "
+"voorbeelden worden gebruikt."
 
 #: ../../extending/scripts.rst:68
 msgid "Move disambiguation to album title"
-msgstr ""
+msgstr "De verduidelijking naar de titel van het album verplaatsen"
 
 #: ../../extending/scripts.rst:70
 msgid "Append the disambiguation comment of a release to the album title:"
-msgstr ""
+msgstr "Voeg de verduidelijking van een uitgave aan de titel toe:"
 
 #: ../../extending/scripts.rst:78
 msgid "Release language as language"
-msgstr ""
+msgstr "De taal van de uitgave als taal gebruiken"
 
 #: ../../extending/scripts.rst:80
 msgid ""
@@ -159,10 +212,14 @@ msgid ""
 "language.  The following script will use the ``%_releaselanguage%`` instead "
 "if ``%language%`` is empty:"
 msgstr ""
+"De variabele ``%_releaselanguage%`` wordt gebruikt voor de taal waarin de "
+"titels van de nummers zijn geschreven, terwijl de variabele ``%language%`` "
+"eigenlijk is bedoeld voor de taal van de liedtekst. Het volgende script "
+"zorgt dat ``%_releaselanguage%`` wordt gebruikt als ``%language%`` leeg is."
 
 #: ../../extending/scripts.rst:90
 msgid "Use original release date"
-msgstr ""
+msgstr "De oorspronkelijke uitgavedatum gebruiken"
 
 #: ../../extending/scripts.rst:92
 msgid ""
@@ -174,12 +231,22 @@ msgid ""
 "original release date as the primary date in your file's tags you could use "
 "the following script:"
 msgstr ""
+"Standaard schrijft Picard de tag ``date`` met de uitgavedatum van de "
+"specifieke uitgave die je tagt en de tag ``originaldate`` met de datum van "
+"de eerste uitgave in dezelfde uitgavegroep. Bijvoorbeeld als je een "
+"heruitgave uit 2020 hebt van een album dat oorspronkelijk in 1992 uitkwam. "
+"In dat geval wordt ``date`` ingesteld op ‘2020’ en ``originaldate`` op ‘1992"
+"’. Als je liever altijd de oorspronkelijke uitgavedatum gebruikt als "
+"primaire datum in de tags van je bestanden, kan je het volgende script "
+"gebruiken:"
 
 #: ../../extending/scripts.rst:102
 msgid ""
 "The use of :ref:`func_if2` ensures that if ``originaldate`` is empty it will "
 "fall back to ``date``."
 msgstr ""
+"Het gebruik van :ref:`func_if2` zorgt dat als ``originaldate`` leeg is, toch "
+"``date`` wordt gebruikt."
 
 #: ../../extending/scripts.rst:104
 msgid ""
@@ -188,6 +255,10 @@ msgid ""
 "different for each track in a release). If you prefer this you can use the "
 "following script:"
 msgstr ""
+"Daarnaast heeft Picard de variabele ``%_recording_firstreleasedate%`` "
+"waarmee wordt gezocht naar de eerste uitgavedatum van de opname (die voor "
+"elk nummer van de uitgave kan verschillen). Als je liever die datum "
+"gebruikt, kan je het volgende script gebruiken:"
 
 #: ../../extending/scripts.rst:112
 msgid ""
@@ -195,10 +266,13 @@ msgid ""
 "specific release, but use the recording's first release date as "
 "``originaldate``:"
 msgstr ""
+"En als je ``date`` wil blijven gebruiken voor de uitgavedatum van de "
+"specifieke uitgave die je tagt, maar de eerste uitgavedatum van de opname "
+"wil gebruiken voor ``originaldate``:"
 
 #: ../../extending/scripts.rst:121
 msgid "Set album sort name"
-msgstr ""
+msgstr "De sorteernaam van het album instellen"
 
 #: ../../extending/scripts.rst:123
 msgid ""
@@ -206,16 +280,21 @@ msgid ""
 "a meaningful value with prefixes \"The\" and \"A\" moved to the end with the "
 "following script:"
 msgstr ""
+"Picard vult de tag ``albumsort`` standaard niet in. Met het volgende script "
+"kan je de tag instellen en de voorvoegsels ‘The’ en ‘A’ naar het einde van "
+"de sorteernaam verplaatsen:"
 
 #: ../../extending/scripts.rst:130
 msgid ""
 "This will e.g. set the sort name for the release \"The Best of Muddy Waters"
 "\" to \"Best of Muddy Waters, The\"."
 msgstr ""
+"Hiermee wordt bijvoorbeeld de sorteernaam van de uitgave ‘The Best of Muddy "
+"Waters’ ingesteld op ‘Best of Muddy Waters, The’."
 
 #: ../../extending/scripts.rst:134
 msgid "Set compilation for multi artist releases"
-msgstr ""
+msgstr "‘Compilatie’ voor uitgaven van meerdere artiesten op ‘1’ instellen."
 
 #: ../../extending/scripts.rst:136
 msgid ""
@@ -223,18 +302,22 @@ msgid ""
 "releases.  The following script will set it for all releases with more than "
 "one artist (as it was default behavior in Picard 1.2 and earlier):"
 msgstr ""
+"Standaard wordt de tag ``compilation`` alleen voor uitgaven van Diverse "
+"Artiesten op 1 ingesteld. Met het volgende script wordt dit gedaan voor alle "
+"uitgaven met meer dan één artiest (zoals in Picard 1.2 en eerder standaard "
+"was):"
 
 #: ../../extending/scripts.rst:145
 msgid "Remove featuring from album artist"
-msgstr ""
+msgstr "Gastartiesten uit de uitgaveartiest verwijderen"
 
 #: ../../extending/scripts.rst:147
 msgid "This always removes featuring artists from the album artist:"
-msgstr ""
+msgstr "Hiermee worden gastartiesten altijd uit de uitgaveartiest verwijderd:"
 
 #: ../../extending/scripts.rst:155
 msgid "Move featuring from artist to title"
-msgstr ""
+msgstr "Gastartiesten van de artiest naar de titel verplaatsen"
 
 #: ../../extending/scripts.rst:157
 msgid ""
@@ -243,16 +326,20 @@ msgid ""
 "added to the album or track title instead.  The following script moves "
 "featured track artists to the track title:"
 msgstr ""
+"Volgens de richtlijnen van MusicBrainz zijn gastartiesten een deel van de "
+"artiestennaam (zoals ‘Artiest A feat. Artiest B’. Sommige gebruikers voegen "
+"die informatie liever aan de titel van de uitgave of het nummer toe. Het "
+"volgende script verplaatst gastartiesten naar de titel van het nummer:"
 
 #: ../../extending/scripts.rst:167
 msgid ""
 "The same can be done for moving featured artists from the album artist to "
 "the album title:"
-msgstr ""
+msgstr "Voor de artiest en titel van de uitgave kan je hetzelfde doen:"
 
 #: ../../extending/scripts.rst:177
 msgid "Preserve original filename"
-msgstr ""
+msgstr "De oorspronkelijke bestandsnaam behouden"
 
 #: ../../extending/scripts.rst:179
 msgid ""
@@ -260,6 +347,9 @@ msgid ""
 "originally had.  By default Picard does not set or modify this tag.  If you "
 "want to save this information the following Script can be used:"
 msgstr ""
+"De tag ``originalfilename`` is bedoeld voor de bestandsnaam die het bestand "
+"eerst had. Standaard schrijft of wijzigt Picard deze tag niet. Als je deze "
+"informatie wil opslaan, kan je het volgende script gebruiken:"
 
 #: ../../extending/scripts.rst:187
 msgid ""
@@ -268,3 +358,8 @@ msgid ""
 "happens before the file is being saved the original name of the file before "
 "Picard modifies it can be preserved."
 msgstr ""
+"Hiermee blijft de tag ``originalfilename`` behouden als die er al was. Maar "
+"als de tag nog niet bestond, wordt hij ingesteld en opgeslagen met de "
+"huidige bestandsnaam. Omdat dit wordt gedaan voordat het bestand wordt "
+"opgeslagen, blijft de naam van het bestand voordat Picard het wijzigde "
+"behouden."

@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 18:08-0600\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_left/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_left/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../functions/func_left.rst:6
 msgid "$left"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../functions/func_left.rst:8
 msgid "Usage: **$left(text,number)**"
-msgstr ""
+msgstr "Gebruik: **$left(tekst,aantal)**"
 
 #: ../../functions/func_left.rst:9
 msgid "Category: text"
@@ -44,6 +44,11 @@ msgid ""
 "than the number of characters in ``text``, the function will return an empty "
 "string."
 msgstr ""
+"Retourneert de eerste ``aantal`` tekens uit ``tekst``. Als ``aantal`` lager "
+"is dan 0, wordt de waarde gebruikt die overeenkomt met het aantal tekens in "
+"``tekst`` plus ``aantal``. ``$left(abcd,-1)`` is dus hetzelfde als ``$left"
+"(abcd,3)``). Als ``aantal`` ontbreekt of een getal is dat groter is dan het "
+"aantal tekens in ``tekst``, retourneert de functie een lege tekenreeks."
 
 #: ../../functions/func_left.rst:19
 msgid "**Example:**"

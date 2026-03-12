@@ -1,31 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-04 18:11-0600\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:11+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_rsearch/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_rsearch/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../functions/func_rsearch.rst:6
 msgid "$rsearch"
-msgstr ""
+msgstr "$rsearch"
 
 #: ../../functions/func_rsearch.rst:8
 msgid "Usage: **$rsearch(text,pattern[,group])**"
-msgstr ""
+msgstr "Gebruik: **$rsearch(tekst,patroon[,groep])**"
 
 #: ../../functions/func_rsearch.rst:9
 msgid "Category: text"
@@ -42,6 +42,10 @@ msgid ""
 "regular expressions, please see the `article on Wikipedia <https://"
 "wikipedia.org/wiki/Regular_expression>`_."
 msgstr ""
+"Zoeken met een reguliere expressie. Deze functie retourneert de eerste groep "
+"uit ``tekst`` die overeenkomt met ``patroon``. Meer informatie over "
+"reguliere expressies kun je vinden op `Wikipedia <https://nl.wikipedia.org/"
+"wiki/Reguliere_expressie>`_."
 
 #: ../../functions/func_rsearch.rst:17
 msgid ""
@@ -53,6 +57,14 @@ msgid ""
 "will be returned.  If no subexpression is specified, then the pattern "
 "captured by the whole search expression will be returned."
 msgstr ""
+"Als er binnen het zoekpatroon met haakjes een gemarkeerde subexpressie wordt "
+"opgegeven, wordt alleen het patroon dat wordt herkend met de subexpressie "
+"geretourneerd. Als er meer dan één subexpressie is opgegeven en wordt "
+"gevonden, wordt alleen het patroon dat wordt herkend met de eerste "
+"subexpressie geretourneerd. Als er meer dan één subexpressie is opgegeven en "
+"ze niet allemaal worden gevonden, wordt er een lege tekenreeks "
+"geretourneerd. Als er geen subexpressie is opgegeven, wordt het patroon dat "
+"wordt herkend met de hele zoekexpressie geretourneerd."
 
 #: ../../functions/func_rsearch.rst:24
 msgid ""
@@ -60,6 +72,9 @@ msgid ""
 "first capture group which matched something (including the empty string) or "
 "the entire match."
 msgstr ""
+"Als de optionele parameter ``groep`` niet is opgegeven of leeg is, wordt de "
+"eerste herkende groep die ergens mee overeenkwam (inclusief de lege "
+"tekenreeks) of de hele overeenkomst geretourneerd."
 
 #: ../../functions/func_rsearch.rst:28
 msgid ""
@@ -67,6 +82,9 @@ msgid ""
 "matching this integer. Otherwise, return the capture group named ``group``, "
 "sans surrounding whitespace."
 msgstr ""
+"Als ``groep`` een integer is, wordt de herkende groep in de plek die "
+"overeenkomt met de integer geretourneerd. Anders wordt de herkende groep met "
+"de naam ``groep``, zonder de omliggende witruimten, geretourneerd."
 
 #: ../../functions/func_rsearch.rst:33
 msgid ""
@@ -78,10 +96,16 @@ msgid ""
 "``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\"
 "\\.]*\\)\\$``."
 msgstr ""
+"Als je in Picard-scripts reguliere expressies gebruikt, moet je terugstrepen "
+"(\\\\), dollartekens ($), komma’s (,) en linker en rechter haakjes (() en "
+"()) met een terugstreep uitsluiten, omdat Picard ze anders als deel van de "
+"scriptinstructie interpreteert. Dit doe je door er een terugstreep (\\\\) "
+"voor te zetten. De reguliere expressie ``^\\s*([0-9,\\.]*)$`` moet "
+"bijvoorbeeld worden ingevoerd als ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
 
 #: ../../functions/func_rsearch.rst:41
 msgid "The ``group`` argument was added in Picard v2.14."
-msgstr ""
+msgstr "Het argument ``groep`` is in Picard 2.14 toegevoegd."
 
 #: ../../functions/func_rsearch.rst:43
 msgid "**Example:**"

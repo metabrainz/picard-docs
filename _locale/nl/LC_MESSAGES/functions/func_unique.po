@@ -1,39 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_unique/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_unique/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../functions/func_unique.rst:6
 msgid "$unique"
-msgstr ""
+msgstr "$unique"
 
 #: ../../functions/func_unique.rst:8
 msgid "Usage: **$unique(name[,case_sensitive[,separator]])**"
-msgstr ""
+msgstr "Gebruik: **$unique(name[,case_sensitive[,scheidingsteken]])**"
 
 #: ../../functions/func_unique.rst:9
 msgid "Category: multi-value"
-msgstr ""
+msgstr "Categorie: meervoudig"
 
 #: ../../functions/func_unique.rst:10
 msgid "Implemented: Picard 2.6.1"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 2.6.1"
 
 #: ../../functions/func_unique.rst:12
 msgid "**Description:**"
@@ -50,6 +50,14 @@ msgid ""
 "valued variable.  If ``name`` is missing ``$unique`` will return an empty "
 "string."
 msgstr ""
+"Retourneert een gesorteerde kopie van de meervoudige variabele ``naam``, "
+"zonder dubbele elementen. Standaard wordt het hoofdlettergebruik van de "
+"elementen genegeerd. Je kan dit veranderen door ``case_sensitive`` te "
+"veranderen naar een niet-lege waarde. In plaats van ``naam`` kan je ook een "
+"tekenreeks opgegeven, zodat deze tekenreeks in een meervoudige variabele "
+"wordt omgezet. Je kan het scheidingsteken voor deze tekenreeks opgeven met "
+"de derde parameter (als je deze parameter niet opgeeft, wordt ‘; ’ gebruikt)"
+". Als ``naam`` ontbreekt, retourneert ``$unique`` een lege tekenreeks."
 
 #: ../../functions/func_unique.rst:23
 msgid ""
@@ -58,6 +66,11 @@ msgid ""
 "variable contained 'abc', 'Abc', 'ABc' and 'ABC' in that order, then the "
 "element 'ABC' would be included in the output."
 msgstr ""
+"Als je de (standaard) hoofdletterongevoelige vergelijking uitvoert, wordt "
+"het laatste overeenkomstige element in het resultaat gebruikt. Als de "
+"meervoudige variabele bijvoorbeeld ‘abc’, ‘Abc’, ‘ABc’ and ‘ABC’ zou "
+"bevatten (in die volgorde), dan wordt het element ABC’ in de uitvoer "
+"gebruikt."
 
 #: ../../functions/func_unique.rst:27
 msgid "**Example:**"

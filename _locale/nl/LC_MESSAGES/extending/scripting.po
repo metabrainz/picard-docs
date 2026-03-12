@@ -3,29 +3,34 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/extendingscripting/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../extending/scripting.rst:4
 msgid ":index:`Scripting <scripts>`"
-msgstr ""
+msgstr ":index:`Scripts <scripts>`"
 
 #: ../../extending/scripting.rst:6
 msgid "Scripts are used to control some aspects of the operation of Picard."
 msgstr ""
+"Scripts worden gebruikt om bepaalde aspecten van de werking van Picard te "
+"regelen."
 
 #: ../../extending/scripting.rst:8
 msgid ""
@@ -33,6 +38,9 @@ msgid ""
 "tagging scripts. These are managed from the \"File Naming\" and \"Scripting"
 "\" sections of the :menuselection:`\"Options --> Options...\"` menu."
 msgstr ""
+"Picard gebruikt twee soorten scripts: het bestandsnamenscript en tagscripts. "
+"De opties hiervoor zijn te vinden op de pagina’s ‘Bestandsnamen’ en ‘Scripts"
+"’ in :menuselection:`‘Opties --> Opties …’`."
 
 #: ../../extending/scripting.rst:12
 msgid ""
@@ -41,6 +49,11 @@ msgid ""
 "and script snippets <https://community.metabrainz.org/t/repository-for-neat-"
 "file-name-string-patterns-and-tagger-script-snippets/2786/>`_."
 msgstr ""
+"Scripts worden vaak op het `forum van MetaBrainz <https://"
+"community.metabrainz.org/>`_ besproken. Je vindt daar ook een discussie "
+"speciaal over `bestandsnamen en scriptfragmenten <https://"
+"community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-"
+"tagger-script-snippets/2786/>`_."
 
 #: ../../extending/scripting.rst:18
 msgid ""
@@ -48,10 +61,13 @@ msgid ""
 "Picard <extending>` for additional details about the two types of scripts, "
 "including how and when each of the scripts are executed."
 msgstr ""
+"Zie :doc:`Scripts <scripts>` in :doc:`Picard uitbreiden <uitbreiden>` voor "
+"details over de twee soorten scripts, waaronder hoe en wanneer ze worden "
+"uitgevoerd."
 
 #: ../../extending/scripting.rst:22
 msgid ":index:`Syntax <scripts; syntax>`"
-msgstr ""
+msgstr ":index:`Syntaxis <scripts; syntaxis>`"
 
 #: ../../extending/scripting.rst:24
 msgid ""
@@ -62,6 +78,12 @@ msgid ""
 "Functions start with a dollar sign and end with an argument list enclosed in "
 "parentheses (e.g.: ``$lower(...)``)."
 msgstr ""
+"De syntaxis is afgeleid van `foobar2000’s Title Formatting <https://"
+"wiki.hydrogenaud.io/index.php?title=Foobar2000:Titleformat_Reference>`_. Er "
+"zijn drie basiselementen: tekst, variabele en functie. Variabelen bestaan "
+"uit alfanumerieke tekens tussen procenttekens (bijv. ``%artist%``). Functies "
+"beginnen met een dollarteken en eindigen in een argumentenlijst tussen "
+"haakjes (bijv. ``$lower(…)``)."
 
 #: ../../extending/scripting.rst:33
 msgid ""
@@ -73,6 +95,12 @@ msgid ""
 "``($1,000,000)`` it would have to be entered as ``$set(test_tag,\\(\\"
 "$1\\,000\\,000\\))``."
 msgstr ""
+"Als je in Picard-scripts tekenreeksen gebruikt, moet je terugstrepen (\\\\), "
+"dollartekens ($), komma’s (,) en linker en rechter haakjes (() en ()) met "
+"een terugstreep uitsluiten, omdat Picard ze anders als deel van de "
+"scriptinstructie interpreteert. Dit doe je door er een terugstreep (\\\\) "
+"voor te zetten. Om een tagwaarde bijvoorbeeld in te stellen op ``($1,000,000)"
+"``, moet je dat invoeren als ``$set(testtag,\\(\\$1\\,000\\,000\\))``."
 
 #: ../../extending/scripting.rst:41
 msgid ""
@@ -82,16 +110,21 @@ msgid ""
 "recorded%`` gives a syntax error. In cases like this you need to use ``"
 "$get(re-recorded)``."
 msgstr ""
+"Meestal kan je de waarden van een tag met de naam van die variabele "
+"opvragen. Als je tag bijvoorbeeld ‘rerecorded’ heet, kan je ``%rerecorded%`` "
+"gebruiken. Maar koppeltekens zijn geen geldige tekens voor scriptvariabelen, "
+"dus ``%re-recorded%`` zou een syntaxisfout opleveren. In zulke gevallen moet "
+"je ``$get(re-recorded)`` gebruiken."
 
 #: ../../extending/scripting.rst:47
 msgid "Metadata Variables"
-msgstr ""
+msgstr "Metadatavariabelen"
 
 #: ../../extending/scripting.rst:49
 msgid ""
 "See :doc:`/variables/variables` for the list of the variables provided by "
 "Picard."
-msgstr ""
+msgstr "Zie :doc:`/variables/variables` voor de lijst met variabelen in Picard."
 
 #: ../../extending/scripting.rst:51
 msgid ""
@@ -101,16 +134,23 @@ msgid ""
 "string by joining the values with a semicolon \";\", except when used with "
 "special multi-value functions."
 msgstr ""
+"De variabelen van Picard kunnen eenvoudige variabelen met één tekenreeks "
+"zijn, maar ook meervoudige variabelen met meerdere tekenreeksen. Op een "
+"aantal speciale functies die met meervoudige waarden werken na, worden "
+"meervoudige variabelen in scripts automatisch omgezet in enkele "
+"tekenreeksen, met een puntkomma (;) als scheidingsteken."
 
 #: ../../extending/scripting.rst:69
 msgid ""
 "The full list of available scripting functions is covered in the following "
 "chapter."
 msgstr ""
+"De volledige lijst met scriptfuncties wordt in het volgende hoofdstuk "
+"beschreven."
 
 #: ../../extending/scripting.rst:59
 msgid "Scripting Functions"
-msgstr ""
+msgstr "Scriptfuncties"
 
 #: ../../extending/scripting.rst:61
 msgid ""
@@ -118,3 +158,6 @@ msgid ""
 "`sorted alphabetically </functions/list_by_name>` or :doc:`grouped by "
 "function type </functions/list_by_type>`."
 msgstr ""
+"De volledige lijst met scriptfuncties is beschikbaar :doc:`op alfabetische "
+"volgorde </functions/list_by_name>` en :doc:`gegroepeerd per soort functie </"
+"functions/list_by_type>`."

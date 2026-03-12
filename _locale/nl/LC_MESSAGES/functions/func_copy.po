@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-16 09:48-0700\n"
-"PO-Revision-Date: 2025-12-02 11:12+0000\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_copy/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_copy/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_copy.rst:6
@@ -28,15 +28,15 @@ msgstr ""
 
 #: ../../functions/func_copy.rst:8
 msgid "Usage: **$copy(target,source)**"
-msgstr ""
+msgstr "Gebruik: **$copy(doel,bron)**"
 
 #: ../../functions/func_copy.rst:9
 msgid "Category: assignment"
-msgstr ""
+msgstr "Categorie: toewijzing"
 
 #: ../../functions/func_copy.rst:10
 msgid "Implemented: Picard 0.9"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 0.9"
 
 #: ../../functions/func_copy.rst:12
 msgid "**Description:**"
@@ -48,18 +48,24 @@ msgid ""
 "``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-"
 "value variables without flattening them."
 msgstr ""
+"Kopieert metadata van de variabele ``bron`` naar de variabele ``doel``. Het "
+"verschil met ``$set(doel,%bron%)`` is dat ``$copy(doel,bron)`` meervoudige "
+"variabelen kopieert zonder ze enkelvoudig te maken."
 
 #: ../../functions/func_copy.rst:19
 msgid ""
 "Unlike most functions, in this case the ``source`` is specified **without** "
 "enclosing it with percent signs (%)."
 msgstr ""
+"In tegenstelling tot de meeste functies wordt ``source`` opgegeven zonder "
+"procenttekens (%)."
 
 #: ../../functions/func_copy.rst:23
 msgid ""
 "If the variable ``target`` already exists, it will be overwritten by "
 "``source``."
 msgstr ""
+"Als de variabele ``doel`` al bestaat, wordt ze overschreven door ``bron``."
 
 #: ../../functions/func_copy.rst:25
 msgid "**Example:**"
@@ -68,4 +74,4 @@ msgstr "**Voorbeeld:**"
 #: ../../functions/func_copy.rst:27
 msgid ""
 "The following statements will yield the values for ``target`` as indicated:"
-msgstr ""
+msgstr "De volgende instructies leveren de aangegeven waarden voor ``doel`` op:"

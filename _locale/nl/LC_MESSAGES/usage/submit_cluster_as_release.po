@@ -1,26 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usagesubmit_cluster_as_release/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../usage/submit_cluster_as_release.rst:4
 msgid ""
 ":index:`Submitting Cluster as a Release <cluster; submitting, release; "
 "submitting>`"
 msgstr ""
+":index:`Een cluster als uitgave toevoegen <cluster; toevoegen, uitgave; "
+"toevoegen>`"
 
 #: ../../usage/submit_cluster_as_release.rst:6
 msgid ""
@@ -29,28 +34,34 @@ msgid ""
 "from your files.  This is typically used when you have the music files for "
 "an album, but it is not yet available on MusicBrainz."
 msgstr ""
+"Als je op basis van de informatie in je bestanden een uitgave aan de "
+"databank van MusicBrainz wil toevoegen, kan Picard je daarmee helpen door op "
+"de MusicBrainz-website alvast een formulier in te vullen. Dat is handig als "
+"je muziekbestanden hebt van een album dat nog niet op MusicBrainz staat."
 
 #: ../../usage/submit_cluster_as_release.rst:11
 msgid "Submitting multiple tracks as a cluster"
-msgstr ""
+msgstr "Meerdere nummers als cluster toevoegen"
 
 #: ../../usage/submit_cluster_as_release.rst:13
 msgid "To use this functionality, the steps to follow are:"
-msgstr ""
+msgstr "Dit doe je als volgt:"
 
 #: ../../usage/submit_cluster_as_release.rst:15
 msgid "**1. Load the files**"
-msgstr ""
+msgstr "**1. De bestanden laden**"
 
 #: ../../usage/submit_cluster_as_release.rst:17
 msgid ""
 "Drag the batch of files to process from the browser pane to the "
 "\"Unclustered Files\" section in the clustering pane."
 msgstr ""
+"Sleep een aantal bestanden van de verkenner naar het gedeelte ‘Niet-"
+"geclusterde bestanden’ in het clusterdeelvenster."
 
 #: ../../usage/submit_cluster_as_release.rst:26
 msgid "**2. Cluster the files**"
-msgstr ""
+msgstr "**2. De bestanden clusteren**"
 
 #: ../../usage/submit_cluster_as_release.rst:28
 msgid ""
@@ -61,10 +72,17 @@ msgid ""
 "cluster or remove items from the cluster to ensure that it is complete for "
 "the album, and does not contain any additional files."
 msgstr ""
+"Selecteer de bestanden in het clusterdeelvenster en cluster ze met de "
+"opdracht :menuselection:`‘Hulpmiddelen --> Clusteren’`. Picard zal de "
+"bestanden op basis van de bestaande metadata proberen te clusteren. "
+"Afhankelijk van de kwaliteit van de metadata moet je misschien zelf "
+"bestanden aan het cluster toevoegen of uit het cluster verwijderen, zodat "
+"het cluster de hele uitgave bevat, maar geen bestanden die niet bij de "
+"uitgave horen."
 
 #: ../../usage/submit_cluster_as_release.rst:40
 msgid "**3. Submit the cluster**"
-msgstr ""
+msgstr "**3. Het cluster indienen**"
 
 #: ../../usage/submit_cluster_as_release.rst:42
 msgid ""
@@ -73,10 +91,14 @@ msgid ""
 "click to bring up the context menu.  From there you should see an option to :"
 "menuselection:`\"Submit cluster as release...\"`."
 msgstr ""
+"Zodra je een cluster compleet hebt, kan je het aan MusicBrainz gaan "
+"toevoegen door het cluster te selecteren, met rechts te klikken om het "
+"contextmenu te openen en de optie :menuselection:`‘Cluster als uitgave "
+"toevoegen …’` te selecteren."
 
 #: ../../usage/submit_cluster_as_release.rst:53
 msgid "**4. Confirm submitted information**"
-msgstr ""
+msgstr "**4. De verstuurde informatie controleren**"
 
 #: ../../usage/submit_cluster_as_release.rst:55
 msgid ""
@@ -85,10 +107,14 @@ msgid ""
 "screen in your browser.  You can see the information that will be submitted "
 "by expanding the \"Data submitted with this request\" link."
 msgstr ""
+"Het systeem verstuurt een verzoek om de informatie aan MusicBrainz toe te "
+"voegen. In je browser zie je een pagina waarop je de informatie moet "
+"bevestigen. Als je op de link ‘Met dit verzoek verzonden data’ klikt, zie je "
+"welke informatie er wordt ingediend."
 
 #: ../../usage/submit_cluster_as_release.rst:62
 msgid "**5. Complete the submission**"
-msgstr ""
+msgstr "**5. Het toevoegen afronden**"
 
 #: ../../usage/submit_cluster_as_release.rst:64
 msgid ""
@@ -96,6 +122,9 @@ msgid ""
 "the fields populated with your information. From here you can check and "
 "submit your edit as if you had entered all of the information manually."
 msgstr ""
+"Als je op :guilabel:`Verdergaan` klikt, wordt het gebruikelijke scherm voor "
+"het toevoegen van een uitgave geopend, met de door jou verstuurde informatie "
+"al ingevuld. Hier kan je de informatie controleren en aanvullen."
 
 #: ../../usage/submit_cluster_as_release.rst:69
 msgid ""
@@ -105,10 +134,15 @@ msgid ""
 "have been matched to existing items as appropriate.  You should also add an "
 "edit note citing the source of the information."
 msgstr ""
+"Controleer voordat je de bewerking indient of alle informatie correct en "
+"volgens de `Stijlgidsen van MusicBrainz <https://musicbrainz.org/doc/Style>"
+"`_ is ingevoerd, en of de artiest en de uitgavegroep zijn gekoppeld aan een "
+"(eventueel) al bestaande artiest of uitgavegroep. Voeg ook een "
+"bewerkingsnotitie over de bron van je informatie toe."
 
 #: ../../usage/submit_cluster_as_release.rst:74
 msgid "Submitting a single track"
-msgstr ""
+msgstr "Een enkel nummer toevoegen"
 
 #: ../../usage/submit_cluster_as_release.rst:76
 msgid ""
@@ -122,3 +156,12 @@ msgid ""
 "appropriate.  You should also add an edit note citing the source of the "
 "information."
 msgstr ""
+"Je kan deze functie ook gebruiken om een enkel nummer als uitgave of losse "
+"opname toe te voegen. Hiervoor klik je met rechts op het bestand en "
+"selecteer je :menuselection:`‘Bestand als losse opname toevoegen …’` of "
+":menuselection:`‘Bestand als uitgave toevoegen …’`. Ook hier moet je "
+"controleren of je alle informatie correct en volgens de `Stijlgidsen van "
+"MusicBrainz <https://musicbrainz.org/doc/Style>`_ hebt ingevoerd, en of de "
+"artiest en de uitgavegroep zijn gekoppeld aan een (eventueel) al bestaande "
+"artiest of uitgavegroep. Voeg ook hier een bewerkingsnotitie over de bron "
+"van je informatie toe."

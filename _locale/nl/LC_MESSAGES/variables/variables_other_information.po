@@ -3,31 +3,36 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/variablesvariables_other_information/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_other_information.rst:4
 msgid ":index:`Other Information <tags; writing>`"
-msgstr ""
+msgstr ":index:`Overige informatie <tags; schrijven>`"
 
 #: ../../variables/variables_other_information.rst:6
 msgid ""
 "For technical details on how tags are written into files, see the :doc:"
 "`Picard Tag Mapping </appendices/tag_mapping>` section."
 msgstr ""
+"Voor technische details over het schrijven van tags naar bestanden kan je "
+":doc:`Tagoverzicht voor Picard </appendices/tag_mapping>` raadplegen."
 
 #: ../../variables/variables_other_information.rst:8
 msgid ""
@@ -35,12 +40,17 @@ msgid ""
 "new tags in ID3, MP4, APEv2 and Vorbis based files. They will not be saved "
 "in ASF based files."
 msgstr ""
+"Als je variabelen instelt die Picard niet kent, worden ze in bestanden met "
+"ID3-, mp4-, APEv2- of Vorbis-tags als nieuwe tags opgeslagen. In bestanden "
+"met ASF-tags zullen ze niet worden opgeslagen."
 
 #: ../../variables/variables_other_information.rst:11
 msgid ""
 "For ID3 based files these tags will be saved to, and reloaded from, ID3 user "
 "defined text information (TXXX) frames."
 msgstr ""
+"In bestanden met ID3-tags worden deze tags opgeslagen (en geladen van) TXXX-"
+"frames (gebruikergedefinieerde tekst)."
 
 #: ../../variables/variables_other_information.rst:12
 msgid ""
@@ -48,10 +58,14 @@ msgid ""
 "iTunes:``.  This is widely understood by other tools to be used for custom "
 "tags."
 msgstr ""
+"In mp4-bestanden worden deze tags opgeslagen met het voorvoegsel ``----"
+":com.apple.iTunes:``, dat veel programma’s als zelf-gedefinieerde tags "
+"interpreteren."
 
 #: ../../variables/variables_other_information.rst:14
 msgid "For Vorbis and APEv2 files these tags will be saved as given."
 msgstr ""
+"In Vorbis- en APEv2-bestanden worden deze tags zonder wijzigingen opgeslagen."
 
 #: ../../variables/variables_other_information.rst:16
 msgid ""
@@ -60,9 +74,17 @@ msgid ""
 "g. ``%_id3:TXXX:mytag%``. Currently these tags are not loaded into variables "
 "when you reload the file into Picard (*since Picard 0.9*)."
 msgstr ""
+"Bij bestanden met ID3-tags (zoals mp3-bestanden) kun je ID3-tags ook "
+"rechtstreeks vanuit je scripts instellen. Hiervoor gebruik je een speciale "
+"variabele die begint met ``_id3:``, zoals ``%_id3:TXXX:mijntag%``. Op dit "
+"moment worden deze tags niet als variabel geladen als je het bestand opnieuw "
+"in Picard laadt (*sinds Picard 0.9*)."
 
 #: ../../variables/variables_other_information.rst:21
 msgid ""
 "Saving custom tags to MP4 files is supported since Picard 2.3.  Earlier "
 "versions will neither save nor load custom tags in MP4 files."
 msgstr ""
+"Het opslaan van zelf-gedefinieerde tags in mp4-bestanden wordt ondersteund "
+"sinds Picard 2.3. Eerdere versies kunnen zelf-gedefinieerde tags in mp4-"
+"bestanden lezen noch schrijven."

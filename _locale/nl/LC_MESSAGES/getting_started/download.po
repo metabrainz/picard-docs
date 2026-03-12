@@ -1,24 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:11+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/getting_starteddownload/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../getting_started/download.rst:4
 msgid ":index:`Download & Install Picard <install; download>`"
-msgstr ""
+msgstr ":index:`Picard downloaden en installeren <installeren; downloaden>`"
 
 #: ../../getting_started/download.rst:6
 msgid ""
@@ -28,6 +31,11 @@ msgid ""
 "executables, Python source code that you can execute with your own Python "
 "environment, etc.)"
 msgstr ""
+"MusicBrainz Picard is beschikbaar voor alle grote pc-besturingssystemen "
+"(zoals Windows, Linux en macOS) en in verschillende vormen (officiële en "
+"rechtstreeks te downloaden uitvoerbare bestanden, versies hiervan voor "
+"pakketbeheerders, dagelijkse builds, Python-broncode die je in je eigen "
+"Python-omgeving kan uitvoeren enz.)."
 
 #: ../../getting_started/download.rst:10
 msgid ""
@@ -36,6 +44,9 @@ msgid ""
 "versions which are less likely to have bugs in experimental or new "
 "functionality."
 msgstr ""
+"De meeste gebruikers zullen de officiële versies of de equivalenten daarvan "
+"uit pakketbeheerders gebruiken, want die zijn makkelijk te installeren en "
+"stabieler dan experimentele versies die nieuwe functies maar ook bugs hebben."
 
 #: ../../getting_started/download.rst:13
 msgid ""
@@ -45,6 +56,11 @@ msgid ""
 "Picard code but you don't understand what the previous sentence said, then "
 "you have a bit of a learning curve. :-)"
 msgstr ""
+"Maar als gebruikers aan de ontwikkeling van Picard of zijn plug-ins willen "
+"bijdragen, willen ze Picard misschien vanuit de broncode draaien. Daarvoor "
+"moeten ze de broncode met een versie van Git uit GitHub naar hun computer "
+"downloaden. Als je aan de code van Picard wil bijdragen maar de vorige zin "
+"niet begrijpt, heb je nog wat te leren. :-)"
 
 #: ../../getting_started/download.rst:17
 msgid ""
@@ -55,14 +71,20 @@ msgid ""
 "latest source code is also available at the `GitHub repository <https://"
 "github.com/musicbrainz/picard>`_."
 msgstr ""
+"Je kan de nieuwste versie van Picard altijd van de `website van Picard "
+"<https://picard.musicbrainz.org/downloads/>`_ downloaden. Je vindt er onder "
+"andere installatieprogramma’s voor alle ondersteunde platformen en de "
+"`broncode van uitgaveversies <https://picard.musicbrainz.org/downloads/"
+"#source>`_. De nieuwste broncode is ook te vinden in de `GitHub-opslagplaats "
+"<https://github.com/musicbrainz/picard>`_."
 
 #: ../../getting_started/download.rst:24
 msgid "Installing Picard on Linux"
-msgstr ""
+msgstr "Picard op Linux installeren"
 
 #: ../../getting_started/download.rst:27
 msgid ":index:`Installing with Flatpak <pair: install; flatpak>`"
-msgstr ""
+msgstr ":index:`Met een Flatpak installeren <pair: installeren; flatpak>`"
 
 #: ../../getting_started/download.rst:29
 msgid ""
@@ -71,18 +93,22 @@ msgid ""
 "distributions, as long as Flatpak is installed (see `Flatpak Quick Setup "
 "<https://flatpak.org/setup/>`_)."
 msgstr ""
+"Picard is beschikbaar op `Flathub <https://flathub.org/apps/details/"
+"org.musicbrainz.Picard>`_. Deze versie zou op elke moderne Linux-distributie "
+"moeten werken, mits Flatpak is geïnstalleerd (zie `Flatpak Quick Setup "
+"<https://flatpak.org/setup/>`_)."
 
 #: ../../getting_started/download.rst:33
 msgid "First enable the Flathub repository:"
-msgstr ""
+msgstr "Eerst moet je de Flathub-opslagplaats inschakelen:"
 
 #: ../../getting_started/download.rst:39
 msgid "You can now install Picard:"
-msgstr ""
+msgstr "Vervolgens kan je Picard installeren:"
 
 #: ../../getting_started/download.rst:47
 msgid ":index:`Installing with Snap <pair: install; snap>`"
-msgstr ""
+msgstr ":index:`Met Snap installeren <pair: installeren; snap>`"
 
 #: ../../getting_started/download.rst:49
 msgid ""
@@ -90,6 +116,9 @@ msgid ""
 "on all modern Linux distributions, as long as Snap is installed (see "
 "`Installing Snap <https://snapcraft.io/docs/installing-snapd>`_)."
 msgstr ""
+"Picard is als Snap-pakket in de Snap Store beschikbaar. Deze versie zou op "
+"elke moderne Linux-distributie moeten werken, mits Snap is geïnstalleerd "
+"(zie `Install the daemon <https://snapcraft.io/docs/installing-snapd>`_)."
 
 #: ../../getting_started/download.rst:52
 msgid ""
@@ -99,6 +128,11 @@ msgid ""
 "Picard from your distribution's software center, e.g. Ubuntu Software or KDE "
 "Discover.  You can also install Picard from the terminal:"
 msgstr ""
+"Op de `pagina over Picard in de Snap Store <https://snapcraft.io/picard>`_ "
+"vind je informatie over het installeren van Picard op verschillende Linux-"
+"distributies. Als je Linux-distributie dit ondersteunt, kan je Picard "
+"installeren vanuit het softwarecentrum van je distributie, zoals Ubuntu "
+"Software of KDE Discover. Je kan Picard ook via de terminal installeren:"
 
 #: ../../getting_started/download.rst:63
 msgid ""
@@ -107,12 +141,18 @@ msgid ""
 "has access to your home folder.  You can additionally give it access to "
 "removable media by running the following command on a terminal:"
 msgstr ""
+"Als Picard als Snap is geïnstalleerd, draait hij in een zandbak en heeft hij "
+"geen volledige toegang tot alle bestanden en mappen op je systeem. Picard "
+"heeft standaard alleen toegang tot je thuismap. Je kan Picard toegang tot "
+"verwijderbare media geven met de volgende terminalopdracht:"
 
 #: ../../getting_started/download.rst:73
 msgid ""
 ":index:`Installing from your distribution's package repository <pair: "
 "install; Linux package>`"
 msgstr ""
+":index:`Picard vanuit de pakketopslag van je distributie installeren <pair: "
+"installeren; Linux-pakket>`"
 
 #: ../../getting_started/download.rst:75
 msgid ""
@@ -121,6 +161,10 @@ msgid ""
 "links to the packages for common Linux distributions.  Please refer to your "
 "distribution's documentation for how to install software packages."
 msgstr ""
+"Picard is in de pakketopslag van de meeste distributies beschikbaar. Op de "
+"`downloadpagina <https://picard.musicbrainz.org/downloads/#linux>`_ vind je "
+"links naar de pakketten voor bekende Linux-distributies. In de documentatie "
+"van je distributie kan je lezen hoe je softwarepakketten installeert."
 
 #: ../../getting_started/download.rst:79
 msgid ""
@@ -128,3 +172,6 @@ msgid ""
 "If you want to use the latest available version, as is recommended, install "
 "Picard as Flatpak or Snap as described above."
 msgstr ""
+"Houd er rekening mee dat distributies vaak oudere versies van Picard hebben. "
+"Als je de nieuwste versie wil gebruiken (wat we aanraden), kan je Picard als "
+"Flatpak of Snap installeren."

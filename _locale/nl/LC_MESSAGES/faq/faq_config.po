@@ -3,43 +3,50 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 09:45-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/faqfaq_config/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../faq/faq_config.rst:4
 msgid ":index:`Configuration <configuration; config file location>`"
-msgstr ""
+msgstr ":index:`Configuratie <configuratie; locatie configuratiebestand>`"
 
 #: ../../faq/faq_config.rst:7
 msgid "Where is the Picard :index:`configuration <configuration; file>` saved?"
 msgstr ""
+"Waar wordt het :index:`configuratie <configuratie; bestand>` van Picard "
+"opgeslagen?"
 
 #: ../../faq/faq_config.rst:9
 msgid ""
 "Picard saves the configuration in the file :file:`Picard.ini`. Its location "
 "depends on the operating system:"
 msgstr ""
+"Picard slaat de configuratie op in het bestand :file:`Picard.ini`. De "
+"locatie van dat bestand is afhankelijk van het besturingssysteem:"
 
 #: ../../faq/faq_config.rst:11
 msgid "**Windows:**"
-msgstr ""
+msgstr "**Windows:**"
 
 #: ../../faq/faq_config.rst:13
 msgid ":file:`%APPDATA%\\\\MusicBrainz\\\\Picard.ini`"
-msgstr ""
+msgstr ":file:`%APPDATA%\\\\MusicBrainz\\\\Picard.ini`"
 
 #: ../../faq/faq_config.rst:15
 msgid ""
@@ -47,20 +54,25 @@ msgid ""
 "\\Roaming\\\\MusicBrainz`, where ``YourUserName`` should be replaced with "
 "your actual Windows user name."
 msgstr ""
+"Meestal is dit :file:`C:\\\\Users\\\\\\\\{JouwGebruikersnaam}\\\\AppData\\\\R"
+"oaming\\\\MusicBrainz`, waarin je ``JouwGebruikersnaam`` vervangt door de "
+"gebruikersnaam die je in Windows hebt."
 
 #: ../../faq/faq_config.rst:18
 msgid "**macOS, Linux and other Unix like systems:**"
-msgstr ""
+msgstr "**macOS, Linux en ander Unix-achtige systemen:**"
 
 #: ../../faq/faq_config.rst:20
 msgid ":file:`$HOME/.config/MusicBrainz/Picard.ini`"
-msgstr ""
+msgstr ":file:`$HOME/.config/MusicBrainz/Picard.ini`"
 
 #: ../../faq/faq_config.rst:24
 msgid ""
 "I tagged a file in Picard, but :index:`iTunes <itunes; tags, tagging; "
 "itunes>` is not seeing the tags!"
 msgstr ""
+"Ik heb met Picard een bestand getagd, maar :index:`iTunes <itunes; tags, "
+"taggen; itunes>` ziet de tags niet!"
 
 #: ../../faq/faq_config.rst:26
 msgid ""
@@ -68,6 +80,10 @@ msgid ""
 "from your tags and update its library. This is discussed in the `iTunes "
 "Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
 msgstr ""
+"Eerst moet je :index:`iTunes <itunes>` de opdracht geven om de informatie "
+"uit je tags opnieuw te laden en zijn bibliotheek bij te werken. Dit wordt "
+"beschreven in de `Handleiding voor iTunes <https://musicbrainz.org/doc/"
+"iTunes_Guide>`_."
 
 #: ../../faq/faq_config.rst:29
 msgid ""
@@ -75,12 +91,18 @@ msgid ""
 "makes it unable to read such tags if they also contain embedded cover art. "
 "As a work-around, you can configure Picard to write ID3v2.3 tags."
 msgstr ""
+"Bovendien heeft iTunes een bug in de implementatie van ID3v2.4, waardoor "
+"iTunes deze tags niet kan lezen als de bestanden ook ingebedde "
+"hoesafbeeldingen hebben. Je kan dit oplossen door Picard in te stellen om "
+"ID3v2.3-tags te schrijven."
 
 #: ../../faq/faq_config.rst:34
 msgid ""
 "My tags are :index:`truncated <tags; truncated, WMP; tags>` to 30 characters "
 "in Windows Media Player!"
 msgstr ""
+"In Windows Media Player worden mijn tags :index:`ingekort <tags; ingekort, "
+"WMP; tags>` tot dertig tekens!"
 
 #: ../../faq/faq_config.rst:36
 msgid ""
@@ -89,18 +111,27 @@ msgid ""
 "limitation of 30 characters per title.  To resolve this issue, configure "
 "Picard to write ID3v2.3 tags instead."
 msgstr ""
+"Standaard schrijft Picard ID3v2.4- en ID3v1-tags naar bestanden.  Oudere "
+"versies van Windows Media Player ondersteunen geen ID3v2.4-tags, dus "
+"gebruikt dat programma ID3v1-tags, die maximaal dertig tekens per titel "
+"ondersteunen. Om dit probleem op te lossen, kan je Picard instellen om "
+"ID3v2.3-tags te schrijven (of gewoon minder bejaarde software gebruiken)."
 
 #: ../../faq/faq_config.rst:40
 msgid ""
 "Since Windows 10 Creators Update (version 1703) ID3v2.4 is supported and the "
 "above issue should no longer apply."
 msgstr ""
+"Sinds de Windows 10 Creators Update (versie 1703) wordt ID3v2.4 ondersteund "
+"en zou dit probleem niet meer moeten voorkomen."
 
 #: ../../faq/faq_config.rst:44
 msgid ""
 "How do I tell Picard which :index:`browser <pair: configuration; browser>` "
 "to use?"
 msgstr ""
+"Hoe kan ik instellen welke :index:`browser <pair: configuratie; browser>` "
+"Picard moet gebruiken?"
 
 #: ../../faq/faq_config.rst:46
 msgid ""
@@ -108,19 +139,26 @@ msgid ""
 "been configured for the system. On other systems, you can use the "
 "``BROWSER`` environment variable."
 msgstr ""
+"Op Windows, macOS, GNOME en KDE gebruikt Picard de standaardbrowser die voor "
+"het systeem is ingesteld. Op andere systemen kan je de omgevingsvariabele "
+"``BROWSER`` gebruiken."
 
 #: ../../faq/faq_config.rst:49
 msgid "For example::"
-msgstr ""
+msgstr "Bijvoorbeeld:"
 
 #: ../../faq/faq_config.rst:53
 msgid ""
 "Another approach that works in some GNU/Linux systems is the following "
 "command::"
 msgstr ""
+"Een andere benadering die op sommige GNU/Linux-systemen werkt, is de "
+"volgende opdracht::"
 
 #: ../../faq/faq_config.rst:57
 msgid ""
 "This should present you with a list of existing browsers in your system, "
 "allowing you to select the one to use by default."
 msgstr ""
+"Dit geeft een lijst met browsers op je systeem, zodat je een "
+"standaardbrowser kunt kiezen."

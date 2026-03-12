@@ -3,34 +3,43 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/troubleshootingnot_saving/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../troubleshooting/not_saving.rst:4
 msgid ":index:`Files are not being saved <troubleshooting; files not saved>`"
 msgstr ""
+":index:`Bestanden worden niet opgeslagen <probleemoplossing; bestanden niet "
+"opgeslagen>`"
 
 #: ../../troubleshooting/not_saving.rst:6
 msgid "There are two typical scenarios where files are not being saved:"
 msgstr ""
+"Als bestanden niet worden opgeslagen, komt dat meestal door één van deze "
+"twee redenen:"
 
 #: ../../troubleshooting/not_saving.rst:8
 msgid ""
 "**After selecting files in the right-hand pane you see a red stop like icon**"
 msgstr ""
+"**In het rechter deelvenster zie je een pictogram dat eruitziet als een rood "
+"stopbord**"
 
 #: ../../troubleshooting/not_saving.rst:10
 msgid ""
@@ -40,6 +49,11 @@ msgid ""
 "Check that the files are not write protected and that you have the "
 "appropriate permissions before trying again."
 msgstr ""
+"Dit geeft aan dat er tijdens het opslaan een fout is opgetreden. Meestal "
+"gebeurt dit omdat de bestanden zijn beveiligd tegen overschrijven (omdat ze "
+"als alleen-lezen zijn gemarkeerd of omdat de gebruiker de verkeerde "
+"machtigingen heeft). Controleer of de bestanden niet zijn beveiligd en of je "
+"de juiste machtigingen hebt, en probeer het dan opnieuw."
 
 #: ../../troubleshooting/not_saving.rst:14
 msgid ""
@@ -47,6 +61,9 @@ msgid ""
 "using Flatpak, or when the files are being read from or written to a samba "
 "share on the network."
 msgstr ""
+"Machtigingsproblemen lijken meer voor te komen als Picard als Flatpak is "
+"geïnstalleerd, of als de bestanden worden gelezen van of geschreven naar een "
+"met samba gedeelde map op het netwerk."
 
 #: ../../troubleshooting/not_saving.rst:17
 msgid ""
@@ -55,12 +72,17 @@ msgid ""
 "you have an extremely long path and file name, try shortening it to see it "
 "it allows the file to be saved."
 msgstr ""
+"Een andere mogelijkheid is dat de totale lengte van het doelpad en de "
+"bestandsnaam groter is dat de maximumlengte die het besturingssysteem "
+"toestaat. Als dit extreem lang is, kan je proberen om het pad en/of de "
+"bestandsnaam in te korten."
 
 #: ../../troubleshooting/not_saving.rst:21
 msgid ""
 "**In the right-hand pane you see just a musical note icon in front of the "
 "tracks**"
 msgstr ""
+"**In het rechter deelvenster staat er alleen een muzieknoot voor de nummers**"
 
 #: ../../troubleshooting/not_saving.rst:23
 msgid ""
@@ -70,6 +92,11 @@ msgid ""
 "trying to save again.  Please see the :doc:`/usage/match` and :doc:`/usage/"
 "save` sections for more information."
 msgstr ""
+"Dit betekent dat alleen de informatie over het nummer uit MusicBrainz is "
+"opgehaald, maar er nog geen bestand aan het nummer is gekoppeld. In dat "
+"geval kan je niet opslaan. Controleer of de bestanden aan de juiste nummers "
+"zijn gekoppeld en probeer ze daarna opnieuw op te slaan. Zie :doc:`/usage/"
+"match` en :doc:`/usage/save` voor meer informatie."
 
 #: ../../troubleshooting/not_saving.rst:27
 msgid ""
@@ -78,3 +105,7 @@ msgid ""
 "try reviewing all of the tags to be written to see if there are any that "
 "don't appear to be valid."
 msgstr ""
+"Een derde mogelijkheid (al is die erg zeldzaam) is dat je een ongeldige tag "
+"probeert op te slaan. Als de twee eerdere oplossingen niet werken, kan je "
+"alle tags die je wil schrijven controleren om te zien of er eentje ongeldig "
+"lijkt."

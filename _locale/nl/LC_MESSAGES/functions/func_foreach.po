@@ -1,39 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2025-12-02 11:12+0000\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_foreach/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_foreach/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../functions/func_foreach.rst:6
 msgid "$foreach"
-msgstr ""
+msgstr "$foreach"
 
 #: ../../functions/func_foreach.rst:8
 msgid "Usage: **$foreach(name,code,separator=\"; \")**"
-msgstr ""
+msgstr "Gebruik: **$foreach(naam,code,scheidingsteken=\"; \")**"
 
 #: ../../functions/func_foreach.rst:9
 msgid "Category: loop"
-msgstr ""
+msgstr "Categorie: lus"
 
 #: ../../functions/func_foreach.rst:10
 msgid "Implemented: Picard 2.3"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 2.3"
 
 #: ../../functions/func_foreach.rst:12
 msgid "**Description:**"
@@ -47,6 +47,11 @@ msgid ""
 "stored in the variable ``_loop_count``. This allows the element or count "
 "value to be accessed within the code script."
 msgstr ""
+"Gaat langs elk element in de meervoudige variabele ``naam`` en voert daarbij "
+"``code`` uit. Bij elke lus wordt de waarde van het element eerst opgeslagen "
+"in de variabele ``_loop_value`` en de teller in de variabele "
+"``_loop_count``. Zo kunnen de waarde van het element en de teller worden "
+"gebruikt door het script van ``code``."
 
 #: ../../functions/func_foreach.rst:19
 msgid ""
@@ -54,6 +59,10 @@ msgid ""
 "using the ``separator`` (or a semicolon followed by a space \"; \" if not "
 "passed) to coerce the value into a proper multi-valued variable."
 msgstr ""
+"In plaats van ``naam`` kan je ook een tekenreeks opgegeven, zodat deze "
+"tekenreeks in een meervoudige variabele wordt omgezet. Je kan het "
+"scheidingsteken voor deze tekenreeks opgeven met de derde parameter (als je "
+"deze parameter niet opgeeft, wordt ‘; ’ gebruikt)."
 
 #: ../../functions/func_foreach.rst:24
 msgid "**Example:**"
@@ -61,4 +70,4 @@ msgstr "**Voorbeeld:**"
 
 #: ../../functions/func_foreach.rst:26
 msgid "The following statements will perform the processing indicated:"
-msgstr ""
+msgstr "De volgende instructies voeren de volgende bewerkingen uit:"

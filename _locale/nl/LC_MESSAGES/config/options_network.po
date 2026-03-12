@@ -3,29 +3,32 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-15 19:57-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_network/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_network.rst:4
 msgid ":index:`Network <configuration; network>`"
-msgstr ""
+msgstr ":index:`Netwerk <configuratie; netwerk>`"
 
 #: ../../config/options_network.rst:9
 msgid "**Web Proxy**"
-msgstr ""
+msgstr "**Webproxy**"
 
 #: ../../config/options_network.rst:11
 msgid ""
@@ -34,16 +37,23 @@ msgid ""
 "settings are **Server Address** and **Port**. If the proxy requires "
 "authentication also enter **Username** and **Password**."
 msgstr ""
+"Als je voor verbinding met een extern netwerk een proxy nodig hebt, kan je "
+"die hier opgeven. Je kan kiezen tussen een http- en een SOCKS-proxy. De "
+"instellingen **Serveradres** en **Poort** zijn verplicht. Als de proxy "
+"verificatie vereist, moet je ook **Gebruikersnaam** en **Wachtwoord** "
+"invullen."
 
 #: ../../config/options_network.rst:15
 msgid "**Request timeout in seconds**"
-msgstr ""
+msgstr "**Maximumwachttijd voor verzoeken in seconden**"
 
 #: ../../config/options_network.rst:17
 msgid ""
 "By default Picard will abort running network requests after 30 seconds of "
 "inactivity.  If needed you can change the timeout period here."
 msgstr ""
+"Standaard breekt Picard lopende netwerkverzoeken na dertig seconden "
+"inactiviteit af. Je kan de wachttijd hier veranderen."
 
 #: ../../config/options_network.rst:20
 msgid "lookup_tagger"
@@ -51,7 +61,7 @@ msgstr ""
 
 #: ../../config/options_network.rst:23
 msgid "**Browser Integration**"
-msgstr ""
+msgstr "**Browserintegratie**"
 
 #: ../../config/options_network.rst:25
 msgid ""
@@ -61,10 +71,15 @@ msgid ""
 "tagger button |lookup_tagger| next to releases and recordings.  Clicking on "
 "this button will load the corresponding release or recording into Picard."
 msgstr ""
+"Dankzij de browserintegratie kan je uitgaven en opnamen rechtstreeks vanaf "
+"de website van MusicBrainz in Picard laden. Nadat je musicbrainz.org vanuit "
+"Picard in de webbrowser hebt geopend, worden op de website naast uitgaven en "
+"opnamen groene tagknoppen |lookup_tagger| weergegeven. Als je op zo’n knop "
+"klikt, wordt de bijbehorende uitgave of opname in Picard geladen."
 
 #: ../../config/options_network.rst:30
 msgid "**Default listening port**"
-msgstr ""
+msgstr "**Standaard luisterpoort**"
 
 #: ../../config/options_network.rst:32
 msgid ""
@@ -72,10 +87,13 @@ msgid ""
 "integration. If the port is not available Picard will try to increase the "
 "port number by one until it finds a free port."
 msgstr ""
+"Hiermee stel je in naar welke poort Picard luistert voor de "
+"browserintegratie. Als de poort niet beschikbaar is, probeert Picard steeds "
+"één poort hoger, tot hij een vrije poort vindt."
 
 #: ../../config/options_network.rst:35
 msgid "**Listen only on localhost**"
-msgstr ""
+msgstr "**Alleen op localhost luisteren**"
 
 #: ../../config/options_network.rst:37
 msgid ""
@@ -86,6 +104,12 @@ msgid ""
 "Barcode Scanner <https://play.google.com/store/apps/details?id=org."
 "musicbrainz.picard.barcodescanner>`_ Android app."
 msgstr ""
+"Standaard beperkt Picard de poort voor de browserintegratie tot je lokale "
+"machine. Als je dit uitschakelt, wordt de poort op je netwerk beschikbaar, "
+"zodat Picard via het netwerk een specifieke uitgave of opname kan laden. Dit "
+"kan bijvoorbeeld worden gebruikt voor de Android-app `Picard Barcode Scanner "
+"<https://play.google.com/store/apps/"
+"details?id=org.musicbrainz.picard.barcodescanner>`_."
 
 #: ../../config/options_network.rst:45
 msgid ""
@@ -93,3 +117,6 @@ msgid ""
 "networks you trust. Exposing application ports via the network can open "
 "potential security holes on your system."
 msgstr ""
+"Zet de poort alleen open als je dit nodig hebt en alleen op netwerken die je "
+"vertrouwt. Het openzetten van applicatiepoorten via het netwerk kan je "
+"systeem kwetsbaar maken."

@@ -1,30 +1,36 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usagematch/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../usage/match.rst:6
 msgid ":index:`Matching Files to Tracks <matching files to tracks>`"
 msgstr ""
+":index:`Bestanden aan nummers koppelen <bestanden aan nummers koppelen>`"
 
 #: ../../usage/match.rst:10
 msgid ""
 "This stage is where individual files are matched to specific tracks in the "
 "information retrieved from the MusicBrainz database."
 msgstr ""
+"In deze stap koppel je de afzonderlijke bestanden aan de nummers van de "
+"uitgave die je uit MusicBrainz in Picard hebt geladen."
 
 #: ../../usage/match.rst:13
 msgid ""
@@ -36,6 +42,13 @@ msgid ""
 "the matching for you.  If the matching wasn't done automatically, drag the "
 "appropriate files onto the appropriate album and track."
 msgstr ""
+"Nadat je de informatie over de uitgave in het rechter deelvenster hebt "
+"geladen, is het tijd om de bestanden in het clusterdeelvenster te koppelen "
+"aan de bijbehorende nummers in het rechter deelvenster. Een muzieknoot voor "
+"een nummer in het rechter deelvenster geeft aan dat er nog geen bestand aan "
+"het nummer is gekoppeld. Soms heeft Picard al geprobeerd om het koppelen "
+"voor jou te doen. Als dat nog niet automatisch is gebeurd, sleep je de "
+"bestanden naar de bijbehorende nummers."
 
 #: ../../usage/match.rst:23
 msgid ""
@@ -46,12 +59,21 @@ msgid ""
 "want to match all files to a single track instead you can hold the :kbd:"
 "`Alt` key while dropping the files."
 msgstr ""
+"Als je meerdere bestanden in één keer naar een bepaald nummer versleept, "
+"wordt het eerste bestand uit je selectie gekoppeld aan het nummer waarnaar "
+"je ze hebt versleept. De rest van de geselecteerde bestanden wordt in "
+"dezelfde volgorde aan de volgende nummers gekoppeld. Zo kan je snel meerdere "
+"bestanden aan een reeks nummers koppelen. Als je in plaats daarvan alle "
+"bestanden aan één nummer wil koppelen, kan je dat doen door tijdens het "
+"slepen :kbd:`Alt` ingedrukt te houden."
 
 #: ../../usage/match.rst:28
 msgid ""
 "If you drop multiple files onto an album Picard will try to match the files "
 "to the tracks based on the metadata."
 msgstr ""
+"Als je meerdere bestanden naar een uitgave versleept, probeert Picard om de "
+"bestanden op basis van de metadata aan de nummers te koppelen."
 
 #: ../../usage/match.rst:30
 msgid ""
@@ -64,6 +86,15 @@ msgid ""
 "pane. If there is an incorrect match, simply drag the track to its correct "
 "spot in the right-hand pane."
 msgstr ""
+"Picard raadt op basis van bestaande metadata welk bestand bij welk nummer "
+"hoort. Hoe goed de overeenkomst is, is te zien aan de kleur van het balkje "
+"voor het nummer. Groen betekent een goede overeenkomst, oranje matig en rood "
+"slecht. Als je veel oranje en rood ziet, dan kan dat betekenen dat Picard "
+"verkeerd heeft geraden of dat de bestanden nog niet veel metadata bevatten. "
+"In dat geval raden we aan om een nummer te selecteren en om in het "
+"deelvenster metadata de ‘Originele waarden’ en de ‘Nieuwe waarden’ te "
+"vergelijken. Als niet de juiste koppeling is gemaakt, kan je het bestand in "
+"het rechter deelvenster naar het juiste nummer verslepen."
 
 #: ../../usage/match.rst:39
 msgid ""
@@ -75,6 +106,13 @@ msgid ""
 "clicking an items in the left-hand pane will bring up a similar menu of "
 "commands."
 msgstr ""
+"Als je met rechts op een nummer in de nummerlijst klikt, krijg je een menu "
+"met opdrachten te zien, zoals ‘Info’, ‘Nummer luisteren’, ‘De bijbehorende "
+"map openen’, ‘Naar soortgelijke nummers zoeken’, ‘In de browser opzoeken’, ‘"
+"AcoustID-vingerafdrukken aanmaken’, ‘Opslaan’ en ‘Verwijderen’. Daarnaast "
+"kan je plug-ins en scripts op alleen het geselecteerde nummer of de "
+"geselecteerde uitgave uitvoeren. Als je in het clusterdeelvenster met rechts "
+"op een bestand of cluster klikt, krijg je een vergelijkbaar menu te zien."
 
 #: ../../usage/match.rst:44
 msgid ""
@@ -84,3 +122,9 @@ msgid ""
 "List\", \"Remove\" and \"Add New Tag\", along with an option to display the "
 "changed tags first."
 msgstr ""
+"Als je in het rechter deelvenster een bestand of uitgave selecteert, worden "
+"daar de originele en nieuwe metadata van weergegeven. Als je met rechts op "
+"een regel in de lijst met tags klikt, verschijnt er een menu met opties "
+"zoals ‘Bewerken’, ‘Aan de “Lijst met tags die moeten worden behouden” "
+"toevoegen’, ‘Verwijderen’ en ‘Nieuwe tag toevoegen’. Ook zie je dan een "
+"optie om gewijzigde tags bovenaan weer te geven."

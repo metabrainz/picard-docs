@@ -3,36 +3,36 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 15:29-0700\n"
-"PO-Revision-Date: 2025-12-02 11:12+0000\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_gt/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_gt/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_gt.rst:6
 msgid "$gt"
-msgstr ""
+msgstr "$gt"
 
 #: ../../functions/func_gt.rst:8
 msgid "Usage: **$gt(x,y[,type])**"
-msgstr ""
+msgstr "Gebruik: **$gt(x,y[,type])**"
 
 #: ../../functions/func_gt.rst:9
 msgid "Category: conditional"
-msgstr ""
+msgstr "Categorie: voorwaardelijk"
 
 #: ../../functions/func_gt.rst:11
 msgid "**Description:**"
@@ -49,6 +49,14 @@ msgid ""
 "applies to both arguments in the following order of preference: \"int\", "
 "\"float\" and \"text\"."
 msgstr ""
+"Retourneert ‘1’ (waar) als ``x`` groter is dan ``y``, gebaseerd op de "
+"vergelijking die in ``type`` is opgegeven. Mogelijke waarden van ``type`` "
+"zijn ‘int’ (integer), ‘float’ (zwevende komma), ‘text’ (hoofdlettergevoelige "
+"tekst), ‘nocase’ (hoofdletterongevoelige tekst), en ‘auto’ (automatisch "
+"bepaald aan de hand van de opgegeven argumenten). Als ``type`` niet wordt "
+"opgegeven, wordt standaard ‘auto’ gebruikt. Het type ‘auto’ gebruikt het "
+"eerste type dat op beide argumenten van toepassing is, in de volgende "
+"volgorde: ‘int’, ‘float’ en ‘text’."
 
 #: ../../functions/func_gt.rst:22
 msgid ""
@@ -56,6 +64,8 @@ msgid ""
 "argument was missing or was not an integer, the function would return an "
 "empty string."
 msgstr ""
+"Het argument ``type`` is toegevoegd in Picard 2.9. Voorheen retourneerde de "
+"functie een lege tekenreeks als een argument ontbrak of geen integer was."
 
 #: ../../functions/func_gt.rst:26
 msgid "**Example:**"

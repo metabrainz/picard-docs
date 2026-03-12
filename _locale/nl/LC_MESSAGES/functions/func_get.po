@@ -3,32 +3,32 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_get/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_get/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../functions/func_get.rst:6
 msgid "$get"
-msgstr ""
+msgstr "$get"
 
 #: ../../functions/func_get.rst:8
 msgid "Usage: **$get(name)**"
-msgstr ""
+msgstr "Gebruik: **$get(naam)**"
 
 #: ../../functions/func_get.rst:9
 msgid "Category: text"
@@ -45,6 +45,10 @@ msgid ""
 "%indirect%``) the value of the variable will be used as ``name``.  This "
 "allows the retrieval of dynamically named variables."
 msgstr ""
+"Retourneert de variabele ``naam`` (gelijk aan ``%naam%``) of een lege "
+"tekenreeks als ``naam`` niet is ingesteld.  Als ``naam`` een andere "
+"variabele is (zoals ``%indirect%``), wordt de waarde van die variabele "
+"gebruikt als ``naam``. Zo kan je dynamisch genaamde variabelen ophalen."
 
 #: ../../functions/func_get.rst:20
 msgid ""
@@ -54,6 +58,11 @@ msgid ""
 "recorded%`` gives a syntax error. In cases like this you need to use ``"
 "$get(re-recorded)``."
 msgstr ""
+"Meestal kan je de waarden van een tag met de naam van die variabele "
+"opvragen. Als je tag bijvoorbeeld ‘rerecorded’ heet, kan je ``%rerecorded%`` "
+"gebruiken. Maar koppeltekens zijn geen geldige tekens voor scriptvariabelen, "
+"dus ``%re-recorded%`` zou een syntaxisfout opleveren. In zulke gevallen moet "
+"je ``$get(re-recorded)`` gebruiken."
 
 #: ../../functions/func_get.rst:25
 msgid "**Example:**"

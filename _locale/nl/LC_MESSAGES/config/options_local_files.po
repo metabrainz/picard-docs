@@ -1,24 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_local_files/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../config/options_local_files.rst:6
 msgid ":index:`Local Files <configuration; local files>`"
-msgstr ""
+msgstr ":index:`Lokale bestanden <configuratie; lokale bestanden>`"
 
 #: ../../config/options_local_files.rst:11
 msgid ""
@@ -26,6 +29,9 @@ msgid ""
 "Files cover art provider. If you are trying to collect more than one image, "
 "the naming is important."
 msgstr ""
+"Hier kan je instellen welke bestandsnamen worden overwogen als je de lokale "
+"bron voor afbeeldingen inschakelt. Als je meer dan één afbeelding wil "
+"verzamelen, zijn de bestandsnamen belangrijk."
 
 #: ../../config/options_local_files.rst:14
 msgid ""
@@ -35,6 +41,10 @@ msgid ""
 "extension \"jpg\", \"png\", \"gif\" or \"tiff\" (e.g.: \"folder.jpg\" or "
 "\"cover.png\")."
 msgstr ""
+"De bestandsnamen worden met een reguliere expressie gezocht. Standaard is "
+"dit ``^(?:cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` waarmee "
+"bestanden met de naam ‘cover’, ‘folder’ of ‘albumart’ en de extensie ‘jpg’, ‘"
+"png’, ‘gif’ or ‘tiff’ (zoals ‘folder.jpg’ of ‘cover.png’) worden geladen."
 
 #: ../../config/options_local_files.rst:18
 msgid ""
@@ -42,6 +52,10 @@ msgid ""
 "folder|albumart)``.  Items listed in this group will not get captured and "
 "the default (Front) type will apply."
 msgstr ""
+"Het eerste deel van de reguliere expressie is een ‘uitsluitgroep’ (non-"
+"capture group): ``(?:cover|folder|albumart)``. De opties in deze groep "
+"worden niet in de resultaten opgenomen en de standaardoptie (Front) wordt "
+"gebruikt."
 
 #: ../../config/options_local_files.rst:21
 msgid ""
@@ -49,6 +63,9 @@ msgid ""
 "real capture, so if the file names match any of the cover art types, they "
 "will be tagged as such."
 msgstr ""
+"Het tweede deel van de reguliere expressie is een normale groep: ``(.*)``. "
+"Dit is de echte insluiting, dus als de bestandsnamen overeenkomen met een "
+"van de genoemde soorten afbeeldingen, dan worden ze als zodanig getagd."
 
 #: ../../config/options_local_files.rst:26
 msgid ""
@@ -56,3 +73,6 @@ msgid ""
 "This means that all the regular file names would be thrown into the Front "
 "type and cause unexpected results."
 msgstr ""
+"Een veelgemaakte fout is het toevoegen van alle types in de eerste groep (de "
+"uitsluitgroep). Daardoor worden alle reguliere bestandsnamen in het type ‘"
+"Front’ opgenomen, en dat wil je vaak niet."

@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_setmulti/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_setmulti/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../functions/func_setmulti.rst:6
 msgid "$setmulti"
@@ -25,15 +25,15 @@ msgstr ""
 
 #: ../../functions/func_setmulti.rst:8
 msgid "Usage: **$setmulti(name,value[,separator])**"
-msgstr ""
+msgstr "Gebruik: **$setmulti(naam,waarde[,scheidingsteken])**"
 
 #: ../../functions/func_setmulti.rst:9
 msgid "Category: assignment"
-msgstr ""
+msgstr "Categorie: toewijzing"
 
 #: ../../functions/func_setmulti.rst:10
 msgid "Implemented: Picard 1.0"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 1.0"
 
 #: ../../functions/func_setmulti.rst:12
 msgid "**Description:**"
@@ -47,6 +47,11 @@ msgid ""
 "multi-valued variables as a string, and then set them back as proper multi-"
 "valued variable."
 msgstr ""
+"Stelt de variabele ``naam`` in op ``waarde`` met het ``scheidingsteken`` "
+"(als dat niet is ingesteld een puntkomma met een spatie (; )) om van de "
+"``waarde`` weer een echte meervoudige variabele te maken. Je kan dit "
+"gebruiken om een meervoudige variabele als een tekenreeks te bewerken, "
+"waarna je de tekenreeks weer in een meervoudige variabele omzet."
 
 #: ../../functions/func_setmulti.rst:20
 msgid "**Example:**"

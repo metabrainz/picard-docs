@@ -3,29 +3,32 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_scripting/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_scripting.rst:4
 msgid ":index:`Scripting Options <configuration; scripting, scripts; tagging>`"
-msgstr ""
+msgstr ":index:`Opties voor scripts <configuratie; scripts, scripts; taggen>`"
 
 #: ../../config/options_scripting.rst:9
 msgid "This section allows for the management of user-defined tagging scripts."
-msgstr ""
+msgstr "Hier kan je zelfgeschreven tagscripts beheren."
 
 #: ../../config/options_scripting.rst:11
 msgid ""
@@ -33,6 +36,9 @@ msgid ""
 "to completely disable all tagging scripts.  This can be useful when tracking "
 "down a problem with Picard's configuration."
 msgstr ""
+"Met het selectievakje ‘Tagscript(s) inschakelen’ bovenaan de pagina kan je "
+"alle tagscripts uitschakelen. Dat kan handig zijn als je een probleem met de "
+"instellingen van Picard onderzoekt."
 
 #: ../../config/options_scripting.rst:14
 msgid ""
@@ -42,6 +48,10 @@ msgid ""
 "enable or disable individual scripts, as well as edit the currently selected "
 "script."
 msgstr ""
+"Onder het selectievakje zie je twee kolommen, met links een lijst met "
+"scripts en rechts de inhoud van het geselecteerde script. Hier kan je "
+"scripts toevoegen, verwijderen en herschikken, afzonderlijke scripts in- en "
+"uitschakelen, en het geselecteerde script bewerken."
 
 #: ../../config/options_scripting.rst:19
 msgid ""
@@ -49,6 +59,9 @@ msgid ""
 "existing script to a file. Files can be stored as either a plain-text script "
 "or a Picard Tagging Script Package stored in YAML format."
 msgstr ""
+"Sinds Picard 2.7 kan je ook een nieuw script uit een bestand importeren of "
+"een bestaand script naar een bestand exporteren. Bestanden kunnen als platte "
+"tekst of als Picard-tagscriptpakket (in de YAML-indeling) worden opgeslagen."
 
 #: ../../config/options_scripting.rst:22
 msgid ""
@@ -58,12 +71,19 @@ msgid ""
 "of the highlighted entries will display help information about the entry if "
 "available."
 msgstr ""
+"De scriptbewerker markeert automatisch de elementen van het script, zoals de "
+":doc:`namen van functies </functions/list_by_type>` en de :doc:`namen van "
+"tags en variabelen </variables/variables>`. Als je de muisaanwijzer over een "
+"van de gemarkeerde delen beweegt en er over dat deel informatie beschikbaar "
+"is, wordt die informatie weergegeven."
 
 #: ../../config/options_scripting.rst:27
 msgid ""
 "Unicode characters can be entered into the script using the format "
 "``\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode character."
 msgstr ""
+"In het script kan je unicodetekens gebruiken met de indeling ``\\uXXXX``, "
+"waarbij ‘XXXX’ de hexadecimale waarde van het unicodeteken is."
 
 #: ../../config/options_scripting.rst:30
 msgid ""
@@ -72,6 +92,10 @@ msgid ""
 "information for a release from the MusicBrainz website.  If the checkbox is "
 "left unchecked, then the script will not be executed automatically."
 msgstr ""
+"Als het selectievakje naast het script is aangevinkt, wordt het script "
+"automatisch voor elk nummer van een uitgave uitgevoerd wanneer Picard "
+"informatie over de uitgave uit de databank van MusicBrainz ophaalt. Als je "
+"het niet aanvinkt, wordt het niet automatisch uitgevoerd,"
 
 #: ../../config/options_scripting.rst:34
 msgid ""
@@ -84,6 +108,13 @@ msgid ""
 "cluster or release.  If only a single track or file is selected, then the "
 "script will only be executed for that track or file."
 msgstr ""
+"maar je kan het wel handmatig uitvoeren door met rechts op een uitgave of "
+"nummer in het clusterdeelvenster of het rechter deelvenster te klikken en "
+"het script met :menuselection:`‘Scripts uitvoeren’` te selecteren. Dit kan "
+"ook met scripts die al automatisch zijn uitgevoerd. Als je een cluster of "
+"een uitgave selecteert, wordt het script uitgevoerd voor elk nummer in de "
+"geselecteerde cluster of uitgave. Als je een nummer selecteert, wordt het "
+"script alleen daarop uitgevoerd."
 
 #: ../../config/options_scripting.rst:41
 msgid ""
@@ -91,3 +122,6 @@ msgid ""
 "extending/scripts>`\" and \":doc:`Scripting </extending/scripting>`\" "
 "sections, as well as \":doc:`Tags & Variables </variables/variables>`\"."
 msgstr ""
+"Meer informatie over scripts vind je in ‘:doc:`Scripts </extending/scripts>"
+"`’ en ‘:doc:`Scripting </extending/scripting>`’. In ‘:doc:`Tags en "
+"variabelen </variables/variables>`’ kan je meer nuttige informatie vinden."

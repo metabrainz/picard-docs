@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/tutorialsnaming_script/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../tutorials/naming_script.rst:6
@@ -24,6 +27,8 @@ msgid ""
 "Writing a :index:`File Naming Script <script; file naming, file naming "
 "script>`"
 msgstr ""
+"Een :index:`bestandsnamenscript <script; bestandsnaam, bestandsnamenscript>` "
+"schrijven"
 
 #: ../../tutorials/naming_script.rst:8
 msgid ""
@@ -33,6 +38,11 @@ msgid ""
 "TITLE**\" of how you want the files and folders named, you can quite easily "
 "translate this to the proper script."
 msgstr ""
+"Een script schrijven om je bestanden te ordenen en hernoemen is niet zo "
+"lastig. Laat je niet intimideren door alle ‘$’, ‘%’ en haakjes! Als je een "
+"patroon als ‘**ARTIEST - (JAAR) NAAM ALBUM/NUMMER - TITEL**’ voor de namen "
+"van mappen en bestanden kan schrijven, kan je dat best makkelijk naar een "
+"echt script vertalen."
 
 #: ../../tutorials/naming_script.rst:12
 msgid ""
@@ -42,6 +52,12 @@ msgid ""
 "script...` button on the :doc:`/config/options_filerenaming` configuration "
 "page. From this screen, you can start a new script for your work."
 msgstr ""
+"Open om te beginnen :doc:`/config/options_filerenaming_editor`. Dat kan in "
+"de menubalk van Picard via :menuselection:`‘Opties --> Bewerker voor "
+"bestandsnamenscripts openen’` of door onderaan de instellingenpagina :doc:`/"
+"config/options_filerenaming` op de knop :guilabel:`Bestandsnamenscript "
+"bewerken …` te klikken. In dit venster kan je een nieuw script gaan "
+"schrijven."
 
 #: ../../tutorials/naming_script.rst:16
 msgid ""
@@ -53,6 +69,12 @@ msgid ""
 "have one directory level for the album which will contain the songs for that "
 "album."
 msgstr ""
+"Houd er rekening mee dat de bestandsnaam en de mapnaam in het script met een "
+"‘/’ van elkaar worden gescheiden. In het script kan je zoveel schuine "
+"strepen gebruiken als je wil. Alles vóór de laatste ‘/’ is de locatie van de "
+"map en alles na de laatste ‘/’ in het script wordt de bestandsnaam. In ons "
+"voorbeeld hebben we maar één schuine streep, wat betekent dat er maar één "
+"map wordt aangemaakt met daarin de nummers van die uitgave."
 
 #: ../../tutorials/naming_script.rst:21
 msgid ""
@@ -63,6 +85,12 @@ msgid ""
 "what we need. To get the actual value for a tag you need to enclose its name "
 "in percent signs. So let’s start:"
 msgstr ""
+"Laten we eerst kijken wat we nodig hebben. In :doc:`/variables/tags_basic` "
+"vind je een lijst met beschikbare tags. We hebben de naam van de artiest "
+"nodig en hiervoor hebben we de tags ``albumartist`` en ``artist``. Omdat we "
+"een album gaan taggen, kunnen we het beste ``albumartist`` gebruiken. Om de "
+"waarde voor een tag te krijgen, moet je de naam tussen procenttekens zetten. "
+"Laten we beginnen:"
 
 #: ../../tutorials/naming_script.rst:30
 msgid ""
@@ -72,10 +100,18 @@ msgid ""
 "special variables in scripting. We need to prefix them with a backslash. "
 "Let’s add this all:"
 msgstr ""
+"Nu hebben we het **jaar** nodig. Er is geen tag ``year``, maar wel ``date``. "
+"Laten we die voorlopig gebruiken. Als we extra tekst willen, zoals het "
+"streepje, kunnen we dat gewoon in het script zetten. Met haakjes moeten we "
+"oppassen, want dat zijn binnen scripts speciale variabelen. Dus als je ze "
+"als tekst wil gebruiken, moet je er een terugstreep (\\) voor zetten. Laten "
+"we dit allemaal toevoegen:"
 
 #: ../../tutorials/naming_script.rst:38
 msgid "Now we want the **ALBUM NAME**. That’s simple, just use ``album``:"
 msgstr ""
+"Nu hebben we de naam van het album nodig. Je kan daarvoor gewoon ``album`` "
+"gebruiken."
 
 #: ../../tutorials/naming_script.rst:44
 msgid ""
@@ -84,6 +120,10 @@ msgid ""
 "``tracknumber`` and the title of the track is simply ``title``.  Adding "
 "these to our script we get:"
 msgstr ""
+"Dat is alles wat we nodig hebben voor de naam van de map. Nu zijn het nummer "
+"en de titel van het nummer aan de beurt. Het nummer is beschikbaar als "
+"``tracknumber`` en de titel van het nummer als ``title``. Als we dit aan het "
+"script toevoegen, krijgen we:"
 
 #: ../../tutorials/naming_script.rst:52
 msgid ""
@@ -94,6 +134,12 @@ msgid ""
 "sometimes if you tag existing files they might not have the ``albumartist`` "
 "set, just ``artist``."
 msgstr ""
+"Je ziet dat dit heel erg lijkt op het patroon waarmee we begonnen. Het "
+"script is nog niet perfect. Dat heeft een paar redenen. Wat als het album "
+"tien of meer nummers heeft en de bestanden niet goed worden gesorteerd? We "
+"krijgen nu ook de volledige datum in plaats van het jaar. Ten slotte hebben "
+"de bestanden die je tagt mogelijk nog geen tag ``albumartist``, maar alleen "
+"``artist``."
 
 #: ../../tutorials/naming_script.rst:57
 msgid ""
@@ -101,18 +147,25 @@ msgid ""
 "`func_num` function to add a leading zero to the number shown for tracks 1 "
 "through 9:"
 msgstr ""
+"Laten we het nummer eerst oplossen. Dat doen we door met de functie "
+":ref:`func_num` bij nummers één tot en met negen een nul voor het nummer te "
+"zetten:"
 
 #: ../../tutorials/naming_script.rst:64
 msgid ""
 "Now let’s fix the **ARTIST**. We can fallback to using ``artist`` if "
 "``albumartist`` is not available by using:"
 msgstr ""
+"Laten we nu de artiest aanpassen. Als ``albumartist`` niet beschikbaar is, "
+"kunnen we ``artist`` gebruiken:"
 
 #: ../../tutorials/naming_script.rst:70
 msgid ""
 "The :ref:`func_if2` function uses the first value that is not empty, so if "
 "``albumartist`` is empty it uses ``artist`` instead."
 msgstr ""
+"De functie :ref:`func_if2` gebruikt de eerste functie die niet leeg is, dus "
+"wordt ``artist`` gebruikt als ``albumartist`` leeg is."
 
 #: ../../tutorials/naming_script.rst:72
 msgid ""
@@ -120,6 +173,9 @@ msgid ""
 "MM-DD. We only need the year, so let’s get just the first 4 characters with "
 "the :ref:`func_left` function:"
 msgstr ""
+"In MusicBrainz heeft de tag ``date`` altijd de indeling JJJJ-MM-DD. We "
+"hebben alleen het jaartal nodig, dus gebruiken we de functie "
+":ref:`func_left` om alleen de eerste vier tekens te gebruiken:"
 
 #: ../../tutorials/naming_script.rst:79
 msgid ""
@@ -129,18 +185,28 @@ msgid ""
 "date with the parentheses in this case. Let’s use the :ref:`func_if` "
 "function to check whether the date is set:"
 msgstr ""
+"Wat gebeurt er als er geen datuminformatie beschikbaar is? Soms heeft "
+"MusicBrainz niet de uitgavedatum van een uitgave, omdat die datum niet "
+"bekend is of gewoon nooit aan de databank is toegevoegd. Het zou fijn zijn "
+"als we de hele datum zouden kunnen weglaten als hij niet aanwezig is. We "
+"gebruiken de functie :ref:`func_if` om te controleren of er een datum is "
+"ingesteld:"
 
 #: ../../tutorials/naming_script.rst:87
 msgid ""
 "Alternately, we can enter a placeholder such a \"**0000**\" if the date is "
 "missing:"
 msgstr ""
+"Als de datum ontbreekt, kunnen we ook een alternatieve aanduiding, zoals "
+"‘**0000**’ gebruiken:"
 
 #: ../../tutorials/naming_script.rst:93
 msgid ""
 "And there you have it -- the final script for naming your files developed "
 "from the pattern that we used as our starting point."
 msgstr ""
+"We zijn er. Nu hebben we een bestandsnamenscript ontwikkeld op basis van het "
+"patroon waarmee we begonnen."
 
 #: ../../tutorials/naming_script.rst:97
 msgid ""
@@ -148,3 +214,6 @@ msgid ""
 "the :doc:`/variables/variables` section. For information about the script "
 "functions available please see the :doc:`/functions/list_by_type` section."
 msgstr ""
+"Meer informatie over de beschikbare tags en variabelen kan je in :doc:`/"
+"variables/variables` vinden. Informatie over scriptfuncties vind je in "
+":doc:`/functions/list_by_type`."

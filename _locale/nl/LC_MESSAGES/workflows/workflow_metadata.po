@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/workflowsworkflow_metadata/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../workflows/workflow_metadata.rst:4
@@ -24,6 +27,8 @@ msgid ""
 ":index:`When files are not grouped but have some metadata <workflows; files "
 "not grouped>`"
 msgstr ""
+":index:`Als bestanden niet zijn gegroepeerd maar wel wat metadata hebben "
+"<gebruik; bestanden niet gegroepeerd>`"
 
 #: ../../workflows/workflow_metadata.rst:6
 msgid ""
@@ -33,6 +38,10 @@ msgid ""
 "a single batch).  Picard will try to group them into clusters based on the "
 "metadata currently existing in the files."
 msgstr ""
+"Voor dit scenario raden we aan om niet te veel bestanden tegelijk in Picard "
+"te laden (maximaal tweehonderd per keer), zodat de prestaties van Picard "
+"goed blijven. Picard zal op basis van de bestaande metadata in de bestanden "
+"proberen om de bestanden te clusteren."
 
 #: ../../workflows/workflow_metadata.rst:13
 msgid ""
@@ -40,20 +49,26 @@ msgid ""
 "each batch processed.  This means that an album may not be fully matched, "
 "tagged and renamed until multiple batches have been processed."
 msgstr ""
+"Op deze manier wordt waarschijnlijk maar een deel van de bestanden aan een "
+"uitgave gekoppeld. Dat betekent dat soms maar een deel van de nummers van "
+"een geladen uitgave aan een bestand wordt gekoppeld, en dat je zo’n uitgave "
+"pas na het toevoegen van meerdere groepen bestanden compleet hebt."
 
 #: ../../workflows/workflow_metadata.rst:16
 msgid "**1. Load the files**"
-msgstr ""
+msgstr "**1. De bestanden laden**"
 
 #: ../../workflows/workflow_metadata.rst:18
 msgid ""
 "Drag the batch of files to process from the browser to the \"Unclustered "
 "Files\" section in the left-hand pane."
 msgstr ""
+"Sleep een groep bestanden van de verkenner naar het gedeelte ‘Niet-"
+"geclusterde bestanden’ in het clusterdeelvenster."
 
 #: ../../workflows/workflow_metadata.rst:21
 msgid "**2. Cluster and lookup the files**"
-msgstr ""
+msgstr "**2. Bestanden clusteren en opzoeken**"
 
 #: ../../workflows/workflow_metadata.rst:23
 msgid ""
@@ -64,10 +79,16 @@ msgid ""
 "menuselection:`\"Tools --> Lookup\"` command.  See the :doc:`/usage/"
 "retrieve_lookup` section for details."
 msgstr ""
+"Selecteer de bestanden in het clusterdeelvenster en cluster ze met de "
+"opdracht :menuselection:`‘Hulpmiddelen --> Clusteren’`. Picard zal de "
+"bestanden op basis van de bestaande metadata proberen te clusteren. "
+"Selecteer de gewenste clusters in het clusterdeelvenster en zoek ze op met "
+"de opdracht :menuselection:`‘Hulpmiddelen --> Opzoeken’`. Zie :doc:`/usage/"
+"retrieve_lookup` voor details."
 
 #: ../../workflows/workflow_metadata.rst:28
 msgid "**3. Match the files to the tracks on the release**"
-msgstr ""
+msgstr "**3. De bestanden koppelen aan nummers op een uitgave**"
 
 #: ../../workflows/workflow_metadata.rst:30
 msgid ""
@@ -77,10 +98,15 @@ msgid ""
 "not all tracks have been matched to files.  See the :doc:`/usage/match` "
 "section for details."
 msgstr ""
+"Sleep de bestanden van het clusterdeelvenster naar de gewenste uitgave in "
+"het rechter deelvenster. Controleer of elk nummer op de uitgave aan precies "
+"één bestand is gekoppeld. Het pictogram van de uitgave blijft waarschijnlijk "
+"zilverkleurig, wat aangeeft dat niet alle nummers een gekoppeld bestand "
+"hebben. Zie :doc:`/usage/match` voor details."
 
 #: ../../workflows/workflow_metadata.rst:35
 msgid "**4. Verify the metadata and cover art**"
-msgstr ""
+msgstr "**4. De metadata en hoesafbeeldingen controleren**"
 
 #: ../../workflows/workflow_metadata.rst:37
 msgid ""
@@ -88,16 +114,21 @@ msgid ""
 "what you want.  Adjust if required. See the :doc:`/usage/coverart` section "
 "for details."
 msgstr ""
+"Controleer of de uitgaven en nummers alle gewenste metadata en "
+"hoesafbeeldingen hebben. Pas dit zo nodig aan. Zie :doc:`/usage/coverart` "
+"voor details."
 
 #: ../../workflows/workflow_metadata.rst:41
 msgid "**5. Save the files**"
-msgstr ""
+msgstr "**5. De bestanden opslaan**"
 
 #: ../../workflows/workflow_metadata.rst:43
 msgid ""
 "Save the files using the :menuselection:`\"File --> Save\"` command.  See "
 "the :doc:`/usage/save` section for details."
 msgstr ""
+"Sla de bestanden op met de opdracht :menuselection:`‘Bestand --> Opslaan’`. "
+"Zie :doc:`/usage/save` voor details."
 
 #: ../../workflows/workflow_metadata.rst:48
 msgid ""
@@ -105,3 +136,6 @@ msgid ""
 "this way, because it is virtually impossible to verify that your files "
 "actually match the recordings being matched."
 msgstr ""
+"We raden af om AcoustID’s die op deze manier aan bestanden zijn gekoppeld in "
+"te dienen, omdat het bijna onmogelijk is om te controleren of je bestanden "
+"echt passen bij de gekoppelde opnamen."

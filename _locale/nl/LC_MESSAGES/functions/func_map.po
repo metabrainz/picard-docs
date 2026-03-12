@@ -1,39 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2025-12-02 11:11+0000\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_map/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_map/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../functions/func_map.rst:6
 msgid "$map"
-msgstr ""
+msgstr "$map"
 
 #: ../../functions/func_map.rst:8
 msgid "Usage: **$map(name,code[,separator])**"
-msgstr ""
+msgstr "Gebruik: **$map(naam,code[,scheidingsteken])**"
 
 #: ../../functions/func_map.rst:9
 msgid "Category: multi-value"
-msgstr ""
+msgstr "Categorie: meervoudig"
 
 #: ../../functions/func_map.rst:10
 msgid "Implemented: Picard 2.3"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 2.3"
 
 #: ../../functions/func_map.rst:12
 msgid "**Description:**"
@@ -48,6 +48,13 @@ msgid ""
 "semicolon followed by a space \"; \" if not passed) to coerce the value into "
 "a proper multi-valued variable."
 msgstr ""
+"Itereert over elk element dat in de meervoudige variabele ``naam`` is "
+"gevonden en verandert de waarde van het element naar de waarde die ``code`` "
+"retourneert. Het resultaat is weer een meervoudige variabele. In plaats van "
+"``naam`` kan je ook een tekenreeks opgegeven, zodat deze tekenreeks in een "
+"meervoudige variabele wordt omgezet. Je kan het scheidingsteken voor deze "
+"tekenreeks opgeven met de derde parameter (als je deze parameter niet "
+"opgeeft, wordt ‘; ’ gebruikt)."
 
 #: ../../functions/func_map.rst:20
 msgid ""
@@ -55,10 +62,14 @@ msgid ""
 "``_loop_value`` and the count is stored in the variable ``_loop_count``. "
 "This allows the element or count value to be accessed within the code script."
 msgstr ""
+"Bij elke lus wordt de waarde van het element eerst opgeslagen in de "
+"variabele ``_loop_value`` en de teller in de variabele ``_loop_count``. Zo "
+"kunnen de waarde van het element en de teller worden gebruikt door het "
+"script van ``code``."
 
 #: ../../functions/func_map.rst:24
 msgid "Empty elements are automatically removed from the output."
-msgstr ""
+msgstr "Lege elementen worden automatisch uit de uitvoer verwijderd."
 
 #: ../../functions/func_map.rst:28
 msgid ""
@@ -66,6 +77,10 @@ msgid ""
 "function as ``%code%`` because it will be evaluated when it is assigned to "
 "the variable rather than during the loop."
 msgstr ""
+"Je kan de ``code`` niet naar een variabele opslaan en vervolgens de "
+"variabele als ``%code%`` aan de functie doorgeven, omdat de code wordt "
+"geëvalueerd wanneer hij aan de variabele wordt toegewezen, en niet tijdens "
+"de lus."
 
 #: ../../functions/func_map.rst:33
 msgid "**Example:**"
