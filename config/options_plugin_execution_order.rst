@@ -14,4 +14,4 @@ When the execution order editor is opened, it will display all of the enabled pl
 
 .. note::
 
-   Hovering your cursor over a plugin's name will display a description of the function, and hovering over a plugin's processing function will display a description of the function if available.
+   Hovering your cursor over a plugin's name will display a description of the plugin, and hovering over a plugin's processing function will display a description of the function if available.
