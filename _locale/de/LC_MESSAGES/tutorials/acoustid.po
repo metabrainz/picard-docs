@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-03-14 12:51-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -89,21 +89,24 @@ msgstr ""
 
 #: ../../tutorials/acoustid.rst:24
 msgid ""
-"You don't need the AcoustID fingerprinting software to manually generate new "
-"AcoustIDs. The difference is, that the fingerprinting software is meant to "
-"be run on already tagged files, so if it cannot find an AcoustID it will "
-"immediately do the submission. For Picard the AcoustID is primarily an "
-"identification tool, and because the files are considered untagged at this "
-"*identification* stage, you can only do the submission once the files have "
-"been properly matched to a MusicBrainz recording. You will also find that "
-"after submission Picard will not automatically fetch the newly generated "
-"AcoustIDs. This is because the generation can take some time, and the "
-"response received from the AcoustID server does not contain newly generated "
-"AcoustIDs. However, if you do another scan on the files after submission, "
-"the AcoustID should be available."
+"If there was no AcoustID found when you ran the scan on your files, you "
+"don't need to run :menuselection:`\"Generate Fingerprints\"` on them before "
+"submitting the fingerprints to the AcoustID server because Picard will "
+"remember the fingerprints generated when you performed the scan. For Picard "
+"the AcoustID is primarily an identification tool. Because the files are "
+"considered untagged at the initial *identification* stage (when you "
+"performed the scan), you can only :menuselection:`\"Submit\"` fingerprints "
+"once the files have been properly matched to a MusicBrainz recording (in the "
+"Album pane). You will also find that after submitting fingerprints Picard "
+"will not automatically fetch the newly generated AcoustIDs. This is because "
+"the generation can take some time, and the response received from the "
+"AcoustID server does not contain newly generated AcoustIDs. However, if you "
+"do another scan on the files after submission and the AcoustID server has "
+"had sufficient time to process the submitted fingerprints, the AcoustIDs "
+"should be available."
 msgstr ""
 
-#: ../../tutorials/acoustid.rst:31
+#: ../../tutorials/acoustid.rst:30
 msgid ""
 "If files are matched using :menuselection:`\"Scan\"` and then :menuselection:"
 "`\"Generate fingerprints\"` is used on them, submission will not be enabled, "
@@ -113,7 +116,7 @@ msgid ""
 "already having been submitted."
 msgstr ""
 
-#: ../../tutorials/acoustid.rst:33
+#: ../../tutorials/acoustid.rst:32
 msgid ""
 "Also if you have files matched to tracks and use :menuselection:`\"Generate "
 "fingerprints\"` and are able to successfully submit the fingerprints, "
@@ -125,7 +128,7 @@ msgid ""
 "`\"Generate fingerprints\"` will enable submission again."
 msgstr ""
 
-#: ../../tutorials/acoustid.rst:35
+#: ../../tutorials/acoustid.rst:34
 msgid ""
 "Fingerprints are submitted in batches depending on fingerprint size, but "
 "often up to 200 or 250 fingerprints can be submitted in one batch. A "
@@ -135,7 +138,7 @@ msgid ""
 "submission could be retried."
 msgstr ""
 
-#: ../../tutorials/acoustid.rst:37
+#: ../../tutorials/acoustid.rst:36
 msgid ""
 "You can also use :menuselection:`\"Generate fingerprints\"` on either "
 "unmatched or matched files. This will only generate the acoustic "
