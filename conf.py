@@ -43,6 +43,7 @@ default_language = 'en'
 supported_languages = [
     ('en', 'English'),
     ('fr', 'Français'),
+    ('nl', 'Nederlands'),
     # ('de', 'Deutsch'),
     # ('es', 'Español'),
 ]
