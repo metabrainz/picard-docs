@@ -3,25 +3,30 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2024-01-31 09:30-0700\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_interface/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_interface.rst:4
 msgid ":index:`User Interface Options <pair: configuration; user interface>`"
 msgstr ""
+":index:`Opties voor de gebruikersinterface <pair: configuratie; "
+"gebruikersinterface>`"
 
 #: ../../config/options_interface.rst:19
 msgid "**Show text labels under icons**"
@@ -32,10 +37,12 @@ msgid ""
 "If this option is disabled, the text labels under the icons in the toolbar "
 "will not be displayed, causing the toolbar to appear a little smaller."
 msgstr ""
+"Als deze optie is uitgeschakeld, worden er onder de pictogrammen in de "
+"werkbalk geen teksten weergegeven, waardoor de werkbalk wat kleiner is."
 
 #: ../../config/options_interface.rst:23
 msgid "**Show icons in menus**"
-msgstr ""
+msgstr "**Pictogrammen in menu’s tonen**"
 
 #: ../../config/options_interface.rst:25
 msgid ""
@@ -43,10 +50,13 @@ msgid ""
 "macOS systems. This option allows the user to select whether the icons are "
 "displayed in the menus."
 msgstr ""
+"Sommige gebruikers schakelen menupictogrammen liever uit. Voor macOS is dit "
+"standaardgedrag. Met deze optie kan je instellen of er in de menu’s "
+"pictogrammen worden weergegeven."
 
 #: ../../config/options_interface.rst:27
 msgid "**User interface language**"
-msgstr ""
+msgstr "**Weergavetaal**"
 
 #: ../../config/options_interface.rst:29
 msgid ""
@@ -54,30 +64,36 @@ msgid ""
 "system, however you can override this and select a different language if "
 "needed."
 msgstr ""
+"Standaard wordt Picard weergegeven in de taal die voor je besturingssysteem "
+"is ingesteld, maar je kan dit veranderen naar een andere taal."
 
 #: ../../config/options_interface.rst:31
 msgid "**User interface color theme**"
-msgstr ""
+msgstr "**Thema voor de gebruikersinterface**"
 
 #: ../../config/options_interface.rst:33
 msgid ""
 "This option allows the user to select the color theme used by Picard. On "
 "macOS and Windows systems, the available choices are:"
 msgstr ""
+"Met deze optie kan je het kleurenthema van Picard wijzigen. Op macOS en "
+"Windows heb je de volgende opties:"
 
 #: ../../config/options_interface.rst:35
 msgid ""
 "Default - The default color scheme based on the operating system display "
 "settings."
 msgstr ""
+"Standaard: het standaard kleurenthema, gebaseerd op de scherminstellingen "
+"van het besturingssysteem."
 
 #: ../../config/options_interface.rst:36
 msgid "Light - A light display theme."
-msgstr ""
+msgstr "Licht: een licht kleurenthema."
 
 #: ../../config/options_interface.rst:37
 msgid "Dark - A dark display theme."
-msgstr ""
+msgstr "Donker: een donker kleurenthema."
 
 #: ../../config/options_interface.rst:41
 msgid ""
@@ -86,10 +102,14 @@ msgid ""
 "maintained for the light and dark themes. The colors for the currently "
 "displayed theme are the ones displayed for editing."
 msgstr ""
+"Je kan de kleuren voor de lichte en donkere thema’s aanpassen in "
+":doc:`options_interface_colors`. Voor het lichte en het donkere thema zijn "
+"er verschillende kleurselecties. De kleuren voor het huidige thema worden "
+"weergegeven om te wijzigen."
 
 #: ../../config/options_interface.rst:43
 msgid "**Allow selection of multiple directories**"
-msgstr ""
+msgstr "**Het selecteren van meerdere mappen toestaan**"
 
 #: ../../config/options_interface.rst:45
 msgid ""
@@ -99,6 +119,11 @@ msgid ""
 "to the :menuselection:`\"File --> Add folder\"` dialog. The file browser "
 "always allows multiple directory selection."
 msgstr ""
+"Als je deze optie inschakelt, gebruikt Picard niet de mappenkiezer van het "
+"besturingssysteem, maar van Qt. Dit kan handig zijn als je met de kiezer van "
+"het besturingssysteem niet meerdere mappen tegelijk kan selecteren. Deze "
+"optie is van toepassing op :menuselection:`‘Bestand --> Map toevoegen’`. Met "
+"de verkenner kan je altijd meerdere mappen tegelijk selecteren."
 
 #: ../../config/options_interface.rst:49
 msgid ""
@@ -106,10 +131,12 @@ msgid ""
 "use the system file picker for selecting directories. This may result in "
 "reduced functionality."
 msgstr ""
+"Het gebruik van de bestandenkiezer van Qt in plaats van die van het "
+"besturingssysteem kan leiden tot beperkte functionaliteit."
 
 #: ../../config/options_interface.rst:51
 msgid "**Use built-in search rather than looking in browser**"
-msgstr ""
+msgstr "**De ingebouwde zoekfunctie in plaats van de browser gebruiken**"
 
 #: ../../config/options_interface.rst:53
 msgid ""
@@ -118,20 +145,27 @@ msgid ""
 "option is disabled Picard will open a search on MusicBrainz.org in your "
 "default web browser."
 msgstr ""
+"Als je dit inschakelt, worden de resultaten van zoekopdrachten naar "
+"uitgaven, artiesten en nummers in een dialoogvenster weergegeven. Standaard "
+"staat deze optie uit. Als deze optie is uitgeschakeld, opent Picard "
+"MusicBrainz.org in je webbrowser en start hij daar een zoekopdracht."
 
 #: ../../config/options_interface.rst:55
 msgid "**Use advanced query syntax**"
-msgstr ""
+msgstr "**Geavanceerde zoeksyntaxis gebruiken**"
 
 #: ../../config/options_interface.rst:57
 msgid ""
 "This will enable advanced query syntax parsing on your searches. This only "
 "applies to the search box at the top right of Picard, not the lookup buttons."
 msgstr ""
+"Met deze optie kan je geavanceerde zoeksyntaxis gebruiken. Dit is alleen van "
+"toepassing op het zoekveld rechtsboven in Picard, niet op de opzoekknoppen."
 
 #: ../../config/options_interface.rst:59
 msgid "**Show the new user dialog when starting Picard**"
 msgstr ""
+"**Bij het opstarten van Picard de melding voor nieuwe gebruikers tonen**"
 
 #: ../../config/options_interface.rst:61
 msgid ""
@@ -141,6 +175,11 @@ msgid ""
 "have confirmed that your configuration produces the expected results. It "
 "also provides a link to the on-line documentation."
 msgstr ""
+"Als dit is ingeschakeld, toont Picard bij het opstarten informatie voor "
+"nieuwe gebruikers. De informatie bevat onder andere een waarschuwing over de "
+"gevolgen van het opslaan van bestanden en een tip om dit te beperken tot je "
+"zeker weet dat je configuratie de juiste resultaten oplevert. De melding "
+"bevat ook een link naar de online documentatie."
 
 #: ../../config/options_interface.rst:63
 msgid "**Show documentation update checking disabled dialog**"
@@ -157,6 +196,8 @@ msgstr ""
 #: ../../config/options_interface.rst:67
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr ""
+"**Bij het afsluiten om een bevestiging vragen als er niet-opgeslagen "
+"wijzigingen zijn**"
 
 #: ../../config/options_interface.rst:69
 msgid ""
@@ -164,10 +205,14 @@ msgid ""
 "program with unsaved files loaded. This may help prevent accidentally losing "
 "tag changes you've made, but not yet saved."
 msgstr ""
+"Als dit is ingeschakeld, toont Picard een melding als je het programma "
+"probeert te verlaten terwijl sommige bestanden nog niet zijn opgeslagen. Zo "
+"kan je voorkomen dat je per ongeluk wijzigingen verliest die je hebt gemaakt "
+"maar nog niet hebt opgeslagen."
 
 #: ../../config/options_interface.rst:71
 msgid "**Show a confirmation dialog when saving files**"
-msgstr ""
+msgstr "**Bij het opslaan van bestanden een bevestigingsvenster tonen**"
 
 #: ../../config/options_interface.rst:73
 msgid ""
@@ -176,16 +221,21 @@ msgid ""
 "files to be saved. This may help prevent accidentally making changes that "
 "you are not expecting."
 msgstr ""
+"Als dit is ingeschakeld, toont Picard een melding als je bestanden opslaat "
+"om aan te geven wat er wordt gedaan en hoeveel bestanden er worden "
+"opgeslagen. Zo kan je voorkomen dat je onverwachte wijzigingen maakt."
 
 #: ../../config/options_interface.rst:75
 msgid "**Adjust horizontal position in file browser automatically**"
-msgstr ""
+msgstr "**De horizontale positie in de verkenner automatisch aanpassen**"
 
 #: ../../config/options_interface.rst:77
 msgid ""
 "When this is enabled, Picard will automatically scroll the file browser "
 "display to keep relevant content visible."
 msgstr ""
+"Als dit is ingeschakeld, scrolt Picard de verkenner automatisch om relevante "
+"inhoud zichtbaar te houden."
 
 #: ../../config/options_interface.rst:79
 msgid "**Enable audio player \"now playing\" notifications**"
@@ -199,7 +249,7 @@ msgstr ""
 
 #: ../../config/options_interface.rst:83
 msgid "**Begin browsing in the following directory**"
-msgstr ""
+msgstr "**Met bladeren in de volgende map beginnen**"
 
 #: ../../config/options_interface.rst:85
 msgid ""
@@ -207,6 +257,9 @@ msgid ""
 "enable this option and provide a directory, Picard will always start in the "
 "directory provided."
 msgstr ""
+"Standaard herinnert Picard de map die het laatst is gebruikt om bestanden te "
+"laden. Als je deze optie inschakelt en een map opgeeft, begint Picard altijd "
+"in die map."
 
 #: ../../config/options_interface.rst:91
 msgid ""

@@ -3,25 +3,30 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2023-04-10 13:40-0600\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_filerenaming_editor/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_filerenaming_editor.rst:6
 msgid ":index:`File Naming Script Editor <pair: file naming; script editor>`"
 msgstr ""
+":index:`Bewerker voor bestandsnamenscripts <pair: bestandsnamen; "
+"scriptbewerker>`"
 
 #: ../../config/options_filerenaming_editor.rst:8
 msgid ""
@@ -29,14 +34,17 @@ msgid ""
 "available for use by Picard. Each script has a title that will show up in "
 "the script selection box, and all listed scripts can be edited by the user."
 msgstr ""
+"Met de Bewerker voor bestandsnamenscripts kan je de bestandsnamenscripts "
+"voor Picard beheren. Elk script heeft een naam die in het keuzemenu voor "
+"scripts wordt weergegeven, en je kan alle scripts bewerken."
 
 #: ../../config/options_filerenaming_editor.rst:21
 msgid "The editor screen has the following sections:"
-msgstr ""
+msgstr "Het scherm van de Bewerker bestaat uit de volgende delen:"
 
 #: ../../config/options_filerenaming_editor.rst:23
 msgid "**Select the file naming script to use**"
-msgstr ""
+msgstr "**Geselecteerd bestandsnamenscript**"
 
 #: ../../config/options_filerenaming_editor.rst:25
 msgid ""
@@ -44,20 +52,23 @@ msgid ""
 "list of scripts available. The selected script will show up in the editing "
 "section, where it can be modified if required."
 msgstr ""
+"Met deze optie kan je een van de beschikbare bestandsnamenscripts "
+"selecteren. Het geselecteerde script wordt weergegeven in het "
+"bewerkingsvenster."
 
 #: ../../config/options_filerenaming_editor.rst:27
 msgid "**Title**"
-msgstr ""
+msgstr "**Naam**"
 
 #: ../../config/options_filerenaming_editor.rst:29
 msgid ""
 "The title assigned to the currently selected script. This can be modified if "
 "required."
-msgstr ""
+msgstr "De naam van het huidige geselecteerde script. Dit kan worden aangepast."
 
 #: ../../config/options_filerenaming_editor.rst:31
 msgid "**Script**"
-msgstr ""
+msgstr "**Script**"
 
 #: ../../config/options_filerenaming_editor.rst:33
 msgid ""
@@ -85,6 +96,9 @@ msgid ""
 "character. It is not recommended to include unicode characters in the "
 "directory or filename."
 msgstr ""
+"In het script kan je unicodetekens gebruiken met de indeling ``\\uXXXX``, "
+"waarbij ‘XXXX’ de hexadecimale waarde van het unicodeteken is. We raden af "
+"om unicodetekens in de namen van mappen en bestanden te gebruiken."
 
 #: ../../config/options_filerenaming_editor.rst:39
 msgid ""
@@ -93,6 +107,10 @@ msgid ""
 "of '/' characters. Everything before the last '/' is the directory location, "
 "and everything after the last '/' becomes the file's name."
 msgstr ""
+"In het script worden de bestandsnaam en de mapnaam met een ‘/’ van elkaar "
+"gescheiden. In het script kan je zoveel schuine strepen gebruiken als je "
+"wil. Alles vóór de laatste ‘/’ is de locatie van de map en alles na de "
+"laatste ‘/’ in het script wordt de bestandsnaam."
 
 #: ../../config/options_filerenaming_editor.rst:41
 msgid ""
@@ -101,6 +119,10 @@ msgid ""
 "formats based on different criteria. In all cases, the files will be saved "
 "using the text output by the script."
 msgstr ""
+"Een bestandsnamenscript kan heel eenvoudig zijn, zoals ``%album%/%title%``, "
+"maar je kan ook een heel complex script maken waarin verschillende criteria "
+"verschillende bestandsnamen opleveren. In elk geval worden de bestanden "
+"opgeslagen volgens de uitvoer van het script."
 
 #: ../../config/options_filerenaming_editor.rst:43
 msgid ""
@@ -116,10 +138,12 @@ msgid ""
 "Any new tags set or tags modified by the file naming script will not be "
 "written to the output files' metadata."
 msgstr ""
+"Het bestandsnamenscript heeft alleen invloed op de bestandsnamen, niet op de "
+"tags die naar bestanden worden geschreven."
 
 #: ../../config/options_filerenaming_editor.rst:49
 msgid "**Files will be named like this**"
-msgstr ""
+msgstr "**Bestanden worden zo opgeslagen**"
 
 #: ../../config/options_filerenaming_editor.rst:51
 msgid ""
@@ -130,85 +154,112 @@ msgid ""
 "If you have not selected any files, then some default examples will be "
 "provided."
 msgstr ""
+"Onder het bestandsnamenscript zie je in twee kolommen (voor en na) "
+"voorbeelden van bestandsnamen die het script produceert. Als je voor het "
+"openen van het optiescherm bestanden in het clusterdeelvenster of het "
+"uitgavedeelvenster selecteert, worden maximaal tien bestanden uit die "
+"selectie willekeurig gekozen om als voorbeeld te gebruiken. Als je geen "
+"bestanden hebt geselecteerd, worden er een paar standaardvoorbeelden "
+"weergegeven."
 
 #: ../../config/options_filerenaming_editor.rst:53
 msgid "**Menu bar**"
-msgstr ""
+msgstr "**Menubalk**"
 
 #: ../../config/options_filerenaming_editor.rst:55
 msgid ""
 "At the top of the screen is a menu bar that provides script management "
 "functions as well as display settings options. The display settings include:"
 msgstr ""
+"Bovenaan het venster zie je een menubalk met opties voor het beheren van "
+"scrips en weergaveopties. De weergaveopties zijn onder andere:"
 
 #: ../../config/options_filerenaming_editor.rst:57
 msgid ""
 "Word wrap script - This will toggle word wrap on and off in the script edit "
 "box."
 msgstr ""
+"Tekst van script laten teruglopen: hiermee schakel je tekstterugloop in of "
+"uit."
 
 #: ../../config/options_filerenaming_editor.rst:58
 msgid ""
 "Show help tooltips - This will determine whether or not the information is "
 "displayed when hovering over a highlighted item."
 msgstr ""
+"Hulpteksten tonen: hiermee schakel je het weergeven van informatie als je "
+"met de muis over een gemarkeerd stuk script beweegt in of uit."
 
 #: ../../config/options_filerenaming_editor.rst:59
 msgid ""
 "Show documentation - This will toggle displaying the scripting documentation "
 "in a sidebar on the screen."
 msgstr ""
+"Documentatie weergeven: hiermee schakel je de documentatie over scripts in "
+"een zijbalk in of uit."
 
 #: ../../config/options_filerenaming_editor.rst:61
 msgid ""
 "There is also an option to update the randomly selected example files from "
 "your selected files list."
 msgstr ""
+"Er is ook een optie om de willekeurig geselecteerde voorbeeldbestanden te "
+"vernieuwen."
 
 #: ../../config/options_filerenaming_editor.rst:63
 msgid "The script management functionality includes:"
-msgstr ""
+msgstr "De opties voor het beheren van scripts zijn onder andere:"
 
 #: ../../config/options_filerenaming_editor.rst:65
 msgid ""
 "Import a new script from a file, either as a plain-text script or a Picard "
 "Naming Script Package."
 msgstr ""
+"Een nieuw script importeren uit een bestand, zowel als platte tekst of als ‘"
+"Picard-namenscriptpakket’."
 
 #: ../../config/options_filerenaming_editor.rst:66
 msgid ""
 "Export the current script to a file, either as a plain-text script or a "
 "Picard Naming Script Package."
 msgstr ""
+"Een script exporteren naar een bestand, zowel als platte tekst of als ‘"
+"Picard-namenscriptpakket."
 
 #: ../../config/options_filerenaming_editor.rst:67
 msgid ""
 "Add a new (default) script. This can be a blank script or one of the basic "
 "system preset scripts provided by Picard."
 msgstr ""
+"Een nieuw (standaard)script toevoegen. Dit kan een leeg script of een van de "
+"ingebouwde scripts van Picard zijn."
 
 #: ../../config/options_filerenaming_editor.rst:68
 msgid "Copy the current script as a new script."
-msgstr ""
+msgstr "Het huidige script als een nieuw script kopiëren."
 
 #: ../../config/options_filerenaming_editor.rst:69
 msgid "Delete the current script."
-msgstr ""
+msgstr "Het huidige script verwijderen."
 
 #: ../../config/options_filerenaming_editor.rst:70
 msgid "Reset all scripts, also available via the :guilabel:`Reset` button."
 msgstr ""
+"Alle scripts terugzetten, ook beschikbaar via de knop "
+":guilabel:`Terugzetten`."
 
 #: ../../config/options_filerenaming_editor.rst:71
 msgid ""
 "Save all changes, also available via the :guilabel:`Make It So!` button."
-msgstr ""
+msgstr "Alle wijzigingen opslaan, ook beschikbaar via de knop :guilabel:`Oké`."
 
 #: ../../config/options_filerenaming_editor.rst:72
 msgid ""
 "Exit without saving changes, also available via the :guilabel:`Cancel` "
 "button."
 msgstr ""
+"Afsluiten zonder op te slaan, ook beschikbaar via de knop "
+":guilabel:`Annuleren`."
 
 #: ../../config/options_filerenaming_editor.rst:75
 msgid "**Documentation Sidebar**"
@@ -237,7 +288,7 @@ msgstr ""
 
 #: ../../config/options_filerenaming_editor.rst:100
 msgid "**Script Metadata**"
-msgstr ""
+msgstr "**Metadata van script**"
 
 #: ../../config/options_filerenaming_editor.rst:102
 msgid ""
@@ -248,9 +299,17 @@ msgid ""
 "plugins, settings, or tagging scripts. This can also be triggered by double "
 "clicking the script title text box."
 msgstr ""
+"Er is ook een optie om de metadata van het huidige script te bekijken of "
+"bewerken. Deze metadata bestaan onder andere uit de naam, auteur, licentie, "
+"omschrijving en de datum en het tijdstip van de laatste versie. Voor de "
+"beschrijving raden we aan om dingen zoals vereiste plug-ins, instellingen of "
+"tagscripts te vermelden. Je kan de metadata ook bekijken/bewerken door twee "
+"keer op het tekstvak van de scriptnaam te klikken."
 
 #: ../../config/options_filerenaming_editor.rst:123
 msgid ""
 "This information is saved in the Picard Naming Script Package file, and is "
 "included when a script package file is imported."
 msgstr ""
+"De metadata worden in het Picard-namenscriptpakket opgeslagen en worden "
+"geïmporteerd als het pakket wordt geïmporteerd."

@@ -1,24 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:11+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/extendingprocessing/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../extending/processing.rst:4
 msgid ":index:`Processing Order <processing order>`"
-msgstr ""
+msgstr ":index:`Verwerkingsvolgorde <verwerkingsvolgorde>`"
 
 #: ../../extending/processing.rst:6
 msgid ""
@@ -28,54 +31,63 @@ msgid ""
 "type will be executed in order based upon the priority specified when the "
 "plugin was registered."
 msgstr ""
+"Om plug-ins en scripts effectief te kunnen gebruiken, moet je weten in welke "
+"volgorde ze worden verwerkt. Over het algemeen worden plug-ins vóór scripts "
+"verwerkt. Plug-ins van hetzelfde soort worden uitgevoerd in de volgorde van "
+"de prioriteit die bij het registeren van de plug-in is ingesteld."
 
 #: ../../extending/processing.rst:9
 msgid "Startup"
-msgstr ""
+msgstr "Als Picard wordt gestart"
 
 #: ../../extending/processing.rst:11
 msgid ""
 "During program startup, plugins with the following hooks are processed, and "
 "any additional functionality that they provide will be available immediately:"
 msgstr ""
+"Als Picard wordt gestart, worden plug-ins met de volgende hooks verwerkt, "
+"waarna eventuele extra functies meteen beschikbaar zijn:"
 
 #: ../../extending/processing.rst:13
 msgid "File Formats"
-msgstr ""
+msgstr "Bestandsindelingen"
 
 #: ../../extending/processing.rst:14
 msgid "Cover Art Providers"
-msgstr ""
+msgstr "Bronnen voor afbeeldingen"
 
 #: ../../extending/processing.rst:15
 msgid "Tagger Script Functions"
-msgstr ""
+msgstr "Scriptfuncties"
 
 #: ../../extending/processing.rst:16
 msgid "Context Menu Actions"
-msgstr ""
+msgstr "Contextmenuhandelingen"
 
 #: ../../extending/processing.rst:17
 msgid "Option Pages"
-msgstr ""
+msgstr "Optiepagina’s"
 
 #: ../../extending/processing.rst:20
 msgid "Loading a Release"
-msgstr ""
+msgstr "Als er een uitgave wordt geladen"
 
 #: ../../extending/processing.rst:22
 msgid ""
 "When data gets loaded from MusicBrainz (while the album shows the "
 "\"loading\" status in the right-hand pane), the following are processed:"
 msgstr ""
+"Als er informatie in Picard wordt geladen (wanneer een uitgave in het "
+"rechter deelvenster de status ‘uitgave-informatie laden’ heeft), worden de "
+"volgende plug-ins en scripts verwerkt:"
 
 #: ../../extending/processing.rst:24
 msgid "Metadata Processor Plugins"
-msgstr ""
+msgstr "Metadataverwerkers"
 
 #: ../../extending/processing.rst:25
 msgid "Tagging Scripts"
-msgstr ""
+msgstr "Tagscripts"
 
 #: ../../extending/processing.rst:27
 msgid ""
@@ -83,10 +95,13 @@ msgid ""
 "processed before scripts, in the order of priority set when the plugin was "
 "registered."
 msgstr ""
+"Plug-ins hebben toegang tot de onbewerkte gegevens die uit MusicBrainz "
+"worden geladen en worden vóór de scripts verwerkt, in de volgorde van de "
+"ingestelde prioriteit."
 
 #: ../../extending/processing.rst:29
 msgid "Scripts are processed in the order set in the Options menu."
-msgstr ""
+msgstr "Scripts worden uitgevoerd in de volgorde die in de opties is ingesteld."
 
 #: ../../extending/processing.rst:33
 msgid ""
@@ -95,10 +110,14 @@ msgid ""
 "one of the last steps in the loading process. Tagging scripts do not have "
 "access to metadata stored in existing files."
 msgstr ""
+"Tagscripts worden altijd uitgevoerd op de metadata die uit MusicBrainz "
+"worden opgehaald, ná het laden van de data en vóórdat er bestanden aan "
+"worden gekoppeld. Dit is een van de laatste stappen in het laadproces. "
+"Tagscipts hebben geen toegang tot metadata die al in bestanden aanwezig zijn."
 
 #: ../../extending/processing.rst:36
 msgid "Loading Music Files"
-msgstr ""
+msgstr "Als muziekbestanden worden geladen"
 
 #: ../../extending/processing.rst:38
 msgid ""
@@ -106,10 +125,13 @@ msgid ""
 "``file_post_load_processor()`` are executed. This could, for example, be "
 "used to load additional data for a file."
 msgstr ""
+"Nadat een bestand in Picard is geladen, worden plug-ins die zijn "
+"geregistreerd met ``file_post_load_processor()`` uitgevoerd. Je kan dit "
+"bijvoorbeeld gebruiken om extra informatie voor een bestand te laden."
 
 #: ../../extending/processing.rst:41
 msgid "Adding / Removing Files"
-msgstr ""
+msgstr "Als bestanden worden toegevoegd of verwijderd"
 
 #: ../../extending/processing.rst:43
 msgid ""
@@ -117,6 +139,9 @@ msgid ""
 "plugins registered with ``file_post_addition_to_track_processor()`` are "
 "executed."
 msgstr ""
+"Nadat een bestand aan een nummer is toegevoegd (in het rechter deelvenster), "
+"worden plug-ins die zijn geregistreerd met "
+"``file_post_addition_to_track_processor()`` uitgevoerd."
 
 #: ../../extending/processing.rst:45
 msgid ""
@@ -124,10 +149,13 @@ msgid ""
 "Picard), plugins registered with "
 "``file_post_removal_from_track_processor()`` are executed."
 msgstr ""
+"Nadat een bestand van een nummer is verwijderd (uit het rechter deelvenster)"
+", worden plug-ins die zijn geregistreerd met "
+"``file_post_removal_from_track_processor()`` uitgevoerd."
 
 #: ../../extending/processing.rst:48
 msgid "Saving Files"
-msgstr ""
+msgstr "Als bestanden worden opgeslagen"
 
 #: ../../extending/processing.rst:50
 msgid ""
@@ -135,6 +163,10 @@ msgid ""
 "to determine the destination path and file name. Note that this script has "
 "no effect on the tag values written to the output file."
 msgstr ""
+"Als bestanden worden opgeslagen, wordt voor elk bestand eerst het "
+"bestandsnamenscript uitgevoerd om te bepalen waar en onder welke "
+"bestandsnaam de bestanden moeten worden opgeslagen. Dit script heeft geen "
+"invloed op de tagwaarden die naar het bestand worden geschreven."
 
 #: ../../extending/processing.rst:52
 msgid ""
@@ -143,20 +175,26 @@ msgid ""
 "to run additional post-processing on the file or write extra data. Note that "
 "the file's metadata is already the newly saved metadata."
 msgstr ""
+"Nadat een bestand is opgeslagen, worden plug-ins die zijn geregistreerd met "
+"``file_post_save_processor()`` uitgevoerd. Je kan dit bijvoorbeeld gebruiken "
+"om extra naverwerking te doen of extra data te schrijven. Let op: op dit "
+"moment is de nieuwe metadata al naar het bestand geschreven."
 
 #: ../../extending/processing.rst:55
 msgid "Removing Albums"
-msgstr ""
+msgstr "Als uitgaven worden verwijderd"
 
 #: ../../extending/processing.rst:57
 msgid ""
 "After an album has been removed from Picard, plugins registered with "
 "``album_post_removal_processor()`` are executed."
 msgstr ""
+"Nadat een uitgave uit Picard wordt verwijderd, worden plug-ins met de hook "
+"``album_post_removal_processor()`` uitgevoerd."
 
 #: ../../extending/processing.rst:60
 msgid "Context Menus"
-msgstr ""
+msgstr "Contextmenu’s"
 
 #: ../../extending/processing.rst:62
 msgid ""
@@ -164,3 +202,5 @@ msgid ""
 "displayed when right-clicking on a file, album, track, cluster or cluster "
 "list."
 msgstr ""
+"Als je met rechts op een bestand, uitgave, nummer, cluster of de "
+"clusterlijst klikt, kan je via het contextmenu tagscripts uitvoeren."

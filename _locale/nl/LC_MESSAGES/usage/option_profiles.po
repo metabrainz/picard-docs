@@ -1,34 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usageoption_profiles/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../usage/option_profiles.rst:4
 msgid "Option Profiles"
-msgstr ""
+msgstr "Optieprofielen"
 
 #: ../../usage/option_profiles.rst:6
 msgid ""
 "As of version 2.7, Picard supports multiple profiles that can allow the user "
 "to quickly switch between option settings."
 msgstr ""
+"Sinds Picard 2.7 worden meerdere optieprofielen ondersteund, zodat je snel "
+"tussen groepen instellingen kan schakelen."
 
 #: ../../usage/option_profiles.rst:9
 msgid "How Option Profiles Work"
-msgstr ""
+msgstr "Hoe optieprofielen werken"
 
 #: ../../usage/option_profiles.rst:11
 msgid ""
@@ -42,6 +47,16 @@ msgid ""
 "independently from the other user-defined profiles. The system's \"user "
 "settings\" profile is always enabled and includes all options."
 msgstr ""
+"Een profiel heeft betrekking op een bepaald aantal opties. Het ene profiel "
+"kan bijvoorbeeld instellingen voor bestandsnamen bevatten, zoals de doelmap "
+"en het bestandsnamenscript dat wordt gebruikt, terwijl het andere profiel "
+"andere instellingen voor dezelfde opties of voor andere opties kan bevatten "
+"(of allebei). Je kan de profielen stapelen in een bepaalde volgorde, die "
+"bepaalt welk optieprofiel voorrang krijgt als meerdere profielen dezelfde "
+"opties beheren. Elk optieprofiel dat je maakt, kan onafhankelijk van de "
+"andere optieprofielen worden in- of uitgeschakeld. Het profiel ‘"
+"gebruikersinstellingen’ is altijd ingeschakeld, omvat alle opties en ligt "
+"altijd onderop de stapel."
 
 #: ../../usage/option_profiles.rst:13
 msgid ""
@@ -50,10 +65,14 @@ msgid ""
 "Initially, the profile stack contains only the system's \"user settings\" "
 "profile, which holds the default settings for the user."
 msgstr ""
+"Picard gebruikt de optie-instelling uit het eerste ingeschakelde "
+"optieprofiel in de stapel dat die optie beheert. Standaard bevat de stapel "
+"profielen alleen het (verborgen) systeemprofiel ‘gebruikersinstellingen’ met "
+"de standaardinstellingen van de gebruiker."
 
 #: ../../usage/option_profiles.rst:16
 msgid "Example of Using Profiles"
-msgstr ""
+msgstr "Hoe je optieprofielen kan gebruiken"
 
 #: ../../usage/option_profiles.rst:18
 msgid ""
@@ -61,18 +80,25 @@ msgid ""
 "alternate values, in this case a target directory where audio files are "
 "saved (option ``move_files_to``)."
 msgstr ""
+"In dit voorbeeld willen we een aantal opties anders instellen, in dit geval "
+"de doelmap waarin de bestanden worden opgeslagen (met de optie "
+"``move_files_to``)."
 
 #: ../../usage/option_profiles.rst:20
 msgid ""
 "The user creates a new profile (named \"TargetMyDir\"), adds the option "
 "``move_files_to`` to it, and enables this profile. The stack is now:"
 msgstr ""
+"Maak een nieuw profiel (met de naam ‘TargetMyDir’) aan, vink de optie "
+"``move_files_to`` aan en schakel het profiel in. De stapel ziet er nu zo uit:"
 
 #: ../../usage/option_profiles.rst:28
 msgid ""
 "They change the value of ``move_files_to`` (to \"target_my_dir\") for this "
 "new profile."
 msgstr ""
+"Je hebt de waarde van ``move_files_to`` (voor het profiel ‘TargetMyDir’) "
+"aangepast."
 
 #: ../../usage/option_profiles.rst:30
 msgid ""
@@ -80,6 +106,10 @@ msgid ""
 "``move_files_to`` is retrieved from this profile. The \"user settings\" "
 "still has the old ``move_files_to`` value."
 msgstr ""
+"Omdat het profiel ‘TargetMyDir’ is ingeschakeld, wordt de waarde van "
+"``move_files_to`` uit dit profiel gehaald. Het profiel ‘"
+"gebruikersinstellingen’ bevat nog steeds de oude waarde van "
+"``move_files_to``."
 
 #: ../../usage/option_profiles.rst:32
 msgid ""
@@ -87,6 +117,9 @@ msgid ""
 "``windows_compatibility`` for this set and save them to the "
 "\"not_for_windows\" directory."
 msgstr ""
+"Stel dat je nu met een andere set muziekbestanden wil werken, je voor deze "
+"bestanden ``windows_compatibility`` wil uitschakelen en je deze bestanden "
+"wil verplaatsen naar de map ‘not_for_windows’."
 
 #: ../../usage/option_profiles.rst:34
 msgid ""
@@ -94,6 +127,9 @@ msgid ""
 "``move_files_to`` and ``windows_compatibility``, and enable it. Now the "
 "stack looks like:"
 msgstr ""
+"Maak een nieuw profiel (genaamd ‘ByeByeWin’) aan, vink daarvoor de opties "
+"``move_files_to`` en ``windows_compatibility`` aan en schakel het nieuwe "
+"profiel in. Nu ziet de stapel er zo uit:"
 
 #: ../../usage/option_profiles.rst:42
 msgid ""
@@ -102,6 +138,10 @@ msgid ""
 "process their files, the files are saved to the \"ByeByeWin\" "
 "``move_files_to`` directory, with ``windows_compatibility`` = false."
 msgstr ""
+"Voor dit nieuwe profiel verander je de waarden van ``move_files_to`` (naar ‘"
+"not_for_windows’) en van ``windows_compatibility`` (naar niet waar). Als je "
+"nu je bestanden verwerkt, worden ze verplaatst naar de map ‘not_for_windows’ "
+"en met de compatibiliteitsopties voor Windows uitgeschakeld."
 
 #: ../../usage/option_profiles.rst:44
 msgid ""
@@ -110,16 +150,21 @@ msgid ""
 "\"ByeByeWin\" profile (which can later be re-enabled if needed). The stack "
 "looks like:"
 msgstr ""
+"Als je bestanden nu weer in de map ‘TargetMyDir’ en met de gebruikelijke "
+"opties wil opslaan, hoef je alleen maar het profiel ‘ByeByeWin’ uit te "
+"schakelen (je kan het later weer inschakelen). De stapel ziet er nu zo uit:"
 
 #: ../../usage/option_profiles.rst:52
 msgid ""
 "Finally, to return to their usual output directory the user only has to "
 "disable the \"TargetMyDir\" profile so the stack is:"
 msgstr ""
+"Om nu weer de normale doelmap te gebruiken, hoef je alleen maar het profiel ‘"
+"TargetMyDir’ uit te schakelen, zodat de stapel er zo uitziet:"
 
 #: ../../usage/option_profiles.rst:62
 msgid "Managing Option Profiles"
-msgstr ""
+msgstr "Optieprofielen beheren"
 
 #: ../../usage/option_profiles.rst:64
 msgid ""
@@ -129,6 +174,10 @@ msgid ""
 "enable and disable profiles, as well as setting the order of the profile "
 "stack."
 msgstr ""
+"Je kan de optieprofielen beheren door via :menuselection:`‘Opties --> Opties "
+"…’` in de menubalk naar de pagina Optieprofielen te gaan. Op deze pagina kan "
+"je profielen toevoegen, kopiëren, bewerken, verwijderen, inschakelen en "
+"uitschakelen, en de volgorde in de stapel veranderen."
 
 #: ../../usage/option_profiles.rst:66
 msgid ""
@@ -141,6 +190,13 @@ msgid ""
 "individually. The groups can be expanded to see the individual options "
 "belonging to that group."
 msgstr ""
+"Aanvankelijk is de lijst met profielen leeg. Om een nieuw profiel te maken, "
+"klik je op :guilabel:`Nieuw`. Dit maakt een nieuw profiel zonder "
+"geselecteerde opties aan. Om een profiel te hernoemen, klik je met rechts op "
+"de naam en selecteer je :menuselection:`‘Profiel hernoemen’`. In het rechter "
+"deelvenster kan je selecteren welke instellingen het profiel moet beheren. "
+"Je kan instellingen per groep of afzonderlijk selecteren. Je kan de groepen "
+"uitvouwen om de afzonderlijke instellingen binnen de groep te zien."
 
 #: ../../usage/option_profiles.rst:81
 msgid ""
@@ -148,6 +204,8 @@ msgid ""
 "hovering your cursor over the setting in the list. The value will be "
 "displayed as a tooltip for the setting."
 msgstr ""
+"Als je met de muis over een optie in de lijst beweegt, wordt de waarde van "
+"de optie-instelling in het huidige profiel als knopinfo weergegeven."
 
 #: ../../usage/option_profiles.rst:96
 msgid ""
@@ -156,6 +214,9 @@ msgid ""
 "profile to a new position in the stack. Profiles are enabled when the box "
 "beside the profile's name is checked."
 msgstr ""
+"Je kan de volgorde van de profielen wijzigen door een profiel te selecteren "
+"en onder de stapel de pijl omhoog of omlaag te selecteren, of door het "
+"profiel te verslepen. Profielen zijn ingeschakeld als ze zijn aangevinkt."
 
 #: ../../usage/option_profiles.rst:98
 msgid ""
@@ -167,6 +228,15 @@ msgid ""
 "displayed based on the first enabled profile in the profile stack, which "
 "corresponds to the setting that will be used during processing."
 msgstr ""
+"Met optieprofielen kan je een aantal instellingen in een profiel opslaan. "
+"Dat profiel kan je in- en uitschakelen om de instellingen voor verschillende "
+"scenario’s snel te wijzigen. Bijvoorbeeld als je klassieke muziek anders wil "
+"behandelen dan andere muziek. Opties die onder een bepaald optieprofiel "
+"vallen, worden in het instellingenvenster gemarkeerd. Als je de "
+"muisaanwijzer over een gemarkeerde optie beweegt, krijg je te zien welk "
+"optieprofiel de optie beheert. Je kan meerdere optieprofielen tegelijk "
+"actief hebben, en als de instellingen binnen die profielen in strijd met "
+"elkaar zijn, heeft het optieprofiel dat hoger in de stapel ligt voorrang."
 
 #: ../../usage/option_profiles.rst:100
 msgid ""
@@ -174,6 +244,9 @@ msgid ""
 "of the profile stack), using the :menuselection:`\"Options --> Enable/"
 "disable profiles\"` item in the menu bar on Picard's main screen."
 msgstr ""
+"Je kan een profiel ook snel in- of uitschakelen (maar niet de volgorde in de "
+"stapel veranderen) via :menuselection:`‘Opties --> Profielen in- en "
+"uitschakelen’` in de menubalk van het hoofdvenster van Picard."
 
 #: ../../usage/option_profiles.rst:102
 msgid ""
@@ -183,10 +256,15 @@ msgid ""
 "All other options will be saved to the \"user settings\" as before. This is "
 "described in more detail in the following section."
 msgstr ""
+"Als je op de knop :guilabel:`Oké` klikt, worden naast de gewijzigde "
+"profielconfiguratie ook alle gemarkeerde opties opgeslagen in het eerste "
+"ingeschakelde profiel in de profielenstapel dat op die opties van toepassing "
+"is. Alle andere opties worden in ‘gebruikersinstellingen’ opgeslagen. In het "
+"volgende hoofdstuk gaan we daar dieper op in."
 
 #: ../../usage/option_profiles.rst:105
 msgid "Saving Profile Option Settings"
-msgstr ""
+msgstr "Optie-instellingen in een profiel opslaan"
 
 #: ../../usage/option_profiles.rst:107
 msgid ""
@@ -195,6 +273,10 @@ msgid ""
 "desired changes (the options should be highlighted), and then click the :"
 "guilabel:`Make It So!` button."
 msgstr ""
+"Om een optie-instelling in een bepaald profiel op te slaan, zorg je dat het "
+"doelprofiel het eerste ingeschakelde profiel in de stapel is, verander je de "
+"gewenste opties (die moeten wel gemarkeerd zijn) en klik je op "
+":guilabel:`Oké`."
 
 #: ../../usage/option_profiles.rst:135
 msgid ""
@@ -204,6 +286,12 @@ msgid ""
 "and includes all options. You can confirm which profile a highlighted option "
 "will update by hovering your cursor over the option."
 msgstr ""
+"Houd er rekening mee dat alle gemarkeerde opties worden opgeslagen in het "
+"eerste ingeschakelde profiel in de profielenstapel dat betrekking heeft op "
+"die opties. Alle andere opties worden opgeslagen in het profiel ‘"
+"gebruikersinstellingen’ met je normale instellingen voor alle opties. Als je "
+"met je muis over een gemarkeerde optie beweegt, zie je welk profiel die "
+"optie beheert."
 
 #: ../../usage/option_profiles.rst:150
 msgid ""
@@ -212,6 +300,9 @@ msgid ""
 "on the page. This is done by clicking the :guilabel:`Attached Profiles` "
 "button."
 msgstr ""
+"Op optiepagina’s met opties die in een profiel kunnen worden opgeslagen, kan "
+"je ook zien welke profielen betrekking hebben op opties op de pagina. "
+"Hiervoor klik je op de knop :guilabel:`Gekoppelde profielen`."
 
 #: ../../usage/option_profiles.rst:165
 msgid ""
@@ -220,6 +311,10 @@ msgid ""
 "not contain any options that could be managed by a profile, the :guilabel:"
 "`Attached Profiles` button will be disabled."
 msgstr ""
+"Er wordt dan een venster geopend met de lijst met gekoppelde profielen in de "
+"volgorde van de profielenstapel en of ze zijn ingeschakeld. Als de pagina "
+"geen opties bevat die door een profiel kunnen worden beheerd, is de knop "
+":guilabel:`Gekoppelde profielen` uitgeschakeld."
 
 #: ../../usage/option_profiles.rst:169
 msgid ""
@@ -234,3 +329,13 @@ msgid ""
 "stack, and is always enabled. The \"user settings\" profile cannot be "
 "modified is not shown in the profile management page."
 msgstr ""
+"Het is belangrijk om te begrijpen dat wanneer je op de knop :guilabel:`Oké` "
+"klikt, **alle** opties op **alle** optiepagina’s worden opgeslagen. Als een "
+"optie door meer dan één ingeschakeld profiel wordt beheerd, wordt de optie "
+"gemarkeerd en opgeslagen in het **eerste** opgeslagen profiel in de lijst "
+"dat die optie beheert. Als er geen ingeschakelde profielen zijn die de optie "
+"beheren, wordt de optie niet gemarkeerd en wordt de instelling opgeslagen in "
+"het profiel ‘gebruikersinstellingen’, het standaardprofiel met alle opties "
+"dat altijd is ingeschakeld. Het profiel ‘gebruikersinstellingen’ kan niet "
+"worden bewerkt en wordt niet op de beheerpagina voor optieprofielen "
+"weergegeven."

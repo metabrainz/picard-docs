@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/workflowsworkflow_extractor_log/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../workflows/workflow_extractor_log.rst:4
@@ -25,6 +28,10 @@ msgid ""
 "lookup; ripper log, EAC; lookup log, XLD; lookup log, Whipper; lookup log, "
 "fre:ac; lookup log, dBpoweramp; lookup log>`"
 msgstr ""
+":index:`Als er een ripperlogboek beschikbaar is <gebruik; ripperlogboek, "
+"opzoeken; logboek van ripper, EAC-logboek; opzoeken, XLD-logboek; opzoeken, "
+"Whipper-logboek; opzoeken, fre:ac-logboek; opzoeken, dBpoweramp-logboek; "
+"opzoeken>`"
 
 #: ../../workflows/workflow_extractor_log.rst:6
 msgid ""
@@ -37,10 +44,19 @@ msgid ""
 "accurate match from the MusicBrainz database. It is also one of the easier "
 "methods for looking up the release."
 msgstr ""
+"Deze optie is in versie 2.8 aan Picard toegevoegd en ondersteunt het gebruik "
+"van logboekbestanden die door :ref:`ondersteunde cd-rippers "
+"<faq_supported_rippers>` zijn geproduceerd. Omdat de logboekbestanden van "
+"deze rippers genoeg informatie bevatten om de inhoudsopgaven van cd’s te "
+"genereren, kunnen ze worden gebruikt in plaats van de cd zelf. Net als bij "
+"het lezen van de cd biedt deze methode de grootste kans op het taggen van je "
+"muziekbestanden met de best passende uitgave uit de databank van "
+"MusicBrainz. Het is ook een van de makkelijkste manieren om de uitgave op te "
+"zoeken."
 
 #: ../../workflows/workflow_extractor_log.rst:8
 msgid "**1. Lookup the CD on MusicBrainz**"
-msgstr ""
+msgstr "**1. De cd op MusicBrainz opzoeken**"
 
 #: ../../workflows/workflow_extractor_log.rst:10
 msgid ""
@@ -53,7 +69,7 @@ msgstr ""
 
 #: ../../workflows/workflow_extractor_log.rst:13
 msgid "**2. Select the correct release**"
-msgstr ""
+msgstr "**2. De juiste uitgave selecteren**"
 
 #: ../../workflows/workflow_extractor_log.rst:15
 msgid ""
@@ -65,20 +81,30 @@ msgid ""
 "especially important if you are going to submit any information such as "
 "acoustic features to AcousticBrainz or AcoustID fingerprints."
 msgstr ""
+"Je ziet een lijst met alle uitgaven die overeenkomen met de TOC van de cd en "
+"een optie om de disc-ID in te dienen als geen van de uitgaven past bij je "
+"cd. Controleer voordat je verdergaat of de uitgave precies bij je cd past "
+"(dus of het land van uitgave, de datum, de platenmaatschappij, het "
+"catalogusnummer, de streepjescode, het soort medium en de hoesafbeeldingen "
+"hetzelfde zijn). Dit is vooral belangrijk als je informatie zoals AcoustID-"
+"vingerafdrukken van de uitgave wil indienen."
 
 #: ../../workflows/workflow_extractor_log.rst:21
 msgid "**3. Load the files**"
-msgstr ""
+msgstr "**3. De bestanden laden**"
 
 #: ../../workflows/workflow_extractor_log.rst:23
 msgid ""
 "Drag the files or folder from the browser to the \"Unclustered Files\" "
 "section in the left-hand pane. You do not need to scan or cluster them."
 msgstr ""
+"Sleep de bestanden of map van de verkenner naar het gedeelte ‘Niet-"
+"geclusterde bestanden’ in het clusterdeelvenster. Je hoeft ze niet te "
+"scannen of clusteren."
 
 #: ../../workflows/workflow_extractor_log.rst:26
 msgid "**4. Match the files to the tracks on the release**"
-msgstr ""
+msgstr "**4. De bestanden koppelen aan nummers op een uitgave**"
 
 #: ../../workflows/workflow_extractor_log.rst:28
 msgid ""
@@ -90,7 +116,7 @@ msgstr ""
 
 #: ../../workflows/workflow_extractor_log.rst:31
 msgid "**5. Verify the metadata and cover art**"
-msgstr ""
+msgstr "**5. De metadata en hoesafbeeldingen controleren**"
 
 #: ../../workflows/workflow_extractor_log.rst:33
 msgid ""
@@ -101,7 +127,7 @@ msgstr ""
 
 #: ../../workflows/workflow_extractor_log.rst:36
 msgid "**7. Save the files**"
-msgstr ""
+msgstr "**7. De bestanden opslaan**"
 
 #: ../../workflows/workflow_extractor_log.rst:38
 msgid ""
@@ -111,7 +137,7 @@ msgstr ""
 
 #: ../../workflows/workflow_extractor_log.rst:41
 msgid "**8. Calculate and submit AcoustID fingerprints**"
-msgstr ""
+msgstr "**8. AcoustID-vingerafdrukken berekenen en indienen**"
 
 #: ../../workflows/workflow_extractor_log.rst:43
 msgid ""
@@ -119,6 +145,8 @@ msgid ""
 "appreciated because it will help identify the files for others to look up "
 "for tagging."
 msgstr ""
+":index:`Deze stap is optioneel <akoestische vingerafdruk; indienen>`, maar "
+"wordt gewaardeerd, omdat dit anderen die bestanden opzoeken helpt."
 
 #: ../../workflows/workflow_extractor_log.rst:45
 msgid ""
@@ -127,6 +155,10 @@ msgid ""
 "Fingerprints\"`. Once the fingerprints have been calculated, submit them "
 "using :menuselection:`\"Files --> Submit AcoustIDs\"`."
 msgstr ""
+"Selecteer de uitgave in het rechter deelvenster en gebruik de opdracht "
+":menuselection:`‘Hulpmiddelen --> AcoustID-vingerafdrukken aanmaken’`. Nadat "
+"de vingerafdrukken zijn berekend, kan je ze indienen met de opdracht "
+":menuselection:`‘Bestand --> AcoustID’s versturen’`."
 
 #: ../../workflows/workflow_extractor_log.rst:49
 msgid ""
@@ -134,3 +166,6 @@ msgid ""
 "tagged with MusicBrainz metadata, and you have verified that the files have "
 "been matched to the correct track on the proper release."
 msgstr ""
+"AcoustID-vingerafdrukken moeten alleen worden ingediend nadat de bestanden "
+"met metadata van MusicBrainz zijn getagd en nadat je hebt gecontroleerd of "
+"alle bestanden zijn gekoppeld aan het juiste nummer op de juiste uitgave."

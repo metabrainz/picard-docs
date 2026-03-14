@@ -1,24 +1,28 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_cover_art_providers/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../config/options_cover_art_providers.rst:4
 msgid ":index:`Cover Art Providers <configuration; cover art providers>`"
 msgstr ""
+":index:`Bronnen voor afbeeldingen <configuratie; bronnen voor afbeeldingen>`"
 
 #: ../../config/options_cover_art_providers.rst:11
 msgid ""
@@ -27,10 +31,15 @@ msgid ""
 "provider and choose the order in which the providers are queried. Picard "
 "will try the providers from top to bottom until an image is returned."
 msgstr ""
+"Picard kan hoesafbeeldingen uit verschillende bronnen downloaden en je kan "
+"kiezen welke bronnen Picard zal gebruiken. Je kan meerdere bronnen "
+"inschakelen en kiezen in welke volgorde in de bronnen wordt gezocht. Picard "
+"zal de bronnen van boven naar beneden langsgaan, tot er een afbeelding wordt "
+"gevonden."
 
 #: ../../config/options_cover_art_providers.rst:13
 msgid "**Cover Art Archive: Release**"
-msgstr ""
+msgstr "**Cover Art Archive: uitgave**"
 
 #: ../../config/options_cover_art_providers.rst:15
 msgid ""
@@ -39,10 +48,14 @@ msgid ""
 "Art Archive is the most comprehensive database of cover art (e.g.: front "
 "covers, back covers, booklets, CDs)."
 msgstr ""
+"Het Cover Art Archive (CAA) is een archief van hoesafbeeldingen dat "
+"MusicBrainz samen met het `Internet Archive <https://archive.org>`_ beheert. "
+"Het Cover Art Archive is de meest uitgebreide databank van hoesafbeeldingen "
+"(voorkanten, achterkanten, boekjes, cd’s)."
 
 #: ../../config/options_cover_art_providers.rst:17
 msgid "**Cover Art Archive: Release Group**"
-msgstr ""
+msgstr "**Cover Art Archive: uitgavegroep**"
 
 #: ../../config/options_cover_art_providers.rst:19
 msgid ""
@@ -53,10 +66,17 @@ msgid ""
 "if you care more about visual quality then having an exact representation of "
 "your release. It is also a good fallback for the Cover Art Archive provider."
 msgstr ""
+"Deze bron gebruikt de afbeelding die in het Cover Art Archive aan de "
+"uitgavegroep is gekoppeld. Dit is meestal de afbeelding die het beste past "
+"bij de uitgavegroep als geheel of de afbeelding van de hoogste kwaliteit, "
+"maar niet per se precies de afbeelding van de uitgave die je tagt. Deze bron "
+"is handig als je de visuele kwaliteit belangrijker vindt dan het hebben van "
+"een exacte weergave van je uitgave. Het is ook een goede achtervang voor de "
+"bron Cover Art Archive."
 
 #: ../../config/options_cover_art_providers.rst:21
 msgid "**Allowed Cover Art URLs**"
-msgstr ""
+msgstr "**Toegestane URL’s voor hoesafbeeldingen**"
 
 #: ../../config/options_cover_art_providers.rst:23
 msgid ""
@@ -65,6 +85,10 @@ msgid ""
 "MusicBrainz database, and only approved sites can be used for this "
 "relationship."
 msgstr ""
+"Met deze optie gebruikt Picard afbeeldingen van goedgekeurde externe "
+"websites. De locatie van de afbeelding is opgeslagen als een URL-relatie "
+"voor de uitgave in de databank van MusicBrainz. Voor deze relatie kunnen "
+"alleen goedgekeurde websites worden gebruikt."
 
 #: ../../config/options_cover_art_providers.rst:27
 msgid ""
@@ -76,13 +100,15 @@ msgstr ""
 
 #: ../../config/options_cover_art_providers.rst:29
 msgid "**Local Files**"
-msgstr ""
+msgstr "**Lokale bestanden**"
 
 #: ../../config/options_cover_art_providers.rst:31
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
 "the :ref:`ref-local-files` provider options."
 msgstr ""
+"Hoesafbeeldingen uit lokale bestanden halen. De te laden bestandsnamen "
+"kunnen in :ref:`ref-local-files` worden ingesteld."
 
 #: ../../config/options_cover_art_providers.rst:33
 msgid ""
@@ -90,6 +116,9 @@ msgid ""
 "cover art providers can be installed as `plugins <https://picard.musicbrainz."
 "org/plugins/>`_."
 msgstr ""
+"Naast de ingebouwde bronnen voor afbeeldingen die hierboven worden genoemd, "
+"kan je met `plug-ins <https://picard.musicbrainz.org/plugins/>`_ extra "
+"bronnen toevoegen."
 
 #: ../../config/options_cover_art_providers.rst:35
 msgid ""
@@ -100,6 +129,11 @@ msgid ""
 "Picard 2.1.3 and earlier versions. For later versions it needs to be "
 "installed as a separate plugin.*"
 msgstr ""
+"**Amazon**: Amazon heeft vaak afbeeldingen die andere websites niet hebben "
+"en de uitgave en de artiest kloppen meestal, maar soms past de afbeelding "
+"niet precies bij de uitgave waarmee je muziek hebt getagt. *Opmerking: "
+"Amazon was voor Picard 2.1.3 als bron van hoesafbeeldingen ingebouwd. Voor "
+"latere versies van Picard moet je een plug-in gebruiken.*"
 
 #: ../../config/options_cover_art_providers.rst:37
 msgid ""
@@ -107,6 +141,10 @@ msgid ""
 "focuses on cover art with high visual quality. This provider provides cover "
 "art representative for the release group and not the individual release."
 msgstr ""
+"**fanart.tv**: Gebruikt hoesafbeeldingen van `fanart.tv <https://fanart.tv/>"
+"`_, een databank gericht op hoesafbeeldingen van goede kwaliteit. Deze bron "
+"biedt hoesafbeeldingen die representatief zijn voor de uitgavegroep en niet "
+"voor afzonderlijke uitgaven."
 
 #: ../../config/options_cover_art_providers.rst:39
 msgid ""
@@ -115,3 +153,7 @@ msgid ""
 "provides cover art representative for the release group and not the "
 "individual release."
 msgstr ""
+"**TheAudioDB**: Gebruikt hoesafbeeldingen van `TheAudioDB <https://"
+"www.theaudiodb.com/>`_, een databank gericht op hoesafbeeldingen van goede "
+"kwaliteit. Deze bron biedt hoesafbeeldingen die representatief zijn voor de "
+"uitgavegroep en niet voor afzonderlijke uitgaven."

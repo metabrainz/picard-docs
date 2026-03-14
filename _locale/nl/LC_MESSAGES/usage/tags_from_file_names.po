@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usagetags_from_file_names/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/tags_from_file_names.rst:4
 msgid "Generating :index:`tags from file names`"
-msgstr ""
+msgstr ":index:`Tags uit bestandsnamen halen`"
 
 #: ../../usage/tags_from_file_names.rst:6
 msgid ""
@@ -30,10 +33,15 @@ msgid ""
 "menuselection:`\"Tools --> Tags From &File Names...\"` to generate the tags "
 "from the file names."
 msgstr ""
+"Soms hebben bestanden tags van slechte kwaliteit of zelfs helemaal geen "
+"tags, maar hebben de bestandsnamen een duidelijke structuur en volgen ze een "
+"patroon. In dat geval kan je de optie :menuselection:`‘Hulpmiddelen --> Tags "
+"uit bestandsnamen halen …’` gebruiken om tags uit de bestandsnamen af te "
+"leiden."
 
 #: ../../usage/tags_from_file_names.rst:10
 msgid "Basic usage"
-msgstr ""
+msgstr "De basis"
 
 #: ../../usage/tags_from_file_names.rst:12
 msgid ""
@@ -42,6 +50,10 @@ msgid ""
 "Tags From &File Names...\"`. The dialog will show you a list of filenames "
 "and an input field at the top where you can enter a matching pattern."
 msgstr ""
+"Om dit hulpmiddel te gebruiken, selecteer je een of meer in Picard geladen "
+"bestanden en ga je in het menu naar :menuselection:`‘Hulpmiddelen --> Tags "
+"uit bestandsnamen halen …’`. In het dialoogvenster zie je een lijst met "
+"bestandsnamen en bovenaan een invoerveld waarin je een patroon kunt opgeven."
 
 #: ../../usage/tags_from_file_names.rst:27
 msgid ""
@@ -62,6 +74,12 @@ msgid ""
 "mp3` the pattern needs to also include this separator, like :samp:"
 "`%tracknumber% - %title%`."
 msgstr ""
+"Als je bestanden bijvoorbeeld bestaan uit de positie en de titel van het "
+"nummer, gescheiden door een spatie (bijv. :file:`02 voor alles bang.mp3`), "
+"gebruik je het patroon :samp:`%tracknumber% %title%`. Worden de positie en "
+"de titel bijvoorbeeld gescheiden door een streepje (bijv. :file:`02 - voor "
+"alles bang.mp3`) dan gebruik je dat streepje ook in het patroon: "
+":samp:`%tracknumber% - %title%`."
 
 #: ../../usage/tags_from_file_names.rst:31
 msgid ""
@@ -72,10 +90,16 @@ msgid ""
 "saved automatically, you still need to save the files if you want the tags "
 "to be written (see :doc:`save`)."
 msgstr ""
+"Als je naast het patroon op de knop ‘Voorbeeld’ klikt, zie je een voorbeeld "
+"van de afgeleide tags voor elke bestandsnaam. Wanneer je tevreden met het "
+"resultaat bent, kan je de wijzigingen accepteren met de knop ‘Oké’. De "
+"gewijzigde tags worden voor de bestanden ingesteld. Let op: De wijzigingen "
+"worden niet automatisch opgeslagen. Als je de tags naar de bestanden wil "
+"schrijven, moet je de bestanden opslaan (zie :doc:`save`)."
 
 #: ../../usage/tags_from_file_names.rst:35
 msgid "Matching folders"
-msgstr ""
+msgstr "Mappen koppelen"
 
 #: ../../usage/tags_from_file_names.rst:37
 msgid ""
@@ -86,10 +110,17 @@ msgid ""
 "match the artist, album, track number and title with a pattern of :samp:"
 "`%artist%/%album%/%tracknumber% - %title%`."
 msgstr ""
+"Het patroon kan ook bovenliggende mappen van bestanden herkennen. Voor "
+"mappen gebruik je een schuine streep (/) als scheidingsteken. Als het "
+"bestand zich bijvoorbeeld bevindt in een map die naar de uitgave is genoemd, "
+"en die map zich weer bevindt in een map met de naam van de artiest (zoals "
+":file:`Sef/kleine monsters/02 voor alles bang.mp3`), dan kan je de artiest, "
+"uitgave, nummerpositie en het nummer afleiden met het patroon "
+":samp:`%artist%/%album%/%tracknumber% - %title%`."
 
 #: ../../usage/tags_from_file_names.rst:54
 msgid "Replace underscores with spaces"
-msgstr ""
+msgstr "Lage streepjes door spaties vervangen"
 
 #: ../../usage/tags_from_file_names.rst:56
 msgid ""
@@ -99,10 +130,15 @@ msgid ""
 "checkbox \"Replace underscores with spaces\" and use a pattern like :samp:"
 "`%tracknumber%_%title%` to extract the title properly as \"Heart of Gold\"."
 msgstr ""
+"Soms hebben bestandsnamen lage streepjes in plaats van spaties. Dan heet een "
+"bestand bijvoorbeeld :file:`02_voor_alles_bang.mp3`. Standaard wordt de "
+"titel dan afgeleid als ‘voor_alles_bang’. In dat geval kan je ‘Lage "
+"streepjes door spaties vervangen’ aanvinken en een patroon als "
+":samp:`%tracknumber%_%title%` gebruiken om de juiste titel te krijgen."
 
 #: ../../usage/tags_from_file_names.rst:60
 msgid "Ignoring parts of the file name"
-msgstr ""
+msgstr "Delen van de bestandsnaam negeren"
 
 #: ../../usage/tags_from_file_names.rst:62
 msgid ""
@@ -126,6 +162,15 @@ msgid ""
 "not get written to the file tags. The name :samp:`%_filetitle%` is "
 "arbitrarily chosen, it just needs to start with an underscore."
 msgstr ""
+"Bijvoorbeeld als je alleen de nummerpositie uit een bestandsnaam wil "
+"afleiden, zoals in het bestand :file:`05 Lege stoelen_.mp3`. Misschien heeft "
+"het bestand alleen geen tag voor de positie, maar klopt de titel van het "
+"nummer al. Je kan dan het patroon :samp:`%tracknumber% %_bestandstitel%` "
+"gebruiken. Dan wordt de tag ``tracknumber`` goed afgeleid, maar wordt de "
+"rest van de bestandsnaam geladen naar de verborgen variabele "
+":samp:`%_bestandstitel%`, die niet naar de tags in het bestand wordt "
+"geschreven. De naam :samp:`%_bestandstitel%` kan je zelf kiezen, alleen het "
+"lage streepje aan het begin is verplicht."
 
 #: ../../usage/tags_from_file_names.rst:68
 msgid ""
@@ -134,3 +179,7 @@ msgid ""
 "tags. If you are using a Picard version older than 2.5 you will need to "
 "remove the unwanted tags before saving the files."
 msgstr ""
+"Het parseren van verborgen variabelen uit bestandsnamen wordt sinds Picard "
+"2.5 ondersteund. Eerdere versies maakten wel een tag die naar het bestand "
+"werd geschreven. Als je een versie van Picard ouder dan 2.5 gebruikt, moet "
+"je de ongewenste tags verwijderen voordat je de bestanden opslaat."

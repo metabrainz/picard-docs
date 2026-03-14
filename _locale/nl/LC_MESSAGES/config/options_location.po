@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_location/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_location.rst:4
@@ -24,10 +27,12 @@ msgid ""
 ":index:`Location <configuration; cover art location, cover art; location to "
 "save>`"
 msgstr ""
+":index:`Locatie <configuratie; locatie hoesafbeelding, hoesafbeelding; "
+"opslaglocatie>`"
 
 #: ../../config/options_location.rst:11
 msgid "**Embed cover images into tags**"
-msgstr ""
+msgstr "**Hoesafbeeldingen in tags opslaan**"
 
 #: ../../config/options_location.rst:13
 msgid ""
@@ -36,10 +41,14 @@ msgid ""
 "same directory, some music players will only display embedded images and "
 "don't find the separate files."
 msgstr ""
+"Als je dit aanvinkt, worden afbeeldingen in de muziekbestanden zelf "
+"opgeslagen. Hoewel dit meer opslagruimte vergt dat het opslaan van een "
+"afbeelding in dezelfde map, geven sommige muziekspelers alleen ingesloten "
+"afbeeldingen weer en geen losse afbeeldingen in de map."
 
 #: ../../config/options_location.rst:15
 msgid "**Embed only a single front image**"
-msgstr ""
+msgstr "**Slechts één afbeelding van de voorkant inbedden**"
 
 #: ../../config/options_location.rst:17
 msgid ""
@@ -48,10 +57,14 @@ msgid ""
 "display a single embedded image, so embedding additional images may not add "
 "any functionality."
 msgstr ""
+"Als je dit aanvinkt, wordt er maar één afbeelding (die van de voorkant) "
+"ingebed. Alle andere soorten afbeeldingen worden niet ingebed. Veel "
+"muziekspelers geven toch maar één ingebedde afbeelding weer, dus het "
+"toevoegen van meer afbeeldingen biedt mogelijk geen extra functionaliteit."
 
 #: ../../config/options_location.rst:21
 msgid "**Save cover images as separate files**"
-msgstr ""
+msgstr "**Hoesafbeeldingen als aparte bestanden opslaan**"
 
 #: ../../config/options_location.rst:23
 msgid ""
@@ -68,54 +81,67 @@ msgid ""
 "In addition to scripting variables already available for a track, you can "
 "use the following cover art specific variables:"
 msgstr ""
+"Naast de scriptvariabelen die standaard voor nummers beschikbaar zijn, kan "
+"je ook een van de volgende speciale variabelen voor hoesafbeeldingen "
+"gebruiken:"
 
 #: ../../config/options_location.rst:27
 msgid ""
 "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For "
 "front images this will always be \"front\"."
 msgstr ""
+"``coverart_maintype``: Het primaire type afbeelding (zoals voorkant, medium "
+"of boekje). Voor afbeeldingen van de voorkant is dit altijd ‘voorkant’."
 
 #: ../../config/options_location.rst:28
 msgid "``coverart_types``: Full list of all types assigned to this image."
 msgstr ""
+"``coverart_types``: De volledige lijst met alle typen die aan deze "
+"afbeelding zijn toegewezen."
 
 #: ../../config/options_location.rst:29
 msgid "``coverart_comment``: The cover art comment."
-msgstr ""
+msgstr "``coverart_comment``: De opmerking over de hoesafbeelding."
 
 #: ../../config/options_location.rst:31
 msgid "For example, specifying a file naming mask such as:"
-msgstr ""
+msgstr "Als je bijvoorbeeld het volgende invult:"
 
 #: ../../config/options_location.rst:37
 msgid ""
 "will preface the file name with the album artist, original release year and "
 "album title."
 msgstr ""
+"wordt de bestandsnaam voorafgegaan door de artiest van de uitgave, de "
+"oorspronkelijke uitgavedatum en de uitgavetitel."
 
 #: ../../config/options_location.rst:39
 msgid ""
 "You can also have Picard save the images to a subdirectory by including this "
 "in the file naming mask. For example:"
 msgstr ""
+"Je kan ook instellen dat Picard de afbeeldingen in een submap opslaat. Met"
 
 #: ../../config/options_location.rst:45
 msgid "which will place the images in a subdirectory called \"Artwork\"."
-msgstr ""
+msgstr "worden afbeeldingen bijvoorbeeld opgeslagen in de submap ‘Artwork’."
 
 #: ../../config/options_location.rst:47
 msgid "**Overwrite the file if it already exists**"
-msgstr ""
+msgstr "**Bestaande bestanden overschrijven**"
 
 #: ../../config/options_location.rst:49
 msgid ""
 "Check this to replace existing files. This is especially recommended if "
 "trying to write \"folder\" previews for Windows."
 msgstr ""
+"Als je dit aanvinkt, worden bestaande bestanden overschreven. Dit wordt "
+"vooral aanbevolen als je de ‘Folder’-voorbeeldbestanden voor Windows wil "
+"opslaan."
 
 #: ../../config/options_location.rst:51
 msgid "**Save only a single front image as separate file**"
-msgstr ""
+msgstr "**Slechts één afbeelding van de voorkant als los bestand opslaan**"
 
 #: ../../config/options_location.rst:53
 msgid ""
@@ -124,17 +150,27 @@ msgid ""
 "be saved. If left unchecked, all \"front\" images will be saved as separate "
 "files, along with any other specified image types to be downloaded."
 msgstr ""
+"Met deze optie stel je in dat Picard alleen de eerste afbeelding van de "
+"voorkant als afzonderlijk bestand met de uitgave opslaat. Er worden dan geen "
+"andere afbeeldingen van de voorkant of andere soorten afbeeldingen "
+"opgeslagen. Als je dit niet aanvinkt, worden alle afbeeldingen van de "
+"voorkant als los bestand opgeslagen, naast alle andere opgegeven soorten "
+"bestanden die worden gedownload."
 
 #: ../../config/options_location.rst:55
 msgid ""
 "**Always use the primary image type as the file name for non-front images**"
 msgstr ""
+"**Bij afbeeldingen die niet van de voorkant zijn altijd het eerste type "
+"afbeelding als bestandsnaam gebruiken**"
 
 #: ../../config/options_location.rst:57
 msgid ""
 "This setting changes how Picard names image files **other than front "
 "images**."
 msgstr ""
+"Deze instelling regelt welke bestandsnamen Picard afbeeldingen **anders dan "
+"afbeeldingen van de voorkant** geeft."
 
 #: ../../config/options_location.rst:59
 msgid ""
@@ -146,3 +182,11 @@ msgid ""
 "\"front\", Picard will use the file name specified in the \"Use the "
 "following file name for images\" setting."
 msgstr ""
+"Als dit is aangevinkt, gebruikt Picard het type afbeelding (zoals achterkant "
+"of boekje) bij het opslaan als bestandsnaam, zolang het maar niet de "
+"voorkant is. Als de afbeeldingen meerdere typen heeft, wordt het eerste type "
+"gebruikt. Als de afbeelding de typen ‘achterkant’ of ‘onbewerkt’ heeft, "
+"wordt alleen ‘achterkant’ voor de bestandsnaam gebruikt. Als je dit niet "
+"aanvinkt of de afbeelding van het type ‘voorkant’ is, gebruikt Picard de "
+"bestandsnaam die is ingesteld in de optie ‘De volgende bestandsnaam voor "
+"afbeeldingen gebruiken’."

@@ -3,26 +3,31 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.9alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-27 15:01-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usageexec_commands/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/exec_commands.rst:4
 msgid ""
 ":index:`Executable Commands <commands; executable, executable commands>`"
 msgstr ""
+":index:`Opdrachtregelopdrachten <opdrachten; opdrachtregel, "
+"opdrachtregelopdrachten>`"
 
 #: ../../usage/exec_commands.rst:6
 msgid ""
@@ -31,14 +36,18 @@ msgid ""
 "case-insensitive, and are processed sequentially in the order that they are "
 "received. The executable commands that Picard recognizes are:"
 msgstr ""
+"Picard kan verwerkingsopdrachten accepteren via de opdrachtregel (met de "
+"optie ``-e``) of door ze uit een tekstbestand te laden. Opdrachten zijn niet "
+"hoofdlettergevoelig en worden verwerkt in de volgorde waarin ze worden "
+"ontvangen. Picard herkent de volgende opdrachten:"
 
 #: ../../usage/exec_commands.rst:9
 msgid ":index:`CLEAR_LOGS <executable commands; CLEAR_LOGS>`"
-msgstr ""
+msgstr ":index:`CLEAR_LOGS <opdrachtregelopdrachten; CLEAR_LOGS>`"
 
 #: ../../usage/exec_commands.rst:11
 msgid "Usage: **CLEAR_LOGS**"
-msgstr ""
+msgstr "Gebruik: **CLEAR_LOGS**"
 
 #: ../../usage/exec_commands.rst:12 ../../usage/exec_commands.rst:20
 #: ../../usage/exec_commands.rst:28 ../../usage/exec_commands.rst:36
@@ -51,7 +60,7 @@ msgstr ""
 #: ../../usage/exec_commands.rst:189 ../../usage/exec_commands.rst:197
 #: ../../usage/exec_commands.rst:205 ../../usage/exec_commands.rst:213
 msgid "Implemented: Picard 2.9"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 2.9"
 
 #: ../../usage/exec_commands.rst:14
 msgid ""
@@ -59,28 +68,33 @@ msgid ""
 "guilabel:`Clear Log` button from the log viewing screen opened using the :"
 "menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
+"Wist alle regels in Picards logboek. Dit is gelijk aan het klikken op de "
+"knop :guilabel:`Logboek wissen` in het logboekvenster dat je kan openen via "
+":menuselection:`‘Hulp --> Fout- en debuglogboek bekijken’`."
 
 #: ../../usage/exec_commands.rst:17
 msgid ":index:`CLUSTER <executable commands; CLUSTER>`"
-msgstr ""
+msgstr ":index:`CLUSTER <opdrachtregelopdrachten; CLUSTER>`"
 
 #: ../../usage/exec_commands.rst:19
 msgid "Usage: **CLUSTER**"
-msgstr ""
+msgstr "Gebruik: **CLUSTER**"
 
 #: ../../usage/exec_commands.rst:22
 msgid ""
 "Cluster all files in the cluster pane. This is the equivalent of using the :"
 "menuselection:`\"Tools --> Cluster\"` command."
 msgstr ""
+"Clustert alle bestanden in het clusterdeelvenster. Dit is gelijk aan de "
+"opdracht :menuselection:`‘Hulpmiddelen --> Clusteren’`."
 
 #: ../../usage/exec_commands.rst:25
 msgid ":index:`FINGERPRINT <executable commands; FINGERPRINT>`"
-msgstr ""
+msgstr ":index:`FINGERPRINT <opdrachtregelopdrachten; FINGERPRINT>`"
 
 #: ../../usage/exec_commands.rst:27
 msgid "Usage: **FINGERPRINT**"
-msgstr ""
+msgstr "Gebruik: **FINGERPRINT**"
 
 #: ../../usage/exec_commands.rst:30
 msgid ""
@@ -88,14 +102,17 @@ msgid ""
 "This is the equivalent of using the :menuselection:`\"Tools --> Generate "
 "AcoustID Fingerprints\"` command."
 msgstr ""
+"Berekent akoestische vingerafdrukken voor alle (gekoppelde) bestanden in het "
+"rechter deelvenster. Dit is gelijk aan de opdracht :menuselection:`‘"
+"Hulpmiddelen --> AcoustID-vingerafdrukken aanmaken’`."
 
 #: ../../usage/exec_commands.rst:33
 msgid ":index:`FROM_FILE <executable commands; FROM_FILE>`"
-msgstr ""
+msgstr ":index:`FROM_FILE <opdrachtregelopdrachten; FROM_FILE>`"
 
 #: ../../usage/exec_commands.rst:35
 msgid "Usage: **FROM_FILE <file path>**"
-msgstr ""
+msgstr "Gebruik: **FROM_FILE <bestandspad>**"
 
 #: ../../usage/exec_commands.rst:38
 msgid ""
@@ -108,6 +125,14 @@ msgid ""
 "command file that is currently being processed) are ignored and will be "
 "logged as a warning."
 msgstr ""
+"Laadt opdrachten uit een bestand. Het bestandspad kan zowel absoluut als "
+"relatief zijn en verwijst naar een tekstbestand met de opdrachten die moeten "
+"worden uitgevoerd. Elke opdracht moet op een aparte regel staan, samen met "
+"eventuele argumenten. Witregels en regels die beginnen met een hekje (#) "
+"worden genegeerd. Met ``FROM_FILE`` kan een opdrachtbestand zelf ook weer "
+"naar een opdrachtbestand verwijzen. Cirkelverwijzingen (door een "
+"opdrachtbestand aan te roepen dat al wordt verwerkt) worden genegeerd en als "
+"waarschuwing geregistreerd."
 
 #: ../../usage/exec_commands.rst:40
 msgid ""
@@ -115,24 +140,30 @@ msgid ""
 "standard commands that you want to use when processing each directory, such "
 "as:"
 msgstr ""
+"Stel je hebt een bestand ``commands.txt`` met standaardopdrachten die je wil "
+"gebruiken voor elke map die je verwerkt, zoals:"
 
 #: ../../usage/exec_commands.rst:72
 msgid "You could then process a directory by starting Picard with the command:"
 msgstr ""
+"Je zou dan een map kunnen verwerken door Picard te starten met de volgende "
+"opdracht:"
 
 #: ../../usage/exec_commands.rst:80
 msgid ":index:`LOAD <executable commands; LOAD>`"
-msgstr ""
+msgstr ":index:`LOAD <opdrachtregelopdrachten; LOAD>`"
 
 #: ../../usage/exec_commands.rst:82
 msgid "Usage: **LOAD <supported MBID/URL or path to a file/directory>**"
-msgstr ""
+msgstr "Gebruik: **LOAD <ondersteunde MBID/URL of pad naar een bestand/map>**"
 
 #: ../../usage/exec_commands.rst:85
 msgid ""
 "Load one or more files/directories/MBIDs/URLs to Picard. This is similar to "
 "including the file, directory path, URL or MBID on the command line."
 msgstr ""
+"Laadt een of meer bestanden/mappen/MBID’s/URL’s in Picard. Dit is gelijk aan "
+"het toevoegen van het bestand, de mappad,URL of MBID in de opdrachtregel."
 
 #: ../../usage/exec_commands.rst:87
 msgid ""
@@ -144,20 +175,29 @@ msgid ""
 "\"release\", \"artist\" or \"track\" and ``<mbid>`` is the MusicBrainz "
 "Identifier of the entity."
 msgstr ""
+"Bestanden en mappen kunnen worden opgegeven met het pad (zowel absoluut als "
+"relatief) naar het bestand of de map, eventueel met stationaanduidingen. Ze "
+"kunnen ook met de prefix ``file://`` worden opgegeven. URL’s moeten worden "
+"opgegeven met de prefix ``http://`` of ``https://``. MBID’s moeten worden "
+"opgegeven in de indeling ``mbid://<entity_type>/<mbid>``, waarbij "
+"``<entity_type>`` ‘release’, ‘artist’ of ‘track’ is en ``<mbid>`` de "
+"MusicBrainz-ID van het object is."
 
 #: ../../usage/exec_commands.rst:89
 msgid ""
 "If a specified item contains a space, it must be enclosed in quotes such as "
 "``\"/home/user/music/my song.mp3\"``."
 msgstr ""
+"Als je iets met een spatie opgeeft, moet je het geheel tussen "
+"aanhalingsteken zetten (zoals ``\"/home/user/music/mijn hitje.mp3\"``)."
 
 #: ../../usage/exec_commands.rst:92
 msgid ":index:`LOOKUP <executable commands; LOOKUP>`"
-msgstr ""
+msgstr ":index:`LOOKUP <opdrachtregelopdrachten; LOOKUP>`"
 
 #: ../../usage/exec_commands.rst:94
 msgid "Usage: **LOOKUP [clustered|unclustered|all]**"
-msgstr ""
+msgstr "Gebruik: **LOOKUP [clustered|unclustered|all]**"
 
 #: ../../usage/exec_commands.rst:97
 msgid ""
@@ -165,20 +205,24 @@ msgid ""
 "unclustered files or all files. If not specified, the command defaults to "
 "all files."
 msgstr ""
+"Zoekt bestanden in het clusterdeelvenster op. Opties zijn alleen geclusterde "
+"bestanden, alleen niet-geclusterde bestanden of alle bestanden. Als er geen "
+"optie wordt opgegeven, worden alle bestanden opgezocht."
 
 #: ../../usage/exec_commands.rst:99
 msgid ""
 "This is the equivalent of using the :menuselection:`\"Tools --> Lookup\"` "
 "command."
 msgstr ""
+"Dit is gelijk aan de opdracht :menuselection:`‘Hulpmiddelen --> Opzoeken’`."
 
 #: ../../usage/exec_commands.rst:102
 msgid ":index:`LOOKUP_CD <executable commands; LOOKUP_CD>`"
-msgstr ""
+msgstr ":index:`LOOKUP_CD <opdrachtregelopdrachten; LOOKUP_CD>`"
 
 #: ../../usage/exec_commands.rst:104
 msgid "Usage: **LOOKUP_CD [device/log file]**"
-msgstr ""
+msgstr "Gebruik: **LOOKUP_CD [apparaat/logboekbestand]**"
 
 #: ../../usage/exec_commands.rst:107
 msgid ""
@@ -186,33 +230,40 @@ msgid ""
 "MusicBrainz. If no argument is specified, it defaults to the first "
 "(alphabetically) available disc drive."
 msgstr ""
+"Leest de cd in het geselecteerde station of een logboek van een cd-ripper en "
+"zoekt de cd op in MusicBrainz. Als er geen argument wordt opgegeven, wordt "
+"standaard het eerste (op alfabet) beschikbare cd-station gebruikt."
 
 #: ../../usage/exec_commands.rst:109
 msgid ""
 "This is the equivalent of using the :menuselection:`\"Tools --> Lookup CD..."
 "\"` command."
 msgstr ""
+"Dit is gelijk aan de opdracht :menuselection:`‘Hulpmiddelen --> Cd opzoeken …"
+"’`."
 
 #: ../../usage/exec_commands.rst:112
 msgid ":index:`PAUSE <executable commands; PAUSE>`"
-msgstr ""
+msgstr ":index:`PAUSE <opdrachtregelopdrachten; PAUSE>`"
 
 #: ../../usage/exec_commands.rst:114
 msgid "Usage: **PAUSE <number of seconds to pause>**"
-msgstr ""
+msgstr "Gebruik: **PAUSE <aantal seconden pauze>**"
 
 #: ../../usage/exec_commands.rst:117
 msgid ""
 "Pause executable command processing for the specified number of seconds."
 msgstr ""
+"Pauzeert het verwerken van opdrachten gedurende het opgegeven aantal "
+"seconden."
 
 #: ../../usage/exec_commands.rst:120
 msgid ":index:`QUIT <executable commands; QUIT>`"
-msgstr ""
+msgstr ":index:`QUIT <opdrachtregelopdrachten; QUIT>`"
 
 #: ../../usage/exec_commands.rst:122
 msgid "Usage: **QUIT \\[force\\]**"
-msgstr ""
+msgstr "Gebruik: **QUIT \\[force\\]**"
 
 #: ../../usage/exec_commands.rst:125
 msgid ""
@@ -222,6 +273,12 @@ msgid ""
 "same checks for unsaved files and such. When 'force' is entered as an "
 "argument to the command, Picard will bypass the unsaved files check."
 msgstr ""
+"De opdracht ``QUIT`` wacht tot alle opdrachten zijn uitgevoerd en vraagt "
+"Picard daarna om zichzelf af te sluiten, net zoals een gebruiker zou doen "
+"die de interface van Picard afsluit. Zo kan Picard dezelfde controles "
+"uitvoeren, zoals of bestanden nog niet zijn opgeslagen. Als ‘force’ wordt "
+"toegevoegd als argument, slaat Picard de controle op niet-opgeslagen "
+"bestanden over."
 
 #: ../../usage/exec_commands.rst:127
 msgid ""
@@ -229,122 +286,132 @@ msgid ""
 "executable commands. If the user cancels the ``QUIT`` from the unsaved files "
 "check dialog, the system will allow more commands to be queued."
 msgstr ""
+"Zodra de opdracht ``QUIT`` in de wachtrij is gezet, kunnen er geen andere "
+"opdrachten meer worden uitgevoerd. Als de gebruiker in het dialoogvenster "
+"over niet-opgeslagen bestanden de opdracht ``QUIT`` annuleert, kunnen er "
+"weer nieuwe opdrachten in de wachtrij worden gezet."
 
 #: ../../usage/exec_commands.rst:130
 msgid ":index:`REMOVE <executable commands; REMOVE>`"
-msgstr ""
+msgstr ":index:`REMOVE <opdrachtregelopdrachten; REMOVE>`"
 
 #: ../../usage/exec_commands.rst:132
 msgid "Usage: **REMOVE <path to one or more files>**"
-msgstr ""
+msgstr "Gebruik: **REMOVE <pad naar één of meer bestanden>**"
 
 #: ../../usage/exec_commands.rst:135
 msgid ""
 "Removes the specified file(s) from Picard. Does nothing if no arguments "
 "provided."
 msgstr ""
+"Verwijdert de opgegeven bestanden uit Picard. Als er geen argumenten worden "
+"opgegeven, gebeurt er niks."
 
 #: ../../usage/exec_commands.rst:138
 msgid ":index:`REMOVE_ALL <executable commands; REMOVE_ALL>`"
-msgstr ""
+msgstr ":index:`REMOVE_ALL <opdrachtregelopdrachten; REMOVE_ALL>`"
 
 #: ../../usage/exec_commands.rst:140
 msgid "Usage: **REMOVE_ALL**"
-msgstr ""
+msgstr "Gebruik: **REMOVE_ALL**"
 
 #: ../../usage/exec_commands.rst:143
 msgid "Removes all files from Picard."
-msgstr ""
+msgstr "Verwijdert alle bestanden uit Picard."
 
 #: ../../usage/exec_commands.rst:146
 msgid ":index:`REMOVE_EMPTY <executable commands; REMOVE_EMPTY>`"
-msgstr ""
+msgstr ":index:`REMOVE_EMPTY <opdrachtregelopdrachten; REMOVE_EMPTY>`"
 
 #: ../../usage/exec_commands.rst:148
 msgid "Usage: **REMOVE_EMPTY**"
-msgstr ""
+msgstr "Gebruik: **REMOVE_EMPTY**"
 
 #: ../../usage/exec_commands.rst:151
 msgid "Removes all empty clusters and albums."
-msgstr ""
+msgstr "Verwijdert alle lege clusters en uitgaven."
 
 #: ../../usage/exec_commands.rst:154
 msgid ":index:`REMOVE_SAVED <executable commands; REMOVE_SAVED>`"
-msgstr ""
+msgstr ":index:`REMOVE_SAVED <opdrachtregelopdrachten; REMOVE_SAVED>`"
 
 #: ../../usage/exec_commands.rst:156
 msgid "Usage: **REMOVE_SAVED**"
-msgstr ""
+msgstr "Gebruik: **REMOVE_SAVED**"
 
 #: ../../usage/exec_commands.rst:159
 msgid "Removes all saved files from the album pane."
-msgstr ""
+msgstr "Verwijdert alle opgeslagen bestanden uit het rechter deelvenster."
 
 #: ../../usage/exec_commands.rst:162
 msgid ":index:`REMOVE_UNCLUSTERED <executable commands; REMOVE_UNCLUSTERED>`"
 msgstr ""
+":index:`REMOVE_UNCLUSTERED <opdrachtregelopdrachten; REMOVE_UNCLUSTERED>`"
 
 #: ../../usage/exec_commands.rst:164
 msgid "Usage: **REMOVE_UNCLUSTERED**"
-msgstr ""
+msgstr "Gebruik: **REMOVE_UNCLUSTERED**"
 
 #: ../../usage/exec_commands.rst:167
 msgid "Removes all unclustered files from the cluster pane."
-msgstr ""
+msgstr "Verwijdert alle niet-geclusterde bestanden uit het clusterdeelvenster."
 
 #: ../../usage/exec_commands.rst:170
 msgid ":index:`SAVE_MATCHED <executable commands; SAVE_MATCHED>`"
-msgstr ""
+msgstr ":index:`SAVE_MATCHED <opdrachtregelopdrachten; SAVE_MATCHED>`"
 
 #: ../../usage/exec_commands.rst:172 ../../usage/exec_commands.rst:180
 msgid "Usage: **SAVE_MATCHED**"
-msgstr ""
+msgstr "Gebruik: **SAVE_MATCHED**"
 
 #: ../../usage/exec_commands.rst:175
 msgid "Saves all matched files from the album pane."
-msgstr ""
+msgstr "Slaat alle gekoppelde bestanden in het rechter deelvenster op."
 
 #: ../../usage/exec_commands.rst:178
 msgid ":index:`SAVE_MODIFIED <executable commands; SAVE_MODIFIED>`"
-msgstr ""
+msgstr ":index:`SAVE_MODIFIED <opdrachtregelopdrachten; SAVE_MODIFIED>`"
 
 #: ../../usage/exec_commands.rst:183
 msgid "Saves all modified files from the album pane."
-msgstr ""
+msgstr "Slaat alle gewijzigde bestanden in het rechter deelvenster op."
 
 #: ../../usage/exec_commands.rst:186
 msgid ":index:`SCAN <executable commands; SCAN>`"
-msgstr ""
+msgstr ":index:`SCAN <opdrachtregelopdrachten; SCAN>`"
 
 #: ../../usage/exec_commands.rst:188
 msgid "Usage: **SCAN**"
-msgstr ""
+msgstr "Gebruik: **SCAN**"
 
 #: ../../usage/exec_commands.rst:191
 msgid ""
 "Scans all files in the cluster pane. This is the equivalent of using the :"
 "menuselection:`\"Tools --> Scan\"` command."
 msgstr ""
+"Scant alle bestanden in het clusterdeelvenster. Dit is gelijk aan de "
+"opdracht :menuselection:`‘Hulpmiddelen --> Scannen’`."
 
 #: ../../usage/exec_commands.rst:194
 msgid ":index:`SHOW <executable commands; SHOW>`"
-msgstr ""
+msgstr ":index:`SHOW <opdrachtregelopdrachten; SHOW>`"
 
 #: ../../usage/exec_commands.rst:196
 msgid "Usage: **SHOW**"
-msgstr ""
+msgstr "Gebruik: **SHOW**"
 
 #: ../../usage/exec_commands.rst:199
 msgid "Make the running instance of Picard the currently active window."
-msgstr ""
+msgstr "Maakt het actieve exemplaar van Picard het huidige actieve venster."
 
 #: ../../usage/exec_commands.rst:202
 msgid ":index:`SUBMIT_FINGERPRINTS <executable commands; SUBMIT_FINGERPRINTS>`"
 msgstr ""
+":index:`SUBMIT_FINGERPRINTS <opdrachtregelopdrachten; SUBMIT_FINGERPRINTS>`"
 
 #: ../../usage/exec_commands.rst:204
 msgid "Usage: **SUBMIT_FINGERPRINTS**"
-msgstr ""
+msgstr "Gebruik: **SUBMIT_FINGERPRINTS**"
 
 #: ../../usage/exec_commands.rst:207
 msgid ""
@@ -352,14 +419,17 @@ msgid ""
 "album pane. This is the equivalent of using the :menuselection:`\"Tools --> "
 "Submit AcoustIDs\"` command."
 msgstr ""
+"Verstuurt de akoestische vingerafdrukken van alle (gekoppelde) bestanden in "
+"het rechter deelvenster. Dit is gelijk aan de opdracht :menuselection:`‘"
+"Hulpmiddelen --> AcoustID’s versturen’`."
 
 #: ../../usage/exec_commands.rst:210
 msgid ":index:`WRITE_LOGS <executable commands; WRITE_LOGS>`"
-msgstr ""
+msgstr ":index:`WRITE_LOGS <opdrachtregelopdrachten; WRITE_LOGS>`"
 
 #: ../../usage/exec_commands.rst:212
 msgid "Usage: **WRITE_LOGS <path to output file>**"
-msgstr ""
+msgstr "Gebruik: **WRITE_LOGS <pad naar uitvoerbestand>**"
 
 #: ../../usage/exec_commands.rst:215
 msgid ""
@@ -367,3 +437,7 @@ msgid ""
 "of using the :guilabel:`Save As...` button from the log viewing screen "
 "opened using the :menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
+"Schrijft de logboeken van Picard naar een opgegeven uitvoerbestand. Dit is "
+"gelijk aan het gebruiken op de knop :guilabel:`Opslaan als …` in het "
+"logboekvenster dat je kan openen via :menuselection:`‘Hulp --> Fout- en "
+"debuglogboek bekijken’`."

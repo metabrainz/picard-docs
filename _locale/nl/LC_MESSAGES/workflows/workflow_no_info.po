@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/workflowsworkflow_no_info/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../workflows/workflow_no_info.rst:4
@@ -24,6 +27,8 @@ msgid ""
 ":index:`When files are not grouped and have little or no existing metadata "
 "<workflows; no metadata>`"
 msgstr ""
+":index:`Als bestanden niet zijn gegroepeerd en nog geen of weinig metadata "
+"hebben <gebruik; geen metadata>`"
 
 #: ../../workflows/workflow_no_info.rst:6
 msgid ""
@@ -31,6 +36,8 @@ msgid ""
 "chance of tagging your music files with an incorrect match from the "
 "MusicBrainz database."
 msgstr ""
+"Dit is misschien wel het slechtste scenario, omdat dit de grootste kans op "
+"een verkeerde koppeling met nummers op MusicBrainz oplevert."
 
 #: ../../workflows/workflow_no_info.rst:8
 msgid ""
@@ -40,6 +47,10 @@ msgid ""
 "a single batch). Picard will try to group them into clusters based on their "
 "AcoustID fingerprints."
 msgstr ""
+"Voor dit scenario raden we aan om niet te veel bestanden tegelijk in Picard "
+"te laden (maximaal tweehonderd per keer), zodat de prestaties van Picard "
+"goed blijven. Picard zal aan de hand van de AcoustID-vingerafdrukken "
+"proberen om de bestanden te clusteren."
 
 #: ../../workflows/workflow_no_info.rst:12
 msgid ""
@@ -47,20 +58,26 @@ msgid ""
 "each batch processed. This means that an album may not be fully matched, "
 "tagged and renamed until multiple batches have been processed."
 msgstr ""
+"Op deze manier wordt waarschijnlijk maar een deel van de bestanden aan een "
+"uitgave gekoppeld. Dat betekent dat soms maar een deel van de nummers van "
+"een geladen uitgave aan een bestand wordt gekoppeld, en dat je zo’n uitgave "
+"pas na het toevoegen van meerdere groepen bestanden compleet hebt."
 
 #: ../../workflows/workflow_no_info.rst:14
 msgid "**1. Load the files**"
-msgstr ""
+msgstr "**1. De bestanden laden**"
 
 #: ../../workflows/workflow_no_info.rst:16
 msgid ""
 "Drag the batch of files to process from the browser to the \"Unclustered "
 "Files\" section in the left-hand pane."
 msgstr ""
+"Sleep een groep bestanden van de verkenner naar het gedeelte ‘Niet-"
+"geclusterde bestanden’ in het clusterdeelvenster."
 
 #: ../../workflows/workflow_no_info.rst:19
 msgid "**2. Scan the files**"
-msgstr ""
+msgstr "**2. De bestanden scannen**"
 
 #: ../../workflows/workflow_no_info.rst:21
 msgid ""
@@ -73,7 +90,7 @@ msgstr ""
 
 #: ../../workflows/workflow_no_info.rst:23
 msgid "**3. Match the files to the tracks on the release**"
-msgstr ""
+msgstr "**3. De bestanden koppelen aan nummers op een uitgave**"
 
 #: ../../workflows/workflow_no_info.rst:25
 msgid ""
@@ -86,7 +103,7 @@ msgstr ""
 
 #: ../../workflows/workflow_no_info.rst:28
 msgid "**4. Verify the metadata and cover art**"
-msgstr ""
+msgstr "**4. De metadata en hoesafbeeldingen controleren**"
 
 #: ../../workflows/workflow_no_info.rst:30
 msgid ""
@@ -97,7 +114,7 @@ msgstr ""
 
 #: ../../workflows/workflow_no_info.rst:33
 msgid "**5. Save the files**"
-msgstr ""
+msgstr "**5. De bestanden opslaan**"
 
 #: ../../workflows/workflow_no_info.rst:35
 msgid ""
