@@ -1,43 +1,49 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.13.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-03 13:35-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-14 16:59+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/faqfaq_font_size/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../faq/faq_font_size.rst:4
 msgid ":index:`How do I change the fonts size or font? <change font size>`"
 msgstr ""
+":index:`Hoe verander ik het lettertype en de grootte van de letters? "
+"<lettergrootte wijzigen>`"
 
 #: ../../faq/faq_font_size.rst:7
 msgid "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: ../../faq/faq_font_size.rst:9
 msgid ""
 "Picard is a Qt application, so whatever works for other Qt application will "
 "work for Picard."
 msgstr ""
+"Picard is een Qt-applicatie, dus wat voor andere Qt-applicaties werkt, werkt "
+"ook voor Picard."
 
 #: ../../faq/faq_font_size.rst:12
 msgid "Linux specific"
-msgstr ""
+msgstr "Voor Linux"
 
 #: ../../faq/faq_font_size.rst:14
 msgid "Two ways to change the size/scaling are:"
-msgstr ""
+msgstr "De grootte/schaal kan op twee manieren worden gewijzigd:"
 
 #: ../../faq/faq_font_size.rst:16
 msgid ""
@@ -45,6 +51,10 @@ msgid ""
 "the desktop environment, e.g. on GNOME the scaling set when configuring the "
 "screens. This usually works, and should be the first approach to take."
 msgstr ""
+"De gebruikelijke manier is om de schaalinstellingen van de "
+"bureaubladomgeving te gebruiken. In Gnome doe je dat bij de "
+"schermconfiguratie. Meestal werkt dit, dus dit zou je als eerste moeten "
+"proberen."
 
 #: ../../faq/faq_font_size.rst:17
 msgid ""
@@ -54,6 +64,11 @@ msgid ""
 "in your shell, or set the variable in your shell to affect all Qt "
 "applications."
 msgstr ""
+"Je kan ook de omgevingsvariabele ``QT_SCALE_FACTOR`` instellen om de "
+"lettertypen in Qt-applicaties te schalen. Dit kan handig zijn voor 4K-"
+"beeldschermen. Vervolgens kan je vanuit de terminal ``QT_SCALE_FACTOR=2.0 "
+"picard`` uitvoeren om Picard te starten, een alias in je shell maken of de "
+"variabele in je shell voor alle Qt-applicaties instellen."
 
 #: ../../faq/faq_font_size.rst:19
 msgid ""
@@ -61,8 +76,13 @@ msgid ""
 "font and/or size. Note that these changes will apply to all Qt applications, "
 "not just Picard."
 msgstr ""
+"Om zowel de lettergrootte, de schaal en het lettertype te wijzigen, gebruik "
+"je `qt5ct`_. Deze veranderingen zijn van toepassing op alle Qt-applicaties, "
+"niet alleen Picard."
 
 #: ../../faq/faq_font_size.rst:21
 msgid ""
 "`The official documentation on high DPI`_ could be a useful read as well."
 msgstr ""
+"Het kan ook handig zijn om `De officiële documentatie over beeldschermen met "
+"een hoge DPI`_ te lezen."
