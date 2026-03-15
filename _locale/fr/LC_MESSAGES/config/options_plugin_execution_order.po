@@ -1,25 +1,28 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.13.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-14 12:08-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-15 19:11+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_plugin_execution_order/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../config/options_plugin_execution_order.rst:4
 msgid ":index:`Plugin Execution Order <configuration; plugin execution order>`"
 msgstr ""
+":index:`Ordre d'exécution des plugins <configuration ; ordre d'exécution des "
+"plugins>`"
 
 #: ../../config/options_plugin_execution_order.rst:6
 msgid ""
@@ -30,6 +33,12 @@ msgid ""
 "determine the order in which the functions are executed, and are generally "
 "set as HIGH, NORMAL or LOW."
 msgstr ""
+"Chaque plugin qui traite les métadonnées d'un album ou d'un morceau dispose "
+"de diverses fonctions de traitement enregistrées au sein même du plugin, "
+"avec une priorité d'exécution définie par son auteur. Un plugin peut "
+"contenir plusieurs fonctions de traitement différentes, chacune ayant sa "
+"propre priorité. Ces priorités déterminent l'ordre dans lequel les fonctions "
+"sont exécutées et sont généralement définies comme HAUTE, NORMALE ou BASSE."
 
 #: ../../config/options_plugin_execution_order.rst:8
 msgid ""
@@ -41,6 +50,14 @@ msgid ""
 "of the initial registered priority for the function. In this way, you can "
 "avoid unexpected results that might otherwise occur."
 msgstr ""
+"La plupart du temps, ce classement des priorités d'exécution est suffisant ; "
+"toutefois, il peut arriver qu'une fonction de traitement de plugin doive "
+"être exécutée avant une autre fonction de plugin ayant la même priorité afin "
+"d'éviter des résultats indésirables. Ce paramètre vous permet de définir "
+"l'ordre d'exécution des fonctions de traitement des métadonnées des plugins, "
+"quelle que soit la priorité initialement enregistrée pour la fonction. Vous "
+"pouvez ainsi éviter les résultats inattendus qui pourraient autrement se "
+"produire."
 
 #: ../../config/options_plugin_execution_order.rst:13
 msgid ""
@@ -51,6 +68,13 @@ msgid ""
 "or down button, or by using your mouse to drag the function to the desired "
 "location in the list."
 msgstr ""
+"Lorsque l'éditeur d'ordre d'exécution est ouvert, il affiche toutes les "
+"fonctions de traitement des métadonnées des plugins activés, dans l'ordre "
+"dans lequel elles sont exécutées par Picard. Vous pouvez modifier cet ordre "
+"en déplaçant les fonctions de traitement des plugins vers le haut ou vers le "
+"bas : pour ce faire, sélectionnez la fonction à déplacer, puis utilisez les "
+"boutons « Haut » ou « Bas », ou bien faites glisser la fonction à l'aide de "
+"la souris jusqu'à l'emplacement souhaité dans la liste."
 
 #: ../../config/options_plugin_execution_order.rst:17
 msgid ""
@@ -58,3 +82,6 @@ msgid ""
 "plugin, and hovering over a plugin's processing function will display a "
 "description of the function if available."
 msgstr ""
+"Si vous passez le curseur sur le nom d'un plugin, une description de celui-"
+"ci s'affiche ; si vous passez le curseur sur la fonction de traitement d'un "
+"plugin, une description de cette fonction s'affiche, si elle est disponible."

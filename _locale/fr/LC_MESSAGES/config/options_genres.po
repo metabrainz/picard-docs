@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2020-11-19 16:05-0700\n"
+"PO-Revision-Date: 2026-03-15 19:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_genres/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.2\n"
 
 #: ../../config/options_genres.rst:4
 msgid ":index:`Genres <configuration; genres>`"
@@ -88,8 +89,8 @@ msgid ""
 "relevant, genres in your files."
 msgstr ""
 "Choisissez la popularité du genre avant qu'il ne soit écrit par Picard. Par "
-"défaut: 90%. Réduire la valeur ici conduira à plus de genres, mais peut-être "
-"moins pertinents, dans vos fichiers."
+"défaut : 90%. Réduire la valeur ici conduira à plus de genres, mais peut-"
+"être moins pertinents, dans vos fichiers."
 
 #: ../../config/options_genres.rst:32
 msgid "**Maximum number of genres**"
@@ -100,7 +101,7 @@ msgid ""
 "Choose how many genres to use. Default: 5. If you only want a single genre, "
 "set this to 1."
 msgstr ""
-"Choisissez le nombre de genres à utiliser. Par défaut: 5. Si vous ne voulez "
+"Choisissez le nombre de genres à utiliser. Par défaut : 5. Si vous ne voulez "
 "qu'un seul genre, réglez-le sur 1."
 
 #: ../../config/options_genres.rst:36
@@ -132,8 +133,8 @@ msgid ""
 "**Comments**: Lines not starting with '-' or '+' are ignored. (e.g.: "
 "``#comment``, ``!comment`` or ``comment``)"
 msgstr ""
-"**Commentaires**: Les lignes ne commençant pas par '-' ou '+' sont ignorées. "
-"(par exemple: ``# commentaire``, ``! comment`` ou ``comment``)"
+"**Commentaires** : Les lignes ne commençant pas par '-' ou '+' sont "
+"ignorées. (par exemple : ``# commentaire``, ``! comment`` ou ``comment``)"
 
 #: ../../config/options_genres.rst:47
 msgid ""
@@ -141,9 +142,9 @@ msgid ""
 "word``).  Include exact word, even if another rule would exclude it, by "
 "prefixing it with '+' (e.g.: ``+word``)."
 msgstr ""
-"**Filtrage strict**: excluez le mot exact en le préfixant avec '-' (par "
-"exemple: ``-word``). Incluez le mot exact, même si une autre règle "
-"l'exclurait, en le préfixant avec '+' (par exemple: ``+mot``)."
+"**Filtrage strict** : excluez le mot exact en le préfixant avec '-' (par "
+"exemple : ``-word``). Incluez le mot exact, même si une autre règle "
+"l'exclurait, en le préfixant avec '+' (par exemple : ``+mot``)."
 
 #: ../../config/options_genres.rst:50
 msgid ""
@@ -152,10 +153,10 @@ msgid ""
 "Exclude all genres starting with 'w' and ending with \"rd\" (e.g.: ``-"
 "w*rd``)."
 msgstr ""
-"**Filtrage des caractères génériques**: exclut tous les genres se terminant "
-"par \"mot\" (par exemple: ``-*mot``). Incluez tous les genres commençant par "
-"\"mot\" (par exemple: ``+mot*``). Excluez tous les genres commençant par 'm' "
-"et se terminant par \"t\" (par exemple: ``-m*t``)."
+"**Filtrage des caractères génériques** : exclut tous les genres se terminant "
+"par \"mot\" (par exemple : ``-*mot``). Incluez tous les genres commençant "
+"par \"mot\" (par exemple : ``+mot*``). Excluez tous les genres commençant "
+"par 'm' et se terminant par \"t\" (par exemple : ``-m*t``)."
 
 #: ../../config/options_genres.rst:53
 msgid ""
@@ -163,9 +164,9 @@ msgid ""
 "starting with 'w' followed by any character, then 'r' followed by at least "
 "one 'd' (e.g.: ``-/^w.rd+/``)."
 msgstr ""
-"**Filtrage des expressions régulières (syntaxe Python \"re\")**: exclut les "
+"**Filtrage des expressions régulières (syntaxe Python \"re\")** : exclut les "
 "genres commençant par 'w' suivi de n'importe quel caractère, puis 'r' suivi "
-"d'au moins un 'd' (par exemple: ``-/^w.rd+/``)."
+"d'au moins un 'd' (par exemple : ``-/^w.rd+/``)."
 
 #: ../../config/options_genres.rst:56
 msgid "**Playground for genres or folksonomy tags filters:**"

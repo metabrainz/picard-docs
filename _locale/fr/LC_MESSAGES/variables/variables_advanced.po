@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021, 2023.
+# Bob Swift <bswift@rsds.ca>, 2021, 2023, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-27 15:01-0700\n"
-"PO-Revision-Date: 2023-10-19 15:21+0000\n"
+"PO-Revision-Date: 2026-03-15 19:11+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/variablesvariables_advanced/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_advanced.rst:33
@@ -115,14 +115,14 @@ msgid "**_release_seriesnumber**"
 msgstr "**_release_seriesnumber**"
 
 #: ../../variables/variables_advanced.rst:64
-#, fuzzy
 msgid ""
 "If the release is part of one of more series, this multi-value variable "
 "contains the positions (numbers) of the release in those series. (*since "
 "Picard 2.9*)"
 msgstr ""
-"Variable à valeurs multiples contenant les numéros de série associés au "
-"groupe de parution. (*depuis Picard 2.9*)"
+"Si la version fait partie d'une ou plusieurs séries, cette variable à "
+"valeurs multiples contient les numéros d'ordre de la version dans ces "
+"séries. (*depuis Picard 2.9*)"
 
 #: ../../variables/variables_advanced.rst:66
 msgid "**_releasegroup_series**"
@@ -166,14 +166,14 @@ msgid "**_releasegroup_seriesnumber**"
 msgstr "**_releasegroup_seriesnumber**"
 
 #: ../../variables/variables_advanced.rst:80
-#, fuzzy
 msgid ""
 "If the release group is part of one of more series, this multi-value "
 "variable contains the positions (numbers) of the release group in those "
 "series. (*since Picard 2.9*)"
 msgstr ""
-"Variable à valeurs multiples contenant les numéros de série associés au "
-"groupe de parution. (*depuis Picard 2.9*)"
+"Si le groupe de publication fait partie d'une ou plusieurs séries, cette "
+"variable à valeurs multiples contient les positions (numéros) du groupe de "
+"publication dans ces séries. (*depuis Picard 2.9*)"
 
 #: ../../variables/variables_advanced.rst:84
 msgid "Track Relationship Variables"
@@ -207,10 +207,10 @@ msgid ""
 "``$if($inmulti(%_performance_attributes%,medley), (Medley),)``). (*since "
 "Picard 1.3*)"
 msgstr ""
-"Liste des attributs de performance de l'œuvre (ex: \"live\", \"cover\", "
+"Liste des attributs de performance de l'œuvre (ex : \"live\", \"cover\", "
 "\"medley\"). Utilisez :ref:`func_inmulti` pour rechercher un type spécifique "
-"(c'est-à-dire: ``$if($inmulti(%_performance_attributes%,medley), "
-"(Medley),)``). (*depuis Picard 1.3*)"
+"(c'est-à-dire : ``$if($inmulti(%_performance_attributes%,medley), (Medley),)"
+"``). (*depuis Picard 1.3*)"
 
 # Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:96

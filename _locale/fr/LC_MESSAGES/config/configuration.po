@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021, 2022, 2024.
+# Bob Swift <bswift@rsds.ca>, 2021, 2022, 2024, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-03 09:41-0700\n"
-"PO-Revision-Date: 2024-02-02 04:28+0000\n"
+"PO-Revision-Date: 2026-03-15 19:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/configconfiguration/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.3.1\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/configuration.rst:4
@@ -26,7 +26,6 @@ msgid "Configuration"
 msgstr "Configuration"
 
 #: ../../config/configuration.rst:6
-#, fuzzy
 msgid ""
 "Once Picard has been installed on your system, the next step is to configure "
 "it to your preferences. The configuration consists of enabling the desired "
@@ -35,7 +34,7 @@ msgid ""
 msgstr ""
 "Une fois Picard installé sur votre système, l'étape suivante consiste à le "
 "configurer selon vos préférences. La configuration consiste à activer les "
-"sections d'écran souhaitées pour l'affichage, à sélectionner les actions "
+"sections d'écran que vous souhaitez afficher, à sélectionner les actions "
 "souhaitées et à définir les différentes options."
 
 #: ../../config/configuration.rst:9
@@ -44,16 +43,15 @@ msgstr ""
 ":index:`Configuration de l'écran <configuration; configuration de l'écran>`"
 
 #: ../../config/configuration.rst:11
-#, fuzzy
 msgid ""
 "The screen setup is found under the :menuselection:`\"View\"` item on the "
 "menu bar. To enable the display of an item, simply check the box for the "
 "screen option.  The items are:"
 msgstr ""
-"La configuration de l'écran se trouve sous "
-"l'élément :menuselection:`\"View\"` de la barre de menu. Pour activer "
-"l'affichage d'un élément, cochez simplement la case de l'option écran. Les "
-"éléments sont :"
+"Les paramètres d'affichage se trouvent sous l'élément :menuselection:`« "
+"Affichage »` de la barre de menus. Pour activer l'affichage d'un élément, il "
+"suffit de cocher la case correspondante. Les éléments disponibles sont les "
+"suivants :"
 
 #: ../../config/configuration.rst:13
 msgid "**File Browser**"
@@ -88,16 +86,15 @@ msgid "**Cover Art**"
 msgstr "**Couverture Art**"
 
 #: ../../config/configuration.rst:21
-#, fuzzy
 msgid ""
 "This displays the cover art for the currently selected item (track or "
 "release) in a window to the right of the tags section of the display. This "
 "allows you to select or replace the cover art saved with the release."
 msgstr ""
-"Cela affiche la pochette de l'élément actuellement sélectionné (piste ou "
-"version) dans une fenêtre à droite de la section des balises de l'affichage. "
-"Cela vous permet de sélectionner ou de remplacer la pochette enregistrée "
-"avec la version."
+"Cela affiche la pochette de l'élément actuellement sélectionné (morceau ou "
+"album) dans une fenêtre située à droite de la section des balises de "
+"l'écran. Cela vous permet de sélectionner ou de remplacer la pochette "
+"enregistrée avec l'album."
 
 #: ../../config/configuration.rst:23
 msgid "**Actions**"
@@ -138,15 +135,14 @@ msgid ":index:`Action Options <configuration; action options>`"
 msgstr ":index:`Options d'action <configuration; options d'action>`"
 
 #: ../../config/configuration.rst:41
-#, fuzzy
 msgid ""
 "The action options are found under the :menuselection:`\"Options\"` item on "
 "the menu bar. There are three available actions that Picard can perform when "
 "saving selected music files:"
 msgstr ""
-"Les options d'action se trouvent sous l'élément :menuselection:`\"Options\"` "
-"de la barre de menu. Il y a trois actions disponibles que Picard peut "
-"effectuer lors de l'enregistrement des fichiers musicaux sélectionnés :"
+"Les options d'action se trouvent sous l'élément :menuselection:`« Options »` "
+"de la barre de menu. Picard propose trois actions possibles lors de "
+"l'enregistrement des fichiers musicaux sélectionnés :"
 
 #: ../../config/configuration.rst:43
 msgid "**Rename Files**"
@@ -216,10 +212,8 @@ msgstr ""
 "pour votre environnement de développement."
 
 #: ../../config/configuration.rst:71
-#, fuzzy
 msgid ":index:`Option Profiles <see: profiles; configuration>`"
-msgstr ""
-":index:`Paramètres des options <see: paramètres des options; configuration>`"
+msgstr ":index:`Profils d'options <voir : profils; configuration>`"
 
 #: ../../config/configuration.rst:73
 msgid ""
@@ -227,6 +221,10 @@ msgid ""
 "explanation can be found in the :doc:`/usage/option_profiles` section, but "
 "they basically function as follows:"
 msgstr ""
+"Les paramètres des options peuvent également être modifiés à l'aide de "
+"profils d'options. Vous trouverez une explication détaillée dans la section "
+":doc:`/usage/option_profiles`, mais leur fonctionnement est globalement le "
+"suivant :"
 
 #: ../../config/configuration.rst:75
 msgid ""
@@ -235,9 +233,13 @@ msgid ""
 "usage scenario. For example, if you want to process your classical music "
 "differently to other music."
 msgstr ""
+"Les profils d'options vous permettent d'enregistrer un ensemble de "
+"paramètres dans un profil, que vous pouvez activer ou désactiver pour "
+"modifier rapidement les réglages en fonction d'un cas d'utilisation "
+"particulier. Par exemple, si vous souhaitez traiter votre musique classique "
+"différemment des autres genres musicaux."
 
 #: ../../config/configuration.rst:77
-#, fuzzy
 msgid ""
 "Options that are controlled by an enabled profile will be shown as "
 "highlighted. Hovering your cursor over the highlighted option will identify "
@@ -245,14 +247,11 @@ msgid ""
 "based on the first enabled profile in the profile stack, which corresponds "
 "to the setting that will be used during processing."
 msgstr ""
-"Les modifications apportées aux paramètres d'options d'un profil, à son "
-"statut d'activation ou à sa position dans la pile de profils seront "
-"reflétées dans les paramètres d'options affichés sur les autres pages. Les "
-"options contrôlées par un profil activé apparaissent en surbrillance. Si "
-"vous passez votre curseur sur l'option en surbrillance, vous saurez quel "
-"profil contrôle actuellement ce paramètre. Les paramètres sont toujours "
-"affichés en fonction du premier profil activé dans la pile de profils, qui "
-"correspond au paramètre qui sera utilisé pendant le traitement."
+"Les options gérées par un profil activé apparaissent en surbrillance. En "
+"passant le curseur sur une option en surbrillance, vous verrez quel profil "
+"contrôle actuellement ce paramètre. Les paramètres s'affichent toujours en "
+"fonction du premier profil activé dans la pile de profils ; c'est ce profil "
+"qui sera utilisé lors du traitement."
 
 #: ../../config/configuration.rst:79
 msgid ""
@@ -260,6 +259,10 @@ msgid ""
 "the profile stack will be reflected in the option settings displayed on the "
 "other configuration pages."
 msgstr ""
+"Les modifications apportées aux paramètres d'options d'un profil, à son "
+"statut d'activation ou à sa position dans la pile de profils seront "
+"répercutées dans les paramètres d'options affichés sur les autres pages de "
+"configuration."
 
 #: ../../config/configuration.rst:103
 msgid ""
