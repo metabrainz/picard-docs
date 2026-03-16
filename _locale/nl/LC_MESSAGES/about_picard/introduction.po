@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25 11:48-0600\n"
-"PO-Revision-Date: 2024-01-01 05:17+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2023-05-22 10:19-0600\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/about_picardintroduction/nl/>\n"
 "Language: nl\n"
@@ -18,12 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.3\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../about_picard/introduction.rst:4
 msgid "Introduction"
-msgstr ""
+msgstr "Inleiding"
 
 #: ../../about_picard/introduction.rst:6
 msgid ""
@@ -31,6 +32,10 @@ msgid ""
 "don't know what this means, here is a quick explanation which can be skipped "
 "by those people who already know."
 msgstr ""
+"MusicBrainz Picard is een tagger voor je muziekbestanden die voor meerdere "
+"platformen beschikbaar is. Als je niet weet wat dat betekent, dan kan je "
+"hier een korte uitleg lezen. Als je dat wel weet, kan je deze paragraaf "
+"gewoon overslaan."
 
 #: ../../about_picard/introduction.rst:8
 msgid ""
@@ -42,6 +47,13 @@ msgid ""
 "metadata, however there are literally hundreds of tags that can be applied "
 "to your music if you are interested."
 msgstr ""
+"Je muziekbestanden bevatten meer dan alleen muziek. Ze bevatten ook ‘metadata"
+"’, die bestaan uit ‘tags’. Elke tag heeft een naam en bijbehorende "
+"informatie, zoals de titel van de uitgave of het nummer, de naam van de "
+"artiest, de platenmaatschappij of het jaar waarin de muziek is uitgebracht. "
+"Tenzij je muziek met een heel simpel programma ript, bevatten je "
+"muziekbestanden al wat metadata. Er zijn echter honderden tags die je aan je "
+"muziek kan toevoegen als je dat interessant vindt."
 
 #: ../../about_picard/introduction.rst:10
 msgid ""
@@ -53,12 +65,21 @@ msgid ""
 "use the data to tag the music files. And **that** is what MusicBrainz Picard "
 "does."
 msgstr ""
+"Je zou dat natuurlijk zelf voor elke uitgave en elk nummer uit kunnen zoeken "
+"en deze informatie handmatig kunnen invoeren in software die tags naar "
+"bestanden schrijft. Maar het is tegenwoordig natuurlijk makkelijker als één "
+"iemand dit voor elke uitgave en elk nummer uitzoekt en de informatie naar "
+"een gedeelde databank uploadt, waarna iedereen de informatie kan gebruiken "
+"om de eigen muziekbestanden van tags te voorzien (taggen). Dat is precies "
+"waar MusicBrainz Picard voor is bedoeld."
 
 #: ../../about_picard/introduction.rst:12
 msgid ""
 "**MusicBrainz** is the database, and **Picard** is the tool that tags the "
 "music files."
 msgstr ""
+"**MusicBrainz** is de databank, en **Picard** is het programma dat je "
+"muziekbestanden tagt."
 
 #: ../../about_picard/introduction.rst:14
 msgid ""
@@ -69,6 +90,13 @@ msgid ""
 "scripts, plugins and tutorials are provided when available rather than "
 "trying to reproduce the information in this document."
 msgstr ""
+"In deze handleiding vind je uitgebreide informatie over het gebruik van "
+"`MusicBrainz Picard <https://picard.musicbrainz.org/>`_. De handleiding is "
+"in verschillende indelingen beschikbaar, waaronder een pdf-versie die je kan "
+"printen. In de pdf-handleiding worden links naar aanvullende informatie, "
+"zoals scripts, plug-ins en beknopte handleidingen, gegeven als die "
+"beschikbaar zijn in plaats van dat alle informatie in dit document te vinden "
+"is."
 
 #: ../../about_picard/introduction.rst:20
 msgid ""
@@ -92,16 +120,32 @@ msgid ""
 "provides a plethora of customizations to tweak music collections to your "
 "needs.\"*"
 msgstr ""
+"Om Picard goed te kunnen gebruiken, is het niet alleen belangrijk dat je "
+"weet wat Picard kan, maar ook dat je weet wat Picard niet kan. Picard is "
+"vooral bedoeld voor het taggen en organiseren van albums, en heeft daar wat "
+"hulp van de gebruiker bij nodig. Nadat je muziek een keer met Picard is "
+"getagd, kan Picard vrij makkelijk zorgen dat die informatie actueel blijft "
+"wanneer de redacteuren van MusicBrainz de kwaliteit van de informatie in de "
+"databank verbeteren. Picard is echter niet bedoeld om automatisch een "
+"verzameling van duizenden willekeurige muziekbestanden te organiseren, en "
+"als je juist daarnaar op zoek bent, kom je waarschijnlijk voor "
+"teleurstellingen te staan. Om de website van Picard te citeren: *“Picard is "
+"niet gemaakt om de tags van enorme hoeveelheden afzonderlijke nummers bij te "
+"werken. We geloven dat kwaliteit boven kwantiteit gaat, en Picard biedt een "
+"breed scala aan aanpassingsmogelijkheden om je muziekverzameling aan je "
+"voorkeuren aan te passen.”*"
 
 #: ../../about_picard/introduction.rst:25
 msgid "Picard Can..."
-msgstr ""
+msgstr "Picard kan:"
 
 #: ../../about_picard/introduction.rst:27
 msgid ""
 "...add metadata tags to your music files, based on information available "
 "from the `MusicBrainz website <https://musicbrainz.org/>`_."
 msgstr ""
+"Op basis van informatie op de `website van MusicBrainz <https://"
+"musicbrainz.org/>`_ metadata aan je bestanden toevoegen."
 
 #: ../../about_picard/introduction.rst:29
 msgid ""
@@ -109,50 +153,63 @@ msgid ""
 "information, including artist and song name, disc id (for CDs), and a "
 "track's AcoustID fingerprint."
 msgstr ""
+"Deze metadata opzoeken, zowel handmatig als automatisch, op basis van "
+"bestaande informatie, waaronder de naam van de artiest, titel van het "
+"nummer, disc-ID (voor cd’s) of de AcoustID-vingerafdrukken."
 
 #: ../../about_picard/introduction.rst:31
 msgid "...retrieve and embed coverart images from a variety of sources."
 msgstr ""
+"Hoesafbeeldingen uit verschillende bronnen ophalen en in muziekbestanden "
+"insluiten."
 
 #: ../../about_picard/introduction.rst:33
 msgid ""
 "...rename and place the music files in directories based on naming template "
 "instructions provided in a naming script."
 msgstr ""
+"Op basis van instructies in scripts muziekbestanden hernoemen en naar andere "
+"mappen verplaatsen."
 
 #: ../../about_picard/introduction.rst:35
 msgid ""
 "...calculate and submit a disc id to the MusicBrainz database, attaching it "
 "to a specified release."
 msgstr ""
+"Disc-ID’s van cd’s berekenen en aan specifieke uitgaven in de databank van "
+"MusicBrainz toevoegen."
 
 #: ../../about_picard/introduction.rst:37
 msgid ""
 "...calculate and submit a music file's AcoustID fingerprint to the `AcoustID "
 "database <https://acoustid.org/>`_."
 msgstr ""
+"De AcoustID-vingerafdruk van muziekbestanden berekenen en aan de `AcoustID-"
+"databank <https://acoustid.org/>`_ toevoegen."
 
 #: ../../about_picard/introduction.rst:41
 msgid "Picard Cannot..."
-msgstr ""
+msgstr "Picard kan niet:"
 
 #: ../../about_picard/introduction.rst:43
 msgid ""
 "...automatically identify and remove all duplicate music files in your "
 "collection."
 msgstr ""
+"Automatisch dubbele muziekbestanden in je verzameling ontdekken en "
+"verwijderen."
 
 #: ../../about_picard/introduction.rst:45
 msgid "...provide metadata not already existing in the MusicBrainz database."
-msgstr ""
+msgstr "Metadata aanleveren die niet in de databank van MusicBrainz staat."
 
 #: ../../about_picard/introduction.rst:49
 msgid ":index:`Limitations <limitations>`"
-msgstr ""
+msgstr ":index:`Beperkingen <beperkingen>`"
 
 #: ../../about_picard/introduction.rst:51
 msgid "**File Formats**"
-msgstr ""
+msgstr "**Bestandsindelingen**"
 
 #: ../../about_picard/introduction.rst:53
 msgid ""
@@ -162,6 +219,11 @@ msgid ""
 "not supported by all playback software. In addition, Picard does not support "
 "writing custom tags for all formats."
 msgstr ""
+"Picard ondersteunt de meeste bestandsindelingen, behalve Matroska (.mka). Je "
+"kan de akoestische vingerafdrukken van WAVE-bestanden van Microsoft (.wav) "
+"berekenen, en je kan die bestanden met ID3v2-tags taggen, maar niet alle "
+"muziekspelers kunnen dat lezen. Bovendien ondersteunt Picard niet voor alle "
+"indelingen het schrijven van zelf-gedefinieerde tags."
 
 #: ../../about_picard/introduction.rst:55
 msgid ""
@@ -172,7 +234,7 @@ msgstr ""
 
 #: ../../about_picard/introduction.rst:57
 msgid "**Request Rate Limiting**"
-msgstr ""
+msgstr "**Verzoekenlimiet**"
 
 #: ../../about_picard/introduction.rst:59
 msgid ""
@@ -181,10 +243,14 @@ msgid ""
 "noticeable when trying to process a large list of files, and is exacerbated "
 "by extensions that perform additional information requests from the database."
 msgstr ""
+"Voor het ophalen van metadata via de API van MusicBrainz geldt een limiet "
+"van **één verzoek per seconde** :index:`rate limiting`. Dat kan je goed "
+"merken als je een grote hoeveelheid bestanden verwerkt, en sommige extensies "
+"kunnen dit verergeren als ze ook informatie opvragen."
 
 #: ../../about_picard/introduction.rst:61
 msgid "**Network File Processing**"
-msgstr ""
+msgstr "**Bestanden in een netwerk verwerken**"
 
 #: ../../about_picard/introduction.rst:63
 msgid ""
@@ -195,3 +261,8 @@ msgid ""
 "all files on a local drive and then move them to the desired remote "
 "directory once processing is complete."
 msgstr ""
+"Om tags toe te voegen of bij te werken, moet Picard soms het hele "
+"muziekbestand herschrijven. Dat kan een paar seconden duren. Als het bestand "
+"via een netwerk wordt benaderd (bijvoorbeeld als het op een NAS staat), "
+"duurt het nog langer. We raden aan om alle bestanden op een lokaal station "
+"te verwerken en ze daarna pas naar een externe map te verplaatsen."

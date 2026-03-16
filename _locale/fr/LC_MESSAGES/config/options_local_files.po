@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25 11:48-0600\n"
-"PO-Revision-Date: 2020-11-19 16:08-0700\n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: 2026-03-15 19:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_local_files/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.2\n"
 
 #: ../../config/options_local_files.rst:6
 msgid ":index:`Local Files <configuration; local files>`"
@@ -54,8 +55,8 @@ msgid ""
 "folder|albumart)``. Items listed in this group will not get captured and the "
 "default (Front) type will apply."
 msgstr ""
-"La première partie de l'expression régulière est un groupe sans capture: "
-"``(?:cover|folder|albumart)``. Les éléments répertoriés dans ce groupe ne "
+"La première partie de l'expression régulière est un groupe sans capture : ``"
+"(?:cover|folder|albumart)``. Les éléments répertoriés dans ce groupe ne "
 "seront pas capturés et le type par défaut (Front) s'appliquera."
 
 #: ../../config/options_local_files.rst:17
@@ -64,7 +65,7 @@ msgid ""
 "real capture, so if the file names match any of the cover art types, they "
 "will be tagged as such."
 msgstr ""
-"La deuxième partie de l'expression régulière est un groupe: ``(.*)``. C'est "
+"La deuxième partie de l'expression régulière est un groupe : ``(.*)``. C'est "
 "la vraie capture, donc si les noms de fichiers correspondent à l'un des "
 "types de pochettes, ils seront étiquetés comme tels."
 
@@ -77,6 +78,3 @@ msgstr ""
 "Une erreur courante consiste à ajouter tous les types dans le premier groupe "
 "(sans capture). Cela signifie que tous les noms de fichiers normaux seraient "
 "jetés dans le type Front et provoqueraient des résultats inattendus."
-
-#~ msgid "Local Files"
-#~ msgstr "Fichiers locaux"

@@ -3,29 +3,32 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-14 11:00-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-09-29 14:34-0600\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_general/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_general.rst:4
 msgid ":index:`General Options <configuration; general options>`"
-msgstr ""
+msgstr ":index:`Algemene opties <configuratie; algemene opties>`"
 
 #: ../../config/options_general.rst:9
 msgid "**Server address**"
-msgstr ""
+msgstr "**Serveradres**"
 
 #: ../../config/options_general.rst:11
 msgid ""
@@ -33,6 +36,9 @@ msgid ""
 "details of your music. Default value: musicbrainz.org (for the main "
 "MusicBrainz server)."
 msgstr ""
+"De domeinnaam van de MusicBrainz-server die Picard gebruikt om informatie "
+"over muziek op te zoeken. De standaardwaarde is musicbrainz.org (de "
+"hoofdserver van MusicBrainz)."
 
 #: ../../config/options_general.rst:13
 msgid ""
@@ -42,20 +48,27 @@ msgid ""
 "name is entered, a warning will be displayed and you will be asked to "
 "confirm that you want to submit all data to this alternate server."
 msgstr ""
+"Naast de standaard MusicBrainz-servers in de vervolgkeuzelijst kan je zelf "
+"een alternatief adres opgeven, zoals ‘localhost’ als je lokaal een kopie van "
+"de server draait. Als je een alternatieve servernaam opgeeft, wordt er een "
+"waarschuwing weergegeven en moet je bevestigen of je alle informatie op deze "
+"alternatieve server wil indienen."
 
 #: ../../config/options_general.rst:18
 msgid "**Port**"
-msgstr ""
+msgstr "**Poort**"
 
 #: ../../config/options_general.rst:20
 msgid ""
 "The port number for the server. Default value: 443 (for the main MusicBrainz "
 "server)."
 msgstr ""
+"Het poortnummer van de server. Standaardwaarde: 433 (voor de hoofdserver van "
+"MusicBrainz)."
 
 #: ../../config/options_general.rst:22
 msgid "**Username**"
-msgstr ""
+msgstr "**Gebruikersnaam**"
 
 #: ../../config/options_general.rst:24
 msgid ""
@@ -63,18 +76,21 @@ msgid ""
 "retrieve and save items to your collections, and retrieve personal "
 "folksonomy tags."
 msgstr ""
+"Je gebruikersnaam op de MusicBrainz-website. Je gebruikt dit om akoestische "
+"vingerafdrukken te versturen, objecten in je collecties op te halen en op te "
+"slaan, en om je eigen folksonomietags op te halen."
 
 #: ../../config/options_general.rst:26
 msgid "**Password**"
-msgstr ""
+msgstr "**Wachtwoord**"
 
 #: ../../config/options_general.rst:28
 msgid "Your MusicBrainz website password."
-msgstr ""
+msgstr "Je wachtwoord voor de MusicBrainz-website."
 
 #: ../../config/options_general.rst:30
 msgid "**Automatically scan all new files**"
-msgstr ""
+msgstr "**Alle nieuwe bestanden automatisch analyseren**"
 
 #: ../../config/options_general.rst:32
 msgid ""
@@ -89,7 +105,7 @@ msgstr ""
 
 #: ../../config/options_general.rst:34
 msgid "**Automatically cluster all new files**"
-msgstr ""
+msgstr "**Alle nieuwe bestanden automatisch clusteren**"
 
 #: ../../config/options_general.rst:36
 msgid ""
@@ -105,10 +121,12 @@ msgid ""
 "You can either enable \"Automatically scan all new files\" or "
 "\"Automatically cluster all new files\", but not both."
 msgstr ""
+"Je kan óf ‘Alle nieuwe bestanden automatisch analyseren’ óf ‘Alle nieuwe "
+"bestanden automatisch clusteren’ inschakelen, maar niet allebei tegelijk."
 
 #: ../../config/options_general.rst:42
 msgid "**Ignore MBIDs when loading new files**"
-msgstr ""
+msgstr "**MBID’s bij het laden van nieuwe bestanden negeren**"
 
 #: ../../config/options_general.rst:44
 msgid ""
@@ -118,10 +136,15 @@ msgid ""
 "this option disabled is useful when re-processing files that have been "
 "previously tagged with incorrect information."
 msgstr ""
+"Als je dit inschakelt, gebruikt Picard de MBID’s (MusicBrainz-ID’s) in de "
+"tags van de bestanden niet om de bijbehorende uitgave uit MusicBrainz te "
+"laden en de bestanden aan nummers te koppelen. Als je bestanden die eerder "
+"met verkeerde informatie zijn getagt opnieuw wil verwerken, kan je deze "
+"optie het beste uitschakelen."
 
 #: ../../config/options_general.rst:46
 msgid "**Check for plugin updates during start-up**"
-msgstr ""
+msgstr "**Zoek tijdens het opstarten naar nieuwe plug-inversies**"
 
 #: ../../config/options_general.rst:48
 msgid ""
@@ -130,10 +153,14 @@ msgid ""
 "startup. If this is enabled and an update to an installed plugin is "
 "available, a popup message will be displayed."
 msgstr ""
+"Deze optie regelt of Picard tijdens het opstarten automatisch zoekt naar "
+":index:`updates voor je plug-ins <pair: configuratie; plug-inupdates zoeken>"
+"`. Als dit is ingeschakeld en er een update voor een geïnstalleerde plug-in "
+"wordt gevonden, wordt er een melding weergegeven."
 
 #: ../../config/options_general.rst:50
 msgid "**Check for program updates during start-up**"
-msgstr ""
+msgstr "**Zoek tijdens het opstarten naar nieuwe programmaversies**"
 
 #: ../../config/options_general.rst:52
 msgid ""
@@ -142,10 +169,14 @@ msgid ""
 "during startup. In any case, you can have Picard check for program updates "
 "at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
+"Deze optie regelt of Picard tijdens het opstarten automatisch zoekt naar "
+":index:`updates voor Picard <pair: configuratie; programma-updates zoeken>`. "
+"Of de optie nu wel of niet is ingeschakeld, je kan altijd naar nieuwe Picard-"
+"versies zoeken via :menuselection:`‘Hulp --> Zoek naar nieuwe versies’`."
 
 #: ../../config/options_general.rst:54
 msgid "**Days between checks**"
-msgstr ""
+msgstr "**Aantal dagen tussen controles**"
 
 #: ../../config/options_general.rst:56
 msgid ""
@@ -154,34 +185,42 @@ msgid ""
 "to check daily, 7 for weekly checks, and so on. Note that this only applies "
 "if the \"Check for program updates during start-up\" option is enabled."
 msgstr ""
+"Met deze optie kan je instellen hoe vaak er automatisch naar updates wordt "
+"gezocht. Stel dit in op 1 als je wil dat er dagelijks wordt gezocht, 7 voor "
+"wekelijks enz. Let op: dit is alleen van toepassing als de optie ‘Zoek "
+"tijdens het opstarten naar nieuwe programmaversies’ is ingeschakeld."
 
 #: ../../config/options_general.rst:58
 msgid "**Updates to check**"
-msgstr ""
+msgstr "**Zoek naar de volgende versies**"
 
 #: ../../config/options_general.rst:60
 msgid ""
 "This option allows you to select which levels of program update to check. "
 "Your options are:"
 msgstr ""
+"Met deze optie kan je instellen naar welk soort versie moet worden gezocht. "
+"De opties zijn:"
 
 #: ../../config/options_general.rst:62
 msgid "Stable releases only"
-msgstr ""
+msgstr "alleen stabiele versies"
 
 #: ../../config/options_general.rst:63
 msgid "Stable and Beta releases"
-msgstr ""
+msgstr "stabiele en bètaversies"
 
 #: ../../config/options_general.rst:64
 msgid "Stable, Beta and Dev releases"
-msgstr ""
+msgstr "stabiele, bèta- en ontwikkelversies"
 
 #: ../../config/options_general.rst:66
 msgid ""
 "For example, if you subscribe to \"Stable releases only\" you will not be "
 "notified if a new Beta or Dev release is issued."
 msgstr ""
+"Als je bijvoorbeeld ‘alleen stabiele versies’ selecteert, krijg je geen "
+"melding als er een nieuwe bèta- of ontwikkelversie is."
 
 #: ../../config/options_general.rst:70
 msgid ""
@@ -190,3 +229,7 @@ msgid ""
 "distributed as a package. In that case, the user should check with the "
 "maintainer of the package to determine when an update is available."
 msgstr ""
+"Als Picard als pakket wordt verspreid, zijn de opties voor het zoeken naar "
+"nieuwe versies en :menuselection:`‘Hulp --> Zoek naar nieuwe versies’` "
+"mogelijk niet beschikbaar. In dat geval moet je contact met de beheerder van "
+"het pakket opnemen om erachter te komen of er een nieuwe versie is."

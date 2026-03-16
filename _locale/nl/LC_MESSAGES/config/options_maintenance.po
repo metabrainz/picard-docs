@@ -3,29 +3,32 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25 11:48-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_maintenance/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_maintenance.rst:4
 msgid ":index:`Maintenance <configuration; maintenance>`"
-msgstr ""
+msgstr ":index:`Onderhoud <configuratie; onderhoud>`"
 
 #: ../../config/options_maintenance.rst:9
 msgid "**Configuration File**"
-msgstr ""
+msgstr "**Configuratiebestand**"
 
 #: ../../config/options_maintenance.rst:11
 msgid ""
@@ -33,6 +36,9 @@ msgid ""
 "used by Picard. This file contains all of your settings and preferences, and "
 "the format of the file is consistent across operating systems."
 msgstr ""
+"Dit is de locatie van het configuratiebestand dat nu door Picard wordt "
+"gebruikt. Het bestand bevat al je instellingen en voorkeuren en is op elk "
+"besturingssysteem hetzelfde."
 
 #: ../../config/options_maintenance.rst:13
 msgid ""
@@ -43,6 +49,12 @@ msgid ""
 "configuration changes. It also allows you to have different configurations "
 "available without using profiles."
 msgstr ""
+"Met de knop :guilabel:`Back-up opslaan` kan je een back-up van het huidige "
+"configuratiebestand opslaan. Zo kan je de instellingen makkelijk naar een "
+"andere computer verplaatsen of een momentopname opslaan voor het geval dat "
+"het bestand beschadigd raakt of je configuratiewijzigingen ongedaan wil "
+"maken. Je kan zo ook meerdere configuraties tegelijk behouden zonder de "
+"profielenfunctie te gebruiken."
 
 #: ../../config/options_maintenance.rst:15
 msgid ""
@@ -52,10 +64,14 @@ msgid ""
 "Prior to loading the file, Picard will automatically save a backup copy of "
 "the current file."
 msgstr ""
+"Met de knop :guilabel:`Back-up laden` kan je het huidige configuratiebestand "
+"vervangen door een eerder gemaakte back-up. Als je een back-up laadt, worden "
+"alle huidige instellingen overschreven. Voordat het bestand wordt geladen, "
+"maakt Picard automatisch een back-up van het huidige bestand."
 
 #: ../../config/options_maintenance.rst:18
 msgid "**Configuration File Cleanup**"
-msgstr ""
+msgstr "**Configuratiebestanden opschonen**"
 
 #: ../../config/options_maintenance.rst:20
 msgid ""
@@ -63,6 +79,9 @@ msgid ""
 "become bloated with orphaned settings. This section allows you to remove "
 "unused option settings from the configuration file."
 msgstr ""
+"Als je veel plug-ins en dergelijke uitprobeert, kan het configuratiebestand "
+"vol komen te staan met verweesde instellingen. Met dit gedeelte kan je "
+"ongebruikte instellingen uit het configuratiebestand verwijderen."
 
 #: ../../config/options_maintenance.rst:22
 msgid ""
@@ -71,6 +90,10 @@ msgid ""
 "contain any unused option settings, then the list will be empty and the "
 "removal checkbox will be disabled."
 msgstr ""
+"Instellingen in het configuratiebestand die niet op een optiepagina staan, "
+"worden weergegeven. Als je configuratiebestand geen ongebruikte instellingen "
+"bevat, is de lijst leeg en is het selectievakje voor verwijderen "
+"uitgeschakeld."
 
 #: ../../config/options_maintenance.rst:24
 msgid ""
@@ -79,6 +102,10 @@ msgid ""
 "by checking the box next to the setting. When you choose :guilabel:`Make It "
 "So!` to save your option settings, the selected items will be removed."
 msgstr ""
+"Om een of meer instellingen te verwijderen, vink je eerst ‘Geselecteerde "
+"opties verwijderen’ aan. Vervolgens kan je het selectievakje naast een "
+"instelling aanvinken om de instelling te verwijderen. Als je op de knop "
+":guilabel:`Oké` klikt, worden de geselecteerde instellingen verwijderd."
 
 #: ../../config/options_maintenance.rst:28
 msgid ""
@@ -87,3 +114,8 @@ msgid ""
 "when the plugin is reinstalled. Options belonging to plugins that are "
 "installed but currently disabled will not be listed for possible removal."
 msgstr ""
+"Ongebruikte instellingen kunnen afkomstig zijn van verwijderde plug-ins, dus "
+"pas op dat je geen instellingen verwijdert die je later weer wil gebruiken "
+"als je de plug-ins opnieuw installeert. Opties van plug-ins die nu zijn "
+"geïnstalleerd maar ook zijn uitgeschakeld, worden niet weergegeven om "
+"mogelijk te verwijderen."

@@ -1,43 +1,48 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.13.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 09:45-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2026-02-03 13:35-0700\n"
+"PO-Revision-Date: 2026-03-15 19:11+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/faqfaq_font_size/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../faq/faq_font_size.rst:4
 msgid ":index:`How do I change the fonts size or font? <change font size>`"
 msgstr ""
+":index:`Comment modifier la taille ou le type de police ? <modifier la "
+"taille de la police>`"
 
 #: ../../faq/faq_font_size.rst:7
 msgid "General"
-msgstr ""
+msgstr "Généralités"
 
 #: ../../faq/faq_font_size.rst:9
 msgid ""
 "Picard is a Qt application, so whatever works for other Qt application will "
 "work for Picard."
 msgstr ""
+"Picard est une application Qt ; par conséquent, tout ce qui fonctionne pour "
+"les autres applications Qt fonctionnera également pour Picard."
 
 #: ../../faq/faq_font_size.rst:12
 msgid "Linux specific"
-msgstr ""
+msgstr "Spécifique à Linux"
 
 #: ../../faq/faq_font_size.rst:15
 msgid "Two ways to change the size/scaling are:"
-msgstr ""
+msgstr "Voici deux façons de modifier la taille ou le redimensionnement :"
 
 #: ../../faq/faq_font_size.rst:17
 msgid "**Desktop Settings**"
@@ -49,6 +54,11 @@ msgid ""
 "the desktop environment, e.g. on GNOME the scaling set when configuring the "
 "screens. This usually works, and should be the first approach to take."
 msgstr ""
+"La méthode par défaut pour modifier le facteur d'échelle consiste "
+"généralement à utiliser les paramètres de l'environnement de bureau ; par "
+"exemple, sous GNOME, il s'agit du facteur d'échelle défini lors de la "
+"configuration des écrans. Cela fonctionne généralement bien et devrait être "
+"la première solution à envisager."
 
 #: ../../faq/faq_font_size.rst:21
 msgid "**Environment Settings**"
@@ -62,6 +72,12 @@ msgid ""
 "in your shell, or set the variable in your shell to affect all Qt "
 "applications."
 msgstr ""
+"La définition de la variable d'environnement ``QT_SCALE_FACTOR`` permet de "
+"redimensionner les polices dans les applications Qt. Cela peut s'avérer "
+"utile sur les écrans 4K. Depuis un terminal, vous pouvez alors exécuter "
+"``QT_SCALE_FACTOR=2.0 picard`` pour lancer Picard, créer un alias dans votre "
+"shell ou définir la variable dans votre shell pour que le changement "
+"s'applique à toutes les applications Qt."
 
 #: ../../faq/faq_font_size.rst:25
 msgid ""

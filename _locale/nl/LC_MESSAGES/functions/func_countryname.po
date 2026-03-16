@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025.
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2025-12-02 11:12+0000\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
 "Last-Translator: mfmeulenbelt "
 "<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Dutch <https://translations.metabrainz.org/projects/"
-"picard-docs/functionsfunc_countryname/nl/>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/functionsfunc_countryname/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../functions/func_countryname.rst:6
 msgid "$countryname"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../functions/func_countryname.rst:8
 msgid "Usage: **$countryname(country_code\\[,translate])**"
-msgstr ""
+msgstr "Gebruik: **$countryname(landcode\\[,vertalen])**"
 
 #: ../../functions/func_countryname.rst:9
 msgid "Category: text"
@@ -33,7 +33,7 @@ msgstr "Categorie: tekst"
 
 #: ../../functions/func_countryname.rst:10
 msgid "Implemented: Picard 2.7"
-msgstr ""
+msgstr "Geïmplementeerd: Picard 2.7"
 
 #: ../../functions/func_countryname.rst:12
 msgid "**Description:**"
@@ -46,13 +46,19 @@ msgid ""
 "is not blank, the output will be translated into the current locale "
 "language, otherwise it will be in English."
 msgstr ""
+"Retourneert de naam van het land dat bij de opgegeven landcode hoort. Als de "
+"landcode ongeldig is, wordt er een lege tekenreeks geretourneerd. Als "
+"``vertalen`` niet leeg is, wordt de uitvoer vertaald naar de huidige lokale "
+"taal. Als ``vertalen`` leeg is, wordt de Engelse naam geretourneerd."
 
 #: ../../functions/func_countryname.rst:17
 msgid "**Examples:**"
-msgstr ""
+msgstr "**Voorbeelden:**"
 
 #: ../../functions/func_countryname.rst:19
 msgid ""
 "Assuming that the user's locale has been set to Russian, the following "
 "statements will return the values indicated:"
 msgstr ""
+"Als de lokale taal van de gebruiker is ingesteld op Russisch, retourneren de "
+"volgende instructies de aangegeven waarden:"

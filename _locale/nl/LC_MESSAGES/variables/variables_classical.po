@@ -1,30 +1,35 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/variablesvariables_classical/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../variables/variables_classical.rst:6
 msgid ":index:`Classical Music Tags <tags; classical>`"
-msgstr ""
+msgstr ":index:`Tags voor klassieke muziek <tags; klassiek>`"
 
 #: ../../variables/variables_classical.rst:8
 msgid ""
 "With the help of plugins like \"Classical Extras\" or \"Work & Movement\" "
 "you can make use of the following tags for tagging your classical music."
 msgstr ""
+"Met plug-ins zoals ‘Classical Extras’ en ‘Work & Movement’ kun je de "
+"volgende tags gebruiken om je klassieke muziek te taggen."
 
 #: ../../variables/variables_classical.rst:10
 msgid "**movement**"
@@ -32,7 +37,7 @@ msgstr ""
 
 #: ../../variables/variables_classical.rst:12
 msgid "Name of the movement (e.g.: \"Andante con moto\")."
-msgstr ""
+msgstr "De naam van een deel (bijv. ‘Andante con moto’)."
 
 #: ../../variables/variables_classical.rst:14
 msgid "**movementnumber**"
@@ -43,6 +48,8 @@ msgid ""
 "Movement number in Arabic numerals (e.g.: \"2\"). Players explicitly "
 "supporting this tag will often display it in Roman numerals (e.g.: \"II\")."
 msgstr ""
+"Het nummer van het deel (bijv. ‘2’). Spelers die deze tag expliciet "
+"ondersteunen, geven het nummer vaak in Romeinse cijfers weer (bijv. ‘II’)."
 
 #: ../../variables/variables_classical.rst:18
 msgid "**movementtotal**"
@@ -50,7 +57,7 @@ msgstr ""
 
 #: ../../variables/variables_classical.rst:20
 msgid "Total number of movements in the work (e.g.: \"4\")."
-msgstr ""
+msgstr "Het totaal aantal delen van de compositie (bijv. ‘4’)."
 
 #: ../../variables/variables_classical.rst:22
 msgid "**showmovement**"
@@ -64,6 +71,12 @@ msgid ""
 "displayed as \"Symphony no. 5 in C minor, op. 67: II. Andante con moto\" "
 "regardless of the value of the title tag."
 msgstr ""
+"Compositie en deel tonen: als deze tag is ingesteld op ‘1’, geven spelers "
+"die deze tag ondersteunen, zoals iTunes en MusicBee, in plaats van de "
+"nummertitel de naam van de compositie, het nummer van het deel en de naam "
+"van het deel weer. Het nummer wordt dan bijvoorbeeld weergegeven als ‘"
+"Symfonie nr. 5 in C kleine terts, op. 67: II. Andante con moto’, ongeacht de "
+"waarde van de tag titel."
 
 #: ../../variables/variables_classical.rst:26
 msgid "**work**"
@@ -73,6 +86,8 @@ msgstr ""
 msgid ""
 "Work Name of the overall work (e.g.: \"Symphony no. 5 in C minor, op. 67\")."
 msgstr ""
+"De naam van de overkoepelende compositie (bijv. ‘Symfonie nr. 5 in C kleine "
+"terts, op. 67’)."
 
 #: ../../variables/variables_classical.rst:32
 msgid ""
@@ -80,3 +95,6 @@ msgid ""
 "\"Save iTunes compatible grouping and work\" option in order for the work to "
 "be displayed correctly."
 msgstr ""
+"Als je mp3-bestanden met iTunes gebruikt, moet je de optie ‘iTunes-"
+"groeperingen en -composities opslaan’ instellen om te zorgen dat de "
+"compositie goed wordt weergegeven."

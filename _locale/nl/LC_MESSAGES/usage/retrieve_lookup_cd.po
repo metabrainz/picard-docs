@@ -3,31 +3,36 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-14 11:00-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usageretrieve_lookup_cd/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/retrieve_lookup_cd.rst:6
 msgid "Lookup CD or Ripper Log"
-msgstr ""
+msgstr "Cd opzoeken of ripperlogboek gebruiken"
 
 #: ../../usage/retrieve_lookup_cd.rst:8
 msgid ""
 "The steps to follow to :index:`lookup a CD <lookup; cd, lookup; ripper log>` "
 "are:"
 msgstr ""
+"Om een cd op te zoeken :index:`cd opzoeken <opzoeken; cd, opzoeken; "
+"ripperlogboek>`:"
 
 #: ../../usage/retrieve_lookup_cd.rst:10
 msgid ""
@@ -40,6 +45,15 @@ msgid ""
 "file to process. Either method will query the MusicBrainz database and "
 "display a list of matching releases."
 msgstr ""
+"Zorg je dat de cd in je cd-speler zit en selecteer je :menuselection:`‘"
+"Hulpmiddelen --> Cd opzoeken … --> (te gebruiken station)’`. De TOC van de "
+"cd wordt berekend en naar MusicBrainz verstuurd. Je kunt ook een "
+":ref:`logboek van een ondersteunde ripper <faq_supported_rippers>` "
+"gebruiken om de cd op te zoeken met de opdracht :menuselection:`‘"
+"Hulpmiddelen --> Cd opzoeken … --> Met logboekbestand van cd-ripper’`. Dan "
+"verschijnt er een verkennervenster waarmee je het logboekbestand kan "
+"selecteren. Met beide methoden wordt de MusicBrainz-databank bevraagd, "
+"waarna er een lijst met passende uitgaven wordt weergegeven."
 
 #: ../../usage/retrieve_lookup_cd.rst:17
 msgid ""
@@ -47,12 +61,16 @@ msgid ""
 "into Picard` button. This will load the information for the release into "
 "Picard."
 msgstr ""
+"Selecteer de juiste uitgave in de lijst en klik op de knop :guilabel:`In "
+"Picard laden`. De informatie over de uitgave wordt dan in Picard geladen."
 
 #: ../../usage/retrieve_lookup_cd.rst:19
 msgid ""
 "A music symbol in front of a track number in the right-hand pane indicates "
 "that there has been no file assigned to the track."
 msgstr ""
+"Een muzieknoot voor een nummer in het rechter deelvenster geeft aan dat er "
+"nog geen bestand aan het nummer is gekoppeld."
 
 #: ../../usage/retrieve_lookup_cd.rst:26
 msgid ""
@@ -62,12 +80,20 @@ msgid ""
 "list of the releases that match your search criterion and have the same "
 "number of tracks as your CD TOC."
 msgstr ""
+"Als er geen bestanden zijn gekoppeld of als de koppelingen niet kloppen, kan "
+"je de juiste uitgave vinden met de optie :guilabel:`Disc-ID indienen`. Vul "
+"de titel of artiest van de uitgave in om te zoeken. Je krijgt een lijst te "
+"zien met uitgaven die passen bij je zoekcriteria en die even veel nummers "
+"hebben als de TOC van je cd."
 
 #: ../../usage/retrieve_lookup_cd.rst:36
 msgid ""
 "Use the green arrow |lookup_tagger| to load the information for a release "
 "into Picard. In addition, you can select the release and attach the CD TOC."
 msgstr ""
+"Gebruik de groene pijl |lookup_tagger| om de informatie over een uitgave in "
+"Picard te laden. Je kan ook de uitgave selecteren en de TOC van de cd "
+"daaraan koppelen."
 
 #: ../../usage/retrieve_lookup_cd.rst:33
 msgid "lookup_tagger"
@@ -86,3 +112,5 @@ msgid ""
 "If none of the releases displayed are correct, you have the option to add a "
 "new release (with some information automatically included)."
 msgstr ""
+"Als geen van de weergegeven uitgaven de juiste is, kan je een nieuwe uitgave "
+"toevoegen (een deel van de informatie wordt dan al automatisch ingevuld)."

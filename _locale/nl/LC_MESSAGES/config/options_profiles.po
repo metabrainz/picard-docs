@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25 11:48-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_profiles/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_profiles.rst:4
 msgid ":index:`Profile Options <configuration; profiles, profiles; option>`"
-msgstr ""
+msgstr ":index:`Optieprofielen <configuratie; profielen, profielen; optie>`"
 
 #: ../../config/options_profiles.rst:9
 msgid ""
@@ -29,6 +32,9 @@ msgid ""
 "between option settings. This page allows for the management of those user-"
 "defined option profiles."
 msgstr ""
+"Sinds Picard 2.7 worden meerdere optieprofielen ondersteund, zodat je snel "
+"tussen groepen instellingen kan schakelen. Op deze pagina kan je deze "
+"optieprofielen beheren."
 
 #: ../../config/options_profiles.rst:11
 msgid ""
@@ -37,6 +43,10 @@ msgid ""
 "selected for the profile to manage. To rename the profile, right-click on "
 "the profile name and select the :menuselection:`\"Rename profile\"` command."
 msgstr ""
+"Aanvankelijk is de lijst met profielen leeg. Om een nieuw profiel te maken, "
+"klik je op :guilabel:`Nieuw`. Dit maakt een nieuw profiel zonder "
+"geselecteerde opties aan.  Om een profiel te hernoemen, klik je met rechts "
+"op de naam en selecteer je :menuselection:`‘Profiel hernoemen’`."
 
 #: ../../config/options_profiles.rst:13
 msgid ""
@@ -45,6 +55,10 @@ msgid ""
 "The groups can be expanded to see the individual options belonging to that "
 "group."
 msgstr ""
+"In het rechter deelvenster kan je selecteren welke instellingen het profiel "
+"moet beheren. Je kan instellingen per groep of afzonderlijk selecteren. Je "
+"kan de groepen uitvouwen om de afzonderlijke instellingen binnen de groep te "
+"zien."
 
 #: ../../config/options_profiles.rst:15
 msgid ""
@@ -53,6 +67,9 @@ msgid ""
 "profile to a new position in the stack. Profiles are enabled when the box "
 "beside the profile's name is checked."
 msgstr ""
+"Je kan de volgorde van de profielen wijzigen door een profiel te selecteren "
+"en onder de stapel de pijl omhoog of omlaag te selecteren, of door het "
+"profiel te verslepen. Profielen zijn ingeschakeld als ze zijn aangevinkt."
 
 #: ../../config/options_profiles.rst:17
 msgid ""
@@ -64,6 +81,15 @@ msgid ""
 "displayed based on the first enabled profile in the profile stack, which "
 "corresponds to the setting that will be used during processing."
 msgstr ""
+"Met optieprofielen kan je een aantal instellingen in een profiel opslaan. "
+"Dat profiel kan je in- en uitschakelen om de instellingen voor verschillende "
+"scenario’s snel te wijzigen. Bijvoorbeeld als je klassieke muziek anders wil "
+"behandelen dan andere muziek. Opties die onder een bepaald optieprofiel "
+"vallen, worden in het instellingenvenster gemarkeerd. Als je de "
+"muisaanwijzer over een gemarkeerde optie beweegt, krijg je te zien welk "
+"optieprofiel de optie beheert. Je kan meerdere optieprofielen tegelijk "
+"actief hebben, en als de instellingen binnen die profielen in strijd met "
+"elkaar zijn, heeft het optieprofiel dat hoger in de stapel ligt voorrang."
 
 #: ../../config/options_profiles.rst:21
 msgid ""
@@ -78,6 +104,16 @@ msgid ""
 "stack, and is always enabled. The \"user settings\" profile cannot be "
 "modified and is not shown in the profile management page."
 msgstr ""
+"Het is belangrijk om te begrijpen dat wanneer je op de knop :guilabel:`Oké` "
+"klikt, **alle** opties op **alle** optiepagina’s worden opgeslagen. Als een "
+"optie door meer dan één ingeschakeld profiel wordt beheerd, wordt de optie "
+"gemarkeerd en opgeslagen in het **eerste** opgeslagen profiel in de lijst "
+"dat die optie beheert. Als er geen ingeschakelde profielen zijn die de optie "
+"beheren, wordt de optie niet gemarkeerd en wordt de instelling opgeslagen in "
+"het profiel ‘gebruikersinstellingen’, het standaardprofiel met alle opties "
+"dat altijd is ingeschakeld. Het profiel ‘gebruikersinstellingen’ kan niet "
+"worden bewerkt en wordt niet op de beheerpagina voor optieprofielen "
+"weergegeven."
 
 #: ../../config/options_profiles.rst:25
 msgid ""

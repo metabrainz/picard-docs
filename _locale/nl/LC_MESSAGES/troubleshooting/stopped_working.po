@@ -3,35 +3,42 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/troubleshootingstopped_working/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../troubleshooting/stopped_working.rst:4
 msgid ":index:`Picard just stopped working <troubleshooting; program freezes>`"
 msgstr ""
+":index:`Picard stopte ineens met werken <probleemoplossing; programma loopt "
+"vast>`"
 
 #: ../../troubleshooting/stopped_working.rst:6
 msgid ""
 "There are typically two reasons that Picard will run very slowly or appear "
 "to be stalled:"
 msgstr ""
+"Als Picard heel langzaam werkt of lijkt te zijn vastgelopen, heeft dat "
+"meestal een van deze twee oorzaken:"
 
 #: ../../troubleshooting/stopped_working.rst:8
 msgid "**Processing a large number of files at one time**"
-msgstr ""
+msgstr "**Picard verwerkt heel veel bestanden tegelijk**"
 
 #: ../../troubleshooting/stopped_working.rst:10
 msgid ""
@@ -43,6 +50,13 @@ msgid ""
 "backlog, the user interface may become non-responsive and appear that the "
 "program has stalled or frozen."
 msgstr ""
+"Als je in één keer heel veel bestanden verwerkt, kan Picard tijdens het "
+"verwerken van elk bestand (bijv. het berekenen van vingerafdrukken) of "
+"tijdens het opzoeken na het clusteren of het maken van vingerafdrukken in de "
+"problemen komen, omdat dit veel informatieverzoeken naar de API van "
+"MusicBrainz oplevert en er afbeeldingen worden gedownload. De "
+"gebruikersinterface kan dan langzaam reageren of zelfs bevriezen, ook al is "
+"Picard nog steeds bezig om alles te verwerken."
 
 #: ../../troubleshooting/stopped_working.rst:12
 msgid ""
@@ -50,6 +64,8 @@ msgid ""
 "plugins that make additional information request calls to the MusicBrains "
 "server API."
 msgstr ""
+"Het effect van het verwerken van veel bestanden tegelijk wordt verergerd "
+"door plug-ins die ook via de API van MusicBrainz informatie opvragen."
 
 #: ../../troubleshooting/stopped_working.rst:14
 msgid ""
@@ -62,7 +78,7 @@ msgstr ""
 
 #: ../../troubleshooting/stopped_working.rst:16
 msgid "**Processing files across a network connection**"
-msgstr ""
+msgstr "**Bestanden via een netwerk verwerken**"
 
 #: ../../troubleshooting/stopped_working.rst:18
 msgid ""
@@ -72,3 +88,8 @@ msgid ""
 "improved by first copying the source files to a local drive, process with "
 "Picard, and then move the resulting files to the network drive."
 msgstr ""
+"Als je bestanden verwerkt die op een netwerk staan, kan dat Picard "
+"vertragen. Netwerken kunnen namelijk een stuk langzamer zijn dan een lokaal "
+"station. In dat geval kan je de snelheid verbeteren door de bestanden eerst "
+"naar een lokaal station te kopiëren, dan met Picard te verwerken en "
+"vervolgens weer terug te verplaatsen naar het netwerkstation."

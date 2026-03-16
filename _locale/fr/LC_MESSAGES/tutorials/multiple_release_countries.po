@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
-"PO-Revision-Date: 2021-07-09 09:12-0600\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"PO-Revision-Date: 2026-03-15 19:11+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: \n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/tutorialsmultiple_release_countries/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 3.0\n"
 
 #: ../../tutorials/multiple_release_countries.rst:4
 msgid ""
@@ -109,8 +110,8 @@ msgid ""
 "For example, the following script would set it to \"\\[International\\]\" if "
 "there are 10 or more release countries:"
 msgstr ""
-"Par exemple, le script suivant lui attribue la valeur "
-"\"\\[International\\]\" s'il y a 10 pays de diffusion ou plus:"
+"Par exemple, le script suivant lui attribue la valeur \"\\[International\\"
+"]\" s'il y a 10 pays de diffusion ou plus :"
 
 #: ../../tutorials/multiple_release_countries.rst:32
 msgid ""
@@ -121,7 +122,7 @@ msgstr ""
 "Bien entendu, vous pouvez ajuster le nombre de pays et le texte de "
 "remplacement à votre convenance. Vous pouvez également choisir d'enregistrer "
 "la liste entière au lieu d'un seul pays dans cette balise en utilisant le "
-"script:"
+"script :"
 
 #: ../../tutorials/multiple_release_countries.rst:38
 msgid ""
@@ -129,11 +130,11 @@ msgid ""
 "following example just uses the first 6 countries:"
 msgstr ""
 "Vous préférez peut-être limiter cette liste aux premières entrées. L'exemple "
-"suivant utilise uniquement les 6 premiers pays:"
+"suivant utilise uniquement les 6 premiers pays :"
 
 #: ../../tutorials/multiple_release_countries.rst:46
 msgid "What's missing?"
-msgstr "Qu'est-ce qui manque?"
+msgstr "Qu'est-ce qui manque ?"
 
 #: ../../tutorials/multiple_release_countries.rst:48
 msgid ""
@@ -149,8 +150,8 @@ msgstr ""
 "et des choses comme \\[Europe\\] ou \\[Worldwide\\]. Ces codes ne sont pas "
 "toujours facilement reconnaissables ou évidents, comme \"DZ\" pour l'Algérie "
 "ou \"DE\" pour l'Allemagne. Vous pouvez bien sûr utiliser des scripts pour "
-"les rendre plus lisibles.  Par exemple, si vous voulez voir \"United "
-"Kingdom\" au lieu de \"GB\" dans cette balise, utilisez:"
+"les rendre plus lisibles. Par exemple, si vous voulez voir \"United "
+"Kingdom\" au lieu de \"GB\" dans cette balise, utilisez :"
 
 #: ../../tutorials/multiple_release_countries.rst:54
 msgid ""
@@ -161,7 +162,7 @@ msgstr ""
 "Cela peut fonctionner si vous ne traitez que quelques pays dans votre "
 "collection, ou si vous voulez simplement gérer certains cas particuliers "
 "comme l'utilisation de \"Europe\" au lieu de \"XE\", comme dans le script "
-"suivant:"
+"suivant :"
 
 #: ../../tutorials/multiple_release_countries.rst:63
 msgid ""
@@ -171,4 +172,4 @@ msgid ""
 msgstr ""
 "Une méthode plus simple serait d'utiliser la fonction ``$countryname()`` "
 "introduite dans Picard v2.7 pour convertir facilement le code en un nom "
-"lisible, comme dans les scripts suivants:"
+"lisible, comme dans les scripts suivants :"

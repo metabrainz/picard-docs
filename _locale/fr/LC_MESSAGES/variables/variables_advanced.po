@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-# Bob Swift <bswift@rsds.ca>, 2021, 2023.
+# Bob Swift <bswift@rsds.ca>, 2021, 2023, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 09:45-0700\n"
-"PO-Revision-Date: 2023-10-19 15:21+0000\n"
+"POT-Creation-Date: 2026-01-27 15:01-0700\n"
+"PO-Revision-Date: 2026-03-15 19:11+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/variablesvariables_advanced/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_advanced.rst:33
@@ -97,7 +97,6 @@ msgstr ""
 "Variable multi-valeurs contenant les MBIDs des séries associées à la "
 "parution. (*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:58
 msgid "**_release_seriescomment**"
 msgstr "**_release_seriescomment**"
@@ -115,14 +114,14 @@ msgid "**_release_seriesnumber**"
 msgstr "**_release_seriesnumber**"
 
 #: ../../variables/variables_advanced.rst:64
-#, fuzzy
 msgid ""
 "If the release is part of one of more series, this multi-value variable "
 "contains the positions (numbers) of the release in those series. (*since "
 "Picard 2.9*)"
 msgstr ""
-"Variable à valeurs multiples contenant les numéros de série associés au "
-"groupe de parution. (*depuis Picard 2.9*)"
+"Si la version fait partie d'une ou plusieurs séries, cette variable à "
+"valeurs multiples contient les numéros d'ordre de la version dans ces "
+"séries. (*depuis Picard 2.9*)"
 
 #: ../../variables/variables_advanced.rst:66
 msgid "**_releasegroup_series**"
@@ -148,7 +147,6 @@ msgstr ""
 "Variable multi-valeurs contenant les MBIDs des séries associées au groupe de "
 "parution. (*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:74
 msgid "**_releasegroup_seriescomment**"
 msgstr "**_releasegroup_seriescomment**"
@@ -166,14 +164,14 @@ msgid "**_releasegroup_seriesnumber**"
 msgstr "**_releasegroup_seriesnumber**"
 
 #: ../../variables/variables_advanced.rst:80
-#, fuzzy
 msgid ""
 "If the release group is part of one of more series, this multi-value "
 "variable contains the positions (numbers) of the release group in those "
 "series. (*since Picard 2.9*)"
 msgstr ""
-"Variable à valeurs multiples contenant les numéros de série associés au "
-"groupe de parution. (*depuis Picard 2.9*)"
+"Si le groupe de publication fait partie d'une ou plusieurs séries, cette "
+"variable à valeurs multiples contient les positions (numéros) du groupe de "
+"publication dans ces séries. (*depuis Picard 2.9*)"
 
 #: ../../variables/variables_advanced.rst:84
 msgid "Track Relationship Variables"
@@ -195,7 +193,6 @@ msgstr "**_lyricistsort**"
 msgid "The sort names of the lyricists for the work. (*since Picard 2.9*)"
 msgstr "Les noms de tri des paroliers de l'œuvre. (*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:92
 msgid "**_performance_attributes**"
 msgstr "**_performance_attributes**"
@@ -207,12 +204,11 @@ msgid ""
 "``$if($inmulti(%_performance_attributes%,medley), (Medley),)``). (*since "
 "Picard 1.3*)"
 msgstr ""
-"Liste des attributs de performance de l'œuvre (ex: \"live\", \"cover\", "
+"Liste des attributs de performance de l'œuvre (ex : \"live\", \"cover\", "
 "\"medley\"). Utilisez :ref:`func_inmulti` pour rechercher un type spécifique "
-"(c'est-à-dire: ``$if($inmulti(%_performance_attributes%,medley), "
-"(Medley),)``). (*depuis Picard 1.3*)"
+"(c'est-à-dire : ``$if($inmulti(%_performance_attributes%,medley), (Medley),)"
+"``). (*depuis Picard 1.3*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:96
 msgid "**_recordingtitle**"
 msgstr "**_recordingtitle**"
@@ -224,7 +220,6 @@ msgstr ""
 "Titre de l'enregistrement - normalement le même que le titre de la piste, "
 "mais il peut être différent."
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:100
 msgid "**_recording_series**"
 msgstr "**_recording_series**"
@@ -237,7 +232,6 @@ msgstr ""
 "Une variable multi-valeurs contenant les titres des séries associées à "
 "l'enregistrement. (*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:104
 msgid "**_recording_seriesid**"
 msgstr "**_recording_seriesid**"
@@ -250,7 +244,6 @@ msgstr ""
 "Variable multi-valeurs contenant les MBIDs des séries associées à "
 "l'enregistrement. (*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:108
 msgid "**_recording_seriescomment**"
 msgstr "**_recording_seriescomment**"
@@ -263,7 +256,6 @@ msgstr ""
 "Une variable multi-valeurs contenant les commentaires de désambiguïsation de "
 "la série associés à l'enregistrement. (*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:112
 msgid "**_recording_seriesnumber**"
 msgstr "**_recording_seriesnumber**"
@@ -276,7 +268,6 @@ msgstr ""
 "Une variable multi-valeurs contenant les numéros de série associés à "
 "l'enregistrement. (*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:116
 msgid "**_workcomment**"
 msgstr "**_workcomment**"
@@ -311,7 +302,6 @@ msgstr ""
 "Variable multi-valeurs contenant les MBIDs des séries associées à l'œuvre. "
 "(*depuis Picard 2.9*)"
 
-# Variable name.  Do not translate.
 #: ../../variables/variables_advanced.rst:128
 msgid "**_work_seriescomment**"
 msgstr "**_work_seriescomment**"
@@ -343,16 +333,3 @@ msgstr "**_writersort**"
 #: ../../variables/variables_advanced.rst:138
 msgid "The sort names of the writers for the work. (*since Picard 2.9*)"
 msgstr "Les noms de tri des rédacteurs de l'œuvre. (*depuis Picard 2.9*)"
-
-#~ msgid ""
-#~ "A multi-value variable containing the series numbers associated with the "
-#~ "release. (*since Picard 2.9*)"
-#~ msgstr ""
-#~ "Une variable multi-valeurs contenant les numéros de série associés à la "
-#~ "parution. (*depuis Picard 2.9*)"
-
-#~ msgid "Recording disambiguation comment. (*since Picard 0.15*)"
-#~ msgstr "Enregistrement d'un commentaire d'homonymie. (*depuis Picard 0,15*)"
-
-#~ msgid "Advanced Variables"
-#~ msgstr "Variables avancées"

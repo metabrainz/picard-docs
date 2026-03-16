@@ -3,25 +3,28 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 09:45-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-02-03 09:41-0700\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configconfiguration/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/configuration.rst:4
 msgid "Configuration"
-msgstr ""
+msgstr "Configuratie"
 
 #: ../../config/configuration.rst:6
 msgid ""
@@ -30,10 +33,13 @@ msgid ""
 "screen sections for display, selecting the desired actions, and setting the "
 "various options."
 msgstr ""
+"Nadat je Picard hebt geïnstalleerd, is het tijd om je voorkeuren in te "
+"stellen. Het instellen bestaat uit het inschakelen van vensteronderdelen, "
+"het selecteren van handelingen en het instellen van verschillende opties."
 
 #: ../../config/configuration.rst:9
 msgid ":index:`Screen Setup <configuration; screen setup>`"
-msgstr ""
+msgstr ":index:`Het venster instellen <configuratie; venster instellen>`"
 
 #: ../../config/configuration.rst:11
 msgid ""
@@ -41,10 +47,13 @@ msgid ""
 "menu bar. To enable the display of an item, simply check the box for the "
 "screen option. The items are:"
 msgstr ""
+"Het venster stel je in via de menuoptie :menuselection:`‘Beeld’` in de "
+"menubalk. Je kan onderdelen aanvinken om ze in te schakelen. De onderdelen "
+"zijn:"
 
 #: ../../config/configuration.rst:13
 msgid "**File Browser**"
-msgstr ""
+msgstr "**Verkenner**"
 
 #: ../../config/configuration.rst:15
 msgid ""
@@ -54,16 +63,24 @@ msgid ""
 "files or by selecting multiple files and folders and selecting \"Load "
 "selected files\" from the context menu."
 msgstr ""
+"Met de verkenner, die aan de linkerkant van het venster wordt weergegeven, "
+"kan je bestanden en mappen selecteren om te verwerken. Je kan bestanden in "
+"Picard laden door ze naar de andere deelvensters te verslepen, door twee "
+"keer op een bestand te klikken of door meerdere bestanden en mappen te "
+"selecteren en in het contextmenu ‘Geselecteerde bestanden laden’ te "
+"selecteren."
 
 #: ../../config/configuration.rst:17
 msgid ""
 "Files and directories can also be selected using your system's file browser "
 "by dragging and dropping them onto the Picard application."
 msgstr ""
+"Je kan bestanden en mappen ook vanuit de verkenner van je systeem naar "
+"Picard slepen om ze te laden."
 
 #: ../../config/configuration.rst:19
 msgid "**Cover Art**"
-msgstr ""
+msgstr "**Hoesafbeelding**"
 
 #: ../../config/configuration.rst:21
 msgid ""
@@ -71,38 +88,46 @@ msgid ""
 "release) in a window to the right of the tags section of the display. This "
 "allows you to select or replace the cover art saved with the release."
 msgstr ""
+"Deze optie schakelt een weergave van de hoesafbeelding van een geselecteerd "
+"object (nummer of uitgave) rechts van de metadata in of uit. Hiermee kan je "
+"de hoesafbeelding die met de uitgave wordt opgeslagen selecteren of "
+"vervangen."
 
 #: ../../config/configuration.rst:23
 msgid "**Actions**"
-msgstr ""
+msgstr "**Acties**"
 
 #: ../../config/configuration.rst:25
 msgid ""
 "This displays the button bar of the actions performed by Picard, located "
 "just below the menu bar."
 msgstr ""
+"Hiermee schakel je een knoppenbalk met handelingen die je in Picard kunt "
+"uitvoeren in of uit, net onder de menubalk."
 
 #: ../../config/configuration.rst:27
 msgid "**Search**"
-msgstr ""
+msgstr "**Zoeken**"
 
 #: ../../config/configuration.rst:29
 msgid ""
 "This displays the manual search box to the right of the \"Actions\" button "
 "bar."
-msgstr ""
+msgstr "Hiermee schakel je een zoekvak rechts van de knoppenbalk in of uit."
 
 #: ../../config/configuration.rst:31
 msgid "**Player**"
-msgstr ""
+msgstr "**Speler**"
 
 #: ../../config/configuration.rst:33
 msgid "This displays the built-in player for playing selected audio files."
 msgstr ""
+"Hiermee schakel je de ingebouwde mediaspeler voor geselecteerde "
+"audiobestanden in of uit."
 
 #: ../../config/configuration.rst:38
 msgid ":index:`Action Options <configuration; action options>`"
-msgstr ""
+msgstr ":index:`Verwerkingsopties <configuratie; verwerkingsopties>`"
 
 #: ../../config/configuration.rst:40
 msgid ""
@@ -110,38 +135,47 @@ msgid ""
 "the menu bar. There are three available actions that Picard can perform when "
 "saving selected music files:"
 msgstr ""
+"De verwerkingsopties vind je in het menuonderdeel :menuselection:`‘Opties’` "
+"van de menubalk. Picard kan bij het opslaan van geselecteerde "
+"muziekbestanden de volgende bewerkingen uitvoeren:"
 
 #: ../../config/configuration.rst:42
 msgid "**Rename Files**"
-msgstr ""
+msgstr "**Bestanden hernoemen**"
 
 #: ../../config/configuration.rst:44
 msgid "Picard will rename each file in accordance with the naming script."
 msgstr ""
+"Picard hernoemt de bestanden aan de hand van het ingestelde "
+"bestandsnamenscript."
 
 #: ../../config/configuration.rst:46
 msgid "**Move Files**"
-msgstr ""
+msgstr "**Bestanden verplaatsen**"
 
 #: ../../config/configuration.rst:48
 msgid ""
 "Picard will move files to the target directory in accordance with the naming "
 "script."
 msgstr ""
+"Picard verplaatst de bestanden aan de hand van het ingestelde "
+"bestandsnamenscript naar een andere map."
 
 #: ../../config/configuration.rst:50
 msgid "**Save Tags**"
-msgstr ""
+msgstr "**Tags opslaan**"
 
 #: ../../config/configuration.rst:52
 msgid ""
 "Picard will update the metadata tags in the files in accordance with the "
 "specified option settings and tagging scripts."
 msgstr ""
+"Picard wijzigt de metadatatags in de bestanden aan de hand van je "
+"instellingen en tagscripts."
 
 #: ../../config/configuration.rst:56
 msgid ":index:`Option Settings <see: option settings; configuration>`"
-msgstr ""
+msgstr ":index:`Optie-instellingen <see: optie-instellingen; configuratie>`"
 
 #: ../../config/configuration.rst:58
 msgid ""
@@ -152,6 +186,12 @@ msgid ""
 "side, and the individual settings on the right hand side. This is where the "
 "majority of Picard's customization is performed."
 msgstr ""
+"De optie-instellingen vind je via het menuonderdeel :menuselection:`‘"
+"Opties --> Opties …’` van de menubalk. Op macOS zijn ze te vinden via "
+":menuselection:`‘MusicBrainz Picard --> Voorkeuren …’`. Er wordt een nieuw "
+"venster geopend met aan de linkerkant groepen met opties en met aan de "
+"rechterkant de verschillende instellingen. Hier kan je het leeuwendeel van "
+"Picard aanpassen."
 
 #: ../../config/configuration.rst:61
 msgid ""
@@ -160,10 +200,14 @@ msgid ""
 "Preferences...\"` option in the menu bar. This allows you to configure and "
 "customize various settings for your development environment."
 msgstr ""
+"Als je in een macOS-omgeving je code vanuit de bron uitvoert, kan je de "
+"instellingen openen door in de menubalk naar :menuselection:`‘Python --> "
+"Voorkeuren …’` te gaan. Zo kan je de verschillende instellingen voor je "
+"bureaubladomgeving aanpassen."
 
 #: ../../config/configuration.rst:70
 msgid ":index:`Option Profiles <see: profiles; configuration>`"
-msgstr ""
+msgstr ":index:`Optieprofielen <see: profielen; configuratie>`"
 
 #: ../../config/configuration.rst:72
 msgid ""
@@ -179,6 +223,10 @@ msgid ""
 "usage scenario. For example, if you want to process your classical music "
 "differently to other music."
 msgstr ""
+"Met optieprofielen kan je een aantal instellingen in een profiel opslaan. "
+"Dat profiel kan je in- en uitschakelen om de instellingen voor verschillende "
+"scenario’s snel te wijzigen. Bijvoorbeeld als je klassieke muziek anders wil "
+"behandelen dan andere muziek."
 
 #: ../../config/configuration.rst:76
 msgid ""
@@ -188,6 +236,12 @@ msgid ""
 "based on the first enabled profile in the profile stack, which corresponds "
 "to the setting that will be used during processing."
 msgstr ""
+"Opties die onder een bepaald optieprofiel vallen, worden in het "
+"instellingenvenster gemarkeerd. Als je de muisaanwijzer over een gemarkeerde "
+"optie beweegt, krijg je te zien welk optieprofiel de optie beheert. Je kan "
+"meerdere optieprofielen tegelijk actief hebben, en als de instellingen "
+"binnen die profielen in strijd met elkaar zijn, heeft het optieprofiel dat "
+"hoger in de stapel ligt voorrang."
 
 #: ../../config/configuration.rst:78
 msgid ""
@@ -195,6 +249,10 @@ msgid ""
 "the profile stack will be reflected in the option settings displayed on the "
 "other configuration pages."
 msgstr ""
+"De veranderingen die je doorvoert in de optie-instellingen van een profiel, "
+"of een profiel is ingeschakeld en de positie in de profielenstapel zijn "
+"worden weerspiegeld in de optie-instellingen die op de optiepagina’s worden "
+"weergegeven."
 
 #: ../../config/configuration.rst:102
 msgid ""

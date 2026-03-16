@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-# Bob Swift <bswift@rsds.ca>, 2022.
+# Bob Swift <bswift@rsds.ca>, 2022, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
-"PO-Revision-Date: 2022-05-10 21:18+0000\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"PO-Revision-Date: 2026-03-15 19:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/tutorialswrite_plugin/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.12\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../tutorials/write_plugin.rst:4
@@ -226,13 +226,13 @@ msgid ""
 msgstr ""
 "Enfin, nous devons enregistrer nos fonctions afin qu'elles soient traitées "
 "avec les événements appropriés. Dans notre cas, nous mettons la priorité à "
-"\"HIGH\" pour que nous puissions sortir les informations des paramètres dès "
+"``HIGH`` pour que nous puissions sortir les informations des paramètres dès "
 "qu'elles sont reçues par Picard avant que d'autres plugins aient "
 "l'opportunité de les modifier."
 
 #: ../../tutorials/write_plugin.rst:90
 msgid "The complete plugin code file looks something like:"
-msgstr "Le fichier de code complet du plugin ressemble à quelque chose comme:"
+msgstr "Le fichier de code complet du plugin ressemble à quelque chose comme :"
 
 #: ../../tutorials/write_plugin.rst:138
 msgid ""
@@ -269,7 +269,7 @@ msgstr ""
 
 #: ../../tutorials/write_plugin.rst:148
 msgid "Relevant portions of Picard's source code including:"
-msgstr "Des portions pertinentes du code source de Picard, y compris:"
+msgstr "Des portions pertinentes du code source de Picard, y compris :"
 
 #: ../../tutorials/write_plugin.rst:150
 msgid ""
@@ -306,15 +306,3 @@ msgid ""
 msgstr ""
 "La classe ``PluginPriority`` dans le fichier `picard/plugin.py <https://"
 "github.com/metabrainz/picard/blob/master/picard/plugin.py>`_."
-
-#~ msgid ""
-#~ "Now we can start on our code that we want to process.  First we'll "
-#~ "identify the output file to store the parameter information provided by "
-#~ "Picard.  This is a file named ``data_dump.txt`` to be stored in the file "
-#~ "naming output directory."
-#~ msgstr ""
-#~ "Maintenant nous pouvons commencer à travailler sur le code que nous "
-#~ "voulons traiter.  Tout d'abord, nous allons identifier le fichier de "
-#~ "sortie pour stocker les informations sur les paramètres fournies par "
-#~ "Picard.  Il s'agit d'un fichier nommé ``data_dump.txt`` qui sera stocké "
-#~ "dans le répertoire de sortie du nom du fichier."

@@ -1,26 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 13:52-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/tutorialsmultiple_release_countries/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../tutorials/multiple_release_countries.rst:4
 msgid ""
 "Handling of :index:`multiple release countries <multiple release countries, "
 "release countries; multiple>`"
 msgstr ""
+":index:`Uitgaven met meerdere landen van uitgaven <meerdere landen van "
+"uitgave, landen van uitgave; meerdere>`"
 
 #: ../../tutorials/multiple_release_countries.rst:8
 msgid ""
@@ -29,6 +34,10 @@ msgid ""
 "a few where the release is not officially available. Picard offers some "
 "tools to handle this."
 msgstr ""
+"Sommige uitgaven, vooral digitale, hebben een lange lijst met landen waarin "
+"ze zijn uitgegeven, soms zelfs (bijna) alle landen ter wereld (op een paar "
+"na waar de uitgave niet officieel verkrijgbaar is). Picard heeft wat "
+"hulpmiddelen om hiermee te helpen."
 
 #: ../../tutorials/multiple_release_countries.rst:10
 msgid ""
@@ -46,10 +55,16 @@ msgid ""
 "one in alphabetical order (Afghanistan in our example). Picard v2.3.1 "
 "introduced some options to better handle this."
 msgstr ""
+"Standaard schrijft Picard één tag ``releasecountry`` naar bestanden. Vóór "
+"Picard 2.3.1 vulde Picard die tag met het land dat de server van MusicBrainz "
+"retourneerde als land van uitgave. Als er meerdere uitgavegebeurtenissen "
+"waren, werd er voor dit veld gewoon het eerste land op alfabetische volgorde "
+"gebruikt (in ons voorbeeld Afghanistan). In Picard 2.3.1 kwamen er wat "
+"opties bij om hier beter mee om te gaan."
 
 #: ../../tutorials/multiple_release_countries.rst:16
 msgid "Using preferred release countries"
-msgstr ""
+msgstr "Met uitgavevoorkeuren"
 
 #: ../../tutorials/multiple_release_countries.rst:18
 msgid ""
@@ -60,10 +75,17 @@ msgid ""
 "Germany and UK, for our example that would mean the ``releasecountry`` tag "
 "gets set to Canada."
 msgstr ""
+"In :menuselection:`‘Opties --> Metadata --> Voorkeursuitgaven’` kan je "
+"instellen dat uitgaven uit bepaalde landen voorrang moeten krijgen als wordt "
+"bepaald welke uitgave bij de metadata in je bestanden hoort. Dan gebruikt "
+"Picard het eerste land uit die lijst dat ook in de lijst met "
+"uitgavegebeurtenissen voorkomt. Dus als je hebt ingesteld dat Europa, "
+"Canada, Duitsland en het VK je voorkeurslanden zijn, wordt de tag "
+"``releasecountry`` in ons voorbeeld ingesteld als Canada."
 
 #: ../../tutorials/multiple_release_countries.rst:22
 msgid "Using scripting to set a different country"
-msgstr ""
+msgstr "Met een script"
 
 #: ../../tutorials/multiple_release_countries.rst:24
 msgid ""
@@ -72,12 +94,18 @@ msgid ""
 "value variable. You can use this to set different values for the "
 "``releasecountry`` tag."
 msgstr ""
+"In Picard 2.3.1 is ook een nieuwe variabele toegevoegd, "
+"``%_releasecountries%``. Deze meervoudige variabele bevat de volledige lijst "
+"met landen van uitgave. Je kan deze variabele gebruiken om verschillende "
+"waarden voor ``releasecountry`` in te stellen."
 
 #: ../../tutorials/multiple_release_countries.rst:26
 msgid ""
 "For example, the following script would set it to \"\\[International\\]\" if "
 "there are 10 or more release countries:"
 msgstr ""
+"Met het volgende script stel je de tag bijvoorbeeld in op ‘\\[International\\"
+"]’ als er meer dan tien landen aan de uitgave zijn gekoppeld:"
 
 #: ../../tutorials/multiple_release_countries.rst:32
 msgid ""
@@ -85,16 +113,21 @@ msgid ""
 "You can also choose to save the entire list instead of just a single country "
 "to this tag using the script:"
 msgstr ""
+"Je kan het aantal en de vervangende tekst natuurlijk aanpassen. Met het "
+"volgende script kan je de hele lijst in de tag opslaan in plaats van slechts "
+"één land:"
 
 #: ../../tutorials/multiple_release_countries.rst:38
 msgid ""
 "Perhaps you prefer to limit this list to the first few entries. The "
 "following example just uses the first 6 countries:"
 msgstr ""
+"Misschien wil je deze lijst beperken tot een paar van de eerste landen. Het "
+"volgende voorbeeld beperkt de lijst tot de eerste zes landen:"
 
 #: ../../tutorials/multiple_release_countries.rst:46
 msgid "What's missing?"
-msgstr ""
+msgstr "Wat ontbreekt er?"
 
 #: ../../tutorials/multiple_release_countries.rst:48
 msgid ""
@@ -105,6 +138,13 @@ msgid ""
 "You can of course use scripting to make these more readable. For example, if "
 "you want to see \"United Kingdom\" instead of \"GB\" in this tag use:"
 msgstr ""
+"Op dit moment worden de landen in de vorm van de ISO 3166-1-landcode naar de "
+"tags geschreven. Daarnaast zijn er een aantal speciale waarden voor niet "
+"langer bestaande landen en voor regio’s zoals \\[Europa\\] en \\[Wereldwijd\\"
+"]. Deze codes zijn niet altijd makkelijk te herkennen, zoals ‘DZ’ voor "
+"Algerije en ‘DE’ voor Duitsland. Je kan dit met scripts natuurlijk "
+"leesbaarder maken. Als je in deze tag bijvoorbeeld ‘Verenigd Koninkrijk’ wil "
+"zien staan in plaats van ‘GB’, gebruik je:"
 
 #: ../../tutorials/multiple_release_countries.rst:54
 msgid ""
@@ -112,6 +152,8 @@ msgid ""
 "collection, or you just want to handle some special cases like using "
 "\"Europe\" instead of \"XE\" such as in the following script:"
 msgstr ""
+"Dit werkt als je maar een paar landen gebruikt of voor een paar speciale "
+"gevallen zoals ‘Europa’ in plaats van ‘XE’, zoals in het volgende script:"
 
 #: ../../tutorials/multiple_release_countries.rst:63
 msgid ""
@@ -119,3 +161,6 @@ msgid ""
 "in Picard v2.7 to easily convert the code into a readable name, such as in "
 "the following scripts:"
 msgstr ""
+"Sinds Picard 2.7 kan je ook de functie ``$countryname()`` gebruiken om de "
+"code eenvoudig in een leesbare landnaam om te zetten, zoals in het volgende "
+"script:"

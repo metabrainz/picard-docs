@@ -3,26 +3,31 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-12 17:13+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/workflowsworkflow_album/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../workflows/workflow_album.rst:4
 msgid ""
 ":index:`When files are grouped by album <workflows; files grouped by album>`"
 msgstr ""
+":index:`Als bestanden per uitgave zijn gegroepeerd <gebruik; bestanden per "
+"uitgave gegroepeerd>`"
 
 #: ../../workflows/workflow_album.rst:6
 msgid ""
@@ -31,20 +36,25 @@ msgid ""
 "database is greatly simplified because Picard works best when processing one "
 "album at a time."
 msgstr ""
+"Als de muziekbestanden die je wil verwerken al in mappen zijn gegroepeerd, "
+"is het een stuk makkelijker om een uitgave in MusicBrainz te zoeken. Picard "
+"werkt namelijk het beste als hij één uitgave per keer verwerkt."
 
 #: ../../workflows/workflow_album.rst:8
 msgid "**1. Load the files**"
-msgstr ""
+msgstr "**1. De bestanden laden**"
 
 #: ../../workflows/workflow_album.rst:10
 msgid ""
 "Drag the files or folder from the browser to the \"Unclustered Files\" "
 "section in the left-hand pane."
 msgstr ""
+"Sleep de bestanden of map van de verkenner naar het gedeelte ‘Niet-"
+"geclusterde bestanden’ in het clusterdeelvenster."
 
 #: ../../workflows/workflow_album.rst:13
 msgid "**2. Cluster and lookup the files**"
-msgstr ""
+msgstr "**2. Bestanden clusteren en opzoeken**"
 
 #: ../../workflows/workflow_album.rst:15
 msgid ""
@@ -57,7 +67,7 @@ msgstr ""
 
 #: ../../workflows/workflow_album.rst:18
 msgid "**3. Select the correct release**"
-msgstr ""
+msgstr "**3. De juiste uitgave selecteren**"
 
 #: ../../workflows/workflow_album.rst:20
 msgid ""
@@ -67,10 +77,16 @@ msgid ""
 "barcode, media type, and cover art). This is especially important if you are "
 "going to submit any information such as AcoustID fingerprints."
 msgstr ""
+"Als er maar één uitgave overeenkomt met het opgezochte cluster, wordt die "
+"automatisch geladen. Controleer voordat je verdergaat of de uitgave precies "
+"bij je uitgave past (dus of het land van uitgave, de datum, de "
+"platenmaatschappij, het catalogusnummer, de streepjescode, het soort medium "
+"en de hoesafbeeldingen hetzelfde zijn). Dit is vooral belangrijk als je "
+"informatie zoals AcoustID-vingerafdrukken wil indienen."
 
 #: ../../workflows/workflow_album.rst:23
 msgid "**4. Match the files to the tracks on the release**"
-msgstr ""
+msgstr "**4. De bestanden koppelen aan nummers op een uitgave**"
 
 #: ../../workflows/workflow_album.rst:25
 msgid ""
@@ -82,7 +98,7 @@ msgstr ""
 
 #: ../../workflows/workflow_album.rst:28
 msgid "**5. Verify the metadata and cover art**"
-msgstr ""
+msgstr "**5. De metadata en hoesafbeeldingen controleren**"
 
 #: ../../workflows/workflow_album.rst:30
 msgid ""
@@ -93,7 +109,7 @@ msgstr ""
 
 #: ../../workflows/workflow_album.rst:33
 msgid "**6. Save the files**"
-msgstr ""
+msgstr "**6. De bestanden opslaan**"
 
 #: ../../workflows/workflow_album.rst:35
 msgid ""
@@ -103,7 +119,7 @@ msgstr ""
 
 #: ../../workflows/workflow_album.rst:38
 msgid "**7. Calculate and submit AcoustID fingerprints**"
-msgstr ""
+msgstr "**7. AcoustID-vingerafdrukken berekenen en indienen**"
 
 #: ../../workflows/workflow_album.rst:40
 msgid ""
@@ -111,6 +127,8 @@ msgid ""
 "appreciated because it will help identify the files for others to look up "
 "for tagging."
 msgstr ""
+":index:`Deze stap is optioneel <akoestische vingerafdruk; indienen>`, maar "
+"wordt gewaardeerd, omdat dit anderen die bestanden opzoeken helpt."
 
 #: ../../workflows/workflow_album.rst:42
 msgid ""
@@ -119,6 +137,10 @@ msgid ""
 "Fingerprints\"`. Once the fingerprints have been calculated, submit them "
 "using :menuselection:`\"Files --> Submit AcoustIDs\"`."
 msgstr ""
+"Selecteer de uitgave in het rechter deelvenster en gebruik de opdracht "
+":menuselection:`‘Hulpmiddelen --> AcoustID-vingerafdrukken aanmaken’`. Nadat "
+"de vingerafdrukken zijn berekend, kan je ze indienen met de opdracht "
+":menuselection:`‘Bestand --> AcoustID’s versturen’`."
 
 #: ../../workflows/workflow_album.rst:46
 msgid ""
@@ -126,3 +148,6 @@ msgid ""
 "tagged with MusicBrainz metadata, and you have verified that the files have "
 "been matched to the correct track on the proper release."
 msgstr ""
+"AcoustID-vingerafdrukken moeten alleen worden ingediend nadat de bestanden "
+"met metadata van MusicBrainz zijn getagd en nadat je hebt gecontroleerd of "
+"alle bestanden zijn gekoppeld aan het juiste nummer op de juiste uitgave."

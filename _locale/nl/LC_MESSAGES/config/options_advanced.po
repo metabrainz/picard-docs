@@ -3,29 +3,34 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25 11:48-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2026-03-14 12:08-0600\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_advanced/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_advanced.rst:4
 msgid ":index:`Advanced Options <configuration; advanced options>`"
-msgstr ""
+msgstr ":index:`Geavanceerde opties <configuratie; geavanceerde opties>`"
 
 #: ../../config/options_advanced.rst:9
 msgid "**Ignore file paths matching the following regular expression**"
 msgstr ""
+"**Bestandspaden negeren als ze met de volgende reguliere expressie "
+"overeenkomen**"
 
 #: ../../config/options_advanced.rst:11
 msgid ""
@@ -33,10 +38,14 @@ msgid ""
 "load. For example, if you set this to the regular expression ``\\.bak$`` any "
 "file ending in \".bak\" will be ignored when loading files."
 msgstr ""
+"Je kan patronen instellen voor bestanden en mappen die Picard nooit mag "
+"laden. Met de reguliere expressie ``\\.bak$`` kan je bijvoorbeeld zorgen dat "
+"elk bestand dat eindigt op ‘.bak’ bij het laden van bestanden wordt "
+"genegeerd."
 
 #: ../../config/options_advanced.rst:13
 msgid "**Ignore hidden files**"
-msgstr ""
+msgstr "**Verborgen bestanden negeren**"
 
 #: ../../config/options_advanced.rst:15
 msgid ""
@@ -44,10 +53,12 @@ msgid ""
 "loaded. This also includes any file or subdirectory inside a hidden "
 "directory."
 msgstr ""
+"Als deze optie is ingeschakeld, worden verborgen bestanden en mappen niet "
+"geladen. Dat geldt ook voor bestanden of mappen binnen een verborgen map."
 
 #: ../../config/options_advanced.rst:17
 msgid "**Include sub-folders when adding files from folders**"
-msgstr ""
+msgstr "**Ook submappen toevoegen als je bestanden uit een map toevoegt**"
 
 #: ../../config/options_advanced.rst:19
 msgid ""
@@ -55,10 +66,15 @@ msgid ""
 "directory and all its subdirectories. If disabled only audio files in the "
 "selected directory will be loaded."
 msgstr ""
+"Als deze optie is ingeschakeld, laadt Picard alle audiobestanden in de "
+"geselecteerde map en alle onderliggende mappen. Als deze optie is "
+"uitgeschakeld, worden alleen audiobestanden in de geselecteerde map geladen."
 
 #: ../../config/options_advanced.rst:21
 msgid "**Ignore track duration difference under this number of seconds**"
 msgstr ""
+"**Verschillen korter dan dit aantal seconden bij het vergelijken van nummers "
+"negeren**"
 
 #: ../../config/options_advanced.rst:23
 msgid ""
@@ -66,10 +82,15 @@ msgid ""
 "the length in the MusicBrainz database and still be considered to be the "
 "same. The default value is 2 seconds."
 msgstr ""
+"Hiermee kan je instellen hoeveel seconden de lengte van een bestand mag "
+"afwijken van de lengte die in de databank van MusicBrainz staat om als "
+"dezelfde opname te worden beschouwd. De standaardwaarde is twee seconden."
 
 #: ../../config/options_advanced.rst:25
 msgid "**Maximum number of entities to return per MusicBrainz query**"
 msgstr ""
+"**Maximaal aantal objecten dat per MusicBrainz-zoekopdracht wordt "
+"geretourneerd**"
 
 #: ../../config/options_advanced.rst:27
 msgid ""
@@ -77,12 +98,16 @@ msgid ""
 "MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and "
 "earlier, this value was fixed at a maximum of 25 responses."
 msgstr ""
+"Hiermee stel je in hoeveel resultaten er worden teruggestuurd als de website "
+"van MusicBrainz wordt bevraagd. De standaardwaarde is vijftig resultaten. "
+"Bij Picard 2.8.1 en ouder was dit 25 resultaten en kon dit niet worden "
+"veranderd."
 
 #: ../../config/options_advanced.rst:29
 msgid ""
 "**Ignore the following tracks when determining whether a release is "
 "complete**"
-msgstr ""
+msgstr "**Deze nummers negeren bij het bepalen of een uitgave compleet is**"
 
 #: ../../config/options_advanced.rst:31
 msgid ""
@@ -92,10 +117,15 @@ msgid ""
 "video will be marked as complete if it has all the audio tracks matched with "
 "a file even if the video file is missing."
 msgstr ""
+"Als Picard bepaald of een uitgave compleet is, worden nummers van de "
+"geselecteerde typen (dus video’s, pregapnummers, datanummers of geluidloze "
+"nummers) genegeerd. Als bijvoorbeeld ‘video’ is geselecteerd, wordt een "
+"uitgave met een bonusvideo als compleet gemarkeerd wanneer alle audionummers "
+"aan een bestand zijn gekoppeld, maar het videonummer ontbreekt."
 
 #: ../../config/options_advanced.rst:33
 msgid "**Tags to ignore for comparison**"
-msgstr ""
+msgstr "**Bij het vergelijken te negeren tags**"
 
 #: ../../config/options_advanced.rst:35
 msgid ""
@@ -104,9 +134,14 @@ msgid ""
 "between the file's metadata and the metadata retrieved from MusicBrainz is a "
 "tag listed in this ignore list then the file will be considered unmodified."
 msgstr ""
+"Als Picard bestaande metadata vergelijkt met de data uit MusicBrainz, worden "
+"deze tags genegeerd. Als het enige verschil tussen de metadata in het "
+"bestand en de metadata van MusicBrainz een tag in deze lijst is, beschouwt "
+"Picard het bestand als onveranderd."
 
 #: ../../config/options_advanced.rst:41
+#, fuzzy
 msgid ""
 "Details: :doc:`options_network` / :doc:`options_matching` / :doc:"
 "`options_plugin_execution_order` / :doc:`options_maintenance`"
-msgstr ""
+msgstr "Details: :doc:`options_network` / :doc:`options_matching` / :doc:`options_maintenance`"

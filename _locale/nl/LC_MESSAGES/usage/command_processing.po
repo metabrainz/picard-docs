@@ -3,20 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
-#, fuzzy
+# mfmeulenbelt <mfmeulenbelt@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.9alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-27 12:32-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"PO-Revision-Date: 2026-03-12 17:12+0000\n"
+"Last-Translator: mfmeulenbelt "
+"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/usagecommand_processing/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/command_processing.rst:4
@@ -24,6 +27,8 @@ msgid ""
 ":index:`Command and Batch Processing <command processing, batch processing, "
 "processing; batch>`"
 msgstr ""
+":index:`Opdrachten en groepen bestanden verwerken <opdrachten verwerken, "
+"groepen bestanden verwerken, verwerken; groepen bestanden>`"
 
 #: ../../usage/command_processing.rst:6
 msgid ""
@@ -38,18 +43,32 @@ msgid ""
 "of files to be initiated automatically from other processes. If there is no "
 "instance of that version already running, Picard will start normally."
 msgstr ""
+"Sinds Picard 2.9 zal Picard proberen om maar één exemplaar van het programma "
+"tegelijk uit te voeren. Als Picard wordt opgestart, controleert hij of er al "
+"een ander exemplaar met dezelfde versie, configuratiebestand en "
+"opstartstatus voor plug-ins (-P) actief is. Als dezelfde versie al actief "
+"is, worden bestanden of mappen die in de opdrachtregel van het nieuwe "
+"exemplaar zijn opgegeven, samen met andere opdrachten die met de opties ``-"
+"e`` of ``-exec`` zijn opgegeven, doorgegeven naar het al actieve exemplaar "
+"en wordt het dubbele exemplaar afgesloten. Zo kan je het verwerken van "
+"meerdere bestanden door andere processen laten initiëren. Als er nog geen "
+"exemplaar van die versie actief is, wordt Picard normaal opgestart."
 
 #: ../../usage/command_processing.rst:8
 msgid ""
 "For example if there is an instance of Picard running and a second instance "
 "is started with the command line:"
 msgstr ""
+"Als er bijvoorbeeld al een exemplaar van Picard actief is en er met de "
+"volgende opdrachtregel een tweede exemplaar wordt gestart:"
 
 #: ../../usage/command_processing.rst:14
 msgid ""
 "the load command will be passed to the running instance to load the "
 "specified release, and the second instance will be closed."
 msgstr ""
+"wordt de laadopdracht met de specifieke uitgave doorgegeven aan het actieve "
+"exemplaar en wordt het tweede exemplaar afgesloten."
 
 #: ../../usage/command_processing.rst:16
 msgid ""
@@ -57,14 +76,17 @@ msgid ""
 "automate the tagging process, especially when used with the ``FROM_FILE`` "
 "command to load a standard processing command sequence such as:"
 msgstr ""
+"Zo kan de gebruiker het taggen automatiseren door groepen opdrachten "
+"dynamisch te verwerken, vooral in combinatie met de opdracht ``FROM_FILE`` "
+"om een standaard reeks opdrachten te laden, zoals:"
 
 #: ../../usage/command_processing.rst:26
 msgid "or:"
-msgstr ""
+msgstr "of:"
 
 #: ../../usage/command_processing.rst:37
 msgid "or even something like:"
-msgstr ""
+msgstr "of zelfs iets zoals:"
 
 #: ../../usage/command_processing.rst:72
 msgid ""
