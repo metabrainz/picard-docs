@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 10:03-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-19 14:18-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../../usage/custom_columns.rst:4
 msgid "Custom Columns"
-msgstr ""
+msgstr "Colonnes personnalisées"
 
 #: ../../usage/custom_columns.rst:6
 msgid ""
@@ -28,46 +28,66 @@ msgid ""
 "files and albums. You can enter a simple variable (e.g., ``%artist%``) or a "
 "full Picard script to compute the value shown."
 msgstr ""
+"À partir de Picard v3, vous pouvez créer vos propres colonnes dans les "
+"volets « Cluster » et « Album » de Picard afin d'afficher des informations "
+"supplémentaires sur vos fichiers musicaux et vos albums. Vous pouvez saisir "
+"une simple variable (par exemple, ``%artist%``) ou un script Picard complet "
+"pour calculer la valeur affichée."
 
 #: ../../usage/custom_columns.rst:10
 msgid "Opening the Custom Columns Manager"
-msgstr ""
+msgstr "Ouvrir le gestionnaire de colonnes personnalisées"
 
 #: ../../usage/custom_columns.rst:12
 msgid "To access the Custom Columns manager:"
-msgstr ""
+msgstr "Pour accéder au gestionnaire des colonnes personnalisées :"
 
 #: ../../usage/custom_columns.rst:14
 msgid "Right-click any column header in the Cluster or Album pane."
 msgstr ""
+"Cliquez avec le bouton droit de la souris sur l'en-tête d'une colonne dans "
+"le volet « Cluster » ou « Album »."
 
 #: ../../usage/custom_columns.rst:15
 msgid ""
 "Click \"Manage Custom Columns…\". If the option is disabled, you must first "
 "uncheck \"Lock columns\" in the same menu."
 msgstr ""
+"Cliquez sur « Gérer les colonnes personnalisées… ». Si cette option est "
+"désactivée, vous devez d'abord décocher « Verrouiller les colonnes » dans le "
+"même menu."
 
 #: ../../usage/custom_columns.rst:30
 msgid ""
 "This will open a new window showing the manager, where you can add, edit and "
 "remove custom column definitions."
 msgstr ""
+"Cela ouvrira une nouvelle fenêtre affichant le gestionnaire, dans laquelle "
+"vous pourrez ajouter, modifier et supprimer des définitions de colonnes "
+"personnalisées."
 
 #: ../../usage/custom_columns.rst:45
 msgid ""
 "Select an item from the list to edit or :guilabel:`Delete` it, or click :"
 "guilabel:`New` or :guilabel:`Duplicate` to create a new custom column item."
 msgstr ""
+"Sélectionnez un élément dans la liste pour le modifier ou le :guilabel:"
+"`supprimer`, ou cliquez sur :guilabel:`Nouveau` ou :guilabel:`Dupliquer` "
+"pour créer un nouvel élément de colonne personnalisée."
 
 #: ../../usage/custom_columns.rst:47
 msgid ""
 "The details for the selected item can be edited in the middle section, and "
 "include:"
 msgstr ""
+"Les détails de l'élément sélectionné peuvent être modifiés dans la section "
+"centrale et comprennent :"
 
 #: ../../usage/custom_columns.rst:49
 msgid "**Column Title**: The column title you'll see in the header."
 msgstr ""
+"**Titre de la colonne** : le titre de la colonne qui apparaîtra dans l'en-"
+"tête."
 
 #: ../../usage/custom_columns.rst:50
 msgid ""
@@ -75,103 +95,124 @@ msgid ""
 "simple as a single tag like ``%artist%`` or ``%album%``, or a more complex "
 "script."
 msgstr ""
+"**Expression** : le script Picard permettant de calculer la valeur. Il peut "
+"s'agir d'une simple balise telle que ``%artist%`` ou ``%album%``, ou d'un "
+"script plus complexe."
 
 #: ../../usage/custom_columns.rst:51
 msgid ""
 "**Width**: The width of the column. Leave this blank for automatic sizing."
 msgstr ""
+"**Largeur** : la largeur de la colonne. Laissez ce champ vide pour que la "
+"largeur soit déterminée automatiquement."
 
 #: ../../usage/custom_columns.rst:52
 msgid "**Align**: How the column should be aligned (left or right)"
 msgstr ""
+"**Alignement** : mode d'alignement de la colonne (à gauche ou à droite)"
 
 #: ../../usage/custom_columns.rst:53
 msgid ""
 "**Sorting**: How the values in the column are sorted (Default, Case "
 "Insensitive, Numeric, Natural, etc.)"
 msgstr ""
+"**Tri** : mode de tri des valeurs de la colonne (Par défaut, sans "
+"distinction de casse, numérique, naturel, etc.)"
 
 #: ../../usage/custom_columns.rst:54
 msgid ""
 "**Add to views**: The sections in which the custom column could be applied: "
 "Cluster pane (File view) and/or Album pane (Album view)"
 msgstr ""
+"**Ajouter aux vues** : les sections dans lesquelles la colonne personnalisée "
+"peut être appliquée : le volet « Cluster » (vue « Fichier ») et/ou le volet "
+"« Album » (vue « Album »)"
 
 #: ../../usage/custom_columns.rst:56
 msgid "Basic scripting function and tag documentation is also available."
 msgstr ""
+"Une documentation sur les fonctions de script de base et les balises est "
+"également disponible."
 
 #: ../../usage/custom_columns.rst:60
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
 #: ../../usage/custom_columns.rst:63
 msgid "Adding a simple field column"
-msgstr ""
+msgstr "Ajouter une colonne de champ simple"
 
 #: ../../usage/custom_columns.rst:65
 msgid ""
 "To show \"Bitrate\" as a column in the Cluster pane, set the following "
 "values:"
 msgstr ""
+"Pour afficher la colonne « Débit binaire » dans le volet « Cluster », "
+"définissez les valeurs suivantes :"
 
 #: ../../usage/custom_columns.rst:67
 msgid "**Column Title**: Bitrate"
-msgstr ""
+msgstr "**Titre de la rubrique** : Débit binaire"
 
 #: ../../usage/custom_columns.rst:68
 msgid "**Expression**: ``%_bitrate%``"
-msgstr ""
+msgstr "**Expression** : ``%_bitrate%``"
 
 #: ../../usage/custom_columns.rst:69
 msgid "**Align**: right (optional)"
-msgstr ""
+msgstr "**Alignement** : à droite (facultatif)"
 
 #: ../../usage/custom_columns.rst:70
 msgid "**Sorting**: Natural (optional)"
-msgstr ""
+msgstr "**Tri** : naturel (facultatif)"
 
 #: ../../usage/custom_columns.rst:71
 msgid "**Add to views**: File view (checked)"
-msgstr ""
+msgstr "**Ajouter aux vues** : Vue du fichier (cochée)"
 
 #: ../../usage/custom_columns.rst:75
 msgid "Adding a script column"
-msgstr ""
+msgstr "Ajouter une colonne de script"
 
 #: ../../usage/custom_columns.rst:77
 msgid "To show \"Artist - Title\" with fallbacks, set the following values:"
 msgstr ""
+"Pour afficher « Artiste - Titre » avec des solutions de secours, définissez "
+"les valeurs suivantes :"
 
 #: ../../usage/custom_columns.rst:79
 msgid "**Column Title**: Artist - Title"
-msgstr ""
+msgstr "**Titre de la rubrique** : Artiste - Titre"
 
 #: ../../usage/custom_columns.rst:80
 msgid "**Expression**:"
-msgstr ""
+msgstr "**Expression** :"
 
 #: ../../usage/custom_columns.rst:86
 msgid "**Align**: left"
-msgstr ""
+msgstr "**Alignement** : à gauche"
 
 #: ../../usage/custom_columns.rst:87
 msgid "**Sorting**: Case Insensitive (optional)"
-msgstr ""
+msgstr "**Tri** : sans distinction de casse (facultatif)"
 
 #: ../../usage/custom_columns.rst:88
 msgid "**Add to views**: File view and Album view (both)"
 msgstr ""
+"**Ajouter aux affichages** : Affichage des fichiers et Affichage des albums "
+"(les deux)"
 
 #: ../../usage/custom_columns.rst:92
 msgid ""
 "For the best performance, any scripts used should be short and simple to "
 "avoid excessive processing."
 msgstr ""
+"Pour optimiser les performances, les scripts utilisés doivent être courts et "
+"simples afin d'éviter une charge de traitement excessive."
 
 #: ../../usage/custom_columns.rst:96
 msgid "Showing or Moving Columns"
-msgstr ""
+msgstr "Afficher ou déplacer des colonnes"
 
 #: ../../usage/custom_columns.rst:98
 msgid ""
@@ -179,97 +220,122 @@ msgid ""
 "enable it from the list. New columns are added at the end. To move a column, "
 "drag the column header to the desired position."
 msgstr ""
+"Si votre nouvelle colonne n'apparaît pas immédiatement, cliquez avec le "
+"bouton droit de la souris sur l'en-tête et activez-la dans la liste. Les "
+"nouvelles colonnes sont ajoutées à la fin. Pour déplacer une colonne, faites "
+"glisser son en-tête jusqu'à l'emplacement souhaité."
 
 #: ../../usage/custom_columns.rst:102
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Dépannage"
 
 #: ../../usage/custom_columns.rst:104
 msgid "**Column not visible**"
-msgstr ""
+msgstr "**Colonne non visible**"
 
 #: ../../usage/custom_columns.rst:106
 msgid ""
 "Ensure the correct view is selected and enable the column from the header "
 "menu."
 msgstr ""
+"Assurez-vous que la vue souhaitée est sélectionnée, puis activez la colonne "
+"dans le menu d'en-tête."
 
 #: ../../usage/custom_columns.rst:108
 msgid "**Wrong position**"
-msgstr ""
+msgstr "**Mauvaise position**"
 
 #: ../../usage/custom_columns.rst:110
 msgid "Drag the column header to the desired position."
-msgstr ""
+msgstr "Faites glisser l'en-tête de colonne jusqu'à l'emplacement souhaité."
 
 #: ../../usage/custom_columns.rst:112
 msgid "**Script errors**"
-msgstr ""
+msgstr "**Erreurs de script**"
 
 #: ../../usage/custom_columns.rst:114
 msgid ""
 "Simplify the expression and verify your ``%field%`` names and functions."
 msgstr ""
+"Simplifiez l'expression et vérifiez les noms et les fonctions de vos "
+"variables ``%field%``."
 
 #: ../../usage/custom_columns.rst:118
 msgid "Best Practices and Tips"
-msgstr ""
+msgstr "Bonnes pratiques et conseils"
 
 #: ../../usage/custom_columns.rst:121
 msgid "Performance Considerations"
-msgstr ""
+msgstr "Considérations relatives aux performances"
 
 #: ../../usage/custom_columns.rst:123
 msgid ""
 "**Keep scripts simple**: Complex scripts with many nested functions can slow "
 "down the interface."
 msgstr ""
+"**Privilégiez la simplicité dans vos scripts** : les scripts complexes "
+"comportant de nombreuses fonctions imbriquées peuvent ralentir l'interface."
 
 #: ../../usage/custom_columns.rst:124
 msgid ""
 "**Use field references when possible**: Field references are faster than "
 "scripts for simple values."
 msgstr ""
+"**Utilisez les références de champ lorsque c'est possible** : les références "
+"de champ sont plus rapides que les scripts pour les valeurs simples."
 
 #: ../../usage/custom_columns.rst:125
 msgid ""
 "**Avoid redundant calculations**: Don't repeat the same script logic in "
 "multiple columns."
 msgstr ""
+"**Évitez les calculs redondants** : ne répétez pas la même logique de script "
+"dans plusieurs colonnes."
 
 #: ../../usage/custom_columns.rst:126
 msgid ""
 "**Test with large libraries**: Verify performance with your actual music "
 "collection."
 msgstr ""
+"**Test avec des bibliothèques volumineuses** : Vérifiez les performances "
+"avec votre propre collection musicale."
 
 #: ../../usage/custom_columns.rst:129
 msgid "Column Organization"
-msgstr ""
+msgstr "Organisation des colonnes"
 
 #: ../../usage/custom_columns.rst:131
 msgid ""
 "**Group related columns**: Place similar columns together (e.g., all "
 "technical information in one area)."
 msgstr ""
+"**Regrouper les colonnes** : regroupez les colonnes similaires (par exemple, "
+"toutes les informations techniques dans une même section)."
 
 #: ../../usage/custom_columns.rst:132
 msgid ""
 "**Use meaningful names**: Choose descriptive column titles that clearly "
 "indicate the content."
 msgstr ""
+"**Utilisez des noms pertinents** : choisissez des titres de colonnes "
+"descriptifs qui indiquent clairement leur contenu."
 
 #: ../../usage/custom_columns.rst:133
 msgid ""
 "**Consider alignment**: Use 'right' alignment for numeric values, 'left' for "
 "text."
 msgstr ""
+"**Pensez à l'alignement** : utilisez l'alignement « à droite » pour les "
+"valeurs numériques et « à gauche » pour le texte."
 
 #: ../../usage/custom_columns.rst:134
 msgid ""
 "**Set appropriate widths**: Leave the width blank for automatic sizing, or "
 "set specific widths for consistency."
 msgstr ""
+"**Définissez les largeurs appropriées** : laissez le champ « Largeur » vide "
+"pour un redimensionnement automatique, ou définissez des largeurs "
+"spécifiques pour plus d'uniformité."
 
 #: ../../usage/custom_columns.rst:138
 msgid ""
@@ -277,3 +343,7 @@ msgid ""
 "available functions and syntax, see :doc:`../extending/scripts`. For a "
 "complete list of available variables, see :doc:`../variables/variables`."
 msgstr ""
+"Pour plus d'informations sur le langage de script Picard, notamment sur "
+"toutes les fonctions disponibles et la syntaxe, consultez :doc:`../extending/"
+"scripts`. Pour obtenir la liste complète des variables disponibles, "
+"consultez :doc:`../variables/variables`."

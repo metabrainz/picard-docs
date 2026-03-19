@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-19 12:50-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../../config/options_sessions.rst:4
 msgid ":index:`Sessions <configuration; sessions, sessions; configuration>`"
-msgstr ""
+msgstr ":index:`Sessions <configuration; sessions, sessions; configuration>`"
 
 #: ../../config/options_sessions.rst:6
 msgid ""
@@ -28,38 +28,53 @@ msgid ""
 "albums, specific tracks, and standalone recordings), your manual metadata "
 "edits, and selected configuration options so you can resume work later."
 msgstr ""
+"À partir de Picard v3, vous pouvez enregistrer et restaurer l'état actuel de "
+"votre espace de travail sous forme de fichier de session. Les sessions "
+"conservent l'emplacement des fichiers (non regroupés, en groupes, dans des "
+"albums, des pistes spécifiques et des enregistrements autonomes), les "
+"modifications manuelles que vous avez apportées aux métadonnées, ainsi que "
+"les options de configuration sélectionnées, afin que vous puissiez reprendre "
+"votre travail ultérieurement."
 
 #: ../../config/options_sessions.rst:19
 msgid "The following settings determine how the session files are managed:"
 msgstr ""
+"Les paramètres suivants déterminent la manière dont les fichiers de session "
+"sont gérés :"
 
 #: ../../config/options_sessions.rst:21
 msgid "**Sessions directory**"
-msgstr ""
+msgstr "**Répertoire Sessions**"
 
 #: ../../config/options_sessions.rst:23
 msgid "The directory where the session files are stored."
-msgstr ""
+msgstr "Le répertoire dans lequel sont stockés les fichiers de session."
 
 #: ../../config/options_sessions.rst:25
 msgid "**Auto-save every N minutes**"
-msgstr ""
+msgstr "**Enregistrement automatique toutes les N minutes**"
 
 #: ../../config/options_sessions.rst:27
 msgid ""
 "The interval in minutes between the times the current session is saved. "
 "Sessions will not be automatically saved when the interval is set to 0."
 msgstr ""
+"L'intervalle, en minutes, entre chaque enregistrement de la session en "
+"cours. Les sessions ne seront pas enregistrées automatiquement si cet "
+"intervalle est défini sur 0."
 
 #: ../../config/options_sessions.rst:29
 msgid ""
 "When enabled, Picard periodically saves to the last known session file, or "
 "to ``autosave.mbps.gz`` in the sessions folder if no file is known."
 msgstr ""
+"Lorsque cette option est activée, Picard enregistre périodiquement dans le "
+"dernier fichier de session connu, ou dans le fichier ``autosave.mbps.gz`` "
+"situé dans le dossier « sessions » si aucun fichier n'est connu."
 
 #: ../../config/options_sessions.rst:31
 msgid "**Attempt session backup on unexpected shutdown**"
-msgstr ""
+msgstr "**Tenter une sauvegarde de session en cas d'arrêt inattendu**"
 
 #: ../../config/options_sessions.rst:33
 msgid ""
@@ -67,10 +82,13 @@ msgid ""
 "``autosave.mbps.gz`` in the sessions folder if Picard is unexpectedly shut "
 "down."
 msgstr ""
+"Lorsque cette option est activée, le système tentera d'enregistrer la "
+"session en cours dans le fichier ``autosave.mbps.gz`` situé dans le dossier "
+"« sessions » si Picard venait à se fermer de manière inattendue."
 
 #: ../../config/options_sessions.rst:35
 msgid "**Include MusicBrainz data in saved sessions**"
-msgstr ""
+msgstr "**Intégrer les données MusicBrainz dans les sessions enregistrées**"
 
 #: ../../config/options_sessions.rst:37
 msgid ""
@@ -78,39 +96,53 @@ msgid ""
 "session information. This will speed up the session restore, and also allows "
 "continuing the work offline."
 msgstr ""
+"Lorsque cette option est activée, les données de publication des albums "
+"chargés seront incluses dans les informations de session. Cela accélérera la "
+"restauration de la session et permettra également de poursuivre le travail "
+"hors ligne."
 
 #: ../../config/options_sessions.rst:39
 msgid "**Do not make MusicBrainz requests on restore**"
-msgstr ""
+msgstr "**Ne pas envoyer de requêtes MusicBrainz lors de la restauration**"
 
 #: ../../config/options_sessions.rst:41
 msgid ""
 "When enabled, requests to MusicBrainz will not be made when restoring the "
 "session."
 msgstr ""
+"Lorsque cette option est activée, aucune requête ne sera envoyée à "
+"MusicBrainz lors de la restauration de la session."
 
 #: ../../config/options_sessions.rst:43
 msgid "**Load last saved session on startup**"
-msgstr ""
+msgstr "**Charger la dernière session enregistrée au démarrage**"
 
 #: ../../config/options_sessions.rst:45
 msgid ""
 "When enabled, Picard will load the most recently used session at startup (if "
 "the session information file is still available)."
 msgstr ""
+"Lorsque cette option est activée, Picard chargera la dernière session "
+"utilisée au démarrage (si le fichier contenant les informations de session "
+"est toujours disponible)."
 
 #: ../../config/options_sessions.rst:47
 msgid "**No auto-matching on load**"
-msgstr ""
+msgstr "**Pas de correspondance automatique au chargement**"
 
 #: ../../config/options_sessions.rst:49
 msgid ""
 "When enabled, Picard will not perform any MBID-based auto-matching when "
 "restoring the session."
 msgstr ""
+"Lorsque cette option est activée, Picard n'effectuera aucune mise en "
+"correspondance automatique basée sur le MBID lors de la restauration de la "
+"session."
 
 #: ../../config/options_sessions.rst:53
 msgid ""
 "For additional information about sessions please see the \":doc:`../usage/"
 "sessions`\" section under Usage."
 msgstr ""
+"Pour plus d'informations sur les sessions, veuillez consulter la section « :"
+"doc:`../usage/sessions` » dans la rubrique Utilisation."

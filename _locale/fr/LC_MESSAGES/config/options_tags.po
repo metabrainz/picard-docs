@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: 2020-11-19 16:19-0700\n"
+"PO-Revision-Date: 2026-03-19 11:24-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../../config/options_tags.rst:4
 msgid ":index:`Tag Options <configuration; tag options>`"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../config/options_tags.rst:25
 msgid "**Clear existing tags**"
-msgstr ""
+msgstr "**Supprimer les balises existantes**"
 
 #: ../../config/options_tags.rst:27
 msgid ""
@@ -60,10 +60,15 @@ msgid ""
 "only MusicBrainz metadata. Information you may have added through another "
 "media player such as \"genre\", \"comments\" or \"ratings\" will be removed."
 msgstr ""
+"Si vous cochez cette case, toutes les métadonnées existantes seront "
+"supprimées et vos fichiers ne contiendront plus que les métadonnées de "
+"MusicBrainz. Les informations que vous avez éventuellement ajoutées via un "
+"autre lecteur multimédia, telles que le « genre », les « commentaires » ou "
+"les « notes », seront supprimées."
 
 #: ../../config/options_tags.rst:29
 msgid "**Keep embedded images when clearing tags**"
-msgstr ""
+msgstr "**Conserver les images intégrées lors de la suppression des balises**"
 
 #: ../../config/options_tags.rst:31
 msgid ""
@@ -71,11 +76,13 @@ msgid ""
 "clearing existing tags. Checking this option will keep the embedded images "
 "in the files."
 msgstr ""
+"Par défaut, Picard supprime toutes les images intégrées des fichiers lors de "
+"la suppression des balises existantes. En cochant cette option, les images "
+"intégrées seront conservées dans les fichiers."
 
 #: ../../config/options_tags.rst:33
-#, fuzzy
 msgid "**Remove ID3 tags from FLAC files**"
-msgstr "**Écrire des balises dans des fichiers**"
+msgstr "**Supprimer les balises ID3 des fichiers FLAC**"
 
 #: ../../config/options_tags.rst:35
 msgid ""
@@ -83,21 +90,28 @@ msgid ""
 "for FLAC files. Picard will write Vorbis Comments to FLAC files regardless "
 "of this setting."
 msgstr ""
+"Cochez cette case pour supprimer les balises ID3 des fichiers FLAC. Il est "
+"recommandé d'utiliser les commentaires Vorbis pour les fichiers FLAC. Picard "
+"ajoutera des commentaires Vorbis aux fichiers FLAC, quel que soit ce "
+"paramètre."
 
 #: ../../config/options_tags.rst:37
-#, fuzzy
 msgid "**Remove APEv2 tags from MP3 files**"
-msgstr "**Écrire des balises dans des fichiers**"
+msgstr "**Supprimer les balises APEv2 des fichiers MP3**"
 
 #: ../../config/options_tags.rst:39
 msgid ""
 "Check to remove APEv2 tags from MP3 files - ID3 is recommended for MP3 "
 "files. Picard will write ID3 tags to MP3 files regardless of this setting."
 msgstr ""
+"Cochez cette case pour supprimer les balises APEv2 des fichiers MP3. "
+"L'utilisation des balises ID3 est recommandée pour les fichiers MP3. Picard "
+"ajoutera des balises ID3 aux fichiers MP3, quel que soit ce paramètre."
 
 #: ../../config/options_tags.rst:41
 msgid "**Fix missing seekpoints for FLAC files**"
 msgstr ""
+"**Correction des points de recherche manquants dans les fichiers FLAC**"
 
 #: ../../config/options_tags.rst:43
 msgid ""
@@ -105,39 +119,48 @@ msgid ""
 "metadata block. When this option is enabled empty and hence unused seek "
 "table blocks will be removed from the files on saving."
 msgstr ""
+"Certains logiciels rencontrent des difficultés pour traiter les fichiers "
+"FLAC dont le bloc de métadonnées de la table de recherche est vide. Lorsque "
+"cette option est activée, les blocs de la table de recherche vides, et donc "
+"inutilisés, seront supprimés des fichiers lors de l'enregistrement."
 
 #: ../../config/options_tags.rst:45
 msgid ""
 "**Preserve these tags from being cleared or overwritten with MusicBrainz "
 "data**"
 msgstr ""
+"**Veillez à ce que ces balises ne soient pas supprimées ou écrasées par les "
+"données de MusicBrainz**"
 
 #: ../../config/options_tags.rst:47
 msgid ""
 "This is an advanced option: If you have tags which you need to preserve, "
 "enter their names here to stop Picard from overwriting them."
 msgstr ""
+"Il s'agit d'une option avancée : si vous souhaitez conserver certaines "
+"balises, saisissez leurs noms ici pour empêcher Picard de les écraser."
 
 #: ../../config/options_tags.rst:49
 msgid "**Do not sanitize dates for these tag formats**"
-msgstr ""
+msgstr "**Ne pas formater les dates pour ces formats de balises**"
 
 #: ../../config/options_tags.rst:51
 msgid ""
 "Normally Picard will sanitize the dates stored in tags. This option allows "
 "you to override that sanitization for the selected formats."
 msgstr ""
+"En règle générale, Picard nettoie les dates stockées dans les balises. Cette "
+"option vous permet de désactiver ce nettoyage pour les formats sélectionnés."
 
 #: ../../config/options_tags.rst:57
-#, fuzzy
 msgid ""
 "Details: :doc:`options_tags_compatibility_id3` / :doc:"
 "`options_tags_compatibility_aac` / :doc:`options_tags_compatibility_ac3` / :"
 "doc:`options_tags_compatibility_wave`"
 msgstr ""
-"Détails: :doc:`options_before_tagging` / :doc:"
-"`options_tags_compatibility_id3` / :doc:`options_tags_compatibility_aac` / :"
-"doc:`options_tags_compatibility_ac3` / :doc:`options_tags_compatibility_wave`"
+"Détails: :doc:`options_tags_compatibility_id3` / :doc:"
+"`options_tags_compatibility_aac` / :doc:`options_tags_compatibility_ac3` / :"
+"doc:`options_tags_compatibility_wave`"
 
 #~ msgid "Tag Options"
 #~ msgstr "Options de balise"

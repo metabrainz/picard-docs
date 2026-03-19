@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-05 09:08-0600\n"
-"PO-Revision-Date: 2025-08-12 08:36+0000\n"
+"PO-Revision-Date: 2026-03-19 12:59-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
-"Language-Team: French <https://translations.metabrainz.org/projects/"
-"picard-docs/variablesvariables_basic/fr/>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/variablesvariables_basic/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Poedit 3.0.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../variables/variables_basic.rst:8
@@ -95,7 +95,6 @@ msgid "**_albumartists_countries**"
 msgstr "**_albumartists_countries**"
 
 #: ../../variables/variables_basic.rst:28
-#, fuzzy
 msgid ""
 "A multi-value variable containing the country codes for all of the credited "
 "album artists, in the same order as the artists. Duplicate country codes "
@@ -105,13 +104,14 @@ msgid ""
 "from Great Britain and there are two other credited artists from Canada, the "
 "value would be \"GB; CA; CA\". (*since Picard 3.0*)"
 msgstr ""
-"Variable à valeurs multiples contenant les codes pays de tous les artistes "
-"crédités de l'album, dans le même ordre que les artistes. Les codes de pays "
-"en double seront affichés s'il y a plus d'un artiste du même pays. Si un "
-"code pays n'est pas fourni par le webservice, le code \"XX\" sera utilisé "
-"pour indiquer un pays inconnu. Par exemple, si le premier artiste crédité "
-"vient de Grande-Bretagne et que deux autres artistes crédités viennent du "
-"Canada, la valeur sera \"GB; CA; CA\"."
+"Une variable à valeurs multiples contenant les codes pays de tous les "
+"artistes crédités sur l'album, dans le même ordre que les artistes. Les "
+"codes pays seront répétés s'il y a plusieurs artistes originaires du même "
+"pays. Si le service web ne fournit pas de code pays, le code « XX » sera "
+"utilisé pour indiquer un pays inconnu. Par exemple, si le premier artiste "
+"crédité est originaire de Grande-Bretagne et qu'il y a deux autres artistes "
+"crédités originaires du Canada, la valeur serait « GB ; CA ; CA ». (*depuis "
+"Picard 3.0*)"
 
 #: ../../variables/variables_basic.rst:30
 msgid "**_albumartists_sort**"
@@ -130,7 +130,6 @@ msgid "**_artists_countries**"
 msgstr "**_artists_countries**"
 
 #: ../../variables/variables_basic.rst:36
-#, fuzzy
 msgid ""
 "A multi-value variable containing the country codes for all of the credited "
 "track artists, in the same order as the artists. Duplicate country codes "
@@ -140,13 +139,14 @@ msgid ""
 "from Great Britain and there are two other credited artists from Canada, the "
 "value would be \"GB; CA; CA\". (*since Picard 3.0*)"
 msgstr ""
-"Variable à valeurs multiples contenant les codes de pays de tous les "
-"artistes crédités de la piste, dans le même ordre que les artistes. Les "
-"codes de pays en double seront affichés s'il y a plus d'un artiste du même "
-"pays. Si un code pays n'est pas fourni par le webservice, le code \"XX\" "
-"sera utilisé pour indiquer un pays inconnu. Par exemple, si le premier "
-"artiste crédité vient de Grande-Bretagne et que deux autres artistes "
-"crédités viennent du Canada, la valeur sera \"GB; CA; CA\"."
+"Une variable à valeurs multiples contenant les codes pays de tous les "
+"artistes crédités pour le morceau, dans le même ordre que les artistes. Les "
+"codes pays seront répétés s'il y a plusieurs artistes originaires du même "
+"pays. Si le service web ne fournit pas de code pays, le code « XX » sera "
+"utilisé pour indiquer un pays inconnu. Par exemple, si le premier artiste "
+"crédité est originaire de Grande-Bretagne et qu'il y a deux autres artistes "
+"crédités originaires du Canada, la valeur serait « GB ; CA ; CA ». (*depuis "
+"Picard 3.0*)"
 
 #: ../../variables/variables_basic.rst:38
 msgid "**_artists_sort**"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: ../../variables/variables_basic.rst:50
 msgid "**_folksonomy_tags**"
-msgstr ""
+msgstr "**_folksonomy_tags**"
 
 #: ../../variables/variables_basic.rst:52
 msgid ""
@@ -199,11 +199,14 @@ msgid ""
 "Requires the :doc:`Use genres from MusicBrainz <../config/options_genres>` "
 "option to be enabled. (*since Picard 3.0*)"
 msgstr ""
+"Liste brute de toutes les balises de folksonomie non liées à un genre, "
+"chargées depuis MusicBrainz. Nécessite l'activation de l'option :doc:"
+"`Utiliser les genres de MusicBrainz <../config/options_genres>`. (*depuis "
+"Picard 3.0*)"
 
 #: ../../variables/variables_basic.rst:54
-#, fuzzy
 msgid "**_genres**"
-msgstr "**_work_series**"
+msgstr "**_genres**"
 
 #: ../../variables/variables_basic.rst:56
 msgid ""
@@ -211,6 +214,9 @@ msgid ""
 "`Use genres from MusicBrainz <../config/options_genres>` option to be "
 "enabled.  (*since Picard 3.0*)"
 msgstr ""
+"Liste non filtrée de tous les genres importés depuis MusicBrainz. Nécessite "
+"l'activation de l'option :doc:`Utiliser les genres de MusicBrainz <../config/"
+"options_genres>`.  (*depuis Picard 3.0*)"
 
 #: ../../variables/variables_basic.rst:58
 msgid "**_multiartist**"

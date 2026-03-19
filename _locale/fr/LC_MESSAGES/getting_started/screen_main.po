@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-06 09:54-0700\n"
-"PO-Revision-Date: 2022-05-16 18:18+0000\n"
+"PO-Revision-Date: 2026-03-19 10:59-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
 "docs/getting_startedscreen_main/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.12\n"
+"X-Generator: Poedit 3.0.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../getting_started/screen_main.rst:8
@@ -104,37 +104,34 @@ msgstr ""
 "des fichiers audio sélectionnés."
 
 #: ../../getting_started/screen_main.rst:31
-#, fuzzy
 msgid ""
 "**Status Bar**: The bar at the bottom of the screen shows information about "
 "the current operation of Picard, including such items as number of files, "
 "albums, and pending downloads, and if there are any plugin updates "
 "available. |nl|"
 msgstr ""
-"**Barre d'état** : La barre en bas de l'écran affiche des informations sur "
-"le fonctionnement actuel de Picard, y compris des éléments tels que le "
-"nombre de fichiers, d'albums et de téléchargements en attente. |nl|"
+"**Barre d'état** : La barre située en bas de l'écran affiche des "
+"informations sur le fonctionnement actuel de Picard, notamment le nombre de "
+"fichiers, d'albums et de téléchargements en attente, ainsi que la "
+"disponibilité éventuelle de mises à jour de plugins. |nl|"
 
 #: ../../getting_started/screen_main.rst:33
-#, fuzzy
 msgid ""
 "Picard is available for different operating systems. And while Picard's "
 "functionality is overall the same the specific look of the user interface "
 "can be slightly different based on the operating system."
 msgstr ""
-"Picard est disponible pour différents systèmes d'exploitation. Et bien que "
-"les fonctionnalités de Picard soient globalement les mêmes, l'aspect "
-"spécifique de l'interface utilisateur peut être légèrement différent en "
-"fonction du système d'exploitation. Tout au long de la documentation, des "
-"captures d'écran prises sur différents systèmes d'exploitation sont "
-"utilisées. Vous trouverez ci-dessous une sélection de captures d'écran de "
-"l'écran principal de Picard sur différents systèmes :"
+"Picard est disponible pour différents systèmes d'exploitation. Bien que les "
+"fonctionnalités de Picard soient globalement les mêmes, l'apparence de "
+"l'interface utilisateur peut varier légèrement selon le système "
+"d'exploitation."
 
 #: ../../getting_started/screen_main.rst:38
-#, fuzzy
 msgid ""
 ":index:`Filtering the Main Screen <user interface; main screen filtering>`"
-msgstr ":index:`Écran principal <interface utilisateur; écran principal>`"
+msgstr ""
+":index:`Filtrage de l'écran principal <interface utilisateur; filtrage de "
+"l'écran principal>`"
 
 #: ../../getting_started/screen_main.rst:40
 msgid ""
@@ -143,6 +140,11 @@ msgid ""
 "displayed or hidden from the :menuselection:`\"View\"` menu, or using the "
 "keyboard shortcut :kbd:`Ctrl+Shift+F`."
 msgstr ""
+"Les éléments affichés dans le volet « Cluster » et le volet « Album » "
+"peuvent être filtrés afin de permettre une consultation rapide des "
+"informations sélectionnées. Les barres de filtrage peuvent être affichées ou "
+"masquées à partir du menu :menuselection:`« Affichage »`, ou à l'aide du "
+"raccourci clavier :kbd:`Ctrl+Maj+F`."
 
 #: ../../getting_started/screen_main.rst:45
 msgid ""
@@ -150,36 +152,49 @@ msgid ""
 "and enter the filter text to use for that pane. The items will be displayed "
 "or hidden based on the filter criteria entered."
 msgstr ""
+"Pour filtrer les éléments d'un volet, il suffit de sélectionner un ou "
+"plusieurs filtres et de saisir le texte de filtrage à utiliser pour ce "
+"volet. Les éléments seront affichés ou masqués en fonction des critères de "
+"filtrage saisis."
 
 #: ../../getting_started/screen_main.rst:47
 msgid ""
 "When the :guilabel:`Filters` button is clicked, a dialog will be displayed "
 "to allow to you to select the filters to use for that pane."
 msgstr ""
+"Lorsque vous cliquez sur le bouton :guilabel:`Filtres`, une boîte de "
+"dialogue s'affiche pour vous permettre de sélectionner les filtres à "
+"utiliser pour ce volet."
 
 #: ../../getting_started/screen_main.rst:58
 msgid "When filtering is applied, items will only be displayed if:"
-msgstr ""
+msgstr "Lorsque le filtrage est appliqué, les éléments ne s'affichent que si :"
 
 #: ../../getting_started/screen_main.rst:60
 msgid "no filters are selected or no filter text has been entered;"
 msgstr ""
+"aucun filtre n'est sélectionné ou aucun texte de filtre n'a été saisi ;"
 
 #: ../../getting_started/screen_main.rst:61
 msgid "no tags are found that match the selected filters;"
-msgstr ""
+msgstr "Aucune balise ne correspond aux filtres sélectionnés ;"
 
 #: ../../getting_started/screen_main.rst:62
 msgid ""
 "a tag is found that matches one of the selected filters and the filter text "
 "is found within the tag value."
 msgstr ""
+"une balise correspondant à l'un des filtres sélectionnés est trouvée et le "
+"texte du filtre figure dans la valeur de la balise."
 
 #: ../../getting_started/screen_main.rst:64
 msgid ""
 "Items will not be displayed if one or more tags were found in the selected "
 "filters and the filter text was not found in any values of those tags."
 msgstr ""
+"Les éléments ne s'afficheront pas si un ou plusieurs balises ont été "
+"détectés dans les filtres sélectionnés et que le texte du filtre n'apparaît "
+"dans aucune des valeurs de ces balises."
 
 #~ msgid "Main Screen"
 #~ msgstr "Écran principal"

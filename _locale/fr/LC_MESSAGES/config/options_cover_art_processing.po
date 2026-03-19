@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-19 11:56-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../../config/options_cover_art_processing.rst:4
 msgid ":index:`Cover Art Processing <pair: configuration; cover art>`"
-msgstr ""
+msgstr ":index:`Traitement des pochettes <pair: configuration; pochette>`"
 
 #: ../../config/options_cover_art_processing.rst:6
 msgid ""
@@ -28,10 +28,16 @@ msgid ""
 "images saved as a separate file. More filters and processors can be added by "
 "`plugins <https://picard.musicbrainz.org/plugins/>`_."
 msgstr ""
+"Picard permet de filtrer et de traiter les images téléchargées depuis les "
+"fournisseurs. Le traitement d'image permet de distinguer les images "
+"intégrées dans des balises de celles enregistrées dans un fichier séparé. "
+"D'autres filtres et modules de traitement peuvent être ajoutés via les "
+"`plugins <https://picard.musicbrainz.org/plugins/>`_."
 
 #: ../../config/options_cover_art_processing.rst:19
 msgid "**Discard images if below the given size**"
 msgstr ""
+"**Supprimer les images dont la taille est inférieure à celle indiquée**"
 
 #: ../../config/options_cover_art_processing.rst:21
 msgid ""
@@ -39,10 +45,13 @@ msgid ""
 "the given values. With some providers, like the Cover Art Archive, the image "
 "is discarded before it is downloaded."
 msgstr ""
+"Ce filtre écartera toute image dont la largeur ou la hauteur est inférieure "
+"aux valeurs indiquées. Chez certains fournisseurs, comme Cover Art Archive, "
+"l'image est écartée avant même d'être téléchargée."
 
 #: ../../config/options_cover_art_processing.rst:23
 msgid "**Resize images to the given size**"
-msgstr ""
+msgstr "**Redimensionner les images à la taille indiquée**"
 
 #: ../../config/options_cover_art_processing.rst:25
 msgid ""
@@ -50,6 +59,10 @@ msgid ""
 "allow images to increase in size, though at a loss of image quality. There "
 "are a few options as to how images are resized:"
 msgstr ""
+"Les images peuvent être redimensionnées aux dimensions indiquées. Vous "
+"pouvez également choisir d'autoriser ou non l'agrandissement des images, au "
+"prix toutefois d'une perte de qualité. Plusieurs options sont disponibles "
+"pour le redimensionnement des images :"
 
 #: ../../config/options_cover_art_processing.rst:27
 msgid ""
@@ -58,18 +71,28 @@ msgid ""
 "target dimension if the source image and target dimensions have different "
 "aspect ratios."
 msgstr ""
+"**Conserver les proportions** : redimensionnez l'image source afin qu'elle "
+"s'adapte aux dimensions cibles. L'une des dimensions finales de l'image peut "
+"être inférieure à la dimension cible si l'image source et les dimensions "
+"cibles ont des proportions différentes."
 
 #: ../../config/options_cover_art_processing.rst:29
 msgid ""
 "**Scale to width**: Scale the width of the source image to the target width "
 "while keeping aspect ratio."
 msgstr ""
+"**Redimensionner à la largeur** : redimensionner la largeur de l'image "
+"source pour l'adapter à la largeur cible tout en conservant le rapport "
+"hauteur/largeur."
 
 #: ../../config/options_cover_art_processing.rst:31
 msgid ""
 "**Scale to height**: Scale the height of the source image to the target "
 "height while keeping aspect ratio."
 msgstr ""
+"**Redimensionner en hauteur** : redimensionner la hauteur de l'image source "
+"pour l'adapter à la hauteur cible tout en conservant le rapport hauteur/"
+"largeur."
 
 #: ../../config/options_cover_art_processing.rst:33
 msgid ""
@@ -78,26 +101,35 @@ msgid ""
 "dimensions have different aspect ratios, then there will be overflow in one "
 "direction which will be (center) cropped."
 msgstr ""
+"**Recadrer pour ajuster** : redimensionnez l'image source de manière à ce "
+"qu'elle occupe entièrement l'espace défini dans les deux sens. Si l'image "
+"source et l'espace défini ont des formats différents, il y aura un "
+"débordement dans un sens, qui sera recadré (au centre)."
 
 #: ../../config/options_cover_art_processing.rst:35
 msgid ""
 "**Stretch to fit**: Stretch the image to exactly fit the specified "
 "dimensions, distorting it if necessary."
 msgstr ""
+"**Redimensionner pour ajuster** : redimensionner l'image pour qu'elle "
+"corresponde exactement aux dimensions spécifiées, en la déformant si "
+"nécessaire."
 
 #: ../../config/options_cover_art_processing.rst:37
 msgid "**Convert images to the given format**"
-msgstr ""
+msgstr "**Convertir les images au format indiqué**"
 
 #: ../../config/options_cover_art_processing.rst:39
 msgid ""
 "Images can be converted to the given format. The available formats are JPEG, "
 "PNG, WebP, and TIFF."
 msgstr ""
+"Les images peuvent être converties au format indiqué. Les formats "
+"disponibles sont JPEG, PNG, WebP et TIFF."
 
 #: ../../config/options_cover_art_processing.rst:41
 msgid "**Processed image quality**"
-msgstr ""
+msgstr "**Qualité de l'image traitée**"
 
 #: ../../config/options_cover_art_processing.rst:43
 msgid ""
@@ -105,3 +137,7 @@ msgid ""
 "processing quality. The quality factor must be in the range 0 to 100. "
 "Specify 0 to obtain small compressed files, 100 for large uncompressed files."
 msgstr ""
+"Lorsque les images sont traitées et enregistrées au format JPEG ou WebP, "
+"vous pouvez définir la qualité de traitement. Le facteur de qualité doit "
+"être compris entre 0 et 100. Indiquez 0 pour obtenir des fichiers compressés "
+"de petite taille, et 100 pour des fichiers non compressés de grande taille."

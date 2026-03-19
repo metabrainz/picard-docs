@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: 2023-01-04 23:51+0000\n"
+"PO-Revision-Date: 2026-03-19 12:01-0600\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translate.uploadedlobster.com/projects/picard-"
 "docs/configoptions_filerenaming/fr/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15\n"
+"X-Generator: Poedit 3.0.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_filerenaming.rst:6
@@ -225,9 +225,8 @@ msgstr ""
 "travail à faire, et la suppression du répertoire le clarifie."
 
 #: ../../config/options_filerenaming.rst:60
-#, fuzzy
 msgid "**Overwrite existing files**"
-msgstr "**Déplacer des fichiers supplémentaires**"
+msgstr "**Remplacer les fichiers existants**"
 
 #: ../../config/options_filerenaming.rst:62
 msgid ""
@@ -235,6 +234,10 @@ msgid ""
 "that specific additional file is skipped, and the original file is left "
 "untouched. This ensures that no data is unintentionally overwritten."
 msgstr ""
+"À moins que cette option ne soit sélectionnée, si un fichier est présent à "
+"la destination, l'opération concernant ce fichier supplémentaire est ignorée "
+"et le fichier d'origine reste inchangé. Cela permet d'éviter tout écrasement "
+"involontaire des données."
 
 #: ../../config/options_filerenaming.rst:64
 msgid "**Rename files when saving**"

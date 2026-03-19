@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-11 11:43-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-19 13:55-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../../usage/sessions.rst:4
 msgid ":index:`Sessions Management <sessions management>`"
-msgstr ""
+msgstr ":index:`Gestion des sessions <gestion des sessions>`"
 
 #: ../../usage/sessions.rst:6
 msgid ""
@@ -28,21 +28,33 @@ msgid ""
 "albums, specific tracks, and standalone recordings), your manual metadata "
 "edits, and selected configuration options so you can resume work later."
 msgstr ""
+"À partir de la version 3, Picard permet d'enregistrer et de restaurer l'état "
+"actuel de votre espace de travail sous forme de fichier de session. Les "
+"sessions conservent l'emplacement des fichiers (fichiers non regroupés, "
+"groupes, albums, pistes spécifiques et enregistrements autonomes), les "
+"modifications manuelles apportées aux métadonnées ainsi que les options de "
+"configuration sélectionnées, afin que vous puissiez reprendre votre travail "
+"ultérieurement."
 
 #: ../../usage/sessions.rst:10
 msgid ""
 "Session files use the ``.mbps.gz`` extension and are gzip-compressed YAML. "
 "Only user-visible tags are stored; internal tags are excluded."
 msgstr ""
+"Les fichiers de session portent l'extension ``.mbps.gz`` et sont des "
+"fichiers YAML compressés au format gzip. Seules les balises visibles par "
+"l'utilisateur sont enregistrées ; les balises internes sont exclues."
 
 #: ../../usage/sessions.rst:14
 msgid "File menu actions"
-msgstr ""
+msgstr "Actions du menu Fichier"
 
 #: ../../usage/sessions.rst:16
 msgid ""
 "The following actions are available under the :menuselection:`File` menu:"
 msgstr ""
+"Les actions suivantes sont disponibles dans le menu :menuselection:"
+"`Fichier` :"
 
 #: ../../usage/sessions.rst:18
 msgid ""
@@ -50,18 +62,27 @@ msgid ""
 "If there is an active session, Picard will prompt you to save before loading "
 "the new one."
 msgstr ""
+":menuselection:`Charger une session…` : Ouvre un fichier de session et "
+"rétablit son état. Si une session est déjà active, Picard vous demandera de "
+"l'enregistrer avant de charger la nouvelle."
 
 #: ../../usage/sessions.rst:19
 msgid ""
 ":menuselection:`Recent Sessions`: Quickly reopen one of the most recent "
 "session files. Use \"Clear Recent Sessions\" to empty the list."
 msgstr ""
+":menuselection:`Sessions récentes` : Rouvrez rapidement l'un des fichiers de "
+"session les plus récents. Utilisez « Effacer les sessions récentes » pour "
+"vider la liste."
 
 #: ../../usage/sessions.rst:20
 msgid ""
 ":menuselection:`Save Session`: Save the current session to the last used "
 "file. If none, Picard will prompt for a path."
 msgstr ""
+":menuselection:`Enregistrer la session` : Enregistre la session en cours "
+"dans le dernier fichier utilisé. S'il n'y en a pas, Picard vous demandera "
+"d'indiquer un chemin d'accès."
 
 #: ../../usage/sessions.rst:21
 msgid ""
@@ -69,6 +90,10 @@ msgid ""
 "no prior session file, Picard suggests a default filename based on the first "
 "detected artist or a timestamp."
 msgstr ""
+":menuselection:`Enregistrer la session sous…` : Demander systématiquement un "
+"chemin d'accès. En l'absence de fichier de session existant, Picard propose "
+"un nom de fichier par défaut basé sur le premier artiste détecté ou sur un "
+"horodatage."
 
 #: ../../usage/sessions.rst:22
 msgid ""
@@ -76,38 +101,53 @@ msgid ""
 "clusters and albums). You will be prompted to save if there is content to "
 "preserve."
 msgstr ""
+":menuselection:`Nouvelle session` : Ferme la session en cours (efface les "
+"fichiers, les groupes et les albums). Le système vous demandera de "
+"sauvegarder s'il y a du contenu à conserver."
 
 #: ../../usage/sessions.rst:26
 msgid "What gets saved"
-msgstr ""
+msgstr "Ce qui est enregistré"
 
 #: ../../usage/sessions.rst:28
 msgid ""
 "**File placement**: Unclustered, in clusters, on albums, on specific tracks, "
 "and standalone recordings (NAT)."
 msgstr ""
+"**Emplacement des fichiers** : non regroupés, en groupes, dans des albums, "
+"sur des pistes spécifiques et sous forme d'enregistrements autonomes (NAT)."
 
 #: ../../usage/sessions.rst:29
 msgid ""
 "**Manual edits (overrides)**: Only your changes versus Picard's base/"
 "scripted metadata are stored, not the entire tag set."
 msgstr ""
+"**Modifications manuelles (remplacements)** : seules vos modifications par "
+"rapport aux métadonnées de base ou prédéfinies de Picard sont enregistrées, "
+"et non l'ensemble des balises."
 
 #: ../../usage/sessions.rst:30
 msgid ""
 "**Unmatched albums**: Albums loaded into Picard without matched files are "
 "preserved."
 msgstr ""
+"**Albums non appariés** : les albums importés dans Picard sans fichiers "
+"correspondants sont conservés."
 
 #: ../../usage/sessions.rst:31
 msgid "**UI state**: Album expansion state in the album view."
 msgstr ""
+"**État de l'interface utilisateur** : état d'expansion de l'album dans la "
+"vue Album."
 
 #: ../../usage/sessions.rst:32
 msgid ""
 "**Core options snapshot**: The current values of Rename Files, Move Files, "
 "and Don't Write Tags."
 msgstr ""
+"**Aperçu des options principales** : les valeurs actuelles des options « "
+"Renommer les fichiers », « Déplacer les fichiers » et « Ne pas écrire les "
+"balises »."
 
 #: ../../usage/sessions.rst:33
 msgid ""
@@ -115,16 +155,23 @@ msgid ""
 "release data for loaded albums so sessions can be restored without waiting "
 "for online lookups."
 msgstr ""
+"**Cache MusicBrainz (facultatif)** : s'il est activé dans les paramètres, "
+"Picard intègre les données relatives aux albums chargés, ce qui permet de "
+"restaurer les sessions sans avoir à attendre les recherches en ligne."
 
 #: ../../usage/sessions.rst:37
 msgid "Offline and fast restores"
-msgstr ""
+msgstr "Restaurations hors ligne et rapides"
 
 #: ../../usage/sessions.rst:39
 msgid ""
 "To enable fully offline restores, turn on both: - \"Include MusicBrainz data "
 "in saved sessions\" - \"Do not make MusicBrainz requests on restore\""
 msgstr ""
+"Pour permettre des restaurations entièrement hors ligne, activez les deux "
+"options suivantes : - « Inclure les données MusicBrainz dans les sessions "
+"enregistrées » - « Ne pas envoyer de requêtes MusicBrainz lors de la "
+"restauration »"
 
 #: ../../usage/sessions.rst:43
 msgid ""
@@ -133,16 +180,24 @@ msgid ""
 "network requests are disabled, that album cannot be loaded and its "
 "referenced files will not be auto-matched."
 msgstr ""
+"Picard reconstituera les albums à partir du cache intégré et ignorera les "
+"requêtes Web. Si un album référencé par la session ne dispose pas de cache "
+"intégré et que les requêtes réseau sont désactivées, cet album ne pourra pas "
+"être chargé et les fichiers qui y sont référencés ne seront pas "
+"automatiquement mis en correspondance."
 
 #: ../../usage/sessions.rst:45
 msgid ""
 "With online access, Picard can still preload from the embedded cache and "
 "then refresh data from MusicBrainz for accuracy."
 msgstr ""
+"Même avec une connexion Internet, Picard peut toujours charger les données à "
+"partir du cache intégré, puis les actualiser à partir de MusicBrainz pour "
+"garantir leur exactitude."
 
 #: ../../usage/sessions.rst:49
 msgid "Safe restore of local work"
-msgstr ""
+msgstr "Restauration sécurisée du travail local"
 
 #: ../../usage/sessions.rst:51
 msgid ""
@@ -150,10 +205,15 @@ msgid ""
 "by existing MBIDs during the restore. Files will be placed exactly as saved, "
 "and your unsaved edits are preserved and re-applied."
 msgstr ""
+"Si l'option « Pas de correspondance automatique au chargement » est activée, "
+"Picard ne fera pas correspondre automatiquement les fichiers aux MBID "
+"existants lors de la restauration. Les fichiers seront placés exactement "
+"comme ils ont été enregistrés, et vos modifications non enregistrées seront "
+"conservées et réappliquées."
 
 #: ../../usage/sessions.rst:55
 msgid "Session storage location"
-msgstr ""
+msgstr "Emplacement de stockage de la session"
 
 #: ../../usage/sessions.rst:57
 msgid ""
@@ -162,12 +222,20 @@ msgid ""
 "Advanced / Sessions option settings page. Recent and last-used paths are "
 "remembered for convenience."
 msgstr ""
+"Par défaut, Picard enregistre les sessions dans le sous-répertoire "
+"``sessions`` situé dans votre répertoire de configuration. Vous pouvez "
+"définir un répertoire personnalisé dans la page des paramètres « Avancé / "
+"Sessions ». Les chemins d'accès récents et les derniers utilisés sont "
+"mémorisés pour plus de commodité."
 
 #: ../../usage/sessions.rst:62
 msgid ""
 "\"Recent Sessions\" lists up to five items. If a file in the list no longer "
 "exists and you select it, Picard will notify you and remove it from the list."
 msgstr ""
+"La liste « Sessions récentes » affiche jusqu'à cinq éléments. Si un fichier "
+"de la liste n'existe plus et que vous le sélectionnez, Picard vous en "
+"informera et le supprimera de la liste."
 
 #: ../../usage/sessions.rst:64
 msgid ""
@@ -175,6 +243,10 @@ msgid ""
 "Session\" will prompt for a file (use \"Save Session As…\" to choose a new "
 "path at any time)."
 msgstr ""
+"« Nouvelle session » efface le dernier chemin d'accès utilisé. Ensuite, « "
+"Enregistrer la session » vous invitera à choisir un fichier (utilisez « "
+"Enregistrer la session sous… » pour choisir un nouveau chemin d'accès à tout "
+"moment)."
 
 #: ../../usage/sessions.rst:66
 msgid ""
@@ -182,6 +254,10 @@ msgid ""
 "inside the session. All other settings remain global; use \":doc:`Option "
 "Profiles <option_profiles>`\" if you need different configurations."
 msgstr ""
+"Seul un petit ensemble d'options essentielles (Renommer/Déplacer/Ne pas "
+"écrire de balises) est enregistré dans la session. Tous les autres "
+"paramètres restent globaux ; utilisez « :doc:`Profils d'options "
+"<option_profiles>` » si vous avez besoin de configurations différentes."
 
 #: ../../usage/sessions.rst:70
 msgid ""
@@ -189,9 +265,16 @@ msgid ""
 "avoid sharing session files unless you are comfortable exposing that "
 "information."
 msgstr ""
+"Les fichiers de session contiennent des chemins d'accès absolus et les "
+"modifications que vous avez apportées manuellement aux balises. Évitez de "
+"partager ces fichiers de session, sauf si vous n'avez aucune objection à ce "
+"que ces informations soient divulguées."
 
 #: ../../usage/sessions.rst:74
 msgid ""
 "For additional information about sessions settings please see the \":doc:`../"
 "config/options_sessions`\" section under Configuration."
 msgstr ""
+"Pour plus d'informations sur les paramètres de session, veuillez consulter "
+"la section « :doc:`../config/options_sessions` » dans la rubrique "
+"Configuration."
