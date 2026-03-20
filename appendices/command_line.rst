@@ -7,7 +7,7 @@ Picard can be started from the command line with the following arguments:
 
 .. code-block:: bash
 
-   run_picard.py [-h] [-a AUDIT] [-c CONFIG_FILE] [-d] [-e COMMAND [COMMAND ...]] [-M] [-N] [-P] [--no-crash-dialog] [-s] [-v] [-V] [FILE_OR_URL ...]
+   run_picard.py [-h] [-a AUDIT] [-c CONFIG_FILE] [-d] [-e COMMAND [COMMAND ...]] [-M] [-N] [-P] [--no-crash-dialog] [--debug-opts] [-s] [-v] [-V] [FILE_OR_URL ...]
 
 where the options are:
 
@@ -26,6 +26,10 @@ where the options are:
 .. option:: -d, --debug
 
    enable debug-level logging
+
+.. option:: --debug-opts [OPTIONS]
+
+   comma-separated list of debug options. Use --debug-opts without value to list available options
 
 .. option:: -e COMMAND, --exec COMMAND
 
