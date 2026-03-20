@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 19:57-0700\n"
+"POT-Creation-Date: 2026-03-20 12:43-0600\n"
 "PO-Revision-Date: 2026-03-12 17:13+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Last-Translator: mfmeulenbelt <mfmeulenbelt@users.noreply.translations."
+"metabrainz.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_network/nl/>\n"
 "Language: nl\n"
@@ -60,11 +60,19 @@ msgstr ""
 "Standaard breekt Picard lopende netwerkverzoeken na dertig seconden "
 "inactiviteit af. Je kan de wachttijd hier veranderen."
 
-#: ../../config/options_network.rst:30
+#: ../../config/options_network.rst:27
+msgid "**Cache size (MB)**"
+msgstr ""
+
+#: ../../config/options_network.rst:29
+msgid "Size in MB of the on-disk cache for network requests."
+msgstr ""
+
+#: ../../config/options_network.rst:34
 msgid "**Browser Integration**"
 msgstr "**Browserintegratie**"
 
-#: ../../config/options_network.rst:32
+#: ../../config/options_network.rst:36
 msgid ""
 "The browser integration allows you to load releases and recordings into "
 "Picard directly from the MusicBrainz website. Once you have opened "
@@ -78,15 +86,15 @@ msgstr ""
 "opnamen groene tagknoppen |lookup_tagger| weergegeven. Als je op zo’n knop "
 "klikt, wordt de bijbehorende uitgave of opname in Picard geladen."
 
-#: ../../config/options_network.rst:27
+#: ../../config/options_network.rst:31
 msgid "lookup_tagger"
 msgstr ""
 
-#: ../../config/options_network.rst:34
+#: ../../config/options_network.rst:38
 msgid "**Default listening port**"
 msgstr "**Standaard luisterpoort**"
 
-#: ../../config/options_network.rst:36
+#: ../../config/options_network.rst:40
 msgid ""
 "This identifies the default port Picard will listen on for the browser "
 "integration. If the port is not available Picard will try to increase the "
@@ -96,11 +104,11 @@ msgstr ""
 "browserintegratie. Als de poort niet beschikbaar is, probeert Picard steeds "
 "één poort hoger, tot hij een vrije poort vindt."
 
-#: ../../config/options_network.rst:38
+#: ../../config/options_network.rst:42
 msgid "**Listen only on localhost**"
 msgstr "**Alleen op localhost luisteren**"
 
-#: ../../config/options_network.rst:40
+#: ../../config/options_network.rst:44
 msgid ""
 "By default Picard will limit access to the browser integration port to your "
 "local machine. Deactivating this option will expose the port on your "
@@ -113,10 +121,10 @@ msgstr ""
 "machine. Als je dit uitschakelt, wordt de poort op je netwerk beschikbaar, "
 "zodat Picard via het netwerk een specifieke uitgave of opname kan laden. Dit "
 "kan bijvoorbeeld worden gebruikt voor de Android-app `Picard Barcode Scanner "
-"<https://play.google.com/store/apps/"
-"details?id=org.musicbrainz.picard.barcodescanner>`_."
+"<https://play.google.com/store/apps/details?id=org.musicbrainz.picard."
+"barcodescanner>`_."
 
-#: ../../config/options_network.rst:44
+#: ../../config/options_network.rst:48
 msgid ""
 "Only expose the port externally when you actually need it and only on "
 "networks you trust. Exposing application ports via the network can open "
