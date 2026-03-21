@@ -7,9 +7,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-11 23:26+0100\n"
-"PO-Revision-Date: 2026-03-12 17:12+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"PO-Revision-Date: 2026-03-21 17:23+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_tags/nl/>\n"
 "Language: nl\n"
@@ -50,26 +49,37 @@ msgstr ""
 "de bestanden opslaat."
 
 #: ../../config/options_tags.rst:25
+#, fuzzy
 msgid "**Clear existing tags**"
-msgstr ""
+msgstr "**Bestaande tags verwijderen**"
 
 #: ../../config/options_tags.rst:27
+#, fuzzy
 msgid ""
 "Checking this will remove all existing metadata and leave your files with "
 "only MusicBrainz metadata. Information you may have added through another "
 "media player such as \"genre\", \"comments\" or \"ratings\" will be removed."
 msgstr ""
+"Als je dit aanvinkt, worden alle bestaande metadata verwijderd en zullen je "
+"bestanden alleen metadata van MusicBrainz bevatten. Informatie die je via "
+"een mediaspeler hebt toegevoegd, zoals ‘genre’, ‘opmerkingen’ of ‘"
+"waarderingen’, worden verwijderd."
 
 #: ../../config/options_tags.rst:29
+#, fuzzy
 msgid "**Keep embedded images when clearing tags**"
-msgstr ""
+msgstr "**Ingebedde afbeeldingen bij het verwijderen van tags behouden**"
 
 #: ../../config/options_tags.rst:31
+#, fuzzy
 msgid ""
 "The default is for Picard to remove any embedded images from the files when "
 "clearing existing tags. Checking this option will keep the embedded images "
 "in the files."
 msgstr ""
+"Standaard verwijdert Picard alle ingebedde afbeeldingen uit de bestanden als "
+"de bestaande tags worden verwijderd. Als je dit aanvinkt, blijven ingebedde "
+"afbeeldingen behouden."
 
 #: ../../config/options_tags.rst:33
 #, fuzzy
@@ -95,27 +105,39 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_tags.rst:41
+#, fuzzy
 msgid "**Fix missing seekpoints for FLAC files**"
-msgstr ""
+msgstr "**Ontbrekende zoekpunten in FLAC-bestanden oplossen**"
 
 #: ../../config/options_tags.rst:43
+#, fuzzy
 msgid ""
 "Some software has issues handling FLAC files that have an empty seek table "
 "metadata block. When this option is enabled empty and hence unused seek "
 "table blocks will be removed from the files on saving."
 msgstr ""
+"Sommige software heeft moeite met FLAC-bestanden waarvan het metadatablok "
+"met de zoektabel leeg is. Als deze optie is ingeschakeld, worden lege (en "
+"dus ongebruikte) zoektabelblokken bij het opslaan van de bestanden "
+"verwijderd."
 
 #: ../../config/options_tags.rst:45
+#, fuzzy
 msgid ""
 "**Preserve these tags from being cleared or overwritten with MusicBrainz "
 "data**"
 msgstr ""
+"**Deze tags behouden in plaats van ze te wissen of met gegevens van "
+"MusicBrainz te overschrijven**"
 
 #: ../../config/options_tags.rst:47
+#, fuzzy
 msgid ""
 "This is an advanced option: If you have tags which you need to preserve, "
 "enter their names here to stop Picard from overwriting them."
 msgstr ""
+"Dit is een optie voor gevorderden. Als je bepaalde tags wil behouden, kan je "
+"de namen daarvan hier invoeren om te voorkomen dat Picard ze overschrijft."
 
 #: ../../config/options_tags.rst:49
 msgid "**Do not sanitize dates for these tag formats**"

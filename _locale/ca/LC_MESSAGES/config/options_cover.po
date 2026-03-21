@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: 2025-05-08 19:20+0000\n"
-"Last-Translator: Marc Riera <marc@marcriera.cat>\n"
+"PO-Revision-Date: 2026-03-21 17:23+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_cover/ca/>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: ../../config/options_cover.rst:4
 msgid ":index:`Cover Art Options <pair: configuration; cover art>`"
@@ -170,30 +170,43 @@ msgid "Cover Art Providers"
 msgstr ""
 
 #: ../../config/options_cover.rst:79
+#, fuzzy
 msgid ""
 "Picard can download Cover Art from a number of sources, and you can choose "
 "which sources you want Picard to use. You can activate more than one "
 "provider and choose the order in which the providers are queried. Picard "
 "will try the providers from top to bottom until an image is returned."
 msgstr ""
+"Picard pot baixar caràtules de diverses fonts i podeu triar quines fonts "
+"voleu que Picard faci servir. Podeu activar més d'un proveïdor i triar "
+"l'ordre de consulta dels proveïdors. Picard provarà els proveïdors del "
+"principi al final fins que es retorni una imatge."
 
 #: ../../config/options_cover.rst:81
+#, fuzzy
 msgid "**Cover Art Archive: Release**"
-msgstr ""
+msgstr "**Cover Art Archive: Publicació**"
 
 #: ../../config/options_cover.rst:83
+#, fuzzy
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
 "cooperation with the `Internet Archive <https://archive.org>`_. The Cover "
 "Art Archive is the most comprehensive database of cover art (e.g.: front "
 "covers, back covers, booklets, CDs)."
 msgstr ""
+"Cover Art Archive (CAA) és l'arxiu de caràtules de MusicBrainz en cooperació "
+"amb `Internet Archive <https://archive.org>`_. Cover Art Archive és la base "
+"de dades més extensa de caràtules (p. ex., caràtules frontals, posteriors, "
+"llibrets, CD, etc.)."
 
 #: ../../config/options_cover.rst:85
+#, fuzzy
 msgid "**Cover Art Archive: Release Group**"
-msgstr ""
+msgstr "**Cover Art Archive: Grup de publicacions**"
 
 #: ../../config/options_cover.rst:87
+#, fuzzy
 msgid ""
 "This provider uses the Cover Art Archive cover image assigned to the release "
 "group. This is usually the image that best describes the release group as a "
@@ -202,36 +215,59 @@ msgid ""
 "if you care more about visual quality then having an exact representation of "
 "your release. It is also a good fallback for the Cover Art Archive provider."
 msgstr ""
+"Aquest proveïdor fa servir la imatge de la caràtula de Cover Art Archive "
+"assignada al grup de publicacions. Normalment, és la imatge que descriu "
+"millor el grup de publicacions en conjunt o la imatge amb la qualitat visual "
+"més bona, però no necessàriament la caràtula exacta de la publicació que "
+"esteu etiquetant. Aquest proveïdor és una bona opció si us preocupa més la "
+"qualitat visual que tenir una representació exacta de la publicació. També "
+"és una bona opció secundària per al proveïdor de Cover Art Archive."
 
 #: ../../config/options_cover.rst:89
+#, fuzzy
 msgid "**Allowed Cover Art URLs**"
-msgstr ""
+msgstr "**URL de caràtules permesos**"
 
 #: ../../config/options_cover.rst:91
+#, fuzzy
 msgid ""
 "This will use images provided from approved third-party sites. The image "
 "location is stored as a URL relationship for the release within the "
 "MusicBrainz database, and only approved sites can be used for this "
 "relationship."
 msgstr ""
+"Això farà servir imatges proporcionades per llocs de tercers aprovats. La "
+"ubicació de la imatge s'emmagatzema com a relació d'URL per a la publicació "
+"a la base de dades de MusicBrainz i només es poden fer servir llocs aprovats "
+"per a aquesta relació."
 
 #: ../../config/options_cover.rst:95
+#, fuzzy
 msgid ""
 "This relationship type is now deprecated in MusicBrainz, and is no longer "
 "used. See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/"
 "Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide for more "
 "information."
 msgstr ""
+"Aquest tipus de relació està obsolet a MusicBrainz i ja no es fa servir. Per "
+"a més informació, consulteu `Llista de caràtules permeses <https://"
+"wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ "
+"a la Guia d'estil."
 
 #: ../../config/options_cover.rst:97
+#, fuzzy
 msgid "**Local Files**"
-msgstr ""
+msgstr "**Fitxers locals**"
 
 #: ../../config/options_cover.rst:99
+#, fuzzy
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
 "the :ref:`ref-local-files` provider options."
 msgstr ""
+"Carrega caràtules de fitxers locals. Els noms dels fitxers que s'han de "
+"carregar es poden configurar a les opcions del proveïdor :ref:`ref-local-"
+"files`."
 
 #: ../../config/options_cover.rst:101
 msgid ""
@@ -241,19 +277,29 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_cover.rst:103
+#, fuzzy
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
 "focuses on cover art with high visual quality. This provider provides cover "
 "art representative for the release group and not the individual release."
 msgstr ""
+"**fanart.tv**: fa servir caràtules de `fanart.tv <https://fanart.tv/>`_, que "
+"se centra en caràtules amb una alta qualitat visual. Aquest proveïdor "
+"proporciona una representació de la caràtula del grup de publicacions i no "
+"les publicacions específiques."
 
 #: ../../config/options_cover.rst:105
+#, fuzzy
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
 ">`_, which focuses on cover art with high visual quality. This provider "
 "provides cover art representative for the release group and not the "
 "individual release."
 msgstr ""
+"**TheAudioDB**: fa servir caràtules de `TheAudioDB <https://"
+"www.theaudiodb.com/>`_, que se centra en caràtules amb una alta qualitat "
+"visual. Aquest proveïdor proporciona una representació de la caràtula del "
+"grup de publicacions i no les publicacions específiques."
 
 #: ../../config/options_cover.rst:109
 msgid ""

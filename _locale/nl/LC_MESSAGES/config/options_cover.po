@@ -7,9 +7,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-14 08:09+0100\n"
-"PO-Revision-Date: 2026-03-12 17:11+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"PO-Revision-Date: 2026-03-21 17:23+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_cover/nl/>\n"
 "Language: nl\n"
@@ -25,20 +24,27 @@ msgstr ""
 ":index:`Opties voor hoesafbeeldingen <pair: configuratie; hoesafbeeldingen>`"
 
 #: ../../config/options_cover.rst:17
+#, fuzzy
 msgid "**Embed cover images into tags**"
-msgstr ""
+msgstr "**Hoesafbeeldingen in tags opslaan**"
 
 #: ../../config/options_cover.rst:19
+#, fuzzy
 msgid ""
 "Enables images to be embedded directly into your music files. While this "
 "will use more storage space than storing it as a separate image file in the "
 "same directory, some music players will only display embedded images and "
 "don't find the separate files."
 msgstr ""
+"Als je dit aanvinkt, worden afbeeldingen in de muziekbestanden zelf "
+"opgeslagen. Hoewel dit meer opslagruimte vergt dat het opslaan van een "
+"afbeelding in dezelfde map, geven sommige muziekspelers alleen ingesloten "
+"afbeeldingen weer en geen losse afbeeldingen in de map."
 
 #: ../../config/options_cover.rst:21
+#, fuzzy
 msgid "**Embed only a single front image**"
-msgstr ""
+msgstr "**Slechts één afbeelding van de voorkant inbedden**"
 
 #: ../../config/options_cover.rst:23
 msgid ""
@@ -70,8 +76,9 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_cover.rst:35
+#, fuzzy
 msgid "**Save cover images as separate files**"
-msgstr ""
+msgstr "**Hoesafbeeldingen als aparte bestanden opslaan**"
 
 #: ../../config/options_cover.rst:37
 msgid ""
@@ -84,58 +91,82 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_cover.rst:39
+#, fuzzy
 msgid ""
 "In addition to scripting variables already available for a track, you can "
 "use the following cover art specific variables:"
 msgstr ""
+"Naast de scriptvariabelen die standaard voor nummers beschikbaar zijn, kan "
+"je ook een van de volgende speciale variabelen voor hoesafbeeldingen "
+"gebruiken:"
 
 #: ../../config/options_cover.rst:41
+#, fuzzy
 msgid ""
 "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For "
 "front images this will always be \"front\"."
 msgstr ""
+"``coverart_maintype``: Het primaire type afbeelding (zoals voorkant, medium "
+"of boekje). Voor afbeeldingen van de voorkant is dit altijd ‘voorkant’."
 
 #: ../../config/options_cover.rst:42
+#, fuzzy
 msgid "``coverart_types``: Full list of all types assigned to this image."
 msgstr ""
+"``coverart_types``: De volledige lijst met alle typen die aan deze "
+"afbeelding zijn toegewezen."
 
 #: ../../config/options_cover.rst:43
+#, fuzzy
 msgid "``coverart_comment``: The cover art comment."
-msgstr ""
+msgstr "``coverart_comment``: De opmerking over de hoesafbeelding."
 
 #: ../../config/options_cover.rst:45
+#, fuzzy
 msgid "For example, specifying a file naming mask such as:"
-msgstr ""
+msgstr "Als je bijvoorbeeld het volgende invult:"
 
 #: ../../config/options_cover.rst:51
+#, fuzzy
 msgid ""
 "will preface the file name with the album artist, original release year and "
 "album title."
 msgstr ""
+"wordt de bestandsnaam voorafgegaan door de artiest van de uitgave, de "
+"oorspronkelijke uitgavedatum en de uitgavetitel."
 
 #: ../../config/options_cover.rst:53
+#, fuzzy
 msgid ""
 "You can also have Picard save the images to a subdirectory by including this "
 "in the file naming mask. For example:"
 msgstr ""
+"Je kan ook instellen dat Picard de afbeeldingen in een submap opslaat. Met"
 
 #: ../../config/options_cover.rst:59
+#, fuzzy
 msgid "which will place the images in a subdirectory called \"Artwork\"."
-msgstr ""
+msgstr "worden afbeeldingen bijvoorbeeld opgeslagen in de submap ‘Artwork’."
 
 #: ../../config/options_cover.rst:61
+#, fuzzy
 msgid "**Overwrite the file if it already exists**"
-msgstr ""
+msgstr "**Bestaande bestanden overschrijven**"
 
 #: ../../config/options_cover.rst:63
+#, fuzzy
 msgid ""
 "Check this to replace existing files. This is especially recommended if "
 "trying to write \"folder\" previews for Windows."
 msgstr ""
+"Als je dit aanvinkt, worden bestaande bestanden overschreven. Dit wordt "
+"vooral aanbevolen als je de ‘Folder’-voorbeeldbestanden voor Windows wil "
+"opslaan."
 
 #: ../../config/options_cover.rst:65
+#, fuzzy
 msgid "**Save only a single front image as separate file**"
-msgstr ""
+msgstr "**Slechts één afbeelding van de voorkant als los bestand opslaan**"
 
 #: ../../config/options_cover.rst:67
 msgid ""
@@ -150,12 +181,16 @@ msgid "**Use the primary image type as the file name**"
 msgstr ""
 
 #: ../../config/options_cover.rst:71
+#, fuzzy
 msgid ""
 "This setting changes how Picard names image files **other than front "
 "images**."
 msgstr ""
+"Deze instelling regelt welke bestandsnamen Picard afbeeldingen **anders dan "
+"afbeeldingen van de voorkant** geeft."
 
 #: ../../config/options_cover.rst:73
+#, fuzzy
 msgid ""
 "When checked, Picard will use the type of the image (e.g.: back, booklet, "
 "etc.) as the filename when saving, as long as the type is not front. If the "
@@ -165,36 +200,59 @@ msgid ""
 "\"front\", Picard will use the file name specified in the \"Use the "
 "following file name for images\" setting."
 msgstr ""
+"Als dit is aangevinkt, gebruikt Picard het type afbeelding (zoals achterkant "
+"of boekje) bij het opslaan als bestandsnaam, zolang het maar niet de "
+"voorkant is. Als de afbeeldingen meerdere typen heeft, wordt het eerste type "
+"gebruikt. Als de afbeelding de typen ‘achterkant’ of ‘onbewerkt’ heeft, "
+"wordt alleen ‘achterkant’ voor de bestandsnaam gebruikt. Als je dit niet "
+"aanvinkt of de afbeelding van het type ‘voorkant’ is, gebruikt Picard de "
+"bestandsnaam die is ingesteld in de optie ‘De volgende bestandsnaam voor "
+"afbeeldingen gebruiken’."
 
 #: ../../config/options_cover.rst:77
+#, fuzzy
 msgid "Cover Art Providers"
-msgstr ""
+msgstr "Bronnen voor afbeeldingen"
 
 #: ../../config/options_cover.rst:79
+#, fuzzy
 msgid ""
 "Picard can download Cover Art from a number of sources, and you can choose "
 "which sources you want Picard to use. You can activate more than one "
 "provider and choose the order in which the providers are queried. Picard "
 "will try the providers from top to bottom until an image is returned."
 msgstr ""
+"Picard kan hoesafbeeldingen uit verschillende bronnen downloaden en je kan "
+"kiezen welke bronnen Picard zal gebruiken. Je kan meerdere bronnen "
+"inschakelen en kiezen in welke volgorde in de bronnen wordt gezocht. Picard "
+"zal de bronnen van boven naar beneden langsgaan, tot er een afbeelding wordt "
+"gevonden."
 
 #: ../../config/options_cover.rst:81
+#, fuzzy
 msgid "**Cover Art Archive: Release**"
-msgstr ""
+msgstr "**Cover Art Archive: uitgave**"
 
 #: ../../config/options_cover.rst:83
+#, fuzzy
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
 "cooperation with the `Internet Archive <https://archive.org>`_. The Cover "
 "Art Archive is the most comprehensive database of cover art (e.g.: front "
 "covers, back covers, booklets, CDs)."
 msgstr ""
+"Het Cover Art Archive (CAA) is een archief van hoesafbeeldingen dat "
+"MusicBrainz samen met het `Internet Archive <https://archive.org>`_ beheert. "
+"Het Cover Art Archive is de meest uitgebreide databank van hoesafbeeldingen "
+"(voorkanten, achterkanten, boekjes, cd’s)."
 
 #: ../../config/options_cover.rst:85
+#, fuzzy
 msgid "**Cover Art Archive: Release Group**"
-msgstr ""
+msgstr "**Cover Art Archive: uitgavegroep**"
 
 #: ../../config/options_cover.rst:87
+#, fuzzy
 msgid ""
 "This provider uses the Cover Art Archive cover image assigned to the release "
 "group. This is usually the image that best describes the release group as a "
@@ -203,18 +261,31 @@ msgid ""
 "if you care more about visual quality then having an exact representation of "
 "your release. It is also a good fallback for the Cover Art Archive provider."
 msgstr ""
+"Deze bron gebruikt de afbeelding die in het Cover Art Archive aan de "
+"uitgavegroep is gekoppeld. Dit is meestal de afbeelding die het beste past "
+"bij de uitgavegroep als geheel of de afbeelding van de hoogste kwaliteit, "
+"maar niet per se precies de afbeelding van de uitgave die je tagt. Deze bron "
+"is handig als je de visuele kwaliteit belangrijker vindt dan het hebben van "
+"een exacte weergave van je uitgave. Het is ook een goede achtervang voor de "
+"bron Cover Art Archive."
 
 #: ../../config/options_cover.rst:89
+#, fuzzy
 msgid "**Allowed Cover Art URLs**"
-msgstr ""
+msgstr "**Toegestane URL’s voor hoesafbeeldingen**"
 
 #: ../../config/options_cover.rst:91
+#, fuzzy
 msgid ""
 "This will use images provided from approved third-party sites. The image "
 "location is stored as a URL relationship for the release within the "
 "MusicBrainz database, and only approved sites can be used for this "
 "relationship."
 msgstr ""
+"Met deze optie gebruikt Picard afbeeldingen van goedgekeurde externe "
+"websites. De locatie van de afbeelding is opgeslagen als een URL-relatie "
+"voor de uitgave in de databank van MusicBrainz. Voor deze relatie kunnen "
+"alleen goedgekeurde websites worden gebruikt."
 
 #: ../../config/options_cover.rst:95
 msgid ""
@@ -225,14 +296,18 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_cover.rst:97
+#, fuzzy
 msgid "**Local Files**"
-msgstr ""
+msgstr "**Lokale bestanden**"
 
 #: ../../config/options_cover.rst:99
+#, fuzzy
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
 "the :ref:`ref-local-files` provider options."
 msgstr ""
+"Hoesafbeeldingen uit lokale bestanden halen. De te laden bestandsnamen "
+"kunnen in :ref:`ref-local-files` worden ingesteld."
 
 #: ../../config/options_cover.rst:101
 msgid ""
@@ -242,19 +317,29 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_cover.rst:103
+#, fuzzy
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
 "focuses on cover art with high visual quality. This provider provides cover "
 "art representative for the release group and not the individual release."
 msgstr ""
+"**fanart.tv**: Gebruikt hoesafbeeldingen van `fanart.tv <https://fanart.tv/>"
+"`_, een databank gericht op hoesafbeeldingen van goede kwaliteit. Deze bron "
+"biedt hoesafbeeldingen die representatief zijn voor de uitgavegroep en niet "
+"voor afzonderlijke uitgaven."
 
 #: ../../config/options_cover.rst:105
+#, fuzzy
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
 ">`_, which focuses on cover art with high visual quality. This provider "
 "provides cover art representative for the release group and not the "
 "individual release."
 msgstr ""
+"**TheAudioDB**: Gebruikt hoesafbeeldingen van `TheAudioDB <https://"
+"www.theaudiodb.com/>`_, een databank gericht op hoesafbeeldingen van goede "
+"kwaliteit. Deze bron biedt hoesafbeeldingen die representatief zijn voor de "
+"uitgavegroep en niet voor afzonderlijke uitgaven."
 
 #: ../../config/options_cover.rst:109
 msgid ""
