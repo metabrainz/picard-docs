@@ -38,11 +38,11 @@ jobs:
       matrix:
         python-version: [3.11]
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
@@ -61,7 +61,7 @@ jobs:
       run: |
         python ./dev_utils.py build map
     - name: Store Tag Map Build Output File
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: tag_map_files
         path: _static/MusicBrainz_Picard_Tag_Map.*
@@ -70,17 +70,8 @@ jobs:
       run: |
         python ./dev_utils.py clean html
         python ./dev_utils.py build html
-    # - name: Zip HTML Files
-    #   run: |
-    #     zip -r docs/html.zip _build/html
-    # - name: Store HTML Build Output Files
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #     name: html_files
-    #     path: docs/html.zip
-    #     retention-days: 5
     - name: Store HTML Build Output Files
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: html_files
         path: _build/html/*

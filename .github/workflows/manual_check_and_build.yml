@@ -9,22 +9,20 @@ on:
         default: '3.11'
         type: choice
         options:
-          - 3.7
-          - 3.8
-          - 3.9
-          - 3.10
           - 3.11
+          - 3.12
+          - 3.13
 
 jobs:
   lint_rst_and_basic_build:
     name: Check with LintRST and Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
     - name: Set up Python ${{ inputs.pythonVersion }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ inputs.pythonVersion }}
     - name: Install dependencies
@@ -41,7 +39,7 @@ jobs:
       run: |
         python ./dev_utils.py build map
     - name: Store Tag Map Build Output File
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: tag_map_files
         path: _static/MusicBrainz_Picard_Tag_Map.*
@@ -54,10 +52,10 @@ jobs:
         python ./dev_utils.py clean html
         python ./dev_utils.py build html
     - name: Store HTML Build Output File
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: html_files
-        path: _build/html/*.zip
+        path: _build/html/*
         retention-days: 5
     - name: Install LaTeX dependencies
       run: |
@@ -74,7 +72,7 @@ jobs:
         python ./dev_utils.py clean pdf
         python ./dev_utils.py build pdf
     - name: Store PDF Build Output File
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: pdf_file
         path: _build/latex/*.pdf
