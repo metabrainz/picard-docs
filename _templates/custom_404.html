@@ -13,7 +13,6 @@
       var default_language = 'en';
       var target_language = '{{ language }}';
       var target_version = 'latest';
-      var stable_version = 'stable';
       var src_host = window.location.hostname;
       var src_protocol = window.location.protocol;
       var src_path = window.location.pathname;
@@ -59,12 +58,6 @@
             if (debug) { window.alert("Passed. Target version set to: " + target_version); }
             return true;
          }
-         if (test_version.toLowerCase() == 'stable') {
-            has_version = true;
-            target_version = 'stable';
-            if (debug) { window.alert("Passed. Target version set to: " + target_version); }
-            return true;
-         }
 
          var arr = re_version.exec(test_version);
          if (!arr) {
@@ -87,7 +80,7 @@
             document.getElementById('redirection_error').innerHTML = "<h1>Redirection Error</h1>\n<p>We're sorry but there was a problem redirecting to your requested page.</p>";
          }
          else {
-            target_url = src_protocol + '//' + src_host + '/' + default_language + '/' + stable_version + '/' + not_found;
+            target_url = src_protocol + '//' + src_host + '/' + default_language + '/' + latest_version + '/' + not_found;
             if (debug) { window.alert("Redirecting to:\n" + target_url); }
             window.location.replace(target_url);
          }
