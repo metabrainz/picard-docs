@@ -574,7 +574,7 @@ Synced Lyrics
    "Vorbis", "n/a"
    "APEv2", "n/a"
    "iTunes MP4", "n/a"
-   "ASF/Windows Media", "n/a"
+   "ASF/Windows Media", "WM/Lyrics_Synchronised"
    "RIFF INFO", "n/a"
 
 

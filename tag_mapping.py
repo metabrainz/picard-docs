@@ -481,7 +481,7 @@ TAG_MAP = [
         "vorbis": "n/a",
         "apev2": "n/a",
         "itunes": "n/a",
-        "wmp": "n/a",
+        "wmp": "WM/Lyrics_Synchronised",
         "riff": "n/a",
     },
 
