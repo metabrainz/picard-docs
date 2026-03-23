@@ -84,6 +84,7 @@ exclude_patterns = [
     '_images',
     '_ignored',
     '_locale',
+    '_project_documentation',
     '__pycache__',
     'Thumbs.db',
     '.DS_Store',
