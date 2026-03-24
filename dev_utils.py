@@ -4,6 +4,20 @@
 """
 # Copyright (C) 2020-2026 Bob Swift
 # Copyright (C) 2021 Philipp Wolfer
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 # pylint: disable=too-many-lines
 
@@ -13,18 +27,28 @@ import os
 import re
 import shutil
 import subprocess
+from subprocess import SubprocessError
 import sys
 import time
-from subprocess import SubprocessError
-
-import restructuredtext_lint
-from babel import Locale, UnknownLocaleError
 
 import conf
-import tag_mapping
+from tag_mapping import (
+    TAG_COLUMNS,
+    TAG_MAP,
+    TAG_NOTES,
+    TagMapInfo,
+)
+
+from babel import (
+    Locale,
+    UnknownLocaleError,
+)
+import restructuredtext_lint
+import xlsxwriter
+
 
 SCRIPT_NAME = 'Picard Docs Builder Utils'
-SCRIPT_VERS = '1.0'
+SCRIPT_VERS = '1.1'
 SCRIPT_COPYRIGHT = '2021-2026'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -59,7 +83,9 @@ HEADER_KEYS_TO_IGNORE = '|'.join([
 ])
 COMMAND_TIMEOUT = 300
 
-# Regular expressions used
+################################
+#   Regular expressions used   #
+################################
 
 RE_GIT_STAT_LINE = re.compile(r"\s*(\S+)\s+(.*)$")
 
@@ -73,7 +99,21 @@ RE_CHANGED_STRINGS_LINE = re.compile(r'[+-]"')
 RE_CHANGED_LOCATION_LINE = re.compile(r'[+-]#: \.\./')
 RE_CHANGED_FUZZY_LINE = re.compile(r'[+-]#, fuzzy', re.IGNORECASE)
 
-# Optional output files
+RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
+RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)".*$')
+RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "([^"]+)".*$')
+
+RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
+RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
+
+RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(_[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
+
+RE_FIND_CODE = re.compile(r'``([^`]*)``')
+RE_FIND_URL = re.compile(r'`(.*)\s+<([^>]*)>`_')
+
+#############################
+#   Optional output files   #
+#############################
 
 STATUS_FILE = 'git_status.txt'
 DIFF_FILE = 'git_diff.txt'
@@ -152,19 +192,6 @@ IGNORE_LEXERS = [
     'none',
 ]
 
-################################################
-#   RE Tests for Sphinx Roles and Directives   #
-################################################
-
-RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
-RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)".*$')
-RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "([^"]+)".*$')
-
-RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
-RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
-
-RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(_[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
-
 ##################################################
 #   Text to display when the script is started   #
 ##################################################
@@ -236,6 +263,59 @@ Optional Arguments:
 """
 
 
+################################################
+#   Custom exceptions used within the script   #
+################################################
+
+class CustomError(Exception):
+    """Custom base exception for the script.
+    """
+    def __init__(self, message='Setup Script Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class CreateDirectoryError(CustomError):
+    """Exception when creating a directory.
+    """
+    def __init__(self, message='Create Directory Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class CleanDirectoryError(CustomError):
+    """Exception when cleaning a directory.
+    """
+    def __init__(self, message='Clean Directory Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class RemoveDirectoryError(CustomError):
+    """Exception when removing a directory.
+    """
+    def __init__(self, message='Remove Directory Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class RemoveFileError(CustomError):
+    """Exception when removing a file.
+    """
+    def __init__(self, message='Remove File Error'):
+        self.message = message
+        super().__init__(self.message)
+
+
+class ErrorLintRST():   # pylint: disable=too-few-public-methods
+    """Special LintRST error for unhandled exceptions.
+    """
+    def __init__(self, err_type='INFO', err_line=0, err_message=''):
+        self.type = err_type
+        self.line = err_line
+        self.message = err_message
+
+
 ################################################################################
 
 class SPHINX_():        # pylint: disable=too-few-public-methods
@@ -300,59 +380,6 @@ class Languages():
             return f"{locale.english_name} [{locale.display_name}]"
         except UnknownLocaleError:
             return f"Unknown Language '{language_code}'"
-
-
-################################################
-#   Custom exceptions used within the script   #
-################################################
-
-class CustomError(Exception):
-    """Custom base exception for the script.
-    """
-    def __init__(self, message='Setup Script Error'):
-        self.message = message
-        super().__init__(self.message)
-
-
-class CreateDirectoryError(CustomError):
-    """Exception when creating a directory.
-    """
-    def __init__(self, message='Create Directory Error'):
-        self.message = message
-        super().__init__(self.message)
-
-
-class CleanDirectoryError(CustomError):
-    """Exception when cleaning a directory.
-    """
-    def __init__(self, message='Clean Directory Error'):
-        self.message = message
-        super().__init__(self.message)
-
-
-class RemoveDirectoryError(CustomError):
-    """Exception when removing a directory.
-    """
-    def __init__(self, message='Remove Directory Error'):
-        self.message = message
-        super().__init__(self.message)
-
-
-class RemoveFileError(CustomError):
-    """Exception when removing a file.
-    """
-    def __init__(self, message='Remove File Error'):
-        self.message = message
-        super().__init__(self.message)
-
-
-class ErrorLintRST():   # pylint: disable=too-few-public-methods
-    """Special LintRST error for unhandled exceptions.
-    """
-    def __init__(self, err_type='INFO', err_line=0, err_message=''):
-        self.type = err_type
-        self.line = err_line
-        self.message = err_message
 
 
 ################################################################################
@@ -554,7 +581,7 @@ def python_files_to_check():
 
 ################################################################################
 
-class LintRST():
+class LintRST():    # pylint: disable=too-many-instance-attributes
     """Lint the restructured text (RST) files.
     """
     def __init__(self, verbose=False, fail_on_warnings=True):
@@ -1237,15 +1264,321 @@ def build_map():
     """
     filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.html')
     print(f'\nWriting HTML mapping file: {filename}')
-    tag_mapping.write_html(filename)
+    write_html(filename)
 
     filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.xlsx')
     print(f'Writing mapping spreadsheet file: {filename}')
-    tag_mapping.write_spreadsheet(filename)
+    write_spreadsheet(filename)
 
     filename = os.path.join(SPHINX_.SOURCE_DIR, 'appendices', 'tag_mapping.rst')
     print(f'Writing RST mapping file: {filename}')
-    tag_mapping.write_rst(filename)
+    write_rst(filename)
+
+
+################################################################################
+
+def _get_tag_notes(notes: int | list[int] | None) -> list[int]:
+    """Provides the notes for the item.
+
+    Returns:
+        list[int]: List of the notes for the item.
+    """
+    if notes is None:
+        return []
+    if isinstance(notes, int):
+        return [notes,]
+    if isinstance(notes, list):
+        return list(sorted(notes))
+    return []
+
+
+################################################################################
+
+def rc2cell(row, col):
+    """Convert zero-based row and column to Excel cell identifier.
+
+    Args:
+        row (int): Row number (zero-based)
+        col (int): Column number (zero-based)
+
+    Returns:
+        str: Excel cell identification string.
+    """
+    if col <= 0:
+        cell_col = 'A'
+    else:
+        cell_col = ''
+        col += 1
+        while col > 0:
+            col, temp = divmod(col, 26)
+            if temp < 1:
+                temp = 26
+                col -= 1
+            cell_col += chr(64 + temp)
+        cell_col = cell_col[::-1]
+    cell_row = int(max(row, 0)) + 1
+    return f'{cell_col}{cell_row}'
+
+
+################################################################################
+
+def write_spreadsheet(filename):    # pylint: disable=too-many-locals
+    """Output the tag mapping information in the form of an Excel spreadsheet (*.xlsx) file.
+
+    Args:
+        filename (str): the path and filename of the output file to use.  Overwrites if existing.
+    """
+    workbook = xlsxwriter.Workbook(filename)
+    worksheet = workbook.add_worksheet()
+
+    # Define formatting settings
+    title_format = workbook.add_format({'bold': True, 'font_size': 30})
+    tag_header_format = workbook.add_format({'bold': True, 'align': 'left', 'bg_color': '#e6e6e6', 'top': 6, 'bottom': 6, 'right': 1})
+    tag_name_format = workbook.add_format({'bold': True, 'align': 'left', 'valign': 'top', 'bg_color': '#e6e6e6', 'bottom': 1})
+    tag_info_format = workbook.add_format({'align': 'left', 'valign': 'top', 'text_wrap': True})
+    notes_title_format = workbook.add_format({'bold': True, 'align': 'left', 'font_size': 18})
+    # notes_number_format = workbook.add_format({'align': 'right', 'valign': 'top'})
+    # notes_text_format = workbook.add_format({'align': 'left', 'valign': 'top'})
+
+    # Write the title
+    worksheet.write('A1', 'MusicBrainz Picard Tag Mapping', title_format)
+
+    row = 2
+
+    # Write the table headers
+    for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):    # pylint: disable=unused-variable
+        worksheet.write(row, col, val, tag_header_format)
+        worksheet.set_column(col, col, pts)
+
+    # Write the tag values
+    for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+        row += 1
+        for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):
+            if col:
+                tag_maps = getattr(tag, name, None)
+                if tag_maps is None:
+                    text = 'n/a'
+                else:
+                    lines = []
+                    if isinstance(tag_maps, TagMapInfo):
+                        tag_maps = [tag_maps,]
+                    for tag_map in tag_maps:
+                        _id = tag_map.id.strip() or 'unknown'
+                        _desc = re.sub(RE_FIND_URL, r'\1', tag_map.desc.replace('``', '')).strip()
+                        if _desc:
+                            _desc = f" {_desc}"
+                        _notes = ' '.join(f"[{note}]" for note in _get_tag_notes(tag_map.notes))
+                        lines.append(f"{_id}{_desc} {_notes}".strip())
+                    text = '\n'.join(lines)
+                worksheet.write(row, col, text, tag_info_format)
+            else:
+                text = getattr(tag, name, '').strip() or 'unknown'
+                for note in _get_tag_notes(tag.notes):
+                    text += f" [{note}]"
+                worksheet.write(row, col, text, tag_name_format)
+
+    # Freeze the table headers and first column
+    worksheet.freeze_panes(3, 1, 3, 1)
+
+    # Write the notes section
+    row += 2
+    worksheet.write(row, 1, 'Notes:', notes_title_format)
+    for num in sorted(TAG_NOTES.keys()):
+        row += 1
+        text = str(TAG_NOTES[num]).replace('``', '')
+        text = re.sub(RE_FIND_URL, r'\1', text)
+        worksheet.write(row, 1, f'{num}.  {text}')
+
+    workbook.close()
+
+
+################################################################################
+
+HTML_TEMPLATE = """\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MusicBrainz Picard Tag Mapping</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="MusicBrainz, Picard, Tags, Tag Map">
+  <meta name="description" content="Mapping of the metadata tags used with MusicBrainz Picard.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: arial;
+      font-size: 11pt
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      margin: 0;
+      text-align: left;
+    }
+    th, .column1 {
+      font-weight: bold;
+      background-color: #e6e6e6;
+    }
+    code {
+      background-color: lightgray;
+    }
+  </style>
+
+  <link rel="shortcut icon" href="https://picard-docs.musicbrainz.org/en/_static/picard-icon.png"/>
+</head>
+<body>
+  <h1>MusicBrainz Picard Tag Mapping</h1>
+{{table_info}}
+</body>
+</html>
+"""
+
+
+################################################################################
+
+def write_html(filename):   # pylint: disable=too-many-locals, too-many-branches
+    """Output the tag mapping information in the form of a stand-alone HTML file.
+
+    Args:
+        filename (str): the path and filename of the output file to use.  Overwrites if existing.
+    """
+    width = 0
+    for (name, val, pts, px) in TAG_COLUMNS:    # pylint: disable=unused-variable
+        width += px + 15
+    html = f'<table width="{width}">\n<tr>\n'
+
+    # Write the table headers
+    for (name, val, pts, px) in TAG_COLUMNS:
+        text = val.replace('\n', '<br />')
+        html += f'  <th style="width: {px}px">{text}</th>\n'
+    html += '</tr>\n'
+
+    # Write the tag values
+    for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+        html += '<tr>\n'
+        for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):
+            if col < 1:
+                text = getattr(tag, name, '').strip() or 'unknown'
+                link = tag.link.strip()
+                if link:
+                    text = f'<a href="{link}">{text}</a>'
+                for note in _get_tag_notes(tag.notes):
+                    text += f' <sup><a href="#fn{note}">[{note}]</a></sup>'
+            else:
+                tag_maps = getattr(tag, name, None)
+                if tag_maps is None:
+                    text = 'n/a'
+                else:
+                    lines = []
+                    if isinstance(tag_maps, TagMapInfo):
+                        tag_maps = [tag_maps,]
+                    for tag_map in tag_maps:
+                        _id = tag_map.id
+                        _desc = re.sub(RE_FIND_CODE, r'<code>\1</code>', tag_map.desc)
+                        _desc = re.sub(RE_FIND_URL, r'<a href="\2">\1</a>', _desc).strip()
+                        if _desc:
+                            _desc = f" {_desc}"
+                        _notes = ''
+                        for note in _get_tag_notes(tag_map.notes):
+                            _notes += f' <sup><a href="#fn{note}">[{note}]</a></sup>'
+                        lines.append(f"<code>{_id}</code>{_desc}{_notes}")
+                    text = '<br />'.join(lines)
+            if col:
+                html += f'  <td>{text}</td>\n'
+            else:
+                html += f'  <td class="column1">{text}</td>\n'
+        html += '</tr>\n'
+    html += '</table>\n\n'
+
+    # Write the notes section
+    html += '<h2>Notes:</h2>\n<ol>\n'
+    for num in sorted(TAG_NOTES.keys()):
+        text = TAG_NOTES[num].replace('\n', '<br />')
+        text = re.sub(RE_FIND_CODE, r'<code>\1</code>', text)
+        text = re.sub(RE_FIND_URL, r'<a href="\2">\1</a>', text)
+        html += f'  <li style="width: 1200px;" id="fn{num}">{text}</li>\n'
+    html += '</ol>\n'
+
+    # Write the output file
+    with open(filename, 'w', encoding='utf8') as ofile:
+        ofile.write(HTML_TEMPLATE.replace(r'{{table_info}}', html))
+
+
+################################################################################
+
+def write_rst(filename):    # pylint: disable=too-many-locals, too-many-branches
+    """Output the tag mapping information in the form of a restructured text (*.rst) file.
+
+    Args:
+        filename (str): the path and filename of the output file to use.  Overwrites if existing.
+        pdf (bool, optional): Format file suitable for use in building a PDF document. Defaults to False.
+    """
+    rst = '.. MusicBrainz Picard Documentation Project\n\n'
+    rst += '.. Picard Tag Mapping\n\n.. This file is automatically generated. Any changes entered manually will be overwritten.\n\n'
+    rst += '.. only:: html and not latex and not epub\n\n'
+    rst += '   .. |tag_map_html_link| raw:: html\n\n      <a href="../_static/MusicBrainz_Picard_Tag_Map.html" target="_blank">table</a>\n\n'
+    rst += '   .. |tag_map_xlsx_link| raw:: html\n\n      <a href="../_static/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank">spreadsheet</a>\n\n'
+    rst += '.. |br| raw:: html\n\n   <br/>\n\n.. |nl| raw:: latex\n\n   \\newline\n\n'
+
+    temp = 'Appendix A: :index:`Tag Mapping <pair: mapping; tags>`'
+    rst += temp + '\n' + '=' * len(temp) + '\n\n'
+    rst += 'The following is a mapping between Picard internal tag names and those used by various tagging formats.\n\n'
+    rst += '.. only:: not latex and not epub\n\n'
+    rst += '   The mapping is also available as a |tag_map_html_link| or |tag_map_xlsx_link|.\n\n'
+
+    # Write the tag values
+    for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+        temp = tag.tag_name.replace('\n', ' ').strip()
+        link = tag.link.strip()
+        if link:
+            temp = f"`{temp} <{link}>`_"
+        for note in _get_tag_notes(tag.notes):
+            temp += f" [#f{note}]_"
+        temp = re.sub(r'\s+', ' ', temp)
+        temp = temp.strip()
+        temp += '\n'
+        rst += temp + '-' * len(temp) + '\n.. csv-table::\n   :width: 100%\n   :widths: 37 100\n\n'
+        for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):    # pylint: disable=unused-variable
+            if col:
+                tag_maps = getattr(tag, name, None)
+                if tag_maps is None:
+                    temp = 'n/a'
+                else:
+                    lines = []
+                    if isinstance(tag_maps, TagMapInfo):
+                        tag_maps = [tag_maps,]
+                    for tag_map in tag_maps:
+                        _id = tag_map.id
+                        _desc = tag_map.desc.strip()
+                        if _desc:
+                            _desc = f" {_desc}"
+                        _notes = ' '.join(f'[#f{note}]_' for note in _get_tag_notes(tag_map.notes))
+                        lines.append(f"``{_id}``{_desc} {_notes}".strip())
+                    temp = ' |br| |nl| '.join(lines)
+                    temp = temp.replace('"', "'").strip()
+                rst += f'   "{val}", "{temp}"\n'
+        seealso = tag.seealso.strip()
+        if seealso:
+            rst += '\n.. seealso::\n\n'
+            for temp in seealso.split('\n'):
+                rst += ('   ' + temp).rstrip() + '\n'
+        rst += '\n\n'
+
+    # Write the notes
+    rst += '.. rubric:: Notes:\n\n'
+    for num in sorted(TAG_NOTES.keys()):
+        note = TAG_NOTES[num].replace('\n', ' ').strip()
+        rst += f".. [#f{num}] {note}\n"
+    rst += '\n.. only:: latex\n\n   .. raw:: latex\n\n      \\clearpage\n'
+
+    # Write the output file
+    with open(filename, 'w', encoding='utf8') as ofile:
+        ofile.write(rst)
 
 
 ################################################################################
@@ -1666,7 +1999,7 @@ def check_tx_strings_differences(tx_strings: dict) -> bool:
         tx_strings (dict): Dictionary of sets of translation strings.
 
     Returns:
-        bool: Ture if there is a mismatch, otherwise False.
+        bool: True if there is a mismatch, otherwise False.
     """
     for key in TRANSLATION_KEY_GROUPS:
         s_p: set = tx_strings[f"+{key}"]

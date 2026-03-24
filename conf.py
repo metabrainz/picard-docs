@@ -13,6 +13,7 @@ import sys
 
 from recommonmark.parser import CommonMarkParser
 
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,

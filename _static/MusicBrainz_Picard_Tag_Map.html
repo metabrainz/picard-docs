@@ -48,6 +48,16 @@
   <th style="width: 150px">RIFF INFO</th>
 </tr>
 <tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/ASIN">ASIN</a></td>
+  <td><code>asin</code></td>
+  <td><code>TXXX:ASIN</code></td>
+  <td><code>ASIN</code></td>
+  <td><code>ASIN</code></td>
+  <td><code>----:com.apple.iTunes:ASIN</code></td>
+  <td><code>ASIN</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
   <td class="column1">AcoustID</td>
   <td><code>acoustid_id</code></td>
   <td><code>TXXX:Acoustid Id</code></td>
@@ -148,13 +158,13 @@
   <td>n/a</td>
 </tr>
 <tr>
-  <td class="column1"><a href="https://musicbrainz.org/doc/ASIN">ASIN</a></td>
-  <td><code>asin</code></td>
-  <td><code>TXXX:ASIN</code></td>
-  <td><code>ASIN</code></td>
-  <td><code>ASIN</code></td>
-  <td><code>----:com.apple.iTunes:ASIN</code></td>
-  <td><code>ASIN</code></td>
+  <td class="column1">BPM <sup><a href="#fn4">[4]</a></sup></td>
+  <td><code>bpm</code></td>
+  <td><code>TBPM</code></td>
+  <td><code>BPM</code></td>
+  <td><code>BPM</code></td>
+  <td><code>tmpo</code></td>
+  <td><code>WM/BeatsPerMinute</code></td>
   <td>n/a</td>
 </tr>
 <tr>
@@ -165,16 +175,6 @@
   <td><code>Barcode</code></td>
   <td><code>----:com.apple.iTunes:BARCODE</code></td>
   <td><code>WM/Barcode</code></td>
-  <td>n/a</td>
-</tr>
-<tr>
-  <td class="column1">BPM <sup><a href="#fn4">[4]</a></sup></td>
-  <td><code>bpm</code></td>
-  <td><code>TBPM</code></td>
-  <td><code>BPM</code></td>
-  <td><code>BPM</code></td>
-  <td><code>tmpo</code></td>
-  <td><code>WM/BeatsPerMinute</code></td>
   <td>n/a</td>
 </tr>
 <tr>
@@ -338,16 +338,6 @@
   <td>n/a</td>
 </tr>
 <tr>
-  <td class="column1">Initial Key</td>
-  <td><code>key</code> (Picard>=1.4)</td>
-  <td><code>TKEY</code></td>
-  <td><code>KEY</code></td>
-  <td><code>KEY</code></td>
-  <td><code>----:com.apple.iTunes:initialkey</code></td>
-  <td><code>WM/InitialKey</code></td>
-  <td>n/a</td>
-</tr>
-<tr>
   <td class="column1"><a href="https://musicbrainz.org/doc/ISRC">ISRC</a></td>
   <td><code>isrc</code></td>
   <td><code>TSRC</code></td>
@@ -358,13 +348,13 @@
   <td>n/a</td>
 </tr>
 <tr>
-  <td class="column1">iTunes CDDB 1 <sup><a href="#fn9">[9]</a></sup></td>
-  <td><code>itunes_cddb_1</code></td>
-  <td><code>iTunes_CDDB_1</code></td>
-  <td>n/a</td>
-  <td>n/a</td>
-  <td><code>----:com.apple.iTunes:iTunes_CDDB_1</code></td>
-  <td>n/a</td>
+  <td class="column1">Initial Key</td>
+  <td><code>key</code> (Picard>=1.4)</td>
+  <td><code>TKEY</code></td>
+  <td><code>KEY</code></td>
+  <td><code>KEY</code></td>
+  <td><code>----:com.apple.iTunes:initialkey</code></td>
+  <td><code>WM/InitialKey</code></td>
   <td>n/a</td>
 </tr>
 <tr>
@@ -405,16 +395,6 @@
   <td><code>Lyrics</code></td>
   <td><code>©lyr</code></td>
   <td><code>WM/Lyrics</code></td>
-  <td>n/a</td>
-</tr>
-<tr>
-  <td class="column1">Synced Lyrics</td>
-  <td><code>syncedlyrics:language:description</code></td>
-  <td><code>SYLT:description</code></td>
-  <td>n/a</td>
-  <td>n/a</td>
-  <td>n/a</td>
-  <td>WM/Lyrics_Synchronised</td>
   <td>n/a</td>
 </tr>
 <tr>
@@ -578,16 +558,6 @@
   <td>n/a</td>
 </tr>
 <tr>
-  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Track ID</a></td>
-  <td><code>musicbrainz_trackid</code></td>
-  <td><code>TXXX:MusicBrainz Release Track Id</code></td>
-  <td><code>MUSICBRAINZ_RELEASETRACKID</code></td>
-  <td><code>MUSICBRAINZ_RELEASETRACKID</code></td>
-  <td><code>----:com.apple.iTunes:MusicBrainz Release Track Id</code></td>
-  <td><code>MusicBrainz/Release Track Id</code></td>
-  <td>n/a</td>
-</tr>
-<tr>
   <td class="column1"><a href="https://musicbrainz.org/doc/TRM">MusicBrainz TRM ID</a></td>
   <td><code>musicbrainz_trmid</code> (deprecated)</td>
   <td><code>TXXX:MusicBrainz TRM Id</code></td>
@@ -595,6 +565,16 @@
   <td><code>MUSICBRAINZ_TRMID</code></td>
   <td><code>----:com.apple.iTunes:MusicBrainz TRM Id</code></td>
   <td><code>MusicBrainz/TRM Id</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
+  <td class="column1"><a href="https://musicbrainz.org/doc/MusicBrainz_Identifier">MusicBrainz Track ID</a></td>
+  <td><code>musicbrainz_trackid</code></td>
+  <td><code>TXXX:MusicBrainz Release Track Id</code></td>
+  <td><code>MUSICBRAINZ_RELEASETRACKID</code></td>
+  <td><code>MUSICBRAINZ_RELEASETRACKID</code></td>
+  <td><code>----:com.apple.iTunes:MusicBrainz Release Track Id</code></td>
+  <td><code>MusicBrainz/Release Track Id</code></td>
   <td>n/a</td>
 </tr>
 <tr>
@@ -908,6 +888,16 @@
   <td>n/a</td>
 </tr>
 <tr>
+  <td class="column1">Synced Lyrics</td>
+  <td><code>syncedlyrics:language:description</code></td>
+  <td><code>SYLT:description</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>WM/Lyrics_Synchronised</code></td>
+  <td>n/a</td>
+</tr>
+<tr>
   <td class="column1">Total Discs</td>
   <td><code>totaldiscs</code></td>
   <td><code>TPOS</code></td>
@@ -986,6 +976,16 @@
   <td>n/a</td>
   <td>n/a</td>
   <td><code>IWRI</code></td>
+</tr>
+<tr>
+  <td class="column1">iTunes CDDB 1 <sup><a href="#fn9">[9]</a></sup></td>
+  <td><code>itunes_cddb_1</code></td>
+  <td><code>iTunes_CDDB_1</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
+  <td><code>----:com.apple.iTunes:iTunes_CDDB_1</code></td>
+  <td>n/a</td>
+  <td>n/a</td>
 </tr>
 </table>
 

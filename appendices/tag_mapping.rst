@@ -14,6 +14,14 @@
 
       <a href="../_static/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank">spreadsheet</a>
 
+.. |br| raw:: html
+
+   <br/>
+
+.. |nl| raw:: latex
+
+   \newline
+
 Appendix A: :index:`Tag Mapping <pair: mapping; tags>`
 ======================================================
 
@@ -22,6 +30,21 @@ The following is a mapping between Picard internal tag names and those used by v
 .. only:: not latex and not epub
 
    The mapping is also available as a |tag_map_html_link| or |tag_map_xlsx_link|.
+
+`ASIN <https://musicbrainz.org/doc/ASIN>`_
+-------------------------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``asin``"
+   "ID3v2", "``TXXX:ASIN``"
+   "Vorbis", "``ASIN``"
+   "APEv2", "``ASIN``"
+   "iTunes MP4", "``----:com.apple.iTunes:ASIN``"
+   "ASF/Windows Media", "``ASIN``"
+   "RIFF INFO", "n/a"
+
 
 AcoustID
 ---------
@@ -90,7 +113,7 @@ Album Artist Sort Order
    :widths: 37 100
 
    "Internal Name", "``albumartistsort``"
-   "ID3v2", "``TSO2`` (Picard>=1.2) ``TXXX:ALBUMARTISTSORT`` (Picard<=1.1)"
+   "ID3v2", "``TSO2`` (Picard>=1.2) |br| |nl| ``TXXX:ALBUMARTISTSORT`` (Picard<=1.1)"
    "Vorbis", "``ALBUMARTISTSORT``"
    "APEv2", "``ALBUMARTISTSORT``"
    "iTunes MP4", "``soaa``"
@@ -98,8 +121,8 @@ Album Artist Sort Order
    "RIFF INFO", "n/a"
 
 
-Album Sort Order :sup:`[4]`
-----------------------------
+Album Sort Order [#f4]_
+------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -120,7 +143,7 @@ Album Sort Order :sup:`[4]`
    :widths: 37 100
 
    "Internal Name", "``arranger``"
-   "ID3v2", "``TIPL:arranger`` (ID3v2.4) ``IPLS:arranger`` (ID3v2.3)"
+   "ID3v2", "``TIPL:arranger`` (ID3v2.4) |br| |nl| ``IPLS:arranger`` (ID3v2.3)"
    "Vorbis", "``ARRANGER``"
    "APEv2", "``Arranger``"
    "iTunes MP4", "n/a"
@@ -173,18 +196,18 @@ Artists
    "RIFF INFO", "n/a"
 
 
-`ASIN <https://musicbrainz.org/doc/ASIN>`_
--------------------------------------------
+BPM [#f4]_
+-----------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
-   "Internal Name", "``asin``"
-   "ID3v2", "``TXXX:ASIN``"
-   "Vorbis", "``ASIN``"
-   "APEv2", "``ASIN``"
-   "iTunes MP4", "``----:com.apple.iTunes:ASIN``"
-   "ASF/Windows Media", "``ASIN``"
+   "Internal Name", "``bpm``"
+   "ID3v2", "``TBPM``"
+   "Vorbis", "``BPM``"
+   "APEv2", "``BPM``"
+   "iTunes MP4", "``tmpo``"
+   "ASF/Windows Media", "``WM/BeatsPerMinute``"
    "RIFF INFO", "n/a"
 
 
@@ -203,21 +226,6 @@ Artists
    "RIFF INFO", "n/a"
 
 
-BPM :sup:`[4]`
----------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``bpm``"
-   "ID3v2", "``TBPM``"
-   "Vorbis", "``BPM``"
-   "APEv2", "``BPM``"
-   "iTunes MP4", "``tmpo``"
-   "ASF/Windows Media", "``WM/BeatsPerMinute``"
-   "RIFF INFO", "n/a"
-
-
 `Catalog Number <https://musicbrainz.org/doc/Release_Catalog_Number>`_
 -----------------------------------------------------------------------
 .. csv-table::
@@ -233,8 +241,8 @@ BPM :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Comment :sup:`[4]`
--------------------
+Comment [#f4]_
+---------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -248,8 +256,8 @@ Comment :sup:`[4]`
    "RIFF INFO", "``ICMT``"
 
 
-Compilation (iTunes) :sup:`[5]`
---------------------------------
+Compilation (iTunes) [#f5]_
+----------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -285,7 +293,7 @@ Composer Sort Order
    :widths: 37 100
 
    "Internal Name", "``composersort``"
-   "ID3v2", "``TSOC`` (Picard>=1.3) ``TXXX:COMPOSERSORT`` (Picard<=1.2)"
+   "ID3v2", "``TSOC`` (Picard>=1.3) |br| |nl| ``TXXX:COMPOSERSORT`` (Picard<=1.2)"
    "Vorbis", "``COMPOSERSORT``"
    "APEv2", "``COMPOSERSORT``"
    "iTunes MP4", "``soco``"
@@ -308,8 +316,8 @@ Composer Sort Order
    "RIFF INFO", "n/a"
 
 
-Copyright :sup:`[4]`
----------------------
+Copyright [#f4]_
+-----------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -333,7 +341,7 @@ Director
    "ID3v2", "``TXXX:DIRECTOR``"
    "Vorbis", "``DIRECTOR``"
    "APEv2", "``Director``"
-   "iTunes MP4", "``©dir`` :sup:`[9]` "
+   "iTunes MP4", "``©dir`` [#f9]_"
    "ASF/Windows Media", "``WM/Director``"
    "RIFF INFO", "n/a"
 
@@ -368,8 +376,8 @@ Disc Subtitle
    "RIFF INFO", "n/a"
 
 
-Encoded By :sup:`[4]`
-----------------------
+Encoded By [#f4]_
+------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -383,8 +391,8 @@ Encoded By :sup:`[4]`
    "RIFF INFO", "``IENC``"
 
 
-Encoder Settings :sup:`[4]`
-----------------------------
+Encoder Settings [#f4]_
+------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -405,7 +413,7 @@ Encoder Settings :sup:`[4]`
    :widths: 37 100
 
    "Internal Name", "``engineer``"
-   "ID3v2", "``TIPL:engineer`` (ID3v2.4) ``IPLS:engineer`` (ID3v2.3)"
+   "ID3v2", "``TIPL:engineer`` (ID3v2.4) |br| |nl| ``IPLS:engineer`` (ID3v2.3)"
    "Vorbis", "``ENGINEER``"
    "APEv2", "``Engineer``"
    "iTunes MP4", "``----:com.apple.iTunes:ENGINEER``"
@@ -413,8 +421,8 @@ Encoder Settings :sup:`[4]`
    "RIFF INFO", "``IENG``"
 
 
-Gapless Playback :sup:`[4]`
-----------------------------
+Gapless Playback [#f4]_
+------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -443,33 +451,18 @@ Gapless Playback :sup:`[4]`
    "RIFF INFO", "``IGNR``"
 
 
-Grouping :sup:`[3]`
---------------------
+Grouping [#f3]_
+----------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
    "Internal Name", "``grouping``"
-   "ID3v2", "``TIT1`` ``GRP1`` :sup:`[8]` "
+   "ID3v2", "``TIT1`` |br| |nl| ``GRP1`` [#f8]_"
    "Vorbis", "``GROUPING``"
    "APEv2", "``Grouping``"
    "iTunes MP4", "``©grp``"
    "ASF/Windows Media", "``WM/ContentGroupDescription``"
-   "RIFF INFO", "n/a"
-
-
-Initial Key
-------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``key`` (Picard>=1.4)"
-   "ID3v2", "``TKEY``"
-   "Vorbis", "``KEY``"
-   "APEv2", "``KEY``"
-   "iTunes MP4", "``----:com.apple.iTunes:initialkey``"
-   "ASF/Windows Media", "``WM/InitialKey``"
    "RIFF INFO", "n/a"
 
 
@@ -488,18 +481,18 @@ Initial Key
    "RIFF INFO", "n/a"
 
 
-iTunes CDDB 1 :sup:`[9]`
--------------------------
+Initial Key
+------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
-   "Internal Name", "``itunes_cddb_1``"
-   "ID3v2", "``iTunes_CDDB_1``"
-   "Vorbis", "n/a"
-   "APEv2", "n/a"
-   "iTunes MP4", "``----:com.apple.iTunes:iTunes_CDDB_1``"
-   "ASF/Windows Media", "n/a"
+   "Internal Name", "``key`` (Picard>=1.4)"
+   "ID3v2", "``TKEY``"
+   "Vorbis", "``KEY``"
+   "APEv2", "``KEY``"
+   "iTunes MP4", "``----:com.apple.iTunes:initialkey``"
+   "ASF/Windows Media", "``WM/InitialKey``"
    "RIFF INFO", "n/a"
 
 
@@ -518,14 +511,14 @@ Language
    "RIFF INFO", "``ILNG``"
 
 
-License :sup:`[6, 7]`
+License [#f6]_ [#f7]_
 ----------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
    "Internal Name", "``license``"
-   "ID3v2", "``WCOP`` (single URL) ``TXXX:LICENSE`` (multiple or non-URL)"
+   "ID3v2", "``WCOP`` (single URL) |br| |nl| ``TXXX:LICENSE`` (multiple or non-URL)"
    "Vorbis", "``LICENSE``"
    "APEv2", "``LICENSE``"
    "iTunes MP4", "``----:com.apple.iTunes:LICENSE``"
@@ -548,8 +541,8 @@ License :sup:`[6, 7]`
    "RIFF INFO", "n/a"
 
 
-Lyrics :sup:`[4]`
-------------------
+Lyrics [#f4]_
+--------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -560,21 +553,6 @@ Lyrics :sup:`[4]`
    "APEv2", "``Lyrics``"
    "iTunes MP4", "``©lyr``"
    "ASF/Windows Media", "``WM/Lyrics``"
-   "RIFF INFO", "n/a"
-
-
-Synced Lyrics
---------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``syncedlyrics:language:description``"
-   "ID3v2", "``SYLT:description``"
-   "Vorbis", "n/a"
-   "APEv2", "n/a"
-   "iTunes MP4", "n/a"
-   "ASF/Windows Media", "WM/Lyrics_Synchronised"
    "RIFF INFO", "n/a"
 
 
@@ -600,7 +578,7 @@ Synced Lyrics
    :widths: 37 100
 
    "Internal Name", "``djmixer``"
-   "ID3v2", "``TIPL:DJ-mix`` (ID3v2.4) ``IPLS:DJ-mix`` (ID3v2.3)"
+   "ID3v2", "``TIPL:DJ-mix`` (ID3v2.4) |br| |nl| ``IPLS:DJ-mix`` (ID3v2.3)"
    "Vorbis", "``DJMIXER``"
    "APEv2", "``DJMixer``"
    "iTunes MP4", "``----:com.apple.iTunes:DJMIXER``"
@@ -615,7 +593,7 @@ Synced Lyrics
    :widths: 37 100
 
    "Internal Name", "``mixer``"
-   "ID3v2", "``TIPL:mix`` (ID3v2.4) ``IPLS:mix`` (ID3v2.3)"
+   "ID3v2", "``TIPL:mix`` (ID3v2.4) |br| |nl| ``IPLS:mix`` (ID3v2.3)"
    "Vorbis", "``MIXER``"
    "APEv2", "``Mixer``"
    "iTunes MP4", "``----:com.apple.iTunes:MIXER``"
@@ -623,8 +601,8 @@ Synced Lyrics
    "RIFF INFO", "n/a"
 
 
-Mood :sup:`[3]`
-----------------
+Mood [#f3]_
+------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -638,8 +616,8 @@ Mood :sup:`[3]`
    "RIFF INFO", "n/a"
 
 
-Movement :sup:`[4]`
---------------------
+Movement [#f4]_
+----------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -653,8 +631,8 @@ Movement :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Movement Count :sup:`[4]`
---------------------------
+Movement Count [#f4]_
+----------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -668,8 +646,8 @@ Movement Count :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Movement Number :sup:`[4]`
----------------------------
+Movement Number [#f4]_
+-----------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -818,21 +796,6 @@ MusicBrainz Release Group ID
    "RIFF INFO", "n/a"
 
 
-`MusicBrainz Track ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
------------------------------------------------------------------------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``musicbrainz_trackid``"
-   "ID3v2", "``TXXX:MusicBrainz Release Track Id``"
-   "Vorbis", "``MUSICBRAINZ_RELEASETRACKID``"
-   "APEv2", "``MUSICBRAINZ_RELEASETRACKID``"
-   "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Release Track Id``"
-   "ASF/Windows Media", "``MusicBrainz/Release Track Id``"
-   "RIFF INFO", "n/a"
-
-
 `MusicBrainz TRM ID <https://musicbrainz.org/doc/TRM>`_
 --------------------------------------------------------
 .. csv-table::
@@ -845,6 +808,21 @@ MusicBrainz Release Group ID
    "APEv2", "``MUSICBRAINZ_TRMID``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz TRM Id``"
    "ASF/Windows Media", "``MusicBrainz/TRM Id``"
+   "RIFF INFO", "n/a"
+
+
+`MusicBrainz Track ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
+-----------------------------------------------------------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``musicbrainz_trackid``"
+   "ID3v2", "``TXXX:MusicBrainz Release Track Id``"
+   "Vorbis", "``MUSICBRAINZ_RELEASETRACKID``"
+   "APEv2", "``MUSICBRAINZ_RELEASETRACKID``"
+   "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Release Track Id``"
+   "ASF/Windows Media", "``MusicBrainz/Release Track Id``"
    "RIFF INFO", "n/a"
 
 
@@ -938,23 +916,23 @@ Original Filename
    "RIFF INFO", "n/a"
 
 
-Original Release Date :sup:`[1]`
----------------------------------
+Original Release Date [#f1]_
+-----------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
    "Internal Name", "``originaldate``"
-   "ID3v2", "``TDOR`` (ID3v2.4) ``TORY`` (ID3v2.3)"
+   "ID3v2", "``TDOR`` (ID3v2.4) |br| |nl| ``TORY`` (ID3v2.3)"
    "Vorbis", "``ORIGINALDATE``"
    "APEv2", "n/a"
    "iTunes MP4", "n/a"
-   "ASF/Windows Media", "``WM/OriginalReleaseTime`` (Picard>=1.3.1) ``WM/OriginalReleaseYear`` (Picard<=1.3.0)"
+   "ASF/Windows Media", "``WM/OriginalReleaseTime`` (Picard>=1.3.1) |br| |nl| ``WM/OriginalReleaseYear`` (Picard<=1.3.0)"
    "RIFF INFO", "n/a"
 
 
-Original Release Year :sup:`[1]`
----------------------------------
+Original Release Year [#f1]_
+-----------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -975,7 +953,7 @@ Performer
    :widths: 37 100
 
    "Internal Name", "``performer:instrument``"
-   "ID3v2", "``TMCL:instrument`` (ID3v2.4) ``IPLS:instrument`` (ID3v2.3)"
+   "ID3v2", "``TMCL:instrument`` (ID3v2.4) |br| |nl| ``IPLS:instrument`` (ID3v2.3)"
    "Vorbis", "``PERFORMER={artist} (instrument)``"
    "APEv2", "``Performer={artist} (instrument)``"
    "iTunes MP4", "n/a"
@@ -984,18 +962,18 @@ Performer
 
 .. seealso::
 
-   Please refer to
-   `Relationship Types / Artist-Release / Performer <https://musicbrainz.org/relationship/888a2320-52e4-4fe8-a8a0-7a4c8dfde167>`_ ,
-   `Relationship Types / Artist-Release / Vocal <https://musicbrainz.org/relationship/eb10f8a0-0f4c-4dce-aa47-87bcb2bc42f3>`_ ,
-   `Relationship Types / Artist-Release / Instrument <https://musicbrainz.org/relationship/67555849-61e5-455b-96e3-29733f0115f5>`_ ,
-   `Relationship Types / Artist-Recording / Performer <https://musicbrainz.org/relationship/628a9658-f54c-4142-b0c0-95f031b544da>`_ ,
-   `Relationship Types / Artist-Recording / Vocal <https://musicbrainz.org/relationship/0fdbe3c6-7700-4a31-ae54-b53f06ae1cfa>`_ , and
-   `Relationship Types / Artist-Recording / Instrument <https://musicbrainz.org/relationship/59054b12-01ac-43ee-a618-285fd397e461>`_
-   for more information.
+   Please refer to the following for more information:
+
+   - `Relationship Types / Artist-Release / Performer <https://musicbrainz.org/relationship/888a2320-52e4-4fe8-a8a0-7a4c8dfde167>`_
+   - `Relationship Types / Artist-Release / Vocal <https://musicbrainz.org/relationship/eb10f8a0-0f4c-4dce-aa47-87bcb2bc42f3>`_
+   - `Relationship Types / Artist-Release / Instrument <https://musicbrainz.org/relationship/67555849-61e5-455b-96e3-29733f0115f5>`_
+   - `Relationship Types / Artist-Recording / Performer <https://musicbrainz.org/relationship/628a9658-f54c-4142-b0c0-95f031b544da>`_
+   - `Relationship Types / Artist-Recording / Vocal <https://musicbrainz.org/relationship/0fdbe3c6-7700-4a31-ae54-b53f06ae1cfa>`_
+   - `Relationship Types / Artist-Recording / Instrument <https://musicbrainz.org/relationship/59054b12-01ac-43ee-a618-285fd397e461>`_
 
 
-Podcast :sup:`[4]`
--------------------
+Podcast [#f4]_
+---------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1009,8 +987,8 @@ Podcast :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Podcast URL :sup:`[4]`
------------------------
+Podcast URL [#f4]_
+-------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1031,7 +1009,7 @@ Podcast URL :sup:`[4]`
    :widths: 37 100
 
    "Internal Name", "``producer``"
-   "ID3v2", "``TIPL:producer`` (ID3v2.4) ``IPLS:producer`` (ID3v2.3)"
+   "ID3v2", "``TIPL:producer`` (ID3v2.4) |br| |nl| ``IPLS:producer`` (ID3v2.3)"
    "Vorbis", "``PRODUCER``"
    "APEv2", "``Producer``"
    "iTunes MP4", "``----:com.apple.iTunes:PRODUCER``"
@@ -1091,7 +1069,7 @@ Podcast URL :sup:`[4]`
    :widths: 37 100
 
    "Internal Name", "``date``"
-   "ID3v2", "``TDRC`` (ID3v2.4) ``TYER`` + ``TDAT`` (ID3v2.3)"
+   "ID3v2", "``TDRC`` (ID3v2.4) |br| |nl| ``TYER`` + ``TDAT`` (ID3v2.3)"
    "Vorbis", "``DATE``"
    "APEv2", "``Year``"
    "iTunes MP4", "``©day``"
@@ -1264,8 +1242,8 @@ Script
    "RIFF INFO", "n/a"
 
 
-Show Name :sup:`[4]`
----------------------
+Show Name [#f4]_
+-----------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1279,8 +1257,8 @@ Show Name :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Show Name Sort Order :sup:`[4]`
---------------------------------
+Show Name Sort Order [#f4]_
+----------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1294,8 +1272,8 @@ Show Name Sort Order :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Show Work & Movement :sup:`[4]`
---------------------------------
+Show Work & Movement [#f4]_
+----------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1309,8 +1287,8 @@ Show Work & Movement :sup:`[4]`
    "RIFF INFO", "n/a"
 
 
-Subtitle :sup:`[4]`
---------------------
+Subtitle [#f4]_
+----------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1321,6 +1299,21 @@ Subtitle :sup:`[4]`
    "APEv2", "``Subtitle``"
    "iTunes MP4", "``----:com.apple.iTunes:SUBTITLE``"
    "ASF/Windows Media", "``WM/SubTitle``"
+   "RIFF INFO", "n/a"
+
+
+Synced Lyrics
+--------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``syncedlyrics:language:description``"
+   "ID3v2", "``SYLT:description``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "n/a"
+   "ASF/Windows Media", "``WM/Lyrics_Synchronised``"
    "RIFF INFO", "n/a"
 
 
@@ -1384,8 +1377,8 @@ Track Number
    "RIFF INFO", "``INAM``"
 
 
-Track Title Sort Order :sup:`[4]`
-----------------------------------
+Track Title Sort Order [#f4]_
+------------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1421,7 +1414,7 @@ Work Title
    :widths: 37 100
 
    "Internal Name", "``work`` (Picard>=1.3)"
-   "ID3v2", "``TXXX:WORK`` ``TIT1`` :sup:`[8]` "
+   "ID3v2", "``TXXX:WORK`` ``TIT1`` [#f8]_"
    "Vorbis", "``WORK``"
    "APEv2", "``WORK``"
    "iTunes MP4", "``©wrk`` (Picard>=2.1)"
@@ -1429,8 +1422,8 @@ Work Title
    "RIFF INFO", "n/a"
 
 
-`Writer <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68>`_ :sup:`[2]`
--------------------------------------------------------------------------------------------------
+`Writer <https://musicbrainz.org/relationship/a255bca1-b157-4518-9108-7b147dc3fc68>`_ [#f2]_
+---------------------------------------------------------------------------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
@@ -1444,17 +1437,32 @@ Work Title
    "RIFF INFO", "``IWRI``"
 
 
+iTunes CDDB 1 [#f9]_
+---------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``itunes_cddb_1``"
+   "ID3v2", "``iTunes_CDDB_1``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "``----:com.apple.iTunes:iTunes_CDDB_1``"
+   "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
+
+
 .. rubric:: Notes:
 
-#. Taken from the earliest release in the release group.
-#. Used when uncertain whether composer or lyricist.
-#. This is populated by LastFMPlus plugin and not by stock Picard.
-#. This is not able to be populated by stock Picard. It may be used and populated by certain plugins.
-#. For Picard>=1.3 this indicates a Various Artists album; for Picard<=1.2 this indicates albums with tracks by different artists which is incorrect (e.g.: an original album with a duet with a feat. artist would show as a Compilation). In neither case does this indicate a MusicBrainz Release Group subtype of compilation.
-#. `Release-level license <https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_ relationship type.
-#. `Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.
-#. With "Save iTunes compatible grouping and work" (since Picard>=2.1.0)
-#. From iTunes Metadata Format Specification
+.. [#f1] Taken from the earliest release in the release group.
+.. [#f2] Used when uncertain whether composer or lyricist.
+.. [#f3] This is populated by LastFMPlus plugin and not by stock Picard.
+.. [#f4] This is not able to be populated by stock Picard. It may be used and populated by certain plugins.
+.. [#f5] For Picard>=1.3 this indicates a Various Artists album; for Picard<=1.2 this indicates albums with tracks by different artists which is incorrect (e.g.: an original album with a duet with a feat. artist would show as a Compilation). In neither case does this indicate a MusicBrainz Release Group subtype of compilation.
+.. [#f6] `Release-level license <https://musicbrainz.org/relationship/004bd0c3-8a45-4309-ba52-fa99f3aa3d50>`_ relationship type.
+.. [#f7] `Recording-level license <https://musicbrainz.org/relationship/f25e301d-b87b-4561-86a0-5d2df6d26c0a>`_ relationship type.
+.. [#f8] With "Save iTunes compatible grouping and work" (since Picard>=2.1.0)
+.. [#f9] From iTunes Metadata Format Specification
 
 .. only:: latex
 
