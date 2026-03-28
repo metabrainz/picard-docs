@@ -31,6 +31,13 @@ from subprocess import SubprocessError
 import sys
 import time
 
+from babel import (
+    Locale,
+    UnknownLocaleError,
+)
+import restructuredtext_lint
+import xlsxwriter
+
 import conf
 from tag_mapping import (
     TAG_COLUMNS,
@@ -38,13 +45,6 @@ from tag_mapping import (
     TAG_NOTES,
     TagMapInfo,
 )
-
-from babel import (
-    Locale,
-    UnknownLocaleError,
-)
-import restructuredtext_lint
-import xlsxwriter
 
 
 SCRIPT_NAME = 'Picard Docs Builder Utils'
@@ -575,8 +575,7 @@ def python_files_to_check():
         str: Path and name of file.
     """
     for filepath in PYTHON_FILES_TO_CHECK:
-        for filename in glob.glob(filepath, recursive=True):
-            yield filename
+        yield from glob.glob(filepath, recursive=True)
 
 
 ################################################################################
