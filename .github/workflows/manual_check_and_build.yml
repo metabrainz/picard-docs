@@ -39,7 +39,7 @@ jobs:
       run: |
         python ./dev_utils.py build map
     - name: Store Tag Map Build Output File
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: tag_map_files
         path: _static/MusicBrainz_Picard_Tag_Map.*
@@ -52,7 +52,7 @@ jobs:
         python ./dev_utils.py clean html
         python ./dev_utils.py build html
     - name: Store HTML Build Output File
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: html_files
         path: _build/html/*
@@ -72,7 +72,7 @@ jobs:
         python ./dev_utils.py clean pdf
         python ./dev_utils.py build pdf
     - name: Store PDF Build Output File
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: pdf_file
         path: _build/latex/*.pdf
