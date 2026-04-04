@@ -7,9 +7,7 @@ The following is a list of the Picard scripting functions grouped by function ty
 
 .. warning::
 
-   A common error when using scripting functions is to add a space after the comma separating the arguments, which will cause the function to not work as expected. For example, if you have a script that checks if the artist is "My Artist", but the check is ``$eq(%artist%, My Artist)``, the match will not work because of the space after the comma. The correct syntax should be ``$eq(%artist%,My Artist)`` without the extra space. This is a common occurence when using AI to develop scripts, because it often introduces extra spaces such as a space after the comma separating arguments.
-
-   Similarly, if you have a script that checks if the artist is "My Artist", but the check is ``$eq(%artist%,"My Artist")``, the match will not work because of the quotes around the value. The correct syntax should be ``$eq(%artist%,My Artist)`` without the quotes. This is also a common occurence when using AI to develop scripts, because it often adds quotes around the value.
+   A common error when using scripting functions is to add a space after the comma separating the arguments, or enclosing a value in quotes. Picard will consider both of these as part of the argument, which will cause the function to not work as expected. For example, if you have a script that checks if the artist is "My Artist", but the check is ``$eq(%artist%, My Artist)`` or ``$eq(%artist%,"My Artist")``, the match will not work. The correct syntax should be ``$eq(%artist%,My Artist)`` without the extra space or quotes. This is a common occurence when using AI to develop scripts, because it often introduces extra spaces such as a space after the comma separating arguments or quotes around the value.
 
 
 :index:`Assignment Functions <scripting functions; assignment>`
