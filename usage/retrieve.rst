@@ -108,14 +108,3 @@ The second browser search method uses manually entered information as the search
       :doc:`retrieve_scan` /
       :doc:`retrieve_browser` /
       :doc:`retrieve_manual`
-
-.. only:: html
-
-   .. toctree::
-      :hidden:
-
-      retrieve_lookup_cd
-      retrieve_lookup
-      retrieve_scan
-      retrieve_browser
-      retrieve_manual
