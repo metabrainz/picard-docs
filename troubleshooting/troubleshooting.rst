@@ -109,5 +109,4 @@ This will display all log entries in the terminal window, and allow you to copy 
       :doc:`no_coverart` /
       :doc:`missing_tags` /
       :doc:`not_saving` /
-      :doc:`stopped_working` /
-      :doc:`macos_startup_error`
+      :doc:`stopped_working`
