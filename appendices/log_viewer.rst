@@ -102,9 +102,20 @@ Log Entry Details
 
 To view the details of a log entry, you can right-click on the entry in the log viewer, and select the :menuselection:`View detail…` action. This will open a dialog showing the full details of the log entry, including the log level, timestamp, module and method, and message.
 
-.. image:: images/log_viewer_detail.png
-   :align: center
-   :alt: Log Entry Details
+.. only:: not latex
+
+   .. image:: images/log_viewer_detail.png
+      :align: center
+      :alt: Log Entry Details
+
+   |
+
+.. only:: latex
+
+   .. image:: images/log_viewer_detail.png
+      :width: 75%
+      :align: center
+      :alt: Log Entry Details
 
 
 Context Menu Options
@@ -112,9 +123,20 @@ Context Menu Options
 
 The log viewer context menu provides additional options for managing the log entries. To access the context menu, right-click in the log viewer window.
 
-.. image:: images/log_viewer_context_menu.png
-   :align: center
-   :alt: Log Viewer Context Menu
+.. only:: not latex
+
+   .. image:: images/log_viewer_context_menu.png
+      :align: center
+      :alt: Log Viewer Context Menu
+
+   |
+
+.. only:: latex
+
+   .. image:: images/log_viewer_context_menu.png
+      :width: 35%
+      :align: center
+      :alt: Log Viewer Context Menu
 
 The context menu options include:
 
