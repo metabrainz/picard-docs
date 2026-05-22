@@ -301,18 +301,18 @@ Large images should be typically scaled at 75% to 80% width (as appropriate) and
 ```rst
 .. only:: not latex
 
-.. image:: images/options-player.png
-    :align: center
-    :alt: Built in media player
+   .. image:: images/options-player.png
+      :align: center
+      :alt: Built in media player
 
-|
+      |
 
 .. only:: latex
 
-.. image:: images/options-player.png
-    :width: 75%
-    :align: center
-    :alt: Built in media player
+   .. image:: images/options-player.png
+       :width: 75%
+       :align: center
+       :alt: Built in media player
 ```
 
 For accessibility, it is generally good practice to include an `:alt:` option to provide alternate text for an image.
