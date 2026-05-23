@@ -3,7 +3,7 @@
 Appendix D: :index:`Log Viewer <pair: log viewer; usage>`
 =======================================================================
 
-Picard maintains a log of events that can be useful for troubleshooting and understanding the behavior of Picard. The log viewer allows you to view and filter these log entries, and to export the log to a file for sharing with others or attach to bug reports. This is also where you set the log level and select which debug options to include in the log.
+Picard maintains a log of events that can be useful for troubleshooting and understanding the behavior of Picard. The log viewer allows you to view and filter these log entries, and to export the log to a file for sharing with others or attach to bug reports. This is also where you set the log level and select which debug options to include in the log during the current session. Note that Picard will automatically reset the log level to the default of ``Info`` when started, unless the ``--debug`` command line option is specified or the ``PICARD_DEBUG`` environment variable is set.
 
 .. only:: not latex
 
@@ -20,13 +20,13 @@ Picard maintains a log of events that can be useful for troubleshooting and unde
       :align: center
       :alt: Log Viewer
 
-The log viewer is accessed from the :menuselection:`Help -> View Error/Debug Log` menu. It displays log entries in a table with columns for the log level, log timestamp, module and method (with line number) that generated the entry, and message. The number of lines in the log is displayed in the lower right-hand corner of the window.
+The log viewer is accessed from the :menuselection:`Help --> View Error/Debug Log` menu. It displays log entries in a table with columns for the log level, log timestamp, module and method (with line number) that generated the entry, and message. The number of lines in the log is displayed in the lower right-hand corner of the window.
 
 
 Log Settings
 -------------
 
-The amount of information that is logged can be controlled by setting the log level and selecting which debug options to include in the log. These can be set from within the log viewer using the controls at the bottom of the window. When set from within the log viewer, the selected log level and debug options will be applied immediately, and the log level will be retained across restarts of Picard.
+The amount of information that is logged can be controlled by setting the log level and selecting which debug options to include in the log. These can be set from within the log viewer using the controls at the bottom of the window. When set from within the log viewer, the selected log level and debug options will be applied immediately.
 
 The log level can be overridden to ``Debug``, and debug options can be set for a session by starting Picard using the ``--debug`` and ``--debug-opts`` command line options.
 
@@ -35,7 +35,7 @@ Log level
 
 The level of logging that is enabled is selected from a dropdown control. The options are ``Error``, ``Warning``, ``Info``, and ``Debug``. Entries will be logged at the selected level or above. For example, selecting ``Warning`` will log **Warning** and **Error** entries, but not **Debug** or **Info** entries. In general, it is recommended to set the log level to ``Info`` for normal use to avoid excessive logging, and only use ``Debug`` when troubleshooting specific issues to ensure that all log entries are captured.
 
-Note that the selected log level is applied immediately, so if you change the level to ``Warning``, then only **Warning** and **Error** level events will be logged from that point forward. However, log entries that were captured at a lower level prior to changing the log level will not be removed from the log, and will still be visible in the log viewer until the log is cleared. The selected log level is retained across restarts, so if you set the log level to ``Warning`` and restart Picard, then only **Warning** and **Error** level events will be logged from the start of the session.
+Note that the selected log level is applied immediately, so if you change the level to ``Warning``, then only **Warning** and **Error** level events will be logged from that point forward. However, log entries that were captured at a lower level prior to changing the log level will not be removed from the log, and will still be visible in the log viewer until the log is cleared. The log level will be reset to the default of ``Info`` automatically each time Picard is started.
 
 The log level selector is also used to filter the log entries that are displayed in the log viewer. If you change the level to ``Warning``, then only **Warning** and **Error** level entries will be displayed in the log viewer, even if more detailed entries are being logged at a lower level.
 
@@ -78,10 +78,6 @@ Log level
 +++++++++++
 
 The log level dropdown control is used to select the level to filter the log entries. Selecting a log level will show only entries at that level and above. For example, selecting ``Warning`` will show **Warning** and **Error** entries, but not **Debug** or **Info** entries.
-
-.. caution::
-
-   When using the log level selector to filter the log entries, you must ensure that it is reset to the desired level of logging to capture prior to closing the log viewer window. In general, it is recommended to set the log level to ``Info`` for normal use to avoid excessive logging, and only use ``Debug`` when troubleshooting specific issues to ensure that all log entries are captured.
 
 Filter text
 +++++++++++++++
