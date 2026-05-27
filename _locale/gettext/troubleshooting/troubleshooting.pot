@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 09:58-0600\n"
+"POT-Creation-Date: 2026-05-27 08:30-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,7 +124,7 @@ msgid ":index:`Getting a Debug Log <troubleshooting; get debug log>`"
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:57
-msgid "For many bugs, it helps developers to have a debug log from Picard. You can see the log by going to :menuselection:`\"Help --> View Log\"`. You can also get a full debug log, which is better because it contains more detailed information. Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly. To retrieve the full debug log:"
+msgid "For many bugs, it helps developers to have a debug log from Picard. You can see the log by going to :menuselection:`Help --> View Error/Debug Log`. You can also get a full debug log, which is better because it contains more detailed information. Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly. To retrieve the full debug log:"
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:59
@@ -132,31 +132,27 @@ msgid "Start Picard."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:60
-msgid "Open the log view with :menuselection:`\"Help --> View Log\"`."
+msgid "Open the log viewer by going to :menuselection:`Help --> View Error/Debug Log`."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:61
-msgid "Change the log level :guilabel:`verbosity` to **Debug**."
+msgid "Set the log level to **Debug** using the dropdown control at the bottom of the log viewer window. This will cause all log entries to be captured in the log, including detailed debug information that is not included at higher log levels."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:62
-msgid "Close the log viewer."
-msgstr ""
-
-#: ../../troubleshooting/troubleshooting.rst:63
-msgid "Close and restart Picard."
-msgstr ""
-
-#: ../../troubleshooting/troubleshooting.rst:64
 msgid "Repeat the action that caused the problem being reported."
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:65
-msgid "Open the log viewer and copy the output to paste into the forum post or bug ticket. Alternately, you can save the log to a file to attach to your bug report by using the :guilabel:`Save As...` button."
+#: ../../troubleshooting/troubleshooting.rst:63
+msgid "From the log viewer, copy the log output to paste into the forum post or bug ticket. Alternately, you can save the log to a file to attach to your bug report by using the :guilabel:`Save As…` button."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:64
+msgid "Close the log viewer, and close Picard."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:66
-msgid "Close the log viewer, and close Picard."
+msgid "Please see :doc:`../appendices/log_viewer` for more information about the log viewer and how to use it."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:70
@@ -164,7 +160,7 @@ msgid ":index:`Getting Logs in Case of Crashes <troubleshooting; getting log for
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:72
-msgid "In some cases the problem will cause Picard to crash and not allow you to access the resulting log from the log viewer. You can still generate a log output to attach to your report by starting Picard with the ``--debug`` command line option from a command / terminal window and copying the log output information from the terminal. The steps to follow for each of the supported platforms are:"
+msgid "In some cases the problem will cause Picard to crash and not allow you to access the resulting log from the log viewer. You can still generate a log output to attach to your report by starting Picard with the ``--debug`` command line option from a command / terminal window (or set the ``PICARD_DEBUG`` environment variable) and copying the log output information from the terminal. The steps to follow for each of the supported platforms are:"
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:75

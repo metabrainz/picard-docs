@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 09:58-0600\n"
+"POT-Creation-Date: 2026-05-27 08:30-0600\n"
 "PO-Revision-Date: 2026-03-12 17:13+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Last-Translator: mfmeulenbelt <mfmeulenbelt@users.noreply.translations."
+"metabrainz.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/troubleshootingtroubleshooting/nl/>\n"
 "Language: nl\n"
@@ -84,8 +84,8 @@ msgstr ""
 msgid ""
 "If you think you have found a bug in a plugin, you should first check "
 "whether you are using the latest version of the plugin. This can be done by "
-"going to the :menuselection:`\"Options --> Plugins\"` page and clicking "
-"the :guilabel:`Refresh All` button. If an update is found for any of your "
+"going to the :menuselection:`\"Options --> Plugins\"` page and clicking the :"
+"guilabel:`Refresh All` button. If an update is found for any of your "
 "plugins, you can update them from the plugins options page. If there was no "
 "update available or you have updated the plugin and are still experiencing "
 "the problem, you should report the issue to the plugin author."
@@ -96,10 +96,10 @@ msgid ""
 "If the plugin author has provided a link to report issues, right-clicking "
 "the plugin will provide an option to \"Report a Bug\". If there is no such "
 "option available, you can find the contact information for the plugin author "
-"by right-clicking on the plugin in the list and "
-"selecting :guilabel:`Information` from the context menu. This will show you "
-"a link to the plugin homepage. When reporting the issue to the plugin "
-"author, please provide the following information:"
+"by right-clicking on the plugin in the list and selecting :guilabel:"
+"`Information` from the context menu. This will show you a link to the plugin "
+"homepage. When reporting the issue to the plugin author, please provide the "
+"following information:"
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:28
@@ -200,13 +200,14 @@ msgstr ""
 "verkrijgen>`"
 
 #: ../../troubleshooting/troubleshooting.rst:57
+#, fuzzy
 msgid ""
 "For many bugs, it helps developers to have a debug log from Picard. You can "
-"see the log by going to :menuselection:`\"Help --> View Log\"`. You can also "
-"get a full debug log, which is better because it contains more detailed "
-"information. Pasting this log into your forum post or bug ticket can help "
-"developers and other users to resolve your issue more quickly. To retrieve "
-"the full debug log:"
+"see the log by going to :menuselection:`Help --> View Error/Debug Log`. You "
+"can also get a full debug log, which is better because it contains more "
+"detailed information. Pasting this log into your forum post or bug ticket "
+"can help developers and other users to resolve your issue more quickly. To "
+"retrieve the full debug log:"
 msgstr ""
 "Bij veel bugs helpt het de ontwikkelaars om een debuglogboek van Picard te "
 "hebben. Je kan het logboek vinden onder :menuselection:`‘Hulp --> Fout- en "
@@ -220,40 +221,46 @@ msgid "Start Picard."
 msgstr "Start Picard."
 
 #: ../../troubleshooting/troubleshooting.rst:60
-msgid "Open the log view with :menuselection:`\"Help --> View Log\"`."
+#, fuzzy
+msgid ""
+"Open the log viewer by going to :menuselection:`Help --> View Error/Debug "
+"Log`."
 msgstr ""
 "Open het logboek via :menuselection:`‘Hulp --> Fout- en debuglogboek "
 "bekijken’`."
 
 #: ../../troubleshooting/troubleshooting.rst:61
-msgid "Change the log level :guilabel:`verbosity` to **Debug**."
-msgstr "Verander het detailniveau (linksonder) naar **‘Foutopsporing’**."
+msgid ""
+"Set the log level to **Debug** using the dropdown control at the bottom of "
+"the log viewer window. This will cause all log entries to be captured in the "
+"log, including detailed debug information that is not included at higher log "
+"levels."
+msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:62
-msgid "Close the log viewer."
-msgstr "Sluit het logboek."
-
-#: ../../troubleshooting/troubleshooting.rst:63
-msgid "Close and restart Picard."
-msgstr "Sluit Picard af en start Picard opnieuw op."
-
-#: ../../troubleshooting/troubleshooting.rst:64
 msgid "Repeat the action that caused the problem being reported."
 msgstr "Herhaal wat je deed toen het probleem werd veroorzaakt."
 
-#: ../../troubleshooting/troubleshooting.rst:65
+#: ../../troubleshooting/troubleshooting.rst:63
+#, fuzzy
 msgid ""
-"Open the log viewer and copy the output to paste into the forum post or bug "
+"From the log viewer, copy the log output to paste into the forum post or bug "
 "ticket. Alternately, you can save the log to a file to attach to your bug "
-"report by using the :guilabel:`Save As...` button."
+"report by using the :guilabel:`Save As…` button."
 msgstr ""
 "Open het logboek en kopieer de tekst in het forumbericht of de bugticket. Je "
 "kan het logboek ook met de knop :guilabel:`‘Opslaan als …’` als bestand "
 "opslaan en aan je melding toevoegen."
 
-#: ../../troubleshooting/troubleshooting.rst:66
+#: ../../troubleshooting/troubleshooting.rst:64
 msgid "Close the log viewer, and close Picard."
 msgstr "Sluit het logboek en daarna Picard."
+
+#: ../../troubleshooting/troubleshooting.rst:66
+msgid ""
+"Please see :doc:`../appendices/log_viewer` for more information about the "
+"log viewer and how to use it."
+msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:70
 msgid ""
@@ -264,13 +271,15 @@ msgstr ""
 "logboek voor vastlopers verkrijgen>`"
 
 #: ../../troubleshooting/troubleshooting.rst:72
+#, fuzzy
 msgid ""
 "In some cases the problem will cause Picard to crash and not allow you to "
 "access the resulting log from the log viewer. You can still generate a log "
 "output to attach to your report by starting Picard with the ``--debug`` "
-"command line option from a command / terminal window and copying the log "
-"output information from the terminal. The steps to follow for each of the "
-"supported platforms are:"
+"command line option from a command / terminal window (or set the "
+"``PICARD_DEBUG`` environment variable) and copying the log output "
+"information from the terminal. The steps to follow for each of the supported "
+"platforms are:"
 msgstr ""
 "In sommig gevallen loopt Picard door het probleem vast en kan je het logboek "
 "daarom niet openen. Om toch een logboek te produceren, start je Picard "
@@ -366,6 +375,15 @@ msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:124
 msgid ""
-"Specific "
-"situations: :doc:`does_not_start` / :doc:`no_coverart` / :doc:`missing_tags` / :doc:`not_saving` / :doc:`stopped_working`"
+"Specific situations: :doc:`does_not_start` / :doc:`no_coverart` / :doc:"
+"`missing_tags` / :doc:`not_saving` / :doc:`stopped_working`"
 msgstr ""
+
+#~ msgid "Change the log level :guilabel:`verbosity` to **Debug**."
+#~ msgstr "Verander het detailniveau (linksonder) naar **‘Foutopsporing’**."
+
+#~ msgid "Close the log viewer."
+#~ msgstr "Sluit het logboek."
+
+#~ msgid "Close and restart Picard."
+#~ msgstr "Sluit Picard af en start Picard opnieuw op."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 09:58-0600\n"
+"POT-Creation-Date: 2026-05-27 08:30-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -70,8 +70,8 @@ msgstr ""
 msgid ""
 "If you think you have found a bug in a plugin, you should first check "
 "whether you are using the latest version of the plugin. This can be done by "
-"going to the :menuselection:`\"Options --> Plugins\"` page and clicking "
-"the :guilabel:`Refresh All` button. If an update is found for any of your "
+"going to the :menuselection:`\"Options --> Plugins\"` page and clicking the :"
+"guilabel:`Refresh All` button. If an update is found for any of your "
 "plugins, you can update them from the plugins options page. If there was no "
 "update available or you have updated the plugin and are still experiencing "
 "the problem, you should report the issue to the plugin author."
@@ -82,10 +82,10 @@ msgid ""
 "If the plugin author has provided a link to report issues, right-clicking "
 "the plugin will provide an option to \"Report a Bug\". If there is no such "
 "option available, you can find the contact information for the plugin author "
-"by right-clicking on the plugin in the list and "
-"selecting :guilabel:`Information` from the context menu. This will show you "
-"a link to the plugin homepage. When reporting the issue to the plugin "
-"author, please provide the following information:"
+"by right-clicking on the plugin in the list and selecting :guilabel:"
+"`Information` from the context menu. This will show you a link to the plugin "
+"homepage. When reporting the issue to the plugin author, please provide the "
+"following information:"
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:28
@@ -163,11 +163,11 @@ msgstr ""
 #: ../../troubleshooting/troubleshooting.rst:57
 msgid ""
 "For many bugs, it helps developers to have a debug log from Picard. You can "
-"see the log by going to :menuselection:`\"Help --> View Log\"`. You can also "
-"get a full debug log, which is better because it contains more detailed "
-"information. Pasting this log into your forum post or bug ticket can help "
-"developers and other users to resolve your issue more quickly. To retrieve "
-"the full debug log:"
+"see the log by going to :menuselection:`Help --> View Error/Debug Log`. You "
+"can also get a full debug log, which is better because it contains more "
+"detailed information. Pasting this log into your forum post or bug ticket "
+"can help developers and other users to resolve your issue more quickly. To "
+"retrieve the full debug log:"
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:59
@@ -175,34 +175,38 @@ msgid "Start Picard."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:60
-msgid "Open the log view with :menuselection:`\"Help --> View Log\"`."
+msgid ""
+"Open the log viewer by going to :menuselection:`Help --> View Error/Debug "
+"Log`."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:61
-msgid "Change the log level :guilabel:`verbosity` to **Debug**."
+msgid ""
+"Set the log level to **Debug** using the dropdown control at the bottom of "
+"the log viewer window. This will cause all log entries to be captured in the "
+"log, including detailed debug information that is not included at higher log "
+"levels."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:62
-msgid "Close the log viewer."
-msgstr ""
-
-#: ../../troubleshooting/troubleshooting.rst:63
-msgid "Close and restart Picard."
-msgstr ""
-
-#: ../../troubleshooting/troubleshooting.rst:64
 msgid "Repeat the action that caused the problem being reported."
 msgstr ""
 
-#: ../../troubleshooting/troubleshooting.rst:65
+#: ../../troubleshooting/troubleshooting.rst:63
 msgid ""
-"Open the log viewer and copy the output to paste into the forum post or bug "
+"From the log viewer, copy the log output to paste into the forum post or bug "
 "ticket. Alternately, you can save the log to a file to attach to your bug "
-"report by using the :guilabel:`Save As...` button."
+"report by using the :guilabel:`Save As…` button."
+msgstr ""
+
+#: ../../troubleshooting/troubleshooting.rst:64
+msgid "Close the log viewer, and close Picard."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:66
-msgid "Close the log viewer, and close Picard."
+msgid ""
+"Please see :doc:`../appendices/log_viewer` for more information about the "
+"log viewer and how to use it."
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:70
@@ -216,9 +220,10 @@ msgid ""
 "In some cases the problem will cause Picard to crash and not allow you to "
 "access the resulting log from the log viewer. You can still generate a log "
 "output to attach to your report by starting Picard with the ``--debug`` "
-"command line option from a command / terminal window and copying the log "
-"output information from the terminal. The steps to follow for each of the "
-"supported platforms are:"
+"command line option from a command / terminal window (or set the "
+"``PICARD_DEBUG`` environment variable) and copying the log output "
+"information from the terminal. The steps to follow for each of the supported "
+"platforms are:"
 msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:75
@@ -291,6 +296,6 @@ msgstr ""
 
 #: ../../troubleshooting/troubleshooting.rst:124
 msgid ""
-"Specific "
-"situations: :doc:`does_not_start` / :doc:`no_coverart` / :doc:`missing_tags` / :doc:`not_saving` / :doc:`stopped_working`"
+"Specific situations: :doc:`does_not_start` / :doc:`no_coverart` / :doc:"
+"`missing_tags` / :doc:`not_saving` / :doc:`stopped_working`"
 msgstr ""
