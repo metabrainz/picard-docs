@@ -99,4 +99,5 @@
       appendices/tag_mapping
       appendices/command_line
       appendices/keyboard_shortcuts
+      appendices/log_viewer
       functions/list_by_name

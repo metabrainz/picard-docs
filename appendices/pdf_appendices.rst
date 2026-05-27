@@ -9,6 +9,7 @@ Appendices
    tag_mapping
    command_line
    keyboard_shortcuts
+   log_viewer
 
 .. only:: epub
 

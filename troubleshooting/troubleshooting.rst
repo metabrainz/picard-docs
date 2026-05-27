@@ -54,22 +54,22 @@ If you're still convinced you have found a new bug, open a `new ticket <https://
 :index:`Getting a Debug Log <troubleshooting; get debug log>`
 -------------------------------------------------------------
 
-For many bugs, it helps developers to have a debug log from Picard. You can see the log by going to :menuselection:`"Help --> View Log"`. You can also get a full debug log, which is better because it contains more detailed information. Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly. To retrieve the full debug log:
+For many bugs, it helps developers to have a debug log from Picard. You can see the log by going to :menuselection:`Help --> View Error/Debug Log`. You can also get a full debug log, which is better because it contains more detailed information. Pasting this log into your forum post or bug ticket can help developers and other users to resolve your issue more quickly. To retrieve the full debug log:
 
 1. Start Picard.
-2. Open the log view with :menuselection:`"Help --> View Log"`.
-3. Change the log level :guilabel:`verbosity` to **Debug**.
-4. Close the log viewer.
-5. Close and restart Picard.
-6. Repeat the action that caused the problem being reported.
-7. Open the log viewer and copy the output to paste into the forum post or bug ticket. Alternately, you can save the log to a file to attach to your bug report by using the :guilabel:`Save As...` button.
-8. Close the log viewer, and close Picard.
+2. Open the log viewer by going to :menuselection:`Help --> View Error/Debug Log`.
+3. Set the log level to **Debug** using the dropdown control at the bottom of the log viewer window. This will cause all log entries to be captured in the log, including detailed debug information that is not included at higher log levels.
+4. Repeat the action that caused the problem being reported.
+5. From the log viewer, copy the log output to paste into the forum post or bug ticket. Alternately, you can save the log to a file to attach to your bug report by using the :guilabel:`Save As…` button.
+6. Close the log viewer, and close Picard.
+
+Please see :doc:`../appendices/log_viewer` for more information about the log viewer and how to use it.
 
 
 :index:`Getting Logs in Case of Crashes <troubleshooting; getting log for crashes>`
 -----------------------------------------------------------------------------------
 
-In some cases the problem will cause Picard to crash and not allow you to access the resulting log from the log viewer. You can still generate a log output to attach to your report by starting Picard with the ``--debug`` command line option from a command / terminal window and copying the log output information from the terminal. The steps to follow for each of the supported platforms are:
+In some cases the problem will cause Picard to crash and not allow you to access the resulting log from the log viewer. You can still generate a log output to attach to your report by starting Picard with the ``--debug`` command line option from a command / terminal window (or set the ``PICARD_DEBUG`` environment variable) and copying the log output information from the terminal. The steps to follow for each of the supported platforms are:
 
 Windows Systems
 +++++++++++++++
