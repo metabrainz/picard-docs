@@ -1,21 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Automatic translation add-on <noreply-addon-autotranslate@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 08:30-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-05-28 15:12+0000\n"
+"Last-Translator: Automatic translation add-on <noreply-addon-"
+"autotranslate@weblate.org>\n"
+"Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
+"docs/configoptions_startup/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: ../../config/options_startup.rst:4
 msgid ":index:`Startup Options <configuration; startup options>`"
@@ -44,8 +46,9 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_startup.rst:23
+#, fuzzy
 msgid "**Check for plugin updates during start-up**"
-msgstr ""
+msgstr "**Zoek tijdens het opstarten naar nieuwe plug-inversies**"
 
 #: ../../config/options_startup.rst:25
 msgid ""
@@ -58,64 +61,91 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_startup.rst:27
+#, fuzzy
 msgid "**Check for program updates during start-up**"
-msgstr ""
+msgstr "**Zoek tijdens het opstarten naar nieuwe programmaversies**"
 
 #: ../../config/options_startup.rst:29
+#, fuzzy
 msgid ""
 "This option determines whether or not Picard will automatically check for :"
 "index:`program updates <pair: configuration; program update checking>` "
 "during startup. In any case, you can have Picard check for program updates "
 "at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
+"Deze optie regelt of Picard tijdens het opstarten automatisch zoekt naar "
+":index:`updates voor Picard <pair: configuratie; programma-updates zoeken>`. "
+"Of de optie nu wel of niet is ingeschakeld, je kan altijd naar nieuwe Picard-"
+"versies zoeken via :menuselection:`‘Hulp --> Zoek naar nieuwe versies’`."
 
 #: ../../config/options_startup.rst:31
+#, fuzzy
 msgid "**Days between checks**"
-msgstr ""
+msgstr "**Aantal dagen tussen controles**"
 
 #: ../../config/options_startup.rst:33
+#, fuzzy
 msgid ""
 "This option allows you to limit the automatic program update checking by "
 "selecting the interval, in days, between checks. Set this to 1 if you want "
 "to check daily, 7 for weekly checks, and so on. Note that this only applies "
 "if the \"Check for program updates during start-up\" option is enabled."
 msgstr ""
+"Met deze optie kan je instellen hoe vaak er automatisch naar updates wordt "
+"gezocht. Stel dit in op 1 als je wil dat er dagelijks wordt gezocht, 7 voor "
+"wekelijks enz. Let op: dit is alleen van toepassing als de optie ‘Zoek "
+"tijdens het opstarten naar nieuwe programmaversies’ is ingeschakeld."
 
 #: ../../config/options_startup.rst:35
+#, fuzzy
 msgid "**Updates to check**"
-msgstr ""
+msgstr "**Zoek naar de volgende versies**"
 
 #: ../../config/options_startup.rst:37
+#, fuzzy
 msgid ""
 "This option allows you to select which levels of program update to check. "
 "Your options are:"
 msgstr ""
+"Met deze optie kan je instellen naar welk soort versie moet worden gezocht. "
+"De opties zijn:"
 
 #: ../../config/options_startup.rst:39
+#, fuzzy
 msgid "Stable releases only"
-msgstr ""
+msgstr "alleen stabiele versies"
 
 #: ../../config/options_startup.rst:40
+#, fuzzy
 msgid "Stable and Beta releases"
-msgstr ""
+msgstr "stabiele en bètaversies"
 
 #: ../../config/options_startup.rst:41
+#, fuzzy
 msgid "Stable, Beta and Dev releases"
-msgstr ""
+msgstr "stabiele, bèta- en ontwikkelversies"
 
 #: ../../config/options_startup.rst:43
+#, fuzzy
 msgid ""
 "For example, if you subscribe to \"Stable releases only\" you will not be "
 "notified if a new Beta or Dev release is issued."
 msgstr ""
+"Als je bijvoorbeeld ‘alleen stabiele versies’ selecteert, krijg je geen "
+"melding als er een nieuwe bèta- of ontwikkelversie is."
 
 #: ../../config/options_startup.rst:47
+#, fuzzy
 msgid ""
 "The program update checking related settings and :menuselection:`\"Help --> "
 "Check for update...\"` command may not be available when Picard is "
 "distributed as a package. In that case, the user should check with the "
 "maintainer of the package to determine when an update is available."
 msgstr ""
+"Als Picard als pakket wordt verspreid, zijn de opties voor het zoeken naar "
+"nieuwe versies en :menuselection:`‘Hulp --> Zoek naar nieuwe versies’` "
+"mogelijk niet beschikbaar. In dat geval moet je contact met de beheerder van "
+"het pakket opnemen om erachter te komen of er een nieuwe versie is."
 
 #: ../../config/options_startup.rst:49
 msgid "**Default Log Level**"
