@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 08:30-0600\n"
-"PO-Revision-Date: 2026-04-28 19:11+0000\n"
+"PO-Revision-Date: 2026-05-28 15:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/troubleshootingtroubleshooting/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17\n"
+"X-Generator: Weblate 2026.5\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../troubleshooting/troubleshooting.rst:4
@@ -217,7 +217,6 @@ msgstr ""
 "débogage>`"
 
 #: ../../troubleshooting/troubleshooting.rst:57
-#, fuzzy
 msgid ""
 "For many bugs, it helps developers to have a debug log from Picard. You can "
 "see the log by going to :menuselection:`Help --> View Error/Debug Log`. You "
@@ -226,26 +225,26 @@ msgid ""
 "can help developers and other users to resolve your issue more quickly. To "
 "retrieve the full debug log:"
 msgstr ""
-"Pour de nombreux bogues, il est utile aux développeurs d'avoir un journal de "
-"débogage de Picard. Vous pouvez voir le journal en allant "
-"à :menuselection:`\"Aide --> Voir le journal\"`. Vous pouvez également "
-"obtenir un journal de débogage complet, ce qui est préférable car il "
-"contient des informations plus détaillées. Le fait de coller ce journal dans "
-"votre message sur le forum ou dans votre ticket de bogue peut aider les "
-"développeurs et les autres utilisateurs à résoudre votre problème plus "
-"rapidement. Pour récupérer le journal de débogage complet :"
+"Pour de nombreux bugs, il est utile pour les développeurs de disposer d'un "
+"journal de débogage généré par Picard. Vous pouvez consulter ce journal en "
+"sélectionnant :menuselection:`Aide --> Afficher le journal d'erreurs/de "
+"débogage`. Vous pouvez également obtenir un journal de débogage complet, ce "
+"qui est préférable car il contient des informations plus détaillées. Coller "
+"ce journal dans votre message sur le forum ou dans votre ticket de bug peut "
+"aider les développeurs et les autres utilisateurs à résoudre votre problème "
+"plus rapidement. Pour récupérer le journal de débogage complet :"
 
 #: ../../troubleshooting/troubleshooting.rst:59
 msgid "Start Picard."
 msgstr "Commencez Picard."
 
 #: ../../troubleshooting/troubleshooting.rst:60
-#, fuzzy
 msgid ""
 "Open the log viewer by going to :menuselection:`Help --> View Error/Debug "
 "Log`."
 msgstr ""
-"Ouvrez la vue du journal avec :menuselection:`\"Aide --> Voir le journal\"`."
+"Ouvrez la fenêtre d'affichage des journaux en sélectionnant "
+":menuselection:`Aide --> Afficher le journal d'erreurs/de débogage`."
 
 #: ../../troubleshooting/troubleshooting.rst:61
 msgid ""
@@ -254,22 +253,26 @@ msgid ""
 "log, including detailed debug information that is not included at higher log "
 "levels."
 msgstr ""
+"Réglez le niveau de journalisation sur **Débogage** à l'aide du menu "
+"déroulant situé en bas de la fenêtre de visualisation des journaux. Cela "
+"permettra de consigner toutes les entrées dans le journal, y compris les "
+"informations de débogage détaillées qui ne sont pas incluses aux niveaux de "
+"journalisation supérieurs."
 
 #: ../../troubleshooting/troubleshooting.rst:62
 msgid "Repeat the action that caused the problem being reported."
 msgstr "Répétez l'action qui a causé le problème signalé."
 
 #: ../../troubleshooting/troubleshooting.rst:63
-#, fuzzy
 msgid ""
 "From the log viewer, copy the log output to paste into the forum post or bug "
 "ticket. Alternately, you can save the log to a file to attach to your bug "
 "report by using the :guilabel:`Save As…` button."
 msgstr ""
-"Ouvrez la visionneuse de logs et copiez la sortie pour la coller dans le "
-"message du forum ou dans le rapport de bogue. Alternativement, vous pouvez "
-"enregistrer le journal dans un fichier à joindre à votre rapport de bogue en "
-"utilisant le bouton :guilabel:`Enregistrer sous...`."
+"Dans la fenêtre d'affichage des journaux, copiez le contenu du journal pour "
+"le coller dans votre message sur le forum ou dans votre ticket de bug. Vous "
+"pouvez également enregistrer le journal dans un fichier à joindre à votre "
+"rapport de bug en utilisant le bouton :guilabel:`Enregistrer sous…`."
 
 #: ../../troubleshooting/troubleshooting.rst:64
 msgid "Close the log viewer, and close Picard."
@@ -280,6 +283,8 @@ msgid ""
 "Please see :doc:`../appendices/log_viewer` for more information about the "
 "log viewer and how to use it."
 msgstr ""
+"Pour plus d'informations sur la visionneuse de journaux et son utilisation, "
+"veuillez consulter :doc:`../appendices/log_viewer`."
 
 #: ../../troubleshooting/troubleshooting.rst:70
 msgid ""
@@ -290,7 +295,6 @@ msgstr ""
 "cas de crash>`"
 
 #: ../../troubleshooting/troubleshooting.rst:72
-#, fuzzy
 msgid ""
 "In some cases the problem will cause Picard to crash and not allow you to "
 "access the resulting log from the log viewer. You can still generate a log "
@@ -300,13 +304,14 @@ msgid ""
 "information from the terminal. The steps to follow for each of the supported "
 "platforms are:"
 msgstr ""
-"Dans certains cas, le problème entraînera le plantage de Picard et ne vous "
-"permettra pas d'accéder au journal résultant à partir du visualisateur de "
-"journaux. Vous pouvez toujours générer une sortie de journal à joindre à "
-"votre rapport en démarrant Picard avec l'option de ligne de commande ``--"
-"debug`` à partir d'une fenêtre de commande / terminal et en copiant les "
-"informations de sortie de journal à partir du terminal. Les étapes à suivre "
-"pour chacune des plateformes supportées sont les suivantes :"
+"Dans certains cas, ce problème peut entraîner le plantage de Picard et vous "
+"empêcher d'accéder au journal généré via la visionneuse de journaux. Vous "
+"pouvez néanmoins générer un fichier journal à joindre à votre rapport en "
+"lançant Picard avec l'option de ligne de commande ``--debug`` depuis une "
+"fenêtre de commande ou un terminal (ou en définissant la variable "
+"d'environnement ``PICARD_DEBUG``), puis en copiant les informations du "
+"fichier journal depuis le terminal. Voici les étapes à suivre pour chacune "
+"des plateformes prises en charge :"
 
 #: ../../troubleshooting/troubleshooting.rst:75
 msgid "Windows Systems"
