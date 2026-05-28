@@ -2,14 +2,14 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Automatic translation add-on <noreply-addon-autotranslate@weblate.org>, 2026.
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 08:30-0600\n"
 "PO-Revision-Date: 2026-05-28 15:12+0000\n"
-"Last-Translator: Automatic translation add-on <noreply-addon-"
-"autotranslate@weblate.org>\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_startup/fr/>\n"
 "Language: fr\n"
@@ -21,15 +21,13 @@ msgstr ""
 
 #: ../../config/options_startup.rst:4
 msgid ":index:`Startup Options <configuration; startup options>`"
-msgstr ""
+msgstr ":index:`Options de démarrage <configuration; options de démarrage>`"
 
 #: ../../config/options_startup.rst:17
-#, fuzzy
 msgid "**Check for documentation updates during start-up**"
 msgstr "**Vérifier les mises à jour de la documentation au démarrage**"
 
 #: ../../config/options_startup.rst:19
-#, fuzzy
 msgid ""
 "This option determines whether or not Picard will automatically check for :"
 "index:`available versions and languages on ReadTheDocs <pair: configuration; "
@@ -45,7 +43,6 @@ msgstr ""
 "dans votre navigateur web."
 
 #: ../../config/options_startup.rst:21
-#, fuzzy
 msgid ""
 "If the option is disabled, a popup message will be displayed during startup "
 "asking if you want to enable the documentation checking. The message also "
@@ -61,12 +58,10 @@ msgstr ""
 ":doc:`options_interface`."
 
 #: ../../config/options_startup.rst:23
-#, fuzzy
 msgid "**Check for plugin updates during start-up**"
 msgstr "**Vérifier les mises à jour des plugins au démarrage**"
 
 #: ../../config/options_startup.rst:25
-#, fuzzy
 msgid ""
 "This option determines whether or not Picard will automatically check for :"
 "index:`plugin updates <pair: configuration; plugin update checking>` during "
@@ -85,12 +80,10 @@ msgstr ""
 "souhaitez installer."
 
 #: ../../config/options_startup.rst:27
-#, fuzzy
 msgid "**Check for program updates during start-up**"
 msgstr "**Vérifier les mises à jour du programme lors du démarrage**"
 
 #: ../../config/options_startup.rst:29
-#, fuzzy
 msgid ""
 "This option determines whether or not Picard will automatically check for :"
 "index:`program updates <pair: configuration; program update checking>` "
@@ -104,12 +97,10 @@ msgstr ""
 ":menuselection:`\"Aide --> Vérifier la mise à jour\"`."
 
 #: ../../config/options_startup.rst:31
-#, fuzzy
 msgid "**Days between checks**"
-msgstr "**Jours entre les chèques**"
+msgstr "**Intervalle entre les contrôles**"
 
 #: ../../config/options_startup.rst:33
-#, fuzzy
 msgid ""
 "This option allows you to limit the automatic program update checking by "
 "selecting the interval, in days, between checks. Set this to 1 if you want "
@@ -120,16 +111,14 @@ msgstr ""
 "jour du programme en sélectionnant l'intervalle, en jours, entre les "
 "vérifications. Réglez cette valeur sur 1 si vous souhaitez une vérification "
 "quotidienne, sur 7 pour une vérification hebdomadaire, et ainsi de suite. "
-"Notez que cette option ne s'applique que si l'option \"Vérifier les mises à "
-"jour du programme au démarrage\" est activée."
+"Notez que cette option ne s'applique que si l'option « Vérifier les mises à "
+"jour du programme au démarrage » est activée."
 
 #: ../../config/options_startup.rst:35
-#, fuzzy
 msgid "**Updates to check**"
 msgstr "**Mises à jour à vérifier**"
 
 #: ../../config/options_startup.rst:37
-#, fuzzy
 msgid ""
 "This option allows you to select which levels of program update to check. "
 "Your options are:"
@@ -138,22 +127,18 @@ msgstr ""
 "programme à vérifier. Les options disponibles sont les suivantes :"
 
 #: ../../config/options_startup.rst:39
-#, fuzzy
 msgid "Stable releases only"
 msgstr "Versions stables uniquement"
 
 #: ../../config/options_startup.rst:40
-#, fuzzy
 msgid "Stable and Beta releases"
 msgstr "Versions stables et bêta"
 
 #: ../../config/options_startup.rst:41
-#, fuzzy
 msgid "Stable, Beta and Dev releases"
 msgstr "Versions stables, bêta et dev"
 
 #: ../../config/options_startup.rst:43
-#, fuzzy
 msgid ""
 "For example, if you subscribe to \"Stable releases only\" you will not be "
 "notified if a new Beta or Dev release is issued."
@@ -163,7 +148,6 @@ msgstr ""
 "publiée."
 
 #: ../../config/options_startup.rst:47
-#, fuzzy
 msgid ""
 "The program update checking related settings and :menuselection:`\"Help --> "
 "Check for update...\"` command may not be available when Picard is "
@@ -178,7 +162,7 @@ msgstr ""
 
 #: ../../config/options_startup.rst:49
 msgid "**Default Log Level**"
-msgstr ""
+msgstr "**Niveau de journalisation par défaut**"
 
 #: ../../config/options_startup.rst:51
 msgid ""
@@ -186,26 +170,36 @@ msgid ""
 "The log level determines the amount of information that is recorded in the "
 "log. The available log levels are:"
 msgstr ""
+"Cette option vous permet de sélectionner le niveau de journalisation défini "
+"au démarrage de Picard. Le niveau de journalisation détermine la quantité "
+"d'informations enregistrées dans le journal. Les niveaux de journalisation "
+"disponibles sont les suivants :"
 
 #: ../../config/options_startup.rst:53
 msgid "``Error`` - only error messages are logged"
-msgstr ""
+msgstr "``Erreur`` - seuls les messages d'erreur sont consignés"
 
 #: ../../config/options_startup.rst:54
 msgid "``Warning`` - warning messages and error messages are logged"
 msgstr ""
+"``Avertissement`` - les messages d'avertissement et d'erreur sont consignés"
 
 #: ../../config/options_startup.rst:55
 msgid ""
 "``Info`` - informational messages, warning messages and error messages are "
 "logged"
 msgstr ""
+"``Informations`` : les messages d'information, d'avertissement et d'erreur "
+"sont consignés"
 
 #: ../../config/options_startup.rst:56
 msgid ""
 "``Debug`` - detailed debug information, informational messages, warning "
 "messages and error messages are logged"
 msgstr ""
+"``Débogage`` : les informations de débogage détaillées, les messages "
+"d'information, les messages d'avertissement et les messages d'erreur sont "
+"consignés"
 
 #: ../../config/options_startup.rst:58
 msgid ""
@@ -217,6 +211,16 @@ msgid ""
 "to find relevant information in the log. If you want to see less detailed "
 "information, you can set it to ``Warning`` or ``Error``."
 msgstr ""
+"En règle générale, il est recommandé de définir le niveau de journalisation "
+"sur ``Informations`` en utilisation normale afin d'éviter une journalisation "
+"excessive, et de n'utiliser ``Débogage`` que lors du dépannage de problèmes "
+"spécifiques pour s'assurer que toutes les entrées de journal sont "
+"enregistrées. Notez que le fait de définir le niveau de journalisation sur "
+"``Débogage`` peut entraîner un volume important de données de "
+"journalisation, ce qui peut s'avérer utile pour le dépannage mais peut "
+"également compliquer la recherche d'informations pertinentes dans le "
+"journal. Si vous souhaitez voir des informations moins détaillées, vous "
+"pouvez le régler sur ``Avertissement`` ou ``Erreur``."
 
 #: ../../config/options_startup.rst:60
 msgid ""
@@ -224,6 +228,10 @@ msgid ""
 "viewing or saving the log using the log viewer, and how to change the log "
 "level during a session."
 msgstr ""
+"Pour plus d'informations sur l'affichage ou l'enregistrement du journal à "
+"l'aide de la visionneuse de journaux, ainsi que sur la manière de modifier "
+"le niveau de journalisation au cours d'une session, veuillez consulter "
+":doc:`../appendices/log_viewer`."
 
 #: ../../config/options_startup.rst:64
 msgid ""
@@ -235,3 +243,11 @@ msgid ""
 "command line option is specified or the ``PICARD_DEBUG`` environment "
 "variable is set."
 msgstr ""
+"La modification du paramètre par défaut modifie également le niveau de "
+"journalisation pour la session en cours ; ainsi, si vous définissez le "
+"niveau sur ``Avertissement``, seuls les événements de niveau "
+"**Avertissement** et **Erreur** seront consignés à partir de ce moment-là. "
+"Le niveau de journalisation sera automatiquement réinitialisé à la valeur "
+"par défaut sélectionnée dans cette option à chaque démarrage de Picard, sauf "
+"si l'option de ligne de commande ``--debug`` est spécifiée ou si la variable "
+"d'environnement ``PICARD_DEBUG`` est définie."
