@@ -10,10 +10,4 @@ Appendices
    command_line
    keyboard_shortcuts
    log_viewer
-
-.. only:: epub
-
-   .. toctree::
-      :hidden:
-
-      ../functions/list_by_name
+   coverart_processing
