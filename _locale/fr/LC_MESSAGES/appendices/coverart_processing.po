@@ -2,14 +2,14 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Automatic translation add-on <noreply-addon-autotranslate@weblate.org>, 2026.
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-28 13:22-0600\n"
 "PO-Revision-Date: 2026-05-29 20:12+0000\n"
-"Last-Translator: Automatic translation add-on <noreply-addon-"
-"autotranslate@weblate.org>\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/appendicescoverart_processing/fr/>\n"
 "Language: fr\n"
@@ -22,42 +22,51 @@ msgstr ""
 #: ../../appendices/coverart_processing.rst:14
 msgid "Appendix E: :index:`Cover Art Processing <pair: cover art; processing>`"
 msgstr ""
+"Annexe E : :index:`Traitement des illustrations de couverture <pair: "
+"illustration de couverture; traitement>`"
 
 #: ../../appendices/coverart_processing.rst:16
 msgid ""
 "This section explains how Picard handles cover art, from finding images to "
 "embedding them in your files."
 msgstr ""
+"Cette section explique comment Picard gère les pochettes d'albums, de la "
+"recherche d'images à leur intégration dans vos fichiers."
 
 #: ../../appendices/coverart_processing.rst:19
 msgid "Overview"
-msgstr ""
+msgstr "Présentation générale"
 
 #: ../../appendices/coverart_processing.rst:21
 msgid "Picard's cover art system has four stages:"
-msgstr ""
+msgstr "Le système de création de jaquettes de Picard comporte quatre étapes :"
 
 #: ../../appendices/coverart_processing.rst:23
 msgid "**Discovery** - Find available images from configured providers."
 msgstr ""
+"**Recherche** - Rechercher les images disponibles auprès des fournisseurs "
+"configurés."
 
 #: ../../appendices/coverart_processing.rst:24
 msgid "**Filtering** - Decide which images to keep or skip."
-msgstr ""
+msgstr "**Filtrage** - Choisissez les images à conserver ou à ignorer."
 
 #: ../../appendices/coverart_processing.rst:25
 msgid "**Processing** - Resize and convert images for embedding or saving."
 msgstr ""
+"**Traitement** - Redimensionner et convertir les images pour les intégrer ou "
+"les enregistrer."
 
 #: ../../appendices/coverart_processing.rst:26
 msgid ""
 "**Assignment** - Copy images to files, respecting per-file protection rules."
 msgstr ""
+"**Tâche** - Copier les images dans des fichiers, en respectant les règles de "
+"protection propres à chaque fichier."
 
 #: ../../appendices/coverart_processing.rst:30
-#, fuzzy
 msgid "Cover Art Providers"
-msgstr "Fournisseurs d'art de couverture"
+msgstr "Fournisseurs d'illustrations de couverture"
 
 #: ../../appendices/coverart_processing.rst:32
 msgid ""
@@ -65,10 +74,15 @@ msgid ""
 "in a user-configured priority order under the :doc:`../config/options_cover` "
 "configuration. Each provider can queue images for download."
 msgstr ""
+"Les fournisseurs d'illustrations de couverture sont les sources auprès "
+"desquelles Picard recherche des illustrations de couverture. Ils "
+"fonctionnent selon un ordre de priorité défini par l'utilisateur dans le "
+"fichier de configuration :doc:`../config/options_cover`. Chaque fournisseur "
+"peut mettre des images en file d'attente pour le téléchargement."
 
 #: ../../appendices/coverart_processing.rst:35
 msgid "Cover Art Archive (CAA)"
-msgstr ""
+msgstr "Archives d'illustrations de couverture (CAA)"
 
 #: ../../appendices/coverart_processing.rst:37
 msgid ""
@@ -76,40 +90,54 @@ msgid ""
 "editors with metadata: image types (front, back, booklet, etc.), approval "
 "status, and available thumbnail sizes."
 msgstr ""
+"Le fournisseur le plus courant. La CAA stocke les images téléchargées par "
+"les contributeurs de MusicBrainz avec des métadonnées : types d'images (face "
+"avant, face arrière, livret, etc.), statut de validation et tailles de "
+"vignettes disponibles."
 
 #: ../../appendices/coverart_processing.rst:39
 msgid "**How it works:**"
-msgstr ""
+msgstr "**Comment ça marche :**"
 
 #: ../../appendices/coverart_processing.rst:41
 msgid ""
 "Picard fetches the CAA JSON metadata for the release (list of available "
 "images)."
 msgstr ""
+"Picard récupère les métadonnées JSON CAA relatives à la version (liste des "
+"images disponibles)."
 
 #: ../../appendices/coverart_processing.rst:42
 msgid "For each image, it checks:"
-msgstr ""
+msgstr "Pour chaque image, il vérifie :"
 
 #: ../../appendices/coverart_processing.rst:43
 msgid ""
 "Is the image approved, or is the edit on MusicBrainz adding the image still "
 "pending approval (if \"approved only\" is enabled)?"
 msgstr ""
+"L'image a-t-elle été approuvée, ou la modification effectuée sur MusicBrainz "
+"pour ajouter l'image est-elle toujours en attente d'approbation (si l'option "
+"« Approuvé uniquement » est activée) ?"
 
 #: ../../appendices/coverart_processing.rst:44
 msgid "Does the image's type match the include/exclude type filters?"
 msgstr ""
+"Le type de l'image correspond-il aux filtres de type « inclure/exclure » ?"
 
 #: ../../appendices/coverart_processing.rst:45
 msgid "Is the image a PDF (only downloaded if \"save to files\" is enabled)?"
 msgstr ""
+"L'image est-elle au format PDF (téléchargée uniquement si l'option « "
+"Enregistrer dans les fichiers » est activée) ?"
 
 #: ../../appendices/coverart_processing.rst:46
 msgid ""
 "For accepted images, Picard picks a thumbnail URL based on the configured "
 "image size preference (250px, 500px, 1200px, or full size)."
 msgstr ""
+"Pour les images acceptées, Picard génère une URL de vignette en fonction de "
+"la taille d'image configurée (250 px, 500 px, 1 200 px ou taille réelle)."
 
 #: ../../appendices/coverart_processing.rst:47
 msgid ""
@@ -117,10 +145,13 @@ msgid ""
 "based on the thumbnail's known width. This is the only filter that saves "
 "bandwidth."
 msgstr ""
+"Avant le téléchargement, le **filtre de métadonnées de pré-téléchargement** "
+"peut rejeter des images en fonction de la largeur connue de leur vignette. "
+"C'est le seul filtre qui permet d'économiser de la bande passante."
 
 #: ../../appendices/coverart_processing.rst:49
 msgid "**CAA image sizes and bandwidth:**"
-msgstr ""
+msgstr "**Taille des images CAA et bande passante :**"
 
 #: ../../appendices/coverart_processing.rst:51
 msgid ""
@@ -129,6 +160,11 @@ msgid ""
 "(front, back, booklet pages, disc, liner notes, etc.). A vinyl box set might "
 "have 50+ images."
 msgstr ""
+"La CAA n'impose aucune limite de taille pour les fichiers téléchargés. Les "
+"éditeurs téléchargent régulièrement des numérisations à 600 dpi pouvant "
+"dépasser 15 à 30 Mo par image, et certaines publications comptent plus de 10 "
+"images (face avant, face arrière, pages du livret, disque, notes de "
+"pochette, etc.). Un coffret vinyle peut contenir plus de 50 images."
 
 #: ../../appendices/coverart_processing.rst:53
 msgid ""
@@ -137,6 +173,12 @@ msgid ""
 "images, that's potentially 360 MB of downloads and significant processing "
 "time (resizing a 30 MB PNG is CPU-intensive)."
 msgstr ""
+"Lorsque l'option « Taille réelle » est sélectionnée, Picard télécharge le "
+"fichier d'origine, qui peut s'agir d'un scan au format PNG de 30 Mo en 4800 "
+"x 4800 pixels. Pour une publication comprenant 12 images, cela représente "
+"potentiellement 360 Mo de données à télécharger et un temps de traitement "
+"considérable (le redimensionnement d'un fichier PNG de 30 Mo sollicite "
+"fortement le processeur)."
 
 #: ../../appendices/coverart_processing.rst:55
 msgid ""
@@ -147,6 +189,13 @@ msgid ""
 "threshold before downloading, which is the only point where bandwidth is "
 "actually saved."
 msgstr ""
+"Les tailles des vignettes (250 px, 500 px, 1 200 px) sont pré-générées par "
+"les serveurs CAA et occupent beaucoup moins d'espace (généralement entre 50 "
+"et 500 Ko). La valeur par défaut est 500 px, ce qui offre un bon compromis "
+"entre qualité et bande passante. Le filtre de métadonnées de pré-"
+"téléchargement peut rejeter les vignettes inférieures au seuil de taille "
+"minimum avant le téléchargement, ce qui constitue le seul point où la bande "
+"passante est réellement économisée."
 
 #: ../../appendices/coverart_processing.rst:57
 msgid ""
@@ -154,47 +203,57 @@ msgid ""
 "CAA provider, and are set in the :doc:`../config/options_cover_art_archive` "
 "configuration:"
 msgstr ""
+"**Options spécifiques à CAA :** |br| |nl| Les options suivantes s'appliquent "
+"uniquement au fournisseur CAA et sont définies dans le fichier de "
+"configuration :doc:`../config/options_cover_art_archive` :"
 
 #: ../../appendices/coverart_processing.rst:60
 msgid "Image size (thumbnail selection: 250px, 500px, 1200px, or full size)."
 msgstr ""
+"Taille de l'image (sélection de vignettes : 250 px, 500 px, 1 200 px ou "
+"taille réelle)."
 
 #: ../../appendices/coverart_processing.rst:61
 msgid "Restrict to specific image types (include/exclude lists)."
-msgstr ""
+msgstr "Limiter à certains types d'images (listes d'inclusion/d'exclusion)."
 
 #: ../../appendices/coverart_processing.rst:62
 msgid "Only use approved images."
-msgstr ""
+msgstr "N'utilisez que des images autorisées."
 
 #: ../../appendices/coverart_processing.rst:65
 msgid "Other Providers"
-msgstr ""
+msgstr "Autres prestataires"
 
 #: ../../appendices/coverart_processing.rst:67
 msgid ""
 "**CAA Release Group** - Falls back to the release group's cover art if there "
 "is no cover art for the specific release."
 msgstr ""
+"**Groupe de sorties CAA** - Affiche la pochette du groupe de sorties si "
+"aucune pochette n'est disponible pour la sortie en question."
 
 #: ../../appendices/coverart_processing.rst:68
 msgid ""
 "**Local Files** - Reads images from files in the same directory (e.g. "
 "``cover.jpg``, ``folder.png``)."
 msgstr ""
+"**Fichiers locaux** - Lit les images à partir des fichiers situés dans le "
+"même répertoire (par exemple, ``cover.jpg``, ``folder.png``)."
 
 #: ../../appendices/coverart_processing.rst:69
 msgid ""
 "**URL Relationships** - Uses image URLs from MusicBrainz release "
 "relationships."
 msgstr ""
+"**Relations d'URL** - Utilise les URL des images issues des relations entre "
+"les albums de MusicBrainz."
 
 #: ../../appendices/coverart_processing.rst:71
 msgid "Plugins can register additional providers."
-msgstr ""
+msgstr "Les plugins peuvent enregistrer des fournisseurs supplémentaires."
 
 #: ../../appendices/coverart_processing.rst:75
-#, fuzzy
 msgid "Filtering"
 msgstr "Filtrage"
 
@@ -203,10 +262,12 @@ msgid ""
 "Filters determine whether an image should be kept or discarded. There are "
 "two stages of filtering with different purposes:"
 msgstr ""
+"Les filtres déterminent si une image doit être conservée ou écartée. Il "
+"existe deux étapes de filtrage, chacune ayant un objectif différent :"
 
 #: ../../appendices/coverart_processing.rst:80
 msgid "At Download Time (post-download)"
-msgstr ""
+msgstr "Au moment du téléchargement (après le téléchargement)"
 
 #: ../../appendices/coverart_processing.rst:82
 msgid ""
@@ -216,15 +277,23 @@ msgid ""
 "`../config/options_cover_art_processing` configuration and applies to all "
 "providers."
 msgstr ""
+"Ce filtre s'exécute une fois les données d'image téléchargées. Il ne permet "
+"**pas** d'économiser de la bande passante, car le téléchargement a déjà eu "
+"lieu. En revanche, il empêche le traitement et le stockage ultérieurs des "
+"images indésirables. Ce filtre est défini dans le fichier de configuration "
+":doc:`../config/options_cover_art_processing` et s'applique à tous les "
+"fournisseurs."
 
 #: ../../appendices/coverart_processing.rst:84
 msgid ""
 "**Size filter** - Rejects images below the configured minimum dimensions."
 msgstr ""
+"**Filtre de taille** - Élimine les images dont les dimensions sont "
+"inférieures au minimum défini."
 
 #: ../../appendices/coverart_processing.rst:87
 msgid "At Assignment Time (per-file)"
-msgstr ""
+msgstr "Au moment de l'attribution (par fichier)"
 
 #: ../../appendices/coverart_processing.rst:89
 msgid ""
@@ -234,6 +303,12 @@ msgid ""
 "filters are set in the :doc:`../config/options_cover` configuration and "
 "apply to all providers."
 msgstr ""
+"Ces filtres s'exécutent lors de l'attribution des images à des fichiers "
+"individuels. Ils comparent chaque image téléchargée à celle déjà intégrée "
+"dans ce fichier spécifique, empêchant ainsi toute dégradation de la qualité "
+"des illustrations existantes. Les filtres sont définis dans le fichier de "
+"configuration :doc:`../config/options_cover` et s'appliquent à tous les "
+"fournisseurs."
 
 #: ../../appendices/coverart_processing.rst:91
 msgid ""
@@ -241,6 +316,10 @@ msgid ""
 "image of the same type (e.g. front) that is larger than the downloaded one, "
 "the downloaded image is skipped for that file."
 msgstr ""
+"**« Ne jamais remplacer par une image plus petite »** - Si le fichier "
+"contient déjà une image intégrée du même type (par exemple, la couverture) "
+"qui est plus grande que celle téléchargée, l'image téléchargée n'est pas "
+"appliquée à ce fichier."
 
 #: ../../appendices/coverart_processing.rst:92
 msgid ""
@@ -248,6 +327,9 @@ msgid ""
 "image whose type is in the user's \"never replace\" list, the downloaded "
 "image is skipped for that file."
 msgstr ""
+"**« Ne jamais remplacer certains types »** - Si le fichier contient déjà une "
+"image intégrée dont le type figure dans la liste « Ne jamais remplacer » de "
+"l'utilisateur, l'image téléchargée n'est pas prise en compte pour ce fichier."
 
 #: ../../appendices/coverart_processing.rst:94
 msgid ""
@@ -255,6 +337,9 @@ msgid ""
 "If you're only saving to external files, there are no embedded images to "
 "protect."
 msgstr ""
+"Ces filtres par fichier ne s'appliquent que lorsque l'option « Enregistrer "
+"les images dans les balises » est activée. Si vous enregistrez uniquement "
+"dans des fichiers externes, il n'y a pas d'images intégrées à protéger."
 
 #: ../../appendices/coverart_processing.rst:96
 msgid ""
@@ -262,6 +347,11 @@ msgid ""
 "different embedded images (different sizes, different types). The filters "
 "compare against each file's own embedded images, not an album-wide aggregate."
 msgstr ""
+"**Pourquoi au niveau de chaque fichier ?** |br| |nl| Les différents fichiers "
+"d'un même album peuvent contenir des images intégrées différentes (tailles "
+"et types variés). Les filtres effectuent la comparaison par rapport aux "
+"images intégrées propres à chaque fichier, et non par rapport à un ensemble "
+"regroupant toutes les images de l'album."
 
 #: ../../appendices/coverart_processing.rst:99
 msgid ""
@@ -273,10 +363,19 @@ msgid ""
 "should increase the CAA image size setting to match or exceed their existing "
 "embedded image dimensions."
 msgstr ""
+"**Interaction avec la taille des vignettes CAA :** |br| |nl| Si l'option « "
+"Ne jamais remplacer par une image plus petite » est activée et que les "
+"fichiers contiennent déjà des images intégrées de grande taille (par exemple "
+"1 200 px), mais que la taille d'image CAA est définie sur une vignette plus "
+"petite (par exemple 500 px par défaut), le filtre rejettera systématiquement "
+"les images téléchargées, empêchant ainsi toute mise à jour de la pochette "
+"pour ces fichiers. Les utilisateurs se trouvant dans cette situation doivent "
+"augmenter le paramètre de taille de l'image CAA afin qu'il corresponde ou "
+"dépasse les dimensions de l'image intégrée existante."
 
 #: ../../appendices/coverart_processing.rst:104
 msgid "Processing"
-msgstr ""
+msgstr "Traitement"
 
 #: ../../appendices/coverart_processing.rst:106
 msgid ""
@@ -285,30 +384,42 @@ msgid ""
 "options_cover_art_processing` configuration. Processing runs in background "
 "threads and produces separate results for:"
 msgstr ""
+"Une fois filtrées, les images sont traitées (redimensionnées, converties) "
+"avant d'être enregistrées, conformément aux paramètres définis dans le "
+"fichier de configuration :doc:`../config/options_cover_art_processing`. Le "
+"traitement s'effectue dans des threads d'arrière-plan et génère des "
+"résultats distincts pour :"
 
 #: ../../appendices/coverart_processing.rst:108
 msgid ""
 "**Tags** - Resized/converted for embedding in file tags (typically smaller)."
 msgstr ""
+"**Balises** - Redimensionnées/converties pour être intégrées dans les "
+"balises de fichier (généralement plus petites)."
 
 #: ../../appendices/coverart_processing.rst:109
 msgid ""
 "**External files** - Resized/converted for saving along with the audio file."
 msgstr ""
+"**Fichiers externes** - Redimensionnés/convertis pour être enregistrés avec "
+"le fichier audio."
 
 #: ../../appendices/coverart_processing.rst:111
 msgid ""
 "The same source image can produce different output for tags vs. external "
 "files based on separate size/format settings."
 msgstr ""
+"Une même image source peut générer des résultats différents selon qu'il "
+"s'agit de balises ou de fichiers externes, en fonction de paramètres de "
+"taille et de format distincts."
 
 #: ../../appendices/coverart_processing.rst:115
 msgid "Assignment"
-msgstr ""
+msgstr "Attribuer"
 
 #: ../../appendices/coverart_processing.rst:117
 msgid "Images are assigned to files in two scenarios:"
-msgstr ""
+msgstr "Les images sont associées à des fichiers dans deux cas de figure :"
 
 #: ../../appendices/coverart_processing.rst:119
 msgid ""
@@ -317,6 +428,11 @@ msgid ""
 "immediately assigned to all tracks and files. Per-file \"never replace\" "
 "filters run at this point."
 msgstr ""
+"**Fichiers déjà associés lors du téléchargement des pochettes :** |br| |nl| "
+"Une fois le téléchargement des pochettes terminé et les fichiers déjà "
+"associés à l'album, les images sont immédiatement attribuées à tous les "
+"morceaux et fichiers. Les filtres « ne jamais remplacer » définis pour "
+"chaque fichier sont alors appliqués."
 
 #: ../../appendices/coverart_processing.rst:122
 msgid ""
@@ -325,26 +441,36 @@ msgid ""
 "to the file. Per-file \"never replace\" filters run here too, comparing "
 "against the file's original embedded images."
 msgstr ""
+"**Fichiers mis en correspondance après le chargement de la pochette :** |br| "
+"|nl| Lorsqu'un fichier est mis en correspondance avec un morceau qui dispose "
+"déjà d'une pochette, les images du morceau sont copiées dans le fichier. Les "
+"filtres « ne jamais remplacer » définis pour chaque fichier s'appliquent "
+"également ici, en comparant les images intégrées d'origine du fichier."
 
 #: ../../appendices/coverart_processing.rst:125
 msgid ""
 "In both cases, the same filtering logic applies, ensuring consistent "
 "behavior regardless of timing."
 msgstr ""
+"Dans les deux cas, la même logique de filtrage s'applique, garantissant "
+"ainsi un comportement cohérent, quel que soit le moment."
 
 #: ../../appendices/coverart_processing.rst:129
 msgid "Saving"
-msgstr ""
+msgstr "Enregistrement"
 
 #: ../../appendices/coverart_processing.rst:131
 msgid ""
 "When the user saves a file, Picard writes images based on two independent "
 "options set in the :doc:`../config/options_cover` configuration:"
 msgstr ""
+"Lorsque l'utilisateur enregistre un fichier, Picard génère des images en "
+"fonction de deux options indépendantes définies dans le fichier de "
+"configuration :doc:`../config/options_cover` :"
 
 #: ../../appendices/coverart_processing.rst:134
 msgid "Save to Tags (embedding)"
-msgstr ""
+msgstr "Enregistrer dans les balises (intégration)"
 
 #: ../../appendices/coverart_processing.rst:136
 msgid ""
@@ -352,103 +478,126 @@ msgid ""
 "directly in the audio file's tags (ID3 APIC frames, Vorbis "
 "METADATA_BLOCK_PICTURE, MP4 covr atoms, etc.)"
 msgstr ""
+"Les images issues des métadonnées du fichier ``file.metadata.images`` sont "
+"intégrées directement dans les balises du fichier audio (trames ID3 APIC, "
+"Vorbis METADATA_BLOCK_PICTURE, éléments covr MP4, etc.)"
 
 #: ../../appendices/coverart_processing.rst:138
 #: ../../appendices/coverart_processing.rst:148
 msgid "Related options:"
-msgstr ""
+msgstr "Options associées :"
 
 #: ../../appendices/coverart_processing.rst:139
 msgid ""
 "**Embed only one front image** - Only embed the first front image, skip "
 "others."
 msgstr ""
+"**N'intégrer qu'une seule image de couverture** - N'intégrez que la première "
+"image de couverture, ignorez les autres."
 
 #: ../../appendices/coverart_processing.rst:140
 msgid ""
 "**Never replace with smaller** - Protect existing larger embedded images."
 msgstr ""
+"**Ne jamais remplacer par une image plus petite** - Protégez les images "
+"intégrées existantes de plus grande taille."
 
 #: ../../appendices/coverart_processing.rst:141
 msgid ""
 "**Never replace selected types** - Protect specific image types from "
 "replacement."
 msgstr ""
+"**Ne jamais remplacer certains types de fichiers** - Empêche le remplacement "
+"de certains types d'images."
 
 #: ../../appendices/coverart_processing.rst:144
 msgid "Save to Files (external)"
-msgstr ""
+msgstr "Enregistrer dans des fichiers (externes)"
 
 #: ../../appendices/coverart_processing.rst:146
 msgid ""
 "Images are written as separate files along with the audio file (e.g. ``cover."
 "jpg``)."
 msgstr ""
+"Les images sont enregistrées dans des fichiers distincts, parallèlement au "
+"fichier audio (par exemple, ``cover.jpg``)."
 
 #: ../../appendices/coverart_processing.rst:149
 msgid "**Filename pattern** - Template for the external image filename."
 msgstr ""
+"**Modèle de nom de fichier** - Modèle pour le nom de fichier des images "
+"externes."
 
 #: ../../appendices/coverart_processing.rst:150
 msgid ""
 "**Overwrite existing** - Whether to replace existing external image files."
 msgstr ""
+"**Remplacer les fichiers existants** - Indique s'il faut remplacer les "
+"fichiers image externes existants."
 
 #: ../../appendices/coverart_processing.rst:151
 msgid "**Save only one front image** - Only save one front image externally."
 msgstr ""
+"**Enregistrer une seule image de couverture** - N'enregistrez qu'une seule "
+"image de couverture sur un support externe."
 
 #: ../../appendices/coverart_processing.rst:152
 msgid ""
 "**Use image type as filename** - Name files by their type (e.g. front.jpg, "
 "back.jpg)."
 msgstr ""
+"**Utiliser le type d'image comme nom de fichier** - Nommer les fichiers en "
+"fonction de leur type (par exemple : front.jpg, back.jpg)."
 
 #: ../../appendices/coverart_processing.rst:154
 msgid ""
 "Both options can be enabled simultaneously, and images will be both embedded "
 "and saved externally."
 msgstr ""
+"Les deux options peuvent être activées simultanément ; les images seront "
+"alors à la fois intégrées et enregistrées en externe."
 
 #: ../../appendices/coverart_processing.rst:158
 msgid "Image Storage Model"
-msgstr ""
+msgstr "Modèle de stockage d'images"
 
 #: ../../appendices/coverart_processing.rst:160
 msgid "Internally to Picard, each file-like object carries two sets of images:"
 msgstr ""
+"En interne, dans Picard, chaque objet de type fichier contient deux "
+"ensembles d'images :"
 
 #: ../../appendices/coverart_processing.rst:166
 msgid "Current Images"
-msgstr ""
+msgstr "Images actuelles"
 
 #: ../../appendices/coverart_processing.rst:167
 msgid "Original Images"
-msgstr ""
+msgstr "Images originales"
 
 #: ../../appendices/coverart_processing.rst:168
 msgid "**Album**"
-msgstr ""
+msgstr "**Album**"
 
 #: ../../appendices/coverart_processing.rst:169
 msgid "Downloaded from providers"
-msgstr ""
+msgstr "Téléchargé depuis les fournisseurs"
 
 #: ../../appendices/coverart_processing.rst:170
 msgid "Aggregate of all matched files' embedded images"
-msgstr ""
+msgstr "Ensemble des images intégrées dans tous les fichiers correspondants"
 
 #: ../../appendices/coverart_processing.rst:171
 msgid "**File**"
-msgstr ""
+msgstr "**Fichier**"
 
 #: ../../appendices/coverart_processing.rst:172
 msgid "What will be saved (filtered per-file)"
-msgstr ""
+msgstr "Ce qui sera enregistré (filtré fichier par fichier)"
 
 #: ../../appendices/coverart_processing.rst:173
 msgid "What was read from the file's tags on disk"
-msgstr ""
+msgstr "Ce qui a été lu à partir des balises du fichier sur le disque"
 
 #: ../../appendices/coverart_processing.rst:175
 msgid ""
@@ -457,6 +606,11 @@ msgid ""
 "that specific file. The per-file filters compare against the individual "
 "file's originals, not the album aggregate."
 msgstr ""
+"Les « images originales » de l'album correspondent au contenu actuellement "
+"intégré à l'ensemble des fichiers appariés. Les « images originales » de "
+"chaque fichier correspondent au contenu de ce fichier spécifique. Les "
+"filtres par fichier effectuent une comparaison avec les images originales de "
+"chaque fichier, et non avec l'ensemble de l'album."
 
 #: ../../appendices/coverart_processing.rst:179
 msgid ""
@@ -465,3 +619,7 @@ msgid ""
 "`../config/options_cover_art_processing` for more information on configuring "
 "cover art providers, filters, and processing options."
 msgstr ""
+"Pour plus d'informations sur la configuration des fournisseurs de pochettes, "
+"des filtres et des options de traitement, veuillez consulter :doc:`../config/"
+"options_cover`, :doc:`../config/options_cover_art_archive`, :doc:`../config/"
+"options_local_files` et :doc:`../config/options_cover_art_processing`."
