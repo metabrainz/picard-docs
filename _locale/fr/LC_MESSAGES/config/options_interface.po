@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 08:48+0200\n"
+"POT-Creation-Date: 2026-07-13 11:40-0600\n"
 "PO-Revision-Date: 2026-04-25 15:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -191,31 +191,12 @@ msgstr ""
 "en ligne."
 
 #: ../../config/options_interface.rst:63
-msgid "**Show documentation update checking disabled dialog**"
-msgstr ""
-"**Afficher la boîte de dialogue indiquant que la vérification des mises à "
-"jour de la documentation est désactivée**"
-
-#: ../../config/options_interface.rst:65
-msgid ""
-"When this is enabled, Picard will show a dialog during startup to warn you "
-"if the documentation checking on ReadTheDocs is disabled. The documentation "
-"checking can be enabled or disabled through a setting in the :doc:"
-"`options_general` section."
-msgstr ""
-"Lorsque cette option est activée, Picard affiche une boîte de dialogue au "
-"démarrage pour vous avertir si la vérification de la documentation sur "
-"ReadTheDocs est désactivée. La vérification de la documentation peut être "
-"activée ou désactivée via un paramètre dans la section :doc:"
-"`options_general`."
-
-#: ../../config/options_interface.rst:67
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr ""
 "**Afficher une boîte de dialogue de confirmation de fermeture pour les "
 "modifications non enregistrées**"
 
-#: ../../config/options_interface.rst:69
+#: ../../config/options_interface.rst:65
 msgid ""
 "When this is enabled, Picard will show a dialog when you try to quit the "
 "program with unsaved files loaded. This may help prevent accidentally losing "
@@ -226,13 +207,13 @@ msgstr ""
 "Cela peut aider à éviter de perdre accidentellement les modifications de "
 "balises que vous avez apportées, mais pas encore enregistrées."
 
-#: ../../config/options_interface.rst:71
+#: ../../config/options_interface.rst:67
 msgid "**Show a confirmation dialog when saving files**"
 msgstr ""
 "**Afficher une boîte de dialogue de confirmation lors de l'enregistrement "
 "des fichiers**"
 
-#: ../../config/options_interface.rst:73
+#: ../../config/options_interface.rst:69
 msgid ""
 "When this is enabled, Picard will show a dialog when you save files, "
 "indicating what actions will be performed on the files and the number of "
@@ -245,13 +226,13 @@ msgstr ""
 "peut permettre d'éviter d'effectuer accidentellement des modifications "
 "auxquelles vous ne vous attendiez pas."
 
-#: ../../config/options_interface.rst:75
+#: ../../config/options_interface.rst:71
 msgid "**Adjust horizontal position in file browser automatically**"
 msgstr ""
 "**Ajustement automatique de la position horizontale dans le navigateur de "
 "fichiers**"
 
-#: ../../config/options_interface.rst:77
+#: ../../config/options_interface.rst:73
 msgid ""
 "When this is enabled, Picard will automatically scroll the file browser "
 "display to keep relevant content visible."
@@ -260,11 +241,11 @@ msgstr ""
 "l'affichage du navigateur de fichiers pour que le contenu pertinent reste "
 "visible."
 
-#: ../../config/options_interface.rst:79
+#: ../../config/options_interface.rst:75
 msgid "**Begin browsing in the following directory**"
 msgstr "**Commencez à naviguer dans le répertoire suivant**"
 
-#: ../../config/options_interface.rst:81
+#: ../../config/options_interface.rst:77
 msgid ""
 "By default, Picard remembers the last directory used to load files. If you "
 "enable this option and provide a directory, Picard will always start in the "
@@ -274,15 +255,42 @@ msgstr ""
 "les fichiers. Si vous activez cette option et fournissez un répertoire, "
 "Picard démarrera toujours dans le répertoire fourni."
 
+#: ../../config/options_interface.rst:79
+msgid "**Reset tutorial and setup wizard**"
+msgstr ""
+
+#: ../../config/options_interface.rst:81
+msgid ""
+"This button will reset the tutorial and setup wizard to its initial state, "
+"showing both again on the next startup."
+msgstr ""
+
 #: ../../config/options_interface.rst:87
 msgid ""
 "Details: :doc:`options_interface_colors` / :doc:"
 "`options_interface_top_tags` / :doc:`options_interface_coverart_box` / :doc:"
 "`options_interface_quick_menu` / :doc:`options_interface_toolbar`"
 msgstr ""
-"Détails : :doc:`options_interface_colors` / "
-":doc:`options_interface_top_tags` / :doc:`options_interface_coverart_box` / "
-":doc:`options_interface_quick_menu` / :doc:`options_interface_toolbar`"
+"Détails : :doc:`options_interface_colors` / :doc:"
+"`options_interface_top_tags` / :doc:`options_interface_coverart_box` / :doc:"
+"`options_interface_quick_menu` / :doc:`options_interface_toolbar`"
+
+#~ msgid "**Show documentation update checking disabled dialog**"
+#~ msgstr ""
+#~ "**Afficher la boîte de dialogue indiquant que la vérification des mises à "
+#~ "jour de la documentation est désactivée**"
+
+#~ msgid ""
+#~ "When this is enabled, Picard will show a dialog during startup to warn "
+#~ "you if the documentation checking on ReadTheDocs is disabled. The "
+#~ "documentation checking can be enabled or disabled through a setting in "
+#~ "the :doc:`options_general` section."
+#~ msgstr ""
+#~ "Lorsque cette option est activée, Picard affiche une boîte de dialogue au "
+#~ "démarrage pour vous avertir si la vérification de la documentation sur "
+#~ "ReadTheDocs est désactivée. La vérification de la documentation peut être "
+#~ "activée ou désactivée via un paramètre dans la section :doc:"
+#~ "`options_general`."
 
 #~ msgid "**Enable audio player \"now playing\" notifications**"
 #~ msgstr ""

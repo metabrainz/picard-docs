@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 11:24-0600\n"
+"POT-Creation-Date: 2026-07-13 11:40-0600\n"
 "PO-Revision-Date: 2026-03-12 17:13+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Last-Translator: mfmeulenbelt <mfmeulenbelt@users.noreply.translations."
+"metabrainz.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_metadata/nl/>\n"
 "Language: nl\n"
@@ -27,18 +27,47 @@ msgid ":index:`Metadata Options <configuration; metadata options>`"
 msgstr ":index:`Opties voor metadata <configuratie; opties voor metadata>`"
 
 #: ../../config/options_metadata.rst:17
-msgid "**Use standardized artist names**"
+#, fuzzy
+msgid "**Standardize artist names**"
 msgstr "**Gestandaardiseerde artiestennamen gebruiken**"
 
 #: ../../config/options_metadata.rst:19
 msgid ""
-"Check to only use standard Artist names, rather than Artist Credits which "
-"may differ slightly across tracks and releases."
+"Artists are frequently credited with multiple names or aliases, and this "
+"option allows you to choose how Picard should standardize them for "
+"consistent use in tags. There are three available options:"
 msgstr ""
-"Vink dit aan om gestandaardiseerde artiestennamen te gebruiken in plaats van "
-"de artiestvermeldingen, die per uitgave of nummer kunnen verschillen."
+
+#: ../../config/options_metadata.rst:21
+msgid ""
+"**Do not standardize artist names**: Never standardize artist names, use the "
+"artist name as credited in the release."
+msgstr ""
+
+#: ../../config/options_metadata.rst:22
+msgid ""
+"**Standardize artist name variations only**: Standardize only name "
+"variations, such as \"The Beatles\" vs \"Beatles\"."
+msgstr ""
 
 #: ../../config/options_metadata.rst:23
+msgid ""
+"**Standardize artist name variations and name changes**: Standardize name "
+"variations and also name changes, i.e. the artist released music under a "
+"different name in the past, but does no longer use that name. An example is "
+"\"Diddy\", who previously performed under the names \"P. Diddy\" and \"Puff "
+"Daddy\"."
+msgstr ""
+
+#: ../../config/options_metadata.rst:27
+msgid ""
+"Name variations and changes are based on artist aliases. An artist name "
+"alias which is marked as ended is considered a no-longer used name and "
+"indicates a *name change*, while aliases that have no end date are "
+"considered *name variations*."
+msgstr ""
+
+#: ../../config/options_metadata.rst:31
 #, fuzzy
 msgid ""
 "If \"Artist names\" under the \"Translate names when available\" option is "
@@ -47,31 +76,31 @@ msgstr ""
 "Als de optie ‘Artiestennamen vertalen’ ook is aangevinkt en er een geschikte "
 "alias wordt gevonden, wordt deze optie genegeerd."
 
-#: ../../config/options_metadata.rst:25
+#: ../../config/options_metadata.rst:33
 msgid "**Use standardized instrument credits**"
 msgstr ""
 
-#: ../../config/options_metadata.rst:27
+#: ../../config/options_metadata.rst:35
 msgid ""
 "Check to only use standard names for instruments in performer relationships. "
 "Uncheck to use the instruments as credited in the relationship."
 msgstr ""
 
-#: ../../config/options_metadata.rst:29
+#: ../../config/options_metadata.rst:37
 msgid "**Use standardized vocal credits**"
 msgstr ""
 
-#: ../../config/options_metadata.rst:31
+#: ../../config/options_metadata.rst:39
 msgid ""
 "Check to only use standard names for vocals in performer relationships. "
 "Uncheck to use the vocals as credited in the relationship."
 msgstr ""
 
-#: ../../config/options_metadata.rst:33
+#: ../../config/options_metadata.rst:41
 msgid "**Convert Unicode punctuation characters to ASCII**"
 msgstr "**Unicodetekens naar ASCII omzetten**"
 
-#: ../../config/options_metadata.rst:35
+#: ../../config/options_metadata.rst:43
 msgid ""
 "Converts Unicode punctuation characters in MusicBrainz data to ASCII for "
 "consistent use of punctuation in tags. For example, right single quotation "
@@ -83,11 +112,11 @@ msgstr ""
 "aanhalingstekens (’) worden dan bijvoorbeeld omgezet naar ASCII-apostrofs "
 "(') en beletseltekens (…) naar drie punten (...)."
 
-#: ../../config/options_metadata.rst:37
+#: ../../config/options_metadata.rst:45
 msgid "**Use release relationships**"
 msgstr "**Uitgaverelaties gebruiken**"
 
-#: ../../config/options_metadata.rst:39
+#: ../../config/options_metadata.rst:47
 msgid ""
 "Check to retrieve and write release-level relationships (e.g.: URLs, "
 "composer, lyricist, performer, conductor, or DJ mixer) to your files. You "
@@ -98,11 +127,11 @@ msgstr ""
 "dirigenten of dj-mixers). Je moet dit aanvinken als je wil dat Picard "
 "hoesafbeeldingen downloadt."
 
-#: ../../config/options_metadata.rst:41
+#: ../../config/options_metadata.rst:49
 msgid "**Use track relationships**"
 msgstr "**Nummerrelaties gebruiken**"
 
-#: ../../config/options_metadata.rst:43
+#: ../../config/options_metadata.rst:51
 msgid ""
 "Check to write track-level relationships (e.g.: composer, lyricist, "
 "performer, or remixer) to your files."
@@ -110,13 +139,13 @@ msgstr ""
 "Vink dit aan om relaties op opnameniveau (bijv. componist, tekstschrijver, "
 "uitvoerend artiest of remixer) naar tags te schrijven."
 
-#: ../../config/options_metadata.rst:45
+#: ../../config/options_metadata.rst:53
 msgid "**Guess track number and title from filename if empty**"
 msgstr ""
 "**Nummerpositie en titel (als die onbekend zijn) aan de hand van de "
 "bestandsnaam gokken**"
 
-#: ../../config/options_metadata.rst:47
+#: ../../config/options_metadata.rst:55
 msgid ""
 "If checked, Picard will try to guess a file's track number or title from the "
 "filename if the ``tracknumber`` or ``title`` tag is empty."
@@ -125,31 +154,31 @@ msgstr ""
 "aan de hand van de bestandsnaam te gokken (als de tag ``tracknumber`` of "
 "``title`` leeg is)."
 
-#: ../../config/options_metadata.rst:49
+#: ../../config/options_metadata.rst:57
 #, fuzzy
 msgid "**Translate names when available**"
 msgstr "**Artiestennamen indien mogelijk naar deze taal vertalen**"
 
-#: ../../config/options_metadata.rst:51
+#: ../../config/options_metadata.rst:59
 msgid ""
 "Picard can be set to provide translations of some items based on the "
 "available information in the MusicBrainz database. The items that can be "
 "translated are:"
 msgstr ""
 
-#: ../../config/options_metadata.rst:53
+#: ../../config/options_metadata.rst:61
 msgid "Artist names"
 msgstr ""
 
-#: ../../config/options_metadata.rst:54
+#: ../../config/options_metadata.rst:62
 msgid "Album titles"
 msgstr ""
 
-#: ../../config/options_metadata.rst:55
+#: ../../config/options_metadata.rst:63
 msgid "Track titles"
 msgstr ""
 
-#: ../../config/options_metadata.rst:57
+#: ../../config/options_metadata.rst:65
 #, fuzzy
 msgid ""
 "When checked, Picard will check each of the selected locales in order to see "
@@ -166,7 +195,7 @@ msgstr ""
 "(VS)’ hebt geselecteerd, en er aliassen voor ‘Engels (VS)’, ‘Engels’ en "
 "‘Grieks’ zijn, wordt de alias voor ‘Engels (VS)’ gebruikt."
 
-#: ../../config/options_metadata.rst:59
+#: ../../config/options_metadata.rst:67
 msgid ""
 "Note that Picard will attempt to use the first exact match first. For "
 "example, if you have selected locales of \"English (Canadian)\", \"English "
@@ -178,7 +207,7 @@ msgstr ""
 "geselecteerd en er aliassen voor ‘Engels’ en ‘Grieks’ zijn, wordt de Griekse "
 "alias gebruikt."
 
-#: ../../config/options_metadata.rst:61
+#: ../../config/options_metadata.rst:69
 msgid ""
 "If there are no exact matches to any of the selected locales, then Picard "
 "will attempt to find a match based on the root locale. For example, if you "
@@ -192,7 +221,7 @@ msgstr ""
 "aliassen voor ‘Engels (VK)’ en ‘Grieks’ zijn, wordt de alias ‘Engels (VK)’ "
 "gebruikt."
 
-#: ../../config/options_metadata.rst:63
+#: ../../config/options_metadata.rst:71
 #, fuzzy
 msgid ""
 "If there is no match for the selected locale for an artist and \"English\" "
@@ -204,11 +233,11 @@ msgstr ""
 "sorteernaam van de artiest (die volgens de Stijlgids in het Latijnse alfabet "
 "moet worden geschreven) als achtervang gebruikt."
 
-#: ../../config/options_metadata.rst:65
+#: ../../config/options_metadata.rst:73
 msgid "**Preferred locales**"
 msgstr ""
 
-#: ../../config/options_metadata.rst:67
+#: ../../config/options_metadata.rst:75
 msgid ""
 "To select which locales to use, click the :guilabel:`Select...` button "
 "beside the list of selected locales. This will bring up a new dialog window "
@@ -218,24 +247,24 @@ msgstr ""
 "klikt, kan je talen selecteren. Er wordt dan een dialoogvenster geopend "
 "waarin je talen kan toevoegen, verwijderen of herschikken."
 
-#: ../../config/options_metadata.rst:80 ../../config/options_metadata.rst:103
+#: ../../config/options_metadata.rst:88 ../../config/options_metadata.rst:111
 msgid ""
 "Once you are satisfied with your selections, click the :guilabel:`Save` "
 "button to transfer the list to your option settings and close the dialog. "
-"Note that the changes will not be saved permanently until you click "
-"the :guilabel:`Make It So!` button."
+"Note that the changes will not be saved permanently until you click the :"
+"guilabel:`Make It So!` button."
 msgstr ""
-"Zodra je tevreden met je selecties bent, klik je op de "
-"knop :guilabel:`Opslaan` om je selectie te bevestigen en het dialoogvenster "
-"te sluiten. Houd er rekening mee dat de wijzigingen pas worden opgeslagen "
-"als je op de knop :guilabel:`Oké` klikt."
+"Zodra je tevreden met je selecties bent, klik je op de knop :guilabel:"
+"`Opslaan` om je selectie te bevestigen en het dialoogvenster te sluiten. "
+"Houd er rekening mee dat de wijzigingen pas worden opgeslagen als je op de "
+"knop :guilabel:`Oké` klikt."
 
-#: ../../config/options_metadata.rst:82
+#: ../../config/options_metadata.rst:90
 #, fuzzy
 msgid "**Ignore name translation for these language scripts**"
 msgstr "**Het vertalen van artiestennamen voor deze schriften uitschakelen**"
 
-#: ../../config/options_metadata.rst:84
+#: ../../config/options_metadata.rst:92
 #, fuzzy
 msgid ""
 "Sometimes you may not want to have the items translated if they appear in a "
@@ -248,7 +277,7 @@ msgstr ""
 "artiestennaam niet als die in een van de geselecteerde schriften is "
 "geschreven."
 
-#: ../../config/options_metadata.rst:86
+#: ../../config/options_metadata.rst:94
 #, fuzzy
 msgid ""
 "Each selected script includes a matching threshold value used to determine "
@@ -270,7 +299,7 @@ msgstr ""
 "als of hoger is dan de drempelwaarde voor dat schrift, wordt de "
 "artiestennaam niet vertaald."
 
-#: ../../config/options_metadata.rst:88
+#: ../../config/options_metadata.rst:96
 #, fuzzy
 msgid ""
 "For example, if \"Artist names\" is enabled with the locale set to "
@@ -286,7 +315,7 @@ msgstr ""
 "voor 30% uit Griekse tekens of minimaal voor 50% uit cyrillische tekens "
 "bestaan niet vertaald."
 
-#: ../../config/options_metadata.rst:90
+#: ../../config/options_metadata.rst:98
 msgid ""
 "To select which character set scripts to use and their weighting thresholds, "
 "click the :guilabel:`Select...` button beside the list of selected scripts. "
@@ -298,12 +327,12 @@ msgstr ""
 "`. Er wordt dan een dialoogvenster geopend waarin je schriften kan "
 "toevoegen, bewerken, verwijderen of herschikken."
 
-#: ../../config/options_metadata.rst:105
+#: ../../config/options_metadata.rst:113
 #, fuzzy
 msgid "**Use artist sort name for translation**"
 msgstr "**Het vertalen van artiestennamen voor deze schriften uitschakelen**"
 
-#: ../../config/options_metadata.rst:107
+#: ../../config/options_metadata.rst:115
 #, fuzzy
 msgid ""
 "When this option is enabled, if there is no match for the selected locale "
@@ -314,24 +343,35 @@ msgstr ""
 "sorteernaam van de artiest (die volgens de Stijlgids in het Latijnse alfabet "
 "moet worden geschreven) als achtervang gebruikt."
 
-#: ../../config/options_metadata.rst:109
+#: ../../config/options_metadata.rst:117
 msgid "**Various artists**"
 msgstr "**Diverse artiesten**"
 
-#: ../../config/options_metadata.rst:111
+#: ../../config/options_metadata.rst:119
 msgid "Choose how you want the \"Various Artists\" artist spelled."
 msgstr ""
 "Hier kan je instellen hoe de artiest ‘Diverse Artiesten’ in je tags wordt "
 "gespeld."
 
-#: ../../config/options_metadata.rst:113
+#: ../../config/options_metadata.rst:121
 msgid "**Standalone recordings**"
 msgstr "**Losse opnamen**"
 
-#: ../../config/options_metadata.rst:115
+#: ../../config/options_metadata.rst:123
 msgid "Choose how you want \"Standalone recordings\" to be grouped."
 msgstr "Hier kan je instellen hoe ‘losse opnamen’ moeten worden gegroepeerd."
 
-#: ../../config/options_metadata.rst:121
-msgid "Details: :doc:`options_releases` / :doc:`options_genres` / :doc:`options_ratings`"
-msgstr "Details: :doc:`options_releases` / :doc:`options_genres` / :doc:`options_ratings`"
+#: ../../config/options_metadata.rst:129
+msgid ""
+"Details: :doc:`options_releases` / :doc:`options_genres` / :doc:"
+"`options_ratings`"
+msgstr ""
+"Details: :doc:`options_releases` / :doc:`options_genres` / :doc:"
+"`options_ratings`"
+
+#~ msgid ""
+#~ "Check to only use standard Artist names, rather than Artist Credits which "
+#~ "may differ slightly across tracks and releases."
+#~ msgstr ""
+#~ "Vink dit aan om gestandaardiseerde artiestennamen te gebruiken in plaats "
+#~ "van de artiestvermeldingen, die per uitgave of nummer kunnen verschillen."
