@@ -24,6 +24,10 @@
 
    .. note::
 
+      Name variations and changes are based on artist aliases. An artist name alias which is marked as ended is considered a no-longer used name and indicates a *name change*, while aliases that have no end date are considered *name variations*.
+
+   .. note::
+
       If "Artist names" under the "Translate names when available" option is also checked, it will override this option if a suitable alias is found.
 
 **Use standardized instrument credits**
