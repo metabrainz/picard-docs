@@ -34,6 +34,7 @@
 
       getting_started/download
       getting_started/starting
+      getting_started/first_run
       getting_started/screen_main
       getting_started/status_icons
       config/configuration
