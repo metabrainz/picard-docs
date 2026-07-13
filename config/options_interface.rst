@@ -60,10 +60,6 @@
 
    When this is enabled, Picard will show a dialog intended for new users when you start the program. This displays a warning about the consequences of saving files, along with a suggestion for minimizing the impact until you have confirmed that your configuration produces the expected results. It also provides a link to the on-line documentation.
 
-**Show documentation update checking disabled dialog**
-
-   When this is enabled, Picard will show a dialog during startup to warn you if the documentation checking on ReadTheDocs is disabled. The documentation checking can be enabled or disabled through a setting in the :doc:`options_general` section.
-
 **Show a quit confirmation dialog for unsaved changes**
 
    When this is enabled, Picard will show a dialog when you try to quit the program with unsaved files loaded. This may help prevent accidentally losing tag changes you've made, but not yet saved.
@@ -79,6 +75,10 @@
 **Begin browsing in the following directory**
 
    By default, Picard remembers the last directory used to load files. If you enable this option and provide a directory, Picard will always start in the directory provided.
+
+**Reset tutorial and setup wizard**
+
+   This button will reset the tutorial and setup wizard to its initial state, showing both again on the next startup.
 
 .. only:: html and not epub
 
