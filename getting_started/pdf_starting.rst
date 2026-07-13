@@ -10,5 +10,6 @@ This section provides information on how to get started using MusicBrainz Picard
 
    download
    starting
+   first_run
    screen_main
    status_icons
