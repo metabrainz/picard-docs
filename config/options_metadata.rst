@@ -14,9 +14,17 @@
       :width: 70%
       :align: center
 
-**Use standardized artist names**
+**Standardize artist names**
 
-   Check to only use standard Artist names, rather than Artist Credits which may differ slightly across tracks and releases.
+   Artists are frequently credited with multiple names or aliases, and this option allows you to choose how Picard should standardize them for consistent use in tags. There are three available options:
+
+   - **Do not standardize artist names**: Never standardize artist names, use the artist name as credited in the release.
+   - **Standardize artist name variations only**: Standardize only name variations, such as "The Beatles" vs "Beatles".
+   - **Standardize artist name variations and name changes**: Standardize name variations and also name changes, i.e. the artist released music under a different name in the past, but does no longer use that name. An example is "Diddy", who previously performed under the names "P. Diddy" and "Puff Daddy".
+
+   .. note::
+
+      Name variations and changes are based on artist aliases. An artist name alias which is marked as ended is considered a no-longer used name and indicates a *name change*, while aliases that have no end date are considered *name variations*.
 
    .. note::
 
