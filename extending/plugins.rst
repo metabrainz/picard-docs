@@ -13,13 +13,25 @@ There are a few different :index:`types of plugins <plugins; types>`, including:
 
 **Cover art providers**: These plugins provide another cover art source, and are registered with ``register_cover_art_provider()``. They are also "automatic" in that they load album art without user intervention, although they must be enabled by the user in the Cover Art options. The Fanart.tv plugin is an example.
 
-**Scripting function**: Some plugins just provide additional scripting functions for use in :menuselection:`"Options --> Scripting"` or the renaming script. These are registered with ``register_script_function()``. Keep tag, which provides the ``$keep()`` function, is an example.
+**Cover art filters**: These plugins can filter cover art images, either based on image metadata before download using ``register_cover_art_metadata_filter()`` or based on actual image content using ``register_cover_art_filter()``.
+
+**Cover art processors**: These plugins can process and transform cover art images (e.g. resize, crop, or convert). They are registered with ``register_cover_art_processor()``.
+
+**Scripting functions**: Some plugins provide additional scripting functions for use in :menuselection:`"Options --> Scripting"` or the renaming script. These are registered with ``register_script_function()``. Keep tag, which provides the ``$keep()`` function, is an example.
+
+**Script variables**: Plugins can register custom script variables that will be available for autocompletion in the scripting editor. These are registered with ``register_script_variable()``.
 
 **Context menu actions**: Plugins can register actions that can be activated manually via the context menu. This is what the Load as non-album track plugin does. Another example is Generate Cuesheet. These are registered with ``register_album_action()``, ``register_track_action()``, ``register_file_action()``, ``register_cluster_action()`` or ``register_clusterlist_action()``.
 
-**File formats**: Plugins can also provide support for new file formats not yet supported by Picard. These are registered with ``register_format()``.
+**Tools menu actions**: Plugins can add items to the Tools menu using ``register_tools_menu_action()``.
 
-**Event processors**: Plugins can execute automatically based on certain event triggers. These are registered with ``file_post_load_processor()``, ``file_post_save_processor()``, ``file_post_addition_to_track_processor()``, ``file_post_removal_from_track_processor()`` or ``album_post_removal_processor()``.
+**File formats**: Plugins can provide support for new file formats not yet supported by Picard. These are registered with ``register_format()``.
+
+**Disc log readers**: Plugins can add support for parsing additional disc ripper log formats. These are registered with ``register_disc_log_reader()``.
+
+**Options pages**: Plugins can add custom pages to Picard's options dialog for their own configuration settings. These are registered with ``register_options_page()``.
+
+**Event processors**: Plugins can execute automatically based on certain event triggers. These are registered with ``register_file_post_load_processor()``, ``register_file_pre_save_processor()``, ``register_file_post_save_processor()``, ``register_file_post_addition_to_track_processor()``, ``register_file_post_removal_from_track_processor()`` or ``register_album_post_removal_processor()``.
 
 Note that plugins are not limited to one of those areas. A single plugin could implement all of the above, but most existing plugins focus on one.
 
