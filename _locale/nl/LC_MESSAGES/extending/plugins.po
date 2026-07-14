@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-07-14 09:22-0600\n"
 "PO-Revision-Date: 2026-03-12 17:12+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Last-Translator: mfmeulenbelt <mfmeulenbelt@users.noreply.translations."
+"metabrainz.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/extendingplugins/nl/>\n"
 "Language: nl\n"
@@ -92,10 +92,26 @@ msgstr ""
 
 #: ../../extending/plugins.rst:16
 msgid ""
-"**Scripting function**: Some plugins just provide additional scripting "
-"functions for use in :menuselection:`\"Options --> Scripting\"` or the "
-"renaming script. These are registered with ``register_script_function()``. "
-"Keep tag, which provides the ``$keep()`` function, is an example."
+"**Cover art filters**: These plugins can filter cover art images, either "
+"based on image metadata before download using "
+"``register_cover_art_metadata_filter()`` or based on actual image content "
+"using ``register_cover_art_filter()``."
+msgstr ""
+
+#: ../../extending/plugins.rst:18
+msgid ""
+"**Cover art processors**: These plugins can process and transform cover art "
+"images (e.g. resize, crop, or convert). They are registered with "
+"``register_cover_art_processor()``."
+msgstr ""
+
+#: ../../extending/plugins.rst:20
+#, fuzzy
+msgid ""
+"**Scripting functions**: Some plugins provide additional scripting functions "
+"for use in :menuselection:`\"Options --> Scripting\"` or the renaming "
+"script. These are registered with ``register_script_function()``. Keep tag, "
+"which provides the ``$keep()`` function, is an example."
 msgstr ""
 "**Scriptfunctie**: Sommige plug-ins bieden extra scripfuncties die je kan "
 "gebruiken in :menuselection:`‘Opties --> Scripting’` of het script voor "
@@ -103,7 +119,18 @@ msgstr ""
 "``register_script_function()``. ‘Keep Tag’, die de functie ``$keep()`` "
 "toevoegt, is hier een voorbeeld van."
 
-#: ../../extending/plugins.rst:18
+#: ../../extending/plugins.rst:22
+#, fuzzy
+msgid ""
+"**Script variables**: Plugins can register custom script variables that will "
+"be available for autocompletion in the scripting editor. These are "
+"registered with ``register_script_variable()``."
+msgstr ""
+"**Bestandsindelingen**: Plug-ins kunnen ook ondersteuning toevoegen voor "
+"nieuwe bestandsindelingen die Picard nog niet ondersteunt. Deze plug-ins "
+"worden geregistreerd met ``register_format()``."
+
+#: ../../extending/plugins.rst:24
 msgid ""
 "**Context menu actions**: Plugins can register actions that can be activated "
 "manually via the context menu. This is what the Load as non-album track "
@@ -119,31 +146,63 @@ msgstr ""
 "``register_track_action()``, ``register_file_action()``, "
 "``register_cluster_action()`` of ``register_clusterlist_action()``."
 
-#: ../../extending/plugins.rst:20
+#: ../../extending/plugins.rst:26
 msgid ""
-"**File formats**: Plugins can also provide support for new file formats not "
-"yet supported by Picard. These are registered with ``register_format()``."
+"**Tools menu actions**: Plugins can add items to the Tools menu using "
+"``register_tools_menu_action()``."
+msgstr ""
+
+#: ../../extending/plugins.rst:28
+#, fuzzy
+msgid ""
+"**File formats**: Plugins can provide support for new file formats not yet "
+"supported by Picard. These are registered with ``register_format()``."
 msgstr ""
 "**Bestandsindelingen**: Plug-ins kunnen ook ondersteuning toevoegen voor "
 "nieuwe bestandsindelingen die Picard nog niet ondersteunt. Deze plug-ins "
 "worden geregistreerd met ``register_format()``."
 
-#: ../../extending/plugins.rst:22
+#: ../../extending/plugins.rst:30
+#, fuzzy
+msgid ""
+"**Disc log readers**: Plugins can add support for parsing additional disc "
+"ripper log formats. These are registered with ``register_disc_log_reader()``."
+msgstr ""
+"**Bestandsindelingen**: Plug-ins kunnen ook ondersteuning toevoegen voor "
+"nieuwe bestandsindelingen die Picard nog niet ondersteunt. Deze plug-ins "
+"worden geregistreerd met ``register_format()``."
+
+#: ../../extending/plugins.rst:32
+#, fuzzy
+msgid ""
+"**Options pages**: Plugins can add custom pages to Picard's options dialog "
+"for their own configuration settings. These are registered with "
+"``register_options_page()``."
+msgstr ""
+"**Bestandsindelingen**: Plug-ins kunnen ook ondersteuning toevoegen voor "
+"nieuwe bestandsindelingen die Picard nog niet ondersteunt. Deze plug-ins "
+"worden geregistreerd met ``register_format()``."
+
+#: ../../extending/plugins.rst:34
+#, fuzzy
 msgid ""
 "**Event processors**: Plugins can execute automatically based on certain "
-"event triggers. These are registered with ``file_post_load_processor()``, "
-"``file_post_save_processor()``, ``file_post_addition_to_track_processor()``, "
-"``file_post_removal_from_track_processor()`` or "
-"``album_post_removal_processor()``."
+"event triggers. These are registered with "
+"``register_file_post_load_processor()``, "
+"``register_file_pre_save_processor()``, "
+"``register_file_post_save_processor()``, "
+"``register_file_post_addition_to_track_processor()``, "
+"``register_file_post_removal_from_track_processor()`` or "
+"``register_album_post_removal_processor()``."
 msgstr ""
 "**Gebeurtenisverwerkers**: Plug-ins kunnen automatisch worden uitgevoerd "
 "zodra er een bepaalde gebeurtenis plaatsvindt. Deze plug-ins worden "
-"geregistreerd met ``file_post_load_processor()``, ``file_post_save_processor"
-"()``, ``file_post_addition_to_track_processor()``, "
+"geregistreerd met ``file_post_load_processor()``, "
+"``file_post_save_processor()``, ``file_post_addition_to_track_processor()``, "
 "``file_post_removal_from_track_processor()`` of "
 "``album_post_removal_processor()``."
 
-#: ../../extending/plugins.rst:24
+#: ../../extending/plugins.rst:36
 msgid ""
 "Note that plugins are not limited to one of those areas. A single plugin "
 "could implement all of the above, but most existing plugins focus on one."
@@ -151,7 +210,7 @@ msgstr ""
 "Plug-ins zijn niet beperkt tot één van deze soorten. Een plug-in kan al deze "
 "mogelijkheden hebben, maar de meeste plug-ins zijn op één functie gericht."
 
-#: ../../extending/plugins.rst:28
+#: ../../extending/plugins.rst:40
 msgid ""
 "For more information regarding the plugin system, please see the `Picard "
 "Plugin V3 Documentation <https://github.com/metabrainz/picard/blob/master/"
