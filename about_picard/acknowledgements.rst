@@ -28,6 +28,7 @@ Contributors include (in alphabetic surname order):
 - Laurent Monin
 - Maurits Meulenbelt
 - Akash Nagaraj
+- Jonatan Nyberg
 - Frederik "Freso" S. Olesen
 - Shubham Patel
 - Guntbert Reiter
