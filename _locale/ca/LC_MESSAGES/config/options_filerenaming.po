@@ -2,14 +2,15 @@
 # Copyright (C) This documentation is licensed under CC0 1.0.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2025.
-# Marc Riera <marc@marcriera.cat>, 2025.
+# Marc Riera <marc@marcriera.cat>, 2025, 2026.
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: 2025-07-01 16:20+0000\n"
-"Last-Translator: Marc Riera <marc@marcriera.cat>\n"
+"PO-Revision-Date: 2026-07-28 20:17+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_filerenaming/ca/>\n"
 "Language: ca\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: ../../config/options_filerenaming.rst:6
 msgid ":index:`File Naming Options <pair: configuration; file naming>`"
@@ -47,8 +48,8 @@ msgstr ""
 "Si se selecciona, aquesta opció indica a Picard que s'han de moure els "
 "fitxers d'àudio a un directori nou en desar-los. Pot servir per a mantenir "
 "la feina organitzada: tots els fitxers sense etiquetar són a «Directori A» "
-"i, després d'etiquetar-los amb Picard, es mouen a «Directori B». Quan "
-"«Directori A» està buit, heu enllestit l'etiquetatge."
+"i, després d'etiquetar-los amb Picard, es mouen a «Directori B». Quan «"
+"Directori A» està buit, heu enllestit l'etiquetatge."
 
 #: ../../config/options_filerenaming.rst:25
 msgid ""
@@ -76,8 +77,8 @@ msgstr ""
 "directoris nous a partir d'un directori principal i subdirectoris, "
 "normalment segons el nom de l'artista de l'àlbum i el títol de la "
 "publicació. Ara bé, totes dues opcions fan servir la mateixa «cadena de nom "
-"dels fitxers». «Mou els fitxers» fa servir la part fins a la darrera «/». "
-"«Canvia el nom dels fitxers» fa servir la part després de la darrera «/»."
+"dels fitxers». «Mou els fitxers» fa servir la part fins a la darrera «/». «"
+"Canvia el nom dels fitxers» fa servir la part després de la darrera «/»."
 
 #: ../../config/options_filerenaming.rst:31
 msgid "**Destination directory**"
@@ -109,8 +110,8 @@ msgid ""
 "by spaces. The wildcard patterns available are:"
 msgstr ""
 "Introduïu patrons que coincideixin amb altres fitxers que voleu que Picard "
-"mogui en desar fitxers de música (p. ex., «Folder.jpg», «\\*.png», «\\*."
-"cue», «\\*.log»). Els patrons admeten comodins de l'intèrpret d'ordres de "
+"mogui en desar fitxers de música (p. ex., «Folder.jpg», «\\*.png», «\\*.cue"
+"», «\\*.log»). Els patrons admeten comodins de l'intèrpret d'ordres de "
 "l'Unix, separats per espais. Els patrons de comodins disponibles són:"
 
 #: ../../config/options_filerenaming.rst:40
@@ -172,8 +173,8 @@ msgstr ""
 "Quan es mouen aquests fitxers addicionals, van a parar al directori de la "
 "publicació amb els fitxers de música. En un patró, el caràcter «\\*» "
 "coincideix amb zero o més caràcters. Un altre text, com «.jpg», coincideix "
-"amb aquests caràcters exactes. Per tant, «\\*.jpg» coincideix amb «cover."
-"jpg», «liner.jpg», «a.jpg» i «.jpg», però no amb «sensecoincidència.jpg2»."
+"amb aquests caràcters exactes. Per tant, «\\*.jpg» coincideix amb «cover.jpg"
+"», «liner.jpg», «a.jpg» i «.jpg», però no amb «sensecoincidència.jpg2»."
 
 #: ../../config/options_filerenaming.rst:54
 msgid ""
@@ -190,8 +191,8 @@ msgstr ""
 "subdirectori a la llista de fitxers que s'han de moure. Per exemple, si les "
 "carpetes dels vostres àlbums contenen una subcarpeta anomenada «Material "
 "gràfic», «Caràtules» o «Imatges» que conté fitxers d'imatge addicionals que "
-"també voleu moure al directori nou de la publicació, només cal que afegiu "
-"«material gràfic», «caràtules» i «imatges» a la llista de patrons de "
+"també voleu moure al directori nou de la publicació, només cal que afegiu «"
+"material gràfic», «caràtules» i «imatges» a la llista de patrons de "
 "coincidències de fitxers addicionals."
 
 #: ../../config/options_filerenaming.rst:56
@@ -258,8 +259,8 @@ msgstr ""
 "fitxers de la llista de scripts disponibles. Els scripts poden ser "
 "predefinits del sistema o definits per l'usuari. Els scripts disponibles "
 "s'administren a la pantalla :doc:`Editor de scripts de nom dels fitxers "
-"<options_filerenaming_editor>`, que es mostra en seleccionar el botó :"
-"guilabel:`Edita l'script...`."
+"<options_filerenaming_editor>`, que es mostra en seleccionar el botó "
+":guilabel:`Edita l'script...`."
 
 #: ../../config/options_filerenaming.rst:72
 msgid "**Files will be named like this**"
@@ -300,5 +301,4 @@ msgstr ""
 
 #: ../../config/options_filerenaming.rst:86
 msgid ":doc:`options_filerenaming_editor` / :doc:`options_filerenaming_compat`"
-msgstr ""
-":doc:`options_filerenaming_editor` / :doc:`options_filerenaming_compat`"
+msgstr ":doc:`options_filerenaming_editor` / :doc:`options_filerenaming_compat`"
