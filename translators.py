@@ -2,8 +2,8 @@
 """Python script used to provide a list of translation contributors and
 translation completion information for each locale (language).
 """
-# Version 1.0
-# Copyright (C) 2025 Bob Swift
+# Version 2.0
+# Copyright (C) 2025-2026 Bob Swift
 
 import os
 import re
@@ -23,11 +23,13 @@ ALIASES = {
     'phw': 'Philipp Wolfer',
     'rdswift': 'Bob Swift',
     'mfmeulenbelt': 'Maurits Meulenbelt',
+    'blueday': 'Jonatan Nyberg',
 }
 
 # Contributor names to ignore (lower case)
 IGNORE = {
     'anonymous',
+    'automatic translation add-on',
     'hosted weblate',
     'languages add-on',
     'weblate',
@@ -46,8 +48,8 @@ BAD_DOMAINS = set(['hostux.ninja'])
 
 # Regular expressions used
 RE_LANGUAGE = re.compile(r'^.*/(?P<language>[^/]+)/LC_MESSAGES')
-RE_GITLOG = re.compile(r'^(?P<email>[^¤]*)¤(?P<name>.*)$')
 RE_TEAM = re.compile(r'^"Language-Team: (?P<team>[^<\\]*)')
+RE_GITLOG_AUTHORS = re.compile(r'^\s*(Author|Co-authored-by):\s+(.+)\s+<([^>]*)', re.MULTILINE)
 
 
 ######################################################################################
@@ -78,26 +80,23 @@ def extract_authors_from_gitlog(path: str, debug: bool = False) -> set:
     """
 
     authors = set()
-    cmd = ['git', 'log', r'--pretty=format:%aE¤%aN', r'--', path]
+    cmd = ['git', 'log', r'--max-count=100', r'--', path]
     result = subprocess.run(cmd, stdout=subprocess.PIPE, timeout=30, check=False)
     if result.returncode == 0:
-        for line in result.stdout.decode('utf-8').split("\n"):
-            if debug:
-                print(f"Checking: {line}")
-            matched = RE_GITLOG.search(line)
-            if matched:
-                author = matched.group('name')
-                email = matched.group('email')
-                # Get standard name for the author if there is an alias.
-                for c in (f"{author} <{email}>", email, author):
-                    if c in ALIASES:
-                        author = ALIASES[c]
-                        break
-                # Only add author if name and email domain are not blocked.
-                if author.lower() not in IGNORE and get_domain(email) not in BAD_DOMAINS:
-                    authors.add(author)
+        matches = RE_GITLOG_AUTHORS.findall(result.stdout.decode('utf-8'))
+        for _type, author, email in matches:
+            # Get standard name for the author if there is an alias.
+            for c in (f"{author} <{email}>", email, author):
+                if c in ALIASES:
+                    author = ALIASES[c]
+                    break
+            # Only add author if name and email domain are not blocked.
+            if author.lower() not in IGNORE and get_domain(email) not in BAD_DOMAINS:
+                authors.add(author)
+
     if debug:
         print(f"Authors: {', '.join(sorted(authors))}")
+
     return authors
 
 
@@ -205,7 +204,7 @@ def main() -> None:
     completion = {}
     language_titles = {}
 
-    for item in get_po_files():
+    for item in sorted([x for x in get_po_files()]):
         language, filepath = item
 
         text = f"Processing: {filepath}{' ' * 79}"[:79]
