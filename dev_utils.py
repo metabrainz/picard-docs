@@ -48,7 +48,7 @@ from tag_mapping import (
 
 
 SCRIPT_NAME = 'Picard Docs Builder Utils'
-SCRIPT_VERS = '1.1'
+SCRIPT_VERS = '1.2'
 SCRIPT_COPYRIGHT = '2021-2026'
 SCRIPT_AUTHOR = 'Bob Swift'
 
@@ -251,6 +251,7 @@ Commands:
    clean            Clean the specified target directory
    build            Build the specified target files
    test             Run the specified tests
+   status           Show the translation status
    stage            Stage the files for git
 
    info about       Information about the script
@@ -519,6 +520,20 @@ def parse_command_line():
         action='store_true',
         dest='save_files',
         help="save the git output to files"
+    )
+
+    # Parse command `status`
+    parser05 = subparsers.add_parser(
+        'status',
+        help='Show the translation status for the specified locale'
+    )
+
+    parser05.add_argument(
+        'status_locale',
+        action='store',
+        nargs='?',
+        metavar='LOCALE',
+        help="locale for processing"
     )
 
     # Parse command `info`
@@ -2044,6 +2059,145 @@ def do_process(tx_strings: dict, filename: str, fullfilename: str, files_to_stag
     filename = fullfilename = ''
 
 
+##############################################################################
+
+class LanguageStatus:
+    """Class to determine the status of a language translation.
+    """
+
+    class InvalidLocaleError(Exception):
+        """Exception raised when an invalid locale code is provided.
+        """
+        def __init__(self, message='Invalid Locale Error'):
+            self.message = message
+            super().__init__(self.message)
+
+    class MissingLocaleError(Exception):
+        """Exception raised when a locale code files are missing.
+        """
+        def __init__(self, message='Missing Locale Error'):
+            self.message = message
+            super().__init__(self.message)
+
+    def __init__(self, locale: str):
+        self.language = locale
+        if not check_language(locale):
+            raise self.InvalidLocaleError(f"Invalid locale code: {locale}")
+
+        self.filepath = os.path.join(SPHINX_.LOCALE_DIR, locale)
+        if not os.path.isdir(self.filepath):
+            raise self.MissingLocaleError(f"Locale files not found for: {locale}")
+
+    def _get_po_files(self) -> list[str]:
+        """Get a list of the PO files in the specified file path (recursively).
+
+        Returns:
+            list[str]: List of PO files in the file path.
+        """
+
+        cut_length = len(self.filepath) + 1
+
+        paths = []
+        for dirpath, dirnames, filenames in os.walk(self.filepath):
+            for filename in filenames:
+                if filename.endswith('.po') and '/.' not in dirpath:
+                    paths.append(os.path.join(dirpath, filename)[cut_length:])
+
+        return sorted(paths)
+
+    def _get_translations(self, filepath: str) -> tuple[int, int]:
+        """Process translation *.po file to extract information.
+
+        Args:
+            filepath (str): PO file to process.
+
+        Returns:
+            tuple[int, int]: Total translation strings, Number of translated strings.
+        """
+
+        RE_GET_STRING = re.compile(r'^[^"]*"(.*)"$')
+
+        total = 0
+        translated = 0
+        with open(filepath, 'r', encoding='utf8') as f:
+            lines = f.readlines()
+
+        flagid = False
+        flagstr = False
+        flagheader = True
+        msgid = ""
+        msgstr = ""
+
+        for line in lines:
+            line = line.strip()
+            if not line:
+                if msgid:
+                    total += 1
+                    if msgstr.strip():
+                        translated += 1
+                msgid = ""
+                msgstr = ""
+                flagheader = False
+                flagid = False
+                flagstr = False
+                continue
+
+            if flagheader:
+                continue
+
+            if line.startswith('#~'):
+                # Beginning of suggestions section.
+                break
+
+            if line.startswith('#:'):
+                # Translation reference.
+                continue
+
+            if line.startswith('#, fuzzy'):
+                # Indicates a "fuzzy" translation, which is not counted as translated.
+                continue
+
+            if line.startswith('msgid '):
+                # Beginning of a new translation entry.
+                flagid = True
+                flagstr = False
+
+            if line.startswith('msgstr '):
+                # Beginning of a translation value.
+                flagid = False
+                flagstr = True
+
+            matches = RE_GET_STRING.match(line)
+            if not matches:
+                continue
+
+            text = matches.group(1)
+            if flagid:
+                msgid += text
+
+            if flagstr:
+                msgstr += text
+
+        return total, translated
+
+    def get_status(self) -> tuple[int, int, int]:
+        """Get the status of the language translation.
+
+        Returns:
+            tuple[int, int, int]: Number of files, Total translation strings, Number of translated strings.
+        """
+        count = 0
+        total = 0
+        translated = 0
+        for po_file in self._get_po_files():
+            count += 1
+            file_path = os.path.join(self.filepath, po_file)
+            file_total, file_translated = self._get_translations(file_path)
+            total += file_total
+            translated += file_translated
+        return count, total, translated
+
+
 ################################################################################
 
 def main():
@@ -2053,6 +2207,33 @@ def main():
     # pylint: disable=too-many-statements
 
     args = parse_command_line()
+
+    # print(f"\nargs: {args}\n")
+    # sys.exit(0)
+
+    if 'status_locale' in vars(args):
+        process_locale = args.status_locale
+        process_locale = process_locale.strip() if process_locale else ''
+
+        print(f"Processing locale: '{process_locale}' - {Languages.name(process_locale)}")
+
+        try:
+            status = LanguageStatus(process_locale)
+        except (LanguageStatus.InvalidLocaleError, LanguageStatus.MissingLocaleError) as ex:
+            print(f"{ex.message}\n")
+            exit_with_code(1)
+
+        count, total, translated = status.get_status()
+        percent = 0.0
+        if total > 0:
+            percent = (translated / total) * 100.0
+        else:
+            print(f"No translation strings found for '{process_locale}' - {Languages.name(process_locale)}\n")
+            exit_with_code(1)
+
+        print(f"Reviewed {count:,} translation PO files")
+        print(f"Status: {translated:,} of {total:,} strings translated ({percent:.1f}%)")
+        exit_with_code(0)
 
     if 'git_stage' in vars(args):
         save_files = args.save_files if 'save_files' in vars(args) else False
