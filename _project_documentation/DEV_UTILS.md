@@ -49,6 +49,10 @@ The output files can be built in the various formats using the `build` command t
 - `pdf`: Builds the pdf output file for the documentation. Defaults to English unless another language is specified.
 - `all`: Builds all output files for the documentation. Defaults to English unless another language is specified.
 
+## Translation Status for a Locale (`status`)
+
+The translation PO files are reviewed for the locale specified on the command line, and the translation progress status is displayed. The status includes: the number of translation files, total number of strings to translate, number of strings with translations, and percentage complete.
+
 ## Stage Files for Git (`stage`)
 
 Translation POT and PO files are checked for changes and staged for Git. The actual translation keys and translation strings are combined into complete strings for comparison because different line lengths in the file can cause git to identify the file as modified even if there are no changes to the translation keys or actual translations. In addition, translation files are not staged if the only change is in the header information. Valid options to the `stage` command and the functionality they provide include:
