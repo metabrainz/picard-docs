@@ -51,7 +51,7 @@ The output files can be built in the various formats using the `build` command t
 
 ## Translation Status for a Locale (`status`)
 
-The translation PO files are reviewed for the locale specified on the command line, and the translation progress status is displayed. The status includes: the number of translation files, total number of strings to translate, number of strings with translations, and percentage complete.
+The translation PO files are reviewed for the locales specified on the command line, and the translation progress status is displayed. The status includes: the number of translation files, total number of strings to translate, number of strings with translations, and percentage complete. Multiple locales can be specified by separating them with spaces. Specifiying 'all' will process all locales with available translation files.
 
 ## Stage Files for Git (`stage`)
 

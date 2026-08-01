@@ -531,7 +531,7 @@ def parse_command_line():
     parser05.add_argument(
         'status_locale',
         action='store',
-        nargs='?',
+        nargs='+',
         metavar='LOCALE',
         help="locale for processing"
     )
@@ -2212,27 +2212,49 @@ def main():
     # sys.exit(0)
 
     if 'status_locale' in vars(args):
-        process_locale = args.status_locale
-        process_locale = process_locale.strip() if process_locale else ''
-
-        print(f"Processing locale: '{process_locale}' - {Languages.name(process_locale)}")
-
-        try:
-            status = LanguageStatus(process_locale)
-        except (LanguageStatus.InvalidLocaleError, LanguageStatus.MissingLocaleError) as ex:
-            print(f"{ex.message}\n")
-            exit_with_code(1)
-
-        count, total, translated = status.get_status()
-        percent = 0.0
-        if total > 0:
-            percent = (translated / total) * 100.0
+        if 'all' in [x.lower().strip() for x in args.status_locale]:
+            process_locales = sorted(Languages.LANGUAGES)
+            process_locales.remove(Languages.DEFAULT_LANGUAGE)
         else:
-            print(f"No translation strings found for '{process_locale}' - {Languages.name(process_locale)}\n")
+            process_locales = [x.strip() for x in args.status_locale if x.strip()]
+
+        if not process_locales:
+            print("\nNo locale specified for status check.\n")
             exit_with_code(1)
 
-        print(f"Reviewed {count:,} translation PO files")
-        print(f"Status: {translated:,} of {total:,} strings translated ({percent:.1f}%)")
+        summary = []
+        max_locale_length = 0
+
+        for process_locale in sorted(process_locales):
+            print(f"Processing locale: '{process_locale}' - {Languages.name(process_locale)}")
+            try:
+                status = LanguageStatus(process_locale)
+            except (LanguageStatus.InvalidLocaleError, LanguageStatus.MissingLocaleError) as ex:
+                print(f"{ex.message}\n")
+                exit_with_code(1)
+
+            count, total, translated = status.get_status()
+            percent = 0.0
+            if total > 0:
+                percent = (translated / total) * 100.0
+            else:
+                print(f"No translation strings found for '{process_locale}' - {Languages.name(process_locale)}\n")
+                exit_with_code(1)
+
+            print(f"Reviewed {count:,} translation PO files")
+            print(f"Status: {translated:,} of {total:,} strings translated ({percent:.1f}%)\n")
+
+            text = f" '{process_locale}' - {Languages.name(process_locale)}"
+            if len(text) > max_locale_length:
+                max_locale_length = len(text)
+
+            summary.append((f" '{process_locale}' - {Languages.name(process_locale)}", percent))
+
+        if len(summary) > 1:
+            print("\nSummary of translation status:")
+            for line in summary:
+                print(f"{line[0]:<{max_locale_length}} : {line[1]:>5.1f}% translated")
+
         exit_with_code(0)
 
     if 'git_stage' in vars(args):
