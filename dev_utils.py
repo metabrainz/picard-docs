@@ -30,6 +30,7 @@ import subprocess
 from subprocess import SubprocessError
 import sys
 import time
+from typing import Generator
 
 from babel import (
     Locale,
@@ -46,6 +47,8 @@ from tag_mapping import (
     TagMapInfo,
 )
 
+
+################################################################################
 
 SCRIPT_NAME = 'Picard Docs Builder Utils'
 SCRIPT_VERS = '1.2'
@@ -86,25 +89,6 @@ COMMAND_TIMEOUT = 300
 ################################
 #   Regular expressions used   #
 ################################
-
-RE_GIT_STAT_LINE = re.compile(r"\s*(\S+)\s+(.*)$")
-
-RE_IGNORE_COMMENT_LINE = re.compile(r'[+-]#')
-RE_IGNORE_LINE_STARTS = re.compile(r'^( |@|--- |diff|index)')
-RE_IGNORE_HEADER_LINES_1 = re.compile(r'[+-].*\\n"$')
-RE_IGNORE_HEADER_LINES_2 = re.compile(r'[+-]"(' + HEADER_KEYS_TO_IGNORE + r')', re.IGNORECASE)
-
-RE_CHANGED_TRANSLATION_LINE = re.compile(r'[+-](msgid|msgstr)\s?"')
-RE_CHANGED_STRINGS_LINE = re.compile(r'[+-]"')
-RE_CHANGED_LOCATION_LINE = re.compile(r'[+-]#: \.\./')
-RE_CHANGED_FUZZY_LINE = re.compile(r'[+-]#, fuzzy', re.IGNORECASE)
-
-RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
-RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)".*$')
-RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "([^"]+)".*$')
-
-RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
-RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
 
 RE_TEST_LANGUAGE = re.compile(r'^[a-z]{2}(_[A-Z]([A-Z]{1}|[a-z]{3}){1})?$')
 
@@ -264,6 +248,8 @@ Optional Arguments:
 """
 
 
+################################################################################
+
 ################################################
 #   Custom exceptions used within the script   #
 ################################################
@@ -365,6 +351,8 @@ class Languages():
 
         LANGUAGES.add(re_match.group(0))
 
+    # --------------------------------------------------------------------------
+
     @staticmethod
     def name(language_code: str) -> str:
         """Gets the name of the specified language.
@@ -385,7 +373,7 @@ class Languages():
 
 ################################################################################
 
-def parse_command_line():
+def parse_command_line() -> argparse.Namespace:
     """Parse the command line arguments.
     """
     arg_parser = argparse.ArgumentParser(description=DESCRIPTION)
@@ -571,7 +559,7 @@ def make_plural(count: int) -> str:
 
 ################################################################################
 
-def exit_with_code(exit_code=0):
+def exit_with_code(exit_code: int = 0) -> None:
     """Print and exit with the specified exit code.
 
     Keyword Arguments:
@@ -583,7 +571,7 @@ def exit_with_code(exit_code=0):
 
 ################################################################################
 
-def python_files_to_check():
+def python_files_to_check() -> Generator[str, None, None]:
     """Provide expanded list of python files to check.
 
     Yields:
@@ -598,7 +586,17 @@ def python_files_to_check():
 class LintRST():    # pylint: disable=too-many-instance-attributes
     """Lint the restructured text (RST) files.
     """
-    def __init__(self, verbose=False, fail_on_warnings=True):
+
+    RE_TEST_DIRECTIVE_1 = re.compile(r'^No directive entry for "([^"]+)')
+    RE_TEST_DIRECTIVE_2 = re.compile(r'^.*directive type "([^"]+)".*$')
+    RE_TEST_DIRECTIVE_3 = re.compile(r'^.*No Pygments lexer found for "([^"]+)".*$')
+
+    RE_TEST_ROLE_1 = re.compile(r'^No role entry for "([^"]+)')
+    RE_TEST_ROLE_2 = re.compile(r'^.*role "([^"]+)".*$')
+
+    # --------------------------------------------------------------------------
+
+    def __init__(self, verbose: bool = False, fail_on_warnings: bool = True) -> None:
         """Provides an instance of the "restructuredtext-lint" linter.
 
         Args:
@@ -614,7 +612,9 @@ class LintRST():    # pylint: disable=too-many-instance-attributes
         self.untested = 0
         self.linter = restructuredtext_lint
 
-    def process_error(self, err) -> str:
+    # --------------------------------------------------------------------------
+
+    def process_error(self, err: ErrorLintRST) -> str:
         """Print the error information and increment the appropriate error counter.
 
         Args:
@@ -632,7 +632,9 @@ class LintRST():    # pylint: disable=too-many-instance-attributes
 
         return '' if err.type == 'INFO' and not self.verbose else f'\n   [{err.type}] Line {err.line}: {err.message}'
 
-    def check_file(self, file_name):  # pylint: disable=too-many-branches
+    # --------------------------------------------------------------------------
+
+    def check_file(self, file_name: str) -> None:  # pylint: disable=too-many-branches
         """Lint check the specified file, printing the findings to the console.
 
         Arguments:
@@ -651,21 +653,21 @@ class LintRST():    # pylint: disable=too-many-instance-attributes
                     if not self.verbose:
                         # Ignore this error message and continue testing
                         continue
-                    m = RE_TEST_DIRECTIVE_1.match(err.message)
+                    m = self.RE_TEST_DIRECTIVE_1.match(err.message)
                     if m and m.group(1) in IGNORE_DIRECTIVES:
                         continue
-                    m = RE_TEST_ROLE_1.match(err.message)
+                    m = self.RE_TEST_ROLE_1.match(err.message)
                     if m and m.group(1) in IGNORE_ROLES:
                         continue
                 elif err.type == 'WARNING':
-                    m = RE_TEST_DIRECTIVE_3.match(err.message)
+                    m = self.RE_TEST_DIRECTIVE_3.match(err.message)
                     if m and m.group(1) in IGNORE_LEXERS:
                         continue
                 elif err.type in {'ERROR', 'SEVERE'}:
-                    m = RE_TEST_DIRECTIVE_2.match(err.message)
+                    m = self.RE_TEST_DIRECTIVE_2.match(err.message)
                     if m and m.group(1) in IGNORE_DIRECTIVES:
                         continue
-                    m = RE_TEST_ROLE_2.match(err.message)
+                    m = self.RE_TEST_ROLE_2.match(err.message)
                     if m and m.group(1) in IGNORE_ROLES:
                         continue
                 err_text += self.process_error(err)
@@ -679,7 +681,9 @@ class LintRST():    # pylint: disable=too-many-instance-attributes
         if err_text:
             print(f"{file_name}{err_text}\n")
 
-    def check(self, root_dir):
+    # --------------------------------------------------------------------------
+
+    def check(self, root_dir: str) -> int:
         """Check all files in the specified directory, including files in subdirectories.
 
         Arguments:
@@ -688,7 +692,7 @@ class LintRST():    # pylint: disable=too-many-instance-attributes
         Returns:
             {int} -- Error code 1 if check failed, otherwise 0.
         """
-        for dir_name, subdir_list, file_list in os.walk(root_dir):  # pylint: disable=unused-variable
+        for dir_name, _subdir_list, file_list in os.walk(root_dir):
             for fname in file_list:
                 if str(fname).lower().endswith('.rst'):
                     self.check_file(os.path.join(dir_name, fname))
@@ -710,7 +714,8 @@ class LintRST():    # pylint: disable=too-many-instance-attributes
 class POCheck():
     """Check for restructured text errors in the translation *.po files.
     """
-    def __init__(self):
+
+    def __init__(self) -> None:
         """Provides an instance of the "POCheck" class.
         """
         self.warning_count = 0
@@ -720,7 +725,9 @@ class POCheck():
         self.filename = ''
         self.filename_written = False
 
-    def get_lines(self, file_lines):
+    # --------------------------------------------------------------------------
+
+    def get_lines(self, file_lines: list[str]) -> dict[int, str]:
         """Assemble the content into full lines for testing.
 
         Args:
@@ -752,7 +759,9 @@ class POCheck():
         self.line_count += len(tx_lines)
         return tx_lines
 
-    def write_warning(self, message):
+    # --------------------------------------------------------------------------
+
+    def write_warning(self, message: str) -> None:
         """Add message to file processing output.
 
         Args:
@@ -765,11 +774,12 @@ class POCheck():
         self.warning_count += 1
         self.bad_files.append('  ' + message)
 
-    def check_line(self, line_number, content):     # pylint: disable=too-many-branches
+    # --------------------------------------------------------------------------
+
+    def check_line(self, line_number: int, content: str) -> None:   # pylint: disable=too-many-branches
         """Check the line for restructured-text errors.
 
         Args:
-            filename (str): Full path of the file being checked
             line_number (int): Line number of the start of the assembled line
             content (str): The assembled line to check
         """
@@ -824,13 +834,20 @@ class POCheck():
                         break
             lastchar = char
 
-    def check(self, locale_dir, filetype='po', fuzzy=False):
+    # --------------------------------------------------------------------------
+
+    def check(self, locale_dir: str, filetype: str = 'po', fuzzy: bool = False) -> None:
         """Check all translation *.po files in the specified directory and subdirectories.
+
+        Args:
+            locale_dir (str): The directory containing the translation files to check
+            filetype (str): The type of files (file extension) to check (default: 'po')
+            fuzzy (bool): Whether to include fuzzy translations in the check (default: False)
         """
         # pylint: disable=too-many-branches
         if not (os.path.exists(locale_dir) and os.path.isdir(locale_dir)):
             return
-        print(f"\nTesting restructured-text in *.po files.\nStarting root directory: {locale_dir}\n")
+        print(f"\nTesting restructured-text in *.{filetype} files.\nStarting root directory: {locale_dir}\n")
         self.bad_files = []
         if os.path.isdir(locale_dir):
             for dir_name, _subdir_list, file_list in sorted(os.walk(locale_dir)):
@@ -886,7 +903,7 @@ class POCheck():
 
 ################################################################################
 
-def show_help():
+def show_help() -> None:
     """Print the help screen.
     """
     print(f"\n{HELP}")
@@ -894,8 +911,11 @@ def show_help():
 
 ################################################################################
 
-def run_sphinx_test(language=''):
+def run_sphinx_test(language: str = '') -> None:
     """Perform a trial build using Sphinx with all warnings enabled.
+
+    Keyword Arguments:
+        language {str} -- Language to use for the build (default: '')
     """
     print('\nSphinx test build.\n')
     if not (language and language in Languages.LANGUAGES):
@@ -915,31 +935,16 @@ def run_sphinx_test(language=''):
 
 ################################################################################
 
-def run_lint(root_dir, verbose=False, fail_on_warnings=True):
+def run_lint(root_dir: str, verbose: bool = False, fail_on_warnings: bool = True) -> None:
     """Check the RST files in the specified directory and subdirectories.
 
     Arguments:
         root_dir {str} -- Path to the root directory to check
 
     Keyword Arguments:
-        ignore_info {bool} -- Determines whether INFO notices should be ignored (default: {False})
+        verbose {bool} -- Determines whether verbose output is displayed (default: {False})
         fail_on_warnings {bool} -- Determines whether warnings will cause the check to return a failed status (default: {False})
     """
-    # # ---------------------------------------------------------------------
-    # # Example code from https://pypi.org/project/restructuredtext-lint/
-    # # Load in our dependencies
-    # from docutils.parsers.rst.directives import register_directive
-    # from sphinx.directives.code import Highlight
-    # import restructuredtext_lint
-    #
-    # # Load our new directive
-    # register_directive('highlight', Highlight)
-    #
-    # # Lint our README
-    # errors = restructuredtext_lint.lint_file('docs/sphinx/README.rst')
-    # print errors[0].message # Error in "highlight" directive: no content permitted.
-    # # ---------------------------------------------------------------------
-
     print(f'\nLint checking all RST files starting in the "{root_dir}" directory.\n')
     linter = LintRST(verbose=verbose, fail_on_warnings=fail_on_warnings)
     if linter.check(root_dir):
@@ -948,7 +953,7 @@ def run_lint(root_dir, verbose=False, fail_on_warnings=True):
 
 ################################################################################
 
-def run_pylint():
+def run_pylint() -> None:
     """Check the Python code using pylint.
     """
     print("\nChecking the python files with pylint.\n")
@@ -968,7 +973,7 @@ def run_pylint():
 
 ################################################################################
 
-def run_flake8():
+def run_flake8() -> None:
     """Check the Python code using flake8.
     """
     print("\nChecking the python files with flake8.\n")
@@ -988,7 +993,7 @@ def run_flake8():
 
 ################################################################################
 
-def run_isort():
+def run_isort() -> None:
     """Check the Python code using isort.
     """
     print("\nChecking the python files with isort.\n")
@@ -1005,25 +1010,7 @@ def run_isort():
 
 ################################################################################
 
-def get_major_minor(version):
-    """Extract the major.minor portion of the supplied version string.
-
-    Args:
-        version (str): Version string to process
-
-    Returns:
-        str: Major.minor portion of the version string, or '' if invalid version
-    """
-    if re.match(r'^(v?[0-9][0-9\.]*)', version):
-        parts = re.match(r'^v?([0-9][0-9\.]*)', version).group(1).split('.')
-        parts.append('')
-        return f"{int('0' + parts[0])}.{int('0' + parts[1])}"
-    return ''
-
-
-################################################################################
-
-def create_directory(dir_path, dir_name):
+def create_directory(dir_path: str, dir_name: str) -> None:
     """If the specified directory does not exist, it will be created.  Includes multiple
     checks for success to accommodate race condition in Windows.
 
@@ -1050,7 +1037,7 @@ def create_directory(dir_path, dir_name):
 
 ################################################################################
 
-def clean_directory(dir_path, dir_name, create_dir=True):
+def clean_directory(dir_path: str, dir_name: str, create_dir: bool = True) -> None:
     """Removes all files and subdirectories for the specified directory.  If the specified
     directory does not exist, it will be created.  Includes multiple checks for success to
     accommodate race condition in Windows.
@@ -1058,6 +1045,7 @@ def clean_directory(dir_path, dir_name, create_dir=True):
     Arguments:
         dir_path {str} -- Path to the directory to clean
         dir_name {str} -- Name of the directory type (e.g.: 'html')
+        create_dir {bool} -- If True, the directory will be created if it does not exist (default: True)
     """
     if os.path.exists(dir_path):
         if os.path.isdir(dir_path):
@@ -1098,7 +1086,7 @@ def clean_directory(dir_path, dir_name, create_dir=True):
 
 ################################################################################
 
-def remove_dir(dir_path):
+def remove_dir(dir_path: str) -> None:
     """Remove the specified directory.  Includes multiple checks for success to accommodate race
     condition in Windows.
 
@@ -1140,7 +1128,7 @@ def remove_dir(dir_path):
 
 ################################################################################
 
-def remove_file(file_path):
+def remove_file(file_path: str) -> None:
     """Removes the specified file.  Includes multiple checks for success to accommodate race
     condition in Windows.
 
@@ -1181,7 +1169,7 @@ def remove_file(file_path):
 
 ################################################################################
 
-def run_command(command):
+def run_command(command: str) -> None:
     """Executes a command in a subprocess.
 
     Args:
@@ -1199,7 +1187,7 @@ def run_command(command):
 
 ################################################################################
 
-def do_build(target=None, language='', clean=False):
+def do_build(target: str | None = None, language: str = '', clean: bool = False) -> None:
     """Perform the specified build operation.
 
     Args:
@@ -1210,7 +1198,7 @@ def do_build(target=None, language='', clean=False):
     if not (target and target in SPHINX_.BUILD_TARGETS):
         print(f"\nUnknown build target: {target}")
         exit_with_code(1)
-    build_map()
+    TagMapBuilder.build_all()
     print(f"\nBuilding target: {target}")
     if not (language and language in Languages.LANGUAGES):
         language = Languages.DEFAULT_LANGUAGE
@@ -1238,7 +1226,7 @@ def do_build(target=None, language='', clean=False):
 
 ################################################################################
 
-def build_pdf(language=''):
+def build_pdf(language: str = '') -> None:
     """Build post processing specific to PDF files.
 
     Keyword Arguments:
@@ -1260,7 +1248,7 @@ def build_pdf(language=''):
 
 ################################################################################
 
-def build_pot():
+def build_pot() -> None:
     """Build the current 'gettext' language translation files and updates the *.po files for
     the supported languages.
     """
@@ -1273,331 +1261,331 @@ def build_pot():
 
 ################################################################################
 
-def build_map():
-    """Build the tag mapping files.
+class TagMapBuilder:
+    """Builds the tag mapping files.
     """
-    filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.html')
-    print(f'\nWriting HTML mapping file: {filename}')
-    write_html(filename)
 
-    filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.xlsx')
-    print(f'Writing mapping spreadsheet file: {filename}')
-    write_spreadsheet(filename)
+    HTML_TEMPLATE = (
+        '<!DOCTYPE html>\n'
+        '<html lang="en">\n'
+        '<head>\n'
+        '  <title>MusicBrainz Picard Tag Mapping</title>\n'
+        '  <meta charset="utf-8">\n'
+        '  <meta name="keywords" content="MusicBrainz, Picard, Tags, Tag Map">\n'
+        '  <meta name="description" content="Mapping of the metadata tags used with MusicBrainz Picard.">\n'
+        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+        '\n'
+        '  <style>\n'
+        '    body {\n'
+        '      background-color: white;\n'
+        '      color: black;\n'
+        '      font-family: arial;\n'
+        '      font-size: 11pt\n'
+        '    }\n'
+        '    table, th, td {\n'
+        '      border: 1px solid black;\n'
+        '      border-collapse: collapse;\n'
+        '    }\n'
+        '    th, td {\n'
+        '      padding: 5px;\n'
+        '      margin: 0;\n'
+        '      text-align: left;\n'
+        '    }\n'
+        '    th, .column1 {\n'
+        '      font-weight: bold;\n'
+        '      background-color: #e6e6e6;\n'
+        '    }\n'
+        '    code {\n'
+        '      background-color: lightgray;\n'
+        '    }\n'
+        '  </style>\n'
+        '\n'
+        '  <link rel="shortcut icon" href="https://picard-docs.musicbrainz.org/en/_static/picard-icon.png"/>\n'
+        '</head>\n'
+        '<body>\n'
+        '  <h1>MusicBrainz Picard Tag Mapping</h1>\n'
+        '{{table_info}}\n'
+        '</body>\n'
+        '</html>\n'
+    )
 
-    filename = os.path.join(SPHINX_.SOURCE_DIR, 'appendices', 'tag_mapping.rst')
-    print(f'Writing RST mapping file: {filename}')
-    write_rst(filename)
+    # --------------------------------------------------------------------------
 
+    @staticmethod
+    def _get_tag_notes(notes: int | list[int] | None) -> list[int]:
+        """Provides the notes for the item.
 
-################################################################################
+        Args:
+            notes (int | list[int] | None): The notes for the item.
 
-def _get_tag_notes(notes: int | list[int] | None) -> list[int]:
-    """Provides the notes for the item.
-
-    Returns:
-        list[int]: List of the notes for the item.
-    """
-    if notes is None:
+        Returns:
+            list[int]: List of the notes for the item.
+        """
+        if notes is None:
+            return []
+        if isinstance(notes, int):
+            return [notes,]
+        if isinstance(notes, list):
+            return list(sorted(notes))
         return []
-    if isinstance(notes, int):
-        return [notes,]
-    if isinstance(notes, list):
-        return list(sorted(notes))
-    return []
 
+    # --------------------------------------------------------------------------
 
-################################################################################
+    @staticmethod
+    def rc2cell(row: int, col: int) -> str:
+        """Convert zero-based row and column to Excel cell identifier.
 
-def rc2cell(row, col):
-    """Convert zero-based row and column to Excel cell identifier.
+        Args:
+            row (int): Row number (zero-based)
+            col (int): Column number (zero-based)
 
-    Args:
-        row (int): Row number (zero-based)
-        col (int): Column number (zero-based)
+        Returns:
+            str: Excel cell identification string.
+        """
+        if col <= 0:
+            cell_col = 'A'
+        else:
+            cell_col = ''
+            col += 1
+            while col > 0:
+                col, temp = divmod(col, 26)
+                if temp < 1:
+                    temp = 26
+                    col -= 1
+                cell_col += chr(64 + temp)
+            cell_col = cell_col[::-1]
+        cell_row = int(max(row, 0)) + 1
+        return f'{cell_col}{cell_row}'
 
-    Returns:
-        str: Excel cell identification string.
-    """
-    if col <= 0:
-        cell_col = 'A'
-    else:
-        cell_col = ''
-        col += 1
-        while col > 0:
-            col, temp = divmod(col, 26)
-            if temp < 1:
-                temp = 26
-                col -= 1
-            cell_col += chr(64 + temp)
-        cell_col = cell_col[::-1]
-    cell_row = int(max(row, 0)) + 1
-    return f'{cell_col}{cell_row}'
+    # --------------------------------------------------------------------------
 
+    @classmethod
+    def build_all(cls) -> None:
+        """Build the tag mapping files.
+        """
+        cls.write_html()
+        cls.write_spreadsheet()
+        cls.write_rst()
 
-################################################################################
+    # --------------------------------------------------------------------------
 
-def write_spreadsheet(filename):    # pylint: disable=too-many-locals
-    """Output the tag mapping information in the form of an Excel spreadsheet (*.xlsx) file.
+    @classmethod
+    def write_spreadsheet(cls) -> None:    # pylint: disable=too-many-locals
+        """Output the tag mapping information in the form of an Excel spreadsheet (*.xlsx) file.
+        """
+        filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.xlsx')
+        print(f'Writing mapping spreadsheet file: {filename}')
 
-    Args:
-        filename (str): the path and filename of the output file to use.  Overwrites if existing.
-    """
-    workbook = xlsxwriter.Workbook(filename)
-    worksheet = workbook.add_worksheet()
+        workbook = xlsxwriter.Workbook(filename)
+        worksheet = workbook.add_worksheet()
 
-    # Define formatting settings
-    title_format = workbook.add_format({'bold': True, 'font_size': 30})
-    tag_header_format = workbook.add_format({'bold': True, 'align': 'left', 'bg_color': '#e6e6e6', 'top': 6, 'bottom': 6, 'right': 1})
-    tag_name_format = workbook.add_format({'bold': True, 'align': 'left', 'valign': 'top', 'bg_color': '#e6e6e6', 'bottom': 1})
-    tag_info_format = workbook.add_format({'align': 'left', 'valign': 'top', 'text_wrap': True})
-    notes_title_format = workbook.add_format({'bold': True, 'align': 'left', 'font_size': 18})
-    # notes_number_format = workbook.add_format({'align': 'right', 'valign': 'top'})
-    # notes_text_format = workbook.add_format({'align': 'left', 'valign': 'top'})
+        # Define formatting settings
+        title_format = workbook.add_format({'bold': True, 'font_size': 30})
+        tag_header_format = workbook.add_format({'bold': True, 'align': 'left', 'bg_color': '#e6e6e6', 'top': 6, 'bottom': 6, 'right': 1})
+        tag_name_format = workbook.add_format({'bold': True, 'align': 'left', 'valign': 'top', 'bg_color': '#e6e6e6', 'bottom': 1})
+        tag_info_format = workbook.add_format({'align': 'left', 'valign': 'top', 'text_wrap': True})
+        notes_title_format = workbook.add_format({'bold': True, 'align': 'left', 'font_size': 18})
+        # notes_number_format = workbook.add_format({'align': 'right', 'valign': 'top'})
+        # notes_text_format = workbook.add_format({'align': 'left', 'valign': 'top'})
 
-    # Write the title
-    worksheet.write('A1', 'MusicBrainz Picard Tag Mapping', title_format)
+        # Write the title
+        worksheet.write('A1', 'MusicBrainz Picard Tag Mapping', title_format)
 
-    row = 2
+        row = 2
 
-    # Write the table headers
-    for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):    # pylint: disable=unused-variable
-        worksheet.write(row, col, val, tag_header_format)
-        worksheet.set_column(col, col, pts)
-
-    # Write the tag values
-    for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
-        row += 1
-        for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):
-            if col:
-                tag_maps = getattr(tag, name, None)
-                if tag_maps is None:
-                    text = 'n/a'
-                else:
-                    lines = []
-                    if isinstance(tag_maps, TagMapInfo):
-                        tag_maps = [tag_maps,]
-                    for tag_map in tag_maps:
-                        _id = tag_map.id.strip() or 'unknown'
-                        _desc = re.sub(RE_FIND_URL, r'\1', tag_map.desc.replace('``', '')).strip()
-                        if _desc:
-                            _desc = f" {_desc}"
-                        _notes = ' '.join(f"[{note}]" for note in _get_tag_notes(tag_map.notes))
-                        lines.append(f"{_id}{_desc} {_notes}".strip())
-                    text = '\n'.join(lines)
-                worksheet.write(row, col, text, tag_info_format)
-            else:
-                text = getattr(tag, name, '').strip() or 'unknown'
-                for note in _get_tag_notes(tag.notes):
-                    text += f" [{note}]"
-                worksheet.write(row, col, text, tag_name_format)
-
-    # Freeze the table headers and first column
-    worksheet.freeze_panes(3, 1, 3, 1)
-
-    # Write the notes section
-    row += 2
-    worksheet.write(row, 1, 'Notes:', notes_title_format)
-    for num in sorted(TAG_NOTES.keys()):
-        row += 1
-        text = str(TAG_NOTES[num]).replace('``', '')
-        text = re.sub(RE_FIND_URL, r'\1', text)
-        worksheet.write(row, 1, f'{num}.  {text}')
-
-    workbook.close()
-
-
-################################################################################
-
-HTML_TEMPLATE = """\
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>MusicBrainz Picard Tag Mapping</title>
-  <meta charset="utf-8">
-  <meta name="keywords" content="MusicBrainz, Picard, Tags, Tag Map">
-  <meta name="description" content="Mapping of the metadata tags used with MusicBrainz Picard.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      background-color: white;
-      color: black;
-      font-family: arial;
-      font-size: 11pt
-    }
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 5px;
-      margin: 0;
-      text-align: left;
-    }
-    th, .column1 {
-      font-weight: bold;
-      background-color: #e6e6e6;
-    }
-    code {
-      background-color: lightgray;
-    }
-  </style>
-
-  <link rel="shortcut icon" href="https://picard-docs.musicbrainz.org/en/_static/picard-icon.png"/>
-</head>
-<body>
-  <h1>MusicBrainz Picard Tag Mapping</h1>
-{{table_info}}
-</body>
-</html>
-"""
-
-
-################################################################################
-
-def write_html(filename):   # pylint: disable=too-many-locals, too-many-branches
-    """Output the tag mapping information in the form of a stand-alone HTML file.
-
-    Args:
-        filename (str): the path and filename of the output file to use.  Overwrites if existing.
-    """
-    width = 0
-    for (name, val, pts, px) in TAG_COLUMNS:    # pylint: disable=unused-variable
-        width += px + 15
-    html = f'<table width="{width}">\n<tr>\n'
-
-    # Write the table headers
-    for (name, val, pts, px) in TAG_COLUMNS:
-        text = val.replace('\n', '<br />')
-        html += f'  <th style="width: {px}px">{text}</th>\n'
-    html += '</tr>\n'
-
-    # Write the tag values
-    for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
-        html += '<tr>\n'
-        for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):
-            if col < 1:
-                text = getattr(tag, name, '').strip() or 'unknown'
-                link = tag.link.strip()
-                if link:
-                    text = f'<a href="{link}">{text}</a>'
-                for note in _get_tag_notes(tag.notes):
-                    text += f' <sup><a href="#fn{note}">[{note}]</a></sup>'
-            else:
-                tag_maps = getattr(tag, name, None)
-                if tag_maps is None:
-                    text = 'n/a'
-                else:
-                    lines = []
-                    if isinstance(tag_maps, TagMapInfo):
-                        tag_maps = [tag_maps,]
-                    for tag_map in tag_maps:
-                        _id = tag_map.id
-                        _desc = re.sub(RE_FIND_CODE, r'<code>\1</code>', tag_map.desc)
-                        _desc = re.sub(RE_FIND_URL, r'<a href="\2">\1</a>', _desc).strip()
-                        if _desc:
-                            _desc = f" {_desc}"
-                        _notes = ''
-                        for note in _get_tag_notes(tag_map.notes):
-                            _notes += f' <sup><a href="#fn{note}">[{note}]</a></sup>'
-                        lines.append(f"<code>{_id}</code>{_desc}{_notes}")
-                    text = '<br />'.join(lines)
-            if col:
-                html += f'  <td>{text}</td>\n'
-            else:
-                html += f'  <td class="column1">{text}</td>\n'
-        html += '</tr>\n'
-    html += '</table>\n\n'
-
-    # Write the notes section
-    html += '<h2>Notes:</h2>\n<ol>\n'
-    for num in sorted(TAG_NOTES.keys()):
-        text = TAG_NOTES[num].replace('\n', '<br />')
-        text = re.sub(RE_FIND_CODE, r'<code>\1</code>', text)
-        text = re.sub(RE_FIND_URL, r'<a href="\2">\1</a>', text)
-        html += f'  <li style="width: 1200px;" id="fn{num}">{text}</li>\n'
-    html += '</ol>\n'
-
-    # Write the output file
-    with open(filename, 'w', encoding='utf8') as ofile:
-        ofile.write(HTML_TEMPLATE.replace(r'{{table_info}}', html))
-
-
-################################################################################
-
-def write_rst(filename):    # pylint: disable=too-many-locals, too-many-branches
-    """Output the tag mapping information in the form of a restructured text (*.rst) file.
-
-    Args:
-        filename (str): the path and filename of the output file to use.  Overwrites if existing.
-        pdf (bool, optional): Format file suitable for use in building a PDF document. Defaults to False.
-    """
-    rst = '.. MusicBrainz Picard Documentation Project\n\n'
-    rst += '.. Picard Tag Mapping\n\n.. This file is automatically generated. Any changes entered manually will be overwritten.\n\n'
-    rst += '.. only:: html and not latex and not epub\n\n'
-    rst += '   .. |tag_map_html_link| raw:: html\n\n      <a href="../_static/MusicBrainz_Picard_Tag_Map.html" target="_blank">table</a>\n\n'
-    rst += '   .. |tag_map_xlsx_link| raw:: html\n\n      <a href="../_static/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank">spreadsheet</a>\n\n'
-    rst += '.. |br| raw:: html\n\n   <br/>\n\n.. |nl| raw:: latex\n\n   \\newline\n\n'
-
-    temp = 'Appendix A: :index:`Tag Mapping <pair: mapping; tags>`'
-    rst += temp + '\n' + '=' * len(temp) + '\n\n'
-    rst += 'The following is a mapping between Picard internal tag names and those used by various tagging formats.\n\n'
-    rst += '.. only:: not latex and not epub\n\n'
-    rst += '   The mapping is also available as a |tag_map_html_link| or |tag_map_xlsx_link|.\n\n'
-
-    # Write the tag values
-    for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
-        temp = tag.tag_name.replace('\n', ' ').strip()
-        link = tag.link.strip()
-        if link:
-            temp = f"`{temp} <{link}>`_"
-        for note in _get_tag_notes(tag.notes):
-            temp += f" [#f{note}]_"
-        temp = re.sub(r'\s+', ' ', temp)
-        temp = temp.strip()
-        temp += '\n'
-        rst += temp + '-' * len(temp) + '\n.. csv-table::\n   :width: 100%\n   :widths: 37 100\n\n'
+        # Write the table headers
         for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):    # pylint: disable=unused-variable
-            if col:
-                tag_maps = getattr(tag, name, None)
-                if tag_maps is None:
-                    temp = 'n/a'
+            worksheet.write(row, col, val, tag_header_format)
+            worksheet.set_column(col, col, pts)
+
+        # Write the tag values
+        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+            row += 1
+            for col, (name, val, pts, _px) in enumerate(TAG_COLUMNS):
+                if col:
+                    tag_maps = getattr(tag, name, None)
+                    if tag_maps is None:
+                        text = 'n/a'
+                    else:
+                        lines = []
+                        if isinstance(tag_maps, TagMapInfo):
+                            tag_maps = [tag_maps,]
+                        for tag_map in tag_maps:
+                            _id = tag_map.id.strip() or 'unknown'
+                            _desc = re.sub(RE_FIND_URL, r'\1', tag_map.desc.replace('``', '')).strip()
+                            if _desc:
+                                _desc = f" {_desc}"
+                            _notes = ' '.join(f"[{note}]" for note in cls._get_tag_notes(tag_map.notes))
+                            lines.append(f"{_id}{_desc} {_notes}".strip())
+                        text = '\n'.join(lines)
+                    worksheet.write(row, col, text, tag_info_format)
                 else:
-                    lines = []
-                    if isinstance(tag_maps, TagMapInfo):
-                        tag_maps = [tag_maps,]
-                    for tag_map in tag_maps:
-                        _id = tag_map.id
-                        _desc = tag_map.desc.strip()
-                        if _desc:
-                            _desc = f" {_desc}"
-                        _notes = ' '.join(f'[#f{note}]_' for note in _get_tag_notes(tag_map.notes))
-                        lines.append(f"``{_id}``{_desc} {_notes}".strip())
-                    temp = ' |br| |nl| '.join(lines)
-                    temp = temp.replace('"', "'").strip()
-                rst += f'   "{val}", "{temp}"\n'
-        seealso = tag.seealso.strip()
-        if seealso:
-            rst += '\n.. seealso::\n\n'
-            for temp in seealso.split('\n'):
-                rst += ('   ' + temp).rstrip() + '\n'
-        rst += '\n\n'
+                    text = getattr(tag, name, '').strip() or 'unknown'
+                    for note in cls._get_tag_notes(tag.notes):
+                        text += f" [{note}]"
+                    worksheet.write(row, col, text, tag_name_format)
 
-    # Write the notes
-    rst += '.. rubric:: Notes:\n\n'
-    for num in sorted(TAG_NOTES.keys()):
-        note = TAG_NOTES[num].replace('\n', ' ').strip()
-        rst += f".. [#f{num}] {note}\n"
-    rst += '\n.. only:: latex\n\n   .. raw:: latex\n\n      \\clearpage\n'
+        # Freeze the table headers and first column
+        worksheet.freeze_panes(3, 1, 3, 1)
 
-    # Write the output file
-    with open(filename, 'w', encoding='utf8') as ofile:
-        ofile.write(rst)
+        # Write the notes section
+        row += 2
+        worksheet.write(row, 1, 'Notes:', notes_title_format)
+        for num in sorted(TAG_NOTES.keys()):
+            row += 1
+            text = str(TAG_NOTES[num]).replace('``', '')
+            text = re.sub(RE_FIND_URL, r'\1', text)
+            worksheet.write(row, 1, f'{num}.  {text}')
+
+        workbook.close()
+
+    # --------------------------------------------------------------------------
+
+    @classmethod
+    def write_html(cls) -> None:   # pylint: disable=too-many-locals, too-many-branches
+        """Output the tag mapping information in the form of a stand-alone HTML file.
+        """
+        filename = os.path.join(conf.static_path, TAG_MAP_NAME + '.html')
+        print(f'\nWriting HTML mapping file: {filename}')
+
+        width = 0
+        for (name, val, pts, px) in TAG_COLUMNS:    # pylint: disable=unused-variable
+            width += px + 15
+        html = f'<table width="{width}">\n<tr>\n'
+
+        # Write the table headers
+        for (name, val, pts, px) in TAG_COLUMNS:
+            text = val.replace('\n', '<br />')
+            html += f'  <th style="width: {px}px">{text}</th>\n'
+        html += '</tr>\n'
+
+        # Write the tag values
+        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+            html += '<tr>\n'
+            for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):
+                if col < 1:
+                    text = getattr(tag, name, '').strip() or 'unknown'
+                    link = tag.link.strip()
+                    if link:
+                        text = f'<a href="{link}">{text}</a>'
+                    for note in cls._get_tag_notes(tag.notes):
+                        text += f' <sup><a href="#fn{note}">[{note}]</a></sup>'
+                else:
+                    tag_maps = getattr(tag, name, None)
+                    if tag_maps is None:
+                        text = 'n/a'
+                    else:
+                        lines = []
+                        if isinstance(tag_maps, TagMapInfo):
+                            tag_maps = [tag_maps,]
+                        for tag_map in tag_maps:
+                            _id = tag_map.id
+                            _desc = re.sub(RE_FIND_CODE, r'<code>\1</code>', tag_map.desc)
+                            _desc = re.sub(RE_FIND_URL, r'<a href="\2">\1</a>', _desc).strip()
+                            if _desc:
+                                _desc = f" {_desc}"
+                            _notes = ''
+                            for note in cls._get_tag_notes(tag_map.notes):
+                                _notes += f' <sup><a href="#fn{note}">[{note}]</a></sup>'
+                            lines.append(f"<code>{_id}</code>{_desc}{_notes}")
+                        text = '<br />'.join(lines)
+                if col:
+                    html += f'  <td>{text}</td>\n'
+                else:
+                    html += f'  <td class="column1">{text}</td>\n'
+            html += '</tr>\n'
+        html += '</table>\n\n'
+
+        # Write the notes section
+        html += '<h2>Notes:</h2>\n<ol>\n'
+        for num in sorted(TAG_NOTES.keys()):
+            text = TAG_NOTES[num].replace('\n', '<br />')
+            text = re.sub(RE_FIND_CODE, r'<code>\1</code>', text)
+            text = re.sub(RE_FIND_URL, r'<a href="\2">\1</a>', text)
+            html += f'  <li style="width: 1200px;" id="fn{num}">{text}</li>\n'
+        html += '</ol>\n'
+
+        # Write the output file
+        with open(filename, 'w', encoding='utf8') as ofile:
+            ofile.write(cls.HTML_TEMPLATE.replace(r'{{table_info}}', html))
+
+    # --------------------------------------------------------------------------
+
+    @classmethod
+    def write_rst(cls) -> None:    # pylint: disable=too-many-locals
+        """Output the tag mapping information in the form of a restructured text (*.rst) file.
+        """
+        filename = os.path.join(SPHINX_.SOURCE_DIR, 'appendices', 'tag_mapping.rst')
+        print(f'Writing RST mapping file: {filename}')
+
+        rst = (
+            '.. MusicBrainz Picard Documentation Project\n\n'
+            '.. Picard Tag Mapping\n\n.. This file is automatically generated. Any changes entered manually will be overwritten.\n\n'
+            '.. only:: html and not latex and not epub\n\n   .. |tag_map_html_link| raw:: html\n\n'
+            '      <a href="../_static/MusicBrainz_Picard_Tag_Map.html" target="_blank">table</a>\n\n'
+            '   .. |tag_map_xlsx_link| raw:: html\n\n'
+            '      <a href="../_static/MusicBrainz_Picard_Tag_Map.xlsx" target="_blank">spreadsheet</a>\n\n'
+            '.. |br| raw:: html\n\n   <br/>\n\n.. |nl| raw:: latex\n\n   \\newline\n\n'
+        )
+
+        temp = 'Appendix A: :index:`Tag Mapping <pair: mapping; tags>`'
+        rst += temp + '\n' + '=' * len(temp) + '\n\n'
+        rst += (
+            'The following is a mapping between Picard internal tag names and those used by various tagging formats.\n\n'
+            '.. only:: not latex and not epub\n\n'
+            '   The mapping is also available as a |tag_map_html_link| or |tag_map_xlsx_link|.\n\n'
+        )
+
+        # Write the tag values
+        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+            link = tag.link.strip()
+            temp = tag.tag_name.replace('\n', ' ').strip()
+            temp = f"`{temp} <{link}>`_" if link else temp
+            for note in cls._get_tag_notes(tag.notes):
+                temp += f" [#f{note}]_"
+            temp = re.sub(r'\s+', ' ', temp).strip() + '\n'
+            rst += temp + '-' * len(temp) + '\n.. csv-table::\n   :width: 100%\n   :widths: 37 100\n\n'
+            for col, (name, val, _pts, _px) in enumerate(TAG_COLUMNS):
+                if col:
+                    tag_maps = getattr(tag, name, None)
+                    if tag_maps is None:
+                        temp = 'n/a'
+                    else:
+                        lines = []
+                        if isinstance(tag_maps, TagMapInfo):
+                            tag_maps = [tag_maps,]
+                        for tag_map in tag_maps:
+                            _id = tag_map.id
+                            _desc = tag_map.desc.strip()
+                            if _desc:
+                                _desc = f" {_desc}"
+                            _notes = ' '.join(f'[#f{note}]_' for note in cls._get_tag_notes(tag_map.notes))
+                            lines.append(f"``{_id}``{_desc} {_notes}".strip())
+                        temp = ' |br| |nl| '.join(lines)
+                        temp = temp.replace('"', "'").strip()
+                    rst += f'   "{val}", "{temp}"\n'
+            seealso = tag.seealso.strip()
+            if seealso:
+                rst += '\n.. seealso::\n\n'
+                for temp in seealso.split('\n'):
+                    rst += ('   ' + temp).rstrip() + '\n'
+            rst += '\n\n'
+
+        # Write the notes
+        rst += '.. rubric:: Notes:\n\n'
+        for num in sorted(TAG_NOTES.keys()):
+            note = TAG_NOTES[num].replace('\n', ' ').strip()
+            rst += f".. [#f{num}] {note}\n"
+        rst += '\n.. only:: latex\n\n   .. raw:: latex\n\n      \\clearpage\n'
+
+        # Write the output file
+        with open(filename, 'w', encoding='utf8') as ofile:
+            ofile.write(rst)
 
 
 ################################################################################
 
-def clean_mo():
+def clean_mo() -> None:
     """Delete all compiled translation files (*.mo) from the gettext directory and subdirectories.
     """
     print('Deleting compiled translation *.mo files.')
@@ -1619,7 +1607,7 @@ def clean_mo():
 
 ################################################################################
 
-def check_language(language, supported_only=False):
+def check_language(language: str, supported_only: bool = False) -> bool:
     """Checks that the specified language is a valid language code.
 
     Args:
@@ -1638,7 +1626,7 @@ def check_language(language, supported_only=False):
 
 ################################################################################
 
-def list_languages():
+def list_languages() -> None:
     """List the supported language options.
     """
     for lang_id in sorted(Languages.LANGUAGES):
@@ -1648,7 +1636,7 @@ def list_languages():
 
 ################################################################################
 
-def update_po(language, filegroup, filename):
+def update_po(language: str, filegroup: str, filename: str) -> None:
     """Updates the specified po file.
 
     Args:
@@ -1683,7 +1671,7 @@ def update_po(language, filegroup, filename):
 
 ################################################################################
 
-def update_po_files_for_language(language):
+def update_po_files_for_language(language: str) -> None:
     """Update the po files for the specified language.
 
     Args:
@@ -1719,7 +1707,7 @@ def update_po_files_for_language(language):
 
 ################################################################################
 
-def build_all_po_files():
+def build_all_po_files() -> None:
     """Helper function to build all language po files.
     """
     print('\nUpdating PO files for other languages.')
@@ -1741,8 +1729,14 @@ def get_stdout_from_command(command: str) -> str:
         str: stdout response for the command output
     """
     print(f"Running command: {command}")
-    response = subprocess.run(command, shell=True, check=True, capture_output=True,
-                              encoding='utf8', timeout=COMMAND_TIMEOUT)
+    response = subprocess.run(
+        command,
+        shell=True,
+        check=True,
+        capture_output=True,
+        encoding='utf8',
+        timeout=COMMAND_TIMEOUT,
+    )
     return response.stdout
 
 
@@ -1765,303 +1759,311 @@ def is_in_locale_dir(fullpath: str) -> bool:
 
 ################################################################################
 
-def stage_files_for_git(save_files: bool = False, stage_rst: bool = False, dryrun: bool = False) -> bool:
-    """Stage translation files, and optionally translation template and restructured text files, for git.
-
-    Args:
-        save_files (bool, optional): Save the git status and git diff output to files. Defaults to False.
-        stage_rst (bool, optional): Optionally stage changed restructured text files. Defaults to False.
-        dryrun (bool, optional): Dry run only - do not stage any files. Defaults to False.
-
-    Returns:
-        bool: True on success or False on error during processing.
+class GitStaging:
+    """Class to provide git file staging functions.
     """
-    print("\nStaging changed files for git.\n")
-    files_to_ignore = set()
-    files_to_stage = {}
+    # pylint: disable=too-few-public-methods
 
-    try:
-        command = 'git status --porcelain'
-        git_stat = get_stdout_from_command(command)
-        if save_files:
-            with open(STATUS_FILE, 'w', encoding='utf-8') as f:
-                f.write(git_stat)
-        git_stat = git_stat.splitlines()
+    RE_GIT_STAT_LINE = re.compile(r"\s*(\S+)\s+(.*)$")
 
-        command = 'git diff --ignore-cr-at-eol'
-        git_diff = get_stdout_from_command(command)
-        if save_files:
-            with open(DIFF_FILE, 'w', encoding='utf-8') as f:
-                f.write(git_diff)
-        git_diff = git_diff.splitlines()
+    RE_CHANGED_TRANSLATION_LINE = re.compile(r'[+-](msgid|msgstr)\s?"')
+    RE_CHANGED_STRINGS_LINE = re.compile(r'[+-]"')
+    RE_CHANGED_LOCATION_LINE = re.compile(r'[+-]#: \.\./')
+    RE_CHANGED_FUZZY_LINE = re.compile(r'[+-]#, fuzzy', re.IGNORECASE)
 
-    except subprocess.SubprocessError as ex:
-        print(f"\nError running:{command}\nException: {ex}")
-        return False
+    RE_IGNORE_COMMENT_LINE = re.compile(r'[+-]#')
+    RE_IGNORE_LINE_STARTS = re.compile(r'^( |@|--- |diff|index)')
+    RE_IGNORE_HEADER_LINES_1 = re.compile(r'[+-].*\\n"$')
+    RE_IGNORE_HEADER_LINES_2 = re.compile(r'[+-]"(' + HEADER_KEYS_TO_IGNORE + r')', re.IGNORECASE)
 
-    print("Getting the list of translation files.")
-    print(" - Parsing the git status output")
-    parse_git_status(git_stat, files_to_stage, files_to_ignore, stage_rst)
+    def __init__(self):
+        """Initialize the GitStaging class.
+        """
+        self.stage_rst = False
+        self.files_to_stage: dict[str, str] = {}
+        self.files_to_ignore: set[str] = set()
+        self.tx_strings: dict[str, set[str]] = {}
 
-    print(" - Parsing the git diff output.")
-    parse_git_diff(git_diff, files_to_stage, files_to_ignore)
+    # --------------------------------------------------------------------------
 
-    if files_to_stage:
-        print("\nFiles to add to git staging:")
-        for filename, action in files_to_stage.items():
-            print(f' + "{filename}" [{action}]')
-            if not dryrun:
-                if subprocess.run(
-                        f'git add "{filename}"',
-                        shell=True,
-                        check=False,
-                        stdout=subprocess.DEVNULL,
-                        stderr=subprocess.DEVNULL,
-                        timeout=COMMAND_TIMEOUT
-                        ).returncode:
-                    print(f"\nThere was a problem adding {filename} to the commit.\n")
-                    return False
-        if dryrun:
-            print("\nNo files staged due to dry run option enabled.")
-    else:
-        print("\nNo files to stage for git.")
-    return True
+    def stage_files_for_git(self, save_files: bool = False, stage_rst: bool = False, dryrun: bool = False) -> bool:
+        """Stage translation files, and optionally translation template and restructured text files, for git.
 
+        Args:
+            save_files (bool, optional): Save the git status and git diff output to files. Defaults to False.
+            stage_rst (bool, optional): Optionally stage changed restructured text files. Defaults to False.
+            dryrun (bool, optional): Dry run only - do not stage any files. Defaults to False.
 
-################################################################################
+        Returns:
+            bool: True on success or False on error during processing.
+        """
+        print("\nStaging changed files for git.\n")
+        self.files_to_ignore: set[str] = set()
+        self.files_to_stage = {}
+        self.stage_rst = stage_rst
 
-def parse_git_status(git_stat: list, files_to_stage: dict, files_to_ignore: set,
-                     stage_rst: bool = False) -> None:
-    """Parse the git status response to add new or deleted files.
+        try:
+            command = 'git status --porcelain'
+            git_stat = get_stdout_from_command(command)
+            if save_files:
+                with open(STATUS_FILE, 'w', encoding='utf-8') as f:
+                    f.write(git_stat)
+            git_stat = git_stat.splitlines()
 
-    Args:
-        git_stat (list): List of lines in the git status response
-        files_to_stage (dict): Dictionary of files to add to git staging
-        files_to_ignore (set): Set of files to not add to git staging
-        stage_rst: (bool): Whether or not RST files should be staged (default False)
-    """
-    stage_types = FILE_TYPES
-    if stage_rst:
-        stage_types.add('.rst')
-    for line in git_stat:
-        matches = RE_GIT_STAT_LINE.match(line)
-        if not matches:
-            continue
-        status = matches.group(1)
-        fullfilename = matches.group(2)
-        filename = os.path.split(fullfilename)[1]
-        ext = os.path.splitext(filename)[1]
-        if '_video_thumbnail' in fullfilename:
-            files_to_ignore.add(fullfilename)
-        elif status == "??" and fullfilename not in files_to_ignore and \
-                is_in_locale_dir(fullfilename) and fullfilename.endswith('/'):
-            files_to_stage[fullfilename] = 'Added'
-        elif ext not in stage_types:
-            files_to_ignore.add(fullfilename)
-        elif status == "D":
-            files_to_stage[fullfilename] = 'Deleted'
-        elif status == "??" and fullfilename not in files_to_ignore:
-            files_to_stage[fullfilename] = 'Added'
-        elif status == "M" and fullfilename not in files_to_ignore and \
-                stage_rst and ext == '.rst':
-            files_to_stage[fullfilename] = 'Modified'
+            command = 'git diff --ignore-cr-at-eol'
+            git_diff = get_stdout_from_command(command)
+            if save_files:
+                with open(DIFF_FILE, 'w', encoding='utf-8') as f:
+                    f.write(git_diff)
+            git_diff = git_diff.splitlines()
 
+        except subprocess.SubprocessError as ex:
+            print(f"\nError running:{command}\nException: {ex}")
+            return False
 
-################################################################################
+        print("Getting the list of translation files.")
+        print(" - Parsing the git status output")
+        self._parse_git_status(git_stat)
 
-def parse_git_diff(git_diff: list, files_to_stage: dict, files_to_ignore: set) -> None:
-    """Parse the git diff response.  Do not add translation files that only have changed
-    comment lines or minor changes to headers.
+        print(" - Parsing the git diff output.")
+        self._parse_git_diff(git_diff)
 
-    Args:
-        git_diff (list): List of lines in the git diff response.
-        files_to_stage (dict): Dictionary of files to add to git staging.
-        files_to_ignore (set): Set of files to not add to git staging.
-    """
-    # pylint: disable=too-many-branches
-    # pylint: disable=too-many-statements
+        if self.files_to_stage:
+            print("\nFiles to add to git staging:")
+            for filename, action in self.files_to_stage.items():
+                print(f' + "{filename}" [{action}]')
+                if not dryrun:
+                    if subprocess.run(
+                            f'git add "{filename}"',
+                            shell=True,
+                            check=False,
+                            stdout=subprocess.DEVNULL,
+                            stderr=subprocess.DEVNULL,
+                            timeout=COMMAND_TIMEOUT
+                            ).returncode:
+                        print(f"\nThere was a problem adding {filename} to the commit.\n")
+                        return False
+            if dryrun:
+                print("\nNo files staged due to dry run option enabled.")
+        else:
+            print("\nNo files to stage for git.")
+        return True
 
-    fullfilename = ''
-    filename = ''
-    tx_strings = {}
-    for text in TRANSLATION_KEY_GROUPS:
-        tx_strings[f"+{text}"] = set()
-        tx_strings[f"-{text}"] = set()
+    # --------------------------------------------------------------------------
 
-    line_count = len(git_diff)
-    line_num = 0
-    while line_num < line_count:
-        line: str = git_diff[line_num]
-        line_num += 1
+    def _parse_git_status(self, git_stat: list[str]) -> None:
+        """Parse the git status response to add new or deleted files.
 
-        # Ignore selected line starts
-        if not line or RE_IGNORE_LINE_STARTS.match(line):
-            continue
+        Args:
+            git_stat (list): List of lines in the git status response
+        """
+        stage_types = FILE_TYPES
+        if self.stage_rst:
+            stage_types.add('.rst')
+        for line in git_stat:
+            matches = self.RE_GIT_STAT_LINE.match(line)
+            if not matches:
+                continue
+            status = matches.group(1)
+            fullfilename = matches.group(2)
+            filename = os.path.split(fullfilename)[1]
+            ext = os.path.splitext(filename)[1]
+            if '_video_thumbnail' in fullfilename:
+                self.files_to_ignore.add(fullfilename)
+            elif status == "??" and fullfilename not in self.files_to_ignore and \
+                    is_in_locale_dir(fullfilename) and fullfilename.endswith('/'):
+                self.files_to_stage[fullfilename] = 'Added'
+            elif ext not in stage_types:
+                self.files_to_ignore.add(fullfilename)
+            elif status == "D":
+                self.files_to_stage[fullfilename] = 'Deleted'
+            elif status == "??" and fullfilename not in self.files_to_ignore:
+                self.files_to_stage[fullfilename] = 'Added'
+            elif status == "M" and fullfilename not in self.files_to_ignore and \
+                    self.stage_rst and ext == '.rst':
+                self.files_to_stage[fullfilename] = 'Modified'
 
-        line = line.strip()
+    # --------------------------------------------------------------------------
 
-        # Ignore blank lines
-        if not line:
-            continue
+    def _parse_git_diff(self, git_diff: list[str]) -> None:
+        """Parse the git diff response.  Do not add translation files that only have changed
+        comment lines or minor changes to headers.
 
-        # Ignore changed comment lines
-        if RE_IGNORE_COMMENT_LINE.match(line):
-            continue
+        Args:
+            git_diff (list): List of lines in the git diff response.
+        """
+        # pylint: disable=too-many-branches
+        # pylint: disable=too-many-statements
 
-        # Ignore changed header lines
-        if RE_IGNORE_HEADER_LINES_1.match(line) or RE_IGNORE_HEADER_LINES_2.match(line):
-            # Keep skipping lines until header line ends with '\n"'
-            while line_num < line_count and not RE_IGNORE_HEADER_LINES_1.match(line.strip()):
-                line = git_diff[line_num]
-                line_num += 1
-            continue
+        fullfilename = ''
+        filename = ''
+        self.tx_strings = {}
+        for text in TRANSLATION_KEY_GROUPS:
+            self.tx_strings[f"+{text}"] = set()
+            self.tx_strings[f"-{text}"] = set()
 
-        # Start a new file filename for processing
-        if line.startswith("+++ "):
-            if filename:
-                do_process(tx_strings, filename, fullfilename, files_to_stage, files_to_ignore)
-            fullfilename = line[6:].strip()
-            filename = os.path.split(fullfilename)[-1]
+        line_count = len(git_diff)
+        line_num = 0
+        while line_num < line_count:
+            line: str = git_diff[line_num]
+            line_num += 1
 
-            # Ignore non-translation files
-            if os.path.splitext(filename)[1] not in FILE_TYPES or not is_in_locale_dir(fullfilename):
-                fullfilename = filename = ''
+            # Ignore selected line starts
+            if not line or self.RE_IGNORE_LINE_STARTS.match(line):
                 continue
 
-            # Ignore files already processed
-            if fullfilename in files_to_stage or fullfilename in files_to_ignore:
-                fullfilename = filename = ''
+            line = line.strip()
+
+            # Ignore blank lines
+            if not line:
                 continue
 
-        if not filename:
-            continue
+            # Ignore changed comment lines
+            if self.RE_IGNORE_COMMENT_LINE.match(line):
+                continue
 
-        # Check for changed translation 'msgid' or 'msgstr' strings.
-        match = RE_CHANGED_TRANSLATION_LINE.match(line)
-        if match:
-            action = line[0]
-            key = f"{action}{match.group(1)}"
-            text = line[len(match.group(0)):-1]
+            # Ignore changed header lines
+            if self.RE_IGNORE_HEADER_LINES_1.match(line) or self.RE_IGNORE_HEADER_LINES_2.match(line):
+                # Keep skipping lines until header line ends with '\n"'
+                while line_num < line_count and not self.RE_IGNORE_HEADER_LINES_1.match(line.strip()):
+                    line = git_diff[line_num]
+                    line_num += 1
+                continue
 
-            # Append to text from continuation lines.
-            while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
-                text += str(git_diff[line_num]).strip()[2:-1]
-                line_num += 1
+            # Start a new file filename for processing
+            if line.startswith("+++ "):
+                if filename:
+                    self._do_process(filename, fullfilename)
+                fullfilename = line[6:].strip()
+                filename = os.path.split(fullfilename)[-1]
 
-            tx_strings[key].add(text)
+                # Ignore non-translation files
+                if os.path.splitext(filename)[1] not in FILE_TYPES or not is_in_locale_dir(fullfilename):
+                    fullfilename = filename = ''
+                    continue
 
-            continue
+                # Ignore files already processed
+                if fullfilename in self.files_to_stage or fullfilename in self.files_to_ignore:
+                    fullfilename = filename = ''
+                    continue
 
-        # Check for changed translation strings not starting with 'msgid' or 'msgstr'.
-        # Note that changed sections of lines show removals before additions.
-        match = RE_CHANGED_STRINGS_LINE.match(line)
-        if match:
-            minus = plus = ''
-            action = line[0]
-            text = line[len(match.group(0)):-1]
+            if not filename:
+                continue
 
-            # Append to text from continuation lines.
-            while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
-                text += str(git_diff[line_num]).strip()[2:-1]
-                line_num += 1
+            # Check for changed translation 'msgid' or 'msgstr' strings.
+            match = self.RE_CHANGED_TRANSLATION_LINE.match(line)
+            if match:
+                action = line[0]
+                key = f"{action}{match.group(1)}"
+                text = line[len(match.group(0)):-1]
 
-            if action == '-':
-                minus = text
-                text = ''
-                action = '+'
+                # Append to text from continuation lines.
                 while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
                     text += str(git_diff[line_num]).strip()[2:-1]
                     line_num += 1
-                plus = text
 
-            if plus != minus:
-                files_to_stage[fullfilename] = 'Modified'
-                reset_tx_strings(tx_strings)
+                self.tx_strings[key].add(text)
+
+                continue
+
+            # Check for changed translation strings not starting with 'msgid' or 'msgstr'.
+            # Note that changed sections of lines show removals before additions.
+            match = self.RE_CHANGED_STRINGS_LINE.match(line)
+            if match:
+                minus = plus = ''
+                action = line[0]
+                text = line[len(match.group(0)):-1]
+
+                # Append to text from continuation lines.
+                while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
+                    text += str(git_diff[line_num]).strip()[2:-1]
+                    line_num += 1
+
+                if action == '-':
+                    minus = text
+                    text = ''
+                    action = '+'
+                    while line_num < line_count and str(git_diff[line_num]).strip() and str(git_diff[line_num]).startswith(f'{action}"'):
+                        text += str(git_diff[line_num]).strip()[2:-1]
+                        line_num += 1
+                    plus = text
+
+                if plus != minus:
+                    self.files_to_stage[fullfilename] = 'Modified'
+                    self._reset_tx_strings()
+                    filename = fullfilename = ''
+
+                minus = plus = ''
+
+                continue
+
+            # Check for changed location comment lines
+            if self.RE_CHANGED_LOCATION_LINE.match(line):
+                action = line[0]
+                text = line.rsplit(':', maxsplit=1)[-1].strip()
+
+                key = f"{action}location"
+                self.tx_strings[key].add(text)
+
+                continue
+
+            # Add changed fuzzy comment lines
+            if self.RE_CHANGED_FUZZY_LINE.match(line):
+                self.files_to_stage[fullfilename] = 'Modified'
+                self._reset_tx_strings()
                 filename = fullfilename = ''
 
-            minus = plus = ''
+        # Handle any outstanding changes at the end of the git diff output
+        self._do_process(filename, fullfilename)
 
-            continue
+    # --------------------------------------------------------------------------
 
-        # Check for changed location comment lines
-        if RE_CHANGED_LOCATION_LINE.match(line):
-            action = line[0]
-            text = line.rsplit(':', maxsplit=1)[-1].strip()
+    def _check_tx_strings_differences(self) -> bool:
+        """Checks for mismatches between translation 'msgid' and 'msgstr'
+        values added and removed from a file.
 
-            key = f"{action}location"
-            tx_strings[key].add(text)
+        Returns:
+            bool: True if there is a mismatch, otherwise False.
+        """
+        for key in TRANSLATION_KEY_GROUPS:
+            s_p: set[str] = self.tx_strings[f"+{key}"]
+            s_m: set[str] = self.tx_strings[f"-{key}"]
+            if s_p.difference(s_m) or s_m.difference(s_p):
+                return True
+        return False
 
-            continue
+    # --------------------------------------------------------------------------
 
-        # Add changed fuzzy comment lines
-        if RE_CHANGED_FUZZY_LINE.match(line):
-            files_to_stage[fullfilename] = 'Modified'
-            reset_tx_strings(tx_strings)
-            filename = fullfilename = ''
+    def _reset_tx_strings(self) -> None:
+        """Reset the translation strings dictionary.
+        """
+        for key in self.tx_strings:
+            self.tx_strings[key] = set()
 
-    # Handle any outstanding changes at the end of the git diff output
-    do_process(tx_strings, filename, fullfilename, files_to_stage, files_to_ignore)
+    # --------------------------------------------------------------------------
 
+    def _do_process(self, filename: str, fullfilename: str) -> None:
+        """Process the translation strings for the file and add the file to the
+        proper group (stage or ignore).
 
-################################################################################
+        Args:
+            filename (str): Name of the file.
+            fullfilename (str): Full path and name of the file.
+        """
+        if filename and fullfilename not in self.files_to_stage and fullfilename not in self.files_to_ignore:
 
-def check_tx_strings_differences(tx_strings: dict) -> bool:
-    """Checks for mismatches between translation 'msgid' and 'msgstr'
-    values added and removed from a file.
+            if self._check_tx_strings_differences():
+                self.files_to_stage[fullfilename] = 'Modified'
+            else:
+                self.files_to_ignore.add(fullfilename)
 
-    Args:
-        tx_strings (dict): Dictionary of sets of translation strings.
-
-    Returns:
-        bool: True if there is a mismatch, otherwise False.
-    """
-    for key in TRANSLATION_KEY_GROUPS:
-        s_p: set = tx_strings[f"+{key}"]
-        s_m: set = tx_strings[f"-{key}"]
-        if s_p.difference(s_m) or s_m.difference(s_p):
-            return True
-    return False
-
-
-################################################################################
-
-def reset_tx_strings(tx_strings: dict) -> None:
-    """Reset the translation strings dictionary.
-
-    Args:
-        tx_strings (dict): Translations dictionary to reset.
-    """
-    for key in tx_strings.keys():
-        tx_strings[key] = set()
-
-
-################################################################################
-
-def do_process(tx_strings: dict, filename: str, fullfilename: str, files_to_stage: dict, files_to_ignore: set) -> None:
-    """Process the translation strings for the file and add the file to the
-    proper group (stage or ignore).
-
-    Args:
-        tx_strings (dict): Translation strings dictionary.
-        filename (str): Name of the file.
-        fullfilename (str): Full path and name of the file.
-        files_to_stage (dict): Dictionary of files to stage.
-        files_to_ignore (set): Set of files to ignore.
-    """
-    if filename and fullfilename not in files_to_stage.keys() and fullfilename not in files_to_ignore:
-
-        if check_tx_strings_differences(tx_strings):
-            files_to_stage[fullfilename] = 'Modified'
-        else:
-            files_to_ignore.add(fullfilename)
-
-    reset_tx_strings(tx_strings)
-    filename = fullfilename = ''
+        self._reset_tx_strings()
+        filename = fullfilename = ''
 
 
 ##############################################################################
 
-class LanguageStatus:
+class LanguageStatus:   # pylint: disable=too-few-public-methods
     """Class to determine the status of a language translation.
     """
 
@@ -2079,7 +2081,18 @@ class LanguageStatus:
             self.message = message
             super().__init__(self.message)
 
-    def __init__(self, locale: str):
+    # --------------------------------------------------------------------------
+
+    def __init__(self, locale: str) -> None:
+        """Initialize a LanguageStatus instance.
+
+        Args:
+            locale (str): Locale to process
+
+        Raises:
+            self.InvalidLocaleError: Invalid locale exception
+            self.MissingLocaleError: Missing locale files exception
+        """
         self.language = locale
         if not check_language(locale):
             raise self.InvalidLocaleError(f"Invalid locale code: {locale}")
@@ -2087,6 +2100,8 @@ class LanguageStatus:
         self.filepath = os.path.join(SPHINX_.LOCALE_DIR, locale)
         if not os.path.isdir(self.filepath):
             raise self.MissingLocaleError(f"Locale files not found for: {locale}")
+
+    # --------------------------------------------------------------------------
 
     def _get_po_files(self) -> list[str]:
         """Get a list of the PO files in the specified file path (recursively).
@@ -2098,12 +2113,14 @@ class LanguageStatus:
         cut_length = len(self.filepath) + 1
 
         paths = []
-        for dirpath, dirnames, filenames in os.walk(self.filepath):
+        for dirpath, _dirnames, filenames in os.walk(self.filepath):
             for filename in filenames:
                 if filename.endswith('.po') and '/.' not in dirpath:
                     paths.append(os.path.join(dirpath, filename)[cut_length:])
 
         return sorted(paths)
+
+    # --------------------------------------------------------------------------
 
     def _get_translations(self, filepath: str) -> tuple[int, int]:
         """Process translation *.po file to extract information.
@@ -2149,12 +2166,9 @@ class LanguageStatus:
                 # Beginning of suggestions section.
                 break
 
-            if line.startswith('#:'):
-                # Translation reference.
-                continue
-
-            if line.startswith('#, fuzzy'):
-                # Indicates a "fuzzy" translation, which is not counted as translated.
+            if line.startswith('#:') or line.startswith('#, fuzzy'):
+                # ('#:') Translation reference.
+                # ('#, fuzzy') Indicates a "fuzzy" translation, which is not counted as translated.
                 continue
 
             if line.startswith('msgid '):
@@ -2180,6 +2194,8 @@ class LanguageStatus:
 
         return total, translated
 
+    # --------------------------------------------------------------------------
+
     def get_status(self) -> tuple[int, int, int]:
         """Get the status of the language translation.
 
@@ -2200,11 +2216,281 @@ class LanguageStatus:
 
 ################################################################################
 
-def main():
-    """Main part of script to execute.
+def main_process_status(args: argparse.Namespace) -> None:
+    """Process the status action.
+
+    Args:
+        args (argparse.Namespace): Command line arguments from argparse
+    """
+    if 'all' in [x.lower().strip() for x in args.status_locale]:
+        process_locales = sorted(Languages.LANGUAGES)
+        process_locales.remove(Languages.DEFAULT_LANGUAGE)
+    else:
+        process_locales = [x.strip() for x in args.status_locale if x.strip()]
+
+    if not process_locales:
+        print("\nNo locale specified for status check.\n")
+        exit_with_code(1)
+
+    summary = []
+    max_locale_length = 0
+    error_code = 0
+
+    for process_locale in sorted(process_locales):
+        print(f"Processing locale: '{process_locale}' - {Languages.name(process_locale)}")
+        try:
+            processor = LanguageStatus(process_locale)
+        except (LanguageStatus.InvalidLocaleError, LanguageStatus.MissingLocaleError) as ex:
+            print(f"{ex.message}\n")
+            error_code += 1
+            continue
+
+        try:
+            count, total, translated = processor.get_status()
+        except Exception as ex:     # pylint: disable=broad-exception-caught
+            print(f"Error occurred while processing locale '{process_locale}': {ex}\n")
+            error_code += 1
+            continue
+
+        percent = 0.0
+        if total > 0:
+            percent = (translated / total) * 100.0
+        else:
+            print(f"No translation strings found for '{process_locale}' - {Languages.name(process_locale)}\n")
+            error_code += 1
+            continue
+
+        print(f"Reviewed {count:,} translation PO files")
+        print(f"Status: {translated:,} of {total:,} strings translated ({percent:.1f}%)\n")
+
+        text = f" '{process_locale}' - {Languages.name(process_locale)}"
+        max_locale_length = max(max_locale_length, len(text))
+
+        summary.append((f" '{process_locale}' - {Languages.name(process_locale)}", percent))
+
+    if len(summary) > 1:
+        print("\nSummary of translation status:")
+        for line in summary:
+            print(f"{line[0]:<{max_locale_length}} : {line[1]:>5.1f}% translated")
+
+    exit_with_code(error_code)
+
+
+################################################################################
+
+def main_process_git_stage(args: argparse.Namespace) -> None:
+    """Process the git stage action.
+
+    Args:
+        args (argparse.Namespace): Command line arguments from argparse
+    """
+    save_files = args.save_files if 'save_files' in vars(args) else False
+    processor = GitStaging()
+    exit_with_code(0 if processor.stage_files_for_git(
+        save_files=save_files,
+        stage_rst=args.stage_rst,
+        dryrun=args.dryrun,
+    ) else 1)
+
+
+################################################################################
+
+def main_process_info_type(args: argparse.Namespace) -> None:
+    """Process the info type action.
+
+    Args:
+        args (argparse.Namespace): Command line arguments from argparse
+    """
+    if args.info_type == 'about':
+        print(ABOUT_TEXT)
+        exit_with_code(0)
+
+    elif args.info_type == 'warranty':
+        print(WARRANTY_TEXT)
+        exit_with_code(0)
+
+    elif args.info_type == 'languages':
+        print('\nSupported languages are:')
+        list_languages()
+        exit_with_code(0)
+
+    else:
+        print(f"\nUnknown info type: '{args.info_type}'\n")
+        exit_with_code(1)
+
+
+################################################################################
+
+def main_process_build_targets(process_languages: list[str], args: argparse.Namespace) -> None:
+    """Process the build targets action.
+
+    Args:
+        process_languages (list): languages to process
+        args (argparse.Namespace): Command line arguments from argparse
+    """
+    for target in args.build_targets:
+        if target in SPHINX_.BUILD_TARGETS:
+            for lang in process_languages:
+                do_build(target=target, language=lang, clean=True)
+
+        elif target == 'map':
+            TagMapBuilder.build_all()
+
+        elif target == 'po':
+            build_all_po_files()
+
+        elif target == 'pot':
+            build_pot()
+            build_all_po_files()
+
+        elif target == 'all':
+            TagMapBuilder.build_all()
+            build_pot()
+            clean_mo()
+            build_all_po_files()
+            for build_target in SPHINX_.BUILD_TARGETS:
+                for lang in process_languages:
+                    do_build(target=build_target, language=lang, clean=True)
+
+        else:
+            print(f"\nUnknown build target: '{args.build_target}'\n")
+            exit_with_code(1)
+
+    exit_with_code(0)
+
+
+################################################################################
+
+def main_process_clean_targets(args: argparse.Namespace) -> None:
+    """Process the clean targets action.
+
+    Args:
+        args (argparse.Namespace): Command line arguments from argparse
+    """
+    for target in args.clean_targets:
+        if target in SPHINX_.BUILD_TARGETS:
+            clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[target]['dir'])
+            clean_directory(clean_dir, target)
+
+        elif target == 'mo':
+            clean_mo()
+
+        elif target == 'all':
+            clean_mo()
+            for clean_target, clean_target_value in SPHINX_.BUILD_TARGETS.items():
+                clean_dir = os.path.join(SPHINX_.BUILD_DIR, clean_target_value['dir'])
+                clean_directory(clean_dir, clean_target)
+
+        else:
+            print(f"\nUnknown clean target: '{target}'\n")
+            exit_with_code(1)
+
+    exit_with_code(0)
+
+
+################################################################################
+
+def main_process_test_targets(process_languages: list[str], args: argparse.Namespace) -> None:
+    """Process the test targets action.
+
+    Args:
+        process_languages (list): languages to process
+        args (argparse.Namespace): Command line arguments from argparse
     """
     # pylint: disable=too-many-branches
-    # pylint: disable=too-many-statements
+
+    verbose = args.test_verbose if 'test_verbose' in vars(args) else False
+    ignore_warnings = args.test_ignore_warnings if 'test_ignore_warnings' in vars(args) else False
+
+    for target in args.test_targets:
+        if target == 'rst':
+            run_lint(SPHINX_.SOURCE_DIR, verbose=verbose, fail_on_warnings=not ignore_warnings)
+
+        elif target == 'sphinx':
+            for lang in process_languages:
+                run_sphinx_test(language=lang)
+
+        elif target == 'po':
+            checker = POCheck()
+            if process_languages == [Languages.DEFAULT_LANGUAGE]:
+                checker.check(SPHINX_.LOCALE_DIR)
+            else:
+                for lang in process_languages:
+                    test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
+                    checker.check(test_target)
+
+        elif target == 'fuzzy':
+            checker = POCheck()
+            if process_languages == [Languages.DEFAULT_LANGUAGE]:
+                checker.check(SPHINX_.LOCALE_DIR, fuzzy=True)
+            else:
+                for lang in process_languages:
+                    test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
+                    checker.check(test_target, fuzzy=True)
+
+        elif target == 'python':
+            run_isort()
+            run_flake8()
+            run_pylint()
+
+        elif target == 'isort':
+            run_isort()
+
+        elif target == 'flake8':
+            run_flake8()
+
+        elif target == 'pylint':
+            run_pylint()
+
+        elif target == 'html':
+            print('\nThat function is still under development.\n')
+            exit_with_code(1)
+
+        elif target == 'pdf':
+            print('\nThat function is still under development.\n')
+            exit_with_code(1)
+
+        else:
+            print(f"\nUnknown test target: '{target}'\n")
+            exit_with_code(1)
+
+    exit_with_code(0)
+
+
+################################################################################
+
+def get_process_languages(args) -> list[str]:
+    """Get the list of languages to process.
+
+    Args:
+        args (argparse.Namespace): Command line arguments from argparse
+
+    Returns:
+        list[str]: List of languages to process
+    """
+    if 'language' in vars(args):
+
+        if args.language == 'all':
+            return sorted(Languages.LANGUAGES)
+
+        if check_language(args.language):
+            return [args.language]
+
+        print(f'\nInvalid language selected: {args.language}')
+        if not ('build_target' in vars(args) and (args.build_target == 'po')):
+            print('\nPlease select from:')
+            list_languages()
+
+        exit_with_code(1)
+
+    return [Languages.DEFAULT_LANGUAGE]
+
+
+################################################################################
+
+def main() -> None:
+    """Main part of script to execute.
+    """
 
     args = parse_command_line()
 
@@ -2212,193 +2498,24 @@ def main():
     # sys.exit(0)
 
     if 'status_locale' in vars(args):
-        if 'all' in [x.lower().strip() for x in args.status_locale]:
-            process_locales = sorted(Languages.LANGUAGES)
-            process_locales.remove(Languages.DEFAULT_LANGUAGE)
-        else:
-            process_locales = [x.strip() for x in args.status_locale if x.strip()]
-
-        if not process_locales:
-            print("\nNo locale specified for status check.\n")
-            exit_with_code(1)
-
-        summary = []
-        max_locale_length = 0
-
-        for process_locale in sorted(process_locales):
-            print(f"Processing locale: '{process_locale}' - {Languages.name(process_locale)}")
-            try:
-                status = LanguageStatus(process_locale)
-            except (LanguageStatus.InvalidLocaleError, LanguageStatus.MissingLocaleError) as ex:
-                print(f"{ex.message}\n")
-                exit_with_code(1)
-
-            count, total, translated = status.get_status()
-            percent = 0.0
-            if total > 0:
-                percent = (translated / total) * 100.0
-            else:
-                print(f"No translation strings found for '{process_locale}' - {Languages.name(process_locale)}\n")
-                exit_with_code(1)
-
-            print(f"Reviewed {count:,} translation PO files")
-            print(f"Status: {translated:,} of {total:,} strings translated ({percent:.1f}%)\n")
-
-            text = f" '{process_locale}' - {Languages.name(process_locale)}"
-            if len(text) > max_locale_length:
-                max_locale_length = len(text)
-
-            summary.append((f" '{process_locale}' - {Languages.name(process_locale)}", percent))
-
-        if len(summary) > 1:
-            print("\nSummary of translation status:")
-            for line in summary:
-                print(f"{line[0]:<{max_locale_length}} : {line[1]:>5.1f}% translated")
-
-        exit_with_code(0)
+        main_process_status(args)
 
     if 'git_stage' in vars(args):
-        save_files = args.save_files if 'save_files' in vars(args) else False
-        exit_with_code(0 if stage_files_for_git(
-            save_files=save_files,
-            stage_rst=args.stage_rst,
-            dryrun=args.dryrun,
-        ) else 1)
+        main_process_git_stage(args)
 
-    if 'language' in vars(args):
-        if args.language == 'all':
-            process_languages = sorted(Languages.LANGUAGES)
-        elif check_language(args.language):
-            process_languages = [args.language]
-        else:
-            print(f'\nInvalid language selected: {args.language}')
-            if not ('build_target' in vars(args) and (args.build_target == 'po')):
-                print('\nPlease select from:')
-                list_languages()
-            exit_with_code(1)
-    else:
-        process_languages = [Languages.DEFAULT_LANGUAGE]
+    process_languages = get_process_languages(args)
 
     if 'info_type' in vars(args):
-        if args.info_type == 'about':
-            print(ABOUT_TEXT)
-            sys.exit(0)
-
-        elif args.info_type == 'warranty':
-            print(WARRANTY_TEXT)
-            sys.exit(0)
-
-        elif args.info_type == 'languages':
-            print('\nSupported languages are:')
-            list_languages()
-            sys.exit(0)
-
-        else:
-            print(f"\nUnknown info type: '{args.info_type}'\n")
-            exit_with_code(1)
+        main_process_info_type(args)
 
     elif 'build_targets' in vars(args):
-        for target in args.build_targets:
-            if target in SPHINX_.BUILD_TARGETS:
-                for lang in process_languages:
-                    do_build(target=target, language=lang, clean=True)
-
-            elif target == 'map':
-                build_map()
-
-            elif target == 'po':
-                build_all_po_files()
-
-            elif target == 'pot':
-                build_pot()
-                build_all_po_files()
-
-            elif target == 'all':
-                build_map()
-                build_pot()
-                clean_mo()
-                build_all_po_files()
-                for build_target in SPHINX_.BUILD_TARGETS:
-                    for lang in process_languages:
-                        do_build(target=build_target, language=lang, clean=True)
-
-            else:
-                print(f"\nUnknown build target: '{args.build_target}'\n")
-                exit_with_code(1)
+        main_process_build_targets(process_languages, args)
 
     elif 'clean_targets' in vars(args):
-        for target in args.clean_targets:
-            if target in SPHINX_.BUILD_TARGETS:
-                clean_dir = os.path.join(SPHINX_.BUILD_DIR, SPHINX_.BUILD_TARGETS[target]['dir'])
-                clean_directory(clean_dir, target)
-
-            elif target == 'mo':
-                clean_mo()
-
-            elif target == 'all':
-                clean_mo()
-                for clean_target, clean_target_value in SPHINX_.BUILD_TARGETS.items():
-                    clean_dir = os.path.join(SPHINX_.BUILD_DIR, clean_target_value['dir'])
-                    clean_directory(clean_dir, clean_target)
-
-            else:
-                print(f"\nUnknown clean target: '{target}'\n")
-                exit_with_code(1)
+        main_process_clean_targets(args)
 
     elif 'test_targets' in vars(args):
-        verbose = args.test_verbose if 'test_verbose' in vars(args) else False
-        ignore_warnings = args.test_ignore_warnings if 'test_ignore_warnings' in vars(args) else False
-        for target in args.test_targets:
-            if target == 'rst':
-                run_lint(SPHINX_.SOURCE_DIR, verbose=verbose, fail_on_warnings=not ignore_warnings)
-
-            elif target == 'sphinx':
-                for lang in process_languages:
-                    run_sphinx_test(language=lang)
-
-            elif target == 'po':
-                checker = POCheck()
-                if process_languages == [Languages.DEFAULT_LANGUAGE]:
-                    checker.check(SPHINX_.LOCALE_DIR)
-                else:
-                    for lang in process_languages:
-                        test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
-                        checker.check(test_target)
-
-            elif target == 'fuzzy':
-                checker = POCheck()
-                if process_languages == [Languages.DEFAULT_LANGUAGE]:
-                    checker.check(SPHINX_.LOCALE_DIR, fuzzy=True)
-                else:
-                    for lang in process_languages:
-                        test_target = os.path.join(SPHINX_.LOCALE_DIR, lang)
-                        checker.check(test_target, fuzzy=True)
-
-            elif target == 'python':
-                run_isort()
-                run_flake8()
-                run_pylint()
-
-            elif target == 'isort':
-                run_isort()
-
-            elif target == 'flake8':
-                run_flake8()
-
-            elif target == 'pylint':
-                run_pylint()
-
-            elif target == 'html':
-                print('\nThat function is still under development.\n')
-                exit_with_code(1)
-
-            elif target == 'pdf':
-                print('\nThat function is still under development.\n')
-                exit_with_code(1)
-
-            else:
-                print(f"\nUnknown test target: '{target}'\n")
-                exit_with_code(1)
+        main_process_test_targets(process_languages, args)
 
     else:
         # show help information
