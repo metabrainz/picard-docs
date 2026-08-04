@@ -51,7 +51,7 @@ Many of the terms used in this documentation and within Picard itself have speci
 
    A :index:`cluster` is a group of audio files that belong to the same album.
 
-   When audio files are added to Picard for processing, either via the :guilabel:`Add Files...` button, :guilabel:`Add Folder...` button, or by dragging them into the main window, they are initially added to the "Unclustered Files" section in the Clustering pane. From there they can be grouped into clusters, either automatically by Picard based on existing metadata in the files, or manually by the user. Clusters can be used to identify releases to retrieve from the MusicBrainz database, and quickly match audio files to releases in the Albums pane.
+   When audio files are added to Picard for processing, either via the :guilabel:`Add Files...` button, :guilabel:`Add Folder...` button, or by dragging them into the main window, they are initially added to the "Unclustered Files" section in the Clustering pane. From there they can be grouped into clusters automatically by Picard based on existing metadata in the files. Clusters can be used to identify releases to retrieve from the MusicBrainz database, and quickly match audio files to releases in the Albums pane.
 
    Please see the :doc:`../usage/retrieve_lookup` page for additional information regarding creating and using clusters.
 
