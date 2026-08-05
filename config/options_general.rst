@@ -43,6 +43,10 @@
 
    Your MusicBrainz website password.
 
+**Enable managing user collections**
+
+   This option allows you to partially manage your MusicBrainz collections from within Picard. It provides a context (right-click) menu item for each album in the Album pane to display your collections and whether or not the album belongs to a collection. It will also automatically add any new albums to your collections when the album is saved. See the `Collections <https://musicbrainz.org/doc/Collections>`_ documentation on the MusicBrainz website for additional information regarding collections.
+
 **Automatically scan all new files**
 
    Check this box if you want Picard to scan each music file you add and look for an :index:`AcoustID <pair: AcoustID; automatic scan>` fingerprint. This takes time, but may be helpful for you and MusicBrainz. Leave it unchecked if you don't want Picard to do this scan automatically. In any case, you can direct Picard to scan a particular music file at any time using :menuselection:`"Tools --> Scan"`. See also :ref:`Scan Files <ref_scan_files>` and :ref:`ref_tutorial_acoustid`.
