@@ -59,6 +59,12 @@
 
    If you enable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track. Leaving this option disabled is useful when re-processing files that have been previously tagged with incorrect information.
 
+**Remove complete albums after saving**
+
+   With this option enabled, Picard will remove complete albums from the Album pane after they have been saved. This can help reduce clutter in the user interface, especially when working with large collections. If you disable this option, albums will remain in the Album pane after saving, and you will need to remove them manually.
+
+   Albums will be removed only after files have been matched to all tracks on the album, and all files in the album have been saved.
+
 .. only:: html and not epub
 
    .. seealso::
