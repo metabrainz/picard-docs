@@ -15,9 +15,9 @@ The steps to follow to submit ISRCs are:
 
 2. Select :menuselection:`"File --> Submit ISRCs"` or click the "Submit ISRCs" button if you have it included in your action toolbar.
 
-3. Picard will check the ISRCs and present a list of all tracks and their ISRCs.
+3. Picard will check the ISRCs and present a list of all tracks and their ISRCs. By default, all tracks with new ISRCs that have passed validation will be selected for submission.
 
-4. Review the list, select the tracks you want to submit, and click "Submit" to submit the ISRCs to the MusicBrainz database.
+4. Review the list, deselect any tracks you do not want to submit, and click "Submit" to submit the ISRCs to the MusicBrainz database.
 
 .. only:: not latex
 
