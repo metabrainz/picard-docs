@@ -16,7 +16,13 @@ This section allows you to select which CD ROM device to use by default for look
       :width: 75%
       :align: center
 
-When the "Read ISRCs from CD" option is enabled, ISRCs will be read from the CD during the disc lookup. The ISRCs will be added to the file metadata when the CD is read, and will be used when looking up releases on MusicBrainz. Note that this feature may not be available on all CD drives, and may significantly slow down the disc reads on some devices.
+When the "Read ISRCs from CD" option is enabled, ISRCs will be read from the CD during the disc lookup. The ISRCs will be added to the file metadata when the CD is read, and will be used when looking up releases on MusicBrainz.
+
+.. warning::
+
+   Not all CD drives support reading ISRCs, and some may significantly slow down the disc reads.
+
+   Not all CDs have ISRCs, and some readers may not be able to read them even if they are present on the CD. It is also possible that the ISRCs on the CD are not correct or have been read incorrectly, so you should always check the ISRCs before submitting them to the MusicBrainz database.
 
 Platform-specific details
 --------------------------
