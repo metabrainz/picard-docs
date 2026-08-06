@@ -29,6 +29,10 @@ on:
       - 'conf.py'
       - 'tag_mapping.py'
       - '.readthedocs.yaml'
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 jobs:
   lint_rst_and_basic_build:
