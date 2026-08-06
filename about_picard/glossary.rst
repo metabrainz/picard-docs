@@ -47,6 +47,14 @@ Many of the terms used in this documentation and within Picard itself have speci
 
    Please see the `Cover Art Archive page <https://musicbrainz.org/doc/Cover_Art_Archive>`_ on the MusicBrainz website for additional information.
 
+**cluster**
+
+   A :index:`cluster` is a group of audio files that belong to the same album.
+
+   When audio files are added to Picard for processing, either via the :guilabel:`Add Files...` button, :guilabel:`Add Folder...` button, or by dragging them into the main window, they are initially added to the "Unclustered Files" section in the Clustering pane. From there they can be grouped into clusters automatically by Picard based on existing metadata in the files. Clusters can be used to identify releases to retrieve from the MusicBrainz database, and quickly match audio files to releases in the Albums pane.
+
+   Please see the :doc:`../usage/retrieve_lookup` page for additional information regarding creating and using clusters.
+
 **disc id**
 
    A :index:`Disc ID <disc id>` is the code number which MusicBrainz uses to link a physical CD to a release listing. It is a string of letters, like ``XzPS7vW.HPHsYemQh0HBUGr8vuU-``. Disc IDs for a release can be seen on the disc IDs tab for the release on MusicBrainz. Clicking on these will give a detailed display of the disc ID, including the list of attached releases.
