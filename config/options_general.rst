@@ -43,6 +43,10 @@
 
    Your MusicBrainz website password.
 
+**Enable managing user collections**
+
+   This option allows you to partially manage your MusicBrainz collections from within Picard. It provides a context (right-click) menu item for each album in the Album pane to display your collections and whether or not the album belongs to a collection. It will also automatically add any new albums to your collections when the album is saved. See the `Collections <https://musicbrainz.org/doc/Collections>`_ documentation on the MusicBrainz website for additional information regarding collections.
+
 **Automatically scan all new files**
 
    Check this box if you want Picard to scan each music file you add and look for an :index:`AcoustID <pair: AcoustID; automatic scan>` fingerprint. This takes time, but may be helpful for you and MusicBrainz. Leave it unchecked if you don't want Picard to do this scan automatically. In any case, you can direct Picard to scan a particular music file at any time using :menuselection:`"Tools --> Scan"`. See also :ref:`Scan Files <ref_scan_files>` and :ref:`ref_tutorial_acoustid`.
@@ -58,6 +62,12 @@
 **Ignore MBIDs when loading new files**
 
    If you enable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track. Leaving this option disabled is useful when re-processing files that have been previously tagged with incorrect information.
+
+**Remove complete albums after saving**
+
+   With this option enabled, Picard will remove complete albums from the Album pane after they have been saved. This can help reduce clutter in the user interface, especially when working with large collections. If you disable this option, albums will remain in the Album pane after saving, and you will need to remove them manually.
+
+   Albums will be removed only after files have been matched to all tracks on the album, and all files in the album have been saved.
 
 .. only:: html and not epub
 
