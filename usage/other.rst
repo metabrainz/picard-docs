@@ -15,6 +15,10 @@ Other Picard Tasks
 
       This will calculate the acoustic fingerprints for the selected tracks and submit them to the AcoustID database.
 
+   **Submitting track ISRCs**
+
+      This will submit the ISRCs for the selected tracks to the MusicBrainz database. Prior to submitting, Picard will check that the ISRCs are valid, that the same ISRC doesn't appear on more than one track on the release, and that the ISRCs are not already present in the database.
+
    **Generating tags from file names**
 
       This will extract tags such as track number and title from the file name.
@@ -30,6 +34,7 @@ Other Picard Tasks
       Step-by-step detailed instructions:
       :doc:`attach_disc_id` /
       :doc:`submit_acoustid` /
+      :doc:`submit_isrcs` /
       :doc:`tags_from_file_names` /
       :doc:`submit_cluster_as_release`
 
@@ -38,5 +43,6 @@ Other Picard Tasks
 
    attach_disc_id
    submit_acoustid
+   submit_isrcs
    tags_from_file_names
    submit_cluster_as_release
