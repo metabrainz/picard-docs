@@ -84,33 +84,59 @@ When albums and tracks are displayed in the right-hand pane, each line begins wi
    | This icon indicates that the track is a data track and that there is no file currently matched. This appears if there is no file matched, or if there are multiple files matched.
    |
 
-.. |img-match-50| image:: images/track-match-50.png
+.. |img-match-50| image:: images/match-0@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-60| image:: images/track-match-60.png
+.. |img-match-60| image:: images/match-1@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-70| image:: images/track-match-70.png
+.. |img-match-70| image:: images/match-2@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-80| image:: images/track-match-80.png
+.. |img-match-80| image:: images/match-3@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-90| image:: images/track-match-90.png
+.. |img-match-90| image:: images/match-4@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-100| image:: images/track-match-100.png
+.. |img-match-100| image:: images/match-5@2x.png
    :width: 24pt
    :height: 24pt
 
-|img-match-50| |img-match-60| |img-match-70| |img-match-80| |img-match-90| |img-match-100|
+.. |img-match-pending-50| image:: images/match-pending-0@2x.png
+   :width: 24pt
+   :height: 24pt
 
-   | These icons indicates the quality of match between the information from the file and the information for the track as provided from the MusicBrainz database. Red indicates a poor match, progressing to all green which indicates a very good match.
+.. |img-match-pending-60| image:: images/match-pending-1@2x.png
+   :width: 24pt
+   :height: 24pt
+
+.. |img-match-pending-70| image:: images/match-pending-2@2x.png
+   :width: 24pt
+   :height: 24pt
+
+.. |img-match-pending-80| image:: images/match-pending-3@2x.png
+   :width: 24pt
+   :height: 24pt
+
+.. |img-match-pending-90| image:: images/match-pending-4@2x.png
+   :width: 24pt
+   :height: 24pt
+
+.. |img-match-pending-100| image:: images/match-pending-5@2x.png
+   :width: 24pt
+   :height: 24pt
+
+|img-match-50| |img-match-60| |img-match-70| |img-match-80| |img-match-90| |img-match-100| (Normal)
+
+|img-match-pending-50| |img-match-pending-60| |img-match-pending-70| |img-match-pending-80| |img-match-pending-90| |img-match-pending-100| (Pending)
+
+   | These icons indicates the quality of match between the information from the file and the information for the track as provided from the MusicBrainz database. Red indicates a poor match, progressing to all green which indicates a very good match. Note that the icons will be displayed dimmed if there is a pending action for the track, such as the file being queued for saving.
    |
 
 .. |img-track-saved| image:: images/track-saved.png
