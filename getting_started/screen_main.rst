@@ -62,3 +62,27 @@ When filtering is applied, items will only be displayed if:
 - a tag is found that matches one of the selected filters and the filter text is found within the tag value.
 
 Items will not be displayed if one or more tags were found in the selected filters and the filter text was not found in any values of those tags.
+
+.. _main_screen_metadata:
+
+:index:`Metadata Differences Display <user interface; metadata differences display>`
+-------------------------------------------------------------------------------------
+
+When a file is selected in the Cluster Pane, the Metadata Pane will display the differences between the original metadata found in the file and the new metadata that will be written to the file. When a track is selected in the Album Pane, the Metadata Pane will display the differences between the original metadata found in the file and the new metadata initially retrieved from MusicBrainz that will be written to the file. In both cases, the original metadata is displayed in the middle column, and the new metadata is displayed in the right-hand column.
+
+.. only:: not latex
+
+   .. image:: images/metadata-pane-differences.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/metadata-pane-differences.png
+      :width: 90%
+      :align: center
+
+When there are differences between the original and new metadata, Picard will highlight the differences for easy identification of the changes. Additions will be highlighted in green, and deletions will be highlighted in red.
+
+In addition, the tag name in the first column will be highlighted in a different color. Modified tags will be highlighted in yellow, added tags will be highlighted in green, and deleted tags will be highlighted in red.
