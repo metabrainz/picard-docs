@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-08-08 10:09-0600\n"
 "PO-Revision-Date: 2026-07-30 19:08+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -84,10 +84,10 @@ msgid ""
 msgstr ""
 "De muzikant of groep muzikanten die op een uitgave speelt.  ‘The Beatles’ "
 "zijn bijvoorbeeld de :index:`albumartiest` op het album ‘`Past Masters, "
-"Volume One <https://musicbrainz.org/release/9383a6f5-9607-4a36-9c68-"
-"8663aad3592b>`_’, terwijl de albumartiest van ‘`No Boundaries: A Benefit for "
-"the Kosovar Refugees <https://musicbrainz.org/release/65536c6a-9219-4c41-"
-"9829-781eab7cdb50>`_’ ‘Diverse Artiesten’ is."
+"Volume One <https://musicbrainz.org/"
+"release/9383a6f5-9607-4a36-9c68-8663aad3592b>`_’, terwijl de albumartiest "
+"van ‘`No Boundaries: A Benefit for the Kosovar Refugees <https://musicbrainz."
+"org/release/65536c6a-9219-4c41-9829-781eab7cdb50>`_’ ‘Diverse Artiesten’ is."
 
 #: ../../about_picard/glossary.rst:26
 msgid ""
@@ -116,8 +116,8 @@ msgstr ""
 "De muzikant of groep muzikanten die op een nummer speelt.  ‘Jeen’ is "
 "bijvoorbeeld de :index:`artiest` van het nummer ‘`Be (One in a Million) "
 "<https://musicbrainz.org/track/5acda7a7-697c-4614-8467-7c48b3d946a6>`_’ op "
-"de uitgave ‘`Tourist <https://musicbrainz.org/release/472f4da8-c7dd-4e4a-"
-"8aae-9e7824f85afc>`_’."
+"de uitgave ‘`Tourist <https://musicbrainz.org/release/472f4da8-"
+"c7dd-4e4a-8aae-9e7824f85afc>`_’."
 
 #: ../../about_picard/glossary.rst:32
 msgid ""
@@ -199,10 +199,37 @@ msgstr ""
 "Cover_Art_Archive>`_ op de website van MusicBrainz meer informatie."
 
 #: ../../about_picard/glossary.rst:50
+msgid "**cluster**"
+msgstr ""
+
+#: ../../about_picard/glossary.rst:52
+msgid ""
+"A :index:`cluster` is a group of audio files that belong to the same album."
+msgstr ""
+
+#: ../../about_picard/glossary.rst:54
+msgid ""
+"When audio files are added to Picard for processing, either via the :"
+"guilabel:`Add Files...` button, :guilabel:`Add Folder...` button, or by "
+"dragging them into the main window, they are initially added to the "
+"\"Unclustered Files\" section in the Clustering pane. From there they can be "
+"grouped into clusters automatically by Picard based on existing metadata in "
+"the files. Clusters can be used to identify releases to retrieve from the "
+"MusicBrainz database, and quickly match audio files to releases in the "
+"Albums pane."
+msgstr ""
+
+#: ../../about_picard/glossary.rst:56
+msgid ""
+"Please see the :doc:`../usage/retrieve_lookup` page for additional "
+"information regarding creating and using clusters."
+msgstr ""
+
+#: ../../about_picard/glossary.rst:58
 msgid "**disc id**"
 msgstr "**Disc-ID**"
 
-#: ../../about_picard/glossary.rst:52
+#: ../../about_picard/glossary.rst:60
 msgid ""
 "A :index:`Disc ID <disc id>` is the code number which MusicBrainz uses to "
 "link a physical CD to a release listing. It is a string of letters, like "
@@ -217,7 +244,7 @@ msgstr ""
 "ID klikt, zie je een uitgebreide weergave van de disc-ID en de uitgaven die "
 "eraan zijn gekoppeld."
 
-#: ../../about_picard/glossary.rst:54
+#: ../../about_picard/glossary.rst:62
 msgid ""
 "A release may have any number of disc IDs, and a disc ID may be linked to "
 "multiple releases. This is because `disc ID calculation <https://musicbrainz."
@@ -232,7 +259,7 @@ msgstr ""
 "persingen hebben vaak net iets andere framecorrecties, wat verschillende "
 "disc-ID’s oplevert."
 
-#: ../../about_picard/glossary.rst:56
+#: ../../about_picard/glossary.rst:64
 msgid ""
 "Conversely, two different CDs may happen to have exactly the same set of "
 "frame offsets and hence the same disc ID. For example "
@@ -246,11 +273,11 @@ msgstr ""
 "uitgaven <https://musicbrainz.org/cdtoc/lwHl8fGzJyLXQR33ug60E8jhf4k->`_ van "
 "verschillende artiesten."
 
-#: ../../about_picard/glossary.rst:58
+#: ../../about_picard/glossary.rst:66
 msgid "**mbid**"
 msgstr "**MBID**"
 
-#: ../../about_picard/glossary.rst:60
+#: ../../about_picard/glossary.rst:68
 msgid ""
 ":index:`The <see: mbid; MusicBrainz Identifier>` :index:`MusicBrainz "
 "Identifier`, which is a unique code used to identify each element in the "
@@ -265,19 +292,19 @@ msgstr ""
 "weergegeven in vijf door koppeltekens gescheiden groepen (8-4-4-4-12, 36 "
 "tekens in totaal)."
 
-#: ../../about_picard/glossary.rst:62
+#: ../../about_picard/glossary.rst:70
 msgid ""
 "Please see the `UUID page on Wikipedia <https://en.wikipedia.org/wiki/"
 "Universally_unique_identifier>`_ for more information."
 msgstr ""
-"Zie `Wikipedia <https://en.wikipedia.org/wiki/Universally_unique_identifier>"
-"`_ voor meer informatie."
+"Zie `Wikipedia <https://en.wikipedia.org/wiki/"
+"Universally_unique_identifier>`_ voor meer informatie."
 
-#: ../../about_picard/glossary.rst:64
+#: ../../about_picard/glossary.rst:72
 msgid "**medium**"
 msgstr "**Medium**"
 
-#: ../../about_picard/glossary.rst:66
+#: ../../about_picard/glossary.rst:74
 msgid ""
 ":index:`One <medium>` of the physical, separate things you would get when "
 "you buy something in a record store. They are the individual CDs, vinyls, "
@@ -295,10 +322,10 @@ msgstr ""
 "onderdeel van een uitgave en hebben binnen de uitgave een positie (bijv. "
 "disc 1 of disc 2). Ze hebben een type, zoals cd, 12″-vinyl of cassette (soms "
 "is dit niet bekend) en eventueel ook een titel (bijv. medium 2: De eerste "
-"jaren). Cd 1 van ‘`The Wall <https://musicbrainz.org/release/4bd2dbd5-a961-"
-"335a-a618-39c26b2ee791#disc1>`_’ bijvoorbeeld."
+"jaren). Cd 1 van ‘`The Wall <https://musicbrainz.org/release/4bd2dbd5-"
+"a961-335a-a618-39c26b2ee791#disc1>`_’ bijvoorbeeld."
 
-#: ../../about_picard/glossary.rst:68
+#: ../../about_picard/glossary.rst:76
 msgid ""
 "Please see the `Medium <https://musicbrainz.org/doc/Medium>`_ page on the "
 "MusicBrainz website for additional information."
@@ -306,11 +333,11 @@ msgstr ""
 "Zie de pagina over `media <https://musicbrainz.org/doc/Medium>`_ op de "
 "website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:70
+#: ../../about_picard/glossary.rst:78
 msgid "**non-album track**"
 msgstr "**Nummer zonder album**"
 
-#: ../../about_picard/glossary.rst:72
+#: ../../about_picard/glossary.rst:80
 msgid ""
 "This term is :index:`obsolete <see: non-album track; standalone recording>` "
 "and has been replaced with 'standalone recording'."
@@ -318,11 +345,11 @@ msgstr ""
 "Dit begrip is :index:`verouderd <zie: nummer zonder album; losse opname>` en "
 "is vervangen door ‘losse opname’."
 
-#: ../../about_picard/glossary.rst:74
+#: ../../about_picard/glossary.rst:82
 msgid "**recording**"
 msgstr "**Opname**"
 
-#: ../../about_picard/glossary.rst:76
+#: ../../about_picard/glossary.rst:84
 msgid ""
 "An entity in MusicBrainz which can be linked to tracks on releases. Each "
 "track must always be associated with a single :index:`recording`, but a "
@@ -336,7 +363,7 @@ msgstr ""
 "<https://musicbrainz.org/recording/b1a9c0e9-d987-4042-ae91-78d6a3267d69>`_’ "
 "is bijvoorbeeld te vinden op meer dan honderd uitgaven."
 
-#: ../../about_picard/glossary.rst:78
+#: ../../about_picard/glossary.rst:86
 msgid ""
 "Please see the `Recording <https://musicbrainz.org/doc/Recording>`_ page on "
 "the MusicBrainz website for additional information."
@@ -344,11 +371,11 @@ msgstr ""
 "Zie de pagina over `opnamen <https://musicbrainz.org/doc/Recording>`_ op de "
 "website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:80
+#: ../../about_picard/glossary.rst:88
 msgid "**release**"
 msgstr "**Uitgave**"
 
-#: ../../about_picard/glossary.rst:82
+#: ../../about_picard/glossary.rst:90
 msgid ""
 "Represents the unique issuing of a product on a specific date with specific :"
 "index:`release` information such as the country, label, barcode and "
@@ -362,7 +389,7 @@ msgstr ""
 "musicbrainz.org/release/4e4ba41e-24ae-3f57-87f6-3d8f19ae9483>`_\" is "
 "bijvoorbeeld één versie van het album van Great Big Sea."
 
-#: ../../about_picard/glossary.rst:84
+#: ../../about_picard/glossary.rst:92
 msgid ""
 "Please see the `Release <https://musicbrainz.org/doc/Release>`_ page on the "
 "MusicBrainz website for additional information."
@@ -370,11 +397,11 @@ msgstr ""
 "Zie de pagina over `uitgaven <https://musicbrainz.org/doc/Release>`_ op de "
 "website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:86
+#: ../../about_picard/glossary.rst:94
 msgid "**release group**"
 msgstr "**Uitgavegroep**"
 
-#: ../../about_picard/glossary.rst:88
+#: ../../about_picard/glossary.rst:96
 msgid ""
 "Groups several different releases into a single logical entity. Every "
 "release belongs to one, and only one :index:`release group`. Both release "
@@ -392,10 +419,10 @@ msgstr ""
 "een uitgave is iets wat je kan kopen, zoals een cd of plaat, terwijl een "
 "uitgavegroep het algehele concept van een album omvat, ongeacht hoeveel "
 "verschillende cd’s of versies er zijn.  De uitgavegroep `‘Sea of No Cares’ "
-"<https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-e4e6037f09ca>"
-"`_ bevat bijvoorbeeld meerdere uitgaven."
+"<https://musicbrainz.org/release-group/7e7ffd2b-3d1b-3487-aaaf-"
+"e4e6037f09ca>`_ bevat bijvoorbeeld meerdere uitgaven."
 
-#: ../../about_picard/glossary.rst:91
+#: ../../about_picard/glossary.rst:99
 msgid ""
 "Please see the `Release Group <https://musicbrainz.org/doc/Release_Group>`_ "
 "page on the MusicBrainz website for additional information."
@@ -403,11 +430,11 @@ msgstr ""
 "Zie de pagina over `uitgavegroepen <https://musicbrainz.org/doc/"
 "Release_Group>`_ op de website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:93
+#: ../../about_picard/glossary.rst:101
 msgid "**standalone recording**"
 msgstr "**Losse opname**"
 
-#: ../../about_picard/glossary.rst:95
+#: ../../about_picard/glossary.rst:103
 msgid ""
 "A :index:`recording <recording; standalone, standalone recording>` that is "
 "not linked to any release. An example is \"`Sea of No Cares (live) <https://"
@@ -415,11 +442,10 @@ msgid ""
 "Big Sea."
 msgstr ""
 "Een :index:`opname <opname; los, losse opname>` die niet aan een uitgave is "
-"gekoppeld. Een voorbeeld is ‘`Sea of No Cares (live) <https://"
-"musicbrainz.org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8>`_’ van Great "
-"Big Sea."
+"gekoppeld. Een voorbeeld is ‘`Sea of No Cares (live) <https://musicbrainz."
+"org/recording/0198c132-ed38-430c-92bd-d3c7e9ff25b8>`_’ van Great Big Sea."
 
-#: ../../about_picard/glossary.rst:97
+#: ../../about_picard/glossary.rst:105
 msgid ""
 "Please see the `Standalone Recording <https://musicbrainz.org/doc/"
 "Standalone_Recording>`_ page on the MusicBrainz website for additional "
@@ -428,11 +454,11 @@ msgstr ""
 "Zie de pagina over `losse opnamen <https://musicbrainz.org/doc/"
 "Standalone_Recording>`_ op de website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:99
+#: ../../about_picard/glossary.rst:107
 msgid "**track**"
 msgstr "**Nummer**"
 
-#: ../../about_picard/glossary.rst:101
+#: ../../about_picard/glossary.rst:109
 msgid ""
 "A :index:`track` is the way a recording is represented on a particular "
 "release (or, more precisely, on a particular medium). Every track has a "
@@ -448,7 +474,7 @@ msgstr ""
 "e54b65e7e49b>`_’ van Jason Anderson is bijvoorbeeld ‘`Driving Home <https://"
 "musicbrainz.org/track/bf8ecb3c-6fe6-41b7-a078-5748265a9f94>`_’."
 
-#: ../../about_picard/glossary.rst:103
+#: ../../about_picard/glossary.rst:111
 msgid ""
 "Please see the `Track <https://musicbrainz.org/doc/Track>`_ page on the "
 "MusicBrainz website for additional information."
@@ -456,11 +482,11 @@ msgstr ""
 "Zie de pagina over `nummers <https://musicbrainz.org/doc/Track>`_ op de "
 "website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:105
+#: ../../about_picard/glossary.rst:113
 msgid "**work**"
 msgstr "**Compositie**"
 
-#: ../../about_picard/glossary.rst:107
+#: ../../about_picard/glossary.rst:115
 msgid ""
 ":index:`A distinct intellectual or artistic creation <work>`, which can be "
 "expressed in the form of one or more audio recordings. While a 'Work' in "
@@ -471,15 +497,15 @@ msgid ""
 "Bruce Springsteen has been recorded well over 100 times."
 msgstr ""
 ":index:`Een afzonderlijke intellectuele of artistieke creatie <compositie>`, "
-"die in de vorm van een of meer audio-opnamen kan worden geuit. Hoewel een ‘"
-"compositie’ in MusicBrainz meestal muziek omhelst, is dat niet altijd het "
+"die in de vorm van een of meer audio-opnamen kan worden geuit. Hoewel een "
+"‘compositie’ in MusicBrainz meestal muziek omhelst, is dat niet altijd het "
 "geval. Het kan ook een roman, toneelstuk, gedicht of essay zijn dat later "
 "als oratorium of luisterboek is opgenomen. Het lied ‘`Blinded by the Light "
 "<https://musicbrainz.org/work/7a757d97-da2a-3751-8d32-94d471de2eeb>`_’, "
 "geschreven door Bruce Springsteen, is bijvoorbeeld meer dan honderd keer "
 "opgenomen."
 
-#: ../../about_picard/glossary.rst:109
+#: ../../about_picard/glossary.rst:117
 msgid ""
 "Please see the `Work <https://musicbrainz.org/doc/Work>`_ page on the "
 "MusicBrainz website for additional information."
@@ -487,7 +513,7 @@ msgstr ""
 "Zie de pagina over `composities <https://musicbrainz.org/doc/Work>`_ op de "
 "website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:113
+#: ../../about_picard/glossary.rst:121
 msgid ""
 "For more information on these and other terms used, please refer to the "
 "`Terminology <https://musicbrainz.org/doc/Terminology>`_ page on the "
@@ -496,7 +522,7 @@ msgstr ""
 "Zie de pagina over `terminologie <https://musicbrainz.org/doc/Terminology>`_ "
 "op de website van MusicBrainz voor meer informatie."
 
-#: ../../about_picard/glossary.rst:117
+#: ../../about_picard/glossary.rst:125
 msgid ""
 "For a detailed explanation of how all the elements are related within the "
 "MusicBrainz environment, please refer to the `MusicBrainz Database / Schema "

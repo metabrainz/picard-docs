@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-27 08:30-0600\n"
+"POT-Creation-Date: 2026-08-08 10:09-0600\n"
 "PO-Revision-Date: 2026-07-30 19:13+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.metabrainz.org/"
@@ -75,10 +75,25 @@ msgid "Your MusicBrainz website password."
 msgstr ""
 
 #: ../../config/options_general.rst:46
-msgid "**Automatically scan all new files**"
+msgid "**Enable managing user collections**"
 msgstr ""
 
 #: ../../config/options_general.rst:48
+msgid ""
+"This option allows you to partially manage your MusicBrainz collections from "
+"within Picard. It provides a context (right-click) menu item for each album "
+"in the Album pane to display your collections and whether or not the album "
+"belongs to a collection. It will also automatically add any new albums to "
+"your collections when the album is saved. See the `Collections <https://"
+"musicbrainz.org/doc/Collections>`_ documentation on the MusicBrainz website "
+"for additional information regarding collections."
+msgstr ""
+
+#: ../../config/options_general.rst:50
+msgid "**Automatically scan all new files**"
+msgstr ""
+
+#: ../../config/options_general.rst:52
 msgid ""
 "Check this box if you want Picard to scan each music file you add and look "
 "for an :index:`AcoustID <pair: AcoustID; automatic scan>` fingerprint. This "
@@ -89,11 +104,11 @@ msgid ""
 "<ref_scan_files>` and :ref:`ref_tutorial_acoustid`."
 msgstr ""
 
-#: ../../config/options_general.rst:50
+#: ../../config/options_general.rst:54
 msgid "**Automatically cluster all new files**"
 msgstr ""
 
-#: ../../config/options_general.rst:52
+#: ../../config/options_general.rst:56
 msgid ""
 "Check this box if you want Picard to automatically group all loaded files "
 "into album :index:`clusters <pair: cluster; automatic clustering>`. Leave it "
@@ -102,17 +117,17 @@ msgid ""
 "`\"Tools --> Cluster\"`. See also :ref:`Lookup Files <ref_lookup_files>`."
 msgstr ""
 
-#: ../../config/options_general.rst:56
+#: ../../config/options_general.rst:60
 msgid ""
 "You can either enable \"Automatically scan all new files\" or "
 "\"Automatically cluster all new files\", but not both."
 msgstr ""
 
-#: ../../config/options_general.rst:58
+#: ../../config/options_general.rst:62
 msgid "**Ignore MBIDs when loading new files**"
 msgstr ""
 
-#: ../../config/options_general.rst:60
+#: ../../config/options_general.rst:64
 msgid ""
 "If you enable this option Picard will not use MusicBrainz identifiers "
 "(MBIDs) stored in the files to automatically load the corresponding "
@@ -122,6 +137,25 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_general.rst:66
+msgid "**Remove complete albums after saving**"
+msgstr ""
+
+#: ../../config/options_general.rst:68
+msgid ""
+"With this option enabled, Picard will remove complete albums from the Album "
+"pane after they have been saved. This can help reduce clutter in the user "
+"interface, especially when working with large collections. If you disable "
+"this option, albums will remain in the Album pane after saving, and you will "
+"need to remove them manually."
+msgstr ""
+
+#: ../../config/options_general.rst:70
+msgid ""
+"Albums will be removed only after files have been matched to all tracks on "
+"the album, and all files in the album have been saved."
+msgstr ""
+
+#: ../../config/options_general.rst:76
 msgid ""
 "Please see :doc:`options_startup` for options related to checking for "
 "updates and log level at startup."
