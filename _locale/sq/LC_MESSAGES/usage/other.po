@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-08-08 10:09-0600\n"
 "PO-Revision-Date: 2026-07-30 19:27+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Albanian <https://translations.metabrainz.org/projects/picard-"
@@ -50,28 +50,40 @@ msgid ""
 msgstr ""
 
 #: ../../usage/other.rst:18
-msgid "**Generating tags from file names**"
+msgid "**Submitting track ISRCs**"
 msgstr ""
 
 #: ../../usage/other.rst:20
 msgid ""
-"This will extract tags such as track number and title from the file name."
+"This will submit the ISRCs for the selected tracks to the MusicBrainz "
+"database. Prior to submitting, Picard will check that the ISRCs are valid, "
+"that the same ISRC doesn't appear on more than one track on the release, and "
+"that the ISRCs are not already present in the database."
 msgstr ""
 
 #: ../../usage/other.rst:22
-msgid "**Submitting cluster as a release**"
+msgid "**Generating tags from file names**"
 msgstr ""
 
 #: ../../usage/other.rst:24
+msgid ""
+"This will extract tags such as track number and title from the file name."
+msgstr ""
+
+#: ../../usage/other.rst:26
+msgid "**Submitting cluster as a release**"
+msgstr ""
+
+#: ../../usage/other.rst:28
 msgid ""
 "You can submit a cluster as a release to the MusicBrainz database. This "
 "functionality has long been available through a plugin, but has been "
 "included within Picard itself as of v2.7."
 msgstr ""
 
-#: ../../usage/other.rst:30
+#: ../../usage/other.rst:34
 msgid ""
 "Step-by-step detailed instructions: :doc:`attach_disc_id` / :doc:"
-"`submit_acoustid` / :doc:`tags_from_file_names` / :doc:"
+"`submit_acoustid` / :doc:`submit_isrcs` / :doc:`tags_from_file_names` / :doc:"
 "`submit_cluster_as_release`"
 msgstr ""

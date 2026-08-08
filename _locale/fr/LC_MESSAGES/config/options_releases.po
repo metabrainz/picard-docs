@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"POT-Creation-Date: 2026-08-08 10:09-0600\n"
 "PO-Revision-Date: 2026-07-30 19:13+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -27,24 +27,39 @@ msgid ":index:`Preferred Releases <configuration; release preferences>`"
 msgstr ":index:`Parutions préférées <configuration; préférences de parution>`"
 
 #: ../../config/options_releases.rst:6
+msgid ""
+"These settings allow you to configure Picard to prefer certain types of "
+"releases, countries, and formats when matching files or clusters to "
+"releases. In each case, you can add one or more values to the list of "
+"preferred values, and Picard will prioritize matching to releases with those "
+"values. You can set the relative matching priority of the values by "
+"adjusting their order in the list. The higher a value is in the list, the "
+"more likely Picard will be to match releases with that value."
+msgstr ""
+
+#: ../../config/options_releases.rst:8
 msgid "**Preferred Release Types**"
 msgstr "**Types de libération préférés**"
 
-#: ../../config/options_releases.rst:8
+#: ../../config/options_releases.rst:10
 msgid ""
-"Adjust the sliders on the right-hand side of each of the various release "
-"types to tweak how likely Picard is to match a file or cluster to releases "
-"of that types. Moving a slider to the right increases the likelihood of "
-"matching that type, while moving the slider to the left decreases the "
-"likelihood."
+"This setting allows you to configure the preferred release types to use. The "
+"top section sets the release types to prefer, while the bottom section sets "
+"the release types to avoid. The release types are listed in order of "
+"preference, with the most preferred release type at the top of the list. The "
+"types to avoid are not listed in any particular order because they are all "
+"treated equally."
 msgstr ""
-"Ajustez les curseurs sur le côté droit de chacun des différents types de "
-"parution pour modifier la probabilité que Picard fasse correspondre un "
-"fichier ou un cluster aux parutions de ce type. Déplacer un curseur vers la "
-"droite augmente la probabilité de correspondance avec ce type, tandis que "
-"déplacer le curseur vers la gauche diminue la probabilité."
 
-#: ../../config/options_releases.rst:21
+#: ../../config/options_releases.rst:12
+msgid ""
+"Types not specifically listed in either section are treated as neutral, and "
+"will be considered only after the preferred types and before the avoided "
+"types. This allows you to configure Picard to prefer certain release types, "
+"while avoiding others, without having to list every possible release type."
+msgstr ""
+
+#: ../../config/options_releases.rst:25
 msgid ""
 "For example, you can use this to decrease the likelihood of Picard matching "
 "a file or album to a Compilation or Live version."
@@ -52,35 +67,70 @@ msgstr ""
 "Par exemple, vous pouvez l'utiliser pour diminuer la probabilité que Picard "
 "fasse correspondre un fichier ou un album à une version Compilation ou Live."
 
-#: ../../config/options_releases.rst:23
+#: ../../config/options_releases.rst:27
 msgid "**Preferred Release Countries**"
 msgstr "**Pays de sortie préférés**"
 
-#: ../../config/options_releases.rst:25
+#: ../../config/options_releases.rst:29
+#, fuzzy
 msgid ""
-"Add one or more countries into the list to make Picard prefer matching "
-"clusters or files to releases from the chosen countries. This list is also "
-"used to prioritize files in the \"Other Releases\" context menu."
+"This setting allows you to configure the preferred release countries to use "
+"when matching files or clusters to releases. The release countries are "
+"listed in order of preference, with the most preferred release country at "
+"the top of the list. This list is also used to prioritize files in the "
+"\"Other Releases\" context menu."
 msgstr ""
 "Ajoutez un ou plusieurs pays à la liste pour que Picard préfère les clusters "
 "ou fichiers correspondants aux parutions des pays choisis. Cette liste est "
-"également utilisée pour hiérarchiser les fichiers dans le menu contextuel « "
-"Autres parutions »."
+"également utilisée pour hiérarchiser les fichiers dans le menu contextuel "
+"« Autres parutions »."
 
-#: ../../config/options_releases.rst:38
+#: ../../config/options_releases.rst:31
+msgid ""
+"Countries not specifically listed are treated as neutral, and will be "
+"considered only after the preferred countries. This allows you to configure "
+"Picard to prefer certain release countries without having to list every "
+"possible country."
+msgstr ""
+
+#: ../../config/options_releases.rst:44
 msgid "**Preferred Medium Formats**"
 msgstr "**Formats moyens préférés**"
 
-#: ../../config/options_releases.rst:40
+#: ../../config/options_releases.rst:46
+#, fuzzy
 msgid ""
-"Add one or more formats into the list to make Picard prefer matching "
-"clusters or files to releases of the specified format. This list is also "
-"used to prioritize files in the \"Other Releases\" context menu."
+"This setting allows you to configure the preferred medium formats to use "
+"when matching files or clusters to releases. The medium formats are listed "
+"in order of preference, with the most preferred format at the top of the "
+"list. This list is also used to prioritize files in the \"Other Releases\" "
+"context menu."
 msgstr ""
 "Ajoutez un ou plusieurs formats à la liste pour que Picard préfère les "
 "clusters ou fichiers correspondants aux parutions du format spécifié. Cette "
 "liste est également utilisée pour hiérarchiser les fichiers dans le menu "
 "contextuel « Autres parutions »."
+
+#: ../../config/options_releases.rst:48
+msgid ""
+"Formats not specifically listed are treated as neutral, and will be "
+"considered only after the preferred formats. This allows you to configure "
+"Picard to prefer certain medium formats without having to list every "
+"possible format."
+msgstr ""
+
+#~ msgid ""
+#~ "Adjust the sliders on the right-hand side of each of the various release "
+#~ "types to tweak how likely Picard is to match a file or cluster to "
+#~ "releases of that types. Moving a slider to the right increases the "
+#~ "likelihood of matching that type, while moving the slider to the left "
+#~ "decreases the likelihood."
+#~ msgstr ""
+#~ "Ajustez les curseurs sur le côté droit de chacun des différents types de "
+#~ "parution pour modifier la probabilité que Picard fasse correspondre un "
+#~ "fichier ou un cluster aux parutions de ce type. Déplacer un curseur vers "
+#~ "la droite augmente la probabilité de correspondance avec ce type, tandis "
+#~ "que déplacer le curseur vers la gauche diminue la probabilité."
 
 #~ msgid "Preferred Releases"
 #~ msgstr "Versions préférées"
