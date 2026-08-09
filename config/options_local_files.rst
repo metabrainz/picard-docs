@@ -24,6 +24,14 @@ The first part of the regular expression is a non-capture group: ``(?:cover|fold
 
 The second part of the regular expression is a group: ``(.*)``. This is the real capture, so if the file names match any of the cover art types, they will be tagged as such.
 
-.. note::
+.. warning::
 
    A common mistake is to add all the types into the first (non-capture) group. This means that all the regular file names would be thrown into the Front type and cause unexpected results.
+
+**Test file name matching:**
+
+   This area allows you to enter file names, one per line, to test your regular expression. If a file name is marked in red, it will not be included. A file name marked green matches your regular expression and will be included.
+
+   .. note::
+
+      This list of test file names will be cleared when you exit the configuration section.
