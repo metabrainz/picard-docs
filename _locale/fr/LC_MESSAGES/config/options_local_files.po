@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"POT-Creation-Date: 2026-08-10 10:45-0600\n"
 "PO-Revision-Date: 2026-07-30 19:10+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -47,8 +47,8 @@ msgstr ""
 "<https://en.wikipedia.org/wiki/Regular_expression>_. La valeur par défaut "
 "est ``^(?:cover|folder|albumart)(.*)\\.(?:jpe?g|png|gif|tiff?)$`` qui "
 "chargera les fichiers portant le nom « cover », « folder » ou « albumart » "
-"et l'extension « jpg », « png », « gif » ou « tiff » (par exemple : « "
-"folder.jpg » ou « cover.png »)."
+"et l'extension « jpg », « png », « gif » ou « tiff » (par exemple : « folder."
+"jpg » ou « cover.png »)."
 
 #: ../../config/options_local_files.rst:23
 msgid ""
@@ -56,8 +56,8 @@ msgid ""
 "folder|albumart)``. Items listed in this group will not get captured and the "
 "default (Front) type will apply."
 msgstr ""
-"La première partie de l'expression régulière est un groupe sans capture : ``"
-"(?:cover|folder|albumart)``. Les éléments répertoriés dans ce groupe ne "
+"La première partie de l'expression régulière est un groupe sans capture : "
+"``(?:cover|folder|albumart)``. Les éléments répertoriés dans ce groupe ne "
 "seront pas capturés et le type par défaut (Front) s'appliquera."
 
 #: ../../config/options_local_files.rst:25
@@ -79,6 +79,23 @@ msgstr ""
 "Une erreur courante consiste à ajouter tous les types dans le premier groupe "
 "(sans capture). Cela signifie que tous les noms de fichiers normaux seraient "
 "jetés dans le type Front et provoqueraient des résultats inattendus."
+
+#: ../../config/options_local_files.rst:31
+msgid "**Test file name matching:**"
+msgstr ""
+
+#: ../../config/options_local_files.rst:33
+msgid ""
+"This area allows you to enter file names, one per line, to test your regular "
+"expression. If a file name is marked in red, it will not be included. A file "
+"name marked green matches your regular expression and will be included."
+msgstr ""
+
+#: ../../config/options_local_files.rst:37
+msgid ""
+"This list of test file names will be cleared when you exit the configuration "
+"section."
+msgstr ""
 
 #~ msgid "Local Files"
 #~ msgstr "Fichiers locaux"
