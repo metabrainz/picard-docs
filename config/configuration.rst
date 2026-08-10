@@ -34,24 +34,6 @@ The screen setup is found under the :menuselection:`"View"` item on the menu bar
 
 .. _action_options:
 
-:index:`Action Options <configuration; action options>`
--------------------------------------------------------
-
-The action options are found under the :menuselection:`"Options"` item on the menu bar. There are three available actions that Picard can perform when saving selected music files:
-
-**Rename Files**
-
-   Picard will rename each file in accordance with the naming script.
-
-**Move Files**
-
-   Picard will move files to the target directory in accordance with the naming script.
-
-**Save Tags**
-
-   Picard will update the metadata tags in the files in accordance with the specified option settings and tagging scripts.
-
-
 :index:`Option Settings <see: option settings; configuration>`
 ---------------------------------------------------------------
 
@@ -82,18 +64,16 @@ Changes made to a profile's options settings, enabled status, or position in the
    .. toctree::
 
       options_general
-      options_profiles
       options_metadata
+      options_lookup
       options_tags
       options_cover
       options_filerenaming
-      options_fingerprinting
-      options_cdlookup
       options_plugins
       options_scripting
       options_interface
-      options_player
       options_advanced
+      options_profiles
 
 
 .. only:: html and not epub
@@ -101,15 +81,13 @@ Changes made to a profile's options settings, enabled status, or position in the
    .. seealso::
 
       :doc:`options_general` /
-      :doc:`options_profiles` /
       :doc:`options_metadata` /
+      :doc:`options_lookup` /
       :doc:`options_tags` /
       :doc:`options_cover` /
       :doc:`options_filerenaming` /
-      :doc:`options_fingerprinting` /
-      :doc:`options_cdlookup` /
       :doc:`options_plugins` /
       :doc:`options_scripting` /
       :doc:`options_interface` /
-      :doc:`options_player` /
-      :doc:`options_advanced`
+      :doc:`options_advanced` /
+      :doc:`options_profiles`

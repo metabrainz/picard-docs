@@ -35,33 +35,9 @@
 
    The port number for the server. Default value: 443 (for the main MusicBrainz server).
 
-**Username**
-
-   Your MusicBrainz website username, used to submit acoustic fingerprints, retrieve and save items to your collections, and retrieve personal folksonomy tags.
-
-**Password**
-
-   Your MusicBrainz website password.
-
 **Enable managing user collections**
 
    This option allows you to partially manage your MusicBrainz collections from within Picard. It provides a context (right-click) menu item for each album in the Album pane to display your collections and whether or not the album belongs to a collection. It will also automatically add any new albums to your collections when the album is saved. See the `Collections <https://musicbrainz.org/doc/Collections>`_ documentation on the MusicBrainz website for additional information regarding collections.
-
-**Automatically scan all new files**
-
-   Check this box if you want Picard to scan each music file you add and look for an :index:`AcoustID <pair: AcoustID; automatic scan>` fingerprint. This takes time, but may be helpful for you and MusicBrainz. Leave it unchecked if you don't want Picard to do this scan automatically. In any case, you can direct Picard to scan a particular music file at any time using :menuselection:`"Tools --> Scan"`. See also :ref:`Scan Files <ref_scan_files>` and :ref:`ref_tutorial_acoustid`.
-
-**Automatically cluster all new files**
-
-   Check this box if you want Picard to automatically group all loaded files into album :index:`clusters <pair: cluster; automatic clustering>`. Leave it unchecked if you don't want Picard to do this automatically. In any case, you can direct Picard to cluster files any time using :menuselection:`"Tools --> Cluster"`. See also :ref:`Lookup Files <ref_lookup_files>`.
-
-.. note::
-
-   You can either enable "Automatically scan all new files" or "Automatically cluster all new files", but not both.
-
-**Ignore MBIDs when loading new files**
-
-   If you enable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track. Leaving this option disabled is useful when re-processing files that have been previously tagged with incorrect information.
 
 **Remove complete albums after saving**
 
@@ -69,13 +45,9 @@
 
    Albums will be removed only after files have been matched to all tracks on the album, and all files in the album have been saved.
 
-.. only:: html and not epub
-
-   .. seealso::
-
-      Please see :doc:`options_startup` for options related to checking for updates and log level at startup.
-
 .. toctree::
    :hidden:
 
    options_startup
+   options_network
+   options_player

@@ -73,8 +73,6 @@ These options determine how Picard handles files when they are saved with update
 
    Below the file naming script selector is a section showing examples of the output of the script in two columns: Before and After. If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files will be randomly chosen from your selection as file naming examples. If you have not selected any files, then some default examples will be provided.
 
-   You can change the randomly selected example files from your selected files list by clicking on the :guilabel:`Reload examples` button.
-
 .. note::
 
    Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
