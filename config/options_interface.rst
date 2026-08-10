@@ -48,14 +48,6 @@
 
       When enabling the multiple directories option setting Picard will no longer use the system file picker for selecting directories. This may result in reduced functionality.
 
-**Use built-in search rather than looking in browser**
-
-   When this option is enabled the search for albums, artists or tracks will show the results in a dialog. By default this option is enabled. If this option is disabled Picard will open a search on MusicBrainz.org in your default web browser.
-
-**Use advanced query syntax**
-
-   This will enable advanced query syntax parsing on your searches. This only applies to the search box at the top right of Picard, not the lookup buttons.
-
 **Show the new user dialog when starting Picard**
 
    When this is enabled, Picard will show a dialog intended for new users when you start the program. This displays a warning about the consequences of saving files, along with a suggestion for minimizing the impact until you have confirmed that your configuration produces the expected results. It also provides a link to the on-line documentation.
@@ -87,8 +79,8 @@
       Details:
       :doc:`options_interface_colors` /
       :doc:`options_interface_top_tags` /
-      :doc:`options_interface_coverart_box` /
       :doc:`options_interface_quick_menu` /
+      :doc:`options_interface_coverart_box` /
       :doc:`options_interface_toolbar`
 
 .. toctree::
@@ -96,6 +88,6 @@
 
    options_interface_colors
    options_interface_top_tags
-   options_interface_coverart_box
    options_interface_quick_menu
+   options_interface_coverart_box
    options_interface_toolbar
