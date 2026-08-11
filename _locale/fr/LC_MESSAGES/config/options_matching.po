@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"POT-Creation-Date: 2026-08-11 08:35-0600\n"
 "PO-Revision-Date: 2026-07-30 19:09+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -37,56 +37,55 @@ msgstr ""
 "vos clusters aux versions et pistes de MusicBrainz."
 
 #: ../../config/options_matching.rst:19
-msgid "**Minimal similarity for file lookups**"
+#, fuzzy
+msgid "**Minimum similarity**"
 msgstr "**Similitude minimale pour les recherches de fichiers**"
 
-#: ../../config/options_matching.rst:21 ../../config/options_matching.rst:31
+#: ../../config/options_matching.rst:21
+msgid ""
+"This setting determines the minimum match between a cluster and a release on "
+"MusicBrainz for the release to be considered and presented as a possible "
+"match. Matches below this threshhold will be ignored."
+msgstr ""
+
+#: ../../config/options_matching.rst:23
+msgid "**Minimum margin between best and second-best match**"
+msgstr ""
+
+#: ../../config/options_matching.rst:25
+msgid ""
+"This setting determines the similarity difference to prefer one match over "
+"another. When Picard matches a file to tracks, it scores each candidate "
+"track by similarity. If the gap between the top two or more scores is less "
+"than this margin, the match is flagged as ambiguous, because the gap isn't "
+"enough to be certain which one is the best. In this case, you must verify "
+"the track selection."
+msgstr ""
+
+#: ../../config/options_matching.rst:27
+msgid "**Minimal similarity for matching files to tracks**"
+msgstr ""
+"**Similitude minimale pour faire correspondre les fichiers aux pistes**"
+
+#: ../../config/options_matching.rst:29
+#, fuzzy
 msgid ""
 "The higher the percentage value, the more similar an individual file's "
 "metadata must be to the metadata from MusicBrainz for it to be matched to a "
-"release on the right-hand side."
+"track on a release in the Album pane."
 msgstr ""
 "Plus la valeur en pourcentage est élevée, plus les métadonnées d'un fichier "
 "individuel doivent être similaires aux métadonnées de MusicBrainz pour "
 "qu'elles correspondent à une version sur le côté droit."
 
-#: ../../config/options_matching.rst:23
-msgid ""
-"This setting is used when you do a lookup on individual files. The files' "
-"metadata is compared to the recordings found on MusicBrainz. If the "
-"similarity is below the threshold the recording is ignored completely."
-msgstr ""
-"Ce paramètre est utilisé lorsque vous effectuez une recherche sur des "
-"fichiers individuels. Les métadonnées des fichiers sont comparées aux "
-"enregistrements trouvés sur MusicBrainz. Si la similarité est inférieure au "
-"seuil fixé, l'enregistrement est complètement ignoré."
-
-#: ../../config/options_matching.rst:25
-msgid "**Minimal similarity for cluster lookups**"
-msgstr "**Similitude minimale pour les recherches de cluster**"
-
-#: ../../config/options_matching.rst:27
-msgid ""
-"The higher the percentage value, the more similar a cluster of files from "
-"the left-hand pane must be to a MusicBrainz release for the entire cluster "
-"to be matched to a release on the right-hand side."
-msgstr ""
-"Plus la valeur de pourcentage est élevée, plus un cluster de fichiers du "
-"volet de gauche doit être similaire à une version de MusicBrainz pour que "
-"l'ensemble du cluster soit mis en correspondance avec une version sur le "
-"côté droit."
-
-#: ../../config/options_matching.rst:29
-msgid "**Minimal similarity for matching files to tracks**"
-msgstr "**Similitude minimale pour faire correspondre les fichiers aux pistes**"
-
-#: ../../config/options_matching.rst:33
+#: ../../config/options_matching.rst:31
+#, fuzzy
 msgid ""
 "This setting is used when a file is assigned to a release and Picard needs "
-"to decide which track to assign it to. This happens on cluster lookup after "
-"the release has been chosen, or if you manually drag files onto a loaded "
-"release (as opposed to dragging it onto a track directly). If none of the "
-"tracks gives a match above the threshold the file is moved into an "
+"to decide which track to which it is assigned. This happens on cluster "
+"lookup after the release has been chosen, or if you manually drag files onto "
+"a loaded release (as opposed to dragging it onto a track directly). If none "
+"of the tracks gives a match above the threshold the file is moved into an "
 "\"unmatched files\" section on that release."
 msgstr ""
 "Ce paramètre est utilisé lorsqu'un fichier est affecté à une release et que "
@@ -97,7 +96,7 @@ msgstr ""
 "n'offre une correspondance supérieure au seuil fixé, le fichier est déplacé "
 "dans une section \"fichiers non appariés\" sur cette version."
 
-#: ../../config/options_matching.rst:35
+#: ../../config/options_matching.rst:33
 msgid ""
 "If you have absolutely no metadata in your current files, and you are using "
 "\"Scan\" to match tracks, you may find that you need to lower the value of "
@@ -123,6 +122,67 @@ msgstr ""
 "En règle générale, abaisser les pourcentages peut augmenter les chances de "
 "trouver une correspondance au risque de faux positifs et de correspondances "
 "incorrectes."
+
+#: ../../config/options_matching.rst:39
+msgid "**Ignore track duration difference under this number of seconds**"
+msgstr ""
+
+#: ../../config/options_matching.rst:41
+msgid ""
+"This specifies the number of seconds that a file can differ in length from "
+"the length in the MusicBrainz database and still be considered to be the "
+"same. The default value is 2 seconds."
+msgstr ""
+
+#: ../../config/options_matching.rst:43
+msgid ""
+"**Ignore the following tracks when determining whether a release is "
+"complete**"
+msgstr ""
+
+#: ../../config/options_matching.rst:45
+msgid ""
+"Missing tracks of the selected type (i.e.: video, pregap, data or silence) "
+"will be ignored when determining whether a release is considered to be "
+"complete. For example, if \"video\" is selected then a release with a bonus "
+"video will be marked as complete if it has all the audio tracks matched with "
+"a file even if the video file is missing."
+msgstr ""
+
+#: ../../config/options_matching.rst:47
+msgid "**Tags to ignore for comparison**"
+msgstr ""
+
+#: ../../config/options_matching.rst:49
+msgid ""
+"Tags in this list will not be considered when comparing the existing file "
+"metadata to the data retrieved from MusicBrainz. If the only difference "
+"between the file's metadata and the metadata retrieved from MusicBrainz is a "
+"tag listed in this ignore list then the file will be considered unmodified."
+msgstr ""
+
+#~ msgid ""
+#~ "This setting is used when you do a lookup on individual files. The files' "
+#~ "metadata is compared to the recordings found on MusicBrainz. If the "
+#~ "similarity is below the threshold the recording is ignored completely."
+#~ msgstr ""
+#~ "Ce paramètre est utilisé lorsque vous effectuez une recherche sur des "
+#~ "fichiers individuels. Les métadonnées des fichiers sont comparées aux "
+#~ "enregistrements trouvés sur MusicBrainz. Si la similarité est inférieure "
+#~ "au seuil fixé, l'enregistrement est complètement ignoré."
+
+#~ msgid "**Minimal similarity for cluster lookups**"
+#~ msgstr "**Similitude minimale pour les recherches de cluster**"
+
+#~ msgid ""
+#~ "The higher the percentage value, the more similar a cluster of files from "
+#~ "the left-hand pane must be to a MusicBrainz release for the entire "
+#~ "cluster to be matched to a release on the right-hand side."
+#~ msgstr ""
+#~ "Plus la valeur de pourcentage est élevée, plus un cluster de fichiers du "
+#~ "volet de gauche doit être similaire à une version de MusicBrainz pour que "
+#~ "l'ensemble du cluster soit mis en correspondance avec une version sur le "
+#~ "côté droit."
 
 #~ msgid "Matching"
 #~ msgstr "Correspondant à"

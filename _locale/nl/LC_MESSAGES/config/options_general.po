@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-08 10:09-0600\n"
+"POT-Creation-Date: 2026-08-11 08:35-0600\n"
 "PO-Revision-Date: 2026-07-30 19:13+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -66,32 +66,10 @@ msgstr ""
 "MusicBrainz)."
 
 #: ../../config/options_general.rst:38
-msgid "**Username**"
-msgstr "**Gebruikersnaam**"
-
-#: ../../config/options_general.rst:40
-msgid ""
-"Your MusicBrainz website username, used to submit acoustic fingerprints, "
-"retrieve and save items to your collections, and retrieve personal "
-"folksonomy tags."
-msgstr ""
-"Je gebruikersnaam op de MusicBrainz-website. Je gebruikt dit om akoestische "
-"vingerafdrukken te versturen, objecten in je collecties op te halen en op te "
-"slaan, en om je eigen folksonomietags op te halen."
-
-#: ../../config/options_general.rst:42
-msgid "**Password**"
-msgstr "**Wachtwoord**"
-
-#: ../../config/options_general.rst:44
-msgid "Your MusicBrainz website password."
-msgstr "Je wachtwoord voor de MusicBrainz-website."
-
-#: ../../config/options_general.rst:46
 msgid "**Enable managing user collections**"
 msgstr ""
 
-#: ../../config/options_general.rst:48
+#: ../../config/options_general.rst:40
 msgid ""
 "This option allows you to partially manage your MusicBrainz collections from "
 "within Picard. It provides a context (right-click) menu item for each album "
@@ -102,65 +80,11 @@ msgid ""
 "for additional information regarding collections."
 msgstr ""
 
-#: ../../config/options_general.rst:50
-msgid "**Automatically scan all new files**"
-msgstr "**Alle nieuwe bestanden automatisch analyseren**"
-
-#: ../../config/options_general.rst:52
-msgid ""
-"Check this box if you want Picard to scan each music file you add and look "
-"for an :index:`AcoustID <pair: AcoustID; automatic scan>` fingerprint. This "
-"takes time, but may be helpful for you and MusicBrainz. Leave it unchecked "
-"if you don't want Picard to do this scan automatically. In any case, you can "
-"direct Picard to scan a particular music file at any time using :"
-"menuselection:`\"Tools --> Scan\"`. See also :ref:`Scan Files "
-"<ref_scan_files>` and :ref:`ref_tutorial_acoustid`."
-msgstr ""
-
-#: ../../config/options_general.rst:54
-msgid "**Automatically cluster all new files**"
-msgstr "**Alle nieuwe bestanden automatisch clusteren**"
-
-#: ../../config/options_general.rst:56
-msgid ""
-"Check this box if you want Picard to automatically group all loaded files "
-"into album :index:`clusters <pair: cluster; automatic clustering>`. Leave it "
-"unchecked if you don't want Picard to do this automatically. In any case, "
-"you can direct Picard to cluster files any time using :menuselection:"
-"`\"Tools --> Cluster\"`. See also :ref:`Lookup Files <ref_lookup_files>`."
-msgstr ""
-
-#: ../../config/options_general.rst:60
-msgid ""
-"You can either enable \"Automatically scan all new files\" or "
-"\"Automatically cluster all new files\", but not both."
-msgstr ""
-"Je kan óf ‘Alle nieuwe bestanden automatisch analyseren’ óf ‘Alle nieuwe "
-"bestanden automatisch clusteren’ inschakelen, maar niet allebei tegelijk."
-
-#: ../../config/options_general.rst:62
-msgid "**Ignore MBIDs when loading new files**"
-msgstr "**MBID’s bij het laden van nieuwe bestanden negeren**"
-
-#: ../../config/options_general.rst:64
-msgid ""
-"If you enable this option Picard will not use MusicBrainz identifiers "
-"(MBIDs) stored in the files to automatically load the corresponding "
-"MusicBrainz release and match the loaded file to the correct track. Leaving "
-"this option disabled is useful when re-processing files that have been "
-"previously tagged with incorrect information."
-msgstr ""
-"Als je dit inschakelt, gebruikt Picard de MBID’s (MusicBrainz-ID’s) in de "
-"tags van de bestanden niet om de bijbehorende uitgave uit MusicBrainz te "
-"laden en de bestanden aan nummers te koppelen. Als je bestanden die eerder "
-"met verkeerde informatie zijn getagt opnieuw wil verwerken, kan je deze "
-"optie het beste uitschakelen."
-
-#: ../../config/options_general.rst:66
+#: ../../config/options_general.rst:42
 msgid "**Remove complete albums after saving**"
 msgstr ""
 
-#: ../../config/options_general.rst:68
+#: ../../config/options_general.rst:44
 msgid ""
 "With this option enabled, Picard will remove complete albums from the Album "
 "pane after they have been saved. This can help reduce clutter in the user "
@@ -169,17 +93,58 @@ msgid ""
 "need to remove them manually."
 msgstr ""
 
-#: ../../config/options_general.rst:70
+#: ../../config/options_general.rst:46
 msgid ""
 "Albums will be removed only after files have been matched to all tracks on "
 "the album, and all files in the album have been saved."
 msgstr ""
 
-#: ../../config/options_general.rst:76
-msgid ""
-"Please see :doc:`options_startup` for options related to checking for "
-"updates and log level at startup."
-msgstr ""
+#~ msgid "**Username**"
+#~ msgstr "**Gebruikersnaam**"
+
+#~ msgid ""
+#~ "Your MusicBrainz website username, used to submit acoustic fingerprints, "
+#~ "retrieve and save items to your collections, and retrieve personal "
+#~ "folksonomy tags."
+#~ msgstr ""
+#~ "Je gebruikersnaam op de MusicBrainz-website. Je gebruikt dit om "
+#~ "akoestische vingerafdrukken te versturen, objecten in je collecties op te "
+#~ "halen en op te slaan, en om je eigen folksonomietags op te halen."
+
+#~ msgid "**Password**"
+#~ msgstr "**Wachtwoord**"
+
+#~ msgid "Your MusicBrainz website password."
+#~ msgstr "Je wachtwoord voor de MusicBrainz-website."
+
+#~ msgid "**Automatically scan all new files**"
+#~ msgstr "**Alle nieuwe bestanden automatisch analyseren**"
+
+#~ msgid "**Automatically cluster all new files**"
+#~ msgstr "**Alle nieuwe bestanden automatisch clusteren**"
+
+#~ msgid ""
+#~ "You can either enable \"Automatically scan all new files\" or "
+#~ "\"Automatically cluster all new files\", but not both."
+#~ msgstr ""
+#~ "Je kan óf ‘Alle nieuwe bestanden automatisch analyseren’ óf ‘Alle nieuwe "
+#~ "bestanden automatisch clusteren’ inschakelen, maar niet allebei tegelijk."
+
+#~ msgid "**Ignore MBIDs when loading new files**"
+#~ msgstr "**MBID’s bij het laden van nieuwe bestanden negeren**"
+
+#~ msgid ""
+#~ "If you enable this option Picard will not use MusicBrainz identifiers "
+#~ "(MBIDs) stored in the files to automatically load the corresponding "
+#~ "MusicBrainz release and match the loaded file to the correct track. "
+#~ "Leaving this option disabled is useful when re-processing files that have "
+#~ "been previously tagged with incorrect information."
+#~ msgstr ""
+#~ "Als je dit inschakelt, gebruikt Picard de MBID’s (MusicBrainz-ID’s) in de "
+#~ "tags van de bestanden niet om de bijbehorende uitgave uit MusicBrainz te "
+#~ "laden en de bestanden aan nummers te koppelen. Als je bestanden die "
+#~ "eerder met verkeerde informatie zijn getagt opnieuw wil verwerken, kan je "
+#~ "deze optie het beste uitschakelen."
 
 #~ msgid "**Check for plugin updates during start-up**"
 #~ msgstr "**Zoek tijdens het opstarten naar nieuwe plug-inversies**"

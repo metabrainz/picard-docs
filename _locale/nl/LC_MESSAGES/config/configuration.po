@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 08:48+0200\n"
+"POT-Creation-Date: 2026-08-11 08:35-0600\n"
 "PO-Revision-Date: 2026-07-30 19:10+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -125,74 +125,26 @@ msgstr ""
 "audiobestanden in of uit."
 
 #: ../../config/configuration.rst:38
-msgid ":index:`Action Options <configuration; action options>`"
-msgstr ":index:`Verwerkingsopties <configuratie; verwerkingsopties>`"
-
-#: ../../config/configuration.rst:40
-msgid ""
-"The action options are found under the :menuselection:`\"Options\"` item on "
-"the menu bar. There are three available actions that Picard can perform when "
-"saving selected music files:"
-msgstr ""
-"De verwerkingsopties vind je in het menuonderdeel :menuselection:`‘Opties’` "
-"van de menubalk. Picard kan bij het opslaan van geselecteerde "
-"muziekbestanden de volgende bewerkingen uitvoeren:"
-
-#: ../../config/configuration.rst:42
-msgid "**Rename Files**"
-msgstr "**Bestanden hernoemen**"
-
-#: ../../config/configuration.rst:44
-msgid "Picard will rename each file in accordance with the naming script."
-msgstr ""
-"Picard hernoemt de bestanden aan de hand van het ingestelde "
-"bestandsnamenscript."
-
-#: ../../config/configuration.rst:46
-msgid "**Move Files**"
-msgstr "**Bestanden verplaatsen**"
-
-#: ../../config/configuration.rst:48
-msgid ""
-"Picard will move files to the target directory in accordance with the naming "
-"script."
-msgstr ""
-"Picard verplaatst de bestanden aan de hand van het ingestelde "
-"bestandsnamenscript naar een andere map."
-
-#: ../../config/configuration.rst:50
-msgid "**Save Tags**"
-msgstr "**Tags opslaan**"
-
-#: ../../config/configuration.rst:52
-msgid ""
-"Picard will update the metadata tags in the files in accordance with the "
-"specified option settings and tagging scripts."
-msgstr ""
-"Picard wijzigt de metadatatags in de bestanden aan de hand van je "
-"instellingen en tagscripts."
-
-#: ../../config/configuration.rst:56
 msgid ":index:`Option Settings <see: option settings; configuration>`"
 msgstr ":index:`Optie-instellingen <see: optie-instellingen; configuratie>`"
 
-#: ../../config/configuration.rst:58
+#: ../../config/configuration.rst:40
 msgid ""
 "The option settings are found under the :menuselection:`\"Options --> "
-"Options...\"` item on the menu bar. On macOS they can be accessed "
-"with :menuselection:`\"MusicBrainz Picard --> Preferences...\"`. This will "
-"open a new window with the option groups listed in a tree format on the left "
-"hand side, and the individual settings on the right hand side. This is where "
-"the majority of Picard's customization is performed."
+"Options...\"` item on the menu bar. On macOS they can be accessed with :"
+"menuselection:`\"MusicBrainz Picard --> Preferences...\"`. This will open a "
+"new window with the option groups listed in a tree format on the left hand "
+"side, and the individual settings on the right hand side. This is where the "
+"majority of Picard's customization is performed."
 msgstr ""
-"De optie-instellingen vind je via het menuonderdeel :menuselection:`‘"
-"Opties --> Opties …’` van de menubalk. Op macOS zijn ze te vinden via "
-":menuselection:`‘MusicBrainz Picard --> Voorkeuren …’`. Er wordt een nieuw "
+"De optie-instellingen vind je via het menuonderdeel :menuselection:`‘Opties "
+"--> Opties …’` van de menubalk. Op macOS zijn ze te vinden via :"
+"menuselection:`‘MusicBrainz Picard --> Voorkeuren …’`. Er wordt een nieuw "
 "venster geopend met aan de linkerkant groepen met opties en met aan de "
 "rechterkant de verschillende instellingen. Hier kan je het leeuwendeel van "
 "Picard aanpassen."
 
-#: ../../config/configuration.rst:61
+#: ../../config/configuration.rst:43
 msgid ""
 "When running your code from the source in a macOS environment, you can "
 "access the option settings by navigating to the :menuselection:`\"Python --> "
@@ -204,18 +156,18 @@ msgstr ""
 "Voorkeuren …’` te gaan. Zo kan je de verschillende instellingen voor je "
 "bureaubladomgeving aanpassen."
 
-#: ../../config/configuration.rst:70
+#: ../../config/configuration.rst:52
 msgid ":index:`Option Profiles <see: profiles; configuration>`"
 msgstr ":index:`Optieprofielen <see: profielen; configuratie>`"
 
-#: ../../config/configuration.rst:72
+#: ../../config/configuration.rst:54
 msgid ""
 "The option settings can also be manipulated with option profiles. A detailed "
 "explanation can be found in the :doc:`../usage/option_profiles` section, but "
 "they basically function as follows:"
 msgstr ""
 
-#: ../../config/configuration.rst:74
+#: ../../config/configuration.rst:56
 msgid ""
 "With option profiles, you can save a number of settings to a profile, which "
 "you can enable or disable to quickly change the settings for a particular "
@@ -227,7 +179,7 @@ msgstr ""
 "scenario’s snel te wijzigen. Bijvoorbeeld als je klassieke muziek anders wil "
 "behandelen dan andere muziek."
 
-#: ../../config/configuration.rst:76
+#: ../../config/configuration.rst:58
 msgid ""
 "Options that are controlled by an enabled profile will be shown as "
 "highlighted. Hovering your cursor over the highlighted option will identify "
@@ -242,7 +194,7 @@ msgstr ""
 "binnen die profielen in strijd met elkaar zijn, heeft het optieprofiel dat "
 "hoger in de stapel ligt voorrang."
 
-#: ../../config/configuration.rst:78
+#: ../../config/configuration.rst:60
 msgid ""
 "Changes made to a profile's options settings, enabled status, or position in "
 "the profile stack will be reflected in the option settings displayed on the "
@@ -253,6 +205,50 @@ msgstr ""
 "worden weerspiegeld in de optie-instellingen die op de optiepagina’s worden "
 "weergegeven."
 
-#: ../../config/configuration.rst:103
-msgid ":doc:`options_general` / :doc:`options_profiles` / :doc:`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :doc:`options_fingerprinting` / :doc:`options_cdlookup` / :doc:`options_plugins` / :doc:`options_scripting` / :doc:`options_interface` / :doc:`options_player` / :doc:`options_advanced`"
+#: ../../config/configuration.rst:83
+msgid ""
+":doc:`options_general` / :doc:`options_metadata` / :doc:`options_lookup` / :"
+"doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :"
+"doc:`options_plugins` / :doc:`options_scripting` / :doc:"
+"`options_interface` / :doc:`options_advanced` / :doc:`options_profiles`"
 msgstr ""
+
+#~ msgid ":index:`Action Options <configuration; action options>`"
+#~ msgstr ":index:`Verwerkingsopties <configuratie; verwerkingsopties>`"
+
+#~ msgid ""
+#~ "The action options are found under the :menuselection:`\"Options\"` item "
+#~ "on the menu bar. There are three available actions that Picard can "
+#~ "perform when saving selected music files:"
+#~ msgstr ""
+#~ "De verwerkingsopties vind je in het menuonderdeel :menuselection:"
+#~ "`‘Opties’` van de menubalk. Picard kan bij het opslaan van geselecteerde "
+#~ "muziekbestanden de volgende bewerkingen uitvoeren:"
+
+#~ msgid "**Rename Files**"
+#~ msgstr "**Bestanden hernoemen**"
+
+#~ msgid "Picard will rename each file in accordance with the naming script."
+#~ msgstr ""
+#~ "Picard hernoemt de bestanden aan de hand van het ingestelde "
+#~ "bestandsnamenscript."
+
+#~ msgid "**Move Files**"
+#~ msgstr "**Bestanden verplaatsen**"
+
+#~ msgid ""
+#~ "Picard will move files to the target directory in accordance with the "
+#~ "naming script."
+#~ msgstr ""
+#~ "Picard verplaatst de bestanden aan de hand van het ingestelde "
+#~ "bestandsnamenscript naar een andere map."
+
+#~ msgid "**Save Tags**"
+#~ msgstr "**Tags opslaan**"
+
+#~ msgid ""
+#~ "Picard will update the metadata tags in the files in accordance with the "
+#~ "specified option settings and tagging scripts."
+#~ msgstr ""
+#~ "Picard wijzigt de metadatatags in de bestanden aan de hand van je "
+#~ "instellingen en tagscripts."

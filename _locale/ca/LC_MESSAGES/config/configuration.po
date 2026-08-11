@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 08:48+0200\n"
+"POT-Creation-Date: 2026-08-11 08:35-0600\n"
 "PO-Revision-Date: 2026-07-30 19:23+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
@@ -67,8 +67,8 @@ msgstr ""
 "seleccionar els fitxers i directoris que s'han de processar. Es poden "
 "carregar fitxers a Picard arrossegant-los i deixant-los anar a les "
 "subfinestres de la dreta, fent doble clic sobre fitxers individuals o "
-"seleccionant diversos fitxers i carpetes i «Carrega els fitxers seleccionats"
-"» al menú contextual."
+"seleccionant diversos fitxers i carpetes i «Carrega els fitxers "
+"seleccionats» al menú contextual."
 
 #: ../../config/configuration.rst:17
 msgid ""
@@ -113,8 +113,8 @@ msgid ""
 "This displays the manual search box to the right of the \"Actions\" button "
 "bar."
 msgstr ""
-"Això mostra el quadre de cerca manual a la dreta de la barra de botons «"
-"Accions»."
+"Això mostra el quadre de cerca manual a la dreta de la barra de botons "
+"«Accions»."
 
 #: ../../config/configuration.rst:31
 msgid "**Player**"
@@ -127,65 +127,17 @@ msgstr ""
 "seleccionats."
 
 #: ../../config/configuration.rst:38
-msgid ":index:`Action Options <configuration; action options>`"
-msgstr ":index:`Opcions d'acció <configuració; opcions d'acció>`"
-
-#: ../../config/configuration.rst:40
-msgid ""
-"The action options are found under the :menuselection:`\"Options\"` item on "
-"the menu bar. There are three available actions that Picard can perform when "
-"saving selected music files:"
-msgstr ""
-"Les opcions d'acció són a l'element :menuselection:`«Opcions»` de la barra "
-"de menú. Hi ha tres accions disponibles que Picard pot fer en desar els "
-"fitxers de música seleccionats:"
-
-#: ../../config/configuration.rst:42
-msgid "**Rename Files**"
-msgstr "**Canvia el nom dels fitxers**"
-
-#: ../../config/configuration.rst:44
-msgid "Picard will rename each file in accordance with the naming script."
-msgstr ""
-"Picard canviarà el nom de cada fitxer d'acord amb l'script de nom dels "
-"fitxers."
-
-#: ../../config/configuration.rst:46
-msgid "**Move Files**"
-msgstr "**Mou els fitxers**"
-
-#: ../../config/configuration.rst:48
-msgid ""
-"Picard will move files to the target directory in accordance with the naming "
-"script."
-msgstr ""
-"Picard mourà els fitxers al directori de destinació d'acord amb l'script de "
-"nom dels fitxers."
-
-#: ../../config/configuration.rst:50
-msgid "**Save Tags**"
-msgstr "**Desa les etiquetes**"
-
-#: ../../config/configuration.rst:52
-msgid ""
-"Picard will update the metadata tags in the files in accordance with the "
-"specified option settings and tagging scripts."
-msgstr ""
-"Picard actualitzarà les etiquetes de metadades dels fitxers d'acord amb els "
-"paràmetres i scripts d'etiquetatge especificats."
-
-#: ../../config/configuration.rst:56
 msgid ":index:`Option Settings <see: option settings; configuration>`"
 msgstr ":index:`Paràmetres <see: paràmetres; configuració>`"
 
-#: ../../config/configuration.rst:58
+#: ../../config/configuration.rst:40
 msgid ""
 "The option settings are found under the :menuselection:`\"Options --> "
-"Options...\"` item on the menu bar. On macOS they can be accessed "
-"with :menuselection:`\"MusicBrainz Picard --> Preferences...\"`. This will "
-"open a new window with the option groups listed in a tree format on the left "
-"hand side, and the individual settings on the right hand side. This is where "
-"the majority of Picard's customization is performed."
+"Options...\"` item on the menu bar. On macOS they can be accessed with :"
+"menuselection:`\"MusicBrainz Picard --> Preferences...\"`. This will open a "
+"new window with the option groups listed in a tree format on the left hand "
+"side, and the individual settings on the right hand side. This is where the "
+"majority of Picard's customization is performed."
 msgstr ""
 "Els paràmetres són a l'element :menuselection:`«Opcions --> Opcions...»` de "
 "la barra de menú. Al macOS s'hi pot accedir amb :menuselection:`«MusicBrainz "
@@ -194,7 +146,7 @@ msgstr ""
 "dreta. Aquí és on es pot personalitzar la major part del comportament de "
 "Picard."
 
-#: ../../config/configuration.rst:61
+#: ../../config/configuration.rst:43
 msgid ""
 "When running your code from the source in a macOS environment, you can "
 "access the option settings by navigating to the :menuselection:`\"Python --> "
@@ -206,18 +158,18 @@ msgstr ""
 "Preferències...»` de la barra de menú. Això us permet configurar i "
 "personalitzar diversos paràmetres de l'entorn de desenvolupament."
 
-#: ../../config/configuration.rst:70
+#: ../../config/configuration.rst:52
 msgid ":index:`Option Profiles <see: profiles; configuration>`"
 msgstr ":index:`Perfils d'opcions <see: perfils; configuració>`"
 
-#: ../../config/configuration.rst:72
+#: ../../config/configuration.rst:54
 msgid ""
 "The option settings can also be manipulated with option profiles. A detailed "
 "explanation can be found in the :doc:`../usage/option_profiles` section, but "
 "they basically function as follows:"
 msgstr ""
 
-#: ../../config/configuration.rst:74
+#: ../../config/configuration.rst:56
 msgid ""
 "With option profiles, you can save a number of settings to a profile, which "
 "you can enable or disable to quickly change the settings for a particular "
@@ -225,7 +177,7 @@ msgid ""
 "differently to other music."
 msgstr ""
 
-#: ../../config/configuration.rst:76
+#: ../../config/configuration.rst:58
 msgid ""
 "Options that are controlled by an enabled profile will be shown as "
 "highlighted. Hovering your cursor over the highlighted option will identify "
@@ -239,22 +191,66 @@ msgstr ""
 "del primer perfil habilitat a la llista, que correspon al paràmetre que es "
 "farà servir durant el processament."
 
-#: ../../config/configuration.rst:78
+#: ../../config/configuration.rst:60
 msgid ""
 "Changes made to a profile's options settings, enabled status, or position in "
 "the profile stack will be reflected in the option settings displayed on the "
 "other configuration pages."
 msgstr ""
 
-#: ../../config/configuration.rst:103
+#: ../../config/configuration.rst:83
 #, fuzzy
-msgid ":doc:`options_general` / :doc:`options_profiles` / :doc:`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :doc:`options_fingerprinting` / :doc:`options_cdlookup` / :doc:`options_plugins` / :doc:`options_scripting` / :doc:`options_interface` / :doc:`options_player` / :doc:`options_advanced`"
+msgid ""
+":doc:`options_general` / :doc:`options_metadata` / :doc:`options_lookup` / :"
+"doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :"
+"doc:`options_plugins` / :doc:`options_scripting` / :doc:"
+"`options_interface` / :doc:`options_advanced` / :doc:`options_profiles`"
 msgstr ""
-":doc:`options_general` / :doc:`options_profiles` / :doc:`options_metadata` / "
-":doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / "
-":doc:`options_fingerprinting` / :doc:`options_cdlookup` / "
-":doc:`options_plugins` / :doc:`options_interface` / "
-":doc:`options_scripting` / :doc:`options_advanced`"
+":doc:`options_general` / :doc:`options_profiles` / :doc:"
+"`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:"
+"`options_filerenaming` / :doc:`options_fingerprinting` / :doc:"
+"`options_cdlookup` / :doc:`options_plugins` / :doc:`options_interface` / :"
+"doc:`options_scripting` / :doc:`options_advanced`"
+
+#~ msgid ":index:`Action Options <configuration; action options>`"
+#~ msgstr ":index:`Opcions d'acció <configuració; opcions d'acció>`"
+
+#~ msgid ""
+#~ "The action options are found under the :menuselection:`\"Options\"` item "
+#~ "on the menu bar. There are three available actions that Picard can "
+#~ "perform when saving selected music files:"
+#~ msgstr ""
+#~ "Les opcions d'acció són a l'element :menuselection:`«Opcions»` de la "
+#~ "barra de menú. Hi ha tres accions disponibles que Picard pot fer en desar "
+#~ "els fitxers de música seleccionats:"
+
+#~ msgid "**Rename Files**"
+#~ msgstr "**Canvia el nom dels fitxers**"
+
+#~ msgid "Picard will rename each file in accordance with the naming script."
+#~ msgstr ""
+#~ "Picard canviarà el nom de cada fitxer d'acord amb l'script de nom dels "
+#~ "fitxers."
+
+#~ msgid "**Move Files**"
+#~ msgstr "**Mou els fitxers**"
+
+#~ msgid ""
+#~ "Picard will move files to the target directory in accordance with the "
+#~ "naming script."
+#~ msgstr ""
+#~ "Picard mourà els fitxers al directori de destinació d'acord amb l'script "
+#~ "de nom dels fitxers."
+
+#~ msgid "**Save Tags**"
+#~ msgstr "**Desa les etiquetes**"
+
+#~ msgid ""
+#~ "Picard will update the metadata tags in the files in accordance with the "
+#~ "specified option settings and tagging scripts."
+#~ msgstr ""
+#~ "Picard actualitzarà les etiquetes de metadades dels fitxers d'acord amb "
+#~ "els paràmetres i scripts d'etiquetatge especificats."
 
 #~ msgid ""
 #~ "In addition to the basic \"user settings\", this is also where option "

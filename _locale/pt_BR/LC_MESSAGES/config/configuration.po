@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 08:48+0200\n"
+"POT-Creation-Date: 2026-08-11 08:35-0600\n"
 "PO-Revision-Date: 2026-07-30 19:10+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.metabrainz.org/"
@@ -125,64 +125,18 @@ msgstr ""
 "selecionados."
 
 #: ../../config/configuration.rst:38
-msgid ":index:`Action Options <configuration; action options>`"
-msgstr ":index:`Opções de ação <configuração; opções de ação>`"
-
-#: ../../config/configuration.rst:40
-msgid ""
-"The action options are found under the :menuselection:`\"Options\"` item on "
-"the menu bar. There are three available actions that Picard can perform when "
-"saving selected music files:"
-msgstr ""
-"As opções de ação são encontradas em :menuselection:`\"Opções\"` na barra de "
-"menu. Há três ações disponíveis que o Picard pode executar ao salvar "
-"arquivos de música selecionados:"
-
-#: ../../config/configuration.rst:42
-msgid "**Rename Files**"
-msgstr "**Renomear arquivos***"
-
-#: ../../config/configuration.rst:44
-msgid "Picard will rename each file in accordance with the naming script."
-msgstr "O Picard renomeará cada arquivo de acordo com a esquema aplicada."
-
-#: ../../config/configuration.rst:46
-msgid "**Move Files**"
-msgstr "**Mover arquivos**"
-
-#: ../../config/configuration.rst:48
-msgid ""
-"Picard will move files to the target directory in accordance with the naming "
-"script."
-msgstr ""
-"O Picard moverá os arquivos para a pasta de destino de acordo com a esquema "
-"aplicada."
-
-#: ../../config/configuration.rst:50
-msgid "**Save Tags**"
-msgstr "**Salvar ids**"
-
-#: ../../config/configuration.rst:52
-msgid ""
-"Picard will update the metadata tags in the files in accordance with the "
-"specified option settings and tagging scripts."
-msgstr ""
-"O Picard atualizará as ids de metadados nos arquivos de acordo com as "
-"configurações de opções e a esquema de identificação aplicada."
-
-#: ../../config/configuration.rst:56
 msgid ":index:`Option Settings <see: option settings; configuration>`"
 msgstr ""
 ":index:`Configurações de opção <ver: configurações de opção; configuração>`"
 
-#: ../../config/configuration.rst:58
+#: ../../config/configuration.rst:40
 msgid ""
 "The option settings are found under the :menuselection:`\"Options --> "
-"Options...\"` item on the menu bar. On macOS they can be accessed "
-"with :menuselection:`\"MusicBrainz Picard --> Preferences...\"`. This will "
-"open a new window with the option groups listed in a tree format on the left "
-"hand side, and the individual settings on the right hand side. This is where "
-"the majority of Picard's customization is performed."
+"Options...\"` item on the menu bar. On macOS they can be accessed with :"
+"menuselection:`\"MusicBrainz Picard --> Preferences...\"`. This will open a "
+"new window with the option groups listed in a tree format on the left hand "
+"side, and the individual settings on the right hand side. This is where the "
+"majority of Picard's customization is performed."
 msgstr ""
 "As configurações de opções são encontradas em :menuselection:`\"Opções --> "
 "Opções...\"` na barra de menu. Isto abrirá uma nova janela com os grupos de "
@@ -190,7 +144,7 @@ msgstr ""
 "individuais no lado direito. É aqui que a maior parte de personalização do "
 "Picard é feita."
 
-#: ../../config/configuration.rst:61
+#: ../../config/configuration.rst:43
 msgid ""
 "When running your code from the source in a macOS environment, you can "
 "access the option settings by navigating to the :menuselection:`\"Python --> "
@@ -198,20 +152,20 @@ msgid ""
 "customize various settings for your development environment."
 msgstr ""
 
-#: ../../config/configuration.rst:70
+#: ../../config/configuration.rst:52
 #, fuzzy
 msgid ":index:`Option Profiles <see: profiles; configuration>`"
 msgstr ""
 ":index:`Configurações de opção <ver: configurações de opção; configuração>`"
 
-#: ../../config/configuration.rst:72
+#: ../../config/configuration.rst:54
 msgid ""
 "The option settings can also be manipulated with option profiles. A detailed "
 "explanation can be found in the :doc:`../usage/option_profiles` section, but "
 "they basically function as follows:"
 msgstr ""
 
-#: ../../config/configuration.rst:74
+#: ../../config/configuration.rst:56
 msgid ""
 "With option profiles, you can save a number of settings to a profile, which "
 "you can enable or disable to quickly change the settings for a particular "
@@ -219,7 +173,7 @@ msgid ""
 "differently to other music."
 msgstr ""
 
-#: ../../config/configuration.rst:76
+#: ../../config/configuration.rst:58
 #, fuzzy
 msgid ""
 "Options that are controlled by an enabled profile will be shown as "
@@ -237,22 +191,64 @@ msgstr ""
 "pilha de perfis, que corresponde à configuração que será usada durante o "
 "processamento."
 
-#: ../../config/configuration.rst:78
+#: ../../config/configuration.rst:60
 msgid ""
 "Changes made to a profile's options settings, enabled status, or position in "
 "the profile stack will be reflected in the option settings displayed on the "
 "other configuration pages."
 msgstr ""
 
-#: ../../config/configuration.rst:103
+#: ../../config/configuration.rst:83
 #, fuzzy
-msgid ":doc:`options_general` / :doc:`options_profiles` / :doc:`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :doc:`options_fingerprinting` / :doc:`options_cdlookup` / :doc:`options_plugins` / :doc:`options_scripting` / :doc:`options_interface` / :doc:`options_player` / :doc:`options_advanced`"
+msgid ""
+":doc:`options_general` / :doc:`options_metadata` / :doc:`options_lookup` / :"
+"doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / :"
+"doc:`options_plugins` / :doc:`options_scripting` / :doc:"
+"`options_interface` / :doc:`options_advanced` / :doc:`options_profiles`"
 msgstr ""
-":doc:`options_general` / :doc:`options_profiles` / :doc:`options_metadata` / "
-":doc:`options_tags` / :doc:`options_cover` / :doc:`options_filerenaming` / "
-":doc:`options_fingerprinting` / :doc:`options_cdlookup` / "
-":doc:`options_plugins` / :doc:`options_interface` / "
-":doc:`options_scripting` / :doc:`options_advanced`"
+":doc:`options_general` / :doc:`options_profiles` / :doc:"
+"`options_metadata` / :doc:`options_tags` / :doc:`options_cover` / :doc:"
+"`options_filerenaming` / :doc:`options_fingerprinting` / :doc:"
+"`options_cdlookup` / :doc:`options_plugins` / :doc:`options_interface` / :"
+"doc:`options_scripting` / :doc:`options_advanced`"
+
+#~ msgid ":index:`Action Options <configuration; action options>`"
+#~ msgstr ":index:`Opções de ação <configuração; opções de ação>`"
+
+#~ msgid ""
+#~ "The action options are found under the :menuselection:`\"Options\"` item "
+#~ "on the menu bar. There are three available actions that Picard can "
+#~ "perform when saving selected music files:"
+#~ msgstr ""
+#~ "As opções de ação são encontradas em :menuselection:`\"Opções\"` na barra "
+#~ "de menu. Há três ações disponíveis que o Picard pode executar ao salvar "
+#~ "arquivos de música selecionados:"
+
+#~ msgid "**Rename Files**"
+#~ msgstr "**Renomear arquivos***"
+
+#~ msgid "Picard will rename each file in accordance with the naming script."
+#~ msgstr "O Picard renomeará cada arquivo de acordo com a esquema aplicada."
+
+#~ msgid "**Move Files**"
+#~ msgstr "**Mover arquivos**"
+
+#~ msgid ""
+#~ "Picard will move files to the target directory in accordance with the "
+#~ "naming script."
+#~ msgstr ""
+#~ "O Picard moverá os arquivos para a pasta de destino de acordo com a "
+#~ "esquema aplicada."
+
+#~ msgid "**Save Tags**"
+#~ msgstr "**Salvar ids**"
+
+#~ msgid ""
+#~ "Picard will update the metadata tags in the files in accordance with the "
+#~ "specified option settings and tagging scripts."
+#~ msgstr ""
+#~ "O Picard atualizará as ids de metadados nos arquivos de acordo com as "
+#~ "configurações de opções e a esquema de identificação aplicada."
 
 #~ msgid ""
 #~ "In addition to the basic \"user settings\", this is also where option "

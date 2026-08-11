@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 11:40-0600\n"
+"POT-Creation-Date: 2026-08-11 08:35-0600\n"
 "PO-Revision-Date: 2026-07-30 19:10+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.metabrainz.org/"
@@ -96,10 +96,10 @@ msgid ""
 "maintained for the light and dark themes. The colors for the currently "
 "displayed theme are the ones displayed for editing."
 msgstr ""
-"As cores para os temas claro e escuro podem ser penalizados na seção "
-":doc:`options_interface_colors`. Diferentes conjuntos de cores são mantidas "
-"para os temas claro e escuro. As cores disponíveis para modificação "
-"modificarão o tema atual."
+"As cores para os temas claro e escuro podem ser penalizados na seção :doc:"
+"`options_interface_colors`. Diferentes conjuntos de cores são mantidas para "
+"os temas claro e escuro. As cores disponíveis para modificação modificarão o "
+"tema atual."
 
 #: ../../config/options_interface.rst:43
 msgid "**Allow selection of multiple directories**"
@@ -115,8 +115,8 @@ msgid ""
 msgstr ""
 "Habilitando está opção, o seletor de pastas nativo é substituído pelo "
 "seletor do Qt. Pode ser preferível por permitir a seleção de múltiplos "
-"diretórios simultaneamente. Isto se aplica apenas à janela aberta por "
-":menuselection:`\"Arquivo --> Adicionar Pasta\"`. O painel navegador de "
+"diretórios simultaneamente. Isto se aplica apenas à janela aberta por :"
+"menuselection:`\"Arquivo --> Adicionar Pasta\"`. O painel navegador de "
 "arquivos sempre permite seleção múltipla."
 
 #: ../../config/options_interface.rst:49
@@ -127,38 +127,10 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_interface.rst:51
-msgid "**Use built-in search rather than looking in browser**"
-msgstr "**Usar busca integrada ao invés de buscar no navegador**"
-
-#: ../../config/options_interface.rst:53
-msgid ""
-"When this option is enabled the search for albums, artists or tracks will "
-"show the results in a dialog. By default this option is enabled. If this "
-"option is disabled Picard will open a search on MusicBrainz.org in your "
-"default web browser."
-msgstr ""
-"Quando esta opção está habilitada, a busca por álbuns, artistas ou trilhas "
-"serão mostradas numa janela. Se esta opção estiver desabilitada, Picard "
-"continuará a busca no MusicBrainz.org utilizando seu navegador padrão."
-
-#: ../../config/options_interface.rst:55
-msgid "**Use advanced query syntax**"
-msgstr "**Usar sintaxe de busca avançada**"
-
-#: ../../config/options_interface.rst:57
-msgid ""
-"This will enable advanced query syntax parsing on your searches. This only "
-"applies to the search box at the top right of Picard, not the lookup buttons."
-msgstr ""
-"Isto habilitará o processamento da sintaxe de busca avançada em suas buscas. "
-"Isto só se aplica à caixa de busca na lateral superior direita do Picard, e "
-"não aos botões de busca."
-
-#: ../../config/options_interface.rst:59
 msgid "**Show the new user dialog when starting Picard**"
 msgstr ""
 
-#: ../../config/options_interface.rst:61
+#: ../../config/options_interface.rst:53
 msgid ""
 "When this is enabled, Picard will show a dialog intended for new users when "
 "you start the program. This displays a warning about the consequences of "
@@ -167,12 +139,12 @@ msgid ""
 "also provides a link to the on-line documentation."
 msgstr ""
 
-#: ../../config/options_interface.rst:63
+#: ../../config/options_interface.rst:55
 msgid "**Show a quit confirmation dialog for unsaved changes**"
 msgstr ""
 "**Mostrar janela de confirmação do fechamento para mudanças não salvas**"
 
-#: ../../config/options_interface.rst:65
+#: ../../config/options_interface.rst:57
 msgid ""
 "When this is enabled, Picard will show a dialog when you try to quit the "
 "program with unsaved files loaded. This may help prevent accidentally losing "
@@ -182,13 +154,13 @@ msgstr ""
 "com arquivos modificados não salvos. Isto é feito para evitar que etiquetas "
 "modificadas por você sejam perdidas."
 
-#: ../../config/options_interface.rst:67
+#: ../../config/options_interface.rst:59
 #, fuzzy
 msgid "**Show a confirmation dialog when saving files**"
 msgstr ""
 "**Mostrar janela de confirmação do fechamento para mudanças não salvas**"
 
-#: ../../config/options_interface.rst:69
+#: ../../config/options_interface.rst:61
 msgid ""
 "When this is enabled, Picard will show a dialog when you save files, "
 "indicating what actions will be performed on the files and the number of "
@@ -196,21 +168,21 @@ msgid ""
 "you are not expecting."
 msgstr ""
 
-#: ../../config/options_interface.rst:71
+#: ../../config/options_interface.rst:63
 msgid "**Adjust horizontal position in file browser automatically**"
 msgstr ""
 
-#: ../../config/options_interface.rst:73
+#: ../../config/options_interface.rst:65
 msgid ""
 "When this is enabled, Picard will automatically scroll the file browser "
 "display to keep relevant content visible."
 msgstr ""
 
-#: ../../config/options_interface.rst:75
+#: ../../config/options_interface.rst:67
 msgid "**Begin browsing in the following directory**"
 msgstr "**Comece a navegar no seguinte diretório**"
 
-#: ../../config/options_interface.rst:77
+#: ../../config/options_interface.rst:69
 msgid ""
 "By default, Picard remembers the last directory used to load files. If you "
 "enable this option and provide a directory, Picard will always start in the "
@@ -220,25 +192,51 @@ msgstr ""
 "arquivos. Se habilitar esta opção e fornecer um diretório, o Picard sempre "
 "iniciará por lá."
 
-#: ../../config/options_interface.rst:79
+#: ../../config/options_interface.rst:71
 msgid "**Reset tutorial and setup wizard**"
 msgstr ""
 
-#: ../../config/options_interface.rst:81
+#: ../../config/options_interface.rst:73
 msgid ""
 "This button will reset the tutorial and setup wizard to its initial state, "
 "showing both again on the next startup."
 msgstr ""
 
-#: ../../config/options_interface.rst:87
+#: ../../config/options_interface.rst:79
 #, fuzzy
 msgid ""
 "Details: :doc:`options_interface_colors` / :doc:"
-"`options_interface_top_tags` / :doc:`options_interface_coverart_box` / :doc:"
-"`options_interface_quick_menu` / :doc:`options_interface_toolbar`"
+"`options_interface_top_tags` / :doc:`options_interface_quick_menu` / :doc:"
+"`options_interface_coverart_box` / :doc:`options_interface_toolbar`"
 msgstr ""
-"Detalhes: :doc:`options_interface_colors` / "
-":doc:`options_interface_top_tags` / :doc:`options_interface_toolbar`"
+"Detalhes: :doc:`options_interface_colors` / :doc:"
+"`options_interface_top_tags` / :doc:`options_interface_toolbar`"
+
+#~ msgid "**Use built-in search rather than looking in browser**"
+#~ msgstr "**Usar busca integrada ao invés de buscar no navegador**"
+
+#~ msgid ""
+#~ "When this option is enabled the search for albums, artists or tracks will "
+#~ "show the results in a dialog. By default this option is enabled. If this "
+#~ "option is disabled Picard will open a search on MusicBrainz.org in your "
+#~ "default web browser."
+#~ msgstr ""
+#~ "Quando esta opção está habilitada, a busca por álbuns, artistas ou "
+#~ "trilhas serão mostradas numa janela. Se esta opção estiver desabilitada, "
+#~ "Picard continuará a busca no MusicBrainz.org utilizando seu navegador "
+#~ "padrão."
+
+#~ msgid "**Use advanced query syntax**"
+#~ msgstr "**Usar sintaxe de busca avançada**"
+
+#~ msgid ""
+#~ "This will enable advanced query syntax parsing on your searches. This "
+#~ "only applies to the search box at the top right of Picard, not the lookup "
+#~ "buttons."
+#~ msgstr ""
+#~ "Isto habilitará o processamento da sintaxe de busca avançada em suas "
+#~ "buscas. Isto só se aplica à caixa de busca na lateral superior direita do "
+#~ "Picard, e não aos botões de busca."
 
 #~ msgid "**Customize action toolbar**"
 #~ msgstr "**Personalizar as ações da barra de ferramentas**"
