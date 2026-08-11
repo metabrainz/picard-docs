@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-11 08:35-0600\n"
-"PO-Revision-Date: 2026-07-30 19:09+0000\n"
+"PO-Revision-Date: 2026-08-11 19:23+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_matching/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../config/options_matching.rst:4
@@ -37,9 +37,8 @@ msgstr ""
 "vos clusters aux versions et pistes de MusicBrainz."
 
 #: ../../config/options_matching.rst:19
-#, fuzzy
 msgid "**Minimum similarity**"
-msgstr "**Similitude minimale pour les recherches de fichiers**"
+msgstr "**Similitude minimale**"
 
 #: ../../config/options_matching.rst:21
 msgid ""
@@ -47,10 +46,15 @@ msgid ""
 "MusicBrainz for the release to be considered and presented as a possible "
 "match. Matches below this threshhold will be ignored."
 msgstr ""
+"Ce paramètre détermine le niveau minimal de correspondance entre un cluster "
+"et une sortie sur MusicBrainz pour que cette dernière soit prise en compte "
+"et présentée comme une correspondance possible. Les correspondances "
+"inférieures à ce seuil seront ignorées."
 
 #: ../../config/options_matching.rst:23
 msgid "**Minimum margin between best and second-best match**"
 msgstr ""
+"**Écart minimal entre le meilleur résultat et le deuxième meilleur résultat**"
 
 #: ../../config/options_matching.rst:25
 msgid ""
@@ -61,6 +65,13 @@ msgid ""
 "enough to be certain which one is the best. In this case, you must verify "
 "the track selection."
 msgstr ""
+"Ce paramètre détermine l'écart de similarité à partir duquel privilégier une "
+"correspondance plutôt qu'une autre. Lorsque Picard associe un fichier à des "
+"pistes, il attribue un score de similarité à chaque piste candidate. Si "
+"l'écart entre les deux meilleurs scores (ou plus) est inférieur à cette "
+"marge, la correspondance est signalée comme ambiguë, car cet écart n'est pas "
+"suffisant pour déterminer avec certitude laquelle est la meilleure. Dans ce "
+"cas, vous devez vérifier la sélection des pistes."
 
 #: ../../config/options_matching.rst:27
 msgid "**Minimal similarity for matching files to tracks**"
@@ -68,18 +79,16 @@ msgstr ""
 "**Similitude minimale pour faire correspondre les fichiers aux pistes**"
 
 #: ../../config/options_matching.rst:29
-#, fuzzy
 msgid ""
 "The higher the percentage value, the more similar an individual file's "
 "metadata must be to the metadata from MusicBrainz for it to be matched to a "
 "track on a release in the Album pane."
 msgstr ""
-"Plus la valeur en pourcentage est élevée, plus les métadonnées d'un fichier "
-"individuel doivent être similaires aux métadonnées de MusicBrainz pour "
-"qu'elles correspondent à une version sur le côté droit."
+"Plus ce pourcentage est élevé, plus les métadonnées d'un fichier donné "
+"doivent correspondre à celles de MusicBrainz pour que ce fichier soit "
+"associé à un morceau d'un album dans le volet « Album »."
 
 #: ../../config/options_matching.rst:31
-#, fuzzy
 msgid ""
 "This setting is used when a file is assigned to a release and Picard needs "
 "to decide which track to which it is assigned. This happens on cluster "
@@ -88,13 +97,13 @@ msgid ""
 "of the tracks gives a match above the threshold the file is moved into an "
 "\"unmatched files\" section on that release."
 msgstr ""
-"Ce paramètre est utilisé lorsqu'un fichier est affecté à une release et que "
-"Picard doit décider à quelle piste l'affecter. Cela se produit lors de la "
-"consultation des clusters après que la version ait été choisie, ou si vous "
-"faites glisser manuellement les fichiers sur une version chargée (par "
-"opposition à un glisser sur une piste directement). Si aucune des pistes "
-"n'offre une correspondance supérieure au seuil fixé, le fichier est déplacé "
-"dans une section \"fichiers non appariés\" sur cette version."
+"Ce paramètre est utilisé lorsqu'un fichier est associé à un album et que "
+"Picard doit déterminer à quelle piste il correspond. Cela se produit lors de "
+"la recherche par cluster après la sélection de l'album, ou si vous faites "
+"glisser manuellement des fichiers sur un album chargé (plutôt que de les "
+"faire glisser directement sur une piste). Si aucune des pistes ne présente "
+"de correspondance supérieure au seuil défini, le fichier est déplacé vers "
+"une section « fichiers non correspondants » de cet album."
 
 #: ../../config/options_matching.rst:33
 msgid ""
@@ -126,6 +135,8 @@ msgstr ""
 #: ../../config/options_matching.rst:39
 msgid "**Ignore track duration difference under this number of seconds**"
 msgstr ""
+"**Ignorer les différences de durée des morceaux inférieures à ce nombre de "
+"secondes**"
 
 #: ../../config/options_matching.rst:41
 msgid ""
@@ -133,12 +144,18 @@ msgid ""
 "the length in the MusicBrainz database and still be considered to be the "
 "same. The default value is 2 seconds."
 msgstr ""
+"Ce paramètre définit le nombre de secondes de différence de durée entre un "
+"fichier et la durée enregistrée dans la base de données MusicBrainz, cette "
+"différence pouvant être tolérée pour que le fichier soit considéré comme "
+"identique. La valeur par défaut est de 2 secondes."
 
 #: ../../config/options_matching.rst:43
 msgid ""
 "**Ignore the following tracks when determining whether a release is "
 "complete**"
 msgstr ""
+"**Ne tenez pas compte des titres suivants pour déterminer si une sortie est "
+"complète**"
 
 #: ../../config/options_matching.rst:45
 msgid ""
@@ -148,10 +165,16 @@ msgid ""
 "video will be marked as complete if it has all the audio tracks matched with "
 "a file even if the video file is missing."
 msgstr ""
+"Les pistes manquantes du type sélectionné (c'est-à-dire : vidéo, pré-gap, "
+"données ou silence) seront ignorées lors de la détermination du caractère « "
+"complet » d'une sortie. Par exemple, si « vidéo » est sélectionné, une "
+"sortie comportant une vidéo bonus sera considérée comme complète si toutes "
+"ses pistes audio correspondent à un fichier, même si le fichier vidéo est "
+"manquant."
 
 #: ../../config/options_matching.rst:47
 msgid "**Tags to ignore for comparison**"
-msgstr ""
+msgstr "**Balises à ignorer lors de la comparaison**"
 
 #: ../../config/options_matching.rst:49
 msgid ""
@@ -160,6 +183,12 @@ msgid ""
 "between the file's metadata and the metadata retrieved from MusicBrainz is a "
 "tag listed in this ignore list then the file will be considered unmodified."
 msgstr ""
+"Les balises figurant dans cette liste ne seront pas prises en compte lors de "
+"la comparaison entre les métadonnées du fichier existant et celles "
+"récupérées auprès de MusicBrainz. Si la seule différence entre les "
+"métadonnées du fichier et celles récupérées auprès de MusicBrainz est une "
+"balise figurant dans cette liste d'exclusion, le fichier sera alors "
+"considéré comme inchangé."
 
 #~ msgid ""
 #~ "This setting is used when you do a lookup on individual files. The files' "
