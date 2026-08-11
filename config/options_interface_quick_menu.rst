@@ -29,4 +29,4 @@ The user can select which options settings appear in this :menuselection:`"Quick
       :width: 75%
       :align: center
 
-All selected option settings will appear in the :menuselection:`"Quick settings"` menu, and if there are no option settings selected the :menuselection:`"Quick settings"` menu will be disabled.
+All selected option settings will appear in the :menuselection:`"Quick settings"` menu, and if there are no option settings selected the :menuselection:`"Quick settings"` menu will only include the link to options page where the quick settings menu items are selected.
