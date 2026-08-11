@@ -65,9 +65,9 @@ These options determine how Picard handles files when they are saved with update
 
    Select this option to let Picard change the file and directory names of your files when it saves them, in order to make the file and directory names consistent with the new metadata.
 
-**Selected file naming script**
+**Active file naming script**
 
-   As of Picard version 2.7, multiple file naming scripts are supported. This option allows the user to select the file naming script to use from the list of scripts available. Scripts can be either system preset scripts or user-defined scripts. The available scripts are managed in the :doc:`File naming script editor <options_filerenaming_editor>` screen, which is displayed when the :guilabel:`Edit script...` button is selected.
+   As of Picard version 2.7, multiple file naming scripts are supported. This option allows the user to select the file naming script to use from the list of scripts available. Scripts can be either system preset scripts or user-defined scripts. The available scripts are managed in the :doc:`File naming script editor <options_filerenaming_editor>` screen, which is available from the :menuselection:`"Options --> File naming scripts --> Edit scripts…"` menu item.
 
 **Files will be named like this**
 
