@@ -51,6 +51,8 @@ These functions are used to manage text (e.g.: extract, replace or format) in ta
       func_firstalphachar
       func_firstwords
       func_get
+      func_get_new
+      func_get_original
       func_initials
       func_left
       func_len
@@ -77,6 +79,8 @@ These functions are used to manage text (e.g.: extract, replace or format) in ta
    | :doc:`func_firstalphachar`
    | :doc:`func_firstwords`
    | :doc:`func_get`
+   | :doc:`func_get_new`
+   | :doc:`func_get_original`
    | :doc:`func_initials`
    | :doc:`func_left`
    | :doc:`func_len`
