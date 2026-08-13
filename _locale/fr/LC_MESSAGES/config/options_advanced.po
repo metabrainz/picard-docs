@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-11 08:35-0600\n"
+"POT-Creation-Date: 2026-08-13 09:00-0600\n"
 "PO-Revision-Date: 2026-08-11 19:23+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -30,21 +30,21 @@ msgid "This provides access to some of the advanced settings for Picard."
 msgstr "Cela permet d'accéder à certains paramètres avancés de Picard."
 
 #: ../../config/options_advanced.rst:19
-msgid "**Ignore file paths matching the following regular expression**"
+#, fuzzy
+msgid "**Include sub-folders when adding files from folder**"
 msgstr ""
-"**Ignorer les chemins de fichiers correspondant à l'expression régulière "
-"suivante**"
+"**Inclure les sous-dossiers lors de l'ajout de fichiers à partir de "
+"dossiers**"
 
 #: ../../config/options_advanced.rst:21
 msgid ""
-"You can specify patterns for files and directories that Picard should never "
-"load. For example, if you set this to the regular expression ``\\.bak$`` any "
-"file ending in \".bak\" will be ignored when loading files."
+"If this option is enabled Picard will load all audio files in the selected "
+"directory and all its subdirectories. If disabled only audio files in the "
+"selected directory will be loaded."
 msgstr ""
-"Vous pouvez spécifier des modèles pour les fichiers et répertoires que "
-"Picard ne doit jamais charger. Par exemple, si vous définissez ceci sur "
-"l'expression régulière ``\\.bak$`` tout fichier se terminant par \".bak\" "
-"sera ignoré lors du chargement des fichiers."
+"Si cette option est activée, Picard chargera tous les fichiers audio dans le "
+"répertoire sélectionné et tous ses sous-répertoires. Si elle est désactivée, "
+"seuls les fichiers audio du répertoire sélectionné seront chargés."
 
 #: ../../config/options_advanced.rst:23
 msgid "**Ignore hidden files**"
@@ -61,26 +61,47 @@ msgstr ""
 "répertoire caché."
 
 #: ../../config/options_advanced.rst:27
-msgid "**Include sub-folders when adding files from folders**"
+msgid "**Ignore file paths matching the following regular expression**"
 msgstr ""
-"**Inclure les sous-dossiers lors de l'ajout de fichiers à partir de "
-"dossiers**"
+"**Ignorer les chemins de fichiers correspondant à l'expression régulière "
+"suivante**"
 
 #: ../../config/options_advanced.rst:29
 msgid ""
-"If this option is enabled Picard will load all audio files in the selected "
-"directory and all its subdirectories. If disabled only audio files in the "
-"selected directory will be loaded."
+"You can specify patterns for files and directories that Picard should never "
+"load. For example, if you set this to the regular expression ``\\.bak$`` any "
+"file ending in \".bak\" will be ignored when loading files."
 msgstr ""
-"Si cette option est activée, Picard chargera tous les fichiers audio dans le "
-"répertoire sélectionné et tous ses sous-répertoires. Si elle est désactivée, "
-"seuls les fichiers audio du répertoire sélectionné seront chargés."
+"Vous pouvez spécifier des modèles pour les fichiers et répertoires que "
+"Picard ne doit jamais charger. Par exemple, si vous définissez ceci sur "
+"l'expression régulière ``\\.bak$`` tout fichier se terminant par \".bak\" "
+"sera ignoré lors du chargement des fichiers."
 
-#: ../../config/options_advanced.rst:36
-msgid "Details: :doc:`options_matching` / :doc:`options_sessions` / :doc:`options_maintenance`"
+#: ../../config/options_advanced.rst:31
+msgid "**Test file path matching**"
 msgstr ""
-"Détails : :doc:`options_matching` / :doc:`options_sessions` / "
-":doc:`options_maintenance`"
+
+#: ../../config/options_advanced.rst:33
+msgid ""
+"This area allows you to enter file paths, one per line, to test your regular "
+"expression. If a file path is marked in red, it does not match your regular "
+"expression and will be loaded. A file path marked green matches your regular "
+"expression and will not be loaded."
+msgstr ""
+
+#: ../../config/options_advanced.rst:37
+msgid ""
+"This list of test file paths will be cleared when you exit the configuration "
+"section."
+msgstr ""
+
+#: ../../config/options_advanced.rst:45
+msgid ""
+"Details: :doc:`options_matching` / :doc:`options_sessions` / :doc:"
+"`options_maintenance`"
+msgstr ""
+"Détails : :doc:`options_matching` / :doc:`options_sessions` / :doc:"
+"`options_maintenance`"
 
 #~ msgid "**Ignore track duration difference under this number of seconds**"
 #~ msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-11 08:35-0600\n"
+"POT-Creation-Date: 2026-08-13 09:00-0600\n"
 "PO-Revision-Date: 2026-07-30 19:13+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -30,21 +30,19 @@ msgid "This provides access to some of the advanced settings for Picard."
 msgstr ""
 
 #: ../../config/options_advanced.rst:19
-msgid "**Ignore file paths matching the following regular expression**"
-msgstr ""
-"**Bestandspaden negeren als ze met de volgende reguliere expressie "
-"overeenkomen**"
+#, fuzzy
+msgid "**Include sub-folders when adding files from folder**"
+msgstr "**Ook submappen toevoegen als je bestanden uit een map toevoegt**"
 
 #: ../../config/options_advanced.rst:21
 msgid ""
-"You can specify patterns for files and directories that Picard should never "
-"load. For example, if you set this to the regular expression ``\\.bak$`` any "
-"file ending in \".bak\" will be ignored when loading files."
+"If this option is enabled Picard will load all audio files in the selected "
+"directory and all its subdirectories. If disabled only audio files in the "
+"selected directory will be loaded."
 msgstr ""
-"Je kan patronen instellen voor bestanden en mappen die Picard nooit mag "
-"laden. Met de reguliere expressie ``\\.bak$`` kan je bijvoorbeeld zorgen dat "
-"elk bestand dat eindigt op ‘.bak’ bij het laden van bestanden wordt "
-"genegeerd."
+"Als deze optie is ingeschakeld, laadt Picard alle audiobestanden in de "
+"geselecteerde map en alle onderliggende mappen. Als deze optie is "
+"uitgeschakeld, worden alleen audiobestanden in de geselecteerde map geladen."
 
 #: ../../config/options_advanced.rst:23
 msgid "**Ignore hidden files**"
@@ -60,21 +58,44 @@ msgstr ""
 "geladen. Dat geldt ook voor bestanden of mappen binnen een verborgen map."
 
 #: ../../config/options_advanced.rst:27
-msgid "**Include sub-folders when adding files from folders**"
-msgstr "**Ook submappen toevoegen als je bestanden uit een map toevoegt**"
+msgid "**Ignore file paths matching the following regular expression**"
+msgstr ""
+"**Bestandspaden negeren als ze met de volgende reguliere expressie "
+"overeenkomen**"
 
 #: ../../config/options_advanced.rst:29
 msgid ""
-"If this option is enabled Picard will load all audio files in the selected "
-"directory and all its subdirectories. If disabled only audio files in the "
-"selected directory will be loaded."
+"You can specify patterns for files and directories that Picard should never "
+"load. For example, if you set this to the regular expression ``\\.bak$`` any "
+"file ending in \".bak\" will be ignored when loading files."
 msgstr ""
-"Als deze optie is ingeschakeld, laadt Picard alle audiobestanden in de "
-"geselecteerde map en alle onderliggende mappen. Als deze optie is "
-"uitgeschakeld, worden alleen audiobestanden in de geselecteerde map geladen."
+"Je kan patronen instellen voor bestanden en mappen die Picard nooit mag "
+"laden. Met de reguliere expressie ``\\.bak$`` kan je bijvoorbeeld zorgen dat "
+"elk bestand dat eindigt op ‘.bak’ bij het laden van bestanden wordt "
+"genegeerd."
 
-#: ../../config/options_advanced.rst:36
-msgid "Details: :doc:`options_matching` / :doc:`options_sessions` / :doc:`options_maintenance`"
+#: ../../config/options_advanced.rst:31
+msgid "**Test file path matching**"
+msgstr ""
+
+#: ../../config/options_advanced.rst:33
+msgid ""
+"This area allows you to enter file paths, one per line, to test your regular "
+"expression. If a file path is marked in red, it does not match your regular "
+"expression and will be loaded. A file path marked green matches your regular "
+"expression and will not be loaded."
+msgstr ""
+
+#: ../../config/options_advanced.rst:37
+msgid ""
+"This list of test file paths will be cleared when you exit the configuration "
+"section."
+msgstr ""
+
+#: ../../config/options_advanced.rst:45
+msgid ""
+"Details: :doc:`options_matching` / :doc:`options_sessions` / :doc:"
+"`options_maintenance`"
 msgstr ""
 
 #~ msgid "**Ignore track duration difference under this number of seconds**"

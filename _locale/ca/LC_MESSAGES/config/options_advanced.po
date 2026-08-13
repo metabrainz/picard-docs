@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-11 08:35-0600\n"
+"POT-Creation-Date: 2026-08-13 09:00-0600\n"
 "PO-Revision-Date: 2026-07-30 19:23+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
@@ -28,20 +28,19 @@ msgid "This provides access to some of the advanced settings for Picard."
 msgstr ""
 
 #: ../../config/options_advanced.rst:19
-msgid "**Ignore file paths matching the following regular expression**"
-msgstr ""
-"**Ignora els camins de fitxers que coincideixin amb l'expressió regular "
-"següent**"
+#, fuzzy
+msgid "**Include sub-folders when adding files from folder**"
+msgstr "**Inclou les subcarpetes en afegir els fitxers de les carpetes**"
 
 #: ../../config/options_advanced.rst:21
 msgid ""
-"You can specify patterns for files and directories that Picard should never "
-"load. For example, if you set this to the regular expression ``\\.bak$`` any "
-"file ending in \".bak\" will be ignored when loading files."
+"If this option is enabled Picard will load all audio files in the selected "
+"directory and all its subdirectories. If disabled only audio files in the "
+"selected directory will be loaded."
 msgstr ""
-"Podeu especificar patrons de fitxers i directoris que Picard no ha de "
-"carregar mai. Per exemple, si aquí indiqueu l'expressió regular ``\\.bak$``, "
-"qualsevol fitxer que acabi en «.bak» s'ignorarà en carregar els fitxers."
+"Si aquesta opció està habilitada, Picard carregarà tots els fitxers d'àudio "
+"del directori seleccionat i tots els subdirectoris. Si està inhabilitada, "
+"només es carregaran els fitxers d'àudio del directori seleccionat."
 
 #: ../../config/options_advanced.rst:23
 msgid "**Ignore hidden files**"
@@ -58,23 +57,47 @@ msgstr ""
 "directori ocult."
 
 #: ../../config/options_advanced.rst:27
-msgid "**Include sub-folders when adding files from folders**"
-msgstr "**Inclou les subcarpetes en afegir els fitxers de les carpetes**"
+msgid "**Ignore file paths matching the following regular expression**"
+msgstr ""
+"**Ignora els camins de fitxers que coincideixin amb l'expressió regular "
+"següent**"
 
 #: ../../config/options_advanced.rst:29
 msgid ""
-"If this option is enabled Picard will load all audio files in the selected "
-"directory and all its subdirectories. If disabled only audio files in the "
-"selected directory will be loaded."
+"You can specify patterns for files and directories that Picard should never "
+"load. For example, if you set this to the regular expression ``\\.bak$`` any "
+"file ending in \".bak\" will be ignored when loading files."
 msgstr ""
-"Si aquesta opció està habilitada, Picard carregarà tots els fitxers d'àudio "
-"del directori seleccionat i tots els subdirectoris. Si està inhabilitada, "
-"només es carregaran els fitxers d'àudio del directori seleccionat."
+"Podeu especificar patrons de fitxers i directoris que Picard no ha de "
+"carregar mai. Per exemple, si aquí indiqueu l'expressió regular ``\\.bak$``, "
+"qualsevol fitxer que acabi en «.bak» s'ignorarà en carregar els fitxers."
 
-#: ../../config/options_advanced.rst:36
+#: ../../config/options_advanced.rst:31
+msgid "**Test file path matching**"
+msgstr ""
+
+#: ../../config/options_advanced.rst:33
+msgid ""
+"This area allows you to enter file paths, one per line, to test your regular "
+"expression. If a file path is marked in red, it does not match your regular "
+"expression and will be loaded. A file path marked green matches your regular "
+"expression and will not be loaded."
+msgstr ""
+
+#: ../../config/options_advanced.rst:37
+msgid ""
+"This list of test file paths will be cleared when you exit the configuration "
+"section."
+msgstr ""
+
+#: ../../config/options_advanced.rst:45
 #, fuzzy
-msgid "Details: :doc:`options_matching` / :doc:`options_sessions` / :doc:`options_maintenance`"
-msgstr "Detalls: :doc:`options_network` / :doc:`options_matching` / :doc:`options_plugin_execution_order` / :doc:`options_maintenance`"
+msgid ""
+"Details: :doc:`options_matching` / :doc:`options_sessions` / :doc:"
+"`options_maintenance`"
+msgstr ""
+"Detalls: :doc:`options_network` / :doc:`options_matching` / :doc:"
+"`options_plugin_execution_order` / :doc:`options_maintenance`"
 
 #~ msgid "**Ignore track duration difference under this number of seconds**"
 #~ msgstr ""
