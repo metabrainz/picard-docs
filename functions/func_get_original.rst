@@ -15,7 +15,7 @@ Returns the value from original metadata only for the variable ``name`` or an em
 
 .. note::
 
-   Usually you can access the values of a tag by the proper variable name. For example, if your tag is called "rerecorded" you can use ``%rerecorded%``. But the hyphen is not a valid character for a script variable, so ``%re-recorded%`` gives a syntax error. In cases like this you need to use ``$get(re-recorded)``.
+   Usually you can access the values of a tag by the proper variable name. For example, if your tag is called "rerecorded" you can use ``%rerecorded%``. But the hyphen is not a valid character for a script variable, so ``%re-recorded%`` gives a syntax error. In cases like this you need to use ``$get_original(re-recorded)``.
 
 **Example:**
 
