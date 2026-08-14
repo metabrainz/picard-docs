@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 10:05-0600\n"
-"PO-Revision-Date: 2026-08-13 15:35+0000\n"
+"PO-Revision-Date: 2026-08-14 17:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/functionsfunc_get_original/fr/>\n"
@@ -53,7 +53,6 @@ msgstr ""
 "variables dont le nom est défini dynamiquement."
 
 #: ../../functions/func_get_original.rst:18
-#, fuzzy
 msgid ""
 "Usually you can access the values of a tag by the proper variable name. For "
 "example, if your tag is called \"rerecorded\" you can use ``%rerecorded%``. "
@@ -66,7 +65,7 @@ msgstr ""
 "rerecorded », vous pouvez utiliser ``%rerecorded%``. Cependant, le tiret "
 "n'est pas un caractère autorisé pour une variable de script ; ainsi, ``%re-"
 "recorded%`` génère une erreur de syntaxe. Dans ce genre de cas, vous devez "
-"utiliser ``$get(re-recorded)``."
+"utiliser ``$get_original(re-recorded)``."
 
 #: ../../functions/func_get_original.rst:20
 msgid "**Example:**"
