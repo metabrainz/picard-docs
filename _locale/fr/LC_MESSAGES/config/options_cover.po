@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"POT-Creation-Date: 2026-08-20 10:46-0600\n"
 "PO-Revision-Date: 2026-07-30 19:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -158,7 +158,8 @@ msgstr ""
 
 #: ../../config/options_cover.rst:59
 msgid "which will place the images in a subdirectory called \"Artwork\"."
-msgstr "ce qui placera les images dans un sous-répertoire intitulé « Artwork »."
+msgstr ""
+"ce qui placera les images dans un sous-répertoire intitulé « Artwork »."
 
 #: ../../config/options_cover.rst:61
 msgid "**Overwrite the file if it already exists**"
@@ -175,7 +176,8 @@ msgstr ""
 
 #: ../../config/options_cover.rst:65
 msgid "**Save only a single front image as separate file**"
-msgstr "**Enregistrer uniquement l'image de couverture dans un fichier séparé**"
+msgstr ""
+"**Enregistrer uniquement l'image de couverture dans un fichier séparé**"
 
 #: ../../config/options_cover.rst:67
 msgid ""
@@ -222,11 +224,40 @@ msgstr ""
 "spécifié dans le paramètre « Utiliser le nom de fichier suivant pour les "
 "images »."
 
+#: ../../config/options_cover.rst:75
+#, fuzzy
+msgid "**Remove cover images from tags**"
+msgstr "**Intégrer des images de couverture dans les balises**"
+
 #: ../../config/options_cover.rst:77
+msgid ""
+"When checked, Picard will automatically remove embedded cover images from "
+"your files when they are saved. This option is only available for setting if "
+"the \"*Embed cover images into tags*\" option is disabled."
+msgstr ""
+
+#: ../../config/options_cover.rst:79
+msgid ""
+"Images will only be removed if they are also being saved as separate files."
+msgstr ""
+
+#: ../../config/options_cover.rst:81
+msgid ""
+"Picard will **not** remove embedded cover images if the \"*Embed cover "
+"images into tags*\" option is enabled, even if the \"*Remove cover images "
+"from tags*\" option setting is enabled."
+msgstr ""
+
+#: ../../config/options_cover.rst:83
+msgid ""
+"Images being removed will be identified as such in the \"Album Info\" dialog."
+msgstr ""
+
+#: ../../config/options_cover.rst:98
 msgid "Cover Art Providers"
 msgstr "Fournisseurs d'illustrations de couverture"
 
-#: ../../config/options_cover.rst:79
+#: ../../config/options_cover.rst:100
 msgid ""
 "Picard can download Cover Art from a number of sources, and you can choose "
 "which sources you want Picard to use. You can activate more than one "
@@ -239,11 +270,11 @@ msgstr ""
 "interrogés. Picard les essaiera les uns après les autres jusqu'à ce qu'une "
 "image soit trouvée."
 
-#: ../../config/options_cover.rst:81
+#: ../../config/options_cover.rst:102
 msgid "**Cover Art Archive: Release**"
 msgstr "**Archives d'art de couverture : Edition**"
 
-#: ../../config/options_cover.rst:83
+#: ../../config/options_cover.rst:104
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
 "cooperation with the `Internet Archive <https://archive.org>`_. The Cover "
@@ -256,11 +287,11 @@ msgstr ""
 "en matière de pochettes d'albums (par exemple : couvertures, dos d'albums, "
 "livrets, CD)."
 
-#: ../../config/options_cover.rst:85
+#: ../../config/options_cover.rst:106
 msgid "**Cover Art Archive: Release Group**"
 msgstr "**Archives d'art de couverture : Groupe d'édition**"
 
-#: ../../config/options_cover.rst:87
+#: ../../config/options_cover.rst:108
 msgid ""
 "This provider uses the Cover Art Archive cover image assigned to the release "
 "group. This is usually the image that best describes the release group as a "
@@ -279,11 +310,11 @@ msgstr ""
 "également une bonne solution de secours pour le fournisseur Cover Art "
 "Archive."
 
-#: ../../config/options_cover.rst:89
+#: ../../config/options_cover.rst:110
 msgid "**Allowed Cover Art URLs**"
 msgstr "**URL autorisées pour les pochettes**"
 
-#: ../../config/options_cover.rst:91
+#: ../../config/options_cover.rst:112
 msgid ""
 "This will use images provided from approved third-party sites. The image "
 "location is stored as a URL relationship for the release within the "
@@ -295,7 +326,7 @@ msgstr ""
 "URL pour la sortie dans la base de données MusicBrainz, et seuls les sites "
 "approuvés peuvent être utilisés pour cette relation."
 
-#: ../../config/options_cover.rst:95
+#: ../../config/options_cover.rst:116
 msgid ""
 "This relationship type is now deprecated in MusicBrainz, and is no longer "
 "used. See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/"
@@ -307,20 +338,20 @@ msgstr ""
 "pochettes <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/"
 "Cover_art_whitelist>`_ dans le Guide de style."
 
-#: ../../config/options_cover.rst:97
+#: ../../config/options_cover.rst:118
 msgid "**Local Files**"
 msgstr "**Fichiers locaux**"
 
-#: ../../config/options_cover.rst:99
+#: ../../config/options_cover.rst:120
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
 "the :ref:`ref-local-files` provider options."
 msgstr ""
 "Charger les pochettes d'album à partir de fichiers locaux. Les noms des "
-"fichiers à charger peuvent être configurés dans les options du fournisseur "
-":ref:`ref-local-files`."
+"fichiers à charger peuvent être configurés dans les options du fournisseur :"
+"ref:`ref-local-files`."
 
-#: ../../config/options_cover.rst:101
+#: ../../config/options_cover.rst:122
 msgid ""
 "In addition to the built-in cover art providers described above, additional "
 "cover art providers can be installed as `plugins <https://picard.musicbrainz."
@@ -330,7 +361,7 @@ msgstr ""
 "fournisseurs de jaquettes peuvent être installés sous forme de `plugins "
 "<https://picard.musicbrainz.org/plugins/>`_. Parmi ceux-ci, on trouve :"
 
-#: ../../config/options_cover.rst:103
+#: ../../config/options_cover.rst:124
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
 "focuses on cover art with high visual quality. This provider provides cover "
@@ -341,20 +372,19 @@ msgstr ""
 "visuelle. Ce fournisseur propose des jaquettes représentatives de l'ensemble "
 "des publications et non de chaque publication individuelle."
 
-#: ../../config/options_cover.rst:105
+#: ../../config/options_cover.rst:126
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
 ">`_, which focuses on cover art with high visual quality. This provider "
 "provides cover art representative for the release group and not the "
 "individual release."
 msgstr ""
-"**TheAudioDB** : utilise les pochettes provenant de `TheAudioDB <https://"
-"www.theaudiodb.com/>`_, un site spécialisé dans les pochettes de haute "
-"qualité visuelle. Ce fournisseur propose des pochettes représentatives de "
-"l'ensemble des titres d'un album et non de chaque titre pris "
-"individuellement."
+"**TheAudioDB** : utilise les pochettes provenant de `TheAudioDB <https://www."
+"theaudiodb.com/>`_, un site spécialisé dans les pochettes de haute qualité "
+"visuelle. Ce fournisseur propose des pochettes représentatives de l'ensemble "
+"des titres d'un album et non de chaque titre pris individuellement."
 
-#: ../../config/options_cover.rst:109
+#: ../../config/options_cover.rst:130
 msgid ""
 "You must enable :menuselection:`\"Options --> Metadata --> Use release "
 "relationships\"` for Picard to be able to download cover art from "
@@ -364,13 +394,13 @@ msgstr ""
 "les relations entre les versions »` pour que Picard puisse télécharger les "
 "pochettes à partir des relations de pochettes de MusicBrainz."
 
-#: ../../config/options_cover.rst:115
+#: ../../config/options_cover.rst:136
 msgid ""
 "Details: :doc:`options_cover_art_processing` / :doc:"
 "`options_cover_art_archive` / :doc:`options_local_files`"
 msgstr ""
-"Détails : :doc:`options_cover_art_processing` / "
-":doc:`options_cover_art_archive` / :doc:`options_local_files`"
+"Détails : :doc:`options_cover_art_processing` / :doc:"
+"`options_cover_art_archive` / :doc:`options_local_files`"
 
 #~ msgid "Cover Art Options"
 #~ msgstr "Options de couverture"

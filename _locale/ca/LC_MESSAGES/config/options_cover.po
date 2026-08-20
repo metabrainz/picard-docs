@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"POT-Creation-Date: 2026-08-20 10:46-0600\n"
 "PO-Revision-Date: 2026-07-30 19:23+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
@@ -165,11 +165,39 @@ msgid ""
 "following file name for images\" setting."
 msgstr ""
 
+#: ../../config/options_cover.rst:75
+msgid "**Remove cover images from tags**"
+msgstr ""
+
 #: ../../config/options_cover.rst:77
-msgid "Cover Art Providers"
+msgid ""
+"When checked, Picard will automatically remove embedded cover images from "
+"your files when they are saved. This option is only available for setting if "
+"the \"*Embed cover images into tags*\" option is disabled."
 msgstr ""
 
 #: ../../config/options_cover.rst:79
+msgid ""
+"Images will only be removed if they are also being saved as separate files."
+msgstr ""
+
+#: ../../config/options_cover.rst:81
+msgid ""
+"Picard will **not** remove embedded cover images if the \"*Embed cover "
+"images into tags*\" option is enabled, even if the \"*Remove cover images "
+"from tags*\" option setting is enabled."
+msgstr ""
+
+#: ../../config/options_cover.rst:83
+msgid ""
+"Images being removed will be identified as such in the \"Album Info\" dialog."
+msgstr ""
+
+#: ../../config/options_cover.rst:98
+msgid "Cover Art Providers"
+msgstr ""
+
+#: ../../config/options_cover.rst:100
 #, fuzzy
 msgid ""
 "Picard can download Cover Art from a number of sources, and you can choose "
@@ -182,12 +210,12 @@ msgstr ""
 "l'ordre de consulta dels proveïdors. Picard provarà els proveïdors del "
 "principi al final fins que es retorni una imatge."
 
-#: ../../config/options_cover.rst:81
+#: ../../config/options_cover.rst:102
 #, fuzzy
 msgid "**Cover Art Archive: Release**"
 msgstr "**Cover Art Archive: Publicació**"
 
-#: ../../config/options_cover.rst:83
+#: ../../config/options_cover.rst:104
 #, fuzzy
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
@@ -200,12 +228,12 @@ msgstr ""
 "de dades més extensa de caràtules (p. ex., caràtules frontals, posteriors, "
 "llibrets, CD, etc.)."
 
-#: ../../config/options_cover.rst:85
+#: ../../config/options_cover.rst:106
 #, fuzzy
 msgid "**Cover Art Archive: Release Group**"
 msgstr "**Cover Art Archive: Grup de publicacions**"
 
-#: ../../config/options_cover.rst:87
+#: ../../config/options_cover.rst:108
 #, fuzzy
 msgid ""
 "This provider uses the Cover Art Archive cover image assigned to the release "
@@ -223,12 +251,12 @@ msgstr ""
 "qualitat visual que tenir una representació exacta de la publicació. També "
 "és una bona opció secundària per al proveïdor de Cover Art Archive."
 
-#: ../../config/options_cover.rst:89
+#: ../../config/options_cover.rst:110
 #, fuzzy
 msgid "**Allowed Cover Art URLs**"
 msgstr "**URL de caràtules permesos**"
 
-#: ../../config/options_cover.rst:91
+#: ../../config/options_cover.rst:112
 #, fuzzy
 msgid ""
 "This will use images provided from approved third-party sites. The image "
@@ -241,7 +269,7 @@ msgstr ""
 "a la base de dades de MusicBrainz i només es poden fer servir llocs aprovats "
 "per a aquesta relació."
 
-#: ../../config/options_cover.rst:95
+#: ../../config/options_cover.rst:116
 #, fuzzy
 msgid ""
 "This relationship type is now deprecated in MusicBrainz, and is no longer "
@@ -250,16 +278,16 @@ msgid ""
 "information."
 msgstr ""
 "Aquest tipus de relació està obsolet a MusicBrainz i ja no es fa servir. Per "
-"a més informació, consulteu `Llista de caràtules permeses <https://"
-"wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ "
-"a la Guia d'estil."
+"a més informació, consulteu `Llista de caràtules permeses <https://wiki."
+"musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ a la "
+"Guia d'estil."
 
-#: ../../config/options_cover.rst:97
+#: ../../config/options_cover.rst:118
 #, fuzzy
 msgid "**Local Files**"
 msgstr "**Fitxers locals**"
 
-#: ../../config/options_cover.rst:99
+#: ../../config/options_cover.rst:120
 #, fuzzy
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
@@ -269,14 +297,14 @@ msgstr ""
 "carregar es poden configurar a les opcions del proveïdor :ref:`ref-local-"
 "files`."
 
-#: ../../config/options_cover.rst:101
+#: ../../config/options_cover.rst:122
 msgid ""
 "In addition to the built-in cover art providers described above, additional "
 "cover art providers can be installed as `plugins <https://picard.musicbrainz."
 "org/plugins/>`_. These include:"
 msgstr ""
 
-#: ../../config/options_cover.rst:103
+#: ../../config/options_cover.rst:124
 #, fuzzy
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
@@ -288,7 +316,7 @@ msgstr ""
 "proporciona una representació de la caràtula del grup de publicacions i no "
 "les publicacions específiques."
 
-#: ../../config/options_cover.rst:105
+#: ../../config/options_cover.rst:126
 #, fuzzy
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
@@ -296,12 +324,12 @@ msgid ""
 "provides cover art representative for the release group and not the "
 "individual release."
 msgstr ""
-"**TheAudioDB**: fa servir caràtules de `TheAudioDB <https://"
-"www.theaudiodb.com/>`_, que se centra en caràtules amb una alta qualitat "
-"visual. Aquest proveïdor proporciona una representació de la caràtula del "
-"grup de publicacions i no les publicacions específiques."
+"**TheAudioDB**: fa servir caràtules de `TheAudioDB <https://www.theaudiodb."
+"com/>`_, que se centra en caràtules amb una alta qualitat visual. Aquest "
+"proveïdor proporciona una representació de la caràtula del grup de "
+"publicacions i no les publicacions específiques."
 
-#: ../../config/options_cover.rst:109
+#: ../../config/options_cover.rst:130
 msgid ""
 "You must enable :menuselection:`\"Options --> Metadata --> Use release "
 "relationships\"` for Picard to be able to download cover art from "
@@ -311,11 +339,11 @@ msgstr ""
 "relacions de publicació»` perquè Picard pugui baixar les caràtules de les "
 "relacions de caràtules de MusicBrainz."
 
-#: ../../config/options_cover.rst:115
+#: ../../config/options_cover.rst:136
 #, fuzzy
 msgid ""
 "Details: :doc:`options_cover_art_processing` / :doc:"
 "`options_cover_art_archive` / :doc:`options_local_files`"
 msgstr ""
-"Detalls: :doc:`options_location` / :doc:`options_cover_art_providers` / "
-":doc:`options_cover_art_archive` / :doc:`options_local_files`"
+"Detalls: :doc:`options_location` / :doc:`options_cover_art_providers` / :doc:"
+"`options_cover_art_archive` / :doc:`options_local_files`"

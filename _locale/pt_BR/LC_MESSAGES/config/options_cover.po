@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"POT-Creation-Date: 2026-08-20 10:46-0600\n"
 "PO-Revision-Date: 2026-07-30 19:12+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.metabrainz.org/"
@@ -165,11 +165,39 @@ msgid ""
 "following file name for images\" setting."
 msgstr ""
 
+#: ../../config/options_cover.rst:75
+msgid "**Remove cover images from tags**"
+msgstr ""
+
 #: ../../config/options_cover.rst:77
-msgid "Cover Art Providers"
+msgid ""
+"When checked, Picard will automatically remove embedded cover images from "
+"your files when they are saved. This option is only available for setting if "
+"the \"*Embed cover images into tags*\" option is disabled."
 msgstr ""
 
 #: ../../config/options_cover.rst:79
+msgid ""
+"Images will only be removed if they are also being saved as separate files."
+msgstr ""
+
+#: ../../config/options_cover.rst:81
+msgid ""
+"Picard will **not** remove embedded cover images if the \"*Embed cover "
+"images into tags*\" option is enabled, even if the \"*Remove cover images "
+"from tags*\" option setting is enabled."
+msgstr ""
+
+#: ../../config/options_cover.rst:83
+msgid ""
+"Images being removed will be identified as such in the \"Album Info\" dialog."
+msgstr ""
+
+#: ../../config/options_cover.rst:98
+msgid "Cover Art Providers"
+msgstr ""
+
+#: ../../config/options_cover.rst:100
 msgid ""
 "Picard can download Cover Art from a number of sources, and you can choose "
 "which sources you want Picard to use. You can activate more than one "
@@ -177,11 +205,11 @@ msgid ""
 "will try the providers from top to bottom until an image is returned."
 msgstr ""
 
-#: ../../config/options_cover.rst:81
+#: ../../config/options_cover.rst:102
 msgid "**Cover Art Archive: Release**"
 msgstr ""
 
-#: ../../config/options_cover.rst:83
+#: ../../config/options_cover.rst:104
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
 "cooperation with the `Internet Archive <https://archive.org>`_. The Cover "
@@ -189,11 +217,11 @@ msgid ""
 "covers, back covers, booklets, CDs)."
 msgstr ""
 
-#: ../../config/options_cover.rst:85
+#: ../../config/options_cover.rst:106
 msgid "**Cover Art Archive: Release Group**"
 msgstr ""
 
-#: ../../config/options_cover.rst:87
+#: ../../config/options_cover.rst:108
 msgid ""
 "This provider uses the Cover Art Archive cover image assigned to the release "
 "group. This is usually the image that best describes the release group as a "
@@ -203,11 +231,11 @@ msgid ""
 "your release. It is also a good fallback for the Cover Art Archive provider."
 msgstr ""
 
-#: ../../config/options_cover.rst:89
+#: ../../config/options_cover.rst:110
 msgid "**Allowed Cover Art URLs**"
 msgstr ""
 
-#: ../../config/options_cover.rst:91
+#: ../../config/options_cover.rst:112
 msgid ""
 "This will use images provided from approved third-party sites. The image "
 "location is stored as a URL relationship for the release within the "
@@ -215,7 +243,7 @@ msgid ""
 "relationship."
 msgstr ""
 
-#: ../../config/options_cover.rst:95
+#: ../../config/options_cover.rst:116
 msgid ""
 "This relationship type is now deprecated in MusicBrainz, and is no longer "
 "used. See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/"
@@ -223,31 +251,31 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../config/options_cover.rst:97
+#: ../../config/options_cover.rst:118
 msgid "**Local Files**"
 msgstr ""
 
-#: ../../config/options_cover.rst:99
+#: ../../config/options_cover.rst:120
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
 "the :ref:`ref-local-files` provider options."
 msgstr ""
 
-#: ../../config/options_cover.rst:101
+#: ../../config/options_cover.rst:122
 msgid ""
 "In addition to the built-in cover art providers described above, additional "
 "cover art providers can be installed as `plugins <https://picard.musicbrainz."
 "org/plugins/>`_. These include:"
 msgstr ""
 
-#: ../../config/options_cover.rst:103
+#: ../../config/options_cover.rst:124
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
 "focuses on cover art with high visual quality. This provider provides cover "
 "art representative for the release group and not the individual release."
 msgstr ""
 
-#: ../../config/options_cover.rst:105
+#: ../../config/options_cover.rst:126
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
 ">`_, which focuses on cover art with high visual quality. This provider "
@@ -255,14 +283,14 @@ msgid ""
 "individual release."
 msgstr ""
 
-#: ../../config/options_cover.rst:109
+#: ../../config/options_cover.rst:130
 msgid ""
 "You must enable :menuselection:`\"Options --> Metadata --> Use release "
 "relationships\"` for Picard to be able to download cover art from "
 "MusicBrainz cover art relationships."
 msgstr ""
 
-#: ../../config/options_cover.rst:115
+#: ../../config/options_cover.rst:136
 msgid ""
 "Details: :doc:`options_cover_art_processing` / :doc:"
 "`options_cover_art_archive` / :doc:`options_local_files`"

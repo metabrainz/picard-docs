@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-08-20 10:46-0600\n"
 "PO-Revision-Date: 2026-07-30 19:12+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Last-Translator: mfmeulenbelt <mfmeulenbelt@users.noreply.translations."
+"metabrainz.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_cover/nl/>\n"
 "Language: nl\n"
@@ -222,12 +222,41 @@ msgstr ""
 "bestandsnaam die is ingesteld in de optie ‘De volgende bestandsnaam voor "
 "afbeeldingen gebruiken’."
 
+#: ../../config/options_cover.rst:75
+#, fuzzy
+msgid "**Remove cover images from tags**"
+msgstr "**Hoesafbeeldingen in tags opslaan**"
+
 #: ../../config/options_cover.rst:77
+msgid ""
+"When checked, Picard will automatically remove embedded cover images from "
+"your files when they are saved. This option is only available for setting if "
+"the \"*Embed cover images into tags*\" option is disabled."
+msgstr ""
+
+#: ../../config/options_cover.rst:79
+msgid ""
+"Images will only be removed if they are also being saved as separate files."
+msgstr ""
+
+#: ../../config/options_cover.rst:81
+msgid ""
+"Picard will **not** remove embedded cover images if the \"*Embed cover "
+"images into tags*\" option is enabled, even if the \"*Remove cover images "
+"from tags*\" option setting is enabled."
+msgstr ""
+
+#: ../../config/options_cover.rst:83
+msgid ""
+"Images being removed will be identified as such in the \"Album Info\" dialog."
+msgstr ""
+
+#: ../../config/options_cover.rst:98
 #, fuzzy
 msgid "Cover Art Providers"
 msgstr "Bronnen voor afbeeldingen"
 
-#: ../../config/options_cover.rst:79
+#: ../../config/options_cover.rst:100
 #, fuzzy
 msgid ""
 "Picard can download Cover Art from a number of sources, and you can choose "
@@ -241,12 +270,12 @@ msgstr ""
 "zal de bronnen van boven naar beneden langsgaan, tot er een afbeelding wordt "
 "gevonden."
 
-#: ../../config/options_cover.rst:81
+#: ../../config/options_cover.rst:102
 #, fuzzy
 msgid "**Cover Art Archive: Release**"
 msgstr "**Cover Art Archive: uitgave**"
 
-#: ../../config/options_cover.rst:83
+#: ../../config/options_cover.rst:104
 #, fuzzy
 msgid ""
 "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in "
@@ -259,12 +288,12 @@ msgstr ""
 "Het Cover Art Archive is de meest uitgebreide databank van hoesafbeeldingen "
 "(voorkanten, achterkanten, boekjes, cd’s)."
 
-#: ../../config/options_cover.rst:85
+#: ../../config/options_cover.rst:106
 #, fuzzy
 msgid "**Cover Art Archive: Release Group**"
 msgstr "**Cover Art Archive: uitgavegroep**"
 
-#: ../../config/options_cover.rst:87
+#: ../../config/options_cover.rst:108
 #, fuzzy
 msgid ""
 "This provider uses the Cover Art Archive cover image assigned to the release "
@@ -282,12 +311,12 @@ msgstr ""
 "een exacte weergave van je uitgave. Het is ook een goede achtervang voor de "
 "bron Cover Art Archive."
 
-#: ../../config/options_cover.rst:89
+#: ../../config/options_cover.rst:110
 #, fuzzy
 msgid "**Allowed Cover Art URLs**"
 msgstr "**Toegestane URL’s voor hoesafbeeldingen**"
 
-#: ../../config/options_cover.rst:91
+#: ../../config/options_cover.rst:112
 #, fuzzy
 msgid ""
 "This will use images provided from approved third-party sites. The image "
@@ -300,7 +329,7 @@ msgstr ""
 "voor de uitgave in de databank van MusicBrainz. Voor deze relatie kunnen "
 "alleen goedgekeurde websites worden gebruikt."
 
-#: ../../config/options_cover.rst:95
+#: ../../config/options_cover.rst:116
 msgid ""
 "This relationship type is now deprecated in MusicBrainz, and is no longer "
 "used. See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/"
@@ -308,12 +337,12 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../config/options_cover.rst:97
+#: ../../config/options_cover.rst:118
 #, fuzzy
 msgid "**Local Files**"
 msgstr "**Lokale bestanden**"
 
-#: ../../config/options_cover.rst:99
+#: ../../config/options_cover.rst:120
 #, fuzzy
 msgid ""
 "Load cover art from local files. The file names to load can be configured in "
@@ -322,26 +351,26 @@ msgstr ""
 "Hoesafbeeldingen uit lokale bestanden halen. De te laden bestandsnamen "
 "kunnen in :ref:`ref-local-files` worden ingesteld."
 
-#: ../../config/options_cover.rst:101
+#: ../../config/options_cover.rst:122
 msgid ""
 "In addition to the built-in cover art providers described above, additional "
 "cover art providers can be installed as `plugins <https://picard.musicbrainz."
 "org/plugins/>`_. These include:"
 msgstr ""
 
-#: ../../config/options_cover.rst:103
+#: ../../config/options_cover.rst:124
 #, fuzzy
 msgid ""
 "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which "
 "focuses on cover art with high visual quality. This provider provides cover "
 "art representative for the release group and not the individual release."
 msgstr ""
-"**fanart.tv**: Gebruikt hoesafbeeldingen van `fanart.tv <https://fanart.tv/>"
-"`_, een databank gericht op hoesafbeeldingen van goede kwaliteit. Deze bron "
+"**fanart.tv**: Gebruikt hoesafbeeldingen van `fanart.tv <https://fanart.tv/"
+">`_, een databank gericht op hoesafbeeldingen van goede kwaliteit. Deze bron "
 "biedt hoesafbeeldingen die representatief zijn voor de uitgavegroep en niet "
 "voor afzonderlijke uitgaven."
 
-#: ../../config/options_cover.rst:105
+#: ../../config/options_cover.rst:126
 #, fuzzy
 msgid ""
 "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/"
@@ -349,12 +378,12 @@ msgid ""
 "provides cover art representative for the release group and not the "
 "individual release."
 msgstr ""
-"**TheAudioDB**: Gebruikt hoesafbeeldingen van `TheAudioDB <https://"
-"www.theaudiodb.com/>`_, een databank gericht op hoesafbeeldingen van goede "
+"**TheAudioDB**: Gebruikt hoesafbeeldingen van `TheAudioDB <https://www."
+"theaudiodb.com/>`_, een databank gericht op hoesafbeeldingen van goede "
 "kwaliteit. Deze bron biedt hoesafbeeldingen die representatief zijn voor de "
 "uitgavegroep en niet voor afzonderlijke uitgaven."
 
-#: ../../config/options_cover.rst:109
+#: ../../config/options_cover.rst:130
 msgid ""
 "You must enable :menuselection:`\"Options --> Metadata --> Use release "
 "relationships\"` for Picard to be able to download cover art from "
@@ -364,11 +393,11 @@ msgstr ""
 "downloaden, moet je :menuselection:`‘Opties --> Metadata --> Uitgaverelaties "
 "gebruiken’` inschakelen."
 
-#: ../../config/options_cover.rst:115
+#: ../../config/options_cover.rst:136
 #, fuzzy
 msgid ""
 "Details: :doc:`options_cover_art_processing` / :doc:"
 "`options_cover_art_archive` / :doc:`options_local_files`"
 msgstr ""
-"Details: :doc:`options_location` / :doc:`options_cover_art_providers` / "
-":doc:`options_cover_art_archive` / :doc:`options_local_files`"
+"Details: :doc:`options_location` / :doc:`options_cover_art_providers` / :doc:"
+"`options_cover_art_archive` / :doc:`options_local_files`"
