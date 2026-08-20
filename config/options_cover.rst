@@ -80,6 +80,19 @@
 
    Picard will **not** remove embedded cover images if the "*Embed cover images into tags*" option is enabled, even if the "*Remove cover images from tags*" option setting is enabled.
 
+   Images being removed will be identified as such in the "Album Info" dialog.
+
+   .. only:: not latex
+
+      .. image:: images/options-cover-remove-embedded.png
+         :align: center
+
+   .. only:: latex
+
+      .. image:: images/options-cover-remove-embedded.png
+         :width: 70%
+         :align: center
+
 
 Cover Art Providers
 -------------------
