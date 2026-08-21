@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-20 10:46-0600\n"
-"PO-Revision-Date: 2026-07-30 19:12+0000\n"
+"PO-Revision-Date: 2026-08-21 17:12+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_cover/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../config/options_cover.rst:4
@@ -225,9 +225,8 @@ msgstr ""
 "images »."
 
 #: ../../config/options_cover.rst:75
-#, fuzzy
 msgid "**Remove cover images from tags**"
-msgstr "**Intégrer des images de couverture dans les balises**"
+msgstr "**Supprimer les images de couverture des balises**"
 
 #: ../../config/options_cover.rst:77
 msgid ""
@@ -235,11 +234,17 @@ msgid ""
 "your files when they are saved. This option is only available for setting if "
 "the \"*Embed cover images into tags*\" option is disabled."
 msgstr ""
+"Lorsque cette case est cochée, Picard supprimera automatiquement les images "
+"de couverture intégrées de vos fichiers lors de leur enregistrement. Cette "
+"option n'est disponible que si l'option « *Intégrer les images de couverture "
+"dans les balises* » est désactivée."
 
 #: ../../config/options_cover.rst:79
 msgid ""
 "Images will only be removed if they are also being saved as separate files."
 msgstr ""
+"Les images ne seront supprimées que si elles sont également enregistrées "
+"dans des fichiers distincts."
 
 #: ../../config/options_cover.rst:81
 msgid ""
@@ -247,11 +252,16 @@ msgid ""
 "images into tags*\" option is enabled, even if the \"*Remove cover images "
 "from tags*\" option setting is enabled."
 msgstr ""
+"Picard ne supprimera **pas** les images de couverture intégrées si l'option "
+"« *Intégrer les images de couverture dans les balises* » est activée, même "
+"si l'option « *Supprimer les images de couverture des balises* » est activée."
 
 #: ../../config/options_cover.rst:83
 msgid ""
 "Images being removed will be identified as such in the \"Album Info\" dialog."
 msgstr ""
+"Les images en cours de suppression seront signalées comme telles dans la "
+"boîte de dialogue « Informations sur l'album »."
 
 #: ../../config/options_cover.rst:98
 msgid "Cover Art Providers"
