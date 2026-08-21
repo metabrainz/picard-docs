@@ -32,7 +32,7 @@ Changes made to a profile's options settings, enabled status, or position in the
 :index:`Backing Up and Sharing Profiles <profiles; backing up and sharing>`
 -----------------------------------------------------------------------------
 
-As of Picard v3.0 you have the ability to export option profiles for backup purposes or to share with others.
+You have the ability to export option profiles for backup purposes or to share with others, and import option profiles previously exported.
 
 
 :index:`Exporting a profile definition <profiles; exporting>`
@@ -68,6 +68,16 @@ The choices for the export mode are:
 - **Backup**: Nothing will be excluded from the export. This should **only** be selected for personal backup copies of your profiles that are not shared with others.
 
 Once you have confirmed your choice of export mode, a file browser dialog will open to allow you to select the directory and file name of the output file. The profile exports are saved as ``*.toml`` files, which can be viewed or modified with a text editor.
+
+You can also export a profile in "Share" mode to the clipboard from the context menu displayed when you right-click on the profile.
+
+.. image:: images/options-profiles-context-menu.png
+   :width: 70%
+   :align: center
+
+.. only:: not latex
+
+   |
 
 
 :index:`Importing a profile definition <profiles; importing>`
