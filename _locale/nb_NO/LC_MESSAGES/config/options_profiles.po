@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"POT-Creation-Date: 2026-08-21 12:48-0600\n"
 "PO-Revision-Date: 2026-07-30 19:12+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://translations.metabrainz.org/"
@@ -82,6 +82,133 @@ msgid ""
 msgstr ""
 
 #: ../../config/options_profiles.rst:33
+msgid ""
+":index:`Backing Up and Sharing Profiles <profiles; backing up and sharing>`"
+msgstr ""
+
+#: ../../config/options_profiles.rst:35
+msgid ""
+"You have the ability to export option profiles for backup purposes or to "
+"share with others, and import option profiles previously exported."
+msgstr ""
+
+#: ../../config/options_profiles.rst:39
+msgid ":index:`Exporting a profile definition <profiles; exporting>`"
+msgstr ""
+
+#: ../../config/options_profiles.rst:41
+msgid ""
+"When you click the :guilabel:`Export` button, the currently selected "
+"(highlighted) profile can be output to a file. The export contains the "
+"following information:"
+msgstr ""
+
+#: ../../config/options_profiles.rst:43
+msgid "title of the profile"
+msgstr ""
+
+#: ../../config/options_profiles.rst:44
+msgid "unique identifier assigned to the profile"
+msgstr ""
+
+#: ../../config/options_profiles.rst:45
+msgid "version of the profile export format used"
+msgstr ""
+
+#: ../../config/options_profiles.rst:46
+msgid "version of Picard that created the profile export"
+msgstr ""
+
+#: ../../config/options_profiles.rst:47
+msgid "date that the profile was exported"
+msgstr ""
+
+#: ../../config/options_profiles.rst:48
+msgid "list of which settings are controlled by the profile"
+msgstr ""
+
+#: ../../config/options_profiles.rst:49
+msgid "values of the settings controlled by the profile"
+msgstr ""
+
+#: ../../config/options_profiles.rst:51
+msgid "You will first be asked to select the mode for the export."
+msgstr ""
+
+#: ../../config/options_profiles.rst:65
+msgid "The choices for the export mode are:"
+msgstr ""
+
+#: ../../config/options_profiles.rst:67
+msgid ""
+"**Share**: All sensitive data such as account identification, passwords and "
+"directory paths will be excluded from the export. This option is the "
+"default, and should be used for any exports that you plan to make public or "
+"share with others."
+msgstr ""
+
+#: ../../config/options_profiles.rst:68
+msgid ""
+"**Backup**: Nothing will be excluded from the export. This should **only** "
+"be selected for personal backup copies of your profiles that are not shared "
+"with others."
+msgstr ""
+
+#: ../../config/options_profiles.rst:70
+msgid ""
+"Once you have confirmed your choice of export mode, a file browser dialog "
+"will open to allow you to select the directory and file name of the output "
+"file. The profile exports are saved as ``*.toml`` files, which can be viewed "
+"or modified with a text editor."
+msgstr ""
+
+#: ../../config/options_profiles.rst:72
+msgid ""
+"You can also export a profile in \"Share\" mode to the clipboard from the "
+"context menu displayed when you right-click on the profile."
+msgstr ""
+
+#: ../../config/options_profiles.rst:84
+msgid ":index:`Importing a profile definition <profiles; importing>`"
+msgstr ""
+
+#: ../../config/options_profiles.rst:86
+msgid ""
+"To import a profile definition, you click the :guilabel:`Import` button. "
+"This allows you to import the profile either from a profile export file, or "
+"from a profile definition currently in the clipboard. If importing from a "
+"file, a file browser dialog will open to allow you to select the file to "
+"import."
+msgstr ""
+
+#: ../../config/options_profiles.rst:88
+msgid ""
+"Once the import source has been selected, Picard will verify that the import "
+"is a valid profile definition. If it is valid, a new profile based on the "
+"profile definition imported will be added at the top of your list of "
+"profiles."
+msgstr ""
+
+#: ../../config/options_profiles.rst:92
+msgid ""
+"When importing a profile definition, if there is already a profile with the "
+"same name in your list, you are prompted as to whether you want to create a "
+"new copy or overwrite the existing profile."
+msgstr ""
+
+#: ../../config/options_profiles.rst:102
+msgid ""
+"If you choose to create a copy, the new profile will be added with a copy "
+"number appended to the title, such as \"ByeByeWin (2)\"."
+msgstr ""
+
+#: ../../config/options_profiles.rst:104
+msgid ""
+"When you import a profile, you are also prompted as to whether you want the "
+"new profile to be enabled after import."
+msgstr ""
+
+#: ../../config/options_profiles.rst:109
 msgid ""
 "Please see the :doc:`../usage/option_profiles` section for a detailed "
 "explanation of the profile system."
