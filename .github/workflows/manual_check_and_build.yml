@@ -6,12 +6,12 @@ on:
       pythonVersion:
         description: 'Python version to use for the processing'
         required: true
-        default: '3.11'
+        default: '3.14'
         type: choice
         options:
-          - 3.11
           - 3.12
           - 3.13
+          - 3.14
 
 jobs:
   lint_rst_and_basic_build:
@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
       with:
-        fetch-depth: 0
+        fetch-depth: 1
     - name: Set up Python ${{ inputs.pythonVersion }}
       uses: actions/setup-python@v7
       with:
@@ -29,6 +29,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install -r requirements_dev.txt
     - name: Lint Test RST Files
       run: python ./dev_utils.py test rst
     - name: Setup for Build

@@ -87,6 +87,7 @@ exclude_patterns = [
     '_locale',
     '_project_documentation',
     '__pycache__',
+    '.venv',
     'Thumbs.db',
     '.DS_Store',
     'html',
