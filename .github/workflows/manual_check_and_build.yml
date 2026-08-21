@@ -6,12 +6,12 @@ on:
       pythonVersion:
         description: 'Python version to use for the processing'
         required: true
-        default: '3.11'
+        default: '3.14'
         type: choice
         options:
-          - 3.11
           - 3.12
           - 3.13
+          - 3.14
 
 jobs:
   lint_rst_and_basic_build:
