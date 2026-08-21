@@ -89,6 +89,8 @@ The next screen of the setup wizard allows the user to configure how Picard shou
 
 This screen allows the user to choose whether tagged files should have cover art images embedded in the audio files, and if the cover art image files should be saved in the folder with the audio files.
 
+It also allows the user to choose if release group cover art is used instead of cover art for the specific release. Release group cover art usually provides higher quality images, but they may not exactly match the cover for your specific release.
+
 
 Setup Wizard - Updates
 +++++++++++++++++++++++
