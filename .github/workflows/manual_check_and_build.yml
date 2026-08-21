@@ -29,6 +29,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install -r requirements_dev.txt
     - name: Lint Test RST Files
       run: python ./dev_utils.py test rst
     - name: Setup for Build
