@@ -9,7 +9,7 @@ printenv
 
 echo ""
 echo "Build LaTeX files"
-sphinx-build -M latex . _build -D language=$READTHEDOCS_LANGUAGE
+sphinx-build -M latex . _build -W --keep-going -D language=$READTHEDOCS_LANGUAGE
 
 echo ""
 echo "List output files"
