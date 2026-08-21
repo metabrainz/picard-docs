@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-21 12:48-0600\n"
-"PO-Revision-Date: 2026-08-21 19:05+0000\n"
+"PO-Revision-Date: 2026-08-21 19:15+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/configoptions_profiles/fr/>\n"
@@ -170,19 +170,19 @@ msgstr "date à laquelle le profil a été exporté"
 
 #: ../../config/options_profiles.rst:48
 msgid "list of which settings are controlled by the profile"
-msgstr ""
+msgstr "liste des paramètres gérés par le profil"
 
 #: ../../config/options_profiles.rst:49
 msgid "values of the settings controlled by the profile"
-msgstr ""
+msgstr "valeurs des paramètres gérés par le profil"
 
 #: ../../config/options_profiles.rst:51
 msgid "You will first be asked to select the mode for the export."
-msgstr ""
+msgstr "On vous demandera tout d'abord de choisir le mode d'exportation."
 
 #: ../../config/options_profiles.rst:65
 msgid "The choices for the export mode are:"
-msgstr ""
+msgstr "Les options disponibles pour le mode d'exportation sont les suivantes :"
 
 #: ../../config/options_profiles.rst:67
 msgid ""
@@ -191,6 +191,11 @@ msgid ""
 "default, and should be used for any exports that you plan to make public or "
 "share with others."
 msgstr ""
+"**Partager** : toutes les données sensibles, telles que les identifiants de "
+"compte, les mots de passe et les chemins d'accès aux répertoires, seront "
+"exclues de l'exportation. Cette option est sélectionnée par défaut et doit "
+"être utilisée pour toutes les exportations que vous prévoyez de rendre "
+"publiques ou de partager avec d'autres personnes."
 
 #: ../../config/options_profiles.rst:68
 msgid ""
@@ -198,6 +203,9 @@ msgid ""
 "be selected for personal backup copies of your profiles that are not shared "
 "with others."
 msgstr ""
+"**Sauvegarde** : aucun élément ne sera exclu de l'exportation. Cette option "
+"ne doit être sélectionnée **que** pour les copies de sauvegarde personnelles "
+"de vos profils qui ne sont pas partagées avec d'autres personnes."
 
 #: ../../config/options_profiles.rst:70
 msgid ""
@@ -206,17 +214,24 @@ msgid ""
 "file. The profile exports are saved as ``*.toml`` files, which can be viewed "
 "or modified with a text editor."
 msgstr ""
+"Une fois que vous aurez confirmé le mode d'exportation choisi, une boîte de "
+"dialogue d'exploration de fichiers s'ouvrira pour vous permettre de "
+"sélectionner le répertoire et le nom du fichier de sortie. Les exportations "
+"de profils sont enregistrées sous forme de fichiers ``*.toml``, qui peuvent "
+"être consultés ou modifiés à l'aide d'un éditeur de texte."
 
 #: ../../config/options_profiles.rst:72
 msgid ""
 "You can also export a profile in \"Share\" mode to the clipboard from the "
 "context menu displayed when you right-click on the profile."
 msgstr ""
+"Vous pouvez également exporter un profil en mode « Partager » vers le presse-"
+"papiers à partir du menu contextuel qui s'affiche lorsque vous cliquez avec "
+"le bouton droit de la souris sur le profil."
 
 #: ../../config/options_profiles.rst:84
-#, fuzzy
 msgid ":index:`Importing a profile definition <profiles; importing>`"
-msgstr ":index:`Options de profil <configuration; profils, profils; option>`"
+msgstr ":index:`Importation d'une définition de profil <profiles; importing>`"
 
 #: ../../config/options_profiles.rst:86
 msgid ""
@@ -226,6 +241,12 @@ msgid ""
 "file, a file browser dialog will open to allow you to select the file to "
 "import."
 msgstr ""
+"Pour importer une définition de profil, cliquez sur le bouton "
+":guilabel:`Importer`. Cela vous permet d'importer le profil soit à partir "
+"d'un fichier d'exportation de profil, soit à partir d'une définition de "
+"profil actuellement dans le presse-papiers. Si vous importez à partir d'un "
+"fichier, une boîte de dialogue d'exploration de fichiers s'ouvrira pour vous "
+"permettre de sélectionner le fichier à importer."
 
 #: ../../config/options_profiles.rst:88
 msgid ""
@@ -234,6 +255,10 @@ msgid ""
 "profile definition imported will be added at the top of your list of "
 "profiles."
 msgstr ""
+"Une fois la source d'importation sélectionnée, Picard vérifiera que "
+"l'importation correspond à une définition de profil valide. Si c'est le cas, "
+"un nouveau profil basé sur la définition importée sera ajouté en haut de "
+"votre liste de profils."
 
 #: ../../config/options_profiles.rst:92
 msgid ""
@@ -241,18 +266,25 @@ msgid ""
 "same name in your list, you are prompted as to whether you want to create a "
 "new copy or overwrite the existing profile."
 msgstr ""
+"Lors de l'importation d'une définition de profil, s'il existe déjà un profil "
+"portant le même nom dans votre liste, le système vous demande si vous "
+"souhaitez créer une nouvelle copie ou remplacer le profil existant."
 
 #: ../../config/options_profiles.rst:102
 msgid ""
 "If you choose to create a copy, the new profile will be added with a copy "
 "number appended to the title, such as \"ByeByeWin (2)\"."
 msgstr ""
+"Si vous choisissez de créer une copie, le nouveau profil sera ajouté avec un "
+"numéro de copie ajouté à son titre, par exemple « ByeByeWin (2) »."
 
 #: ../../config/options_profiles.rst:104
 msgid ""
 "When you import a profile, you are also prompted as to whether you want the "
 "new profile to be enabled after import."
 msgstr ""
+"Lorsque vous importez un profil, le système vous demande également si vous "
+"souhaitez que le nouveau profil soit activé après l'importation."
 
 #: ../../config/options_profiles.rst:109
 msgid ""
