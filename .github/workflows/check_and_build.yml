@@ -58,9 +58,7 @@ jobs:
       run: python ./dev_utils.py test rst
     - name: Setup for Build
       run: |
-        export SPHINXBUILD=`which sphinx-build`
         mkdir _build
-        mkdir docs
     - name: Build Tag Map Files
       run: |
         python ./dev_utils.py build map
