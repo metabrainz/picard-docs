@@ -692,7 +692,9 @@ class LintRST():    # pylint: disable=too-many-instance-attributes
         Returns:
             {int} -- Error code 1 if check failed, otherwise 0.
         """
-        for dir_name, _subdir_list, file_list in os.walk(root_dir):
+        skip_dirs = {'.venv', '.git', '_build', '__pycache__', 'node_modules'}
+        for dir_name, subdir_list, file_list in os.walk(root_dir):
+            subdir_list[:] = [d for d in subdir_list if d not in skip_dirs]
             for fname in file_list:
                 if str(fname).lower().endswith('.rst'):
                     self.check_file(os.path.join(dir_name, fname))
