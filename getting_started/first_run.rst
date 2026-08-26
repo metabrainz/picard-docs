@@ -92,10 +92,10 @@ This screen allows the user to choose whether tagged files should have cover art
 It also allows the user to choose if release group cover art is used instead of cover art for the specific release. Release group cover art usually provides higher quality images, but they may not exactly match the cover for your specific release.
 
 
-Setup Wizard - Updates
-+++++++++++++++++++++++
+Setup Wizard - Additional Metadata
++++++++++++++++++++++++++++++++++++
 
-The final screen of the setup wizard allows the user to configure how Picard should handle checking for updates.
+The next screen of the setup wizard allows the user to configure how much detail Picard retrieves from MusicBrainz.
 
 .. only:: not latex
 
@@ -107,6 +107,27 @@ The final screen of the setup wizard allows the user to configure how Picard sho
 .. only:: latex
 
    .. image:: images/first_run_wizard_4.png
+      :align: center
+      :width: 75%
+
+This screen allows the user to choose whether Picard should include detailed track relationships such as performers and composers when downloading album information from MusicBrainz. This additional information could include the composer and performers for each track.
+
+
+Setup Wizard - Updates
++++++++++++++++++++++++
+
+The final screen of the setup wizard allows the user to configure how Picard should handle checking for updates.
+
+.. only:: not latex
+
+   .. image:: images/first_run_wizard_5.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/first_run_wizard_5.png
       :align: center
       :width: 75%
 
