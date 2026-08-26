@@ -23,6 +23,8 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
    A multi-value variable containing the names of the album's artists. These could be either "standardized" or "as credited" depending on whether the "Use standardized artist names" metadata option is enabled. (*since Picard 1.3*)
 
+   As of Picard 3.0 this variable has been promoted to a tag, and this new tag should be used in scripting as ``%albumartists%``. This variable has been retained for backwards compatibility.
+
 **_albumartistcomment**
 
     The disambiguation comment for the album artist. Only set for single-artist credits, empty for collaborations. (*since Picard 3.0*)

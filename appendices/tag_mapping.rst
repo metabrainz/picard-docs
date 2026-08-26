@@ -121,6 +121,21 @@ Album Artist Sort Order
    "RIFF INFO", "n/a"
 
 
+Album Artists
+--------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``albumartists``"
+   "ID3v2", "``TXXX:ALBUMARTISTS``"
+   "Vorbis", "``ALBUMARTISTS``"
+   "APEv2", "``ALBUMARTISTS``"
+   "iTunes MP4", "``----:com.apple.iTunes:ALBUMARTISTS``"
+   "ASF/Windows Media", "``WM/ALBUMARTISTS``"
+   "RIFF INFO", "n/a"
+
+
 Album Sort Order [#f4]_
 ------------------------
 .. csv-table::

@@ -219,6 +219,15 @@ TAG_MAP = [
         wmp=TagMapInfo('WM/AlbumArtistSortOrder'),
     ),
     TagMap(
+        tag_name='Album Artists',
+        picard=TagMapInfo('albumartists'),
+        id3v2=TagMapInfo('TXXX:ALBUMARTISTS'),
+        vorbis=TagMapInfo('ALBUMARTISTS'),
+        apev2=TagMapInfo('ALBUMARTISTS'),
+        itunes=TagMapInfo('----:com.apple.iTunes:ALBUMARTISTS'),
+        wmp=TagMapInfo('WM/ALBUMARTISTS'),
+    ),
+    TagMap(
         tag_name='Album Sort Order',
         picard=TagMapInfo('albumsort'),
         id3v2=TagMapInfo('TSOA'),
