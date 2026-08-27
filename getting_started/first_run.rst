@@ -13,14 +13,14 @@ The first screen displays a warning that Picard is a powerful tool that can modi
 
 .. only:: not latex
 
-   .. image:: images/initial_warning.png
+   .. image:: images/startup_warning.png
       :align: center
 
    |
 
 .. only:: latex
 
-   .. image:: images/initial_warning.png
+   .. image:: images/startup_warning.png
       :align: center
       :width: 75%
 
@@ -34,14 +34,14 @@ Once the initial warning screen is acknowledged, the setup wizard is displayed t
 
 .. only:: not latex
 
-   .. image:: images/first_run_wizard_1.png
+   .. image:: images/first_run_wizard_introduction.png
       :align: center
 
    |
 
 .. only:: latex
 
-   .. image:: images/first_run_wizard_1.png
+   .. image:: images/first_run_wizard_introduction.png
       :align: center
       :width: 75%
 
@@ -55,14 +55,14 @@ This is the first setting screen of the setup wizard, which allows the user to c
 
 .. only:: not latex
 
-   .. image:: images/first_run_wizard_2.png
+   .. image:: images/first_run_wizard_file_org.png
       :align: center
 
    |
 
 .. only:: latex
 
-   .. image:: images/first_run_wizard_2.png
+   .. image:: images/first_run_wizard_file_org.png
       :align: center
       :width: 75%
 
@@ -76,20 +76,41 @@ The next screen of the setup wizard allows the user to configure how Picard shou
 
 .. only:: not latex
 
-   .. image:: images/first_run_wizard_3.png
+   .. image:: images/first_run_wizard_coverart.png
       :align: center
 
    |
 
 .. only:: latex
 
-   .. image:: images/first_run_wizard_3.png
+   .. image:: images/first_run_wizard_coverart.png
       :align: center
       :width: 75%
 
 This screen allows the user to choose whether tagged files should have cover art images embedded in the audio files, and if the cover art image files should be saved in the folder with the audio files.
 
 It also allows the user to choose if release group cover art is used instead of cover art for the specific release. Release group cover art usually provides higher quality images, but they may not exactly match the cover for your specific release.
+
+
+Setup Wizard - Additional Metadata
++++++++++++++++++++++++++++++++++++
+
+The next screen of the setup wizard allows the user to configure how much detail Picard retrieves from MusicBrainz.
+
+.. only:: not latex
+
+   .. image:: images/first_run_wizard_track_rels.png
+      :align: center
+
+   |
+
+.. only:: latex
+
+   .. image:: images/first_run_wizard_track_rels.png
+      :align: center
+      :width: 75%
+
+This screen allows the user to choose whether Picard should include detailed track relationships such as performers and composers when downloading album information from MusicBrainz. This additional information could include the composer and performers for each track.
 
 
 Setup Wizard - Updates
@@ -99,14 +120,14 @@ The final screen of the setup wizard allows the user to configure how Picard sho
 
 .. only:: not latex
 
-   .. image:: images/first_run_wizard_4.png
+   .. image:: images/first_run_wizard_update_checks.png
       :align: center
 
    |
 
 .. only:: latex
 
-   .. image:: images/first_run_wizard_4.png
+   .. image:: images/first_run_wizard_update_checks.png
       :align: center
       :width: 75%
 
