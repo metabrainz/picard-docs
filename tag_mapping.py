@@ -222,7 +222,7 @@ TAG_MAP = [
         picard=TagMapInfo('albumartists'),
         id3v2=TagMapInfo('TXXX:ALBUMARTISTS'),
         vorbis=TagMapInfo('ALBUMARTISTS'),
-        apev2=TagMapInfo('Albumartists'),
+        apev2=TagMapInfo('ALBUMARTISTS'),
         itunes=TagMapInfo('----:com.apple.iTunes:ALBUMARTISTS'),
         wmp=TagMapInfo('WM/ALBUMARTISTS'),
     ),

@@ -130,7 +130,7 @@ Album Artists
    "Internal Name", "``albumartists``"
    "ID3v2", "``TXXX:ALBUMARTISTS``"
    "Vorbis", "``ALBUMARTISTS``"
-   "APEv2", "``Albumartists``"
+   "APEv2", "``ALBUMARTISTS``"
    "iTunes MP4", "``----:com.apple.iTunes:ALBUMARTISTS``"
    "ASF/Windows Media", "``WM/ALBUMARTISTS``"
    "RIFF INFO", "n/a"
