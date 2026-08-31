@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 08:43+0200\n"
+"POT-Creation-Date: 2026-08-31 14:46-0600\n"
 "PO-Revision-Date: 2026-07-30 19:15+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -121,22 +121,39 @@ msgstr ""
 "artiestennamen gebruiken’."
 
 #: ../../variables/tags_basic.rst:37
-msgid "**albumartistsort**"
+msgid "**albumartists**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:39
+#, fuzzy
 msgid ""
-"The release artists sort names, separated by the specified join phrases. "
-"(e.g.: \"Beatles, The\")"
+"A multi-value variable containing the names of the album's artists. These "
+"could be either \"standardized\" or \"as credited\" depending on whether the "
+"\"Use standardized artist names\" metadata option is enabled. (*since Picard "
+"3.0*)"
+msgstr ""
+"Een meervoudige tag met de namen van de artiesten van het nummer. Deze namen "
+"kunnen ‘gestandaardiseerd’ of ‘zoals vermeld’ zijn, afhankelijk van de "
+"instelling van ‘Gestandaardiseerde artiestennamen gebruiken’. (*Sinds Picard "
+"1.3.*)"
+
+#: ../../variables/tags_basic.rst:41
+msgid "**albumartistsort**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:43
+msgid ""
+"The release artists sort names, separated by the specified join phrases. (e."
+"g.: \"Beatles, The\")"
 msgstr ""
 "De sorteernamen van de artiesten van de uitgave, gescheiden door de "
 "opgegeven ‘koppelzinnen’. (bijv. ‘Beatles, The’)"
 
-#: ../../variables/tags_basic.rst:41
+#: ../../variables/tags_basic.rst:45
 msgid "**artist**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:43
+#: ../../variables/tags_basic.rst:47
 msgid ""
 "The track artist names, separated by the specified join phrases. These could "
 "be either \"standardized\" or \"as credited\" depending on whether the \"Use "
@@ -147,11 +164,11 @@ msgstr ""
 "vermeld’ zijn, afhankelijk van de instelling van ‘Gestandaardiseerde "
 "artiestennamen gebruiken’."
 
-#: ../../variables/tags_basic.rst:45
+#: ../../variables/tags_basic.rst:49
 msgid "**artists**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:47
+#: ../../variables/tags_basic.rst:51
 msgid ""
 "A multi-value tag containing the track artist names. These could be either "
 "\"standardized\" or \"as credited\" depending on whether the \"Use "
@@ -162,21 +179,21 @@ msgstr ""
 "instelling van ‘Gestandaardiseerde artiestennamen gebruiken’. (*Sinds Picard "
 "1.3.*)"
 
-#: ../../variables/tags_basic.rst:49
+#: ../../variables/tags_basic.rst:53
 msgid "**artistsort**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:51
+#: ../../variables/tags_basic.rst:55
 msgid "The track artists sort names, separated by the specified join phrases."
 msgstr ""
 "De sorteernamen van de artiesten van het nummer, gescheiden door de "
 "opgegeven ‘koppelzinnen’."
 
-#: ../../variables/tags_basic.rst:53
+#: ../../variables/tags_basic.rst:57
 msgid "**asin**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:55
+#: ../../variables/tags_basic.rst:59
 msgid ""
 "The Amazon Standard Identification Number - the number identifying the item "
 "on Amazon."
@@ -184,19 +201,19 @@ msgstr ""
 "Het Amazon Standard Identification Number, een identificatiecode die Amazon "
 "voor uitgaven gebruikt."
 
-#: ../../variables/tags_basic.rst:57
+#: ../../variables/tags_basic.rst:61
 msgid "**barcode**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:59
+#: ../../variables/tags_basic.rst:63
 msgid "The barcode assigned to the release."
 msgstr "De streepjescode van de uitgave."
 
-#: ../../variables/tags_basic.rst:61
+#: ../../variables/tags_basic.rst:65
 msgid "**catalognumber**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:63
+#: ../../variables/tags_basic.rst:67
 msgid ""
 "A multi-value tag contining the numbers assigned to the release by the "
 "labels, which can often be found on the spine or near the barcode. There may "
@@ -207,11 +224,11 @@ msgstr ""
 "streepjescode. Een uitgave kan meer dan één streepjescode hebben, vooral als "
 "er meerdere platenmaatschappijen bij zijn betrokken."
 
-#: ../../variables/tags_basic.rst:65
+#: ../../variables/tags_basic.rst:69
 msgid "**comment**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:67
+#: ../../variables/tags_basic.rst:71
 msgid ""
 "The disambiguation comment entered to help distinguish one release from "
 "another (e.g.: Deluxe version with 2 bonus tracks). This is not populated by "
@@ -224,11 +241,11 @@ msgstr ""
 "ingevuld. Picard slaat deze informatie op in de variabele "
 "**_releasecomment**."
 
-#: ../../variables/tags_basic.rst:69
+#: ../../variables/tags_basic.rst:73
 msgid "**compilation**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:71
+#: ../../variables/tags_basic.rst:0
 msgid ""
 "1 for Various Artist albums, otherwise empty. (*since Picard 1.3, compatible "
 "with iTunes*)"
@@ -236,7 +253,7 @@ msgstr ""
 "Bij uitgaven van diverse artiesten is de waarde 1, anders blijft de tag "
 "leeg. (*Sinds Picard 1.3, compatibel met iTunes.*)"
 
-#: ../../variables/tags_basic.rst:72
+#: ../../variables/tags_basic.rst:0
 msgid ""
 "1 if multiple track artists (including featured artists), otherwise 0. "
 "(*Picard 1.2 or previous*)"
@@ -244,35 +261,35 @@ msgstr ""
 "Bij nummers van meerdere artiesten (inclusief gastartiesten) 1, anders "
 "blijft de tag leeg. (*Picard 1.2 of eerder.*)"
 
-#: ../../variables/tags_basic.rst:74
+#: ../../variables/tags_basic.rst:78
 msgid "**date**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:76
+#: ../../variables/tags_basic.rst:80
 msgid "The date that the release (album) was issued, in the format YYYY-MM-DD."
 msgstr "De datum waarop de uitgave is uitgegeven, in de indeling JJJJ-MM-DD."
 
-#: ../../variables/tags_basic.rst:78
+#: ../../variables/tags_basic.rst:82
 msgid "**discnumber**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:80
+#: ../../variables/tags_basic.rst:84
 msgid "The number of the disc in the release that contains this track."
 msgstr "Het nummer van het medium waarop dit nummer staat."
 
-#: ../../variables/tags_basic.rst:82
+#: ../../variables/tags_basic.rst:86
 msgid "**discsubtitle**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:84
+#: ../../variables/tags_basic.rst:88
 msgid "The media title given to a specific disc in the release."
 msgstr "De titel van een specifiek medium van de uitgave."
 
-#: ../../variables/tags_basic.rst:86
+#: ../../variables/tags_basic.rst:90
 msgid "**isrc**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:88
+#: ../../variables/tags_basic.rst:92
 msgid ""
 "The International Standard Recording Code - an international standard code "
 "for uniquely identifying sound recordings and music video recordings. See "
@@ -286,11 +303,11 @@ msgstr ""
 "International_Standard_Recording_Code>`_ voor meer informatie. (*Sinds "
 "Picard 0.12.*)"
 
-#: ../../variables/tags_basic.rst:90
+#: ../../variables/tags_basic.rst:94
 msgid "**label**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:92
+#: ../../variables/tags_basic.rst:96
 msgid ""
 "A multi-value tag containing the names of the labels associated with the "
 "release."
@@ -298,11 +315,11 @@ msgstr ""
 "Een meervoudige tag met de namen van de platenmaatschappijen die aan deze "
 "uitgave zijn gekoppeld."
 
-#: ../../variables/tags_basic.rst:94
+#: ../../variables/tags_basic.rst:98
 msgid "**media**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:96
+#: ../../variables/tags_basic.rst:100
 msgid ""
 "The media on which the release was distributed (e.g.: CD). See the `Release "
 "Format <https://musicbrainz.org/doc/Release/Format>`_ page on the "
@@ -312,35 +329,35 @@ msgstr ""
 "`mediumtypes <https://musicbrainz.org/doc/Release/Format>`_ op de website "
 "van MusicBrainz voor meer informatie."
 
-#: ../../variables/tags_basic.rst:98
+#: ../../variables/tags_basic.rst:102
 msgid "**musicbrainz_albumartistid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:100
+#: ../../variables/tags_basic.rst:104
 msgid "A multi-value tag containing the MBIDs for the release artists."
 msgstr "Een meervoudige tag met de MBID’s van de artiesten van de uitgave."
 
-#: ../../variables/tags_basic.rst:102
+#: ../../variables/tags_basic.rst:106
 msgid "**musicbrainz_albumid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:104
+#: ../../variables/tags_basic.rst:108
 msgid "The MBID for the release."
 msgstr "De MBID van de uitgave."
 
-#: ../../variables/tags_basic.rst:106
+#: ../../variables/tags_basic.rst:110
 msgid "**musicbrainz_artistid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:108
+#: ../../variables/tags_basic.rst:112
 msgid "A multi-value tag containing the MBIDs for the track artists."
 msgstr "Een meervoudige tag met de MBID’s van de artiesten van het nummer."
 
-#: ../../variables/tags_basic.rst:110
+#: ../../variables/tags_basic.rst:114
 msgid "**musicbrainz_discid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:112
+#: ../../variables/tags_basic.rst:116
 msgid ""
 "The Disc ID is the code number which MusicBrainz uses to link a physical CD "
 "to a release listing. This is based on the table of contents (TOC) "
@@ -350,15 +367,15 @@ msgid ""
 msgstr ""
 "De disc-ID is een code waarmee MusicBrainz fysieke cd’s aan een uitgave "
 "koppelt. Deze code is gebaseerd op de inhoudsopgave (ToC) die van de cd is "
-"gelezen. Deze tag bevat de disc-ID als de informatie over de uitgave via "
-":menuselection:`‘Hulpmiddelen --> Cd opzoeken …’` is geladen. (*Sinds Picard "
+"gelezen. Deze tag bevat de disc-ID als de informatie over de uitgave via :"
+"menuselection:`‘Hulpmiddelen --> Cd opzoeken …’` is geladen. (*Sinds Picard "
 "0.12.*)"
 
-#: ../../variables/tags_basic.rst:114
+#: ../../variables/tags_basic.rst:118
 msgid "**musicbrainz_originalalbumid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:116
+#: ../../variables/tags_basic.rst:120
 msgid ""
 "The MBID for the original release. This is only available if the release has "
 "been merged with another release."
@@ -366,11 +383,11 @@ msgstr ""
 "De MBID van de oorspronkelijke uitgave. Dit is alleen beschikbaar als de "
 "uitgave ooit met een andere uitgave is samengevoegd."
 
-#: ../../variables/tags_basic.rst:118
+#: ../../variables/tags_basic.rst:122
 msgid "**musicbrainz_originalartistid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:120
+#: ../../variables/tags_basic.rst:124
 msgid ""
 "A multi-value tag containing the MBIDs for the track artists of the original "
 "recording. This is only available if the recording has been merged with "
@@ -380,35 +397,35 @@ msgstr ""
 "oorspronkelijke opname. Dit is alleen beschikbaar als de opname ooit met een "
 "andere opname is samengevoegd."
 
-#: ../../variables/tags_basic.rst:122
+#: ../../variables/tags_basic.rst:126
 msgid "**musicbrainz_recordingid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:124
+#: ../../variables/tags_basic.rst:128
 msgid "The MBID for the recording."
 msgstr "De MBID van de opname."
 
-#: ../../variables/tags_basic.rst:126
+#: ../../variables/tags_basic.rst:130
 msgid "**musicbrainz_releasegroupid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:128
+#: ../../variables/tags_basic.rst:132
 msgid "The MBID for the release group."
 msgstr "De MBID van de uitgavegroep."
 
-#: ../../variables/tags_basic.rst:130
+#: ../../variables/tags_basic.rst:134
 msgid "**musicbrainz_trackid**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:132
+#: ../../variables/tags_basic.rst:136
 msgid "The MBID for the track."
 msgstr "De MBID van het nummer."
 
-#: ../../variables/tags_basic.rst:134
+#: ../../variables/tags_basic.rst:138
 msgid "**originaldate**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:136
+#: ../../variables/tags_basic.rst:140
 msgid ""
 "The original release date in the format YYYY-MM-DD. By default this is set "
 "to the earliest release in the release group. This can provide, for example, "
@@ -422,7 +439,7 @@ msgstr ""
 "uitgegeven. (*Dit is sinds Picard 0.15 standaard inbegrepen. Voor Picard "
 "0.15 kon je de plug-in Original Release Date gebruiken.*)"
 
-#: ../../variables/tags_basic.rst:140
+#: ../../variables/tags_basic.rst:144
 msgid ""
 "This is the same information provided in the "
 "``_releasegroup_firstreleasedate`` variable, and is consistent across all "
@@ -438,13 +455,13 @@ msgstr ""
 "``_releasegroup_firstreleasedate`` en is voor alle nummers van de uitgave "
 "hetzelfde. Als je deze tag liever gebruikt voor de datum van de eerste "
 "opname van het nummer in de databank, wat waarschijnlijk voor elk nummer van "
-"de uitgave anders is, kan je dat doen met een regel tagscript, zoals ``$set"
-"(originaldate,%_recording_firstreleasedate%)``. Houd er rekening mee dat als "
-"je ``%originaldate%`` gebruikt voor het bestandspad voor opgeslagen nummers, "
-"deze instelling ervoor zorgt dat de opnamen van een uitgave over meerdere "
-"mappen worden verspreid."
+"de uitgave anders is, kan je dat doen met een regel tagscript, zoals "
+"``$set(originaldate,%_recording_firstreleasedate%)``. Houd er rekening mee "
+"dat als je ``%originaldate%`` gebruikt voor het bestandspad voor opgeslagen "
+"nummers, deze instelling ervoor zorgt dat de opnamen van een uitgave over "
+"meerdere mappen worden verspreid."
 
-#: ../../variables/tags_basic.rst:142
+#: ../../variables/tags_basic.rst:146
 msgid ""
 "If you are storing tags in MP3 files as ID3v2.3 then the original date can "
 "only be stored as a year."
@@ -452,11 +469,11 @@ msgstr ""
 "Als je tags in mp3-bestanden als ID3v2.3-tags opslaat, wordt alleen het "
 "jaartal opgeslagen."
 
-#: ../../variables/tags_basic.rst:144
+#: ../../variables/tags_basic.rst:148
 msgid "**originalyear**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:146
+#: ../../variables/tags_basic.rst:150
 msgid ""
 "The year of the original release date in the format YYYY. By default this is "
 "set to the earliest release in the release group. This can provide, for "
@@ -467,11 +484,11 @@ msgstr ""
 "bijvoorbeeld gebruiken om aan te geven in welk jaar de vinylversie van de cd "
 "die je hebt is uitgegeven."
 
-#: ../../variables/tags_basic.rst:148
+#: ../../variables/tags_basic.rst:152
 msgid "**releasecountry**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:150
+#: ../../variables/tags_basic.rst:154
 msgid ""
 "The two-character code for the country in which the release was issued. If "
 "more than one release country was specified, this tag will contain the first "
@@ -481,11 +498,11 @@ msgstr ""
 "Als er meer dan één land van uitgave is, wordt alleen het eerste land in de "
 "lijst gebruikt."
 
-#: ../../variables/tags_basic.rst:152
+#: ../../variables/tags_basic.rst:156
 msgid "**releasestatus**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:154
+#: ../../variables/tags_basic.rst:158
 msgid ""
 "An indicator of the \"official\" status of the release. Possible values "
 "include *official*, *promotional*, *bootleg*, and *pseudo-release*."
@@ -493,25 +510,25 @@ msgstr ""
 "Dit geeft aan hoe ‘officieel’ de uitgave is. Mogelijke waarden zijn "
 "*officieel*, *promotie*, *bootleg* en *pseudo-uitgave*."
 
-#: ../../variables/tags_basic.rst:156
+#: ../../variables/tags_basic.rst:160
 msgid "**releasetype**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:158
+#: ../../variables/tags_basic.rst:162
 msgid ""
 "A multi-value tag containing the types of release assigned to the release "
-"group. See also :ref:`_primaryreleasetype <ref_primaryreleasetype>` "
-"and :ref:`_secondaryreleasetype <ref_secondaryreleasetype>`."
+"group. See also :ref:`_primaryreleasetype <ref_primaryreleasetype>` and :ref:"
+"`_secondaryreleasetype <ref_secondaryreleasetype>`."
 msgstr ""
-"Een meervoudige tag met de uitgavetypen van de uitgavegroep. Zie ook "
-":ref:`_primaryreleasetype <ref_primaryreleasetype>` en "
-":ref:`_secondaryreleasetype <ref_secondaryreleasetype>`."
+"Een meervoudige tag met de uitgavetypen van de uitgavegroep. Zie ook :ref:"
+"`_primaryreleasetype <ref_primaryreleasetype>` en :ref:"
+"`_secondaryreleasetype <ref_secondaryreleasetype>`."
 
-#: ../../variables/tags_basic.rst:160
+#: ../../variables/tags_basic.rst:164
 msgid "**script**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:162
+#: ../../variables/tags_basic.rst:166
 msgid ""
 "The script used to write the release's track list. The possible values are "
 "taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ "
@@ -521,51 +538,51 @@ msgstr ""
 "Arabisch enz.) De mogelijke waarden zijn afgeleid van de standaard `ISO "
 "15924 <https://en.wikipedia.org/wiki/ISO_15924>`_. (*Sinds Picard 0.10.*)"
 
-#: ../../variables/tags_basic.rst:164
+#: ../../variables/tags_basic.rst:168
 msgid "**title**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:166
+#: ../../variables/tags_basic.rst:170
 msgid "The title of the track."
 msgstr "De titel van het nummer."
 
-#: ../../variables/tags_basic.rst:168
+#: ../../variables/tags_basic.rst:172
 msgid "**totaldiscs**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:170
+#: ../../variables/tags_basic.rst:174
 msgid "The total number of discs in this release."
 msgstr "Het totale aantal media van de uitgave."
 
-#: ../../variables/tags_basic.rst:172
+#: ../../variables/tags_basic.rst:176
 msgid "**totaltracks**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:174
+#: ../../variables/tags_basic.rst:178
 msgid "The total number of tracks on this disc."
 msgstr "Het totale aantal nummers op dit medium."
 
-#: ../../variables/tags_basic.rst:176
+#: ../../variables/tags_basic.rst:180
 msgid "**tracknumber**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:178
+#: ../../variables/tags_basic.rst:182
 msgid "The number of the track on the disc."
 msgstr "De positie van het nummer op het medium."
 
-#: ../../variables/tags_basic.rst:180
+#: ../../variables/tags_basic.rst:184
 msgid "**website**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:182
+#: ../../variables/tags_basic.rst:186
 msgid "The official website for the artist."
 msgstr "De officiële website van de artiest."
 
-#: ../../variables/tags_basic.rst:186
+#: ../../variables/tags_basic.rst:190
 msgid "Tags Not Provided from MusicBrainz Data"
 msgstr "Niet op MusicBrainz-informatie gebaseerde tags"
 
-#: ../../variables/tags_basic.rst:188
+#: ../../variables/tags_basic.rst:192
 msgid ""
 "These tags are not able to be populated by stock Picard, however they may be "
 "used and populated by certain plugins or scripts."
@@ -573,11 +590,11 @@ msgstr ""
 "Deze tags kunnen standaard niet door Picard worden ingevuld, maar wel door "
 "bepaalde plug-ins en scripts."
 
-#: ../../variables/tags_basic.rst:190
+#: ../../variables/tags_basic.rst:194
 msgid "**acoustid_fingerprint**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:192
+#: ../../variables/tags_basic.rst:196
 msgid ""
 "The Acoustic Fingerprint for the track. The fingerprint is based on the "
 "audio information found in a file, and is calculated using the `Chromaprint "
@@ -587,11 +604,11 @@ msgstr ""
 "de geluidsinformatie uit het bestand en wordt berekend met de software "
 "`Chromaprint <https://acoustid.org/chromaprint>`_."
 
-#: ../../variables/tags_basic.rst:194
+#: ../../variables/tags_basic.rst:198
 msgid "**acoustid_id**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:196
+#: ../../variables/tags_basic.rst:200
 msgid ""
 "The AcoustID associated with the track. The AcoustID is the identifier "
 "assigned to an audio file based on its acoustic fingerprint. Multiple "
@@ -600,27 +617,27 @@ msgid ""
 "Fingerprinting and AcoustIDs <../tutorials/acoustid>` for more information."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:198
+#: ../../variables/tags_basic.rst:202
 msgid "**albumsort**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:200
+#: ../../variables/tags_basic.rst:204
 msgid "The sort name of the title of the release."
 msgstr "De sorteernaam van de titel van de uitgave."
 
-#: ../../variables/tags_basic.rst:202
+#: ../../variables/tags_basic.rst:206
 msgid "**bpm**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:204
+#: ../../variables/tags_basic.rst:208
 msgid "The number of beats per minute of the track."
 msgstr "Het aantal beats per minuut van de opname."
 
-#: ../../variables/tags_basic.rst:206
+#: ../../variables/tags_basic.rst:210
 msgid "**copyright**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:208
+#: ../../variables/tags_basic.rst:212
 msgid ""
 "The copyright message for the copyright holder of the original sound, "
 "beginning with a year and a space character."
@@ -628,87 +645,87 @@ msgstr ""
 "De auteursrechtmededeling van de houder van het auteursrecht op het "
 "oorspronkelijke geluid, beginnend met een jaar en een spatie."
 
-#: ../../variables/tags_basic.rst:210
+#: ../../variables/tags_basic.rst:214
 msgid "**encodedby**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:212
+#: ../../variables/tags_basic.rst:216
 msgid "The person or organization that encoded the track."
 msgstr "De persoon of organisatie die de opname heeft gecodeerd."
 
-#: ../../variables/tags_basic.rst:214
+#: ../../variables/tags_basic.rst:218
 msgid "**encodersettings**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:216
+#: ../../variables/tags_basic.rst:220
 msgid "The settings used when encoding the track."
 msgstr "De instellingen die voor het coderen van de opname zijn gebruikt."
 
-#: ../../variables/tags_basic.rst:218
+#: ../../variables/tags_basic.rst:222
 msgid "**key**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:220
+#: ../../variables/tags_basic.rst:224
 msgid "The key of the music."
 msgstr "De toonsoort van de muziek."
 
-#: ../../variables/tags_basic.rst:222
+#: ../../variables/tags_basic.rst:226
 msgid "**lyrics**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:224
+#: ../../variables/tags_basic.rst:228
 msgid "The lyrics for the track."
 msgstr "De teksten van het nummer."
 
-#: ../../variables/tags_basic.rst:226
+#: ../../variables/tags_basic.rst:230
 msgid "**musicip_fingerprint**"
 msgstr "**musicip_fingerprint**"
 
-#: ../../variables/tags_basic.rst:228
+#: ../../variables/tags_basic.rst:232
 msgid "The MusicIP Fingerprint for the track."
 msgstr "De MusicIP-vingerafdruk van het nummer."
 
-#: ../../variables/tags_basic.rst:230
+#: ../../variables/tags_basic.rst:234
 msgid "**musicip_puid**"
 msgstr "**musicip_puid**"
 
-#: ../../variables/tags_basic.rst:232
+#: ../../variables/tags_basic.rst:236
 msgid "The MusicIP PUIDs associated with the track."
 msgstr "De MusicIP-PUID’s van het nummer."
 
-#: ../../variables/tags_basic.rst:234
+#: ../../variables/tags_basic.rst:238
 msgid "**originalalbum**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:236
+#: ../../variables/tags_basic.rst:240
 msgid ""
 "The release title of the earliest release in the release group intended for "
 "the title of the original recording."
 msgstr "De titel van de eerste uitgave in de uitgavegroep."
 
-#: ../../variables/tags_basic.rst:238
+#: ../../variables/tags_basic.rst:242
 msgid "**originalartist**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:240
+#: ../../variables/tags_basic.rst:244
 msgid ""
 "The track artist of the earliest release in the release group intended for "
 "the performers of the original recording."
 msgstr "De artiest van het nummer op de eerste uitgave in de uitgavegroep."
 
-#: ../../variables/tags_basic.rst:242
+#: ../../variables/tags_basic.rst:246
 msgid "**originalfilename**"
 msgstr "**originalfilename**"
 
-#: ../../variables/tags_basic.rst:244
+#: ../../variables/tags_basic.rst:248
 msgid "The original name of the audio file."
 msgstr "De oorspronkelijke bestandsnaam van het audiobestand."
 
-#: ../../variables/tags_basic.rst:246
+#: ../../variables/tags_basic.rst:250
 msgid "**releasedate**"
 msgstr "**releasedate**"
 
-#: ../../variables/tags_basic.rst:248
+#: ../../variables/tags_basic.rst:252
 msgid ""
 "Explicit tag for the release date (*since Picard 2.9*). This tag exists for "
 "specific use in scripts and plugins, but is not filled by default. In most "
@@ -720,45 +737,45 @@ msgstr ""
 "ingevuld. Voor compatibiliteit met bestaande software wordt aangeraden om de "
 "tag ``date`` te gebruiken."
 
-#: ../../variables/tags_basic.rst:250
+#: ../../variables/tags_basic.rst:254
 msgid "**showmovement**"
 msgstr "**showmovement**"
 
-#: ../../variables/tags_basic.rst:252
+#: ../../variables/tags_basic.rst:256
 msgid "The work and movement of the track."
 msgstr "De compositie en het compositiedeel van het nummer."
 
-#: ../../variables/tags_basic.rst:254
+#: ../../variables/tags_basic.rst:258
 msgid "**subtitle**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:256
+#: ../../variables/tags_basic.rst:260
 msgid "This is used for information directly related to the contents title."
 msgstr ""
 "Dit wordt gebruikt voor informatie die rechtstreeks aan de titel van de "
 "inhoud is gerelateerd."
 
-#: ../../variables/tags_basic.rst:258
+#: ../../variables/tags_basic.rst:262
 msgid "**syncedlyrics**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:260
+#: ../../variables/tags_basic.rst:264
 msgid "The synchronized lyrics for the track. (*since Picard 3.0*)"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:262
+#: ../../variables/tags_basic.rst:266
 msgid "**titlesort**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:264
+#: ../../variables/tags_basic.rst:268
 msgid "The sort name of the track title."
 msgstr "De sorteernaam van de nummertitel."
 
-#: ../../variables/tags_basic.rst:268
+#: ../../variables/tags_basic.rst:272
 msgid "iTunes-Specific Tags"
 msgstr "Tags voor iTunes"
 
-#: ../../variables/tags_basic.rst:270
+#: ../../variables/tags_basic.rst:274
 msgid ""
 "These tags are only available in iTunes files and are not able to be "
 "populated by stock Picard, however they may be used and populated by certain "
@@ -767,47 +784,47 @@ msgstr ""
 "Deze tags zijn alleen beschikbaar in iTunes-bestanden en kunnen standaard "
 "niet door Picard worden ingevuld, maar wel door bepaalde plug-ins en scripts."
 
-#: ../../variables/tags_basic.rst:272
+#: ../../variables/tags_basic.rst:276
 msgid "**gapless**"
 msgstr "**gapless**"
 
-#: ../../variables/tags_basic.rst:274
+#: ../../variables/tags_basic.rst:278
 msgid ""
 "Indicates whether or not there are gaps between the recordings on the "
 "release."
 msgstr "Geeft aan of er pauzes tussen de opnamen op deze uitgave zitten."
 
-#: ../../variables/tags_basic.rst:276
+#: ../../variables/tags_basic.rst:280
 msgid "**itunes_cddb_1**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:278
+#: ../../variables/tags_basic.rst:282
 msgid ""
 "An iTunes-specific tag containing a code that uniquely identifies a CD based "
 "on the number of tracks and their lengths (*since Picard 3.0*)."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:280
+#: ../../variables/tags_basic.rst:284
 msgid "**podcast**"
 msgstr "**podcast**"
 
-#: ../../variables/tags_basic.rst:282
+#: ../../variables/tags_basic.rst:286
 msgid "Indicates whether or not the recording is a podcast."
 msgstr "Geeft aan of de opname een podcast is."
 
-#: ../../variables/tags_basic.rst:284
+#: ../../variables/tags_basic.rst:288
 msgid "**podcasturl**"
 msgstr "**podcasturl**"
 
-#: ../../variables/tags_basic.rst:286
+#: ../../variables/tags_basic.rst:290
 msgid "The associated url if the recording is a podcast."
 msgstr "De URL van de podcast (als de opname een podcast is)."
 
-#: ../../variables/tags_basic.rst:288
+#: ../../variables/tags_basic.rst:292
 msgid "**show**"
 msgstr "**show**"
 
-#: ../../variables/tags_basic.rst:290
+#: ../../variables/tags_basic.rst:294
 msgid ""
 "The name of the show if the recording is associated with a television "
 "program."
@@ -815,11 +832,11 @@ msgstr ""
 "De naam van het tv-programma waaraan de opname is gerelateerd (als er zo’n "
 "relatie bestaat)."
 
-#: ../../variables/tags_basic.rst:292
+#: ../../variables/tags_basic.rst:296
 msgid "**showsort**"
 msgstr "**showsort**"
 
-#: ../../variables/tags_basic.rst:294
+#: ../../variables/tags_basic.rst:298
 msgid ""
 "The sort name of the show if the recording is associated with a television "
 "program."
