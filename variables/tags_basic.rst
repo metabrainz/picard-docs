@@ -34,6 +34,10 @@ These tags will be provided based on the information from the MusicBrainz databa
 
    The artists primarily credited on the release, separated by the specified join phrases. These could be either "standardized" or "as credited" depending on whether the "Use standardized artist names" metadata option is enabled.
 
+**albumartists**
+
+   A multi-value variable containing the names of the album's artists. These could be either "standardized" or "as credited" depending on whether the "Use standardized artist names" metadata option is enabled. (*since Picard 3.0*)
+
 **albumartistsort**
 
    The release artists sort names, separated by the specified join phrases. (e.g.: "Beatles, The")
