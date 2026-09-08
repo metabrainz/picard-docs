@@ -26,6 +26,25 @@ This is the preferred method of automatically identifying the album to retrieve,
    .. include:: retrieve_lookup_cd.rst
 
 
+.. only:: latex
+
+   Lookup iTunes Tag
+   ------------------
+
+.. only:: html
+
+   :doc:`Lookup iTunes Tag <retrieve_lookup_itunes>`
+   --------------------------------------------------
+
+If your files contain the "iTunes CDDB 1" tag (``itunes_cddb_1``), then you can perform the lookup using this information. This tag contains the number of tracks and track lengths for the album providing the track. This is similar to the TOC information used in the "Lookup CD or Ripper Log" method.
+
+When initiated, the information from the tag is used to calculate a TOC signature. A request is sent to MusicBrainz to return a list of the releases that match the TOC. If there are any matches, then they will be listed for you to select the one to use. If there are no matches or none of the matches are correct, you can search the database manually for the matching album.
+
+.. only:: latex
+
+   .. include:: retrieve_lookup_itunes.rst
+
+
 .. _ref_lookup_files:
 
 .. only:: latex
@@ -104,6 +123,7 @@ The second browser search method uses manually entered information as the search
 
       Step-by-step instructions:
       :doc:`retrieve_lookup_cd` /
+      :doc:`retrieve_lookup_itunes` /
       :doc:`retrieve_lookup` /
       :doc:`retrieve_scan` /
       :doc:`retrieve_browser` /
