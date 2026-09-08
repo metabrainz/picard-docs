@@ -19,7 +19,7 @@ Returns the value from original metadata only for the variable ``name`` or an em
 
 **Example:**
 
-Assuming that the original value of the tag `foo` is "bar" and the new value is "baz", the following statements will return the values indicated:
+Assuming that the original value of the tag ``foo`` is "bar" and the new value is "baz", the following statements will return the values indicated:
 
 .. code-block:: taggerscript
 
