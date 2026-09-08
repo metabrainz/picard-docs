@@ -1401,7 +1401,7 @@ class TagMapBuilder:
             worksheet.set_column(col, col, pts)
 
         # Write the tag values
-        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name.lower()):   # pylint: disable=too-many-nested-blocks
             row += 1
             for col, (name, val, pts, _px) in enumerate(TAG_COLUMNS):
                 if col:
@@ -1462,7 +1462,7 @@ class TagMapBuilder:
         html += '</tr>\n'
 
         # Write the tag values
-        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name.lower()):   # pylint: disable=too-many-nested-blocks
             html += '<tr>\n'
             for col, (name, val, pts, px) in enumerate(TAG_COLUMNS):
                 if col < 1:
@@ -1539,7 +1539,7 @@ class TagMapBuilder:
         )
 
         # Write the tag values
-        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name):   # pylint: disable=too-many-nested-blocks
+        for tag in sorted(TAG_MAP, key=lambda x: x.tag_name.lower()):   # pylint: disable=too-many-nested-blocks
             link = tag.link.strip()
             temp = tag.tag_name.replace('\n', ' ').strip()
             temp = f"`{temp} <{link}>`_" if link else temp

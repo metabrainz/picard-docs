@@ -31,21 +31,6 @@ The following is a mapping between Picard internal tag names and those used by v
 
    The mapping is also available as a |tag_map_html_link| or |tag_map_xlsx_link|.
 
-`ASIN <https://musicbrainz.org/doc/ASIN>`_
--------------------------------------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``asin``"
-   "ID3v2", "``TXXX:ASIN``"
-   "Vorbis", "``ASIN``"
-   "APEv2", "``Asin``"
-   "iTunes MP4", "``----:com.apple.iTunes:ASIN``"
-   "ASF/Windows Media", "``ASIN``"
-   "RIFF INFO", "n/a"
-
-
 AcoustID
 ---------
 .. csv-table::
@@ -211,18 +196,18 @@ Artists
    "RIFF INFO", "n/a"
 
 
-BPM [#f4]_
------------
+`ASIN <https://musicbrainz.org/doc/ASIN>`_
+-------------------------------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
-   "Internal Name", "``bpm``"
-   "ID3v2", "``TBPM``"
-   "Vorbis", "``BPM``"
-   "APEv2", "``BPM``"
-   "iTunes MP4", "``tmpo``"
-   "ASF/Windows Media", "``WM/BeatsPerMinute``"
+   "Internal Name", "``asin``"
+   "ID3v2", "``TXXX:ASIN``"
+   "Vorbis", "``ASIN``"
+   "APEv2", "``Asin``"
+   "iTunes MP4", "``----:com.apple.iTunes:ASIN``"
+   "ASF/Windows Media", "``ASIN``"
    "RIFF INFO", "n/a"
 
 
@@ -238,6 +223,21 @@ BPM [#f4]_
    "APEv2", "``Barcode``"
    "iTunes MP4", "``----:com.apple.iTunes:BARCODE``"
    "ASF/Windows Media", "``WM/Barcode``"
+   "RIFF INFO", "n/a"
+
+
+BPM [#f4]_
+-----------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``bpm``"
+   "ID3v2", "``TBPM``"
+   "Vorbis", "``BPM``"
+   "APEv2", "``BPM``"
+   "iTunes MP4", "``tmpo``"
+   "ASF/Windows Media", "``WM/BeatsPerMinute``"
    "RIFF INFO", "n/a"
 
 
@@ -481,6 +481,21 @@ Grouping [#f3]_
    "RIFF INFO", "n/a"
 
 
+Initial Key
+------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``key`` (Picard>=1.4)"
+   "ID3v2", "``TKEY``"
+   "Vorbis", "``KEY``"
+   "APEv2", "``Key``"
+   "iTunes MP4", "``----:com.apple.iTunes:initialkey``"
+   "ASF/Windows Media", "``WM/InitialKey``"
+   "RIFF INFO", "n/a"
+
+
 `ISRC <https://musicbrainz.org/doc/ISRC>`_
 -------------------------------------------
 .. csv-table::
@@ -496,18 +511,18 @@ Grouping [#f3]_
    "RIFF INFO", "n/a"
 
 
-Initial Key
-------------
+iTunes CDDB 1 [#f9]_
+---------------------
 .. csv-table::
    :width: 100%
    :widths: 37 100
 
-   "Internal Name", "``key`` (Picard>=1.4)"
-   "ID3v2", "``TKEY``"
-   "Vorbis", "``KEY``"
-   "APEv2", "``Key``"
-   "iTunes MP4", "``----:com.apple.iTunes:initialkey``"
-   "ASF/Windows Media", "``WM/InitialKey``"
+   "Internal Name", "``itunes_cddb_1``"
+   "ID3v2", "``iTunes_CDDB_1``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "``----:com.apple.iTunes:iTunes_CDDB_1``"
+   "ASF/Windows Media", "n/a"
    "RIFF INFO", "n/a"
 
 
@@ -811,21 +826,6 @@ MusicBrainz Release Group ID
    "RIFF INFO", "n/a"
 
 
-`MusicBrainz TRM ID <https://musicbrainz.org/doc/TRM>`_
---------------------------------------------------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``musicbrainz_trmid`` (deprecated)"
-   "ID3v2", "``TXXX:MusicBrainz TRM Id``"
-   "Vorbis", "``MUSICBRAINZ_TRMID``"
-   "APEv2", "``MUSICBRAINZ_TRMID``"
-   "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz TRM Id``"
-   "ASF/Windows Media", "``MusicBrainz/TRM Id``"
-   "RIFF INFO", "n/a"
-
-
 `MusicBrainz Track ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_
 -----------------------------------------------------------------------------
 .. csv-table::
@@ -838,6 +838,21 @@ MusicBrainz Release Group ID
    "APEv2", "``musicbrainz_releasetrackid``"
    "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz Release Track Id``"
    "ASF/Windows Media", "``MusicBrainz/Release Track Id``"
+   "RIFF INFO", "n/a"
+
+
+`MusicBrainz TRM ID <https://musicbrainz.org/doc/TRM>`_
+--------------------------------------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``musicbrainz_trmid`` (deprecated)"
+   "ID3v2", "``TXXX:MusicBrainz TRM Id``"
+   "Vorbis", "``MUSICBRAINZ_TRMID``"
+   "APEv2", "``MUSICBRAINZ_TRMID``"
+   "iTunes MP4", "``----:com.apple.iTunes:MusicBrainz TRM Id``"
+   "ASF/Windows Media", "``MusicBrainz/TRM Id``"
    "RIFF INFO", "n/a"
 
 
@@ -1450,21 +1465,6 @@ Work Title
    "iTunes MP4", "n/a"
    "ASF/Windows Media", "n/a"
    "RIFF INFO", "``IWRI``"
-
-
-iTunes CDDB 1 [#f9]_
----------------------
-.. csv-table::
-   :width: 100%
-   :widths: 37 100
-
-   "Internal Name", "``itunes_cddb_1``"
-   "ID3v2", "``iTunes_CDDB_1``"
-   "Vorbis", "n/a"
-   "APEv2", "n/a"
-   "iTunes MP4", "``----:com.apple.iTunes:iTunes_CDDB_1``"
-   "ASF/Windows Media", "n/a"
-   "RIFF INFO", "n/a"
 
 
 .. rubric:: Notes:
