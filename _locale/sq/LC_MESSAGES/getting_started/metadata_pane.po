@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-09 10:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../getting_started/metadata_pane.rst:4
+msgid ":index:`Metadata Pane <user interface; metadata pane>`"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:6
+msgid ""
+"When a file is selected in the Cluster Pane, the Metadata Pane will display "
+"the differences between the original tags found in the file metadata and the "
+"new tags that will be written to the file."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:8
+msgid ""
+"When a track is selected in the Album Pane and there is no file matched to "
+"the track, the Metadata Pane will display the differences between the "
+"original tags found in the metadata retrieved from MusicBrainz and the new "
+"tags that will be written to the file."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:10
+msgid ""
+"When a file that has been matched to a track is selected in the Album Pane, "
+"the Metadata Pane will display the differences between the original tags "
+"found in the file and the new tags that will be written to the file."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:12
+msgid ""
+"In all cases, the original metadata is displayed in the middle column, and "
+"the new metadata is displayed in the right-hand column."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:28
+msgid ""
+"Note that selected files can be saved from either the Cluster Pane, or the "
+"Album Pane when matched to a track. The tags written will be those "
+"associated with the appropriate save location."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:32
+msgid "Tag Differences Display"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:34
+msgid ""
+"When there are differences between the original and new metadata tags, "
+"Picard will highlight the differences for easy identification of the "
+"changes. Additions will be highlighted in green, and deletions will be "
+"highlighted in red."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:36
+msgid ""
+"In addition, the tag name in the first column will be highlighted in a "
+"different color. Modified tags will be highlighted in yellow, added tags "
+"will be highlighted in green, and deleted tags will be highlighted in red."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:40
+msgid "Tag Actions"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:42
+msgid ""
+"A number of actions can be taken with respect to a tag in the Metadata Pane. "
+"These include:"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:44
+msgid "Editing the tag's value"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:45
+msgid "Adding the tag to the \"Preserve Tags\" list"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:46
+msgid "Removing the tag"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:47
+msgid "Copying the tag's value to the clipboard"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:48
+msgid "Replacing the tag's value by pasting from the clipboard"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:50
+msgid ""
+"These actions can be accessed from the context menu brought up by right-"
+"clicking on a tag."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:65
+msgid ""
+"The context menu also provides actions to add a new tag, and an option to "
+"display the changed tags at the top of the list."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:69
+msgid ":index:`Editing Metadata <user interface; editing metadata>`"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:71
+msgid ""
+"To begin editing a tag's value, you can double-click the value to edit it in-"
+"place. You can also edit the tag in the tag editor, brought up from the "
+"context menu or by pressing :kbd:`Alt+Shift+E` (:kbd:`⌥+⇧+E` on macOS). Note "
+"that double-clicking a multi-value tag always opens the tag editor."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:86
+msgid ""
+"Note that the tag editor displays multi-value tags as a list of tags, and "
+"normal tags as a list with only one item."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:88
+msgid ""
+"From the tag editor, you can select which tag to edit from the drop down "
+"list at the top of the editor. You can also add a new tag by entering the "
+"new tag name in the tag selector."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:90
+msgid ""
+"Once you have edited a tag, the right-click context menu for that tag shows "
+"two additional actions:"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:92
+msgid ""
+"Use Original Values: This will reset the tag back to the original value."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:93
+msgid ""
+"Merge Original Values: This will merge the original values into the list of "
+"current values, creating a multi-value tag as required."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:95
+msgid ""
+"You can edit multiple files or tracks at once by selecting them in the "
+"Cluster Pane or Album Pane before performing the edits. The edits will "
+"change the values for all selected items to the same value. This should be "
+"used with caution because you could end up with unwanted results, such as "
+"accidentally setting all track titles to be the same."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:99
+msgid ""
+":index:`Copying and Pasting Tags <user interface; copying and pasting tags>`"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:101
+msgid ""
+"Tag values can be copied to the clipboard and pasted, either into another "
+"tag or into other files or tracks. The behavior depends on how much you have "
+"selected. The :guilabel:`Copy` and :guilabel:`Paste` actions are available "
+"from the context menu, and can also be performed using the standard :kbd:"
+"`Ctrl+C` and :kbd:`Ctrl+V` keyboard shortcuts (:kbd:`⌘+C` and :kbd:`⌘+V` on "
+"macOS)."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:104
+msgid "Copying"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:106
+msgid ""
+"When a single cell is selected, its value is copied to the clipboard as "
+"plain text. Copying a cell in the first column copies the tag name, while "
+"copying a cell in the original or new value column copies that value. The "
+"individual values of a multi-value tag are joined together with a semicolon "
+"and a space."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:108
+msgid ""
+"When more than one cell is selected, the selected tags and their values are "
+"copied as a set. Picard places two representations on the clipboard at the "
+"same time. One is an internal representation that is used when pasting back "
+"into Picard. The other is a tab-separated representation, with one line per "
+"tag containing the tag name, the original value and the new value, that can "
+"be pasted into a spreadsheet or a text editor."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:111
+msgid "Pasting"
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:113
+msgid ""
+"When the clipboard contains plain text, pasting replaces the value of the "
+"currently selected cell in the new value column. Multiple values can be "
+"pasted by separating them with a semicolon and a space."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:115
+msgid ""
+"When the clipboard contains a set of tags that was copied from Picard, "
+"pasting applies all of those tags to the currently selected files or tracks "
+"at once. The existing values of those tags are replaced, and any tags that "
+"were removed in the copied selection are also removed from the selected "
+"files or tracks."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:117
+msgid ""
+"Note that read-only tags, such as the track length, cannot be pasted into "
+"and will be skipped. If the clipboard does not contain any data that Picard "
+"can use, a message will be shown in the status bar."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:119
+msgid ""
+"Note that pasting a set of tags takes effect immediately and can change many "
+"tags across all of the selected files or tracks. Because Picard does not "
+"currently provide an undo function, this should be used with caution to "
+"avoid unintended changes, such as accidentally overwriting the tags of "
+"several files at once."
+msgstr ""

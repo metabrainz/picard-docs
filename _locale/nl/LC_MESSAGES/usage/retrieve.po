@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-31 09:30-0700\n"
+"POT-Creation-Date: 2026-09-09 10:54-0600\n"
 "PO-Revision-Date: 2026-08-21 19:04+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -81,15 +81,55 @@ msgstr ""
 "uitgave zoeken. Bovendien kan je dan de inhoudsopgave van de cd aan de "
 "uitgave toevoegen, zodat hij later makkelijk kan worden teruggevonden."
 
-#: ../../usage/retrieve.rst:34 ../../usage/retrieve_lookup.rst:4
+#: ../../usage/retrieve.rst:32 ../../usage/retrieve_lookup_itunes.rst:4
+#, fuzzy
+msgid "Lookup iTunes Tag"
+msgstr "Bestanden opzoeken"
+
+#: ../../usage/retrieve.rst:37
+#, fuzzy
+msgid ":doc:`Lookup iTunes Tag <retrieve_lookup_itunes>`"
+msgstr ":doc:`Bestanden opzoeken <retrieve_lookup>`"
+
+#: ../../usage/retrieve.rst:39
+msgid ""
+"If your files contain the \"iTunes CDDB 1\" tag (``itunes_cddb_1``), then "
+"you can perform the lookup using this information. This tag contains the "
+"number of tracks and track lengths for the album providing the track. This "
+"is similar to the TOC information used in the \"Lookup CD or Ripper Log\" "
+"method."
+msgstr ""
+
+#: ../../usage/retrieve.rst:41
+#, fuzzy
+msgid ""
+"When initiated, the information from the tag is used to calculate a TOC "
+"signature. A request is sent to MusicBrainz to return a list of the releases "
+"that match the TOC. If there are any matches, then they will be listed for "
+"you to select the one to use. If there are no matches or none of the matches "
+"are correct, you can search the database manually for the matching album."
+msgstr ""
+"Dit is de beste methode om automatisch een uitgave op te zoeken. Je kan deze "
+"methode gebruiken als je de cd of een logboek van een :ref:`ondersteunde cd-"
+"ripper <faq_supported_rippers>` hebt. Meestal gebruik je dit meteen nadat je "
+"de nummers van de cd hebt geript. Als je deze optie gebruikt, wordt de "
+"inhoudsopgave (ToC) van de cd gelezen en naar MusicBrainz gestuurd, waarna "
+"je een lijst krijgt met uitgaven die dezelfde inhoudsopgave hebben. Als er "
+"overeenkomende uitgaven worden gevonden, krijg je een lijst te zien waaruit "
+"je de juiste kan kiezen. Als er geen overeenkomsten zijn gevonden of de "
+"juiste uitgave er niet tussen zit, kan je zelf in de databank naar de juiste "
+"uitgave zoeken. Bovendien kan je dan de inhoudsopgave van de cd aan de "
+"uitgave toevoegen, zodat hij later makkelijk kan worden teruggevonden."
+
+#: ../../usage/retrieve.rst:53 ../../usage/retrieve_lookup.rst:4
 msgid "Lookup Files"
 msgstr "Bestanden opzoeken"
 
-#: ../../usage/retrieve.rst:39
+#: ../../usage/retrieve.rst:58
 msgid ":doc:`Lookup Files <retrieve_lookup>`"
 msgstr ":doc:`Bestanden opzoeken <retrieve_lookup>`"
 
-#: ../../usage/retrieve.rst:41
+#: ../../usage/retrieve.rst:60
 msgid ""
 "If you don't have the CD available, and your files are grouped by album, "
 "this is the preferred method of automatically identifying the album to "
@@ -102,15 +142,15 @@ msgstr ""
 "bestanden in clusters en daarna zoek je de clusters op. Vervolgens probeert "
 "Picard om alle bestanden in het cluster aan dezelfde uitgave te koppelen."
 
-#: ../../usage/retrieve.rst:53 ../../usage/retrieve_scan.rst:4
+#: ../../usage/retrieve.rst:72 ../../usage/retrieve_scan.rst:4
 msgid "Scan Files"
 msgstr "Bestanden scannen"
 
-#: ../../usage/retrieve.rst:58
+#: ../../usage/retrieve.rst:77
 msgid ":doc:`Scan Files <retrieve_scan>`"
 msgstr ":doc:`Bestanden scannen <retrieve_scan>`"
 
-#: ../../usage/retrieve.rst:60
+#: ../../usage/retrieve.rst:79
 msgid ""
 "If your files are not grouped into albums and you don't have the CD "
 "available, this is the only remaining method of automatically identifying "
@@ -128,15 +168,15 @@ msgstr ""
 "het rechter deelvenster passende uitgaven geladen, waarna de bestanden aan "
 "de nummers van die uitgaven worden gekoppeld."
 
-#: ../../usage/retrieve.rst:70 ../../usage/retrieve_browser.rst:4
+#: ../../usage/retrieve.rst:89 ../../usage/retrieve_browser.rst:4
 msgid "Lookup in Browser"
 msgstr "In de browser opzoeken"
 
-#: ../../usage/retrieve.rst:75
+#: ../../usage/retrieve.rst:94
 msgid ":doc:`Lookup in Browser <retrieve_browser>`"
 msgstr ":doc:`In de browser opzoeken <retrieve_browser>`"
 
-#: ../../usage/retrieve.rst:77
+#: ../../usage/retrieve.rst:96
 msgid ""
 "If none of the automated methods are available, or don't produce the desired "
 "results, you have the option of retrieving the album information by having "
@@ -150,15 +190,15 @@ msgstr ""
 "zoekopdracht op twee manieren starten. Met de eerste manier wordt er gezocht "
 "aan de hand van de tags van de geselecteerde bestanden."
 
-#: ../../usage/retrieve.rst:87 ../../usage/retrieve_manual.rst:4
+#: ../../usage/retrieve.rst:106 ../../usage/retrieve_manual.rst:4
 msgid "Manual Lookup"
 msgstr "Handmatig opzoeken"
 
-#: ../../usage/retrieve.rst:92
+#: ../../usage/retrieve.rst:111
 msgid ":doc:`Manual Lookup <retrieve_manual>`"
 msgstr ":doc:`Handmatig opzoeken <retrieve_manual>`"
 
-#: ../../usage/retrieve.rst:94
+#: ../../usage/retrieve.rst:113
 msgid ""
 "The second browser search method uses manually entered information as the "
 "search criterion."
@@ -166,15 +206,16 @@ msgstr ""
 "Voor de tweede methode voor opzoeken in de browser moet je zelf de "
 "zoekopdracht invullen."
 
-#: ../../usage/retrieve.rst:105
+#: ../../usage/retrieve.rst:124
+#, fuzzy
 msgid ""
 "Step-by-step instructions: :doc:`retrieve_lookup_cd` / :doc:"
+"`retrieve_lookup_itunes` / :doc:`retrieve_lookup` / :doc:`retrieve_scan` / :"
+"doc:`retrieve_browser` / :doc:`retrieve_manual`"
+msgstr ""
+"Stapsgewijze instructies: :doc:`retrieve_lookup_cd` / :doc:"
 "`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / :doc:"
 "`retrieve_manual`"
-msgstr ""
-"Stapsgewijze instructies: :doc:`retrieve_lookup_cd` / "
-":doc:`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / "
-":doc:`retrieve_manual`"
 
 #: ../../usage/retrieve_lookup_cd.rst:6
 msgid ""
@@ -185,7 +226,8 @@ msgstr ""
 "ripperlogboek>`:"
 
 #: ../../usage/retrieve_browser.rst:12 ../../usage/retrieve_lookup.rst:9
-#: ../../usage/retrieve_lookup_cd.rst:9 ../../usage/retrieve_manual.rst:9
+#: ../../usage/retrieve_lookup_cd.rst:9
+#: ../../usage/retrieve_lookup_itunes.rst:9 ../../usage/retrieve_manual.rst:9
 #: ../../usage/retrieve_scan.rst:9
 msgid "Step 1"
 msgstr ""
@@ -201,23 +243,25 @@ msgid ""
 "file to process. Either method will query the MusicBrainz database and "
 "display a list of matching releases."
 msgstr ""
-"Zorg je dat de cd in je cd-speler zit en selecteer je :menuselection:`‘"
-"Hulpmiddelen --> Cd opzoeken … --> (te gebruiken station)’`. De TOC van de "
-"cd wordt berekend en naar MusicBrainz verstuurd. Je kunt ook een "
-":ref:`logboek van een ondersteunde ripper <faq_supported_rippers>` gebruiken "
-"om de cd op te zoeken met de opdracht :menuselection:`‘Hulpmiddelen --> Cd "
+"Zorg je dat de cd in je cd-speler zit en selecteer je :menuselection:"
+"`‘Hulpmiddelen --> Cd opzoeken … --> (te gebruiken station)’`. De TOC van de "
+"cd wordt berekend en naar MusicBrainz verstuurd. Je kunt ook een :ref:"
+"`logboek van een ondersteunde ripper <faq_supported_rippers>` gebruiken om "
+"de cd op te zoeken met de opdracht :menuselection:`‘Hulpmiddelen --> Cd "
 "opzoeken … --> Met logboekbestand van cd-ripper’`. Dan verschijnt er een "
 "verkennervenster waarmee je het logboekbestand kan selecteren. Met beide "
 "methoden wordt de MusicBrainz-databank bevraagd, waarna er een lijst met "
 "passende uitgaven wordt weergegeven."
 
 #: ../../usage/retrieve_browser.rst:33 ../../usage/retrieve_lookup.rst:29
-#: ../../usage/retrieve_lookup_cd.rst:21 ../../usage/retrieve_manual.rst:30
+#: ../../usage/retrieve_lookup_cd.rst:21
+#: ../../usage/retrieve_lookup_itunes.rst:21 ../../usage/retrieve_manual.rst:30
 #: ../../usage/retrieve_scan.rst:30
 msgid "Step 2"
 msgstr ""
 
 #: ../../usage/retrieve_lookup_cd.rst:23
+#: ../../usage/retrieve_lookup_itunes.rst:23
 msgid ""
 "Select the correct release from the list and click on the :guilabel:`Load "
 "into Picard` button. This will load the information for the release into "
@@ -227,8 +271,9 @@ msgstr ""
 "Picard laden`. De informatie over de uitgave wordt dan in Picard geladen."
 
 #: ../../usage/retrieve_browser.rst:130 ../../usage/retrieve_lookup.rst:69
-#: ../../usage/retrieve_lookup_cd.rst:25 ../../usage/retrieve_manual.rst:111
-#: ../../usage/retrieve_scan.rst:53
+#: ../../usage/retrieve_lookup_cd.rst:25
+#: ../../usage/retrieve_lookup_itunes.rst:25
+#: ../../usage/retrieve_manual.rst:111 ../../usage/retrieve_scan.rst:53
 msgid ""
 "A music symbol in front of a track number in the right-hand pane indicates "
 "that there has been no file assigned to the track."
@@ -237,7 +282,8 @@ msgstr ""
 "nog geen bestand aan het nummer is gekoppeld."
 
 #: ../../usage/retrieve_browser.rst:52 ../../usage/retrieve_lookup.rst:47
-#: ../../usage/retrieve_lookup_cd.rst:35 ../../usage/retrieve_manual.rst:49
+#: ../../usage/retrieve_lookup_cd.rst:35
+#: ../../usage/retrieve_lookup_itunes.rst:35 ../../usage/retrieve_manual.rst:49
 #: ../../usage/retrieve_scan.rst:49
 msgid "Step 3"
 msgstr ""
@@ -295,6 +341,29 @@ msgstr ""
 "Als geen van de weergegeven uitgaven de juiste is, kan je een nieuwe uitgave "
 "toevoegen (een deel van de informatie wordt dan al automatisch ingevuld)."
 
+#: ../../usage/retrieve_lookup_itunes.rst:6
+#, fuzzy
+msgid ""
+"The steps to follow to :index:`lookup an iTunes Tag <lookup; iTunes>` are:"
+msgstr "Het :index:`opzoeken van bestanden` gaat als volgt:"
+
+#: ../../usage/retrieve_lookup_itunes.rst:11
+msgid ""
+"Select the files or cluster that you want to look up, and select :"
+"menuselection:`\"Tools --> Lookup CD... --> Lookup TOC tag...\"`. Picard "
+"will try to get the album TOC information from the ``itunes_cddb_1`` tag in "
+"each file to use to query the MusicBrainz database and display a list of "
+"matching releases. If there are no ``itunes_cddb_1`` tags found, then an "
+"error message will be displayed."
+msgstr ""
+
+#: ../../usage/retrieve_lookup_itunes.rst:37
+msgid ""
+"If there are no matches or none of the matches are correct, you will have to "
+"use one of the other methods such as :doc:`Cluster and Lookup "
+"<retrieve_lookup>`, :doc:`retrieve_browser` or :doc:`retrieve_manual`."
+msgstr ""
+
 #: ../../usage/retrieve_lookup.rst:6
 msgid "The steps to follow to :index:`lookup files` are:"
 msgstr "Het :index:`opzoeken van bestanden` gaat als volgt:"
@@ -339,9 +408,9 @@ msgid ""
 "lookup the cluster. Depending on your previous metadata, the album will show "
 "up in the right-hand pane."
 msgstr ""
-"Selecteer een cluster en gebruik :menuselection:`‘Hulpmiddelen --> Opzoeken"
-"’` om het cluster op te zoeken. Afhankelijk van de bestaande metadata wordt "
-"in het rechter deelvenster een uitgave weergegeven."
+"Selecteer een cluster en gebruik :menuselection:`‘Hulpmiddelen --> "
+"Opzoeken’` om het cluster op te zoeken. Afhankelijk van de bestaande "
+"metadata wordt in het rechter deelvenster een uitgave weergegeven."
 
 #: ../../usage/retrieve_lookup.rst:84
 msgid ""
@@ -351,8 +420,8 @@ msgid ""
 "different matching version to use, or refine the search criteria and perform "
 "a new search."
 msgstr ""
-"Als je niet zeker weet of de geladen uitgave de juiste is, kan je via "
-":menuselection:`‘Hulpmiddelen --> Andere versies van de uitgave zoeken …’` "
+"Als je niet zeker weet of de geladen uitgave de juiste is, kan je via :"
+"menuselection:`‘Hulpmiddelen --> Andere versies van de uitgave zoeken …’` "
 "een scherm openen waarop alle gevonden uitgaven worden weergegeven. In dit "
 "venster kan je een andere uitgave selecteren om te gebruiken of de "
 "zoekopdracht aanpassen en opnieuw zoeken."
@@ -408,8 +477,8 @@ msgid ""
 "Use :menuselection:`\"Tools --> Cluster\"` to group the files into album "
 "clusters if you want lookup a cluster."
 msgstr ""
-"Als je een cluster wil opzoeken, groepeer je de bestanden via "
-":menuselection:`‘Hulpmiddelen --> Clusteren’`."
+"Als je een cluster wil opzoeken, groepeer je de bestanden via :menuselection:"
+"`‘Hulpmiddelen --> Clusteren’`."
 
 #: ../../usage/retrieve_browser.rst:73
 msgid ""
@@ -417,8 +486,8 @@ msgid ""
 "in Browser\"` to initiate the search in your browser using the currently "
 "available metadata."
 msgstr ""
-"Selecteer een bestand of een cluster en gebruik :menuselection:`‘"
-"Hulpmiddelen --> In de browser opzoeken`’ om op basis van de al aanwezige "
+"Selecteer een bestand of een cluster en gebruik :menuselection:"
+"`‘Hulpmiddelen --> In de browser opzoeken`’ om op basis van de al aanwezige "
 "metadata in de browser naar een uitgave te zoeken."
 
 #: ../../usage/retrieve_browser.rst:92
