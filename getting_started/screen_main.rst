@@ -32,57 +32,17 @@
 
 Picard is available for different operating systems. And while Picard's functionality is overall the same the specific look of the user interface can be slightly different based on the operating system.
 
-.. _main_screen_filter:
 
-:index:`Filtering the Main Screen <user interface; main screen filtering>`
---------------------------------------------------------------------------
+.. only:: html and not epub
 
-The items displayed in the Cluster Pane and the Album Pane can be filtered to allow for quickly reviewing selected information. The filter bars can be displayed or hidden from the :menuselection:`"View"` menu, or using the keyboard shortcut :kbd:`Ctrl+Shift+F`.
+   .. seealso::
 
-.. image:: images/main_window_filter_bars.png
-   :width: 100 %
+      Details:
+      :doc:`main_screen_filter` /
+      :doc:`metadata_pane`
 
-To filter the items in one of the panes, simply select one or more filters and enter the filter text to use for that pane. The items will be displayed or hidden based on the filter criteria entered.
+.. toctree::
+   :hidden:
 
-When the :guilabel:`Filters` button is clicked, a dialog will be displayed to allow to you to select the filters to use for that pane.
-
-.. only:: not latex
-
-   .. image:: images/filter_selection_dialog.png
-
-.. only:: latex
-
-   .. image:: images/filter_selection_dialog.png
-      :width: 30%
-
-When filtering is applied, items will only be displayed if:
-
-- no filters are selected or no filter text has been entered;
-- no tags are found that match the selected filters;
-- a tag is found that matches one of the selected filters and the filter text is found within the tag value.
-
-Items will not be displayed if one or more tags were found in the selected filters and the filter text was not found in any values of those tags.
-
-.. _main_screen_metadata:
-
-:index:`Metadata Differences Display <user interface; metadata differences display>`
--------------------------------------------------------------------------------------
-
-When a file is selected in the Cluster Pane, the Metadata Pane will display the differences between the original metadata found in the file and the new metadata that will be written to the file. When a track is selected in the Album Pane, the Metadata Pane will display the differences between the original metadata found in the file and the new metadata initially retrieved from MusicBrainz that will be written to the file. In both cases, the original metadata is displayed in the middle column, and the new metadata is displayed in the right-hand column.
-
-.. only:: not latex
-
-   .. image:: images/metadata-pane-differences.png
-      :align: center
-
-   |
-
-.. only:: latex
-
-   .. image:: images/metadata-pane-differences.png
-      :width: 90%
-      :align: center
-
-When there are differences between the original and new metadata, Picard will highlight the differences for easy identification of the changes. Additions will be highlighted in green, and deletions will be highlighted in red.
-
-In addition, the tag name in the first column will be highlighted in a different color. Modified tags will be highlighted in yellow, added tags will be highlighted in green, and deleted tags will be highlighted in red.
+   main_screen_filter
+   metadata_pane
