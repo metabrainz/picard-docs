@@ -68,7 +68,7 @@ The context menu also provides actions to add a new tag, and an option to displa
 :index:`Editing Metadata <user interface; editing metadata>`
 -------------------------------------------------------------
 
-To begin editing a tag's value, you can double-click the value to edit it in-place. You can also edit the tag in the tag editor, brought up from the context menu or by pressing :kbd:`Alt+Shift+E`. Note that double-clicking a multi-value tag always opens the tag editor.
+To begin editing a tag's value, you can double-click the value to edit it in-place. You can also edit the tag in the tag editor, brought up from the context menu or by pressing :kbd:`Alt+Shift+E` (:kbd:`⌥+⇧+E` on macOS). Note that double-clicking a multi-value tag always opens the tag editor.
 
 .. only:: not latex
 
@@ -98,17 +98,17 @@ You can edit multiple files or tracks at once by selecting them in the Cluster P
 :index:`Copying and Pasting Tags <user interface; copying and pasting tags>`
 ----------------------------------------------------------------------------
 
-Tag values can be copied to the clipboard and pasted, either into another tag or into other files or tracks. The behavior depends on how much you have selected. The :guilabel:`Copy` and :guilabel:`Paste` actions are available from the context menu, and can also be performed using the standard :kbd:`Ctrl+C` and :kbd:`Ctrl+V` keyboard shortcuts (:kbd:`Cmd+C` and :kbd:`Cmd+V` on macOS).
+Tag values can be copied to the clipboard and pasted, either into another tag or into other files or tracks. The behavior depends on how much you have selected. The :guilabel:`Copy` and :guilabel:`Paste` actions are available from the context menu, and can also be performed using the standard :kbd:`Ctrl+C` and :kbd:`Ctrl+V` keyboard shortcuts (:kbd:`⌘+C` and :kbd:`⌘+V` on macOS).
 
 Copying
-~~~~~~~
++++++++
 
 When a single cell is selected, its value is copied to the clipboard as plain text. Copying a cell in the first column copies the tag name, while copying a cell in the original or new value column copies that value. The individual values of a multi-value tag are joined together with a semicolon and a space.
 
 When more than one cell is selected, the selected tags and their values are copied as a set. Picard places two representations on the clipboard at the same time. One is an internal representation that is used when pasting back into Picard. The other is a tab-separated representation, with one line per tag containing the tag name, the original value and the new value, that can be pasted into a spreadsheet or a text editor.
 
 Pasting
-~~~~~~~
++++++++
 
 When the clipboard contains plain text, pasting replaces the value of the currently selected cell in the new value column. Multiple values can be pasted by separating them with a semicolon and a space.
 
