@@ -45,6 +45,7 @@ RST-only Sphinx manual for MusicBrainz Picard (HTML + PDF on ReadTheDocs, gettex
 ## RST Style (enforced by tooling/CI)
 
 - One top-level title per file; heading adornments strictly `=` → `-` → `+` → `'`, never skip a level, underline must be >= title length.
+- First and second level section titles should be entered in ***Title Case***. The exception to this is items in the Frequently Asked Questions (FAQ) section that are shown as questions, which should be entered in ***Sentence case***. Third and subsequent level titles should be entered in ***Sentence case***.
 - 3-space indentation, no tabs.
 - Prefer long unwrapped lines and a single space between sentences.
 - Internal links: `:doc:` (pages) and `:ref:` (sections/labels) with relative paths, never hardcoded paths.
