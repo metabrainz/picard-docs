@@ -47,7 +47,10 @@ RST-only Sphinx manual for MusicBrainz Picard (HTML + PDF on ReadTheDocs, gettex
 - One top-level title per file; heading adornments strictly `=` → `-` → `+` → `'`, never skip a level, underline must be >= title length.
 - 3-space indentation, no tabs.
 - Prefer long unwrapped lines and a single space between sentences.
-- Internal links: `:doc:` (pages) and `:ref:` (sections/labels) with relative paths, never hardcoded paths. Use `:kbd:`, `:guilabel:`, `:menuselection:` roles.
+- Internal links: `:doc:` (pages) and `:ref:` (sections/labels) with relative paths, never hardcoded paths.
+- Use `:kbd:` role for keyboard shortcuts.
+- Use `:guilabel:` role for buttons.
+- Use `:menuselection:` role for menu items and actions.
 - Code blocks via `.. code-block:: <lang>` with an explicit language (custom `taggerscript` available; `none` if nothing fits), never bare indented blocks.
 - Prefer `list-table::` over grid tables; every image needs an `:alt:`; images use `.. only:: not latex` / `.. only:: latex` variants for scaling.
 - **Source:** `_project_documentation/DOCUMENTATION_STYLE_GUIDE.md`
