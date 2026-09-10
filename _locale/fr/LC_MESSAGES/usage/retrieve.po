@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-09 10:54-0600\n"
-"PO-Revision-Date: 2026-07-30 19:16+0000\n"
+"PO-Revision-Date: 2026-09-10 02:56+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/usageretrieve/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.9.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../usage/retrieve.rst:4
@@ -84,14 +84,12 @@ msgstr ""
 "la sortie sélectionnée pour une consultation ultérieure."
 
 #: ../../usage/retrieve.rst:32 ../../usage/retrieve_lookup_itunes.rst:4
-#, fuzzy
 msgid "Lookup iTunes Tag"
-msgstr "Rechercher des fichiers"
+msgstr "Rechercher une balise iTunes"
 
 #: ../../usage/retrieve.rst:37
-#, fuzzy
 msgid ":doc:`Lookup iTunes Tag <retrieve_lookup_itunes>`"
-msgstr ":doc:`Rechercher des fichiers <retrieve_lookup>`"
+msgstr ":doc:`Recherche de balise iTunes <retrieve_lookup_itunes>`"
 
 #: ../../usage/retrieve.rst:39
 msgid ""
@@ -101,9 +99,13 @@ msgid ""
 "is similar to the TOC information used in the \"Lookup CD or Ripper Log\" "
 "method."
 msgstr ""
+"Si vos fichiers contiennent la balise « iTunes CDDB 1 » (``itunes_cddb_1``), "
+"vous pouvez alors effectuer la recherche à l'aide de ces informations. Cette "
+"balise contient le nombre de pistes et leur durée pour l'album dont provient "
+"la piste. Cela s'apparente aux informations de table des matières (TOC) "
+"utilisées dans la méthode « Recherche par CD ou journal de rippage »."
 
 #: ../../usage/retrieve.rst:41
-#, fuzzy
 msgid ""
 "When initiated, the information from the tag is used to calculate a TOC "
 "signature. A request is sent to MusicBrainz to return a list of the releases "
@@ -111,18 +113,14 @@ msgid ""
 "you to select the one to use. If there are no matches or none of the matches "
 "are correct, you can search the database manually for the matching album."
 msgstr ""
-"C'est la méthode préférée pour identifier automatiquement l'album à "
-"récupérer, et devrait être utilisée lorsque vous avez le CD ou :ref:`le "
-"journal des rippeurs supportés <faq_supported_rippers>` disponible. "
-"Typiquement, cette fonction est utilisée juste après avoir rippé les "
-"fichiers audio du CD. Lorsqu'elle est lancée, la table des matières (TOC) "
-"est lue à partir du CD et une requête est envoyée à MusicBrainz pour "
-"retourner une liste des sorties qui correspondent à la TOC. S'il y a des "
-"correspondances, elles seront listées pour que vous puissiez choisir celle à "
-"utiliser. S'il n'y a pas de correspondance ou si aucune correspondance n'est "
-"correcte, vous pouvez rechercher manuellement l'album correspondant dans la "
-"base de données, et vous avez la possibilité d'attacher la TOC de votre CD à "
-"la sortie sélectionnée pour une consultation ultérieure."
+"Une fois le processus lancé, les informations contenues dans la balise sont "
+"utilisées pour calculer une signature TOC. Une requête est envoyée à "
+"MusicBrainz afin d'obtenir la liste des titres correspondant à cette "
+"signature TOC. S'il y a des correspondances, celles-ci s'afficheront et vous "
+"pourrez choisir celle que vous souhaitez utiliser. S'il n'y a aucune "
+"correspondance ou si aucune des correspondances n'est correcte, vous pouvez "
+"effectuer une recherche manuelle dans la base de données pour trouver "
+"l'album correspondant."
 
 #: ../../usage/retrieve.rst:53 ../../usage/retrieve_lookup.rst:4
 msgid "Lookup Files"
@@ -213,15 +211,14 @@ msgstr ""
 "saisies manuellement comme critère de recherche."
 
 #: ../../usage/retrieve.rst:124
-#, fuzzy
 msgid ""
 "Step-by-step instructions: :doc:`retrieve_lookup_cd` / :doc:"
 "`retrieve_lookup_itunes` / :doc:`retrieve_lookup` / :doc:`retrieve_scan` / :"
 "doc:`retrieve_browser` / :doc:`retrieve_manual`"
 msgstr ""
-"Instructions pas à pas : :doc:`retrieve_lookup_cd` / :doc:"
-"`retrieve_lookup` / :doc:`retrieve_scan` / :doc:`retrieve_browser` / :doc:"
-"`retrieve_manual`"
+"Instructions étape par étape : :doc:`retrieve_lookup_cd` / "
+":doc:`retrieve_lookup_itunes` / :doc:`retrieve_lookup` / "
+":doc:`retrieve_scan` / :doc:`retrieve_browser` / :doc:`retrieve_manual`"
 
 #: ../../usage/retrieve_lookup_cd.rst:6
 msgid ""
@@ -274,9 +271,9 @@ msgid ""
 "into Picard` button. This will load the information for the release into "
 "Picard."
 msgstr ""
-"Sélectionnez la bonne version dans la liste et cliquez sur le bouton :"
-"guilabel:`Charger dans Picard`. Cela chargera les informations relatives à "
-"la version dans Picard."
+"Sélectionnez la version souhaitée dans la liste, puis cliquez sur le bouton "
+":guilabel:`Charger dans Picard`. Les informations relatives à cette version "
+"seront alors chargées dans Picard."
 
 #: ../../usage/retrieve_browser.rst:130 ../../usage/retrieve_lookup.rst:69
 #: ../../usage/retrieve_lookup_cd.rst:25
@@ -286,8 +283,8 @@ msgid ""
 "A music symbol in front of a track number in the right-hand pane indicates "
 "that there has been no file assigned to the track."
 msgstr ""
-"Un symbole de musique devant un numéro de piste dans le volet de droite "
-"indique qu'aucun fichier n'a été attribué à la piste."
+"Une note de musique placée devant le numéro d'une piste dans le volet de "
+"droite indique qu'aucun fichier n'a été attribué à cette piste."
 
 #: ../../usage/retrieve_browser.rst:52 ../../usage/retrieve_lookup.rst:47
 #: ../../usage/retrieve_lookup_cd.rst:35
@@ -356,12 +353,11 @@ msgstr ""
 "incluses)."
 
 #: ../../usage/retrieve_lookup_itunes.rst:6
-#, fuzzy
 msgid ""
 "The steps to follow to :index:`lookup an iTunes Tag <lookup; iTunes>` are:"
 msgstr ""
-"Les étapes à suivre pour :index:`rechercher des fichiers <fichiers de "
-"recherche>` sont :"
+"Voici les étapes à suivre pour :index:`rechercher une balise iTunes "
+"<recherche; iTunes>` :"
 
 #: ../../usage/retrieve_lookup_itunes.rst:11
 msgid ""
@@ -372,6 +368,14 @@ msgid ""
 "matching releases. If there are no ``itunes_cddb_1`` tags found, then an "
 "error message will be displayed."
 msgstr ""
+"Sélectionnez les fichiers ou le groupe de fichiers que vous souhaitez "
+"rechercher, puis choisissez :menuselection:`« Outils --> Rechercher un "
+"CD... --> Rechercher une balise TOC...` dans le menu. Picard tentera "
+"d'extraire les informations TOC de l'album à partir de la balise "
+"``itunes_cddb_1`` présente dans chaque fichier afin d'interroger la base de "
+"données MusicBrainz et d'afficher une liste des albums correspondants. Si "
+"aucune balise ``itunes_cddb_1`` n'est détectée, un message d'erreur "
+"s'affichera."
 
 #: ../../usage/retrieve_lookup_itunes.rst:37
 msgid ""
@@ -379,6 +383,10 @@ msgid ""
 "use one of the other methods such as :doc:`Cluster and Lookup "
 "<retrieve_lookup>`, :doc:`retrieve_browser` or :doc:`retrieve_manual`."
 msgstr ""
+"S'il n'y a aucun résultat ou si aucun des résultats n'est correct, vous "
+"devrez utiliser l'une des autres méthodes, telles que :doc:`Regroupement et "
+"recherche <retrieve_lookup>`, :doc:`retrieve_browser` ou "
+":doc:`retrieve_manual`."
 
 #: ../../usage/retrieve_lookup.rst:6
 msgid "The steps to follow to :index:`lookup files` are:"

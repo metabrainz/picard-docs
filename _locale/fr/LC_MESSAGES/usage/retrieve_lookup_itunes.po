@@ -1,34 +1,38 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Automatic translation add-on <noreply-addon-autotranslate@weblate.org>, 2026.
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-09 10:54-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-09-10 02:56+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/usageretrieve_lookup_itunes/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: ../../usage/retrieve_lookup_itunes.rst:4
 msgid "Lookup iTunes Tag"
-msgstr ""
+msgstr "Rechercher une balise iTunes"
 
 #: ../../usage/retrieve_lookup_itunes.rst:6
 msgid ""
 "The steps to follow to :index:`lookup an iTunes Tag <lookup; iTunes>` are:"
 msgstr ""
+"Voici les étapes à suivre pour :index:`rechercher une balise iTunes "
+"<recherche; iTunes>` :"
 
 #: ../../usage/retrieve_lookup_itunes.rst:9
 msgid "Step 1"
-msgstr ""
+msgstr "Étape 1"
 
 #: ../../usage/retrieve_lookup_itunes.rst:11
 msgid ""
@@ -39,10 +43,18 @@ msgid ""
 "matching releases. If there are no ``itunes_cddb_1`` tags found, then an "
 "error message will be displayed."
 msgstr ""
+"Sélectionnez les fichiers ou le groupe de fichiers que vous souhaitez "
+"rechercher, puis choisissez :menuselection:`« Outils --> Rechercher un "
+"CD... --> Rechercher une balise TOC...` dans le menu. Picard tentera "
+"d'extraire les informations TOC de l'album à partir de la balise "
+"``itunes_cddb_1`` présente dans chaque fichier afin d'interroger la base de "
+"données MusicBrainz et d'afficher une liste des albums correspondants. Si "
+"aucune balise ``itunes_cddb_1`` n'est détectée, un message d'erreur "
+"s'affichera."
 
 #: ../../usage/retrieve_lookup_itunes.rst:21
 msgid "Step 2"
-msgstr ""
+msgstr "Étape 2"
 
 #: ../../usage/retrieve_lookup_itunes.rst:23
 msgid ""
@@ -50,16 +62,21 @@ msgid ""
 "into Picard` button. This will load the information for the release into "
 "Picard."
 msgstr ""
+"Sélectionnez la version souhaitée dans la liste, puis cliquez sur le bouton "
+":guilabel:`Charger dans Picard`. Les informations relatives à cette version "
+"seront alors chargées dans Picard."
 
 #: ../../usage/retrieve_lookup_itunes.rst:25
 msgid ""
 "A music symbol in front of a track number in the right-hand pane indicates "
 "that there has been no file assigned to the track."
 msgstr ""
+"Une note de musique placée devant le numéro d'une piste dans le volet de "
+"droite indique qu'aucun fichier n'a été attribué à cette piste."
 
 #: ../../usage/retrieve_lookup_itunes.rst:35
 msgid "Step 3"
-msgstr ""
+msgstr "Étape 3"
 
 #: ../../usage/retrieve_lookup_itunes.rst:37
 msgid ""
@@ -67,3 +84,7 @@ msgid ""
 "use one of the other methods such as :doc:`Cluster and Lookup "
 "<retrieve_lookup>`, :doc:`retrieve_browser` or :doc:`retrieve_manual`."
 msgstr ""
+"S'il n'y a aucun résultat ou si aucun des résultats n'est correct, vous "
+"devrez utiliser l'une des autres méthodes, telles que :doc:`Regroupement et "
+"recherche <retrieve_lookup>`, :doc:`retrieve_browser` ou "
+":doc:`retrieve_manual`."

@@ -1,25 +1,27 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Bob Swift <bswift@rsds.ca>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-09 10:54-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-09-10 02:56+0000\n"
+"Last-Translator: Bob Swift <bswift@rsds.ca>\n"
+"Language-Team: French <https://translations.metabrainz.org/projects/picard-"
+"docs/getting_startedmetadata_pane/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: ../../getting_started/metadata_pane.rst:4
 msgid ":index:`Metadata Pane <user interface; metadata pane>`"
 msgstr ""
+":index:`Volet des métadonnées <interface utilisateur; volet des métadonnées>`"
 
 #: ../../getting_started/metadata_pane.rst:6
 msgid ""
@@ -27,6 +29,10 @@ msgid ""
 "the differences between the original tags found in the file metadata and the "
 "new tags that will be written to the file."
 msgstr ""
+"Lorsqu'un fichier est sélectionné dans le volet « Cluster », le volet « "
+"Métadonnées » affiche les différences entre les balises d'origine présentes "
+"dans les métadonnées du fichier et les nouvelles balises qui seront écrites "
+"dans le fichier."
 
 #: ../../getting_started/metadata_pane.rst:8
 msgid ""
@@ -35,6 +41,11 @@ msgid ""
 "original tags found in the metadata retrieved from MusicBrainz and the new "
 "tags that will be written to the file."
 msgstr ""
+"Lorsqu'un morceau est sélectionné dans le volet « Album » et qu'aucun "
+"fichier ne correspond à ce morceau, le volet « Métadonnées » affiche les "
+"différences entre les balises d'origine figurant dans les métadonnées "
+"récupérées depuis MusicBrainz et les nouvelles balises qui seront écrites "
+"dans le fichier."
 
 #: ../../getting_started/metadata_pane.rst:10
 msgid ""
@@ -42,12 +53,19 @@ msgid ""
 "the Metadata Pane will display the differences between the original tags "
 "found in the file and the new tags that will be written to the file."
 msgstr ""
+"Lorsqu'un fichier associé à une piste est sélectionné dans le volet « Album "
+"», le volet « Métadonnées » affiche les différences entre les balises "
+"d'origine présentes dans le fichier et les nouvelles balises qui seront "
+"écrites dans le fichier."
 
 #: ../../getting_started/metadata_pane.rst:12
 msgid ""
 "In all cases, the original metadata is displayed in the middle column, and "
 "the new metadata is displayed in the right-hand column."
 msgstr ""
+"Dans tous les cas, les métadonnées d'origine s'affichent dans la colonne du "
+"milieu, tandis que les nouvelles métadonnées s'affichent dans la colonne de "
+"droite."
 
 #: ../../getting_started/metadata_pane.rst:28
 msgid ""
@@ -55,10 +73,14 @@ msgid ""
 "Album Pane when matched to a track. The tags written will be those "
 "associated with the appropriate save location."
 msgstr ""
+"Notez que les fichiers sélectionnés peuvent être enregistrés soit depuis le "
+"volet « Cluster », soit depuis le volet « Album » lorsqu'ils sont associés à "
+"un morceau. Les balises enregistrées seront celles associées à l'emplacement "
+"d'enregistrement correspondant."
 
 #: ../../getting_started/metadata_pane.rst:32
 msgid "Tag Differences Display"
-msgstr ""
+msgstr "Affichage des différences entre les balises"
 
 #: ../../getting_started/metadata_pane.rst:34
 msgid ""
@@ -67,6 +89,10 @@ msgid ""
 "changes. Additions will be highlighted in green, and deletions will be "
 "highlighted in red."
 msgstr ""
+"En cas de différences entre les balises de métadonnées d'origine et les "
+"nouvelles, Picard mettra en évidence ces différences afin de faciliter "
+"l'identification des modifications. Les ajouts seront surlignés en vert, et "
+"les suppressions en rouge."
 
 #: ../../getting_started/metadata_pane.rst:36
 msgid ""
@@ -74,52 +100,65 @@ msgid ""
 "different color. Modified tags will be highlighted in yellow, added tags "
 "will be highlighted in green, and deleted tags will be highlighted in red."
 msgstr ""
+"De plus, le nom du tag figurant dans la première colonne sera mis en "
+"évidence dans une couleur différente. Les tags modifiés seront surlignés en "
+"jaune, les tags ajoutés en vert et les tags supprimés en rouge."
 
 #: ../../getting_started/metadata_pane.rst:40
 msgid "Tag Actions"
-msgstr ""
+msgstr "Actions sur les balises"
 
 #: ../../getting_started/metadata_pane.rst:42
 msgid ""
 "A number of actions can be taken with respect to a tag in the Metadata Pane. "
 "These include:"
 msgstr ""
+"Plusieurs actions peuvent être effectuées sur une balise dans le volet « "
+"Métadonnées ». Il s'agit notamment des actions suivantes :"
 
 #: ../../getting_started/metadata_pane.rst:44
 msgid "Editing the tag's value"
-msgstr ""
+msgstr "Modification de la valeur de la balise"
 
 #: ../../getting_started/metadata_pane.rst:45
 msgid "Adding the tag to the \"Preserve Tags\" list"
-msgstr ""
+msgstr "Ajouter le tag à la liste « Conserver les tags »"
 
 #: ../../getting_started/metadata_pane.rst:46
 msgid "Removing the tag"
-msgstr ""
+msgstr "Supprimer la balise"
 
 #: ../../getting_started/metadata_pane.rst:47
 msgid "Copying the tag's value to the clipboard"
-msgstr ""
+msgstr "Copier la valeur de la balise dans le presse-papiers"
 
 #: ../../getting_started/metadata_pane.rst:48
 msgid "Replacing the tag's value by pasting from the clipboard"
 msgstr ""
+"Remplacer la valeur d'une balise en collant le contenu du presse-papiers"
 
 #: ../../getting_started/metadata_pane.rst:50
 msgid ""
 "These actions can be accessed from the context menu brought up by right-"
 "clicking on a tag."
 msgstr ""
+"Ces actions sont accessibles depuis le menu contextuel qui s'affiche lorsque "
+"l'on clique avec le bouton droit de la souris sur une balise."
 
 #: ../../getting_started/metadata_pane.rst:65
 msgid ""
 "The context menu also provides actions to add a new tag, and an option to "
 "display the changed tags at the top of the list."
 msgstr ""
+"Le menu contextuel propose également des actions permettant d'ajouter un "
+"nouveau tag, ainsi qu'une option permettant d'afficher les tags modifiés en "
+"haut de la liste."
 
 #: ../../getting_started/metadata_pane.rst:69
 msgid ":index:`Editing Metadata <user interface; editing metadata>`"
 msgstr ""
+":index:`Modification des métadonnées <interface utilisateur; modification "
+"des métadonnées>`"
 
 #: ../../getting_started/metadata_pane.rst:71
 msgid ""
@@ -128,12 +167,21 @@ msgid ""
 "context menu or by pressing :kbd:`Alt+Shift+E` (:kbd:`⌥+⇧+E` on macOS). Note "
 "that double-clicking a multi-value tag always opens the tag editor."
 msgstr ""
+"Pour commencer à modifier la valeur d'une balise, vous pouvez double-cliquer "
+"sur celle-ci pour la modifier directement. Vous pouvez également modifier la "
+"balise dans l'éditeur de balises, accessible depuis le menu contextuel ou en "
+"appuyant sur :kbd:`Alt+Shift+E` (:kbd:`⌥+⇧+E` sous macOS). Notez que le "
+"double-clic sur une balise à valeurs multiples ouvre toujours l'éditeur de "
+"balises."
 
 #: ../../getting_started/metadata_pane.rst:86
 msgid ""
 "Note that the tag editor displays multi-value tags as a list of tags, and "
 "normal tags as a list with only one item."
 msgstr ""
+"Notez que l'éditeur de balises affiche les balises à valeurs multiples sous "
+"forme de liste de balises, et les balises normales sous forme de liste ne "
+"comportant qu'un seul élément."
 
 #: ../../getting_started/metadata_pane.rst:88
 msgid ""
@@ -141,23 +189,34 @@ msgid ""
 "list at the top of the editor. You can also add a new tag by entering the "
 "new tag name in the tag selector."
 msgstr ""
+"Dans l'éditeur de balises, vous pouvez sélectionner la balise à modifier "
+"dans la liste déroulante située en haut de l'éditeur. Vous pouvez également "
+"ajouter une nouvelle balise en saisissant son nom dans le sélecteur de "
+"balises."
 
 #: ../../getting_started/metadata_pane.rst:90
 msgid ""
 "Once you have edited a tag, the right-click context menu for that tag shows "
 "two additional actions:"
 msgstr ""
+"Une fois que vous avez modifié une balise, le menu contextuel accessible par "
+"un clic droit sur cette balise affiche deux actions supplémentaires :"
 
 #: ../../getting_started/metadata_pane.rst:92
 msgid ""
 "Use Original Values: This will reset the tag back to the original value."
 msgstr ""
+"Utiliser les valeurs d'origine : cette option réinitialise la balise à sa "
+"valeur d'origine."
 
 #: ../../getting_started/metadata_pane.rst:93
 msgid ""
 "Merge Original Values: This will merge the original values into the list of "
 "current values, creating a multi-value tag as required."
 msgstr ""
+"Fusionner les valeurs d'origine : cette option permet de fusionner les "
+"valeurs d'origine avec la liste des valeurs actuelles, en créant une balise "
+"à valeurs multiples si nécessaire."
 
 #: ../../getting_started/metadata_pane.rst:95
 msgid ""
@@ -167,11 +226,19 @@ msgid ""
 "used with caution because you could end up with unwanted results, such as "
 "accidentally setting all track titles to be the same."
 msgstr ""
+"Vous pouvez modifier plusieurs fichiers ou pistes à la fois en les "
+"sélectionnant dans le volet « Cluster » ou dans le volet « Album » avant "
+"d'effectuer les modifications. Celles-ci appliqueront la même valeur à tous "
+"les éléments sélectionnés. Il convient d'utiliser cette fonctionnalité avec "
+"prudence, car vous pourriez obtenir des résultats indésirables, comme par "
+"exemple attribuer accidentellement le même titre à toutes les pistes."
 
 #: ../../getting_started/metadata_pane.rst:99
 msgid ""
 ":index:`Copying and Pasting Tags <user interface; copying and pasting tags>`"
 msgstr ""
+":index:`Copier-coller des balises <interface utilisateur; copier-coller des "
+"balises>`"
 
 #: ../../getting_started/metadata_pane.rst:101
 msgid ""
@@ -182,10 +249,17 @@ msgid ""
 "`Ctrl+C` and :kbd:`Ctrl+V` keyboard shortcuts (:kbd:`⌘+C` and :kbd:`⌘+V` on "
 "macOS)."
 msgstr ""
+"Les valeurs des balises peuvent être copiées dans le presse-papiers puis "
+"collées, soit dans une autre balise, soit dans d'autres fichiers ou pistes. "
+"Le comportement dépend de la quantité de données que vous avez sélectionnée. "
+"Les actions :guilabel:`Copier` et :guilabel:`Coller` sont disponibles dans "
+"le menu contextuel et peuvent également être exécutées à l'aide des "
+"raccourcis clavier standard :kbd:`Ctrl+C` et :kbd:`Ctrl+V` (:kbd:`⌘+C` et "
+":kbd:`⌘+V` sous macOS)."
 
 #: ../../getting_started/metadata_pane.rst:104
 msgid "Copying"
-msgstr ""
+msgstr "Copier"
 
 #: ../../getting_started/metadata_pane.rst:106
 msgid ""
@@ -195,6 +269,12 @@ msgid ""
 "individual values of a multi-value tag are joined together with a semicolon "
 "and a space."
 msgstr ""
+"Lorsqu'une cellule est sélectionnée, sa valeur est copiée dans le presse-"
+"papiers sous forme de texte brut. La copie d'une cellule de la première "
+"colonne permet de copier le nom de la balise, tandis que la copie d'une "
+"cellule de la colonne « valeur d'origine » ou « nouvelle valeur » permet de "
+"copier cette valeur. Les différentes valeurs d'une balise à valeurs "
+"multiples sont séparées par un point-virgule suivi d'un espace."
 
 #: ../../getting_started/metadata_pane.rst:108
 msgid ""
@@ -205,10 +285,17 @@ msgid ""
 "tag containing the tag name, the original value and the new value, that can "
 "be pasted into a spreadsheet or a text editor."
 msgstr ""
+"Lorsque plusieurs cellules sont sélectionnées, les balises sélectionnées et "
+"leurs valeurs sont copiées en tant qu'ensemble. Picard place simultanément "
+"deux formats de données dans le presse-papiers. L'un est un format interne "
+"utilisé lors du collage dans Picard. L'autre est un format séparé par des "
+"tabulations, avec une ligne par balise contenant le nom de la balise, la "
+"valeur d'origine et la nouvelle valeur, qui peut être collé dans un tableur "
+"ou un éditeur de texte."
 
 #: ../../getting_started/metadata_pane.rst:111
 msgid "Pasting"
-msgstr ""
+msgstr "Coller"
 
 #: ../../getting_started/metadata_pane.rst:113
 msgid ""
@@ -216,6 +303,10 @@ msgid ""
 "currently selected cell in the new value column. Multiple values can be "
 "pasted by separating them with a semicolon and a space."
 msgstr ""
+"Lorsque le presse-papiers contient du texte brut, le collage remplace la "
+"valeur de la cellule actuellement sélectionnée par la nouvelle valeur. Il "
+"est possible de coller plusieurs valeurs en les séparant par un point-"
+"virgule suivi d'un espace."
 
 #: ../../getting_started/metadata_pane.rst:115
 msgid ""
@@ -225,6 +316,11 @@ msgid ""
 "were removed in the copied selection are also removed from the selected "
 "files or tracks."
 msgstr ""
+"Lorsque le presse-papiers contient un ensemble de balises copiées depuis "
+"Picard, le collage applique simultanément toutes ces balises aux fichiers ou "
+"pistes actuellement sélectionnés. Les valeurs existantes de ces balises sont "
+"remplacées, et toutes les balises qui ont été supprimées dans la sélection "
+"copiée sont également supprimées des fichiers ou pistes sélectionnés."
 
 #: ../../getting_started/metadata_pane.rst:117
 msgid ""
@@ -232,6 +328,10 @@ msgid ""
 "and will be skipped. If the clipboard does not contain any data that Picard "
 "can use, a message will be shown in the status bar."
 msgstr ""
+"Notez que les balises en lecture seule, telles que la durée du morceau, ne "
+"peuvent pas être collées et seront ignorées. Si le presse-papiers ne "
+"contient aucune donnée exploitable par Picard, un message s'affichera dans "
+"la barre d'état."
 
 #: ../../getting_started/metadata_pane.rst:119
 msgid ""
@@ -241,3 +341,9 @@ msgid ""
 "avoid unintended changes, such as accidentally overwriting the tags of "
 "several files at once."
 msgstr ""
+"Notez que le collage d'un ensemble de balises prend effet immédiatement et "
+"peut modifier de nombreuses balises dans tous les fichiers ou pistes "
+"sélectionnés. Picard ne proposant pas pour l'instant de fonction « Annuler "
+"», cette opération doit être effectuée avec prudence afin d'éviter toute "
+"modification involontaire, comme l'écrasement accidentel des balises de "
+"plusieurs fichiers à la fois."
