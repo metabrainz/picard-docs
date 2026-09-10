@@ -102,6 +102,7 @@ exclude_patterns = [
     'TODO.md',
     'draft_outline.md',
     '.pytest_cache',
+    'AGENTS.md',
 ]
 
 
