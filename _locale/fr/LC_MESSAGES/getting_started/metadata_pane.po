@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-09 10:54-0600\n"
+"POT-Creation-Date: 2026-09-15 08:21-0600\n"
 "PO-Revision-Date: 2026-09-10 02:56+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -104,11 +104,18 @@ msgstr ""
 "évidence dans une couleur différente. Les tags modifiés seront surlignés en "
 "jaune, les tags ajoutés en vert et les tags supprimés en rouge."
 
-#: ../../getting_started/metadata_pane.rst:40
+#: ../../getting_started/metadata_pane.rst:38
+msgid ""
+"Note that track time differences at or below the threshold specified in the :"
+"doc:`../config/options_matching` option settings will not be indicated as "
+"changed, and will not be highlighted."
+msgstr ""
+
+#: ../../getting_started/metadata_pane.rst:42
 msgid "Tag Actions"
 msgstr "Actions sur les balises"
 
-#: ../../getting_started/metadata_pane.rst:42
+#: ../../getting_started/metadata_pane.rst:44
 msgid ""
 "A number of actions can be taken with respect to a tag in the Metadata Pane. "
 "These include:"
@@ -116,28 +123,28 @@ msgstr ""
 "Plusieurs actions peuvent être effectuées sur une balise dans le volet « "
 "Métadonnées ». Il s'agit notamment des actions suivantes :"
 
-#: ../../getting_started/metadata_pane.rst:44
+#: ../../getting_started/metadata_pane.rst:46
 msgid "Editing the tag's value"
 msgstr "Modification de la valeur de la balise"
 
-#: ../../getting_started/metadata_pane.rst:45
+#: ../../getting_started/metadata_pane.rst:47
 msgid "Adding the tag to the \"Preserve Tags\" list"
 msgstr "Ajouter le tag à la liste « Conserver les tags »"
 
-#: ../../getting_started/metadata_pane.rst:46
+#: ../../getting_started/metadata_pane.rst:48
 msgid "Removing the tag"
 msgstr "Supprimer la balise"
 
-#: ../../getting_started/metadata_pane.rst:47
+#: ../../getting_started/metadata_pane.rst:49
 msgid "Copying the tag's value to the clipboard"
 msgstr "Copier la valeur de la balise dans le presse-papiers"
 
-#: ../../getting_started/metadata_pane.rst:48
+#: ../../getting_started/metadata_pane.rst:50
 msgid "Replacing the tag's value by pasting from the clipboard"
 msgstr ""
 "Remplacer la valeur d'une balise en collant le contenu du presse-papiers"
 
-#: ../../getting_started/metadata_pane.rst:50
+#: ../../getting_started/metadata_pane.rst:52
 msgid ""
 "These actions can be accessed from the context menu brought up by right-"
 "clicking on a tag."
@@ -145,7 +152,7 @@ msgstr ""
 "Ces actions sont accessibles depuis le menu contextuel qui s'affiche lorsque "
 "l'on clique avec le bouton droit de la souris sur une balise."
 
-#: ../../getting_started/metadata_pane.rst:65
+#: ../../getting_started/metadata_pane.rst:67
 msgid ""
 "The context menu also provides actions to add a new tag, and an option to "
 "display the changed tags at the top of the list."
@@ -154,13 +161,13 @@ msgstr ""
 "nouveau tag, ainsi qu'une option permettant d'afficher les tags modifiés en "
 "haut de la liste."
 
-#: ../../getting_started/metadata_pane.rst:69
+#: ../../getting_started/metadata_pane.rst:71
 msgid ":index:`Editing Metadata <user interface; editing metadata>`"
 msgstr ""
 ":index:`Modification des métadonnées <interface utilisateur; modification "
 "des métadonnées>`"
 
-#: ../../getting_started/metadata_pane.rst:71
+#: ../../getting_started/metadata_pane.rst:73
 msgid ""
 "To begin editing a tag's value, you can double-click the value to edit it in-"
 "place. You can also edit the tag in the tag editor, brought up from the "
@@ -174,7 +181,7 @@ msgstr ""
 "double-clic sur une balise à valeurs multiples ouvre toujours l'éditeur de "
 "balises."
 
-#: ../../getting_started/metadata_pane.rst:86
+#: ../../getting_started/metadata_pane.rst:88
 msgid ""
 "Note that the tag editor displays multi-value tags as a list of tags, and "
 "normal tags as a list with only one item."
@@ -183,7 +190,7 @@ msgstr ""
 "forme de liste de balises, et les balises normales sous forme de liste ne "
 "comportant qu'un seul élément."
 
-#: ../../getting_started/metadata_pane.rst:88
+#: ../../getting_started/metadata_pane.rst:90
 msgid ""
 "From the tag editor, you can select which tag to edit from the drop down "
 "list at the top of the editor. You can also add a new tag by entering the "
@@ -194,7 +201,7 @@ msgstr ""
 "ajouter une nouvelle balise en saisissant son nom dans le sélecteur de "
 "balises."
 
-#: ../../getting_started/metadata_pane.rst:90
+#: ../../getting_started/metadata_pane.rst:92
 msgid ""
 "Once you have edited a tag, the right-click context menu for that tag shows "
 "two additional actions:"
@@ -202,14 +209,14 @@ msgstr ""
 "Une fois que vous avez modifié une balise, le menu contextuel accessible par "
 "un clic droit sur cette balise affiche deux actions supplémentaires :"
 
-#: ../../getting_started/metadata_pane.rst:92
+#: ../../getting_started/metadata_pane.rst:94
 msgid ""
 "Use Original Values: This will reset the tag back to the original value."
 msgstr ""
 "Utiliser les valeurs d'origine : cette option réinitialise la balise à sa "
 "valeur d'origine."
 
-#: ../../getting_started/metadata_pane.rst:93
+#: ../../getting_started/metadata_pane.rst:95
 msgid ""
 "Merge Original Values: This will merge the original values into the list of "
 "current values, creating a multi-value tag as required."
@@ -218,7 +225,7 @@ msgstr ""
 "valeurs d'origine avec la liste des valeurs actuelles, en créant une balise "
 "à valeurs multiples si nécessaire."
 
-#: ../../getting_started/metadata_pane.rst:95
+#: ../../getting_started/metadata_pane.rst:97
 msgid ""
 "You can edit multiple files or tracks at once by selecting them in the "
 "Cluster Pane or Album Pane before performing the edits. The edits will "
@@ -233,14 +240,14 @@ msgstr ""
 "prudence, car vous pourriez obtenir des résultats indésirables, comme par "
 "exemple attribuer accidentellement le même titre à toutes les pistes."
 
-#: ../../getting_started/metadata_pane.rst:99
+#: ../../getting_started/metadata_pane.rst:101
 msgid ""
 ":index:`Copying and Pasting Tags <user interface; copying and pasting tags>`"
 msgstr ""
 ":index:`Copier-coller des balises <interface utilisateur; copier-coller des "
 "balises>`"
 
-#: ../../getting_started/metadata_pane.rst:101
+#: ../../getting_started/metadata_pane.rst:103
 msgid ""
 "Tag values can be copied to the clipboard and pasted, either into another "
 "tag or into other files or tracks. The behavior depends on how much you have "
@@ -254,14 +261,14 @@ msgstr ""
 "Le comportement dépend de la quantité de données que vous avez sélectionnée. "
 "Les actions :guilabel:`Copier` et :guilabel:`Coller` sont disponibles dans "
 "le menu contextuel et peuvent également être exécutées à l'aide des "
-"raccourcis clavier standard :kbd:`Ctrl+C` et :kbd:`Ctrl+V` (:kbd:`⌘+C` et "
-":kbd:`⌘+V` sous macOS)."
+"raccourcis clavier standard :kbd:`Ctrl+C` et :kbd:`Ctrl+V` (:kbd:`⌘+C` et :"
+"kbd:`⌘+V` sous macOS)."
 
-#: ../../getting_started/metadata_pane.rst:104
+#: ../../getting_started/metadata_pane.rst:106
 msgid "Copying"
 msgstr "Copier"
 
-#: ../../getting_started/metadata_pane.rst:106
+#: ../../getting_started/metadata_pane.rst:108
 msgid ""
 "When a single cell is selected, its value is copied to the clipboard as "
 "plain text. Copying a cell in the first column copies the tag name, while "
@@ -276,7 +283,7 @@ msgstr ""
 "copier cette valeur. Les différentes valeurs d'une balise à valeurs "
 "multiples sont séparées par un point-virgule suivi d'un espace."
 
-#: ../../getting_started/metadata_pane.rst:108
+#: ../../getting_started/metadata_pane.rst:110
 msgid ""
 "When more than one cell is selected, the selected tags and their values are "
 "copied as a set. Picard places two representations on the clipboard at the "
@@ -293,11 +300,11 @@ msgstr ""
 "valeur d'origine et la nouvelle valeur, qui peut être collé dans un tableur "
 "ou un éditeur de texte."
 
-#: ../../getting_started/metadata_pane.rst:111
+#: ../../getting_started/metadata_pane.rst:113
 msgid "Pasting"
 msgstr "Coller"
 
-#: ../../getting_started/metadata_pane.rst:113
+#: ../../getting_started/metadata_pane.rst:115
 msgid ""
 "When the clipboard contains plain text, pasting replaces the value of the "
 "currently selected cell in the new value column. Multiple values can be "
@@ -308,7 +315,7 @@ msgstr ""
 "est possible de coller plusieurs valeurs en les séparant par un point-"
 "virgule suivi d'un espace."
 
-#: ../../getting_started/metadata_pane.rst:115
+#: ../../getting_started/metadata_pane.rst:117
 msgid ""
 "When the clipboard contains a set of tags that was copied from Picard, "
 "pasting applies all of those tags to the currently selected files or tracks "
@@ -322,7 +329,7 @@ msgstr ""
 "remplacées, et toutes les balises qui ont été supprimées dans la sélection "
 "copiée sont également supprimées des fichiers ou pistes sélectionnés."
 
-#: ../../getting_started/metadata_pane.rst:117
+#: ../../getting_started/metadata_pane.rst:119
 msgid ""
 "Note that read-only tags, such as the track length, cannot be pasted into "
 "and will be skipped. If the clipboard does not contain any data that Picard "
@@ -333,7 +340,7 @@ msgstr ""
 "contient aucune donnée exploitable par Picard, un message s'affichera dans "
 "la barre d'état."
 
-#: ../../getting_started/metadata_pane.rst:119
+#: ../../getting_started/metadata_pane.rst:121
 msgid ""
 "Note that pasting a set of tags takes effect immediately and can change many "
 "tags across all of the selected files or tracks. Because Picard does not "
