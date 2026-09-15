@@ -38,7 +38,7 @@ It is recommended for most users to leave these settings at their default values
 
 **Ignore track duration difference under this number of seconds**
 
-   This specifies the number of seconds that a file can differ in length from the length in the MusicBrainz database and still be considered to be the same. The default value is 2 seconds.
+   This specifies the number of seconds that a file can differ in length from the length in the MusicBrainz database and still be considered to be the same. The allowable range is 0-7200 seconds, and the default value is 2 seconds. In addition to using this value for matching, differences at or below this value will not be indicated as changed in the :doc:`../getting_started/metadata_pane`.
 
 **Ignore the following tracks when determining whether a release is complete**
 

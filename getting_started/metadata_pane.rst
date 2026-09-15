@@ -35,6 +35,8 @@ When there are differences between the original and new metadata tags, Picard wi
 
 In addition, the tag name in the first column will be highlighted in a different color. Modified tags will be highlighted in yellow, added tags will be highlighted in green, and deleted tags will be highlighted in red.
 
+Note that track time differences at or below the threshold specified in the :doc:`../config/options_matching` option settings will not be indicated as changed, and will not be highlighted.
+
 
 Tag Actions
 ------------
