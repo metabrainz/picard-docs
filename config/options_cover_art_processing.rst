@@ -10,6 +10,8 @@ Picard can filter and process the images downloaded from the providers. Image pr
    .. image:: images/options-cover-processing.png
       :align: center
 
+   |
+
 .. only:: latex
 
    .. image:: images/options-cover-processing.png
@@ -34,9 +36,13 @@ Picard can filter and process the images downloaded from the providers. Image pr
 
    * **Stretch to fit**: Stretch the image to exactly fit the specified dimensions, distorting it if necessary.
 
+   Note that there are separate settings for images saved to tags and images saved to files. This allows things like embedding a smaller image in the audio file, but retaining a larger image in the album directory.
+
 **Convert images to the given format**
 
    Images can be converted to the given format. The available formats are JPEG, PNG, WebP, and TIFF.
+
+   As with the resize options, the image format conversion options are set separately for images saved to tags and images saved to files.
 
 **Processed image quality**
 
