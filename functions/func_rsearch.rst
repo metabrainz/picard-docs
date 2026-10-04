@@ -24,7 +24,7 @@ If ``group`` is an integer, return the capture group in the position matching th
 
 .. note::
 
-   The ``group`` argument was added in Picard v2.14.
+   The ``group`` argument was added in Picard v3.0.
 
 **Example:**
 
