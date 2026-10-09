@@ -2,172 +2,213 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/"
+"configoptions_filerenaming_editor/zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../config/options_filerenaming_editor.rst:6
 msgid ":index:`File Naming Script Editor <pair: file naming; script editor>`"
-msgstr ""
+msgstr ":index:`文件命名脚本编辑器 <pair: file naming; script editor>`"
 
 #: ../../config/options_filerenaming_editor.rst:8
 msgid "The file naming script editor is used to manage the file naming scripts available for use by Picard. Each script has a title that will show up in the script selection box, and all listed scripts can be edited by the user."
 msgstr ""
+"文件命名脚本编辑器用于管理 Picard 可使用的文件命名脚本。每个脚本都有一个标题"
+"，将显示在脚本选择框中，并列出的所有脚本都可以由用户编辑。"
 
 #: ../../config/options_filerenaming_editor.rst:21
 msgid "The editor screen has the following sections:"
-msgstr ""
+msgstr "编辑器屏幕具有以下部分："
 
 #: ../../config/options_filerenaming_editor.rst:23
 msgid "**Select the file naming script to use**"
-msgstr ""
+msgstr "**选择要使用的文件命名脚本**"
 
 #: ../../config/options_filerenaming_editor.rst:25
 msgid "This option allows the user to select the file naming script to use from the list of scripts available. The selected script will show up in the editing section, where it can be modified if required."
 msgstr ""
+"此选项允许用户从可用脚本列表中选择要使用的文件命名脚本。选定的脚本将显示在编"
+"辑部分，如果需要，可以对其进行修改。"
 
 #: ../../config/options_filerenaming_editor.rst:27
 msgid "**Title**"
-msgstr ""
+msgstr "**标题**"
 
 #: ../../config/options_filerenaming_editor.rst:29
 msgid "The title assigned to the currently selected script. This can be modified if required."
-msgstr ""
+msgstr "分配给当前选定脚本的标题。如果需要，可以对其进行修改。"
 
 #: ../../config/options_filerenaming_editor.rst:31
 msgid "**Script**"
-msgstr ""
+msgstr "**脚本**"
 
 #: ../../config/options_filerenaming_editor.rst:33
 msgid "Below the title is an edit box section containing the :index:`formatting string <scripts; file naming>` of the selected script. This tells Picard what the new name of the file and its containing directories should be in terms of various metadata values. The formatting string is generally referred to as a \"file naming script\", and is in :doc:`Picard's scripting language <../extending/scripting>`."
 msgstr ""
+"在标题下方是一个编辑框区域，包含所选脚本的 :index:`格式化字符串 <scripts; "
+"file naming>`。这告诉 Picard 新的文件及其包含的目录应该根据各种元数据值是什么"
+"名称。格式化字符串通常被称为“文件命名脚本”，并且位于 :doc:`Picard's "
+"scripting language <../extending/scripting>` 中。"
 
 #: ../../config/options_filerenaming_editor.rst:35
 msgid "The script editor automatically highlights the elements of the script, including :doc:`function names <../functions/list_by_type>` and :doc:`tag and variable names <../variables/variables>`. Hovering your mouse pointer over one of the highlighted entries will display help information about the entry if available."
 msgstr ""
+"脚本编辑器会自动突出显示脚本中的元素，包括 :doc:`function names <../"
+"functions/list_by_type>` 和 :doc:`tag and variable names <../variables/"
+"variables>`。将鼠标指针悬停在其中一个突出显示的条目上时，如果可用，将显示该条"
+"目的帮助信息。"
 
 #: ../../config/options_filerenaming_editor.rst:37
 msgid "Unicode characters can be entered into the script using the format ``\\uXXXX`` where \"XXXX\" is the hexadecimal value of the unicode character. It is not recommended to include unicode characters in the directory or filename."
 msgstr ""
+"可以使用格式 ``\\uXXXX`` 在脚本中输入 Unicode 字符，其中“XXXX”是 Unicode 字符"
+"的十六进制值。不建议在目录或文件名中包含 Unicode 字符。"
 
 #: ../../config/options_filerenaming_editor.rst:39
 msgid "The use of a '/' in the formatting string separates the output directory from the file name. The formatting string is allowed to contain any number of '/' characters. Everything before the last '/' is the directory location, and everything after the last '/' becomes the file's name."
 msgstr ""
+"在格式化字符串中使用 '/' 可以将输出目录与文件名分开。格式化字符串允许包含任意"
+"数量的 '/' 字符。最后一个 '/' 之前的所有内容是目录位置，最后一个 '/' 之后的所"
+"有内容成为文件名。"
 
 #: ../../config/options_filerenaming_editor.rst:41
 msgid "Each file naming script can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script."
 msgstr ""
+"每个文件命名脚本可以从一个简单的单行脚本，如 ``%album%/%title%``，到基于不同"
+"标准的非常复杂的脚本使用不同的文件命名格式。在所有情况下，文件将使用脚本生成"
+"的文本进行保存。"
 
 #: ../../config/options_filerenaming_editor.rst:43
 msgid "Scripts are often discussed in the `MetaBrainz Community Forum <https://community.metabrainz.org/>`_, and there is a thread specific to `file naming and script snippets <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_. There is also a tutorial on :doc:`../tutorials/naming_script` available."
 msgstr ""
+"脚本经常在 `MetaBrainz 社区论坛 <https://community.metabrainz.org/>`_ 中讨论"
+"，并且有一个专门针对 `文件命名和脚本片段 <https://community.metabrainz.org/t/"
+"repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/"
+"2786/>`_ 的主题。还有一个关于 :doc:`../tutorials/naming_script` 的教程可用。"
 
 #: ../../config/options_filerenaming_editor.rst:47
 msgid "Any new tags set or tags modified by the file naming script will not be written to the output files' metadata."
-msgstr ""
+msgstr "文件命名脚本设置或修改的任何新标签都不会写入输出文件的元数据。"
 
 #: ../../config/options_filerenaming_editor.rst:49
 msgid "**Files will be named like this**"
-msgstr ""
+msgstr "**文件将这样命名**"
 
 #: ../../config/options_filerenaming_editor.rst:51
 msgid "Below the file naming script is a section showing examples of the output of the script in two columns: Before and After. If you select files from the Cluster pane or Album pane prior to opening the Options screen, up to 10 files will be randomly chosen from your selection as file naming examples. If you have not selected any files, then some default examples will be provided."
 msgstr ""
+"文件命名脚本下方是一个显示脚本在两列中输出示例的部分：之前和之后。如果你在打"
+"开选项屏幕之前从聚类窗格或专辑窗格中选择文件，将随机从你的选择中选择最多 10 "
+"个文件作为文件命名示例。如果你没有选择任何文件，则会提供一些默认示例。"
 
 #: ../../config/options_filerenaming_editor.rst:53
 msgid "**Menu bar**"
-msgstr ""
+msgstr "**菜单栏**"
 
 #: ../../config/options_filerenaming_editor.rst:55
 msgid "At the top of the screen is a menu bar that provides script management functions as well as display settings options. The display settings include:"
-msgstr ""
+msgstr "屏幕顶部是一个菜单栏，提供脚本管理功能和显示设置选项。显示设置包括："
 
 #: ../../config/options_filerenaming_editor.rst:57
 msgid "Word wrap script - This will toggle word wrap on and off in the script edit box."
-msgstr ""
+msgstr "脚本自动换行 - 这将在脚本编辑框中开启或关闭自动换行。"
 
 #: ../../config/options_filerenaming_editor.rst:58
 msgid "Show help tooltips - This will determine whether or not the information is displayed when hovering over a highlighted item."
-msgstr ""
+msgstr "显示帮助工具提示 - 这将决定在鼠标悬停在高亮项目上时是否显示信息。"
 
 #: ../../config/options_filerenaming_editor.rst:59
 msgid "Show documentation - This will toggle displaying the scripting documentation in a sidebar on the screen."
-msgstr ""
+msgstr "显示文档 - 这将切换在屏幕侧边栏中显示脚本文档。"
 
 #: ../../config/options_filerenaming_editor.rst:61
 msgid "There is also an option to update the randomly selected example files from your selected files list."
-msgstr ""
+msgstr "还有一个选项可以从你的选择文件列表中更新随机选择的示例文件。"
 
 #: ../../config/options_filerenaming_editor.rst:63
 msgid "The script management functionality includes:"
-msgstr ""
+msgstr "脚本管理功能包括："
 
 #: ../../config/options_filerenaming_editor.rst:65
 msgid "Import a new script from a file, either as a plain-text script or a Picard Naming Script Package."
-msgstr ""
+msgstr "从文件导入新的脚本，可以是纯文本脚本或 Picard 命名脚本包。"
 
 #: ../../config/options_filerenaming_editor.rst:66
 msgid "Export the current script to a file, either as a plain-text script or a Picard Naming Script Package."
-msgstr ""
+msgstr "将当前脚本导出到文件，可以是纯文本脚本或 Picard 命名脚本包。"
 
 #: ../../config/options_filerenaming_editor.rst:67
 msgid "Add a new (default) script. This can be a blank script or one of the basic system preset scripts provided by Picard."
-msgstr ""
+msgstr "添加新的（默认）脚本。这可以是一个空白脚本或 Picard 提供的基本系统预设脚本。"
 
 #: ../../config/options_filerenaming_editor.rst:68
 msgid "Copy the current script as a new script."
-msgstr ""
+msgstr "将当前脚本复制为新的脚本。"
 
 #: ../../config/options_filerenaming_editor.rst:69
 msgid "Delete the current script."
-msgstr ""
+msgstr "删除当前脚本。"
 
 #: ../../config/options_filerenaming_editor.rst:70
 msgid "Reset all scripts, also available via the :guilabel:`Reset` button."
-msgstr ""
+msgstr "重置所有脚本，也可通过 :guilabel:`Reset` 按钮访问。"
 
 #: ../../config/options_filerenaming_editor.rst:71
 msgid "Save all changes, also available via the :guilabel:`Make It So!` button."
-msgstr ""
+msgstr "保存所有更改，也可通过 :guilabel:`Make It So!` 按钮访问。"
 
 #: ../../config/options_filerenaming_editor.rst:72
 msgid "Exit without saving changes, also available via the :guilabel:`Cancel` button."
-msgstr ""
+msgstr "不保存更改退出，也可通过 :guilabel:`Cancel` 按钮访问。"
 
 #: ../../config/options_filerenaming_editor.rst:75
 msgid "**Documentation Sidebar**"
-msgstr ""
+msgstr "**文档侧边栏**"
 
 #: ../../config/options_filerenaming_editor.rst:77
 msgid "When the documentation is displayed it shows the scripting function and available tags in separate tabs. Each tab is shown separately in the image below. There is a search function to assist in finding the desired function or tag."
 msgstr ""
+"当文档显示时，它会在单独的标签页中显示脚本功能和可用标签。每张标签页在下面的"
+"图像中分别显示。有一个搜索功能，以帮助你找到所需的函数或标签。"
 
 #: ../../config/options_filerenaming_editor.rst:95
 msgid "Each function displays a brief description of its usage, including the syntax and arguments."
-msgstr ""
+msgstr "每个函数显示其用法的简要描述，包括语法和参数。"
 
 #: ../../config/options_filerenaming_editor.rst:97
 msgid "Each tag displays a brief description of its contents, along with additional information such as whether it is impacted by any option settings. If the tag is provided by a plugin, the name of the plugin is displayed."
 msgstr ""
+"每个标签显示其内容的简要描述，以及附加信息，例如它是否受任何选项设置的影响。"
+"如果标签由插件提供，则会显示插件名称。"
 
 #: ../../config/options_filerenaming_editor.rst:100
 msgid "**Script Metadata**"
-msgstr ""
+msgstr "**脚本元数据**"
 
 #: ../../config/options_filerenaming_editor.rst:102
 msgid "There is also an option to view/edit the metadata details for the current script. These details include such things as title, author, version, license, description, and date and time of the last update. It is recommended that the description include things such as any required plugins, settings, or tagging scripts. This can also be triggered by double clicking the script title text box."
 msgstr ""
+"还有一个选项可以查看/编辑当前脚本的元数据细节。这些细节包括标题、作者、版本、"
+"许可证、描述以及最后更新日期和时间。建议描述中包含任何必需的插件、设置或标签"
+"脚本。这也可以通过双击脚本标题文本框来触发。"
 
 #: ../../config/options_filerenaming_editor.rst:123
 msgid "This information is saved in the Picard Naming Script Package file, and is included when a script package file is imported."
 msgstr ""
+"这些信息保存在 Picard 文件命名脚本包文件中，并且在导入脚本包文件时会包含这些"
+"信息。"

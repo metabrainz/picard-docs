@@ -2,84 +2,130 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-11 11:43-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/tutorialsnaming_script/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../tutorials/naming_script.rst:6
 msgid "Writing a :index:`File Naming Script <script; file naming, file naming script>`"
-msgstr ""
+msgstr "编写 :index:`文件命名脚本 <script; file naming, file naming script>`"
 
 #: ../../tutorials/naming_script.rst:8
 msgid "Writing a script to organize and name your files is actually not that hard -- just don't get intimidated by all the '$', '%' and parentheses. If you can write down a pattern like \"**ARTIST - (YEAR) ALBUM NAME/TRACK - SONG TITLE**\" of how you want the files and folders named, you can quite easily translate this to the proper script."
 msgstr ""
+"编写脚本来组织并命名你的文件实际上并不难——不要被所有的 '$', '%' 和括号吓到。"
+"如果你能写下一个像 \"**ARTIST - (YEAR) ALBUM NAME/TRACK - SONG TITLE**\" 这样"
+"的模式，说明你想要文件和文件夹命名的样子，你可以相当容易地将这转换为正确的脚"
+"本。"
 
 #: ../../tutorials/naming_script.rst:10
 msgid "To get started, first open the :doc:`../config/options_filerenaming_editor`, either by selecting :menuselection:`\"Options --> Open file naming script editor...\"` from Picard's main menu bar or by clicking the :guilabel:`Edit script...` button on the :doc:`../config/options_filerenaming` configuration page. From this screen, you can start a new script for your work."
 msgstr ""
+"要开始，首先打开 :doc:`../config/options_filerenaming_editor`，可以通过选择 "
+":menuselection:`\"选项 --> 打开文件命名脚本编辑器...\"` 从 Picard 的主菜单栏"
+"，或者通过点击 :guilabel:`编辑脚本...` 按钮在 :doc:`../config/"
+"options_filerenaming` 配置页面上。从这个屏幕，你可以开始为你的工作创建一个新"
+"的脚本。"
 
 #: ../../tutorials/naming_script.rst:12
 msgid "Note that the use of a '/' in the formatting string separates the output directory from the file name. The formatting string is allowed to contain any number of '/' characters. Everything before the last '/' is the directory location, and everything after the last '/' becomes the file's name. In our example, we only have one '/' character, meaning that we will have one directory level for the album which will contain the songs for that album."
 msgstr ""
+"请注意，格式化字符串中的 '/' 用于分隔输出目录和文件名。格式化字符串中允许包含"
+"任意数量的 '/' 字符。最后一个 '/' 之前的所有内容是目录位置，最后一个 '/' 之后"
+"的所有内容成为文件的名称。在我们的例子中，我们只有一个 '/' 字符，这意味着我们"
+"将为专辑有一个目录级别，其中将包含该专辑的歌曲。"
 
 #: ../../tutorials/naming_script.rst:14
 msgid "First, let's have a look at what we need. You see a list of the available tags in the :doc:`../variables/tags_basic` section. We want the **ARTIST** name, so available tags for this could be ``albumartist`` or ``artist``. This should be the name for an album folder, so ``albumartist`` sounds like what we need. To get the actual value for a tag you need to enclose its name in percent signs. So let's start:"
 msgstr ""
+"首先，让我们看看我们需要什么。你看到 :doc:`../variables/tags_basic` 部分中可"
+"用标签的列表。我们想要 **ARTIST** 名称，所以这个的可用标签可以是 "
+"``albumartist`` 或 ``artist``。这应该是专辑文件夹的名称，所以 "
+"``albumartist`` 听起来是我们需要的。要获取标签的实际值，你需要用百分号括住它"
+"的名称。所以让我们开始："
 
 #: ../../tutorials/naming_script.rst:20
 msgid "Now we want the **YEAR**. There is no ``year`` tag, but there is ``date``. Let's use this for now. If we want to add extra text like the \"**-**\" just write it down. We need to be careful with the parentheses, because those are special variables in scripting. We need to prefix them with a backslash. Let's add this all:"
 msgstr ""
+"现在我们想要 **YEAR**。没有 ``year`` 标签，但有 ``date``。让我们先使用这个。"
+"如果我们想添加额外的文本，比如 \"**-**\"，只需写下来。我们需要小心括号，因为"
+"它们在脚本中是特殊变量。我们需要在它们前面加上反斜杠。让我们添加所有这些："
 
 #: ../../tutorials/naming_script.rst:26
 msgid "Now we want the **ALBUM NAME**. That's simple, just use ``album``:"
-msgstr ""
+msgstr "现在我们想要 **ALBUM NAME**。这很简单，只需使用 ``album``:"
 
 #: ../../tutorials/naming_script.rst:32
 msgid "That takes care of the directory portion of the renaming. The next part is the **TRACK** number and **SONG TITLE**. The track number is available as ``tracknumber`` and the title of the track is simply ``title``. Adding these to our script we get:"
 msgstr ""
+"这处理了重命名中的目录部分。下一步是**音轨**编号和**歌曲标题**。音轨编号作为 "
+"``tracknumber`` 提供，音轨的标题简单地是 ``title``。将这些添加到我们的脚本中"
+"我们得到："
 
 #: ../../tutorials/naming_script.rst:38
 msgid "You can see that this looks nearly like the pattern that we said we wanted at the start. It's not perfect yet for a few reasons. What if there are 10 or more tracks on the album and they don't sort properly in the directory listing? Also, we get a full date instead of just the year. Finally, sometimes if you tag existing files they might not have the ``albumartist`` set, just ``artist``."
 msgstr ""
+"你可以看到这看起来几乎像我们最初说想要的模式。它还不完美，原因有几点。如果专"
+"辑上有 10 条或更多音轨，并且它们在目录列表中不能正确排序怎么办？此外，我们得"
+"到完整的日期而不是仅仅年份。最后，如果你标记现有文件，它们可能没有 "
+"``albumartist`` 设置，只有 ``artist``。"
 
 #: ../../tutorials/naming_script.rst:40
 msgid "Let's fix the track number first. We can take care of that by using the :ref:`func_num` function to add a leading zero to the number shown for tracks 1 through 9:"
 msgstr ""
+"让我们首先修复音轨编号。我们可以通过使用 :ref:`func_num` 函数为 1 到 9 的音轨"
+"编号添加前导零来处理这个问题："
 
 #: ../../tutorials/naming_script.rst:46
 msgid "Now let's fix the **ARTIST**. We can fallback to using ``artist`` if ``albumartist`` is not available by using:"
 msgstr ""
+"现在让我们修复**艺术家**。我们可以通过使用 ``artist`` 如果 ``albumartist`` 不"
+"可用来回退使用："
 
 #: ../../tutorials/naming_script.rst:52
 msgid "The :ref:`func_if2` function uses the first value that is not empty, so if ``albumartist`` is empty it uses ``artist`` instead."
 msgstr ""
+":ref:`func_if2` 函数使用第一个非空值，所以如果 ``albumartist`` 为空，它使用 "
+"``artist``。"
 
 #: ../../tutorials/naming_script.rst:54
 msgid "For the ``date`` tag the dates from MusicBrainz are always formatted as YYYY-MM-DD. We only need the year, so let's get just the first 4 characters with the :ref:`func_left` function:"
 msgstr ""
+"对于 ``date`` 标签，MusicBrainz 中的日期始终格式化为 YYYY-MM-DD。我们只需要年"
+"份，所以让我们用 :ref:`func_left` 函数只获取前 4 个字符："
 
 #: ../../tutorials/naming_script.rst:60
 msgid "What happens if there is no ``date`` tag information? Sometimes MusicBrainz does not have the release date of an album set as it is not yet known or hasn't been entered into the database. It would be great to omit the entire date with the parentheses in this case. Let's use the :ref:`func_if` function to check whether the date is set:"
 msgstr ""
+"如果没有任何 ``date`` 标签信息会发生什么？有时 MusicBrainz 没有将专辑的发行日"
+"期设置为它尚未知道或尚未输入到数据库中。在这种情况下，用括号省略整个日期会很"
+"好。让我们用 :ref:`func_if` 函数检查日期是否设置："
 
 #: ../../tutorials/naming_script.rst:66
 msgid "Alternately, we can enter a placeholder such a \"**0000**\" if the date is missing:"
-msgstr ""
+msgstr "或者，如果日期丢失，我们可以输入一个占位符，例如 \"**0000**\"："
 
 #: ../../tutorials/naming_script.rst:72
 msgid "And there you have it -- the final script for naming your files developed from the pattern that we used as our starting point."
-msgstr ""
+msgstr "就这样——我们最终开发出从我们用作起点的模式命名的文件脚本。"
 
 #: ../../tutorials/naming_script.rst:76
 msgid "For additional information about the available tags and variables please see the :doc:`../variables/variables` section. For information about the script functions available please see the :doc:`../functions/list_by_type` section."
 msgstr ""
+"有关可用标签和变量的更多信息，请参阅 :doc:`../variables/variables` 部分。有关"
+"可用脚本函数的信息，请参阅 :doc:`../functions/list_by_type` 部分。"

@@ -2,51 +2,72 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-31 14:46-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/variablestags_basic/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../variables/tags_basic.rst:9
 msgid ":index:`Basic Tags <tags; basic>`"
-msgstr ""
+msgstr ":index:`基本标签 <tags; basic>`"
 
 #: ../../variables/tags_basic.rst:11
 msgid "The following tags are supported and are written in the standard format that can be read by other software. The information is populated from MusicBrainz data for most releases, without any special Picard settings. Note that some of the information such as 'lyrics' is not contained within the MusicBrainz database, and will not be provided automatically."
 msgstr ""
+"以下标签受支持，并使用其他软件可读取的标准格式写入。对于大多数发行品，信息是"
+"从 MusicBrainz 数据中填充的，无需任何特殊的 Picard 设置。请注意，某些信息（"
+"如 'lyrics'）不包含在 MusicBrainz 数据库中，将不会自动提供。"
 
 #: ../../variables/tags_basic.rst:13
 msgid "All of these are also available as variables for use in Picard Scripts (for tagging, for file renaming and in several other more minor settings) by wrapping them between percent '%' symbols (e.g. ``%title%``)."
 msgstr ""
+"所有这些内容也可以作为变量，通过在百分号 '%' 符号之间包裹它们来在 Picard 脚本"
+"中使用（用于标签、文件命名和其他一些更次要的设置）（例如 ``%title%``）。"
 
 #: ../../variables/tags_basic.rst:15
 msgid "Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation."
 msgstr ""
+"某些标签提供实体的 :index:`MusicBrainz标识符 (MBID) <identifier; "
+"musicbrainz, mbid>`。MBID 是分配给实体（例如：艺术家、专辑、音轨或作品）的唯"
+"一标识符，用于唯一标识该实体。有关 MBID 的更多信息，请参阅 MusicBrainz 文档中"
+"的 `MusicBrainz Identifier <https://musicbrainz.org/doc/"
+"MusicBrainz_Identifier>`_ 页面。"
 
 #: ../../variables/tags_basic.rst:19
 msgid "Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database."
 msgstr ""
+"如果从 MusicBrainz 数据库中没有检索到标签的值，则不会创建标签，并且它们也不会"
+"作为变量可用。"
 
 #: ../../variables/tags_basic.rst:21
 msgid "Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for details."
 msgstr ""
+"其中一些标签仅支持特定的文件类型或标签格式。请参阅 :doc:`Picard Tag Mapping "
+"<../appendices/tag_mapping>` 部分了解详情。"
 
 #: ../../variables/tags_basic.rst:25
 msgid "Tags Provided from MusicBrainz Data"
-msgstr ""
+msgstr "从 MusicBrainz 数据提供的标签"
 
 #: ../../variables/tags_basic.rst:27
 msgid "These tags will be provided based on the information from the MusicBrainz database and will be populated automatically by Picard if the information is available."
 msgstr ""
+"这些标签将根据 MusicBrainz 数据库的信息提供，并且如果信息可用，Picard 将自动"
+"填充它们。"
 
 #: ../../variables/tags_basic.rst:29
 msgid "**album**"
@@ -54,7 +75,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:31
 msgid "The title of the release."
-msgstr ""
+msgstr "发行品的标题。"
 
 #: ../../variables/tags_basic.rst:33
 msgid "**albumartist**"
@@ -63,6 +84,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:35
 msgid "The artists primarily credited on the release, separated by the specified join phrases. These could be either \"standardized\" or \"as credited\" depending on whether the \"Use standardized artist names\" metadata option is enabled."
 msgstr ""
+"主要在发行品上署名的艺术家，由指定的连接短语分隔。这些可以是\"标准化\"或\"按"
+"署名\"，具体取决于是否启用了\"使用标准化艺术家名称\"元数据选项。"
 
 #: ../../variables/tags_basic.rst:37
 msgid "**albumartists**"
@@ -71,6 +94,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:39
 msgid "A multi-value variable containing the names of the album's artists. These could be either \"standardized\" or \"as credited\" depending on whether the \"Use standardized artist names\" metadata option is enabled. (*since Picard 3.0*)"
 msgstr ""
+"一个多值变量，包含专辑艺术家的名称。这些可以是\"标准化\"或\"按署名\"，具体取"
+"决于是否启用了\"使用标准化艺术家名称\"元数据选项。 (*自 Picard 3.0 起*)"
 
 #: ../../variables/tags_basic.rst:41
 msgid "**albumartistsort**"
@@ -78,7 +103,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:43
 msgid "The release artists sort names, separated by the specified join phrases. (e.g.: \"Beatles, The\")"
-msgstr ""
+msgstr "发行品艺术家的排序名称，由指定的连接短语分隔。 (例如：\"Beatles, The\")"
 
 #: ../../variables/tags_basic.rst:45
 msgid "**artist**"
@@ -87,6 +112,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:47
 msgid "The track artist names, separated by the specified join phrases. These could be either \"standardized\" or \"as credited\" depending on whether the \"Use standardized artist names\" metadata option is enabled."
 msgstr ""
+"音轨艺术家名称，由指定的连接短语分隔。这些可以是\"标准化\"或\"按署名\"，具体"
+"取决于是否启用了\"使用标准化艺术家名称\"元数据选项。"
 
 #: ../../variables/tags_basic.rst:49
 msgid "**artists**"
@@ -95,6 +122,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:51
 msgid "A multi-value tag containing the track artist names. These could be either \"standardized\" or \"as credited\" depending on whether the \"Use standardized artist names\" metadata option is enabled. (*since Picard 1.3*)"
 msgstr ""
+"一个多值标签，包含音轨艺术家名称。这些可以是\"标准化\"或\"按署名\"，具体取决"
+"于是否启用了\"使用标准化艺术家名称\"元数据选项。 (*自 Picard 1.3 起*)"
 
 #: ../../variables/tags_basic.rst:53
 msgid "**artistsort**"
@@ -102,7 +131,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:55
 msgid "The track artists sort names, separated by the specified join phrases."
-msgstr ""
+msgstr "音轨艺术家的排序名称，由指定的连接短语分隔。"
 
 #: ../../variables/tags_basic.rst:57
 msgid "**asin**"
@@ -110,7 +139,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:59
 msgid "The Amazon Standard Identification Number - the number identifying the item on Amazon."
-msgstr ""
+msgstr "亚马逊标准识别号 - 用于在亚马逊上识别商品的编号。"
 
 #: ../../variables/tags_basic.rst:61
 msgid "**barcode**"
@@ -118,7 +147,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:63
 msgid "The barcode assigned to the release."
-msgstr ""
+msgstr "分配给发行品的条形码。"
 
 #: ../../variables/tags_basic.rst:65
 msgid "**catalognumber**"
@@ -127,6 +156,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:67
 msgid "A multi-value tag contining the numbers assigned to the release by the labels, which can often be found on the spine or near the barcode. There may be more than one, especially when multiple labels are involved."
 msgstr ""
+"一个多值标签，包含唱片公司分配给发行品的编号，通常可以在书脊或条形码附近找到"
+"。可能会有多个，特别是当涉及多个唱片公司时。"
 
 #: ../../variables/tags_basic.rst:69
 msgid "**comment**"
@@ -135,6 +166,9 @@ msgstr ""
 #: ../../variables/tags_basic.rst:71
 msgid "The disambiguation comment entered to help distinguish one release from another (e.g.: Deluxe version with 2 bonus tracks). This is not populated by stock Picard. It may be used and populated by certain plugins. Picard stores this information in the **_releasecomment** variable."
 msgstr ""
+"输入的区分注释，用于帮助区分不同的发行品（例如：豪华版，含2首额外曲目）。这不"
+"是标准 Picard 生成的。某些插件可能会使用并填充它。Picard 将此信息存储在 "
+"**_releasecomment** 变量中。"
 
 #: ../../variables/tags_basic.rst:73
 msgid "**compilation**"
@@ -142,11 +176,13 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:0
 msgid "1 for Various Artist albums, otherwise empty. (*since Picard 1.3, compatible with iTunes*)"
-msgstr ""
+msgstr "用于各种艺术家专辑，否则为空。 (*since Picard 1.3, compatible with iTunes*)"
 
 #: ../../variables/tags_basic.rst:0
 msgid "1 if multiple track artists (including featured artists), otherwise 0. (*Picard 1.2 or previous*)"
 msgstr ""
+"如果有多位音轨艺术家（包括客座艺术家），则为1，否则为0。 (*Picard 1.2 或之"
+"前*)"
 
 #: ../../variables/tags_basic.rst:78
 msgid "**date**"
@@ -154,7 +190,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:80
 msgid "The date that the release (album) was issued, in the format YYYY-MM-DD."
-msgstr ""
+msgstr "发行品（专辑）发行日期，格式为 YYYY-MM-DD。"
 
 #: ../../variables/tags_basic.rst:82
 msgid "**discnumber**"
@@ -162,7 +198,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:84
 msgid "The number of the disc in the release that contains this track."
-msgstr ""
+msgstr "包含此音轨的发行品中的光盘编号。"
 
 #: ../../variables/tags_basic.rst:86
 msgid "**discsubtitle**"
@@ -170,7 +206,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:88
 msgid "The media title given to a specific disc in the release."
-msgstr ""
+msgstr "发行品中特定光盘的媒体标题。"
 
 #: ../../variables/tags_basic.rst:90
 msgid "**isrc**"
@@ -179,6 +215,9 @@ msgstr ""
 #: ../../variables/tags_basic.rst:92
 msgid "The International Standard Recording Code - an international standard code for uniquely identifying sound recordings and music video recordings. See `Wikipedia <https://en.wikipedia.org/wiki/International_Standard_Recording_Code>`_ for more information. (*since Picard 0.12*)"
 msgstr ""
+"国际标准录音代码 - 一种用于唯一识别声音录音和音乐视频录音的国际标准代码。有关"
+"更多信息，请参阅 `Wikipedia <https://en.wikipedia.org/wiki/"
+"International_Standard_Recording_Code>`_。 (*自 Picard 0.12 起可用*)"
 
 #: ../../variables/tags_basic.rst:94
 msgid "**label**"
@@ -186,7 +225,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:96
 msgid "A multi-value tag containing the names of the labels associated with the release."
-msgstr ""
+msgstr "一个多值标签，包含与发行品关联的标签名称。"
 
 #: ../../variables/tags_basic.rst:98
 msgid "**media**"
@@ -195,6 +234,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:100
 msgid "The media on which the release was distributed (e.g.: CD). See the `Release Format <https://musicbrainz.org/doc/Release/Format>`_ page on the MusicBrainz website for more information."
 msgstr ""
+"发行品发行的媒介（例如：CD）。有关更多信息，请参阅 MusicBrainz 网站上的 `发行"
+"格式 <https://musicbrainz.org/doc/Release/Format>`_ 页面。"
 
 #: ../../variables/tags_basic.rst:102
 msgid "**musicbrainz_albumartistid**"
@@ -202,7 +243,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:104
 msgid "A multi-value tag containing the MBIDs for the release artists."
-msgstr ""
+msgstr "一个多值标签，包含发行品的 MBIDs。"
 
 #: ../../variables/tags_basic.rst:106
 msgid "**musicbrainz_albumid**"
@@ -210,7 +251,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:108
 msgid "The MBID for the release."
-msgstr ""
+msgstr "发行品的 MBID。"
 
 #: ../../variables/tags_basic.rst:110
 msgid "**musicbrainz_artistid**"
@@ -218,7 +259,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:112
 msgid "A multi-value tag containing the MBIDs for the track artists."
-msgstr ""
+msgstr "一个多值标签，包含音轨艺术家的 MBIDs。"
 
 #: ../../variables/tags_basic.rst:114
 msgid "**musicbrainz_discid**"
@@ -227,6 +268,9 @@ msgstr ""
 #: ../../variables/tags_basic.rst:116
 msgid "The Disc ID is the code number which MusicBrainz uses to link a physical CD to a release listing. This is based on the table of contents (TOC) information read from the disc. This tag contains the Disc ID if the album information was retrieved using :menuselection:`\"Tools --> Lookup CD\"`. (*since Picard 0.12*)"
 msgstr ""
+"Disc ID 是 MusicBrainz 用来将物理 CD 链接到发行品列表的代码。这是基于从光盘读"
+"取的目录信息（TOC）生成的。如果使用 :menuselection:`\"工具 --> 查找 CD\"` 检"
+"索专辑信息，则此标签包含 Disc ID。 (*自 Picard 0.12 起可用*)"
 
 #: ../../variables/tags_basic.rst:118
 msgid "**musicbrainz_originalalbumid**"
@@ -234,7 +278,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:120
 msgid "The MBID for the original release. This is only available if the release has been merged with another release."
-msgstr ""
+msgstr "原始发行品的 MBID。只有当发行品已与其他发行品合并时才可用。"
 
 #: ../../variables/tags_basic.rst:122
 msgid "**musicbrainz_originalartistid**"
@@ -243,6 +287,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:124
 msgid "A multi-value tag containing the MBIDs for the track artists of the original recording. This is only available if the recording has been merged with another recording."
 msgstr ""
+"一个多值标签，包含原始录音的音轨艺术家的 MBIDs。只有当录音已与其他录音合并时"
+"才可用。"
 
 #: ../../variables/tags_basic.rst:126
 msgid "**musicbrainz_recordingid**"
@@ -250,7 +296,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:128
 msgid "The MBID for the recording."
-msgstr ""
+msgstr "录音的 MBID。"
 
 #: ../../variables/tags_basic.rst:130
 msgid "**musicbrainz_releasegroupid**"
@@ -258,7 +304,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:132
 msgid "The MBID for the release group."
-msgstr ""
+msgstr "发行组的 MBID。"
 
 #: ../../variables/tags_basic.rst:134
 msgid "**musicbrainz_trackid**"
@@ -266,7 +312,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:136
 msgid "The MBID for the track."
-msgstr ""
+msgstr "音轨的 MBID。"
 
 #: ../../variables/tags_basic.rst:138
 msgid "**originaldate**"
@@ -275,14 +321,23 @@ msgstr ""
 #: ../../variables/tags_basic.rst:140
 msgid "The original release date in the format YYYY-MM-DD. By default this is set to the earliest release in the release group. This can provide, for example, the release date of the vinyl version of what you have on CD. (*Included as standard from Picard 0.15, and using the Original Release Date plugin if you are still using a non-NGS version earlier than Picard 0.15*)"
 msgstr ""
+"原始发行日期，格式为 YYYY-MM-DD。默认情况下，此设置为发行组中最早的发行日期。"
+"例如，这可以提供您 CD 上的黑胶版本发行日期。 (*自 Picard 0.15 起作为标准包含"
+"，如果您仍在使用 Picard 0.15 之前的非 NGS 版本，则使用原始发行日期插件*)"
 
 #: ../../variables/tags_basic.rst:144
 msgid "This is the same information provided in the ``_releasegroup_firstreleasedate`` variable, and is consistent across all tracks in the release. If you prefer to have this tag populated with the date of the earliest recording of the track in the database, which will likely be different for each track in the release, this can be achieved by enabling a one-line tagging script as ``$set(originaldate,%_recording_firstreleasedate%)``. Be aware that setting this can cause a release to be scattered across multiple directories if you use ``%originaldate%`` as part of the path portion of your file naming script."
 msgstr ""
+"``_releasegroup_firstreleasedate`` 变量中提供了相同的信息，并且在所有音轨中保"
+"持一致。如果您希望用数据库中该音轨最早录音的日期来填充此标签（这很可能会在发"
+"行品中的每条音轨中有所不同），可以通过启用 ``$set"
+"(originaldate,%_recording_firstreleasedate%)`` 的一行标签脚本来实现。请注意，"
+"设置此选项可能会导致发行品分散在多个目录中，如果您在文件命名脚本中使用 "
+"``%originaldate%`` 作为路径部分的一部分。"
 
 #: ../../variables/tags_basic.rst:146
 msgid "If you are storing tags in MP3 files as ID3v2.3 then the original date can only be stored as a year."
-msgstr ""
+msgstr "如果您将标签存储在 MP3 文件中作为 ID3v2.3，则原始日期只能存储为年份。"
 
 #: ../../variables/tags_basic.rst:148
 msgid "**originalyear**"
@@ -291,6 +346,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:150
 msgid "The year of the original release date in the format YYYY. By default this is set to the earliest release in the release group. This can provide, for example, the release year of the vinyl version of what you have on CD."
 msgstr ""
+"原始发行日期的年份，格式为 YYYY。默认情况下设置为发行组的最早发行品。例如，这"
+"可以提供您在 CD 上的黑胶版本发行年份。"
 
 #: ../../variables/tags_basic.rst:152
 msgid "**releasecountry**"
@@ -299,6 +356,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:154
 msgid "The two-character code for the country in which the release was issued. If more than one release country was specified, this tag will contain the first one in the list."
 msgstr ""
+"发行品发行所在国家的两字符代码。如果指定了多个发行国，此标签将包含列表中的第"
+"一个。"
 
 #: ../../variables/tags_basic.rst:156
 msgid "**releasestatus**"
@@ -307,6 +366,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:158
 msgid "An indicator of the \"official\" status of the release. Possible values include *official*, *promotional*, *bootleg*, and *pseudo-release*."
 msgstr ""
+"指示发行品“官方”状态的指标。可能的值包括 "
+"*official*、*promotional*、*bootleg* 和 *pseudo-release*。"
 
 #: ../../variables/tags_basic.rst:160
 msgid "**releasetype**"
@@ -315,6 +376,9 @@ msgstr ""
 #: ../../variables/tags_basic.rst:162
 msgid "A multi-value tag containing the types of release assigned to the release group. See also :ref:`_primaryreleasetype <ref_primaryreleasetype>` and :ref:`_secondaryreleasetype <ref_secondaryreleasetype>`."
 msgstr ""
+"包含分配给发行组的发行类型的多值标签。另见 :ref:`_primaryreleasetype "
+"<ref_primaryreleasetype>` 和 :ref:`_secondaryreleasetype "
+"<ref_secondaryreleasetype>`。"
 
 #: ../../variables/tags_basic.rst:164
 msgid "**script**"
@@ -323,6 +387,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:166
 msgid "The script used to write the release's track list. The possible values are taken from the `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`_ standard. (*since Picard 0.10*)"
 msgstr ""
+"用于编写发行品音轨列表的脚本。可能的值来自 `ISO 15924 <https://"
+"en.wikipedia.org/wiki/ISO_15924>`_ 标准。 (*自 Picard 0.10 起*)"
 
 #: ../../variables/tags_basic.rst:168
 msgid "**title**"
@@ -330,7 +396,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:170
 msgid "The title of the track."
-msgstr ""
+msgstr "音轨的标题。"
 
 #: ../../variables/tags_basic.rst:172
 msgid "**totaldiscs**"
@@ -338,7 +404,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:174
 msgid "The total number of discs in this release."
-msgstr ""
+msgstr "此发行品中的总盘数。"
 
 #: ../../variables/tags_basic.rst:176
 msgid "**totaltracks**"
@@ -346,7 +412,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:178
 msgid "The total number of tracks on this disc."
-msgstr ""
+msgstr "此光盘上的总音轨数。"
 
 #: ../../variables/tags_basic.rst:180
 msgid "**tracknumber**"
@@ -354,7 +420,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:182
 msgid "The number of the track on the disc."
-msgstr ""
+msgstr "音轨在光盘上的编号。"
 
 #: ../../variables/tags_basic.rst:184
 msgid "**website**"
@@ -362,15 +428,15 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:186
 msgid "The official website for the artist."
-msgstr ""
+msgstr "艺术家的官方网站。"
 
 #: ../../variables/tags_basic.rst:190
 msgid "Tags Not Provided from MusicBrainz Data"
-msgstr ""
+msgstr "未从 MusicBrainz 数据提供的标签"
 
 #: ../../variables/tags_basic.rst:192
 msgid "These tags are not able to be populated by stock Picard, however they may be used and populated by certain plugins or scripts."
-msgstr ""
+msgstr "这些标签无法由标准 Picard 填充，但是某些插件或脚本可以使用并填充它们。"
 
 #: ../../variables/tags_basic.rst:194
 msgid "**acoustid_fingerprint**"
@@ -379,6 +445,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:196
 msgid "The Acoustic Fingerprint for the track. The fingerprint is based on the audio information found in a file, and is calculated using the `Chromaprint <https://acoustid.org/chromaprint>`_ software."
 msgstr ""
+"音轨的声学指纹。该指纹基于文件中的音频信息，并使用 `Chromaprint <https://"
+"acoustid.org/chromaprint>`_ 软件计算。"
 
 #: ../../variables/tags_basic.rst:198
 msgid "**acoustid_id**"
@@ -387,6 +455,10 @@ msgstr ""
 #: ../../variables/tags_basic.rst:200
 msgid "The AcoustID associated with the track. The AcoustID is the identifier assigned to an audio file based on its acoustic fingerprint. Multiple fingerprints may be assigned the same AcoustID if the fingerprints are similar enough. See the section on :doc:`Understanding Acoustic Fingerprinting and AcoustIDs <../tutorials/acoustid>` for more information."
 msgstr ""
+"与音轨关联的 AcoustID。AcoustID 是根据声学指纹分配给音频文件的标识符。如果指"
+"纹足够相似，多个指纹可能会被分配相同的 AcoustID。参见 :doc:`Understanding "
+"Acoustic Fingerprinting and AcoustIDs <../tutorials/acoustid>` 部分了解更多信"
+"息。"
 
 #: ../../variables/tags_basic.rst:202
 msgid "**albumsort**"
@@ -394,7 +466,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:204
 msgid "The sort name of the title of the release."
-msgstr ""
+msgstr "发行品标题的排序名称。"
 
 #: ../../variables/tags_basic.rst:206
 msgid "**bpm**"
@@ -402,7 +474,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:208
 msgid "The number of beats per minute of the track."
-msgstr ""
+msgstr "音轨的每分钟节拍数。"
 
 #: ../../variables/tags_basic.rst:210
 msgid "**copyright**"
@@ -410,7 +482,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:212
 msgid "The copyright message for the copyright holder of the original sound, beginning with a year and a space character."
-msgstr ""
+msgstr "原始声音版权持有者的版权声明，以年份和空格字符开头。"
 
 #: ../../variables/tags_basic.rst:214
 msgid "**encodedby**"
@@ -418,7 +490,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:216
 msgid "The person or organization that encoded the track."
-msgstr ""
+msgstr "编码音轨的人员或组织。"
 
 #: ../../variables/tags_basic.rst:218
 msgid "**encodersettings**"
@@ -426,7 +498,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:220
 msgid "The settings used when encoding the track."
-msgstr ""
+msgstr "编码音轨时使用的设置。"
 
 #: ../../variables/tags_basic.rst:222
 msgid "**key**"
@@ -434,7 +506,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:224
 msgid "The key of the music."
-msgstr ""
+msgstr "音乐的调。"
 
 #: ../../variables/tags_basic.rst:226
 msgid "**lyrics**"
@@ -442,23 +514,23 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:228
 msgid "The lyrics for the track."
-msgstr ""
+msgstr "音轨的歌词。"
 
 #: ../../variables/tags_basic.rst:230
 msgid "**musicip_fingerprint**"
-msgstr ""
+msgstr "**musicip_fingerprint**"
 
 #: ../../variables/tags_basic.rst:232
 msgid "The MusicIP Fingerprint for the track."
-msgstr ""
+msgstr "音轨的 MusicIP 指纹。"
 
 #: ../../variables/tags_basic.rst:234
 msgid "**musicip_puid**"
-msgstr ""
+msgstr "**musicip_puid**"
 
 #: ../../variables/tags_basic.rst:236
 msgid "The MusicIP PUIDs associated with the track."
-msgstr ""
+msgstr "与音轨关联的 MusicIP PUIDs。"
 
 #: ../../variables/tags_basic.rst:238
 msgid "**originalalbum**"
@@ -466,7 +538,7 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:240
 msgid "The release title of the earliest release in the release group intended for the title of the original recording."
-msgstr ""
+msgstr "在发行组中，用于原始录音标题的最早发行品的发行标题。"
 
 #: ../../variables/tags_basic.rst:242
 msgid "**originalartist**"
@@ -474,31 +546,34 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:244
 msgid "The track artist of the earliest release in the release group intended for the performers of the original recording."
-msgstr ""
+msgstr "在发行组中，用于原始录音表演者的最早发行品的音轨艺术家。"
 
 #: ../../variables/tags_basic.rst:246
 msgid "**originalfilename**"
-msgstr ""
+msgstr "**originalfilename**"
 
 #: ../../variables/tags_basic.rst:248
 msgid "The original name of the audio file."
-msgstr ""
+msgstr "音频文件的原始名称。"
 
 #: ../../variables/tags_basic.rst:250
 msgid "**releasedate**"
-msgstr ""
+msgstr "**releasedate**"
 
 #: ../../variables/tags_basic.rst:252
 msgid "Explicit tag for the release date (*since Picard 2.9*). This tag exists for specific use in scripts and plugins, but is not filled by default. In most cases it is recommended to use the ``date`` tag instead for compatibility with existing software."
 msgstr ""
+"发行日期的明确标签 (*自 Picard 2.9*)。此标签存在于脚本和插件中的特定用途，但"
+"默认情况下不会被填充。在大多数情况下，建议使用 ``date`` 标签以与现有软件兼容"
+"。"
 
 #: ../../variables/tags_basic.rst:254
 msgid "**showmovement**"
-msgstr ""
+msgstr "**showmovement**"
 
 #: ../../variables/tags_basic.rst:256
 msgid "The work and movement of the track."
-msgstr ""
+msgstr "音轨的作品和乐章。"
 
 #: ../../variables/tags_basic.rst:258
 msgid "**subtitle**"
@@ -506,15 +581,15 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:260
 msgid "This is used for information directly related to the contents title."
-msgstr ""
+msgstr "用于与内容标题直接相关的信息。"
 
 #: ../../variables/tags_basic.rst:262
 msgid "**syncedlyrics**"
-msgstr ""
+msgstr "**syncedlyrics**"
 
 #: ../../variables/tags_basic.rst:264
 msgid "The synchronized lyrics for the track. (*since Picard 3.0*)"
-msgstr ""
+msgstr "音轨的同步歌词。 (*自 Picard 3.0*)"
 
 #: ../../variables/tags_basic.rst:266
 msgid "**titlesort**"
@@ -522,60 +597,64 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:268
 msgid "The sort name of the track title."
-msgstr ""
+msgstr "音轨标题的排序名称。"
 
 #: ../../variables/tags_basic.rst:272
 msgid "iTunes-Specific Tags"
-msgstr ""
+msgstr "iTunes 特定标签"
 
 #: ../../variables/tags_basic.rst:274
 msgid "These tags are only available in iTunes files and are not able to be populated by stock Picard, however they may be used and populated by certain plugins or scripts."
 msgstr ""
+"这些标签仅在 iTunes 文件中可用，并且无法通过标准 Picard 填充，但是某些插件或"
+"脚本可以使用并填充它们。"
 
 #: ../../variables/tags_basic.rst:276
 msgid "**gapless**"
-msgstr ""
+msgstr "**gapless**"
 
 #: ../../variables/tags_basic.rst:278
 msgid "Indicates whether or not there are gaps between the recordings on the release."
-msgstr ""
+msgstr "指示发行品中的录音之间是否存在间隙。"
 
 #: ../../variables/tags_basic.rst:280
 msgid "**itunes_cddb_1**"
-msgstr ""
+msgstr "**itunes_cddb_1**"
 
 #: ../../variables/tags_basic.rst:282
 msgid "An iTunes-specific tag containing a code that uniquely identifies a CD based on the number of tracks and their lengths (*since Picard 3.0*)."
 msgstr ""
+"一个特定于 iTunes 的标签，包含一个代码，根据音轨数量及其长度唯一标识 CD（*自 "
+"Picard 3.0 起*）。"
 
 #: ../../variables/tags_basic.rst:284
 msgid "**podcast**"
-msgstr ""
+msgstr "**podcast**"
 
 #: ../../variables/tags_basic.rst:286
 msgid "Indicates whether or not the recording is a podcast."
-msgstr ""
+msgstr "指示录音是否为播客。"
 
 #: ../../variables/tags_basic.rst:288
 msgid "**podcasturl**"
-msgstr ""
+msgstr "**podcasturl**"
 
 #: ../../variables/tags_basic.rst:290
 msgid "The associated url if the recording is a podcast."
-msgstr ""
+msgstr "如果录音是播客，则关联的 url。"
 
 #: ../../variables/tags_basic.rst:292
 msgid "**show**"
-msgstr ""
+msgstr "**show**"
 
 #: ../../variables/tags_basic.rst:294
 msgid "The name of the show if the recording is associated with a television program."
-msgstr ""
+msgstr "如果录音与电视节目相关联，则为节目的名称。"
 
 #: ../../variables/tags_basic.rst:296
 msgid "**showsort**"
-msgstr ""
+msgstr "**showsort**"
 
 #: ../../variables/tags_basic.rst:298
 msgid "The sort name of the show if the recording is associated with a television program."
-msgstr ""
+msgstr "如果录音与电视节目相关联，则为节目的排序名称。"

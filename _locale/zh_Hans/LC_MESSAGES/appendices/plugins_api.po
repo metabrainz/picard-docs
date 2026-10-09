@@ -2,188 +2,228 @@
 # Copyright (C) 2025, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # scientists360 <scientists360@outlook.com>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.13.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-25 11:48-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:13+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/appendicesplugins_api/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../appendices/plugins_api.rst:4
 msgid ":index:`Appendix A <pair: plugins; programming>`: :index:`Plugins API <pair: plugins; api>`"
 msgstr ""
+":index:`附录 A <pair: plugins; programming>`: :index:`插件 API <pair: "
+"plugins; api>`"
 
 #: ../../appendices/plugins_api.rst:7
 msgid ":index:`Plugin Metadata <plugins; metadata>`"
-msgstr ""
+msgstr ":index:`插件元数据 <plugins; metadata>`"
 
 #: ../../appendices/plugins_api.rst:9
 msgid "Each plugin must provide some metadata as variables. Those variables should be placed at the top of the file."
-msgstr ""
+msgstr "每个插件必须以变量的形式提供一些元数据。这些变量应该放在文件的顶部。"
 
 #: ../../appendices/plugins_api.rst:29
 msgid "Variables explanation:"
-msgstr ""
+msgstr "变量说明："
 
 #: ../../appendices/plugins_api.rst:31
 msgid "**PLUGIN_NAME** should be a short but descriptive name for the plugin."
-msgstr ""
+msgstr "**PLUGIN_NAME** 应该是一个简短但描述性的插件名称。"
 
 #: ../../appendices/plugins_api.rst:33
 msgid "**PLUGIN_DESCRIPTION** should be as simple as possible, while still describing the main function. If your plugin targets Picard 2.7 or later you can use `Markdown <https://daringfireball.net/projects/markdown/>`_ syntax to format the text. If your plugin targets earlier versions you can instead use simple HTML formatting. Please restrict the usage of HTML to basic text formatting (e.g. ``<strong>``, ``<em>``), links (``<a>``) and lists (``<ul>``, ``<ol>``)."
 msgstr ""
+"** PLUGIN_DESCRIPTION ** 应尽可能简单，但仍需描述其主要功能。如果你的插件针"
+"对 Picard 2.7 或更高版本，可以使用 `Markdown <https://daringfireball.net/"
+"projects/markdown/>`_ 语法来格式化文本。如果你的插件针对早期版本，则可以使用"
+"简单的 HTML 格式。请将 HTML 的使用限制在基本文本格式（例如 ``<strong>``, "
+"``<em>``）、链接（``<a>``）和列表（``<ul>``, ``<ol>``）上。"
 
 #: ../../appendices/plugins_api.rst:35
 msgid "**PLUGIN_VERSION** should be filled with the version of Plugin. Plugin versions should be in the format ``x.y.z`` (e.g.: \"1.0\" or \"2.12.4\"). It is recommended that you use `Semantic Versioning <https://semver.org/>`_."
 msgstr ""
+"** PLUGIN_VERSION ** 应填写插件的版本。插件版本应采用 ``x.y.z`` 格式（例如"
+"：\"1.0\" 或 \"2.12.4\"）。建议你使用 `Semantic Versioning <https://"
+"semver.org/>`_。"
 
 #: ../../appendices/plugins_api.rst:37
 msgid "**PLUGIN_API_VERSIONS** should be set to the versions of Picard this plugin to run with. New Picard versions will usually support older plugin API versions, but on breaking changes support for older plugin versions can be dropped. Versions available for Picard 2 are \"2.0\", \"2.1\" and \"2.2\"."
 msgstr ""
+"** PLUGIN_API_VERSIONS ** 应设置为该插件运行的 Picard 版本。新的 Picard 版本"
+"通常会支持较旧的插件 API 版本，但在重大变更的情况下，可能会停止支持较旧的插件"
+"版本。适用于 Picard 2 的版本有 \"2.0\"、\"2.1\" 和 \"2.2\"。"
 
 #: ../../appendices/plugins_api.rst:39
 msgid "**PLUGIN_LICENSE** should be set with the license name of the plugin. If possible use one of the license names from the `SPDX License List <https://spdx.org/licenses/>`_, but you are welcomed to use another license if the one you chose is not available in the list."
 msgstr ""
+"**PLUGIN_LICENSE** 应设置为插件的许可证名称。如果可能，请使用 `SPDX 许可证列"
+"表 <https://spdx.org/licenses/>`_ 中的许可证名称，但如果您选择的许可证在列表"
+"中不可用，则可以使用其他许可证。"
 
 #: ../../appendices/plugins_api.rst:41
 msgid "**PLUGIN_LICENSE_URL** should be set to a URL pointing to the full license text."
-msgstr ""
+msgstr "**PLUGIN_LICENSE_URL** 应设置为指向完整许可证文本的 URL。"
 
 #: ../../appendices/plugins_api.rst:43
 msgid "**PLUGIN_USER_GUIDE_URL** should be set to a URL pointing to the documentation for the plugin. This variable is optional and may be omitted. If a URL is provided, it will be shown as a clickable link in the description displayed for the plugin in the Plugins option settings screen."
 msgstr ""
+"**PLUGIN_USER_GUIDE_URL** 应设置为指向插件文档的 URL。此变量是可选的，可以省"
+"略。如果提供了 URL，它将在插件选项设置屏幕中显示为可点击的链接。"
 
 #: ../../appendices/plugins_api.rst:47
 msgid ":index:`Metadata Processors <plugins; metadata processors>`"
-msgstr ""
+msgstr ":index:`元数据处理器 <plugins; metadata processors>`"
 
 #: ../../appendices/plugins_api.rst:49
 msgid "MusicBrainz metadata can be post-processed at two levels, album and track. The types of the arguments passed to the processor functions in the following examples are as follows:"
 msgstr ""
+"MusicBrainz 元数据可以在两个级别上进行后处理：专辑和音轨。以下示例中传递给处"
+"理器函数的参数类型如下："
 
 #: ../../appendices/plugins_api.rst:51
 msgid "**album**: ``picard.album.Album``"
-msgstr ""
+msgstr "**专辑**: ``picard.album.Album``"
 
 #: ../../appendices/plugins_api.rst:52
 msgid "**metadata**: ``picard.metadata.Metadata``"
-msgstr ""
+msgstr "**metadata**: ``picard.metadata.Metadata``"
 
 #: ../../appendices/plugins_api.rst:53
 msgid "**release**: ``dict`` with release data from MusicBrainz JSON web service"
-msgstr ""
+msgstr "**发行品**: ``dict``，包含来自 MusicBrainz JSON 网络服务的发行品数据"
 
 #: ../../appendices/plugins_api.rst:54
 msgid "**track**: ``dict`` with track data from MusicBrainz JSON web service"
-msgstr ""
+msgstr "**音轨**: ``dict``，包含来自 MusicBrainz JSON 网络服务的音轨数据"
 
 #: ../../appendices/plugins_api.rst:58
 msgid "Album metadata example:"
-msgstr ""
+msgstr "专辑元数据示例："
 
 #: ../../appendices/plugins_api.rst:79
 msgid "Track metadata example:"
-msgstr ""
+msgstr "音轨元数据示例："
 
 #: ../../appendices/plugins_api.rst:97
 msgid ":index:`Event Hooks <pair: plugins; event hooks>`"
-msgstr ""
+msgstr ":index:`事件钩子 <pair: plugins; event hooks>`"
 
 #: ../../appendices/plugins_api.rst:99
 msgid "Plugins can register themselves to listen for different events. Currently the following event hooks are available:"
-msgstr ""
+msgstr "插件可以注册自己以监听不同的事件。目前可用的以下事件钩子："
 
 #: ../../appendices/plugins_api.rst:102
 msgid "file_post_load_processor(file)"
-msgstr ""
+msgstr "file_post_load_processor(file)"
 
 #: ../../appendices/plugins_api.rst:104
 msgid "This hook is called after a file has been loaded into Picard. This could for example be used to load additional data for a file. Usage:"
-msgstr ""
+msgstr "此钩子在文件加载到 Picard 后被调用。例如，可以用来为文件加载附加数据。用法："
 
 #: ../../appendices/plugins_api.rst:117
 msgid "file_post_save_processor(file)"
-msgstr ""
+msgstr "file_post_save_processor(file)"
 
 #: ../../appendices/plugins_api.rst:119
 msgid "This hook is called after a file has been saved. This can for example be used to run additional post-processing on the file or write extra data. Note that the file's metadata is already the newly saved metadata. Usage:"
 msgstr ""
+"此钩子在文件保存后被调用。例如，可以用来对文件运行附加的后处理或将额外数据写"
+"入。请注意，文件的元数据已经是新保存的元数据。用法："
 
 #: ../../appendices/plugins_api.rst:132
 msgid "file_post_addition_to_track_processor(track, file)"
-msgstr ""
+msgstr "file_post_addition_to_track_processor(track, file)"
 
 #: ../../appendices/plugins_api.rst:134
 msgid "This hook is called after a file has been added to a track (on the right-hand pane of Picard)."
-msgstr ""
+msgstr "此钩子在文件添加到音轨后（在 Picard 的右侧窗格中）被调用。"
 
 #: ../../appendices/plugins_api.rst:147
 msgid "file_post_removal_from_track_processor(track, file)"
-msgstr ""
+msgstr "file_post_removal_from_track_processor(track, file)"
 
 #: ../../appendices/plugins_api.rst:149
 msgid "This hook is called after a file has been removed from a track (on the right-hand pane of Picard)."
-msgstr ""
+msgstr "此钩子在文件从音轨中移除后（在 Picard 的右侧窗格中）被调用。"
 
 #: ../../appendices/plugins_api.rst:162
 msgid "album_post_removal_processor(album)"
-msgstr ""
+msgstr "album_post_removal_processor(album)"
 
 #: ../../appendices/plugins_api.rst:164
 msgid "This hook is called after an album has been removed from Picard."
-msgstr ""
+msgstr "此钩子在专辑从 Picard 中移除后被调用。"
 
 #: ../../appendices/plugins_api.rst:178
 msgid "Event hooks have been available since API version 2.2."
-msgstr ""
+msgstr "事件钩子自 API 版本 2.2 起可用。"
 
 #: ../../appendices/plugins_api.rst:182
 msgid ":index:`File Formats <pair: plugins; file format>`"
-msgstr ""
+msgstr ":index:`文件格式 <pair: plugins; file format>`"
 
 #: ../../appendices/plugins_api.rst:184
 msgid "Plugins can extend Picard with support for additional file formats. See the existing `file format implementations <https://github.com/metabrainz/picard/tree/master/picard/formats>`_ for details on how to implement the ``_load`` and ``_save`` methods. Example:"
 msgstr ""
+"插件可以扩展 Picard 以支持额外的文件格式。有关如何实现 ``_load`` 和 "
+"``_save`` 方法的详细信息，请参阅现有的 `文件格式实现 <https://github.com/"
+"metabrainz/picard/tree/master/picard/formats>`_。示例："
 
 #: ../../appendices/plugins_api.rst:220
 msgid ":index:`Tagger Script Functions <pair: scripting functions; plugins>`"
-msgstr ""
+msgstr ":index:`标签器脚本函数 <pair: scripting functions; plugins>`"
 
 #: ../../appendices/plugins_api.rst:222
 msgid "To define new tagger script functions use ``register_script_function(function, name=None)`` from the ``picard.script`` module. ``parser`` is an instance of ``picard.script.ScriptParser``, and the rest of the arguments passed to it are the arguments from the function call in the tagger script. Example:"
 msgstr ""
+"要定义新的标签器脚本函数，请使用 ``register_script_function(function, "
+"name=None)`` 从 ``picard.script`` 模块。 ``parser`` 是 "
+"``picard.script.ScriptParser`` 的一个实例，传递给它的其余参数是标签器脚本中函"
+"数调用的参数。示例："
 
 #: ../../appendices/plugins_api.rst:242
 msgid "``register_script_function`` supports two optional arguments:"
-msgstr ""
+msgstr "``register_script_function`` 支持两个可选参数："
 
 #: ../../appendices/plugins_api.rst:244
 msgid "**eval_args**: If this is **False**, the arguments will not be evaluated before being passed to **function**."
 msgstr ""
+"**eval_args**：如果这是 **False**，参数在被传递到 **function** 之前不会被评估"
+"。"
 
 #: ../../appendices/plugins_api.rst:245
 msgid "**check_argcount**: If this is **False** the number of arguments passed to the function will not be verified."
-msgstr ""
+msgstr "**check_argcount**：如果这是 **False**，则不会验证传递给函数的参数数量。"
 
 #: ../../appendices/plugins_api.rst:247
 msgid "The default value for both arguments is **True**."
-msgstr ""
+msgstr "这两个参数的默认值都是 **True**。"
 
 #: ../../appendices/plugins_api.rst:251
 msgid ":index:`Context Menu Actions <pair: plugins; context menu actions>`"
-msgstr ""
+msgstr ":index:`上下文菜单操作 <pair: plugins; context menu actions>`"
 
 #: ../../appendices/plugins_api.rst:253
 msgid "Right-click context menu actions can be added to albums, tracks and files in \"Unmatched Files\", \"Clusters\" and the \"ClusterList\" (parent folder of Clusters). Example:"
 msgstr ""
+"右键单击上下文菜单操作可以添加到专辑、音轨和文件中 \"未匹配文件\"、\"聚类\" "
+"和 \"ClusterList\"（聚类的父文件夹）。示例："
 
 #: ../../appendices/plugins_api.rst:281
 msgid "Use ``register_x_action`` where 'x' is \"*album*\", \"*track*\", \"*file*\", \"*cluster*\" or \"*clusterlist*\"."
 msgstr ""
+"在 'x' 处使用 ``register_x_action``，其中 'x' 是 \"*专辑*\"、\"*音"
+"轨*\"、\"*file*\"、\"*聚类*\" 或 \"*clusterlist*\"。"

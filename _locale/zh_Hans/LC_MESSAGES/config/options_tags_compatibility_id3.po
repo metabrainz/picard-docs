@@ -2,88 +2,116 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/"
+"configoptions_tags_compatibility_id3/zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../config/options_tags_compatibility_id3.rst:4
 msgid ":index:`ID3 Files <configuration; id3 tag options>`"
-msgstr ""
+msgstr ":index:`ID3 文件 <configuration; id3 tag options>`"
 
 #: ../../config/options_tags_compatibility_id3.rst:17
 msgid "**ID3v2 version**"
-msgstr ""
+msgstr "**ID3v2 版本**"
 
 #: ../../config/options_tags_compatibility_id3.rst:19
 msgid "ID3v2.4 is the latest version and the default since Picard 2.9. Most modern software and devices can read ID3v2.4 tags. If you encounter issues with tag reading with your music player try using v2.3 instead."
 msgstr ""
+"ID3v2.4 是最新版本，自 Picard 2.9 起成为默认版本。大多数现代软件和设备都可以"
+"读取 ID3v2.4 标签。如果你在音乐播放器上遇到标签读取问题，请尝试使用 v2.3 版本"
+"。"
 
 #: ../../config/options_tags_compatibility_id3.rst:21
 msgid "Other than native support for multi-valued tags in v2.4, the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section will show you what you lose when choosing v2.3 instead of v2.4."
 msgstr ""
+"除了 v2.4 中对多值标签的原生支持外，:doc:`Picard Tag Mapping <../appendices/"
+"tag_mapping>` 部分将显示你选择 v2.3 而不是 v2.4 时会丢失的内容。"
 
 #: ../../config/options_tags_compatibility_id3.rst:23
 msgid "**ID3v2 text encoding**"
-msgstr ""
+msgstr "**ID3v2 文本编码**"
 
 #: ../../config/options_tags_compatibility_id3.rst:25
 msgid "The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16. Use ISO-8859-1 only if you face compatibility issues with your player."
 msgstr ""
+"版本 2.4 的默认值是 UTF-8，版本 2.3 的默认值是 UTF-16。只有当你遇到与播放器的"
+"兼容性问题时，才使用 ISO-8859-1。"
 
 #: ../../config/options_tags_compatibility_id3.rst:27
 msgid "**Join ID3v23 tags with**"
-msgstr ""
+msgstr "**将 ID3v23 标签连接为**"
 
 #: ../../config/options_tags_compatibility_id3.rst:29
 msgid "As mentioned above, ID3v2.3 does not support multi-value tags, and so Picard flattens these to strings before saving them to ID3v2.3 tags. This setting defines the string used to separate the values when flattened. Use '; ' for the greatest compatibility (rather than '/' since tags more often contain a '/' than a ';') and for the best visual compatibility in Picard between ID3v2.3 and other tagging formats."
 msgstr ""
+"如上所述，ID3v2.3 不支持多值标签，因此 Picard 在保存它们到 ID3v2.3 标签之前会"
+"将它们展平为字符串。此设置定义了展平时用于分隔值的字符串。使用 '; ' 以获得最"
+"大的兼容性（而不是 '/'，因为标签中更常包含 '/' 而不是 ';'）并在 Picard 中 "
+"ID3v2.3 与其他标签格式之间获得最佳视觉兼容性。"
 
 #: ../../config/options_tags_compatibility_id3.rst:33
 msgid "This setting is explicitly only for ID3 v2.3 tags, because those don't support proper multi value tags. Hence this separator setting is actually more of a workaround to this fact."
 msgstr ""
+"此设置明确仅适用于 ID3 v2.3 标签，因为它们不支持真正的多值标签。因此，此分隔"
+"符设置实际上更多是一种针对这一事实的解决方案。"
 
 #: ../../config/options_tags_compatibility_id3.rst:35
 msgid "Because Vorbis tags allow the same tag to exist multiple times, and hence support multi valued tags by default, there actually is no separator at all there. It is just multiple values, shown using whatever the player software uses as a separator."
 msgstr ""
+"因为 Vorbis 标签允许同一个标签存在多次，因此默认支持多值标签，实际上根本不存"
+"在分隔符。它只是多个值，使用播放器软件用作分隔符的方式显示。"
 
 #: ../../config/options_tags_compatibility_id3.rst:37
 msgid "If for some reason you want all the values of the tag in a single field separated by some separator you could use a script like:"
 msgstr ""
+"如果你出于某种原因希望将标签的所有值放在一个字段中并用一些分隔符分隔，你可以"
+"使用脚本，例如："
 
 #: ../../config/options_tags_compatibility_id3.rst:43
 msgid "to flatten all the values into a single field separated by \" / \"."
-msgstr ""
+msgstr "将所有值展平为一个用 \" / \" 分隔的字段。"
 
 #: ../../config/options_tags_compatibility_id3.rst:45
 msgid "**Save iTunes compatible grouping and work**"
-msgstr ""
+msgstr "**保存与 iTunes 兼容的分组和工作**"
 
 #: ../../config/options_tags_compatibility_id3.rst:47
 msgid "Save the tags grouping and work so that they are compatible with current iTunes versions. Without this option grouping will be displayed in iTunes as \"work name\" and work will not be available."
 msgstr ""
+"保存标签分组和工作信息，以便与当前的 iTunes 版本兼容。如果没有此选项，分组将"
+"在 iTunes 中显示为“工作名”，并且工作信息将不可用。"
 
 #: ../../config/options_tags_compatibility_id3.rst:49
 msgid "See the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for details."
 msgstr ""
+"有关详细信息，请参阅 :doc:`Picard Tag Mapping <../appendices/tag_mapping>` 部"
+"分。"
 
 #: ../../config/options_tags_compatibility_id3.rst:53
 msgid "For other players supporting grouping and work you might need to disable this option. `MusicBee <https://getmusicbee.com/>`_ is one example of this."
 msgstr ""
+"对于其他支持分组和工作信息的播放器，您可能需要禁用此选项。`MusicBee <https://"
+"getmusicbee.com/>`_ 是其中一个例子。"
 
 #: ../../config/options_tags_compatibility_id3.rst:55
 msgid "**Also include ID3v1 tags in the files**"
-msgstr ""
+msgstr "**也在文件中包含 ID3v1 标签**"
 
 #: ../../config/options_tags_compatibility_id3.rst:57
 msgid "This is not recommended at all. ID3v1.1 tags are obsolete and may not work with non-latin scripts."
-msgstr ""
+msgstr "这绝对不推荐。ID3v1.1 标签已过时，可能无法与非拉丁脚本兼容。"

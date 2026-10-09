@@ -2,19 +2,24 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-11 11:43-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/functionsfunc_dateformat/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../functions/func_dateformat.rst:6
 msgid "$dateformat"
@@ -22,60 +27,72 @@ msgstr ""
 
 #: ../../functions/func_dateformat.rst:8
 msgid "Usage: **$dateformat(date,[format],[date order])**"
-msgstr ""
+msgstr "用法：**$dateformat(date,[format],[date order])**"
 
 #: ../../functions/func_dateformat.rst:9
 msgid "Category: information"
-msgstr ""
+msgstr "类别：信息"
 
 #: ../../functions/func_dateformat.rst:10
 msgid "Implemented: Picard 2.7"
-msgstr ""
+msgstr "实现：Picard 2.7"
 
 #: ../../functions/func_dateformat.rst:12
 msgid "**Description:**"
-msgstr ""
+msgstr "**描述：**"
 
 #: ../../functions/func_dateformat.rst:14
 msgid "Returns the input ``date`` in the specified ``format``, which is based on the standard Python ``strftime`` `format codes <https://strftime.org>`_. If no ``format`` is specified the date will be returned in the form '2020-02-15' (year, month, day)."
 msgstr ""
+"将输入 ``date`` 格式化为指定的 ``format``，基于标准 Python ``strftime`` "
+"`format codes <https://strftime.org>`_。如果未指定 ``format``，日期将返回为 "
+"'2020-02-15'（年、月、日）的形式。"
 
 #: ../../functions/func_dateformat.rst:16
 msgid "The \"year\", \"month\" and \"day\" portions of the date must be entered as numbers, and can be separated by any non-numeric characters. The default order for the input date is \"ymd\" (year, month, day). This can be changed by specifying a ``date order``."
 msgstr ""
+"日期的 \"year\"、\"month\" 和 \"day\" 部分必须作为数字输入，并且可以由任何非"
+"数字字符分隔。输入日期的默认顺序是 \"ymd\"（年、月、日）。这可以通过指定一个 "
+"``date order`` 来更改。"
 
 #: ../../functions/func_dateformat.rst:18
 msgid "Valid entries for ``date order`` are:"
-msgstr ""
+msgstr "``date order`` 的有效条目是："
 
 #: ../../functions/func_dateformat.rst:20
 msgid "**ymd** - year, month, day (This is the default order.)"
-msgstr ""
+msgstr "**ymd** - 年、月、日（这是默认顺序。）"
 
 #: ../../functions/func_dateformat.rst:21
 msgid "**dmy** - day, month, year"
-msgstr ""
+msgstr "**dmy** - 日、月、年"
 
 #: ../../functions/func_dateformat.rst:22
 msgid "**mdy** - month, day, year"
-msgstr ""
+msgstr "**mdy** - 月、日、年"
 
 #: ../../functions/func_dateformat.rst:24
 msgid "If either the ``date`` or ``format`` are invalid an empty string will be returned. If an invalid ``date order`` is specified, the default order \"ymd\" will be used."
 msgstr ""
+"如果 ``date`` 或 ``format`` 任何一项无效，将返回空字符串。如果指定了无效的 "
+"``date order``，将使用默认顺序 \"ymd\"。"
 
 #: ../../functions/func_dateformat.rst:28
 msgid "Any special characters such as '%', '$', '(', ')' and '\\\\' will need to be escaped as shown in the examples below."
-msgstr ""
+msgstr "任何特殊字符，如 '%', '$', '(', ')' 和 '\\'，都需要像下面示例中那样转义。"
 
 #: ../../functions/func_dateformat.rst:32
 msgid "Platform-specific formatting codes should be avoided to help ensure the portability of scripts across the different platforms. These codes include: remove zero-padding (e.g.: ``%-d`` and ``%-m`` on Linux or macOS, and their equivalents ``%#d`` and ``%#m`` on Windows); element length specifiers (e.g.: ``%3Y``); and hanging '%' at the end of the format string."
 msgstr ""
+"应避免使用平台特定的格式代码，以确保脚本在不同平台上的可移植性。这些代码包括"
+"：移除零填充（例如：Linux 或 macOS 上的 ``%-d`` 和 ``%-m``，以及 Windows 上的"
+"等效 ``%#d`` 和 ``%#m``）；元素长度指定符（例如：``%3Y``）；以及格式字符串末"
+"尾的悬挂 '%'。"
 
 #: ../../functions/func_dateformat.rst:35
 msgid "**Examples:**"
-msgstr ""
+msgstr "**示例：**"
 
 #: ../../functions/func_dateformat.rst:37
 msgid "The following statements will return the values indicated:"
-msgstr ""
+msgstr "以下语句将返回指示的值："

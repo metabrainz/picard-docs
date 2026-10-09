@@ -2,52 +2,65 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/"
+"configoptions_tags_compatibility_ac3/zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../config/options_tags_compatibility_ac3.rst:4
 msgid ":index:`AC3 Files <configuration; ac3 tag options>`"
-msgstr ""
+msgstr ":index:`AC3 文件 <configuration; ac3 tag options>`"
 
 #: ../../config/options_tags_compatibility_ac3.rst:6
 msgid "Picard can save APEv2 tags to pure AC3 files, which by default do not support tagging. APEv2 tags in AC3 are supported by some players, but players not supporting AC3 files with APEv2 tags can have issues loading and playing those files. To deal with this you can choose whether to save tags to those files."
 msgstr ""
+"Picard 可以将 APEv2 标签保存到纯 AC3 文件中，默认情况下这些文件不支持标签。"
+"AC3 中的 APEv2 标签被某些播放器支持，但不支持带有 APEv2 标签的 AC3 文件的播放"
+"器在加载和播放这些文件时可能会出现问题。为此，您可以选择是否将标签保存到这些"
+"文件中。"
 
 #: ../../config/options_tags_compatibility_ac3.rst:19
 msgid "**Save APEv2 tags**"
-msgstr ""
+msgstr "**保存 APEv2 标签**"
 
 #: ../../config/options_tags_compatibility_ac3.rst:21
 msgid "Picard will save APEv2 tags to the files."
-msgstr ""
+msgstr "Picard 会将 APEv2 标签保存到文件中。"
 
 #: ../../config/options_tags_compatibility_ac3.rst:23
 msgid "**Do not save tags**"
-msgstr ""
+msgstr "**不保存标签**"
 
 #: ../../config/options_tags_compatibility_ac3.rst:25
 msgid "Picard will not save any tags to the files, but you can still use Picard to rename them. By default existing APEv2 tags will be kept in the file."
 msgstr ""
+"Picard 不会将任何标签保存到文件中，但你仍然可以使用 Picard 将它们重命名。默认"
+"情况下，现有的 APEv2 标签将保留在文件中。"
 
 #: ../../config/options_tags_compatibility_ac3.rst:27
 msgid "**Remove APEv2 tags**"
-msgstr ""
+msgstr "**删除 APEv2 标签**"
 
 #: ../../config/options_tags_compatibility_ac3.rst:29
 msgid "If you have \"Do not save tags\" enabled checking this option will cause Picard to remove existing APEv2 tags from the file on saving."
 msgstr ""
+"如果你启用了 \"不保存标签\"，选中此选项将导致 Picard 在保存时从文件中删除现有"
+"的 APEv2 标签。"
 
 #: ../../config/options_tags_compatibility_ac3.rst:31
 msgid "Regardless of how you have configured saving tags Picard will always read existing APEv2 tags in AC3 files."
-msgstr ""
+msgstr "无论你如何配置保存标签，Picard 总是会读取 AC3 文件中的现有 APEv2 标签。"

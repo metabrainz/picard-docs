@@ -2,84 +2,118 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-15 08:21-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_matching/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../config/options_matching.rst:4
 msgid ":index:`Matching <configuration; matching preferences>`"
-msgstr ""
+msgstr ":index:`匹配 <configuration; matching preferences>`"
 
 #: ../../config/options_matching.rst:6
 msgid "It is recommended for most users to leave these settings at their default values. For advanced users, these allow you to tune the way Picard matches your files and clusters to MusicBrainz releases and tracks."
 msgstr ""
+"建议大多数用户将这些设置保留为默认值。对于高级用户，这些设置允许您调整 "
+"Picard 匹配您的文件和聚类到 MusicBrainz 发行品和音轨的方式。"
 
 #: ../../config/options_matching.rst:19
 msgid "**Minimum similarity**"
-msgstr ""
+msgstr "**最小相似度**"
 
 #: ../../config/options_matching.rst:21
 msgid "This setting determines the minimum match between a cluster and a release on MusicBrainz for the release to be considered and presented as a possible match. Matches below this threshhold will be ignored."
 msgstr ""
+"此设置确定聚类与 MusicBrainz 上的发行品之间的最小匹配度，以便将发行品视为可能"
+"的匹配项并展示。低于此阈值的匹配将被忽略。"
 
 #: ../../config/options_matching.rst:23
 msgid "**Minimum margin between best and second-best match**"
-msgstr ""
+msgstr "**最佳匹配与次佳匹配之间的最小差距**"
 
 #: ../../config/options_matching.rst:25
 msgid "This setting determines the similarity difference to prefer one match over another. When Picard matches a file to tracks, it scores each candidate track by similarity. If the gap between the top two or more scores is less than this margin, the match is flagged as ambiguous, because the gap isn't enough to be certain which one is the best. In this case, you must verify the track selection."
 msgstr ""
+"此设置确定优先选择一个匹配项的相似度差异。当 Picard 将文件匹配到音轨时，它会"
+"为每个候选音轨按相似度评分。如果前两个或多个评分之间的差距小于此差距，则匹配"
+"项会被标记为模糊，因为差距不足以确定哪个是最佳匹配。在这种情况下，您必须验证"
+"音轨选择。"
 
 #: ../../config/options_matching.rst:27
 msgid "**Minimal similarity for matching files to tracks**"
-msgstr ""
+msgstr "**文件匹配到音轨的最小相似度**"
 
 #: ../../config/options_matching.rst:29
 msgid "The higher the percentage value, the more similar an individual file's metadata must be to the metadata from MusicBrainz for it to be matched to a track on a release in the Album pane."
 msgstr ""
+"百分比值越高，单个文件的元数据必须与 MusicBrainz 的元数据越相似，才能将其匹配"
+"到 Album 窗口中的发行品音轨上。"
 
 #: ../../config/options_matching.rst:31
 msgid "This setting is used when a file is assigned to a release and Picard needs to decide which track to which it is assigned. This happens on cluster lookup after the release has been chosen, or if you manually drag files onto a loaded release (as opposed to dragging it onto a track directly). If none of the tracks gives a match above the threshold the file is moved into an \"unmatched files\" section on that release."
 msgstr ""
+"当文件分配给发行品且 Picard 需要决定将其分配给哪个音轨时，将使用此设置。这发"
+"生在选择发行品后的聚类查找过程中，或者在您手动将文件拖放到已加载的发行品上时"
+"（而不是直接拖放到音轨上）。如果没有任何音轨提供高于阈值的匹配，则文件将被移"
+"动到该发行品上的“未匹配文件”部分。"
 
 #: ../../config/options_matching.rst:33
 msgid "If you have absolutely no metadata in your current files, and you are using \"Scan\" to match tracks, you may find that you need to lower the value of \"Minimal similarity for matching files to tracks\" in order for Picard to match the files within a release. Otherwise you may find that Picard matches the track to a release but then is not sure which track is correct; and leaves it in an \"unmatched files\" group within that release."
 msgstr ""
+"如果您当前的文件完全没有元数据，并且您正在使用“扫描”来匹配音轨，您可能会发现"
+"需要降低“文件匹配到音轨的最小相似度”的值，以便 Picard 能够在发行品内匹配文件"
+"。否则，您可能会发现 Picard 将音轨匹配到发行品，但不确定哪个音轨是正确的；并"
+"将其留在该发行品内的“未匹配文件”组中。"
 
 #: ../../config/options_matching.rst:37
 msgid "As a general rule, lowering the percentages may increase the chance of finding a match at the risk of false positives and incorrect matches."
 msgstr ""
+"通常情况下，降低百分比可能会增加找到匹配的机会，但存在误报和不正确匹配的风险"
+"。"
 
 #: ../../config/options_matching.rst:39
 msgid "**Ignore track duration difference under this number of seconds**"
-msgstr ""
+msgstr "**忽略小于此秒数的音轨时长差异**"
 
 #: ../../config/options_matching.rst:41
 msgid "This specifies the number of seconds that a file can differ in length from the length in the MusicBrainz database and still be considered to be the same. The allowable range is 0-7200 seconds, and the default value is 2 seconds. In addition to using this value for matching, differences at or below this value will not be indicated as changed in the :doc:`../getting_started/metadata_pane`."
 msgstr ""
+"这指定了文件与 MusicBrainz 数据库中的长度差异在多少秒内仍被视为相同。允许的范"
+"围是 0-7200 秒，默认值是 2 秒。除了使用此值进行匹配外，在此值或以下范围内的差"
+"异将不会在 :doc:`../getting_started/metadata_pane` 中指示为已更改。"
 
 #: ../../config/options_matching.rst:43
 msgid "**Ignore the following tracks when determining whether a release is complete**"
-msgstr ""
+msgstr "**在确定发行品是否完整时忽略以下音轨**"
 
 #: ../../config/options_matching.rst:45
 msgid "Missing tracks of the selected type (i.e.: video, pregap, data or silence) will be ignored when determining whether a release is considered to be complete. For example, if \"video\" is selected then a release with a bonus video will be marked as complete if it has all the audio tracks matched with a file even if the video file is missing."
 msgstr ""
+"在确定发行品是否被视为完整时，将忽略所选类型的缺失音轨（即：视频、 pregap、数"
+"据或静音）。例如，如果选择了 \"video\"，则如果包含所有与文件匹配的音频音轨的"
+"发行品（即使视频文件缺失）也将被标记为完整。"
 
 #: ../../config/options_matching.rst:47
 msgid "**Tags to ignore for comparison**"
-msgstr ""
+msgstr "**用于比较的忽略标签**"
 
 #: ../../config/options_matching.rst:49
 msgid "Tags in this list will not be considered when comparing the existing file metadata to the data retrieved from MusicBrainz. If the only difference between the file's metadata and the metadata retrieved from MusicBrainz is a tag listed in this ignore list then the file will be considered unmodified."
 msgstr ""
+"此列表中的标签在将现有文件元数据与从 MusicBrainz 获取的数据进行比较时不会被考"
+"虑。如果文件元数据与从 MusicBrainz 获取的元数据的唯一差异是此忽略列表中列出的"
+"标签，则文件将被视为未修改。"

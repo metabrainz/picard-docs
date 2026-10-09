@@ -2,35 +2,43 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-11 11:43-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/usageexec_commands/zh_Hans/>"
+"\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../usage/exec_commands.rst:4
 msgid ":index:`Executable Commands <commands; executable, executable commands>`"
-msgstr ""
+msgstr ":index:`可执行命令 <commands; executable, executable commands>`"
 
 #: ../../usage/exec_commands.rst:6
 msgid "Picard can accept commands for processing by specifying them on the command line using the ``-e`` option or loading them from a text file. Commands are case-insensitive, and are processed sequentially in the order that they are received. The executable commands that Picard recognizes are:"
 msgstr ""
+"Picard 可以通过在命令行上使用 ``-e`` 选项或从文本文件中加载命令来接受处理命令"
+"。命令不区分大小写，并且按照接收的顺序依次处理。Picard 能够识别的可执行命令有"
+"："
 
 #: ../../usage/exec_commands.rst:9
 msgid ":index:`CLEAR_LOGS <executable commands; CLEAR_LOGS>`"
-msgstr ""
+msgstr ":index:`插件 <executable commands; CLEAR_LOGS>`"
 
 #: ../../usage/exec_commands.rst:11
 msgid "Usage: **CLEAR_LOGS**"
-msgstr ""
+msgstr "用法：**CLEAR_LOGS**"
 
 #: ../../usage/exec_commands.rst:12
 #: ../../usage/exec_commands.rst:20
@@ -53,261 +61,296 @@ msgstr ""
 #: ../../usage/exec_commands.rst:205
 #: ../../usage/exec_commands.rst:213
 msgid "Implemented: Picard 2.9"
-msgstr ""
+msgstr "实现版本：Picard 2.9"
 
 #: ../../usage/exec_commands.rst:14
 msgid "Clear all entries from Picard's log. This is the equivalent of clicking the :guilabel:`Clear Log` button from the log viewing screen opened using the :menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
+"清除 Picard 的所有日志条目。这相当于从使用 :menuselection:`\"Help --> View "
+"Error/Debug Log\"` 命令打开的日志查看屏幕上点击 :guilabel:`Clear Log` 按钮。"
 
 #: ../../usage/exec_commands.rst:17
 msgid ":index:`CLUSTER <executable commands; CLUSTER>`"
-msgstr ""
+msgstr ":index:`CLUSTER <executable commands; CLUSTER>`"
 
 #: ../../usage/exec_commands.rst:19
 msgid "Usage: **CLUSTER**"
-msgstr ""
+msgstr "用法：**CLUSTER**"
 
 #: ../../usage/exec_commands.rst:22
 msgid "Cluster all files in the cluster pane. This is the equivalent of using the :menuselection:`\"Tools --> Cluster\"` command."
 msgstr ""
+"对聚类窗格中的所有文件进行聚类。这相当于使用 :menuselection:`\"Tools --> "
+"Cluster\"` 命令。"
 
 #: ../../usage/exec_commands.rst:25
 msgid ":index:`FINGERPRINT <executable commands; FINGERPRINT>`"
-msgstr ""
+msgstr ":index:`FINGERPRINT <executable commands; FINGERPRINT>`"
 
 #: ../../usage/exec_commands.rst:27
 msgid "Usage: **FINGERPRINT**"
-msgstr ""
+msgstr "用法：**FINGERPRINT**"
 
 #: ../../usage/exec_commands.rst:30
 msgid "Calculate acoustic fingerprints for all (matched) files in the album pane. This is the equivalent of using the :menuselection:`\"Tools --> Generate AcoustID Fingerprints\"` command."
 msgstr ""
+"为专辑窗格中的所有（匹配）文件计算声学指纹。这相当于使用 "
+":menuselection:`\"Tools --> Generate AcoustID Fingerprints\"` 命令。"
 
 #: ../../usage/exec_commands.rst:33
 msgid ":index:`FROM_FILE <executable commands; FROM_FILE>`"
-msgstr ""
+msgstr ":index:`FROM_FILE <executable commands; FROM_FILE>`"
 
 #: ../../usage/exec_commands.rst:35
 msgid "Usage: **FROM_FILE <file path>**"
-msgstr ""
+msgstr "用法：**FROM_FILE <文件路径>**"
 
 #: ../../usage/exec_commands.rst:38
 msgid "Load commands from a file. The file path can be either an absolute or relative path to a text file containing the commands to be executed. Each command to be processed must be on a separate line along with its arguments (if applicable). Blank lines and lines beginning with an octothorpe (#) are ignored. Command files can include other command files by specifying them with another ``FROM_FILE`` command. Circular references (by including a command file that is currently being processed) are ignored and will be logged as a warning."
 msgstr ""
+"从文件加载命令。文件路径可以是包含要执行命令的文本文件的绝对路径或相对路径。"
+"要处理的每个命令必须单独成行，并附带其参数（如果适用）。空白行和以八进制数符"
+"号 (#) 开头的行将被忽略。命令文件可以通过使用另一个 ``FROM_FILE`` 命令来包含"
+"其他命令文件。循环引用（通过包含当前正在处理的命令文件）将被忽略，并将记录为"
+"警告。"
 
 #: ../../usage/exec_commands.rst:40
 msgid "For example, you may have a file named ``commands.txt`` containing the standard commands that you want to use when processing each directory, such as:"
 msgstr ""
+"例如，您可能有一个名为 ``commands.txt`` 的文件，其中包含您希望在处理每个目录"
+"时想要使用的标准命令，例如："
 
 #: ../../usage/exec_commands.rst:72
 msgid "You could then process a directory by starting Picard with the command:"
-msgstr ""
+msgstr "然后，您可以通过使用命令启动 Picard 来处理一个目录："
 
 #: ../../usage/exec_commands.rst:80
 msgid ":index:`LOAD <executable commands; LOAD>`"
-msgstr ""
+msgstr ":index:`加载 <executable commands; LOAD>`"
 
 #: ../../usage/exec_commands.rst:82
 msgid "Usage: **LOAD <supported MBID/URL or path to a file/directory>**"
-msgstr ""
+msgstr "用法：**LOAD <支持的 MBID/URL 或文件/目录路径>**"
 
 #: ../../usage/exec_commands.rst:85
 msgid "Load one or more files/directories/MBIDs/URLs to Picard. This is similar to including the file, directory path, URL or MBID on the command line."
 msgstr ""
+"将一个或多个文件/目录/MBIDs/URL 加载到 Picard 中。这类似于在命令行上包含文件"
+"、目录路径、URL 或 MBID。"
 
 #: ../../usage/exec_commands.rst:87
 msgid "Files and directories are specified including the path (either absolute or relative) to the file or directory, and may include drive specifiers. They can also be specified using the ``file://`` prefix. URLs are specified by using either the ``http://`` or ``https://`` prefix. MBIDs are specified in the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of \"release\", \"artist\" or \"track\" and ``<mbid>`` is the MusicBrainz Identifier of the entity."
 msgstr ""
+"文件和目录的指定包括到文件或目录的路径（绝对或相对），并且可以包含驱动程序指"
+"定符。它们也可以使用 ``file://`` 前缀指定。URL 使用 ``http://`` 或 ``https://"
+"`` 前缀指定。MBIDs 按照 ``mbid://<entity_type>/<mbid>`` 格式指定，其中 "
+"``<entity_type>`` 是 \"release\"、\"artist\" 或 \"track\" 之一，``<mbid>`` 是"
+"实体的 MusicBrainz 标识符。"
 
 #: ../../usage/exec_commands.rst:89
 msgid "If a specified item contains a space, it must be enclosed in quotes such as ``\"/home/user/music/my song.mp3\"``."
-msgstr ""
+msgstr "如果指定的项包含空格，则必须用 ``\"/home/user/music/my song.mp3\"`` 括起来。"
 
 #: ../../usage/exec_commands.rst:92
 msgid ":index:`LOOKUP <executable commands; LOOKUP>`"
-msgstr ""
+msgstr ":index:`查找 <executable commands; LOOKUP>`"
 
 #: ../../usage/exec_commands.rst:94
 msgid "Usage: **LOOKUP [clustered|unclustered|all]**"
-msgstr ""
+msgstr "用法：**LOOKUP [clustered|unclustered|all]**"
 
 #: ../../usage/exec_commands.rst:97
 msgid "Lookup files in the clustering pane. Options are clustered files, unclustered files or all files. If not specified, the command defaults to all files."
 msgstr ""
+"在聚类窗格中查找文件。选项是聚类文件、非聚类文件或所有文件。如果未指定，命令"
+"默认为所有文件。"
 
 #: ../../usage/exec_commands.rst:99
 msgid "This is the equivalent of using the :menuselection:`\"Tools --> Lookup\"` command."
-msgstr ""
+msgstr "这相当于使用 :menuselection:`\"工具 --> 查找\"` 命令。"
 
 #: ../../usage/exec_commands.rst:102
 msgid ":index:`LOOKUP_CD <executable commands; LOOKUP_CD>`"
-msgstr ""
+msgstr ":index:`查找CD <executable commands; LOOKUP_CD>`"
 
 #: ../../usage/exec_commands.rst:104
 msgid "Usage: **LOOKUP_CD [device/log file]**"
-msgstr ""
+msgstr "用法：**LOOKUP_CD [设备/日志文件]**"
 
 #: ../../usage/exec_commands.rst:107
 msgid "Read CD from the selected drive or ripper log file, and looks it up on MusicBrainz. If no argument is specified, it defaults to the first (alphabetically) available disc drive."
 msgstr ""
+"从选定驱动器或 ripper 日志文件读取 CD，并在 MusicBrainz 上查找它。如果未指定"
+"参数，它将默认为第一个（按字母顺序）可用的光盘驱动器。"
 
 #: ../../usage/exec_commands.rst:109
 msgid "This is the equivalent of using the :menuselection:`\"Tools --> Lookup CD...\"` command."
-msgstr ""
+msgstr "这相当于使用 :menuselection:`\"工具 --> 查找 CD...\"` 命令。"
 
 #: ../../usage/exec_commands.rst:112
 msgid ":index:`PAUSE <executable commands; PAUSE>`"
-msgstr ""
+msgstr ":index:`暂停 <executable commands; PAUSE>`"
 
 #: ../../usage/exec_commands.rst:114
 msgid "Usage: **PAUSE <number of seconds to pause>**"
-msgstr ""
+msgstr "用法：**PAUSE <暂停的秒数>**"
 
 #: ../../usage/exec_commands.rst:117
 msgid "Pause executable command processing for the specified number of seconds."
-msgstr ""
+msgstr "暂停可执行命令处理指定的秒数。"
 
 #: ../../usage/exec_commands.rst:120
 msgid ":index:`QUIT <executable commands; QUIT>`"
-msgstr ""
+msgstr ":index:`退出 <executable commands; QUIT>`"
 
 #: ../../usage/exec_commands.rst:122
 msgid "Usage: **QUIT \\[force\\]**"
-msgstr ""
+msgstr "用法：**QUIT \\[force\\]**"
 
 #: ../../usage/exec_commands.rst:125
 msgid "The ``QUIT`` command waits until all queued executable commands have completed, and then initiates a shutdown request the same as if the user closed Picard from the user interface. This allows Picard to perform the same checks for unsaved files and such. When 'force' is entered as an argument to the command, Picard will bypass the unsaved files check."
 msgstr ""
+"``QUIT`` 命令等待所有排队可执行命令完成，然后发起与用户从用户界面关闭 Picard "
+"相同的关闭请求。这允许 Picard 执行未保存文件的相同检查等。当 'force' 作为命令"
+"参数输入时，Picard 将跳过未保存文件的检查。"
 
 #: ../../usage/exec_commands.rst:127
 msgid "Once a ``QUIT`` command has been queued, Picard will not queue any further executable commands. If the user cancels the ``QUIT`` from the unsaved files check dialog, the system will allow more commands to be queued."
 msgstr ""
+"一旦排队了 ``QUIT`` 命令，Picard 将不会排队任何其他可执行命令。如果用户从未保"
+"存文件检查对话框中取消 ``QUIT``，系统将允许排队更多命令。"
 
 #: ../../usage/exec_commands.rst:130
 msgid ":index:`REMOVE <executable commands; REMOVE>`"
-msgstr ""
+msgstr ":index:`移除 <executable commands; REMOVE>`"
 
 #: ../../usage/exec_commands.rst:132
 msgid "Usage: **REMOVE <path to one or more files>**"
-msgstr ""
+msgstr "用法：**REMOVE <一个或多个文件的路径>**"
 
 #: ../../usage/exec_commands.rst:135
 msgid "Removes the specified file(s) from Picard. Does nothing if no arguments provided."
-msgstr ""
+msgstr "从 Picard 中删除指定的文件。如果未提供参数，则什么也不做。"
 
 #: ../../usage/exec_commands.rst:138
 msgid ":index:`REMOVE_ALL <executable commands; REMOVE_ALL>`"
-msgstr ""
+msgstr ":index:`全部移除 <executable commands; REMOVE_ALL>`"
 
 #: ../../usage/exec_commands.rst:140
 msgid "Usage: **REMOVE_ALL**"
-msgstr ""
+msgstr "用法：**REMOVE_ALL**"
 
 #: ../../usage/exec_commands.rst:143
 msgid "Removes all files from Picard."
-msgstr ""
+msgstr "从 Picard 中删除所有文件。"
 
 #: ../../usage/exec_commands.rst:146
 msgid ":index:`REMOVE_EMPTY <executable commands; REMOVE_EMPTY>`"
-msgstr ""
+msgstr ":index:`移除空条目 <executable commands; REMOVE_EMPTY>`"
 
 #: ../../usage/exec_commands.rst:148
 msgid "Usage: **REMOVE_EMPTY**"
-msgstr ""
+msgstr "用法：**REMOVE_EMPTY**"
 
 #: ../../usage/exec_commands.rst:151
 msgid "Removes all empty clusters and albums."
-msgstr ""
+msgstr "删除所有空的聚类和发行品。"
 
 #: ../../usage/exec_commands.rst:154
 msgid ":index:`REMOVE_SAVED <executable commands; REMOVE_SAVED>`"
-msgstr ""
+msgstr ":index:`移除已保存条目 <executable commands; REMOVE_SAVED>`"
 
 #: ../../usage/exec_commands.rst:156
 msgid "Usage: **REMOVE_SAVED**"
-msgstr ""
+msgstr "用法：**REMOVE_SAVED**"
 
 #: ../../usage/exec_commands.rst:159
 msgid "Removes all saved files from the album pane."
-msgstr ""
+msgstr "删除所有来自发行品面板的已保存文件。"
 
 #: ../../usage/exec_commands.rst:162
 msgid ":index:`REMOVE_UNCLUSTERED <executable commands; REMOVE_UNCLUSTERED>`"
-msgstr ""
+msgstr ":index:`移除未聚类条目 <executable commands; REMOVE_UNCLUSTERED>`"
 
 #: ../../usage/exec_commands.rst:164
 msgid "Usage: **REMOVE_UNCLUSTERED**"
-msgstr ""
+msgstr "用法：**REMOVE_UNCLUSTERED**"
 
 #: ../../usage/exec_commands.rst:167
 msgid "Removes all unclustered files from the cluster pane."
-msgstr ""
+msgstr "删除来自聚类面板的所有未聚类文件。"
 
 #: ../../usage/exec_commands.rst:170
 msgid ":index:`SAVE_MATCHED <executable commands; SAVE_MATCHED>`"
-msgstr ""
+msgstr ":index:`保存匹配条目 <executable commands; SAVE_MATCHED>`"
 
 #: ../../usage/exec_commands.rst:172
 #: ../../usage/exec_commands.rst:180
 msgid "Usage: **SAVE_MATCHED**"
-msgstr ""
+msgstr "用法：**SAVE_MATCHED**"
 
 #: ../../usage/exec_commands.rst:175
 msgid "Saves all matched files from the album pane."
-msgstr ""
+msgstr "保存来自发行品面板的所有匹配文件。"
 
 #: ../../usage/exec_commands.rst:178
 msgid ":index:`SAVE_MODIFIED <executable commands; SAVE_MODIFIED>`"
-msgstr ""
+msgstr ":index:`保存修改条目 <executable commands; SAVE_MODIFIED>`"
 
 #: ../../usage/exec_commands.rst:183
 msgid "Saves all modified files from the album pane."
-msgstr ""
+msgstr "保存来自发行品面板的所有已修改文件。"
 
 #: ../../usage/exec_commands.rst:186
 msgid ":index:`SCAN <executable commands; SCAN>`"
-msgstr ""
+msgstr ":index:`扫描 <executable commands; SCAN>`"
 
 #: ../../usage/exec_commands.rst:188
 msgid "Usage: **SCAN**"
-msgstr ""
+msgstr "用法：**SCAN**"
 
 #: ../../usage/exec_commands.rst:191
 msgid "Scans all files in the cluster pane. This is the equivalent of using the :menuselection:`\"Tools --> Scan\"` command."
 msgstr ""
+"扫描聚类面板中的所有文件。这相当于使用 :menuselection:`\"工具 --> 扫描\"` 命"
+"令。"
 
 #: ../../usage/exec_commands.rst:194
 msgid ":index:`SHOW <executable commands; SHOW>`"
-msgstr ""
+msgstr ":index:`显示 <executable commands; SHOW>`"
 
 #: ../../usage/exec_commands.rst:196
 msgid "Usage: **SHOW**"
-msgstr ""
+msgstr "用法：**SHOW**"
 
 #: ../../usage/exec_commands.rst:199
 msgid "Make the running instance of Picard the currently active window."
-msgstr ""
+msgstr "使正在运行的 Picard 实例成为当前活动窗口。"
 
 #: ../../usage/exec_commands.rst:202
 msgid ":index:`SUBMIT_FINGERPRINTS <executable commands; SUBMIT_FINGERPRINTS>`"
-msgstr ""
+msgstr ":index:`提交指纹 <executable commands; SUBMIT_FINGERPRINTS>`"
 
 #: ../../usage/exec_commands.rst:204
 msgid "Usage: **SUBMIT_FINGERPRINTS**"
-msgstr ""
+msgstr "用法：**SUBMIT_FINGERPRINTS**"
 
 #: ../../usage/exec_commands.rst:207
 msgid "Submits outstanding acoustic fingerprints for all (matched) files in the album pane. This is the equivalent of using the :menuselection:`\"Tools --> Submit AcoustIDs\"` command."
 msgstr ""
+"提交所有（匹配的）文件在发行品面板中的未完成声学指纹。这相当于使用 "
+":menuselection:`\"工具 --> 提交 AcoustIDs\"` 命令。"
 
 #: ../../usage/exec_commands.rst:210
 msgid ":index:`WRITE_LOGS <executable commands; WRITE_LOGS>`"
-msgstr ""
+msgstr ":index:`写入日志 <executable commands; WRITE_LOGS>`"
 
 #: ../../usage/exec_commands.rst:212
 msgid "Usage: **WRITE_LOGS <path to output file>**"
-msgstr ""
+msgstr "用法：**WRITE_LOGS <输出文件路径>**"
 
 #: ../../usage/exec_commands.rst:215
 msgid "Writes the Picard logs to the specified output file. This is the equivalent of using the :guilabel:`Save As...` button from the log viewing screen opened using the :menuselection:`\"Help --> View Error/Debug Log\"` command."
 msgstr ""
+"将 Picard 日志写入指定的输出文件。这相当于使用 :guilabel:`保存为...` 按钮从使"
+"用 :menuselection:`\"帮助 --> 查看错误/调试日志\"` 命令打开的日志查看屏幕。"

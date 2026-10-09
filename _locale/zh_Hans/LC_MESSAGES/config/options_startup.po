@@ -2,120 +2,159 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 08:30-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_startup/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../config/options_startup.rst:4
 msgid ":index:`Startup Options <configuration; startup options>`"
-msgstr ""
+msgstr ":index:`启动选项 <configuration; startup options>`"
 
 #: ../../config/options_startup.rst:17
 msgid "**Check for documentation updates during start-up**"
-msgstr ""
+msgstr "**启动时检查文档更新**"
 
 #: ../../config/options_startup.rst:19
 msgid "This option determines whether or not Picard will automatically check for :index:`available versions and languages on ReadTheDocs <pair: configuration; documentation checking>` during startup in order to provide the best match when displaying a help page. If this is disabled, the latest version of the documentation will be displayed in English in your web browser."
 msgstr ""
+"此选项确定 Picard 是否在启动时自动检查 :index:`ReadTheDocs <pair: "
+"configuration; documentation checking>` 上的可用版本和语言，以便在显示帮助页"
+"面时提供最佳匹配。如果禁用此选项，将在您的网络浏览器中显示英文的最新版本文档"
+"。"
 
 #: ../../config/options_startup.rst:21
 msgid "If the option is disabled, a popup message will be displayed during startup asking if you want to enable the documentation checking. The message also includes an option to disable the popup from displaying in the future. The popup can also be enabled or disabled through a setting in the :doc:`options_interface` section."
 msgstr ""
+"如果禁用此选项，启动时会显示弹出消息，询问您是否要启用文档检查。消息还包含一"
+"个选项，用于禁用未来显示此弹出消息。还可以通过 :doc:`options_interface` 部分"
+"中的一个设置来启用或禁用此弹出消息。"
 
 #: ../../config/options_startup.rst:23
 msgid "**Check for plugin updates during start-up**"
-msgstr ""
+msgstr "**启动时检查插件更新**"
 
 #: ../../config/options_startup.rst:25
 msgid "This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup. If this is enabled and an update to an installed plugin is available, a notification icon will be displayed in the status bar. Clicking the icon will open the Plugins options page where you can review the available plugin updates and select which ones to install."
 msgstr ""
+"此选项决定 Picard 是否在启动时自动检查 :index:`插件更新 <pair: "
+"configuration; plugin update checking>`。如果启用此选项，并且有可用的已安装插"
+"件更新，状态栏将显示通知图标。点击图标将打开插件选项页面，您可以在其中查看可"
+"用的插件更新并选择要安装的更新。"
 
 #: ../../config/options_startup.rst:27
 msgid "**Check for program updates during start-up**"
-msgstr ""
+msgstr "**启动时检查程序更新**"
 
 #: ../../config/options_startup.rst:29
 msgid "This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; program update checking>` during startup. In any case, you can have Picard check for program updates at any time using :menuselection:`\"Help --> Check for update\"`."
 msgstr ""
+"此选项决定 Picard 是否在启动时自动检查 :index:`程序更新 <pair: "
+"configuration; program update checking>`。无论如何，您都可以随时使用 "
+":menuselection:`\"帮助 --> 检查更新\"` 让 Picard 检查程序更新。"
 
 #: ../../config/options_startup.rst:31
 msgid "**Days between checks**"
-msgstr ""
+msgstr "**检查间隔天数**"
 
 #: ../../config/options_startup.rst:33
 msgid "This option allows you to limit the automatic program update checking by selecting the interval, in days, between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that this only applies if the \"Check for program updates during start-up\" option is enabled."
 msgstr ""
+"此选项允许您通过选择检查间隔（以天为单位）来限制自动程序更新检查。如果您想每"
+"天检查，请将其设置为 1，每周检查请设置为 7，以此类推。请注意，这仅适用于启用"
+"了 \"启动时检查程序更新\" 选项的情况。"
 
 #: ../../config/options_startup.rst:35
 msgid "**Updates to check**"
-msgstr ""
+msgstr "**要检查的更新**"
 
 #: ../../config/options_startup.rst:37
 msgid "This option allows you to select which levels of program update to check. Your options are:"
-msgstr ""
+msgstr "此选项允许您选择要检查的程序更新级别。您的选项是："
 
 #: ../../config/options_startup.rst:39
 msgid "Stable releases only"
-msgstr ""
+msgstr "仅稳定版本"
 
 #: ../../config/options_startup.rst:40
 msgid "Stable and Beta releases"
-msgstr ""
+msgstr "稳定和 Beta 版本"
 
 #: ../../config/options_startup.rst:41
 msgid "Stable, Beta and Dev releases"
-msgstr ""
+msgstr "稳定、Beta 和开发版本"
 
 #: ../../config/options_startup.rst:43
 msgid "For example, if you subscribe to \"Stable releases only\" you will not be notified if a new Beta or Dev release is issued."
 msgstr ""
+"例如，如果您订阅了 \"仅稳定版本\"，如果发布了新的 Beta 或开发版本，您将不会收"
+"到通知。"
 
 #: ../../config/options_startup.rst:47
 msgid "The program update checking related settings and :menuselection:`\"Help --> Check for update...\"` command may not be available when Picard is distributed as a package. In that case, the user should check with the maintainer of the package to determine when an update is available."
 msgstr ""
+"当 Picard 作为软件包分发时，与程序更新检查相关的设置和 :menuselection:`\"帮"
+"助 --> 检查更新...\"` 命令可能不可用。在这种情况下，用户应联系软件包的维护者"
+"以确定何时有更新可用。"
 
 #: ../../config/options_startup.rst:49
 msgid "**Default Log Level**"
-msgstr ""
+msgstr "**默认日志级别**"
 
 #: ../../config/options_startup.rst:51
 msgid "This option allows you to select the log level set when Picard is started. The log level determines the amount of information that is recorded in the log. The available log levels are:"
 msgstr ""
+"此选项允许您选择启动时设置的日志级别。日志级别决定了记录在日志中的信息量。可"
+"用的日志级别是："
 
 #: ../../config/options_startup.rst:53
 msgid "``Error`` - only error messages are logged"
-msgstr ""
+msgstr "``Error`` - 仅记录错误消息"
 
 #: ../../config/options_startup.rst:54
 msgid "``Warning`` - warning messages and error messages are logged"
-msgstr ""
+msgstr "``Warning`` - 记录警告消息和错误消息"
 
 #: ../../config/options_startup.rst:55
 msgid "``Info`` - informational messages, warning messages and error messages are logged"
-msgstr ""
+msgstr "``Info`` - 记录信息消息、警告消息和错误消息"
 
 #: ../../config/options_startup.rst:56
 msgid "``Debug`` - detailed debug information, informational messages, warning messages and error messages are logged"
-msgstr ""
+msgstr "``Debug`` - 记录详细调试信息、信息消息、警告消息和错误消息"
 
 #: ../../config/options_startup.rst:58
 msgid "In general, it is recommended to set the log level to ``Info`` for normal use to avoid excessive logging, and only use ``Debug`` when troubleshooting specific issues to ensure that all log entries are captured. Note that setting the log level to ``Debug`` may result in a large amount of log output, which can be useful for troubleshooting but may also make it harder to find relevant information in the log. If you want to see less detailed information, you can set it to ``Warning`` or ``Error``."
 msgstr ""
+"通常情况下，建议将日志级别设置为 ``Info`` 以避免过多日志输出，仅在排查特定问"
+"题时使用 ``Debug`` 以确保捕获所有日志条目。请注意，将日志级别设置为 "
+"``Debug`` 可能会导致大量日志输出，这对于排查问题很有用，但也可能使查找相关信"
+"息更困难。如果您想看到更少详细信息，可以将其设置为 ``Warning`` 或 ``Error``。"
 
 #: ../../config/options_startup.rst:60
 msgid "Please see :doc:`../appendices/log_viewer` for more information about viewing or saving the log using the log viewer, and how to change the log level during a session."
 msgstr ""
+"请参阅 :doc:`../appendices/log_viewer` 了解有关使用日志查看器查看或保存日志的"
+"信息，以及如何在会话期间更改日志级别。"
 
 #: ../../config/options_startup.rst:64
 msgid "Changing the setting for the default will also change the log level for the current session, so if you change the level to ``Warning``, then only **Warning** and **Error** level events will be logged from that point forward. The log level will be reset to the default value selected in this option automatically each time Picard is started, unless the ``--debug`` command line option is specified or the ``PICARD_DEBUG`` environment variable is set."
 msgstr ""
+"更改默认设置也会更改当前会话的日志级别，因此如果您将级别更改为 ``Warning``，"
+"则从此以后仅会记录 **警告** 和 **错误** 级别的日志事件。每次启动 Picard 时，"
+"日志级别将自动重置为在此选项中选择的默认值，除非指定了 ``--debug`` 命令行选项"
+"或设置了 ``PICARD_DEBUG`` 环境变量。"

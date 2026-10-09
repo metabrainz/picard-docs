@@ -2,44 +2,66 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-24 12:16-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/"
+"configoptions_plugin_execution_order/zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../config/options_plugin_execution_order.rst:4
 msgid ":index:`Plugin Execution Order <configuration; plugin execution order>`"
-msgstr ""
+msgstr ":index:`插件执行顺序 <configuration; plugin execution order>`"
 
 #: ../../config/options_plugin_execution_order.rst:6
 msgid "Each plugin that works with an album or track's metadata has their various processing functions registered with an execution priority set by the plugin author within the plugin itself. A plugin may contain multiple different processing functions, each with its own specified priority. These priorities determine the order in which the functions are executed, and are generally set as high, normal or low."
 msgstr ""
+"每个与专辑或音轨元数据工作的插件都有其各种处理函数注册，这些函数在插件本身中"
+"由插件作者设置执行优先级。一个插件可能包含多个不同的处理函数，每个函数都有自"
+"己的指定优先级。这些优先级决定了函数的执行顺序，通常设置为高、正常或低。"
 
 #: ../../config/options_plugin_execution_order.rst:8
 msgid "Most of the time this grouping of execution priorities is sufficient, however there may be a situation where one plugin processing function must be executed before another plugin function with the same priority in order to avoid unintended results. This option setting allows you to specify the order that the plugin metadata processing functions are executed, regardless of the initial registered priority for the function. In this way, you can avoid unexpected results that might otherwise occur."
 msgstr ""
+"通常情况下，这种执行优先级的分组就足够了，但在某些情况下，一个插件的处理函数"
+"必须先于另一个具有相同优先级的插件函数执行，以避免出现意外结果。此选项设置允"
+"许您指定插件元数据处理函数的执行顺序，而不管函数最初注册的优先级如何。这样，"
+"您可以避免可能出现的意外结果。"
 
 #: ../../config/options_plugin_execution_order.rst:17
 msgid "The execution order editor can be opened from the context menu displayed by right-clicking on any of the installed plugins."
-msgstr ""
+msgstr "执行顺序编辑器可以通过右键单击任何已安装的插件来打开的上下文菜单。"
 
 #: ../../config/options_plugin_execution_order.rst:26
 msgid "When the execution order editor is opened, it will display all of the enabled plugin metadata processing functions in the order in which they are executed by Picard. You can change the order by moving the plugin processing functions up or down by selecting the function to move and then use the up or down button, or by using your mouse to drag the function to the desired location in the list. There is also an option to reset the order to that which was determined by the original plugin settings."
 msgstr ""
+"当打开执行顺序编辑器时，它将按 Picard 执行所有启用的插件元数据处理函数的顺序"
+"显示它们。您可以通过选择要移动的函数，然后使用上或下按钮来更改顺序，或者使用"
+"鼠标将函数拖动到列表中的所需位置。还有一个选项可以重置顺序为原始插件设置确定"
+"的顺序。"
 
 #: ../../config/options_plugin_execution_order.rst:30
 msgid "Hovering your cursor over a plugin's name will display a description of the function, and hovering over a plugin's processing function will display a description of the function if available."
 msgstr ""
+"将鼠标悬停在插件名称上将显示该函数的描述，如果可用，将鼠标悬停在插件的元数据"
+"处理函数上也会显示该函数的描述。"
 
 #: ../../config/options_plugin_execution_order.rst:34
 msgid "When you save your changes, they will be applied immediately and do not depend on clicking the :guilabel:`Make It So!` button. Similarly, clicking the :guilabel:`Cancel`, :guilabel:`Restore Defaults` or :guilabel:`Restore all Defaults` buttons on the main Plugins option page will not change the plugin execution order saved perviously."
 msgstr ""
+"当您保存更改时，它们将立即应用，并且不依赖于单击 :guilabel:`Make It So!` 按钮"
+"。类似地，单击主插件选项页面上的 :guilabel:`Cancel`、:guilabel:`Restore "
+"Defaults` 或 :guilabel:`Restore all Defaults` 按钮不会更改之前保存的插件执行"
+"顺序。"

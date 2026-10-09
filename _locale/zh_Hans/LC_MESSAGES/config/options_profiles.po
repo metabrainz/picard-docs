@@ -2,140 +2,187 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-21 12:48-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_profiles/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../config/options_profiles.rst:4
 msgid ":index:`Profile Options <configuration; profiles, profiles; option>`"
-msgstr ""
+msgstr ":index:`配置选项 <configuration; profiles, profiles; option>`"
 
 #: ../../config/options_profiles.rst:6
 msgid "As of version 2.7, Picard supports multiple profiles that can quickly switch between option settings. This page allows for the management of those user-defined option profiles."
 msgstr ""
+"自版本 2.7 起，Picard 支持多个配置文件，可以快速切换选项设置。本页面允许管理"
+"这些用户定义的选项配置文件。"
 
 #: ../../config/options_profiles.rst:19
 msgid "Initially, the list of profiles will be empty. To create a new profile click on the :guilabel:`New` button. This will create a profile with no options selected for the profile to manage. To rename the profile, right-click on the profile name and select the :menuselection:`\"Rename profile\"` command."
 msgstr ""
+"最初，配置文件列表将是空的。要创建新配置文件，请点击 :guilabel:`New` 按钮。这"
+"将创建一个没有为配置文件选择任何选项的配置文件。要重命名配置文件，请右键单击"
+"配置文件名称并选择 :menuselection:`\"Rename profile\"` 命令。"
 
 #: ../../config/options_profiles.rst:21
 msgid "The options that the profile is to manage are selected from the list in the right-hand pane. Options can be selected either by group or individually. The groups can be expanded to see the individual options belonging to that group."
 msgstr ""
+"配置文件要管理的选项从右侧窗格中的列表中选择。选项可以按组或单独选择。可以展"
+"开组以查看该组所属的单独选项。"
 
 #: ../../config/options_profiles.rst:23
 msgid "The profile stack order can be rearranged either by selecting a profile and using the up and down arrow buttons below the list, or by dragging the profile to a new position in the stack. Profiles are enabled when the box beside the profile's name is checked."
 msgstr ""
+"配置文件堆栈顺序可以通过选择配置文件并使用列表下方的上下箭头按钮来重新排列，"
+"或者通过将配置文件拖动到堆栈中的新位置。当配置文件名称旁边的框被选中时，配置"
+"文件将被启用。"
 
 #: ../../config/options_profiles.rst:25
 msgid "Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted. Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used during processing."
 msgstr ""
+"对个人资料的选项设置、启用状态或个人资料堆栈中的位置所做的更改将反映在显示在"
+"其他页面上的选项设置中。受已启用个人资料控制的选项将显示为高亮。将鼠标悬停在"
+"高亮选项上可以识别当前控制该设置的哪个个人资料。设置始终根据个人资料堆栈中的"
+"第一个已启用个人资料显示，该个人资料对应于处理过程中将使用的设置。"
 
 #: ../../config/options_profiles.rst:29
 msgid "It is important to understand that when you click the :guilabel:`Make It So!` button **all** of the option settings on **all** pages will be saved. If an option is managed by one or more profiles that are currently enabled, the option will be highlighted and it will be saved to the **first** enabled profile in the profile stack that manages the option. If there are no enabled profiles that manage the option, the option will not be highlighted and it will be saved to the \"user settings\" profile which is the user's normal settings, contains all options, is at the bottom of the profile stack, and is always enabled. The \"user settings\" profile cannot be modified and is not shown in the profile management page."
 msgstr ""
+"重要的是要理解，当您点击 :guilabel:`Make It So!` 按钮时，**所有**页面的**所"
+"有**选项设置都将被保存。如果选项由当前启用的一个或多个个人资料管理，该选项将"
+"高亮显示，并将其保存到管理该选项的个人资料堆栈中**第一个**启用的个人资料。如"
+"果没有启用的个人资料管理该选项，该选项将不会高亮显示，并将其保存到 \"用户设"
+"置\" 个人资料，该个人资料是用户的常规设置，包含所有选项，位于个人资料堆栈底部"
+"，并且始终启用。\"用户设置\" 个人资料无法修改，并且在个人资料管理页面中不显示"
+"。"
 
 #: ../../config/options_profiles.rst:33
 msgid ":index:`Backing Up and Sharing Profiles <profiles; backing up and sharing>`"
-msgstr ""
+msgstr ":index:`备份和共享个人资料 <profiles; backing up and sharing>`"
 
 #: ../../config/options_profiles.rst:35
 msgid "You have the ability to export option profiles for backup purposes or to share with others, and import option profiles previously exported."
 msgstr ""
+"您可以将选项配置文件导出用于备份或与他人共享，也可以导入先前导出的选项配置文"
+"件。"
 
 #: ../../config/options_profiles.rst:39
 msgid ":index:`Exporting a profile definition <profiles; exporting>`"
-msgstr ""
+msgstr ":index:`导出配置文件定义 <profiles; exporting>`"
 
 #: ../../config/options_profiles.rst:41
 msgid "When you click the :guilabel:`Export` button, the currently selected (highlighted) profile can be output to a file. The export contains the following information:"
 msgstr ""
+"当您点击 :guilabel:`导出` 按钮时，当前选中的（高亮的）配置文件可以被输出到一"
+"个文件。导出包含以下信息："
 
 #: ../../config/options_profiles.rst:43
 msgid "title of the profile"
-msgstr ""
+msgstr "配置文件的标题"
 
 #: ../../config/options_profiles.rst:44
 msgid "unique identifier assigned to the profile"
-msgstr ""
+msgstr "分配给配置文件的唯一标识符"
 
 #: ../../config/options_profiles.rst:45
 msgid "version of the profile export format used"
-msgstr ""
+msgstr "导出的配置文件格式版本"
 
 #: ../../config/options_profiles.rst:46
 msgid "version of Picard that created the profile export"
-msgstr ""
+msgstr "创建配置文件导出的 Picard 版本"
 
 #: ../../config/options_profiles.rst:47
 msgid "date that the profile was exported"
-msgstr ""
+msgstr "配置文件导出的日期"
 
 #: ../../config/options_profiles.rst:48
 msgid "list of which settings are controlled by the profile"
-msgstr ""
+msgstr "配置文件控制的设置列表"
 
 #: ../../config/options_profiles.rst:49
 msgid "values of the settings controlled by the profile"
-msgstr ""
+msgstr "配置文件控制的设置值"
 
 #: ../../config/options_profiles.rst:51
 msgid "You will first be asked to select the mode for the export."
-msgstr ""
+msgstr "您首先将被要求选择导出的模式。"
 
 #: ../../config/options_profiles.rst:65
 msgid "The choices for the export mode are:"
-msgstr ""
+msgstr "导出模式的选项是："
 
 #: ../../config/options_profiles.rst:67
 msgid "**Share**: All sensitive data such as account identification, passwords and directory paths will be excluded from the export. This option is the default, and should be used for any exports that you plan to make public or share with others."
 msgstr ""
+"**共享**：所有敏感数据，如账户标识、密码和目录路径都将从导出中排除。此选项是"
+"默认选项，应用于您计划公开或与他人共享的任何导出。"
 
 #: ../../config/options_profiles.rst:68
 msgid "**Backup**: Nothing will be excluded from the export. This should **only** be selected for personal backup copies of your profiles that are not shared with others."
 msgstr ""
+"**备份**：导出中将不排除任何内容。这应该 **仅** 用于您不与他人共享的个人配置"
+"文件备份副本。"
 
 #: ../../config/options_profiles.rst:70
 msgid "Once you have confirmed your choice of export mode, a file browser dialog will open to allow you to select the directory and file name of the output file. The profile exports are saved as ``*.toml`` files, which can be viewed or modified with a text editor."
 msgstr ""
+"确认您选择的导出模式后，将打开文件浏览器对话框，允许您选择输出文件的目录和文"
+"件名。配置文件导出保存为 ``*.toml`` 文件，可以使用文本编辑器查看或修改。"
 
 #: ../../config/options_profiles.rst:72
 msgid "You can also export a profile in \"Share\" mode to the clipboard from the context menu displayed when you right-click on the profile."
 msgstr ""
+"您还可以从右键单击配置文件时显示的上下文菜单中，以 \"共享\" 模式将配置文件导"
+"出到剪贴板。"
 
 #: ../../config/options_profiles.rst:84
 msgid ":index:`Importing a profile definition <profiles; importing>`"
-msgstr ""
+msgstr ":index:`导入配置文件定义 <profiles; importing>`"
 
 #: ../../config/options_profiles.rst:86
 msgid "To import a profile definition, you click the :guilabel:`Import` button. This allows you to import the profile either from a profile export file, or from a profile definition currently in the clipboard. If importing from a file, a file browser dialog will open to allow you to select the file to import."
 msgstr ""
+"要导入配置文件定义，您点击 :guilabel:`导入` 按钮。这允许您从配置文件导出文件"
+"或当前位于剪贴板中的配置文件定义中导入配置文件。如果从文件导入，将打开文件浏"
+"览器对话框，允许您选择要导入的文件。"
 
 #: ../../config/options_profiles.rst:88
 msgid "Once the import source has been selected, Picard will verify that the import is a valid profile definition. If it is valid, a new profile based on the profile definition imported will be added at the top of your list of profiles."
 msgstr ""
+"选择导入源后，Picard 将验证导入是否为有效的配置文件定义。如果是有效的，则基于"
+"导入的配置文件定义的新配置文件将添加到您的配置文件列表顶部。"
 
 #: ../../config/options_profiles.rst:92
 msgid "When importing a profile definition, if there is already a profile with the same name in your list, you are prompted as to whether you want to create a new copy or overwrite the existing profile."
 msgstr ""
+"当导入配置文件定义时，如果您的列表中已经存在同名的配置文件，系统会提示您是要"
+"创建新副本还是覆盖现有配置文件。"
 
 #: ../../config/options_profiles.rst:102
 msgid "If you choose to create a copy, the new profile will be added with a copy number appended to the title, such as \"ByeByeWin (2)\"."
 msgstr ""
+"如果您选择创建副本，新配置文件将添加到列表中，并在标题后附加副本编号，例如 "
+"\"ByeByeWin (2)\"。"
 
 #: ../../config/options_profiles.rst:104
 msgid "When you import a profile, you are also prompted as to whether you want the new profile to be enabled after import."
-msgstr ""
+msgstr "导入配置文件时，系统还会提示您是否要在导入后启用新配置文件。"
 
 #: ../../config/options_profiles.rst:109
 msgid "Please see the :doc:`../usage/option_profiles` section for a detailed explanation of the profile system."
-msgstr ""
+msgstr "请参阅 :doc:`../usage/option_profiles` 部分以了解配置文件系统的详细说明。"

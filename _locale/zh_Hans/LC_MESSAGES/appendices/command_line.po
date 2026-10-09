@@ -2,96 +2,117 @@
 # Copyright (C) 2026, MetaBrainz Foundation.
 # This file is distributed under the same license as the MusicBrainz Picard package.
 # scientists360 <scientists360@outlook.com>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-27 08:30-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-09 08:13+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/appendicescommand_line/"
+"zh_Hans/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: ../../appendices/command_line.rst:4
 msgid "Appendix B: :index:`Command Line Options <pair: command line; options>`"
-msgstr ""
+msgstr "附录B: :index:`命令行选项 <pair: command line; options>`"
 
 #: ../../appendices/command_line.rst:6
 msgid "Picard can be started from the command line with the following arguments:"
-msgstr ""
+msgstr "可以使用以下参数从命令行启动Picard："
 
 #: ../../appendices/command_line.rst:12
 msgid "where the options are:"
-msgstr ""
+msgstr "其中选项是："
 
 #: ../../appendices/command_line.rst:16
 msgid "show a help message and exit"
-msgstr ""
+msgstr "显示帮助消息并退出"
 
 #: ../../appendices/command_line.rst:20
 msgid "audit events passed as a comma-separated list, prefixes supported, use \"all\" to match any event. See the `Python Documentation <https://docs.python.org/3/library/audit_events.html#audit-events>`_ for more information."
 msgstr ""
+"将作为逗号分隔列表传递的审计事件，支持前缀，使用\"all\"以匹配任何事件。有关更"
+"多信息，请参阅`Python文档 <https://docs.python.org/3/library/"
+"audit_events.html#audit-events>`_。"
 
 #: ../../appendices/command_line.rst:24
 msgid "location of the configuration file to use"
-msgstr ""
+msgstr "要使用的配置文件的位置"
 
 #: ../../appendices/command_line.rst:28
 msgid "enable debug-level logging"
-msgstr ""
+msgstr "启用调试级日志记录"
 
 #: ../../appendices/command_line.rst:32
 msgid "comma-separated list of debug options. Use --debug-opts without value to list available options"
-msgstr ""
+msgstr "逗号分隔的调试选项列表。使用--debug-opts不带值以列出可用选项"
 
 #: ../../appendices/command_line.rst:36
 msgid "The ``plugin_development`` debug option has been specifically designed to assist plugin developers by allowing detailed logging of plugin-related events that would not normally be included in the debug log. This can help developers identify issues and understand the behavior of their plugins within Picard. Debug log entries are useful when a user is trying to understand which plugin is making changes to metadata and such, but extensive debug logging such as that required for troubleshooting a specific plugin can be overwhelming. If detailed debug logging is included, it should be used with the ``api.logger.debug_if()`` method so that it is only logged when the ``plugin_development`` debug option is specified on the command line. For example:"
 msgstr ""
+"``plugin_development`` 调试选项专门设计用于协助插件开发者，通过允许记录通常不"
+"包含在调试日志中的与插件相关的详细事件。这有助于开发者识别问题并理解他们的插"
+"件在 Picard 中的行为。当用户试图了解哪个插件正在更改元数据时，调试日志条目很"
+"有用，但像为解决特定插件问题所需的广泛调试日志记录可能会让人不知所措。如果包"
+"含详细的调试日志记录，则应使用 ``api.logger.debug_if()`` 方法，以便仅在命令行"
+"上指定 ``plugin_development`` 调试选项时才记录。例如："
 
 #: ../../appendices/command_line.rst:54
 msgid "execute one or more COMMANDs at start-up (see :doc:`../usage/exec_commands` for more information)"
 msgstr ""
+"在启动时执行一个或多个 COMMANDs（更多信息请参见 :doc:`../usage/"
+"exec_commands`）"
 
 #: ../../appendices/command_line.rst:58
 msgid "disable built-in media player"
-msgstr ""
+msgstr "禁用内置媒体播放器"
 
 #: ../../appendices/command_line.rst:62
 msgid "do not restore window positions or sizes"
-msgstr ""
+msgstr "不恢复窗口位置或大小"
 
 #: ../../appendices/command_line.rst:66
 msgid "do not load any plugins"
-msgstr ""
+msgstr "不加载任何插件"
 
 #: ../../appendices/command_line.rst:70
 msgid "disable the crash dialog"
-msgstr ""
+msgstr "禁用崩溃对话框"
 
 #: ../../appendices/command_line.rst:74
 msgid "force Picard to create a new, stand-alone instance"
-msgstr ""
+msgstr "强制 Picard 创建一个新的、独立的实例"
 
 #: ../../appendices/command_line.rst:78
 msgid "display the version information and exit"
-msgstr ""
+msgstr "显示版本信息并退出"
 
 #: ../../appendices/command_line.rst:82
 msgid "display the long version information and exit"
-msgstr ""
+msgstr "显示长版本信息并退出"
 
 #: ../../appendices/command_line.rst:86
 msgid "one or more files, directories, URLs and MBIDs to load"
-msgstr ""
+msgstr "一个或多个要加载的文件、目录、URL 和 MBIDs"
 
 #: ../../appendices/command_line.rst:90
 msgid "Files and directories are specified including the path (either absolute or relative) to the file or directory, and may include drive specifiers. They can also be specified using the ``file://`` prefix. URLs are specified by using either the ``http://`` or ``https://`` prefix. MBIDs are specified in the format ``mbid://<entity_type>/<mbid>`` where ``<entity_type>`` is one of \"release\", \"artist\" or \"track\" and ``<mbid>`` is the MusicBrainz Identifier of the entity."
 msgstr ""
+"文件和目录的指定包括到文件或目录的路径（绝对或相对），并且可以包含驱动程序指"
+"定符。它们也可以使用 ``file://`` 前缀指定。URL 使用 ``http://`` 或 ``https://"
+"`` 前缀指定。MBIDs 按照 ``mbid://<entity_type>/<mbid>`` 格式指定，其中 "
+"``<entity_type>`` 是 \"release\"、\"artist\" 或 \"track\" 之一，``<mbid>`` 是"
+"实体的 MusicBrainz 标识符。"
 
 #: ../../appendices/command_line.rst:92
 msgid "If a specified item contains a space, it must be enclosed in quotes such as ``\"/home/user/music/my song.mp3\"``."
-msgstr ""
+msgstr "如果指定的项包含空格，则必须用 ``\"/home/user/music/my song.mp3\"`` 括起来。"
