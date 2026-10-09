@@ -43,3 +43,4 @@ def setup(sphinx: Sphinx):
     """Setup method to initialize this extension.
     """
     sphinx.add_lexer('taggerscript', TaggerScriptLexer)
+    return dict(parallel_read_safe=True)
