@@ -1,0 +1,350 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/faqfaq_file_formats/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../faq/faq_file_formats.rst:4
+msgid ":index:`File Formats <file formats>`"
+msgstr ":index:`文件格式 <file formats>`"
+
+#: ../../faq/faq_file_formats.rst:7
+msgid "What formats does Picard support?"
+msgstr "Picard 支持哪些格式？"
+
+#: ../../faq/faq_file_formats.rst:9
+msgid "Picard supports the following file formats:"
+msgstr "Picard 支持以下文件格式："
+
+#: ../../faq/faq_file_formats.rst:11
+msgid "MPEG-1 Audio (.mp3, .mp2, .m2a)"
+msgstr "MPEG-1 音频 (.mp3, .mp2, .m2a)"
+
+#: ../../faq/faq_file_formats.rst:12
+msgid "MPEG-4 Audio (.m4a, .m4b, .m4p, .m4v, .m4r, .mp4)"
+msgstr "MPEG-4 音频 (.m4a, .m4b, .m4p, .m4v, .m4r, .mp4)"
+
+#: ../../faq/faq_file_formats.rst:13
+msgid "Windows Media Audio (.wma, .wmv, .asf)"
+msgstr "Windows Media Audio (.wma, .wmv, .asf)"
+
+#: ../../faq/faq_file_formats.rst:14
+msgid "Microsoft WAVE (.wav)"
+msgstr "Microsoft WAVE (.wav)"
+
+#: ../../faq/faq_file_formats.rst:15
+msgid "The True Audio (.tta)"
+msgstr "True Audio (.tta)"
+
+#: ../../faq/faq_file_formats.rst:16
+msgid "FLAC (.flac)"
+msgstr "FLAC (.flac)"
+
+#: ../../faq/faq_file_formats.rst:17
+msgid "Audio Interchange File Format (.aiff, .aif, .aifc)"
+msgstr "Audio Interchange File Format (.aiff, .aif, .aifc)"
+
+#: ../../faq/faq_file_formats.rst:18
+msgid "Musepack (.mpc, .mp+)"
+msgstr "Musepack (.mpc, .mp+)"
+
+#: ../../faq/faq_file_formats.rst:19
+msgid "WavPack (.wv)"
+msgstr "WavPack (.wv)"
+
+#: ../../faq/faq_file_formats.rst:20
+msgid "OptimFROG (.ofr, .ofs)"
+msgstr "OptimFROG (.ofr, .ofs)"
+
+#: ../../faq/faq_file_formats.rst:21
+msgid "Monkey's Audio (.ape)"
+msgstr "Monkey's Audio (.ape)"
+
+#: ../../faq/faq_file_formats.rst:22
+msgid "Tom's lossless Audio Kompressor (.tak)"
+msgstr "Tom's lossless Audio Kompressor (.tak)"
+
+#: ../../faq/faq_file_formats.rst:23
+msgid "Speex (.spx)"
+msgstr "Speex (.spx)"
+
+#: ../../faq/faq_file_formats.rst:24
+msgid "Generic Ogg files (.ogg, .ogx)"
+msgstr "通用 Ogg 文件 (.ogg, .ogx)"
+
+#: ../../faq/faq_file_formats.rst:25
+msgid "Ogg FLAC (.ogg, .oga)"
+msgstr "Ogg FLAC (.ogg, .oga)"
+
+#: ../../faq/faq_file_formats.rst:26
+msgid "Ogg Theora (.ogg, .ogv)"
+msgstr "Ogg Theora (.ogg, .ogv)"
+
+#: ../../faq/faq_file_formats.rst:27
+msgid "Ogg Opus (.opus)"
+msgstr "Ogg Opus (.opus)"
+
+#: ../../faq/faq_file_formats.rst:28
+msgid "Ogg Audio (.oga)"
+msgstr "Ogg 音频 (.oga)"
+
+#: ../../faq/faq_file_formats.rst:29
+msgid "Ogg Video (.ogv)"
+msgstr "Ogg 视频 (.ogv)"
+
+#: ../../faq/faq_file_formats.rst:30
+msgid "ADTS stream / AAC (.aac)"
+msgstr "ADTS 流 / AAC (.aac)"
+
+#: ../../faq/faq_file_formats.rst:31
+msgid "AC-3 (.ac3, .eac3)"
+msgstr "AC-3 (.ac3, .eac3)"
+
+#: ../../faq/faq_file_formats.rst:32
+msgid "Direct Stream Digital (.dff, .dsf)"
+msgstr "直接流数字 (.dff, .dsf)"
+
+#: ../../faq/faq_file_formats.rst:36
+msgid "WAVE files lack a standard for proper tagging. Picard uses ID3v2 tags to tag WAVE files, but this is not supported by all software. For compatibility with software which does not support ID3v2 tags in WAVE files additional RIFF INFO tags can be written to the files. RIFF INFO has only limited support for tags and character encodings."
+msgstr ""
+"WAVE 文件缺乏标准标签。Picard 使用 ID3v2 标签来标记 WAVE 文件，但这并非所有软"
+"件都支持。为了与不支持 WAVE 文件中 ID3v2 标签的软件兼容，可以写入额外的 RIFF "
+"INFO 标签到文件中。RIFF INFO 仅对标签和字符编码提供有限支持。"
+
+#: ../../faq/faq_file_formats.rst:40
+msgid "What formats will Picard support?"
+msgstr "Picard 将支持哪些格式？"
+
+#: ../../faq/faq_file_formats.rst:42
+msgid "Picard is intended to eventually support all formats (including fingerprinting), but this is a complex (arguably never-ending) process, and will take some time."
+msgstr ""
+"Picard 最终旨在支持所有格式（包括指纹识别），但这是一个复杂（可以说是永无止境"
+"）的过程，需要一些时间。"
+
+#: ../../faq/faq_file_formats.rst:47
+msgid "What rippers are supported for looking up from logs?"
+msgstr "用于从日志中查找的受支持的抓轨器有哪些？"
+
+#: ../../faq/faq_file_formats.rst:49
+msgid "As of version 2.9, Picard supports the use of log files produced by popular CD file rippers for looking up a release. Because the log files of these rippers contain sufficient information to generate the CD table of contents they can be used in place of reading the CD itself. The supported rippers include:"
+msgstr ""
+"自版本 2.9 起，Picard 支持使用流行的 CD 文件抓轨软件生成的日志文件来查找发行"
+"品。因为这些抓轨软件的日志文件包含足够的信息来生成 CD 目录表，因此可以用来代"
+"替读取 CD 本身。支持的抓轨软件包括："
+
+#: ../../faq/faq_file_formats.rst:51
+msgid "`dBpoweramp <https://dbpoweramp.com/>`_ for macOS and Windows"
+msgstr "`dBpoweramp <https://dbpoweramp.com/>`_ for macOS and Windows"
+
+#: ../../faq/faq_file_formats.rst:52
+msgid "`Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows"
+msgstr "`Exact Audio Copy (EAC) <http://exactaudiocopy.de/>`_ for Windows"
+
+#: ../../faq/faq_file_formats.rst:53
+msgid "`fre:ac <https://www.freac.org>`_ for Linux, macOS, Windows and others"
+msgstr "`fre:ac <https://www.freac.org>`_ for Linux, macOS, Windows and others"
+
+#: ../../faq/faq_file_formats.rst:54
+msgid "`redumper <https://github.com/superg/redumper>`_ raw SCSI TOC file for Linux, macOS, Windows"
+msgstr ""
+"`redumper <https://github.com/superg/redumper>`_ raw SCSI TOC file for "
+"Linux, macOS, Windows"
+
+#: ../../faq/faq_file_formats.rst:55
+msgid "`Whipper <https://github.com/whipper-team/whipper>`_ for Linux"
+msgstr "`Whipper <https://github.com/whipper-team/whipper>`_ for Linux"
+
+#: ../../faq/faq_file_formats.rst:56
+msgid "`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS"
+msgstr ""
+"`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS"
+
+#: ../../faq/faq_file_formats.rst:60
+msgid "Which tags can Picard write to my files?"
+msgstr "Picard 可以将哪些标签写入我的文件？"
+
+#: ../../faq/faq_file_formats.rst:62
+msgid "See the :doc:`../variables/variables` section for information on which MusicBrainz fields Picard writes to tags. `Picard Tag Mapping <https://picard.musicbrainz.org/docs/mappings/>`_ contains more technical information on how these are further mapped into each tag format."
+msgstr ""
+"参见 :doc:`../variables/variables` 部分，了解 Picard 写入标签的 MusicBrainz "
+"字段信息。`Picard Tag Mapping <https://picard.musicbrainz.org/docs/mappings/>"
+"`_ 包含更多关于这些信息如何进一步映射到每个标签格式的技术信息。"
+
+#: ../../faq/faq_file_formats.rst:66
+msgid "How do I edit tags in several files at once?"
+msgstr "我如何一次编辑多个文件的标签？"
+
+#: ../../faq/faq_file_formats.rst:68
+msgid "Click and select several files with :kbd:`Ctrl` or :kbd:`Shift`."
+msgstr "使用 :kbd:`Ctrl` 或 :kbd:`Shift` 点击并选择多个文件。"
+
+#: ../../faq/faq_file_formats.rst:69
+msgid "The metadata view at the bottom will show which tags are present in the selected files and whether they are the same across all files or different."
+msgstr ""
+"底部的元数据视图将显示所选文件中存在的标签，以及它们是否在所有文件中相同或不"
+"同。"
+
+#: ../../faq/faq_file_formats.rst:70
+msgid "If you edit any value in the \"New values\" column you will change this tag for all selected files."
+msgstr "如果你在 \"New values\" 列编辑任何值，你将更改所有选定文件的此标签。"
+
+#: ../../faq/faq_file_formats.rst:71
+msgid "You need to click Save in order to persist these changes to your files."
+msgstr "你需要点击 Save 以将更改持久保存到你的文件。"
+
+#: ../../faq/faq_file_formats.rst:73
+msgid "Please understand that Picard is not designed as a general purpose :index:`tag editor <tags; editing>`. Its primary goal is to retrieve community-maintained MusicBrainz data to write into your tags. Some secondary goals include:"
+msgstr ""
+"请理解 Picard 不是一个通用的 :index:`标签编辑器 <tags; editing>`。它的主要目"
+"标是检索社区维护的 MusicBrainz 数据以写入你的标签。一些次要目标包括："
+
+#: ../../faq/faq_file_formats.rst:75
+msgid "allowing rule-based customization of that data using scripts and plugins"
+msgstr "允许使用脚本和插件基于规则定制这些数据"
+
+#: ../../faq/faq_file_formats.rst:76
+msgid "encouraging users to create an account and fix and update data via the MusicBrainz website, thus sharing their work with the rest of the community rather than simply fixing their tags locally."
+msgstr ""
+"鼓励用户创建账户并通过 MusicBrainz 网站修复和更新数据，从而与社区其他成员分享"
+"他们的工作，而不是仅仅在本地修复他们的标签。"
+
+#: ../../faq/faq_file_formats.rst:78
+msgid "To that end, Picard is likely to never have as much development focus on manual bulk editing of tags as other general purpose editors (e.g.: `Mp3tag <https://www.mp3tag.de/en/>`_, `foobar2000 <https://www.foobar2000.org/>`_, or even many library managers such as iTunes, Windows Media Player, and MediaMonkey). That doesn't mean that the team won't welcome patches in this area!"
+msgstr ""
+"为此，Picard 可能永远不会像其他通用编辑器（例如：`Mp3tag <https://"
+"www.mp3tag.de/en/>`_、`foobar2000 <https://www.foobar2000.org/>`_，甚至像 "
+"iTunes、Windows Media Player 和 MediaMonkey 等许多库管理器）那样专注于手动批"
+"量编辑标签。但这并不意味着团队不会欢迎这个领域的补丁！"
+
+#: ../../faq/faq_file_formats.rst:82
+msgid "Why is saving files sometimes slow, but saving a second time much faster?"
+msgstr "为什么保存文件有时很慢，但第二次保存却快得多？"
+
+#: ../../faq/faq_file_formats.rst:84
+msgid "In most file formats the tags are near the beginning of the file, before the actual music data. If changed tags get written to the file and the newly written tags take more space than before the entire file needs to be rewritten. This is usually much slower than just rewriting part of the file containing the tags, especially for larger files and/or if the files are on a slow storage (e.g. a network share or slow external drive)."
+msgstr ""
+"在大多数文件格式中，标签位于文件的开头，在音乐数据之前。如果更改的标签写入文"
+"件，并且新写入的标签比之前占用更多空间，则整个文件需要重写。这通常比仅重写包"
+"含标签的部分文件要慢得多，特别是对于较大的文件和/或文件存储在慢速存储上（例如"
+"网络共享或慢速外置驱动器）。"
+
+#: ../../faq/faq_file_formats.rst:86
+msgid "To mitigate the issue most tagging software (including Picard) leaves some free space (the so called padding) after the tags and before the actual music data. If the newly written are only a bit larger than before this free space can be used instead of rewriting the entire files. Likewise if the newly written tags take less space than before this only leads to an increase in padding, avoiding rewriting the file."
+msgstr ""
+"为了缓解这个问题，大多数标签编辑软件（包括 Picard）在标签和实际音乐数据之间保"
+"留了一些空闲空间（所谓的填充）。如果新写入的标签只比之前大一点，则可以使用这"
+"些空闲空间而不是重写整个文件。同样，如果新写入的标签比之前占用更少空间，这只"
+"会导致填充增加，避免重写文件。"
+
+#: ../../faq/faq_file_formats.rst:88
+msgid "This all means that when you add many tags to the files (or if there is no or only small padding) you experience slow writing speed. If you do only small changes or just remove and later re-add tags the writing is much faster."
+msgstr ""
+"所有这些都意味着当你向文件添加许多标签（或者如果没有或只有很小填充）时，你会"
+"体验到慢速写入速度。如果你只做小的更改或只是删除并稍后重新添加标签，写入速度"
+"会快得多。"
+
+#: ../../faq/faq_file_formats.rst:92
+msgid "Why does Picard not use Vinyl style track numbers (e.g. A1, A2, ...) by default?"
+msgstr "为什么 Picard 默认不使用唱盘风格的音轨编号（例如 A1、A2、...）？"
+
+#: ../../faq/faq_file_formats.rst:94
+msgid "For Vinyl releases the track numbers on MusicBrainz are usually entered as A1, A2, ..., B1, B2, ... and so on. Other releases might use even different more uncommon numbering schemes. Yet Picard will by default always write decimal track numbers, starting with 1 for the first track on a medium."
+msgstr ""
+"对于唱盘发行品，MusicBrainz 上的音轨编号通常输入为 A1、A2、...、B1、B2、... "
+"等等。其他发行品可能使用甚至更不常见的编号方案。然而，Picard 默认总是写入十进"
+"制音轨编号，从 1 开始为第一个音轨。"
+
+#: ../../faq/faq_file_formats.rst:96
+msgid "The main reason for this is that this is how track numbers are defined for most file formats. The formats expect decimal numbers, and likewise music players might only expect decimal numbers when reading the files."
+msgstr ""
+"这样做的主要原因是因为大多数文件格式的音轨编号就是这样定义的。这些格式期望十"
+"进制数字，同样，音乐播放器在读取文件时可能只期望十进制数字。"
+
+#: ../../faq/faq_file_formats.rst:98
+msgid "If you really want to you can use the scripting variable ``%_musicbrainz_tracknumber%`` which always holds the track number as it was entered in the MusicBrainz database. The following script will set the tracknumber tag to the value as displayed in the MusicBrainz database:"
+msgstr ""
+"如果你真的想这么做，你可以使用脚本变量 ``%_musicbrainz_tracknumber%``，它始终"
+"持有 MusicBrainz 数据库中输入的音轨号。以下脚本将 tracknumber 标签设置为 "
+"MusicBrainz 数据库中显示的值："
+
+#: ../../faq/faq_file_formats.rst:104
+msgid "Please be aware that for MP4 files this will result in the track number not being saved, as the MP4 format does not allow for non integer values in this tag. For other formats it depends on the playback software and devices you use if they can handle these non-standard track numbers."
+msgstr ""
+"请注意，对于 MP4 文件，这会导致音轨号未保存，因为 MP4 格式不允许在该标签中包"
+"含非整数值。对于其他格式，这取决于你使用的播放软件和设备是否能够处理这些非标"
+"准音轨号。"
+
+#: ../../faq/faq_file_formats.rst:108
+msgid "The built-in audio player cannot play my file. Which formats does it support?"
+msgstr "内置音频播放器无法播放我的文件。它支持哪些格式？"
+
+#: ../../faq/faq_file_formats.rst:110
+msgid "The formats supported by the built-in :index:`audio player` depend on the formats supported by your operating system."
+msgstr "内置 :index:`音频播放器`支持的格式取决于你的操作系统支持的格式。"
+
+#: ../../faq/faq_file_formats.rst:112
+msgid "**Windows:**"
+msgstr "**Windows:**"
+
+#: ../../faq/faq_file_formats.rst:114
+msgid "The supported formats depend on the installed codecs. Depending on the Windows version certain codecs are pre-installed, but you can install additional codecs."
+msgstr ""
+"支持的格式取决于已安装的编解码器。根据 Windows 版本，某些编解码器会预装，但你"
+"也可以安装额外的编解码器。"
+
+#: ../../faq/faq_file_formats.rst:116
+msgid "You might want to install the `Directshow Filters for Ogg <https://xiph.org/dshow/downloads/>`_ to add support for Ogg Vorbis, Ogg Speex, Ogg Theora, Ogg FLAC, native FLAC, and WebM files."
+msgstr ""
+"你可能需要安装 `Directshow Filters for Ogg <https://xiph.org/dshow/"
+"downloads/>`_ 以添加对 Ogg Vorbis、Ogg Speex、Ogg Theora、Ogg FLAC、原生 "
+"FLAC 和 WebM 文件的支援。"
+
+#: ../../faq/faq_file_formats.rst:120
+msgid "Additional information is available from `Microsoft's Codecs FAQ <https://support.microsoft.com/en-us/help/15070/windows-media-player-codecs-frequently-asked-questions>`_."
+msgstr ""
+"更多信息可以在 `Microsoft's Codecs FAQ <https://support.microsoft.com/en-us/"
+"help/15070/windows-media-player-codecs-frequently-asked-questions>`_ 中找到。"
+
+#: ../../faq/faq_file_formats.rst:122
+msgid "**Linux:**"
+msgstr "**Linux:**"
+
+#: ../../faq/faq_file_formats.rst:124
+msgid "On Linux systems the player uses GStreamer which supports most common audio formats, although some distributions might exclude some codecs due to licensing issues. For the widest format support make sure you install all of the GStreamer plugins available for your distribution."
+msgstr ""
+"在 Linux 系统中，播放器使用 GStreamer，它支持大多数常见的音频格式，尽管某些发"
+"行版可能会由于许可问题而排除某些编解码器。为了获得最广泛的格式支持，请确保安"
+"装了你发行版提供的所有 GStreamer 插件。"
+
+#: ../../faq/faq_file_formats.rst:128
+msgid "I am using Fedora. Why doesn't :index:`acoustic fingerprinting <acoustic fingerprint, fingerprint; acoustic>` work?"
+msgstr ""
+"我正在使用 Fedora。为什么 :index:`声学指纹识别 <acoustic fingerprint, "
+"fingerprint; acoustic>` 不工作？"
+
+#: ../../faq/faq_file_formats.rst:130
+msgid "Acoustic fingerprinting in Picard uses a tool called :program:`fpcalc`, which is not available in Fedora. You can get it by installing the chromaprint-toolspackage from the `RPM Fusion repository <https://rpmfusion.org/>`_. This functionality is not contained in the main Fedora ``picard`` package because it requires the ``ffmpeg`` package which `cannot be distributed by Fedora <https://fedoraproject.org/wiki/Forbidden_items>`_. After `enabling the \"rpmfusion-free\" RPM Fusion repository <https://rpmfusion.org/Configuration>`_, install the package (as root) using::"
+msgstr ""
+"Picard 中的声学指纹识别使用名为 :program:`fpcalc` 的工具，在 Fedora 中不可用"
+"。您可以通过从 `RPM Fusion 仓库 <https://rpmfusion.org/>`_ 安装 `chromaprint-"
+"tools` 包来获取它。此功能不包含在 Fedora 的主 ``picard`` 包中，因为它需要 "
+"``ffmpeg`` 包，而 `Fedora 不能分发 https://fedoraproject.org/wiki/"
+"Forbidden_items`。在 `启用 \"rpmfusion-free\" RPM Fusion 仓库 <https://"
+"rpmfusion.org/Configuration>`_ 后，使用以下命令（以 root 身份）安装该包："

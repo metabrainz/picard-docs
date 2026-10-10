@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_genres/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../config/options_genres.rst:4
+msgid ":index:`Genres <configuration; genres>`"
+msgstr ":index:`流派 <configuration; genres>`"
+
+#: ../../config/options_genres.rst:17
+msgid "**Use genres from MusicBrainz**"
+msgstr "**使用 MusicBrainz 的流派**"
+
+#: ../../config/options_genres.rst:19
+msgid "Use genres provided by MusicBrainz and save them to the genre tag."
+msgstr "使用 MusicBrainz 提供的流派并将其保存到流派标签中。"
+
+#: ../../config/options_genres.rst:21
+msgid "**Only use my genres**"
+msgstr "**仅使用我的流派**"
+
+#: ../../config/options_genres.rst:23
+msgid "When enabled, Picard will only write genres you personally have submitted to MusicBrainz. You'll need to set your username and password to use this feature."
+msgstr ""
+"启用后，Picard 将仅写入您亲自提交给 MusicBrainz 的流派。您需要设置用户名和密"
+"码才能使用此功能。"
+
+#: ../../config/options_genres.rst:25
+msgid "**Fall back to album's artists genres**"
+msgstr "**回退到专辑艺术家的流派**"
+
+#: ../../config/options_genres.rst:27
+msgid "If there is no genre set for the release or release group on MusicBrainz, use the genre of the album artist instead."
+msgstr "如果在 MusicBrainz 上没有为发行品或发行组设置流派，则使用专辑艺术家的流派。"
+
+#: ../../config/options_genres.rst:29
+msgid "**Use folksonomy tags as genre**"
+msgstr "**使用 folksonomy 标签作为流派**"
+
+#: ../../config/options_genres.rst:31
+msgid "Check to use all folksonomy tags to set the genre. Otherwise only the tags considered by MusicBrainz to be proper genres will be used."
+msgstr ""
+"选中此框以使用所有 folksonomy 标签来设置流派。否则，仅使用 MusicBrainz 认为是"
+"正规流派的标签。"
+
+#: ../../config/options_genres.rst:33
+msgid "**Minimal genre usage**"
+msgstr "**最小流派使用**"
+
+#: ../../config/options_genres.rst:35
+msgid "Choose how popular the genre must be before it is written by Picard. Default: 90%. Lowering the value here will lead to more, but possibly less relevant, genres in your files."
+msgstr ""
+"选择流派在写入 Picard 之前必须多流行。默认值：90%。将此处的值调低会导致文件中"
+"包含更多，但可能不太相关的流派。"
+
+#: ../../config/options_genres.rst:37
+msgid "**Maximum number of genres**"
+msgstr "**最大流派数量**"
+
+#: ../../config/options_genres.rst:39
+msgid "Choose how many genres to use. Default: 5. If you only want a single genre, set this to 1."
+msgstr "选择要使用的流派数量。默认值：5。如果您只想使用单一流派，请将其设置为 1。"
+
+#: ../../config/options_genres.rst:41
+msgid "**Join multiple genres with**"
+msgstr "**使用分隔符连接多个流派**"
+
+#: ../../config/options_genres.rst:43
+msgid "Select which character should be used to separate multiple genres."
+msgstr "选择应使用哪个字符来分隔多个流派。"
+
+#: ../../config/options_genres.rst:45
+msgid "**Genres or folksonomy tags to include or exclude**"
+msgstr "**要包含或排除的流派或 folksonomy 标签**"
+
+#: ../../config/options_genres.rst:47
+msgid "One expression per line, case-insensitive. You can use the \"Playground\" text field to enter some genres and test the rules you have setup. Genres that will be excluded will be marked red, included genres will be marked green."
+msgstr ""
+"每行一个表达式，不区分大小写。您可以使用 \"Playground\" 文本字段输入一些流派"
+"并测试您设置的规则。将被排除的流派将被标记为红色，包含的流派将被标记为绿色。"
+
+#: ../../config/options_genres.rst:49
+msgid "**Comments**: Lines not starting with '-' or '+' are ignored. (e.g.: ``#comment``, ``!comment`` or ``comment``)"
+msgstr ""
+"**注释**：不以 '-' 或 '+' 开头的行将被忽略。(例如：``#comment``, "
+"``!comment`` 或 ``comment``)"
+
+#: ../../config/options_genres.rst:51
+msgid "**Strict filtering**: Exclude exact word by prefixing it with '-' (e.g.: ``-word``). Include exact word, even if another rule would exclude it, by prefixing it with '+' (e.g.: ``+word``)."
+msgstr ""
+"**严格过滤**：通过在前面加上 '-' 来排除确切单词 (例如：``-word``)。通过在前面"
+"加上 '+' 来包含确切单词，即使另一个规则会排除它 (例如：``+word``)。"
+
+#: ../../config/options_genres.rst:53
+msgid "**Wildcard filtering**: Exclude all genres ending with \"word\" (e.g.: ``-*word``). Include all genres starting with \"word\" (e.g.: ``+word*``). Exclude all genres starting with 'w' and ending with \"rd\" (e.g.: ``-w*rd``)."
+msgstr ""
+"**通配符过滤**：排除所有以 \"word\" 结尾的流派 (例如：``-*word``)。包含所有"
+"以 \"word\" 开头的流派 (例如：``+word*``)。排除所有以 'w' 开头并以 \"rd\" 结"
+"尾的流派 (例如：``-w*rd``)。"
+
+#: ../../config/options_genres.rst:55
+msgid "**Regular expressions filtering (Python \"re\" syntax)**: Exclude genres starting with 'w' followed by any character, then 'r' followed by at least one 'd' (e.g.: ``-/^w.rd+/``)."
+msgstr ""
+"**正则表达式过滤 (Python \"re\" 语法)**：排除以 'w' 开头后跟任何字符，然后是 "
+"'r' 后跟至少一个 'd' 的流派 (例如：``-/^w.rd+/``)。"
+
+#: ../../config/options_genres.rst:57
+msgid "**Playground for genres or folksonomy tags filters:**"
+msgstr "**流派或 folksonomy 标签过滤的 Playground**："
+
+#: ../../config/options_genres.rst:59
+msgid "This area allows you to enter genre tags, one per line, to test your filters. If a tag is marked in red, it will be filtered out. A tag marked green will be allowed."
+msgstr ""
+"此区域允许您输入流派标签，每行一个，以测试您的过滤器。如果标签被标记为红色，"
+"它将被过滤掉。被标记为绿色的标签将被允许。"
+
+#: ../../config/options_genres.rst:63
+msgid "This list of test tags will be cleared when you exit the configuration section."
+msgstr "当您退出配置部分时，此测试标签列表将被清除。"

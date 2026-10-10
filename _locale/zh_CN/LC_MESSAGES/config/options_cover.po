@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-20 10:46-0600\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_cover/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../config/options_cover.rst:4
+msgid ":index:`Cover Art Options <pair: configuration; cover art>`"
+msgstr ":index:`封面图片选项 <pair: configuration; cover art>`"
+
+#: ../../config/options_cover.rst:17
+msgid "**Embed cover images into tags**"
+msgstr "**将封面图片嵌入标签**"
+
+#: ../../config/options_cover.rst:19
+msgid "Enables images to be embedded directly into your music files. While this will use more storage space than storing it as a separate image file in the same directory, some music players will only display embedded images and don't find the separate files."
+msgstr ""
+"启用图片直接嵌入到您的音乐文件中。虽然这比将图片作为同一目录中的单独图片文件"
+"存储占用更多存储空间，但某些音乐播放器只会显示嵌入的图片，并且找不到单独的文"
+"件。"
+
+#: ../../config/options_cover.rst:21
+msgid "**Embed only a single front image**"
+msgstr "**仅嵌入单个正面图片**"
+
+#: ../../config/options_cover.rst:23
+msgid "Embeds only a single front image into your music files. No other images, regardless of their type, will be embedded. Many music players will only display a single embedded image, so embedding additional images may not add any functionality."
+msgstr ""
+"仅将单个正面图片嵌入到您的音乐文件中。不会嵌入其他任何类型的图片。许多音乐播"
+"放器只会显示单个嵌入的图片，因此嵌入附加图片可能不会增加任何功能。"
+
+#: ../../config/options_cover.rst:25
+msgid "**Never replace cover images with smaller ones**"
+msgstr "**永不用更小的封面图片替换**"
+
+#: ../../config/options_cover.rst:27
+msgid "Enabling this setting will prevent Picard from replacing an embedded cover image with one having smaller dimensions."
+msgstr "启用此设置将阻止 Picard 用尺寸更小的图片替换嵌入的封面图片。"
+
+#: ../../config/options_cover.rst:29
+msgid "**Never replace selected cover image types**"
+msgstr "**永不替换选定类型的封面图片**"
+
+#: ../../config/options_cover.rst:31
+msgid "When this is enabled, Picard will not replace existing embedded cover images of the types specified. The types to retain are selected from a list in the selection dialog."
+msgstr ""
+"启用此功能时，Picard 不会替换指定类型的现有嵌入封面图片。要保留的类型是从选择"
+"对话框中的列表中选择的。"
+
+#: ../../config/options_cover.rst:35
+msgid "**Save cover images as separate files**"
+msgstr "**将封面图片保存为单独文件**"
+
+#: ../../config/options_cover.rst:37
+msgid "In the file name mask you can use any variable or function from :doc:`Picard Tags <../variables/variables>` and :doc:`Picard Scripting Functions <../functions/list_by_type>`. The mask should not contain a file extension; this is added automatically based on the actual image type. The default value is \"cover\". If you change this to \"folder\", Windows will display the image as a preview of the containing directory."
+msgstr ""
+"在文件名掩码中，您可以使用 :doc:`Picard Tags <../variables/variables>` 和 "
+":doc:`Picard Scripting Functions <../functions/list_by_type>` 中的任何变量或"
+"函数。掩码不应包含文件扩展名；这会根据实际图片类型自动添加。默认值是 "
+"\"cover\"。如果您将其更改为 \"folder\"，Windows 将将其显示为包含目录的预览。"
+
+#: ../../config/options_cover.rst:39
+msgid "In addition to scripting variables already available for a track, you can use the following cover art specific variables:"
+msgstr "除了已经可用于音轨的脚本变量之外，您还可以使用以下封面艺术特定变量："
+
+#: ../../config/options_cover.rst:41
+msgid "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For front images this will always be \"front\"."
+msgstr ""
+"``coverart_maintype``: 主要类型（例如：front、medium、booklet）。对于正面图片"
+"，这将始终是 \"front\"。"
+
+#: ../../config/options_cover.rst:42
+msgid "``coverart_types``: Full list of all types assigned to this image."
+msgstr "``coverart_types``: 分配到此图片的所有类型的完整列表。"
+
+#: ../../config/options_cover.rst:43
+msgid "``coverart_comment``: The cover art comment."
+msgstr "``coverart_comment``: 封面艺术评论。"
+
+#: ../../config/options_cover.rst:45
+msgid "For example, specifying a file naming mask such as:"
+msgstr "例如，指定如下文件名掩码："
+
+#: ../../config/options_cover.rst:51
+msgid "will preface the file name with the album artist, original release year and album title."
+msgstr "将预先添加专辑艺术家、原始发行年份和专辑标题到文件名前。"
+
+#: ../../config/options_cover.rst:53
+msgid "You can also have Picard save the images to a subdirectory by including this in the file naming mask. For example:"
+msgstr ""
+"您也可以通过在文件命名掩码中包含此内容，让 Picard 将图片保存到子目录中。例如"
+"："
+
+#: ../../config/options_cover.rst:59
+msgid "which will place the images in a subdirectory called \"Artwork\"."
+msgstr "这将在名为 \"Artwork\" 的子目录中放置图片。"
+
+#: ../../config/options_cover.rst:61
+msgid "**Overwrite the file if it already exists**"
+msgstr "**如果文件已存在，则覆盖文件**"
+
+#: ../../config/options_cover.rst:63
+msgid "Check this to replace existing files. This is especially recommended if trying to write \"folder\" previews for Windows."
+msgstr ""
+"选中此项以替换现有文件。如果尝试为 Windows 写入 \"folder\" 预览，则特别推荐此"
+"设置。"
+
+#: ../../config/options_cover.rst:65
+msgid "**Save only a single front image as separate file**"
+msgstr "**仅将单个正面图片保存为单独文件**"
+
+#: ../../config/options_cover.rst:67
+msgid "This tells Picard to only save the first \"front\" image to a separate file with the release. No other \"front\" images or images of any other type will be saved. If left unchecked, all \"front\" images will be saved as separate files, along with any other specified image types to be downloaded."
+msgstr ""
+"这告诉 Picard 仅将第一个 \"front\" 图片与发行品一起保存为单独文件。没有其他 "
+"\"front\" 图片或任何其他类型的图片将被保存。如果未选中，所有 \"front\" 图片以"
+"及任何其他指定的要下载的图片类型都将被保存为单独文件。"
+
+#: ../../config/options_cover.rst:69
+msgid "**Use the primary image type as the file name**"
+msgstr "**使用主要图片类型作为文件名**"
+
+#: ../../config/options_cover.rst:71
+msgid "This setting changes how Picard names image files **other than front images**."
+msgstr "此设置更改 Picard 为图片文件命名的方式 **除了正面图片之外**。"
+
+#: ../../config/options_cover.rst:73
+msgid "When checked, Picard will use the type of the image (e.g.: back, booklet, etc.) as the filename when saving, as long as the type is not front. If the image has been assigned multiple types, then the first type will be used. For example, if the image is of types \"back\" and \"raw\", then \"back\" will be used for the filename. If unchecked or if the image is of type \"front\", Picard will use the file name specified in the \"Use the following file name for images\" setting."
+msgstr ""
+"选中时，Picard 在保存时将使用图片的类型（例如：背面、封套等）作为文件名，前提"
+"是类型不是 front。如果图片已分配多个类型，则将使用第一个类型。例如，如果图片"
+"的类型是 \"back\" 和 \"raw\"，则 \"back\" 将用于文件名。如果未选中或如果图片"
+"的类型是 \"front\"，Picard 将使用 \"Use the following file name for images\" "
+"设置中指定的文件名。"
+
+#: ../../config/options_cover.rst:75
+msgid "**Remove cover images from tags**"
+msgstr "**从标签中移除封面图片**"
+
+#: ../../config/options_cover.rst:77
+msgid "When checked, Picard will automatically remove embedded cover images from your files when they are saved. This option is only available for setting if the \"*Embed cover images into tags*\" option is disabled."
+msgstr ""
+"勾选时，Picard 在保存文件时将自动从您的文件中移除嵌入的封面图片。此选项仅在 "
+"\"*Embed cover images into tags*\" 选项禁用时可用。"
+
+#: ../../config/options_cover.rst:79
+msgid "Images will only be removed if they are also being saved as separate files."
+msgstr "只有当它们也被保存为单独文件时，图片才会被移除。"
+
+#: ../../config/options_cover.rst:81
+msgid "Picard will **not** remove embedded cover images if the \"*Embed cover images into tags*\" option is enabled, even if the \"*Remove cover images from tags*\" option setting is enabled."
+msgstr ""
+"即使 \"*Remove cover images from tags*\" 选项设置已启用，如果 \"*Embed cover "
+"images into tags*\" 选项启用，Picard 也**不会**移除嵌入的封面图片。"
+
+#: ../../config/options_cover.rst:83
+msgid "Images being removed will be identified as such in the \"Album Info\" dialog."
+msgstr "将被移除的图片将在 \"Album Info\" 对话框中标识出来。"
+
+#: ../../config/options_cover.rst:98
+msgid "Cover Art Providers"
+msgstr "封面艺术提供者"
+
+#: ../../config/options_cover.rst:100
+msgid "Picard can download Cover Art from a number of sources, and you can choose which sources you want Picard to use. You can activate more than one provider and choose the order in which the providers are queried. Picard will try the providers from top to bottom until an image is returned."
+msgstr ""
+"Picard 可以从多个来源下载封面图片，您可以选择要让 Picard 使用的来源。您可以激"
+"活多个提供者并选择提供者的查询顺序。Picard 将从上到下尝试提供者，直到返回图片"
+"。"
+
+#: ../../config/options_cover.rst:102
+msgid "**Cover Art Archive: Release**"
+msgstr "**封面图片存档：发行品**"
+
+#: ../../config/options_cover.rst:104
+msgid "The Cover Art Archive (CAA) is the MusicBrainz archive of cover art in cooperation with the `Internet Archive <https://archive.org>`_. The Cover Art Archive is the most comprehensive database of cover art (e.g.: front covers, back covers, booklets, CDs)."
+msgstr ""
+"封面图片存档（CAA）是与 `Internet Archive <https://archive.org>`_ 合作的音乐"
+"脑库封面图片存档。封面图片存档是涵盖范围最广的封面图片数据库（例如：封面、封"
+"底、小册子、CD）。"
+
+#: ../../config/options_cover.rst:106
+msgid "**Cover Art Archive: Release Group**"
+msgstr "**封面图片存档：发行组**"
+
+#: ../../config/options_cover.rst:108
+msgid "This provider uses the Cover Art Archive cover image assigned to the release group. This is usually the image that best describes the release group as a whole or the image with the best visual quality, but is not necessarily the exact cover of the release you are tagging. This provider is a good choice if you care more about visual quality then having an exact representation of your release. It is also a good fallback for the Cover Art Archive provider."
+msgstr ""
+"此提供者使用分配给发行组的封面图片存档封面图片。这通常是描述发行组整体的最佳"
+"图片或视觉质量最好的图片，但不一定是您正在标记的发行品的精确封面。如果您更关"
+"心视觉质量而不是发行品的精确表示，则此提供者是不错的选择。它也是封面图片存档"
+"提供者的良好备用选项。"
+
+#: ../../config/options_cover.rst:110
+msgid "**Allowed Cover Art URLs**"
+msgstr "**允许的封面图片 URL**"
+
+#: ../../config/options_cover.rst:112
+msgid "This will use images provided from approved third-party sites. The image location is stored as a URL relationship for the release within the MusicBrainz database, and only approved sites can be used for this relationship."
+msgstr ""
+"这将使用来自经批准的第三方站点的图片。图片位置存储为音乐脑库数据库中发行品的 "
+"URL 关系，并且只能使用经批准的站点用于此关系。"
+
+#: ../../config/options_cover.rst:116
+msgid "This relationship type is now deprecated in MusicBrainz, and is no longer used. See `Cover art whitelist <https://wiki.musicbrainz.org/History:Style/Relationships/URLs/Cover_art_whitelist>`_ in the Style Guide for more information."
+msgstr ""
+"此关系类型现在已在音乐脑库中弃用，并且不再使用。有关更多信息，请参阅样式指南"
+"中的 `封面图片白名单 <https://wiki.musicbrainz.org/History:Style/"
+"Relationships/URLs/Cover_art_whitelist>`_。"
+
+#: ../../config/options_cover.rst:118
+msgid "**Local Files**"
+msgstr "**本地文件**"
+
+#: ../../config/options_cover.rst:120
+msgid "Load cover art from local files. The file names to load can be configured in the :ref:`ref-local-files` provider options."
+msgstr ""
+"从本地文件加载封面图片。要加载的文件名可以在 :ref:`ref-local-files` 提供者选"
+"项中配置。"
+
+#: ../../config/options_cover.rst:122
+msgid "In addition to the built-in cover art providers described above, additional cover art providers can be installed as `plugins <https://picard.musicbrainz.org/plugins/>`_. These include:"
+msgstr ""
+"除了上面描述的内置封面图片提供者之外，还可以作为 `插件 <https://"
+"picard.musicbrainz.org/plugins/>`_ 安装额外的封面图片提供者。这些包括："
+
+#: ../../config/options_cover.rst:124
+msgid "**fanart.tv**: Uses cover art from `fanart.tv <https://fanart.tv/>`_, which focuses on cover art with high visual quality. This provider provides cover art representative for the release group and not the individual release."
+msgstr ""
+"**fanart.tv**: 使用来自 `fanart.tv <https://fanart.tv/>`_ 的封面图片，该网站"
+"专注于高质量视觉效果的封面图片。这个提供者提供的封面图片代表发行组而不是单个"
+"发行品。"
+
+#: ../../config/options_cover.rst:126
+msgid "**TheAudioDB**: Uses cover art from `TheAudioDB <https://www.theaudiodb.com/>`_, which focuses on cover art with high visual quality. This provider provides cover art representative for the release group and not the individual release."
+msgstr ""
+"**TheAudioDB**: 使用来自 `TheAudioDB <https://www.theaudiodb.com/>`_ 的封面图"
+"片，该网站专注于高质量视觉效果的封面图片。这个提供者提供的封面图片代表发行组"
+"而不是单个发行品。"
+
+#: ../../config/options_cover.rst:130
+msgid "You must enable :menuselection:`\"Options --> Metadata --> Use release relationships\"` for Picard to be able to download cover art from MusicBrainz cover art relationships."
+msgstr ""
+"你必须启用 :menuselection:`\"选项 --> 元数据 --> 使用发行品关系\"`，以便 "
+"Picard 能够从 MusicBrainz 封面图片关系下载封面图片。"
+
+#: ../../config/options_cover.rst:136
+msgid "Details: :doc:`options_cover_art_processing` / :doc:`options_cover_art_archive` / :doc:`options_local_files`"
+msgstr ""
+"详情: :doc:`options_cover_art_processing` / "
+":doc:`options_cover_art_archive` / :doc:`options_local_files`"

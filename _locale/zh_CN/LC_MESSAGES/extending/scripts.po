@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/extendingscripts/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../extending/scripts.rst:4
+msgid ":index:`Scripts <scripts>`"
+msgstr ":index:`脚本 <scripts>`"
+
+#: ../../extending/scripts.rst:6
+msgid "There are two types of scripts used in Picard: the file naming script and tagging scripts. These are managed from the \"File Naming\" and \"Scripting\" sections of the :menuselection:`\"Options --> Options...\"` menu. All scripts are written using the :doc:`Picard scripting language <scripting>`. Scripts are often discussed in the `MetaBrainz Community Forum <https://community.metabrainz.org/c/picard>`_, and there is a thread specific to `file naming and script snippets <https://community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-tagger-script-snippets/2786/>`_."
+msgstr ""
+"Picard 中使用两种类型的脚本：文件命名脚本和标签脚本。这些脚本从 "
+":menuselection:`\"选项 --> 选项...\"` 菜单的 \"文件命名\" 和 \"脚本\" 部分进"
+"行管理。所有脚本都使用 :doc:`Picard scripting language <scripting>` 编写。脚"
+"本经常在 `MetaBrainz 社区论坛 <https://community.metabrainz.org/c/picard>`_ "
+"中讨论，还有一个专门针对 `文件命名和脚本片段 <https://"
+"community.metabrainz.org/t/repository-for-neat-file-name-string-patterns-and-"
+"tagger-script-snippets/2786/>`_ 的主题。"
+
+#: ../../extending/scripts.rst:9
+msgid ":index:`File Naming Script <pair: file naming; scripts>`"
+msgstr ":index:`文件命名脚本 <pair: file naming; scripts>`"
+
+#: ../../extending/scripts.rst:11
+msgid "Multiple file naming scripts can be defined in a user's settings, although only one is selected at a time for use. File naming scripts can vary from a simple one-line script such as ``%album%/%title%`` to a very complex script using different file naming formats based on different criteria. In all cases, the files will be saved using the text output by the script."
+msgstr ""
+"用户设置中可以定义多个文件命名脚本，但一次只选择一个使用。文件命名脚本可以是"
+"从简单的 ``%album%/%title%`` 这样的单行脚本到基于不同标准使用不同文件命名格式"
+"的非常复杂的脚本。在所有情况下，文件都将使用脚本生成的文本保存。"
+
+#: ../../extending/scripts.rst:13
+msgid "File naming scripts are managed using the :doc:`../config/options_filerenaming_editor` which can be opened from the \"File Naming\" section of the :menuselection:`\"Options --> Options...\"` menu, or directly from the :menuselection:`\"Options --> Open file naming script editor...\"` menu item. The current file naming script can also be selected directly from the :menuselection:`\"Options --> Select file naming script\"` menu."
+msgstr ""
+"文件命名脚本使用 :doc:`../config/options_filerenaming_editor` 进行管理，可以"
+"从 :menuselection:`\"选项 --> 选项...\"` 菜单的 \"文件命名\" 部分打开，或直接"
+"从 :menuselection:`\"选项 --> 打开文件命名脚本编辑器...\"` 菜单项打开。当前文"
+"件命名脚本也可以直接从 :menuselection:`\"选项 --> 选择文件命名脚本\"` 菜单选"
+"择。"
+
+#: ../../extending/scripts.rst:17
+msgid "Any new tags set or tags modified by the file naming script will **not** be written to the output files' metadata."
+msgstr "文件命名脚本设置的任何新标签或修改的标签都 **不会** 写入输出文件的元数据。"
+
+#: ../../extending/scripts.rst:20
+msgid ":index:`Tagging Scripts <pair: tagging; scripts>`"
+msgstr ":index:`标签脚本 <pair: tagging; scripts>`"
+
+#: ../../extending/scripts.rst:22
+msgid "There can be multiple tagging scripts defined in a user's settings. Individual scripts can be enabled or disabled, and the order of execution of the scripts can be set. Whenever a script is run automatically (i.e.: when an album is loaded), it is processed once for each track in the album that triggered the run. For example, if there are two tagging scripts enabled (A and B) and an album with three tracks is loaded, the scripts will be processed in the following order:"
+msgstr ""
+"用户设置中可以定义多个标签脚本。各个脚本可以单独启用或禁用，并且可以设置脚本"
+"的执行顺序。每当脚本自动运行时（例如：加载专辑时），它会对触发运行的专辑中的"
+"每个音轨进行处理一次。例如，如果启用了两个标签脚本（A 和 B），并且加载了一个"
+"包含三个音轨的专辑，脚本将按以下顺序处理："
+
+#: ../../extending/scripts.rst:24
+msgid "Script A Track 1;"
+msgstr "脚本 A 音轨 1；"
+
+#: ../../extending/scripts.rst:25
+msgid "Script A Track 2;"
+msgstr "脚本 A 音轨 2；"
+
+#: ../../extending/scripts.rst:26
+msgid "Script A Track 3;"
+msgstr "脚本 A 音轨 3；"
+
+#: ../../extending/scripts.rst:27
+msgid "Script B Track 1;"
+msgstr "脚本 B 音轨 1；"
+
+#: ../../extending/scripts.rst:28
+msgid "Script B Track 2;"
+msgstr "脚本 B 音轨 2；"
+
+#: ../../extending/scripts.rst:29
+msgid "Script B Track 3."
+msgstr "脚本 B 音轨 3。"
+
+#: ../../extending/scripts.rst:31
+msgid "Metadata updates are not shared between tracks, so you cannot append data from one track to a tag in another track."
+msgstr ""
+"标签更新不会在音轨之间共享，因此您无法将一个音轨的数据附加到另一个音轨的标签"
+"中。"
+
+#: ../../extending/scripts.rst:33
+msgid "Any new tags set or tags modified by the tagging scripts will be written to the output files' metadata, unless the tag name begins with an underscore. These \"hidden\" tags are typically used as variables to hold temporary values that are used later in either the tagging or file naming scripts. Tagging scripts are run once for each track in the data, using the metadata for that track."
+msgstr ""
+"任何新设置的标签或由标签脚本修改的标签都将写入输出文件的元数据，除非标签名以"
+"下划线开头。这些“隐藏”标签通常用作变量，用于保存稍后在标签或文件命名脚本中使"
+"用的临时值。标签脚本会对数据中的每个音轨运行一次，使用该音轨的元数据。"
+
+#: ../../extending/scripts.rst:35
+msgid "Tagging scripts can also be run manually by right-clicking either an album or a track in the right-hand pane in Picard. If run from the album entry, the script is run for each track in the album. If run from an individual track, the script is only run for that track."
+msgstr ""
+"标签脚本也可以通过在 Picard 的右侧窗格中右键单击专辑或音轨来手动运行。如果从"
+"专辑条目运行，脚本将对专辑中的每个音轨运行。如果从单个音轨运行，脚本仅对该音"
+"轨运行。"
+
+#: ../../extending/scripts.rst:39
+msgid "Tagging Script Examples"
+msgstr "标签脚本示例"
+
+#: ../../extending/scripts.rst:41
+msgid "The following scripting examples show how tagger scripts can be used to solve some specific use cases. Please refer to :doc:`Picard scripting language <scripting>` for a detailed description of the variables and functions used in these examples."
+msgstr ""
+"以下脚本示例展示了如何使用标签脚本解决一些特定的用例。请参考 :doc:`Picard "
+"scripting language <scripting>` 了解这些示例中使用的变量和函数的详细描述。"
+
+#: ../../extending/scripts.rst:45
+msgid "Move disambiguation to album title"
+msgstr "将歧义信息移动到专辑标题"
+
+#: ../../extending/scripts.rst:47
+msgid "Append the disambiguation comment of a release to the album title:"
+msgstr "将发行品的歧义评论附加到专辑标题："
+
+#: ../../extending/scripts.rst:55
+msgid "Release language as language"
+msgstr "发行品语言作为语言"
+
+#: ../../extending/scripts.rst:57
+msgid "The ``%_releaselanguage%`` variable specifies the language of the track listing, whereas the ``%language%`` variable is supposed to be the lyrics language. The following script will use the ``%_releaselanguage%`` instead if ``%language%`` is empty:"
+msgstr ""
+"``%_releaselanguage%`` 变量指定音轨列表的语言，``%language%`` 变量应为歌词语"
+"言。以下脚本如果 ``%language%`` 为空，将使用 ``%_releaselanguage%``："
+
+#: ../../extending/scripts.rst:65
+msgid "Use original release date"
+msgstr "使用原始发行日期"
+
+#: ../../extending/scripts.rst:67
+msgid "By default Picard provides a tag ``date`` which holds the release date of a specific release and ``originaldate`` which provides the earliest release date of this release. For example you might have a 2020 reissue of an album that originally was released in 1992. In this case ``date`` will be set to \"2020\" and ``originaldate`` to \"1992\". If you prefer to have always the original release date as the primary date in your file's tags you could use the following script:"
+msgstr ""
+"默认情况下，Picard 提供一个 ``date`` 标签，它包含特定发行品的发行日期，以及 "
+"``originaldate`` 标签，它提供该发行品的最早发行日期。例如，您可能有一个 2020 "
+"年再版的专辑，该专辑最初是在 1992 年发行的。在这种情况下，``date`` 将被设置"
+"为 \"2020\"，``originaldate`` 将被设置为 \"1992\"。如果您希望始终将原始发行日"
+"期作为文件标签中的主要日期，您可以使用以下脚本："
+
+#: ../../extending/scripts.rst:73
+msgid "The use of :ref:`func_if2` ensures that if ``originaldate`` is empty it will fall back to ``date``."
+msgstr "使用 :ref:`func_if2` 确保如果 ``originaldate`` 为空，它将回退到 ``date``。"
+
+#: ../../extending/scripts.rst:75
+msgid "In addition Picard provides a variable ``%_recording_firstreleasedate%``, which tries to provide the first release date per recording (which can be different for each track in a release). If you prefer this you can use the following script:"
+msgstr ""
+"此外，Picard 提供一个 ``%_recording_firstreleasedate%`` 变量，它尝试为每条录"
+"音提供第一个发行日期（对于发行品中的每条音轨可能不同）。如果您希望这样做，您"
+"可以使用以下脚本："
+
+#: ../../extending/scripts.rst:81
+msgid "Or if you want to keep the ``date`` for the actual release date of the specific release, but use the recording's first release date as ``originaldate``:"
+msgstr ""
+"或者，如果您想保留 ``date`` 作为特定发行品的实际发行日期，但使用录音的第一个"
+"发行日期作为 ``originaldate``："
+
+#: ../../extending/scripts.rst:89
+msgid "Set album sort name"
+msgstr "设置专辑排序名称"
+
+#: ../../extending/scripts.rst:91
+msgid "The ``albumsort`` tag is not filled by Picard by default. You can set it to a meaningful value with prefixes \"The\" and \"A\" moved to the end with the following script:"
+msgstr ""
+"默认情况下，Picard 不会填充 ``albumsort`` 标签。您可以使用前缀 \"The\" 和 "
+"\"A\" 移动到末尾的以下脚本将其设置为有意义的值："
+
+#: ../../extending/scripts.rst:97
+msgid "This will e.g. set the sort name for the release \"The Best of Muddy Waters\" to \"Best of Muddy Waters, The\"."
+msgstr ""
+"这将例如将发行品 \"The Best of Muddy Waters\" 的排序名称设置为 \"Best of "
+"Muddy Waters, The\"。"
+
+#: ../../extending/scripts.rst:101
+msgid "Set compilation for multi artist releases"
+msgstr "为多艺术家发行品设置编译"
+
+#: ../../extending/scripts.rst:103
+msgid "By default the ``compilation`` tag will be set to 1 only for Various Artists releases. The following script will set it for all releases with more than one artist (as it was default behavior in Picard 1.2 and earlier):"
+msgstr ""
+"默认情况下，``compilation`` 标签仅在 Various Artists 发行品中设置为 1。以下脚"
+"本将设置为所有有多于一位艺术家的发行品（如 Picard 1.2 及更早版本中的默认行为"
+"）："
+
+#: ../../extending/scripts.rst:111
+msgid "Remove featuring from album artist"
+msgstr "从专辑艺术家中移除合作艺人"
+
+#: ../../extending/scripts.rst:113
+msgid "This always removes featuring artists from the album artist:"
+msgstr "这始终会从专辑艺术家中移除合作艺人："
+
+#: ../../extending/scripts.rst:121
+msgid "Move featuring from artist to title"
+msgstr "将合作艺人从艺术家移动到标题"
+
+#: ../../extending/scripts.rst:123
+msgid "According to MusicBrainz guidelines featuring artists are part of the artist name, e.g. \"Artist A feat. Artist B\". Some users prefer to have featuring added to the album or track title instead. The following script moves featured track artists to the track title:"
+msgstr ""
+"根据 MusicBrainz 指南，合作艺人是艺术家名称的一部分，例如 \"Artist A feat. "
+"Artist B\"。一些用户更喜欢将合作添加到专辑或音轨标题中。以下脚本将合作音轨艺"
+"人移动到音轨标题："
+
+#: ../../extending/scripts.rst:131
+msgid "The same can be done for moving featured artists from the album artist to the album title:"
+msgstr "同样的操作也可以用于将合作艺人从专辑艺术家移动到专辑标题："
+
+#: ../../extending/scripts.rst:141
+msgid "Preserve original filename"
+msgstr "保留原始文件名"
+
+#: ../../extending/scripts.rst:143
+msgid "The ``originalfilename`` tag is supposed to hold the filename the file originally had. By default Picard does not set or modify this tag. If you want to save this information the following Script can be used:"
+msgstr ""
+"``originalfilename`` 标签应该包含文件原始的文件名。默认情况下，Picard 不会设"
+"置或修改此标签。如果您想保存这些信息，可以使用以下脚本："
+
+#: ../../extending/scripts.rst:149
+msgid "This will keep any existing ``originalfilename`` tag. But if this tag is not yet present the tag will be set to the current filename. As this happens before the file is being saved the original name of the file before Picard modifies it can be preserved."
+msgstr ""
+"这会保留任何现有的 ``originalfilename`` 标签。但如果此标签尚未存在，则该标签"
+"将被设置为当前文件名。由于这发生在文件被保存之前，因此可以在 Picard 修改文件"
+"之前保留文件的原名。"

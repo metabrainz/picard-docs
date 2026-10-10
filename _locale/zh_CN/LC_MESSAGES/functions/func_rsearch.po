@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/functionsfunc_rsearch/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../functions/func_rsearch.rst:6
+msgid "$rsearch"
+msgstr ""
+
+#: ../../functions/func_rsearch.rst:8
+msgid "Usage: **$rsearch(text,pattern[,group])**"
+msgstr "用法：**$rsearch(text,pattern[,group])**"
+
+#: ../../functions/func_rsearch.rst:9
+msgid "Category: text"
+msgstr "类别：文本"
+
+#: ../../functions/func_rsearch.rst:11
+msgid "**Description:**"
+msgstr "**描述：**"
+
+#: ../../functions/func_rsearch.rst:13
+msgid "Regular expression search. This function will return the first matching group specified by ``pattern`` from ``text``. For more information about regular expressions, please see the `article on Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
+msgstr ""
+"正则表达式搜索。此函数将从 ``text`` 中返回由 ``pattern`` 指定的第一个匹配组。"
+"有关正则表达式的更多信息，请参阅 `维基百科上的文章 <https://wikipedia.org/"
+"wiki/Regular_expression>`_。"
+
+#: ../../functions/func_rsearch.rst:15
+msgid "If a marked subexpression is defined using parentheses within the search pattern, only the pattern captured by the subexpression will be returned. If more than one marked subexpression is defined and matched, only the pattern captured by the first subexpression will be returned. If more than one marked subexpression is defined and not all are matched, an empty string will be returned. If no subexpression is specified, then the pattern captured by the whole search expression will be returned."
+msgstr ""
+"如果在搜索模式中使用括号定义了标记的子表达式，则只返回子表达式捕获的模式。如"
+"果定义并匹配了多个标记的子表达式，则只返回第一个子表达式捕获的模式。如果定义"
+"了多个标记的子表达式但并非所有都匹配，则返回空字符串。如果没有指定子表达式，"
+"则返回整个搜索表达式捕获的模式。"
+
+#: ../../functions/func_rsearch.rst:17
+msgid "If the optional ``group`` parameter is not provided or is empty, return the first capture group which matched something (including the empty string) or the entire match."
+msgstr ""
+"如果可选的 ``group`` 参数未提供或为空，则返回匹配了某个内容（包括空字符串）的"
+"第一个捕获组或整个匹配。"
+
+#: ../../functions/func_rsearch.rst:19
+msgid "If ``group`` is an integer, return the capture group in the position matching this integer. Otherwise, return the capture group named ``group``, sans surrounding whitespace."
+msgstr ""
+"如果 ``group`` 是一个整数，则返回位置与此整数匹配的捕获组。否则，返回名为 "
+"``group`` 的捕获组，不带周围的空白。"
+
+#: ../../functions/func_rsearch.rst:23
+msgid "When entering regular expressions into Picard scripts you have to escape a backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right parentheses \"(\" and \")\" in order to force Picard to not interpret them as part of the script command. This is done by inserting a backslash before the character to be escaped. For example, the regular expression ``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
+msgstr ""
+"在 Picard 脚本中输入正则表达式时，你必须转义反斜杠 \"\\\\\"、美元符号 \"$\"、"
+"逗号 \",\" 以及左右括号 \"(\" 和 \")\"，以强制 Picard 不将它们解释为脚本命令"
+"的一部分。这是通过在要转义的字符前插入一个反斜杠来完成的。例如，正则表达式 "
+"``^\\s*([0-9,\\.]*)$`` 必须输入为 ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``。"
+
+#: ../../functions/func_rsearch.rst:27
+msgid "The ``group`` argument was added in Picard v3.0."
+msgstr "``group`` 参数是在 Picard v3.0 中添加的。"
+
+#: ../../functions/func_rsearch.rst:29
+msgid "**Example:**"
+msgstr "**示例：**"
+
+#: ../../functions/func_rsearch.rst:31
+msgid "The following statements will return the values indicated:"
+msgstr "以下语句将返回指示的值："

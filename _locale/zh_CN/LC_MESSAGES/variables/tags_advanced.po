@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-26 18:00-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/variablestags_advanced/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../variables/tags_advanced.rst:33
+msgid ":index:`Advanced Tags <tags; advanced>`"
+msgstr ":index:`高级标签 <tags; advanced>`"
+
+#: ../../variables/tags_advanced.rst:35
+msgid "You can make additional tags available by enabling the :doc:`Use track relationships <../config/options_metadata>` and/or the :doc:`Use genres from MusicBrainz <../config/options_genres>` settings in Picard."
+msgstr ""
+"通过在 Picard 中启用 :doc:`Use track relationships <../config/"
+"options_metadata>` 和/或 :doc:`Use genres from MusicBrainz <../config/"
+"options_genres>` 设置，您可以提供额外的标签。"
+
+#: ../../variables/tags_advanced.rst:37
+msgid "Some tags provide the :index:`MusicBrainz Identifier (MBID) <identifier; musicbrainz, mbid>` of the entity. The MBID is a 32-character identifier assigned to an entity (e.g.: artist, album, track or work) to uniquely identify the entity. For more information about MBIDs, please see the `MusicBrainz Identifier <https://musicbrainz.org/doc/MusicBrainz_Identifier>`_ page in the MusicBrainz documentation."
+msgstr ""
+"某些标签提供实体的 :index:`MusicBrainz标识符 (MBID) <identifier; "
+"musicbrainz, mbid>`。MBID 是分配给实体（例如：艺术家、专辑、音轨或作品）的唯"
+"一标识符，用于唯一标识该实体。有关 MBID 的更多信息，请参阅 MusicBrainz 文档中"
+"的 `MusicBrainz Identifier <https://musicbrainz.org/doc/"
+"MusicBrainz_Identifier>`_ 页面。"
+
+#: ../../variables/tags_advanced.rst:41
+msgid "Tags will not be created and will not be available as variables if there was no value retrieved for the tag from the MusicBrainz database."
+msgstr ""
+"如果从 MusicBrainz 数据库中没有检索到标签的值，则不会创建标签，并且它们也不会"
+"作为变量可用。"
+
+#: ../../variables/tags_advanced.rst:43
+msgid "Some of these tags are only supported for certain file types or tag formats. Please see the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section for details."
+msgstr ""
+"其中一些标签仅支持特定的文件类型或标签格式。请参阅 :doc:`Picard Tag Mapping "
+"<../appendices/tag_mapping>` 部分了解详情。"
+
+#: ../../variables/tags_advanced.rst:50
+msgid "Track Relationship Tags"
+msgstr "音轨关系标签"
+
+#: ../../variables/tags_advanced.rst:52
+msgid "If you enable \"Use track relationships\" in the Option settings, you get these extra tags:"
+msgstr "如果您在选项设置中启用“使用音轨关系”，您将获得这些额外的标签："
+
+#: ../../variables/tags_advanced.rst:54
+msgid "**arranger**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:56
+msgid "The names of the arrangers associated with the track. These can include the instrument and orchestra arrangers, and could be associated with the release, recording or work. (*since Picard 0.10*)"
+msgstr ""
+"与音轨相关的编曲人员名称。这些可以包括乐器编曲人员和管弦乐队编曲人员，并且可"
+"能与发行品、录音或作品相关。(*自 Picard 0.10 起*)"
+
+#: ../../variables/tags_advanced.rst:58
+msgid "**composer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:60
+msgid "The names of the composers for the associated work."
+msgstr "与相关作品相关的作曲家名称。"
+
+#: ../../variables/tags_advanced.rst:62
+msgid "**composersort**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:64
+msgid "The sort names of the composers for the associated work."
+msgstr "与相关作品相关的作曲家的排序名称。"
+
+#: ../../variables/tags_advanced.rst:66
+msgid "**conductor**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:68
+msgid "The names of the conductors associated with the track. These can include the conductor and chorus master, and could be associated with the release or recording."
+msgstr ""
+"与音轨相关的指挥人员名称。这些可以包括指挥家和合唱指挥，并且可能与发行品或录"
+"音相关。"
+
+#: ../../variables/tags_advanced.rst:70
+msgid "**director**"
+msgstr "**导演**"
+
+#: ../../variables/tags_advanced.rst:72
+msgid "The director of a track as provided by the *Video Director* or *Audio Director* relationship in MusicBrainz. (*Since Picard 2.6, updated in Picard 2.9*)"
+msgstr ""
+"音轨的导演，由 MusicBrainz 中的 *Video Director* 或 *Audio Director* 关系提供"
+"。(*Since Picard 2.6, updated in Picard 2.9*)"
+
+#: ../../variables/tags_advanced.rst:74
+msgid "**djmixer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:76
+msgid "The names of the DJ mixers for the track. (*since Picard 0.9*)"
+msgstr "音轨的 DJ 混音师名称。(*自 Picard 0.9 起*)"
+
+#: ../../variables/tags_advanced.rst:78
+msgid "**engineer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:80
+msgid "The names of the engineers associated with the track."
+msgstr "与音轨相关的工程师名称。"
+
+#: ../../variables/tags_advanced.rst:82
+msgid "**language**"
+msgstr "**语言**"
+
+#: ../../variables/tags_advanced.rst:84
+msgid "Work lyric language as per `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ if a related work exists. (*since Picard 0.10*)"
+msgstr ""
+"如果存在相关作品，则根据 `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>"
+"`_ 提供作品歌词语言。(*自 Picard 0.10 起*)"
+
+#: ../../variables/tags_advanced.rst:86
+msgid "**license**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:88
+msgid "The licenses associated with the track, either through the release or recording relationships. (*since Picard 1.0*)"
+msgstr "与音轨相关的许可证，通过发行品或录音关系。(*自 Picard 1.0 起*)"
+
+#: ../../variables/tags_advanced.rst:90
+msgid "**lyricist**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:92
+msgid "The names of the lyricists for the associated work."
+msgstr "与相关作品相关的作词人名称。"
+
+#: ../../variables/tags_advanced.rst:94
+msgid "**mixer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:96
+msgid "The names of the \"*Mixed By*\" engineers associated with the track. (*since Picard 0.9*)"
+msgstr "与音轨相关的 \"*Mixed By*\" 工程师名称。(*自 Picard 0.9 起*)"
+
+#: ../../variables/tags_advanced.rst:98
+msgid "**musicbrainz_workid**"
+msgstr "**musicbrainz_workid**"
+
+#: ../../variables/tags_advanced.rst:100
+msgid "The MBID for the Work if a related work exists."
+msgstr "如果存在相关作品，则为作品提供 MBID。"
+
+#: ../../variables/tags_advanced.rst:102
+msgid "**musicbrainz_composerid**"
+msgstr "**musicbrainz_composerid**"
+
+#: ../../variables/tags_advanced.rst:104
+msgid "A multi-value tag containing the MusicBrainz Identifier (MBID) for the composer(s) of the associated work (*since Picard 3.0*). The MBIDs appear in the same order as the corresponding names in the ``composer`` tag."
+msgstr ""
+"包含与相关作品作曲家（*自 Picard 3.0 起*）的 MusicBrainz Identifier (MBID) 的"
+"多值标签。MBID 出现在 ``composer`` 标签中对应的名称顺序中。"
+
+#: ../../variables/tags_advanced.rst:106
+msgid "**performer:<type>**"
+msgstr "**performer:<type>**"
+
+#: ../../variables/tags_advanced.rst:108
+msgid "The names of the performers for the specified type. These types include:"
+msgstr "指定类型的表演者名称。这些类型包括："
+
+#: ../../variables/tags_advanced.rst:110
+msgid "vocals or instruments for the associated release or recording, where <type> can be \"*vocal*\", \"*guest guitar*\", \"*solo violin*\", etc."
+msgstr ""
+"与相关发行品或录音的声乐或乐器，其中 <type> 可以是 \"*vocal*\"、\"*guest "
+"guitar*\"、\"*solo violin*\" 等。"
+
+#: ../../variables/tags_advanced.rst:112
+msgid "the orchestra for the associated release or recording, where <type> is \"*orchestra*\""
+msgstr "与相关发行品或录音的管弦乐队，其中 <type> 是 \"*orchestra*\""
+
+#: ../../variables/tags_advanced.rst:114
+msgid "the concert master for the associated release or recording, where <type> is \"*concertmaster*\""
+msgstr "与相关发行品或录音的首席，其中 <type> 是 \"*concertmaster*\""
+
+#: ../../variables/tags_advanced.rst:116
+msgid "**producer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:118
+msgid "The names of the producers for the associated release or recording."
+msgstr "与相关发行品或录音的制作入名称。"
+
+#: ../../variables/tags_advanced.rst:120
+msgid "**remixer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:122
+msgid "The names of the remixer engineers associated with the track."
+msgstr "与音轨相关的混音工程师名称。"
+
+#: ../../variables/tags_advanced.rst:124
+msgid "**work**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:126
+msgid "The name of the work associated with the track. (*since Picard 1.3*)"
+msgstr "与音轨相关的作品名称。(*自 Picard 1.3 起*)"
+
+#: ../../variables/tags_advanced.rst:128
+msgid "**writer**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:130
+msgid "A multi-value tag containing the names of the writers associated with the related work. (*since Picard 1.0*). This is not written to most file formats automatically. You can merge this with composers with a script like:"
+msgstr ""
+"一个多值标签，包含与相关作品关联的作者名称。(*自 Picard 1.0 起*)。这通常不会"
+"自动写入大多数文件格式。您可以使用脚本将此标签与作曲家合并："
+
+#: ../../variables/tags_advanced.rst:138
+msgid "Some tags such as **performer** are available as both track and release level relationships, and the values may be different depending on which relationship options are enabled."
+msgstr ""
+"某些标签，如 **performer**，既可作为音轨级别也可作为发行品级别的关联关系存在"
+"，并且值可能因启用的关联关系选项而异。"
+
+#: ../../variables/tags_advanced.rst:144
+msgid ":index:`Genre Tags <tags; genre>`"
+msgstr ":index:`流派标签 <tags; genre>`"
+
+#: ../../variables/tags_advanced.rst:146
+msgid "If you enable \"Use genres from MusicBrainz\", you get:"
+msgstr "如果您启用 \"使用 MusicBrainz 的流派\"，您将获得："
+
+#: ../../variables/tags_advanced.rst:148
+msgid "**genre**"
+msgstr ""
+
+#: ../../variables/tags_advanced.rst:150
+msgid "A multi-value tag containing the specified genre information from MusicBrainz (*since Picard 2.1, earlier versions used folksonomy tags*)"
+msgstr ""
+"一个多值标签，包含从 MusicBrainz 指定的流派信息（*自 Picard 2.1 起，早期版本"
+"使用 folksonomy 标签*）"

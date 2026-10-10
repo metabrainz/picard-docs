@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.13.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-24 13:52-0600\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/tutorialswrite_plugin/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../tutorials/write_plugin.rst:4
+msgid "Writing a :index:`Plugin <plugin; writing>`"
+msgstr "编写 :index:`Plugin <plugin; writing>`"
+
+#: ../../tutorials/write_plugin.rst:6
+msgid "You have a great idea for extending Picard with a plugin but don't know where to start. Unfortunately, this is a common problem and prevents far too many of those great ideas from ever seeing the light of day. Perhaps this tutorial will help get you started in turning your great idea a reality."
+msgstr ""
+"你有一个通过插件扩展 Picard 的好想法，但不知道从哪里开始。不幸的是，这是一个"
+"常见问题，阻碍了太多好想法实现。也许这个教程能帮助你开始将你的好想法变为现实"
+"。"
+
+#: ../../tutorials/write_plugin.rst:8
+msgid "Picard plugins are written in Python, so that's the programming language you'll be using. Please check the `INSTALL.md <https://github.com/metabrainz/picard/blob/master/INSTALL.md>`_ file in the Picard repository on GitHub to see the minimum version requirements. This is Python 3.6 as of the time this tutorial was written. Also refer to the :doc:`Plugins API <../appendices/plugins_api>` for additional information, including the parameters passed to each of the function types."
+msgstr ""
+"Picard 插件是用 Python 编写的，所以那将是你要使用的编程语言。请查看 GitHub "
+"上 Picard 存储库中的 `INSTALL.md <https://github.com/metabrainz/picard/blob/"
+"master/INSTALL.md>`_ 文件，以查看最低版本要求。截至本教程编写时，这是 Python "
+"3.6。也请参考 :doc:`Plugins API <../appendices/plugins_api>` 以获取更多信息，"
+"包括传递给每种函数类型的参数。"
+
+#: ../../tutorials/write_plugin.rst:10
+msgid "For the purpose of this tutorial, we're going to develop a simple plugin to save the argument information provided by Picard to ``track`` and ``release`` processing plugins. This will demonstrate how the information is accessed, and will provide a utility that you might find useful when developing your own plugins."
+msgstr ""
+"在本教程的目的是，我们将开发一个简单的插件，将 Picard 提供的参数信息保存到 "
+"``track`` 和 ``release`` 处理插件。这将演示如何访问信息，并提供一个你在开发自"
+"己的插件时可能觉得有用的实用工具。"
+
+#: ../../tutorials/write_plugin.rst:12
+msgid "The first thing that we'll need to include is the header information that describes the plugin."
+msgstr "我们首先需要包含的是描述插件的头部信息。"
+
+#: ../../tutorials/write_plugin.rst:24
+msgid "Next we list the modules that will be referenced in our code. In this case, we will be using the ``os`` module to build the output file path, and the ``json`` module to format the argument dictionary text for readability. We will be saving our output file to the base directory used for file naming so we import the ``config`` module from Picard, as well as the ``log`` module so that we can write debug or error messages to Picard's log. Finally, we import the appropriate processing hooks and plugin priority settings."
+msgstr ""
+"接下来我们列出代码中将要引用的模块。在这种情况下，我们将使用 ``os`` 模块来构"
+"建输出文件路径，并使用 ``json`` 模块来格式化参数字典文本以提高可读性。我们将"
+"输出文件保存到用于文件命名的基目录，因此我们从 Picard 导入 ``config`` 模块，"
+"以及导入 ``log`` 模块，以便我们可以将调试或错误消息写入 Picard 的日志。最后，"
+"我们导入适当的处理钩子和插件优先级设置。"
+
+#: ../../tutorials/write_plugin.rst:38
+msgid "To ensure maximum compatibility, you should only use standard Python modules, or third-party modules that are already included in Picard. If you use other modules, then the plugin will not function properly if used on a system that doesn't have the proper version of the module installed or if someone is using an executable version of Picard."
+msgstr ""
+"为确保最大兼容性，你只应使用标准 Python 模块，或已包含在 Picard 中的第三方模"
+"块。如果你使用其他模块，那么如果使用的系统没有安装正确的模块版本，或者有人正"
+"在使用 Picard 的可执行版本，插件将无法正常工作。"
+
+#: ../../tutorials/write_plugin.rst:40
+msgid "Now we can start adding the code that we want Picard to execute. First we'll identify the output file to store the parameter information provided by Picard. This is a file named ``data_dump.txt`` to be stored in the file naming output directory. We find the name of the configuration setting we need, ``move_files_to``, by examining the Picard source code for the corresponding option setting screen. In this case it is a TextOption in the ``RenamingOptionsPage`` class found in the file `picard/ui/options/renaming.py <https://github.com/metabrainz/picard/blob/master/picard/ui/options/renaming.py>`_."
+msgstr ""
+"现在我们可以开始添加我们希望 Picard 执行的代码。首先，我们将识别用于存储 "
+"Picard 提供的参数信息的输出文件。这是一个名为 ``data_dump.txt`` 的文件，存储"
+"在文件命名输出目录中。我们通过检查 Picard 源代码中相应的选项设置屏幕来找到所"
+"需的配置设置名称 ``move_files_to``。在这种情况下，它是在文件 `picard/ui/"
+"options/renaming.py <https://github.com/metabrainz/picard/blob/master/picard/"
+"ui/options/renaming.py>`_ 中找到的 ``RenamingOptionsPage`` 类中的 TextOption"
+"。"
+
+#: ../../tutorials/write_plugin.rst:46
+msgid "The next part is a function to write a Python object to our output file. To allow the same function to be used for different situations, we include parameters to identify the type of line (input type), the object to write, and options for writing to JSON format and appending or overwriting an existing output file. In our case, we want to overwrite the file each time a new release is processed, but always append the track information to the file."
+msgstr ""
+"下一部分是一个将 Python 对象写入我们输出文件的函数。为了允许同一个函数用于不"
+"同的情况，我们包含参数来识别行类型（输入类型）、要写入的对象以及写入 JSON 格"
+"式和追加或覆盖现有输出文件的选项。在我们的情况下，我们希望每次处理新的发行品"
+"时都覆盖文件，但始终将音轨信息追加到文件中。"
+
+#: ../../tutorials/write_plugin.rst:48
+msgid "We also include error checking to write an entry to the Picard log in the event of an exception."
+msgstr "我们还包含错误检查，以便在发生异常时将条目写入 Picard 日志。"
+
+#: ../../tutorials/write_plugin.rst:64
+msgid "Now we include the functions to be called when releases and tracks are retrieved by Picard. The release function hook provides three arguments, and the track function hook provides four arguments. The argument types are described in the :doc:`Plugins API <../appendices/plugins_api>` section. The first argument, ``album``, is an object that holds information about the selected album. See the ``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file in Picard's source code for more information."
+msgstr ""
+"现在我们包含当 Picard 获取发行品和音轨时要调用的函数。发行品函数挂钩提供三个"
+"参数，而音轨函数挂钩提供四个参数。参数类型在 :doc:`Plugins API <../"
+"appendices/plugins_api>` 部分中描述。第一个参数 ``album`` 是一个包含有关选定"
+"专辑信息的对象。有关更多信息，请参阅 Picard 源代码中 `picard/album.py "
+"<https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ 文件中"
+"的 ``Album`` 类。"
+
+#: ../../tutorials/write_plugin.rst:66
+msgid "The second argument, ``metadata``, is an object that holds the tags and variables that Picard has assigned for the current release and track. This is where you can add or edit the tags and variables that Picard makes available to the user for scripts. See the ``Metadata`` class in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py>`_ file in Picard's source code for more information."
+msgstr ""
+"第二个参数 ``metadata`` 是一个包含 Picard 为当前发行品和音轨分配的标签和变量"
+"的对象。这是您可以添加或编辑 Picard 为脚本用户提供标签和变量的地方。有关更多"
+"信息，请参阅 Picard 源代码中 `picard/metadata.py <https://github.com/"
+"metabrainz/picard/blob/master/picard/metadata.py>`_ 文件中的 ``Metadata`` 类"
+"。"
+
+#: ../../tutorials/write_plugin.rst:68
+msgid "The ``track`` and ``release`` arguments are Python dictionaries containing the information provided in response to Picard's calls to the MusicBrainz API. The information may differ, depending on the user's :doc:`../config/options_metadata` settings for things like \"*Use release relationships*\" or \"*Use track relationships*\"."
+msgstr ""
+"``track`` 和 ``release`` 参数是包含 Picard 调用 MusicBrainz API 响应中提供的"
+"信息的 Python 字典。信息可能因用户对 \"*使用发行品关系*\" 或 \"*使用音轨关"
+"系*\" 等设置的 :doc:`../config/options_metadata` 而异。"
+
+#: ../../tutorials/write_plugin.rst:81
+msgid "Finally, we need to register our functions so that they are processed with the appropriate events. In our case, we set the priority to ``HIGH`` so that we output the parameter information as it is received by Picard before any other plugins have an opportunity to modify it."
+msgstr ""
+"最后，我们需要注册我们的函数，以便它们在适当的事件中处理。在我们的例子中，我"
+"们将优先级设置为 ``HIGH``，以便在其他插件有机会修改它之前，输出 Picard 接收的"
+"参数信息。"
+
+#: ../../tutorials/write_plugin.rst:90
+msgid "The complete plugin code file looks something like:"
+msgstr "完整的插件代码文件看起来像这样："
+
+#: ../../tutorials/write_plugin.rst:138
+msgid "That's it for our plugin code. Now we need to package it so that we can install it into Picard. If we're going to just use it locally for ourself, the easiest way is to just name the file something like :file:`my_plugin.py`. If there are multiple files, such as plugins that include additional settings screens, then the files should be saved in a directory such as :file:`my_plugin` with the main file named :file:`__init__.py`. The directory is then archived into a :file:`my_plugin.zip` file, with the file name the same as the included directory name. The contents of the archive would show as something like::"
+msgstr ""
+"我们的插件代码就到这里。现在我们需要将其打包，以便我们可以将其安装到 Picard "
+"中。如果我们只是为自己本地使用，最简单的方法是只需将文件命名为 "
+":file:`my_plugin.py`。如果有多个文件，例如包含附加设置界面的插件，则文件应保"
+"存在 :file:`my_plugin` 这样的目录中，主文件命名为 :file:`__init__.py`。然后将"
+"该目录归档成一个 :file:`my_plugin.zip` 文件，文件名与包含的目录名相同。归档的"
+"内容将显示为类似如下："
+
+#: ../../tutorials/write_plugin.rst:144
+msgid "If you've made it this far, congratulations! You've just created your first Picard plugin. Now you have a starting point for turning that great idea into reality."
+msgstr ""
+"如果你已经到了这一步，恭喜！你已经创建了你的第一个 Picard 插件。现在你有一个"
+"起点，可以将那个伟大的想法变为现实。"
+
+#: ../../tutorials/write_plugin.rst:148
+msgid "Relevant portions of Picard's source code including:"
+msgstr "Picard 源代码的相关部分，包括："
+
+#: ../../tutorials/write_plugin.rst:150
+msgid "Option settings modules in `picard/ui/options/ <https://github.com/metabrainz/picard/tree/master/picard/ui/options>`_ for names used to access the settings."
+msgstr ""
+"在 `picard/ui/options/ <https://github.com/metabrainz/picard/tree/master/"
+"picard/ui/options>`_ 中用于访问设置的选项设置模块。"
+
+#: ../../tutorials/write_plugin.rst:151
+msgid "``Album`` class in the `picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/album.py>`_ file."
+msgstr ""
+"`picard/album.py <https://github.com/metabrainz/picard/blob/master/picard/"
+"album.py>`_ 文件中的 ``Album`` 类。"
+
+#: ../../tutorials/write_plugin.rst:152
+msgid "``Metadata`` class and metadata processing plugin registration functions in the `picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/metadata.py>`_ file."
+msgstr ""
+"`picard/metadata.py <https://github.com/metabrainz/picard/blob/master/picard/"
+"metadata.py>`_ 文件中的 ``Metadata`` 类和元数据处理插件注册函数。"
+
+#: ../../tutorials/write_plugin.rst:153
+msgid "``PluginPriority`` class in the `picard/plugin.py <https://github.com/metabrainz/picard/blob/master/picard/plugin.py>`_ file."
+msgstr ""
+"`picard/plugin.py <https://github.com/metabrainz/picard/blob/master/picard/"
+"plugin.py>`_ 文件中的 ``PluginPriority`` 类。"

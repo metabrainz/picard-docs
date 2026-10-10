@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/usagetags_from_file_names/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../usage/tags_from_file_names.rst:4
+msgid "Generating :index:`tags from file names`"
+msgstr "从文件名生成 :index:` 标签 `"
+
+#: ../../usage/tags_from_file_names.rst:6
+msgid "Sometimes files have poor quality tags or no tags at all, but the file names are well structured and follow a pattern. In this case you can use :menuselection:`\"Tools --> Tags From &File Names...\"` to generate the tags from the file names."
+msgstr ""
+"有时文件标签质量差或根本没有标签，但文件名结构良好并遵循某种模式。在这种情况"
+"下，您可以使用 :menuselection:`\"工具 --> 从文件名获取 &标签...\"` 从文件名生"
+"成标签。"
+
+#: ../../usage/tags_from_file_names.rst:10
+msgid "Basic usage"
+msgstr "基本用法"
+
+#: ../../usage/tags_from_file_names.rst:12
+msgid "To use this tool, select one or more files loaded into Picard and open the Tags From File Names dialog from the menu at :menuselection:`\"Tools --> Tags From &File Names...\"`. The dialog will show you a list of filenames and an input field at the top where you can enter a matching pattern."
+msgstr ""
+"要使用此工具，请选择一个或多个已加载到 Picard 中的文件，并从 "
+":menuselection:`\"工具 --> 从文件名获取 &标签...\"` 菜单中打开“从文件名获取标"
+"签”对话框。该对话框将显示文件名列表，并在顶部提供一个输入框，您可以在其中输入"
+"匹配模式。"
+
+#: ../../usage/tags_from_file_names.rst:27
+msgid "The matching pattern can consist of Picard tag names enclosed in ``%`` signs and other characters that are matched verbatim. For the tag names you can use predefined names such as ``%artist%``, ``%album%``, or ``%title%`` (see :doc:`../variables/variables`) or use custom names. There are a few predefined patterns available to select from, but you can also adjust them or set your own."
+msgstr ""
+"匹配模式可以由 ``%`` 符号括起来的 Picard 标签名和其他字符组成，这些字符将按原"
+"样匹配。对于标签名，您可以使用预定义名称，如 ``%artist%``、``%album%`` 或 "
+"``%title%``（见 :doc:`../variables/variables`），也可以使用自定义名称。提供了"
+"一些预定义模式供您选择，但您也可以调整它们或设置自己的。"
+
+#: ../../usage/tags_from_file_names.rst:29
+msgid "If your files for example consist of a track number and track title separated by a space (e.g. :file:`04 Heart of Gold.mp3`) you can use the matching pattern :samp:`%tracknumber% %title%`. Should the track number and title be separated by for example a hyphen like :file:`04 - Heart of Gold.mp3` the pattern needs to also include this separator, like :samp:`%tracknumber% - %title%`."
+msgstr ""
+"例如，如果您的文件由用空格分隔的音轨编号和音轨标题组成（例如 :file:`04 Heart "
+"of Gold.mp3`），您可以使用匹配模式 :samp:`%tracknumber% %title%`。如果音轨编"
+"号和标题用连字符（例如 :file:`04 - Heart of Gold.mp3`）分隔，则模式也需要包含"
+"此分隔符，例如 :samp:`%tracknumber% - %title%`。"
+
+#: ../../usage/tags_from_file_names.rst:31
+msgid "Clicking on the \"Preview\" button next to the matching pattern will show a preview of the extracted tags for each file name. Once you are satisfied with the result, you can accept the changes with the \"Ok\" button. The changed tags will be set for the files. Note that the changes will not be saved automatically, you still need to save the files if you want the tags to be written (see :doc:`save`)."
+msgstr ""
+"点击匹配模式旁边的“预览”按钮将显示每个文件名提取的标签预览。对结果满意后，您"
+"可以使用“确定”按钮接受更改。更改后的标签将应用于文件。请注意，更改不会自动保"
+"存，如果您想将标签写入文件（见 :doc:`save`），仍然需要保存文件。"
+
+#: ../../usage/tags_from_file_names.rst:35
+msgid "Matching folders"
+msgstr "匹配文件夹"
+
+#: ../../usage/tags_from_file_names.rst:37
+msgid "The pattern can also match the parent folders of the file. To match for folders use a slash (``/``) as separator. If for example the file is in a folder named after the album, which in turn is inside a folder named after the artist (i.e. :file:`Neil Young/Harvest/04 Heart of Gold.mp3`) you could match the artist, album, track number and title with a pattern of :samp:`%artist%/%album%/%tracknumber% - %title%`."
+msgstr ""
+"模式也可以匹配文件的父文件夹。要匹配文件夹，请使用斜杠 (``/``) 作为分隔符。例"
+"如，如果文件位于一个名为专辑的文件夹中，而该文件夹又位于一个名为艺术家的文件"
+"夹中（即 :file:`Neil Young/Harvest/04 Heart of Gold.mp3`），您可以使用模式 "
+":samp:`%artist%/%album%/%tracknumber% - %title%` 来匹配艺术家、专辑、音轨编号"
+"和标题。"
+
+#: ../../usage/tags_from_file_names.rst:54
+msgid "Replace underscores with spaces"
+msgstr "替换下划线为空格"
+
+#: ../../usage/tags_from_file_names.rst:56
+msgid "Sometimes files have been named without spaces and use underscores instead. For example a file could be named :file:`04_Heart_of_Gold.mp3`. By default the title would get extracted as \"Heart_of_Gold\". In this case enable the checkbox \"Replace underscores with spaces\" and use a pattern like :samp:`%tracknumber%_%title%` to extract the title properly as \"Heart of Gold\"."
+msgstr ""
+"有时文件没有空格，而是使用下划线。例如，文件可能命名为 "
+":file:`04_Heart_of_Gold.mp3`。默认情况下，标题将被提取为 \"Heart_of_Gold\"。"
+"在这种情况下，请启用复选框 \"替换下划线为空格\"，并使用模式 "
+":samp:`%tracknumber%_%title%` 来正确提取标题 \"Heart of Gold\"。"
+
+#: ../../usage/tags_from_file_names.rst:60
+msgid "Ignoring parts of the file name"
+msgstr "忽略文件名的一部分"
+
+#: ../../usage/tags_from_file_names.rst:62
+msgid "Sometimes you don't want to include parts of the file name in your tags and just want to ignore them. The pattern must always match the entire file name, though. In this case you can use a hidden variable for the parts of the file name you do not want to match to an actual tag. Hidden variables start with an underscore like :samp:`%_dummy%`. This variable will still be available on the file for :doc:`../extending/scripting`, but will not get written to the actual file tags on saving."
+msgstr ""
+"有时您不希望在标签中包含文件名的一部分，只想忽略它们。但是，模式必须始终匹配"
+"整个文件名。在这种情况下，您可以使用一个隐藏变量来将您不想匹配的文件名部分与"
+"实际标签匹配。隐藏变量以下划线开头，如 :samp:`%_dummy%`。此变量在文件上仍然可"
+"用于 :doc:`../extending/scripting`，但在保存时不会写入实际文件标签。"
+
+#: ../../usage/tags_from_file_names.rst:64
+msgid "One example might be if you want to extract only the track number from a file name like :file:`04 Are You Ready for the Country_.mp3`. Maybe the track number tag is missing in the file, but the title tag is already properly set. You could use the pattern :samp:`%tracknumber% %_filetitle%`. This would extract the ``tracknumber`` tag properly, but would extract the rest of the file name to a hidden variable :samp:`%_filetitle%` which would not get written to the file tags. The name :samp:`%_filetitle%` is arbitrarily chosen, it just needs to start with an underscore."
+msgstr ""
+"一个例子可能是如果您只想从文件名 :file:`04 Are You Ready for the "
+"Country_.mp3` 中提取音轨编号。也许文件中缺少音轨编号标签，但标题标签已经正确"
+"设置。您可以使用模式 :samp:`%tracknumber% %_filetitle%`。这将正确提取 "
+"``tracknumber`` 标签，但会将文件名的其余部分提取到隐藏变量 "
+":samp:`%_filetitle%`，该变量不会写入文件标签。名称 :samp:`%_filetitle%` 是任"
+"意选择的，它只需要以下划线开头。"
+
+#: ../../usage/tags_from_file_names.rst:68
+msgid "Parsing hidden variables from file names is supported since Picard 2.5. Earlier versions would create an actual tag which would get stored to the tags. If you are using a Picard version older than 2.5 you will need to remove the unwanted tags before saving the files."
+msgstr ""
+"从文件名解析隐藏变量自 Picard 2.5 版本以来得到支持。早期版本会创建一个实际标"
+"签，该标签将被存储到标签中。如果您使用的是 2.5 版本之前的 Picard，您需要在保"
+"存文件之前删除不需要的标签。"

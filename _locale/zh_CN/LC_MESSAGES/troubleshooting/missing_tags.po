@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/troubleshootingmissing_tags/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../troubleshooting/missing_tags.rst:4
+msgid ":index:`Tags are not updated or saved <troubleshooting; tags not saved>`"
+msgstr ":index:`标签未更新或保存 <troubleshooting; tags not saved>`"
+
+#: ../../troubleshooting/missing_tags.rst:6
+msgid "There are typically four reasons that tags may not be written or updated when files are saved:"
+msgstr "当保存文件时，标签可能没有写入或更新，通常有四个原因："
+
+#: ../../troubleshooting/missing_tags.rst:8
+msgid "**Saving tags has not been enabled in the configuration settings**"
+msgstr "**在配置设置中未启用保存标签**"
+
+#: ../../troubleshooting/missing_tags.rst:10
+msgid "Confirm that the :menuselection:`\"Options --> Save tags\"` setting has been enabled. See :ref:`action_options` for more information."
+msgstr ""
+"确认 :menuselection:`\"Options --> Save tags\"` 设置已启用。有关更多信息，请"
+"参阅 :ref:`action_options`。"
+
+#: ../../troubleshooting/missing_tags.rst:13
+msgid "**Tags are being set in the file naming script**"
+msgstr "**在文件命名脚本中设置标签**"
+
+#: ../../troubleshooting/missing_tags.rst:15
+msgid "Tags created or updated in the file naming script will not be written to the output files. This script is only used for developing the file name and directory structure for the output. If you want to set or update a tag value in a script, it must be in a tagging script. Please see the :doc:`../extending/scripts` section for more information about the different types of scripts."
+msgstr ""
+"在文件命名脚本中创建或更新的标签不会写入输出文件。此脚本仅用于开发输出文件的"
+"文件名和目录结构。如果您想在脚本中设置或更新标签值，它必须在标签脚本中。有关"
+"不同类型脚本的其他信息，请参阅 :doc:`../extending/scripts` 部分。"
+
+#: ../../troubleshooting/missing_tags.rst:18
+msgid "**The tags begin with an underscore**"
+msgstr "**标签以下划线开头**"
+
+#: ../../troubleshooting/missing_tags.rst:20
+msgid "Tags whose names begin with an underscore, regardless of how they are created, will not be written to the output files. These are considered variables for use within Picard rather than tags. Please see the :doc:`../variables/variables` section for more information regarding the difference between tags and variables."
+msgstr ""
+"以下划线开头的标签，无论其创建方式如何，都不会写入输出文件。这些被视为 "
+"Picard 内部使用的变量，而不是标签。请参阅 :doc:`../variables/variables` 部分"
+"以了解更多关于标签和变量之间区别的信息。"
+
+#: ../../troubleshooting/missing_tags.rst:23
+msgid "**The file type does not support writing tags**"
+msgstr "**文件类型不支持写入标签**"
+
+#: ../../troubleshooting/missing_tags.rst:25
+msgid "Confirm that the file type that you are writing actually supports the tags that are to be written. Not all file types support all the tags Picard supports."
+msgstr ""
+"请确认您正在写入的文件类型确实支持要写入的标签。并非所有文件类型都支持 "
+"Picard 支持的所有标签。"
+
+#: ../../troubleshooting/missing_tags.rst:27
+msgid "Please see the :doc:`../appendices/tag_mapping` section for details about the tags supported by various file formats."
+msgstr ""
+"请参阅 :doc:`../appendices/tag_mapping` 部分以了解各种文件格式支持的标签的详"
+"细信息。"

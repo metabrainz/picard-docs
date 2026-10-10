@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/usagematch/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../usage/match.rst:6
+msgid ":index:`Matching Files to Tracks <matching files to tracks>`"
+msgstr ":index:`文件匹配到曲目 <matching files to tracks>`"
+
+#: ../../usage/match.rst:10
+msgid "This stage is where individual files are matched to specific tracks in the information retrieved from the MusicBrainz database."
+msgstr "此阶段是将单个文件与从 MusicBrainz 数据库检索到的特定音轨进行匹配。"
+
+#: ../../usage/match.rst:12
+msgid "Once you have retrieved the desired album information into the right-hand pane, the next step is to match the files from the left-hand pane to the corresponding track in the right-hand pane. A music symbol in front of a track number in the right-hand pane indicates that there has been no file assigned to the track. In some cases, Picard may have already tried to do the matching for you. If the matching wasn't done automatically, drag the appropriate files onto the appropriate album and track."
+msgstr ""
+"在右侧窗格中检索到所需专辑信息后，下一步是将左侧窗格中的文件与右侧窗格中的对"
+"应音轨进行匹配。右侧窗格中音轨编号前若有音乐符号，表示该音轨尚未分配文件。在"
+"某些情况下，Picard 可能已尝试为您进行匹配。如果匹配未自动完成，请将合适的文件"
+"拖放到相应的专辑和音轨上。"
+
+#: ../../usage/match.rst:29
+msgid "If you drag and drop multiple files onto a specific track the first selected file will be matched to the track on which you dropped the files. The rest of the selected files will be matched to the following tracks in order. This allows you to quickly match multiple files to a sequence of tracks. If you want to match all files to a single track instead you can hold the :kbd:`Alt` key while dropping the files."
+msgstr ""
+"如果您将多个文件拖放到特定音轨上，第一个选中的文件将匹配到您放置文件的音轨。"
+"其余选中的文件将按顺序匹配到后续音轨。这允许您快速将多个文件匹配到一系列音轨"
+"。如果您想将所有文件匹配到单个音轨，可以在放置文件时按住 :kbd:`Alt` 键。"
+
+#: ../../usage/match.rst:31
+msgid "If you drop multiple files onto an album Picard will try to match the files to the tracks based on the metadata."
+msgstr "如果您将多个文件拖放到专辑上，Picard 将尝试根据元数据将文件匹配到音轨。"
+
+#: ../../usage/match.rst:33
+msgid "Depending on your previous metadata, Picard will try to guess the matching tracks. The order is green > yellow > orange > red, where green is the best match. If you are seeing a lot of red and orange, it could mean that Picard has guessed incorrectly, or that your files didn't have a lot of previous metadata to work with. If this is the case, it's recommended to select a track and compare the \"Original Values\" and \"New Values\" in the metadata pane. If there is an incorrect match, simply drag the track to its correct spot in the right-hand pane."
+msgstr ""
+"根据您的先前元数据，Picard 将尝试猜测匹配的音轨。顺序为绿色 > 黄色 > 橙色 > "
+"红色，其中绿色为最佳匹配。如果您看到很多红色和橙色，这可能意味着 Picard 猜测"
+"错误，或者您的文件缺乏大量先前元数据可供使用。如果是这种情况，建议选择一个音"
+"轨，并在元数据窗格中比较“原始值”和“新值”。如果匹配错误，只需将音轨拖放到右侧"
+"窗格中的正确位置。"
+
+#: ../../usage/match.rst:48
+msgid "Right-clicking an item in the track list brings up a menu of commands, including \"Info\", \"Open in Player\", \"Open Containing Folder\", \"Search for similar tracks\", \"Lookup in Browser\", \"Generate AcoustID Fingerprints\", \"Save\" and \"Remove\". In addition, you can re-run any associated plugins or scripts against only the selected item. Right-clicking an items in the left-hand pane will bring up a similar menu of commands."
+msgstr ""
+"在音轨列表中右键单击项目会弹出命令菜单，包括“信息”、“在播放器中打开”、“打开包"
+"含文件夹”、“搜索相似音轨”、“在浏览器中查找”、“生成 AcoustID 指纹”、“保存”和“"
+"删除”。此外，您可以仅对选中的项目重新运行任何关联的插件或脚本。在左侧窗格中右"
+"键单击项目将弹出类似的命令菜单。"
+
+#: ../../usage/match.rst:50
+msgid "When you select an item in the right-hand pane, the original and new metadata for the item is displayed. Right-clicking a line in the tag list brings up a menu of commands, including \"Edit\", \"Add to 'Preserved Tags' List\", \"Remove\" and \"Add New Tag\", along with an option to display the changed tags first."
+msgstr ""
+"当你在右侧窗格中选择一个项目时，会显示该项目的原始和新元数据。右键单击标签列"
+"表中的某一行会弹出一个命令菜单，包括“编辑”、“添加到“保留标签”列表”、“移除”和“"
+"添加新标签”，以及一个选项用于首先显示已更改的标签。"

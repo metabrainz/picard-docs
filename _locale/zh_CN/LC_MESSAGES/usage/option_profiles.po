@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/usageoption_profiles/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../usage/option_profiles.rst:4
+msgid "Option Profiles"
+msgstr "选项配置文件"
+
+#: ../../usage/option_profiles.rst:6
+msgid "As of version 2.7, Picard supports multiple profiles that can allow the user to quickly switch between option settings."
+msgstr "自版本 2.7 起，Picard 支持多个配置文件，允许用户快速切换选项设置。"
+
+#: ../../usage/option_profiles.rst:9
+msgid "How Option Profiles Work"
+msgstr "选项配置文件的工作原理"
+
+#: ../../usage/option_profiles.rst:11
+msgid "A profile is defined by a set of options it manages. For example, one profile may include settings for file naming such as the target directory and which file naming script to use, while another profile may include different settings for the same options or different options entirely (or some of each). Profiles are stacked and processed in the order specified by the user, from top to bottom with the lowest level being the system's \"user settings\" profile. Each user-defined profile can be enabled or disabled independently from the other user-defined profiles. The system's \"user settings\" profile is always enabled and includes all options."
+msgstr ""
+"一个配置文件由其管理的选项集定义。例如，一个配置文件可能包含文件命名设置，如"
+"目标目录和要使用的文件命名脚本，而另一个配置文件可能包含相同选项的不同设置或"
+"完全不同的选项（或两者的一些）。配置文件按用户指定的顺序堆叠和处理，从上到下"
+"，最低级别是系统的“用户设置”配置文件。每个用户定义的配置文件可以独立于其他用"
+"户定义的配置文件启用或禁用。系统的“用户设置”配置文件始终启用并包含所有选项。"
+
+#: ../../usage/option_profiles.rst:13
+msgid "When an option value is retrieved as part of Picard's processing, it comes from the first enabled profile in the stack that manages that option. Initially, the profile stack contains only the system's \"user settings\" profile, which holds the default settings for the user."
+msgstr ""
+"当选项值作为 Picard 处理的一部分被检索时，它来自堆叠中管理该选项的第一个启用"
+"的配置文件。最初，配置文件堆叠只包含系统的“用户设置”配置文件，它包含用户的默"
+"认设置。"
+
+#: ../../usage/option_profiles.rst:16
+msgid "Example of Using Profiles"
+msgstr "使用配置文件的示例"
+
+#: ../../usage/option_profiles.rst:18
+msgid "For this example, the user would like to define a set of options with alternate values, in this case a target directory where audio files are saved (option ``move_files_to``)."
+msgstr ""
+"在这个示例中，用户希望定义一组具有备用值的选项，在这种情况下，音频文件保存的"
+"目标目录（选项 ``move_files_to``）。"
+
+#: ../../usage/option_profiles.rst:20
+msgid "The user creates a new profile (named \"TargetMyDir\"), adds the option ``move_files_to`` to it, and enables this profile. The stack is now:"
+msgstr ""
+"用户创建一个新的配置文件（名为“TargetMyDir”），将选项 ``move_files_to``添加到"
+"其中，并启用此配置文件。堆叠现在为："
+
+#: ../../usage/option_profiles.rst:28
+msgid "They change the value of ``move_files_to`` (to \"target_my_dir\") for this new profile."
+msgstr "他们更改此新配置文件中 ``move_files_to`` 的值（为“target_my_dir”）。"
+
+#: ../../usage/option_profiles.rst:30
+msgid "Since the profile \"TargetMyDir\" is enabled, the value for ``move_files_to`` is retrieved from this profile. The \"user settings\" still has the old ``move_files_to`` value."
+msgstr ""
+"由于配置文件“TargetMyDir”已启用，``move_files_to`` 的值是从此配置文件检索的。"
+"“用户设置”仍然有旧的 ``move_files_to`` 值。"
+
+#: ../../usage/option_profiles.rst:32
+msgid "Now the user wants to work on another set of music files, wanting to disable ``windows_compatibility`` for this set and save them to the \"not_for_windows\" directory."
+msgstr ""
+"现在用户想处理另一组音乐文件，希望禁用 ``windows_compatibility`` 并将它们保存"
+"到“not_for_windows”目录。"
+
+#: ../../usage/option_profiles.rst:34
+msgid "They create a new profile (named \"ByeByeWin\"), add options ``move_files_to`` and ``windows_compatibility``, and enable it. Now the stack looks like:"
+msgstr ""
+"他们创建了一个新配置文件（名为 \"ByeByeWin\"），添加了选项 ``move_files_to`` "
+"和 ``windows_compatibility``，并启用了它。现在堆栈看起来像："
+
+#: ../../usage/option_profiles.rst:42
+msgid "They change the values of ``move_files_to`` (to \"not_for_windows\") and ``windows_compatibility`` (to false) for this new profile. Now when they process their files, the files are saved to the \"ByeByeWin\" ``move_files_to`` directory, with ``windows_compatibility`` = false."
+msgstr ""
+"他们更改了此新配置文件中 ``move_files_to``（设置为 \"not_for_windows\"）和 "
+"``windows_compatibility``（设置为 false）的值。现在当他们处理文件时，文件会保"
+"存到 \"ByeByeWin\" ``move_files_to`` 目录，且 ``windows_compatibility`` = "
+"false。"
+
+#: ../../usage/option_profiles.rst:44
+msgid "Now the user wants to save files to the \"TargetMyDir\" target directory again, with their usual options. To do this they simply disable the \"ByeByeWin\" profile (which can later be re-enabled if needed). The stack looks like:"
+msgstr ""
+"现在用户想要再次将文件保存到 \"TargetMyDir\" 目标目录，并使用其常用选项。为此"
+"，他们只需禁用 \"ByeByeWin\" 配置文件（如果需要，稍后可以重新启用）。堆栈看起"
+"来像："
+
+#: ../../usage/option_profiles.rst:52
+msgid "Finally, to return to their usual output directory the user only has to disable the \"TargetMyDir\" profile so the stack is:"
+msgstr ""
+"最后，要返回到他们常用的输出目录，用户只需禁用 \"TargetMyDir\" 配置文件，这样"
+"堆栈就是："
+
+#: ../../usage/option_profiles.rst:62
+msgid "Managing Option Profiles"
+msgstr "管理选项配置文件"
+
+#: ../../usage/option_profiles.rst:64
+msgid "All option profile management is done within the Option Profiles page available from the :menuselection:`\"Options --> Options...\"` item on the menu bar. From this screen you will be able to add, copy, edit, remove, enable and disable profiles, as well as setting the order of the profile stack."
+msgstr ""
+"所有选项配置文件的管理都在菜单栏的 :menuselection:`\"选项 --> 选项...\"`项中"
+"的选项配置文件页面中完成。从这里，您将能够添加、复制、编辑、删除、启用和禁用"
+"配置文件，以及设置配置文件堆栈的顺序。"
+
+#: ../../usage/option_profiles.rst:66
+msgid "Initially, the list of profiles will be empty. To create a new profile click on the :guilabel:`New` button. This will create a profile with no options selected for the profile to manage. To rename the profile, right-click on the profile name and select the :menuselection:`\"Rename profile\"` command. The list of options that the profile is to manage are selected from the list in the right-hand pane. Options can be selected either by group or individually. The groups can be expanded to see the individual options belonging to that group."
+msgstr ""
+"最初，配置文件列表将是空的。要创建新配置文件，请点击 :guilabel:`New` 按钮。这"
+"将创建一个没有为配置文件选择要管理的选项的配置文件。要重命名配置文件，请右键"
+"单击配置文件名称并选择 :menuselection:`\"重命名配置文件\"` 命令。配置文件要管"
+"理的选项列表从右侧窗格中的列表中选择。可以通过按组或单独选择选项。可以展开组"
+"以查看该组所属的单独选项。"
+
+#: ../../usage/option_profiles.rst:81
+msgid "You can see the value currently assigned to a profile's option setting by hovering your cursor over the setting in the list. The value will be displayed as a tooltip for the setting."
+msgstr ""
+"您可以通过将鼠标悬停在列表中的设置上来查看配置文件选项设置当前分配的值。该值"
+"将作为设置的提示信息显示。"
+
+#: ../../usage/option_profiles.rst:96
+msgid "The profile stack order can be rearranged either by selecting a profile and using the up and down arrow buttons below the list, or by dragging the profile to a new position in the stack. Profiles are enabled when the box beside the profile's name is checked."
+msgstr ""
+"配置文件堆栈顺序可以通过选择配置文件并使用列表下方的上下箭头按钮来重新排列，"
+"或者通过将配置文件拖动到堆栈中的新位置。当配置文件名称旁边的框被选中时，配置"
+"文件将被启用。"
+
+#: ../../usage/option_profiles.rst:98
+msgid "Changes made to a profile's options settings, enabled status, or position in the profile stack will be reflected in the option settings displayed on the other pages. Options that are controlled by an enabled profile will be shown as highlighted. Hovering your cursor over the highlighted option will identify which profile currently controls the setting. Settings are always displayed based on the first enabled profile in the profile stack, which corresponds to the setting that will be used during processing."
+msgstr ""
+"对个人资料的选项设置、启用状态或个人资料堆栈中的位置所做的更改将反映在显示在"
+"其他页面上的选项设置中。受已启用个人资料控制的选项将显示为高亮。将鼠标悬停在"
+"高亮选项上可以识别当前控制该设置的哪个个人资料。设置始终根据个人资料堆栈中的"
+"第一个已启用个人资料显示，该个人资料对应于处理过程中将使用的设置。"
+
+#: ../../usage/option_profiles.rst:100
+msgid "You can also quickly enable or disable a profile (but not change the order of the profile stack), using the :menuselection:`\"Options --> Enable/disable profiles\"` item in the menu bar on Picard's main screen."
+msgstr ""
+"您还可以使用 Picard 主屏幕菜单栏中的 :menuselection:`\"选项 --> 启用/禁用个人"
+"资料\"` 项快速启用或禁用个人资料（但不能更改个人资料堆栈的顺序）。"
+
+#: ../../usage/option_profiles.rst:102
+msgid "When you click the :guilabel:`Make It So!` button, in addition to saving your updated profile configuration all highlighted options will be saved to the first enabled profile in the profile stack that controls that option. All other options will be saved to the \"user settings\" as before. This is described in more detail in the following section."
+msgstr ""
+"当您点击 :guilabel:`Make It So!` 按钮时，除了保存您更新的个人资料配置外，所有"
+"高亮选项将保存到控制该选项的个人资料堆栈中的第一个已启用个人资料。所有其他选"
+"项将像以前一样保存到\"用户设置\"中。有关详细信息，请参阅下一节。"
+
+#: ../../usage/option_profiles.rst:105
+msgid "Saving Profile Option Settings"
+msgstr "保存个人资料选项设置"
+
+#: ../../usage/option_profiles.rst:107
+msgid "To save a value to a profile option setting, simply ensure that the the target profile is the first enabled profile in the profile stack, make the desired changes (the options should be highlighted), and then click the :guilabel:`Make It So!` button."
+msgstr ""
+"要将值保存到个人资料选项设置中，只需确保目标个人资料是个人资料堆栈中的第一个"
+"已启用个人资料，进行所需更改（选项应高亮），然后点击 :guilabel:`Make It So!` "
+"按钮。"
+
+#: ../../usage/option_profiles.rst:135
+msgid "Remember, all highlighted options will be saved to the first enabled profile in the profile stack that controls that option. All other options will be saved to the \"user settings\" profile which is the user's normal settings, and includes all options. You can confirm which profile a highlighted option will update by hovering your cursor over the option."
+msgstr ""
+"请记住，所有高亮选项将保存到控制该选项的个人资料堆栈中的第一个已启用个人资料"
+"。所有其他选项将保存到\"用户设置\"个人资料，该个人资料是用户的常规设置，并包"
+"含所有选项。您可以通过将鼠标悬停在选项上来确认高亮选项将更新哪个个人资料。"
+
+#: ../../usage/option_profiles.rst:150
+msgid "From the pages which contain options that can be included on a profile, you will also be able to see which profiles, if any, manage any of the options on the page. This is done by clicking the :guilabel:`Attached Profiles` button."
+msgstr ""
+"在包含可以包含在个人资料中的选项的页面中，您还可以看到哪些个人资料（如果有）"
+"管理页面上的任何选项。这是通过点击 :guilabel:`Attached Profiles` 按钮完成的。"
+
+#: ../../usage/option_profiles.rst:165
+msgid "This lists the attached profiles in the order in which they appear in the profile stack, and whether or not the profile is enabled. If the page does not contain any options that could be managed by a profile, the :guilabel:`Attached Profiles` button will be disabled."
+msgstr ""
+"此列表按个人资料在个人资料堆栈中出现的顺序列出附加个人资料，以及个人资料是否"
+"已启用。如果页面不包含任何可以被个人资料管理的选项，:guilabel:`Attached "
+"Profiles` 按钮将被禁用。"
+
+#: ../../usage/option_profiles.rst:169
+msgid "It is important to understand that when you click the :guilabel:`Make It So!` button **all** of the option settings on **all** pages will be saved. If an option is managed by one or more profiles that are currently enabled, the option will be highlighted and it will be saved to the **first** enabled profile in the profile stack that manages the option. If there are no enabled profiles that manage the option, the option will not be highlighted and it will be saved to the \"user settings\" profile which is the user's normal settings, contains all options, is at the bottom of the profile stack, and is always enabled. The \"user settings\" profile cannot be modified is not shown in the profile management page."
+msgstr ""
+"重要的是要理解，当你点击 :guilabel:`Make It So!` 按钮时，**所有**页面上的**所"
+"有**选项设置都将被保存。如果一个选项由一个或多个当前启用的配置文件管理，该选"
+"项将被突出显示，并将其保存到管理该选项的配置文件堆栈中的**第一个**启用的配置"
+"文件中。如果没有启用的配置文件管理该选项，该选项不会被突出显示，并且将被保存"
+"到“用户设置”配置文件中，它是用户的常规设置，包含所有选项，位于配置文件堆栈的"
+"底部，并且始终启用。“用户设置”配置文件不能被修改，不在配置文件管理页面中显示"
+"。"

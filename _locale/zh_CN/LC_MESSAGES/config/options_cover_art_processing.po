@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-18 14:34-0600\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/"
+"configoptions_cover_art_processing/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../config/options_cover_art_processing.rst:4
+msgid ":index:`Cover Art Processing <pair: configuration; cover art>`"
+msgstr ":index:`封面图片处理 <pair: configuration; cover art>`"
+
+#: ../../config/options_cover_art_processing.rst:6
+msgid "Picard can filter and process the images downloaded from the providers. Image processing can differentiate between images embedded into tags and images saved as a separate file. More filters and processors can be added by `plugins <https://picard.musicbrainz.org/plugins/>`_."
+msgstr ""
+"Picard 可以过滤和处理从提供者下载的图片。图片处理可以区分嵌入到标签中的图片和"
+"作为单独文件保存的图片。更多的过滤器和处理器可以通过 `plugins <https://"
+"picard.musicbrainz.org/plugins/>`_ 添加。"
+
+#: ../../config/options_cover_art_processing.rst:21
+msgid "**Discard images if below the given size**"
+msgstr "**如果图片尺寸小于给定值则丢弃**"
+
+#: ../../config/options_cover_art_processing.rst:23
+msgid "This filter will discard any image with its width or its height lower than the given values. With some providers, like the Cover Art Archive, the image is discarded before it is downloaded."
+msgstr ""
+"此过滤器将丢弃任何宽度或高度小于给定值的图片。对于某些提供者，例如 Cover Art "
+"Archive，图片会在下载前被丢弃。"
+
+#: ../../config/options_cover_art_processing.rst:25
+msgid "**Resize images to the given size**"
+msgstr "**将图片调整到给定尺寸**"
+
+#: ../../config/options_cover_art_processing.rst:27
+msgid "Images can be scaled to the given dimensions. You can also choose whether to allow images to increase in size, though at a loss of image quality. There are a few options as to how images are resized:"
+msgstr ""
+"图片可以缩放到给定尺寸。您还可以选择是否允许图片尺寸增加，尽管这会损失图片质"
+"量。图片调整方式有以下几种选项："
+
+#: ../../config/options_cover_art_processing.rst:29
+msgid "**Maintain aspect ratio**: Scale the source image so that it fits within the target dimensions. One of the final image dimensions may be less than the target dimension if the source image and target dimensions have different aspect ratios."
+msgstr ""
+"**保持宽高比**：缩放源图片，使其适应目标尺寸。如果源图片和目标尺寸的宽高比不"
+"同，则最终图片的一个维度可能小于目标维度。"
+
+#: ../../config/options_cover_art_processing.rst:31
+msgid "**Scale to width**: Scale the width of the source image to the target width while keeping aspect ratio."
+msgstr "**按宽度缩放**：保持宽高比，将源图片的宽度缩放到目标宽度。"
+
+#: ../../config/options_cover_art_processing.rst:33
+msgid "**Scale to height**: Scale the height of the source image to the target height while keeping aspect ratio."
+msgstr "**按高度缩放**：保持宽高比，将源图片的高度缩放到目标高度。"
+
+#: ../../config/options_cover_art_processing.rst:35
+msgid "**Crop to fit**: Scale the source image so that it completely fills the target dimensions in both directions. If the source image and target dimensions have different aspect ratios, then there will be overflow in one direction which will be (center) cropped."
+msgstr ""
+"**裁剪以适应**：缩放源图片，使其在两个方向上都完全填充目标尺寸。如果源图片和"
+"目标尺寸的宽高比不同，则一个方向会有溢出，该溢出将被（居中）裁剪。"
+
+#: ../../config/options_cover_art_processing.rst:37
+msgid "**Stretch to fit**: Stretch the image to exactly fit the specified dimensions, distorting it if necessary."
+msgstr "**拉伸以适应**：拉伸图片以完全适应指定的尺寸，必要时会扭曲。"
+
+#: ../../config/options_cover_art_processing.rst:39
+msgid "Note that there are separate settings for images saved to tags and images saved to files. This allows things like embedding a smaller image in the audio file, but retaining a larger image in the album directory."
+msgstr ""
+"请注意，为嵌入到标签中的图片和作为文件保存的图片分别设置了单独的设置。这使得"
+"可以在音频文件中嵌入较小的图片，同时在专辑目录中保留较大的图片。"
+
+#: ../../config/options_cover_art_processing.rst:41
+msgid "**Convert images to the given format**"
+msgstr "**将图片转换为给定格式**"
+
+#: ../../config/options_cover_art_processing.rst:43
+msgid "Images can be converted to the given format. The available formats are JPEG, PNG, WebP, and TIFF."
+msgstr "图片可以转换为给定格式。可用格式为 JPEG、PNG、WebP 和 TIFF。"
+
+#: ../../config/options_cover_art_processing.rst:45
+msgid "As with the resize options, the image format conversion options are set separately for images saved to tags and images saved to files."
+msgstr ""
+"与调整尺寸选项一样，图片格式转换选项也为嵌入到标签中的图片和作为文件保存的图"
+"片分别设置。"
+
+#: ../../config/options_cover_art_processing.rst:47
+msgid "**Processed image quality**"
+msgstr "**处理后的图片质量**"
+
+#: ../../config/options_cover_art_processing.rst:49
+msgid "When images are processed and saved to JPEG or WebP format, you can set the processing quality. The quality factor must be in the range 0 to 100. Specify 0 to obtain small compressed files, 100 for large uncompressed files."
+msgstr ""
+"当图片处理并保存为 JPEG 或 WebP 格式时，您可以设置处理质量。质量因子必须在 0 "
+"到 100 的范围内。指定 0 获取小型压缩文件，100 获取大型未压缩文件。"

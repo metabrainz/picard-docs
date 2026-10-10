@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-23 08:43+0200\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/faqfaq_scripting/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../faq/faq_scripting.rst:4
+msgid "Picard Scripting"
+msgstr "Picard 脚本"
+
+#: ../../faq/faq_scripting.rst:7
+msgid "Why won't my script run?"
+msgstr "为什么我的脚本不会运行?"
+
+#: ../../faq/faq_scripting.rst:9
+msgid "If you have a script that doesn't seem to be running or shows as having error in the editor, review the following common issues:"
+msgstr "如果您有一个似乎没有运行或在编辑器中显示错误的脚本，请检查以下常见问题："
+
+#: ../../faq/faq_scripting.rst:11
+msgid "**Is the script enabled?**"
+msgstr "**脚本是否已启用?**"
+
+#: ../../faq/faq_scripting.rst:13
+msgid "Make sure that the script is enabled in the scripting options. If the script is not enabled, it will not run automatically. You can run the script manually from the context menu for the track or album, but it will not run automatically when you load files or perform other actions."
+msgstr ""
+"请确保在脚本选项中启用了脚本。如果脚本未启用，它将不会自动运行。您可以从音轨"
+"或专辑的上下文菜单手动运行脚本，但在您加载文件或执行其他操作时，它将不会自动"
+"运行。"
+
+#: ../../faq/faq_scripting.rst:15
+msgid "**Is there a syntax error in the script?**"
+msgstr "**脚本中是否有语法错误?**"
+
+#: ../../faq/faq_scripting.rst:17
+msgid "If there is a syntax error in the script, it will not run and may show an error in the editor. Review the script for any syntax errors such as missing parentheses, incorrect function names, or other issues that may cause the script to not run."
+msgstr ""
+"如果脚本中存在语法错误，它将不会运行，并在编辑器中显示错误。检查脚本是否存在"
+"任何语法错误，例如缺少括号、不正确的函数名或其他可能导致脚本无法运行的问题。"
+
+#: ../../faq/faq_scripting.rst:19
+msgid "**Are all the functions used in the script valid?**"
+msgstr "**脚本中使用的所有函数是否都有效？**"
+
+#: ../../faq/faq_scripting.rst:21
+msgid "If you are using a function in your script that is not valid or does not exist, the script will not run. Make sure that all the functions you are using in your script are valid and exist in Picard. This can happen if the function is provided by a plugin that is not enabled or if the function name is misspelled."
+msgstr ""
+"如果你在脚本中使用了一个无效或不存在的函数，脚本将不会运行。确保你脚本中使用"
+"的所有函数都是有效的，并且在 Picard 中存在。这可能是由于提供的插件未启用，或"
+"者函数名拼写错误。"
+
+#: ../../faq/faq_scripting.rst:23
+msgid "**Have all reserved characters been escaped properly?**"
+msgstr "**所有保留字符是否都正确转义？**"
+
+#: ../../faq/faq_scripting.rst:25
+msgid "If your script includes reserved characters such as commas, parentheses, or other special characters as part of an argument, make sure they are escaped properly. If you want to include a comma in an argument's value, you should escape it with a backslash (e.g.: ``\\,``) to prevent it from being interpreted as a separator between arguments. The same applies to other reserved characters that may be part of an argument's value. For example, if you want to check if the artist's name is \"100%\", you should use ``$eq(%artist%,100\\%)``."
+msgstr ""
+"如果你的脚本在参数中包含逗号、括号或其他特殊字符等保留字符，请确保它们被正确"
+"转义。如果你想在参数值中包含逗号，你应该用反斜杠（例如：``\\,``）来转义它，以"
+"防止它被解释为参数之间的分隔符。这同样适用于其他可能作为参数值一部分的保留字"
+"符。例如，如果你想检查艺术家名称是否为\"100%\"，你应该使用``$eq"
+"(%artist%,100\\%)``。"
+
+#: ../../faq/faq_scripting.rst:27
+msgid "If reserved characters are not escaped properly, it can cause the script to not run or to run with unexpected results. This is a common occurence when using AI to develop scripts, because it often includes reserved characters in the value arguments without escaping them."
+msgstr ""
+"如果保留字符没有被正确转义，它可能会导致脚本无法运行或运行出意外结果。这在使"
+"用 AI 开发脚本时很常见，因为它通常在值参数中包含保留字符而不进行转义。"
+
+#: ../../faq/faq_scripting.rst:29
+msgid "One of the most common issues with improperly escaped reserved characters is when using the regular expression functions ``$rsearch()`` and ``$rreplace()``. These can be especially tricky because the regular expression syntax itself includes reserved characters, so you may need to escape reserved characters both for the regular expression syntax and for the scripting syntax. For example, if you want to replace some text enclosed in square brackets (\"Some \\[enclosed text\\]\") in a track title with the text enclosed with parentheses (\"Some (enclosed text)\") where the Python regular expression statement would be:"
+msgstr ""
+"使用正则表达式函数 ``$rsearch()`` 和 ``$rreplace()`` 时，不正确转义保留字符是"
+"最常见的问题之一。这些函数尤其棘手，因为正则表达式语法本身包含保留字符，因此"
+"您可能需要同时为正则表达式语法和脚本语法转义保留字符。例如，如果您想在音轨标"
+"题中用括号内的文本（\"Some (enclosed text)\"）替换括号内的文本（\"Some \\"
+"[enclosed text\\]\"），其中 Python 正则表达式语句将是："
+
+#: ../../faq/faq_scripting.rst:35
+msgid "you would need to use something like:"
+msgstr "您需要使用类似的东西："
+
+#: ../../faq/faq_scripting.rst:41
+msgid "The reserved characters include: comma (``,``), parentheses (``(`` and ``)``), backslash (``\\``), dollar sign (``$``), and percent sign (``%``). Make sure to review your script for any reserved characters in the argument values and escape them properly to ensure your script runs as expected."
+msgstr ""
+"保留字符包括：逗号 (``,``)、括号 (``(`` 和 ``)``)、反斜杠 (``\\``)、美元符号 "
+"(``$``) 和百分号 (``%``)。请确保检查参数值中的保留字符，并正确转义它们，以确"
+"保脚本按预期运行。"
+
+#: ../../faq/faq_scripting.rst:45
+msgid "Why don't matches work in my scripts?"
+msgstr "为什么我的脚本中的匹配不工作？"
+
+#: ../../faq/faq_scripting.rst:47
+msgid "If you have checks such as ``$eq(%artist%,My Artist)`` in your scripts, but they don't seem to be working, review the following common issues:"
+msgstr ""
+"如果你的脚本中有 ``$eq(%artist%,My Artist)`` 这样的检查，但它们似乎不起作用，"
+"请检查以下常见问题："
+
+#: ../../faq/faq_scripting.rst:49
+msgid "**Are you using the correct syntax?**"
+msgstr "**你使用的是正确的语法吗？**"
+
+#: ../../faq/faq_scripting.rst:51
+msgid "Make sure you are using the correct tag or variable and value in the correct order, and that there are no typos."
+msgstr "请确保你按正确的顺序使用正确的标签或变量和值，并且没有拼写错误。"
+
+#: ../../faq/faq_scripting.rst:53
+msgid "**Are you using the correct tag or variable name?**"
+msgstr "**你使用的是正确的标签或变量名吗？**"
+
+#: ../../faq/faq_scripting.rst:55
+msgid "Make sure you are using the correct tag or variable name in your script. For example, if you want to check the artist name, you should use ``%artist%`` and not ``%artist name%`` or any other variation."
+msgstr ""
+"请确保你在脚本中使用正确的标签或变量名。例如，如果你想检查艺术家名称，你应该"
+"使用 ``%artist%``，而不是 ``%artist name%`` 或任何其他变体。"
+
+#: ../../faq/faq_scripting.rst:57
+msgid "**Is the tag or variable you are checking actually populated?**"
+msgstr "**你检查的标签或变量是否真的有值？**"
+
+#: ../../faq/faq_scripting.rst:59
+msgid "If the tag or variable you are checking is empty or not populated, the match will not work. Make sure that it has a value before the script runs. This can be an issue if the tag or variable is being populated by a different script, but the script with the match is running before the other script. In that case, you may need to adjust the order of your scripts or add a check to ensure the tag or variable is populated before running the match."
+msgstr ""
+"如果你检查的标签或变量为空或未填充，匹配将不会工作。请确保在脚本运行之前它有"
+"值。如果标签或变量是由另一个脚本填充的，但匹配脚本先运行，则可能存在此问题。"
+"在这种情况下，你可能需要调整脚本的顺序或在运行匹配之前添加检查，以确保标签或"
+"变量已填充。"
+
+#: ../../faq/faq_scripting.rst:61
+msgid "**Is the spelling and capitalization correct?**"
+msgstr "**拼写和大小写是否正确？**"
+
+#: ../../faq/faq_scripting.rst:63
+msgid "In general, the match tests are case-sensitive, so make sure that the spelling and capitalization of the value you are checking against matches exactly with the value in the tag or variable."
+msgstr ""
+"通常，匹配测试是区分大小写的，所以请确保你检查的值的拼写和大小写与标签或变量"
+"中的值完全匹配。"
+
+#: ../../faq/faq_scripting.rst:65
+msgid "**Are you using the correct operator?**"
+msgstr "**你使用的是正确的运算符吗？**"
+
+#: ../../faq/faq_scripting.rst:67
+msgid "Make sure you are using the correct operator for your match. For example, if you want to check if a tag or variable contains a certain value, you should use ``$in(%tag_name%,value)`` instead of ``$eq(%tag_name%,value)``."
+msgstr ""
+"请确保你使用的是匹配的正确运算符。例如，如果你想检查标签或变量是否包含某个值"
+"，你应该使用 ``$in(%tag_name%,value)`` 而不是 ``$eq(%tag_name%,value)``。"
+
+#: ../../faq/faq_scripting.rst:69
+msgid "**Are there any leading or trailing spaces or unnecessary quotes in the value argument?**"
+msgstr "**值参数中是否有前导或尾随空格或不必要的引号？**"
+
+#: ../../faq/faq_scripting.rst:71
+msgid "If there are leading or trailing spaces in the value or the value is enclosed within quotes, the match may not work as expected. This is a common occurence when using AI to develop scripts, because it often introduces extra spaces such as a space after the comma separating arguments or quotes around the value. Picard will consider both of these are part of the argument. For example, if you have a script that checks if the artist is \"My Artist\", but the check is ``$eq(%artist%,\"My Artist\")`` or ``$eq(%artist%, My Artist)``, the match will not work. The correct syntax should be ``$eq(%artist%,My Artist)`` without the quotes or extra spaces."
+msgstr ""
+"如果值的开头或结尾有空格，或者值被引号包围，匹配可能不会按预期工作。这在使用 "
+"AI 开发脚本时很常见，因为它经常引入额外的空格，例如分隔参数的逗号后的空格或值"
+"周围的引号。Picard 会将这两者都视为参数的一部分。例如，如果你有一个检查艺术家"
+"是否为 \"My Artist\" 的脚本，但检查是 ``$eq(%artist%,\"My Artist\")`` 或 "
+"``$eq(%artist%, My Artist)``，匹配将不会工作。正确的语法应该是 ``$eq"
+"(%artist%,My Artist)``，不带引号或额外空格。"

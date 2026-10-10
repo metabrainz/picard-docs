@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/usagesessions/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../usage/sessions.rst:4
+msgid ":index:`Sessions Management <sessions management>`"
+msgstr ":index:`会话管理 <sessions management>`"
+
+#: ../../usage/sessions.rst:6
+msgid "As of version 3, Picard can save and restore your current workspace state as a session file. Sessions preserve file placement (unclustered, clusters, albums, specific tracks, and standalone recordings), your manual metadata edits, and selected configuration options so you can resume work later."
+msgstr ""
+"从版本 3 开始，Picard 可以将当前工作区状态保存为会话文件。会话会保留文件位置"
+"（未聚类、聚类、专辑、特定音轨和独立录音）、手动编辑的元数据以及选择的配置选"
+"项，以便稍后继续工作。"
+
+#: ../../usage/sessions.rst:10
+msgid "Session files use the ``.mbps.gz`` extension and are gzip-compressed YAML. Only user-visible tags are stored; internal tags are excluded."
+msgstr ""
+"会话文件使用 ``.mbps.gz`` 扩展名，并使用 gzip 压缩的 YAML 格式。仅存储用户可"
+"见的标签；内部标签被排除。"
+
+#: ../../usage/sessions.rst:14
+msgid "File menu actions"
+msgstr "文件菜单操作"
+
+#: ../../usage/sessions.rst:16
+msgid "The following actions are available under the :menuselection:`File` menu:"
+msgstr "以下操作可在 :menuselection:`文件` 菜单下找到："
+
+#: ../../usage/sessions.rst:18
+msgid ":menuselection:`Load Session…`: Open a session file and restore its state. If there is an active session, Picard will prompt you to save before loading the new one."
+msgstr ""
+":menuselection:`加载会话…`：打开会话文件并恢复其状态。如果存在活动会话，"
+"Picard 将提示您在加载新会话之前保存。"
+
+#: ../../usage/sessions.rst:19
+msgid ":menuselection:`Recent Sessions`: Quickly reopen one of the most recent session files. Use \"Clear Recent Sessions\" to empty the list."
+msgstr ""
+":menuselection:`最近会话`：快速重新打开最近使用的一个会话文件。使用 \"清除最"
+"近会话\" 来清空列表。"
+
+#: ../../usage/sessions.rst:20
+msgid ":menuselection:`Save Session`: Save the current session to the last used file. If none, Picard will prompt for a path."
+msgstr ""
+":menuselection:`保存会话`：将当前会话保存到最后使用的文件。如果没有，Picard "
+"将提示路径。"
+
+#: ../../usage/sessions.rst:21
+msgid ":menuselection:`Save Session As…`: Always prompt for a path. When there is no prior session file, Picard suggests a default filename based on the first detected artist or a timestamp."
+msgstr ""
+":menuselection:`另存为会话…`：始终提示路径。当没有先前的会话文件时，Picard 会"
+"根据第一个检测到的艺术家或时间戳建议默认文件名。"
+
+#: ../../usage/sessions.rst:22
+msgid ":menuselection:`New Session`: Close the current session (clears files, clusters and albums). You will be prompted to save if there is content to preserve."
+msgstr ""
+":menuselection:`新建会话`: 关闭当前会话（清除文件、聚类和专辑）。如果有内容需"
+"要保留，将提示您保存。"
+
+#: ../../usage/sessions.rst:26
+msgid "What gets saved"
+msgstr "保存的内容"
+
+#: ../../usage/sessions.rst:28
+msgid "**File placement**: Unclustered, in clusters, on albums, on specific tracks, and standalone recordings (NAT)."
+msgstr "**文件放置**：未聚类、在聚类中、在专辑上、在特定音轨上和独立的录音（NAT）。"
+
+#: ../../usage/sessions.rst:29
+msgid "**Manual edits (overrides)**: Only your changes versus Picard's base/scripted metadata are stored, not the entire tag set."
+msgstr ""
+"**手动编辑（覆盖）**：仅保存您与 Picard 的基础/脚本元数据的更改，而不是整个标"
+"签集。"
+
+#: ../../usage/sessions.rst:30
+msgid "**Unmatched albums**: Albums loaded into Picard without matched files are preserved."
+msgstr "**未匹配的专辑**：加载到 Picard 但没有匹配文件的专辑将被保留。"
+
+#: ../../usage/sessions.rst:31
+msgid "**UI state**: Album expansion state in the album view."
+msgstr "**UI 状态**：专辑视图中的专辑展开状态。"
+
+#: ../../usage/sessions.rst:32
+msgid "**Core options snapshot**: The current values of Rename Files, Move Files, and Don't Write Tags."
+msgstr "**核心选项快照**：重命名文件、移动文件和不要写入标签的当前值。"
+
+#: ../../usage/sessions.rst:33
+msgid "**Optional MusicBrainz cache**: If enabled in settings, Picard includes release data for loaded albums so sessions can be restored without waiting for online lookups."
+msgstr ""
+"**可选 MusicBrainz 缓存**：如果在设置中启用，Picard 会包含加载的专辑的发行数"
+"据，以便会话可以在不等待在线查找的情况下恢复。"
+
+#: ../../usage/sessions.rst:37
+msgid "Offline and fast restores"
+msgstr "离线和快速恢复"
+
+#: ../../usage/sessions.rst:39
+msgid "To enable fully offline restores, turn on both: - \"Include MusicBrainz data in saved sessions\" - \"Do not make MusicBrainz requests on restore\""
+msgstr ""
+"要启用完全离线恢复，请同时打开：- \"在保存的会话中包含 MusicBrainz 数据\" - "
+"\"恢复时不进行 MusicBrainz 请求\""
+
+#: ../../usage/sessions.rst:43
+msgid "Picard will reconstruct albums from the embedded cache and skip web requests. If an album referenced by the session has no embedded cache and network requests are disabled, that album cannot be loaded and its referenced files will not be auto-matched."
+msgstr ""
+"Picard 将从嵌入的缓存中重建专辑并跳过网络请求。如果会话引用的专辑没有嵌入缓存"
+"并且禁用了网络请求，则该专辑无法加载，其引用的文件将不会自动匹配。"
+
+#: ../../usage/sessions.rst:45
+msgid "With online access, Picard can still preload from the embedded cache and then refresh data from MusicBrainz for accuracy."
+msgstr ""
+"在线访问时，Picard 仍然可以从嵌入的缓存中预加载，然后从 MusicBrainz 刷新数据"
+"以确保准确性。"
+
+#: ../../usage/sessions.rst:49
+msgid "Safe restore of local work"
+msgstr "本地工作的安全恢复"
+
+#: ../../usage/sessions.rst:51
+msgid "If \"No auto-matching on load\" is enabled, Picard will not auto-match files by existing MBIDs during the restore. Files will be placed exactly as saved, and your unsaved edits are preserved and re-applied."
+msgstr ""
+"如果启用了 \"加载时不自动匹配\"，Picard 在恢复期间不会通过现有的 MBIDs 自动匹"
+"配文件。文件将按保存的方式放置，并且您的未保存编辑将被保留并重新应用。"
+
+#: ../../usage/sessions.rst:55
+msgid "Session storage location"
+msgstr "会话存储位置"
+
+#: ../../usage/sessions.rst:57
+msgid "By default, Picard stores sessions in the ``sessions`` subdirectory under your configuration directory. You can set a custom directory in the Advanced / Sessions option settings page. Recent and last-used paths are remembered for convenience."
+msgstr ""
+"默认情况下，Picard 将会话存储在您的配置目录下的 ``sessions`` 子目录中。您可以"
+"在高级 / 会话选项设置页面中设置自定义目录。最近的和最后使用的路径会为了方便而"
+"记住。"
+
+#: ../../usage/sessions.rst:62
+msgid "\"Recent Sessions\" lists up to five items. If a file in the list no longer exists and you select it, Picard will notify you and remove it from the list."
+msgstr ""
+"\"最近会话\" 列表最多显示五项。如果列表中的文件不再存在并且您选择它，Picard "
+"将通知您并将其从列表中删除。"
+
+#: ../../usage/sessions.rst:64
+msgid "\"New Session\" clears the last used session path. After this, \"Save Session\" will prompt for a file (use \"Save Session As…\" to choose a new path at any time)."
+msgstr ""
+"\"新建会话\" 清除最后使用的会话路径。之后，\"保存会话\" 将提示选择文件（随时"
+"使用 \"另存会话为…\" 选择新路径）。"
+
+#: ../../usage/sessions.rst:66
+msgid "Only a small set of core options (Rename/Move/Don't Write Tags) are stored inside the session. All other settings remain global; use \":doc:`Option Profiles <option_profiles>`\" if you need different configurations."
+msgstr ""
+"会话中仅存储少量核心选项（重命名/移动/不写入标签）。所有其他设置保持全局；如"
+"需不同配置，请使用 \":doc:`Option Profiles <option_profiles>`\"。"
+
+#: ../../usage/sessions.rst:70
+msgid "Session files include absolute file paths and your manual tag edits. Please avoid sharing session files unless you are comfortable exposing that information."
+msgstr ""
+"会话文件包含绝对文件路径和手动标签编辑内容。请避免共享会话文件，除非您不介意"
+"泄露该信息。"
+
+#: ../../usage/sessions.rst:74
+msgid "For additional information about sessions settings please see the \":doc:`../config/options_sessions`\" section under Configuration."
+msgstr ""
+"有关会话设置的更多信息，请参阅配置下的 \":doc:`../config/options_sessions`\" "
+"部分。"

@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v2.13.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-25 11:48-0600\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_location/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../config/options_location.rst:4
+msgid ":index:`Location <configuration; cover art location, cover art; location to save>`"
+msgstr ""
+":index:`位置 <configuration; cover art location, cover art; location to save>"
+"`"
+
+#: ../../config/options_location.rst:11
+msgid "**Embed cover images into tags**"
+msgstr "**将封面图片嵌入标签**"
+
+#: ../../config/options_location.rst:13
+msgid "Enables images to be embedded directly into your music files. While this will use more storage space than storing it as a separate image file in the same directory, some music players will only display embedded images and don't find the separate files."
+msgstr ""
+"启用图片直接嵌入到您的音乐文件中。虽然这比将图片作为同一目录中的单独图片文件"
+"存储占用更多存储空间，但某些音乐播放器只会显示嵌入的图片，并且找不到单独的文"
+"件。"
+
+#: ../../config/options_location.rst:15
+msgid "**Embed only a single front image**"
+msgstr "**仅嵌入单个正面图片**"
+
+#: ../../config/options_location.rst:17
+msgid "Embeds only a single front image into your music files. No other images, regardless of their type, will be embedded. Many music players will only display a single embedded image, so embedding additional images may not add any functionality."
+msgstr ""
+"仅将单个正面图片嵌入到您的音乐文件中。不会嵌入其他任何类型的图片。许多音乐播"
+"放器只会显示单个嵌入的图片，因此嵌入附加图片可能不会增加任何功能。"
+
+#: ../../config/options_location.rst:21
+msgid "**Save cover images as separate files**"
+msgstr "**将封面图片保存为单独文件**"
+
+#: ../../config/options_location.rst:23
+msgid "In the file name mask you can use any variable or function from :doc:`Picard Tags <../variables/variables>` and :doc:`Picard Scripting Functions <../functions/list_by_type>`. The mask should not contain a file extension; this is added automatically based on the actual image type. The default value is \"cover\". If you change this to \"folder\", Windows will display the image as a preview of the containing directory."
+msgstr ""
+"在文件名掩码中，您可以使用 :doc:`Picard Tags <../variables/variables>` 和 "
+":doc:`Picard Scripting Functions <../functions/list_by_type>` 中的任何变量或"
+"函数。掩码不应包含文件扩展名；这会根据实际图片类型自动添加。默认值是 "
+"\"cover\"。如果您将其更改为 \"folder\"，Windows 将将其显示为包含目录的预览。"
+
+#: ../../config/options_location.rst:25
+msgid "In addition to scripting variables already available for a track, you can use the following cover art specific variables:"
+msgstr "除了已经可用于音轨的脚本变量之外，您还可以使用以下封面艺术特定变量："
+
+#: ../../config/options_location.rst:27
+msgid "``coverart_maintype``: The primary type (e.g.: front, medium, booklet). For front images this will always be \"front\"."
+msgstr ""
+"``coverart_maintype``: 主要类型（例如：front、medium、booklet）。对于正面图片"
+"，这将始终是 \"front\"。"
+
+#: ../../config/options_location.rst:28
+msgid "``coverart_types``: Full list of all types assigned to this image."
+msgstr "``coverart_types``: 分配到此图片的所有类型的完整列表。"
+
+#: ../../config/options_location.rst:29
+msgid "``coverart_comment``: The cover art comment."
+msgstr "``coverart_comment``: 封面艺术评论。"
+
+#: ../../config/options_location.rst:31
+msgid "For example, specifying a file naming mask such as:"
+msgstr "例如，指定如下文件名掩码："
+
+#: ../../config/options_location.rst:37
+msgid "will preface the file name with the album artist, original release year and album title."
+msgstr "将预先添加专辑艺术家、原始发行年份和专辑标题到文件名前。"
+
+#: ../../config/options_location.rst:39
+msgid "You can also have Picard save the images to a subdirectory by including this in the file naming mask. For example:"
+msgstr ""
+"您也可以通过在文件命名掩码中包含此内容，让 Picard 将图片保存到子目录中。例如"
+"："
+
+#: ../../config/options_location.rst:45
+msgid "which will place the images in a subdirectory called \"Artwork\"."
+msgstr "这将在名为 \"Artwork\" 的子目录中放置图片。"
+
+#: ../../config/options_location.rst:47
+msgid "**Overwrite the file if it already exists**"
+msgstr "**如果文件已存在，则覆盖文件**"
+
+#: ../../config/options_location.rst:49
+msgid "Check this to replace existing files. This is especially recommended if trying to write \"folder\" previews for Windows."
+msgstr ""
+"选中此项以替换现有文件。如果尝试为 Windows 写入 \"folder\" 预览，则特别推荐此"
+"设置。"
+
+#: ../../config/options_location.rst:51
+msgid "**Save only a single front image as separate file**"
+msgstr "**仅将单个正面图片保存为单独文件**"
+
+#: ../../config/options_location.rst:53
+msgid "This tells Picard to only save the first \"front\" image to a separate file with the release. No other \"front\" images or images of any other type will be saved. If left unchecked, all \"front\" images will be saved as separate files, along with any other specified image types to be downloaded."
+msgstr ""
+"这告诉 Picard 仅将第一个 \"front\" 图片与发行品一起保存为单独文件。没有其他 "
+"\"front\" 图片或任何其他类型的图片将被保存。如果未选中，所有 \"front\" 图片以"
+"及任何其他指定的要下载的图片类型都将被保存为单独文件。"
+
+#: ../../config/options_location.rst:55
+msgid "**Always use the primary image type as the file name for non-front images**"
+msgstr "**始终使用主要图片类型作为非正面图片的文件名**"
+
+#: ../../config/options_location.rst:57
+msgid "This setting changes how Picard names image files **other than front images**."
+msgstr "此设置更改 Picard 为图片文件命名的方式 **除了正面图片之外**。"
+
+#: ../../config/options_location.rst:59
+msgid "When checked, Picard will use the type of the image (e.g.: back, booklet, etc.) as the filename when saving, as long as the type is not front. If the image has been assigned multiple types, then the first type will be used. For example, if the image is of types \"back\" and \"raw\", then \"back\" will be used for the filename. If unchecked or if the image is of type \"front\", Picard will use the file name specified in the \"Use the following file name for images\" setting."
+msgstr ""
+"选中时，Picard 在保存时将使用图片的类型（例如：背面、封套等）作为文件名，前提"
+"是类型不是 front。如果图片已分配多个类型，则将使用第一个类型。例如，如果图片"
+"的类型是 \"back\" 和 \"raw\"，则 \"back\" 将用于文件名。如果未选中或如果图片"
+"的类型是 \"front\"，Picard 将使用 \"Use the following file name for images\" "
+"设置中指定的文件名。"

@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/workflowsworkflow_cd/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../workflows/workflow_cd.rst:4
+msgid ":index:`When the CD is available <workflows; cd>`"
+msgstr ":index:`当 CD 可用时 <workflows; cd>`"
+
+#: ../../workflows/workflow_cd.rst:6
+msgid "This is perhaps the best case scenario, because it provides the greatest chance of tagging your music files with the most accurate match from the MusicBrainz database. It is also one of the easier methods for looking up the release."
+msgstr ""
+"这可能是最佳情况，因为它提供了从 MusicBrainz 数据库中获取最准确匹配的最大机会"
+"来标记你的音乐文件。这也是查找发行品的一种较简单的方法。"
+
+#: ../../workflows/workflow_cd.rst:8
+msgid "**1. Rip the CD to music files**"
+msgstr "**1. 将 CD 烧录为音乐文件**"
+
+#: ../../workflows/workflow_cd.rst:10
+msgid "Extract the music filed from the CD using your favorite ripping program (e.g.: `Exact Audio Copy <http://exactaudiocopy.de/>`_ for Windows, `X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/index_e.html>`_ for macOS, or `Whipper <https://github.com/whipper-team/whipper>`_ for Linux). The format for the output files depends on your personal preference and the formats supported by your player. A popular format is FLAC, which is a compressed lossless format."
+msgstr ""
+"使用你最喜欢的烧录程序（例如：`Exact Audio Copy <http://exactaudiocopy.de/>"
+"`_ 对于 Windows，`X Lossless Decoder (XLD) <https://tmkk.undo.jp/xld/"
+"index_e.html>`_ 对于 macOS，或 `Whipper <https://github.com/whipper-team/"
+"whipper>`_ 对于 Linux）从 CD 中提取音乐文件。输出文件的格式取决于你的个人偏好"
+"以及你的播放器支持的格式。一种流行的格式是 FLAC，它是一种有损压缩格式。"
+
+#: ../../workflows/workflow_cd.rst:13
+msgid "**2. Lookup the CD on MusicBrainz**"
+msgstr "**2. 在 MusicBrainz 上查找 CD**"
+
+#: ../../workflows/workflow_cd.rst:15
+msgid "With the CD in the drive, it can be looked up automatically using the :menuselection:`\"Tools --> Lookup CD\"` command. See the :doc:`../usage/retrieve_lookup_cd` section for detailed instructions."
+msgstr ""
+"将 CD 放入驱动器后，可以使用 :menuselection:`\"工具 --> 查找 CD\"` 命令自动查"
+"找。详见 :doc:`../usage/retrieve_lookup_cd` 部分。"
+
+#: ../../workflows/workflow_cd.rst:18
+msgid "**3. Select the correct release**"
+msgstr "**3. 选择正确的发行品**"
+
+#: ../../workflows/workflow_cd.rst:20
+msgid "A list of all releases matching the toc of the CD will be displayed for selection, with an option to submit the disc id if none of the releases are a match to your CD. Before proceeding, please check to ensure that the release you select properly matches your CD (e.g.: release country, date and label, catalog number, barcode, media type, and cover art). This is especially important if you are going to submit any information such as acoustic features to AcousticBrainz or AcoustID fingerprints."
+msgstr ""
+"将显示所有与 CD 表目录匹配的发行品列表供选择，如果没有任何发行品与您的 CD 匹"
+"配，则提供提交光盘 ID 的选项。在继续之前，请检查您选择的发行品是否正确匹配您"
+"的 CD（例如：发行国家、日期和唱片公司、 catalog number、条形码、媒体类型和封"
+"面图片）。如果您打算向 AcousticBrainz 或 AcoustID 指纹提交任何信息（如声学特"
+"征），这一点尤其重要。"
+
+#: ../../workflows/workflow_cd.rst:25
+msgid "**4. Load the files**"
+msgstr "**4. 加载文件**"
+
+#: ../../workflows/workflow_cd.rst:27
+msgid "Drag the files or folder from the browser to the \"Unclustered Files\" section in the left-hand pane. You do not need to scan or cluster them."
+msgstr ""
+"将文件或文件夹从浏览器拖放到左侧窗格中的\"未聚类文件\"部分。您无需扫描或聚类"
+"它们。"
+
+#: ../../workflows/workflow_cd.rst:30
+msgid "**5. Match the files to the tracks on the release**"
+msgstr "**5. 将文件与发行品上的音轨匹配**"
+
+#: ../../workflows/workflow_cd.rst:32
+msgid "Drag the files from the left-hand pane and drop them on the release in the right-hand pane. Check that each track on the release is associated with only one file. The release icon should turn gold. See the :doc:`../usage/match` section for details."
+msgstr ""
+"将左侧窗格中的文件拖放到右侧窗格中的发行品上。请检查发行品上的每个音轨是否只"
+"与一个文件关联。发行品图标应变为金色。请参阅 :doc:`../usage/match` 部分了解详"
+"情。"
+
+#: ../../workflows/workflow_cd.rst:35
+msgid "**6. Verify the metadata and cover art**"
+msgstr "**6. 验证元数据和封面图片**"
+
+#: ../../workflows/workflow_cd.rst:37
+msgid "Check that the metadata and cover art image for the release and tracks are what you want. Adjust if required. See the :doc:`../usage/coverart` section for details."
+msgstr ""
+"确认发行品和音轨的元数据和封面图片是你想要的样子。如有需要，请进行调整。详见 "
+":doc:`../usage/coverart` 部分。"
+
+#: ../../workflows/workflow_cd.rst:40
+msgid "**7. Save the files**"
+msgstr "**7. 保存文件**"
+
+#: ../../workflows/workflow_cd.rst:42
+msgid "Save the files using the :menuselection:`\"File --> Save\"` command. See the :doc:`../usage/save` section for details."
+msgstr ""
+"使用 :menuselection:`\"文件 --> 保存\"` 命令保存文件。详见 :doc:`../usage/"
+"save` 部分。"
+
+#: ../../workflows/workflow_cd.rst:45
+msgid "**8. Calculate and submit AcoustID fingerprints**"
+msgstr "**8. 计算并提交 AcoustID 指纹**"
+
+#: ../../workflows/workflow_cd.rst:47
+msgid ":index:`This step is optional <acoustic fingerprint; submitting>`, but appreciated because it will help identify the files for others to look up for tagging."
+msgstr ""
+":index:`此步骤是 <acoustic fingerprint; submitting> 可选的，但很受欢迎，因为"
+"它将帮助其他人识别文件以进行标签处理。`"
+
+#: ../../workflows/workflow_cd.rst:49
+msgid "Select the album entry in the right-hand pane and calculate the AcoustID fingerprints using :menuselection:`\"Tools --> Generate AcoustID Fingerprints\"`. Once the fingerprints have been calculated, submit them using :menuselection:`\"Files --> Submit AcoustIDs\"`."
+msgstr ""
+"在右侧面板中选择专辑条目，使用 :menuselection:`\"工具 --> 生成 AcoustID 指"
+"纹\"` 计算AcoustID 指纹。计算完成后，使用 :menuselection:`\"文件 --> 提交 "
+"AcoustIDs\"` 提交它们。"
+
+#: ../../workflows/workflow_cd.rst:53
+msgid "AcoustID fingerprints should only be submitted after the files have been tagged with MusicBrainz metadata, and you have verified that the files have been matched to the correct track on the proper release."
+msgstr ""
+"AcoustID 指纹只能在文件使用 MusicBrainz 元数据标签后提交，并且您已验证文件已"
+"正确匹配到正确的发行品上的正确音轨。"

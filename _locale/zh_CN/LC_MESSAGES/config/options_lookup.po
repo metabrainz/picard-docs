@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-11 08:35-0600\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_lookup/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../config/options_lookup.rst:4
+msgid ":index:`Lookup Options <configuration; lookup options>`"
+msgstr ":index:`查找选项 <configuration; lookup options>`"
+
+#: ../../config/options_lookup.rst:17
+msgid "**Automatically scan all new files**"
+msgstr "**自动扫描所有新文件**"
+
+#: ../../config/options_lookup.rst:19
+msgid "Check this box if you want Picard to scan each music file you add and look for an :index:`AcoustID <pair: AcoustID; automatic scan>` fingerprint. This takes time, but may be helpful for you and MusicBrainz. Leave it unchecked if you don't want Picard to do this scan automatically. In any case, you can direct Picard to scan a particular music file at any time using :menuselection:`\"Tools --> Scan\"`. See also :ref:`Scan Files <ref_scan_files>` and :ref:`ref_tutorial_acoustid`."
+msgstr ""
+"如果您希望 Picard 扫描您添加的每个音乐文件并查找 :index:`AcoustID <pair: "
+"AcoustID; automatic scan>` 指纹，请选中此框。这需要时间，但可能对您和 "
+"MusicBrainz 有帮助。如果您不希望 Picard 自动执行此扫描，请取消选中。无论如何"
+"，您都可以随时使用 :menuselection:`\"工具 --> 扫描\"` 指导 Picard 扫描特定的"
+"音乐文件。另见 :ref:`Scan Files <ref_scan_files>` 和 "
+":ref:`ref_tutorial_acoustid`。"
+
+#: ../../config/options_lookup.rst:21
+msgid "**Automatically cluster all new files**"
+msgstr "**自动对所有新文件进行聚类**"
+
+#: ../../config/options_lookup.rst:23
+msgid "Check this box if you want Picard to automatically group all loaded files into album :index:`clusters <pair: cluster; automatic clustering>`. Leave it unchecked if you don't want Picard to do this automatically. In any case, you can direct Picard to cluster files any time using :menuselection:`\"Tools --> Cluster\"`. See also :ref:`Lookup Files <ref_lookup_files>`."
+msgstr ""
+"如果希望 Picard 自动将所有加载的文件聚类到发行品 :index:`聚类 <pair: "
+"cluster; automatic clustering>` 中，请勾选此框。如果不希望 Picard 自动执行此"
+"操作，请取消勾选。无论如何，您都可以随时使用 :menuselection:`\"工具 --> 聚"
+"类`\" 指令让 Picard 聚类文件。另见 :ref:`Lookup Files <ref_lookup_files>`。"
+
+#: ../../config/options_lookup.rst:27
+msgid "You can either enable \"Automatically scan all new files\" or \"Automatically cluster all new files\", but not both."
+msgstr ""
+"您可以启用 \"自动扫描所有新文件\" 或 \"自动聚类所有新文件\"，但不能同时启用两"
+"者。"
+
+#: ../../config/options_lookup.rst:29
+msgid "**Ignore MBIDs when loading new files**"
+msgstr "**加载新文件时忽略 MBIDs**"
+
+#: ../../config/options_lookup.rst:31
+msgid "If you enable this option Picard will not use MusicBrainz identifiers (MBIDs) stored in the files to automatically load the corresponding MusicBrainz release and match the loaded file to the correct track. Leaving this option disabled is useful when re-processing files that have been previously tagged with incorrect information."
+msgstr ""
+"如果启用此选项，Picard 将不会使用文件中存储的 MusicBrainz 标识符 (MBIDs) 来自"
+"动加载相应的 MusicBrainz 发行品，并将加载的文件匹配到正确的音轨。禁用此选项适"
+"用于重新处理之前被错误标记的文件。"
+
+#: ../../config/options_lookup.rst:33
+msgid "**Maximum number of entities to return per MusicBrainz query**"
+msgstr "**每个 MusicBrainz 查询返回的最大实体数量**"
+
+#: ../../config/options_lookup.rst:35
+msgid "This sets the maximum number of results returned for queries made to the MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and earlier, this value was fixed at a maximum of 25 responses."
+msgstr ""
+"此设置用于指定向 MusicBrainz 网站发起查询时返回的最大结果数量。默认值为 50 个"
+"结果。在 Picard v2.8.1 及更早版本中，此值被固定为最多 25 条响应。"
+
+#: ../../config/options_lookup.rst:37
+msgid "**Use builtin search rather than looking in browser**"
+msgstr "**使用内置搜索而非浏览器搜索**"
+
+#: ../../config/options_lookup.rst:39
+msgid "If you enable this option, Picard will use its own search system rather than using the browser for searching the MusicBrainz database."
+msgstr ""
+"如果启用此选项，Picard 将使用自己的搜索系统而非浏览器来搜索 MusicBrainz 数据"
+"库。"
+
+#: ../../config/options_lookup.rst:41
+msgid "**Use advanced query syntax**"
+msgstr "**使用高级查询语法**"
+
+#: ../../config/options_lookup.rst:43
+msgid "When this option is enabled, searches will be performed using the advanced query syntax rather than the simple query syntax."
+msgstr "当此选项启用时，将使用高级查询语法而非简单查询语法进行搜索。"

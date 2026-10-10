@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-14 09:22-0600\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/extendingplugins/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../extending/plugins.rst:4
+msgid ":index:`Plugins <plugins>`"
+msgstr ":index:`插件 <plugins>`"
+
+#: ../../extending/plugins.rst:6
+msgid "Plugins are written in Python, and are registered to the appropriate hooks. Each plugin has its own version identifier, but also lists the plugin API versions that it supports. When loading a plugin, Picard first compares its list of API versions to the plugin's supported versions to ensure that the plugin will operate correctly. The Picard API versions indicate the version of the program in which the plugin API was last updated and any plugin APIs with which it is backwards compatible."
+msgstr ""
+"插件是用 Python 编写的，并注册到相应的钩子。每个插件都有自己的版本标识符，但"
+"也列出了它支持的插件 API 版本。当加载插件时，Picard 首先将其 API 版本列表与插"
+"件支持的版本进行比较，以确保插件可以正常运行。Picard API 版本指示插件 API 最"
+"后更新的程序版本以及它与任何向后兼容的插件 API。"
+
+#: ../../extending/plugins.rst:8
+msgid "Hooks are connections to the various objects in Picard that call a specific type of plugin. During the normal running of Picard, when it encounters a hook it will first retrieve a list of all plugins registered for that specific hook, and then execute them sequentially in order based upon the priority specified when the plugin was registered to the hook."
+msgstr ""
+"钩子是连接到 Picard 中各种对象的连接，这些对象调用特定类型的插件。在 Picard "
+"正常运行时，当它遇到钩子时，它会首先检索所有注册到该特定钩子的插件列表，然后"
+"根据插件注册到钩子时指定的优先级按顺序执行它们。"
+
+#: ../../extending/plugins.rst:10
+msgid "There are a few different :index:`types of plugins <plugins; types>`, including:"
+msgstr "有几种不同的 :index:`插件类型 <plugins; types>`，包括："
+
+#: ../../extending/plugins.rst:12
+msgid "**Metadata processors**: These plugins can access and modify the metadata when it is loaded from MusicBrainz. They are registered with ``register_album_metadata_processor()`` or ``register_track_metadata_processor()``. These are what you might call \"automatic\" because they operate without any user intervention. An example is the Classical Extras plugin."
+msgstr ""
+"**元数据处理插件**: 这些插件可以在元数据从 MusicBrainz 加载时访问和修改元数据"
+"。它们使用 ``register_album_metadata_processor()`` 或 "
+"``register_track_metadata_processor()`` 注册。这些可以称为 \"自动\"，因为它们"
+"在没有任何用户干预的情况下运行。例如 Classical Extras 插件。"
+
+#: ../../extending/plugins.rst:14
+msgid "**Cover art providers**: These plugins provide another cover art source, and are registered with ``register_cover_art_provider()``. They are also \"automatic\" in that they load album art without user intervention, although they must be enabled by the user in the Cover Art options. The Fanart.tv plugin is an example."
+msgstr ""
+"**封面图片提供插件**: 这些插件提供另一个封面图片来源，并使用 "
+"``register_cover_art_provider()`` 注册。它们也是 \"自动\" 的，因为它们在没有"
+"任何用户干预的情况下加载专辑艺术，尽管它们必须在封面图片选项中由用户启用。"
+"Fanart.tv 插件是一个例子。"
+
+#: ../../extending/plugins.rst:16
+msgid "**Cover art filters**: These plugins can filter cover art images, either based on image metadata before download using ``register_cover_art_metadata_filter()`` or based on actual image content using ``register_cover_art_filter()``."
+msgstr ""
+"**封面图片过滤插件**: 这些插件可以过滤封面图片，要么基于使用 "
+"``register_cover_art_metadata_filter()`` 在下载前基于图片元数据，要么基于实际"
+"图片内容使用 ``register_cover_art_filter()``。"
+
+#: ../../extending/plugins.rst:18
+msgid "**Cover art processors**: These plugins can process and transform cover art images (e.g. resize, crop, or convert). They are registered with ``register_cover_art_processor()``."
+msgstr ""
+"**封面图片处理插件**: 这些插件可以处理和转换封面图片（例如调整大小、裁剪或转"
+"换）。它们使用 ``register_cover_art_processor()`` 注册。"
+
+#: ../../extending/plugins.rst:20
+msgid "**Scripting functions**: Some plugins provide additional scripting functions for use in :menuselection:`\"Options --> Scripting\"` or the renaming script. These are registered with ``register_script_function()``. Keep tag, which provides the ``$keep()`` function, is an example."
+msgstr ""
+"**脚本函数**: 一些插件为 :menuselection:`\"选项 --> 脚本\"` 或重命名脚本提供"
+"额外的脚本函数。它们使用 ``register_script_function()`` 注册。Keep tag，它提"
+"供 ``$keep()`` 函数，是一个例子。"
+
+#: ../../extending/plugins.rst:22
+msgid "**Script variables**: Plugins can register custom script variables that will be available for autocompletion in the scripting editor. These are registered with ``register_script_variable()``."
+msgstr ""
+"**脚本变量**: 插件可以注册自定义脚本变量，这些变量将在脚本编辑器中可用以自动"
+"完成。它们使用 ``register_script_variable()`` 注册。"
+
+#: ../../extending/plugins.rst:24
+msgid "**Context menu actions**: Plugins can register actions that can be activated manually via the context menu. This is what the Load as non-album track plugin does. Another example is Generate Cuesheet. These are registered with ``register_album_action()``, ``register_track_action()``, ``register_file_action()``, ``register_cluster_action()`` or ``register_clusterlist_action()``."
+msgstr ""
+"**上下文菜单操作**: 插件可以注册可以通过上下文菜单手动激活的操作。这就是 "
+"Load as non-album track 插件所做的事情。另一个例子是 Generate Cuesheet。它们"
+"使用 ``register_album_action()``, ``register_track_action()``, "
+"``register_file_action()``, ``register_cluster_action()`` 或 "
+"``register_clusterlist_action()`` 注册。"
+
+#: ../../extending/plugins.rst:26
+msgid "**Tools menu actions**: Plugins can add items to the Tools menu using ``register_tools_menu_action()``."
+msgstr ""
+"**工具菜单操作**: 插件可以使用 ``register_tools_menu_action()`` 向工具菜单添"
+"加项目。"
+
+#: ../../extending/plugins.rst:28
+msgid "**File formats**: Plugins can provide support for new file formats not yet supported by Picard. These are registered with ``register_format()``."
+msgstr ""
+"**文件格式**: 插件可以提供 Picard 尚未支持的新的文件格式支持。它们使用 "
+"``register_format()`` 注册。"
+
+#: ../../extending/plugins.rst:30
+msgid "**Disc log readers**: Plugins can add support for parsing additional disc ripper log formats. These are registered with ``register_disc_log_reader()``."
+msgstr ""
+"**光盘日志读取器**: 插件可以添加对其他光盘刻录器日志格式的解析支持。这些通过 "
+"``register_disc_log_reader()`` 注册。"
+
+#: ../../extending/plugins.rst:32
+msgid "**Options pages**: Plugins can add custom pages to Picard's options dialog for their own configuration settings. These are registered with ``register_options_page()``."
+msgstr ""
+"**选项页面**: 插件可以向 Picard 的选项对话框添加自定义页面以配置其自身的设置"
+"。这些通过 ``register_options_page()`` 注册。"
+
+#: ../../extending/plugins.rst:34
+msgid "**Event processors**: Plugins can execute automatically based on certain event triggers. These are registered with ``register_file_post_load_processor()``, ``register_file_pre_save_processor()``, ``register_file_post_save_processor()``, ``register_file_post_addition_to_track_processor()``, ``register_file_post_removal_from_track_processor()`` or ``register_album_post_removal_processor()``."
+msgstr ""
+"**事件处理器**: 插件可以根据特定的事件触发器自动执行。这些通过 "
+"``register_file_post_load_processor()``、``register_file_pre_save_processor()"
+"``、``register_file_post_save_processor()"
+"``、``register_file_post_addition_to_track_processor()"
+"``、``register_file_post_removal_from_track_processor()`` 或 "
+"``register_album_post_removal_processor()`` 注册。"
+
+#: ../../extending/plugins.rst:36
+msgid "Note that plugins are not limited to one of those areas. A single plugin could implement all of the above, but most existing plugins focus on one."
+msgstr ""
+"请注意，插件不限于上述一个领域。单个插件可以实现所有上述功能，但大多数现有插"
+"件专注于一个。"
+
+#: ../../extending/plugins.rst:40
+msgid "For more information regarding the plugin system, please see the `Picard Plugin V3 Documentation <https://github.com/metabrainz/picard/blob/master/docs/PLUGINSV3/README.md>`_ items in the Picard repository on GitHub. There is also a list of the `available plugins <https://picard.musicbrainz.org/plugins/>`_ that have been submitted to the MusicBrainz Picard repository shown on the Picard website."
+msgstr ""
+"有关插件系统的更多信息，请参阅 GitHub 上 Picard 存储库中的 `Picard Plugin V3 "
+"Documentation <https://github.com/metabrainz/picard/blob/master/docs/"
+"PLUGINSV3/README.md>`_ 项目。Picard 网站上也显示了已提交到 MusicBrainz "
+"Picard 存储库的 `可用插件 <https://picard.musicbrainz.org/plugins/>`_ 列表。"

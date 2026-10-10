@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/getting_startedstarting/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../getting_started/starting.rst:4
+msgid ":index:`Starting Picard <starting>`"
+msgstr ":index:`启动 Picard <starting>`"
+
+#: ../../getting_started/starting.rst:6
+msgid "Once Picard has been installed on your system, most of the time you will be starting it by clicking an icon on your desktop or in a start menu. This will run the program using the default location for the configuration file and configured logging level. Picard can also be started from a command line prompt with some overrides available. From the command line, you can also specify files or directories to load into Picard for processing. Please see :doc:`../appendices/command_line` for more details about the available options."
+msgstr ""
+"一旦 Picard 安装在你的系统上，大多数情况下，你将通过点击桌面上的图标或在开始"
+"菜单中启动它。这将使用配置文件的默认位置和配置的日志级别运行程序。Picard 也可"
+"以从命令行提示符启动，并提供一些覆盖选项。从命令行，你还可以指定要加载到 "
+"Picard 进行处理的文件或目录。请参阅 :doc:`../appendices/command_line` 获取有"
+"关可用选项的更多详细信息。"
+
+#: ../../getting_started/starting.rst:8
+msgid "As of version 2.9, Picard will try to only run a single instance of the program at a time. When the program is started, it checks to see if there is another instance of that version, configuration file and plugin startup status ``-P`` already running. If the same version is already running, any files or directories specified on the command line of the new instance, along with any executable commands specified with the ``-e`` or ``--exec`` options will be passed to the already running instance for processing and the new duplicate instance will be shut down. This allows batch processing of files to be initiated automatically from other processes. If there is no instance of that version already running, Picard will start normally."
+msgstr ""
+"自版本 2.9 起，Picard 将尝试每次只运行一个程序实例。当程序启动时，它会检查是"
+"否已有另一个相同版本、配置文件和插件启动状态 ``-P`` 的实例正在运行。如果相同"
+"版本已经运行，新实例命令行中指定的任何文件或目录，以及使用 ``-e`` 或 ``--"
+"exec`` 选项指定的任何可执行命令将被传递给正在运行的实例进行处理，新的重复实例"
+"将被关闭。这允许从其他进程自动启动文件的批量处理。如果该版本的实例尚未运行，"
+"Picard 将正常启动。"
+
+#: ../../getting_started/starting.rst:10
+msgid "Additionally, Picard can be started in \"stand-alone\" mode, in which case it neither sends information to an already running instance nor accepts information from another instance."
+msgstr ""
+"此外，Picard 可以在 \"独立\" 模式下启动，在这种情况下，它既不会向已运行的实例"
+"发送信息，也不会接受来自另一个实例的信息。"
+
+#: ../../getting_started/starting.rst:12
+msgid "Instances started with command-line argument ``-s / --stand-alone`` always start as stand-alone."
+msgstr "使用命令行参数 ``-s / --stand-alone`` 启动的实例始终以独立模式启动。"
+
+#: ../../getting_started/starting.rst:14
+msgid "If there is already an instance running when another instance is started that doesn't result in a stand-alone instance, any of the command-line overrides ``-d / --debug``, ``-M / --no-player`` or ``-N / --no-restore`` of the new duplicate instance will be ignored, and only the specified files or directories and executable commands (if any) will be passed to the running instance for processing. Similarly, if a primary instance has been started with any of these overrides specified on the command line, starting a subsequent instance of that version without the override will not modify the user interface settings of the currently running instance."
+msgstr ""
+"当启动另一个实例而没有导致独立实例时，如果新重复实例的命令行覆盖 ``-d / --"
+"debug``、``-M / --no-player`` 或 ``-N / --no-restore`` 中的任何一个，则这些覆"
+"盖将被忽略，并且仅将指定的文件或目录和可执行命令（如果有）传递给正在运行的实"
+"例进行处理。类似地，如果主要实例在命令行上指定了这些覆盖中的任何一个，则启动"
+"该版本的后续实例而不带覆盖将不会修改当前运行实例的用户界面设置。"
+
+#: ../../getting_started/starting.rst:16
+msgid "All instances started with the ``-h / --help``, ``-v / --version`` or ``-V / --long-version`` command line arguments will always output the requested product information and exit, regardless of whether or not another instance is running."
+msgstr ""
+"所有使用 ``-h / --help``、``-v / --version`` 或 ``-V / --long-version`` 命令"
+"行参数启动的实例始终输出请求的产品信息并退出，无论是否还有其他实例正在运行。"
+
+#: ../../getting_started/starting.rst:18
+msgid "Please refer to the :doc:`../usage/command_processing` section for more information."
+msgstr "请参阅 :doc:`../usage/command_processing` 部分以获取更多信息。"

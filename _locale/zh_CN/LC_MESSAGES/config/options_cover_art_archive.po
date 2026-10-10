@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-24 12:16-0700\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/"
+"configoptions_cover_art_archive/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../config/options_cover_art_archive.rst:4
+msgid ":index:`Cover Art Archive <pair: configuration; cover art archive>`"
+msgstr ":index:`封面图片存档 <pair: configuration; cover art archive>`"
+
+#: ../../config/options_cover_art_archive.rst:6
+msgid "In this section you can decide which types of cover art you would like to download from the Cover Art Archive, and what quality (size) you want to download. Obviously, the better the quality, the larger the size of the files."
+msgstr ""
+"在此部分，您可以决定从封面图片存档下载哪些类型的封面图片，以及您想要下载的质"
+"量（大小）。显然，质量越好，文件大小就越大。"
+
+#: ../../config/options_cover_art_archive.rst:19
+msgid "**Download only selected image types**"
+msgstr "**仅下载选定图片类型**"
+
+#: ../../config/options_cover_art_archive.rst:21
+msgid "When selecting the cover art image types, you can select the types to both include and exclude from the download list. CAA images with an image type found in the \"Include\" list will be downloaded and used unless they also have an image type found in the \"Exclude\" list. Images with types found in the \"Exclude\" list will never be used. Image types not appearing in either the \"Include\" or \"Exclude\" lists will not be considered when determining whether or not to download and use a CAA image."
+msgstr ""
+"在选择封面图片类型时，您可以同时选择要包含和排除在下载列表中的类型。如果在“包"
+"含”列表中找到图片类型，则 CAA 图片将被下载和使用，除非它们在“排除”列表中也找"
+"到图片类型。在“排除”列表中找到类型的图片将永远不会被使用。在“包含”或“排除”列"
+"表中未出现的图片类型在确定是否下载和使用 CAA 图片时不会被考虑。"
+
+#: ../../config/options_cover_art_archive.rst:23
+msgid "Most music players will display only one piece of cover art for the album, and most people select Front (cover) for that."
+msgstr ""
+"大多数音乐播放器只会为专辑显示一个封面图片，而大多数人会为它选择正面（封面）"
+"。"
+
+#: ../../config/options_cover_art_archive.rst:25
+msgid "**Only use images of at most the following size**"
+msgstr "**仅使用以下最大尺寸的图片**"
+
+#: ../../config/options_cover_art_archive.rst:27
+msgid "This identifies what size of image to download from the CAA. The options are 250px, 500px, 1200px amd full size. The fixed sizes are generated automatically from the full size image, provided that it is greater than or equal to the fixed size being generated. The generated images are square and padded as required if the original image is not square."
+msgstr ""
+"此选项用于标识要从 CAA 下载的图片大小。选项有 250px、500px、1200px 和完整大小"
+"。固定尺寸是根据完整尺寸图片自动生成的，前提是完整尺寸大于或等于要生成的固定"
+"尺寸。生成的图片是正方形，如果原始图片不是正方形，则会根据需要添加填充。"
+
+#: ../../config/options_cover_art_archive.rst:31
+msgid "If the selected size is not available, then Picard will use the largest available size below the selected size."
+msgstr "如果选定的尺寸不可用，则 Picard 将使用选定尺寸以下的最大可用尺寸。"
+
+#: ../../config/options_cover_art_archive.rst:33
+msgid "**Download only approved images**"
+msgstr "**仅下载已批准的图片**"
+
+#: ../../config/options_cover_art_archive.rst:35
+msgid "When checked, Picard will only download images that have been approved (i.e.: the edit to add the image has been accepted and applied). To allow using images from pending edits, leave this option unchecked."
+msgstr ""
+"选中此选项时，Picard 将仅下载已批准（即：添加图片的编辑已被接受并应用）的图片"
+"。要允许使用来自待处理编辑的图片，请保持此选项未选中。"
+
+#: ../../config/options_cover_art_archive.rst:39
+msgid "Since Picard 1.3, you can also decide whether or not to use the image from the release group (if any) if no front image is found for the release. In this case, the cover may not match the exact release you are tagging (eg.: a 1979 vinyl front cover may be used in place of the Deluxe 2010 CD reissue)."
+msgstr ""
+"自 Picard 1.3 版本起，您还可以决定如果为发行品找不到正面图片时，是否使用来自"
+"发行组（如果有）的图片。在这种情况下，封面可能无法与您正在标记的精确发行品完"
+"全匹配（例如：1979 年的黑胶唱片封面可能会用于代替 2010 年的豪华 CD 再发行）。"

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:14+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/faqfaq_config/zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../faq/faq_config.rst:4
+msgid ":index:`Configuration <configuration; config file location>`"
+msgstr ":index:`配置 <configuration; config file location>`"
+
+#: ../../faq/faq_config.rst:7
+msgid "Where is the Picard :index:`configuration <configuration; file>` saved?"
+msgstr "Picard 的 :index:`配置 <configuration; file>` 保存在哪里？"
+
+#: ../../faq/faq_config.rst:9
+msgid "Picard saves the configuration in the file :file:`Picard.ini`. Its location depends on the operating system:"
+msgstr "Picard 将配置保存在文件 :file:`Picard.ini` 中。其位置取决于操作系统："
+
+#: ../../faq/faq_config.rst:11
+msgid "**Windows:**"
+msgstr "**Windows:**"
+
+#: ../../faq/faq_config.rst:13
+msgid ":file:`%APPDATA%\\\\MusicBrainz\\\\Picard.ini`"
+msgstr ":file:`%APPDATA%\\\\MusicBrainz\\\\Picard.ini`"
+
+#: ../../faq/faq_config.rst:15
+msgid "This usually will be :file:`C:\\\\Users\\\\\\\\{YourUserName}\\\\AppData\\\\Roaming\\\\MusicBrainz`, where ``YourUserName`` should be replaced with your actual Windows user name."
+msgstr ""
+"这通常将是 :file:`C:\\\\Users\\\\\\\\{YourUserName}\\\\AppData\\\\Roaming\\"
+"\\MusicBrainz`，其中 ``YourUserName`` 应该替换为您的实际 Windows 用户名。"
+
+#: ../../faq/faq_config.rst:17
+msgid "**macOS, Linux and other Unix like systems:**"
+msgstr "**macOS、Linux 和其他类 Unix 系统：**"
+
+#: ../../faq/faq_config.rst:19
+msgid ":file:`$HOME/.config/MusicBrainz/Picard.ini`"
+msgstr ":file:`$HOME/.config/MusicBrainz/Picard.ini`"
+
+#: ../../faq/faq_config.rst:23
+msgid "I tagged a file in Picard, but :index:`iTunes <itunes; tags, tagging; itunes>` is not seeing the tags!"
+msgstr ""
+"我在 Picard 中标记了一个文件，但 :index:`iTunes <itunes; tags, tagging; "
+"itunes>` 没有看到标签！"
+
+#: ../../faq/faq_config.rst:25
+msgid "First, you need to force :index:`iTunes <itunes>` to re-read the information from your tags and update its library. This is discussed in the `iTunes Guide <https://musicbrainz.org/doc/iTunes_Guide>`_."
+msgstr ""
+"首先，您需要强制 :index:`iTunes <itunes>` 重新读取来自标签的信息并更新其库。"
+"这将在 `iTunes 指南 <https://musicbrainz.org/doc/iTunes_Guide>`_ 中讨论。"
+
+#: ../../faq/faq_config.rst:27
+msgid "Additionally, iTunes has a known bug in its ID3v2.4 implementation, which makes it unable to read such tags if they also contain embedded cover art. As a work-around, you can configure Picard to write ID3v2.3 tags."
+msgstr ""
+"此外，iTunes 在其 ID3v2.4 实现中存在一个已知错误，这使得它无法读取也包含嵌入"
+"式封面艺术的此类标签。作为解决方法，您可以配置 Picard 以写入 ID3v2.3 标签。"
+
+#: ../../faq/faq_config.rst:31
+msgid "My tags are :index:`truncated <tags; truncated, WMP; tags>` to 30 characters in Windows Media Player!"
+msgstr ""
+"我的标签在 Windows Media Player 中被 :index:`截断 <tags; truncated, WMP; "
+"tags>` 为 30 个字符！"
+
+#: ../../faq/faq_config.rst:33
+msgid "Picard's default settings write ID3v2.4 and ID3v1 tags to files. Older WMP versions can't read ID3v2.4, so it falls back to ID3v1 which has a limitation of 30 characters per title. To resolve this issue, configure Picard to write ID3v2.3 tags instead."
+msgstr ""
+"Picard 的默认设置将 ID3v2.4 和 ID3v1 标签写入文件。较旧版本的 WMP 无法读取 "
+"ID3v2.4，因此它会回退到 ID3v1，该标签每条标题有 30 个字符的限制。要解决此问题"
+"，请配置 Picard 以改写 ID3v2.3 标签。"
+
+#: ../../faq/faq_config.rst:35
+msgid "Since Windows 10 Creators Update (version 1703) ID3v2.4 is supported and the above issue should no longer apply."
+msgstr "自 Windows 10 创造者更新（版本 1703）起，支持 ID3v2.4，上述问题应不再适用。"
+
+#: ../../faq/faq_config.rst:39
+msgid "How do I tell Picard which :index:`browser <pair: configuration; browser>` to use?"
+msgstr "如何告诉 Picard 使用哪个 :index:`浏览器 <pair: configuration; browser>`？"
+
+#: ../../faq/faq_config.rst:41
+msgid "On Windows, macOS, GNOME and KDE, Picard uses the default browser that has been configured for the system. On other systems, you can use the ``BROWSER`` environment variable."
+msgstr ""
+"在 Windows、macOS、GNOME 和 KDE 上，Picard 使用系统配置的默认浏览器。在其他系"
+"统上，您可以使用 ``BROWSER`` 环境变量。"
+
+#: ../../faq/faq_config.rst:43
+msgid "For example::"
+msgstr "例如："
+
+#: ../../faq/faq_config.rst:47
+msgid "Another approach that works in some GNU/Linux systems is the following command::"
+msgstr "另一种在某些 GNU/Linux 系统中有效的方法是以下命令："
+
+#: ../../faq/faq_config.rst:51
+msgid "This should present you with a list of existing browsers in your system, allowing you to select the one to use by default."
+msgstr "这应会显示您系统中的现有浏览器列表，允许您选择要默认使用的浏览器。"

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# scientists360 <scientists360@outlook.com>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-13 09:00-0600\n"
+"PO-Revision-Date: 2026-10-09 08:13+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/configoptions_advanced/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../config/options_advanced.rst:4
+msgid ":index:`Advanced Options <configuration; advanced options>`"
+msgstr ":index:`高级选项 <configuration; advanced options>`"
+
+#: ../../config/options_advanced.rst:6
+msgid "This provides access to some of the advanced settings for Picard."
+msgstr "这提供了对 Picard 某些高级设置的访问。"
+
+#: ../../config/options_advanced.rst:19
+msgid "**Include sub-folders when adding files from folder**"
+msgstr "**添加文件时包含子文件夹**"
+
+#: ../../config/options_advanced.rst:21
+msgid "If this option is enabled Picard will load all audio files in the selected directory and all its subdirectories. If disabled only audio files in the selected directory will be loaded."
+msgstr ""
+"如果启用此选项，Picard 将加载选定目录及其所有子目录中的所有音频文件。如果禁用"
+"，则仅加载选定目录中的音频文件。"
+
+#: ../../config/options_advanced.rst:23
+msgid "**Ignore hidden files**"
+msgstr "**忽略隐藏文件**"
+
+#: ../../config/options_advanced.rst:25
+msgid "If this option is enabled then hidden files and directories will not be loaded. This also includes any file or subdirectory inside a hidden directory."
+msgstr ""
+"如果启用此选项，则不会加载隐藏文件和目录。这也包括隐藏目录中的任何文件或子目"
+"录。"
+
+#: ../../config/options_advanced.rst:27
+msgid "**Ignore file paths matching the following regular expression**"
+msgstr "**忽略符合以下正则表达式的文件路径**"
+
+#: ../../config/options_advanced.rst:29
+msgid "You can specify patterns for files and directories that Picard should never load. For example, if you set this to the regular expression ``\\.bak$`` any file ending in \".bak\" will be ignored when loading files."
+msgstr ""
+"您可以为文件和目录指定模式，让 Picard 永远不加载。例如，如果您将其设置为正则"
+"表达式 ``\\.bak$``，任何以 \".bak\" 结尾的文件在加载时都会被忽略。"
+
+#: ../../config/options_advanced.rst:31
+msgid "**Test file path matching**"
+msgstr "**测试文件路径匹配**"
+
+#: ../../config/options_advanced.rst:33
+msgid "This area allows you to enter file paths, one per line, to test your regular expression. If a file path is marked in red, it does not match your regular expression and will be loaded. A file path marked green matches your regular expression and will not be loaded."
+msgstr ""
+"此区域允许您逐行输入文件路径，以测试您的正则表达式。如果文件路径标红，则表示"
+"它与您的正则表达式不匹配，并且会被加载。标绿的文件路径表示它与您的正则表达式"
+"匹配，并且不会被加载。"
+
+#: ../../config/options_advanced.rst:37
+msgid "This list of test file paths will be cleared when you exit the configuration section."
+msgstr "当您退出配置区域时，此测试文件路径列表将被清除。"
+
+#: ../../config/options_advanced.rst:45
+msgid "Details: :doc:`options_matching` / :doc:`options_sessions` / :doc:`options_maintenance`"
+msgstr ""
+"详情：:doc:`options_matching` / :doc:`options_sessions` / "
+":doc:`options_maintenance`"

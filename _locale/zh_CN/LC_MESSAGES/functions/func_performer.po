@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, MetaBrainz Foundation.
+# This file is distributed under the same license as the MusicBrainz Picard package.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2026.
+# scientists360 <scientists360@users.noreply.translations.metabrainz.org>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: MusicBrainz Picard v3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"PO-Revision-Date: 2026-10-09 08:15+0000\n"
+"Last-Translator: scientists360 "
+"<scientists360@users.noreply.translations.metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translations.metabrainz.org/projects/picard-docs/functionsfunc_performer/"
+"zh_Hans/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.10\n"
+
+#: ../../functions/func_performer.rst:6
+msgid "$performer"
+msgstr ""
+
+#: ../../functions/func_performer.rst:8
+msgid "Usage: **$performer(pattern[,separator])**"
+msgstr "用法：**$performer(pattern[,separator])**"
+
+#: ../../functions/func_performer.rst:9
+msgid "Category: multi-value"
+msgstr "类别：多值"
+
+#: ../../functions/func_performer.rst:10
+msgid "Implemented: Picard 0.10"
+msgstr "实现：Picard 0.10"
+
+#: ../../functions/func_performer.rst:12
+msgid "**Description:**"
+msgstr "**描述：**"
+
+#: ../../functions/func_performer.rst:14
+msgid "Returns the performers where the performance type matches ``pattern`` separated by ``separator`` (or a comma followed by a space \", \" if not passed). If ``pattern`` is blank, then all performers will be returned. Note that by default the ``pattern`` to be matched is case-sensitive and can appear anywhere in the tag."
+msgstr ""
+"返回表演者，其表演类型匹配 ``pattern``，使用 ``separator`` 分隔（如果未传递，"
+"则使用逗号后跟空格 \", \"）。如果 ``pattern`` 为空，则返回所有表演者。请注意"
+"，默认情况下要匹配的 ``pattern`` 是区分大小写的，并且可以出现在标签的任何位置"
+"。"
+
+#: ../../functions/func_performer.rst:16
+msgid "As of version 2.7, you can explicitly define a regular expression in the form /pattern/flags. The only supported flag is \"i\" (ignore case). For more information about regular expressions, please see the `article on Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_."
+msgstr ""
+"自版本 2.7 起，您可以在形式为 /pattern/flags 中显式定义正则表达式。唯一支持的"
+"标志是 \"i\"（忽略大小写）。有关正则表达式的更多信息，请参阅 `Wikipedia 上的"
+"文章 <https://wikipedia.org/wiki/Regular_expression>`_。"
+
+#: ../../functions/func_performer.rst:20
+msgid "When entering regular expressions into Picard scripts you have to escape a backslash \"\\\\\", dollar sign \"$\", comma \",\" and the left and right parentheses \"(\" and \")\" in order to force Picard to not interpret them as part of the script command. This is done by inserting a backslash before the character to be escaped. For example, the regular expression ``^\\s*([0-9,\\.]*)$`` would have to be entered as ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``."
+msgstr ""
+"在 Picard 脚本中输入正则表达式时，你必须转义反斜杠 \"\\\\\"、美元符号 \"$\"、"
+"逗号 \",\" 以及左右括号 \"(\" 和 \")\"，以强制 Picard 不将它们解释为脚本命令"
+"的一部分。这是通过在要转义的字符前插入一个反斜杠来完成的。例如，正则表达式 "
+"``^\\s*([0-9,\\.]*)$`` 必须输入为 ``^\\\\s*\\([0-9\\,\\\\.]*\\)\\$``。"
+
+#: ../../functions/func_performer.rst:22
+msgid "**Example:**"
+msgstr "**示例：**"
+
+#: ../../functions/func_performer.rst:24
+msgid "With the performer tags as ``performer:guitar`` = \"Ann\", ``performer:rhythm-guitar`` = \"Bob\" and ``performer:drums (drum kit)`` = \"Cindy\", the following statements will return the values indicated:"
+msgstr ""
+"对于表演者标签 ``performer:guitar`` = \"Ann\"、``performer:rhythm-guitar`` = "
+"\"Bob\" 和 ``performer:drums (drum kit)`` = \"Cindy\"，以下语句将返回指示的值"
+"："
