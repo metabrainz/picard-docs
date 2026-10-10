@@ -45,16 +45,16 @@ msgstr "**描述：**"
 msgid "Gets the element at ``index`` from the multi-value variable ``name``. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-value variable."
 msgstr ""
 "从多值变量 ``name`` 中获取 ``index`` 元素。一个表示多值的字面值可以代替 "
-"``name``，使用 ``separator``（如果未传递，则使用分号后跟空格 \"; \"）来强制将"
+"``name``，使用 ``separator`` （如果未传递，则使用分号后跟空格 \"; \"）来强制将"
 "值转换为正确的多值变量。"
 
 #: ../../functions/func_getmulti.rst:16
 msgid "The ``index`` is zero based. If ``index`` is less than 0, then the value used is the number of elements in ``name`` plus ``index`` (e.g.: ``$getmulti(%abcd%,-1)`` is the same as ``$getmulti(%abcd%,3)`` if ``%abcd%`` is a multi-value variable with four elements). If ``index`` is missing, not an integer, a number greater than or equal to the number of elements in ``name``, or a negative number greater than the number of elements in ``name``, then the function will return an empty string."
 msgstr ""
-"``index``是基于零的索引。如果``index``小于 0，则使用的值是``name``中的元素数"
-"量加上``index``（例如：``$getmulti(%abcd%,-1)``与``$getmulti(%abcd%,3)``相同"
-"，如果``%abcd%``是一个具有四个元素的 multi-value 变量）。如果``index``缺失、"
-"不是整数、大于或等于``name``中的元素数量，或是一个小于``name``中元素数量的负"
+"``index`` 是基于零的索引。如果 ``index`` 小于 0，则使用的值是 ``name`` 中的元素数"
+"量加上 ``index`` （例如： ``$getmulti(%abcd%,-1)`` 与 ``$getmulti(%abcd%,3)`` 相同"
+"，如果 ``%abcd%`` 是一个具有四个元素的 multi-value 变量）。如果 ``index`` 缺失、"
+"不是整数、大于或等于 ``name`` 中的元素数量，或是一个小于 ``name`` 中元素数量的负"
 "数，则函数将返回空字符串。"
 
 #: ../../functions/func_getmulti.rst:19

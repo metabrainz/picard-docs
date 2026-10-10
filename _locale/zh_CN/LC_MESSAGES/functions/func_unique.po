@@ -44,11 +44,11 @@ msgstr "**描述：**"
 #: ../../functions/func_unique.rst:14
 msgid "Returns a sorted copy of the multi-value variable ``name`` with duplicate elements removed. By default, the comparison ignores the case of the elements; however, this can be changed by setting ``case_sensitive`` to a non-empty value. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable. If ``name`` is missing ``$unique`` will return an empty string."
 msgstr ""
-"返回一个已排序且重复元素已删除的``name``多值变量的副本。默认情况下，比较会忽"
-"略元素的大小写；但是，可以通过将``case_sensitive``设置为非空值来更改此行为。"
-"可以使用``name``代替表示多值的字面值，使用``separator``（如果未传递，则使用分"
-"号后跟空格 \"; \"）将值强制转换为适当的多值变量。如果``name``缺失"
-"，``$unique``将返回一个空字符串。"
+"返回一个已排序且重复元素已删除的 ``name`` 多值变量的副本。默认情况下，比较会忽"
+"略元素的大小写；但是，可以通过将 ``case_sensitive`` 设置为非空值来更改此行为。"
+"可以使用 ``name`` 代替表示多值的字面值，使用 ``separator`` （如果未传递，则使用分"
+"号后跟空格 \"; \"）将值强制转换为适当的多值变量。如果 ``name`` 缺失"
+"， ``$unique`` 将返回一个空字符串。"
 
 #: ../../functions/func_unique.rst:18
 msgid "When performing a (default) case-insensitive comparison, the last matching element will be used in the result. For example, if the multi-value variable contained 'abc', 'Abc', 'ABc' and 'ABC' in that order, then the element 'ABC' would be included in the output."
