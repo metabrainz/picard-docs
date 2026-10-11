@@ -317,7 +317,7 @@ class SPHINX_():        # pylint: disable=too-few-public-methods
     GETTEXT_DIR = os.path.join(LOCALE_DIR, 'gettext')
     BUILD_TIMEOUT = 300
     BUILD_TARGETS = {
-        'html': {'dir': 'html', 'cmd': 'html', 'extra': '-W --keep-going'},
+        'html': {'dir': 'html', 'cmd': 'html', 'extra': '-T -W --keep-going -j auto'},
         'pdf': {'dir': 'latex', 'cmd': 'latex', 'extra': '-W --keep-going'},
     }
 
