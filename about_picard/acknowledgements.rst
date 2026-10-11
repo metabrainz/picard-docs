@@ -33,6 +33,7 @@ Contributors include (in alphabetic surname order):
 - Shubham Patel
 - Guntbert Reiter
 - Theodore Fabian Rudy
+- scientists360
 - Suryansh Shakya
 - skelly37
 - Sophist
