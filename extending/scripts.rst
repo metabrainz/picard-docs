@@ -126,6 +126,7 @@ According to MusicBrainz guidelines featuring artists are part of the artist nam
 
    $set(_feat_title,$rsearch(%artist%,\\s+\\\(?\(f\(ea\)?t\\.[^\)]*\)))
    $set(artist,$rreplace(%artist%,\\s+\\\(?f\(ea\)?t\\.[^\)]*\\\)?,))
+   $set(artistsort,$rreplace(%artistsort%,\\s+\\\(?f\(ea\)?t\\.[^\)]*\\\)?,))
    $set(title,$if(%_feat_title%,%title% \(%_feat_title%\),%title%))
 
 The same can be done for moving featured artists from the album artist to the album title:
@@ -134,6 +135,7 @@ The same can be done for moving featured artists from the album artist to the al
 
    $set(_feat_album,$rsearch(%albumartist%,\\s+\\\(?\(f\(ea\)?t\\.[^\)]*\)))
    $set(albumartist,$rreplace(%albumartist%,\\s+\\\(?f\(ea\)?t\\.[^\)]*\\\)?,))
+   $set(albumartistsort,$rreplace(%albumartistsort%,\\s+\\\(?f\(ea\)?t\\.[^\)]*\\\)?,))
    $set(album,$if(%_feat_album%,%album% \(%_feat_album%\),%album%))
 
 

@@ -10,6 +10,7 @@ This list includes contributors to the documentation, regardless of their role. 
 Contributors include (in alphabetic surname order):
 
 - Aerozol
+- Anonymous
 - Vedant Chakravadhanula
 - Pavan Chander
 - Ronan Desplanques
