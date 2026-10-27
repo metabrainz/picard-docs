@@ -84,59 +84,63 @@ When albums and tracks are displayed in the right-hand pane, each line begins wi
    | This icon indicates that the track is a data track and that there is no file currently matched. This appears if there is no file matched, or if there are multiple files matched.
    |
 
-.. |img-match-50| image:: images/match-0@2x.png
+.. |img-match-0| image:: images/match-0@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-60| image:: images/match-1@2x.png
+.. |img-match-1| image:: images/match-1@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-70| image:: images/match-2@2x.png
+.. |img-match-2| image:: images/match-2@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-80| image:: images/match-3@2x.png
+.. |img-match-3| image:: images/match-3@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-90| image:: images/match-4@2x.png
+.. |img-match-4| image:: images/match-4@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-100| image:: images/match-5@2x.png
+.. |img-match-5| image:: images/match-5@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-pending-50| image:: images/match-pending-0@2x.png
+.. |img-match-pending-0| image:: images/match-pending-0@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-pending-60| image:: images/match-pending-1@2x.png
+.. |img-match-pending-1| image:: images/match-pending-1@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-pending-70| image:: images/match-pending-2@2x.png
+.. |img-match-pending-2| image:: images/match-pending-2@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-pending-80| image:: images/match-pending-3@2x.png
+.. |img-match-pending-3| image:: images/match-pending-3@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-pending-90| image:: images/match-pending-4@2x.png
+.. |img-match-pending-4| image:: images/match-pending-4@2x.png
    :width: 24pt
    :height: 24pt
 
-.. |img-match-pending-100| image:: images/match-pending-5@2x.png
+.. |img-match-pending-5| image:: images/match-pending-5@2x.png
    :width: 24pt
    :height: 24pt
 
-|img-match-50| |img-match-60| |img-match-70| |img-match-80| |img-match-90| |img-match-100| (Normal)
+|img-match-0| |img-match-1| |img-match-2| |img-match-3| |img-match-4| |img-match-5| (Normal)
 
-|img-match-pending-50| |img-match-pending-60| |img-match-pending-70| |img-match-pending-80| |img-match-pending-90| |img-match-pending-100| (Pending)
+|img-match-pending-0| |img-match-pending-1| |img-match-pending-2| |img-match-pending-3| |img-match-pending-4| |img-match-pending-5| (Pending)
 
-   | These icons indicates the quality of match between the information from the file and the information for the track as provided from the MusicBrainz database. Red indicates a poor match, progressing to all green which indicates a very good match. Note that the icons will be displayed dimmed if there is a pending action for the track, such as the file being queued for saving.
+   | These icons appear for a track that has a single matched file, and indicate how closely the data currently loaded in the file matches the data saved on disk. The fill grows and shifts from red toward green as the match improves. The icons are divided into six levels: a leftmost red level for a poor match (below roughly 56%), four intermediate levels, and a fully green level that is shown only for an exact (100%) match.
+   |
+   | Because this reflects the *pending* differences between the file and what is stored on disk, a track with unsaved changes shows one of these match icons rather than the saved indicator, even when the match is a perfect green. Once the file is saved (so that the loaded data and the data on disk are identical) the icon changes to the saved indicator described below.
+   |
+   | The icons are displayed dimmed (the *Pending* row above) when there is a pending action for the track, such as the file being queued for saving.
    |
 
 .. |img-track-saved| image:: images/track-saved.png
@@ -145,7 +149,7 @@ When albums and tracks are displayed in the right-hand pane, each line begins wi
 
 |img-track-saved|
 
-   | This icon indicates that the track has been saved successfully.
+   | This icon indicates that the matched file has no unsaved changes: the data loaded in Picard is identical to the data stored on disk (for example, right after the file has been saved). This is different from a fully green match icon, which marks a *perfect match that still has unsaved changes* pending.
    |
 
 .. |img-error-no-access| image:: images/error-no-access.png
