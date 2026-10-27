@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 09:58-0600\n"
+"POT-Creation-Date: 2026-10-27 09:33-0600\n"
 "PO-Revision-Date: 2026-07-30 19:26+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: Albanian <https://translations.metabrainz.org/projects/picard-"
@@ -47,32 +47,47 @@ msgid ""
 "When a plugin is installed, uninstalled, enabled or disabled, the action is "
 "processed immediately. These actions are not impacted by clicking either "
 "the  :guilabel:`Make It So!` or :guilabel:`Cancel` buttons. For example, "
-"clicking :guilabel:`Cancel` will not undo the action, and "
-"clicking :guilabel:`Restore Defaults` or :guilabel:`Restore all Defaults` "
-"will not make any changes to the status of the plugins."
+"clicking :guilabel:`Cancel` will not undo the action, and clicking :guilabel:"
+"`Restore Defaults` or :guilabel:`Restore all Defaults` will not make any "
+"changes to the status of the plugins."
 msgstr ""
 
 #: ../../config/options_plugins.rst:27
 msgid "When a new plugin is installed, it is automatically set as enabled."
 msgstr ""
 
-#: ../../config/options_plugins.rst:31
-msgid "Plugin Management"
+#: ../../config/options_plugins.rst:29
+msgid ""
+"In addition to the standard registered plugins, a number of third-party "
+"plugins are also available. There is a user-maintained `Wiki page <https://"
+"wiki.musicbrainz.org/MusicBrainz_Picard/Plugins>`_ listing these additional "
+"available plugins. Please see the :ref:`Installing from a URL "
+"<install_plugin_from_url>` section below for instructions regarding "
+"installation of other third-party plugins."
 msgstr ""
 
 #: ../../config/options_plugins.rst:33
 msgid ""
-"The general plugin management actions are :guilabel:`Install Plugin...` "
-"and :guilabel:`Refresh All`. In addition, there is a \"Search plugins...\" "
-"box that allows you to filter the list of plugins displayed in the plugin "
-"list."
+"**Be aware that installing plugins from unknown sources may pose security "
+"risks. Only install plugins from sources you trust!**"
 msgstr ""
 
 #: ../../config/options_plugins.rst:37
-msgid "Installing a Plugin"
+msgid "Plugin Management"
 msgstr ""
 
 #: ../../config/options_plugins.rst:39
+msgid ""
+"The general plugin management actions are :guilabel:`Install Plugin...` and :"
+"guilabel:`Refresh All`. In addition, there is a \"Search plugins...\" box "
+"that allows you to filter the list of plugins displayed in the plugin list."
+msgstr ""
+
+#: ../../config/options_plugins.rst:43
+msgid "Installing a Plugin"
+msgstr ""
+
+#: ../../config/options_plugins.rst:45
 msgid ""
 "When the :guilabel:`Install Plugin...` button is clicked, a new dialog "
 "window will open to allow selecting the plugin to install. There are three "
@@ -81,11 +96,11 @@ msgid ""
 "drive."
 msgstr ""
 
-#: ../../config/options_plugins.rst:42
+#: ../../config/options_plugins.rst:48
 msgid "Installing from the registry"
 msgstr ""
 
-#: ../../config/options_plugins.rst:53
+#: ../../config/options_plugins.rst:59
 msgid ""
 "When installing a plugin from the official plugin registry, you are "
 "presented with a list of available plugins not already installed from which "
@@ -97,40 +112,40 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../config/options_plugins.rst:55
+#: ../../config/options_plugins.rst:61
 msgid "Each plugin in the official registry is assigned a trust level from:"
 msgstr ""
 
-#: ../../config/options_plugins.rst:57
+#: ../../config/options_plugins.rst:63
 msgid ""
 "**official** |badge-official| - Maintained by the MusicBrainz Picard team"
 msgstr ""
 
-#: ../../config/options_plugins.rst:44
+#: ../../config/options_plugins.rst:50
 msgid "badge-official"
 msgstr ""
 
-#: ../../config/options_plugins.rst:58
+#: ../../config/options_plugins.rst:64
 msgid ""
 "**trusted** |badge-trusted| - Well-known authors with an established "
 "reputation"
 msgstr ""
 
-#: ../../config/options_plugins.rst:47
+#: ../../config/options_plugins.rst:53
 msgid "badge-trusted"
 msgstr ""
 
-#: ../../config/options_plugins.rst:59
+#: ../../config/options_plugins.rst:65
 msgid ""
 "**community** |badge-community| - Other plugins (This is the default for new "
 "submissions)"
 msgstr ""
 
-#: ../../config/options_plugins.rst:50
+#: ../../config/options_plugins.rst:56
 msgid "badge-community"
 msgstr ""
 
-#: ../../config/options_plugins.rst:74
+#: ../../config/options_plugins.rst:80
 msgid ""
 "Once you have selected a plugin and click :guilabel:`Install...`, you are "
 "asked to confirm the installation, and are able to select the version of the "
@@ -139,51 +154,51 @@ msgid ""
 "to the repository."
 msgstr ""
 
-#: ../../config/options_plugins.rst:77
+#: ../../config/options_plugins.rst:85
 msgid "Installing from a URL"
 msgstr ""
 
-#: ../../config/options_plugins.rst:79
+#: ../../config/options_plugins.rst:87
 msgid ""
 "Sometimes plugin authors choose not to include one or more of their plugins "
 "in the official plugin registry. You can still install these plugins by "
 "providing the URL of the plugin repository to the installation dialog. The "
 "URL can usually be obtained directly from the plugin author, from a "
-"discussion on the `MetaBrainz Community Forum <https://"
-"community.metabrainz.org>`_, from a user-maintained list in a blog or wiki, "
-"or by searching a Git repository provider such as GitHub. The MusicBrainz "
-"Picard team recommends that plugin repository names on GitHub (and other "
-"providers) begin with ``picard-plugin-`` to help with their discovery when "
-"searching those platforms."
+"discussion on the `MetaBrainz Community Forum <https://community.metabrainz."
+"org>`_, from a user-maintained list in a blog or wiki, or by searching a Git "
+"repository provider such as GitHub. The MusicBrainz Picard team recommends "
+"that plugin repository names on GitHub (and other providers) begin with "
+"``picard-plugin-`` to help with their discovery when searching those "
+"platforms."
 msgstr ""
 
-#: ../../config/options_plugins.rst:94
+#: ../../config/options_plugins.rst:102
 msgid ""
 "When installing a plugin from a URL, you must enter the URL to the "
 "repository of the plugin, and optionally the version of the plugin to "
 "install. The version can be a specific version number (tag), a branch such "
 "as \"main\" or \"development\" (if available), or a particular commit to the "
-"repository. If no verion is specified, you can select it from the "
+"repository. If no version is specified, you can select it from the "
 "confirmation dialog displayed."
 msgstr ""
 
-#: ../../config/options_plugins.rst:98
+#: ../../config/options_plugins.rst:106
 msgid ""
 "Be careful when installing plugins from unknown sources, as plugins may pose "
 "security risks. Only install plugins from sources you trust."
 msgstr ""
 
-#: ../../config/options_plugins.rst:101
+#: ../../config/options_plugins.rst:109
 msgid "Installing from a local repository"
 msgstr ""
 
-#: ../../config/options_plugins.rst:103
+#: ../../config/options_plugins.rst:111
 msgid ""
 "You can also install a plugin from a local repository. This would typically "
 "be the case while testing a plugin during development."
 msgstr ""
 
-#: ../../config/options_plugins.rst:118
+#: ../../config/options_plugins.rst:126
 msgid ""
 "When installing a plugin from a local repository, you must enter the path to "
 "the repository of the plugin, and optionally the version of the plugin to "
@@ -193,58 +208,58 @@ msgid ""
 "confirmation dialog displayed."
 msgstr ""
 
-#: ../../config/options_plugins.rst:122
+#: ../../config/options_plugins.rst:130
 msgid "Checking for Updates"
 msgstr ""
 
-#: ../../config/options_plugins.rst:124
+#: ../../config/options_plugins.rst:132
 msgid ""
 "You can refresh the registry and check for updates to installed plugins by "
 "clicking the :guilabel:`Refresh All` button. If an update is found for an "
 "installed plugin it will be identified in the plugins list."
 msgstr ""
 
-#: ../../config/options_plugins.rst:139
+#: ../../config/options_plugins.rst:147
 msgid ""
 "You can select which updates to apply and click the :guilabel:`Update All` "
 "button to perform the updates."
 msgstr ""
 
-#: ../../config/options_plugins.rst:143
+#: ../../config/options_plugins.rst:151
 msgid "Plugins List"
 msgstr ""
 
-#: ../../config/options_plugins.rst:145
+#: ../../config/options_plugins.rst:153
 msgid ""
 "The enabled status of a plugin can be toggled by using the check box to the "
 "left of the plugin name."
 msgstr ""
 
-#: ../../config/options_plugins.rst:147
+#: ../../config/options_plugins.rst:155
 msgid ""
 "When a plugin in the list is selected, some details are displayed in a side "
 "panel for the selected plugin."
 msgstr ""
 
-#: ../../config/options_plugins.rst:162
+#: ../../config/options_plugins.rst:170
 msgid ""
 "The display of this panel can be toggled using the :guilabel:`Show "
 "Details` / :guilabel:`Hide Details` button."
 msgstr ""
 
-#: ../../config/options_plugins.rst:164
+#: ../../config/options_plugins.rst:172
 msgid ""
 "From the details panel you have the option to update the plugin (if an "
 "update is found to be available by using the :guilabel:`Refresh All` button) "
 "or uninstalling the plugin."
 msgstr ""
 
-#: ../../config/options_plugins.rst:166
+#: ../../config/options_plugins.rst:174
 msgid ""
 "If you right-click on a plugin in the list, a context menu will be displayed."
 msgstr ""
 
-#: ../../config/options_plugins.rst:181
+#: ../../config/options_plugins.rst:189
 msgid ""
 "From this menu, you can toggle the enabled status of the plugin, uninstall, "
 "reinstall or change the installed version (reference), view detailed "
@@ -257,13 +272,13 @@ msgid ""
 "file system."
 msgstr ""
 
-#: ../../config/options_plugins.rst:198
+#: ../../config/options_plugins.rst:206
 msgid ""
 "Some plugins have their own option page which will typically appear under "
 "the \"Plugins\" section of the Options."
 msgstr ""
 
-#: ../../config/options_plugins.rst:204
+#: ../../config/options_plugins.rst:212
 msgid ""
 "Please see the :doc:`options_plugin_execution_order` section for more "
 "information about manually setting the order in which plugins are executed."
