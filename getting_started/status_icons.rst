@@ -136,9 +136,9 @@ When albums and tracks are displayed in the right-hand pane, each line begins wi
 
 |img-match-pending-0| |img-match-pending-1| |img-match-pending-2| |img-match-pending-3| |img-match-pending-4| |img-match-pending-5| (Pending)
 
-   | These icons appear for a track that has a single matched file, and indicate how closely the data currently loaded in the file matches the data saved on disk. The fill grows and shifts from red toward green as the match improves. The icons are divided into six levels: a leftmost red level for a poor match (below roughly 56%), four intermediate levels, and a fully green level that is shown only for an exact (100%) match.
+   | These icons appear for a track that has a single matched file, and indicate how closely the metadata currently assigned to the track corresponds to the metadata from the matched audio file saved on disk. The fill grows and shifts from red toward green as the match improves. The icons are divided into six levels: a leftmost red level for a poor match, four intermediate levels, and a fully green level that is shown only for an exact match.
    |
-   | Because this reflects the *pending* differences between the file and what is stored on disk, a track with unsaved changes shows one of these match icons rather than the saved indicator, even when the match is a perfect green. Once the file is saved (so that the loaded data and the data on disk are identical) the icon changes to the saved indicator described below.
+   | Because this reflects the *pending* differences between the track metadata and the metadata for the audio file stored on disk, a track with unsaved changes shows one of these match icons rather than the saved indicator, even when the match is a perfect green. Once the file is saved (so that the loaded metadata and the metadata in the audio file on disk are identical) the icon changes to the saved indicator described below.
    |
    | The icons are displayed dimmed (the *Pending* row above) when there is a pending action for the track, such as the file being queued for saving.
    |
