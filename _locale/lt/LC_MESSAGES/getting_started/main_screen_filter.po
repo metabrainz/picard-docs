@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-09 10:54-0600\n"
+"POT-Creation-Date: 2026-10-29 19:21-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,32 +37,116 @@ msgid ""
 "or hidden based on the filter criteria entered."
 msgstr ""
 
-#: ../../getting_started/main_screen_filter.rst:13
+#: ../../getting_started/main_screen_filter.rst:14
+msgid "Text Filters"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:16
 msgid ""
 "When the :guilabel:`Filters` button is clicked, a dialog will be displayed "
-"to allow to you to select the filters to use for that pane."
-msgstr ""
-
-#: ../../getting_started/main_screen_filter.rst:24
-msgid "When filtering is applied, items will only be displayed if:"
-msgstr ""
-
-#: ../../getting_started/main_screen_filter.rst:26
-msgid "no filters are selected or no filter text has been entered;"
+"to allow you to select the filters to use for that pane."
 msgstr ""
 
 #: ../../getting_started/main_screen_filter.rst:27
+msgid "When filtering is applied, items will only be displayed if:"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:29
+msgid "no filters are selected or no filter text has been entered;"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:30
 msgid "no tags are found that match the selected filters;"
 msgstr ""
 
-#: ../../getting_started/main_screen_filter.rst:28
+#: ../../getting_started/main_screen_filter.rst:31
 msgid ""
 "a tag is found that matches one of the selected filters and the filter text "
 "is found within the tag value."
 msgstr ""
 
-#: ../../getting_started/main_screen_filter.rst:30
+#: ../../getting_started/main_screen_filter.rst:33
 msgid ""
 "Items will not be displayed if one or more tags were found in the selected "
 "filters and the filter text was not found in any values of those tags."
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:36
+msgid "Status Filters"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:38
+msgid ""
+"In the Album Pane, albums can be filtered based on their modified and/or "
+"complete status. When the :guilabel:`Status` button is clicked, a menu will "
+"be displayed to allow you to select the status types to display."
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:42
+#: ../../getting_started/main_screen_filter.rst:47
+msgid "Status filter menu"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:51
+msgid "The list of filterable status types are as follows:"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:56
+msgid "Status"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:57
+msgid "Description"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:58
+msgid "Modified"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:59
+msgid "Album has pending modifications"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:60
+msgid "Unmodified"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:61
+msgid "Album has no pending modifications"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:62
+msgid "Complete"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:63
+msgid "Album has a single file assigned to each track"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:64
+msgid "Incomplete"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:65
+msgid ""
+"Album has one or more tracks with no file assigned or multiple files assigned"
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:67
+msgid ""
+"When status filtering is applied, album items will only be displayed if both "
+"their modified and complete status match one of the selected status types. "
+"For example, if an album has a single audio file assigned to each track and "
+"there are differences in the metadata between the files and tracks such that "
+"changes will be made to the tags when saving, then the album will only be "
+"displayed if both the **Complete** and **Modified** status types are "
+"selected. In this case selecting either or both of the **Unmodified** and "
+"**Incomplete** status codes has no impact on the display of the album."
+msgstr ""
+
+#: ../../getting_started/main_screen_filter.rst:71
+msgid ""
+"Unchecking both the **Modified** and **Unmodified** status types will cause "
+"all albums to be filtered out. Similarly, unchecking both **Complete** and "
+"**Incomplete** status types will cause all albums to be filtered out as well."
 msgstr ""
