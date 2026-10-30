@@ -46,6 +46,7 @@ Contributors include (in alphabetic surname order):
 - Philipp Wolfer
 - yvanzo
 - Shadab Zafar
+- Zas
 
 .. note::
 
