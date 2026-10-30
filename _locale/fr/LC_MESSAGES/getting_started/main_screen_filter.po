@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-29 19:21-0600\n"
-"PO-Revision-Date: 2026-09-10 02:56+0000\n"
+"PO-Revision-Date: 2026-10-30 03:06+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
 "docs/getting_startedmain_screen_filter/fr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.9.1\n"
+"X-Generator: Weblate 2026.10.1\n"
 
 #: ../../getting_started/main_screen_filter.rst:4
 msgid ""
@@ -51,10 +51,9 @@ msgstr ""
 
 #: ../../getting_started/main_screen_filter.rst:14
 msgid "Text Filters"
-msgstr ""
+msgstr "Filtres de texte"
 
 #: ../../getting_started/main_screen_filter.rst:16
-#, fuzzy
 msgid ""
 "When the :guilabel:`Filters` button is clicked, a dialog will be displayed "
 "to allow you to select the filters to use for that pane."
@@ -69,8 +68,7 @@ msgstr "Lorsque le filtrage est activé, les éléments ne s'affichent que si :
 
 #: ../../getting_started/main_screen_filter.rst:29
 msgid "no filters are selected or no filter text has been entered;"
-msgstr ""
-"aucun filtre n'est sélectionné ou aucun texte de filtre n'a été saisi ;"
+msgstr "aucun filtre n'est sélectionné ou aucun texte de filtre n'a été saisi ;"
 
 #: ../../getting_started/main_screen_filter.rst:30
 msgid "no tags are found that match the selected filters;"
@@ -95,7 +93,7 @@ msgstr ""
 
 #: ../../getting_started/main_screen_filter.rst:36
 msgid "Status Filters"
-msgstr ""
+msgstr "Filtres d'état"
 
 #: ../../getting_started/main_screen_filter.rst:38
 msgid ""
@@ -103,56 +101,64 @@ msgid ""
 "complete status. When the :guilabel:`Status` button is clicked, a menu will "
 "be displayed to allow you to select the status types to display."
 msgstr ""
+"Dans le volet « Albums », vous pouvez filtrer les albums en fonction de leur "
+"statut (modifié et/ou terminé). Lorsque vous cliquez sur le bouton "
+":guilabel:`Statut`, un menu s'affiche pour vous permettre de sélectionner "
+"les types de statut à afficher."
 
 #: ../../getting_started/main_screen_filter.rst:42
 #: ../../getting_started/main_screen_filter.rst:47
 msgid "Status filter menu"
-msgstr ""
+msgstr "Menu du filtre d'état"
 
 #: ../../getting_started/main_screen_filter.rst:51
 msgid "The list of filterable status types are as follows:"
 msgstr ""
+"La liste des types de statut pouvant faire l'objet d'un filtrage est la "
+"suivante :"
 
 #: ../../getting_started/main_screen_filter.rst:56
 msgid "Status"
-msgstr ""
+msgstr "Statut"
 
 #: ../../getting_started/main_screen_filter.rst:57
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: ../../getting_started/main_screen_filter.rst:58
 msgid "Modified"
-msgstr ""
+msgstr "Modifié"
 
 #: ../../getting_started/main_screen_filter.rst:59
 msgid "Album has pending modifications"
-msgstr ""
+msgstr "L'album fait l'objet de modifications en cours"
 
 #: ../../getting_started/main_screen_filter.rst:60
 msgid "Unmodified"
-msgstr ""
+msgstr "Non modifié"
 
 #: ../../getting_started/main_screen_filter.rst:61
 msgid "Album has no pending modifications"
-msgstr ""
+msgstr "L'album ne comporte aucune modification en attente"
 
 #: ../../getting_started/main_screen_filter.rst:62
 msgid "Complete"
-msgstr ""
+msgstr "Complet"
 
 #: ../../getting_started/main_screen_filter.rst:63
 msgid "Album has a single file assigned to each track"
-msgstr ""
+msgstr "Chaque morceau de l'album correspond à un fichier unique"
 
 #: ../../getting_started/main_screen_filter.rst:64
 msgid "Incomplete"
-msgstr ""
+msgstr "Incomplet"
 
 #: ../../getting_started/main_screen_filter.rst:65
 msgid ""
 "Album has one or more tracks with no file assigned or multiple files assigned"
 msgstr ""
+"L'album contient un ou plusieurs titres auxquels aucun fichier n'est "
+"associé, ou plusieurs fichiers leur sont associés"
 
 #: ../../getting_started/main_screen_filter.rst:67
 msgid ""
@@ -165,6 +171,16 @@ msgid ""
 "selected. In this case selecting either or both of the **Unmodified** and "
 "**Incomplete** status codes has no impact on the display of the album."
 msgstr ""
+"Lorsque le filtrage par statut est appliqué, les éléments d’un album ne "
+"s’affichent que si leurs statuts « Modifié » et « Complet » correspondent "
+"tous deux à l’un des types de statut sélectionnés. Par exemple, si un album "
+"comporte un seul fichier audio attribué à chaque piste et qu’il existe des "
+"différences dans les métadonnées entre les fichiers et les pistes, de sorte "
+"que des modifications seront apportées aux balises lors de l’enregistrement, "
+"alors l’album ne s’affichera que si les types de statut **Complet** et "
+"**Modifié** sont tous deux sélectionnés. Dans ce cas, la sélection de l’un "
+"ou des deux codes de statut **Non modifié** et **Incomplet** n’a aucune "
+"incidence sur l’affichage de l’album."
 
 #: ../../getting_started/main_screen_filter.rst:71
 msgid ""
@@ -172,3 +188,7 @@ msgid ""
 "all albums to be filtered out. Similarly, unchecking both **Complete** and "
 "**Incomplete** status types will cause all albums to be filtered out as well."
 msgstr ""
+"Si vous décochez les deux types de statut **Modifié** et **Non modifié**, "
+"tous les albums seront exclus du filtrage. De même, si vous décochez les "
+"deux types de statut **Complet** et **Incomplet**, tous les albums seront "
+"également exclus du filtrage."
