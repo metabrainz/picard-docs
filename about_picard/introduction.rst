@@ -60,4 +60,4 @@ Sometimes Picard needs to rewrite the entire music file in order to add or updat
 Trivia
 -------
 
-Picard is named after `Captain Jean-Luc Picard <https://en.wikipedia.org/wiki/Jean-Luc_Picard>`_` from the TV series `Star Trek: The Next Generation <https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation>`_. This is because at the time Picard (the tagging software) was being developed it was considered to be "The Next Generation Tagger".
+Picard is named after `Captain Jean-Luc Picard <https://en.wikipedia.org/wiki/Jean-Luc_Picard>`_ from the TV series `Star Trek: The Next Generation <https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation>`_. This is because at the time Picard (the tagging software) was being developed it was considered to be "The Next Generation Tagger". This relationship is demonstrated by setting the default caption used for the button to save a user's option settings to Jean-Luc's famous line :guilabel:`Make It So!`.
