@@ -55,3 +55,9 @@ Picard's metadata retrieval is limited to the standard **one request per second*
 **Network File Processing**
 
 Sometimes Picard needs to rewrite the entire music file in order to add or update the tags. This can take a few seconds, and the delay becomes even longer if the file is accessed across a network (e.g.: file is read from or written to a NAS device). The recommended "best practice" is to process all files on a local drive and then move them to the desired remote directory once processing is complete.
+
+
+Trivia
+-------
+
+Picard is named after `Captain Jean-Luc Picard <https://en.wikipedia.org/wiki/Jean-Luc_Picard>`_` from the TV series `Star Trek: The Next Generation <https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation>`_. This is because at the time Picard (the tagging software) was being developed it was considered to be "The Next Generation Tagger".
