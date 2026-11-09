@@ -29,6 +29,18 @@ If you find that Picard won't start there are a few common possible reasons, and
 
    Again, it is recommended that you move the file to a temporary directory so that it can be recovered if this turns out not to be the cause of the problem.
 
+**There is an issue with a Windows DLL file**
+
+   This generally only shows up on the portable version of Picard, and is the result of an incompatible version of a DLL file being used rather than the DLL file which comes bundled with Picard. Typically these incompatible files are installed in ``C:\Windows\System32``. Some software places such libraries there or instructs users to copy the files there, which is a horrible practice. Due to the way Windows handles DLLs this causes issues like this, where a piece of software then loads the wrong files.
+
+   Unfortunately there is not a good solution for this with the portable version of Picard. This is a mix of Windows DLL loading in general, and the way PyInstaller lays out the files.
+
+   In the case of SSL libraries, it is also impacted by the specific way Qt6 finds these SSL libraries. For the non-portable version a workaround is applied by moving the SSL libraries into the install root, but this is not easily possible in the portable version.
+
+   Your current possible solutions are to either remove the incompatible DLLs from ``C:\Windows\System32`` (make a backup first, because some other software could fail afterwards), or run the installer version of Picard.
+
+.. See discussion at https://tickets.metabrainz.org/browse/PICARD-3524
+
 **There really is a bug in Picard**
 
    If this problem started just after updating Picard, in spite of all the testing that is performed prior to releasing a new version, it may be possible that this is indeed a bug. In that case, you should first try to reinstall the previous version to ensure that it works and that the problem is only occurring with the new version. Then you should report the issue, following the steps outlined in the "Reporting a Bug" topic of the :doc:`troubleshooting` section. Please be sure to include as much information as possible, which will help the developers to locate and fix the problem.
