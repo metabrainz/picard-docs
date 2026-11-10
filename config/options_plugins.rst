@@ -86,6 +86,10 @@ Installing from a URL
 
 Sometimes plugin authors choose not to include one or more of their plugins in the official plugin registry. You can still install these plugins by providing the URL of the plugin repository to the installation dialog. The URL can usually be obtained directly from the plugin author, from a discussion on the `MetaBrainz Community Forum <https://community.metabrainz.org>`_, from a user-maintained list in a blog or wiki, or by searching a Git repository provider such as GitHub. The MusicBrainz Picard team recommends that plugin repository names on GitHub (and other providers) begin with ``picard-plugin-`` to help with their discovery when searching those platforms.
 
+.. note::
+
+   A user-maintained list of plugins is available on the `MusicBrainz Wiki <https://wiki.musicbrainz.org/MusicBrainz_Picard/Plugins#Other_plugins>`_. This includes plugins that are not in the official plugin registry, and may include plugins that are not maintained or supported by the plugin author. This list provides information including a brief description of the plugin, the name of the plugin author, and a link to the plugin repository (which can be used to install the plugin).
+
 .. only:: not latex
 
    .. image:: images/options-plugins-install-url.png
