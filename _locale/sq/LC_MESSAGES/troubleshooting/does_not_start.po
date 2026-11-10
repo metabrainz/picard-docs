@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-10 10:38-0600\n"
 "PO-Revision-Date: 2026-07-30 19:25+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Albanian <https://translations.metabrainz.org/projects/picard-"
@@ -118,10 +118,55 @@ msgid ""
 msgstr ""
 
 #: ../../troubleshooting/does_not_start.rst:32
-msgid "**There really is a bug in Picard**"
+msgid "**There is an issue with a Windows DLL file**"
 msgstr ""
 
 #: ../../troubleshooting/does_not_start.rst:34
+msgid ""
+"If Picard on Windows crashes on startup or network requests fail with error "
+"messages about missing SSL support, a common cause is incompatible DLLs "
+"being loaded from a system wide installation. This typically happens with "
+"system wide installations of the OpenSSL or Qt6 libraries."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:36
+msgid ""
+"This generally only shows up on the portable version of Picard, and is the "
+"result of an incompatible version of a DLL file being used rather than the "
+"DLL file which comes bundled with Picard. Typically these incompatible files "
+"are installed in ``C:\\Windows\\System32``. Some software places such "
+"libraries there or instructs users to copy the files there, which is a "
+"horrible practice. Due to the way Windows handles DLLs this causes issues "
+"like this, where a piece of software then loads the wrong files."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:38
+msgid ""
+"Unfortunately there is not a good solution for this with the portable "
+"version of Picard. This is a mix of Windows DLL loading in general, and the "
+"way PyInstaller lays out the files."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:40
+msgid ""
+"In the case of SSL libraries, it is also impacted by the specific way Qt6 "
+"finds these SSL libraries. For the non-portable version a workaround is "
+"applied by moving the SSL libraries into the install root, but this is not "
+"easily possible in the portable version."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:42
+msgid ""
+"Your current possible solutions are to either remove the incompatible DLLs "
+"from ``C:\\Windows\\System32`` (make a backup first, because some other "
+"software could fail afterwards), or run the installer version of Picard."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:46
+msgid "**There really is a bug in Picard**"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:48
 msgid ""
 "If this problem started just after updating Picard, in spite of all the "
 "testing that is performed prior to releasing a new version, it may be "
