@@ -1009,10 +1009,70 @@ Podcast [#f4]_
    :widths: 37 100
 
    "Internal Name", "``podcast``"
-   "ID3v2", "n/a"
+   "ID3v2", "``PCST``"
    "Vorbis", "n/a"
    "APEv2", "n/a"
    "iTunes MP4", "``pcst``"
+   "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
+
+
+Podcast Category [#f4]_
+------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``podcastcategory``"
+   "ID3v2", "``TCAT``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "``catg``"
+   "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
+
+
+Podcast Description [#f4]_
+---------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``podcastdesc``"
+   "ID3v2", "``TDES``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "``ldes``"
+   "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
+
+
+Podcast ID [#f4]_
+------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``podcastid``"
+   "ID3v2", "``TGID``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "``egid``"
+   "ASF/Windows Media", "n/a"
+   "RIFF INFO", "n/a"
+
+
+Podcast Keywords [#f4]_
+------------------------
+.. csv-table::
+   :width: 100%
+   :widths: 37 100
+
+   "Internal Name", "``podcastkeywords``"
+   "ID3v2", "``TKWD``"
+   "Vorbis", "n/a"
+   "APEv2", "n/a"
+   "iTunes MP4", "``keyw``"
    "ASF/Windows Media", "n/a"
    "RIFF INFO", "n/a"
 
@@ -1024,7 +1084,7 @@ Podcast URL [#f4]_
    :widths: 37 100
 
    "Internal Name", "``podcasturl``"
-   "ID3v2", "n/a"
+   "ID3v2", "``WFED``"
    "Vorbis", "n/a"
    "APEv2", "n/a"
    "iTunes MP4", "``purl``"
