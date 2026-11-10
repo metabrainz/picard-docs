@@ -31,6 +31,8 @@ If you find that Picard won't start there are a few common possible reasons, and
 
 **There is an issue with a Windows DLL file**
 
+   If Picard on Windows crashes on startup or network requests fail with error messages about missing SSL support, a common cause is incompatible DLLs being loaded from a system wide installation. This typically happens with system wide installations of the OpenSSL or Qt6 libraries.
+
    This generally only shows up on the portable version of Picard, and is the result of an incompatible version of a DLL file being used rather than the DLL file which comes bundled with Picard. Typically these incompatible files are installed in ``C:\Windows\System32``. Some software places such libraries there or instructs users to copy the files there, which is a horrible practice. Due to the way Windows handles DLLs this causes issues like this, where a piece of software then loads the wrong files.
 
    Unfortunately there is not a good solution for this with the portable version of Picard. This is a mix of Windows DLL loading in general, and the way PyInstaller lays out the files.
