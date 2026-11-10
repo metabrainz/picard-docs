@@ -31,6 +31,7 @@ Contributors include (in alphabetic surname order):
 - Maurits Meulenbelt
 - Akash Nagaraj
 - Jonatan Nyberg
+- Kelvin Olabanji
 - Frederik "Freso" S. Olesen
 - Shubham Patel
 - Guntbert Reiter
