@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-10 10:38-0600\n"
 "PO-Revision-Date: 2026-08-21 19:04+0000\n"
 "Last-Translator: Philipp Wolfer <ph.wolfer@gmail.com>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -35,10 +35,10 @@ msgid ""
 msgstr ""
 "Als Picard niet opstart, kan dat verschillende oorzaken hebben. Je kan de "
 "volgende oplossingen proberen: Voordat je iets drastisch doet, raden we aan "
-"om Picard vanuit de opdrachtregel te starten. Gebruik de startoptie "
-":option:`-d` om debuglogboeken te maken. Dit proces wordt beschreven in "
-":doc:`troubleshooting`. Als de logboeken geen hints over het probleem "
-"opleveren, kan een van de volgende problemen spelen:"
+"om Picard vanuit de opdrachtregel te starten. Gebruik de startoptie :option:"
+"`-d` om debuglogboeken te maken. Dit proces wordt beschreven in :doc:"
+"`troubleshooting`. Als de logboeken geen hints over het probleem opleveren, "
+"kan een van de volgende problemen spelen:"
 
 #: ../../troubleshooting/does_not_start.rst:8
 msgid "**The program files have become corrupted**"
@@ -83,8 +83,8 @@ msgid ""
 "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Local\\"
 "\\MusicBrainz\\\\Picard\\\\plugins`"
 msgstr ""
-"*Windows*: :file:`C:\\\\Users\\\\\\\\{gebruiker}\\\\AppData\\\\Local\\\\M"
-"usicBrainz\\\\Picard\\\\plugins`"
+"*Windows*: :file:`C:\\\\Users\\\\\\\\{gebruiker}\\\\AppData\\\\Local\\"
+"\\MusicBrainz\\\\Picard\\\\plugins`"
 
 #: ../../troubleshooting/does_not_start.rst:17
 msgid "*macOS*: :file:`~/Library/Preferences/MusicBrainz/Picard/plugins`"
@@ -134,8 +134,8 @@ msgid ""
 "*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Roaming\\"
 "\\MusicBrainz`"
 msgstr ""
-"*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Roaming\\\\M"
-"usicBrainz`"
+"*Windows*: :file:`C:\\\\Users\\\\\\\\{user}\\\\AppData\\\\Roaming\\"
+"\\MusicBrainz`"
 
 #: ../../troubleshooting/does_not_start.rst:27
 msgid "*macOS*: :file:`~/Library/Preferences/MusicBrainz`"
@@ -156,10 +156,55 @@ msgstr ""
 "veroorzaakt."
 
 #: ../../troubleshooting/does_not_start.rst:32
+msgid "**There is an issue with a Windows DLL file**"
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:34
+msgid ""
+"If Picard on Windows crashes on startup or network requests fail with error "
+"messages about missing SSL support, a common cause is incompatible DLLs "
+"being loaded from a system wide installation. This typically happens with "
+"system wide installations of the OpenSSL or Qt6 libraries."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:36
+msgid ""
+"This generally only shows up on the portable version of Picard, and is the "
+"result of an incompatible version of a DLL file being used rather than the "
+"DLL file which comes bundled with Picard. Typically these incompatible files "
+"are installed in ``C:\\Windows\\System32``. Some software places such "
+"libraries there or instructs users to copy the files there, which is a "
+"horrible practice. Due to the way Windows handles DLLs this causes issues "
+"like this, where a piece of software then loads the wrong files."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:38
+msgid ""
+"Unfortunately there is not a good solution for this with the portable "
+"version of Picard. This is a mix of Windows DLL loading in general, and the "
+"way PyInstaller lays out the files."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:40
+msgid ""
+"In the case of SSL libraries, it is also impacted by the specific way Qt6 "
+"finds these SSL libraries. For the non-portable version a workaround is "
+"applied by moving the SSL libraries into the install root, but this is not "
+"easily possible in the portable version."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:42
+msgid ""
+"Your current possible solutions are to either remove the incompatible DLLs "
+"from ``C:\\Windows\\System32`` (make a backup first, because some other "
+"software could fail afterwards), or run the installer version of Picard."
+msgstr ""
+
+#: ../../troubleshooting/does_not_start.rst:46
 msgid "**There really is a bug in Picard**"
 msgstr "**Er zit echt een bug in Picard**"
 
-#: ../../troubleshooting/does_not_start.rst:34
+#: ../../troubleshooting/does_not_start.rst:48
 msgid ""
 "If this problem started just after updating Picard, in spite of all the "
 "testing that is performed prior to releasing a new version, it may be "
@@ -175,7 +220,7 @@ msgstr ""
 "nieuwe versie echt een bug in het programma zit. In dat geval installeer je "
 "eerst de vorige versie om te controleren of die wel werkt, en of het "
 "probleem alleen bij de nieuwe versie speelt. Als dat zo is, zouden we het "
-"waarderen als je het probleem meldt. Zie de stappen die in "
-":doc:`troubleshooting` onder ‘Een bug melden’ worden beschreven. Voeg zo "
-"veel mogelijk informatie toe, dan kunnen onze ontwikkelaars het probleem "
+"waarderen als je het probleem meldt. Zie de stappen die in :doc:"
+"`troubleshooting` onder ‘Een bug melden’ worden beschreven. Voeg zo veel "
+"mogelijk informatie toe, dan kunnen onze ontwikkelaars het probleem "
 "makkelijker (en sneller) vinden en oplossen."
