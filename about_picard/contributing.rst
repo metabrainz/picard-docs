@@ -13,4 +13,4 @@ If you notice an error in the documentation or have additional material to contr
 
    `Contributing to MusicBrainz Picard <https://github.com/metabrainz/picard/blob/master/CONTRIBUTING.md>`_ /
    `Picard Translations <https://github.com/metabrainz/picard/blob/master/po/README.md>`_ /
-   `Contributing to the Documentation <https://github.com/metabrainz/picard-docs/blob/master/.github/CONTRIBUTING.md>`_
+   `Contributing to the Documentation <https://github.com/metabrainz/picard-docs/blob/main/.github/CONTRIBUTING.md>`_

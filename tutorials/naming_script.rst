@@ -43,7 +43,7 @@ Let's fix the track number first. We can take care of that by using the :ref:`fu
 
    %albumartist% - \(%date%\) %album%/$num(%tracknumber%,2) - %title%
 
-Now let's fix the **ARTIST**. We can fallback to using ``artist`` if ``albumartist`` is not available by using:
+Now let's fix the **ARTIST**. We can fall back to using ``artist`` if ``albumartist`` is not available by using:
 
 .. code-block:: taggerscript
 

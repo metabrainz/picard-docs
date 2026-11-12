@@ -104,7 +104,7 @@ When you click the :guilabel:`Make It So!` button, in addition to saving your up
 Saving Profile Option Settings
 ------------------------------
 
-To save a value to a profile option setting, simply ensure that the the target profile is the first enabled profile in the profile stack, make the desired changes (the options should be highlighted), and then click the :guilabel:`Make It So!` button.
+To save a value to a profile option setting, simply ensure that the target profile is the first enabled profile in the profile stack, make the desired changes (the options should be highlighted), and then click the :guilabel:`Make It So!` button.
 
 .. only:: not latex
 

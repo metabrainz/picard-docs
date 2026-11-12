@@ -20,7 +20,7 @@ There are four types of branches within the repository:
 
 ## Directory and File Structure
 
-There is generally one type of directory structures used for all of the source file branches.
+There is generally one type of directory structure used for all of the source file branches.
 
 The root directory of the ***Primary Branch***, ***Publication Branches***, ***Next Version Branch*** and ***Working Branches*** contains the files used to configure the build environment for compiling the source files into the files to be published, as well as the developer utilities script (`dev_utils.py`) and support files used to perform the builds and miscellaneous maintenance of the project files.
 

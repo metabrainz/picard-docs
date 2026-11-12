@@ -4,7 +4,7 @@ A set of utilities to aid developers is available as `dev_utils.py` in the root 
 
 Some of the functions allow you to specify a specific language to which the processing should be applied. This is enabled by including `-l {language}` or `--language {language}` on the command line following the processing command, such as `python dev_utils.py test po --language fr` to check just the French language `*.po` files. If no language is specified, the language processed defaults to English (en). Use the language `-all` to repeat the processing for all supported languages.
 
-In addition, the repository contains a pre-commit configuration file (`.pre-commit-config.yaml`) that will perform some basic checks on the files. This can be configured to run automatically when commiting changes to the git repository. See the [pre-commit documentation](https://pre-commit.com) for more information regarding the installation and use of the pre-commit hooks.
+In addition, the repository contains a pre-commit configuration file (`.pre-commit-config.yaml`) that will perform some basic checks on the files. This can be configured to run automatically when committing changes to the git repository. See the [pre-commit documentation](https://pre-commit.com) for more information regarding the installation and use of the pre-commit hooks.
 
 ## Checking Files (`test`)
 
@@ -51,7 +51,7 @@ The output files can be built in the various formats using the `build` command t
 
 ## Translation Status for a Locale (`status`)
 
-The translation PO files are reviewed for the locales specified on the command line, and the translation progress status is displayed. The status includes: the number of translation files, total number of strings to translate, number of strings with translations, and percentage complete. Multiple locales can be specified by separating them with spaces. Specifiying 'all' will process all locales with available translation files.
+The translation PO files are reviewed for the locales specified on the command line, and the translation progress status is displayed. The status includes: the number of translation files, total number of strings to translate, number of strings with translations, and percentage complete. Multiple locales can be specified by separating them with spaces. Specifying 'all' will process all locales with available translation files.
 
 ## Stage Files for Git (`stage`)
 
