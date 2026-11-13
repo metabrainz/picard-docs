@@ -1,3 +1,64 @@
+[project]
+name = "picard-docs"
+description = "This project was created with the intent of developing a comprehensive user manual for MusicBrainz Picard, a full-featured, cross-platform music file tagging system using metadata from MusicBrainz."
+authors = [{name = "The MusicBrainz Team"}]
+license = "CC0-1.0"
+keywords = ["musicbrainz", "tagging", "audio", "documentation"]
+requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications :: Qt",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Intended Audience :: End Users/Desktop",
+]
+dynamic = ["version"]
+dependencies = [
+    "recommonmark>=0.6.0",
+    "Sphinx>=3.1.1",
+    "sphinx-rtd-theme>=0.5.1",
+    "docutils>=0.16",
+    "sphinx-notfound-page>=0.5",
+    "sphinxcontrib-youtube>=1.2.0",
+    "sphinx-intl>=2.0.0",
+    "sphinx-autobuild>=2025.8.25",
+    "XlsxWriter>=1.3.7",
+]
+
+[project.urls]
+Homepage = "https://picard-docs.musicbrainz.org/"
+Documentation = "https://picard-docs.musicbrainz.org/"
+Repository = "https://github.com/metabrainz/picard-docs.git"
+Issues = "https://tickets.metabrainz.org/browse/PICARD-3497?jql=project%20%3D%20PICARD%20AND%20component%20%3D%20Documentation"
+Funding = "https://metabrainz.org/donate"
+
+
+[dependency-groups]
+dev = [
+    "restructuredtext-lint==1.3.0",
+    "docutils>=0.16",
+    "flake8>=6.0.0",
+    "coverage>=7.2.5",
+    "pylint>=4.0.5",
+    "isort>=8.0.0",
+    "pre-commit>=4.3.0",
+]
+
+[tool.setuptools]
+packages = []
+
 [tool.isort]
 lines_after_imports = 2
 multi_line_output = 3
