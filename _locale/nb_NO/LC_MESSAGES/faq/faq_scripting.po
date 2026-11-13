@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 08:43+0200\n"
+"POT-Creation-Date: 2026-11-13 13:26-0600\n"
 "PO-Revision-Date: 2026-07-30 19:28+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://translations.metabrainz.org/"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "**Is the script enabled?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:13
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "Make sure that the script is enabled in the scripting options. If the script "
 "is not enabled, it will not run automatically. You can run the script "
@@ -49,7 +49,7 @@ msgstr ""
 msgid "**Is there a syntax error in the script?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:17
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "If there is a syntax error in the script, it will not run and may show an "
 "error in the editor. Review the script for any syntax errors such as missing "
@@ -61,7 +61,7 @@ msgstr ""
 msgid "**Are all the functions used in the script valid?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:21
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "If you are using a function in your script that is not valid or does not "
 "exist, the script will not run. Make sure that all the functions you are "
@@ -74,7 +74,7 @@ msgstr ""
 msgid "**Have all reserved characters been escaped properly?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:25
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "If your script includes reserved characters such as commas, parentheses, or "
 "other special characters as part of an argument, make sure they are escaped "
@@ -89,7 +89,7 @@ msgstr ""
 #: ../../faq/faq_scripting.rst:27
 msgid ""
 "If reserved characters are not escaped properly, it can cause the script to "
-"not run or to run with unexpected results. This is a common occurence when "
+"not run or to run with unexpected results. This is a common occurrence when "
 "using AI to develop scripts, because it often includes reserved characters "
 "in the value arguments without escaping them."
 msgstr ""
@@ -133,7 +133,7 @@ msgstr ""
 msgid "**Are you using the correct syntax?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:51
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "Make sure you are using the correct tag or variable and value in the correct "
 "order, and that there are no typos."
@@ -143,7 +143,7 @@ msgstr ""
 msgid "**Are you using the correct tag or variable name?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:55
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "Make sure you are using the correct tag or variable name in your script. For "
 "example, if you want to check the artist name, you should use ``%artist%`` "
@@ -154,7 +154,7 @@ msgstr ""
 msgid "**Is the tag or variable you are checking actually populated?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:59
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "If the tag or variable you are checking is empty or not populated, the match "
 "will not work. Make sure that it has a value before the script runs. This "
@@ -168,7 +168,7 @@ msgstr ""
 msgid "**Is the spelling and capitalization correct?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:63
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "In general, the match tests are case-sensitive, so make sure that the "
 "spelling and capitalization of the value you are checking against matches "
@@ -179,7 +179,7 @@ msgstr ""
 msgid "**Are you using the correct operator?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:67
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "Make sure you are using the correct operator for your match. For example, if "
 "you want to check if a tag or variable contains a certain value, you should "
@@ -192,13 +192,13 @@ msgid ""
 "value argument?**"
 msgstr ""
 
-#: ../../faq/faq_scripting.rst:71
+#: ../../faq/faq_scripting.rst:0
 msgid ""
 "If there are leading or trailing spaces in the value or the value is "
 "enclosed within quotes, the match may not work as expected. This is a common "
-"occurence when using AI to develop scripts, because it often introduces "
+"occurrence when using AI to develop scripts, because it often introduces "
 "extra spaces such as a space after the comma separating arguments or quotes "
-"around the value. Picard will consider both of these are part of the "
+"around the value. Picard will consider both of these as part of the "
 "argument. For example, if you have a script that checks if the artist is "
 "\"My Artist\", but the check is ``$eq(%artist%,\"My Artist\")`` or "
 "``$eq(%artist%, My Artist)``, the match will not work. The correct syntax "

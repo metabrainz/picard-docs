@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-13 09:00-0600\n"
+"POT-Creation-Date: 2026-11-13 13:26-0600\n"
 "PO-Revision-Date: 2026-10-09 08:15+0000\n"
-"Last-Translator: scientists360 "
-"<scientists360@users.noreply.translations.metabrainz.org>\n"
-"Language-Team: Chinese (Simplified Han script) <https://"
-"translations.metabrainz.org/projects/picard-docs/functionslist_by_type/"
-"zh_Hans/>\n"
+"Last-Translator: scientists360 <scientists360@users.noreply.translations."
+"metabrainz.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://translations."
+"metabrainz.org/projects/picard-docs/functionslist_by_type/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_Hans\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2026.10\n"
 
@@ -26,26 +25,41 @@ msgid ":index:`Scripting Functions <scripting; functions>`"
 msgstr ":index:`脚本函数 <scripting; functions>`"
 
 #: ../../functions/list_by_type.rst:6
-msgid "The following is a list of the Picard scripting functions grouped by function type."
+msgid ""
+"The following is a list of the Picard scripting functions grouped by "
+"function type."
 msgstr "以下是按函数类型分组的 Picard 脚本函数列表。"
 
 #: ../../functions/list_by_type.rst:10
-msgid "A common error when using scripting functions is to add a space after the comma separating the arguments, or enclosing a value in quotes. Picard will consider both of these as part of the argument, which will cause the function to not work as expected. For example, if you have a script that checks if the artist is \"My Artist\", but the check is ``$eq(%artist%, My Artist)`` or ``$eq(%artist%,\"My Artist\")``, the match will not work. The correct syntax should be ``$eq(%artist%,My Artist)`` without the extra space or quotes. This is a common occurence when using AI to develop scripts, because it often introduces extra spaces such as a space after the comma separating arguments or quotes around the value."
+#, fuzzy
+msgid ""
+"A common error when using scripting functions is to add a space after the "
+"comma separating the arguments, or enclosing a value in quotes. Picard will "
+"consider both of these as part of the argument, which will cause the "
+"function to not work as expected. For example, if you have a script that "
+"checks if the artist is \"My Artist\", but the check is ``$eq(%artist%, My "
+"Artist)`` or ``$eq(%artist%,\"My Artist\")``, the match will not work. The "
+"correct syntax should be ``$eq(%artist%,My Artist)`` without the extra space "
+"or quotes. This is a common occurrence when using AI to develop scripts, "
+"because it often introduces extra spaces such as a space after the comma "
+"separating arguments or quotes around the value."
 msgstr ""
 "在使用脚本函数时，一个常见的错误是在分隔参数的逗号后添加空格，或者用引号括住"
 "值。Picard 会将这两者都视为参数的一部分，这会导致函数无法按预期工作。例如，如"
-"果你有一个检查艺术家是否为 \"My Artist\" 的脚本，但如果检查是 ``$eq"
-"(%artist%, My Artist)`` 或 ``$eq(%artist%,\"My Artist\")``，匹配将不会成功。"
-"正确的语法应该是 ``$eq(%artist%,My Artist)``，不要有空格或引号。在使用 AI 开"
-"发脚本时，这种情况很常见，因为它经常引入额外的空格，例如分隔参数的逗号后的空"
-"格或值周围的引号。"
+"果你有一个检查艺术家是否为 \"My Artist\" 的脚本，但如果检查是 "
+"``$eq(%artist%, My Artist)`` 或 ``$eq(%artist%,\"My Artist\")``，匹配将不会成"
+"功。正确的语法应该是 ``$eq(%artist%,My Artist)``，不要有空格或引号。在使用 "
+"AI 开发脚本时，这种情况很常见，因为它经常引入额外的空格，例如分隔参数的逗号后"
+"的空格或值周围的引号。"
 
 #: ../../functions/list_by_type.rst:14
 msgid ":index:`Assignment Functions <scripting functions; assignment>`"
 msgstr ":index:`赋值函数 <scripting functions; assignment>`"
 
 #: ../../functions/list_by_type.rst:16
-msgid "These functions are used to assign (or unassign) a value to a tag or variable. The assignment scripting functions are:"
+msgid ""
+"These functions are used to assign (or unassign) a value to a tag or "
+"variable. The assignment scripting functions are:"
 msgstr "这些函数用于为标签或变量分配（或取消分配）值。赋值脚本函数是："
 
 #: ../../functions/list_by_type.rst:32
@@ -77,7 +91,9 @@ msgid ":index:`Text Functions <scripting functions; text>`"
 msgstr ":index:`文本函数 <scripting functions; text>`"
 
 #: ../../functions/list_by_type.rst:42
-msgid "These functions are used to manage text (e.g.: extract, replace or format) in tags or variables. The text scripting functions are:"
+msgid ""
+"These functions are used to manage text (e.g.: extract, replace or format) "
+"in tags or variables. The text scripting functions are:"
 msgstr ""
 "这些函数用于管理标签或变量中的文本（例如：提取、替换或格式化）。文本脚本函数"
 "是："
@@ -187,7 +203,9 @@ msgid ":index:`Multi-Value Functions <scripting functions; multi-value>`"
 msgstr ":index:`多值函数 <scripting functions; multi-value>`"
 
 #: ../../functions/list_by_type.rst:107
-msgid "These functions are used to manage multi-value tags or variables. The multi-value scripting functions are:"
+msgid ""
+"These functions are used to manage multi-value tags or variables. The multi-"
+"value scripting functions are:"
 msgstr "这些函数用于管理多值标签或变量。多值脚本函数是："
 
 #: ../../functions/list_by_type.rst:128
@@ -239,7 +257,9 @@ msgid ":index:`Mathematical Functions <scripting functions; mathematical>`"
 msgstr ":index:`数学函数 <scripting functions; mathematical>`"
 
 #: ../../functions/list_by_type.rst:144
-msgid "These functions are used to perform arithmetic operations on tags or variables. The mathematical scripting functions are:"
+msgid ""
+"These functions are used to perform arithmetic operations on tags or "
+"variables. The mathematical scripting functions are:"
 msgstr "这些函数用于对标签或变量执行算术运算。数学脚本函数是："
 
 #: ../../functions/list_by_type.rst:159
@@ -267,17 +287,24 @@ msgid ":index:`Conditional Functions <scripting functions; conditional>`"
 msgstr ":index:`条件函数 <scripting functions; conditional>`"
 
 #: ../../functions/list_by_type.rst:169
-msgid "These functions are used to test for various conditions and take appropriate actions depending on the results of the test."
+msgid ""
+"These functions are used to test for various conditions and take appropriate "
+"actions depending on the results of the test."
 msgstr "这些函数用于测试各种条件并根据测试结果采取适当的操作。"
 
 #: ../../functions/list_by_type.rst:173
-msgid "Formatting the code in your scripts by adding things like spaces, tabs and newlines could affect the results of conditional tests because these characters are not ignored. For example,"
+msgid ""
+"Formatting the code in your scripts by adding things like spaces, tabs and "
+"newlines could affect the results of conditional tests because these "
+"characters are not ignored. For example,"
 msgstr ""
 "通过添加空格、制表符和换行符等方式格式化您的脚本可能会影响条件测试的结果，因"
 "为这些字符不会被忽略。例如，"
 
 #: ../../functions/list_by_type.rst:185
-msgid "will return \"Not Empty\" for ``%test1%``, but \"Empty\" for ``%test2%``. The different values are a result of the indentation in the formatted code."
+msgid ""
+"will return \"Not Empty\" for ``%test1%``, but \"Empty\" for ``%test2%``. "
+"The different values are a result of the indentation in the formatted code."
 msgstr ""
 "将为 ``%test1%`` 返回 \"非空\"，而为 ``%test2%`` 返回 \"空\"。不同的值是由于"
 "格式化代码中的缩进造成的。"
@@ -383,7 +410,9 @@ msgid ":index:`Information Functions <scripting functions; information>`"
 msgstr ":index:`信息函数 <scripting functions; information>`"
 
 #: ../../functions/list_by_type.rst:248
-msgid "These functions provide additional system or data information. The information scripting functions are:"
+msgid ""
+"These functions provide additional system or data information. The "
+"information scripting functions are:"
 msgstr "这些函数提供额外的系统或数据信息。信息脚本函数是："
 
 #: ../../functions/list_by_type.rst:267
@@ -427,8 +456,12 @@ msgid ":index:`Loop Functions <scripting functions; loop>`"
 msgstr ":index:`循环函数 <scripting functions; loop>`"
 
 #: ../../functions/list_by_type.rst:281
-msgid "These functions provide the ability to repeat actions based on the contents of a multi-value variable or the result of a conditional test. The loop scripting functions are:"
-msgstr "这些函数提供根据多值变量的内容或条件测试结果重复操作的能力。循环脚本函数是："
+msgid ""
+"These functions provide the ability to repeat actions based on the contents "
+"of a multi-value variable or the result of a conditional test. The loop "
+"scripting functions are:"
+msgstr ""
+"这些函数提供根据多值变量的内容或条件测试结果重复操作的能力。循环脚本函数是："
 
 #: ../../functions/list_by_type.rst:293
 msgid ":doc:`func_foreach`"
