@@ -18,7 +18,7 @@ It is recommended for most users to leave these settings at their default values
 
 **Minimum similarity**
 
-   This setting determines the minimum match between a cluster and a release on MusicBrainz for the release to be considered and presented as a possible match. Matches below this threshhold will be ignored.
+   This setting determines the minimum match between a cluster and a release on MusicBrainz for the release to be considered and presented as a possible match. Matches below this threshold will be ignored.
 
 **Minimum margin between best and second-best match**
 

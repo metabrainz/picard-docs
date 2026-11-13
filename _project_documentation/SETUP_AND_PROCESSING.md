@@ -23,7 +23,7 @@ These are branches containing the stable documentation for released versions of 
 
 #### Next Version
 
-This branch is called `next_version`, and is intended to collect documentation changes related to new or changed functionality for an upcoming major version of the software that hasn't yet been publically released.
+This branch is called `next_version`, and is intended to collect documentation changes related to new or changed functionality for an upcoming major version of the software that hasn't yet been publicly released.
 
 - This branch will not be automatically published on ReadTheDocs.
 - The branch will typically be merged into the `main` branch when the software is publicly released.

@@ -29,14 +29,14 @@ The pull request with the proposed changes is reviewed by the editor for overall
 Source branch: various (specific to the change / pull request)<br />
 Target branch: `main` (or `v{major}.{minor}` for changes to prior versions of the documentation)
 
-Once the pull request has received editorial and (if necessary) technical approval and all review comments have been addressed, it is merged into the `main` branch (or `v{major}.{minor}` branch for changes to prior versions of the documentation). In preparation for translation of the changes to other languages, the editor will generate updated translation template `*.pot` files which are are uploaded to the Weblate translation server used for the project. The translators are notified through their accounts on Weblate that there are changes requiring translation.
+Once the pull request has received editorial and (if necessary) technical approval and all review comments have been addressed, it is merged into the `main` branch (or `v{major}.{minor}` branch for changes to prior versions of the documentation). In preparation for translation of the changes to other languages, the editor will generate updated translation template `*.pot` files which are uploaded to the Weblate translation server used for the project. The translators are notified through their accounts on Weblate that there are changes requiring translation.
 
 ## 4. Updated documentation translated
 
 Source branch: `main` (through Weblate)<br />
 Target branch: `main` (or `v{major}.{minor}` branch for changes to prior versions of the documentation)
 
-The translators provide updated translations to accommodate the changes to the documentation. Depending on the tools used for translating and producing the `*.po` files, the translators may submit pull requests directly for review or the translations can be updated through the Weblate server (preferred). Once a translation pull request has been revied and approved, the pull request will be merged. If the translation updates are being managed on the Weblate server, then they will be merged automatically into the `main` branch.
+The translators provide updated translations to accommodate the changes to the documentation. Depending on the tools used for translating and producing the `*.po` files, the translators may submit pull requests directly for review or the translations can be updated through the Weblate server (preferred). Once a translation pull request has been reviewed and approved, the pull request will be merged. If the translation updates are being managed on the Weblate server, then they will be merged automatically into the `main` branch.
 
 All translation updates to prior versions of the documentation must be submitted as pull requests to the appropriate `v{major}.{minor}` branch rather than the `main` branch.
 

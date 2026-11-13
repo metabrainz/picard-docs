@@ -9,7 +9,7 @@ There are typically two reasons that Picard will run very slowly or appear to be
 
    When processing a large number of files in one batch, Picard can run into issues either due to processing each file (e.g.: AcoustID fingerprinting) or during lookups following clustering or fingerprinting because of all of the information requests to the MusicBrainz server API, as well as downloading cover art. Even though Picard may still be working its way through the backlog, the user interface may become non-responsive and appear that the program has stalled or frozen.
 
-   The impact of processing files in large batches is exacerbated when using plugins that make additional information request calls to the MusicBrains server API.
+   The impact of processing files in large batches is exacerbated when using plugins that make additional information request calls to the MusicBrainz server API.
 
    If you are processing a large library of files, it is generally more effective to process smaller batches (e.g.: 200 files) at a time, first retrieving the information using a cluster and lookup process, and then processing any remaining unmatched files using the scan process. Please see the :doc:`../usage/retrieve` section for more information.
 

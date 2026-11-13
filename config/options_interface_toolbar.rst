@@ -3,7 +3,7 @@
 :index:`Toolbar <configuration; toolbar, user interface; toolbar>`
 ==================================================================
 
-This allows you to to add, remove or rearrange the items displayed in the Action Toolbar.
+This allows you to add, remove or rearrange the items displayed in the Action Toolbar.
 
 .. only:: not latex
 

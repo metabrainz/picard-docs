@@ -29,6 +29,7 @@ Contributors include (in alphabetic surname order):
 - Soham Kukreti
 - Laurent Monin
 - Maurits Meulenbelt
+- Sorathiya Nabhag
 - Akash Nagaraj
 - Jonatan Nyberg
 - Kelvin Olabanji
