@@ -166,4 +166,31 @@ This lists the attached profiles in the order in which they appear in the profil
 
 .. warning::
 
-   It is important to understand that when you click the :guilabel:`Make It So!` button **all** of the option settings on **all** pages will be saved. If an option is managed by one or more profiles that are currently enabled, the option will be highlighted and it will be saved to the **first** enabled profile in the profile stack that manages the option. If there are no enabled profiles that manage the option, the option will not be highlighted and it will be saved to the "user settings" profile which is the user's normal settings, contains all options, is at the bottom of the profile stack, and is always enabled. The "user settings" profile cannot be modified is not shown in the profile management page.
+   It is important to understand that when you click the :guilabel:`Make It So!` button **all** of the option settings on **all** pages will be saved. If an option is managed by one or more profiles that are currently enabled, the option will be highlighted and it will be saved to the **first** enabled profile in the profile stack that manages the option. If there are no enabled profiles that manage the option, the option will not be highlighted and it will be saved to the "user settings" profile which is the user's normal settings, contains all options, is at the bottom of the profile stack, and is always enabled. The "user settings" profile cannot be modified and is not shown in the profile management page.
+
+Profile Warning Message
+-----------------------
+
+When an enabled profile manages one or more of the options on an options page, a warning message is shown at the bottom of the page to tell you which profiles are involved. The message is not shown if none of the enabled profiles manage any of the options on the page. Clicking the help button at the right of the message will open this page.
+
+.. only:: not latex
+
+   .. image:: images/options-profile-warning-overridden.png
+      :align: center
+      :alt: Metadata options page with a highlighted setting and a warning message at the bottom saying that the highlighted settings are overridden by "My profile (1)"
+
+   |
+
+.. only:: latex
+
+   .. image:: images/options-profile-warning-overridden.png
+      :align: center
+      :width: 75%
+      :alt: Metadata options page with a highlighted setting and a warning message at the bottom saying that the highlighted settings are overridden by "My profile (1)"
+
+The message names the profiles in the order they appear in the profile stack. If there are more than three, only the first three are shown, followed by an ellipsis. There are two versions of the message:
+
+- "The highlighted settings on this page are overridden by ..." is shown when a profile stores a value that is different from the value in your "user settings". These options have a strong highlight.
+- "The highlighted settings on this page are tracked by ..." is shown when the profile manages the option but its value is the same as your "user settings", or it does not have a value yet. These options have a lighter highlight.
+
+If any profile overrides an option on the page, only the profiles that override options are named in the message. You can hover your cursor over a highlighted option to see which profile it is controlled by.
