@@ -14,6 +14,8 @@
       :width: 70%
       :align: center
 
+.. _opt_metadata_standardize_artist_names:
+
 **Standardize artist names**
 
    Artists are frequently credited with multiple names or aliases, and this option allows you to choose how Picard should standardize them for consistent use in tags. There are three available options:
@@ -30,29 +32,43 @@
 
       If "Artist names" under the "Translate names when available" option is also checked, it will override this option if a suitable alias is found.
 
+.. _opt_metadata_use_standardized_instrument_credits:
+
 **Use standardized instrument credits**
 
    Check to only use standard names for instruments in performer relationships. Uncheck to use the instruments as credited in the relationship.
+
+.. _opt_metadata_use_standardized_vocal_credits:
 
 **Use standardized vocal credits**
 
    Check to only use standard names for vocals in performer relationships. Uncheck to use the vocals as credited in the relationship.
 
+.. _opt_metadata_convert_unicode_punctuation_characters_to_ascii:
+
 **Convert Unicode punctuation characters to ASCII**
 
    Converts Unicode punctuation characters in MusicBrainz data to ASCII for consistent use of punctuation in tags. For example, right single quotation marks are converted to ASCII apostrophes ('), and horizontal ellipses are converted to three full stops (...).
+
+.. _opt_metadata_use_release_relationships:
 
 **Use release relationships**
 
    Check to retrieve and write release-level relationships (e.g.: URLs, composer, lyricist, performer, conductor, or DJ mixer) to your files. You must have this enabled to use Picard to retrieve cover art.
 
+.. _opt_metadata_use_track_relationships:
+
 **Use track relationships**
 
    Check to write track-level relationships (e.g.: composer, lyricist, performer, or remixer) to your files.
 
+.. _opt_metadata_guess_track_number_and_title_from:
+
 **Guess track number and title from filename if empty**
 
    If checked, Picard will try to guess a file's track number or title from the filename if the ``tracknumber`` or ``title`` tag is empty.
+
+.. _opt_metadata_translate_names_when_available:
 
 **Translate names when available**
 
@@ -70,6 +86,8 @@
 
    If there is no match for the selected locale for an artist and "English" is the selected locale, Picard can optionally use the artist sort name (which is, by Style Guideline, stored in Latin script) as a fallback. This is enabled by checking the "Use artist sort name for translation" option.
 
+.. _opt_metadata_preferred_locales:
+
 **Preferred locales**
 
    To select which locales to use, click the :guilabel:`Select...` button beside the list of selected locales. This will bring up a new dialog window where you can add, remove or reorder your list of selected locales.
@@ -86,6 +104,8 @@
          :align: center
 
    Once you are satisfied with your selections, click the :guilabel:`Save` button to transfer the list to your option settings and close the dialog. Note that the changes will not be saved permanently until you click the :guilabel:`Make It So!` button.
+
+.. _opt_metadata_ignore_name_translation_for_these_language:
 
 **Ignore name translation for these language scripts**
 
@@ -110,13 +130,19 @@
 
    Once you are satisfied with your selections, click the :guilabel:`Save` button to transfer the list to your option settings and close the dialog. Note that the changes will not be saved permanently until you click the :guilabel:`Make It So!` button.
 
+.. _opt_metadata_use_artist_sort_name_for_translation:
+
 **Use artist sort name for translation**
 
    When this option is enabled, if there is no match for the selected locale for an artist, Picard can use the artist sort name (which is, by Style Guideline, stored in Latin script) as a fallback.
 
+.. _opt_metadata_various_artists:
+
 **Various artists**
 
    Choose how you want the "Various Artists" artist spelled.
+
+.. _opt_metadata_standalone_recordings:
 
 **Standalone recordings**
 

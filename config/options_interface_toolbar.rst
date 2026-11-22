@@ -16,6 +16,8 @@ This allows you to add, remove or rearrange the items displayed in the Action To
       :width: 75%
       :align: center
 
+.. _opt_interface_toolbar_customize_action_toolbar:
+
 **Customize Action Toolbar**
 
    Items that can be included in the toolbar include:

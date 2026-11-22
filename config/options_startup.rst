@@ -14,23 +14,33 @@
       :width: 70%
       :align: center
 
+.. _opt_startup_check_for_documentation_updates_during_start:
+
 **Check for documentation updates during start-up**
 
    This option determines whether or not Picard will automatically check for :index:`available versions and languages on ReadTheDocs <pair: configuration; documentation checking>` during startup in order to provide the best match when displaying a help page. If this is disabled, the latest version of the documentation will be displayed in English in your web browser.
 
    If the option is disabled, a popup message will be displayed during startup asking if you want to enable the documentation checking. The message also includes an option to disable the popup from displaying in the future. The popup can also be enabled or disabled through a setting in the :doc:`options_interface` section.
 
+.. _opt_startup_check_for_plugin_updates_during_start:
+
 **Check for plugin updates during start-up**
 
    This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup. If this is enabled and an update to an installed plugin is available, a notification icon will be displayed in the status bar. Clicking the icon will open the Plugins options page where you can review the available plugin updates and select which ones to install.
+
+.. _opt_startup_check_for_program_updates_during_start:
 
 **Check for program updates during start-up**
 
    This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; program update checking>` during startup. In any case, you can have Picard check for program updates at any time using :menuselection:`"Help --> Check for update"`.
 
+.. _opt_startup_days_between_checks:
+
 **Days between checks**
 
    This option allows you to limit the automatic program update checking by selecting the interval, in days, between checks. Set this to 1 if you want to check daily, 7 for weekly checks, and so on. Note that this only applies if the "Check for program updates during start-up" option is enabled.
+
+.. _opt_startup_updates_to_check:
 
 **Updates to check**
 
@@ -45,6 +55,8 @@
 .. note::
 
    The program update checking related settings and :menuselection:`"Help --> Check for update..."` command may not be available when Picard is distributed as a package. In that case, the user should check with the maintainer of the package to determine when an update is available.
+
+.. _opt_startup_default_log_level:
 
 **Default Log Level**
 

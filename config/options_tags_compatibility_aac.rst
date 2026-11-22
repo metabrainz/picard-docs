@@ -16,13 +16,19 @@ Picard can save APEv2 tags to pure AAC files, which by default do not support ta
       :width: 70%
       :align: center
 
+.. _opt_tags_compatibility_aac_save_apev2_tags:
+
 **Save APEv2 tags**
 
    Picard will save APEv2 tags to the files.
 
+.. _opt_tags_compatibility_aac_do_not_save_tags:
+
 **Do not save tags**
 
    Picard will not save any tags to the files, but you can still use Picard to rename them. By default existing APEv2 tags will be kept in the file.
+
+.. _opt_tags_compatibility_aac_remove_apev2_tags:
 
 **Remove APEv2 tags**
 

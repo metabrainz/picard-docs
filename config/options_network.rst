@@ -16,13 +16,19 @@ These settings allow you to configure the network settings used by Picard.
       :width: 75%
       :align: center
 
+.. _opt_network_web_proxy:
+
 **Web Proxy**
 
    If you need a proxy to make an outside network connection you may specify one here. You can choose between HTTP and SOCKS proxy. The required settings are **Server Address** and **Port**. If the proxy requires authentication also enter **Username** and **Password**.
 
+.. _opt_network_request_timeout_in_seconds:
+
 **Request timeout in seconds**
 
    By default Picard will abort running network requests after 30 seconds of inactivity. If needed you can change the timeout period here.
+
+.. _opt_network_cache_usage:
 
 **Cache usage**
 
@@ -31,13 +37,19 @@ These settings allow you to configure the network settings used by Picard.
 .. |lookup_tagger| image:: images/mblookup-tagger.png
    :height: 1em
 
+.. _opt_network_browser_integration:
+
 **Browser Integration**
 
    The browser integration allows you to load releases and recordings into Picard directly from the MusicBrainz website. Once you have opened musicbrainz.org in your browser from Picard, the website will show the green tagger button |lookup_tagger| next to releases and recordings. Clicking on this button will load the corresponding release or recording into Picard.
 
+.. _opt_network_default_listening_port:
+
 **Default listening port**
 
    This identifies the default port Picard will listen on for the browser integration. If the port is not available Picard will try to increase the port number by one until it finds a free port.
+
+.. _opt_network_listen_only_on_localhost:
 
 **Listen only on localhost**
 

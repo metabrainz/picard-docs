@@ -16,11 +16,15 @@ In this section you can decide which types of cover art you would like to downlo
       :width: 80%
       :align: center
 
+.. _opt_cover_art_archive_download_only_selected_image_types:
+
 **Download only selected image types**
 
    When selecting the cover art image types, you can select the types to both include and exclude from the download list. CAA images with an image type found in the "Include" list will be downloaded and used unless they also have an image type found in the "Exclude" list. Images with types found in the "Exclude" list will never be used. Image types not appearing in either the "Include" or "Exclude" lists will not be considered when determining whether or not to download and use a CAA image.
 
    Most music players will display only one piece of cover art for the album, and most people select Front (cover) for that.
+
+.. _opt_cover_art_archive_only_use_images_of_at_most:
 
 **Only use images of at most the following size**
 
@@ -29,6 +33,8 @@ In this section you can decide which types of cover art you would like to downlo
    .. note::
 
       If the selected size is not available, then Picard will use the largest available size below the selected size.
+
+.. _opt_cover_art_archive_download_only_approved_images:
 
 **Download only approved images**
 

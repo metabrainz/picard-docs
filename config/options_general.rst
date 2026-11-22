@@ -14,6 +14,8 @@
       :width: 70%
       :align: center
 
+.. _opt_general_server_address:
+
 **Server address**
 
    The domain name for the MusicBrainz database server used by Picard to get details of your music. Default value: musicbrainz.org (for the main MusicBrainz server).
@@ -31,13 +33,19 @@
          :width: 70%
          :align: center
 
+.. _opt_general_server_port:
+
 **Port**
 
    The port number for the server. Default value: 443 (for the main MusicBrainz server).
 
+.. _opt_general_enable_managing_user_collections:
+
 **Enable managing user collections**
 
    This option allows you to partially manage your MusicBrainz collections from within Picard. It provides a context (right-click) menu item for each album in the Album pane to display your collections and whether or not the album belongs to a collection. It will also automatically add any new albums to your collections when the album is saved. See the `Collections <https://musicbrainz.org/doc/Collections>`_ documentation on the MusicBrainz website for additional information regarding collections.
+
+.. _opt_general_remove_complete_albums_after_saving:
 
 **Remove complete albums after saving**
 

@@ -20,13 +20,19 @@ The file naming script editor is used to manage the file naming scripts availabl
 
 The editor screen has the following sections:
 
+.. _opt_filerenaming_editor_select_the_file_naming_script_to:
+
 **Select the file naming script to use**
 
    This option allows the user to select the file naming script to use from the list of scripts available. The selected script will show up in the editing section, where it can be modified if required.
 
+.. _opt_filerenaming_editor_title:
+
 **Title**
 
    The title assigned to the currently selected script. This can be modified if required.
+
+.. _opt_filerenaming_editor_script:
 
 **Script**
 
@@ -45,6 +51,8 @@ The editor screen has the following sections:
    .. note::
 
       Any new tags set or tags modified by the file naming script will not be written to the output files' metadata.
+
+.. _opt_filerenaming_editor_files_will_be_named_like_this:
 
 **Files will be named like this**
 

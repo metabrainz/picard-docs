@@ -16,6 +16,8 @@ This allows you to perform some maintenance activities regarding Picard's config
       :width: 70%
       :align: center
 
+.. _opt_maintenance_configuration_file:
+
 **Configuration File**
 
    This displays the path and file name of the configuration file currently used by Picard. This file contains all of your settings and preferences, and the format of the file is consistent across operating systems.
@@ -24,6 +26,8 @@ This allows you to perform some maintenance activities regarding Picard's config
 
    The :guilabel:`Load Backup` button allows you to replace the current configuration file with a backup created earlier. Loading a backup configuration file will replace all of the current configuration settings. Prior to loading the file, Picard will automatically save a backup copy of the current file.
 
+
+.. _opt_maintenance_configuration_file_cleanup:
 
 **Configuration File Cleanup**
 

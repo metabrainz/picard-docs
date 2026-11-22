@@ -14,33 +14,49 @@
       :width: 70%
       :align: center
 
+.. _opt_genres_use_genres_from_musicbrainz:
+
 **Use genres from MusicBrainz**
 
    Use genres provided by MusicBrainz and save them to the genre tag.
+
+.. _opt_genres_only_use_my_genres:
 
 **Only use my genres**
 
    When enabled, Picard will only write genres you personally have submitted to MusicBrainz. You'll need to set your username and password to use this feature.
 
+.. _opt_genres_fall_back_to_album_s_artists:
+
 **Fall back to album's artists genres**
 
    If there is no genre set for the release or release group on MusicBrainz, use the genre of the album artist instead.
+
+.. _opt_genres_use_folksonomy_tags_as_genre:
 
 **Use folksonomy tags as genre**
 
    Check to use all folksonomy tags to set the genre. Otherwise only the tags considered by MusicBrainz to be proper genres will be used.
 
+.. _opt_genres_minimal_genre_usage:
+
 **Minimal genre usage**
 
    Choose how popular the genre must be before it is written by Picard. Default: 90%. Lowering the value here will lead to more, but possibly less relevant, genres in your files.
+
+.. _opt_genres_maximum_number_of_genres:
 
 **Maximum number of genres**
 
    Choose how many genres to use. Default: 5. If you only want a single genre, set this to 1.
 
+.. _opt_genres_join_multiple_genres_with:
+
 **Join multiple genres with**
 
    Select which character should be used to separate multiple genres.
+
+.. _opt_genres_genres_or_folksonomy_tags_to_include:
 
 **Genres or folksonomy tags to include or exclude**
 

@@ -16,17 +16,25 @@
       :width: 75%
       :align: center
 
+.. _opt_interface_show_text_labels_under_icons:
+
 **Show text labels under icons**
 
    If this option is disabled, the text labels under the icons in the toolbar will not be displayed, causing the toolbar to appear a little smaller.
+
+.. _opt_interface_show_icons_in_menus:
 
 **Show icons in menus**
 
    Some users prefer to disable menu icons, which is the default behavior for macOS systems. This option allows the user to select whether the icons are displayed in the menus.
 
+.. _opt_interface_user_interface_language:
+
 **User interface language**
 
    By default, Picard will display in the language displayed by your operating system, however you can override this and select a different language if needed.
+
+.. _opt_interface_user_interface_color_theme:
 
 **User interface color theme**
 
@@ -40,6 +48,8 @@
 
       The colors for the light and dark themes can be customized in the :doc:`options_interface_colors` section. Separate sets of color selections are maintained for the light and dark themes. The colors for the currently displayed theme are the ones displayed for editing.
 
+.. _opt_interface_allow_selection_of_multiple_directories:
+
 **Allow selection of multiple directories**
 
    Enabling this option will bypass the native directory selector and use Qt's file dialog. This may be desirable since the native directory selector generally doesn't allow you to select more than one directory. This applies to the :menuselection:`"File --> Add folder"` dialog. The file browser always allows multiple directory selection.
@@ -48,25 +58,37 @@
 
       When enabling the multiple directories option setting Picard will no longer use the system file picker for selecting directories. This may result in reduced functionality.
 
+.. _opt_interface_show_the_new_user_dialog_when:
+
 **Show the new user dialog when starting Picard**
 
    When this is enabled, Picard will show a dialog intended for new users when you start the program. This displays a warning about the consequences of saving files, along with a suggestion for minimizing the impact until you have confirmed that your configuration produces the expected results. It also provides a link to the on-line documentation.
+
+.. _opt_interface_show_a_quit_confirmation_dialog_for:
 
 **Show a quit confirmation dialog for unsaved changes**
 
    When this is enabled, Picard will show a dialog when you try to quit the program with unsaved files loaded. This may help prevent accidentally losing tag changes you've made, but not yet saved.
 
+.. _opt_interface_show_a_confirmation_dialog_when_saving:
+
 **Show a confirmation dialog when saving files**
 
    When this is enabled, Picard will show a dialog when you save files, indicating what actions will be performed on the files and the number of files to be saved. This may help prevent accidentally making changes that you are not expecting.
+
+.. _opt_interface_adjust_horizontal_position_in_file_browser:
 
 **Adjust horizontal position in file browser automatically**
 
    When this is enabled, Picard will automatically scroll the file browser display to keep relevant content visible.
 
+.. _opt_interface_begin_browsing_in_the_following_directory:
+
 **Begin browsing in the following directory**
 
    By default, Picard remembers the last directory used to load files. If you enable this option and provide a directory, Picard will always start in the directory provided.
+
+.. _opt_interface_reset_tutorial_and_setup_wizard:
 
 **Reset tutorial and setup wizard**
 
