@@ -114,9 +114,11 @@ These functions are used to manage multi-value tags or variables. The multi-valu
       func_cleanmulti
       func_getmulti
       func_join
+      func_keepmulti
       func_lenmulti
       func_map
       func_performer
+      func_removemulti
       func_replacemulti
       func_reversemulti
       func_slice
@@ -128,9 +130,11 @@ These functions are used to manage multi-value tags or variables. The multi-valu
    | :doc:`func_cleanmulti`
    | :doc:`func_getmulti`
    | :doc:`func_join`
+   | :doc:`func_keepmulti`
    | :doc:`func_lenmulti`
    | :doc:`func_map`
    | :doc:`func_performer`
+   | :doc:`func_removemulti`
    | :doc:`func_replacemulti`
    | :doc:`func_reversemulti`
    | :doc:`func_slice`

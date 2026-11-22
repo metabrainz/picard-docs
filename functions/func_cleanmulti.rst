@@ -11,8 +11,15 @@ $cleanmulti
 
 **Description:**
 
-Removes all empty elements from the multi-value variable ``name``.
+Permanently removes all empty elements from the multi-value variable ``name``, and returns an empty string.
 
+.. note::
+
+   Unlike most functions, in this case ``name`` is specified **without** enclosing it with percent signs (%).
+
+.. warning::
+
+   The variable will modified and its original contents will no longer be available. Use :doc:`$removemulti() <func_removemulti>` to get a copy without empty elements and leave the original variable unchanged.
 
 **Example:**
 
