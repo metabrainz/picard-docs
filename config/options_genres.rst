@@ -26,7 +26,7 @@
 
    When enabled, Picard will only write genres you personally have submitted to MusicBrainz. You'll need to set your username and password to use this feature.
 
-.. _opt_genres_fall_back_to_album_s_artists:
+.. _opt_genres_fall_back_to_album_artists_genres:
 
 **Fall back to album's artists genres**
 

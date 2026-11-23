@@ -18,13 +18,13 @@ Picard can filter and process the images downloaded from the providers. Image pr
       :width: 70%
       :align: center
 
-.. _opt_cover_art_processing_discard_images_if_below_the_given:
+.. _opt_cover_art_processing_discard_images_if_below_size:
 
 **Discard images if below the given size**
 
    This filter will discard any image with its width or its height lower than the given values. With some providers, like the Cover Art Archive, the image is discarded before it is downloaded.
 
-.. _opt_cover_art_processing_resize_images_to_the_given_size:
+.. _opt_cover_art_processing_resize_images_to_size:
 
 **Resize images to the given size**
 
@@ -42,7 +42,7 @@ Picard can filter and process the images downloaded from the providers. Image pr
 
    Note that there are separate settings for images saved to tags and images saved to files. This allows things like embedding a smaller image in the audio file, but retaining a larger image in the album directory.
 
-.. _opt_cover_art_processing_convert_images_to_the_given_format:
+.. _opt_cover_art_processing_convert_images_to_format:
 
 **Convert images to the given format**
 

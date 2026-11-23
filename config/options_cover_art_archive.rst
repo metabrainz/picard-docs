@@ -24,7 +24,7 @@ In this section you can decide which types of cover art you would like to downlo
 
    Most music players will display only one piece of cover art for the album, and most people select Front (cover) for that.
 
-.. _opt_cover_art_archive_only_use_images_of_at_most:
+.. _opt_cover_art_archive_only_use_images_of_max_size:
 
 **Only use images of at most the following size**
 

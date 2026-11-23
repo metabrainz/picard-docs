@@ -58,13 +58,13 @@
 
       When enabling the multiple directories option setting Picard will no longer use the system file picker for selecting directories. This may result in reduced functionality.
 
-.. _opt_interface_show_the_new_user_dialog_when:
+.. _opt_interface_show_the_new_user_dialog:
 
 **Show the new user dialog when starting Picard**
 
    When this is enabled, Picard will show a dialog intended for new users when you start the program. This displays a warning about the consequences of saving files, along with a suggestion for minimizing the impact until you have confirmed that your configuration produces the expected results. It also provides a link to the on-line documentation.
 
-.. _opt_interface_show_a_quit_confirmation_dialog_for:
+.. _opt_interface_show_a_quit_confirmation_dialog:
 
 **Show a quit confirmation dialog for unsaved changes**
 
