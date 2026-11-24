@@ -5,21 +5,21 @@
 $copy
 =====
 
-| Usage: **$copy(target,source)**
+| Usage: **$copy(new,old)**
 | Category: assignment
 | Implemented: Picard 0.9
 
 **Description:**
 
-Copies metadata from variable ``source`` to ``target``. The difference from ``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-value variables without flattening them.
+Copies metadata from variable ``old`` to ``new``. The difference from ``$set(new,%old%)`` is that ``$copy(new,old)`` copies multi-value variables without flattening them.
 
 .. note::
 
-   Unlike most functions, in this case the ``source`` is specified **without** enclosing it with percent signs (%).
+   Unlike most functions, in this case ``new`` and ``old`` are specified **without** enclosing them with percent signs (%).
 
 .. warning::
 
-   If the variable ``target`` already exists, it will be overwritten by ``source``.
+   If the variable ``new`` already exists, it will be overwritten by ``old``.
 
 **Example:**
 

@@ -5,13 +5,13 @@
 $performer
 ==========
 
-| Usage: **$performer(pattern[,separator])**
+| Usage: **$performer([pattern[,join]])**
 | Category: multi-value
 | Implemented: Picard 0.10
 
 **Description:**
 
-Returns the performers where the performance type matches ``pattern`` separated by ``separator`` (or a comma followed by a space ", " if not passed). If ``pattern`` is blank, then all performers will be returned. Note that by default the ``pattern`` to be matched is case-sensitive and can appear anywhere in the tag.
+Returns the performers where the performance type matches ``pattern`` joined by ``join`` (or a comma followed by a space ", " if not passed). If ``pattern`` is blank, then all performers will be returned. Note that by default the ``pattern`` to be matched is case-sensitive and can appear anywhere in the tag.
 
 As of version 2.7, you can explicitly define a regular expression in the form /pattern/flags. The only supported flag is "i" (ignore case). For more information about regular expressions, please see the `article on Wikipedia <https://wikipedia.org/wiki/Regular_expression>`_.
 

@@ -5,13 +5,15 @@
 $inmulti
 ========
 
-| Usage: **$inmulti(%x%,y)**
+| Usage: **$inmulti(multi,value[,separator])**
 | Category: conditional
 | Implemented: Picard 1.0
 
 **Description:**
 
-Returns true if multi-value variable ``x`` contains exactly ``y`` as one of its values. Note that comparisons are case-sensitive.
+Returns true if the multi-value variable ``multi`` contains exactly ``value`` as one of its values. Note that comparisons are case-sensitive.
+
+A literal value representing a multi-value can be substituted for ``multi``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable.
 
 .. only:: html
 

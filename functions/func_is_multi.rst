@@ -5,7 +5,7 @@
 $is_multi
 =========
 
-| Usage: **$is_multi(x)**
+| Usage: **$is_multi(multi)**
 | Category: conditional
 | Implemented: Picard 2.7
 
