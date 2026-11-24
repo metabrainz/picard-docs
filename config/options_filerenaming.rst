@@ -18,6 +18,8 @@ These options determine how Picard handles files when they are saved with update
       :width: 80%
       :align: center
 
+.. _opt_filerenaming_move_files_when_saving:
+
 **Move files when saving**
 
    If selected, this option tells Picard to move your audio files to a new directory when it saves them. One use for this is to keep your work organized: all untagged files are under "Directory A", and when Picard tags them it moves them to "Directory B". When "Directory A" is empty, your tagging work is done.
@@ -28,9 +30,13 @@ These options determine how Picard handles files when they are saved with update
 
       The "Rename Files" and "Move Files" options are independent of one another. "Rename Files" refers to Picard changing file names, typically based on artist and track names. "Move Files" refers to Picard moving files to new directories, based on a specified parent directory and subdirectories, typically based on album artist name and release title. However, they both use the same "file naming string". "Move files" uses the portion up until the last '/'. "Rename files" uses the portion after the last '/'.
 
+.. _opt_filerenaming_destination_directory:
+
 **Destination directory**
 
    This specifies the destination parent directory to which files are moved when they are saved, if the "Move files when saving" option is selected. If you use the directory "." the files will be moved relative to their current location. If they are already in some sort of directory structure, this will probably not do what you want!
+
+.. _opt_filerenaming_move_additional_files:
 
 **Move additional files**
 
@@ -53,21 +59,31 @@ These options determine how Picard handles files when they are saved with update
 
       This option can also be used to move subdirectories to the new release directory. This is done by specifying the name of the subdirectory in the list of files to be moved. For example, if your album folders have a subfolder called "Artwork", "covers" or "scans" that contains additional image files that you also want to move to the new release directory, simply add "artwork", "covers" and "scans" to the list of additional file matching patterns.
 
+.. _opt_filerenaming_delete_empty_directories:
+
 **Delete empty directories**
 
    When selected, Picard will remove directories that have become empty once a move is completed. Leave this unchecked if you want Picard to leave the source directory structure unchanged. Checking this box may be convenient if you are using the "move files" option to organize your work. An empty directory has no more work for you to do, and deleting the directory makes that clear.
+
+.. _opt_filerenaming_overwrite_existing_files:
 
 **Overwrite existing files**
 
    Unless selected, if a file is found at the destination, the operation for that specific additional file is skipped, and the original file is left untouched. This ensures that no data is unintentionally overwritten.
 
+.. _opt_filerenaming_rename_files_when_saving:
+
 **Rename files when saving**
 
    Select this option to let Picard change the file and directory names of your files when it saves them, in order to make the file and directory names consistent with the new metadata.
 
+.. _opt_filerenaming_active_file_naming_script:
+
 **Active file naming script**
 
    As of Picard version 2.7, multiple file naming scripts are supported. This option allows the user to select the file naming script to use from the list of scripts available. Scripts can be either system preset scripts or user-defined scripts. The available scripts are managed in the :doc:`File naming script editor <options_filerenaming_editor>` screen, which is available from the :menuselection:`"Options --> File naming scripts --> Edit scripts…"` menu item.
+
+.. _opt_filerenaming_files_will_be_named_like_this:
 
 **Files will be named like this**
 

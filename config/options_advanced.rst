@@ -16,17 +16,25 @@ This provides access to some of the advanced settings for Picard.
       :width: 75%
       :align: center
 
+.. _opt_advanced_include_sub_folders_when_adding_files:
+
 **Include sub-folders when adding files from folder**
 
    If this option is enabled Picard will load all audio files in the selected directory and all its subdirectories. If disabled only audio files in the selected directory will be loaded.
+
+.. _opt_advanced_ignore_hidden_files:
 
 **Ignore hidden files**
 
    If this option is enabled then hidden files and directories will not be loaded. This also includes any file or subdirectory inside a hidden directory.
 
+.. _opt_advanced_ignore_file_paths_matching_the_following:
+
 **Ignore file paths matching the following regular expression**
 
    You can specify patterns for files and directories that Picard should never load. For example, if you set this to the regular expression ``\.bak$`` any file ending in ".bak" will be ignored when loading files.
+
+.. _opt_advanced_test_file_path_matching:
 
 **Test file path matching**
 

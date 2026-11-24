@@ -18,27 +18,39 @@ MusicBrainz currently supports only `AcoustID <https://musicbrainz.org/doc/Acous
       :width: 75%
       :align: center
 
+.. _opt_fingerprinting_audio_fingerprinting:
+
 **Audio Fingerprinting**
 
    This allows you to select whether or not to enable acoustic fingerprinting within Picard. If acoustic fingerprinting is disabled then all remaining options in this tab will be locked and ignored.
+
+.. _opt_fingerprinting_ignore_existing_acoustid_fingerprints:
 
 **Ignore existing AcoustID fingerprints**
 
    When checked, any existing AcoustID fingerprint information will not be used, and the files will be rescanned.
 
+.. _opt_fingerprinting_save_acoustid_fingerprints_to_file_tags:
+
 **Save AcoustID fingerprints to file tags**
 
    When checked, the AcoustID fingerprint information from scanned files will be saved to the ``acoustid_fingerprint`` tag. Note that this option is disabled by default because the fingerprint can always be calculated again from the audio file, and it can add a rather long data tag to the file. The option to save this information has been added as of Picard v2.7 to accommodate use cases such as a workflow where the user adds this tag directly after ripping to avoid having to redo the calculation in the future.
 
+.. _opt_fingerprinting_maximum_threads_to_use_for_calculator:
+
 **Maximum threads to use for calculator**
 
    This allows you to specify the maximum number of fingerprint calculations to be run concurrently. The default value is 2.
+
+.. _opt_fingerprinting_fingerprint_calculator:
 
 **Fingerprint calculator**
 
    This identifies the external program on your system that will be used to calculate the AcoustID fingerprints. By default, Picard uses the `Chromaprint <https://acoustid.org/chromaprint>`_ (:program:`fpcalc`) utility which is included with the Picard installation.
 
    Picard will auto-detect the path unless you have specifically overwritten it with something different than the detected path. :menuselection:`"Options --> Fingerprinting"` will show the auto detected path as a placeholder hint in the text input, and also uses it for validating the executable. The user only needs to actually select something if auto detection does not work. If the user has selected a specific path this will be used.
+
+.. _opt_fingerprinting_api_key:
 
 **API key**
 

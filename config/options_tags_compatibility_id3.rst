@@ -14,15 +14,21 @@
       :width: 70%
       :align: center
 
+.. _opt_tags_compatibility_id3_id3v2_version:
+
 **ID3v2 version**
 
    ID3v2.4 is the latest version and the default since Picard 2.9. Most modern software and devices can read ID3v2.4 tags. If you encounter issues with tag reading with your music player try using v2.3 instead.
 
    Other than native support for multi-valued tags in v2.4, the :doc:`Picard Tag Mapping <../appendices/tag_mapping>` section will show you what you lose when choosing v2.3 instead of v2.4.
 
+.. _opt_tags_compatibility_id3_id3v2_text_encoding:
+
 **ID3v2 text encoding**
 
    The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16. Use ISO-8859-1 only if you face compatibility issues with your player.
+
+.. _opt_tags_compatibility_id3_id3v23_tags_joiner:
 
 **Join ID3v23 tags with**
 
@@ -42,6 +48,8 @@
 
       to flatten all the values into a single field separated by " / ".
 
+.. _opt_tags_compatibility_id3_save_itunes_compatible_grouping_and_work:
+
 **Save iTunes compatible grouping and work**
 
    Save the tags grouping and work so that they are compatible with current iTunes versions. Without this option grouping will be displayed in iTunes as "work name" and work will not be available.
@@ -51,6 +59,8 @@
    .. note::
 
       For other players supporting grouping and work you might need to disable this option. `MusicBee <https://getmusicbee.com/>`_ is one example of this.
+
+.. _opt_tags_compatibility_id3_also_include_id3v1_tags:
 
 **Also include ID3v1 tags in the files**
 

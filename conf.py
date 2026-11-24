@@ -130,6 +130,8 @@ html_static_path = [static_path]
 
 html_css_files = ['css/extra.css']
 
+html_js_files = ['js/option_anchors.js']
+
 # Major.minor portion of the version number used for naming the download files
 major_minor = re.match(r'^(v[0-9]+\.[0-9]+)', version).group(1)
 

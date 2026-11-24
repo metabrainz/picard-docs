@@ -16,13 +16,19 @@ It is recommended for most users to leave these settings at their default values
       :width: 75%
       :align: center
 
+.. _opt_matching_minimum_similarity:
+
 **Minimum similarity**
 
    This setting determines the minimum match between a cluster and a release on MusicBrainz for the release to be considered and presented as a possible match. Matches below this threshold will be ignored.
 
+.. _opt_matching_minimum_margin_between_best_and_second:
+
 **Minimum margin between best and second-best match**
 
    This setting determines the similarity difference to prefer one match over another. When Picard matches a file to tracks, it scores each candidate track by similarity. If the gap between the top two or more scores is less than this margin, the match is flagged as ambiguous, because the gap isn't enough to be certain which one is the best. In this case, you must verify the track selection.
+
+.. _opt_matching_minimal_similarity_for_files_to_tracks:
 
 **Minimal similarity for matching files to tracks**
 
@@ -36,13 +42,19 @@ It is recommended for most users to leave these settings at their default values
 
    As a general rule, lowering the percentages may increase the chance of finding a match at the risk of false positives and incorrect matches.
 
+.. _opt_matching_ignore_track_duration_minimum_difference:
+
 **Ignore track duration difference under this number of seconds**
 
    This specifies the number of seconds that a file can differ in length from the length in the MusicBrainz database and still be considered to be the same. The allowable range is 0-7200 seconds, and the default value is 2 seconds. In addition to using this value for matching, differences at or below this value will not be indicated as changed in the :doc:`../getting_started/metadata_pane`.
 
+.. _opt_matching_tracks_to_ignore_when_determining_complete:
+
 **Ignore the following tracks when determining whether a release is complete**
 
    Missing tracks of the selected type (i.e.: video, pregap, data or silence) will be ignored when determining whether a release is considered to be complete. For example, if "video" is selected then a release with a bonus video will be marked as complete if it has all the audio tracks matched with a file even if the video file is missing.
+
+.. _opt_matching_tags_to_ignore_for_comparison:
 
 **Tags to ignore for comparison**
 
