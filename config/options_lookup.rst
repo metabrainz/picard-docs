@@ -42,7 +42,7 @@
 
    This sets the maximum number of results returned for queries made to the MusicBrainz website. The default value is 50 results. On Picard v2.8.1 and earlier, this value was fixed at a maximum of 25 responses.
 
-.. _opt_lookup_use_builtin_search_rather_than_looking:
+.. _opt_lookup_use_builtin_search_rather_than_browser:
 
 **Use builtin search rather than looking in browser**
 

@@ -68,7 +68,7 @@
 
    which will place the images in a subdirectory called "Artwork".
 
-.. _opt_cover_overwrite_the_file_if_it_already:
+.. _opt_cover_overwrite_the_file_if_it_exists:
 
 **Overwrite the file if it already exists**
 
@@ -80,7 +80,7 @@
 
    This tells Picard to only save the first "front" image to a separate file with the release. No other "front" images or images of any other type will be saved. If left unchecked, all "front" images will be saved as separate files, along with any other specified image types to be downloaded.
 
-.. _opt_cover_use_the_primary_image_type_as:
+.. _opt_cover_use_primary_image_type_as_filename:
 
 **Use the primary image type as the file name**
 

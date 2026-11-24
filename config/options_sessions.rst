@@ -44,7 +44,7 @@ The following settings determine how the session files are managed:
 
    When enabled, the release data for loaded albums will be included in the session information. This will speed up the session restore, and also allows continuing the work offline.
 
-.. _opt_sessions_do_not_make_musicbrainz_requests_on:
+.. _opt_sessions_do_not_make_mb_requests_on_restore:
 
 **Do not make MusicBrainz requests on restore**
 

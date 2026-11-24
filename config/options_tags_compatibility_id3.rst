@@ -28,7 +28,7 @@
 
    The default for version 2.4 is UTF-8, the default for version 2.3 is UTF-16. Use ISO-8859-1 only if you face compatibility issues with your player.
 
-.. _opt_tags_compatibility_id3_join_id3v23_tags_with:
+.. _opt_tags_compatibility_id3_id3v23_tags_joiner:
 
 **Join ID3v23 tags with**
 
@@ -60,7 +60,7 @@
 
       For other players supporting grouping and work you might need to disable this option. `MusicBee <https://getmusicbee.com/>`_ is one example of this.
 
-.. _opt_tags_compatibility_id3_also_include_id3v1_tags_in_the:
+.. _opt_tags_compatibility_id3_also_include_id3v1_tags:
 
 **Also include ID3v1 tags in the files**
 

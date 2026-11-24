@@ -14,7 +14,7 @@
       :width: 70%
       :align: center
 
-.. _opt_startup_check_for_documentation_updates_during_start:
+.. _opt_startup_check_for_documentation_updates:
 
 **Check for documentation updates during start-up**
 
@@ -22,19 +22,19 @@
 
    If the option is disabled, a popup message will be displayed during startup asking if you want to enable the documentation checking. The message also includes an option to disable the popup from displaying in the future. The popup can also be enabled or disabled through a setting in the :doc:`options_interface` section.
 
-.. _opt_startup_check_for_plugin_updates_during_start:
+.. _opt_startup_check_for_plugin_updates:
 
 **Check for plugin updates during start-up**
 
    This option determines whether or not Picard will automatically check for :index:`plugin updates <pair: configuration; plugin update checking>` during startup. If this is enabled and an update to an installed plugin is available, a notification icon will be displayed in the status bar. Clicking the icon will open the Plugins options page where you can review the available plugin updates and select which ones to install.
 
-.. _opt_startup_check_for_program_updates_during_start:
+.. _opt_startup_check_for_program_updates:
 
 **Check for program updates during start-up**
 
    This option determines whether or not Picard will automatically check for :index:`program updates <pair: configuration; program update checking>` during startup. In any case, you can have Picard check for program updates at any time using :menuselection:`"Help --> Check for update"`.
 
-.. _opt_startup_days_between_checks:
+.. _opt_startup_days_between_update_checks:
 
 **Days between checks**
 

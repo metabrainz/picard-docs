@@ -20,7 +20,7 @@ The file naming script editor is used to manage the file naming scripts availabl
 
 The editor screen has the following sections:
 
-.. _opt_filerenaming_editor_select_the_file_naming_script_to:
+.. _opt_filerenaming_editor_select_the_file_naming_script:
 
 **Select the file naming script to use**
 

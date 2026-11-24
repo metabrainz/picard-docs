@@ -20,13 +20,13 @@ In all cases Picard will write ID3 tags to the WAVE files. This is supported by 
 
 Picard's use of the RIFF INFO tags is determined by the following configuration settings:
 
-.. _opt_tags_compatibility_wave_also_include_riff_info_tags_in:
+.. _opt_tags_compatibility_wave_also_include_riff_info_tags:
 
 **Also include RIFF INFO tags in the files**
 
    Picard will save the RIFF INFO tags to the files.
 
-.. _opt_tags_compatibility_wave_remove_existing_riff_info_tags_from:
+.. _opt_tags_compatibility_wave_remove_existing_riff_info_tags:
 
 **Remove existing RIFF INFO tags from WAVE files**
 

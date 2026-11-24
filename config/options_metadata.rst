@@ -62,7 +62,7 @@
 
    Check to write track-level relationships (e.g.: composer, lyricist, performer, or remixer) to your files.
 
-.. _opt_metadata_guess_track_number_and_title_from:
+.. _opt_metadata_guess_track_num_and_title_from_filename:
 
 **Guess track number and title from filename if empty**
 
@@ -105,7 +105,7 @@
 
    Once you are satisfied with your selections, click the :guilabel:`Save` button to transfer the list to your option settings and close the dialog. Note that the changes will not be saved permanently until you click the :guilabel:`Make It So!` button.
 
-.. _opt_metadata_ignore_name_translation_for_these_language:
+.. _opt_metadata_ignore_name_translation_for_language_scripts:
 
 **Ignore name translation for these language scripts**
 
