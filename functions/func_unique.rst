@@ -5,13 +5,13 @@
 $unique
 ==========
 
-| Usage: **$unique(name[,case_sensitive[,separator]])**
+| Usage: **$unique(multi[,case_sensitive[,separator]])**
 | Category: multi-value
 | Implemented: Picard 2.6.1
 
 **Description:**
 
-Returns a sorted copy of the multi-value variable ``name`` with duplicate elements removed. By default, the comparison ignores the case of the elements; however, this can be changed by setting ``case_sensitive`` to a non-empty value. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable. If ``name`` is missing ``$unique`` will return an empty string.
+Returns a sorted copy of the multi-value variable ``multi`` with duplicate elements removed. By default, the comparison ignores the case of the elements; however, this can be changed by setting ``case_sensitive`` to a non-empty value. A literal value representing a multi-value can be substituted for ``multi``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable. If ``multi`` is missing ``$unique`` will return an empty string.
 
 .. note::
 
