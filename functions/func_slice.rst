@@ -5,13 +5,13 @@
 $slice
 ======
 
-| Usage: **$slice(name,start[,end[,separator]])**
+| Usage: **$slice(multi,start[,end[,separator]])**
 | Category: multi-value
 | Implemented: Picard 2.3
 
 **Description:**
 
-Returns a multi-value variable containing the elements from the ``start`` index up to but not including the ``end`` index from the multi-value variable ``name``. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable.
+Returns a multi-value variable containing the elements from the ``start`` index up to but not including the ``end`` index from the multi-value variable ``multi``. A literal value representing a multi-value can be substituted for ``multi``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable.
 
 Indexes are zero based. Negative numbers will be counted back from the number of elements in the list. If the ``start`` or ``end`` indexes are left blank, they will default to 0 and the number of elements in the list respectively.
 

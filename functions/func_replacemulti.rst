@@ -5,13 +5,13 @@
 $replacemulti
 =============
 
-| Usage: **$replacemulti(name,search,replace[,separator])**
+| Usage: **$replacemulti(multi,search,replace[,separator])**
 | Category: multi-value
 | Implemented: Picard 2.6.1
 
 **Description:**
 
-Replaces occurrences of ``search`` with ``replace`` in the multi-value variable ``name`` and returns the resulting multi-value variable string with the elements separated by ``separator`` (or the default separator of a semicolon followed by a space "; " if not passed).
+Replaces occurrences of ``search`` with ``replace`` in the multi-value variable ``multi`` and returns the resulting multi-value variable string with the elements separated by ``separator`` (or the default separator of a semicolon followed by a space "; " if not passed).
 
 Empty elements are automatically removed from the output.
 

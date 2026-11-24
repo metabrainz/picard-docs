@@ -5,13 +5,13 @@
 $sortmulti
 ==========
 
-| Usage: **$sortmulti(name[,separator])**
+| Usage: **$sortmulti(multi[,separator])**
 | Category: multi-value
 | Implemented: Picard 2.3.1
 
 **Description:**
 
-Returns a copy of the multi-value variable ``name`` with the elements sorted in ascending order. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable. If ``name`` is missing ``$sortmulti`` will return an empty string.
+Returns a copy of the multi-value variable ``multi`` with the elements sorted in ascending order. A literal value representing a multi-value can be substituted for ``multi``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-valued variable. If ``multi`` is missing ``$sortmulti`` will return an empty string.
 
 
 **Example:**

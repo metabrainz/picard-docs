@@ -5,15 +5,15 @@
 $getmulti
 =========
 
-| Usage: **$getmulti(name,index[,separator])**
+| Usage: **$getmulti(multi,index[,separator])**
 | Category: multi-value
 | Implemented: Picard 2.3
 
 **Description:**
 
-Gets the element at ``index`` from the multi-value variable ``name``. A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-value variable.
+Gets the element at ``index`` from the multi-value variable ``multi``. A literal value representing a multi-value can be substituted for ``multi``, using the ``separator`` (or a semicolon followed by a space "; " if not passed) to coerce the value into a proper multi-value variable.
 
-The ``index`` is zero based. If ``index`` is less than 0, then the value used is the number of elements in ``name`` plus ``index`` (e.g.: ``$getmulti(%abcd%,-1)`` is the same as ``$getmulti(%abcd%,3)`` if ``%abcd%`` is a multi-value variable with four elements). If ``index`` is missing, not an integer, a number greater than or equal to the number of elements in ``name``, or a negative number greater than the number of elements in ``name``, then the function will return an empty string.
+The ``index`` is zero based. If ``index`` is less than 0, then the value used is the number of elements in ``multi`` plus ``index`` (e.g.: ``$getmulti(%abcd%,-1)`` is the same as ``$getmulti(%abcd%,3)`` if ``%abcd%`` is a multi-value variable with four elements). If ``index`` is missing, not an integer, a number greater than or equal to the number of elements in ``multi``, or a negative number greater than the number of elements in ``multi``, then the function will return an empty string.
 
 
 **Example:**
