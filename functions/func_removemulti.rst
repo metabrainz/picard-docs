@@ -5,7 +5,7 @@
 $removemulti
 ============
 
-| Usage: **$removemulti(multi[,pattern[,separator=; ]])**
+| Usage: **$removemulti(multi[,pattern[,separator]])**
 | Category: multi-value
 | Implemented: Picard 3.1
 
@@ -32,5 +32,5 @@ The following statements will return the values indicated:
    $removemulti(%test%,^hre)            ==>  "One; ; Two; Three"
    $removemulti(%test%,hre\$)           ==>  "One; ; Two; Three"
    $removemulti(%test%,o)               ==>  "One; ; Three"
-   $removemulti(%test%,\(?i\)o)         ==>  "; ; Three"
+   $removemulti(%test%,\(?i\)o)         ==>  "; Three"
    $removemulti(%test%,\()              ==>  "One; ; Two; Three"
