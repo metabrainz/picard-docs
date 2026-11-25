@@ -147,6 +147,14 @@ Some variables provide the :index:`MusicBrainz Identifier (MBID) <identifier; mu
 
    Zero or more secondary types (i.e.: *audiobook*, *compilation*, *dj-mix*, *interview*, *live*, *mixtape/street*, *remix*, *soundtrack*, or *spokenword*) for the release group.
 
+**_silence**
+
+   Set to 1 if the track title is "[silence]", otherwise empty.
+
 **_totalalbumtracks**
 
    The total number of tracks across all discs of this release.
+
+**_video**
+
+   Set to 1 if the track is a video, otherwise empty.
