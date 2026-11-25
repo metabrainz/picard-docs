@@ -5,13 +5,13 @@
 $delprefix
 ==========
 
-| Usage: **$delprefix(text[,prefixes])**
+| Usage: **$delprefix(text,prefix1,prefix2,...)**
 | Category: text
 | Implemented: Picard 1.3
 
 **Description:**
 
-Deletes the specified ``prefixes`` from the beginning of ``text``. Any number of ``prefixes`` can be specified, separated by commas. If no prefix is specified "A" and "The" are used by default. Note that the matching is case-sensitive.
+Deletes the specified prefixes (``prefix1``, ``prefix2``, ...) from the beginning of ``text``. Any number of prefixes can be specified, separated by commas. If no prefix is specified "A" and "The" are used by default. Note that the matching is case-sensitive. Do not include a trailing space in a prefix, as the space following the prefix is handled automatically.
 
 
 **Example:**

@@ -5,13 +5,13 @@
 $is_multi
 =========
 
-| Usage: **$is_multi(x)**
+| Usage: **$is_multi(multi)**
 | Category: conditional
 | Implemented: Picard 2.7
 
 **Description:**
 
-Returns true, if the argument is a multi-value tag and there is more than one element.
+Returns true if ``multi`` is a multi-value variable and there is more than one element.
 
 
 **Example:**

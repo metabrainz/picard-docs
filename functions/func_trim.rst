@@ -5,12 +5,12 @@
 $trim
 =====
 
-| Usage: **$trim(text[,character])**
+| Usage: **$trim(text[,characters])**
 | Category: text
 
 **Description:**
 
-Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``character`` specifies the character to trim. If multiple characters are provided in ``character``, each character will be applied separately to the function.
+Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``characters`` specifies the characters to trim instead of whitespace. Each of the characters provided in ``characters`` is removed from both ends of ``text``, whatever their order.
 
 
 **Examples:**

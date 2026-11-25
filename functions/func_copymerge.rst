@@ -5,19 +5,19 @@
 $copymerge
 ==========
 
-| Usage: **$copymerge(target,source[,keep_duplicates])**
+| Usage: **$copymerge(new,old[,keep_duplicates])**
 | Category: assignment
 | Implemented: Picard 1.0
 
 **Description:**
 
-Merges metadata from variable ``source`` into ``target``, removing duplicates and appending to the end, so retaining the original ordering. Like :ref:`func_copy`, this will also copy multi-valued variables without flattening them. Following the operation, ``target`` will be a multi-value variable.
+Merges metadata from variable ``old`` into ``new``, removing duplicates and appending to the end, so retaining the original ordering. Like :ref:`func_copy`, this will also copy multi-valued variables without flattening them. Following the operation, ``new`` will be a multi-value variable.
 
 If ``keep_duplicates`` is set, then the duplicates will not be removed from the result.
 
 .. note::
 
-   Unlike most functions, in this case the ``source`` is specified **without** enclosing it with percent signs (%).
+   Unlike most functions, in this case ``new`` and ``old`` are specified **without** enclosing them with percent signs (%).
 
 
 **Example:**
