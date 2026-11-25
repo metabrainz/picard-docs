@@ -11,7 +11,7 @@ $is_multi
 
 **Description:**
 
-Returns true, if the argument is a multi-value tag and there is more than one element.
+Returns true if ``multi`` is a multi-value variable and there is more than one element.
 
 
 **Example:**

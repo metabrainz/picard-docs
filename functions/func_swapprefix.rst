@@ -11,7 +11,7 @@ $swapprefix
 
 **Description:**
 
-Moves the specified prefixes (``prefix1``, ``prefix2``, ...) from the beginning to the end of ``text``. Any number of prefixes can be specified, separated by commas. If no prefix is specified "A" and "The" are used by default. Note that the matching is case-sensitive.
+Moves the specified prefixes (``prefix1``, ``prefix2``, ...) from the beginning to the end of ``text``. Any number of prefixes can be specified, separated by commas. If no prefix is specified "A" and "The" are used by default. Note that the matching is case-sensitive. Do not include a trailing space in a prefix, as the space following the prefix is handled automatically.
 
 
 **Example:**
