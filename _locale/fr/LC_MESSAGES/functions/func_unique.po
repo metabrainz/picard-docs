@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6b3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-08-13 15:34+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -27,7 +27,8 @@ msgid "$unique"
 msgstr "$unique"
 
 #: ../../functions/func_unique.rst:8
-msgid "Usage: **$unique(name[,case_sensitive[,separator]])**"
+#, fuzzy
+msgid "Usage: **$unique(multi[,case_sensitive[,separator]])**"
 msgstr "Utilisation : **$unique(nom[,sensible_à_la_casse[,séparateur]])**"
 
 #: ../../functions/func_unique.rst:9
@@ -43,14 +44,15 @@ msgid "**Description:**"
 msgstr "**Description :**"
 
 #: ../../functions/func_unique.rst:14
+#, fuzzy
 msgid ""
-"Returns a sorted copy of the multi-value variable ``name`` with duplicate "
+"Returns a sorted copy of the multi-value variable ``multi`` with duplicate "
 "elements removed. By default, the comparison ignores the case of the "
 "elements; however, this can be changed by setting ``case_sensitive`` to a "
 "non-empty value. A literal value representing a multi-value can be "
-"substituted for ``name``, using the ``separator`` (or a semicolon followed "
+"substituted for ``multi``, using the ``separator`` (or a semicolon followed "
 "by a space \"; \" if not passed) to coerce the value into a proper multi-"
-"valued variable. If ``name`` is missing ``$unique`` will return an empty "
+"valued variable. If ``multi`` is missing ``$unique`` will return an empty "
 "string."
 msgstr ""
 "Retourne une copie triée de la variable à valeurs multiples ``nom`` avec les "

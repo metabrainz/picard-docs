@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-07-30 19:22+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
@@ -25,7 +25,8 @@ msgid "$replacemulti"
 msgstr "$replacemulti"
 
 #: ../../functions/func_replacemulti.rst:8
-msgid "Usage: **$replacemulti(name,search,replace[,separator])**"
+#, fuzzy
+msgid "Usage: **$replacemulti(multi,search,replace[,separator])**"
 msgstr "Ús: **$replacemulti(nom,cerca,substitució[,separador])**"
 
 #: ../../functions/func_replacemulti.rst:9
@@ -43,8 +44,8 @@ msgstr "**Descripció:**"
 #: ../../functions/func_replacemulti.rst:14
 msgid ""
 "Replaces occurrences of ``search`` with ``replace`` in the multi-value "
-"variable ``name`` and returns the resulting multi-value variable string with "
-"the elements separated by ``separator`` (or the default separator of a "
+"variable ``multi`` and returns the resulting multi-value variable string "
+"with the elements separated by ``separator`` (or the default separator of a "
 "semicolon followed by a space \"; \" if not passed)."
 msgstr ""
 

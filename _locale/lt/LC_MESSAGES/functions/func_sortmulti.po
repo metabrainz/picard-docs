@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-07-30 19:20+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -27,7 +27,7 @@ msgid "$sortmulti"
 msgstr ""
 
 #: ../../functions/func_sortmulti.rst:8
-msgid "Usage: **$sortmulti(name[,separator])**"
+msgid "Usage: **$sortmulti(multi[,separator])**"
 msgstr ""
 
 #: ../../functions/func_sortmulti.rst:9
@@ -44,11 +44,11 @@ msgstr "**Aprašas:**"
 
 #: ../../functions/func_sortmulti.rst:14
 msgid ""
-"Returns a copy of the multi-value variable ``name`` with the elements sorted "
-"in ascending order. A literal value representing a multi-value can be "
-"substituted for ``name``, using the ``separator`` (or a semicolon followed "
+"Returns a copy of the multi-value variable ``multi`` with the elements "
+"sorted in ascending order. A literal value representing a multi-value can be "
+"substituted for ``multi``, using the ``separator`` (or a semicolon followed "
 "by a space \"; \" if not passed) to coerce the value into a proper multi-"
-"valued variable. If ``name`` is missing ``$sortmulti`` will return an empty "
+"valued variable. If ``multi`` is missing ``$sortmulti`` will return an empty "
 "string."
 msgstr ""
 

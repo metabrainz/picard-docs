@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-07-30 19:02+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -24,7 +24,8 @@ msgid "$unique"
 msgstr "$unique"
 
 #: ../../functions/func_unique.rst:8
-msgid "Usage: **$unique(name[,case_sensitive[,separator]])**"
+#, fuzzy
+msgid "Usage: **$unique(multi[,case_sensitive[,separator]])**"
 msgstr "Gebruik: **$unique(name[,case_sensitive[,scheidingsteken]])**"
 
 #: ../../functions/func_unique.rst:9
@@ -40,14 +41,15 @@ msgid "**Description:**"
 msgstr "**Beschrijving:**"
 
 #: ../../functions/func_unique.rst:14
+#, fuzzy
 msgid ""
-"Returns a sorted copy of the multi-value variable ``name`` with duplicate "
+"Returns a sorted copy of the multi-value variable ``multi`` with duplicate "
 "elements removed. By default, the comparison ignores the case of the "
 "elements; however, this can be changed by setting ``case_sensitive`` to a "
 "non-empty value. A literal value representing a multi-value can be "
-"substituted for ``name``, using the ``separator`` (or a semicolon followed "
+"substituted for ``multi``, using the ``separator`` (or a semicolon followed "
 "by a space \"; \" if not passed) to coerce the value into a proper multi-"
-"valued variable. If ``name`` is missing ``$unique`` will return an empty "
+"valued variable. If ``multi`` is missing ``$unique`` will return an empty "
 "string."
 msgstr ""
 "Retourneert een gesorteerde kopie van de meervoudige variabele ``naam``, "
@@ -56,8 +58,9 @@ msgstr ""
 "veranderen naar een niet-lege waarde. In plaats van ``naam`` kan je ook een "
 "tekenreeks opgegeven, zodat deze tekenreeks in een meervoudige variabele "
 "wordt omgezet. Je kan het scheidingsteken voor deze tekenreeks opgeven met "
-"de derde parameter (als je deze parameter niet opgeeft, wordt ‘; ’ gebruikt)"
-". Als ``naam`` ontbreekt, retourneert ``$unique`` een lege tekenreeks."
+"de derde parameter (als je deze parameter niet opgeeft, wordt ‘; ’ "
+"gebruikt). Als ``naam`` ontbreekt, retourneert ``$unique`` een lege "
+"tekenreeks."
 
 #: ../../functions/func_unique.rst:18
 msgid ""

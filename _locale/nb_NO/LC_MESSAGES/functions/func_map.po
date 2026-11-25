@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-07-30 19:01+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://translations.metabrainz.org/"
@@ -23,7 +23,7 @@ msgid "$map"
 msgstr ""
 
 #: ../../functions/func_map.rst:8
-msgid "Usage: **$map(name,code[,separator])**"
+msgid "Usage: **$map(multi,code[,separator])**"
 msgstr ""
 
 #: ../../functions/func_map.rst:9
@@ -40,10 +40,10 @@ msgstr ""
 
 #: ../../functions/func_map.rst:14
 msgid ""
-"Iterates over each element found in the multi-value variable ``name`` and "
+"Iterates over each element found in the multi-value variable ``multi`` and "
 "updates the value of the element to the value returned by ``code``, "
 "returning the updated multi-value variable. A literal value representing a "
-"multi-value can be substituted for ``name``, using the ``separator`` (or a "
+"multi-value can be substituted for ``multi``, using the ``separator`` (or a "
 "semicolon followed by a space \"; \" if not passed) to coerce the value into "
 "a proper multi-valued variable."
 msgstr ""

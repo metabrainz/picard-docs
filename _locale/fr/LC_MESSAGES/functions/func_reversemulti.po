@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-08-13 15:34+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -26,7 +26,8 @@ msgid "$reversemulti"
 msgstr "$reversemulti"
 
 #: ../../functions/func_reversemulti.rst:8
-msgid "Usage: **$reversemulti(name[,separator])**"
+#, fuzzy
+msgid "Usage: **$reversemulti(multi[,separator])**"
 msgstr "Utilisation : **$reversemulti(nom[,séparateur])**"
 
 #: ../../functions/func_reversemulti.rst:9
@@ -42,10 +43,11 @@ msgid "**Description:**"
 msgstr "**Description :**"
 
 #: ../../functions/func_reversemulti.rst:14
+#, fuzzy
 msgid ""
-"Returns a copy of the multi-value variable ``name`` with the elements in "
+"Returns a copy of the multi-value variable ``multi`` with the elements in "
 "reverse order. A literal value representing a multi-value can be substituted "
-"for ``name``, using the ``separator`` (or a semicolon followed by a space "
+"for ``multi``, using the ``separator`` (or a semicolon followed by a space "
 "\"; \" if not passed) to coerce the value into a proper multi-valued "
 "variable."
 msgstr ""
@@ -60,8 +62,8 @@ msgid ""
 "This function can be used in conjunction with the :ref:`func_sortmulti` "
 "function to sort in descending order."
 msgstr ""
-"Cette fonction peut être utilisée en conjonction avec la fonction "
-":ref:`func_sortmulti` pour trier par ordre décroissant."
+"Cette fonction peut être utilisée en conjonction avec la fonction :ref:"
+"`func_sortmulti` pour trier par ordre décroissant."
 
 #: ../../functions/func_reversemulti.rst:19
 msgid "**Example:**"

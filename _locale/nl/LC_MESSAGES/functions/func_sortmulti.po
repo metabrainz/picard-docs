@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-07-30 19:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
@@ -24,7 +24,8 @@ msgid "$sortmulti"
 msgstr "$sortmulti"
 
 #: ../../functions/func_sortmulti.rst:8
-msgid "Usage: **$sortmulti(name[,separator])**"
+#, fuzzy
+msgid "Usage: **$sortmulti(multi[,separator])**"
 msgstr "Gebruik: **$sortmulti(naam[,scheidingsteken])**"
 
 #: ../../functions/func_sortmulti.rst:9
@@ -40,20 +41,22 @@ msgid "**Description:**"
 msgstr "**Beschrijving:**"
 
 #: ../../functions/func_sortmulti.rst:14
+#, fuzzy
 msgid ""
-"Returns a copy of the multi-value variable ``name`` with the elements sorted "
-"in ascending order. A literal value representing a multi-value can be "
-"substituted for ``name``, using the ``separator`` (or a semicolon followed "
+"Returns a copy of the multi-value variable ``multi`` with the elements "
+"sorted in ascending order. A literal value representing a multi-value can be "
+"substituted for ``multi``, using the ``separator`` (or a semicolon followed "
 "by a space \"; \" if not passed) to coerce the value into a proper multi-"
-"valued variable. If ``name`` is missing ``$sortmulti`` will return an empty "
+"valued variable. If ``multi`` is missing ``$sortmulti`` will return an empty "
 "string."
 msgstr ""
 "Retourneert een kopie van de meervoudige variabele ``naam``, met de "
 "elementen op alfabetische volgorde. In plaats van ``naam`` kan je ook een "
 "tekenreeks opgegeven, zodat deze tekenreeks in een meervoudige variabele "
 "wordt omgezet. Je kan het scheidingsteken voor deze tekenreeks opgeven met "
-"de derde parameter (als je deze parameter niet opgeeft, wordt ‘; ’ gebruikt)"
-". Als ``naam`` ontbreekt, retourneert ``$sortmulti`` een lege tekenreeks."
+"de derde parameter (als je deze parameter niet opgeeft, wordt ‘; ’ "
+"gebruikt). Als ``naam`` ontbreekt, retourneert ``$sortmulti`` een lege "
+"tekenreeks."
 
 #: ../../functions/func_sortmulti.rst:17
 msgid "**Example:**"

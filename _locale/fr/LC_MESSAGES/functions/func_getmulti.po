@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-25 13:51-0600\n"
 "PO-Revision-Date: 2026-08-13 15:34+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -26,7 +26,8 @@ msgid "$getmulti"
 msgstr "$getmulti"
 
 #: ../../functions/func_getmulti.rst:8
-msgid "Usage: **$getmulti(name,index[,separator])**"
+#, fuzzy
+msgid "Usage: **$getmulti(multi,index[,separator])**"
 msgstr "Utilisation: **$getmulti(nom,index[,séparateur])**"
 
 #: ../../functions/func_getmulti.rst:9
@@ -42,9 +43,10 @@ msgid "**Description:**"
 msgstr "**Description :**"
 
 #: ../../functions/func_getmulti.rst:14
+#, fuzzy
 msgid ""
-"Gets the element at ``index`` from the multi-value variable ``name``. A "
-"literal value representing a multi-value can be substituted for ``name``, "
+"Gets the element at ``index`` from the multi-value variable ``multi``. A "
+"literal value representing a multi-value can be substituted for ``multi``, "
 "using the ``separator`` (or a semicolon followed by a space \"; \" if not "
 "passed) to coerce the value into a proper multi-value variable."
 msgstr ""
@@ -55,14 +57,15 @@ msgstr ""
 "valeur multiple appropriée variable."
 
 #: ../../functions/func_getmulti.rst:16
+#, fuzzy
 msgid ""
 "The ``index`` is zero based. If ``index`` is less than 0, then the value "
-"used is the number of elements in ``name`` plus ``index`` (e.g.: "
+"used is the number of elements in ``multi`` plus ``index`` (e.g.: "
 "``$getmulti(%abcd%,-1)`` is the same as ``$getmulti(%abcd%,3)`` if "
 "``%abcd%`` is a multi-value variable with four elements). If ``index`` is "
 "missing, not an integer, a number greater than or equal to the number of "
-"elements in ``name``, or a negative number greater than the number of "
-"elements in ``name``, then the function will return an empty string."
+"elements in ``multi``, or a negative number greater than the number of "
+"elements in ``multi``, then the function will return an empty string."
 msgstr ""
 "L'``index`` est basé sur zéro. Si ``index`` est inférieur à 0, alors la "
 "valeur utilisée est le nombre d'éléments dans ``nom`` plus ``index`` (par "
