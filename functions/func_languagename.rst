@@ -5,13 +5,13 @@
 $languagename
 =============
 
-| Usage: **$languagename(language_code\[,translate])**
+| Usage: **$languagename(language_code[,translate])**
 | Category: text
 | Implemented: Picard 3.1
 
 **Description:**
 
-Returns the name of the language for the specified three-character `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ language code. If the language code is invalid an empty string will be returned. The returned name is in English. For example, ``$languagename(fra)`` returns "French". If ``translate`` is not blank, that English name is translated into the current locale language.
+Returns the name of the language for the specified three-character `ISO 639-3 <https://en.wikipedia.org/wiki/ISO_639-3>`_ language code. If the language code is invalid an empty string will be returned. The returned name is in English by default. For example, ``$languagename(fra)`` returns "French". If ``translate`` is not blank, that English name is translated into the currently selected locale language.
 
 
 **Examples:**
