@@ -40,6 +40,7 @@ The output files can be built in the various formats using the `build` command t
 ### Documentation Source and Translation Files
 
 - `map`: Build the tag map html and spreadsheet files from the master `tag_mapping.py` file. This will also update the `appendices/tag_mapping.rst` file so that the latest information is used for the document output builds.
+- `contributors`: Build the `about_picard/acknowledgements.rst` file by processing the names in the `contributors.txt` file, sorting them, inserting them into the `about_picard/acknowledgements_template.txt` template, and saving the resulting `rst` file.
 - `pot`: Build the translation template POT files. This will update the translation template files based on the current restructured text (RST) files, and updates all of the language translation (PO) files with any changes to the source strings. This should be done when changes to the documentation are merged so that the translation files on Weblate are updated accordingly.
 - `po`: Updates all of the language translation (PO) files with any changes to the source strings based on the current translation template (POT) files. This is performed automatically when the POT files are rebuilt.
 
