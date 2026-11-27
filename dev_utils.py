@@ -437,8 +437,9 @@ def parse_command_line() -> argparse.Namespace:
         'build_targets',
         action='store',
         nargs='+',
-        choices=['map', 'pot', 'po', 'html', 'pdf', 'all'],
+        choices=['map', 'contributors', 'pot', 'po', 'html', 'pdf', 'all'],
         help="map = build tag map files; "
+             "contributors = acknowledgements page; "
              "pot = build translation template files; "
              "po = build translation files; "
              "html = build html files; "
@@ -2335,6 +2336,9 @@ def main_process_build_targets(process_languages: list[str], args: argparse.Name
             for lang in process_languages:
                 do_build(target=target, language=lang, clean=True)
 
+        elif target == 'contributors':
+            build_acknowledgements_file()
+
         elif target == 'map':
             TagMapBuilder.build_all()
 
@@ -2486,6 +2490,100 @@ def get_process_languages(args) -> list[str]:
         exit_with_code(1)
 
     return [Languages.DEFAULT_LANGUAGE]
+
+
+################################################################################
+
+RE_NAME_1 = re.compile(r'\(.*\)')       # Text enclosed within ()
+RE_NAME_2 = re.compile(r'\[.*\]')       # Text enclosed within []
+RE_NAME_3 = re.compile(r'\s[js]r\.?$')  # Jr. and Sr. (periods optional)
+RE_NAME_4 = re.compile(r'\si*v?i*$')    # Generation (ex. II, IV, V or VI)
+
+
+def build_acknowledgements_file() -> None:
+    ack_root = os.path.join('about_picard', 'acknowledgements')
+    ack_template = ack_root + '_template.txt'
+    ack_rst = ack_root + '.rst'
+
+    try:
+        with open(ack_template, 'r', encoding='utf8') as f:
+            text = f.read()
+    except OSError:
+        print("ERROR: There was an error reading the acknowledgements page template.")
+        return
+
+    try:
+        with open('contributors.txt', 'r', encoding='utf8') as f:
+            names = f.readlines()
+    except OSError:
+        print("ERROR: There was an error reading the contributors list.")
+        return
+
+    def _make_sort_name(name_to_process: str) -> str:
+        extra: list[str] = []
+
+        # Remove strings included within () or []
+        for regex in (RE_NAME_1, RE_NAME_2):
+            while True:
+                _match = regex.search(name_to_process)
+                if not _match:
+                    break
+                extra.append(_match.group())
+                name_to_process = regex.sub('', name_to_process).strip()
+
+        while True:
+            # Remove Jr. and Sr.
+            _match = RE_NAME_3.search(name_to_process)
+            if _match:
+                extra.insert(0, _match.group().strip())
+                name_to_process = RE_NAME_3.sub('', name_to_process).strip()
+                continue
+            # Remove generation
+            _match = RE_NAME_4.search(name_to_process)
+            if not _match:
+                break
+            extra.insert(0, _match.group().strip())
+            name_to_process = RE_NAME_4.sub('', name_to_process).strip()
+
+        parts = name_to_process.strip().split()
+
+        # Move last name to start of sort list
+        if len(parts) > 1:
+            temp = parts[-1]
+            parts[-1] = parts[0]
+            parts[0] = temp
+
+        # Sort 'anonymous' to the first item in the contributors list.
+        elif parts[0] == 'anonymous':
+            parts.insert(0, '0')
+        parts.extend(extra)
+        return ' '.join(parts)
+
+    names_dict: dict[str, str] = {}
+    for name in names:
+        name = name.strip()
+        if not name or name.startswith('#'):
+            continue
+        name = name.split(' #', 1)[0].strip()
+        names_dict[_make_sort_name(name.lower())] = name
+
+    table = ".. list-table::\n   :header-rows: 0\n   :widths: 1 1 1\n\n"
+
+    count = 0
+    for _key, name in sorted(names_dict.items()):
+        table += f"   {' ' if count else '*'}  -  {name}\n"
+        count = (count + 1) % 3
+
+    count = 3 - count
+    while count:
+        table += "      -\n"
+        count -= 1
+
+    try:
+        with open(ack_rst, 'w', encoding='utf8') as f:
+            f.write(text.replace('{contributors}', table))
+    except OSError:
+        print("ERROR: There was an error writing the acknowledgements page file.")
 
 
 ################################################################################
