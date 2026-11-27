@@ -58,25 +58,7 @@
 
       When enabling the multiple directories option setting Picard will no longer use the system file picker for selecting directories. This may result in reduced functionality.
 
-.. _opt_interface_show_the_new_user_dialog:
-
-**Show the new user dialog when starting Picard**
-
-   When this is enabled, Picard will show a dialog intended for new users when you start the program. This displays a warning about the consequences of saving files, along with a suggestion for minimizing the impact until you have confirmed that your configuration produces the expected results. It also provides a link to the on-line documentation.
-
-.. _opt_interface_show_a_quit_confirmation_dialog:
-
-**Show a quit confirmation dialog for unsaved changes**
-
-   When this is enabled, Picard will show a dialog when you try to quit the program with unsaved files loaded. This may help prevent accidentally losing tag changes you've made, but not yet saved.
-
 .. _opt_interface_show_a_confirmation_dialog_when_saving:
-
-**Show a confirmation dialog when saving files**
-
-   When this is enabled, Picard will show a dialog when you save files, indicating what actions will be performed on the files and the number of files to be saved. This may help prevent accidentally making changes that you are not expecting.
-
-.. _opt_interface_adjust_horizontal_position_in_file_browser:
 
 **Adjust horizontal position in file browser automatically**
 
@@ -88,12 +70,6 @@
 
    By default, Picard remembers the last directory used to load files. If you enable this option and provide a directory, Picard will always start in the directory provided.
 
-.. _opt_interface_reset_tutorial_and_setup_wizard:
-
-**Reset tutorial and setup wizard**
-
-   This button will reset the tutorial and setup wizard to its initial state, showing both again on the next startup.
-
 .. only:: html and not epub
 
    .. seealso::
@@ -103,7 +79,8 @@
       :doc:`options_interface_top_tags` /
       :doc:`options_interface_quick_menu` /
       :doc:`options_interface_coverart_box` /
-      :doc:`options_interface_toolbar`
+      :doc:`options_interface_toolbar` /
+      :doc:`options_interface_hints`
 
 .. toctree::
    :hidden:
@@ -113,3 +90,4 @@
    options_interface_quick_menu
    options_interface_coverart_box
    options_interface_toolbar
+   options_interface_hints
