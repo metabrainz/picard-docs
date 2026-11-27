@@ -211,6 +211,10 @@ These tags are not able to be populated by stock Picard, however they may be use
 
    The copyright message for the copyright holder of the original sound, beginning with a year and a space character.
 
+**discid**
+
+   The identification number of the disc in the FreeDB database. See also ``musicbrainz_discid``.
+
 **encodedby**
 
    The person or organization that encoded the track.
@@ -219,6 +223,10 @@ These tags are not able to be populated by stock Picard, however they may be use
 
    The settings used when encoding the track.
 
+**grouping**
+
+   The genre grouping associated with the track.
+
 **key**
 
    The key of the music.
@@ -226,6 +234,10 @@ These tags are not able to be populated by stock Picard, however they may be use
 **lyrics**
 
    The lyrics for the track.
+
+**mood**
+
+   The mood associated with the track.
 
 **musicip_fingerprint**
 
@@ -246,6 +258,22 @@ These tags are not able to be populated by stock Picard, however they may be use
 **originalfilename**
 
    The original name of the audio file.
+
+**podcastcategory**
+
+   The category of the podcast, if the recording is a podcast.
+
+**podcastdesc**
+
+   The description of the podcast episode, if the recording is a podcast.
+
+**podcastid**
+
+   The unique identifier (GUID) of the podcast episode, if the recording is a podcast.
+
+**podcastkeywords**
+
+   The keywords associated with the podcast, if the recording is a podcast.
 
 **releasedate**
 
