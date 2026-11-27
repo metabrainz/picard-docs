@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.7.0b2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 14:46-0600\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-10-30 02:53+0000\n"
-"Last-Translator: mfmeulenbelt "
-"<mfmeulenbelt@users.noreply.translations.metabrainz.org>\n"
+"Last-Translator: mfmeulenbelt <mfmeulenbelt@users.noreply.translations."
+"metabrainz.org>\n"
 "Language-Team: Dutch <https://translations.metabrainz.org/projects/picard-"
 "docs/variablesvariables_basic/nl/>\n"
 "Language: nl\n"
@@ -257,9 +257,9 @@ msgstr ""
 
 #: ../../variables/variables_basic.rst:76
 msgid ""
-"Unfiltered list of all genres loaded from MusicBrainz. Requires "
-"the :doc:`Use genres from MusicBrainz <../config/options_genres>` option to "
-"be enabled.  (*since Picard 3.0*)"
+"Unfiltered list of all genres loaded from MusicBrainz. Requires the :doc:"
+"`Use genres from MusicBrainz <../config/options_genres>` option to be "
+"enabled.  (*since Picard 3.0*)"
 msgstr ""
 
 #: ../../variables/variables_basic.rst:78
@@ -336,7 +336,8 @@ msgstr ""
 
 #: ../../variables/variables_basic.rst:102
 msgid "The rating of the track from 0-5 by MusicBrainz users."
-msgstr "De waardering van het nummer door MusicBrainz-gebruikers (van 0 tot 5)."
+msgstr ""
+"De waardering van het nummer door MusicBrainz-gebruikers (van 0 tot 5)."
 
 #: ../../variables/variables_basic.rst:104
 msgid "**_recordingcomment**"
@@ -457,9 +458,25 @@ msgstr ""
 "*soundtrack* of *spokenword*)."
 
 #: ../../variables/variables_basic.rst:150
-msgid "**_totalalbumtracks**"
+msgid "**_silence**"
 msgstr ""
 
 #: ../../variables/variables_basic.rst:152
+msgid "Set to 1 if the track title is \"[silence]\", otherwise empty."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:154
+msgid "**_totalalbumtracks**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:156
 msgid "The total number of tracks across all discs of this release."
 msgstr "Het totale aantal nummers op alle media van deze uitgave."
+
+#: ../../variables/variables_basic.rst:158
+msgid "**_video**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:160
+msgid "Set to 1 if the track is a video, otherwise empty."
+msgstr ""

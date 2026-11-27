@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "$foreach"
 msgstr ""
 
 #: ../../functions/func_foreach.rst:8
-msgid "Usage: **$foreach(name,code,separator=\"; \")**"
+msgid "Usage: **$foreach(multi,code[,separator])**"
 msgstr ""
 
 #: ../../functions/func_foreach.rst:9
@@ -37,11 +37,11 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_foreach.rst:14
-msgid "Iterates over each element found in the multi-value variable ``name``, executing ``code`` during each iteration. Before each iteration, the element value is first stored in the variable ``_loop_value`` and the count is stored in the variable ``_loop_count``. This allows the element or count value to be accessed within the code script."
+msgid "Iterates over each element found in the multi-value variable ``multi``, executing ``code`` during each iteration. Before each iteration, the element value is first stored in the variable ``_loop_value`` and the count is stored in the variable ``_loop_count``. This allows the element or count value to be accessed within the code script."
 msgstr ""
 
 #: ../../functions/func_foreach.rst:16
-msgid "A literal value representing a multi-value can be substituted for ``name``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable."
+msgid "A literal value representing a multi-value can be substituted for ``multi``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable."
 msgstr ""
 
 #: ../../functions/func_foreach.rst:19

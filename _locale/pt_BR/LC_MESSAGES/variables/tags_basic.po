@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.6.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 14:46-0600\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-07-30 19:15+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.metabrainz.org/"
@@ -113,8 +113,8 @@ msgstr ""
 
 #: ../../variables/tags_basic.rst:43
 msgid ""
-"The release artists sort names, separated by the specified join phrases. "
-"(e.g.: \"Beatles, The\")"
+"The release artists sort names, separated by the specified join phrases. (e."
+"g.: \"Beatles, The\")"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:45
@@ -415,8 +415,8 @@ msgstr ""
 #: ../../variables/tags_basic.rst:162
 msgid ""
 "A multi-value tag containing the types of release assigned to the release "
-"group. See also :ref:`_primaryreleasetype <ref_primaryreleasetype>` "
-"and :ref:`_secondaryreleasetype <ref_secondaryreleasetype>`."
+"group. See also :ref:`_primaryreleasetype <ref_primaryreleasetype>` and :ref:"
+"`_secondaryreleasetype <ref_secondaryreleasetype>`."
 msgstr ""
 
 #: ../../variables/tags_basic.rst:164
@@ -531,86 +531,147 @@ msgid ""
 msgstr ""
 
 #: ../../variables/tags_basic.rst:214
-msgid "**encodedby**"
+msgid "**discid**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:216
-msgid "The person or organization that encoded the track."
+msgid ""
+"The identification number of the disc in the FreeDB database. See also "
+"``musicbrainz_discid``."
 msgstr ""
 
 #: ../../variables/tags_basic.rst:218
-msgid "**encodersettings**"
+msgid "**encodedby**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:220
-msgid "The settings used when encoding the track."
+msgid "The person or organization that encoded the track."
 msgstr ""
 
 #: ../../variables/tags_basic.rst:222
-msgid "**key**"
+msgid "**encodersettings**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:224
-msgid "The key of the music."
+msgid "The settings used when encoding the track."
 msgstr ""
 
 #: ../../variables/tags_basic.rst:226
-msgid "**lyrics**"
+msgid "**grouping**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:228
-msgid "The lyrics for the track."
+msgid "The genre grouping associated with the track."
 msgstr ""
 
 #: ../../variables/tags_basic.rst:230
-msgid "**musicip_fingerprint**"
+msgid "**key**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:232
-msgid "The MusicIP Fingerprint for the track."
+msgid "The key of the music."
 msgstr ""
 
 #: ../../variables/tags_basic.rst:234
-msgid "**musicip_puid**"
+msgid "**lyrics**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:236
-msgid "The MusicIP PUIDs associated with the track."
+msgid "The lyrics for the track."
 msgstr ""
 
 #: ../../variables/tags_basic.rst:238
-msgid "**originalalbum**"
+msgid "**mood**"
 msgstr ""
 
 #: ../../variables/tags_basic.rst:240
+msgid "The mood associated with the track."
+msgstr ""
+
+#: ../../variables/tags_basic.rst:242
+msgid "**musicip_fingerprint**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:244
+msgid "The MusicIP Fingerprint for the track."
+msgstr ""
+
+#: ../../variables/tags_basic.rst:246
+msgid "**musicip_puid**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:248
+msgid "The MusicIP PUIDs associated with the track."
+msgstr ""
+
+#: ../../variables/tags_basic.rst:250
+msgid "**originalalbum**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:252
 msgid ""
 "The release title of the earliest release in the release group intended for "
 "the title of the original recording."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:242
+#: ../../variables/tags_basic.rst:254
 msgid "**originalartist**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:244
+#: ../../variables/tags_basic.rst:256
 msgid ""
 "The track artist of the earliest release in the release group intended for "
 "the performers of the original recording."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:246
+#: ../../variables/tags_basic.rst:258
 msgid "**originalfilename**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:248
+#: ../../variables/tags_basic.rst:260
 msgid "The original name of the audio file."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:250
+#: ../../variables/tags_basic.rst:262
+msgid "**podcastcategory**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:264
+msgid "The category of the podcast, if the recording is a podcast."
+msgstr ""
+
+#: ../../variables/tags_basic.rst:266
+msgid "**podcastdesc**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:268
+msgid "The description of the podcast episode, if the recording is a podcast."
+msgstr ""
+
+#: ../../variables/tags_basic.rst:270
+msgid "**podcastid**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:272
+msgid ""
+"The unique identifier (GUID) of the podcast episode, if the recording is a "
+"podcast."
+msgstr ""
+
+#: ../../variables/tags_basic.rst:274
+msgid "**podcastkeywords**"
+msgstr ""
+
+#: ../../variables/tags_basic.rst:276
+msgid ""
+"The keywords associated with the podcast, if the recording is a podcast."
+msgstr ""
+
+#: ../../variables/tags_basic.rst:278
 msgid "**releasedate**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:252
+#: ../../variables/tags_basic.rst:280
 msgid ""
 "Explicit tag for the release date (*since Picard 2.9*). This tag exists for "
 "specific use in scripts and plugins, but is not filled by default. In most "
@@ -618,100 +679,100 @@ msgid ""
 "with existing software."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:254
+#: ../../variables/tags_basic.rst:282
 msgid "**showmovement**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:256
+#: ../../variables/tags_basic.rst:284
 msgid "The work and movement of the track."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:258
+#: ../../variables/tags_basic.rst:286
 msgid "**subtitle**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:260
+#: ../../variables/tags_basic.rst:288
 msgid "This is used for information directly related to the contents title."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:262
+#: ../../variables/tags_basic.rst:290
 msgid "**syncedlyrics**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:264
+#: ../../variables/tags_basic.rst:292
 msgid "The synchronized lyrics for the track. (*since Picard 3.0*)"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:266
+#: ../../variables/tags_basic.rst:294
 msgid "**titlesort**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:268
+#: ../../variables/tags_basic.rst:296
 msgid "The sort name of the track title."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:272
+#: ../../variables/tags_basic.rst:300
 msgid "iTunes-Specific Tags"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:274
+#: ../../variables/tags_basic.rst:302
 msgid ""
 "These tags are only available in iTunes files and are not able to be "
 "populated by stock Picard, however they may be used and populated by certain "
 "plugins or scripts."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:276
+#: ../../variables/tags_basic.rst:304
 msgid "**gapless**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:278
+#: ../../variables/tags_basic.rst:306
 msgid ""
 "Indicates whether or not there are gaps between the recordings on the "
 "release."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:280
+#: ../../variables/tags_basic.rst:308
 msgid "**itunes_cddb_1**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:282
+#: ../../variables/tags_basic.rst:310
 msgid ""
 "An iTunes-specific tag containing a code that uniquely identifies a CD based "
 "on the number of tracks and their lengths (*since Picard 3.0*)."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:284
+#: ../../variables/tags_basic.rst:312
 msgid "**podcast**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:286
+#: ../../variables/tags_basic.rst:314
 msgid "Indicates whether or not the recording is a podcast."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:288
+#: ../../variables/tags_basic.rst:316
 msgid "**podcasturl**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:290
+#: ../../variables/tags_basic.rst:318
 msgid "The associated url if the recording is a podcast."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:292
+#: ../../variables/tags_basic.rst:320
 msgid "**show**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:294
+#: ../../variables/tags_basic.rst:322
 msgid ""
 "The name of the show if the recording is associated with a television "
 "program."
 msgstr ""
 
-#: ../../variables/tags_basic.rst:296
+#: ../../variables/tags_basic.rst:324
 msgid "**showsort**"
 msgstr ""
 
-#: ../../variables/tags_basic.rst:298
+#: ../../variables/tags_basic.rst:326
 msgid ""
 "The sort name of the show if the recording is associated with a television "
 "program."

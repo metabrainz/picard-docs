@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "$trim"
 msgstr ""
 
 #: ../../functions/func_trim.rst:8
-msgid "Usage: **$trim(text[,character])**"
+msgid "Usage: **$trim(text[,characters])**"
 msgstr ""
 
 #: ../../functions/func_trim.rst:9
@@ -33,7 +33,7 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_trim.rst:13
-msgid "Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``character`` specifies the character to trim. If multiple characters are provided in ``character``, each character will be applied separately to the function."
+msgid "Trims all leading and trailing whitespaces from ``text``. The optional second parameter ``characters`` specifies the characters to trim instead of whitespace. Each of the characters provided in ``characters`` is removed from both ends of ``text``, whatever their order."
 msgstr ""
 
 #: ../../functions/func_trim.rst:16

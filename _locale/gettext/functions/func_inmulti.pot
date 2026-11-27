@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 11:43-0700\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "$inmulti"
 msgstr ""
 
 #: ../../functions/func_inmulti.rst:8
-msgid "Usage: **$inmulti(%x%,y)**"
+msgid "Usage: **$inmulti(multi,value[,separator])**"
 msgstr ""
 
 #: ../../functions/func_inmulti.rst:9
@@ -37,17 +37,21 @@ msgid "**Description:**"
 msgstr ""
 
 #: ../../functions/func_inmulti.rst:14
-msgid "Returns true if multi-value variable ``x`` contains exactly ``y`` as one of its values. Note that comparisons are case-sensitive."
+msgid "Returns true if the multi-value variable ``multi`` contains exactly ``value`` as one of its values. Note that comparisons are case-sensitive."
 msgstr ""
 
-#: ../../functions/func_inmulti.rst:20
-msgid "Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function."
+#: ../../functions/func_inmulti.rst:16
+msgid "A literal value representing a multi-value can be substituted for ``multi``, using the ``separator`` (or a semicolon followed by a space \"; \" if not passed) to coerce the value into a proper multi-valued variable."
 msgstr ""
 
 #: ../../functions/func_inmulti.rst:22
-msgid "**Example:**"
+msgid "Formatting the code using characters such as spaces, tabs or newlines can affect the result of the function."
 msgstr ""
 
 #: ../../functions/func_inmulti.rst:24
+msgid "**Example:**"
+msgstr ""
+
+#: ../../functions/func_inmulti.rst:26
 msgid "The following statements will return the values indicated:"
 msgstr ""

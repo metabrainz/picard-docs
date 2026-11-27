@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-07-30 19:18+0000\n"
 "Last-Translator: Vaclovas Intas <gateway_31@protonmail.com>\n"
 "Language-Team: Lithuanian <https://translations.metabrainz.org/projects/"
@@ -26,7 +26,7 @@ msgid "$copy"
 msgstr ""
 
 #: ../../functions/func_copy.rst:8
-msgid "Usage: **$copy(target,source)**"
+msgid "Usage: **$copy(new,old)**"
 msgstr ""
 
 #: ../../functions/func_copy.rst:9
@@ -43,21 +43,20 @@ msgstr "**Aprašas:**"
 
 #: ../../functions/func_copy.rst:14
 msgid ""
-"Copies metadata from variable ``source`` to ``target``. The difference from "
-"``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-"
-"value variables without flattening them."
+"Copies metadata from variable ``old`` to ``new``. The difference from "
+"``$set(new,%old%)`` is that ``$copy(new,old)`` copies multi-value variables "
+"without flattening them."
 msgstr ""
 
 #: ../../functions/func_copy.rst:18
 msgid ""
-"Unlike most functions, in this case the ``source`` is specified **without** "
-"enclosing it with percent signs (%)."
+"Unlike most functions, in this case ``new`` and ``old`` are specified "
+"**without** enclosing them with percent signs (%)."
 msgstr ""
 
 #: ../../functions/func_copy.rst:22
 msgid ""
-"If the variable ``target`` already exists, it will be overwritten by "
-"``source``."
+"If the variable ``new`` already exists, it will be overwritten by ``old``."
 msgstr ""
 
 #: ../../functions/func_copy.rst:24

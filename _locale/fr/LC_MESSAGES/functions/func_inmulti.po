@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-08-13 15:34+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -26,7 +26,8 @@ msgid "$inmulti"
 msgstr "$inmulti"
 
 #: ../../functions/func_inmulti.rst:8
-msgid "Usage: **$inmulti(%x%,y)**"
+#, fuzzy
+msgid "Usage: **$inmulti(multi,value[,separator])**"
 msgstr "Utilisation : **$inmulti(%x%,y)**"
 
 #: ../../functions/func_inmulti.rst:9
@@ -42,15 +43,23 @@ msgid "**Description:**"
 msgstr "**Description :**"
 
 #: ../../functions/func_inmulti.rst:14
+#, fuzzy
 msgid ""
-"Returns true if multi-value variable ``x`` contains exactly ``y`` as one of "
-"its values. Note that comparisons are case-sensitive."
+"Returns true if the multi-value variable ``multi`` contains exactly "
+"``value`` as one of its values. Note that comparisons are case-sensitive."
 msgstr ""
 "Renvoie true si la variable à valeurs multiples ``x`` contient exactement "
 "``y`` comme l'une de ses valeurs. Notez que les comparaisons sont sensibles "
 "à la casse."
 
-#: ../../functions/func_inmulti.rst:20
+#: ../../functions/func_inmulti.rst:16
+msgid ""
+"A literal value representing a multi-value can be substituted for ``multi``, "
+"using the ``separator`` (or a semicolon followed by a space \"; \" if not "
+"passed) to coerce the value into a proper multi-valued variable."
+msgstr ""
+
+#: ../../functions/func_inmulti.rst:22
 msgid ""
 "Formatting the code using characters such as spaces, tabs or newlines can "
 "affect the result of the function."
@@ -58,10 +67,10 @@ msgstr ""
 "Le formatage du code à l'aide de caractères tels que des espaces, des "
 "tabulations ou des sauts de ligne peut affecter le résultat de la fonction."
 
-#: ../../functions/func_inmulti.rst:22
+#: ../../functions/func_inmulti.rst:24
 msgid "**Example:**"
 msgstr "**Exemple :**"
 
-#: ../../functions/func_inmulti.rst:24
+#: ../../functions/func_inmulti.rst:26
 msgid "The following statements will return the values indicated:"
 msgstr "Les instructions suivantes renverront les valeurs indiquées :"

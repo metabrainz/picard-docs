@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-16 09:48-0700\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-08-13 15:34+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -26,7 +26,8 @@ msgid "$copy"
 msgstr "$copy"
 
 #: ../../functions/func_copy.rst:8
-msgid "Usage: **$copy(target,source)**"
+#, fuzzy
+msgid "Usage: **$copy(new,old)**"
 msgstr "Utilisation : **$copy(target,source)**"
 
 #: ../../functions/func_copy.rst:9
@@ -42,27 +43,29 @@ msgid "**Description:**"
 msgstr "**Description :**"
 
 #: ../../functions/func_copy.rst:14
+#, fuzzy
 msgid ""
-"Copies metadata from variable ``source`` to ``target``. The difference from "
-"``$set(target,%source%)`` is that ``$copy(target,source)`` copies multi-"
-"value variables without flattening them."
+"Copies metadata from variable ``old`` to ``new``. The difference from "
+"``$set(new,%old%)`` is that ``$copy(new,old)`` copies multi-value variables "
+"without flattening them."
 msgstr ""
 "Copie les métadonnées de la variable ``source`` vers ``target``. La "
 "différence avec ``$set(target,%source%)`` est que ``$copy(target, source)`` "
 "copie les variables à valeurs multiples sans les aplatir."
 
 #: ../../functions/func_copy.rst:18
+#, fuzzy
 msgid ""
-"Unlike most functions, in this case the ``source`` is specified **without** "
-"enclosing it with percent signs (%)."
+"Unlike most functions, in this case ``new`` and ``old`` are specified "
+"**without** enclosing them with percent signs (%)."
 msgstr ""
 "Contrairement à la plupart des fonctions, dans ce cas, la ``source`` est "
 "spécifiée **sans** l'entourer de signes de pourcentage (%)."
 
 #: ../../functions/func_copy.rst:22
+#, fuzzy
 msgid ""
-"If the variable ``target`` already exists, it will be overwritten by "
-"``source``."
+"If the variable ``new`` already exists, it will be overwritten by ``old``."
 msgstr ""
 "Notez que si la variable ``target`` existe déjà, elle sera écrasée par "
 "``source``."
@@ -75,5 +78,5 @@ msgstr "**Exemple :**"
 msgid ""
 "The following statements will yield the values for ``target`` as indicated:"
 msgstr ""
-"Les instructions suivantes donneront les valeurs de ``target`` comme indiqué "
-":"
+"Les instructions suivantes donneront les valeurs de ``target`` comme "
+"indiqué :"

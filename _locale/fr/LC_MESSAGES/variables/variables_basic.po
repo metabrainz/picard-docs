@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 14:46-0600\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-10-30 02:53+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -236,8 +236,8 @@ msgid ""
 "Unknown_and_untitled/Special_purpose_track_title#Data_tracks>`_\", otherwise "
 "empty. (*since Picard 1.3.1*)"
 msgstr ""
-"Prend la valeur 1 si la piste est une \"`piste de données <https://"
-"wiki.musicbrainz.org/Style/Unknown_and_untitled/"
+"Prend la valeur 1 si la piste est une \"`piste de données <https://wiki."
+"musicbrainz.org/Style/Unknown_and_untitled/"
 "Special_purpose_track_title#Data_tracks>`_\", sinon vide. (*depuis Picard "
 "1.3.1*)"
 
@@ -266,9 +266,9 @@ msgid ""
 "option to be enabled. (*since Picard 3.0*)"
 msgstr ""
 "Liste brute de toutes les balises de folksonomie non liées à un genre, "
-"chargées depuis MusicBrainz. Nécessite l'activation de l'option "
-":doc:`Utiliser les genres de MusicBrainz <../config/options_genres>`. "
-"(*depuis Picard 3.0*)"
+"chargées depuis MusicBrainz. Nécessite l'activation de l'option :doc:"
+"`Utiliser les genres de MusicBrainz <../config/options_genres>`. (*depuis "
+"Picard 3.0*)"
 
 #: ../../variables/variables_basic.rst:74
 msgid "**_genres**"
@@ -276,9 +276,9 @@ msgstr "**_genres**"
 
 #: ../../variables/variables_basic.rst:76
 msgid ""
-"Unfiltered list of all genres loaded from MusicBrainz. Requires "
-"the :doc:`Use genres from MusicBrainz <../config/options_genres>` option to "
-"be enabled.  (*since Picard 3.0*)"
+"Unfiltered list of all genres loaded from MusicBrainz. Requires the :doc:"
+"`Use genres from MusicBrainz <../config/options_genres>` option to be "
+"enabled.  (*since Picard 3.0*)"
 msgstr ""
 "Liste non filtrée de tous les genres importés depuis MusicBrainz. Nécessite "
 "l'activation de l'option :doc:`Utiliser les genres de MusicBrainz <../config/"
@@ -335,9 +335,8 @@ msgid ""
 "Set to 1 if the track is a \"`pregap track <https://musicbrainz.org/doc/"
 "Terminology#hidden_track>`_\", otherwise empty. (*since Picard 1.3.1*)"
 msgstr ""
-"Prend la valeur 1 si la piste est une \"`piste d'prégap <https://"
-"musicbrainz.org/doc/Terminology#hidden_track>`_\", sinon vide (*depuis "
-"Picard 1.3.1*)."
+"Prend la valeur 1 si la piste est une \"`piste d'prégap <https://musicbrainz."
+"org/doc/Terminology#hidden_track>`_\", sinon vide (*depuis Picard 1.3.1*)."
 
 #: ../../variables/variables_basic.rst:96
 msgid "**_primaryreleasetype**"
@@ -480,12 +479,29 @@ msgstr ""
 "*bande-son*, ou *mot parlé*) pour le groupe de parution."
 
 #: ../../variables/variables_basic.rst:150
+#, fuzzy
+msgid "**_silence**"
+msgstr "**_filename**"
+
+#: ../../variables/variables_basic.rst:152
+msgid "Set to 1 if the track title is \"[silence]\", otherwise empty."
+msgstr ""
+
+#: ../../variables/variables_basic.rst:154
 msgid "**_totalalbumtracks**"
 msgstr "**_totalalbumtracks**"
 
-#: ../../variables/variables_basic.rst:152
+#: ../../variables/variables_basic.rst:156
 msgid "The total number of tracks across all discs of this release."
 msgstr "Le nombre total de pistes sur tous les disques de cette version."
+
+#: ../../variables/variables_basic.rst:158
+msgid "**_video**"
+msgstr ""
+
+#: ../../variables/variables_basic.rst:160
+msgid "Set to 1 if the track is a video, otherwise empty."
+msgstr ""
 
 #~ msgid "The Album's Artists' Name(s) (multi-value). (*since Picard 1.3*)"
 #~ msgstr ""
@@ -737,9 +753,6 @@ msgstr "Le nombre total de pistes sur tous les disques de cette version."
 #~ msgstr ""
 #~ "L'extension du fichier. Uniquement disponible pour le script de "
 #~ "dénomination de fichier. (*depuis Picard 0.9*)"
-
-#~ msgid "**_filename**"
-#~ msgstr "**_filename**"
 
 #~ msgid ""
 #~ "The name of the file without extension.  Only available to the file "

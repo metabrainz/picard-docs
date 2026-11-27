@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.11.0rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-11 23:26+0100\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-07-30 19:22+0000\n"
 "Last-Translator: Marc Riera <marc@marcriera.cat>\n"
 "Language-Team: Catalan <https://translations.metabrainz.org/projects/picard-"
@@ -24,7 +24,8 @@ msgid "$copymerge"
 msgstr ""
 
 #: ../../functions/func_copymerge.rst:8
-msgid "Usage: **$copymerge(target,source[,keep_duplicates])**"
+#, fuzzy
+msgid "Usage: **$copymerge(new,old[,keep_duplicates])**"
 msgstr "Ús: **$copymerge(destinació,origen[,conserva_duplicats])**"
 
 #: ../../functions/func_copymerge.rst:9
@@ -41,11 +42,10 @@ msgstr "**Descripció:**"
 
 #: ../../functions/func_copymerge.rst:14
 msgid ""
-"Merges metadata from variable ``source`` into ``target``, removing "
-"duplicates and appending to the end, so retaining the original ordering. "
-"Like :ref:`func_copy`, this will also copy multi-valued variables without "
-"flattening them. Following the operation, ``target`` will be a multi-value "
-"variable."
+"Merges metadata from variable ``old`` into ``new``, removing duplicates and "
+"appending to the end, so retaining the original ordering. Like :ref:"
+"`func_copy`, this will also copy multi-valued variables without flattening "
+"them. Following the operation, ``new`` will be a multi-value variable."
 msgstr ""
 
 #: ../../functions/func_copymerge.rst:16
@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../functions/func_copymerge.rst:20
 msgid ""
-"Unlike most functions, in this case the ``source`` is specified **without** "
-"enclosing it with percent signs (%)."
+"Unlike most functions, in this case ``new`` and ``old`` are specified "
+"**without** enclosing them with percent signs (%)."
 msgstr ""
 
 #: ../../functions/func_copymerge.rst:23

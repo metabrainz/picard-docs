@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz Picard v2.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 08:09+0100\n"
+"POT-Creation-Date: 2026-11-27 14:48-0600\n"
 "PO-Revision-Date: 2026-08-13 15:34+0000\n"
 "Last-Translator: Bob Swift <bswift@rsds.ca>\n"
 "Language-Team: French <https://translations.metabrainz.org/projects/picard-"
@@ -26,7 +26,8 @@ msgid "$swapprefix"
 msgstr "$swapprefix"
 
 #: ../../functions/func_swapprefix.rst:8
-msgid "Usage: **$swapprefix(text[,prefixes])**"
+#, fuzzy
+msgid "Usage: **$swapprefix(text,prefix1,prefix2,...)**"
 msgstr "Utilisation : **$swapprefix(texte[,préfixes])**"
 
 #: ../../functions/func_swapprefix.rst:9
@@ -44,11 +45,14 @@ msgid "**Description:**"
 msgstr "**Description :**"
 
 #: ../../functions/func_swapprefix.rst:14
+#, fuzzy
 msgid ""
-"Moves the specified ``prefixes`` from the beginning to the end of ``text``. "
-"Any number of ``prefixes`` can be specified, separated by commas. If no "
-"prefix is specified \"A\" and \"The\" are used by default. Note that the "
-"matching is case-sensitive."
+"Moves the specified prefixes (``prefix1``, ``prefix2``, ...) from the "
+"beginning to the end of ``text``. Any number of prefixes can be specified, "
+"separated by commas. If no prefix is specified \"A\" and \"The\" are used by "
+"default. Note that the matching is case-sensitive. Do not include a trailing "
+"space in a prefix, as the space following the prefix is handled "
+"automatically."
 msgstr ""
 "Déplace les ``préfixes`` spécifiés du début à la fin de ``texte``. N'importe "
 "quel nombre de ``préfixes`` peut être spécifié, séparés par des virgules. Si "
